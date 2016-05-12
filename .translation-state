@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "da3847053d40bebecb75f5b18891828ecda7a054",
+  "LastProcessedCommit": "072228d1f4f2c0075aeeaf2d1a774e4f1c6827d3",
   "LastTranslatedCommit": "262d150fc4b8c66294444774a3f13ef29533c70a",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -60757,6 +60757,35 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\TOC.13a398ad10575ec470dbe9e6b9feae83865839a4.ko-kr.xlf",
       "HandoffFileCommit": "4494b605e4794458804a9d30039246185b994325",
       "HandoffDateTime": "2016-05-12T01:24:04.2618775Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "2c603b1160d8e1acf4ba859ea4b71d3219bb0bba": {
+      "FileHash": "2c603b1160d8e1acf4ba859ea4b71d3219bb0bba",
+      "SourceFileCommit": "78350305424bda76436d2a0980f2fa347c7c0135",
+      "SourceFilePath": "Azure-RMSDocs\\develop\\adal-authentication.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\develop\\adal-authentication.md"
+      ],
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\adal-authentication.edf091778646901c509de161b8a5f5a5c22dcaca.ko-kr.xlf",
+      "HandoffFileCommit": "53163b2d5833d37adc0e9a203c4f60a14497e8e5",
+      "HandoffDateTime": "2016-05-12T23:54:08.4253807Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

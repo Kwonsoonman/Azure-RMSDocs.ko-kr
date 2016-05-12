@@ -5,11 +5,11 @@
  -------- | ----- 
  Total Files | 435
 [ Handoff Failed Files ](#handoff-failed-list)| 0
-[ Handoff Success Files ](#handoff-success-list)| 133
+[ Handoff Success Files ](#handoff-success-list)| 132
 [ Archive Failed Files ](#archive-failed-list)| 0
 [ Archive Success Files ](#archive-success-list)| 19
 [ Handback Failed Files ](#handback-failed-list)| 0
-[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 176
+[ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 177
 [ In Sync Handback Files ](#insync-handback-success-list)| 41
 [ Ignored Files ](#ignored-list)| 66
 
@@ -149,7 +149,6 @@
  [Azure-RMSDocs\media\wpsetup-addref.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/998316566fb9dc8269a543e6dd322cfd8eef45ef/Azure-RMSDocs/media/wpsetup-addref.png) | HandedOffSuccess | [Details](#d5abf6672cbcfc8349a2ce6467ffdc57a4b3cb45336)
  [Azure-RMSDocs\media\wpsetup-newproj.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/998316566fb9dc8269a543e6dd322cfd8eef45ef/Azure-RMSDocs/media/wpsetup-newproj.png) | HandedOffSuccess | [Details](#6e00024ec5eefc8da90b458bb6ea62aacf08e7bc337)
  [Azure-RMSDocs\media\wpsetup-refmngr.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/998316566fb9dc8269a543e6dd322cfd8eef45ef/Azure-RMSDocs/media/wpsetup-refmngr.png) | HandedOffSuccess | [Details](#530aed5439b0c6bce77de3010dfd9c63a1435002338)
- [Azure-RMSDocs\rms-client\sharing-app-dialog-box.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-dialog-box.md) | HandedOffSuccess | [Details](#771a80843ca5ab01cd06bd4e76c827469b0e9f00368)
  [scratch\media\150x150.png](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/da3847053d40bebecb75f5b18891828ecda7a054/scratch/media/150x150.png) | HandedOffSuccess | [Details](#84421bf7f4ba657e685239fb27f4798a46485f71420)
 
 ## <a name='archive-failed-list'></a> Archive Failed File List
@@ -327,6 +326,7 @@
  [Azure-RMSDocs\rms-client\rms-client.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/rms-client/rms-client.md) | OutofSyncHandedBackSuccess | [Details](#3723189a600d32f43cf4888714add0df0e6c082a365)
  [Azure-RMSDocs\rms-client\sharing-app-admin-guide.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/rms-client/sharing-app-admin-guide.md) | OutofSyncHandedBackSuccess | [Details](#83feb5f6ad1f316fda9703b17b254baa308f9e22367)
  [Azure-RMSDocs\rms-client\sharing-app-admin-guide-technical.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0f355da35dff62ecee111737eb1793ae286dc93e/Azure-RMSDocs/rms-client/sharing-app-admin-guide-technical.md) | OutofSyncHandedBackSuccess | [Details](#3be36a844584fd1d7e90bf405e4d5d1844e11fd3366)
+ [Azure-RMSDocs\rms-client\sharing-app-dialog-box.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-dialog-box.md) | OutofSyncHandedBackSuccess | [Details](#771a80843ca5ab01cd06bd4e76c827469b0e9f00368)
  [Azure-RMSDocs\rms-client\sharing-app-keyboard-shortcuts.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-keyboard-shortcuts.md) | OutofSyncHandedBackSuccess | [Details](#1ff6f1c788d95efa534e22935f2f13ac0cc598d7369)
  [Azure-RMSDocs\rms-client\sharing-app-protect-by-email.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-by-email.md) | OutofSyncHandedBackSuccess | [Details](#ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3370)
  [Azure-RMSDocs\rms-client\sharing-app-protect-in-place.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-protect-in-place.md) | OutofSyncHandedBackSuccess | [Details](#7cf6ecb95374c080b9b2e94f948ec53ea5e6bb46371)
@@ -5452,7 +5452,7 @@
 * [Back to Top](#report-top)
 
 ##### <a name='771a80843ca5ab01cd06bd4e76c827469b0e9f00368'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-dialog-box.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-dialog-box.md)
-* Status: HandedOffSuccess
+* Status: OutofSyncHandedBackSuccess
 * Target File: 
 * Handoff File: [sharing-app-dialog-box.ae42c11e02b09890ea1679cb3d1bd647491691e5.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/74436aa73414af34640e2c61c84b813d98b443b2/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/sharing-app-dialog-box.ae42c11e02b09890ea1679cb3d1bd647491691e5.ko-kr.xlf)
 * Handoff Datetime: 2016-05-09 17:05:29
@@ -5461,6 +5461,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [Azure-RMSDocs\rms-client\sharing-app-dialog-box.md](https://github.com/Microsoft/Azure-RMSDocs-pr.ko-kr/blob/262d150fc4b8c66294444774a3f13ef29533c70a/Azure-RMSDocs/rms-client/sharing-app-dialog-box.md)
+* Current Handback File: [sharing-app-dialog-box.ae42c11e02b09890ea1679cb3d1bd647491691e5.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/1aea701695603b383c932b728cb02141329c304a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/sharing-app-dialog-box.ae42c11e02b09890ea1679cb3d1bd647491691e5.ko-kr.xlf)
+* Current Handback Datetime: 2016-05-12 12:40:17
 * [Back to Top](#report-top)
 
 ##### <a name='1ff6f1c788d95efa534e22935f2f13ac0cc598d7369'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-keyboard-shortcuts.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-keyboard-shortcuts.md)

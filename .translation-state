@@ -1,5 +1,5 @@
 {
-  "LastProcessedCommit": "c604e0b937d76d803b2880b7fa94587234ed4001",
+  "LastProcessedCommit": "6378c3dbb2404defa828b2b16d4ba7087a68f41b",
   "LastTranslatedCommit": "a6ed5702ad0e07f06f2c525a4f38e288c83c4d1f",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
@@ -63110,6 +63110,36 @@
       "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.ko-kr.xlf",
       "HandoffFileCommit": "aa7ce9e69a876b4cc3fe4a6d1f3dbe08815b08d5",
       "HandoffDateTime": "2016-05-19T01:16:38.0526657Z",
+      "HandoffPriority": "",
+      "HandoffException": null,
+      "HandoffFailureTimes": 0,
+      "TargetFileCommit": null,
+      "TargetFilePath": null,
+      "HandbackFilePath": null,
+      "HandbackFileCommit": null,
+      "HandbackDateTime": "0001-01-01T00:00:00",
+      "HandbackException": null,
+      "HandbackFailureTimes": 0,
+      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "ArchiveFilePath": null,
+      "ArchiveFileCommit": null,
+      "ArchiveFileDateTime": "0001-01-01T00:00:00",
+      "ArchiveException": null
+    },
+    "0c24d253e3f1ab3a87852c69c15c5211d17b4333": {
+      "FileHash": "0c24d253e3f1ab3a87852c69c15c5211d17b4333",
+      "SourceFileCommit": "9624c8e5fc050a045c6eb1effa956d49b66c52e2",
+      "SourceFilePath": "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md",
+      "HandoffReason": 1,
+      "DependencyFrom": null,
+      "TokenReference": null,
+      "FilePathList": [
+        "Azure-RMSDocs\\deploy-use\\configure-usage-rights.md"
+      ],
+      "HasMetadata": true,
+      "HandoffFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\configure-usage-rights.d1491a3e6b5496052f09d333e0ed56875eebb824.ko-kr.xlf",
+      "HandoffFileCommit": "f866ad9b5b812c2ff8093a392eca357ef1b7be31",
+      "HandoffDateTime": "2016-05-19T21:12:06.3768306Z",
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,

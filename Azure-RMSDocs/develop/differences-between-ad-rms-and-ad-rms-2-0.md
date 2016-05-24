@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ee4989d6-3903-4ed2-ac62-d5692e2ef494
-
+ms.assetid: 622D5C6E-07D5-4C71-A99D-9823C1FE6936
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 이 SDK의 장점
 이 항목에서는 권한 사용 응용 프로그램을 만드는 데 필요한 개발자 작업 측면에서 권한 관리 서비스 SDK 2.1이 기존의 [Active Directory Rights Management Services SDK](https://msdn.microsoft.com/library/Cc530379)보다 어떻게 향상되었는지를 설명합니다.
 
@@ -40,7 +38,7 @@ ms.suite: ems
 **중요 알림**  
 MSDN 라이브러리에서 기존의 [Active Directory Rights Management Services SDK](https://msdn.microsoft.com/library/Cc530379)에 있던 모든 항목이 이제 다음과 같은 지원 설명으로 시작합니다.
 
-클라이언트가 Msdrm.dll에 노출하는 기능을 활용하는 AD RMS SDK는 Windows Server 2008, Windows Vista, Windows Server 2008 R2, Windows 7, Windows Server 2012 및 Windows 8에서 사용할 수 있습니다. 이후 버전에서는 변경되거나 제공되지 않을 수 있습니다. 클라이언트가 Msipc.dll에 노출하는 기능을 활용하는 [Active Directory Rights Management Services SDK 2.1](microsoft-information-protection-and-control-client-portal.md)을 대신 사용합니다.
+클라이언트가 Msdrm.dll에 노출하는 기능을 활용하는 AD RMS SDK는 Windows Server 2008, Windows Vista, Windows Server 2008 R2, Windows 7, Windows Server 2012 및 Windows 8에서 사용할 수 있습니다. 이후 버전에서는 변경되거나 제공되지 않을 수 있습니다. 클라이언트가 *Msipc.dll*에 노출하는 기능을 활용하는 [Active Directory Rights Management Services SDK 2.1](microsoft-information-protection-and-control-client-portal.md)을 대신 사용합니다.
 
  
 
@@ -53,6 +51,6 @@ MSDN 라이브러리에서 기존의 [Active Directory Rights Management Service
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

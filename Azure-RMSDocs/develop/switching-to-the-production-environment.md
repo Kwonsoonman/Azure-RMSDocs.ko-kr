@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 376c08d9-51e8-46c9-b2d2-426f648f7e4d
-
+ms.assetid: F5CD72F6-D49A-4121-866F-3182CD980875
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 프로덕션 환경으로 전환
 
 이 섹션에서는 테스트된 응용 프로그램을 프로덕션 환경으로 릴리스하는 과정을 안내합니다.
@@ -53,7 +51,7 @@ ms.suite: ems
   이 항목에서는 권한 사용 응용 프로그램에 대한 배포 옵션을 간략하게 설명하고 안내합니다.
  
 
-### 관련 항목
+## 관련 항목
 
 * [개요](ad-rms-overview.md)
 * [사용 방법](how-to-use-msipc.md)
@@ -62,6 +60,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

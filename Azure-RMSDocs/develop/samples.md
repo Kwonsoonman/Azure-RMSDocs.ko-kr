@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 9217d66f-b4a7-4ad2-a4ed-ab2c36deab71
-
+ms.assetid: 968C804C-22BE-4DCA-B0E5-9D0E5E6A0FA9
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 코드 샘플
 
 이 항목에서는 MSDN 다운로드 센터에서 제공되는 권한 관리 서비스 SDK 2.1을 사용한 샘플 집합을 보여 줍니다.
@@ -48,7 +46,7 @@ ms.suite: ems
 
   **참고** 이 샘플은 2.0 이상인 후속 버전의 RMS SDK에서도 작동합니다.
  
-### 관련 항목
+## 관련 항목
 
 * [개요](ad-rms-overview.md)
 * [Interop 라이브러리](https://Code.MSDN.Microsoft.Com/AD-RMS-SDK-20-Interop-eb3fbce7)
@@ -59,6 +57,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

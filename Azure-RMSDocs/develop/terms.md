@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 6f53c7e5-bbe2-4619-83b0-cdc620b3af14
-
+ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 조건
 
 권한 관리 서비스와 관련된 용어 정의 컬렉션입니다.
@@ -51,6 +49,6 @@ PFile 형식은 Microsoft Rights Management SDK 4.2가 설계된 방식에 포�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

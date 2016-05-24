@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 73f7cbbf-8559-4f39-bec9-c8e20f515a78
-
+ms.assetid: 296FC4C0-99C6-4997-AD97-5CEE01221B1A
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 개발자 환경 설정
 
 다음 항목에서는 특정 운영 체제용 AD RMS SDK API를 사용하도록 개발 환경을 설정하는 방법을 보여 줍니다.
@@ -45,6 +43,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

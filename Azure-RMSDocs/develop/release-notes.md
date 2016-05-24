@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 3b482c5f-fd40-47d5-acdc-13d2e80d5171
-
+ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 새로운 기능 및 릴리스 정보
 
 ## 새로운 기능
@@ -110,7 +108,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 버전 4.1 릴리스의 RMS SDK에서는 Google Android 및 Apple iOS/OS X에 에는 다음과 같은 새로운 기능이 추가되었습니다.
 
--   SDK 동작의 사용자 확인을 허용하는 사용자 동의 처리를 위한 Android 및 iOS/OS X SDK API 확장. 현재 지원되는 동의 형식은 문서 추적 및 알 수 없는 AD RMS 서비스 URL 액세스입니다.
+-   SDK 동작의 사용자 확인을 허용하는 *사용자 동의* 처리를 위한 Android 및 iOS/OS X SDK API 확장. 현재 지원되는 동의 형식은 문서 추적 및 알 수 없는 AD RMS 서비스 URL 액세스입니다.
 
     자세한 내용을 보려면 Android API 버전의 [**ConsentCallback 인터페이스**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_consentcallback_interface_java)를 예제로 참조하세요.
 
@@ -132,7 +130,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 **모든 플랫폼에 공통적으로 적용**
 
--   RMS SDK 4.x API는 스레드로부터 안전하지 않습니다.
+-   RMS SDK 4.x API는 *스레드로부터 안전*하지 않습니다.
 
 **Android**
 
@@ -144,7 +142,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     **해결 방법** - 응용 프로그램에서 Android API에 대한 다중 인스턴스 호출을 허용하지 않도록 합니다.
 
--   [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] 배열, int 오프셋, int 길이)** 메서드를 array.length 값과 다른 길이로 사용하는 경우 나중에 SDK를 통해 콘텐츠를 사용할 수 없습니다.
+-   [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] 배열, int 오프셋, int 길이)** 메서드를 *array.length* 값과 다른 길이로 사용하는 경우 나중에 SDK를 통해 콘텐츠를 사용할 수 없습니다.
 
     **해결 방법** - 알려진 문제입니다. 문제를 완화하려면 항상 **byte \[\]** 배열을 length 매개 변수와 동일한 길이 값으로 전달하거나, [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] 배열)** 메서드를 사용합니다.
 
@@ -172,7 +170,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     다음 메서드는 동시에 실행하면 안 됩니다. 실행 완료를 모니터링하려면 설명된 대로 완료 블록 방법을 사용합니다.
 
-    - [**protectedDataWithProtectedFile**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
+    - [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
     - [**customProtectedDataWithPolicy**](/rights-management/sdk/4.2/api/iOS/mscustomprotecteddata#msipcthin2_mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc)
 
 
@@ -229,6 +227,6 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

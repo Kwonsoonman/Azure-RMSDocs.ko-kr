@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 3760d242-2f8c-4312-aaa5-8d592fd28748
-
+ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 개발 환경 파일
 
 이 항목에서는 개발 환경 파일과 컴퓨터의 상대 설치 위치를 보여 줍니다.
@@ -60,6 +58,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

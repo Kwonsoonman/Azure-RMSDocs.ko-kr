@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c73fde39-6e16-470c-800e-59ab04c78f5f
-
+ms.assetid: 09BA148C-7D1E-43C8-92EA-24BBB6EFDB19
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 프로덕션 응용 프로그램에 서명
 
 이 항목에서는 프로덕션 모드의 응용 프로그램에 서명하는 과정을 안내합니다.
@@ -40,7 +38,7 @@ Microsoft에서 프로덕션 인증서를 받으면 다음 파일을 보유하�
 -   YourPublicKey.dat
 -   ProductionCertificate.xml
 
-GenManifest.exe 및 응용 프로그램 이진(.exe)과 동일한 디렉터리에 저장합니다.
+*GenManifest.exe* 및 응용 프로그램 이진(.exe)과 동일한 디렉터리에 저장합니다.
 
 -   아래 프로세스에서는 프로덕션 인증서를 사용하여 새 MCF 파일을 만드는 과정을 안내합니다.
 
@@ -59,15 +57,15 @@ GenManifest.exe 및 응용 프로그램 이진(.exe)과 동일한 디렉터리�
 
     -   다음 명령을 실행하여 응용 프로그램에 서명합니다.
 
-        **genmanifest.exe -chain ProductionCertificate.xml** YourAppName**.mcf** YourAppName**.exe.man**
+        **genmanifest.exe -chain ProductionCertificate.xml** *YourAppName***.mcf** *YourAppName***.exe.man**
 
         Genmanifest에 성공하면 다음 텍스트만 표시됩니다.
 
         Genmanifest에 실패하면 오류 메시지가 표시됩니다.
 
-    -   앱 이름.exe.man은 항상 앱 이름.exe와 동일한 디렉터리에 저장해야 합니다.
+    -   *앱 이름*.exe.man은 항상 *앱 이름*.exe와 동일한 디렉터리에 저장해야 합니다.
 
-### 관련 항목
+## 관련 항목
 
 * [사용 방법](how-to-use-msipc.md)
 * [권한 사용 응용 프로그램 테스트](running-your-first-application.md)
@@ -79,6 +77,6 @@ GenManifest.exe 및 응용 프로그램 이진(.exe)과 동일한 디렉터리�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

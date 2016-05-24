@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: deb9a110-c098-4834-8319-05d5a28a0ccd
-
+ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 지원되는 파일 형식
 
 파일 API는 네이티브 형식과 Pfile 형식을 지원합니다.
@@ -39,7 +37,7 @@ ms.suite: ems
 
 관리자는 레지스트리 키를 설정하여 파일 이름 확장명에 따라 파일을 보호할지 여부와 방법을 구성할 수 있습니다. 파일 API를 사용하는 경우 파일 보호를 구성하는 방법에 대한 자세한 내용은 [파일 API 구성](file-api-configuration.md)을 참조하세요.
 
-### 관련 항목
+## 관련 항목
 
 * [개발자 노트](developer-notes.md)
 * [파일 API 구성](file-api-configuration.md)
@@ -51,6 +49,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

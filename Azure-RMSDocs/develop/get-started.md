@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 1a2ae9f2-709f-47fe-b16c-76140dd27740
-
+ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 시작
 
 이 릴리스의 Microsoft Rights Management SDK 4.2에서 첫 번째 응용 프로그램에 빠른 시작 접근 방식은 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 사용합니다. 먼저 다음을 수행하여 권한 사용 응용 프로그램을 만듭니다.
@@ -61,6 +59,6 @@ ms.suite: ems
   |[커뮤니티 리소스](community-resources.md)|여러 플랫폼에서 Active Directory Rights Management Services를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다.|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

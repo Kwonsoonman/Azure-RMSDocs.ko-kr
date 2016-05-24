@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 94697eb5-1fab-4591-bd40-b5646daac8a3
-
+ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 방법: 앱에 인증 추가
 
 이 항목에서는 RMS 사용 응용 프로그램에 대한 사용자 인증의 기본 사항에 대해 설명합니다.
@@ -276,6 +274,6 @@ ADAL이 사용자를 Azure RMS(또는 AD RMS)에 인증하려면 여러 매개 �
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

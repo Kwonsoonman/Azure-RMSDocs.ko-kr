@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b2cd9dd4-6590-488e-9efb-27bdab41eff6
-
+ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 명시적 소유자 권한 추가
 
 라이선스를 처음부터 만드는 경우([**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)) 응용 프로그램에서 "소유자" 권한을 명시적으로 추가해야 합니다.
@@ -43,8 +41,8 @@ ms.suite: ems
 
 해당 사용자에게 다음 두 가지 권한이 추가되었습니다.
 
--   읽기 권한이 joe@contoso.com에 할당됨
--   모든 권한이 mary\_kay@contoso.com에 할당됨
+-   *읽기* 권한이 joe@contoso.com에 할당됨
+-   *모든* 권한이 mary\_kay@contoso.com에 할당됨
 
 **참고** - 이 코드 예제에서는 특정 권한을 만들고 지정된 라이선스에 추가하는 작업과 관련된 단계만 보여 줍니다.
 
@@ -119,6 +117,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

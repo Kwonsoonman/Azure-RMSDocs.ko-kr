@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 43b611a8-2cc0-49a8-9db9-e81321c38f7a
-
+ms.assetid: 834B7242-31D3-4275-A892-CFE95A61E29E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 권한 사용 응용 프로그램 테스트
 
 이 항목에서는 권한 관리 서비스 SDK 2.1 권한 사용 응용 프로그램을 테스트하기 위해 완료해야 하는 단계를 설명합니다.
@@ -107,7 +105,7 @@ ms.suite: ems
 
     컴퓨터에서 클라이언트를 구성하는 방법에 대한 자세한 내용은 [클라이언트 구성](how-to-configure-the-ad-rms-client-2-0.md)을 참조하세요. RMS 서버를 설치하는 방법에 대한 자세한 내용은 [서버 설치 및 구성](how-to-install-and-configure-an-rms-server.md)을 참조하세요.
 
-### 관련 항목
+## 관련 항목
 
 * [사용 방법](how-to-use-msipc.md)
 * [클라이언트 구성](how-to-configure-the-ad-rms-client-2-0.md)
@@ -125,6 +123,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

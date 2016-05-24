@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: e51adc12-4ee1-4819-bd8e-08ccf654fa00
-
+ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 서버 설치 및 구성
 
 이 항목에서는 권한 사용 응용 프로그램 테스트에 사용할 RMS 서버를 설치 및 구성하는 단계를 설명합니다.
@@ -93,7 +91,7 @@ ms.suite: ems
 
         **HKEY\_LOCAL\_MACHINE**\\**Software**\\**Microsoft**\\**DRMS**\\**1.0**\\**UddiProvider** = 0e3d9bb8-b765-4a68-a329-51548685fed3
 
-### 관련 항목
+## 관련 항목
 
 * [사용 방법](how-to-use-msipc.md)
  
@@ -104,6 +102,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

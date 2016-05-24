@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 03d4fa22-0de4-400f-935d-e347d5890680
-
+ms.assetid: 186A9740-D812-4440-B28A-6968B2D8898C
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 사용 방법
 
 다음 항목에서는 권한 관리 서비스 SDK 2.1을 사용하여 응용 프로그램에 대해 정보 보호를 구현하는 과정의 주요 작업을 안내합니다.
@@ -38,7 +36,7 @@ ms.suite: ems
   이 섹션에서는 테스트된 응용 프로그램을 프로덕션 환경으로 릴리스하는 과정을 안내합니다.
  
 
-### 관련 항목
+## 관련 항목
 
 * [개요](ad-rms-overview.md)
 * [사용 방법](how-to-use-msipc.md)
@@ -47,6 +45,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

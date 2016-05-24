@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 013f9d75-0b66-44a8-9b01-d05b44a5ea0c
-
+ms.assetid: 6749817E-FF34-4384-BF63-39AEA5C372CA
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 프로덕션 라이선스 얻기
 
 권한 관리 서비스 SDK 2.1을 사용하여 개발한 응용 프로그램을 릴리스하려면 먼저 프로덕션 사용권 계약을 신청하여 프로덕션 인증서를 얻어야 합니다.
@@ -43,8 +41,6 @@ Azure RMS를 사용하여 실행하는 방법에 대한 자세한 내용은 [서
 프로덕션 사용권 계약을 신청하면 인증서를 얻을 수 있습니다.
 
 ## 프로덕션 사용권 계약 요청
-
-![](../media/wedge.gif)
 
 -   다음 정보를 포함하여 [RMLA@microsoft.com](mailto:rmla@microsoft.com)으로 메일 메시지를 보내세요.
 
@@ -93,6 +89,6 @@ Azure RMS를 사용하여 실행하는 방법에 대한 자세한 내용은 [서
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

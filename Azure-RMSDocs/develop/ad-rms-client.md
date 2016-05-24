@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 8116fe81-16db-45fe-96a7-d53f2914a2e9
-
+ms.assetid: F7145090-C2EB-405A-A4CF-0240D57A36DA
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 클라이언트
+# 클라이언트
 
 이 항목에서는 Active Directory Rights Management Services 클라이언트 2.1의 용도와 기능에 대해 설명합니다.
 
@@ -52,6 +51,6 @@ AD RMS 클라이언트 2.1은 사용자가 보호된(암호화된) 콘텐츠를 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

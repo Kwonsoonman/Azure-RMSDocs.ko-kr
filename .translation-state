@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "df2964523b3d0902ae6ac50cad02250a8480914b",
-  "LastTranslatedCommit": "35b6aab3eb69e48e98039261a85562e7eb6d9af3",
+  "LastTranslatedCommit": "b8326fc5597be82f4d1da094e4c5f68cb360b555",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -40753,14 +40753,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "b8326fc5597be82f4d1da094e4c5f68cb360b555",
+      "TargetFilePath": "Azure-RMSDocs\\develop\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.ee0d6e4793d84f56530614f919af0cf682e59684.ko-kr.xlf",
+      "HandbackFileCommit": "d92ee52fca0f0c798e1dc5d0796a8335a65ad96f",
+      "HandbackDateTime": "2016-05-24T14:59:56.4545392Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-05-24T14:59:56.4545392Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\archive\\how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.ee0d6e4793d84f56530614f919af0cf682e59684.ko-kr.xlf",
       "ArchiveFileCommit": "2f52e23102a557233acfc33805d2375be90301eb",
       "ArchiveFileDateTime": "2016-04-26T04:50:33.2232031Z",

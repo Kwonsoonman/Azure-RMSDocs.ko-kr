@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 08cb33e0-7df5-4855-a05b-159e6532f3ca
-
+ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 응용 프로그램 배포
 
 
@@ -80,7 +78,7 @@ AD RMS 클라이언트 2.1은 Windows 운영 체제 구성 요소가 아닙니�
   - 다단계 인증 활용
   - 컴퓨터에 대한 관리자 권한 없이 RMS 2.1 클라이언트 설치
  
-  최종 사용자가 Azure 권한 관리 서비스를 활용하려면 Online Services 로그인 도우미를 배포해야 합니다. 응용 프로그램 개발자는 최종 사용자가 RMS(온-프레미스)를 사용할지, 아니면 Azure 권한 관리 서비스(클라우드 서비스)를 사용할지 알 수 없습니다.
+  최종 사용자가 Azure 권한 관리 서비스를 활용하려면 *Online Services 로그인 도우미*를 배포해야 합니다. 응용 프로그램 개발자는 최종 사용자가 RMS(온-프레미스)를 사용할지, 아니면 Azure 권한 관리 서비스(클라우드 서비스)를 사용할지 알 수 없습니다.
 
 > [!IMPORTANT]
 > Azure RMS를 사용하여 RMS SDK 2.1 클라이언트 응용 프로그램을 실행하려면 Azure RMS 테넌트를 요청해야 합니다. 테넌트 요청을 포함하여 <rmcstbeta@microsoft.com>으로 메일을 보내세요.
@@ -105,6 +103,6 @@ AD RMS 클라이언트 2.1은 Windows 운영 체제 구성 요소가 아닙니�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

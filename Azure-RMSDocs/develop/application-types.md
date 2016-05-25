@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 749146d4-a49d-47dc-a43a-d37d96310e18
-
+ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 응용 프로그램 종류
 
 
@@ -40,9 +38,9 @@ ms.suite: ems
 ### 서버 모드 응용 프로그램
 
 
-서버 모드는 RMS 보호된 콘텐츠를 사용, 보호 또는 처리하는 비대화형 응용 프로그램에 사용됩니다. 예를 들어 파일 서버에서 서비스로 실행되며 중요한 문서를 자동으로 보호하는 데이터 손실 방지 응용 프로그램이 있습니다. 이 응용 프로그램 종류의 예는 [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)을 참조하세요.
+*서버 모드*는 RMS 보호된 콘텐츠를 사용, 보호 또는 처리하는 비대화형 응용 프로그램에 사용됩니다. 예를 들어 파일 서버에서 서비스로 실행되며 중요한 문서를 자동으로 보호하는 *데이터 손실 방지* 응용 프로그램이 있습니다. 이 응용 프로그램 종류의 예는 [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)을 참조하세요.
 
-응용 프로그램이 서버 모드를 사용하는 경우 RMS 서버에 자동으로 인증해야 합니다. 클라이언트 모드와 달리 자동으로 인증하지 못하면 RMS SDK 2.1에서 자격 증명 프롬프트가 열리지 않습니다. 또한 서버 모드에서 실행하는 경우에는 응용 프로그램 매니페스트가 필요하지 않습니다.
+응용 프로그램이 *서버 모드*를 사용하는 경우 RMS 서버에 자동으로 인증해야 합니다. *클라이언트 모드*와 달리 자동으로 인증하지 못하면 RMS SDK 2.1에서 자격 증명 프롬프트가 열리지 않습니다. 또한 *서버 모드*에서 실행하는 경우에는 응용 프로그램 매니페스트가 필요하지 않습니다.
 
 API 보안 모드 설정에 대한 자세한 내용은 [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)을 참조하세요.
 
@@ -60,7 +58,7 @@ Microsoft 메모장은 간단한 리치 클라이언트 응용 프로그램입�
 
 응용 프로그램 보호에 대한 자세한 내용은 [사용 제한 이해](understanding-usage-restrictions.md)를 참조하세요.
 
-### 관련 항목
+## 관련 항목
 
 * [개발자 개념](ad-rms-concepts-nav.md)
 * [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
@@ -75,6 +73,6 @@ Microsoft 메모장은 간단한 리치 클라이언트 응용 프로그램입�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

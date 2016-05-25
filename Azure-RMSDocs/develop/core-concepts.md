@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 10e3bee0-aaa4-4cbc-912f-f1ac50e117d5
-
+ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 개발자 지침 및 용어
 Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management Services)를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는 데 중점을 둡니다.
 
@@ -45,6 +43,6 @@ Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management 
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

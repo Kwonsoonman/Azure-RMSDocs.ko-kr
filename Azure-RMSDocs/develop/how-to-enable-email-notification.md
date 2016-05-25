@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: fcaa5643-64a9-4181-b29b-90211fce7ab5
-
+ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
 # optional metadata
 
 #ROBOTS:
@@ -25,12 +24,11 @@ ms.suite: ems
 
 ---
 
-﻿
 # 메일 알림 사용
 
 메일 알림을 사용하면 누군가가 보호된 콘텐츠에 액세스할 경우 보호된 콘텐츠 소유자가 알림을 받을 수 있습니다.
 
-지정된 라이선스에 대해 메일 알림을 설정하려면 속성 형식 매개 변수 dwPropID를 [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)로 지정하고 응용 프로그램 데이터 필드를 [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list) 형식으로 지정하여 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)를 사용합니다.
+지정된 라이선스에 대해 메일 알림을 설정하려면 속성 형식 매개 변수 *dwPropID*를 [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)로 지정하고 응용 프로그램 데이터 필드를 [**IPC\_NAME\_VALUE\_LIST**](/rights-management/sdk/2.1/api/win/structures#msipc_ipc_name_value_list) 형식으로 지정하여 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)를 사용합니다.
 
 ## C++
 
@@ -73,6 +71,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

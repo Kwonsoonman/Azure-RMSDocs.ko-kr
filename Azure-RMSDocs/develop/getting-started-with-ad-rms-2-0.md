@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 23e80932-9883-41f3-833d-b263fb419a62
-
+ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 시작
+# 시작
 
 권한 관리 서비스 SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다. 이 플랫폼은 키 관리, 암호화 및 암호 해독 처리와 같은 복잡한 보안 사례를 처리하고 쉬운 응용 프로그램 개발을 위해 간소화된 API를 제공합니다.
 
@@ -62,7 +61,7 @@ RMS SDK 2.1에서는 다양한 중요 클라이언트 및 서버 플랫폼을 �
 **한 번 작성** - 최신 RMS 기능을 사용하기 위해 RMS SDK 2.1 응용 프로그램에서 코드 변경이나 재컴파일을 수행할 필요가 없습니다. 새로운 RMS 기능이 RMS 서버에 추가되면 기존 응용 프로그램에서 바로 사용할 수 있습니다.
 **일관성** - RMS SDK 2.1을 사용하면 다양한 RMS 구성을 일관되게 적용하는 응용 프로그램을 쉽게 작성할 수 있습니다. 응용 프로그램 개발자가 작성해야 하는 RMS 사용자 인터페이스도 훨씬 감소하므로 일관된 모양과 느낌이 장려되고 사용자 교육의 필요성이 줄어듭니다.
 
-### 관련 항목
+## 관련 항목
 
 * [AD RMS 샘플](samples.md)
 * [AD RMS 개발자 코너](http://blogs.msdn.com/b/rms/)
@@ -79,6 +78,6 @@ RMS SDK 2.1에서는 다양한 중요 클라이언트 및 서버 플랫폼을 �
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

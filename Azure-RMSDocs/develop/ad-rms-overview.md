@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: a58894d5-3271-46d7-bb1c-fbd22eae8530
-
+ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 개요
 
 RMS(권한 관리 서비스)는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다. 권한 사용 응용 프로그램을 통해 콘텐츠 소유자는 콘텐츠를 열거나 수정, 인쇄, 전달하거나 다른 작업을 수행할 수 있는 사람을 정의할 수 있습니다.
@@ -64,6 +62,6 @@ AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

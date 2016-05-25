@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 58051d42-5a0a-4b65-9e02-bcdbf17d3262
-
+ms.assetid: 74C342BF-0F79-486D-AED7-C53230DE5FA7
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 클라이언트 구성
 
 이 항목에는 Active Directory Rights Management Services 클라이언트 2.1을 구성하는 방법에 대한 지침이 포함되어 있습니다.
@@ -96,8 +94,8 @@ ms.suite: ems
 
 |Key|값|
 |---|-----|
-|`HKEY_LOCAL_MACHINE\`<br>`SOFTWARE\`<br>`Microsoft\`<br>`MSIPC\`<br>`ServiceLocation\`<br>`EnterpriseCertification`|(기본값):<br><br> [**http**&#124;**https**]**://** RMSClusterName **/_wmcs/Certification**|
-|`HKEY_LOCAL_MACHINE\`<br>`SOFTWARE\`<br>`Microsoft\`<br>`MSIPC\`<br>`ServiceLocation\`<br>`EnterprisePublishing`|(기본값):<br><br> [**http**&#124;**https**]**://** RMSClusterName **/_wmcs/Licensing**|
+|`HKEY_LOCAL_MACHINE\`<br>`SOFTWARE\`<br>`Microsoft\`<br>`MSIPC\`<br>`ServiceLocation\`<br>`EnterpriseCertification`|(기본값):<br><br> [**http**&#124;**https**]**://** *RMSClusterName* **/_wmcs/Certification**|
+|`HKEY_LOCAL_MACHINE\`<br>`SOFTWARE\`<br>`Microsoft\`<br>`MSIPC\`<br>`ServiceLocation\`<br>`EnterprisePublishing`|(기본값):<br><br> [**http**&#124;**https**]**://** *RMSClusterName* **/_wmcs/Licensing**|
 
 
 **참고** 기본적으로 이러한 키는 레지스트리에 없으며 만들어야 합니다.
@@ -117,7 +115,7 @@ ms.suite: ems
 
 이 항목의 지침은 일부에 불과합니다. AD RMS 클라이언트 2.1을 구성하는 방법에 대한 자세한 내용은 [RMS 클라이언트 2.0 배포 참고 사항](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx)을 참조하세요.
 
-### 관련 항목
+## 관련 항목
 
 
 * [사용 방법](how-to-use-msipc.md)
@@ -131,6 +129,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

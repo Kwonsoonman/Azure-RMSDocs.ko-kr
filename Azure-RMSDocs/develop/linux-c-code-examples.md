@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 11acef4b-67f8-4e45-a0e7-d9310213b5f9
-
+ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 # optional metadata
 
 #ROBOTS:
@@ -25,24 +24,18 @@ ms.suite: ems
 
 ---
 
-﻿# Linux 코드 예제
+# Linux 코드 예제
 
 이 항목에서는 Linux 버전의 RMS SDK에 대한 중요한 시나리오 및 코드 요소를 소개합니다.
 
-아래 코드 조각은 샘플 응용 프로그램 rms\_sample 및 rmsauth\_sample에서 가져온 것입니다. 자세한 내용은 GitHub 리포지토리에서 [샘플](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples)을 참조하세요.
-
--   [**시나리오**: 보호된 파일에서 보호 정책 정보 액세스](#scenario__access_protection_policy_information_from_a___protected_file)
--   [**시나리오**: 템플릿을 사용하여 새 보호된 파일 만들기](#scenario__create_a_new_protected_file_using_a_template)
--   [**시나리오**: 사용자 지정 보호를 사용하여 파일 보호](#scenario__protect_a_file_using_custom_protection)
--   [WorkerThread - 지원 메서드](#workerthread_-_a_supporting_method)
--   [**시나리오**: RMS 인증](#scenario__rms_authentication)
+아래 코드 조각은 샘플 응용 프로그램 *rms\_sample* 및 *rmsauth\_sample*에서 가져온 것입니다. 자세한 내용은 GitHub 리포지토리에서 [샘플](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples)을 참조하세요.
 
 ## 시나리오: 보호된 파일에서 보호 정책 정보 액세스
 
 **RMS 보호된 파일 열고 읽기**
 **원본**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**설명**: 사용자로부터 파일 이름을 받은 후 인증서를 읽고(MainWindow::addCertificates 참조), 클라이언트 ID 및 리디렉션 URL을 사용하여 권한 부여 콜백을 설정하고, ConvertFromPFile을 호출하고(다음 코드 예제 참조), 보호 정책 이름, 설명 및 콘텐츠 유효 날짜를 읽습니다.
+**설명**: 사용자로부터 파일 이름을 받은 후 인증서를 읽고(*MainWindow::addCertificates* 참조), 클라이언트 ID 및 리디렉션 URL을 사용하여 권한 부여 콜백을 설정하고, *ConvertFromPFile*을 호출하고(다음 코드 예제 참조), 보호 정책 이름, 설명 및 콘텐츠 유효 날짜를 읽습니다.
 
 **C++**:
 
@@ -110,7 +103,7 @@ ms.suite: ems
 **보호된 파일 스트림 만들기**
 **원본**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**설명**: 이 메서드는 SDK 메서드 ProtectedFileStream::Aquire를 통해 전달된 지원 스트림에서 보호된 파일 스트림을 만듭니다. 보호된 파일 스트림은 호출자에게 반환됩니다.
+**설명**: 이 메서드는 SDK 메서드 *ProtectedFileStream::Aquire*를 통해 전달된 지원 스트림에서 보호된 파일 스트림을 만듭니다. 보호된 파일 스트림은 호출자에게 반환됩니다.
 
 **C++**:
 
@@ -162,7 +155,7 @@ ms.suite: ems
 **사용자가 선택한 템플릿을 사용하여 파일 보호**
 **원본**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**설명**: 사용자로부터 파일 이름을 받은 후 인증서를 읽고(MainWindow::addCertificates 참조), 클라이언트 ID 및 리디렉션 URL을 사용하여 권한 부여 콜백을 설정합니다. 선택한 파일은 ConvertToPFileTemplates를 호출하여 보호됩니다(다음 코드 예제 참조).
+**설명**: 사용자로부터 파일 이름을 받은 후 인증서를 읽고(*MainWindow::addCertificates* 참조), 클라이언트 ID 및 리디렉션 URL을 사용하여 권한 부여 콜백을 설정합니다. 선택한 파일은 *ConvertToPFileTemplates*를 호출하여 보호됩니다(다음 코드 예제 참조).
 
 **C++**:
 
@@ -308,7 +301,7 @@ ms.suite: ems
 **사용자 지정 보호를 사용하여 파일 보호**
 **원본**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**설명**: 사용자로부터 파일 이름을 받은 후 인증서를 읽고(MainWindow::addCertificates 참조), 사용자로부터 권한 정보를 수집하고, 클라이언트 ID 및 리디렉션 URL을 사용하여 권한 부여 콜백을 설정합니다. 선택한 파일은 ConvertToPFilePredefinedRights를 호출하여 보호됩니다(다음 코드 예제 참조).
+**설명**: 사용자로부터 파일 이름을 받은 후 인증서를 읽고(*MainWindow::addCertificates* 참조), 사용자로부터 권한 정보를 수집하고, 클라이언트 ID 및 리디렉션 URL을 사용하여 권한 부여 콜백을 설정합니다. 선택한 파일은 *ConvertToPFilePredefinedRights*를 호출하여 보호됩니다(다음 코드 예제 참조).
 
 **C++**:
 
@@ -391,7 +384,7 @@ ms.suite: ems
 **사용자가 선택한 권한이 제공되면 보호 정책 만들기**
 **원본**: [rms\_sample/pfileconverter.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
 
-**설명**: 정책 설명자를 만들고 사용자의 권한 정보로 채운 다음 정책 설명자를 사용하여 사용자 정책을 만듭니다. 이 정책은 ConvertToPFileUsingPolicy 호출을 통해 선택한 파일을 보호하는 데 사용됩니다(이 항목의 이전 섹션에 있는 설명 참조).
+**설명**: 정책 설명자를 만들고 사용자의 권한 정보로 채운 다음 정책 설명자를 사용하여 사용자 정책을 만듭니다. 이 정책은 *ConvertToPFileUsingPolicy* 호출을 통해 선택한 파일을 보호하는 데 사용됩니다(이 항목의 이전 섹션에 있는 설명 참조).
 
 **C++**:
 
@@ -423,7 +416,7 @@ ms.suite: ems
 ## WorkerThread - 지원 메서드
 
 
-WorkerThread() 메서드는 두 개의 이전 예제 시나리오 **보호된 파일 스트림 만들기** 및 **정책이 제공되면 파일 보호**에서 다음과 같은 방식으로 호출됩니다.
+*WorkerThread()* 메서드는 두 개의 이전 예제 시나리오 **보호된 파일 스트림 만들기** 및 **정책이 제공되면 파일 보호**에서 다음과 같은 방식으로 호출됩니다.
 
 **C++**:
 
@@ -530,7 +523,7 @@ WorkerThread() 메서드는 두 개의 이전 예제 시나리오 **보호된 �
 
 
 **2단계**: **rmsauth::AuthenticationContext** 개체를 만듭니다.
-설명: Azure 기관 URI 및 FileCache 개체를 지정합니다.
+설명: Azure *기관 URI* 및 *FileCache* 개체를 지정합니다.
 
 **C++**:
 
@@ -543,11 +536,11 @@ WorkerThread() 메서드는 두 개의 이전 예제 시나리오 **보호된 �
 **3단계**: **authContext** 개체의 **aquireToken** 메서드를 호출하고 다음 매개 변수를 지정합니다.
 설명:
 
--   요청된 리소스 - 액세스하려는 보호된 리소스입니다.
--   클라이언트 고유 ID - 대체로 GUID입니다.
--   리디렉션 URI - 인증 토큰을 가져온 후 다시 주소가 지정되는 URI입니다.
--   인증 프롬프트 동작 - **PromptBehavior::Auto**를 설정하면 라이브러리에서 필요한 경우 캐시 및 새로 고침 토큰을 사용하려고 합니다.
--   사용자 ID - 프롬프트 창에 표시되는 사용자 이름입니다.
+-   *요청된 리소스* - 액세스하려는 보호된 리소스입니다.
+-   *클라이언트 고유 ID* - 대체로 GUID입니다.
+-   *리디렉션 URI* - 인증 토큰을 가져온 후 다시 주소가 지정되는 URI입니다.
+-   *인증 프롬프트 동작* - **PromptBehavior::Auto**를 설정하면 라이브러리에서 필요한 경우 캐시 및 새로 고침 토큰을 사용하려고 합니다.
+-   *사용자 ID* - 프롬프트 창에 표시되는 사용자 이름입니다.
 
 **C++**:
 
@@ -577,7 +570,7 @@ WorkerThread() 메서드는 두 개의 이전 예제 시나리오 **보호된 �
 
 
 **2단계**: **UserCredential** 개체를 만듭니다.
-설명: 사용자 로그인과 암호를 지정합니다.
+설명: *사용자 로그인*과 *암호*를 지정합니다.
 
 **C++**:
 
@@ -586,7 +579,7 @@ WorkerThread() 메서드는 두 개의 이전 예제 시나리오 **보호된 �
 
 
 **3단계**: **rmsauth::AuthenticationContext** 개체를 만듭니다.
-설명: Azure 기관 URI 및 FileCache 개체를 지정합니다.
+설명: Azure 기관* URI* 및 *FileCache* 개체를 지정합니다.
 
 **C++**:
 
@@ -597,9 +590,9 @@ WorkerThread() 메서드는 두 개의 이전 예제 시나리오 **보호된 �
 
 
 **4단계**: **authContext**의 **aquireToken** 메서드를 호출하고 다음 매개 변수를 지정합니다.
--   요청된 리소스 - 액세스하려는 보호된 리소스입니다.
--   클라이언트 고유 ID - 대체로 GUID입니다.
--   사용자 자격 증명 - 생성된 개체를 전달합니다.
+-   *요청된 리소스* - 액세스하려는 보호된 리소스입니다.
+-   *클라이언트 고유 ID* - 대체로 GUID입니다.
+-   *사용자 자격 증명* - 생성된 개체를 전달합니다.
 
 **C++**:
 
@@ -616,6 +609,6 @@ WorkerThread() 메서드는 두 개의 이전 예제 시나리오 **보호된 �
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

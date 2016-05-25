@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 8581e996-79b4-4ffc-a63e-2236c83dc954
-
+ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Visual Studio 구성
+# Visual Studio 구성
 
 이 항목에는 권한 관리 서비스 SDK 2.1을 사용하도록 Visual Studio 프로젝트를 구성하는 방법에 대한 지침이 포함되어 있습니다.
 
@@ -74,7 +73,7 @@ ms.suite: ems
 
     ![솔루션 탐색기 리소스 파일 필드](../media/original_file_name.png)
 
-### 관련 항목
+## 관련 항목
 
 * [사용 방법](how-to-use-msipc.md)
 * [SDK 설치](create-your-first-rights-aware-application.md)
@@ -86,6 +85,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

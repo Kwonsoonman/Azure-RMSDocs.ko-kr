@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 191f4c29-8aea-48cc-a859-84487b803797
-
+ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 커뮤니티 리소스
 
 여러 플랫폼에서 Active Directory Rights Management Services를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다.
@@ -55,6 +53,6 @@ Microsoft Connect에 등록하지 않은 경우 다음을 수행합니다.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: aca520e1-ea56-4405-8d79-953a7b430bb4
-
+ms.assetid: 2BD4F55D-BA88-4516-86FB-E2E6535D1690
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Linux API 참조
 
 Linux 버전이 지정된 운영 체제 지원에 대한 API 참조는 Github에서 호스트됩니다([RMS SDK for C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)). 자세한 내용은 [시작](get-started.md)을 참조하세요.
@@ -38,6 +36,6 @@ Linux 버전이 지정된 운영 체제 지원에 대한 API 참조는 Github에
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

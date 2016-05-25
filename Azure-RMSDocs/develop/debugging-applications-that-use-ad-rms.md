@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: caf031ca-4876-4d42-9fbc-8638f579fb38
-
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 권한 사용 응용 프로그램 디버그
 
 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
@@ -72,7 +70,7 @@ Wevtutil 인터페이스를 통해 로그의 세부 정보 표시 수준을 제�
 
  
 
-### 관련 항목
+## 관련 항목
 
 * [사용 방법](how-to-use-msipc.md)
  
@@ -83,6 +81,6 @@ Wevtutil 인터페이스를 통해 로그의 세부 정보 표시 수준을 제�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

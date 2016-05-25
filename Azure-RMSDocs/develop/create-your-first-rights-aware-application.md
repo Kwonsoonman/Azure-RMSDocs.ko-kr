@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c1eb27e1-1d58-4899-9c6d-6e53bc92889e
-
+ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # SDK 설치
 
 이 항목에서는 개발자 도구를 설치하는 과정을 안내합니다.
@@ -43,7 +41,7 @@ ms.suite: ems
 
 "Setup\_sdk.exe"에 의해 시스템에 설치되는 파일에 대한 자세한 내용은 [개발 환경 파일](sdk-elements.md)을 참조하세요.
 
-### 관련 항목
+## 관련 항목
 
 * [사용 방법](how-to-use-msipc.md)
 * [개발 환경 파일](sdk-elements.md)
@@ -55,6 +53,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

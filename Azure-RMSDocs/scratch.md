@@ -28,7 +28,7 @@ ms.suite: ems
 
 # 첫 번째 수준 제목
 
-[Github에서](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md) 이 파일에 대한 markdown을 참조하세요. [EM 파일럿 스타일 가이드](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931)에서 markdown 참조를 참조하세요. 
+[Github에서](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/master/Azure-RMSDocs/scratch.md) 이 파일에 대한 markdown을 참조하세요. [EM 파일럿 스타일 가이드](https://worldready.cloudapp.net/Styleguide/Edit?id=2781&topicid=36931)에서 markdown 참조를 참조하세요.. 
 
 ## 두 번째 수준 제목
 ### 세 번째 수준 제목
@@ -118,7 +118,7 @@ Bare URL을 클릭할 수 있음: http://www.github.com/
 
 ### 인라인 코드
 
-This is an example of `in-line code`.
+다음에 대한 예제입니다. `in-line code`.
 
 ## Blockquote
 
@@ -165,6 +165,18 @@ This is an example of `in-line code`.
 [단추 링크](/azure-rms/index.html)
 
 ### 선택기
+
+Intro text: [!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [bar](./develop/developer-notes.md)
+
+Intro text: > [!div class="op_single_selector"]
+- [foo](./develop/developers-guide.md)
+- [bar](./develop/developer-notes.md)
+
+
+
+
 > [!div class="op_single_selector"]
 - [foo](./develop/developers-guide.md)
 - [bar](./develop/developer-notes.md)
@@ -179,6 +191,6 @@ This is an example of `in-line code`.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

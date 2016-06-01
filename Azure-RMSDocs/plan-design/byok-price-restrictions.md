@@ -27,13 +27,16 @@ ms.suite: ems
 
 # BYOK 가격 및 제한 사항
 
+*적용 대상: Azure 권한 관리, Office 365*
+
+
 IT에서 관리하는 Azure 구독이 있는 조직은 추가 요금 없이 BYOK를 사용하고 사용 현황을 기록할 수 있습니다. 개인용 RMS를 사용하는 조직은 BYOK 및 로깅 기능을 사용할 수 없는데, 이러한 조직에는 이러한 기능을 구성하는 테넌트 관리자가 없기 때문입니다.
 
 
 > [!NOTE]
-> 개인용 RMS에 대한 자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
+> 개인용 RMS에 대한 자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md) 항목을 참조하세요..
 
-![](../media/RMS_BYOK_noExchange.png)
+![BYOK에서는 Exchange Online을 지원하지 않습니다.](../media/RMS_BYOK_noExchange.png)
 
 BYOK 및 로깅 기능은 Azure RMS와 통합된 모든 응용 프로그램에서 원활하게 작동합니다. 이러한 응용 프로그램으로는 SharePoint Online과 같은 클라우드 서비스, Exchange 및 SharePoint를 실행하고 RMS 커넥터를 통해 Azure RMS와 작동하는 온-프레미스 서버 및 Office 2013과 같은 클라이언트 응용 프로그램이 있습니다. Azure RMS에 대한 요청을 만드는 응용 프로그램에 관계없이 키 사용 현황 로그를 얻을 수 있습니다.
 
@@ -57,12 +60,12 @@ AD RMS에서 Azure RMS로 마이그레이션하는 경우 TPD(신뢰할 수 있�
 
 ## 다음 단계
 
-고유한 키를 관리하기로 결정한 경우 [Azure 권한 관리 테넌트 키 구현](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key)으로 이동합니다.
+고유한 키를 관리하기로 결정한 경우 [Azure 권한 관리 테넌트 키 구현](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 섹션으로 이동합니다..
 
 Microsoft에서 테넌트 키를 관리하는 기본 구성을 유지하기로 결정한 경우 Azure 권한 관리 테넌트 키 계획 및 구현 문서에서 [다음 단계](plan-implement-tenant-key.md#next-steps) 섹션을 참조하세요.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

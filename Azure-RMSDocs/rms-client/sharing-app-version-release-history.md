@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Rights Management 공유 응용 프로그램&colon; 버전 릴리스 기록 | Azure RMS
+title: 권한 관리 공유 응용 프로그램&colon; 버전 릴리스 기록 | Azure RMS
 description:
 keywords:
 author: cabailey
@@ -26,12 +26,15 @@ ms.suite: ems
 ---
 
 # Rights Management 공유 응용 프로그램: 버전 릴리스 기록
+
+*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+
 Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management 공유 응용 프로그램을 정기적으로 업데이트합니다. 다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다.
 
 2015년 1월 1일 이전 버전은 목록에 없습니다.
 
 > [!NOTE]
-> RMS 공유 응용 프로그램에 대한 의견이나 질문이 있으면 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)에 전자 메일 메시지를 보냅니다.
+> RMS 공유 응용 프로그램에 대한 의견이나 질문이 있으면 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)에 메일 메시지를 보내 주세요..
 
 ## 버전 1.0.2004.0
 **릴리스 날짜**: 2015년 12월 11일
@@ -59,7 +62,7 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
 -   최신 인증을 사용하는 응용 프로그램에서 Microsoft 로그인 도우미에 대한 종속성도 제거하는 Azure RMS에 대한 MFA(다단계 인증)를 지원합니다.
 
-    자세한 내용은 [Azure 권한 관리에 대한 요구 사항](../get-started/requirements-azure-rms.md)에서 [MFA(Multi-Factor Authentication) 및 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 섹션을 참조하세요.
+    자세한 내용은 [Azure 권한 관리에 대한 요구 사항](../get-started/requirements-azure-rms.md) 항목에서 [MFA(Multi-Factor Authentication) 및 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 섹션을 참조하세요..
 
 ## 버전 1.0.1784.0
 **릴리스 날짜**: 2015년 7월 30일
@@ -81,7 +84,7 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
 **새로운 기능**:
 
--   문서 추적 및 해지를 지원합니다. 자세한 내용은 [RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](sharing-app-track-revoke.md)를 참조하세요.
+-   문서 추적 및 해지를 지원합니다. 자세한 내용은 [RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](sharing-app-track-revoke.md) 항목을 참조하세요..
 
 -   **보호 상태로 공유**선택 시의 템플릿 지원:
 
@@ -91,7 +94,7 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
     -   **모든 장치에서 사용 허용** 과 **사용 제한 적용**옵션은 이제 표시되지 않습니다. 대신 파일 형식에 따라 **일반 보호** 가 자동으로 선택됩니다.
 
-    자세한 내용은 [Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션](sharing-app-dialog-box.md)을 참조하세요.
+    자세한 내용은 [Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션](sharing-app-dialog-box.md) 항목을 참조하세요..
 
 ## 버전 1.0.1667.0
 **릴리스 날짜**: 2015년 1월 19일
@@ -106,10 +109,10 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
 **새로운 기능**:
 
--   **조직 내의 여러 메일 도메인 지원**: AD RMS를 사용하며 조직의 사용자에게 여러 메일 도메인이 있는 경우 이 업데이트를 통해 사용자가 다른 도메인의 조직 사용자에 의해 보호된 콘텐츠를 사용할 수 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [AD RMS에만 해당: 조직 내의 여러 메일 도메인 지원](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) 섹션을 참조하세요.
+-   **조직 내의 여러 메일 도메인 지원**: AD RMS를 사용하며 조직의 사용자에게 여러 메일 도메인이 있는 경우 이 업데이트를 통해 사용자가 다른 도메인의 조직 사용자에 의해 보호된 콘텐츠를 사용할 수 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md) 항목에서 [AD RMS에만 해당: 조직 내의 여러 메일 도메인 지원](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) 섹션을 참조하세요..
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

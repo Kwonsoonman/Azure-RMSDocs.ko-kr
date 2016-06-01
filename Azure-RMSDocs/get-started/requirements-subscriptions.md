@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 Azure 권한 관리(Azure RMS)를 사용하려면 파일 및 메일 메시지를 보호할 사용자 및 서비스에 충분한 개수의 라이선스를 포함하는 다음 구독 중 하나 이상이 조직에 있어야 합니다. 사용자(파일 또는 메일 메시지 소유자)에 대해 보호를 적용하는 서비스를 사용 중인 경우 이러한 사용자는 다음 라이선스 중 하나가 있어야 합니다. 이 보호된 데이터를 사용(예: 읽기 및 편집)만 하는 사용자의 경우 라이선스가 필요하지 않습니다.
 
 -   Office 365
@@ -94,6 +97,6 @@ Enterprise Mobility Suite 구독에 대한 자세한 내용은 [Microsoft Enterp
 ## 다음 단계
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

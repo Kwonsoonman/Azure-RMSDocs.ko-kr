@@ -26,7 +26,10 @@ ms.suite: ems
 ---
 
 # 파일 서버 리소스 관리자 FCI를 사용하는 Azure RMS 보호용 Windows PowerShell 스크립트
-이 페이지에는 [Windows Server 파일 분류 인프라를 사용하는 RMS 보호](configure-fci.md)에 설명된 대로 복사하고 편집할 샘플 스크립트가 포함되어 있습니다.
+
+*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
+
+이 페이지에는 [Windows Server 파일 분류 인프라를 사용하는 RMS 보호](configure-fci.md)에 설명된 대로 복사하고 편집할 샘플 스크립트가 포함되어 있습니다..
 
 *&#42;&#42;고지 사항&#42;&#42;: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플*
 *스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.*
@@ -174,9 +177,9 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 ---
 
-[Windows Server 파일 분류 인프라를 사용하는 RMS 보호](configure-fci.md)로 돌아갑니다.
+[Windows Server 파일 분류 인프라를 사용하는 RMS 보호](configure-fci.md)로 돌아갑니다..
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

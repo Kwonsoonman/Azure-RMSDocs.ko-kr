@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소
+
+*적용 대상: Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+
 조직에서 Active Directory Rights Management Services가 아닌 Azure 권한 관리를 사용하고 있다면 RMS 공유 응용 프로그램을 사용하여 문서를 보호한 후에 보호된 문서가 사용되는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다. 이렇게 하려면 Windows 컴퓨터와 Mac 컴퓨터뿐 아니라 태블릿과 휴대폰에서도 액세스할 수 있는 **문서 추적 사이트**를 사용합니다.
 
 <div style="padding-top: 56.25%; position: relative; width: 100%;">
@@ -40,19 +43,19 @@ ms.suite: ems
 
 -   전자 메일 알림을 구성하려는 경우 **설정** 을 클릭하고 문서 액세스 시 전자 메일로 알림을 받을지 여부와 해당 방법을 선택합니다.
 
--   문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [문서 추적 FAQ](http://go.microsoft.com/fwlink/?LinkId=523977)에 액세스합니다.
+-   문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [FAQ for Document Tracking](http://go.microsoft.com/fwlink/?LinkId=523977)(문서 추적 FAQ) 항목에 액세스합니다..
 
 ## Office를 사용하여 문서 추적 사이트 액세스
 
--   Office 응용 프로그램, Word, Excel, PowerPoint의 경우 **홈** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
+-   Office 응용 프로그램, Word, Excel, PowerPoint의 경우 **홈** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다..
 
-    ![](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
+    ![RMS 공유 응용 프로그램을 사용하는 경우 Office 응용 프로그램에서 사용 추적 ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
 
 -   Outlook의 경우 **홈** 탭의  **RMS** 그룹에서 **사용량 추적**을 클릭합니다.
 
-    ![](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
+    ![RMS 공유 응용 프로그램을 사용하는 경우 Outlook에서 사용 추적 선택 ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
-이러한 RMS 옵션이 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md)를 참조하세요.
+이러한 RMS 옵션이 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md) 항목을 참조하세요..
 
 ### 문서를 추적 및 취소하는 다른 방법
 Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추적할 수 있을 뿐 아니라 다음과 같은 대체 방법을 사용할 수도 있습니다.
@@ -65,7 +68,7 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 #### 웹 브라우저를 사용하여 문서 추적 사이트 액세스
 
--   지원되는 브라우저를 사용하여 [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다.
+-   지원되는 브라우저를 사용하여 [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다..
 
     지원되는 브라우저: Internet Explorer 버전 10 이상을 사용하는 것이 좋지만 다음 브라우저를 통해서도 문서 추적 사이트를 사용할 수 있습니다.
 
@@ -83,26 +86,25 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 -   파일을 마우스 오른쪽 단추로 클릭하고 **RMS로 보호**를 선택한 다음 **사용량 추적**을 선택합니다.
 
-    ![](../media/ADRMS_MSRMSApp_ExplorerTrackUsage.png)
+    ![RMS 공유 응용 프로그램을 사용하는 경우 탐색기에서 사용 추적 선택](../media/ADRMS_MSRMSApp_ExplorerTrackUsage.png)
 
 #### Outlook 전자 메일 메시지를 사용하여 문서 추적 사이트에 액세스
 
 -   전자 메일 메시지의 **메시지** 탭  **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
 
-    ![](../media/ADRMS_MSRMSApp_OutlookMessageTrackUsage.png)
+    ![RMS 공유 응용 프로그램을 사용하는 경우 Outlook에서 사용 추적 선택](../media/ADRMS_MSRMSApp_OutlookMessageTrackUsage.png)
 
 ## 예제 및 기타 지침
 예를 들어 Rights Management 공유 응용 프로그램 및 방법 지침을 사용하는 방법에 대한 예는 Rights Management 공유 응용 프로그램 사용자 가이드에서 다음 섹션을 참조하세요.
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## 참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
-
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

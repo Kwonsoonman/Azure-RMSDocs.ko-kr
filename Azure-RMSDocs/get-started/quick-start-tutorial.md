@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Azure 권한 관리에 대한 빠른 시작 자습서
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 다음으로 이동합니다. 
 > [!div class="op_single_selector"]
 - [1단계: Azure RMS 활성화](tutorial-step1.md)
@@ -36,7 +39,7 @@ ms.suite: ems
 
 이 자습서에서 소개하는 간단한 5단계 과정을 통해 15분 이내에 신속하게 Microsoft Azure Rights Management(Azure RMS라고도 함)를 조직에서 사용해 볼 수 있습니다. 서비스를 활성화하고, 다른 조직의 사람에게 기밀 문서를 메일로 안전하게 보내고, 문서가 열린 시기를 추적할 수 있습니다. 기밀 문서는 메일로 보내면 전송 중에 암호화되며 보낸 사람이 설정한 권한에 따라 받는 사람만 읽을 수 있습니다.
 
-![](../media/AzRMS_QuickStartStepsAll.PNG)
+![Azure RMS 빠른 시작 자습서 모든 단계](../media/AzRMS_QuickStartStepsAll.PNG)
 
 이 자습서는 IT 관리자 및 컨설턴트를 대상으로 하며, 목표는 조직의 정보 보호 솔루션으로 Azure Rights Management를 평가하는 데 도움이 되는 것입니다. 프로덕션 환경에서는 서비스를 활성화하는 지침을 관리자가 수행하고 문서를 보내는 지침을 최종 사용자가 수행합니다. 기밀 문서를 다른 조직에 있는 사람에게 안전하게 보내는 종단 간 시나리오를 설명하기 위해, 이 자습서에는 두 가지 지침이 모두 포함되어 있습니다. 이 자습서를 완료하는 데 문제가 있는 경우에는 메일 메시지를 보내는 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) 으로 메일 메시지를 보내면 도움을 받을 수 있습니다.
 
@@ -52,13 +55,12 @@ ms.suite: ems
 
 이제 시작하겠습니다.
 
->[!div class="step-by-step"]
-[1단계 »](tutorial-step1.md)
+>[!div class="step-by-step"] [1단계 »](tutorial-step1.md)
 
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

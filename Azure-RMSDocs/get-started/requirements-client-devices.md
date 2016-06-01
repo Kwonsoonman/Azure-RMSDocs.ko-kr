@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Azure RMS 요구 사항: Azure RMS를 지원하는 클라이언트 장치
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 다음 섹션에서 Azure 권한 관리(Azure RMS)를 지원하는 장치를 확인할 수 있습니다.
 
 ## 컴퓨터
@@ -59,6 +62,6 @@ Azure 권한 관리를 지원하는 모바일 장치 운영 체제는 다음과 
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

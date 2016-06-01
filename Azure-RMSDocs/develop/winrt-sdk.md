@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows 스토어 설정 | Azure RMS
-description:
+description: Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: c2684152-7d52-4636-916d-15720f4e3346
-
+ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Windows 스토어 설정
 
 Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
@@ -34,8 +32,8 @@ Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2�
 
 -   [필수 구성 요소](#prerequisites)
 -   [선택 사항입니다.](#optional)
--   [개발 환경 구성](#configuring_your_development_environment)
--   [참고 항목](#see_also)
+-   [개발 환경 구성](#configuring-your-development-environment)
+-   [참고 항목](#see-also)
 
 ## 필수 구성 요소
 
@@ -61,18 +59,18 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 -   **파일**, **새로 만들기**를 차례로 클릭한 다음 **프로젝트**를 클릭합니다.
 -   **새 프로젝트** 대화 상자에서 **Visual C\#**을 클릭하고 **비어 있는 앱(Windows)**을 선택한 다음 **확인**을 클릭합니다.
 
-    ![](../media/winrtsetup-newproj.png)
+    ![새 프로젝트 만들기](../media/winrtsetup-newproj.png)
 
 -   **솔루션 탐색기**에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택하여 **참조 추가** 대화 상자를 엽니다.
 
-    ![](../media/winrtsetup-addref.png)
+    ![참조 추가](../media/winrtsetup-addref.png)
 
--   **참조 추가** 대화 상자에서 **찾아보기**를 클릭하고 SDK 패키지를 추출한 폴더에 있는 Microsoft.RightsManagement.dll 파일을 선택합니다.
+-   **참조 추가** 대화 상자에서 **찾아보기**를 클릭하고 SDK 패키지를 추출한 폴더에 있는 *Microsoft.RightsManagement.dll* 파일을 선택합니다.
 -   **관리되는 앱** - 관리되는 앱을 빌드하려면 이 참조를 추가하고 **Windows 8.1**-&gt;**확장**을 선택한 다음 **Windows용 Windows Visual C++ 런타임 패키지** 확인란을 선택해야 합니다.
 
-    ![](../media/winrtsetup-refmngr.png)
+    ![확장 추가](../media/winrtsetup-refmngr.png)
 
--   **기능 추가** - 응용 프로그램에서 SDK를 사용하려면 "인터넷(클라이언트 및 서버)" 기능이 필요합니다. 이 기능을 앱에 추가하려면 프로젝트에서 Package.appxmanifest 파일을 열고 **기능** 탭으로 이동하여 추가합니다.
+-   **기능 추가** - 응용 프로그램에서 SDK를 사용하려면 "인터넷(클라이언트 및 서버)" 기능이 필요합니다. 이 기능을 앱에 추가하려면 프로젝트에서 *Package.appxmanifest* 파일을 열고 **기능** 탭으로 이동하여 추가합니다.
 
 이제 새 Windows 스토어 앱을 만들 준비가 되었습니다.
 
@@ -91,6 +89,6 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 [Windows API 참조](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

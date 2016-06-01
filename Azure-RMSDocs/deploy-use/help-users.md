@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 사용자가 Azure 권한 관리를 사용하여 파일을 보호할 수 있도록 지원
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 조직에 대해 Azure RMS(Azure 권한 관리)를 배포 및 구성한 후에는 사용자, 관리자 및 지원 센터를 위해 도움말과 지침을 제공합니다.
 
 -   **최종 사용자 정보:**
@@ -40,13 +43,13 @@ ms.suite: ems
 
 -   **관리자 정보:**
 
-    일부 응용 프로그램에서는 관리자가 구성하는 정책과 설정을 사용하여 정보 보호를 자동으로 적용합니다. 이러한 응용 프로그램의 경우에는 해당 응용 프로그램과 서비스를 관리하는 기타 관리자를 위한 지침을 제공해야 할 수 있습니다. 자세한 내용은 [응용 프로그램이 Azure 권한 관리를 지원하는 방식](../understand-explore/applications-support.md) 및 [Azure 권한 관리에 대해 응용 프로그램 구성](configure-applications.md)을 참조하세요.
+    일부 응용 프로그램에서는 관리자가 구성하는 정책과 설정을 사용하여 정보 보호를 자동으로 적용합니다. 이러한 응용 프로그램의 경우에는 해당 응용 프로그램과 서비스를 관리하는 기타 관리자를 위한 지침을 제공해야 할 수 있습니다. 자세한 내용은 [응용 프로그램이 Azure 권한 관리를 지원하는 방식](../understand-explore/applications-support.md) 및 [Azure 권한 관리용 응용 프로그램 구성](configure-applications.md) 항목을 참조하세요..
 
 -   **지원 센터 정보:**
 
     지원 센터의 가장 유용한 도구 중 하나는 [RMS 분석기](https://www.microsoft.com/en-us/download/details.aspx?id=46437)입니다. 지원 센터 운영자는 이 도구를 Azure RMS 관리자 옵션을 사용하여 실행할 수 있으며 사용자에게 Azure RMS 사용자 옵션을 사용하여 실행하도록 요청할 수 있습니다. 이 도구는 문제를 식별하는 데 도움이 될 뿐 아니라 찾은 문제를 해결하며 문제가 해결되지 않으면 추적 로그를 기록합니다.
 
-    직원이 조직을 떠난 후에 법률 자문 부서 또는 관리자가 요청하는 경우처럼 보호된 문서의 모든 액세스에 대한 합법적인 요청이 있을 경우 지원 센터는 Azure RMS [슈퍼 사용자 기능](configure-super-users.md)을 사용하여 이를 요청하는 프로세스를 진행해야 합니다.
+    직원이 조직을 떠난 후에 법률 자문 부서 또는 관리자가 요청하는 경우처럼 보호된 문서의 모든 액세스에 대한 합법적인 요청이 있을 경우 지원 센터는 Azure RMS [슈퍼 사용자 기능](configure-super-users.md)을 사용하여 이를 요청하는 프로세스를 진행해야 합니다..
 
     또한 사용자가 보고할 수 있는 일반적인 문제 중 일부는 다음과 같습니다.
 
@@ -56,7 +59,7 @@ ms.suite: ems
 
     -   **콘텐츠 보호 또는 사용 문제:**
 
-        사용자가 사용하는 응용 프로그램에 대해 적절한 지침이 있으며 Azure RMS에서 지원하는 응용 프로그램 및 장치를 사용하고 있는지 확인합니다. 지원되는 응용 프로그램 및 장치에 대한 자세한 내용은 [Azure 권한 관리에 대한 요구 사항](../get-started/requirements-azure-rms.md)을 참조하세요.
+        사용자가 사용하는 응용 프로그램에 대해 적절한 지침이 있으며 Azure RMS에서 지원하는 응용 프로그램 및 장치를 사용하고 있는지 확인합니다. 지원되는 응용 프로그램 및 장치에 대한 자세한 내용은 [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md) 항목을 참조하세요..
 
         사용자가 콘텐츠를 보호하거나 사용하려고 할 때 오류가 발생하면 Azure RMS 사용자 권한으로 [RMS 분석기](https://www.microsoft.com/en-us/download/details.aspx?id=46437) 를 실행할 것을 요청합니다.
 
@@ -69,9 +72,9 @@ ms.suite: ems
 
 RMS 공유 응용 프로그램은 사용자가 보다 쉽게 중요한 문서를 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 하고 필요한 경우 액세스 권한을 취소할 수 있도록 합니다.
 
-Windows 컴퓨터에서 이 응용 프로그램을 사용하는 지침은 [Rights Management 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)를 참조하세요.
+Windows 컴퓨터에서 이 응용 프로그램을 사용하는 지침은 [Rights Management 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md) 항목을 참조하세요..
 
-모바일 장치의 경우 [모바일 플랫폼용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://technet.microsoft.com/dn451248)를 참조하세요.
+모바일 장치의 경우 [FAQ for Microsoft Rights Management Sharing Application for Mobile Platforms](http://technet.microsoft.com/dn451248)(모바일 플랫폼용 Microsoft Rights Management 공유 응용 프로그램 FAQ) 항목을 참조하세요..
 
 > [!TIP]
 > 개략적인 예제 시나리오 및 스크린샷을 보려면 [사용자가 모바일 사용자와 안전하게 첨부 파일 공유](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users)를 참조하세요.
@@ -99,7 +102,7 @@ Azure RMS를 사용 중이며 Rights Management 공유 응용 프로그램을 �
 
 1.  Outlook 내에서 조직의 받는 사람 주소를 지정하여 새 메일 메시지를 작성합니다.
 
-2.  **옵션** 탭에서 **권한**을 클릭하고 옵션을 선택합니다. 예: **전달 금지**, **&lt;회사 이름&gt; - 기밀** 또는 **&lt;회사 이름&gt; - 기밀(보기 전용)**.
+2.  **옵션** 탭에서 **권한**을 클릭하고 옵션을 선택합니다. 예를 들어 **전달 금지**, **&lt;회사 이름&gt; - 기밀** 또는 **&lt;회사 이름&gt; - 기밀(보기 전용)**을 선택합니다..
 
 3.  메시지를 보냅니다.
 
@@ -109,7 +112,7 @@ Azure RMS를 사용 중이며 Rights Management 공유 응용 프로그램을 �
 
 1.  Outlook Web App 내에서 조직의 받는 사람 주소를 지정하여 새 메일 메시지를 작성합니다.
 
-2.  **…**, **사용 권한 설정**을 차례로 클릭하고 옵션을 선택합니다. 예: **전달 금지**, **전체 회신 금지**, **&lt;회사 이름&gt; - 기밀** 또는 **&lt;회사 이름&gt; - 기밀(보기 전용)**.
+2.  **…**, **사용 권한 설정**을 차례로 클릭하고 옵션을 선택합니다. **전달 금지**, **전체 회신 금지**, **&lt;회사 이름&gt; - 기밀** 또는 **&lt;회사 이름&gt; - 기밀(보기 전용)**을 선택합니다..
 
 3.  메시지를 보냅니다.
 
@@ -118,6 +121,6 @@ Azure RMS를 사용 중이며 Rights Management 공유 응용 프로그램을 �
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

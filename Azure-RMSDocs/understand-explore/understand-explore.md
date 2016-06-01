@@ -27,7 +27,10 @@ ms.reviewer: mbaldwin
 
 # Azure 권한 관리 이해 및 탐색
 
+*적용 대상: Azure 권한 관리, Office 365*
 
-<!--HONumber=Apr16_HO3-->
+
+
+<!--HONumber=Apr16_HO4-->
 
 

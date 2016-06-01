@@ -2,7 +2,7 @@
 # required metadata
 
 title: 암호화 작업 | Azure RMS
-description:
+description: 암호화 패키지 안내
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 088c98f9-f06e-4aae-8fac-bc7605e545f5
-
+ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 # optional metadata
 
 #ROBOTS:
@@ -25,16 +24,16 @@ ms.suite: ems
 
 ---
 
-﻿# 암호화 작업
+# 암호화 작업
 
 이 항목에서는 암호화 패키지에 대해 설명하고 사용과 관련된 몇 가지 코드 조각을 보여 줍니다.
 
 ## 새 기본값, AES 256 지원
 
-RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할 경우 AES 256 기반 암호화가 새 기본값이기 때문에 추가 코드 없이 사용할 수 있습니다. AES 256의 보안 강화 혜택을 활용하려면 응용 프로그램을 이 릴리스로 업데이트하는 것이 좋습니다.
+RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할 경우 *AES 256* 기반 암호화가 새 기본값이기 때문에 추가 코드 없이 사용할 수 있습니다. *AES 256*의 보안 강화 혜택을 활용하려면 응용 프로그램을 이 릴리스로 업데이트하는 것이 좋습니다.
 
 > [!IMPORTANT]
-> AES 256 보호된 파일 사용은 [2014년 10월 릴리스](release-notes-rtm.md)부터 지원되었습니다. 2014년 10월 이전 버전의 SDK로 빌드한 응용 프로그램을 실행하는 경우 이 업데이트를 사용하면 응용 프로그램이 중단됩니다. 빌드하는 응용 프로그램의 고객이 업데이트된 SDK를 사용 중이거나 최신 버전의 응용 프로그램으로 즉시 업데이트할 의향이 있는지 확인합니다.
+> *AES 256* 보호된 파일 사용은 [2014년 10월 릴리스](release-notes-rtm.md)부터 지원되었습니다. 2014년 10월 이전 버전의 SDK로 빌드한 응용 프로그램을 실행하는 경우 이 업데이트를 사용하면 응용 프로그램이 중단됩니다. 빌드하는 응용 프로그램의 고객이 업데이트된 SDK를 사용 중이거나 최신 버전의 응용 프로그램으로 즉시 업데이트할 의향이 있는지 확인합니다.
 
  
 ## API 암호화 지원
@@ -57,7 +56,7 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
 
 ## AES 256 CBC4K를 사용하여 파일 보호
 
-AES 256 CBC4K가 기본값이므로 코드를 변경할 필요가 없습니다.
+*AES 256* CBC4K가 기본값이므로 코드를 변경할 필요가 없습니다.
 
     
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID, 
@@ -84,7 +83,7 @@ AES 256 CBC4K가 기본값이므로 코드를 변경할 필요가 없습니다.
 
 ## AES-128 ECB(사용되지 않는 알고리즘)를 사용하여 파일 보호
 
-또한 이 샘플에서는 사용되지 않는 알고리즘을 지원하는 새로운 방법을 보여 줍니다.
+또한 이 샘플에서는 *사용되지 않는 알고리즘*을 지원하는 새로운 방법을 보여 줍니다.
 
     
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID, 
@@ -107,6 +106,6 @@ AES 256 CBC4K가 기본값이므로 코드를 변경할 필요가 없습니다.
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

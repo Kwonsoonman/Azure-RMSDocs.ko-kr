@@ -4,30 +4,33 @@
 title: Azure RMS 빠른 시작 자습서 - 2단계 | Azure RMS
 description: 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 두 번째 단계입니다.
 keywords:
-author: Cabailey
+author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
+ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
 
 # optional metadata
 
-ROBOTS: 
-audience:
-ms.devlang:
+#ROBOTS:
+#audience:
+#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+#ms.tgt_pltfrm:
+#ms.custom:
 
 ---
 
 
 
 # Azure RMS 빠른 시작 2단계: Rights Management 공유 응용 프로그램 설치
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 
 다음으로 이동합니다. 
 > [!div class="op_single_selector"]
@@ -39,13 +42,13 @@ ms.custom:
 - [5단계: 문서 추적](tutorial-step5.md)
 
 
-![](../media/AzRMS_QuickStartSteps2.PNG)
+![Azure RMS 빠른 시작 자습서 2단계](../media/AzRMS_QuickStartSteps2.PNG)
 
 Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)은 Azure Rights Management에 대한 요구 사항이 아니지만 Azure Rights Management를 지원하는 모든 컴퓨터와 모바일 장치에 사용하는 것이 좋습니다. RMS 공유 응용 프로그램은 사용자가 리본에서 직접 파일을 쉽게 보호할 수 있도록 Office 추가 기능을 설치하여 Office 응용 프로그램과 통합됩니다. 또한 Azure Rights Management에서 기본적으로 지원되지 않는 파일에 대해 일반적인 보호를 제공하고 사용자가 보호한 파일을 추적하고 취소할 수 있도록 문서 추적 사이트를 사용하여 모든 파일 형식을 보호합니다. 문서 추적 사이트는 이 자습서의 뒷부분에서 사용할 예정입니다.
 
 이 응용 프로그램은 무료로 다운로드할 수 있으며 스크립트를 사용하여 프로덕션 환경에 설치할 수 있습니다. 하지만 이 자습서에서는 로컬로 설치합니다.
 
-![](../media/AzRMS_Tutorial_2_Screenshots.png)
+![자습서 2단계 스크린샷](../media/AzRMS_Tutorial_2_Screenshots.png)
 
 ### Rights Management 공유 응용 프로그램을 다운로드하고 설치하려면
 
@@ -68,10 +71,9 @@ Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)�
 |기본 보호와 일반 보호 간의 차이를 이해하려면|[일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
 
 
->[!div class="step-by-step"]
-[« 1단계](quick-start-tutorial.md)
+>[!div class="step-by-step"] [« 1단계](quick-start-tutorial.md)
 [3단계 »](tutorial-step3.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

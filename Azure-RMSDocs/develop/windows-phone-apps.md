@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows Phone 설정 | Azure RMS
-description:
+description: Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 71119aa7-ffc6-46e0-82ae-0b3b614c2cad
-
+ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Windows Phone 설정
+# Windows Phone 설정
 
 
 Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
@@ -54,22 +53,22 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 ## 개발 환경 구성
 
 
--   Visual Studio를 엽니다.
+-   *Visual Studio*를 엽니다.
 -   **파일**을 클릭합니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 -   **새 프로젝트** 대화 상자에서 **Visual C\#**, **비어 있는 앱(Windows Phone)**을 차례로 선택하고 **확인**을 클릭합니다.
 
-    ![](../media/wpsetup-newproj.png)
+    ![새 프로젝트 만들기](../media/wpsetup-newproj.png)
 
 -   솔루션 탐색기에서 프로젝트를 마우스 오른쪽 단추로 클릭하고 **참조 추가**를 선택하여 **참조 추가** 대화 상자를 엽니다.
 
-    ![](../media/wpsetup-addref.png)
+    ![참조 추가](../media/wpsetup-addref.png)
 
--   **참조 추가** 대화 상자의 왼쪽 아래에서 **찾아보기**를 클릭하고 패키지를 추출한 폴더에 있는 Microsoft.RightsManagment.dll 파일을 선택합니다.
+-   **참조 추가** 대화 상자의 왼쪽 아래에서 **찾아보기**를 클릭하고 패키지를 추출한 폴더에 있는 *Microsoft.RightsManagment.dll* 파일을 선택합니다.
 -   **관리되는 앱** - 관리되는 앱을 빌드하려면 이 참조를 추가하고 **Windows 8.1**-&gt;**확장**을 선택한 다음 **Windows용 Windows Visual C++ 런타임 패키지** 확인란을 선택해야 합니다.
 
-    ![](../media/wpsetup-refmngr.png)
+    ![확장 추가](../media/wpsetup-refmngr.png)
 
--   **기능 추가** - 응용 프로그램에서 SDK를 사용하려면 "인터넷(클라이언트 및 서버)" 기능이 필요합니다. 이 기능을 앱에 추가하려면 프로젝트에서 Package.appxmanifest 파일을 열고 **기능** 탭으로 이동하여 추가합니다.
+-   **기능 추가** - 응용 프로그램에서 SDK를 사용하려면 "인터넷(클라이언트 및 서버)" 기능이 필요합니다. 이 기능을 앱에 추가하려면 프로젝트에서 *Package.appxmanifest* 파일을 열고 **기능** 탭으로 이동하여 추가합니다.
 
 이제 새 Windows Phone 앱을 만들 준비가 되었습니다.
 
@@ -97,6 +96,6 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

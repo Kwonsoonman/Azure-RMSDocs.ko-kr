@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: b0aafe75-19c9-47dc-bbba-cf4287399c6e
-
+ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 방법: 오류 및 성능 로깅 사용
 Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
 
@@ -85,7 +83,7 @@ Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-선택적 설정에 대한 자세한 내용은 [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptionss)를 참조하세요.
+선택적 설정에 대한 자세한 내용은 [CustomerExperienceOptions](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions) 섹션을 참조하세요.
 
 현재 로깅 제어 플래그 설정 가져오기
 
@@ -101,6 +99,6 @@ Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

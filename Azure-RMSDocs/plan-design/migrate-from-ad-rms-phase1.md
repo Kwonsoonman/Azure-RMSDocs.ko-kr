@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 마이그레이션 1단계 - AD RMS에 대한 서버 쪽 구성
+
+*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+
 AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 1단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure 권한 관리로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 1-4단계를 설명합니다.
 
 
@@ -44,8 +47,7 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure RMS �
 ### AD RMS에서 구성 데이터 내보내기
 조직에 대해 보호된 콘텐츠가 있는 트러스트된 모든 게시 도메인에 대해 모든 AD RMS 클러스터에서 다음 절차를 수행합니다. 라이선스 전용 클러스터에서는 이 작업을 수행할 필요가 없습니다.
 
-> [!NOTE]
-> Windows Server 2003 Rights Management를 사용하는 경우 이러한 지침 대신 [Windows RMS에서 다른 인프라의 AD RMS로 마이그레이션](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) 문서에 있는 [SLC, TUD, TPD 및 RMS 개인 키 내보내기](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) 절차를 따릅니다.
+> [!NOTE] Windows Server 2003 Rights Management를 사용하는 경우 이러한 지침 대신 [Windows RMS에서 다른 인프라의 AD RMS로 마이그레이션](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) 문서에 있는 [SLC, TUD, TPD 및 RMS 개인 키 내보내기](http://technet.microsoft.com/library/jj835767%28v=ws.10%29.aspx) 절차를 따릅니다.
 
 #### 구성 데이터(트러스트된 게시 도메인 정보)를 내보내려면
 
@@ -78,8 +80,7 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure RMS �
 
 -   외부 암호화 공급자를 사용하여 암호 보호.
 
-> [!NOTE]
-> AD RMS에서 하드웨어 보안 모듈을 사용하는 방법에 대한 자세한 내용은 [하드웨어 보안 모듈에서 AD RMS 사용](http://technet.microsoft.com/library/jj651024.aspx)을 참조하세요.
+> [!NOTE] AD RMS에서 하드웨어 보안 모듈을 사용하는 방법에 대한 자세한 내용은 [하드웨어 보안 모듈에서 AD RMS 사용](http://technet.microsoft.com/library/jj651024.aspx) 항목을 참조하세요.
 
 두 Azure RMS 테넌트 키 토폴로지 옵션은 Microsoft에서 테넌트 키를 관리하는 방식(**Microsoft 관리**) 또는 사용자가 테넌트 키를 관리하는 방식(**고객 관리**)입니다. 자체 Azure RMS 테넌트 키를 관리할 경우를 BYOK("bring your own key")라고도 하며, Thales의 HSM(하드웨어 보안 모듈)이 필요합니다. 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](plan-implement-tenant-key.md) 문서를 참조하세요.
 
@@ -97,8 +98,7 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure RMS �
 |외부 암호화 공급자를 사용하여 암호 보호|고객 관리(BYOK)|Thales nShield HSM(하드웨어 보안 모듈)로 키를 전송하는 방법에 대한 지침은 암호화 공급자의 공급업체에 문의하세요. 그런 다음 이 표 다음에 나오는 **HSM 보호된 키-HSM 보호된 키** 마이그레이션 절차의 지침을 따르세요.|
 이러한 절차를 시작하기 전에 트러스트된 게시 도메인을 내보낼 때 만든 .xml 파일에 액세스할 수 있는지 확인하세요. 예를 들어, 이러한 파일은 AD RMS 서버에서 인터넷에 연결된 워크스테이션으로 가져오는 USB 드라이브에 저장되어 있을 수 있습니다.
 
-> [!NOTE]
-> 하지만 이 데이터에 개인 키가 포함되어 있으므로 이러한 파일을 저장한 후 최적의 보안 권장 방법으로 파일을 보호합니다.
+> [!NOTE] 하지만 이 데이터에 개인 키가 포함되어 있으므로 이러한 파일을 저장한 후 최적의 보안 권장 방법으로 파일을 보호합니다.
 
 
 2단계를 완료하려면 마이그레이션 경로에 대한 지침을 선택합니다. 
@@ -109,13 +109,9 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure RMS �
 - [소프트웨어 키-HSM 키](migrate-softwarekey-to-hsmkey.md)
 
 
-<<<<<<< HEAD
-## 3단계. Azure RMS 테넌트 활성화
-이 단계에 대한 지침은 [Azure 권한 관리 활성화](../deploy-use/activate-azure-classic.md) 문서에 자세히 나와 있습니다.
-=======
 ## 3단계. RMS 테넌트 활성화
 이 단계에 대한 지침은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md) 문서에 자세히 나와 있습니다.
->>>>>>> 32b7eccb741760c33bf45a2ce253454827c6d6ba
+
 
 > [!TIP]
 > Office 365 구독이 있는 경우 Office 365 관리 센터 또는 Azure 클래식 포털에서 Azure RMS를 활성화할 수 있습니다. 이 관리 포털을 사용하여 다음 단계를 완료하게 되므로 Azure 클래식 포털을 사용하는 것이 좋습니다.
@@ -137,8 +133,7 @@ Azure 클래식 포털에서 기본 권한 정책 템플릿 중 하나를 복사
 
 -   [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) cmdlet을 사용하여 "AllStaff" 그룹 및 권한을 기존 그룹 및 권한에 추가할 수 있도록 편집할 수 있는 .XML 파일에 템플릿을 내보낸 다음 [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) cmdlet을 사용하여 이 변경 내용을 Azure RMS로 다시 가져옵니다.
 
-> [!NOTE]
-> "AllStaff"의 이러한 동등한 그룹이 AD RMS의 ANYONE 그룹과 정확히 동일하지는 않습니다. "AllStaff" 그룹에는 Azure 테넌트의 모든 사용자가 포함되지만 ANYONE 그룹에는 조직의 외부에 있을 수 있는 인증된 모든 사용자가 포함됩니다.
+> [!NOTE] "AllStaff"의 이러한 동등한 그룹이 AD RMS의 ANYONE 그룹과 정확히 동일하지는 않습니다. "AllStaff" 그룹에는 Azure 테넌트의 모든 사용자가 포함되지만 ANYONE 그룹에는 조직의 외부에 있을 수 있는 인증된 모든 사용자가 포함됩니다.
 > 
 > 두 그룹 간의 이러한 차이 때문에 "AllStaff" 그룹뿐 아니라 외부 사용자도 추가해야 할 수 있습니다. 그룹에 대한 외부 전자 메일 주소는 현재 지원되지 않습니다.
 
@@ -190,6 +185,6 @@ Remove-PSDrive MyRmsAdmin -force
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

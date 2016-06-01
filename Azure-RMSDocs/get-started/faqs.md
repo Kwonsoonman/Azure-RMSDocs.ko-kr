@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Azure 권한 관리 질문과 대답
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 Azure RMS라고도 하는 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]에 대한 몇 가지 질문과 대답입니다.
 
 ## Azure RMS를 배포하기 위해서는 무엇을 해야 하며, 어떻게 시작하나요?
@@ -39,7 +42,7 @@ Azure RMS라고도 하는 Microsoft [!INCLUDE[aad_rightsmanagement_1](../include
 ## 내 온-프레미스 서버와 Azure RMS를 통합할 수 있나요?
 예. Exchange Server, SharePoint 및 Windows 파일 서버와 같은 온-프레미스 서버에 Azure RMS를 통합할 수 있습니다. 이렇게 하려면 [Rights Management 커넥터](../deploy-use/deploy-rms-connector.md)를 사용합니다. 또는 Windows Server에서 FC(파일 분류) 인프라를 사용하려는 경우 [RMS 보호 cmdlet](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)을 사용할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
 
-Azure RMS는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure RMS에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](../understand-explore/how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요 .
+Azure RMS는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure RMS에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](../understand-explore/how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
 
 ## Exchange Online의 사용자와 Exchange Server 서버의 다른 사용자로 구성된 Exchange의 하이브리드 배포입니다. Azure RMS에서 지원되나요?
 물론입니다. 사용자가 두 Exchange 배포에서 보호되는 전자 메일과 첨부 파일을 원활하게 보호하고 소비할 수 있습니다. 이 구성을 사용하려면 [Azure RMS를 활성화](../deploy-use/activate-service.md)하고 [Exchange Online에 IRM을 사용하도록 설정](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)한 다음 Exchange Server용 [RMS 커넥터를 배포 및 구성](../deploy-use/deploy-rms-connector.md)합니다.
@@ -88,6 +91,10 @@ Azure RMS는 모든 파일 형식을 지원할 수 있습니다. 텍스트, 이�
 
 Azure RMS에서 기본적으로 지원하는 파일 이름 확장명 목록은 [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)에서 [지원되는 파일 형식 및 파일 이름 확장명](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션을 참조하세요. 여기에 나열되지 않은 파일 이름 확장명은 해당 파일에 일반 보호를 자동 적용하는 RMS 공유 응용 프로그램을 통해 지원됩니다.
 
+## RMS로 보호된 Office 문서를 열면 연결된 임시 파일도 RMS로 보호되나요?
+
+아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 장치에 있습니다.
+
 ## AD RMS에서의 마이그레이션은 언제부터 지원되나요?
 처음에는 Azure RMS에서 Rights Management(예: AD RMS)의 온-프레미스 배포를 통한 마이그레이션을 지원하지 않았습니다. 하지만 이제 지원됩니다.
 
@@ -99,7 +106,7 @@ Azure RMS에서 기본적으로 지원하는 파일 이름 확장명 목록은 [
 그러나 회사 정책에서 하드웨어 보안 모듈(HSM)의 사용을 요구하고 이러한 모듈이 Azure RMS 배포를 차단하는 경우, Exchange RMS 기능을 축소한 상태로 지금 BYOK로 Azure RMS를 배포할 수도 있습니다. 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)에서 [BYOK 가격 및 제한 사항](../plan-design/byok-price-restrictions.md)을 참조하세요.
 
 ## SharePoint 보호 라이브러리에서 작동하지 않는 것 같은 기능이 있습니다. 이 기능에 대한 지원이 예정되어 있나요?
-현재, SharePoint는 사용자 지정 템플릿, 문서 추적 및 일부 다른 기능을 지원하지 않는 IRM 보호 라이브러리를 사용하여 RMS 보호 문서를 지원합니다.  자세한 내용은 [Office 응용 프로그램 및 서비스](../understand-explore/office-apps-services-support.md) 문서에서 [SharePoint Online 및 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
+현재, SharePoint는 사용자 지정 템플릿, 문서 추적 및 일부 다른 기능을 지원하지 않는 IRM 보호 라이브러리를 사용하여 RMS 보호 문서를 지원합니다. 자세한 내용은 [Office 응용 프로그램 및 서비스](../understand-explore/office-apps-services-support.md) 문서에서 [SharePoint Online 및 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
 
 아직 지원되지 않는 특정 기능에 관심이 있는 경우 [RMS 팀 블로그](http://blogs.technet.com/b/rms/)의 공지에 관심을 기울이시기 바랍니다.
 
@@ -144,7 +151,7 @@ Azure RMS는 다른 서비스를 지원하는 동시에 다른 서비스가 있�
 
 **보안, 규정 준수 및 감사:**
 
-[Azure RMS를 통해 해결할 수 있는 문제](../understand-explore/azure-rms-problems-it-solves.md)문서에서 [보안, 준수 및 규정 요구 사항](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 섹션을 참조하세요 . 또한,
+[Azure RMS를 통해 해결할 수 있는 문제](../understand-explore/azure-rms-problems-it-solves.md) 문서에서 [보안, 준수 및 규정 요구 사항](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 섹션을 참조하세요. 또한,
 
 -   Azure RMS 외부 인증: [Microsoft Azure 보안 센터](http://azure.microsoft.com/support/trust-center/)
 
@@ -179,12 +186,11 @@ Azure RMS는 다른 서비스를 지원하는 동시에 다른 서비스가 있�
 
 이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Microsoft Rights Management(RMS) 팀](http://blogs.technet.com/b/rms/) 블로그의 월간 설명서 업데이트 공지에 등록됩니다.
 
-> [!TIP]
-> 블로그의 [docs 태그](http://blogs.technet.com/b/rms/archive/tags/docs/) 를 사용하면 이러한 문서 공지 사항을 더욱 쉽게 찾을 수 있습니다.
+> [!TIP] 블로그의 [docs 태그](http://blogs.technet.com/b/rms/archive/tags/docs/)를 사용하면 이러한 문서 공지 사항을 더욱 쉽게 찾을 수 있습니다.
 
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

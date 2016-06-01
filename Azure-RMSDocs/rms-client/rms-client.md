@@ -27,7 +27,10 @@ ms.reviewer: mbaldwin
 
 # Azure RMS 클라이언트
 
+*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
-<!--HONumber=Apr16_HO3-->
+
+
+<!--HONumber=Apr16_HO4-->
 
 

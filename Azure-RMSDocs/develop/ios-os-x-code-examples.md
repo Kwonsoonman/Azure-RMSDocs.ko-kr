@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 705942bb-639d-4582-942e-0ec061843d48
-
+ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # iOS/OS X 코드 예제
 
 이 항목에서는 iOS/OS X 버전의 RMS SDK에 대한 중요한 코드 요소를 소개합니다.
@@ -44,7 +42,7 @@ ms.suite: ems
 
 - **1단계**: [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 개체를 만듭니다.
 
- **설명**: [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 사용하고 **MSAuthenticationCallback** 인스턴스를 authenticationCallback 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 개체를 인스턴스화합니다. 다음 예제 코드 섹션에서 [**protectedDataWithProtectedFile**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 호출을 참조하세요.
+ **설명**: [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 사용하고 **MSAuthenticationCallback** 인스턴스를 *authenticationCallback* 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 개체를 인스턴스화합니다. 다음 예제 코드 섹션에서 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 호출을 참조하세요.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -117,7 +115,7 @@ ms.suite: ems
 
 ### 시나리오: 템플릿을 사용하여 새 보호된 파일 만들기
 
-이 시나리오에서는 먼저 템플릿 목록 [**MSTemplateDescriptor**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc)를 가져오고 첫 번째 템플릿을 선택하여 정책을 만든 다음 새 보호된 파일을 만들어서 씁니다.
+이 시나리오에서는 먼저 템플릿 목록 [**MSTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc)를 가져오고 첫 번째 템플릿을 선택하여 정책을 만든 다음 새 보호된 파일을 만들어서 씁니다.
 
 -   **1단계**: 템플릿 목록을 가져옵니다.
 
@@ -163,7 +161,7 @@ ms.suite: ems
 ### 시나리오: 사용자 지정 보호된 파일 열기
 
 
--   **1단계**: serializedContentPolicy에서 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
+-   **1단계**: *serializedContentPolicy*에서 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
 
         + (void)userPolicyWith:(NSData *)protectedData
         authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -234,7 +232,7 @@ ms.suite: ems
             policyDescriptor.offlineCacheLifetimeInDays = 10;
         }
 
--   **2단계**: 정책 설명자 selectedDescriptor에서 사용자 지정 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
+-   **2단계**: 정책 설명자 *selectedDescriptor*에서 사용자 지정 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
 
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
         {
@@ -290,6 +288,6 @@ ms.suite: ems
 
  
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

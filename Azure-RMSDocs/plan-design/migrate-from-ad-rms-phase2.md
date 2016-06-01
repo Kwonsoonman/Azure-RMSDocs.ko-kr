@@ -26,7 +26,10 @@ ms.suite: ems
 
 ---
 # 마이그레이션 2단계 - 클라이언트 쪽 구성
-AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure 권한 관리로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 5단계를 설명합니다.
+
+*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+
+AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure 권한 관리로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 5단계를 설명합니다..
 
 
 ## 5단계. Azure RMS를 사용하도록 클라이언트 다시 구성
@@ -46,7 +49,7 @@ Windows 클라이언트:
 
 모바일 장치 클라이언트 및 Mac 컴퓨터:
 
--   [AD RMS 모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포할 때 만든 DNS SRV 레코드를 제거합니다.
+-   [AD RMS 모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포할 때 만든 DNS SRV 레코드를 제거합니다..
 
 #### 마이그레이션 스크립트로 인한 변경 내용
 이 섹션에서는 마이그레이션 스크립트로 인한 변경 내용을 설명합니다. 이 정보는 참조용으로만 또는 문제 해결을 위해 사용할 수 있고, 직접 변경을 수행하려는 경우에 참조할 수 있습니다.
@@ -91,10 +94,10 @@ Redirect_OnPrem.cmd:
 
     -   HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\LicensingRedirection
 
-    각 항목에는 **https://&lt;YourTenantURL&gt;/_wmcs/licensing** 형식의 데이터를 포함하는 REG_SZ 값 **https://OldRMSserverURL/_wmcs/licensing**이 있습니다.
+    각 항목에는 **https://OldRMSserverURL/_wmcs/licensing** 형식의 데이터를 포함하는 REG_SZ 값 **https://&lt;YourTenantURL&gt;/_wmcs/licensing**이 포함되어 있습니다..
 
     > [!NOTE]
-    > &lt;YourTenantURL&gt;의 형식은 다음과 같습니다. **{GUID}.rms.[Region].aadrm.com**.
+    > *&lt;YourTenantURL&gt;*의 형식은 다음과 같습니다. **{GUID}.rms.[Region].aadrm.com**.
     > 
     > 예: 5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com
     > 
@@ -102,8 +105,8 @@ Redirect_OnPrem.cmd:
 
 
 ## 다음 단계
-마이그레이션을 계속하려면 [3단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
+마이그레이션을 계속하려면 [3단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다..
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

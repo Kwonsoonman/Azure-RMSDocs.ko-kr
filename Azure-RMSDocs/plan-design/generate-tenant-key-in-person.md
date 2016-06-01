@@ -27,6 +27,9 @@ ms.suite: ems
 
 # 직접 테넌트 키 생성 및 전송
 
+*적용 대상: Azure 권한 관리, Office 365*
+
+
 [고유한 테넌트 키를 관리](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)하기로 결정했으며 인터넷을 통해 테넌트 키를 전송하지 않고 직접 테넌트 키를 전송하려는 경우 다음 절차를 사용하세요.
 
 ## 테넌트 키 생성
@@ -39,7 +42,7 @@ ms.suite: ems
 -   [3단계: 새 키 생성](#step-3-create-a-new-key)
 
 ### 1단계: Thales HSM을 사용하여 워크스테이션 준비
-Windows 컴퓨터에 nCipher(Thales) 지원 소프트웨어를 설치합니다. 해당 컴퓨터에 Thales HSM을 연결합니다. Thales 도구가 경로에 있는지 확인합니다. 자세한 내용은 Thales HSM에 포함되어 있는 사용자 가이드를 참조하거나, Azure RMS용 Thales 웹 사이트( [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud))를 방문하여 확인하세요.
+Windows 컴퓨터에 nCipher(Thales) 지원 소프트웨어를 설치합니다. 해당 컴퓨터에 Thales HSM을 연결합니다. Thales 도구가 경로에 있는지 확인합니다. 자세한 내용은 Thales HSM에 포함되어 있는 사용자 가이드를 참조하거나, Azure RMS용 Thales 웹 사이트( [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud))를 방문하여 확인하세요..
 
 ### 2단계: 보안 권역 만들기
 명령 프롬프트를 시작하고 Thales new-world 프로그램을 실행합니다.
@@ -71,7 +74,7 @@ generatekey --generate simple type=RSA size=2048 protect=module ident=contosokey
 
 -   키 크기의 경우 2048을 사용하는 것이 좋지만, 1024비트 RSA 키를 가지고 있고 Azure RMS로 마이그레이션하려는 기존 AD RMS 고객을 위해 1024비트 RSA 키도 지원됩니다.
 
--   ident 및 **plainname** 의 **contosokey** 값을 임의의 문자열 값으로 바꿉니다. 관리 오버헤드를 최소화하고 오류 발생 위험을 줄이기 위해 ident와 plainname에 동일한 값을 사용하고 모두 소문자를 사용하는 것이 좋습니다.
+-   *ident* 및 **plainname** 의 **contosokey** 값을 임의의 문자열 값으로 바꿉니다. 관리 오버헤드를 최소화하고 오류 발생 위험을 줄이기 위해 ident와 plainname에 동일한 값을 사용하고 모두 소문자를 사용하는 것이 좋습니다.
 
 -   이 예에서는 pubexp를 비워 뒀지만(기본값) 특정 값을 지정할 수 있습니다. 자세한 내용은 Thales 문서를 참조하세요.
 
@@ -82,7 +85,7 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 ```
 이 명령을 실행할 때 다음 지침을 사용하세요.
 
--   contosokey 를 1단계에서 지정한 값과 동일한 값으로 바꿉니다.
+-   *contosokey* 를 1단계에서 지정한 값과 동일한 값으로 바꿉니다.
 
 -   키가 이 시나리오에 적합하도록 **-M** 옵션을 사용합니다. 이 옵션을 사용하지 않으면 결과 키가 현재 사용자의 사용자별 키가 됩니다.
 
@@ -153,6 +156,6 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

@@ -26,19 +26,22 @@ ms.suite: ems
 ---
 
 # Azure 권한 관리용 Windows PowerShell 설치
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 다음 정보를 참조하여 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](Azure RMS)용 Windows PowerShell을 설치합니다.
 
-인터넷에 연결되어 있고 다음 섹션에 나열된 필수 구성 요소를 충족하는 컴퓨터를 사용하여 명령줄에서 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 관리하는 데 이 Windows PowerShell 모듈을 사용할 수 있습니다. [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell은 자동화용 스크립팅을 지원하거나 고급 구성 시나리오에 필요할 수 있습니다. 모듈에서 지원하는 관리 작업 및 구성에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](administer-powershell.md)를 참조하세요.
+인터넷에 연결되어 있고 다음 섹션에 나열된 필수 구성 요소를 충족하는 컴퓨터를 사용하여 명령줄에서 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 관리하는 데 이 Windows PowerShell 모듈을 사용할 수 있습니다. [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell은 자동화용 스크립팅을 지원하거나 고급 구성 시나리오에 필요할 수 있습니다. 모듈에서 지원하는 관리 작업 및 구성에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](administer-powershell.md) 항목을 참조하세요..
 
 ## 필수 구성 요소
-아래 표에는 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell을 설치 및 사용하기 위한 필수 조건이 나와 있습니다.
+아래 표에는 다음을 위한 Windows PowerShell을 설치하고 사용하기 위한 필수 조건이 나와 있습니다. [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)].
 
 |요구 사항|추가 정보|
 |---------------|--------------------|
-|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 관리 모듈을 지원하는 Windows 버전|지원되는 운영 체제 목록은 **Azure Rights Management 관리 도구 다운로드 페이지** 의 [시스템 요구 사항](http://go.microsoft.com/fwlink/?LinkId=257721)섹션에서 확인할 수 있습니다.|
-|최소 Windows PowerShell 버전: 2.0|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 관리 모듈은 Windows PowerShell 2.0부터 지원되기 시작했습니다.<br /><br />기본적으로 대부분의 Windows 운영 체제를 설치할 때는 Windows PowerShell 버전 2.0 이상이 함께 설치됩니다. Windows PowerShell 2.0을 설치해야 하는 경우 [Windows PowerShell 2.0 설치](http://msdn.microsoft.com/library/ff637750.aspx)를 참조하세요.<br /><br />팁: Windows PowerShell 세션에서 **$PSVersionTable**을 입력하면 현재 실행 중인 Windows PowerShell 버전을 확인할 수 있습니다.|
-|최소 Microsoft .NET Framework 버전: 4.5<br /><br />참고: 이 버전의 Microsoft .NET Framework는 최신 운영 체제에 포함되어 있으므로 클라이언트 운영 체제가 Windows 8.0보다 낮거나 서버 운영 체제가 Windows Server 2012보다 낮은 경우에만 수동으로 설치해야 합니다.|Microsoft .NET Framework의 최소 버전을 아직 설치하지 않은 경우 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)를 다운로드할 수 있습니다.<br /><br />[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 관리 모듈이 사용하는 일부 클래스에는 이 Microsoft .NET Framework의 최소 버전이 필요합니다.|
-|Microsoft Online Services 로그인 도우미 7.0|Microsoft Online Services 로그인 도우미는 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 인증에 필요합니다.<br /><br />자세한 내용은 [다운로드 센터: IT 전문가용 Microsoft Online Services 도우미 RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950)를 참조하세요.|
+|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 관리 모듈을 지원하는 Windows 버전|지원되는 운영 체제 목록은 **Azure 권한 관리 관리 도구 다운로드 페이지**의 [시스템 요구 사항](http://go.microsoft.com/fwlink/?LinkId=257721) 섹션에서 확인할 수 있습니다..|
+|최소 Windows PowerShell 버전: 2.0|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 관리 모듈은 Windows PowerShell 2.0부터 지원되기 시작했습니다.<br /><br />기본적으로 대부분의 Windows 운영 체제를 설치할 때는 Windows PowerShell 버전 2.0 이상이 함께 설치됩니다. Windows PowerShell 2.0을 설치해야 하는 경우 [Windows PowerShell 2.0 설치](http://msdn.microsoft.com/library/ff637750.aspx) 항목을 참조하세요..<br /><br />팁: Windows PowerShell 세션에서 **$PSVersionTable**을 입력하면 현재 실행 중인 Windows PowerShell 버전을 확인할 수 있습니다.|
+|최소 Microsoft .NET Framework 버전: 4.5<br /><br />참고: 이 버전의 Microsoft .NET Framework는 최신 운영 체제에 포함되어 있으므로 클라이언트 운영 체제가 Windows 8.0보다 낮거나 서버 운영 체제가 Windows Server 2012보다 낮은 경우에만 수동으로 설치해야 합니다.|Microsoft .NET Framework의 최소 버전을 아직 설치하지 않은 경우 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)를 다운로드할 수 있습니다..<br /><br />[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 관리 모듈이 사용하는 일부 클래스에는 이 Microsoft .NET Framework의 최소 버전이 필요합니다.|
+|Microsoft Online Services 로그인 도우미 7.0|Microsoft Online Services 로그인 도우미는 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 인증에 필요합니다.<br /><br />자세한 내용은 [다운로드 센터: IT 전문가용 Microsoft Online Services 도우미 RTW](http://www.microsoft.com/en-us/download/details.aspx?id=41950) 항목을 참조하세요..|
 
 ## Rights Management 관리 모듈을 설치하는 방법
 
@@ -73,6 +76,6 @@ Get-Command -Module aadrm
 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](administer-powershell.md)
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

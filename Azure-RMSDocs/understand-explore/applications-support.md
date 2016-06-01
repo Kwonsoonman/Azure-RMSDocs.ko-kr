@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,9 +26,11 @@ ms.suite: ems
 ---
 
 # 응용 프로그램이 Azure 권한 관리를 지원하는 방식
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 다음 정보를 참조하여 Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 응용 프로그램과 Exchange, SharePoint 등의 서비스에서 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 통해 조직 데이터를 보호하는 방식을 파악할 수 있습니다. 
-> [!NOTE]
-> [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](Azure RMS)에서 지원하는 응용 프로그램과 버전을 확인하려면 [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md)을 참조하세요.
+> [!NOTE] Azure RMS([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)])에서 지원하는 응용 프로그램과 버전을 확인하려면 [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md) 항목을 참조하세요.
 
 구성된 정책에 따라 정보 보호가 자동으로 적용되는 경우도 있습니다. SharePoint 라이브러리, 분류된 파일, Exchange 전송 규칙 등을 예로 들 수 있습니다. 사용자가 템플릿이나 특정 옵션을 선택하여 응용 프로그램에서 정보 보호를 직접 적용해야 하는 경우도 있습니다. 사용자가 메일로 파일을 공유하거나 조직 외부 사용자 또는 선택한 사용자에 대해 액세스 또는 사용을 제한하여 내부에서 파일을 보호하는 경우를 예로 들 수 있습니다.
 
@@ -38,8 +40,16 @@ ms.suite: ems
 
 이러한 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)을 참조하세요.
 
-> [!TIP]
-> Azure RMS를 사용하는 응용 프로그램의 예와 스크린샷을 보려면 [Azure RMS 실행: 관리자와 사용자에게 표시되는 내용](what-admins-users-see.md)을 참조하세요.
+> [!TIP] Azure RMS를 사용하는 응용 프로그램의 예와 스크린샷을 보려면 [Azure RMS 실행: 관리자와 사용자에게 표시되는 내용](what-admins-users-see.md) 섹션을 참조하세요.
+
+검색 서비스는 여러 방법으로 Rights Management를 통합할 수 있습니다. 예를 들면 다음과 같습니다. 
+
+- Exchange Online 및 Exchange Server에서는 사용자의 RMS로 보호된 메일이 자동으로 검색 결과에 표시되도록 서비스 측 인덱싱을 사용합니다. 
+
+- SharePoint Online 및 SharePoint Server에서는 다운로드 시에만 파일에 RMS 보호를 적용합니다. 즉, SharePoint의 인덱싱 및 검색 결과는 이 문서 보호 솔루션의 영향을 받지 않습니다. 그러나 SharePoint에 저장하지만 검색 결과에 반환되어서는 안 되는 문서가 있으면 SharePoint에 업로드하기 전에 해당 파일을 RMS로 보호합니다.
+
+- Windows 데스크톱 검색은 장치의 여러 사용자 간에 공유된 인덱스를 사용하므로 보호된 문서의 데이터를 안전하게 유지하기 위해 RMS로 보호된 파일을 인덱싱하지 않습니다. 즉, 검색 결과에 보호하는 파일이 포함되지 않더라도 중요한 데이터를 포함하는 파일이 PC에 로그인하거나 연결하는 다른 사용자를 위한 검색 결과에 표시되지 않는다는 것을 알 수 있습니다. 
+
 
 
 ## 다음 단계
@@ -56,6 +66,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

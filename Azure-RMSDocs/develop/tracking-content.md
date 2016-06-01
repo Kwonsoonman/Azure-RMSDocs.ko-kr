@@ -2,7 +2,7 @@
 # required metadata
 
 title: 콘텐츠 추적 | Azure RMS
-description:
+description: 문서 추적을 구현하기 위한 기본 지침
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: ca08e01f-690d-46f4-ae0f-a880cc29dabc
-
+ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 # optional metadata
 
 #ROBOTS:
@@ -25,9 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 콘텐츠 추적
-
-\[일부 정보는 정식으로 릴리스되기 전에 대폭 수정될 수 있는 사전 릴리스된 제품과 관련이 있습니다. Microsoft는 여기에 제공된 정보에 대해 어떠한 명시적 또는 묵시적 보증도 하지 않습니다.\]
+# 콘텐츠 추적
 
 이 항목에서는 권한 관리 서비스 SDK 2.1을 통해 보호된 콘텐츠의 문서 추적을 구현하기 위한 기본 지침을 제공합니다.
 
@@ -120,7 +117,7 @@ ms.suite: ems
                               sendLicenseRegistrationNotificationEmail);
 
 
-### 관련 항목
+## 관련 항목
 
 
 * [**라이선스 메타데이터 속성 형식**](/rights-management/sdk/2.1/api/win/license%20metadata%20property%20types#msipc_license_metadata_property_types)
@@ -137,6 +134,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

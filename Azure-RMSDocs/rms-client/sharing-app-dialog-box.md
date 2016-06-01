@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션
+
+*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+
 이 정보를 사용하여 RMS 공유 응용 프로그램 **보호 추가** 대화 상자 또는 **보호된 항목 공유** 대화 상자에서 옵션을 지정하게 합니다. [공유하는 파일을 보호](sharing-app-protect-by-email.md)하거나 [준비된 파일을 보호](sharing-app-protect-in-place.md)하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다.
 
 > [!IMPORTANT]
@@ -42,7 +45,7 @@ ms.suite: ems
 |옵션|설명|
 |----------|---------------|
 |**사용자**|Outlook에서 전자 메일 주소를 미리 지정하지 않은 경우 파일을 열려는 사용자의 전자 메일 주소를 입력합니다.<br /><br />RMS 공유 앱은 일부 메일 주소를 지원하지 않습니다.<br /><br />조직이 Rights Management(AD RMS)의 온-프레미스 버전을 사용하는 경우 지정할 수 있는 전자 메일 주소는 조직 내의 사람을 제한합니다. 이를 적용할 때 외부 전자 메일 주소를 지정하는 경우 회사의 구성을 사용하면 회사 내에서 보호된 콘텐츠를 공유할 수 있다는 메시지가 표시됩니다. <br /><br /> 조직에서 Azure RMS를 사용하는 경우 해당 조직 내 사용자나 다른 조직의 사용자에 대한 메일 주소를 지정할 수 있습니다.<br /><br />예를 들어 **janetm@contoso.com; p.dover@fabrikam.com**과 같이 지정합니다.<br /><br />개인 메일 주소는 RMS 공유 앱에서 현재 지원되지 않습니다.|
-|**일반 보호**|이 옵션을 선택하면 선택한 파일을 고유하게 보호할 수 없다는 것을 의미합니다. 자세한 내용은 다음을 참조하세요. [일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)  이 페이지에서.|
+|**일반 보호**|이 옵션을 선택하면 선택한 파일을 고유하게 보호할 수 없다는 것을 의미합니다. 자세한 내용은 다음을 참조하세요. [일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) 섹션을 참조하세요.|
 |**뷰어 – 보기 전용**<br /><br />**검토자 – 보기 및 편집**<br /><br />**공동 저자 - 보기, 편집, 복사 및 인쇄**<br /><br />**공동 저자 - 모든 사용 권한**<br /><br />참고: 이러한 옵션은 모두 이름 앞에 둥근 아이콘이 있으며 이는 지구본을 나타냅니다. 이 아이콘은 일반적으로 사용할 수 있으므로 다른 조직의 누군가에게 첨부 파일을 보낼 때 이러한 옵션 중 하나를 선택합니다.|보호된 문서에 대한 권한을 정의하려면 이러한 옵션 중 하나를 선택합니다. 각 옵션을 클릭하여 설명을 봅니다.<br /><br />이러한 옵션 중 하나를 선택하면 **사용자** 에서 지정한 사람만이 지정한 권리가 있어서 문서를 열고 사용합니다. 예를 들어 그들이 다른 사람에게 전달하는 경우 문서가 열리지 않습니다.|
 |관리자가 구성한 정책 템플릿입니다.<br /><br />예를 들어 회사 이름이 Contoso, Ltd이면 **Contoso, Ltd - 기밀 보기 전용**입니다.<br /><br />참고: 이러한 옵션은 모두 이름 앞에 네모난 아이콘이 있으며 이는 사무실 건물을 나타냅니다. 이 아이콘은 일반적으로 사용할 수 있으므로 사용자의 조직의 누군가에게 첨부 파일을 보낼 때 이러한 옵션 중 하나를 선택합니다.|조직에서 일하는 사람과 문서를 공유하면 관리자가 구성한 사용 가능한 정책 템플릿을 참조합니다. 조직 외부의 문서를 공유하지 않아야 하는 경우 다음 중 하나를 선택합니다.<br /><br />이러한 옵션 중 하나를 선택하면 관리자는 문서에 대한 권한 및 열 수 있는 사람을 정의합니다.|
 |**이러한 문서 만료**|선택한 사용자는 지정한 날짜 이후에 열 수 없는 시간에 민감한 파일에 대해서만 이 옵션을 선택합니다. 여전히 원래 파일을 열 수 있지만 지정한 날의 (현재 표준 시간대)자정 이후에 다른 사람은 파일을 열 수 없습니다.<br /><br />이 옵션은 관리자가 구성하는 정책 템플릿을 선택하는 경우 사용할 수 없습니다.|
@@ -54,11 +57,11 @@ ms.suite: ems
 -   **일반적으로 파일을 보호**할 때 권한 없는 사람은 파일을 열 수 없습니다. 인증된 사용자가 파일을 연 다음 다른 사람에게 보호되지 않은 상태로 전달하거나 다른 사용자가 액세스할 수 있는 위치에 저장할 수 있었습니다. 그러나 파일에 대해 어떤 권한이 있는지를 알려주는 메시지가 표시되고 이를 적용하도록 요청하지만 이 보호는 강제로 적용할 수 없습니다. 또한 일반적으로 파일을 보호하는 경우 권한 부여 이상의 사용 권한을 제한할 수 없습니다. 예를 들어 콘텐츠를 보기 전용으로 제한할 수 없거나 인쇄하지 않습니다.
 
     > [!NOTE]
-    > 일반적으로 보호된 파일은 항상 **.pfile**이라는 파일 이름 확장명을 가집니다.
+    > 일반적으로 보호된 파일은 항상 **.pfile**이라는 파일 이름 확장명을 가집니다..
 
 -   반면 이를 지원하는 응용 프로그램으로 Rights Management의 **기본 제공(기본) 보호**를 사용하는 경우(예: Office 파일) 파일이 다른 사람에게 전송되거나 다른 위치에 저장되더라도 파일에 보호가 적용됩니다. 그리고 이러한 파일을 보호하는 경우 읽기 전용과 같은 제한적 사용 권한 또는 편집하지만 인쇄하거나 복사할 수 없는 사용 권한을 사용할 수 있습니다. 예를 들어 **뷰어 – 보기 전용**을 선택하면 콘텐츠를 편집, 인쇄 또는 복사할 수 없습니다.
 
-추가 기술 정보는 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [보호 수준 – 기본 및 일반](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요.
+추가 기술 정보는 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md) 항목에서 [보호 수준 – 기본 및 일반](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요..
 
 ## 자동으로 만들어지는 .ppdf 파일이란 무엇인가요?
 
@@ -74,13 +77,13 @@ ms.suite: ems
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## 참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

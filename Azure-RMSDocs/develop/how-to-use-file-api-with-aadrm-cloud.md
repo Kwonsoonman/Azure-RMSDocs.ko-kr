@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 1f726c6a-68a5-421f-8ed9-9cbb051c205b
-
+ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
 
 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/en-us/library/jj585016.aspx)을 참조하세요.
@@ -114,7 +112,7 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
 
 -   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 인스턴스를 포함하는 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 구조체 인스턴스를 만듭니다.
 
-**참고** conectionInfo 멤버는 이전 `Get-AadrmConfiguration` 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
+**참고** *conectionInfo* 멤버는 이전 `Get-AadrmConfiguration` 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -177,7 +175,7 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
 
 이제 응용 프로그램이 Azure 권한 관리를 사용할 수 있도록 설정하는 데 필요한 단계를 완료했습니다.
 
-### 관련 항목
+## 관련 항목
 
 * [개발자 개념](ad-rms-concepts-nav.md)
 * [Azure 권한 관리 시작](https://technet.microsoft.com/en-us/library/jj585016.aspx)
@@ -199,6 +197,6 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

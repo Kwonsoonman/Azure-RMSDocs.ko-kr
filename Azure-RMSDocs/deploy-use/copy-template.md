@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # 템플릿 복사
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 기존 템플릿과 설정이 매우 비슷한 새 템플릿을 만들려면 **템플릿** 페이지에서 원본 템플릿을 선택하고 **복사**를 클릭한 후에 고유한 이름을 지정하고 필요한 대로 템플릿을 변경합니다.
 
 > [!IMPORTANT]
@@ -39,6 +42,6 @@ ms.suite: ems
 ## 참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

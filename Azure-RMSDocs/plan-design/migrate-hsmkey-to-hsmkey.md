@@ -27,6 +27,9 @@ ms.suite: ems
 
 # 2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
 
+*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+
+
 이 지침은 [AD RMS에서 Azure 권한 관리로의 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 HSM으로 보호되고 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다. 
 
 선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
@@ -69,10 +72,10 @@ HSM 키와 AD RMS 구성을 Azure RMS로 가져오는 두 부분으로 된 절�
     Disconnect-AadrmService
     ```
 
-이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration)로 이동할 준비가 되었습니다.
+이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

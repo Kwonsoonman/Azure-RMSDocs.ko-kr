@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: afe062d5-a507-45e5-a4ec-613f9c46772e
-
+ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # Android 코드 예제
 
 이 항목에서는 Android 버전의 RMS SDK에 대한 중요한 코드 요소를 소개합니다.
@@ -39,15 +37,15 @@ ms.suite: ems
 
 
 
-이 Android 운영 체제용 SDK에는 샘플 응용 프로그램 MSIPCSampleApp을 사용할 수 있습니다. 이 샘플 응용 프로그램에 액세스하려면 GitHub에서 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android)를 참조하세요.
+이 Android 운영 체제용 SDK에는 샘플 응용 프로그램 *MSIPCSampleApp*을 사용할 수 있습니다. 이 샘플 응용 프로그램에 액세스하려면 GitHub에서 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android)를 참조하세요.
 
 ### 시나리오: RMS 보호된 파일 사용
 
--   **1단계**: [**ProtectedFileInputStream**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 만들기
+-   **1단계**: [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 만들기
 
-    **원본**: MsipcAuthenticationCallback.java
+    **원본**: *MsipcAuthenticationCallback.java*
 
-    **설명**: [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)을 사용하고 **AuthenticationRequestCallback** 인스턴스를 mRmsAuthCallback 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**ProtectedFileInputStream**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 개체를 인스턴스화합니다. 다음 예제 코드 섹션의 끝에 있는 [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) 호출을 참조하세요.
+    **설명**: [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)을 사용하고 **AuthenticationRequestCallback** 인스턴스를 *mRmsAuthCallback* 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**ProtectedFileInputStream**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedfileinputstream_class_java) 개체를 인스턴스화합니다. 다음 예제 코드 섹션의 끝에 있는 [**ProtectedFileInputStream.create**](/rights-management/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_method) 호출을 참조하세요.
 
         public void startContentConsumptionFromPtxtFileFormat(InputStream inputStream)
         {
@@ -110,7 +108,7 @@ ms.suite: ems
 
 -   **2단계**: ADAL(Active Directory 인증 라이브러리)을 사용하여 인증을 설정합니다.
 
-    **원본**: MsipcAuthenticationCallback.java.
+    **원본**: *MsipcAuthenticationCallback.java*.
 
     **설명**: 이 단계에서는 [**AuthenticationRequestCallback**](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java)을 구현하는 데 사용되는 ADAL과 예제 인증 매개 변수를 확인할 수 있습니다. ADAL을 사용하는 방법에 대한 자세한 내용은 [Azure ADAL(AD 인증 라이브러리)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)을 참조하세요.
 
@@ -190,7 +188,7 @@ ms.suite: ems
 
 -   **3단계**: [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy) 개체의 [**accessCheck**](/rights-management/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_accesscheck_method_java) 메서드를 통해 이 사용자에게 이 콘텐츠에 대한 **편집** 권한이 있는지 확인합니다.
 
-    **원본**: TextEditorFragment.java
+    **원본**: *TextEditorFragment.java*
 
 
          //check if user has edit rights and apply enforcements
@@ -209,7 +207,7 @@ ms.suite: ems
 
 -   **1단계**: [**TemplateDescriptor**](/rights-management/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_class_java) 개체를 통해 템플릿 목록을 가져옵니다.
 
-    **원본**: MsipcTaskFragment.java
+    **원본**: *MsipcTaskFragment.java*
 
 
 
@@ -361,9 +359,9 @@ ms.suite: ems
 
 ### 시나리오: 사용자 지정 보호된 파일 열기
 
--   **1단계**: serializedContentPolicy에서 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)를 만듭니다.
+-   **1단계**: *serializedContentPolicy*에서 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)를 만듭니다.
 
-    **원본**: MsipcTaskFragment.java
+    **원본**: *MsipcTaskFragment.java*
 
 
     CreationCallback<UserPolicy> userPolicyCreationCallbackFromSerializedContentPolicy = new CreationCallback<UserPolicy>()
@@ -493,7 +491,7 @@ ms.suite: ems
     }
 
 
--    **3단계**: [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java)의 콘텐츠를 mDecryptedContent로 읽어온 다음 닫습니다.
+-    **3단계**: [**CustomProtectedInputStream**](/rights-management/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_class_java)의 콘텐츠를 *mDecryptedContent*로 읽어온 다음 닫습니다.
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -532,9 +530,9 @@ ms.suite: ems
 
 -   **1단계**: 사용자가 제공한 메일 주소를 사용하여 정책 설명자를 만듭니다.
 
-    **원본**: MsipcTaskFragment.java
+    **원본**: *MsipcTaskFragment.java*
 
-    **설명**: 실제로 다음 개체는 장치 인터페이스 [**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) 및 [**PolicyDescriptor**](https://stage.docs.microsoft.com/en-us/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)의 사용자 입력을 사용하여 생성됩니다.
+    **설명**: 실제로 다음 개체는 장치 인터페이스 [**UserRights**](/rights-management/sdk/4.2/api/android/userrights#msipcthin2_userrights_class_java) 및 [**PolicyDescriptor**](/rights-management/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java)의 사용자 입력을 사용하여 생성됩니다.
 
 
 
@@ -552,7 +550,7 @@ ms.suite: ems
 
 
 
--    **2단계**: 정책 설명자 selectedDescriptor에서 사용자 지정 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)를 만듭니다.
+-    **2단계**: 정책 설명자 *selectedDescriptor*에서 사용자 지정 [**UserPolicy**](/rights-management/sdk/4.2/api/android/userpolicy)를 만듭니다.
 
     **Source**: *MsipcTaskFragment.java*
 
@@ -566,7 +564,7 @@ ms.suite: ems
 
 -   **3단계**: [**CustomProtectedOutputStream**](/rights-management/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_class_java)을 만들고 콘텐츠를 쓴 다음 닫습니다.
 
-    **원본**: MsipcTaskFragment.java
+    **원본**: *MsipcTaskFragment.java*
 
 
     File file = new File(filePath);
@@ -639,6 +637,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

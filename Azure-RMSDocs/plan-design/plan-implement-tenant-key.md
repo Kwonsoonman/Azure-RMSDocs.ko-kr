@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/20/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Azure 권한 관리 테넌트 키 계획 및 구현
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 이 문서의 정보는 Azure RMS용 권한 관리(RMS) 테넌트 키를 계획 및 관리하는 데 도움이 됩니다. 예를 들어 Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다.  자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다.
 
 > [!NOTE]
@@ -62,11 +65,11 @@ Microsoft에서 관리하는 테넌트 키를 사용하여 Azure RMS를 배포�
 
 다음 다이어그램은 이러한 두 옵션을 비교해서 보여줍니다. 첫 번째 다이어그램은 Microsoft가 테넌트 키를 관리하는 기본 구성을 사용할 경우 관리자 오버헤드가 얼마나 작은지 보여줍니다.
 
-![](../media/RMS_BYOK_cloud.png)
+![Azure RMS 테넌트 키 수명 주기- Microsoft에서 관리, 기본값](../media/RMS_BYOK_cloud.png)
 
 두 번째 다이어그램은 고객이 직접 테넌트 키를 관리할 경우 필요한 추가 단계를 보여줍니다.
 
-![](../media/RMS_BYOK_onprem.png)
+![Azure RMS 테넌트 키 수명 주기 - 사용자가 직접 관리, BYOK](../media/RMS_BYOK_onprem.png)
 
 고객이 Microsoft에서 테넌트 키를 관리하도록 결정할 경우 키를 생성하기 위해 수행해야 할 추가 작업이 없으므로 [다음 단계](plan-implement-tenant-key.md#next-steps)로 바로 이동하세요.
 
@@ -90,7 +93,7 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 |Azure RMS를 지원하는 구독|사용 가능한 구독에 대한 자세한 내용은 [Azure RMS를 지원하는 클라우드 구독](../get-started/requirements-subscriptions.md)을 참조하세요.|
 |개인용 또는 Exchange Online용으로 RMS를 사용하지 않도록 합니다. 또는 Exchange Online을 사용하는 경우 이 구성에서 BYOK를 사용할 때의 제한 사항을 이해하고 받아들여야 합니다.|BYOK와 관련된 현재 제한 사항에 대한 자세한 내용은 [BYOK 가격 및 제한 사항](byok-price-restrictions.md)을 참조하세요.<br /><br />**중요**: 현재 BYOK는 Exchange Online과 호환되지 않습니다.|
 |Thales HSM, 스마트 카드 및 지원 소프트웨어<br /><br />**참고**: 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure RMS로 마이그레이션하는 경우 11.62 버전 이상의 Thales 드라이버가 있어야 합니다.|Thales 하드웨어 보안 모듈에 대한 액세스 권한이 있어야 하며 Thales HSM의 기본적인 작동 지식이 있어야 합니다. 호환되는 모델 목록을 확인하거나 HSM이 없는 경우 구입하려면 [Thales 하드웨어 보안 모듈](http://www.thales-esecurity.com/msrms/buy) 을 참조하세요.|
-|실제로 미국 Redmond에 가지 않고 인터넷을 통해 테넌트 키를 전송하려는 경우 다음 세 가지 요구 사항이 있습니다.<br /><br />요구 사항 1: 최소 Windows 운영 체제가 Windows 7이고 Thales nShield 소프트웨어 버전이 11.62 이상인 오프라인 x64 워크스테이션.<br /><br />이 워크스테이션이 Windows 7을 실행하는 경우 [Microsoft .NET Framework 4.5를 설치](http://go.microsoft.com/fwlink/?LinkId=225702)해야 합니다.<br /><br />요구 사항 2: 인터넷에 연결되어 있고 최소 Windows 운영 체제가 Windows 7인 워크스테이션<br /><br />요구 사항 3: 사용 가능한 공간이 16MB 이상인 USB 드라이브 또는 기타 휴대용 저장 장치|이러한 사전 요구 사항은 Redmond로 가서 직접 테넌트 키를 전송하는 경우에는 불필요합니다.<br /><br />보안상의 이유로 첫 번째 워크스테이션은 네트워크에 연결하지 않는 것이 좋습니다. 그러나 이러한 사항이 프로그래밍 방식으로 강제 적용되지는 않습니다.<br /><br />참고: 뒤에 나오는 지침에서 이 첫 번째 워크스테이션을 **연결이 끊어진 워크스테이션**이라고 합니다.<br /><br />또한 테넌트 키가 프로덕션 네트워크용인 경우 도구 집합을 다운로드하고 테넌트 키를 업로드하는 데는 별도의 두 번째 워크스테이션을 사용하는 것이 좋습니다. 그러나 테스트 목적으로는 첫 번째 워크스테이션과 동일한 워크스테이션을 사용할 수 있습니다.<br /><br />참고: 뒤에 나오는 지침에서 이 두 번째 워크스테이션을 **인터넷에 연결된 워크스테이션**이라고 합니다.|
+|실제로 미국 Redmond에 가지 않고 인터넷을 통해 테넌트 키를 전송하려는 경우 다음 세 가지 요구 사항이 있습니다.<br /><br />1: 최소 Windows 운영 체제가 Windows 7이고 Thales nShield 소프트웨어 버전이 11.62 이상인 오프라인 x64 워크스테이션<br /><br />이 워크스테이션이 Windows 7을 실행하는 경우 [Microsoft .NET Framework 4.5를 설치](http://go.microsoft.com/fwlink/?LinkId=225702)해야 합니다.<br /><br />2: 인터넷에 연결되어 있고 최소 Windows 운영 체제가 Windows 7인 워크스테이션<br /><br />3: 사용 가능한 공간이 16MB 이상인 USB 드라이브 또는 기타 휴대용 저장 장치|이러한 사전 요구 사항은 Redmond로 가서 직접 테넌트 키를 전송하는 경우에는 불필요합니다.<br /><br />보안상의 이유로 첫 번째 워크스테이션은 네트워크에 연결하지 않는 것이 좋습니다. 그러나 이러한 사항이 프로그래밍 방식으로 강제 적용되지는 않습니다.<br /><br />참고: 뒤에 나오는 지침에서 이 첫 번째 워크스테이션을 **연결이 끊어진 워크스테이션**이라고 합니다.<br /><br />또한 테넌트 키가 프로덕션 네트워크용인 경우 도구 집합을 다운로드하고 테넌트 키를 업로드하는 데는 별도의 두 번째 워크스테이션을 사용하는 것이 좋습니다. 그러나 테스트 목적으로는 첫 번째 워크스테이션과 동일한 워크스테이션을 사용할 수 있습니다.<br /><br />참고: 뒤에 나오는 지침에서 이 두 번째 워크스테이션을 **인터넷에 연결된 워크스테이션**이라고 합니다.|
 
 테넌트 키를 생성 및 사용하는 절차는 인터넷을 통해 할 것인지, 직접 할 것인지에 따라 다릅니다.
 
@@ -135,7 +138,7 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 
     직접 테넌트 키를 관리하기로 결정한 경우 로깅에는 테넌트 키 사용에 대한 정보가 포함됩니다. Excel에 표시된 다음과 같은 로그 파일 예를 참조하세요. 여기서 **Decrypt** 및 **SignDigest** 요청 유형은 테넌트 키가 사용되고 있음을 보여줍니다.
 
-    ![](../media/RMS_Logging.gif)
+    ![테넌트 키가 사용되는 위치의 로그 파일](../media/RMS_Logging.gif)
 
     사용 현황 로깅에 대한 자세한 내용은 [Azure 권한 관리 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
@@ -145,6 +148,6 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

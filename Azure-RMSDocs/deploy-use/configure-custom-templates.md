@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Azure 권한 관리용 사용자 지정 템플릿 구성
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 [Azure 권한 관리(Azure RMS)를 활성화](activate-service.md)하면 액세스 권한이 조직의 권한 있는 사용자로 제한되는 정책을 중요한 파일에 쉽게 적용할 수 있도록 두 가지 기본 템플릿을 자동으로 사용할 수 있습니다. 이 두 개의 템플릿에는 다음의 권한 정책 제한이 있습니다.
 
 -   보호된 콘텐츠의 읽기 전용 보기
@@ -69,6 +72,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

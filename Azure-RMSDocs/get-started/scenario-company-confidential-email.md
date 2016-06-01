@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 시나리오 - 회사 기밀 메일 보내기
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 이 시나리오와 지원 사용자 문서에서는 조직의 모든 사용자가 조직 외부에서 읽을 수 없는 메일 통신을 안전하게 보낼 수 있도록 Azure 권한 관리를 사용합니다. 예를 들어 다른 조직의 사용자나 개인 메일 계정으로 메일 메시지를 전달하는 경우입니다. 메일과 모든 첨부 파일은 Azure 권한 관리 및 사용자가 메일 클라이언트에서 선택하는 템플릿에 의해 보호됩니다.
 
 이 시나리오를 설정하는 가장 간단한 방법은 액세스를 조직의 모든 사용자로 자동으로 제한하는 기본 제공 기본 템플릿 중 하나를 사용하는 것입니다. 그러나 필요한 경우 액세스를 사용자 하위 집합으로 제한하거나 읽기 전용, 만료 날짜 등의 다른 제한 사항이 있거나, 메일 클라이언트에서 전달 단추를 사용하지 않도록 설정하는 사용자 지정 템플릿을 만들어 보다 제한적으로 설정할 수 있습니다.
@@ -44,7 +47,7 @@ ms.suite: ems
 -   사용자가 메일 클라이언트에서 템플릿을 수동으로 선택해야 하는 경우
 
 ## 배포 지침
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 빠른 배포를 위한 관리자 지침](../media/AzRMS_AdminBanner.png)
 
 사용자 문서를 진행하기 전에 다음 요구 사항이 충족되었는지 확인합니다.
 
@@ -56,20 +59,20 @@ ms.suite: ems
 |Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure 권한 관리 테넌트 키가 Microsoft에서 관리되는지 여부(사용자는 BYOK를 사용하지 않음)|[Azure 권한 관리 테넌트 키 계획 및 구현](https://technet.microsoft.com/library/dn440580.aspx)|
 |Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
-|다음 중 하나<br /><br />Azure 권한 관리에 Exchange Online을 사용하도록 설정되어 있는지 여부<br /><br />Exchange 온-프레미스에 대해 RMS 커넥터가 설치 및 구성되었는지 여부|Exchange Online의 경우: [Azure 권한 관리에 대해 응용 프로그램 구성](https://technet.microsoft.com/library/jj585031.aspx)에서 **Exchange Online: IRM 구성** 섹션을 참조하세요.<br /><br />Exchange 온-프레미스의 경우: [Azure 권한 관리 커넥터 배포](https://technet.microsoft.com/library/dn375964.aspx)|
+|다음 중 하나<br /><br />- Azure 권한 관리에 Exchange Online을 사용하도록 설정되어 있는지 여부<br /><br />- Exchange 온-프레미스에 대해 RMS 커넥터가 설치되고 구성되었는지 여부|Exchange Online의 경우: [Azure 권한 관리에 대해 응용 프로그램 구성](https://technet.microsoft.com/library/jj585031.aspx)에서 **Exchange Online: IRM 구성** 섹션을 참조하세요.<br /><br />Exchange 온-프레미스의 경우: [Azure 권한 관리 커넥터 배포](https://technet.microsoft.com/library/dn375964.aspx)|
 |기본 Azure 권한 관리 템플릿인 **&lt;조직&gt; - 기밀**을 보관하지 않았습니다. 또는 더 제한적인 설정이 필요하거나 조직의 사용자 하위 집합만 보호된 메일을 읽을 수 있어야 하기 때문에 이 용도로 사용자 지정 템플릿을 구성했습니다.|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)<br /><br />팁: 조직의 모든 사용자에 대해 더 제한적인 사용 정책 설정이 필요한 경우 템플릿을 처음부터 만드는 대신 기본 템플릿 중 하나를 복사한 다음 편집합니다.<br /><br />이 시나리오에서는 업데이트된 템플릿이 메일 클라이언트에서 즉시 새로 고쳐지지 않습니다. 자세한 내용은 템플릿 구성 문서에서 [사용자를 위한 템플릿 새로 고침](https://technet.microsoft.com/library/dn642472.aspx) 섹션을 참조하세요.|
 |보호된 메일을 보내는 사용자에게 Outlook 2013, Outlook 2016 또는 Outlook Web Access가 있습니다.<br /><br />메일을 받는 사용자에게 Azure 권한 관리를 지원하는 메일 클라이언트가 있습니다.|Outlook 2010을 사용할 수 있지만 [Windows용 Rights Management 공유 응용 프로그램을 설치](https://technet.microsoft.com/library/dn339003.aspx)하고 사용자 지침을 적절하게 조정해야 합니다.<br /><br />Azure 권한 관리를 지원하는 메일 클라이언트 목록은 [Azure 권한 관리 요구 사항](https://technet.microsoft.com/library/dn655136.aspx)에 있는 [클라이언트 장치 기능](https://technet.microsoft.com/library/dn655136.aspx) 표의 **메일** 열을 참조하세요.|
 
 ## 사용자 문서 지침
 다음 템플릿을 사용하여 최종 사용자 통신에 사용자 지침을 복사해서 붙여넣고 사용자 환경에 맞게 다음과 같이 수정합니다.
 
-1.  모든 &lt;조직 이름&gt; 인스턴스를 사용자 조직의 이름으로 바꿉니다.
+1.  모든 *&lt;조직 이름&gt;* 인스턴스를 사용자 조직의 이름으로 바꿉니다.
 
-2.  모든 &lt;조직 이름 - 기밀&gt; 인스턴스를 기본 또는 사용자 지정 템플릿의 이름으로 바꿉니다.
+2.  모든 *&lt;조직 이름 - 기밀&gt;* 인스턴스를 기본 또는 사용자 지정 템플릿의 이름으로 바꿉니다.
 
 3.  사용자 조직 템플릿 이름이 표시되도록 스크린샷을 바꿉니다.
 
-4.  &lt;연락처 세부 정보&gt;를 웹 사이트 링크, 메일 주소, 전화 번호 등 사용자가 지원 센터에 연락할 수 있는 방법에 대한 지침으로 바꿉니다.
+4.  *&lt;연락처 세부 정보&gt;*를 웹 사이트 링크, 메일 주소, 전화 번호 등 사용자가 지원 센터에 연락을 할 수 있는 방법에 대한 지침으로 바꿉니다.
 
 5.  **그 외에 수정할 수 있는 사항은 다음과 같습니다.**
 
@@ -93,31 +96,31 @@ ms.suite: ems
 
 예제 문서에서는 사용자 지정 후 이러한 지침이 사용자에게 표시되는 방식을 보여 줍니다.
 
-![](../media/AzRMS_UsersBanner.png)
+![Azure RMS 빠른 배포를 위한 템플릿 사용자용 설명 문서](../media/AzRMS_UsersBanner.png)
 
 ### Outlook을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
 
-1.  Outlook 내에서 새 메일 메시지를 만들고 포함하려는 첨부 파일을 추가한 다음 &lt;조직 이름&gt;에서 사용자 또는 그룹을 선택합니다.
+1.  Outlook 내에서 새 메일 메시지를 만들고 포함하려는 첨부 파일을 추가한 다음 *&lt;조직 이름&gt;*에서 사용자 또는 그룹을 선택합니다.
 
 2.  **옵션** 탭에서 **사용 권한**을 클릭하고 **&lt;조직 이름 - 기밀&gt;**을 선택합니다.
 
-    ![](../media/AzRMS_OutlookTemplate.PNG)
+    ![Outlook을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법 스크린샷](../media/AzRMS_OutlookTemplate.PNG)
 
 3.  메시지를 보냅니다.
 
 ### Outlook Web App을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
 
-1.  Outlook Web App 내에서 새 메일 메시지를 만들고 포함하려는 첨부 파일을 추가한 다음 주소록에서 &lt;조직 이름&gt; 사용자 또는 그룹을 선택합니다.
+1.  Outlook Web App 내에서 새 메일 메시지를 만들고 포함하려는 첨부 파일을 추가한 다음 주소록에서 *&lt;조직 이름&gt;* 사용자 또는 그룹을 선택합니다.
 
-2.  **...**을 클릭하고 **사용 권한 설정**을 클릭한 다음 **&lt;조직 이름 - 기밀&gt;**을 선택합니다.
+2.  **...**를 클릭하고 **사용 권한 설정**을 클릭한 다음 **&lt;조직 이름 - 기밀&gt;**을 선택합니다.
 
-    ![](../media/AzRMS_OWATemplate.png)
+    ![Outlook Web App을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법 스크린샷](../media/AzRMS_OWATemplate.png)
 
 3.  메시지를 보냅니다.
 
-**받는 사람**, **참조** 또는 **숨은 참조** 줄에 있는 사용자가 이 메일을 받을 때 메시지를 읽기 전에 인증하여 &lt;조직 이름&gt;의 사용자임을 확인하라는 메시지가 표시될 수도 있습니다. 사용자가 이미 인증된 경우에는 메시지가 표시되지 않습니다.
+**받는 사람**, **참조** 또는 **숨은 참조** 줄에 있는 사용자가 이 메일을 받을 때 메시지를 읽기 전에 인증하여 *&lt;조직 이름&gt;*의 사용자임을 확인하라는 메시지가 표시될 수도 있습니다. 사용자가 이미 인증된 경우에는 메시지가 표시되지 않습니다.
 
-메일을 받은 사람은 다른 사용자에게 전달할 수 있지만 &lt;조직 이름&gt; 내의 사용자만 메일을 읽을 수 있습니다. Office 문서를 첨부하는 경우 해당 첨부 파일이 다른 위치에 다른 이름으로 저장된 경우에도 동일한 보호가 적용됩니다. 그러나 성공적으로 인증된 사용자는 메일 또는 첨부 파일에서 복사하여 붙여넣거나 인쇄할 수 있습니다. 이러한 작업을 방지하는 더 제한적인 보호가 필요한 경우 지원 센터에 문의하세요.
+메일을 받은 사람은 다른 사용자에게 전달할 수 있지만 *&lt;조직 이름&gt;* 내의 사용자만 메일을 읽을 수 있습니다. Office 문서를 첨부하는 경우 해당 첨부 파일이 다른 위치에 다른 이름으로 저장된 경우에도 동일한 보호가 적용됩니다. 그러나 성공적으로 인증된 사용자는 메일 또는 첨부 파일에서 복사하여 붙여넣거나 인쇄할 수 있습니다. 이러한 작업을 방지하는 더 제한적인 보호가 필요한 경우 지원 센터에 문의하세요.
 
 **도움이 필요하십니까?**
 
@@ -126,7 +129,7 @@ ms.suite: ems
     -   *&lt;연락처 세부 정보&gt;*
 
 ### 예제 사용자 지정 사용자 문서
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서](../media/AzRMS_ExampleBanner.png)
 
 #### Outlook을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
 
@@ -134,7 +137,7 @@ ms.suite: ems
 
 2.  **옵션** 탭에서 **사용 권한**을 클릭하고 **VanArsdel, Ltd - 기밀**을 선택합니다.
 
-    ![](../media/AzRMS_OutlookTemplate.PNG)
+    ![Outlook을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법 스크린샷](../media/AzRMS_OutlookTemplate.PNG)
 
 3.  메시지를 보냅니다.
 
@@ -144,7 +147,7 @@ ms.suite: ems
 
 2.  **...**을 클릭하고 **사용 권한 설정**을 클릭한 다음 **VanArsdel, Ltd - 기밀**을 선택합니다.
 
-    ![](../media/AzRMS_OWATemplate.png)
+    ![Outlook Web App을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법 스크린샷](../media/AzRMS_OWATemplate.png)
 
 3.  메시지를 보냅니다.
 
@@ -160,6 +163,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

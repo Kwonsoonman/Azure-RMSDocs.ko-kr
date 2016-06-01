@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -27,21 +27,24 @@ ms.suite: ems
 
 
 # 사용자를 위한 템플릿 새로 고침
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 Azure RMS를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다.
 
 |응용 프로그램 또는 서비스|템플릿을 변경한 후 새로 고침하는 방법|
 |--------------------------|---------------------------------------------|
-|Exchange Online|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요.|
+|Exchange Online|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요..|
 |Office 365|자동으로 새로 고침 - 추가 단계 불필요|
-|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
-|Office 2010|사용자 로그인 시 새로 고침됨<br /><br />강제로 새로 고침하려면 사용자에게 로그오프한 후 다시 로그인하도록 요청하거나 강제로 적용합니다. 또는 [Office 2010에만 해당: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
+|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요..|
+|Office 2010|사용자 로그인 시 새로 고침됨<br /><br />강제로 새로 고침하려면 사용자에게 로그오프한 후 다시 로그인하도록 요청하거나 강제로 적용합니다. 또는 다음 섹션, [Office 2010에만 해당: 변경된 사용자 지정 템플릿을 강제로 새로 고침하는 방법](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)을 참조하세요..|
 RMS 공유 응용 프로그램을 사용하는 모바일 장치의 경우 템플릿은 추가 구성이 필요 없이 자동으로 다운로드되고 필요한 경우 새로 고침됩니다.
 
 ## Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법
 Exchange Online을 위해 이미 IRM(정보 Rights Management)을 구성했다면 Exchange Online의 Windows PowerShell을 사용해 다음과 같이 변경할 때까지 사용자는 사용자 지정 템플릿을 다운로드할 수 없습니다.
 
 > [!NOTE]
-> Exchange Online에서 Windows PowerShell을 사용하는 방법에 대한 자세한 내용은 [Exchange Online에서 PowerShell 사용](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)을 참조하세요.
+> Exchange Online에서 Windows PowerShell을 사용하는 방법에 대한 자세한 내용은 [Exchange Online에서 PowerShell 사용](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx) 항목을 참조하세요..
 
 템플릿을 변경할 때마다 이 절차를 진행해야 합니다.
 
@@ -65,7 +68,7 @@ Exchange Online을 위해 이미 IRM(정보 Rights Management)을 구성했다�
         Import-PSSession $Session
         ```
 
-2.  Azure RMS에서 TPD(신뢰할 수 있는 게시 도메인)를 다시 가져오려면 [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) cmdlet을 사용합니다.
+2.  Azure RMS에서 TPD(트러스트된 게시 도메인)를 다시 가져오려면 [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) cmdlet을 사용합니다.
 
     ```
     Import-RMSTrustedPublishingDomain -Name "<TPD name>" -RefreshTemplates -RMSOnline
@@ -108,7 +111,7 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
 
 1.  레지스트리 편집기를 사용하여 다음 레지스트리 값 중 하나를 만들고 설정합니다.
 
-    - 업데이트 빈도(일)를 설정하려면(최소 1일):  이름이 **TemplateUpdateFrequency** 인 새 레지스트 값을 만들고 데이터에 정수 값을 정의합니다. 즉 다운로드한 템플릿에 대한 모든 변경 사항을 다운로드하는 주기를 일 단위로 지정합니다. 다음 표를 사용하여 새 레지스트리 값을 만들기 위한 레지스트리 경로를 확인합니다.
+    - 업데이트 빈도(일)를 설정하려면(최소 1일):  이름이 **TemplateUpdateFrequency** 인 새 레지스트 값을 만들고 데이터에 정수 값을 정의합니다. 즉 다운로드한 템플릿에 대한 모든 변경 사항을 다운로드하는 주기를 일 단위로 지정합니다. 다음 정보를 사용하여 새 레지스트리 값을 만들기 위한 레지스트리 경로를 확인합니다.
 
         **레지스트리 경로:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
@@ -116,16 +119,15 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
 
         **값:** TemplateUpdateFrequency
 
+    - 업데이트 주기를 초 단위로 설정하려면(최소 1초):  이름이 **TemplateUpdateFrequencyInSeconds** 인 새 레지스트 값을 만들고 데이터에 정수 값을 정의합니다. 즉 다운로드한 템플릿에 대한 모든 변경 사항을 다운로드하는 주기를 초 단위로 지정합니다. 다음 정보를 사용하여 새 레지스트리 값을 만들기 위한 레지스트리 경로를 확인합니다.
 
-    - To set an update frequency in seconds (minimum of 1 second):  Create a new registry value named **TemplateUpdateFrequencyInSeconds** and define an integer value for the data, which specifies the frequency in seconds to download any changes to a downloaded template. Use the following table to locate the registry path to create this new registry value.
+        **레지스트리 경로:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
 
-        **Registry path:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC
+        **형식:** REG_DWORD
 
-        **Type:** REG_DWORD
+        **값:** TemplateUpdateFrequencyInSeconds
 
-        **Value:** TemplateUpdateFrequencyInSeconds
-
-    Make sure that you create and set one of these registry values, not both. If both are present, **TemplateUpdateFrequency** is ignored.
+    두 레지스트리 값 모두가 아니라 둘 중 하나만 만들어 설정해야 합니다. 모두 있는 경우 **TemplateUpdateFrequency** 를 무시합니다.
 
 2.  템플릿의 즉시 새로 고침을 강제 실행한 경우 다음 절차를 진행합니다. 그렇지 않으면 Office 응용 프로그램과 파일 탐색기 인스턴스를 지금 다시 시작합니다.
 
@@ -133,16 +135,16 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
 
 1.  레지스트리 편집기에서 **LastUpdatedTime** 값의 데이터를 삭제합니다. 예를 들어 데이터가 **2015-04-20T15:52**로 표시된다면 2015-04-20T15:52를 삭제하여 아무 데이터도 표시되지 않게 합니다. 다음 정보를 참조하여 이 레지스트리 값 데이터를 삭제할 레지스트리 경로를 찾습니다.
 
-    **레지스트리 경로:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<MicrosoftRMS_FQDN>\Template
+    **레지스트리 경로:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
 
     **형식:** REG_SZ
 
     **값:** LastUpdatedTime
 
     > [!TIP]
-        > 레지스트리 경로에서 <MicrosoftRMS_FQDN>은 사용자의 Microsoft RMS 서비스 FQDN을 가리킵니다. 이 값을 확인하려면:
+        > 레지스트리 경로에서 <*MicrosoftRMS_FQDN*>은 사용자의 Microsoft RMS 서비스 FQDN을 가리킵니다. 이 값을 확인하려면:
 
-    > 1.  Azure RMS에 대해 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
+    > 1.  Azure RMS에 대해 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md) 항목을 참조하세요..
     > 2.  출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
     > 
     >     예: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -190,6 +192,6 @@ Office 2010을 실행하는 컴퓨터에서 레지스트리를 편집하면 사�
 ## 참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO1-->
 
 

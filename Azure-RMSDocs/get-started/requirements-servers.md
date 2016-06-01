@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Azure RMS 요구 사항: Azure RMS를 지원하는 온-프레미스 서버
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 다음 온-프레미스 서버 제품은 Azure RMS 커넥터를 사용할 경우 Azure RMS에서 지원되며, Azure RMS 커넥터는 온-프레미스 서버와 Azure RMS 사이에서 통신 인터페이스(릴레이) 역할을 합니다. 또한 이 구성을 사용하려면 Active Directory 포리스트와 Azure Active Directory 간의 디렉터리 동기화를 구성해야 합니다.
 
 -   **Exchange Server**:
@@ -38,6 +41,8 @@ ms.suite: ems
     -   Exchange Server 2010
 
 -   **Office SharePoint Server**:
+
+    -   Office SharePoint Server 2016
 
     -   Office SharePoint Server 2013
 
@@ -62,6 +67,6 @@ RMS 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

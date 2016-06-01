@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 시나리오 - 파일 서버 공유에 있는 파일 보호
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 이 시나리오 및 지원 사용자 문서에서는 복사하여 IT 부서가 제어하지 않는 저장소에 저장되었거나 다른 사용자에게 메일로 전송된 경우에도 Azure 권한 관리를 통해 파일 서버에서 보호하려는 모든 파일을 대량으로 보호하여 조직의 직원만 액세스할 수 있도록 합니다.
 
 이러한 지침은 모든 사용 권한을 가진 모든 직원으로 액세스를 제한하는 기본 템플릿 중 하나를 사용합니다. 그러나 필요한 경우 기본 템플릿을 사용하는 대신 사용자 지정 템플릿을 구성하여 액세스 및 사용 권한을 더욱 제한할 수 있습니다.
@@ -39,7 +42,7 @@ ms.suite: ems
 -   일정에 따라 모든 파일에 보호 기능을 다시 적용하여 권한 정책 템플릿 변경 내용이 보호된 파일에 적용되도록 하는 경우
 
 ## 배포 지침
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 빠른 배포를 위한 관리자 지침](../media/AzRMS_AdminBanner.png)
 
 사용자 문서를 진행하기 전에 다음 요구 사항이 충족되었는지 확인한 다음 지원 절차에 대한 지침을 따르세요.
 
@@ -50,7 +53,7 @@ ms.suite: ems
 |---------------|--------------------------------|
 |Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
 |온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 전자 메일 주소를 포함). 이렇게 하려면 모든 사용자가 파일을 FCI 및 Azure 권한 관리로 보호한 후에 해당 파일에 액세스해야 할 수도 있습니다.|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
-|다음 중 하나<br /><br />모든 사용자에 대해 기본 템플릿을 사용하려는 경우: 기본 &lt;조직 이름&gt; - 기밀을 보관하지 않았는지 여부<br /><br />특정 사용자에 대해 사용자 지정 템플릿을 사용하려는 경우: 이 사용자 지정 템플릿을 만들고 게시했는지 여부|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)|
+|다음 중 하나<br /><br />- 모든 사용자에 대해 기본 템플릿을 사용하려는 경우: 기본 &lt;조직 이름&gt; - 기밀을 보관하지 않았는지 여부<br /><br />- 특정 사용자에 대해 사용자 지정 템플릿을 사용하려는 경우: 이 사용자 지정 템플릿을 만들고 게시했는지 여부|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)|
 |Windows를 실행하는 사용자의 컴퓨터에 Rights Management 공유 응용 프로그램이 배포되었는지 여부|[Microsoft Rights Management 공유 응용 프로그램 자동 배포](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
 |RMS 보호 도구를 다운로드하고 Azure RMS에 대한 필수 조건을 구성했는지 여부|도구 다운로드 지침과 필수 조건: [RMS 보호 Cmdlet](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />Azure RMS에 대해 서비스 보안 주체 계정과 같은 추가 필수 조건을 구성하려는 경우: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
@@ -85,13 +88,13 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
 
 최종 사용자가 일반적으로 보호된 파일을 편집하는 방법을 알 수 있도록 다음 템플릿을 사용하여 최종 사용자 지침을 복사하여 붙여넣습니다. 사용자 환경에 맞게 다음과 같이 수정합니다.
 
--   &lt;파일 형식&gt; 및 &lt;파일 서버 공유&gt;를 일반적으로 보호될 파일 형식 및 파일 서버 공유 이름으로 바꿉니다.
+-   *&lt;파일 형식&gt;* 및 *&lt;파일 서버 공유&gt;*를 일반적으로 보호될 파일 형식 및 파일 서버 공유 이름으로 바꿉니다.
 
--   &lt;조직 이름&gt;을 기본 Azure 권한 관리 템플릿에 표시되는 사용자 조직의 이름으로 바꿉니다.
+-   *&lt;조직 이름&gt;*을 기본 Azure 권한 관리 템플릿에 표시되는 사용자 조직의 이름으로 바꿉니다.
 
--   &lt;조직 이름&gt;을 사용자 조직의 이름으로 바꿉니다.
+-   *&lt;조직 이름&gt;*을 사용자 조직의 이름으로 바꿉니다.
 
--   &lt;파일을 저장하고 .pfile 파일 이름 확장명을 제거하는 방법 지침&gt;을 이 파일 형식에 대한 응용 프로그램별 지침으로 바꿉니다.
+-   *&lt;파일을 저장하고 .pfile 파일 이름 확장명을 제거하는 방법에 대한 지침&gt;*을 이 파일 형식에 대한 응용 프로그램별 지침으로 바꿉니다.
 
 -   연락처 세부 정보를 웹 사이트 링크, 메일 주소, 전화 번호 등 사용자가 지원 센터에 연락을 할 수 있는 방법에 대한 지침으로 바꿉니다.
 
@@ -99,9 +102,9 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
 
 예제 문서에서는 사용자 지정 후 이러한 지침이 사용자에게 표시되는 방식을 보여 줍니다.
 
-![](../media/AzRMS_UsersBanner.png)
+![Azure RMS 빠른 배포를 위한 템플릿 사용자용 설명 문서](../media/AzRMS_UsersBanner.png)
 
-### &lt;파일 서버 공유&gt;에서 &lt;파일 형식&gt;을 편집하는 방법
+### &lt;파일 서버 공유에서 &lt;파일 형식&gt;을 편집하는 방법&gt;
 
 1.  파일을 두 번 클릭하여 엽니다. 자격 증명을 입력하라는 메시지가 표시될 수 있습니다.
 
@@ -111,7 +114,7 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
 
 4.  파일을 편집하려면 먼저 파일을 저장하고 .pfile 파일 이름 확장명을 제거합니다.
 
-    -   &lt;파일을 저장하고 .pfile 파일 이름 확장명을 제거하는 방법 지침&gt;
+    -   &lt;파일을 저장하고 .pfile 파일 이름 확장명을 제거하는 방법에 대한 지침&gt;
 
 5.  이제 파일을 정상적으로 편집하고 저장할 수 있습니다.
 
@@ -128,7 +131,7 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
     -   *&lt;연락처 세부 정보&gt;*
 
 ### 예제 사용자 지정 사용자 문서
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서](../media/AzRMS_ExampleBanner.png)
 
 #### ProjectNextGen 공유에서 CAD 드로잉을 편집하는 방법
 
@@ -158,6 +161,6 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

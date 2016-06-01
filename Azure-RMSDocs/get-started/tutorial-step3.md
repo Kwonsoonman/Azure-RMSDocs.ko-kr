@@ -4,29 +4,32 @@
 title: Azure RMS 빠른 시작 자습서 - 3단계 | Azure RMS
 description: 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 세 번째 단계입니다.
 keywords:
-author: Cabailey
+author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
+ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
 
 # optional metadata
 
-ROBOTS: 
-audience:
-ms.devlang:
+#ROBOTS:
+#audience:
+#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+#ms.tgt_pltfrm:
+#ms.custom:
 
 ---
 
 
 # Azure RMS 빠른 시작 3단계: 보호할 문서를 메일로 보내기
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 
 다음으로 이동합니다. 
 > [!div class="op_single_selector"]
@@ -42,7 +45,7 @@ ms.custom:
 
 이제 이 문서를 메일로 안전하게 공유할 준비가 되었습니다.
 
-![](../media/AzRMS_Tutorial_3_Screenshots.png)
+![Azure RMS 빠른 시작 자습서 3단계](../media/AzRMS_Tutorial_3_Screenshots.png)
 
 ### 문서를 메일로 안전하게 공유하려면
 
@@ -80,10 +83,9 @@ ms.custom:
 |**보호된 항목 공유** 대화 상자의 옵션 정보|[Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션](../rms-client/sharing-app-dialog-box.md)|
 
 
->[!div class="step-by-step"]
-[« 2단계](tutorial-step2.md)
+>[!div class="step-by-step"] [« 2단계](tutorial-step2.md)
 [4단계 »](tutorial-step4.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

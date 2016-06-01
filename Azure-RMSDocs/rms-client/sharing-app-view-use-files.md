@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,17 +26,20 @@ ms.suite: ems
 ---
 
 # Rights Management로 보호된 파일 보기 및 사용
+
+*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+
 [Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치](install-sharing-app.md)되어 있는 경우 보호된 파일을 두 번 클릭하면 파일이 표시됩니다. 파일은 전자 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다.
 
 > [!NOTE]
 > 보호된 파일을 볼 수 있기 전에 먼저 RMS는 파일을 볼 수 있는 권한이 있는지 확인하기 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
-> 
+>
 > 조직이 Azure Rights Management(Azure RMS) 또는 AD RMS를 사용하지 않으면 자격 증명을 허용하는 무료 계정을 적용하므로 RMS를 사용하여 보호되는 파일을 열 수 있습니다.
-> 
-> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
-> 
+>
+> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다..
+>
 >     등록하면 개인 전자 메일 주소보다 회사 전자 메일 주소를 사용합니다. 보호된 첨부 파일을 전자 메일로 전송받았기 때문에 등록한 경우 전자 메일 메시지를 보내는 데 사용된 동일한 전자 메일 주소를 사용합니다.
-> -   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
+> -   자세한 내용은 [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md)(개인용 RMS 및 Azure 권한 관리) 항목을 참조하세요..
 
 ## 보호된 파일을 보려면
 파일 탐색기 또는 첨부 파일을 포함하는 전자 메일 메시지를 사용하여 보호된 파일을 두 번 클릭하고 자격 증명을 입력하라는 메시지가 나타나면 그렇게 수행합니다.
@@ -46,17 +49,17 @@ ms.suite: ems
 > [!NOTE]
 > 자세한 내용은 "[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)"를 참조하세요.
 
-파일이 어떻게 열리는지는 파일이 어떻게 보호되는지에 따라 다르며 파일 이름 확장명을 보면 알 수 있습니다. 각각의 경우에서 파일 열기는 감사될 수 있고 보호되는 한 감사는 유지됩니다. 또한 파일이 전자 메일 첨부 파일로 전송되었다면 발신자는 파일을 열 때마다 전자 메일로 알림을 받을 수 있습니다. 
+파일이 어떻게 열리는지는 파일이 어떻게 보호되는지에 따라 다르며 파일 이름 확장명을 보면 알 수 있습니다. 각각의 경우에서 파일 열기는 감사될 수 있고 보호되는 한 감사는 유지됩니다. 또한 파일이 전자 메일 첨부 파일로 전송되었다면 발신자는 파일을 열 때마다 전자 메일로 알림을 받을 수 있습니다.
 
-- **파일에 .pfile 파일 이름 확장명이 있습니다.**
+- **파일에 *.pfile* 파일 이름 확장명이 있습니다.
 
     파일이 일반적으로 보호되었습니다.
 
     파일을 열 때 공유 응용 프로그램에서 파일을 보호한 사람 및 공동 소유자 권한을 적용해야 함을 알리는 **보호된 파일** 대화 상자가 표시됩니다. **열기** 를 클릭하여 파일을 엽니다.
 
-    ![](../media/ADRMS_MSRMSApp_PfilePermission.png)
+    ![RMS 공유 응용 프로그램을 사용하는 경우 메일로 공유한 pfile의 대화 상자](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **파일에 .ppdf 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)입니다.**
+- **파일에 *.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)입니다.)**
 
     파일을 읽기 전용 복사본으로 고유하게 보호합니다.
 
@@ -68,7 +71,7 @@ ms.suite: ems
 
     원래 파일 이름 확장명으로 연결되는 응용 프로그램을 사용하여 파일이 열리고 제한 사항 배너는 파일의 위쪽에 표시됩니다. 이 배너에는 파일에 적용된 권한이 표시될 수도 있고 해당 권한을 표시할 수 있는 링크가 제공될 수도 있습니다. 예를 들어 **권한이 현재 제한되어 있습니다** 를 클릭하여 파일에 적용되는 실제 사용 권한 및 파일에 액세스할 수 있는 사람을 볼 수 있어야 다음을 확인할 수 있습니다.
 
-    ![](../media/ADRMS_MSRMSApp_RestrictedAccess.png)
+    ![파일 보호 시 제한된 액세스 배너](../media/ADRMS_MSRMSApp_RestrictedAccess.png)
 
 
 
@@ -80,15 +83,15 @@ Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은
 ## 보호된 파일을 사용하려면(예: 파일 편집 및 인쇄)
 보호된 파일을 연 후 읽기 이상의 작업(예: 편집, 복사 및 인쇄)을 수행하려는 경우 파일 이름 확장명에 따라 다음 지침을 따르세요.
 
-- **파일에 .pfile 파일 이름 확장명이 있습니다.**
+- **파일에 *.pfile* 파일 이름 확장명이 있습니다.
 
     열린 파일을 저장하고 사용하려는 응용 프로그램과 연결된 새 파일 이름 확장명을 줍니다.
 
     예를 들어 파일 이름 document.vsdx.pfile를 사용하여 파일을 보호하는 경우 파일을 보고 파일 탐색기에서 document.vsdx로 저장합니다.
 
-    새 파일이 더 이상 보호되지 않습니다. 보호하려는 경우 수동으로 수행해야 합니다. 지침은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md)를 참조하세요.
+    새 파일이 더 이상 보호되지 않습니다. 보호하려는 경우 수동으로 수행해야 합니다. 지침은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md) 항목을 참조하세요..
 
-- **파일에 .ppdf 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)입니다.**
+- **파일에 *.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)입니다.)**
 
     파일을 볼 수 있고 이름을 바꾸거나 이동하는 경우 파일은 보호가 유지됩니다.
 
@@ -104,13 +107,12 @@ Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## 참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
-
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

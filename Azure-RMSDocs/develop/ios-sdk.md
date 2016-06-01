@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 23f64fc8-d0f3-49ee-8d8a-b34ef26878a7
-
+ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# iOS 및 OS X 설정
+# iOS 및 OS X 설정
 
 iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 
@@ -67,41 +66,41 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 -   새 프로젝트를 만들려면 **File** 메뉴에서 **New**를 클릭한 다음 **Project**를 클릭합니다.
 -   **Single View Application**을 선택합니다.
 
-    ![](../media/iOS-Project.png)
+    ![새 프로젝트 만들기](../media/iOS-Project.png)
 
 -   새 프로젝트의 이름과 식별자를 입력합니다.
 
-    ![](../media/iOS-project-options.png)
+    ![프로젝트 이름 지정](../media/iOS-project-options.png)
 
 -   **Next**를 클릭하고 프로젝트 위치를 선택합니다.
 -   iOS 프레임워크용 **MSRightsManagement** 프레임워크를 추가하려면 SDK 설치 폴더에서 **Project Navigator**의 **Frameworks** 섹션으로 .framework 폴더를 끌어다 놓습니다.
 
-    ![](../media/ios-add-dependencies-01a.png)
+    ![위치 설정](../media/ios-add-dependencies-01a.png)
 
 -   **Create groups for any added folders** 옵션 단추를 선택하고 **Copy items into destination group's folder (if needed)** 확인란을 선택 취소합니다.
 
     이 작업은 복사본을 만들지 않고 SDK 설치 폴더에 대한 참조를 유지 관리합니다.
 
-    ![](../media/iOS-create-groups.png)
+    ![SDK 설치 폴더에 대한 참조 설정](../media/iOS-create-groups.png)
 
 -   리소스 번들용 MS RMS SDK 4.2를 추가하려면 MSRightsManagement.framework/Resources 폴더에서 Project Navigator의 **Frameworks** 섹션으로 MSRightsManagementResources.bundle 파일을 끌어다 놓습니다.
 
-    ![](../media/iOS-add-resource-bundle-02a.png)
+    ![리소스 번들 추가](../media/iOS-add-resource-bundle-02a.png)
 
 -   Framework를 복사할 때와 마찬가지로 **Create groups for any added folders** 옵션 단추를 선택하고 **Copy items into destination group's folder (if needed)** 확인란을 선택 취소합니다.
 -   SDK는 **CoreData**, **MessageUI**, **SystemConfiguration**, **Libresolv** 및 **Security**를 비롯한 다른 프레임워크를 사용합니다. 이러한 프레임워크를 추가하려면 대상 **Summary** 창의 **Linked Frameworks and Libraries** 섹션으로 이동한 다음 해당 섹션을 확장하여 프레임워크를 추가합니다.
 
     **UIKit** 및 **Foundation** 프레임워크는 필수이며, 일반적으로 기본적으로 표시됩니다.
 
-    ![](../media/iOS-add-libraries.png)
+    ![리소스 추가](../media/iOS-add-libraries.png)
 
 -   대상 **Build Settings**의 **Other Linker Flags**에 **-ObjC** 플래그를 추가합니다.
 
-    ![](../media/iOS-linker-flags.png)
+    ![빌드 설정 추가](../media/iOS-linker-flags.png)
 
 -   **Project Navigator**가 다음 트리와 같이 표시됩니다.
 
-    ![](../media/iOS-verify-setup-01a.png)
+    ![프로젝트 검토](../media/iOS-verify-setup-01a.png)
 
 -   이제 새 iOS/OS X 앱을 만들 준비가 되었습니다.
 
@@ -123,6 +122,6 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

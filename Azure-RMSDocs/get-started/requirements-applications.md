@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/13/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -28,6 +28,9 @@ ms.suite: ems
 
 # Azure RMS 요구 사항: 응용 프로그램
 
+*적용 대상: Azure 권한 관리, Office 365*
+
+
 다음 표를 사용하여 Azure RMS를 기본적으로 지원하는 응용 프로그램을 확인할 수 있습니다. 즉, 이러한 응용 프로그램에는 사용 제한을 지원하기 위해 RMS API를 통해 RMS가 긴밀하게 통합되어 있습니다. 이러한 응용 프로그램을 RMS 지원이라고도 합니다.
 
 별도의 설명이 없으면 지원되는 기능은 Azure RMS와 AD RMS 둘 다에 적용됩니다. 또한 iOS, Android, OS X 및 Windows Phone 8.1에서 AD RMS를 지원하려면 [Active Directory Rights Management Services 모바일 장치 확장](https://technet.microsoft.com/library/dn673574.aspx)이 필요합니다.
@@ -43,11 +46,11 @@ ms.suite: ems
 
 |**장치 운영 체제**|Word, Excel, PowerPoint|보호된 PDF|전자 메일|다른 파일 형식|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office Mobile 앱(Azure RMS에만 해당) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho 문서<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 공유 앱 |Outlook 2010<br /><br />Outlook 2013<br /><br />OWA(Outlook Web App) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Windows용 RMS 공유 응용 프로그램: 텍스트, 이미지, pfile<br /><br />Siemens JT2Go: JT 파일(Windows 10에만 해당)|
-|**iOS**|iPad 및 iPhone용 Office [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Foxit Reader<br /><br />RMS 공유 앱 [[1]](#footnote-1)<br /><br />TITUS Docs|Citrix WorxMail<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 및 iPhone용 Outlook [[4]](#footnote-4)<br /><br />iOS용 OWA [[3]](#footnote-3)<br /><br />TITUS Mail|RMS 공유 앱 [[1]](#footnote-1): 텍스트, 이미지, pfile<br /><br />TITUS Docs: Pfile|
-|**Android**|GigaTrust App for Android<br /><br />Office Online [[2]](#footnote-2)|GigaTrust App for Android<br /><br />Foxit Reader<br /><br />RMS 공유 앱 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust App for Android [[4]](#footnote-4)<br /><br />Citrix WorxMail<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Android용 OWA [[3]](#footnote-3) 및 [[6]](#footnote-6)<br /><br />Samsung Email(S3 이상) [[6]](#footnote-6)<br /><br />TITUS Classification for Mobile|RMS 공유 앱 [[1]](#footnote-1): 텍스트, 이미지, pfile|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 앱(Azure RMS에만 해당) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho 문서<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 공유 앱 |Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />OWA(Outlook Web App) [[3]](footnote-3)<br /><br />Windows Mail [[4]](footnote-4)|Windows용 RMS 공유 응용 프로그램: 텍스트, 이미지, pfile<br /><br />Siemens JT2Go: JT 파일(Windows 10에만 해당)|
+|**iOS**|iPad 및 iPhone용 Office [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Foxit Reader<br /><br />RMS 공유 앱 [[1]](#footnote-1)<br /><br />TITUS Docs|Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 및 iPhone용 Outlook [[4]](#footnote-4)<br /><br />iOS용 OWA [[3]](#footnote-3)<br /><br />TITUS Mail|RMS 공유 앱 [[1]](#footnote-1): 텍스트, 이미지, pfile<br /><br />TITUS Docs: Pfile|
+|**Android**|GigaTrust App for Android<br /><br />Office Online [[2]](#footnote-2)|GigaTrust App for Android<br /><br />Foxit Reader<br /><br />RMS 공유 앱 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />GigaTrust App for Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Android용 Outlook [[4]](#footnote-4)<br /><br />Android용 OWA [[3]](#footnote-3) 및 [[7]](#footnote-7)<br /><br />Samsung Email(S3 이상) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|RMS 공유 앱 [[1]](#footnote-1): 텍스트, 이미지, pfile|
 |**OS X**|Office 2011(AD RMS만 해당)<br /><br />Mac용 Office 2016<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 공유 앱 [[1]](#footnote-1)|Outlook 2011(AD RMS만 해당)<br /><br />Mac용 Outlook 2016<br /><br />Outlook for Mac|RMS 공유 앱 [[1]](#footnote-1): 텍스트, 이미지, pfile|
-|**Windows 10 Mobile**|Office Mobile 앱(Azure RMS에만 해당) [[1]](#footnote-1)|지원되지 않음|Citrix WorxMail<br /><br />Outlook 메일|지원되지 않음|
+|**Windows 10 Mobile**|Office Mobile 앱(Azure RMS에만 해당) [[1]](#footnote-1)|지원되지 않음|Citrix WorxMail [[6]](#footnote-6)<br /><br />Outlook 메일|지원되지 않음|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[2]](#footnote-2)|지원되지 않음|Outlook 2013 RT<br /><br />Windows용 메일 앱<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go: JT 파일|
 |**Windows Phone 8.1**|Office Mobile(AD RMS만 해당)|RMS 공유 앱 [[1]](#footnote-1)|Outlook Mobile [[4]](#footnote-4)|RMS 공유 앱 [[1]](#footnote-1): 텍스트, 이미지, pfile|
 |**Blackberry 10**|지원되지 않음|지원되지 않음|Blackberry 메일 [[4]](#footnote-4)|지원되지 않음|
@@ -71,6 +74,9 @@ Exchange 온-프레미스에 사서함이 있는 받는 사람이 Exchange를 �
 보호된 문서 보기 및 편집을 지원합니다. 자세한 내용은 Office 블로그에서 [iPad 및 iPhone용 Office에 Azure 권한 관리 지원 제공](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) 게시물을 참조하세요.
 
 ###### 각주 6
+자세한 내용은 Citrix [WorxMail에 대한 제품 설명서](http://docs.citrix.com/en-us/worx-mobile-apps/10/xmob-worx-mail.html)를 참조하세요.
+
+###### 각주 7
 자세한 내용은 Office 블로그에서 [이제 일부 선택된 장치에서 Android용 OWA를 사용할 수 있음](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/) 게시물을 참조하세요.
 
 ## Office에 대한 Azure RMS 지원과 관련된 자세한 내용
@@ -139,6 +145,6 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 자주 사용하는 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)을 참조하세요.
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

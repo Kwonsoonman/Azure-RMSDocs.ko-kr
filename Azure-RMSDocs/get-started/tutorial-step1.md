@@ -6,7 +6,7 @@ description: 15분 이내에 완료할 수 있는 5단계를 통해 조직에서
 keywords:
 author: Cabailey
 manager: mbaldwin
-ms.date: 04/287/2016
+ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -14,20 +14,22 @@ ms.assetid: 7c4798e6-34a0-4c3f-a47f-505764ddf322
 
 # optional metadata
 
-ROBOTS: 
-audience:
-ms.devlang:
+#ROBOTS:
+#audience:
+#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+#ms.tgt_pltfrm:
+#ms.custom:
 
 ---
 
 
 
 # Azure RMS 빠른 시작 1단계: Rights Management 서비스 활성화
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 
 다음으로 이동합니다. 
 > [!div class="op_single_selector"]
@@ -39,15 +41,15 @@ ms.custom:
 - [5단계: 문서 추적](tutorial-step5.md)
 
 
-![](../media/AzRMS_QuickStartSteps1.PNG)
+![Azure RMS 빠른 시작 자습서 1단계](../media/AzRMS_QuickStartSteps1.PNG)
 
 Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스는 기본적으로 비활성화되어 있습니다. 서비스를 활성화하려면 Office 365 관리 센터 또는 Azure 클래식 포털을 사용하면 됩니다.
 
--   Azure 권한 관리가 포함된 Office 365 구독이 있거나, Azure 권한 관리가 제외된 Office 365 구독을 사용하지만 Azure RMS Premium 구독이 있는 경우: **Office 365 관리 센터를 사용**합니다.
+-   Azure 권한 관리가 포함된 Office 365 구독이 있거나, Azure 권한 관리가 제외된 Office 365 구독을 사용하지만 Azure RMS Premium 구독이 있는 경우 **Office 365 관리 센터를 사용**합니다..
 
--   Office 365 구독이 없는 경우: **Azure 클래식 포털을 사용**합니다.
+-   Office 365 구독이 없는 경우 **Azure 클래식 포털을 사용**합니다..
 
-![](../media/AzRMS_Tutorial_1_Screenshots.png)
+![자습서 1단계 스크린샷](../media/AzRMS_Tutorial_1_Screenshots.png)
 
 ### Office 365 클래식 관리 센터에서 Rights Management를 활성화하려면
 
@@ -56,17 +58,17 @@ Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스�
 2.  Office 365 관리 센터가 자동으로 표시되지 않으면 왼쪽 위에서 앱 시작 관리자 아이콘을 선택하고 **관리자**를 선택합니다. **관리자** 타일은 Office 365 관리자에게만 나타납니다.
 
     > [!TIP]
-    > 관리 센터 도움말은 [Office 365 관리 센터 정보 - 관리자 도움말](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)을 참조하세요.
+    > 관리 센터 도움말은 [Office 365 관리 센터 정보 - 관리자 도움말](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)을 참조하세요..
 
-3.  왼쪽 창에서 **서비스 설정**을 확장합니다.
+3.  왼쪽 창에서 **서비스 설정**을 확장합니다..
 
-4.  **권한 관리**를 클릭합니다.
+4.  **권한 관리**를 클릭합니다..
 
-5.  **권한 관리** 페이지에서 **관리**를 클릭합니다.
+5.  **권한 관리** 페이지에서 **관리**를 클릭합니다..
 
-6.  **Rights Management** 페이지에서 **활성화**를 클릭합니다.
+6.  **권한 관리** 페이지에서 **활성화**를 클릭합니다..
 
-7.  **권한 관리를 활성화하시겠나요?**라는 메시지가 나타나면 **활성화**를 클릭합니다.
+7.  **Rights Management를 활성화하시겠습니까?**라는 메시지가 나타나면 **활성화**를 클릭합니다..
 
 이제 **Rights Management가 활성화된** 것을 확인하고 비활성화할 수 있습니다(페이지를 수동으로 새로 고쳐야 할 수 있음).
 
@@ -76,13 +78,13 @@ Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스�
 
 1.  [Azure 클래식 포털](http://go.microsoft.com/fwlink/p/?LinkID=275081)로 이동하여 로그인합니다.
 
-2.  왼쪽 창에서 **ACTIVE DIRECTORY**를 클릭합니다.
+2.  왼쪽 창에서 **Active Directory**를 클릭합니다..
 
-3.  **Active Directory** 페이지에서 **Rights Management**를 클릭합니다.
+3.  **Active Directory** 페이지에서 **권한 관리**를 클릭합니다..
 
 4.  [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]에 대해 관리할 디렉터리를 선택하고 **활성화**를 클릭한 다음 작업을 확인합니다.
 
-이제 **Rights Management 상태** 가 **활성** 으로 표시되고 **활성화** 옵션이 **비활성화**로 바뀝니다.
+이제 **Rights Management 상태**가 **활성**으로 표시되고 **활성화** 옵션이 **비활성화**로 바뀝니다..
 
 포털에서 Rights Management에 대한 다른 옵션을 구성할 수 있지만, 이 자습서에서는 필요하지 않으므로 Azure 클래식 포털을 닫을 수 있습니다.
 
@@ -100,6 +102,6 @@ Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스�
 [« 소개](quick-start-tutorial.md)
 [2단계 »](tutorial-step2.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

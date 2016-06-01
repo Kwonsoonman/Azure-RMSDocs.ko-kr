@@ -1,32 +1,20 @@
 ---
-# required metadata
+# 필수 메타데이터
 
-title: Azure RMS 빠른 시작 자습서 - 4단계 | Azure RMS
-description: 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 네 번째 단계입니다.
-keywords:
-author: Cabailey
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
-ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
+제목: Azure RMS 빠른 시작 자습서 - 4단계 | 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 네 번째 단계입니다.
+키워드: 만든 이: cabailey 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
 
-# optional metadata
+# 선택적 메타데이터
 
-ROBOTS: 
-audience:
-ms.devlang:
-ms.reviewer: esaggese
-ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+로봇: 대상: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
 
 ---
 
 
 # Azure RMS 빠른 시작 4단계: 수신자에게 메일로 전송된 문서를 열도록 요청
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 
 다음으로 이동합니다. 
 > [!div class="op_single_selector"]
@@ -38,18 +26,18 @@ ms.custom:
 - [5단계: 문서 추적](tutorial-step5.md)
 
 
-![](../media/AzRMS_QuickStartSteps4.PNG)
+![Azure RMS 빠른 시작 자습서 4단계](../media/AzRMS_QuickStartSteps4.PNG)
 
 보호된 문서가 메일 첨부 파일로 전송되면 수신자는 다양한 장치를 사용하여 읽을 수 있습니다. 이러한 장치에는 iPad, iPhone, Android 태블릿 및 전화, Mac 컴퓨터, Windows 컴퓨터 등이 포함됩니다.
 
 전송된 메일 메시지를 읽도록 요청합니다. 메일 메시지와 함께, 먼저 다음 텍스트가 표시됩니다.
 
-**보낸 사람이 Microsoft RMS를 사용하여 첨부 파일을 보호했습니다. 첨부 파일을 열려면 **[로그인](http://aka.ms/rms)해야 합니다
-      **.**
+**보낸 사람이 Microsoft RMS를 사용하여 첨부 파일을 보호했습니다. 
+      **파일을 열려면**** [로그인](http://aka.ms/rms)해야 합니다.
 
 링크를 클릭하면 RMS 공유 앱 설치 지침으로 이동하며, 필요한 경우에는 무료 계정으로 가입할 수 있습니다. 무료 계정에는 개인별 RMS 구독 권한이 부여되므로 권한이 있는 사용자는 조직에 Azure RMS가 없어도 항상 보호된 문서를 읽을 수 있습니다. 그러면 다음과 같은 지침에 따라 보호된 첨부 파일을 읽을 준비가 완료됩니다.
 
-![](../media/AzRMS_Tutorial_4_Screenshots.png)
+![자습서 4 단계 스크린샷](../media/AzRMS_Tutorial_4_Screenshots.png)
 
 ### 보호된 문서 첨부 파일을 보호하려면
 
@@ -72,10 +60,9 @@ ms.custom:
 |메일 메시지에 첨부되는 두 가지 버전의 파일 정보|[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
 
 
->[!div class="step-by-step"]
-[« 3단계](tutorial-step3.md)
+>[!div class="step-by-step"] [« 3단계](tutorial-step3.md)
 [5단계 »](tutorial-step5.md)
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

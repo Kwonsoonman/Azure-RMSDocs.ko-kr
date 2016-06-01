@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 9728c135-0e7f-4f5c-95ba-1db79e418080
-
+ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# Android 설정
+# Android 설정
 
 Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 
@@ -73,61 +72,61 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 -   Eclipse 개발 환경을 엽니다.
 -   새 Android 응용 프로그램 프로젝트를 만들려면 **File** 메뉴에서 **New**를 클릭하고 **Project**를 클릭한 다음 **Android Application Project**를 선택합니다.
 
-    ![](../media/Android-setup-01c.png)
+    ![새 Android 응용 프로그램 만들기](../media/Android-setup-01c.png)
 
 -   응용 프로그램 이름을 입력합니다. 응용 프로그램 이름에 따라 프로젝트 이름 및 패키지 이름이 채워집니다.
 -   **Next**를 클릭하고 작업 영역을 만들려는 위치를 선택합니다.
 
-    ![](../media/Android-setup-02a.jpg)
+    ![응용 프로그램 이름 입력](../media/Android-setup-02a.jpg)
 
 -   **Next**를 클릭하고 앱 아이콘을 선택합니다.
 
-    ![](../media/Android-setup-03.png)
+    ![앱의 아이콘 선택](../media/Android-setup-03.png)
 
 -   **Next**를 클릭하고 **Blank Activity**를 선택하여 활동을 만듭니다.
 
-    ![](../media/Android-setup-04.png)
+    ![활동 만들기](../media/Android-setup-04.png)
 
--   **Next**를 클릭하고 활동 이름을 입력합니다. 레이아웃 이름을 activity\_main으로 사용하여 MainActivity를 기본 이름으로 유지할 수 있습니다.
+-   **Next**를 클릭하고 활동 이름을 입력합니다. 레이아웃 이름을 *activity\_main*으로 사용하여 *MainActivity*를 기본 이름으로 유지할 수 있습니다.
 
-    ![](../media/Android-setup-05a.jpg)
+    ![정책의 이름 제공](../media/Android-setup-05a.jpg)
 
 -    **마침**을 클릭합니다.
 
-    ![](../media/Android-setup-06.jpg)
+    ![만들기 완료](../media/Android-setup-06.jpg)
 
--   기본 활동 클래스인 MainActivity.java와 함께 프로젝트가 만들어졌습니다.
+-   기본 활동 클래스인 *MainActivity.java*와 함께 프로젝트가 만들어졌습니다.
 
 **SDK 참조**
 
--   adrms\_android\_sdk.zip을 추출한 폴더로 이동합니다. "SDK > com > microsoft > rightsmanagement" 폴더에서 .classpath, .project 및 project.properties 파일이 읽기 전용으로 표시되지 않았는지 확인합니다.
+-   *adrms\_android\_sdk.zip*을 추출한 폴더로 이동합니다. "SDK > com > microsoft > rightsmanagement" 폴더에서 *.classpath*, *.project* 및 *project.properties* 파일이 읽기 전용으로 표시되지 않았는지 확인합니다.
 -   SDK를 참조하려면 작업 영역으로 가져와야 합니다.
 
     Eclipse에서 **File**을 클릭합니다. **File** 메뉴에서 **Import**를 클릭합니다. **Import** 대화 상자에서 **Android / Existing Android Code into Workspace**를 선택합니다.
 
-    ![](../media/Android-setup-07.png)
+    ![작업 영역으로 가져오기](../media/Android-setup-07.png)
 
--    **다음**을 클릭합니다. adrms\_android\_sdk.zip을 추출한 폴더로 이동합니다. SDK가 목록에 **com.microsoft.rightsmanagement**로 표시되어야 합니다.
+-    **다음**을 클릭합니다. *adrms\_android\_sdk.zip*을 추출한 폴더로 이동합니다. SDK가 목록에 **com.microsoft.rightsmanagement**로 표시되어야 합니다.
 
-    ![](../media/Android-setup-08c.jpg)
+    ![폴더를 선택하도록 이동](../media/Android-setup-08c.jpg)
 
 -   **Finish**를 클릭하면 SDK 프로젝트가 이전에 만든 응용 프로그램의 형제로 나타납니다.
 
-    ![](../media/Android-setup-09.jpg)
+    ![응용 프로그램의 형제로 표시되는 SDK 프로젝트](../media/Android-setup-09.jpg)
 
 -   **Project** 아이콘을 마우스 오른쪽 단추로 클릭하고 프로젝트의 속성을 봅니다.
 -   **Android** 탭으로 이동합니다.
--   **Add**를 클릭하고 작업 영역에서 com.microsoft.rightsmanagement 라이브러리를 선택합니다.
+-   **Add**를 클릭하고 작업 영역에서 *com.microsoft.rightsmanagement* 라이브러리를 선택합니다.
 
-    ![](../media/Android-setup-10b.jpg)
+    ![라이브러리 추가](../media/Android-setup-10b.jpg)
 
 -   **확인**을 클릭합니다.
 
-    MS RMS SDK 4.2는 AAD RM에 연결하기 때문에 응용 프로그램에 **INTERNET** 및 **ACCESS\_NETWORK\_STATE** 권한을 부여해야 합니다. 이렇게 하려면 프로젝트 루트에 있는 AndroidManifest.xml 파일을 엽니다.
+    MS RMS SDK 4.2는 AAD RM에 연결하기 때문에 응용 프로그램에 **INTERNET** 및 **ACCESS\_NETWORK\_STATE** 권한을 부여해야 합니다. 이렇게 하려면 프로젝트 루트에 있는 *AndroidManifest.xml* 파일을 엽니다.
 
     사용 권한을 추가하려면 **Add**를 클릭하고 **Uses Permissions**를 선택합니다.
 
-    ![](../media/Android-setup-11d.jpg)
+    ![권한 추가](../media/Android-setup-11d.jpg)
 
 -   텍스트 편집기 보기에서 매니페스트를 보면 매니페스트 단계를 확인할 수 있습니다. 다음 줄이 나타나는지 확인합니다.
 
@@ -140,7 +139,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
     <uses-permission/>
 
 
-**참고** SDK는 android.support.v4를 사용합니다.
+**참고** SDK는 *android.support.v4*를 사용합니다.
 
 -   이제 새 Android 앱을 만들 준비가 되었습니다.
 
@@ -152,13 +151,13 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 [개발자 용어 및 개념](core-concepts.md)
 
-[Android API 참조](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement)
+[Android API 참조](android-namespaces.md)
 
  
 
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

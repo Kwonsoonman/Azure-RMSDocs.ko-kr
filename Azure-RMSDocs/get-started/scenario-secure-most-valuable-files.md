@@ -6,8 +6,8 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
+ms.date: 05/20/2016
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 시나리오 - 가장 중요한(소수) 파일 보호
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다. 일반적으로 소수의 사용자만 액세스할 수 있어야 하는 파일입니다. 예를 들어 회사의 대표 식료품에 대한 조리법 지침이나 지정된 날짜 전에 공개되면 안 되는 인수 계획입니다.
 
 지침을 제공하기에 적합한 상황은 다음과 같습니다.
@@ -43,7 +46,7 @@ ms.suite: ems
 -   관리자가 파일에 액세스할 수 있는 사용자와 시기를 추적하고 필요한 경우 액세스 권한을 취소할 수 있어야 하는 경우
 
 ## 배포 지침
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 빠른 배포를 위한 관리자 지침](../media/AzRMS_AdminBanner.png)
 
 사용자 문서를 진행하기 전에 다음 요구 사항이 충족되었는지 확인한 다음 지원 절차에 대한 지침을 따르세요.
 
@@ -52,7 +55,7 @@ ms.suite: ems
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
 |---------------|--------------------------------|
-|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부<br /><br />기밀 문서에 액세스할 수 있어야 하는 소수의 사용자를 포함하는 **Privileged access**라는 메일 사용이 가능한 그룹<br /><br />작업에 eDiscovery, 모니터링 및 감사가 포함된 사용자를 포함하는 **IT Compliance managers**라는 메일 사용이 가능한 그룹<br /><br />**RMS administrators**라는 메일 사용이 가능한 그룹이 있고 Azure RMS를 구성하는 모든 관리자가 이 그룹의 구성원인지 여부|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
+|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부<br /><br />- 기밀 문서에 액세스할 수 있어야 하는 소수의 사용자가 포함된 **Privileged access**라는 메일 사용이 가능한 그룹<br /><br />- 작업에 eDiscovery, 모니터링 및 감사가 포함된 사용자를 포함하는 **IT Compliance managers**라는 메일 사용이 가능한 그룹<br /><br />- **RMS administrators**라는 메일 사용이 가능한 그룹이며, Azure RMS를 구성하는 모든 관리자가 이 그룹의 구성원임|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
 |다음에 설명하는 대로 사용자 지정 템플릿을 구성했는지 여부|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)|
 |다음 섹션에 설명된 대로 이러한 파일을 바로 보호할 수 있도록 Rights Management 공유 응용 프로그램이 사용자의 Windows 컴퓨터에 배포되었는지 여부|[Rights Management 공유 응용 프로그램 다운로드 및 설치 ](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
@@ -91,8 +94,7 @@ ms.suite: ems
 
 파일을 바로 보호하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)를 참조하세요.
 
-> [!TIP]
-> 이 수동 프로세스에서 보호할 파일 수가 너무 많은 경우 [RMS 보호 도구](https://www.microsoft.com/en-us/download/details.aspx?id=47256)를 사용하여 템플릿을 통해 파일을 대량 보호하는 것이 좋습니다.
+> [!TIP] 이 수동 프로세스에서 보호할 파일 수가 너무 많은 경우 [RMS 보호 도구](https://www.microsoft.com/en-us/download/details.aspx?id=47256)를 사용하여 템플릿을 통해 파일을 대량 보호하는 것이 좋습니다.
 
 ### 파일 액세스를 모니터링하고 필요한 경우 액세스 권한을 취소하려면
 
@@ -109,13 +111,13 @@ ms.suite: ems
 
 1.  파일의 실제 이름을 제공하거나 권한 있는 사용자가 이해하는 명확한 참조를 사용합니다.
 
-2.  &lt;연락처 세부 정보&gt;를 해당 사용자가 문서의 중요도와 일치하는 에스컬레이션된 지원 채널을 통해 지원 센터나 IT 부서에 연락할 수 있는 방법에 대한 지침으로 바꿉니다. 예를 들어 심각도가 높은 지원 통화에는 24시간 전화 번호를 제공합니다.
+2.  *&lt;연락처 세부 정보&gt;*를 해당 사용자가 문서의 중요도와 일치하는 에스컬레이션된 지원 채널을 통해 지원 센터나 IT 부서에 연락할 수 있는 방법에 대한 지침으로 바꿉니다. 예를 들어 심각도가 높은 지원 통화에는 24시간 전화 번호를 제공합니다.
 
 3.  알림을 원하는 대로 수정한 다음 해당 사용자에게 보냅니다.
 
 예제 문서에서는 사용자 지정 후 이 알림이 사용자에게 표시되는 방식을 보여 줍니다.
 
-![](../media/AzRMS_UsersBanner.png)
+![Azure RMS 빠른 배포를 위한 템플릿 사용자용 설명 문서](../media/AzRMS_UsersBanner.png)
 
 ### IT 알림: &lt;조직 이름&gt;의 기밀 문서 보호
 다음 파일은 &lt;제한된 사용자&gt;만 파일에 액세스하고 변경할 수 있도록 매우 높은 수준의 보호가 적용되어 있습니다. 무단 액세스로부터 파일을 보호하기 위해 파일을 열 때마다 응용 프로그램에서 자동으로 권한 부여를 요청하므로 이제 파일을 열려면 인터넷 연결이 있어야 하며 자격 증명을 묻는 메시지가 표시될 수도 있습니다.
@@ -128,10 +130,10 @@ ms.suite: ems
 
 **도움이 필요하십니까?**
 
--   이러한 파일에 액세스할 수 없거나 파일에서 의심스러운 변경 내용을 발견하는 경우 &lt;작업 및 연락처 세부 정보&gt;.
+-   이러한 파일에 액세스할 수 없거나 파일에서 의심스러운 변경 내용을 발견하는 경우 &lt;작업 및 연락처 세부 정보&gt;
 
 #### 예제 사용자 지정 사용자 문서
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서](../media/AzRMS_ExampleBanner.png)
 
 ##### IT 알림: VanArsdel의 기밀 문서 보호
 다음 파일은 이 메일 메시지의 받는 사람 줄에 있는 사용자만 파일에 액세스하고 변경할 수 있도록 매우 높은 수준의 보호가 적용되어 있습니다. 무단 액세스로부터 파일을 보호하기 위해 파일을 열 때마다 응용 프로그램에서 자동으로 권한 부여를 요청하므로 이제 파일을 열려면 인터넷 연결이 있어야 하며 자격 증명을 묻는 메시지가 표시될 수도 있습니다.
@@ -150,6 +152,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO3-->
 
 

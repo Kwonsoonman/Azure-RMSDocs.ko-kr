@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Azure 권한 관리 사용 현황 로깅 및 분석
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 이 항목의 정보를 통해 Azure 권한 관리(Azure RMS)와 함께 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. Azure 권한 관리 서비스는 조직에 대해 수행하는 모든 요청을 기록할 수 있습니다. 여기에는 사용자 요청, 조직의 권한 관리 관리자가 수행하는 작업 및 Azure 권한 관리 배포를 지원하기 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다.
 
 이러한 Azure 권한 관리 로그를 사용하여 다음과 같은 비즈니스 시나리오를 지원할 수 있습니다.
@@ -44,8 +47,7 @@ ms.suite: ems
 
     정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. Azure 권한 관리 및 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure 권한 관리로 보호되는 문서와 사진을 열려면 항상 권한 관리 라이선스를 받아야 하기 때문입니다. 이는 메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 저장소 장치에 복사하는 경우에도 마찬가지입니다. 즉, Azure 권한 관리를 사용하여 데이터를 보호하는 경우 Azure 권한 관리 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
 
-> [!NOTE]
-> Azure 권한 관리에 대한 관리 작업 로깅만 사용하고 사용자가 권한 관리를 사용하는 방법은 추적하지 않으려는 경우 Azure 권한 관리용 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet을 사용할 수 있습니다.
+> [!NOTE] Azure 권한 관리에 대한 관리 작업 로깅만 사용하고 사용자가 권한 관리를 사용하는 방법은 추적하지 않으려는 경우 Azure 권한 관리용 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet을 사용할 수 있습니다.
 > 
 > Azure 클래식 포털에서 **RMS 요약**, **RMS 활성 사용자**, **RMS 장치 플랫폼** 및 **RMS 응용 프로그램 사용**이 포함된 개괄적인 사용 현황 보고서를 사용할 수도 있습니다. Azure 클래식 포털에서 이러한 보고서에 액세스하려면 **Active Directory**를 클릭하고 디렉터리를 선택하여 연 다음 **보고서**를 클릭합니다.
 
@@ -54,8 +56,7 @@ ms.suite: ems
 ## Azure 권한 관리 사용 현황 로깅을 사용하도록 설정하는 방법
 2016년 2월부터 모든 고객에 대해 Azure 권한 관리 사용 현황 로깅이 기본적으로 사용됩니다. 이 내용은 2016년 2월 이전에 Azure RMS 서비스를 활성화한 고객과 2016년 2월 이후에 서비스를 활성화하는 고객에게 적용됩니다. 
 
-> [!NOTE]
-> 로그 저장소 또는 로깅 기능에 대한 무료로 제공됩니다.
+> [!NOTE] 로그 저장소 또는 로깅 기능에 대해 무료로 제공됩니다.
 > 
 > 2016년 2월 이전에 Azure RMS에 대한 사용 현황 로깅을 사용한 경우 Azure 구독이 필요하며 Azure에 충분한 저장소가 있어야 했지만 지금은 그렇지 않습니다.
 
@@ -151,7 +152,7 @@ Azure 권한 관리는 일련의 Blob으로 로그를 기록합니다.
 |owner-email|문자열|문서 소유자의 전자 메일 주소입니다.|alice@contoso.com|
 |issuer|문자열|문서 발급자의 전자 메일 주소입니다.|alice@contoso.com (or) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |Template-id|문자열|문서를 보호하는 데 사용된 템플릿의 ID입니다.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|문자열|보호된 문서의 파일 이름입니다.|TopSecretDocument.docx|
+|File-name|문자열|보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.|TopSecretDocument.docx|
 |Date-published|날짜|문서를 보호한 날짜입니다.|2015-10-15T21:37:00|
 |c-info|문자열|요청을 수행하는 클라이언트 플랫폼에 대한 정보입니다.<br /><br />구체적인 문자열은 운영 체제, 브라우저 등의 응용 프로그램에 따라 다릅니다.|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|주소|요청을 수행하는 클라이언트의 IP 주소입니다.|64.51.202.144|
@@ -159,9 +160,9 @@ Azure 권한 관리는 일련의 Blob으로 로그를 기록합니다.
 #### use-id 필드에 대한 예외
 user-id 필드는 보통 요청을 수행한 사용자를 나타내지만 해당 값이 실제 사용자에 매핑되지 않는 두 가지 예외가 있습니다.
 
--   **'microsoftrmsonline@&lt;YourTenantID&gt;.rms.&lt;region&gt;.aadrm.com'**값
+-   **'microsoftrmsonline@&lt;테넌트 ID&gt;.rms.&lt;지역&gt;.aadrm.com'** 값
 
-    이 값은 Exchange Online 또는 SharePoint Online과 같은 Office 365 서비스에서 요청을 수행함을 나타냅니다. 위 문자열에서 &lt;YourTenantID&gt; 는 테넌트의 GUID이고 &lt;region&gt; 은 테넌트가 등록된 지역입니다. 예를 들어 **na** 는 북미, **eu** 는 유럽, **ap** 는 아시아를 나타냅니다.
+    이 값은 Exchange Online 또는 SharePoint Online과 같은 Office 365 서비스에서 요청을 수행함을 나타냅니다. 위 문자열에서 *&lt;테넌트 ID&gt;*는 테넌트의 GUID이고, *&lt;지역&gt;*은 테넌트가 등록된 지역입니다. 예를 들어 **na** 는 북미, **eu** 는 유럽, **ap** 는 아시아를 나타냅니다.
 
 -   RMS 커넥터를 사용하는 경우
 
@@ -228,6 +229,6 @@ Azure 권한 관리용 Windows PowerShell 사용에 대한 자세한 내용은 [
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO3-->
 
 

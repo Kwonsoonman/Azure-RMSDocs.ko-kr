@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Azure 권한 관리 빠른 배포 가이드
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 **배포 및 사용** 섹션의 구성 정보와 함께 이 가이드를 사용하면 구현할 특정 시나리오 목록에서 선택하여 Azure 권한 관리(Azure RMS)를 보다 빠르게 배포하고 사용할 수 있습니다.
 
 이러한 시나리오에는 관리자 지침과 함께 최종 사용자 문서가 포함되어 있습니다. 이 설명서(지침 또는 알림)를 최종 사용자에게 제공하기 전에 비즈니스 요구 사항 및 기존 워크플로에 맞게 이 설명서를 사용자 지정해야 합니다. 예제 지침 집합이나 알림을 통해 최종 사용자 문서가 어떻게 표시되는지 확인할 수 있습니다.
@@ -36,8 +39,7 @@ ms.suite: ems
 
 이러한 솔루션을 배포하기 전에 최종 사용자에게 광범위한 알림을 전송하여 회사 데이터를 보호하기 위해 일부 변경이 예정되어 있으며 그에 따라 최종 사용자도 변경해야 할 수 있음을 알리는 것이 좋습니다. 다음 표 뒤에 예제 통신이 포함되어 있습니다.
 
-> [!NOTE]
-> 이 가이드에 대한 질문과 의견이 있는 경우 이 페이지의 피드백 메커니즘을 사용하거나 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)으로 메일 메시지를 보내 주세요.
+> [!NOTE] 이 가이드에 대한 질문과 의견이 있는 경우 이 페이지의 피드백 메커니즘을 사용하거나 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)으로 메일 메시지를 보내 주세요.
 
 ## Azure RMS에 대한 시나리오
 Azure RMS를 신속하게 배포하여 특정 비즈니스 문제를 해결하려면 비즈니스 목표와 가장 일치하는 시나리오를 선택한 다음 필요에 따라 변경합니다.
@@ -130,7 +132,7 @@ Azure RMS를 신속하게 배포하여 특정 비즈니스 문제를 해결하�
 ## 출시 전의 사용자 알림
 다음 예제 통신 메시지를 사용하여 Azure RMS 배포 시 일부 변경이 예정되어 있음을 알릴 수 있습니다. 조직의 임원 중 한 명(CEO 권장)이 모든 사용자에게 메일로 보내도록 다음 텍스트를 복사하여 붙여넣습니다. 사용자와 조직에 보다 적절한 메시지를 만들기 위해 이 텍스트를 변경하는 것이 좋습니다.
 
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서 배너](../media/AzRMS_ExampleBanner.png)
 
 ### 데이터를 보호하기 위한 변경 내용
 실수로 파트너에게 보낸 문서에 대한 액세스를 차단하려고 한 적이 있나요? 보낸 최신 제품 뉴스를 어떤 고객이 읽었는지 알 수 있는 방법이 있는지 궁금했던 적이 있나요? 보지 않아야 하는 사람에게 전송되지 않을까 염려하지 않고 기밀 제품 정보를 공유할 수 있어야 하나요?
@@ -139,7 +141,7 @@ IT 부서에서 Microsoft Azure 권한 관리(Azure RMS)를 엔터프라이즈 �
 
 예를 들어 공유하는 문서를 추적(및 필요한 경우 해지)하려면 문서 추적 사이트를 사용합니다.
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![Azure RMS 문서 추적 스크린샷](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 작동 방식을 미리 살펴보려면 이 2분 분량의 동영상 [Azure RMS 문서 추적 및 취소](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)를 시청하세요.
 
@@ -149,6 +151,6 @@ IT 부서에서 Microsoft Azure 권한 관리(Azure RMS)를 엔터프라이즈 �
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

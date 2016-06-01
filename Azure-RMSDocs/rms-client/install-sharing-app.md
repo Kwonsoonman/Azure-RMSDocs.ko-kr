@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Rights Management 공유 응용 프로그램 다운로드 및 설치 
+
+*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+
 로컬 관리자가 아니더라도 RMS 공유 응용 프로그램을 설치할 수 있습니다. 하지만 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우 몇 가지 제한 사항이 있습니다. 자세한 내용은 이 페이지에서 [로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우](#if-you-are-not-a-local-administrator-and-use-office-2010) 섹션을 참조하세요.
 
 ## Rights Management 공유 응용 프로그램을 다운로드 및 설치하려면
@@ -34,9 +37,9 @@ ms.suite: ems
 
 2.  **컴퓨터** 섹션에서 **Windows용 RMS 앱** 의 아이콘을 클릭하고 **Setup.exe** 파일을 저장하여 Microsoft Rights Management 공유 응용 프로그램을 설치합니다.
 
-3.  다운로드된 Setup.exe 파일을 두 번 클릭합니다. 설치를 계속할지 묻는 메시지가 표시되면 **예**를 클릭합니다.
+3.  다운로드된 Setup.exe 파일을 두 번 클릭합니다. 계속하라는 메시지가 표시되면 **예**를 클릭합니다..
 
-4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료될 때까지 기다립니다.
+4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료되기를 기다립니다.
 
     > [!NOTE]
     > RMS 공유 응용 프로그램에는 Microsoft.NET Framework 버전 4.0 이상이 필요합니다. 설치 프로그램에서 이 버전이 설치되어 있는지 확인하며, 설치되어 있지 않은 경우 설치할 수 있는 링크가 포함된 메시지가 나타납니다.
@@ -65,13 +68,13 @@ ms.suite: ems
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md##what-do-you-want-to-do-)
+-   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do-)
 
 ## 참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

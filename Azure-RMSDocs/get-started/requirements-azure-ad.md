@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -27,6 +27,9 @@ ms.suite: ems
 
 # Azure RMS 요구 사항: Azure AD 디렉터리
 
+*적용 대상: Azure 권한 관리, Office 365*
+
+
 Azure 권한 관리(Azure RMS)를 사용하려면 Azure AD 디렉터리가 있어야 합니다. Azure 클래식 포털에 로그인하려면 이 디렉터리의 조직 계정을 사용합니다. Azure 클래식 포털에서는 Rights Management 템플릿을 구성 및 관리하는 등의 작업을 할 수 있습니다.
 
 조직에서 아직 Azure를 구독하지 않은 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. [Azure 시작](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따르세요.
@@ -39,8 +42,7 @@ Azure 권한 관리(Azure RMS)를 사용하려면 Azure AD 디렉터리가 있�
 
 Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Azure Active Directory와 온-프레미스 ID 통합](/active-directory/active-directory-aadconnect)을 참조하세요.
 
-> [!NOTE]
-> AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스를 인증하는 모바일 장치나 Mac 컴퓨터를 사용하는 경우
+> [!NOTE] AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스를 인증하는 모바일 장치나 Mac 컴퓨터를 사용하는 경우
 > 
 > -   **Windows Server 2012 R2** 이상의 서버 버전이나 OAuth 2.0 프로토콜을 지원하는 다른 인증 공급자에서 AD FS를 사용해야 합니다.
 
@@ -78,6 +80,6 @@ Azure RMS로 Multi-Factor Authentication(MFA)를 사용하려면 다음 중 하�
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

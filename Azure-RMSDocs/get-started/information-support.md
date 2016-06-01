@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # Azure 권한 관리에 대한 정보 및 지원
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 다음 리소스에서 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](Azure RMS)에 대한 추가 정보를 확인할 수 있습니다.
 
 |수행 작업|.. 방법|
@@ -47,8 +50,7 @@ Rights Management 제품 그룹에서는 [Microsoft Rights Management(RMS) 팀 �
 
 [문서 태그](http://blogs.technet.com/b/rms/archive/tags/docs/) 및 월별 문서 알림을 사용하여 새 문서와 기존 문서가 최근에 수정되었는지 여부를 확인할 수 있습니다.
 
-> [!TIP]
-> Azure RMS 또는 AD RMS용 응용 프로그램을 개발 중인 경우에는 [AD RMS(Active Directory Rights Management Services) 개발자 코너 블로그](http://blogs.msdn.com/b/rms/)도 확인할 수 있습니다.
+> [!TIP] Azure RMS 또는 AD RMS용 응용 프로그램을 개발 중인 경우에는 [Active Directory Rights Management Services (AD RMS) Developer's Corner Blog](http://blogs.msdn.com/b/rms/)(AD RMS(Active Directory Rights Management Services) 개발자 코너 블로그)도 확인할 수 있습니다.
 
 ## 지원 옵션 및 커뮤니티 리소스
 다음 링크에서는 지원 및 문제 해결 옵션과 커뮤니티 리소스에 대한 정보를 제공합니다.
@@ -69,6 +71,6 @@ Rights Management 제품 그룹에서는 [Microsoft Rights Management(RMS) 팀 �
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

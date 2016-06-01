@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 834c5943-a724-4322-9035-060c1112fe22
-
+ms.assetid: 0fe9dc-bc91-4018-b28d-2db293a3eaa2
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,6 @@ ms.suite: ems
 
 ---
 
-﻿
 # 방법: Azure 응용 프로그램 ID 가져오기
 
 Microsoft Rights Management SDK 4.2를 사용하여 RMS 사용 응용 프로그램을 만들려면 RMS 팀과 계약을 작성해야 합니다.
@@ -39,14 +37,14 @@ MS RMS SDK 4.2를 사용하여 RMS 사용 앱을 만들고 릴리스하려면 RM
 앱 ID를 만들고 RMS 팀과의 사용 계약에 서명하려면 다음 단계를 따르세요.
 
 -   [Azure에서 앱 ID를 만드는 방법](https://msdn.microsoft.com/en-us/library/azure/dn132599.aspx) 항목의 지침에 따라 앱 ID를 만듭니다.
--   RMS 팀에 RMLA 프로세스를 시작하도록 요청하고 "앱 ID"를 <askipteam@microsoft.com>으로 보냅니다.
+-   RMS 팀에 RMLA 프로세스를 시작하도록 요청하고 "앱 ID"를 <askipteam@microsoft.com>으로 보냅니다..
 -   RMLA에 서명하여 RMS 팀에 다시 보냅니다.
--   이제 서명된 RMLA가 있으므로 clientID 매개 변수를 통해 인증 라이브러리를 호출할 때 응용 프로그램 ID를 전달해야 합니다.
+-   이제 서명된 RMLA가 있으므로 *clientID* 매개 변수를 통해 인증 라이브러리를 호출할 때 응용 프로그램 ID를 전달해야 합니다.
 
     [iOS/OS X 코드 예제](ios-os-x-code-examples.md) 항목에서 인증 호출은 이런 방식으로 수행됩니다.
 
 
-    // Retrieve token using ADAL
+    // ADAL을 사용하여 검색 토큰
         [context acquireTokenWithResource:authenticationParameters.resource
                                  clientId:appClientId
                               redirectUri:redirectURI
@@ -64,6 +62,6 @@ MS RMS SDK 4.2를 사용하여 RMS 사용 앱을 만들고 릴리스하려면 RM
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

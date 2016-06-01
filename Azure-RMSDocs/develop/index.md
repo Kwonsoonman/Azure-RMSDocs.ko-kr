@@ -12,7 +12,6 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
-
 # optional metadata
 
 #ROBOTS:
@@ -56,6 +55,6 @@ ms.suite: ems
 | [Android 사용 시나리오](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 이상 버전의 4.x SDK|**Java 코드 예제**는 RMS SDK를 익히는 데 중요한 개발 시나리오를 나타냅니다. 예를 들어 Microsoft 보호된 파일 형식, 사용자 지정 보호된 파일 형식 및 사용자 지정 UI 컨트롤 사용이 포함됩니다.|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

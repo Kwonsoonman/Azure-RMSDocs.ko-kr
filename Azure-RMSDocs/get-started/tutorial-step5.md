@@ -1,32 +1,20 @@
 ---
-# required metadata
+# 필수 메타데이터
 
-title: Azure RMS 빠른 시작 자습서 - 5단계 | Azure RMS
-description: 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 마지막 단계입니다.
-keywords:
-author: Cabailey
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: get-started-article
-ms.prod: azure
-ms.service: rights-management
-ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
+제목: Azure RMS 빠른 시작 자습서 - 5단계 | Azure RMS 설명: 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 마지막 단계입니다.
+키워드: 만든 이: cabailey 관리자: mbaldwin ms.date: 05/09/2016 ms.topic: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
 
-# optional metadata
+# 선택적 메타데이터
 
-ROBOTS: 
-audience:
-ms.devlang:
-ms.reviewer: esaggese
-ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+로봇: 대상: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
 
 ---
 
 
 # Azure RMS 빠른 시작 5단계: 보호된 문서 추적
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 
 다음으로 이동합니다. 
 > [!div class="op_single_selector"]
@@ -37,7 +25,7 @@ ms.custom:
 - [4단계: 받는 사람이 문서 읽기](tutorial-step4.md)
 - [5단계: 문서 추적](tutorial-step5.md)
 
-![](../media/AzRMS_QuickStartSteps5.PNG)
+![Azure RMS 빠른 시작 자습서 5단계](../media/AzRMS_QuickStartSteps5.PNG)
 
 > [!NOTE]
 > 이 단계에서는 문서 추적을 지원하는 구독이 있어야 합니다. 구독에 문서 추적이 포함되어 있는지 여부를 확인하려면 [Rights Management Services(RMS) 제품 비교](https://technet.microsoft.com/dn858608.aspx)를 참조하세요.
@@ -48,7 +36,7 @@ ms.custom:
 
 -   문서를 연 사람이 있는 것을 확인한 후 후속 연락을 통해 질문이 있거나 추가 정보가 필요한지 확인합니다.
 
-![](../media/AzRMS_Tutorial_5_Screenshots.png)
+![자습서 5단계 스크린샷](../media/AzRMS_Tutorial_5_Screenshots.png)
 
 ### 보호된 문서를 추적하려면
 
@@ -73,12 +61,13 @@ ms.custom:
 |문제 해결 및 고객 질문|[문서 추적에 대한 FAQ](https://technet.microsoft.com/dn947488)|
 
 ### 다음 단계
-이 자습서에서는 Azure RMS로 데이터를 보호하는 방법에 대한 시나리오 하나를 단계별로 설명했습니다. 다른 일반적인 사용 방법을 확인하려면 [Azure 권한 관리란?](../understand-explore/what-is-azure-rms.md)에서 [Azure RMS 실행](../understand-explore/what-admins-users-see.md)을 참조하세요. 이 문서에는 Azure RMS의 작동 방식과 이 앱으로 해결할 수 있는 비즈니스 문제 등의 다른 유용한 섹션도 있습니다.
+이 자습서에서는 Azure RMS로 데이터를 보호하는 방법에 대한 시나리오 하나를 단계별로 설명했습니다. 다른 일반적인 사용 방법을 확인하려면 [Azure 권한 관리란?](../understand-explore/what-is-azure-rms.md) 항목에서 [Azure RMS 실행](../understand-explore/what-admins-users-see.md) 섹션을 참조하세요. 이 문서에는 Azure RMS의 작동 방식과 이 앱으로 해결할 수 있는 비즈니스 문제 등의 다른 유용한 섹션도 있습니다.
 
 Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로드맵](../plan-design/deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
 
->[!div class="step-by-step"]
-[소개](quick-start-tutorial.md)
+특정 시나리오 및 관련 구성 단계 및 최종 사용자용 설명 문서의 목록에 대해서는 [Rapid deployment guide for Azure Rights Management](../get-started/rapid-deployment-guide.md)(Azure 권한 관리를 위한 빠른 배포 가이드) 항목을 참조하세요.
+
+>[!div class="step-by-step"] [소개](quick-start-tutorial.md)
 [1단계](tutorial-step1.md)
 [2단계](tutorial-step2.md)
 [3단계](tutorial-step3.md)
@@ -86,6 +75,6 @@ Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로�
 *5단계*
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

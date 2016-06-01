@@ -7,7 +7,7 @@ keywords:
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
@@ -26,6 +26,9 @@ ms.suite: ems
 ---
 
 # 시나리오 - 다른 조직의 사용자와 Office 파일 공유
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 이 시나리오와 지원 사용자 문서에서는 사용자가 다른 조직의 사용자와 Office 파일을 안전하게 메일로 주고받을 수 있도록 Azure 권한 관리를 사용합니다. 예를 들어 Office 파일은 파트너를 위한 가격 목록 정보, 대리점을 위한 제품 목록 또는 배송 시간 표시줄과 잠재적 고객 목록이 포함된 Word 문서, Excel 스프레드시트 또는 PowerPoint 프레젠테이션일 수 있습니다. 사용자가 이러한 지침을 따르면 전자 메일 메시지에 첨부된 파일이 Azure 권한 관리를 통해 보호됩니다.
 
 이 시나리오는 다음과 같은 상황에 적합합니다.
@@ -39,7 +42,7 @@ ms.suite: ems
 -   직원이 외부 사용자가 이 문서를 연 시간을 확인하려는 경우
 
 ## 배포 지침
-![](../media/AzRMS_AdminBanner.png)
+![Azure RMS 빠른 배포를 위한 관리자 지침](../media/AzRMS_AdminBanner.png)
 
 사용자 문서를 진행하기 전에 다음 요구 사항이 충족되었는지 확인합니다.
 
@@ -57,9 +60,9 @@ ms.suite: ems
 ## 사용자 문서 지침
 다음 템플릿을 사용하여 최종 사용자 통신에 사용자 지침을 복사해서 붙여넣고 사용자 환경에 맞게 다음과 같이 수정합니다.
 
-1.  &lt;Office 문서 종류의 이름&gt;을 사용자가 보낼 문서 종류로 바꿉니다. 사용자의 워크플로에 대해 “Word 문서", “Excel 스프레드시트" 등이 아닌 “가격 목록", “배송 시간", “입찰 제안" 등 구체적이며 익숙한 용어를 사용합니다. 이처럼 보다 구체적인 단어를 사용하면 해당 문서를 사용할 때 지침을 따를 가능성이 증가합니다.
+1.  *&lt;Office 문서 종류의 이름&gt;*을 사용자가 보낼 문서 종류로 바꿉니다. 사용자의 워크플로에 대해 “Word 문서", “Excel 스프레드시트" 등이 아닌 “가격 목록", “배송 시간", “입찰 제안" 등 구체적이며 익숙한 용어를 사용합니다. 이처럼 보다 구체적인 단어를 사용하면 해당 문서를 사용할 때 지침을 따를 가능성이 증가합니다.
 
-2.  &lt;연락처 세부 정보&gt;를 웹 사이트 링크, 메일 주소, 전화 번호 등 사용자가 지원 센터에 연락할 수 있는 방법에 대한 지침으로 바꿉니다.
+2.  *&lt;연락처 세부 정보&gt;*를 웹 사이트 링크, 메일 주소, 전화 번호 등 사용자가 지원 센터에 연락을 할 수 있는 방법에 대한 지침으로 바꿉니다.
 
 3.  **그 외에 수정할 수 있는 사항은 다음과 같습니다.**
 
@@ -71,43 +74,40 @@ ms.suite: ems
 
     -   이 단계에서 만료 날짜를 설정하지는 않습니다. 특정 날짜 후에는 정보를 사용하면 안 되는 경우 메일 메시지를 보낸 날부터 90일과 같은 적절한 만료 시간을 설정하는 다른 단계를 추가합니다.
 
-    > [!NOTE]
-    > 사용자가 선택할 수 있는 각 옵션에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램의 대화 상자 옵션](https://technet.microsoft.com/library/dn574738.aspx)을 참조하세요.
+    > [!NOTE]사용자가 선택할 수 있는 각 옵션에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램의 대화 상자 옵션](https://technet.microsoft.com/library/dn574738.aspx)을 참조하세요.
 
 4.  이 지침 집합을 원하는 대로 수정한 다음 해당 사용자에게 보냅니다.
 
 예제 문서에서는 사용자 지정 후 이러한 지침이 사용자에게 표시되는 방식을 보여 줍니다.
 
-![](../media/AzRMS_UsersBanner.png)
+![Azure RMS 빠른 배포를 위한 템플릿 사용자용 설명 문서](../media/AzRMS_UsersBanner.png)
 
-### &lt;Office 문서 종류 이름&gt; 공유 방법
+### &lt;Office 문서 종류 이름 공유 방법&gt;
 
-1.  전자 메일 주소를 하나 이상 지정하고 메시지를 입력한 다음 &lt;Office 문서 종류 이름&gt; 을 전자 메일 메시지에 첨부하여 전자 메일 메시지를 작성합니다. 그런 다음 **메시지** 탭의 **RMS** 그룹에서 **보호된 항목 공유** 를 클릭하고 **보호된 항목 공유** 를 다시 클릭합니다.
+1.  메일 주소를 하나 이상 지정하고 메시지를 입력한 다음 *&lt;Office 문서 종류 이름&gt;*을 메일 메시지에 첨부하여 메일 메시지를 작성합니다. 그런 다음 **메시지** 탭의 **RMS** 그룹에서 **보호된 항목 공유** 를 클릭하고 **보호된 항목 공유** 를 다시 클릭합니다.
 
-    ![](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
+    ![Outlook을 사용하여 Office 문서를 공유하는 방법 스크린샷](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
 
 2.  
               **보호된 항목 공유** 대화 상자에서 **뷰어 – 보기만 가능**을 선택합니다.
 
-    ![](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
+    ![보호된 항목 공유 대화 상자 - 뷰어 - 보기만 가능](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
 
 3.  
               **이러한 문서에 대해 액세스 취소 즉시 적용**을 선택합니다.
 
-    ![](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
+    ![보호된 항목 공유 대화 상자 - 즉시 취소](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
 
 4.  
               **다른 사람이 이러한 문서를 열려고 하면 전자 메일을 통해 알림**을 선택합니다.
 
-    ![](../media/AzRMS_SharedProtected_EmailMe.PNG)
+    ![보호된 항목 공유 대화 상자 - 내게 메일 보내기](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
 5.  **지금 보내기**를 클릭합니다.
 
+**받는 사람**, **참조** 또는 **숨은 참조** 줄의 사용자가 이 메일을 받으면 첨부된*&lt;Office 문서 종류 이름&gt;*을 읽는 방법에 대한 지침을 제공하는 메시지가 표시됩니다. iPad, iPhone, Android 태블릿/휴대폰, Mac 컴퓨터, Windows 컴퓨터 등의 여러 장치에서 문서를 읽을 수 있습니다.
 
-              **받는 사람**, **참조**또는 **숨은 참조** 줄의 사용자가 이 전자 메일을 받으면 첨부된 *&lt;Office 문서 종류 이름&gt;*을 읽는 방법에 대한 지침을 제공하는 메시지가 표시됩니다. iPad, iPhone, Android 태블릿/휴대폰, Mac 컴퓨터, Windows 컴퓨터 등의 여러 장치에서 문서를 읽을 수 있습니다.
-
-
-              [문서 포털 추적](https://track.azurerms.com/) 을 사용하면 받는 사람이 첨부된 &lt;Office 문서 종류 이름&gt;을 열었는지 여부와 연 시간을 추적할 수 있습니다. 받는 사람이 &lt;Office 문서 종류 이름&gt;을 열었음을 확인한 직후에 추가로 전화 연락을 할 수 있습니다.
+[문서 포털 추적](https://track.azurerms.com/)을 사용하면 받는 사람이 첨부된 &lt;Office 문서 종류 이름&gt;을 열었는지 여부와 연 시간을 추적할 수 있습니다. 받는 사람이 &lt;Office 문서 종류 이름&gt;을 열었음을 확인한 직후에 추가로 전화 연락을 할 수 있습니다.
 
 **도움이 필요하십니까?**
 
@@ -122,28 +122,28 @@ ms.suite: ems
     -   *&lt;연락처 세부 정보&gt;*
 
 ### 예제 사용자 지정 사용자 문서
-![](../media/AzRMS_ExampleBanner.png)
+![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서](../media/AzRMS_ExampleBanner.png)
 
 #### 고객과 가격 목록을 공유하는 방법
 
 1.  고객의 전자 메일 주소를 하나 이상 지정하고 메시지를 입력한 다음 최신 가격 목록을 전자 메일 메시지에 첨부하여 전자 메일 메시지를 작성합니다. 그런 다음 **메시지** 탭의 **RMS** 그룹에서 **보호된 항목 공유** 를 클릭하고 **보호된 항목 공유** 를 다시 클릭합니다.
 
-    ![](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
+    ![Outlook을 사용하여 Office 문서를 공유하는 방법 스크린샷](../media/AzRMSUserInstructions_ShareProtectedRibbon2013.png)
 
 2.  
               **보호된 항목 공유** 대화 상자에서 **뷰어 – 보기만 가능**을 선택합니다.
 
-    ![](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
+    ![보호된 항목 공유 대화 상자 - 뷰어 - 보기만 가능](../media/AzRMS_SharedProtected_ViewerOnly.PNG)
 
 3.  
               **이러한 문서에 대해 액세스 취소 즉시 적용**을 선택합니다.
 
-    ![](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
+    ![보호된 항목 공유 대화 상자 - 즉시 취소](../media/AzRMS_SharedProtected_InstantRevoke.PNG)
 
 4.  
               **다른 사람이 이러한 문서를 열려고 하면 전자 메일을 통해 알림**을 선택합니다.
 
-    ![](../media/AzRMS_SharedProtected_EmailMe.PNG)
+    ![보호된 항목 공유 대화 상자 - 내게 메일 보내기](../media/AzRMS_SharedProtected_EmailMe.PNG)
 
 5.  **지금 보내기**를 클릭합니다.
 
@@ -167,6 +167,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=May16_HO2-->
 
 

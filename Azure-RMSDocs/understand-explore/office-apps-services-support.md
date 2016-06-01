@@ -27,6 +27,9 @@ ms.suite: ems
 
 
 # Office 응용 프로그램 및 서비스
+
+*적용 대상: Azure 권한 관리, Office 365*
+
 최종 사용자 Office 응용 프로그램(예: Word, Excel, PowerPoint, Outlook) 및 Office 서비스(예: Exchange, SharePoint)는 Microsoft Azure Rights Management를 사용하여 조직의 데이터를 보호할 수 있습니다.
 
 ## Office 응용 프로그램: Word, Excel, PowerPoint, Outlook
@@ -49,7 +52,7 @@ Exchange Online 또는 Exchange Server를 사용할 때는 IRM(정보 권한 관
 
 -   **Office 365 메시지 암호화** - 전송 규칙을 사용하여 회사 외부 사용자에게 암호화된 메일을 보냅니다. 이러한 메일은 Outlook Web App과 비슷한 인터페이스가 포함된 브라우저에서 읽을 수 있습니다. 회사의 암호화된 메일에서 고지 사항 텍스트와 헤더 텍스트를 사용자 지정할 수 있으며 회사 로고도 추가할 수 있습니다. 자세한 내용은 Office 웹사이트에서 [Office 365 메시지 암호화](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx)를 참조하세요.
 
-Exchange Server를 사용하는 경우에는 온-프레미스 서버와 RMS 클라우드 서비스 간의 릴레이 역할을 하는 RMS 커넥터를 배포하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 통해 정보 보호 기능을 사용할 수 있습니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
+Exchange Server를 사용하는 경우에는 온-프레미스 서버와 RMS 클라우드 서비스 간의 릴레이 역할을 하는 RMS 커넥터를 배포하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 통해 정보 보호 기능을 사용할 수 있습니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md) 항목을 참조하세요..
 
 ## SharePoint Online 및 SharePoint Server
 SharePoint Online 또는 SharePoint Server를 사용할 때는 IRM(정보 권한 관리) 통합을 사용할 수 있습니다. 그러면 관리자가 목록 또는 라이브러리를 보호할 수 있습니다. 그러므로 사용자가 문서를 체크 아웃할 때 파일이 보호된 상태이기 때문에 지정한 정보 보호 정책에 따라 권한이 있는 사용자만 파일을 확인 및 사용할 수 있습니다. 예를 들어 파일을 읽기 전용으로 지정하고, 텍스트를 복사할 수 없도록 설정하고, 로컬 복사본 저장 및 파일 인쇄를 금지할 수 있습니다.
@@ -58,7 +61,7 @@ SharePoint Online 또는 SharePoint Server를 사용할 때는 IRM(정보 권한
 
 이렇게 하려면 먼저 SharePoint에 대해 IRM 서비스를 사용하도록 설정해야 합니다. 그런 다음 라이브러리에 대한 정보 권한 관리를 지정합니다. SharePoint Online 및 비즈니스용 OneDrive의 경우, 사용자는 비즈니스 라이브러리용 OneDrive에 대해 정보 권한 관리도 지정할 수 있습니다. SharePoint는 템플릿에서 지정할 수 있는 설정과 거의 근접하게 선택할 수 있는 SharePoint 구성 설정이 있더라도 권한 정책 템플릿을 사용하지 않습니다.
 
-SharePoint Server를 사용하는 경우에는 온-프레미스 서버와 RMS 클라우드 서비스 간의 릴레이 역할을 하는 RMS 커넥터를 배포하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 통해 정보 보호 기능을 사용할 수 있습니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
+SharePoint Server를 사용하는 경우에는 온-프레미스 서버와 RMS 클라우드 서비스 간의 릴레이 역할을 하는 RMS 커넥터를 배포하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 통해 정보 보호 기능을 사용할 수 있습니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md) 항목을 참조하세요..
 
 > [!NOTE]
 > 현재 SharePoint와 함께 IRM을 사용하는 경우 다음과 같이 몇 가지 제한 사항이 있습니다.
@@ -73,8 +76,8 @@ SharePoint와 함께 Azure RMS를 사용하는 방법에 대한 자세한 내용
 
 ## 다음 단계
 
-다른 응용 프로그램과 서비스에서 Azure 권한 관리를 지원하는 방식을 보려면 [응용 프로그램이 Azure 권한 관리를 지원하는 방식](applications-support.md)을 참조하세요.
+다른 응용 프로그램과 서비스에서 Azure 권한 관리를 지원하는 방식을 보려면 [응용 프로그램이 Azure 권한 관리를 지원하는 방식](applications-support.md) 항목을 참조하세요..
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

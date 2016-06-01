@@ -12,7 +12,6 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
-
 # optional metadata
 
 #ROBOTS:
@@ -28,9 +27,11 @@ ms.suite: ems
 # 개발자 가이드
 
 ## 개요 ##
-현재 Android, iOS/OS X, Windows 장치 및 Linux용 **Microsoft Rights Management SDK 4.2**, Windows 데스크톱 클라이언트용 **Microsoft Rights Management SDK 2.1**, 대체된 **AD RMS SDK** 등 세 가지 세대의 Rights Management SDK를 사용할 수 있습니다.
+이 가이드에서는 Rights Management SDK의 제품군과, 모든 지원되는 플랫폼에 걸쳐 있는 도구 및 코드 샘플의 증가하는 집합을 간략히 설명합니다. 
 
 ## 소프트웨어 개발 키트 ##
+다음 표에 나와 있는 RMS SDK의 3개 세대를 사용할 수 있습니다.
+
 | SDK | 설명 |
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Microsoft Rights Management Services를 통해 Android, iOS, Mac OS X, Windows Phone/RT 및 Linux/C++ 장치 앱이 정보 보호를 사용할 수 있도록 하는 간단한 개발 환경을 제공하는 간소화된 차세대 도구 집합입니다. |
@@ -76,6 +77,6 @@ ms.suite: ems
 - [샘플 응용 프로그램](https://github.com/Azure-Samples/active-directory-dotnet-rms-windowsstore) - Windows 스토어 응용 프로그램용 Microsoft RMS SDK v4.1에 대한 샘플은 플랫폼에 대한 기본 문서 사용 예제를 제공합니다.
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Apr16_HO4-->
 
 

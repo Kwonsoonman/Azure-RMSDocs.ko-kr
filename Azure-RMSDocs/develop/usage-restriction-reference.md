@@ -2,7 +2,7 @@
 # required metadata
 
 title: 사용 제한 참조 | Azure RMS
-description:
+description: 사용 제한은 이 항목에 나열된 상수에 의해 정의됩니다.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -11,8 +11,7 @@ ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
-ms.assetid: 5c1b0de6-e6d6-4ec9-b810-017fd606866e
-
+ms.assetid: 16E36039-0FD6-4A0A-82C8-2C9DB19D27DD
 # optional metadata
 
 #ROBOTS:
@@ -25,7 +24,7 @@ ms.suite: ems
 
 ---
 
-﻿# 사용 제한 참조
+# 사용 제한 참조
 
 사용 제한은 이 항목에 나열된 상수에 의해 정의됩니다.
 
@@ -55,6 +54,6 @@ AD RMS 권한 열에 나열된 각 사용자 권한에는 설명, 적용 지점 
  
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=May16_HO2-->
 
 

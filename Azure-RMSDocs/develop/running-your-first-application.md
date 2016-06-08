@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 권한 사용 응용 프로그램 테스트
 
 이 항목에서는 권한 관리 서비스 SDK 2.1 권한 사용 응용 프로그램을 테스트하기 위해 완료해야 하는 단계를 설명합니다.
@@ -123,6 +123,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

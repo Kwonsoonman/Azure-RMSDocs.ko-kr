@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 사용 방법
 
 다음 항목에서는 권한 관리 서비스 SDK 2.1을 사용하여 응용 프로그램에 대해 정보 보호를 구현하는 과정의 주요 작업을 안내합니다.
@@ -45,6 +45,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

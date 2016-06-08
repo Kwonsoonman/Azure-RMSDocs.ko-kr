@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 콘텐츠 추적
 
 이 항목에서는 권한 관리 서비스 SDK 2.1을 통해 보호된 콘텐츠의 문서 추적을 구현하기 위한 기본 지침을 제공합니다.
@@ -134,6 +134,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

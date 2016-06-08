@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
 
 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/en-us/library/jj585016.aspx)을 참조하세요.
@@ -44,8 +44,7 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
 -   [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)를 설정합니다.
 
 
-    int mode = IPC_API_MODE_SERVER;
-    IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
+    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
 
 **참고** 자세한 내용은 [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)을 참조하세요.
@@ -67,21 +66,15 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
 **참고** Powershell cmdlet을 사용하려면 테넌트 관리자여야 합니다.
 
 
--   Powershell을 시작하고 다음 명령을 실행하여 키를 생성합니다.
-            `Import-Module MSOnline`
-            `Connect-MsolService` (관리자 자격 증명 입력)
-            `New-MsolServicePrincipal` (표시 이름 입력)
+-   Powershell을 시작하고 다음 명령을 실행하여 키        `Import-Module MSOnline`
+            `Connect-MsolService`(관리자 자격 증명 입력)        `New-MsolServicePrincipal`(표시 이름 입력)를 생성합니다.
 -   대칭 키를 생성한 후 키 자체와 **AppPrincipalId**를 포함하여 키에 대한 정보를 출력합니다.
 
 
 
-    The following symmetric key was created as one was not supplied
-    ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
+    The following symmetric key was created as one was not supplied ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
-    DisplayName : RMSTestApp
-    ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963}
-    ObjectId : 0ee53770-ec86-409e-8939-6d8239880518
-    AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
+    DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
 
@@ -103,9 +96,7 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
     IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
 
     // Set each member with information from service creation.
-    symKey.wszBase64Key = "your service principal key";
-    symKey.wszAppPrincipalId = "your app principal identifier";
-    symKey.wszBposTenantId = "your tenent identifier";
+    symKey.wszBase64Key = "your service principal key"; symKey.wszAppPrincipalId = "your app principal identifier"; symKey.wszBposTenantId = "your tenent identifier";
 
 
 자세한 내용은 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)를 참조하세요.
@@ -141,15 +132,9 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
     동일한 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 인스턴스를 전달하여 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)를 호출합니다.
 
 
-    PCIPC_TIL pTemplates = NULL;
-    IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
+    PCIPC_TIL pTemplates = NULL; IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
 
-    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),
-           IPC_GTL_FLAG_FORCE_DOWNLOAD,
-           0,
-           &promptCtx,
-           NULL,
-           &pTemplates);
+    hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),        IPC_GTL_FLAG_FORCE_DOWNLOAD,        0,        &promptCtx,        NULL,        &pTemplates);
 
 
 -   이 항목의 앞부분에서 설명한 템플릿을 사용하고 동일한 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 인스턴스를 전달하여 [**IpcfEncrcyptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)을 호출합니다.
@@ -197,6 +182,6 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

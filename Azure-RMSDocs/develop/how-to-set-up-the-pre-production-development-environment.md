@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 사전 프로덕션 개발 환경 설정
 
 이 섹션에서는 테스트/사전 프로덕션 환경에서 권한 사용 응용 프로그램을 설정 및 실행하는 과정을 안내합니다. 다음 항목은 사전 프로덕션 개발 환경을 설정하는 방법을 설명하며 작업을 수행하는 순서를 제안하도록 나열되어 있습니다.
@@ -48,6 +48,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

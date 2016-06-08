@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 05/25/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -86,17 +86,18 @@ Azure 권한 관리 프리미엄 구독에 대한 자세한 내용은 [Microsoft
 ## Enterprise Mobility Suite 구독
 [30일 무료 평가판](http://go.microsoft.com/fwlink/?LinkId=615385)
 
-이 구독은 Azure Active Directory Premium, Windows Intune 및 Azure 권한 관리를 함께 사용하려는 조직을 위해 설계되었습니다. Office와 함께 Azure 권한 관리를 사용하는 기능 지원은 Azure 권한 관리 프리미엄 구독을 사용하는 것과 같습니다. 
-Enterprise Mobility Suite 구독에 대한 자세한 내용은 [Microsoft Enterprise Mobility 개요](http://go.microsoft.com/fwlink/?LinkId=615386)를 참조하세요.
+이 구독은 Azure Active Directory Premium, Windows Intune 및 Azure 권한 관리를 함께 사용하려는 조직을 위해 설계되었습니다. Office와 함께 Azure 권한 관리를 사용하는 기능 지원은 Azure 권한 관리 프리미엄 구독을 사용하는 것과 같습니다. Enterprise Mobility Suite 구독에 대한 자세한 내용은 [Microsoft Enterprise Mobility 개요](http://go.microsoft.com/fwlink/?LinkId=615386)를 참조하세요.
 
 ## 개인용 RMS 구독
 이 구독은 Azure RMS 또는 AD RMS를 배포하지 않은 조직의 개인을 위해 디자인되었습니다. 이 구독을 통해 이러한 사용자는 Azure RMS를 사용 중인 조직에서 보호하는 콘텐츠를 읽을 수 있으며 자신의 콘텐츠를 보호할 수도 있습니다.
+
+이 구독은 Office 365 관리 포털에서 **Rights Management Adhoc**으로 표시되고 사용자에게 자동으로 할당됩니다. 이 라이선스를 사용자에게 수동으로 할당하지 말고 조직의 Azure RMS를 관리하기 위해 이 라이선스를 사용하지 마세요. 
 
 자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
 
 ## 다음 단계
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=May16_HO5-->
 
 

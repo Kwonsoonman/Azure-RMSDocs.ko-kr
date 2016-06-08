@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 인증서 체인 이해
 
 권한 사용 응용 프로그램을 개발하려면 공개 키 쌍과 Microsoft 인증서가 신뢰할 수 있는 루트에 있는 인증서 체인이 필요합니다.
@@ -57,6 +57,6 @@ RMS(권한 관리 서비스) 환경에서 사용되는 각 라이선스 및 인�
  
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

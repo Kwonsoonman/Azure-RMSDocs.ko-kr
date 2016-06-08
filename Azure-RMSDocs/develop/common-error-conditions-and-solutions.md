@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 일반 오류 조건 및 해결 방법
 이 항목에는 권한 관리 서비스 SDK 2.1 개발자 도구를 사용할 때 발생할 수 있는 가장 일반적인 오류 메시지가 포함되어 있습니다. 해당하는 경우 오류를 수정하는 권장 조치도 제공합니다.
 
@@ -74,6 +74,6 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

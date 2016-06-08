@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 이 SDK의 장점
 이 항목에서는 권한 사용 응용 프로그램을 만드는 데 필요한 개발자 작업 측면에서 권한 관리 서비스 SDK 2.1이 기존의 [Active Directory Rights Management Services SDK](https://msdn.microsoft.com/library/Cc530379)보다 어떻게 향상되었는지를 설명합니다.
 
@@ -51,6 +51,6 @@ MSDN 라이브러리에서 기존의 [Active Directory Rights Management Service
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

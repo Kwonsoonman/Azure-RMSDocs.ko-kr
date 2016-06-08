@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # SDK 설치
 
 이 항목에서는 개발자 도구를 설치하는 과정을 안내합니다.
@@ -39,7 +39,7 @@ ms.suite: ems
 
     Setup\_sdk.exe 파일은 RMS SDK 2.1과 Active Directory Rights Management Services 클라이언트 2.1을 둘 다 설치합니다.
 
-"Setup\_sdk.exe"에 의해 시스템에 설치되는 파일에 대한 자세한 내용은 [개발 환경 파일](sdk-elements.md)을 참조하세요.
+"setup\_sdk.exe"에 의해 시스템에 설치되는 파일에 대한 자세한 내용은 [개발 환경 파일](sdk-elements.md)을 참조하세요.
 
 ## 관련 항목
 
@@ -53,6 +53,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

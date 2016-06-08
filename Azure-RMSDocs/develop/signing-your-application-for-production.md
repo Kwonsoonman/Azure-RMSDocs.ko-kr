@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 # 프로덕션 응용 프로그램에 서명
 
 이 항목에서는 프로덕션 모드의 응용 프로그램에 서명하는 과정을 안내합니다.
@@ -77,6 +77,6 @@ Microsoft에서 프로덕션 인증서를 받으면 다음 파일을 보유하�
 
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

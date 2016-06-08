@@ -23,9 +23,9 @@ ms.suite: ems
 #ms.custom:
 
 ---
+** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
 
 # AD RMS 서버
-
 이 항목에서는 RMS 서버의 용도와 기능에 대해 설명합니다.
 
 RMS(권한 관리 서비스) 서버 구성 요소는 [Microsoft IIS(인터넷 정보 서비스)](http://www.iis.net/overview)에서 실행되는 웹 서비스 집합에 의해 구현됩니다. Azure의 RMS를 통해 클라우드 기반 구현을 사용할 수도 있습니다. Azure 권한 관리 서비스를 사용하는 방법에 대한 자세한 내용은 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
@@ -65,6 +65,6 @@ Windows Server 2008 이상의 온-프레미스 서버에서는 RMS 서비스를 
  
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

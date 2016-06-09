@@ -49,9 +49,7 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 |[시작](getting-started-with-ad-rms-2-0.md)|RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다.|
 |[릴리스 정보](release-notes-rtm.md)|이 항목에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.|
 |[코드 샘플](samples.md)|이 항목에서는 MSDN 다운로드 센터에서 제공되는 RMS SDK 2.1을 사용한 샘플 집합을 보여 줍니다.|
-|[사용 방법](how-to-use-msipc.md)|RMS SDK 2.1을 사용한 시나리오 및 작업에 대한 단계별 지침입니다.|
 |[개발자 노트](developer-notes.md)|이 섹션에서는 중요한 여러 개발 시나리오에 대한 특정 지침을 제공합니다.|
-|[개발자 개념](ad-rms-concepts-nav.md)|이 섹션의 항목에서는 RMS의 주요 개념을 설명합니다.|
 |[API 참조](/rights-management/sdk/2.1/api/win/constants)|이 섹션에는 모든 API 요소에 대한 참조 자료를 다루는 항목이 포함되어 있습니다.|
 
  
@@ -66,6 +64,6 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

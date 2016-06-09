@@ -23,14 +23,14 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
+
 # Visual Studio 구성
 
 이 항목에는 권한 관리 서비스 SDK 2.1을 사용하도록 Visual Studio 프로젝트를 구성하는 방법에 대한 지침이 포함되어 있습니다.
 
 ## 필수 구성 요소
 
--   [SDK 설치](create-your-first-rights-aware-application.md)
+-   [SDK 설치](install-the-rms-sdk.md)
 
 **지침**
 
@@ -75,16 +75,12 @@ ms.suite: ems
 
 ## 관련 항목
 
-* [사용 방법](how-to-use-msipc.md)
-* [SDK 설치](create-your-first-rights-aware-application.md)
+* [SDK 설치](install-the-rms-sdk.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

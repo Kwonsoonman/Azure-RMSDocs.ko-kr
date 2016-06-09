@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
+
 # 응용 프로그램 종류
 
 
@@ -36,7 +36,6 @@ ms.suite: ems
 간단한 응용 프로그램은 제공된 파일을 암호화하도록 작성된 명령줄 도구일 수 있습니다. 간단한 권한 사용 응용 프로그램의 예는 [IPCHelloWorld - 예제 응용 프로그램](how-to-build-your-first-application.md)을 참조하세요.
 
 ### 서버 모드 응용 프로그램
-
 
 *서버 모드*는 RMS 보호된 콘텐츠를 사용, 보호 또는 처리하는 비대화형 응용 프로그램에 사용됩니다. 예를 들어 파일 서버에서 서비스로 실행되며 중요한 문서를 자동으로 보호하는 *데이터 손실 방지* 응용 프로그램이 있습니다. 이 응용 프로그램 종류의 예는 [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)을 참조하세요.
 
@@ -60,19 +59,12 @@ Microsoft 메모장은 간단한 리치 클라이언트 응용 프로그램입�
 
 ## 관련 항목
 
-* [개발자 개념](ad-rms-concepts-nav.md)
 * [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 * [IPCHelloWorld - 예제 응용 프로그램](how-to-build-your-first-application.md)
 * [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)
 * [사용 제한 이해](understanding-usage-restrictions.md)
- 
-
- 
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

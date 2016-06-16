@@ -1068,8 +1068,8 @@
 * Archive Datetime: 2016-06-16 13:10:28
 * Handback File: [ad-rms-server.fa059ee846c5974ee9338f46379d36401b59c9e4.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/ad-rms-server.fa059ee846c5974ee9338f46379d36401b59c9e4.ko-kr.xlf)
 * Handback Datetime: 2016-06-16 18:03:15
-* Bilingual File: [ad-rms-server.fa059ee846c5974ee9338f46379d36401b59c9e4.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/98d14e9aab159c58bac39d9bd351106c87515e40/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/ad-rms-server.fa059ee846c5974ee9338f46379d36401b59c9e4.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [ad-rms-server.fa059ee846c5974ee9338f46379d36401b59c9e4.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/ad-rms-server.fa059ee846c5974ee9338f46379d36401b59c9e4.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-16 18:05:12
 * [Back to Top](#report-top)
 
 ##### <a name='acd0692102c43baff0a92360e0ddbe1259ad9b4f45'></a> Source: [Azure-RMSDocs\develop\android-code.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/acc140931b5f834ce1d70c851d90c334a03010dc/Azure-RMSDocs/develop/android-code.md)
@@ -1361,8 +1361,8 @@
 * Archive Datetime: 2016-06-16 13:10:28
 * Handback File: [file-api-configuration.51543907e5649e6afb362830a5c98c35082f651a.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/file-api-configuration.51543907e5649e6afb362830a5c98c35082f651a.ko-kr.xlf)
 * Handback Datetime: 2016-06-16 18:03:15
-* Bilingual File: [file-api-configuration.51543907e5649e6afb362830a5c98c35082f651a.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/98d14e9aab159c58bac39d9bd351106c87515e40/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/file-api-configuration.51543907e5649e6afb362830a5c98c35082f651a.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [file-api-configuration.51543907e5649e6afb362830a5c98c35082f651a.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/file-api-configuration.51543907e5649e6afb362830a5c98c35082f651a.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-16 18:05:12
 * [Back to Top](#report-top)
 
 ##### <a name='b2f5d6d366c767a4c2fb2f5e86ee69509a2aba2765'></a> Source: [Azure-RMSDocs\develop\get-started.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6b5bc9612ac17a2d6905200383d9b8df4c504efe/Azure-RMSDocs/develop/get-started.md)
@@ -1479,8 +1479,8 @@
 * Archive Datetime: 2016-06-16 13:10:28
 * Handback File: [how-to-use-adal-authentication.c4db17b2d45abcad3a630251a689204c2a8c1ef2.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/how-to-use-adal-authentication.c4db17b2d45abcad3a630251a689204c2a8c1ef2.ko-kr.xlf)
 * Handback Datetime: 2016-06-16 18:03:15
-* Bilingual File: [how-to-use-adal-authentication.c4db17b2d45abcad3a630251a689204c2a8c1ef2.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/98d14e9aab159c58bac39d9bd351106c87515e40/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/how-to-use-adal-authentication.c4db17b2d45abcad3a630251a689204c2a8c1ef2.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [how-to-use-adal-authentication.c4db17b2d45abcad3a630251a689204c2a8c1ef2.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/how-to-use-adal-authentication.c4db17b2d45abcad3a630251a689204c2a8c1ef2.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-16 18:05:12
 * [Back to Top](#report-top)
 
 ##### <a name='cb82f0333ed17ee2994608baa3bbb50d42f1907372'></a> Source: [Azure-RMSDocs\develop\how-to-use-adal-authentication-4-2.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/3f43f5605b1c341d7be618327038d1a86a305a5b/Azure-RMSDocs/develop/how-to-use-adal-authentication-4-2.md)
@@ -1649,8 +1649,8 @@
 * Archive Datetime: 2016-06-16 13:10:28
 * Handback File: [microsoft-information-protection-and-control-client-portal.716a21a0b760ecc96fbadc26dd1499abe0e5480c.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/microsoft-information-protection-and-control-client-portal.716a21a0b760ecc96fbadc26dd1499abe0e5480c.ko-kr.xlf)
 * Handback Datetime: 2016-06-16 18:03:15
-* Bilingual File: [microsoft-information-protection-and-control-client-portal.716a21a0b760ecc96fbadc26dd1499abe0e5480c.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/9db0dcac11b5a6a0ed25139db1cd073a5c1d17a5/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/microsoft-information-protection-and-control-client-portal.716a21a0b760ecc96fbadc26dd1499abe0e5480c.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [microsoft-information-protection-and-control-client-portal.716a21a0b760ecc96fbadc26dd1499abe0e5480c.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/microsoft-information-protection-and-control-client-portal.716a21a0b760ecc96fbadc26dd1499abe0e5480c.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-16 18:05:12
 * [Back to Top](#report-top)
 
 ##### <a name='e9a3f95c8ff289380dc62994e4f719bc174c490085'></a> Source: [Azure-RMSDocs\develop\overview.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/6b5bc9612ac17a2d6905200383d9b8df4c504efe/Azure-RMSDocs/develop/overview.md)
@@ -1691,8 +1691,8 @@
 * Archive Datetime: 2016-06-16 13:10:28
 * Handback File: [release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.ko-kr.xlf)
 * Handback Datetime: 2016-06-16 18:03:15
-* Bilingual File: [release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/98d14e9aab159c58bac39d9bd351106c87515e40/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/65ca46586142ba49d0791ee37c3444a8a21cf8f2/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/release-notes-rtm.bc511e4b6981ff54f9feec8388e0594bf79d6770.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-16 18:05:12
 * [Back to Top](#report-top)
 
 ##### <a name='9c1eb2122e2237a895ed931561ead754c328724488'></a> Source: [Azure-RMSDocs\develop\samples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ac6afddc2b39d6209ef1b89d8d84011942cdba5a/Azure-RMSDocs/develop/samples.md)

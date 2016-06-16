@@ -28,17 +28,6 @@ ms.suite: ems
 
 이 항목에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.
 
-- [2016년 2월의 새로운 기능 - SDK 문서 업데이트](#new-for-the-february-2016-sdk-documentation-update)
-- [2015년 12월 업데이트](#december-2015-update)
-- [2015년 5월 업데이트](#may-2015-update)
-- [2015년 4월 업데이트](#april-2015-update)
-- [2015년 1월 업데이트](#january-2015-update)
-- [2014년 10월 업데이트](#october-2014-update)
-- [2014년 7월 업데이트](#july-2014-update)
-- [중요한 개발자 노트](#important-developer-notes)
-- [질문과 대답](#frequently-asked-questions)
-- [관련 항목](#related-topics)
-
 ## 2016년 2월의 새로운 기능 - SDK 문서 업데이트
 
 >[!Note]  이 섹션의 기능 문서 업데이트는 2015년 12월 11일자 SDK 다운로드에 적용됩니다.

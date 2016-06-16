@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
+
 # 권한 관리 서비스 SDK 2.1
 
 ## 용도
@@ -50,7 +50,7 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 |[릴리스 정보](release-notes-rtm.md)|이 항목에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.|
 |[코드 샘플](samples.md)|이 항목에서는 MSDN 다운로드 센터에서 제공되는 RMS SDK 2.1을 사용한 샘플 집합을 보여 줍니다.|
 |[개발자 노트](developer-notes.md)|이 섹션에서는 중요한 여러 개발 시나리오에 대한 특정 지침을 제공합니다.|
-|[API 참조](/rights-management/sdk/2.1/api/win/constants)|이 섹션에는 모든 API 요소에 대한 참조 자료를 다루는 항목이 포함되어 있습니다.|
+|[API 참조](api-reference-2-1.md)|이 섹션에는 모든 API 요소에 대한 참조 자료를 다루는 항목이 포함되어 있습니다.|
 
  
 

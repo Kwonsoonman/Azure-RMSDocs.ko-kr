@@ -1,30 +1,20 @@
 ---
-# required metadata
+# 필수 메타데이터
 
-title: 권한 사용 응용 프로그램 디버그 | Azure RMS
-description: 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# optional metadata
+제목: 방법: 권한 사용 응용 프로그램 디버그 | Azure RMS 설명: 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
+키워드: 작성자: bruceperlerms 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
+# 선택적 메타데이터
 
-#ROBOTS:
-audience: developer
+#로봇:
+대상 그룹: 개발자
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
-# 권한 사용 응용 프로그램 디버그
+
+# 방법: 권한 사용 응용 프로그램 디버그
 
 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
 
@@ -33,6 +23,7 @@ ms.suite: ems
 권한 관리 서비스 SDK 2.1에서는 개발자 버전의 런타임에 있는 디버깅 검사 방지 기능을 사용할 수 없습니다.
 
 다음 레지스트리 키를 사용하여 디버그 추적을 켤 수 있습니다. 디버그 추적을 끄려면 값을 0으로 변경합니다. 이 릴리스에서 디버깅에 필요한 추가 작업은 없습니다.
+
 
 ```
 HKEY_LOCAL_MACHINE
@@ -72,15 +63,11 @@ Wevtutil 인터페이스를 통해 로그의 세부 정보 표시 수준을 제�
 
 ## 관련 항목
 
-* [사용 방법](how-to-use-msipc.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

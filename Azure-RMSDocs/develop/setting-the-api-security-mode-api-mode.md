@@ -1,30 +1,20 @@
 ---
-# required metadata
+# 필수 메타데이터
 
-title: API 보안 모드 설정 | Azure RMS
-description: 파일 API 응용 프로그램에서 실행하는 보안 모드를 선택합니다.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
-# optional metadata
+제목: 방법: API 보안 모드 설정 | Azure RMS 설명: 파일 API 응용 프로그램이 실행되는 보안 모드를 선택합니다.
+키워드: 작성자: bruceperlerms 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
+# 선택적 메타데이터
 
-#ROBOTS:
-audience: developer
+#로봇:
+대상 그룹: 개발자
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
-# API 보안 모드 설정
+
+# 방법: API 보안 모드 설정
 
 [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty) 함수를 사용하여 파일 API 응용 프로그램이 실행되는 보안 모드를 선택할 수 있습니다.
 
@@ -34,12 +24,9 @@ ms.suite: ems
 
 **중요** 다른 권한 관리 서비스 SDK 2.1 함수를 호출하기 전에 보안 모드를 설정해야 합니다. 보안 모드를 설정한 후에는 현재 프로세스에 대해 변경할 수 없습니다.
 
- 
-
 ## 관련 항목
 
 * [응용 프로그램 종류](application-types.md)
-* [개발자 개념](ad-rms-concepts-nav.md)
 * [**API 모드 값**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)
 * [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
  
@@ -47,9 +34,6 @@ ms.suite: ems
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,37 +1,25 @@
 ---
-# required metadata
+# 필수 메타데이터
 
-title: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정 | Azure RMS
-description: 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다.
-keywords:
-author: bruceperlerms
-manager: mbaldwin
-ms.date: 04/28/2016
-ms.topic: article
-ms.prod: azure
-ms.service: rights-management
-ms.technology: techgroup-identity
-ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# optional metadata
+제목: 방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정 | Azure RMS 설명: 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다.
+키워드: 작성자: bruceperlerms 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
+# 선택적 메타데이터
 
-#ROBOTS:
-audience: developer
+#로봇:
+대상 그룹: 개발자
 #ms.devlang:
-ms.reviewer: shubhamp
-ms.suite: ems
+ms.reviewer: shubhamp ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
-# 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
+
+# 방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
 
 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/en-us/library/jj585016.aspx)을 참조하세요.
 
 **중요**  
-먼저 RMS 사전 프로덕션 환경에서 RMS 서버에 대해 권한 관리 서비스 SDK 2.1 응용 프로그램을 테스트하는 것이 좋습니다. 그런 다음 고객이 Azure RMS 서비스와 함께 응용 프로그램을 사용할 수 있게 하려는 경우 해당 환경에서 테스트합니다.
-
-Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면 Azure RMS 테넌트를 요청해야 합니다(아직 없는 경우). 테넌트 요청을 포함하여 <rmcstbeta@microsoft.com>으로 메일을 보내세요.
+Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그램을 사용하려면 사용자 고유의 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](/rights-management/get-started/requirements-subscriptions.md)(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독) 항목을 참조하세요.
 
 ## 필수 구성 요소
 
@@ -43,18 +31,18 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
 -   [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)를 호출합니다.
 -   [**IpcSetGlobalProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)를 설정합니다.
 
+        C++
+        int mode = IPC_API_MODE_SERVER;
+        IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-    int mode = IPC_API_MODE_SERVER; IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
-
-**참고** 자세한 내용은 [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)을 참조하세요.
+  **참고** 자세한 내용은 [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)을 참조하세요.
 
      
-
 -   다음 단계는 **pcCredential**([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 멤버에 Azure 권한 관리 서비스의 연결 정보를 채워 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 구조체 인스턴스를 만들기 위한 설정입니다.
 -   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 구조체 인스턴스를 만드는 경우 대칭 키 서비스 ID 생성(이 항목의 앞부분에 나열된 필수 조건 참조)의 정보를 사용하여 **wszServicePrincipal**, **wszBposTenantId** 및 **cbKey** 매개 변수를 설정합니다.
 
-**참고** 검색 서비스와의 기존 조건으로 인해 북미 지역에 거주하지 않는 경우 다른 지역의 대칭 키 자격 증명은 수락되지 않으므로 테넌트 URL을 직접 지정해야 합니다. 이 작업은 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 또는 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)의 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 매개 변수를 통해 수행됩니다.
+**참고** 검색 서비스의 기존 조건으로 인해 북미 지역에 거주하지 않는 경우 다른 지역의 대칭 키 자격 증명은 수락되지 않으므로 테넌트 URL을 직접 지정해야 합니다. 이 작업은 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 또는 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)의 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 매개 변수를 통해 수행됩니다.
 
 ## 대칭 키를 생성하고 필요한 정보 수집
 
@@ -65,17 +53,14 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
 
 **참고** Powershell cmdlet을 사용하려면 테넌트 관리자여야 합니다.
 
-
 -   Powershell을 시작하고 다음 명령을 실행하여 키        `Import-Module MSOnline`
             `Connect-MsolService`(관리자 자격 증명 입력)        `New-MsolServicePrincipal`(표시 이름 입력)를 생성합니다.
 -   대칭 키를 생성한 후 키 자체와 **AppPrincipalId**를 포함하여 키에 대한 정보를 출력합니다.
 
 
-
     The following symmetric key was created as one was not supplied ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
 
     DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
-
 
 
 ### **TenantBposId** 및 **Url**확인 지침
@@ -103,7 +88,7 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
 
 -   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 인스턴스를 포함하는 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 구조체 인스턴스를 만듭니다.
 
-**참고** *conectionInfo* 멤버는 이전 `Get-AadrmConfiguration` 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
+**참고** *connectionInfo* 멤버는 이전 `Get-AadrmConfiguration` 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -162,7 +147,6 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
 
 ## 관련 항목
 
-* [개발자 개념](ad-rms-concepts-nav.md)
 * [Azure 권한 관리 시작](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [RMS SDK 2.1 시작](getting-started-with-ad-rms-2-0.md)
 * [ACS를 통해 서비스 ID 만들기](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
@@ -182,6 +166,6 @@ Azure RMS와 함께 RMS SDK 2.1 서비스 응용 프로그램을 사용하려면
  
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

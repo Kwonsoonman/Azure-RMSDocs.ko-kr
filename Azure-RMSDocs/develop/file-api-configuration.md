@@ -23,7 +23,7 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
+
 # 파일 API 구성
 
 
@@ -40,46 +40,45 @@ ms.suite: ems
 
 다음 섹션에서는 암호화를 제어하는 키와 키 값에 대해 설명합니다.
 
-
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
 
-*형식*: 키
+**형식**: 키
 
-*설명*: 파일 API에 대한 일반 구성이 포함됩니다.
+**설명**: 파일 API에 대한 일반 구성이 포함됩니다.
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
 
-*형식: 키
+**형식**: 키
 
-*설명: 특정 파일 확장명(예: TXT, JPG 등)에 대한 구성 정보를 지정합니다.
+**설명**: 특정 파일 확장명(예: TXT, JPG 등)에 대한 구성 정보를 지정합니다.
 
 - 와일드카드 문자 '*'가 허용되지만 특정 확장명에 대한 설정이 와일드카드 설정보다 우선합니다. 와일드카드 문자는 Microsoft Office 파일에 대한 설정에 영향을 주지 않습니다. 파일 형식별로 명시적으로 사용하지 않도록 설정해야 합니다.
 - 확장명이 없는 파일을 지정하려면 '.'을 사용합니다.
 - 특정 파일 확장명에 대한 키를 지정할 때는 '.' 문자를 지정하지 마세요. 예를 들어 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT`를 사용하여 .txt 파일에 대한 설정을 지정합니다. `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`를 사용하지 마세요.
 
-키의 *Encryption* 값을 설정하여 보호 동작을 지정합니다. *Encryption* 값을 설정하지 않으면 파일 형식에 대한 기본 동작을 따릅니다.
+키의 **Encryption** 값을 설정하여 보호 동작을 지정합니다. **Encryption** 값을 설정하지 않으면 파일 형식에 대한 기본 동작을 따릅니다.
 
 
 ### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
 
-*형식: REG_SZ*
+**형식**: REG_SZ
 
-*설명: 다음 세 가지 값 중 하나가 포함됩니다.
+**설명**: 다음 세 가지 값 중 하나가 포함됩니다.
 
-- *Off*: 암호화가 사용되지 않습니다.
+- **Off**: 암호화가 사용되지 않습니다.
 
-> [AZURE.NOTE] 이 설정은 암호 해독과 아무 관계도 없습니다. 기본 보호 또는 Pfile 보호를 통해 암호화되었는지에 관계없이, 사용자에게 EXTRACT 권한이 있는 한 암호화된 파일의 암호를 해독할 수 있습니다.
+> [AZURE.NOTE] 이 설정은 암호 해독과 아무 관계도 없습니다. 기본 보호 또는 Pfile 보호를 통해 암호화되었는지와 관계없이, 사용자에게 **EXTRACT** 권한이 있는 한 암호화된 파일의 암호를 해독할 수 있습니다.
 
-- *Native*: 네이티브 암호화가 사용됩니다. Office 파일의 경우 암호화된 파일의 확장명이 원본 파일과 같습니다. 예를 들어 .docx 파일 확장명을 가진 파일은 .docx 확장명을 가진 파일로 암호화됩니다. 기본 보호를 적용할 수 있는 기타 파일의 경우 **zzz** 형식의 확장명을 가진 파일로 암호화됩니다. 여기서 **zzz**는 원래 파일 확장명입니다. 예를 들어 .txt 파일은 확장명이 .ptxt인 파일로 암호화됩니다. 아래에는 기본 보호를 적용할 수 있는 파일 확장명 목록이 나와 있습니다.
+- **Native**: 기본 암호화가 사용됩니다. Office 파일의 경우 암호화된 파일의 확장명이 원본 파일과 같습니다. 예를 들어 .docx 파일 확장명을 가진 파일은 .docx 확장명을 가진 파일로 암호화됩니다. 기본 보호를 적용할 수 있는 기타 파일의 경우 p*zzz* 형식의 확장명을 가진 파일로 암호화됩니다. 여기서 *zzz*는 원래 파일 확장명입니다. 예를 들어 .txt 파일은 확장명이 .ptxt인 파일로 암호화됩니다. 아래에는 기본 보호를 적용할 수 있는 파일 확장명 목록이 나와 있습니다.
 
-- *Pfile*: PFile 암호화가 사용됩니다. 암호화된 파일은 원래 확장명에 .pfile이 추가됩니다. 예를 들어 암호화 후에 .txt 파일은 .txt.pfile 확장명을 사용합니다.
+- **Pfile**: PFile 암호화가 사용됩니다. 암호화된 파일은 원래 확장명에 .pfile이 추가됩니다. 예를 들어 암호화 후에 .txt 파일은 .txt.pfile 확장명을 사용합니다.
 
 
 > [AZURE.NOTE] 이 설정은 Office 파일 형식과 아무 관계도 없습니다. 예를 들어 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 값을 &quot;Pfile”로 설정할 경우 .docx 파일은 여전히 기본 보호를 사용하여 암호화되고 암호화된 파일이 계속 .docx 파일 확장명을 사용합니다.
 
 다른 값을 설정하거나 값을 설정하지 않으면 기본 동작이 사용됩니다.
 
-## 다양한 파일 형식에 대한 기본 동작**
+## 다양한 파일 형식에 대한 기본 동작
 
 -   **Office 파일** 네이티브 암호화가 사용됩니다.
 -   **txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif 파일** 네이티브 암호화가 사용됩니다(xxx가 pxxx로 바뀜).
@@ -106,7 +105,7 @@ ms.suite: ems
 
 **기타 모든 파일 형식**
 
--   보호 유형 = Pfile: sample.*zzz*가 암호화되고 sample.*zzz*.pfile로 이름이 바뀝니다. 여기서 zzz는 원래 파일 확장명입니다.
+-   보호 유형 = Pfile: sample.*zzz*가 암호화되고 sample.*zzz*.pfile로 이름이 바뀝니다. 여기서 *zzz*는 원래 파일 확장명입니다.
 -   Off: 암호화를 사용하지 않도록 설정합니다.
 
 ### 예
@@ -158,9 +157,6 @@ HKEY_LOCAL_MACHINE
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

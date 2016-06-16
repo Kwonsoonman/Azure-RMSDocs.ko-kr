@@ -23,14 +23,16 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
+
 # 개요
 
 RMS(권한 관리 서비스)는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다. 권한 사용 응용 프로그램을 통해 콘텐츠 소유자는 콘텐츠를 열거나 수정, 인쇄, 전달하거나 다른 작업을 수행할 수 있는 사람을 정의할 수 있습니다.
 
 ## 개요
 
-AD RMS는 [서버](ad-rms-server.md) 및 [클라이언트](ad-rms-client.md) 구성 요소 둘 다로 이루어져 있습니다. 서버 구성 요소는 Windows Server 2008 R2와 같은 Windows Server에서 실행되거나 Azure의 RMS 웹 서비스를 통해 클라우드에서 실행되는 여러 웹 서비스를 포함합니다. 클라이언트 구성 요소는 클라이언트 또는 서버 운영 체제에서 실행할 수 있으며, 응용 프로그램이 콘텐츠를 암호화 및 암호 해독하고, 템플릿 및 해지 목록을 검색하고, 서버에서 라이선스 및 인증서를 획득하고, 기타 관련된 권한 관리 작업을 수행할 수 있도록 하는 기능을 포함합니다.
+AD RMS는 [서버](ad-rms-server.md) 및 [클라이언트](ad-rms-client.md) 구성 요소 둘 다로 이루어져 있습니다. Azure 또는 Windows Server에서 실행하는 서버는 여러 웹 서비스로 구성됩니다.
+
+[클라이언트](ad-rms-client.md) 구성 요소는 클라이언트 또는 서버 운영 체제에서 실행할 수 있으며, 응용 프로그램이 콘텐츠를 암호화하고 암호 해독하고, 템플릿 및 해지 목록을 검색하고, 서버에서 라이선스 및 인증서를 획득하고, 기타 관련된 권한 관리 작업을 수행할 수 있도록 하는 기능을 포함합니다.
 
 자세한 내용은 [응용 프로그램 종류](application-types.md)를 참조하세요.
 
@@ -44,24 +46,26 @@ AD RMS는 [서버](ad-rms-server.md) 및 [클라이언트](ad-rms-client.md) 구
 
 AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내용은 [AD RMS에 대한 IT 전문가 설명서](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)의 TechNet 콘텐츠를 참조하세요.
 
-시작하려면 [시작](getting-started-with-ad-rms-2-0.md)을 참조하세요.
+이 섹션의 나머지 항목에서는 RMS 아키텍처 및 구현 과정을 다룹니다.
+
+## 섹션 내용
+
+| 항목 | 설명 |
+|-------|-------------|
+|[클라이언트](ad-rms-client.md) |이 항목에서는 Rights Management Service Client 2.1의 용도와 기능에 대해 설명합니다. |
+|[서버](ad-rms-server.md) | 이 항목에서는 Azure 및 Windows Server용 RMS 서버의 용도와 기능에 대해 설명합니다.|
+
 
 ## 관련 항목
 
-* [AD RMS 개념](application-types.md)
-* [AD RMS와 AD RMS 2.1의 차이점](differences-between-ad-rms-and-ad-rms-2-0.md)
+* [RMS 개념](application-types.md)
 * [시작](getting-started-with-ad-rms-2-0.md)
 * [AD RMS에 대한 IT 전문가 설명서](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
-* [서버](ad-rms-server.md)
-* [client](ad-rms-client.md)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -43,7 +43,7 @@ ms.suite: ems
 
     -   권한 지정: 콘텐츠 보기, 파일 저장하기, 콘텐츠 편집하기, 할당된 권한 보기, 매크로 허용하기, 전달하기, 회신하기, 전체 회신하기
 
-또한 [RMS 공유 응용 프로그램](../rms-client/sharing-app-windows.md)에서는 사용자가 원하는 권한 설정을 정의할 수 있습니다. 그리고 Outlook 클라이언트와 Outlook Web Access의 경우 전자 메일 메시지에 대해 **전달 금지** 옵션을 선택할 수 있습니다.
+또한 [RMS 공유 응용 프로그램](../rms-client/sharing-app-windows.md)에서는 사용자가 원하는 권한 설정을 정의할 수 있습니다. 그리고 Outlook 클라이언트와 Outlook Web Access의 경우 [전달 금지](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 옵션을 선택할 수 있습니다.
 
 많은 조직에서는 기본 템플릿만으로도 충분할 수 있습니다. 그러나 원하는 경우 사용자 지정 권한 정책 템플릿을 만들 수 있습니다. 사용자 지정 템플릿을 만드는 이유는 다음과 같습니다.
 
@@ -72,6 +72,6 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO1-->
 
 

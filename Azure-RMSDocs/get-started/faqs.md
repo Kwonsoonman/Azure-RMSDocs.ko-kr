@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -70,9 +70,9 @@ Azure RMS는 기업 간 공동 작업에서의 관리자 편의를 위해 항상
 이러한 계정에 대한 인증 방법은 다른 조직의 관리자가 Azure Active Directory 계정을 어떻게 구성했느냐에 따라 달라질 수 있습니다. 예를 들어, 이 계정에 대해 만든 암호, 다단계 인증(MFA), 페더레이션 또는 Active Directory 도메인 서비스에서 생성된 후 Azure Active Directory에 동기화된 암호 등을 사용할 수 있습니다.
 
 ## 회사 외부의 사용자를 사용자 지정 템플릿에 추가할 수 있나요?
-예.  최종 사용자(및 관리자)가 응용 프로그램에서 선택할 수 있는 사용자 지정 템플릿을 만들면 지정한 사전 정의 정책을 통해 정보 보호를 쉽고 빠르게 적용할 수 있습니다. 템플릿의 설정 중 하나는 콘텐츠에 액세스할 수 있는 사용자이며, 조직 내의 사용자 및 그룹과 조직 외부의 사용자를 지정할 수 있습니다.
+예. 최종 사용자(및 관리자)가 응용 프로그램에서 선택할 수 있는 사용자 지정 템플릿을 만들면 지정한 사전 정의 정책을 통해 정보 보호를 쉽고 빠르게 적용할 수 있습니다. 템플릿의 설정 중 하나는 콘텐츠에 액세스할 수 있는 사용자이며, 조직 내의 사용자 및 그룹과 조직 외부의 사용자를 지정할 수 있습니다.
 
-조직 외부의 사용자를 지정하려면 [Azure 권한 관리를 위한 Windows PowerShell 모듈](../deploy-use/install-powershell.md)을 사용합니다.
+조직 외부에서 사용자를 지정하려면 템플릿을 구성할 때 Azure 클래식 포털에서 선택하는 그룹에 연락처로 추가합니다. 또는 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 사용합니다.
 
 -   **권한 정의 개체를 사용하여 템플릿을 생성하거나 업데이트**합니다.    권한 정의 개체에서 외부 전자 메일 주소 및 해당 권한을 지정한 다음 템플릿을 만들거나 업데이트할 때 사용합니다. [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet을 통해 변수를 만든 다음 [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx) cmdlet(새 템플릿의 경우) 또는 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet(기존 템플릿을 수정하는 경우)을 통해 이 변수를 -RightsDefinition 매개 변수에 제공하여 권한 정의 개체를 지정합니다. 그러나 기존 템플릿에 이러한 사용자를 추가하는 경우 외부 사용자뿐 아니라 템플릿의 기존 그룹에 대해 권한 정의 개체를 정의해야 합니다.
 
@@ -140,6 +140,11 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 
 이 예제에서 보여주듯이 모든 플랫폼과 모든 소프트웨어에서 화면 캡처를 차단하기 위해 Rights Management API를 지원했더라도 기술만으로 사용자가 하지 않아야 하는 데이터 공유를 항상 방지할 수 있는 것은 아닙니다. Rights Management는 권한 부여 및 사용 정책을 사용하여 중요한 데이터를 보호하는 데 도움이 될 수 있지만 이러한 엔터프라이즈 권한 관리 솔루션을 다른 제어 기능과 함께 사용해야 합니다. 예를 들어 물리적 보안을 구현하고, 조직 데이터에 액세스할 수 있도록 허가된 사람들을 신중하게 모니터링하고, 공유해서는 안 되는 데이터를 이해하도록 사용자를 교육하는 데 투자해야 합니다.
 
+## 전달 금지로 메일을 보호하는 사용자와 전달 권한이 없는 템플릿 간의 차이점은 무엇입니까?
+
+이름 및 모양에도 불구하고, **전달 금지**는 전달 권한의 반대도 아니고, 템플릿도 아닙니다. 실제로 메일 전달 제한 외에도, 첨부 파일 복사, 인쇄 및 저장 제한이 포함된 권한 집합입니다. 권한은 선택한 수신자를 통해 사용자에게 동적으로 적용되며, 관리자가 권한을 정적으로 할당하지 않습니다. 자세한 내용은 [Azure 권한 관리에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md) 항목의 [메일에 대한 전달 금지 옵션](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 섹션을 참조하세요.
+
+
 ## 법적 정보, 규정 준수, SLA 등의 Azure RMS 관련 지원 정보는 어디서 찾을 수 있나요?
 Azure RMS는 다른 서비스를 지원하는 동시에 다른 서비스가 있어야 작동합니다. Azure RMS 관련 정보를 찾고 있지만 Azure RMS 서비스를 사용하는 방법에 대해서는 알아보지 않으려는 경우 다음 리소스를 확인하세요.
 
@@ -191,6 +196,6 @@ Azure RMS는 다른 서비스를 지원하는 동시에 다른 서비스가 있�
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

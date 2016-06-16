@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: 테스트 환경 설정 | Azure RMS
-description: 다양한 서버 옵션으로 권한 사용 응용 프로그램을 테스트할 수 있습니다.
+title: 응용 프로그램 테스트 | Azure RMS
+description: 테스트를 위해 응용 프로그램을 설치하는 방법에 대한 지침입니다.
 keywords:
 author: bruceperlerms
 manager: mbaldwin
@@ -23,48 +23,42 @@ ms.suite: ems
 #ms.custom:
 
 ---
-** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
-# 테스트 환경 설정
 
-다양한 서버 옵션으로 권한 사용 응용 프로그램을 테스트할 수 있습니다.
+# 응용 프로그램 테스트
 
-**중요** 먼저 AD RMS 사전 프로덕션 환경에서 AD RMS 서버에 대해 권한 관리 서비스 SDK 2.1 응용 프로그램을 테스트하는 것이 좋습니다. 그런 다음 고객이 Azure RMS 서비스와 함께 응용 프로그램을 사용할 수 있게 하려는 경우 해당 환경에서 테스트합니다. 자세한 내용은 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
+이 항목에서는 응용 프로그램 테스트를 위해 설치하는 방법에 대한 지침을 제공합니다.
 
- 
+## 지침
 
-### 필수 구성 요소
+### 1단계: 테스트를 위한 설치
 
--   [SDK 설치](create-your-first-rights-aware-application.md)
+Windows Server에서 실행 중인 Azure RMS 또는 RMS 서버에서 테스트할 수 있으며, Azure RMS에서 테스트를 시작한 다음 배포에 필요한 경우 RMS 서버에서 테스트하는 것이 좋습니다.
 
-지침
+1. Azure RMS에서 테스트하는 방법에 대해서는 [방법: ADAL 인증 사용](how-to-use-adal-authentication,md) 항목을 참조하세요.
+2. RMS 서버에서 테스트하는 방법에 대해서는 [방법: RMS 서버 설치 및 구성](how-to-install-and-configure-an-rms-server.md) 항목을 참조하세요.
+3. 다음에서는 Developer 런타임을 설치하는 방법을 설명합니다.
 
-### 1단계: 테스트 환경 설정
+   응용 프로그램을 테스트할 컴퓨터에 Rights Management Service Client 2.1이 설치되어 있어야 합니다.
+   - 개발 컴퓨터 이외의 컴퓨터에서 응용 프로그램을 테스트하는 경우 [AD RMS 클라이언트 다운로드 페이지](http://www.microsoft.com/en-us/download/details.aspx?id=38396)에서 해당 컴퓨터에 RMS Client 2.1을 설치할 수 있습니다.
+   - 개발 컴퓨터에서 응용 프로그램을 테스트하는 경우 권한 관리 서비스 SDK 2.1을 이미 설치한 상태여야 합니다. 지금은 RMS Client 2.1이 자동으로 설치됩니다.
 
-권한 사용 응용 프로그램을 테스트하려면 사전 프로덕션용으로 구성된 RMS 서버에 대해 실행해야 합니다. 사전 프로덕션 RMS 서버는 사전 프로덕션/ISV 인증서 계층 구조를 사용하여 파일을 암호화하고 암호를 해독합니다.
+    RMS SDK 2.1을 설치하는 방법에 대한 자세한 내용은 [SDK 설치](create-your-first-rights-aware-application.md)를 참조하세요.
 
-AD RMS 인증서 계층 구조에 대한 자세한 내용은 [인증서 체인 이해](understanding-certificate-chains.md)를 참조하세요.
+## 설명
 
-RMS 서버에 대해 응용 프로그램을 테스트하는 데 사용할 수 있는 옵션에는 다음 두 가지가 있습니다.
+이 항목의 지침은 일부에 불과합니다. RMS Client 2.1을 구성하는 방법에 대한 자세한 내용은 [RMS Client 2.1 배포 참고 사항](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) 항목을 참조하세요.
 
--   **단일 시스템(1-box) AD RMS ISV 환경에서 응용 프로그램을 실행할 수 있습니다**. Windows Server 2012, Windows Server 2008 R2 또는 Windows Server 2008을 실행하며 Hyper-V가 설치되어 있는 경우 AD RMS 단일 시스템(1-box) VHD로 가상 컴퓨터를 빌드하여 단일 시스템(1-box) AD RMS ISV 환경을 배포할 수 있습니다. 단일 시스템(1-box) AD RMS ISV 환경에서는 사전 프로덕션용으로 구성된 RMS 서버를 제공하며 Active Directory Rights Management Services 클라이언트 2.1도 설치되어 있습니다. RMS 서버와 클라이언트에 대한 레지스트리 설정은 이미 구성되어 있습니다. 응용 프로그램을 테스트하려면 단일 시스템(1-box) 환경이 배포된 가상 컴퓨터에서 실행합니다.
--   **사전 프로덕션용으로 구성되고 네트워크에 배포된 RMS 서버에 대해 응용 프로그램을 실행할 수 있습니다**. 이 경우 응용 프로그램을 실행할 컴퓨터에 AD RMS 클라이언트 2.1도 설치 및 구성해야 합니다. 이 작업을 수행하는 방법에 대한 자세한 내용은 [클라이언트 구성](how-to-configure-the-ad-rms-client-2-0.md)을 참조하세요. RMS 서버를 배포하고 사전 프로덕션용으로 구성하는 방법에 대한 자세한 내용은 [서버 설치 및 구성](how-to-install-and-configure-an-rms-server.md)을 참조하세요.
+### 관련 항목
 
-## 관련 항목
-
-* [사용 방법](how-to-use-msipc.md)
-* [AD RMS SDK 웹 세미나 참고 자료 다운로드 페이지](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
-* [클라이언트 구성](how-to-configure-the-ad-rms-client-2-0.md)
+* [RMS 서버 설치 및 구성 방법](how-to-install-and-configure-an-rms-server.md)
+* [방법: ADAL 인증 사용](how-to-use-adal-authentication,md)
 * [SDK 설치](create-your-first-rights-aware-application.md)
-* [서버 설치 및 구성](how-to-install-and-configure-an-rms-server.md)
-* [인증서 체인 이해](understanding-certificate-chains.md)
+* [RMS Client 2.1 배포 참고 사항](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
  
 
  
 
 
-
-
-
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

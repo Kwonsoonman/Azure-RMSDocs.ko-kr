@@ -125,7 +125,7 @@ Reg_SZ
 
 https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
 
-**µ¥ÀÌÅÍ:**
+**데이터:**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
@@ -152,7 +152,7 @@ Reg_SZ
 https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 
 
-**µ¥ÀÌÅÍ:**
+**데이터:**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
@@ -178,7 +178,7 @@ Reg_SZ
 
 https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
 
-**µ¥ÀÌÅÍ:**
+**데이터:**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
@@ -206,7 +206,7 @@ Reg_SZ
 https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
 
 
-**µ¥ÀÌÅÍ:**
+**데이터:**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 

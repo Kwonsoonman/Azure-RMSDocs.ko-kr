@@ -4971,8 +4971,8 @@
 * Archive Datetime: 2016-05-21 18:44:22
 * Handback File: [migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/6099b7fc0d6de71d81391e017366cb2a824015d8/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.ko-kr.xlf)
 * Handback Datetime: 2016-06-22 15:15:11
-* Bilingual File: [migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/e43d473537c83b830f50181a614f11651e98b000/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/6099b7fc0d6de71d81391e017366cb2a824015d8/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-22 15:16:43
 * [Back to Top](#report-top)
 
 ##### <a name='a307f939515d8f81077c73e9b29aa9015b256c7a340'></a> Source: [Azure-RMSDocs\plan-design\migrate-from-ad-rms-phase4.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/867abff0b176616b478be44cdd4de4386a3314d8/Azure-RMSDocs/plan-design/migrate-from-ad-rms-phase4.md)

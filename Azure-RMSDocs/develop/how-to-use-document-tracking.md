@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 방법: 문서 추적 사용 | Azure RMS
+title: "방법: 문서 추적 사용 | Azure RMS"
 description: 문서 추적 기능을 사용하려면 관련 메타데이터 및 서비스 등록 관리에 대한 몇 가지 간단한 사항을 이해해야 합니다.
 keywords:
 author: bruceperlerms

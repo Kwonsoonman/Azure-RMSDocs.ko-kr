@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 방법: 문서 추적 및 해지 사용 | Azure RMS
+title: "방법: 문서 추적 및 해지 사용 | Azure RMS"
 description: 문서 추적을 구현하기 위한 기본 지침
 keywords:
 author: bruceperlerms

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 방법: 권한 사용 응용 프로그램 디버그 | Azure RMS
+title: "방법: 권한 사용 응용 프로그램 디버그 | Azure RMS"
 description: 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
 keywords:
 author: bruceperlerms

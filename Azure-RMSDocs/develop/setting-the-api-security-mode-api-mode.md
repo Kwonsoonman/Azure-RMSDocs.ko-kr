@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 방법: API 보안 모드 설정 | Azure RMS
+title: "방법: API 보안 모드 설정 | Azure RMS"
 description: 파일 API 응용 프로그램에서 실행하는 보안 모드를 선택합니다.
 keywords:
 author: bruceperlerms

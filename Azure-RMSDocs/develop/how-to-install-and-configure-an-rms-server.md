@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 방법: RMS 서버 설치, 구성 및 테스트 | Azure RMS
+title: "방법: RMS 서버 설치, 구성 및 테스트 | Azure RMS"
 description: 권한 사용 응용 프로그램 테스트에 사용할 RMS 서버를 설치 및 구성합니다.
 keywords:
 author: bruceperlerms

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: 방법: 암호화 설정 작업 | Azure RMS
+title: "방법: 암호화 설정 작업 | Azure RMS"
 description: 이 문서에서는 암호화 패키지에 대해 안내합니다.
 keywords:
 author: bruceperlerms

@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "ff7d9fb177488f956a2b408aa6612d229bd2f7dd",
-  "LastTranslatedCommit": "487fd785b7706e2c85a0286cac85e5094b8a3bd0",
+  "LastTranslatedCommit": "79fafbaeca1944313d9e52e5844476716ad0e45b",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -66875,14 +66875,14 @@
       "HandoffPriority": "",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": "ec0b976d413b7aa098c181fdb8d1cfd48a9bb561",
+      "TargetFileCommit": "79fafbaeca1944313d9e52e5844476716ad0e45b",
       "TargetFilePath": "Azure-RMSDocs\\plan-design\\migrate-from-ad-rms-phase3.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.ko-kr.xlf",
-      "HandbackFileCommit": "e43d473537c83b830f50181a614f11651e98b000",
-      "HandbackDateTime": "2016-06-01T15:52:56.1302485Z",
+      "HandbackFileCommit": "6099b7fc0d6de71d81391e017366cb2a824015d8",
+      "HandbackDateTime": "2016-06-22T15:15:11.2715856Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "2016-06-01T15:52:56.1302485Z",
+      "UpdatedDateTime": "2016-06-22T15:15:11.2715856Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\archive\\migrate-from-ad-rms-phase3.d217f8acdd7175366a6360bf8f9a10435e95745a.ko-kr.xlf",
       "ArchiveFileCommit": "e1eaa32f9d44c37db4b8590bc6bd859ed6e875b1",
       "ArchiveFileDateTime": "2016-05-21T18:44:22.6097927Z",

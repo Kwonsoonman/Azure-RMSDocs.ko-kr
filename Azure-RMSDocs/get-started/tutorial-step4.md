@@ -1,12 +1,28 @@
 ---
-# 필수 메타데이터
+# "required metadata"
 
-제목: Azure RMS 빠른 시작 자습서 - 4단계 | 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 네 번째 단계입니다.
-키워드: 만든 이: cabailey 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: get-started-article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
+title: "Azure RMS 빠른 시작 자습서 - 4단계 | 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure"
+description: "권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 네 번째 단계입니다."
+keywords:
+author: cabailey
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: get-started-article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
 
-# 선택적 메타데이터
+# optional metadata
 
-로봇: 대상: ms.devlang: ms.reviewer: esaggese ms.suite: ems ms.tgt_pltfrm: ms.technology: ms.custom:
+ROBOTS:
+audience:
+ms.devlang:
+ms.reviewer: esaggese
+ms.suite: ems
+ms.tgt_pltfrm:
+ms.technology:
+ms.custom:
 
 ---
 

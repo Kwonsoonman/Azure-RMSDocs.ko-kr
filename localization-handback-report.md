@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\get-started\scenario-share-office-file-externally.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/scenario-share-office-file-externally.md) | InSyncHandedBackSuccess | [Details](#6a6f9d8c0a98752413a99d30926f2b5bc8af193d118)
 
 ## Item Details
-##### <a name='6a6f9d8c0a98752413a99d30926f2b5bc8af193d118'></a> Source: [Azure-RMSDocs\get-started\scenario-share-office-file-externally.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/scenario-share-office-file-externally.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\get-started\scenario-share-office-file-externally.md](https://github.com/Microsoft/Azure-RMSDocs-pr.ko-kr/blob/e59187ca57b691f1df10e548db393a3e2faaa27a/Azure-RMSDocs/get-started/scenario-share-office-file-externally.md)
-* Handoff File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/8842c474194d80dc29b19a66ef4c793300f0b3cb/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf)
-* Handoff Datetime: 2016-05-12 00:56:53
-* Handoff Reason: Include
-* Archive File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/e1eaa32f9d44c37db4b8590bc6bd859ed6e875b1/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf)
-* Archive Datetime: 2016-05-21 18:44:22
-* Handback File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/b740c17b98f31c27e1c0c8bde1061affb7007c86/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf)
-* Handback Datetime: 2016-06-22 20:56:07
-* Bilingual File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/e43d473537c83b830f50181a614f11651e98b000/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
-* [Back to Top](#report-top)
-
 
 ## Error Details
 

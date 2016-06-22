@@ -2210,8 +2210,8 @@
 * Archive Datetime: 2016-05-21 18:44:22
 * Handback File: [tutorial-step4.4a68451cdfff18d376d01b124ad246b857ddea99.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/9f41610c8c18335ab8e8534f2d485c81d2101385/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tutorial-step4.4a68451cdfff18d376d01b124ad246b857ddea99.ko-kr.xlf)
 * Handback Datetime: 2016-06-22 12:14:58
-* Bilingual File: [tutorial-step4.4a68451cdfff18d376d01b124ad246b857ddea99.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/8d83ba456599cd04c702fde4f20f94ea278ca883/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tutorial-step4.4a68451cdfff18d376d01b124ad246b857ddea99.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [tutorial-step4.4a68451cdfff18d376d01b124ad246b857ddea99.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/9f41610c8c18335ab8e8534f2d485c81d2101385/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tutorial-step4.4a68451cdfff18d376d01b124ad246b857ddea99.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-22 12:24:17
 * [Back to Top](#report-top)
 
 ##### <a name='9c335e054d4aed1a8cca654420a580d02a4c849f127'></a> Source: [Azure-RMSDocs\get-started\tutorial-step5.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/tutorial-step5.md)
@@ -2224,8 +2224,8 @@
 * Archive Datetime: 2016-05-21 18:44:22
 * Handback File: [tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/9f41610c8c18335ab8e8534f2d485c81d2101385/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.ko-kr.xlf)
 * Handback Datetime: 2016-06-22 12:14:58
-* Bilingual File: [tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/e43d473537c83b830f50181a614f11651e98b000/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/9f41610c8c18335ab8e8534f2d485c81d2101385/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tutorial-step5.b91524affb6e1d5edfbbc8cb77713e0e9fd8af64.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-22 12:24:17
 * [Back to Top](#report-top)
 
 ##### <a name='b85f28c40671680cc9f791d8cf8e3a1befd7a8b2128'></a> Source: [Azure-RMSDocs\includes\aad_rightsmanagement_1.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c1cd5adccb8ed07dac9a0535654f21a970575a78/Azure-RMSDocs/includes/aad_rightsmanagement_1.md)

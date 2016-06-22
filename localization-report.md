@@ -2098,8 +2098,8 @@
 * Archive Datetime: 2016-05-21 18:44:22
 * Handback File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/b740c17b98f31c27e1c0c8bde1061affb7007c86/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf)
 * Handback Datetime: 2016-06-22 20:56:07
-* Bilingual File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/e43d473537c83b830f50181a614f11651e98b000/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/b740c17b98f31c27e1c0c8bde1061affb7007c86/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/scenario-share-office-file-externally.dced4ec5ee5d3bce0aee45a6d528d524d1b17ccc.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-22 21:05:28
 * [Back to Top](#report-top)
 
 ##### <a name='cb028afcbfd9b59f134539c434f4f49efc5e9092119'></a> Source: [Azure-RMSDocs\get-started\scenario-sharepoint.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/scenario-sharepoint.md)

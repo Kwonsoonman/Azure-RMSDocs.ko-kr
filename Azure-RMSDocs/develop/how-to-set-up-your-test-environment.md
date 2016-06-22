@@ -34,7 +34,7 @@ ms.suite: ems
 
 Windows Server에서 실행 중인 Azure RMS 또는 RMS 서버에서 테스트할 수 있으며, Azure RMS에서 테스트를 시작한 다음 배포에 필요한 경우 RMS 서버에서 테스트하는 것이 좋습니다.
 
-1. Azure RMS에서 테스트하는 방법에 대해서는 [방법: ADAL 인증 사용](how-to-use-adal-authentication,md) 항목을 참조하세요.
+1. Azure RMS에서 테스트하는 방법에 대해서는 [방법: ADAL 인증 사용](how-to-use-adal-authentication.md) 항목을 참조하세요.
 2. RMS 서버에서 테스트하는 방법에 대해서는 [방법: RMS 서버 설치 및 구성](how-to-install-and-configure-an-rms-server.md) 항목을 참조하세요.
 3. 다음에서는 Developer 런타임을 설치하는 방법을 설명합니다.
 

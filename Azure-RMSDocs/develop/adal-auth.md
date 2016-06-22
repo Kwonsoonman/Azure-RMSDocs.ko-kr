@@ -29,11 +29,11 @@ ms.suite: ems
 
 이 항목에서는 Azure ADAL 기반 인증을 구성하기 위한 단계를 설명합니다.
 
-## 내부 인증
+## Azure 인증 설정
 
 다음이 필요합니다.
 
-- [Microsoft Azure에 대한 구독](https://azure.microsoft.com/en-us/)(무료 평가판이면 충분):
+- [Microsoft Azure에 대한 구독](https://azure.microsoft.com/en-us/)(무료 평가판이면 충분). 자세한 내용은 [사용자가 개인용 RMS를 등록하는 방법](../understand-explore/rms-for-individuals-user-sign-up.md)을 참조하세요.
 - Microsoft Azure 권한 관리에 대한 구독(무료 [개인용 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 계정이면 충분)
 
 > [!NOTE] Microsoft Azure 권한 관리에 대한 구독이 있는지 여부에 대해서는 IT 관리자에게 문의하고 다음 단계를 수행하도록 요청하세요. 조직에 구독이 없는 경우 IT 관리자에게 만들어 달라고 요청해야 합니다. 또한 IT 관리자는 *Microsoft 계정*(예: Hotmail)이 아닌 *회사 또는 학교 계정*으로 가입되어 있어야 합니다.

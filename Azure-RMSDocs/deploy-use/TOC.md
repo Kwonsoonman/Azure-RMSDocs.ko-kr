@@ -22,6 +22,7 @@
 ### [커넥터 설치 및 구성](install-configure-rms-connector.md)
 ### [서버 구성](configure-servers-rms-connector.md)
 #### [레지스트리 설정](rms-connector-registry-settings.md)
+### [커넥터 모니터링](monitor-rms-connector.md)
 ## [Azure RMS 확인](verify.md)
 ## [사용자가 파일을 보호할 수 있도록 지원](help-users.md)
 ## [사용 현황 로깅 및 분석](log-analyze-usage.md)
@@ -35,6 +36,6 @@
 # [앱 개발 및 사용자 지정](/rights-management/develop/developers-guide)
 
 
-<!--HONumber=Apr16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,14 +1,24 @@
 ---
-# 필수 메타데이터
+# required metadata
 
-제목: 방법: 권한 사용 응용 프로그램 디버그 | Azure RMS 설명: 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
-키워드: 작성자: bruceperlerms 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
-# 선택적 메타데이터
+title: 방법: 권한 사용 응용 프로그램 디버그 | Azure RMS
+description: 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
+# optional metadata
 
-#로봇:
-대상 그룹: 개발자
+#ROBOTS:
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

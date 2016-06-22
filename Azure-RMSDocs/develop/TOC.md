@@ -21,9 +21,8 @@
 #### [iOS/OS X 코드 예제](ios-os-x-code-examples.md)
 #### [커뮤니티 리소스](community-resources.md)
 ### [개발자 지침 및 용어](core-concepts.md)
-#### [방법: 앱에 인증 추가](authentication-integration.md)
+#### [Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법](authentication-integration.md)
 #### [방법: 오류 및 성능 로깅 사용](enabling-logging.md)
-#### [방법: Azure 응용 프로그램 ID 가져오기](application-id.md)
 #### [방법: 기본 제공 권한 사용](built-in-rights-usage-restriction-reference.md)
 #### [방법: 문서 추적 사용](how-to-use-document-tracking.md)
 #### [조건](terms.md)
@@ -60,8 +59,14 @@
 #### [지원되는 플랫폼](supported-platforms.md)
 #### [사용 제한 이해](understanding-usage-restrictions.md)
 #### [사용 제한 참조](usage-restriction-reference.md)
+### [API 참조](api-reference-2-1.md)
+#### [상수](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/constants)
+#### [데이터 형식](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/data types)
+#### [함수](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
+#### [구조](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
+#### [오류 코드](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

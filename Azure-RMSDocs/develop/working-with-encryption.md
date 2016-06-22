@@ -1,13 +1,24 @@
 ---
-# 필수 메타데이터
+# required metadata
 
-제목: 방법: 암호화 설정으로 작업 | Azure RMS 설명: 이 문서에서는 암호화 패키지를 안내합니다. 키워드: 작성자: bruceperlerms 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# 선택적 메타데이터
+title: 방법: 암호화 설정 작업 | Azure RMS
+description: 이 문서에서는 암호화 패키지에 대해 안내합니다.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
+# optional metadata
 
-#로봇:
-대상 그룹: 개발자
+#ROBOTS:
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

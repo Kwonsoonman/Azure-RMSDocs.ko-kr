@@ -1,14 +1,24 @@
 ---
-# 필수 메타데이터
+# required metadata
 
-제목: 방법: API 보안 모드 설정 | Azure RMS 설명: 파일 API 응용 프로그램이 실행되는 보안 모드를 선택합니다.
-키워드: 작성자: bruceperlerms 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
-# 선택적 메타데이터
+title: 방법: API 보안 모드 설정 | Azure RMS
+description: 파일 API 응용 프로그램에서 실행하는 보안 모드를 선택합니다.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: 3B088F14-81C5-4C78-8DED-F5F153353EE0
+# optional metadata
 
-#로봇:
-대상 그룹: 개발자
+#ROBOTS:
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

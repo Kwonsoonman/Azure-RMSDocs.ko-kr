@@ -32,7 +32,7 @@ ms.suite: ems
 
 이 항목에 제공된 지침은 샘플 응용 프로그램인 IPCHelloWorld를 기반으로 합니다. 이 샘플 응용 프로그램은 권한 사용 응용 프로그램의 기본 개념 및 코드를 이해하는 데 도움이 됩니다. Microsoft Connect에서 전체 IPCHellowWorld 샘플 응용 프로그램을 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)으로 다운로드할 수 있습니다.
 
->AZURE.NOTE IPCHelloWorld 프로젝트는 권한 관리 서비스 SDK 2.1용으로 이미 구성되어 있습니다. RMS SDK 2.1을 사용하도록 새 프로젝트를 구성하는 방법에 대한 자세한 내용은 [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)을 참조하세요.
+> [!Note] IPCHelloWorld 프로젝트는 권한 관리 서비스 SDK 2.1용으로 이미 구성되어 있습니다. RMS SDK 2.1을 사용하도록 새 프로젝트를 구성하는 방법에 대한 자세한 내용은 [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)을 참조하세요.
 
 ## MSIPC.dll 로드
 

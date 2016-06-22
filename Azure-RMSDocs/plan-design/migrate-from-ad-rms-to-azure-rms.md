@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -35,7 +35,7 @@ AD RMS(Active Directory Rights Management Services) 배포를 Azure RMS(Azure �
 
 -   Azure RMS 소개, Azure RMS로 해결할 수 있는 비즈니스 문제, Azure RMS가 관리자와 사용자에게 표시되는 모양 및 Azure RMS 작동 방식을 보려면 [Azure 권한 관리란?](../understand-explore/what-is-azure-rms.md)을 참조하세요.
 
--   Azure RMS와 AD RMS를 비교한 내용을 보려면 [Azure 권한 관리와 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md) 항목을 참조하세요..
+-   Azure RMS와 AD RMS를 비교한 내용을 보려면 [Azure 권한 관리와 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요.
 
 ## AD RMS에서 Azure RMS로 마이그레이션하기 위한 필수 구성 요소
 Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 요소가 있는지와 제한 사항을 이해하고 있는지 확인하세요.
@@ -66,7 +66,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 - **Azure RMS 테넌트(활성화되지 않음)를 포함하여, Azure RMS를 실행하기 위한 모든 요구 사항**
 
-    [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md) 항목을 참조하세요..
+    [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md)을 참조하세요.
 
     AD RMS에서 마이그레이션하려면 Azure RMS 테넌트가 있어야 하지만 마이그레이션 전에는 권한 관리 서비스를 활성화하지 않는 것이 좋습니다. 마이그레이션 프로세스에는 AD RMS에서 키와 템플릿을 내보낸 후 Azure RMS로 가져오는 과정 다음에 이 단계가 포함되어 있습니다. 그러나 Azure RMS가 이미 활성화된 경우에는 여전히 AD RMS에서 마이그레이션할 수 있습니다.
 
@@ -77,7 +77,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
     - Azure Active Directory의 메일 사용이 가능한 그룹
 
-    [Azure 권한 관리 준비](prepare.md) 항목을 참조하세요..
+    [Azure 권한 관리 준비](prepare.md)를 참조하세요.
 
 
 - **AD RMS와 함께 Exchange Server(예: 전송 규칙 및 Outlook Web Access) 또는 SharePoint Server의 IRM(정보 권한 관리) 기능을 사용한 경우**:
@@ -101,7 +101,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 -   예를 들어, 트러스트된 사용자 도메인 또는 페더레이션을 사용하여 외부 파트너와 공동으로 작업하는 경우 해당 파트너가 마이그레이션과 동시에 또는 마이그레이션 후 가능한 빨리 Azure RMS로도 마이그레이션해야 합니다. 외부 파트너가 조직에서 이전에 AD RMS를 사용하여 보호하던 콘텐츠에 계속 액세스하려면 사용자가 변경한 구성(이 문서에 포함됨)과 비슷하게 클라이언트 구성을 변경해야 합니다.
 
-    파트너에서 있을 수 있는 가능한 구성 차이로 인해 이러한 재구성에 대한 정확한 지침은 이 문서에서 다루지 않습니다. 도움이 필요하면 Microsoft CSS(고객 지원 서비스)에 문의하세요.
+    파트너에서 있을 수 있는 가능한 구성 차이로 인해 이러한 재구성에 대한 정확한 지침은 이 문서에서 다루지 않습니다. 도움이 필요하면 [Microsoft 지원 팀에 문의](../get-started/information-support#support-options-and-community-resources)하세요.
 
 ## AD RMS에서 Azure RMS로 마이그레이션하는 단계 개요
 
@@ -181,10 +181,10 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 
 ## 다음 단계
-마이그레이션을 시작하려면 [Phase 1 - server-side configuration](migrate-from-ad-rms-phase1.md)(1단계 - 서버 쪽 구성)으로 이동합니다..
+마이그레이션을 시작하려면 [1단계 - 서버 쪽 구성](migrate-from-ad-rms-phase1.md)으로 이동합니다.
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

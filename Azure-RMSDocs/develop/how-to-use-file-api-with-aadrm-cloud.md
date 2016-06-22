@@ -1,14 +1,24 @@
 ---
-# 필수 메타데이터
+# required metadata
 
-제목: 방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정 | Azure RMS 설명: 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다.
-키워드: 작성자: bruceperlerms 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# 선택적 메타데이터
+title: 방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정 | Azure RMS
+description: 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
+# optional metadata
 
-#로봇:
-대상 그룹: 개발자
+#ROBOTS:
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

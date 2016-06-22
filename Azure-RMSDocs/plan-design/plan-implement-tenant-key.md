@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -81,9 +81,9 @@ Microsoft에서 관리하는 테넌트 키를 사용하여 Azure RMS를 배포�
 
 
 > [!IMPORTANT]
-> 이미 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용하기 시작(서비스가 활성화됨)했으며 Office 2010을 실행하는 사용자가 있는 경우 이러한 절차를 실행하기 전에 Microsoft CSS(고객 지원 서비스)에 문의하세요. 시나리오 및 요구 사항에 따라 계속해서 BYOK를 사용할 수 있지만 몇 가지 제한 사항이나 추가 단계가 수반될 수 있습니다.
+> 이미 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용하기 시작(서비스가 활성화됨)했으며 Office 2010을 실행하는 사용자가 있는 경우 이러한 절차를 실행하기 전에 [Microsoft 지원에 문의](../get-started/information-support#to-contact-microsoft-support)하세요. 시나리오 및 요구 사항에 따라 계속해서 BYOK를 사용할 수 있지만 몇 가지 제한 사항이나 추가 단계가 수반될 수 있습니다.
 > 
-> 조직에 키 처리에 대한 특정 정책이 있는 경우에도 CSS에 문의하세요.
+> 조직에 키 처리에 대한 특정 조직이 있는 경우에도 [Microsoft 지원에 문의](../get-started/information-support#to-contact-microsoft-support)하세요.
 
 ### BYOK 사전 요구 사항
 BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하세요.
@@ -114,7 +114,7 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
     > [!NOTE]
     > 테넌트 키는 암호화되고 액세스 제어 수준 권한(Azure RMS의 고객 HSM 및 Microsoft HSM 내에서만 사용 가능)으로 보호되기 때문에 신뢰할 수 없는 컴퓨터를 안전하게 이동할 수 있습니다. 도구 집합에 제공된 스크립트를 사용하여 보안 조치를 확인하고 Thales의 [RMS 클라우드의 하드웨어 키 관리](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud)에서 도구 집합이 작동하는 방식에 대한 자세한 내용을 살펴볼 수 있습니다.
 
--   **직접 생성 및 사용하는 경우:** 이 경우에는 Microsoft CSS(고객 지원 서비스)에 문의하여 Azure RMS의 키 전송 약속을 예약해야 합니다. 테넌트 키를 Azure RMS 보안 권역으로 전송하려면 미국 워싱턴주의 Redmond에 있는 Microsoft 본사로 가야 합니다.
+-   **직접 생성 및 사용하는 경우:** 이 경우에는 [Microsoft 지원에 문의](../get-started/information-support#to-contact-microsoft-support)하여 Azure RMS의 키 전송 약속을 예약해야 합니다. 테넌트 키를 Azure RMS 보안 권역으로 전송하려면 미국 워싱턴주의 Redmond에 있는 Microsoft 본사로 가야 합니다.
 
 방법 지침을 보려면 인터넷을 통해 테넌트 키를 생성 및 전송할지, 아니면 직접 생성 및 전송할지를 선택합니다. 
 
@@ -148,6 +148,6 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,14 +1,24 @@
 ---
-# 필수 메타데이터
+# required metadata
 
-제목: 방법: 명시적 소유자 권한 추가 | Azure RMS 설명: 라이선스를 처음부터 만드는 경우 응용 프로그램에서 “소유자” 권한을 명시적으로 추가해야 합니다.
-키워드: 작성자: bruceperlerms 관리자: mbaldwin ms.date: 04/28/2016 ms.topic: article ms.prod: azure ms.service: rights-management ms.technology: techgroup-identity ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# 선택적 메타데이터
+title: 명시적 소유자 권한 추가 방법 | Azure RMS
+description: 라이선스를 처음부터 만드는 경우 응용 프로그램에서 "소유자" 권한을 명시적으로 추가해야 합니다.
+keywords:
+author: bruceperlerms
+manager: mbaldwin
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod: azure
+ms.service: rights-management
+ms.technology: techgroup-identity
+ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
+# optional metadata
 
-#로봇:
-대상 그룹: 개발자
+#ROBOTS:
+audience: developer
 #ms.devlang:
-ms.reviewer: shubhamp ms.suite: ems
+ms.reviewer: shubhamp
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 

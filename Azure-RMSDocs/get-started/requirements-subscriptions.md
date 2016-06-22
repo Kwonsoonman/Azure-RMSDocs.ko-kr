@@ -6,7 +6,7 @@ description:
 keywords:
 author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2016
+ms.date: 06/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -49,6 +49,8 @@ Azure RMS 라이센스에 대한 추가 질문이 있나요? [Azure 권한 관�
 ## Office 365 구독
 [30일 무료 평가판: Enterprise E3](http://go.microsoft.com/fwlink/p/?LinkID=403802)
 
+[30일 무료 평가판: Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279)
+
 이 구독은 Office Online 서비스를 사용하고, Azure RMS를 활용하는 IRM(정보 권한 관리) 기능을 사용하려는 조직을 위해 설계되었습니다. 그러나 일부 Office 365 구독에는 Azure RMS가 포함되어 있지 않습니다.
 
 구독  |IRM 포함 
@@ -84,7 +86,7 @@ Azure 권한 관리 프리미엄 구독에 대한 자세한 내용은 [Microsoft
 단, 평가판 구독을 받기 전에 조직에서 개인용 RMS 구독을 통해 Azure RMS를 사용했던 경우에는 평가판 구독이 만료되어도 콘텐츠 액세스 권한이 유지됩니다. 따라서 평가용 구독이 만료되어도 이전에 보호했던 콘텐츠에 계속 액세스할 수 있습니다.
 
 ## Enterprise Mobility Suite 구독
-[30일 무료 평가판](http://go.microsoft.com/fwlink/?LinkId=615385)
+[30일 무료 평가판](https://portal.office.com/Signup/Signup.aspx?OfferId=2E63A04D-BE0B-4A0F-A8CF-407C1C299221&dl=EMS)
 
 이 구독은 Azure Active Directory Premium, Windows Intune 및 Azure 권한 관리를 함께 사용하려는 조직을 위해 설계되었습니다. Office와 함께 Azure 권한 관리를 사용하는 기능 지원은 Azure 권한 관리 프리미엄 구독을 사용하는 것과 같습니다. Enterprise Mobility Suite 구독에 대한 자세한 내용은 [Microsoft Enterprise Mobility 개요](http://go.microsoft.com/fwlink/?LinkId=615386)를 참조하세요.
 
@@ -98,6 +100,6 @@ Azure 권한 관리 프리미엄 구독에 대한 자세한 내용은 [Microsoft
 ## 다음 단계
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
-<!--HONumber=May16_HO5-->
+<!--HONumber=Jun16_HO2-->
 
 

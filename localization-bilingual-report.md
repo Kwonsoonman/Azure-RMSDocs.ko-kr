@@ -1,43 +1,11 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/template.md) | InSyncHandedBackSuccess | [Details](#e6106b0b5a5aa1039f7cbf5a35589216c5e540f3373)
- [template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff7d9fb177488f956a2b408aa6612d229bd2f7dd/template.md) | InSyncHandedBackSuccess | [Details](#e6106b0b5a5aa1039f7cbf5a35589216c5e540f3395)
 
 ## Item Details
-##### <a name='e6106b0b5a5aa1039f7cbf5a35589216c5e540f3373'></a> Source: [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5b56229ad5e234663a23812b09a7f934d6738e5a/Azure-RMSDocs/template.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.ko-kr/blob/8276610f9e7cf8629908a42e24ed93ce62ffb47f/Azure-RMSDocs/template.md)
-* Handoff File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/15e9db952602da8491526aee742721a9ee482c28/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Handoff Datetime: 2016-04-20 22:49:57
-* Handoff Reason: Include
-* Archive File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/3487300e8e88bc1554cf48c07d71b22d0546fa13/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Archive Datetime: 2016-04-26 05:00:15
-* Handback File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/439ecc8c8f447a078b809e547b2d038df712ff3e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Handback Datetime: 2016-06-23 11:25:02
-* Bilingual File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/439ecc8c8f447a078b809e547b2d038df712ff3e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-23 11:26:31
-* [Back to Top](#report-top)
-
-##### <a name='e6106b0b5a5aa1039f7cbf5a35589216c5e540f3395'></a> Source: [template.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff7d9fb177488f956a2b408aa6612d229bd2f7dd/template.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\template.md](https://github.com/Microsoft/Azure-RMSDocs-pr.ko-kr/blob/8276610f9e7cf8629908a42e24ed93ce62ffb47f/Azure-RMSDocs/template.md)
-* Handoff File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/15e9db952602da8491526aee742721a9ee482c28/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Handoff Datetime: 2016-04-20 22:49:57
-* Handoff Reason: Include
-* Archive File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/3487300e8e88bc1554cf48c07d71b22d0546fa13/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Archive Datetime: 2016-04-26 05:00:15
-* Handback File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/439ecc8c8f447a078b809e547b2d038df712ff3e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Handback Datetime: 2016-06-23 11:25:02
-* Bilingual File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/439ecc8c8f447a078b809e547b2d038df712ff3e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-23 11:26:31
-* [Back to Top](#report-top)
-
 
 ## Error Details
 

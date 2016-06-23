@@ -5446,8 +5446,8 @@
 * Archive Datetime: 2016-04-26 05:00:15
 * Handback File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/439ecc8c8f447a078b809e547b2d038df712ff3e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
 * Handback Datetime: 2016-06-23 11:25:02
-* Bilingual File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/3cf9c0d8a0debea777bd04ddd34cc13a2f047fdf/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/439ecc8c8f447a078b809e547b2d038df712ff3e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-23 11:26:31
 * [Back to Top](#report-top)
 
 ##### <a name='6cb49518dbeef7122e355cd9b2edfb83722e1dba374'></a> Source: [Azure-RMSDocs\TOC.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/5141bfecf0a9cd895980a647b91239848769d9e5/Azure-RMSDocs/TOC.md)
@@ -5750,8 +5750,8 @@
 * Archive Datetime: 2016-04-26 05:00:15
 * Handback File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/439ecc8c8f447a078b809e547b2d038df712ff3e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
 * Handback Datetime: 2016-06-23 11:25:02
-* Bilingual File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/3cf9c0d8a0debea777bd04ddd34cc13a2f047fdf/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/439ecc8c8f447a078b809e547b2d038df712ff3e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/template.b006790476dbcdf21de424a37ab76fc1c60acbcf.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-23 11:26:31
 * [Back to Top](#report-top)
 
 ##### <a name='42442e5f8d7f09fba90a865e184aacc3f8489143396'></a> Source: [UpdateSubmodule.ps1](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ff7d9fb177488f956a2b408aa6612d229bd2f7dd/UpdateSubmodule.ps1)

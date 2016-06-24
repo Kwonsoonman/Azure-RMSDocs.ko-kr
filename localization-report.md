@@ -2669,8 +2669,8 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/17c2b904c5618c9cc2eac34e505a04bc1d7b233e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.ko-kr.xlf)
 * Handback Datetime: 2016-06-24 16:56:58
-* Bilingual File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/00c4df2e012f9976ebaaa40aa183ed35a7818a04/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.ko-kr.xlf)
-* Bilingual Datetime: 2016-06-16 10:20:30
+* Bilingual File: [index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/17c2b904c5618c9cc2eac34e505a04bc1d7b233e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/index.a68f40487a64012c94076ad9808d6bc7b03e9c0e.ko-kr.xlf)
+* Bilingual Datetime: 2016-06-24 17:29:16
 * [Back to Top](#report-top)
 
 ##### <a name='755db60abb7859af5065e2c5ddfbfc6cfb7aeeda157'></a> Source: [Azure-RMSDocs\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/11001c6ed1313dbffa975802378fb6ebeae14498/Azure-RMSDocs/md.style)

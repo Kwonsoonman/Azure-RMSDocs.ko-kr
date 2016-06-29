@@ -21,7 +21,7 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
     <section id="hero-content">
       <h1>Azure 권한 관리 설명서</h1>
       <h2>Azure RMS(Azure 권한 관리)를 배포하고 관리하는 방법에 대해 알아봅니다. 빠르게 Azure RMS를 사용하여 메일, 문서 및 기타 중요한 데이터에 정보 보호를 적용할 수 있습니다.</h2>
-      <h3>Azure RMS를 처음 사용하세요? <a href="http://www.microsoft.com/en-us/server-cloud/products/azure-rights-management/" target="_blank">Microsoft 제품 웹 사이트 방문 &rarr;</a></h3>
+      <h3>Azure RMS를 처음 사용하세요? <a href="http://go.microsoft.com/fwlink/?LinkId=816857" target="_blank">Microsoft 제품 웹 사이트 방문 &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>실습 준비</p>
@@ -224,6 +224,6 @@ ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 </article>
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

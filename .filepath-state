@@ -170,9 +170,6 @@
   "b4eec28ef5e0a44c5c60f88558b6168bce9718b2": [
     "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
   ],
-  "c3b40e57dadfacca62f2bd74e605a9a9959bb6e2": [
-    "Azure-RMSDocs\\develop\\add-explicit-owner-rights.md"
-  ],
   "24322775b689ad0508979853fd06b2d33fc33cc1": [
     "Azure-RMSDocs\\develop\\ad-rms-client.md"
   ],
@@ -186,9 +183,6 @@
     "Azure-RMSDocs\\develop\\ad-rms-overview.md"
   ],
   "2b7c99e3adafde7140d7997364ec2643ba79a2ac": [
-    "Azure-RMSDocs\\develop\\ad-rms-server.md"
-  ],
-  "685079958d71d8c681d9150aadcbbc4bfedd15ad": [
     "Azure-RMSDocs\\develop\\ad-rms-server.md"
   ],
   "5d8c7ab53f76005d7efbfd2d795da08e41f83941": [
@@ -218,9 +212,6 @@
   "34a82f31b5da46a59627ff559deb46c8445fcdf2": [
     "Azure-RMSDocs\\develop\\authentication-integration.md"
   ],
-  "b6e30ce14c5eb5f387a65d7f78fbb1c3abcabd1a": [
-    "Azure-RMSDocs\\develop\\authentication-integration.md"
-  ],
   "4a5c1a0b420b9db20cca237e2170b6479c565ee6": [
     "Azure-RMSDocs\\develop\\built-in-rights-usage-restriction-reference.md"
   ],
@@ -246,9 +237,6 @@
     "Azure-RMSDocs\\develop\\enabling-logging.md"
   ],
   "46b1fe5a0c4f138db65072d14489a5d588015df7": [
-    "Azure-RMSDocs\\develop\\file-api-configuration.md"
-  ],
-  "88a911b25c268c54e55bd5bc90ff3e946a9203ee": [
     "Azure-RMSDocs\\develop\\file-api-configuration.md"
   ],
   "b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27": [

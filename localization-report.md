@@ -1824,7 +1824,7 @@
 * Archive File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/24a9ac5d4c067206abd38853cf2101af917a5a24/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf)
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf)
-* Handback Datetime: 2016-07-02 14:20:44
+* Handback Datetime: 2016-07-02 16:22:39
 * Handback Error: [handback_transform_failed](#61f70a7b4a85c0ab6f0a2732fcf9d314a230e76995handback_transform_failed)
 * Bilingual File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf)
 * Bilingual Datetime: 2016-06-22 13:03:26

@@ -21,7 +21,7 @@
 * Archive File: [debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/24a9ac5d4c067206abd38853cf2101af917a5a24/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf)
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf)
-* Handback Datetime: 2016-07-02 08:18:32
+* Handback Datetime: 2016-07-02 10:21:50
 * Handback Error: [handback_transform_failed](#c00ce9829ce4150cfef74ecd972450b3d787f31257handback_transform_failed)
 * Bilingual File: [debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf)
 * Bilingual Datetime: 2016-06-22 13:03:26
@@ -36,7 +36,7 @@
 * Archive File: [setting-the-api-security-mode-api-mode.0b56ccf949d2c9ad30125d9a61d606bda60c90e8.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/24a9ac5d4c067206abd38853cf2101af917a5a24/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/setting-the-api-security-mode-api-mode.0b56ccf949d2c9ad30125d9a61d606bda60c90e8.ko-kr.xlf)
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [setting-the-api-security-mode-api-mode.0b56ccf949d2c9ad30125d9a61d606bda60c90e8.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/setting-the-api-security-mode-api-mode.0b56ccf949d2c9ad30125d9a61d606bda60c90e8.ko-kr.xlf)
-* Handback Datetime: 2016-07-02 08:18:32
+* Handback Datetime: 2016-07-02 10:21:50
 * Handback Error: [handback_transform_failed](#2be40c9caf33f391f8be9fe116d3473ce995613b89handback_transform_failed)
 * Bilingual File: [setting-the-api-security-mode-api-mode.0b56ccf949d2c9ad30125d9a61d606bda60c90e8.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/setting-the-api-security-mode-api-mode.0b56ccf949d2c9ad30125d9a61d606bda60c90e8.ko-kr.xlf)
 * Bilingual Datetime: 2016-06-22 13:03:26
@@ -51,7 +51,7 @@
 * Archive File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/24a9ac5d4c067206abd38853cf2101af917a5a24/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf)
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf)
-* Handback Datetime: 2016-07-02 08:18:32
+* Handback Datetime: 2016-07-02 10:21:50
 * Handback Error: [handback_transform_failed](#61f70a7b4a85c0ab6f0a2732fcf9d314a230e76995handback_transform_failed)
 * Bilingual File: [tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/tracking-content.96d55d65b4f5f5acd451c4e31ff2f07f2aa6fceb.ko-kr.xlf)
 * Bilingual Datetime: 2016-06-22 13:03:26
@@ -66,7 +66,7 @@
 * Archive File: [working-with-encryption.19f5df37a590d0c88fe306cf324bf9883b1786f3.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/24a9ac5d4c067206abd38853cf2101af917a5a24/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/working-with-encryption.19f5df37a590d0c88fe306cf324bf9883b1786f3.ko-kr.xlf)
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [working-with-encryption.19f5df37a590d0c88fe306cf324bf9883b1786f3.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/working-with-encryption.19f5df37a590d0c88fe306cf324bf9883b1786f3.ko-kr.xlf)
-* Handback Datetime: 2016-07-02 08:18:32
+* Handback Datetime: 2016-07-02 10:21:50
 * Handback Error: [handback_transform_failed](#82903eff43ee2dee7ef64e618171225a06013d99100handback_transform_failed)
 * Bilingual File: [working-with-encryption.19f5df37a590d0c88fe306cf324bf9883b1786f3.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/working-with-encryption.19f5df37a590d0c88fe306cf324bf9883b1786f3.ko-kr.xlf)
 * Bilingual Datetime: 2016-06-22 13:03:26

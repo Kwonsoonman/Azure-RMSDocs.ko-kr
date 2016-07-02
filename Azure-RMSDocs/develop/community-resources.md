@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 커뮤니티 리소스 | Azure RMS
-description: 여러 플랫폼에서 AD RMS를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다.
-keywords:
+title: "커뮤니티 리소스 | Azure RMS"
+description: "여러 플랫폼에서 AD RMS를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: 1476cfafbc3ecf619e66fee22f657c1714deffe8
+
 
 ---
 
@@ -53,6 +49,7 @@ Microsoft Connect에 등록하지 않은 경우 다음을 수행합니다.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

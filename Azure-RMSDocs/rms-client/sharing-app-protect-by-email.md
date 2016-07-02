@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호 | Azure RMS
-description:
-keywords:
+title: "Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: ea7f186e01606ca5e487bdfaab87d1eb0f2f41d3
+
 
 ---
 
@@ -37,7 +31,7 @@ ms.suite: ems
 
 -   이와 같은 보호된 첨부 파일을 다른 사람이 열려고 할 때 전자 메일을 받는 옵션을 선택합니다. 그러면 해당 파일에 액세스할 때마다 파일 열기를 시도한 사람과 시간, 그리고 파일이 열렸는지(사용자가 정상적으로 인증되었는지)에 대한 알림을 받게 됩니다.
 
--   문서 추적 사이트를 사용합니다. 문서 추적 사이트에서 문서 액세스를 취소하여 파일 공유를 중지할 수도 있습니다. 자세한 내용은 [RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](sharing-app-track-revoke.md) 항목을 참조하세요..
+-   문서 추적 사이트를 사용합니다. 문서 추적 사이트에서 문서 액세스를 취소하여 파일 공유를 중지할 수도 있습니다. 자세한 내용은 [RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](sharing-app-track-revoke.md)를 참조하세요.
 
 ## Outlook 사용: 전자 메일을 통해 공유하는 파일을 보호하려면
 
@@ -45,9 +39,9 @@ ms.suite: ems
 
     ![RMS 공유 응용 프로그램용 Outlook 추가 기능](../media/ADRMS_MSRMSApp_SP_OutlookToolbar.png)
 
-    이 단추가 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md) 항목을 참조하세요..
+    이 단추가 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md)를 참조하세요.
 
-2.  [보호된 항목 공유 대화 상자](sharing-app-dialog-box.md)에서 이 파일에 대해 사용할 옵션을 지정하고 **지금 보내기**를 클릭합니다..
+2.  [보호된 항목 공유 대화 상자](sharing-app-dialog-box.md)에서 이 파일에 대해 사용할 옵션을 지정하고 **지금 보내기**를 클릭합니다.
 
 ### 전자 메일을 통해 공유하는 파일을 보호하는 다른 방법
 Outlook을 사용하여 보호된 파일을 공유하는 방법 외에 다음과 같은 방법을 대신 사용할 수도 있습니다.
@@ -68,9 +62,9 @@ Outlook을 사용하여 보호된 파일을 공유하는 방법 외에 다음과
 
         ![Office 도구 모음 추가 기능](../media/ADRMS_MSRMSApp_SP_OfficeToolbar.png)
 
-    이러한 보호 옵션이 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md) 항목을 참조하세요..
+    이러한 보호 옵션이 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md)를 참조하세요.
 
-2.  [보호된 항목 공유 대화 상자](sharing-app-dialog-box.md)에서 이 파일에 대해 사용할 옵션을 지정하고 **보내기**를 클릭합니다..
+2.  [보호된 항목 공유 대화 상자](sharing-app-dialog-box.md)에서 이 파일에 대해 사용할 옵션을 지정하고 **보내기**를 클릭합니다.
 
 3.  파일이 보호되고 있음을 나타내는 대화 상자가 잠깐 표시될 수 있으며, 그 후에는 자동으로 작성된 전자 메일 메시지가 표시됩니다. 이 메시지에는 받는 사람에게 첨부 파일이 Microsoft RMS로 보호되어 있으며 로그인을 해야 함을 알려 주는 정보가 포함되어 있습니다. 받는 사람이 링크를 클릭하여 로그인하면 보호된 첨부 파일을 열 수 있는 지침과 링크가 표시됩니다.
 
@@ -98,6 +92,7 @@ Outlook을 사용하여 보호된 파일을 공유하는 방법 외에 다음과
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

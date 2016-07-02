@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 커넥터 배포 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 커넥터 배포 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e31656e417a0861d33deb2436d2e4b596a7512a7
+ms.openlocfilehash: 6b9b3b039ba2de0de174a134768afd763d26b5dd
+
 
 ---
 
@@ -31,7 +25,8 @@ ms.suite: ems
 
 다음 정보를 통해 Azure 권한 관리(RMS) 커넥터와 이러한 커넥터를 사용하여 Microsoft Exchange Server, Microsoft SharePoint Server 또는 Windows Server를 실행하고 파일 서버 리소스 관리자의 FCI(파일 분류 인프라) 기능을 활용하는 파일 서버를 사용하는 기존 온-프레미스 배포에 정보 보호 기능을 제공하는 방법을 확인할 수 있습니다.
 
-> [!TIP] 개괄적인 예제 시나리오 및 스크린샷을 보려면 [Azure RMS 실행](../understand-explore/what-admins-users-see.md) 문서에서 [Windows Server 및 파일 분류 인프라가 실행되는 파일 서버에서 파일을 자동으로 보호](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) 섹션을 참조하세요.
+> [!TIP]
+> 개괄적인 예제 시나리오 및 스크린샷을 보려면 [Azure RMS 실행](../understand-explore/what-admins-users-see.md) 문서에서 [Windows Server 및 파일 분류 인프라가 실행되는 파일 서버에서 파일을 자동으로 보호](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) 섹션을 참조하세요.
 
 ## Microsoft Rights Management 커넥터 개요
 Microsoft Rights Management(RMS) 커넥터를 통해 신속하게 기존 온-프레미스 서버가 클라우드 기반 Microsoft Rights Management 서비스(Azure RMS)에 IRM(정보 권한 관리) 기능을 사용하도록 할 수 있습니다. 이 기능을 통해 IT 및 사용자는 추가 인프라를 설치하거나 다른 조직과의 트러스트 관계를 설정할 필요 없이 조직 내/외부에서 쉽게 문서와 사진을 보호할 수 있습니다. 하이브리드 시나리오에서 일부 사용자가 온라인 서비스에 연결하더라도 이 커넥터를 사용할 수 있습니다. 예를 들어 일부 사용자의 사서함은 Exchange Online을 사용하고 일부 사용자의 사서함은 Exchange Server를 사용합니다. RMS 커넥터를 설치한 후에 모든 사용자는 Azure RMS를 사용하여 전자 메일 및 첨부 파일을 보호하고 사용할 수 있으며 정보 보호는 두 배포 구성 간에 원활하게 작동합니다.
@@ -44,7 +39,8 @@ Azure RMS에 대해 사용자 고유의 테넌트 키를 관리하는 경우('Br
 
 RMS 커넥터는 Exchange Server, SharePoint Server 및 Windows Server를 실행하고 파일 분류 인프라를 사용하여 Office 정책을 분류하고 폴더의 문서에 적용하는 파일 서버와 같은 온-프레미스 서버를 지원합니다. 파일 분류를 사용하여 모든 파일 형식을 보호하려는 경우 RMS 커넥터를 사용하지 않는 대신 [RMS 보호 cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)를 사용합니다.
 
-> [!NOTE] 이러한 온-프레미스 서버의 지원되는 버전은 [On-premises servers that support Azure RMS](..\get-started\requirements-servers.md)(Azure RMS를 지원하는 온-프레미스 서버) 항목을 참조하세요.
+> [!NOTE]
+> 이러한 온-프레미스 서버의 지원되는 버전은 [Azure RMS를 지원하는 온-프레미스 서버](..\get-started\requirements-servers.md)를 참조하세요.
 
 다음 정보를 참조하여 RMS 커넥터를 계획, 설치 및 구성할 수 있습니다. 그런 다음 서버가 커넥터를 사용할 수 있도록 설치 후 구성을 수행해야 합니다.
 
@@ -87,6 +83,7 @@ RMS 커넥터를 설치하기 전에 먼저 다음 요구 사항이 설정되어
 
 [Azure 권한 관리 커넥터 설치 및 구성](install-configure-rms-connector.md)으로 이동합니다.
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

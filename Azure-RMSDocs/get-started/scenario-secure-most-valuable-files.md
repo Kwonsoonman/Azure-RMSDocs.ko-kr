@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 시나리오 - 가장 중요한(소수) 파일 보호 | Azure RMS
-description:
-keywords:
+title: "시나리오 - 가장 중요한(소수) 파일 보호 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+
 
 ---
 
@@ -94,7 +88,8 @@ ms.suite: ems
 
 파일을 바로 보호하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)를 참조하세요.
 
-> [!TIP] 이 수동 프로세스에서 보호할 파일 수가 너무 많은 경우 [RMS 보호 도구](https://www.microsoft.com/en-us/download/details.aspx?id=47256)를 사용하여 템플릿을 통해 파일을 대량 보호하는 것이 좋습니다.
+> [!TIP]
+> 이 수동 프로세스에서 보호할 파일 수가 너무 많은 경우 [RMS 보호 도구](https://www.microsoft.com/en-us/download/details.aspx?id=47256)를 사용하여 템플릿을 통해 파일을 대량 보호하는 것이 좋습니다.
 
 ### 파일 액세스를 모니터링하고 필요한 경우 액세스 권한을 취소하려면
 
@@ -152,6 +147,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 공유 응용 프로그램 다운로드 및 설치 | Azure RMS
-description:
-keywords:
+title: "Rights Management 공유 응용 프로그램 다운로드 및 설치 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
+
 
 ---
 
@@ -37,9 +31,9 @@ ms.suite: ems
 
 2.  **컴퓨터** 섹션에서 **Windows용 RMS 앱** 의 아이콘을 클릭하고 **Setup.exe** 파일을 저장하여 Microsoft Rights Management 공유 응용 프로그램을 설치합니다.
 
-3.  다운로드된 Setup.exe 파일을 두 번 클릭합니다. 계속하라는 메시지가 표시되면 **예**를 클릭합니다..
+3.  다운로드된 Setup.exe 파일을 두 번 클릭합니다. 설치를 계속할지 묻는 메시지가 표시되면 **예**를 클릭합니다.
 
-4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료되기를 기다립니다.
+4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료될 때까지 기다립니다.
 
     > [!NOTE]
     > RMS 공유 응용 프로그램에는 Microsoft.NET Framework 버전 4.0 이상이 필요합니다. 설치 프로그램에서 이 버전이 설치되어 있는지 확인하며, 설치되어 있지 않은 경우 설치할 수 있는 링크가 포함된 메시지가 나타납니다.
@@ -75,6 +69,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

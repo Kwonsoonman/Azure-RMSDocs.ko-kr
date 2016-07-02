@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 응용 프로그램 배포 | Azure RMS
-description: 이 항목에서는 권한 사용 응용 프로그램에 대한 배포 옵션을 간략하게 설명하고 안내합니다.
-keywords:
+title: "응용 프로그램 배포 | Azure RMS"
+description: "이 항목에서는 권한 사용 응용 프로그램에 대한 배포 옵션을 간략하게 설명하고 안내합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
+ms.openlocfilehash: 902721ae3e69afd144c552b8ee0a916958e80afc
+
 
 ---
 
@@ -84,7 +80,8 @@ RMS Client 2.1은 온-프레미스 또는 Microsoft 데이터 센터에 설치�
 RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Client 2.1은 선택적 다운로드로 제공되며, 사용권 계약의 승인 및 동의를 통해 타사 소프트웨어와 함께 무료로 배포되어, 사용자 환경에서 RMS 서버를 사용하고 배포하여 권한이 보호된 콘텐츠를 클라이언트가 액세스할 수 있게 합니다.
 
 
-> [!IMPORTANT] AD RMS 클라이언트 2.1은 아키텍처와 관련이 있으며, 대상 운영 체제의 아키텍처와 일치해야 합니다.
+> [!IMPORTANT]
+> AD RMS 클라이언트 2.1은 아키텍처와 관련이 있으며, 대상 운영 체제의 아키텍처와 일치해야 합니다.
 
 
 ## RMS Client 2.1 설치 옵션
@@ -137,6 +134,7 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

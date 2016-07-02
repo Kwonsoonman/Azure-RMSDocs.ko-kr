@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 시작 | Azure RMS
-description: 첫 번째 응용 프로그램의 빠른 시작 가이드는 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 통해 제공됩니다.
-keywords:
+title: "시작 | Azure RMS"
+description: "첫 번째 응용 프로그램의 빠른 시작 가이드는 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 통해 제공됩니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: b2f5d6d366c767a4c2fb2f5e86ee69509a2aba27
+
 
 ---
 
@@ -59,6 +55,7 @@ ms.suite: ems
   |[커뮤니티 리소스](community-resources.md)|여러 플랫폼에서 Active Directory Rights Management Services를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다.|
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

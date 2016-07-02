@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 명시적 소유자 권한 추가 방법 | Azure RMS
-description: 라이선스를 처음부터 만드는 경우 응용 프로그램에서 "소유자" 권한을 명시적으로 추가해야 합니다.
-keywords:
+title: "명시적 소유자 권한 추가 방법 | Azure RMS"
+description: "라이선스를 처음부터 만드는 경우 응용 프로그램에서 \"소유자\" 권한을 명시적으로 추가해야 합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: b4eec28ef5e0a44c5c60f88558b6168bce9718b2
+
 
 ---
 
@@ -32,7 +28,8 @@ ms.suite: ems
 
 응용 프로그램이 [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)를 사용하여 라이선스 핸들을 만드는 경우 소유자에게 모든 권한을 명시적으로 부여해야 합니다.
 
->[!NOTE] **IPC\_LI\_OWNER** 속성과 함께 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)를 사용하여 사용자를 "소유자"로 설정하는 경우에는 소유자에게 모든 권한이 부여되지 않습니다.
+>[!NOTE] 
+> **IPC\_LI\_OWNER** 속성과 함께 [**IpcSetLicenseProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)를 사용하여 사용자를 "소유자"로 설정하는 경우에는 소유자에게 모든 권한이 부여되지 않습니다.
 
 다음 예제 코드에서는 특정 권한을 만들고 특정 라이선스에 추가하는 작업과 관련된 단계만 보여 줍니다.
 
@@ -118,6 +115,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

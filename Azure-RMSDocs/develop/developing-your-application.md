@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 응용 프로그램 배포 | Azure RMS
-description: RMS SDK 2.1을 사용하여 응용 프로그램을 개발하는 방법에 대한 지침입니다.
-keywords:
+title: "응용 프로그램 배포 | Azure RMS"
+description: "RMS SDK 2.1을 사용하여 응용 프로그램을 개발하는 방법에 대한 지침입니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: f995da0698ec5fb4a8e46865b70506ced92f73db
+
 
 ---
 
@@ -32,7 +28,8 @@ ms.suite: ems
 
 이 항목에 제공된 지침은 샘플 응용 프로그램인 IPCHelloWorld를 기반으로 합니다. 이 샘플 응용 프로그램은 권한 사용 응용 프로그램의 기본 개념 및 코드를 이해하는 데 도움이 됩니다. Microsoft Connect에서 전체 IPCHellowWorld 샘플 응용 프로그램을 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)으로 다운로드할 수 있습니다.
 
-> [!Note] IPCHelloWorld 프로젝트는 권한 관리 서비스 SDK 2.1용으로 이미 구성되어 있습니다. RMS SDK 2.1을 사용하도록 새 프로젝트를 구성하는 방법에 대한 자세한 내용은 [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)을 참조하세요.
+> [!Note] 
+> IPCHelloWorld 프로젝트는 권한 관리 서비스 SDK 2.1용으로 이미 구성되어 있습니다. RMS SDK 2.1을 사용하도록 새 프로젝트를 구성하는 방법에 대한 자세한 내용은 [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)을 참조하세요.
 
 ## MSIPC.dll 로드
 
@@ -187,6 +184,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

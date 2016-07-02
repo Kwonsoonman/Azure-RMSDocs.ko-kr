@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 개발 환경 파일 | Azure RMS
-description: 이 항목에서는 개발 환경 파일과 컴퓨터의 상대 설치 위치를 보여 줍니다.
-keywords:
+title: "개발 환경 파일 | Azure RMS"
+description: "이 항목에서는 개발 환경 파일과 컴퓨터의 상대 설치 위치를 보여 줍니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: 3d6e7c2b40ba80988e93186fd68a12e6216b477d
+
 
 ---
 
@@ -58,6 +54,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호 | Azure RMS
-description:
-keywords:
+title: "Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
+ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+
 
 ---
 
@@ -33,7 +27,8 @@ RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파�
 
 이 솔루션을 사용하면 Windows Server를 실행 중인 파일 서버의 폴더에 있는 모든 파일 또는 특정 기준을 충족하는 파일을 자동으로 보호할 수 있습니다. 기밀 정보나 중요 정보를 포함하는 것으로 분류된 파일을 예로 들 수 있습니다. 이 솔루션은 Azure 권한 관리(Azure RMS)를 사용하여 파일을 보호하므로 조직에 이 기술을 배포해야 합니다.
 
-> [!NOTE] Azure RMS는 파일 분류 인프라를 지원하는 [커넥터](../deploy-use/deploy-rms-connector.md)를 포함하지만 해당 솔루션은 Office 파일 등의 기본 보호만 지원합니다.
+> [!NOTE]
+> Azure RMS는 파일 분류 인프라를 지원하는 [커넥터](../deploy-use/deploy-rms-connector.md)를 포함하므로 해당 솔루션은 Office 파일 등의 기본 보호만 지원합니다.
 > 
 > 파일 분류 인프라를 사용하는 모든 파일 형식을 지원하려면 이 문서에서 설명하는 Windows PowerShell **RMS 보호** 모듈을 사용해야 합니다. RMS 보호 cmdlet은 RMS 공유 응용 프로그램과 마찬가지로 일반 보호와 기본 보호를 모두 지원하므로 모든 파일을 보호할 수 있습니다. 다양한 보호 수준에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [보호 수준 - 기본 및 일반](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요.
 
@@ -278,7 +273,8 @@ Windows PowerShell 스크립트를 사용자 지정 작업으로 사용하여 �
     ```
     foreach ($file in (Get-ChildItem -Path C:\FileShare -Force | where {!$_.PSIsContainer})) {Get-RMSFileStatus -f $file.PSPath}
     ```
-    > [!TIP] 아래에는 몇 가지 문제 해결 팁이 나와 있습니다.
+    > [!TIP]
+    > 아래에는 몇 가지 문제 해결 팁이 나와 있습니다.
     > 
     > -   보고서에 폴더의 파일 수가 아닌 **0** 이 표시되는 경우 스크립트가 실행되지 않은 것입니다. 먼저 스크립트를 Windows PowerShell ISE에서 로드하여 스크립트 내용의 유효성을 검사하는 방식으로 스크립트 자체를 점검한 다음 스크립트를 실행하여 오류가 표시되는지를 확인합니다. 인수를 지정하지 않는 경우 스크립트는 Azure RMS 연결 및 인증을 시도합니다.
     > 
@@ -306,6 +302,7 @@ Windows PowerShell 스크립트를 사용자 지정 작업으로 사용하여 �
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

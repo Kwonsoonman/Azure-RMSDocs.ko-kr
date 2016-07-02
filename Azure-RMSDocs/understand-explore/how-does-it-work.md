@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 작동 방식 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 작동 방식 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
+ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+
 
 ---
 
@@ -77,7 +71,8 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure RMS �
 
 사용자 환경이 초기화되면 사용자는 문서를 보호하거나 해당 컴퓨터에서 보호된 문서를 사용할 수 있습니다.
 
-> [!NOTE] 이 사용자가 다른 Windows 컴퓨터로 이동하거나 다른 사용자가 동일한 Windows 컴퓨터를 사용하면 초기화 프로세스가 반복됩니다.
+> [!NOTE]
+> 이 사용자가 다른 Windows 컴퓨터로 이동하거나 다른 사용자가 이 동일한 Windows 컴퓨터를 사용하면 초기화 프로세스가 반복됩니다.
 
 ### 사용자 환경 초기화
 사용자가 콘텐츠를 보호하거나 Windows 컴퓨터에서 보호된 콘텐츠를 소비하려면 먼저 장치에서 사용자 환경이 준비되어야 합니다. 이것은 일회성 프로세스이며 사용자가 콘텐츠를 보호하거나 보호된 콘텐츠를 사용하려고 할 때 사용자 개입 없이 자동으로 발생합니다.
@@ -151,9 +146,11 @@ Azure RMS 구성 및 사용 시 나올 수 있는 용어를 파악할 수 있도
 
 조직에 대해 Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로드맵](../plan-design/deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
 
-> [!TIP] 추가 정보와 도움말을 확인하려면 [Azure 권한 관리에 대한 정보 및 지원](../get-started/information-support.md) 항목의 리소스와 링크를 사용하세요.
+> [!TIP]
+> 추가 정보와 도움말을 확인하려면 [Azure 권한 관리에 대한 정보 및 지원](../get-started/information-support.md)의 리소스와 링크를 사용하세요.
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

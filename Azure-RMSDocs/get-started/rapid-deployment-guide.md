@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 빠른 배포 가이드 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 빠른 배포 가이드 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+
 
 ---
 
@@ -39,7 +33,8 @@ ms.suite: ems
 
 이러한 솔루션을 배포하기 전에 최종 사용자에게 광범위한 알림을 전송하여 회사 데이터를 보호하기 위해 일부 변경이 예정되어 있으며 그에 따라 최종 사용자도 변경해야 할 수 있음을 알리는 것이 좋습니다. 다음 표 뒤에 예제 통신이 포함되어 있습니다.
 
-> [!NOTE] 이 가이드에 대한 질문과 의견이 있는 경우 이 페이지의 피드백 메커니즘을 사용하거나 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)으로 메일 메시지를 보내 주세요.
+> [!NOTE]
+> 이 가이드에 대한 질문과 의견이 있는 경우 이 페이지의 피드백 메커니즘을 사용하거나 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)으로 메일 메시지를 보내 주세요.
 
 ## Azure RMS에 대한 시나리오
 Azure RMS를 신속하게 배포하여 특정 비즈니스 문제를 해결하려면 비즈니스 목표와 가장 일치하는 시나리오를 선택한 다음 필요에 따라 변경합니다.
@@ -151,6 +146,7 @@ IT 부서에서 Microsoft Azure 권한 관리(Azure RMS)를 엔터프라이즈 �
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

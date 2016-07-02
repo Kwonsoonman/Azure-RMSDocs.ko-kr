@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 시나리오 - 다른 조직의 사용자와 Office 파일 공유 | Azure RMS
-description:
-keywords:
+title: "시나리오 - 다른 조직의 사용자와 Office 파일 공유 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 6a6f9d8c0a98752413a99d30926f2b5bc8af193d
+
 
 ---
 
@@ -74,7 +68,8 @@ ms.suite: ems
 
     -   이 단계에서 만료 날짜를 설정하지는 않습니다. 특정 날짜 후에는 정보를 사용하면 안 되는 경우 메일 메시지를 보낸 날부터 90일과 같은 적절한 만료 시간을 설정하는 다른 단계를 추가합니다.
 
-    > [!NOTE]사용자가 선택할 수 있는 각 옵션에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램의 대화 상자 옵션](https://technet.microsoft.com/library/dn574738.aspx)을 참조하세요.
+    > [!NOTE]
+    > 사용자가 선택할 수 있는 각 옵션에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램의 대화 상자 옵션](https://technet.microsoft.com/library/dn574738.aspx)을 참조하세요.
 
 4.  이 지침 집합을 원하는 대로 수정한 다음 해당 사용자에게 보냅니다.
 
@@ -159,6 +154,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

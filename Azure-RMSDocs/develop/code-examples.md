@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 코드 예제 | Azure RMS
-description: RMS SDK 4.2에는 지원되는 일부 운영 체제에 대한 예제 코드와 작업 프로젝트가 포함되어 있습니다.
-keywords:
+title: "코드 예제 | Azure RMS"
+description: "RMS SDK 4.2에는 지원되는 일부 운영 체제에 대한 예제 코드와 작업 프로젝트가 포함되어 있습니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 634df601-79d2-4bc2-b845-4df886d7c589
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
+ms.openlocfilehash: b46c9eae435dda222606e9bfe7b45b0cb4b1e821
+
 
 ---
 
@@ -49,6 +45,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

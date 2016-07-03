@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 0ca9b8d9643f5489c100fa3aa614e89cd396df52
+
 
 ---
 
@@ -46,13 +40,13 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 슈퍼 사용자 기능을 수동으로 사용하도록 설정해야 하는 경우 Windows PowerShell cmdlet Windows PowerShell cmdlet [Enable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629400.aspx)를 사용합니다. 그런 다음 [Add-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629411.aspx) cmdlet 또는 [Set-AadrmSuperUserGroup](https://msdn.microsoft.com/library/azure/mt653943.aspx) cmdlet을 사용하여 필요에 따라 사용자 또는 서비스 계정을 할당하고, 필요에 따라 이 그룹에 사용자 또는 다른 그룹을 추가합니다. 
 
 > [!NOTE]
-> [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md) 항목을 참조하세요..
+> [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
 
 슈퍼 사용자 기능에 대한 보안 모범 사례
 
 -   Office 365 또는 Azure RMS 테넌트의 전역 관리자로 할당되거나 [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/azure/dn629417.aspx) cmdlet를 사용하여 GlobalAdministrator 역할이 할당된 관리자를 제한하고 모니터링합니다. 이러한 사용자는 슈퍼 사용자 기능을 사용하도록 설정하고 사용자(및 자신)를 슈퍼 사용자로 할당하며, 잠재적으로 조직에서 보호하는 모든 파일의 암호를 해독할 수 있습니다.
 
--   슈퍼 사용자로 할당된 사용자 및 서비스 계정을 개별적으로 확인하려면 [Get-AadrmSuperUser cmdlet](https://msdn.microsoft.com/library/azure/dn629408.aspx)을 사용합니다. 슈퍼 사용자 그룹이 구성되어 있는지 여부를 확인하려면 [Get-AadrmSuperUser](https://msdn.microsoft.com/library/azure/mt653942.aspx) cmdlet 및 표준 사용자 관리 도구를 사용하여 어느 사용자가 이 그룹의 구성원인지 확인합니다. 모든 관리 작업과 마찬가지로 슈퍼 기능을 사용하거나 사용하지 않도록 설정하는 작업 및 슈퍼 사용자를 추가하거나 제거하는 작업은 기록되며 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) 명령을 사용하여 감사할 수 있습니다. 슈퍼 사용자가 파일의 암호를 해독하면 이 작업이 기록되고 [사용 현황 로깅](log-analyze-usage.md)을 통해 감사할 수 있습니다..
+-   슈퍼 사용자로 할당된 사용자 및 서비스 계정을 개별적으로 확인하려면 [Get-AadrmSuperUser cmdlet](https://msdn.microsoft.com/library/azure/dn629408.aspx)을 사용합니다. 슈퍼 사용자 그룹이 구성되어 있는지 여부를 확인하려면 [Get-AadrmSuperUser](https://msdn.microsoft.com/library/azure/mt653942.aspx) cmdlet 및 표준 사용자 관리 도구를 사용하여 어느 사용자가 이 그룹의 구성원인지 확인합니다. 모든 관리 작업과 마찬가지로 슈퍼 기능을 사용하거나 사용하지 않도록 설정하는 작업 및 슈퍼 사용자를 추가하거나 제거하는 작업은 기록되며 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) 명령을 사용하여 감사할 수 있습니다. 슈퍼 사용자가 파일의 암호를 해독하면 이 작업이 기록되고 [사용 현황 로깅](log-analyze-usage.md)을 통해 감사할 수 있습니다.
 
 -   일상적인 서비스에 슈퍼 사용자 기능이 필요하지 않은 경우에는 필요할 때만 이 기능을 사용하도록 설정하고 [Disable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629428.aspx) cmdlet를 사용하여 다시 사용하지 않도록 설정합니다.
 
@@ -69,7 +63,7 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 ## 슈퍼 사용자에 대한 스크립팅 옵션
 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]에 대한 슈퍼 사용자 역할이 할당된 사용자가 여러 위치에서 여러 파일의 보호를 제거해야 하는 상황이 종종 발생합니다. 이 작업은 수동으로 수행할 수도 있지만 스크립트를 작성하는 것이 더 효율적이며 더욱 안정적인 경우가 많습니다. 이렇게 하려면 [RMS Protection Tool](http://www.microsoft.com/en-us/download/details.aspx?id=47256)을 다운로드합니다. 그런 후에 [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) cmdlet 및 [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) cmdlet을 필요에 따라 사용합니다.
 
-이러한 cmdlet에 대한 자세한 내용은 [RMS Protection Cmdlets](https://msdn.microsoft.com/library/azure/mt433195.aspx)(RMS 보호 Cmdlet) 항목을 참조하세요..
+이러한 cmdlet에 대한 자세한 내용은 [RMS 보호 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)를 참조하세요.
 
 > [!NOTE]
 > RMS 보호 도구와 함께 제공되는 RMS 보호 PowerShell 모듈은 기본 [Azure 권한 관리용 Windows PowerShell 모듈](administer-powershell.md)과는 다르며 해당 모듈을 보완합니다. RMS 보호 모듈은 Azure RMS와 AD RMS를 둘 다 지원합니다.
@@ -77,6 +71,7 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

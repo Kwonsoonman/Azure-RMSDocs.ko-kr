@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소 | Azure RMS
-description:
-keywords:
+title: "RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 9d5c9558e809779940fac095a789730d5e5924e6
+
 
 ---
 
@@ -43,11 +37,11 @@ ms.suite: ems
 
 -   전자 메일 알림을 구성하려는 경우 **설정** 을 클릭하고 문서 액세스 시 전자 메일로 알림을 받을지 여부와 해당 방법을 선택합니다.
 
--   문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [FAQ for Document Tracking](http://go.microsoft.com/fwlink/?LinkId=523977)(문서 추적 FAQ) 항목에 액세스합니다..
+-   문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [문서 추적 FAQ](http://go.microsoft.com/fwlink/?LinkId=523977)에 액세스합니다.
 
 ## Office를 사용하여 문서 추적 사이트 액세스
 
--   Office 응용 프로그램, Word, Excel, PowerPoint의 경우 **홈** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다..
+-   Office 응용 프로그램, Word, Excel, PowerPoint의 경우 **홈** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 Office 응용 프로그램에서 사용 추적 ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
 
@@ -55,7 +49,7 @@ ms.suite: ems
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 Outlook에서 사용 추적 선택 ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
-이러한 RMS 옵션이 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md) 항목을 참조하세요..
+이러한 RMS 옵션이 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md)를 참조하세요.
 
 ### 문서를 추적 및 취소하는 다른 방법
 Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추적할 수 있을 뿐 아니라 다음과 같은 대체 방법을 사용할 수도 있습니다.
@@ -68,7 +62,7 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 #### 웹 브라우저를 사용하여 문서 추적 사이트 액세스
 
--   지원되는 브라우저를 사용하여 [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다..
+-   지원되는 브라우저를 사용하여 [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다.
 
     지원되는 브라우저: Internet Explorer 버전 10 이상을 사용하는 것이 좋지만 다음 브라우저를 통해서도 문서 추적 사이트를 사용할 수 있습니다.
 
@@ -105,6 +99,7 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

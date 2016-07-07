@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Windows 스토어 설정 | Azure RMS
-description: Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
-keywords:
+title: "Windows 스토어 설정 | Azure RMS"
+description: "Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 0b8e0fb6d872506ac3529bd137286f0e8fa562ee
+
 
 ---
 
@@ -41,7 +36,7 @@ Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2�
 개발 시스템에 다음 소프트웨어가 있어야 합니다.
 
 -   [Windows 8.1](http://windows.microsoft.com/en-US/windows-8/meet) 운영 체제
--   [Windows 8.1용 Windows SDK](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)
+-   [Windows 8.1용 Windows SDK](https://msdn.microsoft.com/windows/desktop/bg162891.aspx)
 -   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) 이상 또는 Windows 8.0/8.1용 Windows SDK에 포함되어 있는 Visual Studio Express 2012
 -   Windows 스토어 응용 프로그램용 MS RMS SDK 4.2 패키지 자세한 내용은 [시작](get-started.md)을 참조하세요.
 -   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/en-us/library/jj573266.aspx)를 사용하는 것이 좋으며 다른 인증 라이브러리를 사용할 수도 있습니다.
@@ -57,7 +52,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 -   Visual Studio를 엽니다.
 -   **파일**, **새로 만들기**를 차례로 클릭한 다음 **프로젝트**를 클릭합니다.
--   **새 프로젝트** 대화 상자에서 **Visual C\#**을 클릭하고 **비어 있는 앱(Windows)**을 선택한 다음 **확인**을 클릭합니다.
+-   **새 프로젝트** 대화 상자에서 **Visual C\#** 을 클릭하고 **비어 있는 앱(Windows)**을 선택한 다음 **확인**을 클릭합니다.
 
     ![새 프로젝트 만들기](../media/winrtsetup-newproj.png)
 
@@ -89,6 +84,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 [Windows API 참조](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

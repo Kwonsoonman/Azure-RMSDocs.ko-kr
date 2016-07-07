@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 개요 | Azure RMS
-description: RMS(권한 관리 서비스)는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다.
-keywords:
+title: "개요 | Azure RMS"
+description: "RMS(권한 관리 서비스)는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 37f3bc2308caaa8fd5e5c7fc8c56b6dc4d076b97
+
 
 ---
 
@@ -44,7 +39,7 @@ AD RMS는 [서버](ad-rms-server.md) 및 [클라이언트](ad-rms-client.md) 구
 -   온라인 문서 라이브러리의 소유자가 사용자의 ID에 따라 문서를 보거나 인쇄 또는 편집할 수 있는 권한을 설정하려고 합니다.
 -   회사에서 보기 및 편집 권한을 특정 사용자로 제한하는 내부 웹 사이트에 중요한 직원 정보를 게시하려고 합니다.
 
-AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내용은 [AD RMS에 대한 IT 전문가 설명서](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)의 TechNet 콘텐츠를 참조하세요.
+AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내용은 [AD RMS에 대한 IT 전문가 설명서](https://TechNet.Microsoft.Com/library/cc771234.aspx)의 TechNet 콘텐츠를 참조하세요.
 
 이 섹션의 나머지 항목에서는 RMS 아키텍처 및 구현 과정을 다룹니다.
 
@@ -66,6 +61,7 @@ AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내�
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

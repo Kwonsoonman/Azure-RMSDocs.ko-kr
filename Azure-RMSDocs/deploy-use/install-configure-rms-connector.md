@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 커넥터 설치 및 구성 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 커넥터 설치 및 구성 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/27/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4b7539ab311d782c3987a8fd74940aad72e65b
+ms.openlocfilehash: 165292482349e4a233ab4030f49a297f57b041ac
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 
 *적용 대상: Azure 권한 관리, Office 365*
 
-다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 설치 및 구성할 수 있습니다. 이러한 절차는 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)의 1-4단계를 설명합니다..
+다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 설치 및 구성할 수 있습니다. 이러한 절차는 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)의 1-4단계를 설명합니다.
 
 시작하기 전에 이 배포에 대한 [필수 조건](deploy-rms-connector.md#prerequisites-for-the-rms-connector)을 검토 및 확인해야 합니다.
 
@@ -41,7 +35,7 @@ ms.suite: ems
     > [!NOTE]
     > 테넌트(Office 365 테넌트 또는 Azure AD 테넌트)당 하나의 RMS 커넥터(고가용성을 위해 여러 대의 서버로 구성)를 설치합니다. Active Directory RMS와 달리 각 포리스트에 RMS 커넥터를 설치할 필요가 없습니다.
 
-2.  [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=314106)에서 RMS 커넥터의 원본 파일을 다운로드합니다..
+2.  [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=314106)에서 RMS 커넥터의 원본 파일을 다운로드합니다.
 
     RMS 커넥터를 설치하려면 RMSConnectorSetup.exe를 다운로드합니다.
 
@@ -53,31 +47,33 @@ ms.suite: ems
 
 3.  RMS 커넥터를 설치할 컴퓨터에서 관리자 권한으로 **RMSConnectorSetup.exe** 를 실행합니다.
 
-4.  Microsoft Rights Management 커넥터 설치 페이지의 시작 페이지에서 **컴퓨터에 Microsoft Rights Management 커넥터 설치**를 선택하고 **다음**을 클릭합니다..
+4.  Microsoft Rights Management 커넥터 설치 페이지의 시작 페이지에서 **컴퓨터에 Microsoft Rights Management 커넥터 설치**를 선택하고 **다음**을 클릭합니다.
 
-5.  RMS 커넥터 사용 조건을 읽고 동의한 후 **다음**을 클릭합니다..
+5.  RMS 커넥터 사용 조건을 읽고 동의한 후 **다음**을 클릭합니다.
 
 계속하려면 계정과 암호를 입력하여 RMS 커넥터를 구성합니다.
 
 ## 자격 증명 입력
 RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있는 권한이 있는 계정의 자격 증명을 입력해야 합니다. 예를 들어 **admin@contoso.com**을 입력한 다음 이 계정의 암호를 지정할 수 있습니다.
 
-이 암호에 대한 몇 가지 문자 제한이 있습니다. 암호에 앰퍼샌드(**&**), 왼쪽 꺾쇠 괄호(**[**), 오른쪽 꺾쇠 괄호(**]**), 곧은 따옴표(**"**) 및 아포스트로피(**'**)와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증이 실패하고 사용자 이름과 암호 조합이 잘못되었습니다.라는 오류 메시지가 표시됩니다. 이 사항을 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나, 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
+이 암호에 대한 몇 가지 문자 제한이 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증이 실패하고 사용자 이름과 암호 조합이 잘못되었습니다.라는 오류 메시지가 표시됩니다. 이 사항을 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나, 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
 
 또한 [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구현한 경우 지정한 계정이 콘텐츠를 보호할 수 있어야 합니다. 예를 들어 "IT department" 그룹에 콘텐츠를 보호하는 기능을 제한한 경우 여기서 지정한 계정은 해당 그룹의 구성원이어야 합니다. 그렇지 않으면 다음과 같은 오류 메시지가 표시됩니다. **관리 서비스 및 조직의 위치를 검색하려는 시도가 실패했습니다. 조직에 Microsoft Rights Management 서비스를 사용할 수 있는지 확인합니다.**
 
 다음 권한 중 하나가 있는 계정을 사용할 수 있습니다.
 
--   **Office 365 테넌트 관리자**: Office 365 테넌트의 전역 관리자인 계정입니다.
+-   **테넌트에 대한 전역 관리자**: Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자인 계정입니다.
 
--   **Azure 권한 관리 전역 관리자**: Azure RMS 테넌트에 대한 관리자 권한이 있는 계정입니다.
+-   **Azure Rights Management 전역 관리자**: Azure RMS 전역 관리자 역할이 할당된 Azure Active Directory에 있는 계정입니다.
 
--   **Microsoft RMS 커넥터 관리자**: 조직의 RMS 커넥터를 설치 및 관리할 권한이 부여된 Azure Active Directory의 계정입니다.
+-   **Azure Rights Management 커넥터 관리자**: 조직의 RMS 커넥터를 설치 및 관리할 권한이 부여된 Azure Active Directory의 계정입니다.
 
     > [!NOTE]
-    > Microsoft RMS 커넥터 관리자 계정을 사용하려면 먼저 다음을 수행하여 RMS 커넥터 관리자 역할을 할당해야 합니다.
+    > Azure Rights Management 전역 관리자 역할 및 Azure Rights Management 커넥터 관리자 역할은 Azure RMS [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx) cmdlet을 사용하여 계정에 할당됩니다.
+    > 
+    > 최소 권한으로 RMS 커넥터를 실행하려면 다음을 수행하여 Azure RMS 커넥터 관리자 역할이 할당된 전용 계정을 이 용도로 만듭니다.
     >
-    > 1.  동일한 컴퓨터에서 Rights Management용 Windows PowerShell을 다운로드하여 설치합니다. 자세한 내용은 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md) 항목을 참조하세요..
+    > 1.  Rights Management용 Windows PowerShell을 아직 다운로드하여 설치하지 않은 경우 다운로드한 후 설치합니다. 자세한 내용은 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
     >
     >     **관리자 권한으로 실행** 명령을 사용하여 Windows PowerShell을 시작한 후 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) 명령을 사용하여 Azure RMS 서비스에 연결합니다.
     >
@@ -97,9 +93,9 @@ RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있�
     >     ```
     >     Add-AadrmRoleBasedAdministrator -SecurityGroupDisplayName <group Name> -Role "ConnectorAdministrator"
     >     ```
-    >     예를 들어 다음과 같이 입력합니다. **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role " ConnectorAdministrator "**
+    >     예를 들어 다음과 같이 입력합니다. **Add-AadrmRoleBasedAdministrator -EmailAddress melisa@contoso.com -Role "ConnectorAdministrator"**
     >
-    >     이러한 명령은 ConnectorAdministrator 역할을 사용하지만 여기서 GlobalAdministrator 역할을 사용할 수도 있습니다.
+    >     이러한 명령은 커넥터 관리자 역할을 할당하지만 여기서 전역 관리자 역할을 사용할 수도 있습니다.
 
 RMS 커넥터 설치 프로세스 동안 모든 필수 구성 요소 소프트웨어가 유효성 검사 및 설치되고, IIS(인터넷 정보 서비스)가 아직 없는 경우 설치되며, 커넥터 소프트웨어가 설치 및 구성됩니다. 또한 다음을 만들어 Azure RMS의 구성을 준비합니다.
 
@@ -111,7 +107,7 @@ RMS 커넥터 설치 프로세스 동안 모든 필수 구성 요소 소프트�
 
 -   이 커넥터가 처음으로 설치한 커넥터인 경우에는 지금 **커넥터 관리자 콘솔을 시작하여 서버에 권한 부여** 를 선택하지 마세요. 두 번째(또는 마지막) RMS 커넥터를 설치한 후 이 옵션을 선택합니다. 대신, 다른 컴퓨터 한 대 이상에서 마법사를 다시 실행합니다. 최소 두 개의 커넥터를 설치해야 합니다.
 
--   두 번째 또는 마지막 커넥터를 설치한 후 **커넥터 관리자 콘솔을 시작하여 서버에 권한 부여**를 선택합니다..
+-   두 번째 또는 마지막 커넥터를 설치한 후 **커넥터 관리자 콘솔을 시작하여 서버에 권한 부여**를 선택합니다.
 
 > [!TIP]
 > 이때 RMS 커넥터의 웹 서비스가 작동하는지를 테스트하기 위해 수행할 수 있는 확인 테스트가 있습니다.
@@ -131,7 +127,7 @@ RMS 커넥터를 제거해야 할 경우 마법사를 다시 실행하고 제거
 
 -   Active Directory 보안 또는 메일 그룹이나 둘 이상의 서버에서 사용되는 서비스 계정을 지정하여 여러 서버를 단일 항목으로 추가할 수 있습니다. 이 구성을 사용할 경우 서버 그룹에서 동일한 RMS 인증서를 공유하고 이 서버 그룹에 속한 서버는 모두 이 서버 그룹의 특정 서버가 보호하는 콘텐츠의 소유자로 간주됩니다. 관리 오버헤드를 최소화하기 위해서는 조직의 Exchange Server 또는 SharePoint Server 팜에 권한을 부여하는 데 개별 서버가 아니라 이 단일 그룹 구성을 사용하는 것이 좋습니다.
 
-**커넥터를 사용할 수 있는 서버** 페이지에서 **추가**를 클릭합니다..
+**커넥터를 사용할 수 있는 서버** 페이지에서 **추가**를 클릭합니다.
 
 > [!NOTE]
 > 서버 권한 부여는 서비스 또는 서버 컴퓨터 계정에 대한 ServerCertification.asmx에 NTFS 권한을 수동으로 적용하고 Exchange 계정에 사용자 슈퍼 권한을 수동으로 부여하는 AD RMS 구성과 동등한 Azure RMS의 구성입니다. 커넥터에서는 ServerCertification.asmx에 NTFS 권한을 적용할 필요가 없습니다.
@@ -161,7 +157,7 @@ RMS 커넥터를 제거해야 할 경우 마법사를 다시 실행하고 제거
 
 -   파일 분류 인프라를 사용하는 파일 서버의 경우 연결된 서비스가 로컬 시스템 계정으로 실행되므로 파일 서버의 컴퓨터 계정(예: SERVERNAME$) 또는 해당 컴퓨터 계정을 포함하는 그룹에 권한을 부여해야 합니다.
 
-목록에 서버를 추가하는 작업을 마쳤으면 **닫기**를 클릭합니다..
+목록에 서버를 추가하는 작업을 마쳤으면 **닫기**를 클릭합니다.
 
 아직 수행하지 않은 경우 지금 RMS 커넥터가 설치되어 있는 서버의 부하 분산을 구성하고 이러한 서버와 방금 권한을 부여한 서버 간의 연결에 HTTPS를 사용할지 여부를 고려해야 합니다.
 
@@ -173,7 +169,7 @@ RMS 커넥터의 두 번째 또는 마지막 인스턴스를 설치한 후 커�
 > [!IMPORTANT]
 > 커넥터를 사용하도록 Exchange 또는SharePoint Server를 구성한 후 이 이름을 변경하지 않는 것이 좋습니다. 왜냐하면 변경할 경우 모든 IRM 구성의 이러한 서버를 지운 후 다시 구성해야 하기 때문입니다.
 
-DNS에서 이름을 만들고 IP 주소에 대해 구성한 후 트래픽을 커넥터 서버로 전송하는 해당 주소의 부하 분산을 구성합니다. 이렇게 하기 위해 Windows Server의 NLB(네트워크 부하 분산) 기능 등 모든 IP 기반 부하 분산 장치를 사용할 수 있습니다. 자세한 내용은 [Load Balancing Deployment Guide](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx)(부하 분산 배포 가이드) 항목을 참조하세요..
+DNS에서 이름을 만들고 IP 주소에 대해 구성한 후 트래픽을 커넥터 서버로 전송하는 해당 주소의 부하 분산을 구성합니다. 이렇게 하기 위해 Windows Server의 NLB(네트워크 부하 분산) 기능 등 모든 IP 기반 부하 분산 장치를 사용할 수 있습니다. 자세한 내용은 [부하 분산 배포 가이드](http://technet.microsoft.com/library/cc754833%28v=WS.10%29.aspx)를 참조하세요.
 
 다음 설정을 사용하여 NLB 클러스터를 구성합니다.
 
@@ -238,12 +234,13 @@ RMS 커넥터 관리 도구를 설치하려면 다음 파일을 실행합니다.
 
 -   64비트 컴퓨터의 경우: RMSConnectorSetup.exe
 
-이러한 파일을 아직 다운로드하지 않았으면 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=314106)에서 다운로드할 수 있습니다..
+이러한 파일을 아직 다운로드하지 않았으면 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=314106)에서 다운로드할 수 있습니다.
 
 
 ## 다음 단계
-이제 RMS 커넥터를 설치 및 구성했으므로 커넥터를 사용하도록 온-프레미스 서버를 구성할 준비가 되었습니다. [Azure 권한 관리 커넥터에 대해 서버 구성](configure-servers-rms-connector.md) 항목으로 이동합니다..
+이제 RMS 커넥터를 설치 및 구성했으므로 커넥터를 사용하도록 온-프레미스 서버를 구성할 준비가 되었습니다. [Azure 권한 관리 커넥터에 대해 서버 구성](configure-servers-rms-connector.md)으로 이동합니다.
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

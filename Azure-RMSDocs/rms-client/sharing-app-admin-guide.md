@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 공유 응용 프로그램 관리자 가이드 | Azure RMS
-description:
-keywords:
+title: "Rights Management 공유 응용 프로그램 관리자 가이드 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,11 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+
 
 ---
 
@@ -31,18 +24,18 @@ ms.suite: ems
 *적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 
-엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 응용 프로그램을 담당하고 있거나, [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md) 또는 [FAQ for Microsoft Rights Management Sharing Application for Windows](http://go.microsoft.com/fwlink/?LinkId=303971)(Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ)에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다..
+엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 응용 프로그램을 담당하고 있거나, [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md) 또는 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://go.microsoft.com/fwlink/?LinkId=303971)에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다.
 
-RMS 공유 응용 프로그램은 Azure RMS에서 가장 효율적으로 작동합니다. 이 배포 구성에서는 다른 조직의 사용자에게 보호된 첨부 파일을 보낼 수 있으며, 메일 알림 및 취소 기능이 포함된 문서 추적 등의 옵션도 지원되기 때문입니다.  그러나 온-프레미스 버전인 AD RMS에서도 해당 응용 프로그램을 사용할 수 있습니다(일부 제한이 적용됨). Azure RMS 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure 권한 관리와 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요. AD RMS를 사용 중이며 Azure RMS로 마이그레이션하려는 경우에는 [AD RMS에서 Azure 권한 관리로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md) 항목을 참조하세요..
+RMS 공유 응용 프로그램은 Azure RMS에서 가장 효율적으로 작동합니다. 이 배포 구성에서는 다른 조직의 사용자에게 보호된 첨부 파일을 보낼 수 있으며, 메일 알림 및 취소 기능이 포함된 문서 추적 등의 옵션도 지원되기 때문입니다.  그러나 온-프레미스 버전인 AD RMS에서도 해당 응용 프로그램을 사용할 수 있습니다(일부 제한이 적용됨). Azure RMS 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure 권한 관리와 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요. AD RMS를 사용 중이며 Azure RMS로 마이그레이션하려는 경우에는 [AD RMS에서 Azure 권한 관리로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
 ## Microsoft Rights Management 공유 응용 프로그램 자동 배포
 RMS 공유 응용 프로그램의 Windows 버전은 스크립트 방식 설치를 지원하므로 엔터프라이즈 배포에 적합합니다.
 
-설치의 필수 조건은 컴퓨터에서 Windows 7 서비스 팩 1 이상 버전을 실행해야 하며 Microsoft Framework 4.0 이상 버전이 설치되어 있어야 한다는 것뿐입니다. Microsoft .NET Framework 4.0을 설치해야 하는 경우 [Microsoft 다운로드 센터에서 설치를 위해 해당 버전을 다운로드](http://www.microsoft.com/download/details.aspx?id=17718)할 수 있습니다..
+설치의 필수 조건은 컴퓨터에서 Windows 7 서비스 팩 1 이상 버전을 실행해야 하며 Microsoft Framework 4.0 이상 버전이 설치되어 있어야 한다는 것뿐입니다. Microsoft .NET Framework 4.0을 설치해야 하는 경우 [Microsoft 다운로드 센터에서 설치를 위해 해당 버전을 다운로드](http://www.microsoft.com/download/details.aspx?id=17718)할 수 있습니다.
 
 ### 자동 배포용 RMS 공유 응용 프로그램을 다운로드하려면
 
-1.  Microsoft 다운로드 센터의 [Windows용 Microsoft Rights Management 공유 응용 프로그램](http://www.microsoft.com/download/details.aspx?id=40857) 페이지로 이동하여 **다운로드**를 클릭합니다..
+1.  Microsoft 다운로드 센터의 [Windows용 Microsoft Rights Management 공유 응용 프로그램](http://www.microsoft.com/download/details.aspx?id=40857) 페이지로 이동하여 **다운로드**를 클릭합니다.
 
 2.  필요한 파일을 선택하여 다운로드합니다. Windows 64비트용(Microsoft Rights Management 공유 응용 프로그램 x64.zip) 및 Windows 32비트용(Microsoft Rights Management 공유 응용 프로그램 x86.zip)의 두 가지 클라이언트 설치 패키지가 있습니다.
 
@@ -79,7 +72,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 > [!NOTE]
 > 이러한 시나리오에서 조직이 AD RMS를 실행하는 경우 사용자는 Azure RMS를 사용하는 다른 조직으로부터 보호된 콘텐츠를 받을 수는 있지만 Azure RMS를 사용하는 조직의 사용자에게 보호된 콘텐츠를 보낼 수는 없습니다. 그러나 조직이 Azure RMS를 실행하는 경우에는 사용자가 다른 조직과 보호된 콘텐츠를 주고받을 수 있습니다.
 
-각 절차에 대해 설치를 완료하려면 컴퓨터를 다시 시작해야 합니다. **shutdown /i**와 같은 명령을 사용하여 자동 다시 시작을 시작할 수 있습니다..
+각 절차에 대해 설치를 완료하려면 컴퓨터를 다시 시작해야 합니다. **shutdown /i**와 같은 명령을 사용하여 자동 다시 시작을 시작할 수 있습니다.
 
 ### Office 2016 또는 Office 2013 및 Azure RMS 또는 Active Directory RMS용 공유 응용 프로그램을 배포하려면
 
@@ -97,7 +90,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
     1.  로컬 관리자 계정을 사용하여 컴퓨터에 로그인합니다.
 
-    2.  해당 컴퓨터에서 [Microsoft Online 로그인 도우미를 다운로드하여 설치](http://www.microsoft.com/download/details.aspx?id=28177)합니다..
+    2.  해당 컴퓨터에서 [Microsoft Online 로그인 도우미를 다운로드하여 설치](http://www.microsoft.com/download/details.aspx?id=28177)합니다.
 
     3.  다음 명령을 실행하여 화면에 표시되는 인증 서비스 URL을 확인합니다. 이 URL을 복사한 후 다음 단계에서 사용하기 위해 저장할 수 있습니다.
 
@@ -260,11 +253,11 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
     -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation]
 
-        @="&lt;인증 URL&gt;"
+        @="&lt;certification url&gt;"
 
     -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM]
 
-        DefaultUser = "&lt;default_user&gt;"
+        DefaultUser="&lt;default_user&gt;"
 
 ### RMS 공유 응용 프로그램 및 Office 추가 기능만의 설치 성공 여부를 확인하려면
 
@@ -322,9 +315,9 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 ## 자동 업데이트를 사용하지 않도록 설정
 기본적으로는 최신 버전의 RMS 공유 응용 프로그램을 사용할 수 있으면 사용자에게 알림이 표시되며 해당 버전을 다운로드할지를 묻는 메시지가 나타납니다. 다음 레지스트리를 편집하여 이 알림을 표시하지 않도록 설정할 수 있습니다.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**로 이동한 다음 **RmsSharingApp** 키가 아직 없으면 새로 만듭니다..
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**로 이동한 다음 **RmsSharingApp** 키가 아직 없으면 새로 만듭니다.
 
-2.  **RmsSharingApp**을 선택하고 새 DWORD 값 **AllowUpdatePrompt**를 만든 후에 값을 **0**으로 설정합니다..
+2.  **RmsSharingApp**을 선택하고 새 DWORD 값 **AllowUpdatePrompt**를 만든 후에 값을 **0**으로 설정합니다.
 
 WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음 기술을 사용하여 새 RMS 공유 응용 프로그램 버전을 모든 사용자에게 배포하기 전에 테스트를 할 수 있습니다.
 
@@ -335,9 +328,9 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 3.  테스트를 완료하고 모든 문제를 해결한 후 이 가이드에 나와 있는 자동 배포 지침을 사용하여 모든 사용자에게 최신 버전을 배포합니다.
 
 ## AD RMS만 해당: 문서 추적 기능 구성
-[문서 추적 기능을 지원하는 구독](https://technet.microsoft.com/en-us/dn858608)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다.  문서 추적 기능에서는 사용자가 공유하는 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 개인정보취급방침 요구 사항으로 인해 조직에서 이 정보 표시가 금지된 경우 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet을 사용하여 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정할 수 있습니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 사이트에 대한 액세스를 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 액세스가 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다..
+[문서 추적 기능을 지원하는 구독](https://technet.microsoft.com/dn858608)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다.  문서 추적 기능에서는 사용자가 공유하는 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 개인정보취급방침 요구 사항으로 인해 조직에서 이 정보 표시가 금지된 경우 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet을 사용하여 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정할 수 있습니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 사이트에 대한 액세스를 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 액세스가 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다.
 
-이러한 cmdlet을 실행하려면 **2.3.0.0** 이상의 Windows PowerShell용 Azure RMS 모듈 버전을 사용하고 있어야 합니다.  설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md) 항목을 참조하세요..
+이러한 cmdlet을 실행하려면 **2.3.0.0** 이상의 Windows PowerShell용 Azure RMS 모듈 버전을 사용하고 있어야 합니다.  설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 > [!TIP]
 > 이전에 모듈을 다운로드하여 설치한 경우 다음을 실행하여 버전 번호를 확인합니다. `(Get-Module aadrm –ListAvailable).Version`
@@ -358,7 +351,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 ## AD RMS만 해당: 조직 내의 여러 메일 도메인 지원
 AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용자에게 메일 도메인이 여러 개 있는 경우 다음 레지스트리를 편집해야 합니다.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**로 이동한 다음 **RmsSharingApp** 키가 아직 없으면 새로 만듭니다..
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**로 이동한 다음 **RmsSharingApp** 키가 아직 없으면 새로 만듭니다.
 
 2.  **RmsSharingApp**을 선택하고 새 다중 문자열 값 **FederatedDomains**를 만든 후 조직에서 사용하는 도메인과 모든 하위 도메인을 추가합니다. 와일드카드는 지원되지 않습니다.
 
@@ -368,10 +361,11 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 
 
 ## 다음 단계
-보호 수준(기본 및 일반) 간의 차이점 설명, 지원되는 파일 형식 및 파일 이름 확장명, 기본 보호 수준을 변경하는 방법을 포함하는 자세한 기술 정보는 [Technical overview for the Rights Management sharing application](sharing-app-admin-guide-technical.md)(Rights Management 공유 응용 프로그램에 대한 기술 개요) 항목을 참조하세요..
+보호 수준(기본 및 일반) 간의 차이점 설명, 지원되는 파일 형식 및 파일 이름 확장명, 기본 보호 수준을 변경하는 방법을 포함하는 자세한 기술 정보는 [Rights Management 공유 응용 프로그램에 대한 기술 개요](sharing-app-admin-guide-technical.md)를 참조하세요.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

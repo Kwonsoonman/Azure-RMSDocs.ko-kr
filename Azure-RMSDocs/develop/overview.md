@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 개요 | Azure RMS
-description: AD RMS 및 Azure RMS는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다.
-keywords:
+title: "개요 | Azure RMS"
+description: "AD RMS 및 Azure RMS는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8A13494E-C1D7-407D-BCD1-A406915EA578
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 417888c5445d702b1f700a8e717fbb746593efc6
+
 
 ---
 
@@ -50,7 +45,7 @@ MS RMS SDK 4.2에서는 다음을 포함하여 새로운 몇 가지 멋진 기�
 
 -   **다시 디자인된 API** – MS RMS SDK 4.2 API는 최대한 단순하게 다시 디자인되어, 개발자가 최소한의 노력으로 일관된 RMS 동작을 제공하는 간단하고 투명한 암호화 및 암호 해독 API를 이용할 수 있습니다.
 -   **AD RMS 및 Azure RMS에 대한 하이브리드 지원** – 단일 RMS 사용 앱이 AD RMS 서버(AD RMS의 모바일 장치 확장 사용) 및 Azure RMS 서비스 둘 다의 콘텐츠를 사용하고 보호할 수 있습니다. MS RMS SDK 4.2에서는 IT 관리자가 구성할 수 있는 관련 끝점을 투명하게 검색합니다.
--   **사용자 고유의 인증 라이브러리 가져오기** – 앱 개발자가 MS RMS SDK 4.2에서 사용할 인증 라이브러리를 선택할 수 있습니다. [Azure AD 인증 라이브러리](https://msdn.microsoft.com/en-us/library/jj573266.aspx)든, 조직의 사용자 지정 라이브러리든 관계없이 MS RMS SDK 4.2에서 인증 스택을 분리하므로 요구에 가장 맞는 라이브러리를 선택할 수 있습니다.
+-   **사용자 고유의 인증 라이브러리 가져오기** – 앱 개발자가 MS RMS SDK 4.2에서 사용할 인증 라이브러리를 선택할 수 있습니다. [Azure AD 인증 라이브러리](https://msdn.microsoft.com/library/jj573266.aspx)든, 조직의 사용자 지정 라이브러리든 관계없이 MS RMS SDK 4.2에서 인증 스택을 분리하므로 요구에 가장 맞는 라이브러리를 선택할 수 있습니다.
 -   **고유한 사용자 인터페이스 가져오기** - 이제 MS RMS SDK 4.2를 사용하여 사용자 지정 사용자 인터페이스를 구현할 수 있습니다. 콘텐츠 보호 및 템플릿 선택에서 보호된 콘텐츠를 사용하는 동안 사용 권한 표시 및 변경에 이르기까지 MS RMS SDK 4.2에서는 앱에 기본 제공 UI를 적용하지 않습니다. 하지만 원하는 경우 [GitHub 계정](https://github.com/AzureAD/)을 통해 모든 플랫폼에 Microsoft RMS UI를 사용할 수 있습니다.
 -   **오프라인으로 보호된 콘텐츠 액세스** – MS RMS SDK 4.2를 사용하면 앱 사용자가 인터넷 연결이 없는 경우에도 보호된 콘텐츠에 액세스할 수 있습니다. MS RMS SDK 4.2에서는 보호된 콘텐츠의 사용 정책을 안전하게 캐시하므로 사용자가 오프라인으로 RMS 보호된 데이터에 액세스할 수 있습니다.
 
@@ -70,6 +65,7 @@ MS RMS SDK 4.2에서는 다음을 포함하여 새로운 몇 가지 멋진 기�
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

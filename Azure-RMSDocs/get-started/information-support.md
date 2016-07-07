@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure 권한 관리에 대한 정보 및 지원 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리에 대한 정보 및 지원 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/13/2016
+ms.date: 06/29/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6052afabe4894f8129e9eebc93705b219e6ed875
+ms.openlocfilehash: a8f5852d965abe2f2654aa236bfd9ea49a62aa84
+
 
 ---
 
@@ -42,7 +36,8 @@ ms.suite: ems
 ## Rights Management 제품 그룹 블로그
 Rights Management 제품 그룹에서는 [Enterprise Mobility and Security 블로그](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)와 협력하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 및 관련 기술에 대한 기술 정보와 기타 소식을 제공합니다. 이러한 블로그 게시물은 제품 문서와 지원 정보를 보완합니다.
 
-> [!TIP] Azure RMS 또는 AD RMS용 응용 프로그램을 개발 중인 경우에는 [Active Directory Rights Management Services (AD RMS) Developer's Corner Blog](http://blogs.msdn.com/b/rms/)(AD RMS(Active Directory Rights Management Services) 개발자 코너 블로그)도 확인할 수 있습니다.
+> [!TIP]
+> Azure RMS 또는 AD RMS용 응용 프로그램을 개발 중인 경우에는 [Active Directory Rights Management Services (AD RMS) Developer's Corner Blog(AD RMS(Active Directory Rights Management Services) 개발자 코너 블로그)](https://blogs.msdn.microsoft.com/rms/)도 확인할 수 있습니다.
 
 ## 지원 옵션 및 커뮤니티 리소스
 다음 섹션에서는 지원 및 문제 해결 옵션과 커뮤니티 리소스에 대한 정보를 제공합니다.
@@ -71,7 +66,15 @@ Rights Management 제품 그룹에서는 [Enterprise Mobility and Security 블�
 
 문제 해결:
 
-- [RMS 분석기 도구](http://www.microsoft.com/en-us/download/details.aspx?id=46437)를 다운로드하여 실행합니다. 이 도구에 대한 자세한 내용은 다운로드 페이지의 **세부 정보** 및 **설치 지침**을 참조하세요. 
+- 작동 방식에 대해 궁금한 사항이 있으면 해당 질문에 대한 답변이 [질문과 대답](faqs.md) 페이지에 있는지 확인하세요.
+
+- Azure RMS에 대한 지원 정책에 대한 질문이 있으면 정기적으로 업데이트되는 [요구 사항](requirements-azure-rms.md) 정보를 참조하세요.
+
+- 최종 사용자 지원을 위한 정보, 지원 센터, 그리고 Azure RMS를 사용하는 서비스 및 응용 프로그램을 구성하는 관리자에 대해서는 [Helping users to protect files(사용자가 파일을 보호할 수 있도록 지원)](../deploy-use/help-users.md)를 참조하세요.
+
+- 온-프레미스 서버를 위한 RMS 커넥터를 배포한 경우에는 이벤트 로그 항목, 성능 카운터 및 로깅에 대한 세부 정보를 포함하는 [모니터링](../deploy-use/monitor-rms-connector.md) 정보를 참조하세요.
+
+- 자동화된 검사, 자동 수정 및 추적이 필요하면 [RMS 분석기 도구](http://www.microsoft.com/en-us/download/details.aspx?id=46437)를 다운로드하여 실행하세요. 이 도구에 대한 자세한 내용은 다운로드 페이지의 **세부 정보** 및 **설치 지침**을 참조하세요. 
 
 ### 커뮤니티 리소스
 
@@ -83,6 +86,7 @@ Rights Management 제품 그룹에서는 [Enterprise Mobility and Security 블�
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

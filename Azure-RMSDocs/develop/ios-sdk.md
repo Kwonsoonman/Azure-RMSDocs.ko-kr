@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: iOS 및 OS X 설치 | Azure RMS
-description: iOS 및 OS X 응용 프로그램에서 RMS SDK 4.2를 통해 AAD RM을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
-keywords:
+title: "iOS 및 OS X 설치 | Azure RMS"
+description: "iOS 및 OS X 응용 프로그램에서 RMS SDK 4.2를 통해 AAD RM을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 821fe1c361dc38b1e33ac66208122de165d02020
+
 
 ---
 
@@ -51,7 +46,7 @@ iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 
     이 SDK는 iOS 7.0 및 OS X 10.8 이상용 개발에 사용할 수 있습니다.
 
--   인증 라이브러리: [Azure ADAL(AD 인증 라이브러리)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)을 사용하는 것이 좋습니다. 그러나 OAuth 2.0을 지원하는 다른 인증 라이브러리도 사용할 수 있습니다.
+-   인증 라이브러리: [Azure ADAL(AD 인증 라이브러리)](https://msdn.microsoft.com/library/jj573266.aspx)을 사용하는 것이 좋습니다. 그러나 OAuth 2.0을 지원하는 다른 인증 라이브러리도 사용할 수 있습니다.
 
     자세한 내용은 [iOS용 ADAL](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios) 또는 [OS X용 ADAL](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/tree/OSXUniversal)을 참조하세요.
 
@@ -122,6 +117,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

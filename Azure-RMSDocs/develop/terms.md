@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 용어 | Azure RMS
-description: 권한 관리 서비스와 관련된 용어 정의 컬렉션입니다.
-keywords:
+title: "용어 | Azure RMS"
+description: "권한 관리 서비스와 관련된 용어 정의 컬렉션입니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 5779cc10503ad7afe997e031a467021b513fc510
+
 
 ---
 
@@ -29,7 +24,7 @@ ms.suite: ems
 권한 관리 서비스와 관련된 용어 정의 컬렉션입니다.
 
 **사용되지 않는 알고리즘**  
-이전 콘텐츠 보호 체계를 구현하는 모달 설정으로, 특히 ECB(Electronic Cookbook Cipher Mode)를 가리킵니다. 이 SDK에서는 이 설정을 통해 [AD Rights Management Services SDK](https://msdn.microsoft.com/en-us/library/windows/desktop/cc530379.aspx)에서 사용하는 MSDRM 라이브러리와 호환되는 라이선스를 생성할 수 있습니다.
+이전 콘텐츠 보호 체계를 구현하는 모달 설정으로, 특히 ECB(Electronic Cookbook Cipher Mode)를 가리킵니다. 이 SDK에서는 이 설정을 통해 [AD 권한 관리 서비스 SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx)에서 사용하는 MSDRM 라이브러리와 호환되는 라이선스를 생성할 수 있습니다.
 
 이 설정으로 인해 응용 프로그램이 콘텐츠 보호에 대한 고객의 표준에 맞지 않는 방식으로 콘텐츠를 보호할 수도 있습니다.
 
@@ -49,6 +44,7 @@ PFile 형식은 Microsoft Rights Management SDK 4.2가 설계된 방식에 포�
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

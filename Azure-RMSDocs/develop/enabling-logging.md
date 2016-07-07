@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 방법&#58; 오류 및 성능 로깅 사용 | Azure RMS
-description: Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
-keywords:
+title: "방법&#58; 오류 및 성능 로깅 사용 | Azure RMS"
+description: "Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79e58b8092ea7cb057229d4c464d79f3694296e6
+ms.openlocfilehash: 5faea360de8aa9ecb82abf25b5c1392d52d0afad
+
 
 ---
 
@@ -90,7 +86,7 @@ Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자
     CustomerExperienceOptions loggingOption = CustomerExperienceConfiguration::Option;
 
 
-**참고** - 위의 Windows 코드 조각은 C++로 작성되었습니다. C\#의 경우 '::' 대신 '.'을 사용하여 구문을 업데이트합니다 .
+**참고** - 위의 Windows 코드 조각은 C++로 작성되었습니다. C\#의 경우 '::' 대신 '.'을 사용하여 구문을 업데이트합니다.
 
 **Linux/C++** - 이 SDK의 기본 로깅은 다른 플랫폼의 로깅만큼 광범위하지 않습니다. 자세한 내용은 [이식 가능한 C++용 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting)에서 "README.md"의 **문제 해결** 섹션을 참조하세요.
 
@@ -99,6 +95,7 @@ Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

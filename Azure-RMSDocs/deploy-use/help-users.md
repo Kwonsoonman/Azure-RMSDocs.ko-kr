@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 사용자가 Azure 권한 관리를 사용하여 파일을 보호할 수 있도록 지원 | Azure RMS
-description:
-keywords:
+title: "사용자가 Azure 권한 관리를 사용하여 파일을 보호할 수 있도록 지원 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b6dcd8bb1091e9c484e02042adbf993381581a9d
+ms.openlocfilehash: d48616cb638522e6cda61e7ae96db9480fc14099
+
 
 ---
 
@@ -35,7 +29,8 @@ ms.suite: ems
 
     중요한 정보가 포함된 문서와 전자 메일을 보호하는 방법 및 시간을 사용자에게 알립니다. 가능한 경우 완전히 새로운 프로세스를 소개하지 말고, 이미 친숙한 프로세스에 추가 단계를 통합할 수 있도록 기존 워크플로에 이 정보를 제공합니다. 그와 동시에 업무와 관련된 이점과 위험을 알리고 파일과 전자 메일을 보호해야 하는 경우에 대한 지침도 제공합니다. [사용자 지정 템플릿](configure-custom-templates.md)을 구성했다면 템플릿 이름과 설명만으로 올바른 템플릿을 선택하기 어려울 경우 선택할 템플릿에 대한 지침을 제공합니다.
 
-    > [!TIP] 최종 사용자를 위한 예제 비디오:
+    > [!TIP]
+    > 최종 사용자를 위한 예제 비디오:
     >
     > -   [Azure RMS 사용자 환경](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
     > -   [Azure RMS 문서 추적 및 해지](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
@@ -75,12 +70,14 @@ Windows 컴퓨터에서 이 응용 프로그램을 사용하는 지침은 [Right
 
 모바일 장치의 경우 [모바일 플랫폼용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://technet.microsoft.com/dn451248)를 참조하세요.
 
-> [!TIP] 개괄적인 예제 시나리오와 스크린샷을 보려면 [사용자가 모바일 사용자와 안전하게 첨부 파일 공유](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) 섹션을 참조하세요.
+> [!TIP]
+> 개괄적인 예제 시나리오와 스크린샷을 보려면 [사용자가 모바일 사용자와 안전하게 첨부 파일 공유](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) 섹션을 참조하세요.
 
 ## Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용
 Azure RMS를 사용 중이며 Rights Management 공유 응용 프로그램을 설치하지 않은 경우 사용자가 파일을 더욱 쉽게 보호할 수 있는, 리본의 **보호 상태로 공유** 단추 또는 파일 탐색기의  **내부 보호**가 표시되지 않습니다. 이러한 사용자는 다음 지침을 따라야 합니다.
 
-> [!TIP] 이러한 응용 프로그램에서 정보 보호 기능을 사용하기 위한 응용 프로그램별 도움말과 지침을 찾으려면 **IRM** 및 응용 프로그램 이름과 버전을 검색합니다.
+> [!TIP]
+> 이러한 응용 프로그램에서 정보 보호 기능을 사용하기 위한 응용 프로그램별 도움말과 지침을 찾으려면 **IRM** 및 응용 프로그램 이름과 버전을 검색합니다.
 
 #### Word 2013에서 문서를 보호하려면
 
@@ -88,7 +85,8 @@ Azure RMS를 사용 중이며 Rights Management 공유 응용 프로그램을 �
 
 2.  **파일** 메뉴에서 **정보**, **문서 보호**, **액세스 제한**을 차례로 클릭한 다음 적합한 사용 권한을 빠르게 적용할 수 있는 템플릿을 선택하거나 **액세스 제한** 을 선택하고 사용 권한을 직접 선택합니다.
 
-    > [!NOTE] Rights Management를 처음 사용하는 경우 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 서비스에 문의하면 Office IRM 클라이언트를 구성하기 위한 자격 증명을 입력하라는 메시지가 표시됩니다.
+    > [!NOTE]
+    > Rights Management를 처음 사용하는 경우 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 서비스에 문의하면 Office IRM 클라이언트를 구성하기 위한 자격 증명을 입력하라는 메시지가 표시됩니다.
 
 3.  문서를 저장합니다.
 
@@ -117,6 +115,7 @@ Azure RMS를 사용 중이며 Rights Management 공유 응용 프로그램을 �
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

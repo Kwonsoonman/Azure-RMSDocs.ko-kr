@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 시작 | Azure RMS
-description: RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다.
-keywords:
+title: "시작 | Azure RMS"
+description: "RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: 81541dbadabe3417299f47447384934373275e75
+
 
 ---
 # 시작
@@ -39,17 +35,17 @@ ms.suite: ems
 | [SDK 설치](install-the-rms-sdk.md) | 이 항목에서는 개발자 도구를 설치하는 과정을 안내합니다.|
 | [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md) | 이 항목에서는 RMS SDK 2.1을 사용하도록 Visual Studio 프로젝트를 구성하는 방법에 대한 지침을 제공합니다.|
 | [응용 프로그램 배포](developing-your-application.md) | 이 항목은 RMS 사용 응용 프로그램의 핵심 측면에 대한 중요 지침을 제공하며, 고유한 응용 프로그램 개발의 기반 역할을 할 수 있습니다.|
-| [응용 프로그램 테스트](running-your-first-application.md) |이 항목에서는 응용 프로그램 테스트를 위해 설치하는 방법에 대한 지침을 제공합니다.|
+| [응용 프로그램 테스트](how-to-set-up-your-test-environment.md) |이 항목에서는 응용 프로그램 테스트를 위해 설치하는 방법에 대한 지침을 제공합니다.|
 | [프로덕션 환경에 배포](deploying-your-application.md) |이 항목에서는 권한 사용 응용 프로그램에 대한 배포 옵션을 안내합니다.|
-
-시작했으면 다른 몇 가지 [RMS 샘플](samples.md)을 확인합니다. 그런 다음 [RMS 개발자 코너](http://blogs.msdn.com/b/rms/)를 통해 최신 정보를 얻으세요.
 
 
 다음 항목의 지침에 따라 RMS SDK 2.1을 사용해 보세요.
 
--   [SDK 설치](install-the-rms-sdk.md)
--   [권한 사용 응용 프로그램 테스트](running-your-first-application.md)
--   [IPCHelloWorld - 예제 응용 프로그램](how-to-build-your-first-application.md)
+- [SDK 설치](install-the-rms-sdk.md)
+- [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
+- [응용 프로그램 배포](developing-your-application.md)
+- [응용 프로그램 테스트](how-to-set-up-your-test-environment.md)
+- [프로덕션 환경에 배포](deploying-your-application.md)
 
 ### 콘텐츠를 보호하기 위해 RMS SDK 2.1을 사용하는 이유
 
@@ -71,17 +67,15 @@ RMS SDK 2.1에서는 다양한 중요 클라이언트 및 서버 플랫폼을 �
 
 ## 관련 항목
 
-* [AD RMS 샘플](samples.md)
+* [RMS 개발자 가이드](developers-guide.md)
 * [AD RMS 개발자 코너](http://blogs.msdn.com/b/rms/)
-* [SDK 설치](install-the-rms-sdk.md)
-* [IPCHelloWorld - 예제 응용 프로그램](how-to-build-your-first-application.md)
-* [개요](ad-rms-overview.md)
-* [지원되는 플랫폼](supported-platforms.md)
+
  
 
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

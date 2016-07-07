@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환 | Azure RMS
-description:
-keywords:
+title: "시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,11 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+
 
 ---
 
@@ -56,7 +49,7 @@ ms.suite: ems
 |Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
 |다음 구성 중 하나:<br /><br />- Azure 권한 관리에 Exchange Online을 사용하도록 설정되어 있는지 여부<br /><br />- Exchange 온-프레미스에 대해 RMS 커넥터가 설치되고 구성되었는지 여부|Exchange Online의 경우: [Azure 권한 관리에 대해 응용 프로그램 구성](https://technet.microsoft.com/library/jj585031.aspx)에서 **Exchange Online: IRM 구성** 섹션을 참조하세요.<br /><br />Exchange 온-프레미스의 경우: [Azure 권한 관리 커넥터 배포](https://technet.microsoft.com/library/dn375964.aspx)|
 |다음에 설명하는 대로 사용자 지정 템플릿을 구성했는지 여부|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)|
-|이 문서의 뒷부분에서 설명하는 대로 IRM에 대한 전송 보호 규칙을 구성했는지 여부|Exchange Online의 경우: [전송 보호 규칙 만들기](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Exchange 2013의 경우: [전송 보호 규칙 만들기](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.150%29.asp)<br /><br />Exchange 2010의 경우: [전송 보호 규칙 만들기](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
+|이 문서의 뒷부분에서 설명하는 대로 IRM에 대한 전송 보호 규칙을 구성했는지 여부|Exchange Online의 경우: [전송 보호 규칙 만들기](https://technet.microsoft.com/library/dd302432.aspx)<br /><br />Exchange 2013의 경우: [전송 보호 규칙 만들기](https://technet.microsoft.com/library/dd302432%28v=exchg.150%29.asp)<br /><br />Exchange 2010의 경우: [전송 보호 규칙 만들기](https://technet.microsoft.com/en-us/library/dd302432%28v=exchg.141%29.aspx)|
 
 ### 임원용 사용자 지정 템플릿을 구성하려면
 
@@ -138,6 +131,7 @@ VanArsdel 임원이 아닌 다른 사용자가 해당 메일에 보내는 정보
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

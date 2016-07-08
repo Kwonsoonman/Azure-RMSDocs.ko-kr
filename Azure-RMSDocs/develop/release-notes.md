@@ -1,26 +1,21 @@
 ---
-# required metadata
-
-title: 새로운 기능 및 릴리스 정보 | Azure RMS
-description: 이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다.
-keywords:
+title: "새로운 기능 및 릴리스 정보 | Azure RMS"
+description: "이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+
 
 ---
 
@@ -29,7 +24,8 @@ ms.suite: ems
 ## 새로운 기능
 Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨씬 쉽고 유연해졌습니다. 이 항목에서는 이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다.
 
--   [2015년 12월 업데이트의 새로운 기능](#new_for_our_december_2015_update)
+-   [2016년 6월의 새로운 기능](#new_for_June_2016)
+-   [2015년 12월 업데이트](#december_2015_update)
 -   [2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가](#july_2015_update_-_adds_support_for_linux___c___development)
 -   [2015년 5월 업데이트 - 로깅 제어 추가](#may_2015_update_-_adds_logging_control)
 -   [2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가](#february_2015_update_-_adds_windows_store_application_support)
@@ -38,7 +34,15 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 -   [릴리스 정보](#release-notes)
 -   [질문과 대답](#frequently_asked_questions)
 
-### 2015년 12월 업데이트의 새로운 기능
+### 2016년 6월의 새로운 기능
+
+- **최신 인증에 대한 지원** - RMS 지원 앱에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다. MFA(Multi-Factor Authentication), SAML 기반 타사 ID 공급자와 RMS 클라이언트 응용 프로그램, 스마트 카드 및 인증서 기반 인증과 같은 로그인 기능이 가능하며, 기본 인증 프로토콜을 사용하기 위해 RMS 지원 앱을 사용할 필요가 없습니다.
+- **문서 추적 지원** - 이제 개발자는 앱에서 문서를 보호하는 경우 문서 추적을 사용할 수 있습니다. 
+- 성능 향상
+- 버그 수정
+
+
+### 2015년 12월 업데이트
 
 이 릴리스에서는 장치용 RMS SDK가 이제 버전 4.2이며 다음 기능이 추가되었습니다.
 
@@ -124,7 +128,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 -   **AD RMS 지원** - IT 관리자는 모바일 장치에서 새 AD RMS 서버의 모바일 장치 확장과 함께 RMS 사용 앱을 사용할 수 있습니다.
 -   **오프라인 사용** - 최종 사용자는 RMS 보호된 데이터를 오프라인으로 액세스할 수 있습니다.
--   **분리된 인증** - 개발자는 Azure RMS 및 AD RMS에 대해 고유한 인증 라이브러리를 사용하거나 권장 [Azure ADAL(AD 인증 라이브러리)](https://MSDN.Microsoft.Com/en-us/library/jj573266.aspx)을 사용할 수 있습니다.
+-   **분리된 인증** - 개발자는 Azure RMS 및 AD RMS에 대해 고유한 인증 라이브러리를 사용하거나 권장 [Azure ADAL(AD Authentication Library)](https://MSDN.Microsoft.Com/library/jj573266.aspx)을 사용할 수 있습니다.
 -   **분리된 UI** - 개발자는 RMS 보호된 문서를 보호하고 사용할 사용자 인터페이스를 빌드할 수 있습니다.
 -   **다시 디자인된 API** – 이제 개발자는 최소한의 노력으로 일관된 RMS 동작과 사용자 환경을 제공하는 간단하고 투명한 암호화 및 암호 해독 API를 이용할 수 있습니다.
 
@@ -142,9 +146,9 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     **해결 방법** - 응용 프로그램에서 Android API에 대한 다중 인스턴스 호출을 허용하지 않도록 합니다.
 
--   [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] 배열, int 오프셋, int 길이)** 메서드를 *array.length* 값과 다른 길이로 사용하는 경우 나중에 SDK를 통해 콘텐츠를 사용할 수 없습니다.
+-   [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** 메서드를 *array.length* 값과 다른 길이로 사용하는 경우 나중에 SDK를 통해 콘텐츠를 사용할 수 없습니다.
 
-    **해결 방법** - 알려진 문제입니다. 문제를 완화하려면 항상 **byte \[\]** 배열을 length 매개 변수와 동일한 길이 값으로 전달하거나, [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] 배열)** 메서드를 사용합니다.
+    **해결 방법** - 알려진 문제입니다. 문제를 완화하려면 항상 **byte \[\]** 배열을 length 매개 변수와 동일한 길이 값으로 전달하거나, [**ProtectedFileOutputStream**](/rights-management/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)** 메서드를 사용합니다.
 
 **iOS 및 OS X**
 
@@ -227,6 +231,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
  
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

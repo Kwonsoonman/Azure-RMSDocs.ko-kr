@@ -1,28 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\get-started\requirements-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/50ebcd71336baeb68687e2d0c1ff1f0608925761/Azure-RMSDocs/get-started/requirements-azure-rms.md) | InSyncHandedBackSuccess | [Details](#72a75712da9efa201865440affa80461dcd7df53108)
 
 ## Item Details
-##### <a name='72a75712da9efa201865440affa80461dcd7df53108'></a> Source: [Azure-RMSDocs\get-started\requirements-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/50ebcd71336baeb68687e2d0c1ff1f0608925761/Azure-RMSDocs/get-started/requirements-azure-rms.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\get-started\requirements-azure-rms.md](https://github.com/Microsoft/Azure-RMSDocs-pr.ko-kr/blob/9711977ac5921af1cc77096f566c984dfb1e7963/Azure-RMSDocs/get-started/requirements-azure-rms.md)
-* Handoff File: [requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/ec6678e1c066dc00a76f9ae9568599bd17b4bafa/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf)
-* Handoff Datetime: 2016-07-08 07:19:23
-* Handoff Reason: Include
-* Archive File: [requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/341f80d72d6351be28ff0c8bede48628bb12351a/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf)
-* Archive Datetime: 2016-07-08 23:38:41
-* Handback File: [requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5a2011394df87993f0f5db61d7587c62b9ef1b0f/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf)
-* Handback Datetime: 2016-07-09 08:54:18
-* Bilingual File: [requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ef307755215a3629ab72ca694ec74884231f93a8/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-07 12:13:35
-* [Back to Top](#report-top)
-
 
 ## Error Details
 

@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
 ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
 
@@ -276,7 +277,8 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
  
 - **전달 금지** 옵션을 적용한 경우 수신자는 메일을 다른 위치로 이동하여 마케팅 부서의 어떤 사용자와도 정보를 공유할 수 없습니다. 이 시나리오에서는 원래 수신자(및 메일 소유자)만 메일의 정보를 볼 수 있습니다.
 
-> [!NOTE] 보낸 사람이 선택하는 수신자만 메일의 정보를 볼 수 있어야 하는 것이 중요한 경우 **전달 금지**를 사용합니다. 메일의 템플릿을 사용하면 보낸 사람이 선택한 수신자와 상관없이 관리자가 사전에 지정하는 사용자의 그룹으로 권한을 제한할 수 있습니다.
+> [!NOTE] 
+> 보낸 사람이 선택하는 수신자만 메일의 정보를 볼 수 있어야 하는 것이 중요한 경우 **전달 금지**를 사용합니다. 메일의 템플릿을 사용하면 보낸 사람이 선택한 수신자와 상관없이 관리자가 사전에 지정하는 사용자의 그룹으로 권한을 제한할 수 있습니다.
 
 
 
@@ -287,6 +289,6 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

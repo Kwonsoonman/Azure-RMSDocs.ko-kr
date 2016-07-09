@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
 ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
 
@@ -26,7 +27,8 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
 2015년 1월 1일 이전 버전은 목록에 없습니다.
 
-> [!NOTE] RMS 공유 응용 프로그램에 대한 의견이나 질문이 있으면 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)에 메일 메시지를 보내 주세요.
+> [!NOTE]
+> RMS 공유 응용 프로그램에 대한 의견이나 질문이 있으면 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)에 전자 메일 메시지를 보냅니다.
 
 ## 버전 1.0.2191.0
 **릴리스 날짜**: 2016년 6월 16일
@@ -120,6 +122,6 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

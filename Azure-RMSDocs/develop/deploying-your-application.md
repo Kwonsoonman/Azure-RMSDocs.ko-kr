@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 872bb0c20db2ef8d661d321598a2b1fe61d69316
-ms.openlocfilehash: 902721ae3e69afd144c552b8ee0a916958e80afc
+ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
+ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
 
 
 ---
 
-# 사전 프로덕션 환경에 배포
+# 프로덕션 환경에 배포
 
 
 이 항목에서는 권한 사용 응용 프로그램에 대한 배포 옵션을 간략하게 설명하고 안내합니다.
@@ -135,6 +135,6 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

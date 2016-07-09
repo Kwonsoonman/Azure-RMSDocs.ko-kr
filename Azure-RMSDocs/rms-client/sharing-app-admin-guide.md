@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
 ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
 
@@ -366,6 +367,6 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

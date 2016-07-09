@@ -1954,8 +1954,8 @@
 * Archive Datetime: 2016-07-08 23:38:41
 * Handback File: [requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5a2011394df87993f0f5db61d7587c62b9ef1b0f/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf)
 * Handback Datetime: 2016-07-09 08:54:18
-* Bilingual File: [requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ef307755215a3629ab72ca694ec74884231f93a8/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-07 12:13:35
+* Bilingual File: [requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5a2011394df87993f0f5db61d7587c62b9ef1b0f/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/requirements-azure-rms.91ef1526b60553f7a78b9162acbc860f2a8791a9.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-09 08:57:22
 * [Back to Top](#report-top)
 
 ##### <a name='933394c943763b010ac707384918eff86ea33388109'></a> Source: [Azure-RMSDocs\get-started\requirements-client-devices.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/ed50d87138c428fadfd22cd5b3ef3c7f7e421848/Azure-RMSDocs/get-started/requirements-client-devices.md)

@@ -12,6 +12,7 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 50ebcd71336baeb68687e2d0c1ff1f0608925761
 ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 
@@ -43,7 +44,8 @@ ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 
 이 시나리오에 대한 추가 Azure RMS 요구 사항에 대한 자세한 내용은 [Azure RMS를 지원하는 온-프레미스 서버](requirements-servers.md)를 참조하세요.
 
-> [!IMPORTANT] 다음 배포 시나리오는 지원되지 않습니다.
+> [!IMPORTANT]
+> 다음 배포 시나리오는 지원되지 않습니다.
 > 
 > -   [AD RMS에서 Azure 권한 관리로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)에 설명된 대로, 마이그레이션 중인 경우를 제외하고 같은 조직에서 AD RMS와 Azure RMS를 함께 실행하는 경우.
 > 
@@ -54,6 +56,6 @@ ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

@@ -1,46 +1,11 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f8e23e8bcbfb25092cb31f7af76d17239f3063a7/Azure-RMSDocs/deploy-use/monitor-rms-connector.md) | OutofSyncHandedBackSuccess | [Details](#32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f30)
- [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/release-notes.md) | OutofSyncHandedBackSuccess | [Details](#eccc0ba9c13e0c35c8d0c8877ce92f9b99e8383586)
 
 ## Item Details
-##### <a name='32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f30'></a> Source: [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f8e23e8bcbfb25092cb31f7af76d17239f3063a7/Azure-RMSDocs/deploy-use/monitor-rms-connector.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: 
-* Handoff File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/ebf680448a3bda976a96188bb243fca9a82487b5/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.ko-kr.xlf)
-* Handoff Datetime: 2016-07-08 17:33:19
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [Azure-RMSDocs\deploy-use\monitor-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr.ko-kr/blob/f7004fd259dcb5039beeb6e019b5485dfdc9e6c8/Azure-RMSDocs/deploy-use/monitor-rms-connector.md)
-* Current Handback File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ef307755215a3629ab72ca694ec74884231f93a8/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.ko-kr.xlf)
-* Current Handback Datetime: 2016-07-07 11:49:43
-* Bilingual File: [monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/ef307755215a3629ab72ca694ec74884231f93a8/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-07 12:13:35
-* [Back to Top](#report-top)
-
-##### <a name='eccc0ba9c13e0c35c8d0c8877ce92f9b99e8383586'></a> Source: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/f7dd88d90357c99c69fe4fdde67c1544595e02f8/Azure-RMSDocs/develop/release-notes.md)
-* Status: OutofSyncHandedBackSuccess
-* Target File: [Azure-RMSDocs\develop\release-notes.md](https://github.com/Microsoft/Azure-RMSDocs-pr.ko-kr/blob/4d9054a6c173e85c9e04f95e15ba32eee986638b/Azure-RMSDocs/develop/release-notes.md)
-* Handoff File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/ebf680448a3bda976a96188bb243fca9a82487b5/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.ko-kr.xlf)
-* Handoff Datetime: 2016-07-08 17:33:19
-* Handoff Reason: Include
-* Archive File: 
-* Archive Datetime: 0001-01-01 00:00:00
-* Handback File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/2fa5b7ff6e2b7e81993856d7368c914829db4d1e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.ko-kr.xlf)
-* Handback Datetime: 2016-07-08 12:20:46
-* Bilingual File: [release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/2fa5b7ff6e2b7e81993856d7368c914829db4d1e/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/release-notes.826b77f06ae23f3a7f33ec7bfe221db9d73fa87b.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-08 12:22:02
-* [Back to Top](#report-top)
-
 
 ## Error Details
 

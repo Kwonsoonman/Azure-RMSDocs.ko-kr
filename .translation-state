@@ -81464,9 +81464,9 @@
       "ArchiveFileCommit": "341f80d72d6351be28ff0c8bede48628bb12351a",
       "ArchiveFileDateTime": "2016-07-08T23:38:41.9693751Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\activate-office365-preview.7708e9e45db9b812160efac75f1066e22858608f.ko-kr.xlf",
+      "BilingualFileCommit": "8d0f29d58fa1fc0185011e2f1818b7c028ce93e1",
+      "BilingualDateTime": "2016-07-13T06:35:45.9115398Z",
       "BilingualException": null
     },
     "8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75": {
@@ -81569,9 +81569,9 @@
       "ArchiveFileCommit": "341f80d72d6351be28ff0c8bede48628bb12351a",
       "ArchiveFileDateTime": "2016-07-08T23:38:41.9693751Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\ios-os-x-code-examples.871773d38b38c27254b05260ca964b3d98051094.ko-kr.xlf",
+      "BilingualFileCommit": "8d0f29d58fa1fc0185011e2f1818b7c028ce93e1",
+      "BilingualDateTime": "2016-07-13T06:35:45.9115398Z",
       "BilingualException": null
     },
     "a3ed9e8de496741fae8904481edb1177762a12c0": {
@@ -81606,9 +81606,9 @@
       "ArchiveFileCommit": "341f80d72d6351be28ff0c8bede48628bb12351a",
       "ArchiveFileDateTime": "2016-07-08T23:38:41.9693751Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\faqs.026f9abe86913a512f64fd2a67018fda479e9cd0.ko-kr.xlf",
+      "BilingualFileCommit": "8d0f29d58fa1fc0185011e2f1818b7c028ce93e1",
+      "BilingualDateTime": "2016-07-13T06:35:45.9115398Z",
       "BilingualException": null
     },
     "32c3c93d55bd82f45fa7a081e55ae7ebe8f5956f": {
@@ -81641,9 +81641,9 @@
       "ArchiveFileCommit": "341f80d72d6351be28ff0c8bede48628bb12351a",
       "ArchiveFileDateTime": "2016-07-08T23:38:41.9693751Z",
       "ArchiveException": null,
-      "BilingualFilePath": null,
-      "BilingualFileCommit": null,
-      "BilingualDateTime": "0001-01-01T00:00:00",
+      "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\monitor-rms-connector.f938a97caf781680ad1036c38a0d1535b4565e92.ko-kr.xlf",
+      "BilingualFileCommit": "8d0f29d58fa1fc0185011e2f1818b7c028ce93e1",
+      "BilingualDateTime": "2016-07-13T06:35:45.9115398Z",
       "BilingualException": null
     },
     "53571aff357bbc0cdcb44ce9b403c68719abbaff": {

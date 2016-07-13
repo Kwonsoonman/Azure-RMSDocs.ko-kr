@@ -623,8 +623,8 @@
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5c032fe0a9e839634d7d7ea008558e7de959c89a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.ko-kr.xlf)
 * Handback Datetime: 2016-07-13 12:53:44
-* Bilingual File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/08417a7af0e61e6c74fa04b19e17503393492104/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-02 08:04:13
+* Bilingual File: [configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5c032fe0a9e839634d7d7ea008558e7de959c89a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-13 13:00:38
 * [Back to Top](#report-top)
 
 ##### <a name='79171b5931b69ca18d2a2cbe321d5d5887903da213'></a> Source: [Azure-RMSDocs\deploy-use\configure-servers-rms-connector.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/0b07ecc88b1d2d344f0984d4a805cc033996cc4d/Azure-RMSDocs/deploy-use/configure-servers-rms-connector.md)
@@ -1515,8 +1515,8 @@
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [install-the-rms-sdk.2cba1bcffa0283aea8e25ea2872cd70cc7cfeeb9.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5c032fe0a9e839634d7d7ea008558e7de959c89a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/install-the-rms-sdk.2cba1bcffa0283aea8e25ea2872cd70cc7cfeeb9.ko-kr.xlf)
 * Handback Datetime: 2016-07-13 12:53:44
-* Bilingual File: [install-the-rms-sdk.2cba1bcffa0283aea8e25ea2872cd70cc7cfeeb9.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/3c021f976926bc71188d2f616361e6d7adc28279/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/install-the-rms-sdk.2cba1bcffa0283aea8e25ea2872cd70cc7cfeeb9.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-03 01:15:31
+* Bilingual File: [install-the-rms-sdk.2cba1bcffa0283aea8e25ea2872cd70cc7cfeeb9.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5c032fe0a9e839634d7d7ea008558e7de959c89a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/install-the-rms-sdk.2cba1bcffa0283aea8e25ea2872cd70cc7cfeeb9.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-13 13:00:38
 * [Back to Top](#report-top)
 
 ##### <a name='66bb1b58cba19d0fe8bc2ec0d3720c0b040f837876'></a> Source: [Azure-RMSDocs\develop\ios-os-x-code-examples.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34/Azure-RMSDocs/develop/ios-os-x-code-examples.md)
@@ -5428,8 +5428,8 @@
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [install-sharing-app.15360f52b377b770654ca21ddee97994d11910b0.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5c032fe0a9e839634d7d7ea008558e7de959c89a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/install-sharing-app.15360f52b377b770654ca21ddee97994d11910b0.ko-kr.xlf)
 * Handback Datetime: 2016-07-13 12:53:44
-* Bilingual File: [install-sharing-app.15360f52b377b770654ca21ddee97994d11910b0.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/24727f938b898824d7f203626f87311a65b2b4be/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/install-sharing-app.15360f52b377b770654ca21ddee97994d11910b0.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-02 07:31:00
+* Bilingual File: [install-sharing-app.15360f52b377b770654ca21ddee97994d11910b0.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5c032fe0a9e839634d7d7ea008558e7de959c89a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/install-sharing-app.15360f52b377b770654ca21ddee97994d11910b0.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-13 13:00:38
 * [Back to Top](#report-top)
 
 ##### <a name='755db60abb7859af5065e2c5ddfbfc6cfb7aeeda374'></a> Source: [Azure-RMSDocs\rms-client\md.style](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/00cda5edc244cfe4478f8036e9dd0ef538cd4678/Azure-RMSDocs/rms-client/md.style)
@@ -5552,8 +5552,8 @@
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5c032fe0a9e839634d7d7ea008558e7de959c89a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.ko-kr.xlf)
 * Handback Datetime: 2016-07-13 12:53:44
-* Bilingual File: [sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/24727f938b898824d7f203626f87311a65b2b4be/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.ko-kr.xlf)
-* Bilingual Datetime: 2016-07-02 07:31:00
+* Bilingual File: [sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/5c032fe0a9e839634d7d7ea008558e7de959c89a/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.ko-kr.xlf)
+* Bilingual Datetime: 2016-07-13 13:00:38
 * [Back to Top](#report-top)
 
 ##### <a name='78ceb74a3dd8492ac5c754eea179525cae819fd0383'></a> Source: [Azure-RMSDocs\rms-client\sharing-app-remove-protection.md](https://github.com/Microsoft/Azure-RMSDocs-pr/blob/c611fa8a846612fed238e59e5077be67f6f9531a/Azure-RMSDocs/rms-client/sharing-app-remove-protection.md)

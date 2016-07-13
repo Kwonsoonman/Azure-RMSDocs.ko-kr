@@ -66906,8 +66906,8 @@
       "ArchiveFileDateTime": "2016-07-01T23:52:58.2367226Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\configure-office-apps.7d4d9ecf4a780b1fbfb3e7d639c2ea1244fbefff.ko-kr.xlf",
-      "BilingualFileCommit": "08417a7af0e61e6c74fa04b19e17503393492104",
-      "BilingualDateTime": "2016-07-02T08:04:13.8391392Z",
+      "BilingualFileCommit": "5c032fe0a9e839634d7d7ea008558e7de959c89a",
+      "BilingualDateTime": "2016-07-13T13:00:38.6115804Z",
       "BilingualException": null
     },
     "e0f90105bf168f4a3334a042acadc0b72052b601": {
@@ -71241,8 +71241,8 @@
       "ArchiveFileDateTime": "2016-07-01T23:52:58.2367226Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\install-sharing-app.15360f52b377b770654ca21ddee97994d11910b0.ko-kr.xlf",
-      "BilingualFileCommit": "24727f938b898824d7f203626f87311a65b2b4be",
-      "BilingualDateTime": "2016-07-02T07:31:00.565409Z",
+      "BilingualFileCommit": "5c032fe0a9e839634d7d7ea008558e7de959c89a",
+      "BilingualDateTime": "2016-07-13T13:00:38.6115804Z",
       "BilingualException": null
     },
     "771a80843ca5ab01cd06bd4e76c827469b0e9f00": {
@@ -71381,8 +71381,8 @@
       "ArchiveFileDateTime": "2016-07-01T23:52:58.2367226Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\sharing-app-protect-in-place.319486bc6ae97fa5149e590d076a2ed0ce8024ad.ko-kr.xlf",
-      "BilingualFileCommit": "24727f938b898824d7f203626f87311a65b2b4be",
-      "BilingualDateTime": "2016-07-02T07:31:00.565409Z",
+      "BilingualFileCommit": "5c032fe0a9e839634d7d7ea008558e7de959c89a",
+      "BilingualDateTime": "2016-07-13T13:00:38.6115804Z",
       "BilingualException": null
     },
     "78ceb74a3dd8492ac5c754eea179525cae819fd0": {
@@ -76204,8 +76204,8 @@
       "ArchiveFileDateTime": "2016-07-01T23:52:58.2367226Z",
       "ArchiveException": null,
       "BilingualFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\install-the-rms-sdk.2cba1bcffa0283aea8e25ea2872cd70cc7cfeeb9.ko-kr.xlf",
-      "BilingualFileCommit": "3c021f976926bc71188d2f616361e6d7adc28279",
-      "BilingualDateTime": "2016-07-03T01:15:31.6392122Z",
+      "BilingualFileCommit": "5c032fe0a9e839634d7d7ea008558e7de959c89a",
+      "BilingualDateTime": "2016-07-13T13:00:38.6115804Z",
       "BilingualException": null
     },
     "43e18d71314084c3ade70292dceaa2c73eb8910a": {

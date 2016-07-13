@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: acc140931b5f834ce1d70c851d90c334a03010dc
-ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
+ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
+ms.openlocfilehash: 66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378
 
 
 ---
@@ -36,9 +36,9 @@ ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
 ###시나리오: RMS 보호된 파일 사용
 
 
-- **1단계**: [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 개체를 만듭니다.
+- **1단계**: [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 개체를 만듭니다.
 
- **설명**: [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 사용하고 **MSAuthenticationCallback** 인스턴스를 *authenticationCallback* 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 개체를 인스턴스화합니다. 다음 예제 코드 섹션에서 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 호출을 참조하세요.
+ **설명**: [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 사용하고 **MSAuthenticationCallback** 인스턴스를 *authenticationCallback* 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 개체를 인스턴스화합니다. 다음 예제 코드 섹션에서 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 호출을 참조하세요.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -285,6 +285,6 @@ ms.openlocfilehash: 0c5ec8da79674d2023a0684fb0e83ac1e1743874
  
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

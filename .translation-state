@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "f329ab0c289c54a4839da513472854ebd548c1dd",
-  "LastTranslatedCommit": "9087cea5b04efda94aa9b7a9e25b3346c7b9c1e9",
+  "LastTranslatedCommit": "c06d733d6c64787264dc6e717593bb94e6b2b803",
   "Items": {
     "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a": {
       "FileHash": "2ed3bf162e9cbb06230b3bd9c0bd960c5c36049a",
@@ -76794,7 +76794,7 @@
       "TargetFilePath": "Azure-RMSDocs\\develop\\debugging-applications-that-use-ad-rms.md",
       "HandbackFilePath": "ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf",
       "HandbackFileCommit": "46d8f3b6566280b4a44242917777ed49744d7eee",
-      "HandbackDateTime": "2016-07-14T15:09:38.7541167Z",
+      "HandbackDateTime": "2016-07-14T15:29:40.4578877Z",
       "HandbackException": {
         "internal_error_code": "handback_transform_failed",
         "internal_error_message": "Handback file: C:\\ol\\master\\EM.handback\\06462f\\ol-handback\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf failed.",
@@ -76804,7 +76804,7 @@
         "stack_trace": "   at Microsoft.OpenLocalization.Transformer.TransformerClient.XliffToMarkdown(Stream xliffStream, Stream skeletonStream, Stream targetStream) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization.Transformer.Core\\TransformerClient.cs:line 119\r\n   at Microsoft.OpenLocalization.Helper.XliffTransformUtil.XliffToMarkdown(String skeletonFile, String xliffFile, String mdfile, Boolean useJavascriptTransformer) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Helper\\XliffTransformUtil.cs:line 92\r\n   at Microsoft.OpenLocalization.Localization.LocalizationCore.<>c__DisplayClass5_0.<GetHandbackFiles>b__0(String file) in C:\\Jenkins\\workspace\\OpenLocalization-Prod\\src\\OpenLocalization\\Localization\\HandbackCore.cs:line 406",
         "extended_information": null
       },
-      "HandbackFailureTimes": 5,
+      "HandbackFailureTimes": 1,
       "UpdatedDateTime": "2016-06-22T12:56:57.8526952Z",
       "ArchiveFilePath": "ol-handoff\\Microsoft\\Azure-RMSDocs-pr.ko-kr\\master\\archive\\debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf",
       "ArchiveFileCommit": "24a9ac5d4c067206abd38853cf2101af917a5a24",

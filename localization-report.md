@@ -1235,7 +1235,7 @@
 * Archive File: [debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf](https://github.com/Microsoft/EM.handoff/blob/24a9ac5d4c067206abd38853cf2101af917a5a24/ol-handoff/Microsoft/Azure-RMSDocs-pr.ko-kr/master/archive/debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf)
 * Archive Datetime: 2016-07-01 23:52:58
 * Handback File: [debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf)
-* Handback Datetime: 2016-07-14 11:27:03
+* Handback Datetime: 2016-07-14 13:28:10
 * Handback Error: [handback_transform_failed](#c00ce9829ce4150cfef74ecd972450b3d787f31255handback_transform_failed)
 * Bilingual File: [debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf](https://github.com/Microsoft/EM.handback/blob/46d8f3b6566280b4a44242917777ed49744d7eee/ol-handback/Microsoft/Azure-RMSDocs-pr.ko-kr/master/debugging-applications-that-use-ad-rms.044fb4ce51f76ed363f57487a20b276d965edaa7.ko-kr.xlf)
 * Bilingual Datetime: 2016-06-22 13:03:26

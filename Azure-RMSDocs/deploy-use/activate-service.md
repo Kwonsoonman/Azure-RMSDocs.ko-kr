@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 활성화 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 활성화 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/16/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
+ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+
 
 ---
 
@@ -58,7 +52,8 @@ Azure RMS를 활성화한 후 조직의 모든 사용자는 해당 파일에 정
 ## 단계적 배포용 등록 컨트롤 구성
 일부 사용자만 Azure RMS를 사용하여 즉시 파일을 보호할 수 있게 하려면 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) Windows PowerShell 명령을 사용하여 사용자 등록 컨트롤을 구성할 수 있습니다. Azure RMS를 활성화하기 전이나 후에 이 명령을 실행할 수 있습니다.
 
-> [!IMPORTANT] 이 명령을 사용하려면 **2.1.0.0** 버전 이상의 [Azure RMS Windows PowerShell 모듈](http://go.microsoft.com/fwlink/?LinkId=257721)이 있어야 합니다.
+> [!IMPORTANT]
+> 이 명령을 사용하려면 **2.1.0.0** 버전 이상의 [Azure RMS Windows PowerShell 모듈(영문)](http://go.microsoft.com/fwlink/?LinkId=257721)이 있어야 합니다.
 >
 > 설치한 버전을 확인하려면 다음을 실행합니다. **(Get-Module aadrm –ListAvailable).Version**
 
@@ -86,6 +81,7 @@ Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정�
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

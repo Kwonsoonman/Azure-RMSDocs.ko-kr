@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 개발자 지침 및 용어 | Azure RMS
-description: RMS SDK 4.2는 AD RMS 정보 보호를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는데 중점을 둡니다.
-keywords:
+title: "개발자 지침 및 용어 | Azure RMS"
+description: "RMS SDK 4.2는 AD RMS 정보 보호를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는데 중점을 둡니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 466db75b55164b638a269816f434cf027ce666a5
+ms.openlocfilehash: ebb08fbea18473cccca5897372b97f192200acca
+
 
 ---
 
@@ -42,6 +38,7 @@ Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management 
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

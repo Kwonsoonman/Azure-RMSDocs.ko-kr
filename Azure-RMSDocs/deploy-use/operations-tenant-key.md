@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 테넌트 키에 대한 작업 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 테넌트 키에 대한 작업 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 44408fd8f9da73d8050e0938aa1cc9bc76688bed
+
 
 ---
 
@@ -31,7 +25,7 @@ ms.suite: ems
 
 Microsoft Azure 권한 관리(Azure RMS) 테넌트 키를 구현한 후의 제어 및 책임 수준은 테넌트 키 토폴로지(Microsoft 관리 또는 고객 관리)에 따라 다릅니다.
 
-테넌트 키를 직접 관리하는 방식은 대개 BYOK(Bring Your Own Key)라고 합니다. 이 시나리오와, 두 테넌트 키 토폴로지 중에서 선택하는 방법에 대한 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md) 항목을 참조하세요..
+테넌트 키를 직접 관리하는 방식은 대개 BYOK(Bring Your Own Key)라고 합니다. 이 시나리오 및 두 테넌트 키 토폴로지 중 선택하는 방법에 대한 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
 
 다음 표에는 Azure RMS 테넌트 키에 대해 선택한 토폴로지에 따라 수행할 수 있는 작업이 나와 있습니다.
 
@@ -54,6 +48,7 @@ Microsoft Azure 권한 관리(Azure RMS) 테넌트 키를 구현한 후의 제�
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

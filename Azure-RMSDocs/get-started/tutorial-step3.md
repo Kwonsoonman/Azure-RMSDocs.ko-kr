@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 빠른 시작 자습서 - 3단계 | Azure RMS
-description: 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 세 번째 단계입니다.
-keywords:
+title: "Azure RMS 빠른 시작 자습서 - 3단계 | Azure RMS"
+description: "15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 세 번째 단계입니다."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+
 
 ---
 
@@ -83,9 +77,11 @@ ms.suite: ems
 |**보호된 항목 공유** 대화 상자의 옵션 정보|[Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션](../rms-client/sharing-app-dialog-box.md)|
 
 
->[!div class="step-by-step"] [« 2단계](tutorial-step2.md)
+>[!div class="step-by-step"]
+[« 2단계](tutorial-step2.md)
 [4단계 »](tutorial-step4.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

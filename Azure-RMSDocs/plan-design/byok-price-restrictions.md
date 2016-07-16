@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: BYOK 가격 및 제한 사항 | Azure RMS
-description:
-keywords:
+title: "BYOK 가격 및 제한 사항 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 34d5ed8ca9f5b4556429a081718fc70a789590aa
+
 
 ---
 
@@ -34,7 +28,7 @@ IT에서 관리하는 Azure 구독이 있는 조직은 추가 요금 없이 BYOK
 
 
 > [!NOTE]
-> 개인용 RMS에 대한 자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md) 항목을 참조하세요..
+> 개인용 RMS에 대한 자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
 
 ![BYOK에서는 Exchange Online을 지원하지 않습니다.](../media/RMS_BYOK_noExchange.png)
 
@@ -60,12 +54,13 @@ AD RMS에서 Azure RMS로 마이그레이션하는 경우 TPD(신뢰할 수 있�
 
 ## 다음 단계
 
-고유한 키를 관리하기로 결정한 경우 [Azure 권한 관리 테넌트 키 구현](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 섹션으로 이동합니다..
+고유한 키를 관리하기로 결정한 경우 [Azure 권한 관리 테넌트 키 구현](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key)으로 이동합니다.
 
 Microsoft에서 테넌트 키를 관리하는 기본 구성을 유지하기로 결정한 경우 Azure 권한 관리 테넌트 키 계획 및 구현 문서에서 [다음 단계](plan-implement-tenant-key.md#next-steps) 섹션을 참조하세요.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

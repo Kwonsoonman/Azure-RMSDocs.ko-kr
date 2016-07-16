@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: IPCHelloWorld - 예제 응용 프로그램 | Azure RMS
-description: 이 항목에는 예제 권한 사용 응용 프로그램을 만드는 지침이 포함되어 있습니다.
-keywords:
+title: "IPCHelloWorld - 예제 응용 프로그램 | Azure RMS"
+description: "이 항목에는 예제 권한 사용 응용 프로그램을 만드는 지침이 포함되어 있습니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ac6afddc2b39d6209ef1b89d8d84011942cdba5a
+ms.openlocfilehash: e75ec6c04afd171552697f79deb33ad2cfe2c4e1
+
 
 ---
 ** 이 SDK 콘텐츠는 현재 버전이 아닙니다. 잠시 MSDN에서 [현재 버전](https://msdn.microsoft.com/library/windows/desktop/hh535290(v=vs.85).aspx)의 설명서를 확인해 주세요. **
@@ -222,6 +218,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
  
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

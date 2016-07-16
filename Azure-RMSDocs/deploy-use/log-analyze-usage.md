@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 사용 현황 로깅 및 분석 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 사용 현황 로깅 및 분석 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 06/30/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5ab8d4ef132eec9991c0ff789f2b2dfa7bdf2cd8
+ms.openlocfilehash: 845a47f526754f291c27a3c2bbd80af736b44992
+
 
 ---
 
@@ -47,7 +41,8 @@ ms.suite: ems
 
     정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. Azure 권한 관리 및 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure 권한 관리로 보호되는 문서와 사진을 열려면 항상 권한 관리 라이선스를 받아야 하기 때문입니다. 이는 메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 저장소 장치에 복사하는 경우에도 마찬가지입니다. 즉, Azure 권한 관리를 사용하여 데이터를 보호하는 경우 Azure 권한 관리 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
 
-> [!NOTE] Azure 권한 관리에 대한 관리 작업 로깅만 사용하고 사용자가 권한 관리를 사용하는 방법은 추적하지 않으려는 경우 Azure 권한 관리용 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet을 사용할 수 있습니다.
+> [!NOTE]
+> Azure 권한 관리에 대한 관리 작업 로깅만 사용하고 사용자가 권한 관리를 사용하는 방법은 추적하지 않으려는 경우 Azure 권한 관리용 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet을 사용할 수 있습니다.
 > 
 > Azure 클래식 포털에서 **RMS 요약**, **RMS 활성 사용자**, **RMS 장치 플랫폼** 및 **RMS 응용 프로그램 사용**이 포함된 개괄적인 사용 현황 보고서를 사용할 수도 있습니다. Azure 클래식 포털에서 이러한 보고서에 액세스하려면 **Active Directory**를 클릭하고 디렉터리를 선택하여 연 다음 **보고서**를 클릭합니다.
 
@@ -56,7 +51,8 @@ ms.suite: ems
 ## Azure 권한 관리 사용 현황 로깅을 사용하도록 설정하는 방법
 2016년 2월부터 모든 고객에 대해 Azure 권한 관리 사용 현황 로깅이 기본적으로 사용됩니다. 이 내용은 2016년 2월 이전에 Azure RMS 서비스를 활성화한 고객과 2016년 2월 이후에 서비스를 활성화하는 고객에게 적용됩니다. 
 
-> [!NOTE] 로그 저장소 또는 로깅 기능에 대해 무료로 제공됩니다.
+> [!NOTE]
+> 로그 저장소 또는 로깅 기능에 대한 무료로 제공됩니다.
 > 
 > 2016년 2월 이전에 Azure RMS에 대한 사용 현황 로깅을 사용한 경우 Azure 구독이 필요하며 Azure에 충분한 저장소가 있어야 했지만 지금은 그렇지 않습니다.
 
@@ -143,17 +139,17 @@ Azure 권한 관리는 일련의 Blob으로 로그를 기록합니다.
 |--------------|-----------------|---------------|-----------------|
 |date|날짜|요청이 처리된 UTC 날짜입니다.<br /><br />원본은 요청을 처리한 서버의 로컬 시계입니다.|2013-06-25|
 |time|시간|요청이 처리된 UTC 시간(24시간 형식)입니다.<br /><br />원본은 요청을 처리한 서버의 로컬 시계입니다.|21:59:28|
-|row-id|텍스트|이 로그 레코드의 고유 GUID입니다.<br /><br />로그를 집계하거나 다른 형식으로 복사할 때 이 값을 활용하면 유용합니다.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
+|row-id|텍스트|이 로그 레코드의 고유 GUID입니다. 값이 없으면 상관 관계 ID 값을 사용하여 항목을 식별합니다.<br /><br />로그를 집계하거나 다른 형식으로 복사할 때 이 값을 활용하면 유용합니다.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|Name|요청한 RMS API의 이름입니다.|AcquireLicense|
-|user-id|문자열|요청을 한 사용자입니다.<br /><br />값은 작은따옴표로 묶입니다. 일부 익명 요청 유형의 경우 값은 "입니다.|‘joe@contoso.com’|
-|result|문자열|요청이 정상적으로 처리된 경우 'Success'입니다.<br /><br />요청이 실패한 경우에는 작은따옴표로 묶인 오류 유형이 표시됩니다.|‘Success’|
+|user-id|문자열|요청을 한 사용자입니다.<br /><br />값은 작은따옴표로 묶입니다. 본인이 관리하는 테넌트 키(BYOK)로부터의 호출에는 **"**라는 값이 있으며, 이것은 요청 종류가 익명일 경우에도 적용됩니다.|‘joe@contoso.com’|
+|result|문자열|요청이 정상적으로 처리된 경우 'Success'입니다.<br /><br />요청이 실패한 경우에는 작은따옴표로 묶인 오류 유형이 표시됩니다.|'성공'|
 |correlation-id|텍스트|지정된 요청에 대해 RMS 클라이언트 로그와 서버 로그 간에 공통적으로 사용되는 GUID입니다.<br /><br />이 값은 클라이언트 문제 해결 시 유용할 수 있습니다.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|텍스트|문서 등의 보호된 콘텐츠를 식별하는 중괄호로 묶인 GUID입니다.<br /><br />request-type이 AcquireLicense인 경우에만 이 필드에 값이 포함되며 기타 모든 요청 유형의 경우 이 필드는 비어 있습니다.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
 |owner-email|문자열|문서 소유자의 전자 메일 주소입니다.|alice@contoso.com|
 |issuer|문자열|문서 발급자의 전자 메일 주소입니다.|alice@contoso.com (or) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|Template-id|문자열|문서를 보호하는 데 사용된 템플릿의 ID입니다.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|File-name|문자열|보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.|TopSecretDocument.docx|
-|Date-published|날짜|문서를 보호한 날짜입니다.|2015-10-15T21:37:00|
+|template-id|문자열|문서를 보호하는 데 사용된 템플릿의 ID입니다.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|문자열|보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.|TopSecretDocument.docx|
+|date-published|날짜|문서를 보호한 날짜입니다.|2015-10-15T21:37:00|
 |c-info|문자열|요청을 수행하는 클라이언트 플랫폼에 대한 정보입니다.<br /><br />구체적인 문자열은 운영 체제, 브라우저 등의 응용 프로그램에 따라 다릅니다.|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|주소|요청을 수행하는 클라이언트의 IP 주소입니다.|64.51.202.144|
 
@@ -166,7 +162,7 @@ user-id 필드는 보통 요청을 수행한 사용자를 나타내지만 해당
 
 -   RMS 커넥터를 사용하는 경우
 
-    이 커넥터로부터의 요청은 RMS 커넥터 설치 시 RMS에서 자동으로 생성하는 서비스 사용자 이름으로 기록됩니다.
+    이 커넥터로부터의 요청은 RMS 커넥터 설치 시 자동으로 생성되는 **Aadrm_S-1-7-0**라는 서비스 사용자 이름으로 기록됩니다.
 
 #### 일반적인 요청 형식
 Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에는 가장 일반적으로 사용되는 몇 가지 요청 형식이 나와 있습니다.
@@ -181,7 +177,7 @@ Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에
 |BECreateEndUserLicenseV1|모바일 장치에서 최종 사용자 라이선스를 만들도록 호출합니다.|
 |BEGetAllTemplatesV1|모바일 장치(백 엔드)에서 모든 템플릿을 가져오도록 호출합니다.|
 |Certify|클라이언트가 보호할 콘텐츠를 인증합니다.|
-|Decrypt|클라이언트가 RMS로 보호된 콘텐츠의 암호 해독을 시도합니다.|
+|KMSPDecrypt|클라이언트가 RMS로 보호된 콘텐츠의 암호 해독을 시도합니다. 고객이 관리하는 테넌트 키(BYOK)에 대해서만 적용할 수 있습니다.|
 |DeleteTemplateById|Azure 클래식 포털에서 템플릿 ID별로 템플릿을 삭제하도록 호출합니다.|
 |ExportTemplateById|Azure 클래식 포털에서 템플릿 ID에 따라 템플릿을 내보내도록 호출합니다.|
 |FECreateEndUserLicenseV1|AcquireLicense 요청과 비슷하지만 모바일 장치에서 수행하는 요청입니다.|
@@ -199,7 +195,7 @@ Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에
 |ServerCertify|RMS 사용 클라이언트(예: SharePoint)에서 서버를 인증하도록 호출합니다.|
 |SetUsageLogFeatureState|사용 현황 로깅을 사용하도록 호출합니다.|
 |SetUsageLogStorageAccount|Azure RMS 로그의 위치를 지정하도록 호출합니다.|
-|SignDigest|서명 용도로 키를 사용할 때 호출합니다. 대개 AcquireLicence(또는 FECreateEndUserLicenseV1), Certify 및 GetClientLicensorCert(또는 FECreatePublishingLicenseV1)당 한 번씩만 호출합니다.|
+|KMSPSignDigest|서명 용도로 고객 관리 키(BYOK)를 사용할 때 호출합니다. 대개 AcquireLicence(또는 FECreateEndUserLicenseV1), Certify 및 GetClientLicensorCert(또는 FECreatePublishingLicenseV1)당 한 번씩만 호출합니다.|
 |UpdateTemplate|Azure 클래식 포털에서 기존 템플릿을 업데이트하도록 호출합니다.|
 
 ## Windows PowerShell 참조
@@ -229,6 +225,7 @@ Azure 권한 관리용 Windows PowerShell 사용에 대한 자세한 내용은 [
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

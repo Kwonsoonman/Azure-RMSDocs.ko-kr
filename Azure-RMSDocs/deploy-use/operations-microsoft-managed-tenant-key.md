@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Microsoft 관리 - 테넌트 키 수명 주기 작업 | Azure RMS
-description:
-keywords:
+title: "Microsoft 관리 - 테넌트 키 수명 주기 작업 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
+
 
 ---
 
@@ -42,7 +36,7 @@ Azure RMS 구독을 취소하면 Azure RMS에서 테넌트 키 사용을 중지�
 
 -   테넌트 키의 마스터 복사본(현재 소유 중인 복사본)이 노출되었다고 판단되는 경우.
 
-[Microsoft 지원에 문의](../get-started/information-support#to-contact-microsoft-support)하여 **Azure RMS 테넌트 키 다시 입력 요청에 관한 Azure Rights Management 지원 케이스**를 열면 테넌트 키를 다시 입력할 수 있습니다. 자신이 Azure RMS 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 다시 입력은 무료 지원 서비스가 아닙니다.
+[Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 **Azure RMS 테넌트 키 다시 입력 요청에 관한 Azure Rights Management 지원 케이스**를 열면 테넌트 키를 다시 입력할 수 있습니다. 자신이 Azure RMS 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 다시 입력은 무료 지원 서비스가 아닙니다.
 
 테넌트 키를 다시 입력하면 새 테넌트 키를 사용하여 새 콘텐츠를 보호합니다. 이 과정은 단계별로 진행되므로 일정 시간 동안에는 일부 새 콘텐츠가 계속해서 이전 테넌트 키로 보호됩니다. 이전에 보호되었던 콘텐츠도 이전 테넌트 키로 계속 보호됩니다. 이 시나리오를 지원하기 위해 Azure RMS에서는 이전 콘텐츠용 라이선스를 발급할 수 있도록 이전 테넌트 키를 보존합니다.
 
@@ -54,7 +48,7 @@ Microsoft에서 테넌트 키를 백업하며 사용자는 아무런 작업을 �
 
 ### 1단계: 내보내기 시작
 
--   그러려면, [Microsoft 지원에 문의](../get-started/information-support#to-contact-microsoft-support)하여 **Azure RMS 키 내보내기 요청에 관한 Azure Rights Management 지원 케이스**를 엽니다. 자신이 Azure RMS 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 내보내기는 무료 지원 서비스가 아닙니다.
+-   그러려면, [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 **Azure RMS 키 내보내기 요청에 관한 Azure Rights Management 지원 케이스**를 엽니다. 자신이 Azure RMS 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 내보내기는 무료 지원 서비스가 아닙니다.
 
 ### 2단계: 확인 대기
 
@@ -97,13 +91,14 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 
 |문제 설명|가능한 대응 방법|
 |------------------------|-------------------|
-|테넌트 키가 유출되었습니다.|테넌트 키를 다시 입력합니다. 이 문서에서 [테넌트 키 다시 입력](operations-tenant-key#re-key-your-tenant-key) 섹션을 참조하세요.|
+|테넌트 키가 유출되었습니다.|테넌트 키를 다시 입력합니다. 이 문서에서 [테넌트 키 다시 입력](operations-microsoft-managed-tenant-key.md#re-key-your-tenant-key) 섹션을 참조하세요.|
 |권한이 없는 개인이나 맬웨어가 테넌트 키 사용 권한을 확보했으나 키 자체가 유출되지는 않았습니다.|이 경우에는 테넌트 키를 다시 입력해도 도움이 되지 않으며 근본 원인을 분석해야 합니다. 프로세스 또는 소프트웨어 버그로 인해 권한이 없는 개인이 액세스 권한을 얻은 경우에는 해당 상황을 해결해야 합니다.|
 |RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure RMS를 업데이트하고 모든 고객에게 테넌트 키를 갱신하도록 지시해야 합니다.|
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

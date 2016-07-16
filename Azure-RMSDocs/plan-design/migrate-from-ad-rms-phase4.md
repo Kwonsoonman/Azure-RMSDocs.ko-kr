@@ -1,28 +1,21 @@
 ---
-# required metadata
-
-title: AD RMS에서 Azure 권한 관리로 마이그레이션 - 4단계 | Azure RMS
-description:
-keywords:
+title: "AD RMS에서 Azure 권한 관리로 마이그레이션 - 4단계 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: 7ed3569475362272ace055862fe8bb3ee072036a
+
 
 ---
 
@@ -49,7 +42,7 @@ AD RMS 서버를 서비스 해제한 후에는 Azure 클래식 포털에서 템�
 
 Azure RMS 테넌트 키를 다시 입력하려면
 
--   Azure RMS 테넌트 키를 Microsoft에서 관리하는 경우: 이 작업을 수행하려면 [Microsoft 지원에 문의](../get-started/information-support#to-contact-microsoft-support)하여 **Azure RMS 테넌트 키 다시 입력 요청에 관한 Azure Rights Management 지원 케이스**를 엽니다. 자신이 Azure RMS 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 다시 입력은 무료 지원 서비스가 아닙니다.
+-   Azure RMS 테넌트 키를 Microsoft에서 관리하는 경우: 이 작업을 수행하려면 [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 **Azure RMS 테넌트 키 다시 입력 요청에 관한 Azure Rights Management 지원 케이스**를 엽니다. 자신이 Azure RMS 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 다시 입력은 무료 지원 서비스가 아닙니다.
 
 -   Azure RMS 테넌트 키를 직접 관리하는 경우(BYOK): BYOK 절차를 반복하여 인터넷을 통해 또는 직접 새 키를 생성하고 만듭니다.
 
@@ -61,6 +54,7 @@ Azure RMS 테넌트 키 관리에 대한 자세한 내용은 [Azure 권한 관�
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

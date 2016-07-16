@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 2단계&colon; HSM 보호된 키-HSM 보호된 키 마이그레이션 | Azure RMS
-description:
-keywords:
+title: "2단계&colon; HSM 보호된 키-HSM 보호된 키 마이그레이션 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 7b531ebba1923653cb37c70a02fa888a40e96528
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 이 지침은 [AD RMS에서 Azure 권한 관리로의 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 HSM으로 보호되고 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다. 
 
-선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
+선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
 
 > [!NOTE]
 > 이러한 지침에서는 AD RMS 키가 모듈로 보호되어 있다고 가정합니다. 이것은 일반적인 경우입니다. AD RMS 키가 OCS로 보호되어 있는 경우 이러한 지침을 수행하기 전에 [AskIPTeam@microsoft.com](mailto: askipteam@microsoft.com?subject=AD%20RMS%20migration%20with%20OCS-protected%20key)에 문의하세요.
@@ -43,7 +37,7 @@ HSM 키와 AD RMS 구성을 Azure RMS로 가져오는 두 부분으로 된 절�
 
 ## 1부: HSM 키를 Azure RMS로 전송할 수 있도록 패키지
 
-1.  [Azure 권한 관리 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)의 [BYOK(Bring Your Own Key) 구현](plan-implement-tenant-key.md#BKMK_ImplementBYOK) 섹션에 있는 단계를 수행합니다. 다음 경우를 제외하고 **인터넷을 통해 테넌트 키 생성 및 전송** 절차를 따릅니다.
+1.  [Azure 권한 관리 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)의 [BYOK(Bring Your Own Key) 구현](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 섹션에 있는 단계를 수행합니다. 다음 경우를 제외하고 **인터넷을 통해 테넌트 키 생성 및 전송** 절차를 따릅니다.
 
     -   AD RMS 배포에서 생성된 동일한 키가 이미 있으므로 **테넌트 키 생성**단계는 따르지 마세요. Thales 설치의 AD RMS 서버에서 사용되는 키를 식별하고, 마이그레이션 중에 이 키를 사용해야 합니다. Thales 암호화된 키 파일 이름은 일반적으로 서버에서 로컬로 **key_(keyAppName)_(keyIdentifier)**입니다.
 
@@ -72,10 +66,11 @@ HSM 키와 AD RMS 구성을 Azure RMS로 가져오는 두 부분으로 된 절�
     Disconnect-AadrmService
     ```
 
-이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)로 이동할 준비가 되었습니다.
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

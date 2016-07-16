@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 개요 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 개요 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/03/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
+ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+
 
 ---
 
@@ -35,16 +29,17 @@ Rights Management는 암호화, ID 및 권한 부여 정책을 사용하여 파�
 
 예를 들어 조직 내의 사용자만 액세스할 수 있도록 파일을 구성할 수도 있고 파일 편집 가능 여부를 제어하거나 파일을 읽기 전용으로 제한하거나 파일 인쇄를 차단할 수도 있습니다. 마찬가지로 전자 메일도 구성할 수 있으며 전체 회신 옵션 사용 또는 전자 메일 전달을 차단할 수 있습니다. 표준화된 정책 템플릿을 사용하면 이러한 보호 작업을 단순화하고 간소화할 수 있습니다.
 
-Azure 권한 관리를 다른 이름으로 알고 있는 경우 [서비스에 대한 대체 조건의 목록](azure-rms-aka.md)을 참조하세요..
+Azure 권한 관리를 다른 이름으로 알고 있는 경우 [서비스에 대한 대체 조건의 목록](azure-rms-aka.md)을 참조하세요.
 
 # 다음 단계
 자세한 설명과 몇 가지 예제를 보려면 [Azure 권한 관리란?](what-is-azure-rms.md)을 참조하세요.
 
-조직에 Azure RMS를 배포할 준비가 되었으면 [Azure 권한 관리 배포 로드맵](../plan-design/deployment-roadmap.md) 항목을 사용합니다..
+조직에 Azure RMS를 배포할 준비가 되었으면 [Azure 권한 관리 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용합니다.
 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

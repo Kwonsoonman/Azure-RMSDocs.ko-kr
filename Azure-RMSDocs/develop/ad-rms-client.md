@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 클라이언트 | Azure RMS
-description: AD RMS 클라이언트 2.1은 정보에 대한 액세스 및 사용을 보호하도록 설계된 클라이언트 컴퓨터용 소프트웨어입니다.
-keywords:
+title: "클라이언트 | Azure RMS"
+description: "AD RMS 클라이언트 2.1은 정보에 대한 액세스 및 사용을 보호하도록 설계된 클라이언트 컴퓨터용 소프트웨어입니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: F7145090-C2EB-405A-A4CF-0240D57A36DA
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 24322775b689ad0508979853fd06b2d33fc33cc1
+
 
 ---
 
@@ -34,7 +30,7 @@ RMS Client 2.1은 사용자가 보호된(암호화된) 콘텐츠를 만들고 �
 
 권한 관리 서비스 SDK 2.1은 RMS Client 2.1에서 작동합니다. RMS SDK 2.1을 기반으로 빌드된 권한 사용 응용 프로그램에서는 RMS Client 2.1을 사용해야 합니다.
 
-자세한 내용은 [RMS Client 2.1에 대한 TechNet 설명서](https://TechNet.Microsoft.Com/en-us/library/jj159267(WS.10).aspx) 항목을 참조하세요.
+자세한 내용은 [RMS Client 2.1에 대한 TechNet 설명서](https://TechNet.Microsoft.Com/library/jj159267(WS.10).aspx) 항목을 참조하세요.
 
 ## 관련 항목
 
@@ -46,6 +42,7 @@ RMS Client 2.1은 사용자가 보호된(암호화된) 콘텐츠를 만들고 �
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

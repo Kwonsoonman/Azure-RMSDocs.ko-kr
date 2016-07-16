@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 공유 응용 프로그램 기술 개요 | Azure RMS
-description:
-keywords:
+title: "Rights Management 공유 응용 프로그램 기술 개요 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/20/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
+ms.openlocfilehash: 4f63cb7911661104113d19ecd84ef7c80a874408
+
 
 ---
 
@@ -66,7 +60,8 @@ RMS 공유 응용 프로그램이 적용하는 기본 보호 수준을 변경할
 
 일반 수준으로 보호되는 파일의 경우에는 원래 파일 이름 확장명이 항상 .pfile로 변경됩니다.
 
-> [!WARNING] 파일 이름 확장명을 검사한 다음 그에 따라 작업을 수행하는 방화벽, 웹 프록시 또는 보안 소프트웨어를 사용하는 경우에는 이러한 새 파일 이름 확장명을 지원하도록 방화벽, 웹 프록시 또는 보안 소프트웨어를 다시 구성해야 할 수 있습니다.
+> [!WARNING]
+> 파일 이름 확장명을 검사한 다음 그에 따라 작업을 수행하는 방화벽, 웹 프록시 또는 보안 소프트웨어를 사용하는 경우에는 이러한 새 파일 이름 확장명을 지원하도록 방화벽, 웹 프록시 또는 보안 소프트웨어를 다시 구성해야 할 수 있습니다.
 
 |원래 파일 이름 확장명|RMS로 보호된 파일 이름 확장명|
 |--------------------------------|-------------------------------------|
@@ -144,6 +139,7 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

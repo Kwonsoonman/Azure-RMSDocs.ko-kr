@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Android 설정 | Azure RMS
-description: Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
-keywords:
+title: "Android 설정 | Azure RMS"
+description: "Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
+ms.openlocfilehash: 30fad88ff664e2df935c8f2cfd28f8b1fe251f67
+
 
 ---
 
@@ -50,7 +46,7 @@ Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 
 
     이 SDK는 Android 4.0.3(API 수준 15) 이상용 개발에 사용할 수 있습니다.
 
--   인증 라이브러리: [Azure ADAL(AD 인증 라이브러리)](https://msdn.microsoft.com/en-us/library/jj573266.aspx)을 사용하는 것이 좋습니다. 그러나 OAuth 2.0을 지원하는 다른 인증 라이브러리도 사용할 수 있습니다.
+-   인증 라이브러리: [Azure ADAL(AD 인증 라이브러리)](https://msdn.microsoft.com/library/jj573266.aspx)을 사용하는 것이 좋습니다. 그러나 OAuth 2.0을 지원하는 다른 인증 라이브러리도 사용할 수 있습니다.
 
     자세한 내용은 [Android용 ADAL](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)을 참조하세요.
 
@@ -106,7 +102,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
     ![작업 영역으로 가져오기](../media/Android-setup-07.png)
 
--    **다음**을 클릭합니다. *adrms\_android\_sdk.zip*을 추출한 폴더로 이동합니다. SDK가 목록에 **com.microsoft.rightsmanagement**로 표시되어야 합니다.
+-    **다음**을 클릭합니다. *adrms\_android\_sdk.zip*을 추출한 폴더로 이동하여 선택합니다. SDK가 목록에 **com.microsoft.rightsmanagement**로 표시되어야 합니다.
 
     ![폴더를 선택하도록 이동](../media/Android-setup-08c.jpg)
 
@@ -131,12 +127,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 -   텍스트 편집기 보기에서 매니페스트를 보면 매니페스트 단계를 확인할 수 있습니다. 다음 줄이 나타나는지 확인합니다.
 
 
-    <uses-sdk
-         android:minSdkVersion="15"
-         android:targetSdkVersion="19"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission/>
+    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
 
 
 **참고** SDK는 *android.support.v4*를 사용합니다.
@@ -158,6 +149,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
  
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

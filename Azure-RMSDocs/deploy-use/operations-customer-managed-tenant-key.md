@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 고객 관리 - 테넌트 키 수명 주기 작업 | Azure RMS
-description:
-keywords:
+title: "고객 관리 - 테넌트 키 수명 주기 작업 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 496edca2e2323e17216858e2ab4844fdb0aa1fb0
+
 
 ---
 
@@ -63,7 +57,7 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 
 |문제 설명|가능한 대응 방법|
 |------------------------|-------------------|
-|테넌트 키가 유출되었습니다.|테넌트 키를 다시 입력합니다. [테넌트 키 다시 입력](#re-key-your-tenant-key) 섹션을 참조하세요..|
+|테넌트 키가 유출되었습니다.|테넌트 키를 다시 입력합니다. [테넌트 키 다시 입력](#re-key-your-tenant-key)을 참조하세요.|
 |권한이 없는 개인이나 맬웨어가 테넌트 키 사용 권한을 확보했으나 키 자체가 유출되지는 않았습니다.|이 경우에는 테넌트 키를 다시 입력해도 도움이 되지 않으며 근본 원인을 분석해야 합니다. 프로세스 또는 소프트웨어 버그로 인해 권한이 없는 개인이 액세스 권한을 얻은 경우에는 해당 상황을 해결해야 합니다.|
 |현재 생성 HSM 기술에서 취약점이 발견되었습니다.|Microsoft에서 HSM을 업데이트해야 합니다. 취약점으로 인해 키가 노출되었다고 생각되면 Microsoft는 모든 고객에게 테넌트 키를 갱신할 것을 지시합니다.|
 |RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure RMS를 업데이트하고 모든 고객에게 테넌트 키를 갱신하도록 지시해야 합니다.|
@@ -71,6 +65,7 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

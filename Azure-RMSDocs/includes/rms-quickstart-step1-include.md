@@ -55,6 +55,6 @@ Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스�
 |기본 템플릿과 사용자 지정 템플릿을 새로 만드는 방법 정보   →|[Azure 권한 관리용 사용자 지정 템플릿 구성](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

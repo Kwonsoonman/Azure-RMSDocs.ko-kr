@@ -49,6 +49,6 @@ Microsoft Azure 권한 관리(Azure RMS) 테넌트 키를 구현한 후의 제�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

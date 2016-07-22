@@ -59,6 +59,6 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

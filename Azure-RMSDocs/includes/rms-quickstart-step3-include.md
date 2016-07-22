@@ -42,6 +42,6 @@
 |**보호된 항목 공유** 대화 상자의 옵션 정보   →|[Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

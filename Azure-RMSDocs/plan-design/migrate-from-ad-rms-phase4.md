@@ -55,6 +55,6 @@ Azure RMS 테넌트 키 관리에 대한 자세한 내용은 [Azure 권한 관�
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

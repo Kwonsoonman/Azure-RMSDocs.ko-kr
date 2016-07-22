@@ -100,6 +100,6 @@ Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스�
 [2단계 »](tutorial-step2.md)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

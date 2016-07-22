@@ -44,6 +44,6 @@ Microsoft Rights Management 서비스는 클라이언트-서버 솔루션이고,
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

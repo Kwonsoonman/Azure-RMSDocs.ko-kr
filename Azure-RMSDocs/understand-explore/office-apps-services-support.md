@@ -73,6 +73,6 @@ SharePoint와 함께 Azure RMS를 사용하는 방법에 대한 자세한 내용
 다른 응용 프로그램과 서비스에서 Azure 권한 관리를 지원하는 방식을 보려면 [응용 프로그램이 Azure 권한 관리를 지원하는 방식](applications-support.md)을 참조하세요.
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

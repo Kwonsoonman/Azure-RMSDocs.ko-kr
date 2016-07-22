@@ -62,6 +62,6 @@ Azure RMS를 직접 사용해 보려는 경우에는 [Azure 권한 관리에 대
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

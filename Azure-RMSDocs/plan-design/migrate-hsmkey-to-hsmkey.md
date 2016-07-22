@@ -71,6 +71,6 @@ HSM 키와 AD RMS 구성을 Azure RMS로 가져오는 두 부분으로 된 절�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

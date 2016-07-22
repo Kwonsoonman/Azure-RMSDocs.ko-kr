@@ -62,6 +62,6 @@ RMS 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

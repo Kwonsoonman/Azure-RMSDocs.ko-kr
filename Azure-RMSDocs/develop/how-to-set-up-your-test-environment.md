@@ -56,6 +56,6 @@ Windows Server에서 실행 중인 Azure RMS 또는 RMS 서버에서 테스트�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

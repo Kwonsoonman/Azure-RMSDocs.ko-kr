@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리 준비 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리 준비 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 55f092ede1f003c700cb58359bab264772702c39
+
 
 ---
 
@@ -42,12 +36,13 @@ ms.suite: ems
     Exchange Online이 있는 경우 Exchange 관리 센터를 사용하여 메일 사용 가능 그룹을 만들고 사용할 수 있습니다. AD DS에서 Azure AD로 동기화하는 경우 보안 그룹 또는 배포 그룹 중 하나인 메일 사용 가능 그룹을 만들고 사용할 수 있습니다.
 
 ## 권한 관리 사용
-[!INCLUDE[o365_2](../includes/o365_2_md.md)] 또는 Azure AD 계정을 등록할 때 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]는 기본적으로 사용하지 않도록 설정됩니다. 조직에 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 사용하려면 서비스를 활성화해야 합니다. 자세한 내용은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md) 항목을 참조하세요..
+[!INCLUDE[o365_2](../includes/o365_2_md.md)] 또는 Azure AD 계정을 등록할 때 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]는 기본적으로 사용하지 않도록 설정됩니다. 조직에 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 사용하려면 서비스를 활성화해야 합니다. 자세한 내용은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

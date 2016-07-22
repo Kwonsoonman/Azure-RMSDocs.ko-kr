@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션 | Azure RMS
-description:
-keywords:
+title: "Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: 771a80843ca5ab01cd06bd4e76c827469b0e9f00
+
 
 ---
 
@@ -57,11 +51,11 @@ ms.suite: ems
 -   **일반적으로 파일을 보호**할 때 권한 없는 사람은 파일을 열 수 없습니다. 인증된 사용자가 파일을 연 다음 다른 사람에게 보호되지 않은 상태로 전달하거나 다른 사용자가 액세스할 수 있는 위치에 저장할 수 있었습니다. 그러나 파일에 대해 어떤 권한이 있는지를 알려주는 메시지가 표시되고 이를 적용하도록 요청하지만 이 보호는 강제로 적용할 수 없습니다. 또한 일반적으로 파일을 보호하는 경우 권한 부여 이상의 사용 권한을 제한할 수 없습니다. 예를 들어 콘텐츠를 보기 전용으로 제한할 수 없거나 인쇄하지 않습니다.
 
     > [!NOTE]
-    > 일반적으로 보호된 파일은 항상 **.pfile**이라는 파일 이름 확장명을 가집니다..
+    > 일반적으로 보호된 파일은 항상 **.pfile**이라는 파일 이름 확장명을 가집니다.
 
 -   반면 이를 지원하는 응용 프로그램으로 Rights Management의 **기본 제공(기본) 보호**를 사용하는 경우(예: Office 파일) 파일이 다른 사람에게 전송되거나 다른 위치에 저장되더라도 파일에 보호가 적용됩니다. 그리고 이러한 파일을 보호하는 경우 읽기 전용과 같은 제한적 사용 권한 또는 편집하지만 인쇄하거나 복사할 수 없는 사용 권한을 사용할 수 있습니다. 예를 들어 **뷰어 – 보기 전용**을 선택하면 콘텐츠를 편집, 인쇄 또는 복사할 수 없습니다.
 
-추가 기술 정보는 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md) 항목에서 [보호 수준 – 기본 및 일반](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요..
+추가 기술 정보는 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [보호 수준 – 기본 및 일반](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요.
 
 ## 자동으로 만들어지는 .ppdf 파일이란 무엇인가요?
 
@@ -84,6 +78,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

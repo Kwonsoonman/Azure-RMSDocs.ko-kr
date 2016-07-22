@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: AD RMS에서 Azure 권한 관리로 마이그레이션 | Azure RMS
-description:
-keywords:
+title: "AD RMS에서 Azure 권한 관리로 마이그레이션 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 06/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
+ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+
 
 ---
 
@@ -101,7 +95,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 -   예를 들어, 트러스트된 사용자 도메인 또는 페더레이션을 사용하여 외부 파트너와 공동으로 작업하는 경우 해당 파트너가 마이그레이션과 동시에 또는 마이그레이션 후 가능한 빨리 Azure RMS로도 마이그레이션해야 합니다. 외부 파트너가 조직에서 이전에 AD RMS를 사용하여 보호하던 콘텐츠에 계속 액세스하려면 사용자가 변경한 구성(이 문서에 포함됨)과 비슷하게 클라이언트 구성을 변경해야 합니다.
 
-    파트너에서 있을 수 있는 가능한 구성 차이로 인해 이러한 재구성에 대한 정확한 지침은 이 문서에서 다루지 않습니다. 도움이 필요하면 [Microsoft 지원 팀에 문의](../get-started/information-support#support-options-and-community-resources)하세요.
+    파트너에서 있을 수 있는 가능한 구성 차이로 인해 이러한 재구성에 대한 정확한 지침은 이 문서에서 다루지 않습니다. 도움이 필요하면 [Microsoft 지원 팀에 문의](../get-started/information-support.md#support-options-and-community-resources)하세요.
 
 ## AD RMS에서 Azure RMS로 마이그레이션하는 단계 개요
 
@@ -185,6 +179,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

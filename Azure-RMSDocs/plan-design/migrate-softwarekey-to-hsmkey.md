@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 2단계&colon; 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션 | Azure RMS
-description:
-keywords:
+title: "2단계&colon; 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 173641b9dada2673b48a1c210419cb933cdd9f13
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 이 지침은 [AD RMS에서 Azure 권한 관리로의 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 소프트웨어로 보호되고 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다. 
 
-선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-to-azure-rms.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
+선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
 
 다음은 Azure RMS에 AD RMS 구성을 가져오기 위한 세 부분으로 구성된 절차로, 이 작업을 수행하면 사용자가 관리하는(BYOK) Azure RMS 테넌트 키를 만들 수 있습니다.
 
@@ -40,7 +34,7 @@ ms.suite: ems
 
 ## 1부: 구성 데이터에서 SLC를 추출하고 온-프레미스 HSM으로 키 가져오기
 
-1.  [Azure 권한 관리 테넌트 키 계획 및 구현](plan-implement-tenant-key.md) 항목의 [BYOK(Bring Your Own Key) 구현](plan-implement-tenant-key.md#BKMK_ImplementBYOK) 섹션에 있는 다음 단계를 수행합니다.
+1.  [Azure 권한 관리 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)의 [BYOK(Bring Your Own Key) 구현](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 섹션에 있는 단계를 수행합니다. 다음 경우를 제외하고 **인터넷을 통해 테넌트 키 생성 및 전송** 절차를 따릅니다.
 
     -   **인터넷을 통해 테넌트 키 생성 및 전송**: **인터넷에 연결된 워크스테이션 준비**
 
@@ -79,7 +73,7 @@ HSM 기반 키로 사용할 수 있도록 SLC를 추출했으므로, 이 키를 
 
 ## 2부: HSM 키를 패키지한 후 Azure RMS로 전송
 
-1.  [Azure 권한 관리 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)의 [BYOK(Bring Your Own Key) 구현](plan-implement-tenant-key.md#BKMK_ImplementBYOK) 섹션에 있는 다음 단계를 수행합니다.
+1.  [Azure 권한 관리 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)의 [BYOK(Bring Your Own Key) 구현](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 섹션에 있는 다음 단계를 수행합니다.
 
     -   **인터넷을 통해 테넌트 키 생성 및 전송**: **테넌트 키 전송 준비**
 
@@ -108,11 +102,12 @@ HSM 키를 Azure RMS에 전송했으므로, 새로 전송된 테넌트 키에 �
     Disconnect-AadrmService
     ```
 
-이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-to-azure-rms.md#BKMK_Step3Migration).
+이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)로 이동할 준비가 되었습니다.
 
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Rights Management로 보호된 파일 보기 및 사용 | Azure RMS
-description:
-keywords:
+title: "Rights Management로 보호된 파일 보기 및 사용 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
+ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+
 
 ---
 
@@ -36,10 +30,10 @@ ms.suite: ems
 >
 > 조직이 Azure Rights Management(Azure RMS) 또는 AD RMS를 사용하지 않으면 자격 증명을 허용하는 무료 계정을 적용하므로 RMS를 사용하여 보호되는 파일을 열 수 있습니다.
 >
-> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다..
+> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
 >
 >     등록하면 개인 전자 메일 주소보다 회사 전자 메일 주소를 사용합니다. 보호된 첨부 파일을 전자 메일로 전송받았기 때문에 등록한 경우 전자 메일 메시지를 보내는 데 사용된 동일한 전자 메일 주소를 사용합니다.
-> -   자세한 내용은 [RMS for individuals and Azure Rights Management](../understand-explore/rms-for-individuals.md)(개인용 RMS 및 Azure 권한 관리) 항목을 참조하세요..
+> -   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
 
 ## 보호된 파일을 보려면
 파일 탐색기 또는 첨부 파일을 포함하는 전자 메일 메시지를 사용하여 보호된 파일을 두 번 클릭하고 자격 증명을 입력하라는 메시지가 나타나면 그렇게 수행합니다.
@@ -59,7 +53,7 @@ ms.suite: ems
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 메일로 공유한 pfile의 대화 상자](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **파일에 *.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)입니다.)**
+- **파일에 *.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)**입니다.
 
     파일을 읽기 전용 복사본으로 고유하게 보호합니다.
 
@@ -89,9 +83,9 @@ Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은
 
     예를 들어 파일 이름 document.vsdx.pfile를 사용하여 파일을 보호하는 경우 파일을 보고 파일 탐색기에서 document.vsdx로 저장합니다.
 
-    새 파일이 더 이상 보호되지 않습니다. 보호하려는 경우 수동으로 수행해야 합니다. 지침은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md) 항목을 참조하세요..
+    새 파일이 더 이상 보호되지 않습니다. 보호하려는 경우 수동으로 수행해야 합니다. 지침은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md)를 참조하세요.
 
-- **파일에 *.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)입니다.)**
+- **파일에 *.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)**입니다.
 
     파일을 볼 수 있고 이름을 바꾸거나 이동하는 경우 파일은 보호가 유지됩니다.
 
@@ -113,6 +107,7 @@ Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

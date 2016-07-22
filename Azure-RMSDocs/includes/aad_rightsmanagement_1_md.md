@@ -1,5 +1,5 @@
 Azure  권한 관리
 
-<!--HONumber=Mar16_HO1-->
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 사용자 지정 템플릿 만들기, 구성 및 게시 | Azure RMS
-description:
-keywords:
+title: "사용자 지정 템플릿 만들기, 구성 및 게시 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/30/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
+ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+
 
 ---
 
@@ -66,7 +60,8 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
         4.  권한 관리를 아직 활성화하지 않은 경우 **활성화** 를 클릭하고 작업을 확인합니다.
 
-            > [!NOTE] 자세한 내용은 [Azure 권한 관리 활성화](activate-service.md) 항목을 참조하세요.
+            > [!NOTE]
+            > 자세한 내용은 [Azure 권한 관리 활성화](activate-service.md)를 참조하세요.
 
 2.  새 템플릿 만들기
 
@@ -169,6 +164,7 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 ## 참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리란? | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리란? | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e2de70fcbe0b284368b1e52c34f42d1cf4554edd
+ms.openlocfilehash: 6fe5759a790a728da7a16453e5b3ab5d523bb9fd
+
 
 ---
 
@@ -43,7 +37,7 @@ Azure 권한 관리 (RMS Azure)는 오늘날의 어려운 작업 환경에서 �
 아래 그림에는 Office 365, 온-프레미스 서버 및 서비스용 권한 관리 솔루션으로 Azure RMS가 작동하는 방식이 나와 있습니다. 널리 사용되는 Windows, Mac OS, iOS, Android, Windows Phone 기반의 최종 사용자 장치를 Azure RMS가 지원하는 것도 확인할 수 있습니다.
 
 > [!NOTE]
-Office 365, Enterprise Mobility Suite 및 Azure RMS Premium을 포함하는 여러 클라우드 구독으로 Azure RMS를 사용할 수 있습니다. 자세한 내용은 [Azure RMS를 지원하는 클라우드 구독](../get-started/requirements-subscriptions.md) 섹션을 참조하세요..
+Office 365, Enterprise Mobility Suite 및 Azure RMS Premium을 포함하는 여러 클라우드 구독으로 Azure RMS를 사용할 수 있습니다. 자세한 내용은 [Azure RMS를 지원하는 클라우드 구독](../get-started/requirements-subscriptions.md)을 참조하세요.
 
 ![Azure RMS의 작동 방식](../media/AzRMS_elements.png)
 
@@ -59,14 +53,15 @@ Azure RMS에 대해 자세히 알아보려면
 
 
 
-Azure RMS를 직접 사용해 보려는 경우에는 [Azure 권한 관리에 대한 빠른 시작 자습서](../get-started/quick-start-tutorial.md)를 참조하세요..
+Azure RMS를 직접 사용해 보려는 경우에는 [Azure 권한 관리에 대한 빠른 시작 자습서](../get-started/quick-start-tutorial.md)를 참조하세요.
 
 그러나 조직에 대해 Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로드맵](../plan-design/deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
 
 > [!TIP]
-> 추가 정보와 도움말을 확인하려면 [Azure 권한 관리에 대한 정보 및 지원](../get-started/information-support.md) 항목의 리소스와 링크를 사용하세요..
+> 추가 정보와 도움말을 확인하려면 [Azure 권한 관리에 대한 정보 및 지원](../get-started/information-support.md)의 리소스와 링크를 사용하세요.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

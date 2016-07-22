@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure 권한 관리에 대한 빠른 시작 자습서 | Azure RMS
-description: 15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서 소개입니다.
-keywords:
+title: "Azure 권한 관리에 대한 빠른 시작 자습서 | Azure RMS"
+description: "15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서 소개입니다."
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1db923bf-7d19-4fdd-a413-bfeb58af5e03
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 7c89aa5f31732464dab2b90a25ad7c50f36c2c99
+
 
 ---
 
@@ -55,12 +49,14 @@ ms.suite: ems
 
 이제 시작하겠습니다.
 
->[!div class="step-by-step"] [1단계 »](tutorial-step1.md)
+>[!div class="step-by-step"]
+[1단계 »](tutorial-step1.md)
 
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

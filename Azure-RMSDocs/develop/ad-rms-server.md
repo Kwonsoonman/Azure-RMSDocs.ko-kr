@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: AD RMS 서버 | Azure RMS
-description: RMS(권한 관리 서비스) 서버 구성 요소는 Microsoft 인터넷 정보 서비스에서 실행되는 웹 서비스 집합에 의해 구현됩니다.
-keywords:
+title: "AD RMS 서버 | Azure RMS"
+description: "RMS(권한 관리 서비스) 서버 구성 요소는 Microsoft 인터넷 정보 서비스에서 실행되는 웹 서비스 집합에 의해 구현됩니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 2b7c99e3adafde7140d7997364ec2643ba79a2ac
+
 
 ---
 
@@ -30,7 +26,8 @@ ms.suite: ems
 
 **Azure RMS** - Azure 권한 관리 서비스를 사용하는 방법에 대한 자세한 내용은 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md) 항목을 참조하세요.
 
-> [!IMPORTANT] Azure RMS를 통해 응용 프로그램을 개발하고 테스트하는 것이 좋습니다.
+> [!IMPORTANT] 
+> Azure RMS를 통해 응용 프로그램을 개발하고 테스트하는 것이 좋습니다.
 
 **Windows Server** - Windows Server 2008 이상의 RMS 온-프레미스 서버에서는 RMS 서비스를 역할로 추가하여 설치하고 구성할 수 있습니다. 이전 운영 체제에 서비스를 설치하려면 Microsoft 다운로드 센터의 [Microsoft Windows Rights Management Services 서비스 팩 2](http://www.microsoft.com/download/en/details.aspx?id=4909)에서 다운로드합니다.
 
@@ -60,6 +57,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

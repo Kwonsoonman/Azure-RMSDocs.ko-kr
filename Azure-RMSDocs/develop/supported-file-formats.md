@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 지원되는 파일 형식 | Azure RMS
-description: 현재 버전의 파일 API는 MS Office 파일, PDF 및 다른 모든 파일 형식의 PFile 보호에 대한 기본 보호를 지원합니다.
-keywords:
+title: "지원되는 파일 형식 | Azure RMS"
+description: "현재 버전의 파일 API는 MS Office 파일, PDF 및 다른 모든 파일 형식의 PFile 보호에 대한 기본 보호를 지원합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EC831494-7F2C-4C70-9063-B02CDDEA14EE
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b5fbbf637a34371a676a6cba169cc0268ce5e541
+ms.openlocfilehash: 58efe60d6066f2e9761aea8d66d83711e68ab642
+
 
 ---
 
@@ -46,6 +42,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

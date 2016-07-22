@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS 클라이언트 배포 참고 사항 | Azure RMS
-description:
-keywords:
+title: "RMS 클라이언트 배포 참고 사항 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2bd8aba91b9b65777c2319baea848e8313cbccda
+ms.openlocfilehash: ffddda9a144b23b64b54df4fe4d25ec62600599d
+
 
 ---
 
@@ -42,7 +36,8 @@ RMS 클라이언트는 다른 응용 프로그램 및 IT 솔루션과 함께 자
 ## RMS 클라이언트 설치
 RMS 클라이언트는 **setup_msipc_***<arch>***.exe**라는 설치 관리자 실행 파일에 포함되어 있습니다. 여기서 *<arch>*는 **x86**(32비트 클라이언트 컴퓨터의 경우) 또는 **x64**(64비트 클라이언트 컴퓨터의 경우)입니다. 64비트(x64) 설치 관리자 패키지는 64비트 운영 체제 설치에서 실행되는 32비트 응용 프로그램과의 호환성을 위한 32비트 런타임 실행 파일과 네이티브 64비트 응용 프로그램을 지원하기 위한 64비트 런타임 실행 파일을 모두 설치합니다. 32비트(x86) 설치 관리자는 64비트 Windows 설치에서 실행되지 않습니다.
 
-> [!NOTE] RMS 클라이언트를 설치하려면 로컬 컴퓨터에서 Administrators 그룹의 멤버와 같은 상승된 권한이 있어야 합니다.
+> [!NOTE]
+> RMS 클라이언트를 설치하려면 로컬 컴퓨터에서 Administrators 그룹의 멤버와 같은 상승된 권한이 있어야 합니다.
 
 다음과 같은 설치 방법 중 하나를 사용하여 RMS 클라이언트를 설치할 수 있습니다.
 
@@ -192,7 +187,8 @@ SCP를 사용하는 대신에 또는 SCP가 없는 경우 RMS 클라이언트가
 
 2.  레지스트리 편집기에서 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC**로 이동합니다.
 
-    > [!IMPORTANT] 64비트 컴퓨터에서 32비트 응용 프로그램을 실행하는 경우 경로는 다음과 같습니다. **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
+    > [!IMPORTANT]
+    > 64비트 컴퓨터에서 32비트 응용 프로그램을 실행하는 경우 경로는 다음과 같습니다. **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC**
 
 3.  ServiceLocation 하위 키를 만들려면 **MSIPC**를 마우스 오른쪽 단추로 클릭하고 **새로 만들기**를 가리킨 후 **키**를 클릭하고 **ServiceLocation**을 입력합니다.
 
@@ -233,7 +229,8 @@ RMS 클라이언트가 Active Directory를 쿼리하여 SCP를 찾을 수 없으
 
     **값:** https://fabrikam.com/_wmcs/licensing
 
-    > [!NOTE] 이전 라이선스 서버에 인트라넷 및 엑스트라넷 URL이 모두 지정되어 있으면 LicensingRedirection 키 아래에서 이러한 URL 둘 다에 대해 새로운 이름 및 값 매핑이 설정되어야 합니다.
+    > [!NOTE]
+    > 이전 라이선스 서버에 인트라넷 및 엑스트라넷 URL이 모두 지정되어 있으면 LicensingRedirection 키 아래에서 이러한 URL 둘 다에 대해 새로운 이름 및 값 매핑이 설정되어야 합니다.
 
 5.  리디렉션되어야 하는 모든 서버에 대해 이전 단계를 반복합니다.
 
@@ -241,6 +238,7 @@ RMS 클라이언트가 Active Directory를 쿼리하여 SCP를 찾을 수 없으
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

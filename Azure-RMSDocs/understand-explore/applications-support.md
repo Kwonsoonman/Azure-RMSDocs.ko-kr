@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 응용 프로그램이 Azure 권한 관리를 지원하는 방식 | Azure RMS
-description:
-keywords:
+title: "응용 프로그램이 Azure 권한 관리를 지원하는 방식 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/13/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 16c2dbbce4234f41941bd3fd92d264df0ae685e2
+ms.openlocfilehash: 15167c4e7dbe0fd401e198c80524b39e4ded250d
+
 
 ---
 
@@ -30,7 +24,8 @@ ms.suite: ems
 *적용 대상: Azure 권한 관리, Office 365*
 
 다음 정보를 참조하여 Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 응용 프로그램과 Exchange, SharePoint 등의 서비스에서 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 통해 조직 데이터를 보호하는 방식을 파악할 수 있습니다. 
-> [!NOTE] Azure RMS([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)])에서 지원하는 응용 프로그램과 버전을 확인하려면 [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md) 항목을 참조하세요.
+> [!NOTE]
+> [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](Azure RMS)에서 지원하는 응용 프로그램과 버전을 확인하려면 [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md)을 참조하세요.
 
 구성된 정책에 따라 정보 보호가 자동으로 적용되는 경우도 있습니다. SharePoint 라이브러리, 분류된 파일, Exchange 전송 규칙 등을 예로 들 수 있습니다. 사용자가 템플릿이나 특정 옵션을 선택하여 응용 프로그램에서 정보 보호를 직접 적용해야 하는 경우도 있습니다. 사용자가 메일로 파일을 공유하거나 조직 외부 사용자 또는 선택한 사용자에 대해 액세스 또는 사용을 제한하여 내부에서 파일을 보호하는 경우를 예로 들 수 있습니다.
 
@@ -40,7 +35,8 @@ ms.suite: ems
 
 이러한 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)을 참조하세요.
 
-> [!TIP] Azure RMS를 사용하는 응용 프로그램의 예와 스크린샷을 보려면 [Azure RMS 실행: 관리자와 사용자에게 표시되는 내용](what-admins-users-see.md) 섹션을 참조하세요.
+> [!TIP]
+> Azure RMS를 사용하는 응용 프로그램의 예와 스크린샷을 보려면 [Azure RMS 실행: 관리자와 사용자에게 표시되는 내용](what-admins-users-see.md)을 참조하세요.
 
 검색 서비스는 여러 방법으로 Rights Management를 통합할 수 있습니다. 예를 들면 다음과 같습니다. 
 
@@ -66,6 +62,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

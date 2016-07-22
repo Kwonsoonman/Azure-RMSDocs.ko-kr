@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 권한 관리 서비스 SDK 2.1 | Azure RMS
-description: RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 또는 Azure RMS를 활용하여 정보 보호 기능을 제공하는 응용 프로그램을 빌드할 수 있습니다.
-keywords:
+title: "권한 관리 서비스 SDK 2.1 | Azure RMS"
+description: "RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 또는 Azure RMS를 활용하여 정보 보호 기능을 제공하는 응용 프로그램을 빌드할 수 있습니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
+ms.openlocfilehash: bbe381054648a6b68818f3964f6cfefd5da0829c
+
 
 ---
 
@@ -45,10 +41,8 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 |항목|설명|
 |-----|--------|
 |[개요](ad-rms-overview.md)|RMS(권한 관리 서비스)는 디지털 정보의 무단 사용을 방지하는 정보 보호 기술입니다.|
-|[이 SDK의 장점](differences-between-ad-rms-and-ad-rms-2-0.md)|RMS SDK 2.1은 기존의 권한 관리 서비스 SDK보다 기능이 훨씬 향상되었습니다.|
-|[시작](getting-started-with-ad-rms-2-0.md)|RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다.|
+|[시작하기](getting-started-with-ad-rms-2-0.md)|RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다.|
 |[릴리스 정보](release-notes-rtm.md)|이 항목에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.|
-|[코드 샘플](samples.md)|이 항목에서는 MSDN 다운로드 센터에서 제공되는 RMS SDK 2.1을 사용한 샘플 집합을 보여 줍니다.|
 |[개발자 노트](developer-notes.md)|이 섹션에서는 중요한 여러 개발 시나리오에 대한 특정 지침을 제공합니다.|
 |[API 참조](api-reference-2-1.md)|이 섹션에는 모든 API 요소에 대한 참조 자료를 다루는 항목이 포함되어 있습니다.|
 
@@ -64,6 +58,7 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

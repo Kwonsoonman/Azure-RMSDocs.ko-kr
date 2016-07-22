@@ -27,6 +27,6 @@ Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)�
 |기본 보호와 일반 보호 간의 차이를 이해하려면   →|[일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

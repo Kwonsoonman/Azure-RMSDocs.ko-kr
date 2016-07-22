@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: iOS/OS X 코드 예제 | Azure RMS
-description: 이 항목에서는 iOS/OS X 버전의 RMS SDK에 대한 중요한 코드 요소를 소개합니다.
-keywords:
+title: "iOS/OS X 코드 예제 | Azure RMS"
+description: "이 항목에서는 iOS/OS X 버전의 RMS SDK에 대한 중요한 코드 요소를 소개합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,15 +10,13 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
+ms.openlocfilehash: 66bb1b58cba19d0fe8bc2ec0d3720c0b040f8378
+
 
 ---
 
@@ -40,9 +36,9 @@ ms.suite: ems
 ###시나리오: RMS 보호된 파일 사용
 
 
-- **1단계**: [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 개체를 만듭니다.
+- **1단계**: [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 개체를 만듭니다.
 
- **설명**: [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 사용하고 **MSAuthenticationCallback** 인스턴스를 *authenticationCallback* 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotectedd) 개체를 인스턴스화합니다. 다음 예제 코드 섹션에서 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 호출을 참조하세요.
+ **설명**: [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 사용하고 **MSAuthenticationCallback** 인스턴스를 *authenticationCallback* 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 개체를 인스턴스화합니다. 다음 예제 코드 섹션에서 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 호출을 참조하세요.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -288,6 +284,7 @@ ms.suite: ems
 
  
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

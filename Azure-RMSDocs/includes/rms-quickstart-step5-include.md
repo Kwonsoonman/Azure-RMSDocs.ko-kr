@@ -40,6 +40,6 @@ Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로�
 
 
 
-<!--HONumber=Apr16_HO3-->
+<!--HONumber=Jun16_HO4-->
 
 

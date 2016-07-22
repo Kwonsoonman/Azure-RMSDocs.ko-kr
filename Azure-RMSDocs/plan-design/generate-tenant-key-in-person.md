@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 직접 테넌트 키 생성 및 전송 | Azure RMS
-description:
-keywords:
+title: "직접 테넌트 키 생성 및 전송 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3281e45e-cf69-4dc5-946b-3029851d3152
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: 1acc66e9a73b100268ed722391a0a87651c64abc
+
 
 ---
 
@@ -42,7 +36,7 @@ ms.suite: ems
 -   [3단계: 새 키 생성](#step-3-create-a-new-key)
 
 ### 1단계: Thales HSM을 사용하여 워크스테이션 준비
-Windows 컴퓨터에 nCipher(Thales) 지원 소프트웨어를 설치합니다. 해당 컴퓨터에 Thales HSM을 연결합니다. Thales 도구가 경로에 있는지 확인합니다. 자세한 내용은 Thales HSM에 포함되어 있는 사용자 가이드를 참조하거나, Azure RMS용 Thales 웹 사이트( [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud))를 방문하여 확인하세요..
+Windows 컴퓨터에 nCipher(Thales) 지원 소프트웨어를 설치합니다. 해당 컴퓨터에 Thales HSM을 연결합니다. Thales 도구가 경로에 있는지 확인합니다. 자세한 내용은 Thales HSM에 포함되어 있는 사용자 가이드를 참조하거나, Azure RMS용 Thales 웹 사이트( [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud))를 방문하여 확인하세요.
 
 ### 2단계: 보안 권역 만들기
 명령 프롬프트를 시작하고 Thales new-world 프로그램을 실행합니다.
@@ -156,6 +150,7 @@ cngimport --import –M --key=contosokey --appname=simple contosokey
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

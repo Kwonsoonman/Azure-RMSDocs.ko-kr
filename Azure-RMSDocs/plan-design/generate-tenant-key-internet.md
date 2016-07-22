@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 인터넷을 통해 테넌트 키 생성 및 전송 | Azure RMS
-description:
-keywords:
+title: "인터넷을 통해 테넌트 키 생성 및 전송 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+
 
 ---
 
@@ -48,7 +42,7 @@ ms.suite: ems
 > [!NOTE]
 > 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 2.1.0.0인지 확인하세요. `(Get-Module aadrm -ListAvailable).Version`
 
-설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md) 항목을 참조하세요..
+설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 ### 2단계: Azure Active Directory 테넌트 ID 얻기
 **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell을 시작한 후 다음 명령을 실행합니다.
@@ -85,15 +79,15 @@ Microsoft 다운로드 센터로 이동하여 해당 지역의 [BYOK 도구 집�
 |아시아|AzureRMS-BYOK-tools-AsiaPacific.zip|
 이 도구 집합에는 다음이 포함되어 있습니다.
 
--   이름이 **BYOK-KEK-pkg-**로 시작하는 KEK(키 교환 키) 패키지.
+-   이름이 **BYOK-KEK-pkg-**로 시작하는 KEK(키 교환 키) 패키지
 
--   이름이 **BYOK-SecurityWorld-pkg-**로 시작하는 보안 권역 패키지.
+-   이름이 **BYOK-SecurityWorld-pkg-**로 시작하는 보안 권역 패키지
 
--   이름이 **verifykeypackage.py**인 Python 스크립트.
+-   이름이 **verifykeypackage.py**인 Python 스크립트
 
 -   이름이 **KeyTransferRemote.exe**인 명령줄 실행 파일, 이름이 **KeyTransferRemote.exe.config**인 메타데이터 파일 및 연결된 DDL
 
--   이름이 **vcredist_x64.exe**인 Visual C++ 재배포 가능 패키지.
+-   이름이 **vcredist_x64.exe**인 Visual C++ 재배포 가능 패키지
 
 패키지를 USB 드라이브 또는 기타 휴대용 저장소에 복사합니다.
 
@@ -112,7 +106,7 @@ Thales 도구가 경로(**%nfast_home%\bin** 및 **%nfast_home%\python\bin**)에
 ```
 set PATH=%PATH%;”%nfast_home%\bin”;”%nfast_home%\python\bin”
 ```
-자세한 내용은 Thales HSM에 포함되어 있는 사용자 가이드를 참조하거나, Azure RMS용 Thales 웹 사이트( [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud))를 방문하여 확인하세요..
+자세한 내용은 Thales HSM에 포함되어 있는 사용자 가이드를 참조하거나, Azure RMS용 Thales 웹 사이트( [http://www.thales-esecurity.com/msrms/cloud](http://www.thales-esecurity.com/msrms/cloud))를 방문하여 확인하세요.
 
 ### 2단계: 연결이 끊어진 워크스테이션에 BYOK 도구 집합 설치
 USB 드라이브 또는 기타 휴대용 저장소에서 BYOK 도구 집합 패키지를 복사한 후 다음을 수행합니다.
@@ -188,7 +182,7 @@ new-world.exe --initialize --cipher-suite=DLf1024s160mRijndael --module=1 --acs-
 
 2.  다음이 표시되는지 확인합니다(유효성 검사 성공을 나타냄). **결과:  SUCCESS**
 
-이 스크립트는 서명자가 Thales 루트 키까지 체이닝되는지를 확인합니다. 이 루트 키의 해시는 스크립트에 포함되어 있으며 해당 값은 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**여야 합니다. [Thales 웹 사이트](http://www.thalesesec.com/)를 방문하여 별도로 이 값을 확인할 수도 있습니다..
+이 스크립트는 서명자가 Thales 루트 키까지 체이닝되는지를 확인합니다. 이 루트 키의 해시는 스크립트에 포함되어 있으며 해당 값은 **59178a47 de508c3f 291277ee 184f46c4 f1d9c639**여야 합니다. [Thales 웹 사이트](http://www.thalesesec.com/)를 방문하여 별도로 이 값을 확인할 수도 있습니다.
 
 이제 RMS 테넌트 키가 될 새 키를 만들 준비가 되었습니다.
 
@@ -269,11 +263,11 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
         KeyTransferRemote.exe -ModifyAcls -KeyAppName simple -KeyIdentifier contosokey -ExchangeKeyPackage BYOK-KEK-pkg-AP-1 -NewSecurityWorldPackage BYOK-SecurityWorld-pkg-AP-1
         ```
 
-이 명령을 실행할 때 *contosokey*를 *테넌트 키 생성* 섹션의 [1단계: 보안 권역 만들기](##step-1-create-a-security-world)에서 지정한 값과 동일한 값으로 바꿉니다.
+이 명령을 실행할 때 *contosokey*를 *테넌트 키 생성* 섹션의 [1단계: 보안 권역 만들기](#step-1-create-a-security-world)에서 지정한 값과 동일한 값으로 바꿉니다.
 
 보안 권역 ACS 카드를 연결하고, 지정된 경우 암호 또는 PIN을 요청하는 메시지가 표시됩니다.
 
-명령이 완료되면 **Result: SUCCESS**가 표시되고 권한이 낮춰진 테넌트 키의 복사본이 key_xferacId_*&lt;contosokey&gt;*라는 파일에 포함됩니다..
+명령이 완료되면 **Result: SUCCESS**가 표시되고 권한이 낮춰진 테넌트 키의 복사본이 key_xferacId_*&lt;contosokey&gt;*라는 파일에 포함됩니다.
 
 ### 2단계: 키의 새 복사본 검사
 선택적으로, Thales 유틸리티를 실행하여 새 테넌트 키에 대한 최소 권한을 확인합니다.
@@ -290,7 +284,7 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
     "%nfast_home%\bin\kmfile-dump.exe" "%NFAST_KMDATA%\local\key_xferacld_contosokey"
     ```
 
-이러한 명령을 실행할 때 *contosokey*를 *테넌트 키 생성* 섹션의 [1단계: 보안 권역 만들기](##step-1-create-a-security-world)에서 지정한 값과 동일한 값으로 바꿉니다.
+이 명령을 실행할 때 *contosokey*를 *테넌트 키 생성* 섹션의 [1단계: 보안 권역 만들기](#step-1-create-a-security-world)에서 지정한 값과 동일한 값으로 바꿉니다.
 
 ### 3단계: Microsoft 키 교환 키를 사용하여 키 암호화
 해당 지역에 따라 다음 명령 중 하나를 실행합니다.
@@ -315,7 +309,7 @@ cngimport --import -M --key=contosokey --appname=simple contosokey
 
 이 명령을 실행할 때 다음 지침을 사용하세요.
 
--   *contosokey*를 *테넌트 키 생성* 섹션의 [1단계: 보안 권역 만들기](##step-1-create-a-security-world)에서 키를 생성하는 데 사용한 식별자로 바꿉니다.
+-   *contosokey*를 *테넌트 키 생성* 섹션의 [1단계: 보안 권역 만들기](#step-1-create-a-security-world)에서 키를 생성하는 데 사용한 식별자로 바꿉니다.
 
 -   *GUID*를 *인터넷에 연결된 워크스테이션 준비* 섹션의 [2단계: Azure Active Directory 테넌트 ID 얻기](#step-2-get-your-azure-active-directory-tenant-id)에서 검색한 Azure Active Directory 테넌트 ID로 바꿉니다.
 
@@ -383,6 +377,7 @@ Get-AadrmKeys
 
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: 릴리스 정보 | Azure RMS
-description:
-keywords:
+title: "릴리스 정보 | Azure RMS"
+description: 
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
+
 
 ---
 
@@ -30,7 +26,8 @@ ms.suite: ems
 
 ## 2016년 2월의 새로운 기능 - SDK 문서 업데이트
 
->[!Note]  이 섹션의 기능 문서 업데이트는 2015년 12월 11일자 SDK 다운로드에 적용됩니다.
+>[!Note]
+> 이 섹션의 기능 문서 업데이트는 2015년 12월 11일자 SDK 다운로드에 적용됩니다.
 
 - **개선된 인증 흐름** - [Azure ADAL(Active Directory 인증 라이브러리)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)을 통해 OAuth2 토큰 기반 인증을 사용합니다. 이 프로세스와 해당 프로세스의 API 확장에 대한 자세한 내용은 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md)(RMS 사용 응용 프로그램에 대한 ADAL 인증) 항목을 참조하세요.
 
@@ -180,6 +177,7 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

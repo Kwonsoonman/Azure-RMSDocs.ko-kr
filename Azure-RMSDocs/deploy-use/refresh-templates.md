@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 템플릿 새로 고침 | Azure RMS
-description:
-keywords:
+title: "템플릿 새로 고침 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/06/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
+ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+
 
 ---
 
@@ -34,17 +28,17 @@ Azure RMS를 사용하는 경우 사용자가 응용 프로그램에서 선택�
 
 |응용 프로그램 또는 서비스|템플릿을 변경한 후 새로 고침하는 방법|
 |--------------------------|---------------------------------------------|
-|Exchange Online|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요..|
+|Exchange Online|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요.|
 |Office 365|자동으로 새로 고침 - 추가 단계 불필요|
-|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요..|
-|Office 2010|사용자 로그인 시 새로 고침됨<br /><br />강제로 새로 고침하려면 사용자에게 로그오프한 후 다시 로그인하도록 요청하거나 강제로 적용합니다. 또는 다음 섹션, [Office 2010에만 해당: 변경된 사용자 지정 템플릿을 강제로 새로 고침하는 방법](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template)을 참조하세요..|
+|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
+|Office 2010|사용자 로그인 시 새로 고침됨<br /><br />강제로 새로 고침하려면 사용자에게 로그오프한 후 다시 로그인하도록 요청하거나 강제로 적용합니다. 또는 [Office 2010에만 해당: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
 RMS 공유 응용 프로그램을 사용하는 모바일 장치의 경우 템플릿은 추가 구성이 필요 없이 자동으로 다운로드되고 필요한 경우 새로 고침됩니다.
 
 ## Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법
 Exchange Online을 위해 이미 IRM(정보 Rights Management)을 구성했다면 Exchange Online의 Windows PowerShell을 사용해 다음과 같이 변경할 때까지 사용자는 사용자 지정 템플릿을 다운로드할 수 없습니다.
 
 > [!NOTE]
-> Exchange Online에서 Windows PowerShell을 사용하는 방법에 대한 자세한 내용은 [Exchange Online에서 PowerShell 사용](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx) 항목을 참조하세요..
+> Exchange Online에서 Windows PowerShell을 사용하는 방법에 대한 자세한 내용은 [Exchange Online에서 PowerShell 사용](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)을 참조하세요.
 
 템플릿을 변경할 때마다 이 절차를 진행해야 합니다.
 
@@ -144,7 +138,7 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
     > [!TIP]
         > 레지스트리 경로에서 <*MicrosoftRMS_FQDN*>은 사용자의 Microsoft RMS 서비스 FQDN을 가리킵니다. 이 값을 확인하려면:
 
-    > 1.  Azure RMS에 대해 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md) 항목을 참조하세요..
+    > 1.  Azure RMS에 대해 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
     > 2.  출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
     > 
     >     예: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
@@ -192,6 +186,7 @@ Office 2010을 실행하는 컴퓨터에서 레지스트리를 편집하면 사�
 ## 참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

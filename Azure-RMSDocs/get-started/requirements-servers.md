@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: Azure RMS 요구 사항&#58; Azure 권한 관리를 지원하는 온-프레미스 서버 | Azure RMS
-description:
-keywords:
+title: "Azure RMS 요구 사항&#58; Azure 권한 관리를 지원하는 온-프레미스 서버 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
+
 
 ---
 
@@ -67,6 +61,7 @@ RMS 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

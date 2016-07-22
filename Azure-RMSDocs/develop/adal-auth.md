@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: ADAL 인증을 위해 Azure RMS 구성 | Azure RMS
-description: Azure ADAL 기반 인증을 구성하기 위한 단계를 간략하게 설명합니다.
+title: "ADAL 인증을 위해 Azure RMS 구성 | Azure RMS"
+description: "Azure ADAL 기반 인증을 구성하기 위한 단계를 간략하게 설명합니다."
 keywords: authentication, RMS, ADAL
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
-
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 9b912a2a66838dc6e6a3b227bcfe4ac589fe06c1
+
 
 ---
 
@@ -36,7 +31,8 @@ ms.suite: ems
 - [Microsoft Azure에 대한 구독](https://azure.microsoft.com/en-us/)(무료 평가판이면 충분). 자세한 내용은 [사용자가 개인용 RMS를 등록하는 방법](../understand-explore/rms-for-individuals-user-sign-up.md)을 참조하세요.
 - Microsoft Azure 권한 관리에 대한 구독(무료 [개인용 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 계정이면 충분)
 
-> [!NOTE] Microsoft Azure 권한 관리에 대한 구독이 있는지 여부에 대해서는 IT 관리자에게 문의하고 다음 단계를 수행하도록 요청하세요. 조직에 구독이 없는 경우 IT 관리자에게 만들어 달라고 요청해야 합니다. 또한 IT 관리자는 *Microsoft 계정*(예: Hotmail)이 아닌 *회사 또는 학교 계정*으로 가입되어 있어야 합니다.
+> [!NOTE] 
+> Microsoft Azure 권한 관리에 대한 구독이 있는지 여부에 대해서는 IT 관리자에게 문의하고 다음 단계를 수행하도록 요청하세요. 조직에 구독이 없는 경우 IT 관리자에게 만들어 달라고 요청해야 합니다. 또한 IT 관리자는 *Microsoft 계정*(예: Hotmail)이 아닌 *회사 또는 학교 계정*으로 가입되어 있어야 합니다.
 
 Microsoft Azure에 등록한 후
 
@@ -81,11 +77,13 @@ Microsoft Azure에 등록한 후
 
 ![구성 선택](../media/ConfigYourApp.png)
 
->[!NOTE] **클라이언트 ID** 및 **리디렉션 URI**를 복사하고 RMS 클라이언트를 구성할 때 사용할 수 있도록 저장합니다.
+>[!NOTE] 
+> **클라이언트 ID** 및 **리디렉션 URI**를 복사하고 RMS 클라이언트를 구성할 때 사용할 수 있도록 저장합니다.
 
 - 응용 프로그램 설정의 아래쪽으로 이동하고 **다른 응용 프로그램에 대한 권한**에서 **응용 프로그램 추가** 단추를 선택합니다.
 
->[!NOTE] Windows Azure Active Directory용으로 표시된 **위임된 권한**은 기본적으로 올바릅니다. **로그인 및 사용자 프로필 읽기** 옵션 하나만 선택해야 합니다.
+>[!NOTE] 
+> Windows Azure Active Directory용으로 표시된 **위임된 권한**은 기본적으로 올바릅니다. **로그인 및 사용자 프로필 읽기** 옵션 하나만 선택해야 합니다.
 
 ![응용 프로그램 추가 선택](../media/PermissionsToOtherBtn.png)
 
@@ -110,6 +108,7 @@ Microsoft Azure에 등록한 후
 ![저장 선택](../media/SaveApplication.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

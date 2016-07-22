@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Azure 권한 관리에 대한 사용 권한 구성 | Azure RMS
-description:
-keywords:
+title: "Azure 권한 관리에 대한 사용 권한 구성 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 06/16/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 3883a46440f016138dd50d061a58089253721719
+ms.openlocfilehash: 21b92fae5fd00d80f9afd2e80d21c08bfa47b7b2
+
 
 ---
 
@@ -65,7 +59,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름**: *저장*
 
-**API 상수 또는 값**: IPC_GENERIC_WRITEL"EDIT"
+**API 상수 또는 값**: IPC_GENERIC_WRITE L"EDIT"
 
 또한 Office 응용 프로그램에서 이 권한을 사용하면 사용자는 문서를 수정할 수 있습니다.
 
@@ -83,7 +77,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름:** 구현되지 않음
 
-**API 상수 또는 값:** IPC_GENERIC_COMMENTL"COMMENT"
+**API 상수 또는 값:** IPC_GENERIC_COMMENT L"COMMENT
 
 이 권한은 SDK에서 사용할 수 있으며 Windows PowerShell 용 RMS 보호 모듈에서 임시 정책으로 사용할 수 있고 일부 소프트웨어 공급 업체 응용 프로그램에서 구현되었습니다. 그러나 널리 사용되지 않으며 현재 Office 응용 프로그램에서 지원되지 않습니다.
 
@@ -101,7 +95,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름:** *내보내기(다른 이름으로 저장)*
 
-**API 상수 또는 값:** IPC_GENERIC_EXPORTL"EXPORT"
+**API 상수 또는 값:** IPC_GENERIC_EXPORT L"EXPORT"
 
 이 권한이 부여된 사용자는 응용 프로그램에서 *OneNote로 보내기* 등의 다른 내보내기 옵션도 수행할 수 있습니다.
 
@@ -119,7 +113,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름:** *전달*
 
-**API 상수 또는 값:** IPC_EMAIL_FORWARDL"FORWARD"
+**API 상수 또는 값:** IPC_EMAIL_FORWARD L"FORWARD"
 
 전달자가 전달 동작의 일부로 다른 사용자에게 권한을 부여할 수 없게 합니다.
 
@@ -137,7 +131,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름:** *모든 권한*
 
-**API 상수 또는 값:** IPC_GENERIC_ALLL"OWNER"
+**API 상수 또는 값:** IPC_GENERIC_ALL L"OWNER"
 
 보호를 제거하는 기능이 포함됩니다.
 
@@ -155,7 +149,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름:** *인쇄*
 
-**API 상수 또는 값:** IPC_GENERIC_PRINTL"PRINT
+**API 상수 또는 값:** IPC_GENERIC_PRINT L"PRINT
 
 ---
 
@@ -187,7 +181,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름:** *전체 회신*
 
-**API 상수 또는 값:** IPC_EMAIL_REPLYALLL"REPLYALL"
+**API 상수 또는 값:** IPC_EMAIL_REPLYALL L"REPLYALL"
 
 ---
 
@@ -203,7 +197,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름:** *보기*
 
-**API 상수 또는 값:** IPC_GENERIC_READL"VIEW"
+**API 상수 또는 값:** IPC_GENERIC_READ L"VIEW"
 
 ---
 
@@ -219,7 +213,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 
 **AD RMS 템플릿의 이름:** *추출*
 
-**API 상수 또는 값:** IPC_GENERIC_EXTRACTL"EXTRACT"
+**API 상수 또는 값:** IPC_GENERIC_EXTRACT L"EXTRACT"
 
 일부 응용 프로그램에서는 전체 문서를 보호되지 않은 형태로 저장할 수도 있습니다.
 
@@ -283,7 +277,8 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
  
 - **전달 금지** 옵션을 적용한 경우 수신자는 메일을 다른 위치로 이동하여 마케팅 부서의 어떤 사용자와도 정보를 공유할 수 없습니다. 이 시나리오에서는 원래 수신자(및 메일 소유자)만 메일의 정보를 볼 수 있습니다.
 
-> [!NOTE] 보낸 사람이 선택하는 수신자만 메일의 정보를 볼 수 있어야 하는 것이 중요한 경우 **전달 금지**를 사용합니다. 메일의 템플릿을 사용하면 보낸 사람이 선택한 수신자와 상관없이 관리자가 사전에 지정하는 사용자의 그룹으로 권한을 제한할 수 있습니다.
+> [!NOTE] 
+> 보낸 사람이 선택하는 수신자만 메일의 정보를 볼 수 있어야 하는 것이 중요한 경우 **전달 금지**를 사용합니다. 메일의 템플릿을 사용하면 보낸 사람이 선택한 수신자와 상관없이 관리자가 사전에 지정하는 사용자의 그룹으로 권한을 제한할 수 있습니다.
 
 
 
@@ -293,6 +288,7 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

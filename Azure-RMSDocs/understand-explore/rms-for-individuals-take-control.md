@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: 관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법 | Azure RMS
-description:
-keywords:
+title: "관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
+ms.openlocfilehash: df006a27c97884c47c9bb5fb04bfa181a13b7443
+
 
 ---
 
@@ -49,9 +43,10 @@ Azure 디렉터리에서 사용자 계정을 제어하거나, 사용자가 개�
 
 ## 다음 단계
 
-관리자 대신 사용자가 Azure Active Directory에 개인용 RMS에 대한 자신의 계정을 만들 수 있다면 이 작업을 수행했는지 어떻게 확인할 수 있을까요?  [사용자가 개인용 RMS에 등록했는지 확인하는 방법](rms-for-individuals-identify-sign-up.md) 섹션을 참조하세요..
+관리자 대신 사용자가 Azure Active Directory에 개인용 RMS에 대한 자신의 계정을 만들 수 있다면 이 작업을 수행했는지 어떻게 확인할 수 있을까요?  [사용자가 개인용 RMS에 등록했는지 확인하는 방법](rms-for-individuals-identify-sign-up.md)을 참조하세요.
 
 
-<!--HONumber=Apr16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

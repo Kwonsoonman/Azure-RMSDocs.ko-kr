@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 관리자와 사용자에게 표시되는 내용 | Azure RMS
-description:
-keywords:
+title: "관리자와 사용자에게 표시되는 내용 | Azure RMS"
+description: 
+keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
+ms.openlocfilehash: 213d077a65abd5115b7e0491dfc9cd8145752b23
+
 
 ---
 
@@ -32,11 +26,12 @@ ms.suite: ems
 
 이 문서에서는 관리자와 사용자에게 표시되는 내용과 Azure 권한 관리(Azure RMS)를 사용하여 중요한 정보나 기밀 정보를 보호할 수 있는 방법에 대한 몇 가지 일반적인 예를 보여 줍니다.
 
-> [!NOTE] Azure RMS로 데이터를 보호하는 이러한 모든 예에서, 적용된 보호가 콘텐츠 소유자가 속하지 않은 그룹에도 권한을 부여하거나 적용된 보호에 만료 일자가 포함된 경우에도 해당 소유자는 계속 데이터(파일 또는 메일)에 대한 모든 권한을 가집니다.
+> [!NOTE]
+> Azure RMS로 데이터를 보호하는 이러한 모든 예에서, 적용된 보호가 콘텐츠 소유자가 속하지 않은 그룹에게도 권한을 부여하거나 적용된 보호에 만료 일자가 포함된 경우에도 해당 소유자는 계속 데이터(파일 또는 전자 메일)에 대한 모든 권한을 가집니다.
 >
 > 마찬가지로 IT 부서는 사용자가 지정한 권한 있는 사용자나 서비스에 대한 위임된 액세스 권한을 부여하는 Rights Management의 슈퍼 사용자 기능을 사용하여 제한 없이 항상 보호된 데이터에 액세스할 수 있습니다. 또한 IT 부서는 보호된 데이터의 사용 현황(예: 데이터에 액세스하는 사용자와 액세스하는 시간)을 추적하고 모니터링할 수 있습니다.
 
-RMS 실행을 보여 주는 다른 스크린샷과 비디오는 [Microsoft Rights Management 서비스 포털](http://www.microsoft.com/rms) 및 [Microsoft Rights Management(RMS) 팀 블로그](http://blogs.technet.com/b/rms)를 확인하세요.
+RMS 실행을 보여 주는 다른 스크린샷과 비디오는 [Enterprise Mobility and Security Blog(Enterprise Mobility 및 보안 블로그)](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)를 확인하세요.
 
 ## 권한 관리 활성화 및 구성
 Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도 있지만 관리 포털에서 하는 것이 가장 간편합니다. 서비스가 활성화되면 바로 관리자와 사용자가 파일에 정보 보호를 빠르고 쉽게 적용하는 데 선택할 수 있는 두 개의 기본 템플릿이 제공됩니다. 하지만 추가 옵션 및 설정이 포함된 사용자 지정 템플릿을 직접 만들 수도 있습니다.
@@ -246,6 +241,7 @@ Bob이 첨부 파일과 함께 이 전자 메일을 전달하거나 다른 사�
 이제 Azure RMS가 수행할 수 있는 작업의 몇 가지 예를 살펴 보았으며 이를 수행하는 방법에 관심을 가질 수 있습니다. Azure RMS 작동 방식에 대한 기술적인 정보는 [Azure RMS 작동 방식](how-does-it-work.md)을 참조하세요.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

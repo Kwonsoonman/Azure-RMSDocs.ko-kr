@@ -1,28 +1,26 @@
 ---
-# required metadata
-
-title: "Azure RMS 빠른 시작 자습서 - 5단계 | AZURE RMS"
+title: "Azure RMS 빠른 시작 자습서 - 5단계 | Azure RMS"
 description: "15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 마지막 단계입니다."
-keywords:
+keywords: 
 author: cabailey
 manager: mbaldwin
 ms.date: 05/09/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
-ms.technology: techgroup-identity
+ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
-
-# optional metadata
-
-ROBOTS:
-audience:
-ms.devlang:
+ROBOTS: 
+audience: 
+ms.devlang: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.tgt_pltfrm:
-ms.technology:
-ms.custom:
+ms.tgt_pltfrm: 
+ms.custom: 
+translationtype: Human Translation
+ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
+ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+
 
 ---
 
@@ -83,7 +81,8 @@ Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로�
 
 특정 시나리오 및 관련 구성 단계 및 최종 사용자용 설명 문서의 목록에 대해서는 [Rapid deployment guide for Azure Rights Management](../get-started/rapid-deployment-guide.md)(Azure 권한 관리를 위한 빠른 배포 가이드) 항목을 참조하세요.
 
->[!div class="step-by-step"] [소개](quick-start-tutorial.md)
+>[!div class="step-by-step"]
+[소개](quick-start-tutorial.md)
 [1단계](tutorial-step1.md)
 [2단계](tutorial-step2.md)
 [3단계](tutorial-step3.md)
@@ -91,6 +90,7 @@ Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로�
 *5단계*
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

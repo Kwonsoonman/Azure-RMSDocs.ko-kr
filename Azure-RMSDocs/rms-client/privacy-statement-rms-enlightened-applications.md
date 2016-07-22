@@ -1,9 +1,7 @@
 ---
-# required metadata
-
-title: RMS 지원 응용 프로그램의 Microsoft Rights Management 개인정보취급방침 | Azure RMS
-description:
-keywords:
+title: "RMS 지원 응용 프로그램의 Microsoft Rights Management 개인정보취급방침 | Azure RMS"
+description: 
+keywords: 
 author: msmbaldwin
 manager: msmbaldwin
 ms.date: 04/28/2016
@@ -12,16 +10,12 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 751e5e05-fbe2-4769-a5df-1362c0db2108
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: esaggese
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8e8b1dabe3ba2894bec9a87e6d34123d833c699b
+ms.openlocfilehash: 500701acb03aa9f049cc995f14e544e07556bc4f
+
 
 ---
 
@@ -29,7 +23,7 @@ ms.suite: ems
 적용 대상: 응용 프로그램에 포함된 Microsoft Rights Management 기능
 
 > [!NOTE]
-> 이 개인정보취급방침은 [Microsoft 다운로드 센터](http://www.microsoft.com/download/details.aspx?id=41668)에서 추가 언어로 제공됩니다..
+> 이 개인정보취급방침은 [Microsoft 다운로드 센터](http://www.microsoft.com/download/details.aspx?id=41668)에서 추가 언어로 제공됩니다.
 
 Microsoft는 개인 컴퓨팅 분야에서 사용자가 원하는 성능, 기능 및 편의성을 갖춘 소프트웨어를 제공함과 동시에 사용자의 개인정보를 보호하기 위해 노력하고 있습니다. 이 개인정보취급방침에서는 Microsoft Rights Management 클라이언트 소프트웨어 또는 서비스와, 이 고지 사항을 표시하거나 여기에 연결되는 기타 Microsoft 제품 또는 서비스의 다양한 데이터 수집 및 사용 사례에 대해 설명합니다.
 
@@ -53,7 +47,7 @@ Microsoft는 사용자가 지시하는 경우, 이 개인정보취급방침에�
 Microsoft Rights Management 사용 가능 응용 프로그램을 통해 Microsoft가 수집하거나 Microsoft로 전송되는 정보는 미국 또는 Microsoft나 해당 계열사, 자회사 또는 서비스 공급자가 시설을 관리하는 기타 국가에서 보관 및 처리될 수 있습니다. Microsoft는 유럽 연합, 유럽 경제 지역, 스위스에서의 데이터 수집, 사용 및 보유에 대해 미 상무부에서 정한 세이프 하버 규정(safe harbor framework)을 준수합니다.
 
 ## Microsoft Update
-Microsoft Rights Management 사용 가능 응용 프로그램을 Windows에서 사용하는 경우에는 Microsoft 업데이트에 참여할 수 있습니다. MU(Microsoft 업데이트)는 Windows용 Microsoft Rights Management 클라이언트를 비롯한 Microsoft 소프트웨어의 업데이트를 제공하는 서비스입니다. 수집되는 정보, 해당 정보의 사용 방법 및 설정을 변경하는 방법에 대한 자세한 내용은 [업데이트 서비스 개인 정보 취급 방침](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142) 섹션을 참조하세요.).
+Microsoft Rights Management 사용 가능 응용 프로그램을 Windows에서 사용하는 경우에는 Microsoft 업데이트에 참여할 수 있습니다. MU(Microsoft 업데이트)는 Windows용 Microsoft Rights Management 클라이언트를 비롯한 Microsoft 소프트웨어의 업데이트를 제공하는 서비스입니다. 수집되는 정보, 해당 정보의 사용 방법 및 설정을 변경하는 방법에 대한 자세한 내용은 [업데이트 서비스 개인 정보 취급 방침](http://go.microsoft.com/fwlink/?linkid=50142) ([http://go.microsoft.com/fwlink/?linkid=50142](http://go.microsoft.com/fwlink/?linkid=50142))을 참조하세요.
 
 선택/제어: 자동 설치의 경우 Microsoft Rights Management 사용 응용 프로그램은 Windows 데스크톱에 적용된 것과 동일한 MU 설정을 따릅니다. 사용자 설치의 경우에는 MU가 설정되어 있지 않으면 설치 중에 MU를 설정할 수 있는 메시지가 표시될 수 있습니다. MU를 설정하도록 선택하면 해당 MU 설정이 모든 Windows 기반 응용 프로그램에 적용됩니다.
 
@@ -65,6 +59,7 @@ Microsoft는 경우에 따라 제품, 서비스, 고객 피드백에 따른 변�
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

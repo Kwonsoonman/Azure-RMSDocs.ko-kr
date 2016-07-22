@@ -1,26 +1,22 @@
 ---
-# required metadata
-
-title: Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법 | Azure RMS
-description: RMS 사용 응용 프로그램에 대한 사용자 인증의 기본 사항에 대해 설명합니다.
-keywords:
+title: "Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법 | Azure RMS"
+description: "RMS 사용 응용 프로그램에 대한 사용자 인증의 기본 사항에 대해 설명합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/15/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
+ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+
 
 ---
 
@@ -53,7 +49,8 @@ Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 
 -   [dotnet용 Microsoft Azure ADAL(Active Directory 인증 라이브러리)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
 -   Linux SDK의 경우 [Github](https://github.com/AzureAD/rms-sdk-for-cpp)를 통해 제공되는 SDK 원본과 함께 ADAL 라이브러리가 패키징되어 있습니다.
 
->[!NOTE]  ADAL 중 하나를 사용할 것을 권장하지만, 다른 인증 라이브러리를 사용할 수도 있습니다.
+>[!NOTE]  
+> ADAL 중 하나를 사용할 것을 권장하지만, 다른 인증 라이브러리를 사용할 수도 있습니다.
 
 ### 인증 매개 변수
 
@@ -66,13 +63,15 @@ ADAL에서 사용자를 Azure RMS(또는 AD RMS)에 인증하려면 여러 가�
 Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
 - **리디렉션 URI** – 인증 라이브러리에 인증 코드의 URI 대상을 제공합니다. iOS 및 Android에는 특정한 형식이 필요합니다. 이러한 작업은 ADAL의 해당 GitHub 리포지토리에 있는 README 파일에 설명되어 있습니다. Azure 포털을 통해 이전 등록 단계에서 이 값을 가져옵니다.
 
->[!NOTE] **범위**는 현재 사용되지 않지만 사용될 수 있으므로 향후 사용을 위해 예약되었습니다.
+>[!NOTE] 
+> **범위**는 현재 사용되지 않지만 사용될 수 있으므로 향후 사용을 위해 예약되었습니다.
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] 앱이 이러한 지침을 따르지 않으면 Azure RMS 및 Azure AD 워크플로가 실패할 가능성이 크며 Microsoft.com에서 지원되지 않습니다. 또한 프로덕션 앱에서 잘못된 클라이언트 ID를 사용할 경우 RMLA(권한 관리 사용권 계약)를 위반할 수 있습니다.
+>[!NOTE] 
+> 앱이 이러한 지침을 따르지 않으면 Azure RMS 및 Azure AD 워크플로가 실패할 가능성이 크며 Microsoft.com에서 지원되지 않습니다. 또한 프로덕션 앱에서 잘못된 클라이언트 ID를 사용할 경우 RMLA(권한 관리 사용권 계약)를 위반할 수 있습니다.
 
 ### 필요한 인증 콜백 구현 모양
 **인증 코드 예제** - 이 SDK에는 인증 콜백 사용을 보여 주는 예제 코드가 있습니다. 편의상, 이러한 코드 예제는 여기뿐 아니라 연결된 다음 각 항목에도 표시되어 있습니다.
@@ -271,6 +270,7 @@ Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

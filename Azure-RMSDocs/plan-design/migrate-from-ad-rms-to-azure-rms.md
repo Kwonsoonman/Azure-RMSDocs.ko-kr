@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/29/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea4dd88ed749092fd02135d8ca25b621f74fe72f
-ms.openlocfilehash: b33839ff5ce0d30082f58ff96eb81215b716e46d
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
 
 
 ---
@@ -85,7 +85,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 제한 사항:
 
--   마이그레이션 프로세스는 SLC(서버 라이선스 인증서) 키를 Azure RMS에 대한 HSM(하드웨어 보안 모듈)로 마이그레이션하도록 지원하지만, Exchange Online은 현재 이러한 구성을 지원하지 않습니다. Azure RMS로 마이그레이션한 후에 Exchange Online에서 IRM 기능을 모두 사용하려면 Azure RMS 테넌트 키를 [Microsoft에서 관리](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)해야 합니다. 또는 사용자가 Azure RMS 테넌트를 관리할 때는(BYOK) Exchange Online에서 제한된 기능의 IRM을 실행할 수 있습니다. Azure RMS와 함께 Exchange Online을 사용하는 방법에 대한 자세한 내용은 이러한 마이그레이션 지침에서 [6단계. Exchange Online에 대한 IRM 통합 구성](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online)을 참조하세요.
+-   마이그레이션 프로세스는 SLC(서버 라이선스 인증서) 키를 Azure RMS에 대한 HSM(하드웨어 보안 모듈)로 마이그레이션하도록 지원하지만, Exchange Online은 현재 이러한 구성을 지원하지 않습니다. Azure RMS로 마이그레이션한 후에 Exchange Online에서 IRM 기능을 모두 사용하려면 Azure RMS 테넌트 키를 [Microsoft에서 관리](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)해야 합니다. 또는 사용자가 Azure RMS 테넌트를 관리할 때는(BYOK) Exchange Online에서 제한된 기능의 IRM을 실행할 수 있습니다. Azure RMS와 함께 Exchange Online을 사용하는 방법에 대한 자세한 내용은 이러한 마이그레이션 지침에서 [6단계. Exchange Online에 대한 IRM 통합 구성](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online)을 참조하세요.
 
 -   Azure RMS에서 지원되지 않는 소프트웨어 및 클라이언트가 있는 경우 Azure RMS로 보호되는 콘텐츠를 보호하거나 사용할 수 없게 됩니다. [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md) 문서에서 지원되는 응용 프로그램 및 클라이언트 섹션을 확인하세요.
 
@@ -180,6 +180,6 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO3-->
 
 

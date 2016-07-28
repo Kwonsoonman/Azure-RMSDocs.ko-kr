@@ -1,7 +1,7 @@
 ---
 title: "RMS 사용 응용 프로그램에 대한 ADAL 인증 | Azure RMS"
 description: "ADAL 인증을 위한 프로세스를 간략히 설명합니다."
-keywords: authentication, RMS, ADAL
+keywords: "인증, RMS, ADAL"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
@@ -124,6 +124,6 @@ C++ extern HRESULT GetADALToken(LPVOID pContext, const IPC_NAME_VALUE_LIST& Para
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

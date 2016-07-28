@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/17/2016
+ms.date: 07/15/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 50ebcd71336baeb68687e2d0c1ff1f0608925761
-ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
+ms.sourcegitcommit: 2fab331a26e18730e9cc64a24c0501b7ae21aa1b
+ms.openlocfilehash: f225d8579e2440d2eb00a4f821a78727b6442fdd
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 |Azure AD 디렉터리|RMS에 대해 사용자 인증을 지원하려면 조직에 Azure AD 디렉터리가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.<br /><br />MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure RMS에서 지원됩니다.<br /><br />자세한 내용은 [Azure AD 디렉터리](requirements-azure-ad.md)를 참조하세요.|
 |클라이언트 장치|사용자에게 RMS를 지원하는 운영 체제를 실행하는 클라이언트 장치(컴퓨터 또는 모바일 장치)가 있어야 합니다.<br /><br />자세한 내용은 [Azure RMS를 지원하는 클라이언트 장치](requirements-client-devices.md)를 참조하세요.|
 |응용 프로그램|사용자는 RMS를 지원하는 응용 프로그램을 실행해야 합니다.<br /><br />자세한 내용은 [Azure RMS를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.|
-|인터넷 및 종속된 클라우스 서비스 연결을 지원하는 인프라|특정 연결을 허용하기 위해 구성해야 하는 방화벽 또는 유사한 중개 네트워크 장치가 있는 경우 [Office 365 URL 및 IP 주소 범위](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)를 참조하세요.<br /><br />**Office 365 포털 및 공유** 및 **Office 365 인증 및 ID** 섹션의 URL 및 IP 주소 목록은 Office 365 포털, Azure Active Directory 리소스 및 Azure 권한 관리에 적용됩니다. 이 문서의 지침에 따라 RSS 피드를 구독하여 이 정보에 대한 최신 변경 내용을 확인하세요.<br /><br />Office 문서의 정보 외에 Azure RMS와 관련하여 다음 사항에 유의하세요.<br /><br />- TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure RMS와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.<br /><br />- 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.|
+|인터넷 및 종속된 클라우스 서비스 연결을 지원하는 인프라|특정 연결을 허용하기 위해 구성해야 하는 방화벽 또는 유사한 중개 네트워크 장치가 있는 경우 Office 문서 [Office 365 URL 및 IP 주소 범위](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)의 [Office 365 포털 및 공유](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#BKMK_Portal-identity) 섹션에 있는 **Azure RMS(권한 관리)** 정보를 참조하세요.<br /><br />이 Office 문서의 지침에 따라 RSS 피드를 구독하여 이 정보에 대한 최신 변경 내용을 확인하세요.<br /><br />Office 문서의 정보 외에 Azure RMS와 관련하여 다음 사항에 유의하세요.<br /><br />- TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure RMS와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.<br /><br />- 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.|
 
 온-프레미스 서버에 Azure RMS를 사용하려는 경우 다음 제품이 지원됩니다.
 
@@ -56,6 +56,6 @@ ms.openlocfilehash: 72a75712da9efa201865440affa80461dcd7df53
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

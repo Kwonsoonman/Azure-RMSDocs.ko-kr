@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/02/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e84de6afd80196d4237499718af45c64788c408d
-ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 2863c98390b8fda528c4fe3a1b2ebce3510763b4
 
 |요구 사항 또는 문제|Azure RMS를 통한 해결 방법|
 |--------------------------|-----------------------|
-|모든 파일 형식 보호|√ 이전 권한 관리 구현에서는 기본 보호 기능을 통해 Office 파일만 보호할 수 있었습니다. 이제 [일반 보호](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-) 기능이 사용되므로 모든 파일 형식이 지원됩니다.|
+|모든 파일 형식 보호|√ 이전 권한 관리 구현에서는 기본 보호 기능을 통해 Office 파일만 보호할 수 있었습니다. 이제 [일반 보호](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection) 기능이 사용되므로 모든 파일 형식이 지원됩니다.|
 |어디서나 파일 보호|√ 파일을 특정 위치에 저장하면([바로 보호](../rms-client/sharing-app-protect-in-place.md)) 클라우드 저장소 서비스 등 IT에서 제어하지 않는 저장소에 파일을 복사해도 보호 기능이 계속 적용됩니다.|
 |전자 메일로 안전하게 파일 공유|√ 메일로 공유([보호된 항목 공유](../rms-client/sharing-app-protect-by-email.md))하는 파일은 메일 메시지의 첨부 파일로 보호되며 보호된 첨부 파일을 여는 방법에 대한 지침이 제공됩니다. 전자 메일 텍스트는 암호화되지 않으므로 받는 사람은 해당 지침을 항상 확인할 수 있습니다. 그러나 첨부된 문서는 보호되므로 해당 전자 메일이나 문서를 다른 사용자에게 전달하더라도 권한이 있는 사용자만이 첨부된 문서를 열 수 있습니다.|
 |감사 및 모니터링|√ 보호된 파일이 조직의 경계를 벗어나더라도 해당 파일의 [사용을 감사하고 모니터링](../deploy-use/log-analyze-usage.md)할 수 있습니다.<br /><br />Contoso, Ltd. 소속 직원이 Fabrikam, Inc. 직원 3명과 공동 프로젝트를 진행 중인 경우를 예로 들어 보겠습니다. 이 직원 3명에게 읽기 전용으로 제한하여 보호한 문서를 전자 메일로 보낼 때 Azure RMS 감사에서는 다음과 같은 정보를 제공할 수 있습니다.<br /><br />- Fabrikam에서 지정한 직원이 문서를 열었는지 여부 및 문서를 연 시간<br /><br />- 지정하지 않은 다른 직원이 문서 열기를 시도했는지(그리고 실패했는지) 여부. 다른 사용자가 액세스할 수 있는 공유 위치로 문서가 전달되었거나 저장되었을 수 있습니다.<br /><br />- 지정한 직원이 문서 인쇄 또는 변경을 시도했는지(그리고 실패했는지) 여부|
@@ -73,6 +73,6 @@ Azure RMS는 다음과 같은 보안, 준수 및 규정 요구 사항을 지원�
 Azure RMS 작동에 대한 보다 기술적인 정보에 관심이 있는 경우 [Azure RMS 작동 방식](how-does-it-work.md)을 참조하세요. 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

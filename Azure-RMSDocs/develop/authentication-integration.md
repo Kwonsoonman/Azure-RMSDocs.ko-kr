@@ -4,7 +4,7 @@ description: "RMS 사용 응용 프로그램에 대한 사용자 인증의 기�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 07/07/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
+ms.sourcegitcommit: 04454886841fe7b3482d10e1e32422f28d1c434f
+ms.openlocfilehash: fbe12e339d3fb8fc62aabc34aaa9f5f043e95de9
 
 
 ---
@@ -29,6 +29,9 @@ ms.openlocfilehash: 34a82f31b5da46a59627ff559deb46c8445fcdf2
 
 ## Azure 포털을 통해 등록
 Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)부터 수행합니다. 나중에 사용할 수 있도록 이 프로세스에서 **클라이언트 ID** 및 **리디렉션 URI**를 복사하여 저장해야 합니다.
+
+## RMLA(권한 관리 사용권 계약) 완료
+응용 프로그램을 배포하려면 먼저 Microsoft Rights Management 팀과 RMLA를 완료해야 합니다. 자세한 내용은 [프로덕션 환경에 배포 - 프로덕션 사용권 계약 요청](deploying-your-application.md) 항목의 첫 번째 섹션을 참조하세요.
 
 ## 앱에 대한 사용자 인증 구현
 각 RMS API에는 사용자 인증을 사용하기 위해 구현해야 하는 콜백이 있습니다. 그러면 액세스 토큰을 제공하지 않거나, 액세스 토큰을 새로 고쳐야 하거나, 액세스 토큰이 만료된 경우 RMS SDK 4.2에서 인증 콜백 구현을 사용합니다.
@@ -271,6 +274,6 @@ Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

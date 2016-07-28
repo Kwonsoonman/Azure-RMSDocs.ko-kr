@@ -1,9 +1,9 @@
 ---
 asset_id: 78022852-1541-4194-bd6b-2f5fd5d94b77
 layout: HubPage
-title: "Azure 권한 관리 설명서"
+title: "Azure 권한 관리 설명서 - RMS 설명서 | Microsoft 문서"
 description: "Azure 권한 관리에 대한 기술 설명서"
-keywords: rights management documentation, rms documentation, Azure RMS documentation
+keywords: "권한 관리 설명서, rms 설명서, Azure RMS 설명서"
 author: msmbaldwin
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -14,15 +14,15 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: 80de3ab273c090f466fc381390d84b8f7b90f6f4
-ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
+ms.sourcegitcommit: e5a1860afff2682cce093523b33c9e99b93d446d
+ms.openlocfilehash: 57b04bccfd2f650c24875d20baf89040c69ab0f6
 
 
 ---
-# Azure 권한 관리 설명서
+# Azure RMS(권한 관리) 설명서
 <article id="main">
     <section id="hero-content">
-      <h1>Azure 권한 관리 설명서</h1>
+      <h1>Azure RMS(권한 관리) 설명서</h1>
       <h2>Azure RMS(Azure 권한 관리)를 배포하고 관리하는 방법에 대해 알아봅니다. 빠르게 Azure RMS를 사용하여 메일, 문서 및 기타 중요한 데이터에 정보 보호를 적용할 수 있습니다.</h2>
       <h3>Azure RMS를 처음 사용하세요? <a href="http://go.microsoft.com/fwlink/?LinkId=816857" target="_blank">Microsoft 제품 웹 사이트 방문 &rarr;</a></h3>
     </section>
@@ -36,11 +36,12 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
       <h2 class="section-heading"><span class="icon icon-warning"></span> 주요 콘텐츠</h2>
       <div class="features row">
         <ul class="column column-half">
+          <li><mark><b>신규</b></mark> <a href="./information-protection/what-is-information-protection.md">Azure Information Protection(미리 보기)</a></li>
           <li><a href="./understand-explore/what-is-azure-rms.md">Azure 권한 관리란?</a></li>
           <li><a href="./get-started/quick-start-tutorial.md">Azure RMS 빠른 시작 자습서</a></li>
-          <li><a href="./get-started/rapid-deployment-guide.md">Azure RMS 빠른 배포 가이드</a></li>
         </ul>
         <ul class="column column-half">
+          <li><a href="./get-started/rapid-deployment-guide.md">Azure RMS 빠른 배포 가이드</a></li>
           <li><a href="./plan-design/deployment-roadmap.md">Azure RMS 배포 로드맵</a></li>
           <li><a href="./develop/developers-guide.md">Azure RMS와 응용 프로그램 통합</a></li>
         </ul>
@@ -214,6 +215,39 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
                 </li>
               </ul>
             </section>
+          <li class="journey-step">
+            <header class="journey-step-header row">
+              <a href="./information-protection/what-is-information-protection.md">
+                <div class="title column-third">
+                  <span class="step-number"> 6</span>
+                  <p>Azure Information Protection(미리 보기)</p>
+                </div>
+                <p class="description column-two-thirds">현재 미리 보기로 제공되는 Azure Information Protection으로 데이터를 분류하고 레이블을 지정하며 보호하세요.
+                </p>
+              </a>
+            </header>
+            <section class="journey-step-elements content">
+              <ul class="row">
+                <li class="column-third">
+                  <a href="./information-protection/what-is-information-protection.md">
+                    <h3>Azure Information Protection이란?</h3>
+                    <p>Azure RMS(권한 관리)와 Secure Islands의 분류 및 레이블 지정 기술을 통합하는 Azure Information Protection에 대해 알아보세요.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="./information-protection/infoprotect-quick-start-tutorial.md">
+                    <h3>Azure Information Protection 빠른 시작 자습서</h3>
+                    <p>단 4단계로 Azure Information Protection을 시작하세요.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="./information-protection/faq.md">
+                    <h3>Azure Information Protection FAQ</h3>
+                    <p>Azure Information Protection에 대한 질문과 대답을 확인하세요.</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
           </li>
         </ul>
       </section>
@@ -228,6 +262,6 @@ ms.openlocfilehash: 6ba6e7b208c0b53a5cc6f38811f6845234bf7983
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

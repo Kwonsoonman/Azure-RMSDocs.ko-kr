@@ -1,0 +1,20 @@
+# [이해 및 탐색](/rights-management/understand-explore/azure-rights-management)
+# [시작](/rights-management/get-started/requirements-azure-rms)
+# [계획 및 디자인](/rights-management/plan-design/deployment-roadmap)
+# [서비스 배포 및 사용](/rights-management/deploy-use/activate-service)
+# [클라이언트 배포 및 사용](/rights-management/rms-client/use-client)
+# [앱 개발 및 사용자 지정](/rights-management/develop/developers-guide)
+# [Azure Information Protection(미리 보기)](what-is-information-protection.md)
+## [Azure Information Protection이란?](what-is-information-protection.md)
+## [요구 사항](requirements-azure-infoprotect.md)
+## [빠른 시작 자습서](infoprotect-quick-start-tutorial.md)
+### [1단계: Rights Management 서비스 활성화](infoprotect-tutorial-step1.md)
+### [2단계: 정책 구성 및 게시](infoprotect-tutorial-step2.md)
+### [3단계: 클라이언트 설치](infoprotect-tutorial-step3.md)
+### [4단계: 실제 서비스 작동 방식 확인](infoprotect-tutorial-step4.md)
+## [질문과 대답](faq.md)
+
+
+<!--HONumber=Jul16_HO3-->
+
+

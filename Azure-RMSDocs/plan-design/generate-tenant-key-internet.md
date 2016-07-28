@@ -13,8 +13,8 @@ ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 7ec87b63b31d0b41c93dab7998df63e208308811
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 20cfa722f7008c52f4fbc219a4de04c50ee3548d
 
 *적용 대상: Azure 권한 관리, Office 365*
 
-[고유한 테넌트 키를 관리](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok-)하기로 결정했으며 직접 테넌트 키를 전송하기 위해 Microsoft 본사로 가지 않고 인터넷을 통해 테넌트 키를 전송하려는 경우 다음 절차를 사용하세요.
+[고유한 테넌트 키를 관리](plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)하기로 결정했으며 직접 테넌트 키를 전송하기 위해 Microsoft 본사로 가지 않고 인터넷을 통해 테넌트 키를 전송하려는 경우 다음 절차를 사용하세요.
 
 
 ## 인터넷에 연결된 워크스테이션 준비
@@ -378,6 +378,6 @@ Get-AadrmKeys
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

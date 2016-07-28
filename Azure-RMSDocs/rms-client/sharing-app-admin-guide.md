@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
+ms.sourcegitcommit: a58d50b33db95570b43fe1ec0f76bdf490ddd024
+ms.openlocfilehash: 164df467632b38f179d1c1192835f919641331a5
 
 
 ---
@@ -28,6 +28,8 @@ ms.openlocfilehash: e67d0ab5537aa7444940a5e7ce3a653cc6e66993
 엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 응용 프로그램을 담당하고 있거나, [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md) 또는 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://go.microsoft.com/fwlink/?LinkId=303971)에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다.
 
 RMS 공유 응용 프로그램은 Azure RMS에서 가장 효율적으로 작동합니다. 이 배포 구성에서는 다른 조직의 사용자에게 보호된 첨부 파일을 보낼 수 있으며, 메일 알림 및 취소 기능이 포함된 문서 추적 등의 옵션도 지원되기 때문입니다.  그러나 온-프레미스 버전인 AD RMS에서도 해당 응용 프로그램을 사용할 수 있습니다(일부 제한이 적용됨). Azure RMS 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure 권한 관리와 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요. AD RMS를 사용 중이며 Azure RMS로 마이그레이션하려는 경우에는 [AD RMS에서 Azure 권한 관리로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
+
+Rights Management 공유 응용 프로그램 기술 개요, 기본 및 일반 보호에 대한 정보, 지원되는 파일 형식, 파일 이름 확장명 및 기본 보호 수준을 변경하는 방법은 [Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보](sharing-app-admin-guide-technical.md)를 참조하세요. 
 
 ## Microsoft Rights Management 공유 응용 프로그램 자동 배포
 RMS 공유 응용 프로그램의 Windows 버전은 스크립트 방식 설치를 지원하므로 엔터프라이즈 배포에 적합합니다.
@@ -116,13 +118,13 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         > [!NOTE]
         > 이 명령을 실행하면 Azure용 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 컴퓨터가 도메인에 가입되어 있지 않으면 이 메시지가 표시됩니다. 컴퓨터가 도메인에 가입되어 있으면 이 도구는 캐시된 자격 증명을 사용할 수 있습니다.
 
-2.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 상승된 권한으로 다음 명령을 실행합니다.
+2.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 상승된 권한으로 다음 명령을 한 번 실행합니다.
 
     ```
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 다음 명령을 실행해야 합니다(상승된 권한은 필요하지 않음). 여러 가지 방법으로 이 작업을 수행할 수 있습니다. 예를 들어 메일 메시지나 지원 센터 포털의 링크를 통해 사용자가 명령을 실행하도록 할 수도 있고 로그온 스크립트에 명령을 추가할 수도 있습니다.
+3.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 해당 컴퓨터의 각 사용자는 다음 명령을 실행해야 합니다(상승된 권한은 필요하지 않음). 여러 가지 방법으로 이 작업을 수행할 수 있습니다. 예를 들어 메일 메시지나 지원 센터 포털의 링크를 통해 사용자가 명령을 실행하도록 할 수도 있고 로그온 스크립트에 명령을 추가할 수도 있습니다.
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -367,6 +369,6 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -10,11 +10,12 @@
 ### [Windows용 Rights Management 공유 응용 프로그램](sharing-app-windows.md)
 #### [Rights Management 공유 응용 프로그램: 버전 릴리스 기록](sharing-app-version-release-history.md)
 #### [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)
-##### [기술 개요](sharing-app-admin-guide-technical.md)
+##### [기술 개요 및 보호 세부 정보](sharing-app-admin-guide-technical.md)
 #### [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 ##### [다운로드 및 설치](install-sharing-app.md)
 ##### [장치에서 파일 보호](sharing-app-protect-in-place.md)
 ##### [전자 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md)
+##### [보호된 파일에 대한 사용 권한 변경](sharing-app-reprotect-files.md)
 ##### [문서 추적 및 취소](sharing-app-track-revoke.md)
 ##### [보호된 파일 보기 및 사용](sharing-app-view-use-files.md)
 ##### [보호 제거](sharing-app-remove-protection.md)
@@ -22,8 +23,9 @@
 ##### [대화 상자 옵션](sharing-app-dialog-box.md)
 ### [RMS 지원 응용 프로그램의 Microsoft Rights Management 개인정보취급방침](privacy-statement-rms-enlightened-applications.md)
 # [앱 개발 및 사용자 지정](/rights-management/develop/developers-guide)
+# [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

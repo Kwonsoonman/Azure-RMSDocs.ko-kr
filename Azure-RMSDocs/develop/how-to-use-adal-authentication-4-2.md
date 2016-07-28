@@ -1,7 +1,7 @@
 ---
 title: "Azure 포털에서 RMS 인증을 위해 구성 | Azure RMS"
 description: "ADAL 인증을 위한 프로세스를 간략히 설명합니다."
-keywords: authentication, RMS, ADAL
+keywords: "인증, RMS, ADAL"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/14/2016
@@ -62,6 +62,6 @@ Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

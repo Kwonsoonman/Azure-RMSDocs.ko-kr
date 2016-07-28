@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 7a2436a6ebb17e4336f1321b8f3742e34ea59689
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: 3592fb7c386eaeddc839c11a494f94d9b7564472
 
 
 ---
@@ -559,7 +559,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 사용자의 
 
     3.  `$webUrls`를 검색하고 필요한 만큼 항목을 추가하거나 삭제하여 예제 값을 사용자의 비즈니스용 OneDrive 웹 URL로 바꿉니다.
 
-        또는 구성하는 데 필요한 URL이 모두 포함된 .CSV 파일을 가져와 이 배열을 바꾸는 방법에 대한 스크립트의 설명을 참조하세요.  자동으로 검색하고 URL을 추출하여 이 .CSV 파일을 채울 수 있는 또 다른 샘플 스크립트를 제공했습니다. 이 작업을 수행할 준비가 되었으면 이러한 단계 바로 뒤에 있는 [모든 비즈니스용 OneDrive URL을 .CSV 파일로 출력하는 추가 스크립트](#BKMK_Script_OD4B_URLS) 섹션을 확장합니다.
+        또는 구성하는 데 필요한 URL이 모두 포함된 .CSV 파일을 가져와 이 배열을 바꾸는 방법에 대한 스크립트의 설명을 참조하세요.  자동으로 검색하고 URL을 추출하여 이 .CSV 파일을 채울 수 있는 또 다른 샘플 스크립트를 제공했습니다. 이 작업을 수행할 준비가 되었으면 이러한 단계 바로 뒤에 있는 [모든 비즈니스용 OneDrive URL을 .CSV 파일로 출력하는 추가 스크립트](#additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file) 섹션을 사용합니다.
 
         사용자의 비즈니스용 OneDrive에 대한 웹 URL의 형식은 https://*&lt;테넌트 이름&gt;*-my.sharepoint.com/personal/*&lt;사용자_이름&gt;*_*&lt;테넌트 이름&gt;*_com입니다.
 
@@ -1106,6 +1106,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

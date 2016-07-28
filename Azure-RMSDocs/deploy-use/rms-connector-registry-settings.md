@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: ff90f009f9fda90171bbeeb2a7bb421376d4695c
+ms.sourcegitcommit: 935c354f9bcd3be23a953cdeb08c7860257637d6
+ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
 
 
 ---
@@ -43,7 +43,7 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 -   *ConnectorFQDN*은 DNS에서 커넥터에 대해 정의한 부하 분산 이름입니다. **rmsconnector.contoso.com**을 예로 들 수 있습니다.
 
--   온-프레미스 서버와 통신하는 데 HTTPS를 사용하도록 커넥터를 구성한 경우 커넥터 URL에 HTTPS 접두사를 사용합니다. 자세한 내용은 이 항목에서 [HTTPS를 사용하도록 RMS 커넥터 구성](deploy-rms-connector.md#BKMK_ConfiguringHTTPS) 섹션을 참조하세요. Microsoft RMS URL에는 항상 HTTPS가 사용됩니다.
+-   온-프레미스 서버와 통신하는 데 HTTPS를 사용하도록 커넥터를 구성한 경우 커넥터 URL에 HTTPS 접두사를 사용합니다. 자세한 내용은 기본 지침의 [HTTPS를 사용하도록 RMS 커넥터 구성](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https) 섹션을 참조하세요. Microsoft RMS URL에는 항상 HTTPS가 사용됩니다.
 
 
 ## Exchange 2016 또는 Exchange 2013 레지스트리 설정
@@ -217,6 +217,6 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)로 돌아갑니다.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

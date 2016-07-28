@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b73c83b91a6b00e44ff6c8fe7f8e954bd9713e34
-ms.openlocfilehash: a3ed9e8de496741fae8904481edb1177762a12c0
+ms.sourcegitcommit: e89c59716eef7fbdea415b41b1adfa54b0c16689
+ms.openlocfilehash: bd53b73452f444ac8529a8b8b613e76d8cc234a1
 
 
 ---
@@ -198,9 +198,14 @@ Azure RMS는 다른 서비스를 지원하는 동시에 다른 서비스가 있�
 
 -   Office 365 라이브러리: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
+## 새 분류 및 레이블 지정 기능의 최신 내용은 무엇인가요?
+
+Azure Information Protection의 이 기능은 현재 공개 미리 보기로 제공됩니다. 이 미리 보기를 사용해 보고 사용 가능한 리소스 목록을 확인하려면 [Azure Information Protection 미리 보기란?](../information-protection/what-is-information-protection.md)을 참조하세요.
+
+
 ## 곧 새 릴리스가 Azure RMS용으로 나올 예정이라고 들었습니다. 언제 나오나요?
 
-기술 설명서에는 예정된 릴리스에 대한 정보가 없습니다. 이러한 종류의 정보와 릴리스 발표에 대해서는 [Enterprise Mobility and Security Blog(Enterprise Mobility 및 보안 블로그)](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)를 확인하고 Twitter의 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)에서 최신 업데이트를 받으세요. 관심이 있는 Office 릴리스의 경우에는 [Office 블로그(https://blogs.office.com/)]도 꼭 확인하세요.
+기술 설명서에는 예정된 릴리스에 대한 정보가 없습니다. 이러한 종류의 정보와 릴리스 발표에 대해서는 [Enterprise Mobility and Security Blog(Enterprise Mobility 및 보안 블로그)](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)를 확인하고 Twitter의 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)에서 최신 업데이트를 받으세요. 관심이 있는 Office 릴리스의 경우에는 [Office 블로그](https://blogs.office.com/)도 꼭 확인하세요.
 
 ## 내 문의 내용이 여기 없다면 어떻게 하나요?
 [Azure 권한 관리에 대한 정보 및 지원](information-support.md)에 나열된 링크와 리소스를 사용합니다.
@@ -219,6 +224,6 @@ Azure RMS는 다른 서비스를 지원하는 동시에 다른 서비스가 있�
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO3-->
 
 

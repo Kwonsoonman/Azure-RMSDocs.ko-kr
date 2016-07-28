@@ -13,8 +13,8 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 46e5d3c9ea001d2fa157187a8b78c2dc3e6516f3
+ms.sourcegitcommit: 384a58f32aae8c7d908392e7fd9a1629bc05cdff
+ms.openlocfilehash: d3727eb963532e03137aea2140293fa9c5821db2
 
 
 ---
@@ -43,29 +43,31 @@ Windows 7 서비스 팩 1 이상을 실행하는 컴퓨터만 있으면 됩니�
 
 ## 원하는 옵션을 선택하세요.
 > [!NOTE]
-> 지원되는 파일 형식 및 엔터프라이즈 네트워크에서 이 응용 프로그램을 설치하는 방법과 같은 추가 기술 정보는 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)를 참조하세요.
+> [지원되는 파일 형식](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 및 [엔터프라이즈 네트워크에서 이 응용 프로그램을 설치하는 방법](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)과 같은 추가 기술 정보는 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)를 참조하세요.
 
--   [공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md)
+- [공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md)
 
--   [장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md)
+- [장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md)
 
--   [전자 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md)
+- [전자 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md)
 
--   [문서 추적 및 취소](sharing-app-track-revoke.md)
+- [보호된 파일에 대한 사용 권한 변경](sharing-app-reprotect-files.md)
 
--   [보호된 파일 보기 및 사용](sharing-app-view-use-files.md)
+- [문서 추적 및 취소](sharing-app-track-revoke.md)
 
--   [파일에서 보호 제거](sharing-app-remove-protection.md)
+- [보호된 파일 보기 및 사용](sharing-app-view-use-files.md)
 
--   [바로 가기 키 사용](sharing-app-keyboard-shortcuts.md)
+- [파일에서 보호 제거](sharing-app-remove-protection.md)
 
--   [대화 상자에서 설정 지정](sharing-app-dialog-box.md)
+- [바로 가기 키 사용](sharing-app-keyboard-shortcuts.md)
 
-
-
-
+- [대화 상자에서 설정 지정](sharing-app-dialog-box.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+
+
+
+<!--HONumber=Jul16_HO3-->
 
 

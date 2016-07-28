@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 06/17/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b19eadd408837ebcd77b3ae2f9520f5286fcf41f
-ms.openlocfilehash: cad9d01735d8e649875bc6bba73d29573891e1d8
+ms.sourcegitcommit: e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf
+ms.openlocfilehash: ee2860da964b52bc41c0aea219110453f024b954
 
 
 ---
@@ -29,6 +29,16 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
 > [!NOTE]
 > RMS 공유 응용 프로그램에 대한 의견이나 질문이 있으면 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)에 전자 메일 메시지를 보냅니다.
+
+## 버전 1.0.2217.0
+
+**릴리스 날짜**: 2016년 7월 13일
+
+**수정 사항**:
+
+- 페더레이션 및 다단계 인증을 사용하는 조직 내 사용자에게는 더 이상 콘텐츠를 보호할 때 0x800704DC 오류가 표시되지 않습니다.
+
+
 
 ## 버전 1.0.2191.0
 **릴리스 날짜**: 2016년 6월 16일
@@ -122,6 +132,6 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

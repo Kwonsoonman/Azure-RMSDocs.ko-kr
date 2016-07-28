@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 8635402989db0f83017151910013ca460011b392
+ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
+ms.openlocfilehash: ce79ec40cbd8ca3796a17920d27dc3872cd40842
 
 
 ---
@@ -54,7 +54,7 @@ Azure RMS에 대한 몇 가지 주요 차이점:
 |조직의 콘텐츠 액세스를 제한하는 기본 권한 정책 템플릿 두 개가 제공됩니다. 그 중 하나는 보호된 콘텐츠에 대한 읽기 전용 보기 권한을 제공하고 다른 하나는 보호된 콘텐츠에 대한 쓰기 또는 수정 권한을 제공합니다.<br /><br />또한 하위 집합의 사용자에게만 표시되는 부서별 템플릿을 포함한 사용자 지정 템플릿을 만들 수 있습니다. 자세한 내용은 [Azure 권한 관리용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.<br /><br />템플릿의 권한만으로는 부족한 경우 사용자가 원하는 권한 집합을 정의할 수도 있습니다.|기본 권한 정책 템플릿은 없습니다. 이러한 템플릿을 만든 후 배포해야 합니다. 자세한 내용은 [AD RMS 정책 템플릿 고려 사항](http://go.microsoft.com/fwlink/?LinkId=154765)을 참조하세요.<br /><br />템플릿의 권한만으로는 부족한 경우 사용자가 원하는 권한 집합을 정의할 수도 있습니다.|
 |지원되는 최소 버전의 Microsoft Office는 Office 2010이며, 여기에는 [RMS 공유 응용 프로그램](../rms-client/sharing-app-windows.md)이 필요합니다.<br /><br />Microsoft Office for Mac:<br /><br />- Microsoft Office for Mac 2016: 지원됨<br /><br />- Microsoft Office for Mac 2011: 지원되지 않음|지원되는 최소 Microsoft Office 버전은 Office 2007입니다.<br /><br />Microsoft Office for Mac:<br /><br />- Microsoft Office for Mac 2016: 지원됨<br /><br />- Microsoft Office for Mac 2011: 지원됨|
 |Windows, Mac 컴퓨터 및 모바일 장치용 [RMS 공유 응용 프로그램](../rms-client/sharing-app-windows.md)이 지원됩니다.<br /><br />또한 RMS 공유 응용 프로그램은 다음을 지원합니다.<br /><br />- 다른 조직의 사용자와 공유합니다.<br /><br />- 메일 알림은 누군가가 보호된 첨부 파일을 열려고 할 때 보낸 사람에게 알려줍니다.<br /><br />- 사용자에 대한 사이트를 추적하는 문서는 해지하는 기능을 포함합니다.|Windows, Mac 컴퓨터 및 모바일 장치용 [RMS 공유 응용 프로그램](../rms-client/sharing-app-windows.md)이 지원됩니다. 그러나 공유는 다른 조직, 전자 메일 알림 또는 사이트를 추적하는 문서 및 문서를 해지하려는 사용자를 위한 기능을 사람들과 공유하도록 지원하지 않습니다.|
-|[RMS 공유 응용 프로그램을 사용하는 경우 기본 또는 일반 보호](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)를 사용하여 모든 파일 형식을 보호할 수 있습니다.<br /><br />다른 응용 프로그램의 경우 [클라이언트 장치 기능 표](../get-started/requirements-client-devices.md#client-device-capabilities)를 확인합니다.|[RMS 공유 응용 프로그램을 사용하는 경우 기본 또는 일반 보호](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)를 사용하여 모든 파일 형식을 보호할 수 있습니다.<br /><br />다른 응용 프로그램의 경우 [클라이언트 장치 기능 표](../get-started/requirements-client-devices.md#client-device-capabilities)를 확인합니다.|
+|[RMS 공유 응용 프로그램을 사용하는 경우 기본 또는 일반 보호](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)를 사용하여 모든 파일 형식을 보호할 수 있습니다.<br /><br />다른 응용 프로그램의 경우 [Azure RMS 요구 사항: 응용 프로그램](../get-started/requirements-applications.md)의 표를 확인하세요.|[RMS 공유 응용 프로그램을 사용하는 경우 기본 또는 일반 보호](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic)를 사용하여 모든 파일 형식을 보호할 수 있습니다.<br /><br />다른 응용 프로그램의 경우 [Azure RMS 요구 사항: 응용 프로그램](../get-started/requirements-applications.md)의 표를 확인하세요.|
 |지원되는 최소 Windows 클라이언트 버전은 Windows 7입니다.|지원되는 최소 Windows 클라이언트 버전은 Windows Vista 서비스 팩 2입니다.|
 |Windows Phone, Android, iOS, Windows RT 모바일 장치가 지원됩니다.<br /><br />Exchange ActiveSync IRM을 사용한 메일 지원도 이 프로토콜을 지원하는 모든 모바일 장치 플랫폼에서 지원됩니다.|모바일 장치 지원에는 Windows Phone, Android, iOS 및 Windows RT가 포함되며, [Active Directory Rights Management Services 모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)이 필요합니다.<br /><br />이 프로토콜을 지원하는 모든 모바일 장치 플랫폼에서 Exchange ActiveSync IRM을 사용하여 전자 메일을 지원할 수 있습니다.|
 |컴퓨터와 모바일 장치용 Multi-Factor Authentication(MFA)을 지원합니다.<br /><br />자세한 내용은 [MFA(Multi-Factor Authentication) 및 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms)를 참조하세요.|IIS가 인증서를 요청하도록 구성된 경우 스마트 카드 인증을 지원합니다.|
@@ -76,6 +76,6 @@ AD RMS에서 Azure RMS로 마이그레이션하려는 경우 [AD RMS에서 Azure
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

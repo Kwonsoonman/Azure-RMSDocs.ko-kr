@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2016
+ms.date: 07/15/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6a2989f4a6d919d9a2a3d301467353f052bd10ea
-ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
+ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
+ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 
 ---
@@ -26,6 +26,8 @@ ms.openlocfilehash: d67caf4ebbe19e4f67061d006da1fdedea0d5761
 
 
 Azure 클래식 포털에서 사용자 지정 템플릿을 만들고 관리합니다. 이 작업은 Azure 클래식 포털에서 직접 수행할 수도 있고, Office 365 관리 센터에 로그인하여 Rights Management의 **고급 기능**을 선택해도 됩니다. 그러면 Azure 클래식 포털로 리디렉션됩니다.
+
+Azure 클래식 포털에서 템플릿을 만들고 관리하려면 전역 관리자여야 합니다. Azure RMS의 전역 관리자 역할을 다른 사용자에게 할당한 경우 해당 사용자도 템플릿을 만들고 관리할 수 있지만 [PowerShell](configure-templates-with-powershell.md)을 사용해야 합니다. 자세한 내용은 [Azure RMS를 구성하려면 전역 관리자여야 하나요? 또는, 다른 관리자에게 위임할 수 있나요?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators)를 참조하세요. 
 
 Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시하려면 다음 절차를 따르세요.
 
@@ -165,6 +167,6 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7d6e1d818c8eb4f6d2e4e7d320e44c7f159eabb4
+ms.sourcegitcommit: 0e9551db57cc1295f20368535267ca5a901ae9f2
+ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
 
 
 ---
@@ -31,6 +31,7 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 |활성화|조직이 문서 및 메일에 정보 보호를 추가할 수 있도록 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 서비스를 사용합니다. 이 동작은 Exchange Online 및 SharePoint Online에서 권한 관리 기능이 사용되도록 합니다.|
 |Active Directory Rights Management Services|흔히 약어로 *AD RMS*라고 합니다.<br /><br />암호화 및 정책을 사용하여 정보 보호를 제공함으로써 문서, 파일 및 메일을 보호하는 Windows Server 역할입니다.|
 |AD RMS|*Active Directory Rights Management Services*를 참조하세요.|
+|Azure Information Protection|현재 미리 보기로 제공되며, 분류, 레이블 지정 및 보호를 사용하여 문서와 메일을 보호하는 서비스입니다. Azure 권한 관리에서는 암호화, ID 및 권한 부여 정책을 사용하여 보호를 제공합니다.|
 |Azure  권한 관리|흔히 약어로 *Azure RMS*라고 합니다.<br /><br />암호화 및 정책을 사용하여 정보 보호를 제공함으로써 문서, 파일 및 전자 메일을 보호하는 Azure 서비스입니다.  *Azure 권한 관리 서비스*라고도 합니다. 이전 이름은 다음과 같습니다.<br /><br />*Microsoft Azure Active Directory Rights Management*: 흔히 약어로 Microsoft Azure AD Rights Management Service라고 합니다.<br /><br />*RMS Online*: 원래 제안된 이름으로, 간혹 오류 메시지와 로그 파일 항목에 표시될 수 있습니다.|
 |Azure RMS|*Azure 권한 관리*를 참조하세요.|
 |BYOK|*Bring Your Own Key*를 참조하세요.|
@@ -71,6 +72,6 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

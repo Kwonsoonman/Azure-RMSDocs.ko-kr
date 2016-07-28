@@ -1,7 +1,7 @@
 ---
 title: "ADAL 인증을 위해 Azure RMS 구성 | Azure RMS"
 description: "Azure ADAL 기반 인증을 구성하기 위한 단계를 간략하게 설명합니다."
-keywords: authentication, RMS, ADAL
+keywords: "인증, RMS, ADAL"
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 06/28/2016
@@ -109,6 +109,6 @@ Microsoft Azure에 등록한 후
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

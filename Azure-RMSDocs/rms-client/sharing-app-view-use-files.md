@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
+ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
+ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
 
 
 ---
@@ -41,7 +41,7 @@ ms.openlocfilehash: c243ad02bdbd5bd46ba1b2a4818839df8a7deb7b
 다른 파일 이름 확장명을 가진 두 버전의 파일이 표시되면 다른 파일이 열리지 않는 경우 .ppdf 파일 확장명을 가진 파일을 엽니다. .ppdf 버전을 열 수 없는 경우 .ppdf 파일 이름 확장명을 가진 파일을 여는 방법을 알고 있는 [RMS 공유 응용 프로그램](install-sharing-app.md)을 먼저 설치합니다.
 
 > [!NOTE]
-> 자세한 내용은 "[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)"를 참조하세요.
+> 자세한 내용은 "[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)"를 참조하세요.
 
 파일이 어떻게 열리는지는 파일이 어떻게 보호되는지에 따라 다르며 파일 이름 확장명을 보면 알 수 있습니다. 각각의 경우에서 파일 열기는 감사될 수 있고 보호되는 한 감사는 유지됩니다. 또한 파일이 전자 메일 첨부 파일로 전송되었다면 발신자는 파일을 열 때마다 전자 메일로 알림을 받을 수 있습니다.
 
@@ -101,13 +101,13 @@ Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 90552435666b8f25c893fcffe8c8cf3355a5942d
-ms.openlocfilehash: 136d6e9d0c45a9779f87e32eed8288fe8ee3a622
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 1728a094dfaa869ae490e86d10ffe5ebcf4bfa5d
 
 
 ---
@@ -28,8 +28,8 @@ Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 이 항목에서는 새 앱을 만들기 위한 환경을 설정하는 과정을 안내합니다.
 
 -   [필수 구성 요소](#prerequisites)
--   [개발 환경 구성](#configuring_your_development_environment)
--   [참고 항목](#see_also)
+-   [개발 환경 구성](#configuring-your-development-environment)
+-   [참고 항목](#see-also)
 
 ## 필수 구성 요소
 
@@ -93,6 +93,6 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -21,11 +21,10 @@
 ##### [보호 제거](sharing-app-remove-protection.md)
 ##### [바로 가기 키 사용](sharing-app-keyboard-shortcuts.md)
 ##### [대화 상자 옵션](sharing-app-dialog-box.md)
-### [RMS 지원 응용 프로그램의 Microsoft Rights Management 개인정보취급방침](privacy-statement-rms-enlightened-applications.md)
 # [앱 개발 및 사용자 지정](/rights-management/develop/developers-guide)
 # [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

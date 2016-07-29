@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 8de1886adf322439721274e23452af75b4db2e00
 
 
 ---
@@ -25,15 +25,15 @@ ms.openlocfilehash: eccc0ba9c13e0c35c8d0c8877ce92f9b99e83835
 ## 새로운 기능
 Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨씬 쉽고 유연해졌습니다. 이 항목에서는 이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다.
 
--   [2016년 6월의 새로운 기능](#new_for_June_2016)
--   [2015년 12월 업데이트](#december_2015_update)
--   [2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가](#july_2015_update_-_adds_support_for_linux___c___development)
--   [2015년 5월 업데이트 - 로깅 제어 추가](#may_2015_update_-_adds_logging_control)
--   [2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가](#february_2015_update_-_adds_windows_store_application_support)
--   [2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가](#january_2015_update_-_adds_winphone_platform_support)
--   [2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드](#october_2014_update_-_upgrade_to_microsoft_rms_sdk_4.1)
+-   [2016년 6월의 새로운 기능](#new-for-June-2016)
+-   [2015년 12월 업데이트](#december-2015-update)
+-   [2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가](#july-2015-update-adds-support-for-linux-c-developm)
+-   [2015년 5월 업데이트 - 로깅 제어 추가](#may-2015-update-adds-logging-control)
+-   [2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가](#february-2015-update-adds-windows-store-application-support)
+-   [2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가](#january-2015-update-adds-winphone-platform-support)
+-   [2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
 -   [릴리스 정보](#release-notes)
--   [질문과 대답](#frequently_asked_questions)
+-   [질문과 대답](#frequently-asked-questions)
 
 ### 2016년 6월의 새로운 기능
 
@@ -109,7 +109,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 이 릴리스에서는 Windows Phone 운영 체제에 대한 지원이 추가되었으며 Android 및 iOS/OS X 릴리스의 RMS SDK 4.1과 기능 패리티를 제공합니다.
 
-## 2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드
+### 2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드
 
 버전 4.1 릴리스의 RMS SDK에서는 Google Android 및 Apple iOS/OS X에 에는 다음과 같은 새로운 기능이 추가되었습니다.
 
@@ -233,6 +233,6 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

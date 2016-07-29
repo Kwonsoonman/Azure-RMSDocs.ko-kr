@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b5bc9612ac17a2d6905200383d9b8df4c504efe
-ms.openlocfilehash: d6920b8ce09b39d98da9e9c197b17a1f13d21c8e
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 310ee66374157f946df6876b31859313f74275ae
 
 
 ---
@@ -25,9 +25,9 @@ ms.openlocfilehash: d6920b8ce09b39d98da9e9c197b17a1f13d21c8e
 
 이제 여러 버전의 Linux 운영 체제에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 
--   [지원되는 운영 체제](#supported_operating_systems)
--   [빌드 및 사용 방법](#how_to_build_and_use)
--   [참고 항목](#see_also)
+-   [지원되는 운영 체제](#supported-operating-systems)
+-   [빌드 및 사용 방법](#how-to-build-and-use)
+-   [참고 항목](#see-also)
 
 ## 지원되는 운영 체제
 
@@ -60,6 +60,6 @@ Ubuntu 14.04 OpenSUSE 13.2 CentOS 7 **참고** 라이브러리와 샘플이 Wind
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

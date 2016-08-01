@@ -3,15 +3,15 @@ title: "Azure Information Protection 빠른 시작 자습서 2단계 | Azure 권
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 2단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 463c0bc1fa86f73e2623faf5a624afeabcadeedb
-ms.openlocfilehash: c6ecf22b72d862c605f8be2ab1f75fd2126f8575
+ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
+ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
 
 
 ---
@@ -44,7 +44,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 2. **Label: Confidential**(레이블: 기밀) 블레이드에 이제 각 레이블에 사용할 수 있는 설정이 표시됩니다. 다음과 같이 변경합니다.
 
-    a. Azure 권한 관리를 활성화한 경우 **Select RMS template**(RMS 템플릿 선택)에 대해: 드롭다운 상자를 클릭하고 기본 템플릿 **\<조직 이름> - Confidential**(기밀)을 선택합니다. 예를 들어 경우 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - Confidential**(기밀)이 표시되고 이를 선택합니다. 이 기본 Azure 권한 관리 템플릿을 사용하지 않도록 설정한 경우 대체 템플릿을 선택합니다. 그러나 부서별 템플릿을 선택하는 경우 계정이 범위에 포함되는지 확인합니다.
+    a. Azure 권한 관리를 활성화한 경우 **문서와 레이블이 포함된 메일을 보호하기 위한 RMS 설정 템플릿에 대해**: **Azure RMS**가 선택되어 있는지 확인하고, 드롭다운 상자를 클릭한 뒤 기본 템플릿인 **\<조직 이름 >-기밀**을 선택합니다. 예를 들어 경우 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - Confidential**(기밀)이 표시되고 이를 선택합니다. 이 기본 Azure 권한 관리 템플릿을 사용하지 않도록 설정한 경우 대체 템플릿을 선택합니다. 그러나 부서별 템플릿을 선택하는 경우 계정이 범위에 포함되는지 확인합니다.
 
     Azure 권한 관리를 활성화하지 않은 경우 이 옵션을 사용할 수 없습니다.
 
@@ -82,6 +82,6 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 [3단계 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

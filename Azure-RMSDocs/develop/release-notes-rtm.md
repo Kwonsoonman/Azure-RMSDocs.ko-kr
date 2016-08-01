@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56d0538243af49580f24c701ad5097b30f3059b0
-ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: 2892bc8242c3b6a90352829bf251b7044a919ed3
 
 
 ---
@@ -52,7 +52,7 @@ ms.openlocfilehash: 61df64691ac3f4d7e871043767444ea64dfe1ef3
 
 ## 2015년 5월 업데이트
 
--   **서비스 앱 및 클라우드 기반 RMS** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이와 관련된 항목이 획득한 이 정보의 처리 지침을 제공하도록 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 업데이트된 버전을 참조하세요.
+-   **서비스 앱 및 클라우드 기반 RMS** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이와 관련된 항목이 획득한 이 정보의 처리 지침을 제공하도록 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 업데이트된 버전을 참조하세요.
 
 ## 2015년 4월 업데이트
 
@@ -178,6 +178,6 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

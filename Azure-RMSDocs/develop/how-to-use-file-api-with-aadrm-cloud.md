@@ -1,9 +1,7 @@
 ---
-# required metadata
-
 title: "방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정 | Azure RMS"
-description: 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다.
-keywords:
+description: "이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
 ms.date: 04/28/2016
@@ -12,24 +10,22 @@ ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
+ms.openlocfilehash: fce408a8c7a1114375745c3783443b87cd80ba78
+
 
 ---
 
 # 방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
 
-이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/en-us/library/jj585016.aspx)을 참조하세요.
+이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/library/jj585016.aspx)을 참조하세요.
 
 **중요**  
-Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그램을 사용하려면 사용자 고유의 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](/rights-management/get-started/requirements-subscriptions.md)(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독) 항목을 참조하세요.
+Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그램을 사용하려면 사용자 고유의 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독)](../get-started/requirements-subscriptions.md) 항목을 참조하세요.
 
 ## 필수 구성 요소
 
@@ -50,7 +46,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 
      
 -   다음 단계는 **pcCredential**([**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 멤버에 Azure 권한 관리 서비스의 연결 정보를 채워 [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 구조체 인스턴스를 만들기 위한 설정입니다.
--   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 구조체 인스턴스를 만드는 경우 대칭 키 서비스 ID 생성(이 항목의 앞부분에 나열된 필수 조건 참조)의 정보를 사용하여 **wszServicePrincipal**, **wszBposTenantId** 및 **cbKey** 매개 변수를 설정합니다.
+-   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 구조체 인스턴스를 만드는 경우 대칭 키 서비스 ID 생성(이 항목의 앞부분에 나열된 필수 조건 참조)의 정보를 사용하여 **wszServicePrincipal**, **wszBposTenantId** 및 **cbKey** 매개 변수를 설정합니다.
 
 **참고** 검색 서비스의 기존 조건으로 인해 북미 지역에 거주하지 않는 경우 다른 지역의 대칭 키 자격 증명은 수락되지 않으므로 테넌트 URL을 직접 지정해야 합니다. 이 작업은 [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 또는 [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)의 [**IPC\_CONNECTION\_INFO**](/rights-management/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 매개 변수를 통해 수행됩니다.
 
@@ -85,7 +81,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
     `Get-AadrmConfiguration`
 
 
--   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 인스턴스를 만들고 몇 개의 멤버를 설정합니다.
+-   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 인스턴스를 만들고 몇 개의 멤버를 설정합니다.
 
     // Create a key structure.
     IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
@@ -94,9 +90,9 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
     symKey.wszBase64Key = "your service principal key"; symKey.wszAppPrincipalId = "your app principal identifier"; symKey.wszBposTenantId = "your tenent identifier";
 
 
-자세한 내용은 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)를 참조하세요.
+자세한 내용은 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)를 참조하세요.
 
--   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key) 인스턴스를 포함하는 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 구조체 인스턴스를 만듭니다.
+-   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 인스턴스를 포함하는 [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 구조체 인스턴스를 만듭니다.
 
 **참고** *connectionInfo* 멤버는 이전 `Get-AadrmConfiguration` 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
 
@@ -164,7 +160,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 * [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [**IPC\_PROMPT\_CTX**](/rights-management/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)
 * [**IPC\_CREDENTIAL**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)
-* [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential_symmetric_key)
+* [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)
 * [**IpcGetTemplateIssuerList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
 * [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
 * [**IpcfDecryptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
@@ -176,6 +172,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO4-->
 
 

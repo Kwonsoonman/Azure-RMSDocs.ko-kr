@@ -13,8 +13,18 @@
 ### [3단계: 클라이언트 설치](infoprotect-tutorial-step3.md)
 ### [4단계: 실제 서비스 작동 방식 확인](infoprotect-tutorial-step4.md)
 ## [질문과 대답](faq.md)
+## [정책 구성](configure-policy.md)
+### [기본 정책](configure-policy-default.md)
+### [전역 설정 구성](configure-policy-settings.md)
+### [새 레이블 만들기](configure-policy-new-label.md)
+### [레이블 삭제 또는 순서 변경](configure-policy-delete-reorder.md)
+### [레이블 변경](configure-policy-change-label.md)
+### [보호 적용](configure-policy-protection.md)
+### [시각적 표시 구성](configure-policy-markings.md)
+### [조건 구성](configure-policy-classification.md)
+## [클라이언트 설치](info-protect-client.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -3,22 +3,24 @@ title: "Azure Information Protection 빠른 시작 자습서 1단계 | Azure 권
 description: "약 10분 만에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 1단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/291/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 78f0f07271414fb646f996e7273343f2abf8852b
-ms.openlocfilehash: 633b24d0c23cbbee88a2647aaa9defe376ccb40e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 128952778ec317584e558e409961e2921c4ecd07
 
 
 ---
 
 # 1단계: Rights Management 서비스 활성화
  
-*적용 대상: Azure Information Protection 미리 보기*
+>*적용 대상: Azure Information Protection 미리 보기*
+
+**[ 이 정보는 임시로 제공되며 변경될 수 있습니다. ]**
 
 > [!NOTE]
 >Azure 권한 관리로 데이터를 분류만 하고 보호하지는 않으려는 경우나 테넌트에 대해 이미 Azure 권한 관리를 활성화한 경우 바로 [다음 단계](infoprotect-tutorial-step2.md)로 이동하세요. 
@@ -84,6 +86,6 @@ Azure 권한 관리를 활성화한 경우 가장 중요한 문서와 파일을 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

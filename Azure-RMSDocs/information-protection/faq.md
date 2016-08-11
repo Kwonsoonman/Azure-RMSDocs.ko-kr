@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,15 +13,17 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e60cd910a8e995a2681d7eb87a13f815183d9124
-ms.openlocfilehash: 846578a84df383821a64d32ce6dd69290a5fdee9
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
 
 
 ---
 
 # Azure Information Protection 미리 보기 질문과 대답
 
-*적용 대상: Azure Information Protection 미리 보기*
+>*적용 대상: Azure Information Protection 미리 보기*
+
+**[ 이 정보는 임시로 제공되며 변경될 수 있습니다. ]**
 
 Azure Information Protection의 미리 보기 릴리스에 대한 질문이 있나요?  여기에 해당 질문에 대한 대답이 있는지 확인하세요. 
 
@@ -61,12 +63,6 @@ Azure 포털에서 Azure Information Protection 정책을 구성하려면 Azure 
 
 구독 요구 사항에 대한 모든 변경 내용은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)에 공지됩니다.
 
-## Azure Information Protection이 현재 공개 미리 보기로 제공되고 있다면 Azure 포털에서 찾을 수 없는 이유는 무엇인가요?
-
-현재 포털에서 Azure Information Protection을 보려면 https://portal.azure.com/?Microsoft_Azure_InformationProtection=true 링크를 사용해야 합니다.
-
-그런 다음 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 "Information Protection"을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다.
-
 ## Azure Information Protection 미리 보기를 사용하려면 전역 관리자여야 하나요?
 
 미리 보기 릴리스의 경우에 한해, Azure에 의해 인증된 모든 사용자는 Azure 포털에서 테넌트의 Azure Information Protection 정책을 확인하고 구성할 수 있습니다.
@@ -89,7 +85,7 @@ Azure Information Protection은 클라우드 기반 솔루션입니다. 하이�
 
 사용자가 Office 응용 프로그램을 열 때마다 Azure Information Protection 클라이언트는 최신 버전의 Azure Information Protection 정책이 있는지 확인합니다. 최신 버전이 있는 경우 클라이언트는 데이터를 보호하는 HTTPS 링크를 사용하여 최신 버전을 다운로드합니다. 
 
-Azure Information Protection 정책이 업데이트되었을 때 응용 프로그램이 이미 로드된 경우 응용 프로그램을 닫았다가 다시 열어야 최신 버전의 정책을 가져오게 됩니다.
+새 Azure Information Protection 정책을 게시할 때 Office 응용 프로그램의 여러 인스턴스가 로드되는 경우 모든 인스턴스를 닫아 최신 버전의 정책을 가져와야 합니다. 예를 들어 Word 문서 두 개가 열려 있는 경우 하나의 문서에서만 업데이트된 Azure Information Protection 정책을 테스트하려면 두 Word 문서를 모두 닫고 최신 정책을 사용할 문서를 다시 엽니다.
 
 ## Azure Information Protection을 사용하려면 파일을 어디에 저장하면 되나요? 
 
@@ -113,7 +109,7 @@ Azure 포털에서 "신용 카드 번호" 또는 "주민등록번호"와 같은 
 
 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)에서 이러한 예제를 확인할 수 있습니다. 
 
-분류의 정확도는 조건을 기반으로 하는 분류 규칙을 구성하는 방법에 따라 달라집니다. 현재 조건에서는 텍스트 패턴 및 정규식이 지원됩니다. 미리 보기에서 사용 가능한 각 옵션에 대한 설명과 테스트할 몇 가지 제안된 예제는 Yammer 게시물 [Description of content matching for our pre-define Information types](https://www.yammer.com/askipteam/#/Threads/show?threadId=737163344)(미리 정의된 정보 유형의 콘텐츠 일치에 대한 설명)를 참조하세요. 문서가 저장되거나 메일이 전송되면 검색이 실행됩니다.
+분류의 정확도는 조건을 기반으로 하는 분류 규칙을 구성하는 방법에 따라 달라집니다. 현재 조건에서는 텍스트 패턴 및 정규식이 지원됩니다. 테스트할 수 있는 제안된 몇 가지 예제와 함께 미리 보기에서 사용할 수 있는 각 옵션에 대한 설명은 [Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](configure-policy-classification.md)을 참조하세요. 문서가 저장되거나 메일이 전송되면 검색이 실행됩니다.
 
 최상의 사용자 환경과 비즈니스 연속성 보장을 위해 완전한 자동 작업보다는 사용자 권장 작업으로 시작하는 것이 좋습니다. 이렇게 하면 사용자가 레이블 지정 또는 보호 작업을 수락하거나 이러한 제안을 재정의할 수 있습니다.   
 
@@ -121,7 +117,7 @@ Azure 포털에서 "신용 카드 번호" 또는 "주민등록번호"와 같은 
 
 예. Azure 포털에서 **Select how this label is applied: automatically or recommended to user**(이 레이블 적용 방법 선택: 자동 또는 사용자에게 권장함) 옵션을 **Recommended**(권장)로 설정하여 자동 분류를 사용할지 사용자에게 권장할지를 구성할 수 있습니다.
 
-[Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)에서 이러한 예제를 확인할 수 있습니다.
+[Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)에서 이러한 예제를 확인할 수 있습니다.  
 
 ## 모든 문서를 강제로 분류할 수 있나요?
 
@@ -140,7 +136,7 @@ Azure 포털에서 "신용 카드 번호" 또는 "주민등록번호"와 같은 
 
 Azure 포털에서 지정한 분류 수준에 따라 자동으로 콘텐츠를 보호하는 Azure 권한 관리 템플릿을 선택할 수 있습니다.
 
-[Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)에서 이러한 예제를 확인할 수 있습니다.
+[Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)에서 이러한 예제를 확인할 수 있습니다. 자세한 내용은 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](configure-policy-protection.md)을 참조하세요.
 
 ## 파일 하나를 두 가지 분류로 분류할 수 있나요?
 
@@ -188,6 +184,6 @@ Azure Information Protection에 의해 분류된 파일과 메일은 Azure Infor
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

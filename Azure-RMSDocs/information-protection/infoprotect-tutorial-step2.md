@@ -3,26 +3,28 @@ title: "Azure Information Protection 빠른 시작 자습서 2단계 | Azure 권
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 2단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/22/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf9fe837c7bb268361b8004352192f0540604b9
-ms.openlocfilehash: af2f5eadf3a4993c590f72a8f44e4fea03982505
+ms.sourcegitcommit: cab45baf19af4ab548f5f112946d168d93a95d49
+ms.openlocfilehash: fa17a5b18162ca7ca1ac0cf9a1052dd01d2057aa
 
 
 ---
 
 # 2단계: Azure Information Protection 정책 구성 및 게시
 
-*적용 대상: Azure Information Protection 미리 보기*
+>*적용 대상: Azure Information Protection 미리 보기*
+
+**[ 이 정보는 임시로 제공되며 변경될 수 있습니다. ]**
 
 Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책과 함께 제공되지만, 해당 정책을 살펴보고 몇 가지를 변경합니다.
 
-1. Azure Information Protection의 이 특별 링크(https://portal.azure.com/?microsoft_azure_informationprotection=true)를 사용하여 Azure 포털에 로그인합니다.
+1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
  
 2. 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
@@ -44,20 +46,22 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 2. **Label: Confidential**(레이블: 기밀) 블레이드에 이제 각 레이블에 사용할 수 있는 설정이 표시됩니다. 다음과 같이 변경합니다.
 
-    a. Azure 권한 관리를 활성화한 경우 **문서와 레이블이 포함된 메일을 보호하기 위한 RMS 설정 템플릿에 대해**: **Azure RMS**가 선택되어 있는지 확인하고, 드롭다운 상자를 클릭한 뒤 기본 템플릿인 **\<조직 이름 >-기밀**을 선택합니다. 예를 들어 경우 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - Confidential**(기밀)이 표시되고 이를 선택합니다. 이 기본 Azure 권한 관리 템플릿을 사용하지 않도록 설정한 경우 대체 템플릿을 선택합니다. 그러나 부서별 템플릿을 선택하는 경우 계정이 범위에 포함되는지 확인합니다.
-
+    a. Azure Rights Management를 활성화한 경우: **Set RMS template for protecting documents and emails containing this label**(이 레이블을 포함하는 문서 및 전자 메일을 보호하도록 RMS 템플릿 설정) 섹션에서 **Select RMS template from**(RMS 템플릿 선택)이 표시된 경우 기본값 **Azure RMS**를 그대로 유지합니다. 그런 다음 **Select RMS template**(RMS 템플릿 선택)에서 드롭다운 상자를 클릭하고 기본 템플릿 **\<조직 이름> - Confidential**(기밀)을 선택합니다. 예를 들어 경우 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - Confidential**(기밀)이 표시되고 이를 선택합니다. 이 기본 Azure 권한 관리 템플릿을 사용하지 않도록 설정한 경우 대체 템플릿을 선택합니다. 그러나 부서별 템플릿을 선택하는 경우 계정이 범위에 포함되는지 확인합니다.
+    
     Azure 권한 관리를 활성화하지 않은 경우 이 옵션을 사용할 수 없습니다.
-
+    
     b. **Documents with this label have a watermark**(이 레이블이 있는 문서는 워터마크를 포함함): **On**(켜기)을 클릭하고 **Text**(텍스트) 상자에 조직 이름을 입력합니다. 예를 들어 **VanArsdel, Ltd**를 입력합니다. 
-
+    
     c. **Add a new condition**(새 조건 추가)을 클릭하고 **Condition**(조건) 블레이드에서 다음을 선택합니다.
-
+    
     - **Choose the type of condition**(조건 유형 선택): **Built-in**(기본 제공)
-
+    
     - **Select built-in**(기본 제공 선택): **Credit Card Number**(신용 카드 번호)
-
+    
     - **Minimum number of occurrences**(최소 발생 횟수): **1**
-
+    
+    - **Count occurrences with unique values only**(고유 값이 있는 발생만 계산): **On**(켜기)
+    
     - **Save**(저장)를 클릭하여 **Label: Confidential**(레이블: 기밀) 블레이드로 돌아갑니다.
 
 3. **Label: Confidential**(레이블: 기밀) 블레이드에 **Credit Card Number**(신용 카드 번호)가 **CONDITION NAME**(조건 이름)으로 표시되고 **OCCURRENCES**(발생 횟수)는 **1**로 표시됩니다.
@@ -76,12 +80,16 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 기본 정책을 살펴보고 몇 가지를 변경했으므로 다음 단계는 Azure Information Protection 클라이언트를 설치하는 것입니다.
 
+|자세한 정보가 필요한 경우|추가 정보|
+|--------------------------------|--------------------------|
+|정책에 대한 구성 옵션 정보|[Azure Information Protection 정책 구성](configure-policy.md)|
+
 
 >[!div class="step-by-step"]
 [&#171; 1단계](infoprotect-tutorial-step1.md)
 [3단계 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

@@ -3,22 +3,24 @@ title: "Azure Information Protection 빠른 시작 자습서 3단계 | Azure 권
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 3단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 7f85c673cd1e8055d6a27dcc49b5da18a7e12f98
-ms.openlocfilehash: 41ebf56c55d94e9aecf9538d474c8fa2c77ae83e
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
 
 
 ---
 
 # 3단계: Azure Information Protection 클라이언트 설치 
 
-*적용 대상: Azure Information Protection 미리 보기*
+>*적용 대상: Azure Information Protection 미리 보기*
+
+**[ 이 정보는 임시로 제공되며 변경될 수 있습니다. ]**
 
 이 단계에서는 방금 구성한 정책이 Windows PC에 다운로드되고 Office 응용 프로그램에 레이블이 표시되도록 Azure Information Protection 클라이언트를 설치합니다. 
 
@@ -41,11 +43,16 @@ ms.openlocfilehash: 41ebf56c55d94e9aecf9538d474c8fa2c77ae83e
 
 이제 마지막 단계인 실제 분류, 레이블 지정 및 보호 작동 방식을 확인할 준비가 되었습니다.
 
+|자세한 정보가 필요한 경우|추가 정보|
+|--------------------------------|--------------------------|
+|클라이언트 설치 정보|[Azure Information Protection 클라이언트 설치](info-protect-client.md)|
+
+
 >[!div class="step-by-step"]
 [&#171; 2단계](infoprotect-tutorial-step2.md)
 [4단계 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

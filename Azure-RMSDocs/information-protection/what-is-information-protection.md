@@ -3,22 +3,24 @@ title: "Azure Information Protection이란? | Azure 권한 관리"
 description: "현재 미리 보기로 제공되는 Azure Information Protection 서비스의 개요"
 author: cabailey
 manager: mbaldwin
-ms.date: 07/14/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 0db303b01361b3220c2e9334f84594ac86c5b069
-ms.openlocfilehash: bfb56fd4994a358d366d94b40f6c5fc889330303
+ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
+ms.openlocfilehash: d3d63a778bff62649341227b65212722e285a6be
 
 
 ---
 
 # Azure Information Protection(미리 보기)이란?
 
-*적용 대상: Azure Information Protection 미리 보기*
+>*적용 대상: Azure Information Protection 미리 보기*
+
+**[ 이 정보는 임시로 제공되며 변경될 수 있습니다. ]**
 
 Azure Information Protection을 사용하여 문서와 메일을 분류하고 레이블을 지정하며 보호할 수 있습니다. 이 데이터를 분류하면 데이터가 저장된 위치나 데이터를 공유한 사용자가 누구인지와 관계없이 항상 분류를 식별할 수 있도록 영구 레이블이 데이터에 추가됩니다. 영구 레이블로는 머리글, 바닥글, 워터마크 등의 시각적 표시가 있습니다. 가장 중요한 데이터의 경우 Azure 권한 관리 암호화, ID 및 권한 부여 정책도 사용하여 데이터 손실을 방지할 수 있습니다. 
 
@@ -42,6 +44,6 @@ Azure Information Protection을 사용하여 문서와 메일을 분류하고 �
 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 통해 간단한 4단계로 Azure Information Protection을 시작하세요.
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO5-->
 
 

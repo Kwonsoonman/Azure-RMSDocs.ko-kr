@@ -3,15 +3,15 @@ title: "Azure Information Protection 빠른 시작 자습서 3단계 | Azure 권
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 3단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
+ms.sourcegitcommit: 264f2be6c62dc7fa670171493941332fe7ff20e5
+ms.openlocfilehash: 42649148e58a8ea1baab6317d181c24e6a21d709
 
 
 ---
@@ -37,9 +37,8 @@ ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
         **보호** > **도움말 및 피드백**을 클릭하고 **Microsoft Azure Information Protection** 대화 상자에서 클라이언트 상태를 확인합니다. **Information Protection policy is installed**(Information Protection 정책이 설치됨)와 최근 연결 시간이 표시되어야 합니다. 표시된 사용자 이름이 테넌트에 대해 올바른지 확인합니다.
 
     - 리본 아래에 새로운 표시줄인 Information Protection 표시줄이 표시됩니다. 제목 **Sensitivity**(민감도)와 구성한 기본 레이블 **Internal**(내부)이 표시됩니다. 
-
-
-![Azure Information Protection 빠른 시작 자습서 3단계 - 클라이언트 설치됨](../media/word2013-callouts.png)
+    
+        ![Azure Information Protection 빠른 시작 자습서 3단계 - 클라이언트 설치됨](../media/word2013-callouts2.png)
 
 이제 마지막 단계인 실제 분류, 레이블 지정 및 보호 작동 방식을 확인할 준비가 되었습니다.
 
@@ -53,6 +52,6 @@ ms.openlocfilehash: 65596a71b07e830377c55dc04b7187251315a634
 [4단계 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

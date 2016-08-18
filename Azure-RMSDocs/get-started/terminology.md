@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/10/2016
 ms.topic: get-started-article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e9551db57cc1295f20368535267ca5a901ae9f2
-ms.openlocfilehash: a95b9679578f6786bd883884cd5c5f84cb6db739
+ms.sourcegitcommit: 75f868c4428e7b434e6a115a3e70508c3ff7f93d
+ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
 
 
 ---
@@ -32,10 +32,10 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 |Active Directory Rights Management Services|흔히 약어로 *AD RMS*라고 합니다.<br /><br />암호화 및 정책을 사용하여 정보 보호를 제공함으로써 문서, 파일 및 메일을 보호하는 Windows Server 역할입니다.|
 |AD RMS|*Active Directory Rights Management Services*를 참조하세요.|
 |Azure Information Protection|현재 미리 보기로 제공되며, 분류, 레이블 지정 및 보호를 사용하여 문서와 메일을 보호하는 서비스입니다. Azure 권한 관리에서는 암호화, ID 및 권한 부여 정책을 사용하여 보호를 제공합니다.|
-|Azure  권한 관리|흔히 약어로 *Azure RMS*라고 합니다.<br /><br />암호화 및 정책을 사용하여 정보 보호를 제공함으로써 문서, 파일 및 전자 메일을 보호하는 Azure 서비스입니다.  *Azure 권한 관리 서비스*라고도 합니다. 이전 이름은 다음과 같습니다.<br /><br />*Microsoft Azure Active Directory Rights Management*: 흔히 약어로 Microsoft Azure AD Rights Management Service라고 합니다.<br /><br />*RMS Online*: 원래 제안된 이름으로, 간혹 오류 메시지와 로그 파일 항목에 표시될 수 있습니다.|
+|Azure Rights Management|흔히 약어로 *Azure RMS*라고 합니다.<br /><br />암호화 및 정책을 사용하여 정보 보호를 제공함으로써 문서, 파일 및 전자 메일을 보호하는 Azure 서비스입니다.  *Azure 권한 관리 서비스*라고도 합니다. 이전 이름은 다음과 같습니다.<br /><br />- *Microsoft Azure Active Directory Rights Management*: 흔히 약어로 Microsoft Azure AD Rights Management Service라고 합니다.<br /><br />- *RMS Online*: 원래 제안된 이름으로, 간혹 오류 메시지와 로그 파일 항목에 표시될 수 있습니다.|
 |Azure RMS|*Azure 권한 관리*를 참조하세요.|
 |BYOK|*Bring Your Own Key*를 참조하세요.|
-|Bring Your Own Key|흔히 약어로 *BYOK*라고 합니다.<br /><br />[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]의 고유 테넌트 키를 생성 및 관리하려는 조직에서 선택하는 구성 옵션입니다.|
+|Bring Your Own Key|흔히 약어로 *BYOK*라고 합니다.<br /><br />[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]의 고유 테넌트 키를 생성 및 관리하려는 조직에서 선택하는 구성 및 토폴로지 옵션입니다.|
 |콘텐츠 키|RMS 지원 응용 프로그램이 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]로 보호되는 각 문서 또는 메일에 대해 만드는 고유 키로서 정보 공개 위험을 제한하는 데 도움이 됩니다.|
 |사용|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]로 보호되는 파일을 읽기 위해 잠금 해제하거나 사용합니다.|
 |비활성화|조직이 더 이상 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용할 수 없도록 권한 관리 서비스가 사용되지 않게 합니다.|
@@ -44,6 +44,8 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 |엔터프라이즈 권한 관리|일반적으로 조직이 암호화 및 정책 권한 부여 도구를 조합하여 중요한 정보를 보호할 수 있게 해주는 제품과 솔루션을 설명하는 데 사용되는 업계 표준의 일반 용어입니다. Microsoft Rights Management는 ERM(엔터프라이즈 권한 관리) 솔루션의 한 가지 예입니다.|
 |ERM|*엔터프라이즈 권한 관리*를 참조하세요.|
 |일반 보호|모든 파일 형식을 암호화하고 권한 없는 사용자가 파일을 열지 못하도록 하는 보호 수준입니다. 파일이 열리고 나면 이제 파일의 암호가 해제되어 기본적으로 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 지원하지 않는 응용 프로그램에서 파일을 사용할 수 있습니다.|
+|HYOK|*Hold Your Own Key*를 참조하세요.|
+|Hold Your Own Key|흔히 약어로 *HYOK*라고 합니다.<br /><br />일반적으로 규정 또는 준수 때문에 온-프레미스에서 고유한 키를 생성 및 저장하려는 조직을 위한 구성 및 토폴로지 옵션입니다.|
 |정보 보호|경우에 따라 약어로 *IP*라고 합니다.<br /><br />무단 액세스로부터 데이터와 파일을 보호하는 것을 지칭하는 업계 표준의 일반 용어로서, 메일 또는 문서 공유를 통해 데이터와 파일이 조직 경계를 벗어난 후에도 해당합니다. Microsoft Rights Management는 IP(정보 보호) 솔루션의 한 가지 예입니다.|
 |정보 권한 관리|흔히 약어로 *IRM*이라고 합니다.<br /><br />Office 서비스(예: Exchange Server, Word 및 SharePoint Online)와 함께 권한 관리를 지원하는 기능을 설명하는 데 사용되는 용어입니다.|
 |IRM|*정보 권한 관리*를 참조하세요.|
@@ -72,6 +74,6 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

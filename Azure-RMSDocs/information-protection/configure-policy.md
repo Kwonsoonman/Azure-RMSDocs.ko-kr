@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/22/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: d4b0685176407fe3a0ff14408a1381e960033afe
+ms.sourcegitcommit: 781632c5a28377339431cd6537b1b9e11d0a3259
+ms.openlocfilehash: 0e31053a83c30d8552cfb78914d0d13baac25f42
 
 
 ---
@@ -31,7 +31,7 @@ Azure Information Protection의 미리 보기 릴리스에서 Azure Information 
 
 1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
 
-2. 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information Protection**을 입력하기 시작합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
+2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
 
     그러면 다음 요소를 포함하여 Azure Information Protection 정책을 구성할 수 있는 **Azure Information Protection** 블레이드가 표시됩니다.
 
@@ -81,6 +81,6 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

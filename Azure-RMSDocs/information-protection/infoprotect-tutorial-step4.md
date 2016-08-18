@@ -3,15 +3,15 @@ title: "Azure Information Protection 빠른 시작 자습서 4단계 | Azure 권
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 4단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: a36433167462275e91059f9eb3a2141ffa2797d5
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 ### 수동으로 기본 레이블을 변경하려면:
 
-- Information Protection 표시줄에서 **Internal**(내부) 옆에 있는 Edit label(레이블 편집) 아이콘을 클릭합니다. 사용 가능한 레이블이 표시됩니다. **Personal**(비공개)을 선택합니다. 그러면 분류 수준을 낮추는 이유를 선택하는 메시지가 표시됩니다. **This file no longer requires that classification**(이 파일에 더 이상 해당 분류가 필요하지 않음)을 선택하고 **Confirm**(확인)을 클릭합니다.  
+- Information Protection 표시줄에서 **Personal**(비공개) 레이블을 선택합니다. 그러면 분류 수준을 낮추는 이유를 선택하는 메시지가 표시됩니다. **This file no longer requires that classification**(이 파일에 더 이상 해당 분류가 필요하지 않음)을 선택하고 **Confirm**(확인)을 클릭합니다.  
 
     **Sensitivity**(민감도) 값이 **Personal**(비공개)로 변경되는 것을 확인할 수 있습니다.
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: cdd8dee1837c34caaeb0f8a1947dea37504e422a
 
 ### 분류를 완전히 제거하려면:
 
-- Information Protection 표시줄에서 **Personal**(비공개) 옆에 있는 Edit label(레이블 편집) 아이콘을 클릭합니다. 사용 가능한 레이블이 표시됩니다. 그러나 이번에는 레이블 중 하나를 선택하는 대신 Remove label(레이블 제거) 아이콘을 클릭합니다. **OK**(확인)를 클릭하여 확인하고 이 작업에 대한 근거를 제공합니다.  
+- Information Protection 표시줄에서 **Personal(비공개)** 옆에 있는 **Edit label(레이블 편집)** 아이콘을 클릭합니다. 사용 가능한 레이블이 표시됩니다. 그러나 이번에는 레이블 중 하나를 선택하는 대신 **Remove label(레이블 제거)** 아이콘을 클릭합니다. **OK**(확인)를 클릭하여 확인하고 이 작업에 대한 근거를 제공합니다.  
 
     **Sensitivity**(민감도) 값에 **Not set**(설정 안 함)이 표시되며, 이는 기본 레이블을 설정하지 않은 경우 사용자에게 처음에 표시되는 내용입니다.
 
@@ -77,6 +77,6 @@ Azure 포털에서 Information Protection 정책에 대한 설정을 변경할 �
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

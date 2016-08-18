@@ -3,15 +3,15 @@ title: "Azure Information Protection에 대한 자동 및 권장 분류 조건�
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 80c201dcf316a5aa5e123645d47c6741f8b61f05
 
 
 ---
@@ -49,15 +49,15 @@ ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
 
 ## 레이블에 대한 권장 또는 자동 분류를 구성하려면
 
-1. Azure Information Protection의 이 특별 링크(https://portal.azure.com/?microsoft_azure_informationprotection=true)를 사용하여 Azure 포털에 로그인합니다.
- 
-2. 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+1. 아직 로그인하지 않은 경우 [Azure 포털](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+    
+    예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-3. **Azure Information Protection** 블레이드에서 자동 또는 권장 분류에 대해 구성할 레이블을 선택합니다.
+2. **Azure Information Protection** 블레이드에서 자동 또는 권장 분류에 대해 구성할 레이블을 선택합니다.
 
-4. **레이블** 블레이드의 **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션에서 **Add a new condition**(새 조건 추가)을 클릭합니다.
+3. **레이블** 블레이드의 **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션에서 **Add a new condition**(새 조건 추가)을 클릭합니다.
 
-5. **Condition**(조건) 블레이드에서 미리 정의된 조건을 사용하려면 **Built-in**(기본 제공)을 선택하고, 사용자 고유의 조건을 지정하려면 **Custom**(사용자 지정)을 선택한 다음 **Save**(저장)를 클릭합니다.
+4. **Condition**(조건) 블레이드에서 미리 정의된 조건을 사용하려면 **Built-in**(기본 제공)을 선택하고, 사용자 고유의 조건을 지정하려면 **Custom**(사용자 지정)을 선택한 다음 **Save**(저장)를 클릭합니다.
 
     - **Built-in**(기본 제공)의 경우: 사용 가능한 조건 목록에서 선택한 다음 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 선택합니다.
         
@@ -67,13 +67,13 @@ ms.openlocfilehash: 9da6bf3687242793002976c3514bda068effd8d7
         
     **발생 옵션의 예**: 기본 제공 주민등록번호 옵션을 선택하고 최소 발생 횟수를 2로 설정하면 문서에 동일한 주민등록번호가 두 번 나열됩니다. **Count occurrences with unique values only**(고유 값이 있는 발생만 계산)를 **On**(켜기)으로 설정한 경우에는 조건을 충족하지 않으며 이 옵션을 **Off**(끄기)로 설정한 경우에는 조건을 충족합니다.
 
-6. **Label**(레이블) 블레이드에서 다음을 구성하고 **Save**(저장)를 클릭합니다.
+5. **Label**(레이블) 블레이드에서 다음을 구성하고 **Save**(저장)를 클릭합니다.
 
     - 자동 또는 권장 분류를 선택합니다. **Select how this label is applied: automatically or recommended to user**(이 레이블이 적용되는 방식 선택: 자동 또는 사용자에게 권장)에서 **Automatic**(자동) 또는 **Recommended**(권장)를 선택합니다.
 
     - 사용자 프롬프트 또는 정책 팁에 대한 텍스트를 지정합니다. 기본 텍스트를 유지하거나 사용자 고유의 문자열을 지정할 수 있습니다.
 
-7. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
+6. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
 ## 기본 제공 조건에 대한 정보
 
@@ -225,6 +225,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

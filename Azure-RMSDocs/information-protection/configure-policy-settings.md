@@ -3,15 +3,15 @@ title: "Azure Information Protection에 대한 전역 정책 설정을 구성하
 description: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/08/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 3b22cf76f03a4d36281db7e705359402dcbbde0e
+ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
+ms.openlocfilehash: 508161474bf6fd7406668de3976206947de254de
 
 
 ---
@@ -29,11 +29,11 @@ Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 
 
 이러한 설정을 구성하려면
 
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
- 
-2. 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+1. 아직 로그인하지 않은 경우 [Azure 포털](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+    
+    예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-3. **Azure Information Protection** 블레이드에서 다음 전역 설정을 구성합니다.
+2. **Azure Information Protection** 블레이드에서 다음 전역 설정을 구성합니다.
 
     - **All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함):이 옵션을 **On**(켜기)으로 설정하면 저장되는 모든 문서 및 전송되는 모든 전자 메일에 레이블이 적용되어야 합니다. 레이블 지정은 사용자에 의해 수동으로 할당되거나, [조건](configure-policy-classification.md)의 결과로 자동으로 할당되거나, 기본적으로 할당(**Select the default label**(기본 레이블 선택) 옵션을 설정하여)될 수 있습니다. 
 
@@ -49,9 +49,9 @@ Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 
 
     이 옵션은 하위 레이블에 적용되지 않습니다.
 
-4. 변경 내용을 저장하려면 **Save**(저장)를 클릭합니다.
+3. 변경 내용을 저장하려면 **Save**(저장)를 클릭합니다.
 
-5. 변경 내용을 사용자에게 제공하려면 **Publish**(게시)를 클릭합니다.
+4. 변경 내용을 사용자에게 제공하려면 **Publish**(게시)를 클릭합니다.
 
 ## 다음 단계
 
@@ -68,6 +68,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

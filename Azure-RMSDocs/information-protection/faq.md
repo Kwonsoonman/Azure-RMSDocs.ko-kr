@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 93444affe94b280db2c9e4e2960c6902e491dec6
-ms.openlocfilehash: 7d5b58efb4b789ba4f3d897ae3a475cbd2c679e5
+ms.sourcegitcommit: d17bacf8e148622db0e2393f40d3fd37c8f086eb
+ms.openlocfilehash: c61e299cac50069afc119d37fd461cda88a2afd3
 
 
 ---
@@ -39,11 +39,11 @@ Azure Information Protection의 미리 보기 릴리스에 대한 질문이 있�
 
 미리 보기를 통해 새로운 **Premium P2 서비스 계획**과 자동 및 권장 레이블 지정과 같은 몇 가지 고급 기능(일반 공급 시 현재 계획에서는 사용하지 못할 수도 있음)을 사용해 볼 수 있습니다. 다양한 서비스 계획(Azure Information Protection Premium P1 및 Azure Information Protection Premium P2)에 대한 자세한 내용은 블로그 게시물 [Introducing Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/07/introducing-enterprise-mobility-security/)(Enterprise Mobility + 보안 소개)를 참조하세요.
 
-이 미리 보기 릴리스에는 다음과 같은 제한 사항이 있습니다. 추가 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요.
+이 미리 보기 릴리스에는 다음과 같은 제한 사항이 있습니다. 추가 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)(Enterprise Mobility 및 보안 블로그) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요.
 
 - 분류 및 레이블 지정을 위한 중앙 집중식 로깅은 없습니다.
 
-- 레이블 이름 및 도구 설명은 영어로만 지원됩니다.
+- 레이블 이름 및 도구 설명은 하나의 언어로만 지원됩니다.
 
 - 자동 분류에 대한 조건은 구 또는 패턴이어야 합니다.
 
@@ -61,11 +61,11 @@ Azure Information Protection의 미리 보기 릴리스에 대한 질문이 있�
 
 Azure 포털에서 Azure Information Protection 정책을 구성하려면 Azure 구독이 있어야 합니다. 조직에서 아직 Azure를 구독하지 않은 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. [Azure 시작](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따르세요.
 
-구독 요구 사항에 대한 모든 변경 내용은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)에 공지됩니다.
+구독 요구 사항에 대한 모든 변경 내용은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)(Enterprise Mobility 및 보안 블로그)에 공지됩니다.
 
 ## Azure Information Protection 미리 보기를 사용하려면 전역 관리자여야 하나요?
 
-미리 보기 릴리스의 경우에 한해, Azure에 의해 인증된 모든 사용자는 Azure 포털에서 테넌트의 Azure Information Protection 정책을 확인하고 구성할 수 있습니다.
+미리 보기 릴리스의 경우에 한해, Azure에 의해 인증된 모든 사용자는 Azure 포털에서 분류 및 레이블 지정에 대한 테넌트의 Azure Information Protection 정책을 확인하고 구성할 수 있습니다. 그러나 Azure 권한 관리 템플릿을 적용하도록 레이블을 구성하려면 Azure Active Directory에 대한 전역 관리자로 로그인해야 합니다.
 
 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 미리 보기를 사용하기 위해 포털에 로그인할 필요조차 없습니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure 포털에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
 
@@ -74,7 +74,7 @@ Azure 포털에서 Azure Information Protection 정책을 구성하려면 Azure 
 
 ## Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 
-Azure Information Protection은 클라우드 기반 솔루션입니다. 하이브리드 시나리오에 관심이 있는 경우 Information Protection 팀에 문의하거나, askipteam@microsoft.com으로 메일을 보내세요.
+Azure Information Protection은 클라우드 기반 솔루션입니다. 하이브리드 시나리오에 대한 Azure Information Protection 배포에 관심이 있는 경우 Information Protection 팀에 문의하거나, askipteam@microsoft.com으로 메일을 보내세요.
 
 ## Azure Information Protection에서는 어떤 클라이언트 플랫폼과 응용 프로그램이 지원되나요?
 
@@ -150,7 +150,11 @@ Azure Information Protection에서는 일반 텍스트 레이블을 포함하는
 
 ## 문서 추적 및 취소는 Azure Information Protection에 대해 어떻게 작동하나요?
 
-Azure Information Protection을 사용하여 분류하고 보호하는 파일에 대한 문서 추적은 현재 Azure 권한 관리에 대해서와 동일하게 작동합니다. 자세한 내용은 [RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)를 참조하세요.
+Azure Information Protection을 사용하여 분류하고 보호하는 파일에 대한 문서 추적은 현재 Azure 권한 관리 및 RMS 공유 응용 프로그램에 대해서와 동일하게 작동합니다. Azure Information Protection 클라이언트(버전 1.0.233 이상)를 사용하여 문서 추적 사이트에 액세스할 수도 있습니다. 
+
+- Office 응용 프로그램의 **홈** 탭, **보호** 그룹에서 **보호** > **사용 현황 추적**을 클릭합니다. 
+
+자세한 내용은 [RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)를 참조하세요.
 
 ## 구성한 정책을 Azure Information Protection에서는 어떻게 적용하나요?
 
@@ -184,6 +188,6 @@ Azure Information Protection에 의해 분류된 파일과 메일은 Azure Infor
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO2-->
 
 

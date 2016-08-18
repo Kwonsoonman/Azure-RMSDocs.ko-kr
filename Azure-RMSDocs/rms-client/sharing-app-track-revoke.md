@@ -4,7 +4,7 @@ description:
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: azure
 ms.service: rights-management
@@ -13,8 +13,8 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 406214d90b509bd391cc12ff9033bd07d08300c9
+ms.sourcegitcommit: e9ad2e518b4a7dac608572eb5eb2d99bbda4754e
+ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
 
 
 ---
@@ -33,9 +33,11 @@ ms.openlocfilehash: 406214d90b509bd391cc12ff9033bd07d08300c9
 
 -   문서 공유를 중지해야 하는 경우 **허용 취소**를 클릭하고 문서를 계속 사용할 수 있는 기간을 확인한 다음, 이전에 공유했던 문서에 대한 액세스를 취소함을 사용자에게 알릴지와 사용자 지정된 메시지를 제공할지 여부를 결정합니다. 문서를 해지하는 경우 공유한 문서가 삭제되지는 않지만, 권한 있는 사용자가 이 문서를 더 이상 열 수 없게 됩니다.
 
--   Excel로 내보내려는 경우 **Excel에서 열기**를 클릭합니다. 그러면 데이터를 수정하고 보기와 그래프를 직접 만들 수 있습니다.
+-   Excel로 내보내려는 경우 **CSV로 내보내기**를 클릭합니다. 그러면 데이터를 수정하고 보기와 그래프를 직접 만들 수 있습니다.
 
 -   전자 메일 알림을 구성하려는 경우 **설정** 을 클릭하고 문서 액세스 시 전자 메일로 알림을 받을지 여부와 해당 방법을 선택합니다.
+
+- 다른 사용자에 대한 공유 문서를 추적 및 취소하려는 경우: Azure RMS의 관리자는 관리 아이콘을 클릭하여 다른 사용자에 대한 문서를 추적 및 취소할 수 있습니다. 이 아이콘은 관리자에게만 표시됩니다.
 
 -   문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [문서 추적 FAQ](http://go.microsoft.com/fwlink/?LinkId=523977)에 액세스합니다.
 
@@ -50,6 +52,11 @@ ms.openlocfilehash: 406214d90b509bd391cc12ff9033bd07d08300c9
     ![RMS 공유 응용 프로그램을 사용하는 경우 Outlook에서 사용 추적 선택 ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
 이러한 RMS 옵션이 표시되지 않으면 RMS 공유 응용 프로그램이 컴퓨터에 설치되어 있지 않거나, 최신 버전을 설치하지 않았거나, 컴퓨터를 다시 시작하여 설치를 완료해야 하는 것일 수 있습니다. 공유 응용 프로그램을 설치하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md)를 참조하세요.
+
+> [!NOTE] 
+> [Azure Information Protection 클라이언트](../information-protection/info-protect-client.md) 버전 1.0.233의 미리 보기 버전을 설치한 경우 **보호** 단추를 사용하여 문서 추적 사이트에 액세스할 수도 있습니다. 
+> 
+> - Office 응용 프로그램의 **홈** 탭, **보호** 그룹에서 **보호** > **사용 현황 추적**을 클릭합니다. 
 
 ### 문서를 추적 및 취소하는 다른 방법
 Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추적할 수 있을 뿐 아니라 다음과 같은 대체 방법을 사용할 수도 있습니다.
@@ -100,6 +107,6 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO2-->
 
 

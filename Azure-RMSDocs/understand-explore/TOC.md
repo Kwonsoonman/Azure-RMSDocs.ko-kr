@@ -1,0 +1,28 @@
+# [이해 및 탐색](azure-rights-management.md)
+## [개요](azure-rights-management.md)
+### [또한 다음이라고 알려집니다.](azure-rms-aka.md)
+## [Azure 권한 관리란?](what-is-azure-rms.md)
+### [해결할 수 있는 문제](azure-rms-problems-it-solves.md)
+### [관리자와 사용자에게 표시되는 내용](what-admins-users-see.md)
+### [트래픽 관리자의 작동 방식](how-does-it-work.md)
+## [개인용 RMS 및 Azure RMS](rms-for-individuals.md)
+### [개인용 RMS 등록 방법](rms-for-individuals-user-sign-up.md)
+### [개인용 RMS용으로 만들어진 계정 제어](rms-for-individuals-take-control.md)
+### [사용자가 개인용 RMS에 등록했는지 확인](rms-for-individuals-identify-sign-up.md)
+## [응용 프로그램이 Azure RMS를 지원하는 방식](applications-support.md)
+### [Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램](sharing-app-support.md)
+### [Office 응용 프로그램 및 서비스](office-apps-services-support.md)
+### [Windows Server를 실행하고 파일 분류 인프라를 사용하는 파일 서버](file-server-support.md)
+### [RMS API를 지원하는 기타 응용 프로그램](api-support.md)
+## [Azure RMS와 AD RMS 비교](compare-azure-rms-ad-rms.md)
+# [시작](/rights-management/get-started/requirements-azure-rms)
+# [계획 및 디자인](/rights-management/plan-design/deployment-roadmap)
+# [서비스 배포 및 사용](/rights-management/deploy-use/activate-service)
+# [클라이언트 배포 및 사용](/rights-management/rms-client/use-client)
+# [앱 개발 및 사용자 지정](/rights-management/develop/developers-guide)
+# [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
+
+
+<!--HONumber=Jul16_HO3-->
+
+

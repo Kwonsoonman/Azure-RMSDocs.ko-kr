@@ -12,9 +12,6 @@
 ### [마이그레이션 후 작업](migrate-from-ad-rms-phase4.md)
 ## [테넌트 키 계획 및 구현](plan-implement-tenant-key.md)
 ### [BYOK 가격 및 제한 사항](byok-price-restrictions.md)
-### [Thales HSM 정보](thales-hsm.md)
-### [인터넷을 통해 생성 및 전송하는 경우](generate-tenant-key-internet.md)
-### [직접 생성 및 전송하는 경우](generate-tenant-key-in-person.md)
 ## [Azure RMS 준비](prepare.md)
 # [서비스 배포 및 사용](/rights-management/deploy-use/activate-service)
 # [클라이언트 배포 및 사용](/rights-management/rms-client/use-client)
@@ -22,6 +19,6 @@
 # [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -1,17 +1,16 @@
 ---
 title: "HYOK 제한 | Azure 권한 관리"
-description: 
-author: cabailey
+description: "가장 중요한 문서와 메일을 보호하는 경우 일반적으로 Azure 권한 관리 보호를 적용하여 다음을 활용합니다."
 manager: mbaldwin
-ms.date: 08/11/2016
+ms.date: 08/18/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: cfab76a97034b58eec8dfdbdc82cc1037a647d11
-ms.openlocfilehash: 95f64c00c28fb52a0bd7d78a997705f7ed515557
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: cb12abb4dfe96135317facf4284c0eae7ef38196
 
 
 ---
@@ -51,9 +50,13 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
 
 - AD RMS 구성:
     
+    - 최소 버전의 Windows Server 2012 R2: 프로덕션 환경에 대해 필요하지만 테스트 및 평가용으로는 최소 버전의 Windows Server 2008 R2 서비스 팩 1을 사용할 수 있습니다.
+    
     - 단일 AD RMS 루트 클러스터.
     
-    - [암호화 모드 2](https://technet.microsoft.com/library/hh867439.aspx).
+    - [암호화 모드 2](https://technet.microsoft.com/library/hh867439.aspx): [RMS 분석기 도구](https://www.microsoft.com/en-us/download/details.aspx?id=46437)를 사용하여 AD RMS 클러스터의 암호화 모드의 버전 및 전반적인 상태를 확인할 수 있습니다.   
+    
+    - AD RMS 서버는 연결 중인 클라이언트에서 신뢰할 수 있는 유효한 x.509 인증서와 SSL/TLS를 사용하도록 구성되어 있습니다. 프로덕션 환경에 필요하지만 테스트 또는 평가용으로는 필요하지 않습니다.
     
     - 구성된 권한 템플릿.
 
@@ -66,7 +69,9 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
 - [Azure Information Protection 클라이언트](info-protect-client.md)가 버전 **1.0.233.0** 이상입니다.
 
 > [!IMPORTANT]
-> 이 시나리오에서 제공하는 높은 보증을 충족하려면 AD RMS 서버가 DMZ에 있지 않고 잘 관리된 컴퓨터에서만 사용하는 것이 좋습니다(예: 모바일 장치 또는 작업 그룹 컴퓨터 아님).
+> 이 시나리오에서 제공하는 높은 보증을 충족하려면 AD RMS 서버가 DMZ에 있지 않고 잘 관리된 컴퓨터에서만 사용하는 것이 좋습니다(예: 모바일 장치 또는 작업 그룹 컴퓨터 아님). 
+> 
+> 또한 AD RMS 배포가 위반되거나 손상되는 경우 SLC(서버 사용 허가자 인증서)의 개인 키가 노출되거나 도난당하지 않도록 AD RMS 클러스터에서 HSM(하드웨어 보안 모듈)을 사용하는 것이 좋습니다. 
 
 배포 정보 및 AD RMS에 대한 지침은 Windows Server 라이브러리에서 [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx)를 참조하세요. 
 
@@ -89,6 +94,6 @@ AD RMS 보호에 대한 레이블을 구성하려면 [Rights Management 보호�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

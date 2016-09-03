@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 공유 응용 프로그램 사용자 가이드 | Azure RMS"
-description: 
-keywords: 
+description: "Windows용 Microsoft RMS(Rights Management) 공유 응용 프로그램을 사용하면 중요한 문서와 사진을 보아서는 안 되는 사용자에게 전자 메일로 보내거나 다른 장치에 저장한 경우에도 해당 사용자로부터 안전하게 보관할 수 있습니다. 이 응용 프로그램을 사용하여 동일한 Rights Management 기술을 통해 다른 사용자가 보호한 파일을 열어서 사용할 수도 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 384a58f32aae8c7d908392e7fd9a1629bc05cdff
-ms.openlocfilehash: d3727eb963532e03137aea2140293fa9c5821db2
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 0e9ec1074f5305c12f436336520d7a6703ed0cfa
 
 
 ---
 
 # Rights Management 공유 응용 프로그램 사용자 가이드
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 Windows용 Microsoft Rights Management(RMS) 공유 응용 프로그램을 사용하면 중요한 문서와 사진을 전자 메일로 보내거나 다른 장치에 저장하는 경우에도 보아서는 안 되는 사용자로부터 안전하게 보관할 수 있습니다. 이 응용 프로그램을 사용하여 동일한 Rights Management 기술을 통해 다른 사용자가 보호한 파일을 열어서 사용할 수도 있습니다.
 
@@ -68,6 +67,6 @@ Windows 7 서비스 팩 1 이상을 실행하는 컴퓨터만 있으면 됩니�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

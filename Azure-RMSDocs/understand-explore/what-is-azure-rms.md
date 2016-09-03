@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리란? | Azure RMS"
-description: 
-keywords: 
+description: "Azure 권한 관리 (RMS Azure)는 오늘날의 어려운 작업 환경에서 데이터를 보호하려는 조직을 위한 정보 보호 솔루션입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2de70fcbe0b284368b1e52c34f42d1cf4554edd
-ms.openlocfilehash: 6fe5759a790a728da7a16453e5b3ab5d523bb9fd
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: f6f2b382766ea91ed463c18655efb07d206213af
 
 
 ---
 
 # Azure 권한 관리란?
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 Azure 권한 관리 (RMS Azure)는 오늘날의 어려운 작업 환경에서 데이터를 보호하려는 조직을 위한 정보 보호 솔루션입니다.
@@ -62,6 +61,6 @@ Azure RMS를 직접 사용해 보려는 경우에는 [Azure 권한 관리에 대
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

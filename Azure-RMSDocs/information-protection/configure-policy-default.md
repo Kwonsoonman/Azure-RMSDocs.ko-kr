@@ -1,17 +1,16 @@
 ---
 title: "기본 Azure Information Protection 정책 | Azure Rights Management"
-description: 
-author: cabailey
+description: "다음 정보를 사용하여 Azure Information Protection에 대한 기본 정책을 구성하는 방법을 이해할 수 있습니다. 기본 정책을 수정하는 경우 이러한 값을 참조하여 정책을 기본값으로 반환할 수 있습니다."
 manager: mbaldwin
 ms.date: 08/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: 0e02a3f78f1c5986d61f73e57265b944e9d03552
-ms.openlocfilehash: 4abce96c4e1215f92211a231a187bd2de4ad3845
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 89b7a8cb0ca893d4ce29540ef054e19409bd75eb
 
 
 ---
@@ -63,6 +62,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

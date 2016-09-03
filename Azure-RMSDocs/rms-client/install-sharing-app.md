@@ -1,37 +1,36 @@
 ---
 title: "Rights Management 공유 응용 프로그램 다운로드 및 설치 | Azure RMS"
-description: 
-keywords: 
+description: "로컬 관리자가 아니더라도 RMS 공유 응용 프로그램을 설치할 수 있습니다. 하지만 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우 몇 가지 제한 사항이 있습니다. 자세한 내용은 이 페이지의 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우 섹션을 참조하세요."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
 
 
 ---
 
 # Rights Management 공유 응용 프로그램 다운로드 및 설치 
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 로컬 관리자가 아니더라도 RMS 공유 응용 프로그램을 설치할 수 있습니다. 하지만 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우 몇 가지 제한 사항이 있습니다. 자세한 내용은 이 페이지에서 [로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우](#if-you-are-not-a-local-administrator-and-use-office-2010) 섹션을 참조하세요.
 
-## Rights Management 공유 응용 프로그램을 다운로드 및 설치하려면
+## Rights Management 공유 응용 프로그램을 다운로드하고 설치하려면
 
-1.  Microsoft 웹 사이트에서 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
+1.  Microsoft 웹 사이트의 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
 
 2.  **컴퓨터** 섹션에서 **Windows용 RMS 앱** 의 아이콘을 클릭하고 **Setup.exe** 파일을 저장하여 Microsoft Rights Management 공유 응용 프로그램을 설치합니다.
 
-3.  다운로드된 Setup.exe 파일을 두 번 클릭합니다. 설치를 계속할지 묻는 메시지가 표시되면 **예**를 클릭합니다.
+3.  다운로드된 Setup.exe 파일을 두 번 클릭합니다. 계속하라는 메시지가 표시되면 **예**를 클릭합니다.
 
 4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료될 때까지 기다립니다.
 
@@ -62,7 +61,7 @@ ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
@@ -70,6 +69,6 @@ ms.openlocfilehash: 5ec740b4de63c90c9713916dcf104316e727498b
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

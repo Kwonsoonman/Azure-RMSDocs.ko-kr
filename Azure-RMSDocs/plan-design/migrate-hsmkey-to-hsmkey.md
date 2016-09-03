@@ -1,64 +1,84 @@
 ---
 title: "2단계&colon; HSM 보호된 키-HSM 보호된 키 마이그레이션 | Azure RMS"
-description: 
-keywords: 
+description: "이 지침은 AD RMS에서 Azure 권한 관리로의 마이그레이션 경로에 포함되며, AD RMS 키가 HSM으로 보호되고 Azure 주요 자격 증명 모음의 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: 7b531ebba1923653cb37c70a02fa888a40e96528
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 690729d16358b7b997d9cd1fd8cabed22ce78df4
 
 
 ---
 
 # 2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
 
 
-이 지침은 [AD RMS에서 Azure 권한 관리로의 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 HSM으로 보호되고 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다. 
+이 지침은 [AD RMS에서 Azure 권한 관리로의 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 HSM으로 보호되고 Azure 주요 자격 증명 모음의 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다. 
 
 선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
 
 > [!NOTE]
-> 이러한 지침에서는 AD RMS 키가 모듈로 보호되어 있다고 가정합니다. 이것은 일반적인 경우입니다. AD RMS 키가 OCS로 보호되어 있는 경우 이러한 지침을 수행하기 전에 [AskIPTeam@microsoft.com](mailto: askipteam@microsoft.com?subject=AD%20RMS%20migration%20with%20OCS-protected%20key)에 문의하세요.
+> 이러한 지침에서는 AD RMS 키가 모듈로 보호되어 있다고 가정합니다. 이는 가장 일반적인 경우입니다. 
 
 HSM 키와 AD RMS 구성을 Azure RMS로 가져오는 두 부분으로 된 절차이며, 결과적으로 직접 관리하는 Azure RMS 테넌트 키가 생성됩니다(BYOK).
 
-먼저 Azure RMS로 전송할 수 있도록 HSM 키를 패키지한 다음에 구성 데이터와 함께 가져와야 합니다.
+Azure RMS 테넌트 키는 Azure 주요 자격 증명 모음에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure 키 RMS 외에도 Azure 주요 자격 증명 모음에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure 주요 자격 증명 모음을 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
 
-## 1부: HSM 키를 Azure RMS로 전송할 수 있도록 패키지
+시작하기 전에 조직에 Azure 주요 자격 증명 모음에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. 필수는 아니지만, Azure RMS에 대한 전용 주요 자격 증명 모음이 있으면 좋습니다. 이 주요 자격 증명 모음은 Azure RMS에서 액세스할 수 있도록 구성되므로 이 주요 자격 증명 모음이 저장하는 키는 Azure RMS 키로 제한됩니다.
 
-1.  [Azure 권한 관리 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)의 [BYOK(Bring Your Own Key) 구현](plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 섹션에 있는 단계를 수행합니다. 다음 경우를 제외하고 **인터넷을 통해 테넌트 키 생성 및 전송** 절차를 따릅니다.
 
-    -   AD RMS 배포에서 생성된 동일한 키가 이미 있으므로 **테넌트 키 생성**단계는 따르지 마세요. Thales 설치의 AD RMS 서버에서 사용되는 키를 식별하고, 마이그레이션 중에 이 키를 사용해야 합니다. Thales 암호화된 키 파일 이름은 일반적으로 서버에서 로컬로 **key_(keyAppName)_(keyIdentifier)**입니다.
+> [!TIP]
+> Azure 주요 자격 증명 모음에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure 주요 자격 증명 모음 시작](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)을 먼저 검토하면 도움이 됩니다. 
 
-    -   Add-AadrmKey 명령을 사용하는 **Azure RMS로 테넌트 키 전송** 단계는 따르지 마세요.  대신 내보낸 트러스트된 게시 도메인을 업로드할 때 Import-AadrmTpd 명령을 사용하여 준비된 HSM 키를 전송합니다.
 
-2.  인터넷에 연결된 워크스테이션의 Windows PowerShell 세션에서 Azure RMS 서비스에 다시 연결합니다.
+## 1부: Azure 주요 자격 증명 모음에 키 전송
 
-이제 Azure RMS용 HSM 키를 준비했으므로 HSM 키 파일과 AD RMS 구성 데이터를 가져올 수 있습니다.
+이 절차는 Azure 주요 자격 증명 모음의 관리자가 수행합니다.
 
-## 2부: Azure RMS로 HSM 키 및 구성 데이터 가져오기
+1.  [Azure 주요 자격 증명 모음에 대해 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault)을 사용하여 Azure 주요 자격 증명 모음 설명서의 지침을 따릅니다. 다음과 같은 예외가 있습니다.
 
-1.  인터넷에 연결된 워크스테이션의 Windows PowerShell 세션에서 처음에 내보낸 트러스트된 게시 도메인(.xml) 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 .xml 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure RMS에서 콘텐츠를 보호하는 데 사용할 HSM 키에 해당하는 내보낸 트러스트된 게시 도메인이 포함되어 있는 파일을 선택하세요. 다음 명령을 사용합니다.
+    - AD RMS 배포에서 생성된 동일한 키가 이미 있으므로 **테넌트 키 생성** 단계는 수행하지 마세요. 대신, Thales 설치의 AD RMS 서버에서 사용되는 키를 식별하고, 마이그레이션 중에 이 키를 사용해야 합니다. Thales 암호화된 키 파일 이름은 일반적으로 서버에서 로컬로 **key<*keyAppName*><*keyIdentifier*>**입니다.
 
+    키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333과 같이 표시됩니다. Azure RMS 관리자가 Azure RMS에 테넌트 키에 대해 이 키를 사용하도록 알리는 데 필요하므로 이 URL을 기록해 둡니다.
+
+2. 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx ) cmdlet을 사용하여 Azure RMS 서비스 주체(Microsoft.Azure.RMS)가 Azure RMS 테넌트 키를 저장하는 주요 자격 증명 저장소에 액세스하도록 권한을 부여합니다. 필요한 권한은 decrypt, encrypt, unwrapkey, wrapkey, verify 및 sign입니다.
+    
+    예를 들어 Azure RMS에 대해 만든 주요 자격 증명 모음의 이름이 contoso-byok-ky이고 리소스 그룹 이름이 contoso-byok-rg인 경우 다음 명령을 실행합니다.
+    
+        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign
+
+
+이제 Azure RMS에 대해 Azure 주요 자격 증명 모음에 HSM 키를 준비했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
+
+## 2부: 구성 데이터를 Azure RMS로 가져오기
+
+이 절차는 Azure RMS의 관리자가 수행합니다.
+
+1.  인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Connnect-AadrmService](https://msdn.microsoft.com/library/dn629415.aspx ) cmdlet을 사용하여 Azure RMS에 연결합니다.
+    
+    그런 다음 [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet을 사용하여 처음에 내보낸 트러스트된 게시 도메인(.xml) 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 .xml 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure RMS에서 콘텐츠를 보호하는 데 사용할 HSM 키에 해당하는 내보낸 트러스트된 게시 도메인이 포함되어 있는 파일을 선택하세요. 
+    
+    이 cmdlet을 실행하려면 이전 단계에서 식별된 키에 대한 URL이 필요합니다.
+    
+    예를 들어 이전 단계의 키 URL 값과 C:\contoso-tpd1.xml의 TPD 파일을 사용하여 다음을 실행합니다.
+    
     ```
-    Import-AadrmTpd -TpdFile <PathToTpdPackageFile> -ProtectionPassword -HsmKeyFile <PathToBYOKPackage> -Active $True -Verbose
+    Import-AadrmTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Active $True -Verbose
     ```
-    예: **Import -TpdFile E:\no_key_tpd_contosokey1.xml  -HsmKeyFile E:\KeyTransferPackage-contosokey.byok -ProtectionPassword -Active $true -Verbose**
-
+    
     이전에 지정한 암호를 입력하라는 메시지가 표시되면 입력한 후 이 작업을 수행할 것임을 확인합니다.
 
-2.  명령이 완료되면 트러스트된 게시 도메인을 내보내 만든 나머지 각 .xml 파일에 대해 1단계를 반복합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다.  예: **Import -TpdFile E:\contosokey2.xml -HsmKeyFile E:\KeyTransferPackage-contosokey.byok -ProtectionPassword -Active $false -Verbose**
+2.  명령이 완료되면 트러스트된 게시 도메인을 내보내 만든 나머지 각 .xml 파일에 대해 1단계를 반복합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다.  
 
 3.  [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet를 사용하여 Azure RMS 서비스에서 연결을 끊습니다.
 
@@ -66,11 +86,14 @@ HSM 키와 AD RMS 구성을 Azure RMS로 가져오는 두 부분으로 된 절�
     Disconnect-AadrmService
     ```
 
+    > [!NOTE]
+    > Azure 주요 자격 증명 모음에서 Azure RMS 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet을 사용합니다.
+
 이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)로 이동할 준비가 되었습니다.
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

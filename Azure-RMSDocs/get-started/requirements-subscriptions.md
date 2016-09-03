@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS 요구 사항&#58; 클라우드 구독 | Azure RMS"
-description: 
-keywords: 
+description: "Azure 권한 관리(Azure RMS)를 사용하려면 파일 및 메일 메시지를 보호할 사용자 및 서비스에 충분한 개수의 라이선스를 포함하는 다음 구독 중 하나 이상이 조직에 있어야 합니다. 사용자(파일 또는 메일 메시지 소유자)에 대해 보호를 적용하는 서비스를 사용 중인 경우 이러한 사용자는 다음 라이선스 중 하나가 있어야 합니다. 이 보호된 데이터를 사용(예: 읽기 및 편집)만 하는 사용자의 경우 라이선스가 필요하지 않습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2016
+ms.date: 08/22/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6a16e890-3c3e-4f47-80ca-176a34bdf8bc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6dcd8bb1091e9c484e02042adbf993381581a9d
-ms.openlocfilehash: 5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 4cac0f039e69e31943bb8773d0761f7e654cc940
 
 
 ---
@@ -22,11 +21,11 @@ ms.openlocfilehash: 5e68ba6942b479e9dcbf0e9ac0a3bed0c2d1869d
 
 # Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Azure 권한 관리(Azure RMS)를 사용하려면 파일 및 메일 메시지를 보호할 사용자 및 서비스에 충분한 개수의 라이선스를 포함하는 다음 구독 중 하나 이상이 조직에 있어야 합니다. 사용자(파일 또는 메일 메시지 소유자)에 대해 보호를 적용하는 서비스를 사용 중인 경우 이러한 사용자는 다음 라이선스 중 하나가 있어야 합니다. 이 보호된 데이터를 사용(예: 읽기 및 편집)만 하는 사용자의 경우 라이선스가 필요하지 않습니다.
 
--   Office 365
+-   Office 365(특정 구독)
 
 -   Azure Rights Management 프리미엄(이전의 Azure RMS 독립 실행형)
 
@@ -95,6 +94,6 @@ Azure 권한 관리 프리미엄 구독에 대한 자세한 내용은 [Microsoft
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

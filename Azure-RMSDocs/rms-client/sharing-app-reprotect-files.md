@@ -6,22 +6,22 @@ author: cabailey
 manager: mbaldwin
 ms.date: 08/03/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba029e48b540fda8474eba83322c531ff3daa7b3
-ms.openlocfilehash: a123338e34a8c4585a01782a473a400ecb58f166
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
 
 
 ---
 
 # Rights Management로 보호된 파일에 대한 사용 권한 변경
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 파일이 Rights Management로 보호된 경우 파일을 다시 보호한 다음 해당 파일에 대한 액세스 권한이 있어야 하는 모든 사용자와 해당 사용자에게 부여할 사용 권한을 지정하여 사용 권한을 변경할 수 있습니다.
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: a123338e34a8c4585a01782a473a400ecb58f166
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

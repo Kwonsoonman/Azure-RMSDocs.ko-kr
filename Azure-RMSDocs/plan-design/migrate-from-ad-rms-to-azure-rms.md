@@ -1,27 +1,26 @@
 ---
 title: "AD RMS에서 Azure 권한 관리로 마이그레이션 | Azure RMS"
-description: 
-keywords: 
+description: "AD RMS(Active Directory Rights Management Services) 배포를 Azure RMS(Azure 권한 관리)로 마이그레이션하려면 다음 지침을 따르세요. 마이그레이션 후 사용자는 조직에서 AD RMS를 사용하여 보호하는 문서 및 전자 메일 메시지에 여전히 액세스할 수 있으며 새로 보호되는 콘텐츠에는 Azure RMS가 사용됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 8ef46d68594a6e559e050f846a844f566ff8770d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: bead12db04e6fcf2f9e4af5148d3f8a4ef4089da
 
 
 ---
 
 # AD RMS에서 Azure 권한 관리로 마이그레이션
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
 
 AD RMS(Active Directory Rights Management Services) 배포를 Azure RMS(Azure 권한 관리)로 마이그레이션하려면 다음 지침을 따르세요. 마이그레이션 후 사용자는 조직에서 AD RMS를 사용하여 보호하는 문서 및 전자 메일 메시지에 여전히 액세스할 수 있으며 새로 보호되는 콘텐츠에는 Azure RMS가 사용됩니다.
 
@@ -35,30 +34,31 @@ AD RMS(Active Directory Rights Management Services) 배포를 Azure RMS(Azure �
 Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 요소가 있는지와 제한 사항을 이해하고 있는지 확인하세요.
 
 
-- **지원되는 RMS 배포**
+- **지원되는 RMS 배포:**
+    
+    - 다음 AD RMS 릴리스는 Azure RMS로 마이그레이션을 지원합니다.
+    
+        - Windows Server 2008 R2(x64)
+        
+        - Windows Server 2012(x64)
+        
+        - Windows Server 2012 R2(x64)
+        
+    - 암호화 모드 2:
+    
+        - Azure RMS로 마이그레이션을 시작하기 전에 AD RMS 서버및 클라이언트가 암호화 모드 2에서 실행되어야 합니다. 자세한 내용은 [AD RMS Cryptographic Modes(AD RMS 암호화 모드)](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)를 참조하세요.
+        
+    - 유효한 모든 AD RMS 토폴로지가 지원됩니다.
+    
+        - 단일 포리스트, 단일 RMS 클러스터
+        
+        - 단일 포리스트, 다중 라이선스 전용 RMS 클러스터
+        
+        - 다중 포리스트, 다중 RMS 클러스터
+        
+    참고: 기본적으로 다중 RMS 클러스터는 단일 Azure RMS 테넌트로 마이그레이션됩니다. 별도의 Azure RMS 테넌트를 원하는 경우 다른 마이그레이션으로 처리해야 합니다. 한 RMS 클러스터의 키를 둘 이상의 Azure RMS 테넌트에 가져올 수 없습니다.
 
-    Windows Server 2008에서 Windows Server 2012 R2에 이르는 모든 AD RMS 릴리스는 Azure RMS로의 마이그레이션을 지원합니다.
-
-    - Windows Server 2008(x86 또는 x64)
-
-    - Windows Server 2008 R2(x64)
-
-    - Windows Server 2012(x64)
-
-    - Windows Server 2012 R2(x64)
-
-    유효한 모든 AD RMS 토폴로지가 지원됩니다.
-
-    - 단일 포리스트, 단일 RMS 클러스터
-
-    - 단일 포리스트, 다중 라이선스 전용 RMS 클러스터
-
-    - 다중 포리스트, 다중 RMS 클러스터
-
-    **참고**: 기본적으로 다중 RMS 클러스터는 단일 Azure RMS 테넌트로 마이그레이션됩니다. 다른 RMS 테넌트를 원하는 경우 다른 마이그레이션으로 처리해야 합니다. 한 RMS 클러스터의 키를 둘 이상의 Azure RMS 테넌트에 가져올 수 없습니다.
-
-
-- **Azure RMS 테넌트(활성화되지 않음)를 포함하여, Azure RMS를 실행하기 위한 모든 요구 사항**
+- **Azure RMS 테넌트(활성화되지 않음)를 포함하여, Azure RMS를 실행하기 위한 모든 요구 사항:**
 
     [Azure 권한 관리 요구 사항](../get-started/requirements-azure-rms.md)을 참조하세요.
 
@@ -82,6 +82,10 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
     마이그레이션 프로세스 중에 이 단계 동안만 서비스가 중단됩니다.
 
+- **HSM 보호된 키를 사용하여 고유한 Azure RMS 테넌트 키를 관리하려는 경우**:
+
+    - 이 선택적 구성에는 Azure 주요 자격 증명 모음 및 HSM 보호된 키를 사용하여 주요 자격 증명 모음을 지원하는 Azure 구독이 필요합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/en-us/pricing/details/key-vault/) 페이지를 참조하세요. 
+
 
 제한 사항:
 
@@ -100,7 +104,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 ## AD RMS에서 Azure RMS로 마이그레이션하는 단계 개요
 
 
-9개의 마이그레이션 단계를 각기 다른 시간에 다른 관리자가 수행할 수 있는 네 단계로 나눌 수 있습니다.
+마이그레이션 단계를 각기 다른 시간에 다른 관리자가 수행할 수 있는 네 단계로 나눌 수 있습니다.
 
 [**1단계: AD RMS에 대한 서버 쪽 구성**](migrate-from-ad-rms-phase1.md)
 
@@ -118,11 +122,11 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
     - **HSM 보호된 키-HSM 보호된 키 마이그레이션**:
 
-        AD RMS용 HSM에서 저장한 키에서 고객이 관리하는 Azure RMS 테넌트 키로 마이그레이션합니다("bring your own key" 또는 BYOK 시나리오). 이를 위해 온-프레미스 Thales HSM에서 Azure RMS HSM으로 키를 전송하기 위한 추가 단계가 필요합니다. 기존 HSM 보호 키는 모듈로 보호해야 합니다. OCS 보호 키는 BYOK 도구 집합에서 지원하지 않습니다.
+        AD RMS용 HSM에서 저장한 키에서 고객이 관리하는 Azure RMS 테넌트 키로 마이그레이션합니다("bring your own key" 또는 BYOK 시나리오). 이를 위해 온-프레미스 Thales HSM에서 Azure 주요 자격 증명 모음으로 키를 전송하고 Azure RMS에서 이 키를 사용할 권한을 부여하기 위한 추가 단계가 필요합니다. 기존 HSM 보호 키는 모듈로 보호해야 합니다. OCS 보호 키는 권한 관리 서비스에서 지원하지 않습니다.
 
     - **소프트웨어 보호된 키-HSM 보호된 키 마이그레이션**:
 
-        AD RMS의 중앙에서 관리되는 암호 기반 키에서 고객이 관리하는 Azure RMS 테넌트 키로 마이그레이션합니다("bring your own key" 또는 BYOK 시나리오). 이를 위해 먼저 소프트웨어 키를 추출하고 온-프레미스 HSM으로 가져온 다음, 온-프레미스 Thales HSM에서 Azure RMS HSM로 키를 전송하기 위한 추가 단계를 수행해야 하기 때문에 대부분의 구성이 필요합니다.
+        AD RMS의 중앙에서 관리되는 암호 기반 키에서 고객이 관리하는 Azure RMS 테넌트 키로 마이그레이션합니다("bring your own key" 또는 BYOK 시나리오). 이를 위해 먼저 소프트웨어 키를 추출하고 온-프레미스 HSM으로 가져온 다음, 온-프레미스 Thales HSM에서 Azure 주요 자격 증명 모음 HSM으로 키를 전송하기 위한 추가 단계를 수행하고, Azure RMS에 키를 저장하는 주요 자격 증명 모음을 사용할 권한을 부여해야 하기 때문에 대부분의 구성이 필요합니다.
 
 - **3단계. Azure RMS 테넌트 활성화**
 
@@ -171,7 +175,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 - **9단계: Azure RMS 테넌트 키 다시 입력**
 
-    이 단계는 마이그레이션 전에 암호화 모드 2에서 실행하고 있지 않은 경우에는 필수이지만, Azure RMS 테넌트 키의 보안을 위해 모든 마이그레이션에 대해 권장됩니다.
+    이 단계는 선택 사항이지만 2단계에서 선택한 Azure RMS 테넌트 키 토폴로지가 Microsoft 관리인 경우 권장됩니다. 선택한 Azure RMS 테넌트 키 토폴로지가 고객 관리(BYOK)인 경우 이 단계는 적용되지 않습니다.
 
 
 ## 다음 단계
@@ -180,6 +184,6 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

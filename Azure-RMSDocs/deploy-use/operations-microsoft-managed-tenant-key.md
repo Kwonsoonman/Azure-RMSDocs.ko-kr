@@ -1,20 +1,19 @@
 ---
 title: "Microsoft 관리 - 테넌트 키 수명 주기 작업 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft에서 Azure 권한 관리용 테넌트 키를 관리하는 경우(기본값) 다음 섹션에서 이 토폴로지와 관련된 수명 주기 작업에 대한 자세한 내용을 확인하세요."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7a9c8b531ec342e7d5daf0cbcacd6597a79e6a55
-ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 1eafab8e36c44bfd98ae613d8094d3510f18038e
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: feb41356a2ef074679e60ce4bb7b1d6ee910371c
 
 # Microsoft 관리: 테넌트 키 수명 주기 작업
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Microsoft에서 Azure 권한 관리용 테넌트 키를 관리하는 경우(기본값) 다음 섹션에서 이 토폴로지와 관련된 수명 주기 작업에 대한 자세한 내용을 확인하세요.
 
@@ -99,6 +98,6 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Office 앱&colon; 클라이언트 구성 | Azure RMS"
-description: 
-keywords: 
+description: "이 정보를 사용하여 최종 사용자가 사용하는 Office 앱이 Azure 권한 관리(Azure RMS)와 함께 작동하기 위해 수행해야 하는 작업을 확인할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 607de5e4699d654a4b7895bacde8f18a9707f8a1
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 562ecbd04ef988130205de06e5dd76084822ca7a
 
 
 ---
 
 # Office 앱: 클라이언트 구성
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 이 정보를 사용하여 최종 사용자가 사용하는 Office 앱이 Azure 권한 관리(Azure RMS)와 함께 작동하기 위해 수행해야 하는 작업을 확인할 수 있습니다.
@@ -39,6 +38,6 @@ Rights Management 공유 응용 프로그램에 대한 자세한 내용은 [Righ
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

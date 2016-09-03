@@ -1,27 +1,26 @@
 ---
 title: "시나리오 - 가장 중요한(소수) 파일 보호 | Azure RMS"
-description: 
-keywords: 
+description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다. 일반적으로 소수의 사용자만 액세스할 수 있어야 하는 파일입니다. 예를 들어 회사의 대표 식료품에 대한 조리법 지침이나 지정된 날짜 전에 공개되면 안 되는 인수 계획입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5db916bc9eef927dc7d6a628808e9af79363e480
 
 
 ---
 
 # 시나리오 - 가장 중요한(소수) 파일 보호
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다. 일반적으로 소수의 사용자만 액세스할 수 있어야 하는 파일입니다. 예를 들어 회사의 대표 식료품에 대한 조리법 지침이나 지정된 날짜 전에 공개되면 안 되는 인수 계획입니다.
 
@@ -148,6 +147,6 @@ ms.openlocfilehash: d4325fb8a0b27d0a8d4fd7451b9d11d10153ed8d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

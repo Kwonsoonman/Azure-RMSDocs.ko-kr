@@ -1,27 +1,26 @@
 ---
 title: "Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호 | Azure RMS"
-description: 
-keywords: 
+description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하려면 이 문서에 나와 있는 지침과 스크립트를 사용합니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fc1835b60c4c75b81f106011849940ba2e77164
-ms.openlocfilehash: afb00e010df25dea5f3c3cad23824f773de59b18
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
 
 
 ---
 
 # Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
-*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
 
 RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하려면 이 문서에 나와 있는 지침과 스크립트를 사용합니다.
 
@@ -303,6 +302,6 @@ Windows PowerShell 스크립트를 사용자 지정 작업으로 사용하여 �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: "Rights Management 공유 응용 프로그램 관리자 가이드 | Azure RMS"
-description: 
-keywords: 
+description: "엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 응용 프로그램을 담당하고 있거나, Rights Management 공유 응용 프로그램 사용자 가이드 또는 Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/05/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7cf74355aa39928fd66a4be13a9b65428da7480
-ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 9b0c608ac30e2a93b898dcc1de9ccfa4cdeedcb4
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 08226cd930f90bc7c9cda4c65315ee6472fbcf52
 
 # Rights Management 공유 응용 프로그램 관리자 가이드
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 
 엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 응용 프로그램을 담당하고 있거나, [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md) 또는 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://go.microsoft.com/fwlink/?LinkId=303971)에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다.
@@ -396,6 +395,6 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

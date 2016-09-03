@@ -1,20 +1,19 @@
 ---
 title: "Office 응용 프로그램 및 서비스 | Azure RMS"
-description: 
-keywords: 
+description: "최종 사용자 Office 응용 프로그램(예: Word, Excel, PowerPoint, Outlook) 및 Office 서비스(예: Exchange, SharePoint)는 Microsoft Azure 권한 관리를 사용하여 조직의 데이터를 보호할 수 있습니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/30/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99eb67f6296ad1782c787aabb73a28458c02f367
-ms.openlocfilehash: affb37cc3b991609f5de51370485b10fed932421
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 93dde9494a430526ebd26e1d5123ad44901ffcbb
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: affb37cc3b991609f5de51370485b10fed932421
 
 # Office 응용 프로그램 및 서비스
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 최종 사용자 Office 응용 프로그램(예: Word, Excel, PowerPoint, Outlook) 및 Office 서비스(예: Exchange, SharePoint)는 Microsoft Azure Rights Management를 사용하여 조직의 데이터를 보호할 수 있습니다.
 
@@ -73,6 +72,6 @@ SharePoint와 함께 Azure RMS를 사용하는 방법에 대한 자세한 내용
 다른 응용 프로그램과 서비스에서 Azure 권한 관리를 지원하는 방식을 보려면 [응용 프로그램이 Azure 권한 관리를 지원하는 방식](applications-support.md)을 참조하세요.
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

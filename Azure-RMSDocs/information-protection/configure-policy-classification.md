@@ -1,17 +1,16 @@
 ---
 title: "Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법 | Azure Rights Management"
-description: 
-author: cabailey
+description: "레이블에 대한 조건을 구성할 때 문서 또는 전자 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다."
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 80c201dcf316a5aa5e123645d47c6741f8b61f05
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
 
 
 ---
@@ -225,6 +224,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

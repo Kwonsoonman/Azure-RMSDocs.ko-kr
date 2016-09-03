@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호 | Azure RMS"
-description: 
-keywords: 
+description: "전자 메일을 통해 공유하는 파일을 보호하는 경우 원래 파일의 새 버전이 만들어집니다. 원래 파일은 보호되지 않은 상태로 유지되고 새 버전이 보호되며 보내는 전자 메일에 자동으로 첨부됩니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: 13f44e93ee9c1c0583bd75121aec638fee09b748
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 9becbab6612e49e285774e2e8742d6448b11a041
 
 
 ---
 
 # Rights Management 공유 응용 프로그램을 사용하여 메일로 공유하는 파일 보호
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 전자 메일을 통해 공유하는 파일을 보호하는 경우 원래 파일의 새 버전이 만들어집니다. 원래 파일은 보호되지 않은 상태로 유지되고 새 버전이 보호되며 보내는 전자 메일에 자동으로 첨부됩니다.
 
@@ -93,6 +92,6 @@ Outlook을 사용하여 보호된 파일을 공유하는 방법 외에 다음과
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

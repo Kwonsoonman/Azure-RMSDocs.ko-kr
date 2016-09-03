@@ -1,27 +1,26 @@
 ---
 title: "사용자가 Azure 권한 관리를 사용하여 파일을 보호할 수 있도록 지원 | Azure RMS"
-description: 
-keywords: 
+description: "조직에 대해 Azure RMS(Azure 권한 관리)를 배포 및 구성한 후에는 사용자, 관리자 및 지원 센터를 위해 도움말과 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6dcd8bb1091e9c484e02042adbf993381581a9d
-ms.openlocfilehash: d48616cb638522e6cda61e7ae96db9480fc14099
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 329b9cb2fd6507638924f836eb6dffe8ffca43d1
 
 
 ---
 
 # 사용자가 Azure 권한 관리를 사용하여 파일을 보호할 수 있도록 지원
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 조직에 대해 Azure RMS(Azure 권한 관리)를 배포 및 구성한 후에는 사용자, 관리자 및 지원 센터를 위해 도움말과 지침을 제공합니다.
 
@@ -116,6 +115,6 @@ Azure RMS를 사용 중이며 Rights Management 공유 응용 프로그램을 �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

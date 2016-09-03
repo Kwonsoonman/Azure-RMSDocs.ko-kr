@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리에 대해 응용 프로그램 구성 | Azure RMS"
-description: 
-keywords: 
+description: "조직에 대해 Azure RMS(Azure 권한 관리)가 있는 경우 다음 정보를 사용하여 Azure RMS를 지원하도록 응용 프로그램 및 서비스를 구성하세요. 여기에는 Word 2013 및 Word 2010과 같은 Office 응용 프로그램, Exchange Online(전송 규칙, 데이터 손실 방지, 전달 금지 및 메시지 암호화) 및 SharePoint Online(보호된 라이브러리)과 같은 서비스가 포함됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8fe934c51e852791d19fbb336deaf9cd7be9817b
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 7e592d99bcd2a143d63b35aa4afb92b1e45cb74a
 
 
 ---
 
 # Azure 권한 관리에 대해 응용 프로그램 구성
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 > [!NOTE]
 > 이 정보는 Azure Rights Management를 배포한 IT 관리자 및 컨설턴트를 대상으로 합니다. 특정 응용 프로그램용 권한 관리를 사용하는 방법이나 권한으로 보호된 파일을 여는 방법에 대한 정보와 사용자 도움말을 원하는 경우 응용 프로그램을 함께 제공되는 지침 및 도움말을 사용하세요.
@@ -75,6 +74,6 @@ Azure 권한 관리를 지원하도록 응용 프로그램을 구성한 후에�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

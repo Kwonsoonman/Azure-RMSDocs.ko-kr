@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 요구 사항 | Azure RMS"
-description: 
-keywords: 
+description: "조직에 Microsoft Azure 권한 관리(Azure RMS)를 배포하려면 다음과 같은 필수 조건을 충족해야 합니다. 그런 다음 Azure 권한 관리 배포 로드맵을 사용하여 조직에 대한 권한 관리를 배포할 수 있습니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fab331a26e18730e9cc64a24c0501b7ae21aa1b
-ms.openlocfilehash: f225d8579e2440d2eb00a4f821a78727b6442fdd
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: d56eb077ef76e1869c7d90141f1b35c1bdbfe9fa
 
 
 ---
 
 # Azure 권한 관리 요구 사항
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 조직에 Microsoft Azure 권한 관리(Azure RMS)를 배포하려면 다음과 같은 필수 조건을 충족해야 합니다. 그런 다음 [Azure 권리 관리 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용하여 조직에 대한 권한 관리를 배포할 수 있습니다.
@@ -56,6 +55,6 @@ ms.openlocfilehash: f225d8579e2440d2eb00a4f821a78727b6442fdd
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

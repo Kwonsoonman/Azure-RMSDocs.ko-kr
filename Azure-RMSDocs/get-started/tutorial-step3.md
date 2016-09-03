@@ -4,17 +4,17 @@ description: "15분 이내에 완료할 수 있는 5단계를 통해 조직에�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c604e749-8918-40e8-8148-6bd000cb2be2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 62b2303074ccf2b23e29a5770f51b003c8f97780
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
 # Azure RMS 빠른 시작 3단계: 보호할 문서를 메일로 보내기
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 다음으로 이동합니다. 
@@ -45,11 +45,11 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 
 1.  Outlook을 사용하여 메시지를 새로 작성하고 방금 만든 파일을 첨부합니다.
 
-2.  **받는 사람** 상자에 비즈니스 메일 주소를 하나 이상 입력합니다. 현재 Azure 권한 관리에서는 인터넷 공급자로부터 받아 집에서 사용할 수 있는 개인용 메일 주소를 지원하지 않으므로 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같은 비즈니스 메일 주소를 지정해야 합니다. 문서를 받는 사람에게 Azure Rights Management가 있는지 여부는 걱정할 필요가 없습니다.
+2.  **받는 사람** 상자에 회사 메일 주소를 하나 이상 입력합니다. 현재 Azure 권한 관리에서는 인터넷 공급자로부터 받아 집에서 사용할 수 있는 개인용 메일 주소를 지원하지 않으므로 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같은 비즈니스 메일 주소를 지정해야 합니다. 문서를 받는 사람에게 Azure Rights Management가 있는지 여부는 걱정할 필요가 없습니다.
 
 3.    **기밀 문서** 와 같은 제목을 입력한 다음 메일에 **이 기밀 문서를 읽고, 다른 사람과는 결코 공유하지 마십시오**와 같은 짧은 메시지를 입력합니다.
 
-4.  그런 다음 **메시지** 탭의 **RMS** 그룹에서 **보호된 항목 공유** 를 클릭하고 **보호된 항목 공유** 를 다시 클릭합니다.
+4.  그런 다음 **메시지** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **보호된 항목 공유**를 다시 클릭합니다.
 
 5.  **보호된 항목 공유** 대화 상자에서:
 
@@ -82,6 +82,6 @@ ms.openlocfilehash: efe389db839f3f70e9cdb9138f6749e2bd2e029f
 [4단계 »](tutorial-step4.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

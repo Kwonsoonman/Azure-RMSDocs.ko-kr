@@ -1,26 +1,25 @@
 ---
 title: "AD RMS에서 Azure 권한 관리로 마이그레이션 - 2단계 | Azure RMS"
-description: 
-keywords: 
+description: "AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 AD RMS에서 Azure 권한 관리로 마이그레이션의 5단계를 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/23/2016
+ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a9dc45fb5146b0a4d2f013bff9d090723ce95ee5
-ms.openlocfilehash: 1016ecdd77e818840f2a2cfab8212e908291bb89
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 8e1e44eca132b3fd3c83894544d01c180db8735e
 
 
 ---
 # 마이그레이션 2단계 - 클라이언트 쪽 구성
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
 
 AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure 권한 관리로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 5단계를 설명합니다.
 
@@ -28,7 +27,7 @@ AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 2단계에는 
 ## 5단계. Azure RMS를 사용하도록 클라이언트 다시 구성
 Windows 클라이언트:
 
-1.  [마이그레이션 스크립트를 다운로드](http://go.microsoft.com/fwlink/?LinkId=524619)합니다.
+1.  [마이그레이션 스크립트 다운로드](https://go.microsoft.com/fwlink/?LinkId=524619):
 
     -   CleanUpRMS_RUN_Elevated.cmd
 
@@ -132,6 +131,6 @@ Redirect_OnPrem.cmd:
 마이그레이션을 계속하려면 [3단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

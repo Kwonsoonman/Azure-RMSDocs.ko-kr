@@ -1,20 +1,19 @@
 ---
 title: "2단계&colon; 소프트웨어 보호된 키-소프트웨어 보호된 키 마이그레이션 | Azure RMS"
-description: 
-keywords: 
+description: "이 지침은 AD RMS에서 Azure 권한 관리로의 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 소프트웨어 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 6597bf4ea54f640c30e98b30363323d874e32c43
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
 
 # 2단계: 소프트웨어 보호된 키-소프트웨어 보호된 키 마이그레이션
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
 
 
 이 지침은 [AD RMS에서 Azure 권한 관리로의 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 소프트웨어로 보호되고 소프트웨어 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다. 
@@ -33,7 +32,7 @@ ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
 
 ## 구성 데이터를 Azure RMS로 가져오려면
 
-1.  인터넷에 연결된 워크스테이션에서 Azure RMS용 Windows PowerShell 모듈(최소 버전 2.1.0.0)을 다운로드한 후 설치합니다. 여기에는 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) cmdlet이 포함되어 있습니다.
+1.  인터넷에 연결된 워크스테이션에서 Azure RMS용 Windows PowerShell 모듈(최소 버전 2.5.0.0)을 다운로드한 후 설치합니다. 여기에는 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) cmdlet이 포함되어 있습니다.
 
     > [!TIP]
     > 이전에 모듈을 다운로드하여 설치한 경우 다음을 실행하여 버전 번호를 확인합니다. `(Get-Module aadrm -ListAvailable).Version`
@@ -64,11 +63,13 @@ ms.openlocfilehash: a739da3fbebc8dfa4c6715fd64ccd72f87d2a686
     Disconnect-AadrmService
     ```
 
+
 이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)로 이동할 준비가 되었습니다.
 
 
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

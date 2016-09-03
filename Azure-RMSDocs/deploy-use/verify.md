@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 확인 | Azure RMS"
-description: 
-keywords: 
+description: "Azure RMS를 활성화하고 조직에서 필요한 추가 구성 단계를 수행한 후에는 사용자 계정 하나를 사용해 파일 또는 메일 메시지를 보호한 다음 다른 사용자 계정에서 보호된 콘텐츠 열기 및 사용을 시도하는 방식으로 서비스가 정상적으로 작동하는지 확인할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb152f428c8e0b9a065035aaad2de6353265a562
-ms.openlocfilehash: afa1fb35110918b9b97f91534616e1933e13b149
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: b24fa3540e4e9b9cc02ba3bcd83f5864ce8674d6
 
 
 ---
 
 # Azure 권한 관리 확인
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Azure RMS([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)])를 활성화하고 조직에서 필요한 추가 구성 단계를 수행한 후에는 사용자 계정 하나를 사용해 파일 또는 메일 메시지를 보호한 다음 다른 사용자 계정에서 보호된 콘텐츠 열기 및 사용을 시도하는 방식으로 서비스가 정상적으로 작동하는지 확인할 수 있습니다.
 
@@ -41,6 +40,6 @@ Azure RMS([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

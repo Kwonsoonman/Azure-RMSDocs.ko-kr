@@ -1,27 +1,26 @@
 ---
 title: "시나리오 - 파일 서버 공유에 있는 파일 보호 | Azure RMS"
-description: 
-keywords: 
+description: "이 시나리오 및 지원 사용자 문서에서는 복사하여 IT 부서가 제어하지 않는 저장소에 저장되었거나 다른 사용자에게 메일로 전송된 경우에도 Azure 권한 관리를 통해 파일 서버에서 보호하려는 모든 파일을 대량으로 보호하여 조직의 직원만 액세스할 수 있도록 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: c16098a2d0fe41748280704716a2eeef8921a6fa
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
 
 
 ---
 
 # 시나리오 - 파일 서버 공유에 있는 파일 보호
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 이 시나리오 및 지원 사용자 문서에서는 복사하여 IT 부서가 제어하지 않는 저장소에 저장되었거나 다른 사용자에게 메일로 전송된 경우에도 Azure 권한 관리를 통해 파일 서버에서 보호하려는 모든 파일을 대량으로 보호하여 조직의 직원만 액세스할 수 있도록 합니다.
 
@@ -156,6 +155,6 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

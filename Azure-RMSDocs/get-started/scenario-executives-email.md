@@ -1,27 +1,26 @@
 ---
 title: "시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환 | Azure RMS"
-description: 
-keywords: 
+description: "이 시나리오 및 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 임원이 메일과 첨부 파일을 서로 안전하게 교환할 수 있고 임원이 특별한 작업을 수행하지 않아도 정책에 따라 액세스가 임원으로 자동으로 제한되도록 합니다. 메일과 모든 첨부 파일은 Azure 권한 관리에 의해 자동으로 보호됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: def8b7e98fd55a3d028978ffc9f8e41e38a5622c
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3c15175f26c5e3bc0ff824c284beedc639cf9309
 
 
 ---
 
 # 시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 이 시나리오 및 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 임원이 메일과 첨부 파일을 서로 안전하게 교환할 수 있고 임원이 특별한 작업을 수행하지 않아도 정책에 따라 액세스가 임원으로 자동으로 제한되도록 합니다. 메일과 모든 첨부 파일은 Azure 권한 관리에 의해 자동으로 보호됩니다.
 
@@ -133,6 +132,6 @@ VanArsdel 임원이 아닌 다른 사용자가 해당 메일에 보내는 정보
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

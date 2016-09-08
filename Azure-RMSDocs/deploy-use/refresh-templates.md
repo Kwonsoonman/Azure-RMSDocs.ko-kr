@@ -1,20 +1,19 @@
 ---
 title: "템플릿 새로 고침 | Azure RMS"
-description: 
-keywords: 
+description: "Azure RMS를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/06/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 771f4139b09cccc05f2d1ee52c76b99467c70446
-ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 2339643120b9e9ee24d046bf5620f68fee88b7c9
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 13c2b79558202d59ec49da3a189a58356518718d
 
 # 사용자를 위한 템플릿 새로 고침
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Azure RMS를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다.
 
@@ -187,6 +186,6 @@ Office 2010을 실행하는 컴퓨터에서 레지스트리를 편집하면 사�
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

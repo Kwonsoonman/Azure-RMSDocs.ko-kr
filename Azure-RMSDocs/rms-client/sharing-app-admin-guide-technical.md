@@ -1,20 +1,19 @@
 ---
 title: "Rights Management 공유 응용 프로그램 기술 개요 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Rights Management 공유 응용 프로그램은 선택적으로 다운로드 가능하며 다음 기능을 제공하는 Microsoft Windows 및 기타 플랫폼용 응용 프로그램입니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 09effc3dfb238370563981defdcf3c3b4cffcaae
-ms.openlocfilehash: 2f249996b9b912f744754357423a0c4f134ec094
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: d5e1c7969d2125c4f66d6dcea3bde0c81a7de1f3
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 2f249996b9b912f744754357423a0c4f134ec094
 
 # Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 
 Microsoft Rights Management 공유 응용 프로그램은 선택적으로 다운로드 가능하며 다음 기능을 제공하는 Microsoft Windows 및 기타 플랫폼용 응용 프로그램입니다.
@@ -140,6 +139,6 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

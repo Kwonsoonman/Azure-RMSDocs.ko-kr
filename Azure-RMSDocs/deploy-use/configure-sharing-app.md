@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 공유 응용 프로그램&colon; 클라이언트 설치 및 구성 | Azure RMS"
-description: 
-keywords: 
+description: "Rights Management(RMS) 공유 응용 프로그램은 클라이언트 응용 프로그램이 Azure RMS를 Office 2010과 함께 사용하는 데 필요하며, Azure RMS를 지원하는 모든 컴퓨터 및 모바일 서비스에 권장됩니다. RMS 공유 응용 프로그램은 사용자가 리본에서 직접 파일과 메일을 쉽게 보호할 수 있도록 Office 추가 기능을 설치하여 Office 응용 프로그램과 통합됩니다. 또한 Azure RMS에서 기본적으로 지원되지 않는 파일 형식에 대해 일반적인 보호를 제공하고 사용자가 보호한 파일을 추적하고 취소할 수 있도록 문서 추적 사이트를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: d3f923cf6f140c2caa75b7b0c8ac90a42be962a7
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: bf7cd8007b5423efaa13849101af5c4688cf0975
 
 
 ---
 
 # Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Rights Management(RMS) 공유 응용 프로그램은 클라이언트 응용 프로그램이 Azure RMS를 Office 2010과 함께 사용하는 데 필요하며, Azure RMS를 지원하는 모든 컴퓨터 및 모바일 서비스에 권장됩니다. RMS 공유 응용 프로그램은 사용자가 리본에서 직접 파일과 메일을 쉽게 보호할 수 있도록 Office 추가 기능을 설치하여 Office 응용 프로그램과 통합됩니다. 또한 Azure RMS에서 기본적으로 지원되지 않는 파일 형식에 대해 일반적인 보호를 제공하고 사용자가 보호한 파일을 추적하고 취소할 수 있도록 문서 추적 사이트를 제공합니다.
 
@@ -43,6 +42,6 @@ Rights Management(RMS) 공유 응용 프로그램은 클라이언트 응용 프�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

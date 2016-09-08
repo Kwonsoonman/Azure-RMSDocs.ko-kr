@@ -1,20 +1,19 @@
 ---
 title: "Windows Server를 실행하고 FCI(파일 분류 인프라)를 사용하는 파일 서버 | Azure RMS"
-description: 
-keywords: 
+description: "파일 분류 인프라를 사용하도록 Windows Server를 구성하면 이 파일 서버 리소스 관리자 기능이 로컬 파일을 검색하여 중요한 데이터가 포함되어 있는지를 확인할 수 있습니다. 이 기준을 충족하는 파일에는 관리자가 정의하는 분류 속성이 태그로 지정됩니다. 그러면 파일 분류 인프라가 분류에 따라 자동 작업을 수행할 수 있습니다. 이러한 작업 중 하나가 Azure 권한 관리를 사용하고 권한 관리 커넥터(RMS 커넥터라고도 알려짐)를 배포하여 정보 보호를 적용하는 것입니다. 그런 다음 Office 파일은 Azure RMS를 통해 자동으로 보호됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 839be5a8a45c2322127694dc0bdc306ff445c314
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3ba4230674d387c100752f2e8698010afc8773b2
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 839be5a8a45c2322127694dc0bdc306ff445c314
 
 # Windows Server를 실행하고 FCI(파일 분류 인프라)를 사용하는 파일 서버
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 파일 분류 인프라를 사용하도록 Windows Server를 구성하면 이 파일 서버 리소스 관리자 기능이 로컬 파일을 검색하여 중요한 데이터가 포함되어 있는지를 확인할 수 있습니다. 이 기준을 충족하는 파일에는 관리자가 정의하는 분류 속성이 태그로 지정됩니다. 그러면 파일 분류 인프라가 분류에 따라 자동 작업을 수행할 수 있습니다. 이러한 작업 중 하나가 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용하고 Rights Management 커넥터(RMS 커넥터라고도 알려짐)를 배포하여 정보 보호를 적용하는 것입니다. 그런 다음 Office 파일은 Azure RMS를 통해 자동으로 보호됩니다.
@@ -44,6 +43,6 @@ Office 파일용 RMS 커넥터를 배포하고 구성하는 방법에 대한 지
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

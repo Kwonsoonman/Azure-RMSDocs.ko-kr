@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 공유 응용 프로그램에서 바로 가기 키 사용 | Azure RMS"
-description: 
-keywords: 
+description: "RMS 공유 응용 프로그램을 사용할 때 Alt 키를 누르면 사용 가능한 선택키를 확인할 수 있으며 Alt+선택키를 누르면 옵션을 선택할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c611fa8a846612fed238e59e5077be67f6f9531a
-ms.openlocfilehash: 1ff6f1c788d95efa534e22935f2f13ac0cc598d7
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 640e318c2c12bc1e2044163b2d9201c912345806
 
 
 ---
 
 # Rights Management 공유 응용 프로그램에서 바로 가기 키 사용
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 RMS 공유 응용 프로그램을 사용할 때 **Alt** 키를 누르면 사용 가능한 선택키를 확인할 수 있으며 **Alt**+선택키를 누르면 옵션을 선택할 수 있습니다.
 
@@ -34,13 +33,13 @@ RMS 공유 응용 프로그램을 사용할 때 **Alt** 키를 누르면 사용 
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do-)
+-   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do)
 
 ## 참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

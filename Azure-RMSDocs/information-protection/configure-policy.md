@@ -1,20 +1,19 @@
 ---
 title: "Azure Information Protection 정책 구성 | Azure RMS"
-description: 
-keywords: 
+description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다. 이 정책은 Azure Information Protection 클라이언트를 설치한 컴퓨터에 다운로드됩니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 781632c5a28377339431cd6537b1b9e11d0a3259
-ms.openlocfilehash: 0e31053a83c30d8552cfb78914d0d13baac25f42
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 2f1d4936e5dfaec9ded1eee94515183fdfc99707
 
 
 ---
@@ -81,6 +80,6 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "Rights Management로 보호된 파일 보기 및 사용 | Azure RMS"
-description: 
-keywords: 
+description: "Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치된 경우 단순히 두 번 클릭하여 보호된 파일을 봅니다. 파일은 전자 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
-ms.openlocfilehash: cd19be1c0319a3d2a4609030c0114b07b461c1d8
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 78810a639c2360707b628423bb68b2f05e8c5b56
 
 
 ---
 
 # Rights Management로 보호된 파일 보기 및 사용
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 [Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치](install-sharing-app.md)되어 있는 경우 보호된 파일을 두 번 클릭하면 파일이 표시됩니다. 파일은 전자 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다.
 
@@ -108,6 +107,6 @@ Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

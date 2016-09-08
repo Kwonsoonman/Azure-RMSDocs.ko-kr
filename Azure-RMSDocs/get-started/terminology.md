@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 용어 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Azure RMS와 관련된 단어, 구 또는 약어가 헷갈리시나요? Azure RMS에 관련이 있거나 권한 관리의 컨텍스트에서 사용될 때 특정 의미를 지니는 용어 및 약어의 정의를 여기서 확인해 보세요."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 75f868c4428e7b434e6a115a3e70508c3ff7f93d
-ms.openlocfilehash: 1a45457548d8cba6424e92bc18ef085d095742f3
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: cb30347efd062b0f1c74a029efc747d277c817f3
 
 
 ---
 
 # Azure 권한 관리 용어
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](Azure RMS)와 관련된 단어, 구 또는 약어가 헷갈리시나요? Azure RMS에 관련이 있거나 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]의 컨텍스트에서 사용될 때 특정 의미를 지니는 용어 및 약어의 정의를 여기서 확인해 보세요.
 
@@ -74,6 +73,6 @@ Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

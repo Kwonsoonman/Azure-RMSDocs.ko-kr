@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 테넌트 키 계획 및 구현 | Azure RMS"
-description: 
-keywords: 
+description: "이 문서의 정보는 Azure RMS용 권한 관리(RMS) 테넌트 키를 계획 및 관리하는 데 도움이 됩니다. 예를 들어 Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/30/2016
+ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f01d57759ab80b4946c07a627269550c80114131
-ms.openlocfilehash: aa482dace1086222f63e9165e3089051b5de3e8c
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
 
 
 ---
 
 # Azure 권한 관리 테넌트 키 계획 및 구현
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 이 문서의 정보는 Azure RMS용 권한 관리(RMS) 테넌트 키를 계획 및 관리하는 데 도움이 됩니다. 예를 들어 Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다.  자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다.
 
@@ -41,21 +40,21 @@ Microsoft에서 관리하는 테넌트 키를 사용하여 Azure RMS를 배포�
 ## 테넌트 키 토폴로지 선택: Microsoft가 관리(기본값) 또는 고객이 직접 관리(BYOK)
 조직에 가장 적합한 테넌트 키 토폴로지를 결정하세요. 기본적으로 Azure RMS는 고객의 테넌트 키를 생성하고 테넌트 키 수명 주기의 대부분의 측면을 관리합니다. 이 옵션은 관리 오버헤드가 가장 낮은 가장 간단한 옵션입니다. 대부분의 경우 고객은 테넌트 키를 가지고 있다는 사실조차 알 필요가 없습니다. Azure RMS에 등록하기만 하면 나머지 키 관리 프로세스는 Microsoft에서 처리합니다.
 
-또는 테넌트 키를 만들고 고객의 프레미스에 마스터 복사본을 유지하는 등 테넌트 키를 완전히 제어하기를 원할 수도 있습니다. 이 시나리오를 흔히 BYOK(Bring Your Own Key)라고 합니다. 이 옵션을 사용할 경우 다음과 같은 상황이 발생합니다.
+또는 [Azure 주요 자격 증명 모음](https://azure.microsoft.com/services/key-vault/)을 사용하여 테넌트 키를 완전히 제어할 수 있습니다. 이 시나리오에서는 테넌트 키를 만들고 프레미스에 마스터 복사본을 유지합니다. 이 시나리오를 흔히 BYOK(Bring Your Own Key)라고 합니다. 이 옵션을 사용할 경우 다음과 같은 상황이 발생합니다.
 
-1.  고객이 IT 정책에 따라 고객의 프레미스에서 테넌트 키를 생성합니다.
+1.  고객이 IT 정책 및 보안 정책에 따라 고객의 프레미스에서 테넌트 키를 생성합니다.
 
-2.  고객 소유의 HSM(하드웨어 보안 모듈)에서 Microsoft가 소유하고 관리하는 HSM으로 테넌트 키를 안전하게 전송합니다. 이 프로세스 전체에서 테넌트 키는 하드웨어 보호 경계를 벗어나지 않습니다.
+2.  Azure 주요 자격 증명 모음을 사용하여 고객 소유의 HSM(하드웨어 보안 모듈)에서 Microsoft가 소유하고 관리하는 HSM으로 테넌트 키를 안전하게 전송합니다. 이 프로세스 전체에서 테넌트 키는 하드웨어 보호 경계를 벗어나지 않습니다.
 
-3.  테넌트 키를 Microsoft로 전송할 때 테넌트 키는 Thales HSM으로 보호됩니다. Microsoft는 Thales와 협력하여 고객의 테넌트 키가 Microsoft HSM에서 추출될 수 없도록 했습니다.
+3.  테넌트 키를 Microsoft로 전송할 때 테넌트 키는 Azure 주요 자격 증명 모음으로 보호됩니다.
 
 선택 사항이기는 하지만 테넌트 키가 언제, 어떻게 사용되는지를 정확하게 확인하기 위해 Azure RMS의 근 실시간 사용 현황 로그를 사용하기를 원할 수도 있습니다.
 
 > [!NOTE]
-> 추가 보호 조치로 Azure RMS에서는 북아메리카, EMEA(유럽, 중동 및 아시아) 및 아시아의 데이터 센터에 별도의 보안 권역을 사용합니다. 고객의 고유 테넌트 키를 관리할 때 이 키는 고객의 RMS 테넌트가 등록된 지역의 보안 권역에 연결됩니다. 예를 들어 유럽 고객의 테넌트 키를 북아메리카 또는 아시아의 데이터 센터에서 사용할 수 없습니다.
+> 추가 보호 조치로 Azure 주요 자격 증명 모음에서는 북아메리카, EMEA(유럽, 중동 및 아시아) 및 아시아 같은 지역의 데이터 센터에 별도의 보안 도메인을 사용합니다. 그리고 Microsoft Azure Germany 및 Azure Government처럼 Azure의 여러 인스턴스에 대해서도 별도의 보안 도메인을 사용합니다. 고객의 고유 테넌트 키를 관리할 때 이 키는 고객의 RMS 테넌트가 등록된 지역 또는 인스턴스의 보안 도메인에 연결됩니다. 예를 들어 유럽 고객의 테넌트 키를 북아메리카 또는 아시아의 데이터 센터에서 사용할 수 없습니다.
 
 ## 테넌트 키 수명 주기
-고객이 Microsoft가 고객의 테넌트 키를 관리해야 한다고 결정한 경우 Microsoft는 대부분의 키 수명 주기 작업을 처리합니다. 그러나 고객이 직접 테넌트 키를 관리하기로 결정한 경우 키 수명 주기 작업의 많은 부분과 일부 추가 절차는 고객의 책임입니다.
+고객이 Microsoft가 고객의 테넌트 키를 관리해야 한다고 결정한 경우 Microsoft는 대부분의 키 수명 주기 작업을 처리합니다. 그러나 고객이 직접 테넌트 키를 관리하기로 결정한 경우 Azure 주요 자격 증명 모음의 키 수명 주기 작업의 많은 부분과 일부 추가 절차는 고객의 책임입니다.
 
 다음 다이어그램은 이러한 두 옵션을 비교해서 보여줍니다. 첫 번째 다이어그램은 Microsoft가 테넌트 키를 관리하는 기본 구성을 사용할 경우 관리자 오버헤드가 얼마나 작은지 보여줍니다.
 
@@ -63,7 +62,7 @@ Microsoft에서 관리하는 테넌트 키를 사용하여 Azure RMS를 배포�
 
 두 번째 다이어그램은 고객이 직접 테넌트 키를 관리할 경우 필요한 추가 단계를 보여줍니다.
 
-![Azure RMS 테넌트 키 수명 주기 - 사용자가 직접 관리, BYOK](../media/RMS_BYOK_onprem.png)
+![Azure RMS 테넌트 키 수명 주기 - 사용자가 직접 관리, BYOK](../media/RMS_BYOK_onprem4.png)
 
 고객이 Microsoft에서 테넌트 키를 관리하도록 결정할 경우 키를 생성하기 위해 수행해야 할 추가 작업이 없으므로 [다음 단계](plan-implement-tenant-key.md#next-steps)로 바로 이동하세요.
 
@@ -86,34 +85,28 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 |---------------|--------------------|
 |Azure RMS를 지원하는 구독|사용 가능한 구독에 대한 자세한 내용은 [Azure RMS를 지원하는 클라우드 구독](../get-started/requirements-subscriptions.md)을 참조하세요.|
 |개인용 또는 Exchange Online용으로 RMS를 사용하지 않도록 합니다. 또는 Exchange Online을 사용하는 경우 이 구성에서 BYOK를 사용할 때의 제한 사항을 이해하고 받아들여야 합니다.|BYOK와 관련된 현재 제한 사항에 대한 자세한 내용은 [BYOK 가격 및 제한 사항](byok-price-restrictions.md)을 참조하세요.<br /><br />**중요**: 현재 BYOK는 Exchange Online과 호환되지 않습니다.|
-|Thales HSM, 스마트 카드 및 지원 소프트웨어<br /><br />**참고**: 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure RMS로 마이그레이션하는 경우 11.62 버전 이상의 Thales 드라이버가 있어야 합니다.|Thales 하드웨어 보안 모듈에 대한 액세스 권한이 있어야 하며 Thales HSM의 기본적인 작동 지식이 있어야 합니다. 호환되는 모델 목록을 확인하거나 HSM이 없는 경우 구입하려면 [Thales 하드웨어 보안 모듈](http://www.thales-esecurity.com/msrms/buy) 을 참조하세요.|
-|실제로 미국 Redmond에 가지 않고 인터넷을 통해 테넌트 키를 전송하려는 경우 다음 세 가지 요구 사항이 있습니다.<br /><br />1: 최소 Windows 운영 체제가 Windows 7이고 Thales nShield 소프트웨어 버전이 11.62 이상인 오프라인 x64 워크스테이션<br /><br />이 워크스테이션이 Windows 7을 실행하는 경우 [Microsoft .NET Framework 4.5를 설치](http://go.microsoft.com/fwlink/?LinkId=225702)해야 합니다.<br /><br />2: 인터넷에 연결되어 있고 최소 Windows 운영 체제가 Windows 7인 워크스테이션<br /><br />3: 사용 가능한 공간이 16MB 이상인 USB 드라이브 또는 기타 휴대용 저장 장치|이러한 사전 요구 사항은 Redmond로 가서 직접 테넌트 키를 전송하는 경우에는 불필요합니다.<br /><br />보안상의 이유로 첫 번째 워크스테이션은 네트워크에 연결하지 않는 것이 좋습니다. 그러나 이러한 사항이 프로그래밍 방식으로 강제 적용되지는 않습니다.<br /><br />참고: 뒤에 나오는 지침에서 이 첫 번째 워크스테이션을 **연결이 끊어진 워크스테이션**이라고 합니다.<br /><br />또한 테넌트 키가 프로덕션 네트워크용인 경우 도구 집합을 다운로드하고 테넌트 키를 업로드하는 데는 별도의 두 번째 워크스테이션을 사용하는 것이 좋습니다. 그러나 테스트 목적으로는 첫 번째 워크스테이션과 동일한 워크스테이션을 사용할 수 있습니다.<br /><br />참고: 뒤에 나오는 지침에서 이 두 번째 워크스테이션을 **인터넷에 연결된 워크스테이션**이라고 합니다.|
+|주요 자격 증명 모음 BYOK에 대해 나열된 모든 필수 조건.|Azure 주요 자격 증명 모음 설명서에서 [BYOK에 대한 필수 조건](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)을 참조하세요. <br /><br />**참고**: 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure RMS로 마이그레이션하는 경우 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
+|Windows PowerShell용 Azure RMS 관리 모듈.|설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요. <br /><br />이전에 이 Windows PowerShell 모듈을 설치한 경우 다음 명령을 실행하여 버전 번호가 **2.5.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version`|
 
-테넌트 키를 생성 및 사용하는 절차는 인터넷을 통해 할 것인지, 직접 할 것인지에 따라 다릅니다.
+Thales HSM 및 Azure 주요 자격 증명 모음과 함께 사용되는 방법에 대한 자세한 내용은 [Thales 웹 사이트](https://www.thales-esecurity.com/msrms/cloud)를 참조하세요.
 
--   **인터넷을 통해 생성 및 사용하는 경우:** 이 경우에는 도구 집합 및 Windows PowerShell cmdlet 다운로드 및 사용과 같은 몇 가지 추가 구성 단계가 필요합니다. 그러나 테넌트 키를 전송하기 위해 실제로 Microsoft 본사에 갈 필요는 없습니다. 보안은 다음과 같은 방법으로 유지 관리됩니다.
+고유한 테넌트 키를 생성하고 Azure 주요 자격 증명 모음으로 전송하려면 Azure 주요 자격 증명 모음 설명서에서 [Azure 주요 자격 증명 모음에 대해 HSM 보호된 키를 생성하고 전송하는 방법](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)의 절차를 따르세요.
 
-    -   오프라인 워크스테이션에서 테넌트 키를 생성합니다. 그러면 공격에 대한 취약성이 감소합니다.
+키를 주요 자격 증명 모음으로 전송하면 주요 자격 증명 모음에 자격 증명 모음의 이름, 키 컨테이너, 키의 이름 및 키 버전이 들어 있는 URL인 키 ID가 지정됩니다. 예를 들면 다음과 같습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333** 이 URL을 지정하여 Azure RMS에서 이 키를 사용하도록 알려야 합니다.
 
-    -   테넌트 키가 KEK(키 교환 키)로 암호화됩니다. 그러면 테넌트 키가 Azure RMS HSM으로 전송될 때까지 암호화 상태를 유지합니다. 테넌트 키의 암호화된 버전만 원래 워크스테이션을 벗어납니다.
+하지만 Azure RMS에서 키를 사용하기 전에 Azure RMS는 조직의 주요 자격 증명 모음의 키를 사용할 수 있는 권한을 받아야 합니다. 그렇게 하려면 Azure 주요 자격 증명 모음 관리자는 주요 자격 증명 모음 PowerShell cmdlet([Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx))을 사용하여 Azure RMS 서비스 주체(**Microsoft.Azure.RMS**)에 권한을 부여합니다. 예를 들면 다음과 같습니다.
 
-    -   도구 집합은 테넌트 키를 Azure RMS 보안 권역에 바인딩하는 속성을 테넌트 키에 설정합니다. 따라서 Azure RMS HSM에서 테넌트 키를 받아 암호를 해독한 후에만 이러한 HSM에서 테넌트 키를 사용할 수 있습니다. 테넌트 키를 내보낼 수 없습니다. 이 바인딩은 Thales HSM에서 강제 적용합니다.
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign 
 
-    -   테넌트 키를 암호화하는 데 사용되는 KEK(키 교환 키)는 Azure RMS HSM 내부에서 생성되며 내보낼 수 없습니다. HSM은 HSM 외부에 KEK의 일반 버전이 있을 수 없도록 합니다. 또한 이 도구 집합에는 KEK를 내보내는 것이 불가능하고 KEK가 Thales에서 제조한 정품 HSM 내부에서 생성되었음을 나타내는 Thales로부터의 증명이 포함되어 있습니다.
+이제 Azure RMS를 구성하여 조직의 Azure RMS 테넌트 키로 이 키를 사용할 준비가 되었습니다. Azure RMS cmdlet을 사용하여 먼저 Azure RMS에 연결하고 로그인합니다.
 
-    -   이 도구 집합에는 Azure RMS 보안 권역도 Thales에서 제조한 정품 HSM에서 생성되었음을 나타내는 Thales로부터의 증명이 포함되어 있습니다. 이는 Microsoft가 정품 하드웨어를 사용 중임을 고객에게 증명합니다.
+    Connect-AadrmService
 
-    -   Microsoft에서는 각 지역에 별도의 보안 권역뿐만 아니라 별도의 KEK를 사용하여 테넌트 키가 암호화된 지역의 데이터 센터에서만 사용될 수 있도록 합니다. 예를 들어 유럽 고객의 테넌트 키를 북아메리카 또는 아시아의 데이터 센터에서 사용할 수 없습니다.
+그런 다음 [Use-AadrmKeyVaultKey cmdlet](https://msdn.microsoft.com/library/azure/mt759829.aspx)을 실행하여 키 URL을 지정합니다. 예를 들면 다음과 같습니다.
 
-    > [!NOTE]
-    > 테넌트 키는 암호화되고 액세스 제어 수준 권한(Azure RMS의 고객 HSM 및 Microsoft HSM 내에서만 사용 가능)으로 보호되기 때문에 신뢰할 수 없는 컴퓨터를 안전하게 이동할 수 있습니다. 도구 집합에 제공된 스크립트를 사용하여 보안 조치를 확인하고 Thales의 [RMS 클라우드의 하드웨어 키 관리](https://www.thales-esecurity.com/knowledge-base/white-papers/hardware-key-management-in-the-rms-cloud)에서 도구 집합이 작동하는 방식에 대한 자세한 내용을 살펴볼 수 있습니다.
+    Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
 
--   **직접 생성 및 사용하는 경우:** 이 경우에는 [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 Azure RMS의 키 전송 약속을 예약해야 합니다. 테넌트 키를 Azure RMS 보안 권역으로 전송하려면 미국 워싱턴주의 Redmond에 있는 Microsoft 본사로 가야 합니다.
-
-방법 지침을 보려면 인터넷을 통해 테넌트 키를 생성 및 전송할지, 아니면 직접 생성 및 전송할지를 선택합니다. 
-
-- [인터넷을 통해 생성 및 전송하는 경우](generate-tenant-key-internet.md)
-- [직접 생성 및 전송하는 경우](generate-tenant-key-in-person.md)
+Azure RMS에 키 URL이 올바르게 설정되었는지 확인해야 하는 경우 Azure 주요 자격 증명 모음에서 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/library/dn868053.aspx)를 실행하여 키 URL을 확인할 수 있습니다.
 
 
 ## 다음 단계
@@ -122,15 +115,15 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 
 1.  테넌트 키 사용을 시작합니다.
 
-    -   아직 Rights Management를 활성화하지 않은 경우 조직에서 RMS 사용을 시작할 수 있도록 Rights Management를 활성화해야 합니다. 사용자는 즉시 테넌트 키(Microsoft에서 관리하거나 고객이 직접 관리함) 사용을 시작합니다.
+    -   아직 Rights Management를 활성화하지 않은 경우 조직에서 RMS 사용을 시작할 수 있도록 Rights Management를 활성화해야 합니다. 사용자는 즉시 테넌트 키(Microsoft에서 관리하거나 Azure 주요 자격 증명 모음에서 고객이 직접 관리함) 사용을 시작합니다.
 
         활성화에 대한 자세한 내용은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
     -   이미 Rights Management를 활성화한 후 직접 테넌트 키를 관리하기로 결정한 경우 사용자는 점진적으로 이전 테넌트 키에서 새 테넌트 키로 전환하며, 시차를 두고 진행되는 이 전환이 완료되기까지 몇 주가 걸릴 수 있습니다. 권한 있는 사용자는 이전 테넌트 키로 보호된 문서와 파일에 계속 액세스할 수 있습니다.
 
-2.  RMS가 수행하는 모든 트랜잭션을 기록하는 사용 현황 로깅을 사용하는 것이 좋습니다.
+2.  Azure 권한 관리에서 수행하는 모든 트랜잭션을 기록하는 사용 현황 로깅을 사용하는 것이 좋습니다.
 
-    직접 테넌트 키를 관리하기로 결정한 경우 로깅에는 테넌트 키 사용에 대한 정보가 포함됩니다. Excel에 표시된 다음과 같은 로그 파일의 코드 조각을 참조하세요. 여기서 **KMSPDecrypt** 및 **KMSPSignDigest** 요청 유형은 테넌트 키가 사용되고 있음을 보여줍니다.
+    직접 테넌트 키를 관리하기로 결정한 경우 로깅에는 테넌트 키 사용에 대한 정보가 포함됩니다. Excel에 표시된 다음과 같은 로그 파일의 코드 조각을 참조하세요. 여기서 **KeyVaultDecryptRequest** 및 **KeyVaultSignRequest** 요청 유형은 테넌트 키가 사용되고 있음을 보여줍니다.
 
     ![테넌트 키가 사용되는 위치의 로그 파일](../media/RMS_Logging.png)
 
@@ -143,6 +136,6 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

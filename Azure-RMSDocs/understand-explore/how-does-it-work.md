@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS 작동 방식 | Azure RMS"
-description: 
-keywords: 
+description: "Azure RMS가 작동하는 방식을 이해할 때 중요한 한 가지 사항은 권한 관리 서비스(및 Microsoft)가 데이터를 정보 보호 프로세스의 일부로 보거나 저장하지 않는다는 것입니다. 보호하는 정보는 Azure에 명시적으로 저장하거나 Azure에 정보를 저장하는 다른 클라우드 서비스를 사용하지 않는 한, Azure로 전송되거나 Azure에 저장되지 않습니다. Azure RMS는 단순히 문서의 데이터를 허가된 사용자 및 서비스 이외의 사람이 읽을 수 없게 합니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d825d6c8b2c8b7a9c34ac940c5a08439a9ae562
-ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 527af70532f390330fdb65bc27b04bb366289748
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 505f2c94bb4fd056b4d2f51c147c6b0b84efac00
 
 # Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Azure RMS가 작동하는 방식을 이해할 때 중요한 한 가지 사항은 권한 관리 서비스(및 Microsoft)가 데이터를 정보 보호 프로세스의 일부로 보거나 저장하지 않는다는 것입니다. 보호하는 정보는 Azure에 명시적으로 저장하거나 Azure에 정보를 저장하는 다른 클라우드 서비스를 사용하지 않는 한, Azure로 전송되거나 Azure에 저장되지 않습니다. Azure RMS는 단순히 문서의 데이터를 허가된 사용자 및 서비스 이외의 사람이 읽을 수 없게 합니다.
 
@@ -151,6 +150,6 @@ Azure RMS 구성 및 사용 시 나올 수 있는 용어를 파악할 수 있도
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

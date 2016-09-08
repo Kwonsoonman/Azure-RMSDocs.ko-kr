@@ -1,20 +1,19 @@
 ---
 title: "RMS 커넥터에 대한 레지스트리 설정 | Azure RMS"
-description: 
-keywords: 
+description: "Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동으로 레지스트리 설정을 추가하거나 확인하려는 경우에만 다음 섹션의 표를 사용하세요(RMS 커넥터를 사용하도록 서버가 구성됨). 이 서버를 구성하려면 Microsoft RMS 커넥터용 서버 구성 도구를 사용하는 것이 좋습니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 935c354f9bcd3be23a953cdeb08c7860257637d6
-ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 49fff7c2e0c06d26751136b681022f221f80d6cd
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 5099a10a183f1c78595794511654226265e740c8
 
 # Rights Management 커넥터에 대한 레지스트리 설정
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동으로 레지스트리 설정을 추가하거나 확인하려는 경우에만 다음 섹션의 표를 사용하세요([RMS 커넥터](deploy-rms-connector.md)를 사용하도록 서버가 구성됨). 이 서버를 구성하려면 Microsoft RMS 커넥터용 서버 구성 도구를 사용하는 것이 좋습니다.
@@ -217,6 +216,6 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)로 돌아갑니다.
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

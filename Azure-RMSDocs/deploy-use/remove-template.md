@@ -1,20 +1,19 @@
 ---
 title: "템플릿 제거 | Azure RMS"
-description: 
-keywords: 
+description: "기본 템플릿은 삭제할 수 없지만 사용자에게 보이지 않도록 보관할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: f0e958c0fbae8dcf74761481c646c7aa837d5ebb
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 22db39697dbd35b1a295f214f11e72c47fe6ca1b
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: f0e958c0fbae8dcf74761481c646c7aa837d5ebb
 
 # 템플릿 제거(보관)
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 기본 템플릿은 삭제할 수 없지만 사용자에게 보이지 않도록 보관할 수 있습니다.
 
@@ -42,6 +41,6 @@ ms.openlocfilehash: f0e958c0fbae8dcf74761481c646c7aa837d5ebb
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

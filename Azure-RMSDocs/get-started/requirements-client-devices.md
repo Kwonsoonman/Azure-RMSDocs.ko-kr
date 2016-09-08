@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS 요구 사항&#58; 클라이언트 장치 | Azure RMS"
-description: 
-keywords: 
+description: "다음 섹션에서 Azure 권한 관리(Azure RMS)를 지원하는 장치를 확인할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 933394c943763b010ac707384918eff86ea33388
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5fe3470fd7a05d8c2c72312e73e2a773c704ad0f
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 933394c943763b010ac707384918eff86ea33388
 
 # Azure RMS 요구 사항: Azure RMS를 지원하는 클라이언트 장치
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 다음 섹션에서 Azure 권한 관리(Azure RMS)를 지원하는 장치를 확인할 수 있습니다.
 
@@ -57,6 +56,6 @@ Azure 권한 관리를 지원하는 모바일 장치 운영 체제는 다음과 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

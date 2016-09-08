@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 활성화 | Azure RMS"
-description: 
-keywords: 
+description: "Azure RMS를 활성화하면 조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 중요한 데이터를 보호할 수 있습니다. 또한 관리자는 조직에서 소유한 보호된 파일 및 전자 메일을 관리하고 모니터링할 수 있습니다. Office, SharePoint, Exchange 내에서 IRM(정보 권한 관리) 기능을 사용하고 중요한 파일이나 기밀 파일을 보호하려면 먼저 Azure RMS를 사용하도록 설정해야 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf5e3561ef24d8f44e791ff7bdc8450a73f79705
-ms.openlocfilehash: d66e4e6bca253bc2bf9d12ba22ed0202cba2edaf
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: d8ec823553934442ecb1e0a0b288eaa6d9c21ea6
 
 
 ---
 
 # Azure 권한 관리 활성화
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](Azure RMS)를 활성화하면 조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 중요한 데이터를 보호할 수 있습니다. 또한 관리자는 조직에서 소유한 보호된 파일 및 전자 메일을 관리하고 모니터링할 수 있습니다. Office, SharePoint 및 Exchange 내에서 IRM(정보 권한 관리) 기능을 사용하고 중요한 파일이나 기밀 파일을 보호하려면 먼저 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 사용하도록 설정해야 합니다.
 
@@ -82,6 +81,6 @@ Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

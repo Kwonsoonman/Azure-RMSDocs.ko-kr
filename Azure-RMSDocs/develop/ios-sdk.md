@@ -4,9 +4,9 @@ description: "iOS 및 OS X 응용 프로그램에서 RMS SDK 4.2를 통해 AAD R
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
@@ -14,15 +14,15 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79397c82d9478cbd55630a376fe2d12f3873ebc4
-ms.openlocfilehash: ae1af4a1cddc904fd4800f1a3900e3c7c4d073ed
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 65c5b290278405152d0377a686886ff5be14b52b
 
 
 ---
 
 # iOS 및 OS X 설정
 
-iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 Azure RMS(Azure 권한 관리)를 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 
 이 항목에서는 새 앱을 만들기 위한 환경을 설정하는 과정을 안내합니다.
 
@@ -119,6 +119,6 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

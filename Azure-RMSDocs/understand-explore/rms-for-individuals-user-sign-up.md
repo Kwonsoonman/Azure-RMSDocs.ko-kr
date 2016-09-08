@@ -1,27 +1,26 @@
 ---
 title: "개인용 RMS 등록 방법 | Azure RMS"
-description: 
-keywords: 
+description: "이 무료 계정에 등록하려면 사용자가 Microsoft Rights Management 페이지를 방문하여 계정을 요청하고 회사 또는 학교 메일 주소를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 19252180802c69d6e5d6bf22c71ff3bcba96fb36
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: a31005f3dce927db917cb0f2851916b8946da4ee
 
 
 ---
 
 # 개인용 RMS 등록 방법
 
-*적용 대상: Azure 권한 관리*
+>*적용 대상: Azure 권한 관리*
 
 이 무료 계정에 등록하려면 사용자가 [Microsoft Rights Management 페이지](https://portal.aadrm.com/)를 방문하여 계정을 요청하고 회사 또는 학교 메일 주소를 제공합니다. 
 
@@ -102,6 +101,6 @@ ms.openlocfilehash: 19252180802c69d6e5d6bf22c71ff3bcba96fb36
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

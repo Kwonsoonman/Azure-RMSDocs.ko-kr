@@ -1,17 +1,16 @@
 ---
 title: "Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법 | Azure Rights Management"
-description: 
-author: cabailey
+description: "문서 또는 전자 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다."
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: c73b6e3fe114625c16a7c2e799162902ba26e4cf
 
 
 ---
@@ -60,17 +59,19 @@ ms.openlocfilehash: 78b68c7a502776c6492437e9b8a5c3f1ebf27f95
 
 머리글, 바닥글 또는 워터마크에 대한 텍스트 문자열에 다음 변수를 사용할 수 있습니다.
 
-- `${Item.Label}` - 선택한 레이블
+- `${Item.Label}` - 선택한 레이블 예: 내부
 
-- `${Item.Name}` - 파일 이름 또는 메일 제목
+- `${Item.Name}` - 파일 이름 또는 메일 제목 예: JulySales.docx
 
-- `${Item.Location}` - 파일 경로
+- `${Item.Location}` - 문서의 경우 경로 및 파일 이름, 메일의 경우 메일 제목 예: \\\Sales\2016\Q3\JulyReport.docx
 
-- `${User.Name}` - 문서 또는 메일의 소유자
+- `${User.Name}` - 문서 또는 메일의 소유자, Windows 로그인 사용자 이름별 예: rsimone
 
-- `${Event.DateTime}` - 선택한 레이블을 설정한 날짜 및 시간 
+- `${User.PrincipalName}` - 문서 또는 메일의 소유자, Azure Information Protection 클라이언트 로그인 메일 주소(UPN)별 예: rsimone@vanarsdelltd.com
+
+- `${Event.DateTime}` - 선택한 레이블을 설정한 날짜 및 시간 예: 2016년 8월 16일 오후 1시 30분
     
-예: 비밀 레이블 바닥글에 대해 `Document: ${item.name} Sensitivity: ${item.label}` 문자열을 지정하는 경우 문서화된 명명된 project.docx에 적용되는 바닥글 텍스트는 **Document: project.docx Sensitivity: Secret**입니다.
+예: 비밀 레이블 바닥글에 대해 `Document: ${item.name}  Classification: ${item.label}` 문자열을 지정하는 경우 문서화된 명명된 project.docx에 적용되는 바닥글 텍스트는 **Document: project.docx  Classification: Secret**입니다.
 
 ## 다음 단계
 
@@ -80,6 +81,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

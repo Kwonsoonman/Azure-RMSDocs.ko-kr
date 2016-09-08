@@ -1,27 +1,26 @@
 ---
 title: "RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소 | Azure RMS"
-description: 
-keywords: 
+description: "조직에서 Active Directory Rights Management Services가 아닌 Azure 권한 관리를 사용하고 있다면 RMS 공유 응용 프로그램을 사용하여 문서를 보호한 후에 보호된 문서가 사용되는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다. 이렇게 하려면 Windows 컴퓨터와 Mac 컴퓨터뿐 아니라 태블릿과 휴대폰에서도 액세스할 수 있는 문서 추적 사이트를 사용합니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 08/10/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9ad2e518b4a7dac608572eb5eb2d99bbda4754e
-ms.openlocfilehash: 4c757494a1fe948ed26b32f86844f7b5896c919b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: d27a516339a9687cb5ce117b6a2aa93730863c2d
 
 
 ---
 
 # RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소
 
-*적용 대상: Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 조직에서 Active Directory Rights Management Services가 아닌 Azure 권한 관리를 사용하고 있다면 RMS 공유 응용 프로그램을 사용하여 문서를 보호한 후에 보호된 문서가 사용되는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다. 이렇게 하려면 Windows 컴퓨터와 Mac 컴퓨터뿐 아니라 태블릿과 휴대폰에서도 액세스할 수 있는 **문서 추적 사이트**를 사용합니다.
 
@@ -107,6 +106,6 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

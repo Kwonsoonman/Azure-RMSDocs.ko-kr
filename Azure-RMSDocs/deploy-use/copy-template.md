@@ -1,20 +1,19 @@
 ---
 title: "템플릿 복사 | Azure RMS"
-description: 
-keywords: 
+description: "기존 템플릿과 설정이 매우 비슷한 새 템플릿을 만들려면 템플릿 페이지에서 원본 템플릿을 선택하고 복사를 클릭한 후에 고유한 이름을 지정하고 필요한 대로 템플릿을 변경합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 332e102cb27854314b93a71bfeae82a95c9a7812
-ms.openlocfilehash: 87d712bbda11a4cfdfb2f3b3e9a549bca977afd6
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: e5d7fea3b0c3c9fcc3546752b5483b9c97a917e9
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 87d712bbda11a4cfdfb2f3b3e9a549bca977afd6
 
 # 템플릿 복사
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 기존 템플릿과 설정이 매우 비슷한 새 템플릿을 만들려면 **템플릿** 페이지에서 원본 템플릿을 선택하고 **복사**를 클릭한 후에 고유한 이름을 지정하고 필요한 대로 템플릿을 변경합니다.
 
@@ -37,6 +36,6 @@ ms.openlocfilehash: 87d712bbda11a4cfdfb2f3b3e9a549bca977afd6
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

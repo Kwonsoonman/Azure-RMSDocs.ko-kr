@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 커넥터 배포 | Azure RMS"
-description: 
-keywords: 
+description: "다음 정보를 통해 Azure 권한 관리(RMS) 커넥터와 이러한 커넥터를 사용하여 Microsoft Exchange Server, Microsoft SharePoint Server 또는 Windows Server를 실행하고 파일 서버 리소스 관리자의 FCI(파일 분류 인프라) 기능을 활용하는 파일 서버를 사용하는 기존 온-프레미스 배포에 정보 보호 기능을 제공하는 방법을 확인할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/20/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e31656e417a0861d33deb2436d2e4b596a7512a7
-ms.openlocfilehash: 6b9b3b039ba2de0de174a134768afd763d26b5dd
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 003dcc6a000d303fc42204d61145cf067dc16d32
 
 
 ---
 
 # Azure 권한 관리 커넥터 배포
 
-*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
 
 다음 정보를 통해 Azure 권한 관리(RMS) 커넥터와 이러한 커넥터를 사용하여 Microsoft Exchange Server, Microsoft SharePoint Server 또는 Windows Server를 실행하고 파일 서버 리소스 관리자의 FCI(파일 분류 인프라) 기능을 활용하는 파일 서버를 사용하는 기존 온-프레미스 배포에 정보 보호 기능을 제공하는 방법을 확인할 수 있습니다.
 
@@ -84,6 +83,6 @@ RMS 커넥터를 설치하기 전에 먼저 다음 요구 사항이 설정되어
 [Azure 권한 관리 커넥터 설치 및 구성](install-configure-rms-connector.md)으로 이동합니다.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

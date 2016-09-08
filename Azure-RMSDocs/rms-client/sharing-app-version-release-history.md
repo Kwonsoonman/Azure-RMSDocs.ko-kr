@@ -1,27 +1,26 @@
 ---
 title: "권한 관리 공유 응용 프로그램&colon; 버전 릴리스 기록 | Azure RMS"
-description: 
-keywords: 
+description: "Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management 공유 응용 프로그램을 정기적으로 업데이트합니다. 다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e1b7dedd8556f3ccdb1642681cc4e1e5b1d09ccf
-ms.openlocfilehash: ee2860da964b52bc41c0aea219110453f024b954
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 060324fd6f0a87839ff267b540b9e5024498c242
 
 
 ---
 
 # Rights Management 공유 응용 프로그램: 버전 릴리스 기록
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management 공유 응용 프로그램을 정기적으로 업데이트합니다. 다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다.
 
@@ -132,6 +131,6 @@ Rights Management 팀에서는 픽스 및 새 기능을 위해 Rights Management
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

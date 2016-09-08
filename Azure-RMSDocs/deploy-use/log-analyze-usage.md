@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 사용 현황 로깅 및 분석 | Azure RMS"
-description: 
-keywords: 
+description: "이 항목의 정보를 통해 Azure 권한 관리(Azure RMS)와 함께 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. Azure 권한 관리 서비스는 조직에 대해 수행하는 모든 요청을 기록할 수 있습니다. 여기에는 사용자 요청, 조직의 권한 관리 관리자가 수행하는 작업 및 Azure 권한 관리 배포를 지원하기 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/05/2016
+ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2082620eb152aa88af4141b88985adce22769168
-ms.openlocfilehash: fbf614bf7b30165a78f6312267243ad6fdb81435
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: 868656f84f39db20f0aee8d148b00af15849fda5
 
 
 ---
 
 # Azure 권한 관리 사용 현황 로깅 및 분석
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 이 항목의 정보를 통해 Azure 권한 관리(Azure RMS)와 함께 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. Azure 권한 관리 서비스는 조직에 대해 수행하는 모든 요청을 기록할 수 있습니다. 여기에는 사용자 요청, 조직의 권한 관리 관리자가 수행하는 작업 및 Azure 권한 관리 배포를 지원하기 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다.
 
@@ -179,13 +178,13 @@ Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에
 |BECreateEndUserLicenseV1|모바일 장치에서 최종 사용자 라이선스를 만들도록 호출합니다.|
 |BEGetAllTemplatesV1|모바일 장치(백 엔드)에서 모든 템플릿을 가져오도록 호출합니다.|
 |Certify|클라이언트가 보호할 콘텐츠를 인증합니다.|
-|KMSPDecrypt|클라이언트가 RMS로 보호된 콘텐츠의 암호 해독을 시도합니다. 고객이 관리하는 테넌트 키(BYOK)에 대해서만 적용할 수 있습니다.|
 |DeleteTemplateById|Azure 클래식 포털에서 템플릿 ID별로 템플릿을 삭제하도록 호출합니다.|
 |DocumentEventsCsv|단일 문서에 대한 .CSV 파일을 다운로드하도록 문서 추적 사이트에서 호출합니다.|
 |ExportTemplateById|Azure 클래식 포털에서 템플릿 ID에 따라 템플릿을 내보내도록 호출합니다.|
 |FECreateEndUserLicenseV1|AcquireLicense 요청과 비슷하지만 모바일 장치에서 수행하는 요청입니다.|
 |FECreatePublishingLicenseV1|Certify 및 GetClientLicensorCert가 결합된 형태의 요청으로, 모바일 클라이언트에서 사용됩니다.|
 |FEGetAllTemplates|모바일 장치(프런트 엔드)에서 템플릿을 가져오도록 호출합니다.|
+|FindServiceLocationsForUser|Certify 또는 AcquireLicense를 호출하는 데 사용되는 Url을 쿼리하도록 호출합니다.|
 |GetAllDocs|사용자에 대한 **모든 문서** 페이지를 로드하거나 테넌트에 대한 모든 문서를 검색하도록 문서 추적 사이트에서 호출합니다. 관리 작업 및 관리자 권한으로 실행 필드와 함께 이 값을 사용합니다.<br /><br />- 관리 작업이 비어 있는 경우: 사용자에게 해당 문서에 대한 **모든 문서** 페이지가 표시됩니다.<br /><br />- 관리 작업이 true이고 사용자 권한으로 실행이 비어 있는 경우: 관리자에게 해당 테넌트에 대한 모든 문서가 표시됩니다.<br /><br />- 관리 작업이 true이고 사용자 권한으로 실행이 비어 있지 않은 경우: 관리자에게 사용자에 대한 **모든 문서**가 표시됩니다.|
 |GetAllTemplates|Azure 클래식 포털에서 모든 템플릿을 가져오도록 호출합니다.|
 |GetClientLicensorCert|클라이언트가 Windows 기반 컴퓨터에서 게시 인증서(나중에 콘텐츠를 보호하는 데 사용됨)를 요청합니다.|
@@ -195,8 +194,11 @@ Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에
 |GetSingle|**단일 문서**이동하도록 문서 추적 사이트에서 호출합니다.|
 |GetTenantFunctionalState|Azure 클래식 포털에서 Azure RMS 활성화 여부를 확인합니다.|
 |GetTemplateById|Azure 클래식 포털에서 템플릿 ID를 지정하여 템플릿을 가져오도록 호출합니다.|
-|ExportTemplateById|Azure 클래식 포털에서 템플릿 ID를 지정하여 템플릿을 내보내도록 호출합니다.|
-|FindServiceLocationsForUser|Certify 또는 AcquireLicense를 호출하는 데 사용되는 Url을 쿼리하도록 호출합니다.|
+|KeyVaultDecryptRequest|클라이언트가 RMS로 보호된 콘텐츠의 암호 해독을 시도합니다. Azure 주요 자격 증명 모음에서 고객이 관리하는 테넌트 키(BYOK)에 대해서만 적용할 수 있습니다.|
+|KeyVaultGetKeyInfoRequest|Azure RMS 테넌트 키에 대해 Azure 주요 자격 증명 모음에 사용되도록 지정된 키에 액세스할 수 있으며여 이미 사용되지 않았는지 확인하기 위해 호출합니다.|
+|KeyVaultSignDigest|서명 용도로 Azure 주요 자격 증명 모음의 고객 관리 키(BYOK)를 사용할 때 호출합니다. 대개 AcquireLicence(또는 FECreateEndUserLicenseV1), Certify 및 GetClientLicensorCert(또는 FECreatePublishingLicenseV1)당 한 번씩만 호출합니다.|
+|KMSPDecrypt|클라이언트가 RMS로 보호된 콘텐츠의 암호 해독을 시도합니다. 레거시 고객 관리 테넌트 키(BYOK)에 대해서만 적용할 수 있습니다.|
+|KMSPSignDigest|서명 용도로 레거시 고객 관리 키(BYOK)를 사용할 때 호출합니다. 대개 AcquireLicence(또는 FECreateEndUserLicenseV1), Certify 및 GetClientLicensorCert(또는 FECreatePublishingLicenseV1)당 한 번씩만 호출합니다.|
 |LoadEventsForMap|단일 문서에 대한 맵 보기로 이동하도록 문서 추적 사이트에서 호출합니다.|
 |LoadEventsForSummary|단일 문서에 대한 타임라인 보기로 이동하도록 문서 추적 사이트에서 호출합니다.|
 |LoadEventsForTimeline|단일 문서에 대한 맵 보기로 이동하도록 문서 추적 사이트에서 호출합니다.|
@@ -206,10 +208,8 @@ Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에
 |ServerCertify|RMS 사용 클라이언트(예: SharePoint)에서 서버를 인증하도록 호출합니다.|
 |SetUsageLogFeatureState|사용 현황 로깅을 사용하도록 호출합니다.|
 |SetUsageLogStorageAccount|Azure RMS 로그의 위치를 지정하도록 호출합니다.|
-|SignDigest|서명 용도로 키를 사용할 때 호출합니다. 대개 AcquireLicence(또는 FECreateEndUserLicenseV1), Certify 및 GetClientLicensorCert(또는 FECreatePublishingLicenseV1)당 한 번씩만 호출합니다.|
 |UpdateNotificationSettings|단일 문서에 대한 알림 설정을 변경하도록 문서 추적 사이트에서 호출합니다.|
 |UpdateTemplate|Azure 클래식 포털에서 기존 템플릿을 업데이트하도록 호출합니다.|
-
 
 
 ## Windows PowerShell 참조
@@ -240,6 +240,6 @@ Azure 권한 관리용 Windows PowerShell 사용에 대한 자세한 내용은 [
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

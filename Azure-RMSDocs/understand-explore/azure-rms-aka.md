@@ -1,20 +1,19 @@
 ---
 title: "Azure 권한 관리 별칭 | Azure RMS"
-description: 
-keywords: 
+description: "또한 Azure 권한 관리는 Azure 권한 관리 서비스라고 알려져 있지만 Azure에서 서비스로 실행하기 때문에 &quot;서비스&quot;는 종종 해당 이름에서 생략됩니다. AD RMS(Active Directory Rights Management Services)의 클라우드 버전으로, 처음에는 Windows RMS(Windows Rights Management Services)로 릴리스되었습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8629651780438c8a2ededbe1e761455cfce94a
-ms.openlocfilehash: 45e5660703efdbbc298fb08cc15db176500549e7
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3e9ecf77ec3e8e5c1246f587cdb583b7631d634e
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 45e5660703efdbbc298fb08cc15db176500549e7
 
 # Azure 권한 관리 - 별칭
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 또한 Azure Rights Management는 *Azure 권한 관리 서비스*라고 알려져 있지만 Azure에서 서비스로 실행하기 때문에 "서비스"는 종종 해당 이름에서 생략됩니다. *Active Directory Rights Management Services* (AD RMS)의 클라우드 버전으로 처음에 *Windows Rights Management Services* (Windows RMS)로 릴리스되었습니다.
@@ -43,6 +42,6 @@ Azure 권한 관리의 원래 이름은 *Microsoft Azure Active Directory Rights
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

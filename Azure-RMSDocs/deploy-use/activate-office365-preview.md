@@ -1,27 +1,26 @@
 ---
 title: "Office 365 관리 센터 미리 보기에서 Azure 권한 관리를 활성화하는 방법 | Azure RMS"
-description: 
-keywords: 
+description: "새 미리 보기 버전의 Office 365 관리 센터(Office 365 관리 센터 미리 보기)를 사용하는 경우에만 다음 지침을 따르세요."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/03/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6eae63c629ae7cfe2175a655eb4901c1707c0f1d
-ms.openlocfilehash: 1ac96ddb1569483236c4dc61f7bc38c99d43ead2
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 554b34c0aa2aa86a915a28d120f2ebaa9705c586
 
 
 ---
 
 # Office 365 관리 센터 미리 보기에서 Azure 권한 관리를 활성화하는 방법
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 새 미리 보기 버전의 Office 365 관리 센터(**Office 365 관리 센터 미리 보기**)를 사용하는 경우에만 다음 지침을 따르세요.
@@ -59,6 +58,6 @@ ms.openlocfilehash: 1ac96ddb1569483236c4dc61f7bc38c99d43ead2
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

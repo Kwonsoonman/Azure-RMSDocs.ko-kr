@@ -4,9 +4,9 @@ description: "15분 이내에 완료할 수 있는 5단계를 통해 조직에�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 0287f1408c7cd22d0254d135aaa267ec77246e45
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
 
 # Azure RMS 빠른 시작 4단계: 수신자에게 메일로 전송된 문서를 열도록 요청
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 다음으로 이동합니다. 
@@ -71,7 +71,7 @@ ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
 |--------------------------------|--------------------------|
 |Azure 권한 관리를 통해 보호되는 파일 보기에 대한 전체 지침|[Rights Management로 보호된 파일 보기 및 사용](../rms-client/sharing-app-view-use-files.md)|
 |무료 구독, 개인용 RMS 정보|[개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)|
-|메일 메시지에 첨부되는 두 가지 버전의 파일 정보|[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created-)|
+|메일 메시지에 첨부되는 두 가지 버전의 파일 정보|[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)|
 
 
 >[!div class="step-by-step"]
@@ -79,6 +79,6 @@ ms.openlocfilehash: 19f536e8d0353c7b0ccbd4de3df646352dc2d748
 [5단계 »](tutorial-step5.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

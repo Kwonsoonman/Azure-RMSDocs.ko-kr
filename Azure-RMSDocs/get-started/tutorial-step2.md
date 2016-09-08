@@ -4,17 +4,17 @@ description: "15분 이내에 완료할 수 있는 5단계를 통해 조직에�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 07/13/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f32cf2f3-29e2-429c-a0fd-b16cc482484a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 19eb18599d9d084b40cfe746f01eb8ce463c47ab
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: da706bcaf52d0519706898501c563a9a03231dd9
 
 # Azure RMS 빠른 시작 2단계: Rights Management 공유 응용 프로그램 설치
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 다음으로 이동합니다. 
@@ -62,7 +62,7 @@ Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)�
 |--------------------------------|--------------------------|
 |Windows용 Rights Management 공유 응용 프로그램의 로컬 설치 및 사용자 지침 정보|[Rights Management 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)|
 |스크립트를 이용한 Windows용 Rights Management 공유 응용 프로그램 설치 정보 및 자세한 기술 정보|[Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)|
-|기본 보호와 일반 보호 간의 차이를 이해하려면|[일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection-)|
+|기본 보호와 일반 보호 간의 차이를 이해하려면|[일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection)|
 
 
 >[!div class="step-by-step"]
@@ -70,6 +70,6 @@ Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)�
 [3단계 »](tutorial-step3.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,27 +1,26 @@
 ---
 title: "응용 프로그램이 Azure 권한 관리를 지원하는 방식 | Azure RMS"
-description: 
-keywords: 
+description: "다음 정보를 참조하여 Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 응용 프로그램과 Exchange, SharePoint 등의 서비스에서 Microsoft Azure 권한 관리를 통해 조직 데이터를 보호하는 방식을 파악할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/13/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16c2dbbce4234f41941bd3fd92d264df0ae685e2
-ms.openlocfilehash: 15167c4e7dbe0fd401e198c80524b39e4ded250d
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: df66b53238acecd4173b7d1bc57a611c403ec256
 
 
 ---
 
 # 응용 프로그램이 Azure 권한 관리를 지원하는 방식
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 다음 정보를 참조하여 Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 응용 프로그램과 Exchange, SharePoint 등의 서비스에서 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 통해 조직 데이터를 보호하는 방식을 파악할 수 있습니다. 
 > [!NOTE]
@@ -63,6 +62,6 @@ ms.openlocfilehash: 15167c4e7dbe0fd401e198c80524b39e4ded250d
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

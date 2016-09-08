@@ -1,27 +1,26 @@
 ---
 title: "Windows PowerShell을 사용하여 Azure 권한 관리 관리 | Azure RMS"
-description: 
-keywords: 
+description: "Office 365 관리 센터 또는 Azure 클래식 포털을 사용하여 Microsoft Azure RMS(권한 관리)를 활성화할 수 있지만 AADRM용 Windows PowerShell 모듈을 사용하여 활성화할 수도 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/18/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: bf1f684bc394ec3a1025f8c9ed3e57d07c598125
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 26988d2e9b6e2ff320e424fa94051afa0055d234
 
 
 ---
 
 # Windows PowerShell을 사용하여 Azure 권한 관리 관리
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 [!INCLUDE[o365_2](../includes/o365_2_md.md)] 관리 센터 또는 Azure 클래식 포털을 사용하여 Microsoft [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](Azure RMS)를 활성화할 수 있지만 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](AADRM)용 Windows PowerShell 모듈을 사용하여 활성화할 수도 있습니다.
 
@@ -36,7 +35,7 @@ ms.openlocfilehash: bf1f684bc394ec3a1025f8c9ed3e57d07c598125
 |-------------------|------------------------------|
 |온-프레미스 Rights Management(AD RMS 또는 Windows RMS)에서 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]로 마이그레이션|[Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx)|
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스에 연결/서비스 연결 끊기|[Connect-AadrmService](http://msdn.microsoft.com/library/azure/dn629415.aspx)<br /><br />[Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx)|
-|직접 테넌트 키 생성/관리 - BYOK(Bring Your Own Key) 시나리오|[Add-AadrmKey](http://msdn.microsoft.com/library/azure/dn629418.aspx)<br /><br />[Get-AadrmKeys](http://msdn.microsoft.com/library/azure/dn629420.aspx)|
+|직접 테넌트 키 생성/관리 - BYOK(Bring Your Own Key) 시나리오|[Use-AadrmKeyVaultKey](https://msdn.microsoft.com/library/azure/mt759829.aspx)<br /><br />[Get-AadrmKeys](http://msdn.microsoft.com/library/azure/dn629420.aspx)|
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스 활성화/비활성화|[Enable-Aadrm](http://msdn.microsoft.com/library/azure/dn629412.aspx)<br /><br />[Disable-Aadrm](http://msdn.microsoft.com/library/azure/dn629422.aspx)|
 |Azure Rights Management에 대한 사이트를 추적하는 문서를 비활성화 또는 활성화합니다.|[Disable-AadrmDocumentTrackingFeature](https://msdn.microsoft.com/library/azure/mt548471.aspx)<br /><br />[Enable-AadrmDocumentTrackingFeature](https://msdn.microsoft.com/library/azure/mt548469.aspx)<br /><br />[Get-AadrmDocumentTrackingFeature](https://msdn.microsoft.com/library/azure/mt548470.aspx)|
 |Azure Rights Management의 단계적 배포를 위해 온보딩 컨트롤을 구성합니다.|[Get-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857522.aspx)<br /><br />[Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx)|
@@ -54,6 +53,6 @@ ms.openlocfilehash: bf1f684bc394ec3a1025f8c9ed3e57d07c598125
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

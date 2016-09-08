@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 빠른 배포 가이드 | Azure RMS"
-description: 
-keywords: 
+description: "배포 및 사용 섹션의 구성 정보와 함께 이 가이드를 사용하면 구현할 특정 시나리오 목록에서 선택하여 Azure RMS(Azure 권한 관리)를 보다 빠르게 배포하고 사용할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 01c2436218e0d7fd80a31cdc037d9dc8933e42f2
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 93ef6397be2cd4799bd72975de72028ee6a898ed
 
 
 ---
 
 # Azure 권한 관리 빠른 배포 가이드
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 **배포 및 사용** 섹션의 구성 정보와 함께 이 가이드를 사용하면 구현할 특정 시나리오 목록에서 선택하여 Azure 권한 관리(Azure RMS)를 보다 빠르게 배포하고 사용할 수 있습니다.
 
@@ -147,6 +146,6 @@ IT 부서에서 Microsoft Azure 권한 관리(Azure RMS)를 엔터프라이즈 �
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

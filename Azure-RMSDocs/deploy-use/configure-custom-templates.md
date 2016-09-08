@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리용 사용자 지정 템플릿 구성 | Azure RMS"
-description: 
-keywords: 
+description: "Azure 권한 관리(Azure RMS)를 활성화하면, 액세스할 권한이 조직의 승인된 사용자로 제한되는 민감한 파일에 정책을 쉽게 적용할 수 있도록 두 가지의 기본 템플릿을 자동으로 사용할 수 있습니다. 이 두 개의 템플릿에는 다음의 권한 정책 제한이 있습니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/03/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e72b68c03ee7da58adaff96f3f4611a227214b0
-ms.openlocfilehash: 26afa04c5041d0b8c952d3d6b3da5a2215acda87
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 83db5e11a4603523d7c4a86921fbdafb5f6fbfb5
 
 
 ---
 
 # Azure 권한 관리용 사용자 지정 템플릿 구성
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 [Azure 권한 관리(Azure RMS)를 활성화](activate-service.md)하면 액세스 권한이 조직의 권한 있는 사용자로 제한되는 정책을 중요한 파일에 쉽게 적용할 수 있도록 두 가지 기본 템플릿을 자동으로 사용할 수 있습니다. 이 두 개의 템플릿에는 다음의 권한 정책 제한이 있습니다.
 
@@ -67,6 +66,6 @@ ms.openlocfilehash: 26afa04c5041d0b8c952d3d6b3da5a2215acda87
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

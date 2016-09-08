@@ -4,9 +4,9 @@ description: "이 항목에서는 권한 사용 응용 프로그램에 대한 �
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 982021a2e972023b04e6483348a7c27aa029e198
-ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 3b6ff46581921f69c47cad3d6d879c53320b9126
 
 
 ---
@@ -28,10 +28,6 @@ ms.openlocfilehash: 8308e2db84e13c6b8c85a1a3ae6c01fc0aabee75
 ## 프로덕션 사용권 계약 요청
 
  권한 관리 서비스 SDK 2.1을 사용하여 개발한 응용 프로그램을 릴리스하려면 먼저 프로덕션 사용권 계약을 신청하여 프로덕션 인증서를 얻어야 합니다.
-
-> [!IMPORTANT]
-> Azure 기반 RMS를 사용하여 클라이언트 응용 프로그램을 실행하려는 경우 고유한 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md)(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독) 항목을 참조하세요.
-> Azure RMS를 사용하여 실행하는 방법에 대한 자세한 내용은 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
 
 프로덕션 사용권 계약을 신청하면 인증서를 얻을 수 있습니다.
 
@@ -116,7 +112,8 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
 
 
 > [!IMPORTANT]
-> Azure RMS를 사용하여 RMS SDK 2.1 클라이언트 응용 프로그램을 실행하려면 고유한 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md)(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독) 항목을 참조하세요.
+> Azure 기반 RMS를 사용하여 클라이언트 응용 프로그램을 실행하려는 경우 고유한 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS](../get-started/requirements-subscriptions.md)(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독) 항목을 참조하세요.
+> Azure RMS를 사용하여 실행하는 방법에 대한 자세한 내용은 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
 
 -   Microsoft 다운로드 센터에서 [Microsoft Online Services 로그인 도우미](http://www.microsoft.com/en-us/download/details.aspx?id=28177)를 다운로드합니다.
 -   권한 사용 응용 프로그램 배포에 이 서비스 선택에 대한 필수 조건 확인이 포함되어 있는지 확인합니다.
@@ -135,6 +132,6 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

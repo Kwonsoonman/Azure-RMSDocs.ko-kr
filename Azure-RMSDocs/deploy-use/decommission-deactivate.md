@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 서비스 해제 및 비활성화 | Azure RMS"
-description: 
-keywords: 
+description: "조직에서 Azure RMS를 사용하여 콘텐츠를 보호할지 여부를 항상 제어할 수 있으며, 이 정보 보호 솔루션을 더 이상 사용하지 않는 경우에도 이전에 보호했던 콘텐츠에 계속 액세스할 수 있습니다. 이전에 보호하던 콘텐츠에 대해 지속적인 액세스가 필요하지 않은 경우 단순히 서비스를 비활성화하고 Azure 권한 관리 구독을 만료시키면 됩니다. 예를 들어 프로덕션 환경에 배포하기 전에 테스트를 완료한 경우 이처럼 서비스를 비활성화하는 것이 적절합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 8c114336551417fdbf1503ffc8350e3fc28e9c95
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 40e4997f67a078ec781f1e7800599554858777a8
 
 
 ---
 
 # Azure 권한 관리 서비스 해제 및 비활성화
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 조직에서 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)](Azure RMS)를 사용하여 콘텐츠를 보호할지 여부를 항상 제어할 수 있으며, 이 정보 보호 솔루션을 더 이상 사용하지 않는 경우에도 이전에 보호했던 콘텐츠에 계속 액세스할 수 있습니다. 이전에 보호하던 콘텐츠에 대해 지속적인 액세스가 필요하지 않은 경우 단순히 서비스를 비활성화하고 Azure 권한 관리에 대한 구독을 만료시키면 됩니다. 예를 들어 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 프로덕션 환경에 배포하기 전에 테스트를 완료한 경우 이와 같이 서비스를 비활성화할 수 있습니다.
 
@@ -92,6 +91,6 @@ Azure 권한 관리 테넌트 키가 있으면 온-프레미스에 권한 관리
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

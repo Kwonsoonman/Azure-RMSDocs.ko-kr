@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: "방법: 문서 추적 사용 | Azure RMS"
-description: 문서 추적 기능을 사용하려면 관련 메타데이터 및 서비스 등록 관리에 대한 몇 가지 간단한 사항을 이해해야 합니다.
-keywords:
+description: "문서 추적 기능을 사용하려면 관련 메타데이터 및 서비스 등록 관리에 대한 몇 가지 간단한 사항을 이해해야 합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 70E10936-7953-49B0-B0DC-A5E7C4772E60
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 7afec3a7e0699d590e99dfbb95749f7093baff88
+
 
 ---
 
@@ -67,6 +63,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

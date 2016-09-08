@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리에 대한 사용 권한 구성 | Azure RMS"
-description: 
-keywords: 
+description: "Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 설정하고 템플릿을 사용하지 않는 경우 직접 사용 권한을 구성해야 합니다. 또한 Azure RMS에 대한 사용자 지정 템플릿을 구성할 때 선택한 사용 권한은 사용자, 관리자 또는 구성된 서비스에서 해당 템플릿을 선택할 경우 자동으로 적용됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/09/2016
+ms.date: 08/25/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60f25cdcdabbfbb61072a95e39f84fed79cad871
-ms.openlocfilehash: e656729fa9ea926681e560f40c4f43ce320a0d5e
+ms.sourcegitcommit: e1f1bef9ce87dcffb8d3da920f19198aa253e8e6
+ms.openlocfilehash: bbfb00822a03609f5b81808e1e1c4cad8c02be0b
 
 
 ---
 
 # Azure 권한 관리에 대한 사용 권한 구성
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 설정하고 템플릿을 사용하지 않는 경우 직접 사용 권한을 구성해야 합니다. 또한 Azure RMS에 대한 사용자 지정 템플릿을 구성할 때 선택한 사용 권한은 사용자, 관리자 또는 구성된 서비스에서 해당 템플릿을 선택할 경우 자동으로 적용됩니다. 예를 들어 Azure 클래식 포털에서 사용 권한의 논리적 그룹화를 구성하는 역할을 선택하거나 개별 권한을 구성할 수 있습니다.
 
@@ -40,7 +39,7 @@ Azure Rights Management(RMS)를 사용하여 파일 또는 메일에 보호를 �
 |일반 이름: **전달** <br /><br />정책에서 인코딩: **FORWARD**|전자 메일 메시지를 전달하고 **받는 사람** 및 **참조** 줄에 받는 사람을 추가하는 옵션을 사용할 수 있게 합니다. 이 권한은 문서에 적용되지 않고 메일 메시지에만 적용됩니다.<br /><br />전달자가 전달 동작의 일부로 다른 사용자에게 권한을 부여할 수 없게 합니다.|Office 사용자 지정 권한: **전달 금지** 표준 정책을 사용하는 경우 거부됩니다.<br /><br />Azure 클래식 포털의 이름: **전달**<br /><br />AD RMS 템플릿의 이름: **전달** <br /><br />API 상수 또는 값: `IPC_EMAIL_FORWARD L"FORWARD"`|
 |일반 이름: **모든 권한** <br /><br />정책에서 인코딩: **OWNER**|문서에 대한 모든 권한을 부여하며 사용 가능한 모든 작업을 수행할 수 있습니다.<br /><br />보호를 제거하고 문서를 다시 보호하는 기능이 포함됩니다.|Office 사용자 지정 권한: **모든 권한** 사용자 지정 옵션의 일부로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **모든 권한**<br /><br />AD RMS 템플릿의 이름: **모든 권한** <br /><br />API 상수 또는 값: `IPC_GENERIC_ALL L"OWNER"`|
 |일반 이름: **인쇄** <br /><br />정책에서 인코딩: **PRINT**|콘텐츠 인쇄 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: 사용자 지정 권한에서 **콘텐츠 인쇄** 옵션의 일부로 제공됩니다. 받는 사람별 설정이 아닙니다.<br /><br />Azure 클래식 포털의 이름: **인쇄**<br /><br />AD RMS 템플릿의 이름: **인쇄** <br /><br />API 상수 또는 값: `IPC_GENERIC_PRINT L"PRINT"`|
-|일반 이름: **회신** <br /><br />정책에서 인코딩: **PRINT**|**받는 사람** 또는 **참조** 줄의 변경을 허용하지 않고 메일 클라이언트에서 **회신** 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **회신**<br /><br />AD RMS 템플릿의 이름: **회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLY`|
+|일반 이름: **회신** <br /><br />정책에서 인코딩: **REPLY**|**받는 사람** 또는 **참조** 줄의 변경을 허용하지 않고 메일 클라이언트에서 **회신** 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **회신**<br /><br />AD RMS 템플릿의 이름: **회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLY`|
 |일반 이름: **전체 회신** <br /><br />정책에서 인코딩: **REPLYALL**|메일 클라이언트에서 **전체 회신** 옵션을 사용할 수 있게 하지만 사용자가 **받는 사람** 또는 **참조** 줄에 받는 사람을 추가할 수 없습니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **전체 회신**<br /><br />AD RMS 템플릿의 이름: **전체 회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
 |일반 이름: **보기, 열기, 읽기** <br /><br />정책에서 인코딩: **VIEW**|사용자가 문서를 열고 콘텐츠를 시각화할 수 있게 합니다.|Office 사용자 지정 권한: **읽기** 사용자 지정 정책의 **보기** 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **보기**<br /><br />AD RMS 템플릿의 이름: **전체 회신** <br /><br />API 상수 또는 값: `IPC_GENERIC_READ L"VIEW"`|
 |일반 이름: **복사** <br /><br />정책에서 인코딩: **EXTRACT**|문서의 데이터(화면 캡처 포함)를 동일한 문서나 다른 문서에 복사하는 옵션을 사용할 수 있게 합니다.<br /><br />일부 응용 프로그램에서는 전체 문서를 보호되지 않은 형태로 저장할 수도 있습니다.|Office 사용자 지정 권한: **읽기 권한이 있는 사용자에게 내용 복사 허용** 사용자 지정 정책 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **콘텐츠 복사 및 추출**<br /><br />AD RMS 템플릿의 이름: **추출** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
@@ -102,6 +101,6 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

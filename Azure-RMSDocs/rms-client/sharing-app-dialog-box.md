@@ -1,27 +1,26 @@
 ---
 title: "Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션 | Azure RMS"
-description: 
-keywords: 
+description: "이 정보를 사용하여 RMS 공유 응용 프로그램 보호 추가 대화 상자 또는 보호된 항목 공유 대화 상자에서 옵션을 지정하게 합니다. 공유하는 파일을 보호하거나 준비된 파일을 보호하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67129d6cdac124947fc07aa4d42523686227752e
-ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: aa0f5456d17564183317e3e693ae63adb8c597c5
 
 
 ---
 
 # Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 이 정보를 사용하여 RMS 공유 응용 프로그램 **보호 추가** 대화 상자 또는 **보호된 항목 공유** 대화 상자에서 옵션을 지정하게 합니다. [공유하는 파일을 보호](sharing-app-protect-by-email.md)하거나 [준비된 파일을 보호](sharing-app-protect-in-place.md)하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다.
 
@@ -79,6 +78,6 @@ ms.openlocfilehash: ed2ab42174ce5d83fd60ace1c394515db1450e3d
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

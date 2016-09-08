@@ -1,17 +1,16 @@
 ---
 title: "Azure Information Protection에 대한 전역 정책 설정을 구성하는 방법 | Azure Rights Management"
-description: 
-author: cabailey
+description: "Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 적용되는 세 가지 설정이 있습니다."
 manager: mbaldwin
 ms.date: 08/08/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: b2263c212a1b869b778767493645f10ad821828f
-ms.openlocfilehash: 508161474bf6fd7406668de3976206947de254de
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: c48f5488e49a54b970f76012e0f2f17fe4158691
 
 
 ---
@@ -68,6 +67,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

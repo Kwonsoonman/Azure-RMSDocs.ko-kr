@@ -1,27 +1,26 @@
 ---
 title: "개인용 RMS 및 Azure 권한 관리 | Azure RMS"
-description: 
-keywords: 
+description: "개인용 RMS는 Microsoft Azure 권한 관리(Azure RMS)를 통해 보호되는 중요한 파일을 전송받았으나 해당 IT 부서가 Azure에서 해당 사용자에 대한 계정을 관리하지 않아 인증이 불가능한 사용자를 위한 무료 셀프 서비스 구독입니다. IT 부서에서 Office 365가 없거나 Azure 서비스를 사용하지 않는 경우를 예로 들 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 6a27d5a2a1bad24521a551465fd9324f2a826376
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 2e80c1e02e47d07678b38f6d6cb229a9db8307d4
 
 
 ---
 
 # 개인용 RMS 및 Azure 권한 관리
 
-*적용 대상: Azure 권한 관리*
+>*적용 대상: Azure 권한 관리*
 
 개인용 RMS는 Microsoft Azure 권한 관리(Azure RMS)를 통해 보호되는 중요한 파일을 전송받았으나 해당 IT 부서가 Azure에서 해당 사용자에 대한 계정을 관리하지 않아 인증이 불가능한 사용자를 위한 무료 셀프 서비스 구독입니다. IT 부서에서 Office 365가 없거나 Azure 서비스를 사용하지 않는 경우를 예로 들 수 있습니다.
 
@@ -42,6 +41,6 @@ Windows 컴퓨터에서 권한 관리 공유 응용 프로그램을 사용하여
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -4,9 +4,9 @@ description: "메일 알림을 사용하면 누군가가 보호된 콘텐츠에 
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b2234f2209962d3dfda10958e740e04a5e5a4f13
-ms.openlocfilehash: 54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: dc7b6fe403a95eae50e81ca87e46e68d412535c7
 
 
 ---
@@ -67,6 +67,6 @@ ms.openlocfilehash: 54fc5037eaaa5c9ae2557aa6e4c67aa99a4143e6
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

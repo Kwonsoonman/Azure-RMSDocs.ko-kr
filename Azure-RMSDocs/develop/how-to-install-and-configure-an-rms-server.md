@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: "방법: RMS 서버 설치, 구성 및 테스트 | Azure RMS"
-description: 권한 사용 응용 프로그램 테스트에 사용할 RMS 서버를 설치 및 구성합니다.
-keywords:
+description: "권한 사용 응용 프로그램 테스트에 사용할 RMS 서버를 설치 및 구성합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 06/28/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
+ms.openlocfilehash: d046e7f6bbe867b6bc867483441bb0cc5c20df82
+
 
 ---
 
@@ -65,12 +61,13 @@ ms.suite: ems
 
     RMS 서버에서 테스트하기 위해 Rights Management Service Client 2.1이 RMS 서버를 검색하고 통신할 수 있도록 서버 쪽 검색 또는 클라이언트 쪽 검색을 구성합니다.
 
-    > [!Note] Azure RMS에서 테스트하려는 경우 검색 구성은 필요하지 않습니다.
+    > [!Note]
+    > Azure RMS에서 테스트하려는 경우 검색 구성은 필요하지 않습니다.
 
   - 서버 쪽 검색에서는 관리자가 RMS 루트 클러스터에 대한 SCP(서비스 연결 지점)를 Active Directory에 등록하며 클라이언트는 Active Directory를 쿼리하여 SCP를 검색하고 서버와의 연결을 설정합니다.
   - 클라이언트 쪽 검색에서는 RMS Client 2.1을 실행 중인 컴퓨터의 레지스트리에서 RMS 서비스 검색 설정을 구성합니다. 이러한 설정을 통해 RMS Client 2.1이 사용할 RMS 서버를 확인합니다. 설정이 있으면 서버 쪽 검색이 수행되지 않습니다.
 
-  클라이언트 쪽 검색을 구성하기 위해 RMS 서버를 가리키도록 다음 레지스트리 키를 설정할 수 있습니다. 서비스 쪽 검색을 구성하는 방법에 대한 자세한 내용은 [RMS Client 2.0 배포 참고 사항](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) 항목을 참조하세요.
+  클라이언트 쪽 검색을 구성하기 위해 RMS 서버를 가리키도록 다음 레지스트리 키를 설정할 수 있습니다. 서비스 쪽 검색을 구성하는 방법에 대한 자세한 내용은 [RMS Client 2.0 배포 참고 사항](https://technet.microsoft.com/library/jj159267(WS.10).aspx) 항목을 참조하세요.
 
 1. **EnterpriseCertification**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
@@ -80,9 +77,11 @@ ms.suite: ems
 2. **EnterprisePublishing**
         HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **값**: (기본값): [**http|https**]: //RMSClusterName/**_wmcs/Licensing**
 
->[!NOTE] 기본적으로 이러한 키는 레지스트리에 없으며 만들어야 합니다.
+>[!NOTE] 
+> 기본적으로 이러한 키는 레지스트리에 없으며 만들어야 합니다.
 
->[!IMPORTANT] 64비트 버전의 Windows에서 32비트 응용 프로그램을 실행하는 경우 다음 키 위치에서 이러한 키를 설정해야 합니다.<p>
+>[!IMPORTANT] 
+> 64비트 버전의 Windows에서 32비트 응용 프로그램을 실행하는 경우 다음 키 위치에서 이러한 키를 설정해야 합니다.<p>
   ```    
   HKEY_LOCAL_MACHINE
     SOFTWARE
@@ -96,6 +95,7 @@ ms.suite: ems
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Aug16_HO4-->
 
 

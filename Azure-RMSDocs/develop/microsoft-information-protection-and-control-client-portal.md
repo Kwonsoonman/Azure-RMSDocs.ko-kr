@@ -4,9 +4,9 @@ description: "RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 또는 Azur
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cbdb969e9910142f49b078069fc578059f9d8785
-ms.openlocfilehash: bbe381054648a6b68818f3964f6cfefd5da0829c
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: ba0b6c3835bb5e1c67f1df3095e6e5f1f474b977
 
 
 ---
@@ -40,7 +40,7 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 
 |항목|설명|
 |-----|--------|
-|[개요](ad-rms-overview.md)|RMS(권한 관리 서비스)는 디지털 정보의 무단 사용을 방지하는 정보 보호 기술입니다.|
+|[개요](ad-rms-overview.md)|RMS(권한 관리 서비스)는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다.|
 |[시작하기](getting-started-with-ad-rms-2-0.md)|RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다.|
 |[릴리스 정보](release-notes-rtm.md)|이 항목에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.|
 |[개발자 노트](developer-notes.md)|이 섹션에서는 중요한 여러 개발 시나리오에 대한 특정 지침을 제공합니다.|
@@ -59,6 +59,6 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

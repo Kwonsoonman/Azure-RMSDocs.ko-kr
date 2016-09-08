@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS 요구 사항&#58; Azure 권한 관리를 지원하는 온-프레미스 서버 | Azure RMS"
-description: 
-keywords: 
+description: "다음 온-프레미스 서버 제품은 Azure RMS 커넥터를 사용할 경우 Azure RMS에서 지원되며, Azure RMS 커넥터는 온-프레미스 서버와 Azure RMS 사이에서 통신 인터페이스(릴레이) 역할을 합니다. 또한 이 구성을 사용하려면 Active Directory 포리스트와 Azure Active Directory 간의 디렉터리 동기화를 구성해야 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: cd8b8d18e146fcc0864565a603b47b2b074af2b2
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 7e718d8178dd7c4b18ea7a19eb3165ee06dc4b36
 
 # Azure RMS 요구 사항: Azure RMS를 지원하는 온-프레미스 서버
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 다음 온-프레미스 서버 제품은 Azure RMS 커넥터를 사용할 경우 Azure RMS에서 지원되며, Azure RMS 커넥터는 온-프레미스 서버와 Azure RMS 사이에서 통신 인터페이스(릴레이) 역할을 합니다. 또한 이 구성을 사용하려면 Active Directory 포리스트와 Azure Active Directory 간의 디렉터리 동기화를 구성해야 합니다.
 
@@ -62,6 +61,6 @@ RMS 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

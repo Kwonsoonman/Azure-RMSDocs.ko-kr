@@ -1,27 +1,26 @@
 ---
 title: "Azure 클래식 포털에서 Azure 권한 관리를 활성화하는 방법 | Azure RMS"
-description: 
-keywords: 
+description: "Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Rights Management Premium 구독이 있는 경우입니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 06/27/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b214d7951820c8cb98c5d6f81af3325597ea72ec
-ms.openlocfilehash: 9cde79791e8c2b04d1d7622f5aa69d654a70646e
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 573aa437d8449212bd2f22b532342e4c7e3a1be6
 
 
 ---
 
 # Azure 클래식 포털에서 Azure 권한 관리를 활성화하는 방법
 
-*적용 대상: Azure 권한 관리*
+>*적용 대상: Azure 권한 관리*
 
 
 Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Rights Management Premium 구독이 있는 경우입니다.
@@ -59,6 +58,6 @@ Rights Management 서비스가 사용되도록 설정되고 사용할 준비가 
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -1,20 +1,19 @@
 ---
 title: "사용자 지정 템플릿 만들기, 구성 및 게시 | Azure RMS"
-description: 
-keywords: 
+description: "Azure 클래식 포털에서 사용자 지정 템플릿을 만들고 관리합니다. 이 작업은 Azure 클래식 포털에서 직접 수행할 수도 있고, Office 365 관리 센터에 로그인하여 Rights Management의 고급 기능을 선택해도 됩니다. 그러면 Azure 클래식 포털로 리디렉션됩니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/15/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5737594c679be0702761014425e104e5eade59f3
-ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: 64beb891fda54da3718a322f6628a2987ff35111
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: c240502f2e88ec61bcbee6be778e77a0d5aee66b
 
 # 사용자 지정 템플릿 만들기, 구성 및 게시
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 Azure 클래식 포털에서 사용자 지정 템플릿을 만들고 관리합니다. 이 작업은 Azure 클래식 포털에서 직접 수행할 수도 있고, Office 365 관리 센터에 로그인하여 Rights Management의 **고급 기능**을 선택해도 됩니다. 그러면 Azure 클래식 포털로 리디렉션됩니다.
@@ -56,7 +55,7 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
         1.  왼쪽 창에서 **ACTIVE DIRECTORY**를 클릭합니다.
 
-        2.  **Active Directory** 페이지에서 **권한 관리**를 클릭합니다.
+        2.  **Active Directory** 페이지에서 **Rights Management**를 클릭합니다.
 
         3.  Rights Management에 대해 관리할 디렉터리를 선택합니다.
 
@@ -167,6 +166,6 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

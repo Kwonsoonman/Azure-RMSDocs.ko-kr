@@ -1,27 +1,26 @@
 ---
 title: "Azure 권한 관리 개요 | Azure RMS"
-description: 
-keywords: 
+description: "Microsoft Azure RMS(Azure 권한 관리)는 조직의 중요한 정보를 무단 액세스로부터 보호하고 이 정보를 사용하는 방법을 제어할 수 있도록 지원하는 클라우드 서비스입니다. Azure 권한 관리는 클라우드 서비스이며 다른 Microsoft 클라우드 서비스 및 응용 프로그램(Office 365, Azure Active Directory 등)에 통합되었습니다. 또한 기간 업무 응용 프로그램 및 소프트웨어 공급 업체의 정보 보호 솔루션이 온-프레미스에 있는지 아니면 클라우드에 있는지와 상관없이 해당 응용 프로그램 및 솔루션과 함께 사용할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 05/03/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 965581c8-be3c-43b4-8145-5cefd29c7636
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fdedb0f1064e98500d3b4edcee283c514851d446
-ms.openlocfilehash: a8c9a55977a285cd30872beeb160b07ce02edcce
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 9d6c68c01cbd410def904f7cf256ffe9a5a5417b
 
 
 ---
 
 # Azure 권한 관리 개요
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 Microsoft Azure RMS(Azure 권한 관리)는 조직의 중요한 정보를 무단 액세스로부터 보호하고 이 정보를 사용하는 방법을 제어할 수 있도록 지원하는 클라우드 서비스입니다. Azure 권한 관리는 클라우드 서비스이며 다른 Microsoft 클라우드 서비스 및 응용 프로그램(Office 365, Azure Active Directory 등)에 통합되었습니다. 또한 기간 업무 응용 프로그램 및 소프트웨어 공급 업체의 정보 보호 솔루션이 온-프레미스에 있는지 아니면 클라우드에 있는지와 상관없이 해당 응용 프로그램 및 솔루션과 함께 사용할 수 있습니다. 
 
@@ -40,6 +39,6 @@ Azure 권한 관리를 다른 이름으로 알고 있는 경우 [서비스에 �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

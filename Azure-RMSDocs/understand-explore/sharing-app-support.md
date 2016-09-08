@@ -1,20 +1,19 @@
 ---
 title: "Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램 | Azure RMS"
-description: 
-keywords: 
+description: "RMS 공유 응용 프로그램은 Office 2010을 지원하는 데 필요하며 Windows 컴퓨터, Mac 컴퓨터, 모바일 장치에서 사용해도 좋은 무료 다운로드 가능 응용 프로그램입니다. 이 응용 프로그램의 장점 중 하나는 기본적으로 권한 관리를 지원하지 않는 응용 프로그램과 파일에 대해서도 일반적인 보호를 적용할 수 있으므로 모든 파일을 보호할 수 있다는 점입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f355da35dff62ecee111737eb1793ae286dc93e
-ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 6304c5c29e2dab176fb9d5a617e1467af00ab504
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 02f1cf60bdafe748f16d9defa1c8b0cc8a61efb0
 
 # Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 RMS 공유 응용 프로그램은 Office 2010을 지원하는 데 필요하며 Windows 컴퓨터, Mac 컴퓨터, 모바일 장치에서 사용해도 좋은 무료 다운로드 가능 응용 프로그램입니다. 이 응용 프로그램의 장점 중 하나는 기본적으로 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 지원하지 않는 응용 프로그램과 파일에 대해서도 일반적인 보호를 적용할 수 있으므로 모든 파일을 보호할 수 있다는 것입니다. 다양한 보호 수준에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)에서 [보호 수준 - 기본 및 일반](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요.
 
@@ -59,6 +58,6 @@ Windows 컴퓨터에서 RMS 공유 응용 프로그램은 사용자가 이미 �
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

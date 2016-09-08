@@ -4,9 +4,9 @@ description: "15분 이내에 완료할 수 있는 5단계를 통해 조직에�
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2016
+ms.date: 08/24/2016
 ms.topic: get-started-article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: 
 ms.assetid: aa06826d-c227-449b-93ea-6ce394608997
@@ -18,8 +18,8 @@ ms.suite: ems
 ms.tgt_pltfrm: 
 ms.custom: 
 translationtype: Human Translation
-ms.sourcegitcommit: ed50d87138c428fadfd22cd5b3ef3c7f7e421848
-ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
+ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
+ms.openlocfilehash: 5884914e2ff69c4db40d4e874541f42b9a0e7df5
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 # Azure RMS 빠른 시작 5단계: 보호된 문서 추적
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 
 다음으로 이동합니다. 
@@ -56,7 +56,7 @@ ms.openlocfilehash: 9c335e054d4aed1a8cca654420a580d02a4c849f
 
 1.  Outlook을 사용하여 **홈** 탭의 **RMS** 그룹에서 **사용 추적**을 클릭합니다.
 
-2.  **보호와 공유를 원하는 대로** 페이지가 보이면 **로그인** 을 클릭하고 사용자 이름과 암호를 다시 입력합니다.
+2.  **보호와 공유를 원하는 대로** 페이지가 보이면 **로그인**을 클릭하고 사용자 이름과 암호를 다시 입력합니다.
 
 3.  메일에 첨부한 문서 **Confidential.docx**가 **공유 문서** 페이지에 표시됩니다. 이 시점에서는 이 파일이 유일하게 표시된 파일이지만, 보호된 문서를 더 공유하면 목록도 커집니다.
 
@@ -91,6 +91,6 @@ Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

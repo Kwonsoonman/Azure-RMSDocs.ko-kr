@@ -3,15 +3,15 @@ title: "Azure Information Protection 빠른 시작 자습서 | Azure 권한 관�
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/22/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 7d599aef75272eff5527294141bb0eb98d041b1b
-ms.openlocfilehash: 419bfcde6915bd6c8db9cf5ddb268f6d70c83768
+ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
+ms.openlocfilehash: 6fbe4bd32f1aef57b3bf42aeedea46f618fb5540
 
 
 ---
@@ -31,7 +31,7 @@ Azure Information Protection의 미리 보기 릴리스를 사용하여 이 자�
 ## 필수 구성 요소 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-- Azure Information Protection의 미리 보기 릴리스에 대한 액세스 권한을 제공하는, Azure 권한 관리를 포함하는 모든 구독. Azure Information Protection은 Azure 권한 관리를 지원하는 모든 지역에서 사용할 수 있습니다. 사용 가능한 구독에 대한 자세한 내용과 무료 평가판 링크는 [Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독](../get-started/requirements-subscriptions.md)을 참조하세요.
+- Azure RMS를 사용하여 Office 문서 및 전자 메일을 보호하는 기능이 포함된 Office 365 구독입니다. 사용 가능한 구독 및 무료 평가판 링크에 대한 자세한 내용은 Azure RMS 요구 사항 설명서의 [Office 365 구독](../get-started/requirements-subscriptions.md#office-365-subscription) 섹션을 참조하세요.
 
 - Azure 포털에 액세스하여 Azure Information Protection 정책을 구성할 수 있는 Azure 구독. 조직에서 아직 Azure를 구독하지 않은 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. [Azure 시작](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따르세요.
 
@@ -51,6 +51,6 @@ Azure Information Protection의 미리 보기 릴리스를 사용하여 이 자�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

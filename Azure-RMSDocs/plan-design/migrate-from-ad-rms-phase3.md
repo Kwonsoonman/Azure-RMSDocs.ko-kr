@@ -1,27 +1,26 @@
 ---
 title: "AD RMS에서 Azure 권한 관리로 마이그레이션 - 3단계 | Azure RMS"
-description: 
-keywords: 
+description: "AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 3단계에는 다음 정보를 사용합니다. 이러한 절차는 AD RMS에서 Azure 권한 관리로 마이그레이션의 6~7단계를 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/17/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7dd88d90357c99c69fe4fdde67c1544595e02f8
-ms.openlocfilehash: 75cce1d0e5a1cff0d4f6609d0f084fda1af62951
+ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
+ms.openlocfilehash: cc605ff22c205846186f7e3ec819ecd826dba4a6
 
 
 ---
 
 # 마이그레이션 3단계 - 지원 서비스 구성
 
-*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+>*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
 
 
 AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 3단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure 권한 관리로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 6-7단계를 설명합니다.
@@ -42,7 +41,7 @@ Azure RMS 테넌트 키 토폴로지로 **고객 관리(BYOK)**를 선택한 경
 ## 7단계. RMS 커넥터 배포
 AD RMS에서 Exchange Server 또는 SharePoint Server의 IRM(정보 권한 관리) 기능을 사용한 경우 먼저 이러한 서버에서 IRM을 사용하지 않도록 설정하고 AD RMS 구성을 제거해야 합니다. 그런 다음 온-프레미스 서버와 Azure RMS 간에 통신 인터페이스(릴레이) 역할을 하는 RMS(권한 관리) 커넥터를 배포합니다.
 
-이 단계를 위해 마지막으로, 여러 TPD를 메일 메시지를 보호하는 데 사용된 Azure RMS로 가져온 경우 모든 TPD URL을 RMS 커넥터로 리디렉션하도록 Exchange Server 컴퓨터의 레지스트리를 수동으로 편집해야 합니다.
+이 단계를 위해 마지막으로, 여러 AD RMS 데이터 구성 파일(.xml)을 메일 메시지를 보호하는 데 사용된 Azure RMS로 가져온 경우 모든 트러스트된 게시 도메인 URL을 RMS 커넥터로 리디렉션하도록 Exchange Server 컴퓨터의 레지스트리를 수동으로 편집해야 합니다.
 
 > [!NOTE]
 > 시작하기 전에 [Azure RMS를 지원하는 온-프레미스 서버](../get-started/requirements-servers.md)에서 Azure RMS가 지원하는 온-프레미스 서버 버전을 확인합니다.
@@ -95,7 +94,7 @@ AD RMS에서 Exchange Server 또는 SharePoint Server의 IRM(정보 권한 관�
 
 #### Exchange만 및 여러 TPD: 레지스트리 편집
 
--   각 Exchange Server에서 가져온 각 추가 TPD에 대해 다음 레지스트리 키를 수동으로 추가하여 TPD URL을 RMS 커넥터로 리디렉션합니다. 이러한 레지스트리 항목은 마이그레이션에만 관련되며 Microsoft RMS 커넥터용 서버 구성 도구를 통해 추가되지 않습니다.
+-   각 Exchange Server에서 가져온 각 추가 구성 데이터 파일(.xml)에 대해 다음 레지스트리 키를 수동으로 추가하여 트러스트된 게시 도메인 URL을 RMS 커넥터로 리디렉션합니다. 이러한 레지스트리 항목은 마이그레이션에만 관련되며 Microsoft RMS 커넥터용 서버 구성 도구를 통해 추가되지 않습니다.
 
     이와 같이 레지스트리를 편집할 때는 다음 지침을 따르세요.
 
@@ -215,6 +214,6 @@ Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것
 마이그레이션을 계속하려면 [4단계 - 사후 마이그레이션 작업](migrate-from-ad-rms-phase4.md)으로 이동합니다.
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

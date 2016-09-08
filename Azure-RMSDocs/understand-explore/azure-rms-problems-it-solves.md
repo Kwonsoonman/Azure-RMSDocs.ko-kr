@@ -1,20 +1,19 @@
 ---
 title: "Azure RMS를 통해 해결할 수 있는 문제 | Azure RMS"
-description: 
-keywords: 
+description: "다음 표를 통해 조직에 해당될 수 있는 비즈니스 요구 사항이나 문제 및 Azure RMS가 이러한 사항을 해결하는 방법을 파악할 수 있습니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/13/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06f615c993d54ab1e8e4a94d7414302481d919b4
-ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
+ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
+ms.openlocfilehash: 7aec5c26acb78cd85eee614a603745f3ee5938a2
 
 
 ---
@@ -22,7 +21,7 @@ ms.openlocfilehash: 17756d4e641c10c0522f7a849634ae67630b363b
 
 # Azure RMS를 통해 해결할 수 있는 문제
 
-*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure 권한 관리, Office 365*
 
 다음 표를 통해 조직에 해당될 수 있는 비즈니스 요구 사항이나 문제 및 Azure RMS가 이러한 사항을 해결하는 방법을 파악할 수 있습니다.
 
@@ -73,6 +72,6 @@ Azure RMS는 다음과 같은 보안, 준수 및 규정 요구 사항을 지원�
 Azure RMS 작동에 대한 보다 기술적인 정보에 관심이 있는 경우 [Azure RMS 작동 방식](how-does-it-work.md)을 참조하세요. 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

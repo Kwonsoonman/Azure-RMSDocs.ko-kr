@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 72196edd630a1934f2c0b6e755771039fceaa795
+ms.sourcegitcommit: de012d0d85bff0e33fef0b4c53291a997d4b4e89
+ms.openlocfilehash: f89ed307eae4ee14f2e463f7fb6d7e2bd07eccd0
 
 
 ---
@@ -28,7 +28,7 @@ Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 
 
 -   [필수 구성 요소](#prerequisites)
 -   [선택 사항입니다.](#optional)
--   [개발 환경 구성](#configuring-your-development-environment_)
+-   [개발 환경 구성](#configuring-your-development-environment)
 -   [참고 항목](#see-also)
 
 ## 필수 구성 요소
@@ -150,6 +150,6 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

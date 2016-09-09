@@ -1,9 +1,9 @@
 ---
 title: "시나리오 - 회사 기밀 메일 보내기 | Azure RMS"
-description: "이 시나리오와 지원 사용자 문서에서는 조직의 모든 사용자가 조직 외부에서 읽을 수 없는 메일 통신을 안전하게 보낼 수 있도록 Azure 권한 관리를 사용합니다. 예를 들어 다른 조직의 사용자나 개인 메일 계정으로 메일 메시지를 전달하는 경우입니다. 메일과 모든 첨부 파일은 Azure 권한 관리 및 사용자가 메일 클라이언트에서 선택하는 템플릿에 의해 보호됩니다."
+description: "이 시나리오와 지원 사용자 문서에서는 조직의 모든 사용자가 조직 외부에서 읽을 수 없는 메일 통신을 안전하게 보낼 수 있도록 Azure 권한 관리를 사용합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 4bda209d2f66bb3a3ca1639a7ddfcfc3bccf51b1
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: e3245f7fb15f7081dbe4552eb9734a4915d1b6f1
 
 
 ---

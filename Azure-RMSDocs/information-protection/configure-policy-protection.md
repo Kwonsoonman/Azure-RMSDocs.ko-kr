@@ -1,5 +1,5 @@
 ---
-title: "Rights Management 보호를 적용하도록 레이블을 구성하는 방법 | Azure Rights Management"
+title: "Rights Management 보호를 적용하도록 레이블을 구성하는 방법| Azure Information Protection"
 description: "암호화, ID 및 권한 부여 정책을 통해 데이터 손실을 방지하는 권한 관리 서비스를 사용하여 가장 민감한 문서 및 메일을 보호할 수 있습니다. 이 보호는 권한 관리 템플릿을 사용하도록 레이블을 구성할 때 적용됩니다."
 manager: mbaldwin
 ms.date: 08/15/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 23e62c82a38e696b0708f3b599d24f3a0f337fd8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
 
 
 ---
@@ -57,7 +57,7 @@ Azure Rights Management 및 작동 방식에 대한 자세한 내용은 [Azure R
     
     대부분의 경우에서 **Azure RMS**를 선택합니다. HYOK*("Hold Your Own Key")*라고도 하는 이 구성에 수반되는 필수 조건 및 제한을 읽고 이해한 경우에만 AD RMS를 선택하세요. 자세한 내용은 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](configure-adrms-restrictions.md)을 참조하세요.
     
-4. Azure RMS를 선택한 경우: **Select RMS template**(RMS 템플릿 선택): 드롭다운 상자를 클릭하고 이 레이블이 있는 문서 및 메일을 보호하는 데 사용할 템플릿을 선택합니다.
+4. Azure RMS를 선택한 경우: **Select RMS template**(RMS 템플릿 선택) 드롭다운 상자를 클릭하고 이 레이블이 있는 문서 및 메일을 보호하는 데 사용할 템플릿 또는 권한 관리 옵션을 선택합니다.
 
     > [!NOTE] 
     > **Label**(레이블) 블레이드를 연 후 새 템플릿을 만든 경우 이 블레이드를 닫고 2단계로 돌아가세요. 그래야 새로 만든 템플릿을 선택할 수 있도록 Azure에서 검색됩니다.
@@ -78,6 +78,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

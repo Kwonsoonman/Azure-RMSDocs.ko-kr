@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection에 대한 새 레이블을 만드는 방법 | Azure Rights Management"
+title: "Azure Information Protection에 대한 새 레이블을 만드는 방법 | Azure Information Protection"
 description: "Azure Information Protection은 사용자 지정 가능한 기본 레이블과 함께 제공되지만 사용자의 Information Protection 표시줄에 표시되는 고유의 레이블을 만들 수도 있습니다."
 manager: mbaldwin
 ms.date: 08/10/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 96cbe6cbe823d2c90ec91cbf77ef7d96cc6a568c
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: b02c3e602a8178c0837104a88b360d041ecddc4d
 
 
 ---
@@ -52,6 +52,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection에 대한 전역 정책 설정을 구성하는 방법 | Azure Rights Management"
+title: "Azure Information Protection에 대한 전역 정책 설정을 구성하는 방법 | Azure Information Protection"
 description: "Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 적용되는 세 가지 설정이 있습니다."
 manager: mbaldwin
 ms.date: 08/08/2016
@@ -9,8 +9,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: c48f5488e49a54b970f76012e0f2f17fe4158691
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 872ea7da6f3b72a355a73c8b0589beda86ded20d
 
 
 ---
@@ -42,7 +42,7 @@ Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 
 
     - **Select the default label**(기본 레이블 선택): 이 옵션을 설정한 경우 레이블이 없는 문서와 전자 메일에 할당할 레이블을 선택합니다. 하위 레이블이 있는 경우에는 레이블을 기본값으로 설정할 수 없습니다. 
 
-    - **Users must provide justification when lowering the sensitivity level**(민감도를 낮출 때 사용자가 근거를 제공해야 함): 이 옵션을 **On**(켜기)으로 설정한 경우 사용자가 기존 문서 또는 전자 메일의 레이블을 민감도 수준이 보다 낮은 레이블로 변경(**Secret**(비밀)에서 **Public**(공개)으로)하면 이 작업에 대한 설명을 제공하라는 메시지가 표시됩니다. 예를 들어 사용자는 문서에 더 이상 민감한 정보가 포함되어 있지 않다고 설명할 수 있습니다. 작업 및 해당 근거는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램** > **Microsoft Azure Information Protection**에 기록됩니다.  
+    - **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함): 이 옵션을 **On**(켜기)으로 설정하고 이러한 작업 중 하나를 수행하면(예: **Secret**(비밀) 레이블을 **Personal**(개인)로 변경) 해당 작업에 대한 설명을 제공하라는 메시지가 표시됩니다. 예를 들어 사용자는 문서에 더 이상 민감한 정보가 포함되어 있지 않다고 설명할 수 있습니다. 작업 및 해당 근거는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램** > **Microsoft Azure Information Protection**에 기록됩니다.  
 
     ![새 분류가 하위 수준인 경우의 Azure Information Protection 프롬프트](../media/info-protect-lower-justification.png)
 
@@ -67,6 +67,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

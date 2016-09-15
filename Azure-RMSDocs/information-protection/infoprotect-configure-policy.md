@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection 정책 구성 | Azure 권한 관리"
+title: "Azure Information Protection 정책 구성 | Azure Information Protection"
 description: "Azure Information Protection 정책을 구성 및 게시하는 방법에 대한 자세한 정보입니다."
 author: cabailey
 manager: mbaldwin
@@ -10,8 +10,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 38ecc425-9bab-4e70-9436-eccbef0e3113
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 68f12f4a6ae7d45e5bfd17e7352e56f9c878168c
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 767579fd2c332c37811afa9ce0bc2a8bf48f9348
 
 
 ---
@@ -23,6 +23,6 @@ ms.openlocfilehash: 68f12f4a6ae7d45e5bfd17e7352e56f9c878168c
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

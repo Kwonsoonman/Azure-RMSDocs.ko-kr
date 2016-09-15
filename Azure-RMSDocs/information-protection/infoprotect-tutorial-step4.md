@@ -1,17 +1,17 @@
 ---
-title: "Azure Information Protection 빠른 시작 자습서 4단계 | Azure 권한 관리"
+title: "Azure Information Protection 빠른 시작 자습서 4단계 | Azure Information Protection"
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 4단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 2c04c749ff73050dc8a15dd984c33f700e3e6ed5
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 6d93723a6f7aaffec8d18cf289bff0752b53a2c9
 
     **Sensitivity**(민감도) 값이 **Personal**(비공개)로 변경되는 것을 확인할 수 있습니다.
 
-    ![Azure Information Protection 빠른 시작 자습서 4단계 - 낮추는 이유를 확인하는 메시지가 표시됨](../media/confirm-lowering.png)
+    ![Azure Information Protection 빠른 시작 자습서 4단계 - 낮추는 이유를 확인하는 메시지가 표시됨](../media/info-protect-lower-justification.png)
 
 ### 분류를 완전히 제거하려면:
 
@@ -77,6 +77,6 @@ Azure 포털에서 Information Protection 정책에 대한 설정을 변경할 �
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

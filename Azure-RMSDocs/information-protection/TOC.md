@@ -24,8 +24,9 @@
 ### [시각적 표시 구성](configure-policy-markings.md)
 ### [조건 구성](configure-policy-classification.md)
 ## [클라이언트 설치](info-protect-client.md)
+## [Azure Information Protection 소프트웨어 사용 조건](aip-software-license-terms.md)
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "시나리오 - SharePoint에 저장된 문서에 대한 제어 유지 | Azure RMS"
-description: "이 시나리오 및 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 SharePoint에 저장된 Office 문서가 보호된 라이브러리를 통해 계속 제어되도록 합니다. 예를 들어 사용자의 우발적이거나 의도적인 누출로부터 문서가 자동으로 보호되며, 문서가 다운로드되거나 동기화된 후에도 콘텐츠에 대한 액세스를 차단할 수 있습니다. 보호하려는 파일은 설계 문서 또는 계획에 대한 내부 공동 작업에 사용하거나 다른 결과물로 제공하기 위한 것일 수 있습니다. SharePoint용 보호된 라이브러리를 구성할 때 해당 라이브러리에 저장된 Office 파일은 Azure 권한 관리에 의해 보호됩니다."
+description: "이 시나리오 및 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 SharePoint에 저장된 Office 문서가 보호된 라이브러리를 통해 계속 제어되도록 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: f0dfe895820d33eab1d3a69c92e881287072f554
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
 
 
 ---

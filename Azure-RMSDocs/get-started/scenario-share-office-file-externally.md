@@ -1,9 +1,9 @@
 ---
 title: "시나리오 - 다른 조직의 사용자와 Office 파일 공유 | Azure RMS"
-description: "이 시나리오와 지원 사용자 문서에서는 사용자가 다른 조직의 사용자와 Office 파일을 안전하게 메일로 주고받을 수 있도록 Azure 권한 관리를 사용합니다. 예를 들어 Office 파일은 파트너를 위한 가격 목록 정보, 대리점을 위한 제품 목록 또는 배송 시간 표시줄과 잠재적 고객 목록이 포함된 Word 문서, Excel 스프레드시트 또는 PowerPoint 프레젠테이션일 수 있습니다. 사용자가 이러한 지침을 따르면 전자 메일 메시지에 첨부된 파일이 Azure 권한 관리를 통해 보호됩니다."
+description: "이 시나리오와 지원 사용자 문서에서는 사용자가 다른 조직의 사용자와 Office 파일을 안전하게 메일로 주고받을 수 있도록 Azure 권한 관리를 사용합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 9615e41666a08a1d66f4e0dbdedb06f02a8efd3e
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 
 ---

@@ -1,17 +1,17 @@
 ---
-title: "Azure Information Protection 빠른 시작 자습서 2단계 | Azure 권한 관리"
+title: "Azure Information Protection 빠른 시작 자습서 2단계 | Azure Information Protection"
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 2단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 679d03c499ccdd044444c73ebef8f59b281278cd
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 9125757ba2cce865d73acab341d3e3b6ff36ba57
 
 
 ---
@@ -37,7 +37,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     - 분류 레이블: **Personal**(비공개), **Public**(공개), **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 각 레이블의 용도를 이해하려면 각 레이블의 도구 설명을 읽어 보세요. **Secret**(비밀)에는 두 개의 하위 레이블 **All-Employees**(모든 직원)와 **My-Group**(내 그룹)이 있습니다. 이러한 하위 레이블은 분류가 하위 범주를 포함하는 방법의 예를 제공합니다.
 
-    - 기본 설정을 통해 **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 레이블에는 구성된 시각적 표시(예: 바닥글, 머리글, 워터마크)가 있으며 보호가 설정된 레이블은 없습니다. 또한 모든 문서와 메일에 레이블이 필요하지 않고, 기본 레이블이 없으며, 민감도를 낮출 때 사용자가 근거를 제공하지 않아도 되도록 세 가지 전역 설정은 설정되지 않습니다.
+    - 기본 설정을 통해 **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 레이블에는 구성된 시각적 표시(예: 바닥글, 머리글, 워터마크)가 있으며 보호가 설정된 레이블은 없습니다. 또한 모든 문서와 메일에 레이블이 필요하지 않고, 기본 레이블이 없으며, 분류 수준을 낮출 때 사용자가 근거를 제공하지 않아도 되도록 세 가지 전역 설정은 설정되지 않습니다.
 
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy.png)
 
@@ -45,7 +45,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 -  **Select the default label**(기본 레이블 선택): **Internal**(내부)로 설정합니다.
 
-- **Users must provide justification when lowering the sensitivity level**(민감도를 낮출 때 사용자가 근거를 제공해야 함): **On**(켜기)으로 설정합니다.
+- **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함): 이를 **On**(켜기)으로 설정합니다.
 
 이제 레이블 중 하나인 **Confidential**(기밀)의 설정을 변경합니다.
 
@@ -97,6 +97,6 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 [3단계 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

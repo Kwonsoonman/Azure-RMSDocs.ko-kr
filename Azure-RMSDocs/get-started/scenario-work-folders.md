@@ -1,9 +1,9 @@
 ---
 title: "시나리오 - 클라우드 폴더에 대해 지속적인 보호 구성 | Azure RMS"
-description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 클라우드 폴더에 있는 Office 문서에 영구적 보호 기능을 적용합니다. 클라우드 폴더는 Windows Server를 실행하는 파일 서버에 사용자가 PC와 장치에서 작업 파일에 액세스할 수 있는 일관된 방법을 제공하는 역할 서비스를 사용합니다. 클라우드 폴더는 파일을 보호하는 자체 암호화를 제공하지만 클라우드 폴더 환경 외부로 파일을 이동할 경우 이 보호 기능이 손실됩니다."
+description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 클라우드 폴더에 있는 Office 문서에 영구적 보호 기능을 적용합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 08/25/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: ce61f22be934ec9817a22737417514468b5c6528
+ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
+ms.openlocfilehash: 1fdb62af06a3011e1102df0df3f9b61bcdc67edd
 
 
 ---

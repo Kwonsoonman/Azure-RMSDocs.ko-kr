@@ -3,7 +3,7 @@ title: "Azure Information Protection 미리 보기 질문과 대답 | Azure Info
 description: "Azure Information Protection의 미리 보기 릴리스에 대한 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 55d56786150d38b36ae8185c4a7ac4c8a5c51ba4
+ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
+ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
 
 
 ---
@@ -82,7 +82,7 @@ Azure Information Protection은 클라우드 기반 솔루션입니다. 하이�
 
 ## 컴퓨터는 어떻게 Azure Information Protection에서 정책 정보를 가져오며 정책 정보는 얼마나 자주 새로 고쳐지나요?
 
-사용자가 Office 응용 프로그램을 열 때마다 Azure Information Protection 클라이언트는 최신 버전의 Azure Information Protection 정책이 있는지 확인합니다. 최신 버전이 있는 경우 클라이언트는 데이터를 보호하는 HTTPS 링크를 사용하여 최신 버전을 다운로드합니다. 
+사용자가 Office 응용 프로그램을 열 때마다 Azure Information Protection 클라이언트는 최신 버전의 Azure Information Protection 정책이 있는지 확인합니다. 또한 Office 응용 프로그램에서도 24시간마다 자동으로 확인합니다. 최신 버전이 있는 경우 클라이언트는 데이터를 보호하는 HTTPS 링크를 사용하여 최신 버전을 다운로드합니다. 
 
 새 Azure Information Protection 정책을 게시할 때 Office 응용 프로그램의 여러 인스턴스가 로드되는 경우 모든 인스턴스를 닫아 최신 버전의 정책을 가져와야 합니다. 예를 들어 Word 문서 두 개가 열려 있는 경우 하나의 문서에서만 업데이트된 Azure Information Protection 정책을 테스트하려면 두 Word 문서를 모두 닫고 최신 정책을 사용할 문서를 다시 엽니다.
 
@@ -129,7 +129,7 @@ Azure 포털에서 "신용 카드 번호" 또는 "주민등록번호"와 같은 
 
 ## 사용자에게 분류 수준을 변경하는 이유를 묻는 메시지를 표시할 수 있나요?
 
-예. 사용자에게 분류를 변경하는 이유를 묻는 메시지를 표시하려면 Azure 포털에서 **Users must provide justification when lowering the sensitivity level**(민감도를 낮출 때 사용자가 근거를 제공해야 함)을 **On**(켜기)으로 설정합니다. 사용자가 이렇게 할 때 해당 작업 및 변경 이유는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램** > **Microsoft Azure Information Protection**에 기록됩니다.
+예. 사용자에게 분류를 변경하는 이유를 묻는 메시지를 표시하려면 Azure 포털에서 **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)을 **On**(켜기)으로 설정합니다. 사용자가 이렇게 할 때 해당 작업 및 변경 이유는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램** > **Microsoft Azure Information Protection**에 기록됩니다.
 
 ## 콘텐츠가 분류된 후 자동으로 콘텐츠를 보호할 수 있나요?
 
@@ -187,6 +187,6 @@ Azure Information Protection에 의해 분류된 파일과 메일은 Azure Infor
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

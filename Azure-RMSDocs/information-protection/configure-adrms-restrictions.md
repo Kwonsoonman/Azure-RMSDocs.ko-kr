@@ -1,16 +1,16 @@
 ---
-title: "HYOK 제한 | Azure 권한 관리"
-description: "가장 중요한 문서와 메일을 보호하는 경우 일반적으로 Azure 권한 관리 보호를 적용하여 다음을 활용합니다."
+title: "HYOK 제한 | Azure Information Protection"
+description: Identify the limitations, prerequisites, and recommendations if you select AD RMS protection with Azure Information Protection. This solution is sometimes referred to as "hold your own key" (HYOK).
 manager: mbaldwin
-ms.date: 08/18/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: cb12abb4dfe96135317facf4284c0eae7ef38196
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: fe0f492b94cbcc437c722daae9c3c56820593566
 
 
 ---
@@ -94,6 +94,6 @@ AD RMS 보호에 대한 레이블을 구성하려면 [Rights Management 보호�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

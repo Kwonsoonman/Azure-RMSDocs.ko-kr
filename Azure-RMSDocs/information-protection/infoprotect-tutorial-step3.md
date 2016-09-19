@@ -1,17 +1,17 @@
 ---
-title: "Azure Information Protection 빠른 시작 자습서 3단계 | Azure 권한 관리"
+title: "Azure Information Protection 빠른 시작 자습서 3단계 | Azure Information Protection"
 description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 3단계입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: f5e15870a3a67f67261db9c3d1d735c126f48ee2
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
 
 1. Office가 설치된(그러나 Word는 현재 열려 있지 않은) PC에서 Microsoft 다운로드 센터로부터 [Azure Information Protection 클라이언트를 다운로드](https://www.microsoft.com/en-us/download/details.aspx?id=53018)합니다. 
 
-2. **AZInfoProtection.exe**를 실행하고 메시지의 지시에 따라 클라이언트를 설치합니다.
+2. **AzInfoProtection.exe**를 실행하고 메시지의 지시에 따라 클라이언트를 설치합니다.
 
     이 자습서에서는 방금 구성한 정책이 Azure에서 다운로드되고 설치된 경우 데모 정책을 바꿀 것이므로 데모 정책 설치 옵션의 선택 여부는 중요하지 않습니다. 그러나 Azure Information Protection에 연결하지 않고 기본 레이블을 경험해 보려는 경우 데모 정책 옵션을 사용할 수 있습니다. 
 
@@ -52,6 +52,6 @@ ms.openlocfilehash: 320cd688ba5aabcb966009907d568033149953e3
 [4단계 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

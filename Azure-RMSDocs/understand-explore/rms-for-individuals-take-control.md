@@ -1,9 +1,9 @@
 ---
 title: "관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법 | Azure RMS"
-description: "조직의 개인용 RMS 구독을 유료 구독으로 전환하지 않으려는 경우 다음과 같은 방법으로 조직용으로 만들어진 Azure 디렉터리에서 계속해서 사용자 계정을 제어할 수 있습니다."
+description: "조직의 개인용 RMS 구독을 유료 구독으로 전환하지 않으려는 경우 Azure Active Directory에서 사용자 계정을 제어하는 방법을 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: a900622fcce4a0a1431f47647709584e404a7f8c
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: 6383c1d583eb45973750305e709d8f5d792892b5
 
 
 ---
@@ -31,9 +31,9 @@ ms.openlocfilehash: a900622fcce4a0a1431f47647709584e404a7f8c
 
 -   사용자가 개인용 RMS 구독을 위해 Azure 권한 관리에 사용 등록하는 것을 방지할 수 있습니다. 대부분의 경우 이렇게 하는 데에는 이점이 별로 없습니다. 왜냐하면 사용자가 보호 메커니즘 없이 파일을 공유하거나(회사를 위험에 빠뜨릴 수 있음) IT 부서에서 해당 데이터에 액세스할 수 있는 옵션이 제공되지 않는 다른 파일 보호 메커니즘을 사용할 수 있기 때문입니다. 그럼에도 불구하고 사용자가 개인용 RMS를 사용하기 위해 등록하는 것을 방지하려면 조직의 Azure 디렉터리 소유권을 가진 후에 다음 중 하나를 수행합니다.
 
-    -   모든 사용자가 개인용 RMS를 포함한 셀프서비스 구독에 등록하지 못하게 차단합니다.  현재 서비스에서는 이를 설정할 수 없으며 이 설정은 셀프서비스 프로세스를 사용하는 모든 Azure 구독에 적용됩니다. 이 작업을 수행하려면 Azure Active Directory용 Windows PowerShell 모듈의 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) cmdlet에서 **AllowAdHocSubscriptions** 매개 변수를 false로 설정합니다. 예: **Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
+    -   모든 사용자가 개인용 RMS를 포함한 셀프서비스 구독에 등록하지 못하게 차단합니다.  현재 서비스에서는 이를 설정할 수 없으며 이 설정은 셀프서비스 프로세스를 사용하는 모든 Azure 구독에 적용됩니다. 이 작업을 수행하려면 Azure Active Directory용 PowerShell 모듈의 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) cmdlet에서 **AllowAdHocSubscriptions** 매개 변수를 false로 설정합니다. 예: **Set-MsolCompanySettings -AllowAdHocSubscriptions $false**
 
-    -   사용자가 Azure에서 새 계정을 만들지 못하도록 합니다. 이렇게 하면 Azure에 계정이 이미 있는 사용자만 개인용 RMS를 포함한 셀프서비스 구독에 등록할 수 있습니다.  이 작업을 수행하려면 Azure Active Directory용 Windows PowerShell 모듈의 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) cmdlet에서 **AllowEmailVerifiedUsers** 매개 변수를 false로 설정합니다. 예: **Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
+    -   사용자가 Azure에서 새 계정을 만들지 못하도록 합니다. 이렇게 하면 Azure에 계정이 이미 있는 사용자만 개인용 RMS를 포함한 셀프서비스 구독에 등록할 수 있습니다.  이 작업을 수행하려면 Azure Active Directory용 PowerShell 모듈의 [Set-MsolCompanySettings](http://technet.microsoft.com/library/dn194127.aspx) cmdlet에서 **AllowEmailVerifiedUsers** 매개 변수를 false로 설정합니다. 예: **Set-MsolCompanySettings -AllowEmailVerifiedUsers $false -AllowAdHocSubscriptions $true**
 
     -   Active Directory 도메인 서비스 인프라를 Azure Active Directory와 동기화합니다. 이렇게 하면 사용자가 개인용 RMS 등의 셀프서비스 구독에 등록할 때 새 계정이 만들어지지 않으며, 이전에 Azure 디렉터리에서 만들어진 계정을 삭제하거나 사용하지 않을 수 있습니다.
 
@@ -46,6 +46,6 @@ Azure 디렉터리에서 사용자 계정을 제어하거나, 사용자가 개�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

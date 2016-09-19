@@ -1,16 +1,16 @@
 ---
-title: "Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법 | Azure Rights Management"
+title: "Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법 | Azure Information Protection"
 description: "레이블에 대한 조건을 구성할 때 문서 또는 전자 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다."
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: ea69e955e4ba5facb1a8f21a90592c0eaae5425e
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 0e6baca43c7a4f2e91f45222f5f6f233b3eeb438
  
 - 권장 분류는 파일이 저장될 때 Word, Excel 및 PowerPoint에 적용됩니다.
 
-조건을 구성할 때 "신용 카드 번호" 또는 "주민등록번호"와 같은 미리 정의된 패턴을 사용할 수 있습니다. 또는 자동 분류에 대한 조건으로 사용자 지정 문자열 또는 패턴을 정의할 수 있습니다. 조건에 대한 자세한 내용은 [기본 제공 조건에 대한 정보](#information-about-the-built-in-conditions) 섹션을 참조하세요.
+조건을 구성할 때 "신용 카드 번호" 또는 "주민등록번호"와 같은 미리 정의된 패턴을 사용할 수 있습니다. 또는 자동 분류에 대한 조건으로 사용자 지정 문자열 또는 패턴을 정의할 수 있습니다. 이러한 조건은 문서와 전자 메일의 본문 텍스트 및 머리글과 바닥글에 적용됩니다. 조건에 대한 자세한 내용은 [기본 제공 조건에 대한 정보](#information-about-the-built-in-conditions) 섹션을 참조하세요.
 
 둘 이상의 레이블에 적용할 때 여러 조건을 평가하는 방법:
 
@@ -224,6 +224,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

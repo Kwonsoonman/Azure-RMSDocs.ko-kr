@@ -1,26 +1,22 @@
 ---
-# required metadata
-
 title: "방법: 암호화 설정 작업 | Azure RMS"
-description: 이 문서에서는 암호화 패키지에 대해 안내합니다.
-keywords:
+description: "Azure RMS 암호화 패키지 및 사용과 관련된 코드 조각을 설명합니다."
+keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
-ms.prod: azure
+ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
-# optional metadata
-
-#ROBOTS:
 audience: developer
-#ms.devlang:
 ms.reviewer: shubhamp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 83c4eb741c484018a2837840465aca3276c785c1
+ms.openlocfilehash: b128a9adf75ae8558a33181f63881e2243e840bb
+
 
 ---
 
@@ -106,6 +102,7 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
  
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Sep16_HO2-->
 
 

@@ -2,15 +2,15 @@
 title: "Rights Management 보호를 적용하도록 레이블을 구성하는 방법| Azure Information Protection"
 description: "암호화, ID 및 권한 부여 정책을 통해 데이터 손실을 방지하는 권한 관리 서비스를 사용하여 가장 민감한 문서 및 메일을 보호할 수 있습니다. 이 보호는 권한 관리 템플릿을 사용하도록 레이블을 구성할 때 적용됩니다."
 manager: mbaldwin
-ms.date: 08/15/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 9cf13b5b795fc5e236ee3f48914cbbd406ad3e7e
+ms.sourcegitcommit: fc390680918a08405e914a858c64bb723efa5580
+ms.openlocfilehash: ca1534801facc6273d481cc99f23ec8acd5341d1
 
 
 ---
@@ -47,9 +47,9 @@ Azure Rights Management 및 작동 방식에 대한 자세한 내용은 [Azure R
 
 ## Rights Management 보호를 적용하도록 레이블을 구성하려면
 
-1. 아직 로그인하지 않은 경우 Azure 권한 관리 템플릿을 검색할 수 있도록 [Azure 포털](https://portal.azure.com)에 전역 관리자로 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 로그인하지 않은 경우에는 새 브라우저 창을 열고 Azure 권한 관리 템플릿을 검색할 수 있도록 [Azure Portal](https://portal.azure.com)에 전역 관리자로 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
 
-    예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **Azure Information Protection** 블레이드에서 Rights Management 보호를 적용하도록 구성할 레이블을 선택합니다.
 
@@ -57,15 +57,22 @@ Azure Rights Management 및 작동 방식에 대한 자세한 내용은 [Azure R
     
     대부분의 경우에서 **Azure RMS**를 선택합니다. HYOK*("Hold Your Own Key")*라고도 하는 이 구성에 수반되는 필수 조건 및 제한을 읽고 이해한 경우에만 AD RMS를 선택하세요. 자세한 내용은 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](configure-adrms-restrictions.md)을 참조하세요.
     
-4. Azure RMS를 선택한 경우: **Select RMS template**(RMS 템플릿 선택) 드롭다운 상자를 클릭하고 이 레이블이 있는 문서 및 메일을 보호하는 데 사용할 템플릿 또는 권한 관리 옵션을 선택합니다.
+4. Azure RMS를 선택한 경우: **Select RMS template**(RMS 템플릿 선택) 드롭다운 상자를 클릭하고 이 레이블이 있는 문서 및 메일을 보호하는 데 사용할 [템플릿](../deploy-use/configure-custom-templates.md) 또는 권한 관리 옵션을 선택합니다.
+    
+    옵션에 대한 자세한 정보:
+    
+    - **레이블** 블레이드를 연 후 새 템플릿을 만들었나요? 이 블레이드를 닫고 2단계로 돌아가세요. 그래야 새로 만든 템플릿을 선택할 수 있도록 Azure에서 검색됩니다.
+    
+    - **부서별 템플릿**을 선택하거나 [온보딩 컨트롤](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구성한 경우:
+    
+        - 구성된 템플릿 범위를 벗어나거나 적용되는 Azure 권한 관리 보호 적용에서 제외되는 사용자는 여전히 레이블을 볼 수 있지만 적용할 수는 없습니다. 레이블을 선택하는 경우 다음 메시지가 표시됩니다. **Azure Information Protection cannot apply this label. If this problem persists, contact your administrator.(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 문제가 지속되면 관리자에게 문의하세요.)**
+        
+    - **보호 제거**를 선택하는 경우:
+        
+        - 사용자는 이 옵션이 있는 레이블을 적용하려면 권한 관리 보호를 제거할 수 있는 권한이 있어야 합니다. 이 옵션을 사용하려면 **내보내기**(Office 문서용) 또는 **모든 권한** [사용 권한](../deploy-use/configure-usage-rights.md)을 가지고 있거나 권한 관리 소유자(자동으로 모든 권한 사용 권한 부여) 또는 [Azure 권한 관리에 대한 슈퍼 사용자](../deploy-use/configure-super-users.md)여야 합니다. 기본 권한 관리 템플릿에는 사용자가 보호를 제거할 수 있는 사용 권한이 포함되어 있지 않습니다. 
 
-    > [!NOTE] 
-    > **Label**(레이블) 블레이드를 연 후 새 템플릿을 만든 경우 이 블레이드를 닫고 2단계로 돌아가세요. 그래야 새로 만든 템플릿을 선택할 수 있도록 Azure에서 검색됩니다.
-    
-    부서별 템플릿을 선택하거나 [온보 딩 컨트롤](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구성한 경우 다음에 유의하세요.
-    
-    - 구성된 템플릿 범위를 벗어나거나 적용되는 Azure 권한 관리 보호 적용에서 제외되는 사용자는 여전히 레이블을 볼 수 있지만 적용할 수는 없습니다. 레이블을 선택하는 경우 다음 메시지가 표시됩니다. **Azure Information Protection cannot apply this label. If this problem persists, contact your administrator.(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 문제가 지속되면 관리자에게 문의하세요.)**
-    
+            사용자가 권한 관리 보호를 제거할 권한이 없는데 **보호 제거** 옵션과 함께 이 레이블을 선택하는 경우 다음 메시지가 표시됩니다. **Azure Information Protection cannot apply this label. If this problem persists, contact your administrator.(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 문제가 지속되면 관리자에게 문의하세요.)**
+
 5. AD RMS를 선택한 경우: AD RMS 클러스터의 템플릿 GUID 및 라이선스 URL을 제공합니다. [추가 정보](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
 6. **저장**을 클릭합니다.
@@ -78,6 +85,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

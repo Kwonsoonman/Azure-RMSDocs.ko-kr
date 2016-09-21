@@ -3,7 +3,7 @@ title: "Azure Information Protection 미리 보기 질문과 대답 | Azure Info
 description: "Azure Information Protection의 미리 보기 릴리스에 대한 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0a66851beeedecc3bda92f840f06b56f40c0c4c1
-ms.openlocfilehash: 427b783b41d8977ff07b0fbc929bf0d7afd0721d
+ms.sourcegitcommit: 459cbe65741ea415defced844034f62cfd4654ed
+ms.openlocfilehash: 39334a5cc18f1b45eabd7cf5b4f9b891fb10a5e6
 
 
 ---
@@ -143,6 +143,10 @@ Azure 포털에서 지정한 분류 수준에 따라 자동으로 콘텐츠를 �
 
 현재 두 수준 모두에 시각적 표시, 보호 및 조건을 설정할 수는 있지만, 하위 수준을 사용할 때는 이러한 설정을 하위 수준에 대해서만 구성하세요. 부모 레이블과 하위 수준에 같은 설정을 구성하면 하위 수준의 설정이 우선합니다.
 
+## 메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
+
+아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블에 보호를 적용하는 경우 해당 보호는 첨부 파일에 적용됩니다.
+
 ## DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
 
 Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 파일에서 이 메타데이터는 사용자 지정 속성에 저장되고, 메일에서 이 정보는 메일 헤더에 있습니다.
@@ -187,6 +191,6 @@ Azure Information Protection에 의해 분류된 파일과 메일은 Azure Infor
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

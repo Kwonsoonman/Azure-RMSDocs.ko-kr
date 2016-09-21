@@ -2,15 +2,15 @@
 title: "Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법 | Azure Information Protection"
 description: "문서 또는 전자 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다."
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: d70bfbe658b1c7d9a5a91c925a554974423699a7
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 999a0937bf741514ae8ee5ef819d4ab901c3304b
 
 
 ---
@@ -39,9 +39,9 @@ ms.openlocfilehash: d70bfbe658b1c7d9a5a91c925a554974423699a7
 
 다음 지침을 사용하여 레이블에 대한 시각적 표시를 구성할 수 있습니다.
 
-1. 아직 로그인하지 않은 경우 [Azure 포털](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 로그인하지 않은 경우에는 새 브라우저 창에서 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
     
-    예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **Azure Information Protection** 블레이드에서 시각적 표시에 대해 구성할 레이블을 선택합니다.
 
@@ -81,6 +81,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -15,6 +15,7 @@
 ### [Windows Server를 실행하고 파일 분류 인프라를 사용하는 파일 서버](file-server-support.md)
 ### [RMS API를 지원하는 기타 응용 프로그램](api-support.md)
 ## [Azure RMS와 AD RMS 비교](compare-azure-rms-ad-rms.md)
+## [규정 준수 및 지원 정보](compliance.md)
 # [시작](/rights-management/get-started/requirements-azure-rms)
 # [계획 및 디자인](/rights-management/plan-design/deployment-roadmap)
 # [서비스 배포 및 사용](/rights-management/deploy-use/activate-service)
@@ -23,6 +24,6 @@
 # [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

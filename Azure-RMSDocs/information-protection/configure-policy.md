@@ -12,8 +12,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: ba7acf835439d059874e0512997b2b591193f0c3
 
 
 ---
@@ -28,9 +28,9 @@ ms.openlocfilehash: 1dd3c09f5bf6a38eb3d82bfa3f7a756f5237eab6
 
 Azure Information Protection의 미리 보기 릴리스에서 Azure Information Protection 정책을 구성하려면
 
-1. [Azure 포털](https://portal.azure.com)에 로그인합니다.
+1. 새 브라우저 창에서 [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
-2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
+2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
 
     그러면 다음 요소를 포함하여 Azure Information Protection 정책을 구성할 수 있는 **Azure Information Protection** 블레이드가 표시됩니다.
 
@@ -80,6 +80,6 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Azure Information Protection 빠른 시작 자습서 1단계 | Azure 권한 관리"
-description: "약 10분 만에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 1단계입니다."
+title: "Azure Information Protection 빠른 시작 자습서 1단계 | Azure Information Protection"
+description: "15분 이내에 완료할 수 있는 4단계를 통해 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 1단계입니다."
 author: cabailey
 manager: mbaldwin
 ms.date: 07/291/2016
@@ -10,8 +10,8 @@ ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: b608ee307bf7388ab7c7ed70cc1286db5df176c8
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: 96b5d2e53d2d1460a97a87f4037cab79b8586244
 
 
 ---
@@ -86,6 +86,6 @@ Azure 권한 관리를 활성화한 경우 가장 중요한 문서와 파일을 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

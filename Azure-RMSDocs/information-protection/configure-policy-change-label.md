@@ -2,15 +2,15 @@
 title: "Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법 | Azure Information Protection"
 description: "Azure Information Protection 정책에서 구성하여 사용자의 Information Protection 표시줄에 표시되는 레이블을 변경하거나 구체화할 수 있습니다."
 manager: mbaldwin
-ms.date: 08/10/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 61ceff2fb2a964495d16bb5e801a5ee7bfa60832
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 2ee4f945307744678df8b842aab2be219f8ef582
 
 
 ---
@@ -28,9 +28,9 @@ Azure Information Protection 정책에서 구성하여 사용자의 Information 
 레이블을 변경하려면 다음 지침을 사용합니다.
 
 
-1. 아직 로그인하지 않은 경우 [Azure 포털](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 로그인하지 않은 경우에는 새 브라우저 창에서 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
     
-    예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **Azure Information Protection** 블레이드에서 변경할 레이블을 선택한 다음 **Label**(레이블) 블레이드를 변경하고 필요에 따라 모든 후속 블레이드를 변경합니다.
 
@@ -52,6 +52,6 @@ Azure Information Protection 정책에서 구성하여 사용자의 Information 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

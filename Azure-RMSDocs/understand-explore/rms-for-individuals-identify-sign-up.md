@@ -1,9 +1,9 @@
 ---
 title: "사용자가 개인용 RMS에 등록했는지 확인하는 방법 | Azure RMS"
-description: "관리자는 사용자가 개인용 RMS를 등록했는지 여부를 어떻게 알 수 있을까요? 다음과 같은 방법을 사용할 수 있습니다(한 가지 또는 여러 가지를 함께 사용)."
+description: "관리자는 이 문서에 설명된 방법 중 하나 또는 여러 개를 사용하여 사용자가 개인용 RMS에 등록했는지 여부를 확인할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: dc8c0a69078ffa3be87a5fb02bf86d9afe2dc27e
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: 6a8a6ac7aae7c8e370af47e1d39a9f69acc1e12c
 
 
 ---
@@ -36,6 +36,6 @@ ms.openlocfilehash: dc8c0a69078ffa3be87a5fb02bf86d9afe2dc27e
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

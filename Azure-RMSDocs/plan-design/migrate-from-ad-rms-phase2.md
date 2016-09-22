@@ -1,9 +1,9 @@
 ---
 title: "AD RMS에서 Azure 권한 관리로 마이그레이션 - 2단계 | Azure RMS"
-description: "AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 AD RMS에서 Azure 권한 관리로 마이그레이션의 5단계를 설명합니다."
+description: "AD RMS에서 Azure RMS(Azure Rights Management)로 마이그레이션하는 과정의 두 번째 단계로, AD RMS에서 Azure Rights Management로의 마이그레이션 5단계가 포함됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 8e1e44eca132b3fd3c83894544d01c180db8735e
+ms.sourcegitcommit: 4184c8b78d8ca6beb88efad79e0372367c523f2f
+ms.openlocfilehash: 2d8abaec220074531724ce4e95b4aefe23d0b2d6
 
 
 ---
@@ -46,7 +46,7 @@ Windows 클라이언트:
 
             reg delete HKCU\Software\Microsoft\Office\16.0\Common\DRM /f
 
-    - **Redirect_Onprem.cmd**의 경우 - `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F1` 줄을 검색하고 이 행의 바로 아래에서 다음의 2줄을 추가합니다.
+    - **Redirect_Onprem.cmd**의 경우 - `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F` 줄을 검색하고 이 행의 바로 아래에서 다음의 2줄을 추가합니다.
 
             reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServerUrl" /d "https://%CloudRMS%/_wmcs/licensing" /F 
 
@@ -131,6 +131,6 @@ Redirect_OnPrem.cmd:
 마이그레이션을 계속하려면 [3단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

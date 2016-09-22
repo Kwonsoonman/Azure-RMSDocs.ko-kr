@@ -3,7 +3,7 @@ title: "Azure 권한 관리 질문과 대답 | Azure RMS"
 description: "Azure RMS라고도 하는 Microsoft Azure 권한 관리에 대한 몇 가지 질문과 대답입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 906e544cc3c9be6ba475502e3cdb93f2e047da7f
+ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
+ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
 
 
 ---
@@ -121,7 +121,7 @@ Azure RMS에서 기본적으로 지원하는 파일 이름 확장명 목록은 [
 자세한 내용은 [AD RMS에서 Azure 권한 관리로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
 ## Azure RMS에 BYOK를 정말 사용하고 싶은데, Exchange Online과 호환되지 않는다고 합니다. 어떻게 해야 하나요?
-현재의 제약 때문에 Azure RMS 배포를 주저하지 마시기 바랍니다. 기존 Exchange Online에서 BYOK를 사용하려는 경우 Microsoft가 키를 생성 및 관리하는 기본 키 관리 모드에서 Azure RMS를 배포하는 것이 좋습니다. 이런 방식으로 중요 파일과 전자 메일을 즉시 보호하는 장점을 지금 활용하고 나중에 BYOK로 이동할 수 있습니다(예: Exchange Online에서 BYOK를 지원하게 될 때).
+현재의 제약 때문에 Azure RMS 배포를 주저하지 마시기 바랍니다. 기존 Exchange Online에서 BYOK를 사용하려는 경우 Microsoft가 키를 생성 및 관리하는 기본 키 관리 모드에서 Azure RMS를 배포하는 것이 좋습니다. 이런 방식으로 중요 파일과 전자 메일을 즉시 보호하는 장점을 지금 활용하고 나중에 BYOK로 이동할 수 있습니다(예: Exchange Online에서 BYOK를 지원하게 될 때). BYOK 방식으로 전환하는 경우 보관된 키를 사용하여 이전에 보호했던 문서와 전자 메일에 계속 액세스할 수 있습니다.
 
 그러나 회사 정책에서 하드웨어 보안 모듈(HSM)의 사용을 요구하고 이러한 모듈이 Azure RMS 배포를 차단하는 경우, Exchange RMS 기능을 축소한 상태로 지금 BYOK로 Azure RMS를 배포할 수도 있습니다. 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)에서 [BYOK 가격 및 제한 사항](../plan-design/byok-price-restrictions.md)을 참조하세요.
 
@@ -145,7 +145,7 @@ Azure RMS(Office 365, Azure RMS Premium 및 Enterprise Mobility Suite)를 지원
 
 Azure RMS(개인용 RMS)를 지원하는 무료 구독이 있으면 Azure RMS로 보호되는 콘텐츠를 사용할 수 있습니다. 자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
 
-## 무료 Azure RMS 구독(개인용 RMS)과 관련하여 실제 작동 방식, 계정 제어 방법, 사용할 수 없는 도메인 등을 비롯한 기술 정보는 어디서 얻을 수 있나요?
+## 무료 Azure RMS 구독(개인용 RMS)과 관련하여 이 프로세스의 작동 방식, 관리자가 생성된 계정을 제어하는 방법 등을 비롯한 기술 정보는 어디서 얻을 수 있나요?
 이러한 질문에 대한 답변은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md) 및 관련 문서에서 확인할 수 있습니다.
 
 ## 이제 조직을 떠난 직원이 보호하던 파일에 대한 액세스는 어떻게 확보하나요?
@@ -223,6 +223,6 @@ Azure Information Protection의 이 기능은 현재 공개 미리 보기로 제
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

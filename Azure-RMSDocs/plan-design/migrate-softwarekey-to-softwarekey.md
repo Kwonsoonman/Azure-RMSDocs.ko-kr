@@ -1,9 +1,9 @@
 ---
 title: "2단계&colon; 소프트웨어 보호된 키-소프트웨어 보호된 키 마이그레이션 | Azure RMS"
-description: "이 지침은 AD RMS에서 Azure 권한 관리로의 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 소프트웨어 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다."
+description: "AD RMS에서 Azure Rights Management로의 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 소프트웨어 보호된 테넌트 키를 사용하여 Azure Rights Management로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 6597bf4ea54f640c30e98b30363323d874e32c43
+ms.sourcegitcommit: 459cbe65741ea415defced844034f62cfd4654ed
+ms.openlocfilehash: 2bd9abcac99a06a29e5dacdd014e660358840adc
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: 6597bf4ea54f640c30e98b30363323d874e32c43
 3.  [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) cmdlet을 사용하여 처음에 내보낸 트러스트된 게시 도메인(.xml) 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 .xml 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure RMS에서 콘텐츠를 보호하는 데 사용할 내보낸 트러스트된 게시 도메인이 포함되어 있는 파일을 선택하세요. 다음 명령을 사용합니다.
 
     ```
-    Import-AadrmTpd -TpdFile <PathToTpdPackageFile> -ProtectionPassword -Active $True -Verbose
+    Import-AadrmTpd -TpdFile <PathToTpdPackageFile> -ProtectionPassword <secure string> -Active $True -Verbose
     ```
-    예: **Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword -Active $true -Verbose**
-
-    이전에 지정한 암호를 입력하라는 메시지가 표시되면 입력한 후 이 작업을 수행할 것임을 확인합니다.
-
-4.  명령이 완료되면 트러스트된 게시 도메인을 내보내 만든 나머지 각 .xml 파일에 대해 3단계를 반복합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다. 예: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword -Active $false -Verbose**
+    [ConvertTo-SecureString -AsPlaintext](https://technet.microsoft.com/library/hh849818.aspx) 또는 [Read-Host](https://technet.microsoft.com/library/hh849945.aspx)를 사용하여 암호를 보안 문자열로 지정할 수 있습니다. ConvertTo-SecureString을 사용하고 암호에 특수 문자가 있는 경우 작은따옴표 안에 암호를 입력하거나 특수 문자를 이스케이프합니다.
+    
+    예를 들어 먼저 **$TPD_Password = Read-Host -AsSecureString**을 실행하고 이전에 지정한 암호를 입력합니다. 그런 다음 **Import-AadrmTpd -TpdFile E:\contosokey1.xml -ProtectionPassword $TPD_Password -Active $true -Verbose**를 실행합니다. 메시지가 표시되면 이 작업을 수행할 것인지 확인합니다.
+    
+4.  명령이 완료되면 트러스트된 게시 도메인을 내보내 만든 나머지 각 .xml 파일에 대해 3단계를 반복합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다. 예: **Import-AadrmTpd -TpdFile E:\contosokey2.xml -ProtectionPassword $TPD_Password -Active $false -Verbose**
 
 5.  [Disconnect-AadrmService](http://msdn.microsoft.com/library/azure/dn629416.aspx) cmdlet를 사용하여 Azure RMS 서비스에서 연결을 끊습니다.
 
@@ -70,6 +70,6 @@ ms.openlocfilehash: 6597bf4ea54f640c30e98b30363323d874e32c43
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

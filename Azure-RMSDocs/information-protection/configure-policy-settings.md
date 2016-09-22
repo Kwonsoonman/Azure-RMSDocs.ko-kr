@@ -2,15 +2,15 @@
 title: "Azure Information Protection에 대한 전역 정책 설정을 구성하는 방법 | Azure Information Protection"
 description: "Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 적용되는 세 가지 설정이 있습니다."
 manager: mbaldwin
-ms.date: 08/08/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: 872ea7da6f3b72a355a73c8b0589beda86ded20d
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: d4e96321069b27ed832af3bfb6d995e0d3c5d450
 
 
 ---
@@ -28,9 +28,9 @@ Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 
 
 이러한 설정을 구성하려면
 
-1. 아직 로그인하지 않은 경우 [Azure 포털](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 로그인하지 않은 경우에는 새 브라우저 창에서 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
     
-    예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **Azure Information Protection** 블레이드에서 다음 전역 설정을 구성합니다.
 
@@ -67,6 +67,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

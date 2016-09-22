@@ -1,16 +1,16 @@
 ---
-title: "Azure Information Protection 클라이언트 설치 | Azure Rights Management"
-description: "Azure Information Protection을 사용하여 문서 및 전자 메일 메시지를 분류하려면 먼저 Azure Information Protection 클라이언트를 설치해야 합니다. 이 설치에서는 Office 응용 프로그램(Word, Excel, PowerPoint, Outlook)에 조직의 분류 레이블을 표시하고, 홈 탭(Word, Excel, PowerPoint)에 보호라는 단추가 있는 보호 그룹을 표시하는 Information Protection 표시줄을 추가합니다."
+title: "Azure Information Protection 클라이언트 설치 | Azure Information Protection"
+description: "문서와 전자 메일용 분류 레이블을 선택할 수 있도록 Office 응용 프로그램에 Information Protection 표시줄을 추가하는 클라이언트를 설치하는 지침을 제공합니다."
 manager: mbaldwin
-ms.date: 07/29/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: c9f9211e7c1dcf293caf81475515114b5433d6a7
-ms.openlocfilehash: ab8388e03803d32a6891785f905a1ddef796bc25
+ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
+ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
 
 
 ---
@@ -34,7 +34,7 @@ Azure Information Protection을 사용하여 문서 및 전자 메일 메시지�
 
 ## Azure Information Protection 클라이언트를 수동으로 설치하려면
 
-1. [클라이언트를 다운로드](https://www.microsoft.com/en-us/download/details.aspx?id=53018)한 후 **AZInfoProtection.exe**를 실행하고 메시지의 지시에 따라 클라이언트를 설치합니다. 이 설치에는 로컬 관리 권한이 필요합니다.
+1. [클라이언트를 다운로드](https://www.microsoft.com/en-us/download/details.aspx?id=53018)한 후 **AzInfoProtection.exe**를 실행하고 메시지의 지시에 따라 클라이언트를 설치합니다. 이 설치에는 로컬 관리 권한이 필요합니다.
 
     Office 365 또는 Azure Active Directory에 연결할 수 없지만 데모용으로 로컬 정책을 사용하여 Azure Information Protection의 클라이언트 쪽을 확인해 보려면 데모 정책을 설치하는 옵션을 선택합니다. 클라이언트에서 Azure Information Protection 서비스에 연결하면 이 데모 정책이 조직의 Azure Information Protection 정책으로 바뀝니다. 
 
@@ -42,14 +42,21 @@ Azure Information Protection을 사용하여 문서 및 전자 메일 메시지�
 
 ## 사용자를 위해 Azure Information Protection 클라이언트를 설치하려면
 
-- AZInfoProtection.exe를 패키징하고 표준 [Windows Installer(msiexec) 명령줄 옵션](https://technet.microsoft.com/library/cc759262(v=ws.10).aspx)을 사용하여 Azure Information Protection 클라이언트 설치 스크립트를 작성하고 자동화할 수 있습니다.
+- 명령줄 옵션을 사용하여 Azure Information Protection 클라이언트 설치를 스크립트로 작성하고 자동화할 수 있습니다. 설치 옵션을 확인하려면 `AzInfoProtection.exe /help`를 실행합니다.
 
-    예를 들어 만든 패키지 버전의 이름이 InfoProtect.msi인 경우 클라이언트를 자동으로 설치하려면: `msiexec /qn InfoProtection.msi`
+    예를 들어 클라이언트를 자동으로 설치하려면 다음 명령을 실행합니다. `AzInfoProtection.exe /passive | quiet`
 
 
 ## Azure Information Protection 클라이언트를 제거하려면
 
+다음 옵션 중 하나를 사용할 수 있습니다.
+
 - 제어판을 사용하여 프로그램을 제거합니다. **Microsoft Azure Information Protection** > **제거**를 클릭합니다.
+
+- **AzInfoProtection.exe**를 다시 실행하고 **설치 수정** 페이지에서 **제거**를 클릭합니다. 
+
+- 실행 `AzInfoProtection.exe /uninstall`
+
 
 ## 설치 또는 연결 상태를 확인하거나 문제를 보고하려면
 
@@ -88,6 +95,6 @@ Information Protection 표시줄의 레이블을 변경하려면 Azure Informati
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

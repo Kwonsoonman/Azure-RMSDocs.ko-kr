@@ -1,6 +1,6 @@
 ---
 title: "방법: 문서 추적 및 해지 사용 | Azure RMS"
-description: "문서 추적을 구현하기 위한 기본 지침"
+description: "콘텐츠의 문서 추적과 메타데이터 업데이트에 대한 예제 코드를 구현하고, 앱에 대한 사용 추적 단추를 만들기 위한 기본 지침입니다."
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
@@ -16,8 +16,8 @@ ms.suite: ems
 experimental: true
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 156ffcc021fee129557d485cb80bf9c3fcb8950b
+ms.sourcegitcommit: 83c4eb741c484018a2837840465aca3276c785c1
+ms.openlocfilehash: e669c10fff99124966d3f60f5bbf28776b76f85d
 
 
 ---
@@ -166,6 +166,6 @@ ms.openlocfilehash: 156ffcc021fee129557d485cb80bf9c3fcb8950b
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

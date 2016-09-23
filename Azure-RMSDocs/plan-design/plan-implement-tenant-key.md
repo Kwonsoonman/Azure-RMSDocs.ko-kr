@@ -1,9 +1,9 @@
 ---
 title: "Azure 권한 관리 테넌트 키 계획 및 구현 | Azure RMS"
-description: "이 문서의 정보는 Azure RMS용 권한 관리(RMS) 테넌트 키를 계획 및 관리하는 데 도움이 됩니다. 예를 들어 Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다."
+description: "Azure RMS용 RMS(Rights Management) 테넌트 키를 계획 및 관리하는 데 도움이 되는 정보를 제공합니다. 예를 들어 Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 3a45a12cba766fed074d8b5fcf861164802d2441
+ms.sourcegitcommit: df79a02238c7cbadaae450ad8dabc03478de27e9
+ms.openlocfilehash: 0e3e77073898e2ae9f84f555183fb6fcbc7d2d8a
 
 
 ---
@@ -64,7 +64,7 @@ Microsoft에서 관리하는 테넌트 키를 사용하여 Azure RMS를 배포�
 
 ![Azure RMS 테넌트 키 수명 주기 - 사용자가 직접 관리, BYOK](../media/RMS_BYOK_onprem4.png)
 
-고객이 Microsoft에서 테넌트 키를 관리하도록 결정할 경우 키를 생성하기 위해 수행해야 할 추가 작업이 없으므로 [다음 단계](plan-implement-tenant-key.md#next-steps)로 바로 이동하세요.
+고객이 Microsoft에서 테넌트 키를 관리하도록 결정할 경우 키를 생성하기 위해 수행해야 할 추가 작업이 없으므로 [다음 단계](plan-implement-tenant-key.md#next-steps)로 바로 이동하세요.  
 
 테넌트 키를 직접 관리하기로 결정한 경우 다음 섹션에서 자세한 내용을 확인하세요.
 
@@ -74,7 +74,7 @@ Microsoft에서 관리하는 테넌트 키를 사용하여 Azure RMS를 배포�
 
 
 > [!IMPORTANT]
-> 이미 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용하기 시작(서비스가 활성화됨)했으며 Office 2010을 실행하는 사용자가 있는 경우 이러한 절차를 실행하기 전에 [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하세요. 시나리오 및 요구 사항에 따라 계속해서 BYOK를 사용할 수 있지만 몇 가지 제한 사항이나 추가 단계가 수반될 수 있습니다.
+> Microsoft에서 관리하는 테넌트 키를 사용하여 Azure RMS 사용을 시작했지만 이제는 BYOK 방식으로 전환하여 테넌트 키를 직접 관리하려는 경우, 보관된 키를 사용하여 이전에 보호했던 문서와 전자 메일에 계속 액세스할 수 있습니다. 그러나 Office 2010을 실행하는 사용자가 있는 경우에는 이러한 절차를 실행하기 전에 [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하세요. 이러한 컴퓨터에서는 몇 가지 구성 단계를 추가로 수행해야 합니다.
 > 
 > 조직에 키 처리에 대한 특정 조직이 있는 경우에도 [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하세요.
 
@@ -96,7 +96,7 @@ Thales HSM 및 Azure 주요 자격 증명 모음과 함께 사용되는 방법�
 
 하지만 Azure RMS에서 키를 사용하기 전에 Azure RMS는 조직의 주요 자격 증명 모음의 키를 사용할 수 있는 권한을 받아야 합니다. 그렇게 하려면 Azure 주요 자격 증명 모음 관리자는 주요 자격 증명 모음 PowerShell cmdlet([Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/library/mt603625.aspx))을 사용하여 Azure RMS 서비스 주체(**Microsoft.Azure.RMS**)에 권한을 부여합니다. 예를 들면 다음과 같습니다.
 
-    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign 
+    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 이제 Azure RMS를 구성하여 조직의 Azure RMS 테넌트 키로 이 키를 사용할 준비가 되었습니다. Azure RMS cmdlet을 사용하여 먼저 Azure RMS에 연결하고 로그인합니다.
 
@@ -136,6 +136,6 @@ Azure RMS에 키 URL이 올바르게 설정되었는지 확인해야 하는 경�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

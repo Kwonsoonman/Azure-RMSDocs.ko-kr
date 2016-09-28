@@ -2,15 +2,15 @@
 title: "HYOK 제한 | Azure Information Protection"
 description: Identify the limitations, prerequisites, and recommendations if you select AD RMS protection with Azure Information Protection. This solution is sometimes referred to as "hold your own key" (HYOK).
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: fe0f492b94cbcc437c722daae9c3c56820593566
+ms.sourcegitcommit: 593ec90a781a41e3b93a4c31d22a3ca547b49bc7
+ms.openlocfilehash: faf3180ca290f1668233663099b924ff199524d9
 
 
 ---
@@ -43,6 +43,16 @@ Azure RMS는 Microsoft에서 관리(기본값)하거나 사용자가 관리("Bri
 > 이 구성은 필요한 경우에만, 그리고 필요한 문서 및 메일에 대해서만 사용하세요. AD RMS 보호는 Azure RMS 보호를 사용할 때 얻을 수 있는 혜택을 제공하지 않으며 "어떤 희생이 따르더라도 데이터 불투명도 유지"를 목적으로 합니다.
 
 레이블이 Azure RMS 보호가 아니라 AD RMS 보호를 사용할 때도 사용자는 인식할 수 없습니다. AD RMS 보호에 수반되는 제한 사항 때문에 사용자가 AD RMS 보호를 적용하는 레이블을 선택해야 하는 경우에 대한 명확한 지침을 제공해야 합니다.
+
+## 제한 사항
+
+Azure RMS 보호를 Azure Information Protection과 사용할 경우 Azure RMS 보호를 사용하면 얻는 나열된 혜택을 지원하지 않을 뿐 아니라 다음과 같은 제한 사항이 있습니다.
+
+- Office 2010 또는 Office 2007을 지원하지 않습니다.
+
+- Azure RMS 보호도 사용하는 경우 Azure RMS 보호에 대한 레이블을 구성할 때 **전달 금지** 옵션을 사용하지 마세요. 또한 사용자에게 Outlook에서 이 옵션을 수동으로 선택하지 말라고 알려줘야 합니다. 
+
+    레이블을 통해 또는 사용자가 수동으로 전달 금지 옵션을 적용하는 경우 필요한 Azure 권한 관리 서비스가 아니라 AD RMS 배포에서 옵션이 적용될 수 있습니다. 이 시나리오에서는 공유하는 사람이 이 전달 금지 옵션이 적용된 메일 메시지를 외부에서 열 수 없습니다.
 
 ## HYOK에 대한 요구 사항
 
@@ -94,6 +104,6 @@ AD RMS 보호에 대한 레이블을 구성하려면 [Rights Management 보호�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

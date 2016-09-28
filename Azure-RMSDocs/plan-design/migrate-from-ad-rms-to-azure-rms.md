@@ -1,9 +1,9 @@
 ---
 title: "AD RMS에서 Azure 권한 관리로 마이그레이션 | Azure RMS"
-description: "AD RMS(Active Directory Rights Management Services) 배포를 Azure RMS(Azure 권한 관리)로 마이그레이션하려면 다음 지침을 따르세요. 마이그레이션 후 사용자는 조직에서 AD RMS를 사용하여 보호하는 문서 및 전자 메일 메시지에 여전히 액세스할 수 있으며 새로 보호되는 콘텐츠에는 Azure RMS가 사용됩니다."
+description: "AD RMS(Active Directory Rights Management Services) 배포를 Azure RMS(Azure Rights Management)로 마이그레이션하는 지침을 제공합니다. 마이그레이션 후 사용자는 조직에서 AD RMS를 사용하여 보호하는 문서 및 전자 메일 메시지에 여전히 액세스할 수 있으며 새로 보호되는 콘텐츠에는 Azure RMS가 사용됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: bead12db04e6fcf2f9e4af5148d3f8a4ef4089da
+ms.sourcegitcommit: 5c20772240961bdd3052e55a19eaca21ef7da003
+ms.openlocfilehash: 01c107979265abf0d34060eccf09ca32c0086ab8
 
 
 ---
@@ -46,7 +46,7 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
         
     - 암호화 모드 2:
     
-        - Azure RMS로 마이그레이션을 시작하기 전에 AD RMS 서버및 클라이언트가 암호화 모드 2에서 실행되어야 합니다. 자세한 내용은 [AD RMS Cryptographic Modes(AD RMS 암호화 모드)](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)를 참조하세요.
+        - Azure RMS로 마이그레이션을 시작하기 전에 AD RMS 서버및 클라이언트가 암호화 모드 2에서 실행되어야 합니다. 현재 SLC(서버 사용 허가자 인증서) 키는 암호화 모드 2를 사용해야 하지만 암호화 모드 1에 맞게 구성된 이전 키는 Azure RMS에서 보관된 키로 지원됩니다. 암호화 모드 및 암호화 모드 2로 전환하는 방법에 대한 자세한 내용은 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)(AD RMS 암호화 모드)를 참조하세요.
         
     - 유효한 모든 AD RMS 토폴로지가 지원됩니다.
     
@@ -184,6 +184,6 @@ Azure RMS로 마이그레이션을 시작하기 전에 다음의 필수 구성 �
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

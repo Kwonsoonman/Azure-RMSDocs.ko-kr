@@ -2,15 +2,15 @@
 title: "Azure Information Protection 클라이언트 설치 | Azure Information Protection"
 description: "문서와 전자 메일용 분류 레이블을 선택할 수 있도록 Office 응용 프로그램에 Information Protection 표시줄을 추가하는 클라이언트를 설치하는 지침을 제공합니다."
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: f8d4b7f154ab8b47cded0dd2f315dba33664c7ff
+ms.sourcegitcommit: 2ecdfe905694b3d14727abdb5e6176d24f675d2e
+ms.openlocfilehash: cd6684dd25a721272c073fcc972724a6b81c0c72
 
 
 ---
@@ -74,6 +74,15 @@ Azure Information Protection을 사용하여 문서 및 전자 메일 메시지�
 
     - **진단 실행** 링크: 이 기능은 현재 구현되지 않습니다.
 
+## Azure Information Protection 표시줄을 위한 바로 가기 키
+
+바로 가기 키를 사용하여 Azure Information Protection 표시줄에 액세스하려면 다음과 같은 키 조합을 사용합니다.
+
+- **Ctrl** + **Shift** + **~**를 누릅니다. 
+
+그 다음, 레이블과 표시줄에 있는 다른 컨트롤 (**레이블 숨기기** 아이콘 및 **레이블 제거** 아이콘)을 선택하려면 Tab 키를 사용하고 Enter 키를 사용하여 선택합니다.
+
+
 ## 파일 위치
 
 클라이언트 파일:   
@@ -95,6 +104,6 @@ Information Protection 표시줄의 레이블을 변경하려면 Azure Informati
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

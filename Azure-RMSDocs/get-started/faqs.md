@@ -3,7 +3,7 @@ title: "Azure 권한 관리 질문과 대답 | Azure RMS"
 description: "Azure RMS라고도 하는 Microsoft Azure 권한 관리에 대한 몇 가지 질문과 대답입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
-ms.openlocfilehash: e0529126fefc9dec6aaa490538971a7573f79431
+ms.sourcegitcommit: 62b72d2debef3421fea4f0e70beed67e5364d7d3
+ms.openlocfilehash: 99b5e4ea74cd6f76a2409d89c3db5d8672b63055
 
 
 ---
@@ -165,37 +165,8 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 이름 및 모양에도 불구하고, **전달 금지**는 전달 권한의 반대도 아니고, 템플릿도 아닙니다. 실제로 메일 전달 제한 외에도, 첨부 파일 복사, 인쇄 및 저장 제한이 포함된 권한 집합입니다. 권한은 선택한 수신자를 통해 사용자에게 동적으로 적용되며, 관리자가 권한을 정적으로 할당하지 않습니다. 자세한 내용은 [Azure 권한 관리에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md) 항목의 [메일에 대한 전달 금지 옵션](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 섹션을 참조하세요.
 
 ## 법적 정보, 규정 준수, SLA 등의 Azure RMS 관련 지원 정보는 어디서 찾을 수 있나요?
-Azure RMS는 다른 서비스를 지원하는 동시에 다른 서비스가 있어야 작동합니다. Azure RMS 관련 정보를 찾고 있지만 Azure RMS 서비스를 사용하는 방법에 대해서는 알아보지 않으려는 경우 다음 리소스를 확인하세요.
 
-**법적 정보 및 개인 정보 보호:**
-
--   Microsoft Azure 계약 정보: [Microsoft Azure 계약](http://azure.microsoft.com/support/legal/subscription-agreement/)
-
--   Microsoft Azure 개인 정보 보호: [Microsoft Azure 개인 정보 취급 방침](http://azure.microsoft.com/support/legal/privacy-statement/)
-
-**보안, 규정 준수 및 감사:**
-
-[Azure RMS를 통해 해결할 수 있는 문제](../understand-explore/azure-rms-problems-it-solves.md) 문서에서 [보안, 준수 및 규정 요구 사항](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 섹션을 참조하세요. 또한,
-
--   Azure RMS 외부 인증: [Microsoft Azure 보안 센터](http://azure.microsoft.com/support/trust-center/)
-
--   FIPS 140 정보: [FIPS 140 유효성 검사](https://technet.microsoft.com/library/security/cc750357.aspx)
-
-**서비스 수준 계약:**
-
--   선택한 지역에 대한 Azure RMS 서비스 수준 계약: [제품 라이선스 검색 페이지에서 다운로드](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
-
-    - 예를 들어 **OnlineSvcsConsolidatedSLA(WW)(English)(March2016)**를 클릭하여 북미 지역에 대한 2016년 3월 서비스 수준 계약을 다운로드합니다.
-
--   Azure Active Directory의 서비스 수준 계약: [서비스 수준 계약](http://azure.microsoft.com/support/legal/sla/)
-
-**설명서:**
-
--   Azure Active Directory 설명서 사이트: [Azure Active Directory](http://azure.microsoft.com/documentation/services/active-directory/)
-
--   Azure Active Directory 라이브러리: [Azure Active Directory](https://msdn.microsoft.com/library/azure/mt168838.aspx)
-
--   Office 365 라이브러리: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
+[Azure 권한 관리에 대한 규정 준수 및 지원 정보](../understand-explore/compliance.md)를 확인하세요.
 
 ## 새 분류 및 레이블 지정 기능의 최신 내용은 무엇인가요?
 
@@ -223,6 +194,6 @@ Azure Information Protection의 이 기능은 현재 공개 미리 보기로 제
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

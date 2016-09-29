@@ -2,15 +2,15 @@
 title: "Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법 | Azure Information Protection"
 description: "레이블에 대한 조건을 구성할 때 문서 또는 전자 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다."
 manager: mbaldwin
-ms.date: 08/29/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 6bbac611f9c8bba96fbbba69e8044e494134d792
-ms.openlocfilehash: ea69e955e4ba5facb1a8f21a90592c0eaae5425e
+ms.sourcegitcommit: 801ca11da602d4acb9c398c9a89aeb33e45cb0f4
+ms.openlocfilehash: 98e8efd574d7e9689da426028d26f528cd6042a4
 
 
 ---
@@ -48,9 +48,9 @@ ms.openlocfilehash: ea69e955e4ba5facb1a8f21a90592c0eaae5425e
 
 ## 레이블에 대한 권장 또는 자동 분류를 구성하려면
 
-1. 아직 로그인하지 않은 경우 [Azure 포털](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
     
-    예를 들어 허브 메뉴에서 **찾아보기**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **Azure Information Protection** 블레이드에서 자동 또는 권장 분류에 대해 구성할 레이블을 선택합니다.
 
@@ -224,6 +224,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: "Office 365&colon; 클라이언트 및 온라인 서비스 구성 | Azure RMS"
-description: "Office 365는 기본적으로 Azure RMS를 지원하므로 Word, Excel, PowerPoint, Outlook 및 Outlook Web App과 같은 응용 프로그램에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 사용자는 Microsoft Office 365 자격 증명을 사용하여 Office 응용 프로그램에 로그인하기만 하면 되며, 로그인하면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다."
+description: "관리자가 Azure RMS(Azure Rights Management)에서 작동하도록 Office 365를 구성하는 방법 및 해당 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 09f152ef910cf9c08c9a693f79c40f491263c5d3
+ms.sourcegitcommit: 18498a6d1edac11b20842b0cca0c4559909d681e
+ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
 
 
 ---
@@ -63,7 +63,7 @@ Azure RMS를 지원하도록 Exchange Online을 구성하려면 Exchange Online�
 
 4.  조직의 테넌트가 생성된 위치에 따라 Azure RMS 테넌트 키의 위치를 지정합니다.
 
-    북아메리카(및 정부 구독)의 경우:
+    북아메리카의 경우:
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
@@ -82,6 +82,11 @@ Azure RMS를 지원하도록 Exchange Online을 구성하려면 Exchange Online�
 
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc"
+    ```
+    Office 365 Government(Government Community Cloud)의 경우:
+
+    ```
+    Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
 5.  TPD(신뢰할 수 있는 게시 도메인)의 형태로 Azure RMS에서 Exchange Online으로 구성 데이터를 가져옵니다. 여기에는 Azure RMS 테넌트 키와 Azure RMS 템플릿이 포함됩니다.
@@ -1105,6 +1110,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

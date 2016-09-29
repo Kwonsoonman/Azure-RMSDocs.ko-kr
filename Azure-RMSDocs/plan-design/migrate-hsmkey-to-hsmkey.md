@@ -1,9 +1,9 @@
 ---
 title: "2단계&colon; HSM 보호된 키-HSM 보호된 키 마이그레이션 | Azure RMS"
-description: "이 지침은 AD RMS에서 Azure 권한 관리로의 마이그레이션 경로에 포함되며, AD RMS 키가 HSM으로 보호되고 Azure 주요 자격 증명 모음의 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다."
+description: "지침은 AD RMS에서 Azure Rights Management로의 마이그레이션 경로에 포함되며, AD RMS 키가 HSM으로 보호되고 Azure Key Vault의 HSM 보호 테넌트 키를 사용하여 Azure Rights Management로 마이그레이션하려는 경우에만 적용됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: rights-management
@@ -12,8 +12,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 690729d16358b7b997d9cd1fd8cabed22ce78df4
+ms.sourcegitcommit: df79a02238c7cbadaae450ad8dabc03478de27e9
+ms.openlocfilehash: 539ad9db29f7795d3f56655a64f49532ef6ff6e8
 
 
 ---
@@ -55,7 +55,7 @@ Azure RMS 테넌트 키는 Azure 주요 자격 증명 모음에 저장되고 관
     
     예를 들어 Azure RMS에 대해 만든 주요 자격 증명 모음의 이름이 contoso-byok-ky이고 리소스 그룹 이름이 contoso-byok-rg인 경우 다음 명령을 실행합니다.
     
-        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign
+        Set-AzureRmKeyVaultAccessPolicy -VaultName "contoso-byok-kv" -ResourceGroupName "contoso-byok-rg" -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
 
 이제 Azure RMS에 대해 Azure 주요 자격 증명 모음에 HSM 키를 준비했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
@@ -94,6 +94,6 @@ Azure RMS 테넌트 키는 Azure 주요 자격 증명 모음에 저장되고 관
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

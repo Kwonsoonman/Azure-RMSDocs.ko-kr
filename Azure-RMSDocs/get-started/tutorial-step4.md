@@ -1,84 +1,13 @@
 ---
-title: "Azure RMS 빠른 시작 자습서 - 4단계 | Azure RMS"
-description: "15분 이내에 완료할 수 있는 5단계를 통해 조직에서 Microsoft Azure 권한 관리 사용을 빠르게 시작하는 방법을 확인할 수 있는 자습서의 네 번째 단계입니다."
-keywords: 
-author: cabailey
-manager: mbaldwin
-ms.date: 07/13/2016
-ms.topic: get-started-article
-ms.prod: 
-ms.service: rights-management
-ms.technology: 
-ms.assetid: f8340056-87a1-4daa-8b63-3d95fc381b9c
-ROBOTS: 
-audience: 
-ms.devlang: 
-ms.reviewer: esaggese
-ms.suite: ems
-ms.tgt_pltfrm: 
-ms.custom: 
+redirect_url: /information-protection/get-started/infoprotect-tutorial-step3
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 0287f1408c7cd22d0254d135aaa267ec77246e45
-
+ms.sourcegitcommit: 3336b75fbc2fce1c9260afb217d909b2b772ed03
+ms.openlocfilehash: 4b53efd01da94d129bb50fc5a9587e17df04e6a1
 
 ---
 
 
-# Azure RMS 빠른 시작 4단계: 수신자에게 메일로 전송된 문서를 열도록 요청
 
->*적용 대상: Azure 권한 관리, Office 365*
-
-
-다음으로 이동합니다. 
-> [!div class="op_single_selector"]
-- [소개](quick-start-tutorial.md)
-- [1단계: Azure RMS 활성화](tutorial-step1.md)
-- [2단계: RMS 공유 앱 설치](tutorial-step2.md)
-- [3단계: 기밀 문서를 메일로 보내기](tutorial-step3.md)
-- [4단계: 받는 사람이 문서 읽기](tutorial-step4.md)
-- [5단계: 문서 추적](tutorial-step5.md)
-
-
-![Azure RMS 빠른 시작 자습서 4단계](../media/AzRMS_QuickStartSteps4.PNG)
-
-보호된 문서가 메일 첨부 파일로 전송되면 수신자는 다양한 장치를 사용하여 읽을 수 있습니다. 이러한 장치에는 iPad, iPhone, Android 태블릿 및 전화, Mac 컴퓨터, Windows 컴퓨터 등이 포함됩니다.
-
-전송된 메일 메시지를 읽도록 요청합니다. 메일 메시지와 함께, 먼저 다음 텍스트가 표시됩니다.
-
-**보낸 사람이 Microsoft RMS를 사용하여 첨부 파일을 보호했습니다. 
-      **파일을 열려면**** [로그인](http://aka.ms/rms)해야 합니다.
-
-링크를 클릭하면 RMS 공유 앱 설치 지침으로 이동하며, 필요한 경우에는 무료 계정으로 가입할 수 있습니다. 무료 계정에는 개인별 RMS 구독 권한이 부여되므로 권한이 있는 사용자는 조직에 Azure RMS가 없어도 항상 보호된 문서를 읽을 수 있습니다. 그러면 다음과 같은 지침에 따라 보호된 첨부 파일을 읽을 준비가 완료됩니다.
-
-![자습서 4 단계 스크린샷](../media/AzRMS_Tutorial_4_Screenshots.png)
-
-### 보호된 문서 첨부 파일을 보호하려면
-
-1.  Azure Rights Management에서 Word 문서를 보호했으므로 메일 메시지에 두 개의 첨부 파일이 포함됩니다. 두 파일은 사실 동일한 파일의 두 가지 버전이며 파일 이름 확장명만 서로 다릅니다. 파일 이름 확장명이 **.ppdf**인 버전(**Confidential.ppdf**)을 엽니다.
-
-    장치에서 [Rights Management를 지원하는 Office](https://technet.microsoft.com/library/dn655136.aspx) 버전을 사용하는 경우에는 다른 버전의 파일(**Confidential.docx**)을 열어 Word에서 볼 수도 있습니다.
-
-2.  사용자 이름과 암호를 묻는 메시지가 표시되면 메일과 첨부 파일을 보내는 데 사용된 것과 같은 메일 주소 형식을 사용하여 사용자 이름을 입력합니다. 예를 들어 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같이 입력합니다. 암호로는 개인용 RMS에 가입할 때 입력했던 암호를 입력합니다. 또는 조직에 Azure RMS가 있으면 실제 작업 암호를 입력합니다.
-
-문서가 열리며 이제 내용을 읽을 수 있습니다. 예를 들어 **메일 첨부 파일에서 이 내용을 읽고 있다면 발신자가 Azure RMS로 보호된 파일을 성공적으로 공유한 것입니다.**와 같은 내용이 표시될 수 있습니다. 읽기 전용이므로 내용을 변경할 수는 없습니다.
-
-선택적 단계로, 원래 메일에 포함되어 있지 않은 다른 사람에게 메일을 전달해 보라고 수신자에게 요청할 수 있습니다. 다른 사람은 Azure Rights Management가 있는 조직에서 근무하거나 개인용 RMS를 구독하는 경우라도 첨부 파일을 열 수가 없습니다. 사용자 이름에 대한 승격을 처리할 때 문서에 대한 액세스가 거부됩니다.
-
-이제 수신자가 첨부 파일을 열었고, 선택적인 단계를 수행했다면 다른 사람에게 메일을 전달하기도 했으므로 이 활동에 대해 보고하는 메일 알림을 받습니다. 그러나 메일 메시지는 시간이 지나면 잃어버리기가 쉽기 때문에, 문서에 액세스하는 사람을 추적하기에 더 좋은 방법은 마지막 단계에서와 같이 문서 추적 사이트를 사용하는 것입니다.
-
-|자세한 정보가 필요한 경우|추가 정보|
-|--------------------------------|--------------------------|
-|Azure 권한 관리를 통해 보호되는 파일 보기에 대한 전체 지침|[Rights Management로 보호된 파일 보기 및 사용](../rms-client/sharing-app-view-use-files.md)|
-|무료 구독, 개인용 RMS 정보|[개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)|
-|메일 메시지에 첨부되는 두 가지 버전의 파일 정보|[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](../rms-client/sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)|
-
-
->[!div class="step-by-step"]
-[« 3단계](tutorial-step3.md)
-[5단계 »](tutorial-step5.md)
-
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

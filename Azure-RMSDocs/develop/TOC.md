@@ -1,4 +1,4 @@
-# [이해 및 탐색](/rights-management/understand-explore/azure-rights-management)
+# [이해 및 탐색](/rights-management/understand-explore/what-is-information-protection)
 # [시작](/rights-management/get-started/requirements-azure-rms)
 # [계획 및 디자인](/rights-management/plan-design/deployment-roadmap)
 # [서비스 배포 및 사용](/rights-management/deploy-use/activate-service)
@@ -65,9 +65,8 @@
 #### [함수](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/functions)
 #### [구조](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/structures)
 #### [오류 코드](https://docs.microsoft.com/en-us/rights-management/sdk/2.1/api/win/Error codes)
-# [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

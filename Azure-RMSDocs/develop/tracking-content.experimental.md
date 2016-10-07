@@ -4,10 +4,10 @@ description: "문서 추적을 구현하기 위한 기본 지침"
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
@@ -15,8 +15,8 @@ ms.reviewer: shubhamp
 ms.suite: ems
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 7a96d113118747c76556528f94dd65d8df05e0c3
 
 
 ---
@@ -45,12 +45,12 @@ ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 운영 측면에서 **콘텐츠 이름** 및 **알림 유형** 속성만 문서 추적에 필요합니다.
 
 
-- [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-- [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+- [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+- [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
 
   모든 메타데이터 속성을 설정합니다. 해당 속성은 아래에 유형별로 나열되어 있습니다.
 
-  자세한 내용은 [라이선스 메타데이터 속성 형식](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) 항목을 참조하세요.
+  자세한 내용은 [라이선스 메타데이터 속성 형식](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) 항목을 참조하세요.
 
   - **IPC_MD_CONTENT_PATH**
 
@@ -76,16 +76,16 @@ ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 
     파일의 원래 날짜를 설정하는 데 사용합니다.
 
-- [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+- [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
 
 다음 중 해당 API를 사용하여 파일이나 스트림에 메타데이터를 추가합니다.
 
-- [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-- [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+- [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+- [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
 
 마지막으로, 다음 API를 사용하여 추적된 문서를 추적 시스템에 등록합니다.
 
-- [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+- [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
 
 ## 2. RMS 서비스에 문서 등록
@@ -136,7 +136,7 @@ ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 앱에 **사용량 추적** UI 항목을 추가하는 작업은 다음 URL 형식 중 하나를 사용하는 작업만큼 간단합니다.
 
 - 콘텐츠 ID 사용
-  - 라이선스가 직렬화된 경우 [IpcGetLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) 또는 [IpcGetSerializedLicenseProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty)를 사용하여 콘텐츠 ID를 가져오고 라이선스 속성 **IPC_LI_CONTENT_ID**를 사용합니다. 자세한 내용은 [라이선스 속성 형식](/rights-management/sdk/2.1/api/win/constants#msipc_license_property_types) 항목을 참조하세요.
+  - 라이선스가 직렬화된 경우 [IpcGetLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) 또는 [IpcGetSerializedLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty)를 사용하여 콘텐츠 ID를 가져오고 라이선스 속성 **IPC_LI_CONTENT_ID**를 사용합니다. 자세한 내용은 [라이선스 속성 형식](/information-protection/sdk/2.1/api/win/constants#msipc_license_property_types) 항목을 참조하세요.
   - **ContentId** 및 **Issuer** 메타 데이터와 함께 다음 형식을 사용합니다. `https://track.azurerms.com/#/{ContentId}/{Issuer}`
 
     예 - `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
@@ -149,20 +149,20 @@ ms.openlocfilehash: 63882ad86a3b2746e2f7c1250f8707049dee8eb7
 
 ## 관련 항목
 
-* [라이선스 메타데이터 속성 형식](/rights-management/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
-* [알림 기본 설정](/rights-management/sdk/2.1/api/win/constants#msipc_notification_preference)
-* [알림 유형](/rights-management/sdk/2.1/api/win/constants#msipc_notification_type)
-* [IpcCreateLicenseMetadataHandle](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-* [IpcSetLicenseMetadataProperty](/rights-management/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
-* [IpcSerializeLicenseWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-* [IpcfEncryptFileWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-* [IpcfEncryptFileStreamWithMetadata](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-* [IpcRegisterLicense](/rights-management/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+* [라이선스 메타데이터 속성 형식](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
+* [알림 기본 설정](/information-protection/sdk/2.1/api/win/constants#msipc_notification_preference)
+* [알림 유형](/information-protection/sdk/2.1/api/win/constants#msipc_notification_type)
+* [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
+* [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+* [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+* [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
+* [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+* [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
 
  
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

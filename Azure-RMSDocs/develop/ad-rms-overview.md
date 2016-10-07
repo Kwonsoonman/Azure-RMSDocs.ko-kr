@@ -4,18 +4,18 @@ description: "RMS(권한 관리 서비스)는 디지털 정보가 무단으로 �
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/11/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: df0ea8669038f458bc3d8fbf1c704bc5b6815e1d
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 82441858230e179a08bfa74e0f6aaf9ed17a62fb
 
 
 ---
@@ -61,6 +61,6 @@ AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -4,18 +4,18 @@ description:
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: e47a440a1cc69351baacdabb38774986f60b7443
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 703a30d1dc48856c896cc9763cbf6ea947773d2a
 
 
 ---
@@ -52,7 +52,7 @@ ms.openlocfilehash: e47a440a1cc69351baacdabb38774986f60b7443
 
 ## 2015년 5월 업데이트
 
--   **서비스 앱 및 클라우드 기반 RMS** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/rights-management/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이와 관련된 항목이 획득한 이 정보의 처리 지침을 제공하도록 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 업데이트된 버전을 참조하세요.
+-   **서비스 앱 및 클라우드 기반 RMS** - [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이와 관련된 항목이 획득한 이 정보의 처리 지침을 제공하도록 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 업데이트된 버전을 참조하세요.
 
 ## 2015년 4월 업데이트
 
@@ -61,7 +61,7 @@ ms.openlocfilehash: e47a440a1cc69351baacdabb38774986f60b7443
 
     **참고** **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 플래그는 더 이상 API에 노출되지 않습니다. 즉, 이후 앱에서 이 플래그를 참조할 경우 더 이상 컴파일되지 않지만 API 코드에서 비공개로 플래그가 적용되므로 이미 빌드된 앱은 계속 작동합니다. 플래그를 변경하기만 하면 사용되지 않는 이전 암호화 알고리즘 플래그를 여전히 활용할 수 있습니다. 자세한 내용은 [암호화 작업](working-with-encryption.md)을 참조하세요.
 
--   [**API 모드 값**](/rights-management/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)이 **IPC\_API\_MODE\_SERVER**인 **서버 모드 응용 프로그램**에는 응용 프로그램 매니페스트가 더 이상 필요하지 않습니다. 프로덕션 RMS 서버에서 응용 프로그램을 테스트할 수 있으며, 프로덕션 환경으로 전환할 때 프로덕션 라이선스를 얻지 않아도 됩니다. 서버 모드 응용 프로그램에 대한 자세한 내용은 [응용 프로그램 종류](application-types.md)를 참조하세요.
+-   [**API 모드 값**](/information-protection/sdk/2.1/api/win/api%20mode%20values#msipc_api_mode_values_IPC_API_MODE_SERVER)이 **IPC\_API\_MODE\_SERVER**인 **서버 모드 응용 프로그램**에는 응용 프로그램 매니페스트가 더 이상 필요하지 않습니다. 프로덕션 RMS 서버에서 응용 프로그램을 테스트할 수 있으며, 프로덕션 환경으로 전환할 때 프로덕션 라이선스를 얻지 않아도 됩니다. 서버 모드 응용 프로그램에 대한 자세한 내용은 [응용 프로그램 종류](application-types.md)를 참조하세요.
 -   이제 **로깅**이 파일 및 Windows용 이벤트 추적 방법 둘 다를 통해 구현됩니다.
 -   **Windows 7 SP1 또는 Windows Server 2008 R2 컴퓨터**에서 실행하는 경우 "중요한 개발자 노트" 아래에 있는 참고 사항을 참조하세요.
 
@@ -91,18 +91,18 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
     **참고** 여기에 나열되지 않은 추가 지원 데이터 형식 및 구조체가 파일 API 확장을 위해 추가되었습니다. 이 릴리스에서 업데이트된 모든 항목에는 **임시 및 변경될 수 있음**이 표시됩니다.
 
-    -   [**IpcfOpenFileOnHandle**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfopenfileonhandle)
-    -   [**IpcfOpenFileOnILockBytes**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfopenfileonilockbytes)
-    -   [**IpcfGetFileProperty**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetfileproperty)
-    -   [**IpcfLogicalFileRangeToRawFileRange**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcflogicalfilerangetorawfilerange)
-    -   [**IpcfReadFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfreadfile)
-    -   [**IpcfSetEndOfFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfsetendoffile)
-    -   [**IpcfWriteFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfwritefile)
+    -   [**IpcfOpenFileOnHandle**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfopenfileonhandle)
+    -   [**IpcfOpenFileOnILockBytes**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfopenfileonilockbytes)
+    -   [**IpcfGetFileProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfgetfileproperty)
+    -   [**IpcfLogicalFileRangeToRawFileRange**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcflogicalfilerangetorawfilerange)
+    -   [**IpcfReadFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfreadfile)
+    -   [**IpcfSetEndOfFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfsetendoffile)
+    -   [**IpcfWriteFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfwritefile)
 
 ## 2014년 4월 업데이트
 
 -   특히 큰 PFile의 경우 **파일 API 메모리 사용**이 훨씬 향상되었습니다.
--   이제 **IPC\_LI\_CONTENT\_ID** 속성을 통해 **콘텐츠 ID**를 쓸 수 있습니다. 자세한 내용은 [**라이선스 속성 형식**](/rights-management/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)을 참조하세요.
+-   이제 **IPC\_LI\_CONTENT\_ID** 속성을 통해 **콘텐츠 ID**를 쓸 수 있습니다. 자세한 내용은 [**라이선스 속성 형식**](/information-protection/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)을 참조하세요.
 -   **프로덕션 매니페스트 요구 사항** - 서버 모드에서 RMS 사용 응용 프로그램/서비스를 실행하는 경우에는 더 이상 매니페스트가 필요하지 않습니다. 자세한 내용은 [응용 프로그램 종류](application-types.md)를 참조하세요.
 -   **설명서 업데이트**
 
@@ -132,17 +132,17 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
       - RMS 보호된 파일 형식(PFile)을 사용하여 시스템 파일 및 Office 파일을 제외한 모든 파일을 보호할 수 있습니다.
 
-    파일 API는 다음과 같이 4개의 새로운 함수를 통해 구현됩니다. [IpcfDecryptFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile), [IpcfEncryptFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile), [IpcfGetSerializedLicenseFromFile](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile) 및 [IpcfIsFileEncrypted](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)
+    파일 API는 다음과 같이 4개의 새로운 함수를 통해 구현됩니다. [IpcfDecryptFile](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile), [IpcfEncryptFile](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile), [IpcfGetSerializedLicenseFromFile](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile) 및 [IpcfIsFileEncrypted](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)
 
     파일 API를 사용하려면 클라이언트 컴퓨터에 Rights Management Service Client 2.1을 설치해야 하고 컴퓨터에서 RMS 서버에 연결해야 합니다. RMS 서버, RMS 클라이언트 및 해당 기능에 대한 자세한 내용은 [IT Pro documentation for RMS](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx)(RMS에 대한 IT 전문가 설명서) 항목의 TechNet 콘텐츠를 참조하세요.
 
 -   **문제**: 라이선스를 처음부터 만드는 경우 소유권 권한을 명시적으로 부여해야 합니다.
 
-    **해결 방법**: [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)를 사용하여 라이선스를 처음부터 만드는 경우 응용 프로그램에서 라이선스 소유자에게 **소유자** 권한을 명시적으로 추가해야 합니다. 자세한 내용은 [명시적 소유자 권한 추가](add-explicit-owner-rights.md)를 참조하세요.
+    **해결 방법**: [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)를 사용하여 라이선스를 처음부터 만드는 경우 응용 프로그램에서 라이선스 소유자에게 **소유자** 권한을 명시적으로 추가해야 합니다. 자세한 내용은 [명시적 소유자 권한 추가](add-explicit-owner-rights.md)를 참조하세요.
 
--   **문제**: 응용 프로그램이 해당 핸들을 사용하여 동일한 창에 대해 [**IpcProtectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcprotectwindow) 또는 [**IpcUnprotectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow)를 두 번 호출하는 경우 RMS SDK 2.1에서 **HRESULT**에 오류를 반환합니다.
+-   **문제**: 응용 프로그램이 해당 핸들을 사용하여 동일한 창에 대해 [**IpcProtectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcprotectwindow) 또는 [**IpcUnprotectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow)를 두 번 호출하는 경우 RMS SDK 2.1에서 **HRESULT**에 오류를 반환합니다.
 
-    **해결 방법**: 이 문제에 대한 특정 지침은 [**IpcProtectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcprotectwindow) 및 [**IpcUnprotectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow)에서 설명 섹션을 참조하세요.
+    **해결 방법**: 이 문제에 대한 특정 지침은 [**IpcProtectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcprotectwindow) 및 [**IpcUnprotectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow)에서 설명 섹션을 참조하세요.
 
 -   **문제**: 여러 아키텍처에 대해 빌드하는 경우 이 지침을 따라야 합니다.
 
@@ -165,19 +165,19 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 * [개요](ad-rms-overview.md)
 * [명시적 소유자 권한 추가](add-explicit-owner-rights.md)
 * [파일 API 구성](file-api-configuration.md)
-* [**IpcfGetSerializedLicenseFromFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile)
-* [**IpcfEncryptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)
-* [**IpcfDecryptFile**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
-* [**IpcfIsFileEncrypted**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)
-* [**IpcCreateLicenseFromScratch**](/rights-management/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcProtectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcprotectwindow)
-* [**IpcUnprotectWindow**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow)
+* [**IpcfGetSerializedLicenseFromFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfgetserializedlicensefromfile)
+* [**IpcfEncryptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)
+* [**IpcfDecryptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
+* [**IpcfIsFileEncrypted**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfisfileencrypted)
+* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
+* [**IpcProtectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcprotectwindow)
+* [**IpcUnprotectWindow**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcunprotectwindow)
  
 
  
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

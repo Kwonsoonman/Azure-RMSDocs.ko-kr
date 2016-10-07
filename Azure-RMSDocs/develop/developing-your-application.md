@@ -4,18 +4,18 @@ description: "RMS SDK 2.1을 사용하여 응용 프로그램을 개발하는 �
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/06/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4141cadf67dc479116c802f9340ba222140194a3
-ms.openlocfilehash: 2d965086fa44d98e8236a6bbd2515fb3afac3f05
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 6e2b85bc8069de7060211df4d53be7f24ae44e3e
 
 
 ---
@@ -35,7 +35,7 @@ Microsoft Connect에서 전체 *IPCHellowWorld* 샘플 응용 프로그램을 [W
 
 ## MSIPC.dll 로드
 
-RMS SDK 2.1 함수를 호출하려면 먼저 [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 함수를 호출하여 MSIPC.dll을 로드해야 합니다.
+RMS SDK 2.1 함수를 호출하려면 먼저 [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 함수를 호출하여 MSIPC.dll을 로드해야 합니다.
 
         C++
         hr = IpcInitialize();
@@ -58,7 +58,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
         goto exit;
       }
 
-이 호출은 기본 서버에 설치된 RMS 템플릿을 검색하고 그 결과를 *pcTil* 변수가 가리키는 [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til) 구조에 로드한 다음 템플릿을 표시합니다.
+이 호출은 기본 서버에 설치된 RMS 템플릿을 검색하고 그 결과를 *pcTil* 변수가 가리키는 [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til) 구조에 로드한 다음 템플릿을 표시합니다.
 
       C++
       if (0 == pcTil->cTi) {
@@ -77,9 +77,9 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 ## 라이선스 직렬화
 
-데이터를 보호하려면 먼저 라이선스를 직렬화하고 콘텐츠 키를 가져와야 합니다. 콘텐츠 키는 중요한 데이터를 암호화하는 데 사용됩니다. 직렬화된 라이선스는 일반적으로 암호화된 데이터에 연결되며 보호된 데이터의 소비자가 사용합니다. 소비자는 직렬화된 라이선스로 [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)를 호출하여 콘텐츠 암호를 해독하고 콘텐츠와 관련된 정책을 가져오기 위한 콘텐츠 키를 얻어야 합니다.
+데이터를 보호하려면 먼저 라이선스를 직렬화하고 콘텐츠 키를 가져와야 합니다. 콘텐츠 키는 중요한 데이터를 암호화하는 데 사용됩니다. 직렬화된 라이선스는 일반적으로 암호화된 데이터에 연결되며 보호된 데이터의 소비자가 사용합니다. 소비자는 직렬화된 라이선스로 [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)를 호출하여 콘텐츠 암호를 해독하고 콘텐츠와 관련된 정책을 가져오기 위한 콘텐츠 키를 얻어야 합니다.
 
-간단하게, [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)에서 반환된 첫 번째 RMS 템플릿을 사용하여 라이선스를 직렬화합니다.
+간단하게, [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)에서 반환된 첫 번째 RMS 템플릿을 사용하여 라이선스를 직렬화합니다.
 
 일반적으로 사용자 인터페이스 대화 상자를 사용하여 사용자가 원하는 템플릿을 선택할 수 있도록 합니다.
 
@@ -97,7 +97,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 ## 데이터 보호
 
-이제 [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수를 사용하여 중요한 데이터를 암호화할 준비가 되었습니다. 먼저 **IpcEncrypt** 함수에 암호화된 데이터의 예상 크기를 물어야 합니다.
+이제 [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수를 사용하여 중요한 데이터를 암호화할 준비가 되었습니다. 먼저 **IpcEncrypt** 함수에 암호화된 데이터의 예상 크기를 물어야 합니다.
 
       C++
       cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
@@ -109,7 +109,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
         goto exit;
       }
 
-여기서는 wszText에 보호할 일반 텍스트가 포함되어 있습니다. [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수가 암호화된 데이터의 크기를 *cbEncrypted* 매개 변수에 반환합니다.
+여기서는 wszText에 보호할 일반 텍스트가 포함되어 있습니다. [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수가 암호화된 데이터의 크기를 *cbEncrypted* 매개 변수에 반환합니다.
 
 이제 암호화된 데이터에 대한 메모리를 할당합니다.
 
@@ -151,7 +151,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
         }
       }
 
-*DisplayError* 함수는 [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 함수를 사용하여 해당 오류 코드에서 오류 메시지를 가져오고 표준 출력으로 출력합니다.
+*DisplayError* 함수는 [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 함수를 사용하여 해당 오류 코드에서 오류 메시지를 가져오고 표준 출력으로 출력합니다.
 
 ## 정리
 
@@ -177,16 +177,16 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 ## 관련 항목
 
 - [개발자 지침 및 정보](developer-notes.md)
-- [IpcEncrypt](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-- [IpcGetErrorMessageText](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-- [IpcGetKey](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-- [IpcGetTemplateList](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-- [IpcInitialize](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-- [IPC_TIL](/rights-management/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
+- [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
+- [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
+- [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+- [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
+- [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+- [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

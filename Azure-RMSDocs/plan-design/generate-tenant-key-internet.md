@@ -3,17 +3,17 @@ title: "인터넷을 통해 테넌트 키 생성 및 전송&#58; 사용 중지�
 description: "이 문서의 정보는 Azure 권한 관리에서 고객 관리 테넌트 키(Bring Your Own Key 또는 BYOK라고도 함)에 대해 Azure 주요 자격 증명 모음을 사용하기 때문에 더 이상 관련이 없으므로 제거되었습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1bff9b06-8c5a-4b1d-9962-6668219210e6
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5cda55650d6dbab3876f673e2545b95ff5d4969f
-ms.openlocfilehash: 651a104efd4e27ab22164196904244708c605475
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: c2a272cc27a45f7fda8279394fcb681b70dea81b
 
 
 ---
@@ -27,6 +27,6 @@ ms.openlocfilehash: 651a104efd4e27ab22164196904244708c605475
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

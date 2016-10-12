@@ -1,28 +1,28 @@
 ---
-title: "Azure 권한 관리 확인 | Azure RMS"
-description: "Azure RMS를 활성화하고 조직에서 필요한 추가 구성 단계를 수행한 후에는 사용자 계정 하나를 사용해 파일 또는 메일 메시지를 보호한 다음 다른 사용자 계정에서 보호된 콘텐츠 열기 및 사용을 시도하는 방식으로 서비스가 정상적으로 작동하는지 확인할 수 있습니다."
+title: "Azure Rights Management 확인 | Azure Information Protection"
+description: "사용자 계정 하나를 사용해 파일 또는 전자 메일 메시지를 보호한 다음 다른 사용자 계정에서 보호된 콘텐츠 열기 및 사용을 시도하는 방식으로 서비스가 정상적으로 작동하는지를 확인하는 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: b24fa3540e4e9b9cc02ba3bcd83f5864ce8674d6
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 665adbee40f5c1653a3c046231c5df450ee78c5f
 
 
 ---
 
 # Azure 권한 관리 확인
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-Azure RMS([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)])를 활성화하고 조직에서 필요한 추가 구성 단계를 수행한 후에는 사용자 계정 하나를 사용해 파일 또는 메일 메시지를 보호한 다음 다른 사용자 계정에서 보호된 콘텐츠 열기 및 사용을 시도하는 방식으로 서비스가 정상적으로 작동하는지 확인할 수 있습니다.
+Azure Information Protection의 Azure Rights Management 서비스를 활성화하고 조직에서 필요한 추가 구성 단계를 수행한 후에는 사용자 계정 하나를 사용하여 파일 또는 전자 메일 메시지를 보호한 다음 다른 사용자 계정에서 보호된 콘텐츠 열기 및 사용을 시도하는 방식으로 이 보호 서비스가 정상적으로 작동하는지를 확인할 수 있습니다.
 
 이 테스트를 수행하려면 [사용자가 Azure 권한 관리를 사용하여 파일을 보호할 수 있도록 지원](help-users.md)의 정보를 사용할 수 있습니다.
 
@@ -33,13 +33,13 @@ Azure RMS([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_m
 
 ## 다음 단계
 
-사용 현황 로깅을 통해 조직에서 정보 보호를 사용하는 방식을 모니터링할 수 있습니다. 자세한 내용은 [Azure 권한 관리 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.
+사용 현황을 사용하여 조직에서 Azure Rights Management를 사용하는 방식을 모니터링할 수 있습니다. 자세한 내용은 [Azure 권한 관리 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.
 
 
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호) | Azure RMS"
-description: "파일을 내부에서 보호하면 보호되지 않는 원본 파일을 대체합니다. 그러면 파일을 원 위치에 남겨 두고 다른 폴더나 장치에 복사하거나, 파일이 들어 있는 폴더를 공유하여 파일을 보호할 수 있습니다. 전자 메일로 파일을 보호할 때 권장되는 방법은 파일 탐색기나 Office 응용 프로그램에서 직접 수행하는 것이지만 전자 메일 메시지에 보호되는 파일을 첨부할 수도 있습니다."
+title: "Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호) | Azure Information Protection"
+description: "컴퓨터, 서버 또는 다른 저장 장치에 파일을 안전하게 저장하는 방법에 대한 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 55f5f9dd0dd90bfa98798b4fc0b4cb4bd3c90076
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
 
 
 ---
 
 # Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(내부 보호)
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 파일을 내부에서 보호하면 보호되지 않는 원본 파일을 대체합니다. 그러면 파일을 원 위치에 남겨 두고 다른 폴더나 장치에 복사하거나, 파일이 들어 있는 폴더를 공유하여 파일을 보호할 수 있습니다. 메일을 통해 보호된 파일을 공유하는 권장 방법은 파일 탐색기나 Office 응용 프로그램에서 직접 공유하는 것이지만 보호된 파일을 메일 메시지에 첨부할 수도 있습니다([Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md) 참조).
 
@@ -66,6 +66,6 @@ ms.openlocfilehash: 55f5f9dd0dd90bfa98798b4fc0b4cb4bd3c90076
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

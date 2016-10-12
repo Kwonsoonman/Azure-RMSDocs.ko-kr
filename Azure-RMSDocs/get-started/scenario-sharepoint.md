@@ -1,28 +1,28 @@
 ---
-title: "시나리오 - SharePoint에 저장된 문서에 대한 제어 유지 | Azure RMS"
-description: "이 시나리오 및 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 SharePoint에 저장된 Office 문서가 보호된 라이브러리를 통해 계속 제어되도록 합니다."
+title: "시나리오 - SharePoint에 저장된 문서에 대한 제어 유지 | Azure Information Protection"
+description: "이 시나리오 및 지원 사용자 문서에서는 Azure Rights Management 보호를 사용하여 SharePoint에 저장된 Office 문서가 보호된 라이브러리를 통해 계속 제어되도록 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
+ms.sourcegitcommit: b61b7068e67103c45aea139cf95dacb851fe70e2
+ms.openlocfilehash: e0e6442e077d6899cbbf88ae2889908e93592815
 
 
 ---
 
 # 시나리오 - SharePoint에 저장된 문서에 대한 제어 유지
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-이 시나리오 및 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 SharePoint에 저장된 Office 문서가 보호된 라이브러리를 통해 계속 제어되도록 합니다. 예를 들어 사용자의 우발적이거나 의도적인 누출로부터 문서가 자동으로 보호되며, 문서가 다운로드되거나 동기화된 후에도 콘텐츠에 대한 액세스를 차단할 수 있습니다. 보호하려는 파일은 설계 문서 또는 계획에 대한 내부 공동 작업에 사용하거나 다른 결과물로 제공하기 위한 것일 수 있습니다. SharePoint용 보호된 라이브러리를 구성할 때 해당 라이브러리에 저장된 Office 파일은 Azure 권한 관리에 의해 보호됩니다.
+이 시나리오 및 지원 사용자 문서에서는 Azure Information Protection의 Azure Rights Management 기술을 사용하여 SharePoint에 저장된 Office 문서가 보호된 라이브러리를 통해 계속 제어되도록 합니다. 예를 들어 사용자의 우발적이거나 의도적인 누출로부터 문서가 자동으로 보호되며, 문서가 다운로드되거나 동기화된 후에도 콘텐츠에 대한 액세스를 차단할 수 있습니다. 보호하려는 파일은 설계 문서 또는 계획에 대한 내부 공동 작업에 사용하거나 다른 결과물로 제공하기 위한 것일 수 있습니다. SharePoint용 보호된 라이브러리를 구성할 때 해당 라이브러리에 저장된 Office 파일은 Azure 권한 관리에 의해 보호됩니다.
 
 지침을 제공하기에 적합한 상황은 다음과 같습니다.
 
@@ -42,9 +42,9 @@ ms.openlocfilehash: 048eafc41dcd03c708dca5befbef4e4b9e7113c4
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
 |---------------|--------------------------------|
-|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
-|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
-|SharePoint Server를 사용할 경우: RMS 커넥터를 배포하고 SharePoint에 대해 구성|[Azure 권한 관리 커넥터 배포](https://technet.microsoft.com/library/dn375964.aspx)|
+|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부|[Azure Information Protection 준비](../plan-design/prepare.md)|
+|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](../deploy-use/activate-service.md)|
+|SharePoint Server를 사용할 경우: RMS 커넥터를 배포하고 SharePoint에 대해 구성|[Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)|
 |보호할 SharePoint 사이트에 대한 사용 권한 구성|[목록, 라이브러리, 폴더, 문서 또는 목록 항목에 대한 사용 권한 관리](https://support.office.com/en-ca/article/Manage-permissions-for-a-list-library-folder-document-or-list-item-9d13e7df-a770-4646-91ab-e3c117fcef45)<br /><br />[목록이나 라이브러리에 정보 권한 관리 적용](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 |IRM 및 보호된 라이브러리에 대해 SharePoint 구성|[SharePoint 관리 센터의 IRM(정보 권한 관리) 설정](https://support.office.com/en-us/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239ce6eb-4e81-42db-bf86-a01362fed65c)<br /><br />[목록이나 라이브러리에 정보 권한 관리 적용](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)|
 
@@ -105,6 +105,6 @@ SharePoint 사이트인 **판매 예측 및 보고서**가 이제 안전한 공�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

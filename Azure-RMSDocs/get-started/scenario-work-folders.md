@@ -1,28 +1,28 @@
 ---
-title: "시나리오 - 클라우드 폴더에 대해 지속적인 보호 구성 | Azure RMS"
-description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 클라우드 폴더에 있는 Office 문서에 영구적 보호 기능을 적용합니다."
+title: "시나리오 - 클라우드 폴더에 대해 지속적인 보호 구성 | Azure Information Protection"
+description: "이 시나리오와 지원 사용자 문서에서는 Azure Rights Management 보호를 사용하여 클라우드 폴더에 있는 Office 문서에 영구적 보호 기능을 적용합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 1fdb62af06a3011e1102df0df3f9b61bcdc67edd
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 966c1b109a02f8193de16eae6f2eacec757f533b
 
 
 ---
 
 # 시나리오 - 클라우드 폴더에 대해 지속적인 보호 구성
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 [클라우드 폴더](https://technet.microsoft.com/library/dn265974.aspx)에 있는 Office 문서에 영구적 보호 기능을 적용합니다. 클라우드 폴더는 Windows Server를 실행하는 파일 서버에 사용자가 PC와 장치에서 작업 파일에 액세스할 수 있는 일관된 방법을 제공하는 역할 서비스를 사용합니다. 클라우드 폴더는 파일을 보호하는 자체 암호화를 제공하지만 클라우드 폴더 환경 외부로 파일을 이동할 경우 이 보호 기능이 손실됩니다. 예를 들어 사용자가 동기화된 파일을 복사한 다음 IT 부서에서 제어하지 않는 저장소에 저장하거나 다른 사용자에게 파일을 메일로 보내는 경우가 있습니다.
+이 시나리오와 지원 사용자 문서에서는 Azure Information Protection의 Azure Rights Management 기술을 사용하여 [클라우드 폴더](https://technet.microsoft.com/library/dn265974.aspx)에 있는 Office 문서에 영구적 보호 기능을 적용합니다. 클라우드 폴더는 Windows Server를 실행하는 파일 서버에 사용자가 PC와 장치에서 작업 파일에 액세스할 수 있는 일관된 방법을 제공하는 역할 서비스를 사용합니다. 클라우드 폴더는 파일을 보호하는 자체 암호화를 제공하지만 클라우드 폴더 환경 외부로 파일을 이동할 경우 이 보호 기능이 손실됩니다. 예를 들어 사용자가 동기화된 파일을 복사한 다음 IT 부서에서 제어하지 않는 저장소에 저장하거나 다른 사용자에게 파일을 메일로 보내는 경우가 있습니다.
 
 Azure 권한 관리에서 제공하는 추가 보호 기능은 조직 외부 사용자가 파일을 볼 수 없도록 하여 실수로 인한 데이터 손실을 방지할 수 있습니다. 이렇게 하려면 기본 제공 기본 권한 정책 템플릿 중 하나를 사용합니다. 그러나 이 시나리오를 배포하기 전에 사용자가 이러한 파일을 조직 외부 사용자와 정당하게 공유해야 할 수도 있는지 여부를 고려합니다. 예를 들어 사용자가 초안 가격 목록을 작성한 후 최종 버전을 다음 조직의 고객에게 메일로 보내는 경우가 있습니다. 클라우드 폴더에 기본 권한 관리 템플릿을 사용하면 다른 조직의 해당 고객은 메일로 받은 이 문서를 읽을 수 없습니다. 사용자가 모든 직원인 원래 제한을 메일에 지정한 사용자로 바꾸는 새 권한 정책을 파일에 적용할 수 있도록 하는 사용자 지정 템플릿을 만들면 이 요구 사항을 충족할 수 있습니다.
 
@@ -51,11 +51,11 @@ Azure 권한 관리에서 제공하는 추가 보호 기능은 조직 외부 사
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
 |---------------|--------------------------------|
-|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
-|온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 전자 메일 주소를 포함). 이 작업은 클라우드 폴더를 사용하는 모든 사용자에게 필요합니다.|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
-|다음 중 하나<br /><br />- 사용자가 새 권한 정책을 적용할 수 있도록 허용하지 않는 기본 템플릿을 모든 사용자에 대해 사용하려는 경우: 기본 템플릿 **&lt;조직 이름&gt; - 기밀**을 보관하지 않았는지 여부<br /><br />- 사용자에게 적합한 사용자 지정 템플릿을 사용하여 새 권한 정책을 적용하려는 경우: 뒤에 나오는 지침에 따라 사용자 지정 템플릿을 만들었는지 여부|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)|
-|Rights Management 커넥터가 설치되고, Windows Server 컴퓨터에 대한 권한이 부여되었으며, **FCI 서버** 역할에 대해 구성되었는지 여부|[Azure 권한 관리 커넥터 배포](https://technet.microsoft.com/library/dn375964.aspx)|
-|Windows를 실행하는 사용자의 컴퓨터에 Rights Management 공유 응용 프로그램이 배포되었는지 여부|[Microsoft Rights Management 공유 응용 프로그램 자동 배포](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](../deploy-use/activate-service.md)|
+|온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 전자 메일 주소를 포함). 이 작업은 클라우드 폴더를 사용하는 모든 사용자에게 필요합니다.|[Azure Information Protection 준비](../plan-design/prepare.md)|
+|다음 중 하나<br /><br />- 사용자가 새 권한 정책을 적용할 수 있도록 허용하지 않는 기본 템플릿을 모든 사용자에 대해 사용하려는 경우: 기본 템플릿 **&lt;조직 이름&gt; - 기밀**을 보관하지 않았는지 여부<br /><br />- 사용자에게 적합한 사용자 지정 템플릿을 사용하여 새 권한 정책을 적용하려는 경우: 뒤에 나오는 지침에 따라 사용자 지정 템플릿을 만들었는지 여부|[Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)|
+|Rights Management 커넥터가 설치되고, Windows Server 컴퓨터에 대한 권한이 부여되었으며, **FCI 서버** 역할에 대해 구성되었는지 여부|[Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)|
+|Windows를 실행하는 사용자의 컴퓨터에 Rights Management 공유 응용 프로그램이 배포되었는지 여부|[Microsoft Rights Management 공유 응용 프로그램 자동 배포](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 
 ### 사용자가 조직 외부와 클라우드 폴더 파일을 공유할 수 있도록 사용자 지정 권한 정책 템플릿 구성
 
@@ -115,13 +115,13 @@ Azure 권한 관리를 사용하여 보호하는 파일을 조직 외부 사용�
 이 시나리오에 대해 문서화된 대로 사용자 지정 템플릿을 구성한 경우 알림 표시줄에 다음과 같은 템플릿 설명이 표시됩니다. **이 콘텐츠는 클라우드 폴더를 통해 보호되며 회사 직원으로만 제한됩니다. 이 콘텐츠를 조직 외부 사용자와 공유하려면 문서를 메일 메시지에 첨부하고 보호된 항목 공유 기능을 사용합니다.** 이 설명은 조직 외부와 파일을 공유하는 방법에 대한 요약을 제공하지만 사용자가 특히 처음 몇 번은 이 작업을 수행하는 방법에 대한 자세한 지침이 필요할 가능성이 큽니다. 이 후속 시나리오를 지원하려면 [시나리오 - 다른 조직의 사용자와 Office 파일 공유](scenario-share-office-file-externally.md)에 있는 관리자 및 최종 사용자 지침을 사용합니다.
 
 > [!TIP]
-> 사용자가 IT 감독 없이 조직 외부와 이러한 파일을 공유할 수 없도록 이 지침에 있는 사용자 지정 템플릿을 사용하지 않기로 결정한 경우 공유 요구 사항이 정당하면 비즈니스에 가장 적합한 메커니즘을 사용하여 처리할 수 있도록 지원 센터에 알립니다. 예를 들어 [슈퍼 사용자](https://technet.microsoft.com/library/mt147272.aspx)인 사용자는 요청하는 사용자에게 모든 권한을 부여하는 새 템플릿을 컨텐츠에 적용할 수 있으며, 이렇게 하면 해당 사용자가 보호된 항목 공유 기능을 사용할 수 있습니다.
+> 사용자가 IT 감독 없이 조직 외부와 이러한 파일을 공유할 수 없도록 이 지침에 있는 사용자 지정 템플릿을 사용하지 않기로 결정한 경우 공유 요구 사항이 정당하면 비즈니스에 가장 적합한 메커니즘을 사용하여 처리할 수 있도록 지원 센터에 알립니다. 예를 들어 [슈퍼 사용자](../deploy-use/configure-super-users.md)인 사용자는 요청하는 사용자에게 모든 권한을 부여하는 새 템플릿을 컨텐츠에 적용할 수 있으며, 이렇게 하면 해당 사용자가 보호된 항목 공유 기능을 사용할 수 있습니다.
 > 
-> 일정 기간 후에 이러한 요청이 많으면 특정 사용자(예: 관리자 또는 기술 지원팀)에게만 공동 소유자 옵션을 부여하고 표준 사용자에게는 공동 작성자 또는 적합하다고 결정한 [권한](https://technet.microsoft.com/library/mt169423.aspx)을 부여하는 고유한 사용자 지정 템플릿을 이 시나리오에 대해 정의할 수도 있습니다.
+> 일정 기간 후에 이러한 요청이 많으면 특정 사용자(예: 관리자 또는 기술 지원팀)에게만 공동 소유자 옵션을 부여하고 표준 사용자에게는 공동 작성자 또는 적합하다고 결정한 [권한](../deploy-use/configure-usage-rights.md)을 부여하는 고유한 사용자 지정 템플릿을 이 시나리오에 대해 정의할 수도 있습니다.
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

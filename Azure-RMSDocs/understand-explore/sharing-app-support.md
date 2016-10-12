@@ -1,19 +1,19 @@
 ---
-title: "Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램 | Azure RMS"
-description: "RMS 공유 응용 프로그램은 Office 2010을 지원하는 데 필요하며 Windows 컴퓨터, Mac 컴퓨터, 모바일 장치에서 사용해도 좋은 무료 다운로드 가능 응용 프로그램입니다. 이 응용 프로그램의 장점 중 하나는 기본적으로 권한 관리를 지원하지 않는 응용 프로그램과 파일에 대해서도 일반적인 보호를 적용할 수 있으므로 모든 파일을 보호할 수 있다는 점입니다."
+title: "Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램 | Azure Information Protection"
+description: "RMS 공유 응용 프로그램에서 Azure RMS를 지원하는 방식을 설명합니다. Azure RMS는 Office 2010을 지원하기 위해 필요하며 Windows 컴퓨터, Mac 컴퓨터 및 모바일 장치에서도 사용할 수 있는 무료 다운로드 가능 응용 프로그램입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 6304c5c29e2dab176fb9d5a617e1467af00ab504
+ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
+ms.openlocfilehash: e4b9a13ba29820cd7a19e0b8509966f5d8195353
 
 
 ---
@@ -21,9 +21,9 @@ ms.openlocfilehash: 6304c5c29e2dab176fb9d5a617e1467af00ab504
 
 # Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-RMS 공유 응용 프로그램은 Office 2010을 지원하는 데 필요하며 Windows 컴퓨터, Mac 컴퓨터, 모바일 장치에서 사용해도 좋은 무료 다운로드 가능 응용 프로그램입니다. 이 응용 프로그램의 장점 중 하나는 기본적으로 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 지원하지 않는 응용 프로그램과 파일에 대해서도 일반적인 보호를 적용할 수 있으므로 모든 파일을 보호할 수 있다는 것입니다. 다양한 보호 수준에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)에서 [보호 수준 - 기본 및 일반](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요.
+RMS 공유 응용 프로그램은 Office 2010을 지원하는 데 필요하며 Windows 컴퓨터, Mac 컴퓨터, 모바일 장치에서 사용해도 좋은 무료 다운로드 가능 응용 프로그램입니다. 이 응용 프로그램의 장점 중 하나는 기본적으로 Azure Rights Management 서비스를 지원하지 않는 응용 프로그램과 파일에 대해서도 일반적인 보호를 적용할 수 있으므로 모든 파일을 보호할 수 있다는 점입니다. 다양한 보호 수준에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)에서 [보호 수준 - 기본 및 일반](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요.
 
 사용자가 RMS 공유 응용 프로그램을 사용하여 파일을 보호하면, 보호된 문서를 추적하고 또 필요한 경우 이들 문서에 대한 액세스를 취소할 수도 있습니다. [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)를 사용하여 이를 수행합니다.
 
@@ -33,9 +33,9 @@ Windows 컴퓨터에서 RMS 공유 응용 프로그램은 사용자가 이미 �
 
 -   파일 탐색기에 새로운 마우스 오른쪽 클릭 옵션이 추가됩니다. 그러면 **바로 보호** 옵션이 표시되며, 이 옵션을 선택하면 디스크에 저장된 파일을 보호하는 데 가장 일반적으로 사용되는 설정이 포함된 간편한 대화 상자가 호출됩니다.
 
--   [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 통해 보호된 파일을 열 수 있는 뷰어가 제공됩니다. 보호된 파일을 열 수 있는 다른 응용 프로그램이 설치되어 있지 않으면 이 뷰어가 자동으로 호출됩니다.
+-   Azure Rights Management 서비스를 통해 보호된 파일을 열 수 있는 뷰어가 제공됩니다. 보호된 파일을 열 수 있는 다른 응용 프로그램이 설치되어 있지 않으면 이 뷰어가 자동으로 호출됩니다.
 
--   Office 2010 제품군의 Word, Excel, PowerPoint 및 Outlook이 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]와 원활하게 연동되도록 하는 Office 2010용 백 엔드 구성이 적용됩니다.
+-   Office 2010 제품군의 Word, Excel, PowerPoint 및 Outlook이 Azure Rights Management 서비스와 원활하게 연동되도록 하는 Office 2010용 백 엔드 구성이 적용됩니다.
 
 [Microsoft Rights Management 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)를 사용하여 단일 컴퓨터에 대해 Windows용 RMS 공유 응용 프로그램을 다운로드하여 설치할 수 있지만 자동 설치 및 사용자 지정 구성에 대한 엔터프라이즈 배포도 지원됩니다. 자세한 내용은 다음 리소스를 참조하세요.
 
@@ -53,11 +53,11 @@ Windows 컴퓨터에서 RMS 공유 응용 프로그램은 사용자가 이미 �
 
 
 ## 다음 단계
-다른 응용 프로그램과 서비스에서 Azure 권한 관리를 지원하는 방식을 보려면 [응용 프로그램이 Azure 권한 관리를 지원하는 방식](applications-support.md)을 참조하세요.
+다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,5 +1,5 @@
-# [이해 및 탐색](/rights-management/understand-explore/azure-rights-management)
-# [시작](/rights-management/get-started/requirements-azure-rms)
+# [이해 및 탐색](/information-protection/understand-explore/what-is-information-protection)
+# [시작](/information-protection/get-started/requirements-azure-rms)
 # [계획 및 디자인](deployment-roadmap.md)
 ## [배포 로드맵](deployment-roadmap.md)
 ## [AD RMS에서 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)
@@ -12,13 +12,12 @@
 ### [마이그레이션 후 작업](migrate-from-ad-rms-phase4.md)
 ## [테넌트 키 계획 및 구현](plan-implement-tenant-key.md)
 ### [BYOK 가격 및 제한 사항](byok-price-restrictions.md)
-## [Azure RMS 준비](prepare.md)
-# [서비스 배포 및 사용](/rights-management/deploy-use/activate-service)
-# [클라이언트 배포 및 사용](/rights-management/rms-client/use-client)
-# [앱 개발 및 사용자 지정](/rights-management/develop/developers-guide)
-# [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
+## [Azure Information Protection 준비](prepare.md)
+# [서비스 배포 및 사용](/information-protection/deploy-use/activate-service)
+# [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
+# [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

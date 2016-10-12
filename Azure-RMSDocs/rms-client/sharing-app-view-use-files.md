@@ -1,33 +1,33 @@
 ---
-title: "Rights Management로 보호된 파일 보기 및 사용 | Azure RMS"
-description: "Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치된 경우 단순히 두 번 클릭하여 보호된 파일을 봅니다. 파일은 전자 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다."
+title: "Rights Management로 보호된 파일 보기 및 사용 | Azure Information Protection"
+description: "보호된 파일을 보고 사용하기 위한 지침을 제공합니다. 여기서 설명하는 작업을 수행하려면 (RMS)Rights Management 공유 응용 프로그램을 설치해야 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 78810a639c2360707b628423bb68b2f05e8c5b56
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
 
 
 ---
 
 # Rights Management로 보호된 파일 보기 및 사용
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 [Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치](install-sharing-app.md)되어 있는 경우 보호된 파일을 두 번 클릭하면 파일이 표시됩니다. 파일은 전자 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다.
 
 > [!NOTE]
-> 보호된 파일을 볼 수 있기 전에 먼저 RMS는 파일을 볼 수 있는 권한이 있는지 확인하기 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
+> 보호된 파일을 볼 수 있기 전에 먼저 Rights Management 서비스는 파일을 볼 수 있는 권한이 있는지 확인하기 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
 >
-> 조직이 Azure Rights Management(Azure RMS) 또는 AD RMS를 사용하지 않으면 자격 증명을 허용하는 무료 계정을 적용하므로 RMS를 사용하여 보호되는 파일을 열 수 있습니다.
+> 조직이 Azure Information Protection 또는 AD RMS를 사용하지 않으면 자격 증명을 허용하는 무료 계정을 적용하므로 RMS를 사용하여 보호되는 파일을 열 수 있습니다.
 >
 > -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
 >
@@ -68,7 +68,7 @@ ms.openlocfilehash: 78810a639c2360707b628423bb68b2f05e8c5b56
 
 
 
-Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [지원되는 파일 형식 및 파일 이름 확장명](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션을 참조하세요. 파일 이름 확장명이 표시되지 않으면 웹 검색을 사용하여 다른 응용 프로그램에서 지원되는 파일 이름 확장명인지 확인하세요.
+Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체 목록은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [지원되는 파일 형식 및 파일 이름 확장명](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션을 참조하세요. 파일 이름 확장명이 표시되지 않으면 웹 검색을 사용하여 다른 응용 프로그램에서 지원되는 파일 이름 확장명인지 확인하세요.
 
 > [!NOTE]
 > 파일이 Rights Management에 의해 보호되고 있음을 확인한 후 파일이 열리지 않는 경우 [RMS 분석기 도구](https://www.microsoft.com/en-us/download/details.aspx?id=46437)를 다운로드하여 사용합니다. 이 도구의 지침에 따라 보호된 문서를 열지 못하게 하는 컴퓨터의 문제를 확인합니다.
@@ -90,7 +90,7 @@ Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은
 
 - **기타 파일 이름 확장명**
 
-    장치는 Rights Management를 이해하는 응용 프로그램으로 이런 파일을 사용해야 합니다. 이러한 응용 프로그램은 RMS 지원 응용 프로그램이라고 합니다. Office 2016, Office 2013 및 Office 2010의 응용 프로그램(Word, Excel, PowerPoint 및 Outlook 등)은 Rights Management를 지원하는 응용 프로그램의 예입니다. 하지만 다른 소프트웨어 회사 또는 고유의 업무 응용 프로그램과 같은 Microsoft에서 제공되지 않는 응용 프로그램도 Rights Management에 대해 지원될 수 있습니다.
+    장치는 Rights Management 보호를 이해하는 응용 프로그램으로 이런 파일을 사용해야 합니다. 이러한 응용 프로그램은 RMS 지원 응용 프로그램이라고 합니다. Office 2016, Office 2013 및 Office 2010의 응용 프로그램(Word, Excel, PowerPoint 및 Outlook 등)은 Rights Management를 지원하는 응용 프로그램의 예입니다. 하지만 다른 소프트웨어 회사 또는 고유의 업무 응용 프로그램과 같은 Microsoft에서 제공되지 않는 응용 프로그램도 Rights Management에 대해 지원될 수 있습니다.
 
     Rights Management를 지원하는 응용 프로그램은 응용 프로그램을 지원하는 다른 Rights Management에서 보호된 파일을 여는 방법을 압니다. 또한 파일을 편집하거나 다른 파일 이름 또는 다른 위치에 저장할 경우 적용 되는 보호를 유지할 수 있습니다. 이러한 응용 프로그램은 파일에 현재 적용되는 권한에 따라 파일을 사용하므로 파일을 사용하는 권한이 있는 경우 그렇게 할 수 있습니다. 예를 들어 파일을 편집하지만 인쇄하지 않을 수 있습니다.
 
@@ -107,6 +107,6 @@ Rights Management에서 지원하는 파일 이름 확장명의 전체 목록은
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

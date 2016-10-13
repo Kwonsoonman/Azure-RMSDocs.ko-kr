@@ -4,18 +4,18 @@ description: "여러 플랫폼에서 AD RMS를 잘 지원하는 개발자 커뮤
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: c6fdff9ea2826aca5daff710f067d539c6379a2d
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: dab2d84371cd2c45af617898f1694f99128551d9
 
 
 ---
@@ -33,7 +33,7 @@ Connect 사이트의 권한 관리 서비스 섹션에서 현재 결과물을 �
 **참고**  
 Microsoft Connect에 등록하지 않은 경우 다음을 수행합니다.
 
--   [Microsoft Connect](http://connect.microsoft.com)(http://connect.microsoft.com)로 이동합니다.
+-   [Microsoft Connect](http://connect.microsoft.com) (http://connect.microsoft.com)로 이동합니다
 -   Microsoft 계정을 사용하여 로그인합니다.
 -   명령 모음에서 **디렉터리**를 클릭합니다.
 -   **권한 관리 서비스**를 검색합니다.
@@ -50,6 +50,6 @@ Microsoft Connect에 등록하지 않은 경우 다음을 수행합니다.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

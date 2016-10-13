@@ -1,28 +1,28 @@
 ---
-title: "시나리오 - 다른 조직의 사용자와 Office 파일 공유 | Azure RMS"
-description: "이 시나리오와 지원 사용자 문서에서는 사용자가 다른 조직의 사용자와 Office 파일을 안전하게 메일로 주고받을 수 있도록 Azure 권한 관리를 사용합니다."
+title: "시나리오 - 다른 조직의 사용자와 Office 파일 공유 | Azure Information Protection"
+description: "이 시나리오와 지원 사용자 문서에서는 사용자가 다른 조직의 사용자와 Office 파일을 안전하게 메일로 주고받을 수 있도록 Azure Rights Management 보호를 사용합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
+ms.sourcegitcommit: 03bd68b03d423908e7fbe89efb6aac6773283f2f
+ms.openlocfilehash: 1e8ba22c5fdcf3f17b3cec0a99444975c03ec008
 
 
 ---
 
 # 시나리오 - 다른 조직의 사용자와 Office 파일 공유
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-이 시나리오와 지원 사용자 문서에서는 사용자가 다른 조직의 사용자와 Office 파일을 안전하게 메일로 주고받을 수 있도록 Azure 권한 관리를 사용합니다. 예를 들어 Office 파일은 파트너를 위한 가격 목록 정보, 대리점을 위한 제품 목록 또는 배송 시간 표시줄과 잠재적 고객 목록이 포함된 Word 문서, Excel 스프레드시트 또는 PowerPoint 프레젠테이션일 수 있습니다. 사용자가 이러한 지침을 따르면 전자 메일 메시지에 첨부된 파일이 Azure 권한 관리를 통해 보호됩니다.
+이 시나리오와 지원 사용자 문서에서는 사용자가 다른 조직의 사용자와 Office 파일을 안전하게 메일로 주고받을 수 있도록 Azure Information Protection의 Azure Rights Management 기술을 사용합니다. 예를 들어 Office 파일은 파트너를 위한 가격 목록 정보, 대리점을 위한 제품 목록 또는 배송 시간 표시줄과 잠재적 고객 목록이 포함된 Word 문서, Excel 스프레드시트 또는 PowerPoint 프레젠테이션일 수 있습니다. 사용자가 이러한 지침을 따르면 전자 메일 메시지에 첨부된 파일이 Azure 권한 관리를 통해 보호됩니다.
 
 이 시나리오는 다음과 같은 상황에 적합합니다.
 
@@ -44,11 +44,11 @@ ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
 |---------------|--------------------------------|
-|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
+|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부|[Azure Information Protection 준비](https://technet.microsoft.com/library/jj585029.aspx)|
 |Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
-|Windows를 실행하는 사용자의 컴퓨터에 Rights Management 공유 응용 프로그램이 배포되었는지 여부|[Microsoft Rights Management 공유 응용 프로그램 자동 배포](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
-|사용자가 Office 2013의 Outlook을 사용 중인지 여부|사용자가 Office 2010을 사용 중인 경우에는 그림이 사용자에게 표시되는 화면과 일치하도록 스크린샷을 해당 버전의 그림으로 바꿉니다.|
-|Azure RMS 구독에 문서 추적이 포함되는지 여부|Azure RMS 구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 사용자가 사용자 지침의 모든 단계를 완료할 수 없습니다. 이 경우에는 해당 기능을 지원하는 구독을 구입하거나 사용자 지침을 수정하여 이러한 기능을 사용하는 단계를 제거합니다.<br /><br />구독 지원을 확인하려면 [RMS(Rights Management Services) 제품 비교](https://technet.microsoft.com/dn858608)를 참조하세요.|
+|Windows를 실행하는 사용자의 컴퓨터에 Rights Management 공유 응용 프로그램이 배포되었는지 여부|[Microsoft Rights Management 공유 응용 프로그램 자동 배포](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
+|사용자가 Office 2013의 Outlook을 사용 중인지 여부|사용자가 Office 2016 또는 Office 2010을 사용 중인 경우에는 그림이 사용자에게 표시되는 화면과 일치하도록 스크린샷을 해당 버전의 그림으로 바꿉니다.|
+|Azure Information Protection용 구독에는 문서 추적이 포함되어 있습니다.|구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 사용자가 사용자 지침의 모든 단계를 완료할 수 없습니다. 이 경우에는 해당 기능을 지원하는 구독을 구입하거나 사용자 지침을 수정하여 이러한 기능을 사용하는 단계를 제거합니다.<br /><br />Azure Information Protection [가격 책정 페이지](https://go.microsoft.com/fwlink/?LinkId=827589)에서 구독 정보를 확인하세요.|
 
 ## 사용자 문서 지침
 다음 템플릿을 사용하여 최종 사용자 통신에 사용자 지침을 복사해서 붙여넣고 사용자 환경에 맞게 다음과 같이 수정합니다.
@@ -104,9 +104,9 @@ ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 -   추가 정보를 확인하려면 다음 항목을 참조하세요.
 
-    -   [전자 메일을 통해 공유하는 파일 보호](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [전자 메일을 통해 공유하는 파일 보호](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [문서 추적 및 취소](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)
 
 -   지원 센터에 연락하려면 다음 정보를 참조하세요.
 
@@ -143,9 +143,9 @@ ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 -   추가 정보를 확인하려면 다음 항목을 참조하세요.
 
-    -   [전자 메일을 통해 공유하는 파일 보호](https://technet.microsoft.com/library/dn574735%28v=ws.10%29.aspx)
+    -   [전자 메일을 통해 공유하는 파일 보호](../rms-client/sharing-app-protect-by-email.md)
 
-    -   [문서 추적 및 취소](https://technet.microsoft.com/library/dn986611.aspx)
+    -   [문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)
 
 -   지원 센터에 연락하려면 다음 정보를 참조하세요.
 
@@ -154,6 +154,6 @@ ms.openlocfilehash: 26e81330c58057aac9629690f1d4fe85e56a64f8
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

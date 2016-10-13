@@ -1,43 +1,43 @@
 ---
-title: "Office 앱&colon; 클라이언트 구성 | Azure RMS"
-description: "이 정보를 사용하여 최종 사용자가 사용하는 Office 앱이 Azure 권한 관리(Azure RMS)와 함께 작동하기 위해 수행해야 하는 작업을 확인할 수 있습니다."
+title: "Office 앱&colon; 클라이언트 구성 | Azure Information Protection"
+description: "관리자가 Azure Information Protection의 Azure Rights Management 서비스에서 작동하도록 Office 앱을 구성하는 방법 및 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 562ecbd04ef988130205de06e5dd76084822ca7a
+ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
+ms.openlocfilehash: 6aadbc2c8f35fc985d0a90759054ed6b35a160c8
 
 
 ---
 
 # Office 앱: 클라이언트 구성
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
 
-이 정보를 사용하여 최종 사용자가 사용하는 Office 앱이 Azure 권한 관리(Azure RMS)와 함께 작동하기 위해 수행해야 하는 작업을 확인할 수 있습니다.
+이 정보를 사용하여 최종 사용자가 사용하는 Office 앱이 Azure Information Protection의 Azure Rights Management 서비스와 함께 작동하기 위해 수행해야 하는 작업을 확인할 수 있습니다.
 
 ## Office 2016 및 Office 2013
-이러한 이후 버전의 Office는 기본적으로 Azure RMS를 지원하므로 Word, Excel, PowerPoint, Outlook 및 Outlook Web App과 같은 응용 프로그램에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 사용자는 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 Office 응용 프로그램에 로그인하기만 하면 되며, 로그인하면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
+이러한 이후 버전의 Office는 기본적으로 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 Outlook Web App과 같은 응용 프로그램에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 사용자는 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 Office 응용 프로그램에 로그인하기만 하면 되며, 로그인하면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
 
 그러나 사용자가 Office 추가 기능의 이점을 얻을 수 있도록 권한 관리 공유 응용 프로그램으로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성](configure-sharing-app.md)을 참조하세요.
 
 ## Office 2010
-클라이언트 컴퓨터가 Azure RMS를 Office 2010과 함께 사용하도록 하려면 클라이언트 컴퓨터에 Windows용 Rights Management 공유 응용 프로그램을 설치해야 합니다. 사용자가 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 로그인하는 것 외에 추가 구성은 필요하지 않으며, 로그인하면 파일을 보호하고 다른 사용자가 보호한 파일을 사용할 수 있습니다.
+클라이언트 컴퓨터가 Azure Rights Management 서비스를 Office 2010과 함께 사용하도록 하려면 클라이언트 컴퓨터에 Windows용 Rights Management 공유 응용 프로그램을 설치해야 합니다. 사용자가 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 로그인하는 것 외에 추가 구성은 필요하지 않으며, 로그인하면 파일을 보호하고 다른 사용자가 보호한 파일을 사용할 수 있습니다.
 
 Rights Management 공유 응용 프로그램에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성](configure-sharing-app.md)을 참조하세요.
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

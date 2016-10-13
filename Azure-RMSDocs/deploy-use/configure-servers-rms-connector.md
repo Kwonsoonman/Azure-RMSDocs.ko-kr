@@ -1,26 +1,26 @@
 ---
-title: "Azure 권한 관리 커넥터에 대해 서버 구성 | Azure RMS"
-description: "다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 사용할 온-프레미스 서버를 구성할 수 있습니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 5단계를 설명합니다."
+title: "Azure Rights Management 커넥터에 대해 서버 구성 | Azure Information Protection"
+description: "Azure RMS(Rights Management) 커넥터를 사용할 온-프레미스 서버를 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 5단계를 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: d2b15dac1f2b2163ff72d80c97ca0d5da44fd13c
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 825103c8857d2db4f0a37570d10fd88361eae274
 
 
 ---
 
 # Azure 권한 관리 커넥터에 대해 서버 구성
 
->*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 
 다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 사용할 온-프레미스 서버를 구성할 수 있습니다. 이러한 절차는 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)의 5단계를 설명합니다.
@@ -29,7 +29,7 @@ ms.openlocfilehash: d2b15dac1f2b2163ff72d80c97ca0d5da44fd13c
 
 
 ## RMS 커넥터를 사용하도록 서버 구성
-RMS 커넥터를 설치 및 구성했으면 Rights Management를 사용하고 커넥터를 통해 Azure RMS에 연결하는 온-프레미스 서버를 구성할 준비가 된 것입니다. 즉, 다음 서버를 구성할 수 있습니다.
+RMS 커넥터를 설치 및 구성했으면 커넥터를 통해 Azure Rights Management 서비스에 연결하고 이 보호 기술을 사용하는 온-프레미스 서버를 구성할 준비가 된 것입니다. 즉, 다음 서버를 구성할 수 있습니다.
 
 -   **Exchange 2016 및 Exchange 2013의 경우**: 클라이언트 액세스 서버 및 사서함 서버
 
@@ -249,6 +249,6 @@ RMS 커넥터를 모니터링하려면 [Azure Rights Management 커넥터 모니
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

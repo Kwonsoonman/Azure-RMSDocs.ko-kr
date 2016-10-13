@@ -4,18 +4,18 @@ description: "이 항목에서는 iOS/OS X 버전의 RMS SDK에 대한 중요한
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: c4595105b4e33a4f047fd7c89c8361de6ca32d43
 
 
 ---
@@ -36,9 +36,9 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 ###시나리오: RMS 보호된 파일 사용
 
 
-- **1단계**: [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 개체를 만듭니다.
+- **1단계**: [**MSProtectedData**](/information-protection/sdk/4.2/api/iOS/msprotecteddata) 개체를 만듭니다.
 
- **설명**: [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 사용하고 **MSAuthenticationCallback** 인스턴스를 *authenticationCallback* 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**MSProtectedData**](/rights-management/sdk/4.2/api/iOS/msprotecteddata) 개체를 인스턴스화합니다. 다음 예제 코드 섹션에서 [**protectedDataWithProtectedFile**](/rights-management/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 호출을 참조하세요.
+ **설명**: [**MSAuthenticationCallback**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 사용하고 **MSAuthenticationCallback** 인스턴스를 *authenticationCallback* 매개 변수로 MSIPC API에 전달하여 토큰을 가져와서 서비스 인증을 구현하는 해당 create 메서드를 통해 [**MSProtectedData**](/information-protection/sdk/4.2/api/iOS/msprotecteddata) 개체를 인스턴스화합니다. 다음 예제 코드 섹션에서 [**protectedDataWithProtectedFile**](/information-protection/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc) 호출을 참조하세요.
 
         + (void)consumePtxtFile:(NSString *)path authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -56,7 +56,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 
 - **2단계**: ADAL(Active Directory 인증 라이브러리)을 사용하여 인증을 설정합니다.
 
-  **설명**: 이 단계에서는 [**MSAuthenticationCallback**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 구현하는 데 사용되는 ADAL과 예제 인증 매개 변수를 확인할 수 있습니다. ADAL을 사용하는 방법에 대한 자세한 내용은 Azure ADAL(AD 인증 라이브러리)을 참조하세요.
+  **설명**: 이 단계에서는 [**MSAuthenticationCallback**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc)을 구현하는 데 사용되는 ADAL과 예제 인증 매개 변수를 확인할 수 있습니다. ADAL을 사용하는 방법에 대한 자세한 내용은 Azure ADAL(AD 인증 라이브러리)을 참조하세요.
 
       // AuthenticationCallback holds the necessary information to retrieve an access token.
       @interface MsipcAuthenticationCallback : NSObject<MSAuthenticationCallback>
@@ -95,7 +95,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
                           }];
        }
 
--   **3단계**: [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) 개체의 [**accessCheck**](/rights-management/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_accesscheck_method_objc) 메서드를 통해 이 사용자에게 이 콘텐츠에 대한 편집 권한이 있는지 확인합니다.
+-   **3단계**: [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc) 개체의 [**accessCheck**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_accesscheck_method_objc) 메서드를 통해 이 사용자에게 이 콘텐츠에 대한 편집 권한이 있는지 확인합니다.
 
         - (void)accessCheckWithProtectedData:(MSProtectedData *)protectedData
         {
@@ -111,7 +111,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 
 ### 시나리오: 템플릿을 사용하여 새 보호된 파일 만들기
 
-이 시나리오에서는 먼저 템플릿 목록 [**MSTemplateDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc)를 가져오고 첫 번째 템플릿을 선택하여 정책을 만든 다음 새 보호된 파일을 만들어서 씁니다.
+이 시나리오에서는 먼저 템플릿 목록 [**MSTemplateDescriptor**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_mstemplatedescriptor_interface_objc)를 가져오고 첫 번째 템플릿을 선택하여 정책을 만든 다음 새 보호된 파일을 만들어서 씁니다.
 
 -   **1단계**: 템플릿 목록을 가져옵니다.
 
@@ -125,7 +125,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
                                    }];
         }
 
--   **2단계**: 목록의 첫 번째 템플릿 파일을 사용하여 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
+-   **2단계**: 목록의 첫 번째 템플릿 파일을 사용하여 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
 
         + (void)userPolicyCreationFromTemplateWithAuthenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
         {
@@ -140,7 +140,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
             }];
         }
 
--   **3단계**: [**MSMutableProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msmutableprotecteddata_interface_objc)를 만들고 파일에 콘텐츠를 씁니다.
+-   **3단계**: [**MSMutableProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msmutableprotecteddata_interface_objc)를 만들고 파일에 콘텐츠를 씁니다.
 
         + (void)createPtxtWithUserPolicy:(MSUserPolicy *)userPolicy contentToProtect:(NSData *)contentToProtect
         {
@@ -157,7 +157,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 ### 시나리오: 사용자 지정 보호된 파일 열기
 
 
--   **1단계**: *serializedContentPolicy*에서 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
+-   **1단계**: *serializedContentPolicy*에서 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
 
         + (void)userPolicyWith:(NSData *)protectedData
         authenticationCallback:(id<MSAuthenticationCallback>)authenticationCallback
@@ -185,7 +185,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
             }];
          }
 
--   **2단계**: **1단계**에서 만든 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 사용하여 [**MSCustomProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_mscustomprotecteddata_interface_objc)를 만들고 읽습니다.
+-   **2단계**: **1단계**에서 만든 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 사용하여 [**MSCustomProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_mscustomprotecteddata_interface_objc)를 만들고 읽습니다.
 
         + (void)customProtectedDataWith:(NSData *)protectedData
         {
@@ -217,7 +217,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
 
 -   **1단계**: 사용자가 제공한 메일 주소를 사용하여 정책 설명자를 만듭니다.
 
-    **설명**: 실제로 다음 개체는 장치 인터페이스 [**MSUserRights**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserrights_interface_objc) 및 [**MSPolicyDescriptor**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)의 사용자 입력을 사용하여 생성됩니다.
+    **설명**: 실제로 다음 개체는 장치 인터페이스 [**MSUserRights**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserrights_interface_objc) 및 [**MSPolicyDescriptor**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)의 사용자 입력을 사용하여 생성됩니다.
 
         + (void)policyDescriptor
         {
@@ -228,7 +228,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
             policyDescriptor.offlineCacheLifetimeInDays = 10;
         }
 
--   **2단계**: 정책 설명자 *selectedDescriptor*에서 사용자 지정 [**MSUserPolicy**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
+-   **2단계**: 정책 설명자 *selectedDescriptor*에서 사용자 지정 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)를 만듭니다.
 
         + (void)userPolicyWithPolicyDescriptor:(MSPolicyDescriptor *)policyDescriptor
         {
@@ -242,7 +242,7 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
             }];
         }
 
--   **3단계**: [**MSMutableCustomProtectedData**](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msmutablecustomprotecteddata_interface_objc)를 만들고 콘텐츠를 쓴 다음 닫습니다.
+-   **3단계**: [**MSMutableCustomProtectedData**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msmutablecustomprotecteddata_interface_objc)를 만들고 콘텐츠를 쓴 다음 닫습니다.
 
         + (void)mutableCustomProtectedData:(NSMutableData *)backingData policy:(MSUserPolicy *)policy contentToProtect:(NSString *)contentToProtect
         {
@@ -285,6 +285,6 @@ ms.openlocfilehash: 600d5e2fe9bf99ddac8385c845e0703d31631c59
  
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

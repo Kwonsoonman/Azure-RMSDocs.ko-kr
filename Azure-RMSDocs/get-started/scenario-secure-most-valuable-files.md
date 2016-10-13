@@ -1,34 +1,34 @@
 ---
-title: "시나리오 - 가장 중요한(소수) 파일 보호 | Azure RMS"
+title: "시나리오 - 가장 중요한(소수) 파일 보호 | Azure Information Protection"
 description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/25/2016
+ms.date: 09/25/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81426cf43f31625c6e83d443fa925f6426eb89da
-ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
+ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
+ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 
 
 ---
 
 # 시나리오 - 가장 중요한(소수) 파일 보호
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다. 일반적으로 소수의 사용자만 액세스할 수 있어야 하는 파일입니다. 예를 들어 회사의 대표 식료품에 대한 조리법 지침이나 지정된 날짜 전에 공개되면 안 되는 인수 계획입니다.
+이 시나리오와 지원 사용자 문서에서는 Azure Information Protection의 Azure Rights Management 기술을 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다. 일반적으로 소수의 사용자만 액세스할 수 있어야 하는 파일입니다. 예를 들어 회사의 대표 식료품에 대한 조리법 지침이나 지정된 날짜 전에 공개되면 안 되는 인수 계획입니다.
 
 지침을 제공하기에 적합한 상황은 다음과 같습니다.
 
 -   보호할 작은 파일 집합을 식별한 경우
 
--   파일이 Rights Management를 지원하는 Office 파일 형식 중 하나인 경우. 파일이 다른 파일 형식(예: CAD 파일)인 경우 이러한 형식이 Azure RMS를 지원해야 하며, 기본적으로 Azure RMS를 지원하는 응용 프로그램을 배포해야 합니다. 자세한 내용은 [응용 프로그램이 Azure 권한 관리를 지원하는 방식](https://technet.microsoft.com/library/jj585004.aspx)을 참조하세요.
+-   파일이 Rights Management를 지원하는 Office 파일 형식 중 하나인 경우. 파일이 다른 파일 형식(예: CAD 파일)인 경우 이러한 형식이 Azure RMS를 지원해야 하며, 기본적으로 Azure RMS를 지원하는 응용 프로그램을 배포해야 합니다. 자세한 내용은 [응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법](../understand-explore/applications-support.md)을 참조하세요.
 
 -   파일에 소수의 사용자만 액세스할 수 있어야 하는 중요한 기밀 정보가 들어 있는 경우.
 
@@ -48,12 +48,12 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
 |---------------|--------------------------------|
-|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부<br /><br />- 기밀 문서에 액세스할 수 있어야 하는 소수의 사용자가 포함된 **Privileged access**라는 메일 사용이 가능한 그룹<br /><br />- 작업에 eDiscovery, 모니터링 및 감사가 포함된 사용자를 포함하는 **IT Compliance managers**라는 메일 사용이 가능한 그룹<br /><br />- **RMS administrators**라는 메일 사용이 가능한 그룹이며, Azure RMS를 구성하는 모든 관리자가 이 그룹의 구성원임|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
-|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
-|다음에 설명하는 대로 사용자 지정 템플릿을 구성했는지 여부|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)|
-|다음 섹션에 설명된 대로 이러한 파일을 바로 보호할 수 있도록 Rights Management 공유 응용 프로그램이 사용자의 Windows 컴퓨터에 배포되었는지 여부|[Rights Management 공유 응용 프로그램 다운로드 및 설치 ](https://technet.microsoft.com/library/dn574734%28v=ws.10%29.aspx)|
+|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부<br /><br />- 기밀 문서에 액세스할 수 있어야 하는 소수의 사용자가 포함된 **Privileged access**라는 메일 사용이 가능한 그룹<br /><br />- 작업에 eDiscovery, 모니터링 및 감사가 포함된 사용자를 포함하는 **IT Compliance managers**라는 메일 사용이 가능한 그룹<br /><br />- **RMS administrators**라는 메일 사용이 가능한 그룹이며, Azure RMS를 구성하는 모든 관리자가 이 그룹의 구성원임|[Azure Information Protection 준비](../plan-design/deployment-roadmap.md)|
+|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](../deploy-use/activate-service.md)|
+|다음에 설명하는 대로 사용자 지정 템플릿을 구성했는지 여부|[Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)|
+|다음 섹션에 설명된 대로 이러한 파일을 바로 보호할 수 있도록 Rights Management 공유 응용 프로그램이 사용자의 Windows 컴퓨터에 배포되었는지 여부|[Rights Management 공유 응용 프로그램 다운로드 및 설치 ](../rms-client/install-sharing-app.md)|
 |권한 있는 사용자에게 최소 Office 2013 이상의 버전이 있는지 여부|사용자에게 Office 2010이 있는 경우 Rights Management 공유 응용 프로그램도 설치해야 합니다.|
-|Azure RMS 구독에 문서 추적이 포함되는지 여부|Azure RMS 구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 문서 추적 사이트를 사용하여 이러한 문서에 액세스하는 사용자를 확인하고 필요한 경우 액세스 권한을 취소할 수 없습니다. 이 경우 문서 추적 기능을 지원하는 구독을 구입하거나 이러한 제한을 감수합니다. 또한 Azure RMS의 [사용 현황 로깅](https://technet.microsoft.com/library/dn529121.aspx) 기능을 사용하는 것이 좋습니다. 이 기능은 각 파일에 액세스한 사용자와 시기 등의 정보를 제공하므로 잠재적으로 의심스러운 행동을 검색하는 데 도움이 됩니다.<br /><br />구독 지원을 확인하려면 [RMS(Rights Management Services) 제품 비교](https://technet.microsoft.com/dn858608)를 참조하세요.|
+|Azure RMS 구독에 문서 추적이 포함되는지 여부|Azure RMS 구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 문서 추적 사이트를 사용하여 이러한 문서에 액세스하는 사용자를 확인하고 필요한 경우 액세스 권한을 취소할 수 없습니다. 이 경우 문서 추적 기능을 지원하는 구독을 구입하거나 이러한 제한을 감수합니다. 또한 Azure RMS의 [사용 현황 로깅](../deploy-use/log-analyze-usage.md) 기능을 사용하는 것이 좋습니다. 이 기능은 각 파일에 액세스한 사용자와 시기 등의 정보를 제공하므로 잠재적으로 의심스러운 행동을 검색하는 데 도움이 됩니다.<br /><br />Azure Information Protection [가격 책정 페이지](https://go.microsoft.com/fwlink/?LinkId=827589)에서 구독 정보를 확인하세요.|
 
 ### 사용자 지정 템플릿을 구성하려면
 
@@ -85,7 +85,7 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 5.  다른 폴더에 보호할 파일이 더 있는 경우 각 폴더에 대해 1-4단계를 반복합니다.
 
-파일을 바로 보호하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](https://technet.microsoft.com/library/dn574733%28v=ws.10%29.aspx)를 참조하세요.
+파일을 바로 보호하는 방법에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](../rms-client/sharing-app-protect-in-place.md)를 참조하세요.
 
 > [!TIP]
 > 이 수동 프로세스에서 보호할 파일 수가 너무 많은 경우 [RMS 보호 도구](https://www.microsoft.com/en-us/download/details.aspx?id=47256)를 사용하여 템플릿을 통해 파일을 대량 보호하는 것이 좋습니다.
@@ -147,6 +147,6 @@ ms.openlocfilehash: 5265294a3186c7ccf3f6709ddbb83138605c29f2
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

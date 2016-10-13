@@ -4,18 +4,18 @@ description: "이 항목에서는 개발 환경 파일과 컴퓨터의 상대 �
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: a3f1e913c92dbee3b889a3d3c0bd6c97317112c9
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: fa85dde3f578f51efa57af78e211d3e712378b61
 
 
 ---
@@ -43,9 +43,9 @@ ms.openlocfilehash: a3f1e913c92dbee3b889a3d3c0bd6c97317112c9
 |Ipcerror.h|\inc|RMS SDK 2.1에서 내보낸 공개 오류 코드를 포함합니다.|
 |Ipcfile.h|\inc|RMS SDK 2.1에서 내보낸 파일 API 인터페이스를 포함합니다.|
 |Msipc.lib|\lib|RMS SDK 2.1을 사용하여 x86 응용 프로그램을 빌드할 때 연결할 라이브러리입니다.|
-|Msipc_s.lib|\lib|x86 응용 프로그램의 [<strong>IpcInitialize</strong>](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)에 대한 진입점을 제공합니다.|
+|Msipc_s.lib|\lib|x86 응용 프로그램의 [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)에 대한 진입점을 제공합니다.|
 |Msipc.lib|\lib\x64|RMS SDK 2.1을 사용하여 x64 응용 프로그램을 빌드할 때 연결할 라이브러리입니다.|
-|Msipc_s.lib|\lib\x64|x64 응용 프로그램의 [<strong>IpcInitialize</strong>](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)에 대한 진입점을 제공합니다.|
+|Msipc_s.lib|\lib\x64|x64 응용 프로그램의 [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)에 대한 진입점을 제공합니다.|
 |Genmanifest.exe|\tools|RMS 사용 응용 프로그램을 개발하는 동안 사용할 매니페스트를 생성합니다.|
  
 
@@ -55,6 +55,6 @@ ms.openlocfilehash: a3f1e913c92dbee3b889a3d3c0bd6c97317112c9
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

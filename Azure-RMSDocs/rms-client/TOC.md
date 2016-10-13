@@ -1,9 +1,10 @@
-# [이해 및 탐색](/rights-management/understand-explore/azure-rights-management)
-# [시작](/rights-management/get-started/requirements-azure-rms)
-# [계획 및 디자인](/rights-management/plan-design/deployment-roadmap)
-# [서비스 배포 및 사용](/rights-management/deploy-use/activate-service)
+# [이해 및 탐색](/information-protection/understand-explore/what-is-information-protection)
+# [시작](/information-protection/get-started/requirements-azure-rms)
+# [계획 및 디자인](/information-protection/plan-design/deployment-roadmap)
+# [서비스 배포 및 사용](/information-protection/deploy-use/activate-service)
 # [클라이언트 배포 및 사용](use-client.md)
 ## [Rights Management 클라이언트](use-client.md)
+### [Azure Information Protection 클라이언트 설치](info-protect-client.md)
 ### [RMS 클라이언트 배포 참고 사항](client-deployment-notes.md)
 ### [Windows Server FCI를 사용하는 RMS 보호](configure-fci.md)
 #### [PowerShell 스크립트](fci-script.md)
@@ -21,10 +22,9 @@
 ##### [보호 제거](sharing-app-remove-protection.md)
 ##### [바로 가기 키 사용](sharing-app-keyboard-shortcuts.md)
 ##### [대화 상자 옵션](sharing-app-dialog-box.md)
-# [앱 개발 및 사용자 지정](/rights-management/develop/developers-guide)
-# [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
+# [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

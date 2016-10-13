@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 공유 응용 프로그램 다운로드 및 설치 | Azure RMS"
-description: "로컬 관리자가 아니더라도 RMS 공유 응용 프로그램을 설치할 수 있습니다. 하지만 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우 몇 가지 제한 사항이 있습니다. 자세한 내용은 이 페이지의 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우 섹션을 참조하세요."
+title: "Rights Management 공유 응용 프로그램 다운로드 및 설치 | Azure Information Protection"
+description: "다른 사용자와 문서를 안전하게 공유할 수 있도록 Windows용 RMS 공유 응용 프로그램을 대화형으로 설치하는 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: c705bfec85bb93cb03d7e3edc9f3ce5949a8b61d
 
 
 ---
 
 # Rights Management 공유 응용 프로그램 다운로드 및 설치 
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 로컬 관리자가 아니더라도 RMS 공유 응용 프로그램을 설치할 수 있습니다. 하지만 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우 몇 가지 제한 사항이 있습니다. 자세한 내용은 이 페이지에서 [로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우](#if-you-are-not-a-local-administrator-and-use-office-2010) 섹션을 참조하세요.
 
@@ -44,13 +44,13 @@ ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
 ## 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우
 컴퓨터에 로그인할 때 로컬 관리 권한이 없으며 설치 프로그램에서 Office 2010이 설치된 것을 감지할 경우 이 구성에서는 일부 시나리오가 작동하지 않는다는 경고 메시지가 표시됩니다. 해당 시나리오는 다음과 같습니다.
 
--   조직에서 온-프레미스 버전의 RMS가 아닌 Azure RMS를 사용하는 경우
+-   조직에서 온-프레미스 Rights Management 버전보다 Azure Information Protection의 Azure Rights Management 서비스를 사용하는 경우:
 
     -   Office의 IRM(정보 권한 관리) 기능을 사용할 수 없습니다. 예를 들어 메일에 대한 **전달 금지** 옵션과 Word 및 Excel의 **파일** 메뉴에서 설정할 수 있는 **액세스 제한** 권한입니다. 리본의 보호된 항목 공유 옵션과 파일 탐색기의 마우스 오른쪽 단추 클릭 옵션을 사용할 수 있습니다.
 
--   조직에서 Azure RMS가 아닌 온-프레미스 버전의 RMS를 사용하는 경우
+-   조직에서 Azure Information Protection의 Azure Rights Management 서비스보다 온-프레미스 Rights Management 버전을 사용하는 경우:
 
-    -   Azure RMS를 사용하는 다른 조직의 사용자가 보낸 보호된 문서를 읽을 수 없습니다.
+    -   Azure Rights Management 서비스를 사용하는 다른 조직의 사용자가 보낸 보호된 문서를 읽을 수 없습니다.
 
 로컬 관리자가 아니며 Office 365 또는 Office 2013을 사용하는 경우에는 이 메시지가 표시되지 않고 이러한 시나리오가 지원됩니다.
 
@@ -69,6 +69,6 @@ ms.openlocfilehash: bda09df1ff51565a4bbf501161c7a4f8cdbbfe22
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

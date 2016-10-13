@@ -1,26 +1,26 @@
 ---
-title: "BYOK 가격 및 제한 사항 | Azure RMS"
-description: "Azure 권한 관리를 포함하는 구독이 있는 조직은 Azure 주요 자격 증명 모음에서 고객 관리 키(BYOK)를 사용하고 추가 요금 없이 사용 현황을 기록할 수 있습니다. 그러나 Azure 주요 자격 증명 모음을 사용하려면 HSM 보호된 키를 사용하여 주요 자격 증명 모음을 지원하는 Azure 구독이 있어야 합니다. Azure 주요 자격 증명 모음의 키를 사용하면 월별 요금이 발생합니다. 자세한 내용은 Azure 주요 자격 증명 모음 가격 페이지를 참조하세요."
+title: "BYOK 가격 및 제한 사항 | Azure Information Protection"
+description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 8505032a2a12f84c245e834e71d0b7b0d12e894f
+ms.sourcegitcommit: 36e392d7e9a2fc8cec0419a3e66f92b42137bc72
+ms.openlocfilehash: 3ed4f3c770c1c34d2bda7481d8ca405c51d3fe8c
 
 
 ---
 
 # BYOK 가격 및 제한 사항
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
 
 Azure 권한 관리를 포함하는 구독이 있는 조직은 Azure 주요 자격 증명 모음에서 고객 관리 키(BYOK)를 사용하고 추가 요금 없이 사용 현황을 기록할 수 있습니다. 그러나 Azure 주요 자격 증명 모음을 사용하려면 HSM 보호된 키를 사용하여 주요 자격 증명 모음을 지원하는 Azure 구독이 있어야 합니다. Azure 주요 자격 증명 모음의 키를 사용하면 월별 요금이 발생합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/en-us/pricing/details/key-vault/) 페이지를 참조하세요.
@@ -33,7 +33,7 @@ Azure 권한 관리를 포함하는 구독이 있는 조직은 Azure 주요 자�
 
 ![BYOK에서는 Exchange Online을 지원하지 않습니다.](../media/RMS_BYOK_noExchange.png)
 
-BYOK 및 사용 현황 로깅 기능은 Azure RMS와 통합된 모든 응용 프로그램에서 원활하게 작동합니다. 이러한 응용 프로그램으로는 SharePoint Online과 같은 클라우드 서비스, Exchange 및 SharePoint를 실행하고 RMS 커넥터를 통해 Azure RMS와 작동하는 온-프레미스 서버, Office 2016 및 Office 2013과 같은 클라이언트 응용 프로그램이 있습니다. Azure RMS에 대한 요청을 만드는 응용 프로그램에 관계없이 키 사용 현황 로그를 얻을 수 있습니다.
+BYOK 및 사용 현황 로깅 기능은 Azure Information Protection에서 사용하는 Azure RMS 서비스(Azure RMS)와 통합된 모든 응용 프로그램에서 원활하게 작동합니다. 이러한 응용 프로그램으로는 SharePoint Online과 같은 클라우드 서비스, Exchange 및 SharePoint를 실행하고 RMS 커넥터를 통해 Azure RMS와 작동하는 온-프레미스 서버, Office 2016 및 Office 2013과 같은 클라이언트 응용 프로그램이 있습니다. Azure RMS에 대한 요청을 만드는 응용 프로그램에 관계없이 키 사용 현황 로그를 얻을 수 있습니다.
 
 그러나 한 가지 예외가 있습니다. 현재 **Azure RMS BYOK는 Exchange Online과 호환되지 않습니다**. Exchange Online을 사용하려는 경우 Microsoft가 키를 생성 및 관리하는 기본 키 관리 모드에서 Azure RMS를 배포하는 것이 좋습니다. 예를 들어 Exchange Online이 Azure RMS BYOK를 지원하는 경우 나중에 BYOK를 이동하는 옵션이 제공됩니다. 그러나 이 옵션이 표시될 때까지 기다릴 수 없는 경우 다른 방법은 BYOK를 사용하여 Azure RMS를 배포하는 것입니다. 이 경우 Exchange Online에 대한 RMS 기능이 감소합니다(보호되지 않는 전자 메일 및 보호되지 않는 첨부 파일은 그대로 완전하게 기능함).
 
@@ -62,6 +62,6 @@ Microsoft에서 테넌트 키를 관리하는 기본 구성을 유지하기로 �
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

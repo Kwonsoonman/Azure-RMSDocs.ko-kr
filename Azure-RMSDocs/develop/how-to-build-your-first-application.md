@@ -4,18 +4,18 @@ description: "이 항목에는 예제 권한 사용 응용 프로그램을 만�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 581451A2-9558-4D0D-9D01-BEAB282C5A83
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: d5f84815a143dd28574c8742da1642cba7c96a62
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 601bd3f8bd0f076e55e6bd7379179d8247063d34
 
 
 ---
@@ -35,7 +35,7 @@ Microsoft Connect에서 샘플 응용 프로그램인 [Webinar\_Collateral.zip](
 
 ## MSIPC.dll 로드
 
-RMS SDK 2.1 함수를 호출하려면 먼저 [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 함수를 호출하여 MSIPC.dll을 로드해야 합니다.
+RMS SDK 2.1 함수를 호출하려면 먼저 [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 함수를 호출하여 MSIPC.dll을 로드해야 합니다.
 
 
 
@@ -67,7 +67,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 
 
-이 호출은 기본 서버에 설치된 RMS 템플릿을 검색하고 그 결과를 *pcTil* 변수가 가리키는 [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize) 구조에 로드한 다음 템플릿을 표시합니다.
+이 호출은 기본 서버에 설치된 RMS 템플릿을 검색하고 그 결과를 *pcTil* 변수가 가리키는 [**IPC\_TIL**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 구조에 로드한 다음 템플릿을 표시합니다.
 
 
 
@@ -91,9 +91,9 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 ## 라이선스 직렬화
 
-데이터를 보호하려면 먼저 라이선스를 직렬화하고 콘텐츠 키를 가져와야 합니다. 콘텐츠 키는 중요한 데이터를 암호화하는 데 사용됩니다. 직렬화된 라이선스는 일반적으로 암호화된 데이터에 연결되며 보호된 데이터의 소비자가 사용합니다. 소비자는 직렬화된 라이선스로 [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)를 호출하여 콘텐츠 암호를 해독하고 콘텐츠와 관련된 정책을 가져오기 위한 콘텐츠 키를 얻어야 합니다.
+데이터를 보호하려면 먼저 라이선스를 직렬화하고 콘텐츠 키를 가져와야 합니다. 콘텐츠 키는 중요한 데이터를 암호화하는 데 사용됩니다. 직렬화된 라이선스는 일반적으로 암호화된 데이터에 연결되며 보호된 데이터의 소비자가 사용합니다. 소비자는 직렬화된 라이선스로 [**IpcGetKey**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)를 호출하여 콘텐츠 암호를 해독하고 콘텐츠와 관련된 정책을 가져오기 위한 콘텐츠 키를 얻어야 합니다.
 
-간단하게, [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)에서 반환된 첫 번째 RMS 템플릿을 사용하여 라이선스를 직렬화합니다.
+간단하게, [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)에서 반환된 첫 번째 RMS 템플릿을 사용하여 라이선스를 직렬화합니다.
 
 일반적으로 사용자 인터페이스 대화 상자를 사용하여 사용자가 원하는 템플릿을 선택할 수 있도록 합니다.
 
@@ -114,7 +114,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 ## 데이터 보호
 
-이제 [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수를 사용하여 중요한 데이터를 암호화할 준비가 되었습니다. 먼저 **IpcEncrypt** 함수에 암호화된 데이터의 예상 크기를 물어야 합니다.
+이제 [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수를 사용하여 중요한 데이터를 암호화할 준비가 되었습니다. 먼저 **IpcEncrypt** 함수에 암호화된 데이터의 예상 크기를 물어야 합니다.
 
 
 
@@ -129,7 +129,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 
 
-여기서는 *wszText*에 보호할 일반 텍스트가 포함되어 있습니다. [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수가 암호화된 데이터의 크기를 *cbEncrypted* 매개 변수에 반환합니다.
+여기서는 *wszText*에 보호할 일반 텍스트가 포함되어 있습니다. [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수가 암호화된 데이터의 크기를 *cbEncrypted* 매개 변수에 반환합니다.
 
 이제 암호화된 데이터에 대한 메모리를 할당합니다.
 
@@ -177,7 +177,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
     }   
 
 
-**DisplayError** 함수는 [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 함수를 사용하여 해당 오류 코드에서 오류 메시지를 가져오고 표준 출력에 출력합니다.
+**DisplayError** 함수는 [**IpcGetErrorMessageText**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 함수를 사용하여 해당 오류 코드에서 오류 메시지를 가져오고 표준 출력에 출력합니다.
 
 ## 정리
 
@@ -206,12 +206,12 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 * [개발자 노트](developer-notes.md)
 * [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)
-* [**IpcEncrypt**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-* [**IpcGetErrorMessageText**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-* [**IpcGetKey**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-* [**IpcGetTemplateList**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-* [**IpcInitialize**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [**IPC\_TIL**](/rights-management/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+* [**IpcEncrypt**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
+* [**IpcGetErrorMessageText**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
+* [**IpcGetKey**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
+* [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
+* [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
+* [**IPC\_TIL**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
 * [Webinar\_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
  
 
@@ -219,6 +219,6 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

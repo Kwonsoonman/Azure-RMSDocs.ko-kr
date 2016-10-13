@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거 | Azure RMS"
-description: "이전에 RMS 공유 응용 프로그램을 사용하여 보호했던 파일에서 보호를 제거하여 파일 보호를 해제하려면 파일 탐색기에서 보호 제거 옵션을 사용합니다."
+title: "Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거 | Azure Information Protection"
+description: "이전에 RMS 공유 응용 프로그램을 사용하여 보호된 파일에서 보호를 제거(파일을 보호 해제)하는 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: b94cd999fef2186ddf67a0e6cebc3349a3586538
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
 
 
 ---
 
 # Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 이전에 RMS 공유 응용 프로그램을 사용하여 보호했던 파일에서 보호를 제거하여 파일 보호를 해제하려면 파일 탐색기에서 **보호 제거** 옵션을 사용합니다.
 
@@ -51,6 +51,6 @@ ms.openlocfilehash: b94cd999fef2186ddf67a0e6cebc3349a3586538
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

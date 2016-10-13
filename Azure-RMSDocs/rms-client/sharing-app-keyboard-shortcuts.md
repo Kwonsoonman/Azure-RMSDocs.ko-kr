@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 공유 응용 프로그램에서 바로 가기 키 사용 | Azure RMS"
-description: "RMS 공유 응용 프로그램을 사용할 때 Alt 키를 누르면 사용 가능한 선택키를 확인할 수 있으며 Alt+선택키를 누르면 옵션을 선택할 수 있습니다."
+title: "Rights Management 공유 응용 프로그램에서 바로 가기 키 사용 | Azure Information Protection"
+description: "Windows용 RMS 공유 응용 프로그램에서 바로 가기 키를 사용하는 방법에 대한 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 640e318c2c12bc1e2044163b2d9201c912345806
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 0e39640a5c48f5d924fed6ee7bf6de34bf195e56
 
 
 ---
 
 # Rights Management 공유 응용 프로그램에서 바로 가기 키 사용
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 RMS 공유 응용 프로그램을 사용할 때 **Alt** 키를 누르면 사용 가능한 선택키를 확인할 수 있으며 **Alt**+선택키를 누르면 옵션을 선택할 수 있습니다.
 
@@ -40,6 +40,6 @@ RMS 공유 응용 프로그램을 사용할 때 **Alt** 키를 누르면 사용 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

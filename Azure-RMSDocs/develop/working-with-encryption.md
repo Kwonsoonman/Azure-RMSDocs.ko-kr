@@ -4,18 +4,18 @@ description: "Azure RMS 암호화 패키지 및 사용과 관련된 코드 조�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 83c4eb741c484018a2837840465aca3276c785c1
-ms.openlocfilehash: b128a9adf75ae8558a33181f63881e2243e840bb
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
 
 
 ---
@@ -40,7 +40,7 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB(사용되지 않는 알고리즘이라고도 함)
 
-암호화 패키지 플래그([**기본 암호화**](/rights-management/sdk/2.1/api/win/constants#msipc_preferred_encryption) 참조)를 새 라이선스 속성 플래그 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**와 함께 사용할 수 있습니다.
+암호화 패키지 플래그([**기본 암호화**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption) 참조)를 새 라이선스 속성 플래그 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**와 함께 사용할 수 있습니다.
 
 다음은 새 라이선스 속성을 사용하는 방법을 보여 주는 몇 가지 간단한 코드 조각입니다.
 
@@ -103,6 +103,6 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

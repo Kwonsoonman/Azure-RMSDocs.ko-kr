@@ -1,19 +1,19 @@
 ---
-title: "관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법 | Azure RMS"
+title: "관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법 | Azure Information Protection"
 description: "조직의 개인용 RMS 구독을 유료 구독으로 전환하지 않으려는 경우 Azure Active Directory에서 사용자 계정을 제어하는 방법을 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79d098e47cdfe608bc62ed385a5c8236fb7c6d3c
-ms.openlocfilehash: 6383c1d583eb45973750305e709d8f5d792892b5
+ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
+ms.openlocfilehash: 6f26faf8a96c388a4640701a12a77e3b4ef60567
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 6383c1d583eb45973750305e709d8f5d792892b5
 
 # 관리자가 개인용 RMS용으로 만들어진 계정을 제어하는 방법
 
->*적용 대상: Azure 권한 관리*
+>*적용 대상: Azure Information Protection*
 
 
 조직의 개인용 RMS 구독을 유료 구독으로 전환하지 않으려는 경우 다음과 같은 방법으로 조직용으로 만들어진 Azure 디렉터리에서 계속해서 사용자 계정을 제어할 수 있습니다.
@@ -46,6 +46,6 @@ Azure 디렉터리에서 사용자 계정을 제어하거나, 사용자가 개�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,39 +1,39 @@
 ---
-title: "Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호 | Azure RMS"
-description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하려면 이 문서에 나와 있는 지침과 스크립트를 사용합니다."
+title: "Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호 | Azure Information Protection"
+description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하는 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/14/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 431eb994070391a78b0b8e34b1afb668f0981f0f
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 7e0556e99aa09d4b6f2488cb866b57488a22cacd
 
 
 ---
 
 # Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
->*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하려면 이 문서에 나와 있는 지침과 스크립트를 사용합니다.
 
-이 솔루션을 사용하면 Windows Server를 실행 중인 파일 서버의 폴더에 있는 모든 파일 또는 특정 기준을 충족하는 파일을 자동으로 보호할 수 있습니다. 기밀 정보나 중요 정보를 포함하는 것으로 분류된 파일을 예로 들 수 있습니다. 이 솔루션은 Azure 권한 관리(Azure RMS)를 사용하여 파일을 보호하므로 조직에 이 기술을 배포해야 합니다.
+이 솔루션을 사용하면 Windows Server를 실행 중인 파일 서버의 폴더에 있는 모든 파일 또는 특정 기준을 충족하는 파일을 자동으로 보호할 수 있습니다. 기밀 정보나 중요 정보를 포함하는 것으로 분류된 파일을 예로 들 수 있습니다. 이 솔루션은 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 파일을 보호하므로 조직에 이 기술을 배포해야 합니다.
 
 > [!NOTE]
-> Azure RMS는 파일 분류 인프라를 지원하는 [커넥터](../deploy-use/deploy-rms-connector.md)를 포함하므로 해당 솔루션은 Office 파일 등의 기본 보호만 지원합니다.
+> Azure Information Protection은 파일 분류 인프라를 지원하는 [커넥터](../deploy-use/deploy-rms-connector.md)를 포함하므로 해당 솔루션은 Office 파일 등의 기본 보호만 지원합니다.
 > 
 > 파일 분류 인프라를 사용하는 모든 파일 형식을 지원하려면 이 문서에서 설명하는 Windows PowerShell **RMS 보호** 모듈을 사용해야 합니다. RMS 보호 cmdlet은 RMS 공유 응용 프로그램과 마찬가지로 일반 보호와 기본 보호를 모두 지원하므로 모든 파일을 보호할 수 있습니다. 다양한 보호 수준에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [보호 수준 - 기본 및 일반](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요.
 
 아래의 지침은 Windows Server 2012 R2 또는 Windows Server 2012용입니다. 지원되는 다른 Windows 버전을 실행하는 경우에는 사용 중인 운영 체제 버전과 이 문서에서 설명하는 버전 간의 차이에 맞게 일부 단계를 조정해야 할 수 있습니다.
 
-## Windows Server FCI를 사용하는 Azure RMS 보호를 위한 필수 구성 요소
+## Windows Server FCI를 사용하는 Azure Rights Management 보호를 위한 필수 구성 요소
 이러한 지침을 적용하기 위한 필수 구성 요소는 다음과 같습니다.
 
 -   파일 분류 인프라를 사용하여 파일 리소스 관리자를 실행할 각 파일 서버에서 다음을 수행해야 합니다.
@@ -48,7 +48,7 @@ RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파�
 
     -   인터넷에 연결할 수 있어야 하며 프록시 서버에 필요한 경우 컴퓨터 설정을 구성해야 합니다. 예를 들면 다음과 같습니다. `netsh winhttp import proxy source=ie`
 
--   [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)의 설명에 따라 Azure Rights Management 배포에 대한 추가 필수 구성 요소를 구성해야 합니다. 구체적으로는 서비스 계정을 사용하여 Azure RMS에 연결하기 위한 다음 값을 구성해야 합니다.
+-   [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)의 설명에 따라 Azure Information Protection 배포에 대한 추가 필수 구성 요소를 구성해야 합니다. 구체적으로는 서비스 계정을 사용하여 Azure Rights Management 서비스에 연결하기 위한 다음 값을 구성해야 합니다.
 
     -   BposTenantId
 
@@ -56,7 +56,7 @@ RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파�
 
     -   대칭 키
 
--   온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 전자 메일 주소를 포함). 이렇게 하려면 모든 사용자가 파일을 FCI 및 Azure RMS로 보호한 후에 해당 파일에 액세스해야 할 수도 있습니다. 이 단계를 수행하지 않으면(예: 테스트 환경) 사용자가 이러한 파일에 액세스하지 못하도록 차단될 수 있습니다. 이 계정 구성에 대한 자세한 내용은 [Azure 권한 관리 준비](../plan-design/prepare.md)를 참조하세요.
+-   온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 전자 메일 주소를 포함). 이렇게 하려면 모든 사용자가 파일을 FCI 및 Azure Rights Management 서비스로 보호한 후에 해당 파일에 액세스해야 할 수도 있습니다. 이 단계를 수행하지 않으면(예: 테스트 환경) 사용자가 이러한 파일에 액세스하지 못하도록 차단될 수 있습니다. 이 계정 구성에 대한 자세한 내용은 [Azure Rights Management 서비스 준비](../plan-design/prepare.md)를 참조하세요.
 
 -   파일을 보호하는 데 사용할 Rights Management 템플릿을 지정해야 합니다. [Get-RMSTemplate](https://msdn.microsoft.com/library/azure/mt433197.aspx) cmdlet을 사용하여 이 템플릿의 ID를 확인해야 합니다.
 
@@ -94,7 +94,7 @@ Windows PowerShell 스크립트를 사용자 지정 작업으로 사용하여 �
 
         `[Parameter(Mandatory = $false)]             [string]$AppPrincipalId = "b5e3f76a-b5c2-4c96-a594-a0807f65bba4",`
 
-    -   다음 문자열을 검색하여 Azure RMS에 연결하기 위해 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) 에 사용하는 고유한 대칭 키로 바꿉니다.
+    -   다음 문자열을 검색하여 Azure Rights Management 서비스에 연결하기 위해 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet에 사용하는 고유한 대칭 키로 바꿉니다.
 
         ```
         <enter your key here>
@@ -105,7 +105,7 @@ Windows PowerShell 스크립트를 사용자 지정 작업으로 사용하여 �
 
         `[string]$SymmetricKey = "zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA="`
 
-    -   다음 문자열을 검색하여 Azure RMS에 연결하기 위해 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) 에 사용하는 고유한 BposTenantId(테넌트 ID)로 바꿉니다.
+    -   다음 문자열을 검색하여 Azure Rights Management 서비스에 연결하기 위해 [Set-RMSServerAuthentication](https://msdn.microsoft.com/library/mt433199.aspx) cmdlet에 사용하는 고유한 BposTenantId(테넌트 ID)로 바꿉니다.
 
         ```
         <enter your BposTenantId here>
@@ -126,7 +126,7 @@ Windows PowerShell 스크립트를 사용자 지정 작업으로 사용하여 �
 
     Windows PowerShell 스크립트에 서명을 하는 방법에 대한 자세한 내용은 PowerShell 문서 라이브러리에서 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 을 참조하세요.
 
-4.  파일 분류 인프라를 사용하여 파일 리소스 관리자를 실행할 각 파일 서버에서 파일을 로컬에 저장합니다. 예를 들어 **C:\RMS-Protection**에 파일을 저장합니다. 권한이 없는 사용자가 수정할 수 없도록 NTFS 권한을 사용하여 이 파일을 보호합니다.
+4.  파일 분류 인프라를 사용하여 파일 리소스 관리자를 실행할 각 파일 서버에서 파일을 로컬에 저장합니다. 예를 들어 **C:\RMS-Protection**에 파일을 저장합니다. 다른 경로 또는 폴더 이름을 사용하는 경우 공백이 없는 경로 및 폴더를 선택합니다. 권한이 없는 사용자가 수정할 수 없도록 NTFS 권한을 사용하여 이 파일을 보호합니다.
 
 이제 파일 서버 리소스 관리자 구성을 시작할 준비가 되었습니다.
 
@@ -302,6 +302,6 @@ Windows PowerShell 스크립트를 사용자 지정 작업으로 사용하여 �
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

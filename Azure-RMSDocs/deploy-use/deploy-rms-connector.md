@@ -1,26 +1,26 @@
 ---
-title: "Azure 권한 관리 커넥터 배포 | Azure RMS"
-description: "Azure RMS(Rights Management) 커넥터를 배포하는 지침을 제공합니다. 이 커넥터는 Microsoft Exchange Server, Microsoft SharePoint Server 또는 Windows Server 및 FCI(파일 분류 인프라)를 실행하는 파일 서버를 사용하는 기존 온-프레미스 배포에 대해 정보 보호 기능을 제공합니다."
+title: "Azure Rights Management 커넥터 배포 | Azure Information Protection"
+description: "RMS 커넥터 배포에 대한 지침으로 Exchange Server, SharePoint Server 또는 Windows Server 및 FCI(파일 분류 인프라)를 사용하는 기존 온-프레미스 배포의 데이터 보호 서비스 기능을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a96018818f81787720021b661db10e818f388772
-ms.openlocfilehash: 2d962f168dafb1b8c207fa6b5d353a6a3ea4d1b2
+ms.sourcegitcommit: 54901b9091a87349bc9d182bf3e2924f4046b30e
+ms.openlocfilehash: 63d900232613c264e8d8481fb43bc585e7cd6886
 
 
 ---
 
 # Azure 권한 관리 커넥터 배포
 
->*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 이 정보를 이용하여 Azure 권한 관리 커넥터와 이 커넥터를 조직에 배포하는 방법에 대해 알아보세요. 이 커넥터는 **Microsoft Exchange Server**, **SharePoint Server** 또는 Windows Server 및 **FCI(파일 분류 인프라)**를 실행하는 파일 서버를 사용하는 기존 온-프레미스 배포의 데이터를 보호합니다.
 
@@ -30,7 +30,7 @@ ms.openlocfilehash: 2d962f168dafb1b8c207fa6b5d353a6a3ea4d1b2
 ## Microsoft Rights Management 커넥터 개요
 Microsoft Rights Management(RMS) 커넥터를 통해 신속하게 기존 온-프레미스 서버가 클라우드 기반 Microsoft Rights Management 서비스(Azure RMS)에 IRM(정보 권한 관리) 기능을 사용하도록 할 수 있습니다. 이 기능을 통해 IT 및 사용자는 추가 인프라를 설치하거나 다른 조직과의 트러스트 관계를 설정할 필요 없이 조직 내/외부에서 쉽게 문서와 사진을 보호할 수 있습니다. 
 
-RMS 커넥터는 Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2를 실행하는 서버에 온-프레미스로 설치하는, 사용 공간이 작은 서비스입니다. 물리적 컴퓨터에서 커넥터를 실행하는 것 외에도 Azure IaaS VM을 포함하여 가상 컴퓨터에서 실행할 수 있습니다. 이 커넥터를 배포하고 나면 다음 그림에 나온 대로 이 커넥터는 온-프레미스 서버와 클라우드 서비스 사이에서 통신 인터페이스(릴레이) 역할을 합니다.
+RMS 커넥터는 Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2를 실행하는 서버에 온-프레미스로 설치하는, 사용 공간이 작은 서비스입니다. 물리적 컴퓨터에서 커넥터를 실행하는 것 외에도 Azure IaaS VM을 포함하여 가상 컴퓨터에서 실행할 수 있습니다. 이 커넥터를 배포하고 나면 다음 그림에 나온 대로 이 커넥터는 온-프레미스 서버와 클라우드 서비스 사이에서 통신 인터페이스(릴레이) 역할을 합니다. 화살표는 네트워크 연결이 시작되는 방향을 나타냅니다.
 
 ![RMS 커넥터 아키텍처 개요](../media/RMS_connector.png)
 
@@ -97,6 +97,6 @@ RMS 커넥터를 설치하기 전에 먼저 다음 요구 사항이 설정되어
 1단계: [Azure 권한 관리 커넥터 설치 및 구성](install-configure-rms-connector.md)으로 이동합니다.
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

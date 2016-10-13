@@ -1,28 +1,28 @@
 ---
-title: "RMS 클라이언트 배포 참고 사항 | Azure RMS"
+title: "RMS 클라이언트 배포 참고 사항 | Azure Information Protection"
 description: "RMS 클라이언트(권한 관리 서비스 클라이언트) 버전 2는 MSIPC 클라이언트로도 알려져 있습니다. 이 제품은 온-프레미스 또는 클라우드에서 Microsoft Rights Management 서비스와 통신하는 Windows 컴퓨터용 소프트웨어로, 조직의 경계 내에서 또는 관리되는 경계 외부에서 응용 프로그램 및 장치를 통과하는 정보에 대한 액세스 및 사용을 보호하는 데 도움이 됩니다. Windows용 Rights Management 공유 응용 프로그램과 함께 제공되는 RMS 클라이언트는 해당 사용권 계약에 대한 승인 및 동의가 있을 때 타사 소프트웨어와 함께 자유롭게 배포할 수 있는 선택적 다운로드로 제공되므로 클라이언트는 권한 관리 서비스에 의해 보호된 콘텐츠를 보호하고 사용할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 6d80958fe4d56458b7dee48e7475a37de8a102bd
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 7dc20d52b501b9a6cbf659c3e00d6059352d6631
 
 
 ---
 
 # RMS 클라이언트 배포 참고 사항
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 7 SP1, Windows 8, Windows 8.1, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Vista*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 7 SP1, Windows 8, Windows 8.1, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Vista*
 
-RMS 클라이언트(권한 관리 서비스 클라이언트) 버전 2는 MSIPC 클라이언트로도 알려져 있습니다. 이 제품은 온-프레미스 또는 클라우드에서 Microsoft 권한 관리 서비스와 통신하는 Windows 컴퓨터용 소프트웨어로, 조직의 경계 내에서 또는 관리되는 경계 외부에서 응용 프로그램 및 장치를 통과하는 정보에 대한 액세스 및 사용을 보호하는 데 도움이 됩니다. [Windows용 Rights Management 공유 응용 프로그램](sharing-app-windows.md)과 함께 제공되는 RMS 클라이언트는 해당 사용권 계약에 대한 승인 및 동의가 있을 때 타사 소프트웨어와 함께 자유롭게 배포할 수 있는 [선택적 다운로드로](http://www.microsoft.com/download/details.aspx?id=38396)로 제공되므로 클라이언트는 권한 관리 서비스에 의해 보호된 콘텐츠를 보호하고 사용할 수 있습니다.
+RMS 클라이언트(권한 관리 서비스 클라이언트) 버전 2는 MSIPC 클라이언트로도 알려져 있습니다. 이 제품은 온-프레미스 또는 클라우드에서 Microsoft 권한 관리 서비스와 통신하는 Windows 컴퓨터용 소프트웨어로, 조직의 경계 내에서 또는 관리되는 경계 외부에서 응용 프로그램 및 장치를 통과하는 정보에 대한 액세스 및 사용을 보호하는 데 도움이 됩니다. [Windows용 Rights Management 공유 응용 프로그램](sharing-app-windows.md)과 함께 제공되는 RMS 클라이언트는 해당 사용권 계약에 대한 승인 및 동의가 있을 때 타사 소프트웨어와 함께 자유롭게 배포할 수 있는 [선택적 다운로드로](http://www.microsoft.com/download/details.aspx?id=38396)로 제공되므로 클라이언트는 Rights Management 서비스에 의해 보호된 콘텐츠를 보호하고 사용할 수 있습니다.
 
 
 ## RMS 클라이언트 재배포
@@ -238,6 +238,6 @@ RMS 클라이언트가 Active Directory를 쿼리하여 SCP를 찾을 수 없으
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

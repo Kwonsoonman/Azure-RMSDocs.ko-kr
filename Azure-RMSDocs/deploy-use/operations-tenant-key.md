@@ -1,32 +1,32 @@
 ---
-title: "Azure 권한 관리 테넌트 키에 대한 작업 | Azure RMS"
-description: "Microsoft Azure 권한 관리(Azure RMS) 테넌트 키를 구현한 후의 제어 및 책임 수준은 테넌트 키 토폴로지(Microsoft 관리 또는 고객 관리)에 따라 다릅니다."
+title: "Azure Rights Management 테넌트 키에 대한 작업 | Azure Information Protection"
+description: "Azure Information Protection 테넌트 키에 적용되는 다양한 제어 및 책임 수준에 대해 알아봅니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: bcd7a03c7eb0c40893bc37d0d5f108c2389dcc3f
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 780c4db3e791dd427828550e428ec4ea18d55fd5
 
 
 ---
 
-# Azure 권한 관리 테넌트 키에 대한 작업
+# Azure Information Protection 테넌트 키에 대한 작업
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-Microsoft Azure 권한 관리(Azure RMS) 테넌트 키를 구현한 후의 제어 및 책임 수준은 테넌트 키 토폴로지(Microsoft 관리 또는 고객 관리)에 따라 다릅니다.
+Azure Information Protection 테넌트 키를 구현한 후의 제어 및 책임 수준은 테넌트 키 토폴로지(Microsoft 관리 또는 고객 관리)에 따라 다릅니다.
 
 Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식은 대개 BYOK(Bring Your Own Key)라고 합니다. 이 시나리오 및 두 테넌트 키 토폴로지 중 선택하는 방법에 대한 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
 
-다음 표에는 Azure RMS 테넌트 키에 대해 선택한 토폴로지에 따라 수행할 수 있는 작업이 나와 있습니다.
+다음 표에는 Azure Information Protection 테넌트 키에 대해 선택한 토폴로지에 따라 수행할 수 있는 작업이 나와 있습니다.
 
 |수명 주기 작업|Microsoft 관리(기본값)|고객 관리(BYOK)|
 |-----------------------|-------------------------------|---------------------------|
@@ -36,7 +36,7 @@ Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식
 |테넌트 키 내보내기|예|아니요|
 |위반 사항에 대응|예|예|
 
-구현한 토폴로지를 파악한 후 다음 중 하나를 선택하여 Azure RMS 테넌트 키에 수행할 수 있는 이러한 작업에 대한 자세한 내용을 확인하세요.
+구현한 토폴로지를 파악한 후 다음 중 하나를 선택하여 Azure Information Protection 테넌트 키에 수행할 수 있는 이러한 작업에 대한 자세한 내용을 확인하세요.
 
 
 - [Microsoft 관리 테넌트 키](operations-microsoft-managed-tenant-key.md)
@@ -48,6 +48,6 @@ Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

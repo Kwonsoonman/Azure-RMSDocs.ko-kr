@@ -1,29 +1,29 @@
 ---
-title: "Azure 클래식 포털에서 Azure 권한 관리를 활성화하는 방법 | Azure RMS"
-description: "Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Rights Management Premium 구독이 있는 경우입니다."
+title: "Azure 클래식 포털에서 Azure Rights Management를 활성화하는 방법 | Azure Information Protection"
+description: "Azure Portal 액세스 권한이 있는 경우의 Azure Rights Management 서비스 활성화 지침을 제공합니다. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Information Protection Premium 구독이 있는 경우입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 573aa437d8449212bd2f22b532342e4c7e3a1be6
+ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
+ms.openlocfilehash: a553ea57bd4b396b7629dc24aea9f76b4a2a5e5a
 
 
 ---
 
 # Azure 클래식 포털에서 Azure 권한 관리를 활성화하는 방법
 
->*적용 대상: Azure 권한 관리*
+>*적용 대상: Azure Information Protection*
 
 
-Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Rights Management Premium 구독이 있는 경우입니다.
+Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Information Protection Premium 구독이 있는 경우입니다.
 
 > [!TIP]
 > 2분 동영상 시청: [Azure RMS를 활성화하는 방법](https://channel9.msdn.com/series/pit-stop-enterprise-mobility-suite/activate-azure-rms)
@@ -37,9 +37,9 @@ Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. �
 4.  [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]에 대해 관리할 디렉터리를 선택하고 **활성화**를 클릭한 다음 작업을 확인합니다.
 
     > [!NOTE]
-    >활성화 오류가 표시되는 경우 서비스 계획 또는 제품 버전에 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]가 포함되지 않았기 때문일 수 있습니다.
+    >참고: 활성화 오류가 표시되는 경우 서비스 계획 또는 제품 버전에 Azure Information Protection의 Azure Rights Management 서비스가 포함되지 않았기 때문일 수 있습니다.
     >
-    >[Azure RMS를 지원하는 클라우드 구독](../get-started/requirements-subscriptions.md)의 정보를 사용하여 RMS 지원을 확인합니다. 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
+    >[구독 정보](https://go.microsoft.com/fwlink/?LinkId=827589)를 사용하여 Azure Rights Management를 포함하는 구독이 있는지 확인 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
 
 
 이제 **Rights Management 상태** 가 **활성** 으로 표시되고 **활성화** 옵션이 **비활성화**로 바뀝니다.
@@ -58,6 +58,6 @@ Rights Management 서비스가 사용되도록 설정되고 사용할 준비가 
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

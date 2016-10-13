@@ -1,26 +1,26 @@
 ---
-title: "Office 365 클래식 관리 센터에서 Azure 권한 관리를 활성화하는 방법 | Azure RMS"
-description: "클래식(원래) 버전의 Office 365 관리 센터를 사용하는 경우 다음 지침을 따르세요."
+title: "Office 365 클래식 관리 센터에서 Azure Rights Management를 활성화하는 방법 | Azure Information Protection"
+description: "Office 365 관리 센터의 클래식(원래) 버전에 액세스 권한이 있는 경우의 Azure Rights Management 서비스 활성화 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: 27667ed6c205cfa93b2d985722637255ddbd6072
+ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
+ms.openlocfilehash: 8e2b4befc9acd2f50472169b8195d2510fa22be8
 
 
 ---
 
 # Office 365 클래식 관리 센터에서 Azure 권한 관리를 활성화하는 방법
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
 
 클래식(원래) 버전의 Office 365 관리 센터를 사용하는 경우 다음 지침을 따르세요.
@@ -37,9 +37,9 @@ ms.openlocfilehash: 27667ed6c205cfa93b2d985722637255ddbd6072
 4.  **권한 관리**를 클릭합니다.
 
     > [!NOTE]
-    >이 옵션이 표시되지 않으면 서비스 계획 또는 제품 버전에 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]가 포함되어 있지 않은 것일 수 있습니다.
+    >참고: 이 옵션이 표시되지 않으면 서비스 계획 또는 제품 버전에 Azure Information Protection의 Azure Rights Management 서비스가 포함되지 않았기 때문일 수 있습니다.
     >
-    >[Azure RMS를 지원하는 클라우드 구독](../get-started/requirements-subscriptions.md)의 정보를 사용하여 RMS 지원을 확인합니다. 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
+    >[구독 정보](https://go.microsoft.com/fwlink/?LinkId=827589)를 사용하여 Azure Rights Management를 포함하는 구독이 있는지 확인 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
 
 5. **Rights Management** 페이지에서 **관리**를 클릭합니다.
 
@@ -53,6 +53,6 @@ ms.openlocfilehash: 27667ed6c205cfa93b2d985722637255ddbd6072
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

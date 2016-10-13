@@ -1,28 +1,28 @@
 ---
-title: "Azure Rights Management 커넥터 모니터링 | Azure RMS"
-description: "RMS 커넥터를 설치하고 구성한 후에 다음과 같은 방법과 정보를 사용하여 커넥터와 조직의 Azure RMS 사용을 모니터링할 수 있습니다."
+title: "Azure Rights Management 커넥터 모니터링 | Azure Information Protection"
+description: "조직의 Azure Information Protection의 Azure Rights Management 서비스 사용과 커넥터를 모니터링하는 데 도움이 되는 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/08/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 11079a491cf9feade86713ef02ccdce79019577a
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 954d8b7b62b35f5fdd29e115681d9d5c0da69a86
 
 
 ---
 
 # Azure Rights Management 커넥터 모니터링
 
->*적용 대상: Azure 권한 관리, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
-RMS 커넥터를 설치하고 구성한 후에 다음과 같은 방법과 정보를 사용하여 커넥터와 조직의 Azure RMS 사용을 모니터링할 수 있습니다.
+RMS 커넥터를 설치하고 구성한 후에 다음과 같은 방법과 정보를 사용하여 커넥터와 조직의 Azure Information Protection의 Azure Rights Management 사용을 모니터링할 수 있습니다.
 
 ## 응용 프로그램 이벤트 로그 항목
 
@@ -32,10 +32,10 @@ RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Mi
 
 커넥터에서 HTTPS를 사용하도록 구성하지 않은 경우에는 클라이언트에서 비보안(HTTP) 연결을 사용하고 있음을 나타내는 경고 ID 2002가 표시될 수 있습니다.
 
-커넥터에서 Azure RMS에 연결하지 못하면 오류 3001이 표시될 가능성이 큽니다. 예를 들어, 이러한 표시는 RMS 커넥터를 실행하는 하나 이상의 서버에 DNS 문제가 있거나 인터넷에 액세스할 수 없는 경우에 나타날 수 있습니다. 
+커넥터에서 Azure Rights Management 서비스에 연결하지 못하면 오류 3001이 표시될 가능성이 큽니다. 예를 들어, 이러한 표시는 RMS 커넥터를 실행하는 하나 이상의 서버에 DNS 문제가 있거나 인터넷에 액세스할 수 없는 경우에 나타날 수 있습니다. 
 
 > [!TIP]
-> RMS 커넥터 서버에서 Azure RMS에 연결할 수 없는 경우는 웹 프록시 구성에 원인이 있을 가능성이 큽니다.
+> RMS 커넥터 서버에서 Azure Rights Management 서비스에 연결할 수 없는 경우는 웹 프록시 구성에 원인이 있을 가능성이 큽니다.
 
 모든 이벤트 로그 항목이 그렇듯이, 자세한 내용을 보려면 메시지를 상세히 검색합니다.
 
@@ -83,7 +83,7 @@ RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Mi
 
 **권한 있는 계정 목록이 업데이트되었습니다.**
 
-이 이벤트는 RMS 커넥터가 RMS 커넥터 사용 권한이 있는 최신 계정 목록(기존 계정 및 모든 변경 사항)을 다운로드했을 때 기록됩니다. 이 목록은 RMS 커넥터가 Azure RMS와 통신할 수 있을 경우 15분마다 다운로드됩니다.
+이 이벤트는 RMS 커넥터가 RMS 커넥터 사용 권한이 있는 최신 계정 목록(기존 계정 및 모든 변경 사항)을 다운로드했을 때 기록됩니다. 이 목록은 RMS 커넥터가 Azure Rights Management 서비스와 통신할 수 있을 경우 15분마다 다운로드됩니다.
 
 ----
 
@@ -99,7 +99,7 @@ RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Mi
 
 **Microsoft RMS 커넥터에 대한 무단 액세스 시도입니다.**
 
-이 이벤트는 계정이 RMS 커넥터에 연결을 시도하지만 실패할 때 기록됩니다. 이에 대한 가장 일반적인 이유는 연결을 수행하는 계정이 RMS 커넥터가 Azure RMS에서 다운로드하는 권한 있는 계정 목록에 없기 때문입니다. 예를 들어 이 최신 목록이 아직 다운로드되지 않았거나(15분마다 다운로드) 해당 계정이 목록에 없는 것입니다. 
+이 이벤트는 계정이 RMS 커넥터에 연결을 시도하지만 실패할 때 기록됩니다. 이에 대한 가장 일반적인 이유는 연결을 수행하는 계정이 RMS 커넥터가 Azure Rights Management 서비스에서 다운로드하는 권한 있는 계정 목록에 없기 때문입니다. 예를 들어 이 최신 목록이 아직 다운로드되지 않았거나(15분마다 다운로드) 해당 계정이 목록에 없는 것입니다. 
 
 또 다른 이유는 RMS 커넥터를 사용하도록 구성된 서버와 동일한 서버에 이 RMS 커넥터를 설치한 경우일 수 있습니다. 예를 들어 Exchange Server를 실행하는 서버에 RMS 커넥터를 설치하고 커넥터를 사용하도록 Exchange 계정에 권한을 부여한 경우입니다. 연결을 시도할 때에는 RMS 커넥터에서 해당 계정을 올바로 식별할 수 없기 때문에 이러한 구성이 지원되지 않습니다.
 
@@ -155,9 +155,7 @@ HTTPS 연결을 위해 RMS 커넥터를 구성하는 방법에 대해서는 [HTT
 
 ## 성능 카운터
 
-RMS 커넥터를 설치하면 **Microsoft Rights Management 커넥터** 성능 카운터가 자동으로 생성되며, 이 카운터는 커넥터를 통해 Azure RMS의 사용 성능을 모니터링하는 데 유용합니다. 
-
-예를 들어, 문서나 메일을 보호하거나 보호된 문서 또는 메일을 열 때 정기적으로 지연이 발생하는 경우는 성능 카운터를 사용하여 지연의 원인이 커넥터의 처리 시간, Azure RMS의 처리 시간, 네트워크 지연 중 어느 것에 있는지 확인할 수 있습니다. 지연이 발생하는 위치를 쉽게 찾을 수 있도록 **커넥터 처리 시간**, **서비스 응답 시간**, **커넥터 응답 시간**의 평균 수를 포함하는 카운터를 확인합니다. 예: **라이선싱 성공 일괄 처리 요청 평균 커넥터 응답 시간**.
+RMS 커넥터를 설치하면 **Microsoft Rights Management 커넥터** 성능 카운터가 자동으로 생성되며, 이 카운터는 커넥터를 통해 Azure Rights Management 서비스의 사용 성능을 모니터링하는 데 유용합니다. 예를 들어, 문서나 메일을 보호하거나 보호된 문서 또는 메일을 열 때 정기적으로 지연이 발생하는 경우는 성능 카운터를 사용하여 지연의 원인이 커넥터의 처리 시간, Azure Rights Management 서비스의 처리 시간, 네트워크 지연 중 어느 것에 있는지 확인할 수 있습니다. 지연이 발생하는 위치를 쉽게 찾을 수 있도록 **커넥터 처리 시간**, **서비스 응답 시간**, **커넥터 응답 시간**의 평균 수를 포함하는 카운터를 확인합니다. 예: **라이선싱 성공 일괄 처리 요청 평균 커넥터 응답 시간**.
 
 최근에 커넥터를 사용할 새 서버 계정을 추가한 경우에 **마지막 권한 부여 정책 업데이트 이후 시간** 카운터를 확인하여 커넥터를 업데이트한 후 목록을 다운로드했는지, 아니면 조금 더 기다려야 하는지(최대 15분) 확인할 수 있습니다.
 
@@ -194,6 +192,6 @@ Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

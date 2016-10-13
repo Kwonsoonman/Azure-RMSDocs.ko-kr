@@ -1,27 +1,27 @@
 ---
-title: "Rights Management로 보호된 파일에 대한 사용 권한 변경 | Azure RMS"
+title: "Rights Management로 보호된 파일에 대한 사용 권한 변경 | Azure Information Protection"
 description: "파일이 Rights Management로 보호된 경우 파일을 다시 보호한 다음 해당 파일에 대한 액세스 권한이 있어야 하는 모든 사용자와 해당 사용자에게 부여할 사용 권한을 지정하여 사용 권한을 변경할 수 있습니다."
 keywords: 
 author: cabailey
 manager: mbaldwin
-ms.date: 08/03/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 
 
 ---
 
 # Rights Management로 보호된 파일에 대한 사용 권한 변경
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 파일이 Rights Management로 보호된 경우 파일을 다시 보호한 다음 해당 파일에 대한 액세스 권한이 있어야 하는 모든 사용자와 해당 사용자에게 부여할 사용 권한을 지정하여 사용 권한을 변경할 수 있습니다.
 
@@ -62,9 +62,9 @@ ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
     파일을 다시 보호하는 권한이 있는 경우 파일이 보호되고 있음을 설명하는 대화 상자가 잠시 표시될 수 있으며, 포커스가 파일 탐색기로 돌아갑니다. 이제 선택한 파일이 변경 내용으로 보호됩니다. 
 
 > [!NOTE]
-> 파일을 다시 보호할 수 있기 전에 먼저 RMS에서 사용자에게 이 파일에 대해 이 작업을 수행할 권한이 있는지 확인하기 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
+> 파일을 다시 보호할 수 있기 전에 먼저 Rights Management Services에서 사용자에게 이 파일에 대해 이 작업을 수행할 권한이 있는지 확인하기 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
 >
-> 조직에서 Azure RMS(Azure 권한 관리) 또는 AD RMS를 사용하지 않으면 RMS로 보호된 파일을 사용할 수 있도록 사용자의 자격 증명을 허용하는 무료 계정을 신청할 수 있습니다.
+> 조직에서 Azure Information Protection 또는 AD RMS를 사용하지 않으면 RMS로 보호된 파일을 사용할 수 있도록 사용자의 자격 증명을 허용하는 무료 계정을 신청할 수 있습니다.
 >
 > -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
 >
@@ -96,6 +96,6 @@ ms.openlocfilehash: 214890cee5975c05798014ddb8d153faa9ca3998
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,6 +1,6 @@
-# [이해 및 탐색](/rights-management/understand-explore/azure-rights-management)
-# [시작](/rights-management/get-started/requirements-azure-rms)
-# [계획 및 디자인](/rights-management/plan-design/deployment-roadmap)
+# [이해 및 탐색](/information-protection/understand-explore/what-is-information-protection)
+# [시작](/information-protection/get-started/requirements-azure-rms)
+# [계획 및 디자인](/information-protection/plan-design/deployment-roadmap)
 # [서비스 배포 및 사용](activate-service.md)
 ## [서비스 활성화](activate-service.md)
 ### [Office 365 관리 센터 - 미리 보기](activate-office365-preview.md)
@@ -18,12 +18,22 @@
 ### [RMS 공유 앱 ](configure-sharing-app.md)
 ## [사용 권한 구성](configure-usage-rights.md)
 ## [검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](configure-super-users.md)
+## [Information Protection 정책 구성](configure-policy.md)
+### [기본 정책](configure-policy-default.md)
+### [전역 설정 구성](configure-policy-settings.md)
+### [새 레이블 만들기](configure-policy-new-label.md)
+### [레이블 삭제 또는 순서 변경](configure-policy-delete-reorder.md)
+### [레이블 변경](configure-policy-change-label.md)
+### [보호 적용](configure-policy-protection.md)
+#### [HYOK 제한](configure-adrms-restrictions.md)
+### [시각적 표시 구성](configure-policy-markings.md)
+### [조건 구성](configure-policy-classification.md)
 ## [RMS 커넥터 배포](deploy-rms-connector.md)
 ### [커넥터 설치 및 구성](install-configure-rms-connector.md)
 ### [서버 구성](configure-servers-rms-connector.md)
 #### [레지스트리 설정](rms-connector-registry-settings.md)
 ### [커넥터 모니터링](monitor-rms-connector.md)
-## [Azure RMS 확인](verify.md)
+## [Azure Rights Management 서비스 확인](verify.md)
 ## [사용자가 파일을 보호할 수 있도록 지원](help-users.md)
 ## [사용 현황 로깅 및 분석](log-analyze-usage.md)
 ## [테넌트 키에 대한 작업](operations-tenant-key.md)
@@ -32,11 +42,11 @@
 ## [서비스 해제 및 비활성화](decommission-deactivate.md)
 ## [PowerShell을 사용한 관리](administer-powershell.md)
 ### [Azure RMS용 Windows PowerShell 설치](install-powershell.md)
-# [클라이언트 배포 및 사용](/rights-management/rms-client/use-client)
-# [앱 개발 및 사용자 지정](/rights-management/develop/developers-guide)
-# [Azure Information Protection(미리 보기)](/rights-management/information-protection/what-is-information-protection)
+# [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
+# [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Sep16_HO4-->
 
 

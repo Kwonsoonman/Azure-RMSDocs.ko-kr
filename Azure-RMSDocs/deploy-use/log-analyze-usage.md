@@ -1,68 +1,68 @@
 ---
-title: "Azure 권한 관리 사용 현황 로깅 및 분석 | Azure RMS"
-description: "이 항목의 정보를 통해 Azure 권한 관리(Azure RMS)와 함께 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. Azure 권한 관리 서비스는 조직에 대해 수행하는 모든 요청을 기록할 수 있습니다. 여기에는 사용자 요청, 조직의 권한 관리 관리자가 수행하는 작업 및 Azure 권한 관리 배포를 지원하기 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다."
+title: "Azure Rights Management 서비스의 사용 현황 로깅 및 분석 | Azure Information Protection"
+description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 사용하는 방법에 대한 정보와 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/17/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c7b194493073bcd76fa7a7d06bb31a7811e8cc3e
-ms.openlocfilehash: 868656f84f39db20f0aee8d148b00af15849fda5
+ms.sourcegitcommit: e33f1e54c21507999d30dcee2ce63c8eb2d69895
+ms.openlocfilehash: 33520bcfc36ed0a022b87c4b2db1e6fcd7a6eb14
 
 
 ---
 
-# Azure 권한 관리 사용 현황 로깅 및 분석
+# Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-이 항목의 정보를 통해 Azure 권한 관리(Azure RMS)와 함께 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. Azure 권한 관리 서비스는 조직에 대해 수행하는 모든 요청을 기록할 수 있습니다. 여기에는 사용자 요청, 조직의 권한 관리 관리자가 수행하는 작업 및 Azure 권한 관리 배포를 지원하기 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다.
+이 정보를 통해 Azure Information Protection의 Azure Rights Management 서비스에 대한 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. 이 서비스는 조직의 문서와 전자 메일에 대한 데이터 보호를 제공하고 모든 요청을 기록할 수 있습니다. 이 요청에는 사용자 요청, 이 서비스에 대해 관리자가 수행하는 작업, Azure Information Protection 배포 지원을 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다.
 
-이러한 Azure 권한 관리 로그를 사용하여 다음과 같은 비즈니스 시나리오를 지원할 수 있습니다.
+이러한 Azure Rights Management 서비스 로그를 사용하여 다음과 같은 비즈니스 시나리오를 지원할 수 있습니다.
 
 -   **비즈니스 관련 정보 파악**
 
-    Azure 권한 관리에서 생성한 로그를 데이터베이스, OLAP(온라인 분석 처리) 시스템 또는 맵 감소 시스템과 같은 선택한 리포지토리로 가져와서 정보를 분석하고 보고서를 생성할 수 있습니다. 예를 들어 RMS로 보호된 데이터에 액세스하는 사용자를 파악할 수 있습니다. 그리고 사용자들이 액세스하는 RMS로 보호된 데이터 및 액세스에 사용하는 장치와 액세스 위치를 확인할 수 있습니다. 사용자들이 보호된 콘텐츠를 정상적으로 읽을 수 있는지 확인할 수 있으며, 보호된 중요 문서를 사용자들이 읽었는지도 파악할 수 있습니다.
+    Azure Rights Management 서비스에서 생성한 로그를 데이터베이스, OLAP(온라인 분석 처리) 시스템 또는 맵 감소 시스템과 같은 선택한 리포지토리로 가져와서 정보를 분석하고 보고서를 생성할 수 있습니다. 예를 들어 보호된 데이터에 액세스하는 사용자를 파악할 수 있습니다. 그리고 사용자들이 액세스하는 보호된 데이터 및 액세스에 사용하는 장치와 액세스 위치를 확인할 수 있습니다. 사용자들이 보호된 콘텐츠를 정상적으로 읽을 수 있는지 확인할 수 있으며, 보호된 중요 문서를 사용자들이 읽었는지도 파악할 수 있습니다.
 
 -   **남용 모니터링**
 
-    Azure 권한 관리 로깅 정보는 거의 실시간으로 제공되므로 회사의 권한 관리 사용을 지속적으로 모니터링할 수 있습니다. 로그의 99.9%는 RMS에서 작업을 시작한 후 15분 이내에 사용 가능합니다.
+    Azure Rights Management 로깅 정보는 거의 실시간으로 제공되므로 회사의 Rights Management 서비스 사용을 지속적으로 모니터링할 수 있습니다. 로그의 99.9%는 서비스 작업을 시작한 후 15분 이내에 사용 가능합니다.
 
-    예를 들어 표준 업무 시간 이외의 시간에 RMS로 보호된 데이터를 읽는 사용자 수가 갑자기 증가하면 알림을 받을 수 있습니다. 이러한 현상은 악의적인 사용자가 경쟁자에게 판매하기 위해 정보를 수집하는 것일 수 있기 때문입니다. 또한 같은 사용자가 짧은 시간 내에 서로 다른 두 IP 주소에서 데이터에 액세스하는 경우에는 해당 사용자의 계정이 노출된 것일 수 있습니다.
+    예를 들어 표준 업무 시간 이외의 시간에 보호된 데이터를 읽는 사용자 수가 갑자기 증가하면 알림을 받을 수 있습니다. 이러한 현상은 악의적인 사용자가 경쟁자에게 판매하기 위해 정보를 수집하는 것일 수 있기 때문입니다. 또한 같은 사용자가 짧은 시간 내에 서로 다른 두 IP 주소에서 데이터에 액세스하는 경우에는 해당 사용자의 계정이 노출된 것일 수 있습니다.
 
 -   **법정 분석 수행**
 
-    정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. Azure 권한 관리 및 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure 권한 관리로 보호되는 문서와 사진을 열려면 항상 권한 관리 라이선스를 받아야 하기 때문입니다. 이는 메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 저장소 장치에 복사하는 경우에도 마찬가지입니다. 즉, Azure 권한 관리를 사용하여 데이터를 보호하는 경우 Azure 권한 관리 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
+    정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. 이 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure Rights Management로 보호되는 문서와 사진을 열려면 항상 Rights Management 라이선스를 받아야 하기 때문입니다. 이는 메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 저장소 장치에 복사하는 경우에도 마찬가지입니다. 즉, Azure Rights Management 서비스를 사용하여 데이터를 보호하는 경우 이 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
 
 > [!NOTE]
-> Azure 권한 관리에 대한 관리 작업 로깅만 사용하고 사용자가 권한 관리를 사용하는 방법은 추적하지 않으려는 경우 Azure 권한 관리용 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet을 사용할 수 있습니다.
+> Azure Rights Management 서비스에 대한 관리 작업 로깅만 사용하고 사용자가 Rights Management 서비스를 사용하는 방법은 추적하지 않으려는 경우 Azure Rights Management용 [Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx) Windows PowerShell cmdlet을 사용할 수 있습니다.
 > 
 > Azure 클래식 포털에서 **RMS 요약**, **RMS 활성 사용자**, **RMS 장치 플랫폼** 및 **RMS 응용 프로그램 사용**이 포함된 개괄적인 사용 현황 보고서를 사용할 수도 있습니다. Azure 클래식 포털에서 이러한 보고서에 액세스하려면 **Active Directory**를 클릭하고 디렉터리를 선택하여 연 다음 **보고서**를 클릭합니다.
 
 다음 섹션에서 Azure 권한 관리 사용 현황 로깅에 대한 자세한 내용을 확인할 수 있습니다.
 
 ## Azure 권한 관리 사용 현황 로깅을 사용하도록 설정하는 방법
-2016년 2월부터 모든 고객에 대해 Azure 권한 관리 사용 현황 로깅이 기본적으로 사용됩니다. 이 내용은 2016년 2월 이전에 Azure RMS 서비스를 활성화한 고객과 2016년 2월 이후에 서비스를 활성화하는 고객에게 적용됩니다. 
+2016년 2월부터 모든 고객에 대해 Azure 권한 관리 사용 현황 로깅이 기본적으로 사용됩니다. 이 내용은 2016년 2월 이전에 Azure Rights Management 서비스를 활성화한 고객과 2016년 2월 이후에 서비스를 활성화하는 고객에게 적용됩니다. 
 
 > [!NOTE]
 > 로그 저장소 또는 로깅 기능에 대한 무료로 제공됩니다.
 > 
-> 2016년 2월 이전에 Azure RMS에 대한 사용 현황 로깅을 사용한 경우 Azure 구독이 필요하며 Azure에 충분한 저장소가 있어야 했지만 지금은 그렇지 않습니다.
+> 2016년 2월 이전에 Azure Rights Management에 대한 사용 현황 로깅을 사용한 경우 Azure 구독이 필요하며 Azure에 충분한 저장소가 있어야 했지만 지금은 그렇지 않습니다.
 
 
 
 ## Azure 권한 관리 사용 현황 로그에 액세스 및 사용 방법
-Azure 권한 관리는 로그를 일련의 Blob으로 Azure 저장소 계정에 기록합니다. 각 Blob에는 W3C 확장 로그 형식의 로그 레코드가 하나 이상 포함됩니다. Blob 이름은 숫자이며 작성된 순서를 나타냅니다. 이 문서의 뒷부분에 있는 [Azure 권한 관리 사용 현황 로그를 해석하는 방법](#how-to-interpret-your-azure-rights-management-usage-logs) 섹션에 로그 콘텐츠 및 콘텐츠 생성에 대한 자세한 내용이 나와 있습니다.
+Azure Rights Management 서비스는 로그를 일련의 Blob으로 Azure 저장소 계정에 기록합니다. 각 Blob에는 W3C 확장 로그 형식의 로그 레코드가 하나 이상 포함됩니다. Blob 이름은 숫자이며 작성된 순서를 나타냅니다. 이 문서의 뒷부분에 있는 [Azure 권한 관리 사용 현황 로그를 해석하는 방법](#how-to-interpret-your-azure-rights-management-usage-logs) 섹션에 로그 콘텐츠 및 콘텐츠 생성에 대한 자세한 내용이 나와 있습니다.
 
 Azure 권한 관리 작업 이후 저장소 계정에 로그가 표시될 때까지 다소 시간이 걸릴 수 있습니다. 대부분의 로그는 15분 이내에 표시됩니다. 로컬 폴더, 데이터베이스 또는 맵 감소 리포지토리와 같은 로컬 저장소에 로그를 다운로드하는 것이 좋습니다.
 
-사용 현황 로그를 다운로드하려면 Windows PowerShell에 대한 Azure RMS 관리 모듈을 사용합니다. 설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요. 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 **2.4.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version` 
+사용 현황 로그를 다운로드하려면 Windows PowerShell에 대한 Azure Rights Management 관리 모듈을 사용합니다. 설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요. 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 **2.4.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version` 
 
 ### PowerShell을 사용하여 사용 현황 로그를 다운로드하려면
 
@@ -96,10 +96,10 @@ Azure 권한 관리 작업 이후 저장소 계정에 로그가 표시될 때까
 >
 > 예를 들어 모든 정보를 .log 파일 형식으로 가져오려면 다음 명령을 실행합니다. `logparser –i:w3c –o:csv "SELECT * INTO AllLogs.csv FROM *.log"`
 
-#### 2016년 2월 22일 로깅 변경 전에 Azure RMS 사용 현황 로깅을 수동으로 활성화한 경우
+#### 2016년 2월 22일 로깅 변경 전에 Azure Rights Management 사용 현황 로깅을 수동으로 활성화한 경우
 
 
-로깅 변경 전에 사용 현황 로깅을 사용한 경우 구성된 Azure 저장소 계정에 사용 현황 로그가 제공됩니다. Microsoft는 이러한 로깅 변경의 일부로 사용자 저장소 계정에 있는 이러한 로그를 새로운 Azure RMS 관리 저장소 계정에 복사하지 않습니다. 이전에 생성된 로그의 수명 주기를 관리해야 하며 [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) cmdlet을 사용하여 기존 로그를 다운로드할 수 있습니다. 예를 들면 다음과 같습니다.
+로깅 변경 전에 사용 현황 로깅을 사용한 경우 구성된 Azure 저장소 계정에 사용 현황 로그가 제공됩니다. Microsoft는 이러한 로깅 변경의 일부로 사용자 저장소 계정에 있는 이러한 로그를 새로운 Azure Rights Management 관리 저장소 계정에 복사하지 않습니다. 이전에 생성된 로그의 수명 주기를 관리해야 하며 [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) cmdlet을 사용하여 기존 로그를 다운로드할 수 있습니다. 예를 들면 다음과 같습니다.
 
 - 사용 가능한 모든 로그를 E:\logs 폴더에 다운로드하려면 다음 cmdlet을 실행합니다. `Get-AadrmUsageLog -Path "E:\Logs"`
     
@@ -107,17 +107,17 @@ Azure 권한 관리 작업 이후 저장소 계정에 로그가 표시될 때까
 
 다음 중 한 가지가 적용되는 경우 Get-AadrmUsageLog cmdlet을 사용하여 로그를 다운로드하지 않아도 됩니다.
 
--  2016년 2월 22일 이전에 Azure 권한 관리를 활성화했지만 사용 현황 로깅 기능을 활성화하지 않았습니다.
+-  2016년 2월 22일 이전에 Azure Rights Management 서비스를 활성화했지만 사용 현황 로깅 기능을 활성화하지 않았습니다.
 
-- 2016년 2월 22일 이후에 Azure 권한 관리를 활성화했습니다.
+- 2016년 2월 22일 이후에 Azure Rights Management 서비스를 활성화했습니다.
 
 ## Azure 권한 관리 사용 현황 로그를 해석하는 방법
 다음 정보를 참조하여 Azure 권한 관리 사용 현황 로그를 해석할 수 있습니다.
 
 ### 로그 순서
-Azure 권한 관리는 일련의 Blob으로 로그를 기록합니다. 
+Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니다. 
 
-로그의 각 항목에 UTC 타임스탬프가 있습니다. Azure 권한 관리가 여러 데이터 센터의 여러 서버에서 실행되므로 로그가 타임스탬프순으로 정렬되었어도 순서가 올바르지 않은 것처럼 보일 수 있습니다. 그러나 시간 차이는 크지 않으며 보통 1분 이내입니다. 대부분의 경우에는 이러한 시간 차이로 인해 로그 분석 시 문제가 발생하지 않습니다.
+로그의 각 항목에 UTC 타임스탬프가 있습니다. Azure Rights Management 서비스가 여러 데이터 센터의 여러 서버에서 실행되므로 로그가 타임스탬프순으로 정렬되었어도 순서가 올바르지 않은 것처럼 보일 수 있습니다. 그러나 시간 차이는 크지 않으며 보통 1분 이내입니다. 대부분의 경우에는 이러한 시간 차이로 인해 로그 분석 시 문제가 발생하지 않습니다.
 
 ### Blob 형식
 각 Blob은 W3C 확장 로그 형식으로 되어 있으며 다음의 두 줄로 시작됩니다.
@@ -165,7 +165,7 @@ user-id 필드는 보통 요청을 수행한 사용자를 나타내지만 해당
     이 커넥터로부터의 요청은 RMS 커넥터 설치 시 자동으로 생성되는 **Aadrm_S-1-7-0**라는 서비스 사용자 이름으로 기록됩니다.
 
 #### 일반적인 요청 형식
-Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에는 가장 일반적으로 사용되는 몇 가지 요청 형식이 나와 있습니다.
+Azure Rights Management 서비스에는 다양한 요청 형식이 있습니다. 아래 표에는 가장 일반적으로 사용되는 몇 가지 요청 형식이 나와 있습니다.
 
 |요청 형식|설명|
 |----------------|---------------|
@@ -192,10 +192,10 @@ Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에
 |GetConnectorAuthorizations|RMS 커넥터에서 클라우드로부터 해당 구성을 가져오도록 호출합니다.|
 |GetRecipients|단일 문서에 대한 목록 보기로 이동하도록 문서 추적 사이트에서 호출합니다.|
 |GetSingle|**단일 문서**이동하도록 문서 추적 사이트에서 호출합니다.|
-|GetTenantFunctionalState|Azure 클래식 포털에서 Azure RMS 활성화 여부를 확인합니다.|
+|GetTenantFunctionalState|Azure 클래식 포털에서 Azure Rights Management 서비스 활성화 여부를 확인합니다.|
 |GetTemplateById|Azure 클래식 포털에서 템플릿 ID를 지정하여 템플릿을 가져오도록 호출합니다.|
 |KeyVaultDecryptRequest|클라이언트가 RMS로 보호된 콘텐츠의 암호 해독을 시도합니다. Azure 주요 자격 증명 모음에서 고객이 관리하는 테넌트 키(BYOK)에 대해서만 적용할 수 있습니다.|
-|KeyVaultGetKeyInfoRequest|Azure RMS 테넌트 키에 대해 Azure 주요 자격 증명 모음에 사용되도록 지정된 키에 액세스할 수 있으며여 이미 사용되지 않았는지 확인하기 위해 호출합니다.|
+|KeyVaultGetKeyInfoRequest|Azure Key Vault에서 Azure Information Protection 테넌트 키에 대해 사용되도록 지정된 키가 액세스 가능하며 이미 사용되지 않는지 확인하기 위해 호출합니다.|
 |KeyVaultSignDigest|서명 용도로 Azure 주요 자격 증명 모음의 고객 관리 키(BYOK)를 사용할 때 호출합니다. 대개 AcquireLicence(또는 FECreateEndUserLicenseV1), Certify 및 GetClientLicensorCert(또는 FECreatePublishingLicenseV1)당 한 번씩만 호출합니다.|
 |KMSPDecrypt|클라이언트가 RMS로 보호된 콘텐츠의 암호 해독을 시도합니다. 레거시 고객 관리 테넌트 키(BYOK)에 대해서만 적용할 수 있습니다.|
 |KMSPSignDigest|서명 용도로 레거시 고객 관리 키(BYOK)를 사용할 때 호출합니다. 대개 AcquireLicence(또는 FECreateEndUserLicenseV1), Certify 및 GetClientLicensorCert(또는 FECreatePublishingLicenseV1)당 한 번씩만 호출합니다.|
@@ -207,15 +207,15 @@ Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에
 |SearchUsers |테넌트의 모든 사용자를 검색하도록 문서 추적 사이트에서 호출합니다.|
 |ServerCertify|RMS 사용 클라이언트(예: SharePoint)에서 서버를 인증하도록 호출합니다.|
 |SetUsageLogFeatureState|사용 현황 로깅을 사용하도록 호출합니다.|
-|SetUsageLogStorageAccount|Azure RMS 로그의 위치를 지정하도록 호출합니다.|
+|SetUsageLogStorageAccount|Azure Rights Management 서비스 로그의 위치를 지정하도록 호출합니다.|
 |UpdateNotificationSettings|단일 문서에 대한 알림 설정을 변경하도록 문서 추적 사이트에서 호출합니다.|
 |UpdateTemplate|Azure 클래식 포털에서 기존 템플릿을 업데이트하도록 호출합니다.|
 
 
 ## Windows PowerShell 참조
-2016년 2월부터 Azure RMS 사용 현황 로깅에 필요한 Windows PowerShell cmdlet은 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)뿐입니다. 
+2016년 2월부터 Azure Rights Management 사용 현황 로깅에 필요한 Windows PowerShell cmdlet은 [Get-AadrmUserLog](https://msdn.microsoft.com/library/azure/mt653941.aspx)뿐입니다. 
 
-이러한 변경 전에는 Azure RMS 사용 현황 로그에 다음 cmdlet이 필요했으며,현재는 사용되지 않습니다.  
+이러한 변경 전에는 Azure Rights Management 사용 현황 로그에 다음 cmdlet이 필요했으며,현재는 사용되지 않습니다.  
 
 -   [Disable-AadrmUsageLogFeature](https://msdn.microsoft.com/library/azure/dn629404.aspx)
 
@@ -231,15 +231,15 @@ Azure 권한 관리에는 다양한 요청 형식이 있습니다. 아래 표에
 
 -   [Set-AadrmUsageLogStorageAccount](https://msdn.microsoft.com/library/azure/dn629426.aspx)
 
-Azure RMS 로깅 변경 전에 Azure 저장소에 로그가 있는 경우 전과 마찬가지로 Get-AadrmUsageLog 및 Get-AadrmUsageLogLastCounterValue를 사용하여 이러한 기존 cmdlet과 함께 로그를 다운로드할 수 있습니다. 하지만 새 사용 현황 로그 모두 새 Azure RMS 저장소에 기록되므로 Get-AadrmUserLog와 함께 다운로드해야 합니다.
+Azure Rights Management 로깅 변경 전에 Azure 저장소에 로그가 있는 경우 전과 마찬가지로 Get-AadrmUsageLog 및 Get-AadrmUsageLogLastCounterValue를 사용하여 이러한 기존 cmdlet과 함께 로그를 다운로드할 수 있습니다. 하지만 새 사용 현황 로그 모두 새 Azure RMS 저장소에 기록되므로 Get-AadrmUserLog와 함께 다운로드해야 합니다.
 
-Azure 권한 관리용 Windows PowerShell 사용에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](administer-powershell.md)를 참조하세요.
-
-
+Azure Rights Management 서비스용 Windows PowerShell 사용에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리](administer-powershell.md)를 참조하세요.
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+<!--HONumber=Sep16_HO4-->
 
 

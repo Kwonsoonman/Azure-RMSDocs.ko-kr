@@ -4,18 +4,18 @@ description: "RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 또는 Azur
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: ba0b6c3835bb5e1c67f1df3095e6e5f1f474b977
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 5972599c568091d39e8a6974648022c4835af1bb
 
 
 ---
@@ -59,6 +59,6 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

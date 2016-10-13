@@ -1,19 +1,19 @@
 ---
-title: "Rights Management 공유 응용 프로그램 기술 개요 | Azure RMS"
-description: "Microsoft Rights Management 공유 응용 프로그램은 선택적으로 다운로드 가능하며 다음 기능을 제공하는 Microsoft Windows 및 기타 플랫폼용 응용 프로그램입니다."
+title: "Rights Management 공유 응용 프로그램 기술 개요 | Azure Information Protection"
+description: "Windows용 RMS 공유 응용 프로그램 배포를 담당하는 기업 네트워크의 관리자와 관련된 기술 세부 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 07/15/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: d5e1c7969d2125c4f66d6dcea3bde0c81a7de1f3
+ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
+ms.openlocfilehash: 3b4cd04732e38da31bf31d899993c912694e3ee8
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: d5e1c7969d2125c4f66d6dcea3bde0c81a7de1f3
 
 # Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 
 Microsoft Rights Management 공유 응용 프로그램은 선택적으로 다운로드 가능하며 다음 기능을 제공하는 Microsoft Windows 및 기타 플랫폼용 응용 프로그램입니다.
@@ -36,9 +36,9 @@ Microsoft Rights Management 공유 응용 프로그램은 선택적으로 다운
 
 -   FCI(파일 분류 인프라) 및 지원되는 PDF 작성 도구를 사용하여 보호된 PDF 파일과의 완벽한 상호 운용성을 제공합니다.
 
-Microsoft Rights Management 공유 응용 프로그램은 새로운 [AD RMS 클라이언트 2.1 런타임](http://www.microsoft.com/download/details.aspx?id=38396)을 사용합니다. Microsoft Rights Management 공유 응용 프로그램은 AD RMS 2.1의 기능을 사용하여 최종 사용자에게 단순한 보호 및 사용 환경을 제공합니다.
+Microsoft Rights Management 공유 응용 프로그램은 [AD RMS 클라이언트 2.1 런타임](http://www.microsoft.com/download/details.aspx?id=38396)을 사용합니다. Microsoft Rights Management 공유 응용 프로그램은 AD RMS 2.1의 기능을 사용하여 최종 사용자에게 단순한 보호 및 사용 환경을 제공합니다.
 
-RMS의 2013년 10월 릴리스를 설치하면 Office 2010을 사용해 문서를 기본적으로 보호할 수 있으며 다른 회사 직원에게 문서를 보낼 수 있습니다. 문서를 받은 사용자는 Azure RMS를 통해 문서를 사용할 수 있습니다. 또한 이 릴리스에서는 암호화 모드 2에서 AD RMS를 사용하는 경우 개별 사용자에 대해 RMS를 사용할 수 있으며 Azure RMS를 사용하는 다른 회사 직원의 콘텐츠도 사용할 수 있습니다. 암호화 모드 2에 대한 자세한 내용은 [AD RMS 암호화 모드](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)를 참조하세요.
+RMS의 2013년 10월 릴리스를 설치하면 Office 2010을 사용해 문서를 기본적으로 보호할 수 있으며 다른 회사 직원에게 문서를 보낼 수 있습니다. 문서를 받은 사용자는 Azure Information Protection의 Azure Rights Management 서비스를 통해 문서를 사용할 수 있습니다. 또한 이 릴리스에서는 암호화 모드 2에서 AD RMS를 사용하는 경우 개별 사용자에 대해 RMS를 사용할 수 있으며 Azure Rights Management 서비스를 사용하는 다른 회사 직원의 콘텐츠도 사용할 수 있습니다. 암호화 모드 2에 대한 자세한 내용은 [AD RMS 암호화 모드](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)를 참조하세요.
 
 배포 정보는 [Microsoft Rights Management 공유 응용 프로그램 자동 배포](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)를 참조하세요.
 
@@ -47,7 +47,7 @@ Microsoft Rights Management 공유 응용 프로그램은 다음 표에서 설�
 
 |보호 유형|네이티브|제네릭|
 |----------------------|----------|-----------|
-|설명|텍스트, 이미지, Microsoft Office(Word, Excel, PowerPoint) 파일, .pdf 파일 및 AD RMS를 지원하는 기타 응용 프로그램 파일 형식의 경우 기본 보호는 권한 적용 및 암호화를 모두 포함하는 강력한 보호 수준을 제공합니다.|기타 모든 응용 프로그램 및 파일 형식의 경우 일반 보호는 사용자가 파일을 열 권한이 있는지를 확인하는 인증 및 .pfile 파일 형식을 사용하는 파일 캡슐화 기능이 모두 포함된 보호 수준을 제공합니다.|
+|설명|텍스트, 이미지, Microsoft Office(Word, Excel, PowerPoint) 파일, .pdf 파일 및 Rights Management 서비스를 지원하는 기타 응용 프로그램 파일 형식의 경우 기본 보호는 권한 적용 및 암호화를 모두 포함하는 강력한 보호 수준을 제공합니다.|기타 모든 응용 프로그램 및 파일 형식의 경우 일반 보호는 사용자가 파일을 열 권한이 있는지를 확인하는 인증 및 .pfile 파일 형식을 사용하는 파일 캡슐화 기능이 모두 포함된 보호 수준을 제공합니다.|
 |보호|파일은 다음과 같은 방식으로 완벽하게 암호화되며 보호가 적용됩니다.<br /><br />- 보호된 콘텐츠를 렌더링하기 전에 메일을 통해 파일을 받았거나 파일 또는 공유 권한을 통해 파일 액세스 권한을 부여받은 사용자가 정상적으로 인증을 해야 합니다.<br /><br />- 또한 IP 뷰어(보호된 텍스트, 이미지 파일의 경우)나 연결된 응용 프로그램(지원되는 기타 모든 파일 형식의 경우)에서 콘텐츠를 렌더링할 때는 파일 보호 시 콘텐츠 소유자가 설정한 사용 권한 및 정책이 완전하게 적용됩니다.|파일 보호는 다음과 같은 방식으로 적용됩니다.<br /><br />- 보호된 콘텐츠를 렌더링하기 전에 파일을 열 권한이 있으며 파일 액세스 권한을 부여받은 사용자가 정상적으로 인증해야 합니다. 권한 부여가 실패하면 파일이 열리지 않습니다.<br /><br />- 콘텐츠 소유자가 설정한 사용 권한 및 정책이 표시되어 해당하는 사용 정책의 권한 있는 사용자를 알려 줍니다.<br /><br />- 지원되지 않는 응용 프로그램의 경우 파일을 열고 액세스하는 권한 있는 사용자의 감사 로깅이 수행되기는 하지만 사용 권한은 적용되지 않습니다.|
 |파일 형식에 대한 기본값|이 보호 수준은 다음 파일 형식에 대한 기본 보호 수준입니다.<br /><br />- 텍스트 및 이미지 파일<br /><br />- Microsoft Office(Word, Excel, PowerPoint) 파일<br /><br />- Portable Document Format(.pdf)<br /><br />자세한 내용은 [지원되는 파일 형식 및 파일 이름 확장명](#supported-file-types-and-file-name-extensions) 섹션을 참조하세요.|이 수준은 전체 보호를 통해 지원되지 않는 .vsdx, .rtf 등의 기타 모든 파일 형식에 대한 기본 보호 수준입니다.|
 RMS 공유 응용 프로그램이 적용하는 기본 보호 수준을 변경할 수 있습니다. 기본 수준을 일반 수준으로 변경하거나 그 반대로 변경할 수 있으며, RMS 공유 응용 프로그램이 보호를 적용하지 않도록 차단할 수도 있습니다. 자세한 내용은 이 문서에서 [파일의 기본 보호 수준 변경](#changing-the-default-protection-level-of-files) 섹션을 참조하세요.
@@ -80,7 +80,7 @@ RMS 공유 응용 프로그램이 적용하는 기본 보호 수준을 변경할
 |.jt|.pjt|
 ¹ PDF 렌더링 기능은 Foxit에서 제공합니다. Copyright © 2003–2014 by Foxit C또는p또는ation.
 
-다음 표에는 Microsoft Rights Management 공유 응용 프로그램이 Microsoft Office 2016, Office 2013 및 Office 2010에서 기본적으로 지원하는 파일 형식이 나와 있습니다. 이러한 파일의 경우에는 RMS를 통해 파일을 보호한 후에도 파일 이름 확장명이 동일하게 유지됩니다.
+다음 표에는 Microsoft Rights Management 공유 응용 프로그램이 Microsoft Office 2016, Office 2013 및 Office 2010에서 기본적으로 지원하는 파일 형식이 나와 있습니다. 이러한 파일의 경우에는 Rights Management 서비스를 통해 파일을 보호한 후에도 파일 이름 확장명이 동일하게 유지됩니다.
 
 |Office에서 지원하는 파일 형식|Office에서 지원하는 파일 형식|
 |----------------------------------|----------------------------------|
@@ -139,6 +139,6 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -1,28 +1,28 @@
 ---
-title: "시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환 | Azure RMS"
-description: "이 시나리오 및 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 임원이 메일과 첨부 파일을 서로 안전하게 교환할 수 있고 임원이 특별한 작업을 수행하지 않아도 정책에 따라 액세스가 임원으로 자동으로 제한되도록 합니다."
+title: "시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환 | Azure Information Protection"
+description: "이 시나리오 및 지원 사용자 문서에서는 Azure Rights Management 보호를 사용하여 임원이 메일과 첨부 파일을 서로 안전하게 교환할 수 있고 임원이 특별한 작업을 수행하지 않아도 정책에 따라 액세스가 임원으로 자동으로 제한되도록 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3b0b165f594da47c090f7822afed2a80541b71e8
-ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 8481c275609e74ff5e09a0397e0e3a0346aa4430
 
 
 ---
 
 # 시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-이 시나리오 및 지원 사용자 문서에서는 Azure 권한 관리를 사용하여 임원이 메일과 첨부 파일을 서로 안전하게 교환할 수 있고 임원이 특별한 작업을 수행하지 않아도 정책에 따라 액세스가 임원으로 자동으로 제한되도록 합니다. 메일과 모든 첨부 파일은 Azure 권한 관리에 의해 자동으로 보호됩니다.
+이 시나리오 및 지원 사용자 문서에서는 Azure Information Protection의 Azure Rights Management 기술을 사용하여 임원이 메일과 첨부 파일을 서로 안전하게 교환할 수 있고 임원이 특별한 작업을 수행하지 않아도 정책에 따라 액세스가 임원으로 자동으로 제한되도록 합니다. 메일과 모든 첨부 파일은 Azure 권한 관리에 의해 자동으로 보호됩니다.
 
 필요한 경우 임원이 다른 임원에게 보호되지 않는 메일을 보내야 하면(예: 다른 사용자에게 전달하기 전에 검토하기 위해) 지정할 수 있도록 메일 메시지 제목에 약어 DNP("보호 안 함")와 같은 규칙 예외를 추가할 수 있습니다.
 
@@ -44,11 +44,11 @@ ms.openlocfilehash: 511eb0b95039bb7ee1c4a4f06778a18c1cf6c542
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
 |---------------|--------------------------------|
-|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부<br /><br />- **Executives**라는 메일 사용이 가능한 그룹이 있고 모든 임원이 이 그룹의 구성원인지 여부<br /><br />- **RMS administrators**라는 메일 사용이 가능한 그룹이며, Azure RMS를 구성하는 모든 관리자가 이 그룹의 구성원임|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
-|Azure 권한 관리 테넌트 키가 Microsoft에서 관리되는지 여부(사용자는 BYOK를 사용하지 않음)|[Azure 권한 관리 테넌트 키 계획 및 구현](https://technet.microsoft.com/library/dn440580.aspx)|
-|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
-|다음 구성 중 하나:<br /><br />- Azure 권한 관리에 Exchange Online을 사용하도록 설정되어 있는지 여부<br /><br />- Exchange 온-프레미스에 대해 RMS 커넥터가 설치되고 구성되었는지 여부|Exchange Online의 경우: [Azure 권한 관리에 대해 응용 프로그램 구성](https://technet.microsoft.com/library/jj585031.aspx)에서 **Exchange Online: IRM 구성** 섹션을 참조하세요.<br /><br />Exchange 온-프레미스의 경우: [Azure 권한 관리 커넥터 배포](https://technet.microsoft.com/library/dn375964.aspx)|
-|다음에 설명하는 대로 사용자 지정 템플릿을 구성했는지 여부|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)|
+|Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부<br /><br />- **Executives**라는 메일 사용이 가능한 그룹이 있고 모든 임원이 이 그룹의 구성원인지 여부<br /><br />- **RMS administrators**라는 메일 사용이 가능한 그룹이며, Azure RMS를 구성하는 모든 관리자가 이 그룹의 구성원임|[Azure Information Protection 준비](../plan-design/prepare.md)|
+|Azure Information Protection 테넌트 키가 Microsoft에서 관리되는지 여부(사용자는 BYOK를 사용하지 않음)|[Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)|
+|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](../deploy-use/activate-service.md)|
+|다음 구성 중 하나:<br /><br />- Azure 권한 관리에 Exchange Online을 사용하도록 설정되어 있는지 여부<br /><br />- Exchange 온-프레미스에 대해 RMS 커넥터가 설치되고 구성되었는지 여부|Exchange Online의 경우: [Exchange Online: IRM 구성](../deploy-use/configure-office365.md#exchange-online-irm-configuration) 정보를 참조하세요.<br /><br />Exchange 온-프레미스의 경우: [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)|
+|다음에 설명하는 대로 사용자 지정 템플릿을 구성했는지 여부|[Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)|
 |이 문서의 뒷부분에서 설명하는 대로 IRM에 대한 전송 보호 규칙을 구성했는지 여부|Exchange Online의 경우: [Mail flow or transport rules](https://technet.microsoft.com/library/jj919238(v=exchg.150).aspx)(메일 흐름 또는 전송 규칙)<br /><br />Exchange 2013의 경우: [전송 보호 규칙 만들기](https://technet.microsoft.com/en-us/library/dd302432(v=exchg.150))<br /><br />Exchange 2010의 경우: [전송 보호 규칙 만들기](https://technet.microsoft.com/library/dd302432(v=exchg.141))|
 
 ### 임원용 사용자 지정 템플릿을 구성하려면
@@ -132,6 +132,6 @@ VanArsdel 임원이 아닌 다른 사용자가 해당 메일에 보내는 정보
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

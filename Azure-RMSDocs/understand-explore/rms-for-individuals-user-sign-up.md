@@ -1,26 +1,26 @@
 ---
-title: "개인용 RMS 등록 방법 | Azure RMS"
+title: "개인용 RMS 등록 방법 | Azure Information Protection"
 description: "이 무료 계정의 등록 지침과 등록 프로세스의 작동 방식 관련 기술 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/01/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bd53bde0bfa9b44203b9d2f0f429265a013476c
-ms.openlocfilehash: 25c2ddac40c9eff78101cfaf42d4398be4e8a5cc
+ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
+ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
 
 ---
 
 # 개인용 RMS 등록 방법
 
->*적용 대상: Azure 권한 관리*
+>*적용 대상: Azure Information Protection*
 
 이 무료 계정에 등록하려면 [Microsoft Azure Rights Management 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)를 방문하여 계정을 요청하고 회사 메일 주소를 제공합니다. 이 등록 페이지로 이동하는 가장 일반적인 방법은 보호되는 첨부 파일이 포함된 메일 메시지를 받았을 때입니다. 여기에는 등록 방법에 대한 지침이 포함되어 있습니다. Microsoft로부터 전자 메일을 답장을 받으면 세부 정보 입력을 통해 계정을 만들어 등록 프로세스를 완료합니다. 이 작업을 완료하면 다른 장치용 공유 응용 프로그램을 다운로드할 수 있는 페이지, 사용자 가이트에 대한 링크 및 Rights Management 보호를 기본적으로 지원하는 응용 프로그램의 최신 목록에 대한 링크가 표시됩니다. 
 
@@ -97,6 +97,6 @@ ms.openlocfilehash: 25c2ddac40c9eff78101cfaf42d4398be4e8a5cc
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

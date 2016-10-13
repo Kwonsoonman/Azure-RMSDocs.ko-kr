@@ -1,39 +1,39 @@
 ---
-title: "2단계&colon; 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션 | Azure RMS"
-description: "이 지침은 AD RMS에서 Azure 권한 관리로의 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure 주요 자격 증명 모음의 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다."
+title: "2단계&colon; 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션 | Azure Information Protection"
+description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: e470b5b5542536e812749f77353aaf34922d4985
+ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
+ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
 
 
 ---
 
 # 2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection*
 
 
-이 지침은 [AD RMS에서 Azure 권한 관리로의 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure 주요 자격 증명 모음의 HSM 보호된 테넌트 키를 사용하여 Azure 권한 관리로 마이그레이션하려는 경우에만 적용됩니다. 
+[AD RMS에서 Azure Information Protection으로 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다. 
 
 선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
 
-다음은 Azure RMS에 AD RMS 구성을 가져오기 위한 네 부분으로 구성된 절차로, 이 작업을 수행하면 Azure 주요 자격 증명 모음에서 사용자가 관리하는(BYOK) Azure RMS 테넌트 키를 만들 수 있습니다.
+다음은 Azure Information Protection에 AD RMS 구성을 가져오기 위한 네 부분으로 구성된 절차로, 이 작업을 수행하면 Azure Key Vault에서 사용자가 관리하는(BYOK) Azure Information Protection 테넌트 키를 만들 수 있습니다.
 
-먼저 AD RMS 구성 데이터에서 SLC(서버 사용 허가자 인증서) 키를 추출하여 온-프레미스 Thales HSM에 전송하고, HSM 키를 패키지하고 Azure 주요 자격 증명 모음으로 전송한 다음 Azure RMS를 주요 자격 증명 모음에 액세스할 수 있도록 권한을 부여한 다음 구성 데이터를 가져와야 합니다.
+먼저 AD RMS 구성 데이터에서 SLC(서버 사용 허가자 인증서) 키를 추출하여 온-프레미스 Thales HSM에 전송하고, HSM 키를 패키지하고 Azure Key Vault로 전송한 다음 Azure Information Protection의 Azure Rights Management에서 주요 자격 증명 모음에 액세스할 수 있도록 권한을 부여한 다음 구성 데이터를 가져와야 합니다.
 
-Azure RMS 테넌트 키는 Azure 주요 자격 증명 모음에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure 키 RMS 외에도 Azure 주요 자격 증명 모음에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure 주요 자격 증명 모음을 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
+Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure Information Protection 외에도 Azure Key Vault에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure 주요 자격 증명 모음을 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
 
-시작하기 전에 조직에 Azure 주요 자격 증명 모음에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. 필수는 아니지만, Azure RMS에 대한 전용 주요 자격 증명 모음이 있으면 좋습니다. 이 주요 자격 증명 모음은 Azure RMS에서 액세스할 수 있도록 구성되므로 이 주요 자격 증명 모음이 저장하는 키는 Azure RMS 키로 제한됩니다.
+시작하기 전에 조직에 Azure 주요 자격 증명 모음에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. Azure Information Protection 전용의 키 자격 증명 모음은 필수는 아니지만 갖고 있으면 좋습니다. 이 키 자격 증명 모음은 Azure Information Protection의 Azure Rights Management 서비스에서 액세스하도록 구성되어, Azure Information Protection 키만 이 키 자격 증명 모음에 저장될 수 있게 합니다.
 
 
 > [!TIP]
@@ -50,11 +50,11 @@ Azure RMS 테넌트 키는 Azure 주요 자격 증명 모음에 저장되고 관
 
     내보낸 구성 데이터(.xml) 파일에 테넌트 키가 이미 있으므로, 테넌트 키를 생성하는 단계는 수행하지 않도록 합니다. 대신 도구를 실행하여 파일에서 이 키를 추출한 후 온-프레미스 HSM으로 가져옵니다. 도구를 실행하면 파일 두 개가 만들어집니다.
 
-    - Azure RMS 테넌트로 가져올 준비가 되는, 키가 없는 새 구성 데이터 파일
+    - Azure Information Protection 테넌트로 가져올 준비가 되는, 키가 없는 새 구성 데이터 파일
 
     - 온-프레미스 HSM으로 가져올 준비가 되는, 키가 있는 PEM 파일(키 컨테이너)
 
-2. Azure RMS 관리자 또는 Azure 주요 자격 증명 모음 관리자: 연결이 끊어진 워크스테이션에서 [Azure RMS 마이그레이션 도구 키트](https://go.microsoft.com/fwlink/?LinkId=524619)의 TpdUtil 도구를 실행합니다. 예를 들어 ContosoTPD.xml이라는 구성 데이터 파일을 복사할 E 드라이브에 도구가 설치되어 있는 경우:
+2. Azure Information Protection 관리자 또는 Azure Key Vault 관리자: 연결이 끊어진 워크스테이션에서 [Azure RMS 마이그레이션 도구 키트](https://go.microsoft.com/fwlink/?LinkId=524619)의 TpdUtil 도구를 실행합니다. 예를 들어 ContosoTPD.xml이라는 구성 데이터 파일을 복사할 E 드라이브에 도구가 설치되어 있는 경우:
 
     ```
         E:\TpdUtil.exe /tpd:ContosoTPD.xml /otpd:ContosoTPD.xml /opem:ContosoTPD.pem
@@ -122,15 +122,15 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 
     Azure 주요 자격 증명 모음으로 키를 전송하기 전에 권한이 낮춰진 키 복사본을 만들고(4.1단계) 키를 암호화할 때(4.3단계) KeyTransferRemote.exe 유틸리티가 **Result: SUCCESS**를 반환하는지 확인합니다.
 
-    키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**과 같이 표시됩니다. Azure RMS 관리자가 Azure RMS에 테넌트 키에 대해 이 키를 사용하도록 알리는 데 필요하므로 이 URL을 기록해 둡니다.
+    키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**과 같이 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Information Protection의 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
 
     이제 HSM 키를 Azure 주요 자격 증명 모음으로 전송했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
 
-## 3부: 구성 데이터를 Azure RMS로 가져오기
+## 3부: 구성 데이터를 Azure Information Protection으로 가져오기
 
-1.  Azure RMS 관리자: 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 TpdUtil 도구를 실행한 후 SLC 키가 제거된 새 구성 데이터 파일(.xml)을 복사합니다.
+1.  Azure Information Protection 관리자: 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 TpdUtil 도구를 실행한 후 SLC 키가 제거된 새 구성 데이터 파일(.xml)을 복사합니다.
 
-2. [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet을 사용하여 첫 번째 .xml 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 이러한 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure RMS에서 콘텐츠를 보호하는 데 사용할 HSM 키에 해당하는 파일을 선택합니다.
+2. [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet을 사용하여 첫 번째 .xml 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 이러한 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure Information Protection에서 콘텐츠를 보호하는 데 사용할 HSM 키에 해당하는 파일을 선택합니다.
 
     이 cmdlet을 실행하려면 이전 단계에서 식별된 키에 대한 URL이 필요합니다.
 
@@ -146,23 +146,23 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 
 
 
-3.  [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet를 사용하여 Azure RMS 서비스에서 연결을 끊습니다.
+3.  [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
 
     ```
     Disconnect-AadrmService
     ```
 
     > [!NOTE]
-    > Azure 주요 자격 증명 모음에서 Azure RMS 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet을 사용합니다.
+    > Azure Key Vault에서 Azure Information Protection 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet을 사용합니다.
 
 
-이제 [3단계. RMS 테넌트 활성화](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant)로 이동할 준비가 되었습니다.
-
-
-
+이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+
+
+<!--HONumber=Sep16_HO4-->
 
 

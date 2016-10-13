@@ -1,28 +1,28 @@
 ---
-title: "시나리오 - 파일 서버 공유에 있는 파일 보호 | Azure RMS"
-description: "이 시나리오 및 지원 사용자 문서에서는 복사하여 IT 부서가 제어하지 않는 저장소에 저장되었거나 다른 사용자에게 메일로 전송된 경우에도 Azure 권한 관리를 통해 파일 서버에서 보호하려는 모든 파일을 대량으로 보호하여 조직의 직원만 액세스할 수 있도록 합니다."
+title: "시나리오 - 파일 서버 공유에 있는 파일 보호 | Azure Information Protection"
+description: "이 시나리오 및 지원 사용자 문서에서는 복사하여 IT 부서가 제어하지 않는 저장소에 저장되었거나 다른 사용자에게 메일로 전송된 경우에도 Azure Rights Management 보호를 통해 파일 서버에서 보호하려는 모든 파일을 대량으로 보호하여 조직의 직원만 액세스할 수 있도록 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 024a29d7c7db2e4c0578a95c93e22f8e7a5b173e
-ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
+ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
+ms.openlocfilehash: 136cabfad5914fadf183e308c51b77e20f98ca4f
 
 
 ---
 
 # 시나리오 - 파일 서버 공유에 있는 파일 보호
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-이 시나리오 및 지원 사용자 문서에서는 복사하여 IT 부서가 제어하지 않는 저장소에 저장되었거나 다른 사용자에게 메일로 전송된 경우에도 Azure 권한 관리를 통해 파일 서버에서 보호하려는 모든 파일을 대량으로 보호하여 조직의 직원만 액세스할 수 있도록 합니다.
+이 시나리오 및 지원 사용자 문서에서는 복사하여 IT 부서가 제어하지 않는 저장소에 저장되었거나 다른 사용자에게 메일로 전송된 경우에도 Azure Information Protection의 Azure Rights Management 기술을 통해 파일 서버에서 보호하려는 모든 파일을 대량으로 보호하여 조직의 직원만 액세스할 수 있도록 합니다.
 
 이러한 지침은 모든 사용 권한을 가진 모든 직원으로 액세스를 제한하는 기본 템플릿 중 하나를 사용합니다. 그러나 필요한 경우 기본 템플릿을 사용하는 대신 사용자 지정 템플릿을 구성하여 액세스 및 사용 권한을 더욱 제한할 수 있습니다.
 
@@ -44,10 +44,10 @@ ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
 |---------------|--------------------------------|
-|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
-|온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 전자 메일 주소를 포함). 이렇게 하려면 모든 사용자가 파일을 FCI 및 Azure 권한 관리로 보호한 후에 해당 파일에 액세스해야 할 수도 있습니다.|[Azure 권한 관리 준비](https://technet.microsoft.com/library/jj585029.aspx)|
-|다음 중 하나<br /><br />- 모든 사용자에 대해 기본 템플릿을 사용하려는 경우: 기본 &lt;조직 이름&gt; - 기밀을 보관하지 않았는지 여부<br /><br />- 특정 사용자에 대해 사용자 지정 템플릿을 사용하려는 경우: 이 사용자 지정 템플릿을 만들고 게시했는지 여부|[Azure 권한 관리용 사용자 지정 템플릿 구성](https://technet.microsoft.com/library/dn642472.aspx)|
-|Windows를 실행하는 사용자의 컴퓨터에 Rights Management 공유 응용 프로그램이 배포되었는지 여부|[Microsoft Rights Management 공유 응용 프로그램 자동 배포](https://technet.microsoft.com/library/dn339003%28v=ws.10%29.aspx)|
+|Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](../deploy-use/activate-service.md)|
+|온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 전자 메일 주소를 포함). 이렇게 하려면 모든 사용자가 파일을 FCI 및 Azure 권한 관리로 보호한 후에 해당 파일에 액세스해야 할 수도 있습니다.|[Azure Information Protection 준비](../plan-design/prepare.md)|
+|다음 중 하나<br /><br />- 모든 사용자에 대해 기본 템플릿을 사용하려는 경우: 기본 &lt;조직 이름&gt; - 기밀을 보관하지 않았는지 여부<br /><br />- 특정 사용자에 대해 사용자 지정 템플릿을 사용하려는 경우: 이 사용자 지정 템플릿을 만들고 게시했는지 여부|[Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)|
+|Windows를 실행하는 사용자의 컴퓨터에 Rights Management 공유 응용 프로그램이 배포되었는지 여부|[Microsoft Rights Management 공유 응용 프로그램 자동 배포](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |RMS 보호 도구를 다운로드하고 Azure RMS에 대한 필수 조건을 구성했는지 여부|도구 다운로드 지침과 필수 조건: [RMS 보호 Cmdlet](https://msdn.microsoft.com/library/mt433195.aspx)<br /><br />Azure RMS에 대해 서비스 보안 주체 계정과 같은 추가 필수 조건을 구성하려는 경우: [about_RMSProtection_AzureRMS](https://msdn.microsoft.com/library/mt433202.aspx)|
 
 ### 파일 분류 인프라와 함께 Azure RMS 및 파일 서버 리소스 관리자를 사용하여 모든 파일을 보호하도록 파일 서버 구성
@@ -68,7 +68,7 @@ ms.openlocfilehash: adc8ebd3063d8ac4b3710c517f0177fc25a16845
     ```
     모든 사용 권한을 가진 모든 직원으로 액세스를 제한하는 기본 템플릿을 사용하려면 템플릿 이름 **&lt;조직 이름&gt; - 기밀**을 찾습니다. 예를 들어 **VanArsdel, Ltd - 기밀**입니다.
 
-4.  [Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)에서 단계별 지침을 따르세요.
+4.  [Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호](../rms-client/configure-fci.md)에서 단계별 지침을 따르세요.
 
     이러한 지침에는 파일 서버 리소스 관리자에서 사용자 지정 실행 파일로 실행하도록 지정하는 Windows PowerShell 스크립트가 포함됩니다. Azure 권한 관리를 통해 파일이 보호되는지 확인하는 방법도 포함됩니다.
 
@@ -117,7 +117,7 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
 
 -   추가 정보를 확인하려면 다음 항목을 참조하세요.
 
-    -   [보호된 파일 보기 및 사용](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [보호된 파일 보기 및 사용](../rms-client/sharing-app-view-use-files.md)
 
 -   지원 센터에 연락하려면 다음 정보를 참조하세요.
 
@@ -148,13 +148,13 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
 
 -   추가 정보를 확인하려면 다음 항목을 참조하세요.
 
-    -   [보호된 파일 보기 및 사용](https://technet.microsoft.com/library/dn574741%28v=ws.10%29)
+    -   [보호된 파일 보기 및 사용](../rms-client/sharing-app-view-use-files.md)
 
 -   지원 센터(helpdesk@vanarsdelltd.com)에 문의하세요.
 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

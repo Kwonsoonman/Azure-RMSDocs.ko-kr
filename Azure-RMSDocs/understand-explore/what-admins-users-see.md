@@ -1,19 +1,19 @@
 ---
-title: "관리자와 사용자에게 표시되는 내용 | Azure RMS"
-description: "이 문서에서는 관리자와 사용자에게 표시되는 내용과 Azure 권한 관리(Azure RMS)를 사용하여 중요한 정보나 기밀 정보를 보호할 수 있는 방법에 대한 몇 가지 일반적인 예를 보여 줍니다."
+title: "관리자와 사용자에게 표시되는 내용 | Azure Information Protection"
+description: "관리자와 사용자가 Azure RMS(Azure Rights Management) 기술을 표시하여 중요한 정보 또는 기밀 정보를 보호하는 데 사용할 수 있는 방법의 몇 가지 일반적인 예제를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/28/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 4a2f473c657b7fe27e2a6d42000fd540c49e8895
+ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
+ms.openlocfilehash: d1f7b24861848f536a80a8b8889a44b41049e40b
 
 
 ---
@@ -21,7 +21,7 @@ ms.openlocfilehash: 4a2f473c657b7fe27e2a6d42000fd540c49e8895
 
 # Azure RMS 작동 중: 관리자와 사용자에게 표시되는 결과
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
 이 문서에서는 관리자와 사용자에게 표시되는 내용과 Azure 권한 관리(Azure RMS)를 사용하여 중요한 정보나 기밀 정보를 보호할 수 있는 방법에 대한 몇 가지 일반적인 예를 보여 줍니다.
 
@@ -241,6 +241,6 @@ Bob이 첨부 파일과 함께 이 전자 메일을 전달하거나 다른 사�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

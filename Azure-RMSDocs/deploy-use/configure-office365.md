@@ -1,40 +1,40 @@
 ---
-title: "Office 365&colon; 클라이언트 및 온라인 서비스 구성 | Azure RMS"
-description: "관리자가 Azure RMS(Azure Rights Management)에서 작동하도록 Office 365를 구성하는 방법 및 해당 지침을 제공합니다."
+title: "Office 365&colon; 클라이언트 및 온라인 서비스 구성 | Azure Information Protection"
+description: "관리자가 Azure Information Protection의 Azure Rights Management 서비스에서 작동하도록 Office 365를 구성하는 방법 및 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/20/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 18498a6d1edac11b20842b0cca0c4559909d681e
-ms.openlocfilehash: e8e2abe6006f40f5c2e34ef0d4ac3f1ccaf66516
+ms.sourcegitcommit: d07f981456f5f642642f4bcc748ad56b630daf93
+ms.openlocfilehash: b2baad6a8ed383903883f33eedc56a8cebe019d3
 
 
 ---
 
 # Office 365: 클라이언트 및 온라인 서비스 구성
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
-Office 365는 기본적으로 Azure RMS를 지원하므로 Word, Excel, PowerPoint, Outlook 및 Outlook Web App과 같은 응용 프로그램에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 사용자는 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 Office 응용 프로그램에 로그인하기만 하면 되며, 로그인하면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
+Office 365는 기본적으로 Azure Information Protection의 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 Outlook Web App과 같은 응용 프로그램에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 사용자는 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 Office 응용 프로그램에 로그인하기만 하면 되며, 로그인하면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
 
 그러나 사용자가 Office 추가 기능의 이점을 얻을 수 있도록 권한 관리 공유 응용 프로그램으로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성](configure-sharing-app.md)을 참조하세요.
 
 ## Exchange Online: IRM 구성
-Azure RMS를 지원하도록 Exchange Online을 구성하려면 Exchange Online에 대해 IRM(정보 권한 관리) 서비스를 구성해야 합니다. 이렇게 하려면 Windows PowerShell을 사용하고(별도 모듈을 설치할 필요 없음) [Exchange Online용 PowerShell 명령](https://technet.microsoft.com/library/jj200677.aspx)을 실행합니다.
+Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성하려면 Exchange Online에 대해 IRM(정보 권한 관리) 서비스를 구성해야 합니다. 이렇게 하려면 Windows PowerShell을 사용하고(별도 모듈을 설치할 필요 없음) [Exchange Online용 PowerShell 명령](https://technet.microsoft.com/library/jj200677.aspx)을 실행합니다.
 
 > [!NOTE]
-> 현재 Azure RMS에 대해 Microsoft에서 관리하는 테넌트 키의 기본 구성이 아니라 고객이 관리하는 테넌트 키(BYOK)를 사용하는 경우 Azure RMS를 지원하도록 Exchange Online을 구성할 수 없습니다. 자세한 내용은 [BYOK 가격 및 제한 사항](../plan-design/byok-price-restrictions.md)을 참조하세요.
+> 현재 Azure Information Protection에 대해 Microsoft에서 관리하는 테넌트 키의 기본 구성이 아니라 고객이 관리하는 테넌트 키(BYOK)를 사용하는 경우 Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성할 수 없습니다. 자세한 내용은 [BYOK 가격 및 제한 사항](../plan-design/byok-price-restrictions.md)을 참조하세요.
 >
-> Azure RMS가 BYOK를 사용하는 경우 Exchange Online을 구성하려고 하면 키를 가져오는 명령(다음 절차의 5단계)이 실패하고 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]** 오류 메시지가 표시됩니다.
+> Azure Rights Management 서비스가 BYOK를 사용하는 경우 Exchange Online을 구성하려고 하면 키를 가져오는 명령(다음 절차의 5단계)이 실패하고 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]** 오류 메시지가 표시됩니다.
 
-다음 단계에서는 Exchange Online에서 Azure RMS를 사용하도록 하기 위해 실행하는 일반적인 명령 집합을 제공합니다.
+다음 단계에서는 Exchange Online에서 Azure Rights Management 서비스를 사용하도록 하기 위해 실행하는 일반적인 명령 집합을 제공합니다.
 
 1.  컴퓨터에서 Exchange Online에 대해 Windows PowerShell을 처음 사용하는 경우에는 서명된 스크립트를 실행하도록 Windows PowerShell을 구성해야 합니다. **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell 세션을 시작한 후 다음을 입력합니다.
 
@@ -61,7 +61,7 @@ Azure RMS를 지원하도록 Exchange Online을 구성하려면 Exchange Online�
     Import-PSSession $Session
     ```
 
-4.  조직의 테넌트가 생성된 위치에 따라 Azure RMS 테넌트 키의 위치를 지정합니다.
+4.  조직의 테넌트가 생성된 위치에 따라 Azure Information Protection 테넌트 키의 위치를 지정합니다.
 
     북아메리카의 경우:
 
@@ -89,14 +89,14 @@ Azure RMS를 지원하도록 Exchange Online을 구성하려면 Exchange Online�
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
-5.  TPD(신뢰할 수 있는 게시 도메인)의 형태로 Azure RMS에서 Exchange Online으로 구성 데이터를 가져옵니다. 여기에는 Azure RMS 테넌트 키와 Azure RMS 템플릿이 포함됩니다.
+5.  TPD(트러스트된 게시 도메인)의 형태로 Azure Rights Management 서비스에서 Exchange Online으로 구성 데이터를 가져옵니다. 여기에는 Azure Information Protection 테넌트 키와 Azure Rights Management 템플릿이 포함됩니다.
 
     ```
     Import-RMSTrustedPublishingDomain -RMSOnline -name "RMS Online"
     ```
-    이 명령에서는 Exchange Online의 Azure RMS에 대한 TPD의 기본 이름으로 **RMS 온라인** 의 이름을 사용했습니다. TPD를 가져오면 Exchange Online에서 **RMS Online - 1**로 이름이 지정됩니다.
+    이 명령에서는 Exchange Online의 Azure Rights Management에 대한 TPD의 기본 이름으로 **RMS 온라인**을 사용했습니다. TPD를 가져오면 Exchange Online에서 **RMS Online - 1**로 이름이 지정됩니다.
 
-6.  Exchange Online에서 IRM 기능을 사용할 수 있도록 Azure RMS 기능을 사용하도록 설정합니다.
+6.  Exchange Online에서 IRM 기능을 사용할 수 있도록 Azure Rights Management 기능을 사용하도록 설정합니다.
 
     ```
     Set-IRMConfiguration -InternalLicensingEnabled $true
@@ -118,10 +118,10 @@ Azure RMS를 지원하도록 Exchange Online을 구성하려면 Exchange Online�
     Remove-PSSession $Session
     ```
 
-이제 사용자는 Azure RMS를 사용하여 자신의 전자 메일 메시지를 보호할 수 있습니다. 예를 들어 Outlook Web App의 확장된 메뉴( **...** )에서**사용 권한 설정**을 선택한 다음 **전달 금지** 를 선택하거나 전자 메일 메시지 및 첨부 파일에 정보 보호를 적용할 사용 가능한 템플릿 중 하나를 선택합니다. 그러나 Outlook Web App은 하루 동안 UI를 캐시하므로, 이러한 구성 명령을 실행하고 하루 동안 기다렸다가 전자 메일 메시지에 정보 보호를 적용합니다. 새 구성을 반영하도록 UI가 업데이트되기 전에는 **사용 권한 설정** 메뉴의 옵션이 표시되지 않습니다.
+이제 사용자는 Azure Rights Management 서비스를 사용하여 자신의 전자 메일 메시지를 보호할 수 있습니다. 예를 들어 Outlook Web App의 확장된 메뉴( **...** )에서**사용 권한 설정**을 선택한 다음 **전달 금지** 를 선택하거나 전자 메일 메시지 및 첨부 파일에 정보 보호를 적용할 사용 가능한 템플릿 중 하나를 선택합니다. 그러나 Outlook Web App은 하루 동안 UI를 캐시하므로, 이러한 구성 명령을 실행하고 하루 동안 기다렸다가 전자 메일 메시지에 정보 보호를 적용합니다. 새 구성을 반영하도록 UI가 업데이트되기 전에는 **사용 권한 설정** 메뉴의 옵션이 표시되지 않습니다.
 
 > [!IMPORTANT]
-> Azure RMS용 [사용자 지정 템플릿](configure-custom-templates.md)을 새로 만들거나 템플릿을 업데이트하는 경우 매번 다음 Exchange Online PowerShell 명령을 실행(필요한 경우 2-3단계 먼저 실행)하여 이러한 변경 내용을 Exchange Online과 동기화해야 합니다. `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
+> Azure Rights Management용 [사용자 지정 템플릿](configure-custom-templates.md)을 새로 만들거나 템플릿을 업데이트하는 경우 매번 다음 Exchange Online PowerShell 명령을 실행(필요한 경우 2-3단계 먼저 실행)하여 이러한 변경 내용을 Exchange Online과 동기화해야 합니다. `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
 
 Exchange 관리자는 이제 [전송 규칙](https://technet.microsoft.com/library/dd302432.aspx), [DLP(데이터 손실 방지) 정책](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) 및 [보호된 음성 메일](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)(통합 메시징)과 같이 정보 보호를 자동으로 적용하는 기능을 구성할 수 있습니다.
 
@@ -139,7 +139,7 @@ IRM 기능을 사용하도록 Exchange Online을 구성하는 방법에 대한 �
 메시지 암호화에 대한 자세한 내용은 Exchange 라이브러리의 [Office 365의 암호화](https://technet.microsoft.com/library/dn569286.aspx) 를 참조하세요.
 
 ## SharePoint Online 및 비즈니스용 OneDrive: IRM 구성
-Azure RMS를 지원하도록 SharePoint Online 및 비즈니스용 OneDrive를 구성하려면 먼저 SharePoint 관리 센터를 통해 SharePoint Online에 대해 IRM(정보 권한 관리) 서비스가 사용되도록 해야 합니다. 그러면 사이트 소유자는 SharePoint 목록 및 문서 라이브러리를 IRM으로 보호할 수 있으며, 사용자는 비즈니스용 OneDrive 라이브러리를 IRM으로 보호하여 해당 라이브러리에 저장된 문서와 다른 사람과 공유하는 문서가 Azure RMS를 통해 자동으로 보호되도록 할 수 있습니다.
+Azure Rights Management 서비스를 지원하도록 SharePoint Online 및 비즈니스용 OneDrive를 구성하려면 먼저 SharePoint 관리 센터를 통해 SharePoint Online에 대해 IRM(정보 권한 관리) 서비스가 사용되도록 해야 합니다. 그러면 사이트 소유자는 SharePoint 목록 및 문서 라이브러리를 IRM으로 보호할 수 있으며, 사용자는 비즈니스용 OneDrive 라이브러리를 IRM으로 보호하여 해당 라이브러리에 저장된 문서와 다른 사람과 공유하는 문서가 Azure Rights Management 서비스를 통해 자동으로 보호되도록 할 수 있습니다.
 
 SharePoint Online에 대한 IRM(정보 권한 관리) 서비스를 사용하도록 설정하려면 Office 웹 사이트의 다음 지침을 참조하세요.
 
@@ -1110,6 +1110,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

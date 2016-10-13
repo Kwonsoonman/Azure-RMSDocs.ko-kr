@@ -1,26 +1,26 @@
 ---
-title: "Azure 권한 관리 커넥터 설치 및 구성 | Azure RMS"
-description: "다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 설치 및 구성할 수 있습니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 1~4단계를 설명합니다."
+title: "Azure Rights Management 커넥터 설치 및 구성 | Azure Information Protection"
+description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 1~4단계를 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 26b043f1f9e7a1e0cd00c2f31c28f7d6685f0232
-ms.openlocfilehash: 9160188f6e905db7ef95365a0cc5cfbcb7522101
+ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
+ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 
 
 ---
 
 # Azure 권한 관리 커넥터 설치 및 구성
 
->*적용 대상: Azure 권한 관리, Office 365*
+>*적용 대상: Azure Information Protection, Office 365*
 
 다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 설치 및 구성할 수 있습니다. 이러한 절차는 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)의 1-4단계를 설명합니다.
 
@@ -240,6 +240,6 @@ RMS 커넥터 관리 도구를 설치하려면 다음 파일을 실행합니다.
 이제 RMS 커넥터를 설치 및 구성했으므로 커넥터를 사용하도록 온-프레미스 서버를 구성할 준비가 되었습니다. [Azure 권한 관리 커넥터에 대해 서버 구성](configure-servers-rms-connector.md)으로 이동합니다.
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

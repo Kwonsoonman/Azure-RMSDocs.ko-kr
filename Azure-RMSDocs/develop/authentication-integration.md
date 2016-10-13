@@ -4,18 +4,18 @@ description: "RMS 사용 응용 프로그램에 대한 사용자 인증의 기�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 07/07/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d2339ece646fc51410186d43facdea28ac8fdfe
-ms.openlocfilehash: 87ffcdaeaae80efa23c0ed7e7ce95ac7f63c62e0
+ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
+ms.openlocfilehash: 2f4e0d1990362ab50d90b1a31c3b5db45d2fcdd1
 
 
 ---
@@ -36,9 +36,9 @@ Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 
 ## 앱에 대한 사용자 인증 구현
 각 RMS API에는 사용자 인증을 사용하기 위해 구현해야 하는 콜백이 있습니다. 그러면 액세스 토큰을 제공하지 않거나, 액세스 토큰을 새로 고쳐야 하거나, 액세스 토큰이 만료된 경우 RMS SDK 4.2에서 인증 콜백 구현을 사용합니다.
 
-- Android - [AuthenticationRequestCallback](/rights-management/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 및 [AuthenticationCompletionCallback](/rights-management/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 인터페이스.
-- iOS / OS X -  [MSAuthenticationCallback](/rights-management/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 프로토콜.
--  Windows Phone / Window RT -  [IAuthenticationCallback](/rights-management/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 인터페이스.
+- Android - [AuthenticationRequestCallback](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 및 [AuthenticationCompletionCallback](/information-protection/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 인터페이스.
+- iOS / OS X -  [MSAuthenticationCallback](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 프로토콜.
+-  Windows Phone / Window RT -  [IAuthenticationCallback](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 인터페이스.
 - Linux -  [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 인터페이스.
 
 ### 인증에 사용할 라이브러리
@@ -274,6 +274,6 @@ Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

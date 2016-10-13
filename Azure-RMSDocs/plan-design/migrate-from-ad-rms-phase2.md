@@ -1,30 +1,30 @@
 ---
-title: "AD RMS에서 Azure 권한 관리로 마이그레이션 - 2단계 | Azure RMS"
-description: "AD RMS에서 Azure RMS(Azure Rights Management)로 마이그레이션하는 과정의 두 번째 단계로, AD RMS에서 Azure Rights Management로의 마이그레이션 5단계가 포함됩니다."
+title: "AD RMS에서 Azure Rights Management로 마이그레이션 - 2단계 | Azure Information Protection"
+description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 두 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 5단계가 포함됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2016
+ms.date: 09/25/2016
 ms.topic: article
 ms.prod: 
-ms.service: rights-management
+ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4184c8b78d8ca6beb88efad79e0372367c523f2f
-ms.openlocfilehash: 2d8abaec220074531724ce4e95b4aefe23d0b2d6
+ms.sourcegitcommit: 3f9a7ceee318fee5414e02af7927256e74800a16
+ms.openlocfilehash: 113636139f0ff6e47a5b5c0467dfe8616c641e04
 
 
 ---
 # 마이그레이션 2단계 - 클라이언트 쪽 구성
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
-AD RMS에서 Azure 권한 관리(Azure RMS)로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure 권한 관리로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 5단계를 설명합니다.
+AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 5단계를 설명합니다.
 
 
-## 5단계. Azure RMS를 사용하도록 클라이언트 다시 구성
+## 5단계. Azure Information Protection을 사용하도록 클라이언트 다시 구성
 Windows 클라이언트:
 
 1.  [마이그레이션 스크립트 다운로드](https://go.microsoft.com/fwlink/?LinkId=524619):
@@ -33,9 +33,9 @@ Windows 클라이언트:
 
     -   Redirect_OnPrem.cmd
 
-    이러한 스크립트는 AD RMS 보다는 Azure RMS 서비스를 사용하도록 Windows 컴퓨터에서 구성을 다시 설정합니다.
+    이러한 스크립트는 AD RMS 보다는 Azure Information Protection 서비스를 사용하도록 Windows 컴퓨터에서 구성을 다시 설정합니다.
 
-2.  리디렉션 스크립트(Redirect_OnPrem.cmd)의 지침에 따라 새 Azure RMS 테넌트를 가리키도록 스크립트를 수정합니다.
+2.  리디렉션 스크립트(Redirect_OnPrem.cmd)의 지침에 따라 새 Azure Information Protection 테넌트를 가리키도록 스크립트를 수정합니다.
 
     > [!IMPORTANT]
     > 지침에는 **adrms** 및 **adrms.contoso.com**의 예제 주소를 고유의 AD RMS 서버 주소로 바꾸는 것이 포함되어 있습니다. 이렇게 할 때에는 주소의 앞뒤에 추가 공백이 없도록 주의해야 합니다. 추가 공백이 있으면 마이그레이션 스크립트가 중단되어 문제의 근본 원인으로 확인하기가 매우 어렵습니다. 일부 편집 도구는 텍스트를 붙여넣은 후 자동으로 공백을 추가합니다.
@@ -131,6 +131,6 @@ Redirect_OnPrem.cmd:
 마이그레이션을 계속하려면 [3단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

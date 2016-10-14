@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: ea8ef9108afc01b5046d523cfc8394d81689638b
+ms.sourcegitcommit: b7ee098ceaa8ac6b1e0d5d6cbe090042510aa89b
+ms.openlocfilehash: ac7dd8592d6e11905744c4f4e0171fd5b5945c51
 
 
 ---
@@ -70,12 +70,26 @@ ms.openlocfilehash: ea8ef9108afc01b5046d523cfc8394d81689638b
   클라이언트 쪽 검색을 구성하기 위해 RMS 서버를 가리키도록 다음 레지스트리 키를 설정할 수 있습니다. 서비스 쪽 검색을 구성하는 방법에 대한 자세한 내용은 [RMS Client 2.0 배포 참고 사항](https://technet.microsoft.com/library/jj159267(WS.10).aspx) 항목을 참조하세요.
 
 1. **EnterpriseCertification**
-        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterpriseCertification
 
-  **값**: (기본값): [**http|https**]: //RMSClusterName/**_wmcs/Certification**
+        HKEY_LOCAL_MACHINE
+          SOFTWARE
+            Microsoft
+              MSIPC
+                ServiceLocation
+                  EnterpriseCertification
+
+   **값**: (기본값): [**http|https**]: //RMSClusterName/**_wmcs/Certification**
 
 2. **EnterprisePublishing**
-        HKEY_LOCAL_MACHINE        SOFTWARE          Microsoft            MSIPC              ServiceLocation                EnterprisePublishing **값**: (기본값): [**http|https**]: //RMSClusterName/**_wmcs/Licensing**
+
+        HKEY_LOCAL_MACHINE
+          SOFTWARE
+            Microsoft
+              MSIPC
+                ServiceLocation
+                  EnterprisePublishing
+                  
+   **값**: (기본값): [**http|https**]://RMSClusterName/**_wmcs/Licensing**
 
 >[!NOTE] 
 > 기본적으로 이러한 키는 레지스트리에 없으며 만들어야 합니다.
@@ -96,6 +110,6 @@ ms.openlocfilehash: ea8ef9108afc01b5046d523cfc8394d81689638b
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

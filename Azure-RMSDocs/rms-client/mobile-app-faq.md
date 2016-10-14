@@ -4,7 +4,7 @@ description:
 keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 데 도움이 되는 몇 가지 질문과 대답"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac04af3b503bb7bb1d3c9f4bcee4aff163d73314
-ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
+ms.sourcegitcommit: fd11b55ec8ee11f594c33a5a46694d83b2db6953
+ms.openlocfilehash: ff2b28d9774682abbe77b484b097ea51709a3234
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
 
 ## Azure Information Protection 앱으로 수행할 수 있는 작업
 
-이 앱을 사용하면 권한으로 보호된 전자 메일 메시지(.rpmsg 파일)를 볼 수 있습니다(새로 만들거나 회신할 수 없음). 또한 권한으로 보호되는 PDF 파일, 사진, 텍스트 파일과 .pfile로 보호되는 모든 다른 파일 형식을 볼 수 있습니다(새로 만들거나 편집할 수 없음). 
+이 앱을 사용하면 권한으로 보호된 메일 메시지(.rpmsg 파일)를 볼 수 있습니다. 또한 권한으로 보호되는 PDF 파일, 사진, 텍스트 파일과 .pfile로 보호되는 모든 다른 파일 형식을 볼 수 있습니다. 현재 이 앱을 사용하여 보호되는 메일 메시지를 새로 만들거나, 회신하거나, 보호되는 파일을 만들거나 편집할 수 없습니다.
 
 ## SharePoint 보호된 라이브러리 및 비즈니스용 OneDrive에 있는 PDF 파일을 열 수 있나요?
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

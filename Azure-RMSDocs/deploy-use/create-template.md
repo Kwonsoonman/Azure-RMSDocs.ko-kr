@@ -3,7 +3,7 @@ title: "사용자 지정 템플릿 만들기, 구성 및 게시 | Azure Informat
 description: "Azure 클래식 포털에서 사용자 지정 템플릿을 만들고 관리하는 지침을 제공합니다. 최종 사용자와 기타 관리자는 템플릿을 통해 문서와 전자 메일을 보호하는 적절한 정책을 쉽게 적용할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 30cd611e128217b2760e66b3391a0702ae0ed7a6
+ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
+ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
 
 
 ---
@@ -68,11 +68,13 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
     -   Azure 클래식 포털의 **Rights Management 시작** 빠른 시작 페이지에서 **새 권한 정책 템플릿 만들기**를 클릭합니다.
 
-        Office 365에 대한 지침을 진행한 후에 이 페이지를 즉시 표시되지 않으면 Azure 클래식 포털에 대한 위의 탐색 지침을 사용합니다.
+        Office 365에 대한 지침을 진행한 후에 이 페이지가 즉시 표시되지 않으면 Azure 클래식 포털에 대한 위의 탐색 지침을 사용합니다.
 
-3.  **새 권한 정책 템플릿 추가** 페이지에서 사용자에게 표시할 템플릿 이름과 설명을 입력하려는 언어를 선택합니다. 나중에 언어를 더 추가할 수 있습니다. 그 후에 고유한 이름과 설명을 입력하고 완료 단추를 클릭합니다.
+3. **새 권한 정책 템플릿 추가** 페이지에서 사용자에게 표시할 템플릿 이름과 설명을 입력하려는 언어를 선택합니다. 나중에 언어를 더 추가할 수 있습니다. 그 후에 고유한 이름과 설명을 입력하고 완료 단추를 클릭합니다.
 
-이제 **Rights Management가 시작되었습니다.** 빠른 시작 페이지에서 **권한 정책 템플릿 관리**를 클릭합니다. 새로 만든 템플릿이 템플릿 목록에 추가되어 **보관됨**상태로 표시됩니다. 이 단계에서는 템플릿이 만들어졌지만 구성되지 않아 사용자에게 보이지 않습니다.
+    템플릿 이름 또는 설명에 콜론 또는 세미콜론을 포함하지 마세요. Rights Management 템플릿을 사용하는 일부 서비스 및 응용 프로그램은 이러한 템플릿에 대해 이러한 문자를 지원하지 않습니다. 이 시나리오에서는 이러한 서비스 및 응용 프로그램이 이러한 Azure Rights Management 템플릿을 사용하거나 검색하지 못할 수 있습니다.
+
+4. 이제 **Rights Management가 시작되었습니다.** 빠른 시작 페이지에서 **권한 정책 템플릿 관리**를 클릭합니다. 새로 만든 템플릿이 템플릿 목록에 추가되어 **보관됨**상태로 표시됩니다. 이 단계에서는 템플릿이 만들어졌지만 구성되지 않아 사용자에게 보이지 않습니다.
 
 ## 사용자 지정 템플릿을 구성 및 게시하려면
 
@@ -166,6 +168,6 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

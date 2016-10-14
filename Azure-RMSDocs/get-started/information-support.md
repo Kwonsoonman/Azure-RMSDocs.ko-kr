@@ -3,7 +3,7 @@ title: "Azure Information Protection에 대한 관리 정보 및 지원 | Azure 
 description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Microsoft에 연락하는 방법에 대한 정보가 포함된 관리자용 리소스입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 10/04/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40fadcda8a92b3427f46183a5e13e5ea5f689930
-ms.openlocfilehash: 9d8a711e43cf9e8003ebc4e1c87d4e1e996ddeb2
+ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
+ms.openlocfilehash: 1ca9b1d4b3af81a892e001c639ad79ac931233be
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 9d8a711e43cf9e8003ebc4e1c87d4e1e996ddeb2
 |… 서비스에 권장되는 설명서 참조 →|[Azure Information Protection 설명서](https://docs.microsoft.com/information-protection/) 시작 페이지 사용.|
 |… 문서에 대한 의견 제공 또는 문서 관련 질문 →| [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)에 전자 메일 보내기|
 |… Information Protection에 대한 트윗 및 제품 그룹의 문서 업데이트에 대한 공지 사항 수신→|Microsoft Information Protection 팀 책임자인 Dan Plastina 팔로우.  [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)를 참조하세요.|
-|… 구독 정보 및 지원되는 기능 확인 →|Azure Information Protection 사이트의 [가격 정보 페이지](https://go.microsoft.com/fwlink/?LinkId=827589) 사용.|
+|… 구독 정보 및 지원되는 기능 확인 →|Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 사용하세요.|
 
 
 ## 새 릴리스에 대한 정보
@@ -88,6 +88,6 @@ Information Protection 제품 그룹은 [Enterprise Mobility and Security Blog](
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

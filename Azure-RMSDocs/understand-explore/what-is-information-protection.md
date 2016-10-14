@@ -10,8 +10,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: c1279e6f2420711f921a8ccae256a80d619e8566
-ms.openlocfilehash: 5891dfa423bb5e0b9871bc60a31572ed4f89a7c7
+ms.sourcegitcommit: 590f12e0c6c6122a6bc0a559940870c18f0e2d39
+ms.openlocfilehash: 350a3cb877674208b4c560bb841135904aee1136
 
 
 ---
@@ -74,7 +74,9 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 ## Azure Information Protection에 대한 리소스
 
-- 미리 보기 공지 사항: [Azure Information Protection – available in Public Preview now!](https://blogs.technet.microsoft.com/enterprisemobility/2016/07/12/azure-information-protection-public-preview-available-now/)(Azure Information Protection - 현재 공개 미리 보기로 제공!)
+- 알림: [Azure Information Protection is now Generally Available](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/04/azure-information-protection-is-now-generally-available/)(Azure Information Protection 출시)
+
+- 무료 평가판: [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
 
 - 클라이언트 다운로드: [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
@@ -94,6 +96,6 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 Azure Information Protection 또는 Azure Rights Management를 다른 이름으로 알고 계신가요? [서비스에 대한 대체 조건의 목록](azure-rms-aka.md)을 참조하세요.
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

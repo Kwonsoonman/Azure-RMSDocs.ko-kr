@@ -3,7 +3,7 @@ title: "템플릿 새로 고침 | Azure Information Protection"
 description: "Azure Rights Management 서비스를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 2870edc314f3ee6f6e3b8937cbe5b653092c5910
+ms.sourcegitcommit: 67c2f47e1cc8e02c2bb4430421952a146e583e87
+ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
 
 
 ---
@@ -29,7 +29,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |--------------------------|---------------------------------------------|
 |Exchange Online|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요.|
 |Office 365|자동으로 새로 고침 - 추가 단계 불필요|
-|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
+|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
 |Office 2010|사용자 로그인 시 새로 고침됨<br /><br />강제로 새로 고침하려면 사용자에게 로그오프한 후 다시 로그인하도록 요청하거나 강제로 적용합니다. 또는 [Office 2010에만 해당: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
 RMS 공유 응용 프로그램을 사용하는 모바일 장치의 경우 템플릿은 추가 구성이 필요 없이 자동으로 다운로드되고 필요한 경우 새로 고침됩니다.
 
@@ -186,6 +186,6 @@ Office 2010을 실행하는 컴퓨터에서 레지스트리를 편집하면 사�
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

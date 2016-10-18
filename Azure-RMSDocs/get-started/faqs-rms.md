@@ -3,7 +3,7 @@ title: "데이터 보호 서비스, Azure Information Protection의 Azure Rights
 description: "데이터 보호 서비스인 Azure Information Protection의 Azure Rights Management 서비스(Azure RMS)의 몇 가지 질문과 대답입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 114dfd2a0f19205432771b5dc17ddcb60f7ec44b
+ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
+ms.openlocfilehash: 874836e1a0abc9bbb3f5d881980ba0d5dfe30869
 
 
 ---
@@ -94,7 +94,7 @@ Azure AD Premium 기능을 사용하면 [특성 기반 규칙](https://azure.mic
 
 
 ## Azure RMS에서는 어떤 장치 및 파일 형식을 지원하나요?
-Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure RMS 요구 사항: Azure RMS를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요. 현재는 지원 장치 중 일부만 모든 Rights Management 기능을 지원하기 때문에 같은 항목의 [Azure RMS 요구 사항: 응용 프로그램](../get-started/requirements-applications.md)도 확인해야 합니다.
+Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요. 지원되는 장치 중 일부는 현재 Rights Management 기능을 지원하지 않으므로 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](../get-started/requirements-applications.md)의 표도 확인하세요.
 
 Azure Rights Management 서비스는 모든 형식의 파일을 지원할 수 있습니다. 텍스트, 이미지, Microsoft Office(Word, Excel, PowerPoint) 파일, .pdf 파일 및 일부 기타 응용 프로그램 파일 형식의 경우 Azure Rights Management는 권한 적용 및 암호화를 모두 포함하는 기본 보호 기능을 제공합니다. 기타 모든 응용 프로그램 및 파일 형식의 경우 일반적인 보호를 통해 사용자가 파일을 열 권한이 있는지 확인하는 인증 및 파일 캡슐화 기능을 제공합니다.
 
@@ -145,6 +145,6 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

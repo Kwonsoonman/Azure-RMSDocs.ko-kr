@@ -3,15 +3,15 @@ title: "Azure Information Protection이란? | Azure Information Protection"
 description: "Azure Information Protection 서비스에 대해 간략하게 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 590f12e0c6c6122a6bc0a559940870c18f0e2d39
-ms.openlocfilehash: 350a3cb877674208b4c560bb841135904aee1136
+ms.sourcegitcommit: 0098fa28313561e99f39e2539e20c8a6bc0207f7
+ms.openlocfilehash: eaaa08a99b3c065422dd8b0bc01d89ead15e9d49
 
 
 ---
@@ -84,9 +84,21 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 - Yammer: [Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
 
-- 비디오 프레젠테이션:
+- 비디오 개요
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/N9Ip0m6d3G0" frameborder="0" allowfullscreen></iframe>
+
+    또한 Microsoft Ignite 2016에서는 Azure Information Protection에 대한 다음과 같은 여러 주문형 세션을 제공합니다.
+
+    - [BRK2127: 데이터를 안전하게 보호 및 공유하기 위한 포괄적인 ID 기반 솔루션 채택](https://myignite.microsoft.com/videos?q=BRK2127)
+    
+    - [THR2107: Azure Information Protection을 사용하여 안전하게 공동 작업](https://myignite.microsoft.com/videos?q=THR2107)
+    
+    - [THR2108: Azure Information Protection으로 데이터에 대한 포괄적인 보호 보장](https://myignite.microsoft.com/videos?q=THR2108)
+    
+    - [BRK3095: 분류, 레이블 지정 및 보호를 통해 지속적인 데이터 보호를 제공하는 방법 알아보기](https://myignite.microsoft.com/videos?q=BRK3095)
+    
+    - [BRK2128: Microsoft Office 365 및 Azure Information Protection의 기능을 통해 모든 사용자에게 보안 메일 보내기](https://myignite.microsoft.com/videos?q=BRK2128)
 
 
 ## 다음 단계
@@ -96,6 +108,6 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 Azure Information Protection 또는 Azure Rights Management를 다른 이름으로 알고 계신가요? [서비스에 대한 대체 조건의 목록](azure-rms-aka.md)을 참조하세요.
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

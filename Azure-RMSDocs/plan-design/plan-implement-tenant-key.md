@@ -3,7 +3,7 @@ title: "Azure Rights Management 테넌트 키 계획 및 구현 | Azure Informat
 description: "Azure Information Protection 테넌트 키를 계획 및 관리하는 데 도움이 되는 정보를 제공합니다. Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
-ms.openlocfilehash: 967eda9a180f24bc847b55d4315c97dfabb90714
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 70f4b178d2814683551574f4e777213eea914477
 
 
 ---
@@ -127,7 +127,7 @@ Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 �
 
     ![테넌트 키가 사용되는 위치의 로그 파일](../media/RMS_Logging.png)
 
-    사용 현황 로깅에 대한 자세한 내용은 [Azure 권한 관리 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
+    사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
 3.  테넌트 키를 유지 관리합니다.
 
@@ -136,6 +136,6 @@ Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 �
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

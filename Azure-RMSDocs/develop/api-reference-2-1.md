@@ -4,7 +4,7 @@ description: "Microsoft Rights Management SDK 2.1에서는 Windows 클라이언�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -23,11 +23,11 @@ ms.openlocfilehash: bb20d796e5a852aa9da224cbf218b9a166a9dbd8
 # API 참조
 
 Microsoft Rights Management SDK 2.1에서는 Windows 클라이언트의 RMS 사용을 지원합니다. 자세한 내용은 [릴리스 정보](release-notes-rtm.md)를 참조하세요.
-- [상수](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/constants)
-- [데이터 형식](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/data types)
-- [함수](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/functions)
-- [구조](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/structures)
-- [오류 코드](https://docs.microsoft.com/en-us/information-protection/sdk/2.1/api/win/Error codes)
+- [상수](https://msdn.microsoft.com/library/hh535291.aspx)
+- [데이터 형식](https://msdn.microsoft.com/library/hh535288.aspx)
+- [함수](https://msdn.microsoft.com/library/hh535289.aspx)
+- [구조](https://msdn.microsoft.com/library/hh535294.aspx)
+- [오류 코드](https://msdn.microsoft.com/library/hh535248.aspx)
 
 
 

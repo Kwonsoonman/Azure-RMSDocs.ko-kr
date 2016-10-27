@@ -12,8 +12,8 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
-ms.openlocfilehash: a553ea57bd4b396b7629dc24aea9f76b4a2a5e5a
+ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
+ms.openlocfilehash: 74aac58a7b523f98ef627831830577d4fde7d5af
 
 
 ---
@@ -39,7 +39,7 @@ Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. �
     > [!NOTE]
     >참고: 활성화 오류가 표시되는 경우 서비스 계획 또는 제품 버전에 Azure Information Protection의 Azure Rights Management 서비스가 포함되지 않았기 때문일 수 있습니다.
     >
-    >[구독 정보](https://go.microsoft.com/fwlink/?LinkId=827589)를 사용하여 Azure Rights Management를 포함하는 구독이 있는지 확인 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
+    >Azure Rights Management Service를 활성화하려면 [Azure Information Protection Premium plan](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)(Azure Information Protection Premium 계획) 또는 [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다. 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
 
 
 이제 **Rights Management 상태** 가 **활성** 으로 표시되고 **활성화** 옵션이 **비활성화**로 바뀝니다.
@@ -58,6 +58,6 @@ Rights Management 서비스가 사용되도록 설정되고 사용할 준비가 
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

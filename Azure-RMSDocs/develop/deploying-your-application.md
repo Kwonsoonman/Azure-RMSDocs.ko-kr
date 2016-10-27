@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: e47c5331f49c62a00617f40b1af7ffdc4a89dcfd
+ms.sourcegitcommit: 44e90a1de74d62469bd8a99a2d49d1e57d2d0f62
+ms.openlocfilehash: e1bc56fc108101d0af833a84ba52821c8b18736d
 
 
 ---
@@ -61,8 +61,6 @@ ms.openlocfilehash: e47c5331f49c62a00617f40b1af7ffdc4a89dcfd
 ADRMLA(Active Directory Rights Management 사용권 계약) 팀은 메일로 전송된 요청에 대해 업무일로 3일 내에 응답하지만 우편 서비스를 사용하여 요청을 보낸 경우에는 더 오래 걸립니다. 응답에는 사용권 계약 양식과 추가 지침이 포함됩니다. 계약서의 모든 페이지를 읽고 서명한 후 ADRMLA 팀에 다시 보냅니다. 사용권 계약의 글꼴을 변경하거나 단락 서식을 다시 지정하지 마세요.
 
 ADRMLA 팀으로부터 받은 지침을 따라야 합니다. 지침에는 인증서 요청을 이행하는 데 필요한 디지털 정보 항목이 나와 있습니다. 단계별 지침을 따르면 지연이 줄어듭니다.
-
-ADRMLA 팀은 프로덕션 인증서가 생성된 후 전달합니다. ADRMLA 팀이 인증서를 포함하여 메일로 회신하려면 업무일로 최대 15일 정도 걸리며, 우편 서비스로 통신하는 경우에는 더 오래 걸릴 수 있습니다.
 
 
 ## Rights Management Service Client 2.1의 설치 옵션 및 요구 사항
@@ -132,6 +130,6 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

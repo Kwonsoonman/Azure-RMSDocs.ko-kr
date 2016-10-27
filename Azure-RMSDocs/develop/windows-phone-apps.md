@@ -78,7 +78,7 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 
 [Windows Phone 개발](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx)
 
-[Windows API 참조](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Windows API 참조](https://msdn.microsoft.com/library/dn891914.aspx)
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 

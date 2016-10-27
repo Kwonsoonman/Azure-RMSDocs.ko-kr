@@ -3,7 +3,7 @@ title: "Azure Rights Management 커넥터 모니터링 | Azure Information Prote
 description: "조직의 Azure Information Protection의 Azure Rights Management 서비스 사용과 커넥터를 모니터링하는 데 도움이 되는 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 954d8b7b62b35f5fdd29e115681d9d5c0da69a86
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: af75705e8c256811d1816c2ad52e42e98b4db503
 
 
 ---
@@ -171,7 +171,7 @@ Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태
 
 사용 현황 로깅은 메일과 문서가 보호되고 사용되는 경우를 식별할 때 유용합니다. 여기에 RMS 커넥터를 사용하는 경우, 로그의 사용자 ID 필드에는 RMS 커넥터에 대해 자동으로 생성되는 **Aadrm_S-1-7-0**이라는 서비스 사용자 이름이 포함됩니다.
 
-사용 현황 로깅에 대한 자세한 내용은 [Azure 권한 관리 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.
+사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.
 
 진단을 위해 더 자세한 로깅이 필요한 경우는 Windows Sysinternals에서 [Debugview](http://go.microsoft.com/fwlink/?LinkID=309277)를 사용하고 IIS의 기본 사이트에서 web.config 파일을 구성하여 RMS 커넥터에 대한 추적을 사용하도록 설정할 수 있습니다. 이렇게 하려면 다음을 수행합니다.
 
@@ -192,6 +192,6 @@ Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: a27383017cd5df1df370d31daea7d85dca4656e8
-ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
+ms.sourcegitcommit: cd24268839fac6c42a3214e5e1bb012f61b5ffff
+ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
       <h3>Azure Information Protection을 처음 사용하시나요? <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">Microsoft 제품 웹 사이트 방문 &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
-        <p>실습 준비</p>
+        <p>실습 준비?</p>
         <ol class="action-list">
             <li><a href="https://portal.office.com/Signup?&OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&dl=INFORMATIONPROTECTION&ali=1#0" target="_blank" class="button-bordered button-translucent">지금 사용해 보기</a></li>
         </ol>
@@ -226,6 +226,6 @@ ms.openlocfilehash: 8c4f897220069f5b05d5044f0c282873f6b7831d
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

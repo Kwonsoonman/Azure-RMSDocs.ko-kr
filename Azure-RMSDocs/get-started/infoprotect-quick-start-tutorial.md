@@ -3,15 +3,15 @@ title: "빠른 시작 자습서 | Azure Information Protection"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서로 약 30분 만에 완료해야 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: e67fe1e6b63be679ae62bb45359db98df59386da
-ms.openlocfilehash: 3022ef92a04351c76c370ed31b519425923cfa04
+ms.sourcegitcommit: 4f5f7670ce1897a6436e511057fc714c839a8f00
+ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
 
 
 ---
@@ -29,8 +29,10 @@ Azure Information Protection을 사용하여 이 자습서를 완료하는 데 �
 ## 필수 구성 요소 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-- 분류, 레이블 지정 및 보호를 위해 Azure Information Protection이 포함된 구독. 이 자습서에는 사용자 권장 사항으로 자동화된 데이터 분류 및 문서 추적 사이트와 같은 고급 기능이 포함되어 있습니다. 구독이 이러한 기능을 지원하는지 확인합니다. 자세한 내용은 Azure Information Protection [가격 책정 페이지](https://go.microsoft.com/fwlink/?LinkId=827589)에서 구독 정보를 확인하세요.
-
+- 분류, 레이블 지정 및 보호를 위해 Azure Information Protection이 포함된 구독. 이 자습서에는 사용자 권장 사항으로 자동화된 데이터 분류 및 문서 추적 사이트와 같은 고급 기능이 포함되어 있습니다. 구독이 이러한 기능을 지원하는지 확인합니다. 자세한 내용은 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 확인하세요.
+    
+    이러한 기능에 대한 구독이 없는 경우 [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)에 대한 무료 평가판에 등록할 수 있습니다.
+    
 - Azure 포털에 액세스하여 Azure Information Protection 정책을 구성할 수 있는 Azure 구독. 조직에서 아직 Azure를 구독하지 않은 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. [Azure 시작](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따르세요.
 
   > [!TIP] 
@@ -49,6 +51,6 @@ Azure Information Protection을 사용하여 이 자습서를 완료하는 데 �
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

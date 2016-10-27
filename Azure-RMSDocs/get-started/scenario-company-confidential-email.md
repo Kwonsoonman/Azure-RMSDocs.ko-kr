@@ -3,7 +3,7 @@ title: "시나리오 - 회사 기밀 메일 보내기 | Azure Information Protec
 description: "이 시나리오와 지원 사용자 문서에서는 조직의 모든 사용자가 조직 외부에서 읽을 수 없는 메일 통신을 안전하게 보낼 수 있도록 Azure Rights Management 보호를 사용합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/10/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 9fafe78b8393ae36defeecccceb8f4a2d36a3b79
+ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
+ms.openlocfilehash: 6ad18ba1035438af88f814689884f9873d75eea0
 
 
 ---
@@ -54,7 +54,7 @@ ms.openlocfilehash: 9fafe78b8393ae36defeecccceb8f4a2d36a3b79
 |Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](../deploy-use/activate-service.md)|
 |다음 중 하나<br /><br />- Azure 권한 관리에 Exchange Online을 사용하도록 설정되어 있는지 여부<br /><br />- Exchange 온-프레미스에 대해 RMS 커넥터가 설치되고 구성되었는지 여부|Exchange Online: [Office 365: 클라이언트 및 온라인 서비스 구성](../deploy-use/configure-office365.md)에서 **Exchange Online: IRM 구성** 섹션을 참조하세요.<br /><br />Exchange 온-프레미스의 경우: [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)|
 |기본 Azure 권한 관리 템플릿인 **&lt;조직&gt; - 기밀**을 보관하지 않았습니다. 또는 더 제한적인 설정이 필요하거나 조직의 사용자 하위 집합만 보호된 메일을 읽을 수 있어야 하기 때문에 이 용도로 사용자 지정 템플릿을 구성했습니다.|[Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)<br /><br />팁: 조직의 모든 사용자에 대해 더 제한적인 사용 정책 설정이 필요한 경우 템플릿을 처음부터 만드는 대신 기본 템플릿 중 하나를 복사한 다음 편집합니다.<br /><br />이 시나리오에서는 업데이트된 템플릿이 메일 클라이언트에서 즉시 새로 고쳐지지 않습니다. 자세한 내용은 [사용자를 위한 템플릿 새로 고침](../deploy-use/refresh-templates.md) 문서를 참조하세요.|
-|보호된 메일을 보내는 사용자에게 Outlook 2013, Outlook 2016 또는 Outlook Web Access가 있습니다.<br /><br />메일을 받는 사용자에게 Azure 권한 관리를 지원하는 메일 클라이언트가 있습니다.|Outlook 2010을 사용할 수 있지만 [Windows용 Rights Management 공유 응용 프로그램을 설치](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)하고 사용자 지침을 적절하게 조정해야 합니다.<br /><br />Azure Rights Management를 지원하는 전자 메일 클라이언트 목록은 [Azure RMS 요구 사항: 응용 프로그램](../get-started/requirements-applications.md)의 표에 있는 **전자 메일** 열을 참조하세요.|
+|보호된 메일을 보내는 사용자에게 Outlook 2013, Outlook 2016 또는 Outlook Web Access가 있습니다.<br /><br />메일을 받는 사용자에게 Azure 권한 관리를 지원하는 메일 클라이언트가 있습니다.|Outlook 2010을 사용할 수 있지만 [Windows용 Rights Management 공유 응용 프로그램을 설치](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)하고 사용자 지침을 적절하게 조정해야 합니다.<br /><br />Azure 권한 관리를 지원하는 메일 클라이언트 목록은 [Azure 권한 관리 데이터 보호를 지원하는 응용 프로그램](../get-started/requirements-applications.md)의 표에 있는 **Email**열을 참조하세요.|
 
 ## 사용자 문서 지침
 다음 템플릿을 사용하여 최종 사용자 통신에 사용자 지침을 복사해서 붙여넣고 사용자 환경에 맞게 다음과 같이 수정합니다.
@@ -157,6 +157,6 @@ ms.openlocfilehash: 9fafe78b8393ae36defeecccceb8f4a2d36a3b79
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

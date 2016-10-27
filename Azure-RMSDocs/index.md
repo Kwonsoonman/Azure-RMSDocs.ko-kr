@@ -26,7 +26,7 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
       <h3>Azure Information Protection을 처음 사용하시나요? <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">Microsoft 제품 웹 사이트 방문 &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
-        <p>실습 준비</p>
+        <p>실습 준비?</p>
         <ol class="action-list">
             <li><a href="https://portal.office.com/Signup?&OfferId=A43415D3-404C-4df3-B31B-AAD28118A778&dl=INFORMATIONPROTECTION&ali=1#0" target="_blank" class="button-bordered button-translucent">지금 사용해 보기</a></li>
         </ol>
@@ -226,6 +226,6 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

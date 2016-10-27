@@ -3,7 +3,7 @@ title: "Office 365 관리 센터 미리 보기에서 Azure Rights Management를 
 description: "Office 365 관리 센터의 신규 미리 보기 버전(Office 365 관리 센터 미리 보기) 액세스 권한이 있는 경우의 Azure Rights Management 서비스의 활성화 지침을 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 805644a7c6dacc00519ad9ac07f39367d0784745
-ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
+ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
+ms.openlocfilehash: ca1547a6ff00b7100cd52c34938bf6e088085f8a
 
 
 ---
@@ -41,9 +41,9 @@ ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
     - 검색: **홈** 페이지의 검색 상자에 **권한 관리**를 입력한 다음 검색 결과에서 **Microsoft Azure 권한 관리 설정**을 클릭합니다.
 
         > [!NOTE]
-        >이 옵션으로 이동하는 경우 사용 중인 디스플레이에 따라 이 옵션을 보려면 스크롤해야 할 수 있습니다. 그러나 해당 옵션이 페이지에 나타나지 않고 검색 결과로 표시되지 않으면 서비스 계획 또는 제품 버전에 Azure Information Protection의 Azure Rights Management 서비스가 포함되지 않은 것일 수 있습니다.
+        >이 옵션으로 이동하는 경우 사용 중인 디스플레이에 따라 이 옵션을 보려면 스크롤해야 할 수 있습니다. 그러나 해당 옵션이 페이지에 나타나지 않고 검색 결과로 표시되지 않으면 서비스 계획에 Azure Information Protection의 Azure Rights Management Service가 포함되지 않은 것일 수 있습니다.
         >
-        >[구독 정보](https://go.microsoft.com/fwlink/?LinkId=827589)를 사용하여 Azure Rights Management를 포함하는 구독이 있는지 확인 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
+        >Azure Rights Management Service를 활성화하려면 [Azure Information Protection Premium plan](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)(Azure Information Protection Premium 계획) 또는 [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다. 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
 
 4. **Rights Management** 페이지에서 **활성화**를 클릭합니다.
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 9f6df7542a96fc04873eff452db4e7b5606e989e
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

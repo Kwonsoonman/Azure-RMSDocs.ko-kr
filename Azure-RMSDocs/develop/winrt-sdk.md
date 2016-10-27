@@ -82,7 +82,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
-[Windows API 참조](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement)
+[Windows API 참조](https://msdn.microsoft.com/library/dn891914.aspx)
 
 
 

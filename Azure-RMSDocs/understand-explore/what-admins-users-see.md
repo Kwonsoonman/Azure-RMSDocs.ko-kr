@@ -3,7 +3,7 @@ title: "관리자와 사용자에게 표시되는 내용 | Azure Information Pro
 description: "관리자와 사용자가 Azure RMS(Azure Rights Management) 기술을 표시하여 중요한 정보 또는 기밀 정보를 보호하는 데 사용할 수 있는 방법의 몇 가지 일반적인 예제를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: d1f7b24861848f536a80a8b8889a44b41049e40b
+ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
+ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 
 ---
@@ -73,9 +73,9 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 **이 시나리오에 대한 추가 정보:**
 
-- 단계별 지침은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md) 및 [Azure 권한 관리용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
+- 단계별 지침은 [Azure Rights Management 활성화](../deploy-use/activate-service.md) 및 [Azure Rights Management Service용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
 
-- 사용자가 중요한 회사 파일을 보호할 수 있도록 지원하려면 [사용자가 Azure 권한 관리를 사용하여 파일을 보호할 수 있도록 지원](../deploy-use/help-users.md)을 참조하세요.
+- 사용자가 중요한 회사 파일을 보호할 수 있도록 지원하려면 [사용자가 Azure Rights Management Service를 사용하여 파일을 보호할 수 있도록 지원](../deploy-use/help-users.md)을 참조하세요.
 
 다음으로, 관리자가 템플릿을 적용하여 파일 및 전자 메일에 대한 정보 보호를 자동으로 구성할 수 있는 방법에 대한 몇 가지 예를 살펴봅시다.
 
@@ -149,7 +149,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 **이 시나리오에 대한 추가 정보:**
 
--   Azure RMS가 Exchange Online과 함께 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure 권한 관리를 지원하는 방법](applications-support.md)에서 [Exchange Online 및 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 섹션을 참조하세요.
+-   Azure RMS가 Exchange Online과 함께 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure Rights Management Service를 지원하는 방법](applications-support.md)에서 [Exchange Online 및 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 섹션을 참조하세요.
 
 -   Azure RMS에 대해 Exchange Online을 구성하는 단계별 지침은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)에서 [Exchange Online: IRM 구성](../deploy-use/configure-office365.md#exchange-online-irm-configuration)을 참조하세요.
 
@@ -183,7 +183,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 **이 시나리오에 대한 추가 정보:**
 
--   Azure RMS가 SharePoint와 함께 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure 권한 관리를 지원하는 방법](applications-support.md)에서 [SharePoint Online 및 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
+-   Azure RMS가 SharePoint와 함께 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure Rights Management Service를 지원하는 방법](applications-support.md)에서 [SharePoint Online 및 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
 
 -   Azure RMS에 대해 SharePoint를 구성하는 단계별 지침은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)에서 [SharePoint Online 및 비즈니스용 OneDrive: IRM 구성](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)섹션을 참조하세요.
 
@@ -241,6 +241,6 @@ Bob이 첨부 파일과 함께 이 전자 메일을 전달하거나 다른 사�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

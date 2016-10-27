@@ -4,7 +4,7 @@ description:
 keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 데 도움이 되는 몇 가지 질문과 대답"
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac04af3b503bb7bb1d3c9f4bcee4aff163d73314
-ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
+ms.sourcegitcommit: f7ca40550f16dff0cc4979eb029d9eb7dd68414f
+ms.openlocfilehash: da77d799128e110679c972629fa9f816487ccb4f
 
 
 ---
@@ -27,17 +27,31 @@ ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
 
 ## Azure Information Protection 앱으로 수행할 수 있는 작업
 
-이 앱을 사용하면 권한으로 보호된 전자 메일 메시지(.rpmsg 파일)를 볼 수 있습니다(새로 만들거나 회신할 수 없음). 또한 권한으로 보호되는 PDF 파일, 사진, 텍스트 파일과 .pfile로 보호되는 모든 다른 파일 형식을 볼 수 있습니다(새로 만들거나 편집할 수 없음). 
+메일 앱에서 권한 관리 데이터 보호를 기본적으로 지원하지 않는 경우 이 앱을 사용하여 권한으로 보호된 메일 메시지(.rpmsg 파일)를 볼 수 있습니다. 또한 이 앱에서는 권한으로 보호된 PDF 파일, 권한으로 보호된 그림 및 텍스트 파일, 일반적으로 보호된 파일(파일 이름 확장명: .pfile)도 볼 수 있습니다. 현재 이 앱을 사용하여 보호되는 메일 메시지를 새로 만들거나, 회신하거나, 보호되는 파일을 만들거나 편집할 수 없습니다.
 
 ## SharePoint 보호된 라이브러리 및 비즈니스용 OneDrive에 있는 PDF 파일을 열 수 있나요?
 
-예, 다른 사람이 SharePoint 및 비즈니스용 OneDrive를 통해 공유한 보호된 PDF 파일을 열 수 있습니다. 링크를 탭하면 이 앱에서 파일이 열립니다. 
+예, 다른 사람이 SharePoint 및 비즈니스용 OneDrive를 통해 공유한 보호된 PDF 파일을 열 수 있습니다. 링크를 탭하고 이 앱을 선택하여 필요한 파일을 열 수 있습니다. 
 
-## 이 앱에 로그인하는 방법
+## 뷰어 앱을 시작하려면 어떻게 하나요?
+
+모바일 장치에서 뷰어의 작동을 확인하려면 앱에서 지원하는 파일 중 하나에 액세스해야 합니다. 예를 들면 다음과 같습니다.
+
+- **.rpmsg 파일**: 이 권한으로 보호된 메일 메시지는 모바일 장치의 메일 앱에서 권한 관리 데이터 보호를 기본적으로 지원하지 않는 경우 메일 메시지의 첨부 파일로 표시됩니다. 
+    
+    모바일 장치에서 액세스할 수 있는 권한으로 보호된 메일 메시지를 다른 장치를 사용하여 자신에게 보냅니다. 예를 들어 Windows 컴퓨터에서 Outlook을 사용합니다. 권한 관리를 기본적으로 지원하는 메일 클라이언트 목록은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](../get-started/requirements-applications.md) 페이지에서 메일 열을 참조하세요.
+
+- **권한으로 보호된 PDF 파일**: Windows 컴퓨터에서 Rights Management 공유 응용 프로그램이나 권한 관리를 기본적으로 지원하는 PDF 응용 프로그램을 사용하여 권한으로 보호된 PDF 파일을 메일 첨부 파일로 자신에게 보냅니다. 또는 PDF 파일을 SharePoint 보호된 라이브러리로 업로드한 다음 메일 주소를 사용하여 이 파일을 공유합니다.
+
+- **.ptxt, .pjpg 또는 .pfile**: Windows 컴퓨터에서 Rights Management 공유 응용 프로그램과 [유](sharing-app-protect-by-email.md) 옵션을 사용하여 보호된 파일을 메일 첨부 파일로 자신에게 보냅니다. 테스트에 사용할 수 있는 파일 형식의 전체 목록은 Rights Management 공유 응용 프로그램 관리자 가이드의 [지원되는 파일 형식 및 파일 이름 확장명](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션에서 첫 번째 표를 참조하세요. 
+
+Azure Information Protection 뷰어 응용 프로그램에서 이러한 파일을 보려면 메일 첨부 파일이나 링크를 탭합니다. 여는 데 사용할 앱을 선택하라는 메시지가 표시되면 **AIP 뷰어** 앱을 선택합니다. 회사 또는 학교 계정에 로그인하라는 메시지가 표시됩니다. 성공적으로 인증되면 Azure Information Protection 앱에 읽을 메일이나 파일이 표시됩니다.
+
+## 이 앱에 로그인하는 데 어떤 자격 증명을 사용해야 하나요?
 
 조직에 AD RMS 온-프레미스(모바일 장치 확장 포함)가 이미 있거나 Azure Rights Management 서비스를 사용하는 경우 자격 증명을 사용하여 로그인할 수 있습니다. 그렇지 않은 경우 [Azure Rights Management 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)를 사용하여 새 계정을 무료로 등록할 수 있습니다.
 
-## 개인 전자 메일 주소(예: Hotmail 또는 Gmail 계정)로 등록할 수 있나요?
+## 개인 메일 주소(예: Hotmail 또는 Gmail 계정)로 무료 계정에 등록할 수 있나요?
 
 아직은 아닙니다. 현재는 비즈니스 전자 메일 주소(직장 또는 학교 계정)로만 등록할 수 있습니다. 현재 개인 전자 메일 주소를 지원하기 위해 노력하고 있으며 사용 가능한 경우 이 항목을 업데이트할 것입니다.
 
@@ -64,6 +78,6 @@ ms.openlocfilehash: 42368b8ee50acf09c6af45182ace1f159a4e5f02
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

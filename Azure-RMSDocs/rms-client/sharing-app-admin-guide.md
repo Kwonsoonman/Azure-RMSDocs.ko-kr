@@ -3,7 +3,7 @@ title: "Rights Management 공유 응용 프로그램 관리자 가이드 | Azure
 description: "Windows용 Microsoft Rights Management 공유 응용 프로그램 배포를 담당하는 엔터프라이즈 네트워크의 관리자를 위한 지침과 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ca9476d99457c814755b118660743b27ad78dbc
-ms.openlocfilehash: 73fd286c8112392bf7cb93468a27188aae6c22de
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 4a551f198b0469f82c14120c0c6f2bb7d055afe9
 
 
 ---
@@ -382,7 +382,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 사용자와 관리자가 문서 추적 사이트를 어떻게 사용하고 있는지를 기록하는 요청 유형도 있습니다. 예를 들어 **RevokeAccess**는 사용자 또는 사용자를 대신하는 관리자가 문서 추적 사이트에서에서 문서를 취소한 경우의 요청 유형입니다. 이 요청 유형을 AdminAction 필드와 함께 사용하여 사용자가 고유한 문서를 취소했는지(AdminAction 필드가 비어 있음), 아니면 관리자가 사용자 대신 문서를 취소했는지(AdminAction이 true임) 확인할 수 있습니다.
 
 
-사용 현황 로깅에 대한 자세한 내용은 [Azure 권한 관리 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
+사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
 ## AD RMS만 해당: 조직 내의 여러 메일 도메인 지원
 AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용자에게 메일 도메인이 여러 개 있는 경우 다음 레지스트리를 편집해야 합니다.
@@ -402,6 +402,6 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

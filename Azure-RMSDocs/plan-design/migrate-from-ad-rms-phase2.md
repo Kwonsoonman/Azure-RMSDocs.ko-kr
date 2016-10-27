@@ -1,9 +1,9 @@
 ---
-title: "AD RMS에서 Azure Rights Management로 마이그레이션 - 2단계 | Azure Information Protection"
+title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 2단계 | Azure Information Protection"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 두 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 5단계가 포함됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f9a7ceee318fee5414e02af7927256e74800a16
-ms.openlocfilehash: 113636139f0ff6e47a5b5c0467dfe8616c641e04
+ms.sourcegitcommit: 25f7c2e5eb226fcf7c30026a37a767e559a522ad
+ms.openlocfilehash: 810e540e02db0b4a142471dd89e30663bd61f22c
 
 
 ---
@@ -39,6 +39,8 @@ Windows 클라이언트:
 
     > [!IMPORTANT]
     > 지침에는 **adrms** 및 **adrms.contoso.com**의 예제 주소를 고유의 AD RMS 서버 주소로 바꾸는 것이 포함되어 있습니다. 이렇게 할 때에는 주소의 앞뒤에 추가 공백이 없도록 주의해야 합니다. 추가 공백이 있으면 마이그레이션 스크립트가 중단되어 문제의 근본 원인으로 확인하기가 매우 어렵습니다. 일부 편집 도구는 텍스트를 붙여넣은 후 자동으로 공백을 추가합니다.
+    >
+    > 또한 AD RMS 서버에서 SSL/TLS 서버 인증서를 사용하는 경우 라이선스 URL 값의 문자열에 포트 번호 **443**이 포함되어 있는지 확인하세요. 예: https:// rms.treyresearch.net:443/_wmcs/licensing 이 정보는 Active Directory Rights Management Services 콘솔에서 클러스터 이름을 클릭하고 **클러스터 세부 정보** 정보에서 확인할 수 있습니다. URL에 포함된 포트 번호 443이 포함된 경우 스크립트를 수정할 때 이 값을 포함하세요. 예: https://rms.treyresearch.net**:443**
 
 3. 사용자에게 Office 2016이 있는 경우: Office 2016에 대한 구성을 포함하도록 스크립트가 아직 업데이트되지 않았으므로 사용자에게 이 버전의 Office가 있다면 스크립트를 수동으로 업데이트해야 합니다.
 
@@ -131,6 +133,6 @@ Redirect_OnPrem.cmd:
 마이그레이션을 계속하려면 [3단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

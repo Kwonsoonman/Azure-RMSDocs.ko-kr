@@ -3,7 +3,7 @@ title: "시나리오 - 가장 중요한(소수) 파일 보호 | Azure Informatio
 description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ea299f402e5e188b498bf6e3cacf9d4dc7e0f6e8
-ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
+ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
+ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 
 ---
@@ -53,7 +53,7 @@ ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 |다음에 설명하는 대로 사용자 지정 템플릿을 구성했는지 여부|[Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)|
 |다음 섹션에 설명된 대로 이러한 파일을 바로 보호할 수 있도록 Rights Management 공유 응용 프로그램이 사용자의 Windows 컴퓨터에 배포되었는지 여부|[Rights Management 공유 응용 프로그램 다운로드 및 설치 ](../rms-client/install-sharing-app.md)|
 |권한 있는 사용자에게 최소 Office 2013 이상의 버전이 있는지 여부|사용자에게 Office 2010이 있는 경우 Rights Management 공유 응용 프로그램도 설치해야 합니다.|
-|Azure RMS 구독에 문서 추적이 포함되는지 여부|Azure RMS 구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 문서 추적 사이트를 사용하여 이러한 문서에 액세스하는 사용자를 확인하고 필요한 경우 액세스 권한을 취소할 수 없습니다. 이 경우 문서 추적 기능을 지원하는 구독을 구입하거나 이러한 제한을 감수합니다. 또한 Azure RMS의 [사용 현황 로깅](../deploy-use/log-analyze-usage.md) 기능을 사용하는 것이 좋습니다. 이 기능은 각 파일에 액세스한 사용자와 시기 등의 정보를 제공하므로 잠재적으로 의심스러운 행동을 검색하는 데 도움이 됩니다.<br /><br />Azure Information Protection [가격 책정 페이지](https://go.microsoft.com/fwlink/?LinkId=827589)에서 구독 정보를 확인하세요.|
+|Azure Information Protection 구독에는 문서 추적이 포함되어 있습니다.|구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 문서 추적 사이트를 사용하여 이러한 문서에 액세스하는 사용자를 확인하고 필요한 경우 액세스 권한을 취소할 수 없습니다. 이 경우 문서 추적 기능을 지원하는 구독을 구입하거나 이러한 제한을 감수합니다. 또한 Azure Rights Management Service의 [사용 현황 로깅](../deploy-use/log-analyze-usage.md) 기능을 사용하는 것이 좋습니다. 이 기능은 각 파일에 액세스한 사용자와 시기 등의 정보를 제공하므로 잠재적으로 의심스러운 행동을 검색하는 데 도움이 됩니다.<br /><br />Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 확인하세요.|
 
 ### 사용자 지정 템플릿을 구성하려면
 
@@ -147,6 +147,6 @@ ms.openlocfilehash: 2001b13c15ebfd1c1f939d342ac2a7006c18c0f8
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

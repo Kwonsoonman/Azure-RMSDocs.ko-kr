@@ -3,7 +3,7 @@ title: "데이터 보호에 대한 응용 프로그램 지원 | Azure Informatio
 description: "RMS API를 사용하여 Azure Information Protection의 Azure Rights Management 서비스를 기본적으로 지원하는 응용 프로그램을 식별합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/03/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a809edc63801912e836878e9205643d7d52188f1
-ms.openlocfilehash: 872e962bc4c08000fea9f81d48dece28a39d91dd
+ms.sourcegitcommit: 451952f7d0c293db2c9d4f5040ef0e14aa973866
+ms.openlocfilehash: a9b0fcddf9b11a8ab2d105ca5fc778831913bb72
 
 
 ---
@@ -58,12 +58,12 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 SharePoint Online, 비즈니스용 OneDrive, Outlook Web Access에서 사용권 계약에 따라 보호하는 콘텐츠 보기를 지원합니다.
 
 ##### 각주 3
-Exchange 온-프레미스에 사서함이 있는 받는 사람이 보호된 메일을 수신하는 경우 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다.  이 콘텐츠는 Outlook Web Access에서 열 수 없습니다.
+받는 사람이 보호된 메일을 수신하고 Exchange를 메일 서버로 사용하지 않거나 보내는 사람이 다른 조직에 속하는 경우, 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다. 이 콘텐츠는 Outlook Web Access에서 열 수 없습니다.
 
 ##### 각주 4
 Exchange 관리자가 사용하도록 설정해야 하는 Exchange ActiveSync IRM을 사용합니다. 사용자는 보호된 전자 메일 메시지를 보기, 회신 및 전체 회신할 수 있지만 사용자는 새 전자 메일 메시지 자체를 보호할 수 없습니다.
 
-Exchange 온-프레미스에 사서함이 있는 받는 사람이 Exchange를 사용하는 다른 조직으로부터 보호된 전자 메일을 수신하는 경우 이 콘텐츠는 Outlook과 같은 서식 있는 전자 메일 클라이언트에서만 열 수 있습니다.  이 콘텐츠는 Exchange Active Sync IRM을 사용하는 장치에서 열 수 없습니다.
+받는 사람이 보호된 메일을 수신하고 Exchange를 메일 서버로 사용하지 않거나 보내는 사람이 다른 조직에 속하는 경우, 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다. 이 콘텐츠는 Exchange Active Sync IRM을 사용하여 모바일 메일 클라이언트 또는 Outlook Web Access에서 열 수 없습니다.
 
 ##### 각주 5
 보호된 문서 보기 및 편집을 지원합니다. 자세한 내용은 Office 블로그에서 [iPad 및 iPhone용 Office에 Azure 권한 관리 지원 제공](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) 게시물을 참조하세요.
@@ -152,6 +152,6 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 자주 사용하는 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)을 참조하세요.
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Azure Rights Management 활성화 | Azure Information Protection"
 description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 문서 및 전자 메일 보호를 시작할 수 있도록 하려면 Azure Rights Management 서비스를 활성화해야 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e67fe1e6b63be679ae62bb45359db98df59386da
-ms.openlocfilehash: f7880bb46555384be728aa0059f37ad9844a9022
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 06c71229427743e9669baee1fdbb41f175180b0f
 
 
 ---
@@ -27,9 +27,9 @@ Azure Information Protection의 Azure Rights Management 서비스가 활성화�
 Azure Rights Management 서비스를 활성화하기 전에 해결되는 비즈니스 문제, 일반적인 몇 가지 사용 사례, 작동 방식 등 서비스에 대해 자세히 알아보려면 [Azure 권한 관리란?](../understand-explore/what-is-azure-rms.md)을 참조하세요.
 
 > [!IMPORTANT]
-> [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 활성화하기 전에 조직에 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스가 포함된 서비스 계획이 있는지 확인합니다. 서비스 계획이 없는 경우 Azure Rights Management를 활성화할 수 없습니다.
+> [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 활성화하기 전에 조직에 Azure Rights Management 데이터 보호가 포함된 서비스 계획이 있는지 확인합니다. 서비스 계획이 없는 경우 Azure Rights Management를 활성화할 수 없습니다.
 >
-> Azure Information Protection [가격 책정 페이지](https://go.microsoft.com/fwlink/?LinkId=827589)에서 구독 정보를 검토하여 Azure Information Protection 기능이 포함된 구독이 조직에 있는지 확인하세요.
+> [Azure Information Protection Premium plan](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)(Azure Information Protection Premium 계획) 또는 [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다.
 
 Azure Information Protection의 Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자는 해당 파일에 정보 보호를 적용할 수 있으며 모든 사용자가 Azure Rights Management 서비스로 보호되는 파일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
 
@@ -72,15 +72,15 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
 
 
 ## 다음 단계
-이제 조직에 대해 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 활성화했으므로 [Azure 권한 관리 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용하여 Azure Information Protection을 사용자 및 관리자에게 배포하기 전에 수행해야 하는 다른 구성 단계가 있는지 확인합니다. 
+이제 조직에 대해 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 활성화했으므로 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용하여 Azure Information Protection을 사용자 및 관리자에게 배포하기 전에 수행해야 하는 다른 구성 단계가 있는지 확인합니다. 
 
 예를 들어 사용자가 파일에 정보 보호를 적용하기 쉽도록 [사용자 지정 템플릿](configure-custom-templates.md)을 사용하고, [Rights Management 커넥터](deploy-rms-connector.md)를 설치하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용할 온-프레미스 서버를 연결하고, 모든 장치에서 모든 파일 형식 보호를 지원하는 [Rights Management 공유 응용 프로그램](../rms-client/sharing-app-windows.md)을 배포할 수도 있습니다. 
 
-Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정보 권한 관리) 기능을 사용하려면 추가 구성이 필요합니다. 사용자 응용 프로그램이 Rights Management 서비스에서 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법](../understand-explore/applications-support.md)을 참조하세요.
+Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정보 권한 관리) 기능을 사용하려면 추가 구성이 필요합니다. 사용자 응용 프로그램이 Rights Management Service에서 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure Rights Management Service를 지원하는 방법](../understand-explore/applications-support.md)을 참조하세요.
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

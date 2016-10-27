@@ -3,7 +3,7 @@ title: "개인용 RMS 등록 방법 | Azure Information Protection"
 description: "이 무료 계정의 등록 지침과 등록 프로세스의 작동 방식 관련 기술 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
+ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
+ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 
 ---
@@ -83,7 +83,7 @@ ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
     -   필요한 경우, 권한 관리로 보호되는 파일을 암호 해독할 수 있도록 회사 소유의 데이터에 대해 eDiscovery를 수행할 수 있습니다. 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 검색을 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
 
-    -   조직에서 사용되는 권한 관리의 모든 활동을 기록할 수 있습니다. 이 기능은 매우 강력한데, 보호되고 있는 파일과 보호된 파일에 성공적으로 액세스하는 사용자를 모니터링할 수 있을 뿐만 아니라 보호된 파일에 액세스하려고 시도하는 권한 없는 사용자의 잠재적으로 의심스러운 동작을 식별할 수 있기 때문입니다. 자세한 내용은 [Azure 권한 관리 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
+    -   조직에서 사용되는 권한 관리의 모든 활동을 기록할 수 있습니다. 이 기능은 매우 강력한데, 보호되고 있는 파일과 보호된 파일에 성공적으로 액세스하는 사용자를 모니터링할 수 있을 뿐만 아니라 보호된 파일에 액세스하려고 시도하는 권한 없는 사용자의 잠재적으로 의심스러운 동작을 식별할 수 있기 때문입니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
     -   [Azure RMS 구독](https://technet.microsoft.com/dn858608)에서 지원한다면 사용자에게 보호되는 문서를 추적하고 취소할 수 있는 기능을 제공합니다. 자세한 내용은 [RMS 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)에서 [파일 추적 및 해지](../rms-client/sharing-app-track-revoke.md)를 참조하세요.
 
@@ -97,6 +97,6 @@ ms.openlocfilehash: 362ea0d002e25c830c9e50ac7f1956f1e9ea8bb7
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -108,14 +108,11 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 * [개발자 용어 및 개념](core-concepts.md)
 
-* [iOS/OS X API 참조](/information-protection/sdk/4.2/api/ios/ios)
+* [iOS/OS X API 참조](https://msdn.microsoft.com/library/dn758306.aspx)
 
  
 
  
-
-
-
 
 
 

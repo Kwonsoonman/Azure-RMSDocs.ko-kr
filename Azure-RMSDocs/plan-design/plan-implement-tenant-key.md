@@ -3,7 +3,7 @@ title: "Azure Rights Management 테넌트 키 계획 및 구현 | Azure Informat
 description: "Azure Information Protection 테넌트 키를 계획 및 관리하는 데 도움이 되는 정보를 제공합니다. Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 70f4b178d2814683551574f4e777213eea914477
+ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
+ms.openlocfilehash: ed35e72a5dbe23aba0817640075d34fd01bd269d
 
 
 ---
@@ -94,7 +94,7 @@ Thales HSM 및 Azure 주요 자격 증명 모음과 함께 사용되는 방법�
 
 키를 주요 자격 증명 모음으로 전송하면 주요 자격 증명 모음에 자격 증명 모음의 이름, 키 컨테이너, 키의 이름 및 키 버전이 들어 있는 URL인 키 ID가 지정됩니다. 예를 들면 다음과 같습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333** 이 URL을 지정하여 Azure Information Protection의 Azure Rights Management 서비스에 이 키를 사용하도록 지시해야 합니다.
 
-하지만 Azure Information Protection에서 키를 사용하려면 조직의 주요 자격 증명 모음에서 키를 사용하도록 Azure Rights Management 서비스를 인증해야 합니다. 그렇게 하려면 Azure Key Vault 관리자는 Key Vault PowerShell cmdlet, [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/ko-kr/library/mt603625(v=azure.200\).aspx)을 사용하여 Azure Rights Management 서비스 주체(**Microsoft.Azure.RMS**)에 권한을 부여합니다. 예를 들면 다음과 같습니다.
+하지만 Azure Information Protection에서 키를 사용하려면 조직의 주요 자격 증명 모음에서 키를 사용하도록 Azure Rights Management 서비스를 인증해야 합니다. 그렇게 하려면 Azure Key Vault 관리자는 Key Vault PowerShell cmdlet, [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx)을 사용하여 Azure Rights Management 서비스 주체(**Microsoft.Azure.RMS**)에 권한을 부여합니다. 예를 들면 다음과 같습니다.
 
     Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName Microsoft.Azure.RMS -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
@@ -106,7 +106,7 @@ Thales HSM 및 Azure 주요 자격 증명 모음과 함께 사용되는 방법�
 
     Use-AadrmKeyVaultKey -KeyVaultKeyUrl "https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333"
 
-Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 하는 경우 Azure Key Vault에서 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/library/dn868053.aspx)를 실행하여 키 URL을 확인할 수 있습니다.
+Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 하는 경우 Azure Key Vault에서 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/en-us/library/dn868053(v=azure.300\).aspx)를 실행하여 키 URL을 확인할 수 있습니다.
 
 
 ## 다음 단계
@@ -136,6 +136,6 @@ Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 �
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

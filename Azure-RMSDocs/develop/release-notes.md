@@ -3,7 +3,7 @@ title: "새로운 기능 및 릴리스 정보 | Azure RMS"
 description: "이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다."
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: da4dce1c44cd79e90e7d232f74f194b734dea0f6
+ms.sourcegitcommit: 81cbe287b67e2a1598efdd2a816913f147c7ff7b
+ms.openlocfilehash: f3d4b1ba0da3530121aa81056238533f0dcbed2f
 
 
 ---
@@ -37,7 +37,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 ### 2016년 6월의 새로운 기능
 
 - **최신 인증에 대한 지원** - RMS 지원 앱에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다. MFA(Multi-Factor Authentication), SAML 기반 타사 ID 공급자와 RMS 클라이언트 응용 프로그램, 스마트 카드 및 인증서 기반 인증과 같은 로그인 기능이 가능하며, 기본 인증 프로토콜을 사용하기 위해 RMS 지원 앱을 사용할 필요가 없습니다.
-- **문서 추적 지원** - 이제 개발자는 앱에서 문서를 보호하는 경우 문서 추적을 사용할 수 있습니다. 
+- **문서 추적 지원** - 이제 개발자는 앱에서 문서를 보호하는 경우 문서 추적을 사용할 수 있습니다.
 - 성능 향상
 - 버그 수정
 
@@ -48,29 +48,29 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 -   iOS/OS X 및 Android 운영 체제에 대한 문서 추적(RMS 온라인에만 해당).
 
-    iOS/OS X에 대한 자세한 내용과 사용 지침은 [**MSUserPolicy**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msuserpolicy_interface_objc)에 대한 추적 정보 및 추가 문서 추적 등록 메서드를 제공하는 [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc) 클래스를 참조하세요. [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) 및 [**UserPolicy**](/information-protection/sdk/4.2/api/android/userpolicy)에는 유사한 Android용 항목이 추가되었습니다.
+    iOS/OS X에 대한 자세한 내용과 사용 지침은 [MSUserPolicy](https://msdn.microsoft.com/library/dn790796.aspx)에 대한 추적 정보 및 추가 문서 추적 등록 메서드를 제공하는 [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx) 클래스를 참조하세요. [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx) 및 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)에는 유사한 Android용 항목이 추가되었습니다.
 
-    문서 추적 기능에 대한 자세한 내용은 [**방법: 문서 추적 사용**](how-to-use-document-tracking.md)을 참조하세요.
+    문서 추적 기능에 대한 자세한 내용은 [방법: 문서 추적 사용](how-to-use-document-tracking.md)을 참조하세요.
 
 -   Android API의 비동기 버전을 병렬화하는 동기 메서드 집합:
 
-    [**CustomProtectedInputStream.create 동기 메서드**](/information-protection/sdk/4.2/api/android/customprotectedinputstream#msipcthin2_customprotectedinputstream_create_synchronous_method_java)
+    [CustomProtectedInputStream.create 동기 메서드](https://msdn.microsoft.com/library/mt631362.aspx)
 
-    [**CustomProtectedOutputStream.create 동기 메서드**](/information-protection/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_create_synchronous_method)
+    [CustomProtectedOutputStream.create 동기 메서드](https://msdn.microsoft.com/library/mt631363.aspx)
 
-    [**ProtectedFileInputStream.create 동기 메서드**](/information-protection/sdk/4.2/api/android/protectedfileinputstream#msipcthin2_protectedfileinputstream_create_synchronous_method)
+    [ProtectedFileInputStream.create 동기 메서드](https://msdn.microsoft.com/library/mt631375.aspx)
 
-    [**ProtectedFileOutputStream.create 동기 메서드**](/information-protection/sdk/4.2/api/android/customprotectedoutputstream#msipcthin2_customprotectedoutputstream_create_synchronous_method)
+    [ProtectedFileOutputStream.create 동기 메서드](https://msdn.microsoft.com/library/mt631376.aspx)
 
-    [**TemplateDescriptor.getTemplates 동기 메서드**](/information-protection/sdk/4.2/api/android/templatedescriptor#msipcthin2_templatedescriptor_gettemplates_synchronous_method_java)
+    [TemplateDescriptor.getTemplates 동기 메서드](https://msdn.microsoft.com/library/mt631380.aspx)
 
-    [**UserPolicy.acquire 동기 메서드**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_acquire_synchronous_method_java)
+    [UserPolicy.acquire 동기 메서드](https://msdn.microsoft.com/library/mt631384.aspx)
 
-    [**UserPolicy.create(PolicyDescriptor...) 동기 메서드**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_policydescriptor_______synchronous_method_java)
+    [UserPolicy.create(PolicyDescriptor...) 동기 메서드**](https://msdn.microsoft.com/library/mt631385.aspx)
 
-    [**UserPolicy.create(TempalteDescriptor...) 동기 메서드**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_create_templatedescriptor_______synchronous_method_java)
+    [UserPolicy.create(TempalteDescriptor...) 동기 메서드](https://msdn.microsoft.com/library/mt631386.aspx)
 
--   새 [**ProtectedBuffer**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_protectedbuffer_class) 클래스가 Android API에 추가되었습니다.
+-   새 [ProtectedBuffer](https://msdn.microsoft.com/library/mt631369.aspx)클래스가 Android API에 추가되었습니다.
 -   오류 메시지 및 문제 해결 환경을 개선하기 위한 업데이트
 -   암호화 작업 성능 향상
 
@@ -90,7 +90,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     앱 암호화 및 암호 해독이 독립적으로 및 병렬로 작동할 수 있습니다.
 
-    자세한 내용은 [**MSProtector**](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msprotector_class_objc)를 참조하세요.
+    자세한 내용은 [MSProtector](https://msdn.microsoft.com/library/mt210993.aspx)를 참조하세요.
 
     로그 수준 제어 설정을 사용할 수 있습니다.
 
@@ -98,7 +98,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     캐시 지우기 지원이 추가되었습니다.
 
-    자세한 내용은 [**MSProtection:resetStateWithCompletionBlock**](/information-protection/sdk/4.2/api/iOS/msprotection#msipcthin2_msprotection_resetstatewithcompletionblock_method_objc)을 참조하세요.
+    자세한 내용은 [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx)을 참조하세요.
 
 ### 2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가
 
@@ -114,11 +114,11 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 -   SDK 동작의 사용자 확인을 허용하는 *사용자 동의* 처리를 위한 Android 및 iOS/OS X SDK API 확장. 현재 지원되는 동의 형식은 문서 추적 및 알 수 없는 AD RMS 서비스 URL 액세스입니다.
 
-    자세한 내용을 보려면 Android API 버전의 [**ConsentCallback 인터페이스**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_consentcallback_interface_java)를 예제로 참조하세요.
+    자세한 내용을 보려면 Android API 버전의 [ConsentCallback interface](https://msdn.microsoft.com/library/dn833503.aspx)(ConsentCallback 인터페이스)를 예제로 참조하세요.
 
 -   이제 iOS 8 및 OS X 10.10(Yosemite)이 지원됩니다. 또한 Xcode 6에 필요한 몇 가지 속성 이름 변경이 있었습니다.
 
-    예를 들어 MSUserPolicy.name이 [**MSUserPolicy.policyName**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_name_property_objc)으로 변경되었습니다.
+    예를 들어 MSUserPolicy.name이 [MSUserPolicy.policyName](https://msdn.microsoft.com/library/dn790799.aspx)으로 변경되었습니다.
 
 ## 릴리스 정보
 
@@ -146,9 +146,9 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     **해결 방법** - 응용 프로그램에서 Android API에 대한 다중 인스턴스 호출을 허용하지 않도록 합니다.
 
--   [**ProtectedFileOutputStream**](/information-protection/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array, int offset, int length)** 메서드를 *array.length* 값과 다른 길이로 사용하는 경우 나중에 SDK를 통해 콘텐츠를 사용할 수 없습니다.
+-   [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array, int offset, int length) 메서드를 *array.length* 값과 다른 길이로 사용하는 경우 나중에 SDK를 통해 콘텐츠를 사용할 수 없습니다.
 
-    **해결 방법** - 알려진 문제입니다. 문제를 완화하려면 항상 **byte \[\]** 배열을 length 매개 변수와 동일한 길이 값으로 전달하거나, [**ProtectedFileOutputStream**](/information-protection/sdk/4.2/api/android/protectedfileoutputstream#msipcthin2_protectedfileoutputstream_class_java)**.write(byte\[\] array)** 메서드를 사용합니다.
+    **해결 방법** - 알려진 문제입니다. 문제를 완화하려면 항상 *byte \[\]* 배열을 length 매개 변수와 동일한 길이 값으로 전달하거나, [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx)write(byte\[\] array) 메서드를 사용합니다.
 
 **iOS 및 OS X**
 
@@ -174,8 +174,8 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     다음 메서드는 동시에 실행하면 안 됩니다. 실행 완료를 모니터링하려면 설명된 대로 완료 블록 방법을 사용합니다.
 
-    - [**protectedDataWithProtectedFile**](/information-protection/sdk/4.2/api/iOS/msprotecteddata#msipcthin2_msprotecteddata_protecteddatawithprotectedfile_completionblock_method_objc)
-    - [**customProtectedDataWithPolicy**](/information-protection/sdk/4.2/api/iOS/mscustomprotecteddata#msipcthin2_mscustomprotecteddata_customprotecteddatawithpolicy_protecteddata_contentstartposition_contentsize_completionblock_method_objc)
+    - [MSProtectedData.protectedDataWithProtectedFile](https://msdn.microsoft.com/library/dn758351.aspx)
+    - [MSCustomProtectedData.customProtectedDataWithPolicy](https://msdn.microsoft.com/library/dn758315.aspx)
 
 
 
@@ -232,6 +232,6 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

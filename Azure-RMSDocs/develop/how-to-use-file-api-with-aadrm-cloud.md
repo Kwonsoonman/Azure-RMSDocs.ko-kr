@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 1e95ce00c96fb0ee0d53ce4865a566a00cf62076
+ms.sourcegitcommit: 7df62371ba4a2eea0227c731cf90b3454993f533
+ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 
 ---
@@ -34,8 +34,8 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 
 ## Azure 권한 관리 서비스 연결
 
--   [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)를 호출합니다.
--   [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)를 설정합니다.
+-   [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)를 호출합니다.
+-   [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)를 설정합니다.
 
         C++
         int mode = IPC_API_MODE_SERVER;
@@ -45,10 +45,10 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
   **참고** 자세한 내용은 [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)을 참조하세요.
 
      
--   다음 단계는 **pcCredential**([**IPC\_CREDENTIAL**](/information-protection/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)) 멤버에 Azure 권한 관리 서비스의 연결 정보를 채워 [**IPC\_PROMPT\_CTX**](/information-protection/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 구조체 인스턴스를 만들기 위한 설정입니다.
--   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 구조체 인스턴스를 만드는 경우 대칭 키 서비스 ID 생성(이 항목의 앞부분에 나열된 필수 조건 참조)의 정보를 사용하여 **wszServicePrincipal**, **wszBposTenantId** 및 **cbKey** 매개 변수를 설정합니다.
+-   다음 단계는 *pcCredential*([IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)) 멤버에 Azure Rights Management 서비스의 연결 정보를 채워 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 구조체 인스턴스를 만들기 위한 설정입니다.
+-   [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 구조체 인스턴스를 만드는 경우 대칭 키 서비스 ID 생성(이 항목의 앞부분에 나열된 필수 조건 참조)의 정보를 사용하여 *wszServicePrincipal*, *wszBposTenantId* 및 *cbKey* 매개 변수를 설정합니다.
 
-**참고** 검색 서비스의 기존 조건으로 인해 북미 지역에 거주하지 않는 경우 다른 지역의 대칭 키 자격 증명은 수락되지 않으므로 테넌트 URL을 직접 지정해야 합니다. 이 작업은 [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist) 또는 [**IpcGetTemplateIssuerList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)의 [**IPC\_CONNECTION\_INFO**](/information-protection/sdk/2.1/api/win/ipc_connection_info#msipc_ipc_connection_info) 매개 변수를 통해 수행됩니다.
+**참고** - 검색 서비스의 기존 조건으로 인해 북아메리카 지역에 거주하지 않는 경우 다른 지역의 대칭 키 자격 증명은 수락되지 않으므로 테넌트 URL을 직접 지정해야 합니다. 이 작업은 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) 또는 [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx)[IPC\_CONNECTION\_INFO](https://msdn.microsoft.com/library/hh535274.aspx) 형식의 *pConnectionInfo* 매개 변수를 통해 수행됩니다.
 
 ## 대칭 키를 생성하고 필요한 정보 수집
 
@@ -57,16 +57,25 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 -   [Microsoft Online 로그인 도우미](http://go.microsoft.com/fwlink/p/?LinkID=286152)를 설치합니다.
 -   [Azure AD Powershell 모듈](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi)을 설치합니다.
 
-**참고** Powershell cmdlet을 사용하려면 테넌트 관리자여야 합니다.
+**참고** - Powershell cmdlet을 사용하려면 테넌트 관리자여야 합니다.
 
--   Powershell을 시작하고 다음 명령을 실행하여 키        `Import-Module MSOnline`
-            `Connect-MsolService`(관리자 자격 증명 입력)        `New-MsolServicePrincipal`(표시 이름 입력)를 생성합니다.
--   대칭 키를 생성한 후 키 자체와 **AppPrincipalId**를 포함하여 키에 대한 정보를 출력합니다.
+- Powershell을 시작하고 다음 명령을 실행하여 키를 생성합니다.
 
+    `Import-Module MSOnline`
 
-    The following symmetric key was created as one was not supplied ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
+    `Connect-MsolService` (관리자 자격 증명 입력)
 
-    DisplayName : RMSTestApp ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963} ObjectId : 0ee53770-ec86-409e-8939-6d8239880518 AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
+    `New-MsolServicePrincipal` (표시 이름 입력)
+
+- 대칭 키를 생성한 후 키 자체와 *AppPrincipalId*를 포함하여 키에 대한 정보를 출력합니다.
+
+      The following symmetric key was created as one was not supplied
+      ZYbF/lTtwE28qplQofCpi2syWd11D83+A3DRlb2Jnv8=
+
+      DisplayName : RMSTestApp
+      ServicePrincipalNames : {7d9c1f38-600c-4b4d-8249-22427f016963}
+      ObjectId : 0ee53770-ec86-409e-8939-6d8239880518
+      AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
 ### **TenantBposId** 및 **Url**확인 지침
@@ -81,20 +90,22 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
     `Get-AadrmConfiguration`
 
 
--   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 인스턴스를 만들고 몇 개의 멤버를 설정합니다.
+- [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 인스턴스를 만들고 몇 개의 멤버를 설정합니다.
 
-    // Create a key structure.
-    IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
+      // Create a key structure.
+      IPC_CREDENTIAL_SYMMETRIC_KEY symKey = {0};
 
-    // Set each member with information from service creation.
-    symKey.wszBase64Key = "your service principal key"; symKey.wszAppPrincipalId = "your app principal identifier"; symKey.wszBposTenantId = "your tenent identifier";
+      // Set each member with information from service creation.
+      symKey.wszBase64Key = "your service principal key";
+      symKey.wszAppPrincipalId = "your app principal identifier";
+      symKey.wszBposTenantId = "your tenant identifier";
 
 
-자세한 내용은 [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)를 참조하세요.
+자세한 내용은 [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)를 참조하세요.
 
--   [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key) 인스턴스를 포함하는 [**IPC\_CREDENTIAL**](/information-protection/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential) 구조체 인스턴스를 만듭니다.
+-   [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 인스턴스를 포함하는 [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx) 구조체 인스턴스를 만듭니다.
 
-**참고** *connectionInfo* 멤버는 이전 `Get-AadrmConfiguration` 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
+**참고** - *connectionInfo* 멤버는 이전 `Get-AadrmConfiguration` 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};
@@ -120,7 +131,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 ### 템플릿 식별 후 암호화
 
 -   암호화에 사용할 템플릿을 선택합니다.
-    동일한 [**IPC\_PROMPT\_CTX**](/information-protection/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 인스턴스를 전달하여 [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)를 호출합니다.
+    동일한 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 인스턴스를 전달하여 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)를 호출합니다.
 
 
     PCIPC_TIL pTemplates = NULL; IPC_TEMPLATE_ISSUER templateIssuer = (pTemplateIssuerList->aTi)[0];
@@ -128,9 +139,9 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
     hr = IpcGetTemplateList(&(templateIssuer.connectionInfo),        IPC_GTL_FLAG_FORCE_DOWNLOAD,        0,        &promptCtx,        NULL,        &pTemplates);
 
 
--   이 항목의 앞부분에서 설명한 템플릿을 사용하고 동일한 [**IPC\_PROMPT\_CTX**](/information-protection/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx) 인스턴스를 전달하여 [**IpcfEncrcyptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)을 호출합니다.
+-   이 항목의 앞부분에서 설명한 템플릿을 사용하고 동일한 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 인스턴스를 전달하여 [IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx)을 호출합니다.
 
-[**IpcfEncrcyptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile) 사용 예:
+[IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx)사용 예:
 
     LPCWSTR wszContentTemplateId = pTemplates->aTi[0].wszID;
     hr = IpcfEncryptFile(wszInputFilePath,
@@ -141,7 +152,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
            NULL,
            &wszOutputFilePath);
 
-[**IpcfDecryptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile) 사용 예:
+[IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx) 사용 예:
 
     hr = IpcfDecryptFile(wszInputFilePath,
            IPCF_DF_FLAG_DEFAULT,
@@ -156,23 +167,23 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 * [Azure 권한 관리 시작](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [RMS SDK 2.1 시작](getting-started-with-ad-rms-2-0.md)
 * [ACS를 통해 서비스 ID 만들기](https://msdn.microsoft.com/en-us/library/gg185924.aspx)
-* [**IpcSetGlobalProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetglobalproperty)
-* [**IpcInitialize**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-* [**IPC\_PROMPT\_CTX**](/information-protection/sdk/2.1/api/win/ipc_prompt_ctx#msipc_ipc_prompt_ctx)
-* [**IPC\_CREDENTIAL**](/information-protection/sdk/2.1/api/win/ipc_credential#msipc_ipc_credential)
-* [**IPC\_CREDENTIAL\_SYMMETRIC\_KEY**](/information-protection/sdk/2.1/api/win/ipc_credential_symmetric_key#msipc_ipc_credential_symmetric_key)
-* [**IpcGetTemplateIssuerList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplateissuerlist)
-* [**IpcGetTemplateList**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-* [**IpcfDecryptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfdecryptfile)
-* [**IpcfEncrcyptFile**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfile)
-* [**IpcCreateLicenseFromScratch**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromscratch)
-* [**IpcCreateLicenseFromTemplateID**](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensefromtemplateid)
+* [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
+* [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
+* [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx)
+* [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)
+* [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)
+* [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx)
+* [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)
+* [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx)
+* [IpcfEncrcyptFile](https://msdn.microsoft.com/library/dn133059.aspx)
+* [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
+* [IpcCreateLicenseFromTemplateID](https://msdn.microsoft.com/library/hh535257.aspx)
  
 
  
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

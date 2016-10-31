@@ -3,7 +3,7 @@ title: "2단계&colon; HSM 보호된 키-HSM 보호된 키 마이그레이션 | 
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS HSM으로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a61075eb555f6cec1572851bdde6fae85e6310ed
-ms.openlocfilehash: 7db4da1a48bb24ce7680c84fe586a3f96e61c0b7
+ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
+ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
 
 
 ---
@@ -51,7 +51,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
     키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333과 같이 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
 
-2. 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/ko-kr/library/mt603625(v=azure.200\).aspx) cmdlet을 사용하여 Microsoft.Azure.RMS 서비스 주체가 Azure Information Protection 테넌트 키를 저장하는 주요 자격 증명 저장소에 액세스하도록 권한을 부여합니다. 필요한 권한은 decrypt, encrypt, unwrapkey, wrapkey, verify 및 sign입니다.
+2. 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx) cmdlet을 사용하여 Microsoft.Azure.RMS 서비스 주체가 Azure Information Protection 테넌트 키를 저장하는 주요 자격 증명 모음에 액세스하도록 권한을 부여합니다. 필요한 권한은 decrypt, encrypt, unwrapkey, wrapkey, verify 및 sign입니다.
     
     예를 들어 Azure Information Protection에 대해 만든 주요 자격 증명 모음의 이름이 contoso-byok-ky이고 리소스 그룹 이름이 contoso-byok-rg인 경우 다음 명령을 실행합니다.
     
@@ -64,7 +64,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 이 절차는 Azure Information Protection의 관리자가 수행합니다.
 
-1.  인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Connnect-AadrmService](https://msdn.microsoft.com/library/dn629415.aspx ) cmdlet을 사용하여 Azure Rights Management 서비스에 연결합니다.
+1.  인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Connnect-AadrmService](https://msdn.microsoft.com/library/dn629415.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에 연결합니다.
     
     그런 다음 [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet을 사용하여 처음에 내보낸 트러스트된 게시 도메인(.xml) 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 .xml 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure RMS에서 콘텐츠를 보호하는 데 사용할 HSM 키에 해당하는 내보낸 트러스트된 게시 도메인이 포함되어 있는 파일을 선택하세요. 
     
@@ -80,7 +80,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 2.  명령이 완료되면 트러스트된 게시 도메인을 내보내 만든 나머지 각 .xml 파일에 대해 1단계를 반복합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다.  
 
-3.  [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
+3.  [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
 
     ```
     Disconnect-AadrmService
@@ -94,6 +94,6 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

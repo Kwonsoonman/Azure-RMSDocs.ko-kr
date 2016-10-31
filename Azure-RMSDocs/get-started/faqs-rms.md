@@ -3,7 +3,7 @@ title: "데이터 보호 서비스, Azure Information Protection의 Azure Rights
 description: "데이터 보호 서비스인 Azure Information Protection의 Azure Rights Management 서비스(Azure RMS)의 몇 가지 질문과 대답입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3b5f82e495291bd48d488f44bc72c1d478a879e0
-ms.openlocfilehash: 874836e1a0abc9bbb3f5d881980ba0d5dfe30869
+ms.sourcegitcommit: ec8609217db42a2cf0b3f89367cf4dee6ccb77de
+ms.openlocfilehash: ae25f5af9784b0de92626dbfe65d4358359b4bd9
 
 
 ---
@@ -129,6 +129,18 @@ Azure Information Protection는 모든 사용자와 안전하게 공유할 수 �
 
 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
 
+## 문서 추적 사이트에서 해지를 테스트할 때 다른 사용자가 최대 30일 동안 문서에 계속 액세스할 수 있다는 메시지가 표시되는데, 이 기간을 구성할 수 있나요?
+
+예. 이 메시지는 해당 특정 파일에 대한 사용권을 나타냅니다. 사용 라이선스는 보호된 파일 및 메일 메시지를 여는 사용자에게 부여되는 문서별 인증서입니다. 이 인증서에는 문서의 정책에 정의된 추가적인 액세스 제한 사항뿐만 아니라 파일 또는 메일 메시지에 대한 사용자의 권한과 콘텐츠를 암호화하는 데 사용된 암호화 키도 들어 있습니다. 사용권의 유효 기간이 만료되고 사용자가 파일 또는 메일 메시지를 열려면 Azure Rights Management 서비스에 사용자 자격 증명을 다시 제출해야 합니다. 
+
+파일을 해지하는 경우 해당 작업은 사용자가 Azure Rights Management 서비스에 인증하는 경우에만 적용될 수 있습니다. 따라서 파일의 사용권 유효 기간이 30일이고 사용자가 이미 문서를 연 경우 해당 사용자는 사용권 기간 동안 문서에 계속 액세스할 수 있습니다. 사용권이 만료되는 경우 사용자는 문서가 이제 해지되어 액세스가 거부되는 시점에 다시 인증해야 합니다.
+
+테넌트에 대한 사용권 유효 기간의 기본값은 30일이며 PowerShell cmdlet [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx)을 사용하여 이 값을 구성할 수 있습니다. 이 설정은 사용자 지정 템플릿의 더 제한적인 설정으로 재정의할 수 있습니다. 
+
+테넌트 설정과 템플릿 설정은 사용자가 RMS 공유 응용 프로그램을 사용할 때 **이러한 문서에 대한 액세스를 즉시 취소할 수 있도록 허용** 옵션을 선택하여 재정의할 수 있습니다. 이 설정은 사용권 유효 기간을 0으로 설정합니다. 
+
+자세한 내용 및 사용권 사용 방법의 예는 [Set-AadrmMaxUseLicenseValidityTime](https://msdn.microsoft.com/library/azure/dn932063.aspx)에 대한 자세한 설명을 참조하세요.
+
 ## Rights Management 기능을 사용하면 화면을 캡처할 수 없나요?
 Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-rights.md)을 부여하지 않으므로 Windows 플랫폼(Windows 7, Windows 8.1, Windows 10, Windows Phone) 및 Android에서 일반적으로 사용되는 화면 캡처 도구에서 화면 캡처를 방지할 수 있습니다. 그러나 iOS 및 Mac 장치에서 화면 캡처를 보호하도록 모든 앱을 허용하지 않으므로 브라우저(예: Outlook Web App 및 Office Online과 함께 사용하는 경우)에서도 화면 캡처를 막을 수 없습니다.
 
@@ -145,6 +157,6 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

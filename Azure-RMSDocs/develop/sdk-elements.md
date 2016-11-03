@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: fa85dde3f578f51efa57af78e211d3e712378b61
+ms.sourcegitcommit: 4e96ba043584c5d8c140d6804c72cf63362f58c5
+ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
 
 
 ---
@@ -43,9 +43,9 @@ ms.openlocfilehash: fa85dde3f578f51efa57af78e211d3e712378b61
 |Ipcerror.h|\inc|RMS SDK 2.1에서 내보낸 공개 오류 코드를 포함합니다.|
 |Ipcfile.h|\inc|RMS SDK 2.1에서 내보낸 파일 API 인터페이스를 포함합니다.|
 |Msipc.lib|\lib|RMS SDK 2.1을 사용하여 x86 응용 프로그램을 빌드할 때 연결할 라이브러리입니다.|
-|Msipc_s.lib|\lib|x86 응용 프로그램의 [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)에 대한 진입점을 제공합니다.|
+|Msipc_s.lib|\lib|x86 응용 프로그램의 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)에 대한 진입점을 제공합니다.|
 |Msipc.lib|\lib\x64|RMS SDK 2.1을 사용하여 x64 응용 프로그램을 빌드할 때 연결할 라이브러리입니다.|
-|Msipc_s.lib|\lib\x64|x64 응용 프로그램의 [<strong>IpcInitialize</strong>](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)에 대한 진입점을 제공합니다.|
+|Msipc_s.lib|\lib\x64|x64 응용 프로그램의 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)에 대한 진입점을 제공합니다.|
 |Genmanifest.exe|\tools|RMS 사용 응용 프로그램을 개발하는 동안 사용할 매니페스트를 생성합니다.|
  
 
@@ -55,6 +55,6 @@ ms.openlocfilehash: fa85dde3f578f51efa57af78e211d3e712378b61
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

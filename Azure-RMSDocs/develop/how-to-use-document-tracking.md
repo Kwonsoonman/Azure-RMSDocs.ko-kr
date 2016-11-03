@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3d5d920f628bc39c4c280afa53be0b7199433803
+ms.sourcegitcommit: 04234755fabb10794f5be7c4fc658573bebf6e70
+ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 
 ---
@@ -32,38 +32,33 @@ ms.openlocfilehash: 3d5d920f628bc39c4c280afa53be0b7199433803
 
 지정된 콘텐츠에 대해 문서 추적을 설정하는 데 사용할 단계 순서는 다음과 같습니다.
 
--   **라이선스 메타데이터** 개체를 만듭니다.
+-   **라이선스 메타데이터** 개체를 만든 다음 **콘텐츠 이름** 및 **알림 유형**을 설정합니다. 두 속성만 필수 속성입니다.
+   - Android - [LicenseMetadata](https://msdn.microsoft.com/library/mt573675.aspx)
+   -  iOS - [MSLicenseMetadata](https://msdn.microsoft.com/library/mt573683.aspx)
 
-    자세한 내용은 [**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) 또는 [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc)를 참조하세요.
+정책 유형을 템플릿 또는 임시로 선택합니다.
+- 템플릿 기반 문서 추적의 경우 라이선스 메타데이터를 매개 변수로 전달하여 **사용자 정책** 개체를 만듭니다.
+  - Android - [UserPolicy.create](https://msdn.microsoft.com/library/dn790887.aspx)
+  - iOS - [MSUserPolicy.userPolicyWithTemplateDescriptor](https://msdn.microsoft.com/library/dn790808.aspx)
 
--   **콘텐츠 이름** 및 **알림 유형**을 설정합니다. 두 속성만 필수 속성입니다.
-
-    자세한 내용은 플랫폼에 해당하는 라이선스 메타데이터 클래스([**LicenseMetadata**](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_licensemetadata_interface_java) 또는 [**MSLicenseMetadata**](/information-protection/sdk/4.2/api/iOS/mslicensemetadata#msipcthin2_mslicensemetadata_class_objc))의 속성 액세스 방법을 참조하세요.
-
--   정책 유형별로는 템플릿 또는 임시입니다.
-
-    -   템플릿 기반 문서 추적의 경우 라이선스 메타데이터를 매개 변수로 전달하여 **사용자 정책** 개체를 만듭니다.
-
-        자세한 내용은 [**UserPolicy.create**](/information-protection/sdk/4.2/api/android/userpolicy#msipcthin2_userpolicy_class_java) 및 [**MSUserPolicy.userPolicyWithTemplateDescriptor**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_templatedescriptor_property_objc)를 참조하세요.
-
-    -   임시 기반 문서 추적의 경우 **정책 설명자** 개체의 **라이선스 메타데이터** 속성을 설정합니다.
-
-        자세한 내용은 [**PolicyDescriptor.getLicenseMetadata**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_interface_java), [**PolicyDescriptor.setLicenseMetadata**](/information-protection/sdk/4.2/api/android/policydescriptor#msipcthin2_policydescriptor_setlicensemetadata_java) 및 [**MSPolicyDescriptor.licenseMetadata**](/information-protection/sdk/4.2/api/iOS/mspolicydescriptor#msipcthin2_mspolicydescriptor_licensemetadata_property_objc)를 참조하세요.
+- 임시 기반 문서 추적의 경우 **정책 설명자** 개체의 **라이선스 메타데이터** 속성을 설정합니다.
+  - Android -  [PolicyDescriptor.setLicenseMetadata](https://msdn.microsoft.com/library/mt573698.aspx)
+  - iOS -  [MSPolicyDescriptor.licenseMetadata](https://msdn.microsoft.com/library/mt573693.aspx).
 
     **참고** 라이선스 메타데이터 개체는 지정된 사용자 정책에 대해 문서 추적을 설정하는 중에만 직접 액세스할 수 있습니다. 사용자 정책 개체를 만든 후에는 관련된 라이선스 메타데이터에 액세스할 수 없습니다. 즉, 라이선스 메타데이터의 값을 변경해도 효과가 없습니다.
 
      
 
--   문서 추적에 대한 플랫폼 등록 메서드를 호출합니다.
-
-    [**MSUserPolicy.registerForDocTracking**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc) 또는 [**UserPolicy.registerForDocTracking**](/information-protection/sdk/4.2/api/iOS/msuserpolicy#msipcthin2_msuserpolicy_registerfordoctracking_userid_authenticationcallback_completionblock_method_objc)을 참조하세요.
-
- 
+-   마지막으로 문서 추적에 대한 플랫폼 등록 메서드를 호출합니다.
+  - Android - [UserPolicy.registerForDocTracking asynchronous](https://msdn.microsoft.com/library/mt573699.aspx) 또는 [UserPolicy.registerForDocTracking synchronous](https://msdn.microsoft.com/library/mt631387.aspx)
+  - iOS - [MSUserPolicy.registerForDocTracking](https://msdn.microsoft.com/library/mt573694.aspx)
 
  
 
+ 
 
 
-<!--HONumber=Sep16_HO5-->
+
+<!--HONumber=Oct16_HO3-->
 
 

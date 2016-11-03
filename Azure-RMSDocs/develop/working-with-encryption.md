@@ -4,7 +4,7 @@ description: "Azure RMS 암호화 패키지 및 사용과 관련된 코드 조�
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: bf27067f832f12ef66f6df92f4008a0d21cdf2aa
+ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
+ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
 
 
 ---
@@ -40,13 +40,13 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_CBC4K
 -   IPC\_ENCRYPTION\_PACKAGE \_AES128\_ECB(사용되지 않는 알고리즘이라고도 함)
 
-암호화 패키지 플래그([**기본 암호화**](/information-protection/sdk/2.1/api/win/constants#msipc_preferred_encryption) 참조)를 새 라이선스 속성 플래그 **IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE**와 함께 사용할 수 있습니다.
+암호화 패키지 플래그([Preferred encryption](https://msdn.microsoft.com/library/dn974065.aspx)(기본 암호화) 참조)를 라이선스 속성 플래그 *IPC\_LI\_PREFERRED\_ENCRYPTION\_PACKAGE*와 함께 사용할 수 있습니다.
 
 다음은 새 라이선스 속성을 사용하는 방법을 보여 주는 몇 가지 간단한 코드 조각입니다.
 
 ## 사용되지 않는 알고리즘
 
-**IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 플래그는 더 이상 API에 노출되지 않습니다. 즉, 이후 응용 프로그램에서 이 플래그를 참조할 경우 더 이상 컴파일되지 않지만 API 코드에서 비공개로 플래그가 적용되므로 이 플래그를 사용하여 이미 빌드된 응용 프로그램은 계속 작동합니다.
+*IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS* 플래그는 더 이상 API에 노출되지 않습니다. 즉, 이후 응용 프로그램에서 이 플래그를 참조할 경우 더 이상 컴파일되지 않지만 API 코드에서 비공개로 플래그가 적용되므로 이 플래그를 사용하여 이미 빌드된 응용 프로그램은 계속 작동합니다.
 
 플래그를 변경하기만 하면 사용되지 않는 이전 암호화 알고리즘 플래그를 여전히 활용할 수 있습니다. 예제는 다음 코드 조각을 참조하세요.
 
@@ -84,7 +84,7 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
 또한 이 샘플에서는 *사용되지 않는 알고리즘*을 지원하는 새로운 방법을 보여 줍니다.
 
     C++
-    
+
     hr = IpcCreateLicenseFromTemplateID(pcTil-&gt;aTi[0].wszID,
                                     0,
                                     NULL,
@@ -103,6 +103,6 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

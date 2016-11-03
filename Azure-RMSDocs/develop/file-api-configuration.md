@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
+ms.sourcegitcommit: 734ff9735adbf5aac5824b5c823a1fdcaf245d4e
+ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 
 ---
@@ -63,7 +63,7 @@ ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
 
 - **Off**: 암호화가 사용되지 않습니다.
 
-> [!Note] 
+> [!Note]
 > 이 설정은 암호 해독과 아무 관계도 없습니다. 기본 보호 또는 Pfile 보호를 통해 암호화되었는지와 관계없이, 사용자에게 **EXTRACT** 권한이 있는 한 암호화된 파일의 암호를 해독할 수 있습니다.
 
 - **Native**: 기본 암호화가 사용됩니다. Office 파일의 경우 암호화된 파일의 확장명이 원본 파일과 같습니다. 예를 들어 .docx 파일 확장명을 가진 파일은 .docx 확장명을 가진 파일로 암호화됩니다. 기본 보호를 적용할 수 있는 기타 파일의 경우 p*zzz* 형식의 확장명을 가진 파일로 암호화됩니다. 여기서 *zzz*는 원래 파일 확장명입니다. 예를 들어 .txt 파일은 확장명이 .ptxt인 파일로 암호화됩니다. 아래에는 기본 보호를 적용할 수 있는 파일 확장명 목록이 나와 있습니다.
@@ -71,7 +71,7 @@ ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
 - **Pfile**: PFile 암호화가 사용됩니다. 암호화된 파일은 원래 확장명에 .pfile이 추가됩니다. 예를 들어 암호화 후에 .txt 파일은 .txt.pfile 확장명을 사용합니다.
 
 
-> [!Note] 
+> [!Note]
 > 이 설정은 Office 파일 형식과 아무 관계도 없습니다. 예를 들어 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\DOCX\Encryption` 값을 &quot;Pfile”로 설정할 경우 .docx 파일은 여전히 기본 보호를 사용하여 암호화되고 암호화된 파일이 계속 .docx 파일 확장명을 사용합니다.
 
 다른 값을 설정하거나 값을 설정하지 않으면 기본 동작이 사용됩니다.
@@ -82,7 +82,7 @@ ms.openlocfilehash: d949acd4281509bbed05a14e0e26d1549b52a33a
 -   **txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif 파일** 네이티브 암호화가 사용됩니다(xxx가 pxxx로 바뀜).
 -   **기타 모든 파일** 암호화 시 보호된 파일(pfile)을 사용할 수 있습니다(xxx가 xxx.pfile로 바뀜).
 
-차단된 파일 형식에 대해 암호화를 시도하면 [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes) 오류가 발생합니다.
+차단된 파일 형식에 대해 암호화를 시도하면 [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx) 오류가 발생합니다.
 
 ### 파일 API - 파일 지원 세부 정보
 
@@ -148,14 +148,14 @@ HKEY_LOCAL_MACHINE
 
 ## 관련 항목
 
-* [개발자 노트](developer-notes.md)
-* [**IPCERROR\_FILE\_ENCRYPT\_BLOCKED**](/information-protection/sdk/2.1/api/win/error%20codes)
+- [개발자 노트](developer-notes.md)
+- [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
  
 
  
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

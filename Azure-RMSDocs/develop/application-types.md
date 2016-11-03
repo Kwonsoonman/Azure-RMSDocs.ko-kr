@@ -4,7 +4,7 @@ description: "이 항목에서는 권한 사용 응용 프로그램으로 만들
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dac322fedd1ac23660abb3b79261e8339ffd81ca
+ms.sourcegitcommit: 1ab93dc8f770e2e49b5846dd6c31f649a55175b0
+ms.openlocfilehash: 77bb95ae54ec0fb699d3b0dd2879bb14fdd3dd28
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: dac322fedd1ac23660abb3b79261e8339ffd81ca
 
 ## 간단한 응용 프로그램
 
-간단한 응용 프로그램은 제공된 파일을 암호화하도록 작성된 명령줄 도구일 수 있습니다. 간단한 권한 사용 응용 프로그램의 예는 [IPCHelloWorld - 예제 응용 프로그램](how-to-build-your-first-application.md)을 참조하세요.
+간단한 응용 프로그램은 제공된 파일을 암호화하도록 작성된 명령줄 도구일 수 있습니다. 간단한 권한 사용 응용 프로그램의 예는 [응용 프로그램 개발](developing-your-application.md)에서 설명하는 *IPCHelloWorld* 구현을 참조하세요.
 
 ### 서버 모드 응용 프로그램
 
@@ -55,13 +55,13 @@ Microsoft 메모장은 간단한 리치 클라이언트 응용 프로그램입�
 
 ## 관련 항목
 
-* [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
-* [IPCHelloWorld - 예제 응용 프로그램](how-to-build-your-first-application.md)
-* [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)
-* [사용 제한 이해](understanding-usage-restrictions.md)
+- [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
+- [응용 프로그램 배포](developing-your-application.md)
+- [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)
+- [사용 제한 이해](understanding-usage-restrictions.md)
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

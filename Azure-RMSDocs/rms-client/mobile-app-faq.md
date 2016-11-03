@@ -4,7 +4,7 @@ description:
 keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 데 도움이 되는 몇 가지 질문과 대답"
 author: cabailey
 manager: mbaldwin
-ms.date: 10/12/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f7ca40550f16dff0cc4979eb029d9eb7dd68414f
-ms.openlocfilehash: da77d799128e110679c972629fa9f816487ccb4f
+ms.sourcegitcommit: c03bcfc5590035ab0d51cb3b4f2b7196db458ea3
+ms.openlocfilehash: 1829557b41d2c49ac661cbde96f69dda2ccc5b19
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: da77d799128e110679c972629fa9f816487ccb4f
 
 ## Azure Information Protection 앱으로 수행할 수 있는 작업
 
-메일 앱에서 권한 관리 데이터 보호를 기본적으로 지원하지 않는 경우 이 앱을 사용하여 권한으로 보호된 메일 메시지(.rpmsg 파일)를 볼 수 있습니다. 또한 이 앱에서는 권한으로 보호된 PDF 파일, 권한으로 보호된 그림 및 텍스트 파일, 일반적으로 보호된 파일(파일 이름 확장명: .pfile)도 볼 수 있습니다. 현재 이 앱을 사용하여 보호되는 메일 메시지를 새로 만들거나, 회신하거나, 보호되는 파일을 만들거나 편집할 수 없습니다.
+메일 앱에서 권한 관리 데이터 보호를 기본적으로 지원하지 않는 경우 이 앱을 사용하여 권한으로 보호된 메일 메시지(.rpmsg 파일)를 볼 수 있습니다. 또한 권한으로 보호되는 PDF 파일과 권한으로 보호되는 사진 및 텍스트 파일도 볼 수 있습니다. 현재 이 앱을 사용하여 보호되는 메일 메시지를 새로 만들거나, 회신하거나, 보호되는 파일을 만들거나 편집할 수 없습니다.
 
 ## SharePoint 보호된 라이브러리 및 비즈니스용 OneDrive에 있는 PDF 파일을 열 수 있나요?
 
@@ -43,7 +43,7 @@ ms.openlocfilehash: da77d799128e110679c972629fa9f816487ccb4f
 
 - **권한으로 보호된 PDF 파일**: Windows 컴퓨터에서 Rights Management 공유 응용 프로그램이나 권한 관리를 기본적으로 지원하는 PDF 응용 프로그램을 사용하여 권한으로 보호된 PDF 파일을 메일 첨부 파일로 자신에게 보냅니다. 또는 PDF 파일을 SharePoint 보호된 라이브러리로 업로드한 다음 메일 주소를 사용하여 이 파일을 공유합니다.
 
-- **.ptxt, .pjpg 또는 .pfile**: Windows 컴퓨터에서 Rights Management 공유 응용 프로그램과 [유](sharing-app-protect-by-email.md) 옵션을 사용하여 보호된 파일을 메일 첨부 파일로 자신에게 보냅니다. 테스트에 사용할 수 있는 파일 형식의 전체 목록은 Rights Management 공유 응용 프로그램 관리자 가이드의 [지원되는 파일 형식 및 파일 이름 확장명](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션에서 첫 번째 표를 참조하세요. 
+- **.ptxt, .pjpg 또는 .ppng**: Windows 컴퓨터에서 Rights Management 공유 응용 프로그램과 [보호된 항목 공유](sharing-app-protect-by-email.md) 옵션을 사용하여 보호된 파일을 메일 첨부 파일로 자신에게 보냅니다. 테스트에 사용할 수 있는 파일 형식의 전체 목록은 Rights Management 공유 응용 프로그램 관리자 가이드의 [지원되는 파일 형식 및 파일 이름 확장명](sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션에서 첫 번째 표를 참조하세요. 
 
 Azure Information Protection 뷰어 응용 프로그램에서 이러한 파일을 보려면 메일 첨부 파일이나 링크를 탭합니다. 여는 데 사용할 앱을 선택하라는 메시지가 표시되면 **AIP 뷰어** 앱을 선택합니다. 회사 또는 학교 계정에 로그인하라는 메시지가 표시됩니다. 성공적으로 인증되면 Azure Information Protection 앱에 읽을 메일이나 파일이 표시됩니다.
 
@@ -58,14 +58,6 @@ Azure Information Protection 뷰어 응용 프로그램에서 이러한 파일�
 ## 이 앱에서 열 수 있는 파일 확장명은 무엇인가요?
 
 .rpmsg, .pdf, .ppdf, .pjpg, .ptxt 및 기타 다양한 텍스트 및 이미지 파일 형식을 열 수 있습니다.
-
-## 보호된 .pfile을 보기 전에 동의해야 하는 이유는 무엇인가요?
-
-다음 사항을 알고 있는지 확인하려면 동의해야 합니다.
-
-- 문서 소유자가 회원님이 권한을 부여할 것으로 기대합니다.
-
-- 타사 응용 프로그램에서 이 콘텐츠를 열면 감사됩니다.
 
 ##  이 앱에 대한 피드백을 제공하려면 어떻게 해야 하나요?
 

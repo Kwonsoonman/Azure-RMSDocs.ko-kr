@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 45724e633e1d31f17782e30713584fe3d3b281b1
+ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
+ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 45724e633e1d31f17782e30713584fe3d3b281b1
 
 메일 알림을 사용하면 누군가가 보호된 콘텐츠에 액세스할 경우 보호된 콘텐츠 소유자가 알림을 받을 수 있습니다.
 
-지정된 라이선스에 대해 메일 알림을 설정하려면 속성 형식 매개 변수 *dwPropID*를 [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/information-protection/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)로 지정하고 응용 프로그램 데이터 필드를 [**IPC\_NAME\_VALUE\_LIST**](/information-protection/sdk/2.1/api/win/structures#msipc_ipc_name_value_list) 형식으로 지정하여 [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)를 사용합니다.
+지정된 라이선스에 대해 메일 알림을 설정하려면 속성 형식 매개 변수 *dwPropID*를 [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)로 지정하고 응용 프로그램 데이터 필드를 [IPC\_NAME\_VALUE\_LIST](https://msdn.microsoft.com/library/hh535277.aspx) 형식으로 지정하여 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)를 사용합니다.
 
     C++
 
@@ -34,14 +34,14 @@ ms.openlocfilehash: 45724e633e1d31f17782e30713584fe3d3b281b1
 
     // lcid field set to 0 causes the default lcid to be used
 
-    propertyValuePairs[0] = {&quot;MS.Conetent.Name&quot;, 0, &quot;FinancialReport.docx&quot;};
-    propertyValuePairs[1] = {&quot;MS.Notify.Enabled&quot;,0 , &quot;true&quot;};
-    propertyValuePairs[2] = {&quot;MS.Notify.Culture&quot;,0 , “en-US”};
+    propertyValuePairs[0] = {"MS.Conetent.Name", 0, "FinancialReport.docx"};
+    propertyValuePairs[1] = {"MS.Notify.Enabled",0 , "true"};
+    propertyValuePairs[2] = {"MS.Notify.Culture",0 , “en-US”};
 
     IPC_NAME_VALUE_LIST emailNotificationAppData = {numDataPairs, propertyValuePairs};
 
     result = IpcSetLicenseProperty( licenseHandle, FALSE, IPC_LI_APP_SPECIFIC_DATA, emailNotificationAppData);
-        
+
 
 다음 표에는 RMS 메일 알림에 대한 응용 프로그램 데이터 필드, 속성 이름 및 값 쌍이 포함되어 있습니다.
 
@@ -58,15 +58,15 @@ ms.openlocfilehash: 45724e633e1d31f17782e30713584fe3d3b281b1
 
 ## 관련 항목
 
-* [**IpcSetLicenseProperty**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicenseproperty)
-* [**IPC\_LI\_APP\_SPECIFIC\_DATA**](/information-protection/sdk/2.1/api/win/License%20property%20types#msipc_license_property_types_IPC_LI_APP_SPECIFIC_DATA)
-* [**IPC\_NAME\_VALUE\_LIST**](/information-protection/sdk/2.1/api/win/structures#msipc_ipc_name_value_list)
+- [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
+- [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)
+- [IPC\_NAME\_VALUE\_LIST](https://msdn.microsoft.com/library/hh535277.aspx).
  
 
  
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,7 +3,7 @@ title: "Rights Management 공유 응용 프로그램 관리자 가이드 | Azure
 description: "Windows용 Microsoft Rights Management 공유 응용 프로그램 배포를 담당하는 엔터프라이즈 네트워크의 관리자를 위한 지침과 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 4a551f198b0469f82c14120c0c6f2bb7d055afe9
+ms.sourcegitcommit: e5decd2df9135317f2e0da4951a177211342d7ac
+ms.openlocfilehash: e66f0ac6e596840ad940c51db41dbc6f91139e51
 
 
 ---
@@ -170,7 +170,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 ### RMS 공유 응용 프로그램 및 Office 추가 기능만 설치하려면
 
-1.  다음 명령을 사용하여 AD RMS 클라이언트 및 RMS 공유 응용 프로그램을 설치합니다.
+1.  다음 명령을 사용하고 로그 파일을 만들 기존 폴더를 지정하여 AD RMS 클라이언트 및 RMS 공유 응용 프로그램을 설치합니다.
 
     -   64비트 Windows:
 
@@ -185,8 +185,10 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         ```
 
     예를 들면 다음과 같습니다. `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
+    
+    이 명령이 실행되지 않아도 **/quiet** 매개 변수 때문에 오류 메시지가 표시되지 않습니다. 설치가 실패한 문제를 해결하는 데 도움을 얻으려면 /quiet 없이 명령을 다시 실행하여 오류 메시지를 표시하세요.
 
-2.  다음 명령을 사용하여 Office 추가 기능을 설치합니다.
+2.  다음 명령을 사용하고 로그 파일을 만들 기존 폴더를 지정하여 Office 추가 기능을 설치 합니다.
 
     -   64비트 버전 Office:
 
@@ -201,6 +203,8 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         ```
 
     예를 들면 다음과 같습니다. `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
+    
+    이 명령이 실행되지 않아도 **/quiet** 매개 변수 때문에 오류 메시지가 표시되지 않습니다. 설치가 실패한 문제를 해결하는 데 도움을 얻으려면 /quiet 없이 명령을 다시 실행하여 오류 메시지를 표시하세요.
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
@@ -402,6 +406,6 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

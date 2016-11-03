@@ -14,8 +14,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
+ms.sourcegitcommit: cb33a6c784a9b7efca0780771e764b984b51fedd
+ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
 
 모든 RMS 사용 응용 프로그램은 사용 제한을 적용해야 합니다. 사용 제한은 사용자가 작업(예: 문서 인쇄)을 수행하려고 하지만 해당 문서에 대한 RMS 정책에서 이 작업을 수행할 수 있는 권한(예: PRINT 권한)을 부여하지 않을 경우 발생하는 조건입니다.
 
-[**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck) 함수를 사용하여 문서에 대한 사용자 권한을 쿼리할 수 있습니다.
+[IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)함수를 사용하여 문서에 대한 사용자 권한을 쿼리할 수 있습니다.
 
 ## 사용 제한 이해
 
@@ -48,7 +48,7 @@ ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
 
 ## 관련 항목
 
-* [**IpcAccessCheck**](/information-protection/sdk/2.1/api/win/functions#msipc_ipcaccesscheck)
+* [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 * [사용 제한 참조](usage-restriction-reference.md)
  
 
@@ -56,6 +56,6 @@ ms.openlocfilehash: 1d1433eb4468fd74689243c1ca63134a406e0f96
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

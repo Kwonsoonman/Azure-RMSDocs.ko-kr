@@ -19,7 +19,7 @@ ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
 ---
 
 
-# Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
+# <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -39,7 +39,7 @@ Azure RMS가 암호화하거나 암호를 해독하고 권한을 부여하고 �
 
 Azure RMS에서 사용하는 알고리즘 및 키 길이에 대한 자세한 기술 내용은 다음 섹션을 참조하세요.
 
-## Azure RMS에서 사용하는 암호화 컨트롤: 알고리즘 및 키 길이
+## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS에서 사용하는 암호화 컨트롤: 알고리즘 및 키 길이
 RMS의 작동 방식을 이해할 필요는 없지만 업무 표준의 보안 보호 유지를 위해 어떤 암호화 컨트롤을 사용하는지에 대해 질문을 받을 수는 있습니다.
 
 
@@ -49,7 +49,7 @@ RMS의 작동 방식을 이해할 필요는 없지만 업무 표준의 보안 �
 |알고리즘: RSA<br /><br />키 길이: 2048비트|키 보호|
 |SHA-256|인증서 서명|
 
-###### 각주 1 
+###### <a name="footnote-1"></a>각주 1 
 
 파일 이름 확장명이 .ppdf이거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)인 경우 권한 관리 공유 응용 프로그램에서 일반 보호 및 기본 보호에 256비트를 사용합니다.
 
@@ -65,7 +65,7 @@ RMS의 작동 방식을 이해할 필요는 없지만 업무 표준의 보안 �
 
 
 
-## Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비
+## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비
 Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Rights Management Service가 활성화되고](../deploy-use/activate-service.md) 사용자가 해당 Windows 컴퓨터에서 Rights Management Service를 처음 사용하고(**사용자 환경 초기화** 또는 부트스트래핑으로도 알려진 프로세스) **콘텐츠(문서 또는 메일)를 보호하고** 다른 사용자가 보호하는 콘텐츠를 **소비**(열어서 사용)하는 일반적인 흐름을 단계별로 살펴보겠습니다.
 
 사용자 환경이 초기화되면 사용자는 문서를 보호하거나 해당 컴퓨터에서 보호된 문서를 사용할 수 있습니다.
@@ -73,7 +73,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 > [!NOTE]
 > 이 사용자가 다른 Windows 컴퓨터로 이동하거나 다른 사용자가 이 동일한 Windows 컴퓨터를 사용하면 초기화 프로세스가 반복됩니다.
 
-### 사용자 환경 초기화
+### <a name="initializing-the-user-environment"></a>사용자 환경 초기화
 사용자가 콘텐츠를 보호하거나 Windows 컴퓨터에서 보호된 콘텐츠를 소비하려면 먼저 장치에서 사용자 환경이 준비되어야 합니다. 이것은 일회성 프로세스이며 사용자가 콘텐츠를 보호하거나 보호된 콘텐츠를 사용하려고 할 때 사용자 개입 없이 자동으로 발생합니다.
 
 ![RMS 클라이언트 활성화 - 1단계](../media/AzRMS.png)
@@ -88,7 +88,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 사용자 인증서 복사본은 Azure에 저장되므로 사용자가 다른 장치로 이동하면 동일한 키를 사용하여 인증서가 만들어집니다.
 
-### 콘텐츠 보호
+### <a name="content-protection"></a>콘텐츠 보호
 사용자가 문서를 보호하면 RMS 클라이언트는 보호되지 않은 문서에 대해 다음 작업을 수행합니다.
 
 ![RMS 문서 보호 - 1단계](../media/AzRMS_documentprotection1.png)
@@ -107,7 +107,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 이 문서는 어디에든 저장 가능하고 어떤 방법으로도 공유할 수 있으며 정책은 항상 암호화된 문서와 함께 제공됩니다.
 
-### 콘텐츠 소비
+### <a name="content-consumption"></a>콘텐츠 소비
 사용자가 보호된 문서를 소비하려고 하면 RMS 클라이언트는 먼저 Azure Rights Management Service에 대한 액세스를 요청합니다.
 
 ![RMS 문서 사용 - 1단계](../media/AzRMS_documentconsumption1.png)
@@ -126,7 +126,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 또한 클라이언트는 권한 목록의 암호를 해독한 후 응용 프로그램에 전달합니다. 그러면 응용 프로그램은 응용 프로그램의 사용자 인터페이스에 해당 권한을 적용합니다.
 
-### 변형 방식
+### <a name="variations"></a>변형 방식
 앞의 연습 과정에서는 표준 시나리오를 다뤘지만 이와 다른 변형된 시나리오도 있습니다.
 
 -   **모바일 장치**: 모바일 장치가 Azure Rights Management Service를 사용하여 파일을 보호하거나 파일을 사용하면 프로세스 흐름이 훨씬 더 간단합니다. 각 트랜잭션(콘텐츠 보호 또는 콘텐츠 사용)은 독립적이므로 모바일 장치는 사용자 초기화 프로세스를 먼저 거치지 않습니다. Windows 컴퓨터의 경우처럼 모바일 장치는 Azure Rights Management Service에 연결하고 인증됩니다. 콘텐츠를 보호하기 위해 모바일 장치는 정책을 제출하고 Azure Rights Management Service는 장치에 게시 라이선스 및 대칭 키를 전송하여 문서를 보호합니다. 콘텐츠를 사용하기 위해 모바일 장치가 Azure Rights Management Service에 연결하고 인증을 받을 때 Azure Rights Management Service에 문서 정책을 전송하고 문서 사용을 위한 사용 라이선스를 요청합니다. 이에 대한 응답으로 Azure Rights Management Service는 필요한 키와 제한 사항을 모바일 장치로 보냅니다. 두 프로세스 모두 TLS를 사용하여 키 교환 및 기타 통신을 보호합니다.
@@ -137,7 +137,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 -   **보호된 PDF(.ppdf)**: Azure Rights Management Service는 기본적으로 Office 파일을 보호할 때 해당 파일의 복사본을 만들어 동일한 방식으로 보호합니다. 유일한 차이점은 파일 복사본이 PPDF 파일 형식이라는 점입니다. RMS 공유 응용 프로그램에서는 해당 파일 형식을 보는 용도로만 열 수 있습니다. 이 시나리오에서는 모바일 장치에 보호된 Office 파일을 기본적으로 지원하는 앱이 없더라도 모바일 장치의 받는 사람이 항상 첨부 파일을 볼 수 있다는 사실을 알고 있으므로 보호된 첨부 파일을 전자 메일을 통해 전송하도록 합니다.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 Azure Rights Management Service에 대해 자세히 알아보려면 **이해 및 탐색** 섹션에 나와 있는 [응용 프로그램에서 Rights Management Service를 지원하는 방법](applications-support.md) 등의 다른 문서를 사용하여 정보 보호 솔루션을 제공하기 위해 기존 응용 프로그램을 Azure Rights Management와 통합하는 방법을 확인합니다. 
 
@@ -150,6 +150,6 @@ Azure Rights Management Service 구성 및 사용 시 나올 수 있는 용어�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

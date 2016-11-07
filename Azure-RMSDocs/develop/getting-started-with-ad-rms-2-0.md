@@ -19,15 +19,15 @@ ms.openlocfilehash: 8c5b7d17b5feffa07028498e8d7f201b25626478
 
 
 ---
-# 시작하기
+# <a name="getting-started"></a>시작하기
 
 권한 관리 서비스 SDK 2.1 플랫폼을 사용하면 개발자가 RMS 서버 또는 Azure RMS를 통해 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다. 이 플랫폼은 키 관리, 암호화 및 암호 해독 처리와 같은 복잡한 보안 사례를 처리하고 쉬운 응용 프로그램 개발을 위해 간소화된 API를 제공합니다.
 
-## RMS SDK 2.1 시작
+## <a name="get-started-with-rms-sdk-21"></a>RMS SDK 2.1 시작
 
 이 항목에서는 테스트 환경에서 권한 사용 응용 프로그램을 설정하고 실행하는 과정을 안내합니다. 다음 항목은 개발 환경을 설정하는 방법을 설명하며, 작업을 수행하는 순서를 제안하도록 나열되어 있습니다.
 
-## 이 섹션의 내용
+## <a name="in-this-sections"></a>이 섹션의 내용
 
 | 항목 | 설명 |
 |-------|-------------|
@@ -47,7 +47,7 @@ ms.openlocfilehash: 8c5b7d17b5feffa07028498e8d7f201b25626478
 - [응용 프로그램 테스트](how-to-set-up-your-test-environment.md)
 - [프로덕션 환경에 배포](deploying-your-application.md)
 
-### 콘텐츠를 보호하기 위해 RMS SDK 2.1을 사용하는 이유
+### <a name="why-use-rms-sdk-21-for-protecting-your-content"></a>콘텐츠를 보호하기 위해 RMS SDK 2.1을 사용하는 이유
 
 새 응용 프로그램과 기존 응용 프로그램에 RMS 지원을 추가하려는 개발자는 RMS SDK 2.1을 사용하여 다음 작업을 보다 쉽게 수행할 수 있습니다.
 
@@ -59,13 +59,13 @@ ms.openlocfilehash: 8c5b7d17b5feffa07028498e8d7f201b25626478
 
 RMS SDK 2.1에서는 다양한 중요 클라이언트 및 서버 플랫폼을 지원합니다. 자세한 내용은 [지원되는 플랫폼](supported-platforms.md)을 참조하세요.
 
-## 핵심 원칙
+## <a name="core-principles"></a>핵심 원칙
 
 **단순성** - AD RMS SDK 1.0에 대한 피드백 및 사용 패턴을 분석하고 해당 데이터를 사용하여 가장 어려운 프로그래밍 작업을 간소화 또는 자동화했습니다. RMS SDK 2.1을 사용하여 작성된 RMS 응용 프로그램에서는 일반적으로 AD RMS SDK 1.0을 사용하여 작성된 RMS 응용 프로그램보다 필요한 RMS 코드 줄이 5-10배 정도 줄었습니다.
 **한 번 작성** - 최신 RMS 기능을 사용하기 위해 RMS SDK 2.1 응용 프로그램에서 코드 변경이나 재컴파일을 수행할 필요가 없습니다. 새로운 RMS 기능이 RMS 서버에 추가되면 기존 응용 프로그램에서 바로 사용할 수 있습니다.
 **일관성** - RMS SDK 2.1을 사용하면 다양한 RMS 구성을 일관되게 적용하는 응용 프로그램을 쉽게 작성할 수 있습니다. 응용 프로그램 개발자가 작성해야 하는 RMS 사용자 인터페이스도 훨씬 감소하므로 일관된 모양과 느낌이 장려되고 사용자 교육의 필요성이 줄어듭니다.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [RMS 개발자 가이드](developers-guide.md)
 * [AD RMS 개발자 코너](http://blogs.msdn.com/b/rms/)
@@ -76,6 +76,6 @@ RMS SDK 2.1에서는 다양한 중요 클라이언트 및 서버 플랫폼을 �
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

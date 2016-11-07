@@ -20,13 +20,13 @@ ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
 
 ---
 
-# 응용 프로그램 테스트
+# <a name="testing-your-application"></a>응용 프로그램 테스트
 
 이 항목에서는 응용 프로그램 테스트를 위해 설치하는 방법에 대한 지침을 제공합니다.
 
-## 지침
+## <a name="instructions"></a>지침
 
-### 1단계: 테스트를 위한 설치
+### <a name="step-1-setup-for-testing"></a>1단계: 테스트를 위한 설치
 
 Windows Server에서 실행 중인 Azure RMS 또는 RMS 서버에서 테스트할 수 있으며, Azure RMS에서 테스트를 시작한 다음 배포에 필요한 경우 RMS 서버에서 테스트하는 것이 좋습니다.
 
@@ -40,11 +40,11 @@ Windows Server에서 실행 중인 Azure RMS 또는 RMS 서버에서 테스트�
 
     RMS SDK 2.1을 설치하는 방법에 대한 자세한 내용은 [SDK 설치](install-the-rms-sdk.md)를 참조하세요.
 
-## 설명
+## <a name="remarks"></a>설명
 
 이 항목의 지침은 일부에 불과합니다. RMS Client 2.1을 구성하는 방법에 대한 자세한 내용은 [RMS Client 2.1 배포 참고 사항](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx) 항목을 참조하세요.
 
-### 관련 항목
+### <a name="related-topics"></a>관련 항목
 
 * [RMS 서버 설치 및 구성 방법](how-to-install-and-configure-an-rms-server.md)
 * [방법: ADAL 인증 사용](how-to-use-adal-authentication.md)
@@ -56,6 +56,6 @@ Windows Server에서 실행 중인 Azure RMS 또는 RMS 서버에서 테스트�
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

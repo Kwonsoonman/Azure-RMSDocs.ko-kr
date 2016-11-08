@@ -3,7 +3,7 @@ title: "Rights Management 공유 응용 프로그램에 대한 대화 상자 옵
 description: "RMS 공유 응용 프로그램의 보호 추가 대화 상자 또는 보호된 항목 공유 대화 상자에서 옵션을 지정하는 방법을 설명합니다. 공유하는 파일을 보호하거나 준비된 파일을 보호하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 25e93f993ef76d0bce61f925c58cc667ccacf7b8
-ms.openlocfilehash: c28651342c3048b783880f8ea3b12acd56d973a2
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 97766046526db5148f03873343a2fb3840392c6a
 
 
 ---
@@ -54,7 +54,7 @@ ms.openlocfilehash: c28651342c3048b783880f8ea3b12acd56d973a2
 
 -   반면 이를 지원하는 응용 프로그램으로 Rights Management의 **기본 제공(기본) 보호**를 사용하는 경우(예: Office 파일) 파일이 다른 사람에게 전송되거나 다른 위치에 저장되더라도 파일에 보호가 적용됩니다. 그리고 이러한 파일을 보호하는 경우 읽기 전용과 같은 제한적 사용 권한 또는 편집하지만 인쇄하거나 복사할 수 없는 사용 권한을 사용할 수 있습니다. 예를 들어 **뷰어 – 보기 전용**을 선택하면 콘텐츠를 편집, 인쇄 또는 복사할 수 없습니다.
 
-추가 기술 정보는 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [보호 수준 – 기본 및 일반](sharing-app-admin-guide-technical.md#levels-of-protection-native-and-generic) 섹션을 참조하세요.
+추가 기술 정보는 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [보호 수준 – 기본 및 일반](sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) 섹션을 참조하세요.
 
 ## <a name="whats-the-ppdf-file-thats-automatically-created"></a>자동으로 만들어지는 .ppdf 파일이란 무엇인가요?
 

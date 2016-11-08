@@ -3,7 +3,7 @@ title: "고객 관리 - 테넌트 키 수명 주기 작업 | Azure Information P
 description: "Azure Information Protection용 테넌트 키를 직접 관리하는 경우(BYOK(Bring Your Own Key) 시나리오)와 관련된 수명 주기 작업에 대한 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: c879d4de6b8b99c401b36e03dd3b16dc8b722344
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
 
 
 ---
@@ -45,7 +45,7 @@ Azure Information Protection에 대한 구독을 취소하면, Azure Information
 ## <a name="backup-and-recover-your-tenant-key"></a>테넌트 키 백업/복구
 테넌트 키를 직접 백업해야 합니다. Thales HSM에서 생성한 테넌트 키를 백업하려면 토큰화된 키 파일, World 파일 및 관리자 카드만 백업하면 됩니다.
 
-[Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md) 문서의 [BYOK(Bring Your Own Key) 구현](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-rights-management-tenant-key) 섹션 절차에 따라 키를 전송했기 때문에 주요 자격 증명 모음은 서비스 노드의 오류로부터 보호하기 위해 토큰화된 키 파일을 보존합니다. 이 파일은 특정 Azure 지역 또는 인스턴스에 대해 보안 권역에 바인딩되어 있습니다. 그러나 이러한 보존이 전체 백업은 아닙니다. 예를 들어 Thales HSM 외부에서 사용할 키의 일반 텍스트 복사본이 필요한 경우 Azure 주요 자격 증명 모음은 복구 불가능한 복사본만 보존하므로 해당 복사본을 검색할 수 없습니다.
+[Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md) 문서의 [BYOK(Bring Your Own Key) 구현](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key) 섹션 절차에 따라 키를 전송했기 때문에 주요 자격 증명 모음은 서비스 노드의 오류로부터 보호하기 위해 토큰화된 키 파일을 보존합니다. 이 파일은 특정 Azure 지역 또는 인스턴스에 대해 보안 권역에 바인딩되어 있습니다. 그러나 이러한 보존이 전체 백업은 아닙니다. 예를 들어 Thales HSM 외부에서 사용할 키의 일반 텍스트 복사본이 필요한 경우 Azure 주요 자격 증명 모음은 복구 불가능한 복사본만 보존하므로 해당 복사본을 검색할 수 없습니다.
 
 ## <a name="export-your-tenant-key"></a>테넌트 키 내보내기
 BYOK 사용 시에는 Azure Key Vault 또는 Azure Information Protection에서 테넌트 키를 내보낼 수 없습니다. Azure 주요 자격 증명 모음의 복사본은 복구할 수 없습니다. 

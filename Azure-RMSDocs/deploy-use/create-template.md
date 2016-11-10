@@ -2,6 +2,7 @@
 title: "사용자 지정 템플릿 만들기, 구성 및 게시 | Azure Information Protection"
 description: "Azure 클래식 포털에서 사용자 지정 템플릿을 만들고 관리하는 지침을 제공합니다. 최종 사용자와 기타 관리자는 템플릿을 통해 문서와 메일을 보호하는 적절한 정책을 쉽게 적용할 수 있습니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

@@ -2,6 +2,7 @@
 title: "권한 관리 공유 응용 프로그램&colon; 버전 릴리스 기록 | Azure Information Protection"
 description: "Windows용 Rights Management 공유 응용 프로그램의 각 릴리스에서 새롭게 추가되었거나 변경된 기능을 살펴봅니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

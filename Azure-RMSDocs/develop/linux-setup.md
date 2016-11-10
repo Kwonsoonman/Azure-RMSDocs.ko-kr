@@ -3,6 +3,7 @@ title: "Linux 설치 | Azure RMS"
 description: "이제 여러 버전의 Linux 운영 체제에서 Microsoft Rights Management SDK 4.2를 사용할 수 있습니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

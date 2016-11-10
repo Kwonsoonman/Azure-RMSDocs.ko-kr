@@ -2,6 +2,7 @@
 title: "Rights Management 공유 응용 프로그램 기술 개요 | Azure Information Protection"
 description: "Windows용 RMS 공유 응용 프로그램 배포를 담당하는 기업 네트워크의 관리자와 관련된 기술 세부 정보를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

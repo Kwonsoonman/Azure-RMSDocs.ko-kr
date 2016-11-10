@@ -2,6 +2,7 @@
 title: "Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호 | Azure Information Protection"
 description: "메일을 통해 문서를 안전하게 공유하는 방법에 대한 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

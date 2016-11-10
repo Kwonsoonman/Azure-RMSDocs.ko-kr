@@ -2,6 +2,7 @@
 title: "Azure Information Protection 및 AD RMS 비교 | Azure Information Protection"
 description: "AD RMS(Active Directory Rights Management Services)에 대해 잘 알고 있거나 이전에 AD RMS를 배포한 경우 기능 및 요구 사항 측면에서 Azure Information Protection이 어떻게 다른지를 확인하려면"
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

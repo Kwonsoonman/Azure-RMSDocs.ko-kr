@@ -3,6 +3,7 @@ title: "응용 프로그램 배포 | Azure RMS"
 description: "RMS SDK 2.1을 사용하여 응용 프로그램을 개발하는 방법에 대한 지침입니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 11/01/2016
 ms.topic: article

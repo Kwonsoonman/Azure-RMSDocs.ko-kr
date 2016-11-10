@@ -2,6 +2,7 @@
 title: "RMS 클라이언트 배포 참고 사항 | Azure Information Protection"
 description: "MSIPC 클라이언트라고도 하는 Rights Management Service 클라이언트(RMS 클라이언트) 버전 2의 재배포, 설치, 지원되는 운영 체제, 레지스트리 설정 및 서비스 검색에 대한 정보입니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/28/2016
 ms.topic: article

@@ -2,6 +2,7 @@
 title: "Office 응용 프로그램 및 서비스 | Azure Information Protection"
 description: "최종 사용자 Office 응용 프로그램(예: Word, Excel, PowerPoint, Outlook) 및 Office 서비스(예: Exchange, SharePoint)에서 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/31/2016
 ms.topic: article

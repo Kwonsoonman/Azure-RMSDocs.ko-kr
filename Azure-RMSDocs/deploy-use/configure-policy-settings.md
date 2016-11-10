@@ -1,6 +1,8 @@
 ---
 title: "전역 정책 설정을 구성하는 방법 | Azure Information Protection"
 description: "Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 적용되는 세 가지 설정이 있습니다."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

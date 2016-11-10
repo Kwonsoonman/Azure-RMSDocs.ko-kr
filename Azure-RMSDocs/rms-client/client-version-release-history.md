@@ -2,6 +2,7 @@
 title: "Azure Information Protection 클라이언트&colon; 버전 릴리스 기록 | Azure Information Protection"
 description: "Windows용 Azure Information Protection 클라이언트 릴리스에의 새로운 사항이나 변경된 사항에 대해 알아보세요."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/27/2016
 ms.topic: article

@@ -2,6 +2,7 @@
 title: "Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램 | Azure Information Protection"
 description: "RMS 공유 응용 프로그램에서 Azure RMS를 지원하는 방식을 설명합니다. Azure RMS는 Office 2010을 지원하기 위해 필요하며 Windows 컴퓨터, Mac 컴퓨터 및 모바일 장치에서도 사용할 수 있는 무료 다운로드 가능 응용 프로그램입니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

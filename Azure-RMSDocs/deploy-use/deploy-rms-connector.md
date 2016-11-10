@@ -2,6 +2,7 @@
 title: "Azure Rights Management 커넥터 배포 | Azure Information Protection"
 description: "RMS 커넥터 배포에 대한 지침으로 Exchange Server, SharePoint Server 또는 Windows Server 및 FCI(파일 분류 인프라)를 사용하는 기존 온-프레미스 배포의 데이터 보호 서비스 기능을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

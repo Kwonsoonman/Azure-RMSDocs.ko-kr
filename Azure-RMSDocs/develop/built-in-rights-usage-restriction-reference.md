@@ -3,6 +3,7 @@ title: "방법&#58; 기본 제공 권한 사용 | Azure RMS"
 description: "RMS SDK 4.2에서 제공하는 기본 제공 권한 및 앱이 이러한 제한에 따라 적용해야 하는 사용 제한에 대해 간략하게 설명합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -22,13 +23,13 @@ ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
 ---
 
-# 방법: 기본 제공 권한 사용
+# <a name="how-to-use-builtin-rights"></a>방법: 기본 제공 권한 사용
 
 이 항목에서는 Microsoft Rights Management SDK 4.2에서 제공하는 기본 제공 권한 및 앱이 이러한 제한에 따라 적용해야 하는 사용 제한에 대해 간략하게 설명합니다. 다음은 기본 제공 권한, 일반적인 권한, 편집 가능한 문서 권한 및 메일 권한과 설명 및 운영 체제별 값을 보여 줍니다.
 
 **참고** - Linux SDK에 대한 자세한 내용은 *rights.h* 소스 파일을 참조하세요.
 
-## 일반적인 권한
+## <a name="common-rights"></a>일반적인 권한
 
 **모두** - 모든 일반적인 권한 컬렉션입니다.
 - Android: [CommonRights.All](https://msdn.microsoft.com/library/dn758258.aspx)
@@ -51,7 +52,7 @@ ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
  
 
-## 편집할 수 있는 문서 권한
+## <a name="editable-document-rights"></a>편집할 수 있는 문서 권한
 **모두** - 편집할 수 있는 문서 권한이 모두 포함된 컬렉션입니다.
 - Android: [EditableDocumentRights.All](https://msdn.microsoft.com/library/dn758284.aspx)
 - iOS 및 OS X: [MSEditableDocumentRights all](https://msdn.microsoft.com/library/dn758318.aspx)
@@ -93,7 +94,7 @@ ms.openlocfilehash: 3d897f191368b7af6fd339603e183583fa9b4a27
 
  
 
-## 메일 권한
+## <a name="email-rights"></a>메일 권한
 
 **모두** - 메일 권한이 모두 포함된 컬렉션입니다.
 - Android: [EmailRights.All](https://msdn.microsoft.com/library/dn758285.aspx)

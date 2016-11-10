@@ -2,6 +2,7 @@
 title: "Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션 | Azure Information Protection"
 description: "RMS 공유 응용 프로그램의 보호 추가 대화 상자 또는 보호된 항목 공유 대화 상자에서 옵션을 지정하는 방법을 설명합니다. 공유하는 파일을 보호하거나 준비된 파일을 보호하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

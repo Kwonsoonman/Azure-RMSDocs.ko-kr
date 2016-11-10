@@ -3,7 +3,7 @@ title: "권한 관리 공유 응용 프로그램&colon; 버전 릴리스 기록 
 description: "Windows용 Rights Management 공유 응용 프로그램의 각 릴리스에서 새롭게 추가되었거나 변경된 기능을 살펴봅니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 31b9ad27e1fc640f8fec29067794f952aa6031b6
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: 08ca0de6802aa001e5e2bcf7637592c2ad68864d
 
 
 ---
 
-# Rights Management 공유 응용 프로그램: 버전 릴리스 기록
+# <a name="rights-management-sharing-application-version-release-history"></a>Rights Management 공유 응용 프로그램: 버전 릴리스 기록
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
@@ -27,9 +27,9 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 2015년 1월 1일 이전 버전은 목록에 없습니다.
 
 > [!NOTE]
-> RMS 공유 응용 프로그램에 대한 의견이나 질문이 있으면 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)에 전자 메일 메시지를 보냅니다.
+> RMS 공유 응용 프로그램에 대한 의견이나 질문이 있으면 [AskIPTeam](mailto:AskIPTeam@microsoft.com?subject=RMS%20sharing%20app:%20Feedback%20or%20question)에 메일 메시지를 보냅니다.
 
-## 버전 1.0.2217.0
+## <a name="version-1022170"></a>버전 1.0.2217.0
 
 **릴리스 날짜**: 2016년 7월 13일
 
@@ -39,7 +39,7 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
 
 
-## 버전 1.0.2191.0
+## <a name="version-1021910"></a>버전 1.0.2191.0
 **릴리스 날짜**: 2016년 6월 16일
 
 **수정 사항**:
@@ -53,7 +53,7 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 - 적은 수의 사소한 버그와 오류 메시지 개선 사항이 있습니다.
 
 
-## 버전 1.0.2004.0
+## <a name="version-1020040"></a>버전 1.0.2004.0
 **릴리스 날짜**: 2015년 12월 11일
 
 **수정 사항**:
@@ -72,16 +72,16 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
     Office 2010을 실행하는 표준 사용자에 대한 몇 가지 제한 사항이 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md) 사용자 지침에서 [로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우](install-sharing-app.md#if-you-are-not-a-local-administrator-and-use-office-2010) 섹션을 참조하세요.
 
-## 버전 1.0.1908.0
+## <a name="version-1019080"></a>버전 1.0.1908.0
 **릴리스 날짜**: 2015년 9월 16일
 
 **수정 사항**:
 
 -   최신 인증을 사용하는 응용 프로그램에서 Microsoft 로그인 도우미에 대한 종속성도 제거하는 Azure RMS에 대한 MFA(다단계 인증)를 지원합니다.
 
-    자세한 내용은 [Azure 권한 관리에 대한 요구 사항](../get-started/requirements-azure-rms.md)에서 [MFA(Multi-Factor Authentication) 및 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-rms) 섹션을 참조하세요.
+    자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](../get-started/requirements-azure-ad.md)에서 [MFA(Multi-Factor Authentication) 및 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection) 섹션을 참조하세요.
 
-## 버전 1.0.1784.0
+## <a name="version-1017840"></a>버전 1.0.1784.0
 **릴리스 날짜**: 2015년 7월 30일
 
 **수정 사항**:
@@ -90,7 +90,7 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
 -   발생 빈도가 낮고 사소한 버그
 
-## 버전 1.0.1770.0
+## <a name="version-1017700"></a>버전 1.0.1770.0
 **릴리스 날짜**: 2015년 4월 25일
 
 **수정 사항**:
@@ -113,7 +113,7 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
     자세한 내용은 [Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션](sharing-app-dialog-box.md)을 참조하세요.
 
-## 버전 1.0.1667.0
+## <a name="version-1016670"></a>버전 1.0.1667.0
 **릴리스 날짜**: 2015년 1월 19일
 
 **수정 사항**:
@@ -131,6 +131,6 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

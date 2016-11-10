@@ -3,7 +3,7 @@ title: "Azure Information Protection 질문과 대답 | Azure Information Protec
 description: "Azure Information Protection과, 데이터 보호 서비스인 Azure Rights Management(Azure RMS)에 대한 몇 가지 질문과 대답입니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
-ms.openlocfilehash: d869514a126302522030cfb395b49112c48442dc
+ms.sourcegitcommit: 23065305e68dfd4f924041942a72b95bf9a60957
+ms.openlocfilehash: 5a7d9b9e49c4a682ad9b293147eb6840ca1febf3
 
 
 ---
@@ -28,7 +28,7 @@ Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)
 
 ## Azure Information Protection과 Azure Rights Management의 차이는 무엇인가요?
 
-Azure Information Protection은 조직의 문서와 전자 메일을 분류하고, 레이블 지정하고, 보호하는 기능을 제공합니다. Azure Rights Management는 보호 기술에서 사용됩니다. 즉 Azure Information Protection의 구성 요소입니다.
+Azure Information Protection은 조직의 문서와 메일을 분류하고, 레이블 지정하고, 보호하는 기능을 제공합니다. Azure Rights Management는 보호 기술에서 사용됩니다. 즉 Azure Information Protection의 구성 요소입니다.
 
 ## Azure Information Protection을 사용하려면 어떤 구독이 필요하며, 포함된 기능은 무엇인가요?
 Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 참조하세요. 
@@ -45,7 +45,7 @@ Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 
 
 ## 내 문의 내용이 여기 없다면 어떻게 하나요?
 
-먼저 분류 및 레이블 지정 또는 데이터 보호와 관련된 질문과 대답을 검토합니다. Azure RMS(Azure Rights Management 서비스)는 Azure Information Protection에 대한 데이터 보호 기술을 제공하며, Azure RMS를 사용하면 다음을 참조하지 않고도 분류와 레이블 지정을 함께 사용할 수 있습니다. 
+먼저 분류 및 레이블 지정 또는 데이터 보호와 관련된 질문과 대답을 검토합니다. Azure RMS(Rights Management Service)는 Azure Information Protection에 대한 데이터 보호 기술을 제공하며, Azure RMS는 분류 및 레이블 지정과 함께 사용하거나 분류 및 레이블 지정 없이 사용할 수 있습니다. 
 
 - [분류 및 레이블 지정에 대한 FAQ](faqs-infoprotect.md)
 
@@ -67,6 +67,6 @@ Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

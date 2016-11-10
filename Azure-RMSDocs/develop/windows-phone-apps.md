@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 148cefbe973eadebf942c826ac19c0ee34823c89
+ms.sourcegitcommit: dc452dac3a86cd9cc39127d5a29106ae87ba94be
+ms.openlocfilehash: 790f0d847c57b9e13d9074298b3e89584dc24760
 
 
 ---
 
-# Windows Phone 설정
+# <a name="windows-phone-setup"></a>Windows Phone 설정
 
 
 Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
@@ -31,7 +31,7 @@ Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 -   [개발 환경 구성](#configuring-your-development-environment)
 -   [참고 항목](#see-also)
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>필수 구성 요소
 
 
 개발 시스템에 다음 소프트웨어가 있어야 합니다.
@@ -46,7 +46,7 @@ API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 �
 
 Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx) 가이드에 있는 정보를 검토합니다.
 
-## 개발 환경 구성
+## <a name="configuring-your-development-environment"></a>개발 환경 구성
 
 
 -   *Visual Studio*를 엽니다.
@@ -68,7 +68,7 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 
 이제 새 Windows Phone 앱을 만들 준비가 되었습니다.
 
-### 참고 항목
+### <a name="see-also"></a>참고 항목
 
 [시작](get-started.md)
 
@@ -93,6 +93,6 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

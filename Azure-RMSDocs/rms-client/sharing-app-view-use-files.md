@@ -3,7 +3,7 @@ title: "Rights Management로 보호된 파일 보기 및 사용 | Azure Informat
 description: "보호된 파일을 보고 사용하기 위한 지침을 제공합니다. 여기서 설명하는 작업을 수행하려면 (RMS)Rights Management 공유 응용 프로그램을 설치해야 합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
+ms.sourcegitcommit: 94a8729e7c7e5bb438ac2bd48789a522c8de8cc4
+ms.openlocfilehash: db8d6a9c5959139ee76f022a5cee997bab24e6c9
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
-[Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치](install-sharing-app.md)되어 있는 경우 보호된 파일을 두 번 클릭하면 파일이 표시됩니다. 파일은 전자 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다.
+[Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치](install-sharing-app.md)되어 있는 경우 보호된 파일을 두 번 클릭하면 파일이 표시됩니다. 파일은 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다.
 
 > [!NOTE]
 > 보호된 파일을 볼 수 있기 전에 먼저 Rights Management 서비스는 파일을 볼 수 있는 권한이 있는지 확인하기 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
@@ -31,18 +31,18 @@ ms.openlocfilehash: 3f906815da2acd8f52bd742306d9936a71229c97
 >
 > -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
 >
->     등록하면 개인 전자 메일 주소보다 회사 전자 메일 주소를 사용합니다. 보호된 첨부 파일을 전자 메일로 전송받았기 때문에 등록한 경우 전자 메일 메시지를 보내는 데 사용된 동일한 전자 메일 주소를 사용합니다.
+>     등록하면 개인 메일 주소보다 회사 메일 주소를 사용합니다. 보호된 첨부 파일을 메일로 전송받았기 때문에 등록한 경우 메일 메시지를 보내는 데 사용된 동일한 메일 주소를 사용합니다.
 > -   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
 
 ## 보호된 파일을 보려면
-파일 탐색기 또는 첨부 파일을 포함하는 전자 메일 메시지를 사용하여 보호된 파일을 두 번 클릭하고 자격 증명을 입력하라는 메시지가 나타나면 그렇게 수행합니다.
+파일 탐색기 또는 첨부 파일을 포함하는 메일 메시지를 사용하여 보호된 파일을 두 번 클릭하고 자격 증명을 입력하라는 메시지가 나타나면 그렇게 수행합니다.
 
 다른 파일 이름 확장명을 가진 두 버전의 파일이 표시되면 다른 파일이 열리지 않는 경우 .ppdf 파일 확장명을 가진 파일을 엽니다. .ppdf 버전을 열 수 없는 경우 .ppdf 파일 이름 확장명을 가진 파일을 여는 방법을 알고 있는 [RMS 공유 응용 프로그램](install-sharing-app.md)을 먼저 설치합니다.
 
 > [!NOTE]
-> 자세한 내용은 "[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](sharing-app-dialog-box.md#what-s-the-ppdf-file-that-s-automatically-created)"를 참조하세요.
+> 자세한 내용은 [자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](sharing-app-dialog-box.md#whats-the-ppdf-file-thats-automatically-created)를 참조하세요.
 
-파일이 어떻게 열리는지는 파일이 어떻게 보호되는지에 따라 다르며 파일 이름 확장명을 보면 알 수 있습니다. 각각의 경우에서 파일 열기는 감사될 수 있고 보호되는 한 감사는 유지됩니다. 또한 파일이 전자 메일 첨부 파일로 전송되었다면 발신자는 파일을 열 때마다 전자 메일로 알림을 받을 수 있습니다.
+파일이 어떻게 열리는지는 파일이 어떻게 보호되는지에 따라 다르며 파일 이름 확장명을 보면 알 수 있습니다. 각각의 경우에서 파일 열기는 감사될 수 있고 보호되는 한 감사는 유지됩니다. 또한 파일이 메일 첨부 파일로 전송되었다면 발신자는 파일을 열 때마다 메일로 알림을 받을 수 있습니다.
 
 - **파일에 *.pfile* 파일 이름 확장명이 있습니다.
 
@@ -107,6 +107,6 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

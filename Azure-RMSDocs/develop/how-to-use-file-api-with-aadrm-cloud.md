@@ -20,19 +20,19 @@ ms.openlocfilehash: 28b85313e278455391040797ea2886bd9247abe2
 
 ---
 
-# 방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
+# <a name="howto-enable-your-service-application-to-work-with-cloud-based-rms"></a>방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
 
 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/library/jj585016.aspx)을 참조하세요.
 
 **중요**  
 Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그램을 사용하려면 사용자 고유의 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독)](../get-started/requirements-subscriptions.md) 항목을 참조하세요.
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>필수 구성 요소
 
 -   RMS SDK 2.1을 설치 및 구성해야 합니다. 자세한 내용은 [RMS SDK 2.1 시작](getting-started-with-ad-rms-2-0.md)을 참조하세요.
 -   대칭 키 옵션을 사용하거나 다른 방법으로 [ACS를 통해 서비스 ID를 만들고](https://msdn.microsoft.com/en-us/library/gg185924.aspx) 해당 프로세스에서 얻은 키 정보를 기록해야 합니다.
 
-## Azure 권한 관리 서비스 연결
+## <a name="connecting-to-the-azure-rights-management-service"></a>Azure 권한 관리 서비스 연결
 
 -   [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)를 호출합니다.
 -   [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)를 설정합니다.
@@ -50,9 +50,9 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 
 **참고** - 검색 서비스의 기존 조건으로 인해 북아메리카 지역에 거주하지 않는 경우 다른 지역의 대칭 키 자격 증명은 수락되지 않으므로 테넌트 URL을 직접 지정해야 합니다. 이 작업은 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx) 또는 [IpcGetTemplateIssuerList](https://msdn.microsoft.com/library/hh535266.aspx)[IPC\_CONNECTION\_INFO](https://msdn.microsoft.com/library/hh535274.aspx) 형식의 *pConnectionInfo* 매개 변수를 통해 수행됩니다.
 
-## 대칭 키를 생성하고 필요한 정보 수집
+## <a name="generate-a-symmetric-key-and-collect-the-needed-information"></a>대칭 키를 생성하고 필요한 정보 수집
 
-### 대칭 키 생성 지침
+### <a name="instructions-to-generate-a-symmetric-key"></a>대칭 키 생성 지침
 
 -   [Microsoft Online 로그인 도우미](http://go.microsoft.com/fwlink/p/?LinkID=286152)를 설치합니다.
 -   [Azure AD Powershell 모듈](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi)을 설치합니다.
@@ -78,7 +78,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
       AppPrincipalId : 7d9c1f38-600c-4b4d-8249-22427f016963
 
 
-### **TenantBposId** 및 **Url**확인 지침
+### <a name="instructions-to-find-out-tenantbposid-and-urls"></a>**TenantBposId** 및 **Url**확인 지침
 
 -   [Azure RMS powershell 모듈](https://technet.microsoft.com/en-us/library/jj585012.aspx)을 설치합니다.
 -   Powershell을 시작하고 다음 명령을 실행하여 테넌트의 RMS 구성을 가져옵니다.
@@ -128,7 +128,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
     promptCtx.hCancelEvent = NULL;
     promptCtx.pcCredential = &cred;
 
-### 템플릿 식별 후 암호화
+### <a name="identify-a-template-and-then-encrypt"></a>템플릿 식별 후 암호화
 
 -   암호화에 사용할 템플릿을 선택합니다.
     동일한 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 인스턴스를 전달하여 [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)를 호출합니다.
@@ -162,7 +162,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 
 이제 응용 프로그램이 Azure 권한 관리를 사용할 수 있도록 설정하는 데 필요한 단계를 완료했습니다.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [Azure 권한 관리 시작](https://technet.microsoft.com/en-us/library/jj585016.aspx)
 * [RMS SDK 2.1 시작](getting-started-with-ad-rms-2-0.md)
@@ -184,6 +184,6 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

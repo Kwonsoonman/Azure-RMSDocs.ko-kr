@@ -3,7 +3,7 @@ title: "데이터 보호에 대한 응용 프로그램 지원 | Azure Informatio
 description: "RMS API를 사용하여 Azure Information Protection의 Azure Rights Management 서비스를 기본적으로 지원하는 응용 프로그램을 식별합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2016
+ms.date: 10/31/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,14 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6dbbfacd072d5badd69cc6ea452a86baa99cc46
-ms.openlocfilehash: 0649b4300c1bd10ddcfc0c1432144f5eaa0b7797
+ms.sourcegitcommit: a036da617d88a65903cfea9df30d5f851bda6e36
+ms.openlocfilehash: 80874b7e15fef7f4e7685774b31410149301c124
 
 
 ---
 
 
-# Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
+# <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -51,30 +51,30 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 |**Blackberry 10**|지원되지 않음|지원되지 않음|Blackberry 메일 [[4]](#footnote-4)|지원되지 않음|
 
 
-##### 각주 1
+##### <a name="footnote-1"></a>각주 1
 사용권 계약에 따라 보호하는 콘텐츠 보기를 지원합니다.
 
-##### 각주 2 
-SharePoint Online, 비즈니스용 OneDrive, Outlook Web Access에서 사용권 계약에 따라 보호하는 콘텐츠 보기를 지원합니다.
+##### <a name="footnote-2"></a>각주 2 
+SharePoint Online 및 비즈니스용 OneDrive에서 보호되지 않은 문서를 보호된 라이브러리로 업로드하는 경우 보호된 문서 보기를 지원합니다. 
 
-##### 각주 3
+##### <a name="footnote-3"></a>각주 3
 받는 사람이 보호된 메일을 수신하고 Exchange를 메일 서버로 사용하지 않거나 보내는 사람이 다른 조직에 속하는 경우, 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다. 이 콘텐츠는 Outlook Web Access에서 열 수 없습니다.
 
-##### 각주 4
+##### <a name="footnote-4"></a>각주 4
 Exchange 관리자가 사용하도록 설정해야 하는 Exchange ActiveSync IRM을 사용합니다. 사용자는 보호된 전자 메일 메시지를 보기, 회신 및 전체 회신할 수 있지만 사용자는 새 전자 메일 메시지 자체를 보호할 수 없습니다.
 
 받는 사람이 보호된 메일을 수신하고 Exchange를 메일 서버로 사용하지 않거나 보내는 사람이 다른 조직에 속하는 경우, 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다. 이 콘텐츠는 Exchange Active Sync IRM을 사용하여 모바일 메일 클라이언트 또는 Outlook Web Access에서 열 수 없습니다.
 
-##### 각주 5
+##### <a name="footnote-5"></a>각주 5
 보호된 문서 보기 및 편집을 지원합니다. 자세한 내용은 Office 블로그에서 [iPad 및 iPhone용 Office에 Azure 권한 관리 지원 제공](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) 게시물을 참조하세요.
 
-##### 각주 6
+##### <a name="footnote-6"></a>각주 6
 자세한 내용은 Citrix [WorxMail에 대한 제품 설명서](http://docs.citrix.com/en-us/worx-mobile-apps/10/xmob-worx-mail.html)를 참조하세요.
 
-##### 각주 7
+##### <a name="footnote-7"></a>각주 7
 자세한 내용은 Office 블로그에서 [이제 일부 선택된 장치에서 Android용 OWA를 사용할 수 있음](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/) 게시물을 참조하세요.
 
-## Office에 대한 Azure RMS 지원과 관련된 자세한 내용
+## <a name="more-information-about-azure-rms-support-for-office"></a>Office에 대한 Azure RMS 지원과 관련된 자세한 내용
 
 Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되어 있으며, 이러한 앱에서 이 기능은 종종 IRM(정보 권한 관리)이라고 불립니다. 다음 Office 클라이언트 버전은 Azure RMS를 사용하여 파일 및 메일 보호를 지원합니다.
 
@@ -92,7 +92,7 @@ Office Professional Plus 2010 또는 Office Professional 2010을 사용하는 Az
 
 - Windows 10에서는 지원되지 않음
 
-## iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
+## <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
 
 iOS 및 Android용 Azure Information Protection 앱은 이러한 장치에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 전자 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
 
@@ -101,7 +101,7 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 자세한 내용은 [iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ](../rms-client/mobile-app-faq.md)를 참조하세요.
 
 
-## Rights Management 공유 응용 프로그램에 대한 자세한 내용
+## <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 자세한 내용
 
 Windows용 Rights Management 공유 응용 프로그램에 대한 자세한 내용은 다음 리소스를 참조하세요.
 
@@ -118,7 +118,7 @@ Windows용 Rights Management 공유 응용 프로그램에 대한 자세한 내�
 > [!NOTE]
 > 이제 iOS 및 Android용 RMS 공유 앱은 Azure Information Protection 앱으로 대체됩니다.
 
-## Azure RMS를 지원하는 다른 응용 프로그램에 대한 자세한 내용
+## <a name="more-information-about-other-applications-that-support-azure-rms"></a>Azure RMS를 지원하는 다른 응용 프로그램에 대한 자세한 내용
 
 표에 있는 응용 프로그램뿐 아니라 RMS API를 Azure RMS와 통합할 수 있도록 지원하는 모든 응용 프로그램이며, 다음이 포함됩니다.
 
@@ -128,7 +128,7 @@ Windows용 Rights Management 공유 응용 프로그램에 대한 자세한 내�
 
 SDK에 대한 자세한 내용은 [Microsoft Rights Management SDK](../develop/developers-guide.md)를 참조하세요.
 
-## Azure RMS에서 지원되지 않는 응용 프로그램
+## <a name="applications-that-are-not-supported-by-azure-rms"></a>Azure RMS에서 지원되지 않는 응용 프로그램
 
 Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같습니다.
 
@@ -144,7 +144,7 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 기타 요구 사항을 확인하려면 [Azure Information Protection에 대한 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 자주 사용하는 응용 프로그램이 Azure RMS를 지원하는 방식에 대한 자세한 내용은 [응용 프로그램이 Azure 권한 관리 서비스를 지원하는 방식](../understand-explore/applications-support.md)을 참조하세요.
@@ -152,6 +152,6 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 자주 사용하는 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)을 참조하세요.
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

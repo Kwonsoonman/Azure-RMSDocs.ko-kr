@@ -3,7 +3,7 @@ title: "2단계&colon; 소프트웨어 보호된 키-소프트웨어 보호된 �
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 소프트웨어 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,30 +12,30 @@ ms.assetid: 81a5cf4f-c1f3-44a9-ad42-66e95f33ed27
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: e6bffd31e7f198a767531fb343b8146246078004
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 4a5e45bfef8e39d147410330b0d6b658c8d52474
 
 
 ---
 
 
-# 2단계: 소프트웨어 보호된 키-소프트웨어 보호된 키 마이그레이션
+# <a name="step-2-softwareprotected-key-to-softwareprotected-key-migration"></a>2단계: 소프트웨어 보호된 키-소프트웨어 보호된 키 마이그레이션
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
 
 [AD RMS에서 Azure Information Protection으로 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 소프트웨어로 보호되고 소프트웨어 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다. 
 
-선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
+선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)로 돌아가서 다른 구성을 선택합니다.
 
 다음 절차에 따라 AD RMS 구성을 Azure Information Protection으로 가져옵니다. 그러면 Microsoft에서 관리하는 Azure Information Protection 테넌트 키가 생성됩니다.
 
-## 구성 데이터를 Azure Information Protection으로 가져오려면
+## <a name="to-import-the-configuration-data-to-azure-information-protection"></a>구성 데이터를 Azure Information Protection으로 가져오려면
 
 1.  인터넷에 연결된 워크스테이션에서 Azure Rights Management용 Windows PowerShell 모듈(최소 버전 2.5.0.0)을 다운로드한 후 설치합니다. 여기에는 [Import-AadrmTpd](http://msdn.microsoft.com/library/azure/dn857523.aspx) cmdlet이 포함되어 있습니다. Azure Rights Management 서비스(Azure RMS)에서는 Azure Information Protection에 대한 보호 서비스를 제공합니다.
 
     > [!TIP]
-    > 이전에 모듈을 다운로드하여 설치한 경우 다음을 실행하여 버전 번호를 확인합니다. `(Get-Module aadrm -ListAvailable).Version`
+    > 모듈을 이미 다운로드하여 설치한 경우 `(Get-Module aadrm -ListAvailable).Version`을 실행하여 버전 번호를 확인합니다.
 
     설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
@@ -64,12 +64,12 @@ ms.openlocfilehash: e6bffd31e7f198a767531fb343b8146246078004
     ```
 
 
-이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
+이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

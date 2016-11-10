@@ -14,24 +14,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 763e99e40bbe329305e97757e87d10b048cc62e9
+ms.sourcegitcommit: dc452dac3a86cd9cc39127d5a29106ae87ba94be
+ms.openlocfilehash: c3dfa23a4bb03aec3ad9eae835382040a5347006
 
 
 ---
 
-# Windows 스토어 설정
+# <a name="windows-store-setup"></a>Windows 스토어 설정
 
 Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 
 이 항목에서는 새 앱을 만들기 위한 환경을 설정하는 과정을 안내합니다.
 
 -   [필수 구성 요소](#prerequisites)
--   [선택 사항입니다.](#optional)
+-   [선택 사항](#optional)
 -   [개발 환경 구성](#configuring-your-development-environment)
 -   [참고 항목](#see-also)
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>필수 구성 요소
 
 
 개발 시스템에 다음 소프트웨어가 있어야 합니다.
@@ -44,11 +44,11 @@ Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2�
 
 API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
-## 선택 사항입니다.
+## <a name="optional"></a>선택 사항입니다.
 
 UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 개발자에게 사용 및 보호 작업을 위한 다시 사용 가능한 UI를 제공합니다([Windows 스토어 앱용 UI 라이브러리](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore)). 또한 Windows 스토어 앱 샘플 응용 프로그램인 [Windows 스토어용 RMS 샘플 응용 프로그램](https://github.com/AzureADSamples/rms-samples-for-windowsstore)도 제공합니다.
 
-## 개발 환경 구성
+## <a name="configuring-your-development-environment"></a>개발 환경 구성
 
 
 -   Visual Studio를 엽니다.
@@ -70,7 +70,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 이제 새 Windows 스토어 앱을 만들 준비가 되었습니다.
 
-### 참고 항목
+### <a name="see-also"></a>참고 항목
 
 [시작](get-started.md)
 
@@ -86,6 +86,6 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

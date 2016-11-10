@@ -14,13 +14,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 80d79ead119b5dbe86d94f979742ecc2b62d1ef9
+ms.sourcegitcommit: 7c0b885c35dcac0237788a69486d8f736c97c0c4
+ms.openlocfilehash: 96b71d26461559aa8e53960e7e8f3f748b7ebb1d
 
 
 ---
 
-# iOS 및 OS X 설정
+# <a name="ios-and-os-x-setup"></a>iOS 및 OS X 설정
 
 iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 Azure RMS(Azure 권한 관리)를 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 
@@ -30,11 +30,11 @@ iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 
 
 -   [필수 구성 요소](#prerequisites)
--   [선택 사항입니다.](#optional)
+-   [선택 사항](#optional)
 -   [개발 환경 구성](#configuring-your-development-environment)
 -   [참고 항목](#see-also)
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>필수 구성 요소
 
 다음 소프트웨어는 개발 시스템에서 사용하는 것이 좋습니다.
 
@@ -53,11 +53,11 @@ iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 
 API 업데이트, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
-## 선택 사항입니다.
+## <a name="optional"></a>선택 사항입니다.
 
 UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 개발자에게 사용 및 보호 작업을 위한 다시 사용 가능한 UI를 제공합니다([iOS용 UI 라이브러리 및 샘플 앱](https://github.com/AzureAD/rms-sdk-ui-for-ios)).
 
-## 개발 환경 구성
+## <a name="configuring-your-development-environment"></a>개발 환경 구성
 
 -   새 프로젝트를 만들려면 **File** 메뉴에서 **New**를 클릭한 다음 **Project**를 클릭합니다.
 -   **Single View Application**을 선택합니다.
@@ -100,7 +100,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 -   이제 새 iOS/OS X 앱을 만들 준비가 되었습니다.
 
-### 참고 항목
+### <a name="see-also"></a>참고 항목
 
 * [시작](get-started.md)
 
@@ -108,7 +108,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 * [개발자 용어 및 개념](core-concepts.md)
 
-* [iOS/OS X API 참조](https://msdn.microsoft.com/library/dn758306.aspx)
+* [iOS / OS X API Reference](https://msdn.microsoft.com/library/dn758306.aspx)
 
  
 
@@ -116,6 +116,6 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

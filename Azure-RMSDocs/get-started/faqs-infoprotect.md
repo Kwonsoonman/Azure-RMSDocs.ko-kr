@@ -3,7 +3,7 @@ title: "분류 및 레이블 지정에 대한 질문과 대답 | Azure Informati
 description: "Azure Information Protection의 미리 보기 릴리스에 대한 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ce4fc256cf80fdd2e4a8212e2f64ffc6ca6a3964
-ms.openlocfilehash: 9b341a53a85242839d737bc36c90a8f94637bae1
+ms.sourcegitcommit: b23466ee412f3e705f49083c11c2099c0cdcd2d6
+ms.openlocfilehash: b9e0a154b67bc54b7868021fb46f7d52c8b7e3bd
 
 
 ---
@@ -34,13 +34,17 @@ Azure Information Protection 클라이언트는 데이터에 할당된 분류 �
 
 현재 릴리스에는 다음과 같은 제한 사항이 있습니다. 추가 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)(Enterprise Mobility 및 보안 블로그) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요.
 
-- 분류 및 레이블 지정을 위한 중앙 집중식 로깅은 없습니다.
+- Office 파일 형식 및 Outlook 메일 메시지에만 레이블을 적용할 수 있습니다.
+
+- Office 추가 기능에 대한 레이블은 Azure Information Protection 클라이언트를 설치한 모든 사용자에게 표시됩니다.
 
 - 레이블 이름 및 도구 설명은 하나의 언어로만 지원됩니다.
 
-- 자동 분류에 대한 조건은 구 또는 패턴이어야 합니다.
-
 - Windows 파일 탐색기에서 파일을 분류할 수 없습니다.
+
+- 분류 및 레이블 지정을 위한 중앙 집중식 로깅은 없습니다.
+
+- 자동 분류에 대한 조건은 구 또는 패턴이어야 합니다.
 
 - 모바일 장치(iOS 및 Android) 및 Mac 컴퓨터용 Office 앱과 Office Web Apps(Office Online)는 아직 지원되지 않습니다.
 
@@ -53,6 +57,10 @@ Azure Information Protection 클라이언트는 데이터에 할당된 분류 �
 Azure Information Protection 정책을 구성하려면 Azure Active Directory의 전역 관리자로 Azure Portal에 로그인해야 합니다.
 
 하지만 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 레이블 지정 기능을 확인하고 사용해 보기 위해 포털에 로그인하지 않아도 됩니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure 포털에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
+
+## Azure Portal의 옵션은 P1인가요, P2인가요?
+
+**Azure Information Protection Premium 1**(P1) 구독 및 **Azure Information Protection Premium 2**(P2) 구독에 포함되는 기능을 확인하려면 Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 참조하세요.
 
 ## Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 
@@ -150,6 +158,6 @@ Azure Information Protection에 문제가 발생하고 현재 클라이언트 �
 질문이나 의견이 있으면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)를 사용하세요. 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

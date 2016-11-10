@@ -4,7 +4,7 @@ description: "RMS SDK 2.1을 사용하여 응용 프로그램을 개발하는 �
 keywords: 
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,28 +14,35 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 6e2b85bc8069de7060211df4d53be7f24ae44e3e
+ms.sourcegitcommit: 4560a1cf3424ae4dddd3a0675b62e9c5e55de9fa
+ms.openlocfilehash: 1f46d93a47fae3b7e7de334db73b7e7b65ea6eea
 
 
 ---
 
-# 응용 프로그램 배포
+# <a name="developing-your-application"></a>응용 프로그램 배포
 
 이 항목은 RMS 사용 응용 프로그램의 핵심 측면에 대한 중요 지침을 제공하며, 고유한 응용 프로그램 개발의 기반 역할을 할 수 있습니다.
 
-## 소개
+## <a name="introduction"></a>소개
 
-이 항목에 제공된 지침은 샘플 응용 프로그램인 *IPCHelloWorld*를 기반으로 합니다. 이 샘플 응용 프로그램은 권한 사용 응용 프로그램의 기본 개념 및 코드를 이해하는 데 도움이 됩니다. *IPCHelloWorld* 프로젝트는 권한 관리 서비스 SDK 2.1용으로 이미 구성되어 있습니다. RMS SDK 2.1을 사용하도록 새 프로젝트를 구성하는 방법에 대한 자세한 내용은 [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)을 참조하세요.
+이 항목에 제공된 지침은 샘플 응용 프로그램인 *IPCHelloWorld*를 기반으로 합니다. 이 샘플 응용 프로그램은 권한 사용 응용 프로그램의 기본 개념 및 코드를 이해하는 데 도움이 됩니다. *IPCHelloWorld* 프로젝트는 권한 관리 서비스 SDK 2.1용으로 이미 구성되어 있습니다.
 
-Microsoft Connect에서 전체 *IPCHellowWorld* 샘플 응용 프로그램을 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)으로 다운로드할 수 있습니다.
-> [!Note]
-> Microsoft Connect에 액세스하는 동안 오류가 발생하면 등록되지 않은 것일 수 있습니다. 등록하려면: [연결](http://connect.microsoft.com)로 가서 Microsoft 계정으로 로그인 > 디렉터리 > Rights Management Services 검색 > 가입으로 이동합니다.
+### <a name="download-sample"></a>샘플 다운로드
+- Connect 사이트에 등록했는지 확인:
+  - 등록하려면 [Connect](http://connect.microsoft.com)로 이동
+  - Microsoft 계정으로 로그인
+  - [Rights Management Connect 사이트](https://connect.microsoft.com/site1170)로 이동
+  - 참여 
+- 전체 *IPCHellowWorld* 샘플 응용 프로그램을 [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)으로 다운로드
+
+RMS SDK 2.1을 사용하도록 새 프로젝트를 구성하는 방법에 대한 자세한 내용은 [Visual Studio 구성](how-to-configure-a-visual-studio-project-to-use-the-ad-rms-sdk-2-0.md)을 참조하세요.
 
 
-## MSIPC.dll 로드
 
-RMS SDK 2.1 함수를 호출하려면 먼저 [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize) 함수를 호출하여 MSIPC.dll을 로드해야 합니다.
+## <a name="loading-msipcdll"></a>MSIPC.dll 로드
+
+RMS SDK 2.1 함수를 호출하려면 먼저 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx) 함수를 호출하여 MSIPC.dll을 로드해야 합니다.
 
         C++
         hr = IpcInitialize();
@@ -44,7 +51,7 @@ RMS SDK 2.1 함수를 호출하려면 먼저 [IpcInitialize](/information-protec
           goto exit;
         }
 
-## 템플릿 열거
+## <a name="enumerating-templates"></a>템플릿 열거
 
 RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합니다. 즉, 데이터에 액세스할 수 있는 사용자와 해당 권한을 정의합니다. RMS 템플릿은 RMS 서버에 설치됩니다.
 
@@ -58,7 +65,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
         goto exit;
       }
 
-이 호출은 기본 서버에 설치된 RMS 템플릿을 검색하고 그 결과를 *pcTil* 변수가 가리키는 [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til) 구조에 로드한 다음 템플릿을 표시합니다.
+이 호출은 기본 서버에 설치된 RMS 템플릿을 검색하고 그 결과를 *pcTil* 변수가 가리키는 [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx) 구조에 로드한 다음 템플릿을 표시합니다.
 
       C++
       if (0 == pcTil->cTi) {
@@ -75,11 +82,11 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
         wprintf(L"\n");
       }
 
-## 라이선스 직렬화
+## <a name="serializing-a-license"></a>라이선스 직렬화
 
-데이터를 보호하려면 먼저 라이선스를 직렬화하고 콘텐츠 키를 가져와야 합니다. 콘텐츠 키는 중요한 데이터를 암호화하는 데 사용됩니다. 직렬화된 라이선스는 일반적으로 암호화된 데이터에 연결되며 보호된 데이터의 소비자가 사용합니다. 소비자는 직렬화된 라이선스로 [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)를 호출하여 콘텐츠 암호를 해독하고 콘텐츠와 관련된 정책을 가져오기 위한 콘텐츠 키를 얻어야 합니다.
+데이터를 보호하려면 먼저 라이선스를 직렬화하고 콘텐츠 키를 가져와야 합니다. 콘텐츠 키는 중요한 데이터를 암호화하는 데 사용됩니다. 직렬화된 라이선스는 일반적으로 암호화된 데이터에 연결되며 보호된 데이터의 소비자가 사용합니다. 소비자는 직렬화된 라이선스로 [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)를 호출하여 콘텐츠 암호를 해독하고 콘텐츠와 관련된 정책을 가져오기 위한 콘텐츠 키를 얻어야 합니다.
 
-간단하게, [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)에서 반환된 첫 번째 RMS 템플릿을 사용하여 라이선스를 직렬화합니다.
+간단하게, [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)에서 반환된 첫 번째 RMS 템플릿을 사용하여 라이선스를 직렬화합니다.
 
 일반적으로 사용자 인터페이스 대화 상자를 사용하여 사용자가 원하는 템플릿을 선택할 수 있도록 합니다.
 
@@ -95,9 +102,9 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 이렇게 하면 콘텐츠 키 *hContentKey*와 보호된 데이터에 연결해야 하는 직렬화된 라이선스 *pSerializedLicense*를 보유하게 됩니다.
 
 
-## 데이터 보호
+## <a name="protecting-data"></a>데이터 보호
 
-이제 [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수를 사용하여 중요한 데이터를 암호화할 준비가 되었습니다. 먼저 **IpcEncrypt** 함수에 암호화된 데이터의 예상 크기를 물어야 합니다.
+이제 [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx) 함수를 사용하여 중요한 데이터를 암호화할 준비가 되었습니다. 먼저 **IpcEncrypt** 함수에 암호화된 데이터의 예상 크기를 물어야 합니다.
 
       C++
       cbText = (DWORD)(sizeof(WCHAR)*(wcslen(wszText)+1));
@@ -109,7 +116,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
         goto exit;
       }
 
-여기서는 wszText에 보호할 일반 텍스트가 포함되어 있습니다. [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt) 함수가 암호화된 데이터의 크기를 *cbEncrypted* 매개 변수에 반환합니다.
+여기서는 *wszText*에 보호할 일반 텍스트가 포함되어 있습니다. [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx) 함수가 암호화된 데이터의 크기를 *cbEncrypted* 매개 변수에 반환합니다.
 
 이제 암호화된 데이터에 대한 메모리를 할당합니다.
 
@@ -134,7 +141,7 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
 
 이 단계를 마치면 암호화된 데이터 *pbEncrypted*와 소비자가 데이터 암호를 해독하는 데 사용할 직렬화된 라이선스 *pSerializedLicense*를 보유하게 됩니다.
 
-## 오류 처리
+## <a name="error-handling"></a>오류 처리
 
 이 예제 응용 프로그램 전체에서 *DisplayError* 함수는 오류 처리에 사용됩니다.
 
@@ -151,9 +158,9 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
         }
       }
 
-*DisplayError* 함수는 [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext) 함수를 사용하여 해당 오류 코드에서 오류 메시지를 가져오고 표준 출력으로 출력합니다.
+*DisplayError* 함수는 [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx) 함수를 사용하여 해당 오류 코드에서 오류 메시지를 가져오고 표준 출력으로 출력합니다.
 
-## 정리
+## <a name="cleaning-up"></a>정리
 
 완료하기 전에 할당된 리소스도 모두 해제해야 합니다.
 
@@ -174,19 +181,19 @@ RMS 템플릿은 데이터를 보호하는 데 사용되는 정책을 정의합�
         IpcFreeMemory((LPVOID)pcTil);
       }
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 - [개발자 지침 및 정보](developer-notes.md)
-- [IpcEncrypt](/information-protection/sdk/2.1/api/win/functions#msipc_ipcencrypt)
-- [IpcGetErrorMessageText](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgeterrormessagetext)
-- [IpcGetKey](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetkey)
-- [IpcGetTemplateList](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgettemplatelist)
-- [IpcInitialize](/information-protection/sdk/2.1/api/win/functions#msipc_ipcinitialize)
-- [IPC_TIL](/information-protection/sdk/2.1/api/win/ipc_til#msipc_ipc_til)
+- [IpcEncrypt](https://msdn.microsoft.com/library/hh535259.aspx)
+- [IpcGetErrorMessageText](https://msdn.microsoft.com/library/hh535261.aspx)
+- [IpcGetKey](https://msdn.microsoft.com/library/hh535263.aspx)
+- [IpcGetTemplateList](https://msdn.microsoft.com/library/hh535267.aspx)
+- [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)
+- [IPC_TIL](https://msdn.microsoft.com/library/hh535283.aspx)
 - [Webinar_Collateral.zip](https://connect.microsoft.com/site1170/Downloads/DownloadDetails.aspx?DownloadID=42440)
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Azure RMS를 통해 해결할 수 있는 문제 | Azure Information Prot
 description: "조직에 해당될 수 있는 비즈니스 요구 사항이나 문제에 대해 알아보고 Azure RMS 기술을 통해 이러한 요구 사항을 충족하고 문제를 해결하는 방법을 파악합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,27 +12,27 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 03ada045291115a6cc47353fed36ed9db7a23668
+ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
+ms.openlocfilehash: fda0a8bbbcc0a4b09cb7098d719bb10e431e1622
 
 
 ---
 
 
-# Azure RMS를 통해 해결할 수 있는 문제
+# <a name="what-problems-does-azure-rms-solve"></a>Azure RMS를 통해 해결할 수 있는 문제
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-다음 표를 통해 문서와 전자 메일 보호를 위해 조직에 해당될 수 있는 비즈니스 요구 사항이나 문제 및 Azure RMS 기술로 이러한 사항을 해결하는 방법을 파악할 수 있습니다.
+다음 표를 통해 문서와 메일 보호를 위해 조직에 해당될 수 있는 비즈니스 요구 사항이나 문제 및 Azure RMS 기술로 이러한 사항을 해결하는 방법을 파악할 수 있습니다.
 
 Azure RMS는 [Azure Information Protection](what-is-information-protection.md)에서 사용하는 보호 기술입니다.
 
 |요구 사항 또는 문제|Azure RMS를 통한 해결 방법|
 |--------------------------|-----------------------|
-|모든 파일 형식 보호|√ 이전 Rights Management 구현에서는 기본 보호 기능을 통해 Office 파일만 보호할 수 있었습니다. 이제 [일반 보호](../rms-client/sharing-app-dialog-box.md#what-s-the-difference-between-generic-protection-and-built-in-native-protection) 기능이 사용되므로 모든 파일 형식이 지원됩니다.|
+|모든 파일 형식 보호|√ 이전 Rights Management 구현에서는 기본 보호 기능을 통해 Office 파일만 보호할 수 있었습니다. 이제 [일반 보호](../rms-client/sharing-app-dialog-box.md#whats-the-difference-between-generic-protection-and-built-in-native-protection) 기능이 사용되므로 모든 파일 형식이 지원됩니다.|
 |어디서나 파일 보호|√ 파일을 특정 위치에 저장하면([바로 보호](../rms-client/sharing-app-protect-in-place.md)) 클라우드 저장소 서비스 등 IT에서 제어하지 않는 저장소에 파일을 복사해도 보호 기능이 계속 적용됩니다.|
-|전자 메일로 안전하게 파일 공유|√ 메일로 공유([보호된 항목 공유](../rms-client/sharing-app-protect-by-email.md))하는 파일은 메일 메시지의 첨부 파일로 보호되며 보호된 첨부 파일을 여는 방법에 대한 지침이 제공됩니다. 전자 메일 텍스트는 암호화되지 않으므로 받는 사람은 해당 지침을 항상 확인할 수 있습니다. 그러나 첨부된 문서는 보호되므로 해당 전자 메일이나 문서를 다른 사용자에게 전달하더라도 권한이 있는 사용자만이 첨부된 문서를 열 수 있습니다.|
-|감사 및 모니터링|√ 보호된 파일이 조직의 경계를 벗어나더라도 해당 파일의 [사용을 감사하고 모니터링](../deploy-use/log-analyze-usage.md)할 수 있습니다.<br /><br />Contoso, Ltd. 소속 직원이 Fabrikam, Inc. 직원 3명과 공동 프로젝트를 진행 중인 경우를 예로 들어 보겠습니다. 이 직원 3명에게 읽기 전용으로 제한하여 보호한 문서를 전자 메일로 보낼 때 Azure RMS 감사에서는 다음과 같은 정보를 제공할 수 있습니다.<br /><br />- Fabrikam에서 지정한 직원이 문서를 열었는지 여부 및 문서를 연 시간<br /><br />- 지정하지 않은 다른 직원이 문서 열기를 시도했는지(그리고 실패했는지) 여부. 다른 사용자가 액세스할 수 있는 공유 위치로 문서가 전달되었거나 저장되었을 수 있습니다.<br /><br />- 지정한 직원이 문서 인쇄 또는 변경을 시도했는지(그리고 실패했는지) 여부|
+|메일로 안전하게 파일 공유|√ 메일로 공유([보호된 항목 공유](../rms-client/sharing-app-protect-by-email.md))하는 파일은 메일 메시지의 첨부 파일로 보호되며 보호된 첨부 파일을 여는 방법에 대한 지침이 제공됩니다. 메일 텍스트는 암호화되지 않으므로 받는 사람은 해당 지침을 항상 확인할 수 있습니다. 그러나 첨부된 문서는 보호되므로 해당 메일이나 문서를 다른 사용자에게 전달하더라도 권한이 있는 사용자만이 첨부된 문서를 열 수 있습니다.|
+|감사 및 모니터링|√ 보호된 파일이 조직의 경계를 벗어나더라도 해당 파일의 [사용을 감사하고 모니터링](../deploy-use/log-analyze-usage.md)할 수 있습니다.<br /><br />Contoso, Ltd. 소속 직원이 Fabrikam, Inc. 직원 3명과 공동 프로젝트를 진행 중인 경우를 예로 들어 보겠습니다. 이 직원 3명에게 읽기 전용으로 제한하여 보호한 문서를 메일로 보낼 때 Azure RMS 감사에서는 다음과 같은 정보를 제공할 수 있습니다.<br /><br />- Fabrikam에서 지정한 직원이 문서를 열었는지 여부 및 문서를 연 시간<br /><br />- 지정하지 않은 다른 직원이 문서 열기를 시도했는지(그리고 실패했는지) 여부. 다른 사용자가 액세스할 수 있는 공유 위치로 문서가 전달되었거나 저장되었을 수 있습니다.<br /><br />- 지정한 직원이 문서 인쇄 또는 변경을 시도했는지(그리고 실패했는지) 여부|
 |Windows 컴퓨터만이 아닌 일반적으로 사용되는 모든 장치 지원|√ [지원되는 장치](../get-started/requirements-client-devices.md)는 다음과 같습니다.<br /><br />- Windows 컴퓨터 및 휴대폰<br /><br />- Mac 컴퓨터<br /><br />- iOS 태블릿 및 휴대폰<br /><br />- Android 태블릿 및 휴대폰|
 |기업 간 공동 작업 지원|√ Azure RMS는 클라우드 서비스이므로 보호된 콘텐츠를 공유하기 전에 다른 조직과의 트러스트를 명시적으로 구성할 필요가 없습니다. Office 365 또는 Azure AD 디렉터리가 이미 있으면 조직 간의 공동 작업이 자동으로 지원됩니다. 해당 디렉터리가 없는 사용자는 무료 [개인용 RMS](rms-for-individuals.md) 구독을 신청할 수 있습니다.|
 |온-프레미스 서비스 및 Office 365 지원|√ Azure RMS는 [Office 365와 원활하게](office-apps-services-support.md) 연동될 뿐만 아니라 [RMS 커넥터](../deploy-use/deploy-rms-connector.md)를 배포할 때 다음 온-프레미스 서비스에서도 사용할 수 있습니다.<br /><br />- Exchange Server<br /><br />- SharePoint Server<br /><br />- 파일 분류 인프라를 실행하는 Windows Server|
@@ -44,7 +44,7 @@ Azure RMS는 [Azure Information Protection](what-is-information-protection.md)�
 > [!TIP]
 > 온-프레미스 권한 관리 버전인 AD RMS(Active Directory Rights Management Services)에 대해 잘 알고 있는 경우 [Azure 권한 관리와 AD RMS 비교](compare-azure-rms-ad-rms.md)의 비교 표를 확인하면 도움이 됩니다.
 
-## 보안, 준수 및 규정 요구 사항
+## <a name="security-compliance-and-regulatory-requirements"></a>보안, 준수 및 규정 요구 사항
 Azure RMS는 다음과 같은 보안, 준수 및 규정 요구 사항을 지원합니다.
 
 √ 업계 표준 암호화가 사용되며 FIPS 140-2가 지원됩니다. 자세한 내용은 [Azure RMS에서 사용하는 암호화 컨트롤: 알고리즘 및 키 길이](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths) 정보를 참조하세요.
@@ -67,13 +67,13 @@ Azure RMS는 다음과 같은 보안, 준수 및 규정 요구 사항을 지원�
 
 이러한 외부 인증에 대한 자세한 내용은 [Azure 보안 센터](http://azure.microsoft.com/support/trust-center/compliance/)를 참조하세요.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 관리자와 사용자에게 Azure RMS가 표시되는 모양을 보려면 [Azure RMS 실행](what-admins-users-see.md)을 참조하세요.
 
 Azure RMS 작동에 대한 보다 기술적인 정보에 관심이 있는 경우 [Azure RMS 작동 방식](how-does-it-work.md)을 참조하세요. 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "개인용 RMS 등록 방법 | Azure Information Protection"
 description: "이 무료 계정의 등록 지침과 등록 프로세스의 작동 방식 관련 기술 정보를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
+ms.sourcegitcommit: 8306d70937aeaf665617d84b4e7ad2c8944e3c79
+ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
 
 
 ---
@@ -22,22 +22,22 @@ ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 >*적용 대상: Azure Information Protection*
 
-이 무료 계정에 등록하려면 [Microsoft Azure Rights Management 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)를 방문하여 계정을 요청하고 회사 메일 주소를 제공합니다. 이 등록 페이지로 이동하는 가장 일반적인 방법은 보호되는 첨부 파일이 포함된 메일 메시지를 받았을 때입니다. 여기에는 등록 방법에 대한 지침이 포함되어 있습니다. Microsoft로부터 전자 메일을 답장을 받으면 세부 정보 입력을 통해 계정을 만들어 등록 프로세스를 완료합니다. 이 작업을 완료하면 다른 장치용 공유 응용 프로그램을 다운로드할 수 있는 페이지, 사용자 가이트에 대한 링크 및 Rights Management 보호를 기본적으로 지원하는 응용 프로그램의 최신 목록에 대한 링크가 표시됩니다. 
+이 무료 계정에 등록하려면 [Microsoft Azure Information Protection 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)를 방문하여 계정을 요청하고 회사 메일 주소를 제공합니다. 이 등록 페이지로 이동하는 가장 일반적인 방법은 보호되는 첨부 파일이 포함된 메일 메시지를 받았을 때입니다. 여기에는 등록 방법에 대한 지침이 포함되어 있습니다. Microsoft로부터 메일을 답장을 받으면 세부 정보 입력을 통해 계정을 만들어 등록 프로세스를 완료합니다. 이 작업을 완료하면 다른 장치용 공유 응용 프로그램을 다운로드할 수 있는 페이지, 사용자 가이트에 대한 링크 및 Rights Management 보호를 기본적으로 지원하는 응용 프로그램의 최신 목록에 대한 링크가 표시됩니다. 
 
 ## 개인용 RMS를 등록하려면
 
-1.  Windows 또는 Mac 컴퓨터나 모바일 장치를 사용하여 [Microsoft Azure Rights Management 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)로 이동합니다.
+1.  Windows 또는 Mac 컴퓨터나 모바일 장치를 사용하여 [Microsoft Azure Information Protection 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)로 이동합니다.
 
-2.  **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같은 조직에 사용하는 전자 메일 주소를 입력합니다.
+2.  **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같은 조직에 사용하는 메일 주소를 입력합니다.
 
     > [!IMPORTANT]
     > 개인 메일 계정은 지원되지 않으므로 Microsoft 계정(이전의 Microsoft Live ID 계정)이나 가정에서 사용하는 인터넷 공급자가 제공한 다른 개인 계정은 입력하지 마세요.
 
 3.  **로그인**을 클릭합니다.
 
-    Microsoft는 사용자의 메일 주소를 사용하여 해당 조직에 이미 [Azure RMS가 포함된 유료 구독](../get-started/requirements-subscriptions.md)이 있는지 확인합니다. 구독이 있으면 개인용 RMS가 필요하지 않고 즉시 로그인되며 개인용 RMS 셀프서비스 가입이 취소됩니다. Azure RMS 유료 구독이 없으면 다음 단계를 진행합니다.
+    Microsoft는 메일 주소를 사용하여 조직에 이미 [Azure Information Protection 유료 구독](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 또는 [Azure Rights Management를 사용하는 데이터 보호를 포함하는 Office 365 구독](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있는지 확인합니다. 구독이 있으면 개인용 RMS가 필요하지 않고 즉시 로그인되며 개인용 RMS 셀프서비스 가입이 취소됩니다. 유료 구독이 없으면 다음 단계를 진행합니다.
 
-4.  입력한 주소로 확인 메일 메시지가 전송될 때까지 기다립니다. 이 전제 메일은 Office 365 팀(support@email.microsoftonline.com)에서 보내며 제목이 **Microsoft Azure Rights Management 등록 완료**입니다.
+4.  입력한 주소로 확인 메일 메시지가 전송될 때까지 기다립니다. 이 메일은 Office 365 팀(support@email.microsoftonline.com)에서 보내며 제목은 **Microsoft Azure Information Protection 등록 완료**입니다.
 
 5.  메일을 받으면 **Yes, that's me**(본인 확인 완료)를 클릭하여 메일 주소를 확인한 후 등록 프로세스를 완료합니다.
 
@@ -52,7 +52,7 @@ ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 이는 사용자가 개인용 RMS에 등록하고 조직에 Office 365 구독 또는 Azure 구독이 없어 Azure에 사용자를 인증할 디렉터리가 없는 경우에 발생합니다.
 
-1.  조직의 첫 번째 사용자가 개인용 RMS 구독을 요청하면 메일 주소에 입력된 도메인 이름을 통해 이미 Azure 테넌트와 연결되어 있는지 여부를 확인합니다. 기존 테넌트가 없으면 해당 조직에 대해 이 첫 번째 사용자의 계정이 담긴 새로운 테넌트와 Azure 디렉터리가 자동 생성됩니다. Azure의 유료 구독과 달리, 이 첫 번째 계정은 전역 관리자가 아니라 표준 사용자입니다. 새 계정에서는 사용자가 제공한 전자 메일 주소와 암호를 사용합니다.
+1.  조직의 첫 번째 사용자가 개인용 RMS 구독을 요청하면 메일 주소에 입력된 도메인 이름을 통해 이미 Azure 테넌트와 연결되어 있는지 여부를 확인합니다. 기존 테넌트가 없으면 해당 조직에 대해 이 첫 번째 사용자의 계정이 담긴 새로운 테넌트와 Azure 디렉터리가 자동 생성됩니다. Azure의 유료 구독과 달리, 이 첫 번째 계정은 전역 관리자가 아니라 표준 사용자입니다. 새 계정에서는 사용자가 제공한 메일 주소와 암호를 사용합니다.
 
     > [!NOTE]
     > 일부 도메인 이름은 디렉터리를 만드는 데 사용할 수 없으므로 개인용 RMS에 사용할 수 없습니다.
@@ -87,7 +87,7 @@ ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
     -   [Azure RMS 구독](https://technet.microsoft.com/dn858608)에서 지원한다면 사용자에게 보호되는 문서를 추적하고 취소할 수 있는 기능을 제공합니다. 자세한 내용은 [RMS 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)에서 [파일 추적 및 해지](../rms-client/sharing-app-track-revoke.md)를 참조하세요.
 
-    -   Azure 권한 관리의 테넌트 키가 IT 정책에 따라 온-프레미스에서 생성되어 HSM(하드웨어 보안 모듈)을 통해 Microsoft로 안전하게 전송되도록 BYOK(Bring Your Own Key) 솔루션을 구현할 수 있습니다. 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
+    -   Azure Rights Management의 테넌트 키가 IT 정책에 따라 온-프레미스에서 생성되어 HSM(하드웨어 보안 모듈)을 통해 Microsoft로 안전하게 전송되도록 BYOK(Bring Your Own Key) 솔루션을 구현할 수 있습니다. 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
 
 
 ## 다음 단계
@@ -97,6 +97,6 @@ ms.openlocfilehash: 093bce2835b0606c127d9bcecab5ec353160833c
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

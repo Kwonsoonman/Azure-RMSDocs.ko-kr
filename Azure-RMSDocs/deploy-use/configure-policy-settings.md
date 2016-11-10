@@ -2,20 +2,20 @@
 title: "전역 정책 설정을 구성하는 방법 | Azure Information Protection"
 description: "Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 적용되는 세 가지 설정이 있습니다."
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: e1d0c25995c45d72c1467aa1ff8043ca225a8156
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 970a42e89d09af34e9ff16714682d1de250175f6
 
 
 ---
 
-# Azure Information Protection에 대한 전역 정책 설정을 구성하는 방법
+# <a name="how-to-configure-the-global-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 전역 정책 설정을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -32,13 +32,13 @@ Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 
 
 2. **Azure Information Protection** 블레이드에서 다음 전역 설정을 구성합니다.
 
-    - **All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함):이 옵션을 **On**(켜기)으로 설정하면 저장되는 모든 문서 및 전송되는 모든 전자 메일에 레이블이 적용되어야 합니다. 레이블 지정은 사용자에 의해 수동으로 할당되거나, [조건](configure-policy-classification.md)의 결과로 자동으로 할당되거나, 기본적으로 할당(**Select the default label**(기본 레이블 선택) 옵션을 설정하여)될 수 있습니다. 
+    - **All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함):이 옵션을 **On**(켜기)으로 설정하면 저장되는 모든 문서 및 전송되는 모든 메일에 레이블이 적용되어야 합니다. 레이블 지정은 사용자에 의해 수동으로 할당되거나, [조건](configure-policy-classification.md)의 결과로 자동으로 할당되거나, 기본적으로 할당(**Select the default label**(기본 레이블 선택) 옵션을 설정하여)될 수 있습니다. 
 
-    사용자가 문서를 저장하거나 전자 메일을 보낼 때 레이블이 할당되지 않은 경우에는 레이블을 선택하라는 메시지가 표시됩니다.
+    사용자가 문서를 저장하거나 메일을 보낼 때 레이블이 할당되지 않은 경우에는 레이블을 선택하라는 메시지가 표시됩니다.
 
     ![새 분류가 하위 수준인 경우의 Azure Information Protection 프롬프트](../media/info-protect-enforce-label.png)
 
-    - **Select the default label**(기본 레이블 선택): 이 옵션을 설정한 경우 레이블이 없는 문서와 전자 메일에 할당할 레이블을 선택합니다. 하위 레이블이 있는 경우에는 레이블을 기본값으로 설정할 수 없습니다. 
+    - **Select the default label**(기본 레이블 선택): 이 옵션을 설정한 경우 레이블이 없는 문서와 메일에 할당할 레이블을 선택합니다. 하위 레이블이 있는 경우에는 레이블을 기본값으로 설정할 수 없습니다. 
 
     - **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함): 이 옵션을 **On**(켜기)으로 설정하고 이러한 작업 중 하나를 수행하면(예: **Secret**(비밀) 레이블을 **Personal**(개인)로 변경) 해당 작업에 대한 설명을 제공하라는 메시지가 표시됩니다. 예를 들어 사용자는 문서에 더 이상 민감한 정보가 포함되어 있지 않다고 설명할 수 있습니다. 작업 및 해당 근거는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램** > **Microsoft Azure Information Protection**에 기록됩니다.  
 
@@ -50,11 +50,9 @@ Azure Information Protection 정책에는 모든 사용자 및 모든 장치에 
 
 4. 변경 내용을 사용자에게 제공하려면 **Publish**(게시)를 클릭합니다.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
-Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organization-s-policy) 섹션의 링크를 사용하세요.  
-
-
+Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
 
 
@@ -65,6 +63,8 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

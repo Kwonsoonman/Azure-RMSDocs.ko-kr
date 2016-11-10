@@ -2,20 +2,20 @@
 title: "Rights Management 보호를 적용하도록 레이블을 구성하는 방법| Azure Information Protection"
 description: "암호화, ID 및 권한 부여 정책을 통해 데이터 손실을 방지하는 권한 관리 서비스를 사용하여 가장 민감한 문서 및 메일을 보호할 수 있습니다. 이 보호는 권한 관리 템플릿을 사용하도록 레이블을 구성할 때 적용됩니다."
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
+ms.sourcegitcommit: addc24fed28cee52b57c7e3bde926d6324478e7b
+ms.openlocfilehash: 4f3c77df23207c3a76a768a1fe428484339de18f
 
 
 ---
 
-# Rights Management 보호를 적용하도록 레이블을 구성하는 방법
+# <a name="how-to-configure-a-label-to-apply-rights-management-protection"></a>Rights Management 보호를 적용하도록 레이블을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -23,9 +23,9 @@ ms.openlocfilehash: 830e982fc1f0443545942c1deb1a2fc93431be17
 
 이 템플릿은 Azure Rights Management를 활성화할 때 자동으로 만들어지는 기본 템플릿 또는 사용자 지정 템플릿 중 하나일 수 있습니다. Azure 권한 관리 부서별 템플릿은 지원되지만 문서 또는 메일 작성자가 구성된 템플릿 범위에 속하는 경우에만 보호를 적용합니다. 범위 내에 없는 사용자에게는 Azure Information Protection에서 레이블을 적용할 수 없음을 알리는 메시지가 표시됩니다.
 
-## 보호 작동 방식
+## <a name="how-the-protection-works"></a>보호 작동 방식
 
-권한 관리를 통해 보호되는 문서 또는 메일은 사용되지 않을 때와 전송 중에 암호화되며, 권한 있는 사용자만 암호를 해독할 수 있습니다. 이 암호화는 이름이 변경된 경우에도 문서 또는 전자 메일과 함께 유지됩니다. 또한 다음 예와 같이 사용 권한 및 제한 사항을 구성할 수 있습니다.
+권한 관리를 통해 보호되는 문서 또는 메일은 사용되지 않을 때와 전송 중에 암호화되며, 권한 있는 사용자만 암호를 해독할 수 있습니다. 이 암호화는 이름이 변경된 경우에도 문서 또는 메일과 함께 유지됩니다. 또한 다음 예와 같이 사용 권한 및 제한 사항을 구성할 수 있습니다.
 
 - 조직 내부의 사용자만 회사 기밀 문서 또는 메일을 열 수 있습니다.
 
@@ -43,7 +43,7 @@ Azure Rights Management 및 작동 방식에 대한 자세한 내용은 [Azure R
 > Azure 권한 관리 보호를 적용하도록 레이블을 구성하려면 조직에 대해 Azure 권한 관리 서비스를 활성화해야 합니다. 아직 활성화하지 않은 경우 [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
 
-## Rights Management 보호를 적용하도록 레이블을 구성하려면
+## <a name="to-configure-a-label-to-apply-rights-management-protection"></a>Rights Management 보호를 적용하도록 레이블을 구성하려면
 
 1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창을 열고 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
 
@@ -77,12 +77,12 @@ Azure Rights Management 및 작동 방식에 대한 자세한 내용은 [Azure R
 
 7. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
-Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organization-s-policy) 섹션의 링크를 사용하세요.  
+Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

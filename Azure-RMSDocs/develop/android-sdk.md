@@ -14,24 +14,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 90c8c97c720c624ba8f1ca7703b6c79a66f77d08
+ms.sourcegitcommit: ff3b1ce2ec5984c1e79bc9d10c5fc913b4fd3291
+ms.openlocfilehash: 1925eb3a630f61e995886989ad351a8263c9779f
 
 
 ---
 
-# Android 설정
+# <a name="android-setup"></a>Android 설정
 
 Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
 
 이 항목에서는 새 앱을 만들기 위한 환경을 설정하는 과정을 안내합니다.
 
 -   [필수 구성 요소](#prerequisites)
--   [선택 사항입니다.](#optional)
+-   [선택 사항](#optional)
 -   [개발 환경 구성](#configuring-your-development-environment)
 -   [참고 항목](#see-also)
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>필수 구성 요소
 
 다음 소프트웨어는 개발 시스템에서 사용하는 것이 좋습니다.
 
@@ -56,11 +56,11 @@ Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 
 
 API 업데이트, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
-## 선택 사항입니다.
+## <a name="optional"></a>선택 사항입니다.
 
 UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 개발자에게 사용 및 보호 작업을 위한 다시 사용 가능한 UI를 제공합니다([Android용 UI 라이브러리 및 샘플 앱](https://github.com/AzureAD/rms-sdk-ui-for-android)).
 
-## 개발 환경 구성
+## <a name="configuring-your-development-environment"></a>개발 환경 구성
 
 **참고** MS RMS SDK 4.2 미리 보기 릴리스: 이 미리 보기 릴리스에서는 스크린샷이 com/microsoft/protection에서 com/microsoft/rightsmanagment로의 경로 이름 변경을 표시하도록 업데이트되지 않았습니다. 하지만 텍스트는 업데이트되었습니다.
 
@@ -134,7 +134,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 -   이제 새 Android 앱을 만들 준비가 되었습니다.
 
-### 참고 항목
+### <a name="see-also"></a>참고 항목
 
 [시작](get-started.md)
 
@@ -150,6 +150,6 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

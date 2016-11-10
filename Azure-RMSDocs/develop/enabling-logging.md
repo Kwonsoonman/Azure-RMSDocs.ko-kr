@@ -14,17 +14,25 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 118aa3e25c6be9d0bf43141585d79030fc79224a
+ms.sourcegitcommit: ac77c4e0bced244f1cec74f15cbe0d62c9ab4437
+ms.openlocfilehash: 66d24f4ed737526525c041de7aeb96de35b37032
 
 
 ---
 
-# 방법: 오류 및 성능 로깅 사용
+# <a name="how-to-enable-error-and-performance-logging"></a>방법: 오류 및 성능 로깅 사용
 Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
 
-## 개요 ##
-Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자 환경과 문제 해결을 개선할 수 있습니다. 사용자 개인 정보를 보호하기 위해 앱 개발자는 자동 로깅을 사용하도록 설정하기 전에 동의하도록 요청해야 합니다.
+## <a name="overview"></a>개요 ##
+Microsoft로 자동 진단, 성능 및 원격 분석 로깅 데이터 업로드를 사용하여 사용자 환경과 문제 해결을 개선할 수 있습니다. 
+
+> [!IMPORTANT] 
+> 사용자 개인 정보를 보호하기 위해 앱 개발자는 자동 로깅을 사용하도록 설정하기 전에 동의하도록 요청해야 합니다.
+
+> [!NOTE]
+> 예를 들어 Microsoft에서 로깅 알림에 사용하는 일반적인 메시지는 다음과 같습니다. 
+>
+> *오류 및 성능 로깅을 설정함으로써 Microsoft에 오류 및 성능 데이터를 보내는 것에 동의하게 됩니다.  Microsoft는 인터넷을 통해 오류 및 성능 데이터(“데이터”)를 수집합니다.  Microsoft는 이 데이터를 사용하여 Microsoft 제품 및 서비스의 품질, 보안 및 무결성을 제공하고 향상합니다.  예를 들어, Microsoft는 사용하는 기능, 기능의 응답 속도, 장치 성능, 사용자 인터페이스 조작, 제품에서 발생하는 문제 등 성능 및 안정성을 분석합니다.  데이터에는 현재 실행 중인 소프트웨어, IP 주소처럼 소프트웨어의 구성에 대한 정보도 포함됩니다.*  
 
 두 가지 속성을 통해 로깅 제어를 관리합니다.
 
@@ -39,7 +47,7 @@ Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자
 
 뒤에 나오는 각 예제 코드 조각에서는 호출 응용 프로그램이 속성을 설정하거나 쿼리할 수 있습니다.
 
-### Android ###
+### <a name="android"></a>Android ###
 자동 로깅 사용
 
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
@@ -52,7 +60,7 @@ Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자
     SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
     Boolean isLogUploadEnabled = preferences.getBoolean(&quot;IpcCustomerExperienceDataCollectionEnabled&quot;, false);
 
-## iOS ##
+## <a name="ios"></a>iOS ##
 자동 로깅 사용
 
     NSUserDefaults \*prefs = [NSUserDefaults standardUserDefaults];
@@ -74,12 +82,12 @@ Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자
     [[NSUserDefaults standardUserDefaults] boolForKey:@&quot;IpcLogLevel&quot;];
  
 
-## Windows ##
+## <a name="windows"></a>Windows ##
 자동 로깅 사용
 
     CustomerExperienceConfiguration::Option = CustomerExperienceOptions::LoggingEnabledNow;
 
-선택적 설정에 대한 자세한 내용은 [CustomerExperienceOptions](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_customerexperienceoptions) 섹션을 참조하세요.
+선택적 설정에 대한 자세한 내용은 [CustomerExperienceOptions](https://msdn.microsoft.com/library/microsoft.rightsmanagement.customerexperienceoptions.aspx) 섹션을 참조하세요.
 
 현재 로깅 제어 플래그 설정 가져오기
 
@@ -96,6 +104,6 @@ Microsoft로 자동 진단 및 성능 로깅 업로드를 사용하여 사용자
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

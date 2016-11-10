@@ -3,7 +3,7 @@ title: "파일 서버 리소스 관리자 FCI를 사용하는 Azure RMS 보호�
 description: "Windows Server 파일 분류 인프라를 사용하는 RMS 보호를 위한 지침에 설명된 대로 복사하고 편집할 수 있는 샘플 스크립트를 제공합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: a857fd1b4f6779f6647ab122366122dbfbda7c33
+ms.sourcegitcommit: f2723c4417890411230e9dbab4e2d9e36282b1db
+ms.openlocfilehash: 0e2ff499fc7c9890a3d8d7327964e3ed5ac19112
 
 
 ---
@@ -24,6 +24,8 @@ ms.openlocfilehash: a857fd1b4f6779f6647ab122366122dbfbda7c33
 
 이 페이지에는 [Windows Server 파일 분류 인프라를 사용하는 RMS 보호](configure-fci.md)에 설명된 대로 복사하고 편집할 샘플 스크립트가 포함되어 있습니다.
 
+이 스크립트는 RMS 보호 모듈에 대해 최소 버전인 **2.2.0.0**을 사용합니다. 버전을 확인하려면 다음 명령을 실행합니다. `(Get-Module RMSProtection -ListAvailable).Version` 
+
 *&#42;&#42;Disclaimer&#42;&#42;: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플*
 *스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.*
 
@@ -32,7 +34,7 @@ ms.openlocfilehash: a857fd1b4f6779f6647ab122366122dbfbda7c33
 .SYNOPSIS 
      Helper script to protect all file types using the Azure Rights Management service and FCI.
 .DESCRIPTION
-     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID.   
+     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID and RMS Protection module minimum version 2.2.0.0.   
 #>
 param(
             [Parameter(Mandatory = $false)]
@@ -56,7 +58,7 @@ param(
 ) 
 
 # script information
-[String] $Script:Version = 'version 1.0' 
+[String] $Script:Version = 'version 2.0' 
 [String] $Script:Name = "RMS-Protect-FCI.ps1"
 
 #global working variables
@@ -98,11 +100,11 @@ function Protect-File ($ffile, $ftemplateId, $fownermail) {
     [bool] $returnValue = $false
     try {
         If ($OwnerMail -eq $null -or $OwnerMail -eq "") {
-            $protectReturn = Protect-RMSFile -File $ffile -TemplateID $ftemplateId
+            $protectReturn = Protect-RMSFile -File $ffile -InPlace -TemplateID $ftemplateId
             $returnValue = $true
             Write-Host ( "Information: " + "Protected File: $ffile with Template: $ftemplateId")
         } else {
-            $protectReturn = Protect-RMSFile -File $ffile -TemplateID $ftemplateId -OwnerEmail $fownermail
+            $protectReturn = Protect-RMSFile -File $ffile -InPlace -TemplateID $ftemplateId -OwnerEmail $fownermail
             $returnValue = $true
             Write-Host ( "Information: " + "Protected File: $ffile with Template: $ftemplateId, set Owner: $fownermail")
         }
@@ -174,6 +176,6 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

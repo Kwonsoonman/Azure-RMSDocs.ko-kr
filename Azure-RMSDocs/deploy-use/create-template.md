@@ -1,9 +1,9 @@
 ---
 title: "사용자 지정 템플릿 만들기, 구성 및 게시 | Azure Information Protection"
-description: "Azure 클래식 포털에서 사용자 지정 템플릿을 만들고 관리하는 지침을 제공합니다. 최종 사용자와 기타 관리자는 템플릿을 통해 문서와 전자 메일을 보호하는 적절한 정책을 쉽게 적용할 수 있습니다."
+description: "Azure 클래식 포털에서 사용자 지정 템플릿을 만들고 관리하는 지침을 제공합니다. 최종 사용자와 기타 관리자는 템플릿을 통해 문서와 메일을 보호하는 적절한 정책을 쉽게 적용할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,25 +12,25 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d205e63bdd8819177493837296259c5400a76503
-ms.openlocfilehash: 906bc1e97947cf32b102fdf484b86bc30b9a383d
+ms.sourcegitcommit: 0046023125fe339ed408edf47c59e36708b01783
+ms.openlocfilehash: 00661951513647add0c638e0eeb9e9fe38fa2d8d
 
 
 ---
 
 
-# 사용자 지정 템플릿 만들기, 구성 및 게시
+# <a name="create-configure-and-publish-a-custom-template"></a>사용자 지정 템플릿 만들기, 구성 및 게시
 
 >*적용 대상: Azure Information Protection, Office 365*
 
 
 Azure 클래식 포털에서 사용자 지정 템플릿을 만들고 관리합니다. 이 작업은 Azure 클래식 포털에서 직접 수행할 수도 있고, Office 365 관리 센터에 로그인하여 Rights Management의 **고급 기능**을 선택해도 됩니다. 그러면 Azure 클래식 포털로 리디렉션됩니다.
 
-Azure 클래식 포털에서 템플릿을 만들고 관리하려면 전역 관리자여야 합니다. Azure Rights Management 서비스의 전역 관리자 역할을 다른 사용자에게 할당한 경우 해당 사용자도 템플릿을 만들고 관리할 수 있지만 [PowerShell](configure-templates-with-powershell.md)을 사용해야 합니다. 자세한 내용은 [Azure RMS를 구성하려면 전역 관리자여야 하나요? 또는, 다른 관리자에게 위임할 수 있나요?](../get-started/faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators)를 참조하세요. 
+Azure 클래식 포털에서 템플릿을 만들고 관리하려면 전역 관리자여야 합니다. Azure Rights Management 서비스의 전역 관리자 역할을 다른 사용자에게 할당한 경우 해당 사용자도 템플릿을 만들고 관리할 수 있지만 [PowerShell](configure-templates-with-powershell.md)을 사용해야 합니다. 자세한 내용은 [Azure RMS를 구성하려면 전역 관리자여야 하나요? 또는, 다른 관리자에게 위임할 수 있나요?](../get-started/faqs-rms.md#do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators)를 참조하세요. 
 
 Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시하려면 다음 절차를 따르세요.
 
-## 사용자 지정 템플릿을 만들려면
+## <a name="to-create-a-custom-template"></a>사용자 지정 템플릿을 만들려면
 
 1.  Office 365 관리 센터 또는 Azure 클래식 포털 중 어디에 로그인했는지에 따라 다음 중 하나를 수행하세요.
 
@@ -76,7 +76,7 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
 4. 이제 **Rights Management가 시작되었습니다.** 빠른 시작 페이지에서 **권한 정책 템플릿 관리**를 클릭합니다. 새로 만든 템플릿이 템플릿 목록에 추가되어 **보관됨**상태로 표시됩니다. 이 단계에서는 템플릿이 만들어졌지만 구성되지 않아 사용자에게 보이지 않습니다.
 
-## 사용자 지정 템플릿을 구성 및 게시하려면
+## <a name="to-configure-and-publish-a-custom-template"></a>사용자 지정 템플릿을 구성 및 게시하려면
 
 1.  Azure 클래식 포털의 **템플릿** 페이지에서 새로 만든 템플릿을 선택합니다.
 
@@ -112,9 +112,9 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
     부서별 템플릿에 대한 추가 정보: 기본적으로 Azure 디렉터리의 모든 사용자가 게시된 모든 템플릿을 볼 수 있으며 콘텐츠를 보호하려는 경우 응용 프로그램에서 이러한 템플릿을 선택할 수 있습니다. 특정 사용자만 게시된 템플릿의 일부를 볼 수 있도록 하려면 해당 템플릿의 범위를 이러한 사용자로 지정해야 합니다. 그러면 이러한 사용자만 해당 템플릿을 선택할 수 있게 됩니다. 지정하지 않은 다른 사용자는 템플릿을 볼 수 없으므로 선택할 수도 없습니다. 이 방식은 사용자가 특히 특정 그룹 또는 부서에서 사용하도록 고안된 템플릿을 만들 때, 올바른 템플릿을 쉽게 선택할 수 있도록 합니다. 사용자에게는 본인을 위해 고안된 템플릿만 표시됩니다.
 
-    예를 들어 재무 담당 부서의 구성원에게 읽기 전용 권한이 적용되는 인사 관리 부서용 템플릿을 만들었습니다. 인사 관리 부서의 멤버만 권한 관리 공유 응용 프로그램을 사용할 때 이 템플릿을 적용할 수 있으므로 템플릿 범위를 HumanResources라는 전자 메일 사용 가능 그룹으로 지정합니다. 그러면 이 그룹의 구성원만 이 템플릿을 보고 적용할 수 있습니다.
+    예를 들어 재무 담당 부서의 구성원에게 읽기 전용 권한이 적용되는 인사 관리 부서용 템플릿을 만들었습니다. 인사 관리 부서의 멤버만 권한 관리 공유 응용 프로그램을 사용할 때 이 템플릿을 적용할 수 있으므로 템플릿 범위를 HumanResources라는 메일 사용 가능 그룹으로 지정합니다. 그러면 이 그룹의 구성원만 이 템플릿을 보고 적용할 수 있습니다.
 
-7.  **템플릿 표시 여부** 페이지에서 RMS 지원 응용 프로그램에서 템플릿을 보고 선택할 수 있는 사용자 및 그룹을 선택합니다. 앞에 나온 것처럼 사용자보다는 그룹을 사용하는 것이 좋습니다. 또한 선택한 그룹 또는 사용자에게 전자 메일 주소가 있어야 합니다.
+7.  **템플릿 표시 여부** 페이지에서 RMS 지원 응용 프로그램에서 템플릿을 보고 선택할 수 있는 사용자 및 그룹을 선택합니다. 앞에 나온 것처럼 사용자보다는 그룹을 사용하는 것이 좋습니다. 또한 선택한 그룹 또는 사용자에게 메일 주소가 있어야 합니다.
 
 8.  다음 단추를 클릭하고 부서별 템플릿에 대해 응용 프로그램 호환성을 구성해야 하는지 여부를 결정합니다. 응용 프로그램 호환성을 구성해야 하는 경우에는 **응용 프로그램 호환성**을 클릭하고 확인란을 선택한 후에 **완료**를 클릭합니다.
 
@@ -164,10 +164,10 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 > [!WARNING]
 > 이전에 저장된 템플릿을 변경하는 경우, 클라이언트는 해당 컴퓨터에서 템플릿이 새로 고침될 때까지 해당 템플릿의 변경을 볼 수 없게 됩니다. 자세한 내용은 [사용자를 위한 템플릿 새로 고침](refresh-templates.md)을 참조하세요.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

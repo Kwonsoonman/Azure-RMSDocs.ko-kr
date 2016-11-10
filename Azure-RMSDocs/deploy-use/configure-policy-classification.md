@@ -1,31 +1,31 @@
 ---
 title: "자동 및 권장 분류 조건을 구성하는 방법 | Azure Information Protection"
-description: "레이블에 대한 조건을 구성할 때 문서 또는 전자 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다."
+description: "레이블에 대한 조건을 구성할 때 문서 또는 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다."
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
+ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
+ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
 
 
 ---
 
-# Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
+# <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
-레이블에 대한 조건을 구성할 때 문서 또는 전자 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다. 
+레이블에 대한 조건을 구성할 때 문서 또는 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다. 
 
-- Word, Excel 및 PowerPoint의 경우 파일이 저장될 때 자동 분류가 적용되고, Outlook의 경우 전자 메일이 전송될 때 자동 분류가 적용됩니다. 이전에 수동으로 레이블을 지정한 파일에는 자동 분류를 사용할 수 없습니다.
+- Word, Excel 및 PowerPoint의 경우 파일이 저장될 때 자동 분류가 적용되고, Outlook의 경우 메일이 전송될 때 자동 분류가 적용됩니다. 이전에 수동으로 레이블을 지정한 파일에는 자동 분류를 사용할 수 없습니다.
  
 - 권장 분류는 파일이 저장될 때 Word, Excel 및 PowerPoint에 적용됩니다.
 
-조건을 구성할 때 "신용 카드 번호" 또는 "주민등록번호"와 같은 미리 정의된 패턴을 사용할 수 있습니다. 또는 자동 분류에 대한 조건으로 사용자 지정 문자열 또는 패턴을 정의할 수 있습니다. 이러한 조건은 문서와 전자 메일의 본문 텍스트 및 머리글과 바닥글에 적용됩니다. 조건에 대한 자세한 내용은 [기본 제공 조건에 대한 정보](#information-about-the-built-in-conditions) 섹션을 참조하세요.
+조건을 구성할 때 "신용 카드 번호" 또는 "주민등록번호"와 같은 미리 정의된 패턴을 사용할 수 있습니다. 또는 자동 분류에 대한 조건으로 사용자 지정 문자열 또는 패턴을 정의할 수 있습니다. 이러한 조건은 문서와 메일의 본문 텍스트 및 머리글과 바닥글에 적용됩니다. 조건에 대한 자세한 내용은 [기본 제공 조건에 대한 정보](#information-about-the-built-in-conditions) 섹션을 참조하세요.
 
 둘 이상의 레이블에 적용할 때 여러 조건을 평가하는 방법:
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 3. 마지막 하위 레이블이 적용됩니다.
 
 > [!TIP]
->최상의 사용자 환경과 비즈니스 연속성 보장을 위해 자동 분류보다 사용자 권장 분류로 시작하는 것이 좋습니다. 이 구성을 사용하면 사용자가 레이블 지정 또는 보호 작업을 수락하거나, 이 작업이 자신의 문서 또는 전자 메일 메시지에 적합하지 않은 경우 이러한 제안을 재정의할 수 있습니다.
+>최상의 사용자 환경과 비즈니스 연속성 보장을 위해 자동 분류보다 사용자 권장 분류로 시작하는 것이 좋습니다. 이 구성을 사용하면 사용자가 레이블 지정 또는 보호 작업을 수락하거나, 이 작업이 자신의 문서 또는 메일 메시지에 적합하지 않은 경우 이러한 제안을 재정의할 수 있습니다.
 
 레이블을 권장 작업으로 적용하도록 조건을 구성할 때 표시되는 예제 메시지 및 사용자 지정 정책 팁은 다음과 같습니다.
 
@@ -44,7 +44,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 이 예제에서는 사용자가 **Change now**(지금 변경)를 클릭하여 권장 레이블을 적용하거나, 표시줄을 닫아 권장 사항을 재정의할 수 있습니다.
 
-## 레이블에 대한 권장 또는 자동 분류를 구성하려면
+## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>레이블에 대한 권장 또는 자동 분류를 구성하려면
 
 1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
     
@@ -72,7 +72,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 6. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
-## 기본 제공 조건에 대한 정보
+## <a name="information-about-the-builtin-conditions"></a>기본 제공 조건에 대한 정보
 
 미리 보기 기간 동안 다음 조건을 선택할 수 있습니다.
 
@@ -82,12 +82,12 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 - [ABA 라우팅 번호](#aba-routing-number )
 
-- [주민등록번호](#usa-social-security-number-ssn)
+- [미국 SSN(사회 보장 번호)](#usa-social-security-number-ssn)
 
 - [IBAN(국제 은행 계좌 번호)](#international-banking-account-number-iban)
 
 
-### SWIFT 코드
+### <a name="swift-code"></a>SWIFT 코드
 
 콘텐츠에 다음이 포함된 경우 이 정보 유형을 일치시킵니다.  
 
@@ -113,7 +113,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 ----
 
 
-### 신용 카드 번호
+### <a name="credit-card-number"></a>신용 카드 번호
 
 콘텐츠에 다음이 포함된 경우 이 정보 유형을 일치시킵니다.  
 
@@ -136,7 +136,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### ABA 라우팅 번호
+### <a name="aba-routing-number"></a>ABA 라우팅 번호
 
 콘텐츠에 다음이 포함된 경우 이 정보 유형을 일치시킵니다.  
 
@@ -173,7 +173,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### 주민등록번호
+### <a name="usa-social-security-number-ssn"></a>주민등록번호
 
 콘텐츠에 다음이 포함된 경우 이 정보 유형을 일치시킵니다.  
 
@@ -199,7 +199,7 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 
 ----
 
-### IBAN(국제 은행 계좌 번호)
+### <a name="international-banking-account-number-iban"></a>IBAN(국제 은행 계좌 번호)
 
 콘텐츠에 다음이 포함된 경우 이 정보 유형을 일치시킵니다.  
 
@@ -213,15 +213,15 @@ ms.openlocfilehash: 3f7633f29760ceca0ca44fbfe5b99eb33a32c197
 - **GB29 NWBK 6016 1331 9268 19 IBAN**
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
-Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organization-s-policy) 섹션의 링크를 사용하세요.  
-
-
+Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+
+
+<!--HONumber=Nov16_HO1-->
 
 

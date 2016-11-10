@@ -3,7 +3,7 @@ title: "2단계&colon; HSM 보호된 키-HSM 보호된 키 마이그레이션 | 
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS HSM으로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 10/14/2016
+ms.date: 11/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,20 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bad084502b9b7e55c6e80dccfbd66c3f34b63c7c
-ms.openlocfilehash: 8d9538cb2663edce5fc343ed9710032505c15293
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 3f5982b94f1de83ec66860946c46b9acbf45f479
 
 
 ---
 
-# 2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
+# <a name="step-2-hsmprotected-key-to-hsmprotected-key-migration"></a>2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection*
 
 
 [AD RMS에서 Azure Information Protection으로 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS HSM으로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다. 
 
-선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
+선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)로 돌아가서 다른 구성을 선택합니다.
 
 > [!NOTE]
 > 이러한 지침에서는 AD RMS 키가 모듈로 보호되어 있다고 가정합니다. 이는 가장 일반적인 경우입니다. 
@@ -41,7 +41,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 > Azure 주요 자격 증명 모음에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure 주요 자격 증명 모음 시작](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)을 먼저 검토하면 도움이 됩니다. 
 
 
-## 1부: Azure 주요 자격 증명 모음에 키 전송
+## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>1부: Azure 주요 자격 증명 모음에 키 전송
 
 이 절차는 Azure 주요 자격 증명 모음의 관리자가 수행합니다.
 
@@ -60,7 +60,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 이제 Azure Information Protection의 Azure Rights Management에 대해 Azure Key Vault에 HSM 키를 준비했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
 
-## 2부: 구성 데이터를 Azure Information Protection으로 가져오기
+## <a name="part-2-import-the-configuration-data-to-azure-information-protection"></a>2부: 구성 데이터를 Azure Information Protection으로 가져오기
 
 이 절차는 Azure Information Protection의 관리자가 수행합니다.
 
@@ -89,11 +89,11 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
     > [!NOTE]
     > Azure Key Vault에서 Azure Information Protection 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet을 사용합니다.
 
-이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
+이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

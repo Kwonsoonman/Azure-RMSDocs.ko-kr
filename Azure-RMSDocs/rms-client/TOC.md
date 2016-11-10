@@ -5,6 +5,7 @@
 # [클라이언트 배포 및 사용](use-client.md)
 ## [Rights Management 클라이언트](use-client.md)
 ### [Azure Information Protection 클라이언트 설치](info-protect-client.md)
+#### [Azure Information Protection 클라이언트: 버전 릴리스 기록](client-version-release-history.md)
 ### [RMS 클라이언트 배포 참고 사항](client-deployment-notes.md)
 ### [Windows Server FCI를 사용하는 RMS 보호](configure-fci.md)
 #### [PowerShell 스크립트](fci-script.md)
@@ -15,7 +16,7 @@
 #### [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 ##### [다운로드 및 설치](install-sharing-app.md)
 ##### [장치에서 파일 보호](sharing-app-protect-in-place.md)
-##### [전자 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md)
+##### [메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md)
 ##### [보호된 파일에 대한 사용 권한 변경](sharing-app-reprotect-files.md)
 ##### [문서 추적 및 취소](sharing-app-track-revoke.md)
 ##### [보호된 파일 보기 및 사용](sharing-app-view-use-files.md)
@@ -25,6 +26,6 @@
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

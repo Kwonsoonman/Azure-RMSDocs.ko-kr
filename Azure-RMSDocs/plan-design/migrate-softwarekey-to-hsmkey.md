@@ -3,7 +3,7 @@ title: "2단계&colon; 소프트웨어 보호된 키-HSM 보호된 키 마이그
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,20 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 931642ea9070a7581b428bcd04756048673fe3c0
-ms.openlocfilehash: ae530a9ae861bce8f82fa2e535e5b2281f1c9ffe
+ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
+ms.openlocfilehash: 54e759108ecca7a049190823c3874451d7104fc4
 
 
 ---
 
-# 2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
+# <a name="step-2-softwareprotected-key-to-hsmprotected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection*
 
 
 [AD RMS에서 Azure Information Protection으로 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다. 
 
-선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-rms)로 돌아가서 다른 구성을 선택합니다.
+선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)로 돌아가서 다른 구성을 선택합니다.
 
 다음은 Azure Information Protection에 AD RMS 구성을 가져오기 위한 네 부분으로 구성된 절차로, 이 작업을 수행하면 Azure Key Vault에서 사용자가 관리하는(BYOK) Azure Information Protection 테넌트 키를 만들 수 있습니다.
 
@@ -40,7 +40,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 > Azure 주요 자격 증명 모음에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure 주요 자격 증명 모음 시작](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)을 먼저 검토하면 도움이 됩니다. 
 
 
-## 1부: 구성 데이터에서 SLC 키를 추출하고 온-프레미스 HSM으로 키 가져오기
+## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-onpremises-hsm"></a>1부: 구성 데이터에서 SLC 키를 추출하고 온-프레미스 HSM으로 키 가져오기
 
 1.  Azure 주요 자격 증명 모음 관리자: Azure 주요 자격 증명 모음 설명서에서 [Azure 주요 자격 증명 모음에 대한 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
 
@@ -110,13 +110,13 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 > [!IMPORTANT]
 > 이 단계를 완료하면 이러한 PEM 파일을 연결이 끊어진 워크스테이션에서 안전하게 지워서 권한이 없는 사용자가 액세스할 수 없도록 합니다. 예를 들어 "cipher /w:E"를 실행하여 E: 드라이브에서 모든 파일을 안전하게 삭제합니다.
 
-## 2부: HSM 키를 패키지한 후 Azure 주요 자격 증명 모음으로 전송
+## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>2부: HSM 키를 패키지한 후 Azure 주요 자격 증명 모음으로 전송
 
 1.  Azure 주요 자격 증명 모음 관리자: Azure 주요 자격 증명 모음 설명서에서 [Azure 주요 자격 증명 모음에 대한 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
 
     -   [4단계: 키 전송 준비](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
 
-    -   [5단계: Azure 주요 자격 증명 모음에 키 전송](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
+    -   [5단계: Azure Key Vault에 키 전송](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
 
     키가 이미 있으므로 키 쌍을 생성하는 단계를 수행하지 마세요. 대신 명령을 실행하여 온-프레미스 HSM에서 이 키를 전송합니다(이 예에서는 KeyIdentifier 매개 변수에 "contosobyok" 사용).
 
@@ -126,7 +126,7 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 
     이제 HSM 키를 Azure 주요 자격 증명 모음으로 전송했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
 
-## 3부: 구성 데이터를 Azure Information Protection으로 가져오기
+## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>3부: 구성 데이터를 Azure Information Protection으로 가져오기
 
 1.  Azure Information Protection 관리자: 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 TpdUtil 도구를 실행한 후 SLC 키가 제거된 새 구성 데이터 파일(.xml)을 복사합니다.
 
@@ -146,7 +146,7 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 
 
 
-3.  [Disconnect-AadrmService](http://msdn.microsoft.com/library/windowsazure/dn629416.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
+3.  [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
 
     ```
     Disconnect-AadrmService
@@ -156,13 +156,13 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
     > Azure Key Vault에서 Azure Information Protection 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet을 사용합니다.
 
 
-이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-rms-tenant).
+이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

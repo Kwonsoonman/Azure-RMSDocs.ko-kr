@@ -3,7 +3,7 @@ title: "사용자가 개인용 RMS에 등록했는지 확인하는 방법 | Azur
 description: "관리자는 사용자가 개인용 RMS를 등록했는지 여부를 어떻게 알 수 있을까요? 이 문서에서 설명하는 방법 중 하나를 사용하거나 여러 방법을 조합하여 사용할 수 있습니다."
 author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 9233952b6a707359c8f97516b57542e5d3d1744c
+ms.sourcegitcommit: c1a9de2d0ef3021335e94cde86a7e6b844b15908
+ms.openlocfilehash: 70909cfa78800eabb798aec34264770104f7c47b
 
 
 ---
@@ -31,11 +31,11 @@ ms.openlocfilehash: 9233952b6a707359c8f97516b57542e5d3d1744c
 
 -   시스템 관리 솔루션(예: System Center Configuration Manager)을 사용하여, 설치된 소프트웨어와 사용 중인 소프트웨어의 목록을 만듭니다. Rights Management 공유 응용 프로그램은 **ipviewer.exe** 프로그램을 통해 실행되며, 무료로 [응용 프로그램을 다운로드하고 설치](http://go.microsoft.com/fwlink/?LinkId=303970) 하여 소프트웨어 인벤토리에 사용할 이 응용 프로그램에 대한 다른 특성을 확인할 수 있습니다.
 
--   Rights Management 공유 응용 프로그램이 만든 파일 이름 확장명을 세심히 살펴봅니다. .pfile 및 .ppdf 파일 이름 확장명이 가장 명확한 예이지만, Rights Management에 의해 기본적으로 보호될 때 파일 이름 확장명이 변경되는 파일도 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](http://technet.microsoft.com/library/dn339003.aspx)에서 [지원되는 파일 형식 및 파일 이름 확장명](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션을 참조하세요.
+-   Rights Management 공유 응용 프로그램이 만든 파일 이름 확장명을 세심히 살펴봅니다. .pfile 및 .ppdf 파일 이름 확장명이 가장 명확한 예이지만, Rights Management Service에 의해 기본적으로 보호될 때 파일 이름 확장명이 변경되는 파일도 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](http://technet.microsoft.com/library/dn339003.aspx)에서 [지원되는 파일 형식 및 파일 이름 확장명](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션을 참조하세요.
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

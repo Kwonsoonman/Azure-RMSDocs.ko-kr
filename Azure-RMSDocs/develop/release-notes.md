@@ -3,7 +3,7 @@ title: "새로운 기능 및 릴리스 정보 | Azure RMS"
 description: "이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다."
 author: bruceperlerms
 manager: mbaldwin
-ms.date: 10/20/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,28 +13,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81cbe287b67e2a1598efdd2a816913f147c7ff7b
-ms.openlocfilehash: f3d4b1ba0da3530121aa81056238533f0dcbed2f
+ms.sourcegitcommit: 60e64b1fb1184aaa51b6664ecb5288d6ff861413
+ms.openlocfilehash: 04364bc5daec881fe3c55d5cd41e7be11ac91ae7
 
 
 ---
 
-# 새로운 기능 및 릴리스 정보
+# <a name="whats-new-and-release-notes"></a>새로운 기능 및 릴리스 정보
 
-## 새로운 기능
-Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨씬 쉽고 유연해졌습니다. 이 항목에서는 이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다.
+## <a name="whats-new"></a>새로운 기능
+Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨씬 쉽고 유연해졌습니다. 이 항목에서는 이 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다.
 
--   [2016년 6월의 새로운 기능](#new-for-June-2016)
--   [2015년 12월 업데이트](#december-2015-update)
--   [2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가](#july-2015-update-adds-support-for-linux-c-developm)
--   [2015년 5월 업데이트 - 로깅 제어 추가](#may-2015-update-adds-logging-control)
--   [2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가](#february-2015-update-adds-windows-store-application-support)
--   [2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가](#january-2015-update-adds-winphone-platform-support)
--   [2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
--   [릴리스 정보](#release-notes)
--   [질문과 대답](#frequently-asked-questions)
-
-### 2016년 6월의 새로운 기능
+### <a name="new-for-june-2016"></a>2016년 6월의 새로운 기능
 
 - **최신 인증에 대한 지원** - RMS 지원 앱에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다. MFA(Multi-Factor Authentication), SAML 기반 타사 ID 공급자와 RMS 클라이언트 응용 프로그램, 스마트 카드 및 인증서 기반 인증과 같은 로그인 기능이 가능하며, 기본 인증 프로토콜을 사용하기 위해 RMS 지원 앱을 사용할 필요가 없습니다.
 - **문서 추적 지원** - 이제 개발자는 앱에서 문서를 보호하는 경우 문서 추적을 사용할 수 있습니다.
@@ -42,7 +32,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 - 버그 수정
 
 
-### 2015년 12월 업데이트
+### <a name="december-2015-update"></a>2015년 12월 업데이트
 
 이 릴리스에서는 장치용 RMS SDK가 이제 버전 4.2이며 다음 기능이 추가되었습니다.
 
@@ -74,7 +64,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 -   오류 메시지 및 문제 해결 환경을 개선하기 위한 업데이트
 -   암호화 작업 성능 향상
 
-### 2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가
+### <a name="july-2015-update-adds-support-for-linux-c-development"></a>2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가
 
 이 릴리스에서는 다음 기능이 추가되었습니다.
 
@@ -82,7 +72,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     자세한 내용은 [시작](get-started.md)을 참조하세요.
 
-### 2015년 5월 업데이트 - 로깅 제어 추가
+### <a name="may-2015-update-adds-logging-control"></a>2015년 5월 업데이트 - 로깅 제어 추가
 
 이 릴리스에서는 다음 기능에 대한 지원이 추가되었습니다.
 
@@ -100,15 +90,15 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     자세한 내용은 [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx)을 참조하세요.
 
-### 2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가
+### <a name="february-2015-update-adds-windows-store-application-support"></a>2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가
 
 이 릴리스에서는 Windows 스토어 응용 프로그램에 대한 지원이 추가되었으며 Windows Phone, Android 및 iOS/OS X 릴리스의 RMS SDK 4.1과 기능 패리티를 제공합니다.
 
-### 2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가
+### <a name="january-2015-update-adds-winphone-platform-support"></a>2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가
 
 이 릴리스에서는 Windows Phone 운영 체제에 대한 지원이 추가되었으며 Android 및 iOS/OS X 릴리스의 RMS SDK 4.1과 기능 패리티를 제공합니다.
 
-### 2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드
+### <a name="october-2014-update-upgrade-to-microsoft-rms-sdk-41"></a>2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드
 
 버전 4.1 릴리스의 RMS SDK에서는 Google Android 및 Apple iOS/OS X에 에는 다음과 같은 새로운 기능이 추가되었습니다.
 
@@ -120,7 +110,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
     예를 들어 MSUserPolicy.name이 [MSUserPolicy.policyName](https://msdn.microsoft.com/library/dn790799.aspx)으로 변경되었습니다.
 
-## 릴리스 정보
+## <a name="release-notes"></a>릴리스 정보
 
 이 섹션에서는 개발자가 알고자 하는 현재 및 이전 릴리스의 Microsoft Rights Management SDK 4.x API에 대한 정보를 간략하게 설명합니다.
 
@@ -148,7 +138,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 -   [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array, int offset, int length) 메서드를 *array.length* 값과 다른 길이로 사용하는 경우 나중에 SDK를 통해 콘텐츠를 사용할 수 없습니다.
 
-    **해결 방법** - 알려진 문제입니다. 문제를 완화하려면 항상 *byte \[\]* 배열을 length 매개 변수와 동일한 길이 값으로 전달하거나, [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx)write(byte\[\] array) 메서드를 사용합니다.
+    **해결 방법** - 알려진 문제입니다. 문제를 완화하려면 항상 *byte \[\]* 배열을 length 매개 변수와 동일한 길이 값으로 전달하거나, [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx).write(byte\[\] array) 메서드를 사용합니다.
 
 **iOS 및 OS X**
 
@@ -181,7 +171,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 **참고** MDI 응용 프로그램은 iOS API에서 지원되지 않습니다.
 
-## 질문과 대답
+## <a name="frequently-asked-questions"></a>질문과 대답
 
 **모든 플랫폼**
 
@@ -220,7 +210,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 **A**: 일부 작업은 취소할 수 없으므로 취소 작업은 가능한 경우에만 실행됩니다.
 
-**OS X**
+**OS x**
 
 **Q**: 샘플 앱 프레임워크는 Xcode 5에 맞게 조정되었습니다. Xcode 4.6에서도 사용할 수 있나요?
 
@@ -232,6 +222,6 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

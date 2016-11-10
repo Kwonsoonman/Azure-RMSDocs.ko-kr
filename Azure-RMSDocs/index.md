@@ -13,17 +13,17 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 78022852-1541-4194-bd6b-2f5fd5d94b77
 translationtype: Human Translation
-ms.sourcegitcommit: cd24268839fac6c42a3214e5e1bb012f61b5ffff
-ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
+ms.sourcegitcommit: 197e1b2d40ce21032b933625feb050807086ce57
+ms.openlocfilehash: cc4465eb7b1374673a50fc8bbe1d6e5be9d1ff84
 
 
 ---
-# Azure Information Protection 설명서
+# <a name="azure-information-protection-documentation"></a>Azure Information Protection 설명서
 <article id="main">
     <section id="hero-content">
       <h1>Azure Information Protection 설명서</h1>
-      <h2>Azure Information Protection(이전 Azure Rights Management 또는 RMS)를 배포하고 관리하는 방법에 대해 알아봅니다. 서비스 사용을 빨리 시작하여 조직의 전자 메일 및 문서 분류, 레이블 지정 및 보호 기능을 적용할 수 있습니다.</h2>
-      <h3>Azure Information Protection을 처음 사용하시나요? <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">Microsoft 제품 웹 사이트 방문 &rarr;</a></h3>
+      <h2>Azure Information Protection(이전 Azure Rights Management 또는 RMS)를 배포하고 관리하는 방법에 대해 알아봅니다. 서비스 사용을 빨리 시작하여 조직의 메일 및 문서 분류, 레이블 지정 및 보호 기능을 적용할 수 있습니다.</h2>
+      <h3>Azure Information Protection을 처음 사용하시나요? <a href="https://www.microsoft.com/en-us/cloud-platform/azure-information-protection" target="_blank">Microsoft 제품 사이트 방문 &rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>실습 준비?</p>
@@ -35,12 +35,13 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
       <h2 class="section-heading"><span class="icon icon-warning"></span> 주요 콘텐츠</h2>
       <div class="features row">
         <ul class="column column-half">
+          <li><mark><b>최신</b></mark> <a href="./understand-explore/what-is-information-protection.md#resources-for-azure-information-protection">Microsoft Ignite 2016의 Azure Information Protection 세션</a></li>
           <li><a href="./understand-explore/what-is-information-protection.md">Azure Information Protection이란?</a></li>
           <li><a href="./get-started/infoprotect-quick-start-tutorial.md">Azure Information Protection 빠른 시작 자습서</a></li>
-          <li><a href="./get-started/faqs.md">Azure Information Protection 질문과 대답</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="./plan-design/deployment-roadmap.md">Azure Information Protection 배포 로드맵</a></li>
+          <li><a href="./get-started/faqs.md">Azure Information Protection 질문과 대답</a></li>
+      <li><a href="./plan-design/deployment-roadmap.md">Azure Information Protection 배포 로드맵</a></li>
           <li><a href="./develop/developers-guide.md">Azure Information Protection 개발자 가이드</a></li>
           <li><a href="./rms-client/info-protect-client.md">Azure Information Protection 클라이언트 설치</a></li>
         </ul>
@@ -64,7 +65,7 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
                 <li class="column-third">
                   <a href="./understand-explore/what-is-information-protection.md">
                     <h3>Azure Information Protection이란?</h3>
-                    <p>문서와 전자 메일을 분류하고 레이블을 지정하며 보호하는 데 도움이 되는 클라우드 기반 솔루션인 Azure Information Protection에 대해 알아 봅니다.</p>
+                    <p>문서와 메일을 분류하고 레이블을 지정하며 보호하는 데 도움이 되는 클라우드 기반 솔루션인 Azure Information Protection에 대해 알아 봅니다.</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -226,6 +227,6 @@ ms.openlocfilehash: eab242611a9b5557e8c1056b1c093a4070f6f202
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

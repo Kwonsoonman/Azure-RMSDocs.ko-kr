@@ -2,6 +2,7 @@
 title: "템플릿 복사 | Azure Information Protection"
 description: "기존 템플릿과 설정이 매우 비슷한 새 템플릿을 쉽게 만들 수 있는 템플릿 복사 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 5248a7a5b90e956d4121d95e0b82a941a20d4e8f
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: e0945e9ab719fd4b686c3fb7932891ed92fa31c6
 
 
 ---
 
 
-# 템플릿 복사
+# <a name="copy-a-template"></a>템플릿 복사
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -32,10 +33,10 @@ ms.openlocfilehash: 5248a7a5b90e956d4121d95e0b82a941a20d4e8f
 
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "Rights Management로 보호된 파일에 대한 사용 권한 변경 | A
 description: "파일이 Rights Management로 보호된 경우 파일을 다시 보호한 다음 해당 파일에 대한 액세스 권한이 있어야 하는 모든 사용자와 해당 사용자에게 부여할 사용 권한을 지정하여 사용 권한을 변경할 수 있습니다."
 keywords: 
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -13,13 +14,13 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 
 
 ---
 
-# Rights Management로 보호된 파일에 대한 사용 권한 변경
+# <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일에 대한 사용 권한 변경
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
@@ -38,7 +39,7 @@ ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 
 파일이 더 이상 보호되지 않도록 모든 사용 권한을 완전히 제거하려면 [파일에서 보호 제거](sharing-app-remove-protection.md)를 참조하세요.
 
-## 바로 파일을 다시 보호하려면
+## <a name="to-reprotect-a-file-inplace"></a>바로 파일을 다시 보호하려면
 
 1.  파일 탐색기에서 보호할 파일을 선택합니다. 마우스 오른쪽 단추를 클릭하고 **RMS로 보호**를 선택한 다음 **바로 보호**를 선택합니다. 예를 들면 다음과 같습니다.
 
@@ -68,10 +69,10 @@ ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
 >
 > -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
 >
->     등록하면 개인 전자 메일 주소보다 회사 전자 메일 주소를 사용합니다. 보호된 첨부 파일을 전자 메일로 전송받았기 때문에 등록한 경우 전자 메일 메시지를 보내는 데 사용된 동일한 전자 메일 주소를 사용합니다.
+>     등록하면 개인 메일 주소보다 회사 메일 주소를 사용합니다. 보호된 첨부 파일을 메일로 전송받았기 때문에 등록한 경우 메일 메시지를 보내는 데 사용된 동일한 메일 주소를 사용합니다.
 > -   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
 
-## 메일로 보낸 파일을 다시 보호하려면
+## <a name="to-reprotect-a-file-that-you-have-emailed"></a>메일로 보낸 파일을 다시 보호하려면
 
 메일로 보낸 파일에 대한 사용 권한을 변경하려면:
 
@@ -84,18 +85,18 @@ ms.openlocfilehash: 99dcbeb68cbbe363cfd1e6ded07882f01621e438
     메일로 보낸 파일을 취소하려면 [문서 추적 및 취소](sharing-app-track-revoke.md)를 참조하세요.
 
 
-## 예제 및 기타 지침
+## <a name="examples-and-other-instructions"></a>예제 및 기타 지침
 예를 들어 Rights Management 공유 응용 프로그램 및 방법 지침을 사용하는 방법에 대한 예는 Rights Management 공유 응용 프로그램 사용자 가이드에서 다음 섹션을 참조하세요.
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [원하는 옵션을 선택하](sharing-app-user-guide.md#what-do-you-want-to-do)세요.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

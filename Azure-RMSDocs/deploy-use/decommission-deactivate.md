@@ -2,6 +2,7 @@
 title: "Azure Rights Management 서비스 해제 및 비활성화 | Azure Information Protection"
 description: "Azure Information Protection에서 이 정보 보호 서비스를 더 이상 사용하지 않으려는 경우 해당 방법 및 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 57ae18a479e06084e1266276a4420a5092c23b8d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
 
 
 ---
 
-# Azure 권한 관리 서비스 해제 및 비활성화
+# <a name="decommissioning-and-deactivating-azure-rights-management"></a>Azure 권한 관리 서비스 해제 및 비활성화
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -47,13 +48,13 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 조직에 대한 Azure Rights Management 서비스를 비활성화할 준비가 되었으면 다음 지침을 사용합니다.
 
-## 권한 관리 비활성화
+## <a name="deactivating-rights-management"></a>권한 관리 비활성화
 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 비활성화하려면 다음 절차 중 하나를 사용하세요.
 
 > [!TIP]
 > Windows PowerShell cmdlet [Disable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629422.aspx)을 사용하여 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 비활성화할 수도 있습니다.
 
-#### Office 365 관리 센터에서 권한 관리를 비활성화하려면
+#### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>Office 365 관리 센터에서 권한 관리를 비활성화하려면
 
 1.  Office 365 배포의 관리자인[회사 또는 학교 계정을 사용하여 Office 365에 로그인](https://portal.office.com/) 합니다.
 
@@ -74,7 +75,7 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 이제 **Rights Management가 활성화되지 않았습니다.** 가 표시되고 활성화 옵션이 나타납니다.
 
-#### Azure 클래식 포털에서 Rights Management를 비활성화하려면
+#### <a name="to-deactivate-rights-management-from-the-azure-classic-portal"></a>Azure 클래식 포털에서 Rights Management를 비활성화하려면
 
 1.  [Azure 클래식 포털](http://go.microsoft.com/fwlink/p/?LinkID=275081)에 로그인합니다.
 
@@ -91,6 +92,6 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

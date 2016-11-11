@@ -2,6 +2,7 @@
 title: "템플릿 제거 | Azure Information Protection"
 description: "기본 템플릿은 삭제할 수 없지만 사용자에게 보이지 않도록 보관할 수 있습니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: 42935ce2-879c-4168-aef9-9a88f72b15b2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: e9af6dcf237ec0136101835ceff56e79e01f3b3c
 
 
 ---
 
 
-# 템플릿 제거(보관)
+# <a name="remove-archive-templates"></a>템플릿 제거(보관)
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -29,7 +30,7 @@ ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
 
 기본 템플릿은 편집할 수 없으므로 이러한 템플릿을 보관하려면 **템플릿** 페이지에서 **보관** 옵션을 사용해야 합니다. Outlook **전달 금지** 옵션은 보관할 수 없습니다.
 
-## 기본 템플릿을 제거하려면
+## <a name="to-remove-a-default-template"></a>기본 템플릿을 제거하려면
 
 -   **템플릿** 페이지에서 기본 서식 파일을 선택하고 **보관**을 클릭합니다.
 
@@ -37,10 +38,10 @@ ms.openlocfilehash: 2597df5b95bc1aaff345804e476f48d6436d9a32
 
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

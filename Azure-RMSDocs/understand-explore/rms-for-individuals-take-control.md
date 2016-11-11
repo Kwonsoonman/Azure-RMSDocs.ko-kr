@@ -2,6 +2,7 @@
 title: "관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법 | Azure Information Protection"
 description: "조직의 개인용 RMS 구독을 유료 구독으로 전환하지 않으려는 경우 Azure Active Directory에서 사용자 계정을 제어하는 방법을 설명합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fd29eb6dec94535d0358fe0a2d9c9285fcd7cd1
-ms.openlocfilehash: 6f26faf8a96c388a4640701a12a77e3b4ef60567
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f9999db44758251f7b9b4c8f86549b1ee36e83d3
 
 
 ---
 
 
 
-# 관리자가 개인용 RMS용으로 만들어진 계정을 제어하는 방법
+# <a name="how-administrators-can-control-the-accounts-created-for-rms-for-individuals"></a>관리자가 개인용 RMS용으로 만들어진 계정을 제어하는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -40,12 +41,12 @@ ms.openlocfilehash: 6f26faf8a96c388a4640701a12a77e3b4ef60567
 Azure 디렉터리에서 사용자 계정을 제어하거나, 사용자가 개인용 RMS에 등록하지 못하도록 하려면 Azure 구독을 얻은 후 디렉터리를 소유해야 합니다. Azure 구독이 없는 경우 무료로 얻을 수 있습니다. 디렉터리가 셀프 서비스 프로세스 중에 자동으로 만들어진 경우에는 해당 디렉터리를 만드는 데 사용한 도메인을 소유해야 합니다. Azure에 이미 디렉터리가 있지만 사용자가 조직에서 사용하는 새 도메인을 지정한 경우 해당 도메인을 기존 디렉터리에 병합합니다. 자세한 내용은 [Azure 셀프서비스 등록이란?](https://azure.microsoft.com/documentation/articles/active-directory-self-service-signup/)을 참조하세요.
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 관리자 대신 사용자가 Azure Active Directory에 개인용 RMS에 대한 자신의 계정을 만들 수 있다면 이 작업을 수행했는지 어떻게 확인할 수 있을까요?  [사용자가 개인용 RMS에 등록했는지 확인하는 방법](rms-for-individuals-identify-sign-up.md)을 참조하세요.
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

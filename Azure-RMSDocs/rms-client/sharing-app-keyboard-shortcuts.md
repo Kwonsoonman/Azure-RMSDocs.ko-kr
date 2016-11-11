@@ -2,6 +2,7 @@
 title: "Rights Management 공유 응용 프로그램에서 바로 가기 키 사용 | Azure Information Protection"
 description: "Windows용 RMS 공유 응용 프로그램에서 바로 가기 키를 사용하는 방법에 대한 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 0e39640a5c48f5d924fed6ee7bf6de34bf195e56
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ed59b022078f73d61afcff3eff10aa338176e568
 
 
 ---
 
-# Rights Management 공유 응용 프로그램에서 바로 가기 키 사용
+# <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에서 바로 가기 키 사용
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
@@ -28,18 +29,18 @@ RMS 공유 응용 프로그램을 사용할 때 **Alt** 키를 누르면 사용 
 
 ![RMS 공유 응용 프로그램 액세스 키](../media/ADRMS_MSRMSApp_AccessKeys.png)
 
-## 예제 및 기타 지침
+## <a name="examples-and-other-instructions"></a>예제 및 기타 지침
 예를 들어 Rights Management 공유 응용 프로그램 및 방법 지침을 사용하는 방법에 대한 예는 Rights Management 공유 응용 프로그램 사용자 가이드에서 다음 섹션을 참조하세요.
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [원하는 옵션을 선택하](sharing-app-user-guide.md#what-do-you-want-to-do)세요.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

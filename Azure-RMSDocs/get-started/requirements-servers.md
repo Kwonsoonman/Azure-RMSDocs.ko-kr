@@ -2,6 +2,7 @@
 title: "데이터 보호를 지원하는 온-프레미스 서버 | Azure Information Protection"
 description: "Rights Management 커넥터를 통해 Azure Information Protection의 Azure Rights Management 서비스를 사용할 수 있는 온-프레미스 서버 제품을 식별합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,18 +13,18 @@ ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
-ms.openlocfilehash: 22f63cae58f6dfe7e0381a561ffb348177585809
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: e4bf159cea6298e5a5577a2fa4de3dd3beeb47d9
 
 
 ---
 
 
-# Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버
+# <a name="onpremises-servers-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-Azure Rights Management 커넥터를 사용할 때 Azure Information Protection에서 지원되는 온-프레미스 서버 제품은 다음과 같습니다. 이 커넥터는 Azure Information Protection에서 Office 문서 및 전자 메일을 보호하는 데 사용되는 온-프레미스 서버와 Azure Rights Management 서비스 간의 통신 인터페이스(릴레이) 역할을 합니다. 
+Azure Rights Management 커넥터를 사용할 때 Azure Information Protection에서 지원되는 온-프레미스 서버 제품은 다음과 같습니다. 이 커넥터는 Azure Information Protection에서 Office 문서 및 메일을 보호하는 데 사용되는 온-프레미스 서버와 Azure Rights Management 서비스 간의 통신 인터페이스(릴레이) 역할을 합니다. 
 
 이 커넥터를 사용하려면 Active Directory 포리스트와 Azure Active Directory 간의 디렉터리 동기화를 구성해야 합니다.
 
@@ -58,11 +59,11 @@ Rights Management 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 W
 
 이러한 온-프레미스 서버에 대해 Rights Management 커넥터를 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

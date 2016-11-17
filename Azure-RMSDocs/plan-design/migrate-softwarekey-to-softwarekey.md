@@ -2,6 +2,7 @@
 title: "2단계&colon; 소프트웨어 보호된 키-소프트웨어 보호된 키 마이그레이션 | Azure Information Protection"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 소프트웨어 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

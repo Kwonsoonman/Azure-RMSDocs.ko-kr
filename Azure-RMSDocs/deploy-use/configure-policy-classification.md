@@ -1,6 +1,8 @@
 ---
 title: "자동 및 권장 분류 조건을 구성하는 방법 | Azure Information Protection"
 description: "레이블에 대한 조건을 구성할 때 문서 또는 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

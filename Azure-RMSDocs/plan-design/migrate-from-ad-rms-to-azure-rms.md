@@ -2,6 +2,7 @@
 title: "AD RMS에서 Azure Information Protection으로 마이그레이션 | Azure Information Protection"
 description: "AD RMS(Active Directory Rights Management Services) 배포를 Azure Information Protection으로 마이그레이션하는 지침을 제공합니다. 마이그레이션 후 사용자는 조직에서 AD RMS를 사용하여 보호하는 문서 및 메일 메시지에 여전히 액세스할 수 있으며 새로 보호되는 콘텐츠에는 Azure Information Protection이 사용됩니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/27/2016
 ms.topic: article

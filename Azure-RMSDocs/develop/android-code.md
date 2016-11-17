@@ -3,6 +3,7 @@ title: "Android 코드 예제 | Azure RMS"
 description: "이 항목에서는 Android 버전의 RMS SDK에 대한 중요한 코드 요소를 소개합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,14 +21,14 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 ---
 
-# Android 코드 예제
+# <a name="android-code-examples"></a>Android 코드 예제
 
 이 항목에서는 Android 버전의 RMS SDK에 대한 중요한 코드 요소를 소개합니다.
 
 **참고** 뒤에 나오는 예제 코드 및 설명에서는 MSIPC(Microsoft 정보 보호 및 제어)라는 용어를 사용하여 클라이언트 프로세스를 가리킵니다.
 
 
-## Microsoft Rights Management SDK 4.2 사용 - 주요 시나리오
+## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Microsoft Rights Management SDK 4.2 사용 - 주요 시나리오
 
 다음은 이 SDK를 이해하는 데 중요한 개발 시나리오를 나타내는 큰 샘플 응용 프로그램에서 가져온 코드 예제입니다. 이 예제에서는 보호된 파일이라고 지칭되는 Microsoft 보호된 파일 형식 사용, 사용자 지정 보호된 파일 형식 사용 및 사용자 지정 UI 컨트롤 사용을 보여 줍니다.
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 이 Android 운영 체제용 SDK에는 샘플 응용 프로그램 *MSIPCSampleApp*을 사용할 수 있습니다. 이 샘플 응용 프로그램에 액세스하려면 GitHub에서 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android)를 참조하세요.
 
-### 시나리오: RMS 보호된 파일 사용
+### <a name="scenario-consume-an-rms-protected-file"></a>시나리오: RMS 보호된 파일 사용
 
 -   **1단계**: [ProtectedFileInputStream](https://msdn.microsoft.com/library/dn790851.aspx) 만들기
 
@@ -197,7 +198,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
                 }
 
 
-### 시나리오: 템플릿을 사용하여 새 보호된 파일 만들기
+### <a name="scenario-create-a-new-protected-file-using-a-template"></a>시나리오: 템플릿을 사용하여 새 보호된 파일 만들기
 
 이 시나리오에서는 먼저 템플릿 목록을 가져오고 첫 번째 템플릿을 선택하여 정책을 만든 다음 새 보호된 파일을 만들어서 씁니다.
 
@@ -321,7 +322,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 
 
 
-### 시나리오: 사용자 지정 보호된 파일 열기
+### <a name="scenario-open-a-custom-protected-file"></a>시나리오: 사용자 지정 보호된 파일 열기
 
 -   **1단계**: *serializedContentPolicy*에서 [UserPolicy](https://msdn.microsoft.com/library/dn790887.aspx)를 만듭니다.
 
@@ -436,7 +437,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
         buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### 시나리오: 사용자 지정(임시) 정책을 사용하여 사용자 지정 보호된 파일 만들기
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>시나리오: 사용자 지정(임시) 정책을 사용하여 사용자 지정 보호된 파일 만들기
 
 -   **1단계**: 사용자가 제공한 메일 주소를 사용하여 정책 설명자를 만듭니다.
 

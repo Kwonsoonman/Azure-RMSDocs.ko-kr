@@ -2,6 +2,7 @@
 title: "BYOK 가격 및 제한 사항 | Azure Information Protection"
 description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

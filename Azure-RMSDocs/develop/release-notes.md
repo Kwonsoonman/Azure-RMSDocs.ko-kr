@@ -2,6 +2,7 @@
 title: "새로운 기능 및 릴리스 정보 | Azure RMS"
 description: "이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다."
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/31/2016
 ms.topic: article

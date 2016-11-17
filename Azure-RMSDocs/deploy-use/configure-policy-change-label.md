@@ -1,6 +1,8 @@
 ---
 title: "기존 레이블을 변경하거나 사용자 지정하는 방법 | Azure Information Protection"
 description: "Azure Information Protection 정책에서 구성하여 사용자의 Information Protection 표시줄에 표시되는 레이블을 변경하거나 구체화할 수 있습니다."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

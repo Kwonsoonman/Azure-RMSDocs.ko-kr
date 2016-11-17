@@ -2,6 +2,7 @@
 title: "Azure Rights Management 커넥터에 대해 서버 구성 | Azure Information Protection"
 description: "Azure RMS(Rights Management) 커넥터를 사용할 온-프레미스 서버를 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 5단계를 설명합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article

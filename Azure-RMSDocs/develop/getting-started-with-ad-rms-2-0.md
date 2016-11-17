@@ -3,6 +3,7 @@ title: "시작 | Azure RMS"
 description: "RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

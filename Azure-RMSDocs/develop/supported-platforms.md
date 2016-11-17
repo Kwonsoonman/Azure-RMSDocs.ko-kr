@@ -3,6 +3,7 @@ title: "지원되는 플랫폼 | Azure RMS"
 description: "이 항목에서는 권한 관리 서비스 SDK 2.1 지원 클라이언트 및 서버 플랫폼을 식별합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: eb20483bd3a2be60e1b9fcee173ebeabcb5b6d93
 
 ---
 
-# 지원되는 플랫폼
+# <a name="supported-platforms"></a>지원되는 플랫폼
 
 이 항목에서는 권한 관리 서비스 SDK 2.1 지원 클라이언트 및 서버 플랫폼을 식별합니다.
 
-## 지원되는 플랫폼
+## <a name="supported-platforms"></a>지원되는 플랫폼
 
 -   Windows 10
 -   Windows Server 2012 R2

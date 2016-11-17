@@ -2,6 +2,7 @@
 title: "Azure RMS를 통해 해결할 수 있는 문제 | Azure Information Protection"
 description: "조직에 해당될 수 있는 비즈니스 요구 사항이나 문제에 대해 알아보고 Azure RMS 기술을 통해 이러한 요구 사항을 충족하고 문제를 해결하는 방법을 파악합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

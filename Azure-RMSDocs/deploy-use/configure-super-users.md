@@ -2,6 +2,7 @@
 title: "Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성 | Azure Information Protection"
 description: "Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 있는 사용자와 서비스가 항상 읽고 검사할 수 있도록 하는 Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능 및 이 기능을 구현하는 방법을 설명합니다. ‘데이터 추론’이라고도 하는 이 기능은 조직 데이터에 대한 통제력을 유지하는 데 필수적인 요소입니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: d2ae8df5895b1cf1985420be25abac36fe2689b7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 70c74678ec0ef0b583b2784177520d0ea8a5b7e8
 
 
 ---
 
-# Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
+# <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -59,7 +60,7 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 
 `2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
 
-## 슈퍼 사용자에 대한 스크립팅 옵션
+## <a name="scripting-options-for-super-users"></a>슈퍼 사용자에 대한 스크립팅 옵션
 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]에 대한 슈퍼 사용자 역할이 할당된 사용자가 여러 위치에서 여러 파일의 보호를 제거해야 하는 상황이 종종 발생합니다. 이 작업은 수동으로 수행할 수도 있지만 스크립트를 작성하는 것이 더 효율적이며 더욱 안정적인 경우가 많습니다. 이렇게 하려면 [RMS Protection Tool](http://www.microsoft.com/en-us/download/details.aspx?id=47256)을 다운로드합니다. 그런 후에 [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) cmdlet 및 [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) cmdlet을 필요에 따라 사용합니다.
 
 이러한 cmdlet에 대한 자세한 내용은 [RMS 보호 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)를 참조하세요.
@@ -71,6 +72,6 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

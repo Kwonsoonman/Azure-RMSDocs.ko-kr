@@ -3,6 +3,7 @@ title: "iOS 및 OS X 설치 | Azure RMS"
 description: "iOS 및 OS X 응용 프로그램에서 RMS SDK 4.2를 통해 AAD RM을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

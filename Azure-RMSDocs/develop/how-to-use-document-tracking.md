@@ -3,6 +3,7 @@ title: "방법: 문서 추적 사용 | Azure RMS"
 description: "문서 추적 기능을 사용하려면 관련 메타데이터 및 서비스 등록 관리에 대한 몇 가지 간단한 사항을 이해해야 합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,11 +21,11 @@ ms.openlocfilehash: 616d5dd088665abf6e7d435978b021b10c5ac3f5
 
 ---
 
-# 방법: 문서 추적 사용
+# <a name="how-to-use-document-tracking"></a>방법: 문서 추적 사용
 
 문서 추적 기능을 사용하려면 관련 메타데이터 및 서비스 등록 관리에 대한 몇 가지 간단한 사항을 이해해야 합니다.
 
-## 문서 추적 메타데이터 관리
+## <a name="managing-document-tracking-metadata"></a>문서 추적 메타데이터 관리
 
 문서 추적을 지원하는 각 운영 체제는 유사한 구현을 사용합니다. 여기에는 메타데이터를 나타내는 속성 집합, 사용자 정책 생성 메서드에 추가된 새 매개 변수, 문서 추적 서비스를 사용하여 추적할 정책을 등록하기 위한 메서드가 포함됩니다.
 

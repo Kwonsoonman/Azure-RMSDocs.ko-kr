@@ -3,6 +3,7 @@ title: "방법&#58; 오류 및 성능 로깅 사용 | Azure RMS"
 description: "Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

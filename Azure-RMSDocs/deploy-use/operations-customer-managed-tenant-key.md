@@ -2,6 +2,7 @@
 title: "고객 관리 - 테넌트 키 수명 주기 작업 | Azure Information Protection"
 description: "Azure Information Protection용 테넌트 키를 직접 관리하는 경우(BYOK(Bring Your Own Key) 시나리오)와 관련된 수명 주기 작업에 대한 정보를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

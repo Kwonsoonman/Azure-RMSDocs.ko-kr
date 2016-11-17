@@ -3,6 +3,7 @@ title: "Linux API 참조 | Azure RMS"
 description: "Linux 버전이 지정된 운영 체제 지원에 대한 API 참조는 Github에서 호스트됩니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: 12d7f276a489284586f45d34407ecc48b1b4b2ce
 
 ---
 
-# Linux API 참조
+# <a name="linux-api-reference"></a>Linux API 참조
 
 Linux 버전이 지정된 운영 체제 지원에 대한 API 참조는 Github에서 호스트됩니다([RMS SDK for C++](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)). 자세한 내용은 [시작](get-started.md)을 참조하세요.
 

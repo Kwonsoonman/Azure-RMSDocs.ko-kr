@@ -2,6 +2,7 @@
 title: "Azure 권한 관리란? | Azure Information Protection"
 description: "Azure RMS(Azure Rights Management)는 Azure Information Protection에서 사용하는 보호 기술입니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/31/2016
 ms.topic: article

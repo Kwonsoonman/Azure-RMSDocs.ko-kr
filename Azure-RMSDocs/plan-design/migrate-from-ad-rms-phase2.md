@@ -2,6 +2,7 @@
 title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 2단계 | Azure Information Protection"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 두 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 5단계가 포함됩니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/12/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 25f7c2e5eb226fcf7c30026a37a767e559a522ad
-ms.openlocfilehash: 810e540e02db0b4a142471dd89e30663bd61f22c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ca8d2ccb68b96095fccf9d55b9cb9392d3a455ec
 
 
 ---
-# 마이그레이션 2단계 - 클라이언트 쪽 구성
+# <a name="migration-phase-2-clientside-configuration"></a>마이그레이션 2단계 - 클라이언트 쪽 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
 AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 5단계를 설명합니다.
 
 
-## 5단계. Azure Information Protection을 사용하도록 클라이언트 다시 구성
+## <a name="step-5-reconfigure-clients-to-use-azure-information-protection"></a>5단계. Azure Information Protection을 사용하도록 클라이언트 다시 구성
 Windows 클라이언트:
 
 1.  [마이그레이션 스크립트 다운로드](https://go.microsoft.com/fwlink/?LinkId=524619):
@@ -76,7 +77,7 @@ Windows 클라이언트:
 
     -  [AD RMS 모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포할 때 만든 DNS SRV 레코드를 제거합니다.
 
-#### 마이그레이션 스크립트로 인한 변경 내용
+#### <a name="changes-made-by-the-migration-scripts"></a>마이그레이션 스크립트로 인한 변경 내용
 이 섹션에서는 마이그레이션 스크립트로 인한 변경 내용을 설명합니다. 이 정보는 참조용으로만 또는 문제 해결을 위해 사용할 수 있고, 직접 변경을 수행하려는 경우에 참조할 수 있습니다.
 
 CleanUpRMS_RUN_Elevated.cmd:
@@ -129,10 +130,10 @@ Redirect_OnPrem.cmd:
     > Azure RMS에 대해 **Get-AadrmConfiguration** cmdlet를 실행하는 경우 [RightsManagementServiceId](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) 값을 식별하여 이 값을 찾을 수 있습니다.
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 마이그레이션을 계속하려면 [3단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

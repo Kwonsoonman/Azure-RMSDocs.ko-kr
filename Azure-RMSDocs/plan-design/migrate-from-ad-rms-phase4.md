@@ -2,6 +2,7 @@
 title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 4단계 | Azure Information Protection"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 네 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 8~9단계가 포함됩니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/26/2016
 ms.topic: article

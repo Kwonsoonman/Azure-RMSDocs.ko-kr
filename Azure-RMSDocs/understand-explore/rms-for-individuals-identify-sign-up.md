@@ -2,6 +2,7 @@
 title: "사용자가 개인용 RMS에 등록했는지 확인하는 방법 | Azure Information Protection"
 description: "관리자는 사용자가 개인용 RMS를 등록했는지 여부를 어떻게 알 수 있을까요? 이 문서에서 설명하는 방법 중 하나를 사용하거나 여러 방법을 조합하여 사용할 수 있습니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/24/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1a9de2d0ef3021335e94cde86a7e6b844b15908
-ms.openlocfilehash: 70909cfa78800eabb798aec34264770104f7c47b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: b9979d48af7146f8021de840248f71cb1399b777
 
 
 ---
 
 
-# 사용자가 개인용 RMS에 등록했는지 확인하는 방법
+# <a name="how-to-find-out-if-your-users-have-signed-up-for-rms-for-individuals"></a>사용자가 개인용 RMS에 등록했는지 확인하는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -36,6 +37,6 @@ ms.openlocfilehash: 70909cfa78800eabb798aec34264770104f7c47b
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

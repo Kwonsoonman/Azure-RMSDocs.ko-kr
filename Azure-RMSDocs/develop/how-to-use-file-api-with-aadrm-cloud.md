@@ -3,6 +3,7 @@ title: "방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사�
 description: "이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

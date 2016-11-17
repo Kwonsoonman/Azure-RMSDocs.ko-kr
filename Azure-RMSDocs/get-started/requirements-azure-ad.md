@@ -2,6 +2,7 @@
 title: "Azure Active Directory 요구 사항 | Azure Information Protection"
 description: "사용자가 정상적으로 인증할 수 있도록, Azure Information Protection을 사용하는 데 필요한 Azure AD 요구 사항을 파악합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/29/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 976281d2b1f9c87bbb0806fef98b2520772c507c
-ms.openlocfilehash: 5be497b09ed1b1342747508611a1cc06ad0edf02
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 
 ---
 
-# Azure Information Protection에 대한 Azure Active Directory 요구 사항
+# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -39,7 +40,7 @@ Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Az
 > 
 > -   **Windows Server 2012 R2** 이상의 서버 버전이나 OAuth 2.0 프로토콜을 지원하는 다른 인증 공급자에서 AD FS를 사용해야 합니다.
 
-## MFA(Multi-Factor Authentication) 및 Azure Information Protection
+## <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>MFA(Multi-Factor Authentication) 및 Azure Information Protection
 Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하려면 다음 중 하나 이상이 필요합니다.
 
 -   Office 2013(최소 버전)
@@ -68,12 +69,12 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
         이 시나리오에 대한 자세한 내용은 Office 블로그에서 [Office 365로 작동 - 이제 간소화된 ID 프로그램](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)을 참조하세요.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 기타 요구 사항을 확인하려면 [Azure Information Protection에 대한 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

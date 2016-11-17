@@ -3,6 +3,7 @@ title: "응용 프로그램 테스트 | Azure RMS"
 description: "테스트를 위해 응용 프로그램을 설치하는 방법에 대한 지침입니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

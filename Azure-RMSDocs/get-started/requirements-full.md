@@ -2,6 +2,7 @@
 title: "Azure Information Protection에 대한 요구 사항 - 전체 문서 | Azure Information Protection"
 description: "Azure Information Protection을 조직에 배포하기 위한 필수 구성 요소를 식별합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article

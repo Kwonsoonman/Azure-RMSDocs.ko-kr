@@ -2,6 +2,7 @@
 title: "개인용 RMS 및 Azure Information Protection | Azure Information Protection"
 description: "Azure Rights Management 서비스에서 보호하는 중요한 파일을 전송받았으나 해당 IT 부서가 Azure에서 해당 사용자에 대한 계정을 관리하지 않아 인증이 불가능한 조직의 경우, 조직 내 사용자를 위한 무료 셀프 서비스 구독인 개인용 RMS에 대한 정보를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d27417bf90dab8c7e8654c68d204dad6297fa0d
-ms.openlocfilehash: 5ce322224da9052b1fa5a3e3d995bbb52e079797
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f89374ec327f51f3e8354aec57f0c0da9ddac585
 
 
 ---
 
-# 개인용 RMS 및 Azure Information Protection
+# <a name="rms-for-individuals-and-azure-information-protection"></a>개인용 RMS 및 Azure Information Protection
 
 >*적용 대상: Azure Information Protection*
 
@@ -35,12 +36,12 @@ Windows 컴퓨터에서 권한 관리 공유 응용 프로그램을 사용하여
 
 개인용 RMS는 Azure Active Directory에서 지원하는 셀프서비스 등록의 한 예입니다. 작동 방법에 대한 자세한 내용은 Azure Active Directory 문서의 [Azure 셀프서비스 가입이란?](/active-directory/active-directory-self-service-signup)을 참조하세요. 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 단계별 지침과 백그라운드에서 발생하는 작업의 기술 개요는 [개인용 RMS 등록 방법](rms-for-individuals-user-sign-up.md)을 참조하세요. 
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

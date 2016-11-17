@@ -2,6 +2,7 @@
 title: "Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거 | Azure Information Protection"
 description: "이전에 RMS 공유 응용 프로그램을 사용하여 보호된 파일에서 보호를 제거(파일을 보호 해제)하는 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3ef47e5dea1c6b56127e231ba6dba774c31cca90
 
 
 ---
 
-# Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거
+# <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
 > [!IMPORTANT]
 > 보호를 제거하려면 파일의 소유자여야 합니다.
 
-## 파일에서 보호를 제거하려면
+## <a name="to-remove-protection-from-a-file"></a>파일에서 보호를 제거하려면
 
 1.  파일 탐색기에서 Sample.ptxt 등의 파일을 마우스 오른쪽 단추로 클릭하고 **RMS로 보호**를 선택한 다음 **바로 보호**, **보호 제거**를 차례로 클릭합니다.
 
@@ -39,18 +40,18 @@ ms.openlocfilehash: ceb726e47c4eb9413b7d7eb5b1469e2a99992dda
 
 보호된 원본 파일(예: Sample.ptxt)이 삭제되고 이름은 같지만 보호되지 않는 파일 이름 확장명(예: Sample.txt)의 파일로 바꿉니다.
 
-## 예제 및 기타 지침
+## <a name="examples-and-other-instructions"></a>예제 및 기타 지침
 예를 들어 Rights Management 공유 응용 프로그램 및 방법 지침을 사용하는 방법에 대한 예는 Rights Management 공유 응용 프로그램 사용자 가이드에서 다음 섹션을 참조하세요.
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [원하는 옵션을 선택하](sharing-app-user-guide.md#what-do-you-want-to-do)세요.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

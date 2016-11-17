@@ -2,6 +2,7 @@
 title: "Azure RMS 작동 방식 | Azure Information Protection"
 description: "Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호화 컨트롤에 대해 자세히 설명하고 이 프로세스의 작동 방식을 보여 주는 단계별 다이어그램을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article

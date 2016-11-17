@@ -3,6 +3,7 @@ title: "개발자 가이드 | Azure RMS"
 description: "개발자 도구 사용의 개요, SDK, 추가 라이브러리 및 코드 예제입니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c50775c43aea8950ca9c560c61712ffbbede8599
-ms.openlocfilehash: 442dd2e6b3487964d5740c533894aa4de30f00ab
+ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
+ms.openlocfilehash: 366652cbf38c1215f73e6996edd54829170ba4c5
 
 
 ---
@@ -63,12 +64,12 @@ ms.openlocfilehash: 442dd2e6b3487964d5740c533894aa4de30f00ab
 다음은 [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 이상 버전의 2.x SDK에서 지원하는 Windows 데스크톱에서 실행됩니다.
 
 - [PFILE 보호된 PDF 읽기](https://blogs.msdn.microsoft.com/rms/2015/11/09/reading-a-pfile-protected-pdf/)는 RMS 개발자 코너 블로그에 있는 간단한 코드 예제로, MSIPC 파일 API를 사용하여 PFILE 보호된 PDF 문서의 암호를 해독하고 엽니다.
-- [IpcManagedAPI](https://github.com/Azure-Samples/active-directory-dotnet-rms)는 관리되는 응용 프로그램에서 쉽게 RMS를 사용할 수 있도록 하는 RMS SDK 2.1의 .NET(C#) 표현입니다.
-- [IPCNotepad](https://code.msdn.microsoft.com/ipcnotepad-sample-f67dae80)는 각 RMS 사용 응용 프로그램이 제한된 콘텐츠를 보호 및 사용할 때 수행해야 하는 기본 단계를 안내하는 샘플 RMS 사용 응용 프로그램입니다.
-- [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms)는 DLP RMS 사용 응용 프로그램이 제한된 콘텐츠를 보호 및 사용하기 위해 파일 API를 통해 수행해야 하는 기본 단계를 안내하는 샘플 RMS 사용 DLP(데이터 노출 방지) 응용 프로그램입니다.
-- [IpcAzureApp](https://github.com/Azure-Samples/active-directory-dotnet-rms)은 Azure 응용 프로그램에서 RMS SDK를 사용하여 Azure Blob 저장소의 데이터를 보호하는 방법을 보여 주는 샘플입니다.
-- [RmsDocumentInspector](https://github.com/Azure-Samples/active-directory-dotnet-rms)는 콘텐츠 ID 또는 사용자 권한과 같은 RMS 보호된 파일에 대한 정보를 제공할 수 있는 도구입니다.
-- [RmsFileWatcher](https://github.com/Azure-Samples/active-directory-dotnet-rms)는 파일 시스템의 디렉터리를 감시하고 파일 추가, 파일 수정 등 파일이 변경될 때마다 RMS 보호 정책을 적용하는 Windows 응용 프로그램을 빌드하는 방법을 보여 주는 샘플입니다.
+- [IpcManagedAPI](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcManagedAPI)는 관리되는 응용 프로그램에서 쉽게 RMS를 사용할 수 있도록 하는 RMS SDK 2.1의 .NET(C#) 표현입니다.
+- [IPCNotepad](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcNotepad)는 각 RMS 사용 응용 프로그램이 제한된 콘텐츠를 보호 및 사용할 때 수행해야 하는 기본 단계를 안내하는 샘플 RMS 사용 응용 프로그램입니다.
+- [IpcDlp](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcDlpApp)는 DLP RMS 사용 응용 프로그램이 제한된 콘텐츠를 보호 및 사용하기 위해 파일 API를 통해 수행해야 하는 기본 단계를 안내하는 샘플 RMS 사용 DLP(데이터 노출 방지) 응용 프로그램입니다.
+- [IpcAzureApp](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcAzureApp)은 Azure 응용 프로그램에서 RMS SDK를 사용하여 Azure Blob 저장소의 데이터를 보호하는 방법을 보여 주는 샘플입니다.
+- [RmsDocumentInspector](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/RmsDocumentInspector)는 콘텐츠 ID 또는 사용자 권한과 같은 RMS 보호된 파일에 대한 정보를 제공할 수 있는 도구입니다.
+- [RmsFileWatcher](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/RmsFileWatcher)는 파일 시스템의 디렉터리를 감시하고 파일 추가, 파일 수정 등 파일이 변경될 때마다 RMS 보호 정책을 적용하는 Windows 응용 프로그램을 빌드하는 방법을 보여 주는 샘플입니다.
 
 ### <a name="windows-store-and-phone"></a>Windows 스토어 및 Phone
 
@@ -80,6 +81,6 @@ ms.openlocfilehash: 442dd2e6b3487964d5740c533894aa4de30f00ab
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

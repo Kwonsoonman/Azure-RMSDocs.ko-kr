@@ -3,6 +3,7 @@ title: "개발 환경 파일 | Azure RMS"
 description: "이 항목에서는 개발 환경 파일과 컴퓨터의 상대 설치 위치를 보여 줍니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -20,7 +21,7 @@ ms.openlocfilehash: a251723b6c42058091d57067724e89a1816bcaa1
 
 ---
 
-# 개발 환경 파일
+# <a name="development-environment-files"></a>개발 환경 파일
 
 이 항목에서는 개발 환경 파일과 컴퓨터의 상대 설치 위치를 보여 줍니다.
 

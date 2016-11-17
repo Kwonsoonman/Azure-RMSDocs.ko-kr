@@ -2,6 +2,7 @@
 title: "빠른 시작 자습서 4단계 | Azure Rights Management"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 3단계로 약 30분 만에 완료해야 합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: ce1d0a700e0b69d71f5cb2e93f406124bc0ca581
-ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: dc4cf3426bca306b66e2b23c3dd63373f62c9b7c
 
 
 ---
 
-# 4단계: 실제 분류, 레이블 지정 및 보호 작동 방식 확인 
+# <a name="step-4-see-classification-labeling-and-protection-in-action"></a>4단계: 실제 분류, 레이블 지정 및 보호 작동 방식 확인 
 
 >*적용 대상: Azure Information Protection*
 
@@ -24,7 +25,7 @@ ms.openlocfilehash: c9ed50317e18e86438b4393ce629d23d433c99fe
 
 분류와 보호는 문서를 저장할 때 수행되지만, 그 전에 저장되지 않은 문서를 사용하여 레이블을 적용하고 변경하기가 얼마나 쉬운지 확인합니다.
 
-## 수동으로 기본 레이블을 변경하려면
+## <a name="to-manually-change-our-default-label"></a>수동으로 기본 레이블을 변경하려면
 
 Information Protection 표시줄에서 **Personal**(비공개) 레이블을 선택합니다. 그러면 분류 수준을 낮추는 이유를 선택하는 메시지가 표시됩니다.
 
@@ -32,7 +33,7 @@ Information Protection 표시줄에서 **Personal**(비공개) 레이블을 선�
 
 **The previous label no longer applies**(이전 레이블이 더 이상 적용 안 됨)를 선택하고 **Confirm**(확인)을 클릭합니다. **Sensitivity**(민감도) 값이 **Personal**(비공개)로 변경되는 것을 확인할 수 있습니다.
 
-## 분류를 완전히 제거하려면
+## <a name="to-remove-the-classification-completely"></a>분류를 완전히 제거하려면
 
 Information Protection 표시줄에서 **Personal(비공개)** 옆에 있는 **Edit label(레이블 편집)** 아이콘을 클릭합니다. 사용 가능한 레이블이 표시됩니다. 그러나 이번에는 레이블 중 하나를 선택하는 대신 **Remove label(레이블 제거)** 아이콘을 클릭합니다. **OK**(확인)를 클릭하여 확인하고 이 작업에 대한 근거를 제공합니다.  
 
@@ -41,7 +42,7 @@ Information Protection 표시줄에서 **Personal(비공개)** 옆에 있는 **E
 ![Azure Information Protection 빠른 시작 자습서 4단계 - 분류 제거](../media/sensitivity-not-set.png)
 
 
-## 레이블 지정 및 자동 보호에 대한 권장 메시지를 확인하려면
+## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>레이블 지정 및 자동 보호에 대한 권장 메시지를 확인하려면
 
 1. Word 문서에서 유효한 신용 카드 번호(예: **4242-4242-4242-4242**)를 입력합니다. 
 
@@ -63,6 +64,6 @@ Information Protection 표시줄에서 **Personal(비공개)** 옆에 있는 **E
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

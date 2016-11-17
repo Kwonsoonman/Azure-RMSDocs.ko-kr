@@ -2,6 +2,7 @@
 title: "Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호) | Azure Information Protection"
 description: "컴퓨터, 서버 또는 다른 저장 장치에 파일을 안전하게 저장하는 방법에 대한 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aac3c6c7b5167d729d9ac89d9ae71c50dd1b6a10
-ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1b95c1bf1c747808c7baed97daa449f5c8bb234d
 
 
 ---
 
-# Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(내부 보호)
+# <a name="protect-a-file-on-a-device-protect-inplace-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(내부 보호)
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
 > [!TIP]
 > 파일을 보호하려 할 때 오류가 나타나면 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://go.microsoft.com/fwlink/?LinkId=303971)를 참조하세요.
 
-## 장치에서 파일을 보호하려면(내부 보호)
+## <a name="to-protect-a-file-on-a-device-protect-inplace"></a>장치에서 파일을 보호하려면(내부 보호)
 
 1.  파일 탐색기에서 보호할 파일을 선택합니다. 마우스 오른쪽 단추를 클릭하고 **RMS로 보호**를 선택한 다음 **바로 보호**를 선택합니다. 예를 들면 다음과 같습니다.
 
@@ -54,18 +55,18 @@ ms.openlocfilehash: 3d7a4b71f32c37d3ab632114e8147382cfbbcbd1
 
 나중에 파일에서 보호를 제거해야 하는 경우 [Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거](sharing-app-remove-protection.md)를 참조하세요.
 
-## 예제 및 기타 지침
+## <a name="examples-and-other-instructions"></a>예제 및 기타 지침
 예를 들어 Rights Management 공유 응용 프로그램 및 방법 지침을 사용하는 방법에 대한 예는 Rights Management 공유 응용 프로그램 사용자 가이드에서 다음 섹션을 참조하세요.
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [원하는 옵션을 선택하](sharing-app-user-guide.md#what-do-you-want-to-do)세요.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

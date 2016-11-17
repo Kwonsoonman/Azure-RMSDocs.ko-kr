@@ -1,6 +1,8 @@
 ---
 title: "기본 정책 | Azure Information Protection"
 description: "Azure Information Protection에 대한 기본 정책을 구성하는 방법을 설명합니다. 기본 정책을 수정하는 경우 이러한 값을 참조하여 정책을 기본값으로 반환할 수 있습니다."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/04/2016
 ms.topic: article

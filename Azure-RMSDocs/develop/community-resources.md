@@ -3,6 +3,7 @@ title: "커뮤니티 리소스 | Azure RMS"
 description: "여러 플랫폼에서 AD RMS를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: dab2d84371cd2c45af617898f1694f99128551d9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cd203a651362564e2f2275051f61f86b3bee6703
 
 
 ---
 
-# 커뮤니티 리소스
+# <a name="community-resources"></a>커뮤니티 리소스
 
 여러 플랫폼에서 Active Directory Rights Management Services를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다.
 
-## AD RMS 커뮤니티 리소스
+## <a name="ad-rms-community-resources"></a>AD RMS 커뮤니티 리소스
 
 [RMS 개발자 코너(블로그)](http://blogs.msdn.com/b/rms/)는 정보 보호 개발자를 위한 활성 허브입니다.
 
@@ -50,6 +51,6 @@ Microsoft Connect에 등록하지 않은 경우 다음을 수행합니다.
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

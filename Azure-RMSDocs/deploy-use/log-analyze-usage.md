@@ -2,6 +2,7 @@
 title: "Azure Rights Management 서비스의 사용 현황 로깅 및 분석 | Azure Information Protection"
 description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 사용하는 방법에 대한 정보와 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article

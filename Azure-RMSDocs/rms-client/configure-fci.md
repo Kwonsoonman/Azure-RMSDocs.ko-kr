@@ -2,6 +2,7 @@
 title: "Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호 | Azure Information Protection"
 description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하는 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2016
 ms.topic: article

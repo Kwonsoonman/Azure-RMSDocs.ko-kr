@@ -1,6 +1,8 @@
 ---
 title: "Azure Information Protection 클라이언트 설치 | Azure Information Protection"
 description: "문서와 메일용 분류 레이블을 선택할 수 있도록 Office 응용 프로그램에 Information Protection 표시줄을 추가하는 클라이언트를 설치하는 지침을 제공합니다."
+author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/01/2016
 ms.topic: article

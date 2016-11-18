@@ -2,6 +2,7 @@
 title: "Azure Rights Management용 Windows PowerShell 설치 | Azure Information Protection"
 description: "Azure Information Protection의 Azure Rights Management 서비스용 Windows PowerShell 설치 지침 이 모듈의 이름은 AADRM입니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: c114059e99f3caed4fa5e2c48fe0428cb5847f68
 
 
 ---
 
-# Azure 권한 관리용 Windows PowerShell 설치
+# <a name="installing-windows-powershell-for-azure-rights-management"></a>Azure 권한 관리용 Windows PowerShell 설치
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -26,7 +27,7 @@ ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
 
 인터넷에 연결되어 있고 다음 섹션에 나열된 필수 구성 요소를 충족하는 컴퓨터를 사용하여 명령줄에서 Azure Rights Management 서비스를 관리하는 데 이 PowerShell 모듈을 사용할 수 있습니다. [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell은 자동화용 스크립팅을 지원하거나 고급 구성 시나리오에 필요할 수 있습니다. 모듈에서 지원하는 관리 작업 및 구성에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](administer-powershell.md)를 참조하세요.
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>필수 구성 요소
 아래 표에는 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell을 설치 및 사용하기 위한 필수 조건이 나와 있습니다.
 
 |요구 사항|추가 정보|
@@ -41,7 +42,7 @@ ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
 > 이전 버전의 Rights Management 관리 모듈이 설치되어 있는 경우 **프로그램 및 기능**을 사용하여 **Windows Azure AD Rights Management 관리**를 제거한 후 최신 버전을 설치하세요.
 
 
-## Rights Management 관리 모듈을 설치하는 방법
+## <a name="how-to-install-the-rights-management-administration-module"></a>Rights Management 관리 모듈을 설치하는 방법
 
 1.  Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 관리 모듈이 포함된 [Azure Rights Management 관리 도구를 다운로드](https://go.microsoft.com/fwlink/?LinkId=257721)합니다.
 
@@ -51,7 +52,7 @@ ms.openlocfilehash: 97c53d92755ebcadee7de2e32750c00b285224dd
 
 이제 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell이 설치되었습니다.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 사용 가능한 cmdlet를 확인하려면 **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell을 시작하고 다음 명령을 입력합니다.
 
 ```
@@ -70,11 +71,11 @@ Get-Command -Module aadrm
 > [!NOTE]
 > Azure Rights Management 서비스가 아직 활성화하지 않은 경우 서비스에 연결한 후에 [Enable-Aadrm](https://msdn.microsoft.com/library/windowsazure/dn629412.aspx) cmdlet을 사용하여 활성화할 수 있습니다.
 
-## 참고 항목
-[Windows PowerShell을 사용하여 Azure 권한 관리 관리](administer-powershell.md)
+## <a name="see-also"></a>참고 항목
+[Windows PowerShell을 사용하여 Azure Rights Management 관리](administer-powershell.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

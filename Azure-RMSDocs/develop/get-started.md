@@ -3,6 +3,7 @@ title: "시작 | Azure RMS"
 description: "첫 번째 응용 프로그램의 빠른 시작 가이드는 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 통해 제공됩니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 6e05b2c7444b5440d80bf5c4764b5ada554bbdc7
 
 
 ---
 
-# 시작
+# <a name="get-started"></a>시작
 
 이 릴리스의 Microsoft Rights Management SDK 4.2에서 첫 번째 응용 프로그램에 빠른 시작 접근 방식은 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 사용합니다. 먼저 다음을 수행하여 권한 사용 응용 프로그램을 만듭니다.
 
@@ -56,6 +57,6 @@ ms.openlocfilehash: d4373ed4a0909c5c0c4dceb51f98ace1977cb6f7
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

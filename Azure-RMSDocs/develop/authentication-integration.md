@@ -3,8 +3,9 @@ title: "Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 �
 description: "RMS 사용 응용 프로그램에 대한 사용자 인증의 기본 사항에 대해 설명합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,48 +15,48 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 2f4e0d1990362ab50d90b1a31c3b5db45d2fcdd1
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 96bf5f830c09bb6b2dd781e749a6ee6eaffdba31
 
 
 ---
 
-# Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법
+# <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법
 
 이 항목에서는 Azure 포털을 통해 앱을 등록하고 RMS를 사용하도록 설정하는 기본적인 방법과 Azure ADAL(Active Directory Authentication Library)을 통한 사용자 인증 방법을 안내합니다.
 
-## 사용자 인증이란?
+## <a name="what-is-user-authentication"></a>사용자 인증이란?
 사용자 인증은 장치 앱과 RMS 인프라 간의 통신을 설정하기 위한 필수 단계입니다. 이 인증 프로세스에서는 현재 사용자 및 인증 요청에 관한 주요 정보가 필요한 표준 OAuth 2.0 프로토콜을 사용합니다.
 
-## Azure 포털을 통해 등록
+## <a name="registration-via-azure-portal"></a>Azure 포털을 통해 등록
 Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)부터 수행합니다. 나중에 사용할 수 있도록 이 프로세스에서 **클라이언트 ID** 및 **리디렉션 URI**를 복사하여 저장해야 합니다.
 
-## RMLA(권한 관리 사용권 계약) 완료
+## <a name="complete-your-rights-managagment-license-agreement-rmla"></a>RMLA(권한 관리 사용권 계약) 완료
 응용 프로그램을 배포하려면 먼저 Microsoft Rights Management 팀과 RMLA를 완료해야 합니다. 자세한 내용은 [프로덕션 환경에 배포 - 프로덕션 사용권 계약 요청](deploying-your-application.md) 항목의 첫 번째 섹션을 참조하세요.
 
-## 앱에 대한 사용자 인증 구현
+## <a name="implement-user-authentication-for-your-app"></a>앱에 대한 사용자 인증 구현
 각 RMS API에는 사용자 인증을 사용하기 위해 구현해야 하는 콜백이 있습니다. 그러면 액세스 토큰을 제공하지 않거나, 액세스 토큰을 새로 고쳐야 하거나, 액세스 토큰이 만료된 경우 RMS SDK 4.2에서 인증 콜백 구현을 사용합니다.
 
-- Android - [AuthenticationRequestCallback](/information-protection/sdk/4.2/api/android/com.microsoft.rightsmanagement#msipcthin2_authenticationrequestcallback_interface_java) 및 [AuthenticationCompletionCallback](/information-protection/sdk/4.2/api/android/authenticationcompletioncallback#msipcthin2_authenticationcompletioncallback_interface_java) 인터페이스.
-- iOS / OS X -  [MSAuthenticationCallback](/information-protection/sdk/4.2/api/iOS/iOS#msipcthin2_msauthenticationcallback_protocol_objc) 프로토콜.
--  Windows Phone / Window RT -  [IAuthenticationCallback](/information-protection/sdk/4.2/api/winrt/Microsoft.RightsManagement#msipcthin2_iauthenticationcallback) 인터페이스.
+- Android - [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) 및 [AuthenticationCompletionCallback](https://msdn.microsoft.com/library/dn758250.aspx) 인터페이스.
+- iOS / OS X -  [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 프로토콜.
+-  Windows Phone / Window RT -  [IAuthenticationCallback](https://msdn.microsoft.com/library/microsoft.rightsmanagement.iauthenticationcallback.aspx) 인터페이스.
 - Linux -  [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 인터페이스.
 
-### 인증에 사용할 라이브러리
+### <a name="what-library-to-use-for-authentication"></a>인증에 사용할 라이브러리
 인증 콜백을 구현하려면 적절한 라이브러리를 다운로드하고 해당 라이브러리를 사용하도록 개발 환경을 구성해야 합니다. GitHub에서 이러한 플랫폼에 대한 ADAL 라이브러리를 찾을 수 있습니다.
 
 다음 리소스에는 각각 환경을 설정하고 라이브러리를 사용하는 지침이 포함되어 있습니다.
 
--   [iOS용 Microsoft Azure ADAL(Active Directory 인증 라이브러리)](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/)
--   [Mac용 Microsoft Azure ADAL(Active Directory 인증 라이브러리)](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/)
--   [Android용 Microsoft Azure ADAL(Active Directory 인증 라이브러리)](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)
--   [dotnet용 Microsoft Azure ADAL(Active Directory 인증 라이브러리)](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)
+-   [Microsoft Azure Active Directory Authentication Library (ADAL) for iOS](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/)(iOS용 Microsoft Azure ADAL(Active Directory 인증 라이브러리))
+-   [Microsoft Azure Active Directory Authentication Library (ADAL) for Mac](https://github.com/MSOpenTech/azure-activedirectory-library-for-ios/)(Mac용 Microsoft Azure ADAL(Active Directory 인증 라이브러리))
+-   [Microsoft Azure Active Directory Authentication Library (ADAL) for Android](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)(Android용 Microsoft Azure ADAL(Active Directory 인증 라이브러리))
+-   [Microsoft Azure Active Directory Authentication Library (ADAL) for dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)(dotnet용 Microsoft Azure ADAL(Active Directory 인증 라이브러리))
 -   Linux SDK의 경우 [Github](https://github.com/AzureAD/rms-sdk-for-cpp)를 통해 제공되는 SDK 원본과 함께 ADAL 라이브러리가 패키징되어 있습니다.
 
 >[!NOTE]  
 > ADAL 중 하나를 사용할 것을 권장하지만, 다른 인증 라이브러리를 사용할 수도 있습니다.
 
-### 인증 매개 변수
+### <a name="authentication-parameters"></a>인증 매개 변수
 
 ADAL에서 사용자를 Azure RMS(또는 AD RMS)에 인증하려면 여러 가지 정보가 필요합니다. 이러한 정보는 Azure AD 앱에 일반적으로 필요한 표준 OAuth 2.0 매개 변수입니다. 앞에 나열된 해당 Github 리포지토리의 추가 정보 파일에서 ADAL 사용에 대한 최신 지침을 찾을 수 있습니다.
 
@@ -66,7 +67,7 @@ ADAL에서 사용자를 Azure RMS(또는 AD RMS)에 인증하려면 여러 가�
 Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
 - **리디렉션 URI** – 인증 라이브러리에 인증 코드의 URI 대상을 제공합니다. iOS 및 Android에는 특정한 형식이 필요합니다. 이러한 작업은 ADAL의 해당 GitHub 리포지토리에 있는 README 파일에 설명되어 있습니다. Azure 포털을 통해 이전 등록 단계에서 이 값을 가져옵니다.
 
->[!NOTE] 
+>[!NOTE]
 > **범위**는 현재 사용되지 않지만 사용될 수 있으므로 향후 사용을 위해 예약되었습니다.
 
     Android: `msauth://packagename/Base64UrlencodedSignature`
@@ -76,7 +77,7 @@ Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
 >[!NOTE] 
 > 앱이 이러한 지침을 따르지 않으면 Azure RMS 및 Azure AD 워크플로가 실패할 가능성이 크며 Microsoft.com에서 지원되지 않습니다. 또한 프로덕션 앱에서 잘못된 클라이언트 ID를 사용할 경우 RMLA(권한 관리 사용권 계약)를 위반할 수 있습니다.
 
-### 필요한 인증 콜백 구현 모양
+### <a name="what-should-an-authentication-callback-implementation-look-like"></a>필요한 인증 콜백 구현 모양
 **인증 코드 예제** - 이 SDK에는 인증 콜백 사용을 보여 주는 예제 코드가 있습니다. 편의상, 이러한 코드 예제는 여기뿐 아니라 연결된 다음 각 항목에도 표시되어 있습니다.
 
 **Android 사용자 인증** - 자세한 내용은 [Android 코드 예제](android-code.md), 첫 번째 시나리오 "RMS 보호된 파일 사용"의 **2단계**를 참조하세요.
@@ -274,6 +275,6 @@ Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

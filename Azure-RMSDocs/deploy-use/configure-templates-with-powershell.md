@@ -2,6 +2,7 @@
 title: "사용자 지정 템플릿에 대한 PowerShell 참조 | Azure Information Protection"
 description: "권한 관리 템플릿을 만들고 관리하기 위해 Azure 클래식 포털에서 수행할 수 있는 모든 작업은 PowerShell을 사용하여 명령줄에서도 수행할 수 있습니다. 또한 테넌트 간에 템플릿을 복사하거나 다국어 이름/설명 등 템플릿의 복잡한 속성을 대량으로 편집할 수 있도록 템플릿을 내보내고 가져올 수도 있습니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,15 +13,15 @@ ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 3a213388584424871304778f3df36f7d49b370bd
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: aad5bc49b15b32c74352d5c9d6d48cd4f1f3cf9c
 
 
 ---
 
 
 
-# 사용자 지정 템플릿에 대한 PowerShell 참조
+# <a name="powershell-reference-for-custom-templates"></a>사용자 지정 템플릿에 대한 PowerShell 참조
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -55,10 +56,10 @@ ms.openlocfilehash: 3a213388584424871304778f3df36f7d49b370bd
 
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

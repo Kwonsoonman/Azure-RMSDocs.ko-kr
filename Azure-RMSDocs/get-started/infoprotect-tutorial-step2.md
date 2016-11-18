@@ -2,6 +2,7 @@
 title: "빠른 시작 자습서 1단계 | Azure Information Protection"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 2단계로 약 30분 만에 완료해야 합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: b23022c5fbec3d4f6f19ab5017ecf9badf01a9e7
-ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3c2523119020232b9044506b2d2a602104e81d0b
 
 
 ---
 
-# 2단계: Azure Information Protection 정책 구성 및 게시
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
 >*적용 대상: Azure Information Protection*
 
@@ -39,7 +40,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy.png)
 
-## 맞춤에 대한 기본 템플릿 및 프롬프트 전역 설정 변경
+## <a name="changing-the-global-settings-for-a-default-template-and-prompt-for-justification"></a>맞춤에 대한 기본 템플릿 및 프롬프트 전역 설정 변경
 
 이 자습서에서는 몇 가지 전역 설정의 작동 방식을 확인할 수 있도록 이러한 몇 가지 전역 설정을 변경합니다.
 
@@ -47,7 +48,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 2. **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)에서 **On**(켜기)으로 설정합니다.
 
-## 보호를 위한 레이블, 워터마크 및 분류를 위한 프롬프트 조건 구성
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>보호를 위한 레이블, 워터마크 및 분류를 위한 프롬프트 조건 구성
 
 이제 레이블 중 하나인 **Confidential**(기밀)의 설정을 변경합니다.
 
@@ -121,6 +122,6 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 [3단계 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "SDK 설치 | Azure RMS"
 description: "이 항목에서는 개발자 도구를 설치하는 과정을 안내합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 8ac3478738693cbc8119ee756f2b0ac566661bea
 
 
 ---
 
-# SDK 설치
+# <a name="install-the-sdk"></a>SDK 설치
 
 이 항목에서는 개발자 도구를 설치하는 과정을 안내합니다.
 
-## 지침
+## <a name="instructions"></a>지침
 
-### 개발자 도구 설치
+### <a name="install-the-developer-tools"></a>개발자 도구 설치
 
 1.  Microsoft 다운로드 센터에서 컴퓨터에 해당하는 아키텍처 버전을 선택하여 [권한 관리 서비스 SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)을 다운로드합니다.
 2.  설치 위치에서 설치 관리자 패키지를 실행합니다.
@@ -37,7 +38,7 @@ ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
 
 "setup\_sdk.exe"에 의해 시스템에 설치되는 파일에 대한 자세한 내용은 [개발 환경 파일](sdk-elements.md)을 참조하세요.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [개발 환경 파일](sdk-elements.md)
  
@@ -46,6 +47,6 @@ ms.openlocfilehash: 8a118e4b5174251122a5798b2674d0c6e79017be
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

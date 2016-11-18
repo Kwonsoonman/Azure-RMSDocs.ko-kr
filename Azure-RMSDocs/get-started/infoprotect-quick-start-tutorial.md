@@ -2,6 +2,7 @@
 title: "빠른 시작 자습서 | Azure Information Protection"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서로 약 30분 만에 완료해야 합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/04/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 4f5f7670ce1897a6436e511057fc714c839a8f00
-ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 9f475892d7999fc3ff10a27d11986dec9cfa94cd
 
 
 ---
 
-# Azure Information Protection 빠른 시작 자습서 
+# <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure Information Protection 빠른 시작 자습서 
 
 >*적용 대상: Azure Information Protection*
 
@@ -26,7 +27,7 @@ ms.openlocfilehash: a8c4003d8dbae5d33712860cd1f665de234db5a0
 
 Azure Information Protection을 사용하여 이 자습서를 완료하는 데 문제가 있거나 이에 대한 다른 사용자의 의견을 확인하려면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)를 참조하세요.
 
-## 필수 구성 요소 
+## <a name="prerequisites"></a>필수 구성 요소 
 이 자습서를 완료하려면 다음이 필요합니다.
 
 - 분류, 레이블 지정 및 보호를 위해 Azure Information Protection이 포함된 구독. 이 자습서에는 사용자 권장 사항으로 자동화된 데이터 분류 및 문서 추적 사이트와 같은 고급 기능이 포함되어 있습니다. 구독이 이러한 기능을 지원하는지 확인합니다. 자세한 내용은 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 확인하세요.
@@ -51,6 +52,6 @@ Azure Information Protection을 사용하여 이 자습서를 완료하는 데 �
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

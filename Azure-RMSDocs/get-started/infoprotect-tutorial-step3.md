@@ -2,6 +2,7 @@
 title: "빠른 시작 자습서 3단계 | Azure Information Protection"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 3단계로 약 30분 만에 완료해야 합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: b5c87669c965d1e67b47dcfbd8ba97f1da41d104
-ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 496f086d4db43a69ef0acca579b290286a5b9e5b
 
 
 ---
 
-# 3단계: 클라이언트 및 응용 프로그램 설치 
+# <a name="step-3-install-the-client-and-application"></a>3단계: 클라이언트 및 응용 프로그램 설치 
 
 >*적용 대상: Azure Information Protection*
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
 두 설치 모두 Office 응용 프로그램과 통합되며, 현재 설치는 개별적으로 해야 합니다.
 
 
-## Azure Information Protection 클라이언트 설치
+## <a name="install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 설치
 
 1. Office가 설치된(그러나 Word는 현재 열려 있지 않은) PC에서 Microsoft 다운로드 센터로부터 [Azure Information Protection 클라이언트를 다운로드](https://www.microsoft.com/en-us/download/details.aspx?id=53018)합니다. 
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
 
     이 자습서에서는 방금 구성한 정책이 Azure에서 다운로드되고 설치된 경우 데모 정책을 바꿀 것이므로 데모 정책 설치 옵션의 선택 여부는 중요하지 않습니다. 그러나 Azure Information Protection에 연결하지 않고 기본 레이블을 경험해 보려는 경우 데모 정책 옵션을 사용할 수 있습니다. 
 
-## Rights Management 공유 응용 프로그램 설치 
+## <a name="install-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램 설치 
 
 1. Microsoft 웹 사이트의 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
 
@@ -44,7 +45,7 @@ ms.openlocfilehash: 042e168452d2b5cbc1eeec4fc06a3b0f137a5caf
 3. **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료될 때까지 기다립니다. 그런 다음 컴퓨터를 다시 시작하라는 메시지가 표시되면 **다시 시작**을 클릭하거나, **닫기**를 클릭하여 설치를 완료합니다.
 
 
-## 설치 확인
+## <a name="verify-the-installations"></a>설치 확인
 
 Word와 새 빈 문서를 열어 설치가 완료되었는지 확인합니다(이번에는 저장하지 않음). 사용자 이름과 암호를 입력하라는 메시지가 표시되면 전역 관리자 계정의 세부 정보를 입력합니다. 
 
@@ -74,6 +75,6 @@ Word와 새 빈 문서를 열어 설치가 완료되었는지 확인합니다(�
 [4단계 &#187;](infoprotect-tutorial-step4.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "지원되는 파일 형식 | Azure RMS"
 description: "현재 버전의 파일 API는 MS Office 파일, PDF 및 다른 모든 파일 형식의 PFile 보호에 대한 기본 보호를 지원합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f5fa3082e407e207f33f041d22661888a13566b2
 
 
 ---
 
-# 지원되는 파일 형식
+# <a name="supported-file-formats"></a>지원되는 파일 형식
 
 파일 API는 네이티브 형식과 Pfile 형식을 지원합니다.
 
-## 지원되는 파일 형식
+## <a name="supported-file-formats"></a>지원되는 파일 형식
 
 현재 버전의 파일 API는 Microsoft Office 파일, PDF(Portable Document Files) 및 다른 모든 파일 형식의 PFile 보호에 대한 기본 보호를 지원합니다. 선택적으로 PDF 파일에 PFile 보호를 적용할 수 있습니다.
 
@@ -33,7 +34,7 @@ ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
 
 관리자는 레지스트리 키를 설정하여 파일 이름 확장명에 따라 파일을 보호할지 여부와 방법을 구성할 수 있습니다. 파일 API를 사용하는 경우 파일 보호를 구성하는 방법에 대한 자세한 내용은 [파일 API 구성](file-api-configuration.md)을 참조하세요.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [개발자 노트](developer-notes.md)
 * [파일 API 구성](file-api-configuration.md)
@@ -43,6 +44,6 @@ ms.openlocfilehash: 0baa6a5ceeba8ae2e276ffe09edb54060671d8be
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

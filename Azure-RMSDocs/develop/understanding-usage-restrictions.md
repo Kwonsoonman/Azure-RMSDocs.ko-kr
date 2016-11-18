@@ -3,6 +3,7 @@ title: "사용 제한 이해 | Azure RMS"
 description: "모든 RMS 사용 응용 프로그램은 사용 제한을 적용해야 합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cb33a6c784a9b7efca0780771e764b984b51fedd
-ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cc383728d487cac45e59ef34ca43ba47c4db237b
 
 
 ---
 
-# 사용 제한 이해
+# <a name="understanding-usage-restrictions"></a>사용 제한 이해
 
 모든 RMS 사용 응용 프로그램은 사용 제한을 적용해야 합니다. 사용 제한은 사용자가 작업(예: 문서 인쇄)을 수행하려고 하지만 해당 문서에 대한 RMS 정책에서 이 작업을 수행할 수 있는 권한(예: PRINT 권한)을 부여하지 않을 경우 발생하는 조건입니다.
 
 [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)함수를 사용하여 문서에 대한 사용자 권한을 쿼리할 수 있습니다.
 
-## 사용 제한 이해
+## <a name="understanding-usage-restrictions"></a>사용 제한 이해
 
 -   표준 RMS 권한 익히기
 
@@ -46,7 +47,7 @@ ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
 
     특정 권한을 적용하는 방법에 대한 지침은 [사용 제한 참조](usage-restriction-reference.md)를 참조하세요.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [IpcAccessCheck](https://msdn.microsoft.com/library/hh535253.aspx)
 * [사용 제한 참조](usage-restriction-reference.md)
@@ -56,6 +57,6 @@ ms.openlocfilehash: 3141c4131d83e043e987546900d433e43ee4c946
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

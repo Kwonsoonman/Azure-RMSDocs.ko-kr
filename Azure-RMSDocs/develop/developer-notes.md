@@ -3,6 +3,7 @@ title: "개발자 지침 및 정보 | Azure RMS"
 description: "이 항목에서는 중요한 여러 개발 시나리오에 대한 특정 지침을 제공합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/18/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 593b8b505b8bd241c301c95ee6280f93f14901b9
-ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 93ed9760d79f2f38d4bee302ebb5c7c6368b1bbe
 
 
 ---
 
-# 개발자 지침 및 정보
+# <a name="developer-guidance-and-information"></a>개발자 지침 및 정보
 
 이 섹션에서는 이 SDK를 사용하여 개발하는 방법에 대한 일반 정보뿐만 아니라 몇 가지 중요한 개발 시나리오에 대한 구체적인 지침을 다룹니다. 이 섹션의 시나리오는 이 릴리스의 권한 관리 서비스 SDK 2.1에만 해당하며, 후속 릴리스에서 변경될 수 있습니다.
 - [방법: ADAL 인증 사용](how-to-use-adal-authentication.md) -Azure ADAL(Active Directory 인증 라이브러리)을 사용하여 Azure RMS에서 앱을 인증합니다.
@@ -40,7 +41,7 @@ ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
 - [사용 제한 참조](usage-restriction-reference.md) - 사용 제한은 이 항목에 나열된 상수로 정의됩니다.
 
  
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 * [개요](ad-rms-overview.md)
  
 
@@ -48,6 +49,6 @@ ms.openlocfilehash: 54ce450600b2a10e6889d2684ce26c9da9f9167e
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

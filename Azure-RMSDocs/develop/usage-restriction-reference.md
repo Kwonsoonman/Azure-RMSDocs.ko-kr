@@ -3,6 +3,7 @@ title: "사용 제한 참조 | Azure RMS"
 description: "사용 제한은 이 항목에 나열된 상수에 의해 정의됩니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
-ms.openlocfilehash: e9cc23d220408faf0e010debb1b6cab0c9dc58ba
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f4767c81c246ec6ba53992b9b8e3375e8e02723d
 
 
 ---
 
-# 사용 제한 참조
+# <a name="usage-restriction-reference"></a>사용 제한 참조
 
 사용 제한은 이 항목에 나열된 상수에 의해 정의됩니다.
 
@@ -49,6 +50,6 @@ AD RMS 권한 열에 나열된 각 사용자 권한에는 설명, 적용 지점 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

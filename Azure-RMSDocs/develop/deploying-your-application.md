@@ -3,6 +3,7 @@ title: "응용 프로그램 배포 | Azure RMS"
 description: "이 항목에서는 권한 사용 응용 프로그램에 대한 배포 옵션을 간략하게 설명하고 안내합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,18 +15,18 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44e90a1de74d62469bd8a99a2d49d1e57d2d0f62
-ms.openlocfilehash: e1bc56fc108101d0af833a84ba52821c8b18736d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f565294366bdfd06be7fc25ef781eb4900929484
 
 
 ---
 
-# 프로덕션 환경에 배포
+# <a name="deploy-into-production"></a>프로덕션 환경에 배포
 
 
 이 항목에서는 권한 사용 응용 프로그램에 대한 배포 옵션을 간략하게 설명하고 안내합니다.
 
-## 프로덕션 사용권 계약 요청
+## <a name="request-a-production-license-agreement"></a>프로덕션 사용권 계약 요청
 
  권한 관리 서비스 SDK 2.1을 사용하여 개발한 응용 프로그램을 릴리스하려면 먼저 프로덕션 사용권 계약을 신청하여 프로덕션 인증서를 얻어야 합니다.
 
@@ -63,11 +64,11 @@ ADRMLA(Active Directory Rights Management 사용권 계약) 팀은 메일로 전
 ADRMLA 팀으로부터 받은 지침을 따라야 합니다. 지침에는 인증서 요청을 이행하는 데 필요한 디지털 정보 항목이 나와 있습니다. 단계별 지침을 따르면 지연이 줄어듭니다.
 
 
-## Rights Management Service Client 2.1의 설치 옵션 및 요구 사항
+## <a name="installation-options-and-requirements-for-rights-management-service-client-21"></a>Rights Management Service Client 2.1의 설치 옵션 및 요구 사항
 
 RMS SDK 2.1을 활용했다고 가정할 경우 최종 사용자 컴퓨터에 Active Directory Rights Management Service 클라이언트 2.1을 배포해야 합니다.
 
-### RMS Client 2.1
+### <a name="rms-client-21"></a>RMS Client 2.1
 
 RMS Client 2.1은 온-프레미스 또는 Microsoft 데이터 센터에 설치되어 있는지와 관계없이 RMS를 사용하는 응용 프로그램을 통과하는 정보에 대한 액세스 및 사용을 보호하도록 설계된 클라이언트 컴퓨터용 소프트웨어입니다.
 
@@ -78,9 +79,9 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
 > AD RMS 클라이언트 2.1은 아키텍처와 관련이 있으며, 대상 운영 체제의 아키텍처와 일치해야 합니다.
 
 
-## RMS Client 2.1 설치 옵션
+## <a name="rms-client-21-installation-choices"></a>RMS Client 2.1 설치 옵션
 
--   **RMS Client 2.1 재배포**
+-   **RMS 클라이언트 2.1 재배포**
 
     원하는 설치 기술을 사용하여 RMS 클라이언트 설치 관리자 패키지와 응용 프로그램 또는 솔루션을 번들로 묶는 것이 좋습니다. RMS 클라이언트는 다른 응용 프로그램 및 IT 솔루션과 함께 무료로 재배포 및 번들될 수 있습니다.
 
@@ -99,7 +100,7 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
 
     클라이언트가 있을 경우 응용 프로그램 설치를 계속합니다.
 
-## 응용 프로그램에서 Azure 권한 관리 서비스 사용
+## <a name="enabling-azure-rights-management-services-with-your-application"></a>응용 프로그램에서 Azure 권한 관리 서비스 사용
 
 > [!NOTE]
 > 새 ADAL 인증 모델로 마이그레이션한 경우에는 SIA를 설치할 필요가 없습니다. 자세한 내용은 [ADAL authentication for your RMS enabled application](adal-auth.md)(RMS 사용 응용 프로그램에 대한 ADAL 인증) 항목을 참조하세요.
@@ -119,7 +120,7 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
 
 응용 프로그램이 Azure 권한 관리 서비스에 RMS를 사용할 수 있도록 설정하는 방법에 대한 자세한 내용은 [응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [Microsoft Online Services 로그인 도우미](http://www.microsoft.com/en-us/download/details.aspx?id=28177)
 * [Rights Management 구성](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)
@@ -130,6 +131,6 @@ RMS Client 2.1은 Windows 운영 체제 구성 요소가 아닙니다. RMS Clien
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

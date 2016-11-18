@@ -2,6 +2,7 @@
 title: "Azure Information Protection에서 사용되는 용어 | Azure Information Protection"
 description: "Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가 헷갈리시나요? Azure Information Protection에 관련이 있거나 이 서비스 컨텍스트에서 사용될 때 특정 의미를 지니는 용어 및 약어의 정의를 여기서 확인해 보세요."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 2ff8c6587d5e6136053cedb77005b4212606a85c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
 
 
 ---
 
-# Azure Information Protection에 사용되는 용어
+# <a name="terminology-for-azure-information-protection"></a>Azure Information Protection에 사용되는 용어
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -73,6 +74,6 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

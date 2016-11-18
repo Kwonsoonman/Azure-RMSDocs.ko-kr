@@ -2,6 +2,7 @@
 title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 1단계 | Azure Information Protection"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 첫 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 1~4단계가 포함됩니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,20 +13,20 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d7e21c2bb07e82bc243e5ab01c0a21aa0fe274d1
-ms.openlocfilehash: 79daf0aec75aa16884b5b395a836cfac566ce13d
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
 
 
 ---
 
-# 마이그레이션 1단계 - AD RMS에 대한 서버 쪽 구성
+# <a name="migration-phase-1-serverside-configuration-for-ad-rms"></a>마이그레이션 1단계 - AD RMS에 대한 서버 쪽 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
 AD RMS에서 Azure Information Protection으로 마이그레이션 1단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 1-4단계를 설명합니다.
 
 
-## 1단계: Azure 권한 관리의 관리 도구 다운로드
+## <a name="step-1-download-the-azure-rights-management-administration-tool"></a>1단계: Azure 권한 관리의 관리 도구 다운로드
 Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights Management 관리 모듈이 포함된 [Azure Rights Management 관리 도구](https://go.microsoft.com/fwlink/?LinkId=257721)를 다운로드합니다. Azure RMS(Azure Rights Management)는 Azure Information Protection에 대한 데이터 보호를 제공하는 서비스입니다.
 
 도구를 설치합니다. 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
@@ -33,14 +34,14 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
 > [!NOTE]
 > 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 2.5.0.0 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version`
 
-## 2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure Information Protection으로 가져오기
+## <a name="step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection"></a>2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure Information Protection으로 가져오기
 이 단계는 다음의 두 부분으로 이루어진 프로세스입니다.
 
 1.  TPD(트러스트된 게시 도메인)를 .xml 파일로 내보내 AD RMS에서 구성 데이터를 내보냅니다. 이 프로세스는 모든 마이그레이션에서 동일합니다.
 
 2.  구성 데이터를 Azure Information Protection으로 가져오기 현재 AD RMS 배포 구성 및 Azure RMS 테넌트 키에 대한 기본 설정 토폴로지에 따라 이 단계의 프로세스가 다를 수 있습니다.
 
-### AD RMS에서 구성 데이터 내보내기
+### <a name="export-the-configuration-data-from-ad-rms"></a>AD RMS에서 구성 데이터 내보내기
 
 > [!IMPORTANT]
 > 이 절차를 수행하기 전에 먼저 AD RMS 서버가 Azure Information Protection에 대한 요구 사항인 암호화 모드 2에서 실행 중인지 확인합니다.
@@ -56,7 +57,7 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
 
 조직에 대해 보호된 콘텐츠가 있는 트러스트된 모든 게시 도메인에 대해 모든 AD RMS 클러스터에서 다음 절차를 수행합니다. 라이선스 전용 클러스터에서는 이 작업을 수행할 필요가 없습니다.
 
-#### 구성 데이터(트러스트된 게시 도메인 정보)를 내보내려면
+#### <a name="to-export-the-configuration-data-trusted-publishing-domain-information"></a>구성 데이터(트러스트된 게시 도메인 정보)를 내보내려면
 
 1.  AD RMS 관리 권한이 있는 사용자로 AD RMS 클러스터에 로그온합니다.
 
@@ -74,7 +75,7 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
 
 트러스트된 모든 게시 도메인을 내보낸 경우 이 데이터를 Azure Information Protection으로 가져오는 절차를 시작할 준비가 된 것입니다.
 
-### 구성 데이터를 Azure Information Protection으로 가져오기
+### <a name="import-the-configuration-data-to-azure-information-protection"></a>구성 데이터를 Azure Information Protection으로 가져오기
 이 단계의 정확한 절차는 현재 AD RMS 배포 구성 및 Azure Information Protection 테넌트 키에 대한 기본 설정 토폴로지에 따라 달라집니다.
 
 현재 AD RMS 배포는 SLC(서버 사용 허가자 인증서) 키에 대해 다음 구성 중 하나를 사용합니다.
@@ -118,7 +119,7 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
 - [소프트웨어 보호된 키-HSM 보호된 키](migrate-softwarekey-to-hsmkey.md)
 
 
-## 3단계. Azure Information Protection 테넌트 활성화
+## <a name="step-3-activate-your-azure-information-protection-tenant"></a>3단계: Azure Information Protection 테넌트 활성화
 Rights Management 서비스를 활성화하려면 이 단계가 필요합니다. 지침은 [Azure Rights Management 활성화](../deploy-use/activate-service.md) 문서에 자세히 나와 있습니다.
 
 
@@ -131,7 +132,7 @@ Rights Management 서비스를 활성화하려면 이 단계가 필요합니다.
 
 또한 마이그레이션 후 사용하고 싶은 사용자 지정 템플릿을 만든 경우 이 템플릿을 내보냈다가 가져와야 합니다. 이 절차는 다음 단계에서 다룹니다. 
 
-## 4단계. 가져온 템플릿 구성
+## <a name="step-4-configure-imported-templates"></a>4단계. 가져온 템플릿 구성
 가져온 템플릿의 기본 상태는 **보관됨**이므로 사용자가 Azure Rights Management 서비스에서 이러한 템플릿을 사용할 수 있도록 하려면 이 상태를 **게시됨** 으로 변경해야 합니다.
 
 AD RMS에서 가져오는 템플릿은 Azure 클래식 포털에서 만들 수 있는 사용자 지정 템플릿과 모양 및 동작이 유사합니다. 가져온 템플릿을 사용자가 응용 프로그램에서 보고 선택할 수 있도록 게시하기 위해 변경하려면 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
@@ -144,7 +145,7 @@ AD RMS에서 가져오는 템플릿은 Azure 클래식 포털에서 만들 수 �
 
 - AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우에는 해당 그룹 및 권한을 수동으로 추가해야 합니다.
 
-## 마이그레이션 전에 사용자 지정 템플릿을 만든 경우의 프로시저
+## <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>마이그레이션 전에 사용자 지정 템플릿을 만든 경우의 프로시저
 
 Azure Rights Management 서비스를 활성화하기 전 또는 후, 마이그레이션 전에 사용자 지정 템플릿을 만든 경우에는 템플릿이 **게시됨**으로 설정되었더라도 마이그레이션 후 사용자가 템플릿을 사용할 수 없습니다. 사용자가 사용할 수 있도록 하려면 먼저 다음을 수행해야 합니다. 
 
@@ -157,9 +158,9 @@ Azure Rights Management 서비스를 활성화하기 전 또는 후, 마이그�
 이렇게 하면 마이그레이션 후에 만든 다른 템플릿으로 하듯이 이 템플릿을 게시하거나 보관할 수 있습니다.
 
 
-## AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 프로시저
+## <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 프로시저
 
-AD RMS의 템플릿이 **ANYONE** 그룹을 사용하는 경우 이 그룹은 Azure Information Protection에 템플릿을 가져올 때 자동으로 제거됩니다. 따라서 가져온 템플릿에 해당 그룹 또는 사용자와 동일한 권한을 수동으로 추가해야 합니다. Azure Information Protection에 해당하는 그룹의 이름은 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**입니다. 예를 들어 Contoso에 대한 이 그룹은 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**과 같을 수 있습니다.
+AD RMS의 템플릿이 **ANYONE** 그룹을 사용하는 경우 이 그룹은 Azure Information Protection에 템플릿을 가져올 때 자동으로 제거됩니다. 따라서 가져온 템플릿에 해당 그룹 또는 사용자와 동일한 권한을 수동으로 추가해야 합니다. Azure Information Protection에 해당하는 그룹의 이름은 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@<tenant_name>.onmicrosoft.com**입니다. 예를 들어 이 그룹은 Contoso에 대해 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**과 같을 수 있습니다.
 
 AD RMS 템플릿에 ANYONE 그룹이 포함되어 있는지 여부가 확실하지 않은 경우 다음의 샘플 Windows PowerShell 스크립트를 사용하여 이러한 템플릿을 식별할 수 있습니다. AD RMS와 함께 Windows PowerShell을 사용하는 방법에 대한 자세한 내용은 [Windows PowerShell을 사용하여 AD RMS 관리](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)를 참조하세요.
 
@@ -175,7 +176,7 @@ Azure 클래식 포털에서 기본 권한 정책 템플릿 중 하나를 복사
 > 두 그룹 간의 이러한 차이 때문에 "AllStaff" 그룹뿐 아니라 외부 사용자도 추가해야 할 수 있습니다. 그룹에 대한 외부 전자 메일 주소는 현재 지원되지 않습니다.
 
 
-### ANYONE 그룹을 포함하는 AD RMS 템플릿을 식별하기 위한 샘플 Windows PowerShell 스크립트
+### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>ANYONE 그룹을 포함하는 AD RMS 템플릿을 식별하기 위한 샘플 Windows PowerShell 스크립트
 이 섹션에는 이전 섹션에서 설명한 것과 같이 정의된 ANYONE 그룹이 있는 AD RMS 템플릿을 식별하는 데 도움이 되는 샘플 스크립트가 포함되어 있습니다.
 
 **고지 사항:** 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
@@ -213,12 +214,12 @@ Remove-PSDrive MyRmsAdmin -force
 ```
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 [2단계 - 클라이언트 쪽 구성](migrate-from-ad-rms-phase2.md)으로 이동합니다.
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

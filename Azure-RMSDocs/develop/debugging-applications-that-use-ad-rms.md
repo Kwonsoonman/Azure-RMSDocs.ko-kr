@@ -3,6 +3,7 @@ title: "방법: 권한 사용 응용 프로그램 디버그 | Azure RMS"
 description: "다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: cab6839a1911bb61185f2ef361b2040ac0d38a6e
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 789c93b6d7ac72ebe1df04300f2885ca2aa23a06
 
 
 ---
 
-# 방법: 권한 사용 응용 프로그램 디버그
+# <a name="howto-debug-a-rightsenabled-application"></a>방법: 권한 사용 응용 프로그램 디버그
 
 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
 
-## 응용 프로그램 디버그
+## <a name="debugging-your-application"></a>응용 프로그램 디버그
 
 권한 관리 서비스 SDK 2.1에서는 개발자 버전의 런타임에 있는 디버깅 검사 방지 기능을 사용할 수 없습니다.
 
@@ -41,7 +42,7 @@ HKEY_LOCAL_MACHINE
             dword
 ```
 
-### Windows 이벤트 로그를 사용하는 응용 프로그램 로깅
+### <a name="application-logging-by-using-the-windows-event-log"></a>Windows 이벤트 로그를 사용하는 응용 프로그램 로깅
 
 이벤트 로그의 이름은 "Microsoft-RMS-MSIPC/Debug"입니다. 즉, Windows 이벤트 뷰어에서 로그는 "Application and Services Logs\\Microsoft\\RMS\\MSIPC\\Debug"로 표시됩니다.
 
@@ -67,7 +68,7 @@ Wevtutil 인터페이스를 통해 로그의 세부 정보 표시 수준을 제�
 
  
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
  
 
@@ -75,6 +76,6 @@ Wevtutil 인터페이스를 통해 로그의 세부 정보 표시 수준을 제�
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소 | Azure Information Protection"
 description: "RMS 공유 응용 프로그램을 사용하여 문서를 보호하고 나면 사용자들이 보호된 문서를 사용하는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/04/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 13579b8cb5516a1d7390db81957c140b8e980982
-ms.openlocfilehash: 1cd55e9c6200876a4d9921e3b60eb8fb58845d0c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3b5b19ab2dfdf6b797f55134f3063948dcab33d5
 
 
 ---
 
-# RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소
+# <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소
 
 >*적용 대상: Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
@@ -40,7 +41,7 @@ ms.openlocfilehash: 1cd55e9c6200876a4d9921e3b60eb8fb58845d0c
 
 -   문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [문서 추적 FAQ](http://go.microsoft.com/fwlink/?LinkId=523977)에 액세스합니다.
 
-## Office를 사용하여 문서 추적 사이트 액세스
+## <a name="using-office-to-access-the-document-tracking-site"></a>Office를 사용하여 문서 추적 사이트 액세스
 
 -   Office 응용 프로그램, Word, Excel, PowerPoint의 경우 **홈** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
 
@@ -57,7 +58,7 @@ ms.openlocfilehash: 1cd55e9c6200876a4d9921e3b60eb8fb58845d0c
 > 
 > - Office 응용 프로그램의 **홈** 탭, **보호** 그룹에서 **보호** > **사용 현황 추적**을 클릭합니다. 
 
-### 문서를 추적 및 취소하는 다른 방법
+### <a name="other-ways-to-track-and-revoke-your-documents"></a>문서를 추적 및 취소하는 다른 방법
 Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추적할 수 있을 뿐 아니라 다음과 같은 대체 방법을 사용할 수도 있습니다.
 
 -   **웹 브라우저 사용**: 지원되는 모든 장치에서 사용할 수 있는 방법입니다.
@@ -66,7 +67,7 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 -   **Outlook 전자 메일 메시지 사용**: Windows 컴퓨터에서 사용할 수 있는 방법입니다.
 
-#### 웹 브라우저를 사용하여 문서 추적 사이트 액세스
+#### <a name="using-a-web-browser-to-access-the-doc-tracking-site"></a>웹 브라우저를 사용하여 문서 추적 사이트 액세스
 
 -   지원되는 브라우저를 사용하여 [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다.
 
@@ -82,30 +83,30 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
     -   Google Chrome: 버전 18 이상
 
-#### 파일 탐색기를 사용하여 문서 추적 사이트에 액세스
+#### <a name="using-file-explorer-to-access-the-doc-tracking-site"></a>파일 탐색기를 사용하여 문서 추적 사이트에 액세스
 
 -   파일을 마우스 오른쪽 단추로 클릭하고 **RMS로 보호**를 선택한 다음 **사용량 추적**을 선택합니다.
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 탐색기에서 사용 추적 선택](../media/ADRMS_MSRMSApp_ExplorerTrackUsage.png)
 
-#### Outlook 전자 메일 메시지를 사용하여 문서 추적 사이트에 액세스
+#### <a name="using-an-outlook-email-message-to-access-the-doc-tracking-site"></a>Outlook 전자 메일 메시지를 사용하여 문서 추적 사이트에 액세스
 
 -   전자 메일 메시지의 **메시지** 탭  **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 Outlook에서 사용 추적 선택](../media/ADRMS_MSRMSApp_OutlookMessageTrackUsage.png)
 
-## 예제 및 기타 지침
+## <a name="examples-and-other-instructions"></a>예제 및 기타 지침
 예를 들어 Rights Management 공유 응용 프로그램 및 방법 지침을 사용하는 방법에 대한 예는 Rights Management 공유 응용 프로그램 사용자 가이드에서 다음 섹션을 참조하세요.
 
 -   [RMS 공유 응용 프로그램 사용 예제](sharing-app-user-guide.md#examples-for-using-the-rms-sharing-application)
 
--   [원하는 옵션을 선택하세요.](sharing-app-user-guide.md#what-do-you-want-to-do)
+-   [원하는 옵션을 선택하](sharing-app-user-guide.md#what-do-you-want-to-do)세요.
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

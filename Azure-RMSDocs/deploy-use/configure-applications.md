@@ -2,6 +2,7 @@
 title: "Azure Rights Management 서비스에 대한 응용 프로그램 구성 | Azure Information Protection"
 description: "Azure Information Protection에 대한 Azure Rights Management 보호 서비스를 지원하도록 응용 프로그램 및 서비스를 구성하는 관리자에 대한 지침입니다. Word 2013, Word 2010등의 Office 응용 프로그램과 Exchange Online(전송 규칙, 데이터 손실 방지, 전달 금지, 메시지 암호화) 및 SharePoint Online(보호된 라이브러리) 등의 서비스를 예로 들 수 있습니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9dee9e7c925258ffd3cd9e783582733e9518d3fa
-ms.openlocfilehash: d141bf56515853f7b6fddda1ddf150b8d3730b78
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: c4b510dac964d0703b7eba8266a244f40b83f403
 
 
 ---
 
-# Azure 권한 관리에 대해 응용 프로그램 구성
+# <a name="configuring-applications-for-azure-rights-management"></a>Azure 권한 관리에 대해 응용 프로그램 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -59,7 +60,7 @@ ms.openlocfilehash: d141bf56515853f7b6fddda1ddf150b8d3730b78
 
 이러한 응용 프로그램 및 서비스 외에도 Rights Management API를 지원하는 다른 응용 프로그램이 있습니다. 이 범주에는 Rights Management SDK를 사용하여 내부에서 작성한 LOB(기간 업무) 응용 프로그램과 소프트웨어 공급업체에서 Rights Management SDK를 사용하여 작성한 응용 프로그램이 포함됩니다. 이러한 응용 프로그램의 경우 응용 프로그램과 함께 제공된 지침을 따르세요.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 Azure Rights Management 서비스를 지원하도록 응용 프로그램을 구성한 후에는 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용하여 사용자와 관리자에게 Azure Information Protection을 배포하기 전에 수행할 수 있는 다른 구성 단계가 있는지 확인합니다. 없으면 다음과 같은 운영 정보가 유용할 수도 있습니다.
 
 - [Azure Rights Management 서비스 확인](verify.md)
@@ -74,6 +75,6 @@ Azure Rights Management 서비스를 지원하도록 응용 프로그램을 구�
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "Azure 권한 관리에 대한 사용 권한 구성 | Azure Information Protection"
 description: "Azure Information Protection의 Azure Rights Management 서비스를 사용하여 파일이나 전자 메일을 보호할 때 사용되는 특정 권한을 소개하고 설명합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f17cf257607b0f74ca8bdaef13130da2f62dd587
-ms.openlocfilehash: 0b160fff849b9f8bda71fd6ccf07d8fb07487b13
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
 
 
 ---
 
-# Azure 권한 관리에 대한 사용 권한 구성
+# <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure 권한 관리에 대한 사용 권한 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -26,7 +27,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 이 문서는 사용 중인 응용 프로그램에 대해 원하는 사용 권한을 구성하고 이러한 권한이 응용 프로그램에서 해석되는 방법을 이해하는데 도움이 됩니다.
 
-## 사용 권한 및 설명
+## <a name="usage-rights-and-descriptions"></a>사용 권한 및 설명
 다음 테이블은 Rights Management가 지원하는 사용 권한 및 사용하고 해석되는 방식에 대해 나열하고 설명합니다. 일반적으로 코드에 사용되는 단일 단어 값(**정책에서 인코딩** 값)의 더 친숙한 버전으로 표시되거나 참조된 사용 권한을 확인하는 방식인 **일반 이름**을 기준으로 나열됩니다. **API 상수 또는 값**은 MSIPC API 호출에 대한 SDK 이름이며 사용 권한을 확인하거나 사용 권한을 정책에 추가하는 RMS 지원 응용 프로그램을 작성할 때 사용됩니다.
 
 
@@ -47,7 +48,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 
 
-## 사용 권한 수준에 포함된 권한
+## <a name="rights-included-in-permissions-levels"></a>사용 권한 수준에 포함된 권한
 
 일부 응용 프로그램은 사용 권한을 사용 권한 수준과 그룹화하여 일반적으로 함께 사용되는 사용 권한을 보다 수비게 선택할 수 있도록 합니다. 이러한 사용 권한 수준은 역할 기반의 옵션을 선택할 수 있는 보다 간단한 수준을 제시합니다.  예를 들어 **검토자** 및 **공동 작성자**가 있습니다. 이러한 옵션은 사용자에게 권한을 요약해서 표시하므로 앞에 나온 표에 제공된 모든 권한을 포함하지는 않을 수 있습니다.
 
@@ -62,10 +63,10 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 ----
 
-###### 각주 1
+###### <a name="footnote-1"></a>각주 1
 Windows용 Rights Management 공유 응용 프로그램에 해당되지 않음
 
-## 기본 템플릿에 포함된 권한
+## <a name="rights-included-in-the-default-templates"></a>기본 템플릿에 포함된 권한
 기본 템플릿에 포함된 권한은 다음과 같습니다.
 
 |표시 이름|포함된 권한(일반 이름)|
@@ -73,7 +74,7 @@ Windows용 Rights Management 공유 응용 프로그램에 해당되지 않음
 |&lt;*조직 이름*&gt; *- 기밀 보기 전용*|보기, 열기, 읽기|
 |&lt;*조직 이름*&gt; *- 기밀*|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 권한 보기, 매크로 허용, 전달, 회신, 전체 회신|
 
-## 메일에 대한 전달 금지 옵션
+## <a name="do-not-forward-option-for-emails"></a>메일에 대한 전달 금지 옵션
 
 Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web Access 앱 및 Exchange 전송 규칙)에는 메일에 대한 추가 정보 권한 보호 옵션인 **전달 금지**가 있습니다. 
 
@@ -95,12 +96,12 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

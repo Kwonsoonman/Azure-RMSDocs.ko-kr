@@ -2,6 +2,7 @@
 title: "RMS 커넥터에 대한 레지스트리 설정 | Azure Information Protection"
 description: "RMS 커넥터를 사용하는 서버의 레지스트리 설정에 대한 정보를 제공합니다. 이러한 설정을 구성할 때는 Microsoft RMS 커넥터용 서버 구성 도구를 사용하는 것이 좋습니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 1dd1b26735732f4bef8cf73a566b0f26b7610a82
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: a0132404bb9ccb202c552aaca680659947d9c888
 
 
 ---
 
 
-# Rights Management 커넥터에 대한 레지스트리 설정
+# <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 커넥터에 대한 레지스트리 설정
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -45,7 +46,7 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 -   온-프레미스 서버와 통신하는 데 HTTPS를 사용하도록 커넥터를 구성한 경우 커넥터 URL에 HTTPS 접두사를 사용합니다. 자세한 내용은 기본 지침의 [HTTPS를 사용하도록 RMS 커넥터 구성](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https) 섹션을 참조하세요. Microsoft RMS URL에는 항상 HTTPS가 사용됩니다.
 
 
-## Exchange 2016 또는 Exchange 2013 레지스트리 설정
+## <a name="exchange-2016-or-exchange-2013-registry-settings"></a>Exchange 2016 또는 Exchange 2013 레지스트리 설정
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
@@ -96,7 +97,7 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 - https://*ConnectorFQDN*
 
 
-## Exchange 2010 레지스트리 설정
+## <a name="exchange-2010-registry-settings"></a>Exchange 2010 레지스트리 설정
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
@@ -145,7 +146,7 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 - https://*ConnectorFQDN*
 
 
-## SharePoint 2016 또는 SharePoint 2013 레지스트리 설정
+## <a name="sharepoint-2016-or-sharepoint-2013-registry-settings"></a>SharePoint 2016 또는 SharePoint 2013 레지스트리 설정
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
 
@@ -192,7 +193,7 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 
 
-## 파일 서버 및 파일 분류 인프라 레지스트리 설정
+## <a name="file-server-and-file-classification-infrastructure-registry-settings"></a>파일 서버 및 파일 분류 인프라 레지스트리 설정
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
@@ -216,6 +217,6 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)로 돌아갑니다.
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "Azure Rights Management 서비스용 사용자 지정 템플릿 구성 | Azure Information Protection"
 description: "관리자가 사용 권한 템플릿을 구성하고 관리하는 방법 및 해당 지침을 제공합니다. 최종 사용자와 기타 관리자는 템플릿을 통해 권한이 있는 사용자만 액세스할 수 있도록 제한된 정책을 중요한 파일에 쉽게 적용할 수 있습니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: d8db7f0346fad1b9c46423875d1e559d41987686
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
 
 
 ---
 
-# Azure Rights Management 서비스용 사용자 지정 템플릿 구성
+# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Azure Rights Management 서비스용 사용자 지정 템플릿 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -66,6 +67,6 @@ Azure Rights Management 서비스를 [활성화](activate-service.md)하면 액�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

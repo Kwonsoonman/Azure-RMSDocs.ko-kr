@@ -2,6 +2,7 @@
 title: "시나리오 - 가장 중요한(소수) 파일 보호 | Azure Information Protection"
 description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
-ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
 
 
 ---
 
-# 시나리오 - 가장 중요한(소수) 파일 보호
+# <a name="scenario-secure-your-most-few-valuable-files"></a>시나리오 - 가장 중요한(소수) 파일 보호
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -38,12 +39,12 @@ ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 -   관리자가 파일에 액세스할 수 있는 사용자와 시기를 추적하고 필요한 경우 액세스 권한을 취소할 수 있어야 하는 경우
 
-## 배포 지침
+## <a name="deployment-instructions"></a>배포 지침
 ![Azure RMS 빠른 배포를 위한 관리자 지침](../media/AzRMS_AdminBanner.png)
 
 사용자 문서를 진행하기 전에 다음 요구 사항이 충족되었는지 확인한 다음 지원 절차에 대한 지침을 따르세요.
 
-## 이 시나리오의 요구 사항
+## <a name="requirements-for-this-scenario"></a>이 시나리오의 요구 사항
 이 시나리오의 경우 다음 사항을 준비해야 합니다.
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
@@ -51,11 +52,11 @@ ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 |Office 365 또는 Azure Active Directory용 계정과 그룹을 준비했는지 여부<br /><br />- 기밀 문서에 액세스할 수 있어야 하는 소수의 사용자가 포함된 **Privileged access**라는 메일 사용이 가능한 그룹<br /><br />- 작업에 eDiscovery, 모니터링 및 감사가 포함된 사용자를 포함하는 **IT Compliance managers**라는 메일 사용이 가능한 그룹<br /><br />- **RMS administrators**라는 메일 사용이 가능한 그룹이며, Azure RMS를 구성하는 모든 관리자가 이 그룹의 구성원임|[Azure Information Protection 준비](../plan-design/deployment-roadmap.md)|
 |Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](../deploy-use/activate-service.md)|
 |다음에 설명하는 대로 사용자 지정 템플릿을 구성했는지 여부|[Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)|
-|다음 섹션에 설명된 대로 이러한 파일을 바로 보호할 수 있도록 Rights Management 공유 응용 프로그램이 사용자의 Windows 컴퓨터에 배포되었는지 여부|[Rights Management 공유 응용 프로그램 다운로드 및 설치 ](../rms-client/install-sharing-app.md)|
+|다음 섹션에 설명된 대로 이러한 파일을 바로 보호할 수 있도록 Rights Management 공유 응용 프로그램이 사용자의 Windows 컴퓨터에 배포되었는지 여부|[Rights Management 공유 응용 프로그램 다운로드 및 설치](../rms-client/install-sharing-app.md)|
 |권한 있는 사용자에게 최소 Office 2013 이상의 버전이 있는지 여부|사용자에게 Office 2010이 있는 경우 Rights Management 공유 응용 프로그램도 설치해야 합니다.|
 |Azure Information Protection 구독에는 문서 추적이 포함되어 있습니다.|구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 문서 추적 사이트를 사용하여 이러한 문서에 액세스하는 사용자를 확인하고 필요한 경우 액세스 권한을 취소할 수 없습니다. 이 경우 문서 추적 기능을 지원하는 구독을 구입하거나 이러한 제한을 감수합니다. 또한 Azure Rights Management Service의 [사용 현황 로깅](../deploy-use/log-analyze-usage.md) 기능을 사용하는 것이 좋습니다. 이 기능은 각 파일에 액세스한 사용자와 시기 등의 정보를 제공하므로 잠재적으로 의심스러운 행동을 검색하는 데 도움이 됩니다.<br /><br />Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 확인하세요.|
 
-### 사용자 지정 템플릿을 구성하려면
+### <a name="to-configure-the-custom-template"></a>사용자 지정 템플릿을 구성하려면
 
 1.  Azure 클래식 포털에서 다음 값과 설정이 포함된 Azure 권한 관리용 사용자 지정 템플릿을 새로 만듭니다.
 
@@ -69,7 +70,7 @@ ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 2.  새 템플릿을 게시합니다.
 
-### 파일을 바로 보호하려면
+### <a name="to-protect-the-files-inplace"></a>파일을 바로 보호하려면
 
 1.  파일 탐색기에서 보호할 파일이 포함된 첫 번째 폴더로 이동합니다.
 
@@ -90,7 +91,7 @@ ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 > [!TIP]
 > 이 수동 프로세스에서 보호할 파일 수가 너무 많은 경우 [RMS 보호 도구](https://www.microsoft.com/en-us/download/details.aspx?id=47256)를 사용하여 템플릿을 통해 파일을 대량 보호하는 것이 좋습니다.
 
-### 파일 액세스를 모니터링하고 필요한 경우 액세스 권한을 취소하려면
+### <a name="to-monitor-and-if-necessary-revoke-access-to-the-files"></a>파일 액세스를 모니터링하고 필요한 경우 액세스 권한을 취소하려면
 
 1.  파일 탐색기에서 보호된 파일을 마우스 오른쪽 단추로 클릭하고 **RMS로 보호**를 선택한 다음 **사용 현황 추적**을 선택합니다.
 
@@ -98,7 +99,7 @@ ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 3.  파일 및 보호한 다른 파일에 액세스한 사용자를 확인하고 의심스러운 행동을 나타내는 경우 실패한 시도에 특히 주의합니다. 타당한 경우 각 파일에 대한 액세스 권한을 취소할 수 있습니다.
 
-## 사용자 문서 지침
+## <a name="user-documentation-instructions"></a>사용자 문서 지침
 이러한 파일에는 사용자의 특별한 작업이 필요하지 않기 때문에 이 시나리오의 경우 사용자에게 제공할 특정 지침이 없습니다. 직접 파일을 보호했으며 모니터링합니다. 그러나 어떤 파일이 보호되었으며 이로 인해 문서 사용이 어떻게 제한될 수 있는지를 사용자와 지원 채널에 알려야 할 수도 있습니다. 예를 들어 권한 있는 사용자라도 인터넷 연결이 없을 경우 파일을 열 수 없습니다.
 
 다음 템플릿을 사용하여 최종 사용자 통신에 알림을 복사해서 붙여넣고 다음과 같이 수정합니다.
@@ -113,7 +114,7 @@ ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 ![Azure RMS 빠른 배포를 위한 템플릿 사용자용 설명 문서](../media/AzRMS_UsersBanner.png)
 
-### IT 알림: &lt;조직 이름&gt;의 기밀 문서 보호
+### <a name="it-announcement-protecting-ltorganization-namegts-top-secret-documents"></a>IT 알림: &lt;조직 이름&gt;의 기밀 문서 보호
 다음 파일은 &lt;제한된 사용자&gt;만 파일에 액세스하고 변경할 수 있도록 매우 높은 수준의 보호가 적용되어 있습니다. 무단 액세스로부터 파일을 보호하기 위해 파일을 열 때마다 응용 프로그램에서 자동으로 권한 부여를 요청하므로 이제 파일을 열려면 인터넷 연결이 있어야 하며 자격 증명을 묻는 메시지가 표시될 수도 있습니다.
 
 -   &lt;기밀 문서, 형식 또는 위치 1&gt;
@@ -122,14 +123,14 @@ ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 -   &lt;기밀 문서, 형식 또는 위치 3&gt;
 
-**도움이 필요하십니까?**
+**도움이 필요한가요?**
 
 -   이러한 파일에 액세스할 수 없거나 파일에서 의심스러운 변경 내용을 발견하는 경우 &lt;작업 및 연락처 세부 정보&gt;
 
-#### 예제 사용자 지정 사용자 문서
+#### <a name="example-customized-user-documentation"></a>예제 사용자 지정 사용자 문서
 ![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서](../media/AzRMS_ExampleBanner.png)
 
-##### IT 알림: VanArsdel의 기밀 문서 보호
+##### <a name="it-announcement-protecting-vanarsdels-top-secret-documents"></a>IT 알림: VanArsdel의 기밀 문서 보호
 다음 파일은 이 메일 메시지의 받는 사람 줄에 있는 사용자만 파일에 액세스하고 변경할 수 있도록 매우 높은 수준의 보호가 적용되어 있습니다. 무단 액세스로부터 파일을 보호하기 위해 파일을 열 때마다 응용 프로그램에서 자동으로 권한 부여를 요청하므로 이제 파일을 열려면 인터넷 연결이 있어야 하며 자격 증명을 묻는 메시지가 표시될 수도 있습니다.
 
 -   코드 이름 "Mercury"에 대한 디자인 사양
@@ -140,13 +141,13 @@ ms.openlocfilehash: 6687ed42bca5e773d6bbc97285f12e3c91ff9f32
 
 -   코드 이름 "Neptune"에 대한 디자인 사양
 
-**도움이 필요하십니까?**
+**도움이 필요한가요?**
 
 -   이러한 파일에 액세스할 수 없거나 파일에서 의심스러운 변경을 발견하는 경우 IT 부서로부터 보호된 메일 메시지로 받은 24시간 지원 에스컬레이션 회선으로 전화하세요.
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

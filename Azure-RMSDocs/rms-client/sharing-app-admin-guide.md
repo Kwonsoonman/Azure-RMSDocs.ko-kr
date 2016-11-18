@@ -4,7 +4,7 @@ description: "Windows용 Microsoft Rights Management 공유 응용 프로그램 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 11/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 21d25b4b4d476a2396217a0c0635b95d940b92bf
+ms.sourcegitcommit: c9a5bcf46597ee65e2e0f36199f19935f8997048
+ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
 
 
 ---
@@ -342,7 +342,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 3.  테스트를 완료하고 모든 문제를 해결한 후 이 가이드에 나와 있는 자동 배포 지침을 사용하여 모든 사용자에게 최신 버전을 배포합니다.
 
 ## <a name="azure-information-protection-only-configuring-document-tracking"></a>Azure Information Protection만 해당: 문서 추적 기능 구성
-[문서 추적 기능을 지원하는 구독](https://technet.microsoft.com/dn858608)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다. 문서 추적 기능에서는 사용자가 공유하는 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 개인정보취급방침 요구 사항으로 인해 조직에서 이 정보 표시가 금지된 경우 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet을 사용하여 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정할 수 있습니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 사이트에 대한 액세스를 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 액세스가 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다.
+[문서 추적 기능을 지원하는 구독](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다. 문서 추적 기능에서는 사용자가 공유하는 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 개인정보취급방침 요구 사항으로 인해 조직에서 이 정보 표시가 금지된 경우 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet을 사용하여 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정할 수 있습니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 사이트에 대한 액세스를 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 액세스가 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다.
 
 이러한 cmdlet을 실행하려면 **2.3.0.0** 이상의 Windows PowerShell용 Azure Information Protection 모듈 버전을 사용하고 있어야 합니다. 설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
 

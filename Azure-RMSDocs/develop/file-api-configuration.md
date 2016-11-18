@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 02ba5c914553e8ade9b6cf43e1e2349b91fdaa1b
+ms.sourcegitcommit: 329dce4c8bb5a6de3ecb7bbd7e734b4acbf339c9
+ms.openlocfilehash: 913373504e34321556a1cdd34ea2744d8477f562
 
 
 ---
@@ -37,13 +37,13 @@ ms.openlocfilehash: 02ba5c914553e8ade9b6cf43e1e2349b91fdaa1b
 
 다음 섹션에서는 암호화를 제어하는 키와 키 값에 대해 설명합니다.
 
-### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotection"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
 **형식**: 키
 
 **설명**: 파일 API에 대한 일반 구성이 포함됩니다.
 
-### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotectionltextgt"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
 **형식**: 키
 
@@ -56,7 +56,7 @@ ms.openlocfilehash: 02ba5c914553e8ade9b6cf43e1e2349b91fdaa1b
 키의 **Encryption** 값을 설정하여 보호 동작을 지정합니다. **Encryption** 값을 설정하지 않으면 파일 형식에 대한 기본 동작을 따릅니다.
 
 
-### <a name="hkeylocalmachinesoftwaremicrosoftmsipcfileprotectionltextgtencryption"></a>HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
 
 **형식**: REG_SZ
 
@@ -157,6 +157,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

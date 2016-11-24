@@ -1,11 +1,11 @@
 # [이해 및 탐색](what-is-information-protection.md)
 ## [Azure Information Protection이란?](what-is-information-protection.md)
-### [또한 다음이라고 알려집니다.](aka.md)
-### [Azure 권한 관리란?](what-is-azure-rms.md)
+### [이전 이름](aka.md)
+### [Azure Rights Management란?](what-is-azure-rms.md)
 #### [해결할 수 있는 문제](azure-rms-problems-it-solves.md)
 #### [관리자와 사용자에게 표시되는 내용](what-admins-users-see.md)
-#### [트래픽 관리자의 작동 방식](how-does-it-work.md)
-## [개인용 RMS 및 Azure RMS](rms-for-individuals.md)
+#### [작동 방식](how-does-it-work.md)
+## [개인용 RMS 및 Azure Information Protection](rms-for-individuals.md)
 ### [개인용 RMS 등록 방법](rms-for-individuals-user-sign-up.md)
 ### [개인용 RMS용으로 만들어진 계정 제어](rms-for-individuals-take-control.md)
 ### [사용자가 개인용 RMS에 등록했는지 확인](rms-for-individuals-identify-sign-up.md)
@@ -23,6 +23,6 @@
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

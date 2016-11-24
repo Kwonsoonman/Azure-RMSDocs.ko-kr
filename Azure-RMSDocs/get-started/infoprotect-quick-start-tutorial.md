@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 9f475892d7999fc3ff10a27d11986dec9cfa94cd
+ms.sourcegitcommit: d300f3c130476974e39689edf9e1f0eabbc35da1
+ms.openlocfilehash: de3435767d161567003369fc55dd476283b64f41
 
 
 ---
@@ -41,7 +41,7 @@ Azure Information Protection을 사용하여 이 자습서를 완료하는 데 �
 
 - Azure Portal에 로그인하여 Azure Information Protection 정책을 구성할 수 있는 전역 관리자 계정. 이 계정에 메일 주소와 제대로 작동하는 메일 서비스(예, Exchange Online 또는 Exchange Server)가 있어야 합니다.
 
-- Windows(Windows 7 서비스 팩 1 이상)를 실행하며 Office Professional Plus 2016, Office Professional Plus 2013 서비스 팩 1 또는 Office Professional Plus 2010이 설치된 컴퓨터. 
+- Windows(Windows 7 서비스 팩 1 이상)를 실행하며 Office 365 ProPlus(2016 앱 또는 2013 앱 포함), Office Professional Plus 2016, Office Professional Plus 2013 서비스 팩 1 또는 Office Professional Plus 2010이 설치된 컴퓨터 
 
 이제 시작하겠습니다.
 

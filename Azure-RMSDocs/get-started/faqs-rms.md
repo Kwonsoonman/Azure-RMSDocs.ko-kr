@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: e24c2fdb5c99fa1799abc936c0734098b31c93d9
+ms.sourcegitcommit: eb9b9c1308abe6b1b5803cba7ba254d54cbac812
+ms.openlocfilehash: d3d11dba936ca8901b701008e55df8d73be8bded
 
 
 ---
@@ -30,7 +30,13 @@ ms.openlocfilehash: e24c2fdb5c99fa1799abc936c0734098b31c93d9
 
 [Azure RMS는 어떤 방식으로 작동하나요? 기본적인 이해](../understand-explore/how-does-it-work.md)를 참조하여 온-프레미스에서 생성 및 저장된 콜라 비밀 제조법이 Azure Rights Management 서비스를 통해 어떻게 보호되고 온-프레미스에 유지되는지를 확인할 수 있습니다.
 
-## <a name="can-i-integrate-the-azure-rights-management-service-with-my-onpremises-servers"></a>내 온-프레미스 서버와 Azure Rights Management 서비스를 통합할 수 있나요?
+## <a name="whats-the-difference-between-azure-rights-management-encryption-and-encryption-in-other-microsoft-cloud-services"></a>Azure Rights Management 암호화와 다른 Microsoft Cloud Services의 암호화 간의 차이점은 무엇인가요?
+
+Microsoft는 다르거나 종종 상호 보완적인 시나리오에서 데이터를 보호할 수 있는 여러 암호화 기술을 제공합니다. 예를 들어 Office 365에서 Office 365에 저장된 미사용 데이터에 대해 암호화를 제공하는 동시에 Azure Information Protection의 Azure Rights Management 서비스에서 별도로 데이터를 암호화하므로 데이터는 위치나 전송 방법에 관계없이 보호됩니다.
+
+이러한 암호화 기술은 상호 보완적이며 사용하려면 개별적으로 사용 설정 및 구성해야 합니다. 이때 암호화를 위해 고유한 키를 가져올 수도 있습니다("BYOK" 시나리오라고도 함). 이러한 기술 중 하나에 대해 BYOK를 사용하도록 설정해도 다른 기술에는 영향을 주지 않습니다. 예를 들어 Azure Information Protection에는 BYOK를 사용하고 다른 암호화 기술에는 BYOK를 사용하지 않을 수 있습니다. 이러한 다른 기술에서 사용하는 키는 같거나 다를 수 있는데, 각 서비스의 암호화 옵션 구성 방법에 달려 있습니다.
+
+## <a name="can-i-integrate-the-azure-rights-management-service-with-my-on-premises-servers"></a>내 온-프레미스 서버와 Azure Rights Management 서비스를 통합할 수 있나요?
 예. Exchange Server, SharePoint 및 Windows 파일 서버와 같은 온-프레미스 서버에 Azure Rights Management를 통합할 수 있습니다. 이렇게 하려면 [Rights Management 커넥터](../deploy-use/deploy-rms-connector.md)를 사용합니다. 또는 Windows Server에서 FCI(파일 분류 인프라)를 사용하려는 경우 [RMS 보호 cmdlet](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)을 사용할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
 
 Azure Rights Management는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure Rights Management에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](../understand-explore/how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
@@ -101,7 +107,7 @@ Azure Rights Management 서비스는 모든 형식의 파일을 지원할 수 �
 
 Azure Rights Management에서 기본적으로 지원하는 파일 이름 확장명 목록은 [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)에서 [지원되는 파일 형식 및 파일 이름 확장명](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션을 참조하세요. 여기에 나열되지 않은 파일 이름 확장명은 해당 파일에 일반 보호를 자동 적용하는 RMS 공유 응용 프로그램을 통해 지원됩니다.
 
-## <a name="when-i-open-an-rmsprotected-office-document-does-the-associated-temporary-file-become-rmsprotected-as-well"></a>RMS로 보호된 Office 문서를 열면 연결된 임시 파일도 RMS로 보호되나요?
+## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>RMS로 보호된 Office 문서를 열면 연결된 임시 파일도 RMS로 보호되나요?
 
 아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 장치에 있습니다.
 
@@ -158,6 +164,6 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

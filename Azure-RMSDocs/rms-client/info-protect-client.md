@@ -4,15 +4,15 @@ description: "문서와 메일용 분류 레이블을 선택할 수 있도록 Of
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/01/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 2f1930f4657278d25ef6dd369866f16e4ba71644
-ms.openlocfilehash: 5e36d046d53b0fdfb6796f2a00e8d0d1325f30c3
+ms.sourcegitcommit: db05149a25b6535d568338140daa2474e48b6711
+ms.openlocfilehash: 984d764d0c1ac41e6baec0b7978f501d7494773d
 
 
 ---
@@ -69,7 +69,9 @@ Azure Information Protection 클라이언트는 Microsoft 업데이트 카탈로
     
         또한 Azure Information Protection에 인증하는 데 사용되는 계정을 식별하는 표시된 사용자 이름을 확인합니다. 이 사용자 이름은 Office 365 또는 Azure Active Directory에 사용하는 계정과 일치해야 합니다.
 
-    - **도움말 및 피드백** 섹션에서 **사용자 의견 보내기** 링크를 클릭하여 문제를 조사하기 위해 Information Protection 팀에 보낼 수 있는 메일 메시지에 클라이언트 로그를 자동으로 첨부합니다. 
+    - **도움말 및 피드백** 섹션에서: **추가 정보 링크**를 누르면 기본적으로 [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책에서 [전역 설정](../deploy-use/configure-policy-settings.md) 중 하나로 사용자 지정 URL을 구성할 수 있습니다.
+        
+        **사용자 의견 보내기** 링크를 사용하면 조사하기 위해 Information Protection 팀에 보낼 수 있는 메일 메시지에 클라이언트 로그를 자동으로 첨부할 수 있습니다. 
     
         진단 정보 및 클라이언트 다시 설정에 대해서는 **진단 실행**을 클릭합니다. 진단 테스트를 완료하면 **결과 복사**를 클릭하여 지원 센터 또는 Microsoft 지원에 보낼 수 있는 메일에 정보를 붙여넣습니다. 테스트를 완료하면 클라이언트를 다시 설정할 수도 있습니다.
         
@@ -115,6 +117,6 @@ Information Protection 표시줄의 레이블을 변경하려면 Azure Informati
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -2,6 +2,7 @@
 title: "Azure Information Protection 빠른 배포 가이드 | Azure Information Protection"
 description: "조직 데이터를 보호하기 위해 Azure Information Protection을 보다 빠르게 배포하고 사용하는 방법을 설명하는 가이드입니다. 먼저 특정 시나리오 목록에서 구현할 시나리오를 선택합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c0f3b58a2f1b5233c262bb67cc4a485557ba997
-ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
 
 
 ---
 
-# Azure 권한 관리 빠른 배포 가이드
+# <a name="rapid-deployment-guide-for-azure-rights-management"></a>Azure 권한 관리 빠른 배포 가이드
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -35,7 +36,7 @@ ms.openlocfilehash: 914362cbabe2e929b988e0f922c3848e8ca7771f
 > [!NOTE]
 > 이 가이드에 대한 질문과 의견이 있는 경우 이 페이지의 피드백 메커니즘을 사용하거나 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)으로 메일 메시지를 보내 주세요.
 
-## Azure Information Protection에 대한 시나리오
+## <a name="scenarios-for-azure-information-protection"></a>Azure Information Protection에 대한 시나리오
 Azure Information Protection을 신속하게 배포하여 특정 비즈니스 문제를 해결하려면 비즈니스 목표와 가장 일치하는 시나리오를 선택한 다음 필요에 따라 변경합니다.
 
 
@@ -123,12 +124,12 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 
 
 
-## 출시 전의 사용자 알림
+## <a name="announcement-for-users-before-rollout"></a>출시 전의 사용자 알림
 다음 예제 커뮤니케이션 메시지를 사용하여 Azure Information Protection을 배포하면 일부 사항이 변경된다는 사실을 사용자에게 알릴 수 있습니다. 조직의 임원 중 한 명(CEO 권장)이 모든 사용자에게 메일로 보내도록 다음 텍스트를 복사하여 붙여넣습니다. 사용자와 조직에 보다 적절한 메시지를 만들기 위해 이 텍스트를 변경하는 것이 좋습니다.
 
 ![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서 배너](../media/AzRMS_ExampleBanner.png)
 
-### 데이터를 보호하기 위한 변경 내용
+### <a name="changes-were-making-to-safeguard-our-data"></a>데이터를 보호하기 위한 변경 내용
 실수로 파트너에게 보낸 문서에 대한 액세스를 차단하려고 한 적이 있나요? 보낸 최신 제품 뉴스를 어떤 고객이 읽었는지 알 수 있는 방법이 있는지 궁금했던 적이 있나요? 보지 않아야 하는 사람에게 전송되지 않을까 염려하지 않고 기밀 제품 정보를 공유할 수 있어야 하나요?
 
 곧 이러한 작업을 수행할 수 있습니다. IT 부서에서 Microsoft Azure Information Protection을 엔터프라이즈 데이터 보호 솔루션으로 구현하는 시스템 변경 작업을 수행하고 있기 때문입니다. 이러한 솔루션은 대부분 특별한 작업을 수행하지 않아도 필요한 보호 기능을 자동으로 적용합니다. 그러나 일부 변경의 경우 특별한 작업을 수행해야 할 수 있으며, 이 경우 IT 부서에서 정보와 지침을 보내며 질문이나 문제가 있을 경우 지원 센터에서 지원합니다.
@@ -146,6 +147,6 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

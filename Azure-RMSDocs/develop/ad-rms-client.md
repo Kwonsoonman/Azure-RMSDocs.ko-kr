@@ -3,6 +3,7 @@ title: "클라이언트 | Azure RMS"
 description: "AD RMS 클라이언트 2.1은 정보에 대한 액세스 및 사용을 보호하도록 설계된 클라이언트 컴퓨터용 소프트웨어입니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 099c27d0bc94503101adc04d1e398ff1eeb4d916
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 1c8d69af23ce094520bac491246a158510a948bb
 
 
 ---
 
-# 클라이언트
+# <a name="client"></a>클라이언트
 
 이 항목에서는 Rights Management Service Client 2.1의 용도와 기능에 대해 설명합니다.
 
@@ -32,7 +33,7 @@ RMS Client 2.1은 사용자가 보호된(암호화된) 콘텐츠를 만들고 �
 
 자세한 내용은 [RMS Client 2.1에 대한 TechNet 설명서](https://TechNet.Microsoft.Com/library/jj159267(WS.10).aspx) 항목을 참조하세요.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [개요](ad-rms-overview.md)
 * [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)
@@ -43,6 +44,6 @@ RMS Client 2.1은 사용자가 보호된(암호화된) 콘텐츠를 만들고 �
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

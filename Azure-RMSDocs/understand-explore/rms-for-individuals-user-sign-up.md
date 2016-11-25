@@ -2,6 +2,7 @@
 title: "개인용 RMS 등록 방법 | Azure Information Protection"
 description: "이 무료 계정의 등록 지침과 등록 프로세스의 작동 방식 관련 기술 정보를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/25/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8306d70937aeaf665617d84b4e7ad2c8944e3c79
-ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 
 ---
 
-# 개인용 RMS 등록 방법
+# <a name="how-users-sign-up-for-rms-for-individuals"></a>개인용 RMS 등록 방법
 
 >*적용 대상: Azure Information Protection*
 
 이 무료 계정에 등록하려면 [Microsoft Azure Information Protection 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)를 방문하여 계정을 요청하고 회사 메일 주소를 제공합니다. 이 등록 페이지로 이동하는 가장 일반적인 방법은 보호되는 첨부 파일이 포함된 메일 메시지를 받았을 때입니다. 여기에는 등록 방법에 대한 지침이 포함되어 있습니다. Microsoft로부터 메일을 답장을 받으면 세부 정보 입력을 통해 계정을 만들어 등록 프로세스를 완료합니다. 이 작업을 완료하면 다른 장치용 공유 응용 프로그램을 다운로드할 수 있는 페이지, 사용자 가이트에 대한 링크 및 Rights Management 보호를 기본적으로 지원하는 응용 프로그램의 최신 목록에 대한 링크가 표시됩니다. 
 
-## 개인용 RMS를 등록하려면
+## <a name="to-sign-up-for-rms-for-individuals"></a>개인용 RMS를 등록하려면
 
 1.  Windows 또는 Mac 컴퓨터나 모바일 장치를 사용하여 [Microsoft Azure Information Protection 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)로 이동합니다.
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
 
 이제 계정이 만들어졌으므로 파일을 보호하고 다른 사용자가 보호한 파일을 읽을 수 있습니다. 파일을 보호하거나 보호된 파일을 읽기 위해 로그인하라는 메시지가 나타나면 개인용 RMS 계정을 만들 때 사용한 동일한 메일 주소와 암호를 입력합니다.
 
-## 등록 프로세스의 기술 개요
+## <a name="technical-overview-of-the-signup-process"></a>등록 프로세스의 기술 개요
 개인용 RMS는 Microsoft 클라우드 기반 기술로 사용자를 인증하는 다른 서비스에서도 사용되는 실시간 메일 계정 생성 프로세스를 사용합니다.
 
 이는 사용자가 개인용 RMS에 등록하고 조직에 Office 365 구독 또는 Azure 구독이 없어 Azure에 사용자를 인증할 디렉터리가 없는 경우에 발생합니다.
@@ -79,7 +80,7 @@ ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
 
         -   [Office 365: 클라이언트 및 온라인 서비스 구성](../deploy-use/configure-office365.md)에서 Exchange Online 및 SharePoint Online 섹션
 
-        -   [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)
+        -   [Azure Rights Management 커넥터 배포](../deploy-use/deploy-rms-connector.md)
 
     -   필요한 경우, 권한 관리로 보호되는 파일을 암호 해독할 수 있도록 회사 소유의 데이터에 대해 eDiscovery를 수행할 수 있습니다. 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 검색을 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
 
@@ -90,13 +91,13 @@ ms.openlocfilehash: e3fc6390b3a5b1b6a7b321999a94d4c2226e93ad
     -   Azure Rights Management의 테넌트 키가 IT 정책에 따라 온-프레미스에서 생성되어 HSM(하드웨어 보안 모듈)을 통해 Microsoft로 안전하게 전송되도록 BYOK(Bring Your Own Key) 솔루션을 구현할 수 있습니다. 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 [관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법](rms-for-individuals-take-control.md)을 참조하세요.
 
 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

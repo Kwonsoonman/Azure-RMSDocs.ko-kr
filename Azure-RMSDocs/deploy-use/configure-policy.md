@@ -2,6 +2,7 @@
 title: "정책 구성 | Azure Information Protection"
 description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ebb11148718f22c79bb49c82b9855f5e6f2a5b18
-ms.openlocfilehash: 472541f32c429eea34ea0afb76905bee8abf9747
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 055470948a1bf21d4ee1ee83f345f49a98c1bf31
 
 
 ---
 
-# Azure Information Protection 정책 구성
+# <a name="configuring-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
 >*적용 대상: Azure Information Protection*
 
@@ -51,7 +52,7 @@ Azure Information Protection 블레이드를 변경한 경우 **Save**(저장)�
 
 Azure Information Protection 클라이언트는 지원되는 Office 응용 프로그램이 시작될 때마다 변경 내용을 확인하여 해당 Azure Information Protection 정책으로 변경 내용을 다운로드합니다.
 
-## 조직의 정책 구성
+## <a name="configuring-your-organizations-policy"></a>조직의 정책 구성
 
 다음 정보를 사용하여 Azure Information Protection 정책을 구성할 수 있습니다.
 
@@ -71,13 +72,13 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 - [자동 및 권장 분류에 대한 조건을 구성하는 방법](configure-policy-classification.md)
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

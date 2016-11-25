@@ -3,6 +3,7 @@ title: "Visual Studio 구성 | Azure RMS"
 description: "RMS SDK 2.1을 사용하도록 Visual Studio 프로젝트를 구성하는 방법에 대한 지침입니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,23 +15,23 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 28286a4c8a5fcc602afba5975cfe5133e8b6c55b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 91efe573952d70613b3d52c7ee879da5c807da8e
 
 
 ---
 
-# Visual Studio 구성
+# <a name="configure-visual-studio"></a>Visual Studio 구성
 
 이 항목에는 권한 관리 서비스 SDK 2.1을 사용하도록 Visual Studio 프로젝트를 구성하는 방법에 대한 지침이 포함되어 있습니다.
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 -   [SDK 설치](install-the-rms-sdk.md)
 
 **지침**
 
-### 1단계: RMS SDK 2.1을 사용하도록 Visual Studio 프로젝트 구성
+### <a name="step-1-configure-a-visual-studio-project-to-use-rms-sdk-21"></a>1단계: RMS SDK 2.1을 사용하도록 Visual Studio 프로젝트 구성
 
 이러한 지침은 Microsoft Visual Studio 2010에 해당합니다. 다른 버전의 Microsoft Visual Studio를 사용하는 경우 설정 대화 상자가 약간 다르게 나타날 수도 있습니다.
 
@@ -69,7 +70,7 @@ ms.openlocfilehash: 28286a4c8a5fcc602afba5975cfe5133e8b6c55b
 
     ![솔루션 탐색기 리소스 파일 필드](../media/original_file_name.png)
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [SDK 설치](install-the-rms-sdk.md)
  
@@ -78,6 +79,6 @@ ms.openlocfilehash: 28286a4c8a5fcc602afba5975cfe5133e8b6c55b
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

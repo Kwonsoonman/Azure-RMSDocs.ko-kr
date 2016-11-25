@@ -3,6 +3,7 @@ title: "방법: 문서 추적 및 해지 사용 | Azure RMS"
 description: "콘텐츠의 문서 추적과 메타데이터 업데이트에 대한 예제 코드를 구현하고, 앱에 대한 사용 추적 단추를 만들기 위한 기본 지침입니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -16,19 +17,17 @@ ms.suite: ems
 experimental: true
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: a077e9721bde9e812d36dfab46d6215857cb69ab
 
 
 ---
 
-# 콘텐츠 추적
-
-# 방법: 문서 추적 및 해지 사용
+# <a name="howto-enable-document-tracking-and-revocation"></a>방법: 문서 추적 및 해지 사용
 
 이 항목에서는 콘텐츠의 문서 추적과 메타데이터 업데이트에 대한 예제 코드를 구현하고, 앱에 대한 **사용 추적 단추**를 만들기 위한 기본 지침을 다룹니다.
 
-## 문서 추적을 구현하는 단계
+## <a name="steps-to-implement-document-tracking"></a>문서 추적을 구현하는 단계
 
 1 및 2단계에서 문서를 추적할 수 있습니다. 3단계에서 앱 사용자는 문서를 추적하고 해지하기 위해 문서 추적 사이트에 연결할 수 있습니다.
 
@@ -38,7 +37,7 @@ ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
 
 이러한 단계에 대한 구현 세부 사항은 다음과 같습니다.
 
-## 1. 문서 추적 메타데이터 추가
+## <a name="1-add-document-tracking-metadata"></a>1. 문서 추적 메타데이터 추가
 
 문서 추적은 권한 관리 시스템의 기능입니다. 문서 보호 프로세스 중 특정 메타데이터를 추가하면 문서를 추적 서비스 포털에 등록할 수 있으며, 이 서비스에서 여러 가지 추적 옵션을 제공합니다.
 
@@ -48,12 +47,12 @@ ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
 운영 측면에서 **콘텐츠 이름** 및 **알림 유형** 속성만 문서 추적에 필요합니다.
 
 
-- [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-- [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
+- [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
+- [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
 
   모든 메타데이터 속성을 설정합니다. 해당 속성은 아래에 유형별로 나열되어 있습니다.
 
-  자세한 내용은 [라이선스 메타데이터 속성 형식](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types) 항목을 참조하세요.
+  자세한 내용은 [라이선스 메타데이터 속성 형식](https://msdn.microsoft.com/library/dn974062.aspx) 항목을 참조하세요.
 
   - **IPC_MD_CONTENT_PATH**
 
@@ -79,19 +78,19 @@ ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
 
     파일의 원래 날짜를 설정하는 데 사용합니다.
 
-- [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
+- [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)
 
 다음 중 해당 API를 사용하여 파일이나 스트림에 메타데이터를 추가합니다.
 
-- [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-- [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
+- [IpcfEncryptFileWithMetadata](https://msdn.microsoft.com/library/dn974052.aspx)
+- [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
 
 마지막으로, 다음 API를 사용하여 추적된 문서를 추적 시스템에 등록합니다.
 
-- [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+- [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
 
-## 2. RMS 서비스에 문서 등록
+## <a name="2-register-the-document-with-the-rms-service"></a>2. RMS 서비스에 문서 등록
 
 다음은 문서 추적 메타데이터와 추적 시스템에 등록 호출을 설정하는 예제를 보여 주는 코드 조각입니다.
 
@@ -134,38 +133,38 @@ ms.openlocfilehash: 1a98ea095098fdf09809bb8be1e6263b28f3044b
                         wstrContentName.c_str(),
                         sendLicenseRegistrationNotificationEmail);
 
-## 앱에 **사용량 추적** 단추 추가
+## <a name="add-a-track-usage-button-to-your-app"></a>앱에 **사용량 추적** 단추 추가
 
 앱에 **사용량 추적** UI 항목을 추가하는 작업은 다음 URL 형식 중 하나를 사용하는 작업만큼 간단합니다.
 
 - 콘텐츠 ID 사용
-  - 라이선스가 직렬화된 경우 [IpcGetLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetlicenseproperty) 또는 [IpcGetSerializedLicenseProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcgetserializedlicenseproperty)를 사용하여 콘텐츠 ID를 가져오고 라이선스 속성 **IPC_LI_CONTENT_ID**를 사용합니다. 자세한 내용은 [라이선스 속성 형식](/information-protection/sdk/2.1/api/win/constants#msipc_license_property_types) 항목을 참조하세요.
-  - **ContentId** 및 **Issuer** 메타 데이터와 함께 다음 형식을 사용합니다. `https://track.azurerms.com/#/{ContentId}/{Issuer}`
+  - 라이선스가 직렬화된 경우 [IpcGetLicenseProperty](https://msdn.microsoft.com/library/hh535265.aspx) 또는 [IpcGetSerializedLicenseProperty](https://msdn.microsoft.com/library/hh995038.aspx)를 사용하여 콘텐츠 ID를 가져오고 라이선스 속성 **IPC_LI_CONTENT_ID**를 사용합니다. 자세한 내용은 [라이선스 속성 형식](https://msdn.microsoft.com/library/hh535287.aspx) 항목을 참조하세요.
+  - **ContentId** 및 **Issuer** 메타데이터와 함께 다음 형식을 사용합니다. `https://track.azurerms.com/#/{ContentId}/{Issuer}`
 
-    예 - `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
+    예제 - `https://track.azurerms.com/#/summary/05405df5-8ad6-4905-9f15-fc2ecbd8d0f7/janedoe@microsoft.com`
 
-- 해당 메타 데이터에 액세스할 수 없는 경우(즉, 보호되지 않는 버전의 문서를 검사 중인 경우) 다음 형식에서 **Content_Name**을 사용할 수 있습니다. `https://track.azurerms.com/#/?q={ContentName}`
+- 해당 메타데이터에 액세스할 수 없는 경우(즉, 보호되지 않는 버전의 문서를 검사 중인 경우) 다음 형식에서 **Content_Name**을 사용할 수 있습니다. `https://track.azurerms.com/#/?q={ContentName}`
 
   예 - https://track.azurerms.com/#/?q=Secret!.txt
 
 클라이언트에서는 브라우저로 적절한 URL을 열기만 하면 됩니다. RMS 문서 추적 포털은 인증 및 모든 필수 리디렉션을 처리합니다.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
-* [라이선스 메타데이터 속성 형식](/information-protection/sdk/2.1/api/win/constants#msipc_license_metadata_property_types)
-* [알림 기본 설정](/information-protection/sdk/2.1/api/win/constants#msipc_notification_preference)
-* [알림 유형](/information-protection/sdk/2.1/api/win/constants#msipc_notification_type)
-* [IpcCreateLicenseMetadataHandle](/information-protection/sdk/2.1/api/win/functions#msipc_ipccreatelicensemetadatahandle)
-* [IpcSetLicenseMetadataProperty](/information-protection/sdk/2.1/api/win/functions#msipc_ipcsetlicensemetadataproperty)
-* [IpcSerializeLicenseWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcserializelicensemetadata)
-* [IpcfEncryptFileWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilewithmetadata)
-* [IpcfEncryptFileStreamWithMetadata](/information-protection/sdk/2.1/api/win/functions#msipc_ipcfencryptfilestreamwithmetadata)
-* [IpcRegisterLicense](/information-protection/sdk/2.1/api/win/functions#msipc_ipcregisterlicense)
+* [License metadata property types](https://msdn.microsoft.com/library/dn974062.aspx)(라이선스 메타데이터 속성 형식)
+* [Notification preference](https://msdn.microsoft.com/library/dn974063.aspx)(알림 기본 설정)
+* [Notification type](https://msdn.microsoft.com/library/dn974064.aspx)(알림 유형)
+* [IpcCreateLicenseMetadataHandle](https://msdn.microsoft.com/library/dn974050.aspx)
+* [IpcSetLicenseMetadataProperty](https://msdn.microsoft.com/library/dn974059.aspx)
+* [IpcSerializeLicenseWithMetadata](https://msdn.microsoft.com/library/dn974058.aspx)
+* [IpcfEncryptFileWithMetadata](https://msdn.microsoft.com/library/dn974052.aspx)
+* [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
+* [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
  
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

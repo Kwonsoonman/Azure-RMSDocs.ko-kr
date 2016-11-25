@@ -3,6 +3,7 @@ title: "메일 알림 사용 | Azure RMS"
 description: "메일 알림을 사용하면 누군가가 보호된 콘텐츠에 액세스할 경우 보호된 콘텐츠 소유자가 알림을 받을 수 있습니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
-ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5da480834485d58028b366c8fbb9a53412cd7c6a
 
 
 ---
 
-# 방법: 메일 알림 사용
+# <a name="howto-enable-email-notification"></a>방법: 메일 알림 사용
 
 메일 알림을 사용하면 누군가가 보호된 콘텐츠에 액세스할 경우 보호된 콘텐츠 소유자가 알림을 받을 수 있습니다.
 
@@ -56,7 +57,7 @@ ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
 |MS.Notify.TZSN|문자열|“태평양 표준시”|**원본:** TimeZoneInfo.Local.StandardName - 표준 시간대 이름입니다.<br><br>표준 시간대 이름의 지역화된 이름이어야 합니다.|
 |MS.Notify.TZDN|문자열|"태평양 일광 절약 시간"|**원본:** TimeZoneInfo.Local.DaylightName - 표준 시간대 일광 절약 시간 이름입니다.<br><br>표준 시간대 일광 절약 시간 이름의 지역화된 이름이어야 합니다. 표준 시간대가 일광 절약 시간제를 지원하지 않는 경우 표준 이름과 같을 수 있습니다.|
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
 - [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)
@@ -67,6 +68,6 @@ ms.openlocfilehash: 411c549cc865914c6e35ececad99da0a0d46c5d4
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

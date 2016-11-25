@@ -2,6 +2,7 @@
 title: "Office 365&colon; 클라이언트 및 온라인 서비스 구성 | Azure Information Protection"
 description: "관리자가 Azure Information Protection의 Azure Rights Management 서비스에서 작동하도록 Office 365를 구성하는 방법 및 지침을 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d07f981456f5f642642f4bcc748ad56b630daf93
-ms.openlocfilehash: b2baad6a8ed383903883f33eedc56a8cebe019d3
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 6c71f9b140fa52ab65dab76297a8763b3a980512
 
 
 ---
 
-# Office 365: 클라이언트 및 온라인 서비스 구성
+# <a name="office-365-configuration-for-clients-and-online-services"></a>Office 365: 클라이언트 및 온라인 서비스 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -26,7 +27,7 @@ Office 365는 기본적으로 Azure Information Protection의 Azure Rights Manag
 
 그러나 사용자가 Office 추가 기능의 이점을 얻을 수 있도록 권한 관리 공유 응용 프로그램으로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성](configure-sharing-app.md)을 참조하세요.
 
-## Exchange Online: IRM 구성
+## <a name="exchange-online-irm-configuration"></a>Exchange Online: IRM 구성
 Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성하려면 Exchange Online에 대해 IRM(정보 권한 관리) 서비스를 구성해야 합니다. 이렇게 하려면 Windows PowerShell을 사용하고(별도 모듈을 설치할 필요 없음) [Exchange Online용 PowerShell 명령](https://technet.microsoft.com/library/jj200677.aspx)을 실행합니다.
 
 > [!NOTE]
@@ -121,7 +122,7 @@ Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성�
 이제 사용자는 Azure Rights Management 서비스를 사용하여 자신의 전자 메일 메시지를 보호할 수 있습니다. 예를 들어 Outlook Web App의 확장된 메뉴( **...** )에서**사용 권한 설정**을 선택한 다음 **전달 금지** 를 선택하거나 전자 메일 메시지 및 첨부 파일에 정보 보호를 적용할 사용 가능한 템플릿 중 하나를 선택합니다. 그러나 Outlook Web App은 하루 동안 UI를 캐시하므로, 이러한 구성 명령을 실행하고 하루 동안 기다렸다가 전자 메일 메시지에 정보 보호를 적용합니다. 새 구성을 반영하도록 UI가 업데이트되기 전에는 **사용 권한 설정** 메뉴의 옵션이 표시되지 않습니다.
 
 > [!IMPORTANT]
-> Azure Rights Management용 [사용자 지정 템플릿](configure-custom-templates.md)을 새로 만들거나 템플릿을 업데이트하는 경우 매번 다음 Exchange Online PowerShell 명령을 실행(필요한 경우 2-3단계 먼저 실행)하여 이러한 변경 내용을 Exchange Online과 동기화해야 합니다. `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
+> Azure Rights Management용 [사용자 지정 템플릿](configure-custom-templates.md)을 새로 만들거나 템플릿을 업데이트하는 경우 매번 다음 Exchange Online PowerShell 명령을 실행(필요한 경우 2단계 및 3단계 먼저 실행)하여 이러한 변경 내용을 Exchange Online과 동기화해야 합니다. `Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates –RMSOnline`
 
 Exchange 관리자는 이제 [전송 규칙](https://technet.microsoft.com/library/dd302432.aspx), [DLP(데이터 손실 방지) 정책](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) 및 [보호된 음성 메일](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)(통합 메시징)과 같이 정보 보호를 자동으로 적용하는 기능을 구성할 수 있습니다.
 
@@ -129,16 +130,16 @@ IRM 기능을 사용하도록 Exchange Online을 구성하는 방법에 대한 �
 
 -   [원격 PowerShell을 사용하여 Exchange Online에 연결](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
 
--   [Azure 권한 관리를 사용하도록 IRM 구성](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)
+-   [Azure Rights Management를 사용하도록 IRM 구성](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)
 
-### Office 365 메시지 암호화
-이전 섹션에서 설명한 것과 동일한 단계를 실행합니다. 하지만 템플릿을 표시하지 않으려면 6단계 전에 다음 명령을 실행하여 Outlook Web App 및 Outlook 클라이언트에서 IRM 템플릿을 사용할 수 없게 합니다. `Set-IRMConfiguration -ClientAccessServerEnabled $false`
+### <a name="office-365-message-encryption"></a>Office 365 메시지 암호화
+이전 섹션에 설명된 동일한 단계를 실행합니다. 그렇지만 템플릿을 표시하지 않으려면 6단계 이전에 다음 명령을 실행하여 Outlook Web App 및 Outlook 클라이언트에서 IRM 템플릿을 사용할 수 없게 합니다. `Set-IRMConfiguration -ClientAccessServerEnabled $false`
 
 그런 후에 받는 사람이 조직 외부에 있고 [Office 365 메시지 암호화 적용](https://technet.microsoft.com/library/dd302432.aspx) 옵션을 선택한 경우 메시지 보안을 자동으로 수정하도록 **전송 규칙** 을 구성할 수 있습니다.
 
 메시지 암호화에 대한 자세한 내용은 Exchange 라이브러리의 [Office 365의 암호화](https://technet.microsoft.com/library/dn569286.aspx) 를 참조하세요.
 
-## SharePoint Online 및 비즈니스용 OneDrive: IRM 구성
+## <a name="sharepoint-online-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 및 비즈니스용 OneDrive: IRM 구성
 Azure Rights Management 서비스를 지원하도록 SharePoint Online 및 비즈니스용 OneDrive를 구성하려면 먼저 SharePoint 관리 센터를 통해 SharePoint Online에 대해 IRM(정보 권한 관리) 서비스가 사용되도록 해야 합니다. 그러면 사이트 소유자는 SharePoint 목록 및 문서 라이브러리를 IRM으로 보호할 수 있으며, 사용자는 비즈니스용 OneDrive 라이브러리를 IRM으로 보호하여 해당 라이브러리에 저장된 문서와 다른 사람과 공유하는 문서가 Azure Rights Management 서비스를 통해 자동으로 보호되도록 할 수 있습니다.
 
 SharePoint Online에 대한 IRM(정보 권한 관리) 서비스를 사용하도록 설정하려면 Office 웹 사이트의 다음 지침을 참조하세요.
@@ -147,20 +148,20 @@ SharePoint Online에 대한 IRM(정보 권한 관리) 서비스를 사용하도�
 
 이 구성은 Office 365 관리자가 수행합니다.
 
-### 라이브러리 및 목록에 대한 IRM 구성
+### <a name="configuring-irm-for-libraries-and-lists"></a>라이브러리 및 목록에 대한 IRM 구성
 SharePoint용 IRM 서비스를 사용하도록 설정하면 사이트 소유자는 SharePoint 문서 라이브러리 및 목록을 IRM으로 보호할 수 있습니다. 지침을 보려면 Office 웹 사이트의 다음 리소스를 참조하세요.
 
 -   [목록이나 라이브러리에 정보 권한 관리 적용](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)
 
 이 구성은 SharePoint 사이트 관리자가 수행합니다.
 
-### 비즈니스용 OneDrive에 대한 IRM 구성
+### <a name="configuring-irm-for-onedrive-for-business"></a>비즈니스용 OneDrive에 대한 IRM 구성
 SharePoint Online용 IRM 서비스를 사용하도록 설정하면 사용자의 비즈니스용 OneDrive 문서 라이브러리에서 권한 관리 보호에 대해 구성할 수 있습니다.  사용자는 해당 OneDrive에서 **설정** 아이콘을 사용하여 이 기능을 스스로 구성할 수 있습니다. 관리자가 SharePoint 관리 센터를 이용해 사용자의 비즈니스용 OneDrive에 대한 권한 관리를 구성할 수는 없지만, Windows PowerShell을 이용해 구성할 수는 있습니다.
 
 > [!NOTE]
 > 비즈니스용 OneDrive를 구성하는 방법에 대한 자세한 내용은 Office 설명서, [Office 365에서 비즈니스용 OneDrive 설정](https://support.office.com/article/Set-up-OneDrive-for-Business-in-Office-365-3e21f8f0-e0a1-43be-aa3e-8c0236bf11bb)을 참조하세요.
 
-#### 사용자를 위한 구성
+#### <a name="configuration-for-users"></a>사용자를 위한 구성
 사용자가 각각의 비즈니스용 OneDrive와 IRM으로 보호되는 비즈니스 파일을 구성할 수 있도록 사용자에게 이러한 지침을 제공합니다.
 
 1.  OneDrive에서 **설정** 아이콘을 클릭하여 설정 메뉴를 열고 **사이트 콘텐츠**를 클릭합니다.
@@ -175,7 +176,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 사용자의 
 
 이 구성에서 관리자가 아닌 사용자는 비즈니스용 OneDrive 라이브러리를 IRM으로 보호해야 하므로 파일을 보호할 때의 이점과 보호 방법을 사용자에게 교육합니다. 예를 들어 비즈니스용 OneDrive에서 문서를 공유하는 경우 파일 이름을 바꾸고 다른 위치로 복사하더라도 권한을 받은 사람만 구성된 제한에 따라 문서에 액세스할 수 있습니다.
 
-#### 관리자를 위한 구성
+#### <a name="configuration-for-administrators"></a>관리자를 위한 구성
 관리자가 SharePoint 관리 센터를 이용해 사용자의 비즈니스용 OneDrive에 대한 IRM을 구성할 수는 없지만, Windows PowerShell을 이용해 구성할 수는 있습니다. 이러한 라이브러리에 대한 IRM을 사용하도록 설정하려면 다음 단계를 수행합니다.
 
 1.  [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)를 다운로드하여 설치합니다.
@@ -586,7 +587,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 사용자의 
 
 사용자의 비즈니스용 OneDrive 라이브러리에 대해 IRM을 사용하지 않도록 설정해야 하는 경우 [비즈니스용 OneDrive에 대해 IRM을 사용하지 않도록 설정하는 스크립트](#script-to-disable-irm-for-onedrive-for-business) 섹션을 참조하세요.
 
-##### 모든 비즈니스용 OneDrive URL을 .CSV 파일로 출력하는 추가 스크립트
+##### <a name="additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file"></a>모든 비즈니스용 OneDrive URL을 .CSV 파일로 출력하는 추가 스크립트
 4c 위의 단계에서 다음 Windows PowerShell 스크립트를 사용해 모든 사용자의 Business용 OneDrive 라이브러리의 URL을 추출할 수 있습니다. 그런 다음 확인해서 필요한 경우 편집하여 기본 스크립트로 가져올 수 있습니다.
 
 이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](http://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 동일한 지침에 따라 복사하여 붙여넣고 파일을 로컬로 저장(예: "Report-OneDriveForBusinessSiteInfo.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 이전과 마찬가지로 수정하고 스크립트를 실행합니다.
@@ -811,7 +812,7 @@ function Add-CredentialToCredentialCache
 $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 ```
 
-##### 비즈니스용 OneDrive에 대한 IRM를 사용하지 않도록 설정하는 스크립트
+##### <a name="script-to-disable-irm-for-onedrive-for-business"></a>비즈니스용 OneDrive에 대한 IRM를 사용하지 않도록 설정하는 스크립트
 사용자의 비즈니스용 OneDrive에 대한 IRM을 사용하지 않도록 설정해야 하는 경우 다음 샘플 스크립트를 사용합니다.
 
 이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](http://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 콘텐츠를 복사하여 붙여넣고 파일을 로컬로 저장(예: "Disable-IRMOnOneDriveForBusiness.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 수정합니다. 비즈니스용 OneDrive URL을 수동으로 지정하거나 이전 섹션의 스크립트를 사용하여 해당 URL을 가져온 다음 스크립트를 실행합니다.
@@ -1110,6 +1111,6 @@ Disconnect-SPOService -ErrorAction SilentlyContinue
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

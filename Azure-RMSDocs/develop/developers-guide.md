@@ -5,18 +5,18 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a22e6bd0-8ce8-45b4-9a32-273126ab831e
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
-ms.openlocfilehash: 366652cbf38c1215f73e6996edd54829170ba4c5
+ms.sourcegitcommit: 329dce4c8bb5a6de3ecb7bbd7e734b4acbf339c9
+ms.openlocfilehash: bbf266512a80ece05253cbfab7b9ab40505f3f67
 
 
 ---
@@ -24,25 +24,19 @@ ms.openlocfilehash: 366652cbf38c1215f73e6996edd54829170ba4c5
 # <a name="developers-guide"></a>개발자 가이드
 
 ## <a name="overview"></a>개요 ##
-이 가이드에서는 Rights Management SDK의 제품군과, 모든 지원되는 플랫폼에 걸쳐 있는 도구 및 코드 샘플의 증가하는 집합을 간략히 설명합니다.
+이 가이드에서는 지원되는 플랫폼, Rights Management SDK 제품군 및 PowerShell 관리 도구를 모두 포함하는 Microsoft의 늘어나는 도구 및 코드 샘플 집합을 간략히 설명합니다.
 
-## <a name="software-development-kits"></a>소프트웨어 개발 키트 ##
-다음 표에 나와 있는 RMS SDK의 3개 세대를 사용할 수 있습니다.
+[**코드 샘플 및 도구**](#code-samples-and-tools) - Android, iOS/OS X, Windows 클라이언트, 휴대폰 등 지원되는 운영 체제를 모두 포함합니다.
 
-| SDK | 설명 |
-|------|---------|
-| [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Microsoft Rights Management Services를 통해 Android, iOS, Mac OS X, Windows Phone/RT 및 Linux/C++ 장치 앱이 정보 보호를 사용할 수 있도록 하는 간단한 개발 환경을 제공하는 간소화된 차세대 도구 집합입니다. |
-| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Windows 데스크톱 응용 프로그램 개발자와 서버 기반 솔루션 공급자가 해당 제품에서 권한 관리를 사용할 수 있도록 하는 강력한 SDK 제품입니다.|
-|[AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx)|** 참고 ** - 클라이언트가 Msdrm.dll에 노출하는 기능을 활용하는 AD RMS SDK는 Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 및 Windows Vista에서 사용할 수 있습니다. 이후 버전에서는 변경되거나 제공되지 않을 수 있습니다. 클라이언트가 Msipc.dll에 노출하는 기능을 활용하는 Microsoft Rights Management Services SDK 2.1을 대신 사용합니다.|
-|[AD RMS Scripting API](https://msdn.microsoft.com/en-us/library/bb968797.aspx)(AD RMS 스크립팅 API)| AD RMS 설치를 관리할 스크립트를 만드는 데 사용됩니다.|
+[**PowerShell 지침**](#powershell-guidance) - Rights Management 관리 및 대량 보호 작업 모두를 대상으로 합니다.
 
-## <a name="powershell-guidance"></a>PowerShell 지침
+[**소프트웨어 개발 키트**](#software-development-kits) - Android, iOS 등의 여러 모바일 장치 운영 체제를 지원하며 Windows 클라이언트도 폭넓게 지원합니다.
 
-[Azure Rights Management Cmdlet](https://msdn.microsoft.com/library/azure/dn629398.aspx)은 명령줄에서 Azure RMS를 관리할 수 있도록 합니다. 이 작업은 자동화를 가능하게 하지만 관리 오버헤드를 줄일 수 있도록 안정적이고 반복적인 프로세스를 지원하기도 합니다. 또한, 일부 Azure RMS 고급 구성 및 작업 시에는 Azure PowerShell이 필요합니다.
 
-[RMS Protection Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)은 Azure Information Protection의 Azure RMS(Rights Management Services) 데이터 보호 또는 AD RMS(Active Directory Rights Management Services)와 함께 사용될 수 있으며, 이러한 Rights Management 배포에 대한 기타 PowerShell 모듈을 보완할 수 있습니다. 이러한 RMS 보호 cmdlet을 사용하여 모든 파일 형식의 파일을 대량으로 보호하거나 보호 해제합니다.
+---
 
 ## <a name="code-samples-and-tools"></a>코드 샘플 및 도구
+
 이 Microsoft 제공 RMS 코드 샘플 및 개발자 지원 도구 컬렉션은 지원되는 모든 운영 체제(Android, iOS/OS X, Windows Phone 및 Windows 데스크톱)에 걸쳐 있으며, 지원되는 SDK와의 호환성을 유지하기 위해 정기적으로 업데이트됩니다.
 
 ### <a name="android"></a>Android
@@ -79,8 +73,31 @@ ms.openlocfilehash: 366652cbf38c1215f73e6996edd54829170ba4c5
 
 - [샘플 응용 프로그램](https://github.com/Azure-Samples/active-directory-dotnet-rms-windowsstore) - Windows 스토어 응용 프로그램용 Microsoft RMS SDK v4.1에 대한 샘플은 플랫폼에 대한 기본 문서 사용 예제를 제공합니다.
 
+---
+
+## <a name="powershell-guidance"></a>PowerShell 지침
+Rights Management 관리와 대량 보호 작업 모두를 위한 PowerShell cmdlet을 제공합니다.
+
+[Azure Rights Management Cmdlet](https://msdn.microsoft.com/library/azure/dn629398.aspx)은 명령줄에서 Azure RMS를 관리할 수 있도록 합니다. 이 작업은 자동화를 가능하게 하지만 관리 오버헤드를 줄일 수 있도록 안정적이고 반복적인 프로세스를 지원하기도 합니다. 또한, 일부 Azure RMS 고급 구성 및 작업 시에는 Azure PowerShell이 필요합니다.
+
+[RMS Protection Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)은 Azure Information Protection의 Azure RMS(Rights Management Services) 데이터 보호 또는 AD RMS(Active Directory Rights Management Services)와 함께 사용될 수 있으며, 이러한 Rights Management 배포에 대한 기타 PowerShell 모듈을 보완할 수 있습니다. 이러한 RMS 보호 cmdlet을 사용하여 모든 파일 형식의 파일을 대량으로 보호하거나 보호 해제합니다.
+
+---
+
+## <a name="software-development-kits"></a>소프트웨어 개발 키트
 
 
-<!--HONumber=Nov16_HO2-->
+다음 표에 나와 있는 RMS SDK의 3개 세대를 사용할 수 있습니다.
+
+| SDK | 설명 |
+|------|---------|
+| [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Microsoft Rights Management Services를 통해 Android, iOS, Mac OS X, Windows Phone/RT 및 Linux/C++ 장치 앱이 정보 보호를 사용할 수 있도록 하는 간단한 개발 환경을 제공하는 간소화된 차세대 도구 집합입니다. |
+| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Windows 데스크톱 응용 프로그램 개발자와 서버 기반 솔루션 공급자가 해당 제품에서 권한 관리를 사용할 수 있도록 하는 강력한 SDK 제품입니다.|
+|[AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx)|** 참고 ** - 클라이언트가 Msdrm.dll에 노출하는 기능을 활용하는 AD RMS SDK는 Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 및 Windows Vista에서 사용할 수 있습니다. 이후 버전에서는 변경되거나 제공되지 않을 수 있습니다. 클라이언트가 Msipc.dll에 노출하는 기능을 활용하는 Microsoft Rights Management Services SDK 2.1을 대신 사용합니다.|
+|[AD RMS Scripting API](https://msdn.microsoft.com/en-us/library/bb968797.aspx)(AD RMS 스크립팅 API)| AD RMS 설치를 관리할 스크립트를 만드는 데 사용됩니다.|
+
+
+
+<!--HONumber=Nov16_HO3-->
 
 

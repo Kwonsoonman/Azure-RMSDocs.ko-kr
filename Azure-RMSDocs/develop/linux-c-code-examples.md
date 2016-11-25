@@ -3,6 +3,7 @@ title: "Linux 코드 예제 | Azure RMS"
 description: "이 항목에서는 Linux 버전의 RMS SDK에 대한 중요한 시나리오 및 코드 요소를 소개합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,19 +15,19 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: cb0ce6cc8f4740ffc04b36b02392bed2c5f5490c
 
 
 ---
 
-# Linux 코드 예제
+# <a name="linux-code-examples"></a>Linux 코드 예제
 
 이 항목에서는 Linux 버전의 RMS SDK에 대한 중요한 시나리오 및 코드 요소를 소개합니다.
 
 아래 코드 조각은 샘플 응용 프로그램 *rms\_sample* 및 *rmsauth\_sample*에서 가져온 것입니다. 자세한 내용은 GitHub 리포지토리에서 [샘플](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples)을 참조하세요.
 
-## 시나리오: 보호된 파일에서 보호 정책 정보 액세스
+## <a name="scenario-access-protection-policy-information-from-a-protected-file"></a>시나리오: 보호된 파일에서 보호 정책 정보 액세스
 
 **RMS 보호된 파일 열고 읽기**
 **소스**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -146,7 +147,7 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
       return fsResult;
     }
 
-## 시나리오: 템플릿을 사용하여 새 보호된 파일 만들기
+## <a name="scenario-create-a-new-protected-file-using-a-template"></a>시나리오: 템플릿을 사용하여 새 보호된 파일 만들기
 
 **사용자가 선택한 템플릿을 사용하여 파일 보호**
 **소스**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -286,7 +287,7 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
     
 
 
-## 시나리오: 사용자 지정 보호를 사용하여 파일 보호
+## <a name="scenario-protect-a-file-using-custom-protection"></a>시나리오: 사용자 지정 보호를 사용하여 파일 보호
 
 **사용자 지정 보호를 사용하여 파일 보호**
 **소스**: [rms\_sample/mainwindow.cpp](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples/rms_sample)
@@ -403,7 +404,7 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
     ConvertToPFileUsingPolicy(policy, inStream, fileExt, outStream);
     
 
-## WorkerThread - 지원 메서드
+## <a name="workerthread-a-supporting-method"></a>WorkerThread - 지원 메서드
 
 
 *WorkerThread()* 메서드는 두 개의 이전 예제 시나리오 **보호된 파일 스트림 만들기** 및 **정책이 제공되면 파일 보호**에서 다음과 같은 방식으로 호출됩니다.
@@ -498,7 +499,7 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
     }
 
 
-## 시나리오: RMS 인증
+## <a name="scenario-rms-authentication"></a>시나리오: RMS 인증
 
 다음 예제에서는 UI를 사용하거나 UI 없이 Azure 인증 oAuth2 토큰을 가져오는 두 가지 인증 방법을 보여 줍니다.
 **UI를 사용하여 oAuth2 인증 토큰 가져오기**
@@ -593,6 +594,6 @@ ms.openlocfilehash: 7fa2062e1aabf9c3a6ed054476ed6880ebf0bc5b
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

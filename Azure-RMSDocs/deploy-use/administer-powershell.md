@@ -2,6 +2,7 @@
 title: "Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리 | Azure Information Protection"
 description: "Azure Information Protection의 Azure Rights Management 서비스(AADRM)용 Windows PowerShell 모듈을 사용하여 조직에 대해 이 서비스를 관리하는 방법에 대해 알아봅니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/19/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3046fc94e92dfadd3158e2bdf0ed7eda51e8e8bc
-ms.openlocfilehash: c36a5a53f0a83afedb1e840a60a59d281a751f17
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 589aa704857a4cb16da62488545e63927d1de27d
 
 
 ---
 
-# Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
+# <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -53,6 +54,6 @@ Azure Rights Management 서비스를 활성화하고 나면 서비스를 추가�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

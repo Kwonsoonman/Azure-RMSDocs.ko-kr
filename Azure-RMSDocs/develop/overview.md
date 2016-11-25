@@ -3,6 +3,7 @@ title: "개요 - RMS SDK 4.2 | Azure RMS"
 description: "AD RMS 및 Azure RMS는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 390281fbc0a68346ec1cb4b943ddc5919a53fea0
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 65113e57c57621faf9e4625bf224a3f70e9b2e1d
 
 
 ---
 
-# 개요
+# <a name="overview"></a>개요
 
 Microsoft Rights Management SDK 4.2는 여러 플랫폼에서 사용할 수 있는 정보 보호 기술이며,  클라이언트 컴퓨터 및 장치에서 "권한 사용" 응용 프로그램을 통해 전송되는 정보에 대한 액세스 및 사용을 보호할 수 있도록 설계된 SDK(소프트웨어 개발자 키트) 또는 프레임워크를 제공합니다. 이러한 플랫폼용 SDK는 응용 프로그램 개발자에게 디지털 콘텐츠 보호 또는 사용, 템플릿 검색, 서버에서 정책 가져오기 및 기타 관련된 권한 관리 작업을 위한 간단한 API를 제공합니다.
 
@@ -36,7 +37,7 @@ Microsoft Rights Management SDK 4.2는 여러 플랫폼에서 사용할 수 있�
 
 MS RMS SDK 4.2는 사용권 계약의 승인 및 동의를 통해 다운로드할 수 있으며, 타사 소프트웨어와 함께 무료로 배포되어 사용자 환경이나 Azure RMS 서비스에서 AD RMS 서버를 사용 및 배포하여 권한이 보호된 콘텐츠를 클라이언트가 액세스할 수 있게 합니다. 자세한 내용은 [시작](get-started.md)을 참조하세요.
 
-## SDK의 주요 내용
+## <a name="sdk-highlights"></a>SDK의 주요 내용
 
 
 MS RMS SDK 4.2에서는 다음을 포함하여 새로운 몇 가지 멋진 기능을 제공합니다.
@@ -49,11 +50,11 @@ MS RMS SDK 4.2에서는 다음을 포함하여 새로운 몇 가지 멋진 기�
 
 [시작](get-started.md) 가이드를 사용하여 보호된 정보 장치 앱 프로젝트를 시작합니다.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 * [시작](get-started.md)
-* [Azure AD 인증 라이브러리](https://msdn.microsoft.com/en-us/library/jj573266.aspx)
+* [Azure AD Authentication Library](https://msdn.microsoft.com/en-us/library/jj573266.aspx)(Azure AD 인증 라이브러리)
 * [GitHub 계정](https://github.com/AzureAD/)
  
 
@@ -64,6 +65,6 @@ MS RMS SDK 4.2에서는 다음을 포함하여 새로운 몇 가지 멋진 기�
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

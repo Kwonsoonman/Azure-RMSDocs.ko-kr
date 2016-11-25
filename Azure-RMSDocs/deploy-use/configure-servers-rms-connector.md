@@ -4,7 +4,7 @@ description: "Azure RMS(Rights Management) 커넥터를 사용할 온-프레미�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: fc30e58bb6702576988db0dcb4fd38a73d5591b1
+ms.sourcegitcommit: afbaf9bfc2b898d8dece415a26045ec52f7deaac
+ms.openlocfilehash: 15d017cda5e390a6fd2b639ef451a15422981ae4
 
 
 ---
@@ -142,10 +142,16 @@ RMS 커넥터를 사용하려면 Exchange를 실행하는 이러한 서버가 �
 
 -   Exchange Server 2010(Exchange 2010 서비스 팩 3 롤업 업데이트 6 포함)
 
-또한 서버에 RMS 암호화 모드 2에 대한 지원이 포함된 RMS 클라이언트 버전을 설치해야 합니다. Windows Server 2008에서 지원되는 최소 버전은 [Windows Server 2008 R2 및 Windows Server 2008에서 AD RMS의 RSA 키 길이가 2048비트로 증가됨](http://support.microsoft.com/kb/2627272)에서 다운로드할 수 있는 핫픽스에 포함되어 있습니다. Windows Server 2008 R2의 최소 버전은 [Windows 7 또는 Windows Server 2008 R2에서 AD RMS에 대해 RSA 키가 2048비트로 증가함](http://support.microsoft.com/kb/2627273)에서 다운로드할 수 있습니다. Windows Server 2012 및 Windows Server 2012 R2는 기본적으로 암호화 모드 2를 지원합니다.
+이러한 서버에서는 RMS 암호화 모드 2를 지원하는 RMS 클라이언트(MSDRM이라고도 함)의 버전 1도 필요합니다. 모든 Windows 운영 체제에 MSDRM 클라이언트가 포함되어 있지만 이 클라이언트의 이전 버전은 암호화 모드 2를 지원하지 않았습니다. Exchange 서버에서 Windows Server 2012 이상을 실행 중인 경우 이러한 운영 체제에 설치된 RMS 클라이언트에서 암호화 모드 2를 기본적으로 지원하므로 추가 작업이 필요 없습니다. 
+
+Exchange 서버에서 이전 버전의 운영 체제를 실행 중인 경우에는 설치된 RMS 클라이언트 버전에서 암호화 모드 2를 지원하는지 확인하세요. 이를 위해 Windows\System32\Msdrm.dll의 설치된 파일 버전을 다음 기술 자료 문서에 나열된 버전 번호와 비교하세요. 설치된 버전 번호가 나열된 버전 번호보다 높거나 같은 경우 추가 작업이 필요하지 않습니다. 설치된 버전 번호가 낮은 경우에는 문서에서 핫픽스를 다운로드하여 설치하세요.
+
+- Windows Server 2008: [https://support.microsoft.com/kb/2627272](https://support.microsoft.com/kb/2627272) 
+
+- Windows Server 2008 R2: [https://support.microsoft.com/kb/2627273](https://support.microsoft.com/kb/2627273)
 
 > [!IMPORTANT]
-> 이러한 버전이나 이후 버전의 Exchange와 RMS 클라이언트가 설치되지 않은 경우 커넥터를 사용하도록 Exchange를 구성할 수 없습니다. 계속하기 전에 이러한 버전이 설치되어 있는지 확인하세요.
+> 이러한 버전이나 이후 버전의 Exchange와 MSDRM 클라이언트가 설치되지 않은 경우 커넥터를 사용하도록 Exchange를 구성할 수 없습니다. 계속하기 전에 이러한 버전이 설치되어 있는지 확인하세요.
 
 ### <a name="to-configure-exchange-servers-to-use-the-connector"></a>커넥터를 사용하도록 Exchange Server를 구성하려면
 
@@ -182,7 +188,7 @@ RMS 커넥터를 사용하려면 SharePoint를 실행하는 이러한 서버가 
 
 -   SharePoint Server 2010
 
-SharePoint 2016 또는 SharePoint 2013을 실행하는 서버도 RMS 커넥터에서 지원되는 MSIPC 클라이언트 2.1의 한 버전을 실행해야 합니다. 지원되는 버전이 있는지 확인하려면 [Microsoft 다운로드 센터](http://www.microsoft.com/download/details.aspx?id=38396)에서 최신 클라이언트를 다운로드합니다.
+SharePoint 2016 또는 SharePoint 2013을 실행하는 서버도 RMS 커넥터에서 지원되는 MSIPC 클라이언트 2.1의 한 버전을 실행해야 합니다. 지원되는 버전이 있는지 확인하려면 [Microsoft 다운로드 센터](https://www.microsoft.com/download/details.aspx?id=38396)에서 최신 클라이언트를 다운로드합니다.
 
 > [!WARNING]
 > 여러 버전의 MSIPC 2.1 클라이언트가 있으므로 1.0.2004.0 이상 버전이 있는지 확인합니다.
@@ -250,6 +256,6 @@ RMS 커넥터를 모니터링하려면 [Azure Rights Management 커넥터 모니
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

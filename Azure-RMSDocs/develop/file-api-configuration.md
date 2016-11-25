@@ -3,6 +3,7 @@ title: "파일 API 구성 | Azure RMS"
 description: "레지스트리 설정을 통해 파일 API의 동작을 구성할 수 있습니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 734ff9735adbf5aac5824b5c823a1fdcaf245d4e
-ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
+ms.sourcegitcommit: 329dce4c8bb5a6de3ecb7bbd7e734b4acbf339c9
+ms.openlocfilehash: 913373504e34321556a1cdd34ea2744d8477f562
 
 
 ---
 
-# 파일 API 구성
+# <a name="file-api-configuration"></a>파일 API 구성
 
 
 레지스트리 설정을 통해 파일 API의 동작을 구성할 수 있습니다.
@@ -32,17 +33,17 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 지원되는 파일 형식에 대한 자세한 내용은 이 항목에서 **파일 API 파일 지원 세부 정보**를 참조하세요.
 
-## 키/키 값 형식 및 설명
+## <a name="keykey-value-types-and-descriptions"></a>키/키 값 형식 및 설명
 
 다음 섹션에서는 암호화를 제어하는 키와 키 값에 대해 설명합니다.
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection`
 
 **형식**: 키
 
 **설명**: 파일 API에 대한 일반 구성이 포함됩니다.
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>`
 
 **형식**: 키
 
@@ -55,7 +56,7 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 키의 **Encryption** 값을 설정하여 보호 동작을 지정합니다. **Encryption** 값을 설정하지 않으면 파일 형식에 대한 기본 동작을 따릅니다.
 
 
-### HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\&lt;EXT&gt;\Encryption*
+### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
 
 **형식**: REG_SZ
 
@@ -76,7 +77,7 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 다른 값을 설정하거나 값을 설정하지 않으면 기본 동작이 사용됩니다.
 
-## 다양한 파일 형식에 대한 기본 동작
+## <a name="default-behavior-for-different-file-formats"></a>다양한 파일 형식에 대한 기본 동작
 
 -   **Office 파일** 네이티브 암호화가 사용됩니다.
 -   **txt, xml, jpg, jpeg, pdf, png, tiff, bmp, gif, giff, jpe, jfif, jif 파일** 네이티브 암호화가 사용됩니다(xxx가 pxxx로 바뀜).
@@ -84,7 +85,7 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 
 차단된 파일 형식에 대해 암호화를 시도하면 [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx) 오류가 발생합니다.
 
-### 파일 API - 파일 지원 세부 정보
+### <a name="file-api-file-support-details"></a>파일 API - 파일 지원 세부 정보
 
 모든 파일 형식(확장)에 대해 기본 지원을 추가할 수 있습니다. 예를 들어 &lt;ext&gt; 확장명(비 Office)의 경우 해당 확장명에 대한 관리자 구성이 "NATIVE"이면 \*.p&lt;ext&gt;가 사용됩니다.
 
@@ -106,7 +107,7 @@ ms.openlocfilehash: 92df5a261565b83e71a6bfd1a2d432072815bd27
 -   보호 유형 = Pfile: sample.*zzz*가 암호화되고 sample.*zzz*.pfile로 이름이 바뀝니다. 여기서 *zzz*는 원래 파일 확장명입니다.
 -   Off: 암호화를 사용하지 않도록 설정합니다.
 
-### 예
+### <a name="examples"></a>예
 
 다음 설정은 txt 파일에 대해 PFile 암호화를 사용하도록 설정합니다. Office 파일의 경우 기본적으로 기본 보호가 적용되고, txt 파일의 경우 PFile 보호가 적용되고, 기타 모든 파일의 경우 기본적으로 보호가 차단됩니다.
 
@@ -146,7 +147,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 - [개발자 노트](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
@@ -156,6 +157,6 @@ HKEY_LOCAL_MACHINE
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

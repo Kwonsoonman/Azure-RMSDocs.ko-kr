@@ -2,6 +2,7 @@
 title: "파일 서버 리소스 관리자 FCI를 사용하는 Azure RMS 보호용 Windows PowerShell 스크립트 | Azure Information Protection"
 description: "Windows Server 파일 분류 인프라를 사용하는 RMS 보호를 위한 지침에 설명된 대로 복사하고 편집할 수 있는 샘플 스크립트를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/24/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2723c4417890411230e9dbab4e2d9e36282b1db
-ms.openlocfilehash: 0e2ff499fc7c9890a3d8d7327964e3ed5ac19112
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 3ec4b05af68380994f636d0a415691f6465f65b0
 
 
 ---
 
-# 파일 서버 리소스 관리자 FCI를 사용하는 Azure RMS 보호용 Windows PowerShell 스크립트
+# <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>파일 서버 리소스 관리자 FCI를 사용하는 Azure RMS 보호용 Windows PowerShell 스크립트
 
 >*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
@@ -176,6 +177,6 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

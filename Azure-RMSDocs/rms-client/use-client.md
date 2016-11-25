@@ -2,6 +2,7 @@
 title: "클라이언트 | Azure Information Protection"
 description: "Microsoft Azure Information Protection은 조직 데이터를 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다. 클라이언트(Azure Information Protection 클라이언트 또는 Rights Management 클라이언트)는 컴퓨터와 모바일 장치에서 실행하는 응용 프로그램과 통합됩니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c7945e9587990e2f2893ffb47bc2f2534d41a8f
-ms.openlocfilehash: 5685134a6da93e193a2f7dc67cba5f3dea7da6a9
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 70f10569884811b0b8dfab9b138399720ff48267
 
 
 ---
 
-# Azure Information Protection의 클라이언트 측면
+# <a name="the-client-side-of-azure-information-protection"></a>Azure Information Protection의 클라이언트 측면
 
->*적용 대상: Active Directory Rights Management Services, Azure 권한 관리, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 Azure Information Protection은 조직의 문서와 전자 메일을 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다.
 
@@ -44,11 +45,11 @@ RMS(Rights Management) 클라이언트는 Office 응용 프로그램, RMS 공유
 - [Windows용 Rights Management 공유 응용 프로그램](sharing-app-windows.md)
 
 
-## 참고 항목
+## <a name="see-also"></a>참고 항목
 [Azure Information Protection 및 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

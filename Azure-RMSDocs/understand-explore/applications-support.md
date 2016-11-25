@@ -2,6 +2,7 @@
 title: "응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법 | Azure Information Protection"
 description: "Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 응용 프로그램과 Exchange, SharePoint 등의 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 통해 조직의 문서와 전자 메일을 보호하는 방식을 파악합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9dee9e7c925258ffd3cd9e783582733e9518d3fa
-ms.openlocfilehash: 3d2f95f2a20782897be293162d901ae0ffac421a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: fdb862b0d4f3d0a6b3411b38a314e28b5f1f9edc
 
 
 ---
 
-# 응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법
+# <a name="how-applications-support-the-azure-rights-management-service"></a>응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: 3d2f95f2a20782897be293162d901ae0ffac421a
 
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 다음 항목이 각각 Azure Rights Management 서비스를 지원하는 방식에 대한 자세한 정보:
 
@@ -62,6 +63,6 @@ ms.openlocfilehash: 3d2f95f2a20782897be293162d901ae0ffac421a
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

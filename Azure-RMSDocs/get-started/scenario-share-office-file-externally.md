@@ -2,6 +2,7 @@
 title: "시나리오 - 다른 조직의 사용자와 Office 파일 공유 | Azure Information Protection"
 description: "이 시나리오와 지원 사용자 문서에서는 사용자가 다른 조직의 사용자와 Office 파일을 안전하게 메일로 주고받을 수 있도록 Azure Rights Management 보호를 사용합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: get-started-article
@@ -12,13 +13,13 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f5c138b7a27c7577e5bff23d521ba36264ecc2a
-ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 24b4e542a437a824c6783b02bde5bfb848cdeb3a
 
 
 ---
 
-# 시나리오 - 다른 조직의 사용자와 Office 파일 공유
+# <a name="scenario-share-an-office-file-with-users-in-another-organization"></a>시나리오 - 다른 조직의 사용자와 Office 파일 공유
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -34,12 +35,12 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 -   직원이 외부 사용자가 이 문서를 연 시간을 확인하려는 경우
 
-## 배포 지침
+## <a name="deployment-instructions"></a>배포 지침
 ![Azure RMS 빠른 배포를 위한 관리자 지침](../media/AzRMS_AdminBanner.png)
 
 사용자 문서를 진행하기 전에 다음 요구 사항이 충족되었는지 확인합니다.
 
-## 이 시나리오의 요구 사항
+## <a name="requirements-for-this-scenario"></a>이 시나리오의 요구 사항
 이 시나리오의 사용자 지침이 작동하려면 다음 사항을 준비해야 합니다.
 
 |요구 사항|추가 정보가 필요한 경우 확인 가능한 위치|
@@ -50,7 +51,7 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 |사용자가 Office 2013의 Outlook을 사용 중인지 여부|사용자가 Office 2016 또는 Office 2010을 사용 중인 경우에는 그림이 사용자에게 표시되는 화면과 일치하도록 스크린샷을 해당 버전의 그림으로 바꿉니다.|
 |Azure Information Protection용 구독에는 문서 추적이 포함되어 있습니다.|구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 사용자가 사용자 지침의 모든 단계를 완료할 수 없습니다. 이 경우에는 해당 기능을 지원하는 구독을 구입하거나 사용자 지침을 수정하여 이러한 기능을 사용하는 단계를 제거합니다.<br /><br />Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 확인하세요.|
 
-## 사용자 문서 지침
+## <a name="user-documentation-instructions"></a>사용자 문서 지침
 다음 템플릿을 사용하여 최종 사용자 통신에 사용자 지침을 복사해서 붙여넣고 사용자 환경에 맞게 다음과 같이 수정합니다.
 
 1.  *&lt;Office 문서 종류의 이름&gt;*을 사용자가 보낼 문서 종류로 바꿉니다. 사용자의 워크플로에 대해 “Word 문서", “Excel 스프레드시트" 등이 아닌 “가격 목록", “배송 시간", “입찰 제안" 등 구체적이며 익숙한 용어를 사용합니다. 이처럼 보다 구체적인 단어를 사용하면 해당 문서를 사용할 때 지침을 따를 가능성이 증가합니다.
@@ -76,7 +77,7 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 ![Azure RMS 빠른 배포를 위한 템플릿 사용자용 설명 문서](../media/AzRMS_UsersBanner.png)
 
-### &lt;Office 문서 종류 이름 공유 방법&gt;
+### <a name="how-to-share-a-ltname-of-office-document-typegt"></a>&lt;Office 문서 종류 이름&gt; 공유 방법
 
 1.  메일 주소를 하나 이상 지정하고 메시지를 입력한 다음 *&lt;Office 문서 종류 이름&gt;*을 메일 메시지에 첨부하여 메일 메시지를 작성합니다. 그런 다음 **메시지** 탭의 **RMS** 그룹에서 **보호된 항목 공유** 를 클릭하고 **보호된 항목 공유** 를 다시 클릭합니다.
 
@@ -100,11 +101,11 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 [문서 포털 추적](https://track.azurerms.com/)을 사용하면 받는 사람이 첨부된 &lt;Office 문서 종류 이름&gt;을 열었는지 여부와 연 시간을 추적할 수 있습니다. 받는 사람이 &lt;Office 문서 종류 이름&gt;을 열었음을 확인한 직후에 추가로 전화 연락을 할 수 있습니다.
 
-**도움이 필요하십니까?**
+**도움이 필요한가요?**
 
 -   추가 정보를 확인하려면 다음 항목을 참조하세요.
 
-    -   [전자 메일을 통해 공유하는 파일 보호](../rms-client/sharing-app-protect-by-email.md)
+    -   [메일을 통해 공유하는 파일 보호](../rms-client/sharing-app-protect-by-email.md)
 
     -   [문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)
 
@@ -112,10 +113,10 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
     -   *&lt;연락처 세부 정보&gt;*
 
-### 예제 사용자 지정 사용자 문서
+### <a name="example-customized-user-documentation"></a>예제 사용자 지정 사용자 문서
 ![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서](../media/AzRMS_ExampleBanner.png)
 
-#### 고객과 가격 목록을 공유하는 방법
+#### <a name="how-to-share-a-price-list-with-your-customer"></a>고객과 가격 목록을 공유하는 방법
 
 1.  고객의 전자 메일 주소를 하나 이상 지정하고 메시지를 입력한 다음 최신 가격 목록을 전자 메일 메시지에 첨부하여 전자 메일 메시지를 작성합니다. 그런 다음 **메시지** 탭의 **RMS** 그룹에서 **보호된 항목 공유** 를 클릭하고 **보호된 항목 공유** 를 다시 클릭합니다.
 
@@ -139,21 +140,21 @@ ms.openlocfilehash: 2a03ae13b269b1a7352dd81fea52fc68bed17d99
 
 [문서 포털 추적](https://track.azurerms.com/) 을 사용하면 받는 사람이 첨부된 가격 목록을 열었는지 여부와 연 시간을 추적할 수 있습니다. 받는 사람이 가격 목록을 열었음을 확인한 직후에 추가로 전화 연락을 할 수 있습니다.
 
-**도움이 필요하십니까?**
+**도움이 필요한가요?**
 
 -   추가 정보를 확인하려면 다음 항목을 참조하세요.
 
-    -   [전자 메일을 통해 공유하는 파일 보호](../rms-client/sharing-app-protect-by-email.md)
+    -   [메일을 통해 공유하는 파일 보호](../rms-client/sharing-app-protect-by-email.md)
 
     -   [문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)
 
 -   지원 센터에 연락하려면 다음 정보를 참조하세요.
 
-    -   전자 메일: helpdesk@vanarsdelltd.com
+    -   메일: helpdesk@vanarsdelltd.com
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

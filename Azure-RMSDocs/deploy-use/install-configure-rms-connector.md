@@ -2,6 +2,7 @@
 title: "Azure Rights Management 커넥터 설치 및 구성 | Azure Information Protection"
 description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 1~4단계를 설명합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d5b6a1fc3fa0a19f3a6b65aa7b8815eda7432cd7
-ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: babd3b14cba61aa49cb448c1d132b279dc9ad5da
 
 
 ---
 
-# Azure 권한 관리 커넥터 설치 및 구성
+# <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -27,7 +28,7 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 시작하기 전에 이 배포에 대한 [필수 조건](deploy-rms-connector.md#prerequisites-for-the-rms-connector)을 검토 및 확인해야 합니다.
 
 
-## RMS 커넥터 설치
+## <a name="installing-the-rms-connector"></a>RMS 커넥터 설치
 
 1.  RMS 커넥터를 실행할 컴퓨터(최소 2대)를 식별합니다. 이러한 컴퓨터는 필수 조건에 나열되어 있는 최소 사양을 충족해야 합니다.
 
@@ -52,8 +53,8 @@ ms.openlocfilehash: 4af8d8b5f95edc7bd95fda93b26da98ee00b5075
 
 계속하려면 계정과 암호를 입력하여 RMS 커넥터를 구성합니다.
 
-## 자격 증명 입력
-RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있는 권한이 있는 계정의 자격 증명을 입력해야 합니다. 예를 들어 **admin@contoso.com**을 입력한 다음 이 계정의 암호를 지정할 수 있습니다.
+## <a name="entering-credentials"></a>자격 증명 입력
+RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있는 권한이 있는 계정의 자격 증명을 입력해야 합니다. 예를 들면 **admin@contoso.com**을 입력한 다음 이 계정에 대한 암호를 지정할 수 있습니다.
 
 이 암호에 대한 몇 가지 문자 제한이 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증이 실패하고 사용자 이름과 암호 조합이 잘못되었습니다.라는 오류 메시지가 표시됩니다. 이 사항을 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나, 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
 
@@ -115,7 +116,7 @@ RMS 커넥터 설치 프로세스 동안 모든 필수 구성 요소 소프트�
 
 RMS 커넥터를 제거해야 할 경우 마법사를 다시 실행하고 제거 옵션을 선택합니다.
 
-## RMS 커넥터를 사용하도록 서버에 권한 부여
+## <a name="authorizing-servers-to-use-the-rms-connector"></a>RMS 커넥터를 사용하도록 서버에 권한 부여
 두 대 이상의 컴퓨터에 RMS 커넥터를 설치한 경우 RMS 커넥터를 사용할 서버 및 서비스에 권한을 부여할 준비가 된 것입니다. Exchange Server 2013 또는 SharePoint Server 2013을 실행하는 서버를 예로 들 수 있습니다.
 
 이러한 서버를 정의하려면 RMS 커넥터 관리 도구를 실행하고 허용된 서버 목록에 항목을 추가합니다. 이 도구는 Microsoft Rights Management 커넥터 설치 마법사의 마지막 부분에서 **커넥터 관리자 콘솔을 시작하여 서버에 권한 부여** 를 선택할 때 실행할 수도 있고 마법사에서 별도로 실행할 수 있습니다.
@@ -132,7 +133,7 @@ RMS 커넥터를 제거해야 할 경우 마법사를 다시 실행하고 제거
 > 서버 권한 부여는 서비스 또는 서버 컴퓨터 계정에 대한 ServerCertification.asmx에 NTFS 권한을 수동으로 적용하고 Exchange 계정에 사용자 슈퍼 권한을 수동으로 부여하는 AD RMS 구성과 동등한 Azure RMS의 구성입니다. 커넥터에서는 ServerCertification.asmx에 NTFS 권한을 적용할 필요가 없습니다.
 
 
-### 허용된 서버 목록에 서버를 추가하려면
+### <a name="add-a-server-to-the-list-of-allowed-servers"></a>허용된 서버 목록에 서버를 추가하려면
 **서버가 커넥터를 사용할 수 있도록 허용** 페이지에서 개체 이름을 입력하거나 권한을 부여할 개체를 찾아 식별합니다.
 
 올바른 개체에 권한을 부여해야 합니다. 서버가 커넥터를 사용하도록 하려면 온-프레미스 서비스(예: Exchange 또는 SharePoint)를 실행하는 계정을 권한 부여 대상으로 선택해야 합니다. 예를 들어 서비스가 구성된 서비스 계정으로 실행되고 있는 경우 해당 서비스 계정의 이름을 목록에 추가합니다. 서비스가 로컬 시스템으로 실행되고 있는 경우 컴퓨터 개체의 이름을 추가합니다(예: SERVERNAME$). 가장 좋은 방법은 이러한 계정을 포함하는 그룹을 만들고 개별 서버 이름 대신 그룹을 지정하는 것입니다.
@@ -160,7 +161,7 @@ RMS 커넥터를 제거해야 할 경우 마법사를 다시 실행하고 제거
 
 아직 수행하지 않은 경우 지금 RMS 커넥터가 설치되어 있는 서버의 부하 분산을 구성하고 이러한 서버와 방금 권한을 부여한 서버 간의 연결에 HTTPS를 사용할지 여부를 고려해야 합니다.
 
-## 부하 분산 및 고가용성 구성
+## <a name="configuring-load-balancing-and-high-availability"></a>부하 분산 및 고가용성 구성
 RMS 커넥터의 두 번째 또는 마지막 인스턴스를 설치한 후 커넥터 URL 서버 이름을 정의하고 부하 분산 시스템을 구성합니다.
 
 커넥터 URL 서버 이름은 제어하는 네임스페이스 아래의 어떤 이름도 될 수 있습니다. 예를 들어 DNS 시스템에서 **rmsconnector.contoso.com**에 해당하는 항목을 만들고 부하 분산 시스템에서 IP 주소를 사용하도록 이 항목을 구성할 수 있습니다. 이 이름에 대한 특별한 요구 사항은 없으며 커넥터 서버 자체에서 이름을 구성할 필요가 없습니다. Exchange 및 SharePoint Server가 인터넷을 통해 커넥터와 통신할 것이 아니라면 이 이름을 인터넷에서 확인할 필요가 없습니다.
@@ -182,7 +183,7 @@ DNS에서 이름을 만들고 IP 주소에 대해 구성한 후 트래픽을 커
 
 RMS 커넥터 서비스를 실행하는 서버에 대한 부하 분산된 시스템에 대해 정의하는 이 이름은 나중에 Azure RMS를 사용하도록 온-프레미스 서버를 구성할 때 사용하는 조직의 RMS 커넥터 이름입니다.
 
-## HTTPS를 사용하도록 RMS 커넥터 구성
+## <a name="configuring-the-rms-connector-to-use-https"></a>HTTPS를 사용하도록 RMS 커넥터 구성
 > [!NOTE]
 > 이 구성 단계는 선택 사항이지만 보안 강화를 위해 수행하는 것이 좋습니다.
 
@@ -199,10 +200,10 @@ HTTPS 옵션을 사용하는 경우 커넥터를 실행하는 모든 서버에 E
 > -   독립 CA를 사용하거나 다른 회사에서 이 인증서를 구입하는 경우에는 TechNet의 [웹 서버(IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 문서 라이브러리에서 [인터넷 서버 인증서 구성(IIS 7)](http://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx)을 참조하세요.
 > -   인증서를 사용하도록 IIS를 구성하려면 TechNet의 [웹 서버(IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 문서 라이브러리에서 [사이트에 바인딩 추가(IIS 7)](http://technet.microsoft.com/library/cc731692.aspx)를 참조하세요.
 
-## 웹 프록시 서버에 대해 RMS 커넥터 구성
+## <a name="configuring-the-rms-connector-for-a-web-proxy-server"></a>웹 프록시 서버에 대해 RMS 커넥터 구성
 커넥터 서버가 직접 인터넷에 연결되어 있지 않은 네트워크에 설치되어 있고 아웃바운드 인터넷 액세스를 위해 웹 프록시 서버를 수동으로 구성해야 하는 경우 이러한 RMS 커넥터용 서버에서 레지스트리를 구성해야 합니다.
 
-#### 웹 프록시 서버를 사용하도록 RMS 커넥터를 구성하려면
+#### <a name="to-configure-the-rms-connector-to-use-a-web-proxy-server"></a>웹 프록시 서버를 사용하도록 RMS 커넥터를 구성하려면
 
 1.  RMS 커넥터를 실행하는 각 서버에서 레지스트리 편집기(예: Regedit)를 엽니다.
 
@@ -214,7 +215,7 @@ HTTPS 옵션을 사용하는 경우 커넥터를 실행하는 모든 서버에 E
 
 4.  레지스트리 편집기를 닫은 후 서버를 다시 시작하거나 IISReset 명령을 수행하여 IIS를 다시 시작합니다.
 
-## 관리 컴퓨터에 RMS 커넥터 관리 도구 설치
+## <a name="installing-the-rms-connector-administration-tool-on-administrative-computers"></a>관리 컴퓨터에 RMS 커넥터 관리 도구 설치
 RMS 커넥터가 설치되어 있지 않은 컴퓨터가 다음 요구 사항을 충족하는 경우, 해당 컴퓨터에서 RMS 커넥터 관리 도구를 실행할 수 있습니다.
 
 -   Windows Server 2012 또는 Windows Server 2012 R2(모든 버전), Windows Server 2008 R2 또는 Windows Server 2008 R2 서비스 팩 1(모든 버전), Windows 8.1, Windows 8 또는 Windows 7을 실행하는 물리적 또는 가상 컴퓨터
@@ -236,10 +237,10 @@ RMS 커넥터 관리 도구를 설치하려면 다음 파일을 실행합니다.
 이러한 파일을 아직 다운로드하지 않았으면 [Microsoft 다운로드 센터](http://go.microsoft.com/fwlink/?LinkId=314106)에서 다운로드할 수 있습니다.
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 이제 RMS 커넥터를 설치 및 구성했으므로 커넥터를 사용하도록 온-프레미스 서버를 구성할 준비가 되었습니다. [Azure 권한 관리 커넥터에 대해 서버 구성](configure-servers-rms-connector.md)으로 이동합니다.
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

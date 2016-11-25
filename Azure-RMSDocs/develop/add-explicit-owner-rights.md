@@ -3,6 +3,7 @@ title: "명시적 소유자 권한 추가 방법 | Azure RMS"
 description: Your application should explicitly add "Owner" rights when creating a license from scratch.
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8be965d76578c28457eee207b56e5da83f7eb468
-ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2fa260480eaa26a529a058b597657216572b4cb8
 
 
 ---
 
-# 방법: 명시적 소유자 권한 추가
+# <a name="howto-add-explicit-owner-rights"></a>방법: 명시적 소유자 권한 추가
 
 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)를 사용하여 라이선스를 처음부터 만드는 경우 응용 프로그램에서 "소유자" 권한을 명시적으로 추가해야 합니다.
 
-## 필수 구성 요소
+## <a name="prerequisites"></a>필수 구성 요소
 
 응용 프로그램이 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)를 사용하여 라이선스 핸들을 만드는 경우 소유자에게 모든 권한을 명시적으로 부여해야 합니다.
 
@@ -33,16 +34,16 @@ ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
 
 다음 예제 코드에서는 특정 권한을 만들고 특정 라이선스에 추가하는 작업과 관련된 단계만 보여 줍니다.
 
-## 지침
+## <a name="instructions"></a>지침
  
-## 1단계: 예제 시나리오
+## <a name="step-1-example-scenario"></a>1단계: 예제 시나리오
 
 이 예제에서는 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)를 사용하여 만든 라이선스에 필요한 권한이 추가되었습니다. 예제에서는 권한을 만들고 권한 목록을 통해 라이선스에 권한을 할당하는 작업을 보여 줍니다.
 
 해당 사용자에게 다음 두 가지 권한이 추가되었습니다.
 
 -   *읽기* 권한이 joe@contoso.com에 할당됨
--   *모든* 권한이 mary\_kay@contoso.com에 할당됨
+-   *전체* 권한이 mary\_kay@contoso.com에 할당됨
 
         // Create User Rights structure
         IPC_USER_RIGHTS ownerRightForOwner = {0};
@@ -105,7 +106,7 @@ ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
 
 
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 - [개발자 노트](developer-notes.md)
 - [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)
@@ -116,6 +117,6 @@ ms.openlocfilehash: 36c0bece4fb99e4d92fcda0c57da1b3cee11e37a
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

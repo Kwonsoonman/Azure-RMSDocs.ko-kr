@@ -2,8 +2,9 @@
 title: "Azure Information Protection에 대한 관리 정보 및 지원 | Azure Information Protection"
 description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Microsoft에 연락하는 방법에 대한 정보가 포함된 관리자용 리소스입니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/13/2016
+ms.date: 11/11/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +13,13 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 263c4109ac5dec435bbb0b126594eeafc974ff47
-ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
+ms.sourcegitcommit: 757b0e1a65d54f81b00c6513ee85ded4fe753684
+ms.openlocfilehash: 37f42c4b9f4e4b41e96b3e1e6a74a6c3d7deb254
 
 
 ---
 
-# Azure Information Protection에 대한 정보 및 지원
+# <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -28,20 +29,22 @@ ms.openlocfilehash: 79bed57d13aba8648ab3e3b7340bcc6d711f7942
 |----------------|---------------|
 |서비스에 권장되는 설명서 참조 →|[Azure Information Protection 설명서](https://docs.microsoft.com/information-protection/) 시작 페이지 사용.|
 |설명서에 대한 의견 제공 또는 설명서 관련 질문 →| [askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)에 전자 메일 보내기|
-|Information Protection에 대한 트윗 및 제품 그룹의 문서 업데이트에 대한 공지 사항 수신→|Microsoft Information Protection 팀 책임자인 Dan Plastina 팔로우.  [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)를 참조하세요.|
+|Information Protection에 대한 트윗 및 제품 그룹의 문서 업데이트에 대한 공지 사항 수신→|Microsoft Information Protection 팀 책임자인 Dan Plastina 팔로우. [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy) 참조|
 |구독 정보 및 지원되는 기능 확인 →|Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 사용하세요.|
 
 
-## 새 릴리스에 대한 정보
-Information Protection 제품 그룹은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)에 새 릴리스와 업데이트에 대한 공지를 게시합니다. 이러한 블로그 게시물은 제품 문서와 지원 정보를 보완합니다.
+## <a name="information-about-new-releases-and-updated-documentation"></a>새 릴리스 및 업데이트된 설명서에 대한 정보
+Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)에 새 릴리스와 업데이트에 대한 공지를 게시합니다. 이러한 블로그 게시물은 제품 문서와 지원 정보를 보완합니다.
+
+각 월의 끝에는 "**Azure Information Protection Documentation Update for \<month, year>**"(<월, 연도>의 Azure Information Protection 설명서 업데이트)라는 제목으로 설명서 변경 내용이 요약되어 있습니다. 이러한 게시물은 콘텐츠 형식 태그가 [**업데이트**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)이며 새 릴리스에 대한 설명서 업데이트뿐 아니라 기존 릴리스에 대한 수정 사항 및 설명도 포함합니다.
 
 > [!TIP]
 > Microsoft Rights Management 서비스(Azure RMS 또는 AD RMS)를 사용하는 응용 프로그램을 개발 중인 경우에는 [Active Directory Rights Management Services (AD RMS) Developer's Corner Blog(AD RMS(Active Directory Rights Management Services) 개발자 코너 블로그)](https://blogs.msdn.microsoft.com/rms/)도 확인할 수 있습니다.
 
-## 지원 옵션 및 커뮤니티 리소스
+## <a name="support-options-and-community-resources"></a>지원 옵션 및 커뮤니티 리소스
 다음 섹션에서는 지원 및 문제 해결 옵션과 커뮤니티 리소스에 대한 정보를 제공합니다.
 
-### Microsoft 지원에 문의
+### <a name="to-contact-microsoft-support"></a>Microsoft 지원에 문의
 
 프리미어 지원이 있는 경우는 [프리미어 지원 고객용 포털](https://premier.microsoft.com/)을 방문하여 사건을 제출하고, 해결 방법을 검색하고, 도움을 받습니다.
 
@@ -59,7 +62,7 @@ Information Protection 제품 그룹은 [Enterprise Mobility and Security Blog](
 
 추가적인 지원 옵션은 Microsoft 담당자에게 문의하세요. 
 
-### 자가 진단
+### <a name="self-help"></a>자가 진단
 
 주문형 비디오:
 
@@ -79,9 +82,9 @@ Information Protection 제품 그룹은 [Enterprise Mobility and Security Blog](
 
 - 자동화된 검사, 자동 수정 및 추적이 필요하면 [RMS 분석기 도구](http://www.microsoft.com/en-us/download/details.aspx?id=46437)를 다운로드하여 실행하세요. 이 도구에 대한 자세한 내용은 다운로드 페이지의 **세부 정보** 및 **설치 지침**을 참조하세요. 
 
-### 커뮤니티 리소스
+### <a name="community-resources"></a>커뮤니티 리소스
 
--   [Yammer: Azure Information Protection](http://www.yammer.com/AskIPTeam)
+-   [Yammer: Azure Information Protection](https://www.yammer.com/AskIPTeam)
 
 -   [포럼: Microsoft RMS(클라우드)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)
 
@@ -90,6 +93,6 @@ Information Protection 제품 그룹은 [Enterprise Mobility and Security Blog](
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

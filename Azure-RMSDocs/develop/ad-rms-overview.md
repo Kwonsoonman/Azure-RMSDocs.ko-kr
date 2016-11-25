@@ -3,6 +3,7 @@ title: "개요 - RMS SDK 2.1 | Azure RMS"
 description: "RMS(권한 관리 서비스)는 디지털 정보가 무단으로 사용되지 않도록 보호하는 정보 보호 기술입니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 82441858230e179a08bfa74e0f6aaf9ed17a62fb
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 816d665314fb77931433e36420b54c3ab6f689b9
 
 
 ---
 
-# 개요
+# <a name="overview"></a>개요
 
 권한 관리 서비스 SDK 2.1은 디지털 정보의 무단 사용을 방지하는 정보 보호 기술입니다. 권한 사용 응용 프로그램을 통해 콘텐츠 소유자는 콘텐츠를 열거나 수정, 인쇄, 전달하거나 다른 작업을 수행할 수 있는 사람을 정의할 수 있습니다.
 
@@ -42,7 +43,7 @@ AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내�
 
 이 섹션의 나머지 항목에서는 RMS 아키텍처 및 구현 과정을 다룹니다.
 
-## 섹션 내용
+## <a name="in-this-section"></a>섹션 내용
 
 | 항목 | 설명 |
 |-------|-------------|
@@ -50,17 +51,17 @@ AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내�
 |[서버](ad-rms-server.md) | 이 항목에서는 Azure 및 Windows Server용 RMS 서버의 용도와 기능에 대해 설명합니다.|
 
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [RMS 개념](application-types.md)
 * [시작](getting-started-with-ad-rms-2-0.md)
-* [AD RMS에 대한 IT 전문가 설명서](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)
+* [IT Pro documentation for AD RMS](https://TechNet.Microsoft.Com/en-us/library/cc771234.aspx)(AD RMS에 대한 IT 전문가 설명서)
  
 
  
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

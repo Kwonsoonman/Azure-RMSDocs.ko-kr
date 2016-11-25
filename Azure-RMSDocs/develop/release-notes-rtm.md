@@ -3,6 +3,7 @@ title: "릴리스 정보 | Azure RMS"
 description: 
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/20/2016
 ms.topic: article
@@ -14,17 +15,17 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f65f42b54fbca1a0436a0f1f6cc9be60a5e3c68
-ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: d481ee096213af79a7852f1afa6d075d389a4212
 
 
 ---
 
-# 릴리스 정보
+# <a name="release-notes"></a>릴리스 정보
 
 이 항목에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.
 
-## 2016년 2월의 새로운 기능 - SDK 문서 업데이트
+## <a name="new-for-the-february-2016-sdk-documentation-update"></a>2016년 2월의 새로운 기능 - SDK 문서 업데이트
 
 >[!Note]
 > 이 섹션의 기능 문서 업데이트는 2015년 12월 11일자 SDK 다운로드에 적용됩니다.
@@ -40,7 +41,7 @@ ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
 - **RMS SDK를 사용하는 Microsoft Online SIA(로그인 도우미)에 대한 지원을 제거하는 중입니다.** 지원이 중지되는 시간 후 6개월 동안 SIA의 사용을 계속 지원할 예정입니다.
 
 
-## 2015년 12월 업데이트
+## <a name="december-2015-update"></a>2015년 12월 업데이트
 
 - 다음을 포함하여 여러 영역에서 성능 향상이 구현되었습니다.
     - 라이선스 전용 서버를 사용하는 경우 기본 라이선스 서버에서 게시합니다.
@@ -50,11 +51,11 @@ ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
 - [지원되는 플랫폼](supported-platforms.md) 목록도 업데이트되었습니다.
 - 사전 프로덕션 환경의 요구 및 응용 프로그램 매니페스트의 사용이 RMS SDK 2.1에서 제거되었습니다. 이 개발자 설명서 집합의 다음 섹션이 제거되었으며, 전체 설명서가 단순한 형태로 다시 구성되었습니다.
 
-## 2015년 5월 업데이트
+## <a name="may-2015-update"></a>2015년 5월 업데이트
 
 -   **서비스 앱 및 클라우드 기반 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이와 관련된 항목이 이 정보의 처리 지침을 제공하도록 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 수정 버전을 참조하세요.
 
-## 2015년 4월 업데이트
+## <a name="april-2015-update"></a>2015년 4월 업데이트
 
 -   이제 새로운 API 집합을 통해 **문서 추적**을 사용할 수 있습니다. 자세한 내용은 [콘텐츠 추적](tracking-content.md)을 참조하세요.
 -   **암호화 유형** - 이제 암호화 패키지 선택에 대해 API 수준 제어를 지원합니다. 자세한 내용은 [암호화 작업](working-with-encryption.md)을 참조하세요.
@@ -65,7 +66,7 @@ ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
 -   이제 **로깅**이 파일 및 Windows용 이벤트 추적 방법 둘 다를 통해 구현됩니다.
 -   **Windows 7 SP1 또는 Windows Server 2008 R2 컴퓨터**에서 실행하는 경우 "중요한 개발자 노트" 아래에 있는 참고 사항을 참조하세요.
 
-## 2015년 1월 업데이트
+## <a name="january-2015-update"></a>2015년 1월 업데이트
 
 -   **지원되는 보호된 파일(pfile) 크기 증가** - 이제 1GB보다 큰 pfile 크기를 지원합니다. pfile에 대한 자세한 내용은 [Supported File Formats](supported-file-formats.md)(지원되는 파일 형식) 항목을 참조하세요.
 -   **더 나은 진단을 위한 향상된 로깅** - 로깅 수준에서 검토해야 하는 메시지에 대해 **오류** 또는 **경고**가 표시됩니다. 여전히 표시되는 예외를 포함하여 다른 모든 메시지는 **정보**로 기록됩니다.
@@ -75,12 +76,12 @@ ms.openlocfilehash: 31670bda73bdf0ddcb0167c40cdf32b11fd7af3c
 -   **회사 템플릿 가져오기** – 고객 보고서 및 피드백에 따라 템플릿 가져오기 코드가 상당히 수정되었습니다.
 -   향상된 지역화 일관성
 
-## 2014년 10월 업데이트
+## <a name="october-2014-update"></a>2014년 10월 업데이트
 
 -   SDK의 파일 API 구성 요소에 대한 기본 동작이 업데이트되었습니다. 자세한 내용은 [파일 API 구성](file-api-configuration.md)을 참조하세요.
 -   새로운 기능인 메일 알림은 개발자 노트 항목인 [메일 알림 사용](how-to-enable-email-notification.md)에서 설명합니다.
 
-## 2014년 7월 업데이트
+## <a name="july-2014-update"></a>2014년 7월 업데이트
 
 SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합니다.
 
@@ -99,7 +100,7 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
     -   [IpcfSetEndOfFile](https://msdn.microsoft.com/library/dn771754.aspx)
     -   [IpcfWriteFile](https://msdn.microsoft.com/library/dn771756.aspx)
 
-## 2014년 4월 업데이트
+## <a name="april-2014-update"></a>2014년 4월 업데이트
 
 -   특히 큰 PFile의 경우 **파일 API 메모리 사용**이 훨씬 향상되었습니다.
 -   이제 **IPC\_LI\_CONTENT\_ID** 속성을 통해 **콘텐츠 ID**를 쓸 수 있습니다. 자세한 내용은 [라이선스 속성 형식](https://msdn.microsoft.com/library/hh535287.aspx) 항목을 참조하세요.
@@ -108,7 +109,7 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
     **테스트 모범 사례** - Azure RMS를 사용하여 테스트하기 전에 온-프레미스 서버를 사용하는 지침이 추가되었습니다. 자세한 내용은 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
 
-## 중요한 개발자 노트
+## <a name="important-developer-notes"></a>중요한 개발자 노트
 
 -   **모든 파일 형식에 대한 기본 지원**
 
@@ -148,7 +149,7 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
     **해결 방법**: 다른 아키텍처에서 Ipcsecproc\*isv.dll을 사용하려는 경우(예를 들어 64비트 컴퓨터에 64비트 SDK를 설치했지만 이제 Ipcsecproc\*isv.dll이 필요한 32비트 컴퓨터에 배포하려는 경우), 다른 컴퓨터에 32비트 SDK를 설치하고 "%PROGRAMFILES%\\Microsoft Information Protection And Control" 폴더(기본 위치 또는 SDK를 설치하도록 선택한 위치)에서 Ipcsecproc\*isv.dll 파일을 복사해야 합니다.
 
-## 질문과 대답
+## <a name="frequently-asked-questions"></a>질문과 대답
 
 **Q**: LCID 매개 변수를 사용하는 함수에서 기본 언어 동작이 어떻게 작동하나요?
 
@@ -167,6 +168,6 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

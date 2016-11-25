@@ -2,6 +2,7 @@
 title: "사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원| Azure Information Protection"
 description: "Azure Information Protection의 Azure RMS(Azure Rights Management)Rights Management 서비스를 배포 및 구성한 후 사용자, 관리자 및 지원 센터에 지침을 제공할 때 도움이 되는 정보를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55fd22b60ad87dadce0ffb89bb658e949670f728
-ms.openlocfilehash: 56bb2e90f9d1ecb7c925ab22cf1dba16246876f7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 
 
 ---
 
-# 사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
+# <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -31,8 +32,8 @@ ms.openlocfilehash: 56bb2e90f9d1ecb7c925ab22cf1dba16246876f7
     > [!TIP]
     > 최종 사용자를 위한 예제 비디오:
     >
-    > -   [Azure RMS 사용자 환경](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)
-    > -   [Azure RMS 문서 추적 및 해지](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)
+    > -   [Azure RMS user experience](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)(Azure RMS 사용자 환경)
+    > -   [Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Azure RMS 문서 추적 및 해지)
 
 -   **관리자 정보:**
 
@@ -60,7 +61,7 @@ ms.openlocfilehash: 56bb2e90f9d1ecb7c925ab22cf1dba16246876f7
 
 사용자가 중요한 문서와 전자 메일을 보호할 수 있도록 다음 섹션에서 응용 프로그램 관련 정보를 참조하세요.
 
-## Rights Management 공유 응용 프로그램에서 정보 보호 기능 사용
+## <a name="using-information-protection-with-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에서 정보 보호 기능 사용
 사용자가 Office 2010을 사용하는 경우 콘텐츠를 보호하고 보호된 콘텐츠를 사용하려면 Rights Management(RMS) 공유 응용 프로그램이 필요합니다. 그러나 Azure Rights Management 서비스를 지원하는 모든 컴퓨터와 모바일 장치에서도 공유 응용 프로그램을 사용하는 것이 좋습니다.
 
 RMS 공유 응용 프로그램은 사용자가 보다 쉽게 중요한 문서를 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 하고 필요한 경우 액세스 권한을 취소할 수 있도록 합니다.
@@ -72,13 +73,13 @@ Windows 컴퓨터에서 이 응용 프로그램을 사용하는 지침은 [Right
 > [!TIP]
 > 개괄적인 예제 시나리오와 스크린샷을 보려면 [사용자가 모바일 사용자와 안전하게 첨부 파일 공유](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) 섹션을 참조하세요.
 
-## Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용
+## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용
 Azure Rights Management 공유 응용 프로그램을 설치하지 않은 상태에서 Rights Management 서비스를 사용하는 경우 더욱 쉽게 파일을 보호할 수 있게 해 주는, 리본의 **보호 상태로 공유** 단추 또는 파일 탐색기의 **바로 보호**가 표시되지 않습니다. 이러한 사용자는 다음 지침을 따라야 합니다.
 
 > [!TIP]
 > 이러한 응용 프로그램에서 정보 보호 기능을 사용하기 위한 응용 프로그램별 도움말과 지침을 찾으려면 **IRM** 및 응용 프로그램 이름과 버전을 검색합니다.
 
-#### Word 2013에서 문서를 보호하려면
+#### <a name="to-protect-a-document-in-word-2013"></a>Word 2013에서 문서를 보호하려면
 
 1.  Microsoft Word 내에서 새 문서를 만듭니다.
 
@@ -91,7 +92,7 @@ Azure Rights Management 공유 응용 프로그램을 설치하지 않은 상태
 
 다른 사용자는 문서를 열 때 먼저 인증하게 됩니다. 해당 사용자에게 문서를 열 권한이 없으면 문서가 열리지 않으며 문서를 열 권한이 있으면 해당 사용자에 대해 지정된 제한적 사용 권한으로 문서가 열립니다. 예를 들어 보기 전용 사용 권한이 있는 사용자는 문서를 다른 위치로 먼저 복사하더라도 편집하거나 저장할 수 없습니다. 사용 권한은 제한 배너를 통해 문서 맨 위에 표시됩니다. 이 배너에는 문서에 적용된 권한이 표시될 수도 있고 해당 권한을 표시할 수 있는 링크가 제공될 수도 있습니다.
 
-#### Outlook 2013 및 Exchange Online을 사용하여 전자 메일 메시지를 보호하려면
+#### <a name="to-protect-an-email-message-using-outlook-2013-and-exchange-online"></a>Outlook 2013 및 Exchange Online을 사용하여 전자 메일 메시지를 보호하려면
 
 1.  Outlook 내에서 조직의 받는 사람 주소를 지정하여 새 메일 메시지를 작성합니다.
 
@@ -101,7 +102,7 @@ Azure Rights Management 공유 응용 프로그램을 설치하지 않은 상태
 
 보호된 문서를 볼 때와 마찬가지로 받는 사람은 전자 메일 메시지를 받으면 먼저 인증하게 됩니다. 전자 메일 메시지를 열 권한이 있으면 해당 사용자에 대해 지정된 제한적 사용 권한으로 메시지가 열립니다. 예를 들어 **전달 금지**를 선택한 경우에는 리본에서 전달 단추를 사용할 수 없습니다.
 
-#### Outlook Web App을 사용하여 전자 메일 메시지를 보호하려면
+#### <a name="to-protect-an-email-message-using-the-outlook-web-app"></a>Outlook Web App을 사용하여 전자 메일 메시지를 보호하려면
 
 1.  Outlook Web App 내에서 조직의 받는 사람 주소를 지정하여 새 메일 메시지를 작성합니다.
 
@@ -115,6 +116,6 @@ Azure Rights Management 공유 응용 프로그램을 설치하지 않은 상태
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

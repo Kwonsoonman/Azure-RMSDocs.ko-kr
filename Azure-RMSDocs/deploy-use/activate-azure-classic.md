@@ -2,6 +2,7 @@
 title: "Azure 클래식 포털에서 Azure Rights Management를 활성화하는 방법 | Azure Information Protection"
 description: "Azure Portal 액세스 권한이 있는 경우의 Azure Rights Management 서비스 활성화 지침을 제공합니다. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Information Protection Premium 구독이 있는 경우입니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -12,13 +13,13 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 565f2479fe1d41aa051dd64752413eb72d644535
-ms.openlocfilehash: 74aac58a7b523f98ef627831830577d4fde7d5af
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: fe806c1c2b3f3284b905602a3a10deb79d91425e
 
 
 ---
 
-# Azure 클래식 포털에서 Azure 권한 관리를 활성화하는 방법
+# <a name="how-to-activate-azure-rights-management-from-the-azure-classic-portal"></a>Azure 클래식 포털에서 Azure 권한 관리를 활성화하는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -44,20 +45,20 @@ Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. �
 
 이제 **Rights Management 상태** 가 **활성** 으로 표시되고 **활성화** 옵션이 **비활성화**로 바뀝니다.
 
-## Azure 클래식 포털의 Rights Management 상태 값 및 설명
+## <a name="rights-management-status-values-and-descriptions-in-the-azure-classic-portal"></a>Azure 클래식 포털의 Rights Management 상태 값 및 설명
 Rights Management 서비스가 사용되도록 설정되고 사용할 준비가 되었음을 나타내는 **활성** 상태뿐만 아니라 **비활성**, **사용할 수 없음**또는 **권한 없음**도 확인할 수 있습니다.
 
 |상태 값|설명|
 |----------------|---------------|
-|**활성**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 가 사용할 준비가 되었습니다.|
-|**비활성**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 를 사용할 수 없으며 조직에서 파일을 보호하려면 활성화해야 합니다.|
-|**Unavailable**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스가 중지되었습니다. 나중에 다시 시도하세요.|
+|**활성**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]가 사용할 준비가 되었습니다.|
+|**비활성**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 사용할 수 없으며 조직에서 파일을 보호할 수 있으려면 활성화되어야 합니다.|
+|**사용할 수 없음**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스가 중지되었습니다. 나중에 다시 시도하세요.|
 |**권한 없음**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스 상태를 볼 권한이 없습니다. 예를 들어 계정이 잠겼거나 선택한 테넌트에 대한 전역 관리자가 아닙니다.|
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

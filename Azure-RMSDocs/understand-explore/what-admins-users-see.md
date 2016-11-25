@@ -2,6 +2,7 @@
 title: "관리자와 사용자에게 표시되는 내용 | Azure Information Protection"
 description: "관리자와 사용자가 Azure RMS(Azure Rights Management) 기술을 표시하여 중요한 정보 또는 기밀 정보를 보호하는 데 사용할 수 있는 방법의 몇 가지 일반적인 예제를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,14 +13,14 @@ ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 5708529be090dc2d2dcd58b728e046eceff26865
 
 
 ---
 
 
-# Azure RMS 작동 중: 관리자와 사용자에게 표시되는 결과
+# <a name="azure-rms-in-action-what-administrators-and-users-see"></a>Azure RMS 작동 중: 관리자와 사용자에게 표시되는 결과
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -32,7 +33,7 @@ ms.openlocfilehash: 4cc2522a03d1d6003d60e9c87fb8bab3c1454df4
 
 RMS 실행을 보여 주는 다른 스크린샷과 비디오는 [Enterprise Mobility and Security Blog(Enterprise Mobility 및 보안 블로그)](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)를 확인하세요.
 
-## 권한 관리 활성화 및 구성
+## <a name="activating-and-configuring-rights-management"></a>권한 관리 활성화 및 구성
 Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도 있지만 관리 포털에서 하는 것이 가장 간편합니다. 서비스가 활성화되면 바로 관리자와 사용자가 파일에 정보 보호를 빠르고 쉽게 적용하는 데 선택할 수 있는 두 개의 기본 템플릿이 제공됩니다. 하지만 추가 옵션 및 설정이 포함된 사용자 지정 템플릿을 직접 만들 수도 있습니다.
 
 ![1단계에서 관리자에게 표시되는 내용](../media/AzRMS_StoryboardActivate_small1.png)
@@ -79,7 +80,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 다음으로, 관리자가 템플릿을 적용하여 파일 및 전자 메일에 대한 정보 보호를 자동으로 구성할 수 있는 방법에 대한 몇 가지 예를 살펴봅시다.
 
-## Windows Server 및 파일 분류 인프라가 실행되는 파일 서버에서 파일을 자동으로 보호
+## <a name="automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure"></a>Windows Server 및 파일 분류 인프라가 실행되는 파일 서버에서 파일을 자동으로 보호
 
 이 예에서는 Azure RMS를 사용하여 Windows Server 2012 이상을 실행하고 파일 분류 인프라를 사용하도록 구성된 파일 서버에서 파일을 자동으로 보호할 수 있는 방법을 보여 줍니다.
 
@@ -114,7 +115,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 - 단계별 지침은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
-## Exchange Online 및 데이터 손실 방지 정책으로 전자 메일을 자동으로 보호
+## <a name="automatically-protecting-emails-with-exchange-online-and-data-loss-prevention-policies"></a>Exchange Online 및 데이터 손실 방지 정책으로 전자 메일을 자동으로 보호
 
 이전 예제는 중요 정보 또는 기밀 정보가 포함된 파일을 자동으로 보호할 수 있는 방법을 보여 줍니다. 그런데 정보가 파일 형식이 아니라 메일 메시지 형식인 경우에는 어떻게 하나요? 이 경우에는 사용자에게 정책 팁을 사용하여 정보 보호를 적용하라는 메시지를 표시하거나 전송 규칙을 사용하여 정보 보호를 자동으로 적용하는 등 Exchange Online DLP(데이터 손실 방지) 정책을 통해 해결할 수 있습니다.
 
@@ -153,7 +154,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 -   Azure RMS에 대해 Exchange Online을 구성하는 단계별 지침은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)에서 [Exchange Online: IRM 구성](../deploy-use/configure-office365.md#exchange-online-irm-configuration)을 참조하세요.
 
-## SharePoint Online 및 보호된 라이브러리로 파일을 자동으로 보호
+## <a name="automatically-protecting-files-with-sharepoint-online-and-protected-libraries"></a>SharePoint Online 및 보호된 라이브러리로 파일을 자동으로 보호
 
 여기서는 SharePoint Online 및 보호된 라이브러리를 사용할 때 문서를 손쉽게 보호할 수 있는 방법을 보여 줍니다.
 
@@ -187,7 +188,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 -   Azure RMS에 대해 SharePoint를 구성하는 단계별 지침은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)에서 [SharePoint Online 및 비즈니스용 OneDrive: IRM 구성](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)섹션을 참조하세요.
 
-## 사용자가 모바일 사용자와 안전하게 첨부 파일 공유
+## <a name="users-safely-share-attachments-with-mobile-users"></a>사용자가 모바일 사용자와 안전하게 첨부 파일 공유
 
 이전 예에서는 관리자가 중요 데이터 및 기밀 데이터에 자동으로 정보 보호를 적용할 수 있는 방법에 대해 살펴 보았습니다. 하지만 어떤 경우에는 사용자가 이 보호를 직접 적용해야 할 수 있습니다. 사용자가 다른 조직의 파트너와 공동으로 작업하거나, 템플릿에 정의되지 않은 사용자 지정 권한이나 설정이 필요하거나, 이전 예에서 다루지 않은 애드혹 환경을 예로 들 수 있습니다. 이러한 환경에서 사용자는 RMS 템플릿을 직접 적용하고 사용자 지정 권한을 구성할 수 있습니다.
 
@@ -235,12 +236,12 @@ Bob이 첨부 파일과 함께 이 전자 메일을 전달하거나 다른 사�
 
 - [Azure 권한 관리에 대한 빠른 시작 자습서](../get-started/quick-start-tutorial.md)에는 이 시나리오에 대한 단계별 지침이 포함되어 있습니다.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 이제 Azure RMS가 수행할 수 있는 작업의 몇 가지 예를 살펴 보았으며 이를 수행하는 방법에 관심을 가질 수 있습니다. Azure RMS 작동 방식에 대한 기술적인 정보는 [Azure RMS 작동 방식](how-does-it-work.md)을 참조하세요.
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,6 +2,7 @@
 title: "Azure Rights Management 커넥터 모니터링 | Azure Information Protection"
 description: "조직의 Azure Information Protection의 Azure Rights Management 서비스 사용과 커넥터를 모니터링하는 데 도움이 되는 정보를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/05/2016
 ms.topic: article
@@ -12,19 +13,19 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: af75705e8c256811d1816c2ad52e42e98b4db503
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 65d9e0bb46238d9fda31b8fb47e8e4368d96e1b2
 
 
 ---
 
-# Azure Rights Management 커넥터 모니터링
+# <a name="monitor-the-azure-rights-management-connector"></a>Azure Rights Management 커넥터 모니터링
 
 >*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
 
 RMS 커넥터를 설치하고 구성한 후에 다음과 같은 방법과 정보를 사용하여 커넥터와 조직의 Azure Information Protection의 Azure Rights Management 사용을 모니터링할 수 있습니다.
 
-## 응용 프로그램 이벤트 로그 항목
+## <a name="application-event-log-entries"></a>응용 프로그램 이벤트 로그 항목
 
 RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Microsoft RMS 커넥터**의 항목을 기록합니다. 
 
@@ -41,7 +42,7 @@ RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Mi
 
 커넥터를 처음 배포할 때 이벤트 로그를 확인하는 것 외에도, 지속적으로 경고와 오류를 확인합니다. 예를 들어, 처음에는 커넥터가 정상적으로 작동했는데 다른 관리자가 종속 구성을 변경할 수도 있습니다. 예를 들어, 다른 관리자가 RMS 커넥터 서버에서 더 이상 인터넷에 연결할 수 없도록 웹 프록시 서버 구성을 변경하거나(오류 3001) 커넥터 사용이 승인된 것으로 지정한 그룹에서 컴퓨터 계정을 제거할 수도 있습니다(경고 2001).
 
-### 이벤트 로그 ID 및 설명
+### <a name="event-log-ids-and-descriptions"></a>이벤트 로그 ID 및 설명
 
 가능한 이벤트 ID, 설명 및 추가 정보를 식별하려면 다음 섹션을 사용하세요.
 
@@ -113,7 +114,7 @@ RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Mi
 
 경고 **2002**
 
-**아래에 나열된 클라이언트에서의 연결은 비보안(HTTP) 연결을 사용하는 있습니다.**
+**아래에 나열된 클라이언트에서의 연결은 비보안(HTTP) 연결을 사용하고 있습니다.**
 
 이 이벤트는 온-프레미스 서버에서 RMS 커넥터에 성공적으로 연결하지만 연결에서는 HTTPS(높은 보안 수준) 대신 HTTP(낮은 보안 수준)를 사용할 때 기록됩니다. 하나의 이벤트는 연결이 아닌 계정에 대해 기록됩니다. 이 이벤트는 계정이 HTTPS를 사용하도록 전환되었지만 HTTP로 되돌아가는 경우 다시 발생합니다.
 
@@ -125,7 +126,7 @@ HTTPS 연결을 위해 RMS 커넥터를 구성하는 방법에 대해서는 [HTT
 
 경고 **2003**
 
-**권한 부여의 목록이 비어 있습니다. 커넥터에 대한 권한이 있는 사용자 및 그룹의 목록이 채워질 때까지는 이 서비스를 사용할 수 없습니다.**
+**권한 부여 목록이 비어 있습니다. 커넥터에 대한 권한이 있는 사용자 및 그룹의 목록이 채워질 때까지는 이 서비스를 사용할 수 없습니다.**
 
 이 이벤트는 RMS 커넥터에 권한이 있는 계정 목록이 없고, 그래서 온-프레미스 서버가 커넥터에 연결할 수 없는 경우 기록됩니다. RMS 커넥터는 15분마다 Azure RMS에서 목록을 다운로드합니다. 
 
@@ -153,13 +154,13 @@ HTTPS 연결을 위해 RMS 커넥터를 구성하는 방법에 대해서는 [HTT
 
 ----
 
-## 성능 카운터
+## <a name="performance-counters"></a>성능 카운터
 
 RMS 커넥터를 설치하면 **Microsoft Rights Management 커넥터** 성능 카운터가 자동으로 생성되며, 이 카운터는 커넥터를 통해 Azure Rights Management 서비스의 사용 성능을 모니터링하는 데 유용합니다. 예를 들어, 문서나 메일을 보호하거나 보호된 문서 또는 메일을 열 때 정기적으로 지연이 발생하는 경우는 성능 카운터를 사용하여 지연의 원인이 커넥터의 처리 시간, Azure Rights Management 서비스의 처리 시간, 네트워크 지연 중 어느 것에 있는지 확인할 수 있습니다. 지연이 발생하는 위치를 쉽게 찾을 수 있도록 **커넥터 처리 시간**, **서비스 응답 시간**, **커넥터 응답 시간**의 평균 수를 포함하는 카운터를 확인합니다. 예: **라이선싱 성공 일괄 처리 요청 평균 커넥터 응답 시간**.
 
 최근에 커넥터를 사용할 새 서버 계정을 추가한 경우에 **마지막 권한 부여 정책 업데이트 이후 시간** 카운터를 확인하여 커넥터를 업데이트한 후 목록을 다운로드했는지, 아니면 조금 더 기다려야 하는지(최대 15분) 확인할 수 있습니다.
 
-## RMS 분석기
+## <a name="rms-analyzer"></a>RMS 분석기
 
 Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태를 모니터링하고 구성 문제를 식별하는 데 유용합니다.
 
@@ -167,7 +168,7 @@ Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태
 
 추가 정보 및 지침은 다운로드 페이지의 **세부 정보** 및 **설치 지침**을 참조하세요.
 
-## 로깅
+## <a name="logging"></a>로깅
 
 사용 현황 로깅은 메일과 문서가 보호되고 사용되는 경우를 식별할 때 유용합니다. 여기에 RMS 커넥터를 사용하는 경우, 로그의 사용자 ID 필드에는 RMS 커넥터에 대해 자동으로 생성되는 **Aadrm_S-1-7-0**이라는 서비스 사용자 이름이 포함됩니다.
 
@@ -192,6 +193,6 @@ Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,9 @@
 title: "Rights Management 공유 응용 프로그램 관리자 가이드 | Azure Information Protection"
 description: "Windows용 Microsoft Rights Management 공유 응용 프로그램 배포를 담당하는 엔터프라이즈 네트워크의 관리자를 위한 지침과 정보를 제공합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2016
+ms.date: 11/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +13,14 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5decd2df9135317f2e0da4951a177211342d7ac
-ms.openlocfilehash: e66f0ac6e596840ad940c51db41dbc6f91139e51
+ms.sourcegitcommit: c9a5bcf46597ee65e2e0f36199f19935f8997048
+ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
 
 
 ---
 
 
-# Rights Management 공유 응용 프로그램 관리자 가이드
+# <a name="rights-management-sharing-application-administrator-guide"></a>Rights Management 공유 응용 프로그램 관리자 가이드
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
@@ -30,12 +31,12 @@ RMS 공유 응용 프로그램은 Azure Information Protection에서 가장 효�
 
 Rights Management 공유 응용 프로그램 기술 개요, 기본 및 일반 보호에 대한 정보, 지원되는 파일 형식, 파일 이름 확장명 및 기본 보호 수준을 변경하는 방법은 [Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보](sharing-app-admin-guide-technical.md)를 참조하세요. 
 
-## Microsoft Rights Management 공유 응용 프로그램 자동 배포
+## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 응용 프로그램 자동 배포
 RMS 공유 응용 프로그램의 Windows 버전은 스크립트 방식 설치를 지원하므로 엔터프라이즈 배포에 적합합니다.
 
 설치의 필수 조건은 컴퓨터에서 Windows 7 서비스 팩 1 이상 버전을 실행해야 하며 Microsoft Framework 4.0 이상 버전이 설치되어 있어야 한다는 것뿐입니다. Microsoft .NET Framework 4.0을 설치해야 하는 경우 [Microsoft 다운로드 센터에서 설치를 위해 해당 버전을 다운로드](http://www.microsoft.com/download/details.aspx?id=17718)할 수 있습니다.
 
-### 자동 배포용 RMS 공유 응용 프로그램을 다운로드하려면
+### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>자동 배포용 RMS 공유 응용 프로그램을 다운로드하려면
 
 1.  Microsoft 다운로드 센터의 [Windows용 Microsoft Rights Management 공유 응용 프로그램](http://www.microsoft.com/download/details.aspx?id=40857) 페이지로 이동하여 **다운로드**를 클릭합니다.
 
@@ -76,7 +77,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 각 절차에 대해 설치를 완료하려면 컴퓨터를 다시 시작해야 합니다. **shutdown /i**와 같은 명령을 사용하여 자동 다시 시작을 시작할 수 있습니다.
 
-### Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS용 RMS 공유 응용 프로그램을 배포하려면
+### <a name="to-deploy-the-rms-sharing-application-for-office-2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS용 RMS 공유 응용 프로그램을 배포하려면
 
 -   RMS 공유 응용 프로그램 및 관련 구성 요소를 설치하려는 각 컴퓨터에서 상승된 권한으로 다음 명령을 실행합니다.
 
@@ -86,7 +87,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
-### Office 2010 및 Azure Information Protection용 RMS 공유 응용 프로그램을 배포하려면
+### <a name="to-deploy-the-rms-sharing-application-for-office-2010-and-azure-information-protection"></a>Office 2010 및 Azure Information Protection용 RMS 공유 응용 프로그램을 배포하려면
 
 1.  Azure Active Directory Rights Management 준비 도구를 실행하여 조직의 인증 서비스 URL을 가져올 수 있도록 Office 365 또는 Azure Active Directory 테넌트의 전역 관리자여야 합니다. 이 도구는 단일 컴퓨터에서 한 번만 실행하면 됩니다. 각 컴퓨터에 RMS 공유 응용 프로그램을 설치할 때 인증 서비스 URL을 사용합니다.
 
@@ -131,7 +132,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
-### Office 2010 및 Active Directory RMS용 RMS 공유 응용 프로그램을 배포하려면
+### <a name="to-deploy-the-rms-sharing-application-for-office-2010-and-active-directory-rms"></a>Office 2010 및 Active Directory RMS용 RMS 공유 응용 프로그램을 배포하려면
 
 1.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 상승된 권한으로 다음 명령을 실행합니다.
 
@@ -168,7 +169,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
-### RMS 공유 응용 프로그램 및 Office 추가 기능만 설치하려면
+### <a name="to-install-the-rms-sharing-application-and-office-addin-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만 설치하려면
 
 1.  다음 명령을 사용하고 로그 파일을 만들 기존 폴더를 지정하여 AD RMS 클라이언트 및 RMS 공유 응용 프로그램을 설치합니다.
 
@@ -184,7 +185,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         X86\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "<log file path and name>"
         ```
 
-    예를 들면 다음과 같습니다. `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`
+    예를 들어 `\\server5\apps\rms\x64\setup_ipviewer.exe /norestart /quiet /msicl "MSIRESTARTMANAGERCONTROL=Disable" /log "C:\Log files\ipviewerinstall.log"`를 구성할 수 있습니다.
     
     이 명령이 실행되지 않아도 **/quiet** 매개 변수 때문에 오류 메시지가 표시되지 않습니다. 설치가 실패한 문제를 해결하는 데 도움을 얻으려면 /quiet 없이 명령을 다시 실행하여 오류 메시지를 표시하세요.
 
@@ -202,16 +203,16 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x86\Setup.msi" /L*v "<log file path and name>"
         ```
 
-    예를 들면 다음과 같습니다. `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`
+    예를 들어 `\\server5\apps\rms\msiexec.exe /norestart /quiet MSIRESTARTMANAGERCONTROL=Disable /i "x64\Setup64.msi" /L*v "C:\Log files\rmsofficeinstall.log"`를 구성할 수 있습니다.
     
     이 명령이 실행되지 않아도 **/quiet** 매개 변수 때문에 오류 메시지가 표시되지 않습니다. 설치가 실패한 문제를 해결하는 데 도움을 얻으려면 /quiet 없이 명령을 다시 실행하여 오류 메시지를 표시하세요.
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
-## 설치 성공 여부 확인
+## <a name="verifying-installation-success"></a>설치 성공 여부 확인
 설치 로그 파일을 통해 제대로 설치되었는지 확인할 수 있습니다.
 
-### Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS용 RMS 공유 응용 프로그램의 설치 성공 여부를 확인하려면
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS용 RMS 공유 응용 프로그램의 설치 성공 여부를 확인하려면
 
 -   Setup.exe 명령이 정상적으로 실행되었는지 확인하려면 각 컴퓨터의 *%temp%\RMS_installer_&lt;guid&gt;* 폴더에서 설치 로그 파일 **RMInstaller.log**를 검색한 다음 종료 코드를 확인합니다.
 
@@ -219,7 +220,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
     로그 파일 이름 예: **C:\temp\RMS_Installer_9352fc91-1982-43bf-958a-2ef1fe9c2ed0\RMInstaller.log**
 
-### Office 2010 및 Azure Information Protection용 RMS 공유 응용 프로그램의 설치 성공 여부를 확인하려면
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2010-and-azure-information-protection"></a>Office 2010 및 Azure Information Protection용 RMS 공유 응용 프로그램의 설치 성공 여부를 확인하려면
 
 1.  Setup.exe 명령이 정상적으로 실행되었는지 확인하려면 각 컴퓨터의 *%temp%\RMS_installer_&lt;guid&gt;* 폴더에서 설치 로그 파일 **RMInstaller.log**를 검색한 다음 종료 코드를 확인합니다.
 
@@ -241,7 +242,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
     **CLC-alice@isvtenant999.onmicrosoft.com-{1b9cfccf;k5b11;k4a10;kac15;k29b2b6980f4c}.drm**
 
-### Office 2010 및 Active Directory RMS용 RMS 공유 응용 프로그램의 설치 성공 여부를 확인하려면
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2010-and-active-directory-rms"></a>Office 2010 및 Active Directory RMS용 RMS 공유 응용 프로그램의 설치 성공 여부를 확인하려면
 
 1.  Setup.exe 명령이 정상적으로 실행되었는지 확인하려면 각 컴퓨터의 *%temp%\RMS_installer_&lt;guid&gt;* 폴더에서 설치 로그 파일을 검색한 다음 종료 코드를 확인합니다.
 
@@ -272,7 +273,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
         DefaultUser="&lt;default_user&gt;"
 
-### RMS 공유 응용 프로그램 및 Office 추가 기능만의 설치 성공 여부를 확인하려면
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-addin-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만의 설치 성공 여부를 확인하려면
 
 1.  Setup_ipviewer.exe 명령이 정상적으로 실행되었는지 확인하려면 설치 로그 파일에서 다음 텍스트를 검색합니다. **Installation success or error status: 0**
 
@@ -290,10 +291,10 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
     **MSI (s) (9C:88) [18:49:04:007]: Windows Installer에서 제품을 설치했습니다. 제품 이름: Microsoft RMS Office 추가 기능. 제품 버전: 1.0.7. 제품 언어: 1033. 제조업체: Microsoft. 설치 성공 또는 오류 상태: 0.**
 
-## 제거 명령
+## <a name="uninstall-commands"></a>제거 명령
 이러한 배포에 필요한 설치 명령 중 일부만이 제거 명령을 지원합니다. AD RMS 클라이언트와 공유 응용 프로그램 및 Office 추가 기능을 제거할 수 있습니다. 이러한 요소를 제거하려면 다음 명령을 사용합니다.
 
-### AD RMS 클라이언트 및 RMS 공유 응용 프로그램을 제거하려면
+### <a name="to-uninstall-the-ad-rms-client-and-the-rms-sharing-application"></a>AD RMS 클라이언트 및 RMS 공유 응용 프로그램을 제거하려면
 
 -   다음 명령을 사용합니다.
 
@@ -309,7 +310,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         x86\setup_ipviewer.exe /uninstall /quiet
         ```
 
-### Office 추가 기능을 제거하려면
+### <a name="to-uninstall-the-office-addin"></a>Office 추가 기능을 제거하려면
 
 -   다음 명령을 사용합니다.
 
@@ -325,7 +326,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         msiexec /x \x86\Setup.msi /quiet
         ```
 
-## 자동 업데이트를 사용하지 않도록 설정
+## <a name="suppressing-automatic-updates"></a>자동 업데이트를 사용하지 않도록 설정
 기본적으로는 최신 버전의 RMS 공유 응용 프로그램을 사용할 수 있으면 사용자에게 알림이 표시되며 해당 버전을 다운로드할지를 묻는 메시지가 나타납니다. 다음 레지스트리를 편집하여 이 알림을 표시하지 않도록 설정할 수 있습니다.
 
 1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**로 이동한 다음 **RmsSharingApp** 키가 아직 없으면 새로 만듭니다.
@@ -340,13 +341,13 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 
 3.  테스트를 완료하고 모든 문제를 해결한 후 이 가이드에 나와 있는 자동 배포 지침을 사용하여 모든 사용자에게 최신 버전을 배포합니다.
 
-## Azure Information Protection만 해당: 문서 추적 기능 구성
-[문서 추적 기능을 지원하는 구독](https://technet.microsoft.com/dn858608)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다. 문서 추적 기능에서는 사용자가 공유하는 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 개인정보취급방침 요구 사항으로 인해 조직에서 이 정보 표시가 금지된 경우 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet을 사용하여 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정할 수 있습니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 사이트에 대한 액세스를 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 액세스가 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다.
+## <a name="azure-information-protection-only-configuring-document-tracking"></a>Azure Information Protection만 해당: 문서 추적 기능 구성
+[문서 추적 기능을 지원하는 구독](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다. 문서 추적 기능에서는 사용자가 공유하는 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 개인정보취급방침 요구 사항으로 인해 조직에서 이 정보 표시가 금지된 경우 [Disable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623032) cmdlet을 사용하여 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정할 수 있습니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 사이트에 대한 액세스를 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](http://go.microsoft.com/fwlink/?LinkId=623037)를 사용하여 액세스가 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다.
 
 이러한 cmdlet을 실행하려면 **2.3.0.0** 이상의 Windows PowerShell용 Azure Information Protection 모듈 버전을 사용하고 있어야 합니다. 설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 > [!TIP]
-> 이전에 모듈을 다운로드하여 설치한 경우 다음을 실행하여 버전 번호를 확인합니다. `(Get-Module aadrm –ListAvailable).Version`
+> 모듈을 이미 다운로드하여 설치한 경우 `(Get-Module aadrm –ListAvailable).Version`을 실행하여 버전 번호를 확인합니다.
 
 다음 URL은 문서 추적 기능에 사용되며 예를 들어 보안이 강화된 Internet Explorer를 사용 중인 경우 신뢰할 수 있는 사이트에 추가하는 등의 방법으로 허용해야 합니다.
 
@@ -361,7 +362,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 
 -   https://&#42;.microsoftonline-p.com
 
-### 사용자에 대해 문서 추적 및 취소
+### <a name="tracking-and-revoking-documents-for-users"></a>사용자에 대해 문서 추적 및 취소
 
 사용자가 문서 추적 사이트에 로그인하면 RMS 공유 응용 프로그램을 사용하여 공유한 문서를 추적 및 취소할 수 있습니다. Azure Information Protection에 대한 관리자(전역 관리자) 권한으로 로그인하면 페이지 오른쪽 위에 있는 관리자 아이콘을 클릭하여 관리자 모드로 전환하고 조직의 사용자가 공유한 문서를 확인할 수 있습니다.
 
@@ -375,7 +376,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 
 
 
-### 문서 추적 사이트에 대한 사용 현황 로깅
+### <a name="usage-logging-for-the-document-tracking-site"></a>문서 추적 사이트에 대한 사용 현황 로깅
 
 사용 현황 로그 파일의 두 필드 **AdminAction** 및 **ActingAsUser**가 문서 추적에 적용됩니다.
 
@@ -388,7 +389,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 
 사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
-## AD RMS만 해당: 조직 내의 여러 메일 도메인 지원
+## <a name="ad-rms-only-support-for-multiple-email-domains-within-your-organization"></a>AD RMS만 해당: 조직 내의 여러 메일 도메인 지원
 AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용자에게 메일 도메인이 여러 개 있는 경우 다음 레지스트리를 편집해야 합니다.
 
 1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**로 이동한 다음 **RmsSharingApp** 키가 아직 없으면 새로 만듭니다.
@@ -400,12 +401,12 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 레지스트리를 이와 같이 변경하지 않으면 사용자가 조직의 다른 사용자에 의해 보호된 콘텐츠를 사용하지 못할 수도 있습니다. Azure Information Protection을 사용하는 경우에는 레지스트리를 이와 같이 편집할 필요가 없습니다.
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 보호 수준(기본 및 일반) 간의 차이점 설명, 지원되는 파일 형식 및 파일 이름 확장명, 기본 보호 수준을 변경하는 방법을 포함하는 자세한 기술 정보는 [Rights Management 공유 응용 프로그램에 대한 기술 개요](sharing-app-admin-guide-technical.md)를 참조하세요.
 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,9 @@
 title: "Azure Rights Management 활성화 | Azure Information Protection"
 description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 문서 및 전자 메일 보호를 시작할 수 있도록 하려면 Azure Rights Management 서비스를 활성화해야 합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +13,8 @@ ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 78b975c2babad347fc5be7956d504c7283508962
-ms.openlocfilehash: 06c71229427743e9669baee1fdbb41f175180b0f
+ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
+ms.openlocfilehash: 51bc2c66cfce9f50b0d876fb1066d740f570d27d
 
 
 ---
@@ -40,19 +41,19 @@ Azure Information Protection의 Azure Rights Management 서비스가 활성화�
 - [Office 365 관리 센터 - 클래식](activate-office365-classic.md)
 - [Azure 클래식 포털](activate-azure-classic.md)
 
-또는 Windows PowerShell을 사용하여 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 활성화할 수 있습니다.
+또는 PowerShell을 사용하여 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 활성화할 수 있습니다.
 
 1. Azure 권한 관리 관리 모듈을 설치하는 Azure 권한 관리 관리 도구를 설치합니다. 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
-2. Windows PowerShell 세션에서 [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx)를 실행하고, 메시지가 표시되면 Azure Information Protection 테넌트에 대한 전역 관리자 계정 세부 정보를 제공합니다.
+2. PowerShell 세션에서 [Connect-AadrmService](https://msdn.microsoft.com/library/windowsazure/dn629415.aspx)를 실행하고, 메시지가 표시되면 Azure Information Protection 테넌트에 대한 전역 관리자 계정 세부 정보를 제공합니다.
 
 3. Azure Rights Management 서비스를 활성화하는 [Enable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629412.aspx)을 실행합니다.
 
 ## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>단계적 배포용 등록 컨트롤 구성
-일부 사용자만 Azure Rights Management를 사용하여 즉시 파일을 보호할 수 있게 하려면 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) Windows PowerShell 명령을 사용하여 사용자 등록 컨트롤을 구성할 수 있습니다. Azure Rights Management 서비스를 활성화하기 전이나 후에 이 명령을 실행할 수 있습니다.
+일부 사용자만 Azure Rights Management를 사용하여 즉시 파일을 보호할 수 있게 하려면 [Set-AadrmOnboardingControlPolicy](http://msdn.microsoft.com/library/azure/dn857521.aspx) PowerShell 명령을 사용하여 사용자 등록 컨트롤을 구성할 수 있습니다. Azure Rights Management 서비스를 활성화하기 전이나 후에 이 명령을 실행할 수 있습니다.
 
 > [!IMPORTANT]
-> 이 명령을 사용하려면 **2.1.0.0** 버전 이상의 [Azure Rights Management Windows PowerShell 모듈](http://go.microsoft.com/fwlink/?LinkId=257721)이 있어야 합니다.
+> 이 명령을 사용하려면 **2.1.0.0** 버전 이상의 [Azure Rights Management PowerShell 모듈](http://go.microsoft.com/fwlink/?LinkId=257721)이 있어야 합니다.
 >
 > 설치한 버전을 확인하려면 다음을 실행합니다. **(Get-Module aadrm –ListAvailable).Version**
 
@@ -61,13 +62,16 @@ Azure Information Protection의 Azure Rights Management 서비스가 활성화�
 ```
 Set-AadrmOnboardingControlPolicy – SecurityGroupObjectId fbb99ded-32a0-45f1-b038-38b519009503
 ```
-이 구성 옵션에 대해서는 그룹을 지정해야 하며 개별 사용자를 지정할 수는 없습니다.
+이 구성 옵션에 대해서는 그룹을 지정해야 하며 개별 사용자를 지정할 수는 없습니다. 그룹의 개체 ID를 얻으려면 Azure AD PowerShell을 사용합니다. 예를 들어 [버전 1.0](https://msdn.microsoft.com/library/azure/jj151815\(v=azure.98\).aspx)의 모듈인 경우 [Get-MsolGroup](https://msdn.microsoft.com/library/azure/dn194130\(v=azure.98\).aspx) 명령을 사용합니다.
 
 또는 Azure Information Protection을 사용할 수 있는 라이선스가 부여된 사용자만 콘텐츠를 보호할 수 있게 하려면 다음 명령을 사용합니다.
 
 ```
 Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
 ```
+
+이 cmdlet 및 추가 예제에 대한 자세한 내용은 [Set-AadrmOnboardingControlPolicy](https://msdn.microsoft.com/library/dn857521.aspx) 도움말을 참조하세요.
+
 이러한 등록 컨트롤을 사용할 경우 조직의 모든 사용자는 항상 하위 사용자가 보호하는 보호된 콘텐츠를 사용할 수 있지만 클라이언트 응용 프로그램에서 자체적으로 정보 보호를 적용할 수는 없습니다. 예를 들어 Azure Rights Management 서비스가 활성화되면 자동으로 게시된 기본 템플릿 또는 사용자가 구성할 수 있는 사용자 지정 템플릿이 Office 클라이언트에 표시되지 않습니다.  Exchange 등의 서버 쪽 응용 프로그램은 같은 결과를 달성하기 위해 Rights Management 통합을 위한 자체 사용자별 컨트롤을 구현할 수 있습니다.
 
 
@@ -81,6 +85,6 @@ Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "방법: API 보안 모드 설정 | Azure RMS"
 description: "파일 API 응용 프로그램에서 실행하는 보안 모드를 선택합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77e2dfe7f2afb1e70de658850f83f86e9224aea6
-ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: f7acef7fa69c836c5d57d8c1705007f919a9dbf2
 
 
 ---
 
-# 방법: API 보안 모드 설정
+# <a name="howto-set-the-api-security-mode"></a>방법: API 보안 모드 설정
 
 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx) 함수를 사용하여 파일 API 응용 프로그램이 실행되는 보안 모드를 선택할 수 있습니다.
 
@@ -30,10 +31,10 @@ ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
 
 **중요** 다른 권한 관리 서비스 SDK 2.1 함수를 호출하기 전에 보안 모드를 설정해야 합니다. 보안 모드를 설정한 후에는 현재 프로세스에 대해 변경할 수 없습니다.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 * [응용 프로그램 종류](application-types.md)
-* [API 모드 값](https://msdn.microsoft.com/library/hh535236.aspx)
+* [API mode values](https://msdn.microsoft.com/library/hh535236.aspx)(API 모드 값)
 * [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)
  
 
@@ -41,6 +42,6 @@ ms.openlocfilehash: 9235fa1c194162689b854493ea31e76c08c40ce7
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

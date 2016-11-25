@@ -2,6 +2,7 @@
 title: "빠른 시작 자습서 1단계 | Azure Information Protection"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 1단계로 약 30분 만에 완료해야 합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -10,13 +11,13 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: b23022c5fbec3d4f6f19ab5017ecf9badf01a9e7
-ms.openlocfilehash: 247ab8dd5a47f9370f03fbd5badd7c78784d20b5
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: edb98a61d247b51319a1eb172f9978e3d64d0e1b
 
 
 ---
 
-# 1단계: Rights Management 서비스 활성화
+# <a name="step-1-activate-the-rights-management-service"></a>1단계: Rights Management 서비스 활성화
  
 >*적용 대상: Azure Information Protection*
 
@@ -29,7 +30,7 @@ Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요�
 
 페이지로 직접 이동하지 않고 Office 365 관리자 포털에서 이 페이지로 이동하려면 [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요. 또한 Azure Portal에 대한 액세스 권한은 있지만 Office 365 관리자 포털에 대해서는 없는 경우 다음 전체 지침을 사용하세요.
 
-## Rights Management 서비스를 활성화하려면
+## <a name="to-activate-the-rights-management-service"></a>Rights Management 서비스를 활성화하려면
 
 1. 새 브라우저 창을 열고 Office 365 관리자용 [Rights Management 활성화 페이지](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)로 바로 이동합니다.
     
@@ -56,6 +57,6 @@ Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/27/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3beeaffd5cf5f0e0a629dd6130d780cec3e05d6
-ms.openlocfilehash: ff6573042941640d1cca82d68e85f09c82e3c77b
+ms.sourcegitcommit: 45ca64c8338de3f4b192c61eb437b4acdbb8d799
+ms.openlocfilehash: cdd987bf0670f9e5ef7519119aa886573cf14924
 
 
 ---
@@ -37,8 +37,6 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure 
 **릴리스 날짜**: 2016년 10월 27일
 
 **수정 사항**:
-
-- Office 2010을 사용할 때 콘텐츠를 보호하는 레이블을 성공적으로 적용할 수 있으며, 환경이 Azure Rights Management Service에 대해 초기화(“부트스트래핑"이라고도 함)되지 않습니다.
 
 - Windows Update 서비스가 비활성화되면 클라이언트 설치가 완료됩니다.
 
@@ -64,6 +62,6 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

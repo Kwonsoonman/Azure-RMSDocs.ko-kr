@@ -3,6 +3,7 @@ title: "응용 프로그램 종류 | Azure RMS"
 description: "이 항목에서는 권한 사용 응용 프로그램으로 만들도록 선택할 수 있는 응용 프로그램 종류에 대해 설명합니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 10/20/2016
 ms.topic: article
@@ -14,24 +15,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1ab93dc8f770e2e49b5846dd6c31f649a55175b0
-ms.openlocfilehash: 77bb95ae54ec0fb699d3b0dd2879bb14fdd3dd28
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 20a0906561a79e0826b47981425ae121f07f3d26
 
 
 ---
 
-# 응용 프로그램 종류
+# <a name="application-types"></a>응용 프로그램 종류
 
 
 이 항목에서는 권한 사용 응용 프로그램으로 만들도록 선택할 수 있는 응용 프로그램 종류에 대해 설명합니다.
 
 권한 관리 서비스 SDK 2.1에서 현재 지원되는 응용 프로그램 종류는 다음과 같습니다.
 
-## 간단한 응용 프로그램
+## <a name="simple-applications"></a>간단한 응용 프로그램
 
 간단한 응용 프로그램은 제공된 파일을 암호화하도록 작성된 명령줄 도구일 수 있습니다. 간단한 권한 사용 응용 프로그램의 예는 [응용 프로그램 개발](developing-your-application.md)에서 설명하는 *IPCHelloWorld* 구현을 참조하세요.
 
-### 서버 모드 응용 프로그램
+### <a name="server-mode-applications"></a>서버 모드 응용 프로그램
 
 *서버 모드*는 RMS 보호된 콘텐츠를 사용, 보호 또는 처리하는 비대화형 응용 프로그램에 사용됩니다. 예를 들어 파일 서버에서 서비스로 실행되며 중요한 문서를 자동으로 보호하는 *데이터 손실 방지* 응용 프로그램이 있습니다. 이 응용 프로그램 종류의 예는 [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)을 참조하세요.
 
@@ -39,7 +40,7 @@ ms.openlocfilehash: 77bb95ae54ec0fb699d3b0dd2879bb14fdd3dd28
 
 API 보안 모드 설정에 대한 자세한 내용은 [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)을 참조하세요.
 
-### 리치 클라이언트 응용 프로그램
+### <a name="rich-client-applications"></a>리치 클라이언트 응용 프로그램
 
 리치 클라이언트 응용 프로그램을 사용하면 GUI(그래픽 사용자 인터페이스)를 통해 데이터를 보고 조작할 수 있습니다. 대체로 이 GUI에 표시되는 데이터는 중요하며 도난 또는 실수에 의한 노출에 민감합니다. 정보 보호 지원은 일반적으로 기존 시나리오를 개선하지만 응용 프로그램 개발의 주요 동기 부여는 아닙니다.
 
@@ -53,7 +54,7 @@ Microsoft 메모장은 간단한 리치 클라이언트 응용 프로그램입�
 
 응용 프로그램 보호에 대한 자세한 내용은 [사용 제한 이해](understanding-usage-restrictions.md)를 참조하세요.
 
-## 관련 항목
+## <a name="related-topics"></a>관련 항목
 
 - [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)
 - [응용 프로그램 배포](developing-your-application.md)
@@ -62,6 +63,6 @@ Microsoft 메모장은 간단한 리치 클라이언트 응용 프로그램입�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

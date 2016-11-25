@@ -3,8 +3,9 @@ title: "빠른 시작 자습서 5단계 | Azure Information Protection"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 5단계로 약 30분 만에 완료해야 합니다."
 keywords: 
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,14 +14,14 @@ ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1af9f3b3451bf8ceafbaf3cddd2b26c37fe9d597
-ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
+ms.sourcegitcommit: 0a79642c3707be4c8dd75ccc80569ba90da01236
+ms.openlocfilehash: b8b973766852fcace6e070e73fa87072ad4b3524
 
 
 ---
 
 
-# 5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
+# <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
 
 >*적용 대상: Azure Information Protection*
 
@@ -28,7 +29,7 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 
 이제 이 문서를 메일로 안전하게 공유할 준비가 되었습니다. 
 
-## 문서를 메일로 안전하게 공유하려면
+## <a name="to-safely-share-your-document-by-email"></a>문서를 메일로 안전하게 공유하려면
 
 1.  Word에서 문서를 엽니다. 기본 레이블 값이 **내부용**으로 다시 자동 적용됩니다. 
 
@@ -40,7 +41,7 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 
     ![Azure Information Protection 빠른 시작 자습서 5단계 - 보호된 항목 공유 대화 상자](../media/example-share-protected-dialog.png)
 
-3. 조직에서 업무를 같이 하는 사람에게 문서를 보낼 때와 마찬가지로 **사용자** 상자에 회사 메일 주소를 하나 이상 입력합니다. 또는 동료의 전자 메일 주소를 지정할 수 있습니다. 현재 Azure Information Protection에서는 개인용 전자 메일 주소를 지원하지 않으므로 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같은 회사 메일 주소를 지정해야 합니다. 
+3. 조직에서 업무를 같이 하는 사람에게 문서를 보낼 때와 마찬가지로 **사용자** 상자에 회사 메일 주소를 하나 이상 입력합니다. 또는 동료의 전자 메일 주소를 지정할 수 있습니다. 현재 Azure Information Protection에서는 개인용 메일 주소를 지원하지 않으므로 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같은 회사 메일 주소를 지정해야 합니다. 
 
     문서를 받는 사람에게 Azure Information Protection이 있는지 여부는 걱정할 필요가 없습니다.
 
@@ -68,13 +69,13 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 
 이제 보호된 문서를 보냈으니 수신자에게 도착하기를 기다렸다가 열어 보라고 요청하면 됩니다. 그러나 마지막 단계에서 공유 문서를 추적할 때 다시 사용해야 하므로 Word는 닫지 마세요.
 
-## 수신자에게 메일의 문서를 열라고 요청
+## <a name="ask-your-recipients-to-open-the-emailed-document"></a>수신자에게 메일의 문서를 열라고 요청
 
 보호된 문서가 메일 첨부 파일로 전송되면 수신자는 다양한 장치를 사용하여 읽을 수 있습니다. 이러한 장치에는 iPad, iPhone, Android 태블릿 및 전화, Mac 컴퓨터, Windows 컴퓨터 등이 포함됩니다.
 
 전송된 메일 메시지를 읽도록 요청합니다. Rights Management를 통해 보호되는 첨부 파일을 처음으로 받은 경우라고 가정하면 받는 사람에게 지침 링크를 클릭할 것을 요청합니다. 그렇게 하면 [Microsoft RMS 시작!](https://portal.azurerms.com/#/rmshelp) 페이지가 나타나며 RMS 공유 응용 프로그램을 설치하고 필요한 경우 무료 계정으로 가입하라는 지침이 제공됩니다. 그러면 보호된 첨부 파일을 읽을 준비가 완료됩니다.
 
-### 받는 사람에 대한 지침: 보호된 문서 첨부 파일을 보호하려면
+### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>받는 사람에 대한 지침: 보호된 문서 첨부 파일을 보호하려면
 
 1. 첨부 파일을 하나 열어 문서를 읽습니다.
     
@@ -86,7 +87,7 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
     
         - 파일 이름 확장명이 **.ppdf**인 문서를 엽니다.
 
-2.  사용자 이름과 암호를 묻는 메시지가 표시되면 메일과 첨부 파일을 보내는 데 사용된 것과 같은 메일 주소 형식을 사용하여 사용자 이름을 입력합니다. 예를 들어 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같이 입력합니다. 암호로는 개인용 RMS에 가입할 때 입력했던 암호를 입력합니다. 또는 조직에 Office 365와 같은 클라우드 서비스가 있거나 Azure를 사용하는 경우에는 실제 작업 암호를 입력합니다.
+2.  사용자 이름과 암호를 묻는 메시지가 표시되면 메일과 첨부 파일을 보내는 데 사용된 것과 같은 메일 주소 형식을 사용하여 사용자 이름을 입력합니다. 예를 들면 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같습니다. 암호로는 개인용 RMS에 가입할 때 입력했던 암호를 입력합니다. 또는 조직에 Office 365와 같은 클라우드 서비스가 있거나 Azure를 사용하는 경우에는 실제 작업 암호를 입력합니다.
 
 3. 열리면 문서 내용을 읽습니다. 읽기 전용이므로 내용을 변경할 수는 없습니다.
 
@@ -94,7 +95,7 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 
 이제 수신자가 첨부 파일을 열었고, 선택적인 단계를 수행했다면 다른 사람에게 메일을 전달하기도 했으므로 이 활동에 대해 보고하는 메일 알림을 받습니다. 그러나 메일 메시지는 시간이 지나면 잃어버리기가 쉽기 때문에, 문서에 액세스하는 사람을 추적하기에 더 좋은 방법은 마지막 절차와 같이 문서 추적 사이트를 사용하는 것입니다.
 
-## 보호된 문서를 추적하려면
+## <a name="to-track-your-protected-document"></a>보호된 문서를 추적하려면
 
 1.  Word로 돌아가 **홈** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 메뉴에서 **사용량 추적**을 클릭합니다.
 
@@ -124,7 +125,7 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 |문서 추적 사이트 사용 정보|[문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)
 
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 이제 기본 Azure Information Protection 정책, 이러한 정책의 사용자 지정 방법 및 Word 문서에 대해 레이블 지정이 작동하는 방식을 확인했으므로, 다른 설정을 사용해 보고 Azure Information Protection을 지원하는 다른 Office 프로그램(Excel, PowerPoint, Outlook)에서 이러한 설정이 작동하는 방식을 확인해 보세요. Azure Information Protection 클라이언트를 설치할 때 이러한 응용 프로그램이 열려 있었던 경우에는 이러한 응용 프로그램을 닫았다가 다시 연 후 Azure Information Protection에서 이러한 응용 프로그램을 사용해 보세요.
 
@@ -133,6 +134,6 @@ ms.openlocfilehash: d607c19d37da6b6fb23513067e9e30f33f0260de
 Azure Information Protection [질문과 대답](faqs.md)에서 일부 내용을 읽어보고 다른 설명서 문서의 내용도 살펴보는 것이 도움이 될 수 있습니다. 그러나 조직에 대해 Azure Information Protection 배포를 시작할 준비가 되면 그다음 단계로 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 확인해야 합니다. 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -2,21 +2,22 @@
 title: "빠른 시작 자습서 1단계 | Azure Information Protection"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 2단계로 약 30분 만에 완료해야 합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: b23022c5fbec3d4f6f19ab5017ecf9badf01a9e7
-ms.openlocfilehash: c8cad9c4b6efe2630843bcb1618ecd535670e0fe
+ms.sourcegitcommit: bce1682624b040545d30ca1cc426e4e2f8c38018
+ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
 
 
 ---
 
-# 2단계: Azure Information Protection 정책 구성 및 게시
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
 >*적용 대상: Azure Information Protection*
 
@@ -35,11 +36,11 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     - 분류 레이블: **Personal**(비공개), **Public**(공개), **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 각 레이블의 용도를 이해하려면 각 레이블의 도구 설명을 읽어 보세요. **Secret**(비밀)에는 두 개의 하위 레이블 **All-Employees**(모든 직원)와 **My-Group**(내 그룹)이 있습니다. 이러한 하위 레이블은 분류가 하위 범주를 포함하는 방법의 예를 제공합니다.
 
-    - 기본 설정을 통해 **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 레이블에는 구성된 시각적 표시(예: 바닥글, 머리글, 워터마크)가 있으며 보호가 설정된 레이블은 없습니다. 또한 모든 문서와 메일에 레이블이 필요하지 않고, 기본 레이블이 없으며, 분류 수준을 낮출 때 사용자가 근거를 제공하지 않아도 되도록 세 가지 전역 설정은 설정되지 않습니다.
+    - 기본 설정을 통해 **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 레이블에는 구성된 시각적 표시(예: 바닥글, 머리글, 워터마크)가 있으며 보호가 설정된 레이블은 없습니다. 또한 모든 문서와 메일에 레이블이 필요하지 않고, 기본 레이블이 없고, 사용자가 레이블을 변경할 때 근거를 제공하지 않아도 되며, 클라이언트에 사용자 지정 도움말 링크가 구성되지 않도록 네 가지 전역 설정은 설정되지 않습니다.
 
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy.png)
 
-## 맞춤에 대한 기본 템플릿 및 프롬프트 전역 설정 변경
+## <a name="changing-the-global-settings-for-a-default-template-and-prompt-for-justification"></a>맞춤에 대한 기본 템플릿 및 프롬프트 전역 설정 변경
 
 이 자습서에서는 몇 가지 전역 설정의 작동 방식을 확인할 수 있도록 이러한 몇 가지 전역 설정을 변경합니다.
 
@@ -47,7 +48,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 2. **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)에서 **On**(켜기)으로 설정합니다.
 
-## 보호를 위한 레이블, 워터마크 및 분류를 위한 프롬프트 조건 구성
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>보호를 위한 레이블, 워터마크 및 분류를 위한 프롬프트 조건 구성
 
 이제 레이블 중 하나인 **Confidential**(기밀)의 설정을 변경합니다.
 
@@ -121,6 +122,6 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 [3단계 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -3,6 +3,7 @@ title: "AD RMS 서버 | Azure RMS"
 description: "RMS(권한 관리 서비스) 서버 구성 요소는 Microsoft 인터넷 정보 서비스에서 실행되는 웹 서비스 집합에 의해 구현됩니다."
 keywords: 
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
 ms.date: 09/25/2016
 ms.topic: article
@@ -14,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 3e2dee5511bc86e44e2e10ff9fc981aa36ccee38
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 498a06a65d61417600cd5501a0d04935cb733c37
 
 
 ---
 
-# 서버
+# <a name="server"></a>서버
 
 이 항목에서는 Azure 및 Windows Server용 RMS 서버의 용도와 기능에 대해 설명합니다.
 
@@ -42,15 +43,15 @@ ms.openlocfilehash: 3e2dee5511bc86e44e2e10ff9fc981aa36ccee38
 |사전 인증 | 서버가 사용자를 대신하여 *권한 계정 인증서*를 요청할 수 있게 합니다. 루트 인증 서버 및 라이선스 서버에서 서비스가 실행됩니다.|
 |서비스 로케이터 | RMS 클라이언트에서 계정 인증, 라이선스, 게시 서비스를 검색할 수 있도록 Active Directory에 이러한 서비스의 URL을 제공합니다. 루트 인증 서버 및 라이선스 서버에서 서비스가 실행됩니다.|
 
-## 관련 항목 ##
+## <a name="related-topics"></a>관련 항목 ##
 * [개요](ad-rms-overview.md)
-* [Microsoft 인터넷 정보 서비스](http://www.iis.net/overview)
+* [Microsoft Internet Information Services](http://www.iis.net/overview)(Microsoft 인터넷 정보 서비스)
 * [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)
 * [Microsoft Windows Rights Management Services 서비스 팩 2](http://www.microsoft.com/download/en/details.aspx?id=4909)
-* [Active Directory Rights Management Services 스크립팅 API](https://msdn.microsoft.com/library/Bb968797)
-* [컴퓨터 정품 인증](https://msdn.microsoft.com/library/Cc530377)
-* [사용자 활성화](https://msdn.microsoft.com/library/Cc530378)
-* [발급 라이선스 만들기](https://msdn.microsoft.com/library/Aa362355)
+* [Active Directory Rights Management Services Scripting API](https://msdn.microsoft.com/library/Bb968797)(Active Directory Rights Management Services 스크립팅 API)
+* [Activating a Computer](https://msdn.microsoft.com/library/Cc530377)(컴퓨터 정품 인증)
+* [Activating a User](https://msdn.microsoft.com/library/Cc530378)(사용자 활성화)
+* [Creating an Issuance License](https://msdn.microsoft.com/library/Aa362355)(발급 라이선스 만들기)
 
  
 
@@ -58,6 +59,6 @@ ms.openlocfilehash: 3e2dee5511bc86e44e2e10ff9fc981aa36ccee38
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,9 @@
 title: "Azure Information Protection 배포 로드맵 | Azure Information Protection"
 description: "다음 단계에 따라 조직에 대해 Azure Information Protection을 준비, 구현 및 관리합니다."
 author: cabailey
+ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +13,13 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a6d07e9a24293f054915b5598c63e118c9c1430
-ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
+ms.sourcegitcommit: 1551b5dc3c5c9740721e3de01d086185966b6016
+ms.openlocfilehash: ce1ed30122b3bff5b045dfbec65c257d348f0122
 
 
 ---
 
-# Azure Information Protection 배포 로드맵
+# <a name="azure-information-protection-deployment-roadmap"></a>Azure Information Protection 배포 로드맵
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -36,20 +37,23 @@ ms.openlocfilehash: ff205efebf9b02ed0bfb1c7e275d34981870c26a
 - [데이터 보호 기능만 사용](#deployment-roadmap-for-data-protection-only)
 
 
-## 분류, 레이블 지정, 및 보호에 대한 배포 로드맵
+## <a name="deployment-roadmap-for-classification-labeling-and-protection"></a>분류, 레이블 지정, 및 보호에 대한 배포 로드맵
 
 > [!NOTE]
 > 데이터 보호를 위해 Azure Rights Management 서비스가 이미 사용 중인가요? 이 단계를 대부분 건너뛰고 3단계와 5.1단계에 중점을 두면 됩니다.
 
-### 1단계: 구독을 확인하고 사용자 라이선스 할당
+### <a name="step-1-confirm-your-subscription-and-assign-user-licenses"></a>1단계: 구독을 확인하고 사용자 라이선스 할당
 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 검토하여 예상하는 기능이 포함된 구독이 조직에 있는지 확인합니다. 그런 다음 문서와 전자 메일을 분류하고, 레이블 지정하고, 보호할 조직의 각 사용자에게 이 구독의 라이선스를 할당합니다.
 
-### 2단계: Azure Information Protection을 사용하도록 테넌트 계정 준비
+참고: 개인용 무료 RMS 구독에서 사용자 라이선스를 수동으로 할당하지 말고 이 라이선스를 사용하여 조직의 Azure Rights Management 서비스를 관리하지 마세요. 이러한 라이선스는 Office 365 관리 센터에 **Rights Management Adhoc**으로 표시되고, Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx)를 실행할 경우 **RIGHTSMANAGEMENT_ADHOC**으로 표시됩니다. 개인용 RMS 구독이 사용자에게 자동으로 부여되고 할당되는 방법에 대한 자세한 내용은 [개인용 RMS 및 Azure Information Protection](../understand-explore/rms-for-individuals.md)을 참조하세요.
+
+
+### <a name="step-2-prepare-your-tenant-account-to-use-azure-information-protection"></a>2단계: Azure Information Protection을 사용하도록 테넌트 계정 준비
 Azure Information Protection 사용을 시작하기 전에 다음 준비를 수행합니다.
 
 - 조직의 사용자 인증을 위해 Azure Information Protection에서 사용하는 사용자 계정 및 그룹이 Office 365 또는 Azure Active Directory에 있는지 확인합니다. 필요한 경우 이러한 계정 및 그룹을 만들거나 온-프레미스 디렉터리에서 동기화합니다. 자세한 내용은 [Azure Information Protection 준비](prepare.md)를 참조하세요.
 
-### 3단계: 분류 및 레이블 지정 구성 및 배포
+### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>3단계: 분류 및 레이블 지정 구성 및 배포
 
 분류 전략이 아직 없는 경우 [기본 Azure Information Protection 정책](../deploy-use/configure-policy-default.md)을 검토하고 조직 데이터에 할당할 분류 레이블을 결정하는 기준으로 사용합니다. 비즈니스 요구 사항에 맞게 사용자 지정할 수도 있습니다. 
 
@@ -71,7 +75,7 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 
 이 단계에서 문서와 전자 메일을 보호하는 옵션을 선택하지 마세요.
 
-### 4단계: 권한 관리 데이터 보호를 위한 준비
+### <a name="step-4-prepare-for-rights-management-data-protection"></a>4단계: 권한 관리 데이터 보호를 위한 준비
 
 사용자가 자신의 문서와 전자 메일에 익숙하게 레이블을 지정할 수 있게 되면 가장 중요한 데이터에 대한 데이터 보호 기능을 소개해도 됩니다. 이 단계에서는 Azure Rights Management 서비스에 대한 다음 준비 사항이 필요합니다.
 
@@ -89,7 +93,7 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 
 -   조직에서 권한 관리를 사용하는 방식을 모니터링할 수 있도록 사용 현황 로깅을 구성합니다. 이 단계는 지금 수행해도 되고 나중에 수행해도 됩니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
-### 5단계: Rights Management 데이터 보호에 대한 Azure Information Protection 정책, 응용 프로그램 및 서비스 구성
+### <a name="step-5-configure-your-azure-information-protection-policy-applications-and-services-for-rights-management-data-protection"></a>5단계: Rights Management 데이터 보호에 대한 Azure Information Protection 정책, 응용 프로그램 및 서비스 구성
 
 1. Azure Information Protection 정책을 업데이트하여 데이터 보호 적용
     
@@ -115,21 +119,24 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
     
     Azure Rights Management 서비스에 사용하려는 온-프레미스 서비스가 있으면 Rights Management 커넥터를 설치 및 구성합니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
-### 4단계: 데이터 보호 솔루션 사용 및 모니터링
+### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>4단계: 데이터 보호 솔루션 사용 및 모니터링
 이제 데이터를 보호할 준비가 되었으며 회사에서 Rights Management를 사용하는 방식을 기록합니다. 이 배포 단계 지원에 대한 추가 내용은 [사용자가 Azure Rights Management Service를 사용하여 파일을 보호할 수 있도록 지원](../deploy-use/help-users.md) 및 [Azure Rights Management Service 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
 Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파일을 자동으로 보호하는 데 관심이 있는 경우 [Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호](../rms-client/configure-fci.md) 항목을 참조하세요.
 
-### 5단계: 필요에 따라 테넌트 계정의 Rights Management 서비스 관리
+### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>5단계: 필요에 따라 테넌트 계정의 Rights Management 서비스 관리
 Azure Rights Management 서비스 사용을 시작하면 Windows PowerShell용을 통해 관리 변경 작업을 스크립트로 작성하거나 자동화할 수 있습니다. 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스](../deploy-use/administer-powershell.md)를 참조하세요.
 
 
-## 배포 로드맵(데이터 보호만 해당)
+## <a name="deployment-roadmap-for-data-protection-only"></a>배포 로드맵(데이터 보호만 해당)
 
-### 1단계: Azure 권한 관리를 포함하는 구독이 있는지 확인
+### <a name="step-1-confirm-that-you-have-a-subscription-that-includes-azure-rights-management"></a>1단계: Azure 권한 관리를 포함하는 구독이 있는지 확인
 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 검토하여 예상하는 기능이 포함된 구독이 조직에 있는지 확인합니다. 그런 다음 Azure Rights Management 서비스를 사용하여 문서와 전자 메일을 보호할 조직의 각 사용자에게 이 구독의 라이선스를 할당합니다.
 
-### 2단계: Azure Rights Management 서비스를 사용하도록 테넌트 계정 준비
+참고: 개인용 무료 RMS 구독에서 사용자 라이선스를 수동으로 할당하지 말고 이 라이선스를 사용하여 조직의 Azure Rights Management 서비스를 관리하지 마세요. 이러한 라이선스는 Office 365 관리 센터에 **Rights Management Adhoc**으로 표시되고, Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx)를 실행할 경우 **RIGHTSMANAGEMENT_ADHOC**으로 표시됩니다. 개인용 RMS 구독이 사용자에게 자동으로 부여되고 할당되는 방법에 대한 자세한 내용은 [개인용 RMS 및 Azure Information Protection](../understand-explore/rms-for-individuals.md)을 참조하세요.
+
+
+### <a name="step-2-prepare-your-tenant-account-to-use-the-azure-rights-management-service"></a>2단계: Azure Rights Management 서비스를 사용하도록 테넌트 계정 준비
 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 사용을 시작하기 전에 다음 준비를 수행합니다.
 
 1.  Office 365 테넌트에 조직의 사용자 인증을 위해 Azure Information Protection에서 사용하는 사용자 계정 및 그룹이 포함되어 있는지 확인합니다. 필요한 경우 이러한 계정 및 그룹을 만들거나 온-프레미스 디렉터리에서 동기화합니다. 자세한 내용은 [Azure 권한 관리 준비](prepare.md)를 참조하세요.
@@ -148,7 +155,7 @@ Azure Information Protection 사이트에서 [구독 정보](https://www.microso
 
 -   조직에서 권한 관리를 사용하는 방식을 모니터링할 수 있도록 사용 현황 로깅을 구성합니다. 이 단계는 지금 수행해도 되고 나중에 수행해도 됩니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
-### 3단계: 권한 관리용 응용 프로그램 및 서비스 구성
+### <a name="step-3-configure-your-applications-and-services-for-rights-management"></a>3단계: 권한 관리용 응용 프로그램 및 서비스 구성
 
 1. Rights Management 공유 응용 프로그램 배포
     
@@ -171,18 +178,18 @@ Azure Information Protection 사이트에서 [구독 정보](https://www.microso
     Azure Rights Management 서비스에 사용하려는 온-프레미스 서비스가 있으면 Rights Management 커넥터를 설치 및 구성합니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
 
-### 4단계: 데이터 보호 솔루션 사용 및 모니터링
+### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>4단계: 데이터 보호 솔루션 사용 및 모니터링
 이제 데이터를 보호할 준비가 되었으며 회사에서 Rights Management를 사용하는 방식을 기록합니다. 이 배포 단계 지원에 대한 추가 내용은 [사용자가 Azure Rights Management Service를 사용하여 파일을 보호할 수 있도록 지원](../deploy-use/help-users.md) 및 [Azure Rights Management Service 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
 Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파일을 자동으로 보호하는 데 관심이 있는 경우 [Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호](../rms-client/configure-fci.md) 항목을 참조하세요.
 
-### 5단계: 필요에 따라 테넌트 계정의 Rights Management 서비스 관리
+### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>5단계: 필요에 따라 테넌트 계정의 Rights Management 서비스 관리
 Azure Rights Management 서비스 사용을 시작하면 Windows PowerShell용을 통해 관리 변경 작업을 스크립트로 작성하거나 자동화할 수 있습니다. 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스](../deploy-use/administer-powershell.md)를 참조하세요.
 
 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

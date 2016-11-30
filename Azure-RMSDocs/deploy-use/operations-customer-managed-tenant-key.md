@@ -20,7 +20,7 @@ ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
 ---
 
 
-# <a name="customermanaged-tenant-key-lifecycle-operations"></a>고객 관리: 테넌트 키 수명 주기 작업
+# <a name="customer-managed-tenant-key-lifecycle-operations"></a>고객 관리: 테넌트 키 수명 주기 작업
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -32,7 +32,7 @@ Azure Key Vault에서 Azure Rights Management 서비스에서 더 이상 키에 
 Azure Information Protection에 대한 구독을 취소하면, Azure Information Protection에서 테넌트 키 사용이 중지되므로 별도의 조치가 필요하지 않습니다.
 
 
-## <a name="rekey-your-tenant-key"></a>테넌트 키 다시 입력
+## <a name="re-key-your-tenant-key"></a>테넌트 키 다시 입력
 키 다시 입력을 키 롤링이라고도 합니다. 반드시 필요한 경우가 아니면 테넌트 키를 다시 입력하지 마세요. Office 2010 등의 이전 클라이언트는 키 변경 내용을 정상적으로 처리하지 못합니다. 이러한 경우에는 그룹 정책 또는 해당하는 메커니즘을 사용하여 컴퓨터에서 Rights Management 상태를 지워야 합니다. 그러나 테넌트 키를 다시 입력해야 하는 몇 가지 상황도 있습니다. 예를 들면 다음과 같습니다.
 
 -   회사가 둘 이상으로 분할된 경우. 테넌트 키를 다시 입력하면 새 회사에서는 직원이 게시하는 새 콘텐츠에 액세스할 수 없습니다. 이전 테넌트 키의 복사본이 있으면 이전 콘텐츠에는 액세스할 수 있습니다.

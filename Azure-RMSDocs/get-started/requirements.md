@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2016
+ms.date: 12/01/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5654196e9e8a8d6512897f0cd611ce931d5ffe7
-ms.openlocfilehash: 2fbf22b9221db62f89a480330da9b2ecac1b9edc
+ms.sourcegitcommit: 25d60ee3f6debf8e28c039862e6a9b1f544d92ce
+ms.openlocfilehash: dfadaa6941aa967511f19fd56ff90c78c62184a5
 
 
 ---
@@ -28,7 +28,7 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 |요구 사항|추가 정보|
 |---------------|--------------------|
 |Azure Information Protection 구독|Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 검토하여 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하세요.|
-|Azure Active Directory|Azure Information Protection에 대해 사용자 인증을 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.<br /><br />계정이 페더레이션된 경우(예를 들어 AD FS를 사용하는 경우) Windows 통합 인증을 사용해야 합니다. Azure Information Protection에는 양식 기반 인증이 지원되지 않습니다.<br /><br />MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure Information Protection에서 지원됩니다.<br /><br />자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](requirements-azure-ad.md)을 참조하세요.|
+|Azure Active Directory|Azure Information Protection에 대해 사용자 인증을 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.<br /><br />MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure Information Protection에서 지원됩니다.<br /><br />자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](requirements-azure-ad.md)을 참조하세요.|
 |클라이언트 장치|사용자에게 Azure Information Protection을 지원하는 운영 체제를 실행하는 클라이언트 장치(컴퓨터 또는 모바일 장치)가 있어야 합니다.<br /><br />다음은 사용자가 Office 문서 및 메일을 분류하여 레이블링할 수 있도록 Azure Information Protection 클라이언트를 지원하는 장치입니다.<br /><br />- Windows 10(x86, x64)<br /><br />- Windows 8.1(x86, x64)<br /><br />- Windows 8(x86, x64)<br /><br />- Windows 7 서비스 팩 1(x86, x64)<br /><br />이 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 동일한 장치(Windows, Mac, iOS, Android)에서 이 클라이언트를 사용할 수 있습니다. <br /><br />Azure Rights Management 서비스를 지원하는 장치에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요.|
 |응용 프로그램|Azure Information Protection 클라이언트에서는 다음 Office 제품군의 Office 응용 프로그램인 **Word**, **Excel**, **PowerPoint** 및 **Outlook**에서 만들어진 파일과 메일의 레이블 지정 및 보호를 지원합니다.<br /><br /> - Office 365 ProPlus(2016 앱 또는 2013 앱 포함)(간편 실행 또는 Windows Installer 기반 설치)<br /><br />- Office Professional Plus 2016<br /><br />- Office Professional Plus 2013 서비스 팩 1<br /><br />- Office Professional Plus 2010<br /><br />Azure Rights Management 서비스를 지원하는 응용 프로그램에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.|
 |인터넷 및 종속된 클라우스 서비스 연결을 지원하는 인프라|특정 연결을 허용하기 위해 구성해야 하는 방화벽 또는 유사한 중개 네트워크 장치가 있는 경우 Office 문서 [Office 365 URL 및 IP 주소 범위](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)의 [Office 365 포털 및 공유](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity) 섹션에 있는 **Azure RMS(권한 관리)** 정보를 참조하세요.<br /><br />이 Office 문서의 지침에 따라 RSS 피드를 구독하여 이 정보에 대한 최신 변경 내용을 확인하세요.<br /><br />Office 문서의 정보 외에 Azure Information Protection과 관련하여 다음 사항에 유의하세요.<br /><br />- TCP 443에서 **api.informationprotection.azure.com**으로의 HTTPS 트래픽을 허용합니다.<br /><br />- TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure RMS와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.<br /><br />- 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.|
@@ -55,6 +55,6 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

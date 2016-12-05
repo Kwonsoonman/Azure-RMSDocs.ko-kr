@@ -4,7 +4,7 @@ description: "조직의 Azure Information Protection의 Azure Rights Management 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 65d9e0bb46238d9fda31b8fb47e8e4368d96e1b2
+ms.sourcegitcommit: e5939bb469af198a74d81724c5417eb63db7732b
+ms.openlocfilehash: bf73a79218fa8dba2b90115d0c1573a29f791023
 
 
 ---
@@ -162,9 +162,11 @@ RMS 커넥터를 설치하면 **Microsoft Rights Management 커넥터** 성능 �
 
 ## <a name="rms-analyzer"></a>RMS 분석기
 
-Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태를 모니터링하고 구성 문제를 식별하는 데 유용합니다.
+이 도구가 “있는 그대로"의 지원을 제공하기는 하지만 Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태를 모니터링하고 구성 문제를 식별하는 데 유용합니다. 이 도구를 아직 다운로드하지 않았으면 [다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=46437)에서 다운로드할 수 있습니다. 
 
-이 도구를 아직 다운로드하지 않은 경우에는 [다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=46437)에서 다운로드한 다음 인터넷에 연결할 수 있으며 RMS 커넥터에 연결된 컴퓨터에 설치할 수 있습니다. 도구를 실행하고 **시작** 페이지에서 **Azure RMS 커넥터** 옵션을 선택합니다.
+해당 작업에 대해 커넥터를 사용하기 위하여 권한을 부여한 계정을 사용하여 RMS 커넥터에 대해 구성한 서버 중 하나에 로그인합니다. 예를 들어 Exchange용 RMS 커넥터를 구성한 경우 RMS 커넥터 구성 도구에서 Exchange에 대한 권한을 부여한 계정 중 하나를 사용하여 해당 서버에서 로그인합니다. 그런 다음 **관리자 권한으로 실행** 옵션을 사용하여 RMS 분석기 도구를 실행합니다.
+
+도구가 로드되면 **시작** 페이지에서 **Azure RMS 커넥터** 옵션을 선택합니다. RMS 커넥터 URL을 활성 주소로 입력하고 녹색 화살표를 클릭합니다. 커넥터가 Azure Rights Management 서비스에 연결할 수 있음을 확인하는 테넌트 정보가 표시됩니다. 이 초기 테스트에 실패하면 서버 트래픽을 차단하는 프록시 서버 구성 및 방화벽을 확인해야 합니다. 테넌트 정보가 표시된 후 해당 서버 작업에 대한 지원되는 버전 번호, 필수 구성 요소, 레지스트리 설정 등의 항목을 검사하는 진단 테스트를 계속 실행할 수 있습니다.
 
 추가 정보 및 지침은 다운로드 페이지의 **세부 정보** 및 **설치 지침**을 참조하세요.
 
@@ -193,6 +195,6 @@ Rights Management 서비스 분석기 도구를 사용하면 커넥터의 상태
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

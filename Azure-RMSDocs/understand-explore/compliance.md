@@ -4,7 +4,7 @@ description: "법적 정보, 규정 준수, SLA를 포함하는 Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 784e8a1f53df10ee66595b1268a4d9a1f0cdc9b0
-ms.openlocfilehash: 5fbc0af13f1acdbd6b7a1a267c9d2be2b90b8a1b
+ms.sourcegitcommit: 291198ed501854de1aa7ddbfc80cd7a7f1b4849c
+ms.openlocfilehash: a853aaa993bbb5e15e6c4b80d4c6f0581b6e9090
 
 
 ---
@@ -33,11 +33,13 @@ Azure Information Protection은 다른 서비스를 지원하는 동시에 다�
 
 ## <a name="security-compliance-and-auditing"></a>보안, 규정 준수 및 감사
 
-[Azure RMS를 통해 해결할 수 있는 문제](../understand-explore/azure-rms-problems-it-solves.md) 문서에서 [보안, 준수 및 규정 요구 사항](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 섹션을 참조하세요. 또한,
+Azure Rights Management 서비스의 특정 인증에 대한 자세한 내용은 [Azure RMS를 통해 해결할 수 있는 문제](../understand-explore/azure-rms-problems-it-solves.md) 문서의 [보안, 준수 및 규정 요구 사항](../understand-explore/azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 섹션을 참조하세요. 또한,
 
 - Azure Information Protection 외부 인증: [Microsoft Azure 보안 센터](http://azure.microsoft.com/support/trust-center/)
 
 - FIPS 140 정보: [FIPS 140 유효성 검사](https://technet.microsoft.com/library/security/cc750357.aspx)
+
+보호 기술이 작동하는 방법에 대한 심층적인 기술 정보는 [Azure RMS는 어떤 방식으로 작동합니까?](../understand-explore/how-does-it-work.md)를 
 
 ## <a name="service-level-agreements"></a>서비스 수준 계약
 
@@ -56,6 +58,6 @@ Azure Information Protection은 다른 서비스를 지원하는 동시에 다�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

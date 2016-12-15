@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/11/2016
+ms.date: 11/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 757b0e1a65d54f81b00c6513ee85ded4fe753684
-ms.openlocfilehash: 37f42c4b9f4e4b41e96b3e1e6a74a6c3d7deb254
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: 0a9f88f179e5ac936211e61f8bf6dae9ec83506f
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 37f42c4b9f4e4b41e96b3e1e6a74a6c3d7deb254
 ## <a name="information-about-new-releases-and-updated-documentation"></a>새 릴리스 및 업데이트된 설명서에 대한 정보
 Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)에 새 릴리스와 업데이트에 대한 공지를 게시합니다. 이러한 블로그 게시물은 제품 문서와 지원 정보를 보완합니다.
 
-각 월의 끝에는 "**Azure Information Protection Documentation Update for \<month, year>**"(<월, 연도>의 Azure Information Protection 설명서 업데이트)라는 제목으로 설명서 변경 내용이 요약되어 있습니다. 이러한 게시물은 콘텐츠 형식 태그가 [**업데이트**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)이며 새 릴리스에 대한 설명서 업데이트뿐 아니라 기존 릴리스에 대한 수정 사항 및 설명도 포함합니다.
+각 월별 게시물 끝에는 "**Azure Information Protection Documentation Update for \<month, year**"(월, 연도의 Azure Information Protection 설명서 업데이트)라는 제목으로 설명서 변경 내용이 요약되어 있습니다. 이러한 게시물은 콘텐츠 형식 태그가 [**업데이트**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)이며 새 릴리스에 대한 설명서 업데이트뿐 아니라 기존 릴리스에 대한 수정 사항 및 설명도 포함합니다.
 
 > [!TIP]
 > Microsoft Rights Management 서비스(Azure RMS 또는 AD RMS)를 사용하는 응용 프로그램을 개발 중인 경우에는 [Active Directory Rights Management Services (AD RMS) Developer's Corner Blog(AD RMS(Active Directory Rights Management Services) 개발자 코너 블로그)](https://blogs.msdn.microsoft.com/rms/)도 확인할 수 있습니다.
@@ -93,6 +93,6 @@ Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](htt
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

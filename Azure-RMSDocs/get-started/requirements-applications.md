@@ -4,7 +4,7 @@ description: "RMS API를 사용하여 Azure Information Protection의 Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2016
+ms.date: 12/07/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 84072c64f83ec97ac41d6ec030be5eabff263b4b
-ms.openlocfilehash: 32c3c5869ffd7d0bbcbe52a9db6cbb53d89016ec
+ms.sourcegitcommit: 0bba37c12226bc6954f2d371f98ebd3f47f8508d
+ms.openlocfilehash: 94a61cbd047a58f1b088c97a3ca833d49d999145
 
 
 ---
@@ -33,7 +33,7 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 
 테이블 열에 대한 정보:
 
--   **보호된 PDF**: 파일 이름 확장명이 .ppdf이고 RMS 공유 응용 프로그램을 사용하여 Office 파일 및 PDF 파일을 메일로 공유할 때 자동으로 생성되는 파일입니다. RMS 공유 응용 프로그램 및 iOS 및 Android 용 Azure Information Protection 앱에는 보호되는 PDF 파일에 대한 판독기가 포함되어 있습니다. 이전에 Azure RMS 또는 AD RMS를 사용하여 보호된 PDF 파일을 만든 경우 Foxit Reader 및 Nitro Pro를 사용하여 Windows, iOS 및 Android 장치에서 해당 파일을 계속 읽을 수 있습니다.
+-   **보호된 PDF**: 파일 이름 확장명이 .ppdf이고 RMS 공유 응용 프로그램을 사용하여 Office 파일 및 PDF 파일을 메일로 공유할 때 자동으로 생성되는 파일입니다. RMS 공유 응용 프로그램, iOS/Android용 Azure Information Protection 앱 및 Windows용 Azure Information Protection 클라이언트(미리 보기)에는 보호되는 PDF 파일용 판독기가 포함되어 있습니다. 이전에 Azure RMS 또는 AD RMS를 사용하여 보호된 PDF 파일을 만든 경우 Foxit Reader 및 Nitro Pro를 사용하여 Windows, iOS 및 Android 장치에서 해당 파일을 계속 읽을 수 있습니다.
 
 -   **메일:** 나열된 메일 클라이언트는 메일 메시지 자체를 보호할 수 있으므로 첨부된 파일도 자동으로 보호됩니다. 이 시나리오에서 클라이언트의 미리 보기 기능은 권한 있는 받는 사람에게 보호된 콘텐츠(메시지 및 첨부 파일)를 표시할 수 있습니다. 그러나 전자 메일 메시지 자체가 보호되지 않고 첨부 파일만 보호되면, 클라이언트의 미리 보기 기능이 권한 있는 받는 사람에게 보호된 첨부 파일을 표시할 수 없습니다.
 
@@ -42,7 +42,7 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 
 |**장치 운영 체제**|Word, Excel, PowerPoint|보호된 PDF|메일|다른 파일 형식|
 |-------------------------------|---------------------------|-----------------|---------|--------------------|
-|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 앱(Azure RMS에만 해당) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Gaaiho 문서<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 공유 앱|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />OWA(Outlook Web App) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Windows용 RMS 공유 응용 프로그램: 텍스트, 이미지, pfile<br /><br />Siemens JT2Go: JT 파일(Windows 10에만 해당)|
+|**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Mobile 앱(Azure RMS에만 해당) [[1]](#footnote-1)<br /><br />Office Online [[2]](#footnote-2)|Windows용 Azure Information Protection 클라이언트(미리 보기)<br /><br />Gaaiho 문서<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 공유 앱|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />OWA(Outlook Web App) [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Windows용 Azure Information Protection 클라이언트(미리 보기): 텍스트, 이미지, pfile<br /><br />Windows용 RMS 공유 응용 프로그램: 텍스트, 이미지, pfile<br /><br />AutoCAD용 SealPath RMS 플러그 인 [[8]](#footnote-8): .dwg<br /><br />Siemens JT2Go: JT 파일(Windows 10에만 해당)|
 |**iOS**|iPad 및 iPhone용 Office [[5]](#footnote-5)<br /><br />Office Online [[2]](#footnote-2)<br /><br />TITUS Docs|Azure Information Protection 앱 [[1]](#footnote-1)<br /><br /> Foxit Reader<br /><br />TITUS Docs|Azure Information Protection 앱 [[1]](#footnote-1)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 및 iPhone용 Outlook [[4]](#footnote-4)<br /><br />iOS용 OWA [[3]](#footnote-3)<br /><br />TITUS Mail|Azure Information Protection 앱 [[1]](#footnote-1): 텍스트, 이미지<br /><br />TITUS Docs: Pfile|
 |**Android**|GigaTrust App for Android<br /><br />Office Online [[2]](#footnote-2)<br /><br />Office Mobile(Azure RMS에만 해당) [[1]](#footnote-1)|Azure Information Protection 앱 [[1]](#footnote-1)<br /><br />GigaTrust App for Android<br /><br />Foxit Reader<br /><br />RMS 공유 앱 [[1]](#footnote-1)|9Folders [[4]](#footnote-4)<br /><br />Azure Information Protection 앱 [[1]](#footnote-1)<br /><br />GigaTrust App for Android [[4]](#footnote-4)<br /><br />Citrix WorxMail [[6]](#footnote-6)<br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Android용 Outlook [[4]](#footnote-4)<br /><br />Android용 OWA [[3]](#footnote-3) 및 [[7]](#footnote-7)<br /><br />Samsung Email(S3 이상) [[7]](#footnote-7)<br /><br />TITUS Classification for Mobile|Azure Information Protection 앱 [[1]](#footnote-1): 텍스트, 이미지|
 |**OS X**|Office 2011(AD RMS만 해당)<br /><br />Mac용 Office 2016<br /><br />Office Online [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 공유 앱 [[1]](#footnote-1)|Outlook 2011(AD RMS만 해당)<br /><br />Mac용 Outlook 2016<br /><br />Outlook for Mac|RMS 공유 앱 [[1]](#footnote-1): 텍스트, 이미지, pfile|
@@ -52,32 +52,38 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 |**Blackberry 10**|지원되지 않음|지원되지 않음|Blackberry 메일 [[4]](#footnote-4)|지원되지 않음|
 
 
-##### <a name="footnote-1"></a>각주 1
+###### <a name="footnote-1"></a>각주 1
 사용권 계약에 따라 보호하는 콘텐츠 보기를 지원합니다.
 
-##### <a name="footnote-2"></a>각주 2 
+###### <a name="footnote-2"></a>각주 2 
 SharePoint Online 및 비즈니스용 OneDrive에서 보호되지 않은 문서를 보호된 라이브러리로 업로드하는 경우 보호된 문서 보기를 지원합니다. 
 
-##### <a name="footnote-3"></a>각주 3
+###### <a name="footnote-3"></a>각주 3
 받는 사람이 보호된 메일을 수신하고 Exchange를 메일 서버로 사용하지 않거나 보내는 사람이 다른 조직에 속하는 경우, 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다. 이 콘텐츠는 Outlook Web Access에서 열 수 없습니다.
 
-##### <a name="footnote-4"></a>각주 4
+###### <a name="footnote-4"></a>각주 4
 Exchange 관리자가 사용하도록 설정해야 하는 Exchange ActiveSync IRM을 사용합니다. 사용자는 보호된 메일 메시지를 보기, 회신 및 전체 회신할 수 있지만 사용자는 새 메일 메시지 자체를 보호할 수 없습니다.
 
 받는 사람이 보호된 메일을 수신하고 Exchange를 메일 서버로 사용하지 않거나 보내는 사람이 다른 조직에 속하는 경우, 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다. 이 콘텐츠는 Exchange Active Sync IRM을 사용하여 모바일 메일 클라이언트 또는 Outlook Web Access에서 열 수 없습니다.
 
-##### <a name="footnote-5"></a>각주 5
+###### <a name="footnote-5"></a>각주 5
 iOS용 보호된 문서 보기 및 편집을 지원하고, Android용 보호된 문서 보기를 지원합니다. 자세한 내용은 Office 블로그에서 [iPad 및 iPhone용 Office에 Azure 권한 관리 지원 제공](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) 게시물을 참조하세요.
 
-##### <a name="footnote-6"></a>각주 6
+###### <a name="footnote-6"></a>각주 6
 자세한 내용은 Citrix [WorxMail에 대한 제품 설명서](http://docs.citrix.com/en-us/worx-mobile-apps/10/xmob-worx-mail.html)를 참조하세요.
 
-##### <a name="footnote-7"></a>각주 7
+###### <a name="footnote-7"></a>각주 7
 자세한 내용은 Office 블로그에서 [이제 일부 선택된 장치에서 Android용 OWA를 사용할 수 있음](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/) 게시물을 참조하세요.
+
+###### <a name="footnote-8"></a>각주 8
+자세한 내용은 Enterprise and Mobility 블로그의 'SealPath, AutoCAD용 RMS 보호 기능 제공' 게시물(https://blogs.technet.microsoft.com/enterprisemobility/2015/09/08/sealpath-brings-rms-protection-to-autocad/)을 참조하세요.
+
 
 ## <a name="more-information-about-azure-rms-support-for-office"></a>Office에 대한 Azure RMS 지원과 관련된 자세한 내용
 
 Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되어 있으며, 이러한 앱에서 이 기능은 종종 IRM(정보 권한 관리)이라고 불립니다. 다음 Office 클라이언트 버전은 Azure RMS를 사용하여 파일 및 메일 보호를 지원합니다.
+
+- Office 365 ProPlus: Office 2016 및 Office 2013
 
 - Office Professional Plus 2016
 
@@ -93,6 +99,8 @@ Office Professional Plus 2010 또는 Office Professional 2010을 사용하는 Az
 
 - Windows 10에서는 지원되지 않음
 
+- 페더레이션된 사용자 계정에 대한 양식 기반 인증은 지원되지 않습니다. 이러한 계정은 Windows 통합 인증을 사용해야 합니다.
+
 ## <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
 
 iOS 및 Android용 Azure Information Protection 앱은 이러한 장치에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
@@ -101,6 +109,12 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 자세한 내용은 [iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ](../rms-client/mobile-app-faq.md)를 참조하세요.
 
+
+## <a name="more-information-about-the-azure-information-protection-client-for-windows-preview"></a>Windows용 Azure Information Protection 클라이언트(미리 보기)에 대한 자세한 내용
+
+이 미리 보기 버전의 Azure Information Protection 클라이언트는 평가 및 피드백 수집용입니다. 이 클라이언트는 기존의 Windows용 권한 관리 공유 응용 프로그램을 대체할 예정입니다. 
+
+이 미리 보기 버전 클라이언트에 대한 자세한 내용은 [공지 블로그 게시물](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/) 및 [미리 보기 사용자 가이드](../rms-client/client-user-guide.md)를 참조하세요.
 
 ## <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 자세한 내용
 
@@ -119,15 +133,15 @@ Windows용 Rights Management 공유 응용 프로그램에 대한 자세한 내�
 > [!NOTE]
 > 이제 iOS 및 Android용 RMS 공유 앱은 Azure Information Protection 앱으로 대체됩니다.
 
-## <a name="more-information-about-other-applications-that-support-azure-rms"></a>Azure RMS를 지원하는 다른 응용 프로그램에 대한 자세한 내용
+## <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Azure Information Protection을 지원하는 다른 응용 프로그램에 대한 자세한 내용
 
-표에 있는 응용 프로그램뿐 아니라 RMS API를 Azure RMS와 통합할 수 있도록 지원하는 모든 응용 프로그램이며, 다음이 포함됩니다.
+표에 나와 있는 응용 프로그램 외에도 Azure Rights Management 서비스용 API를 지원하는 다음과 같은 모든 응용 프로그램을 Azure Information Protection과 통합할 수 있습니다.
 
 - RMS SDK를 사용하여 사내에서 작성한 LOB(기간 업무) 응용 프로그램
 
 - 소프트웨어 공급업체에서 RMS SDK를 사용하여 작성한 응용 프로그램
 
-SDK에 대한 자세한 내용은 [Microsoft Rights Management SDK](../develop/developers-guide.md)를 참조하세요.
+자세한 내용은 [Azure Information Protection 개발자 가이드](../develop/developers-guide.md)를 참조하세요.
 
 ## <a name="applications-that-are-not-supported-by-azure-rms"></a>Azure RMS에서 지원되지 않는 응용 프로그램
 
@@ -153,6 +167,6 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 자주 사용하는 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)을 참조하세요.
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

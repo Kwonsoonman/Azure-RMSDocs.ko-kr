@@ -4,15 +4,15 @@ description: "조직에서 Microsoft Azure Information Protection 사용을 빠�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: bce1682624b040545d30ca1cc426e4e2f8c38018
-ms.openlocfilehash: 7ba1566a81ca9a3ac45f340f69d3c9e933f015ff
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 2f996bb974b1d86b137e3a8fba387386276739a2
 
 
 ---
@@ -32,17 +32,21 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     > [!TIP] 
     > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
 
-3.  자동으로 만들어진 기본 Information Protection 정책이 표시되는 기본 **Azure Information Protection** 블레이드를 탐색합니다.
+3.  자동으로 만들어진 기본 Information Protection 정책을 보여 주는 **정책:글로벌** 블레이드(자동으로 표시됨)를 탐색합니다.
     
     - 분류 레이블: **Personal**(비공개), **Public**(공개), **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 각 레이블의 용도를 이해하려면 각 레이블의 도구 설명을 읽어 보세요. **Secret**(비밀)에는 두 개의 하위 레이블 **All-Employees**(모든 직원)와 **My-Group**(내 그룹)이 있습니다. 이러한 하위 레이블은 분류가 하위 범주를 포함하는 방법의 예를 제공합니다.
 
-    - 기본 설정을 통해 **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 레이블에는 구성된 시각적 표시(예: 바닥글, 머리글, 워터마크)가 있으며 보호가 설정된 레이블은 없습니다. 또한 모든 문서와 메일에 레이블이 필요하지 않고, 기본 레이블이 없고, 사용자가 레이블을 변경할 때 근거를 제공하지 않아도 되며, 클라이언트에 사용자 지정 도움말 링크가 구성되지 않도록 네 가지 전역 설정은 설정되지 않습니다.
-
-    ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy.png)
+    - 기본 설정을 사용하는 경우 **내부**, **기밀** 및 **비밀** 레이블에는 바닥글, 머리글, 워터마크 등의 시각적 표시가 구성되며 레이블에 대해 보호가 설정되지는 않습니다. 
+    
+    ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-labels.png)
+    
+    또한 모든 문서와 전자 메일에 레이블이 필요하지 않고, 기본 레이블이 없고, 사용자가 레이블을 변경할 때 근거를 제공하지 않아도 되며, 클라이언트에 사용자 지정 도움말 링크가 구성되지 않도록 하기 위해 일부 글로벌 정책 설정은 지정되지 않습니다.
+    
+    ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-settings.png)
 
 ## <a name="changing-the-global-settings-for-a-default-template-and-prompt-for-justification"></a>맞춤에 대한 기본 템플릿 및 프롬프트 전역 설정 변경
 
-이 자습서에서는 몇 가지 전역 설정의 작동 방식을 확인할 수 있도록 이러한 몇 가지 전역 설정을 변경합니다.
+이 자습서에서는 몇 가지 글로벌 정책 설정의 작동 방식을 확인할 수 있도록 이러한 설정을 변경합니다.
 
 1. **Select the default label**(기본 레이블 선택)에서 **Internal**(내부)로 설정합니다.
 
@@ -102,11 +106,11 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 형식 참고 사항](../media/step2-type-notes.png)
 
-8. **Label: Confidential**(레이블: 기밀) 블레이드에서 **Save**(저장)를 클릭합니다. 그런 다음 **Azure Information Protection** 블레이드에서 **Save**(저장)를 다시 클릭합니다.
+8. **Label: Confidential**(레이블: 기밀) 블레이드에서 **Save**(저장)를 클릭합니다. 그런 다음 **정책:글로벌** 블레이드에서 **저장**을 다시 클릭합니다.
 
-9. 이제 변경을 수행하고 저장했으므로 이러한 내용을 사용자에게 제공하기 위해 **Publish**(게시)를 클릭하고 **Yes**(예)를 클릭하여 확인합니다.
+    ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책 구성됨](../media/info-protect-policy-configured.png)
 
-![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책 구성됨](../media/info-protect-policy-configured.png)
+9. 이제 변경을 수행하고 변경 내용을 저장했으므로 이러한 내용을 사용자에게 제공하기 위해 초기 **Azure Information Protection** 블레이드에서 **게시**와 **예**를 클릭하여 게시를 확인합니다.
 
 이 자습서를 완료한 후 Azure 포털을 닫거나, 열어 둔 채로 추가 구성 옵션을 사용해 볼 수 있습니다.
 
@@ -122,6 +126,6 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 [3단계 &#187;](infoprotect-tutorial-step3.md)
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

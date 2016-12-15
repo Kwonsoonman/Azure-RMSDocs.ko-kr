@@ -3,7 +3,7 @@
 # [계획 및 디자인](/information-protection/plan-design/deployment-roadmap)
 # [서비스 배포 및 사용](activate-service.md)
 ## [서비스 활성화](activate-service.md)
-### [Office 365 관리 센터 - 미리 보기](activate-office365-preview.md)
+### [Office 365 관리 센터 미리 보기](activate-office365-preview.md)
 ### [Office 365 클래식 관리 센터](activate-office365-classic.md)
 ### [Azure 클래식 포털](activate-azure-classic.md)
 ## [사용자 지정 템플릿 구성](configure-custom-templates.md)
@@ -15,12 +15,12 @@
 ## [응용 프로그램 구성](configure-applications.md)
 ### [Office 365](configure-office365.md)
 ### [Office 앱](configure-office-apps.md)
-### [RMS 공유 앱 ](configure-sharing-app.md)
+### [RMS 공유 앱](configure-sharing-app.md)
 ## [사용 권한 구성](configure-usage-rights.md)
 ## [검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](configure-super-users.md)
 ## [Information Protection 정책 구성](configure-policy.md)
 ### [기본 정책](configure-policy-default.md)
-### [전역 설정 구성](configure-policy-settings.md)
+### [정책 설정 구성](configure-policy-settings.md)
 ### [새 레이블 만들기](configure-policy-new-label.md)
 ### [레이블 삭제 또는 순서 변경](configure-policy-delete-reorder.md)
 ### [레이블 변경](configure-policy-change-label.md)
@@ -28,6 +28,7 @@
 #### [HYOK 제한](configure-adrms-restrictions.md)
 ### [시각적 표시 구성](configure-policy-markings.md)
 ### [조건 구성](configure-policy-classification.md)
+### [범위 지정 정책 구성](configure-policy-scope.md)
 ## [RMS 커넥터 배포](deploy-rms-connector.md)
 ### [커넥터 설치 및 구성](install-configure-rms-connector.md)
 ### [서버 구성](configure-servers-rms-connector.md)
@@ -47,6 +48,6 @@
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

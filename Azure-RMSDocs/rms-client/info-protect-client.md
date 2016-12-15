@@ -4,15 +4,15 @@ description: "문서와 메일용 분류 레이블을 선택할 수 있도록 Of
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: db05149a25b6535d568338140daa2474e48b6711
-ms.openlocfilehash: 984d764d0c1ac41e6baec0b7978f501d7494773d
+ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
+ms.openlocfilehash: 71972b0a057b1958dfa5e5b4af41b65d5080a086
 
 
 ---
@@ -27,14 +27,13 @@ Azure Information Protection을 사용하여 문서 및 메일 메시지를 분�
 
 ![기본 정책이 적용된 Azure Information Protection 표시줄](../media/info-protect-bar-default.png)
 
-[Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 Azure Information Protection 클라이언트를 다운로드합니다.
+[Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 Azure Information Protection 클라이언트를 다운로드합니다. 현재는 GA(일반 공급) 버전 및 미리 보기 버전을 설치할 수 있습니다. 미리 보기 버전은 평가용 새 기능을 포함하며 변경될 수 있습니다. 자세한 내용은 다음 블로그 공지 게시물 [Azure Information Protection 12월 미리 보기 제공](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)을 참조하세요.
 
-클라이언트를 설치하기 전에 Information Protection 클라이언트에 필요한 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다([Azure Information Protection에 대한 요구 사항](../get-started/requirements-azure-rms.md)).
-
+클라이언트를 설치하기 전에 Information Protection 클라이언트에 필요한 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다([Azure Information Protection에 대한 요구 사항](../get-started/requirements-azure-rms.md)). 또한 미리 보기 버전 클라이언트의 경우 Windows 7 SP1을 실행하는 컴퓨터에 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)이 필요합니다. 클라이언트를 설치한 후에 이 업데이트를 설치할 수 있습니다. 이 업데이트가 필요한데 설치되어 있지 않으면 업데이트를 설치하라는 메시지가 표시됩니다.
 
 ## <a name="to-install-the-azure-information-protection-client-manually"></a>Azure Information Protection 클라이언트를 수동으로 설치하려면
 
-1. [클라이언트를 다운로드](https://www.microsoft.com/en-us/download/details.aspx?id=53018)한 후 **AzInfoProtection.exe**를 실행하고 메시지의 지시에 따라 클라이언트를 설치합니다. 이 설치에는 로컬 관리 권한이 필요합니다.
+1. [클라이언트를 다운로드](https://www.microsoft.com/en-us/download/details.aspx?id=53018)한 후 **AzInfoProtection.exe**와 같은 실행 파일을 실행하고 메시지의 지시에 따라 클라이언트를 설치합니다. 이 설치에는 로컬 관리 권한이 필요합니다.
 
     Office 365 또는 Azure Active Directory에 연결할 수 없지만 데모용으로 로컬 정책을 사용하여 Azure Information Protection의 클라이언트 쪽을 확인해 보려면 데모 정책을 설치하는 옵션을 선택합니다. 클라이언트에서 Azure Information Protection 서비스에 연결하면 이 데모 정책이 조직의 Azure Information Protection 정책으로 바뀝니다. 
 
@@ -42,11 +41,11 @@ Azure Information Protection을 사용하여 문서 및 메일 메시지를 분�
 
 ## <a name="to-install-the-azure-information-protection-client-for-users"></a>사용자를 위해 Azure Information Protection 클라이언트를 설치하려면
 
-명령줄 옵션을 사용하여 Azure Information Protection 클라이언트 설치를 스크립트로 작성하고 자동화할 수 있습니다. 설치 옵션을 확인하려면 `AzInfoProtection.exe /help`를 실행합니다.
+명령줄 옵션을 사용하여 Azure Information Protection 클라이언트 설치를 스크립트로 작성하고 자동화할 수 있습니다. 설치 옵션을 보려면 **/help**를 사용하여 실행 파일을 실행합니다. 예: `AzInfoProtection.exe /help`.
 
 예를 들어 클라이언트를 자동으로 설치하려면 다음 명령을 실행합니다. `AzInfoProtection.exe /passive | quiet`
 
-Azure Information Protection 클라이언트는 Microsoft 업데이트 카탈로그에도 포함되어 있으므로 카탈로그를 사용하는 소프트웨어 업데이트 서비스를 사용하여 클라이언트를 설치하고 업데이트할 수 있습니다.
+Azure Information Protection 클라이언트의 일반 공급 버전은 Microsoft 업데이트 카탈로그에도 포함되어 있으므로 카탈로그를 사용하는 소프트웨어 업데이트 서비스를 통해 클라이언트를 설치하고 업데이트할 수 있습니다. 미리 보기 버전 클라이언트는 Microsoft 업데이트 카탈로그에 포함되어 있지 않습니다.
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트를 제거하려면
 
@@ -54,9 +53,9 @@ Azure Information Protection 클라이언트는 Microsoft 업데이트 카탈로
 
 - 제어판을 사용하여 프로그램을 제거합니다. **Microsoft Azure Information Protection** > **제거**를 클릭합니다.
 
-- **AzInfoProtection.exe**를 다시 실행하고 **설치 수정** 페이지에서 **제거**를 클릭합니다. 
+- **AzInfoProtection.exe**와 같은 실행 파일을 다시 실행하고 **설치 수정** 페이지에서 **제거**를 클릭합니다. 
 
-- `AzInfoProtection.exe /uninstall`을 실행합니다.
+- **/uninstall**을 사용하여 실행 파일을 실행합니다.  `AzInfoProtection.exe /uninstall`
 
 
 ## <a name="to-verify-installation-connection-status-or-report-a-problem"></a>설치 또는 연결 상태를 확인하거나 문제를 보고하려면
@@ -67,9 +66,9 @@ Azure Information Protection 클라이언트는 Microsoft 업데이트 카탈로
 
     - **클라이언트 상태** 섹션에서 **버전** 값을 사용하여 설치가 되었는지 확인합니다. 또한 클라이언트가 언제 조직의 Azure Information Protection 서비스에 마지막으로 연결되었으며 Azure Information Protection 정책이 언제 마지막으로 설치되거나 업데이트되었는지 확인합니다. 클라이언트는 서비스에 연결할 때 현재 정책이 변경된 것을 발견한 경우 최신 정책을 자동으로 다운로드합니다. 표시된 시간 이후에 정책을 변경한 경우 Office 응용 프로그램을 닫았다가 다시 엽니다.
     
-        또한 Azure Information Protection에 인증하는 데 사용되는 계정을 식별하는 표시된 사용자 이름을 확인합니다. 이 사용자 이름은 Office 365 또는 Azure Active Directory에 사용하는 계정과 일치해야 합니다.
+        또한 Azure Information Protection에 인증하는 데 사용되는 계정을 식별하는 표시된 사용자 이름을 확인합니다. 이 사용자 이름은 Office 365 또는 Azure Active Directory에 사용하고 Azure Information Protection이 구성된 테넌트에 속한 계정과 일치해야 합니다.
 
-    - **도움말 및 피드백** 섹션에서: **추가 정보 링크**를 누르면 기본적으로 [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책에서 [전역 설정](../deploy-use/configure-policy-settings.md) 중 하나로 사용자 지정 URL을 구성할 수 있습니다.
+    - **도움말 및 피드백** 섹션에서 **자세히 링크**를 클릭하면 기본적으로 [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책의 [정책 설정](../deploy-use/configure-policy-settings.md) 중 하나로 사용자 지정 URL에 이동하도록 이 링크를 구성할 수 있습니다.
         
         **사용자 의견 보내기** 링크를 사용하면 조사하기 위해 Information Protection 팀에 보낼 수 있는 메일 메시지에 클라이언트 로그를 자동으로 첨부할 수 있습니다. 
     
@@ -84,6 +83,56 @@ Azure Information Protection 클라이언트는 Microsoft 업데이트 카탈로
         - 다음 레지스트리 키 및 설정은 삭제됩니다. **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. 이 레지스트리 키에 대한 설정을 구성하는 경우(예: AD RMS에서 마이그레이션하는데 네트워크에 서비스 연결 지점이 계속 있기 때문에 Azure Information Protection 테넌트로 리디렉션에 대한 설정) 클라이언트를 다시 설정한 후 레지스트리 설정을 다시 구성해야 합니다.
         
         - 클라이언트를 다시 설정한 후 사용자 환경("부트스트랩"이라고도 함)을 다시 초기화해야 합니다. 그러면 클라이언트 및 최신 템플릿에 대한 인증서가 다운로드됩니다. 이렇게 하려면 Office의 모든 인스턴스를 닫은 다음 Office 응용 프로그램을 다시 시작합니다. 그러면 최신 Azure Information Protection 정책을 다운로드했는지도 확인됩니다. 이 작업을 완료할 때까지 진단 테스트를 다시 실행하지 마세요.
+
+
+## <a name="usage-logging"></a>사용 현황 로깅
+
+**[ 이 기능은 미리 보기 버전 클라이언트가 있어야 사용 가능하며 변경될 수 있습니다. ]**
+
+미리 보기 버전 Azure Information Protection 클라이언트는 사용자 활동을 로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그(**Azure Information Protection**)에 기록합니다. 이벤트에는 다음과 같은 정보가 포함됩니다.
+
+- 날짜, 클라이언트 버전, 정책 ID
+
+- 로그인한 사용자 이름, 컴퓨터 이름
+
+- 파일 이름 및 위치
+
+- 작업:
+
+    - 레이블 설정: 정보 ID 101
+    
+    - 레이블 설정(하위 수준): 정보 ID 102
+    
+    - 레이블 설정(상위 수준): 정보 ID 103
+    
+    - 레이블 제거: 정보 ID 104
+   
+    - 권장 팁: 정보 105
+    
+    - 사용자 지정 보호 적용: 정보 ID 201
+    
+    - 사용자 지정 보호 제거: 정보 ID 202
+    
+    - 로그인(운영): 정보 ID 902
+    
+    - 정책 다운로드(운영): 정보 ID 901
+    
+- 작업 소스:
+    
+    - 수동 
+    
+    - 권장
+    
+    - 자동  
+    
+    - 시스템(로그인 및 다운로드 정책용)
+    
+- 작업 전/후의 레이블 
+    
+- 작업 전/후의 보호
+    
+- 사용자 근거(해당하는 경우)
+    
 
 ## <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 위한 바로 가기 키
 
@@ -117,6 +166,6 @@ Information Protection 표시줄의 레이블을 변경하려면 Azure Informati
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

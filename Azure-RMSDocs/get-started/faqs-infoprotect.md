@@ -4,7 +4,7 @@ description: "Azure Information Protection의 미리 보기 릴리스에 대한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: a05b33f5085bf31d4ef1e6a606322fda8b0febe7
+ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
+ms.openlocfilehash: ba67bb149b0128b068c86dcf849e2dd49edbf6a7
 
 
 ---
@@ -35,13 +35,7 @@ Azure Information Protection 클라이언트는 데이터에 할당된 분류 �
 
 현재 릴리스에는 다음과 같은 제한 사항이 있습니다. 추가 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)(Enterprise Mobility 및 보안 블로그) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요.
 
-- Office 파일 형식 및 Outlook 메일 메시지에만 레이블을 적용할 수 있습니다.
-
-- Office 추가 기능에 대한 레이블은 Azure Information Protection 클라이언트를 설치한 모든 사용자에게 표시됩니다.
-
 - 레이블 이름 및 도구 설명은 하나의 언어로만 지원됩니다.
-
-- Windows 파일 탐색기에서 파일을 분류할 수 없습니다.
 
 - 분류 및 레이블 지정을 위한 중앙 집중식 로깅은 없습니다.
 
@@ -53,6 +47,9 @@ Azure Information Protection 클라이언트는 데이터에 할당된 분류 �
 
 - 파트너 및 개발자용 SDK를 사용할 수 없습니다.
 
+위에 나와 있는 제한 사항 중 일부는 현재 미리 보기에서 사용 가능합니다. 자세한 내용은 블로그 공지 게시물 [Azure Information Protection 12월 미리 보기 제공](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)을 참조하세요.
+
+
 ## <a name="do-i-need-to-be-a-global-admin-to-try-azure-information-protection"></a>Azure Information Protection을 사용하려면 전역 관리자여야 하나요?
 
 Azure Information Protection 정책을 구성하려면 Azure Active Directory의 전역 관리자로 Azure Portal에 로그인해야 합니다.
@@ -61,7 +58,7 @@ Azure Information Protection 정책을 구성하려면 Azure Active Directory의
 
 ## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>Azure Portal의 옵션은 P1인가요, P2인가요?
 
-**Azure Information Protection Premium 1**(P1) 구독 및 **Azure Information Protection Premium 2**(P2) 구독에 포함되는 기능을 확인하려면 Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 참조하세요.
+**Azure Information Protection Premium 1**(P1) 구독 및 **Azure Information Protection Premium 2**(P2) 구독에 포함되는 기능을 확인하려면 Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 참조하세요. 그러나 일반적으로 자동 분류, HYOK(Hold Your Own Key) 등의 고급 기능은 Azure Information Protection Premium 2 구독에서만 제공됩니다.
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 
@@ -80,10 +77,6 @@ Azure Information Protection에서는 파일과 메일에 영구 레이블 및 �
 ## <a name="can-i-classify-only-new-data-or-can-i-also-classify-existing-data"></a>새 데이터만 분류할 수 있나요? 아니면 기존 데이터도 분류할 수 있나요?
 
 새 콘텐츠와 기존 콘텐츠에 대한 변경 내용 둘 다에 대해 Azure Information Protection 정책 작업은 문서가 저장되고 메일이 전송될 때 적용됩니다. 
-
-분류하려는 파일을 저장했으면 Office 응용 프로그램에 해당 파일을 열었다가 저장하기만 하면 됩니다. 
-
-현재 분류를 대량으로 검색하고 적용할 수는 없으며, Office 응용 프로그램에서 각 문서를 열고 저장해야 합니다. 
 
 ## <a name="can-i-use-azure-information-protection-for-classification-only-without-enforcing-encryption-and-restricting-usage-rights"></a>암호화 적용 및 사용 권한 제한 없이 분류 목적으로만 Azure Information Protection을 사용할 수 있나요?
 
@@ -116,7 +109,7 @@ Azure 포털에서 "신용 카드 번호" 또는 "주민등록번호"와 같은 
 
 ## <a name="can-i-prompt-users-to-justify-why-they-are-changing-the-classification-level"></a>사용자에게 분류 수준을 변경하는 이유를 묻는 메시지를 표시할 수 있나요?
 
-예. 사용자에게 분류를 변경하는 이유를 묻는 메시지를 표시하려면 Azure 포털에서 **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)을 **On**(켜기)으로 설정합니다. 사용자가 이렇게 할 때 해당 작업 및 변경 이유는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램** > **Microsoft Azure Information Protection**에 기록됩니다.
+예. 사용자에게 분류를 변경하는 이유를 묻는 메시지를 표시하려면 Azure 포털에서 **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)을 **On**(켜기)으로 설정합니다. 사용자가 이렇게 할 때 해당 작업 및 변경 이유는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램 및 서비스 로그** > **Microsoft Azure Information Protection**에 기록됩니다.
 
 ## <a name="how-can-i-automatically-protect-the-content-after-its-been-classified"></a>콘텐츠가 분류된 후 자동으로 콘텐츠를 보호할 수 있나요?
 
@@ -134,6 +127,32 @@ Azure Portal에서 지정한 분류 수준에 따라 자동으로 콘텐츠를 �
 
 아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블에 보호를 적용하는 경우 해당 보호는 첨부 파일에 적용됩니다.
 
+## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
+
+Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능으로, Azure Information Protection 분류와는 독립적으로 구현됩니다. 그러나 사용자가 Outlook Web App을 사용하여 전자 메일을 분류할 때와 일부 모바일 메일 응용 프로그램을 사용할 때 Azure Information Protection 분류와 해당하는 레이블 표시가 자동으로 추가되도록 두 솔루션을 통합할 수 있습니다. 이 경우 Exchange에서 분류를 추가하면 Azure Information Protection 클라이언트의 미리 보기 버전에서 이 분류에 해당하는 레이블 설정을 적용합니다.
+
+Outlook Web App에서는 Azure Information Protection 및 보호가 아직 기본적으로 지원되지는 않지만, 이와 동일한 기술을 사용하면 데스크톱 Outlook 클라이언트 외에 이 전자 메일 클라이언트에서도 레이블을 사용할 수 있습니다.
+
+이 솔루션을 활용하려면 다음을 수행합니다. 
+
+1. [New-MessageClassification](https://technet.microsoft.com/library/bb124400) Exchange PowerShell cmdlet을 사용하여 Azure Information Protection 정책의 레이블 이름에 매핑되는 Name 속성을 포함하는 메시지 분류를 만듭니다. 
+
+2. 각 레이블에 대해 Exchange 전송 규칙을 만든 다음 구성된 분류가 메시지 속성에 포함될 때 해당 규칙을 적용하고 메시지 속성을 수정하여 메시지 헤더를 설정합니다. 
+
+    메시지 헤더에서는 Azure Information Protection 레이블을 사용하여 분류한 Office 파일의 속성을 검사하면 지정할 정보를 확인할 수 있습니다. **MSIP_Label_<GUID>_Enabled** 형식의 파일 속성을 찾은 다음 메시지 헤더로 이 문자열을 지정하고 헤더 값으로 **True**를 지정합니다. 예를 들어 메시지 헤더는 **MSIP_Label_132616b8-f72d-5d1e-aec1-dfd89eb8c5b2_Enabled**와 같은 문자열일 수 있습니다.
+
+
+이렇게 하면 사용자가 권한 관리 보호를 지원하는 모바일 장치 클라이언트 또는 Outlook Web Access 앱을 사용할 때 다음과 같은 과정이 진행됩니다. 
+
+- 사용자가 Exchange 메시지 분류를 선택하고 전자 메일을 보냅니다.
+
+- Exchange 규칙이 Exchange 분류를 검색한 다음 그에 따라 메시지 헤더를 수정하여 Azure Information Protection 분류를 추가합니다.
+
+- Azure Information Protection 클라이언트의 미리 보기 버전을 실행 중인 받는 사람이 Outlook에서 전자 메일을 볼 때 할당된 Azure Information Protection 레이블과 그에 해당하는 전자 메일 머리글, 바닥글 또는 워터마크가 표시됩니다. 
+
+Azure Information Protection 레이블이 권한 관리 보호를 적용하는 경우에는 메시지 보안을 수정하는 옵션을 선택하여 규칙 구성에 권한 관리 보호를 추가하고, 권한 보호를 적용한 후에 RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
+
+
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
 
 Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 파일에서 이 메타데이터는 사용자 지정 속성에 저장되고, 메일에서 이 정보는 메일 헤더에 있습니다.
@@ -148,9 +167,29 @@ Azure Information Protection을 사용하여 분류하고 보호하는 파일에
 
 ## <a name="can-i-control-which-users-can-use-azure-information-protection-to-classify-and-protect-content"></a>Azure Information Protection을 사용하여 콘텐츠를 분류하고 보호할 수 있는 사용자를 제어할 수 있나요?
 
-Azure Information Protection 클라이언트 배포를 제어하여 데이터를 분류하고 보호하는 사용자를 제한할 수 있습니다. 
+Azure Information Protection 클라이언트 배포를 제어하여 데이터를 분류하고 보호하는 사용자를 제한할 수 있습니다. [범위 지정 정책](../deploy-use\configure-policy-scope.md)을 구성할 때는 지정된 사용자에게만 새 레이블을 추가합니다. 
 
 Azure Information Protection에 의해 분류된 파일과 메일은 Azure Information Protection 클라이언트의 설치 여부와 관계없이 모든 사용자가 이용하거나 편집할 수 있습니다. 
+
+## <a name="how-do-i-sign-in-as-a-different-user"></a>다른 사용자로 로그인하려면 어떻게 하나요?
+
+프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 여러 테넌트가 있는 경우에는 그렇게 해야 할 수 있습니다. 예를 들어 조직에서 사용하는 Office 365 또는 Azure 테넌트 외에 테스트 테넌트가 있을 수 있습니다.
+
+**Microsoft Azure Information Protection** 대화 상자를 사용하여 현재 로그인한 계정을 확인할 수 있습니다. Office 응용 프로그램을 열고 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 의견**을 클릭합니다. 계정 이름은 **클라이언트 상태** 섹션에 표시됩니다.
+
+특히 관리자 계정을 사용하고 있는 경우 표시된 로그인 계정의 도메인 이름을 확인해야 합니다. 예를 들어 두 개의 다른 테넌트에 "admin" 계정이 있는 경우 로그인한 계정 이름은 올바르지만 도메인은 잘못되었음을 모르기 쉽습니다. 이로 인해 Azure Information Protection 정책을 다운로드하지 못하거나 예상한 레이블 또는 동작이 표시되지 않을 수 있습니다.
+
+다른 사용자로 로그인하려면 현재 레지스트리를 편집해야 합니다.
+
+1. 레지스트리 편집기를 사용하여 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**로 이동하고 **TokenCache** 키를 삭제합니다.
+
+2. 열려 있는 Office 응용 프로그램을 다시 시작하고 다른 사용자 계정으로 로그인합니다. Office 응용 프로그램에서 Azure Information Protection 서비스에 로그인하라는 메시지가 표시되지 않는 경우 **Microsoft Azure Information Protection** 대화 상자로 돌아와 업데이트된 **클라이언트 상태** 섹션에서 **로그인**을 클릭합니다.
+
+추가 필수 구성 요소:
+
+- Azure 권한 관리 서비스에 대한 환경을 다시 초기화(부트스트래핑이라고도 함)하려는 경우 [RMS 분석기 도구](https://www.microsoft.com/en-us/download/details.aspx?id=46437)의 **재설정** 옵션을 사용할 수 있습니다.
+
+- 현재 다운로드한 Azure Information Protection 정책을 삭제하려면 %localappdata%\Microsoft\MSIP 폴더에서 **Policy.msip** 파일을 삭제하면 됩니다.
 
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>Azure Information Protection에 대한 문제를 보고하거나 의견을 보낼 수 있나요?
 
@@ -159,6 +198,6 @@ Azure Information Protection에 문제가 발생하고 현재 클라이언트 �
 질문이나 의견이 있으면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)를 사용하세요. 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

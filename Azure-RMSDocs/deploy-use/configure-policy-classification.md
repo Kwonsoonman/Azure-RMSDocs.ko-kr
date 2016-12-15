@@ -4,15 +4,15 @@ description: "레이블에 대한 조건을 구성할 때 문서 또는 메일�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 11/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
+ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
+ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 
 ---
@@ -52,7 +52,9 @@ ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. **Azure Information Protection** 블레이드에서 자동 또는 권장 분류에 대해 구성할 레이블을 선택합니다.
+2. 자동 또는 권장 분류용으로 구성하려는 레이블이 모든 사용자에게 적용되는 경우 **정책:글로벌** 블레이드에서 변경할 레이블을 선택하고 **레이블** 블레이드를 변경한 다음 필요에 따라 이후 블레이드를 변경합니다.  
+
+     구성하려는 레이블이 [범위 지정 정책](configure-policy-scope.md)에 포함되므로 선택한 사용자에게만 적용되는 경우에는 초기 **Azure Information Protection** 블레이드에서 해당 범위 지정 정책을 먼저 선택합니다.  
 
 3. **레이블** 블레이드의 **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션에서 **Add a new condition**(새 조건 추가)을 클릭합니다.
 
@@ -74,7 +76,7 @@ ms.openlocfilehash: bd6adab05c4f087f5441d168c3385057ce5b6355
 
 6. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
-## <a name="information-about-the-builtin-conditions"></a>기본 제공 조건에 대한 정보
+## <a name="information-about-the-built-in-conditions"></a>기본 제공 조건에 대한 정보
 
 미리 보기 기간 동안 다음 조건을 선택할 수 있습니다.
 
@@ -224,6 +226,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

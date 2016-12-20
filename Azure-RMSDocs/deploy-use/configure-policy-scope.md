@@ -4,7 +4,7 @@ description: "특정 사용자에 대해 다른 설정과 레이블을 구성하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 99d7a2a9580466492edc313329cada315a9966d6
+ms.sourcegitcommit: b0600db864f834e9eb84700eb1a36d3e6a6fbde1
+ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 99d7a2a9580466492edc313329cada315a9966d6
 
 범위 지정 정책은 항상 글로벌 정책에서 레이블과 설정을 상속하므로, 범위 지정 정책을 만들거나 편집할 때는 글로벌 정책의 레이블이 표시됩니다. 범위 지정 정책을 편집할 때 글로벌 정책의 레이블을 편집할 수는 없지만 상속된 레이블에 하위 레이블을 추가할 수는 있습니다.
 
-예를 들어 글로벌 정책에 Confidential이라는 레이블이 있는 경우 모든 사용자에게 이 레이블이 표시됩니다. 범위 지정 정책에서 해당 레이블을 제거하거나 순서를 변경할 수는 없습니다. 그러나 Confidential에 새 하위 레이블을 추가하는 마케팅부용 범위 지정 정책을 만들 수는 있습니다. 그러면 마케팅부의 사용자에게는 Confidential\Promotions가 표시됩니다. 그리고 Confidential에 새 하위 레이블을 추가하는 또 다른 범위 지정 정책을 영업부용으로 만들 수 있습니다. 그러면 영업부의 사용자에게는 Confidential\Partners가 표시됩니다. 그런 후에 각 하위 레이블을 서로 다른 설정으로 구성할 수 있습니다. 이러한 하위 레이블은 개별 부서 소속 사용자에게만 표시됩니다.
+예를 들어 글로벌 정책에 **Confidential**이라는 레이블이 있는 경우 모든 사용자에게 이 레이블이 표시됩니다. 범위 지정 정책에서 해당 레이블을 제거하거나 순서를 변경할 수는 없습니다. 그러나 Confidential에 새 하위 레이블을 추가하는 마케팅부용 범위 지정 정책을 만들 수는 있습니다. 그러면 마케팅부의 사용자에게는 **Confidential \ Promotions**가 표시됩니다. 또한 Confidential에 새 하위 레이블을 추가하는 또 다른 범위 지정 정책을 영업부용으로 만들 수 있습니다. 그러면 영업부의 사용자에게는 **Confidential \ Partners**가 표시됩니다. 그런 후에 각 하위 레이블을 서로 다른 설정으로 구성할 수 있습니다. 이러한 하위 레이블은 개별 부서 소속 사용자에게만 표시됩니다.
 
 
 Azure Information Protection용 범위 지정 정책을 구성하려면 다음을 수행합니다.
@@ -63,6 +63,6 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

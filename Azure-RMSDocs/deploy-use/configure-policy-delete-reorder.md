@@ -4,15 +4,15 @@ description: "Azure Information Protection 정책에서 구성하여 사용자�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 743741fc63adfd959074986aab5c697d817f69c7
+ms.sourcegitcommit: 55895dd6fd0e106c33914a232e2d00d98e8a154a
+ms.openlocfilehash: 195a4ff44d0edc9d35ee30786bdddbcc821fc106
 
 
 ---
@@ -25,7 +25,9 @@ Azure Information Protection 정책에서 구성하여 사용자의 Information 
 
 ![Azure Information Protection 정책에서 레이블 삭제 또는 순서 변경](../media/info-protect-contextmenu.png)
 
-레이블 구성을 유지하되, Information Protection 표시줄에 표시되지 않도록 하려는 경우 레이블을 삭제하는 대신 사용하지 않도록 설정할 수 있습니다.
+문서 및 메일에 적용된 레이블을 삭제하고 Azure Information Protection 정책을 게시하면 다음에 Azure Information Protection 클라이언트에서 열 때 해당 레이블이 이러한 문서 또는 메일에서 자동으로 제거됩니다.
+
+레이블을 유지하되, Information Protection 표시줄에 표시되지 않도록 하려는 경우 레이블을 삭제하는 대신 사용하지 않도록 설정할 수 있습니다.
 
 사용자가 Information Protection 표시줄에서 논리적 진행률을 볼 수 있도록 레이블의 순서를 지정합니다. 예를 들어 민감도 수준이 가장 낮은 레이블이 처음에 표시되고 민감도 수준이 가장 높은 레이블이 마지막에 표시되도록 민감도 오름차순으로 레이블을 정렬합니다. [기본 정책](configure-policy-default.md)에서는 이 구성을 사용합니다.
 
@@ -59,6 +61,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

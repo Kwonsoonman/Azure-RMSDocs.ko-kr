@@ -4,7 +4,7 @@ description: "Azure Information Protection의 미리 보기 릴리스에 대한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 12/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
-ms.openlocfilehash: ba67bb149b0128b068c86dcf849e2dd49edbf6a7
+ms.sourcegitcommit: 946daa8dedba71d5887dd96f6853e8d90400bfb1
+ms.openlocfilehash: 125752671ec0ca556cc6967a2a3011fb0bf7d9ab
 
 
 ---
@@ -76,11 +76,13 @@ Azure Information Protection에서는 파일과 메일에 영구 레이블 및 �
 
 ## <a name="can-i-classify-only-new-data-or-can-i-also-classify-existing-data"></a>새 데이터만 분류할 수 있나요? 아니면 기존 데이터도 분류할 수 있나요?
 
-새 콘텐츠와 기존 콘텐츠에 대한 변경 내용 둘 다에 대해 Azure Information Protection 정책 작업은 문서가 저장되고 메일이 전송될 때 적용됩니다. 
+새 콘텐츠와 기존 콘텐츠에 대한 변경 내용 둘 다에 대해 Azure Information Protection 정책 작업은 문서가 저장되고 메일이 전송될 때 적용됩니다.
+
+미리 보기 클라이언트가 있는 경우 파일 탐색기의 기존 파일을 빠르게 분류하고 선택적으로 보호할 수도 있습니다. 
 
 ## <a name="can-i-use-azure-information-protection-for-classification-only-without-enforcing-encryption-and-restricting-usage-rights"></a>암호화 적용 및 사용 권한 제한 없이 분류 목적으로만 Azure Information Protection을 사용할 수 있나요?
 
-예. 레이블을 적용만 하는 Azure Information Protection 정책을 구성할 수 있습니다. 사실, 특별한 데이터 관리가 필요한 일부 문서나 메일만 보호하면 되는 배포 네트워크 대부분의 경우가 여기에 해당할 것으로 예상합니다.
+예. 파일 형식이 이 작업을 지원하는 경우, 보호 없이 분류만 적용하는 Azure Information Protection 정책을 구성할 수 있습니다. 사실, 특별한 데이터 관리가 필요한 일부 문서나 메일만 보호하면 되는 배포 네트워크 대부분의 경우가 여기에 해당할 것으로 예상합니다.
 
 ## <a name="how-does-automatic-classification-work"></a>자동 분류는 어떻게 작동하나요?
 
@@ -100,7 +102,7 @@ Azure 포털에서 "신용 카드 번호" 또는 "주민등록번호"와 같은 
 
 ## <a name="can-i-force-all-documents-to-be-classified"></a>모든 문서를 강제로 분류할 수 있나요?
 
-예. 사용자가 보유한 모든 파일을 분류하도록 해야 할 경우 Azure 포털에서 **All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함)을 **On**(켜기)으로 설정합니다. 
+예. 사용자가 보유한 모든 파일을 분류하도록 해야 할 경우 Azure Portal에서 **All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함) 정책 설정을 **On**(켜기)으로 구성합니다. 
 
 ## <a name="can-i-remove-classification-from-a-file"></a>파일에서 분류를 제거할 수 있나요?
 
@@ -117,11 +119,13 @@ Azure Portal에서 지정한 분류 수준에 따라 자동으로 콘텐츠를 �
 
 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)에서 이러한 예제를 확인할 수 있습니다. 자세한 내용은 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](../deploy-use/configure-policy-protection.md)을 참조하세요.
 
-## <a name="can-a-file-be-classified-with-two-different-classifications"></a>파일 하나를 두 가지 분류로 분류할 수 있나요?
+## <a name="can-a-file-have-more-than-one-classification"></a>파일에 분류가 여러 개 있을 수 있나요?
 
-필요한 경우 특정 민감도 레이블의 하위 범주를 더 잘 설명하는 하위 레이블을 만들 수 있습니다. 예를 들어 주 레이블 **Secret**(비밀)은 **Secret \ Legal**(비밀 \ 법적) 및 **Secret \ Finance**(비밀 \ 재무)와 같은 하위 레이블을 포함할 수 있습니다. 그런 다음 서로 다른 분류 시각적 표시와 서로 다른 권한 관리 템플릿을 서로 다른 하위 레이블에 적용할 수 있습니다.
+사용자는 각 문서 또는 메일에 대해 한 번에 레이블 하나만 선택할 수 있으며, 그 결과 분류가 하나만 생깁니다. 그러나 사용자가 하위 레이블을 선택하면 실제로 두 레이블(기본 레이블 및 보조 레이블)이 동시에 적용됩니다. 하위 레이블을 사용함으로써 추가 수준의 제어에 대해 파일에 부모\자식 관계를 나타내는 두 분류가 있을 수 있습니다.
 
-현재 두 수준 모두에 시각적 표시, 보호 및 조건을 설정할 수는 있지만, 하위 수준을 사용할 때는 이러한 설정을 하위 수준에 대해서만 구성하세요. 부모 레이블과 하위 수준에 같은 설정을 구성하면 하위 수준의 설정이 우선합니다.
+예를 들어 레이블 **Secret**은 **Legal**과 **Finance** 같은 하위 레이블을 포함할 수 있습니다. 서로 다른 분류 시각적 표시와 서로 다른 Rights Management 템플릿을 이러한 하위 레이블에 적용할 수 있습니다. 사용자는 **Secret** 레이블 하나만 선택할 수 없으며 **Legal** 같은 하위 레이블 중 하나를 선택해야 합니다. 결과적으로 표시되는 레이블은 **Secret \ Legal**입니다. 해당 파일의 메타데이터에는 **Secret**에 대한 사용자 지정 텍스트 속성 하나, **Legal**에 대한 사용자 지정 텍스트 속성 하나, 두 값을 모두 포함하는 다른 사용자 지정 텍스트 속성(**Secret Legal**)이 포함됩니다. 
+
+하위 레이블을 사용할 때에는 기본 레이블에 시각적 표시, 보호 및 상태를 구성하지 마세요. 하위 수준을 사용할 때에는 하위 레이블에만 이러한 설정을 구성합니다. 기본 레이블과 하위 레이블에 이러한 설정을 구성하는 경우 하위 레이블의 설정이 우선합니다.
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
 
@@ -152,6 +156,9 @@ Outlook Web App에서는 Azure Information Protection 및 보호가 아직 기�
 
 Azure Information Protection 레이블이 권한 관리 보호를 적용하는 경우에는 메시지 보안을 수정하는 옵션을 선택하여 규칙 구성에 권한 관리 보호를 추가하고, 권한 보호를 적용한 후에 RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
 
+역방향 매핑을 수행하는 전송 규칙을 구성할 수도 있습니다. Azure Information Protection 레이블이 검색되면 해당 Exchange 메시지 분류를 설정합니다. 이렇게 하려면 다음을 수행합니다.
+
+- 각 Azure Information Protection 레이블에 대해 **msip_labels** 헤더에 레이블의 이름(예: **Confidential**)이 포함될 때 적용되는 전송 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
 
@@ -198,6 +205,6 @@ Azure Information Protection에 문제가 발생하고 현재 클라이언트 �
 질문이나 의견이 있으면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)를 사용하세요. 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

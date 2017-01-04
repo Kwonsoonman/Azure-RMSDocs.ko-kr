@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: b26db0aae458a897710cd19e05753ad159004aa0
+ms.sourcegitcommit: dfcaa9a1fef0a4a2011f1385d849c4c2887a022e
+ms.openlocfilehash: ab8aa40f0ed3947264de9d07cd6fa7a7030a6964
 
 
 ---
@@ -108,7 +108,11 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 Azure Information Protection 또는 Azure Rights Management를 다른 이름으로 알고 계신가요? [서비스에 대한 대체 조건의 목록](azure-rms-aka.md)을 참조하세요.
 
+## <a name="comments"></a>설명
 
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
+
+
+<!--HONumber=Dec16_HO2-->
 
 

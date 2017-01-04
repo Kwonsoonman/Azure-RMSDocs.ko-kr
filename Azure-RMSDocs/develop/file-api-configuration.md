@@ -85,7 +85,7 @@ ms.openlocfilehash: 913373504e34321556a1cdd34ea2744d8477f562
 
 차단된 파일 형식에 대해 암호화를 시도하면 [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx) 오류가 발생합니다.
 
-### <a name="file-api-file-support-details"></a>파일 API - 파일 지원 세부 정보
+### <a name="file-api---file-support-details"></a>파일 API - 파일 지원 세부 정보
 
 모든 파일 형식(확장)에 대해 기본 지원을 추가할 수 있습니다. 예를 들어 &lt;ext&gt; 확장명(비 Office)의 경우 해당 확장명에 대한 관리자 구성이 "NATIVE"이면 \*.p&lt;ext&gt;가 사용됩니다.
 
@@ -151,10 +151,8 @@ HKEY_LOCAL_MACHINE
 
 - [개발자 노트](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 <!--HONumber=Nov16_HO3-->

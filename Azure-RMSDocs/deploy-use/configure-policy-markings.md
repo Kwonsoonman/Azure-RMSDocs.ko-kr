@@ -4,15 +4,15 @@ description: "문서 또는 메일 메시지에 레이블을 할당하는 경우
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
+ms.sourcegitcommit: 81c0f97d1684091753b68e93e8b9c06f0d713264
+ms.openlocfilehash: 70d9feb8e45c1a6a266529997434dcc1e9f7899d
 
 
 ---
@@ -43,7 +43,9 @@ ms.openlocfilehash: eca90185e6225d3f55f979f66f8225d661fe59cd
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. **Azure Information Protection** 블레이드에서 시각적 표시에 대해 구성할 레이블을 선택합니다.
+2. 시각적 표시용으로 구성하려는 레이블이 모든 사용자에게 적용되는 경우 **정책:글로벌** 블레이드에서 변경할 레이블을 선택합니다. 
+
+     구성하려는 레이블이 [범위 지정 정책](configure-policy-scope.md)에 포함되므로 선택한 사용자에게만 적용되는 경우에는 초기 **Azure Information Protection** 블레이드에서 해당 범위 지정 정책을 먼저 선택합니다.
 
 3. **Label**(레이블) 블레이드의 **Set visual marking (such as header or footer)**(시각적 표시(예: 머리글 또는 바닥글) 설정) 섹션에서 원하는 시각적 표식에 대한 설정을 구성한 다음 **Save**(저장)를 클릭합니다.
 
@@ -81,6 +83,6 @@ Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

@@ -23,9 +23,14 @@
 ##### [보호 제거](sharing-app-remove-protection.md)
 ##### [바로 가기 키 사용](sharing-app-keyboard-shortcuts.md)
 ##### [대화 상자 옵션](sharing-app-dialog-box.md)
+### [Azure Information Protection 사용자 가이드 - 미리 보기](client-user-guide.md)
+#### [Azure Information Protection 클라이언트 다운로드 및 설치](install-client-app.md)
+#### [파일 또는 전자 메일 분류 및 보호](client-classify-protect.md)
+#### [문서 추적 및 취소](client-track-revoke.md)
+#### [보호된 파일 열기](client-view-use-files.md)
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

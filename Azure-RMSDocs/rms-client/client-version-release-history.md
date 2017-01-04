@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45ca64c8338de3f4b192c61eb437b4acdbb8d799
-ms.openlocfilehash: cdd987bf0670f9e5ef7519119aa886573cf14924
+ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
+ms.openlocfilehash: fe6491f413b928a85b2a181ee22cfe17f39149ef
 
 
 ---
@@ -25,7 +25,9 @@ ms.openlocfilehash: cdd987bf0670f9e5ef7519119aa886573cf14924
 
 Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 클라이언트는 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에 포함되며 언제든지 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 버전을 다운로드할 수 있습니다.
 
-다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다. 일반 공급 이전 버전은 나열되지 않습니다. 
+다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다. 일반 공급 이전 버전은 나열되지 않습니다.
+
+이제는 최신 릴리스 이외에 Microsoft 다운로드 센터에서만 다운로드 가능한 Azure Information Protection 클라이언트 **미리 보기** 버전도 제공됩니다. 이 버전은 Windows용 권한 관리 공유 응용 프로그램과 동일한 기능을 제공하며, 파일 탐색기에서 사용 가능한 오른쪽 클릭 옵션과 보호된 파일용 뷰어도 포함되어 있습니다. 자세한 내용은 [블로그 공지 게시물](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/) 및 임시 설명서인 [Azure Information Protection 사용자 가이드](client-user-guide.md)를 참조하세요.
 
 > [!NOTE]
 > 사소한 수정 사항은 나열되지 않으므로 Azure Information Protection 클라이언트에 문제가 있는 경우 먼저 최신 릴리스의 문제가 아닌지 확인하세요.
@@ -62,6 +64,6 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

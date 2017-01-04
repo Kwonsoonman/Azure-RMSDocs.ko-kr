@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 055470948a1bf21d4ee1ee83f345f49a98c1bf31
+ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
+ms.openlocfilehash: 808f72be7c5b6a1f18a06ecefdfdf7fbf6febff6
 
 
 ---
@@ -31,11 +31,11 @@ Azure Information Protection 정책을 구성하려면
 
 2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
 
-    그러면 다음 요소를 포함하여 Azure Information Protection 정책을 구성할 수 있는 **Azure Information Protection** 블레이드가 표시됩니다.
-
-    - 사용자의 Office 응용 프로그램에 표시되는 Information Protection 표시줄의 제목 및 도구 설명.
+    그러면 **Azure Information Protection** 블레이드가 표시되며 모든 사용자에게 제공되는 글로벌 정보 보호 정책의 블레이드가 자동으로 열립니다. 이 블레이드에는 구성 가능한 다음 요소가 포함되어 있습니다.
 
     - 문서 및 전자 메일을 분류할 수 있는 레이블.
+
+    - 사용자의 Office 응용 프로그램에 표시되는 Information Protection 표시줄의 제목 및 도구 설명.
 
     - 사용자가 문서를 저장하고 전자 메일을 보낼 때 분류를 적용할 수 있는 옵션.
 
@@ -43,6 +43,7 @@ Azure Information Protection 정책을 구성하려면
 
     - 원래보다 민감도 수준이 낮은 레이블을 선택한 경우 이유를 제공하라는 메시지를 사용자에게 표시할 수 있는 옵션.
 
+    - 사용자를 위한 사용자 지정 도움말 링크를 제공하는 옵션.
 
 Azure Information Protection은 **Personal**(개인), **Public**(공개), **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 레이블을 포함하는 [기본 정책](configure-policy-default.md)과 함께 제공됩니다. 기본 레이블을 변경하지 않고 사용하거나, 이를 사용자 지정하거나, 삭제하고 새 레이블을 만들 수 있습니다.
 
@@ -58,7 +59,7 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 - [기본 Information Protection 정책](configure-policy-default.md)
 
-- [전역 정책 설정을 구성하는 방법](configure-policy-settings.md)
+- [정책 설정을 구성하는 방법](configure-policy-settings.md)
 
 - [새 레이블을 만드는 방법](configure-policy-new-label.md)
 
@@ -72,6 +73,8 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 - [자동 및 권장 분류에 대한 조건을 구성하는 방법](configure-policy-classification.md)
 
+- [범위 지정 정책을 사용하여 특정 사용자에 대한 정책을 구성하는 방법](configure-policy-scope.md)
+
 ## <a name="next-steps"></a>다음 단계
 
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
@@ -79,6 +82,6 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

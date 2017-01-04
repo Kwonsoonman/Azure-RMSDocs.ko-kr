@@ -74,6 +74,7 @@ Azure Information Protection은 Microsoft에서 테넌트 키를 만들고 관�
 ## <a name="next-steps"></a>다음 단계
 AD RMS에서 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 

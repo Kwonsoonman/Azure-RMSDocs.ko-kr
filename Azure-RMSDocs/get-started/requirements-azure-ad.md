@@ -4,7 +4,7 @@ description: "사용자가 정상적으로 인증할 수 있도록, Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/29/2016
+ms.date: 12/07/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
+ms.sourcegitcommit: a38b4f201a05ece08f06b18797a146adecf59053
+ms.openlocfilehash: 1246bfcf3a389e2dcd7a9ef922c3f40150611640
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 667e1e533df6d26c9aae0aba1f889b0e6470b059
 
 Azure Information Protection을 사용하려면 Azure AD 디렉터리가 있어야 합니다. Azure 클래식 포털에 로그인하려면 이 디렉터리의 조직 계정을 사용합니다. Azure 클래식 포털에서는 Rights Management 템플릿을 구성 및 관리하는 등의 작업을 할 수 있습니다.
 
-조직에서 아직 Azure를 구독하지 않은 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. [Azure 시작](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따르세요.
+조직에 아직 Azure 구독이 없는 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. 이렇게 하려면 [Azure 시작하기](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따릅니다.
 
 자세한 내용은 Azure Active Directory 문서에서 다음 리소스를 참조하세요.
 
@@ -35,12 +35,17 @@ Azure Information Protection을 사용하려면 Azure AD 디렉터리가 있어�
 
 Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Azure Active Directory와 온-프레미스 ID 통합](/active-directory/active-directory-aadconnect)을 참조하세요.
 
-> [!NOTE]
-> AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스를 인증하는 모바일 장치나 Mac 컴퓨터를 사용하는 경우
-> 
-> -   **Windows Server 2012 R2** 이상의 서버 버전이나 OAuth 2.0 프로토콜을 지원하는 다른 인증 공급자에서 AD FS를 사용해야 합니다.
+### <a name="scenarios-that-have-specific-requirements"></a>특정 요구 사항이 있는 시나리오 
 
-## <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>MFA(Multi-Factor Authentication) 및 Azure Information Protection
+Office 2010을 실행하는 컴퓨터: 
+
+- AD FS를 사용하는 경우와 같이 사용자 계정이 페더레이션된 경우 해당 계정은 Windows 통합 인증을 사용해야 합니다. 이 시나리오에서 양식 기반 인증은 Azure Information Protection에 사용자를 인증하지 못합니다.
+
+AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스 인증을 수행하는 모바일 장치나 Mac 컴퓨터:
+
+- **Windows Server 2012 R2** 이상의 서버 버전이나 OAuth 2.0 프로토콜을 지원하는 다른 인증 공급자에서 AD FS를 사용해야 합니다.
+
+## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>MFA(Multi-Factor Authentication) 및 Azure Information Protection
 Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하려면 다음 중 하나 이상이 필요합니다.
 
 -   Office 2013(최소 버전)
@@ -75,6 +80,6 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

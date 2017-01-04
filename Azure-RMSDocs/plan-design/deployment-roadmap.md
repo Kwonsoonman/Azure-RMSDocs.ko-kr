@@ -4,7 +4,7 @@ description: "다음 단계에 따라 조직에 대해 Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1551b5dc3c5c9740721e3de01d086185966b6016
-ms.openlocfilehash: ce1ed30122b3bff5b045dfbec65c257d348f0122
+ms.sourcegitcommit: ced42d0856b992d3539575d64f5a49706f1768b3
+ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
 
 
 ---
@@ -98,6 +98,8 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 1. Azure Information Protection 정책을 업데이트하여 데이터 보호 적용
     
     하나 이상의 레이블에 Rights Management 보호를 적용하도록 Azure Information Protection 정책을 수정합니다. 자세한 내용은 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](../deploy-use/configure-policy-protection.md)을 참조하세요.
+    
+    사용자가 Outlook에서 레이블을 적용하여 Exchange에서 IRM(정보 권한 관리)이 구성되지 않은 경우에도 Rights Management 보호를 적용할 수 있습니다. 그러나 Exchange에서 IRM을 구성할 때까지 조직에서는 Exchange를 통한 Azure 권한 관리 보호의 전체 기능을 사용할 수 없습니다. 이 추가 구성은 Exchange Online에 대한 3단계와 Exchange 온-프레미스에 대한 6단계에 포함되어 있습니다. 
 
 2. Rights Management 공유 응용 프로그램 배포
     
@@ -186,10 +188,12 @@ Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파�
 ### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>5단계: 필요에 따라 테넌트 계정의 Rights Management 서비스 관리
 Azure Rights Management 서비스 사용을 시작하면 Windows PowerShell용을 통해 관리 변경 작업을 스크립트로 작성하거나 자동화할 수 있습니다. 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스](../deploy-use/administer-powershell.md)를 참조하세요.
 
+## <a name="comments"></a>설명
+
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

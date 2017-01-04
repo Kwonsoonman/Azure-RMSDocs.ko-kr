@@ -4,7 +4,7 @@ description: "Azure Information Protection 테넌트 키를 계획 및 관리하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5f75e36e5939b23a9d077a6fcd659c59d0f71a68
-ms.openlocfilehash: 1e25f9007004d27fd8f52f77a1663e42f751334e
+ms.sourcegitcommit: f0403d85406cc8642654569958e3482a5d991352
+ms.openlocfilehash: 10e51ed108bedc59a66be86b8b27a140f899dd45
 
 
 ---
@@ -112,7 +112,7 @@ Thales HSM 및 Azure 주요 자격 증명 모음과 함께 사용되는 방법�
 > [!IMPORTANT]
 > 이 예에서는 "aaaabbbbcccc111122223333"이 사용할 키 버전입니다. 버전을 지정하지 않으면 경고 없이 키의 현재 버전이 사용되고 작업할 명령이 표시됩니다. 그러나 Key Vault의 키가 나중에 업데이트(갱신)되는 경우, Use-AadrmKeyVaultKey 명령을 다시 실행하더라도 Azure Rights Management 서비스에서 테넌트에 대해 작동을 중지합니다.
 >
->이 명령을 실행할 때 키 이름과 함께 키 버전을 지정하세요.
+>이 명령을 실행할 때 키 이름과 함께 키 버전을 지정하세요. Azure Key Vault cmd([Get-AzureKeyVaultKey](https://docs.microsoft.com/powershell/resourcemanager/azurerm.keyvault\/v2.3.0\/get-azurekeyvaultkey))를 사용하여 현재 키의 버전 번호를 가져올 수 있습니다.  `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
 Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 하는 경우 Azure Key Vault에서 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/en-us/library/dn868053(v=azure.300\).aspx)를 실행하여 키 URL을 확인할 수 있습니다.
 
@@ -144,6 +144,6 @@ Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 �
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

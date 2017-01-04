@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 16dbee4b90f7c1e5b5c64c751d0c38e6cbccc036
+ms.sourcegitcommit: 1107f484f204e64d76c389daef4d9decbfbb20e8
+ms.openlocfilehash: 46c15d7594110d48f34b1648b2afb17738712720
 
 
 ---
@@ -36,7 +36,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |일반 이름: **콘텐츠 편집, 편집** <br /><br />정책에서 인코딩: **DOCEDIT**|사용자가 응용 프로그램 내에서 콘텐츠를 수정, 다시 정렬, 형식 지정 또는 필터링할 수 있게 합니다. 편집된 복사본을 저장할 수 있는 권한은 부여하지 않습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 편집**<br /><br />AD RMS 템플릿의 이름: **편집** <br /><br />API 상수 또는 값: 해당 사항 없음|
 |일반 이름: **저장** <br /><br />정책에서 인코딩: **EDIT**|사용자가 현재 위치에 문서를 저장할 수 있게 합니다.<br /><br />또한 Office 응용 프로그램에서 이 권한을 사용하면 사용자는 문서를 수정할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **파일 저장**<br /><br />AD RMS 템플릿의 이름: **저장** <br /><br />API 상수 또는 값: `IPC_GENERIC_WRITE L"EDIT"`|
 |일반 이름: **주석** <br /><br />정책에서 인코딩: **COMMENT**|옵션을 사용하여 메모를 추가하거나 콘텐츠에 주석을 추가할 수 있습니다.<br /><br />이 권한은 SDK에서 사용할 수 있으며 Windows PowerShell 용 RMS 보호 모듈에서 임시 정책으로 사용할 수 있고 일부 소프트웨어 공급 업체 응용 프로그램에서 구현되었습니다. 그러나 널리 사용되지 않으며 현재 Office 응용 프로그램에서 지원되지 않습니다.|Office 사용자 지정 권한: 구현되지 않음 <br /><br />Azure 클래식 포털의 이름: 구현되지 않음<br /><br />AD RMS 템플릿의 이름: 구현되지 않음 <br /><br />API 상수 또는 값: `IPC_GENERIC_COMMENT L"COMMENT`|
-|일반 이름: **다른 이름으로 저장, 내보내기** <br /><br />정책에서 인코딩: **EXPORT**|콘텐츠를 다른 파일 이름에 저장하는 옵션(다른 이름으로 저장)을 사용할 수 있게 합니다. Office 문서의 경우 보호 없이 파일을 저장할 수 있습니다.<br /><br />이 권한이 부여된 사용자는 응용 프로그램에서 **OneNote로 보내기**등의 다른 내보내기 옵션도 수행할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 내보내기(다른 이름으로 저장)**<br /><br />AD RMS 템플릿의 이름: **내보내기(다른 이름으로 저장)** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXPORT L"EXPORT"`|
+|일반 이름: **다른 이름으로 저장, 내보내기** <br /><br />정책에서 인코딩: **EXPORT**|콘텐츠를 다른 파일 이름에 저장하는 옵션(다른 이름으로 저장)을 사용할 수 있게 합니다. Office 문서와 Azure Information Protection 클라이언트의 경우에는 파일을 보호하지 않고 저장할 수 있습니다.<br /><br />이 권한이 부여된 사용자는 응용 프로그램에서 **OneNote로 보내기**등의 다른 내보내기 옵션도 수행할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 내보내기(다른 이름으로 저장)**<br /><br />AD RMS 템플릿의 이름: **내보내기(다른 이름으로 저장)** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXPORT L"EXPORT"`|
 |일반 이름: **전달** <br /><br />정책에서 인코딩: **FORWARD**|전자 메일 메시지를 전달하고 **받는 사람** 및 **참조** 줄에 받는 사람을 추가하는 옵션을 사용할 수 있게 합니다. 이 권한은 문서에 적용되지 않고 메일 메시지에만 적용됩니다.<br /><br />전달자가 전달 동작의 일부로 다른 사용자에게 권한을 부여할 수 없게 합니다.|Office 사용자 지정 권한: **전달 금지** 표준 정책을 사용하는 경우 거부됩니다.<br /><br />Azure 클래식 포털의 이름: **전달**<br /><br />AD RMS 템플릿의 이름: **전달** <br /><br />API 상수 또는 값: `IPC_EMAIL_FORWARD L"FORWARD"`|
 |일반 이름: **모든 권한** <br /><br />정책에서 인코딩: **OWNER**|문서에 대한 모든 권한을 부여하며 사용 가능한 모든 작업을 수행할 수 있습니다.<br /><br />보호를 제거하고 문서를 다시 보호하는 기능이 포함됩니다.|Office 사용자 지정 권한: **모든 권한** 사용자 지정 옵션의 일부로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **모든 권한**<br /><br />AD RMS 템플릿의 이름: **모든 권한** <br /><br />API 상수 또는 값: `IPC_GENERIC_ALL L"OWNER"`|
 |일반 이름: **인쇄** <br /><br />정책에서 인코딩: **PRINT**|콘텐츠 인쇄 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: 사용자 지정 권한에서 **콘텐츠 인쇄** 옵션의 일부로 제공됩니다. 받는 사람별 설정이 아닙니다.<br /><br />Azure 클래식 포털의 이름: **인쇄**<br /><br />AD RMS 템플릿의 이름: **인쇄** <br /><br />API 상수 또는 값: `IPC_GENERIC_PRINT L"PRINT"`|
@@ -56,15 +56,19 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 |사용 권한 수준|응용 프로그램|포함된 권한(일반 이름)|
 |---------------------|----------------|---------------------------------|
-|보기 권한자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램|보기, 열기, 읽기, 회신, 전체 회신|
-|검토자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
-|공동 작성자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
-|공동 소유자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1), 모든 권한|
+|보기 권한자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트(미리 보기)|보기, 열기, 읽기, 회신, 전체 회신|
+|검토자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트(미리 보기)|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
+|공동 작성자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트(미리 보기)|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기 [[2]](#footnote-2), 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
+|공동 소유자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트(미리 보기)|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1), 모든 권한|
 
 ----
 
 ###### <a name="footnote-1"></a>각주 1
-Windows용 Rights Management 공유 응용 프로그램에 해당되지 않음
+Windows용 Rights Management 공유 응용 프로그램 또는 Windows용 Azure Information Protection 클라이언트(미리 보기)에는 해당되지 않습니다.
+
+###### <a name="footnote-2"></a>각주 2
+Windows용 Azure Information Protection 클라이언트(미리 보기)에는 포함되어 있지 않습니다. 이 클라이언트에서는 내보내기 사용 권한에 보호 제거 기능이 포함되어 있습니다.
+
 
 ## <a name="rights-included-in-the-default-templates"></a>기본 템플릿에 포함된 권한
 기본 템플릿에 포함된 권한은 다음과 같습니다.
@@ -102,6 +106,6 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

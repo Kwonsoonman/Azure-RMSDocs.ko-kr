@@ -13,8 +13,8 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 67c2f47e1cc8e02c2bb4430421952a146e583e87
-ms.openlocfilehash: a823d79a9305569962ee165b6eadf1d5384c0c0b
+ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
+ms.openlocfilehash: 2cfe5fd787811cae71bb08c458bd6767e4bc35e4
 
 
 ---
@@ -95,7 +95,7 @@ Exchange Online을 위해 이미 IRM(정보 Rights Management)을 구성했다�
 Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
 ```
 
-## <a name="office-2016-office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법
+## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법
 Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 프로그램을 실행 중인 컴퓨터에서 레지스트리를 편집하여 컴퓨터에서 변경된 템플릿을 기본값보다 더 자주 새로 고치도록 자동 일정을 변경할 수 있습니다. 또한 레지스트리의 기존 데이터를 삭제하여 즉각적인 새로 고침을 강제 실행할 수 있습니다.
 
 > [!WARNING]
@@ -187,6 +187,6 @@ Office 2010을 실행하는 컴퓨터에서 레지스트리를 편집하면 사�
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

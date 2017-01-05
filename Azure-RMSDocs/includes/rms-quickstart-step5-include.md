@@ -11,11 +11,11 @@
 
 ![Azure RMS 자습서 스크린샷](../media/AzRMS_Tutorial_5_Screenshots.png)
 
-#### 보호된 문서를 추적하려면
+#### <a name="to-track-your-protected-document"></a>보호된 문서를 추적하려면
 
 1.  Outlook을 사용하여 **홈** 탭의 **RMS** 그룹에서 **사용 추적**을 클릭합니다.
 
-2.  **보호와 공유를 원하는 대로** 페이지가 보이면 **로그인** 을 클릭하고 사용자 이름과 암호를 다시 입력합니다.
+2.  **보호와 공유를 원하는 대로** 페이지가 보이면 **로그인**을 클릭하고 사용자 이름과 암호를 다시 입력합니다.
 
 3.  메일에 첨부한 문서 **Confidential.docx**가 **공유 문서** 페이지에 표시됩니다. 이 시점에서는 이 파일이 유일하게 표시된 파일이지만, 보호된 문서를 더 공유하면 목록도 커집니다.
 
@@ -30,16 +30,16 @@
 |자세한 정보가 필요한 경우|추가 정보|
 |--------------------------------|--------------------------|
 |문서 추적을 위한 전체 지침   →|[RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)|
-|문서 추적에 대해 설명하고 방법을 보여 주는 2분 길이의 동영상   →|[Azure RMS 문서 추적 및 해지](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)|
-|문제 해결 및 고객 질문 →|[문서 추적에 대한 FAQ](https://technet.microsoft.com/dn947488)|
+|문서 추적에 대해 설명하고 방법을 보여 주는 2분 길이의 동영상   →|[Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Azure RMS 문서 추적 및 해지)|
+|문제 해결 및 고객 질문 →|[FAQ for Document Tracking](https://technet.microsoft.com/dn947488)(문서 추적에 대한 FAQ)|
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 이 자습서에서는 Azure RMS로 데이터를 보호하는 방법에 대한 시나리오 하나를 단계별로 설명했습니다. 다른 일반적인 사용 방법을 확인하려면 [Azure RMS 실행](../understand-explore/what-admins-users-see.md)을 참조하세요. 이 문서에는 Azure RMS의 작동 방식과 이 앱으로 해결할 수 있는 비즈니스 문제 등의 다른 유용한 섹션도 있습니다.
 
 Azure RMS 배포를 시작할 준비가 되면 [Azure 권한 관리 배포 로드맵](../plan-design/deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

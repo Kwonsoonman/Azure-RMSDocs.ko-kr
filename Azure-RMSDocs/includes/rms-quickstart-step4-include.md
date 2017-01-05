@@ -11,13 +11,13 @@
 
 ![RM 자습서 스크린샷](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### 보호된 문서 첨부 파일을 보호하려면
+#### <a name="to-view-the-protected-document-attachment"></a>보호된 문서 첨부 파일을 보호하려면
 
 1.  Azure Rights Management에서 Word 문서를 보호했으므로 메일 메시지에 두 개의 첨부 파일이 포함됩니다. 두 파일은 사실 동일한 파일의 두 가지 버전이며 파일 이름 확장명만 서로 다릅니다. 파일 이름 확장명이 **.ppdf**인 버전(**Confidential.ppdf**)을 엽니다.
 
     장치에서 [Rights Management를 지원하는 Office](https://technet.microsoft.com/library/dn655136.aspx) 버전을 사용하는 경우에는 다른 버전의 파일(**Confidential.docx**)을 열어 Word에서 볼 수도 있습니다.
 
-2.  사용자 이름과 암호를 묻는 메시지가 표시되면 메일과 첨부 파일을 보내는 데 사용된 것과 같은 메일 주소 형식을 사용하여 사용자 이름을 입력합니다. 예를 들어 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같이 입력합니다. 암호로는 개인용 RMS에 가입할 때 입력했던 암호를 입력합니다. 또는 조직에 Azure RMS가 있으면 실제 작업 암호를 입력합니다.
+2.  사용자 이름과 암호를 묻는 메시지가 표시되면 메일과 첨부 파일을 보내는 데 사용된 것과 같은 메일 주소 형식을 사용하여 사용자 이름을 입력합니다. 예를 들면 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같습니다. 암호로는 개인용 RMS에 가입할 때 입력했던 암호를 입력합니다. 또는 조직에 Azure RMS가 있으면 실제 작업 암호를 입력합니다.
 
 문서가 열리며 이제 내용을 읽을 수 있습니다. 예를 들어 **메일 첨부 파일에서 이 내용을 읽고 있다면 발신자가 Azure RMS로 보호된 파일을 성공적으로 공유한 것입니다.**와 같은 내용이 표시될 수 있습니다. 읽기 전용이므로 내용을 변경할 수는 없습니다.
 
@@ -33,6 +33,6 @@
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,6 +1,6 @@
 # [이해 및 탐색](/information-protection/understand-explore/what-is-information-protection)
 # [시작](requirements-azure-rms.md)
-## [요구 사항](requirements.md)
+## [Requirements](requirements.md)
 ### [Azure Active Directory 요구 사항](requirements-azure-ad.md)
 ### [데이터 보호를 위한 클라이언트 장치 지원](requirements-client-devices.md)
 ### [데이터 보호를 위한 응용 프로그램 지원](requirements-applications.md)
@@ -31,6 +31,6 @@
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

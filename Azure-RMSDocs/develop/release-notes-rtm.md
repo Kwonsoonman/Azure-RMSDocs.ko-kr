@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: d481ee096213af79a7852f1afa6d075d389a4212
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ff150ef29d7ad90e1c53894175a27cfe1f1a4d8e
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: d481ee096213af79a7852f1afa6d075d389a4212
 
 이 항목에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.
 
-## <a name="new-for-the-february-2016-sdk-documentation-update"></a>2016년 2월의 새로운 기능 - SDK 문서 업데이트
+## <a name="new-for-the-february-2016---sdk-documentation-update"></a>2016년 2월의 새로운 기능 - SDK 문서 업데이트
 
 >[!Note]
 > 이 섹션의 기능 문서 업데이트는 2015년 12월 11일자 SDK 다운로드에 적용됩니다.
@@ -161,13 +161,9 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
 이름 및 설명을 검색할 수 없으면 오류가 반환됩니다. 특정 LCID마다 하나의 이름과 설명만 사용할 수 있습니다.
 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

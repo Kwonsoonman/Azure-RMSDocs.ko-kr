@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 2ac4ca3e505d78758a01516f66f1e5f4ff4b17b6
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 7adaf60ffc79edffc38a070d451c1f65c8a41300
 
 
 ---
@@ -32,14 +32,9 @@ Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management 
 - [방법: 문서 추적 사용](how-to-use-document-tracking.md) - 문서 추적 기능을 사용하려면 관련 메타데이터 및 서비스 등록 관리에 대한 몇 가지 간단한 사항을 이해해야 합니다.
 - [용어](terms.md) - 권한 관리 서비스와 관련된 용어 정의 컬렉션입니다.
 
- 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

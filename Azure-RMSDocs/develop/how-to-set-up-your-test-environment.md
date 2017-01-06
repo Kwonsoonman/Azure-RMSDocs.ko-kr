@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 719077671664dda3102949609874c569a691bbb8
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 65ac5120e58ea6a212c09f7c2dd278356d0778b1
 
 
 ---
@@ -51,12 +51,10 @@ Windows Server에서 실행 중인 Azure RMS 또는 RMS 서버에서 테스트�
 * [방법: ADAL 인증 사용](how-to-use-adal-authentication.md)
 * [SDK 설치](install-the-rms-sdk.md)
 * [RMS Client 2.1 배포 참고 사항](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

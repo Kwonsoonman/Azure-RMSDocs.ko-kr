@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac77c4e0bced244f1cec74f15cbe0d62c9ab4437
-ms.openlocfilehash: 66d24f4ed737526525c041de7aeb96de35b37032
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9a81746a17988f788503ca706f19a4ed89702c4e
 
 
 ---
@@ -99,12 +99,9 @@ Microsoft로 자동 진단, 성능 및 원격 분석 로깅 데이터 업로드�
 
 **Linux/C++** - 이 SDK의 기본 로깅은 다른 플랫폼의 로깅만큼 광범위하지 않습니다. 자세한 내용은 [이식 가능한 C++용 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting)에서 "README.md"의 **문제 해결** 섹션을 참조하세요.
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

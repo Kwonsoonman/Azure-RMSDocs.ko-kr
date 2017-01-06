@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 96bf5f830c09bb6b2dd781e749a6ee6eaffdba31
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0f5b3de4607e5e889448b381f5835b4a75c9b0c2
 
 
 ---
@@ -267,14 +267,9 @@ Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
       }
     }
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
- 
-
- 
-
-
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

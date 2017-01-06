@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 37d9906b5df00b6ec6eeb6739766c00bd5cef37b
-ms.openlocfilehash: 0ad53fa82f288153f259870b0022378815f097a8
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca54dd3ceece96c03de140fcfc3202afdd94796a
 
 
 ---
 
-# <a name="howto-work-with-encryption-settings"></a>방법: 암호화 설정 작업
+# <a name="how-to-work-with-encryption-settings"></a>방법: 암호화 설정 작업
 
 이 항목에서는 암호화 패키지에 대해 설명하고 사용과 관련된 몇 가지 코드 조각을 보여 줍니다.
 
@@ -63,7 +63,7 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
                                     &amp;pLicenseHandle);
 
 
-## <a name="protect-files-with-aes128-cbc4k"></a>AES-128 CBC4K를 사용하여 파일 보호
+## <a name="protect-files-with-aes-128-cbc4k"></a>AES-128 CBC4K를 사용하여 파일 보호
 
     C++
 
@@ -80,7 +80,7 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
                            &amp;dwEncryptionMode);
 
 
-## <a name="protect-files-with-aes128-ecb-deprecated-algorithms"></a>AES-128 ECB(사용되지 않는 알고리즘)를 사용하여 파일 보호
+## <a name="protect-files-with-aes-128-ecb-deprecated-algorithms"></a>AES-128 ECB(사용되지 않는 알고리즘)를 사용하여 파일 보호
 
 또한 이 샘플에서는 *사용되지 않는 알고리즘*을 지원하는 새로운 방법을 보여 줍니다.
 
@@ -98,12 +98,10 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
                            IPC_LI_PREFERRED_ENCRYPTION_PACKAGE,
                            &amp;dwEncryptionMode);
 
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

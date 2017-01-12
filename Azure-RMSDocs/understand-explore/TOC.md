@@ -23,6 +23,6 @@
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

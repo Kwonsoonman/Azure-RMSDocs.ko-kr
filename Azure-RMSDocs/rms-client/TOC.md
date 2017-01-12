@@ -31,6 +31,6 @@
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

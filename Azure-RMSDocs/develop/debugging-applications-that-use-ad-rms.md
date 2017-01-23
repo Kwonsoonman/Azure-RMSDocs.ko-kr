@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 789c93b6d7ac72ebe1df04300f2885ca2aa23a06
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: da5a9fa1a2c2eaccb6768914a0c425983b14fdbe
 
 
 ---
 
-# <a name="howto-debug-a-rightsenabled-application"></a>방법: 권한 사용 응용 프로그램 디버그
+# <a name="how-to-debug-a-rights-enabled-application"></a>방법: 권한 사용 응용 프로그램 디버그
 
 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
 
@@ -66,16 +66,9 @@ Wevtutil 인터페이스를 통해 로그의 세부 정보 표시 수준을 제�
 
 **참고** Windows 이벤트 뷰어의 **보기** 메뉴에서 **분석 및 디버그 로그 표시**를 선택하여 MSIPC 디버그 로그가 표시되도록 합니다.
 
- 
-
-## <a name="related-topics"></a>관련 항목
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

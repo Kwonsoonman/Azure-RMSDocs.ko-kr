@@ -4,15 +4,15 @@ description: "문서와 메일용 분류 레이블을 선택할 수 있도록 Of
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
-ms.openlocfilehash: 71972b0a057b1958dfa5e5b4af41b65d5080a086
+ms.sourcegitcommit: bd3cbea29183c39abaa66aa5dcec8a14ad0b0757
+ms.openlocfilehash: bccddf228b33bcd8d36ef6af55dea9015cad34d0
 
 
 ---
@@ -31,21 +31,77 @@ Azure Information Protection을 사용하여 문서 및 메일 메시지를 분�
 
 클라이언트를 설치하기 전에 Information Protection 클라이언트에 필요한 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다([Azure Information Protection에 대한 요구 사항](../get-started/requirements-azure-rms.md)). 또한 미리 보기 버전 클라이언트의 경우 Windows 7 SP1을 실행하는 컴퓨터에 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)이 필요합니다. 클라이언트를 설치한 후에 이 업데이트를 설치할 수 있습니다. 이 업데이트가 필요한데 설치되어 있지 않으면 업데이트를 설치하라는 메시지가 표시됩니다.
 
+
 ## <a name="to-install-the-azure-information-protection-client-manually"></a>Azure Information Protection 클라이언트를 수동으로 설치하려면
 
-1. [클라이언트를 다운로드](https://www.microsoft.com/en-us/download/details.aspx?id=53018)한 후 **AzInfoProtection.exe**와 같은 실행 파일을 실행하고 메시지의 지시에 따라 클라이언트를 설치합니다. 이 설치에는 로컬 관리 권한이 필요합니다.
+> [!NOTE]
+> 이 설치에는 로컬 관리 권한이 필요합니다.
 
-    Office 365 또는 Azure Active Directory에 연결할 수 없지만 데모용으로 로컬 정책을 사용하여 Azure Information Protection의 클라이언트 쪽을 확인해 보려면 데모 정책을 설치하는 옵션을 선택합니다. 클라이언트에서 Azure Information Protection 서비스에 연결하면 이 데모 정책이 조직의 Azure Information Protection 정책으로 바뀝니다. 
+    
+1. [클라이언트를 다운로드](https://www.microsoft.com/en-us/download/details.aspx?id=53018)한 후 **AzInfoProtection.exe**와 같은 실행 파일을 실행하고 메시지의 지시에 따라 클라이언트를 설치합니다.
+    
+    Office 365 또는 Azure Active Directory에 연결할 수 없지만 데모용으로 로컬 정책을 사용하여 Azure Information Protection의 클라이언트 쪽을 확인해 보려면 **데모 정책**을 설치하는 옵션을 선택합니다. 클라이언트에서 Azure Information Protection 서비스에 연결하면 이 데모 정책이 조직의 Azure Information Protection 정책으로 바뀝니다.
+    
+    설치되는 항목에 대한 자세한 내용은 다음과 같습니다.
 
-2. Azure Information Protection 클라이언트 사용을 시작하려면: 컴퓨터에서 Office 2010을 실행하는 경우 컴퓨터를 다시 시작합니다. 다른 Office 버전의 경우 Office 응용 프로그램을 다시 시작합니다.
+    - 일반 공급 버전은 Office 응용 프로그램용 Azure Information Protection 표시줄을 설치합니다. 
+    
+    - 클라이언트의 최신 미리 보기 버전은 Office 응용 프로그램용 Azure Information Protection 표시줄, 파일 탐색기의 마우스 오른쪽 단추 클릭 옵션, 보호된 파일 뷰어 및 대량으로 파일을 분류 및 보호하기 위한 Windows PowerShell cmdlet을 설치합니다. 
+        
+        **PowerShellOnly=true** 매개 변수를 지정하여 PowerShell 모듈(RMSProtection)만 설치할 수 있습니다. 예: `AzInfoProtection_PREVIEW_1.3.98.0.exe  PowerShellOnly=true`
+
+2. 다음을 수행하여 설치를 완료합니다. 
+
+    - 컴퓨터에서 Office 2010를 실행하는 경우 컴퓨터를 다시 시작합니다. 
+        
+        **클라이언트의 미리 보기 버전을 설치한 경우**: 컴퓨터를 다시 시작하는 것 외에 Azure Information Protection 표시줄을 사용하는 Office 응용 프로그램 중 하나(예: Word)를 열고 이 최초 사용을 위해 레지스트리를 업데이트하라는 메시지가 표시되는지 확인합니다. [서비스 검색](../rms-client/client-deployment-notes.md#rms-service-discovery)을 사용하여 레지스트리 키를 채울 수 있습니다. 
+    
+    - 다른 Office 버전의 경우 Office 응용 프로그램을 다시 시작합니다. 
+        
+        **클라이언트의 미리 보기 버전을 설치한 경우**: Office 응용 프로그램을 다시 시작하는 것 외에 파일 탐색기도 닫고 다시 시작합니다.
 
 ## <a name="to-install-the-azure-information-protection-client-for-users"></a>사용자를 위해 Azure Information Protection 클라이언트를 설치하려면
 
-명령줄 옵션을 사용하여 Azure Information Protection 클라이언트 설치를 스크립트로 작성하고 자동화할 수 있습니다. 설치 옵션을 보려면 **/help**를 사용하여 실행 파일을 실행합니다. 예: `AzInfoProtection.exe /help`.
+명령줄 옵션을 사용하여 Azure Information Protection 클라이언트 설치를 스크립트로 작성하고 자동화할 수 있습니다. 설치 옵션을 보려면 **/help**를 사용하여 실행 파일을 실행합니다. `AzInfoProtection.exe /help`
 
-예를 들어 클라이언트를 자동으로 설치하려면 다음 명령을 실행합니다. `AzInfoProtection.exe /passive | quiet`
+클라이언트의 일반 공급 버전을 자동으로 설치하는 예: `AzInfoProtection.exe /quiet`
+
+미리 보기 클라이언트와 함께 PowerShell 모듈만 자동으로 설치하는 예: `AzInfoProtection_PREVIEW_1.3.98.0.exe  PowerShellOnly=true /quiet`
+
+Office 2010을 실행하는 컴퓨터에 클라이언트의 미리 보기 버전을 설치하는 경우 사용자가 컴퓨터에서 로컬 관리자가 아니면 **ServiceLocation** 매개 변수를 지정합니다. 자세한 내용은 다음 섹션을 참조하세요.
 
 Azure Information Protection 클라이언트의 일반 공급 버전은 Microsoft 업데이트 카탈로그에도 포함되어 있으므로 카탈로그를 사용하는 소프트웨어 업데이트 서비스를 통해 클라이언트를 설치하고 업데이트할 수 있습니다. 미리 보기 버전 클라이언트는 Microsoft 업데이트 카탈로그에 포함되어 있지 않습니다.
+
+### <a name="preview-version-and-office-2010-only"></a>미리 보기 버전 및 Office 2010에만 해당
+
+클라이언트의 미리 보기 버전 및 Office 2010의 경우 사용자를 위한 클라이언트를 설치할 때 ServiceLocation 매개 변수 및 Azure Rights Management 서비스의 URL을 지정합니다. 이 매개 변수 및 값은 다음 레지스트리 키를 만들고 설정합니다.
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\Activation
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
+
+다음 절차에 따라 ServiceLocation 매개 변수에 지정할 값을 식별합니다. 
+
+#### <a name="to-identify-the-value-to-specify-for-the-servicelocation-parameter"></a>ServiceLocation 매개 변수에 지정할 값을 식별하려면
+
+1. PowerShell 세션에서 먼저 [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice)를 실행하고 관리자 자격 증명을 지정하여 Azure Rights Management 서비스에 연결합니다. 그런 다음 [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration)을 실행합니다. 
+ 
+    Azure Rights Management 서비스용 PowerShell 모듈을 아직 설치하지 않은 경우 [Azure Rights Management용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
+
+2. 출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
+
+    예: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+
+3. 값에서 이 문자열의 **/_wmcs/licensing**을 제거합니다. 예: **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+
+    나머지 문자열은 ServiceLocation 매개 변수에 지정할 값입니다.
+
+Office 2010 및 Azure RMS에 대해 클라이언트를 자동으로 설치하는 예: `AzInfoProtection.exe /quiet ServiceLocation=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com`
+
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트를 제거하려면
 
@@ -55,7 +111,7 @@ Azure Information Protection 클라이언트의 일반 공급 버전은 Microsof
 
 - **AzInfoProtection.exe**와 같은 실행 파일을 다시 실행하고 **설치 수정** 페이지에서 **제거**를 클릭합니다. 
 
-- **/uninstall**을 사용하여 실행 파일을 실행합니다.  `AzInfoProtection.exe /uninstall`
+- **/uninstall**을 사용하여 실행 파일을 실행합니다. `AzInfoProtection.exe /uninstall`
 
 
 ## <a name="to-verify-installation-connection-status-or-report-a-problem"></a>설치 또는 연결 상태를 확인하거나 문제를 보고하려면
@@ -164,8 +220,9 @@ Information Protection 표시줄의 레이블을 변경하려면 Azure Informati
 
 클라이언트의 릴리스 버전 정보를 확인하려면 [버전 릴리스 기록](client-version-release-history.md)을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

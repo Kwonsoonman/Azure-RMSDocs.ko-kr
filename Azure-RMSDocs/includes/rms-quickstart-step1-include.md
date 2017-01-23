@@ -8,9 +8,9 @@ Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스�
 
 ![Azure 클래식 포털](../media/AzRMS_Tutorial_1_Screenshots.png)
 
-#### Office 365 관리 센터에서 권한 관리를 활성화하려면
+#### <a name="to-activate-rights-management-from-the-office-365-admin-center"></a>Office 365 관리 센터에서 권한 관리를 활성화하려면
 
-1.  [Office 365 포털](https://portal.office.com/) 로 이동하여 회사 또는 학교 계정으로 로그인합니다.
+1.  [Office 365 포털](https://portal.office.com/)로 이동하여 회사 또는 학교 계정으로 로그인합니다.
 
 2.  Office 365 관리 센터가 자동으로 표시되지 않으면 왼쪽 위에서 앱 시작 관리자 아이콘을 선택하고 **관리자**를 선택합니다. **관리자** 타일은 Office 365 관리자에게만 나타납니다.
 
@@ -31,7 +31,7 @@ Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스�
 
 이때 **고급 기능**을 클릭하지 마세요. 템플릿을 구성하는 Azure 클래식 포털로 이동할 수 있지만 이 자습서에서는 이 기능이 필요하지 않습니다. 대신 Office 365 관리 센터를 닫을 수 있습니다.
 
-#### Azure 포털에서 Rights Management를 활성화하려면
+#### <a name="to-activate-rights-management-from-the-azure-portal"></a>Azure 포털에서 Rights Management를 활성화하려면
 
 1.  [Azure 클래식 포털](http://go.microsoft.com/fwlink/p/?LinkID=275081)로 이동하여 로그인합니다.
 
@@ -55,6 +55,6 @@ Azure Rights Management를 지원하는 구독이 있는 경우라도 서비스�
 |기본 템플릿과 사용자 지정 템플릿을 새로 만드는 방법 정보   →|[Azure 권한 관리용 사용자 지정 템플릿 구성](../deploy-use/create-template.md)|
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

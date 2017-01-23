@@ -15,13 +15,13 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 47f9cf725b864ee22afc7605702992b08cb686dc
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: a0192d8210c8163a298cb7da8eff62e4eb9a87ad
 
 
 ---
 
-# <a name="howto-install-configure-and-test-with-an-rms-server"></a>방법: RMS 서버 설치, 구성 및 테스트
+# <a name="how-to-install-configure-and-test-with-an-rms-server"></a>방법: RMS 서버 설치, 구성 및 테스트
 
 이 항목에서는 권한 사용 응용 프로그램 테스트에 사용할 RMS 서버 또는 Azure RMS에 연결하는 단계를 설명합니다.
  
@@ -105,12 +105,9 @@ ms.openlocfilehash: 47f9cf725b864ee22afc7605702992b08cb686dc
           MSIPC
             ```
 
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

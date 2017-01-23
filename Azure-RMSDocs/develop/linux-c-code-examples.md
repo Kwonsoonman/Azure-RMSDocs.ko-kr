@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: cb0ce6cc8f4740ffc04b36b02392bed2c5f5490c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca3ec0fdde3b8aa2eeebf056c5e155daf79573b0
 
 
 ---
@@ -404,7 +404,7 @@ ms.openlocfilehash: cb0ce6cc8f4740ffc04b36b02392bed2c5f5490c
     ConvertToPFileUsingPolicy(policy, inStream, fileExt, outStream);
     
 
-## <a name="workerthread-a-supporting-method"></a>WorkerThread - 지원 메서드
+## <a name="workerthread---a-supporting-method"></a>WorkerThread - 지원 메서드
 
 
 *WorkerThread()* 메서드는 두 개의 이전 예제 시나리오 **보호된 파일 스트림 만들기** 및 **정책이 제공되면 파일 보호**에서 다음과 같은 방식으로 호출됩니다.
@@ -591,9 +591,9 @@ ms.openlocfilehash: cb0ce6cc8f4740ffc04b36b02392bed2c5f5490c
 
 **참고** 인증 라이브러리 메서드는 **rmsauth::Exception**을 발생시킬 수 있습니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

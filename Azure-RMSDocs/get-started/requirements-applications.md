@@ -4,7 +4,7 @@ description: "RMS API를 사용하여 Azure Information Protection의 Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 12/16/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ffe5949c080073f8acaadd7780b2c68b4b155f8
-ms.openlocfilehash: 1381a93b3a4f262c1747fa136467132137421ecb
+ms.sourcegitcommit: 115708d10b3504e77a5e469b4df93262c067ae0c
+ms.openlocfilehash: 9947c6e8b8fe78f262dbfa129f8490489d119dd2
 
 
 ---
@@ -76,7 +76,7 @@ iOS용 보호된 문서 보기 및 편집을 지원하고, Android용 보호된 
 자세한 내용은 Office 블로그에서 [이제 일부 선택된 장치에서 Android용 OWA를 사용할 수 있음](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/) 게시물을 참조하세요.
 
 ###### <a name="footnote-8"></a>각주 8
-자세한 내용은 Enterprise and Mobility 블로그의 'SealPath, AutoCAD용 RMS 보호 기능 제공' 게시물(https://blogs.technet.microsoft.com/enterprisemobility/2015/09/08/sealpath-brings-rms-protection-to-autocad/)을 참조하세요.
+자세한 내용은 Enterprise Mobility + Security 블로그에서 [SealPath brings RMS protection to AutoCAD](https://blogs.technet.microsoft.com/enterprisemobility/2015/09/08/sealpath-brings-rms-protection-to-autocad/)(SealPath에서 AutoCAD에 대한 RMS 보호 제공) 게시물을 참조하세요.
 
 
 ## <a name="more-information-about-azure-rms-support-for-office"></a>Office에 대한 Azure RMS 지원과 관련된 자세한 내용
@@ -166,7 +166,9 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 자주 사용하는 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Dec16_HO3-->
+
+<!--HONumber=Jan17_HO3-->
 
 

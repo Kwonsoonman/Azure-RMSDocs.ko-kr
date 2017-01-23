@@ -5,7 +5,7 @@
 # [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
 # [앱 개발 및 사용자 지정](developers-guide.md)
 ## [개발자 가이드](developers-guide.md)
-## [Rights Management SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
+## [권한 관리 SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 ### [개요](overview.md)
 ### [시작](get-started.md)
 #### [새로운 기능](release-notes.md)
@@ -29,9 +29,9 @@
 ### [API 참조](api-reference-4-2.md)
 #### [Android API 참조](https://msdn.microsoft.com/library/dn758245.aspx)
 #### [Linux API 참조](linux-c-api-reference.md)
-#### [iOS/OS X API 참조](https://msdn.microsoft.com/library/dn758306.aspx)
+#### [iOS / OS X API reference](https://msdn.microsoft.com/library/dn758306.aspx)(iOS/OS X API 참조)
 #### [Windows API 참조](https://msdn.microsoft.com/library/dn891914.aspx)
-## [Rights Management SDK 2.1](microsoft-information-protection-and-control-client-portal.md)
+## [권한 관리 SDK 2.1](microsoft-information-protection-and-control-client-portal.md)
 ### [개요](ad-rms-overview.md)
 #### [클라이언트](ad-rms-client.md)
 #### [서버](ad-rms-server.md)
@@ -55,18 +55,18 @@
 #### [방법: 암호화 설정 작업](working-with-encryption.md)
 #### [응용 프로그램 종류](application-types.md)
 #### [파일 API 구성](file-api-configuration.md)
+#### [보안 가이드](security-guidelines.md)
 #### [지원되는 파일 형식](supported-file-formats.md)
 #### [지원되는 플랫폼](supported-platforms.md)
 #### [사용 제한 이해](understanding-usage-restrictions.md)
-#### [사용 제한 참조](usage-restriction-reference.md)
 ### [API 참조](api-reference-2-1.md)
-#### [상수](https://msdn.microsoft.com/library/hh535291.aspx)
-#### [데이터 형식](https://msdn.microsoft.com/library/hh535288.aspx)
-#### [함수](https://msdn.microsoft.com/library/hh535289.aspx)
-#### [구조](https://msdn.microsoft.com/library/hh535294.aspx)
-#### [오류 코드](https://msdn.microsoft.com/library/hh535248.aspx)
+#### [Constants](https://msdn.microsoft.com/library/hh535291.aspx)(상수)
+#### [Data types](https://msdn.microsoft.com/library/hh535288.aspx)(데이터 형식)
+#### [Functions](https://msdn.microsoft.com/library/hh535289.aspx)(함수)
+#### [Structures](https://msdn.microsoft.com/library/hh535294.aspx)(구조)
+#### [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)(오류 코드)
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

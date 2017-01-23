@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 20699fe6a0f5d1e989ee767a5710a3272718f064
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d06c0e4c6c6fbde103752d45958181754de2f8a6
 
 
 ---
@@ -35,7 +35,7 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 
 질문과 대답은 [RMS FAQ](http://aka.ms/adrmsfaq )의 개발자 섹션을 참조하세요.
 
-### <a name="runtime-requirements"></a>런타임 요구 사항
+### <a name="run-time-requirements"></a>런타임 요구 사항
 
 특정 프로그래밍 요소의 런타임 요구 사항에 대한 자세한 내용은 해당 요소에 대한 참조 항목의 요구 사항 섹션을 참조하세요.
 
@@ -54,12 +54,10 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 * [RMS SDK 2.1 다운로드 페이지](http://www.microsoft.com/en-us/download/details.aspx?id=38397)
 * [RMS 개발자 코너](http://blogs.msdn.com/b/rms/archive/2012/05/31/official-release-of-ad-rms-sdk-2-0-and-ad-rms-client-2-0.aspx)
 * [RMS FAQ](http://aka.ms/adrmsfaq )
- 
 
- 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -17,13 +17,13 @@ ms.suite: ems
 experimental: true
 experiment_id: priyamo-test-20160729
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: a077e9721bde9e812d36dfab46d6215857cb69ab
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 1e1bf622bfae4d2cca3b30798dbf6cb5c794e24a
 
 
 ---
 
-# <a name="howto-enable-document-tracking-and-revocation"></a>방법: 문서 추적 및 해지 사용
+# <a name="how-to-enable-document-tracking-and-revocation"></a>방법: 문서 추적 및 해지 사용
 
 이 항목에서는 콘텐츠의 문서 추적과 메타데이터 업데이트에 대한 예제 코드를 구현하고, 앱에 대한 **사용 추적 단추**를 만들기 위한 기본 지침을 다룹니다.
 
@@ -161,10 +161,10 @@ ms.openlocfilehash: a077e9721bde9e812d36dfab46d6215857cb69ab
 * [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
 * [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
- 
+
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -6,7 +6,7 @@ Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)�
 
 ![RMS 설치 스크린샷](../media/AzRMS_Tutorial_2_Screenshots.png)
 
-#### Rights Management 공유 응용 프로그램을 다운로드 및 설치하려면
+#### <a name="to-download-and-install-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 다운로드하고 설치하려면
 
 1.  Microsoft 웹 사이트의 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
 
@@ -27,6 +27,6 @@ Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)�
 |기본 보호와 일반 보호 간의 차이를 이해하려면   →|[일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](../rms-client/sharing-app-dialog-box.md)|
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 

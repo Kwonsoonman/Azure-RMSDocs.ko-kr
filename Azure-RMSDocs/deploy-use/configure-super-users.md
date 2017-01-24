@@ -13,8 +13,8 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 70c74678ec0ef0b583b2784177520d0ea8a5b7e8
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d2c7c5307ad1ea8866b40e9daa29634496f9323c
 
 
 ---
@@ -68,10 +68,11 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 > [!NOTE]
 > RMS 보호 도구와 함께 제공되는 RMS 보호 PowerShell 모듈은 기본 [Azure 권한 관리용 Windows PowerShell 모듈](administer-powershell.md)과는 다르며 해당 모듈을 보완합니다. RMS 보호 모듈은 Azure Information Protection의 Azure RMS(Azure Rights Management Services) 및 AD RMS(Active Directory Rights Management Services)를 모두 지원합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "관리자가 Azure Information Protection의 Azure Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 6c71f9b140fa52ab65dab76297a8763b3a980512
+ms.sourcegitcommit: 15bd23bb727937193cb51e732586d4c334357c04
+ms.openlocfilehash: 9c3839a6a6077470e54fb9df437f34abfb0bde78
 
 
 ---
@@ -48,14 +48,14 @@ Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성�
     로그인하려면 다음을 입력합니다.
 
     ```
-    $Cred = Get-Credential
+    $UserCredential = Get-Credential
     ```
     **Windows PowerShell 자격 증명 요청** 대화 상자에 Office 365 사용자 이름과 암호를 제공합니다.
 
 3.  다음 두 명령을 실행하여 Exchange Online 서비스에 연결합니다.
 
     ```
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell/ -Credential $Cred -Authentication Basic –AllowRedirection
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     ```
 
     ```
@@ -166,7 +166,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 사용자의 
 
 1.  OneDrive에서 **설정** 아이콘을 클릭하여 설정 메뉴를 열고 **사이트 콘텐츠**를 클릭합니다.
 
-2.   **문서** 타일 위로 마우스를 가져간 후 줄임표(**...**)를 선택하고 **설정**을 클릭합니다.
+2.  **문서** 타일 위로 마우스를 가져간 후 줄임표(**...**)를 선택하고 **설정**을 클릭합니다.
 
 3.  **설정** 페이지의 **사용 권한 및 관리** 섹션에서 **정보 권한 관리**를 클릭합니다.
 
@@ -1108,9 +1108,10 @@ function Add-CredentialToCredentialCache
 Disconnect-SPOService -ErrorAction SilentlyContinue
 ```
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

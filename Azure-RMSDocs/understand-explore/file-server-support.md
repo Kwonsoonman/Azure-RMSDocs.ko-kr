@@ -13,8 +13,8 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 1d9213aa6be382510558020411d1667fd2866ca7
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 589f0ff68e1e58c0903eb40dcfd0697a500c8491
 
 
 ---
@@ -40,10 +40,11 @@ Office 파일용 RMS 커넥터를 배포하고 구성하는 방법에 대한 지
 ## <a name="next-steps"></a>다음 단계
 이제 응용 프로그램과 서비스가 Azure RMS를 지원하는 방식을 이해하게 되었으므로 온-프레미스 버전의 Rights Management인 AD RMS(Active Directory Rights Management Services)와 Azure RMS를 비교할 수 있습니다. 기능, 요구 사항 및 보안 제어를 비교한 내용을 보려면 [Azure 권한 관리와 AD RMS 비교](compare-azure-rms-ad-rms.md)를 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

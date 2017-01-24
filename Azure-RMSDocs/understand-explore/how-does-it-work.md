@@ -13,8 +13,8 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e66bfa436bf811b34cf3cfe1b2d68a6a4e137c2
-ms.openlocfilehash: dd6c9250102e104ba49b0c08f14d9959cd1228cb
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 91a5485b2860edf6f2095027e1c0d69ec96141d7
 
 
 ---
@@ -52,7 +52,7 @@ RMS의 작동 방식을 이해할 필요는 없지만 업무 표준의 보안 �
 
 ###### <a name="footnote-1"></a>각주 1 
 
-파일 이름 확장명이 .ppdf이거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)인 경우 권한 관리 공유 응용 프로그램에서 일반 보호 및 기본 보호에 256비트를 사용합니다.
+파일 이름 확장명이 .ppdf이거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)인 경우 권한 관리 공유 응용 프로그램에서 일반 보호 및 기본 보호에&256;비트를 사용합니다.
 
 암호화 키 저장 및 보호 방법:
 
@@ -149,8 +149,9 @@ Azure Rights Management Service 구성 및 사용 시 나올 수 있는 용어�
 > [!TIP]
 > 추가 정보와 도움말을 확인하려면 [Azure Information Protection에 대한 정보 및 지원](../get-started/information-support.md)의 리소스와 링크를 사용하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -4,7 +4,7 @@ description: "다른 사용자와 문서를 안전하게 공유할 수 있도록
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection

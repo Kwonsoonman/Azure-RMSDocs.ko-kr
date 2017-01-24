@@ -4,7 +4,7 @@ description: "이 무료 계정의 등록 지침과 등록 프로세스의 작�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection

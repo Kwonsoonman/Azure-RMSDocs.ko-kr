@@ -13,8 +13,8 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: b9979d48af7146f8021de840248f71cb1399b777
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: ac980951f9b4cef9816706a23e3807fbe40a62f5
 
 
 ---
@@ -34,9 +34,9 @@ ms.openlocfilehash: b9979d48af7146f8021de840248f71cb1399b777
 
 -   Rights Management 공유 응용 프로그램이 만든 파일 이름 확장명을 세심히 살펴봅니다. .pfile 및 .ppdf 파일 이름 확장명이 가장 명확한 예이지만, Rights Management Service에 의해 기본적으로 보호될 때 파일 이름 확장명이 변경되는 파일도 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](http://technet.microsoft.com/library/dn339003.aspx)에서 [지원되는 파일 형식 및 파일 이름 확장명](../rms-client/sharing-app-admin-guide-technical.md#supported-file-types-and-file-name-extensions) 섹션을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

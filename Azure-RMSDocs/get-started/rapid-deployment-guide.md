@@ -13,8 +13,8 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 12bc1ed0759364273e66d260b9282fbfe42abbe0
 
 
 ---
@@ -85,7 +85,7 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 
 참고: [시나리오 - 파일 서버 공유에 있는 파일 보호](scenario-fci.md)
 
-**비즈니스에 미치는 영향이 큰 1급 기밀 문서 보호**
+**비즈니스에 미치는 영향이 큰&1;급 기밀 문서 보호**
 
 예:
 
@@ -144,9 +144,10 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 
 구현 중인 솔루션은 중요한 데이터를 보호하는 데 도움이 되며 해당 데이터에 대한 제어를 유지하는 도구를 제공합니다. 이러한 변경을 구현하는 동안 협조해 주셔서 감사합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

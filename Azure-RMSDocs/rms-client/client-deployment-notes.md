@@ -13,8 +13,8 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6b1b134aa8a0c7ef7cded627a7d25df4a90e9faa
-ms.openlocfilehash: 811622757a4e44afb84ec2df84341ecbcd2e7a8f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: d40a8b2062b0b8ccb2dd6115d179e45e64181798
 
 
 ---
@@ -65,13 +65,13 @@ RMS 클라이언트는 다음 운영 체제에서 지원됩니다.
 |Windows Server 2008 R2|Windows 7 SP1 이상|
 |Windows Server 2008(AD RMS만 해당)|Windows Vista SP2 이상(AD RMS만 해당)|
 
-### <a name="which-processors-or-platforms-support-the-rms-client"></a>어떤 프로세서 또는 플랫폼이 RMS 클라이언트를 지원하나요?
+### <a name="which-processors-or-platforms-support-the--rms-client"></a>어떤 프로세서 또는 플랫폼이 RMS 클라이언트를 지원하나요?
 RMS 클라이언트는 x86 및 x64 컴퓨팅 플랫폼에서 지원됩니다.
 
-### <a name="where-is-the-rms-client-installed"></a>RMS 클라이언트는 어디에 설치되나요?
+### <a name="where-is-the--rms-client-installed"></a>RMS 클라이언트는 어디에 설치되나요?
 기본적으로 RMS 클라이언트는 %ProgramFiles%\Active Directory Rights Management Services Client 2.<minor version number>에 설치됩니다.
 
-### <a name="what-files-are-associated-with-the-rms-client-software"></a>어떤 파일이 RMS 클라이언트 소프트웨어와 연결되어 있나요?
+### <a name="what-files--are-associated-with-the-rms-client-software"></a>어떤 파일이 RMS 클라이언트 소프트웨어와 연결되어 있나요?
 다음 파일은 RMS 클라이언트 소프트웨어의 일부로 설치됩니다.
 
 -   Msipc.dll
@@ -138,7 +138,7 @@ RMS 클라이언트는 로컬 컴퓨터에서 Windows 레지스트리를 다음�
 -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\TrustedServers\
     REG_DWORD: AllowTrustedServersOnly
 
-    **값:** 0이 아닌 값을 지정하는 경우 RMS 클라이언트는 TrustedServers 목록에 구성된 지정된 서버 및 Azure 권한 관리 서비스만 신뢰합니다.
+    **값:**&0;이 아닌 값을 지정하는 경우 RMS 클라이언트는 TrustedServers 목록에 구성된 지정된 서버 및 Azure 권한 관리 서비스만 신뢰합니다.
 
 **신뢰할 수 있는 AD RMS 서버 목록에 멤버를 추가하려면**
 
@@ -177,7 +177,7 @@ RMS 서비스 검색을 사용하여 RMS 클라이언트는 콘텐츠를 보호�
 
 > - 사용자가 Office 응용 프로그램에서 로그인하면 인증의 사용자 이름(및 도메인)이 사용할 Azure Information Protection 테넌트를 식별하는 데 사용됩니다. 이 경우 레지스트리 설정이 필요하지 않으며 SCP가 검사되지 않습니다.
 
-### <a name="ad-rms-only-enabling-serverside-service-discovery-by-using-active-directory"></a>AD RMS에만 해당: Active Directory를 사용하여 서버 쪽 서비스 검색 사용
+### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>AD RMS에만 해당: Active Directory를 사용하여 서버 쪽 서비스 검색 사용
 계정에 충분한 권한(AD RMS 서버에 대한 엔터프라이즈 관리자 및 로컬 관리자)이 있으면 AD RMS 루트 클러스터 서버를 설치할 때 SCP(서비스 연결 지점)를 자동으로 등록할 수 있습니다. 포리스트에 SCP가 이미 있는 경우 새 SCP를 등록하기 전에 먼저 기존 SCP를 삭제해야 합니다.
 
 다음 절차를 사용하여 AD RMS를 설치한 후 SCP를 등록하고 삭제할 수 있습니다. 시작하기 전에 사용자 계정에 필요한 권한(AD RMS 서버에 대한 엔터프라이즈 관리자 및 로컬 관리자)이 있는지 확인합니다.
@@ -198,10 +198,10 @@ RMS 서비스 검색을 사용하여 RMS 클라이언트는 콘텐츠를 보호�
 
 5.  **SCP를 현재 인증서 클러스터에 설정** 옵션을 선택한 다음 **확인**을 클릭합니다.
 
-### <a name="enabling-clientside-service-discovery-by-using-the-windows-registry"></a>Windows 레지스트리를 사용하여 클라이언트 쪽 서비스 검색 사용
+### <a name="enabling-client-side-service-discovery-by-using-the-windows-registry"></a>Windows 레지스트리를 사용하여 클라이언트 쪽 서비스 검색 사용
 SCP를 사용하는 대신에 또는 SCP가 없는 경우 RMS 클라이언트가 해당 AD RMS 서버를 찾을 수 있도록 클라이언트 컴퓨터에서 레지스트리를 구성할 수 있습니다.
 
-#### <a name="to-enable-clientside-ad-rms-service-discovery-by-using-the-windows-registry"></a>Windows 레지스트리를 사용하여 클라이언트 쪽 AD RMS 서비스 검색을 사용하도록 설정하려면
+#### <a name="to-enable-client-side-ad-rms-service-discovery-by-using-the-windows-registry"></a>Windows 레지스트리를 사용하여 클라이언트 쪽 AD RMS 서비스 검색을 사용하도록 설정하려면
 
 1.  Windows 레지스트리 편집기 Regedit.exe를 엽니다.
 
@@ -258,9 +258,9 @@ RMS 클라이언트가 Active Directory를 쿼리하여 SCP를 찾을 수 없으
 
 6.  레지스트리 편집기를 닫습니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

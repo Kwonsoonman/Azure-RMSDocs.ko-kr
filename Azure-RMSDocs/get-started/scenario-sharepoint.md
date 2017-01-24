@@ -13,13 +13,13 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 371e566a166dad74b55266db23e034f926942a26
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 1c25f1c8792f7d6d99930dd01c3f3c92a56bbd8a
 
 
 ---
 
-# <a name="scenario-retain-control-of-documents-stored-in-sharepoint"></a>시나리오 - SharePoint에 저장된 문서에 대한 제어 유지
+# <a name="scenario---retain-control-of-documents-stored-in-sharepoint"></a>시나리오 - SharePoint에 저장된 문서에 대한 제어 유지
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -103,9 +103,9 @@ SharePoint 사이트인 **판매 예측 및 보고서**가 이제 안전한 공�
 
 -   지원 센터에 연락하려면 다음 정보를 참조하세요. helpdesk@vanarsdelltd.com
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

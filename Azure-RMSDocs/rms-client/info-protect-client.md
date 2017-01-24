@@ -27,7 +27,7 @@ Azure Information Protection을 사용하여 문서 및 메일 메시지를 분�
 
 ![기본 정책이 적용된 Azure Information Protection 표시줄](../media/info-protect-bar-default.png)
 
-[Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 Azure Information Protection 클라이언트를 다운로드합니다. 현재는 GA(일반 공급) 버전 및 미리 보기 버전을 설치할 수 있습니다. 미리 보기 버전은 평가용 새 기능을 포함하며 변경될 수 있습니다. 자세한 내용은 다음 블로그 공지 게시물 [Azure Information Protection 12월 미리 보기 제공](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)을 참조하세요.
+[Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 Azure Information Protection 클라이언트를 다운로드합니다. 현재는 GA(일반 공급) 버전 및 미리 보기 버전을 설치할 수 있습니다. 미리 보기 버전은 평가용 새 기능을 포함하며 변경될 수 있습니다. 자세한 내용은 다음 블로그 공지 게시물 [Azure Information Protection&12;월 미리 보기 제공](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)을 참조하세요.
 
 클라이언트를 설치하기 전에 Information Protection 클라이언트에 필요한 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다([Azure Information Protection에 대한 요구 사항](../get-started/requirements-azure-rms.md)). 또한 미리 보기 버전 클라이언트의 경우 Windows 7 SP1을 실행하는 컴퓨터에 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)이 필요합니다. 클라이언트를 설치한 후에 이 업데이트를 설치할 수 있습니다. 이 업데이트가 필요한데 설치되어 있지 않으면 업데이트를 설치하라는 메시지가 표시됩니다.
 
@@ -223,6 +223,6 @@ Information Protection 표시줄의 레이블을 변경하려면 Azure Informati
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

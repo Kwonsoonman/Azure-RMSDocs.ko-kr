@@ -13,13 +13,13 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3786fa2529b442f7d31603be09f9b80f1a46d171
-ms.openlocfilehash: 238cc238e62db4a74ce2b10e0e68803cc66b718f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9c78ac81a90d46ab8d56cd205474fdf85f486c3d
 
 
 ---
 
-# <a name="migration-phase-4-post-migration-tasks"></a>마이그레이션 4단계 - 사후 마이그레이션 작업
+# <a name="migration-phase-4---post-migration-tasks"></a>마이그레이션 4단계 - 사후 마이그레이션 작업
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -35,7 +35,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 4단계에는
 
 AD RMS 서버를 서비스 해제한 후에는 Azure 클래식 포털에서 템플릿을 검토하고 통합하여 사용자가 보다 적은 수의 템플릿 중에서 선택하거나, 템플릿을 다시 구성하거나, 새 템플릿을 추가할 기회를 제공할 수 있습니다. 이때 기본 템플릿을 게시하는 것도 좋습니다. 자세한 내용은 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
 
-## <a name="step-9-rekey-your-azure-information-protection-tenant-key"></a>9단계: Azure Information Protection 테넌트 키 다시 입력
+## <a name="step-9-re-key-your-azure-information-protection-tenant-key"></a>9단계: Azure Information Protection 테넌트 키 다시 입력
 이 단계는 선택한 테넌트 키 토폴로지가 고객 관리(Azure 주요 자격 증명 모음을 사용하는 BYOK)가 아니라 Microsoft 관리인 경우에만 적용됩니다.
 
 이 단계는 선택 사항이지만 Azure Information Protection 테넌트 키가 Microsoft에서 관리되고 AD RMS에서 마이그레이션된 경우 권장됩니다. 이 시나리오의 키 다시 입력은 Azure Information Protection 테넌트 키를 AD RMS 키에 대한 잠재적인 보안 위반으로부터 보호하는 데 도움이 됩니다.
@@ -51,9 +51,10 @@ Azure Information Protection 테넌트 키 관리에 대한 자세한 내용은 
 
 이제는 마이그레이션을 완료했으므로 [배포 로드맵](deployment-roadmap.md)을 검토하여 필요할 수 있는 다른 배포 작업을 확인합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -65,6 +65,6 @@ Information Protection 표시줄에서 **Personal(비공개)** 옆에 있는 **E
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

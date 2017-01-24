@@ -13,8 +13,8 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 88b6c5fffb1be59563c2b93c8db244edc3201f3c
-ms.openlocfilehash: e14526494d0068e56a5b103467ac4ec8a75db46d
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 9185b1e28638c8885f4130dfe969c3bdf39d07f5
 
 
 ---
@@ -300,9 +300,10 @@ Windows PowerShell 스크립트를 사용자 지정 작업으로 사용하여 �
 
 그리고 나면 스크립트는 동일하지만 다른 템플릿을 사용하는 새 파일 관리 작업을 만들고 방금 구성한 분류 속성에 대해 조건을 구성하기만 하면 됩니다. 예를 들어 이전에 구성한 조건(**RMS** 속성, **같음**, **예**) 대신 **연산자** 값을 **같음** 으로 설정했으며 **값** 이 **높음** 인 **개인 식별이 가능한 정보**속성을 선택할 수 있습니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

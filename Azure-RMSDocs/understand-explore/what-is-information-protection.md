@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
 translationtype: Human Translation
-ms.sourcegitcommit: dfcaa9a1fef0a4a2011f1385d849c4c2887a022e
-ms.openlocfilehash: ab8aa40f0ed3947264de9d07cd6fa7a7030a6964
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: c0ea97dc29855ad46271dac251c804ca602cee69
 
 
 ---
@@ -48,7 +48,7 @@ Azure Information Protection 레이블을 사용하여 문서와 전자 메일�
 
 ### <a name="rights-management-templates"></a>권한 관리 템플릿
 
-Azure Rights Management 서비스를 활성화하면 바로 2개의 기본 템플릿이 만들어져 데이터 액세스를 조직에 있는 사용자로 제한할 수 있습니다. 이러한 템플릿을 사용하여 즉시 조직에서 데이터가 누출되는 것을 방지할 수 있습니다. 또한 제한이 강화된 컨트롤을 적용하는 사용자 고유의 사용자 지정 템플릿을 구성하여 이러한 기본 템플릿을 보완할 수도 있습니다.
+Azure Rights Management 서비스를 활성화하면 바로&2;개의 기본 템플릿이 만들어져 데이터 액세스를 조직에 있는 사용자로 제한할 수 있습니다. 이러한 템플릿을 사용하여 즉시 조직에서 데이터가 누출되는 것을 방지할 수 있습니다. 또한 제한이 강화된 컨트롤을 적용하는 사용자 고유의 사용자 지정 템플릿을 구성하여 이러한 기본 템플릿을 보완할 수도 있습니다.
 
 이러한 템플릿은 레이블 구성에 포함되어 특정 레이블이 문서(또는 전자 메일 메시지)에 적용되면 데이터는 모두 분류되며 자동으로 보호됩니다. 또한 Azure Rights Management를 지원하는 제품과 서비스에서 사용자나 관리자가 선택할 수도 있습니다.
 
@@ -108,11 +108,9 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 Azure Information Protection 또는 Azure Rights Management를 다른 이름으로 알고 계신가요? [서비스에 대한 대체 조건의 목록](azure-rms-aka.md)을 참조하세요.
 
-## <a name="comments"></a>설명
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

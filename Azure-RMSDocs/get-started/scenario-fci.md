@@ -13,13 +13,13 @@ ms.assetid: 283c7db3-5730-439e-a215-40a1088ed506
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 31957f12d363746a7a48580e043b477ab09cb823
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: f5a95beb3cd42921351181b412a5b08dd6fa3b9b
 
 
 ---
 
-# <a name="scenario-protect-files-on-a-file-server-share"></a>시나리오 - 파일 서버 공유에 있는 파일 보호
+# <a name="scenario---protect-files-on-a-file-server-share"></a>시나리오 - 파일 서버 공유에 있는 파일 보호
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -153,9 +153,10 @@ Office 파일만 보호하는 경우 보호된 파일에 대한 지침을 사용
 
 -   지원 센터에 연락하려면 다음 정보를 참조하세요. helpdesk@vanarsdelltd.com
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

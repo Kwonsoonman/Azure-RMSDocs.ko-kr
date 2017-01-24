@@ -13,8 +13,8 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 9dea728836d52249471d3dde69b63a9a2cd1467c
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ca8694a26f0f9b537a3e3a6b1f468d89cefe6206
 
 
 ---
@@ -118,7 +118,7 @@ Azure 권한 관리 작업 이후 저장소 계정에 로그가 표시될 때까
 ### <a name="the-log-sequence"></a>로그 순서
 Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니다. 
 
-로그의 각 항목에 UTC 타임스탬프가 있습니다. Azure Rights Management 서비스가 여러 데이터 센터의 여러 서버에서 실행되므로 로그가 타임스탬프순으로 정렬되었어도 순서가 올바르지 않은 것처럼 보일 수 있습니다. 그러나 시간 차이는 크지 않으며 보통 1분 이내입니다. 대부분의 경우에는 이러한 시간 차이로 인해 로그 분석 시 문제가 발생하지 않습니다.
+로그의 각 항목에 UTC 타임스탬프가 있습니다. Azure Rights Management 서비스가 여러 데이터 센터의 여러 서버에서 실행되므로 로그가 타임스탬프순으로 정렬되었어도 순서가 올바르지 않은 것처럼 보일 수 있습니다. 그러나 시간 차이는 크지 않으며 보통&1;분 이내입니다. 대부분의 경우에는 이러한 시간 차이로 인해 로그 분석 시 문제가 발생하지 않습니다.
 
 ### <a name="the-blob-format"></a>Blob 형식
 각 Blob은 W3C 확장 로그 형식으로 되어 있으며 다음의 두 줄로 시작됩니다.
@@ -154,7 +154,7 @@ Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니
 |c-ip|주소|요청을 수행하는 클라이언트의 IP 주소입니다.|64.51.202.144|
 
 
-#### <a name="exceptions-for-the-userid-field"></a>use-id 필드에 대한 예외
+#### <a name="exceptions-for-the-user-id-field"></a>use-id 필드에 대한 예외
 user-id 필드는 보통 요청을 수행한 사용자를 나타내지만 해당 값이 실제 사용자에 매핑되지 않는 두 가지 예외가 있습니다.
 
 -   **'microsoftrmsonline@&lt;테넌트 ID&gt;.rms.&lt;지역&gt;.aadrm.com'**
@@ -236,11 +236,12 @@ Azure Rights Management 로깅 변경 전에 Azure 저장소에 로그가 있는
 
 Azure Rights Management 서비스용 Windows PowerShell 사용에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리](administer-powershell.md)를 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7e2f4cfead53bd34673c1ebb85b9d966b8f6f848
-ms.openlocfilehash: 90b6ecd2860214c9b1f26ab9aad421390de8d6ff
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: e8d9c52df769056fcbe3af5a623dcbc0f8de8271
 
 
 ---
@@ -231,8 +231,9 @@ Azure에 연결하는 데 필요한 매개 변수를 로드합니다.
 
 6. 마지막으로 몇 가지 정책 메타데이터(정책 이름, 설명, 발급자(Azure AD 테넌트) 표시 이름)를 입력합니다. ![앱 출력 - 6단계](../media/develop/app-output-6.png)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

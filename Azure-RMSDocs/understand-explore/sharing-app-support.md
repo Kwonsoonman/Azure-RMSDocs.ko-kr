@@ -13,8 +13,8 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 18a222c7927ecc4394266518619941b8a4b6499f
-ms.openlocfilehash: 751422489ec4eec074764ff0417640b22a394325
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 5b438ed97df754b88b0d654439153dea03c8250c
 
 
 ---
@@ -56,9 +56,10 @@ Windows 컴퓨터에서 RMS 공유 응용 프로그램은 사용자가 이미 �
 ## <a name="next-steps"></a>다음 단계
 다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

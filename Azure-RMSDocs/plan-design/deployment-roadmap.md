@@ -13,8 +13,8 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ced42d0856b992d3539575d64f5a49706f1768b3
-ms.openlocfilehash: b4b701d6a88bea91e2adbe7e002f01929d388e91
+ms.sourcegitcommit: ed836a1f64ccb3f7e176ad19d27af1021c423cd9
+ms.openlocfilehash: 75f8eb2843005f23fd359d6a4fce073abecbfe0a
 
 
 ---
@@ -188,12 +188,10 @@ Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파�
 ### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>5단계: 필요에 따라 테넌트 계정의 Rights Management 서비스 관리
 Azure Rights Management 서비스 사용을 시작하면 Windows PowerShell용을 통해 관리 변경 작업을 스크립트로 작성하거나 자동화할 수 있습니다. 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스](../deploy-use/administer-powershell.md)를 참조하세요.
 
-## <a name="comments"></a>설명
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

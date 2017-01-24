@@ -13,13 +13,13 @@ ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 24b4e542a437a824c6783b02bde5bfb848cdeb3a
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: f4dbd60aef69ba9ce83101004c508c162cb3f918
 
 
 ---
 
-# <a name="scenario-share-an-office-file-with-users-in-another-organization"></a>시나리오 - 다른 조직의 사용자와 Office 파일 공유
+# <a name="scenario---share-an-office-file-with-users-in-another-organization"></a>시나리오 - 다른 조직의 사용자와 Office 파일 공유
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -152,9 +152,10 @@ ms.openlocfilehash: 24b4e542a437a824c6783b02bde5bfb848cdeb3a
 
     -   메일: helpdesk@vanarsdelltd.com
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

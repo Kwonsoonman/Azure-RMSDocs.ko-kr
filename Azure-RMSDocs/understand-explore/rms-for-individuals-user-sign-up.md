@@ -13,8 +13,8 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 1de26925961ad560cb9aa86ebc16f7354c7cff1f
 
 
 ---
@@ -48,7 +48,7 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 
 이제 계정이 만들어졌으므로 파일을 보호하고 다른 사용자가 보호한 파일을 읽을 수 있습니다. 파일을 보호하거나 보호된 파일을 읽기 위해 로그인하라는 메시지가 나타나면 개인용 RMS 계정을 만들 때 사용한 동일한 메일 주소와 암호를 입력합니다.
 
-## <a name="technical-overview-of-the-signup-process"></a>등록 프로세스의 기술 개요
+## <a name="technical-overview-of-the-sign-up-process"></a>등록 프로세스의 기술 개요
 개인용 RMS는 Microsoft 클라우드 기반 기술로 사용자를 인증하는 다른 서비스에서도 사용되는 실시간 메일 계정 생성 프로세스를 사용합니다.
 
 이는 사용자가 개인용 RMS에 등록하고 조직에 Office 365 구독 또는 Azure 구독이 없어 Azure에 사용자를 인증할 디렉터리가 없는 경우에 발생합니다.
@@ -94,10 +94,9 @@ ms.openlocfilehash: 82f59842420667c5ad28a6704c9df0d26043d50c
 ## <a name="next-steps"></a>다음 단계
 [관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법](rms-for-individuals-take-control.md)을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

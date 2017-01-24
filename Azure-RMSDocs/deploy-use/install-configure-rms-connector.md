@@ -13,8 +13,8 @@ ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: babd3b14cba61aa49cb448c1d132b279dc9ad5da
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: b7ad3ae66536d7c04003d5a2161b0fda0eb80a3b
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: babd3b14cba61aa49cb448c1d132b279dc9ad5da
 
 ## <a name="installing-the-rms-connector"></a>RMS 커넥터 설치
 
-1.  RMS 커넥터를 실행할 컴퓨터(최소 2대)를 식별합니다. 이러한 컴퓨터는 필수 조건에 나열되어 있는 최소 사양을 충족해야 합니다.
+1.  RMS 커넥터를 실행할 컴퓨터(최소&2;대)를 식별합니다. 이러한 컴퓨터는 필수 조건에 나열되어 있는 최소 사양을 충족해야 합니다.
 
     > [!NOTE]
     > 테넌트(Office 365 테넌트 또는 Azure AD 테넌트)당 하나의 RMS 커넥터(고가용성을 위해 여러 대의 서버로 구성)를 설치합니다. Active Directory RMS와 달리 각 포리스트에 RMS 커넥터를 설치할 필요가 없습니다.
@@ -240,7 +240,9 @@ RMS 커넥터 관리 도구를 설치하려면 다음 파일을 실행합니다.
 ## <a name="next-steps"></a>다음 단계
 이제 RMS 커넥터를 설치 및 구성했으므로 커넥터를 사용하도록 온-프레미스 서버를 구성할 준비가 되었습니다. [Azure 권한 관리 커넥터에 대해 서버 구성](configure-servers-rms-connector.md)으로 이동합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

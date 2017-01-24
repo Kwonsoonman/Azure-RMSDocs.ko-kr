@@ -13,13 +13,13 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1bf7377e5e8079025dff638a185c825256a5cc7
-ms.openlocfilehash: fba8e46993e414fe63414f7240779f5939166c4a
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0ad1df8a8343052a85f85b94e0413fe0a0265d4b
 
 
 ---
 
-# <a name="migration-phase-3-supporting-services-configuration"></a>마이그레이션 3단계 - 지원 서비스 구성
+# <a name="migration-phase-3---supporting-services-configuration"></a>마이그레이션 3단계 - 지원 서비스 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -214,7 +214,9 @@ Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것
 ## <a name="next-steps"></a>다음 단계
 마이그레이션을 계속하려면 [4단계 - 사후 마이그레이션 작업](migrate-from-ad-rms-phase4.md)으로 이동합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

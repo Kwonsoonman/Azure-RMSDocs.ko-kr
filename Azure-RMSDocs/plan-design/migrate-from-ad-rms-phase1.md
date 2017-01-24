@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,13 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2db4041d7839d32a4d8f0bd468aa114d45665c27
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 774ea4fe8bb5e0ae7335bb3c106b57393167ee39
 
 
 ---
 
-# <a name="migration-phase-1-serverside-configuration-for-ad-rms"></a>마이그레이션 1단계 - AD RMS에 대한 서버 쪽 구성
+# <a name="migration-phase-1---server-side-configuration-for-ad-rms"></a>마이그레이션 1단계 - AD RMS에 대한 서버 쪽 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -74,6 +74,11 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
     -   RMS 버전 1.0에서 트러스트된 도메인 파일을 저장하려면 이 확인란을 선택하지 않도록 합니다.
 
 트러스트된 모든 게시 도메인을 내보낸 경우 이 데이터를 Azure Information Protection으로 가져오는 절차를 시작할 준비가 된 것입니다.
+
+트러스트된 게시 도메인에는 이전에 보호된 파일을 암호 해독하는 키가 포함되어 있으므로 현재 활성 도메인뿐 아니라 트러스트된 게시 도메인을 모두 내보내고 자중에 Azure로 가져와야 합니다.
+
+예를 들어 AD RMS 서버를 암호화 모드 1에서 암호화 모드 2로 업그레이드한 경우 트리스트된 도메인이 여럿 있습니다. 마이그레이션 종료 시 암호화 모드 1을 사용하여 보관된 키를 포함하는 트러스트된 게시 도메인을 내보내고 가져오지 않는 경우 사용자가 암호화 모드 1 키로 보호된 콘텐츠를 열 수 없습니다.
+
 
 ### <a name="import-the-configuration-data-to-azure-information-protection"></a>구성 데이터를 Azure Information Protection으로 가져오기
 이 단계의 정확한 절차는 현재 AD RMS 배포 구성 및 Azure Information Protection 테넌트 키에 대한 기본 설정 토폴로지에 따라 달라집니다.
@@ -137,7 +142,7 @@ Rights Management 서비스를 활성화하려면 이 단계가 필요합니다.
 
 AD RMS에서 가져오는 템플릿은 Azure 클래식 포털에서 만들 수 있는 사용자 지정 템플릿과 모양 및 동작이 유사합니다. 가져온 템플릿을 사용자가 응용 프로그램에서 보고 선택할 수 있도록 게시하기 위해 변경하려면 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
 
-새로 가져온 템플릿을 게시하는 것 외에도 마이그레이션을 계속하기 전에 수행해야 하는 두 가지 중요한 템플릿 변경 사항이 있습니다. 마이그레이션 프로세스 중에 사용자에게 보다 일관된 환경을 제공하려면, 가져온 템플릿을 추가적으로 변경하지 않도록 하고, Azure Information Protection과 함께 제공되는 2개의 기본 템플릿을 게시하거나 새 템플릿을 만들지 않도록 합니다. 대신 마이그레이션 프로세스가 완료되고 AD RMS 서버를 서비스 해제할 때까지 기다립니다.
+새로 가져온 템플릿을 게시하는 것 외에도 마이그레이션을 계속하기 전에 수행해야 하는 두 가지 중요한 템플릿 변경 사항이 있습니다. 마이그레이션 프로세스 중에 사용자에게 보다 일관된 환경을 제공하려면, 가져온 템플릿을 추가적으로 변경하지 않도록 하고, Azure Information Protection과 함께 제공되는&2;개의 기본 템플릿을 게시하거나 새 템플릿을 만들지 않도록 합니다. 대신 마이그레이션 프로세스가 완료되고 AD RMS 서버를 서비스 해제할 때까지 기다립니다.
 
 이 단계에 대해 수행해야 하는 템플릿 변경 작업:
 
@@ -217,9 +222,10 @@ Remove-PSDrive MyRmsAdmin -force
 ## <a name="next-steps"></a>다음 단계
 [2단계 - 클라이언트 쪽 구성](migrate-from-ad-rms-phase2.md)으로 이동합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

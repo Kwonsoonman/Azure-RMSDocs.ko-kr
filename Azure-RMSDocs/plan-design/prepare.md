@@ -13,8 +13,8 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: facb9bd0d21551e9170cd9be6e9abda24766f9fd
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: b0c5596feec3f61ad25fe47416a1383f453bdc6b
 
 
 ---
@@ -36,11 +36,12 @@ Azure Information Protection을 조직에 배포하기 전에 다음 사항이 �
 ## <a name="activate-the-rights-management-service-for-data-protection"></a>데이터 보호를 위해 Rights Management 서비스 활성화
 문서 및 전자 메일 보호를 시작할 준비가 되면 이 기술을 사용할 수 있도록 Rights Management 서비스를 활성화합니다. 자세한 내용은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23c437479c756f2a9335606e686f117d514a38f6
-ms.openlocfilehash: fe6491f413b928a85b2a181ee22cfe17f39149ef
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 77c448230aef0b3364822f38ace4f490bfc2db5f
 
 
 ---
@@ -62,8 +62,9 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure 
 
 클라이언트를 설치하는 방법에 대한 자세한 내용은 [Azure Information Protection 클라이언트 설치](info-protect-client.md)를 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

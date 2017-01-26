@@ -13,8 +13,8 @@ ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: a0132404bb9ccb202c552aaca680659947d9c888
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 715e904e74528227dc011bb18c997c68be4c8eda
 
 
 ---
@@ -216,7 +216,9 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)로 돌아갑니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

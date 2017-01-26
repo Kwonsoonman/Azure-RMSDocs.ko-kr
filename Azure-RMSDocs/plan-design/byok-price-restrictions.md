@@ -1,6 +1,6 @@
 ---
 title: "BYOK 가격 및 제한 사항 | Azure Information Protection"
-description: Understand the restrictions when you use customer-managed keys (known as "bring your own key", or BYOK) with Azure RMS.
+description: "BYOK(&quot;Bring Your Own Key&quot;)라고도 하는 고객 관리 키를 Azure RMS에서 사용할 때의 제한 사항에 대해 알아봅니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -13,8 +13,8 @@ ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
-ms.openlocfilehash: e64e87298358b5d1064cda491a10abb48545a98e
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 2e8a00d4c8d38387645d015d3f69a4d568fc9683
 
 
 ---
@@ -85,9 +85,10 @@ AD RMS에서 Azure RMS로 마이그레이션하는 경우 TPD(트러스트된 �
 
 Microsoft에서 테넌트 키를 관리하는 기본 구성을 유지하기로 결정한 경우 Azure 권한 관리 테넌트 키 계획 및 구현 문서에서 [다음 단계](plan-implement-tenant-key.md#next-steps) 섹션을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

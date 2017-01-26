@@ -13,8 +13,8 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f9999db44758251f7b9b4c8f86549b1ee36e83d3
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 19b71ee6016971e1d989db8961b8b77a50fd0124
 
 
 ---
@@ -45,8 +45,9 @@ Azure 디렉터리에서 사용자 계정을 제어하거나, 사용자가 개�
 
 관리자 대신 사용자가 Azure Active Directory에 개인용 RMS에 대한 자신의 계정을 만들 수 있다면 이 작업을 수행했는지 어떻게 확인할 수 있을까요?  [사용자가 개인용 RMS에 등록했는지 확인하는 방법](rms-for-individuals-identify-sign-up.md)을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: c0bfd99229e4d93c91fe8f9efafd887aa7562328
 
 
 ---
@@ -39,7 +39,7 @@ ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 
 파일이 더 이상 보호되지 않도록 모든 사용 권한을 완전히 제거하려면 [파일에서 보호 제거](sharing-app-remove-protection.md)를 참조하세요.
 
-## <a name="to-reprotect-a-file-inplace"></a>바로 파일을 다시 보호하려면
+## <a name="to-re-protect-a-file-in-place"></a>바로 파일을 다시 보호하려면
 
 1.  파일 탐색기에서 보호할 파일을 선택합니다. 마우스 오른쪽 단추를 클릭하고 **RMS로 보호**를 선택한 다음 **바로 보호**를 선택합니다. 예를 들면 다음과 같습니다.
 
@@ -72,7 +72,7 @@ ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 >     등록하면 개인 메일 주소보다 회사 메일 주소를 사용합니다. 보호된 첨부 파일을 메일로 전송받았기 때문에 등록한 경우 메일 메시지를 보내는 데 사용된 동일한 메일 주소를 사용합니다.
 > -   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
 
-## <a name="to-reprotect-a-file-that-you-have-emailed"></a>메일로 보낸 파일을 다시 보호하려면
+## <a name="to-re-protect-a-file-that-you-have-emailed"></a>메일로 보낸 파일을 다시 보호하려면
 
 메일로 보낸 파일에 대한 사용 권한을 변경하려면:
 
@@ -95,8 +95,9 @@ ms.openlocfilehash: 531c75846fb88e6f1d9d802df19b275e12e0fdae
 ## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

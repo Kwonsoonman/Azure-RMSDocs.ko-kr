@@ -13,8 +13,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 386453578a5ea8eeb874d7f27badb8f041dda659
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
 
 
 ---
@@ -36,7 +36,7 @@ RMS 커넥터는 Windows Server 2012 R2, Windows Server 2012 또는 Windows Serv
 ![RMS 커넥터 아키텍처 개요](../media/RMS_connector.png)
 
 
-### <a name="onpremises-servers-supported"></a>지원되는 온-프레미스 서버
+### <a name="on-premises-servers-supported"></a>지원되는 온-프레미스 서버
 
 RMS 커넥터는 Exchange Server, SharePoint Server 및 Windows Server를 실행하고 파일 분류 인프라를 사용하여 Office 정책을 분류하고 폴더의 문서에 적용하는 파일 서버와 같은 온-프레미스 서버를 지원합니다. 
 
@@ -50,7 +50,7 @@ RMS 커넥터에서 지원하는 이러한 온-프레미스 서버의 버전은 
 
 하이브리드 시나리오에서 일부 사용자가 온라인 서비스에 연결하더라도 RMS 커넥터를 사용할 수 있습니다. 예를 들어 일부 사용자의 사서함은 Exchange Online을 사용하고 일부 사용자의 사서함은 Exchange Server를 사용합니다. RMS 커넥터를 설치한 후에 모든 사용자는 Azure RMS를 사용하여 전자 메일 및 첨부 파일을 보호하고 사용할 수 있으며 정보 보호는 두 배포 구성 간에 원활하게 작동합니다.
 
-### <a name="support-for-customermanaged-keys-byok"></a>고객이 관리하는 키(BYOK)에 대한 지원
+### <a name="support-for-customer-managed-keys-byok"></a>고객이 관리하는 키(BYOK)에 대한 지원
 
 Azure RMS용 자체 테넌트 키를 관리하는 경우(BYOK(Bring You Own Key) 시나리오), RMS 커넥터 및 이 커넥터를 사용하는 온-프레미스 서버는 사용자의 테넌트 키가 포함된 HSM(하드웨어 보안 모듈)에 액세스하지 않습니다. 테넌트 키를 사용하는 모든 암호화 작업은 온-프레미스가 아니라 Azure RMS에서 수행되기 때문입니다.
 
@@ -97,7 +97,9 @@ RMS 커넥터를 설치하기 전에 먼저 다음 요구 사항이 설정되어
 
 1단계: [Azure 권한 관리 커넥터 설치 및 구성](install-configure-rms-connector.md)으로 이동합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Jan17_HO4-->
 
 

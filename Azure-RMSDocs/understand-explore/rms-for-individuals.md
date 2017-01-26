@@ -4,7 +4,7 @@ description: "Azure Rights Management 서비스에서 보호하는 중요한 파
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f89374ec327f51f3e8354aec57f0c0da9ddac585
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 6bf3aa5e12da7faa8c1b7c0461e652693111c59a
 
 
 ---
@@ -39,9 +39,10 @@ Windows 컴퓨터에서 권한 관리 공유 응용 프로그램을 사용하여
 ## <a name="next-steps"></a>다음 단계
 단계별 지침과 백그라운드에서 발생하는 작업의 기술 개요는 [개인용 RMS 등록 방법](rms-for-individuals-user-sign-up.md)을 참조하세요. 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

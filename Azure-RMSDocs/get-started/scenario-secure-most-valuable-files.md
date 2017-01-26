@@ -13,13 +13,13 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0f2fb608be647e967d8e5857414f25ebba1d4d29
 
 
 ---
 
-# <a name="scenario-secure-your-most-few-valuable-files"></a>시나리오 - 가장 중요한(소수) 파일 보호
+# <a name="scenario---secure-your-most-few-valuable-files"></a>시나리오 - 가장 중요한(소수) 파일 보호
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -70,7 +70,7 @@ ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
 
 2.  새 템플릿을 게시합니다.
 
-### <a name="to-protect-the-files-inplace"></a>파일을 바로 보호하려면
+### <a name="to-protect-the-files-in-place"></a>파일을 바로 보호하려면
 
 1.  파일 탐색기에서 보호할 파일이 포함된 첫 번째 폴더로 이동합니다.
 
@@ -145,9 +145,9 @@ ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
 
 -   이러한 파일에 액세스할 수 없거나 파일에서 의심스러운 변경을 발견하는 경우 IT 부서로부터 보호된 메일 메시지로 받은 24시간 지원 에스컬레이션 회선으로 전화하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

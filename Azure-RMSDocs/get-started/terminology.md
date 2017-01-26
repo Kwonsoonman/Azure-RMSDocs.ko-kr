@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 8d2fc307bb531ab434e0bc43a22f7403555ef03f
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: a5706c9cf8b81ec761865a800761c69584659578
 
 
 ---
@@ -69,11 +69,10 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 |보호 해제|데이터 보호를 위해 암호화, ID, 액세스 제어 정책 등이 사용된 파일이나 전자 메일 메시지에서 권한 관리 제어를 제거합니다.|
 |사용 라이선스 |권한 관리 서비스로 보호되는 파일 및 메일 메시지를 여는 사용자에게 부여되는 문서별 인증서입니다. 이 인증서에는 문서의 정책에 정의된 추가적인 액세스 제한 사항뿐만 아니라 파일 또는 메일 메시지에 대한 사용자의 권한과 콘텐츠를 암호화하는 데 사용된 암호화 키도 들어 있습니다.|
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

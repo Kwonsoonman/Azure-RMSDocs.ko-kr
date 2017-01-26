@@ -13,8 +13,8 @@ ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f96641355da46eee85a828a6e5e417282883bac7
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0d15a232bc1f0b1bce94e48c7e9c6f6b9419b5dd
 
 
 ---
@@ -39,11 +39,12 @@ Rights Management(RMS) 공유 응용 프로그램은 클라이언트 응용 프�
 
 **Microsoft Intune을 사용하는 경우**: Azure Information Protection에 Microsoft Intune 앱 소프트웨어 개발 키트가 포함되어 있으므로 iOS 및 Android 장치를 Intune에서 등록하는 경우 이러한 장치를 위해 Azure Information Protection 앱을 배포하고 관리할 수 있습니다. 자세한 내용은 Intune 설명서에서 [Microsoft Intune 콘솔에서 모바일 응용 프로그램 관리 정책 구성 및 배포](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)를 참조하세요. 2단계에서는 지침에 따라 정책 관리된 앱을 게시합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

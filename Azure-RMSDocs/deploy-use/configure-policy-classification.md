@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
 translationtype: Human Translation
-ms.sourcegitcommit: 4fcfcebc7da5a22a91911d70d4d787dc525d3485
-ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: b3d801eb0f02361cc58b5f6fbf1303d58a6ad722
 
 
 ---
@@ -99,11 +99,11 @@ ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 2. 서식이 지정된 패턴의 Swift 코드:  
 
-    a. 문자 4자(은행 코드)  
+    a. 문자&4;자(은행 코드)  
 
-    b. 문자 2자(국가 코드)  
+    b. 문자&2;자(국가 코드)  
 
-    c. 문자 또는 숫자 2자(위치 코드)  
+    c. 문자 또는 숫자&2;자(위치 코드)  
 
     d. 선택적 문자 또는 숫자 3자(지점 코드)  
 
@@ -187,11 +187,11 @@ ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
     - **서식 있음**: 
     
-        - 다음과 같은 형식의 9자리 숫자: ddd-dd-dddd 또는 ddd dd dddd 
+        - 다음과 같은 형식의&9;자리 숫자: ddd-dd-dddd 또는 ddd dd dddd 
         
     - **서식 없음**: 
     
-        - 다음과 같은 형식의 9자리 숫자: ddddddddd 
+        - 다음과 같은 형식의&9;자리 숫자: ddddddddd 
 
 
 테스트를 위한 예제:
@@ -221,11 +221,12 @@ ms.openlocfilehash: 4211adef1696a1b615bd3f25df568f4b5149c186
 
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

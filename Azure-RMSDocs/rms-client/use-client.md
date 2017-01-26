@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ced42d0856b992d3539575d64f5a49706f1768b3
-ms.openlocfilehash: 767d19132decd308f028ddca1c3c6136eb862426
+ms.sourcegitcommit: ed836a1f64ccb3f7e176ad19d27af1021c423cd9
+ms.openlocfilehash: 11f4be72cfe1ab50286254bd4de18b66def0a6cb
 
 
 ---
@@ -48,11 +48,9 @@ RMS(Rights Management) 클라이언트는 Office 응용 프로그램, RMS 공유
 ## <a name="see-also"></a>참고 항목
 [Azure Information Protection 및 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)
 
-## <a name="comments"></a>설명
-
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e5939bb469af198a74d81724c5417eb63db7732b
-ms.openlocfilehash: bf73a79218fa8dba2b90115d0c1573a29f791023
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 0af2ad5107cfa958e3309352304f6bdbee4f7316
 
 
 ---
@@ -84,7 +84,7 @@ RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Mi
 
 **권한 있는 계정 목록이 업데이트되었습니다.**
 
-이 이벤트는 RMS 커넥터가 RMS 커넥터 사용 권한이 있는 최신 계정 목록(기존 계정 및 모든 변경 사항)을 다운로드했을 때 기록됩니다. 이 목록은 RMS 커넥터가 Azure Rights Management 서비스와 통신할 수 있을 경우 15분마다 다운로드됩니다.
+이 이벤트는 RMS 커넥터가 RMS 커넥터 사용 권한이 있는 최신 계정 목록(기존 계정 및 모든 변경 사항)을 다운로드했을 때 기록됩니다. 이 목록은 RMS 커넥터가 Azure Rights Management 서비스와 통신할 수 있을 경우&15;분마다 다운로드됩니다.
 
 ----
 
@@ -192,9 +192,10 @@ RMS 커넥터를 설치하면 **Microsoft Rights Management 커넥터** 성능 �
 
 5.  필요한 추적을 캡처한 경우에는 3단계에서 해당 줄을 되돌리고 IIS를 중지했다가 다시 시작합니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

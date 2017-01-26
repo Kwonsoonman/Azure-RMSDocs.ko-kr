@@ -13,8 +13,8 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3571ab868d2476d6683317295d366f973a88ff43
-ms.openlocfilehash: 4cb92bc420eecc0102f144a66a579d58aa4112b5
+ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
+ms.openlocfilehash: 2e895f51e21d5f8cb45a43719d47ba6987c13a09
 
 
 ---
@@ -72,7 +72,9 @@ SharePoint와 함께 Azure Rights Management 서비스를 사용하는 방법에
 
 다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Oct16_HO5-->
+
+<!--HONumber=Jan17_HO4-->
 
 

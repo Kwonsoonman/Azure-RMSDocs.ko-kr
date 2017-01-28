@@ -1,6 +1,6 @@
 ---
 title: "명시적 소유자 권한 추가 방법 | Azure RMS"
-description: Your application should explicitly add "Owner" rights when creating a license from scratch.
+description: "라이선스를 처음부터 만드는 경우 응용 프로그램에서 &quot;소유자&quot; 권한을 명시적으로 추가해야 합니다."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
@@ -115,6 +115,6 @@ ms.openlocfilehash: 337c819436e3675eb0ba745717d700002d5184b0
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

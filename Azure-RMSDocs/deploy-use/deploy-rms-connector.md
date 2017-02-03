@@ -4,7 +4,7 @@ description: "RMS 커넥터 배포에 대한 지침으로 Exchange Server, Share
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,15 +13,15 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
+ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
+ms.openlocfilehash: 874882b46bea052a1052b6f8e0e09f74b92753b8
 
 
 ---
 
 # <a name="deploying-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 배포
 
->*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: Azure Information Protection, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 이 정보를 이용하여 Azure 권한 관리 커넥터와 이 커넥터를 조직에 배포하는 방법에 대해 알아보세요. 이 커넥터는 **Microsoft Exchange Server**, **SharePoint Server** 또는 Windows Server 및 **FCI(파일 분류 인프라)**를 실행하는 파일 서버를 사용하는 기존 온-프레미스 배포의 데이터를 보호합니다.
 
@@ -31,7 +31,7 @@ ms.openlocfilehash: eaa1d7a0a74fa68f9bf1d15f348dbb45d14cee9a
 ## <a name="overview-of-the-microsoft-rights-management-connector"></a>Microsoft Rights Management 커넥터 개요
 Microsoft Rights Management(RMS) 커넥터를 통해 신속하게 기존 온-프레미스 서버가 클라우드 기반 Microsoft Rights Management 서비스(Azure RMS)에 IRM(정보 권한 관리) 기능을 사용하도록 할 수 있습니다. 이 기능을 통해 IT 및 사용자는 추가 인프라를 설치하거나 다른 조직과의 트러스트 관계를 설정할 필요 없이 조직 내/외부에서 쉽게 문서와 사진을 보호할 수 있습니다. 
 
-RMS 커넥터는 Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2를 실행하는 서버에 온-프레미스로 설치하는, 사용 공간이 작은 서비스입니다. 물리적 컴퓨터에서 커넥터를 실행하는 것 외에도 Azure IaaS VM을 포함하여 가상 컴퓨터에서 실행할 수 있습니다. 이 커넥터를 배포하고 나면 다음 그림에 나온 대로 이 커넥터는 온-프레미스 서버와 클라우드 서비스 사이에서 통신 인터페이스(릴레이) 역할을 합니다. 화살표는 네트워크 연결이 시작되는 방향을 나타냅니다.
+RMS 커넥터는 Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2를 실행하는 서버에 온-프레미스로 설치하는, 사용 공간이 작은 서비스입니다. 물리적 컴퓨터에서 커넥터를 실행하는 것 외에도 Azure IaaS VM을 포함하여 가상 컴퓨터에서 실행할 수 있습니다. 이 커넥터를 배포하고 나면 다음 그림에 나온 대로 이 커넥터는 온-프레미스 서버와 클라우드 서비스 사이에서 통신 인터페이스(릴레이) 역할을 합니다. 화살표는 네트워크 연결이 시작되는 방향을 나타냅니다.
 
 ![RMS 커넥터 아키텍처 개요](../media/RMS_connector.png)
 
@@ -64,7 +64,7 @@ RMS 커넥터를 설치하기 전에 먼저 다음 요구 사항이 설정되어
 |권한 관리(RMS) 서비스가 활성화됨|[Azure 권한 관리 활성화](activate-service.md)|
 |온-프레미스 Active Directory 포리스트와 Azure Active Directory 간 디렉터리 동기화|RMS를 활성화한 후 Active Directory 데이터베이스의 사용자 및 그룹과 작동하도록 Azure Active Directory를 구성해야 합니다.<br /><br />**중요**: 테스트 네트워크인 경우에도 RMS 커넥터가 작동하려면 이 디렉터리 동기화 단계를 수행해야 합니다. 수동으로 Azure Active Directory에서 만든 계정으로 Office 365 및 Azure Active Directory를 사용할 수 있기는 하지만 이 커넥터를 사용하려면 Azure Active Directory의 계정을 Active Directory 도메인 서비스와 동기화해야 합니다. 수동 암호 동기화로는 부족합니다.<br /><br />자세한 내용은 다음 리소스를 참조하세요.<br /><br />[Azure Active Directory에 온-프레미스 ID 통합](/active-directory/active-directory-aadconnect)<br /><br />[하이브리드 ID 디렉터리 통합 도구 비교](/active-directory/active-directory-hybrid-identity-design-considerations-tools-comparison)|
 |선택 사항이지만 권장 사항임:<br /><br />온-프레미스 Active Directory와 Azure Active Directory 간에 페더레이션 사용|온-프레미스 디렉터리와 Azure Active Directory 간에 ID 페더레이션을 사용하도록 설정할 수 있습니다. 이 구성을 통해 RMS 서비스에 Single Sign-On을 사용하여 더 원활한 사용자 환경이 가능합니다. Single Sign-On이 없으면 자격 증명을 입력해야 권한으로 보호된 콘텐츠를 사용할 수 있습니다.<br /><br />AD FS(Active Directory Federation Services)를 사용하여 Active Directory 도메인 서비스와 Azure Active Directory 간에 페더레이션을 구성하는 지침은 Windows Server 라이브러리에서 [검사 목록: AD FS를 사용하여 Single Sign-On 구현 및 관리](http://technet.microsoft.com/library/jj205462.aspx)를 참조하세요.|
-|RMS 커넥터를 설치할 최소 두 대의 컴퓨터:<br /><br />- 다음 운영 체제 중 하나를 실행하는 64비트 물리적 컴퓨터 또는 가상 컴퓨터: Windows Server 2012 R2, Windows Server 2012 또는 Windows Server 2008 R2<br /><br />- 1GB 이상의 RAM<br /><br />- 최소 64GB의 디스크 공간<br /><br />- 하나 이상의 네트워크 인터페이스<br /><br />- 인증이 불필요한 방화벽(또는 웹 프록시)을 통한 인터넷 액세스<br /><br />- RMS 커넥터와 함께 사용할 Exchange 또는 SharePoint Server 설치가 포함된 조직에서 다른 포리스트를 트러스트하는 포리스트 또는 도메인에 있어야 함|내결함성 및 고가용성을 위해 최소 두 대의 컴퓨터에 RMS 커넥터를 설치해야 합니다.<br /><br />**팁**: Outlook Web Access를 사용하거나 Exchange ActiveSync IRM을 사용하는 모바일 장치를 사용하고 있으며 Azure RMS로 보호되는 메일 및 첨부 파일에 대한 액세스를 유지 관리해야 하는 경우에는 부하 분산된 커넥터 서버 그룹을 배포하여 높은 가용성을 보장하는 것이 좋습니다.<br /><br />커넥터를 실행하기 위한 전용 서버는 불필요하지만, 커넥터를 사용할 서버가 아닌 별도의 컴퓨터에 커넥터를 설치해야 합니다.<br /><br />**중요**: Azure RMS에 Exchange Server, SharePoint Server 또는 파일 분류 인프라에 대해 구성된 파일 서버의 기능을 사용하려면 이러한 서비스를 실행하는 컴퓨터에 커넥터를 설치하지 마세요. 또한 도메인 컨트롤러에 이 커넥터를 설치하지 마세요.|
+|RMS 커넥터를 설치할 최소 두 대의 컴퓨터:<br /><br />- 다음 운영 체제 중 하나를 실행하는 64비트 물리적 컴퓨터 또는 가상 컴퓨터: Windows Server 2016, Windows Server 2012 R2 Windows Server 2012 또는 Windows Server 2008 R2<br /><br />- 1GB 이상의 RAM<br /><br />- 최소 64GB의 디스크 공간<br /><br />- 하나 이상의 네트워크 인터페이스<br /><br />- 인증이 불필요한 방화벽(또는 웹 프록시)을 통한 인터넷 액세스<br /><br />- RMS 커넥터와 함께 사용할 Exchange 또는 SharePoint Server 설치가 포함된 조직에서 다른 포리스트를 트러스트하는 포리스트 또는 도메인에 있어야 함|내결함성 및 고가용성을 위해 최소 두 대의 컴퓨터에 RMS 커넥터를 설치해야 합니다.<br /><br />**팁**: Outlook Web Access를 사용하거나 Exchange ActiveSync IRM을 사용하는 모바일 장치를 사용하고 있으며 Azure RMS로 보호되는 메일 및 첨부 파일에 대한 액세스를 유지 관리해야 하는 경우에는 부하 분산된 커넥터 서버 그룹을 배포하여 높은 가용성을 보장하는 것이 좋습니다.<br /><br />커넥터를 실행하기 위한 전용 서버는 불필요하지만, 커넥터를 사용할 서버가 아닌 별도의 컴퓨터에 커넥터를 설치해야 합니다.<br /><br />**중요**: Azure RMS에 Exchange Server, SharePoint Server 또는 파일 분류 인프라에 대해 구성된 파일 서버의 기능을 사용하려면 이러한 서비스를 실행하는 컴퓨터에 커넥터를 설치하지 마세요. 또한 도메인 컨트롤러에 이 커넥터를 설치하지 마세요.|
 
 ## <a name="steps-to-deploy-the-rms-connector"></a>RMS 커넥터를 배포하는 단계
 

@@ -1,6 +1,6 @@
 ---
 title: "빠른 시작 자습서 4단계 | Azure Rights Management"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 3단계로 약 30분 만에 완료해야 합니다."
+description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 4단계로 약 30분 만에 완료해야 합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
+ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
+ms.openlocfilehash: 59639e9c90c5a55d8eda44bbcc2f9efbc5b9ffb5
 
 
 ---

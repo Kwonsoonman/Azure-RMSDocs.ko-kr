@@ -1,5 +1,5 @@
 ---
-title: "빠른 시작 자습서 1단계 | Azure Information Protection"
+title: "빠른 시작 자습서 2단계 | Azure Information Protection"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 2단계로 약 30분 만에 완료해야 합니다."
 author: cabailey
 ms.author: cabailey
@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 00d78bf12a7f400b3dfa7e35ada25177170e2d23
+ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
+ms.openlocfilehash: 4ad51bef524fd408881c4c3195a34f730c810b5a
 
 
 ---

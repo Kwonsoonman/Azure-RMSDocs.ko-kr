@@ -4,15 +4,15 @@ description: "문서와 메일용 분류 레이블을 선택할 수 있도록 Of
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4445adff-4c5a-450f-aff8-88bf5bd4ca78
 translationtype: Human Translation
-ms.sourcegitcommit: bd3cbea29183c39abaa66aa5dcec8a14ad0b0757
-ms.openlocfilehash: bccddf228b33bcd8d36ef6af55dea9015cad34d0
+ms.sourcegitcommit: 6012049162d0ac9ee53476640ab3a4bcac18287f
+ms.openlocfilehash: 92d6b6f13d124c8c7ab7735fa170890263c9011b
 
 
 ---
@@ -70,7 +70,7 @@ Azure Information Protection을 사용하여 문서 및 메일 메시지를 분�
 
 Office 2010을 실행하는 컴퓨터에 클라이언트의 미리 보기 버전을 설치하는 경우 사용자가 컴퓨터에서 로컬 관리자가 아니면 **ServiceLocation** 매개 변수를 지정합니다. 자세한 내용은 다음 섹션을 참조하세요.
 
-Azure Information Protection 클라이언트의 일반 공급 버전은 Microsoft 업데이트 카탈로그에도 포함되어 있으므로 카탈로그를 사용하는 소프트웨어 업데이트 서비스를 통해 클라이언트를 설치하고 업데이트할 수 있습니다. 미리 보기 버전 클라이언트는 Microsoft 업데이트 카탈로그에 포함되어 있지 않습니다.
+Azure Information Protection 클라이언트는 Microsoft 업데이트 카탈로그에도 포함되어 있으므로 카탈로그를 사용하는 소프트웨어 업데이트 서비스를 사용하여 클라이언트를 설치하고 업데이트할 수 있습니다. 
 
 ### <a name="preview-version-and-office-2010-only"></a>미리 보기 버전 및 Office 2010에만 해당
 
@@ -223,6 +223,6 @@ Information Protection 표시줄의 레이블을 변경하려면 Azure Informati
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 

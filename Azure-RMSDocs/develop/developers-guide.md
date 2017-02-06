@@ -4,7 +4,7 @@ description: "개발자는 Azure Information Protection을 사용하여 모든 �
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 01/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: a8cb4f9bf0c38e25045fcd1a01deaa993bc862c8
-ms.openlocfilehash: 7f3c9f95ea86655d04e385eee7fd9c8cc0096ce9
+ms.sourcegitcommit: d00a735328bf04aad365a7577ef33ea24706ffc7
+ms.openlocfilehash: 9a3e0f1ba6c563d6129ef824f565138b68b439b1
 
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
@@ -65,7 +65,12 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 다음 가이드에서는 일반적인 도구를 사용하는 응용 프로그램 개발 환경의 OS별 설정 단계를 안내합니다.
 
-|[![iOS/OSX 설정](../media/develop/ios-icon.png)](ios-sdk.md) | [![Android 설정](../media/develop/android-icon.png)](android-sdk.md) | [![Windows Phone 설정](../media/develop/windows-phone-icon.png)](windows-phone-apps.md) | [![Windows 서비스 설정](../media/develop/windows-icon.png)](install-the-rms-sdk.md) | [![Linux 설정](../media/develop/linux-icon.png)](linux-setup.md) |
+[![iOS/OSX 설정](../media/develop/ios-icon.png)](ios-sdk.md)
+[![Android 설정](../media/develop/android-icon.png)](android-sdk.md)
+[![Windows Phone 설정](../media/develop/windows-phone-icon.png)](windows-phone-apps.md)
+[![Windows Service 설정](../media/develop/windows-icon.png)](install-the-rms-sdk.md)
+[![Linux 설정](../media/develop/linux-icon.png)](linux-setup.md)
+
 
 ## <a name="how-tos"></a>방법
 
@@ -74,8 +79,10 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 ### <a name="general"></a>일반
 
 - [문서 추적 및 액세스 권한 해지를 사용하는 방법(서비스)](tracking-content.md)
+- [클라이언트를 배포하는 방법](../rms-client/client-deployment-notes.md)
 - [RMS 서버를 설치 및 구성하는 방법(서비스)](how-to-install-and-configure-an-rms-server.md)
 - [문서 추적을 사용하는 방법(사용자)](how-to-use-document-tracking.md)
+
 
 ### <a name="security-and-authentication"></a>보안 및 인증
 
@@ -137,6 +144,6 @@ Microsoft의 Dan Plastina가 제공하는 [Azure Information Protection 소개](
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 

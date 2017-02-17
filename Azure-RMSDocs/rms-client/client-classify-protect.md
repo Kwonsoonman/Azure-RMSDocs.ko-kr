@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호하는 방법에 대
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 01/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6d4cc50259b9d9bb73a75c648f9e6915562accf
-ms.openlocfilehash: e1d61fbe1d74a4a57d9a1fdf518aeb0242d0f7ad
+ms.sourcegitcommit: 171a47f9c22dec24f72f8f21392d6577efd807a5
+ms.openlocfilehash: d050629999c3a886eb8d422f4f38c22d586e0824
 
 
 ---
@@ -53,11 +53,11 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 
 2. **분류 및 보호 - Azure Information Protection** 대화 상자에서 Office 응용 프로그램에서와 같이 레이블을 사용합니다. 그러면 관리자가 정의한 분류와 보호가 설정됩니다. 레이블이 제공되지 않아 선택할 수 없다면 선택한 파일은 분류를 지원하지 않는 것입니다. 그래도 해당 파일을 보호할 수는 있습니다.
 
-3. 이러한 파일을 보호하려면 관리자가 선택한 레이블에 대해 정의한 보호 설정(**자동(선택한 분류 레이블 기준)**)을 선택하거나 설정을 직접 지정(**사용자 지정 권한으로 재정의**)합니다.
+3. 선택된 레이블에 관리자가 포함했을 수 있는 보호 설정을 사용하지 않고 고유의 보호 설정을 지정하려면 **사용자 지정 권한으로 보호**를 선택합니다.
     
-    재정의 옵션을 사용하는 경우 관리자가 선택한 레이블에 대해 정의했을 수 있는 보호 설정이 사용되지 않습니다. 대신 보호 설정을 직접 지정해야 합니다. 
+    지정하는 사용자 지정 권한은 선택된 레이블에 대해 관리자가 정의했을 수 있는 보호 설정을 보완하지 않고 대신합니다.  
 
-4. 재정의 옵션을 선택한 경우 다음 항목을 지정합니다.
+4. 사용자 지정 권한 옵션을 선택한 경우 다음 항목을 지정하세요.
 
     - **권한 선택**: 선택한 하나 이상의 파일을 보호할 때 사용자에게 제공할 액세스 권한 수준을 선택합니다.
     
@@ -108,9 +108,10 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 
 -   [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

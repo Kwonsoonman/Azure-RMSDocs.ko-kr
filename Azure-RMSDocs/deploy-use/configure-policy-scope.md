@@ -4,7 +4,7 @@ description: "특정 사용자에 대해 다른 설정과 레이블을 구성하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/09/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0600db864f834e9eb84700eb1a36d3e6a6fbde1
-ms.openlocfilehash: ba4567753fbc6320ea6f9170e4bf46857ab999b4
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: ba201561345d5e6b9f22a65ca1785553fed58e08
 
 
 ---
@@ -54,15 +54,19 @@ Azure Information Protection용 범위 지정 정책을 구성하려면 다음�
 
 6. 이 범위 지정 정책에 대해 원하는 변경을 완료한 후 초기 **Azure Information Protection** 블레이드에서 이 범위 지정 정책의 적용 순서가 올바른지 확인합니다. 여러 범위 지정 정책에 대해 같은 사용자를 선택한 경우에는 정책 적용 순서가 중요합니다. 그런 후에 **게시**를 클릭합니다. 
 
-Azure Information Protection 클라이언트는 지원되는 Office 응용 프로그램이 시작될 때마다 변경 내용을 확인하여 해당 사용자에게 적용되는 글로벌 정책 또는 범위 지정 정책의 변경 내용을 다운로드합니다.
+Azure Information Protection 클라이언트는 지원되는 Office 응용 프로그램 또는 파일 탐색기가 열릴 때마다 변경 내용을 확인하여 해당 사용자에게 적용되는 글로벌 정책 또는 범위 지정 정책의 변경 내용을 다운로드합니다.
+
+> [!TIP]
+> 범위가 지정된 정책을 저장한 후에 초기 **Azure Information Protection** 블레이드의 **전체 정책 편집기**를 사용하여 Azure Information Protection 정책에서 모든 레이블을 보고 다시 구성할 수 있습니다. 이 방법을 사용하여 여러 정책(전역 정책 및 범위가 지정된 모든 정책)의 레이블을 쉽게 비교할 수 있습니다. 그러나 이 편집기에서는 레이블을 추가하거나 순서를 변경하거나, 정책 설정을 보거나 구성할 수 없습니다.
 
 ## <a name="next-steps"></a>다음 단계
 
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

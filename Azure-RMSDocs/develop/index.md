@@ -14,26 +14,26 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: effe06fa10e501a52832436de038aba2858d44a9
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 85cd61e564b066458618c02b4ac20cddf6b7e183
 
 
 ---
 
-# RMS 개발자 가이드
+# <a name="rms-developers-guide"></a>RMS 개발자 가이드
 
-## 개요 ##
+## <a name="overview"></a>개요 ##
 현재 Android, iOS/OS X, Windows 장치 및 Linux용 **Microsoft Rights Management SDK 4.2**, Windows 데스크톱 클라이언트용 **Microsoft Rights Management SDK 2.1**, 대체된 **AD RMS SDK** 등 세 가지 세대의 Rights Management SDK를 사용할 수 있습니다.
 
-## 소프트웨어 개발 키트 ##
+## <a name="software-development-kits"></a>소프트웨어 개발 키트 ##
 | SDK | 설명 |
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Microsoft Rights Management Services를 통해 Android, iOS, Mac OS X, Windows Phone/RT 및 Linux/C++ 장치 앱이 정보 보호를 사용할 수 있도록 하는 간단한 개발 환경을 제공하는 간소화된 차세대 도구 집합입니다. |
 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Windows 데스크톱 응용 프로그램 개발자와 서버 기반 솔루션 공급자가 해당 제품에서 권한 관리를 사용할 수 있도록 하는 강력한 SDK 제품입니다.|
 |[AD RMS SDK]()|** 참고 ** - 클라이언트가 Msdrm.dll에 노출하는 기능을 활용하는 AD RMS SDK는 Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 및 Windows Vista에서 사용할 수 있습니다. 이후 버전에서는 변경되거나 제공되지 않을 수 있습니다. 클라이언트가 Msipc.dll에 노출하는 기능을 활용하는 Microsoft Rights Management Services SDK 2.1을 대신 사용합니다.|
-|[AD RMS 스크립팅 API]()| AD RMS 설치를 관리할 스크립트를 만드는 데 사용됩니다.|
+|[AD RMS Scripting API]()(AD RMS 스크립팅 API)| AD RMS 설치를 관리할 스크립트를 만드는 데 사용됩니다.|
 
-## 코드 샘플 및 도구 ##
+## <a name="code-samples-and-tools"></a>코드 샘플 및 도구 ##
 이 Microsoft 제공 RMS 코드 샘플 및 개발자 지원 도구 컬렉션은 지원되는 모든 운영 체제(Android, iOS/OS X, Windows Phone 및 Windows 데스크톱)에 걸쳐 있으며, 지원되는 SDK와의 호환성을 유지하기 위해 정기적으로 업데이트됩니다.
 
 | 항목 | 운영 체제 | 지원 SDK 버전 | 설명 |
@@ -50,8 +50,9 @@ ms.openlocfilehash: effe06fa10e501a52832436de038aba2858d44a9
 | [UI 라이브러리 및 샘플 앱](https://github.com/AzureAD/rms-sdk-ui-for-android) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 이상 버전의 4.x SDK|GitHub의 **Android용 UI 라이브러리 및 샘플 앱**은 빨리 시작하고 앱에서 표준 UI를 다시 사용할 수 있게 해줍니다.|
 | [Android 사용 시나리오](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 이상 버전의 4.x SDK|**Java 코드 예제**는 RMS SDK를 익히는 데 중요한 개발 시나리오를 나타냅니다. 예를 들어 Microsoft 보호된 파일 형식, 사용자 지정 보호된 파일 형식 및 사용자 지정 UI 컨트롤 사용이 포함됩니다.|
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

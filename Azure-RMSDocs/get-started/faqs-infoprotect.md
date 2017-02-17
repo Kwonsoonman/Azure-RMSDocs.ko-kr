@@ -4,7 +4,7 @@ description: "Azure Information Protection의 미리 보기 릴리스에 대한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/09/2016
+ms.date: 12/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 946daa8dedba71d5887dd96f6853e8d90400bfb1
-ms.openlocfilehash: 125752671ec0ca556cc6967a2a3011fb0bf7d9ab
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 8bb0058940eaf1663ec82b38bc37c33400ea8b87
 
 
 ---
@@ -47,7 +47,7 @@ Azure Information Protection 클라이언트는 데이터에 할당된 분류 �
 
 - 파트너 및 개발자용 SDK를 사용할 수 없습니다.
 
-위에 나와 있는 제한 사항 중 일부는 현재 미리 보기에서 사용 가능합니다. 자세한 내용은 블로그 공지 게시물 [Azure Information Protection 12월 미리 보기 제공](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)을 참조하세요.
+위에 나와 있는 제한 사항 중 일부는 현재 미리 보기에서 사용 가능합니다. 자세한 내용은 블로그 공지 게시물 [Azure Information Protection&12;월 미리 보기 제공](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)을 참조하세요.
 
 
 ## <a name="do-i-need-to-be-a-global-admin-to-try-azure-information-protection"></a>Azure Information Protection을 사용하려면 전역 관리자여야 하나요?
@@ -188,7 +188,7 @@ Azure Information Protection에 의해 분류된 파일과 메일은 Azure Infor
 
 다른 사용자로 로그인하려면 현재 레지스트리를 편집해야 합니다.
 
-1. 레지스트리 편집기를 사용하여 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**로 이동하고 **TokenCache** 키를 삭제합니다.
+1. 레지스트리 편집기를 사용하여 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**로 이동하고 **TokenCache** 값을 삭제합니다.
 
 2. 열려 있는 Office 응용 프로그램을 다시 시작하고 다른 사용자 계정으로 로그인합니다. Office 응용 프로그램에서 Azure Information Protection 서비스에 로그인하라는 메시지가 표시되지 않는 경우 **Microsoft Azure Information Protection** 대화 상자로 돌아와 업데이트된 **클라이언트 상태** 섹션에서 **로그인**을 클릭합니다.
 
@@ -204,7 +204,9 @@ Azure Information Protection에 문제가 발생하고 현재 클라이언트 �
 
 질문이나 의견이 있으면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)를 사용하세요. 
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-<!--HONumber=Dec16_HO2-->
+
+<!--HONumber=Jan17_HO4-->
 
 

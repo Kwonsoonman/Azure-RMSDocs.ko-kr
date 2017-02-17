@@ -13,8 +13,8 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eb9b9c1308abe6b1b5803cba7ba254d54cbac812
-ms.openlocfilehash: d3d11dba936ca8901b701008e55df8d73be8bded
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 181357691df02c8532a6f28eef689dcacdfd937f
 
 
 ---
@@ -43,7 +43,7 @@ Azure Rights Management는 필요에 따라 XrML 인증서를 자동으로 생�
 
 ## <a name="where-can-i-find-information-about-3rd-party-solutions-that-integrate-with-azure-rms"></a>Azure RMS와 통합하는 타사 솔루션에 대한 정보는 어디서 찾을 수 있나요?
 
-많은 소프트웨어 공급 업체들은 이미 Azure Rights Management와 통합하는 솔루션을 보유하고 있거나 이러한 솔루션을 구현하고 있으며, 그 목록은 매우 빨리 증가되고 있습니다. [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)에서 최신 업데이트를 구하면 유용할 수 있습니다. 그러나 특정 질문이 있으면 Information Protection 팀(askipteam@microsoft.com.)으로 메일 메시지를 보내 주세요.
+많은 소프트웨어 공급 업체들은 이미 Azure Rights Management와 통합하는 솔루션을 보유하고 있거나 이러한 솔루션을 구현하고 있으며, 그 목록은 매우 빨리 증가되고 있습니다. [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)에서 최신 업데이트를 구하면 유용할 수 있습니다. 그러나 특정 질문이 있으면 Information Protection 팀(askipteam@microsoft.com)으로 메일 메시지를 보내 주세요.
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 커넥터에 대한 관리 팩이나 유사한 모니터링 메커니즘이 있나요?
 
@@ -159,11 +159,12 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 
 이름 및 모양에도 불구하고, **전달 금지**는 전달 권한의 반대도 아니고, 템플릿도 아닙니다. 실제로 메일 전달 제한 외에도, 첨부 파일 복사, 인쇄 및 저장 제한이 포함된 권한 집합입니다. 권한은 선택한 수신자를 통해 사용자에게 동적으로 적용되며, 관리자가 권한을 정적으로 할당하지 않습니다. 자세한 내용은 [Azure 권한 관리에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md) 항목의 [메일에 대한 전달 금지 옵션](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 섹션을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

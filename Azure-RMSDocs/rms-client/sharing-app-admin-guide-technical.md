@@ -4,7 +4,7 @@ description: "Windows용 RMS 공유 응용 프로그램 배포를 담당하는 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 88b03e5e844e78db5dc8ac5f116d19899c5f354f
+ms.sourcegitcommit: 770be3f7423f8d47439096393bba7464629646c5
+ms.openlocfilehash: b90a0e1ab363c1d7f87d0b1a18503da641bf7cfb
 
 
 ---
@@ -43,7 +43,7 @@ RMS의 2013년 10월 릴리스를 설치하면 Office 2010을 사용해 문서�
 
 배포 정보는 [Microsoft Rights Management 공유 응용 프로그램 자동 배포](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)를 참조하세요.
 
-## <a name="levels-of-protection-native-and-generic"></a>보호 수준 - 기본 및 일반
+## <a name="levels-of-protection--native-and-generic"></a>보호 수준 - 기본 및 일반
 Microsoft Rights Management 공유 응용 프로그램은 다음 표에서 설명하는 것처럼 각기 다른 두 수준의 보호를 지원합니다.
 
 |보호 유형|네이티브|제네릭|
@@ -102,29 +102,29 @@ RMS 공유 응용 프로그램이 적용하는 기본 보호 수준을 변경할
 
 RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 보호 또는 일반 보호를 적용하지 않도록 강제 지정할 수도 있습니다. 예를 들어 콘텐츠를 처리하려면 특정 파일을 열 수 있어야 하는 자동화된 응용 프로그램이나 서비스를 사용하는 경우 이러한 작업을 수행해야 할 수 있습니다. 특정 파일 형식에 대한 보호를 차단하면 사용자가 RMS 공유 응용 프로그램을 사용하여 해당 파일 형식의 파일을 보호할 수 없습니다. 이러한 파일을 보호하려고 하면 관리자가 보호를 차단했으므로 파일을 보호하기 위한 작업을 취소해야 한다는 메시지가 표시됩니다.
 
-기본적으로 기본 보호가 적용되는 모든 파일에 대해 RMS 공유 응용 프로그램이 일반 보호를 적용하도록 구성하려면 다음 레지스트리를 편집합니다.
+기본적으로 기본 보호가 적용되는 모든 파일에 대해 RMS 공유 응용 프로그램이 일반 보호를 적용하도록 구성하려면 다음 레지스트리를 편집합니다. RmsSharingApp 또는 FileProtection 키가 없으면 직접 만들어야 합니다.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: 이름이 *인 새 키를 만듭니다.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: 이름이 *인 새 키를 만듭니다.
 
     이 설정은 임의의 파일 이름 확장명이 지정된 파일을 나타냅니다.
 
-2.  새로 추가한 키 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\\\*에서 데이터 값이 **Pfile**인 새 문자열 값(REG_SZ) **Encryption**을 만듭니다.
+2.  새로 추가한 키 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\\\*에서 데이터 값이 **Pfile**인 새 문자열 값(REG_SZ) **Encryption**을 만듭니다.
 
     이 설정을 사용하는 경우 RMS 공유 응용 프로그램이 일반 보호를 적용하게 됩니다.
 
-이 두 설정을 사용하면 RMS 공유 응용 프로그램이 특정 파일 이름 확장명을 사용하는 모든 파일에 일반 보호를 적용합니다. 이러한 결과를 원하는 경우에는 추가 구성을 수행할 필요가 없습니다. 그러나 계속 기본적으로 보호되도록 특정 파일 형식에 대해 예외를 정의할 수 있습니다. 이렇게 하려면 각 파일 형식에 대해 추가로 3개 레지스트리를 편집해야 합니다.
+이 두 설정을 사용하면 RMS 공유 응용 프로그램이 특정 파일 이름 확장명을 사용하는 모든 파일에 일반 보호를 적용합니다. 이러한 결과를 원하는 경우에는 추가 구성을 수행할 필요가 없습니다. 그러나 계속 기본적으로 보호되도록 특정 파일 형식에 대해 예외를 정의할 수 있습니다. 이렇게 하려면 각 파일 형식에 대해 추가로&3;개 레지스트리를 편집해야 합니다.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection**: 파일 이름 확장명(앞의 마침표는 제외)이 이름으로 지정된 새 키를 추가합니다.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: 파일 이름 확장명(앞의 마침표는 제외)이 이름으로 지정된 새 키를 추가합니다.
 
     예를 들어 파일 이름 확장명이 .docx인 파일의 경우 **DOCX**키를 만듭니다.
 
-2.  새로 추가된 파일 형식 키(예: **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**)에서 값이 **0**인 새 DWORD 값 **AllowPFILEEncryption**을 만듭니다.
+2.  새로 추가된 파일 형식 키(예: **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\DOCX**)에서 값이 **0**인 새 DWORD 값 **AllowPFILEEncryption**을 만듭니다.
 
-3.  새로 추가된 파일 형식 키(예: **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RMSSharingApp\FileProtection\DOCX**)에서 값이 **Native**인 새 문자열 값 **Encryption**을 만듭니다.
+3.  새로 추가된 파일 형식 키(예: **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection\DOCX**)에서 값이 **Native**인 새 문자열 값 **Encryption**을 만듭니다.
 
 이러한 설정을 사용하는 경우 파일 이름 확장명이 .doxc인 파일(RMS 공유 응용 프로그램에 의해 기본적으로 보호됨)을 제외한 모든 파일이 일반적으로 보호됩니다.
 
-기본 보호를 지원하며 RMS 공유 응용 프로그램에서 일반적으로 보호하지 않도록 지정하기 위해 예외로 정의하려는 다른 파일 형식에 대해 이 3단계를 반복합니다.
+기본 보호를 지원하며 RMS 공유 응용 프로그램에서 일반적으로 보호하지 않도록 지정하기 위해 예외로 정의하려는 다른 파일 형식에 대해 이&3;단계를 반복합니다.
 
 다음 값을 지원하는 **Encryption** 문자열의 값을 변경하여 다른 시나리오에서도 비슷하게 레지스트리를 편집할 수 있습니다.
 
@@ -137,9 +137,10 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 ## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

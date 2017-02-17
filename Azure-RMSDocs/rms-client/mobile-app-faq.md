@@ -5,7 +5,7 @@ keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 01/06/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
+ms.sourcegitcommit: f478f65eecb47b6d0f41ece413ce576b6935b916
+ms.openlocfilehash: 9a03ccf3326b51f5c9c19102a1e9d003562cead6
 
 
 ---
@@ -33,6 +33,16 @@ ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
 ## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>SharePoint 보호된 라이브러리 및 비즈니스용 OneDrive에 있는 PDF 파일을 열 수 있나요?
 
 예, 다른 사람이 SharePoint 및 비즈니스용 OneDrive를 통해 공유한 보호된 PDF 파일을 열 수 있습니다. 링크를 탭하고 이 앱을 선택하여 필요한 파일을 열 수 있습니다. 
+
+## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>모바일 장치에서 Azure Information Protection 앱을 실행할 수 있나요?
+
+Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4.4** 이상 버전이 필요합니다.
+
+이러한 버전이 있거나 그 이상 버전이 있으면 모바일 장치에 앱을 설치할 수 있습니다.
+
+- 모바일 장치가 Microsoft Intune을 통해 관리되는 경우 회사 포털에서 Azure Information Protection 앱을 설치할 수 있습니다.
+
+- 모바일 장치가 Microsoft Intune을 통해 관리되지 않거나 회사 포털에서 Azure Information Protection을 사용할 수 없으면 iTunes 스토어 및 Google Play 스토어에서 직접 앱을 설치하거나 [Azure Information Protection 다운로드 페이지](https://portal.azurerms.com/#/download)의 **모바일 장치** 섹션에서 iOS 또는 Android 아이콘을 클릭하여 앱을 설치할 수 있습니다. 
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>뷰어 앱을 시작하려면 어떻게 하나요?
 
@@ -60,8 +70,9 @@ ms.openlocfilehash: 2c2a0281041f8f9241fd0e733f3c1b08099bae33
 
 질문을 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 게시하거나 [Information Protection 팀에 메일을 보내 주세요](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

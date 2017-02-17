@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 503a99f01335f3085b5d13c9faaf0a6f05063490
-ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
+ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
+ms.openlocfilehash: 847d19feaea442da66296565f0ffb5b0663ad170
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
 **참고** 뒤에 나오는 예제 코드 및 설명에서는 MSIPC(Microsoft 정보 보호 및 제어)라는 용어를 사용하여 클라이언트 프로세스를 가리킵니다.
 
 
-## <a name="using-the-microsoft-rights-management-sdk-42-key-scenarios"></a>Microsoft Rights Management SDK 4.2 사용 - 주요 시나리오
+## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Microsoft Rights Management SDK 4.2 사용 - 주요 시나리오
 
 다음은 이 SDK를 이해하는 데 중요한 개발 시나리오를 나타내는 큰 샘플 응용 프로그램에서 가져온 코드 예제입니다. 이 예제에서는 보호된 파일이라고 지칭되는 Microsoft 보호된 파일 형식 사용, 사용자 지정 보호된 파일 형식 사용 및 사용자 지정 UI 컨트롤 사용을 보여 줍니다.
 
@@ -437,7 +437,7 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
         buffer.close();    customProtectedInputStream.close();  }  catch (IOException e)  {    ...  } }
 
 
-### <a name="scenario-create-a-custom-protected-file-using-a-custom-adhoc-policy"></a>시나리오: 사용자 지정(임시) 정책을 사용하여 사용자 지정 보호된 파일 만들기
+### <a name="scenario-create-a-custom-protected-file-using-a-custom-ad-hoc-policy"></a>시나리오: 사용자 지정(임시) 정책을 사용하여 사용자 지정 보호된 파일 만들기
 
 -   **1단계**: 사용자가 제공한 메일 주소를 사용하여 정책 설명자를 만듭니다.
 
@@ -524,13 +524,9 @@ ms.openlocfilehash: febc212cb6bc4b91058aa0e9f18d1e51f751b552
           …
         }
 
-
- 
-
- 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

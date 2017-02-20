@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0ad1df8a8343052a85f85b94e0413fe0a0265d4b
+ms.sourcegitcommit: 1c6496d544334bd03d1df263acafefe1ebfb7707
+ms.openlocfilehash: 73a75f9bc1bcba4924570b6460c5fad4e0b877f4
 
 
 ---
@@ -116,15 +116,15 @@ Reg_SZ
 
 **값:**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS 인트라넷 라이선스 URL\>/_wmcs/licensing
 
 **데이터**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<connectorName\>/_wmcs/licensing
 
 
 ---
@@ -142,16 +142,16 @@ Reg_SZ
 
 **값:**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
 
 
 **데이터**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<connectorFQDN\>/_wmcs/licensing
 
 ---
 
@@ -169,15 +169,15 @@ Reg_SZ
 
 **값:**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS 인트라넷 라이선스 URL\>/_wmcs/licensing
 
 **데이터**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<connectorName\>/_wmcs/licensing
 
 
 ---
@@ -196,16 +196,16 @@ Reg_SZ
 
 **값:**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
 
 
 **데이터**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<connectorFQDN\>/_wmcs/licensing
 
 ---
 
@@ -217,6 +217,6 @@ Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

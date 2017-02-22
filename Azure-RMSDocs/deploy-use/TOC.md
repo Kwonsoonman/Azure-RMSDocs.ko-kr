@@ -15,6 +15,7 @@
 ## [응용 프로그램 구성](configure-applications.md)
 ### [Office 365](configure-office365.md)
 ### [Office 앱](configure-office-apps.md)
+### [Azure Information Protection 클라이언트](configure-client.md)
 ### [RMS 공유 앱](configure-sharing-app.md)
 ## [사용 권한 구성](configure-usage-rights.md)
 ## [검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](configure-super-users.md)
@@ -24,7 +25,7 @@
 ### [새 레이블 만들기](configure-policy-new-label.md)
 ### [레이블 삭제 또는 순서 변경](configure-policy-delete-reorder.md)
 ### [레이블 변경](configure-policy-change-label.md)
-### [보호 적용](configure-policy-protection.md)
+### [보호 구성](configure-policy-protection.md)
 #### [HYOK 제한](configure-adrms-restrictions.md)
 ### [시각적 표시 구성](configure-policy-markings.md)
 ### [조건 구성](configure-policy-classification.md)
@@ -48,6 +49,6 @@
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

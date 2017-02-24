@@ -1,11 +1,11 @@
 ---
-title: "응용 프로그램 개발 | Azure Information Protection"
+title: "응용 프로그램 배포"
 description: "AIP를 사용하여 문서 보호를 구현하는 기본적인 콘솔 앱에 대한 지침을 제공합니다."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 12/05/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,8 +15,8 @@ audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: e8d9c52df769056fcbe3af5a623dcbc0f8de8271
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b5f1d44d950cd020c4b15d5f9505752bc960fa88
 
 
 ---
@@ -234,6 +234,6 @@ Azure에 연결하는 데 필요한 매개 변수를 로드합니다.
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

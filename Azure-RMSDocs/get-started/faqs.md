@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d55c21efebc0a3053c7b54b363a0085838a245b8
+ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
+ms.openlocfilehash: c62a8c087907914e249e119b288b9e3c557d04ea
 
 
 ---
@@ -56,19 +56,18 @@ Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 
 
 최종 사용자를 위한 FAQ도 있습니다.
 
--   [FAQ for Rights Management Sharing Application for Windows](https://technet.microsoft.com/dn467883)(Windows용 Rights Management 공유 응용 프로그램 FAQ)
-
--   [FAQ for Rights Management Sharing Application for Mobile and Mac Platforms](https://technet.microsoft.com/dn451248)(모바일 및 Mac 플랫폼용 Rights Management 공유 응용 프로그램에 대한 FAQ)
-
 - [iOS 및 Android용 Azure Information Protection 앱 FAQ](../rms-client/mobile-app-faq.md)
 
--   [FAQ for Document Tracking](http://go.microsoft.com/fwlink/?LinkId=523977)(문서 추적에 대한 FAQ)
+- [Mac 컴퓨터 및 Windows Phone용 RMS 공유 앱에 대 한 FAQ](https://technet.microsoft.com/dn451248)
+
+- [FAQ for Rights Management Sharing Application for Windows](https://technet.microsoft.com/dn467883)(Windows용 Rights Management 공유 응용 프로그램 FAQ)
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

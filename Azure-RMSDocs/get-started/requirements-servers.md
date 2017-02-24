@@ -4,7 +4,7 @@ description: "Rights Management 커넥터를 통해 Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: c46ee88b18cabab7a8a32d5c971c1fad72ec162e
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 815f543c3dc296c508523fe9e09cb80e41d4f85b
 
 
 ---
@@ -51,11 +51,11 @@ Azure Rights Management 커넥터를 사용할 때 Azure Information Protection�
     -   Windows Server 2012
 
     > [!NOTE]
-    > Windows Server 2008 R2를 실행하는 파일 서버에는 Rights Management 보호를 적용하는 기본 제공 파일 관리 작업 동작이 없으므로 이 시나리오에는 Rights Management 커넥터를 사용할 수 없습니다. 그러나 Azure RMS를 사용하여 파일을 보호할 수 있는 사용자 지정 파일 관리 작업(실행 파일 또는 스크립트를 실행)을 구성하는 경우 이러한 운영 체제에서 파일 분류 인프라 및 Azure RMS를 사용할 수 있습니다. 예를 들어 [RMS 보호 cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)을 사용하는 Windows PowerShell 스크립트입니다.
+    > Windows Server 2008 R2를 실행하는 파일 서버에는 Rights Management 보호를 적용하는 기본 제공 파일 관리 작업 동작이 없으므로 이 시나리오에는 Rights Management 커넥터를 사용할 수 없습니다. 그러나 Azure RMS를 사용하여 파일을 보호할 수 있는 사용자 지정 파일 관리 작업(실행 파일 또는 스크립트를 실행)을 구성하는 경우 이러한 운영 체제에서 파일 분류 인프라 및 Azure RMS를 사용할 수 있습니다. [AzureInformationProtection cmdlet](/powershell/azureinformationprotection/vlatest/aip)을 사용하는 Windows PowerShell 스크립트를 예로 들 수 있습니다.
     > 
     > 또한 이러한 cmdlet이 모든 파일 형식을 보호할 수 있다는 혜택을 가진 이후 버전의 Windows Server를 실행하는 서버로 이러한 cmdlet를 사용할 수 있습니다. RMS 커넥터는 Office 파일만을 보호합니다. 방법 지침은 [Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호](../rms-client/configure-fci.md)를 참조하세요.
 
-Rights Management 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2에서 지원됩니다.
+Rights Management 커넥터는 Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2에서 지원됩니다.
 
 이러한 온-프레미스 서버에 대해 Rights Management 커넥터를 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
@@ -65,6 +65,6 @@ Rights Management 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 W
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

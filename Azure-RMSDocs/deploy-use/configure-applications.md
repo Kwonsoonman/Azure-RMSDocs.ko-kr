@@ -4,7 +4,7 @@ description: "Azure Information Protection에 대한 Azure Rights Management 보
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 3c54f0c2f3fcbd312bb3ade521e5dd7f4a12eb85
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: e3c8356b2780bae81e69b1d6e258323e194e5bab
 
 
 ---
@@ -26,9 +26,9 @@ ms.openlocfilehash: 3c54f0c2f3fcbd312bb3ade521e5dd7f4a12eb85
 > [!NOTE]
 > 이 정보는 Azure Information Protection을 배포한 IT 관리자 및 컨설턴트를 대상으로 합니다. 특정 응용 프로그램용 Rights Management 기능을 사용하는 방법이나 권한으로 보호된 파일을 여는 방법에 대한 정보와 사용자 도움말을 원하는 경우 응용 프로그램을 함께 제공되는 지침 및 도움말을 사용하세요.
 >
-> 예를 들어 Office 응용 프로그램의 경우 도움말 아이콘을 클릭하고 **Rights Management** 또는 **IRM**과 같은 검색 용어를 입력합니다. Windows용 RMS용 공유 응용 프로그램에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)를 참조하세요.
+> 예를 들어 Office 응용 프로그램의 경우 도움말 아이콘을 클릭하고 **Rights Management** 또는 **IRM**과 같은 검색 용어를 입력합니다. Windows용 Azure Information Protection 클라이언트의 경우 [Azure Information Protection 클라이언트 사용자 가이드](../rms-client/client-user-guide.md)를 참조하세요.
 
-조직에 대해 Azure Information Protection을 배포한 경우 다음 정보를 사용하여 Azure Information Protection의 Azure Rights Management 서비스를 지원하도록 응용 프로그램 및 서비스를 구성하세요. 여기에는 Word 2013 및 Word 2010과 같은 Office 응용 프로그램, Exchange Online(전송 규칙, 데이터 손실 방지, 전달 금지 및 메시지 암호화) 및 SharePoint Online(보호된 라이브러리)과 같은 서비스가 포함됩니다. 이러한 응용 프로그램과 서비스에서 Rights Management를 지원하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법](../understand-explore/applications-support.md)을 참조하세요.
+조직에 대해 Azure Information Protection을 배포한 경우 다음 정보를 사용하여 응용 프로그램, Azure Information Protection 클라이언트 및 서비스를 구성하세요. Word 2016, Word 2013 및 Word 2010과 같은 Office 응용 프로그램을 예로 들 수 있습니다. 또한 Exchange Online(전송 규칙, 데이터 손실 방지, 전달 금지, 메시지 암호화) 및 SharePoint Online(보호된 라이브러리) 등의 서비스도 여기에 해당합니다. 이러한 응용 프로그램과 서비스가 Azure Information Protection의 데이터 보호 서비스를 지원하는 방식에 대한 자세한 내용은 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](../understand-explore/applications-support.md)을 참조하세요.
 
 > [!IMPORTANT]
 > 지원되는 버전 및 기타 요구 사항에 대한 자세한 내용은 [Azure 권한 관리에 대한 요구 사항](../get-started/requirements-azure-rms.md)을 참조하세요.
@@ -45,11 +45,9 @@ ms.openlocfilehash: 3c54f0c2f3fcbd312bb3ade521e5dd7f4a12eb85
 
     -   [Office 2010](configure-office-apps.md#office-2010)
 
+-   [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-sharing-app.md)
+
 -   [Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성](configure-sharing-app.md)
-
-    -   [Windows용 RMS 공유 응용 프로그램: 설치 및 구성](configure-sharing-app.md#the-rms-sharing-application-for-windows-installation-and-configuration)
-
-    -   [모바일 플랫폼용 RMS 공유 응용 프로그램: 설치 및 관리](configure-sharing-app.md#the-rms-sharing-application-for-mobile-platforms-installation-and-management)
 
 
 온-프레미스 서버(예: Exchange Server 및 SharePoint Server)를 구성하려면 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)를 참조하세요.
@@ -76,6 +74,6 @@ Azure Rights Management 서비스를 지원하도록 응용 프로그램을 구�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

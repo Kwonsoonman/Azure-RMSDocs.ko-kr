@@ -4,7 +4,7 @@ description: "Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: f3e0be224f2a9e587f5be1bbdbbdb3e81b7a4bca
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 53a77c0e312f44fe2210ed19ead6dedeb36a5a78
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: f3e0be224f2a9e587f5be1bbdbbdb3e81b7a4bca
 > [!NOTE]
 > Azure Rights Management 서비스에서 지원하는 응용 프로그램 및 버전을 확인하려면 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](../get-started/requirements-applications.md)을 참조하세요.
 
-일부 경우 관리자가 구성하는 정에 따라 Azure Rights Management 서비스가 보호를 자동으로 적용합니다. SharePoint 라이브러리, 분류된 파일, Exchange 전송 규칙 등을 예로 들 수 있습니다. 최종 사용자가 템플릿이나 특정 옵션을 선택하여 응용 프로그램에서 정보 보호를 직접 적용해야 하는 경우도 있습니다. 사용자가 메일로 파일을 공유하거나 조직 외부 사용자 또는 선택한 사용자에 대해 액세스 또는 사용을 제한하여 내부에서 파일을 보호하는 경우를 예로 들 수 있습니다.
+일부 경우 관리자가 구성하는 정에 따라 Azure Rights Management 서비스가 보호를 자동으로 적용합니다. SharePoint 라이브러리 및 Exchange 전송 규칙 등을 예로 들 수 있습니다. 다른 경우에 최종 사용자는 템플릿을 적용하기 위해 구성한 분류 레이블을 선택하거나, 템플릿을 직접 선택하거나, 특정 옵션을 선택하는 등의 방식으로 응용 프로그램에서 직접 정보 보호를 적용해야 합니다. 사용자가 적용하는 보호는 사용자가 공유할 파일을 보호하고, 선택된 사용자 또는 조직 외부 사용자에게 액세스 또는 사용을 제한할 때 일반적입니다.
 
 정책을 구성하는 관리자와 사용자는 템플릿을 통해 보다 간편하게 올바른 수준의 보호를 적용하고 조직 내 사용자에 대해 액세스를 제한할 수 있습니다. Azure Rights Management 서비스에서는 기본 템플릿 두 개가 제공되지만 개별 옵션을 지정해야 하는 경우 시간을 단축하기 위해 사용자 지정 템플릿을 만들 수도 있습니다. 자세한 내용은 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: f3e0be224f2a9e587f5be1bbdbbdb3e81b7a4bca
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

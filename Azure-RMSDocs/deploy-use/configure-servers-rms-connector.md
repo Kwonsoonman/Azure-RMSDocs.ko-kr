@@ -4,7 +4,7 @@ description: "Azure RMS(Rights Management) 커넥터를 사용할 온-프레미�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/29/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: f262d64a1903eb47bf5f54577fa68df9d43c7f2d
+ms.sourcegitcommit: 47de236f07996eed3f1ceb51309c6315d4625128
+ms.openlocfilehash: faff30ed2115307ff51afc24db8d08233eee9d14
 
 
 ---
@@ -248,7 +248,7 @@ RMS 커넥터 및 파일 분류 인프라를 사용하여 Office 문서를 보�
 3.  RMS 암호화로 문서를 보호하기 위한 분류 규칙 및 파일 관리 작업을 만들고, RMS 정책을 자동으로 적용하기 위한 RMS 템플릿을 지정합니다. 자세한 내용은 Windows Server 문서 라이브러리의 [파일 서버 리소스 관리자 개요](http://technet.microsoft.com/library/hh831701.aspx) 를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-이제 RMS 커넥터가 설치 및 구성되고 서버가 RMS 커넥터를 사용하도록 구성되었으므로, IT 관리자와 사용자는 Azure Rights Management 서비스를 사용하여 메일 메시지 및 문서를 보호하고 사용할 수 있습니다. 사용자가 이러한 작업을 간편하게 수행할 수 있도록, Office용 추가 기능을 설치하고 파일 탐색기에 새로운 오른쪽 클릭 옵션을 추가하는 RMS 공유 응용 프로그램을 배포합니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)를 참조하세요.
+이제 RMS 커넥터가 설치 및 구성되고 서버가 RMS 커넥터를 사용하도록 구성되었으므로, IT 관리자와 사용자는 Azure Rights Management 서비스를 사용하여 메일 메시지 및 문서를 보호하고 사용할 수 있습니다. 사용자가 이러한 작업을 간편하게 수행할 수 있도록, Office용 추가 기능을 설치하고 파일 탐색기에 새로운 오른쪽 클릭 옵션을 추가하는 Azure Information Protection 클라이언트를 배포합니다. 자세한 내용은 [Azure Information Protection 클라이언트 관리자 가이드](../rms-client/client-admin-guide.md)를 참조하세요.
 
 Exchange 전송 규칙 또는 Windows Server FCI와 함께 사용하려는 부서별 템플릿을 구성하는 경우 **응용 프로그램에서 사용자 ID를 지원하지 않는 경우 이 템플릿을 모든 사용자에게 표시** 확인란이 선택되도록 범위 구성에 응용 프로그램 호환성 옵션을 포함해야 합니다.
 
@@ -259,6 +259,6 @@ RMS 커넥터를 모니터링하려면 [Azure Rights Management 커넥터 모니
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

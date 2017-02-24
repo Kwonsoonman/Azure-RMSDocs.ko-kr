@@ -4,7 +4,7 @@ description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/09/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 2e59fcdb2bb2f058855c0a41031e951953c8c936
+ms.sourcegitcommit: 47de236f07996eed3f1ceb51309c6315d4625128
+ms.openlocfilehash: 10e7f8cb50089281fc406e077fe6e5ca34e80fb5
 
 
 ---
@@ -78,7 +78,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
 ## <a name="next-steps"></a>다음 단계
 이제 조직에 대해 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 활성화했으므로 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용하여 Azure Information Protection을 사용자 및 관리자에게 배포하기 전에 수행해야 하는 다른 구성 단계가 있는지 확인합니다. 
 
-예를 들어 사용자가 파일에 정보 보호를 적용하기 쉽도록 [사용자 지정 템플릿](configure-custom-templates.md)을 사용하고, [Rights Management 커넥터](deploy-rms-connector.md)를 설치하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용할 온-프레미스 서버를 연결하고, 모든 장치에서 모든 파일 형식 보호를 지원하는 [Rights Management 공유 응용 프로그램](../rms-client/sharing-app-windows.md)을 배포할 수도 있습니다. 
+예를 들어 사용자가 파일에 정보 보호를 적용하기 쉽도록 [사용자 지정 템플릿](configure-custom-templates.md)을 사용하고, [Rights Management 커넥터](deploy-rms-connector.md)를 설치하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용할 온-프레미스 서버를 연결하고, 모든 장치에서 모든 파일 형식 보호를 지원하는 [ 클라이언트](../rms-client/aip-client.md)를 배포할 수도 있습니다. 
 
 Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정보 권한 관리) 기능을 사용하려면 추가 구성이 필요합니다. 사용자 응용 프로그램이 Rights Management Service에서 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure Rights Management Service를 지원하는 방법](../understand-explore/applications-support.md)을 참조하세요.
 
@@ -86,6 +86,6 @@ Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정�
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

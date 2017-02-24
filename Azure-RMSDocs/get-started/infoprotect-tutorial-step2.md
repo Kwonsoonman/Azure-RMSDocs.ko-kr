@@ -1,18 +1,18 @@
 ---
 title: "빠른 시작 자습서 2단계 | Azure Information Protection"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 2단계로 약 30분 만에 완료해야 합니다."
+description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서 2단계입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
-ms.openlocfilehash: 4ad51bef524fd408881c4c3195a34f730c810b5a
+ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
+ms.openlocfilehash: f3ec39af7bdbc63169c09eefa54c29cfc4cee40b
 
 
 ---
@@ -32,7 +32,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     > [!TIP] 
     > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
 
-3.  자동으로 만들어진 기본 Information Protection 정책을 보여 주는 **정책:글로벌** 블레이드(자동으로 표시됨)를 탐색합니다.
+3.  Azure Information Protection 블레이드에서 **전역**을 클릭하고 **정책: 전역** 블레이드로 이동합니다. 이 블레이드에는 자동으로 만들어진 기본 Information Protection 정책이 표시됩니다.
     
     - 분류 레이블: **Personal**(비공개), **Public**(공개), **Internal**(내부), **Confidential**(기밀) 및 **Secret**(비밀) 각 레이블의 용도를 이해하려면 각 레이블의 도구 설명을 읽어 보세요. **Secret**(비밀)에는 두 개의 하위 레이블 **All-Employees**(모든 직원)와 **My-Group**(내 그룹)이 있습니다. 이러한 하위 레이블은 분류가 하위 범주를 포함하는 방법의 예를 제공합니다.
 
@@ -114,7 +114,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 이 자습서를 완료한 후 Azure 포털을 닫거나, 열어 둔 채로 추가 구성 옵션을 사용해 볼 수 있습니다.
 
-기본 정책을 살펴보고 몇 가지를 변경했으므로 다음 단계는 Azure Information Protection 클라이언트 및 Rights Management 공유 응용 프로그램을 설치하는 것입니다.
+기본 정책을 살펴보고 몇 가지를 변경했으므로 다음 단계는 Azure Information Protection 클라이언트를 설치하는 것입니다.
 
 |자세한 정보가 필요한 경우|추가 정보|
 |--------------------------------|--------------------------|
@@ -128,6 +128,6 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

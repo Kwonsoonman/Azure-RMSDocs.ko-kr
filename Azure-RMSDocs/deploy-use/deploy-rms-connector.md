@@ -4,7 +4,7 @@ description: "RMS 커넥터 배포에 대한 지침으로 Exchange Server, Share
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a8bfb3be9b19718cc8a94755e19b8d2521dde323
-ms.openlocfilehash: 874882b46bea052a1052b6f8e0e09f74b92753b8
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 5d33e0a8a9c6efbe937a53ae964b2972bf41580c
 
 
 ---
@@ -41,7 +41,7 @@ RMS 커넥터는 Windows Server 2016, Windows Server 2012 R2, Windows Server 201
 RMS 커넥터는 Exchange Server, SharePoint Server 및 Windows Server를 실행하고 파일 분류 인프라를 사용하여 Office 정책을 분류하고 폴더의 문서에 적용하는 파일 서버와 같은 온-프레미스 서버를 지원합니다. 
 
 > [!NOTE]
-> 파일 분류 인프라를 사용하여 Office 문서뿐 아니라 모든 파일 형식을 보호하려는 경우 RMS 커넥터가 아닌 [RMS Protection cmdlets](https://msdn.microsoft.com/library/azure/mt433195.aspx)(RMS 보호 cmdlet)를 사용합니다.
+> 파일 분류 인프라를 사용하여 Office 문서뿐 아니라 여러 파일 형식을 보호하려는 경우 RMS 커넥터가 아닌 [AzureInformationProtection cmdlet](/powershell/azureinformationprotection/vlatest/aip)을 대신 사용합니다.
 
 RMS 커넥터에서 지원하는 이러한 온-프레미스 서버의 버전은 [Azure RMS를 지원하는 온-프레미스 서버](..\get-started\requirements-servers.md)를 참조하세요.
 
@@ -100,6 +100,6 @@ RMS 커넥터를 설치하기 전에 먼저 다음 요구 사항이 설정되어
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

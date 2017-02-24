@@ -4,15 +4,15 @@ description: "Azure Information Protection에서 AD RMS 보호를 사용하도�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
 translationtype: Human Translation
-ms.sourcegitcommit: 22af60687ad030e686ba843ced6d450487353a0e
-ms.openlocfilehash: 66c19b296ce170d0f7f5317c87bee532edd9bb78
+ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
+ms.openlocfilehash: afb676dc133c23123cd3cce6d3c6367b4e80911a
 
 
 ---
@@ -35,7 +35,7 @@ Azure RMS는 Microsoft에서 관리(기본값)하거나 사용자가 관리("Bri
 
 그러나 일부 고객은 온-프레미스에 호스트된 키를 사용하여 선택한 문서와 메일을 보호해야 할 수도 있습니다. 예를 들어 규정 및 준수 때문에 필요할 수 있습니다. 
 
-이 구성을 HYOK("Hold Your Own Key")라고도 하며, 다음 섹션에 설명된 요구 사항으로 작동하는 AD RMS(Active Directory Rights Management Services) 배포가 있는 경우 Azure Information Protection에서 지원됩니다. 이 기능은 미리 보기 상태입니다.
+이 구성을 HYOK("Hold Your Own Key")라고도 하며, 다음 섹션에 설명된 요구 사항으로 작동하는 AD RMS(Active Directory Rights Management Services) 배포가 있는 경우 Azure Information Protection에서 지원됩니다.
 
 이 HYOK 시나리오에서 권한 정책 및 이러한 정책을 보호하는 조직의 개인 키는 온-프레미스에서 관리 및 유지되고, 레이블 지정 및 분류에 대한 Azure Information Protection 정책은 계속 Azure에서 관리 및 저장됩니다. Azure RMS 보호와 마찬가지로 AD RMS로 보호하는 정보는 클라우드로 전송되지 않습니다.
 
@@ -98,13 +98,13 @@ AD RMS 보호에 대한 레이블을 구성하는 경우 AD RMS 클러스터의 
 
 ## <a name="next-steps"></a>다음 단계
 
-이 미리 보기 기능에 대한 자세한 내용은 블로그 게시물 공지인 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)(Azure Information Protection 및 HYOK(Hold Your Own Key))를 참조하세요.
+이 기능에 대한 자세한 내용은 블로그 게시물 공지인 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)(Azure Information Protection 및 HYOK(Hold Your Own Key))를 참조하세요.
 
 AD RMS 보호에 대한 레이블을 구성하려면 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](../deploy-use/configure-policy-protection.md)을 참조하세요. 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -4,7 +4,7 @@ description: "Azure 클래식 포털에서 사용자 지정 템플릿을 만들�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/11/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5b7a73c153edfdc7db3a55ee714b05f65d5090f4
-ms.openlocfilehash: 41a4406803cb0de4af607c7494258fc57d5217f7
+ms.sourcegitcommit: 4d9cf4f9ab3f73d2b1ba06eb74541f2982d24677
+ms.openlocfilehash: 66158f74951e7226482e58cf94e4249486b4dc7b
 
 
 ---
@@ -85,10 +85,10 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
     > [!TIP]
     > Office 365 또는 Exchange Online의 연락처를 포함하는 메일 사용이 가능한 그룹을 선택하여 조직 외부의 사용자("외부 사용자")를 템플릿에 추가할 수 있습니다. 이렇게 하면 조직의 사용자에게 권한을 할당하는 것과 같은 방식으로 외부 사용자에게 권한을 할당할 수 있습니다. 예를 들어 고객에게 보내는 가격표를 고객이 편집하지 못하도록 할 수 있습니다. 조직 외부의 사용자가 Outlook Web App을 사용하여 보호된 메일을 읽을 경우 메일을 보호하기 위한 이 템플릿 구성을 사용하지 마세요.
     > 
-    > 또한 나중에 [Azure 권한 관리용 Windows PowerShell 모듈](install-powershell.md)을 사용하고 다음 방법 중 하나를 사용하여 조직 외부 사용자를 템플릿에 추가할 수 있습니다.
+    > 또한 나중에 **특정 사용자**, **그룹** 또는 **해당 조직의 모든 사용자**를 기준으로 조직 외부의 사용자를 조직에 추가할 수 있습니다. 이렇게 하려면 [Azure Rights Management용 Windows PowerShell 모듈](install-powershell.md)과 다음 방법 중 하나를 사용합니다.
     > 
-    > -  **권한 정의 개체를 사용하여 템플릿 업데이트**: 권한 정의 개체에서 외부 메일 주소 및 해당 권한을 지정한 다음 템플릿을 업데이트할 때 사용합니다. [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx) cmdlet을 통해 변수를 만든 다음 [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx) cmdlet을 통해 이 변수를 -RightsDefinition 매개 변수에 제공하여 기존 템플릿을 수정하는 방식으로 권한 정의 개체를 지정합니다. 그러나 기존 템플릿에 이러한 사용자를 추가하는 경우 새로운 외부 사용자뿐 아니라 템플릿의 기존 그룹에 대해서도 권한 정의 개체를 정의해야 합니다.
-    > -  **업데이트된 템플릿 내보내기, 편집 및 가져오기**: [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx) cmdlet을 사용하여 템플릿을 파일로 내보냅니다. 그런 후 이 파일을 편집하여 이러한 사용자의 외부 메일 주소와 해당 권한을 기존 그룹 및 권한에 추가할 수 있습니다. 그런 후 [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx) cmdlet을 사용하여 이러한 변경 내용을 Azure RMS로 다시 가져올 수 있습니다.
+    > -  **권한 정의 개체를 사용하여 템플릿 업데이트**: 권한 정의 개체에서 외부 사용자(사용자 전자 메일 주소, 그룹 전자 메일 주소 또는 해당 조직의 모든 사용자에 대한 도메인 기준)와 해당 권한을 지정합니다. 그런 후 권한 정의 개체를 사용하여 템플릿을 업데이트합니다. [New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition) cmdlet을 통해 변수를 만든 다음 [Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty) cmdlet을 통해 이 변수를 -RightsDefinition 매개 변수에 제공하여 기존 템플릿을 수정하는 방식으로 권한 정의 개체를 지정합니다. 그러나 기존 템플릿에 이러한 사용자를 추가하는 경우 새로운 외부 사용자뿐 아니라 템플릿의 기존 그룹에 대해서도 권한 정의 개체를 정의해야 합니다.
+    > -  **업데이트된 템플릿 내보내기, 편집 및 가져오기**: [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate) cmdlet을 사용하여 편집할 수 있는 파일로 템플릿을 내보냅니다. 그런 후 이 파일을 편집하여 기존 그룹 및 권한에 외부 사용자(사용자 전자 메일 주소, 그룹 전자 메일 주소 또는 해당 조직의 모든 사용자에 대한 도메인 기준)와 해당 권한을 추가할 수 있습니다. 그런 후 [Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate) cmdlet을 사용하여 이러한 변경 내용을 Azure RMS로 다시 가져올 수 있습니다.
 
 3.  다음 단추를 클릭한 후 선택한 사용자 및 그룹에 나열된 권한 중 하나를 할당합니다.
 
@@ -107,7 +107,7 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
     부서별 템플릿에 대한 추가 정보: 기본적으로 Azure 디렉터리의 모든 사용자가 게시된 모든 템플릿을 볼 수 있으며 콘텐츠를 보호하려는 경우 응용 프로그램에서 이러한 템플릿을 선택할 수 있습니다. 특정 사용자만 게시된 템플릿의 일부를 볼 수 있도록 하려면 해당 템플릿의 범위를 이러한 사용자로 지정해야 합니다. 그러면 이러한 사용자만 해당 템플릿을 선택할 수 있게 됩니다. 지정하지 않은 다른 사용자는 템플릿을 볼 수 없으므로 선택할 수도 없습니다. 이 방식은 사용자가 특히 특정 그룹 또는 부서에서 사용하도록 고안된 템플릿을 만들 때, 올바른 템플릿을 쉽게 선택할 수 있도록 합니다. 사용자에게는 본인을 위해 고안된 템플릿만 표시됩니다.
 
-    예를 들어 재무 담당 부서의 구성원에게 읽기 전용 권한이 적용되는 인사 관리 부서용 템플릿을 만들었습니다. 인사 관리 부서의 멤버만 권한 관리 공유 응용 프로그램을 사용할 때 이 템플릿을 적용할 수 있으므로 템플릿 범위를 HumanResources라는 메일 사용 가능 그룹으로 지정합니다. 그러면 이 그룹의 구성원만 이 템플릿을 보고 적용할 수 있습니다.
+    예를 들어 재무 담당 부서의 구성원에게 읽기 전용 권한이 적용되는 인사 관리 부서용 템플릿을 만들었습니다. 인사 관리 부서의 멤버만 Azure Information Protection 클라이언트를 사용할 때 이 템플릿을 적용할 수 있으므로 템플릿 범위를 HumanResources라는 메일 사용 가능 그룹으로 지정합니다. 그러면 이 그룹의 구성원만 이 템플릿을 적용할 수 있습니다. 또한 사용자가 [보호 전용 모드](../rms-client/client-protection-only-mode.md)로 Azure Information Protection 클라이언트를 실행하는 경우에는 이 템플릿이 표시되지 않습니다.
 
 7.  **템플릿 표시 여부** 페이지에서 RMS 지원 응용 프로그램에서 템플릿을 보고 선택할 수 있는 사용자 및 그룹을 선택합니다. 앞에 나온 것처럼 사용자보다는 그룹을 사용하는 것이 좋습니다. 또한 선택한 그룹 또는 사용자에게 메일 주소가 있어야 합니다.
 
@@ -115,7 +115,7 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
     응용 프로그램 호환성을 구성해야 하는 이유 모든 응용 프로그램에서 부서별 템플릿을 지원할 수 있는 것은 아니기 때문입니다. 이것이 가능하려면 템플릿을 다운로드하기 전에 먼저 응용 프로그램이 RMS 서비스에서 인증을 받아야 합니다. 인증 프로세스가 발생하지 않으면 기본적으로 부서별 템플릿이 전혀 다운로드되지 않습니다. 모든 부서별 템플릿을 다운로드하도록 지정하고, 응용 프로그램 호환성을 구성하고, **응용 프로그램에서 사용자 ID를 지원하지 않는 경우 이 템플릿을 모든 사용자에게 표시** 확인란을 선택하여 이 동작을 재정의할 수 있습니다.
 
-    예를 들어 인사 관리 예제에서 부서별 템플릿에 대한 응용 프로그램 호환성을 구성하지 않으면 Exchange OWA 및 Exchange ActiveSync에서 현재 부서별 템플릿을 지원하지 않으므로 인사 관리 부서의 사용자만 RMS 공유 응용 프로그램을 사용할 때 부서별 템플릿을 볼 수 있고 다른 사용자는 Exchange Server 2013의 OWA(Outlook Web Access)를 사용할 때 부서별 템플릿을 볼 수 없습니다. 응용 프로그램 호환성을 구성하여 이 기본 동작을 재정의하는 경우 인사 관리 부서의 사용자만 RMS 공유 응용 프로그램을 사용할 때 부서별 템플릿을 볼 수 있고 그 외 모든 사용자는 OWA(Outlook Web Access)를 사용할 때 부서별 템플릿을 볼 수 있습니다. 사용자가 Exchange Online의 OWA 또는 Exchange ActiveSync를 사용하는 경우 Exchange Online의 템플릿 상태(보관 또는 게시)에 따라 모든 사용자가 부서별 템플릿을 볼 수 있거나 어떤 사용자도 부서별 템플릿을 볼 수 없습니다.
+    예를 들어 인사 관리 예제에서 부서별 템플릿에 대한 응용 프로그램 호환성을 구성하지 않으면 Exchange OWA 및 Exchange ActiveSync에서 현재 부서별 템플릿을 지원하지 않으므로 인사 관리 부서의 사용자만 [보호 전용 모드](../rms-client/client-protection-only-mode.md)로 Azure Information Protection 클라이언트를 사용할 때 부서별 템플릿을 볼 수 있고 다른 사용자는 Exchange Server 2013의 OWA(Outlook Web Access)를 사용할 때 부서별 템플릿을 볼 수 없습니다. 응용 프로그램 호환성을 구성하여 이 기본 동작을 재정의하는 경우 인사 관리 부서의 사용자만 보호 전용 모드로 Azure Information Protection 클라이언트를 사용할 때 부서별 템플릿을 볼 수 있고 그 외 모든 사용자는 OWA(Outlook Web Access)를 사용할 때 부서별 템플릿을 볼 수 있습니다. 사용자가 Exchange Online의 OWA 또는 Exchange ActiveSync를 사용하는 경우 Exchange Online의 템플릿 상태(보관 또는 게시)에 따라 모든 사용자가 부서별 템플릿을 볼 수 있거나 어떤 사용자도 부서별 템플릿을 볼 수 없습니다.
 
     Office 2016은 기본적으로 부서별 템플릿을 지원하며, 2015년 6월에 [KB 3054853](https://support.microsoft.com/kb/3054853)의 일부로 릴리스된 버전 15.0.4727.1000부터 시작된 Office 2013도 마찬가지입니다.
 
@@ -165,6 +165,6 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

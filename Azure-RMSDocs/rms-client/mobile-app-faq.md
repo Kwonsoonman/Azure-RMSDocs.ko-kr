@@ -5,7 +5,7 @@ keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/06/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f478f65eecb47b6d0f41ece413ce576b6935b916
-ms.openlocfilehash: 9a03ccf3326b51f5c9c19102a1e9d003562cead6
+ms.sourcegitcommit: 0dc8e4d772ef65e3425203e78c5e569f4e107b8e
+ms.openlocfilehash: a6900a6dadd0c323958f42ff441cbcf936a0f582
 
 
 ---
@@ -33,6 +33,8 @@ ms.openlocfilehash: 9a03ccf3326b51f5c9c19102a1e9d003562cead6
 ## <a name="can-i-open-pdf-files-that-are-in-sharepoint-protected-libraries-and-onedrive-for-business"></a>SharePoint 보호된 라이브러리 및 비즈니스용 OneDrive에 있는 PDF 파일을 열 수 있나요?
 
 예, 다른 사람이 SharePoint 및 비즈니스용 OneDrive를 통해 공유한 보호된 PDF 파일을 열 수 있습니다. 링크를 탭하고 이 앱을 선택하여 필요한 파일을 열 수 있습니다. 
+
+이 앱을 실행하면 SharePoint 및 비즈니스용 OneDrive 외부에서 보호된 PDF 파일(보호된 PDF 및 .ppdf 파일)도 열 수 있습니다.
 
 ## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>모바일 장치에서 Azure Information Protection 앱을 실행할 수 있나요?
 
@@ -73,6 +75,6 @@ Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

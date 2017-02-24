@@ -1,31 +1,27 @@
 ---
 title: "빠른 시작 자습서 3단계 | Azure Information Protection"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 3단계로 약 30분 만에 완료해야 합니다."
+description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서 3단계입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ee60db5b9ede65042e9121567cce48e204f25d27
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: 559136e48a709b91c544352c38a5bbb40d66261f
 
 
 ---
 
-# <a name="step-3-install-the-client-and-application"></a>3단계: 클라이언트 및 응용 프로그램 설치 
+# <a name="step-3-install-the-client"></a>3단계: 클라이언트 설치
 
 >*적용 대상: Azure Information Protection*
 
-이 단계에서는 방금 구성한 정책이 Windows PC에 다운로드되고 Office 응용 프로그램에 레이블이 표시되도록 먼저 Azure Information Protection 클라이언트를 설치합니다.
-
-두 번째로 문서를 메일로 안전하게 공유하고 문서 사용 방식을 추적할 수 있도록 Rights Management 공유 응용 프로그램을 설치합니다. 
-
-두 설치 모두 Office 응용 프로그램과 통합되며, 현재 설치는 개별적으로 해야 합니다.
+이 단계에서는 방금 구성한 정책이 Windows PC에 다운로드되고 Office 응용 프로그램에 레이블이 표시되도록 Azure Information Protection 클라이언트를 설치합니다.
 
 
 ## <a name="install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 설치
@@ -36,26 +32,17 @@ ms.openlocfilehash: ee60db5b9ede65042e9121567cce48e204f25d27
 
     이 자습서에서는 방금 구성한 정책이 Azure에서 다운로드되고 설치된 경우 데모 정책을 바꿀 것이므로 데모 정책 설치 옵션의 선택 여부는 중요하지 않습니다. 그러나 Azure Information Protection에 연결하지 않고 기본 레이블을 경험해 보려는 경우 데모 정책 옵션을 사용할 수 있습니다. 
 
-## <a name="install-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램 설치 
-
-1. Microsoft 웹 사이트의 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
-
-2. **컴퓨터** 섹션에서 **Windows용 RMS 앱** 의 아이콘을 클릭하고 **Setup.exe** 파일을 저장하여 Microsoft Rights Management 공유 응용 프로그램을 설치합니다.
-
-3. **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료될 때까지 기다립니다. 그런 다음 컴퓨터를 다시 시작하라는 메시지가 표시되면 **다시 시작**을 클릭하거나, **닫기**를 클릭하여 설치를 완료합니다.
-
-
 ## <a name="verify-the-installations"></a>설치 확인
 
 Word와 새 빈 문서를 열어 설치가 완료되었는지 확인합니다(이번에는 저장하지 않음). 사용자 이름과 암호를 입력하라는 메시지가 표시되면 전역 관리자 계정의 세부 정보를 입력합니다. 
 
-문서가 로드되면 다음과 같은 세 가지 새로운 사항을 보게 됩니다.
+이번이 처음으로 클라이언트를 설치하는 경우에만 기본 지침이 포함된 **축하합니다.** 페이지가 표시됩니다. 내용을 읽은 후에 **닫기**를 클릭합니다.
+
+문서가 로드되면 다음과 같은 두 가지 새로운 사항을 보게 됩니다.
 
 - **홈** 탭의 새 **보호** 그룹과 **보호**라는 레이블이 지정된 단추
 
-    **보호** > **도움말 및 피드백**을 클릭하고 **Microsoft Azure Information Protection** 대화 상자에서 클라이언트 상태를 확인합니다. **Information Protection policy is installed**(Information Protection 정책이 설치됨)와 최근 연결 시간이 표시되어야 합니다. 표시된 사용자 이름이 테넌트에 대해 올바른지 확인합니다.
-
-- **홈** 탭의 새 **RMS** 그룹과 **보호된 항목 공유**라는 레이블이 지정된 단추
+    **보호** > **도움말 및 피드백**을 클릭하고 **Microsoft Azure Information Protection** 대화 상자에서 클라이언트 상태를 확인합니다. **연결 방식**과 사용자 이름이 표시됩니다. 또한 마지막 연결의 최근 시간 및 날짜와 Information Protection 정책이 설치된 시기도 표시됩니다. 표시된 사용자 이름이 테넌트에 대해 올바른지 확인합니다.
 
 - 리본 아래에 새로운 표시줄인 Information Protection 표시줄이 표시됩니다. 제목 **Sensitivity**(민감도)와 구성한 기본 레이블 **Internal**(내부)이 표시됩니다. 
     
@@ -65,9 +52,8 @@ Word와 새 빈 문서를 열어 설치가 완료되었는지 확인합니다(�
 
 |자세한 정보가 필요한 경우|추가 정보|
 |--------------------------------|--------------------------|
-|Azure Information Protection 클라이언트 설치 정보|[Azure Information Protection 클라이언트 설치](../rms-client/info-protect-client.md)|
-|Rights Management 공유 응용 프로그램 설치 정보 및 사용자 지침 정보|[Rights Management 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)|
-|스크립트를 이용한 Windows용 Rights Management 공유 응용 프로그램 설치 정보 및 자세한 기술 정보|[Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)|
+|Azure Information Protection 클라이언트 설치 정보|[Azure Information Protection 클라이언트 다운로드 및 설치](../rms-client/install-client-app.md)|
+|Azure Information Protection 클라이언트에 대한 관리자 지침|[Azure Information Protection 클라이언트 관리자 가이드](../rms-client/client-admin-guide.md)|
 
 
 >[!div class="step-by-step"]
@@ -77,6 +63,6 @@ Word와 새 빈 문서를 열어 설치가 완료되었는지 확인합니다(�
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

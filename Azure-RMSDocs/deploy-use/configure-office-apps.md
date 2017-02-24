@@ -4,7 +4,7 @@ description: "관리자가 Azure Information Protection의 Azure Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: a471dd917aab193ddfe5a58cbfa4f5082e6a049d
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: f69fd9629afaafbf6f78b52f65b3bb69eaf19c9e
 
 
 ---
@@ -29,17 +29,17 @@ ms.openlocfilehash: a471dd917aab193ddfe5a58cbfa4f5082e6a049d
 ## <a name="office-2016-and-office-2013"></a>Office 2016 및 Office 2013
 이러한 이후 버전의 Office는 기본적으로 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 Outlook Web App과 같은 응용 프로그램에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 사용자는 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 Office 응용 프로그램에 로그인하기만 하면 되며, 로그인하면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
 
-그러나 사용자가 Office 추가 기능의 이점을 얻을 수 있도록 권한 관리 공유 응용 프로그램으로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성](configure-sharing-app.md)을 참조하세요.
+그러나 사용자가 Office 추가 기능 및 추가 파일 형식 지원에 따른 이점을 얻을 수 있도록 Azure Information Protection 클라이언트로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
 ## <a name="office-2010"></a>Office 2010
-클라이언트 컴퓨터가 Azure Rights Management 서비스를 Office 2010과 함께 사용하도록 하려면 클라이언트 컴퓨터에 Windows용 Rights Management 공유 응용 프로그램을 설치해야 합니다. 사용자가 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 로그인하는 것 외에 추가 구성은 필요하지 않으며, 로그인하면 파일을 보호하고 다른 사용자가 보호한 파일을 사용할 수 있습니다.
+클라이언트 컴퓨터가 Azure Rights Management 서비스를 Office 2010과 함께 사용하도록 하려면 클라이언트 컴퓨터에 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램을 설치해야 합니다. 사용자가 [!INCLUDE[o365_1](../includes/o365_1_md.md)] 자격 증명을 사용하여 로그인하는 것 외에 추가 구성은 필요하지 않으며, 로그인하면 파일을 보호하고 다른 사용자가 보호한 파일을 사용할 수 있습니다.
 
-Rights Management 공유 응용 프로그램에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성](configure-sharing-app.md)을 참조하세요.
+Azure Information Protection 클라이언트에 대한 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

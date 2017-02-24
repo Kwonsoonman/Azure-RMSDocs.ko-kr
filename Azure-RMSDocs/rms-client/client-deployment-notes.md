@@ -4,7 +4,7 @@ description: "MSIPC 클라이언트라고도 하는 Rights Management Service �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/28/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d40a8b2062b0b8ccb2dd6115d179e45e64181798
+ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
+ms.openlocfilehash: ff9f1ba390fcad0569972fc65a2425266fd918b4
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: d40a8b2062b0b8ccb2dd6115d179e45e64181798
 
 RMS 클라이언트(권한 관리 서비스 클라이언트) 버전 2는 MSIPC 클라이언트로도 알려져 있습니다. 이 제품은 온-프레미스 또는 클라우드에서 Microsoft 권한 관리 서비스와 통신하는 Windows 컴퓨터용 소프트웨어로, 조직의 경계 내에서 또는 관리되는 경계 외부에서 응용 프로그램 및 장치를 통과하는 정보에 대한 액세스 및 사용을 보호하는 데 도움이 됩니다. 
 
-[Windows용 Rights Management 공유 응용 프로그램](sharing-app-windows.md)과 함께 제공되는 RMS 클라이언트는 해당 사용권 계약에 대한 승인 및 동의가 있을 때 타사 소프트웨어와 함께 자유롭게 배포할 수 있는 [선택적 다운로드](http://www.microsoft.com/download/details.aspx?id=38396)로 제공되므로 클라이언트는 Rights Management Service에 의해 보호된 콘텐츠를 보호하고 사용할 수 있습니다.
+[Windows용 Azure Information Protection 클라이언트](aip-client.md)와 함께 제공되는 RMS 클라이언트는 해당 사용권 계약에 대한 승인 및 동의가 있을 때 타사 소프트웨어와 함께 자유롭게 배포할 수 있는 [선택적 다운로드](http://www.microsoft.com/download/details.aspx?id=38396)로 제공되므로 클라이언트는 Rights Management Service에 의해 보호된 콘텐츠를 보호하고 사용할 수 있습니다.
 
 
 ## <a name="redistributing-the-rms-client"></a>RMS 클라이언트 재배포
@@ -94,7 +94,7 @@ RMS 클라이언트는 x86 및 x64 컴퓨팅 플랫폼에서 지원됩니다.
 다음 섹션에는 RMS 클라이언트에 대한 설정 정보가 포함되어 있습니다. 이 정보는 RMS 클라이언트를 사용하는 서비스 또는 응용 프로그램에 문제가 있는 경우에 유용할 수 있습니다.
 
 > [!NOTE]
-> 일부 설정은 RMS 지원 응용 프로그램이 클라이언트 모드 응용 프로그램(예: Microsoft Word 및 Outlook 또는 RMS 공유 응용 프로그램)으로 실행되는지 또는 서버 모드 응용 프로그램(예: SharePoint 및 Exchange)으로 실행되는지에 따라 달라집니다. 다음 표에서는 이러한 설정이 각각 **클라이언트 모드** 및 **서버 모드**로 구분되어 있습니다.
+> 일부 설정은 RMS 지원 응용 프로그램이 클라이언트 모드 응용 프로그램(예: Microsoft Word 및 Outlook 또는 Windows 탐색기를 통한 Azure Information Protection 클라이언트)으로 실행되는지 또는 서버 모드 응용 프로그램(예: SharePoint 및 Exchange)으로 실행되는지에 따라 달라집니다. 다음 표에서는 이러한 설정이 각각 **클라이언트 모드** 및 **서버 모드**로 구분되어 있습니다.
 
 ### <a name="where-the-rms-client-stores-licenses-on-client-computers"></a>RMS 클라이언트가 클라이언트 컴퓨터에서 라이선스를 저장하는 위치
 RMS 클라이언트는 로컬 디스크에 라이선스를 저장하고 Windows 레지스트리의 일부 정보를 캐시하기도 합니다.
@@ -261,6 +261,6 @@ RMS 클라이언트가 Active Directory를 쿼리하여 SCP를 찾을 수 없으
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: "빠른 시작 자습서 1단계 | Azure Information Protection"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 1단계로 약 30분 만에 완료해야 합니다."
+description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서 1단계입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -11,8 +11,8 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 1b9a65619e2cbe9def71379dffc6c1df1729cdfa
+ms.sourcegitcommit: 420da63412f10431d29c01bad317c69cf72b66ad
+ms.openlocfilehash: a2631af6bf972a8c88d37e42149b90fb96f71763
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 1b9a65619e2cbe9def71379dffc6c1df1729cdfa
 > [!NOTE]
 >테넌트에 대해 이미 Azure 권한 관리를 활성화한 경우 바로 [다음 단계](infoprotect-tutorial-step2.md)로 이동하세요. 
 
-Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요한 문서와 전자 메일을 보호하고, 다른 사용자와 공유할 때 사용되는 방식을 추적할 수 있습니다. 이 서비스를 활성화하는 방법으로 Windows PowerShell을 사용하거나, 관리 포털을 통해 탐색하는 방법 등 여러 가지가 있습니다.
+Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요한 문서와 전자 메일을 보호하고, 보호된 문서가 다른 사용자와 공유할 때 사용되는 방식을 추적할 수 있습니다. 이 서비스를 활성화하는 방법으로 Windows PowerShell을 사용하거나, 관리 포털을 통해 탐색하는 방법 등 여러 가지가 있습니다.
 
 이 자습서에서는 Office 365 클래식 포털 및 Office 365 관리 센터 미리 보기용 페이지와 동일한 Office 365용 활성화 페이지로 바로 이동하겠습니다. 
 
@@ -59,6 +59,6 @@ Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

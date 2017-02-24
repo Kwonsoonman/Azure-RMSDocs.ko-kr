@@ -1,10 +1,10 @@
 ---
 title: "분류 및 레이블 지정에 대한 질문과 대답 | Azure Information Protection"
-description: "Azure Information Protection의 미리 보기 릴리스에 대한 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요."
+description: "Azure Information Protection의 현재 릴리스에 대한 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 8bb0058940eaf1663ec82b38bc37c33400ea8b87
+ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
+ms.openlocfilehash: ad94507f4aea48172ed3c3f74f6d12e3c67cc18e
 
 
 ---
@@ -27,7 +27,9 @@ Azure Information Protection에서 특별히 분류 및 레이블 지정에 대�
 
 ## <a name="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection"></a>Azure Information Protection에서 분류 기능으로 수행할 수 있는 작업은 무엇인가요?
 
-Azure Information Protection 클라이언트는 데이터에 할당된 분류 레이블을 보고 수정할 수 있는 Information Protection 표시줄을 Microsoft Office 응용 프로그램에 추가합니다. 분류는 수동으로 수행하거나, 자동으로 적용(권장 사항)할 수 있습니다. 지정한 분류의 경우 데이터는 Rights Management를 사용하여 보호할 수 있습니다.  
+Azure Information Protection 클라이언트는 Office 문서 및 전자 메일을 보고 분류 레이블을 할당할 수 있는 Information Protection 표시줄을 Microsoft Office 응용 프로그램에 추가합니다.
+
+중요한 데이터가 검색되면 기본적으로 수동으로 분류를 적용하는 것이 좋으며 자동으로 적용될 수도 있습니다. 이러한 레이블은 Rights Management 서비스를 사용하여 데이터를 자동으로 보호할 수도 있습니다. Office 문서와 전자 메일 외에도, 파일 탐색기에서 파일, 여러 개의 파일 또는 폴더를 마우스 오른쪽 단추로 클릭하여 다른 형식의 파일을 분류하고 보호할 수 있습니다. 또는 대량으로 더 빠르게 분류하고 보호할 수 있게 명령줄에서 PowerShell을 사용하여 이 작업을 수행할 수도 있습니다.
 
 분류 레이블 및 동작은 Azure 포털에서 구성합니다. 기본 제공 정책을 사용하여 Azure Information Protection을 매우 빠르게 평가하거나 고유한 정책을 완전히 사용자 지정할 수 있습니다. 사용자에게 표시하는 분류 레이블의 색, 이름 및 순서를 변경할 수 있습니다. 도구 설명과 머리글, 바닥글, 워터마크 등의 분류 시각적 표시를 구성할 수도 있습니다.
 
@@ -47,7 +49,7 @@ Azure Information Protection 클라이언트는 데이터에 할당된 분류 �
 
 - 파트너 및 개발자용 SDK를 사용할 수 없습니다.
 
-위에 나와 있는 제한 사항 중 일부는 현재 미리 보기에서 사용 가능합니다. 자세한 내용은 블로그 공지 게시물 [Azure Information Protection&12;월 미리 보기 제공](https://blogs.technet.microsoft.com/enterprisemobility/2016/12/07/azure-information-protection-december-preview-now-available/)을 참조하세요.
+위에 나열된 일부 제한 기능이 새 클라이언트의&2;월 릴리스에서는 사용할 수 있게 됩니다. 자세한 내용은 블로그 게시물 알림을 참조하세요.
 
 
 ## <a name="do-i-need-to-be-a-global-admin-to-try-azure-information-protection"></a>Azure Information Protection을 사용하려면 전역 관리자여야 하나요?
@@ -78,7 +80,7 @@ Azure Information Protection에서는 파일과 메일에 영구 레이블 및 �
 
 새 콘텐츠와 기존 콘텐츠에 대한 변경 내용 둘 다에 대해 Azure Information Protection 정책 작업은 문서가 저장되고 메일이 전송될 때 적용됩니다.
 
-미리 보기 클라이언트가 있는 경우 파일 탐색기의 기존 파일을 빠르게 분류하고 선택적으로 보호할 수도 있습니다. 
+최신 버전의 클라이언트가 있는 경우 파일 탐색기의 기존 파일을 빠르게 분류하고 선택적으로 보호할 수도 있습니다. 
 
 ## <a name="can-i-use-azure-information-protection-for-classification-only-without-enforcing-encryption-and-restricting-usage-rights"></a>암호화 적용 및 사용 권한 제한 없이 분류 목적으로만 Azure Information Protection을 사용할 수 있나요?
 
@@ -90,7 +92,7 @@ Azure 포털에서 "신용 카드 번호" 또는 "주민등록번호"와 같은 
 
 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)에서 이러한 예제를 확인할 수 있습니다. 
 
-분류의 정확도는 조건을 기반으로 하는 분류 규칙을 구성하는 방법에 따라 달라집니다. 현재 조건에서는 텍스트 패턴 및 정규식이 지원됩니다. 테스트할 수 있는 제안된 몇 가지 예제와 함께 미리 보기에서 사용할 수 있는 각 옵션에 대한 설명은 [Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](../deploy-use/configure-policy-classification.md)을 참조하세요. 문서가 저장되거나 메일이 전송되면 검색이 실행됩니다.
+분류의 정확도는 조건을 기반으로 하는 분류 규칙을 구성하는 방법에 따라 달라집니다. 현재 조건에서는 텍스트 패턴 및 정규식이 지원됩니다. 테스트할 수 있는 제안된 몇 가지 예제와 함께 사용할 수 있는 각 옵션에 대한 설명은 [Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](../deploy-use/configure-policy-classification.md)을 참조하세요. 문서가 저장되거나 메일이 전송되면 검색이 실행됩니다.
 
 최상의 사용자 환경과 비즈니스 연속성 보장을 위해 완전한 자동 작업보다는 사용자 권장 작업으로 시작하는 것이 좋습니다. 이렇게 하면 사용자가 레이블 지정 또는 보호 작업을 수락하거나 이러한 제안을 재정의할 수 있습니다.   
 
@@ -106,8 +108,7 @@ Azure 포털에서 "신용 카드 번호" 또는 "주민등록번호"와 같은 
 
 ## <a name="can-i-remove-classification-from-a-file"></a>파일에서 분류를 제거할 수 있나요?
 
-예. 파일에서 분류를 제거하려면 Office 응용 프로그램에서 파일을 열고 Information Protection 표시줄에서 **Edit label**(레이블 편집) 아이콘을 클릭하고 **Remove label**(레이블 제거) 아이콘을 클릭한 다음 **OK**(확인)를 클릭하여 작업을 확인합니다. 
-
+예. 이 내용은 사용자 가이드 [파일 및 전자 메일에서 분류 레이블 및 보호 제거](../rms-client/client-remove-label-protection.md)에 설명되어 있습니다. 
 
 ## <a name="can-i-prompt-users-to-justify-why-they-are-changing-the-classification-level"></a>사용자에게 분류 수준을 변경하는 이유를 묻는 메시지를 표시할 수 있나요?
 
@@ -133,7 +134,7 @@ Azure Portal에서 지정한 분류 수준에 따라 자동으로 콘텐츠를 �
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
 
-Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능으로, Azure Information Protection 분류와는 독립적으로 구현됩니다. 그러나 사용자가 Outlook Web App을 사용하여 전자 메일을 분류할 때와 일부 모바일 메일 응용 프로그램을 사용할 때 Azure Information Protection 분류와 해당하는 레이블 표시가 자동으로 추가되도록 두 솔루션을 통합할 수 있습니다. 이 경우 Exchange에서 분류를 추가하면 Azure Information Protection 클라이언트의 미리 보기 버전에서 이 분류에 해당하는 레이블 설정을 적용합니다.
+Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능으로, Azure Information Protection 분류와는 독립적으로 구현됩니다. 그러나 사용자가 Outlook Web App을 사용하여 전자 메일을 분류할 때와 일부 모바일 메일 응용 프로그램을 사용할 때 Azure Information Protection 분류와 해당하는 레이블 표시가 자동으로 추가되도록 두 솔루션을 통합할 수 있습니다. 이 경우 Exchange에서 분류를 추가하면 Azure Information Protection 클라이언트에서 이 분류에 해당하는 레이블 설정을 적용합니다.
 
 Outlook Web App에서는 Azure Information Protection 및 보호가 아직 기본적으로 지원되지는 않지만, 이와 동일한 기술을 사용하면 데스크톱 Outlook 클라이언트 외에 이 전자 메일 클라이언트에서도 레이블을 사용할 수 있습니다.
 
@@ -152,7 +153,7 @@ Outlook Web App에서는 Azure Information Protection 및 보호가 아직 기�
 
 - Exchange 규칙이 Exchange 분류를 검색한 다음 그에 따라 메시지 헤더를 수정하여 Azure Information Protection 분류를 추가합니다.
 
-- Azure Information Protection 클라이언트의 미리 보기 버전을 실행 중인 받는 사람이 Outlook에서 전자 메일을 볼 때 할당된 Azure Information Protection 레이블과 그에 해당하는 전자 메일 머리글, 바닥글 또는 워터마크가 표시됩니다. 
+- Azure Information Protection 클라이언트를 실행 중인 받는 사람이 Outlook에서 전자 메일을 볼 때 할당된 Azure Information Protection 레이블과 그에 해당하는 전자 메일 머리글, 바닥글 또는 워터마크가 표시됩니다. 
 
 Azure Information Protection 레이블이 권한 관리 보호를 적용하는 경우에는 메시지 보안을 수정하는 옵션을 선택하여 규칙 구성에 권한 관리 보호를 추가하고, 권한 보호를 적용한 후에 RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
 
@@ -166,11 +167,9 @@ Azure Information Protection에서는 일반 텍스트 레이블을 포함하는
 
 ## <a name="how-does-document-tracking-and-revocation-work-for-azure-information-protection"></a>문서 추적 및 취소는 Azure Information Protection에 대해 어떻게 작동하나요?
 
-Azure Information Protection을 사용하여 분류하고 보호하는 파일에 대한 문서 추적 기능은 Azure Rights Management 보호 및 RMS 공유 응용 프로그램과 호환됩니다. Azure Information Protection 클라이언트(버전 1.0.233 이상)를 사용하여 문서 추적 사이트에 액세스할 수도 있습니다. 
+Azure Information Protection을 사용하여 분류하고 보호하는 파일에 대한 문서 추적 기능은 Azure Rights Management 클라이언트의 최신 릴리스(버전 1.3.155.2 이상)에서 작동됩니다. 
 
-- Office 응용 프로그램의 **홈** 탭, **보호** 그룹에서 **보호** > **사용 현황 추적**을 클릭합니다. 
-
-자세한 내용은 [RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)를 참조하세요.
+자세한 내용은 [Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지](../rms-client/client-track-revoke.md)를 참조하세요.
 
 ## <a name="can-i-control-which-users-can-use-azure-information-protection-to-classify-and-protect-content"></a>Azure Information Protection을 사용하여 콘텐츠를 분류하고 보호할 수 있는 사용자를 제어할 수 있나요?
 
@@ -200,13 +199,15 @@ Azure Information Protection에 의해 분류된 파일과 메일은 Azure Infor
 
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>Azure Information Protection에 대한 문제를 보고하거나 의견을 보낼 수 있나요?
 
-Azure Information Protection에 문제가 발생하고 현재 클라이언트 릴리스를 사용 중인 경우에는 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **Send feedback**(의견 보내기)을 클릭합니다. 그러면 Information Protection 팀에 메일이 전송되고 자동으로 PC에서 로그 파일이 첨부되어 문제 진단에 도움을 줍니다. 
+기술 지원에 대해서는 표준 지원 채널을 사용하거나 [Microsoft 지원에 문의](information-support.md#to-contact-microsoft-support)하세요.
 
-질문이나 의견이 있으면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)를 사용하세요. 
+향상된 기능 및 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **Send feedback**(의견 보내기)을 클릭합니다. 그러면 Information Protection 팀에 메일이 전송되고 자동으로 PC에서 로그 파일이 첨부됩니다. 
+
+또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

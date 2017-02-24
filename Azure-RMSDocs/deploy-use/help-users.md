@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure RMS(Azure Rights Management)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b4ba043aa351b4b6b118a83bd5fe54898ea17492
+ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
+ms.openlocfilehash: 0af15bf3238d020b1ee45b45bc780256c88b5e55
 
 
 ---
@@ -61,20 +61,16 @@ ms.openlocfilehash: b4ba043aa351b4b6b118a83bd5fe54898ea17492
 
 사용자가 중요한 문서와 전자 메일을 보호할 수 있도록 다음 섹션에서 응용 프로그램 관련 정보를 참조하세요.
 
-## <a name="using-information-protection-with-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에서 정보 보호 기능 사용
-사용자가 Office 2010을 사용하는 경우 콘텐츠를 보호하고 보호된 콘텐츠를 사용하려면 Rights Management(RMS) 공유 응용 프로그램이 필요합니다. 그러나 Azure Rights Management 서비스를 지원하는 모든 컴퓨터와 모바일 장치에서도 공유 응용 프로그램을 사용하는 것이 좋습니다.
+## <a name="using-information-protection-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 정보 보호 사용
+Azure Information Protection 클라이언트는 Office 2010을 사용하는 사용자가 보호된 문서 및 전자 메일을 보호하고 사용하는 데 필요할 수 있지만 컴퓨터 및 모바일 장치에도 권장됩니다.
 
-RMS 공유 응용 프로그램은 사용자가 보다 쉽게 중요한 문서를 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 하고 필요한 경우 액세스 권한을 취소할 수 있도록 합니다.
+Azure Information Protection 클라이언트는 사용자가 보다 쉽게 중요한 문서를 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 하고 필요한 경우 액세스 권한을 취소할 수 있도록 합니다.
 
-Windows 컴퓨터에서 이 응용 프로그램을 사용하는 지침은 [Rights Management 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)를 참조하세요.
+이 Windows 컴퓨터용 클라이언트를 사용하기 위한 지침은 [Azure Information Protection 클라이언트 사용자 가이드](../rms-client/client-user-guide.md)를 참조하세요.
 
-모바일 장치의 경우 [모바일 플랫폼용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://technet.microsoft.com/dn451248)를 참조하세요.
-
-> [!TIP]
-> 개괄적인 예제 시나리오와 스크린샷을 보려면 [사용자가 모바일 사용자와 안전하게 첨부 파일 공유](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) 섹션을 참조하세요.
 
 ## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용
-Azure Rights Management 공유 응용 프로그램을 설치하지 않은 상태에서 Rights Management 서비스를 사용하는 경우 더욱 쉽게 파일을 보호할 수 있게 해 주는, 리본의 **보호 상태로 공유** 단추 또는 파일 탐색기의 **바로 보호**가 표시되지 않습니다. 이러한 사용자는 다음 지침을 따라야 합니다.
+Azure Rights Management 서비스를 사용하고 있으며 Azure Information Protection 클라이언트를 설치하지 않은 경우 파일을 보다 쉽게 보호할 수 있도록 하는 Office 데스크톱 앱의 Azure Information Protection 표시줄, 리본의 **보호** 단추 또는 파일 탐색기의 **분류 및 보호** 옵션이 표시되지 않습니다. 이러한 사용자는 다음에 나오는 단계와 유사한 지침을 따라야 합니다.
 
 > [!TIP]
 > 이러한 응용 프로그램에서 정보 보호 기능을 사용하기 위한 응용 프로그램별 도움말과 지침을 찾으려면 **IRM** 및 응용 프로그램 이름과 버전을 검색합니다.
@@ -117,6 +113,6 @@ Azure Rights Management 공유 응용 프로그램을 설치하지 않은 상태
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

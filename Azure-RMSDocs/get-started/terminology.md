@@ -1,10 +1,10 @@
 ---
-title: "Azure Information Protection에서 사용되는 용어 | Azure Information Protection"
+title: "Azure Information Protection에 사용되는 용어"
 description: "Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가 헷갈리시나요? Azure Information Protection에 관련이 있거나 이 서비스 컨텍스트에서 사용될 때 특정 의미를 지니는 용어 및 약어의 정의를 여기서 확인해 보세요."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: a5706c9cf8b81ec761865a800761c69584659578
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
 
 
 ---
@@ -50,7 +50,7 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 |정보 권한 관리|흔히 약어로 *IRM*이라고 합니다.<br /><br />Office 서비스(예: Exchange Server, Word 및 SharePoint Online)와 함께 Microsoft Rights Management 서비스를 지원하는 기능을 설명하는 데 사용되는 용어입니다.|
 |IRM|*정보 권한 관리*를 참조하세요.|
 |MSDRM|경우에 따라 RMS 클라이언트 1.0을 지칭하는 용어로 사용되며, RMS 클라이언트 1.0은 최신 클라이언트인 MSIPC로 바뀌었습니다. 이 이전 클라이언트는 RMS SDK 1.0으로 개발된 응용 프로그램과 Office 2010 및 Office 2007, Exchange 2010 및 Exchange 2013, SharePoint 2010 및 SharePoint 2007을 지원합니다.|
-|MSIPC|경우에 따라 RMS 클라이언트 2.0을 지칭하는 용어로 사용되며, RMS 클라이언트 2.0은 이전 RMS 클라이언트인 MSDRM을 대체합니다. 이 나중 클라이언트는 RMS SDK 2.0으로 개발한 응용 프로그램을 지원하고 Office 2016 및 Office 2013, SharePoint 2013, RMS 공유 응용 프로그램을 지원합니다.|
+|MSIPC|경우에 따라 RMS 클라이언트 2.0을 지칭하는 용어로 사용되며, RMS 클라이언트 2.0은 이전 RMS 클라이언트인 MSDRM을 대체합니다. 이 나중 클라이언트는 RMS SDK 2.0으로 개발한 응용 프로그램을 지원하고 Office 2016 및 Office 2013, SharePoint 2013, RMS 공유 응용 프로그램과 Azure Information Protection 클라이언트를 지원합니다.|
 |기본 보호|무단 사용자가 파일을 열지 못하도록 하고 더 엄격한 정책(예: 읽기 전용 및 인쇄 금지)도 강제 적용할 수 있는 모든 지원 응용 프로그램에서 사용 가능한 보호 수준입니다. 또한 이 보호 수준은 파일이 다른 사용자에게 전달되거나 다른 사용자가 액세스할 수 있는 공용 위치에 저장되는 경우에도 파일에 유지됩니다.|
 |.pfile|권한 관리 서비스가 일반적으로 보호하는 모든 파일에 추가되는 파일 이름 확장명입니다.|
 |.ppdf|메일로 공유하는 파일(Word, Excel, PowerPoint 또는 PDF)을 모든 장치에서 읽을 수 있도록(편집은 안 됨) 권한 관리 서비스에서 파일의 PDF 복사본을 자동으로 만들 때 사용하는 파일 이름 확장명입니다.|
@@ -59,7 +59,7 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 |publish|무단 액세스 및 사용으로부터 파일을 보호하기 위해 파일에 보호 조치를 취하는 것입니다.|
 |권한 관리 커넥터|Azure Rights Management 서비스로 데이터를 보호하기 위해 온-프레미스 서비스(예: Exchange Server 및 SharePoint)에 대해 배포할 수 있는 아웃바운드 프록시 릴레이입니다.|
 |권한 관리 서비스|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]의 클라우드 버전([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)])과 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]의 온-프레미스 버전(AD RMS) 둘 다에 적용되는 일반 용어입니다.|
-|Rights Management 공유 응용 프로그램|Windows 및 가장 널리 사용되는 모바일 장치용의 다운로드 가능한 선택적 응용 프로그램으로서 내부 및 메일을 통해 파일이 안전하게 공유되도록 합니다.|
+|Rights Management 공유 응용 프로그램|현재 Azure Information Protection 클라이언트로 대체되며, Windows 및 가장 널리 사용되는 모바일 장치용의 선택적 응용 프로그램으로서 내부 및 메일을 통해 파일이 안전하게 공유되도록 합니다.|
 |RMS|*Rights Management Services*를 참조하세요.|
 |RMS 커넥터|*Rights Management 커넥터*를 참조하세요.|
 |개인용 RMS|조직이 Office 365 또는 Azure Active Directory 구독을 보유하고 있지 않은 경우 사용자가 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 사용할 수 있도록 하는 무료 구독입니다.|
@@ -73,6 +73,6 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

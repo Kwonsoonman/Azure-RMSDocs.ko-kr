@@ -1,18 +1,18 @@
 ---
-title: "빠른 시작 자습서 | Azure Information Protection"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서로 약 30분 만에 완료해야 합니다."
+title: "Azure Information Protection 빠른 시작 자습서"
+description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 2a601d075245280d30b78d9c38bbb09e6387f8be
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 78d019adfeed4f2bc9cb0924fa8f9b932862819a
 
 
 ---
@@ -21,9 +21,9 @@ ms.openlocfilehash: 2a601d075245280d30b78d9c38bbb09e6387f8be
 
 >*적용 대상: Azure Information Protection*
 
-이 자습서를 사용하여 30분 정도에 완료할 수 있는 5단계를 통해 Azure Information Protection을 빠르게 사용해 보세요. 이 자습서는 Azure Information Protection에서 제공하는 기능 중 일부 경우를 빠르게 보여 주는 자가 주도형 데모로 만들어졌습니다. 사용 가능한 모든 기능이 포함되어 있지는 않으므로 조직에 대한 배포 가이드 목적이 아닙니다. 조직에 대한 Azure Information Protection을 배포하려면 [배포 로드맵 설명서](../plan-design/deployment-roadmap.md)를 참조하세요. 
+이 자습서를 사용하여 20분 정도에 완료할 수 있는 5단계를 통해 Azure Information Protection을 빠르게 사용해 보세요. 이 자습서는 Azure Information Protection에서 제공하는 기능 중 일부 경우를 빠르게 보여 주는 자가 주도형 데모로 만들어졌습니다. 사용 가능한 모든 기능이 포함되어 있지는 않으므로 조직에 대한 배포 가이드 목적이 아닙니다. 조직에 대한 Azure Information Protection을 배포하려면 [배포 로드맵 설명서](../plan-design/deployment-roadmap.md)를 참조하세요. 
 
-이 자습서는 IT 관리자 및 컨설턴트를 대상으로 하며, 목표는 조직의 엔터프라이즈 정보 보호 솔루션으로 Azure Information Protection을 평가하는 데 도움이 되는 것입니다. 프로덕션 환경에서 Information Protection 정책을 구성하며 사용자용 클라이언트 및 응용 프로그램을 설치하는 단계는 관리자가 수행합니다. 문서 레이블을 지정하고 전자 메일을 통해 문서를 안전하게 공유하고 최종 사용자가 수행하는 작업을 추적하는 단계입니다. 이 자습서에는 조직의 데이터를 분류하고 레이블을 지정하며 보호하는 일반적인 종단 간 시나리오를 설명하기 위해 모든 단계가 포함되어 있습니다. 
+이 자습서는 IT 관리자 및 컨설턴트를 대상으로 하며, 목표는 조직의 엔터프라이즈 정보 보호 솔루션으로 Azure Information Protection을 평가하는 데 도움이 되는 것입니다. 프로덕션 환경에서 Information Protection 정책을 구성하며 사용자용 클라이언트를 설치하는 단계는 관리자가 수행합니다. 문서 레이블을 지정하고 전자 메일을 통해 문서를 안전하게 공유하고 최종 사용자가 수행하는 작업을 추적하는 단계입니다. 이 자습서에는 조직의 데이터를 분류하고 레이블을 지정하며 보호하는 일반적인 종단 간 시나리오를 설명하기 위해 모든 단계가 포함되어 있습니다. 
 
 Azure Information Protection을 사용하여 이 자습서를 완료하는 데 문제가 있거나 이에 대한 다른 사용자의 의견을 확인하려면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)를 참조하세요.
 
@@ -53,6 +53,6 @@ Azure Information Protection을 사용하여 이 자습서를 완료하는 데 �
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO4-->
 
 

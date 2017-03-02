@@ -1,10 +1,10 @@
 ---
-title: "Azure Information Protection에 대한 요구 사항 - 전체 문서 | Azure Information Protection"
+title: "Azure Information Protection에 대한 요구 사항 - 전체 문서"
 description: "Azure Information Protection을 조직에 배포하기 위한 필수 구성 요소를 식별합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 10cf9371-a61b-495f-9d42-898448806994
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: a71123cd055052e6e4a372a945727063b7c2d666
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 94259046ed2eb78bce9d7ce49a4dc3b9c99d55c3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -286,9 +287,4 @@ Rights Management 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 W
 이러한 온-프레미스 서버에 대해 Rights Management 커넥터를 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

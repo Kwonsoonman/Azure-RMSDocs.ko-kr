@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection 및 AD RMS 비교 | Azure Information Protection"
+title: "Azure Information Protection과 AD RMS 비교"
 description: "AD RMS(Active Directory Rights Management Services)에 대해 잘 알고 있거나 이전에 AD RMS를 배포한 경우 기능 및 요구 사항 측면에서 Azure Information Protection이 어떻게 다른지를 확인하려면"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 1357e2d4f2065f02209b861d00eab133039e2c5a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d0027fa04824b0c1172ef21da4736895965925d7
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,10 +76,5 @@ Azure Information Protection은 Microsoft에서 테넌트 키를 만들고 관�
 AD RMS에서 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

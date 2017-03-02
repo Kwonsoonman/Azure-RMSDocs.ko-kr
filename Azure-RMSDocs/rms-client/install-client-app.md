@@ -1,10 +1,10 @@
 ---
-title: "Azure Information Protection 클라이언트 다운로드 및 설치 | Azure Information Protection"
+title: "Azure Information Protection 클라이언트 다운로드 및 설치"
 description: "문서와 전자 메일을 분류하고 보호할 수 있도록 Windows용 Azure Information Protection 클라이언트를 설치하는 사용자용 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 633f3dfe12828a21943bb5faf6ad9f69b98fc70b
-ms.openlocfilehash: 303ca72fa8753e417b4a06b4cad475559295eb2a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 37bddeed5b81ce1cd6b881db0b71345bcf4cad49
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -31,19 +32,22 @@ ms.openlocfilehash: 303ca72fa8753e417b4a06b4cad475559295eb2a
 
 ## <a name="to-download-and-install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트를 다운로드 및 설치하려면    
 
-1.  Microsoft 웹 사이트의 [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.    
-2. **Azure Information Protection 클라이언트**에 대한 Windows 아이콘을 클릭하고 **AzInfoProtection.exe** 파일을 저장하여 Azure Information Protection 클라이언트를 설치합니다.     
+1.  Microsoft 웹 사이트의 [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
 
-2. 다운로드된 실행 파일을 두 번 클릭합니다. 계속하라는 메시지가 표시되면 **예**를 클릭합니다.    
+    이 페이지에는 사용할 수 있는 인기 있는 모든 장치에 대한 링크가 있으므로 보호된 파일을 여는 데 필요한 경우 뷰어 앱을 쉽게 다운로드할 수 있습니다. 그러나 지금은 파일에 레이블을 지정할 수 있고 파일을 보호할 수 있는 전체 클라이언트를 설치할 것입니다. 
 
-3. **Azure Information Protection 클라이언트 설치** 페이지에서 다음을 수행합니다.     
+2. **Azure Information Protection 클라이언트** 섹션을 찾아 Windows 아이콘을 클릭합니다. **다운로드**를 클릭하고 **AzInfoProtection.exe** 파일을 저장합니다.     
+
+3. 다운로드된 실행 파일을 실행합니다. 계속하라는 메시지가 표시되면 **예**를 클릭합니다.    
+
+4. **Azure Information Protection 클라이언트 설치** 페이지에서 다음을 수행합니다.     
     - 클라우드에 연결할 수 없지만 데모용으로 로컬 정책을 사용하여 Azure Information Protection의 클라이언트 쪽을 확인해 보려면 데모 정책을 설치하는 옵션을 선택합니다. 클라이언트에서 Azure Information Protection 서비스에 연결하면 이 데모 정책이 조직의 Azure Information Protection 정책으로 바뀝니다.    
 
     - 사용 조건에 동의하면 **동의함**을 클릭합니다.    
 
-4. 계속할지 묻는 메시지가 나타나면 **예**를 클릭하고 설치가 완료될 때까지 기다립니다.    
+5. 계속할지 묻는 메시지가 나타나면 **예**를 클릭하고 설치가 완료될 때까지 기다립니다.    
 
-3. **닫기**를 클릭합니다. Azure Information Protection 클라이언트 사용을 시작하기 전에 다음을 수행합니다.    
+6. **닫기**를 클릭합니다. Azure Information Protection 클라이언트 사용을 시작하기 전에 다음을 수행합니다.    
 
     - 컴퓨터에서 Office 2010를 실행하는 경우 컴퓨터를 다시 시작하고 마지막 단계에서 다음 섹션으로 이동합니다.    
         
@@ -69,9 +73,4 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

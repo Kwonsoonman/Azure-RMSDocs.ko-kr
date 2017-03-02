@@ -1,5 +1,5 @@
 ---
-title: "템플릿 새로 고침 | Azure Information Protection"
+title: "Azure RMS 템플릿 새로 고침 - AIP"
 description: "Azure Rights Management 서비스를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 15bd23bb727937193cb51e732586d4c334357c04
-ms.openlocfilehash: 325c64b211ed52bdb11685af00507aef2aa85312
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 84056058eedccf354cefb86792d92949bcfb22e8
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -187,8 +188,3 @@ Office 2010을 실행하는 컴퓨터에서 레지스트리를 편집하면 사�
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

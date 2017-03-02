@@ -1,5 +1,5 @@
 ---
-title: "분류 및 레이블 지정에 대한 질문과 대답 | Azure Information Protection"
+title: "분류 및 레이블 지정에 대한 FAQ - AIP"
 description: "Azure Information Protection의 현재 릴리스에 대한 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
-ms.openlocfilehash: ad94507f4aea48172ed3c3f74f6d12e3c67cc18e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: dfa89dc4c216807fdebd57dce202a7983a18d9fb
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -206,8 +207,3 @@ Azure Information Protection에 의해 분류된 파일과 메일은 Azure Infor
 또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

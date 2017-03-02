@@ -1,5 +1,5 @@
 ---
-title: "Azure Rights Management 커넥터에 대해 서버 구성 | Azure Information Protection"
+title: "Rights Management 커넥터에 대해 서버 구성 - AIP"
 description: "Azure RMS(Rights Management) 커넥터를 사용할 온-프레미스 서버를 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 5단계를 설명합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47de236f07996eed3f1ceb51309c6315d4625128
-ms.openlocfilehash: faff30ed2115307ff51afc24db8d08233eee9d14
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 8837b6187aee8bc041df7185527470297e913f49
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -257,8 +258,3 @@ Exchange 전송 규칙 또는 Windows Server FCI와 함께 사용하려는 부�
 RMS 커넥터를 모니터링하려면 [Azure Rights Management 커넥터 모니터링](monitor-rms-connector.md)을 참조하세요. 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

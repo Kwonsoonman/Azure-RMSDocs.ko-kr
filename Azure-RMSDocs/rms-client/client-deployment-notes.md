@@ -1,5 +1,5 @@
 ---
-title: "RMS 클라이언트 배포 참고 사항 | Azure Information Protection"
+title: "RMS 클라이언트 배포 참고 사항 - Azure Information Protection"
 description: "MSIPC 클라이언트라고도 하는 Rights Management Service 클라이언트(RMS 클라이언트) 버전 2의 재배포, 설치, 지원되는 운영 체제, 레지스트리 설정 및 서비스 검색에 대한 정보입니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: ff9f1ba390fcad0569972fc65a2425266fd918b4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a68bf7fe02836a9a2267834435c9d5de5595478e
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -259,8 +260,3 @@ RMS 클라이언트가 Active Directory를 쿼리하여 SCP를 찾을 수 없으
 6.  레지스트리 편집기를 닫습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

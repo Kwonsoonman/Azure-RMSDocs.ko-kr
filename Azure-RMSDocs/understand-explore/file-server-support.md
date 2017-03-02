@@ -1,5 +1,5 @@
 ---
-title: "Windows Server를 실행하고 FCI(파일 분류 인프라)를 사용하는 파일 서버 | Azure Information Protection"
+title: "FCI를 사용하는 파일 서버 - Azure Information Protection"
 description: "Office 문서를 자동으로 보호하기 위해 RMS 커넥터를 배포할 때 Azure RMS에서 Windows Server 파일 분류 인프라를 사용하는 방법을 설명합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: dd94145bc2a6f338bb8a8c0ac0712ed1c86517d4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 909ff4f7c96af65172604bb903173dd38d95dcf9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -41,10 +42,5 @@ Office 파일용 RMS 커넥터를 배포하고 구성하는 방법에 대한 지
 이제 응용 프로그램과 서비스가 Azure RMS를 지원하는 방식을 이해하게 되었으므로 온-프레미스 버전의 Rights Management인 AD RMS(Active Directory Rights Management Services)와 Azure RMS를 비교할 수 있습니다. 기능, 요구 사항 및 보안 제어를 비교한 내용을 보려면 [Azure 권한 관리와 AD RMS 비교](compare-azure-rms-ad-rms.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

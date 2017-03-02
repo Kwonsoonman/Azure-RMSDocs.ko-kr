@@ -1,5 +1,5 @@
 ---
-title: "Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호 | Azure Information Protection"
+title: "Windows Server FCI를 사용하는 Azure RMS 보호 - AIP"
 description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하는 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06419438281e0d5a0b976e506d45be2b4eaaef70
-ms.openlocfilehash: da7ab2f9fcd3919cd7143a407e54d2270449760d
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 58a0f117100ff5d19dfd6fee2ac4dd61c6bea36b
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -287,9 +288,4 @@ PowerShell 스크립트를 사용자 지정 작업으로 사용하여 폴더의 
 그리고 나면 스크립트는 동일하지만 다른 템플릿을 사용하는 새 파일 관리 작업을 만들고 방금 구성한 분류 속성에 대해 조건을 구성하기만 하면 됩니다. 예를 들어 이전에 구성한 조건(**RMS** 속성, **같음**, **예**) 대신 **연산자** 값을 **같음** 으로 설정했으며 **값** 이 **높음** 인 **개인 식별이 가능한 정보**속성을 선택할 수 있습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

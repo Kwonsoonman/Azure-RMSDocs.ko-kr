@@ -1,5 +1,5 @@
 ---
-title: "Azure RMS 작동 방식 | Azure Information Protection"
+title: "Azure RMS 작동 방식 - Azure Information Protection"
 description: "Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호화 컨트롤에 대해 자세히 설명하고 이 프로세스의 작동 방식을 보여 주는 단계별 다이어그램을 제공합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d704751bcc7a968c204d0bab0dc55776411d9593
-ms.openlocfilehash: 0ff5deaaea73b7354d2b251c3ce9c768debd2269
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3140f678c29771fc3328e312bc7e55d309554e66
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -154,8 +155,3 @@ Azure Rights Management Service 구성 및 사용 시 나올 수 있는 용어�
 > 추가 정보와 도움말을 확인하려면 [Azure Information Protection에 대한 정보 및 지원](../get-started/information-support.md)의 리소스와 링크를 사용하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

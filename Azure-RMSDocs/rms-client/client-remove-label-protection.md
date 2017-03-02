@@ -1,5 +1,5 @@
 ---
-title: "파일 및 전자 메일에서 분류 레이블 및 보호 제거 | Azure Information Protection"
+title: "Azure Information Protection 레이블 제거"
 description: "Azure Information Protection에 의해 레이블이 지정되었거나 Rights Management로 보호된 파일에서 분류 레이블 및 보호를 제거하기 위한 지침입니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid:
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0a720ab08596964ed04fdc800ce55f3932a7cc0f
-ms.openlocfilehash: fc401131a11426a17be4417d049199fb1c1a8f68
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: af6f57c265509f383dfe1354e5d1256665fc155b
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -74,8 +75,3 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
 -   [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

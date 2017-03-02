@@ -1,5 +1,5 @@
 ---
-title: "Rights Management 공유 응용 프로그램&colon; 클라이언트 설치 및 구성 | Azure Information Protection"
+title: "RMS 공유 응용 프로그램&colon; 설치 및 구성"
 description: "관리자가 Windows 컴퓨터 및 모바일 장치에서 RMS(Rights Management) 공유 응용 프로그램을 배포하는 방법을 설명합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: cffebd2ac11f78b20b125bfd7eabca83a6ba0363
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: af5541ab5dcec7224d1048121460b58b1ca13c48
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -42,10 +43,5 @@ Mac 컴퓨터 및 Windows Phone 장치용 RMS 공유 앱은 [Microsoft Azure Inf
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

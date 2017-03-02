@@ -1,11 +1,11 @@
 ---
-title: "Rights Management로 보호된 파일에 대한 사용 권한 변경 | Azure Information Protection"
+title: "RMS로 보호된 파일에 대한 권한 변경 - AIP"
 description: "파일이 Rights Management로 보호된 경우 파일을 다시 보호한 다음 해당 파일에 대한 액세스 권한이 있어야 하는 모든 사용자와 해당 사용자에게 부여할 사용 권한을 지정하여 사용 권한을 변경할 수 있습니다."
 keywords: 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,9 @@ ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: c0bfd99229e4d93c91fe8f9efafd887aa7562328
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3290b9436f75c2d0d37c401dd2e0be11bcf2d554
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -96,8 +97,3 @@ ms.openlocfilehash: c0bfd99229e4d93c91fe8f9efafd887aa7562328
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

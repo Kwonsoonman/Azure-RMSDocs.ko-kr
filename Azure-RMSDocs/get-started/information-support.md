@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection에 대한 관리 정보 및 지원 | Azure Information Protection"
+title: "Azure Information Protection에 대한 관리 정보 및 지원"
 description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Microsoft에 연락하는 방법에 대한 정보가 포함된 관리자용 리소스입니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 1f7647fd41ba71b4cda4c942d86b6dbfe9c870f8
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: cb0a66071937ed5afdf1f86833bbc47bdb4ddd50
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -91,9 +92,4 @@ Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](htt
 -   [포럼: 사용자용 RMS(응용 프로그램)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -1,10 +1,10 @@
 ---
-title: "시나리오 - 회사 기밀 메일 보내기 | Azure Information Protection"
+title: "AIP 시나리오 - 회사 기밀 메일 보내기"
 description: "이 시나리오와 지원 사용자 문서에서는 조직의 모든 사용자가 조직 외부에서 읽을 수 없는 메일 통신을 안전하게 보낼 수 있도록 Azure Rights Management 보호를 사용합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 3c5576936c07d3921ef8fd70f9542e62383d0751
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 04d8e694aa33bcc00deca602737e0ab11eafb53d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -156,9 +157,4 @@ ms.openlocfilehash: 3c5576936c07d3921ef8fd70f9542e62383d0751
     -   메일: helpdesk@vanarsdelltd.com
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

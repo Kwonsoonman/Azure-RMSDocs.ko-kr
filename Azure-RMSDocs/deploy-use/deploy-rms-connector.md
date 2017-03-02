@@ -1,5 +1,5 @@
 ---
-title: "Azure Rights Management 커넥터 배포 | Azure Information Protection"
+title: "Rights Management 커넥터 배포 - AIP"
 description: "RMS 커넥터 배포에 대한 지침으로 Exchange Server, SharePoint Server 또는 Windows Server 및 FCI(파일 분류 인프라)를 사용하는 기존 온-프레미스 배포의 데이터 보호 서비스 기능을 제공합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 5d33e0a8a9c6efbe937a53ae964b2972bf41580c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 93246a239476331f8fc117560c8ce45420eea674
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -98,8 +99,3 @@ RMS 커넥터를 설치하기 전에 먼저 다음 요구 사항이 설정되어
 1단계: [Azure 권한 관리 커넥터 설치 및 구성](install-configure-rms-connector.md)으로 이동합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

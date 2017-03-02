@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거 | Azure Information Protection"
+title: "RMS 공유 앱을 사용하여 보호 제거 - AIP"
 description: "이전에 RMS 공유 응용 프로그램을 사용하여 보호된 파일에서 보호를 제거(파일을 보호 해제)하는 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: de7121919ccb545821a405f47becd443a5dad333
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 370b19894efb53604c798b38be02dda3f8804b8b
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -51,8 +52,3 @@ ms.openlocfilehash: de7121919ccb545821a405f47becd443a5dad333
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

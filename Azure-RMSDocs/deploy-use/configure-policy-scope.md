@@ -1,5 +1,5 @@
 ---
-title: "범위 지정 정책 구성 | Azure Information Protection"
+title: "Azure Information Protection용 범위 지정 정책 구성"
 description: "특정 사용자에 대해 다른 설정과 레이블을 구성하려면 Azure Information Protection용 범위 지정 정책을 구성해야 합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fb68fc152e7f1d323cce71e3873475c78f7bbc15
-ms.openlocfilehash: 6818d514c303b3e3ee61189e62769dc72f36b668
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e2112ca081ed0520330355734bb0913e4a612c66
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -62,9 +63,4 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

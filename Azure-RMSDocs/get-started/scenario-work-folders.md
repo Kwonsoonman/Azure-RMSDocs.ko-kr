@@ -1,10 +1,10 @@
 ---
-title: "시나리오 - 클라우드 폴더에 대해 지속적인 보호 구성 | Azure Information Protection"
+title: "AIP 시나리오 - RMS 보호에 대해 클라우드 폴더 구성"
 description: "이 시나리오와 지원 사용자 문서에서는 Azure Rights Management 보호를 사용하여 클라우드 폴더에 있는 Office 문서에 영구적 보호 기능을 적용합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 1f189345-a69e-4bf5-8a45-eb0fe5bb542b
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 942b9bfffbd4a43c922ada87220f4eecb78f1d11
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1fa655cd91746d8e5c19f6a9eca0d93a3be8fb23
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -121,8 +122,3 @@ Azure 권한 관리를 사용하여 보호하는 파일을 조직 외부 사용�
 > 일정 기간 후에 이러한 요청이 많으면 특정 사용자(예: 관리자 또는 기술 지원팀)에게만 공동 소유자 옵션을 부여하고 표준 사용자에게는 공동 작성자 또는 적합하다고 결정한 [권한](../deploy-use/configure-usage-rights.md)을 부여하는 고유한 사용자 지정 템플릿을 이 시나리오에 대해 정의할 수도 있습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

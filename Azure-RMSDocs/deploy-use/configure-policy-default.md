@@ -1,18 +1,19 @@
 ---
-title: "기본 정책 | Azure Information Protection"
+title: "Azure Information Protection의 기본 정책"
 description: "Azure Information Protection에 대한 기본 정책을 구성하는 방법을 설명합니다. 기본 정책을 수정하는 경우 이러한 값을 참조하여 정책을 기본값으로 반환할 수 있습니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: e1c1d4a0a2cd48be5322be4f4fedd3350e3b2e0a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d4e67ace9cf56ffdb4e8335dd514e1568bccb9b6
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -61,8 +62,3 @@ ms.openlocfilehash: e1c1d4a0a2cd48be5322be4f4fedd3350e3b2e0a
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요. 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

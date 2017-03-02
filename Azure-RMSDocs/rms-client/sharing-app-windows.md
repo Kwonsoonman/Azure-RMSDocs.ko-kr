@@ -1,5 +1,5 @@
 ---
-title: "Windows용 Rights Management 공유 응용 프로그램 | Azure Information Protection"
+title: "Windows용 Rights Management 공유 응용 프로그램 - AIP"
 description: "Windows용 Rights Management 공유 응용 프로그램의 정보 리소스를 소개합니다. 이 응용 프로그램은 AD RMS(Active Directory Rights Management Services) 또는 Azure Information Protection을 사용하는 조직과 자체 정보 보호 인프라가 없지만, Azure Information Protection을 사용하는 다른 조직에서 보호한 콘텐츠를 사용하려는 조직에서 무료로 다운로드할 수 있습니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 78a796eaea0c6ece4bbaee80e7f287eb2aba29f6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0bcafd705949012363f1ad04193e25246bf1f412
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -44,9 +45,4 @@ Windows용 Rights Management 공유 응용 프로그램(간단히 "RMS 공유 �
 [FAQ for Rights Management Sharing Application for Windows](http://technet.microsoft.com/dn467883)(Windows용 Rights Management 공유 응용 프로그램 FAQ)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

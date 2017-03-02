@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지 | Azure Information Protection"
+title: "문서 추적 및 취소 - Azure Information Protection"
 description: "문서를 보호한 후에는 사용자들이 해당 문서를 사용하는 방식을 추적할 수 있습니다. 그리고 필요에 따라 사용자들이 더 이상 이러한 문서를 읽을 수 없도록 문서 액세스 권한을 해지할 수도 있습니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 569c60d502ddcf3169ec0955a76312a50451ec72
-ms.openlocfilehash: ee2160c6c81c5de5bd1e9a9afaea959229e125e3
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 37ab2f78f1ba2f3803ad1aafd011e530ef204acb
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -91,8 +92,3 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
 - [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

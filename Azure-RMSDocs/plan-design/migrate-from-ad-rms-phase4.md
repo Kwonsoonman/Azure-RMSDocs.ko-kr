@@ -1,5 +1,5 @@
 ---
-title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 4단계 | Azure Information Protection"
+title: "AD RMS-Azure Information Protection 마이그레이션 - 4단계"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 네 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 8~9단계가 포함됩니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e45bbfe0fc2b064d987016cac8af8c4f57d465c9
-ms.openlocfilehash: e10b271872935b7903a3e1bcfe2e8287e693c613
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fc45ae10101460ea46bf2aa599b213a772eb5626
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -62,9 +63,4 @@ Azure Information Protection 테넌트 키 관리에 대한 자세한 내용은 
 이제는 마이그레이션을 완료했으므로 [배포 로드맵](deployment-roadmap.md)을 검토하여 필요할 수 있는 다른 배포 작업을 확인합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

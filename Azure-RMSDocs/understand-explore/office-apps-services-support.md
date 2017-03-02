@@ -1,5 +1,5 @@
 ---
-title: "Office 응용 프로그램 및 서비스 | Azure Information Protection"
+title: "Azure Information Protection을 사용하는 Office 앱 및 서비스"
 description: "최종 사용자 Office 응용 프로그램(예: Word, Excel, PowerPoint, Outlook) 및 Office 서비스(예: Exchange, SharePoint)에서 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: d2d33329457e181b55489834daf595da81bc7ada
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3e77cebd642b2b9e983f5cbc81e43e1cc437dc5d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,8 +76,3 @@ SharePoint와 함께 Azure Rights Management 서비스를 사용하는 방법에
 다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

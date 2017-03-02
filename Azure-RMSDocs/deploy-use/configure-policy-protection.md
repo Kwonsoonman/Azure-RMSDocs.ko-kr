@@ -1,29 +1,30 @@
 ---
-title: "Rights Management 보호를 적용하도록 레이블을 구성하는 방법| Azure Information Protection"
-description: "암호화, ID 및 권한 부여 정책을 통해 데이터 손실을 방지하는 권한 관리 서비스를 사용하여 가장 민감한 문서 및 메일을 보호할 수 있습니다. 이 보호는 권한 관리 템플릿을 사용하도록 레이블을 구성할 때 적용됩니다."
+title: "보호를 위해 Azure Information Protection 레이블 구성"
+description: "Rights Management 보호를 사용하도록 레이블을 구성하면 가장 중요한 문서 및 메일을 보호할 수 있습니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/16/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: f71b5d98d03453ee49ea177fcb894c28f0f2688f
-ms.openlocfilehash: 9224cdbd5c7e1aa1453328150b903db386af2322
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: cd0fa432bbec97b39e7c32f0b40594840d57fb04
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="how-to-configure-a-label-to-apply-rights-management-protection"></a>Rights Management 보호를 적용하도록 레이블을 구성하는 방법
+# <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
-암호화, ID 및 권한 부여 정책을 통해 데이터 손실을 방지하는 권한 관리 서비스를 사용하여 가장 민감한 문서 및 메일을 보호할 수 있습니다. 이 보호는 Rights Management 템플릿을 사용하도록 레이블을 구성할 때 적용됩니다. 
+암호화, ID 및 권한 부여 정책을 통해 데이터 손실을 방지하는 권한 관리 서비스를 사용하여 가장 민감한 문서 및 메일을 보호할 수 있습니다. 이 보호는 문서 및 메일에 Rights Management 템플릿을 사용하거나 Outlook 메일 메시지에 대해 **Do not forward**(전달 금지) 옵션을 사용하도록 레이블을 구성할 때 적용됩니다. 
 
-이 템플릿은 Azure Rights Management를 활성화할 때 자동으로 만들어지는 기본 템플릿 또는 사용자 지정 템플릿 중 하나일 수 있습니다. Azure 권한 관리 부서별 템플릿은 지원되지만 문서 또는 메일 작성자가 구성된 템플릿 범위에 속하는 경우에만 보호를 적용합니다. 범위 내에 없는 사용자에게는 Azure Information Protection에서 레이블을 적용할 수 없음을 알리는 메시지가 표시됩니다.
+템플릿은 Azure Rights Management를 활성화할 때 자동으로 만들어지는 기본 템플릿 또는 사용자 지정 템플릿 중 하나일 수 있습니다. Azure 권한 관리 부서별 템플릿은 지원되지만 문서 또는 메일 작성자가 구성된 템플릿 범위에 속하는 경우에만 보호를 적용합니다. 범위 내에 없는 사용자에게는 Azure Information Protection에서 레이블을 적용할 수 없음을 알리는 메시지가 표시됩니다.
 
 ## <a name="how-the-protection-works"></a>보호 작동 방식
 
@@ -61,20 +62,25 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
 
 3. **정책** 블레이드에서 구성하려는 레이블을 선택합니다. 그러면 **레이블** 블레이드가 열립니다. 
 
-4. **레이블** 블레이드에서 **Set permissions for documents and emails containing this label**(이 레이블을 포함하는 문서 및 메일에 대한 사용 권한 설정)을 찾습니다. 
+4. **Label**(레이블) 블레이드에서 **Set permissions for documents and emails containing this label**(이 레이블을 포함하는 문서 및 메일에 대한 사용 권한 설정)로 이동하고 다음 옵션 중 하나를 선택합니다.
     
-    **보호**를 선택하여 보호를 적용하거나 **보호 제거**를 선택하여 메일 또는 문서에 적용되는 보호를 제거합니다.
+    - **Not configured**(구성되지 않음): 레이블이 현재 보호를 적용하도록 구성되어 있는데 선택한 레이블에 더 이상 보호를 적용하지 않으려면 이 옵션을 선택합니다. 10단계로 이동합니다.
+    
+    - **Protect**(보호): 보호를 적용하려면 이 옵션을 선택한 다음 5단계로 이동합니다.
+    
+    - **보호 제거**: 문서 또는 메일에 대해 구성된 보호를 제거하려면 이 옵션을 선택합니다. 10단계로 이동합니다.
+        
+        사용자는 이 옵션이 있는 레이블을 적용하려면 Rights Management 보호를 제거할 수 있는 권한이 있어야 합니다. 이 옵션을 사용하려면 사용자가 **내보내기** 또는 **모든 권한** [사용 권한](../deploy-use/configure-usage-rights.md)을 가지고 있거나 Rights Management 소유자(자동으로 모든 권한 사용 권한 부여) 또는 [Azure Rights Management의 슈퍼 사용자](../deploy-use/configure-super-users.md)여야 합니다. 기본 Azure Rights Management 템플릿에는 사용자가 보호를 제거할 수 있는 사용 권한이 포함되어 있지 않습니다. 
+        
+        사용자가 Rights Management 보호를 제거할 권한이 없는데 이 **보호 제거** 옵션을 사용하여 구성된 레이블을 선택하는 경우 다음 메시지가 표시됩니다. **Azure Information Protection cannot apply this label(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 이 작업을 수행할 권한이 없습니다). If this problem persists, contact your administrator.(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 문제가 지속되면 관리자에게 문의하세요.)**
 
-    - **보호**를 선택한 경우 5단계로 이동합니다.
-    - **보호 제거**를 선택한 경우 11단계로 이동합니다.
-
-5. **보호**를 선택하는 경우 **보호** 막대를 클릭하여 **사용 권한** 블레이드를 엽니다.
+5. **Protect**(보호)를 선택한 경우 **Protection**(보호)을 선택하여 **Permissions**(사용 권한) 블레이드를 엽니다.
     
     ![Azure Information Protection 레이블에 대한 보호 구성](../media/info-protect-protection-bar.png)
 
 6. **사용 권한** 블레이드에서 **Azure RMS** 또는 **HYOK(AD RMS)**를 선택합니다. 
     
-    대부분의 경우 사용 권한 설정에 대해 **Azure RMS**를 선택합니다. 이 "*HYOK(Hold Your Own Key)*" 구성에 수반되는 필수 조건 및 제한을 읽고 이해한 경우에만 **HYOK(AD RMS)**를 선택하세요. 자세한 내용은 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](configure-adrms-restrictions.md)을 참조하세요.
+    대부분의 경우 사용 권한 설정에 대해 **Azure RMS**를 선택합니다. 이 "*HYOK(Hold Your Own Key)*" 구성에 수반되는 필수 조건 및 제한을 읽고 이해한 경우에만 **HYOK(AD RMS)**를 선택하세요. 자세한 내용은 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](configure-adrms-restrictions.md)을 참조하세요. HYOK(AD RMS)에 대한 구성을 계속하려면 9단계로 이동합니다.
     
 7. 메일에 대해 이 Outlook 옵션을 설정하려면 **Do not forward**(전달 금지)를 선택하거나 **Select template**(템플릿 선택)을 선택합니다. 
     
@@ -88,25 +94,14 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
             
 9. **HYOK(AD RMS)**에 대해 **Select template**(템플릿 선택)을 선택한 경우 AD RMS 클러스터의 템플릿 GUID 및 라이선스 URL을 제공합니다. [추가 정보](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
-10. **완료**를 클릭하여 **사용 권한** 블레이드를 닫고 **Do not forward**(전달 금지) 선택 항목 또는 **레이블** 블레이드의 **보호** 막대에서 선택한 템플릿 표시를 확인합니다.
+10. **Done**(완료)을 클릭하여 **Permissions**(사용 권한) 블레이드를 닫고 **Do not forward**(전달 금지) 선택 항목 또는 **Label**(레이블) 블레이드의 **Protection**(보호) 옵션에 대해 선택한 템플릿 표시를 확인합니다.
 
-11. **보호 제거**를 선택하는 경우:
-    
-    사용자는 이 옵션이 있는 레이블을 적용하려면 권한 관리 보호를 제거할 수 있는 권한이 있어야 합니다. 이 옵션을 사용하려면 **내보내기**(Office 문서용) 또는 **모든 권한** [사용 권한](../deploy-use/configure-usage-rights.md)을 가지고 있거나 권한 관리 소유자(자동으로 모든 권한 사용 권한 부여) 또는 [Azure 권한 관리에 대한 슈퍼 사용자](../deploy-use/configure-super-users.md)여야 합니다. 기본 권한 관리 템플릿에는 사용자가 보호를 제거할 수 있는 사용 권한이 포함되어 있지 않습니다. 
-    
-    사용자가 권한 관리 보호를 제거할 권한이 없는데 **보호 제거** 옵션과 함께 이 레이블을 선택하는 경우 다음 메시지가 표시됩니다. **Azure Information Protection cannot apply this label. If this problem persists, contact your administrator.(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 문제가 지속되면 관리자에게 문의하세요.)**
+10. **레이블** 블레이드에서 **저장**을 클릭합니다.
 
-6. **레이블** 블레이드에서 **저장**을 클릭합니다.
-
-7. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
+11. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
 ## <a name="next-steps"></a>다음 단계
 
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO3-->
-
-

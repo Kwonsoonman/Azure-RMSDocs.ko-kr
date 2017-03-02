@@ -1,5 +1,5 @@
 ---
-title: "iOS 및 Android용 Azure Information Protection 앱에 대한 FAQ | Azure Information Protection"
+title: "iOS 및 Android용 Azure Information Protection 앱 FAQ"
 description: 
 keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 데 도움이 되는 몇 가지 질문과 대답"
 author: cabailey
@@ -14,8 +14,9 @@ ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0dc8e4d772ef65e3425203e78c5e569f4e107b8e
-ms.openlocfilehash: a6900a6dadd0c323958f42ff441cbcf936a0f582
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4ac26b3faa61f3a19e71f7f1d1d257c2ded934c7
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -73,8 +74,3 @@ Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4
 질문을 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 게시하거나 [Information Protection 팀에 메일을 보내 주세요](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

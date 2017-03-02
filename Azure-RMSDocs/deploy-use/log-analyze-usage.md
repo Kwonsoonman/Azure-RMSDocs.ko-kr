@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 서비스의 사용 현황 로깅 및 분석 | Azure Information Protection"
+title: "Azure RMS 서비스의 사용 현황 로깅 및 분석 - AIP"
 description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 사용하는 방법에 대한 정보와 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ca8694a26f0f9b537a3e3a6b1f468d89cefe6206
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 89c0cae4b0549a0dd86ede26ef3eed0f09200419
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -157,7 +158,7 @@ Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니
 #### <a name="exceptions-for-the-user-id-field"></a>use-id 필드에 대한 예외
 user-id 필드는 보통 요청을 수행한 사용자를 나타내지만 해당 값이 실제 사용자에 매핑되지 않는 두 가지 예외가 있습니다.
 
--   **'microsoftrmsonline@&lt;테넌트 ID&gt;.rms.&lt;지역&gt;.aadrm.com'**
+-   **'microsoftrmsonline@&lt;테넌트 ID&gt;.rms.&lt;지역&gt;.aadrm.com'** 값
 
     이 값은 Exchange Online 또는 SharePoint Online과 같은 Office 365 서비스에서 요청을 수행함을 나타냅니다. 위 문자열에서 *&lt;테넌트 ID&gt;*는 테넌트의 GUID이고, *&lt;지역&gt;*은 테넌트가 등록된 지역입니다. 예를 들어 **na** 는 북미, **eu** 는 유럽, **ap** 는 아시아를 나타냅니다.
 
@@ -238,10 +239,5 @@ Azure Rights Management 서비스용 Windows PowerShell 사용에 대한 자세�
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

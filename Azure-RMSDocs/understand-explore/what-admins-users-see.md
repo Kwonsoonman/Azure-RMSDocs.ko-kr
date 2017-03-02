@@ -1,5 +1,5 @@
 ---
-title: "관리자와 사용자에게 표시되는 내용 | Azure Information Protection"
+title: "Azure RMS에서 관리자 및 사용자에게 표시하는 사항 - AIP"
 description: "관리자와 사용자가 Azure RMS(Azure Rights Management) 기술을 표시하여 중요한 정보 또는 기밀 정보를 보호하는 데 사용할 수 있는 방법의 몇 가지 일반적인 예제를 제공합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e47a065737c950d4b616230c2915b4f2c8b6ee88
-ms.openlocfilehash: d4dd6bed227f959b7791249af5f4103f25c27c6e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4fb412ff1128842fd1f3c95d39a4a626c67f97a0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -241,8 +242,3 @@ Bob이 첨부 파일과 함께 이 전자 메일을 전달하거나 다른 사�
 이제 Azure RMS가 수행할 수 있는 작업의 몇 가지 예를 살펴 보았으며 이를 수행하는 방법에 관심을 가질 수 있습니다. Azure RMS 작동 방식에 대한 기술적인 정보는 [Azure RMS 작동 방식](how-does-it-work.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

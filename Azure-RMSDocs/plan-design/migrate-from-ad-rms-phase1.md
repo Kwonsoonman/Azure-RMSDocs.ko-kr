@@ -1,10 +1,10 @@
 ---
-title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 1단계 | Azure Information Protection"
+title: "AD RMS-Azure Information Protection 마이그레이션 - 1단계"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 첫 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 1~4단계가 포함됩니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 774ea4fe8bb5e0ae7335bb3c106b57393167ee39
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d38d7f89ba780b519ebe4a182161deb5bc9331b5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -223,9 +224,4 @@ Remove-PSDrive MyRmsAdmin -force
 [2단계 - 클라이언트 쪽 구성](migrate-from-ad-rms-phase2.md)으로 이동합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

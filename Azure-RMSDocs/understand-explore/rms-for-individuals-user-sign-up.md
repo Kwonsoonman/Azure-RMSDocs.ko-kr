@@ -1,5 +1,5 @@
 ---
-title: "개인용 RMS 등록 방법 | Azure Information Protection"
+title: "개인용 RMS 등록 방법 - AIP"
 description: "이 무료 계정의 등록 지침과 등록 프로세스의 작동 방식 관련 기술 정보를 제공합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 57e7cb922c0701dbe1088d205cfc56a69dcc4e05
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1134bff1935b3fada661865f31104e0316e8fecd
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.openlocfilehash: 57e7cb922c0701dbe1088d205cfc56a69dcc4e05
 
     Microsoft는 메일 주소를 사용하여 조직에 이미 [Azure Information Protection 유료 구독](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 또는 [Azure Rights Management를 사용하는 데이터 보호를 포함하는 Office 365 구독](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있는지 확인합니다. 구독이 있으면 개인용 RMS가 필요하지 않고 즉시 로그인되며 개인용 RMS 셀프서비스 가입이 취소됩니다. 유료 구독이 없으면 다음 단계를 진행합니다.
 
-4.  입력한 주소로 확인 메일 메시지가 전송될 때까지 기다립니다. 이 메일은 Office 365 팀(support@email.microsoftonline.com)에서 보내며 제목은 **Microsoft Azure Information Protection 등록 완료**입니다.
+4.  입력한 주소로 확인 메일 메시지가 전송될 때까지 기다립니다. 이 메일은 Office 365 팀support@email.microsoftonline.com에서 보내며 제목은 **Microsoft Azure Information Protection 등록 완료**입니다.
 
 5.  메일을 받으면 **Yes, that's me**(본인 확인 완료)를 클릭하여 메일 주소를 확인한 후 등록 프로세스를 완료합니다.
 
@@ -95,8 +96,3 @@ ms.openlocfilehash: 57e7cb922c0701dbe1088d205cfc56a69dcc4e05
 [관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법](rms-for-individuals-take-control.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

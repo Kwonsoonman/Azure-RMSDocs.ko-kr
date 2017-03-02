@@ -1,5 +1,5 @@
 ---
-title: "Rights Management 공유 응용 프로그램 사용자 가이드 | Azure Information Protection"
+title: "RMS 공유 앱 사용자 가이드 - AIP"
 description: "Windows용 Microsoft RMS(Rights Management) 공유 응용 프로그램을 사용하면 중요한 문서와 사진을 보아서는 안 되는 사용자에게 전자 메일로 보내거나 다른 장치에 저장한 경우에도 해당 사용자로부터 안전하게 보관할 수 있습니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 1acc6563f8b5da498cb58db46a93160a1fa94022
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 439b97bd6a23789b6729e2dc5b62777450f4cb63
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -68,10 +69,5 @@ Windows 7 서비스 팩 1 이상을 실행하는 컴퓨터만 있으면 됩니�
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

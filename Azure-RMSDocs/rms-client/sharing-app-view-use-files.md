@@ -1,10 +1,10 @@
 ---
-title: "Rights Management로 보호된 파일 보기 및 사용 | Azure Information Protection"
+title: "RMS 공유 앱에서 RMS로 보호된 파일 열기 - AIP"
 description: "보호된 파일을 보고 사용하기 위한 지침을 제공합니다. 여기서 설명하는 작업을 수행하려면 (RMS)Rights Management 공유 응용 프로그램을 설치해야 합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 92df54a09513de4a8ea2c42779679f1d76a1607e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a10162139f2b188640c446477fd9b4756d48c31e
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -107,8 +108,3 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

@@ -1,5 +1,5 @@
 ---
-title: "Azure 권한 관리에 대한 사용 권한 구성 | Azure Information Protection"
+title: "Azure Rights Management에 대한 사용 권한 구성 - AIP"
 description: "Azure Information Protection의 Azure Rights Management 서비스를 사용하여 파일이나 전자 메일을 보호할 때 사용되는 특정 권한을 소개하고 설명합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 42f2c592091edb6305d72036545631069e79da2a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 34f77a0ff33a9a960e12bc53d62b38f4e6553c80
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -104,10 +105,5 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "데이터 보호를 지원하는 온-프레미스 서버 | Azure Information Protection"
+title: "Azure RMS 데이터 보호를 위한 서버 지원 - AIP"
 description: "Rights Management 커넥터를 통해 Azure Information Protection의 Azure Rights Management 서비스를 사용할 수 있는 온-프레미스 서버 제품을 식별합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 815f543c3dc296c508523fe9e09cb80e41d4f85b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 22beea6ab33d6f3fc0c36ff136dd1bc44714a997
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -63,8 +64,3 @@ Rights Management 커넥터는 Windows Server 2016, Windows Server 2012 R2, Wind
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

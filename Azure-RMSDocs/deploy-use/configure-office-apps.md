@@ -1,5 +1,5 @@
 ---
-title: "Office 앱&colon; 클라이언트 구성 | Azure Information Protection"
+title: "Office 앱, 클라이언트 구성 - AIP"
 description: "관리자가 Azure Information Protection의 Azure Rights Management 서비스에서 작동하도록 Office 앱을 구성하는 방법 및 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: f69fd9629afaafbf6f78b52f65b3bb69eaf19c9e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 430f390bef496b5e297ae25a03531da42954121d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ ms.openlocfilehash: f69fd9629afaafbf6f78b52f65b3bb69eaf19c9e
 Azure Information Protection 클라이언트에 대한 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

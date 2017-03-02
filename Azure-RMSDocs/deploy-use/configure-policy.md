@@ -1,10 +1,10 @@
 ---
-title: "정책 구성 | Azure Information Protection"
+title: "Azure Information Protection 정책 구성"
 description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
-ms.openlocfilehash: 2ad10e378c14dbaef09ccd321379a0dbd7c0d23d
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2510c14fc10411783838516f45fdfd06fd73350d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -80,9 +81,4 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

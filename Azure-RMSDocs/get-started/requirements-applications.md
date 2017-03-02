@@ -1,5 +1,5 @@
 ---
-title: "데이터 보호에 대한 응용 프로그램 지원 | Azure Information Protection"
+title: "RMS 데이터 보호를 위한 응용 프로그램 지원 - AIP"
 description: "RMS API를 사용하여 Azure Information Protection의 Azure Rights Management 서비스를 기본적으로 지원하는 응용 프로그램을 식별합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: c6d978133142ffc935cce9dc56669d812c80e3af
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d8a3c8a054412280df341edd4078294c3e05979e
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -173,8 +174,3 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 자주 사용하는 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](../deploy-use/configure-applications.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

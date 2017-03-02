@@ -1,5 +1,5 @@
 ---
-title: "Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성 | Azure Information Protection"
+title: "Azure Rights Management에 대한 슈퍼 사용자 구성 - AIP"
 description: "Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 있는 사용자와 서비스가 항상 읽고 검사할 수 있도록 하는 Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능 및 이 기능을 구현하는 방법을 설명합니다. ‘데이터 추론’이라고도 하는 이 기능은 조직 데이터에 대한 통제력을 유지하는 데 필수적인 요소입니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: bb7b459456fd8fb43997f73b39880d7110f92442
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f1c50d67ba03cee9846e81f98aad6da0da33a951
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -71,10 +72,5 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 > AIP 모듈은 RMS 보호 도구와 함께 설치되는 RMS 보호 PowerShell 모듈을 대체합니다. 이러한 두 모듈은 서로 다르며 주 [Azure Rights Management용 Windows PowerShell 모듈](administer-powershell.md)을 보완합니다. AIP 모듈은 Azure Information Protection, Azure Information Protection용 Azure RMS(Azure Rights Management Services) 및 AD RMS(Active Directory Rights Management Services)를 지원합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

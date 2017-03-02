@@ -1,10 +1,10 @@
 ---
-title: "고객 의견에 대한 기본 규칙 | Azure Information Protection"
+title: "고객 의견에 대한 기본 규칙 - AIP"
 description: "Azure Information Protection 설명서에 대한 Livefyre 메모 및 사이드바의 범위 및 용도"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 95e1b3502d06c96f666da665739f4f97050c0b67
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 587c4f188603f49605191a15d71180441f16e3c9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,10 +41,5 @@ Livefyre 메모 및 사이드 노트를 다음 용도로 사용하면 안 됩니
 [Azure Information Protection에 대한 정보 및 지원](./get-started/information-support.md)에서 추가 리소스를 확인할 수 있습니다. 
 
 참고: Microsoft 직원인 경우에는 내부 통신 채널을 사용하세요.
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

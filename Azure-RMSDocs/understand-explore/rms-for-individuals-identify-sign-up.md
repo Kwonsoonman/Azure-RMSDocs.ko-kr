@@ -1,5 +1,5 @@
 ---
-title: "사용자가 개인용 RMS에 등록했는지 확인하는 방법 | Azure Information Protection"
+title: "사용자가 개인용 RMS에 등록했는지 확인 - AIP"
 description: "관리자는 사용자가 개인용 RMS를 등록했는지 여부를 어떻게 알 수 있을까요? 이 문서에서 설명하는 방법 중 하나를 사용하거나 여러 방법을 조합하여 사용할 수 있습니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: a36c3d99-a794-4f7a-aafb-64a950f1fcf9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 5dae8412277be37cd3ff8cfe76c71a8109277146
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: e696bf596255b5e28aa5589cfc18715f100c5b07
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -35,8 +36,3 @@ ms.openlocfilehash: 5dae8412277be37cd3ff8cfe76c71a8109277146
 -   Azure Information Protection 클라이언트 또는 Rights Management 공유 응용 프로그램이 만든 파일 이름 확장명을 세심히 살펴봅니다. .pfile 및 .ppdf 파일 이름 확장명이 가장 명확한 예이지만, Rights Management Service에 의해 기본적으로 보호될 때 파일 이름 확장명이 변경되는 파일도 있습니다. 자세한 내용은 Azure Information Protection 클라이언트 관리자 가이드에서 [보호에 지원되는 파일 형식](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

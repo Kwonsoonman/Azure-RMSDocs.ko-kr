@@ -1,5 +1,5 @@
 ---
-title: "사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원| Azure Information Protection"
+title: "사용자가 Azure RMS를 사용하여 파일을 보호할 수 있도록 지원 - AIP"
 description: "Azure Information Protection의 Azure RMS(Azure Rights Management)Rights Management 서비스를 배포 및 구성한 후 사용자, 관리자 및 지원 센터에 지침을 제공할 때 도움이 되는 정보를 제공합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cdac14d3a77ea7bcce23b914bc3be0a1f46d2b5
-ms.openlocfilehash: 0af15bf3238d020b1ee45b45bc780256c88b5e55
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 61f7a7208b13a28f2e8cfb85489cceb2a2caf077
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -109,10 +110,5 @@ Azure Rights Management 서비스를 사용하고 있으며 Azure Information Pr
 보호된 문서를 볼 때와 마찬가지로 받는 사람은 전자 메일 메시지를 받으면 먼저 인증하게 됩니다. 전자 메일 메시지를 열 권한이 있으면 해당 사용자에 대해 지정된 제한적 사용 권한으로 메시지가 열립니다. 예를 들어 **전체 회신 금지**를 선택한 경우에는 메시지 창에서 **전체 회신** 옵션을 사용할 수 없습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

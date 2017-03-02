@@ -1,10 +1,10 @@
 ---
-title: "데이터 보호 서비스, Azure Information Protection의 Azure Rights Management 서비스 질문과 대답 | Azure Information Protection"
+title: "Azure RMS에 대한 FAQ - AIP"
 description: "데이터 보호 서비스인 Azure Information Protection의 Azure Rights Management 서비스(Azure RMS)의 몇 가지 질문과 대답입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4d9cf4f9ab3f73d2b1ba06eb74541f2982d24677
-ms.openlocfilehash: f0fb23195983771fb7e19a626adc78ca28faa1a7
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f2413580bf76f0b9b6fa52d8be381c44f9c985fe
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -35,6 +36,19 @@ ms.openlocfilehash: f0fb23195983771fb7e19a626adc78ca28faa1a7
 Microsoft는 다르거나 종종 상호 보완적인 시나리오에서 데이터를 보호할 수 있는 여러 암호화 기술을 제공합니다. 예를 들어 Office 365에서 Office 365에 저장된 미사용 데이터에 대해 암호화를 제공하는 동시에 Azure Information Protection의 Azure Rights Management 서비스에서 별도로 데이터를 암호화하므로 데이터는 위치나 전송 방법에 관계없이 보호됩니다.
 
 이러한 암호화 기술은 상호 보완적이며 사용하려면 개별적으로 사용 설정 및 구성해야 합니다. 이때 암호화를 위해 고유한 키를 가져올 수도 있습니다("BYOK" 시나리오라고도 함). 이러한 기술 중 하나에 대해 BYOK를 사용하도록 설정해도 다른 기술에는 영향을 주지 않습니다. 예를 들어 Azure Information Protection에는 BYOK를 사용하고 다른 암호화 기술에는 BYOK를 사용하지 않을 수 있습니다. 이러한 다른 기술에서 사용하는 키는 같거나 다를 수 있는데, 각 서비스의 암호화 옵션 구성 방법에 달려 있습니다.
+
+## <a name="whats-the-difference-between-byok-and-hyok-and-when-should-i-use-them"></a>BYOK와 HYOK를 사용해야 하는 경우 이 둘의 차이는 무엇인가요?
+
+Azure Information Protection의 컨텍스트에서 **BYOK**(Bring Your Own Key)는 Azure Rights Management 보호에 대해 온-프레미스에 고유한 키를 만드는 경우에 사용합니다. 그런 다음 키를 계속 소유하고 관리하는 Azure Key Vault의 HSM(하드웨어 보안 모듈)으로 해당 키를 전송합니다. 이렇게 하지 않으면 Azure Rights Management 보호는 Azure에서 자동으로 생성되고 관리되는 키를 사용합니다. 이 기본 구성을 “사용자가 관리”(BYOK 옵션)가 아니라 "Microsoft가 관리"라고 합니다.
+
+BYOK에 대한 자세한 내용과 조직에 대해 이 키 토폴로지를 선택해야 하는지 여부는 [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요. 
+
+Azure Information Protection의 컨텍스트에서 **HYOK**(Hold Your Own Key)는 클라우드에 저장되는 키로 보호할 수 없는 일부 문서 또는 메일이 있는 적은 수의 조직에서 사용합니다. 이러한 조직에서는 BYOK를 사용하여 키를 만들고 관리하는 경우에도 이 제한이 적용됩니다. 제한은 종종 규정 또는 규정 준수 사유가 될 수 있으며, HYOK 구성은 조직 외부에서 공유해서는 안되며 내부 네트워크에서만 사용되고 모바일 장치에서 액세스해서는 안 되는 "일급 비밀" 정보에만 적용되어야 합니다. 
+
+이러한 예외(일반적으로 보호되어야 하는 모든 콘텐츠의 10% 미만)의 경우, 조직은 온-프레미스 솔루션인 Active Directory Rights Management Services를 사용하여 온-프레미스에 유지하는 키를 만들 수 있습니다. 이 솔루션을 사용하면 컴퓨터는 클라우드에서 Azure Information Protection 정책을 가져오지만 이 확인된 콘텐츠는 온-프레미스 키를 사용하여 보호될 수 있습니다.
+
+HYOK에 대한 자세한 내용을 보고 제한 사항을 이해했음을 확인하고 HYOK 사용 시 지침을 보려면 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](../deploy-use/configure-adrms-restrictions.md)을 참조하세요.
+
 
 ## <a name="can-i-integrate-the-azure-rights-management-service-with-my-on-premises-servers"></a>내 온-프레미스 서버와 Azure Rights Management 서비스를 통합할 수 있나요?
 예. Exchange Server, SharePoint 및 Windows 파일 서버와 같은 온-프레미스 서버에 Azure Rights Management를 통합할 수 있습니다. 이렇게 하려면 [Rights Management 커넥터](../deploy-use/deploy-rms-connector.md)를 사용합니다. 또는 Windows Server에서 FCI(파일 분류 인프라)를 사용하려는 경우 [RMS 보호 cmdlet](https://technet.microsoft.com/library/mt601315%28v=ws.10%29.aspx)을 사용할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
@@ -156,10 +170,5 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

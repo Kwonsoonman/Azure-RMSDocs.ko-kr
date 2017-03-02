@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호 | Azure Information Protection"
+title: "RMS 공유 앱으로 보호되는 공유 - AIP"
 description: "메일을 통해 문서를 안전하게 공유하는 방법에 대한 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 7b8fe306b82e0eb964106b3ab3b890d1a115037d
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4110050a0e45fd75633bc27dd220f71855d50672
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -92,8 +93,3 @@ Outlook을 사용하여 보호된 파일을 공유하는 방법 외에 다음과
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

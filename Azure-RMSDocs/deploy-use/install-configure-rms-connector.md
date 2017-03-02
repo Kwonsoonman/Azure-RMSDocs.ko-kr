@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 커넥터 설치 및 구성 | Azure Information Protection"
+title: "Rights Management 커넥터 설치 및 구성 - AIP"
 description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 1~4단계를 설명합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b7ad3ae66536d7c04003d5a2161b0fda0eb80a3b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 365d4a661a26e687da0445d9c31c644ed9d3ca12
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -241,8 +242,3 @@ RMS 커넥터 관리 도구를 설치하려면 다음 파일을 실행합니다.
 이제 RMS 커넥터를 설치 및 구성했으므로 커넥터를 사용하도록 온-프레미스 서버를 구성할 준비가 되었습니다. [Azure 권한 관리 커넥터에 대해 서버 구성](configure-servers-rms-connector.md)으로 이동합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

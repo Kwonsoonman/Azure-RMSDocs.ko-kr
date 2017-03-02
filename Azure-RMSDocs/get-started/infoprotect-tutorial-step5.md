@@ -1,5 +1,5 @@
 ---
-title: "빠른 시작 자습서 5단계 | Azure Information Protection"
+title: "빠른 시작 자습서 5단계 - AIP"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서 5단계입니다."
 keywords: 
 author: cabailey
@@ -14,8 +14,9 @@ ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 7d8efb8d590e75979c98f14951f2cda389e58c4c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 351ba4f71ac36194494ed315466522120a61692c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -129,8 +130,3 @@ ms.openlocfilehash: 7d8efb8d590e75979c98f14951f2cda389e58c4c
 Azure Information Protection [질문과 대답](faqs.md)에서 일부 내용을 읽어보고 다른 설명서 문서의 내용도 살펴보는 것이 도움이 될 수 있습니다. 그러나 조직에 대해 Azure Information Protection 배포를 시작할 준비가 되면 그다음 단계로 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 확인해야 합니다. 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

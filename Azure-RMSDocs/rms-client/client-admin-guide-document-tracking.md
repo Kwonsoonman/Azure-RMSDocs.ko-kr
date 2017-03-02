@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection에 대한 문서 추적 구성 및 사용 | Azure Information Protection"
+title: "Azure Information Protection에 대한 문서 추적"
 description: "Azure Information Protection에 대한 문서 추적을 구성하고 사용하는 관리자를 위한 지침 및 정보입니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 569c60d502ddcf3169ec0955a76312a50451ec72
-ms.openlocfilehash: a50a358f6552eb4ddd4cde982f2aa01504c1d555
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: aa3b80b7369348f87adc440d6f7a91977aa0fc7c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -85,9 +86,4 @@ Azure Information Protection 클라이언트에 대한 문서 추적 사이트�
 - [PowerShell 명령](client-admin-guide-powershell.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

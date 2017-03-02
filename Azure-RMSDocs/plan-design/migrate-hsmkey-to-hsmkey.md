@@ -1,10 +1,10 @@
 ---
-title: "2단계&colon; HSM 보호된 키-HSM 보호된 키 마이그레이션 | Azure Information Protection"
+title: "HSM 보호된 키-HSM 보호된 키 마이그레이션 - AIP"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS HSM으로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 4d140edf04ec6703e58f320b5b4be55c0ebfbd45
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d0bb1cad20acdc16ee47c4a970a0cc095d07dc75
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -93,9 +94,4 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

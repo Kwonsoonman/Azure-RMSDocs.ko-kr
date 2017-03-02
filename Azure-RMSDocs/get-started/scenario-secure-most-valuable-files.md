@@ -1,10 +1,10 @@
 ---
-title: "시나리오 - 가장 중요한(소수) 파일 보호 | Azure Information Protection"
+title: "AIP 시나리오 - 가장 중요한(소수) 파일 보호"
 description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0f2fb608be647e967d8e5857414f25ebba1d4d29
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f096a4ad7333d24c7bce0dd729b40ebb203726c5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -146,8 +147,3 @@ ms.openlocfilehash: 0f2fb608be647e967d8e5857414f25ebba1d4d29
 -   이러한 파일에 액세스할 수 없거나 파일에서 의심스러운 변경을 발견하는 경우 IT 부서로부터 보호된 메일 메시지로 받은 24시간 지원 에스컬레이션 회선으로 전화하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

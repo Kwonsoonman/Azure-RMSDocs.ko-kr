@@ -1,18 +1,19 @@
 ---
-title: "빠른 시작 자습서 2단계 | Azure Information Protection"
+title: "빠른 시작 자습서 2단계 - AIP"
 description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서 2단계입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
 translationtype: Human Translation
-ms.sourcegitcommit: 8ad1ff05f642571bfe7f4170cb88e29d05515e59
-ms.openlocfilehash: f3ec39af7bdbc63169c09eefa54c29cfc4cee40b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 39dfa8a1c4dabf32f8b62f08a674152f41a5b96a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -60,9 +61,15 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     새 **Label: Confidential**(레이블: 기밀) 블레이드에 이제 각 레이블에 사용할 수 있는 설정이 표시됩니다. 
 
-2. **Label: Confidential**(레이블: 기밀) 블레이드의 **Set RMS template for protecting documents and emails containing this label**(이 레이블을 포함하는 문서 및 전자 메일을 보호하도록 RMS 템플릿 설정) 섹션으로 이동합니다.
+2. **Label: Confidential**(레이블: 기밀) 블레이드에서 **Set permissions for documents and emails containing this label**(이 레이블을 포함하는 문서 및 메일에 대한 사용 권한 설정) 섹션으로 이동합니다.
+
+    **Protection**(보호) 옵션을 선택합니다.
     
-    **Select RMS template from**(RMS 템플릿 선택) 옵션에서 기본값 **Azure RMS**를 유지합니다. 그런 다음 **Select RMS template**(RMS 템플릿 선택)에서 드롭다운 상자를 클릭하고 기본 템플릿 **\<조직 이름> - Confidential**(기밀)을 선택합니다. 
+    ![Azure Information Protection 레이블에 대한 보호 구성](../media/info-protect-protection-bar.png) 
+    
+    그러면 **Permissions**(사용 권한) 블레이드가 열립니다.
+    
+3. **Permissions**(사용 권한) 블레이드에서 **Azure RMS**가 선택되어 있고 **Select template**(템플릿 선택)도 선택되어 있는지 확인한 다음 드롭다운 상자를 클릭하고 기본 템플릿 **\<조직 이름> - Confidential**(기밀)을 선택합니다.     
     
     예를 들어 경우 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - Confidential**(기밀)이 표시되고 이를 선택합니다. 
     
@@ -70,7 +77,9 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     이 기본 Azure 권한 관리 템플릿을 사용하지 않도록 설정한 경우 대체 템플릿을 선택합니다. 그러나 부서별 템플릿을 선택하는 경우 계정이 범위에 포함되는지 확인합니다.
     
-3. **Set visual marking**(시각적 표시 설정) 섹션으로 이동합니다.
+4. **Done**(완료)을 클릭하여 변경 내용을 저장하고 **Permissions**(사용 권한) 블레이드를 닫습니다.
+
+5. **Label: Confidential**(레이블: 기밀) 블레이드로 돌아가서 **Set visual marking**(시각적 표시 설정) 섹션으로 이동합니다.
     
     **Documents with this label have a watermark**(이 레이블이 있는 문서는 워터마크를 포함함) 설정에서 **On**(켜기)을 클릭하고 **Text**(텍스트) 상자에 조직 이름을 입력합니다. 예를 들어 **VanArsdel, Ltd**를 입력합니다. 
     
@@ -78,7 +87,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     워터마크의 크기, 색, 레이아웃을 변경할 수는 있지만 지금은 기본값 그대로 유지하겠습니다.
     
-4. **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션으로 이동합니다.
+6. **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션으로 이동합니다.
     
     **Add a new condition**(새 조건 추가)을 클릭하고 **Condition**(조건) 블레이드에서 다음을 선택합니다.
     
@@ -94,23 +103,23 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     **Save**(저장)를 클릭하여 **Label: Confidential**(레이블: 기밀) 블레이드로 돌아갑니다.
 
-5. **Label: Confidential**(레이블: 기밀) 블레이드에 **Credit Card Number**(신용 카드 번호)가 **CONDITION NAME**(조건 이름)으로 표시되고 **OCCURRENCES**(발생 횟수)는 **1**로 표시됩니다.
+7. **Label: Confidential**(레이블: 기밀) 블레이드에 **Credit Card Number**(신용 카드 번호)가 **CONDITION NAME**(조건 이름)으로 표시되고 **OCCURRENCES**(발생 횟수)는 **1**로 표시됩니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 신용 카드 조건 구성](../media/step2-see-condition.png)
 
-6. **Select how this label is applied**(이 레이블 적용 방법 선택)에서 기본값을 **Recommended**(권장)로 유지합니다. 기본 정책 팁을 변경하지 마세요.
+8. **Select how this label is applied**(이 레이블 적용 방법 선택)에서 기본값을 **Recommended**(권장)로 유지합니다. 기본 정책 팁을 변경하지 마세요.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 권장 분류](../media/step2-keep-recommended.png)
 
-7. **Enter notes for internal housekeeping**(내부 하우스키핑을 위한 메모 입력) 상자에 **For testing purposes only**(테스트 전용)를 입력합니다.
+9. **Enter notes for internal housekeeping**(내부 하우스키핑을 위한 메모 입력) 상자에 **For testing purposes only**(테스트 전용)를 입력합니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 형식 참고 사항](../media/step2-type-notes.png)
 
-8. **Label: Confidential**(레이블: 기밀) 블레이드에서 **Save**(저장)를 클릭합니다. 그런 다음 **정책:글로벌** 블레이드에서 **저장**을 다시 클릭합니다.
+10. **Label: Confidential**(레이블: 기밀) 블레이드에서 **Save**(저장)를 클릭합니다. 그런 다음 **정책:글로벌** 블레이드에서 **저장**을 다시 클릭합니다.
 
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책 구성됨](../media/info-protect-policy-configured.png)
 
-9. 이제 변경을 수행하고 변경 내용을 저장했으므로 이러한 내용을 사용자에게 제공하기 위해 초기 **Azure Information Protection** 블레이드에서 **게시**와 **예**를 클릭하여 게시를 확인합니다.
+11. 이제 변경을 수행하고 변경 내용을 저장했으므로 이러한 내용을 사용자에게 제공하기 위해 초기 **Azure Information Protection** 블레이드에서 **게시**와 **예**를 클릭하여 게시를 확인합니다.
 
 이 자습서를 완료한 후 Azure 포털을 닫거나, 열어 둔 채로 추가 구성 옵션을 사용해 볼 수 있습니다.
 
@@ -126,8 +135,3 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 [3단계 &#187;](infoprotect-tutorial-step3.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

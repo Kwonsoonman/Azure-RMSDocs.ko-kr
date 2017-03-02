@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection 클라이언트 파일 및 사용 현황 로깅 | Azure Information Protection"
+title: "Azure Information Protection 클라이언트 파일 및 사용 현황 로깅"
 description: "Windows용 Azure Information Protection 클라이언트의 클라이언트 파일 및 사용 현황 로깅에 대한 정보"
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 279e70416248e51dfc2331945b6193aa285c4003
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a1211af06c24c79cfce262d1f2e1eb8add2724b8
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -100,9 +101,4 @@ Azure Information Protection 클라이언트와 연결된 모든 로그 파일�
 - [PowerShell 명령](client-admin-guide-powershell.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

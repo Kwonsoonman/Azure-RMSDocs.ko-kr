@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 공유 응용 프로그램 기술 개요 | Azure Information Protection"
+title: "RMS 공유 앱에 대한 기술 개요 - AIP"
 description: "Windows용 RMS 공유 응용 프로그램 배포를 담당하는 기업 네트워크의 관리자와 관련된 기술 세부 정보를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/04/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 770be3f7423f8d47439096393bba7464629646c5
-ms.openlocfilehash: b90a0e1ab363c1d7f87d0b1a18503da641bf7cfb
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 532a379aa303e65d111d6ba0e360f34082b25014
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,7 +76,6 @@ RMS 공유 응용 프로그램이 적용하는 기본 보호 수준을 변경할
 |.tiff|.ptiff|
 |.bmp|.pbmp|
 |.gif|.pgif|
-|.giff|.pgiff|
 |.jpe|.pjpe|
 |.jfif|.pjfif|
 |.jt|.pjt|
@@ -138,9 +138,4 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

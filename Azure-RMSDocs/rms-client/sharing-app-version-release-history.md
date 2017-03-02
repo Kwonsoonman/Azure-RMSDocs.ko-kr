@@ -1,10 +1,10 @@
 ---
-title: "권한 관리 공유 응용 프로그램&colon; 버전 릴리스 기록 | Azure Information Protection"
+title: "RMS 공유 앱&colon; 버전 릴리스 기록 - AIP"
 description: "Windows용 Rights Management 공유 응용 프로그램의 각 릴리스에서 새롭게 추가되었거나 변경된 기능을 살펴봅니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: aded487e9d7f7bc8341c7f6e1d6ac4e673b55c56
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 811c89ef6922f6939e7a7d13ed707c6ebe6aafd6
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -130,9 +131,4 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 -   **조직 내의 여러 메일 도메인 지원**: AD RMS를 사용하며 조직의 사용자에게 여러 메일 도메인이 있는 경우 이 업데이트를 통해 사용자가 다른 도메인의 조직 사용자에 의해 보호된 콘텐츠를 사용할 수 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [AD RMS에만 해당: 조직 내의 여러 메일 도메인 지원](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) 섹션을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

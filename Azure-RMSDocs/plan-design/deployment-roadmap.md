@@ -1,5 +1,5 @@
 ---
-title: "Azure Information Protection 배포 로드맵 | Azure Information Protection"
+title: "Azure Information Protection 배포 로드맵"
 description: "다음 단계에 따라 조직에 대해 Azure Information Protection을 준비, 구현 및 관리합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 617ce3204296a4f9a7affc2750684871d60be65e
-ms.openlocfilehash: d2888a1612e1c3521773deae7b49049c702137b4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4128188d0fba56a5b61fe16a6f0128ec2dc24c4a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -191,9 +192,4 @@ Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파�
 Azure Rights Management 서비스 사용을 시작하면 Windows PowerShell용을 통해 관리 변경 작업을 스크립트로 작성하거나 자동화할 수 있습니다. 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스](../deploy-use/administer-powershell.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

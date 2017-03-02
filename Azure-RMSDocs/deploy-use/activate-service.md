@@ -1,5 +1,5 @@
 ---
-title: "Azure Rights Management 활성화 | Azure Information Protection"
+title: "Azure Rights Management 활성화 - AIP"
 description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 문서 및 전자 메일 보호를 시작할 수 있도록 하려면 Azure Rights Management 서비스를 활성화해야 합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 47de236f07996eed3f1ceb51309c6315d4625128
-ms.openlocfilehash: 10e7f8cb50089281fc406e077fe6e5ca34e80fb5
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: dcccc07758cef4428d5ee0430f67047d645f2104
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -84,8 +85,3 @@ Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정�
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

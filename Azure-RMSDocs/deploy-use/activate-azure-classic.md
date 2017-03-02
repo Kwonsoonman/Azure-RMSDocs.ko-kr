@@ -1,10 +1,10 @@
 ---
-title: "Azure 클래식 포털에서 Azure Rights Management를 활성화하는 방법 | Azure Information Protection"
+title: "Azure 클래식 포털로 Azure RMS 활성화 - AIP"
 description: "Azure Portal 액세스 권한이 있는 경우의 Azure Rights Management 서비스 활성화 지침을 제공합니다. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Information Protection Premium 구독이 있는 경우입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 3565277446866514f975390d4fee233117eeccec
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 444d74c957ec6e243858fcddfaac36951c257a9d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -59,8 +60,3 @@ Rights Management 서비스가 사용되도록 설정되고 사용할 준비가 
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

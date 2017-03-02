@@ -1,5 +1,5 @@
 ---
-title: "Azure Rights Management 빠른 배포 가이드 | Azure Information Protection"
+title: "Azure RMS 빠른 배포 가이드 - AIP"
 description: "조직 데이터를 보호하기 위해 Azure Rights Management 서비스를 보다 빠르게 배포하고 사용하는 방법을 설명하는 가이드입니다. 먼저 특정 시나리오 목록에서 구현할 시나리오를 선택합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: abe3de4cb972053179a87023c91509168ffeffc4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2e50dc9d53550f35f5c589cdb1b384e0abf585e0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -147,9 +148,4 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 구현 중인 솔루션은 중요한 데이터를 보호하는 데 도움이 되며 해당 데이터에 대한 제어를 유지하는 도구를 제공합니다. 이러한 변경을 구현하는 동안 협조해 주셔서 감사합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -1,5 +1,5 @@
 ---
-title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 3단계 | Azure Information Protection"
+title: "AD RMS-Azure Information Protection 마이그레이션 - 3단계"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 세 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 6~7단계가 포함됩니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1c6496d544334bd03d1df263acafefe1ebfb7707
-ms.openlocfilehash: 73a75f9bc1bcba4924570b6460c5fad4e0b877f4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d5de26f757803f5c354814b9cbcc965de382192c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -215,8 +216,3 @@ Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것
 마이그레이션을 계속하려면 [4단계 - 사후 마이그레이션 작업](migrate-from-ad-rms-phase4.md)으로 이동합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO3-->
-
-

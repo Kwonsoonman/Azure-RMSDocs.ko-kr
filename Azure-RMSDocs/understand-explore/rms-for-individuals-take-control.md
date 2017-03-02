@@ -1,10 +1,10 @@
 ---
-title: "관리자가 개인용 RMS에 대해 생성된 계정을 제어하는 방법 | Azure Information Protection"
+title: "개인용 RMS용으로 만들어진 계정 제어 - AIP"
 description: "조직의 개인용 RMS 구독을 유료 구독으로 전환하지 않으려는 경우 Azure Active Directory에서 사용자 계정을 제어하는 방법을 설명합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a83880d0-f0f9-4a32-9e00-2f6635d7cc8d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c8ffebad1130c8ba084c0feb83aa3ec54692ad54
-ms.openlocfilehash: 19b71ee6016971e1d989db8961b8b77a50fd0124
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ff8cd150ce438a7b9ad5203dfb6d9d01c1a0d85a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -46,8 +47,3 @@ Azure 디렉터리에서 사용자 계정을 제어하거나, 사용자가 개�
 관리자 대신 사용자가 Azure Active Directory에 개인용 RMS에 대한 자신의 계정을 만들 수 있다면 이 작업을 수행했는지 어떻게 확인할 수 있을까요?  [사용자가 개인용 RMS에 등록했는지 확인하는 방법](rms-for-individuals-identify-sign-up.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

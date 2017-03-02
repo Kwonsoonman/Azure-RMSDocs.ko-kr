@@ -1,18 +1,19 @@
 ---
-title: "레이블을 삭제하거나 순서를 변경하는 방법 | Azure Information Protection"
+title: "Azure Information Protection 레이블 삭제 또는 순서 변경"
 description: "Azure Information Protection 정책에서 구성하여 사용자의 Information Protection 표시줄에 표시되는 레이블을 삭제하거나 순서를 변경할 수 있습니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d8e0f53d85ee7a02ee7fef66eaf76ce6551535d2
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: df667a8580af71d808752d569a6148852faec82c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -58,10 +59,5 @@ Azure Information Protection 정책에서 구성하여 사용자의 Information 
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

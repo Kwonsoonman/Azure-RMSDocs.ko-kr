@@ -1,5 +1,5 @@
 ---
-title: "클라이언트 | Azure Information Protection"
+title: "Azure Information Protection용 클라이언트"
 description: "Microsoft Azure Information Protection은 조직 데이터를 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다. 클라이언트(Azure Information Protection 클라이언트 또는 Rights Management 클라이언트)는 컴퓨터와 모바일 장치에서 실행하는 응용 프로그램과 통합됩니다."
 author: cabailey
 ms.author: cabailey
@@ -14,8 +14,9 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 190b5d2a25dc9479aa2ba34fd884795e0de40238
-ms.openlocfilehash: f52f3e04f41e33828bd9a9c5c1aad3ef460b2d23
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 5b17d639382238ce4669bc02beadb80570b5ca6f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -51,8 +52,3 @@ Windows용 Rights Management 공유 응용 프로그램 및 RMS 보호 도구는
 [Azure Information Protection 및 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

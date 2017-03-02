@@ -1,5 +1,5 @@
 ---
-title: "Rights Management 공유 응용 프로그램 관리자 가이드 | Azure Information Protection"
+title: "RMS 공유 응용 프로그램 관리자 가이드 - AIP"
 description: "Windows용 Microsoft Rights Management 공유 응용 프로그램 배포를 담당하는 엔터프라이즈 네트워크의 관리자를 위한 지침과 정보를 제공합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 156474cce6bb9026d56d65eff5acc5ce4ae7edf6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ee9d92752bb2839df859d01e80d3b0ecaeb678f9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -407,9 +408,4 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 보호 수준(기본 및 일반) 간의 차이점 설명, 지원되는 파일 형식 및 파일 이름 확장명, 기본 보호 수준을 변경하는 방법을 포함하는 자세한 기술 정보는 [Rights Management 공유 응용 프로그램에 대한 기술 개요](sharing-app-admin-guide-technical.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

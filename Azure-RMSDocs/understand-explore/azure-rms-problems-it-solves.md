@@ -1,5 +1,5 @@
 ---
-title: "Azure RMS를 통해 해결할 수 있는 문제 | Azure Information Protection"
+title: "Azure Rights Management로 해결되는 문제 - AIP"
 description: "조직에 해당될 수 있는 요구 사항이나 문제에 대해 알아보고 Azure RMS 기술을 통해 이러한 요구 사항을 충족하고 문제를 해결하는 방법을 파악합니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 949cbe07234f78ca046aec1fc2590adf86f00a06
-ms.openlocfilehash: 40f242c31553545651794e6e5a8f744963bb541b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 5051ed614d8611c89e037ea633f15b7f0f344020
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -75,8 +76,3 @@ Azure Rights Management는 다음과 같은 보안, 준수 및 규정 요구 사
 Azure Rights Management 서비스 작동 방식에 대한 보다 기술적인 정보에 관심이 있는 경우 [Azure RMS 작동 방식](how-does-it-work.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO2-->
-
-

@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 보호 준비 | Azure Information Protection"
+title: "Azure Rights Management 보호 준비 - AIP"
 description: "조직에서 문서 및 전자 메일을 보호할 수 있도록 Azure Rights Management 서비스를 사용할 준비가 완료되었는지 확인하세요."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: b0c5596feec3f61ad25fe47416a1383f453bdc6b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 909becbdf902d552a967506b80f173e59cf756c7
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -38,10 +39,5 @@ Azure Information Protection을 조직에 배포하기 전에 다음 사항이 �
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

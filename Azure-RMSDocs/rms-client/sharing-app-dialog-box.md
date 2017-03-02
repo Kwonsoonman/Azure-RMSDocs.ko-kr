@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션 | Azure Information Protection"
+title: "RMS 공유 앱의 대화 상자 옵션 - AIP"
 description: "RMS 공유 응용 프로그램의 보호 추가 대화 상자 또는 보호된 항목 공유 대화 상자에서 옵션을 지정하는 방법을 설명합니다. 공유하는 파일을 보호하거나 준비된 파일을 보호하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d70dbd0f9fc4119a506551e7e058b29cc21562bd
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 190d8ac29bec0fc3825eb9fe099e06bd16e2112f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.openlocfilehash: d70dbd0f9fc4119a506551e7e058b29cc21562bd
 
 |옵션|설명|
 |----------|---------------|
-|**사용자**|Outlook에서 전자 메일 주소를 미리 지정하지 않은 경우 파일을 열려는 사용자의 전자 메일 주소를 입력합니다.<br /><br />RMS 공유 앱은 일부 메일 주소를 지원하지 않습니다.<br /><br />조직이 Rights Management(AD RMS)의 온-프레미스 버전을 사용하는 경우 지정할 수 있는 전자 메일 주소는 조직 내의 사람을 제한합니다. 이를 적용할 때 외부 전자 메일 주소를 지정하는 경우 회사의 구성을 사용하면 회사 내에서 보호된 콘텐츠를 공유할 수 있다는 메시지가 표시됩니다. <br /><br /> 조직에서 Azure RMS를 사용하는 경우 해당 조직 내 사용자나 다른 조직의 사용자에 대한 메일 주소를 지정할 수 있습니다.<br /><br />예를 들면 다음과 같습니다. **janetm@contoso.com; p.dover@fabrikam.com**<br /><br />개인 메일 주소는 RMS 공유 앱에서 현재 지원되지 않습니다.|
+|**사용자**|Outlook에서 전자 메일 주소를 미리 지정하지 않은 경우 파일을 열려는 사용자의 전자 메일 주소를 입력합니다.<br /><br />RMS 공유 앱은 일부 메일 주소를 지원하지 않습니다.<br /><br />조직이 Rights Management(AD RMS)의 온-프레미스 버전을 사용하는 경우 지정할 수 있는 전자 메일 주소는 조직 내의 사람을 제한합니다. 이를 적용할 때 외부 전자 메일 주소를 지정하는 경우 회사의 구성을 사용하면 회사 내에서 보호된 콘텐츠를 공유할 수 있다는 메시지가 표시됩니다. <br /><br /> 조직에서 Azure RMS를 사용하는 경우 해당 조직 내 사용자나 다른 조직의 사용자에 대한 메일 주소를 지정할 수 있습니다.<br /><br />예를 들면 다음과 같습니다. **janetm@contoso.com, p.dover@fabrikam.com**<br /><br />개인 메일 주소는 RMS 공유 앱에서 현재 지원되지 않습니다.|
 |**일반 보호**|이 옵션을 선택하면 선택한 파일을 고유하게 보호할 수 없다는 것을 의미합니다. 자세한 내용은 다음을 참조하세요. 이 페이지의 [일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](#whats-the-difference-between-generic-protection-and-built-in-native-protection)|
 |**뷰어 – 보기 전용**<br /><br />**검토자 – 보기 및 편집**<br /><br />**공동 저자 - 보기, 편집, 복사 및 인쇄**<br /><br />**공동 저자 - 모든 사용 권한**<br /><br />참고: 이러한 옵션은 모두 이름 앞에 둥근 아이콘이 있으며 이는 지구본을 나타냅니다. 이 아이콘은 일반적으로 사용할 수 있으므로 다른 조직의 누군가에게 첨부 파일을 보낼 때 이러한 옵션 중 하나를 선택합니다.|보호된 문서에 대한 권한을 정의하려면 이러한 옵션 중 하나를 선택합니다. 각 옵션을 클릭하여 설명을 봅니다.<br /><br />이러한 옵션 중 하나를 선택하면 **사용자** 에서 지정한 사람만이 지정한 권리가 있어서 문서를 열고 사용합니다. 예를 들어 그들이 다른 사람에게 전달하는 경우 문서가 열리지 않습니다.|
 |관리자가 구성한 정책 템플릿입니다.<br /><br />예를 들어 회사 이름이 Contoso, Ltd이면 **Contoso, Ltd - 기밀 보기 전용**입니다.<br /><br />참고: 이러한 옵션은 모두 이름 앞에 네모난 아이콘이 있으며 이는 사무실 건물을 나타냅니다. 이 아이콘은 일반적으로 사용할 수 있으므로 사용자의 조직의 누군가에게 첨부 파일을 보낼 때 이러한 옵션 중 하나를 선택합니다.|조직에서 일하는 사람과 문서를 공유하면 관리자가 구성한 사용 가능한 정책 템플릿을 참조합니다. 조직 외부의 문서를 공유하지 않아야 하는 경우 다음 중 하나를 선택합니다.<br /><br />이러한 옵션 중 하나를 선택하면 관리자는 문서에 대한 권한 및 열 수 있는 사람을 정의합니다.|
@@ -77,9 +78,4 @@ ms.openlocfilehash: d70dbd0f9fc4119a506551e7e058b29cc21562bd
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

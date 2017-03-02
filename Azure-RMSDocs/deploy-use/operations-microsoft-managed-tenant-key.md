@@ -1,10 +1,10 @@
 ---
-title: "Microsoft 관리 - 테넌트 키 수명 주기 작업 | Azure Information Protection"
+title: "Microsoft 관리 - AIP 테넌트 키 수명 주기 작업"
 description: "Microsoft에서 Azure Information Protection용 테넌트 키를 관리하는 경우(기본값)와 관련하여 수명 주기 작업에 대한 정보를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0aad5eeb88dd471ece1bf6425a4efe8050bbdf2c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: caacc4174ddb63e9c9091c0df294b93cf947a7c4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -96,10 +97,5 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 |RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure Information Protection을 업데이트하고 모든 고객에게 테넌트 키를 갱신하도록 지시해야 합니다.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-<!--HONumber=Jan17_HO4-->
 
 

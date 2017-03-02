@@ -1,5 +1,5 @@
 ---
-title: "Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램 | Azure Information Protection"
+title: "Windows 및 모바일 플랫폼용 RMS 공유 앱 - AIP"
 description: "RMS 공유 응용 프로그램에서 Azure RMS를 지원하는 방식을 설명합니다. Azure RMS는 Office 2010을 지원하기 위해 필요하며 Windows 컴퓨터, Mac 컴퓨터 및 모바일 장치에서도 사용할 수 있는 무료 다운로드 가능 응용 프로그램입니다."
 author: cabailey
 ms.author: cabailey
@@ -13,8 +13,9 @@ ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffed64826982756072456be18cced0226b6bb6cc
-ms.openlocfilehash: 5c5f34e9009d87da4ea4091b619dfc75a1361251
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3c96d8718f42dcedebba03354c149bb2b9667d66
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -60,9 +61,4 @@ Windows 컴퓨터에서 RMS 공유 응용 프로그램은 사용자가 이미 �
 다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

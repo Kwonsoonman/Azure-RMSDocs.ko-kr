@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호) | Azure Information Protection"
+title: "RMS 공유 앱을 사용하여 내부에서 보호 - AIP"
 description: "컴퓨터, 서버 또는 다른 저장 장치에 파일을 안전하게 저장하는 방법에 대한 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 9ae44cf7beba0f4af3078eedeac352e9792d497c
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a0654dba53f493551b2cc4d1fbb8790f246e0c18
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -66,8 +67,3 @@ ms.openlocfilehash: 9ae44cf7beba0f4af3078eedeac352e9792d497c
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

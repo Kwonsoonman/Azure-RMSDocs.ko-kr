@@ -46,6 +46,7 @@
 ##### [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)
 #### [방법: 명시적 소유자 권한 추가](add-explicit-owner-rights.md)
 #### [방법: 권한 사용 응용 프로그램 디버그](debugging-applications-that-use-ad-rms.md)
+#### [방법: 앱 배포](how-to-deploy-app.md)
 #### [방법: 문서 추적 및 해지 사용](tracking-content.md)
 #### [방법: 메일 알림 사용](how-to-enable-email-notification.md)
 #### [방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)
@@ -65,8 +66,3 @@
 #### [Structures](https://msdn.microsoft.com/library/hh535294.aspx)(구조)
 #### [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)(오류 코드)
 ## [조건](terms.md) 
-
-
-<!--HONumber=Jan17_HO4-->
-
-

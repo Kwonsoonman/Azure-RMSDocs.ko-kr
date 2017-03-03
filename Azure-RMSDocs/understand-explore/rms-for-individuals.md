@@ -15,6 +15,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
 ms.openlocfilehash: b864f8223865661184ce5742e23313e88cae1db5
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,9 +41,4 @@ Azure Information Protection 클라이언트를 사용하여 파일을 보호하
 단계별 지침과 백그라운드에서 발생하는 작업의 기술 개요는 [개인용 RMS 등록 방법](rms-for-individuals-user-sign-up.md)을 참조하세요. 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

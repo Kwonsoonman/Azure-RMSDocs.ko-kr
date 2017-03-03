@@ -17,6 +17,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
 ms.openlocfilehash: 0c16b7c6bd494a0350a511a3b415f781aecf613d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -125,8 +126,3 @@ RMS Client 2.1을 응용 프로그램에 통합하는 예로 [권한 보호 폴�
 * [응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -16,6 +16,7 @@ ms.suite: ems
 translationtype: Human Translation
 ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
 ms.openlocfilehash: 85cd61e564b066458618c02b4ac20cddf6b7e183
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -51,8 +52,3 @@ ms.openlocfilehash: 85cd61e564b066458618c02b4ac20cddf6b7e183
 | [Android 사용 시나리오](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 이상 버전의 4.x SDK|**Java 코드 예제**는 RMS SDK를 익히는 데 중요한 개발 시나리오를 나타냅니다. 예를 들어 Microsoft 보호된 파일 형식, 사용자 지정 보호된 파일 형식 및 사용자 지정 UI 컨트롤 사용이 포함됩니다.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

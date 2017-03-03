@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: fec4ca2541b28fd9d91286fceaee0466fc445364
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 343ac5f79902379e45efcb6979a115ba4c00d1c5
+ms.openlocfilehash: 503cb76825d0092e8562d39281b1d702edaf6438
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -77,7 +77,7 @@ Microsoft .NET Framework
 
 - Azure Information Protection 클라이언트가 설치되면 사용자가 Office 응용 프로그램에서 실행할 수 있는 진단 테스트 및 다시 설정 옵션: **홈** 탭의 **보호** 그룹에서 **보호**를 클릭하고 **도움말 및 피드백**을 클릭한 다음 **진단 실행**을 클릭합니다. 
 
-    이 옵션에 대한 자세한 내용은 클라이언트 설치 설명서에서 [설치 또는 연결 상태를 확인하거나 피드백을 보내려면](client-admin-guide.md#to-verify-installation-connection-status-or-send-feedback) 섹션을 참조하세요.
+    이 옵션에 대한 자세한 내용은 클라이언트 설치 설명서에서 [설치 또는 연결 상태를 확인하거나 피드백을 보내려면](client-admin-guide.md#additional-checks-to-verify-installation-connection-status-or-send-feedback) 섹션을 참조하세요.
 
 ## <a name="version-11230"></a>버전 1.1.23.0
 

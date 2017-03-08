@@ -4,7 +4,7 @@ description: "개발자는 Azure Information Protection을 사용하여 모든 �
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/30/2017
+ms.date: 02/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
 translationtype: Human Translation
-ms.sourcegitcommit: d00a735328bf04aad365a7577ef33ea24706ffc7
-ms.openlocfilehash: 9a3e0f1ba6c563d6129ef824f565138b68b439b1
+ms.sourcegitcommit: 9a8b37f8e4e6d3a22c5ae4b43ffb82bfd0482037
+ms.openlocfilehash: ee257e733177077caaf3cf3b579a1b3718479121
+ms.lasthandoff: 02/10/2017
 
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
@@ -35,7 +36,7 @@ ms.openlocfilehash: 9a3e0f1ba6c563d6129ef824f565138b68b439b1
 - [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms)는 DLP RMS 지원 응용 프로그램이 제한된 콘텐츠를 보호 및 사용하기 위해 RMS 파일 API를 사용하여 수행해야 하는 기본 단계를 안내하는 샘플 RMS 지원 DLP 응용 프로그램입니다.
 - [IpcAzureApp](https://github.com/Azure-Samples/active-directory-dotnet-rms)은 Azure 응용 프로그램에서 RMS SDK를 사용하여 Azure Blob Storage의 데이터를 보호하는 방법을 보여 주는 샘플입니다.
 - [RmsFileWatcher](https://github.com/Azure-Samples/active-directory-dotnet-rms)는 파일 시스템의 디렉터리를 감시하고 파일 추가, 파일 수정 등 파일이 변경될 때마다 RMS 보호 정책을 적용하는 Windows 응용 프로그램을 빌드하는 방법을 보여 주는 샘플입니다.
-- [ProtectFilesInDir](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/EncryptFilesInDir)는 디렉터리를 입력으로 사용하는 간단한 콘솔 응용 프로그램 샘플이며 재귀를 사용하지 않고 해당 디렉터리의 모든 파일만 보호합니다.
+- [ProtectFilesInDir](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/ProtectFilesInDir)는 디렉터리를 입력으로 사용하는 간단한 콘솔 응용 프로그램 샘플이며 재귀를 사용하지 않고 해당 디렉터리의 모든 파일만 보호합니다.
 
 ## <a name="powershell-guides"></a>PowerShell 가이드
 
@@ -142,8 +143,3 @@ Microsoft의 Dan Plastina가 제공하는 [Azure Information Protection 소개](
 - [Azure Information Protection 용어 - ITPro](../get-started/terminology.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO5-->
-
-

@@ -1,10 +1,10 @@
 ---
-title: "정책 구성 | Azure Information Protection"
+title: "Azure Information Protection 정책 구성"
 description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5d1a5e3b85d5450bcb2064a6c3b95e6ad802eea3
-ms.openlocfilehash: 808f72be7c5b6a1f18a06ecefdfdf7fbf6febff6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2510c14fc10411783838516f45fdfd06fd73350d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -31,7 +32,7 @@ Azure Information Protection 정책을 구성하려면
 
 2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
 
-    그러면 **Azure Information Protection** 블레이드가 표시되며 모든 사용자에게 제공되는 글로벌 정보 보호 정책의 블레이드가 자동으로 열립니다. 이 블레이드에는 구성 가능한 다음 요소가 포함되어 있습니다.
+    그러면 **Azure Information Protection** 블레이드가 표시됩니다. 여기서 모든 사용자에게 적용되는 **전역** 정책을 열 수 있습니다. 또한 필요에 따라 범위가 지정된 정책을 추가하고 편집할 수 있습니다. **전역** Azure Information Protection 정책에는 구성할 수 있는 다음 요소가 포함됩니다.
 
     - 문서 및 전자 메일을 분류할 수 있는 레이블.
 
@@ -79,9 +80,5 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
 
-
-
-
-<!--HONumber=Dec16_HO1-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

@@ -1,6 +1,6 @@
 # [이해 및 탐색](/information-protection/understand-explore/what-is-information-protection)
 # [시작](requirements-azure-rms.md)
-## [Requirements](requirements.md)
+## [요구 사항](requirements.md)
 ### [Azure Active Directory 요구 사항](requirements-azure-ad.md)
 ### [데이터 보호를 위한 클라이언트 장치 지원](requirements-client-devices.md)
 ### [데이터 보호를 위한 응용 프로그램 지원](requirements-applications.md)
@@ -13,7 +13,7 @@
 ## [빠른 시작 자습서](infoprotect-quick-start-tutorial.md)
 ### [1단계: 서비스 활성화](infoprotect-tutorial-step1.md)
 ### [2단계: 정책 구성 및 게시](infoprotect-tutorial-step2.md)
-### [3단계: 클라이언트 및 응용 프로그램 설치](infoprotect-tutorial-step3.md)
+### [3단계: 클라이언트 설치](infoprotect-tutorial-step3.md)
 ### [4단계: 실제 작동 방식 확인 - 레이블 지정, 분류, 보호](infoprotect-tutorial-step4.md)
 ### [5단계: 실제 작동 방식 확인 - 보호되고 추적 중인 항목 공유](infoprotect-tutorial-step5.md)
 ## [신속한 배포 가이드](rapid-deployment-guide.md)
@@ -28,9 +28,4 @@
 # [서비스 배포 및 사용](/information-protection/deploy-use/activate-service)
 # [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

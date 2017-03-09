@@ -1,10 +1,10 @@
 ---
-title: "Azure 권한 관리에 대한 사용 권한 구성 | Azure Information Protection"
+title: "Azure Rights Management에 대한 사용 권한 구성 - AIP"
 description: "Azure Information Protection의 Azure Rights Management 서비스를 사용하여 파일이나 전자 메일을 보호할 때 사용되는 특정 권한을 소개하고 설명합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1107f484f204e64d76c389daef4d9decbfbb20e8
-ms.openlocfilehash: 46c15d7594110d48f34b1648b2afb17738712720
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 34f77a0ff33a9a960e12bc53d62b38f4e6553c80
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -56,18 +57,18 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 |사용 권한 수준|응용 프로그램|포함된 권한(일반 이름)|
 |---------------------|----------------|---------------------------------|
-|보기 권한자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트(미리 보기)|보기, 열기, 읽기, 회신, 전체 회신|
-|검토자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트(미리 보기)|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
-|공동 작성자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트(미리 보기)|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기 [[2]](#footnote-2), 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
-|공동 소유자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트(미리 보기)|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1), 모든 권한|
+|보기 권한자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 회신, 전체 회신|
+|검토자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
+|공동 작성자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기 [[2]](#footnote-2), 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
+|공동 소유자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1), 모든 권한|
 
 ----
 
 ###### <a name="footnote-1"></a>각주 1
-Windows용 Rights Management 공유 응용 프로그램 또는 Windows용 Azure Information Protection 클라이언트(미리 보기)에는 해당되지 않습니다.
+Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램에는 해당되지 않습니다.
 
 ###### <a name="footnote-2"></a>각주 2
-Windows용 Azure Information Protection 클라이언트(미리 보기)에는 포함되어 있지 않습니다. 이 클라이언트에서는 내보내기 사용 권한에 보호 제거 기능이 포함되어 있습니다.
+Windows용 Azure Information Protection 클라이언트에는 포함되어 있지 않습니다. 이 클라이언트에서는 내보내기 사용 권한에 보호 제거 기능이 포함되어 있습니다.
 
 
 ## <a name="rights-included-in-the-default-templates"></a>기본 템플릿에 포함된 권한
@@ -103,9 +104,6 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 ## <a name="see-also"></a>참고 항목
 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
-
-
-
-<!--HONumber=Dec16_HO1-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

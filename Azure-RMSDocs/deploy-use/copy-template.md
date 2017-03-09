@@ -1,10 +1,10 @@
 ---
-title: "템플릿 복사 | Azure Information Protection"
+title: "Azure RMS 템플릿 복사 - AIP"
 description: "기존 템플릿과 설정이 매우 비슷한 새 템플릿을 쉽게 만들 수 있는 템플릿 복사 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f329ce49-e044-4c11-821d-5496d83c1bb3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: e0945e9ab719fd4b686c3fb7932891ed92fa31c6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f9549ecc1a1140208dc2d6161424a589d2cb6cba
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,7 +37,4 @@ ms.openlocfilehash: e0945e9ab719fd4b686c3fb7932891ed92fa31c6
 ## <a name="see-also"></a>참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

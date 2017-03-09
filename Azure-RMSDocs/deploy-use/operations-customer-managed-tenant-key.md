@@ -1,10 +1,10 @@
 ---
-title: "고객 관리 - 테넌트 키 수명 주기 작업 | Azure Information Protection"
+title: "고객 관리 - AIP 테넌트 키 수명 주기 작업"
 description: "Azure Information Protection용 테넌트 키를 직접 관리하는 경우(BYOK(Bring Your Own Key) 시나리오)와 관련된 수명 주기 작업에 대한 정보를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fff17f76361f8236974c6aeb21ed317c7d9883
-ms.openlocfilehash: 03c2e885bfb997fda2a2f675be3dee6bc8ea8138
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: fa92a0f3179c884b7e5fc278525a471a27cb2a96
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -65,10 +66,6 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 |현재 생성 HSM 기술에서 취약점이 발견되었습니다.|Microsoft에서 HSM을 업데이트해야 합니다. 취약점으로 인해 키가 노출되었다고 생각되면 Microsoft는 모든 고객에게 테넌트 키를 갱신할 것을 지시합니다.|
 |RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure Key Vault 또는 Azure Information Protection을 업데이트하고 모든 고객에게 테넌트 키를 갱신하도록 지시해야 합니다.|
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

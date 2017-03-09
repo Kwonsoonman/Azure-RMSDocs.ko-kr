@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 보호 준비 | Azure Information Protection"
+title: "Azure Rights Management 보호 준비 - AIP"
 description: "조직에서 문서 및 전자 메일을 보호할 수 있도록 Azure Rights Management 서비스를 사용할 준비가 완료되었는지 확인하세요."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: facb9bd0d21551e9170cd9be6e9abda24766f9fd
+ms.sourcegitcommit: 11ebd66a1ae05535814af159523bd49b7921d46d
+ms.openlocfilehash: fc80a4a65bd5fae1b8604c316a4e2354bbe8c8be
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -33,14 +34,14 @@ Azure Information Protection을 조직에 배포하기 전에 다음 사항이 �
 
     Exchange Online이 있는 경우 Exchange 관리 센터를 사용하여 메일 사용 가능 그룹을 만들고 사용할 수 있습니다. AD DS에서 Azure AD로 동기화하는 경우 보안 그룹 또는 배포 그룹 중 하나인 메일 사용 가능 그룹을 만들고 사용할 수 있습니다.
 
+### <a name="group-membership-caching"></a>그룹 구성원 자격 캐싱
+
+성능상의 이유로 Azure Rights Management 서비스에서 그룹 구성원이 캐시됩니다. 즉, 그룹 구성원 자격의 변경 내용이 적용되는 데 최대 3시간이 걸릴 수 있으며 이 시간은 변경될 수 있습니다. [사용자 지정 템플릿](../deploy-use/configure-custom-templates.md)을 구성하거나 [슈퍼 사용자 기능](../deploy-use/configure-super-users.md)에 대해 그룹을 사용하는 경우처럼 변경 적용에 따른 지연 시간 또는 Azure Rights Management 서비스 구성에서 그룹을 사용할 때 수행하는 테스트로 인한 지연 시간을 고려하세요. 
+
 ## <a name="activate-the-rights-management-service-for-data-protection"></a>데이터 보호를 위해 Rights Management 서비스 활성화
 문서 및 전자 메일 보호를 시작할 준비가 되면 이 기술을 사용할 수 있도록 Rights Management 서비스를 활성화합니다. 자세한 내용은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
 
 

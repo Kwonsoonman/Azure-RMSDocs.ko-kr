@@ -1,10 +1,11 @@
 ---
-title: "ADAL 인증을 위해 Azure RMS 구성 | Azure RMS"
-description: "Azure ADAL 기반 인증을 사용하기 위한 Azure RMS 구성 단계를 간략하게 설명합니다."
-keywords: "인증, RMS, ADAL"
+title: "ADAL 인증을 위한 앱 구성 | Microsoft Docs"
+description: "Azure ADAL 기반 인증을 사용하기 위한 Azure Information Protection 앱 구성 단계"
+keywords: "인증, RMS, ADAL, Information Protection,"
 author: bruceperlerms
+ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,24 +15,24 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b4abffcbe6e49ea25f3cf493a1e68fcd6ea25b26
-ms.openlocfilehash: 2588d10805ddfdc1c09db3008a424767fb528986
+ms.sourcegitcommit: b7415265d0e27896df2bdf6a62e7c875ba681345
+ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
 
 
 ---
 
-# ADAL 인증을 위해 Azure RMS 구성
+# <a name="configure-your-app-for-adal-authentication"></a>ADAL 인증을 위한 앱 구성
 
-이 항목에서는 Azure ADAL 기반 인증을 구성하기 위한 단계를 설명합니다.
+이 항목에서는 ADAL(Azure Active Directory Authentication Library) 기반 인증을 위한 앱을 구성하는 단계를 설명합니다.
 
-## Azure 인증 설정
+## <a name="azure-authentication-setup"></a>Azure 인증 설정
 
 다음이 필요합니다.
 
 - [Microsoft Azure에 대한 구독](https://azure.microsoft.com/en-us/)(무료 평가판이면 충분). 자세한 내용은 [사용자가 개인용 RMS를 등록하는 방법](../understand-explore/rms-for-individuals-user-sign-up.md)을 참조하세요.
 - Microsoft Azure 권한 관리에 대한 구독(무료 [개인용 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 계정이면 충분)
 
-> [!NOTE] 
+> [!NOTE]
 > Microsoft Azure 권한 관리에 대한 구독이 있는지 여부에 대해서는 IT 관리자에게 문의하고 다음 단계를 수행하도록 요청하세요. 조직에 구독이 없는 경우 IT 관리자에게 만들어 달라고 요청해야 합니다. 또한 IT 관리자는 *Microsoft 계정*(예: Hotmail)이 아닌 *회사 또는 학교 계정*으로 가입되어 있어야 합니다.
 
 Microsoft Azure에 등록한 후
@@ -77,19 +78,15 @@ Microsoft Azure에 등록한 후
 
 ![구성 선택](../media/ConfigYourApp.png)
 
->[!NOTE] 
+>[!NOTE]
 > **클라이언트 ID** 및 **리디렉션 URI**를 복사하고 RMS 클라이언트를 구성할 때 사용할 수 있도록 저장합니다.
 
 - 응용 프로그램 설정의 아래쪽으로 이동하고 **다른 응용 프로그램에 대한 권한**에서 **응용 프로그램 추가** 단추를 선택합니다.
 
->[!NOTE] 
+>[!NOTE]
 > Windows Azure Active Directory용으로 표시된 **위임된 권한**은 기본적으로 올바릅니다. **로그인 및 사용자 프로필 읽기** 옵션 하나만 선택해야 합니다.
 
 ![응용 프로그램 추가 선택](../media/PermissionsToOtherBtn.png)
-
-- 이제 **다음으로 시작** 입력란에 GUID `00000012-0000-0000-c000-000000000000`을 추가하고 확인 단추를 선택합니다.
-
-![GUID 추가](../media/AddGUID.png)
 
 - **Microsoft Rights Management** 옆에 있는 더하기(+) 단추를 선택합니다.
 
@@ -97,7 +94,7 @@ Microsoft Azure에 등록한 후
 
 - 이제 대화 상자의 왼쪽 아래 모서리에 있는 확인 표시를 선택합니다.
 
-![확인 표시 선택](../media/ChooseCheck.png)
+![확인 표시 선택](../media/choosecheck01.png)
 
 - 이제 Azure RMS용 응용 프로그램에 대한 종속성을 추가할 준비가 되었습니다. 종속성을 추가하려면 **다른 응용 프로그램에 대한 사용 권한**에서 새로운 **Microsoft Rights Management Services** 항목을 선택하고 **위임된 권한:** 드롭 상자에서 **Create and access protected content for users(사용자의 보호된 콘텐츠 만들기 및 액세스)** 확인란을 선택합니다.
 
@@ -107,8 +104,9 @@ Microsoft Azure에 등록한 후
 
 ![저장 선택](../media/SaveApplication.png)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 테넌트 키 계획 및 구현 | Azure Information Protection"
+title: "Azure Information Protection 테넌트 키"
 description: "Azure Information Protection 테넌트 키를 계획 및 관리하는 데 도움이 되는 정보를 제공합니다. Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2016
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f0403d85406cc8642654569958e3482a5d991352
-ms.openlocfilehash: 10e51ed108bedc59a66be86b8b27a140f899dd45
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3d2e667f78eeccecb0bd837a9020ff188f67fb50
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -85,8 +86,8 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 |요구 사항|추가 정보|
 |---------------|--------------------|
 |Azure Information Protection을 지원하는 구독|사용 가능한 구독에 대한 자세한 내용은 Azure Information Protection [가격 책정 페이지](https://go.microsoft.com/fwlink/?LinkId=827589)를 참조하세요.|
-|개인용 또는 Exchange Online용으로 RMS를 사용하지 않도록 합니다. 또는 Exchange Online을 사용하는 경우 이 구성에서 BYOK를 사용할 때의 제한 사항을 이해하고 받아들여야 합니다.|BYOK와 관련된 현재 제한 사항에 대한 자세한 내용은 [BYOK 가격 및 제한 사항](byok-price-restrictions.md)을 참조하세요.<br /><br />**중요**: 현재 BYOK는 Exchange Online과 호환되지 않습니다.|
-|유료 또는 평가판 Azure 구독을 포함하는 Key Vault BYOK에 대해 나열된 모든 필수 조건입니다. |Azure Key Vault 설명서에서 [BYOK에 대한 필수 조건](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)을 참조하세요. <br /><br /> Azure Active Directory 구성 및 Azure Rights Management 사용자 지정 템플릿 구성에 대한 액세스 권한을 제공하는 무료 Azure 구독(**Azure Active Directory에 액세스**)은 Azure Key Vault를 사용하기에 충분하지 않습니다. BYOK에 대해 사용할 수 있는 Azure 구독이 있는지 확인하려면 [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet을 사용하세요. <br /><br /> 1. Azure PowerShell 세션을 시작하고 다음 명령을 사용하여 Azure 계정에 로그인합니다. `Login-AzureRmAccount`<br /><br />2. 다음을 입력하고 구독 이름 및 ID, 테넌트 ID에 대해 표시된 값과 상태가 활성화되어 있는지 확인합니다. `Get-AzureRmSubscription`<br /><br />값이 표시되지 않고 프롬프트로 돌아가는 경우 BYOK를 사용할 수 있는 Azure 구독이 없습니다. <br /><br />**참고**: BYOK 필수 조건 외에도, 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure Information Protection으로 마이그레이션하는 경우 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
+|개인용 또는 Exchange Online용으로 RMS를 사용하지 않도록 합니다.<br /><br /> 또는 Exchange Online을 사용하는 경우 이 구성에서 BYOK를 사용할 때의 제한 사항을 이해하고 받아들여야 합니다.|BYOK와 관련된 현재 제한 사항에 대한 자세한 내용은 [BYOK 가격 및 제한 사항](byok-price-restrictions.md)을 참조하세요.<br /><br />**중요**: 현재 BYOK는 Exchange Online과 호환되지 않습니다.|
+|기존 Azure Information Protection 테넌트에 대한 유료 또는 평가판 Azure 구독을 포함하는 Key Vault BYOK에 대해 나열된 모든 필수 조건입니다. |Azure Key Vault 설명서에서 [BYOK에 대한 필수 조건](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)을 참조하세요. <br /><br /> Azure Active Directory 구성 및 Azure Rights Management 사용자 지정 템플릿 구성에 대한 액세스 권한을 제공하는 무료 Azure 구독(**Azure Active Directory에 액세스**)은 Azure Key Vault를 사용하기에 충분하지 않습니다. BYOK에 대해 사용할 수 있는 Azure 구독이 있는지 확인하려면 [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet을 사용하세요. <br /><br /> 1. **Run as administrator**(관리자로 실행) 옵션으로 Azure PowerShell 세션을 시작하고 다음 명령을 사용하여 Azure Information Protection 테넌트의 전역 관리자로 로그인합니다. `Login-AzureRmAccount`<br /><br />2. 다음을 입력하고 구독 이름 및 ID, Azure Information Protection 테넌트 ID에 대해 표시된 값과 상태가 활성화되어 있는지 확인합니다. `Get-AzureRmSubscription`<br /><br />값이 표시되지 않고 프롬프트로 돌아가는 경우 BYOK를 사용할 수 있는 Azure 구독이 없습니다. <br /><br />**참고**: BYOK 필수 조건 외에도, 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure Information Protection으로 마이그레이션하는 경우 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
 |Windows PowerShell용 Azure Rights Management 관리 모듈.|설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요. <br /><br />이전에 이 Windows PowerShell 모듈을 설치한 경우 다음 명령을 실행하여 버전 번호가 **2.5.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version`|
 
 Thales HSM 및 Azure 주요 자격 증명 모음과 함께 사용되는 방법에 대한 자세한 내용은 [Thales 웹 사이트](https://www.thales-esecurity.com/msrms/cloud)를 참조하세요.
@@ -112,7 +113,7 @@ Thales HSM 및 Azure 주요 자격 증명 모음과 함께 사용되는 방법�
 > [!IMPORTANT]
 > 이 예에서는 "aaaabbbbcccc111122223333"이 사용할 키 버전입니다. 버전을 지정하지 않으면 경고 없이 키의 현재 버전이 사용되고 작업할 명령이 표시됩니다. 그러나 Key Vault의 키가 나중에 업데이트(갱신)되는 경우, Use-AadrmKeyVaultKey 명령을 다시 실행하더라도 Azure Rights Management 서비스에서 테넌트에 대해 작동을 중지합니다.
 >
->이 명령을 실행할 때 키 이름과 함께 키 버전을 지정하세요. Azure Key Vault cmd([Get-AzureKeyVaultKey](https://docs.microsoft.com/powershell/resourcemanager/azurerm.keyvault\/v2.3.0\/get-azurekeyvaultkey))를 사용하여 현재 키의 버전 번호를 가져올 수 있습니다.  `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
+>이 명령을 실행할 때 키 이름과 함께 키 버전을 지정하세요. Azure Key Vault cmd([Get-AzureKeyVaultKey](https://docs.microsoft.com/powershell/resourcemanager/azurerm.keyvault\/v2.3.0\/get-azurekeyvaultkey))를 사용하여 현재 키의 버전 번호를 가져올 수 있습니다. `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
 
 Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 하는 경우 Azure Key Vault에서 [Get-AzureKeyVaultKey](https://msdn.microsoft.com/en-us/library/dn868053(v=azure.300\).aspx)를 실행하여 키 URL을 확인할 수 있습니다.
 
@@ -141,9 +142,5 @@ Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 �
 
     자세한 내용은 [Azure 권한 관리 테넌트 키에 대한 작업](../deploy-use/operations-tenant-key.md)을 참조하세요.
 
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

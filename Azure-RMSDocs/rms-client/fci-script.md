@@ -1,10 +1,10 @@
 ---
-title: "파일 서버 리소스 관리자 FCI를 사용하는 Azure RMS 보호용 Windows PowerShell 스크립트 | Azure Information Protection"
+title: "Azure RMS 및 FCI용 PowerShell 스크립트 - AIP"
 description: "Windows Server 파일 분류 인프라를 사용하는 RMS 보호를 위한 지침에 설명된 대로 복사하고 편집할 수 있는 샘플 스크립트를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2016
+ms.date: 03/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 3ec4b05af68380994f636d0a415691f6465f65b0
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 31dc851eeb8e5e20ccc71cf9477a9192ae55deba
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: 3ec4b05af68380994f636d0a415691f6465f65b0
 
 이 페이지에는 [Windows Server 파일 분류 인프라를 사용하는 RMS 보호](configure-fci.md)에 설명된 대로 복사하고 편집할 샘플 스크립트가 포함되어 있습니다.
 
-이 스크립트는 RMS 보호 모듈에 대해 최소 버전인 **2.2.0.0**을 사용합니다. 버전을 확인하려면 다음 명령을 실행합니다. `(Get-Module RMSProtection -ListAvailable).Version` 
+이 스크립트는 AzureInformationProtection 모듈에 대해 최소 버전인 **1.3.155.2**를 사용합니다. 버전을 확인하려면 다음 명령을 실행합니다. `(Get-Module AzureInformationProtection -ListAvailable).Version` 
 
 *&#42;&#42;Disclaimer&#42;&#42;: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플*
 *스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.*
@@ -35,7 +36,7 @@ ms.openlocfilehash: 3ec4b05af68380994f636d0a415691f6465f65b0
 .SYNOPSIS 
      Helper script to protect all file types using the Azure Rights Management service and FCI.
 .DESCRIPTION
-     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID and RMS Protection module minimum version 2.2.0.0.   
+     Protect files with the Azure Rights Management service and Windows Server FCI, using an RMS template ID and AzureInformationProtection module minimum version 1.3.155.2.   
 #>
 param(
             [Parameter(Mandatory = $false)]
@@ -59,7 +60,7 @@ param(
 ) 
 
 # script information
-[String] $Script:Version = 'version 2.0' 
+[String] $Script:Version = 'version 3.2' 
 [String] $Script:Name = "RMS-Protect-FCI.ps1"
 
 #global working variables
@@ -80,19 +81,16 @@ function Check-Module{
     [bool]$isResult = $False
 
     #try to load the module
-    if (get-module -list -name $Module) {
-        import-module $Module
-
-        if (get-module -name $Module ) {
+    if ((get-module -list -name $Module) -ne $nil)
+        {
 
             $isResult = $True
-        } else {
+        } else 
+        
+        {
             $isResult = $False
         } 
 
-    } else {
-            $isResult = $False
-    }
     return $isResult
 }
 
@@ -136,17 +134,17 @@ $Script:isScriptProcess = $True
 
 # Validate Azure RMS connection by checking the module and then connection
 if ($Script:isScriptProcess) {
-        if (Check-Module -Module RMSProtection){
+         if (Check-Module -Module AzureInformationProtection){
         $Script:isScriptProcess = $True
     } else {
 
-        Write-Host ("The RMSProtection module is not loaded") -foregroundcolor "yellow" -backgroundcolor "black"            
+        Write-Host ("The AzureInformationProtection module is not loaded") -foregroundcolor "yellow" -backgroundcolor "black"            
         $Script:isScriptProcess = $False
     }
 }
 
 if ($Script:isScriptProcess) {
-    #Write-Host ("Try to connect to Azure RMS with AppId: $AppPrincipalId and BPOSID: $BposTenantId" )  
+    #Write-Host ("Try to connect to Azure RMS with AppId: $AppPrincipalId and BPOSID: $BposTenantId" )    
     if (Set-RMSConnection $AppPrincipalId $SymmetricKey $BposTenantId) {
         Write-Host ("Connected to Azure RMS")
 
@@ -175,8 +173,4 @@ if (!$Script:isScriptProcess) { exit(-1) } else {exit(0)}
 
 [Windows Server 파일 분류 인프라를 사용하는 RMS 보호](configure-fci.md)로 돌아갑니다.
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,10 +1,10 @@
 ---
-title: "관리자와 사용자에게 표시되는 내용 | Azure Information Protection"
+title: "Azure RMS에서 관리자 및 사용자에게 표시하는 사항 - AIP"
 description: "관리자와 사용자가 Azure RMS(Azure Rights Management) 기술을 표시하여 중요한 정보 또는 기밀 정보를 보호하는 데 사용할 수 있는 방법의 몇 가지 일반적인 예제를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 01/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 013e0eb4-49a7-4e81-9e4d-f56c0ceb017f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 5708529be090dc2d2dcd58b728e046eceff26865
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4fb412ff1128842fd1f3c95d39a4a626c67f97a0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,14 +37,14 @@ RMS 실행을 보여 주는 다른 스크린샷과 비디오는 [Enterprise Mobi
 ## <a name="activating-and-configuring-rights-management"></a>권한 관리 활성화 및 구성
 Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도 있지만 관리 포털에서 하는 것이 가장 간편합니다. 서비스가 활성화되면 바로 관리자와 사용자가 파일에 정보 보호를 빠르고 쉽게 적용하는 데 선택할 수 있는 두 개의 기본 템플릿이 제공됩니다. 하지만 추가 옵션 및 설정이 포함된 사용자 지정 템플릿을 직접 만들 수도 있습니다.
 
-![1단계에서 관리자에게 표시되는 내용](../media/AzRMS_StoryboardActivate_small1.png)
+![Azure Rights Management 서비스를 활성화하는 옵션을 보여 주는 관리 포털의 스크린샷](../media/AzRMS_StoryboardActivate_small1.png)
 
 
 **1단계에서 관리자에게 표시되는 내용:** Office 365 관리 센터(첫 번째 그림) 또는 Azure 클래식 포털(두 번째 그림)을 사용하여 RMS를 활성화할 수 있습니다.<br /><br />한 번 클릭으로 활성화하고 다시 클릭하여 확인하면 조직에서 관리자와 사용자에 대한 정보 보호가 사용됩니다.
 
 ---
 
-![2단계에서 관리자에게 표시되는 내용](../media/AzRMS_TemplatesPortal_small.png)
+![두 기본 템플릿과 새 템플릿을 만들기 위한 마법사 시작을 보여 주는 Azure 클래식 포털의 스크린샷](../media/AzRMS_TemplatesPortal_small.png)
 
 **2단계에서 관리자에게 표시되는 내용:** 활성화되면 조직에서 두 개의 권한 정책 템플릿을 자동으로 사용할 수 있습니다. 한 템플릿은 읽기 전용 템플릿(**기밀 보기 전용**)이고 다른 템플릿은 읽기 및 수정 권한이 있는 템플릿(**기밀**)입니다.
 
@@ -56,13 +57,13 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 ---
 
-![3단계에서 관리자에게 표시되는 내용](../media/AzRMS_TemplatesSettings3.png)
+![일부 템플릿 구성 옵션을 보여 주는 Azure 클래식 포털의 스크린샷](../media/AzRMS_TemplatesSettings3.png)
 
 **3단계에서 관리자에게 표시되는 내용:** 오프라인 액세스, 만료 설정 및 템플릿을 즉시 게시할지 여부(권한 관리를 지원하는 응용 프로그램에 표시)는 자체 템플릿을 만들 경우 사용 가능한 구성 설정 중 일부에 포함됩니다.
 
 ---
 
-![4단계에서 관리자에게 표시되는 내용](../media/AzRMS_TemplatesPortal_ExplorerWord3.png)
+![사용자가 선택할 수 있는 템플릿을 보여 주는 파일 탐색기 및 Word의 스크린샷](../media/AzRMS_TemplatesPortal_ExplorerWord3.png)
 
 **4단계에서 사용자에게 표시되는 내용:** 이러한 템플릿을 게시하면 이제 사용자가 파일 탐색기, Microsoft Word 등의 응용 프로그램에서 템플릿을 선택할 수 있습니다.
 
@@ -86,13 +87,13 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 파일에 분류 값을 적용할 수 있는 여러 가지 방법이 있습니다. 예를 들어 파일 콘텐츠를 검사하고 그에 따라 기밀성 및 개인 식별 정보 같은 기본 제공 분류를 적용할 수 있습니다. 하지만 이 예에서 관리자는 **마케팅 판촉** 폴더에 저장된 모든 사용자 문서에 자동으로 적용되는 사용자 지정 **마케팅** 분류를 만듭니다. 이 폴더가 마케팅 그룹의 구성원으로 액세스를 제한하는 NTFS 권한으로 보호된 경우에도 관리자는 해당 그룹의 일부 사용자가 파일을 이동하거나 전자 메일로 보내면 이러한 권한이 손실될 수 있음을 알고 있습니다. 그러면 권한 없는 사용자가 파일 정보에 액세스할 수 있습니다.
 
-![1단계에서 관리자에게 표시되는 내용](../media/AzRMS_FCI_ConnectorSmall.png)
+![Rights Management 커넥터 설치 및 구성을 보여 주는 스크린샷](../media/AzRMS_FCI_ConnectorSmall.png)
 
 **1단계에서 관리자에게 표시되는 내용:** 관리자가 온-프레미스 서버와 Azure RMS 간에 릴레이 역할을 하는 Rights Management(RMS) 커넥터를 설치하고 구성합니다.
 
 ---
 
-![2단계에서 관리자에게 표시되는 내용](../media/AzRMS_ExampleFCI_ConfigurationSmall.png)
+![Windows Server에서 파일 분류 인프라 구성을 위한 일부 구성 대화 상자를 보여 주는 스크린샷](../media/AzRMS_ExampleFCI_ConfigurationSmall.png)
 
 **2단계에서 관리자에게 표시되는 내용:** 파일 서버에서 관리자가 **Marketing Promotions** 폴더의 모든 사용자 파일이 **마케팅**으로 자동 분류되고 RMS 암호화로 보호되도록 분류 규칙과 작업을 구성합니다.
 
@@ -102,7 +103,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 ---
 
-![3단계에서 관리자에게 표시되는 내용](../media/AzRMS_FCI_EmailSmall.png)
+![사용자가 보호된 첨부 파일을 받고 파일을 열기 전에 인증 메시지가 표시된 예제 메일을 보여 주는 스크린샷](../media/AzRMS_FCI_EmailSmall.png)
 
 **3단계에서 사용자에게 표시되는 내용:** RMS를 통해 중요한 정보나 기밀 정보에 액세스할 수 없는 사용자에게 데이터가 누출되는 것을 방지하는 방법:
 
@@ -121,7 +122,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 이 예에서 관리자는 조직이 개인 식별 정보 데이터 보호를 위해 미국 규정을 준수하는 데 도움이 되는 정책을 구성하지만 다른 준수 규정이나 사용자가 정의한 사용자 지정 규칙에 대한 규칙을 구성할 수도 있습니다.
 
-![1단계에서 관리자에게 표시되는 내용](../media/AzRMS_DLPExample1.png)
+![Exchange Online 데이터 손실 방지를 구성하는 일부 구성 옵션 예제 스크린샷](../media/AzRMS_DLPExample1.png)
 
 **1단계에서 관리자에게 표시되는 내용:** Exchange 관리 센터에서 이름이 **미국 PII(개인 식별이 가능한 정보) 데이터**라는 Exchange 템플릿은 관리자가 새 DLP 정책을 만들고 구성하는 데 사용됩니다. 이 템플릿은 전자 메일 메시지에서 사회 보장 번호 및 운전 면허 번호 같은 정보를 찾습니다.
 
@@ -134,13 +135,13 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 ---
 
-![2단계에서 관리자에게 표시되는 내용](../media/AzRMS_DLPUnprotectedEmail_small.png)
+![사회 보장 번호가 포함된 예제 메일의 스크린샷](../media/AzRMS_DLPUnprotectedEmail_small.png)
 
 **2단계에서 사용자에게 표시되는 내용:** 고용 관리자가 최근에 고용된 직원의 사회 보장 번호가 포함된 메일 메시지를 작성한 후 이 전자 메일 메시지를 인사 부서의 Sherrie에게 보냅니다.
 
 ---
 
-![3단계에서 관리자에게 표시되는 내용](../media/AzRMS_DLPProtectedEmail_small.png)
+![조직 외부로 전송되기 때문에 Azure Rights Management로 보호되는 예제 메일 스크린샷](../media/AzRMS_DLPProtectedEmail_small.png)
 
 **3단계에서 사용자에게 표시되는 내용:** 이 메일 메시지가 조직 외부 사용자에게 전송되거나 전달되면 DLP 규칙에 따라 권한 보호가 자동으로 적용됩니다.
 
@@ -160,13 +161,13 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 이 예에서 Contoso의 SharePoint 관리자는 편집 및 버전 제어를 위해 중앙에서 문서를 저장하고 체크 아웃하는 데 사용하는 부서별 라이브러리를 만들었습니다. 예를 들어 판매, 마케팅, 인사 부서 등에 대한 라이브러리가 있습니다. 보호된 이 라이브러리 중 한 곳에 새 문서가 업로드되거나 만들어지면 권한 정책 템플릿을 선택하지 않고도 해당 문서가 라이브러리의 보호를 상속하여 자동으로 보호되고 SharePoint 라이브러리 외부로 이동한 경우에도 보호가 유지됩니다.
 
-![1단계에서 관리자에게 표시되는 내용](../media/AzRMS_StoryboardSPO_small1.png)
+![IRM을 사용하도록 설정하는 SharePoint Online 옵션을 보여 주는 스크린샷](../media/AzRMS_StoryboardSPO_small1.png)
 
 **1단계에서 관리자에게 표시되는 내용:** 관리자가 SharePoint 사이트에 대해 정보 권한 관리를 사용하도록 설정합니다.
 
 ---
 
-![2단계에서 관리자에게 표시되는 내용](../media/AzRMS_StoryboardSPO_small2.png)
+![라이브러리를 IRM으로 보호하는 Sharepoint Online 옵션을 보여 주는 스크린샷](../media/AzRMS_StoryboardSPO_small2.png)
 
 **2단계에서 관리자에게 표시되는 내용:** 그런 다음 라이브러리에 대해 권한 관리를 사용하도록 설정합니다. 추가 옵션이 있지만 간단한 이 설정으로 필요한 모든 항목이 거의 포함됩니다.
 
@@ -174,7 +175,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 ---
 
-![3단계에서 관리자에게 표시되는 내용](../media/AzRMS_StoryboardSPO_small3.png)
+![문서가 보호되었음을 나타내는 정보 배너를 표시하면서, SharePoint Online 보호된 라이브러리에서 다운로드된 문서를 보여 주는 스크린샷](../media/AzRMS_StoryboardSPO_small3.png)
 
 **3단계에서 사용자에게 표시되는 내용:** 영업 부서의 사용자가 라이브러리에서 이 영업 보고서를 체크 아웃하면 맨 위의 정보 배너에 제한된 액세스로 보호된 문서라고 명확하게 표시됩니다.
 
@@ -196,7 +197,7 @@ Windows PowerShell을 사용하여 Azure RMS를 활성화하고 구성할 수도
 
 이 예에서 Contoso의 Alice는 Fabrikam의 Bob에게 기밀 Word 문서를 전자 메일로 보냅니다. Bob은 자신의 iPad에서 문서를 읽으며 iPhone, Android 태블릿 또는 휴대폰, Mac 컴퓨터 또는 Windows 휴대폰이나 컴퓨터에서도 손쉽게 읽을 수 있습니다.
 
-![1단계에서 사용자에게 표시되는 내용](../media/AzRMS_StoryboardEmail_small1.png)
+![첨부 파일이 있는 예제 메일과 Rights Management 공유 응용 프로그램의 보호된 대화 상자 공유를 보여 주는 스크린샷](../media/AzRMS_StoryboardEmail_small1.png)
 
 **1단계에서 사용자에게 표시되는 내용:** Windows PC에서 Alice는 표준 메일 메시지를 만들고 문서를 첨부합니다.
 
@@ -206,7 +207,7 @@ Alice는 Bob이 해당 문서를 보고 편집만 할 수 있도록 제한하고
 
 ---
 
-![2단계에서 사용자에게 표시되는 내용](../media/AzRMS_StoryboardEmail_small2.png)
+![iPad에서 사용자에게 보내는 메시지, 첨부 파일 및 지침이 포함된 메일을 보여 주는 스크린샷](../media/AzRMS_StoryboardEmail_small2.png)
 
 **2단계에서 사용자에게 표시되는 내용:** Bob이 자신의 iPad에서 메일을 봅니다.
 
@@ -214,7 +215,7 @@ Alice의 메시지와 첨부 파일 외에도 iPad에서 RMS 공유 앱을 등�
 
 ---
 
-![3단계에서 사용자에게 표시되는 내용](../media/AzRMS_StoryboardEmail_small3.png)
+![iPad에서 보호된 첨부 파일을 읽고 있는 사용자를 보여 주는 스크린샷](../media/AzRMS_StoryboardEmail_small3.png)
 
 **3단계에서 사용자에게 표시되는 내용:** Bob이 이제 첨부 파일을 열 수 있습니다. 우선 원하는 받는 사람인지를 확인하기 위해 로그인하라는 메시지가 표시됩니다.
 
@@ -222,7 +223,7 @@ Bob이 문서를 볼 때 정보를 보고 편집할 수는 있지만 복사하�
 
 ---
 
-![4단계에서 사용자에게 표시되는 내용](../media/AzRMS_StoryboardEmail_small4.png)
+![보내는 사용자에게 보내는 예제 확인 메일을 보여 주는 화면](../media/AzRMS_StoryboardEmail_small4.png)
 
 **4단계에서 사용자에게 표시되는 내용:** Alice는 자신이 보낸 문서를 Bob이 열었다는 사실과 Bob이 문서에 액세스한 시간을 알리는 메일 메시지를 받습니다.
 
@@ -240,8 +241,4 @@ Bob이 첨부 파일과 함께 이 전자 메일을 전달하거나 다른 사�
 
 이제 Azure RMS가 수행할 수 있는 작업의 몇 가지 예를 살펴 보았으며 이를 수행하는 방법에 관심을 가질 수 있습니다. Azure RMS 작동 방식에 대한 기술적인 정보는 [Azure RMS 작동 방식](how-does-it-work.md)을 참조하세요.
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

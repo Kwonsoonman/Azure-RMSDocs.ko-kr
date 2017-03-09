@@ -1,10 +1,10 @@
 ---
-title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 2단계 | Azure Information Protection"
+title: "AD RMS-Azure Information Protection 마이그레이션 - 2단계"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 두 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 5단계가 포함됩니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/12/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,12 +13,13 @@ ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ca8d2ccb68b96095fccf9d55b9cb9392d3a455ec
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: aa1569749abbdd335c8fdff56441441d5c49b21d
+ms.lasthandoff: 02/24/2017
 
 
 ---
-# <a name="migration-phase-2-clientside-configuration"></a>마이그레이션 2단계 - 클라이언트 쪽 구성
+# <a name="migration-phase-2---client-side-configuration"></a>마이그레이션 2단계 - 클라이언트 쪽 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -49,7 +50,7 @@ Windows 클라이언트:
 
             reg delete HKCU\Software\Microsoft\Office\16.0\Common\DRM /f
 
-    - **Redirect_Onprem.cmd**의 경우 - `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F` 줄을 검색하고 이 행의 바로 아래에서 다음의 2줄을 추가합니다.
+    - **Redirect_Onprem.cmd**의 경우 - `reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\DRM" /t REG_SZ /v "DefaultServer" /d "%CloudRMS%" /F` 줄을 검색하고 이 행의 바로 아래에서 다음의&2;줄을 추가합니다.
 
             reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM" /t REG_SZ /v "DefaultServerUrl" /d "https://%CloudRMS%/_wmcs/licensing" /F 
 
@@ -133,7 +134,4 @@ Redirect_OnPrem.cmd:
 ## <a name="next-steps"></a>다음 단계
 마이그레이션을 계속하려면 [3단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

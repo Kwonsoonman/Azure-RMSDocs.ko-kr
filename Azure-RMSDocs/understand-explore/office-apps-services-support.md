@@ -1,10 +1,10 @@
 ---
-title: "Office 응용 프로그램 및 서비스 | Azure Information Protection"
+title: "Azure Information Protection을 사용하는 Office 앱 및 서비스"
 description: "최종 사용자 Office 응용 프로그램(예: Word, Excel, PowerPoint, Outlook) 및 Office 서비스(예: Exchange, SharePoint)에서 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3571ab868d2476d6683317295d366f973a88ff43
-ms.openlocfilehash: 4cb92bc420eecc0102f144a66a579d58aa4112b5
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3e77cebd642b2b9e983f5cbc81e43e1cc437dc5d
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,6 +31,8 @@ ms.openlocfilehash: 4cb92bc420eecc0102f144a66a579d58aa4112b5
 이러한 응용 프로그램은 정보 권한 관리(IRM)를 사용하여 Rights Management를 기본적으로 지원하며 사용자가 저장된 문서 또는 전송할 메일 메시지에 보호를 적용할 수 있도록 합니다. 사용자는 템플릿을 적용하거나 Word, Excel 및 PowerPoint의 경우 액세스, 권한 및 사용 제한을 위해 자세하게 사용자 지정된 설정을 선택할 수 있습니다. 
 
 예를 들어 사용자는 조직 내의 사용자만 액세스할 수 있도록 Word 문서를 구성할 수도 있고 Excel 스프레드시트의 편집 가능 여부를 제어하거나 파일을 읽기 전용으로 제한하거나 파일 인쇄를 차단할 수도 있습니다. 시간이 중요한 파일의 경우에는 파일에 더 이상 액세스할 수 없는 만료 시간을 구성할 수 있습니다(사용자가 직접 구성하거나 템플릿 적용). Outlook에서는 사용자가 템플릿을 선택하는 일 외에 **전달 금지** 옵션을 선택하여 데이터 유출을 방지할 수도 있습니다.
+
+이러한 응용 프로그램은 네이티브 IRM 지원 외에도 [Azure Information Protection 클라이언트](../rms-client/aip-client.md )와 함께 설치되는 Azure Information Protection 표시줄도 지원합니다. 이 표시줄에는 사용자가 자동으로 중요한 데이터가 포함된 문서 및 전자 메일에 Rights Management 보호를 보다 쉽게 적용할 수 있는 레이블이 표시됩니다.
 
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online 및 Exchange Server
 Exchange Online 또는 Exchange Server를 사용할 때는 IRM(정보 권한 관리) 통합을 사용하면 정보 보호 솔루션이 추가로 제공됩니다.
@@ -64,7 +67,7 @@ SharePoint Server를 사용하는 경우에는 온-프레미스 서버와 Azure 
 > - 보호된 PDF 파일에 대한 .PPDF 파일 이름 확장명을 가진 파일은 지원되지 않습니다. 기본적으로 Rights Management를 지원하는 PDF Reader를 사용하는 경우 파일 이름 확장명이 .PDF이며 Rights Management로 기본적으로 보호되는 파일이 지원됩니다.
 
 
-Azure RMS는 문서를 SharePoint에서 처음 만들거나 라이브러리로 업로드할 때가 아니라 SharePoint에서 다운로드할 때 문서에 사용 제한 및 데이터 암호화를 적용합니다. 문서가 다운로드되기 전에 보호하는 방법에 대한 자세한 내용은 SharePoint 설명서에서 [비즈니스용 OneDrive 및 SharePoint Online의 데이터 암호화](https://technet.microsoft.com/library/dn905447.aspx) 를 참조하세요.
+Azure Rights Management는 문서를 SharePoint에서 처음 만들거나 라이브러리로 업로드할 때가 아니라 SharePoint에서 다운로드할 때 문서에 사용 제한 및 데이터 암호화를 적용합니다. 문서가 다운로드되기 전에 보호하는 방법에 대한 자세한 내용은 SharePoint 설명서에서 [비즈니스용 OneDrive 및 SharePoint Online의 데이터 암호화](https://technet.microsoft.com/library/dn905447.aspx) 를 참조하세요.
 
 SharePoint와 함께 Azure Rights Management 서비스를 사용하는 방법에 대한 자세한 내용은 Office 블로그의 [What’s New with Information Rights Management in SharePoint and SharePoint Online](http://blogs.office.com/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)(SharePoint와 SharePoint Online의 정보 권한 관리의 새로운 기능) 게시물을 참조하세요.
 
@@ -72,7 +75,4 @@ SharePoint와 함께 Azure Rights Management 서비스를 사용하는 방법에
 
 다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
-
-<!--HONumber=Oct16_HO5-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,10 +1,10 @@
 ---
-title: "RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소 | Azure Information Protection"
+title: "RMS 공유 앱을 사용하여 문서 추적 및 취소 - AIP"
 description: "RMS 공유 응용 프로그램을 사용하여 문서를 보호하고 나면 사용자들이 보호된 문서를 사용하는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 3b5b19ab2dfdf6b797f55134f3063948dcab33d5
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 36a25c44105d4fa0e8820f99b0b1c7c1568062ec
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -105,8 +106,4 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 ## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

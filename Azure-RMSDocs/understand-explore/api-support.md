@@ -1,10 +1,10 @@
 ---
-title: "Rights Management API를 지원하는 기타 응용 프로그램 - 설치 및 구성 | Azure Information Protection"
+title: "RMS API를 지원하는 기타 앱 - 설치 및 구성 - AIP"
 description: "Azure Information Protection의 Azure Rights Management 서비스에서 다른 응용 프로그램을 지원하여 조직의 데이터를 보호하는 방법을 파악합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f5ed228f1434761208095fd15d36a6bf05e07154
-ms.openlocfilehash: 82269c1b224df944db2bbc40f36ca111cb1ac160
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0b48cdb5fc233886c41a1c8b963e1353c14dce75
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -33,7 +34,4 @@ ms.openlocfilehash: 82269c1b224df944db2bbc40f36ca111cb1ac160
 
 다른 응용 프로그램과 서비스에서 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법](applications-support.md)을 참조하세요.
 
-
-<!--HONumber=Dec16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

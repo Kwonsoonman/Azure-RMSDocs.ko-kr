@@ -1,10 +1,10 @@
 ---
-title: "Office 365 관리 센터 미리 보기에서 Azure Rights Management를 활성화하는 방법 | Azure Information Protection"
+title: "Office 365 관리 센터 미리 보기에서 Azure RMS 활성화 - AIP"
 description: "Office 365 관리 센터의 신규 미리 보기 버전(Office 365 관리 센터 미리 보기) 액세스 권한이 있는 경우의 Azure Rights Management 서비스의 활성화 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 986cb20b1cf4ecebb08e5f651bbc3af9e28d884b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: bef1ed0e38beadbd86868e8be3535f32b22382df
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -58,9 +59,5 @@ ms.openlocfilehash: 986cb20b1cf4ecebb08e5f651bbc3af9e28d884b
 ## <a name="next-steps"></a>다음 단계
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

@@ -1,10 +1,10 @@
 ---
-title: "Azure Information Protection 빠른 배포 가이드 | Azure Information Protection"
-description: "조직 데이터를 보호하기 위해 Azure Information Protection을 보다 빠르게 배포하고 사용하는 방법을 설명하는 가이드입니다. 먼저 특정 시나리오 목록에서 구현할 시나리오를 선택합니다."
+title: "Azure RMS 빠른 배포 가이드 - AIP"
+description: "조직 데이터를 보호하기 위해 Azure Rights Management 서비스를 보다 빠르게 배포하고 사용하는 방법을 설명하는 가이드입니다. 먼저 특정 시나리오 목록에서 구현할 시나리오를 선택합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 2e50dc9d53550f35f5c589cdb1b384e0abf585e0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -23,7 +24,10 @@ ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-**배포 및 사용** 섹션의 구성 정보와 함께 이 가이드를 사용하면 특정 시나리오 목록에서 구현할 시나리오를 선택하여 Azure Information Protection을 보다 빠르게 배포하고 사용할 수 있습니다.
+**배포 및 사용** 섹션의 구성 정보와 함께 이 가이드를 사용하면 Azure Information Protection의 Azure Rights Management 서비스를 사용하는 보호 전용 솔루션을 좀 더 빠르게 배포할 수 있습니다. 특정 시나리오 목록에서 구현할 시나리오를 선택합니다.
+
+> [!NOTE]
+> 현재 이 가이드에는 보호 전용 시나리오가 포함되어 있으며 분류 및 보호에 대한 시나리오나 Azure Information Protection에 대한 시나리오는 들어 있지 않습니다. 
 
 이러한 시나리오에는 관리자 지침과 함께 최종 사용자 문서가 포함되어 있습니다. 이 설명서(지침 또는 알림)를 최종 사용자에게 제공하기 전에 비즈니스 요구 사항 및 기존 워크플로에 맞게 이 설명서를 사용자 지정해야 합니다. 예제 지침 집합이나 알림을 통해 최종 사용자 문서가 어떻게 표시되는지 확인할 수 있습니다.
 
@@ -33,8 +37,7 @@ ms.openlocfilehash: d1415913f4a76331088140555b0cfeaa88200871
 
 이러한 솔루션을 배포하기 전에 최종 사용자에게 광범위한 알림을 전송하여 회사 데이터를 보호하기 위해 일부 변경이 예정되어 있으며 그에 따라 최종 사용자도 변경해야 할 수 있음을 알리는 것이 좋습니다. 다음 표 뒤에 예제 통신이 포함되어 있습니다.
 
-> [!NOTE]
-> 이 가이드에 대한 질문과 의견이 있는 경우 이 페이지의 피드백 메커니즘을 사용하거나 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)으로 메일 메시지를 보내 주세요.
+이 가이드에 대한 질문과 의견이 있는 경우 이 페이지의 피드백 메커니즘을 사용하거나 [AskIPTeam@Microsoft.com](mailto:%20askipteam@microsoft.com?subject=Rapid%20Deployment%20Guide%20feedback)으로 메일 메시지를 보내 주세요.
 
 ## <a name="scenarios-for-azure-information-protection"></a>Azure Information Protection에 대한 시나리오
 Azure Information Protection을 신속하게 배포하여 특정 비즈니스 문제를 해결하려면 비즈니스 목표와 가장 일치하는 시나리오를 선택한 다음 필요에 따라 변경합니다.
@@ -85,7 +88,7 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 
 참고: [시나리오 - 파일 서버 공유에 있는 파일 보호](scenario-fci.md)
 
-**비즈니스에 미치는 영향이 큰 1급 기밀 문서 보호**
+**비즈니스에 미치는 영향이 큰&1;급 기밀 문서 보호**
 
 예:
 
@@ -144,9 +147,5 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 
 구현 중인 솔루션은 중요한 데이터를 보호하는 데 도움이 되며 해당 데이터에 대한 제어를 유지하는 도구를 제공합니다. 이러한 변경을 구현하는 동안 협조해 주셔서 감사합니다.
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

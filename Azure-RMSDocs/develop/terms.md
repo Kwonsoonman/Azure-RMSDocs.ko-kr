@@ -1,11 +1,11 @@
 ---
-title: "용어 | Azure RMS"
-description: "권한 관리 서비스와 관련된 용어 정의 컬렉션입니다."
+title: "AIP 개발자 용어 | Microsoft Docs"
+description: "권한 관리 서비스와 관련된 개발자 용어 정의 컬렉션입니다."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,15 +15,16 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 38ed5a7128813f52cb62b906b0a5cef4e6d990be
+ms.sourcegitcommit: 9c0977c57ea8e85b6750fe1f5a063059ee343db9
+ms.openlocfilehash: 4ecf686d8e7e26909c8bda4a2d0df7fc61f413bb
+ms.lasthandoff: 01/24/2017
 
 
 ---
 
-# <a name="terms"></a>조건
+# <a name="terms"></a>용어
 
-권한 관리 서비스와 관련된 용어 정의 컬렉션입니다.
+Azure Information Protection과 관련된 개발자 용어 정의 컬렉션입니다.
 
 **사용되지 않는 알고리즘**  
 이전 콘텐츠 보호 체계를 구현하는 모달 설정으로, 특히 ECB(Electronic Codebook Cipher Mode)를 가리킵니다. 이 SDK에서는 이 설정을 통해 [AD 권한 관리 서비스 SDK](https://msdn.microsoft.com/library/windows/desktop/cc530379.aspx)에서 사용하는 MSDRM 라이브러리와 호환되는 라이선스를 생성할 수 있습니다.
@@ -40,8 +41,3 @@ PFile 형식은 Microsoft Rights Management SDK 4.2가 설계된 방식에 포�
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

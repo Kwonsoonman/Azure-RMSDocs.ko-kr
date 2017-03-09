@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 서비스 해제 및 비활성화 | Azure Information Protection"
+title: "Azure RMS 서비스 해제 및 비활성화"
 description: "Azure Information Protection에서 이 정보 보호 서비스를 더 이상 사용하지 않으려는 경우 해당 방법 및 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 865913eae3e0956c18d2caef4e68ab1dc07d74de
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: b88d4587be0549ea7364c9745c218865480a8d18
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -87,11 +88,7 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 이제 **Rights Management 상태** 가 **비활성** 으로 표시되고 **비활성화** 옵션이 **활성화**로 바뀝니다.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
 
 

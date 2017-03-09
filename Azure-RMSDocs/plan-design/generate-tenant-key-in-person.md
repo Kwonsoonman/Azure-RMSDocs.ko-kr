@@ -4,7 +4,7 @@ description: "이 문서의 정보는 Azure 권한 관리에서 고객 관리 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection

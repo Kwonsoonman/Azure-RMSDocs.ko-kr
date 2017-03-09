@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 확인 | Azure Information Protection"
+title: "Azure Rights Management 확인 - AIP"
 description: "사용자 계정 하나를 사용해 파일 또는 전자 메일 메시지를 보호한 다음 다른 사용자 계정에서 보호된 콘텐츠 열기 및 사용을 시도하는 방식으로 서비스가 정상적으로 작동하는지를 확인하는 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 8d10bc4aeeed6f5b3d150f6e765c6457f5741409
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 50da38ee5e852d72458845a97ebe005f4949d265
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,11 +37,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 활성화�
 
 사용 현황을 사용하여 조직에서 Azure Rights Management를 사용하는 방식을 모니터링할 수 있습니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "AD RMS에서 Azure Information Protection으로 마이그레이션 - 3단계 | Azure Information Protection"
+title: "AD RMS-Azure Information Protection 마이그레이션 - 3단계"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 세 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 6~7단계가 포함됩니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1bf7377e5e8079025dff638a185c825256a5cc7
-ms.openlocfilehash: fba8e46993e414fe63414f7240779f5939166c4a
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d5de26f757803f5c354814b9cbcc965de382192c
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="migration-phase-3-supporting-services-configuration"></a>마이그레이션 3단계 - 지원 서비스 구성
+# <a name="migration-phase-3---supporting-services-configuration"></a>마이그레이션 3단계 - 지원 서비스 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
@@ -116,15 +117,15 @@ Reg_SZ
 
 **값:**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS 인트라넷 라이선스 URL\>/_wmcs/licensing
 
 **데이터**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<connectorName\>/_wmcs/licensing
 
 
 ---
@@ -142,16 +143,16 @@ Reg_SZ
 
 **값:**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
 
 
 **데이터**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<connectorFQDN\>/_wmcs/licensing
 
 ---
 
@@ -169,15 +170,15 @@ Reg_SZ
 
 **값:**
 
-https://<AD RMS Intranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS 인트라넷 라이선스 URL\>/_wmcs/licensing
 
 **데이터**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorName>/_wmcs/licensing
+- https://\<connectorName\>/_wmcs/licensing
 
 
 ---
@@ -196,16 +197,16 @@ Reg_SZ
 
 **값:**
 
-https://<AD RMS Extranet Licensing URL>/_wmcs/licensing
+https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
 
 
 **데이터**
 
 Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
-- http://<connectorFQDN>/_wmcs/licensing
+- http://\<connectorFQDN\>/_wmcs/licensing
 
-- https://<connectorFQDN>/_wmcs/licensing
+- https://\<connectorFQDN\>/_wmcs/licensing
 
 ---
 
@@ -214,7 +215,4 @@ Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것
 ## <a name="next-steps"></a>다음 단계
 마이그레이션을 계속하려면 [4단계 - 사후 마이그레이션 작업](migrate-from-ad-rms-phase4.md)으로 이동합니다.
 
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -20,12 +20,11 @@
 #### [Linux 코드 예제](linux-c-code-examples.md)
 #### [iOS/OS X 코드 예제](ios-os-x-code-examples.md)
 #### [커뮤니티 리소스](community-resources.md)
-### [개발자 지침 및 용어](core-concepts.md)
+### [개발자 지침](core-concepts.md)
 #### [Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법](authentication-integration.md)
 #### [방법: 오류 및 성능 로깅 사용](enabling-logging.md)
 #### [방법: 기본 제공 권한 사용](built-in-rights-usage-restriction-reference.md)
 #### [방법: 문서 추적 사용](how-to-use-document-tracking.md)
-#### [조건](terms.md)
 ### [API 참조](api-reference-4-2.md)
 #### [Android API 참조](https://msdn.microsoft.com/library/dn758245.aspx)
 #### [Linux API 참조](linux-c-api-reference.md)
@@ -42,11 +41,12 @@
 #### [응용 프로그램 배포](developing-your-application.md)
 #### [응용 프로그램 테스트](how-to-set-up-your-test-environment.md)
 #### [프로덕션 환경에 배포](deploying-your-application.md)
-### [개발자 지침 및 정보](Developer-notes.md)
+### [개발자 지침](Developer-notes.md)
 #### [방법: ADAL 인증 사용](how-to-use-adal-authentication.md)
 ##### [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)
 #### [방법: 명시적 소유자 권한 추가](add-explicit-owner-rights.md)
 #### [방법: 권한 사용 응용 프로그램 디버그](debugging-applications-that-use-ad-rms.md)
+#### [방법: 앱 배포](how-to-deploy-app.md)
 #### [방법: 문서 추적 및 해지 사용](tracking-content.md)
 #### [방법: 메일 알림 사용](how-to-enable-email-notification.md)
 #### [방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)
@@ -65,8 +65,4 @@
 #### [Functions](https://msdn.microsoft.com/library/hh535289.aspx)(함수)
 #### [Structures](https://msdn.microsoft.com/library/hh535294.aspx)(구조)
 #### [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)(오류 코드)
-
-
-<!--HONumber=Jan17_HO2-->
-
-
+## [조건](terms.md) 

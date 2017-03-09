@@ -1,10 +1,10 @@
 ---
-title: "2단계&colon; 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션 | Azure Information Protection"
+title: "소프트웨어 보호된 키-HSM 보호된 키 마이그레이션 - AIP"
 description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fcebaaa2fbe1479e83c232d51013341977796fc
-ms.openlocfilehash: 54e759108ecca7a049190823c3874451d7104fc4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 4126bd34615307347d387217b8ad4f39ba69cad8
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="step-2-softwareprotected-key-to-hsmprotected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
+# <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection*
 
@@ -41,7 +42,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 > Azure 주요 자격 증명 모음에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure 주요 자격 증명 모음 시작](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)을 먼저 검토하면 도움이 됩니다. 
 
 
-## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-onpremises-hsm"></a>1부: 구성 데이터에서 SLC 키를 추출하고 온-프레미스 HSM으로 키 가져오기
+## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>1부: 구성 데이터에서 SLC 키를 추출하고 온-프레미스 HSM으로 키 가져오기
 
 1.  Azure 주요 자격 증명 모음 관리자: Azure 주요 자격 증명 모음 설명서에서 [Azure 주요 자격 증명 모음에 대한 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
 
@@ -143,7 +144,7 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 
     구성 데이터 파일에 대해 이전에 지정한 암호를 입력하라는 메시지가 표시되면 입력한 후 이 작업을 수행할 것임을 확인합니다.
 
-    구성 데이터 파일이 둘 이상 있는 경우 나머지 파일에 대해 이 명령을 반복합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다.
+    구성 데이터 파일이 둘 이상 있는 경우 나머지 파일에 대해 이 명령을 반복합니다. 예를 들어 AD RMS 클러스터를 암호화 모드 2로 업그레이드한 경우 추가 파일을 하나 이상 가져와야 합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다.
 
 
 
@@ -159,11 +160,7 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 
 이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
-
-
-
-
-<!--HONumber=Nov16_HO1-->
 
 

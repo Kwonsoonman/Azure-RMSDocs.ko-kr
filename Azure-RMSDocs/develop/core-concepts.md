@@ -1,11 +1,11 @@
 ---
-title: "개발자 지침 및 용어 | Azure RMS"
-description: "RMS SDK 4.2는 AD RMS 정보 보호를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는데 중점을 둡니다."
+title: "Azure Information Protection SDK 4.2 개발자 지침 | Microsoft Docs"
+description: "AIP SDK 4.2 개발 방법에 대한 도움말 항목 컬렉션"
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -15,13 +15,14 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 7adaf60ffc79edffc38a070d451c1f65c8a41300
+ms.sourcegitcommit: 5df7da98abf4e7c8e39b610fe374d67cf2954338
+ms.openlocfilehash: 9906d300debd4d28e21b8fab2c44c30574d47f4b
+ms.lasthandoff: 01/24/2017
 
 
 ---
 
-# <a name="developer-guidance-and-terms"></a>개발자 지침 및 용어
+# <a name="developer-guidance"></a>개발자 지침
 Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management Services)를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는 데 중점을 둡니다.
 
 다음 항목은 RMS 사용 응용 프로그램을 개발하기 위한 디자인 프로세스를 지원하기 위한 것입니다.
@@ -30,11 +31,5 @@ Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management 
 - [방법: 오류 및 성능 로깅 사용](enabling-logging.md) - RMS SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
 - [방법: 기본 제공 권한 사용](built-in-rights-usage-restriction-reference.md) - RMS SDK 4.2에서 제공하는 기본 제공 권한 및 앱이 이러한 제한에 따라 적용해야 하는 사용 제한에 대해 간략하게 설명합니다.
 - [방법: 문서 추적 사용](how-to-use-document-tracking.md) - 문서 추적 기능을 사용하려면 관련 메타데이터 및 서비스 등록 관리에 대한 몇 가지 간단한 사항을 이해해야 합니다.
-- [용어](terms.md) - 권한 관리 서비스와 관련된 용어 정의 컬렉션입니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

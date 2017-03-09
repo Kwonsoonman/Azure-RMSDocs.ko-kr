@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 공유 응용 프로그램에서 바로 가기 키 사용 | Azure Information Protection"
+title: "RMS 공유 앱의 바로 가기 키 - AIP"
 description: "Windows용 RMS 공유 응용 프로그램에서 바로 가기 키를 사용하는 방법에 대한 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ed59b022078f73d61afcff3eff10aa338176e568
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ebb40568e63cf51a8b6473ca872f1e0ed9ec30ea
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -39,8 +40,4 @@ RMS 공유 응용 프로그램을 사용할 때 **Alt** 키를 누르면 사용 
 ## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

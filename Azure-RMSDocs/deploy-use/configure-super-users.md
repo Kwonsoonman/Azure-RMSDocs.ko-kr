@@ -1,10 +1,10 @@
 ---
-title: "Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성 | Azure Information Protection"
+title: "Azure Rights Management에 대한 슈퍼 사용자 구성 - AIP"
 description: "Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 있는 사용자와 서비스가 항상 읽고 검사할 수 있도록 하는 Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능 및 이 기능을 구현하는 방법을 설명합니다. ‘데이터 추론’이라고도 하는 이 기능은 조직 데이터에 대한 통제력을 유지하는 데 필수적인 요소입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 70c74678ec0ef0b583b2784177520d0ea8a5b7e8
+ms.sourcegitcommit: 07236a2820e4d8d4d594eda755cb025d21b96d12
+ms.openlocfilehash: 591ca9ba080da9565e0143d887e3db179b810862
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -37,7 +38,9 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 
 기본적으로 슈퍼 사용자 기능은 사용하도록 설정되지 않으며 이 역할은 사용자에게 할당되지 않습니다. Exchange Server용 Rights Management 커넥터를 구성하는 경우에는 이 기능이 자동으로 사용하도록 설정되지만 Exchange Online, SharePoint Online 또는 SharePoint Server를 실행하는 표준 서비스에는 이 기능이 필요하지 않습니다.
 
-슈퍼 사용자 기능을 수동으로 사용하도록 설정해야 하는 경우 Windows PowerShell cmdlet Windows PowerShell cmdlet [Enable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629400.aspx)를 사용합니다. 그런 다음 [Add-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629411.aspx) cmdlet 또는 [Set-AadrmSuperUserGroup](https://msdn.microsoft.com/library/azure/mt653943.aspx) cmdlet을 사용하여 필요에 따라 사용자 또는 서비스 계정을 할당하고, 필요에 따라 이 그룹에 사용자 또는 다른 그룹을 추가합니다. 
+슈퍼 사용자 기능을 수동으로 사용하도록 설정해야 하는 경우 PowerShell cmdlet [Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature)를 사용합니다. 그런 다음 [Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser) cmdlet 또는 [Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup) cmdlet을 사용하여 필요에 따라 사용자 또는 서비스 계정을 할당하고, 필요에 따라 이 그룹에 사용자 또는 다른 그룹을 추가합니다. 
+
+슈퍼 사용자를 위해 그룹을 사용하면 보다 쉽게 관리할 수 있지만 성능상의 이유로 Azure Rights Management에서 [그룹 구성원을 캐시](../plan-design/prepare.md#group-membership-caching)합니다. 따라서 즉시 콘텐츠 암호를 해독하기 위해 새 사용자를 슈퍼 사용자로 할당해야 하는 경우 사용자를 Set-AadrmSuperUserGroup을 사용하여 구성한 기존 그룹에 추가하지 말고 Add-AadrmSuperUser를 사용하여 추가합니다.
 
 > [!NOTE]
 > [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
@@ -52,26 +55,24 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 
 다음 로그 추출은 Get-AadrmAdminLog cmdlet을 사용한 일부 예제 항목을 보여 줍니다. 이 예제에서 Contoso Ltd의 관리자는 슈퍼 사용자 기능이 사용하지 않도록 설정되어 있음을 확인하고, Richard Simone을 슈퍼 사용자로 추가하고, Richard가 Azure Rights Management 서비스에 대해 구성된 유일한 슈퍼 사용자인지 확인한 다음, Richard가 현재 퇴사한 직원이 보호한 일부 파일의 암호를 해독할 수 있도록 슈퍼 사용자 기능을 사용하도록 설정합니다.
 
-`2015-08-01T18:58:20    admin@contoso.com   GetSuperUserFeatureState    Passed  Disabled`
+`2015-08-01T18:58:20    admin@contoso.com    GetSuperUserFeatureState    Passed    Disabled`
 
-`2015-08-01T18:59:44    admin@contoso.com   AddSuperUser -id rsimone@contoso.com    Passed  True`
+`2015-08-01T18:59:44    admin@contoso.com    AddSuperUser -id rsimone@contoso.com    Passed    True`
 
-`2015-08-01T19:00:51    admin@contoso.com   GetSuperUser    Passed  rsimone@contoso.com`
+`2015-08-01T19:00:51    admin@contoso.com    GetSuperUser    Passed    rsimone@contoso.com`
 
-`2015-08-01T19:01:45    admin@contoso.com   SetSuperUserFeatureState -state Enabled Passed  True`
+`2015-08-01T19:01:45    admin@contoso.com    SetSuperUserFeatureState -state Enabled    Passed    True`
 
 ## <a name="scripting-options-for-super-users"></a>슈퍼 사용자에 대한 스크립팅 옵션
-[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]에 대한 슈퍼 사용자 역할이 할당된 사용자가 여러 위치에서 여러 파일의 보호를 제거해야 하는 상황이 종종 발생합니다. 이 작업은 수동으로 수행할 수도 있지만 스크립트를 작성하는 것이 더 효율적이며 더욱 안정적인 경우가 많습니다. 이렇게 하려면 [RMS Protection Tool](http://www.microsoft.com/en-us/download/details.aspx?id=47256)을 다운로드합니다. 그런 후에 [Unprotect-RMSFile](https://msdn.microsoft.com/library/azure/mt433200.aspx) cmdlet 및 [Protect-RMSFile](https://msdn.microsoft.com/library/azure/mt433201.aspx) cmdlet을 필요에 따라 사용합니다.
+[!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]에 대한 슈퍼 사용자 역할이 할당된 사용자가 여러 위치에서 여러 파일의 보호를 제거해야 하는 상황이 종종 발생합니다. 이 작업은 수동으로 수행할 수도 있지만 스크립트를 작성하는 것이 더 효율적이며 더욱 안정적인 경우가 많습니다. 이렇게 하려면 [Unprotect-RMSFile](/powershell/azureinformationprotection/vlatest/unprotect-rmsfile) cmdlet 및 [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile) cmdlet을 필요에 따라 사용합니다. 
 
-이러한 cmdlet에 대한 자세한 내용은 [RMS 보호 Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)를 참조하세요.
+분류 및 보호를 사용하는 경우 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel)을 사용하여 보호를 적용하지 않는 새 레이블을 적용하거나 보호를 적용한 레이블을 제거할 수 있습니다. 
+
+이러한 cmdlet에 대한 자세한 내용은 Azure Information Protection 클라이언트 관리자 가이드에서 [Azure Information Protection 클라이언트에서 PowerShell 사용](../rms-client/client-admin-guide-powershell.md)을 참조하세요.
 
 > [!NOTE]
-> RMS 보호 도구와 함께 제공되는 RMS 보호 PowerShell 모듈은 기본 [Azure 권한 관리용 Windows PowerShell 모듈](administer-powershell.md)과는 다르며 해당 모듈을 보완합니다. RMS 보호 모듈은 Azure Information Protection의 Azure RMS(Azure Rights Management Services) 및 AD RMS(Active Directory Rights Management Services)를 모두 지원합니다.
+> AIP 모듈은 RMS 보호 도구와 함께 설치되는 RMS 보호 PowerShell 모듈을 대체합니다. 이러한 두 모듈은 서로 다르며 주 [Azure Rights Management용 Windows PowerShell 모듈](administer-powershell.md)을 보완합니다. AIP 모듈은 Azure Information Protection, Azure Information Protection용 Azure RMS(Azure Rights Management Services) 및 AD RMS(Active Directory Rights Management Services)를 지원합니다.
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

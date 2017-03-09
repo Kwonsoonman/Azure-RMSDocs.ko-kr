@@ -1,18 +1,19 @@
 ---
-title: "빠른 시작 자습서 4단계 | Azure Rights Management"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 소개 자습서의 3단계로 약 30분 만에 완료해야 합니다."
+title: "빠른 시작 자습서 4단계 - AIP"
+description: "Azure Information Protection를 빠르게 사용해 보기 위한 소개 자습서 4단계 - 레이블 지정 및 보호 작동 방식 확인"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: 8260da1905c6701675b5490e3919ae708f46a5a9
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -27,15 +28,33 @@ ms.openlocfilehash: bcf1e9ee7a2d6cf8fb264533f150b350ce0a9e56
 
 ## <a name="to-manually-change-our-default-label"></a>수동으로 기본 레이블을 변경하려면
 
-Information Protection 표시줄에서 **Personal**(비공개) 레이블을 선택합니다. 그러면 분류 수준을 낮추는 이유를 선택하는 메시지가 표시됩니다.
+Information Protection 표시줄에서 **비밀** 레이블을 선택하면 하위 레이블이 표시되는 방식이 나타납니다.
+
+![Azure Information Protection 빠른 시작 자습서 4단계 - 하위 레이블 선택](../media/info-protect-sub-labels.png)
+
+**모든 회사**를 선택하면 이 문서에 대한 레이블을 선택했으므로 표시줄에 다른 레이블이 더 이상 표시되지 않는 것을 볼 수 있습니다. **민감도** 값이 **비밀 \ 모든 회사**로 변경되고 레이블 색도 그에 맞게 변경됩니다.
+
+![Azure Information Protection 빠른 시작 자습서 4단계 - 하위 레이블이 선택됨](../media/info-protect-sub-label-selected.png)
+
+Information Protection 표시줄에서 **비밀 \ 모든 회사** 옆에 있는 **레이블 편집** 아이콘을 클릭합니다.
+
+![Azure Information Protection 빠른 시작 자습서 4단계 - 레이블 편집 아이콘](../media/info-protect-edit-label-selected.png)
+
+사용 가능한 레이블이 다시 표시됩니다.
+
+이제 **개인** 레이블을 선택합니다. 이 문서에 대해 이전에 선택한 레이블보다 낮은 분류 수준에 있는 레이블을 선택했으므로 분류 수준을 낮춘 이유를 제시하라는 메시지가 표시됩니다.
 
 ![Azure Information Protection 빠른 시작 자습서 4단계 - 낮추는 이유를 확인하는 메시지가 표시됨](../media/info-protect-lower-justification.png)
 
-**The previous label no longer applies**(이전 레이블이 더 이상 적용 안 됨)를 선택하고 **Confirm**(확인)을 클릭합니다. **Sensitivity**(민감도) 값이 **Personal**(비공개)로 변경되는 것을 확인할 수 있습니다.
+**The previous label no longer applies**(이전 레이블이 더 이상 적용 안 됨)를 선택하고 **Confirm**(확인)을 클릭합니다. **민감도** 값이 **개인**으로 변경되고 다른 레이블은 다시 숨겨집니다.
 
 ## <a name="to-remove-the-classification-completely"></a>분류를 완전히 제거하려면
 
-Information Protection 표시줄에서 **Personal(비공개)** 옆에 있는 **Edit label(레이블 편집)** 아이콘을 클릭합니다. 사용 가능한 레이블이 표시됩니다. 그러나 이번에는 레이블 중 하나를 선택하는 대신 **Remove label(레이블 제거)** 아이콘을 클릭합니다. **OK**(확인)를 클릭하여 확인하고 이 작업에 대한 근거를 제공합니다.  
+Information Protection 표시줄에서 **레이블 편집** 아이콘을 다시 클릭합니다. 그러나 레이블 중 하나를 선택하는 대신 **레이블 삭제** 아이콘을 클릭합니다.
+
+![Azure Information Protection 빠른 시작 자습서 4단계 - 삭제 아이콘](../media/delete-icon-from-personal.png)
+
+이번에는 확인 메시지가 표시되면 "이 문서는 분류할 필요가 없습니다."를 입력하고 **확인**을 클릭합니다.  
 
 **Sensitivity**(민감도) 값에 **Not set**(설정 안 함)이 표시되며, 이는 기본 레이블을 설정하지 않은 경우 사용자에게 처음에 표시되는 내용입니다.
 
@@ -56,15 +75,20 @@ Information Protection 표시줄에서 **Personal(비공개)** 옆에 있는 **E
 
     문서는 지정한 Azure 권한 관리 템플릿으로도 보호되며, 이는 **파일** 탭을 클릭하고 **문서 보호**에 대한 정보를 보고 확인할 수 있습니다. 기본 기밀 템플릿을 사용한 경우 문서는 내부 사용자로 제한되고(조직 외부의 사용자는 문서를 열 수 없음) 해당 내용을 복사하거나 인쇄할 수 없다는 정보가 표시됩니다. 문서의 소유자는 문서에서 복사하고 문서를 인쇄할 수 있지만, 조직의 다른 사용자에게 문서를 메일로 보내는 경우 해당 사용자는 이러한 작업을 수행할 수 없습니다.
 
+4. 이제 이 문서를 닫을 수 있습니다.
+
 지금까지 분류, 레이블 지정 및 보호 작업 방식에 대해 살펴보았으므로 이제 다른 조직의 다른 사용자와 문서를 공유할 때 보호하는 방법에 대해 확인해 보겠습니다. 문서의 사용 방식과 액세스에 대한 취소 방식을 추적할 수도 있습니다.
+
+|자세한 정보가 필요한 경우|추가 정보|
+|--------------------------------|--------------------------|
+|파일 레이블 지정 및 보호에 대한 전체 지침 |[파일 또는 전자 메일 분류 및 보호](../rms-client/client-classify-protect.md)|
+
+
+
+
 
 >[!div class="step-by-step"]
 [&#171;3단계](infoprotect-tutorial-step3.md)
 [5단계 &#187;](infoprotect-tutorial-step5.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO2-->
-
-

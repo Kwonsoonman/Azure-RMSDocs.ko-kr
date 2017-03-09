@@ -1,18 +1,19 @@
 ---
-title: "기본 정책 | Azure Information Protection"
+title: "Azure Information Protection의 기본 정책"
 description: "Azure Information Protection에 대한 기본 정책을 구성하는 방법을 설명합니다. 기본 정책을 수정하는 경우 이러한 값을 참조하여 정책을 기본값으로 반환할 수 있습니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/04/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
 translationtype: Human Translation
-ms.sourcegitcommit: d5b3f3fc473661022a4f17b6587d58a252d07d1a
-ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: d4e67ace9cf56ffdb4e8335dd514e1568bccb9b6
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,7 +41,7 @@ ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
 |기밀|이 데이터는 민감한 비즈니스 정보를 포함합니다. 권한 없는 사용자에게 이 데이터를 노출하면 조직이 해를 입을 수 있습니다. 기밀 정보의 예로는 직원 정보, 개별 고객 프로젝트 또는 계약 및 판매 계정 데이터가 있습니다.|**사용**: 켜기 <br /><br />**색**: 주황색<br /><br />**시각적 표시**: 바닥글(문서 및 메일)<br /><br />**조건**: 없음<br /><br />**보호**: 없음|
 |비밀|이 데이터는 보호해야 하는 매우 민감한 비즈니스 정보를 포함합니다. 권한 없는 사용자에게 비밀 데이터를 노출하면 조직이 심각한 해를 입을 수 있습니다. 비밀 정보의 예로는 개인 식별 정보, 고객 레코드, 소스 코드, 사전 발표된 재무 보고서 등이 있습니다.|**사용**: 켜기 <br /><br />**색**: 빨간색<br /><br />**시각적 표시**: 바닥글(문서 및 메일)<br /><br />**조건**: 없음<br /><br />**보호**: 없음|
 
-## <a name="sublabels"></a>하위 레이블
+## <a name="sub-labels"></a>하위 레이블
 
 |Label|도구 설명|설정|
 |-------------------------------|---------------------------|-----------------|
@@ -60,8 +61,4 @@ ms.openlocfilehash: 5c3d3962d72a0dc3d08bdb869f6b00f4524477b5
 
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요. 
 
-
-
-<!--HONumber=Nov16_HO1-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

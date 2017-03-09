@@ -1,10 +1,10 @@
 ---
-title: "Azure Active Directory 요구 사항 | Azure Information Protection"
+title: "AIP에 대한 Azure Active Directory 요구 사항"
 description: "사용자가 정상적으로 인증할 수 있도록, Azure Information Protection을 사용하는 데 필요한 Azure AD 요구 사항을 파악합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2016
+ms.date: 02/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a38b4f201a05ece08f06b18797a146adecf59053
-ms.openlocfilehash: 1246bfcf3a389e2dcd7a9ef922c3f40150611640
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1422db06905f342f930bce5cd63eb4e08fc8076a
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -52,9 +53,13 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
     -   Office 2013을 사용하는 경우 [Office 2013 2015년 6월 9일 업데이트(KB3054853)](https://support.microsoft.com/kb/3054853)도 설치해야 합니다. 이 업데이트 및 최신 인증이 Office 2013에 ADAL(Active Directory 인증 라이브러리) 기반 로그인을 제공하는 방식에 대한 자세한 내용은 Office 블로그에서 [발표된 Office 2013 최신 인증 공개 미리 보기](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/)를 참조하세요.
 
+- Azure Information Protection 클라이언트:
+
+    - Windows용 및 iOS/Android용 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)에는 항상 지원되는 MFA가 있으며 최소 버전은 지정할 필요가 없습니다. 
+
 -   Windows용 권한 관리 공유 응용 프로그램:
 
-    -   제어판, 프로그램 및 기능을 사용하여 확인할 수 있는 1.0.1908.0의 최소 버전을 설치해야 합니다. 공유 응용 프로그램에 대한 자세한 내용은 [Windows용 권한 관리 공유 응용 프로그램](../rms-client/sharing-app-windows.md)을 참조하세요.
+    -   제어판, 프로그램 및 기능을 사용하여 확인할 수 있는 1.0.1908.0의 최소 버전을 설치해야 합니다. Rights Management 공유 응용 프로그램은 이제 Azure Information Protection 클라이언트로 대체됩니다. 공유 응용 프로그램에 대한 자세한 내용은 [Windows용 권한 관리 공유 응용 프로그램](../rms-client/sharing-app-windows.md)을 참조하세요.
 
 -   모바일 장치 및 Mac 컴퓨터에 대한 Rights Management 공유 앱:
 
@@ -77,9 +82,5 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 ## <a name="next-steps"></a>다음 단계
 기타 요구 사항을 확인하려면 [Azure Information Protection에 대한 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

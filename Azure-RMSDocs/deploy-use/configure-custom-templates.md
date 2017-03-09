@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 서비스용 사용자 지정 템플릿 구성 | Azure Information Protection"
+title: "Azure RMS용 사용자 지정 템플릿 구성 - AIP"
 description: "관리자가 사용 권한 템플릿을 구성하고 관리하는 방법 및 해당 지침을 제공합니다. 최종 사용자와 기타 관리자는 템플릿을 통해 권한이 있는 사용자만 액세스할 수 있도록 제한된 정책을 중요한 파일에 쉽게 적용할 수 있습니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ea64bd17994a9ce38ed0d758ec63156a7f64c732
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0818f8e65f2065e70ef66732819d21aa85c912fa
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -37,7 +38,7 @@ Azure Rights Management 서비스를 [활성화](activate-service.md)하면 액�
 
     -   권한 지정: 콘텐츠 보기, 파일 저장하기, 콘텐츠 편집하기, 할당된 권한 보기, 매크로 허용하기, 전달하기, 회신하기, 전체 회신하기
 
-또한 [RMS 공유 응용 프로그램](../rms-client/sharing-app-windows.md)에서는 사용자가 원하는 권한 설정을 정의할 수 있습니다. 그리고 Outlook 클라이언트와 Outlook Web Access의 경우 [전달 금지](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 옵션을 선택할 수 있습니다.
+또한 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)를 사용하여 자체 권한 집합을 정의할 수 있습니다. 그리고 Outlook 클라이언트와 Outlook Web Access의 경우 [전달 금지](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 옵션을 선택할 수 있습니다.
 
 많은 조직에서는 기본 템플릿만으로도 충분할 수 있습니다. 그러나 원하는 경우 사용자 지정 권한 정책 템플릿을 만들 수 있습니다. 사용자 지정 템플릿을 만드는 이유는 다음과 같습니다.
 
@@ -63,10 +64,6 @@ Azure Rights Management 서비스를 [활성화](activate-service.md)하면 액�
 
 -   [PowerShell을 사용하여 템플릿 관리](configure-templates-with-powershell.md)
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 테넌트 키에 대한 작업 | Azure Information Protection"
+title: "Azure Information Protection 테넌트 키에 대한 작업"
 description: "Azure Information Protection 테넌트 키에 적용되는 다양한 제어 및 책임 수준에 대해 알아봅니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 2a46c750034267bc2e69c35f5ac9c134aed0461b
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 0895050d1bc0528f9ab230bdeac9e2a3ee787b31
 
 
 ---
@@ -43,12 +43,10 @@ Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식
 - [Microsoft 관리 테넌트 키](operations-microsoft-managed-tenant-key.md)
 - [고객 관리 테넌트 키](operations-customer-managed-tenant-key.md)
 
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 
 
-
-
-
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

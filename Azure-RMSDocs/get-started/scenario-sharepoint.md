@@ -1,10 +1,10 @@
 ---
-title: "시나리오 - SharePoint에 저장된 문서에 대한 제어 유지 | Azure Information Protection"
+title: "AIP 시나리오 - SharePoint에 저장된 문서 제어"
 description: "이 시나리오 및 지원 사용자 문서에서는 Azure Rights Management 보호를 사용하여 SharePoint에 저장된 Office 문서가 보호된 라이브러리를 통해 계속 제어되도록 합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: 1b6244c7-5ab9-4881-bc8f-6fa960390d89
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: 371e566a166dad74b55266db23e034f926942a26
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 3d5d1c818323a3723f6837ebe8fedd4995efb467
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-retain-control-of-documents-stored-in-sharepoint"></a>시나리오 - SharePoint에 저장된 문서에 대한 제어 유지
+# <a name="scenario---retain-control-of-documents-stored-in-sharepoint"></a>시나리오 - SharePoint에 저장된 문서에 대한 제어 유지
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -103,9 +104,4 @@ SharePoint 사이트인 **판매 예측 및 보고서**가 이제 안전한 공�
 
 -   지원 센터에 연락하려면 다음 정보를 참조하세요. helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

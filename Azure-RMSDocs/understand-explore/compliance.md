@@ -1,10 +1,10 @@
 ---
-title: "준수 및 지원 정보 | Azure Information Protection"
+title: "Azure Information Protection에 대한 규정 준수 및 정보"
 description: "법적 정보, 규정 준수, SLA를 포함하는 Azure Information Protection 관련 지원 정보입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 291198ed501854de1aa7ddbfc80cd7a7f1b4849c
-ms.openlocfilehash: a853aaa993bbb5e15e6c4b80d4c6f0581b6e9090
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: a7d6c5775f9f3ddedd2177054731b26443a0d2d9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -55,9 +56,5 @@ Azure Rights Management 서비스의 특정 인증에 대한 자세한 내용은
 
 - Office 365 라이브러리: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
-
-
-
-<!--HONumber=Nov16_HO5-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

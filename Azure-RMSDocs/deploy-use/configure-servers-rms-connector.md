@@ -1,10 +1,10 @@
 ---
-title: "Azure Rights Management 커넥터에 대해 서버 구성 | Azure Information Protection"
+title: "Rights Management 커넥터에 대해 서버 구성 - AIP"
 description: "Azure RMS(Rights Management) 커넥터를 사용할 온-프레미스 서버를 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 5단계를 설명합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/11/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: afbaf9bfc2b898d8dece415a26045ec52f7deaac
-ms.openlocfilehash: 15d017cda5e390a6fd2b639ef451a15422981ae4
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 8837b6187aee8bc041df7185527470297e913f49
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -248,14 +249,12 @@ RMS 커넥터 및 파일 분류 인프라를 사용하여 Office 문서를 보�
 3.  RMS 암호화로 문서를 보호하기 위한 분류 규칙 및 파일 관리 작업을 만들고, RMS 정책을 자동으로 적용하기 위한 RMS 템플릿을 지정합니다. 자세한 내용은 Windows Server 문서 라이브러리의 [파일 서버 리소스 관리자 개요](http://technet.microsoft.com/library/hh831701.aspx) 를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
-이제 RMS 커넥터가 설치 및 구성되고 서버가 RMS 커넥터를 사용하도록 구성되었으므로, IT 관리자와 사용자는 Azure RMS를 사용하여 메일 메시지 및 문서를 보호하고 사용할 수 있습니다. 사용자가 이러한 작업을 간편하게 수행할 수 있도록, Office용 추가 기능을 설치하고 파일 탐색기에 새로운 오른쪽 클릭 옵션을 추가하는 RMS 공유 응용 프로그램을 배포합니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)를 참조하세요.
+이제 RMS 커넥터가 설치 및 구성되고 서버가 RMS 커넥터를 사용하도록 구성되었으므로, IT 관리자와 사용자는 Azure Rights Management 서비스를 사용하여 메일 메시지 및 문서를 보호하고 사용할 수 있습니다. 사용자가 이러한 작업을 간편하게 수행할 수 있도록, Office용 추가 기능을 설치하고 파일 탐색기에 새로운 오른쪽 클릭 옵션을 추가하는 Azure Information Protection 클라이언트를 배포합니다. 자세한 내용은 [Azure Information Protection 클라이언트 관리자 가이드](../rms-client/client-admin-guide.md)를 참조하세요.
+
+Exchange 전송 규칙 또는 Windows Server FCI와 함께 사용하려는 부서별 템플릿을 구성하는 경우 **응용 프로그램에서 사용자 ID를 지원하지 않는 경우 이 템플릿을 모든 사용자에게 표시** 확인란이 선택되도록 범위 구성에 응용 프로그램 호환성 옵션을 포함해야 합니다.
 
 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용자와 관리자에게 배포하기 전에 수행할 수 있는 다른 구성 단계가 있는지 확인할 수 있습니다.
 
 RMS 커넥터를 모니터링하려면 [Azure Rights Management 커넥터 모니터링](monitor-rms-connector.md)을 참조하세요. 
 
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -1,10 +1,10 @@
 ---
-title: "시나리오 - 회사 기밀 메일 보내기 | Azure Information Protection"
+title: "AIP 시나리오 - 회사 기밀 메일 보내기"
 description: "이 시나리오와 지원 사용자 문서에서는 조직의 모든 사용자가 조직 외부에서 읽을 수 없는 메일 통신을 안전하게 보낼 수 있도록 Azure Rights Management 보호를 사용합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: 950799e9-2289-48c7-b95a-f54a8ead520a
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 04d8e694aa33bcc00deca602737e0ab11eafb53d
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-send-a-companyconfidential-email"></a>시나리오 - 회사 기밀 메일 보내기
+# <a name="scenario---send-a-company-confidential-email"></a>시나리오 - 회사 기밀 메일 보내기
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -92,7 +93,7 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
 ![Azure RMS 빠른 배포를 위한 템플릿 사용자용 설명 문서](../media/AzRMS_UsersBanner.png)
 
-### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>Outlook을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>Outlook을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
 
 1.  Outlook 내에서 새 메일 메시지를 만들고 포함하려는 첨부 파일을 추가한 다음 *&lt;조직 이름&gt;*에서 사용자 또는 그룹을 선택합니다.
 
@@ -102,7 +103,7 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
 3.  메시지를 보냅니다.
 
-### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>Outlook Web App을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
+### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>Outlook Web App을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
 
 1.  Outlook Web App 내에서 새 메일 메시지를 만들고 포함하려는 첨부 파일을 추가한 다음 주소록에서 *&lt;조직 이름&gt;* 사용자 또는 그룹을 선택합니다.
 
@@ -125,7 +126,7 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 ### <a name="example-customized-user-documentation"></a>예제 사용자 지정 사용자 문서
 ![Azure RMS 빠른 배포를 위한 예제 사용자용 설명 문서](../media/AzRMS_ExampleBanner.png)
 
-#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook"></a>Outlook을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook"></a>Outlook을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
 
 1.  Outlook 내에서 새 메일 메시지를 만들고 포함하려는 첨부 파일을 추가한 다음 주소록에서 VanArsdel 사용자 또는 그룹을 선택합니다.
 
@@ -135,7 +136,7 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
 3.  메시지를 보냅니다.
 
-#### <a name="how-to-send-emails-that-contain-companyconfidential-information-using-outlook-web-app"></a>Outlook Web App을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
+#### <a name="how-to-send-emails-that-contain-company-confidential-information-using-outlook-web-app"></a>Outlook Web App을 사용하여 회사 기밀 정보가 포함된 메일을 보내는 방법
 
 1.  Outlook Web App 내에서 새 메일 메시지를 만들고 포함하려는 첨부 파일을 추가한 다음 주소록에서 VanArsdel 사용자 또는 그룹을 선택합니다.
 
@@ -155,9 +156,5 @@ ms.openlocfilehash: f886b72ba18f0f13ac60e08d000b231cd36d1d5f
 
     -   메일: helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

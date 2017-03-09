@@ -1,10 +1,10 @@
 ---
-title: "Azure Information Protection에 대한 요구 사항 - 전체 문서 | Azure Information Protection"
+title: "Azure Information Protection에 대한 요구 사항 - 전체 문서"
 description: "Azure Information Protection을 조직에 배포하기 위한 필수 구성 요소를 식별합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 10cf9371-a61b-495f-9d42-898448806994
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 68b3d74d32b98f44cfdf9cf78b7a9151f16124ce
-ms.openlocfilehash: b4afd639439f0549ce38de1e63a1798d30680066
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 94259046ed2eb78bce9d7ce49a4dc3b9c99d55c3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -71,7 +72,7 @@ Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Az
 > 
 > -   **Windows Server 2012 R2** 이상의 서버 버전이나 OAuth 2.0 프로토콜을 지원하는 다른 인증 공급자에서 AD FS를 사용해야 합니다.
 
-### <a name="multifactor-authentication-mfa-and-azure-information-protection"></a>MFA(Multi-Factor Authentication) 및 Azure Information Protection
+### <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>MFA(Multi-Factor Authentication) 및 Azure Information Protection
 Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하려면 다음 중 하나 이상이 필요합니다.
 
 -   Office 2013(최소 버전)
@@ -248,7 +249,7 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 -   Windows 컴퓨터의 경우: 최소 Windows 7 서비스 팩 1 이상 버전이 필요합니다.
 
-## <a name="onpremises-servers-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버
+## <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버
 
 Azure Rights Management 커넥터를 사용할 때 Azure Information Protection에서 지원되는 온-프레미스 서버 제품은 다음과 같습니다. 이 커넥터는 Azure Information Protection에서 Office 문서 및 메일을 보호하는 데 사용되는 온-프레미스 서버와 Azure Rights Management 서비스 간의 통신 인터페이스(릴레이) 역할을 합니다. 
 
@@ -285,9 +286,5 @@ Rights Management 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 W
 
 이러한 온-프레미스 서버에 대해 Rights Management 커넥터를 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
-
-
-
-<!--HONumber=Nov16_HO1-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

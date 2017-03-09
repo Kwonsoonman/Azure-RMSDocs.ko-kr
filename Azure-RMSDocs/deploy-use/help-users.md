@@ -1,10 +1,10 @@
 ---
-title: "사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원| Azure Information Protection"
+title: "사용자가 Azure RMS를 사용하여 파일을 보호할 수 있도록 지원 - AIP"
 description: "Azure Information Protection의 Azure RMS(Azure Rights Management)Rights Management 서비스를 배포 및 구성한 후 사용자, 관리자 및 지원 센터에 지침을 제공할 때 도움이 되는 정보를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2016
+ms.date: 03/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
+ms.sourcegitcommit: 1300b0abb3cb59ad09075418ab8c911466740a2c
+ms.openlocfilehash: f1d2db08951c1d017ea4f011855d99423fa9d577
+ms.lasthandoff: 03/03/2017
 
 
 ---
@@ -42,6 +43,8 @@ ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 -   **지원 센터 정보:**
 
     지원 센터의 가장 유용한 도구 중 하나는 [RMS 분석기](https://www.microsoft.com/en-us/download/details.aspx?id=46437)입니다. 지원 센터 운영자는 이 도구를 Azure RMS 관리자 옵션을 사용하여 실행할 수 있으며 사용자에게 Azure RMS 사용자 옵션을 사용하여 실행하도록 요청할 수 있습니다. 이 도구는 문제를 식별하는 데 도움이 될 뿐 아니라 찾은 문제를 해결하며 문제가 해결되지 않으면 추적 로그를 기록합니다.
+    
+    사용자가 Azure Information Protection 클라이언트를 실행하는 경우 지원 센터 운영자는 **도움말 및 피드백**, **진단 실행** 옵션을 사용한 다음 클라이언트를 초기화하도록 요청합니다. 그러나 RMS 분석기와 달리 초기화를 수행해도 사용자가 로그아웃되거나 클라이언트가 다시 부트스트랩되지 않으며 자동 수정도 진행되지 않습니다.
 
     직원이 조직을 떠난 후에 법률 자문 부서 또는 관리자가 요청하는 경우처럼 보호된 문서의 모든 액세스에 대한 합법적인 요청이 있을 경우 지원 센터는 Azure Rights Management [슈퍼 사용자 기능](configure-super-users.md)을 사용하여 이를 요청하는 프로세스를 진행해야 합니다.
 
@@ -61,20 +64,16 @@ ms.openlocfilehash: df9da739717465a905c9e6da281df652de63f8bd
 
 사용자가 중요한 문서와 전자 메일을 보호할 수 있도록 다음 섹션에서 응용 프로그램 관련 정보를 참조하세요.
 
-## <a name="using-information-protection-with-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에서 정보 보호 기능 사용
-사용자가 Office 2010을 사용하는 경우 콘텐츠를 보호하고 보호된 콘텐츠를 사용하려면 Rights Management(RMS) 공유 응용 프로그램이 필요합니다. 그러나 Azure Rights Management 서비스를 지원하는 모든 컴퓨터와 모바일 장치에서도 공유 응용 프로그램을 사용하는 것이 좋습니다.
+## <a name="using-information-protection-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 정보 보호 사용
+Azure Information Protection 클라이언트는 Office 2010을 사용하는 사용자가 보호된 문서 및 전자 메일을 보호하고 사용하는 데 필요할 수 있지만 컴퓨터 및 모바일 장치에도 권장됩니다.
 
-RMS 공유 응용 프로그램은 사용자가 보다 쉽게 중요한 문서를 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 하고 필요한 경우 액세스 권한을 취소할 수 있도록 합니다.
+Azure Information Protection 클라이언트는 사용자가 보다 쉽게 중요한 문서를 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 하고 필요한 경우 액세스 권한을 취소할 수 있도록 합니다.
 
-Windows 컴퓨터에서 이 응용 프로그램을 사용하는 지침은 [Rights Management 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)를 참조하세요.
+이 Windows 컴퓨터용 클라이언트를 사용하기 위한 지침은 [Azure Information Protection 클라이언트 사용자 가이드](../rms-client/client-user-guide.md)를 참조하세요.
 
-모바일 장치의 경우 [모바일 플랫폼용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://technet.microsoft.com/dn451248)를 참조하세요.
-
-> [!TIP]
-> 개괄적인 예제 시나리오와 스크린샷을 보려면 [사용자가 모바일 사용자와 안전하게 첨부 파일 공유](../understand-explore/what-admins-users-see.md#users-safely-share-attachments-with-mobile-users) 섹션을 참조하세요.
 
 ## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용
-Azure Rights Management 공유 응용 프로그램을 설치하지 않은 상태에서 Rights Management 서비스를 사용하는 경우 더욱 쉽게 파일을 보호할 수 있게 해 주는, 리본의 **보호 상태로 공유** 단추 또는 파일 탐색기의 **바로 보호**가 표시되지 않습니다. 이러한 사용자는 다음 지침을 따라야 합니다.
+Azure Rights Management 서비스를 사용하고 있으며 Azure Information Protection 클라이언트를 설치하지 않은 경우 파일을 보다 쉽게 보호할 수 있도록 하는 Office 데스크톱 앱의 Azure Information Protection 표시줄, 리본의 **보호** 단추 또는 파일 탐색기의 **분류 및 보호** 옵션이 표시되지 않습니다. 이러한 사용자는 다음에 나오는 단계와 유사한 지침을 따라야 합니다.
 
 > [!TIP]
 > 이러한 응용 프로그램에서 정보 보호 기능을 사용하기 위한 응용 프로그램별 도움말과 지침을 찾으려면 **IRM** 및 응용 프로그램 이름과 버전을 검색합니다.
@@ -112,10 +111,6 @@ Azure Rights Management 공유 응용 프로그램을 설치하지 않은 상태
 
 보호된 문서를 볼 때와 마찬가지로 받는 사람은 전자 메일 메시지를 받으면 먼저 인증하게 됩니다. 전자 메일 메시지를 열 권한이 있으면 해당 사용자에 대해 지정된 제한적 사용 권한으로 메시지가 열립니다. 예를 들어 **전체 회신 금지**를 선택한 경우에는 메시지 창에서 **전체 회신** 옵션을 사용할 수 없습니다.
 
-
-
-
-
-<!--HONumber=Nov16_HO2-->
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

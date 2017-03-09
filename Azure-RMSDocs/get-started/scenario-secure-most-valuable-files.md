@@ -1,10 +1,10 @@
 ---
-title: "시나리오 - 가장 중요한(소수) 파일 보호 | Azure Information Protection"
+title: "AIP 시나리오 - 가장 중요한(소수) 파일 보호"
 description: "이 시나리오와 지원 사용자 문서에서는 Azure 권한 관리를 통해 가장 중요한 파일로 식별된 소수의 파일을 수동으로 사용자 지정 보호하여 무단 액세스로부터 가장 높은 수준의 보호를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: 95f1844a-612c-4e67-bbe6-4b6b92295221
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: f096a4ad7333d24c7bce0dd729b40ebb203726c5
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-secure-your-most-few-valuable-files"></a>시나리오 - 가장 중요한(소수) 파일 보호
+# <a name="scenario---secure-your-most-few-valuable-files"></a>시나리오 - 가장 중요한(소수) 파일 보호
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -70,7 +71,7 @@ ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
 
 2.  새 템플릿을 게시합니다.
 
-### <a name="to-protect-the-files-inplace"></a>파일을 바로 보호하려면
+### <a name="to-protect-the-files-in-place"></a>파일을 바로 보호하려면
 
 1.  파일 탐색기에서 보호할 파일이 포함된 첫 번째 폴더로 이동합니다.
 
@@ -145,9 +146,4 @@ ms.openlocfilehash: ad75734c28c51ac68697f96e0e50a5d90314b76e
 
 -   이러한 파일에 액세스할 수 없거나 파일에서 의심스러운 변경을 발견하는 경우 IT 부서로부터 보호된 메일 메시지로 받은 24시간 지원 에스컬레이션 회선으로 전화하세요.
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

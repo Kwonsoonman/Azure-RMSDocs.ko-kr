@@ -1,10 +1,10 @@
 ---
-title: "Rights Management 공유 응용 프로그램 관리자 가이드 | Azure Information Protection"
+title: "RMS 공유 응용 프로그램 관리자 가이드 - AIP"
 description: "Windows용 Microsoft Rights Management 공유 응용 프로그램 배포를 담당하는 엔터프라이즈 네트워크의 관리자를 위한 지침과 정보를 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/11/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,9 @@ ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c9a5bcf46597ee65e2e0f36199f19935f8997048
-ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: ee9d92752bb2839df859d01e80d3b0ecaeb678f9
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -24,6 +25,8 @@ ms.openlocfilehash: adab568d173845f411fe5913786b137508485ef6
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
+> [!IMPORTANT]
+> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2018년 1월 31일에 중지됩니다. 
 
 엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 응용 프로그램을 담당하고 있거나, [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md) 또는 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://go.microsoft.com/fwlink/?LinkId=303971)에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다.
 
@@ -169,7 +172,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
-### <a name="to-install-the-rms-sharing-application-and-office-addin-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만 설치하려면
+### <a name="to-install-the-rms-sharing-application-and-office-add-in-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만 설치하려면
 
 1.  다음 명령을 사용하고 로그 파일을 만들 기존 폴더를 지정하여 AD RMS 클라이언트 및 RMS 공유 응용 프로그램을 설치합니다.
 
@@ -273,7 +276,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
         DefaultUser="&lt;default_user&gt;"
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-addin-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만의 설치 성공 여부를 확인하려면
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만의 설치 성공 여부를 확인하려면
 
 1.  Setup_ipviewer.exe 명령이 정상적으로 실행되었는지 확인하려면 설치 로그 파일에서 다음 텍스트를 검색합니다. **Installation success or error status: 0**
 
@@ -310,7 +313,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         x86\setup_ipviewer.exe /uninstall /quiet
         ```
 
-### <a name="to-uninstall-the-office-addin"></a>Office 추가 기능을 제거하려면
+### <a name="to-uninstall-the-office-add-in"></a>Office 추가 기능을 제거하려면
 
 -   다음 명령을 사용합니다.
 
@@ -404,9 +407,5 @@ AD RMS를 사용 중이며 합병이나 인수 등으로 인해 조직의 사용
 ## <a name="next-steps"></a>다음 단계
 보호 수준(기본 및 일반) 간의 차이점 설명, 지원되는 파일 형식 및 파일 이름 확장명, 기본 보호 수준을 변경하는 방법을 포함하는 자세한 기술 정보는 [Rights Management 공유 응용 프로그램에 대한 기술 개요](sharing-app-admin-guide-technical.md)를 참조하세요.
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

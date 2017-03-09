@@ -1,10 +1,10 @@
 ---
-title: "시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환 | Azure Information Protection"
+title: "AIP 시나리오 - 임원이 권한이 제한된 정보를 교환"
 description: "이 시나리오 및 지원 사용자 문서에서는 Azure Rights Management 보호를 사용하여 임원이 메일과 첨부 파일을 서로 안전하게 교환할 수 있고 임원이 특별한 작업을 수행하지 않아도 정책에 따라 액세스가 임원으로 자동으로 제한되도록 합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2016
+ms.date: 02/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,13 +13,14 @@ ms.assetid: e18cf5df-859e-4028-8d19-39b0842df33d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d8354f2d68f211d349226970fd2f83dd0ce810b
-ms.openlocfilehash: c8c460549df34a746b21f57aa890a52571bf2061
+ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
+ms.openlocfilehash: 1407a7bee800fec0ba8498d0439586378003ed54
+ms.lasthandoff: 02/24/2017
 
 
 ---
 
-# <a name="scenario-executives-securely-exchange-privileged-information"></a>시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환
+# <a name="scenario---executives-securely-exchange-privileged-information"></a>시나리오 - 임원이 권한이 제한된 정보를 안전하게 교환
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -124,15 +125,11 @@ ms.openlocfilehash: c8c460549df34a746b21f57aa890a52571bf2061
 
 VanArsdel 임원이 아닌 다른 사용자가 해당 메일에 보내는 정보를 읽고 편집할 수 있게 하려면 다른 사용자에게 별도로 메일을 보내야 합니다. 또는 자동 보호를 재정의하기 위해 메일 메시지 제목에 **DNP**(보호 안 함의 약어) 문자를 입력합니다.
 
-다른 VanArsdel 임원에게 회사 기밀 정보를 보내는 경우 개인 메일 주소가 아니라 회사 메일 주소(*name*@vanarsdelltd.com))로 보내야 합니다.
+다른 VanArsdel 임원에게 회사 기밀 정보를 보내는 경우 개인 메일 주소가 아니라 회사 메일 주소(*name*@vanarsdelltd.com)로 보내야 합니다.
 
 **도움이 필요한가요?**
 
 -   지원 센터에 연락하려면 다음 정보를 참조하세요. helpdesk@vanarsdelltd.com
 
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

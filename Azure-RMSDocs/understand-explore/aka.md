@@ -78,4 +78,4 @@ Azure Information Protection(경우에 따라 AIP로 축약)은 Microsoft에서 
 
 Azure Information Protection 구입 또는 평가 방법, 구독 계획에서 사용 가능한 다른 기능에 대한 자세한 내용은 [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection) 사이트를 참조하세요.
 
-
+[!INCLUDE[Commenting house rules](../includes/houserules.md)]

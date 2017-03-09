@@ -4,16 +4,16 @@ description: "Rights Management 보호를 사용하도록 레이블을 구성하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: cd0fa432bbec97b39e7c32f0b40594840d57fb04
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 5bc117cbff3226a2ee0ff375f0aa02fc3232a183
+ms.openlocfilehash: ed6bd63a945b73b792bcafcdc0d07e08e83fc344
+ms.lasthandoff: 02/27/2017
 
 
 ---
@@ -74,11 +74,11 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
         
         사용자가 Rights Management 보호를 제거할 권한이 없는데 이 **보호 제거** 옵션을 사용하여 구성된 레이블을 선택하는 경우 다음 메시지가 표시됩니다. **Azure Information Protection cannot apply this label(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 이 작업을 수행할 권한이 없습니다). If this problem persists, contact your administrator.(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 문제가 지속되면 관리자에게 문의하세요.)**
 
-5. **Protect**(보호)를 선택한 경우 **Protection**(보호)을 선택하여 **Permissions**(사용 권한) 블레이드를 엽니다.
+5. **보호**를 선택한 경우 **보호**를 선택하여 **보호** 블레이드를 엽니다.
     
     ![Azure Information Protection 레이블에 대한 보호 구성](../media/info-protect-protection-bar.png)
 
-6. **사용 권한** 블레이드에서 **Azure RMS** 또는 **HYOK(AD RMS)**를 선택합니다. 
+6. **보호** 블레이드에서 **Azure RMS** 또는 **HYOK(AD RMS)**를 선택합니다. 
     
     대부분의 경우 사용 권한 설정에 대해 **Azure RMS**를 선택합니다. 이 "*HYOK(Hold Your Own Key)*" 구성에 수반되는 필수 조건 및 제한을 읽고 이해한 경우에만 **HYOK(AD RMS)**를 선택하세요. 자세한 내용은 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](configure-adrms-restrictions.md)을 참조하세요. HYOK(AD RMS)에 대한 구성을 계속하려면 9단계로 이동합니다.
     
@@ -94,7 +94,7 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
             
 9. **HYOK(AD RMS)**에 대해 **Select template**(템플릿 선택)을 선택한 경우 AD RMS 클러스터의 템플릿 GUID 및 라이선스 URL을 제공합니다. [추가 정보](configure-adrms-restrictions.md#locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label)
 
-10. **Done**(완료)을 클릭하여 **Permissions**(사용 권한) 블레이드를 닫고 **Do not forward**(전달 금지) 선택 항목 또는 **Label**(레이블) 블레이드의 **Protection**(보호) 옵션에 대해 선택한 템플릿 표시를 확인합니다.
+10. **확인**을 클릭하여 **보호** 블레이드를 닫고 **전달 금지** 선택 항목 또는 **레이블** 블레이드의 **보호** 옵션에 대해 선택한 템플릿 표시를 확인합니다.
 
 10. **레이블** 블레이드에서 **저장**을 클릭합니다.
 

@@ -1,19 +1,19 @@
 ---
 title: "빠른 시작 자습서 3단계 - AIP"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서 3단계입니다."
+description: "Azure Information Protection를 빠르게 사용해 보기 위한 소개 자습서 3단계 - 클라이언트 설치"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: be4863c06806932916c192624f8f290be59608a4
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: 340cce9bec3eae7e507b5a33ebd380a38e9e7f19
+ms.lasthandoff: 03/01/2017
 
 
 ---

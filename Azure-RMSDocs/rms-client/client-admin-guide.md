@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid:
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b6a8477078a333aa23ccfe5904af3582216a1e96
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: b0ddf66acf0db37d0396647a5518ccf48195019c
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -79,7 +79,7 @@ Office 응용 프로그램의 Azure Information Protection 클라이언트 추�
 
 - Azure Information Protection 뷰어가 별도로 설치되어 있으면 최소한 Microsoft .NET Framework 4.5.2 버전이 필요하며, 이 프로그램이 없어도 설치 관리자는 다운로드하여 설치하려고 하지 않습니다.
 
-- PowerShell 모듈에는 이전 운영 체제에 설치해야 할 수도 있는 Windows PowerShell 버전 4.0이 필요합니다. 자세한 내용은 [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)(Windows PowerShell 4.0을 설치하는 방법)을 참조하세요. 실행 중인 Windows PowerShell 버전을 확인하려면 PowerShell 세션에 **$PSVersionTable**을 입력합니다.
+- PowerShell 모듈에는 이전 운영 체제에 설치해야 할 수도 있는 Windows PowerShell 버전 4.0이 필요합니다. 자세한 내용은 [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)(Windows PowerShell 4.0을 설치하는 방법)을 참조하세요. 설치 관리자는 이러한 필수 구성 요소를 확인하거나 설치하지 않습니다. 실행 중인 Windows PowerShell 버전을 확인하려면 PowerShell 세션에 **$PSVersionTable**을 입력합니다.
 
 - Windows 7 서비스 팩 1을 실행하는 컴퓨터에는 클라이언트가 설치된 후에 설치할 수 있는 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)이 필요합니다. 이 업데이트가 필요한데 설치되어 있지 않으면 업데이트를 설치하라는 메시지가 표시됩니다.
 
@@ -108,9 +108,11 @@ Office 응용 프로그램의 Azure Information Protection 클라이언트 추�
     
     - 기타 버전의 Office에서는 모든 Office 응용 프로그램 및 파일 탐색기의 모든 인스턴스를 다시 시작합니다. 
         
-5. %temp% 폴더에서 설치 로그 파일을 확인하여 설치가 되었는지 확인할 수 있습니다. 이 파일의 이름 형식은 다음과 같습니다. `Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log` 예: **Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
+5. %temp% 폴더에서 설치 로그 파일을 확인하여 설치가 되었는지 확인할 수 있습니다. 이 파일의 이름 형식은 다음과 같습니다. `Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log`
     
-    이 로그 파일에서 다음 문자열을 검색합니다. **Product: Microsoft Azure Information Protection -- Installation completed successfully.**(제품: Microsoft Azure Information Protection -- 설치를 완료했습니다.)
+    예: **Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
+    
+    이 로그 파일에서 다음 문자열을 검색합니다. **Product: Microsoft Azure Information Protection -- Installation completed successfully.**(제품: Microsoft Azure Information Protection -- 설치를 완료했습니다.) 설치가 실패하면 이 로그 파일에 문제를 식별하고 해결하는 데 도움이 되는 세부 정보가 포함됩니다.
 
 ### <a name="additional-instructions-for-office-2010-only"></a>Office 2010에만 해당되는 추가 지침
 
@@ -154,7 +156,7 @@ Office 2010 및 Azure RMS에 대해 클라이언트를 자동으로 설치하는
 - **/uninstall**을 사용하여 실행 파일을 실행합니다. `AzInfoProtection.exe /uninstall`
 
 
-## <a name="to-verify-installation-connection-status-or-send-feedback"></a>설치 또는 연결 상태를 확인하거나 피드백을 보내려면
+## <a name="additional-checks-to-verify-installation-connection-status-or-send-feedback"></a>추가 확인: 설치 또는 연결 상태를 확인하거나 피드백을 보내려면
 
 1. Office 응용 프로그램을 열고 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다.
 

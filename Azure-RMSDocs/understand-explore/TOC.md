@@ -10,9 +10,9 @@
 ### [개인용 RMS용으로 만들어진 계정 제어](rms-for-individuals-take-control.md)
 ### [사용자가 개인용 RMS에 등록했는지 확인](rms-for-individuals-identify-sign-up.md)
 ## [응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법](applications-support.md)
-### [Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램](sharing-app-support.md)
 ### [Office 응용 프로그램 및 서비스](office-apps-services-support.md)
 ### [Windows Server를 실행하고 파일 분류 인프라를 사용하는 파일 서버](file-server-support.md)
+### [Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램](sharing-app-support.md)
 ### [RMS API를 지원하는 기타 응용 프로그램](api-support.md)
 ## [Azure Information Protection 및 AD RMS 비교](compare-on-premise.md)
 ## [규정 준수 및 지원 정보](compliance.md)
@@ -21,8 +21,3 @@
 # [서비스 배포 및 사용](/information-protection/deploy-use/activate-service)
 # [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
-
-
-<!--HONumber=Jan17_HO4-->
-
-

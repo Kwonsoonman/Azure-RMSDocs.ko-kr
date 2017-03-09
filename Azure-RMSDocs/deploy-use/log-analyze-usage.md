@@ -4,7 +4,7 @@ description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 89c0cae4b0549a0dd86ede26ef3eed0f09200419
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
+ms.openlocfilehash: 5deea0dce593aae09c498e8b6696205890e9f232
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -68,7 +68,7 @@ Azure 권한 관리 작업 이후 저장소 계정에 로그가 표시될 때까
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>PowerShell을 사용하여 사용 현황 로그를 다운로드하려면
 
-1.  **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell을 시작하고 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) cmdlet을 사용하여 Azure 권한 관리 서비스에 연결합니다.
+1.  **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell을 시작하고 [Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice) cmdlet을 사용하여 Azure 권한 관리 서비스에 연결합니다.
 
     ```
     Connect-AadrmService
@@ -101,7 +101,7 @@ Azure 권한 관리 작업 이후 저장소 계정에 로그가 표시될 때까
 #### <a name="if-you-manually-enabled-azure-rights-management-usage-logging-before-the-logging-change-february-22-2016"></a>2016년 2월 22일 로깅 변경 전에 Azure Rights Management 사용 현황 로깅을 수동으로 활성화한 경우
 
 
-로깅 변경 전에 사용 현황 로깅을 사용한 경우 구성된 Azure 저장소 계정에 사용 현황 로그가 제공됩니다. Microsoft는 이러한 로깅 변경의 일부로 사용자 저장소 계정에 있는 이러한 로그를 새로운 Azure Rights Management 관리 저장소 계정에 복사하지 않습니다. 이전에 생성된 로그의 수명 주기를 관리해야 하며 [Get-AadrmUsageLog](https://msdn.microsoft.com/library/dn629401.aspx) cmdlet을 사용하여 기존 로그를 다운로드할 수 있습니다. 예를 들면 다음과 같습니다.
+로깅 변경 전에 사용 현황 로깅을 사용한 경우 구성된 Azure 저장소 계정에 사용 현황 로그가 제공됩니다. Microsoft는 이러한 로깅 변경의 일부로 사용자 저장소 계정에 있는 이러한 로그를 새로운 Azure Rights Management 관리 저장소 계정에 복사하지 않습니다. 이전에 생성된 로그의 수명 주기를 관리해야 하며 [Get-AadrmUsageLog](/powershell/aadrm/vlatest/get-aadrmusagelog) cmdlet을 사용하여 기존 로그를 다운로드할 수 있습니다. 예를 들면 다음과 같습니다.
 
 - 사용 가능한 모든 로그를 E:\logs 폴더에 다운로드하려면 다음 cmdlet을 실행합니다. `Get-AadrmUsageLog -Path "E:\Logs"`
     
@@ -146,13 +146,15 @@ Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니
 |result|문자열|요청이 정상적으로 처리된 경우 'Success'입니다.<br /><br />요청이 실패한 경우에는 작은따옴표로 묶인 오류 유형이 표시됩니다.|'성공'|
 |correlation-id|텍스트|지정된 요청에 대해 RMS 클라이언트 로그와 서버 로그 간에 공통적으로 사용되는 GUID입니다.<br /><br />이 값은 클라이언트 문제 해결 시 유용할 수 있습니다.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|텍스트|문서 등의 보호된 콘텐츠를 식별하는 중괄호로 묶인 GUID입니다.<br /><br />request-type이 AcquireLicense인 경우에만 이 필드에 값이 포함되며 기타 모든 요청 유형의 경우 이 필드는 비어 있습니다.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
-|owner-email|문자열|문서 소유자의 전자 메일 주소입니다.|alice@contoso.com|
-|issuer|문자열|문서 발급자의 전자 메일 주소입니다.|alice@contoso.com (또는) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
-|template-id|문자열|문서를 보호하는 데 사용된 템플릿의 ID입니다.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|문자열|보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.|TopSecretDocument.docx|
-|date-published|날짜|문서를 보호한 날짜입니다.|2015-10-15T21:37:00|
+|owner-email|문자열|문서 소유자의 전자 메일 주소입니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|alice@contoso.com|
+|issuer|문자열|문서 발급자의 전자 메일 주소입니다. <br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|alice@contoso.com (또는) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
+|template-id|문자열|문서를 보호하는 데 사용된 템플릿의 ID입니다. <br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
+|file-name|문자열|보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|TopSecretDocument.docx|
+|date-published|날짜|문서를 보호한 날짜입니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|2015-10-15T21:37:00|
 |c-info|문자열|요청을 수행하는 클라이언트 플랫폼에 대한 정보입니다.<br /><br />구체적인 문자열은 운영 체제, 브라우저 등의 응용 프로그램에 따라 다릅니다.|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|주소|요청을 수행하는 클라이언트의 IP 주소입니다.|64.51.202.144|
+|admin-action|Bool|관리자가 관리자 모드에서 문서 추적 사이트를 액세스했는지 여부입니다.|True|
+|acting-as-user|문자열|관리자가 해당 문서 추적 사이트에 액세스하는 사용자의 전자 메일 주소입니다. |'joe@contoso.com'|
 
 
 #### <a name="exceptions-for-the-user-id-field"></a>use-id 필드에 대한 예외

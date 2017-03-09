@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호할 수 있도록 Wi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/17/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 37bddeed5b81ce1cd6b881db0b71345bcf4cad49
+ms.sourcegitcommit: 92ad7198aad17664062b8d007fa95524fe535443
+ms.openlocfilehash: d4820070aff013b42ee49f4c7b81e78ffbc7a049
 ms.lasthandoff: 02/24/2017
 
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 02/24/2017
 
 # <a name="download-and-install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 다운로드 및 설치
 
-관리자가 Azure Information Protection 클라이언트를 설치하지 않는 경우 직접 설치할 수 있습니다. PC의 로컬 관리자여야만 이 클라이언트를 설치할 수 있습니다. 
+관리자가 Azure Information Protection 클라이언트를 설치하지 않는 경우 직접 설치할 수 있습니다. 이 클라이언트를 설치하여 문서 및 전자 메일에 레이블을 지정하고 보호하려면 PC의 로컬 관리자여야 합니다.
 
 이 밖에도 다음 지침을 따릅니다.
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 02/24/2017
 
 1.  Microsoft 웹 사이트의 [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
 
-    이 페이지에는 사용할 수 있는 인기 있는 모든 장치에 대한 링크가 있으므로 보호된 파일을 여는 데 필요한 경우 뷰어 앱을 쉽게 다운로드할 수 있습니다. 그러나 지금은 파일에 레이블을 지정할 수 있고 파일을 보호할 수 있는 전체 클라이언트를 설치할 것입니다. 
+    이 페이지에는 사용할 수 있는 인기 있는 모든 장치에 대한 링크가 있으므로 보호된 파일을 여는 데 필요한 경우 뷰어 앱을 쉽게 다운로드할 수 있습니다. PC의 로컬 관리자가 아닌 경우에도 Windows용 뷰어 앱을 여전히 설치할 수 있습니다. 그러나 여기에 나오는 지침은 파일에 레이블을 지정할 수 있고 파일을 보호할 수 있는 전체 클라이언트를 설치하기 위한 것입니다. 
 
 2. **Azure Information Protection 클라이언트** 섹션을 찾아 Windows 아이콘을 클릭합니다. **다운로드**를 클릭하고 **AzInfoProtection.exe** 파일을 저장합니다.     
 

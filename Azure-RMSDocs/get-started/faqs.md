@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 5ac676c1b48093b5b337c870273dbe624d2b9327
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 37ce3f1596878e28962119faef22bc1c61a067f8
+ms.openlocfilehash: 0bb42f7ec5f2c1768c9eaaa7890b8b46853abd99
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -37,6 +37,14 @@ Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.
 
 Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 페이지에서 [Azure Information Protection 라이선싱 데이터시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)를 다운로드하세요.
 
+## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
+
+예. Azure Information Protection은 클라우드 기반 솔루션이지만 클라우드 뿐 아니라 온-프레미스에 저장된 문서 및 전자 메일을 분류, 레이블 지정 및 보호할 수 있습니다.
+
+Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](../deploy-use/deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
+
+Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure Rights Management에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](../understand-explore/how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
+
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>곧 새 릴리스가 Azure Information Protection용으로 나올 예정이라고 들었습니다. 언제 나오나요?
 
 기술 설명서에는 예정된 릴리스에 대한 정보가 없습니다. 이러한 종류의 정보와 릴리스 발표에 대해서는 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)에서 최신 업데이트를 받으세요. 관심이 있는 Office 릴리스의 경우에는 [Office 블로그](https://blogs.office.com/)도 꼭 확인하세요.
@@ -44,6 +52,14 @@ Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 
 ## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>법적 정보, 규정 준수, SLA 등의 Azure Information Protection 관련 지원 정보는 어디서 찾을 수 있나요?
 
 [Azure Information Protection에 대한 규정 준수 및 지원 정보](../understand-explore/compliance.md)를 참조하세요.
+
+## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>Azure Information Protection에 대한 문제를 보고하거나 의견을 보낼 수 있나요?
+
+기술 지원에 대해서는 표준 지원 채널을 사용하거나 [Microsoft 지원에 문의](information-support.md#to-contact-microsoft-support)하세요.
+
+향상된 기능 및 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **Send feedback**(의견 보내기)을 클릭합니다. 그러면 Information Protection 팀에 메일이 전송되고 자동으로 PC에서 로그 파일이 첨부됩니다. 
+
+또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
 
 ## <a name="what-do-i-do-if-my-question-isnt-here"></a>내 문의 내용이 여기 없다면 어떻게 하나요?
 

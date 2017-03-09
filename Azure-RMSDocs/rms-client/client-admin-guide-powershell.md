@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 865a30bb85c1e9e2f8331ae3a85960e005de5b07
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
+ms.openlocfilehash: d180b0ff4390df45a61b7d50913c267fb3cf35e1
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -36,6 +36,7 @@ AzureInformationProtection 모듈에는 RMS 보호 도구의 모든 Rights Manag
 |[Get-AIPFileStatus](/powershell/azureinformationprotection/vlatest/get-aipfilestatus)|공유 폴더에 대해 특정 레이블이 있는 모든 파일을 식별합니다.|
 |[Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel)|공유 폴더에 대해 레이블이 없는 모든 파일에 지정된 레이블을 적용합니다.|
 
+모든 cmdlet 목록 및 해당 도움말을 보려면 [AzureInformationProtection 모듈](/powershell/azureinformationprotection/vlatest/aip)을 참조하세요.
 
 이 모듈은 **\ProgramFiles (x86)\Microsoft Azure Information Protection**에 설치되고 이 폴더를 **PSModulePath** 시스템 변수에 추가합니다. 이 모듈의 .dll 이름은 **AIP.dll**입니다.
 

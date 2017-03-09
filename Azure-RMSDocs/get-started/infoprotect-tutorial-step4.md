@@ -1,19 +1,19 @@
 ---
 title: "빠른 시작 자습서 4단계 - AIP"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서 3단계입니다."
+description: "Azure Information Protection를 빠르게 사용해 보기 위한 소개 자습서 4단계 - 레이블 지정 및 보호 작동 방식 확인"
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 02/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 57a46c7afe34717dd4335b0f9a19bd539821fc72
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
+ms.openlocfilehash: 8260da1905c6701675b5490e3919ae708f46a5a9
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -28,15 +28,33 @@ ms.lasthandoff: 02/24/2017
 
 ## <a name="to-manually-change-our-default-label"></a>수동으로 기본 레이블을 변경하려면
 
-Information Protection 표시줄에서 **Personal**(비공개) 레이블을 선택합니다. 그러면 분류 수준을 낮추는 이유를 선택하는 메시지가 표시됩니다.
+Information Protection 표시줄에서 **비밀** 레이블을 선택하면 하위 레이블이 표시되는 방식이 나타납니다.
+
+![Azure Information Protection 빠른 시작 자습서 4단계 - 하위 레이블 선택](../media/info-protect-sub-labels.png)
+
+**모든 회사**를 선택하면 이 문서에 대한 레이블을 선택했으므로 표시줄에 다른 레이블이 더 이상 표시되지 않는 것을 볼 수 있습니다. **민감도** 값이 **비밀 \ 모든 회사**로 변경되고 레이블 색도 그에 맞게 변경됩니다.
+
+![Azure Information Protection 빠른 시작 자습서 4단계 - 하위 레이블이 선택됨](../media/info-protect-sub-label-selected.png)
+
+Information Protection 표시줄에서 **비밀 \ 모든 회사** 옆에 있는 **레이블 편집** 아이콘을 클릭합니다.
+
+![Azure Information Protection 빠른 시작 자습서 4단계 - 레이블 편집 아이콘](../media/info-protect-edit-label-selected.png)
+
+사용 가능한 레이블이 다시 표시됩니다.
+
+이제 **개인** 레이블을 선택합니다. 이 문서에 대해 이전에 선택한 레이블보다 낮은 분류 수준에 있는 레이블을 선택했으므로 분류 수준을 낮춘 이유를 제시하라는 메시지가 표시됩니다.
 
 ![Azure Information Protection 빠른 시작 자습서 4단계 - 낮추는 이유를 확인하는 메시지가 표시됨](../media/info-protect-lower-justification.png)
 
-**The previous label no longer applies**(이전 레이블이 더 이상 적용 안 됨)를 선택하고 **Confirm**(확인)을 클릭합니다. **Sensitivity**(민감도) 값이 **Personal**(비공개)로 변경되는 것을 확인할 수 있습니다.
+**The previous label no longer applies**(이전 레이블이 더 이상 적용 안 됨)를 선택하고 **Confirm**(확인)을 클릭합니다. **민감도** 값이 **개인**으로 변경되고 다른 레이블은 다시 숨겨집니다.
 
 ## <a name="to-remove-the-classification-completely"></a>분류를 완전히 제거하려면
 
-Information Protection 표시줄에서 **비공개** 옆에 있는 **레이블 편집** 아이콘을 클릭합니다. 사용 가능한 레이블이 표시됩니다. 그러나 이번에는 레이블 중 하나를 선택하는 대신 **레이블 삭제** 아이콘을 클릭합니다. 이번에는 "이 문서는 분류할 필요가 없습니다."를 입력하고 **확인**을 클릭합니다.  
+Information Protection 표시줄에서 **레이블 편집** 아이콘을 다시 클릭합니다. 그러나 레이블 중 하나를 선택하는 대신 **레이블 삭제** 아이콘을 클릭합니다.
+
+![Azure Information Protection 빠른 시작 자습서 4단계 - 삭제 아이콘](../media/delete-icon-from-personal.png)
+
+이번에는 확인 메시지가 표시되면 "이 문서는 분류할 필요가 없습니다."를 입력하고 **확인**을 클릭합니다.  
 
 **Sensitivity**(민감도) 값에 **Not set**(설정 안 함)이 표시되며, 이는 기본 레이블을 설정하지 않은 경우 사용자에게 처음에 표시되는 내용입니다.
 

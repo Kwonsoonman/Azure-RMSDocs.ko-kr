@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure RMS(Azure Rights Management)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 61f7a7208b13a28f2e8cfb85489cceb2a2caf077
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 1300b0abb3cb59ad09075418ab8c911466740a2c
+ms.openlocfilehash: f1d2db08951c1d017ea4f011855d99423fa9d577
+ms.lasthandoff: 03/03/2017
 
 
 ---
@@ -43,6 +43,8 @@ ms.lasthandoff: 02/24/2017
 -   **지원 센터 정보:**
 
     지원 센터의 가장 유용한 도구 중 하나는 [RMS 분석기](https://www.microsoft.com/en-us/download/details.aspx?id=46437)입니다. 지원 센터 운영자는 이 도구를 Azure RMS 관리자 옵션을 사용하여 실행할 수 있으며 사용자에게 Azure RMS 사용자 옵션을 사용하여 실행하도록 요청할 수 있습니다. 이 도구는 문제를 식별하는 데 도움이 될 뿐 아니라 찾은 문제를 해결하며 문제가 해결되지 않으면 추적 로그를 기록합니다.
+    
+    사용자가 Azure Information Protection 클라이언트를 실행하는 경우 지원 센터 운영자는 **도움말 및 피드백**, **진단 실행** 옵션을 사용한 다음 클라이언트를 초기화하도록 요청합니다. 그러나 RMS 분석기와 달리 초기화를 수행해도 사용자가 로그아웃되거나 클라이언트가 다시 부트스트랩되지 않으며 자동 수정도 진행되지 않습니다.
 
     직원이 조직을 떠난 후에 법률 자문 부서 또는 관리자가 요청하는 경우처럼 보호된 문서의 모든 액세스에 대한 합법적인 요청이 있을 경우 지원 센터는 Azure Rights Management [슈퍼 사용자 기능](configure-super-users.md)을 사용하여 이를 요청하는 프로세스를 진행해야 합니다.
 

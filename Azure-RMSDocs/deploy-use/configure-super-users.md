@@ -4,7 +4,7 @@ description: "Azure Rights Management에서 조직을 위해 보호하는 데이
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,9 +13,9 @@ ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: f1c50d67ba03cee9846e81f98aad6da0da33a951
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: 07236a2820e4d8d4d594eda755cb025d21b96d12
+ms.openlocfilehash: 591ca9ba080da9565e0143d887e3db179b810862
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -38,7 +38,9 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 
 기본적으로 슈퍼 사용자 기능은 사용하도록 설정되지 않으며 이 역할은 사용자에게 할당되지 않습니다. Exchange Server용 Rights Management 커넥터를 구성하는 경우에는 이 기능이 자동으로 사용하도록 설정되지만 Exchange Online, SharePoint Online 또는 SharePoint Server를 실행하는 표준 서비스에는 이 기능이 필요하지 않습니다.
 
-슈퍼 사용자 기능을 수동으로 사용하도록 설정해야 하는 경우 Windows PowerShell cmdlet Windows PowerShell cmdlet [Enable-AadrmSuperUserFeature](https://msdn.microsoft.com/library/azure/dn629400.aspx)를 사용합니다. 그런 다음 [Add-AadrmSuperUser](https://msdn.microsoft.com/library/azure/dn629411.aspx) cmdlet 또는 [Set-AadrmSuperUserGroup](https://msdn.microsoft.com/library/azure/mt653943.aspx) cmdlet을 사용하여 필요에 따라 사용자 또는 서비스 계정을 할당하고, 필요에 따라 이 그룹에 사용자 또는 다른 그룹을 추가합니다. 
+슈퍼 사용자 기능을 수동으로 사용하도록 설정해야 하는 경우 PowerShell cmdlet [Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature)를 사용합니다. 그런 다음 [Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser) cmdlet 또는 [Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup) cmdlet을 사용하여 필요에 따라 사용자 또는 서비스 계정을 할당하고, 필요에 따라 이 그룹에 사용자 또는 다른 그룹을 추가합니다. 
+
+슈퍼 사용자를 위해 그룹을 사용하면 보다 쉽게 관리할 수 있지만 성능상의 이유로 Azure Rights Management에서 [그룹 구성원을 캐시](../plan-design/prepare.md#group-membership-caching)합니다. 따라서 즉시 콘텐츠 암호를 해독하기 위해 새 사용자를 슈퍼 사용자로 할당해야 하는 경우 사용자를 Set-AadrmSuperUserGroup을 사용하여 구성한 기존 그룹에 추가하지 말고 Add-AadrmSuperUser를 사용하여 추가합니다.
 
 > [!NOTE]
 > [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.

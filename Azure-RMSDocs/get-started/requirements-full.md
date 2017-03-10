@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 10cf9371-a61b-495f-9d42-898448806994
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 94259046ed2eb78bce9d7ce49a4dc3b9c99d55c3
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 11aea973a156556e14d474deae04deb97ee1dc73
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -287,4 +282,3 @@ Rights Management 커넥터는 Windows Server 2012 R2, Windows Server 2012 및 W
 이러한 온-프레미스 서버에 대해 Rights Management 커넥터를 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

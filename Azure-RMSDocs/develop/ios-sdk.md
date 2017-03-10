@@ -14,13 +14,10 @@ ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 96b281d7bf3073cbe99a844a440a357572813b4a
-
-
+ms.openlocfilehash: 7027e3833344c7734818bf034bd8aa68f04409eb
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="ios-and-os-x-setup"></a>iOS 및 OS X 설정
 
 iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 Azure RMS(Azure 권한 관리)를 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
@@ -112,8 +109,3 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 * [iOS / OS X API Reference](https://msdn.microsoft.com/library/dn758306.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

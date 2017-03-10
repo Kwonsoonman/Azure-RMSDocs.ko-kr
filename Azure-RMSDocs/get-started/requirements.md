@@ -12,13 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: c0cbd02cf69ca8039af8f6b397cb71f140eaab50
-
-
+ms.openlocfilehash: 8f249994c2ac1cf02c4572d3f7cb8ba6566cb142
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -51,11 +48,5 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 > [AD RMS에서 Azure Information Protection으로](http://technet.microsoft.com/library/Dn858447.aspx), [Azure Information Protection에서 AD RMS로](http://msdn.microsoft.com/library/azure/dn629429.aspx)의 지원되는 마이그레이션 경로가 있습니다. Azure Information Protection을 배포한 후 이 클라우드 서비스를 더 이상 사용하지 않겠다고 결정한 경우 [Azure Information Protection 서비스 해제 및 비활성화](../deploy-use/decommission-deactivate.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-
-
-<!--HONumber=Feb17_HO4-->
 
 

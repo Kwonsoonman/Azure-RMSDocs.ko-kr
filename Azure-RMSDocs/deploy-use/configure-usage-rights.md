@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 34f77a0ff33a9a960e12bc53d62b38f4e6553c80
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: be37adc9cc8b55ff46e7358d033f0ea5eb93d749
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure 권한 관리에 대한 사용 권한 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -105,5 +101,4 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

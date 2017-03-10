@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 11ebd66a1ae05535814af159523bd49b7921d46d
-ms.openlocfilehash: fc80a4a65bd5fae1b8604c316a4e2354bbe8c8be
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 034ca391c5b021333e77e8b6b9c389300e4a9da2
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="preparing-for-azure-information-protection"></a>Azure Information Protection 준비
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -42,6 +38,5 @@ Azure Information Protection을 조직에 배포하기 전에 다음 사항이 �
 문서 및 전자 메일 보호를 시작할 준비가 되면 이 기술을 사용할 수 있도록 Rights Management 서비스를 활성화합니다. 자세한 내용은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

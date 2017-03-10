@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 1300b0abb3cb59ad09075418ab8c911466740a2c
-ms.openlocfilehash: f1d2db08951c1d017ea4f011855d99423fa9d577
-ms.lasthandoff: 03/03/2017
-
-
+ms.openlocfilehash: 4b5dfe6e4c77a9b22e98cb2b7997a744730caac1
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -112,5 +108,4 @@ Azure Rights Management 서비스를 사용하고 있으며 Azure Information Pr
 보호된 문서를 볼 때와 마찬가지로 받는 사람은 전자 메일 메시지를 받으면 먼저 인증하게 됩니다. 전자 메일 메시지를 열 권한이 있으면 해당 사용자에 대해 지정된 제한적 사용 권한으로 메시지가 열립니다. 예를 들어 **전체 회신 금지**를 선택한 경우에는 메시지 창에서 **전체 회신** 옵션을 사용할 수 없습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

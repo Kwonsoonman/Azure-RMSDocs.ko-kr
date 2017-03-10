@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 332160a0b2403313acc66f9b196ac068e370fb5c
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: e800818f87ab5b0b39ffdc244f871c04305039ae
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법
 
 >*적용 대상: Azure Information Protection*
@@ -49,6 +45,5 @@ Azure Information Protection 정책에서 구성하여 사용자의 Information 
 레이블에 적용할 수 있는 옵션 구성 및 Azure Information Protection 정책의 기타 설정에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

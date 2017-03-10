@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4126bd34615307347d387217b8ad4f39ba69cad8
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 3b9350462f363ed365c3f37aabad79ce7338b531
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection*
@@ -161,6 +157,5 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

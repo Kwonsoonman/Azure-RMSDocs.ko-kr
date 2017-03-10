@@ -14,14 +14,10 @@ ms.assetid: 5A9F04FD-0FCD-482F-8671-36FE93B783B0
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 3b56c14d4ec1faf940e8b7d350d2680625cac795
-ms.openlocfilehash: 268d474e11f70961263b1cbbcc5eca926e880416
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: cfdf21be0d01eb3e362f9d1e326e7ae9cd7cc8a9
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="developer-guidance"></a>개발자 지침
 
 이 섹션에서는 이 SDK를 사용하여 개발하는 방법에 대한 일반 정보뿐만 아니라 몇 가지 중요한 개발 시나리오에 대한 구체적인 지침을 다룹니다. 이 섹션의 시나리오는 이 릴리스의 권한 관리 서비스 SDK 2.1에만 해당하며, 후속 릴리스에서 변경될 수 있습니다.

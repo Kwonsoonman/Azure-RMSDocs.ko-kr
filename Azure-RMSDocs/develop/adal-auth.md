@@ -14,13 +14,10 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: b7415265d0e27896df2bdf6a62e7c875ba681345
-ms.openlocfilehash: d51730af8a1f410ad890087200f64864eceb2268
-
-
+ms.openlocfilehash: 880f022e53aa6c12b26d2d64782521de88d29399
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="configure-your-app-for-adal-authentication"></a>ADAL 인증을 위한 앱 구성
 
 이 항목에서는 ADAL(Azure Active Directory Authentication Library) 기반 인증을 위한 앱을 구성하는 단계를 설명합니다.
@@ -105,8 +102,3 @@ Microsoft Azure에 등록한 후
 ![저장 선택](../media/SaveApplication.png)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

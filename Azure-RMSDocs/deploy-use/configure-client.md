@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 39d2fb244be91d7fc655efbdda24e4e268ac1329
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9164ce8155f1d068ea0fa164226ff20df05da8ae
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure Information Protection 클라이언트: 클라이언트 설치 및 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -43,6 +39,5 @@ Windows용 클라이언트의 엔터프라이즈 설치 및 구성에 대한 자
 **Microsoft Intune을 사용하는 경우**: Azure Information Protection에 Microsoft Intune 앱 소프트웨어 개발 키트가 포함되어 있으므로 iOS 및 Android 장치를 Intune에서 등록하는 경우 이러한 장치를 위해 Azure Information Protection 뷰어를 배포하고 관리할 수 있습니다. 자세한 내용은 Intune 설명서에서 [Microsoft Intune 콘솔에서 모바일 응용 프로그램 관리 정책 구성 및 배포](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)를 참조하세요. 2단계에서는 지침에 따라 정책 관리된 앱을 게시합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

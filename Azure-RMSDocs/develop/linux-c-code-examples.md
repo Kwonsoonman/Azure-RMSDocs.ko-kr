@@ -14,13 +14,10 @@ ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ca3ec0fdde3b8aa2eeebf056c5e155daf79573b0
-
-
+ms.openlocfilehash: 7dfa61380067bcd2b1886c1e9a2674a4c1150bc9
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="linux-code-examples"></a>Linux 코드 예제
 
 이 항목에서는 Linux 버전의 RMS SDK에 대한 중요한 시나리오 및 코드 요소를 소개합니다.
@@ -592,8 +589,3 @@ ms.openlocfilehash: ca3ec0fdde3b8aa2eeebf056c5e155daf79573b0
 **참고** 인증 라이브러리 메서드는 **rmsauth::Exception**을 발생시킬 수 있습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: d38d7f89ba780b519ebe4a182161deb5bc9331b5
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: bbd5cd5be72dfe72f8312f7ee5049dec2e46ac96
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migration-phase-1---server-side-configuration-for-ad-rms"></a>마이그레이션 1단계 - AD RMS에 대한 서버 쪽 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
@@ -43,18 +39,6 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
 2.  구성 데이터를 Azure Information Protection으로 가져오기 현재 AD RMS 배포 구성 및 Azure RMS 테넌트 키에 대한 기본 설정 토폴로지에 따라 이 단계의 프로세스가 다를 수 있습니다.
 
 ### <a name="export-the-configuration-data-from-ad-rms"></a>AD RMS에서 구성 데이터 내보내기
-
-> [!IMPORTANT]
-> 이 절차를 수행하기 전에 먼저 AD RMS 서버가 Azure Information Protection에 대한 요구 사항인 암호화 모드 2에서 실행 중인지 확인합니다.
-> 
-> 암호화 모드를 확인하려면 다음과 같이 합니다.
-> 
-> - Windows Server 2012 R2 및 Windows 2012의 경우: AD RMS 클러스터 속성 > **일반** 탭 
-> 
-> - 지원되는 모든 버전의 AD RMS의 경우: [RMS 분석기](https://www.microsoft.com/en-us/download/details.aspx?id=46437) 및 **AD RMS 관리** 옵션을 사용하여 **RMS 서비스 정보**의 암호화 모드를 봅니다.
-> 
-> 암호화 모드의 값이 **2**인지 확인합니다. 2가 아닌 경우 [AD RMS 암호화 모드](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)에서 암호화 모드 2를 사용하도록 설정하는 지침을 참조하세요.
-
 
 조직에 대해 보호된 콘텐츠가 있는 트러스트된 모든 게시 도메인에 대해 모든 AD RMS 클러스터에서 다음 절차를 수행합니다. 라이선스 전용 클러스터에서는 이 작업을 수행할 필요가 없습니다.
 
@@ -224,4 +208,3 @@ Remove-PSDrive MyRmsAdmin -force
 [2단계 - 클라이언트 쪽 구성](migrate-from-ad-rms-phase2.md)으로 이동합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

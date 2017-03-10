@@ -12,16 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a7d6c5775f9f3ddedd2177054731b26443a0d2d9
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: fe434fd6d80764b5382ff807dbf87582f07713b5
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
-
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure Information Protection에 대한 규정 준수 및 지원 정보
 
 Azure Information Protection은 다른 서비스를 지원하는 동시에 다른 서비스가 있어야 작동합니다. Azure Information Protection 관련 정보를 찾고 있지만 Azure Information Protection 서비스를 사용하는 방법에 대해서는 알아보지 않으려는 경우 다음 리소스를 확인하세요.
@@ -57,4 +51,3 @@ Azure Rights Management 서비스의 특정 인증에 대한 자세한 내용은
 - Office 365 라이브러리: [Office 365](http://technet.microsoft.com/library/dn127064%28v=office.14%29.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

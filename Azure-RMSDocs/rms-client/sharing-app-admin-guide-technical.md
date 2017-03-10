@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 532a379aa303e65d111d6ba0e360f34082b25014
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: e168c68cfeb14b40c0922426e2d226c28dac26ff
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
@@ -138,4 +133,3 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

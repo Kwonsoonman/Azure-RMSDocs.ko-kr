@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 50da38ee5e852d72458845a97ebe005f4949d265
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 2ab4bfa8d27b44bb4d9cf9f3fecc86f281f0da2a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="verifying-the-azure-rights-management-service"></a>Azure Rights Management 서비스 확인
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -38,6 +34,5 @@ Azure Information Protection의 Azure Rights Management 서비스를 활성화�
 사용 현황을 사용하여 조직에서 Azure Rights Management를 사용하는 방식을 모니터링할 수 있습니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

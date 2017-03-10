@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: dccc643ae49521262d5327b4d3d98801f88b3894
-ms.openlocfilehash: ed200df12b3d0665920091c7772ed88a79143e70
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 8b1d8a3df125f4d1950e4e657c535f128c6d0b3a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -161,6 +157,5 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 이름 및 모양에도 불구하고, **전달 금지**는 전달 권한의 반대도 아니고, 템플릿도 아닙니다. 실제로 메일 전달 제한 외에도, 첨부 파일 복사, 인쇄 및 저장 제한이 포함된 권한 집합입니다. 권한은 선택한 수신자를 통해 사용자에게 동적으로 적용되며, 관리자가 권한을 정적으로 할당하지 않습니다. 자세한 내용은 [Azure 권한 관리에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md) 항목의 [메일에 대한 전달 금지 옵션](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 섹션을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

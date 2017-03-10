@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 07236a2820e4d8d4d594eda755cb025d21b96d12
-ms.openlocfilehash: 591ca9ba080da9565e0143d887e3db179b810862
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: b11367b726a7740d42719b184b6a522e067e205b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -74,5 +70,4 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 > AIP 모듈은 RMS 보호 도구와 함께 설치되는 RMS 보호 PowerShell 모듈을 대체합니다. 이러한 두 모듈은 서로 다르며 주 [Azure Rights Management용 Windows PowerShell 모듈](administer-powershell.md)을 보완합니다. AIP 모듈은 Azure Information Protection, Azure Information Protection용 Azure RMS(Azure Rights Management Services) 및 AD RMS(Active Directory Rights Management Services)를 지원합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

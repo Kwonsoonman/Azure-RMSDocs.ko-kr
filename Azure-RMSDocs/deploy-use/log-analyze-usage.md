@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
-ms.openlocfilehash: 5deea0dce593aae09c498e8b6696205890e9f232
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: f179d9b4a9b883e6a7cff15ce3f8e713508b0bd3
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -240,6 +236,5 @@ Azure Rights Management 로깅 변경 전에 Azure 저장소에 로그가 있는
 Azure Rights Management 서비스용 Windows PowerShell 사용에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리](administer-powershell.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

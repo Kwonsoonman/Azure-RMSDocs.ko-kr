@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 587c4f188603f49605191a15d71180441f16e3c9
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 3451a32476e8c85f98ca8df005e633481caa2256
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Azure Information Protection 설명서에 대한 의견 관련 기본 규칙
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -41,5 +37,4 @@ Livefyre 메모 및 사이드 노트를 다음 용도로 사용하면 안 됩니
 [Azure Information Protection에 대한 정보 및 지원](./get-started/information-support.md)에서 추가 리소스를 확인할 수 있습니다. 
 
 참고: Microsoft 직원인 경우에는 내부 통신 채널을 사용하세요.
-
 

@@ -14,13 +14,10 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 6443c1955db5ab25caea349575cb376a6ce8dac2
-
-
+ms.openlocfilehash: 8f52c6b737603e8fd71b32c53991bb015f945abc
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="development-environment-files"></a>개발 환경 파일
 
 이 항목에서는 개발 환경 파일과 컴퓨터의 상대 설치 위치를 보여 줍니다.
@@ -50,8 +47,3 @@ ms.openlocfilehash: 6443c1955db5ab25caea349575cb376a6ce8dac2
 |Genmanifest.exe|\tools|RMS 사용 응용 프로그램을 개발하는 동안 사용할 매니페스트를 생성합니다.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

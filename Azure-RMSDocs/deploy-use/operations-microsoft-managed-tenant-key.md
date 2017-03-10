@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: caacc4174ddb63e9c9091c0df294b93cf947a7c4
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 0b4e9cd5350f942203129979b05bc1344fb37aa5
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -97,5 +92,4 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 |RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure Information Protection을 업데이트하고 모든 고객에게 테넌트 키를 갱신하도록 지시해야 합니다.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

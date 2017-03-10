@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: f560ce654c611a885b54d9609405fb4b1bf7af1d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 72ec5e755e3a5defe753741ed4061c30b2db7e82
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -58,4 +53,3 @@ Azure Rights Management 서비스를 지원하는 모바일 장치 운영 체제
 기타 요구 사항을 확인하려면 [Azure Information Protection에 대한 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

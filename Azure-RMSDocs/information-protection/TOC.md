@@ -5,8 +5,3 @@
 # [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 # [Azure Information Protection(미리 보기)](/information-protection/understand-explore/what-is-azure-information-protection)
-
-
-<!--HONumber=Jan17_HO4-->
-
-

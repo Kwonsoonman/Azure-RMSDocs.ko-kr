@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 3d2e667f78eeccecb0bd837a9020ff188f67fb50
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: fbf39c45e5c3945863a473a0afecc366b72085d2
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키 계획 및 구현
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -143,4 +139,3 @@ Azure RMS 서비스에 키 URL이 올바르게 설정되었는지 확인해야 �
     자세한 내용은 [Azure 권한 관리 테넌트 키에 대한 작업](../deploy-use/operations-tenant-key.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

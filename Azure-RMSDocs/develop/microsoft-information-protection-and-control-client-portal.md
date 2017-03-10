@@ -14,13 +14,10 @@ ms.assetid: 44D3EB62-7A60-45D9-BA7E-45A06E7D598F
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: d06c0e4c6c6fbde103752d45958181754de2f8a6
-
-
+ms.openlocfilehash: cabf4b23206c3c22270d11dd5b740be4ba005f02
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rights-management-services-sdk-21"></a>권한 관리 서비스 SDK 2.1
 
 ## <a name="purpose"></a>용도
@@ -56,8 +53,3 @@ Microsoft 다운로드 센터의 [RMS SDK 2.1 다운로드 페이지](http://www
 * [RMS FAQ](http://aka.ms/adrmsfaq )
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

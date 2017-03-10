@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 811c89ef6922f6939e7a7d13ed707c6ebe6aafd6
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: cee881a77b695fe38d0f88c05b0699d3d9d14955
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rights-management-sharing-application-version-release-history"></a>Rights Management 공유 응용 프로그램: 버전 릴리스 기록
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
@@ -131,4 +127,3 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 -   **조직 내의 여러 메일 도메인 지원**: AD RMS를 사용하며 조직의 사용자에게 여러 메일 도메인이 있는 경우 이 업데이트를 통해 사용자가 다른 도메인의 조직 사용자에 의해 보호된 콘텐츠를 사용할 수 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [AD RMS에만 해당: 조직 내의 여러 메일 도메인 지원](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) 섹션을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

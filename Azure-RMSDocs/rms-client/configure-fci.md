@@ -4,7 +4,7 @@ description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 58a0f117100ff5d19dfd6fee2ac4dd61c6bea36b
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: ff8e38385e8e28991ee1da6c69b0ded244f38177
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
 >*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
@@ -44,7 +40,7 @@ Azure Information Protection 클라이언트와 PowerShell을 사용하여 파�
 
     -   Rights Management를 사용하여 보호할 파일이 포함된 로컬 폴더를 지정해야 합니다. 예를 들어 C:\FileShare 등을 지정할 수 있습니다.
 
-    -   AzureInformationProtection 모듈을 설치하고 Azure Rights Management를 위한 필수 구성 요소를 구성해야 합니다. 자세한 내용은 [Azure Information Protection 클라이언트에서 PowerShell 사용](client-admin-guide-powershell.md)을 참조하세요. 구체적으로는 서비스 사용자 계정을 사용하여 Azure Rights Management 서비스에 연결하기 위해 **BposTenantId**, **AppPrincipalId** 및 **Symmetric key** 값을 구성해야 합니다.
+    -   AzureInformationProtection 모듈을 설치하고 Azure Rights Management를 위한 필수 구성 요소를 구성해야 합니다. 자세한 내용은 [Azure Information Protection 클라이언트에서 PowerShell 사용](client-admin-guide-powershell.md)을 참조하세요. 구체적으로는 서비스 사용자 계정을 사용하여 Azure Rights Management 서비스에 연결하기 위해 **BposTenantId**, **AppPrincipalId** 및 **Symmetric key** 값을 구성해야 합니다. 
 
     -   특정 파일 이름 확장명에 대해 보호의 기본 수준(기본 또는 일반)을 변경하려는 경우 관리자 가이드의 [파일의 기본 보호 수준 변경](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files) 섹션에 설명된 대로 레지스트리를 편집해야 합니다.
 
@@ -52,7 +48,7 @@ Azure Information Protection 클라이언트와 PowerShell을 사용하여 파�
 
 -   온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 메일 주소를 포함). 이렇게 하려면 모든 사용자가 파일을 FCI 및 Azure Rights Management 서비스로 보호한 후에 해당 파일에 액세스해야 할 수도 있습니다. 이 단계를 수행하지 않으면(예: 테스트 환경) 사용자가 이러한 파일에 액세스하지 못하도록 차단될 수 있습니다. 이 계정 구성에 대한 자세한 내용은 [Azure Rights Management 서비스 준비](../plan-design/prepare.md)를 참조하세요.
 
--   파일을 보호하는 데 사용할 Rights Management 템플릿을 지정해야 합니다. [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet을 사용하여 이 템플릿의 ID를 확인해야 합니다.
+-   파일 서버에 Rights Management 템플릿을 다운로드했으며 파일을 보호할 템플릿 ID를 식별했습니다. 이를 위해 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet을 사용합니다. 이 시나리오는 부서별 템플릿을 지원하지 않으므로 범위에 구성되지 않은 템플릿을 사용하거나, **응용 프로그램에서 사용자 ID를 지원하지 않는 경우 이 템플릿을 모든 사용자에게 표시** 확인란이 선택되도록 범위 구성에 응용 프로그램 호환성 옵션을 포함해야 합니다.
 
 ## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>Azure Rights Management 보호를 위해 파일 서버 리소스 관리자 FCI를 구성하기 위한 지침
 PowerShell 스크립트를 사용자 지정 작업으로 사용하여 폴더의 모든 파일을 자동으로 보호하려면 아래 지침을 따르세요. 다음 절차를 이 순서대로 수행합니다.
@@ -70,6 +66,8 @@ PowerShell 스크립트를 사용자 지정 작업으로 사용하여 폴더의 
 6.  수동으로 규칙 및 작업을 실행하여 구성 테스트
 
 이러한 지침대로 절차를 수행하고 나면 선택한 폴더의 모든 파일이 사용자 지정 속성 RMS를 사용하여 분류되며 Rights Management를 통해 보호됩니다. 일부 파일만 선택적으로 보호하는 더 복잡한 구성을 사용하려는 경우 해당 파일만 보호하는 파일 관리 작업을 통해 다른 분류 속성 및 규칙을 만들거나 사용할 수 있습니다.
+
+FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 파일 서버 컴퓨터에서 `Get-RMSTemplate -Force`를 실행하여 템플릿을 업데이트해야 합니다. 그러면 업데이트된 템플릿이 새 파일을 보호하기 위해 사용됩니다. 파일 서버의 파일을 다시 보호할 만큼 템플릿에 대한 변경 사항이 중요한 경우, 파일에 대한 내보내기 또는 모든 권한 사용 권한을 가진 계정으로Protect-RMSFile cmdlet을 대화형으로 실행하여 이 작업을 수행할 수 있습니다. FCI에 대해 사용할 새 템플릿을 게시하는 경우 이 파일 서버 컴퓨터에서 `Get-RMSTemplate -Force`도 실행해야 합니다.
 
 ### <a name="save-the-windows-powershell-script"></a>Windows PowerShell 스크립트 저장
 
@@ -288,4 +286,3 @@ PowerShell 스크립트를 사용자 지정 작업으로 사용하여 폴더의 
 그리고 나면 스크립트는 동일하지만 다른 템플릿을 사용하는 새 파일 관리 작업을 만들고 방금 구성한 분류 속성에 대해 조건을 구성하기만 하면 됩니다. 예를 들어 이전에 구성한 조건(**RMS** 속성, **같음**, **예**) 대신 **연산자** 값을 **같음** 으로 설정했으며 **값** 이 **높음** 인 **개인 식별이 가능한 정보**속성을 선택할 수 있습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

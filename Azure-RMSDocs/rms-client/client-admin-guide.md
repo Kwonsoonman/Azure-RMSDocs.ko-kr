@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: b0ddf66acf0db37d0396647a5518ccf48195019c
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: adb444f7777304ed40b5b5f988e4efb73268ae14
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
-
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
 >*적용 대상: Active Directory Rights Management 서비스, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
@@ -81,7 +76,9 @@ Office 응용 프로그램의 Azure Information Protection 클라이언트 추�
 
 - PowerShell 모듈에는 이전 운영 체제에 설치해야 할 수도 있는 Windows PowerShell 버전 4.0이 필요합니다. 자세한 내용은 [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)(Windows PowerShell 4.0을 설치하는 방법)을 참조하세요. 설치 관리자는 이러한 필수 구성 요소를 확인하거나 설치하지 않습니다. 실행 중인 Windows PowerShell 버전을 확인하려면 PowerShell 세션에 **$PSVersionTable**을 입력합니다.
 
-- Windows 7 서비스 팩 1을 실행하는 컴퓨터에는 클라이언트가 설치된 후에 설치할 수 있는 [KB 2533623](https://support.microsoft.com/en-us/kb/2533623)이 필요합니다. 이 업데이트가 필요한데 설치되어 있지 않으면 업데이트를 설치하라는 메시지가 표시됩니다.
+- Windows 7 서비스 팩 1을 실행하는 컴퓨터에는 KB 2533623이 필요합니다. 이 업데이트에 대한 자세한 내용은 [Microsoft 보안 공지: 비보안 라이브러리 로드 시 원격 코드 실행 허용](https://support.microsoft.com/en-us/kb/2533623)을 참조하세요. 이 업데이트를 직접 설치하거나, 설치하는 다른 업데이트로 대체될 수도 있습니다.
+    
+    이 업데이트가 필요한데 아직 설치되지 않은 경우 클라이언트 설치에서 설치해야 한다는 경고 메시지가 표시됩니다. 클라이언트가 설치된 후에 이 업데이트를 설치할 수 있지만 일부 작업이 차단되며 메시지가 다시 표시됩니다.  
 
 > [!NOTE]
 > 설치에는 로컬 관리 권한이 필요합니다.
@@ -89,8 +86,10 @@ Office 응용 프로그램의 Azure Information Protection 클라이언트 추�
 다음 지침을 따르는 것 외에도, Azure Information Protection 클라이언트가 Microsoft 업데이트 카탈로그에도 포함되어 있으므로 카탈로그를 사용하는 소프트웨어 업데이트 서비스를 통해 클라이언트를 설치하고 업데이트할 수 있습니다. 
 
 1. [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 Azure Information Protection 클라이언트를 다운로드합니다. 
+    
+    미리 보기 버전이 제공되는 경우 이 버전을 테스트용으로 보관하세요. 이 버전은 프로덕션 환경의 최종 사용자를 위한 것이 아닙니다. 
 
-2. 기본 설치의 경우 실행 파일 **AzInfoProtection.exe**를 실행하면 됩니다. 그렇지만 설치 옵션을 보려면 먼저 **/help**: `AzInfoProtection.exe /help`를 사용하여 실행 파일을 실행합니다.
+2. 기본 설치의 경우 **AzInfoProtection.exe**와 같은 실행 파일을 실행하면 됩니다. 그렇지만 설치 옵션을 보려면 먼저 **/help**: `AzInfoProtection.exe /help`를 사용하여 실행 파일을 실행합니다.
 
    예를 들어 클라이언트를 자동으로 설치하려면 다음 명령을 실행합니다. `AzInfoProtection.exe /quiet`
    
@@ -196,4 +195,3 @@ Azure Information Protection 클라이언트를 설치했으므로 다음에서 
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

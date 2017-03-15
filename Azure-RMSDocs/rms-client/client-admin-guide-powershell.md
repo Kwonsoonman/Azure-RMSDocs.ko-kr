@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 17824b007444e9539ffc0374bf39f0984efa494c
-ms.openlocfilehash: d180b0ff4390df45a61b7d50913c267fb3cf35e1
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: 13bed15fa5fff020d77a4362e38903c5ca55d2ce
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
-
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
 
 >*적용 대상: Active Directory Rights Management 서비스, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
@@ -235,7 +230,7 @@ Azure North America 지역 외에서 인증을 받으려면 레지스트리를 �
 
 3개의 식별자를 입력하라는 메시지가 표시되면 [필수 구성 요소 3: 사용자 개입 없이 파일을 보호하거나 보호 해제](client-admin-guide-powershell.md#prerequisite-3-to-protect-or-unprotect-files-without-user-interaction)에 설명된 대로 입력합니다.
 
-파일을 보호하려면 먼저 Rights Management 템플릿 목록을 가져온 후 사용할 템플릿과 해당 ID 번호를 식별해야 합니다. 그런 후에는 출력에서 템플릿 ID를 복사할 수 있습니다.
+파일을 보호하려면 먼저 Rights Management 템플릿을 컴퓨터에 다운로드한 후 사용할 템플릿과 해당 ID 번호를 식별해야 합니다. 그런 후에는 출력에서 템플릿 ID를 복사할 수 있습니다.
 
     Get-RMSTemplate
     
@@ -301,6 +296,7 @@ Set-RMSServerAuthentication 명령을 실행하지 않은 경우 자체 사용�
     ---------                             -------------
     C:\Test.docx                          C:\Test.docx
 
+Rights Management 템플릿이 변경되면 `Get-RMSTemplate -force`를 사용하여 다시 다운로드해야 합니다. 
 
 ## <a name="active-directory-rights-management-services"></a>Active Directory Rights Management Services
 
@@ -430,4 +426,3 @@ Azure Information Protection 클라이언트를 지원하는 데 필요할 수 �
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

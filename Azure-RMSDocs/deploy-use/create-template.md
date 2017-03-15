@@ -4,7 +4,7 @@ description: "Azure 클래식 포털에서 사용자 지정 템플릿을 만들�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 11971a176b9c5f413bbe6daa208c062a131343be
-ms.openlocfilehash: 5ab725294d93540f35c395eca08f5f3fbc6ae392
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 9d0b71db6245e49765a0f79aaa901141a155372d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="create-configure-and-publish-a-custom-template"></a>사용자 지정 템플릿 만들기, 구성 및 게시
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -49,16 +44,16 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
     -   [Azure 클래식 포털](http://go.microsoft.com/fwlink/p/?LinkID=275081)에서 다음을 수행합니다.
 
-        1.  왼쪽 창에서 **ACTIVE DIRECTORY**를 클릭합니다.
+        1. 왼쪽 창에서 **ACTIVE DIRECTORY**를 클릭합니다.
 
-        2.  **Active Directory** 페이지에서 **Rights Management**를 클릭합니다.
+        2. **Active Directory** 페이지에서 **Rights Management**를 클릭합니다.
 
-        3.  Rights Management에 대해 관리할 디렉터리를 선택합니다.
-
-        4.  권한 관리를 아직 활성화하지 않은 경우 **활성화** 를 클릭하고 작업을 확인합니다.
+        3. **RIGHTS MANAGEMENT 상태**가 **비활성**으로 표시되는 경우 **활성화**를 클릭한 후 작업을 확인합니다.
 
             > [!NOTE]
-            > 자세한 내용은 [Azure 권한 관리 활성화](activate-service.md)를 참조하세요.
+            > 자세한 내용은 [Azure 권한 관리 활성화](activate-service.md) 항목을 참조하세요.
+            >
+        4. **RIGHTS MANAGEMENT 상태**가 **활성**으로 표시되는 경우 Active Directory 테넌트의 이름을 선택합니다.
 
 2.  새 템플릿 만들기
 

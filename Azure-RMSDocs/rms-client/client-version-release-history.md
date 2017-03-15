@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/01/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,24 +12,22 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 343ac5f79902379e45efcb6979a115ba4c00d1c5
-ms.openlocfilehash: 503cb76825d0092e8562d39281b1d702edaf6438
-ms.lasthandoff: 03/02/2017
-
-
+ms.openlocfilehash: cfd5eae4191cb0b09d8d43f9f708c80ff724d136
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="azure-information-protection-client-version-release-history"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록
 
 >*적용 대상: Azure Information Protection*
 
-Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 클라이언트는 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에 포함되며 언제든지 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 버전을 다운로드할 수 있습니다.
+Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 클라이언트는 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에 포함되며 언제든지 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 GA(일반 공급) 릴리스 버전 및 예정된 버전(미리 보기 버전)을 다운로드할 수 있습니다.
 
-다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다. 일반 공급 이전 버전은 나열되지 않습니다.
+미리 보기 버전을 프로덕션 네트워크의 최종 사용자에게 배포해서는 안 됩니다. 대신, 미리 보기 버전을 통해 다음 GA 버전의 새로운 기능 또는 수정 사항을 확인하고 사용해 볼 수 있습니다. 
+
+GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 정보를 참조하세요. 가장 최근 릴리스가 먼저 나열됩니다. 현재 미리 보기 버전에 대한 자세한 내용은 다운로드 페이지의 정보를 참조하세요.
 
 > [!NOTE]
-> 사소한 수정 사항은 나열되지 않으므로 Azure Information Protection 클라이언트에 문제가 있는 경우 먼저 최신 릴리스의 문제가 아닌지 확인하세요.
+> 사소한 수정 사항은 나열되지 않으므로 Azure Information Protection 클라이언트에 문제가 있는 경우 먼저 최신 GA 릴리스의 문제가 아닌지 확인하세요. 문제에 해당하는 경우 현재 미리 보기 버전을 확인하세요.
 >  
 > 문제가 지속되면 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
 

@@ -4,27 +4,25 @@ description: "문서 또는 메일 메시지에 레이블을 할당하는 경우
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4ddacf2be34cb7921dfbe282a0476a8cd47de2cf
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f1ac1ed3aada5d332764db962794d8d6b5428bd7
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
 문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다.
 
-시각적 표시는 레이블이 적용될 때 및 문서가 저장될 때 Word, Excel 및 PowerPoint 문서에 적용됩니다. 메일 메시지의 경우 시각적 표시는 메일 메시지가 전송될 때 적용됩니다.
+시각적 표시는 레이블이 적용될 때 및 문서가 Word, Excel, PowerPoint 문서 등의 Office 응용 프로그램에 저장될 때 적용됩니다. 메일 메시지의 경우 시각적 표시는 메일 메시지가 Outlook에서 전송될 때 적용됩니다.
+
+파일 탐색기 및 오른쪽 클릭 작업을 사용하여 레이블이 적용되는 경우에는 시각적 표시가 문서에 적용되지 않습니다. PowerShell을 사용하여 문서를 분류하는 경우도 마찬가지입니다.
 
 이러한 시각적 표식에 대한 추가 정보:
 
@@ -81,5 +79,4 @@ ms.lasthandoff: 02/24/2017
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

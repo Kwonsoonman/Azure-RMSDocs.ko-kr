@@ -4,14 +4,14 @@ description: "Azure Information Protection에 대한 기본 정책을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 08b110d46b41da6582ed59363f6f6d66450c6ec2
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 3a2c5af41023021893f0eb751321e798ea523e8c
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="the-default-azure-information-protection-policy"></a>기본 Azure Information Protection 정책
@@ -19,6 +19,7 @@ translationtype: HT
 >*적용 대상: Azure Information Protection*
 
 다음 정보를 사용하여 Azure Information Protection에 대한 기본 정책을 구성하는 방법을 이해할 수 있습니다. 기본 정책을 수정하는 경우 이러한 값을 참조하여 정책을 기본값으로 반환할 수 있습니다.
+
 
 ## <a name="information-protection-bar"></a>Information Protection 표시줄
 

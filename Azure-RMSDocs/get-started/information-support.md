@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/01/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 82a377e0b28e3f6614e8d79b5dae0e6f0abb9945
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: d5566f7d2c3ac802f2d8078241be3057d2cb2529
+ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
@@ -45,7 +45,7 @@ Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](htt
 
 프리미어 지원이 있는 경우는 [프리미어 지원 고객용 포털](https://premier.microsoft.com/)을 방문하여 사건을 제출하고, 해결 방법을 검색하고, 도움을 받습니다.
 
-**FastTrack** 자격: 적격 플랜을 통해 Azure Information Protection에 150개 이상의 라이선스를 구매하면 FastTrack 센터 혜택을 사용할 수 있습니다. FastTrack 센터 혜택을 사용하면 Microsoft 전문가와 협업하여 적격 서비스를 평가, 수정 및 활성화할 수 있습니다. 자세한 내용은 [Azure Rights Management용 FastTrack 센터 혜택](https://technet.microsoft.com/library/mt607025.aspx)을 참조하세요.
+**FastTrack** 자격: 적격 플랜을 통해 Azure Information Protection에 150개 이상의 라이선스를 구매하면 FastTrack 센터 혜택을 사용할 수 있습니다. FastTrack 센터 혜택을 사용하면 Microsoft 전문가와 협업하여 적격 서비스를 평가, 수정 및 활성화할 수 있습니다. 자세한 내용은 [Azure Rights Management용 FastTrack 센터 혜택](/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)을 참조하세요.
 
 다른 고객의 경우는 Azure Information Protection을 구한 방법에 따라 다음과 같은 지원 채널을 사용합니다.
 

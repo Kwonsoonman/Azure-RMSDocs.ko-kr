@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호하는 방법에 대
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6d727cdbfba193a80742441ae1a372d2e8fbd699
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: edc8c7227a0f2b493a64f25a26a64aef3a314e39
+ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
 translationtype: HT
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
@@ -28,9 +28,9 @@ translationtype: HT
 
 보호되는 파일은 다른 사용자와 공유해도 안전합니다. 예를 들어 파일을 전자 메일에 첨부하거나 SharePoint 사이트에서 초대를 보낼 수 있습니다.
 
-조직 외부 사용자와 파일을 정기적으로 공유하는 경우 관리자가 이러한 사용자가 읽을 수 있도록 보호를 설정하는 레이블을 구성했을 수 있습니다. 또는 공유하기 전에 파일에 대해 [파일 탐색기를 사용하여 사용자 지정 권한을 설정](#using-file-explorer-to-classify-and-protect-files)할 수 있습니다. 
+조직 외부 사용자와 파일을 정기적으로 공유하는 경우 관리자가 이러한 사용자가 읽을 수 있도록 보호를 설정하는 레이블을 구성했을 수 있습니다. 또는 파일을 공유하기 전에 [Office 앱을 사용하여 사용자 지정 권한을 설정](#set-custom-permissions-for-a-document)하거나 [파일 탐색기를 사용하여 사용자 지정 권한을 설정](#using-file-explorer-to-classify-and-protect-files)할 수 있습니다. 
 
-사용자 고유의 사용자 지정 권한을 설정했으며 파일이 이미 내부 사용을 위해 보호된 경우 먼저 복사본을 만듭니다. 이 복사본을 사용하여 사용자 지정 권한을 설정합니다.  
+사용자 고유의 사용자 지정 권한을 설정했으며 파일이 이미 내부 사용을 위해 보호된 경우 먼저 복사본을 만들어 원래 권한을 보존할 수 있습니다. 그 후에 이 복사본을 사용하여 사용자 지정 권한을 설정합니다.  
 
 파일에 사용자 지정 권한으로 보호되어 있으면 표준 공유 메커니즘을 사용하여 파일을 공유합니다. 파일을 함께 공유하는 이러한 사용자가 보호된 파일을 처음 받아보는 경우라면 파일을 보기 위한 지침이 필요할 수 있습니다. 이러한 사용자를 위해 다음 메시지를 복사한 후 붙여 넣을 수 있습니다. **이 파일은 Microsoft Azure Information Protection으로 보호되어 있습니다. 처음 사용할 경우 이러한 [지침](https://aka.ms/rms-signup)을 참조하세요.**
 
@@ -64,6 +64,29 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 - 누락된 레이블이 보호를 적용하는 경우 Rights Management 보호 적용을 지원하지 않는 Office 버전이 있을 수 있습니다. 이를 확인하려면 **보호** > **도움말 및 피드백**을 클릭하고 **클라이언트 상태**에 **이 클라이언트에 Office Professional Plus에 대한 사용 허가가 없습니다.**라는 메시지가 표시되는지 확인합니다. 
 
 - 이 레이블은 계정에 포함되지 않는 정책 범위에 해당될 수 있습니다. 기술 지원 팀 또는 관리자에게 문의하세요.
+
+### <a name="set-custom-permissions-for-a-document"></a>문서에 대한 사용자 지정 권한 설정
+
+선택한 레이블에 관리자가 포함한 보호를 사용하지 않고 직접 문서 보호 설정을 지정할 수 있습니다.
+
+1. **홈** 탭의 **보호** 그룹에서 **보호** > **사용자 지정 권한**을 클릭합니다.
+
+    ![사용자 지정 권한 옵션](../media/custom-permissions-callout.png)
+    
+    지정하는 사용자 지정 권한은 선택된 레이블에 대해 관리자가 정의했을 수 있는 보호 설정을 보완하지 않고 대신합니다.  
+
+2. **Microsoft Azure Information Protection** 대화 상자에서 다음을 지정합니다.
+
+    - **사용자 지정 권한으로 보호**: 사용자 지정 권한을 지정하고 적용할 수 있도록 이 옵션이 선택되어 있는지 확인합니다. 사용자 지정 권한을 제거하려면 이 옵션을 선택 취소합니다.
+    
+    - **사용 권한 선택**: 자기만 액세스할 수 있도록 파일을 보호하려면 **Only for me**(나만)를 선택합니다. 그렇지 않은 경우는 사람들에게 지정할 액세스 레이블을 선택합니다.
+
+    - **사용자, 그룹 또는 조직 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 개인 메일 주소는 현재 지원되지 않습니다.
+        
+    - **액세스 만료**: 특정 기간에만 제공해야 하는 파일에 한해 이 옵션을 선택합니다. 그러면 지정한 사용자가 지정된 날짜 이후로는 선택한 하나 이상의 파일을 열 수 없습니다. 원본 파일은 계속 열 수 있지만 현재 표준 시간대로 선택한 날짜의 자정이 지나면 지정된 사용자는 파일을 열 수 없습니다.
+
+5. **적용**을 클릭하고 **사용자 지정 권한 적용됨** 메시지가 표시되기를 기다립니다. 그런 다음 **닫기**를 클릭합니다.
+
 
 ### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 위한 바로 가기 키
 

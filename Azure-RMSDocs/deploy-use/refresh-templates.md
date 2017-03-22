@@ -4,7 +4,7 @@ description: "Azure Rights Management 서비스를 사용하는 경우 사용자
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/13/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e3f80781c9e998e3d7d0d515ed1b0b13b9656ab4
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: b1ff1345dd2b3cff8ccb5ff7b454e209403b1190
+ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
 translationtype: HT
 ---
 # <a name="refreshing-templates-for-users"></a>사용자를 위한 템플릿 새로 고침
@@ -26,9 +26,12 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |--------------------------|---------------------------------------------|
 |Exchange Online|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요.|
 |Office 365|자동으로 새로 고침 - 추가 단계 불필요|
-|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
-|Office 2010|사용자 로그인 시 새로 고침됨<br /><br />강제로 새로 고침하려면 사용자에게 로그오프한 후 다시 로그인하도록 요청하거나 강제로 적용합니다. 또는 [Office 2010에만 해당: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
-RMS 공유 응용 프로그램을 사용하는 모바일 장치의 경우 템플릿은 추가 구성이 필요 없이 자동으로 다운로드되고 필요한 경우 새로 고침됩니다.
+|Azure Information Protection 클라이언트|클라이언트에서 Azure Information Protection 정책을 새로 고칠 때마다 자동으로 새로 고침:<br /><br /> - Azure Information Protection 막대를 지원하는 Office 응용 프로그램이 열릴 때. <br /><br /> - 마우스 오른쪽 단추를 클릭하여 파일 또는 폴더를 분류 및 보호하려 할 때. <br /><br /> - 레이블 지정 및 보호를 위해 PowerShell cmdlet을 실행할 때(Get-AIPFileStatus 및 Set-AIPFileLabel).<br /><br /> - 24시간마다.<br /><br /> 또한 Azure Information Protection 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 클라이언트에서도 새로 고쳐집니다.|
+|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />- 이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />- Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
+|Office 2010|사용자가 Windows에서 로그아웃했다가 다시 로그인하고 1시간까지 기다리면 자동으로 새로 고침됩니다.|
+|Mac용 Office 2016|자동으로 새로 고침 - 추가 단계 불필요|
+|모바일 장치용 RMS 공유 앱|자동으로 새로 고침 - 추가 단계 불필요|
+
 
 ## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법
 Exchange Online을 위해 이미 IRM(정보 Rights Management)을 구성했다면 Exchange Online의 Windows PowerShell을 사용해 다음과 같이 변경할 때까지 사용자는 사용자 지정 템플릿을 다운로드할 수 없습니다.
@@ -146,38 +149,6 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
 
 3.  Office 응용 프로그램과 파일 탐색기 인스턴스를 지금 시작합니다.
 
-## <a name="office-2010-only-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2010에만 해당: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법
-Office 2010을 실행하는 컴퓨터에서 레지스트리를 편집하면 사용자가 로그오프하고 다시 로그인할 때까지 기다리지 않고 컴퓨터에서 변경된 템플릿을 새로 고치도록 값을 설정할 수 있습니다. 또한 레지스트리의 기존 데이터를 삭제하여 즉각적인 새로 고침을 강제 실행할 수 있습니다.
-
-> [!WARNING]
-> 레지스트리 편집기를 잘못 사용하면 운영 체제를 재설치해야 할 만큼 심각한 문제가 유발될 수 있습니다. 레지스트리 편집기를 잘못 사용하여 발생하는 문제는 해결할 수 있다는 보장이 없습니다. 레지스트리 편집기 사용에 따른 위험은 사용자가 책임져야 합니다.
-
-### <a name="to-change-the-update-frequency"></a>업데이트 주기를 변경하려면
-
-1.  레지스트리 편집기에서 이름이 **UpdateFrequency** 인 새 레지스트 값을 만들고 데이터에 정수 값을 정의합니다. 즉 다운로드한 템플릿에 대한 모든 변경 사항을 다운로드하는 주기를 일 단위로 지정합니다. 다음 표를 사용하여 새 레지스트리 값을 만들기 위한 레지스트리 경로를 확인합니다.
-
-    **레지스트리 경로:** HKEY_CURRENT_USER\Software\Microsoft\MSDRM\TemplateManagement
-
-    **형식:** REG_DWORD
-
-    **값:** UpdateFrequency
-
-2.  템플릿의 즉시 새로 고침을 강제 실행한 경우 다음 절차를 진행합니다. 그렇지 않은 경우 Office 응용 프로그램을 지금 다시 시작합니다.
-
-### <a name="to-force-an-immediate-refresh"></a>즉시 새로 고침을 강제 실행하려면
-
-1.  레지스트리 편집기에서 **LastUpdatedTime** 값의 데이터를 삭제합니다. 예를 들어 데이터가 **2015-04-20T15:52**로 표시된다면 2015-04-20T15:52를 삭제하여 아무 데이터도 표시되지 않게 합니다. 다음 표를 사용하여 이 레지스트리 값 데이터를 삭제하기 위한 레지스트리 경로를 확인합니다.
-
-    **레지스트리 경로:** HKEY_CURRENT_USER\Software\Microsoft\MSDRM\TemplateManagement
-
-    **형식:** REG_SZ
-
-    **값:** lastUpdatedTime
-
-
-2.  다음 폴더와, 그 안의 모든 파일을 삭제합니다. **%localappdata%\Microsoft\MSIPC\Templates**
-
-3.  Office 응용 프로그램을 다시 시작합니다.
 
 ## <a name="see-also"></a>참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)

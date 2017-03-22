@@ -1,11 +1,11 @@
 ---
-title: "ADAL 인증을 위한 앱 구성 | Microsoft Docs"
+title: "ADAL 인증을 위한 앱 구성 - AIP"
 description: "Azure ADAL 기반 인증을 사용하기 위한 Azure Information Protection 앱 구성 단계"
 keywords: "인증, RMS, ADAL, Information Protection,"
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,8 +14,8 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 880f022e53aa6c12b26d2d64782521de88d29399
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 27674aac7962c7a2f79fda8ccd6f90c366574b9b
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
 translationtype: HT
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>ADAL 인증을 위한 앱 구성
@@ -67,7 +67,7 @@ Microsoft Azure에 등록한 후
 ![앱 이름 지정](../media/TellUsInput.png)
 
 - 리디렉션 URI를 추가하고 다음을 선택합니다.
-  리디렉션 URI는 유효한 URI여야 하며 디렉터리에 고유합니다. 예를 들어 `com.mycompany.myapplication://authorize`와 같은 항목을 사용할 수 있습니다.
+  리디렉션 URI는 유효한 URI여야 하며 디렉터리에 고유합니다. 예를 들어 `https://contoso.azurewebsites.net/.auth/login/done`와 같은 항목을 사용할 수 있습니다.
 
 ![리디렉션 URI 추가](../media/RedirectURI.png)
 

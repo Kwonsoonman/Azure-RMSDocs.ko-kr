@@ -1,10 +1,10 @@
 ---
-title: "Azure Information Protection 개발자 지침 | Microsoft Docs"
+title: "개발자 가이드 - AIP"
 description: "개발자는 Azure Information Protection을 사용하여 모든 형식의 파일을 보호하고 관리할 수 있습니다."
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/09/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: ea8a0f60997ca5d569f10969abfb9b010f0918da
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fbd76e377c8b11b8e64187685144010dce9bbb25
+ms.sourcegitcommit: ee432bdb6783bfe311a7ebbc9a5f20a7c2ae759c
 translationtype: HT
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
@@ -79,9 +79,9 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 - [문서 추적 및 액세스 권한 해지를 사용하는 방법(서비스)](tracking-content.md)
 - [클라이언트를 배포하는 방법](../rms-client/client-deployment-notes.md)
+- [서비스 앱을 다른 테넌트에 배포하는 방법] (how-to-deploy-app.md)
 - [RMS 서버를 설치 및 구성하는 방법(서비스)](how-to-install-and-configure-an-rms-server.md)
 - [문서 추적을 사용하는 방법(사용자)](how-to-use-document-tracking.md)
-
 
 ### <a name="security-and-authentication"></a>보안 및 인증
 

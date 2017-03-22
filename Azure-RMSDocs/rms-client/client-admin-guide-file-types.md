@@ -4,7 +4,7 @@ description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8247b75a5e5835b1e091a4b9e380ca33487e60f1
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fe75945793d28ed78b46f6b9a421bd7aa9ae3dfd
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
 translationtype: HT
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 지원하는 파일 형식
@@ -34,6 +34,8 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 
 다음 파일 형식의 경우 분류만 지원됩니다. 다른 파일 형식은 보호도 수행해야 분류가 지원됩니다.
 
+- **Adobe Portable Document Format**: .pdf
+
 - **Microsoft Visio**: .vsdx, .vsdm, .vssx, .vssm, .vsd, .vdw, .vst
 
 - **Microsoft Project**: .mpp, .mpt
@@ -41,7 +43,6 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 - **Microsoft Publisher**: .pub
 
 - **Microsoft Office 97, Office 2010, Office 2003**: .xls, .xlt, .doc, .dot, .ppt, .pps, .pot
-
 - **Microsoft XPS**: .xps .oxps
 
 - **이미지**: .jpg, .jpe, .jpeg, .jif, .jfif, .jfi.png, .tif, .tiff

@@ -4,7 +4,7 @@ description: "RMS API를 사용하여 Azure Information Protection의 Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 85d77e7f60a6955ca29376583d7a6969bb1f74d1
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 842f1853a1a0d037907024633b77e90c27a79af1
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
 translationtype: HT
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
@@ -21,11 +21,15 @@ translationtype: HT
 >*적용 대상: Azure Information Protection, Office 365*
 
 
-Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RMS(Azure Rights Management 서비스)를 기본적으로 지원하는 응용 프로그램을 식별하려면 다음 표를 참조하세요. 
+Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RMS(Azure Rights Management 서비스)를 기본적으로 지원하는 응용 프로그램 및 솔루션을 식별하려면 다음 표를 참조하세요. 
 
-이러한 응용 프로그램의 경우 Rights Management API를 통해 사용 제한을 지원하여 Rights Management 서비스를 강력히 통합합니다. 이러한 응용 프로그램을 RMS 지원이라고도 합니다.
+이러한 응용 프로그램 및 솔루션의 경우 Rights Management API를 통해 사용 제한을 지원하여 Rights Management 서비스를 강력히 통합합니다. 이러한 응용 프로그램 및 솔루션을 RMS 지원이라고도 합니다.
 
 별도의 설명이 없으면 지원되는 기능은 Azure RMS와 AD RMS 둘 다에 적용됩니다. 또한 iOS, Android, OS X 및 Windows Phone 8.1에서 AD RMS를 지원하려면 [Active Directory Rights Management Services 모바일 장치 확장](https://technet.microsoft.com/library/dn673574.aspx)이 필요합니다.
+
+## <a name="rms-enlightened-applications"></a>RMS 지원 응용 프로그램
+
+다음 표에는 Microsoft 및 소프트웨어 공급업체에서 제공하는 RMS 지원 클라이언트 응용 프로그램이 표시되어 있습니다.
 
 테이블 열에 대한 정보:
 
@@ -75,7 +79,7 @@ iOS용 보호된 문서 보기 및 편집을 지원하고, Android용 보호된 
 자세한 내용은 Enterprise Mobility + Security 블로그에서 [SealPath brings RMS protection to AutoCAD](https://blogs.technet.microsoft.com/enterprisemobility/2015/09/08/sealpath-brings-rms-protection-to-autocad/)(SealPath에서 AutoCAD에 대한 RMS 보호 제공) 게시물을 참조하세요.
 
 
-## <a name="more-information-about-azure-rms-support-for-office"></a>Office에 대한 Azure RMS 지원과 관련된 자세한 내용
+### <a name="more-information-about-azure-rms-support-for-office"></a>Office에 대한 Azure RMS 지원과 관련된 자세한 내용
 
 Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되어 있으며, 이러한 앱에서 이 기능은 종종 IRM(정보 권한 관리)이라고 불립니다. 다음 Office 클라이언트 버전은 Azure RMS를 사용하여 파일 및 메일 보호를 지원합니다.
 
@@ -97,7 +101,7 @@ Office Professional Plus 2010 또는 Office Professional 2010을 사용하는 Az
 
 - 페더레이션된 사용자 계정에 대한 양식 기반 인증은 지원되지 않습니다. 이러한 계정은 Windows 통합 인증을 사용해야 합니다.
 
-## <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
+### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
 
 iOS 및 Android용 Azure Information Protection 앱은 이러한 장치에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
 
@@ -106,7 +110,7 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 자세한 내용은 [iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ](../rms-client/mobile-app-faq.md)를 참조하세요.
 
 
-## <a name="more-information-about-the-azure-information-protection-client-for-windows"></a>Windows용 Azure Information Protection 클라이언트에 대한 자세한 내용
+### <a name="more-information-about-the-azure-information-protection-client-for-windows"></a>Windows용 Azure Information Protection 클라이언트에 대한 자세한 내용
 
 이 클라이언트는 Windows용 Rights Management 공유 응용 프로그램을 대신합니다. 
 
@@ -120,7 +124,7 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 [Microsoft Azure Information Protection 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 관련 앱을 다운로드하세요.
 
-## <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 자세한 내용
+### <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 자세한 내용
 
 이 응용 프로그램은 Azure Information Protection 클라이언트로 대체되고 있습니다. Mac 컴퓨터 및 Windows Phone 모바일 장치에는 여전히 필요합니다. 
 
@@ -135,7 +139,7 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 [Microsoft Azure Information Protection 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 Mac 컴퓨터 및 Windows Phone용 앱을 다운로드하세요.
 
 
-## <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Azure Information Protection을 지원하는 다른 응용 프로그램에 대한 자세한 내용
+### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Azure Information Protection을 지원하는 다른 응용 프로그램에 대한 자세한 내용
 
 표에 나와 있는 응용 프로그램 외에도 Azure Rights Management 서비스용 API를 지원하는 다음과 같은 모든 응용 프로그램을 Azure Information Protection과 통합할 수 있습니다.
 
@@ -145,7 +149,7 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 자세한 내용은 [Azure Information Protection 개발자 가이드](../develop/developers-guide.md)를 참조하세요.
 
-## <a name="applications-that-are-not-supported-by-azure-rms"></a>Azure RMS에서 지원되지 않는 응용 프로그램
+### <a name="applications-that-are-not-supported-by-azure-rms"></a>Azure RMS에서 지원되지 않는 응용 프로그램
 
 Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같습니다.
 
@@ -159,6 +163,25 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 -   Windows 컴퓨터의 경우: 최소 Windows 7 서비스 팩 1 이상 버전이 필요합니다.
 
+## <a name="rms-enlightened-solutions"></a>RMS 지원 솔루션
+
+다음 표에는 소프트웨어 공급업체에서 제공하는 RMS 지원 솔루션이 표시되어 있습니다.
+
+이 표에 나열되어 있지 않은 솔루션을 보유하나 소프트웨어 공급업체의 경우는 응용 프로그램을 Azure AD에 등록합니다. 자세한 내용은 [Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법](../develop/authentication-integration.md)을 참조하세요.
+
+
+|제품|공급업체|설명|
+|-------------------------------|---------------------------|-----------------|
+|절대|절대|DLP(데이터 손실 방지)를 통한 콘텐츠 보호.|
+|Content Locker|VMware|보호된 콘텐츠를 저장, 소비, 생성합니다.|
+|Controle|TakeControle|레이블 지정 및 보호를 사용한 eDiscovery.|
+|Halocore|Secude|SAP 환경에서 내보낸 파일을 보호합니다.|
+|MaaS 360|IBM|문서 소비 및 보호를 위한 통합.|
+|Mobiliya|Mobiliya|EMC의 Documentum 리포지토리에서 문서를 보호합니다.
+|Ramessys|Ramessys|Chemcart 및 Documentum 통합.
+|Sealpath|Sealpath Technologies|AutoCAD 및 Siemens Jt2GO와 같은 CAD 설계 도구와의 통합.
+|SecRMM|Sqaudra Technologies |이동식 미디어의 문서 보호.
+|Security Sheriff|CryptZone |분류 및 액세스 권한을 기반으로 SharePoint에서 액세스 관리 및 문서 보호.
 
 
 ## <a name="next-steps"></a>다음 단계

@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 64a3daa57d71087d11098a1e71465f17b6b8f3b7
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: faf296a92abb6636bd516e41a6e44d4580984146
+ms.sourcegitcommit: 117e4016794d0cb9b7bd95603fb6c79114d65360
 translationtype: HT
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
@@ -48,7 +48,14 @@ Azure Information Protection 블레이드를 변경한 경우 **Save**(저장)�
 
 원하는 변경 작업을 마쳤으면 **Publish**(게시)를 클릭합니다. 
 
-Azure Information Protection 클라이언트는 지원되는 Office 응용 프로그램이 시작될 때마다 변경 내용을 확인하여 해당 Azure Information Protection 정책으로 변경 내용을 다운로드합니다.
+Azure Information Protection 클라이언트는 지원되는 Office 응용 프로그램이 시작될 때마다 변경 내용을 확인하여 해당 최신 Azure Information Protection 정책으로 변경 내용을 다운로드합니다. 클라이언트에서 정책을 새로 고치는 추가 트리거:
+
+- 마우스 오른쪽 단추를 클릭하여 파일 또는 폴더 분류 및 보호.
+
+- 레이블 지정 및 보호를 위한 PowerShell cmdlet 실행(Get-AIPFileStatus 및 Set-AIPFileLabel).
+
+- 24시간마다.
+
 
 ## <a name="configuring-your-organizations-policy"></a>조직의 정책 구성
 

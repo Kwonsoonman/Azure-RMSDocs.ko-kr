@@ -4,14 +4,14 @@ description: "Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 482338f186e3008da155f961c649a80cc61c5780
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fc25cd11d950199f7ccd8e4e86e4d915c7fb6a95
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
@@ -22,7 +22,7 @@ Azure Information Protection은 클라우드 기반 솔루션으로 조직에서
 
 다음 그림은 Azure Information Protection의 실제 작동 방식 예를 보여 줍니다. 관리자는 중요한 데이터를 검색하는 데 필요한 규칙을 정의했습니다(이 경우 신용 카드 정보). 신용 카드 정보가 포함된 Word 문서를 저장할 때 관리자가 구성한 특정 레이블을 적용하여 문서를 분류하고, 선택적으로 보호하도록 권장하는 사용자 지정 도구 설명이 나타납니다. 
 
-![Azure Information Protection에 권장되는 분류 예](../media/info-protect-recommend-callouts.png)
+![Azure Information Protection에 권장되는 분류 예](../media/info-protect-recommend-calloutsv2.png)
 
 콘텐츠가 분류되고 나면(경우에 따라 보호됨) 해당 콘텐츠를 추적하고 제어할 수 있습니다. 데이터 흐름을 분석하여 비즈니스 통찰력을 얻고, 위험 행동을 검색하여 수정 작업을 수행하고, 문서에 대한 액세스를 추적하고, 데이터가 누출되거나 잘못 사용되지 않게 할 수 있습니다.
 
@@ -32,7 +32,7 @@ Azure Information Protection 레이블을 사용하여 문서와 전자 메일�
 
 예를 들어 다음 전자 메일 메시지는 “내부용"으로 분류됩니다. 이 레이블은 내부 사용을 위한 것으로 조직 외부로 전송하면 안 된다는 점을 받는 사람 모두에게 알리는 시각적 표시기로, 전자 메일 메시지에 바닥글로 추가됩니다. 이 레이블은 전자 메일 서비스에서 이 값을 검사하여 감사 항목을 만들거나 조직 외부로 전송되지 않도록 전자 메일 머리글에도 포함됩니다.
 
-![Azure Information Protection 분류를 보여 주는 머리글 및 바닥글 예](../media/example-email-footer-header.png)
+![Azure Information Protection 분류를 보여 주는 머리글 및 바닥글 예](../media/example-email-footerv2.png)
 
 
 ## <a name="how-data-is-protected"></a>데이터를 보호하는 방법
@@ -63,7 +63,7 @@ Azure Rights Management 보호에 대한 자세한 내용은 [Azure Rights Manag
 
 Azure Information Protection 클라이언트가 설치되면 Azure Information Protection은 최종 사용자의 기존 워크플로와 통합됩니다. 이 클라이언트는 첫 번째 그림에서 살펴본 대로 Office 응용 프로그램에 Information Protection 표시줄을 설치합니다. 동일한 표시줄이 Excel, PowerPoint 및 Outlook에도 추가됩니다. 예를 들면 다음과 같습니다.
 
-![Excel에서 Azure Information Protection 표시줄의 예](../media/excel2016-infoprotect-bar.png)
+![Excel에서 Azure Information Protection 표시줄의 예](../media/excel2016-infoprotect-barv2.png)
 
 이 Information Protection 표시줄을 사용하면 최종 사용자가 올바른 분류로 레이블을 쉽게 선택할 수 있으며 필요한 경우 이 레이블이 자동으로 문서와 전자 메일을 보호할 수도 있습니다.
 

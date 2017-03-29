@@ -4,7 +4,7 @@ description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff8e38385e8e28991ee1da6c69b0ded244f38177
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 5e1a193ab54e5d0d85e4f7a22f53ac0b9b39036c
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
 translationtype: HT
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
->*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 Azure Information Protection 클라이언트와 PowerShell을 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하려면 이 문서에 나와 있는 지침과 스크립트를 사용합니다.
 
@@ -272,7 +272,7 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
     >     ```
     >     -   이 Windows PowerShell 세션에서 스크립트가 정상적으로 실행되는 경우에는 파일 관리 작업 동작에서 **실행** 및 **인수** 의 항목을 확인합니다.  **-OwnerEmail [원본 파일 소유자 메일]**을 지정한 경우 이 매개 변수를 제거해 봅니다.
     > 
-    >         파일 관리 작업이 ** -OwnerEmail [원본 파일 소유자 메일]** 없이 성공적으로 작동하는 경우 보호되지 않은 파일에서 **SYSTEM** 대신 도메인 사용자가 파일 소유자로 표시되는지 확인합니다.  이렇게 하려면 파일 속성의 **보안** 탭을 사용한 다음 **고급**을 클릭합니다. **소유자** 값은 파일 **이름** 바로 뒤에 표시됩니다. 또한 파일 서버가 동일한 도메인 또는 트러스트된 도메인에 있어 Active Directory Domain Services에서 사용자의 메일 주소를 조회할 수 있는지 확인합니다.
+    >         파일 관리 작업이 **-OwnerEmail [원본 파일 소유자 메일]** 없이 성공적으로 작동하는 경우 보호되지 않은 파일에서 **SYSTEM** 대신 도메인 사용자가 파일 소유자로 표시되는지 확인합니다.  이렇게 하려면 파일 속성의 **보안** 탭을 사용한 다음 **고급**을 클릭합니다. **소유자** 값은 파일 **이름** 바로 뒤에 표시됩니다. 또한 파일 서버가 동일한 도메인 또는 트러스트된 도메인에 있어 Active Directory Domain Services에서 사용자의 메일 주소를 조회할 수 있는지 확인합니다.
     > -   보고서에는 파일 수는 올바르게 표시되는데 파일이 보호되지 않는 경우 [Protect-RMSFile](/powershell/azureinformationprotection/vlatest/protect-rmsfile) cmdlet을 사용하여 파일을 수동으로 보호한 다음 오류가 표시되는지 확인합니다.
 
 이러한 작업이 성공적으로 실행되었음을 확인한 경우 파일 리소스 관리자를 닫아도 됩니다. 새 파일이 자동으로 보호되고 일정이 실행될 때 모든 파일이 다시 보호됩니다. 파일을 다시 보호하는 경우 템플릿의 모든 변경 사항이 파일에 적용되었는지 확인합니다.

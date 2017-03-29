@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3cc1cf7f35c8cf66423c00332691c2291a8b6106
-ms.sourcegitcommit: 02e860196efca306ef9d1e61c1d89c4d8593c912
+ms.openlocfilehash: ffa336d352c60f36269cfb23236133bf1ca50d9f
+ms.sourcegitcommit: 9f542a5599ca6332b4b69ebbbbfb9ffdf5464731
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
@@ -35,7 +35,9 @@ Azure Information Protection 클라이언트에는 다음이 포함됩니다.
 
 - Azure RMS(Azure Rights Management) 또는 AD RMS(Active Directory Rights Management Services)와 통신하는 Rights Management 클라이언트
 
-Azure Information Protection 클라이언트는 해당 Azure 서비스인 Azure Information Protection와 해당 데이터 보호 서비스인 Azure Rights Management에서 가장 잘 작동됩니다. 몇 가지 제한 사항이 있으나 Azure Information Protection 클라이언트는 온-프레미스 버전의 Rights Management인 AD RMS에도 잘 작동합니다. Azure Information Protection 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure Information Protection과 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요. AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
+Azure Information Protection 클라이언트는 해당 Azure 서비스인 Azure Information Protection와 해당 데이터 보호 서비스인 Azure Rights Management에서 가장 잘 작동됩니다. 몇 가지 제한 사항이 있으나 Azure Information Protection 클라이언트는 온-프레미스 버전의 Rights Management인 AD RMS에도 잘 작동합니다. Azure Information Protection 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure Information Protection과 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요. 
+
+AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
 **이 설명서에서 답변되지 않은 질문이 있나요?** [Azure Information Protection Yammer 사이트](https://www.yammer.com/AskIPTeam)를 방문하세요. 
 
@@ -62,13 +64,13 @@ Azure Information Protection 클라이언트는 해당 Azure 서비스인 Azure 
 
 Office 응용 프로그램의 Azure Information Protection 클라이언트 추가 기능, 조직에 대한 분류 레이블 및 리본의 새 **보호** 단추를 보여 주는 예제:
 
-![기본 정책이 적용된 Azure Information Protection 표시줄](../media/info-protect-bar-default.png)
+![기본 정책이 적용된 Azure Information Protection 표시줄](../media/word2016-calloutsv2.png)
 
 ## <a name="how-to-install-the-azure-information-protection-client-for-users"></a>사용자를 위해 Azure Information Protection 클라이언트를 설치하는 방법
 
 클라이언트를 설치하기 전에 Information Protection 클라이언트에 필요한 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다([Azure Information Protection에 대한 요구 사항](../get-started/requirements-azure-rms.md)). 
 
-이 밖에도 다음 지침을 따릅니다.
+Azure Information Protection 클라이언트에 대한 추가 필수 조건:
 
 - 기본적으로 Azure Information Protection 클라이언트를 전체 설치하려면 최소한 Microsoft .NET Framework 4.6.2 버전이 필요하며, 이 프로그램이 없으면 설치 관리자는 이 필수 구성 요소를 다운로드한 후 설치하려고 합니다. 이 필수 구성 요소가 클라이언트 설치의 일부로 설치된 경우 컴퓨터를 다시 시작해야 합니다. 권장 되지는 않지만 사용자 지정 설치 매개 변수를 사용하면 이 필수 조건을 무시할 수 있습니다.
 

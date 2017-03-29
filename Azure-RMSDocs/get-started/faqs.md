@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c15d4ea3309bc58cb3b2c34481f3c4588e2f2433
-ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
+ms.openlocfilehash: 987936c79325c33a8c553dea1a6594933df5f7d8
+ms.sourcegitcommit: d959f0a9ba347a5dde77aac45a5d9f88d7cfdfb2
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
@@ -61,9 +61,7 @@ Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동�
 
 기술 지원에 대해서는 표준 지원 채널을 사용하거나 [Microsoft 지원에 문의](information-support.md#to-contact-microsoft-support)하세요.
 
-향상된 기능 및 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **Send feedback**(의견 보내기)을 클릭합니다. 그러면 Information Protection 팀에 메일이 전송되고 자동으로 PC에서 로그 파일이 첨부됩니다. 
-
-또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
+향상된 기능 또는 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **피드백 보내기**를 클릭합니다. 그러면 Information Protection 팀으로 보낼 메일 메시지가 열립니다. 또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
 
 ## <a name="what-do-i-do-if-my-question-isnt-here"></a>내 문의 내용이 여기 없다면 어떻게 하나요?
 

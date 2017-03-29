@@ -4,14 +4,14 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: fb1334a2ee345125db6e2637a59a5ab1a69e62d8
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 56ecd7b99f81a3b2399e166c1ca6a50797e65fa3
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>4단계: 실제 분류, 레이블 지정 및 보호 작동 방식 확인 
@@ -24,21 +24,21 @@ translationtype: HT
 
 ## <a name="to-manually-change-our-default-label"></a>수동으로 기본 레이블을 변경하려면
 
-Information Protection 표시줄에서 **비밀** 레이블을 선택하면 하위 레이블이 표시되는 방식이 나타납니다.
+Information Protection 표시줄에서 마지막 레이블을 선택하면 하위 레이블이 표시되는 방식이 나타납니다.
 
-![Azure Information Protection 빠른 시작 자습서 4단계 - 하위 레이블 선택](../media/info-protect-sub-labels.png)
+![Azure Information Protection 빠른 시작 자습서 4단계 - 하위 레이블 선택](../media/info-protect-sub-labelsv2.png)
 
-**모든 회사**를 선택하면 이 문서에 대한 레이블을 선택했으므로 표시줄에 다른 레이블이 더 이상 표시되지 않는 것을 볼 수 있습니다. **민감도** 값이 **비밀 \ 모든 회사**로 변경되고 레이블 색도 그에 맞게 변경됩니다.
+이러한 하위 레이블 중 하나를 선택하면 이 문서에 대한 레이블을 선택했으므로 표시줄에서 다른 레이블이 표시되는 방식을 더 이상 볼 수 없습니다. **민감도** 값이 레이블 및 하위 레이블 이름을 표시하도록 변경되며 레이블 색도 그에 맞게 변경됩니다. 예를 들면 다음과 같습니다.
 
-![Azure Information Protection 빠른 시작 자습서 4단계 - 하위 레이블이 선택됨](../media/info-protect-sub-label-selected.png)
+![Azure Information Protection 빠른 시작 자습서 4단계 - 하위 레이블이 선택됨](../media/info-protect-sub-label-selectedv2.png)
 
-Information Protection 표시줄에서 **비밀 \ 모든 회사** 옆에 있는 **레이블 편집** 아이콘을 클릭합니다.
+Information Protection 표시줄에서 현재 선택된 레이블 값 옆에 있는 **레이블 편집** 아이콘을 클릭합니다.
 
-![Azure Information Protection 빠른 시작 자습서 4단계 - 레이블 편집 아이콘](../media/info-protect-edit-label-selected.png)
+![Azure Information Protection 빠른 시작 자습서 4단계 - 레이블 편집 아이콘](../media/info-protect-edit-label-selectedv2.png)
 
 사용 가능한 레이블이 다시 표시됩니다.
 
-이제 **개인** 레이블을 선택합니다. 이 문서에 대해 이전에 선택한 레이블보다 낮은 분류 수준에 있는 레이블을 선택했으므로 분류 수준을 낮춘 이유를 제시하라는 메시지가 표시됩니다.
+이제 첫 번째 레이블 **개인**을 선택합니다. 이 문서에 대해 이전에 선택한 레이블보다 낮은 분류 수준에 있는 레이블을 선택했으므로 분류 수준을 낮춘 이유를 제시하라는 메시지가 표시됩니다.
 
 ![Azure Information Protection 빠른 시작 자습서 4단계 - 낮추는 이유를 확인하는 메시지가 표시됨](../media/info-protect-lower-justification.png)
 
@@ -48,13 +48,13 @@ Information Protection 표시줄에서 **비밀 \ 모든 회사** 옆에 있는 
 
 Information Protection 표시줄에서 **레이블 편집** 아이콘을 다시 클릭합니다. 그러나 레이블 중 하나를 선택하는 대신 **레이블 삭제** 아이콘을 클릭합니다.
 
-![Azure Information Protection 빠른 시작 자습서 4단계 - 삭제 아이콘](../media/delete-icon-from-personal.png)
+![Azure Information Protection 빠른 시작 자습서 4단계 - 삭제 아이콘](../media/delete-icon-from-personalv2.png)
 
 이번에는 확인 메시지가 표시되면 "이 문서는 분류할 필요가 없습니다."를 입력하고 **확인**을 클릭합니다.  
 
 **Sensitivity**(민감도) 값에 **Not set**(설정 안 함)이 표시되며, 이는 기본 레이블을 설정하지 않은 경우 사용자에게 처음에 표시되는 내용입니다.
 
-![Azure Information Protection 빠른 시작 자습서 4단계 - 분류 제거](../media/sensitivity-not-set.png)
+![Azure Information Protection 빠른 시작 자습서 4단계 - 분류 제거](../media/sensitivity-not-setv2.png)
 
 
 ## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>레이블 지정 및 자동 보호에 대한 권장 메시지를 확인하려면
@@ -63,11 +63,11 @@ Information Protection 표시줄에서 **레이블 편집** 아이콘을 다시 
 
 2. 문서를 저장합니다(원하는 파일 이름, 원하는 위치 사용). 
 
-3. 이제 **It is recommended to label this file as Confidential**(이 파일을 기밀로 레이블을 지정하는 것이 좋습니다.) 메시지가 표시됩니다. **Change now**(지금 변경)를 클릭합니다.
+3. 이제 신용 카드 번호가 감지될 경우 보호를 위해 구성한 레이블을 적용하기 위한 프롬프트가 표시됩니다. 권장 사항에 동의하지 않은 경우 정책 설정에서는 **해제**를 선택하여 거부할 수 있게 합니다. 권장 사항을 제공하되, 사용자가 권장 사항을 재정의할 수 있게 하면 자동 분류 사용 시 가양성을 줄이는 데 도움이 됩니다. 이 자습서에서는 **지금 변경**을 클릭합니다.
 
-    ![Azure Information Protection 빠른 시작 자습서 4단계 - 권장 메시지](../media/change-now.png)
+    ![Azure Information Protection 빠른 시작 자습서 4단계 - 권장 메시지](../media/change-nowv2.png)
 
-    기밀로 설정하는 레이블이 있는 문서 외에도 즉시 **Sensitivity: Confidential**(민감도: 기밀) 바닥글과, 페이지에 걸쳐 조직 이름의 워터마크가 적용되는 것을 볼 수 있습니다. 
+    이제 문서에서 구성된 레이블이 적용(예: **기밀 \ 모든 직원**)된 것을 볼 수 있을 뿐만 아니라 페이지에 걸쳐 조직 이름의 워터마크를 즉시 볼 수 있으며 **기밀로 분류됨** 바닥글도 적용된 것을 볼 수 있습니다. 
 
     문서는 지정한 Azure 권한 관리 템플릿으로도 보호되며, 이는 **파일** 탭을 클릭하고 **문서 보호**에 대한 정보를 보고 확인할 수 있습니다. 기본 기밀 템플릿을 사용한 경우 문서는 내부 사용자로 제한되고(조직 외부의 사용자는 문서를 열 수 없음) 해당 내용을 복사하거나 인쇄할 수 없다는 정보가 표시됩니다. 문서의 소유자는 문서에서 복사하고 문서를 인쇄할 수 있지만, 조직의 다른 사용자에게 문서를 메일로 보내는 경우 해당 사용자는 이러한 작업을 수행할 수 없습니다.
 

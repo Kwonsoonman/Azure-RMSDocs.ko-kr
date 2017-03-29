@@ -10,8 +10,8 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: e800818f87ab5b0b39ffdc244f871c04305039ae
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 4111fbaf678509cfb5b961f19dcc4b62f77c7a4a
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
 translationtype: HT
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법
@@ -29,7 +29,7 @@ Azure Information Protection 정책에서 구성하여 사용자의 Information 
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. 모든 사용자에게 적용되도록 글로벌 정책의 레이블을 변경하려면 **정책:글로벌** 블레이드에서 변경할 레이블을 선택하고 **레이블** 블레이드를 변경한 다음 필요에 따라 이후 블레이드를 변경합니다.  선택한 사용자에게 적용되도록 [범위 지정 정책](configure-policy-scope.md)의 레이블을 변경하려면 초기 **Azure Information Protection** 블레이드에서 해당 정책을 먼저 선택합니다.
+2. 모든 사용자에게 적용되도록 글로벌 정책의 레이블을 변경하려면 **정책: 글로벌** 블레이드에서 변경할 레이블을 선택하고 **레이블** 블레이드에서 변경한 다음 필요에 따라 이후 블레이드를 변경합니다. 선택한 사용자에게 적용되도록 [범위 지정 정책](configure-policy-scope.md)의 레이블을 변경하려면 초기 **Azure Information Protection** 블레이드에서 해당 정책을 먼저 선택합니다.
 
     단, 글로벌 정책 또는 선택한 범위 지정 정책의 정책 블레이드에서 레이블의 순서를 변경하려면 해당 레이블을 마우스 오른쪽 단추로 클릭하거나 레이블에 대한 상황에 맞는 메뉴를 선택한 다음 **위로 이동** 또는 **아래로 이동** 옵션을 선택합니다.
 

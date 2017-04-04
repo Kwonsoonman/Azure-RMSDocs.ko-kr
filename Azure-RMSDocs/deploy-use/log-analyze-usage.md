@@ -4,7 +4,7 @@ description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f179d9b4a9b883e6a7cff15ce3f8e713508b0bd3
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: fd4fa09da3bffe9abdec5754185659393fdbf531
+ms.sourcegitcommit: 96410e06941ec414032d72cf96491884dc11aba0
 translationtype: HT
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
@@ -115,7 +115,7 @@ Azure 권한 관리 작업 이후 저장소 계정에 로그가 표시될 때까
 ### <a name="the-log-sequence"></a>로그 순서
 Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니다. 
 
-로그의 각 항목에 UTC 타임스탬프가 있습니다. Azure Rights Management 서비스가 여러 데이터 센터의 여러 서버에서 실행되므로 로그가 타임스탬프순으로 정렬되었어도 순서가 올바르지 않은 것처럼 보일 수 있습니다. 그러나 시간 차이는 크지 않으며 보통&1;분 이내입니다. 대부분의 경우에는 이러한 시간 차이로 인해 로그 분석 시 문제가 발생하지 않습니다.
+로그의 각 항목에 UTC 타임스탬프가 있습니다. Azure Rights Management 서비스가 여러 데이터 센터의 여러 서버에서 실행되므로 로그가 타임스탬프순으로 정렬되었어도 순서가 올바르지 않은 것처럼 보일 수 있습니다. 그러나 시간 차이는 크지 않으며 보통 1분 이내입니다. 대부분의 경우에는 이러한 시간 차이로 인해 로그 분석 시 문제가 발생하지 않습니다.
 
 ### <a name="the-blob-format"></a>Blob 형식
 각 Blob은 W3C 확장 로그 형식으로 되어 있으며 다음의 두 줄로 시작됩니다.
@@ -145,7 +145,7 @@ Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니
 |owner-email|문자열|문서 소유자의 전자 메일 주소입니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|alice@contoso.com|
 |issuer|문자열|문서 발급자의 전자 메일 주소입니다. <br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|alice@contoso.com (또는) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |template-id|문자열|문서를 보호하는 데 사용된 템플릿의 ID입니다. <br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|문자열|보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|TopSecretDocument.docx|
+|file-name|문자열|Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램을 사용하여 추적되는 보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|TopSecretDocument.docx|
 |date-published|날짜|문서를 보호한 날짜입니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|2015-10-15T21:37:00|
 |c-info|문자열|요청을 수행하는 클라이언트 플랫폼에 대한 정보입니다.<br /><br />구체적인 문자열은 운영 체제, 브라우저 등의 응용 프로그램에 따라 다릅니다.|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|주소|요청을 수행하는 클라이언트의 IP 주소입니다.|64.51.202.144|

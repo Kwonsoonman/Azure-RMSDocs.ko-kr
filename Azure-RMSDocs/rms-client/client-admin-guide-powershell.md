@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13bed15fa5fff020d77a4362e38903c5ca55d2ce
-ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+ms.openlocfilehash: 90b26239979b42eadb008b11a963e35a74698910
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
 translationtype: HT
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
@@ -132,9 +132,7 @@ Azure RMS Windows PowerShell 모듈에서 Get-AadrmConfiguration cmdlet을 실�
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>AppPrincipalId 및 대칭 키를 가져오려면
 
-Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServicePrincipal` cmdlet을 실행하거나 최신 Azure Active Directory 버전 2 PowerShell 모듈에서 `New-AzureADServicePrincipal`을 실행하여 새 서비스 사용자를 만듭니다. 
-
-이어지는 지침은 Azure Active Directory에 대한 MSOnline PowerShell 모듈의 New-MsolServicePrincipal에 대한 것입니다.
+Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServicePrincipal` cmdlet을 실행하여 새 서비스 주체를 만듭니다. 
 
 1. 이 모듈이 컴퓨터에 설치되지 않은 경우 [Azure AD 모듈 설치](/powershell/azuread/#install-the-azure-ad-module)를 참조하세요.
 
@@ -208,7 +206,7 @@ Azure North America 지역 외에서 인증을 받으려면 레지스트리를 �
 
 3. **ServiceLocation** 키가 표시되지 않으면 만듭니다. 그러면 레지스트리 경로에 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation**이 표시됩니다.
 
-4. **ServiceLocation** 키가 없으면 **EnterpriseCertification** 및 **EnterprisePublishing** 이름의 키&2;개를 만듭니다. 
+4. **ServiceLocation** 키가 없으면 **EnterpriseCertification** 및 **EnterprisePublishing** 이름의 키 2개를 만듭니다. 
     
     이러한 REG_SZ 키를 만들 때 "(기본값)"인 Name을 변경하지 말고, 편집하여 값 데이터를 설정합니다.
 
@@ -331,7 +329,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 이러한 cmdlet에 대한 일반적인 시나리오는 권한 정책 템플릿을 사용하여 폴더의 모든 파일을 보호하거나 파일 보호를 해제하는 것입니다. 
 
-먼저, AD RMS 배포가&2;개 이상 있는 경우 AD RMS 서버의 이름이 필요합니다. 따라서 Get-RMSServer cmdlet을 사용하여 사용 가능한 서버 목록을 표시합니다.
+먼저, AD RMS 배포가 2개 이상 있는 경우 AD RMS 서버의 이름이 필요합니다. 따라서 Get-RMSServer cmdlet을 사용하여 사용 가능한 서버 목록을 표시합니다.
 
     Get-RMSServer
 

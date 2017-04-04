@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 03/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ffa336d352c60f36269cfb23236133bf1ca50d9f
-ms.sourcegitcommit: 9f542a5599ca6332b4b69ebbbbfb9ffdf5464731
+ms.openlocfilehash: 63843acfe9f7b4ded77ccbdcaaab8cb98598dd9f
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
@@ -190,20 +190,64 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 - 다음 레지스트리 키 및 설정은 삭제됩니다. **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. 이 레지스트리 키에 대한 설정을 구성하는 경우(예: AD RMS에서 마이그레이션하는데 네트워크에 서비스 연결 지점이 계속 있기 때문에 Azure Information Protection 테넌트로 리디렉션에 대한 설정) 클라이언트를 다시 설정한 후 레지스트리 설정을 다시 구성해야 합니다.
 
-- 클라이언트를 다시 설정한 후 사용자 환경("부트스트랩"이라고도 함)을 다시 초기화해야 합니다. 그러면 클라이언트 및 최신 템플릿에 대한 인증서가 다운로드됩니다. 이렇게 하려면 Office의 모든 인스턴스를 닫은 다음 Office 응용 프로그램을 다시 시작합니다. 그러면 최신 Azure Information Protection 정책을 다운로드했는지도 확인됩니다. 이 작업을 완료할 때까지 진단 테스트를 다시 실행하지 마세요.
+- 클라이언트를 다시 설정한 후 사용자 환경을 다시 초기화해야 합니다. 그러면 클라이언트 및 최신 템플릿에 대한 인증서가 다운로드됩니다. 이렇게 하려면 Office의 모든 인스턴스를 닫은 다음 Office 응용 프로그램을 다시 시작합니다. 그러면 최신 Azure Information Protection 정책을 다운로드했는지도 확인됩니다. 이 작업을 완료할 때까지 진단 테스트를 다시 실행하지 마세요.
 
 
 ### <a name="client-status-section"></a>**클라이언트 상태** 섹션
 
 **다음으로 연결** 값을 사용하여 표시된 사용자 이름이 Azure Information Protection 인증에 사용할 계정을 나타내는지 확인합니다. 이 사용자 이름은 Office 365 또는 Azure Active Directory에 사용되며 Azure Information Protection이 구성된 테넌트에 속한 계정과 일치해야 합니다.
 
-표시된 것과 다른 사용자로 로그인해야 하는 경우는 [다른 사용자로 로그인하려면 어떻게 하나요?](../get-started/faqs-infoprotect.md#how-do-i-sign-in-as-a-different-user)를 참조하세요.
+표시된 것과 다른 사용자로 로그인해야 하는 경우 이 페이지의 [다른 사용자로 로그인](#sign-in-as-a-different-user) 섹션을 참조하세요.
 
 **마지막 연결**은 클라이언트가 조직의 Azure Information Protection 서비스에 마지막으로 연결된 시기를 표시하며 **Information Protection 정책 설치** 날짜 및 시간과 함께 사용하여 Azure Information Protection 정책이 마지막으로 설치 또는 업데이트된 시기를 확인하는 데 사용할 수 있습니다. 클라이언트는 서비스에 연결할 때 현재 정책에서 변경된 사항이 발견될 경우, 그리고 24시간마다 최신 정책을 자동으로 다운로드합니다. 표시된 시간 이후에 정책을 변경한 경우 Office 응용 프로그램을 닫았다가 다시 엽니다.
 
 **This client is not licensed for Office Professional Plus**(Office Professional Plus 대상 클라이언트가 아님)이 표시될 경우: Azure Information Protection 클라이언트에서 설치된 버전의 Office가 Rights Management 보호의 적용을 지원하지 않는 것을 감지했습니다. 이 상태가 감지되면 보호를 적용하는 레이블이 Azure Information Protection 막대에 표시되지 않습니다.
 
 **버전** 정보를 사용하여 설치된 클라이언트 버전을 확인합니다. **새로운 기능** 링크를 클릭하고 클라이언트의 [버전 릴리스 기록](client-version-release-history.md)을 읽으면 이 버전이 최신 릴리스 버전인지 여부와 해당 수정 사항 및 새로운 기능을 확인할 수 있습니다.
+
+## <a name="custom-configurations"></a>사용자 지정 구성
+
+특정 시나리오 또는 사용자의 하위 집합에 대해 필요할 수 있는 고급 구성의 경우 다음 정보를 사용합니다. 
+
+### <a name="sign-in-as-a-different-user"></a>다른 사용자로 로그인
+
+프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 여러 테넌트가 있는 경우에는 관리자로서 그렇게 해야 할 수 있습니다. 예를 들어 조직에서 사용하는 Office 365 또는 Azure 테넌트 외에 테스트 테넌트가 있을 수 있습니다.
+
+**Microsoft Azure Information Protection** 대화 상자를 사용하여 현재 로그인한 계정을 확인할 수 있습니다. Office 응용 프로그램을 열고 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 의견**을 클릭합니다. 계정 이름은 **클라이언트 상태** 섹션에 표시됩니다.
+
+특히 관리자 계정을 사용하고 있는 경우 표시된 로그인 계정의 도메인 이름을 확인해야 합니다. 예를 들어 두 개의 다른 테넌트에 "admin" 계정이 있는 경우 로그인한 계정 이름은 올바르지만 도메인은 잘못되었음을 모르기 쉽습니다. 이로 인해 Azure Information Protection 정책을 다운로드하지 못하거나 예상한 레이블 또는 동작이 표시되지 않을 수 있습니다.
+
+다른 사용자로 로그인하려면 다음과 같이 합니다.
+
+1. 레지스트리 편집기를 사용하여 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**로 이동하고 **TokenCache** 값과 연결된 값 데이터를 삭제합니다.
+
+2. 열려 있는 Office 응용 프로그램을 다시 시작하고 다른 사용자 계정으로 로그인합니다. Office 응용 프로그램에서 Azure Information Protection 서비스에 로그인하라는 메시지가 표시되지 않는 경우 **Microsoft Azure Information Protection** 대화 상자로 돌아와 업데이트된 **클라이언트 상태** 섹션에서 **로그인**을 클릭합니다.
+
+추가 필수 구성 요소:
+
+- Single Sign-On을 사용할 경우 Windows에서 로그아웃하고 레지스트리를 편집한 후 다른 사용자 계정으로 로그인해야 합니다. Azure Information Protection 클라이언트에서는 현재 로그인한 사용자 계정을 사용하여 자동으로 인증합니다.
+
+- Azure 권한 관리 서비스에 대한 환경을 다시 초기화(부트스트래핑이라고도 함)하려는 경우 [RMS 분석기 도구](https://www.microsoft.com/en-us/download/details.aspx?id=46437)의 **재설정** 옵션을 사용할 수 있습니다.
+
+- 현재 다운로드한 Azure Information Protection 정책을 삭제하려면 **%localappdata%\Microsoft\MSIP** 폴더에서 **Policy.msip** 파일을 삭제합니다.
+
+### <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
+
+Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하는 경우 레지스트리를 편집하여 이 고급 구성을 구성할 수 있습니다. 
+
+다음 DWORD 값 이름(모든 값 데이터 포함)을 만듭니다.
+
+**HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Microsoft.Azip.RightClick\LegacyDisable**
+
+### <a name="support-for-disconnected-computers"></a>연결이 끊어진 컴퓨터에 대한 지원
+
+기본적으로 Azure Information Protection 클라이언트는 자동으로 Azure Information Protection 서비스에 연결하여 최신Azure Information Protection 정책을 다운로드합니다. 일정 기간 동안 인터넷에 연결할 수 없는 컴퓨터를 사용하는 경우 레지스트리를 편집하여 클라이언트가 서비스에 연결하지 못하도록 할 수 있습니다. 
+
+다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+클라이언트의 **%localappdata%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 이름의 유효한 정책 파일이 있는지 확인합니다. 필요한 경우 Azure 포털에서 정책을 내보낼 수 있으며 클라이언트 컴퓨터에 내보내기된 파일을 복사할 수 있습니다. 또한 이러한 방법을 통해 오래된 정책 파일을 게시된 최신 정책으로 바꿀 수 있습니다.
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트를 제거하려면
 

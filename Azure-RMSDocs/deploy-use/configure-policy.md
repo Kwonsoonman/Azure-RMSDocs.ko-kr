@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b946dff4782d1b5571aa0438d1681030f0de092f
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: ec57bae71b11b6505ccb94fcdf692f215862191d
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
@@ -28,7 +28,7 @@ Azure Information Protection 정책을 구성하려면
 
 2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
 
-    그러면 **Azure Information Protection** 블레이드가 표시됩니다. 여기서 모든 사용자에게 적용되는 **전역** 정책을 열 수 있습니다. 또한 필요에 따라 범위가 지정된 정책을 추가하고 편집할 수 있습니다. **전역** Azure Information Protection 정책에는 구성할 수 있는 다음 요소가 포함됩니다.
+    **Azure Information Protection** 블레이드가 로드되면 모든 사용자가 받는 글로벌 정책을 보고 편집할 수 있는 **Policy: Global**(정책: 글로벌) 블레이드가 자동으로 열립니다. 그러나 필요에 따라 범위가 지정된 정책을 추가하고 편집할 수도 있습니다. Azure Information Protection 정책에는 구성할 수 있는 다음 요소가 포함됩니다.
 
     - 문서 및 전자 메일을 분류할 수 있는 레이블.
 

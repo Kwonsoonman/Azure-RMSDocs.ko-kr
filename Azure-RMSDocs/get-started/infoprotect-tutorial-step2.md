@@ -4,14 +4,14 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 7db581d07698edf50fda8379d622e35414ad3671
-ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+ms.openlocfilehash: 98e65768651c77b4cc0616142e6b7515d275b7a9
+ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
 translationtype: HT
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
@@ -29,9 +29,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     > [!TIP] 
     > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
 
-3.  Azure Information Protection 블레이드에서 **글로벌**을 클릭하고 **정책: 글로벌** 블레이드를 탐색합니다. 이 블레이드에는 테넌트에 대해 자동으로 만들어진 기본 Information Protection 정책이 표시됩니다.
-    
-    **정책: 글로벌** 블레이드에서 다음을 볼 수 있습니다.
+3.  테넌트에 대해 자동으로 만들어진 기본 Information Protection 정책을 자동으로 열고 표시하는 **Policy: Global**(정책: 글로벌) 블레이드를 탐색합니다.
     
     - 분류 레이블: **개인**, **공개**, **일반**, **기밀** 및 **극비**. 마지막 두 개의 레이블은 확장되어 하위 레이블 **모든 직원** 및 **모든 사람(보호되지 않음)**을 표시하여 분류가 하위 범주를 포함할 수 있는 방식의 예를 제공합니다.
     

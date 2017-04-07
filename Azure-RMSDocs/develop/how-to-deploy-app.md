@@ -14,14 +14,10 @@ ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: de843f475c86f27af63951a5e95986ff2a679e10
-ms.openlocfilehash: 4b0d2efbd8d48bb77f14662cd71ff4e05e35de19
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: 7f117cd95bb10cb3729211c73aa03ae589b2b03d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>다른 테넌트에 서비스 응용 프로그램 배포
 
 이 문서에서는 서비스 응용 프로그램을 배포하는 프로세스를 설명합니다. 이 시나리오에서는 응용 프로그램을 초기 개발 AD 테넌트에 등록하는 방식에서 다른 회사 프로덕션 AD 테넌트에 등록하는 방식으로 전환합니다.

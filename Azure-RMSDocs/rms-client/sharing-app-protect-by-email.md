@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 4110050a0e45fd75633bc27dd220f71855d50672
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: edc735c2a7f5b15f1e8795fed1b7fc7dffd80176
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 메일로 공유하는 파일 보호
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*

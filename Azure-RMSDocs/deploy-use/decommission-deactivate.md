@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b88d4587be0549ea7364c9745c218865480a8d18
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f577337cf7ce904a82ff23b165fdc7befe319092
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>Azure 권한 관리 서비스 해제 및 비활성화
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -57,22 +53,13 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 #### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>Office 365 관리 센터에서 권한 관리를 비활성화하려면
 
-1.  Office 365 배포의 관리자인[회사 또는 학교 계정을 사용하여 Office 365에 로그인](https://portal.office.com/) 합니다.
+1. Office 365 관리자를 위한 [Rights Management 페이지](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)로 이동합니다.
+    
+    로그인하라는 메시지가 나타나면 Office 365에 대한 전역 관리자 계정을 사용합니다.    
 
-2.  Office 365 관리 센터가 자동으로 표시되지 않으면 왼쪽 위에서 앱 시작 관리자 아이콘을 선택하고 **관리자**를 선택합니다. **관리자** 타일은 Office 365 관리자에게만 나타납니다.
+2. **Rights Management** 페이지에서 **비활성화**를 클릭합니다.
 
-    > [!TIP]
-    > 관리 센터 도움말은 [Office 365 관리 센터 정보 - 관리자 도움말](https://support.office.com/article/About-the-Office-365-admin-center-Admin-Help-58537702-d421-4d02-8141-e128e3703547)을 참조하세요.
-
-3.  왼쪽 창에서 **서비스 설정**을 확장합니다.
-
-4.  **권한 관리**를 클릭합니다.
-
-5.  **권한 관리** 페이지에서 **관리**를 클릭합니다.
-
-6.  **Rights Management** 페이지에서 **비활성화**를 클릭합니다.
-
-7.  **Rights Management를 비활성화하시겠습니까?**라는 메시지가 나타나면 **비활성화**를 클릭합니다.
+3.  **Rights Management를 비활성화하시겠습니까?**라는 메시지가 나타나면 **비활성화**를 클릭합니다.
 
 이제 **Rights Management가 활성화되지 않았습니다.** 가 표시되고 활성화 옵션이 나타납니다.
 
@@ -82,13 +69,12 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 2.  왼쪽 창에서 **ACTIVE DIRECTORY**를 클릭합니다.
 
-3.  **Active Directory** 페이지에서 **권한 관리**를 클릭합니다.
+3.  **Active Directory** 페이지에서 **Rights Management**를 클릭합니다.
 
-4.  [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]에 대해 관리할 디렉터리를 선택하고 **비활성화**를 클릭한 다음 작업을 확인합니다.
+4.  테넌트 이름이 선택되어 있는지 확인하고 **비활성화**를 클릭한 다음 작업을 확인합니다.
 
 이제 **Rights Management 상태** 가 **비활성** 으로 표시되고 **비활성화** 옵션이 **활성화**로 바뀝니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

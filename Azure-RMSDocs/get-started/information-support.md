@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/01/2017
+ms.date: 03/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: cb0a66071937ed5afdf1f86833bbc47bdb4ddd50
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 5e836d99c59cbd055b219aab6499a67fb62bd1a5
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+translationtype: HT
 ---
-
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -49,11 +45,11 @@ Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](htt
 
 프리미어 지원이 있는 경우는 [프리미어 지원 고객용 포털](https://premier.microsoft.com/)을 방문하여 사건을 제출하고, 해결 방법을 검색하고, 도움을 받습니다.
 
-**FastTrack** 자격: 적격 플랜을 통해 Azure Information Protection에 150개 이상의 라이선스를 구매하면 FastTrack 센터 혜택을 사용할 수 있습니다. FastTrack 센터 혜택을 사용하면 Microsoft 전문가와 협업하여 적격 서비스를 평가, 수정 및 활성화할 수 있습니다. 자세한 내용은 [Azure Rights Management용 FastTrack 센터 혜택](https://technet.microsoft.com/library/mt607025.aspx)을 참조하세요.
+**FastTrack** 자격: 적격 플랜을 통해 Azure Information Protection에 150개 이상의 라이선스를 구매하면 FastTrack 센터 혜택을 사용할 수 있습니다. FastTrack 센터 혜택을 사용하면 Microsoft 전문가와 협업하여 적격 서비스를 평가, 수정 및 활성화할 수 있습니다. 자세한 내용은 [Azure Rights Management용 FastTrack 센터 혜택](/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)을 참조하세요.
 
 다른 고객의 경우는 Azure Information Protection을 구한 방법에 따라 다음과 같은 지원 채널을 사용합니다.
 
-- **Azure Information Protection 프리미엄**: [Azure Portal에서 지원 요청](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)을 엽니다. 이 옵션을 사용하려면 Azure 구독과 지원 플랜이 있어야 합니다. 자세한 내용은 [고객에 대한 Azure 지원](https://azure.microsoft.com/support/plans/)을 참조하세요. 
+- **Azure Information Protection 프리미엄**: [Azure Portal에서 지원 요청](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)을 엽니다. 메시지가 표시되면 **기본 사항** 블레이드에서 **문제 유형**에 대해 **기술**을 선택하고 **구독** 옵션에 대해 **기술 지원이 포함된 구독**을 선택합니다.
 
 - **Office 365 구독을 통한 Azure Information Protection**: 전화 번호와 Office 365 관리 포털을 통한 지원 문의 방법은 [Office 365에 비즈니스 지원 문의 – 관리자 도움말](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 참조하세요. 
 
@@ -81,6 +77,8 @@ Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](htt
 
 - 온-프레미스 서버를 위한 Rights Management 커넥터를 배포한 경우에는 이벤트 로그 항목, 성능 카운터 및 로깅에 대한 세부 정보를 포함하는 [모니터링](../deploy-use/monitor-rms-connector.md) 정보를 참조하세요.
 
+- Windows용 Azure Information Protection 클라이언트의 경우: 관리자 가이드에서 [추가 검사 및 문제 해결](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting) 섹션을 참조하세요.
+
 - 자동화된 검사, 자동 수정 및 추적이 필요하면 [RMS 분석기 도구](http://www.microsoft.com/en-us/download/details.aspx?id=46437)를 다운로드하여 실행하세요. 이 도구에 대한 자세한 내용은 다운로드 페이지의 **세부 정보** 및 **설치 지침**을 참조하세요. 
 
 ### <a name="community-resources"></a>커뮤니티 리소스
@@ -92,4 +90,3 @@ Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](htt
 -   [포럼: 사용자용 RMS(응용 프로그램)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmsapps)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

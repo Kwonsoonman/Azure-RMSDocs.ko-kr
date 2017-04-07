@@ -2,7 +2,7 @@
 
 ![빠른 시작 자습서 모든 단계](../media/AzRMS_QuickStartStepsAll.PNG)
 
-이 자습서는 IT 관리자 및 컨설턴트를 대상으로 하며, 목표는 조직의 정보 보호 솔루션으로 Azure Rights Management를 평가하는 데 도움이 되는 것입니다. 프로덕션 환경에서는 서비스를 활성화하는 지침을 관리자가 수행하고 문서를 보내는 지침을 최종 사용자가 수행합니다. 기밀 문서를 다른 조직에 있는 사람에게 안전하게 보내는 종단 간 시나리오를 설명하기 위해, 이 자습서에는 두 가지 지침이 모두 포함되어 있습니다. 이 자습서를 완료하는 데 문제가 있는 경우에는 메일 메시지를 보내는 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial) 으로 메일 메시지를 보내면 도움을 받을 수 있습니다.
+이 자습서는 IT 관리자 및 컨설턴트를 대상으로 하며, 목표는 조직의 정보 보호 솔루션으로 Azure Rights Management를 평가하는 데 도움이 되는 것입니다. 프로덕션 환경에서는 서비스를 활성화하는 지침을 관리자가 수행하고 문서를 보내는 지침을 최종 사용자가 수행합니다. 기밀 문서를 다른 조직에 있는 사람에게 안전하게 보내는 종단 간 시나리오를 설명하기 위해, 이 자습서에는 두 가지 지침이 모두 포함되어 있습니다. 이 자습서를 완료하는 데 문제가 있는 경우에는 [AskIPTeam](mailto:askipteam@microsoft.com?subject=Having%20problems%20with%20the%20Quick%20Start%20tutorial)으로 메일 메시지를 보내면 도움을 받을 수 있습니다.
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
@@ -15,8 +15,3 @@
 -   Windows(Windows 7 SP1 이상)를 실행하며 Office 2016, Office 2013 또는 Office 2010이 설치된 컴퓨터.
 
 이제 시작하겠습니다.
-
-
-<!--HONumber=Jul16_HO3-->
-
-

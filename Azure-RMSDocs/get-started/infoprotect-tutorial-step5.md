@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,15 +13,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 611b65589bdd8aa495fbfbd4a67c30a5fb9c387a
-ms.openlocfilehash: ea34b900855d43cb1458438b1d15a16fd7cf01bf
-ms.lasthandoff: 03/01/2017
-
-
+ms.openlocfilehash: 2b59cbd99430b5474280acc02b1a2c4a2738c793
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
-
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
 
 >*적용 대상: Azure Information Protection*
@@ -62,7 +57,7 @@ ms.lasthandoff: 03/01/2017
 
     **Microsoft Azure Information Protection로 이 파일을 보호했습니다. 처음 사용할 경우 https://aka.ms/rms-signup의 지침을 참조하세요.** 
 
-    ![Azure Information Protection 빠른 시작 자습서 5단계 - 전자 메일로 보호된 문서 공유](../media/share-protected-email.png)
+    ![Azure Information Protection 빠른 시작 자습서 5단계 - 전자 메일로 보호된 문서 공유](../media/share-protected-emailv2.png)
 
     **보내기**를 클릭합니다.
 
@@ -96,7 +91,7 @@ ms.lasthandoff: 03/01/2017
 
 2.  **홈** 탭에서 **보호** > **추적 및 해지**를 클릭합니다.
 
-    ![추적 사용 옵션](../media/track-usage-callout.png)
+    ![추적 사용 옵션](../media/track-usage-calloutv2.png)
 
     이렇게 하면 문서 추적 사이트가 열립니다.
 

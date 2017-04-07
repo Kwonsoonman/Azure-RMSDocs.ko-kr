@@ -14,13 +14,10 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 65ac5120e58ea6a212c09f7c2dd278356d0778b1
-
-
+ms.openlocfilehash: a4306d69fd08f4839c0b02fd3e0a2acbbbc28721
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="testing-your-application"></a>응용 프로그램 테스트
 
 이 항목에서는 응용 프로그램 테스트를 위해 설치하는 방법에 대한 지침을 제공합니다.
@@ -53,8 +50,3 @@ Windows Server에서 실행 중인 Azure RMS 또는 RMS 서버에서 테스트�
 * [RMS Client 2.1 배포 참고 사항](https://technet.microsoft.com/en-us/library/jj159267(WS.10).aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

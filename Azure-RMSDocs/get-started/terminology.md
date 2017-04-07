@@ -4,7 +4,7 @@ description: "Microsoft Azure Information Protection과 관련된 단어, 구 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/08/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a5cfa773d440e92fe9d3e88e242dfb25f7174400
-
-
+ms.openlocfilehash: 5fecc61fb77625047a5ebedad4ff906fe8c27bbe
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="terminology-for-azure-information-protection"></a>Azure Information Protection에 사용되는 용어
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -64,15 +61,10 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 |RMS 커넥터|*Rights Management 커넥터*를 참조하세요.|
 |개인용 RMS|조직이 Office 365 또는 Azure Active Directory 구독을 보유하고 있지 않은 경우 사용자가 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 사용할 수 있도록 하는 무료 구독입니다.|
 |RMS 공유 앱|*Rights Management 공유 응용 프로그램*을 참조하세요.|
+|보호 전용 모드|레이블을 적용할 Azure Information Protection 정책이 없는 경우 Azure Information Protection 클라이언트에 대한 작동 모드입니다. 이 모드에서는 분류 레이블이 표시되지 않지만 사용자가 Rights Management 보호를 계속 적용할 수 있습니다.|
 |슈퍼 사용자|조직에서 권한 관리 서비스로 보호하는 파일을 암호 해독하고 이러한 파일에 액세스할 수 있는 고도로 신뢰할 수 있는 관리자 그룹입니다. 일반적으로 이 액세스 수준은 법적 eDiscovery 및 감사 팀에 필요합니다.|
 |테넌트 키|SLC(서버 사용 허가자 인증서) 키라고도 합니다.<br /><br />이 키는 조직에 대해 고유하며, 최종적으로 이 테넌트 키에 체이닝되는 모든 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 암호화 기능을 보호합니다.|
 |보호 해제|데이터 보호를 위해 암호화, ID, 액세스 제어 정책 등이 사용된 파일이나 전자 메일 메시지에서 권한 관리 제어를 제거합니다.|
 |사용 라이선스 |권한 관리 서비스로 보호되는 파일 및 메일 메시지를 여는 사용자에게 부여되는 문서별 인증서입니다. 이 인증서에는 문서의 정책에 정의된 추가적인 액세스 제한 사항뿐만 아니라 파일 또는 메일 메시지에 대한 사용자의 권한과 콘텐츠를 암호화하는 데 사용된 암호화 키도 들어 있습니다.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-
-<!--HONumber=Feb17_HO4-->
-
-

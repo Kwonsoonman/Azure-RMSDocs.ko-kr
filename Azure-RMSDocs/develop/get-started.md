@@ -14,13 +14,10 @@ ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 4dd09720f55f07c08350cdeb79a0c9ec3aaede9e
-
-
+ms.openlocfilehash: 18c9f1f694601aea105eb5a7d97deb0da7f15730
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="get-started"></a>시작
 
 이 릴리스의 Microsoft Rights Management SDK 4.2에서 첫 번째 응용 프로그램에 빠른 시작 접근 방식은 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 사용합니다. 먼저 다음을 수행하여 권한 사용 응용 프로그램을 만듭니다.
@@ -56,8 +53,3 @@ ms.openlocfilehash: 4dd09720f55f07c08350cdeb79a0c9ec3aaede9e
   |[커뮤니티 리소스](community-resources.md)|여러 플랫폼에서 Active Directory Rights Management Services를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

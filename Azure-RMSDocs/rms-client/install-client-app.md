@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호할 수 있도록 Wi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 92ad7198aad17664062b8d007fa95524fe535443
-ms.openlocfilehash: d4820070aff013b42ee49f4c7b81e78ffbc7a049
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: f47cad9d613517413ab5f3a61d24a4c8b9f79e15
+ms.sourcegitcommit: cbdbabd626fa5b91c418d84cd6228c9ca94a2525
+translationtype: HT
 ---
-
 # <a name="download-and-install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 다운로드 및 설치
 
 관리자가 Azure Information Protection 클라이언트를 설치하지 않는 경우 직접 설치할 수 있습니다. 이 클라이언트를 설치하여 문서 및 전자 메일에 레이블을 지정하고 보호하려면 PC의 로컬 관리자여야 합니다.
@@ -28,7 +24,7 @@ ms.lasthandoff: 02/24/2017
 
 - Azure Information Protection 클라이언트에는 최소한 Microsoft .NET Framework 4.6.2 버전이 필요하며, 이 프로그램이 없으면 설치 관리자는 이 필수 구성 요소를 다운로드한 후 설치하려고 합니다. 이 필수 구성 요소가 클라이언트 설치의 일부로 설치된 경우 컴퓨터를 다시 시작해야 합니다.
 
-- Windows 7 SP1이 설치되어 있는 경우 Azure Information Protection 클라이언트를 사용하려면 특정 업데이트([KB 2533623](https://support.microsoft.com/kb/2533623))가 필요합니다. 사용 중인 PC에 이 업데이트가 필요한데 설치되어 있지 않은 경우, 설치는 완료되지만 Azure Information Protection 클라이언트의 모든 기능을 사용하려면 이 업데이트를 설치해야 한다는 메시지가 표시됩니다. 
+- Windows 7 SP1이 설치되어 있는 경우 Azure Information Protection 클라이언트를 사용하려면 특정 업데이트(KB 2533623)가 필요합니다. 사용 중인 PC에 이 업데이트가 필요한데 설치되어 있지 않은 경우, 설치는 완료되지만 Azure Information Protection 클라이언트에 이 업데이트가 필요하다는 메시지가 표시됩니다. 이 업데이트를 설치하지 않으면 Azure Information Protection 클라이언트의 모든 기능을 사용할 수 없습니다. 
 
 ## <a name="to-download-and-install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트를 다운로드 및 설치하려면    
 
@@ -73,4 +69,3 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  
-

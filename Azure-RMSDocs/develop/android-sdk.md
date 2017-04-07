@@ -14,13 +14,10 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 617bb94af65c3e475bf40c51021d20b9755defb8
-
-
+ms.openlocfilehash: 3225e143bc80fa35c3e4b96317cdd264f63ac098
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="android-setup"></a>Android 설정
 
 Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
@@ -88,7 +85,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
     ![정책의 이름 제공](../media/Android-setup-05a.jpg)
 
--    **마침**을 클릭합니다.
+-   **마침**을 클릭합니다.
 
     ![만들기 완료](../media/Android-setup-06.jpg)
 
@@ -103,7 +100,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
     ![작업 영역으로 가져오기](../media/Android-setup-07.png)
 
--    **다음**을 클릭합니다. *adrms\_android\_sdk.zip*을 추출한 폴더로 이동하여 선택합니다. SDK가 목록에 **com.microsoft.rightsmanagement**로 표시되어야 합니다.
+-   **다음**을 클릭합니다. *adrms\_android\_sdk.zip*을 추출한 폴더로 이동하여 선택합니다. SDK가 목록에 **com.microsoft.rightsmanagement**로 표시되어야 합니다.
 
     ![폴더를 선택하도록 이동](../media/Android-setup-08c.jpg)
 
@@ -147,8 +144,3 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

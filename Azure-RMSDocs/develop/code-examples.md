@@ -14,13 +14,10 @@ ms.assetid: 634df601-79d2-4bc2-b845-4df886d7c589
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: c0236d42bd508641b658318a90bed31effed4daa
-
-
+ms.openlocfilehash: 1f6b8c75e7d9ef6d01226b5a1d2ece4de773a1d5
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="code-examples"></a>코드 예제
 
 Microsoft Rights Management SDK 4.2에는 지원되는 일부 운영 체제에 대한 예제 코드와 작업 프로젝트가 포함되어 있습니다.
@@ -39,8 +36,3 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 - [iOS/OS X 코드 예제](ios-os-x-code-examples.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

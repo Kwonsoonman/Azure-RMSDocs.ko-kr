@@ -4,7 +4,7 @@ description: "Rights Management 커넥터를 통해 Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 22beea6ab33d6f3fc0c36ff136dd1bc44714a997
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 37c354df794ca60271f7c04641a9de6009605179
+ms.sourcegitcommit: 047e6dfe8f44fd13585e902df5ea871b5d0adccb
+translationtype: HT
 ---
-
-
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -46,6 +41,8 @@ Azure Rights Management 커넥터를 사용할 때 Azure Information Protection�
     -   Office SharePoint Server 2010
 
 -   **Windows Server를 실행하고 FCI(파일 분류 인프라)를 사용하는 파일 서버**:
+
+    -   Windows Server 2016
 
     -   Windows Server 2012 R2
 

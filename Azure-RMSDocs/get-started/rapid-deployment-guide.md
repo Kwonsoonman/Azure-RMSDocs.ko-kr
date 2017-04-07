@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 2e50dc9d53550f35f5c589cdb1b384e0abf585e0
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: dd1ecd8bd232e3079ce92eab07288ede52d3de72
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rapid-deployment-guide-for-azure-rights-management"></a>Azure 권한 관리 빠른 배포 가이드
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -148,4 +144,3 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 구현 중인 솔루션은 중요한 데이터를 보호하는 데 도움이 되며 해당 데이터에 대한 제어를 유지하는 도구를 제공합니다. 이러한 변경을 구현하는 동안 협조해 주셔서 감사합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

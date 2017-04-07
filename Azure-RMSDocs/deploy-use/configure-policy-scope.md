@@ -4,7 +4,7 @@ description: "특정 사용자에 대해 다른 설정과 레이블을 구성하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: e2112ca081ed0520330355734bb0913e4a612c66
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 2fc0059f0cc2d7c1a0eb08d6f8ee89ea2bf4bfbd
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+translationtype: HT
 ---
-
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>범위 지정 정책을 사용하여 특정 사용자용 Azure Information Protection 정책을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
@@ -43,7 +39,7 @@ Azure Information Protection용 범위 지정 정책을 구성하려면 다음�
 
     초기 **Azure Information Protection** 블레이드에서 **새 정책 추가**를 선택합니다. 그러면 새로 고쳐진 글로벌 정책을 표시하는 데 사용되는 두 번째 블레이드가 나타나므로 이제 새 범위 지정 정책을 구성할 수 있습니다.
 
-3. Azure Portal에서 관리자에게만 표시되는 정책 이름과 설명을 지정합니다. 이름은 테넌트에서 고유해야 합니다. 그런 다음 **이 정책을 받을 사용자/그룹 지정**을 클릭하고 후속 블레이드에서 이 정책을 적용할 사용자와 그룹을 검색하여 선택할 수 있습니다. 이 범위 지정 정책에서 구성하는 레이블과 설정은 해당 사용자에게만 적용됩니다. 
+3. Azure Portal에서 관리자에게만 표시되는 정책 이름과 설명을 지정합니다. 이름은 테넌트에서 고유해야 합니다. 그런 다음 **이 정책을 받을 사용자/그룹 지정**을 클릭하고 후속 블레이드에서 이 정책을 적용할 사용자와 그룹을 검색하여 선택할 수 있습니다. 이 범위 지정 정책에서 구성하는 레이블과 설정은 해당 사용자에게만 적용됩니다.
 
 4. 이제 새 레이블을 만들거나 범위 지정 정책 설정을 구성합니다. 항상 글로벌 정책이 먼저 적용되므로 새로운 레이블로 글로벌 정책을 보완할 수 있으며 전역 설정을 재정의할 수 있습니다. 예를 들어 글로벌 정책에 기본 레이블이 지정되어 있지 않은 경우 특정 부서용의 다른 범위 지정 정책에서 다른 기본 레이블을 구성할 수 있습니다.
 
@@ -63,4 +59,3 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

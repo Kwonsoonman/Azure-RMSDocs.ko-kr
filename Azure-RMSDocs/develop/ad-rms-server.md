@@ -14,13 +14,10 @@ ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: e57b98e7ddbcdaef11f73d220eda42231c6c4141
-
-
+ms.openlocfilehash: fa703300c8e751835ec62fdceb49d84c6b57548f
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="server"></a>서버
 
 이 항목에서는 Azure 및 Windows Server용 RMS 서버의 용도와 기능에 대해 설명합니다.
@@ -54,8 +51,3 @@ ms.openlocfilehash: e57b98e7ddbcdaef11f73d220eda42231c6c4141
 * [Creating an Issuance License](https://msdn.microsoft.com/library/Aa362355)(발급 라이선스 만들기)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

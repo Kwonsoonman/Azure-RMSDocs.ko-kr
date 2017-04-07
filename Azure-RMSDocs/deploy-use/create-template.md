@@ -4,7 +4,7 @@ description: "Azure 클래식 포털에서 사용자 지정 템플릿을 만들�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 11971a176b9c5f413bbe6daa208c062a131343be
-ms.openlocfilehash: 5ab725294d93540f35c395eca08f5f3fbc6ae392
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: cf11e0ac3bb13dcb31d14bad5f97ad117bd09953
+ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+translationtype: HT
 ---
-
-
 # <a name="create-configure-and-publish-a-custom-template"></a>사용자 지정 템플릿 만들기, 구성 및 게시
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -49,16 +44,16 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
     -   [Azure 클래식 포털](http://go.microsoft.com/fwlink/p/?LinkID=275081)에서 다음을 수행합니다.
 
-        1.  왼쪽 창에서 **ACTIVE DIRECTORY**를 클릭합니다.
+        1. 왼쪽 창에서 **ACTIVE DIRECTORY**를 클릭합니다.
 
-        2.  **Active Directory** 페이지에서 **Rights Management**를 클릭합니다.
+        2. **Active Directory** 페이지에서 **Rights Management**를 클릭합니다.
 
-        3.  Rights Management에 대해 관리할 디렉터리를 선택합니다.
-
-        4.  권한 관리를 아직 활성화하지 않은 경우 **활성화** 를 클릭하고 작업을 확인합니다.
+        3. **RIGHTS MANAGEMENT 상태**가 **비활성**으로 표시되는 경우 **활성화**를 클릭한 후 작업을 확인합니다.
 
             > [!NOTE]
-            > 자세한 내용은 [Azure 권한 관리 활성화](activate-service.md)를 참조하세요.
+            > 자세한 내용은 [Azure 권한 관리 활성화](activate-service.md) 항목을 참조하세요.
+            >
+        4. **RIGHTS MANAGEMENT 상태**가 **활성**으로 표시되는 경우 Active Directory 테넌트의 이름을 선택합니다.
 
 2.  새 템플릿 만들기
 
@@ -80,6 +75,8 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
     > [!NOTE]
     > 선택되는 사용자 또는 그룹은 반드시 이메일 주소가 있어야 합니다. 프로덕션 환경에서는 거의 언제나 이메일 주소가 있지만 단순한 테스트 환경에서는 사용자 계정 또는 그룹에 이메일 주소를 추가해야 할 수도 있습니다.
+    > 
+    > 사용자 또는 그룹을 선택하고 템플릿을 저장한 후 메일 주소를 변경하는 경우 계획 설명서에서 [메일 주소를 변경하는 경우 고려할 사항](../plan-design/prepare.md#considerations-if-email-addresses-change) 섹션을 참조하세요. 
 
     모범 사례로, 사용자가 아닌 그룹을 사용하면 템플릿의 관리가 간소화됩니다. 그러나 그룹을 변경할 경우 성능상의 이유로 Azure Rights Management에서 [그룹 구성원을 캐시](../plan-design/prepare.md#group-membership-caching)합니다. 
     

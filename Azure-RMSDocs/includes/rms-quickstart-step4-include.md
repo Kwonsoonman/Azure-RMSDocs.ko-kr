@@ -31,8 +31,3 @@
 |무료 구독, 개인용 RMS 정보   →|[개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)|
 |메일 메시지에 첨부되는 두 가지 버전의 파일 정보   →|[자동으로 만들어지는 .ppdf 파일이란 무엇인가요?](../rms-client/sharing-app-dialog-box.md)|
 
-
-
-<!--HONumber=Jan17_HO1-->
-
-

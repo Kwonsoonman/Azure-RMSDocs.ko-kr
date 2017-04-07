@@ -4,7 +4,7 @@ description: "Azure Information Protection를 사용한 분류 및 레이블 지
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ccd840fdfc702e209390ed431d24d7e47edf9930
-ms.openlocfilehash: 0ce3ba72eb8a201486eaf2ae39f5d7bf99753cad
-ms.lasthandoff: 02/28/2017
-
-
+ms.openlocfilehash: 7f2bd30603f88ec72ee51f980c40903362cfdeba
+ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+translationtype: HT
 ---
-
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -50,7 +46,7 @@ Azure Information Protection에서 특별히 분류 및 레이블 지정에 대�
 
 Azure Information Protection 정책을 구성하려면 Azure Active Directory의 전역 관리자로 Azure Portal에 로그인해야 합니다.
 
-[Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 레이블 지정 기능을 확인하고 사용해 보기 위해 포털에 로그인하지 않아도 됩니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure 포털에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
+[Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 레이블 지정 기능을 확인하고 사용해 보기 위해 포털에 로그인하지 않아도 됩니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure Portal에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
 
 ## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>Azure Portal의 옵션은 P1인가요, P2인가요?
 
@@ -60,7 +56,7 @@ Azure Information Protection 정책을 구성하려면 Azure Active Directory의
 
 사용자는 각 문서 또는 메일에 대해 한 번에 레이블 하나만 선택할 수 있으며, 그 결과 분류가 하나만 생깁니다. 그러나 사용자가 하위 레이블을 선택하면 실제로 두 레이블(기본 레이블 및 보조 레이블)이 동시에 적용됩니다. 하위 레이블을 사용함으로써 추가 수준의 제어에 대해 파일에 부모\자식 관계를 나타내는 두 분류가 있을 수 있습니다.
 
-예를 들어 레이블 **Secret**은 **Legal**과 **Finance** 같은 하위 레이블을 포함할 수 있습니다. 서로 다른 분류 시각적 표시와 서로 다른 Rights Management 템플릿을 이러한 하위 레이블에 적용할 수 있습니다. 사용자는 **Secret** 레이블 하나만 선택할 수 없으며 **Legal** 같은 하위 레이블 중 하나를 선택해야 합니다. 결과적으로 표시되는 레이블은 **Secret \ Legal**입니다. 해당 파일의 메타데이터에는 **Secret**에 대한 사용자 지정 텍스트 속성 하나, **Legal**에 대한 사용자 지정 텍스트 속성 하나, 두 값을 모두 포함하는 다른 사용자 지정 텍스트 속성(**Secret Legal**)이 포함됩니다. 
+예를 들어 레이블 **기밀**은 **법률**과 **금융** 같은 하위 레이블을 포함할 수 있습니다. 서로 다른 분류 시각적 표시와 서로 다른 Rights Management 템플릿을 이러한 하위 레이블에 적용할 수 있습니다. 사용자는 **기밀** 레이블 자체만 선택할 수 없으며 **법률** 같은 하위 레이블 중 하나를 선택해야 합니다. 결과적으로 표시되는 레이블은 **기밀 \ 법률**입니다. 해당 파일의 메타데이터에는 **기밀**에 대한 사용자 지정 텍스트 속성 하나, **법률**에 대한 사용자 지정 텍스트 속성 하나, 두 값을 모두 포함하는 다른 사용자 지정 텍스트 속성(**기밀 법률**)이 포함됩니다. 
 
 하위 레이블을 사용할 때에는 기본 레이블에 시각적 표시, 보호 및 상태를 구성하지 마세요. 하위 수준을 사용할 때에는 하위 레이블에만 이러한 설정을 구성합니다. 기본 레이블과 하위 레이블에 이러한 설정을 구성하는 경우 하위 레이블의 설정이 우선합니다.
 
@@ -101,24 +97,5 @@ Azure Information Protection 레이블이 권한 관리 보호를 적용하는 �
 
 Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 파일에서 이 메타데이터는 사용자 지정 속성에 저장되고, 메일에서 이 정보는 메일 헤더에 있습니다.
 
-## <a name="how-do-i-sign-in-as-a-different-user"></a>다른 사용자로 로그인하려면 어떻게 하나요?
-
-프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 여러 테넌트가 있는 경우에는 그렇게 해야 할 수 있습니다. 예를 들어 조직에서 사용하는 Office 365 또는 Azure 테넌트 외에 테스트 테넌트가 있을 수 있습니다.
-
-**Microsoft Azure Information Protection** 대화 상자를 사용하여 현재 로그인한 계정을 확인할 수 있습니다. Office 응용 프로그램을 열고 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 의견**을 클릭합니다. 계정 이름은 **클라이언트 상태** 섹션에 표시됩니다.
-
-특히 관리자 계정을 사용하고 있는 경우 표시된 로그인 계정의 도메인 이름을 확인해야 합니다. 예를 들어 두 개의 다른 테넌트에 "admin" 계정이 있는 경우 로그인한 계정 이름은 올바르지만 도메인은 잘못되었음을 모르기 쉽습니다. 이로 인해 Azure Information Protection 정책을 다운로드하지 못하거나 예상한 레이블 또는 동작이 표시되지 않을 수 있습니다.
-
-다른 사용자로 로그인하려면 현재 레지스트리를 편집해야 합니다.
-
-1. 레지스트리 편집기를 사용하여 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**로 이동하고 **TokenCache** 값을 삭제합니다.
-
-2. 열려 있는 Office 응용 프로그램을 다시 시작하고 다른 사용자 계정으로 로그인합니다. Office 응용 프로그램에서 Azure Information Protection 서비스에 로그인하라는 메시지가 표시되지 않는 경우 **Microsoft Azure Information Protection** 대화 상자로 돌아와 업데이트된 **클라이언트 상태** 섹션에서 **로그인**을 클릭합니다.
-
-추가 필수 구성 요소:
-
-- Azure 권한 관리 서비스에 대한 환경을 다시 초기화(부트스트래핑이라고도 함)하려는 경우 [RMS 분석기 도구](https://www.microsoft.com/en-us/download/details.aspx?id=46437)의 **재설정** 옵션을 사용할 수 있습니다.
-
-- 현재 다운로드한 Azure Information Protection 정책을 삭제하려면 %localappdata%\Microsoft\MSIP 폴더에서 **Policy.msip** 파일을 삭제하면 됩니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

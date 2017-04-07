@@ -1,11 +1,11 @@
 ---
-title: "응용 프로그램 배포"
+title: "응용 프로그램 개발 - AIP"
 description: "AIP를 사용하여 문서 보호를 구현하는 기본적인 콘솔 앱에 대한 지침을 제공합니다."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,13 +14,10 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: b5f1d44d950cd020c4b15d5f9505752bc960fa88
-
-
+ms.openlocfilehash: 24689c3337361fb5e59420684ec8f5e9c723e448
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
+translationtype: HT
 ---
-
 # <a name="developing-your-application"></a>응용 프로그램 배포
 
 이 예에서는 AIP(Azure Information Protection) 서비스와 상호 작용하는 간단한 콘솔 응용 프로그램을 빌드합니다.  이 응용 프로그램은 보호할 문서의 경로를 입력으로 사용하며, 애드혹 정책 또는 Azure 템플릿을 통해 문서를 보호합니다. 그리고 입력에 따라 올바른 정책을 적용하여 정보가 보호되는 문서를 생성합니다. 여기서 사용할 샘플 코드는 Github에서 제공되는 [Azure IP 테스트 응용 프로그램](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)입니다.
@@ -232,8 +229,3 @@ Azure에 연결하는 데 필요한 매개 변수를 로드합니다.
 6. 마지막으로 몇 가지 정책 메타데이터(정책 이름, 설명, 발급자(Azure AD 테넌트) 표시 이름)를 입력합니다. ![앱 출력 - 6단계](../media/develop/app-output-6.png)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Feb17_HO4-->
-
-

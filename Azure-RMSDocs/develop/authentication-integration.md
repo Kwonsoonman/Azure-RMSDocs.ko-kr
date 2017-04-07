@@ -1,26 +1,23 @@
 ---
-title: "Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법 | Azure RMS"
+title: "Azure AD에 앱을 등록 하는 방법 - AIP"
 description: "RMS 사용 응용 프로그램에 대한 사용자 인증의 기본 사항에 대해 설명합니다."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 0f5b3de4607e5e889448b381f5835b4a75c9b0c2
-
-
+ms.openlocfilehash: a98b4eb3bd7705faf268a544f4efa7ba41712816
+ms.sourcegitcommit: 262f88c4f46e29f3747271276c62913b4cefe4f7
+translationtype: HT
 ---
-
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법
 
 이 항목에서는 Azure 포털을 통해 앱을 등록하고 RMS를 사용하도록 설정하는 기본적인 방법과 Azure ADAL(Active Directory Authentication Library)을 통한 사용자 인증 방법을 안내합니다.
@@ -31,8 +28,8 @@ ms.openlocfilehash: 0f5b3de4607e5e889448b381f5835b4a75c9b0c2
 ## <a name="registration-via-azure-portal"></a>Azure 포털을 통해 등록
 Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)부터 수행합니다. 나중에 사용할 수 있도록 이 프로세스에서 **클라이언트 ID** 및 **리디렉션 URI**를 복사하여 저장해야 합니다.
 
-## <a name="complete-your-rights-managagment-license-agreement-rmla"></a>RMLA(권한 관리 사용권 계약) 완료
-응용 프로그램을 배포하려면 먼저 Microsoft Rights Management 팀과 RMLA를 완료해야 합니다. 자세한 내용은 [프로덕션 환경에 배포 - 프로덕션 사용권 계약 요청](deploying-your-application.md) 항목의 첫 번째 섹션을 참조하세요.
+## <a name="complete-your-information-protection-integration-agreement-ipia"></a>IPIA(정보 보호 통합 계약) 완료
+응용 프로그램을 배포하려면 먼저 Microsoft Information Protection 팀의 IPIA를 완료해야 합니다. 자세한 내용은 [프로덕션 환경에 배포](deploying-your-application.md) 항목의 첫 번째 섹션을 참조하세요.
 
 ## <a name="implement-user-authentication-for-your-app"></a>앱에 대한 사용자 인증 구현
 각 RMS API에는 사용자 인증을 사용하기 위해 구현해야 하는 콜백이 있습니다. 그러면 액세스 토큰을 제공하지 않거나, 액세스 토큰을 새로 고쳐야 하거나, 액세스 토큰이 만료된 경우 RMS SDK 4.2에서 인증 콜백 구현을 사용합니다.
@@ -268,8 +265,3 @@ Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
     }
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

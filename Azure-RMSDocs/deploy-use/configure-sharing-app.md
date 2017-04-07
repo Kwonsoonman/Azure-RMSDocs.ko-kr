@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: af5541ab5dcec7224d1048121460b58b1ca13c48
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 4c04c832201fa6b1a76e5e3fe190c7cf022bee5d
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -42,6 +38,5 @@ Mac 컴퓨터 및 Windows Phone 장치용 RMS 공유 앱은 [Microsoft Azure Inf
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

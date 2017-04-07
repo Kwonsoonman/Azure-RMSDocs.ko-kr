@@ -10,14 +10,10 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: fd410002d2841c834f40a98c77534169ca09aa70
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: c4a0aab69ac8a01175528531fe11f17e86da9a6b
+ms.sourcegitcommit: f0402cf14506b4c61a156a2baf7e69b7b16883a1
+translationtype: HT
 ---
-
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
@@ -53,7 +49,7 @@ ms.lasthandoff: 02/24/2017
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. 자동 또는 권장 분류용으로 구성하려는 레이블이 모든 사용자에게 적용되는 경우 **정책:글로벌** 블레이드에서 변경할 레이블을 선택하고 **레이블** 블레이드를 변경한 다음 필요에 따라 이후 블레이드를 변경합니다.  
+2. 자동 또는 권장 분류용으로 구성하려는 레이블이 모든 사용자에게 적용되는 경우 **정책: 글로벌** 블레이드에서 변경할 레이블을 선택하고 **레이블** 블레이드를 변경한 다음 필요에 따라 이후 블레이드를 변경합니다. 
 
      구성하려는 레이블이 [범위 지정 정책](configure-policy-scope.md)에 포함되므로 선택한 사용자에게만 적용되는 경우에는 초기 **Azure Information Protection** 블레이드에서 해당 범위 지정 정책을 먼저 선택합니다.  
 
@@ -100,11 +96,11 @@ ms.lasthandoff: 02/24/2017
 
 2. 서식이 지정된 패턴의 Swift 코드:  
 
-    a. 문자&4;자(은행 코드)  
+    a. 문자 4자(은행 코드)  
 
-    b. 문자&2;자(국가 코드)  
+    b. 문자 2자(국가 코드)  
 
-    c. 문자 또는 숫자&2;자(위치 코드)  
+    c. 문자 또는 숫자 2자(위치 코드)  
 
     d. 선택적 문자 또는 숫자 3자(지점 코드)  
 
@@ -188,11 +184,11 @@ ms.lasthandoff: 02/24/2017
 
     - **서식 있음**: 
     
-        - 다음과 같은 형식의&9;자리 숫자: ddd-dd-dddd 또는 ddd dd dddd 
+        - 다음과 같은 형식의 9자리 숫자: ddd-dd-dddd 또는 ddd dd dddd 
         
     - **서식 없음**: 
     
-        - 다음과 같은 형식의&9;자리 숫자: ddddddddd 
+        - 다음과 같은 형식의 9자리 숫자: ddddddddd 
 
 
 테스트를 위한 예제:
@@ -223,6 +219,5 @@ ms.lasthandoff: 02/24/2017
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

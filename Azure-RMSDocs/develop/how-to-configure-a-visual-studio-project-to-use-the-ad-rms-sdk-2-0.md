@@ -14,13 +14,10 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: fa884b43cef8183ec967cffb48a463ba8ba0f2fa
-
-
+ms.openlocfilehash: 0b0d761376854101dff66d8f78de01f97c3725de
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="configure-visual-studio"></a>Visual Studio 구성
 
 이 항목에는 권한 관리 서비스 SDK 2.1을 사용하도록 Visual Studio 프로젝트를 구성하는 방법에 대한 지침이 포함되어 있습니다.
@@ -75,8 +72,3 @@ ms.openlocfilehash: fa884b43cef8183ec967cffb48a463ba8ba0f2fa
 * [SDK 설치](install-the-rms-sdk.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

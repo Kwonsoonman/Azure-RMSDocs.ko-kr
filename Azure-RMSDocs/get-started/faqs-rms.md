@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: dccc643ae49521262d5327b4d3d98801f88b3894
-ms.openlocfilehash: ed200df12b3d0665920091c7772ed88a79143e70
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 0f399afe398f5e69cebf6df5564b2ceb7d84e607
+ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
+translationtype: HT
 ---
-
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -51,7 +47,7 @@ HYOK에 대한 자세한 내용을 보고 제한 사항을 이해했음을 확�
 
 ## <a name="where-can-i-find-information-about-3rd-party-solutions-that-integrate-with-azure-rms"></a>Azure RMS와 통합하는 타사 솔루션에 대한 정보는 어디서 찾을 수 있나요?
 
-많은 소프트웨어 공급 업체들은 이미 Azure Rights Management와 통합하는 솔루션을 보유하고 있거나 이러한 솔루션을 구현하고 있으며, 그 목록은 매우 빨리 증가되고 있습니다. [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)에서 최신 업데이트를 구하면 유용할 수 있습니다. 그러나 특정 질문이 있으면 Information Protection 팀(askipteam@microsoft.com)으로 메일 메시지를 보내 주세요.
+많은 소프트웨어 공급 업체들은 이미 Azure Rights Management와 통합하는 솔루션을 보유하고 있거나 이러한 솔루션을 구현하고 있으며, 그 목록은 매우 빨리 증가되고 있습니다. [RMS 지원 솔루션](requirements-applications.md#rms-enlightened-solutions) 목록을 확인하고 Twitter에서 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)의 최신 업데이트를 확인하는 것도 유용합니다. 그러나 특정 질문이 있으면 Information Protection 팀(askipteam@microsoft.com)으로 메일 메시지를 보내 주세요.
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 커넥터에 대한 관리 팩이나 유사한 모니터링 메커니즘이 있나요?
 
@@ -105,8 +101,12 @@ Azure Rights Management 서비스는 기업 간 공동 작업에서의 관리자
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure AD의 동적 그룹에서 Azure RMS가 작동하나요?
 Azure AD Premium 기능을 사용하면 [특성 기반 규칙](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)을 지정하여 그룹에 대한 동적 멤버 자격을 구성할 수 있습니다. Azure AD에서 보안 그룹을 만드는 경우 이 그룹 유형은 동적 멤버 자격을 지원하지만 메일 주소를 지원하지 않으므로 Azure Rights Management 서비스와 함께 사용할 수 없습니다. 그러나 이제 동적 멤버 자격과 메일 사용을 둘 다 지원하는 새 그룹 유형을 Azure AD에서 만들 수 있습니다. Azure 클래식 포털에서 새 그룹을 추가하는 경우 **그룹 유형**으로 **Office 365 "미리 보기"**를 선택할 수 있습니다. 이 그룹은 메일 사용이 가능하므로 Azure Rights Management 보호와 함께 사용할 수 있습니다.
 
+## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>보호된 메일을 Gmail 또는 Hotmail 계정으로 보내려면 어떻게 해야 하나요?
+
+Azure Information Protection에서 보호된 메일을 Gmail 또는 Hotmail 계정으로 보내는 방법에 관한 참조 정보나 데모를 보았을 수 있습니다. 이 기능은 아직 비공개 미리 보기 상태이므로 공개 미리 보기로 릴리스되기 전에는 이 문서에서 자세한 관련 정보를 찾을 수 없습니다.
+
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS에서는 어떤 장치 및 파일 형식을 지원하나요?
-Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요. 지원되는 장치 중 일부는 현재 Rights Management 기능을 지원하지 않으므로 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](../get-started/requirements-applications.md)의 표도 확인하세요.
+Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요. 현재는 지원 장치 중 일부만 모든 Rights Management 기능을 지원하기 때문에 [RMS 기반 응용 프로그램](../get-started/requirements-applications.md#rms-enlightened-applications) 표도 확인해야 합니다.
 
 Azure Rights Management 서비스는 모든 형식의 파일을 지원할 수 있습니다. 텍스트, 이미지, Microsoft Office(Word, Excel, PowerPoint) 파일, .pdf 파일 및 일부 기타 응용 프로그램 파일 형식의 경우 Azure Rights Management는 권한 적용 및 암호화를 모두 포함하는 기본 보호 기능을 제공합니다. 기타 모든 응용 프로그램 및 파일 형식의 경우 일반적인 보호를 통해 사용자가 파일을 열 권한이 있는지 확인하는 인증 및 파일 캡슐화 기능을 제공합니다.
 
@@ -161,6 +161,5 @@ Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-ri
 이름 및 모양에도 불구하고, **전달 금지**는 전달 권한의 반대도 아니고, 템플릿도 아닙니다. 실제로 메일 전달 제한 외에도, 첨부 파일 복사, 인쇄 및 저장 제한이 포함된 권한 집합입니다. 권한은 선택한 수신자를 통해 사용자에게 동적으로 적용되며, 관리자가 권한을 정적으로 할당하지 않습니다. 자세한 내용은 [Azure 권한 관리에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md) 항목의 [메일에 대한 전달 금지 옵션](../deploy-use/configure-usage-rights.md#do-not-forward-option-for-emails) 섹션을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 
 

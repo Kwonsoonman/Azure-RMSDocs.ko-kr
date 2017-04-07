@@ -4,7 +4,7 @@ description: "Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 3140f678c29771fc3328e312bc7e55d309554e66
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 1dcdb7017be2e2bdfbefcfaa348be977ed67f8c0
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -48,23 +43,32 @@ RMS의 작동 방식을 이해할 필요는 없지만 업무 표준의 보안 �
 |암호화 컨트롤|Azure RMS에서 사용|
 |-|-|
 |알고리즘: AES<br /><br />키 길이: 128비트 및 256비트 [[1]](#footnote-1)|문서 보호|
-|알고리즘: RSA<br /><br />키 길이: 2048비트|키 보호|
+|알고리즘: RSA<br /><br />키 길이: 2048비트 [[2]](#footnote-2)|키 보호|
 |SHA-256|인증서 서명|
 
 ###### <a name="footnote-1"></a>각주 1 
 
 파일 이름 확장명이 .ppdf이거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)인 경우 Azure Information Protection 클라이언트 및 Rights Management 공유 응용 프로그램에서 일반 보호 및 기본 보호에&256;비트를 사용합니다.
 
-암호화 키 저장 및 보호 방법:
+###### <a name="footnote-2"></a>각주 2
 
-- Azure RMS의 보호를 받는 각 문서나 메일에 대해 Azure RMS는 단일 AES 키("콘텐츠 키")를 만들고, 이 키가 문서에 포함되며 문서의 모든 버전에서 유지됩니다. 
+2048비트는 Azure Rights Management 서비스가 활성화된 경우의 키 길이입니다. 1024비트는 다음과 같은 선택적 시나리오에서 지원됩니다.
 
-- 콘텐츠 키는 문서에서 정책의 일부로 조직의 RSA 키("Azure Information Protection 테넌트 키")로 보호되고, 문서 작성자도 정책에 서명합니다. 이 테넌트 키는 조직의 Azure RMS에 의해 보호되는 모든 문서와 메일에 공통적이며, 조직에서 고객을 관리하는 테넌트 키(BYOK(Bring Your Own Key)라고 함)를 사용하는 경우 Azure Information Protection 관리자만 이 키를 변경할 수 있습니다. 
+- 온-프레미스에서 마이그레이션하는 동안 AD RMS 클러스터가 암호화 모드 1에서 실행 중이고 암호화 모드 2로 업그레이드할 수 없는 경우
 
-    이 테넌트 키는 Microsoft의 온라인 서비스나 매우 통제가 강화된 환경에서, 그리고 면밀한 모니터링이 진행 중인 경우에 보호됩니다. 고객 관리 테넌트 키(BYOK)를 사용하는 경우 키를 추출하거나 내보내거나 모든 환경에서 공유하는 기능이 없어도 이 보안은 각 Azure 영역의 고급 HSM(하드웨어 보안 모듈) 배열을 사용하여 강화됩니다. 테넌트 키 및 BYOK에 대한 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
+- AD RMS로 보호된 콘텐츠가 Azure Rights Management로 마이그레이션한 후 계속 열 수 있도록 보관된 키가 마이그레이션 전에 온-프레미스에서 생성된 경우
 
-- Windows 장치에 전송되는 라이선스 및 인증서는 클라이언트의 장치 개인 키로 보호되며, 이 키는 사용자가 장치에서 Azure RMS를 처음 사용하는 경우 생성됩니다. 이 개인 키는 클라이언트에서 DPAPI로 보호됩니다. 이 DPAPI는 사용자의 암호에서 파생된 키를 사용하여 이러한 암호를 보호합니다. 모바일 장치에서 키가 한 번만 사용됩니다. 따라서 키가 클라이언트에 저장되지 않으므로 이러한 키를 장치에서 보호하지 않아도 됩니다. 
+- 고객이 Azure Key Vault를 사용하여 BYOK(Bring Your Own Key) 방식을 선택하는 경우 최소 2048비트의 키 크기를 권장하지만 적용하지 않아야 합니다.
 
+### <a name="how-the-azure-rms-cryptographic-keys-are-stored-and-secured"></a>Azure RMS 암호화 키 저장 및 보호 방법
+
+Azure RMS의 보호를 받는 각 문서나 메일에 대해 Azure RMS는 단일 AES 키("콘텐츠 키")를 만들고, 이 키가 문서에 포함되며 문서의 모든 버전에서 유지됩니다. 
+
+콘텐츠 키는 문서에서 정책의 일부로 조직의 RSA 키("Azure Information Protection 테넌트 키")로 보호되고, 문서 작성자도 정책에 서명합니다. 이 테넌트 키는 조직의 Azure Rights Management 서비스에 의해 보호되는 모든 문서와 전자 메일에 공통적이며, 조직에서 고객을 관리하는 테넌트 키(BYOK(Bring Your Own Key)라고 함)를 사용하는 경우 Azure Information Protection 관리자만 이 키를 변경할 수 있습니다. 
+
+이 테넌트 키는 Microsoft의 온라인 서비스나 매우 통제가 강화된 환경에서, 그리고 면밀한 모니터링이 진행 중인 경우에 보호됩니다. 고객 관리 테넌트 키(BYOK)를 사용하는 경우 키를 추출하거나 내보내거나 모든 환경에서 공유하는 기능이 없어도 이 보안은 각 Azure 영역의 고급 HSM(하드웨어 보안 모듈) 배열을 사용하여 강화됩니다. 테넌트 키 및 BYOK에 대한 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
+
+Windows 장치에 전송되는 라이선스 및 인증서는 클라이언트의 장치 개인 키로 보호되며, 이 키는 사용자가 장치에서 Azure RMS를 처음 사용하는 경우 생성됩니다. 이 개인 키는 클라이언트에서 DPAPI로 보호됩니다. 이 DPAPI는 사용자의 암호에서 파생된 키를 사용하여 이러한 암호를 보호합니다. 모바일 장치에서 키가 한 번만 사용됩니다. 따라서 키가 클라이언트에 저장되지 않으므로 이러한 키를 장치에서 보호하지 않아도 됩니다. 
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비

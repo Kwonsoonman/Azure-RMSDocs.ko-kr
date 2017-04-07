@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 3d9f2e20abe0a4abce3220d53d6373d9c2baf8ee
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: a5a40277c95e376042fc77b7ba39bfc66a948fde
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="monitor-the-azure-rights-management-connector"></a>Azure Rights Management 커넥터 모니터링
 
 >*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
@@ -194,4 +190,3 @@ RMS 커넥터를 설치하면 **Microsoft Rights Management 커넥터** 성능 �
 5.  필요한 추적을 캡처한 경우에는 3단계에서 해당 줄을 되돌리고 IIS를 중지했다가 다시 시작합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

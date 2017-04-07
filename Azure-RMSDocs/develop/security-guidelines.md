@@ -12,13 +12,10 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: ea2783ec76505681ab60aee9d995e347d4310cad
-ms.lasthandoff: 02/24/2017
-
+ms.openlocfilehash: e940dfd1d3a053c14ea1adb6e72f4cde7d26bba0
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure Information Protection에 대한 보안 모범 사례
 
 AIP(Azure Information Protection) SDK(소프트웨어 개발 키트)는 모든 종류의 보호된 정보를 게시 및 사용하기 위한 강력한 시스템을 제공합니다. AIP 시스템이 최대한의 보호 기능을 제공하도록 하려면 AIP 사용 응용 프로그램을 AIP 모범 사례에 따라 빌드해야 합니다. AIP 사용 응용 프로그램은 이 에코시스템의 보안을 유지할 공동 책임이 있습니다. 보안 위험을 식별하고 응용 프로그램 개발 중 발생하는 위험을 완화하는 방법을 제공하면 덜 안전한 소프트웨어를 구현할 가능성을 최소화할 수 있습니다.

@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: a10162139f2b188640c446477fd9b4756d48c31e
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 43f083ffaf8aefd9b79b2cb64a6408e565818b9b
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일 보기 및 사용
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
@@ -46,7 +42,7 @@ ms.lasthandoff: 02/24/2017
 
 파일이 어떻게 열리는지는 파일이 어떻게 보호되는지에 따라 다르며 파일 이름 확장명을 보면 알 수 있습니다. 각각의 경우에서 파일 열기는 감사될 수 있고 보호되는 한 감사는 유지됩니다. 또한 파일이 메일 첨부 파일로 전송되었다면 발신자는 파일을 열 때마다 메일로 알림을 받을 수 있습니다.
 
-- **파일에 *.pfile* 파일 이름 확장명이 있습니다.
+- **파일에*.pfile* 파일 이름 확장명이 있습니다.
 
     파일이 일반적으로 보호되었습니다.
 
@@ -54,7 +50,7 @@ ms.lasthandoff: 02/24/2017
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 메일로 공유한 pfile의 대화 상자](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- **파일에 *.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)**입니다.
+- **파일에*.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)**입니다.
 
     파일을 읽기 전용 복사본으로 고유하게 보호합니다.
 
@@ -78,7 +74,7 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>보호된 파일을 사용하려면(예: 파일 편집 및 인쇄)
 보호된 파일을 연 후 읽기 이상의 작업(예: 편집, 복사 및 인쇄)을 수행하려는 경우 파일 이름 확장명에 따라 다음 지침을 따르세요.
 
-- **파일에 *.pfile* 파일 이름 확장명이 있습니다.
+- **파일에*.pfile* 파일 이름 확장명이 있습니다.
 
     열린 파일을 저장하고 사용하려는 응용 프로그램과 연결된 새 파일 이름 확장명을 줍니다.
 
@@ -86,7 +82,7 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 
     새 파일이 더 이상 보호되지 않습니다. 보호하려는 경우 수동으로 수행해야 합니다. 지침은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md)를 참조하세요.
 
-- **파일에 *.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)**입니다.
+- **파일에*.ppdf* 파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예: *.ptxt* 또는 *.pjpg*)**입니다.
 
     파일을 볼 수 있고 이름을 바꾸거나 이동하는 경우 파일은 보호가 유지됩니다.
 

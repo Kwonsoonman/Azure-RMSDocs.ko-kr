@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 37ce3f1596878e28962119faef22bc1c61a067f8
-ms.openlocfilehash: 0bb42f7ec5f2c1768c9eaaa7890b8b46853abd99
-ms.lasthandoff: 02/25/2017
-
-
+ms.openlocfilehash: 987936c79325c33a8c553dea1a6594933df5f7d8
+ms.sourcegitcommit: d959f0a9ba347a5dde77aac45a5d9f88d7cfdfb2
+translationtype: HT
 ---
-
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -36,6 +32,14 @@ Azure Information Protection은 조직의 문서와 메일을 분류하고, 레�
 Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 참조하세요. 
 
 Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 페이지에서 [Azure Information Protection 라이선싱 데이터시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)를 다운로드하세요.
+
+## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure Information Protection 클라이언트는 분류 및 레이블이 포함된 구독에만 사용할 수 있나요?
+
+아니요. Azure Information Protection 클라이언트에서 본 대부분의 프레젠테이션과 데모에는 분류 및 레이블을 지원하는 방법이 표시되어 있지만, Azure Rights Management 서비스만으로 데이터를 보호하는 구독에도 이 클라이언트를 사용할 수 있습니다.
+
+Windows용 Azure Information Protection 클라이언트가 설치되어 있고 Azure Information Protection 정책이 없는 경우는 클라이언트가 자동으로 [보호 전용 모드](../rms-client/client-protection-only-mode.md)에서 작동합니다. 이 모드에서 사용자는 Rights Management 템플릿과 사용자 지정 권한을 쉽게 적용할 수 있습니다. 나중에 분류 및 레이블 지정이 포함된 구독을 구입하면 Azure Information Protection 정책을 다운로드할 때 클라이언트가 자동으로 표준 모드로 전환됩니다.
+
+현재 Windows용 Rights Management 공유 응용 프로그램을 사용하고 있다면 Azure Information Protection 클라이언트로 교체할 것을 권장합니다. 공유 응용 프로그램에 대한 지원은 2018년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 응용 프로그램으로 수행해왔던 작업](../rms-client/upgrade-client-app.md)을 참조하세요.
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 
@@ -57,9 +61,7 @@ Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동�
 
 기술 지원에 대해서는 표준 지원 채널을 사용하거나 [Microsoft 지원에 문의](information-support.md#to-contact-microsoft-support)하세요.
 
-향상된 기능 및 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **Send feedback**(의견 보내기)을 클릭합니다. 그러면 Information Protection 팀에 메일이 전송되고 자동으로 PC에서 로그 파일이 첨부됩니다. 
-
-또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
+향상된 기능 또는 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **피드백 보내기**를 클릭합니다. 그러면 Information Protection 팀으로 보낼 메일 메시지가 열립니다. 또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
 
 ## <a name="what-do-i-do-if-my-question-isnt-here"></a>내 문의 내용이 여기 없다면 어떻게 하나요?
 
@@ -81,5 +83,4 @@ Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동�
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

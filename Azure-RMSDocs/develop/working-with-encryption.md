@@ -14,13 +14,10 @@ ms.assetid: B1D2C227-F43D-4B18-9956-767B35145792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: ca54dd3ceece96c03de140fcfc3202afdd94796a
-
-
+ms.openlocfilehash: bf327be47629532a716cc8239fc76d1a9ee1db46
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-work-with-encryption-settings"></a>방법: 암호화 설정 작업
 
 이 항목에서는 암호화 패키지에 대해 설명하고 사용과 관련된 몇 가지 코드 조각을 보여 줍니다.
@@ -100,8 +97,3 @@ RMS SDK 2.1 2015년 3월 업데이트 이상에 대해 빌드한다고 가정할
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

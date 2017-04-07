@@ -14,13 +14,10 @@ ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 862ac33db89752cd25859c6fd3491959efda5107
-
-
+ms.openlocfilehash: e10588c166beb48d98aba619d9e2269d5f808f3a
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="windows-store-setup"></a>Windows 스토어 설정
 
 Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
@@ -86,8 +83,3 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 [Windows API 참조](https://msdn.microsoft.com/library/dn891914.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO1-->
-
-

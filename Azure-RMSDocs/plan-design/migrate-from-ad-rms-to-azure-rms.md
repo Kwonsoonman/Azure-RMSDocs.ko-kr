@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,14 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 12bd5b89cf9957521c7d7b4fb573e4ffcd6c865d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: b82132d45f1d671c11355c44104dacf521e18082
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
@@ -59,12 +55,6 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
         
         - Windows Server 2016(x64)
         
-    - 암호화 모드 2:
-
-        - Azure Information Protection으로 마이그레이션을 시작하기 전에 AD RMS 서버 및 클라이언트가 암호화 모드 2에서 실행되어야 합니다.
-        
-        현재 SLC(서버 사용 허가자 인증서) 키는 암호화 모드 2를 사용해야 하지만 암호화 모드 1에 맞게 구성된 이전 키는 Azure Information Protection에서 보관된 키로 지원됩니다. 암호화 모드 및 암호화 모드 2로 전환하는 방법에 대한 자세한 내용은 [AD RMS Cryptographic Modes](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)(AD RMS 암호화 모드)를 참조하세요.
-        
     - 유효한 모든 AD RMS 토폴로지가 지원됩니다.
     
         - 단일 포리스트, 단일 RMS 클러스터
@@ -73,7 +63,7 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
         
         - 다중 포리스트, 다중 RMS 클러스터
         
-    참고: 기본적으로 다중 RMS 클러스터는 단일 Azure Information Protection 테넌트로 마이그레이션됩니다. 별도의 Azure Information Protection 테넌트를 원하는 경우 다른 마이그레이션으로 처리해야 합니다. 한 RMS 클러스터의 키를 둘 이상의 Azure Information Protection 테넌트에 가져올 수 없습니다.
+    참고: 기본적으로 다중 AD RMS 클러스터는 단일 Azure Information Protection 테넌트로 마이그레이션됩니다. 별도의 Azure Information Protection 테넌트를 원하는 경우 다른 마이그레이션으로 처리해야 합니다. 한 RMS 클러스터의 키를 둘 이상의 Azure Information Protection 테넌트에 가져올 수 없습니다.
 
 - **Azure Information Protection 테넌트(활성화되지 않음)를 포함하여 Azure Information Protection을 실행하기 위한 모든 요구 사항:**
 
@@ -104,7 +94,22 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
     - 이 선택적 구성에는 Azure 주요 자격 증명 모음 및 HSM 보호된 키를 사용하여 주요 자격 증명 모음을 지원하는 Azure 구독이 필요합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/en-us/pricing/details/key-vault/) 페이지를 참조하세요. 
 
 
-제한 사항:
+### <a name="cryptographic-mode-considerations"></a>암호화 모드 고려 사항
+
+마이그레이션을 위한 필수 사항은 아니지만, 마이그레이션을 시작하기 전에 AD RMS 서버와 클라이언트가 암호화 모드 2에서 실행 중인 것이 좋습니다. 
+
+다른 모드 및 업그레이드 방법에 대한 자세한 내용은 [AD RMS 암호화 모드](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)를 참조하세요.
+
+AD RMS 클러스터가 암호화 모드 1인 경우에는 업그레이드할 수 없으므로 마이그레이션이 완료되었을 때 Azure Information Protection 테넌트 키를 다시 입력해야 합니다. 키를 다시 입력하면 암호화 모드 2를 사용하는 새 테넌트 키를 만듭니다. 암호화 모드 1에서 Azure Rights Management 서비스를 사용하는 방식은 마이그레이션 프로세스 중에만 지원됩니다.
+
+AD RMS 암호화 모드를 확인하려면
+ 
+- Windows Server 2012 R2 및 Windows 2012의 경우: AD RMS 클러스터 속성 > **일반** 탭 
+
+- 지원되는 모든 버전의 AD RMS의 경우: [RMS 분석기](https://www.microsoft.com/en-us/download/details.aspx?id=46437) 및 **AD RMS 관리** 옵션을 사용하여 **RMS 서비스 정보**의 암호화 모드를 봅니다.
+
+
+### <a name="migration-limitations"></a>마이그레이션 제한 사항
 
 -   마이그레이션 프로세스는 SLC(서버 라이선스 인증서) 키를 Azure Information Protection에 대한 HSM(하드웨어 보안 모듈)로 마이그레이션하도록 지원하지만, Exchange Online은 현재 Azure Information Protection에서 사용되는 Rights Management 서비스에 대해 이러한 구성을 지원하지 않습니다. Azure Information Protection으로 마이그레이션한 후에 Exchange Online에서 IRM 기능을 모두 사용하려면 Azure Information Protection 테넌트 키를 [Microsoft에서 관리](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)해야 합니다. 또는 사용자가 Azure Information Protection 테넌트를 관리할 때는(BYOK) Exchange Online에서 제한된 기능의 IRM을 실행할 수 있습니다. Azure Information Protection 서비스와 함께 Exchange Online을 사용하는 방법에 대한 자세한 내용은 이러한 마이그레이션 지침에서 [6단계. Exchange Online에 대한 IRM 통합 구성](migrate-from-ad-rms-phase3.md#step-6-configure-irm-integration-for-exchange-online)을 참조하세요.
 
@@ -192,11 +197,10 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
 
 - **9단계: Azure Information Protection 테넌트 키 다시 입력**
 
-    이 단계는 선택 사항이지만 2단계에서 선택한 Azure Information Protection 테넌트 키 토폴로지가 Microsoft 관리인 경우 권장됩니다. 선택한 Azure Information Protection 테넌트 키 토폴로지가 고객 관리(BYOK)인 경우 이 단계는 적용되지 않습니다.
+    이 단계는 마이그레이션 전에 암호화 모드 2에서 실행하고 있지 않은 경우에는 필수이지만, Azure Information Protection 테넌트 키의 보안을 위해 모든 마이그레이션에 대해 권장됩니다.
 
 
 ## <a name="next-steps"></a>다음 단계
 마이그레이션을 시작하려면 [1단계 - 서버 쪽 구성](migrate-from-ad-rms-phase1.md)으로 이동합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-

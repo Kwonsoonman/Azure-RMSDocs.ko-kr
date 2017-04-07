@@ -14,13 +14,10 @@ ms.assetid: EF43FAC4-ABB4-459D-B173-972B5716F816
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7068e0529409eb783f16bc207a17be27cd5d82a8
-ms.openlocfilehash: 337c819436e3675eb0ba745717d700002d5184b0
-
-
+ms.openlocfilehash: d7365dc91139d9edc38a52ba66319946470873d5
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
 # <a name="how-to-add-explicit-owner-rights"></a>방법: 명시적 소유자 권한 추가
 
 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)를 사용하여 라이선스를 처음부터 만드는 경우 응용 프로그램에서 "소유자" 권한을 명시적으로 추가해야 합니다.
@@ -113,8 +110,3 @@ ms.openlocfilehash: 337c819436e3675eb0ba745717d700002d5184b0
 - [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
-
-<!--HONumber=Jan17_HO4-->
-
-

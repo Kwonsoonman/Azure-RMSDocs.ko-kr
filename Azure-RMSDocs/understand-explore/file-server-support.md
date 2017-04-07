@@ -12,15 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 909ff4f7c96af65172604bb903173dd38d95dcf9
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 6fc25683bde3bc640f1575d700ac2f9378cbe478
+ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+translationtype: HT
 ---
-
-
 # <a name="file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci"></a>Windows Server를 실행하고 FCI(파일 분류 인프라)를 사용하는 파일 서버
 
 >*적용 대상: Azure Information Protection, Office 365*
@@ -42,5 +37,4 @@ Office 파일용 RMS 커넥터를 배포하고 구성하는 방법에 대한 지
 이제 응용 프로그램과 서비스가 Azure RMS를 지원하는 방식을 이해하게 되었으므로 온-프레미스 버전의 Rights Management인 AD RMS(Active Directory Rights Management Services)와 Azure RMS를 비교할 수 있습니다. 기능, 요구 사항 및 보안 제어를 비교한 내용을 보려면 [Azure 권한 관리와 AD RMS 비교](compare-azure-rms-ad-rms.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

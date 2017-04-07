@@ -25,8 +25,3 @@ Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)�
 |Windows용 Rights Management 공유 응용 프로그램의 로컬 설치 및 사용자 지침 정보 →|[Rights Management 공유 응용 프로그램 사용자 가이드](../rms-client/sharing-app-user-guide.md)|
 |스크립트를 이용한 Windows용 Rights Management 공유 응용 프로그램 설치 정보 및 자세한 기술 정보   →|[Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)|
 |기본 보호와 일반 보호 간의 차이를 이해하려면   →|[일반 보호와 기본 제공(네이티브) 보호 간의 차이점은 무엇인가요?](../rms-client/sharing-app-dialog-box.md)|
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -1,25 +1,22 @@
 ---
-title: "응용 프로그램 배포"
+title: "응용 프로그램 배포 - AIP"
 description: "이 항목에서는 응용 프로그램 배포를 간략하게 설명하고 안내합니다."
 keywords: "배포, RMS, AIP"
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2131f40b51f34de7637c242909f10952b1fa7d9f
-ms.openlocfilehash: 0c16b7c6bd494a0350a511a3b415f781aecf613d
-ms.lasthandoff: 02/24/2017
-
-
+ms.openlocfilehash: 67ec662fb54ab9fdcd06bebd01df1a228afe5fb1
+ms.sourcegitcommit: 164c9ac31beb4811bbcd4527613a5d3b57b8ac6c
+translationtype: HT
 ---
 # <a name="deploy-into-production"></a>프로덕션 환경에 배포
 
@@ -99,14 +96,13 @@ RMS Client 2.1을 응용 프로그램에 통합하는 예로 [권한 보호 폴�
 
 클라이언트가 있을 경우 응용 프로그램 설치를 계속합니다.
 
-## <a name="enabling-azure-information-protection--rights-management-services-with-your-application"></a>응용 프로그램에서 Azure Information Protection/Rights Management Services 사용
+## <a name="enabling-azure-information-protection-services-with-your-application"></a>응용 프로그램에서 Azure Information Protection Services 사용
 
 > [!NOTE]
 > 새 ADAL 인증 모델로 마이그레이션한 경우에는 **SIA**를 설치할 필요가 없습니다. 자세한 내용은 [ADAL authentication for your RMS enabled application](adal-auth.md)(RMS 사용 응용 프로그램에 대한 ADAL 인증) 항목을 참조하세요.
 > 또한 **Windows 10용 응용 프로그램을 인증**할 수 있습니다. Microsoft Online 로그인 도우미가 아닌 ADAL 인증을 사용하도록 응용 프로그램을 업데이트하여 개발자와 고객은 컴퓨터에 대한 관리자 권한을 요구하지 않고 다단계 인증을 사용하여 RMS Client 2.1을 설치할 수 있습니다.
 
-
-최종 사용자가 Information Protection/Rights Management Services를 활용하려면 *Online Services SIA(로그인 도우미)*를 배포해야 합니다. 응용 프로그램 개발자는 최종 사용자가 RMS(온-프레미스) 또는 Azure Information Protection 중 어떤 방식으로 Information Protection을 사용할지 알 수 없습니다.
+최종 사용자가 Information Protection Services를 활용하려면 *Online Services SIA(로그인 도우미)*를 배포해야 합니다. 응용 프로그램 개발자는 최종 사용자가 RMS(온-프레미스) 또는 Azure Information Protection 중 어떤 방식으로 Information Protection을 사용할지 알 수 없습니다.
 
 
 > [!IMPORTANT]
@@ -116,6 +112,8 @@ RMS Client 2.1을 응용 프로그램에 통합하는 예로 [권한 보호 폴�
 -   Microsoft 다운로드 센터에서 [Microsoft Online Services 로그인 도우미](http://www.microsoft.com/en-us/download/details.aspx?id=28177)를 다운로드합니다.
 -   권한 사용 응용 프로그램 배포에 이 서비스 선택에 대한 필수 조건 확인이 포함되어 있는지 확인합니다.
 -   자체 테스트 및 최종 사용자의 온라인 서비스 사용에 대한 자세한 내용은 TechNet 항목인 [권한 관리 구성](https://TechNet.Microsoft.Com/en-us/library/jj585002.aspx)을 참조하세요.
+
+또한 이 가이드를 사용하여 앱을 구성해야 합니다. - [Azure Active Directory 로그인을 사용하여 App Service 응용 프로그램을 구성하는 방법](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication).
 
 응용 프로그램이 Azure 권한 관리 서비스에 RMS를 사용할 수 있도록 설정하는 방법에 대한 자세한 내용은 [응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
 

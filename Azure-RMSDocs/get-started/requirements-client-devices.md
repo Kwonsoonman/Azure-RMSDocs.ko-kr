@@ -4,7 +4,7 @@ description: "Azure Information Protection에서 Azure Rights Management 서비�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/06/2017
+ms.date: 04/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 72ec5e755e3a5defe753741ed4061c30b2db7e82
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 644e5566a5b2305a12139d7d2da666eec0ef8c71
+ms.sourcegitcommit: 1f65f71f742063e2bebcac88f72180d3aa4318a4
 translationtype: HT
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치
@@ -33,7 +33,7 @@ Azure Rights Management 서비스를 지원하는 컴퓨터 운영 체제는 다
 
 -   **Windows 10**(x86, x64)
 
--   **Mac OS X**: Mac OS X 10.8(Mountain Lion) 버전 이상
+-   **macOS**: macOS 10.8(Mountain Lion) 이상
 
 ## <a name="mobile-devices"></a>모바일 장치
 Azure Rights Management 서비스를 지원하는 모바일 장치 운영 체제는 다음과 같습니다.
@@ -44,7 +44,7 @@ Azure Rights Management 서비스를 지원하는 모바일 장치 운영 체제
 
 -   **iPhone 및 iPad**: 최소 iOS 7.0 버전 이상
      
-    예외: iOS 및 Android용 Azure Information Protection 클라이언트는 최소 iOS 8 버전 이상입니다.
+    예외: Azure Information Protection 앱의 최소 버전은 iOS 8입니다.
 
 -   **Windows 태블릿**: Windows 10 Mobile 및 Windows 8.1 RT
 

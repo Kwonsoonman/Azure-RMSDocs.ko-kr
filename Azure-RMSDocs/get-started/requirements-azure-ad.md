@@ -4,7 +4,7 @@ description: "사용자가 정상적으로 인증할 수 있도록, Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fa0a9351177b44b4d770e37d24aee85e1e313c2d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 729d66e8d55d045b74ac5c794cf83ddcc2848d35
+ms.sourcegitcommit: 1671466a42e7e00e1cc2702b1f609fb112aac7db
 translationtype: HT
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
@@ -36,7 +36,13 @@ Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Az
 
 Office 2010을 실행하는 컴퓨터: 
 
+- 이러한 컴퓨터는 Azure Information Protection과 해당 데이터 보호 서비스인 Azure Rights Management에서 인증을 받기 위해 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)(권장) 또는 [Windows용 Rights Management 공유 응용 프로그램](../rms-client/sharing-app-windows.md)이 필요합니다.
+
 - AD FS를 사용하는 경우와 같이 사용자 계정이 페더레이션된 경우 해당 계정은 Windows 통합 인증을 사용해야 합니다. 이 시나리오에서 양식 기반 인증은 Azure Information Protection에 사용자를 인증하지 못합니다.
+
+CBA(인증서 기반 인증) 지원:
+
+- Android용 Azure Information Protection 앱에서는 최소 버전인 Android 5.0 이상을 사용하는 경우 인증서 기반 인증을 지원합니다. 인증서 기반 인증을 구성하는 방법에 대한 지침은 [Get started with certificate-based authentication in Azure Active Directory](/active-directory/active-directory-certificate-based-authentication-get-started)(Azure Active Directory에서 인증서 기반 인증 시작)를 참조하세요.
 
 AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스 인증을 수행하는 모바일 장치나 Mac 컴퓨터:
 
@@ -47,7 +53,7 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
 -   Office 2013(최소 버전)
 
-    -   Office 2013을 사용하는 경우 [Office 2013 2015년 6월 9일 업데이트(KB3054853)](https://support.microsoft.com/kb/3054853)도 설치해야 합니다. 이 업데이트 및 최신 인증이 Office 2013에 ADAL(Active Directory 인증 라이브러리) 기반 로그인을 제공하는 방식에 대한 자세한 내용은 Office 블로그에서 [발표된 Office 2013 최신 인증 공개 미리 보기](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/)를 참조하세요.
+    -   Office 2013이 있는 경우 ADAL(Active Directory 인증 라이브러리)을 지원하려면 추가 업데이트를 설치해야 합니다. 예를 들어 [Office 2013용 2015년 6월 9일 업데이트(KB3054853)](https://support.microsoft.com/kb/3054853)를 설치해야 합니다. 이 업데이트 및 최신 인증이 Office 2013에 ADAL(Active Directory 인증 라이브러리) 기반 로그인을 제공하는 방식에 대한 자세한 내용은 Office 블로그에서 [발표된 Office 2013 최신 인증 공개 미리 보기](https://blogs.office.com/2015/03/23/office-2013-modern-authentication-public-preview-announced/)를 참조하세요.
 
 - Azure Information Protection 클라이언트:
 
@@ -55,7 +61,7 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
 -   Windows용 권한 관리 공유 응용 프로그램:
 
-    -   제어판, 프로그램 및 기능을 사용하여 확인할 수 있는 1.0.1908.0의 최소 버전을 설치해야 합니다. Rights Management 공유 응용 프로그램은 이제 Azure Information Protection 클라이언트로 대체됩니다. 공유 응용 프로그램에 대한 자세한 내용은 [Windows용 권한 관리 공유 응용 프로그램](../rms-client/sharing-app-windows.md)을 참조하세요.
+    -   제어판, 프로그램 및 기능을 사용하여 확인할 수 있는 1.0.1908.0의 최소 버전을 설치해야 합니다. Rights Management 공유 응용 프로그램은 이제 Azure Information Protection 클라이언트로 대체됩니다. 공유 응용 프로그램에 대한 자세한 내용은 [Windows용 Rights Management 공유 응용 프로그램](../rms-client/sharing-app-windows.md)을 참조하세요.
 
 -   모바일 장치 및 Mac 컴퓨터에 대한 Rights Management 공유 앱:
 

@@ -5,7 +5,7 @@ keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bc3d92cb0dc23ddd2d1f81daf2fc589ad4862977
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: d797dd31c44d985becc92ec81266afbe23cd970c
+ms.sourcegitcommit: 1671466a42e7e00e1cc2702b1f609fb112aac7db
 translationtype: HT
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ
@@ -45,7 +45,7 @@ Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>뷰어 앱을 시작하려면 어떻게 하나요?
 
-앱을 설치한 후에는 더 이상 수행할 작업이 없습니다. 보려는 보호된 메일 또는 파일을 받을 때까지 기다린 다음 **AIP 뷰어**를 선택하여 엽니다. 회사 또는 학교 계정에 로그인하라는 메시지가 표시됩니다. 자격 증명이 인증된 후 내용을 읽을 수 있습니다.
+앱을 설치한 후에는 더 이상 수행할 작업이 없습니다. 보려는 보호된 메일 또는 파일을 받을 때까지 기다린 다음 **AIP 뷰어**를 선택하여 엽니다. 그러면 회사 또는 학교 계정으로 로그인하라는 메시지가 표시되거나 인증서를 선택하라는 메시지가 표시됩니다. 이러한 자격 증명이 인증된 후 내용을 읽을 수 있습니다.
 
 그러나 기다리고 싶지 않은 경우 [iOS 및 Android용 Microsoft Azure Information Protection 앱 시작](mobile-app-get-started.md)의 지침에 따라 자신에게 보려는 보호된 메일 또는 파일을 보낼 수 있습니다. 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>이 앱에 로그인하는 데 어떤 자격 증명을 사용해야 하나요?

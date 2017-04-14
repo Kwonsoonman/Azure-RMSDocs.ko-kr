@@ -4,7 +4,7 @@ description: "사용자가 정상적으로 인증할 수 있도록, Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 729d66e8d55d045b74ac5c794cf83ddcc2848d35
-ms.sourcegitcommit: 1671466a42e7e00e1cc2702b1f609fb112aac7db
+ms.openlocfilehash: 29bc3b414a1fde17aec03702a87f4364b565b848
+ms.sourcegitcommit: 65e2d607954dfb6c7529ff200602887b71c39312
 translationtype: HT
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
@@ -42,7 +42,7 @@ Office 2010을 실행하는 컴퓨터:
 
 CBA(인증서 기반 인증) 지원:
 
-- Android용 Azure Information Protection 앱에서는 최소 버전인 Android 5.0 이상을 사용하는 경우 인증서 기반 인증을 지원합니다. 인증서 기반 인증을 구성하는 방법에 대한 지침은 [Get started with certificate-based authentication in Azure Active Directory](/active-directory/active-directory-certificate-based-authentication-get-started)(Azure Active Directory에서 인증서 기반 인증 시작)를 참조하세요.
+- Android용 Azure Information Protection 앱에서는 최소 버전인 Android 5.0 이상을 사용하는 경우 인증서 기반 인증을 지원합니다. 인증서 기반 인증을 구성하는 방법에 대한 지침은 [Get started with certificate-based authentication in Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started)(Azure Active Directory에서 인증서 기반 인증 시작)를 참조하세요.
 
 AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스 인증을 수행하는 모바일 장치나 Mac 컴퓨터:
 

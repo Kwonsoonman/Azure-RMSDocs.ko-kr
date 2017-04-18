@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/04/2017
+ms.date: 04/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3838c29d26c8c1bed196ad0a86c63f5f78ad9cc
-ms.sourcegitcommit: d2bd2ddc68d9b5a095b57235b28a3b7e9307bd9b
+ms.openlocfilehash: c8afaa635f34f6d052cd646387d37f68bbcdff45
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
@@ -27,7 +27,7 @@ translationtype: HT
 |서비스에 권장되는 설명서 참조 →|[Azure Information Protection 설명서](https://docs.microsoft.com/information-protection/) 시작 페이지 사용.|
 |설명서에 대한 의견 제공 또는 설명서 관련 질문 →|[askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)에 전자 메일 보내기|
 |Information Protection에 대한 트윗 및 제품 그룹의 문서 업데이트에 대한 공지 사항 수신→|Microsoft Information Protection 팀 책임자인 Dan Plastina 팔로우. [Dan Plastina @DanPlastina](https://twitter.com/DanPlastina) 참조|
-|구독 정보 및 지원되는 기능 확인 →|Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 사용하세요.|
+|구독 정보 및 지원되는 기능 확인 →|Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 사용하세요.|
 
 
 ## <a name="information-about-new-releases-and-updated-documentation"></a>새 릴리스 및 업데이트된 설명서에 대한 정보

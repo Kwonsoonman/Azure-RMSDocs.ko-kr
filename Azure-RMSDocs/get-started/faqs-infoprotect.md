@@ -4,7 +4,7 @@ description: "Azure Information Protection를 사용한 분류 및 레이블 지
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/29/2017
+ms.date: 03/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 7f2bd30603f88ec72ee51f980c40903362cfdeba
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: b6980bdcecb02471159f7873e80a05d234726d0e
+ms.sourcegitcommit: 85aaded97659bbc0a3932569aab29b1bf472fea4
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
@@ -64,6 +64,10 @@ Azure Information Protection 정책을 구성하려면 Azure Active Directory의
 
 아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블에 보호를 적용하는 경우 해당 보호는 첨부 파일에 적용됩니다.
 
+## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
+
+Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 파일에서 이 메타데이터는 사용자 지정 속성에 저장되고, 메일에서 이 정보는 메일 헤더에 있습니다.
+
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
 
 Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능으로, Azure Information Protection 분류와는 독립적으로 구현됩니다. 그러나 사용자가 Outlook Web App을 사용하여 전자 메일을 분류할 때와 일부 모바일 메일 응용 프로그램을 사용할 때 Azure Information Protection 분류와 해당하는 레이블 표시가 자동으로 추가되도록 두 솔루션을 통합할 수 있습니다. 이 경우 Exchange에서 분류를 추가하면 Azure Information Protection 클라이언트에서 이 분류에 해당하는 레이블 설정을 적용합니다.
@@ -76,10 +80,15 @@ Outlook Web App에서는 Azure Information Protection 및 보호가 아직 기�
 
 2. 각 레이블에 대해 Exchange 전송 규칙을 만든 다음 구성된 분류가 메시지 속성에 포함될 때 해당 규칙을 적용하고 메시지 속성을 수정하여 메시지 헤더를 설정합니다. 
 
-    메시지 헤더에서는 Azure Information Protection 레이블을 사용하여 분류한 Office 파일의 속성을 검사하면 지정할 정보를 확인할 수 있습니다. **MSIP_Label_<GUID>_Enabled** 형식의 파일 속성을 찾은 다음 메시지 헤더로 이 문자열을 지정하고 헤더 값으로 **True**를 지정합니다. 예를 들어 메시지 헤더는 **MSIP_Label_132616b8-f72d-5d1e-aec1-dfd89eb8c5b2_Enabled**와 같은 문자열일 수 있습니다.
+    메시지 헤더에서는 Azure Information Protection 레이블을 사용하여 분류하고 보낸 메일의 인터넷 헤더를 검사하면 지정할 정보를 확인할 수 있습니다. **msip_labels** 헤더와 바로 뒤에서 세미콜론까지의 문자열(세미콜론도 포함)을 찾습니다. 이전 예를 사용하면 다음과 같습니다.
+    
+    **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
+    
+    그런 다음 규칙의 메시지 헤더에 대해 **msip_labels**를 헤더로, 이 문자열의 나머지 부분을 헤더 값으로 지정합니다. 예를 들면 다음과 같습니다.
+    
+    ![특정 Azure Information Protection 레이블에 대한 메시지 헤더를 설정하는 Exchange Online 전송 규칙 예제](../media/exchange-rule-for-message-header.png)
 
-
-이렇게 하면 사용자가 권한 관리 보호를 지원하는 모바일 장치 클라이언트 또는 Outlook Web Access 앱을 사용할 때 다음과 같은 과정이 진행됩니다. 
+이를 테스트하기 전에 전송 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 하지만 규칙이 적용되면 사용자가 Rights Management 보호를 지원하는 모바일 장치 클라이언트 또는 Outlook Web Access 앱을 사용할 때 다음과 같은 과정이 진행됩니다. 
 
 - 사용자가 Exchange 메시지 분류를 선택하고 전자 메일을 보냅니다.
 
@@ -91,11 +100,7 @@ Azure Information Protection 레이블이 권한 관리 보호를 적용하는 �
 
 역방향 매핑을 수행하는 전송 규칙을 구성할 수도 있습니다. Azure Information Protection 레이블이 검색되면 해당 Exchange 메시지 분류를 설정합니다. 이렇게 하려면 다음을 수행합니다.
 
-- 각 Azure Information Protection 레이블에 대해 **msip_labels** 헤더에 레이블의 이름(예: **Confidential**)이 포함될 때 적용되는 전송 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
-
-## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
-
-Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 파일에서 이 메타데이터는 사용자 지정 속성에 저장되고, 메일에서 이 정보는 메일 헤더에 있습니다.
+- 각 Azure Information Protection 레이블에 대해 **msip_labels** 헤더에 레이블의 이름(예: **General**)이 포함될 때 적용되는 전송 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

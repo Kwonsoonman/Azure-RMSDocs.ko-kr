@@ -4,7 +4,7 @@ description: "Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/06/2017
+ms.date: 04/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1dcdb7017be2e2bdfbefcfaa348be977ed67f8c0
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: a5f189ab5ad1df43b14fa0b6d23bf4f0eef88142
+ms.sourcegitcommit: d44105d4d45fabf0f1d90765304e4b43dd97c0fc
 translationtype: HT
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-Azure RMS가 작동하는 방식을 이해할 때 중요한 한 가지 사항은 권한 관리 서비스(및 Microsoft)가 데이터를 정보 보호 프로세스의 일부로 보거나 저장하지 않는다는 것입니다. 보호하는 정보는 Azure에 명시적으로 저장하거나 Azure에 정보를 저장하는 다른 클라우드 서비스를 사용하지 않는 한, Azure로 전송되거나 Azure에 저장되지 않습니다. Azure RMS는 단순히 문서의 데이터를 허가된 사용자 및 서비스 이외의 사람이 읽을 수 없게 합니다.
+Azure RMS가 작동하는 방식과 관련하여 Rights Management Service(및 Microsoft)가 데이터를 보거나 정보 보호 프로세스의 일부로 저장하지 않는다는 점을 이해해야 합니다. 보호하는 정보는 Azure에 명시적으로 저장하거나 Azure에 정보를 저장하는 다른 클라우드 서비스를 사용하지 않는 한, Azure로 전송되거나 Azure에 저장되지 않습니다. Azure RMS는 단순히 문서의 데이터를 허가된 사용자 및 서비스 이외의 사람이 읽을 수 없게 합니다.
 
--   데이터는 응용 프로그램 수준에서 암호화되며 해당 문서의 허가된 사용을 정의하는 정책을 포함합니다.
+- 데이터는 응용 프로그램 수준에서 암호화되며 해당 문서의 허가된 사용을 정의하는 정책을 포함합니다.
 
--   합법적인 사용자가 보호된 문서를 사용되거나 허가된 서비스가 이러한 문서를 처리할 경우 문서의 데이터 암호가 해독되고 정책에 정의된 권한이 적용됩니다.
+- 합법적인 사용자가 보호된 문서를 사용되거나 허가된 서비스가 이러한 문서를 처리할 경우 문서의 데이터 암호가 해독되고 정책에 정의된 권한이 적용됩니다.
 
 다음 그림에서는 이 프로세스가 작동하는 방식을 높은 수준에서 확인할 수 있습니다. 비밀 수식이 들어 있는 문서는 보호되며 허가된 사용자나 서비스에서 열 수 있습니다. 이 문서는 콘텐츠 키(이 그림의 녹색 키)로 보호됩니다. 이 키는 각 문서에 대해 고유하며 Azure Information Protection 테넌트 루트 키(이 그림의 빨간색 키)로 보호되는 파일 헤더에 포함됩니다. 테넌트 키는 Microsoft에서 생성하고 관리할 수 있으며 자체 테넌트 키를 생성하여 관리할 수도 있습니다.
 
@@ -48,7 +48,7 @@ RMS의 작동 방식을 이해할 필요는 없지만 업무 표준의 보안 �
 
 ###### <a name="footnote-1"></a>각주 1 
 
-파일 이름 확장명이 .ppdf이거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)인 경우 Azure Information Protection 클라이언트 및 Rights Management 공유 응용 프로그램에서 일반 보호 및 기본 보호에&256;비트를 사용합니다.
+파일 이름 확장명이 .ppdf이거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)인 경우 Azure Information Protection 클라이언트 및 Rights Management 공유 응용 프로그램에서 일반 보호 및 기본 보호에 256비트를 사용합니다.
 
 ###### <a name="footnote-2"></a>각주 2
 
@@ -68,7 +68,7 @@ Azure RMS의 보호를 받는 각 문서나 메일에 대해 Azure RMS는 단일
 
 이 테넌트 키는 Microsoft의 온라인 서비스나 매우 통제가 강화된 환경에서, 그리고 면밀한 모니터링이 진행 중인 경우에 보호됩니다. 고객 관리 테넌트 키(BYOK)를 사용하는 경우 키를 추출하거나 내보내거나 모든 환경에서 공유하는 기능이 없어도 이 보안은 각 Azure 영역의 고급 HSM(하드웨어 보안 모듈) 배열을 사용하여 강화됩니다. 테넌트 키 및 BYOK에 대한 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
 
-Windows 장치에 전송되는 라이선스 및 인증서는 클라이언트의 장치 개인 키로 보호되며, 이 키는 사용자가 장치에서 Azure RMS를 처음 사용하는 경우 생성됩니다. 이 개인 키는 클라이언트에서 DPAPI로 보호됩니다. 이 DPAPI는 사용자의 암호에서 파생된 키를 사용하여 이러한 암호를 보호합니다. 모바일 장치에서 키가 한 번만 사용됩니다. 따라서 키가 클라이언트에 저장되지 않으므로 이러한 키를 장치에서 보호하지 않아도 됩니다. 
+Windows 장치에 전송되는 라이선스 및 인증서는 클라이언트의 장치 개인 키로 보호되며, 이 키는 사용자가 장치에서 Azure RMS를 처음 사용하는 경우 생성됩니다. 따라서 이 개인 키는 클라이언트에서 DPAPI로 보호됩니다. 이 DPAPI는 사용자의 암호에서 파생된 키를 사용하여 이러한 암호를 보호합니다. 모바일 장치에서 키가 한 번만 사용됩니다. 따라서 키가 클라이언트에 저장되지 않으므로 이러한 키를 장치에서 보호하지 않아도 됩니다. 
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비
@@ -103,7 +103,9 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 ![RMS 문서 보호 - 2단계, 정책이 만들어짐](../media/AzRMS_documentprotection2.png)
 
-**2단계에서 발생하는 작업**: 그런 다음 RMS 클라이언트는 템플릿에 따라 또는 문서에 특정 권한을 지정함으로써 문서에 대한 정책을 포함하는 인증서를 만듭니다. 이 정책에는 다른 사용자 또는 그룹에 대한 권한과 기타 제한 사항(예: 만료 날짜)이 포함됩니다.
+**2단계에서 발생하는 작업**: 그런 다음 RMS 클라이언트는 사용자 또는 그룹에 대한 [사용 권한](../deploy-use/configure-usage-rights.md) 및 만료 날짜와 같은 기타 제한 사항이 포함된 문서에 대한 정책을 포함하는 인증서를 만듭니다. 이러한 설정은 관리자가 이전에 구성한 템플릿에 정의하거나 콘텐츠를 보호할 때 지정할 수 있습니다("임시 정책"이라고도 함).   
+
+선택한 사용자 및 그룹을 식별하는 데 사용하는 특성은 사용자나 그룹의 메일 주소를 모두 저장하는 Azure AD proxyAddress 특성입니다.
 
 그러면 RMS 클라이언트는 사용자 환경이 초기화될 때 획득한 조직의 키를 사용하여 정책과 대칭 콘텐츠 키를 암호화합니다. 또한 RMS 클라이언트는 사용자 환경이 초기화되었을 때 획득한 사용자의 인증서로 정책에 서명합니다.
 
@@ -118,7 +120,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 ![RMS 문서 소비 - 1단계, 사용자가 인증되고 권한 목록을 가져옴](../media/AzRMS_documentconsumption1.png)
 
-**1단계에서 발생하는 작업**: 인증된 사용자는 문서 정책과 사용자의 인증서를 Azure Rights Management Service에 전송합니다. 서비스는 정책의 암호를 해독하고 평가한 후 사용자가 문서에 대해 갖는 권한(있는 경우) 목록을 작성합니다.
+**1단계에서 발생하는 작업**: 인증된 사용자는 문서 정책과 사용자의 인증서를 Azure Rights Management Service에 전송합니다. 서비스는 정책의 암호를 해독하고 평가한 후 사용자가 문서에 대해 갖는 권한(있는 경우) 목록을 작성합니다. 사용자를 식별하려면 사용자의 계정 및 사용자가 멤버인 그룹에 대해 Azure AD proxyAttribute를 사용합니다. 성능을 높이기 위해 그룹 멤버 자격은 [캐시](../plan-design/prepare.md#group-membership-caching)됩니다.
 
 ![RMS 문서 소비 - 2단계, 사용 라이선스가 클라이언트에 반환됨](../media/AzRMS_documentconsumption2.png)
 

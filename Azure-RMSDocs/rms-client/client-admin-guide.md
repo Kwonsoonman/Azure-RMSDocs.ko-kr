@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 63843acfe9f7b4ded77ccbdcaaab8cb98598dd9f
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: d442a9540243cd020b885f7dc2c13d999bbad868
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
@@ -174,7 +174,7 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 ### <a name="help-and-feedback-section"></a>**도움말 및 피드백** 섹션
 
-**자세히 링크**를 클릭하면 기본적으로 [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책의 [정책 설정](../deploy-use/configure-policy-settings.md) 중 하나로 사용자 지정 URL에 이동하도록 이 링크를 구성할 수 있습니다.
+**자세히 링크**를 클릭하면 기본적으로 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책의 [정책 설정](../deploy-use/configure-policy-settings.md) 중 하나로 사용자 지정 URL에 이동하도록 이 링크를 구성할 수 있습니다.
 
 **피드백 보내기** 링크를 사용하여 Information Protection 팀에 제안 사항이나 요청을 보냅니다. 기술 지원을 위해 이 옵션을 사용하지 않는 경우에는 대신 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources)를 참조하세요. 
 

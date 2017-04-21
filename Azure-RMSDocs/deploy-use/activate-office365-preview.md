@@ -4,7 +4,7 @@ description: "Office 365 관리 센터의 신규 미리 보기 버전(Office 365
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b39c39756ec5f6e6554b87a15186f998eda977b3
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: eca70d3249d823da3b7fe0c5535d2cb3cadf6adf
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center-preview"></a>Office 365 관리 센터 미리 보기에서 Azure 권한 관리를 활성화하는 방법
@@ -43,7 +43,7 @@ translationtype: HT
         > [!NOTE]
         >이 옵션으로 이동하는 경우 사용 중인 디스플레이에 따라 이 옵션을 보려면 스크롤해야 할 수 있습니다. 그러나 해당 옵션이 페이지에 나타나지 않고 검색 결과로 표시되지 않으면 서비스 계획에 Azure Information Protection의 Azure Rights Management Service가 포함되지 않은 것일 수 있습니다.
         >
-        >Azure Rights Management Service를 활성화하려면 [Azure Information Protection Premium plan](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)(Azure Information Protection Premium 계획) 또는 [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다. 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
+        >Azure Rights Management Service를 활성화하려면 [Azure Information Protection Premium plan](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)(Azure Information Protection Premium 계획) 또는 [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다. 이 문제에 대한 도움이 필요한 경우 [askipteam](mailto:askipteam?subject=I%20cannot%20activate%20RMS)으로 전자 메일 메시지를 보내 주세요.
 
 4. **Rights Management** 페이지에서 **활성화**를 클릭합니다.
 

@@ -5,7 +5,7 @@ keywords: "iOS 및 Android용 Azure Information Protection 앱으로 메일 또�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 24e1b9df2284abde20d5308a313019d666afed5d
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 96ab267f22abf31d39a77dcc5450b28a583096e8
+ms.sourcegitcommit: 81b5c111627246a4094ef87da17d260f66ae985c
 translationtype: HT
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Microsoft Azure Information Protection 앱 시작
@@ -31,9 +31,9 @@ translationtype: HT
 
 - **권한으로 보호된 PDF 파일**: Windows 컴퓨터에서 Azure Information Protection 클라이언트를 사용하여 [PDF 파일을 보호](client-classify-protect.md)한 다음 권한으로 보호된 이 PDF 파일을 전자 메일에 첨부하여 본인에게 보냅니다. 또는 PDF 파일을 SharePoint 보호된 라이브러리로 업로드한 다음 메일 주소를 사용하여 이 파일을 공유합니다.
 
-- **.ptxt 또는 .pjpg 또는 .ppng**: Windows 컴퓨터에서 Azure Information Protection 클라이언트를 사용하여 텍스트 또는 이미지 파일을 보호하고 이 보호된 파일을 전자 메일에 첨부하여 본인에게 보냅니다. 테스트에 사용할 수 있는 파일 형식의 전체 목록을 보려면 Azure Information Protection 클라이언트 관리 가이드의 [보호 및 해당 파일 이름 확장명에 대해 지원되는 파일 형식](client-admin-guide-file-types.md#supported-file-types-for-protection-and-their-file-name-extensions) 섹션을 참조하세요. 
+- **.ptxt 또는 .pjpg 또는 .ppng**: Windows 컴퓨터에서 Azure Information Protection 클라이언트를 사용하여 텍스트 또는 이미지 파일을 보호하고 이 보호된 파일을 전자 메일에 첨부하여 본인에게 보냅니다. 테스트에 사용할 수 있는 파일 형식의 전체 목록을 보려면 Azure Information Protection 클라이언트 관리 가이드의 [분류 및 보호가 지원되는 파일 형식](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection) 섹션에서 첫 번째 표를 참조하세요. 
 
-Azure Information Protection 뷰어 응용 프로그램에서 이러한 파일을 보려면 메일 첨부 파일이나 링크를 탭합니다. 여는 데 사용할 앱을 선택하라는 메시지가 표시되면 **AIP 뷰어** 앱을 선택합니다. 회사 또는 학교 계정에 로그인하라는 메시지가 표시됩니다. 성공적으로 인증되면 Azure Information Protection 앱에 읽을 메일이나 파일이 표시됩니다.
+Azure Information Protection 뷰어 응용 프로그램에서 이러한 파일을 보려면 메일 첨부 파일이나 링크를 탭합니다. 여는 데 사용할 앱을 선택하라는 메시지가 표시되면 **AIP 뷰어** 앱을 선택합니다. 그러면 회사 또는 학교 계정으로 로그인하라는 메시지가 표시되거나 인증서를 선택하라는 메시지가 표시됩니다. 이러한 자격 증명이 인증되면 Azure Information Protection 앱에 읽을 메일이나 파일이 표시됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

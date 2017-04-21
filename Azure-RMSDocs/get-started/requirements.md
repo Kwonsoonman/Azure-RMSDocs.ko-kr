@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f249994c2ac1cf02c4572d3f7cb8ba6566cb142
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 90cfc530d8d4289e4c614e822cd666c50db86b90
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
@@ -24,7 +24,7 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 
 |요구 사항|추가 정보|
 |---------------|--------------------|
-|Azure Information Protection 구독|Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 검토하여 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하세요.|
+|Azure Information Protection 구독|Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 검토하여 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하세요.|
 |Azure Active Directory|Azure Information Protection에 대해 사용자 인증을 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.<br /><br />MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure Information Protection에서 지원됩니다.<br /><br />자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](requirements-azure-ad.md)을 참조하세요.|
 |클라이언트 장치|사용자에게 Azure Information Protection을 지원하는 운영 체제를 실행하는 클라이언트 장치(컴퓨터 또는 모바일 장치)가 있어야 합니다.<br /><br />다음은 사용자가 Office 문서 및 메일을 분류하여 레이블링할 수 있도록 Azure Information Protection 클라이언트를 지원하는 장치입니다.<br /><br />- Windows 10(x86, x64)<br /><br />- Windows 8.1(x86, x64)<br /><br />- Windows 8(x86, x64)<br /><br />- Windows 7 서비스 팩 1(x86, x64)<br /><br />이 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 동일한 장치(Windows, Mac, iOS, Android)에서 이 데이터를 사용할 수 있습니다. <br /><br />Azure Rights Management 서비스를 지원하는 장치에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요.|
 |응용 프로그램|Azure Information Protection 클라이언트는 다음 Office 제품군의 Office 응용 프로그램인 **Word**, **Excel**, **PowerPoint** 및 **Outlook**을 사용하여 파일 및 메일의 레이블을 지정하고 보호할 수 있습니다.<br /><br /> - Office 365 ProPlus(2016 앱 또는 2013 앱 포함)(간편 실행 또는 Windows Installer 기반 설치)<br /><br />- Office Professional Plus 2016<br /><br />- Office Professional Plus 2013 서비스 팩 1<br /><br />- Office Professional Plus 2010 <br /><br />데이터 보호 서비스를 지원하는 Office 버전에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.|

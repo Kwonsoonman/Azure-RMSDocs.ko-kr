@@ -4,7 +4,7 @@ description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5f03b34b825b9fc693741336c54ee4049f636741
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: a11add0b0c712dd52f7ac560748f7986c915d0d1
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="activating-azure-rights-management"></a>Azure 권한 관리 활성화
@@ -27,7 +27,7 @@ Azure Rights Management 서비스를 활성화하기 전에 해결되는 비즈�
 > [!IMPORTANT]
 > [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 활성화하기 전에 조직에 Azure Rights Management 데이터 보호가 포함된 서비스 계획이 있는지 확인합니다. 서비스 계획이 없는 경우 Azure Rights Management를 활성화할 수 없습니다.
 >
-> [Azure Information Protection Premium plan](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing)(Azure Information Protection Premium 계획) 또는 [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다.
+> [Azure Information Protection Premium plan](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)(Azure Information Protection Premium 계획) 또는 [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다.
 
 Azure Information Protection의 Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자는 해당 파일에 정보 보호를 적용할 수 있으며 모든 사용자가 Azure Rights Management 서비스로 보호되는 파일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
 
@@ -57,17 +57,25 @@ Azure Information Protection의 Azure Rights Management 서비스가 활성화�
 예를 들어 초기에 개체 ID가 fbb99ded-32a0-45f1-b038-38b519009503인 "IT 부서" 그룹의 관리자만 테스트 목적으로 콘텐츠를 보호할 수 있도록 하려면 다음 명령을 사용합니다.
 
 ```
-Set-AadrmOnboardingControlPolicy – SecurityGroupObjectId fbb99ded-32a0-45f1-b038-38b519009503
+Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fbb99ded-32a0-45f1-b038-38b519009503"
 ```
-이 구성 옵션에 대해서는 그룹을 지정해야 하며 개별 사용자를 지정할 수는 없습니다. 그룹의 개체 ID를 얻으려면 Azure AD PowerShell을 사용합니다. 예를 들어 [버전 1.0](https://msdn.microsoft.com/library/azure/jj151815\(v=azure.98\).aspx)의 모듈인 경우 [Get-MsolGroup](https://msdn.microsoft.com/library/azure/dn194130\(v=azure.98\).aspx) 명령을 사용합니다.
+
+이 구성 옵션에 대해서는 그룹을 지정해야 하며 개별 사용자를 지정할 수는 없습니다. 그룹의 개체 ID를 얻으려면 Azure AD PowerShell을 사용할 수 있습니다. 예를 들어 버전 1.0의 모듈인 경우 [Get-MsolGroup](/powershell/msonline/v1/get-msolgroup) 명령을 사용합니다. Azure Portal에서 그룹의 **개체 ID**를 복사할 수도 있습니다.
 
 또는 Azure Information Protection을 사용할 수 있는 라이선스가 부여된 사용자만 콘텐츠를 보호할 수 있게 하려면 다음 명령을 사용합니다.
 
 ```
-Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $true
+Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $True
 ```
 
-이 cmdlet 및 추가 예제에 대한 자세한 내용은 [Set-AadrmOnboardingControlPolicy](https://msdn.microsoft.com/library/dn857521.aspx) 도움말을 참조하세요.
+온보딩 컨트롤을 더 이상 사용할 필요가 없으면 그룹을 사용하든 라이선싱 옵션을 사용하든 다음을 실행합니다.
+
+```
+Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
+```
+
+
+이 cmdlet 및 추가 예제에 대한 자세한 내용은 [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy) 도움말을 참조하세요.
 
 이러한 등록 컨트롤을 사용할 경우 조직의 모든 사용자는 항상 하위 사용자가 보호하는 보호된 콘텐츠를 사용할 수 있지만 클라이언트 응용 프로그램에서 자체적으로 정보 보호를 적용할 수는 없습니다. 예를 들어 Azure Rights Management 서비스가 활성화되면 자동으로 게시된 기본 템플릿 또는 사용자가 구성할 수 있는 사용자 지정 템플릿이 Office 클라이언트에 표시되지 않습니다.  Exchange 등의 서버 쪽 응용 프로그램은 같은 결과를 달성하기 위해 Rights Management 통합을 위한 자체 사용자별 컨트롤을 구현할 수 있습니다.
 

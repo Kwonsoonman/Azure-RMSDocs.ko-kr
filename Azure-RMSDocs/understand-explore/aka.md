@@ -4,7 +4,7 @@ description: "Azure Information Protection은 여러 차례 이름이 바뀌었�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/28/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b6c6dfec138c3be41dcbb8609660a1fd3bcff376
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 73af5d2f3f6bfc601f6c2bf97584f0c41ff9ccaa
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure Information Protection의 이전 이름들
@@ -71,6 +71,6 @@ Azure Information Protection(경우에 따라 AIP로 축약)은 Microsoft에서 
 
 ## <a name="how-to-evaluate-or-purchase-the-latest-version"></a>최신 버전을 평가하거나 구입하는 방법
 
-Azure Information Protection 구입 또는 평가 방법, 구독 계획에서 사용 가능한 다른 기능에 대한 자세한 내용은 [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection) 사이트를 참조하세요.
+Azure Information Protection 구입 또는 평가 방법, 구독 계획에서 사용 가능한 다른 기능에 대한 자세한 내용은 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 사이트를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

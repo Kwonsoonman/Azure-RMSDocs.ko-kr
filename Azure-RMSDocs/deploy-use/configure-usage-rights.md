@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b6250b94a73a0ddc9a91ef7c2615c050ba915098
-ms.sourcegitcommit: 8733730882bea6f505f4c6d53d4bdf08c3106f40
+ms.openlocfilehash: ee29da28d75472c2c2ba5ebc3c7e89bc0b006f6d
+ms.sourcegitcommit: 941cc65fe779e87ae8027c17f433b859a5c32386
 translationtype: HT
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure 권한 관리에 대한 사용 권한 구성
@@ -34,7 +34,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |일반 이름: **저장** <br /><br />정책에서 인코딩: **EDIT**|사용자가 현재 위치에 문서를 저장할 수 있게 합니다.<br /><br />또한 Office 응용 프로그램에서 이 권한을 사용하면 사용자는 문서를 수정할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **파일 저장**<br /><br />AD RMS 템플릿의 이름: **저장** <br /><br />API 상수 또는 값: `IPC_GENERIC_WRITE L"EDIT"`|
 |일반 이름: **주석** <br /><br />정책에서 인코딩: **COMMENT**|옵션을 사용하여 메모를 추가하거나 콘텐츠에 주석을 추가할 수 있습니다.<br /><br />이 권한은 SDK에서 사용할 수 있으며 Windows PowerShell 용 AzureInformationProtection 및 RMS 보호 모듈에서 임시 정책으로 사용할 수 있고 일부 소프트웨어 공급업체 응용 프로그램에서 구현되었습니다. 그러나 널리 사용되지 않으며 현재 Office 응용 프로그램에서 지원되지 않습니다.|Office 사용자 지정 권한: 구현되지 않음 <br /><br />Azure 클래식 포털의 이름: 구현되지 않음<br /><br />AD RMS 템플릿의 이름: 구현되지 않음 <br /><br />API 상수 또는 값: `IPC_GENERIC_COMMENT L"COMMENT`|
 |일반 이름: **다른 이름으로 저장, 내보내기** <br /><br />정책에서 인코딩: **EXPORT**|콘텐츠를 다른 파일 이름에 저장하는 옵션(다른 이름으로 저장)을 사용할 수 있게 합니다. Office 문서와 Azure Information Protection 클라이언트의 경우에는 파일을 보호하지 않고 저장할 수 있습니다.<br /><br />이 권한이 부여된 사용자는 응용 프로그램에서 **OneNote로 보내기**등의 다른 내보내기 옵션도 수행할 수 있습니다.<br /><br /> 참고: 이 권한이 부여되면, 선택한 파일 형식이 기본적으로 Rights Management 보호를 지원하는 경우 사용자는 Office 응용 프로그램을 사용하여 문서를 새 이름으로 저장할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 내보내기(다른 이름으로 저장)**<br /><br />AD RMS 템플릿의 이름: **내보내기(다른 이름으로 저장)** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXPORT L"EXPORT"`|
-|일반 이름: **전달** <br /><br />정책에서 인코딩: **FORWARD**|전자 메일 메시지를 전달하고 **받는 사람** 및 **참조** 줄에 받는 사람을 추가하는 옵션을 사용할 수 있게 합니다. 이 권한은 문서에 적용되지 않고 메일 메시지에만 적용됩니다.<br /><br />전달자가 전달 동작의 일부로 다른 사용자에게 권한을 부여할 수 없게 합니다.|Office 사용자 지정 권한: **전달 금지** 표준 정책을 사용하는 경우 거부됩니다.<br /><br />Azure 클래식 포털의 이름: **전달**<br /><br />AD RMS 템플릿의 이름: **전달** <br /><br />API 상수 또는 값: `IPC_EMAIL_FORWARD L"FORWARD"`|
+|일반 이름: **전달** <br /><br />정책에서 인코딩: **FORWARD**|전자 메일 메시지를 전달하고 **받는 사람** 및 **참조** 줄에 받는 사람을 추가하는 옵션을 사용할 수 있게 합니다. 이 권한은 문서에 적용되지 않고 메일 메시지에만 적용됩니다.<br /><br />전달자가 전달 동작의 일부로 다른 사용자에게 권한을 부여할 수 없게 합니다. <br /><br />참고: 다른 조직에 메일을 보내면 받는 사람의 Outlook 클라이언트 또는 Outlook 웹앱에, 전달과 함께 **콘텐츠 편집, 편집** 권한(일반 이름)이 필요합니다.|Office 사용자 지정 권한: **전달 금지** 표준 정책을 사용하는 경우 거부됩니다.<br /><br />Azure 클래식 포털의 이름: **전달**<br /><br />AD RMS 템플릿의 이름: **전달** <br /><br />API 상수 또는 값: `IPC_EMAIL_FORWARD L"FORWARD"`|
 |일반 이름: **모든 권한** <br /><br />정책에서 인코딩: **OWNER**|문서에 대한 모든 권한을 부여하며 사용 가능한 모든 작업을 수행할 수 있습니다.<br /><br />보호를 제거하고 문서를 다시 보호하는 기능이 포함됩니다.|Office 사용자 지정 권한: **모든 권한** 사용자 지정 옵션의 일부로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **모든 권한**<br /><br />AD RMS 템플릿의 이름: **모든 권한** <br /><br />API 상수 또는 값: `IPC_GENERIC_ALL L"OWNER"`|
 |일반 이름: **인쇄** <br /><br />정책에서 인코딩: **PRINT**|콘텐츠 인쇄 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: 사용자 지정 권한에서 **콘텐츠 인쇄** 옵션의 일부로 제공됩니다. 받는 사람별 설정이 아닙니다.<br /><br />Azure 클래식 포털의 이름: **인쇄**<br /><br />AD RMS 템플릿의 이름: **인쇄** <br /><br />API 상수 또는 값: `IPC_GENERIC_PRINT L"PRINT"`|
 |일반 이름: **회신** <br /><br />정책에서 인코딩: **REPLY**|**받는 사람** 또는 **참조** 줄의 변경을 허용하지 않고 메일 클라이언트에서 **회신** 옵션을 사용할 수 있게 합니다.<br /><br />참고: 다른 조직에 메일을 보내면 받는 사람의 Outlook 클라이언트 또는 Outlook 웹앱에 회신과 함께 **콘텐츠 편집, 편집** 권한(일반 이름)이 필요합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **회신**<br /><br />AD RMS 템플릿의 이름: **회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLY`|

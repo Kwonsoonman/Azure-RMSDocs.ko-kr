@@ -4,7 +4,7 @@ description: "Azure RMS(Azure Rights Management)는 Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a85c6135be95bb51ba4ac336ab78131382232626
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 53712ee69ac7ab54feb3036ada4eb81383caf786
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 권한 관리란?
@@ -34,7 +34,7 @@ Azure RMS(Azure Rights Management)는 [Azure Information Protection](what-is-inf
 
 ![Azure RMS의 작동 방식](../media/AzRMS_elements.png)
 
-여러 클라우드 구독으로 Azure RMS 보호를 사용할 수 있으며 여러 기능을 지원합니다. [Azure Information Protection](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection) 사이트에서 사용 가능한 구독 및 지원하는 기능에 대한 자세한 내용을 확인할 수 있습니다.
+여러 클라우드 구독으로 Azure RMS 보호를 사용할 수 있으며 여러 기능을 지원합니다. [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 사이트에서 사용 가능한 구독 및 지원하는 기능에 대한 자세한 내용을 확인할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

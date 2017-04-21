@@ -4,7 +4,7 @@ description: "관리자가 Azure Information Protection의 Azure Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5c1fad4b9e809a597f48d3bf394f3c097ca938e7
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 091e29319ed3b29937e57c15488234466003e46e
+ms.sourcegitcommit: 1f65f71f742063e2bebcac88f72180d3aa4318a4
 translationtype: HT
 ---
 # <a name="office-365-configuration-for-clients-and-online-services"></a>Office 365: 클라이언트 및 온라인 서비스 구성
@@ -140,7 +140,7 @@ IRM 기능을 사용하도록 Exchange Online을 구성하는 방법에 대한 �
 Azure Rights Management 서비스를 지원하도록 SharePoint Online 및 비즈니스용 OneDrive를 구성하려면 먼저 SharePoint 관리 센터를 통해 SharePoint Online에 대해 IRM(정보 권한 관리) 서비스가 사용되도록 해야 합니다. 그러면 사이트 소유자는 SharePoint 목록 및 문서 라이브러리를 IRM으로 보호할 수 있으며, 사용자는 비즈니스용 OneDrive 라이브러리를 IRM으로 보호하여 해당 라이브러리에 저장된 문서와 다른 사람과 공유하는 문서가 Azure Rights Management 서비스를 통해 자동으로 보호되도록 할 수 있습니다.
 
 > [!NOTE]
-> SharePoint 및 비즈니스용 OneDrive에 대한 IRM 보호 라이브러리는 사용자가 이전 동기화 클라이언트인 비즈니스용 OneDrive 동기화 클라이언트(Groove.exe)를 사용하지 않는 경우에만 온라인 다운로드를 지원합니다. 새 [OneDrive 동기화 클라이언트(OneDrive.exe)](https://support.office.com/article/Enable-users-to-sync-SharePoint-files-with-the-new-OneDrive-sync-client-22e1f635-fb89-49e0-a176-edab26f69614)는 현재 Rights Management 보호를 지원하지 않습니다. 
+> IRM으로 보호되는 SharePoint용 라이브러리 및 비즈니스용 OneDrive에서는 현재 새 [OneDrive 동기화 클라이언트(OneDrive.exe)](https://support.office.com/article/Enable-users-to-sync-SharePoint-files-with-the-new-OneDrive-sync-client-22e1f635-fb89-49e0-a176-edab26f69614)를 지원합니다. SharePoint 라이브러리 및 비즈니스용 OneDrive에 IRM 보호를 사용하려면 이전 동기화 클라이언트인 비즈니스용 OneDrive 동기화 클라이언트(Groove.exe)를 사용하세요. 클라이언트의 두 버전을 모두 동시에 실행할 수 있습니다. 자세한 내용은 참조 [Restrictions and limitations when you sync files and folders](https://support.microsoft.com/help/3125202/restrictions-and-limitations-when-you-sync-files-and-folders)(파일 및 폴더를 동기화할 때 제한 사항)를 참조하세요.
 
 SharePoint Online에 대한 IRM(정보 권한 관리) 서비스를 사용하도록 설정하려면 Office 웹 사이트의 다음 지침을 참조하세요.
 

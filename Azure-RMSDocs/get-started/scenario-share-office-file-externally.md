@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: c10a4d7b-f57a-4a43-b66e-477777be59cc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 629717055620af93c5870fff4ef833dc7931e622
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 89c563ebcf62dc80cbda15048780adf5e414e70b
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="scenario---share-an-office-file-with-users-in-another-organization"></a>시나리오 - 다른 조직의 사용자와 Office 파일 공유
@@ -46,7 +46,7 @@ translationtype: HT
 |Azure 권한 관리가 활성화되었는지 여부|[Azure 권한 관리 활성화](https://technet.microsoft.com/library/jj658941.aspx)|
 |Windows를 실행하는 사용자의 컴퓨터에 Rights Management 공유 응용 프로그램이 배포되었는지 여부|[Microsoft Rights Management 공유 응용 프로그램 자동 배포](../rms-client/sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)|
 |사용자가 Office 2013의 Outlook을 사용 중인지 여부|사용자가 Office 2016 또는 Office 2010을 사용 중인 경우에는 그림이 사용자에게 표시되는 화면과 일치하도록 스크린샷을 해당 버전의 그림으로 바꿉니다.|
-|Azure Information Protection용 구독에는 문서 추적이 포함되어 있습니다.|구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 사용자가 사용자 지침의 모든 단계를 완료할 수 없습니다. 이 경우에는 해당 기능을 지원하는 구독을 구입하거나 사용자 지침을 수정하여 이러한 기능을 사용하는 단계를 제거합니다.<br /><br />Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 확인하세요.|
+|Azure Information Protection용 구독에는 문서 추적이 포함되어 있습니다.|구독에 문서 추적 및 취소 기능이 포함되어 있지 않으면 사용자가 사용자 지침의 모든 단계를 완료할 수 없습니다. 이 경우에는 해당 기능을 지원하는 구독을 구입하거나 사용자 지침을 수정하여 이러한 기능을 사용하는 단계를 제거합니다.<br /><br />Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 확인하세요.|
 
 ## <a name="user-documentation-instructions"></a>사용자 문서 지침
 다음 템플릿을 사용하여 최종 사용자 통신에 사용자 지침을 복사해서 붙여넣고 사용자 환경에 맞게 다음과 같이 수정합니다.

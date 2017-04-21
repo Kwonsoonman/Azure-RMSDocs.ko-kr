@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a60731bd-f78d-4f00-bb3e-354637b312ab
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12f681ccfbcd7da2192df2be057f92d31a856bda
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 859ec4aa127b995ca9acb6409b8644a0c87d7ffd
+ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
 translationtype: HT
 ---
 # <a name="how-users-sign-up-for-rms-for-individuals"></a>개인용 RMS 등록 방법
@@ -33,7 +33,7 @@ translationtype: HT
 
 3.  **로그인**을 클릭합니다.
 
-    Microsoft는 메일 주소를 사용하여 조직에 이미 [Azure Information Protection 유료 구독](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-pricing) 또는 [Azure Rights Management를 사용하는 데이터 보호를 포함하는 Office 365 구독](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있는지 확인합니다. 구독이 있으면 개인용 RMS가 필요하지 않고 즉시 로그인되며 개인용 RMS 셀프서비스 가입이 취소됩니다. 유료 구독이 없으면 다음 단계를 진행합니다.
+    Microsoft는 메일 주소를 사용하여 조직에 이미 [Azure Information Protection 유료 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 또는 [Azure Rights Management를 사용하는 데이터 보호를 포함하는 Office 365 구독](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있는지 확인합니다. 구독이 있으면 개인용 RMS가 필요하지 않고 즉시 로그인되며 개인용 RMS 셀프서비스 가입이 취소됩니다. 유료 구독이 없으면 다음 단계를 진행합니다.
 
 4.  입력한 주소로 확인 메일 메시지가 전송될 때까지 기다립니다. 이 메일은 Office 365 팀support@email.microsoftonline.com에서 보내며 제목은 **Microsoft Azure Information Protection 등록 완료**입니다.
 
@@ -83,7 +83,7 @@ translationtype: HT
 
     -   조직에서 사용되는 권한 관리의 모든 활동을 기록할 수 있습니다. 이 기능은 매우 강력한데, 보호되고 있는 파일과 보호된 파일에 성공적으로 액세스하는 사용자를 모니터링할 수 있을 뿐만 아니라 보호된 파일에 액세스하려고 시도하는 권한 없는 사용자의 잠재적으로 의심스러운 동작을 식별할 수 있기 때문입니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
 
-    -   [구독](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)에서 지원한다면 사용자에게 보호되는 문서를 추적하고 취소할 수 있는 기능을 제공합니다. 자세한 내용은 [Azure Information Protection 사용자 가이드](../rms-client/client-user-guide.md)에서 [문서 추적 및 해지](../rms-client/client-track-revoke.md)를 참조하세요.
+    -   [구독](https://www.microsoft.com/cloud-platform/azure-information-protection-features)에서 지원한다면 사용자에게 보호되는 문서를 추적하고 취소할 수 있는 기능을 제공합니다. 자세한 내용은 [Azure Information Protection 사용자 가이드](../rms-client/client-user-guide.md)에서 [문서 추적 및 해지](../rms-client/client-track-revoke.md)를 참조하세요.
 
     -   Azure Rights Management의 테넌트 키가 IT 정책에 따라 온-프레미스에서 생성되어 HSM(하드웨어 보안 모듈)을 통해 Microsoft로 안전하게 전송되도록 BYOK(Bring Your Own Key) 솔루션을 구현할 수 있습니다. 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
 

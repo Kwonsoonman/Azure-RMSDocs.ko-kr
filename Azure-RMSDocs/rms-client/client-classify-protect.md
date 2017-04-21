@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호하는 방법에 대
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: edc8c7227a0f2b493a64f25a26a64aef3a314e39
-ms.sourcegitcommit: df8492aa3687974dc6105dc415c2d959f32e6630
+ms.openlocfilehash: f461b349440043bcf5d8624731eda86968194462
+ms.sourcegitcommit: 52b7502e7049358f9fc0a418625bb460bb81479f
 translationtype: HT
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
@@ -133,7 +133,7 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 
     - **권한 선택**: 선택한 하나 이상의 파일을 보호할 때 사용자에게 제공할 액세스 권한 수준을 선택합니다.
     
-    - **사용자 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 주소록을 사용하여 조직 내 사용자와 그룹을 검색한 다음 선택할 수 있습니다. 다른 조직 사용자의 경우에는 전체 전자 메일 주소를 지정해야 합니다. 개인 전자 메일 주소는 현재 지원되지 않으므로 업무용 전자 메일 주소를 사용해야 합니다.
+    - **사용자 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 개인 메일 주소는 현재 지원되지 않습니다.
         
     - **액세스 만료**: 특정 기간에만 제공해야 하는 파일에 한해 이 옵션을 선택합니다. 그러면 지정한 사용자가 지정된 날짜 이후로는 선택한 하나 이상의 파일을 열 수 없습니다. 원본 파일은 계속 열 수 있지만 현재 표준 시간대로 선택한 날짜의 자정이 지나면 지정된 사용자는 파일을 열 수 없습니다.
 

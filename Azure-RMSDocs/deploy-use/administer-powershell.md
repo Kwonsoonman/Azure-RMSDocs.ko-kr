@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스(
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1e2ca63ef811ca6fbce01e79846f18d2fd93d833
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 38c515e482a9d80e10ae691af1d074a78c3771ab
+ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
 translationtype: HT
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
@@ -37,7 +37,7 @@ Azure Information Protection 클라이언트는 이 서비스 쪽 PowerShell 모
 
 |수행할 작업|사용할 cmdlet|
 |-------------------|------------------------------|
-|온-프레미스 Rights Management(AD RMS 또는 Windows RMS)에서 Azure Information Protection으로 마이그레이션|[Import-AadrmTpd](/powershell/aadrm/vlatest//import-aadrmtpd)|
+|온-프레미스 Rights Management(AD RMS 또는 Windows RMS)에서 Azure Information Protection으로 마이그레이션|[Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd)<br /><br />[Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)|
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스에 연결/서비스 연결 끊기|[Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice)<br /><br />[Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice)|
 |직접 테넌트 키 생성/관리 - BYOK(Bring Your Own Key) 시나리오|[Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey)<br /><br />[Get-AadrmKeys](/powershell/aadrm/vlatest/get-aadrmkeys)|
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스 활성화/비활성화<br /><br />관리 포털에서 이러한 작업을 수행할 수도 있습니다. 자세한 내용은 [Azure Rights Management 서비스 활성화](activate-service.md)를 참조하세요.|[Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)<br /><br />[Disable-Aadrm](/powershell/aadrm/vlatest/disable-aadrm)|

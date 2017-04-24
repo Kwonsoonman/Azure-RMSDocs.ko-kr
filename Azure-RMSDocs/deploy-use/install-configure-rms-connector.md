@@ -4,7 +4,7 @@ description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 100ac0f42d82eb02635187dbb0c91422d3097872
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 21eab2a693147b4e6562a8bcdff8cece7d706432
+ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
 translationtype: HT
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
@@ -27,7 +27,7 @@ translationtype: HT
 
 ## <a name="installing-the-rms-connector"></a>RMS 커넥터 설치
 
-1.  RMS 커넥터를 실행할 컴퓨터(최소&2;대)를 식별합니다. 이러한 컴퓨터는 필수 조건에 나열되어 있는 최소 사양을 충족해야 합니다.
+1.  RMS 커넥터를 실행할 컴퓨터(최소 2대)를 식별합니다. 이러한 컴퓨터는 필수 조건에 나열되어 있는 최소 사양을 충족해야 합니다.
 
     > [!NOTE]
     > 테넌트(Office 365 테넌트 또는 Azure AD 테넌트)당 하나의 RMS 커넥터(고가용성을 위해 여러 대의 서버로 구성)를 설치합니다. Active Directory RMS와 달리 각 포리스트에 RMS 커넥터를 설치할 필요가 없습니다.
@@ -53,7 +53,7 @@ translationtype: HT
 ## <a name="entering-credentials"></a>자격 증명 입력
 RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있는 권한이 있는 계정의 자격 증명을 입력해야 합니다. 예를 들면 **admin@contoso.com**을 입력한 다음 이 계정에 대한 암호를 지정할 수 있습니다.
 
-이 암호에 대한 몇 가지 문자 제한이 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증이 실패하고 사용자 이름과 암호 조합이 잘못되었습니다.라는 오류 메시지가 표시됩니다. 이 사항을 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나, 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
+이 암호에 대한 몇 가지 문자 제한이 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도, “RMS 커넥터에 대한 인증에 실패하고 **사용자 이름과 암호 조합이 잘못되었습니다.**”라는 오류 메시지가 표시됩니다. 이 사항을 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나, 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
 
 또한 [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구현한 경우 지정한 계정이 콘텐츠를 보호할 수 있어야 합니다. 예를 들어 "IT department" 그룹에 콘텐츠를 보호하는 기능을 제한한 경우 여기서 지정한 계정은 해당 그룹의 구성원이어야 합니다. 그렇지 않으면 다음과 같은 오류 메시지가 표시됩니다. **관리 서비스 및 조직의 위치를 검색하려는 시도가 실패했습니다. 조직에 Microsoft Rights Management 서비스를 사용할 수 있는지 확인합니다.**
 

@@ -4,7 +4,7 @@ description: "Azure Information Protection를 사용한 분류 및 레이블 지
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: b6980bdcecb02471159f7873e80a05d234726d0e
-ms.sourcegitcommit: 85aaded97659bbc0a3932569aab29b1bf472fea4
+ms.openlocfilehash: 69ff30dea84717557153bbd0bf2013d3fc06d320
+ms.sourcegitcommit: 0b5aa77825463eccfb4856aa549a2dae80a1e361
 translationtype: HT
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
@@ -48,9 +48,9 @@ Azure Information Protection 정책을 구성하려면 Azure Active Directory의
 
 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 레이블 지정 기능을 확인하고 사용해 보기 위해 포털에 로그인하지 않아도 됩니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure Portal에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
 
-## <a name="which-options-in-the-azure-portal-are-p1-or-p2"></a>Azure Portal의 옵션은 P1인가요, P2인가요?
+## <a name="which-options-in-the-azure-portal-are-p2"></a>Azure Portal에서 어떤 옵션이 P2인가요?
 
-**Azure Information Protection Premium 1**(P1) 구독 및 **Azure Information Protection Premium 2**(P2) 구독에 포함되는 기능을 확인하려면 Azure Information Protection 사이트에서 [기능 목록](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)을 참조하세요. 그러나 일반적으로 자동 분류, HYOK(Hold Your Own Key) 등의 고급 기능은 Azure Information Protection Premium 2 구독에서만 제공됩니다.
+**Azure Information Protection Premium 2**(P2) 구독이 필요한 Azure Portal의 옵션은 이제 옵션을 식별하기 위한 정보 팝업 메시지를 포함합니다. P1 및 P1 구독에 포함된 기능에 대한 자세한 내용은 Azure Information Protection 사이트의 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 참조하세요.
 
 ## <a name="can-a-file-have-more-than-one-classification"></a>파일에 분류가 여러 개 있을 수 있나요?
 

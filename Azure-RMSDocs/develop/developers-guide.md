@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: fbd76e377c8b11b8e64187685144010dce9bbb25
-ms.sourcegitcommit: ee432bdb6783bfe311a7ebbc9a5f20a7c2ae759c
+ms.openlocfilehash: 16e2137dead237e59ed1d4db9e88a2a29f9595a9
+ms.sourcegitcommit: bf103c02966357eccad0a4912851ceae6937c7b3
 translationtype: HT
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
@@ -82,6 +82,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 - [서비스 앱을 다른 테넌트에 배포하는 방법] (how-to-deploy-app.md)
 - [RMS 서버를 설치 및 구성하는 방법(서비스)](how-to-install-and-configure-an-rms-server.md)
 - [문서 추적을 사용하는 방법(사용자)](how-to-use-document-tracking.md)
+- [Azure Information Protection에서 대칭 키를 갱신하는 방법](how-to-renew-symmetric-key.md)
 
 ### <a name="security-and-authentication"></a>보안 및 인증
 
@@ -101,7 +102,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 ## <a name="videos"></a>동영상
 
-Microsoft의 Dan Plastina가 제공하는 [Azure Information Protection 소개](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection)를 확인해 보세요.
+Microsoft의 Dan Plastina가 제공하는 [Azure Information Protection 소개](https://www.microsoft.com/cloud-platform/azure-information-protection)를 확인해 보세요.
 
 이러한 비디오는 Micorsoft 2016 Ignite 컨퍼런스에서 소개되었던 내용입니다.
 

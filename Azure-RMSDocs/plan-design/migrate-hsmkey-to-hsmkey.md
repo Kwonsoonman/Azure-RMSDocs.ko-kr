@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dc2b5e083b016953688214dddbe42f15b675641b
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 936b6e66c7ca0f94e437b91847166b51cf939b3f
+ms.sourcegitcommit: 384461f0e3fccd73cd7eda3229b02e51099538d4
 translationtype: HT
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
@@ -23,7 +23,7 @@ translationtype: HT
 
 [AD RMS에서 Azure Information Protection으로 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS HSM으로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다. 
 
-선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)로 돌아가서 다른 구성을 선택합니다.
+선택한 구성 시나리오가 아닌 경우 [4단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)로 돌아가서 다른 구성을 선택합니다.
 
 > [!NOTE]
 > 이러한 지침에서는 AD RMS 키가 모듈로 보호되어 있다고 가정합니다. 이는 가장 일반적인 경우입니다. 
@@ -49,7 +49,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
     키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333과 같이 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
 
-2. 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Set-AzureRmKeyVaultAccessPolicy](https://msdn.microsoft.com/en-us/library/mt603625(v=azure.300\).aspx) cmdlet을 사용하여 Azure Rights Management 서비스 주체가 Azure Information Protection 테넌트 키를 저장하는 Key Vault에 액세스하도록 권한을 부여합니다. 필요한 권한은 decrypt, encrypt, unwrapkey, wrapkey, verify 및 sign입니다.
+2. 인터넷에 연결된 워크스테이션의 PowerShell 세션에서 [Set-AzureRmKeyVaultAccessPolicy](/powershell/resourcemanager/azurerm.keyvault/v2.7.0/set-azurermkeyvaultaccesspolicy) cmdlet을 사용하여 Azure Rights Management 서비스 주체가 Azure Information Protection 테넌트 키를 저장하는 Key Vault에 액세스하도록 권한을 부여합니다. 필요한 권한은 decrypt, encrypt, unwrapkey, wrapkey, verify 및 sign입니다.
     
     예를 들어 Azure Information Protection에 대해 만든 주요 자격 증명 모음의 이름이 contoso-byok-ky이고 리소스 그룹 이름이 contoso-byok-rg인 경우 다음 명령을 실행합니다.
     
@@ -62,9 +62,9 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 이 절차는 Azure Information Protection의 관리자가 수행합니다.
 
-1.  인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Connnect-AadrmService](https://msdn.microsoft.com/library/dn629415.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에 연결합니다.
+1.  인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 [Connnect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice) cmdlet을 사용하여 Azure Rights Management 서비스에 연결합니다.
     
-    그런 다음 [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet을 사용하여 처음에 내보낸 트러스트된 게시 도메인(.xml) 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 .xml 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure RMS에서 콘텐츠를 보호하는 데 사용할 HSM 키에 해당하는 내보낸 트러스트된 게시 도메인이 포함되어 있는 파일을 선택하세요. 
+    그런 다음 [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd) cmdlet을 사용하여 처음에 내보낸 트러스트된 게시 도메인(.xml) 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 .xml 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure RMS에서 콘텐츠를 보호하는 데 사용할 HSM 키에 해당하는 내보낸 트러스트된 게시 도메인이 포함되어 있는 파일을 선택하세요. 
     
     이 cmdlet을 실행하려면 이전 단계에서 식별된 키에 대한 URL이 필요합니다.
     
@@ -78,15 +78,15 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 2.  명령이 완료되면 트러스트된 게시 도메인을 내보내 만든 나머지 각 .xml 파일에 대해 1단계를 반복합니다. 예를 들어 AD RMS 클러스터를 암호화 모드 2로 업그레이드한 경우 추가 파일을 하나 이상 가져와야 합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다.  
 
-3.  [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
+3.  [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
 
     ```
     Disconnect-AadrmService
     ```
 
     > [!NOTE]
-    > Azure Key Vault에서 Azure Information Protection 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet을 사용합니다.
+    > Azure Key Vault에서 Azure Information Protection 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](/powershell/aadrm/vlatest/get-aadrmkeys) Azure RMS cmdlet을 사용합니다.
 
-이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
+이제 [5단계. Azure Information Protection 테넌트 활성화](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)로 이동할 준비가 되었습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 04/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c8afaa635f34f6d052cd646387d37f68bbcdff45
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
+ms.openlocfilehash: f22d997b69c5c88c5e83d29de137626facad5849
+ms.sourcegitcommit: 05b7e06e330a33936aeeef32934717f870963612
 translationtype: HT
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
@@ -47,21 +47,17 @@ Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](htt
 
 **FastTrack** 자격: 적격 플랜을 통해 Azure Information Protection에 150개 이상의 라이선스를 구매하면 FastTrack 센터 혜택을 사용할 수 있습니다. FastTrack 센터 혜택을 사용하면 Microsoft 전문가와 협업하여 적격 서비스를 평가, 수정 및 활성화할 수 있습니다. 자세한 내용은 [Azure Rights Management용 FastTrack 센터 혜택](/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)을 참조하세요.
 
-다른 고객의 경우는 Azure Information Protection을 구한 방법에 따라 다음과 같은 지원 채널을 사용합니다.
+다른 고객의 경우는 Azure Information Protection 구독에 따라 다음 표의 지원 채널을 사용합니다.
 
-- **Azure Information Protection**(독립 실행형): 
-    - Azure Portal의 [도움말 + 지원](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)에서 **새 지원 요청**을 만듭니다. 메시지가 표시되면 **기본 사항** 블레이드에서 **문제 유형**에 대해 **기술**을 선택하고 **구독** 옵션에 대해 **기술 지원이 포함된 구독**을 선택합니다.
-    
-- **Office 365 구독을 통한 Azure Information Protection**: 
-    - 전화 번호와 Office 365 관리 포털을 통한 지원 문의 방법은 [비즈니스용 Office 365 지원 문의 - 관리자 도움말](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 참조하세요. 
-    
-- **EMS(Enterprise Mobility + Security)를 통한 Azure Information Protection**: 
-    - Azure Portal의 [도움말 + 지원](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)에서 **새 지원 요청**을 만듭니다. 메시지가 표시되면 **기본 사항** 블레이드에서 **문제 유형**에 대해 **기술**을 선택하고 **구독** 옵션에 대해 **기술 지원이 포함된 구독**을 선택합니다.
-    
-- **SPE(Secure Productive Enterprise)를 통한 Azure Information Protection**: 
-    - [Office 365 지원 채널](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 사용합니다.
+|구독|지침|
+|----------------|---------------|
+|Azure Information Protection(독립 실행형)|Azure Portal의 [도움말 + 지원](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)에서 **새 지원 요청**을 선택합니다.<br /><br />메시지가 표시되면 **기본 사항** 블레이드에서 **문제 유형**에 대해 **기술**을 선택하고 서비스에 대해 **Information Protection**을 선택합니다. <br /><br />또한 다음 옵션 중 하나가 선택되어 있는지 확인합니다.<br /><br />- **기술 지원이 포함된 구독**: Azure에 대한 유료 및 평가판 구독이 있는 경우 이 옵션이 표시됩니다.<br /><br /> - **기술 지원 - 포함됨**: Azure Active Directory 및 Azure Rights Management 사용자 지정 템플릿을 구성할 Azure 평가판 구독이 있는 경우에만 이 옵션이 표시됩니다.|
+|Azure Information Protection 및 Office 365 구독<br /><br />Office 365 구독을 포함하는 Azure Rights Management|전화 번호와 Office 365 관리 포털을 통한 지원 문의 방법은 [비즈니스용 Office 365 지원 문의 - 관리자 도움말](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 참조하세요.|
+|EMS(Enterprise Mobility + Security)를 통한 Azure Information Protection|Azure Portal의 [도움말 + 지원](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)에서 **새 지원 요청**을 선택합니다.<br /><br />메시지가 표시되면 **기본 사항** 블레이드에서 **문제 유형**에 대해 **기술**을 선택하고 서비스에 대해 **Information Protection**을 선택합니다. <br /><br />또한 다음 옵션 중 하나가 선택되어 있는지 확인합니다.<br /><br />- **기술 지원이 포함된 구독**: Azure에 대한 유료 및 평가판 구독이 있는 경우 이 옵션이 표시됩니다.<br /><br /> - **기술 지원 - 포함됨**: Azure Active Directory 및 Azure Rights Management 사용자 지정 템플릿을 구성할 Azure 평가판 구독이 있는 경우에만 이 옵션이 표시됩니다.|
+|SPE(Secure Productive Enterprise)를 통한 Azure Information Protection|[Office 365 지원 채널](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)을 사용합니다.|
 
 추가적인 지원 옵션은 Microsoft 담당자에게 문의하세요. 
+
 
 ### <a name="self-help"></a>자가 진단
 

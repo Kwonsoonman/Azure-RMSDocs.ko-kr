@@ -4,7 +4,7 @@ description: "Microsoft Azure Information Protection과 관련된 단어, 구 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2017
+ms.date: 04/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5fecc61fb77625047a5ebedad4ff906fe8c27bbe
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 7ed60b1a2c02007668a11fdf8278bf196ee84521
+ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
 translationtype: HT
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure Information Protection에 사용되는 용어
@@ -43,6 +43,7 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 |일반 보호|모든 파일 형식을 암호화하고 권한 없는 사용자가 파일을 열지 못하도록 하는 보호 수준입니다. 파일이 열리고 나면 이제 파일의 암호가 해제되어 기본적으로 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 지원하지 않는 응용 프로그램에서 파일을 사용할 수 있습니다.|
 |HYOK|*Hold Your Own Key*를 참조하세요.|
 |Hold Your Own Key|흔히 약어로 *HYOK*라고 합니다.<br /><br />일반적으로 규정 또는 준수 때문에 온-프레미스에서 고유한 키를 생성 및 저장하려는 조직을 위한 구성 및 토폴로지 옵션입니다.|
+|키 개체|테넌트 키의 컨텍스트에서 암호화 작업에 대해 Azure Rights Management 서비스에서 필요로 하는 메타데이터를 포함하는 엔터티입니다.|
 |정보 보호|경우에 따라 약어로 *IP*라고 합니다.<br /><br />무단 액세스로부터 데이터와 파일을 보호하는 것을 지칭하는 업계 표준의 일반 용어로서, 메일 또는 문서 공유를 통해 데이터와 파일이 조직 경계를 벗어난 후에도 해당합니다. Microsoft Azure Information Protection은 IP(정보 보호) 솔루션의 한 가지 예입니다.|
 |정보 권한 관리|흔히 약어로 *IRM*이라고 합니다.<br /><br />Office 서비스(예: Exchange Server, Word 및 SharePoint Online)와 함께 Microsoft Rights Management 서비스를 지원하는 기능을 설명하는 데 사용되는 용어입니다.|
 |IRM|*정보 권한 관리*를 참조하세요.|

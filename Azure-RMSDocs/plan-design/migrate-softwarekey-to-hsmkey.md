@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3b9350462f363ed365c3f37aabad79ce7338b531
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: bcb0d7ffe9576f02e6388451f16a8341ee4325c2
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
@@ -23,7 +23,7 @@ translationtype: HT
 
 [AD RMS에서 Azure Information Protection으로 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다. 
 
-선택한 구성 시나리오가 아닌 경우 [2단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase1.md#step-2-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)로 돌아가서 다른 구성을 선택합니다.
+선택한 구성 시나리오가 아닌 경우 [4단계. AD RMS에서 구성 데이터를 내보낸 후 Azure RMS로 가져오기](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)로 돌아가서 다른 구성을 선택합니다.
 
 다음은 Azure Information Protection에 AD RMS 구성을 가져오기 위한 네 부분으로 구성된 절차로, 이 작업을 수행하면 Azure Key Vault에서 사용자가 관리하는(BYOK) Azure Information Protection 테넌트 키를 만들 수 있습니다.
 
@@ -35,16 +35,16 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 
 > [!TIP]
-> Azure 주요 자격 증명 모음에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure 주요 자격 증명 모음 시작](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)을 먼저 검토하면 도움이 됩니다. 
+> Azure 주요 자격 증명 모음에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure 주요 자격 증명 모음 시작](/azure/key-vault/key-vault-get-started)을 먼저 검토하면 도움이 됩니다. 
 
 
 ## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>1부: 구성 데이터에서 SLC 키를 추출하고 온-프레미스 HSM으로 키 가져오기
 
-1.  Azure 주요 자격 증명 모음 관리자: Azure 주요 자격 증명 모음 설명서에서 [Azure 주요 자격 증명 모음에 대한 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
+1.  Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
 
-    -   **키를 생성하여 Azure 주요 자격 증명 모음 HSM으로 전송**: [1단계: 인터넷에 연결된 워크스테이션 준비](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
+    -   **키를 생성하여 Azure 주요 자격 증명 모음 HSM으로 전송**: [1단계: 인터넷에 연결된 워크스테이션 준비](/azure/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
 
-    -   **인터넷을 통해 테넌트 키 생성 및 전송**: [2단계: 연결이 끊어진 워크스테이션 준비](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-2-prepare-your-disconnected-workstation)
+    -   **인터넷을 통해 테넌트 키 생성 및 전송**: [2단계: 연결이 끊어진 워크스테이션 준비](/azure/key-vault-hsm-protected-keys/#step-2-prepare-your-disconnected-workstation)
 
     내보낸 구성 데이터(.xml) 파일에 테넌트 키가 이미 있으므로, 테넌트 키를 생성하는 단계는 수행하지 않도록 합니다. 대신 도구를 실행하여 파일에서 이 키를 추출한 후 온-프레미스 HSM으로 가져옵니다. 도구를 실행하면 파일 두 개가 만들어집니다.
 
@@ -110,52 +110,60 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 
 ## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>2부: HSM 키를 패키지한 후 Azure 주요 자격 증명 모음으로 전송
 
-1.  Azure 주요 자격 증명 모음 관리자: Azure 주요 자격 증명 모음 설명서에서 [Azure 주요 자격 증명 모음에 대한 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
+Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
 
-    -   [4단계: 키 전송 준비](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
+- [4단계: 키 전송 준비](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
 
-    -   [5단계: Azure Key Vault에 키 전송](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
+- [5단계: Azure Key Vault에 키 전송](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
 
-    키가 이미 있으므로 키 쌍을 생성하는 단계를 수행하지 마세요. 대신 명령을 실행하여 온-프레미스 HSM에서 이 키를 전송합니다(이 예에서는 KeyIdentifier 매개 변수에 "contosobyok" 사용).
+키가 이미 있으므로 키 쌍을 생성하는 단계를 수행하지 마세요. 대신 명령을 실행하여 온-프레미스 HSM에서 이 키를 전송합니다(이 예에서는 KeyIdentifier 매개 변수에 "contosobyok" 사용).
 
-    Azure 주요 자격 증명 모음으로 키를 전송하기 전에 권한이 낮춰진 키 복사본을 만들고(4.1단계) 키를 암호화할 때(4.3단계) KeyTransferRemote.exe 유틸리티가 **Result: SUCCESS**를 반환하는지 확인합니다.
+Azure 주요 자격 증명 모음으로 키를 전송하기 전에 권한이 낮춰진 키 복사본을 만들고(4.1단계) 키를 암호화할 때(4.3단계) KeyTransferRemote.exe 유틸리티가 **Result: SUCCESS**를 반환하는지 확인합니다.
 
-    키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**과 같이 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Information Protection의 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
+키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**과 같이 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Information Protection의 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
 
-    이제 HSM 키를 Azure 주요 자격 증명 모음으로 전송했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
+그러면 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet을 사용하여 Key Vault에 액세스할 Azure Rights Management 서비스 주체에 권한을 부여할 수 있습니다. 필요한 권한은 decrypt, encrypt, unwrapkey, wrapkey, verify 및 sign입니다.
+
+예를 들어 Azure Information Protection에 대해 만든 Key Vault의 이름이 contosorms-byok-kv이고 리소스 그룹 이름이 contosorms-byok-rg인 경우 다음 명령을 실행합니다.
+    
+    Set-AzureRmKeyVaultAccessPolicy -VaultName "contosorms-byok-kv" -ResourceGroupName "contosorms-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
+
+이제 HSM 키를 Azure 주요 자격 증명 모음으로 전송했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
 
 ## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>3부: 구성 데이터를 Azure Information Protection으로 가져오기
 
-1.  Azure Information Protection 관리자: 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 TpdUtil 도구를 실행한 후 SLC 키가 제거된 새 구성 데이터 파일(.xml)을 복사합니다.
+1. Azure Information Protection 관리자: 인터넷에 연결된 워크스테이션 및 PowerShell 세션에서 TpdUtil 도구를 실행한 후 SLC 키가 제거된 새 구성 데이터 파일(.xml)을 복사합니다.
 
-2. [Import-AadrmTpd](https://msdn.microsoft.com/library/dn857523.aspx) cmdlet을 사용하여 첫 번째 .xml 파일을 업로드합니다. 트러스트된 게시 도메인이 여러 개 있어 이러한 파일이 두 개 이상 있는 경우, 마이그레이션 후 Azure Information Protection에서 콘텐츠를 보호하는 데 사용할 HSM 키에 해당하는 파일을 선택합니다.
+2. [Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd) cmdlet을 사용하여 첫 번째 .xml 파일을 업로드합니다. 예를 들어 AD RMS 클러스터를 암호화 모드 2로 업그레이드한 경우 추가 파일을 하나 이상 가져와야 합니다.
 
-    이 cmdlet을 실행하려면 이전 단계에서 식별된 키에 대한 URL이 필요합니다.
+    이 cmdlet을 실행하려면 구성 데이터 파일에 대해 이전에 지정한 암호 및 이전 단계에서 식별된 키의 URL이 필요합니다.
 
-    예를 들어 이전 단계의 키 URL 값과 C:\contoso_keyless.xml의 구성 데이터 파일을 사용하여 다음을 실행합니다.
+    예를 들어 이전 단계의 키 URL 값 및 C:\contoso_keyless.xml의 구성 데이터 파일을 사용하는 경우 암호를 저장하려면 다음을 먼저 실행합니다.
+    
+    ```
+    $TPD_Password = Read-Host -AsSecureString
+    ```
+    
+   지정한 암호를 입력하여 구성 데이터 파일을 내보냅니다. 그리고 다음 명령을 실행한 후 이 작업을 수행하려는 것을 확인합니다.
 
     ```
-    Import-AadrmTpd -TpdFile "C:\contoso_keyless.xml" -ProtectionPassword –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Active $True -Verbose
+    Import-AadrmTpd -TpdFile "C:\contoso_keyless.xml" -ProtectionPassword $TPD_Password –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
     ```
 
-    구성 데이터 파일에 대해 이전에 지정한 암호를 입력하라는 메시지가 표시되면 입력한 후 이 작업을 수행할 것임을 확인합니다.
+    이 가져오기의 일부로, SLC 키를 가져오고 보관됨으로 자동 설정됩니다.
 
-    구성 데이터 파일이 둘 이상 있는 경우 나머지 파일에 대해 이 명령을 반복합니다. 예를 들어 AD RMS 클러스터를 암호화 모드 2로 업그레이드한 경우 추가 파일을 하나 이상 가져와야 합니다. 하지만 이러한 파일의 경우 Import 명령을 실행할 때 **-Active**를 **false**로 설정합니다.
+3. 각 파일을 업로드한 경우 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)를 실행하여 AD RMS 클러스터에서 현재 활성 SLC 키와 일치하는 가져온 키를 지정할 수 있습니다.
 
-
-
-3.  [Disconnect-AadrmService](https://msdn.microsoft.com/library/azure/dn629416.aspx) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
+4. [Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice) cmdlet을 사용하여 Azure Rights Management 서비스에서 연결을 끊습니다.
 
     ```
     Disconnect-AadrmService
     ```
 
-    > [!NOTE]
-    > Azure Key Vault에서 Azure Information Protection 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](https://msdn.microsoft.com/library/dn629420.aspx) Azure RMS cmdlet을 사용합니다.
+Azure Key Vault에서 Azure Information Protection 테넌트 키가 사용하는 키를 나중에 확인해야 하는 경우 [Get-AadrmKeys](/powershell/aadrm/vlatest/get-aadrmkeys) Azure RMS cmdlet을 사용합니다.
 
 
-이제 [3단계. Azure Information Protection 테넌트를 활성화합니다](migrate-from-ad-rms-phase1.md#step-3-activate-your-azure-information-protection-tenant).
+이제 [5단계. Azure Rights Management 서비스 활성화](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)로 이동할 수 있습니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

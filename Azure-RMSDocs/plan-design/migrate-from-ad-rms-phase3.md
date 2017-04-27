@@ -1,214 +1,61 @@
 ---
 title: "AD RMS-Azure Information Protection 마이그레이션 - 3단계"
-description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 세 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 6~7단계가 포함됩니다."
+description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 세 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 7단계가 포함됩니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/14/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
+ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1124019309749574241bf25e6b0eb58a50771afc
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 55dfd0ef99e1b220c65c9a8be994de161e98d8ec
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
-# <a name="migration-phase-3---supporting-services-configuration"></a>마이그레이션 3단계 - 지원 서비스 구성
+# <a name="migration-phase-3---client-side-configuration"></a>마이그레이션 3단계 - 클라이언트 쪽 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
 
+AD RMS에서 Azure Information Protection으로 마이그레이션 3단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 7단계를 설명합니다.
 
-AD RMS에서 Azure Information Protection으로 마이그레이션 3단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 6-7단계를 설명합니다.
+모든 클라이언트를 한 번에 마이그레이션할 수 없는 경우 클라이언트 배치에 대해 이러한 절차를 실행합니다. 배치에서 마이그레이션할 Windows 컴퓨터가 있는 각 사용자의 경우 앞에서 만든 **AIPMigrated** 그룹에 사용자를 추가합니다.
 
+## <a name="step-7-reconfigure-clients-to-use-azure-information-protection"></a>7단계. Azure Information Protection을 사용하도록 클라이언트 다시 구성
 
-## <a name="step-6-configure-irm-integration-for-exchange-online"></a>6단계. Exchange Online에 대한 IRM 통합 구성
+이 단계에서는 마이그레이션 스크립트를 사용하여 AD RMS 클라이언트를 다시 구성합니다. 스크립트는 AD RMS 대신 Azure Rights Management 서비스를 사용하도록 Windows 컴퓨터에서 구성을 다시 설정합니다. 
 
-이전에 AD RMS에서 Exchange Online으로 TDP를 가져온 경우 Azure Information Protection으로 마이그레이션한 후에 템플릿 및 정책 충돌을 방지하기 위해 이 TDP를 제거해야 합니다. 이렇게 하려면 Exchange Online에서 [Remove-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200720%28v=exchg.150%29.aspx) cmdlet을 사용합니다.
+**CleanUpRMS.cmd**:
 
-Azure Information Protection 테넌트 키 토폴로지로 **Microsoft 관리**를 선택한 경우
+- AD RMS 클라이언트에서 해당 구성을 저장하는 데 사용하는 모든 폴더와 레지스트리 키의 내용을 삭제합니다. 이 정보는 클라이언트의 AD RMS 클러스터 위치를 포함합니다.
 
--   [Office 365: 클라이언트 및 온라인 서비스 구성](../deploy-use/configure-office365.md) 문서에서 [Exchange Online: IRM 구성](../deploy-use/configure-office365.md#exchange-online-irm-configuration) 섹션을 참조하세요. 이 섹션에는 Exchange Online 서비스에 연결하고, Azure Information Protection에서 테넌트 키를 가져오고, Exchange Online에 대해 IRM 기능을 사용하도록 설정하는 일반적인 명령이 포함되어 있습니다. 이러한 단계를 완료한 후에 Exchange Online에서 전체 Azure Rights Management 보호 기능을 사용할 수 있게 됩니다.
+**MigrateClient.cmd**:
 
-Azure Information Protection 테넌트 키 토폴로지로 **고객 관리(BYOK)**를 선택한 경우
+- Azure Rights Management 서비스에 대한 사용자 환경(부트스트랩)을 초기화하도록 클라이언트를 구성합니다.
 
--   [BYOK 가격 및 제한 사항](byok-price-restrictions.md) 문서에 설명된 대로 Exchange Online에서 사용할 수 있는 Rights Management 보호 기능이 줄어듭니다.
+-  Azure Rights Management 서비스에 연결하여 AD RMS 클러스터로 보호되는 콘텐츠에 대한 사용권을 가져오도록 클라이언트를 구성합니다. 
 
-## <a name="step-7-deploy-the-rms-connector"></a>7단계. RMS 커넥터 배포
-AD RMS에서 Exchange Server 또는 SharePoint Server의 IRM(정보 권한 관리) 기능을 사용한 경우 먼저 이러한 서버에서 IRM을 사용하지 않도록 설정하고 AD RMS 구성을 제거해야 합니다. 그런 다음 온-프레미스 서버와 Azure Information Protection 보호 서비스 간에 통신 인터페이스(릴레이) 역할을 하는 RMS(권한 관리) 커넥터를 배포합니다.
 
-이 단계를 위해 마지막으로, 여러 AD RMS 데이터 구성 파일(.xml)을 메일 메시지를 보호하는 데 사용된 Azure Information Protection으로 가져온 경우 모든 트러스트된 게시 도메인 URL을 RMS 커넥터로 리디렉션하도록 Exchange Server 컴퓨터의 레지스트리를 수동으로 편집해야 합니다.
+### <a name="client-reconfiguration-by-using-registry-edits"></a>레지스트리 편집을 사용하여 클라이언트 재구성
 
-> [!NOTE]
-> 시작하기 전에 [Azure RMS를 지원하는 온-프레미스 서버](../get-started/requirements-servers.md)에서 Azure Rights Management 서비스가 지원하는 온-프레미스 서버 버전을 확인합니다.
+1. 앞에서 추출한 마이그레이션 스크립트 **CleanUpRMS.cmd** 및 **MigrateClient.cmd**로 돌아갑니다.
 
-### <a name="disable-irm-on-exchange-servers-and-remove-ad-rms-configuration"></a>Exchange Server에서 IRM을 사용하지 않도록 설정하고 AD RMS 구성 제거
+2.  **MigrateClient.cmd**의 지침에 따라 테넌트의 Azure Rights Management 서비스 URL과 AD RMS 클러스터 엑스트라넷 라이선스 URL 및 인트라넷 라이선스 URL의 서버 이름을 포함하도록 스크립트를 수정합니다.
 
-1.  각 Exchange Server에서 다음 폴더를 찾아 해당 폴더의 항목을 모두 삭제합니다. \ProgramData\Microsoft\DRM\Server\S-1-5-18
+    > [!IMPORTANT]
+    > 앞서와 같이 주소 앞 또는 뒤에 추가 공백이 생기지 않도록 주의하세요.
+    > 
+    > 또한 AD RMS 서버에서 SSL/TLS 서버 인증서를 사용하는 경우 라이선스 URL 값의 문자열에 포트 번호 **443**이 포함되어 있는지 확인하세요. 예: https:// rms.treyresearch.net:443/_wmcs/licensing 이 정보는 Active Directory Rights Management Services 콘솔에서 클러스터 이름을 클릭하고 **클러스터 세부 정보** 정보에서 확인할 수 있습니다. URL에 포함된 포트 번호 443이 포함된 경우 스크립트를 수정할 때 이 값을 포함하세요. 예: https://rms.treyresearch.net:**443**. 
 
-2.  Exchange Server 중 하나에서 Exchange [Set_IRMConfiguration](http://technet.microsoft.com/library/dd979792.aspx) cmdlet를 사용하여 내부의 받는 사람에게 전송되는 메시지에 대한 IRM 기능을 사용하지 않도록 설정합니다.
+    *&lt;테넌트 URL&gt;*의 Azure Rights Management 서비스 URL을 검색해야 할 경우 다시 [Azure Rights Management 서비스 URL을 식별하려면](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)을 참조하세요.
 
-    ```
-    Set-IRMConfiguration -InternalLicensingEnabled $false
-    ```
+3.  **AIPMigrated** 그룹의 멤버에서 사용되는 클라이언트 컴퓨터에서 **CleanUpRMS.cmd**를 실행한 다음 **MigrateClient.cmd**를 실행합니다. 예를 들어 이러한 스크립트를 실행하는 그룹 정책 개체를 만들어 이 사용자 그룹에 할당합니다.
 
-3.  그런 후 동일한 cmdlet를 사용하여 외부의 받는 사람에게 전송되는 메시지에 대해 IRM 기능이 사용되지 않도록 설정합니다.
-
-    ```
-    Set-IRMConfiguration -ExternalLicensingEnabled $false
-    ```
-
-4.  다음에는 동일한 cmdlet를 사용하여 Microsoft Office Outlook Web App 및 Microsoft Exchange ActiveSync에서 IRM이 사용되지 않도록 설정합니다.
-
-    ```
-    Set-IRMConfiguration -ClientAccessServerEnabled $false
-    ```
-
-5.  마지막으로 동일한 cmdlet를 사용하여 캐시된 모든 인증서를 지웁니다.
-
-    ```
-    Set-IRMConfiguration -RefreshServerCertificates
-    ```
-
-6.  예를 들어 각 Exchange Server에서 관리자 권한으로 명령 프롬프트를 실행하고 **iisreset**을 입력하여 IIS를 초기화합니다.
-
-### <a name="disable-irm-on-sharepoint-servers-and-remove-ad-rms-configuration"></a>SharePoint Server에서 IRM을 사용하지 않도록 설정하고 AD RMS 구성 제거
-
-1.  RMS로 보호된 라이브러리에서 체크 아웃된 문서가 없는지 확인합니다. 체크 아웃된 문서가 있는 경우 이 절차가 끝나면 액세스할 수 없게 됩니다.
-
-2.  Sharepoint 중앙 관리 웹 사이트의 **빠른 실행** 섹션에서 **보안**을 클릭합니다.
-
-3.  **보안** 페이지의 **정보 정책** 섹션에서 **정보 권한 관리 구성**을 클릭합니다.
-
-4.  **정보 권한 관리** 페이지의 **정보 권한 관리** 섹션에서 **이 서버에서 IRM 사용 안 함**을 선택하고 **확인**을 클릭합니다.
-
-5.  각 SharePoint Server 컴퓨터에서 SharePoint Server*를 실행하는 계정의 \ProgramData\Microsoft\MSIPC\Server\*&lt;SID&gt; 폴더의 내용을 삭제합니다.
-
-#### <a name="install-and-configure-the-rms-connector"></a>RMS 커넥터 설치 및 구성
-
--   [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md) 문서의 지침을 따릅니다.
-
-#### <a name="for-exchange-only-and-multiple-tpds-edit-the-registry"></a>Exchange만 및 여러 TPD: 레지스트리 편집
-
--   각 Exchange Server에서 가져온 각 추가 구성 데이터 파일(.xml)에 대해 다음 레지스트리 키를 수동으로 추가하여 트러스트된 게시 도메인 URL을 RMS 커넥터로 리디렉션합니다. 이러한 레지스트리 항목은 마이그레이션에만 관련되며 Microsoft RMS 커넥터용 서버 구성 도구를 통해 추가되지 않습니다.
-
-    이와 같이 레지스트리를 편집할 때는 다음 지침을 따르세요.
-
-    -   *ConnectorFQDN* 을 DNS에서 커넥터에 대해 정의한 이름으로 바꿉니다. **rmsconnector.contoso.com**을 예로 들 수 있습니다.
-
-    -   온-프레미스 서버와 통신하는 데 HTTP 또는 HTTPS 중 어느 것을 사용하도록 커넥터를 구성했는지에 따라 커넥터 URL에 대해 HTTP 또는 HTTPS 접두사를 사용합니다.
-
-Exchange 2013의 경우 - 레지스트리 편집 1:
-
-
-**레지스트리 경로:**
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
-
-**유형:**
-
-Reg_SZ
-
-**값:**
-
-https://\<AD RMS 인트라넷 라이선스 URL\>/_wmcs/licensing
-
-**데이터**
-
-Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
-
-- http://\<connectorFQDN\>/_wmcs/licensing
-
-- https://\<connectorName\>/_wmcs/licensing
-
-
----
-
-Exchange 2013의 경우 - 레지스트리 편집 2:
-
-**레지스트리 경로:**
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection 
-
-
-**유형:**
-
-Reg_SZ
-
-**값:**
-
-https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
-
-
-**데이터**
-
-Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
-
-- http://\<connectorFQDN\>/_wmcs/licensing
-
-- https://\<connectorFQDN\>/_wmcs/licensing
-
----
-
-Exchange 2010의 경우 - 레지스트리 편집 1:
-
-
-
-**레지스트리 경로:**
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
-
-**유형:**
-
-Reg_SZ
-
-**값:**
-
-https://\<AD RMS 인트라넷 라이선스 URL\>/_wmcs/licensing
-
-**데이터**
-
-Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
-
-- http://\<connectorFQDN\>/_wmcs/licensing
-
-- https://\<connectorName\>/_wmcs/licensing
-
-
----
-
-Exchange 2010의 경우 - 레지스트리 편집 2:
-
-
-**레지스트리 경로:**
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
- 
-
-**유형:**
-
-Reg_SZ
-
-**값:**
-
-https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
-
-
-**데이터**
-
-Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
-
-- http://\<connectorFQDN\>/_wmcs/licensing
-
-- https://\<connectorFQDN\>/_wmcs/licensing
-
----
-
-이러한 절차를 완료했으면 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md) 문서에서 **다음 단계** 섹션을 읽을 준비가 되었습니다.
 
 ## <a name="next-steps"></a>다음 단계
-마이그레이션을 계속하려면 [4단계 - 사후 마이그레이션 작업](migrate-from-ad-rms-phase4.md)으로 이동합니다.
+마이그레이션을 계속하려면 [4단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

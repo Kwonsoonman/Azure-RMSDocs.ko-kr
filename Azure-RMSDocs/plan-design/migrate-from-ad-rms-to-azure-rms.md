@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 89ccb599fe21c409d36b9d0ab28e274e6aedaf1e
-ms.sourcegitcommit: 384461f0e3fccd73cd7eda3229b02e51099538d4
+ms.openlocfilehash: b1d643cdb28f46c03e9c0c2707d44f9ff9eedcb3
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
@@ -119,10 +119,6 @@ AD RMS 암호화 모드를 확인하려면
 
 -   Azure Information Protection에서 사용되는 Rights Management 서비스에 의해 지원되지 않는 소프트웨어 및 클라이언트에서는 Azure Rights Management로 보호되는 콘텐츠를 보호하거나 사용할 수 없습니다. [Azure Rights Management에 대한 요구 사항](../get-started/requirements-azure-rms.md)의 지원되는 응용 프로그램 및 클라이언트 섹션을 확인하세요.
 
--   온-프레미스 키를 Azure Information Protection에 보관된 형태로 가져오고(가져오기 프로세스 동안 활성화되도록 TPD 설정 안 함) 단계별 마이그레이션을 위해 일괄로 사용자를 마이그레이션하는 경우, 마이그레이션된 사용자가 새롭게 보호하는 콘텐츠를 AD RMS에 원래 있던 사용자가 액세스할 수 없게 됩니다. 이 시나리오에서는 가능하면 마이그레이션 시간을 짧게 유지하고 공동으로 작업하는 사용자들이 함께 마이그레이션되도록 논리적으로 일괄 마이그레이션합니다.
-
-    가져오기 프로세스 중에 TPD가 활성화되도록 설정하는 경우 모든 사용자가 동일한 키를 사용하여 콘텐츠를 보호하기 때문에 이 제한이 적용되지 않습니다. 이 구성을 사용하면 모든 사용자를 원하는 때에 독립적으로 마이그레이션할 수 있기 때문에 권장됩니다.
-
 -   외부 파트너와 공동 작업하도록 AD RMS 배포가 구성된 경우(예: 트러스트된 사용자 도메인 또는 페더레이션 사용) 해당 파트너가 마이그레이션과 동시에 또는 마이그레이션 후 최대한 빨리 Azure Information Protection으로도 마이그레이션해야 합니다. 외부 파트너가 조직에서 이전에 Azure Information Protection을 사용하여 보호하던 콘텐츠에 계속 액세스하려면 사용자가 변경한 구성(이 문서에 포함됨)과 비슷하게 클라이언트 구성을 변경해야 합니다.
 
     파트너에서 있을 수 있는 가능한 구성 차이로 인해 이러한 재구성에 대한 정확한 지침은 이 문서에서 다루지 않습니다. 그러나 계획 지침의 다음 섹션을 참조하고 추가로 도움이 필요하면 [Microsoft 지원에 문의](../get-started/information-support.md#support-options-and-community-resources)하세요.
@@ -165,7 +161,7 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - **4단계. AD RMS에서 구성 데이터를 내보낸 후 Azure Information Protection으로 가져오기**
 
-    AD RMS에서 XML 파일로 구성 데이터(키, 템플릿, URL)를 내보낸 다음 Import-AadrmTpd PowerShell cmdlet을 사용하여 해당 파일을 Azure Information Protection에서 Azure Rights Management 서비스로 업로드합니다. AD RMS 키 구성에 따라 추가 단계가 필요할 수도 있습니다.
+    AD RMS에서 XML 파일로 구성 데이터(키, 템플릿, URL)를 내보낸 다음 Import-AadrmTpd PowerShell cmdlet을 사용하여 해당 파일을 Azure Information Protection에서 Azure Rights Management 서비스로 업로드합니다. 그런 다음 Azure Rights Management 서비스에 대해 테넌트 키로 사용할 가져온 SLC(서버 사용 허가자 인증서) 키를 식별합니다. AD RMS 키 구성에 따라 추가 단계가 필요할 수도 있습니다.
 
     - **소프트웨어 보호된 키-소프트웨어 보호된 키 마이그레이션**:
 
@@ -181,7 +177,7 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - **5단계. Azure Rights Management 서비스 활성화**
 
-    가능하면 가져오기 프로세스가 완료된 후에 이 단계를 수행합니다.
+    가능하면 가져오기 프로세스가 완료된 후에 이 단계를 수행합니다. 서비스가 가져오기 전에 활성화된 경우 추가 단계가 필요합니다.
 
 - **6단계. 가져온 템플릿 구성**
 

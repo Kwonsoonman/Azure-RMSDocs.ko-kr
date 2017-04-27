@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a2ef28f2db2a22a766d658294a7d68b0dc6eebb2
-ms.sourcegitcommit: 89e13f6be15a96293e0af0b2529a2e39563a63b6
+ms.openlocfilehash: f93458b5b2788aa2c7d780a9d0d2939e16221559
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
@@ -52,7 +52,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는
 
 트러스트된 모든 게시 도메인을 내보낸 경우 이 데이터를 Azure Information Protection으로 가져오는 절차를 시작할 준비가 된 것입니다.
 
-트러스트된 게시 도메인에는 이전에 보호된 파일을 암호 해독하는 키가 포함되어 있으므로 현재 활성 도메인뿐 아니라 트러스트된 게시 도메인을 모두 내보내고 자중에 Azure로 가져와야 합니다.
+트러스트된 게시 도메인에는 이전에 보호된 파일을 암호 해독하는 SLC(서버 사용 허가자 인증서) 키가 포함되어 있으므로 현재 활성 도메인뿐 아니라 트러스트된 게시 도메인을 모두 내보내고 나중에 Azure로 가져와야 합니다.
 
 예를 들어 AD RMS 서버를 암호화 모드 1에서 암호화 모드 2로 업그레이드한 경우 트리스트된 도메인이 여럿 있습니다. 마이그레이션 종료 시 암호화 모드 1을 사용하여 보관된 키를 포함하는 트러스트된 게시 도메인을 내보내고 가져오지 않는 경우 사용자가 암호화 모드 1 키로 보호된 콘텐츠를 열 수 없습니다.
 

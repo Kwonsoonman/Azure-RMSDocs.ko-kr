@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 42cdcb888656df1b623c34775bd3bfe20daee952
-ms.sourcegitcommit: 89e13f6be15a96293e0af0b2529a2e39563a63b6
+ms.openlocfilehash: adb5ad1f599c5996044ad2fce0e1e5889d81c81b
+ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
 translationtype: HT
 ---
 # <a name="migration-phase-1---preparation"></a>마이그레이션 1단계 - 준비
@@ -30,7 +30,7 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
 도구를 설치합니다. 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 > [!NOTE]
-> 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 2.5.0.0 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version`
+> 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version` 이상인지 확인합니다.
 
 일부 마이그레이션 지침을 완료하려면 *\<테넌트 URL\>*에 대한 참조가 있을 때 대체할 수 있도록 테넌트의 Azure Rights Management 서비스 URL을 알아야 합니다. Azure Rights Management 서비스 URL 형식은 **{GUID}.rms.[Region].aadrm.com**입니다.
 

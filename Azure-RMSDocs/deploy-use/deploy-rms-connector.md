@@ -4,7 +4,7 @@ description: "RMS 커넥터 배포에 대한 지침으로 Exchange Server, Share
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6fad45bb6a138fee439019b4ae454feb3fe752f
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 04073023841e95abacc0258e061f4742069fbfb0
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 배포
@@ -22,8 +22,6 @@ translationtype: HT
 
 이 정보를 이용하여 Azure 권한 관리 커넥터와 이 커넥터를 조직에 배포하는 방법에 대해 알아보세요. 이 커넥터는 **Microsoft Exchange Server**, **SharePoint Server** 또는 Windows Server 및 **FCI(파일 분류 인프라)**를 실행하는 파일 서버를 사용하는 기존 온-프레미스 배포의 데이터를 보호합니다.
 
-> [!TIP]
-> 개괄적인 예제 시나리오 및 스크린샷을 보려면 [Azure RMS 실행](../understand-explore/what-admins-users-see.md) 문서에서 [Windows Server 및 파일 분류 인프라가 실행되는 파일 서버에서 파일을 자동으로 보호](../understand-explore/what-admins-users-see.md#automatically-protecting-files-on-file-servers-running-windows-server-and-file-classification-infrastructure) 섹션을 참조하세요.
 
 ## <a name="overview-of-the-microsoft-rights-management-connector"></a>Microsoft Rights Management 커넥터 개요
 Microsoft Rights Management(RMS) 커넥터를 통해 신속하게 기존 온-프레미스 서버가 클라우드 기반 Microsoft Rights Management 서비스(Azure RMS)에 IRM(정보 권한 관리) 기능을 사용하도록 할 수 있습니다. 이 기능을 통해 IT 및 사용자는 추가 인프라를 설치하거나 다른 조직과의 트러스트 관계를 설정할 필요 없이 조직 내/외부에서 쉽게 문서와 사진을 보호할 수 있습니다. 

@@ -4,7 +4,7 @@ description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 84a0d335d0be97180c904182c98f6fa9ad46a0de
-ms.sourcegitcommit: 81b5c111627246a4094ef87da17d260f66ae985c
+ms.openlocfilehash: 5899710615a1a875d3613b70b1c378db67942404
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 지원하는 파일 형식
@@ -93,7 +93,6 @@ Azure Information Protection 클라이언트가 적용하는 기본 보호 수�
 |.jpe|.pjpe|
 |.jfif|.pjfif|
 |.jt|.pjt|
-
 
 다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 나머지 파일 형식이 나와 있습니다. 이러한 형식은 Microsoft Office 앱용 파일 형식으로 인식할 수 있습니다. 
 

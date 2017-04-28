@@ -3,7 +3,6 @@
 ### [이전 이름](aka.md)
 ### [Azure Rights Management란?](what-is-azure-rms.md)
 #### [해결할 수 있는 문제](azure-rms-problems-it-solves.md)
-#### [관리자와 사용자에게 표시되는 내용](what-admins-users-see.md)
 #### [작동 방식](how-does-it-work.md)
 ## [개인용 RMS 및 Azure Information Protection](rms-for-individuals.md)
 ### [개인용 RMS 등록 방법](rms-for-individuals-user-sign-up.md)

@@ -4,7 +4,7 @@ description: "Azure RMS(Azure Rights Management)는 Azure Information Protection
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 53712ee69ac7ab54feb3036ada4eb81383caf786
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
+ms.openlocfilehash: 61b549c38e3e86bc686747adb5f9ebfd1851f446
+ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
 translationtype: HT
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 권한 관리란?
@@ -42,11 +42,7 @@ Azure Information Protection의 이 데이터 보호 서비스에 대한 자세�
 
 -   [Azure RMS를 통해 해결할 수 있는 문제](azure-rms-problems-it-solves.md)
 
--   [Azure RMS 작동 중: 관리자와 사용자에게 표시되는 결과](what-admins-users-see.md)
-
 -   [Azure RMS는 어떤 방식으로 작동하나요? 기본적인 이해](how-does-it-work.md)
-
-
 
 직접 사용해 보고 문서를 보호해 보려는 경우에는 [Azure Information Protection에 대한 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요. 이 자습서에는 중요한 데이터가 검색되었을 때 문서 보호 확인에 대한 내용이 포함됩니다. 또한 메일로 공유하는 문서 보호(사용 현황을 파악할 수 있도록 추적할 수 있고, 필요한 경우 액세스를 취소할 수 있음)에 대한 내용도 포함됩니다.
 

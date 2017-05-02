@@ -13,7 +13,7 @@
 ### [마이그레이션 후 작업](migrate-from-ad-rms-phase5.md)
 ## [테넌트 키 계획 및 구현](plan-implement-tenant-key.md)
 ### [BYOK 가격 및 제한 사항](byok-price-restrictions.md)
-## [Azure Information Protection 준비](prepare.md)
+## [사용자 및 그룹을 준비 하 고](prepare.md)
 # [서비스 배포 및 사용](/information-protection/deploy-use/activate-service)
 # [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)

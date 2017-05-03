@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/03/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ee29da28d75472c2c2ba5ebc3c7e89bc0b006f6d
-ms.sourcegitcommit: 941cc65fe779e87ae8027c17f433b859a5c32386
+ms.openlocfilehash: 526a0ef3bcc5ebf07c4993b9e5dd602683593a45
+ms.sourcegitcommit: 85261fbc9e6ce71a2001d954cb2fc2d190695f6a
 translationtype: HT
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure 권한 관리에 대한 사용 권한 구성
@@ -25,25 +25,25 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 이 문서는 사용 중인 응용 프로그램에 대해 원하는 사용 권한을 구성하고 이러한 권한이 응용 프로그램에서 해석되는 방법을 이해하는데 도움이 됩니다.
 
 ## <a name="usage-rights-and-descriptions"></a>사용 권한 및 설명
-다음 테이블은 Rights Management가 지원하는 사용 권한 및 사용하고 해석되는 방식에 대해 나열하고 설명합니다. 일반적으로 코드에 사용되는 단일 단어 값(**정책에서 인코딩** 값)의 더 친숙한 버전으로 표시되거나 참조된 사용 권한을 확인하는 방식인 **일반 이름**을 기준으로 나열됩니다. **API 상수 또는 값**은 MSIPC API 호출에 대한 SDK 이름이며 사용 권한을 확인하거나 사용 권한을 정책에 추가하는 RMS 지원 응용 프로그램을 작성할 때 사용됩니다.
+다음 테이블은 Rights Management가 지원하는 사용 권한 및 사용하고 해석되는 방식에 대해 나열하고 설명합니다. 일반적으로 코드에 사용되는 단일 단어 값(**정책에서 인코딩** 값)의 더 친숙한 버전으로 표시되거나 참조된 사용 권한을 확인하는 방식인 **일반 이름**을 기준으로 나열됩니다. 
+
+**API 상수 또는 값**은 MSIPC API 호출에 대한 SDK 이름이며 사용 권한을 확인하거나 사용 권한을 정책에 추가하는 RMS 지원 응용 프로그램을 작성할 때 사용됩니다.
 
 
 |Right|설명|구현|
 |-------------------------------|---------------------------|-----------------|
-|일반 이름: **콘텐츠 편집, 편집** <br /><br />정책에서 인코딩: **DOCEDIT**|사용자가 응용 프로그램 내에서 콘텐츠를 수정, 다시 정렬, 형식 지정 또는 필터링할 수 있게 합니다. 편집된 복사본을 저장할 수 있는 권한은 부여하지 않습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 편집**<br /><br />AD RMS 템플릿의 이름: **편집** <br /><br />API 상수 또는 값: 해당 사항 없음|
-|일반 이름: **저장** <br /><br />정책에서 인코딩: **EDIT**|사용자가 현재 위치에 문서를 저장할 수 있게 합니다.<br /><br />또한 Office 응용 프로그램에서 이 권한을 사용하면 사용자는 문서를 수정할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **파일 저장**<br /><br />AD RMS 템플릿의 이름: **저장** <br /><br />API 상수 또는 값: `IPC_GENERIC_WRITE L"EDIT"`|
-|일반 이름: **주석** <br /><br />정책에서 인코딩: **COMMENT**|옵션을 사용하여 메모를 추가하거나 콘텐츠에 주석을 추가할 수 있습니다.<br /><br />이 권한은 SDK에서 사용할 수 있으며 Windows PowerShell 용 AzureInformationProtection 및 RMS 보호 모듈에서 임시 정책으로 사용할 수 있고 일부 소프트웨어 공급업체 응용 프로그램에서 구현되었습니다. 그러나 널리 사용되지 않으며 현재 Office 응용 프로그램에서 지원되지 않습니다.|Office 사용자 지정 권한: 구현되지 않음 <br /><br />Azure 클래식 포털의 이름: 구현되지 않음<br /><br />AD RMS 템플릿의 이름: 구현되지 않음 <br /><br />API 상수 또는 값: `IPC_GENERIC_COMMENT L"COMMENT`|
-|일반 이름: **다른 이름으로 저장, 내보내기** <br /><br />정책에서 인코딩: **EXPORT**|콘텐츠를 다른 파일 이름에 저장하는 옵션(다른 이름으로 저장)을 사용할 수 있게 합니다. Office 문서와 Azure Information Protection 클라이언트의 경우에는 파일을 보호하지 않고 저장할 수 있습니다.<br /><br />이 권한이 부여된 사용자는 응용 프로그램에서 **OneNote로 보내기**등의 다른 내보내기 옵션도 수행할 수 있습니다.<br /><br /> 참고: 이 권한이 부여되면, 선택한 파일 형식이 기본적으로 Rights Management 보호를 지원하는 경우 사용자는 Office 응용 프로그램을 사용하여 문서를 새 이름으로 저장할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 내보내기(다른 이름으로 저장)**<br /><br />AD RMS 템플릿의 이름: **내보내기(다른 이름으로 저장)** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXPORT L"EXPORT"`|
-|일반 이름: **전달** <br /><br />정책에서 인코딩: **FORWARD**|전자 메일 메시지를 전달하고 **받는 사람** 및 **참조** 줄에 받는 사람을 추가하는 옵션을 사용할 수 있게 합니다. 이 권한은 문서에 적용되지 않고 메일 메시지에만 적용됩니다.<br /><br />전달자가 전달 동작의 일부로 다른 사용자에게 권한을 부여할 수 없게 합니다. <br /><br />참고: 다른 조직에 메일을 보내면 받는 사람의 Outlook 클라이언트 또는 Outlook 웹앱에, 전달과 함께 **콘텐츠 편집, 편집** 권한(일반 이름)이 필요합니다.|Office 사용자 지정 권한: **전달 금지** 표준 정책을 사용하는 경우 거부됩니다.<br /><br />Azure 클래식 포털의 이름: **전달**<br /><br />AD RMS 템플릿의 이름: **전달** <br /><br />API 상수 또는 값: `IPC_EMAIL_FORWARD L"FORWARD"`|
-|일반 이름: **모든 권한** <br /><br />정책에서 인코딩: **OWNER**|문서에 대한 모든 권한을 부여하며 사용 가능한 모든 작업을 수행할 수 있습니다.<br /><br />보호를 제거하고 문서를 다시 보호하는 기능이 포함됩니다.|Office 사용자 지정 권한: **모든 권한** 사용자 지정 옵션의 일부로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **모든 권한**<br /><br />AD RMS 템플릿의 이름: **모든 권한** <br /><br />API 상수 또는 값: `IPC_GENERIC_ALL L"OWNER"`|
-|일반 이름: **인쇄** <br /><br />정책에서 인코딩: **PRINT**|콘텐츠 인쇄 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: 사용자 지정 권한에서 **콘텐츠 인쇄** 옵션의 일부로 제공됩니다. 받는 사람별 설정이 아닙니다.<br /><br />Azure 클래식 포털의 이름: **인쇄**<br /><br />AD RMS 템플릿의 이름: **인쇄** <br /><br />API 상수 또는 값: `IPC_GENERIC_PRINT L"PRINT"`|
-|일반 이름: **회신** <br /><br />정책에서 인코딩: **REPLY**|**받는 사람** 또는 **참조** 줄의 변경을 허용하지 않고 메일 클라이언트에서 **회신** 옵션을 사용할 수 있게 합니다.<br /><br />참고: 다른 조직에 메일을 보내면 받는 사람의 Outlook 클라이언트 또는 Outlook 웹앱에 회신과 함께 **콘텐츠 편집, 편집** 권한(일반 이름)이 필요합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **회신**<br /><br />AD RMS 템플릿의 이름: **회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLY`|
-|일반 이름: **전체 회신** <br /><br />정책에서 인코딩: **REPLYALL**|메일 클라이언트에서 **전체 회신** 옵션을 사용할 수 있게 하지만 사용자가 **받는 사람** 또는 **참조** 줄에 받는 사람을 추가할 수 없습니다.<br /><br />참고: 다른 조직에 메일을 보내면 받는 사람의 Outlook 클라이언트 또는 Outlook 웹앱에 전체 회신과 함께 **콘텐츠 편집, 편집** 권한(일반 이름)이 필요합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **전체 회신**<br /><br />AD RMS 템플릿의 이름: **전체 회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
-|일반 이름: **보기, 열기, 읽기** <br /><br />정책에서 인코딩: **VIEW**|사용자가 문서를 열고 콘텐츠를 시각화할 수 있게 합니다.|Office 사용자 지정 권한: **읽기** 사용자 지정 정책의 **보기** 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **보기**<br /><br />AD RMS 템플릿의 이름: **전체 회신** <br /><br />API 상수 또는 값: `IPC_GENERIC_READ L"VIEW"`|
-|일반 이름: **복사** <br /><br />정책에서 인코딩: **EXTRACT**|문서의 데이터(화면 캡처 포함)를 동일한 문서나 다른 문서에 복사하는 옵션을 사용할 수 있게 합니다.<br /><br />일부 응용 프로그램에서는 전체 문서를 보호되지 않은 형태로 저장할 수도 있습니다.|Office 사용자 지정 권한: **읽기 권한이 있는 사용자에게 내용 복사 허용** 사용자 지정 정책 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **콘텐츠 복사 및 추출**<br /><br />AD RMS 템플릿의 이름: **추출** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
-|일반 이름: **매크로 허용** <br /><br />정책에서 인코딩: **OBJMODEL**|매크로를 실행하거나 문서의 콘텐츠를 다른 프로그래밍 방식으로 또는 원격으로 액세스하는 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: **프로그래밍 방식 액세스 허용** 사용자 지정 정책 옵션으로 제공됩니다. 받는 사람별 설정이 아닙니다.<br /><br />Azure 클래식 포털의 이름: **매크로 허용**<br /><br />AD RMS 템플릿의 이름: **매크로 허용** <br /><br />API 상수 또는 값: 구현되지 않음|
-
-
+|일반 이름: **콘텐츠 편집, 편집** <br /><br />정책에서 인코딩: **DOCEDIT**|사용자가 응용 프로그램 내에서 콘텐츠를 수정, 다시 정렬, 형식 지정 또는 필터링할 수 있게 합니다. 편집된 복사본을 저장할 수 있는 권한은 부여하지 않습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 편집**<br /><br />Azure 포털의 이름: **편집 및 저장**에 포함<br /><br />AD RMS 템플릿의 이름: **편집** <br /><br />API 상수 또는 값: 해당 사항 없음|
+|일반 이름: **저장** <br /><br />정책에서 인코딩: **EDIT**|사용자가 현재 위치에 문서를 저장할 수 있게 합니다.<br /><br />또한 Office 응용 프로그램에서 이 권한을 사용하면 사용자는 문서를 수정할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **파일 저장**<br /><br />Azure 포털의 이름: **편집 및 저장**에 포함<br /><br />AD RMS 템플릿의 이름: **저장** <br /><br />API 상수 또는 값: `IPC_GENERIC_WRITE L"EDIT"`|
+|일반 이름: **주석** <br /><br />정책에서 인코딩: **COMMENT**|옵션을 사용하여 메모를 추가하거나 콘텐츠에 주석을 추가할 수 있습니다.<br /><br />이 권한은 SDK에서 사용할 수 있으며 Windows PowerShell 용 AzureInformationProtection 및 RMS 보호 모듈에서 임시 정책으로 사용할 수 있고 일부 소프트웨어 공급업체 응용 프로그램에서 구현되었습니다. 그러나 널리 사용되지 않으며 현재 Office 응용 프로그램에서 지원되지 않습니다.|Office 사용자 지정 권한: 구현되지 않음 <br /><br />Azure 클래식 포털의 이름: 구현되지 않음<br /><br />Azure 포털의 이름: 구현되지 않음<br /><br />AD RMS 템플릿의 이름: 구현되지 않음 <br /><br />API 상수 또는 값: `IPC_GENERIC_COMMENT L"COMMENT`|
+|일반 이름: **다른 이름으로 저장, 내보내기** <br /><br />정책에서 인코딩: **EXPORT**|콘텐츠를 다른 파일 이름에 저장하는 옵션(다른 이름으로 저장)을 사용할 수 있게 합니다. Office 문서와 Azure Information Protection 클라이언트의 경우에는 파일을 보호하지 않고 저장할 수 있습니다.<br /><br />이 권한이 부여된 사용자는 응용 프로그램에서 **OneNote로 보내기**등의 다른 내보내기 옵션도 수행할 수 있습니다.<br /><br /> 참고: 이 권한이 부여되면, 선택한 파일 형식이 기본적으로 Rights Management 보호를 지원하는 경우 사용자는 Office 응용 프로그램을 사용하여 문서를 새 이름으로 저장할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 내보내기(다른 이름으로 저장)** <br /><br />Azure 포털의 이름: **모든 권한**에 포함<br /><br />AD RMS 템플릿의 이름: **내보내기(다른 이름으로 저장)** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXPORT L"EXPORT"`|
+|일반 이름: **전달** <br /><br />정책에서 인코딩: **FORWARD**|전자 메일 메시지를 전달하고 **받는 사람** 및 **참조** 줄에 받는 사람을 추가하는 옵션을 사용할 수 있게 합니다. 이 권한은 문서에 적용되지 않고 메일 메시지에만 적용됩니다.<br /><br />전달자가 전달 동작의 일부로 다른 사용자에게 권한을 부여할 수 없게 합니다. <br /><br />이 권한을 부여할 때, 원래 메일이 첨부 파일이 아니라 전달된 메일 메시지의 일부로 포함되도록 **콘텐츠 편집, 편집** 권한(일반 이름)도 부여합니다. 이 권한은 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다.|Office 사용자 지정 권한: **전달 금지** 표준 정책을 사용하는 경우 거부됩니다.<br /><br />Azure 클래식 포털의 이름: **전달**<br /><br />Azure 포털의 이름: **전달**<br /><br />AD RMS 템플릿의 이름: **전달** <br /><br />API 상수 또는 값: `IPC_EMAIL_FORWARD L"FORWARD"`|
+|일반 이름: **모든 권한** <br /><br />정책에서 인코딩: **OWNER**|문서에 대한 모든 권한을 부여하며 사용 가능한 모든 작업을 수행할 수 있습니다.<br /><br />보호를 제거하고 문서를 다시 보호하는 기능이 포함됩니다. <br /><br />이 사용 권한은 [Rights Management 소유자](#rights-management-issuer-and-rights-management-owner)와 다릅니다.|Office 사용자 지정 권한: **모든 권한** 사용자 지정 옵션의 일부로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **모든 권한**<br /><br />Azure 포털의 이름: **모든 권한**<br /><br />AD RMS 템플릿의 이름: **모든 권한** <br /><br />API 상수 또는 값: `IPC_GENERIC_ALL L"OWNER"`|
+|일반 이름: **인쇄** <br /><br />정책에서 인코딩: **PRINT**|콘텐츠 인쇄 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: 사용자 지정 권한에서 **콘텐츠 인쇄** 옵션의 일부로 제공됩니다. 받는 사람별 설정이 아닙니다.<br /><br />Azure 클래식 포털의 이름: **인쇄**<br /><br />Azure 포털의 이름: **인쇄**<br /><br />AD RMS 템플릿의 이름: **인쇄** <br /><br />API 상수 또는 값: `IPC_GENERIC_PRINT L"PRINT"`|
+|일반 이름: **회신** <br /><br />정책에서 인코딩: **REPLY**|**받는 사람** 또는 **참조** 줄의 변경을 허용하지 않고 메일 클라이언트에서 **회신** 옵션을 사용할 수 있게 합니다.<br /><br />이 권한을 부여할 때, 원래 메일이 첨부 파일이 아니라 전달된 메일 메시지의 일부로 포함되도록 **콘텐츠 편집, 편집** 권한(일반 이름)도 부여합니다. 이 권한은 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **회신**<br /><br />AD RMS 템플릿의 이름: **회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLY`|
+|일반 이름: **전체 회신** <br /><br />정책에서 인코딩: **REPLYALL**|메일 클라이언트에서 **전체 회신** 옵션을 사용할 수 있게 하지만 사용자가 **받는 사람** 또는 **참조** 줄에 받는 사람을 추가할 수 없습니다.<br /><br />이 권한을 부여할 때, 원래 메일이 첨부 파일이 아니라 전달된 메일 메시지의 일부로 포함되도록 **콘텐츠 편집, 편집** 권한(일반 이름)도 부여합니다. 이 권한은 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **전체 회신**<br /><br />Azure 포털의 이름: **전체 회신**<br /><br />AD RMS 템플릿의 이름: **전체 회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
+|일반 이름: **보기, 열기, 읽기** <br /><br />정책에서 인코딩: **VIEW**|사용자가 문서를 열고 콘텐츠를 시각화할 수 있게 합니다.|Office 사용자 지정 권한: **읽기** 사용자 지정 정책의 **보기** 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **보기**<br /><br />Azure 포털의 이름: **콘텐츠 보기**<br /><br />AD RMS 템플릿의 이름: **전체 회신** <br /><br />API 상수 또는 값: `IPC_GENERIC_READ L"VIEW"`|
+|일반 이름: **복사** <br /><br />정책에서 인코딩: **EXTRACT**|문서의 데이터(화면 캡처 포함)를 동일한 문서나 다른 문서에 복사하는 옵션을 사용할 수 있게 합니다.<br /><br />일부 응용 프로그램에서는 전체 문서를 보호되지 않은 형태로 저장할 수도 있습니다.|Office 사용자 지정 권한: **읽기 권한이 있는 사용자에게 내용 복사 허용** 사용자 지정 정책 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **콘텐츠 복사 및 추출**<br /><br />Azure 포털의 이름: **콘텐츠 복사 및 추출**<br /><br />AD RMS 템플릿의 이름: **추출** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
+|일반 이름: **매크로 허용** <br /><br />정책에서 인코딩: **OBJMODEL**|매크로를 실행하거나 문서의 콘텐츠를 다른 프로그래밍 방식으로 또는 원격으로 액세스하는 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: **프로그래밍 방식 액세스 허용** 사용자 지정 정책 옵션으로 제공됩니다. 받는 사람별 설정이 아닙니다.<br /><br />Azure 클래식 포털의 이름: **매크로 허용**<br /><br />Azure 포털의 이름: 이 권한이 Office 앱의 Azure Information Protection 표시줄에 필요하기 때문에 선택할 수 있는 모든 권한에 포함되어 있습니다.<br /><br />AD RMS 템플릿의 이름: **매크로 허용** <br /><br />API 상수 또는 값: 구현되지 않음|
 
 ## <a name="rights-included-in-permissions-levels"></a>사용 권한 수준에 포함된 권한
 
@@ -54,7 +54,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 |사용 권한 수준|응용 프로그램|포함된 권한(일반 이름)|
 |---------------------|----------------|---------------------------------|
-|보기 권한자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 회신, 전체 회신<br /><br />참고: 다른 조직에 메일을 보내고 받는 사람이 Outlook 또는 Outlook 웹앱을 사용하는 경우 회신 또는 전체 회신에 대해 이 권한 수준을 사용하지 마세요. 대신 **콘텐츠 편집, 편집** 권한(일반 이름)이 포함되고 이러한 메일 클라이언트에서 회신해야 하는 검토자를 사용하세요.|
+|보기 권한자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 회신, 전체 회신<br /><br />참고: 메일의 경우 메일의 회신이 첨부 파일이 아닌 메일 메시지로 수신되도록 이 권한 수준 대신 검토자 권한을 사용합니다. 검토자는 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다.|
 |검토자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
 |공동 작성자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기 [[2]](#footnote-2), 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
 |공동 소유자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1), 모든 권한|
@@ -95,11 +95,38 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 > [!NOTE] 
 > 보낸 사람이 선택하는 수신자만 메일의 정보를 볼 수 있어야 하는 것이 중요한 경우 **전달 금지**를 사용합니다. 메일의 템플릿을 사용하면 보낸 사람이 선택한 수신자와 상관없이 관리자가 사전에 지정하는 사용자의 그룹으로 권한을 제한할 수 있습니다.
 
+## <a name="rights-management-issuer-and-rights-management-owner"></a>Rights Management 발급자와 Rights Management 소유자
 
+Azure Rights Management 서비스를 사용하여 문서 또는 메일을 보호할 때 해당 콘텐츠를 보호하는 계정이 자동으로 그 콘텐츠의 Rights Management 발급자가 됩니다. 이 계정은 [사용 현황 로그](log-analyze-usage.md#how-to-interpret-your-azure-rights-management-usage-logs)에 **issuer** 필드로 기록됩니다. 
 
+Rights Management 발급자는 항상 문서 또는 메일에 대한 [모든 권한]을 사용 권한으로 받으며 추가로:
+
+- 보호 설정에 만료 날짜가 포함된 경우 Rights Management 발급자는 만료 날짜가 지난 후에도 문서 또는 메일을 열고 편집할 수 있습니다.
+
+- Rights Management 발급자는 문서 또는 메일에 항상 오프라인으로 액세스할 수 있습니다.
+
+- Rights Management 발급자는 문서가 해지된 후에도 열 수 있습니다. 
+
+기본적으로 이 계정은 해당 콘텐츠의 **Rights Management 소유자**이기도 하며, 이 경우 문서 또는 메일을 만든 사용자가 보호를 시작합니다. 그러나 관리자 또는 서비스가 사용자를 대신하여 콘텐츠를 보호할 수 있는 시나리오도 있습니다. 예를 들면 다음과 같습니다.
+
+- 관리자가 파일 공유의 파일을 일괄 보호: Azure AD의 관리자 계정이 사용자의 문서를 보호합니다.
+
+- Windows Server 폴더에서 Rights Management 커넥터가 Office 문서 보호: Azure AD에서 RMS 커넥터에 대해 만든 서비스 주체 계정이 사용자의 문서를 보호합니다.
+
+이러한 시나리오에서는 Rights Management 발급자가 Azure Information Protection SDK 또는 PowerShell을 사용하여 다른 계정에 Rights Management 소유자를 할당할 수 있습니다. 예를 들어, Azure Information Protection 클라이언트에서 [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) PowerShell cmdlet을 사용할 때 **OwnerEmail** 매개 변수를 사용하여 다른 계정에 Rights Management 소유자를 할당할 수 있습니다. 
+
+Rights Management 발급자가 사용자를 대신하여 보호할 때, Rights Management 소유자를 할당하면 원본 문서 또는 메일 소유자는 자신이 보호를 시작한 것처럼 보호된 콘텐츠에 대해 같은 수준의 권한을 가집니다. 
+
+예를 들어, 문서를 만든 사용자는 [인쇄] 사용 권한이 포함되지 않은 템플릿으로 보호되고 있어도 문서를 인쇄할 수 있습니다. 그 사용자는 해당 템플릿에 구성된 오프라인 액세스 설정이나 만료 날짜에 관계 없이 항상 문서에 액세스할 수 있습니다. 또한, Rights Management 소유자에게 [모든 권한] 사용 권한이 있기 때문에 이 사용자는 문서를 다시 보호하여 추가 사용자 액세스를 부여할 수 있고(그 시점에서 사용자가 Rights Management 소유자인 동시에 Rights Management 발급자가 됨), 보호를 제거할 수도 있습니다. 그러나 문서를 추적하고 해지하는 일은 Rights Management 발급자만 할 수 있습니다.
+
+문서 또는 메일의 Rights Management 소유자는 [사용 현황 로그](log-analyze-usage.md#how-to-interpret-your-azure-rights-management-usage-logs)에서 **owner-email** 필드로 기록됩니다.
+
+Rights Management 소유자는 Windows 파일 시스템의 소유자와 독립적입니다. 동일할 때도 많지만, SDK나 PowerShell을 사용하지 않는 경우에도 다를 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](configure-custom-templates.md)
+
+[Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](configure-super-users.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

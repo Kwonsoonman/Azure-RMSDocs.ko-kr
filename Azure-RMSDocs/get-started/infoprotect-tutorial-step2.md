@@ -4,14 +4,14 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 98e65768651c77b4cc0616142e6b7515d275b7a9
-ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
+ms.openlocfilehash: 9a2392df400356e7937db49cec3e0fe1e3d0f228
+ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
 translationtype: HT
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
@@ -20,7 +20,7 @@ translationtype: HT
 
 Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책과 함께 제공되지만, 해당 정책을 살펴보고 몇 가지를 변경합니다.
 
-1. 새 브라우저 창에서 사용 중인 테넌트에 대한 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
+1. 새 브라우저 창에서 사용 중인 테넌트에 대한 전역 관리자나 보안 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
 2. 허브 메뉴에서 **새로 만들기**를 클릭한 다음 **MARKETPLACE** 목록에서 **보안 + ID**를 클릭합니다. **보안 + ID** 블레이드의 **추천 앱** 목록에서 **Azure Information Protection**을 선택합니다. **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.
 
@@ -74,7 +74,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     이 작업을 수행하면 **보호**가 열립니다.
     
-3. **보호** 블레이드에서 **Azure RMS**가 선택되어 있고 **템플릿 선택**도 선택되어 있는지 확인한 다음 드롭다운 상자를 클릭하고 기본 템플릿 **\<조직 이름> - 기밀**을 선택합니다.     
+3. **보호** 블레이드에서 **Azure RMS**가 선택되어 있고 **미리 정의된 템플릿 선택**도 선택되어 있는지 확인한 다음 드롭다운 상자를 클릭하고 기본 템플릿 **\<조직 이름> - 기밀**을 선택합니다.     
     
     예를 들어 경우 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - Confidential**(기밀)이 표시되고 이를 선택합니다. 
     

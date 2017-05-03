@@ -4,14 +4,14 @@ description: "Rights Management 보호를 사용하도록 레이블을 구성하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 696d744ae21d8957225a24d39547493515b63d76
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 608fa9fe48667c1419736243e5c069b48828ff1b
+ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
 translationtype: HT
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
@@ -50,7 +50,7 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
 
 ## <a name="to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하려면
 
-1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창을 열고 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창을 열고 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
 
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
@@ -78,9 +78,13 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
     
     대부분의 경우 사용 권한 설정에 대해 **Azure RMS**를 선택합니다. 이 "*HYOK(Hold Your Own Key)*" 구성에 수반되는 필수 조건 및 제한을 읽고 이해한 경우에만 **HYOK(AD RMS)**를 선택하세요. 자세한 내용은 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](configure-adrms-restrictions.md)을 참조하세요. HYOK(AD RMS)에 대한 구성을 계속하려면 9단계로 이동합니다.
     
-7. 메일에 대해 이 Outlook 옵션을 설정하려면 **Do not forward**(전달 금지)를 선택하거나 **Select template**(템플릿 선택)을 선택합니다. 
+7. 메일에 대해 이 Outlook 옵션을 설정하려면 **Do not forward**(전달 금지)를 선택하고, 기본 템플릿이나 구성한 사용자 지정 템플릿을 사용하려면 **Select a predefined template**(미리 정의된 템플릿 선택)을 선택하고, 이 포털에서 새 보호 설정을 정의하려면 **Custom (Preview)**(사용자 지정 (미리 보기))를 선택합니다. 
     
-8. **Azure RMS**에 대해 **Select template**(템플릿 선택)을 선택한 경우 드롭다운 상자를 클릭하고 이 레이블이 있는 문서 및 메일을 보호하는 데 사용할 [템플릿](../deploy-use/configure-custom-templates.md)을 선택합니다.
+    **Custom (Preview)**(사용자 지정 (미리 보기)) 옵션에는 현재 Azure 클래식 포털에 있는 대부분의 구성 옵션이 있습니다. 또한 도메인 이름을 지정할 때 조직에서 모든 사용자를 쉽게 추가하고, 개별 사용자나 그룹 또는 다른 조직에 있는 모든 사용자의 외부 메일 주소를 지정할 수 있습니다. 
+    
+    이 미리 보기 구성에 대한 자세한 내용은 블로그 게시물 [Azure Information Protection 통합 관리, 이제 미리 보기로 제공](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)을 참조하세요. 선택할 수 있는 사용 권한에 대한 자세한 내용은 [Azure Rights Management에 대한 사용 권한 구성](configure-usage-rights.md)을 참조하세요.
+    
+8. **Azure RMS**에 대해 **Select a predefined template**(미리 정의된 템플릿 선택)을 선택한 경우 드롭다운 상자를 클릭하고 이 레이블이 있는 문서 및 메일을 보호하는 데 사용할 [템플릿](../deploy-use/configure-custom-templates.md)을 선택합니다.
     
     **부서별 템플릿**을 선택하거나 [온보딩 컨트롤](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구성한 경우:
     

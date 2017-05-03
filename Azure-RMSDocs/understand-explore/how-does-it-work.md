@@ -4,7 +4,7 @@ description: "Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/03/2017
+ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5f189ab5ad1df43b14fa0b6d23bf4f0eef88142
-ms.sourcegitcommit: d44105d4d45fabf0f1d90765304e4b43dd97c0fc
+ms.openlocfilehash: d3d174fabb4189d2f4ca7755b6355293261318d4
+ms.sourcegitcommit: 55d8a769084c6422f80aefc5f7c6594ea6855bfa
 translationtype: HT
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
@@ -120,7 +120,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 ![RMS 문서 소비 - 1단계, 사용자가 인증되고 권한 목록을 가져옴](../media/AzRMS_documentconsumption1.png)
 
-**1단계에서 발생하는 작업**: 인증된 사용자는 문서 정책과 사용자의 인증서를 Azure Rights Management Service에 전송합니다. 서비스는 정책의 암호를 해독하고 평가한 후 사용자가 문서에 대해 갖는 권한(있는 경우) 목록을 작성합니다. 사용자를 식별하려면 사용자의 계정 및 사용자가 멤버인 그룹에 대해 Azure AD proxyAttribute를 사용합니다. 성능을 높이기 위해 그룹 멤버 자격은 [캐시](../plan-design/prepare.md#group-membership-caching)됩니다.
+**1단계에서 발생하는 작업**: 인증된 사용자는 문서 정책과 사용자의 인증서를 Azure Rights Management Service에 전송합니다. 서비스는 정책의 암호를 해독하고 평가한 후 사용자가 문서에 대해 갖는 권한(있는 경우) 목록을 작성합니다. 사용자를 식별하려면 사용자의 계정 및 사용자가 멤버인 그룹에 대해 Azure AD proxyAddress 특성을 사용합니다. 성능을 높이기 위해 그룹 멤버 자격은 [캐시](../plan-design/prepare.md#group-membership-caching)됩니다.
 
 ![RMS 문서 소비 - 2단계, 사용 라이선스가 클라이언트에 반환됨](../media/AzRMS_documentconsumption2.png)
 

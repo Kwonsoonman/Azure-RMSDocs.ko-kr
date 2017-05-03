@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ec57bae71b11b6505ccb94fcdf692f215862191d
-ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
+ms.openlocfilehash: 8b6bd6e44fb39c3787e2fe63577c7e7fd9948025
+ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
 translationtype: HT
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
@@ -24,7 +24,7 @@ translationtype: HT
 
 Azure Information Protection 정책을 구성하려면
 
-1. 새 브라우저 창에서 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
+1. 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
 2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
 

@@ -4,7 +4,7 @@ description: "Azure Rights Management 서비스를 사용하는 경우 사용자
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 77bd9e7bedf4a319f8f911782c995066a26a7055
-ms.sourcegitcommit: 8ae83a9fc03bf2ee39ea758835ef52156f19784d
+ms.openlocfilehash: 6f02bffa99719d5cd987bc0fa9c84baabe191ec5
+ms.sourcegitcommit: 2358f76f9a039daff7d70ea68967a45362d3da35
 translationtype: HT
 ---
 # <a name="refreshing-templates-for-users"></a>사용자를 위한 템플릿 새로 고침
@@ -24,12 +24,13 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 |응용 프로그램 또는 서비스|템플릿을 변경한 후 새로 고침하는 방법|
 |--------------------------|---------------------------------------------|
-|Exchange Online|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요.|
+|Exchange Online<br /><br />전송 규칙, DLP 규칙 및 Outlook Web App에 적용 가능|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요.|
 |Azure Information Protection 클라이언트|클라이언트에서 Azure Information Protection 정책을 새로 고칠 때마다 자동으로 새로 고침:<br /><br /> - Azure Information Protection 막대를 지원하는 Office 응용 프로그램이 열릴 때. <br /><br /> - 마우스 오른쪽 단추를 클릭하여 파일 또는 폴더를 분류 및 보호하려 할 때. <br /><br /> - 레이블 지정 및 보호를 위해 PowerShell cmdlet을 실행할 때(Get-AIPFileStatus 및 Set-AIPFileLabel).<br /><br /> - 24시간마다.<br /><br /> 또한 Azure Information Protection 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 클라이언트에서도 새로 고쳐집니다.|
 |Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />- 이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />- Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
 |Office 2010|사용자가 Windows에서 로그아웃했다가 다시 로그인하고 1시간까지 기다리면 자동으로 새로 고침됩니다.|
+|Exchange 온-프레미스와 Rights Management 커넥터<br /><br />전송 규칙 및 Outlook Web App에 적용 가능|자동으로 새로 고침 - 추가 단계 불필요 Outlook Web App은 하루 동안 UI를 캐시합니다.|
 |Mac용 Office 2016|자동으로 새로 고침 - 추가 단계 불필요|
-|모바일 장치용 RMS 공유 앱|자동으로 새로 고침 - 추가 단계 불필요|
+|Mac 컴퓨터용 RMS 공유 앱|자동으로 새로 고침 - 추가 단계 불필요|
 
 
 ## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법

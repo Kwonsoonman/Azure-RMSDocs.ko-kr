@@ -4,7 +4,7 @@ description: "관리자가 Azure Information Protection의 Azure Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/05/2017
+ms.date: 04/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 091e29319ed3b29937e57c15488234466003e46e
-ms.sourcegitcommit: 1f65f71f742063e2bebcac88f72180d3aa4318a4
+ms.openlocfilehash: e67fc5be09ca8dae0117cf644f5878d83449ee4f
+ms.sourcegitcommit: 9edcb4a55a331e02f999c78d97eb0beb21f96f07
 translationtype: HT
 ---
 # <a name="office-365-configuration-for-clients-and-online-services"></a>Office 365: 클라이언트 및 온라인 서비스 구성
@@ -25,6 +25,8 @@ Office 365는 기본적으로 Azure Information Protection의 Azure Rights Manag
 그러나 사용자가 Office 추가 기능 및 추가 파일 형식 지원에 따른 이점을 얻을 수 있도록 Azure Information Protection 클라이언트로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
 ## <a name="exchange-online-irm-configuration"></a>Exchange Online: IRM 구성
+Exchange Online IRM이 Azure Rights Management 서비스와 함께 작동하는 방식에 대한 자세한 내용은 **이해 및 탐색** 섹션에서 [Exchange Online 및 Exchange Server](../understand-explore/office-apps-services-support.md#exchange-online-and-exchange-server)를 참조하세요.
+
 Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성하려면 Exchange Online에 대해 IRM(정보 권한 관리) 서비스를 구성해야 합니다. 이렇게 하려면 Windows PowerShell을 사용하고(별도 모듈을 설치할 필요 없음) [Exchange Online용 PowerShell 명령](https://technet.microsoft.com/library/jj200677.aspx)을 실행합니다.
 
 > [!NOTE]
@@ -137,6 +139,9 @@ IRM 기능을 사용하도록 Exchange Online을 구성하는 방법에 대한 �
 메시지 암호화에 대한 자세한 내용은 Exchange 라이브러리의 [Office 365의 암호화](https://technet.microsoft.com/library/dn569286.aspx) 를 참조하세요.
 
 ## <a name="sharepoint-online-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 및 비즈니스용 OneDrive: IRM 구성
+
+SharePoint Online IRM이 Azure Rights Management 서비스와 함께 작동하는 방식에 대한 자세한 내용은 **이해 및 탐색** 섹션에서 [SharePoint Online 및 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server)를 참조하세요.
+
 Azure Rights Management 서비스를 지원하도록 SharePoint Online 및 비즈니스용 OneDrive를 구성하려면 먼저 SharePoint 관리 센터를 통해 SharePoint Online에 대해 IRM(정보 권한 관리) 서비스가 사용되도록 해야 합니다. 그러면 사이트 소유자는 SharePoint 목록 및 문서 라이브러리를 IRM으로 보호할 수 있으며, 사용자는 비즈니스용 OneDrive 라이브러리를 IRM으로 보호하여 해당 라이브러리에 저장된 문서와 다른 사람과 공유하는 문서가 Azure Rights Management 서비스를 통해 자동으로 보호되도록 할 수 있습니다.
 
 > [!NOTE]
@@ -144,14 +149,14 @@ Azure Rights Management 서비스를 지원하도록 SharePoint Online 및 비�
 
 SharePoint Online에 대한 IRM(정보 권한 관리) 서비스를 사용하도록 설정하려면 Office 웹 사이트의 다음 지침을 참조하세요.
 
--   [SharePoint 관리 센터의 IRM(정보 권한 관리) 설정](http://office.microsoft.com/office365-sharepoint-online-enterprise-help/set-up-information-rights-management-irm-insharepoint-online-HA102895193.aspx)
+- [SharePoint 관리 센터의 IRM(정보 권한 관리) 설정](https://office.microsoft.com/office365-sharepoint-online-enterprise-help/set-up-information-rights-management-irm-insharepoint-online-HA102895193.aspx)
 
 이 구성은 Office 365 관리자가 수행합니다.
 
 ### <a name="configuring-irm-for-libraries-and-lists"></a>라이브러리 및 목록에 대한 IRM 구성
 SharePoint용 IRM 서비스를 사용하도록 설정하면 사이트 소유자는 SharePoint 문서 라이브러리 및 목록을 IRM으로 보호할 수 있습니다. 지침을 보려면 Office 웹 사이트의 다음 리소스를 참조하세요.
 
--   [목록이나 라이브러리에 정보 권한 관리 적용](http://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)
+- [목록이나 라이브러리에 정보 권한 관리 적용](https://office.microsoft.com/sharepoint-help/apply-information-rights-management-to-a-list-or-library-HA102891460.aspx)
 
 이 구성은 SharePoint 사이트 관리자가 수행합니다.
 
@@ -179,9 +184,9 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 사용자의 
 #### <a name="configuration-for-administrators"></a>관리자를 위한 구성
 관리자가 SharePoint 관리 센터를 이용해 사용자의 비즈니스용 OneDrive에 대한 IRM을 구성할 수는 없지만, Windows PowerShell을 이용해 구성할 수는 있습니다. 이러한 라이브러리에 대한 IRM을 사용하도록 설정하려면 다음 단계를 수행합니다.
 
-1.  [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)를 다운로드하여 설치합니다.
+1.  [SharePoint Online 클라이언트 구성 요소 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=42038)를 다운로드하여 설치합니다.
 
-2.  [SharePoint Online 관리 셸](http://www.microsoft.com/en-us/download/details.aspx?id=35588)을 다운로드하여 설치합니다.
+2.  [SharePoint Online 관리 셸](https://www.microsoft.com/en-us/download/details.aspx?id=35588)을 다운로드하여 설치합니다.
 
 3.  다음 스크립트의 콘텐츠를 복사하고 컴퓨터에 Set-IRMOnOneDriveForBusiness.ps1 파일의 이름을 지정합니다.
 
@@ -198,10 +203,10 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 사용자의 
      Script Installation Requirements:
 
        SharePoint Online Client Components SDK
-       http://www.microsoft.com/en-us/download/details.aspx?id=42038
+       https://www.microsoft.com/en-us/download/details.aspx?id=42038
 
        SharePoint Online Management Shell
-       http://www.microsoft.com/en-us/download/details.aspx?id=35588
+       https://www.microsoft.com/en-us/download/details.aspx?id=35588
 
     ======
     #>

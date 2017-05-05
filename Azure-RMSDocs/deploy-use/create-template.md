@@ -12,8 +12,8 @@ ms.technology: techgroup-identity
 ms.assetid: d6e9aa0c-1694-4a53-8898-4939f31cc13f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf11e0ac3bb13dcb31d14bad5f97ad117bd09953
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
+ms.openlocfilehash: fe569124494f837e770e5f1f8c6de0c2188a6e40
+ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
 translationtype: HT
 ---
 # <a name="create-configure-and-publish-a-custom-template"></a>사용자 지정 템플릿 만들기, 구성 및 게시
@@ -76,9 +76,9 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
     > [!NOTE]
     > 선택되는 사용자 또는 그룹은 반드시 이메일 주소가 있어야 합니다. 프로덕션 환경에서는 거의 언제나 이메일 주소가 있지만 단순한 테스트 환경에서는 사용자 계정 또는 그룹에 이메일 주소를 추가해야 할 수도 있습니다.
     > 
-    > 사용자 또는 그룹을 선택하고 템플릿을 저장한 후 메일 주소를 변경하는 경우 계획 설명서에서 [메일 주소를 변경하는 경우 고려할 사항](../plan-design/prepare.md#considerations-if-email-addresses-change) 섹션을 참조하세요. 
+    > 사용자 또는 그룹을 선택하고 템플릿을 저장한 후 메일 주소를 변경하는 경우 계획 설명서에서 [메일 주소를 변경하는 경우 고려할 사항](../plan-design/prepare.md#considerations-for-azure-information-protection-if-email-addresses-change) 섹션을 참조하세요. 
 
-    모범 사례로, 사용자가 아닌 그룹을 사용하면 템플릿의 관리가 간소화됩니다. 그러나 그룹을 변경할 경우 성능상의 이유로 Azure Rights Management에서 [그룹 구성원을 캐시](../plan-design/prepare.md#group-membership-caching)합니다. 
+    모범 사례로, 사용자가 아닌 그룹을 사용하면 템플릿의 관리가 간소화됩니다. 그러나 그룹을 변경할 경우 성능상의 이유로 Azure Rights Management에서 [그룹 구성원을 캐시](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)합니다. 
     
     Active Directory 온-프레미스에서 Azure AD로 동기화하는 경우 보안 그룹 또는 배포 그룹 중 하나인 메일 사용 가능 그룹을 사용할 수 있습니다. 조직 내의 모든 사용자에게 권한을 부여하려는 경우에는 여러 개의 그룹을 지정하는 것 보다 기본 템플릿 중 하나를 복사하는 것이 더 효율적입니다. 자세한 내용은 [템플릿 복사 방법](copy-template.md)을 참조하세요.
 

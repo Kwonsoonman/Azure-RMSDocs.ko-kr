@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8b6bd6e44fb39c3787e2fe63577c7e7fd9948025
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: f412d36e8c58d874360c55c5c90416c2629ed69e
+ms.sourcegitcommit: e3974cc1490581414084669632cad54b12b05d5a
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -58,6 +59,8 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 - 24시간마다.
 
+>[!NOTE]
+>클라이언트가 정책을 다운로드하면 정책이 완벽하게 작동하는 데 몇 분 정도 걸립니다. 실제 시간은 정책 구성의 크기 및 복잡도, 네트워크 연결 등 여러 요소에 따라 다릅니다. 레이블의 결과 작업이 최근 변경 내용과 일치하지 않는 경우에는 최대 15분 정도 기다렸다 다시 시도하세요.
 
 ## <a name="configuring-your-organizations-policy"></a>조직의 정책 구성
 

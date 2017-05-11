@@ -4,7 +4,7 @@ description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5899710615a1a875d3613b70b1c378db67942404
-ms.sourcegitcommit: 3ff6c072a228994308402778c493727cc682c6b7
-translationtype: HT
+ms.openlocfilehash: ffd2ed8aa59c3d9eb1ab6d36a9ccac71d449d978
+ms.sourcegitcommit: dabea768a37aa56635b9123f628c1c2b2d6a0f55
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/08/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -117,17 +119,19 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 기본적으로 기본 보호가 적용되는 모든 파일에 대해 Azure Information Protection 클라이언트가 일반 보호를 적용하도록 구성하려면 다음 레지스트리를 편집합니다. FileProtection 키가 없으면 직접 만들어야 합니다.
 
-1. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**: 이름이 *인 새 키를 만듭니다.
+1. 임의 파일 이름 확장명의 파일을 나타내는 *라는 새 키를 다음 레지스트리 경로에 만듭니다.
+    
+    - 32비트 버전 Windows: **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**
+    
+    - 64비트 버전 Windows: **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**
 
-    이 설정은 임의의 파일 이름 확장명이 지정된 파일을 나타냅니다.
-
-2. 새로 추가한 키 HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*에서 데이터 값이 **Pfile**인 새 문자열 값(REG_SZ) **Encryption**을 만듭니다.
+2. 새로 추가한 키(예: HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\\\*)에서 데이터 값이 **Pfile**인 새 문자열 값(REG_SZ) **Encryption**을 만듭니다.
 
     이 설정을 지정하면 Azure Information Protection 클라이언트가 일반 보호를 적용합니다.
 
 이 두 설정을 사용하면 Azure Information Protection 클라이언트가 특정 파일 이름 확장명을 사용하는 모든 파일에 일반 보호를 적용합니다. 이러한 결과를 원하는 경우에는 추가 구성을 수행할 필요가 없습니다. 그러나 계속 기본적으로 보호되도록 특정 파일 형식에 대해 예외를 정의할 수 있습니다. 이렇게 하려면 각 파일 형식에 대해 추가로 3개 레지스트리를 편집해야 합니다.
 
-1. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**: 파일 이름 확장명(앞의 마침표는 제외)이 이름으로 지정된 새 키를 추가합니다.
+1. **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection**(32비트 Windows) 또는 **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\FileProtection**(64비트 Windows): 파일 이름 확장명(앞의 마침표는 제외)이 이름으로 지정된 새 키를 추가합니다.
 
     예를 들어 파일 이름 확장명이 .docx인 파일의 경우 **DOCX**키를 만듭니다.
 

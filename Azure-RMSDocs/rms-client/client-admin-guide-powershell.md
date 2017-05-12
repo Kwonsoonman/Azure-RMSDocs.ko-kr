@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/28/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 90b26239979b42eadb008b11a963e35a74698910
-ms.sourcegitcommit: 16fec44713c7064959ebb520b9f0857744fecce9
-translationtype: HT
+ms.openlocfilehash: 04e04f6e3243283b98df94143773e4aa81351f48
+ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -58,21 +59,27 @@ RMSProtection 모듈과 마찬가지로 AzureInformationProtection 모듈의 현
 조직에서 Azure Information Protection 및 Azure Rights Management 데이터 보호 서비스를 사용하는 경우나 Azure Rights Management 서비스만 사용하는 경우 먼저 이 섹션을 읽은 다음 PowerShell 명령 사용을 시작하세요.
 
 
-### <a name="prerequisites-for-aip-and-azure-rms"></a>AIP 및 Azure RMS에 대한 필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 외에, Azure Information Protection 서비스 및 Azure Rights Management 데이터 보호 서비스에 대한 추가적인 필수 구성 요소가 있습니다.
 
 1. Azure Rights Management 서비스가 활성화되어야 합니다.
 
-2. 여러분의 계정을 사용하는 다른 사람을 위해 파일에서 보호를 제거하려면: 조직에 대해 수퍼 사용자 기능을 사용하도록 설정해야 하고 계정은 Azure Rights Management에 대해 슈퍼 사용자로 구성되어야 합니다.
+2. 자기 계정을 사용하는 다른 사람의 파일에서 보호 제거 
+    
+    - 조직에 대해 슈퍼 사용자 기능을 사용하도록 설정해야 하고 계정은 Azure Rights Management에 대해 슈퍼 사용자로 구성되어야 합니다.
 
-3. 사용자 개입 없이 파일을 직접 보호하거나 보호를 해제하려면: 서비스 사용자 계정을 만들고, Set-RMSServerAuthentication을 실행하고, 이 서비스 사용자를 Azure Rights Management에 대한 슈퍼 사용자로 만드는 것을 고려합니다.
+3. 사용자 개입 없이 파일을 직접 보호 또는 보호 해제하려면: 
+    
+    - 서비스 주체 계정을 만들고, Set-RMSServerAuthentication을 실행하고, 이 서비스 주체를 Azure Rights Management에 대한 슈퍼 사용자로 만드는 것을 고려합니다.
 
-4. 북미 이외의 지역: 서비스 인증을 위해 레지스트리를 편집합니다.
+4. 북미 이외의 지역: 
+    
+    - 서비스에 인증할 레지스트리를 편집합니다.
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>필수 구성 요소 1: Azure Rights Management 서비스가 활성화되어야 함
 
-이 필수 구성 요소는 레이블을 사용하여 데이터 보호를 적용할지 또는 Azure Rights Management 서비스에 직접 연결하여 데이터 보호를 적용할지를 적용합니다. 데이터 보호를 적용하도록 구성되어야 합니다.
+레이블을 사용하여 데이터 보호를 적용하는 경우와 Azure Rights Management에 직접 연결하여 데이터 보호를 적용하는 경우 모두 이 필수 조건이 적용됩니다.
 
 Azure Information Protection 테넌트가 활성화되지 않은 경우 [Azure Rights Management 활성화](../deploy-use/activate-service.md)에 대한 지침을 참조하세요.
 
@@ -80,7 +87,7 @@ Azure Information Protection 테넌트가 활성화되지 않은 경우 [Azure R
 
 다른 사용자를 위해 파일에서 보호를 제거하기 위한 일반적인 시나리오에는 데이터 검색 또는 데이터 복구가 포함됩니다. 레이블을 사용하여 보호를 적용하는 경우 보호를 적용하지 않는 새 레이블을 설정하거나 레이블을 제거하여 보호를 제거할 수 있습니다. 하지만 Azure Rights Management 서비스에 직접 연결하여 보호를 제거할 가능성이 높습니다.
 
-파일에서 보호를 제거하려면 Rights Management 권한이 있거나 슈퍼 사용자여야 합니다. 데이터 검색 또는 데이터 복구의 경우 일반적으로 슈퍼 사용자 기능이 사용됩니다. 이 기능을 사용하도록 설정하고 사용자 계정을 슈퍼 사용자로 구성하려면 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
+파일에서 보호를 제거할 수 있는 Rights Management 사용 권한이 있거나 슈퍼 사용자여야 합니다. 데이터 검색 또는 데이터 복구의 경우 일반적으로 슈퍼 사용자 기능이 사용됩니다. 이 기능을 사용하도록 설정하고 사용자 계정을 슈퍼 사용자로 구성하려면 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>필수 구성 요소 3: 사용자 개입 없이 파일 보호 또는 보호 해제
 
@@ -132,9 +139,12 @@ Azure RMS Windows PowerShell 모듈에서 Get-AadrmConfiguration cmdlet을 실�
 
 ##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>AppPrincipalId 및 대칭 키를 가져오려면
 
-Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServicePrincipal` cmdlet을 실행하여 새 서비스 주체를 만듭니다. 
+Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServicePrincipal` cmdlet을 실행하여 새 서비스 주체를 만들고 다음 지침을 사용합니다. 
 
-1. 이 모듈이 컴퓨터에 설치되지 않은 경우 [Azure AD 모듈 설치](/powershell/azuread/#install-the-azure-ad-module)를 참조하세요.
+> [!IMPORTANT]
+> 이 서비스 주체를 만드는 데 새로운 Azure AD PowerShell cmdlet인 New-AzureADServicePrincipal을 사용하지 마세요. Azure Rights Management 서비스에서는 New-AzureADServicePrincipal을 지원하지 않습니다. 
+
+1. MSOnline 모듈이 컴퓨터에 아직 설치되지 않았으면 `Install-Module MSOnline`을 실행합니다.
 
 2. **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell을 시작합니다.
 
@@ -187,11 +197,11 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
     Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
 
-이전 명령에서와 같이 단일 명령을 사용해서 여러 값을 제공하거나, Set-RMSServerAuthentication만 입력하고 요구가 있을 때마다 값을 하나씩 제공할 수 있습니다. 명령이 완료되면 "**The RmsServerAuthentication is set to ON**"이 표시됩니다. 이제 서비스 사용자를 사용해서 파일을 보호하고 보호를 해제할 수 있다는 의미입니다.
+이전 명령에서와 같이 단일 명령을 사용해서 여러 값을 제공하거나, Set-RMSServerAuthentication만 입력하고 요구가 있을 때마다 값을 하나씩 제공할 수 있습니다. 명령이 완료되면 클라이언트가 현재 “서버 모드"에서 작동하는 것을 나타내는 "**The RmsServerAuthentication is set to ON**"(RmsServerAuthentication이 ON으로 설정됨)이 표시됩니다. 이 메시지는 사용자가 제공한 값을 사용하여 인증에 성공한 것을 확인하지 않고 서버 모드로의 전환에 성공한 것을 확인합니다.
 
 이 서비스 사용자를 슈퍼 사용자로 만드는 것을 고려: 이 서비스 사용자가 항상 다른 사용자를 위해 파일 보호를 해제할 수 있도록 하려면 슈퍼 사용자로 구성할 수 있습니다. 표준 사용자 계정을 슈퍼 사용자로 구성할 때와 같은 방식으로 동일한 Azure RMS cmdlet, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md)를 사용하되, AppPrincipalId 값을 갖는 **-ServicePrincipalId** 매개 변수를 지정합니다.
 
-슈퍼 사용자에 대한 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 검색을 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
+슈퍼 사용자에 대한 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 검색을 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
 
 > [!NOTE]
 > 자체 계정을 사용하여 Azure Rights Management 서비스에서 인증을 받으려면 파일을 보호하거나 보호를 해제하거나, 템플릿을 가져오기 전에 Set-RMSServerAuthentication을 실행할 필요가 없습니다.
@@ -301,7 +311,7 @@ Rights Management 템플릿이 변경되면 `Get-RMSTemplate -force`를 사용�
 조직에서 Active Directory Rights Management Services만 사용할 경우 PowerShell 명령을 사용하여 파일을 보호하거나 보호를 해제하려면 먼저 이 섹션을 읽어보세요.
 
 
-### <a name="prerequisites-for-ad-rms"></a>AD RMS에 대한 필수 구성 요소
+### <a name="prerequisites"></a>전제 조건
 
 AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 외에도 사용자 계정에는 ServerCertification.asmx에 액세스하기 위한 읽기 및 실행 권한이 있어야 합니다.
 

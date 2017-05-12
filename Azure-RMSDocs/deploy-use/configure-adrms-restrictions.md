@@ -4,15 +4,16 @@ description: "Azure Information Protection에서 HYOK(AD RMS) 보호를 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: b9217412778309917a5d259d09ab52a7bf121b41
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 984bc844187a419cb73ab30527278d1762b70fcb
+ms.sourcegitcommit: 45053160d956587fcf45e021065e452a4c48aa4c
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
@@ -61,7 +62,9 @@ Azure RMS 보호를 Azure Information Protection과 사용할 경우 Azure RMS �
 
 - Azure RMS 보호를 위해 레이블을 구성할 때 **전달 금지** 옵션을 사용하지 마세요. 또한 사용자에게 Outlook에서 이 옵션을 수동으로 선택하지 말라고 알려줘야 합니다. 
 
-    레이블을 통해 또는 사용자가 수동으로 전달 금지 옵션을 적용하는 경우 필요한 Azure 권한 관리 서비스가 아니라 AD RMS 배포에서 옵션이 적용될 수 있습니다. 이 시나리오에서는 공유하는 사람이 이 전달 금지 옵션이 적용된 메일 메시지를 외부에서 열 수 없습니다.
+    레이블을 통해 또는 사용자가 수동으로 전달 금지 옵션을 적용하는 경우 필요한 Azure Rights Management 서비스가 아니라 AD RMS 배포에서 옵션이 적용될 수 있습니다. 이 시나리오에서는 공유하는 사람이 이 전달 금지 옵션이 적용된 메일 메시지를 외부에서 열 수 없습니다.
+
+- AD RMS(HYOK) 보호와 Azure RMS 보호를 사용할 때 사용자가 사용자 지정 권한을 구성하는 경우, 문서 또는 메일이 항상 Azure Rights Management로 보호됩니다.
 
 - 사용자가 Outlook에서 AD RMS 보호를 적용하는 레이블을 선택한 다음 메일을 보내기 전에 마음이 바뀌어 Azure RMS 보호를 적용하는 레이블을 선택하는 경우, 새로 선택한 레이블은 적용되지 않습니다. 다음 오류 메시지가 표시됩니다. **Azure Information Protection cannot apply this label. You don't have permission to perform this action.**(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 이 작업을 수행할 권한이 없습니다.)
     

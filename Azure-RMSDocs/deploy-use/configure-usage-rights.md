@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 526a0ef3bcc5ebf07c4993b9e5dd602683593a45
-ms.sourcegitcommit: 85261fbc9e6ce71a2001d954cb2fc2d190695f6a
-translationtype: HT
+ms.openlocfilehash: ed06deca76ed1241f0c9b3f104fd922263c5a6cd
+ms.sourcegitcommit: dd5a63bfee309c8b68ee9f8cd071a574ab0f6b4a
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
-# <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure 권한 관리에 대한 사용 권한 구성
+# <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -51,20 +52,23 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 이러한 사용 권한 수준의 목록과 포함된 권한의 전체 목록을 보려면 다음 표를 참조하세요.
 
-
 |사용 권한 수준|응용 프로그램|포함된 권한(일반 이름)|
 |---------------------|----------------|---------------------------------|
-|보기 권한자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 회신, 전체 회신<br /><br />참고: 메일의 경우 메일의 회신이 첨부 파일이 아닌 메일 메시지로 수신되도록 이 권한 수준 대신 검토자 권한을 사용합니다. 검토자는 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다.|
-|검토자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
-|공동 작성자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기 [[2]](#footnote-2), 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1)|
-|공동 소유자|Azure 클래식 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[1]](#footnote-1), 전체 회신 [[1]](#footnote-1), 전달 [[1]](#footnote-1), 모든 권한|
+|보기 권한자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br /> Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 회신, 전체 회신, 매크로 허용 [[1]](#footnote-1)<br /><br />참고: 메일의 경우 메일의 회신이 첨부 파일이 아닌 메일 메시지로 수신되도록 이 권한 수준 대신 검토자 권한을 사용합니다. 검토자는 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다.|
+|검토자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신: 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2), 매크로 허용 [[1]](#footnote-1)|
+|공동 작성자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기 [[3]](#footnote-3), 인쇄, 회신 [[2]](#footnote-2), 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2)|
+|공동 소유자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[2]](#footnote-2), 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2), 모든 권한|
 
 ----
 
 ###### <a name="footnote-1"></a>각주 1
-Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램에는 해당되지 않습니다.
+
+Windows용 Azure Information Protection 클라이언트의 경우 이 권한은 현재 Office 응용 프로그램에 있는 Information Protection 표시줄에 필요합니다.
 
 ###### <a name="footnote-2"></a>각주 2
+Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램에는 해당되지 않습니다.
+
+###### <a name="footnote-3"></a>각주 3
 Windows용 Azure Information Protection 클라이언트에는 포함되어 있지 않습니다. 이 클라이언트에서는 내보내기 사용 권한에 보호 제거 기능이 포함되어 있습니다.
 
 

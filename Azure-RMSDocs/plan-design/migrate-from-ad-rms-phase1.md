@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: adb5ad1f599c5996044ad2fce0e1e5889d81c81b
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: 587d24a005452874ca06b8fc179b25e91a7f0130
+ms.sourcegitcommit: ed954c84c9009d205638f0ad54fdbfc02ef5b92c
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="migration-phase-1---preparation"></a>마이그레이션 1단계 - 준비
 
@@ -27,7 +28,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 1단계에는
 
 Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights Management 관리 모듈이 포함된 [Azure Rights Management 관리 도구](https://go.microsoft.com/fwlink/?LinkId=257721)를 다운로드합니다. Azure RMS(Azure Rights Management)는 Azure Information Protection에 대한 데이터 보호를 제공하는 서비스입니다.
 
-도구를 설치합니다. 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
+도구를 설치합니다. 지침은 [Azure Rights Management용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 > [!NOTE]
 > 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version` 이상인지 확인합니다.
@@ -86,7 +87,7 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
 
 Exchange 온-프레미스 또는 Exchange Online을 사용하는 경우 이전에 Exchange를 AD RMS 배포와 통합했을 수 있습니다. 이 단계에서는 Azure RMS로 보호된 콘텐츠를 지원하기 위해 기존 AD RMS 구성을 사용하도록 구성합니다. 
 
-[테넌트의 Azure Rights Management 서비스 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)을 확보하여 이 값으로 다음 명령의 *&lt;테넌트 URL&gt;*을 대체할 수 있도록 합니다. 각 Exchange 조직에 대해 이러한 명령 집합을 한 번씩 실행합니다.
+[테넌트의 Azure Rights Management 서비스 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)을 확보하여 이 값으로 다음 명령의 *&lt;테넌트 URL&gt;*을 대체할 수 있도록 합니다. 
 
 **Exchange Online을 AD RMS와 통합한 경우**: Exchange Online PowerShell 세션을 열고 다음 PowerShell 명령을 하나씩 또는 스크립트로 실행합니다.
 
@@ -97,22 +98,9 @@ Exchange 온-프레미스 또는 Exchange Online을 사용하는 경우 이전�
     Set-IRMConfiguration -internallicensingenabled $false
     Set-IRMConfiguration -internallicensingenabled $true 
 
-**Exchange 온-프레미스를 AD RMS와 통합한 경우**: 다음 PowerShell 명령을 하나씩 또는 스크립트로 실행합니다. 
+**Exchange 온-프레미스를 AD RMS와 통합한 경우**: 각 Exchange 조직에 대해 먼저 각 Exchange 서버에 있는 레지스트리 값을 추가한 다음 PowerShell 명령을 실행합니다. 
 
-    $irmConfig = Get-IRMConfiguration
-    $list = $irmConfig.LicensingLocation
-    $list += "<YourTenantURL>/_wmcs/licensing"
-    Set-IRMConfiguration -LicensingLocation $list
-    Set-IRMConfiguration -internallicensingenabled $false
-    Set-IRMConfiguration -RefreshServerCertificates
-    Set-IRMConfiguration -internallicensingenabled $true
-    IISReset
-
-또한 Exchange 온-프레미스의 경우 각 Exchange Server에서 레지스트리 값을 추가해야 합니다.
-
-
-Exchange 2013 및 Exchange 2016의 경우:
-
+Exchange 2013 및 Exchange 2016의 레지스트리 값:
 
 **레지스트리 경로:**
 
@@ -124,11 +112,9 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
 **데이터:** https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
 
-
 ---
 
-Exchange 2010:
-
+Exchange 2010의 레지스트리 값:
 
 **레지스트리 경로:**
 
@@ -140,12 +126,21 @@ HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
 **데이터:** https://\<AD RMS 엑스트라넷 라이선스 URL>/_wmcs/licensing
 
-
 ---
 
+하나씩 또는 스크립트에서 실행할 PowerShell 명령
 
-이러한 명령을 실행한 후 AD RMS로 보호된 콘텐츠를 지원하도록 Exchange Server가 구성된 경우 마이그레이션 후 Azure RMS로 보호된 콘텐츠도 지원합니다. Exchange Server는 마이그레이션의 이후 단계까지 계속 AD RMS를 사용하여 보호된 콘텐츠를 지원합니다.
+    $irmConfig = Get-IRMConfiguration
+    $list = $irmConfig.LicensingLocation
+    $list += "<YourTenantURL>/_wmcs/licensing"
+    Set-IRMConfiguration -LicensingLocation $list
+    Set-IRMConfiguration -internallicensingenabled $false
+    Set-IRMConfiguration -RefreshServerCertificates
+    Set-IRMConfiguration -internallicensingenabled $true
+    IISReset
 
+
+이러한 명령을 Exchange Online 또는 Exchange 온-프레미스에 대해 실행한 후 AD RMS로 보호된 콘텐츠를 지원하도록 Exchange 배포가 구성된 경우 마이그레이션 후 Azure RMS로 보호된 콘텐츠도 지원합니다. Exchange 배포는 마이그레이션의 이후 단계까지 계속 AD RMS를 사용하여 보호된 콘텐츠를 지원합니다.
 
 
 ## <a name="next-steps"></a>다음 단계

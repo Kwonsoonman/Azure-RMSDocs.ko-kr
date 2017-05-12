@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1d643cdb28f46c03e9c0c2707d44f9ff9eedcb3
-ms.sourcegitcommit: 237ce3a0cc4921da5a08ed5753e6491403298194
-translationtype: HT
+ms.openlocfilehash: cc11c4c9cfa9a6886180782c4ae88068bf280895
+ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -83,7 +84,7 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
 
     - Azure Active Directory의 메일 사용이 가능한 그룹
 
-    [Azure Information Protection 준비](prepare.md)를 참조하세요.
+    [Azure Information Protection을 위한 사용자 및 그룹 준비](prepare.md)를 참조하세요.
 
 - **AD RMS와 함께 Exchange Server(예: 전송 규칙 및 Outlook Web Access) 또는 SharePoint Server의 IRM(정보 권한 관리) 기능을 사용한 경우**:
 

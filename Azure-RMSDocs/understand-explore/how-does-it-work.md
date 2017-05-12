@@ -4,7 +4,7 @@ description: "Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/21/2017
+ms.date: 04/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,10 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d3d174fabb4189d2f4ca7755b6355293261318d4
-ms.sourcegitcommit: 55d8a769084c6422f80aefc5f7c6594ea6855bfa
-translationtype: HT
+ms.openlocfilehash: 3d53e57b8bff94c39426b37755c643c1dc9d9fde
+ms.sourcegitcommit: dd5a63bfee309c8b68ee9f8cd071a574ab0f6b4a
+ms.translationtype: HT
+ms.contentlocale: ko-KR
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
@@ -105,7 +106,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 **2단계에서 발생하는 작업**: 그런 다음 RMS 클라이언트는 사용자 또는 그룹에 대한 [사용 권한](../deploy-use/configure-usage-rights.md) 및 만료 날짜와 같은 기타 제한 사항이 포함된 문서에 대한 정책을 포함하는 인증서를 만듭니다. 이러한 설정은 관리자가 이전에 구성한 템플릿에 정의하거나 콘텐츠를 보호할 때 지정할 수 있습니다("임시 정책"이라고도 함).   
 
-선택한 사용자 및 그룹을 식별하는 데 사용하는 특성은 사용자나 그룹의 메일 주소를 모두 저장하는 Azure AD proxyAddress 특성입니다.
+선택한 사용자 및 그룹을 식별하는 데 사용하는 기본 Azure AD 특성은 사용자나 그룹의 메일 주소를 모두 저장하는 Azure AD proxyAddress 특성입니다. 그러나 사용자 계정의 AD ProxyAddresses 특성에 값이 없으면 대신 사용자의 UserPrincipalName 값이 사용됩니다.
 
 그러면 RMS 클라이언트는 사용자 환경이 초기화될 때 획득한 조직의 키를 사용하여 정책과 대칭 콘텐츠 키를 암호화합니다. 또한 RMS 클라이언트는 사용자 환경이 초기화되었을 때 획득한 사용자의 인증서로 정책에 서명합니다.
 
@@ -120,7 +121,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 ![RMS 문서 소비 - 1단계, 사용자가 인증되고 권한 목록을 가져옴](../media/AzRMS_documentconsumption1.png)
 
-**1단계에서 발생하는 작업**: 인증된 사용자는 문서 정책과 사용자의 인증서를 Azure Rights Management Service에 전송합니다. 서비스는 정책의 암호를 해독하고 평가한 후 사용자가 문서에 대해 갖는 권한(있는 경우) 목록을 작성합니다. 사용자를 식별하려면 사용자의 계정 및 사용자가 멤버인 그룹에 대해 Azure AD proxyAddress 특성을 사용합니다. 성능을 높이기 위해 그룹 멤버 자격은 [캐시](../plan-design/prepare.md#group-membership-caching)됩니다.
+**1단계에서 발생하는 작업**: 인증된 사용자는 문서 정책과 사용자의 인증서를 Azure Rights Management Service에 전송합니다. 서비스는 정책의 암호를 해독하고 평가한 후 사용자가 문서에 대해 갖는 권한(있는 경우) 목록을 작성합니다. 사용자를 식별하려면 사용자의 계정 및 사용자가 멤버인 그룹에 대해 Azure AD ProxyAddresses 특성을 사용합니다. 성능을 높이기 위해 그룹 멤버 자격은 [캐시](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)됩니다. 사용자 계정에 Azure AD ProxyAddresses 특성 값이 없는 경우는 대신 Azure AD UserPrincipalName에 있는 값이 사용됩니다.
 
 ![RMS 문서 소비 - 2단계, 사용 라이선스가 클라이언트에 반환됨](../media/AzRMS_documentconsumption2.png)
 

@@ -12,10 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5a40277c95e376042fc77b7ba39bfc66a948fde
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 3d9f2e20abe0a4abce3220d53d6373d9c2baf8ee
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>Azure Rights Management 커넥터 모니터링
 
@@ -82,7 +83,7 @@ RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Mi
 
 **권한 있는 계정 목록이 업데이트되었습니다.**
 
-이 이벤트는 RMS 커넥터가 RMS 커넥터 사용 권한이 있는 최신 계정 목록(기존 계정 및 모든 변경 사항)을 다운로드했을 때 기록됩니다. 이 목록은 RMS 커넥터가 Azure Rights Management 서비스와 통신할 수 있을 경우&15;분마다 다운로드됩니다.
+이 이벤트는 RMS 커넥터가 RMS 커넥터 사용 권한이 있는 최신 계정 목록(기존 계정 및 모든 변경 사항)을 다운로드했을 때 기록됩니다. 이 목록은 RMS 커넥터가 Azure Rights Management 서비스와 통신할 수 있을 경우 15분마다 다운로드됩니다.
 
 ----
 

@@ -14,10 +14,11 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 8afff75366e7891ac7f00a1fa28e2939978a8b74
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 875584683bcf1d35037691f21ac7d78d17806a07
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="release-notes"></a>릴리스 정보
 
@@ -66,7 +67,7 @@ ms.contentlocale: ko-KR
 
 ## <a name="january-2015-update"></a>2015년 1월 업데이트
 
--   **지원되는 보호된 파일(pfile) 크기 증가** - 이제&1;GB보다 큰 pfile 크기를 지원합니다. pfile에 대한 자세한 내용은 [Supported File Formats](supported-file-formats.md)(지원되는 파일 형식) 항목을 참조하세요.
+-   **지원되는 보호된 파일(pfile) 크기 증가** - 이제 1GB보다 큰 pfile 크기를 지원합니다. pfile에 대한 자세한 내용은 [Supported File Formats](supported-file-formats.md)(지원되는 파일 형식) 항목을 참조하세요.
 -   **더 나은 진단을 위한 향상된 로깅** - 로깅 수준에서 검토해야 하는 메시지에 대해 **오류** 또는 **경고**가 표시됩니다. 여전히 표시되는 예외를 포함하여 다른 모든 메시지는 **정보**로 기록됩니다.
 
     세부 정보가 손실되지 않도록 이 방법을 선택했습니다. 이제 중요한 메시지만 경고 수준으로 표시됩니다.
@@ -131,7 +132,7 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
       - RMS 보호된 파일 형식(PFile)을 사용하여 시스템 파일 및 Office 파일을 제외한 모든 파일을 보호할 수 있습니다.
 
-    파일 API는 다음과 같이&4;개의 새로운 함수를 통해 구현됩니다. [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx) 및 [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx)
+    파일 API는 다음과 같이 4개의 새로운 함수를 통해 구현됩니다. [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx) 및 [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx)
 
     파일 API를 사용하려면 클라이언트 컴퓨터에 Rights Management Service Client 2.1을 설치해야 하고 컴퓨터에서 RMS 서버에 연결해야 합니다. RMS 서버, RMS 클라이언트 및 해당 기능에 대한 자세한 내용은 [IT Pro documentation for RMS](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx)(RMS에 대한 IT 전문가 설명서) 항목의 TechNet 콘텐츠를 참조하세요.
 

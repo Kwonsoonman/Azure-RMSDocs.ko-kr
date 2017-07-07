@@ -4,7 +4,7 @@ description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/19/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 21eab2a693147b4e6562a8bcdff8cece7d706432
-ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
-translationtype: HT
+ms.openlocfilehash: d03cb1ff146839e4de805b66f5b2e6a3df851430
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
 
@@ -66,18 +68,18 @@ RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있�
 -   **Azure Rights Management 커넥터 관리자**: 조직의 RMS 커넥터를 설치 및 관리할 권한이 부여된 Azure Active Directory의 계정입니다.
 
     > [!NOTE]
-    > Azure Rights Management 전역 관리자 역할 및 Azure Rights Management 커넥터 관리자 역할은 Azure RMS [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/dn629417.aspx) cmdlet을 사용하여 계정에 할당됩니다.
+    > Azure Rights Management 전역 관리자 역할 및 Azure Rights Management 커넥터 관리자 역할은 Azure RMS [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) cmdlet을 사용하여 계정에 할당됩니다.
     > 
     > 최소 권한으로 RMS 커넥터를 실행하려면 다음을 수행하여 Azure RMS 커넥터 관리자 역할이 할당된 전용 계정을 이 용도로 만듭니다.
     >
     > 1.  Rights Management용 Windows PowerShell을 아직 다운로드하여 설치하지 않은 경우 다운로드한 후 설치합니다. 자세한 내용은 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
     >
-    >     **관리자 권한으로 실행** 명령을 사용하여 Windows PowerShell을 시작한 후 [Connect-AadrmService](https://msdn.microsoft.com/library/azure/dn629415.aspx) 명령을 사용하여 Azure RMS 서비스에 연결합니다.
+    >     **관리자 권한으로 실행** 명령을 사용하여 Windows PowerShell을 시작한 후 [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice) 명령을 사용하여 Azure RMS 서비스에 연결합니다.
     >
     >     ```
     >     Connect-AadrmService                   //provide Office 365 tenant administrator or Azure RMS global administrator credentials
     >     ```
-    > 2.  그런 후에 다음 매개 변수 중 하나만 사용하여 [Add-AadrmRoleBasedAdministrator](https://msdn.microsoft.com/library/azure/dn629417.aspx) 명령을 실행합니다.
+    > 2.  그런 후에 다음 매개 변수 중 하나만 사용하여 [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) 명령을 실행합니다.
     >
     >     ```
     >     Add-AadrmRoleBasedAdministrator -EmailAddress <email address> -Role "ConnectorAdministrator"

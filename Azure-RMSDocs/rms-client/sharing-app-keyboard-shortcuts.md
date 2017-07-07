@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 92fb948782423f91dd5057ee1dc9a89165a102af
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: ebb40568e63cf51a8b6473ca872f1e0ed9ec30ea
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에서 바로 가기 키 사용
 

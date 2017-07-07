@@ -14,9 +14,11 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: eb22d6afac9b7846732d78cd5d0799cb8cae1f1a
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 192a0c85390fdebdd927f19590c943c4b8ad2cf1
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>방법: 오류 및 성능 로깅 사용
 Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.

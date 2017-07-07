@@ -30,7 +30,7 @@
 |자세한 정보가 필요한 경우|추가 정보|
 |--------------------------------|--------------------------|
 |문서 추적을 위한 전체 지침   →|[RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](../rms-client/sharing-app-track-revoke.md)|
-|문서 추적에 대해 설명하고 방법을 보여 주는&2;분 길이의 동영상   →|[Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Azure RMS 문서 추적 및 해지)|
+|문서 추적에 대해 설명하고 방법을 보여 주는 2분 길이의 동영상   →|[Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Azure RMS 문서 추적 및 해지)|
 |문제 해결 및 고객 질문 →|[FAQ for Document Tracking](https://technet.microsoft.com/dn947488)(문서 추적에 대한 FAQ)|
 
 ## <a name="next-steps"></a>다음 단계

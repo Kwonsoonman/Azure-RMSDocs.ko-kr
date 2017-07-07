@@ -12,10 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9b67159136de154b934f70991fcb10799a4cbbb2
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: b7879dd85c2e46823cfe9c8f1f4482952a8db8aa
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 클라이언트 배포 참고 사항
 
@@ -137,7 +138,7 @@ RMS 클라이언트는 로컬 컴퓨터에서 Windows 레지스트리를 다음�
 -   HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\TrustedServers\
     REG_DWORD: AllowTrustedServersOnly
 
-    **값:**&0;이 아닌 값을 지정하는 경우 RMS 클라이언트는 TrustedServers 목록에 구성된 지정된 서버 및 Azure 권한 관리 서비스만 신뢰합니다.
+    **값:** 0이 아닌 값을 지정하는 경우 RMS 클라이언트는 TrustedServers 목록에 구성된 지정된 서버 및 Azure 권한 관리 서비스만 신뢰합니다.
 
 **신뢰할 수 있는 AD RMS 서버 목록에 멤버를 추가하려면**
 

@@ -12,10 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c994d616-cff6-4930-9228-a7f7d198a160
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dd1ecd8bd232e3079ce92eab07288ede52d3de72
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: 2e50dc9d53550f35f5c589cdb1b384e0abf585e0
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="rapid-deployment-guide-for-azure-rights-management"></a>Azure 권한 관리 빠른 배포 가이드
 
@@ -85,7 +86,7 @@ Azure Information Protection을 신속하게 배포하여 특정 비즈니스 �
 
 참고: [시나리오 - 파일 서버 공유에 있는 파일 보호](scenario-fci.md)
 
-**비즈니스에 미치는 영향이 큰&1;급 기밀 문서 보호**
+**비즈니스에 미치는 영향이 큰 1급 기밀 문서 보호**
 
 예:
 

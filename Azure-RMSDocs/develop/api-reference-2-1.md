@@ -14,17 +14,19 @@ ms.assetid: 6dcfa840-026b-4728-b53c-2c9c730fcf84
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 15cb1686fcdf92ebe078e816123dc8db4edd629c
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: c4d2934573ba16b1c39dee5e972d21323ebe6d98
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="api-reference"></a>API 참조
 
 Microsoft Rights Management SDK 2.1에서는 Windows 클라이언트의 RMS 사용을 지원합니다. 자세한 내용은 [릴리스 정보](release-notes-rtm.md)를 참조하세요.
 - [Constants](https://msdn.microsoft.com/library/hh535291.aspx)(상수)
-- [Data types](https://msdn.microsoft.com/library/hh535288.aspx)(데이터 형식)
-- [Functions](https://msdn.microsoft.com/library/hh535289.aspx)(함수)
-- [Structures](https://msdn.microsoft.com/library/hh535294.aspx)(구조)
+- [Data types (데이터 형식)](https://msdn.microsoft.com/library/hh535288.aspx)
+- [Functions (함수)](https://msdn.microsoft.com/library/hh535289.aspx)
+- [Structures (구조)](https://msdn.microsoft.com/library/hh535294.aspx)
 - [Error codes](https://msdn.microsoft.com/library/hh535248.aspx)(오류 코드)
 
 

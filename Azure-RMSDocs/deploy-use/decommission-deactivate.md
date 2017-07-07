@@ -4,7 +4,7 @@ description: "Azure Information Protection에서 이 정보 보호 서비스를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,9 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f577337cf7ce904a82ff23b165fdc7befe319092
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 6dc6a42cf6d4a5e7a2768c927a75522a265432f7
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>Azure 권한 관리 서비스 해제 및 비활성화
 
@@ -31,7 +33,7 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 |적용 대상...|… 방법|
 |----------------------------|--------------|
-|모든 사용자가 Rights Management를 계속 사용하지만 Azure Information Protection보다 온-프레미스 솔루션을 사용하려는 경우|[Set-AadrmMigrationUrl](https://msdn.microsoft.com/library/azure/dn629429.aspx) cmdlet을 사용하여 기존 사용자가 변경 후 보호되는 콘텐츠를 사용할 때 온-프레미스 배포를 사용하도록 안내합니다. 사용자가 자동으로 AD RMS 설치를 사용하여 보호되는 콘텐츠를 사용하게 됩니다.<br /><br />사용자가 이 변경 전에 보호한 콘텐츠를 사용하려면 RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md)에 설명된 Office 2016 또는 Office 2013용 **LicensingRedirection** 레지스트리 키 및 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 Office 2010용 **LicenseServerRedirection** 레지스트리 키를 사용하여 클라이언트를 온-프레미스 배포로 리디렉션합니다.|
+|모든 사용자가 Rights Management를 계속 사용하지만 Azure Information Protection보다 온-프레미스 솔루션을 사용하려는 경우|[Set-AadrmMigrationUrl](/powershell/module/aadrm/Set-AadrmMigrationUrl) cmdlet을 사용하여 기존 사용자가 변경 후 보호되는 콘텐츠를 사용할 때 온-프레미스 배포를 사용하도록 안내합니다. 사용자가 자동으로 AD RMS 설치를 사용하여 보호되는 콘텐츠를 사용하게 됩니다.<br /><br />사용자가 이 변경 전에 보호한 콘텐츠를 사용하려면 RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md)에 설명된 Office 2016 또는 Office 2013용 **LicensingRedirection** 레지스트리 키 및 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 Office 2010용 **LicenseServerRedirection** 레지스트리 키를 사용하여 클라이언트를 온-프레미스 배포로 리디렉션합니다.|
 |권한 관리 기술의 사용을 완전히 중단하려는 경우 →|지정된 관리자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 해당 사용자에게 [RMS 보호 도구](http://www.microsoft.com/en-us/download/details.aspx?id=47256)를 제공합니다.<br /><br />그러면 이 관리자가 해당 도구를 사용하여 Azure Rights Management 서비스로 보호되던 폴더의 파일을 대량 해독하여 파일을 보호되지 않는 상태로 되돌릴 수 있으므로 Azure Information Protection이나 AD RMS같은 권한 관리 기술 없이도 읽을 수 있습니다. 이 도구는 Azure Information Protection의 Azure Rights Management 서비스 및 AD RMS 모두에 사용할 수 있으므로 Azure Rights Management 서비스를 비활성화하기 전이나 후 또는 둘을 조합하여 파일 해독 시점을 선택할 수 있습니다.|
 |Azure Information Protection의 Azure Rights Management 서비스로 보호되던 일부 파일을 파악할 수 없거나 모든 사용자가 자동으로 누락된 모든 보호되는 파일을 읽을 수 있게 하려는 경우 →|RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md)에 설명된 Office 2016 및 Office 2013용 **LicensingRedirection** 레지스트리 키와 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 Office 2010용 **LicenseServerRedirection** 레지스트리 키를 사용하여 모든 클라이언트 컴퓨터에서 레지스트리 설정을 배포합니다.<br /><br />또한 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에서 설명한 대로 **DisableCreation**을 **1**로 설정하여 사용자가 새 파일을 보호하지 못하도록 다른 레지스트리 설정을 배포할 수도 있습니다.|
 |누락된 모든 파일에 대해 제어되는 수동 복구 서비스를 원하는 경우    →|데이터 복구 그룹에서 지정된 사용자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 [RMS 보호 도구](http://www.microsoft.com/en-us/download/details.aspx?id=47256)를 제공하여 표준 사용자의 요청 시 파일 보호를 해제할 수 있게 합니다.<br /><br />모든 컴퓨터에서 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 대로 **DisableCreation**을 **1**로 설정하여 사용자가 새 파일을 보호하지 못하도록 레지스트리 설정을 배포합니다.|
@@ -49,7 +51,7 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 비활성화하려면 다음 절차 중 하나를 사용하세요.
 
 > [!TIP]
-> Windows PowerShell cmdlet [Disable-Aadrm](http://msdn.microsoft.com/library/windowsazure/dn629422.aspx)을 사용하여 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 비활성화할 수도 있습니다.
+> Windows PowerShell cmdlet [Disable-Aadrm](/powershell/module/aadrm/disable-aadrm)을 사용하여 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 비활성화할 수도 있습니다.
 
 #### <a name="to-deactivate-rights-management-from-the-office-365-admin-center"></a>Office 365 관리 센터에서 권한 관리를 비활성화하려면
 

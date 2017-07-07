@@ -12,10 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0b4e9cd5350f942203129979b05bc1344fb37aa5
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
+ms.openlocfilehash: caacc4174ddb63e9c9091c0df294b93cf947a7c4
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 
@@ -41,7 +42,7 @@ Azure Information Protection에 대한 구독을 취소하면, Azure Information
 Microsoft에서 테넌트 키를 백업하며 사용자는 아무런 작업을 수행할 필요가 없습니다.
 
 ## <a name="export-your-tenant-key"></a>테넌트 키 내보내기
-다음&3;단계의 지침에 따라 Azure Information Protection 구성 및 테넌트 키를 내보낼 수 있습니다.
+다음 3단계의 지침에 따라 Azure Information Protection 구성 및 테넌트 키를 내보낼 수 있습니다.
 
 ### <a name="step-1-initiate-export"></a>1단계: 내보내기 시작
 

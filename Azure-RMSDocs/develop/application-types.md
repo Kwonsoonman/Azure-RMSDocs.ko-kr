@@ -14,9 +14,11 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f93df5f204350a56f8280f299c04478cc1b5dfba
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: f7ebcb3a432a4521a71e3cc80c20b1af64e051c7
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
 # <a name="application-types"></a>응용 프로그램 종류
 
@@ -31,7 +33,7 @@ translationtype: HT
 
 ### <a name="server-mode-applications"></a>서버 모드 응용 프로그램
 
-*서버 모드*는 RMS 보호된 콘텐츠를 사용, 보호 또는 처리하는 비대화형 응용 프로그램에 사용됩니다. 예를 들어 파일 서버에서 서비스로 실행되며 중요한 문서를 자동으로 보호하는 *데이터 손실 방지* 응용 프로그램이 있습니다. 이 응용 프로그램 종류의 예는 [IpcDlp 샘플](https://Code.MSDN.Microsoft.Com/IpcDlp-Sample-Application-d30bb99d)을 참조하세요.
+*서버 모드*는 RMS 보호된 콘텐츠를 사용, 보호 또는 처리하는 비대화형 응용 프로그램에 사용됩니다. 예를 들어 파일 서버에서 서비스로 실행되며 중요한 문서를 자동으로 보호하는 *데이터 손실 방지* 응용 프로그램이 있습니다. 이 응용 프로그램 종류의 예는 [IpcDlp 샘플](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcDlpApp)을 참조하세요.
 
 응용 프로그램이 *서버 모드*를 사용하는 경우 RMS 서버에 자동으로 인증해야 합니다. *클라이언트 모드*와 달리 자동으로 인증하지 못하면 RMS SDK 2.1에서 자격 증명 프롬프트가 열리지 않습니다. 또한 *서버 모드*에서 실행하는 경우에는 응용 프로그램 매니페스트가 필요하지 않습니다.
 

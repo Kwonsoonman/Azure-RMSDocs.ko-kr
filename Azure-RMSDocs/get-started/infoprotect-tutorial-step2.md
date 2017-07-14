@@ -4,17 +4,20 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 9a2392df400356e7937db49cec3e0fe1e3d0f228
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: b91bfea99170b747bb199b3c966ae8c89fae5359
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
+# 2단계: Azure Information Protection 정책 구성 및 게시
+<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection*
 
@@ -29,7 +32,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     > [!TIP] 
     > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
 
-3.  테넌트에 대해 자동으로 만들어진 기본 Information Protection 정책을 자동으로 열고 표시하는 **Policy: Global**(정책: 글로벌) 블레이드를 탐색합니다.
+3. 서비스에 처음으로 연결할 때 자동으로 열리는 **빠른 시작** 페이지의 정보를 확인하세요. 나중에 이 페이지로 돌아올 수 있습니다. 이 자습서에서는 **전역 정책**을 클릭하여 **정책: 전역** 블레이드를 엽니다. 이 블레이드는 나중에 서비스에 다시 연결되면 자동으로 열리며 테넌트에 대해 자동으로 생성되는 기본 Information Protection 정책을 표시합니다.
     
     - 분류 레이블: **개인**, **공개**, **일반**, **기밀** 및 **극비**. 마지막 두 개의 레이블은 확장되어 하위 레이블 **모든 직원** 및 **모든 사람(보호되지 않음)**을 표시하여 분류가 하위 범주를 포함할 수 있는 방식의 예를 제공합니다.
     
@@ -46,7 +49,8 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-settings.png)
 
-## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>기본 레이블 및 근거에 대한 프롬프트 설정 변경
+## 기본 레이블 및 근거에 대한 프롬프트 설정 변경
+<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
 
 이 자습서에서는 몇 가지 정책 설정의 작동 방식을 확인할 수 있도록 이러한 설정을 변경합니다.
 
@@ -56,7 +60,8 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 2. **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)에서 **On**(켜기)으로 설정합니다.
 
-## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>보호를 위한 레이블, 워터마크 및 분류를 위한 프롬프트 조건 구성
+## 보호를 위한 레이블, 워터마크 및 분류를 위한 프롬프트 조건 구성
+<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
 
 이제 **기밀** 기본 레이블에서 하위 레이블 중 하나인 **모든 직원**의 설정을 변경합니다. 
 

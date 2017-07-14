@@ -4,7 +4,7 @@ description: "Azure Information Protection 테넌트 키에 적용되는 다양�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 05/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 24368df01f680958310b8d01c4f9a5a939e6f706
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 10ce24e72dae1225505592508d4bf88cadb131a2
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키에 대한 작업
+# Azure Information Protection 테넌트 키에 대한 작업
+<a id="operations-for-your-azure-information-protection-tenant-key" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -36,8 +39,9 @@ Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식
 
 구현한 토폴로지를 파악한 후 다음 중 하나를 선택하여 Azure Information Protection 테넌트 키에 수행할 수 있는 이러한 작업에 대한 자세한 내용을 확인하세요.
 
-
 - [Microsoft 관리 테넌트 키](operations-microsoft-managed-tenant-key.md)
 - [고객 관리 테넌트 키](operations-customer-managed-tenant-key.md)
+
+그러나 Active Directory Rights Management Services에서 TPD(신뢰할 수 있는 게시 도메인)를 가져와서 Azure Information Protection 테넌트 키를 만들려는 경우 이 가져오기 작업은 [AD RMS에서 Azure Information Protection으로의 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)에 포함되어 진행됩니다.  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

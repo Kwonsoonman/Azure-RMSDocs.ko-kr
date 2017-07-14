@@ -1,10 +1,10 @@
 ---
-title: "Office 365 클래식 관리 센터에서 Azure RMS 활성화 - AIP"
-description: "Office 365 관리 센터의 클래식(원래) 버전에 액세스 권한이 있는 경우의 Azure Rights Management 서비스 활성화 지침을 제공합니다."
+title: "이전 Office 365 관리 센터에서 Azure RMS 활성화 - AIP"
+description: "이전 버전의 Office 365 관리 센터를 사용할 때의 Azure Rights Management 서비스 활성화 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 05/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,16 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: b6c42663-af01-49d5-94bc-98963c383379
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd08e94dffd3793675eb90e68f108114e5dcadcd
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: 3282606e4ddc5747bf710e0a885318f07b7da457
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-activate-azure-rights-management-from-the-office-365-classic-admin-center"></a>Office 365 클래식 관리 센터에서 Azure 권한 관리를 활성화하는 방법
+# 이전 Office 365 관리 센터에서 Azure 권한 관리를 활성화하는 방법
+<a id="how-to-activate-azure-rights-management-from-the-old-office-365-admin-center" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
 
-클래식(원래) 버전의 Office 365 관리 센터를 사용하는 경우 다음 지침을 따르세요.
+이전 버전의 Office 365 관리 센터를 사용하는 경우에만 다음 지침을 따르세요.
 
 1. Rights Management가 포함된 Office 365 계획에 등록한 후 Office 365 배포의 전역 관리자인 [회사 또는 학교 계정으로 Office 365에 로그인](https://portal.office.com/)합니다.
 
@@ -47,7 +50,8 @@ translationtype: HT
 
 이제 **Rights Management가 활성화되었음** 이 표시되고 비활성화 옵션이 나타납니다.
 
-## <a name="next-steps"></a>다음 단계
+## 다음 단계
+<a id="next-steps" class="xliff"></a>
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

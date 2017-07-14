@@ -12,12 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2022f86a32725ef9dfcf5692b1194348f6c39f3b
-ms.sourcegitcommit: b471c20eda011a7b75ee801c34081fb4773b64dc
+ms.openlocfilehash: 27ce787cbf5370634f6b1e15903cc981f08656a2
+ms.sourcegitcommit: 505a2c182bcd5a87a7dcb43b9aa1e43244f4c537
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 07/03/2017
 ---
-# <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
+# Azure Information Protection에 대한 Azure Active Directory 요구 사항
+<a id="azure-active-directory-requirements-for-azure-information-protection" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -33,7 +35,8 @@ Azure Information Protection을 사용하려면 Azure AD 디렉터리가 있어�
 
 Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Azure Active Directory와 온-프레미스 ID 통합](/active-directory/active-directory-aadconnect)을 참조하세요.
 
-### <a name="scenarios-that-have-specific-requirements"></a>특정 요구 사항이 있는 시나리오 
+### 특정 요구 사항이 있는 시나리오
+<a id="scenarios-that-have-specific-requirements" class="xliff"></a> 
 
 Office 2010을 실행하는 컴퓨터: 
 
@@ -43,7 +46,7 @@ Office 2010을 실행하는 컴퓨터:
 
 CBA(인증서 기반 인증) 지원:
 
-- Android용 Azure Information Protection 앱에서는 최소 버전인 Android 5.0 이상을 사용하는 경우 인증서 기반 인증을 지원합니다. 인증서 기반 인증을 구성하는 방법에 대한 지침은 [Get started with certificate-based authentication in Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started)(Azure Active Directory에서 인증서 기반 인증 시작)를 참조하세요.
+- iOS 및 Android용 Azure Information Protection 앱은 인증서 기반 인증을 지원합니다. 인증서 기반 인증을 구성하는 방법에 대한 지침은 [Get started with certificate-based authentication in Azure Active Directory](/azure/active-directory/active-directory-certificate-based-authentication-get-started)(Azure Active Directory에서 인증서 기반 인증 시작)를 참조하세요.
 
 사용자의 UPN 값이 메일 주소와 일치하지 않는 경우:
 
@@ -55,7 +58,8 @@ AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스 
 
 - **Windows Server 2012 R2** 이상의 서버 버전이나 OAuth 2.0 프로토콜을 지원하는 다른 인증 공급자에서 AD FS를 사용해야 합니다.
 
-## <a name="multi-factor-authentication-mfa-and-azure-information-protection"></a>MFA(Multi-Factor Authentication) 및 Azure Information Protection
+## MFA(Multi-Factor Authentication) 및 Azure Information Protection
+<a id="multi-factor-authentication-mfa-and-azure-information-protection" class="xliff"></a>
 Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하려면 다음 중 하나 이상이 필요합니다.
 
 -   Office 2013(최소 버전)
@@ -88,7 +92,8 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
         이 시나리오에 대한 자세한 내용은 Office 블로그에서 [Office 365로 작동 - 이제 간소화된 ID 프로그램](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)을 참조하세요.
 
-## <a name="next-steps"></a>다음 단계
+## 다음 단계
+<a id="next-steps" class="xliff"></a>
 기타 요구 사항을 확인하려면 [Azure Information Protection에 대한 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

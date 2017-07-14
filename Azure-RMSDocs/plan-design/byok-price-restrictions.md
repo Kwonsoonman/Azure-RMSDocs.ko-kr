@@ -1,10 +1,10 @@
 ---
 title: "BYOK 가격 및 제한 사항 - Azure Information Protection"
-description: "BYOK(&quot;Bring Your Own Key&quot;)라고도 하는 고객 관리 키를 Azure RMS에서 사용할 때의 제한 사항에 대해 알아봅니다."
+description: "BYOK(\"Bring Your Own Key\")라고도 하는 고객 관리 키를 Azure RMS에서 사용할 때의 제한 사항에 대해 알아봅니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 06/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ab3b25ebd04565f8cd0e9236c1241f38d4a2e8b2
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: cfc4243d15112545219f82964d09ce9ce238355d
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
+# BYOK 가격 및 제한 사항
+<a id="byok-pricing-and-restrictions" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -27,7 +30,8 @@ Azure Information Protection을 포함하는 구독이 있는 조직은 Azure In
 
 Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용하는 경우, Azure Rights Management Service에서만 사용할 수 있도록 전용 구독과 함께 이 키에 대한 전용 Key Vault를 사용하는 것이 좋습니다. 
 
-## <a name="benefits-of-using-azure-key-vault"></a>Azure Key Vault를 사용할 경우의 이점
+## Azure Key Vault를 사용할 경우의 이점
+<a id="benefits-of-using-azure-key-vault" class="xliff"></a>
 
 Azure Information Protection 사용 현황 로깅 사용과 함께, Azure Rights Management Service에서만 이 키를 사용하고 있음을 독립적으로 모니터링하기 위해 [Azure Key Vault 로깅](https://azure.microsoft.com/documentation/articles/key-vault-logging/)을 사용하여 상호 참조할 수 있습니다. 필요한 경우 Key Vault에 대한 권한을 제거하여 키에 대한 액세스 권한을 즉시 취소할 수 있습니다.
 
@@ -46,19 +50,16 @@ Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용�
 Azure Key Vault에 대한 자세한 내용은 [Azure Key Vault란?](https://azure.microsoft.com/documentation/articles/key-vault-whatis/)을 참조하고, 최신 정보는 [Azure Key Vault 팀 블로그](https://blogs.technet.microsoft.com/kv/)를 방문하여 다른 서비스에서 이 기술을 어떻게 사용하는지 알아보세요.
 
 
-## <a name="restrictions-when-using-byok"></a>BYOK 사용 시 제한 사항
-
-개인용 RMS를 사용하여 무료 계정에 등록한 사용자가 있는 경우 이 구성에는 이러한 기능을 구성할 테넌트 관리자가 없기 때문에 BYOK 또는 사용 현황 로깅을 사용할 수 없습니다.
-
-
-> [!NOTE]
-> 개인용 RMS에 대한 자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
-
-![BYOK에서는 Exchange Online을 지원하지 않습니다.](../media/RMS_BYOK_noExchange.png)
+## BYOK 사용 시 제한 사항
+<a id="restrictions-when-using-byok" class="xliff"></a>
 
 BYOK 및 사용 현황 로깅 기능은 Azure Information Protection에서 사용하는 Azure RMS 서비스(Azure RMS)와 통합된 모든 응용 프로그램에서 원활하게 작동합니다. 이러한 응용 프로그램으로는 SharePoint Online과 같은 클라우드 서비스, Exchange 및 SharePoint를 실행하고 RMS 커넥터를 통해 Azure RMS와 작동하는 온-프레미스 서버, Office 2016 및 Office 2013과 같은 클라이언트 응용 프로그램이 있습니다. Azure RMS에 대한 요청을 만드는 응용 프로그램에 관계없이 키 사용 현황 로그를 얻을 수 있습니다.
 
-그러나 한 가지 예외가 있습니다. 현재 **Azure RMS BYOK는 Exchange Online과 호환되지 않습니다**. Exchange Online을 사용하려는 경우 Microsoft가 키를 생성 및 관리하는 기본 키 관리 모드에서 Azure RMS를 배포하는 것이 좋습니다. 예를 들어 Exchange Online이 Azure RMS BYOK를 지원하는 경우 나중에 BYOK를 이동하는 옵션이 제공됩니다. 그러나 이 옵션이 표시될 때까지 기다릴 수 없는 경우 다른 방법은 BYOK를 사용하여 Azure RMS를 배포하는 것입니다. 이 경우 Exchange Online에 대한 RMS 기능이 감소합니다(보호되지 않는 메일 및 보호되지 않는 첨부 파일은 그대로 완전하게 기능함).
+그러나 한 가지 예외가 있습니다. 현재 **Azure RMS BYOK는 Exchange Online과 호환되지 않습니다**.
+
+![BYOK에서는 Exchange Online을 지원하지 않습니다.](../media/RMS_BYOK_noExchange.png)
+
+Exchange Online을 사용하려는 경우 Microsoft가 키를 생성 및 관리하는 기본 키 관리 모드에서 Azure RMS를 배포하는 것이 좋습니다. 예를 들어 Exchange Online이 Azure RMS BYOK를 지원하는 경우 나중에 BYOK를 이동하는 옵션이 제공됩니다. 그러나 이 옵션이 표시될 때까지 기다릴 수 없는 경우 다른 방법은 BYOK를 사용하여 Azure RMS를 배포하는 것입니다. 이 경우 Exchange Online에 대한 RMS 기능이 감소합니다(보호되지 않는 메일 및 보호되지 않는 첨부 파일은 그대로 완전하게 기능함).
 
 -   Outlook Web Access의 보호된 메일 또는 보호된 첨부 파일은 표시할 수 없습니다.
 
@@ -76,7 +77,8 @@ AD RMS에서 Azure RMS로 마이그레이션하는 경우 TPD(트러스트된 �
 
 경우에 따라 Exchange Online에 대한 Azure RMS BYOK 예외가 실제로 문제가 되지 않습니다. 예를 들어 BYOK 및 로깅 기능이 필요한 조직은 온-프레미스에서 데이터 응용 프로그램(Exchange, SharePoint, Office)을 실행하고 온-프레미스 AD RMS에서 쉽게 사용할 수 없는 기능(예: 다른 회사와의 공동 작업 및 모바일 클라이언트로부터의 액세스)에 Azure RMS를 사용하기 때문입니다. BYOK와 로깅 기능 모두 이 시나리오에서 잘 작동하므로 조직은 Azure RMS 구독에 대한 완전한 제어권을 가질 수 있습니다.
 
-## <a name="next-steps"></a>다음 단계
+## 다음 단계
+<a id="next-steps" class="xliff"></a>
 
 고유한 키를 관리하기로 결정한 경우 [Azure 권한 관리 테넌트 키 구현](plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key)으로 이동합니다.
 

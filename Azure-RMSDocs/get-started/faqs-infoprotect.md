@@ -4,7 +4,7 @@ description: "Azure Information Protection를 사용한 분류 및 레이블 지
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,23 +12,27 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: f35385284e40ad8e40bf9007b92b9b64b4df9280
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: 80efd633bc814af1ac28e4b6bf2d0b3062b27d01
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
+# Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
+<a id="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
 Azure Information Protection에서 특별히 분류 및 레이블 지정에 대한 질문이 있나요?  여기에 해당 질문에 대한 대답이 있는지 확인하세요. 
 
-## <a name="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection"></a>Azure Information Protection에서 분류 기능으로 수행할 수 있는 작업은 무엇인가요?
+## Azure Information Protection에서 분류 기능으로 수행할 수 있는 작업은 무엇인가요?
+<a id="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection" class="xliff"></a>
 
 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 통해 몇 분 만에 이러한 기능의 작동 방식을 확인해 보세요.
 
 추가 분류 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility 및 보안 블로그](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요. 현재 릴리스에는 다음을 포함하는 몇 가지 제한이 있습니다.
 
-- 레이블 이름 및 도구 설명은 하나의 언어로만 지원됩니다.
+- 레이블 이름 및 도구 설명은 하나의 언어로만 지원됩니다. 그러나 다국어 지원은 현재 미리 보기로 제공됩니다. 자세한 내용은 [다른 언어에 대한 레이블을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요.
 
 - 분류 및 레이블 지정을 위한 중앙 집중식 로깅은 없습니다.
 
@@ -42,17 +46,20 @@ Azure Information Protection에서 특별히 분류 및 레이블 지정에 대�
 
 2월 릴리스에서는 이전의 여러 제한이 제거됩니다. 자세한 내용은 [블로그 게시물 알림](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/)을 참조하세요.
 
-## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>분류 및 레이블을 구성하려면 전역 관리자여야 합니까?
+## 분류 및 레이블을 구성하려면 전역 관리자여야 합니까?
+<a id="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels" class="xliff"></a>
 
 Azure Information Protection 정책을 구성하려 할 때, 더 이상 Azure Active Directory의 전역 관리자로 Azure Portal에 로그인할 필요가 없습니다. 또한 이제는 보안 관리자 역할이 있는 계정을 사용할 수 있습니다.
 
 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 레이블 지정 기능을 확인하고 사용해 보기 위해 포털에 로그인하지 않아도 됩니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure Portal에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
 
-## <a name="which-options-in-the-azure-portal-are-p2"></a>Azure Portal에서 어떤 옵션이 P2인가요?
+## Azure Portal에서 어떤 옵션이 P2인가요?
+<a id="which-options-in-the-azure-portal-are-p2" class="xliff"></a>
 
 **Azure Information Protection Premium 2**(P2) 구독이 필요한 Azure Portal의 옵션은 이제 옵션을 식별하기 위한 정보 팝업 메시지를 포함합니다. P1 및 P1 구독에 포함된 기능에 대한 자세한 내용은 Azure Information Protection 사이트의 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 참조하세요.
 
-## <a name="can-a-file-have-more-than-one-classification"></a>파일에 분류가 여러 개 있을 수 있나요?
+## 파일에 분류가 여러 개 있을 수 있나요?
+<a id="can-a-file-have-more-than-one-classification" class="xliff"></a>
 
 사용자는 각 문서 또는 메일에 대해 한 번에 레이블 하나만 선택할 수 있으며, 그 결과 분류가 하나만 생깁니다. 그러나 사용자가 하위 레이블을 선택하면 실제로 두 레이블(기본 레이블 및 보조 레이블)이 동시에 적용됩니다. 하위 레이블을 사용함으로써 추가 수준의 제어에 대해 파일에 부모\자식 관계를 나타내는 두 분류가 있을 수 있습니다.
 
@@ -60,47 +67,27 @@ Azure Information Protection 정책을 구성하려 할 때, 더 이상 Azure Ac
 
 하위 레이블을 사용할 때에는 기본 레이블에 시각적 표시, 보호 및 상태를 구성하지 마세요. 하위 수준을 사용할 때에는 하위 레이블에만 이러한 설정을 구성합니다. 기본 레이블과 하위 레이블에 이러한 설정을 구성하는 경우 하위 레이블의 설정이 우선합니다.
 
-## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
+## 메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
+<a id="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling" class="xliff"></a>
 
 아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블에 보호를 적용하는 경우 해당 보호는 첨부 파일에 적용됩니다.
 
-## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
+## DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
+<a id="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection" class="xliff"></a>
 
-Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 파일에서 이 메타데이터는 사용자 지정 속성에 저장되고, 메일에서 이 정보는 메일 헤더에 있습니다.
+Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 파일에서 이 메타데이터는 사용자 지정 속성에 저장됩니다. 전자 메일에서 이 정보는 전자 메일 헤더에 있습니다.
 
-## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
+## 전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
+<a id="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification" class="xliff"></a>
 
-Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능으로, Azure Information Protection 분류와는 독립적으로 구현됩니다. 그러나 사용자가 Outlook Web App을 사용하여 전자 메일을 분류할 때와 일부 모바일 메일 응용 프로그램을 사용할 때 Azure Information Protection 분류와 해당하는 레이블 표시가 자동으로 추가되도록 두 솔루션을 통합할 수 있습니다. 이 경우 Exchange에서 분류를 추가하면 Azure Information Protection 클라이언트에서 이 분류에 해당하는 레이블 설정을 적용합니다.
+Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능으로, Azure Information Protection 분류와는 독립적으로 구현됩니다. 
 
-Outlook Web App에서는 Azure Information Protection 및 보호가 아직 기본적으로 지원되지는 않지만, 이와 동일한 기술을 사용하면 데스크톱 Outlook 클라이언트 외에 이 전자 메일 클라이언트에서도 레이블을 사용할 수 있습니다.
+그러나 사용자가 웹용 Outlook을 사용하고 일부 모바일 메일 응용 프로그램을 사용하여 메일을 분류할 때 Azure Information Protection 분류와 해당하는 레이블 표시가 자동으로 추가되도록 두 솔루션을 통합할 수 있습니다. 
 
-이 솔루션을 활용하려면 다음을 수행합니다. 
+웹용 Outlook 및 이러한 모바일 메일 응용 프로그램에서 레이블을 사용할 때도 이와 동일한 방법을 사용할 수 있습니다.
 
-1. [New-MessageClassification](https://technet.microsoft.com/library/bb124400) Exchange PowerShell cmdlet을 사용하여 Azure Information Protection 정책의 레이블 이름에 매핑되는 Name 속성을 포함하는 메시지 분류를 만듭니다. 
+구성 단계에 대해서는 [모바일 장치 레이블 지정 솔루션을 위해 Azure Information protection에 Exchange 메시지 분류 통합](../rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)합니다. 
 
-2. 각 레이블에 대해 Exchange 전송 규칙을 만든 다음 구성된 분류가 메시지 속성에 포함될 때 해당 규칙을 적용하고 메시지 속성을 수정하여 메시지 헤더를 설정합니다. 
-
-    메시지 헤더에서는 Azure Information Protection 레이블을 사용하여 분류하고 보낸 메일의 인터넷 헤더를 검사하면 지정할 정보를 확인할 수 있습니다. **msip_labels** 헤더와 바로 뒤에서 세미콜론까지의 문자열(세미콜론도 포함)을 찾습니다. 이전 예를 사용하면 다음과 같습니다.
-    
-    **msip_labels: MSIP_Label_0e421e6d-ea17-4fdb-8f01-93a3e71333b8_Enabled=True;**
-    
-    그런 다음 규칙의 메시지 헤더에 대해 **msip_labels**를 헤더로, 이 문자열의 나머지 부분을 헤더 값으로 지정합니다. 예를 들면 다음과 같습니다.
-    
-    ![특정 Azure Information Protection 레이블에 대한 메시지 헤더를 설정하는 Exchange Online 전송 규칙 예제](../media/exchange-rule-for-message-header.png)
-
-이를 테스트하기 전에 전송 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 하지만 규칙이 적용되면 사용자가 Rights Management 보호를 지원하는 모바일 장치 클라이언트 또는 Outlook Web Access 앱을 사용할 때 다음과 같은 과정이 진행됩니다. 
-
-- 사용자가 Exchange 메시지 분류를 선택하고 전자 메일을 보냅니다.
-
-- Exchange 규칙이 Exchange 분류를 검색한 다음 그에 따라 메시지 헤더를 수정하여 Azure Information Protection 분류를 추가합니다.
-
-- Azure Information Protection 클라이언트를 실행 중인 받는 사람이 Outlook에서 전자 메일을 볼 때 할당된 Azure Information Protection 레이블과 그에 해당하는 전자 메일 머리글, 바닥글 또는 워터마크가 표시됩니다. 
-
-Azure Information Protection 레이블이 권한 관리 보호를 적용하는 경우에는 메시지 보안을 수정하는 옵션을 선택하여 규칙 구성에 권한 관리 보호를 추가하고, 권한 보호를 적용한 후에 RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
-
-역방향 매핑을 수행하는 전송 규칙을 구성할 수도 있습니다. Azure Information Protection 레이블이 검색되면 해당 Exchange 메시지 분류를 설정합니다. 이렇게 하려면 다음을 수행합니다.
-
-- 각 Azure Information Protection 레이블에 대해 **msip_labels** 헤더에 레이블의 이름(예: **General**)이 포함될 때 적용되는 전송 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

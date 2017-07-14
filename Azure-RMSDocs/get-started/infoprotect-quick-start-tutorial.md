@@ -4,17 +4,20 @@ description: "조직에서 Microsoft Azure Information Protection 사용을 빠�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/07/2017
+ms.date: 05/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 13dbb47088c33f72bdb0acdbb7cba1245df14f7f
-ms.sourcegitcommit: 7b773ca5bf1abf30e527c34717ecb2dc96f88033
-translationtype: HT
+ms.openlocfilehash: 023330bbd3909290e098bd7379d8cc2a24d36672
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure Information Protection 빠른 시작 자습서 
+# Azure Information Protection 빠른 시작 자습서
+<a id="quick-start-tutorial-for-azure-information-protection" class="xliff"></a> 
 
 >*적용 대상: Azure Information Protection*
 
@@ -24,17 +27,16 @@ translationtype: HT
 
 Azure Information Protection을 사용하여 이 자습서를 완료하는 데 문제가 있거나 이에 대한 다른 사용자의 의견을 확인하려면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)를 참조하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소 
+## 필수 구성 요소
+<a id="prerequisites" class="xliff"></a> 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-- 분류, 레이블 지정 및 보호를 위해 Azure Information Protection이 포함된 구독. 이 자습서에는 사용자 권장 사항으로 자동화된 데이터 분류 및 문서 추적 사이트와 같은 고급 기능이 포함되어 있습니다. 구독이 이러한 기능을 지원하는지 확인합니다. 자세한 내용은 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 확인하세요.
+- 분류, 레이블 지정 및 보호를 위해 Azure Information Protection이 포함된 구독. 이 자습서에는 사용자 권장 사항으로 자동화된 데이터 분류 및 문서 추적 사이트와 같은 고급 기능이 포함되어 있습니다. 이 자습서를 진행하려면 이러한 기능을 지원하는 구독이 있는지 확인해야 합니다. 자세한 내용은 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 확인하세요.
     
     이러한 기능에 대한 구독이 없는 경우 [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)에 대한 무료 평가판에 등록할 수 있습니다.
     
-- Azure 포털에 액세스하여 Azure Information Protection 정책을 구성할 수 있는 Azure 구독. 조직에서 아직 Azure를 구독하지 않은 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. [Azure 시작](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따르세요.
-
   > [!TIP] 
-  > 이 프로세스를 완료하려면 시간이 오래 걸릴 수도 있으므로 이러한 구독 중 하나 이상이 필요한 경우에는 미리 준비해야 합니다.
+  > 이 프로세스를 완료하려면 시간이 오래 걸릴 수도 있으므로 구독을 신청해야 할 경우에는 미리 준비해야 합니다.
 
 - Azure Portal에 로그인하여 Azure Information Protection 정책을 구성할 수 있는 전역 관리자 계정. 이 계정에 메일 주소와 제대로 작동하는 메일 서비스(예, Exchange Online 또는 Exchange Server)가 있어야 합니다.
 

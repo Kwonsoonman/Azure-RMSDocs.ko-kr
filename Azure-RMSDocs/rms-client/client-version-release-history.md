@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 70c358954a39b02610a77ec81074379dc574158b
-ms.sourcegitcommit: d5ce1bce5e63b3e510033ff9d4d246dd3511ed7c
-translationtype: HT
+ms.openlocfilehash: 9ee487f65f417c9faaf71f3c50b5d4e35659c55f
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="azure-information-protection-client-version-release-history"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록
+# Azure Information Protection 클라이언트: 버전 릴리스 기록
+<a id="azure-information-protection-client-version-release-history" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection*
 
@@ -31,7 +34,35 @@ GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 �
 >  
 > 문제가 지속되면 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
 
-## <a name="version-14210"></a>버전 1.4.21.0
+
+## 버전 1.7.210.0
+<a id="version-172100" class="xliff"></a>
+
+**릴리스 날짜**: 2017년 6월 6일
+
+이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.2217.1이 포함됩니다.
+
+**수정 사항**:
+
+- 이제 인터넷에 연결되어 있지 않지만 유효한 Azure Information Protection 정책이 지정된 컴퓨터에서는 모든 레이블 지정 및 분류 cmdlet이 지원됩니다.
+
+- 일관성을 위해 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) cmdlet의 출력 매개 변수는 영국 영어(**IsLabelled**) 미국 영어(**IsLabeled**)로 변경되었습니다. 이 매개 변수를 검색하는 스크립트 또는 자동화 프로세스가 있는 경우 이 매개 변수의 철자를 업데이트하세요.
+
+- 다음을 포함하는 안정성에 대한 일반 수정 내용:
+
+    - Outlook: 충돌, 높은 메모리 사용량 및 메뉴 표시 문제를 수정합니다.
+    
+    - Word, Excel 및 PowerPoint: 높은 CPU 사용량, 큰 Excel 파일을 저장할 때의 표시 문제 또는 응용 프로그램이 응답을 중지하는 문제를 수정합니다. 
+    
+    또한 이러한 응용 프로그램에서 SharePoint Online 및 비즈니스용 OneDrive가 있는 Office 2016의 성능을 향상시키기 위해, 파일이 저장될 때(자동으로 저장 또는 사용자가 저장하도록 선택)가 아니라 파일이 닫힐 때 자동 및 권장 레이블이 적용됩니다. 마찬가지로 **모든 문서 및 전자 메일에 레이블이 있어야 함** 설정이 지정되면 파일이 닫힐 때까지 레이블을 선택하라는 메시지가 표시되지 않습니다. 예외는 Word 2016 및 Excel 2016이며, 사용자는 **다른 이름으로 저장** 옵션을 선택합니다. 그러면 구성에 따라 이러한 레이블 지정 동작이 트리거됩니다. 
+
+**새로운 기능**:
+
+- 새 PowerShell cmdlet, [Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification). 이 cmdlet을 실행하면 파일 콘텐츠를 검사한 후 Azure Information Protection 정책에 지정된 조건에 따라 레이블이 지정되지 않은 파일에 자동으로 레이블을 적용합니다.
+
+
+## 버전 1.4.21.0
+<a id="version-14210" class="xliff"></a>
 
 **릴리스 날짜**: 2017년 3월 15일
 
@@ -58,7 +89,8 @@ GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 �
 - PDF 파일의 경우 이제 뷰어에서 검색, 확대/축소 및 회전과 같은 옵션을 지원합니다. 이러한 옵션을 사용하려면 파일이 뷰어에 표시되었을 때 마우스 오른쪽 단추로 클릭합니다.
 
 
-## <a name="version-131552"></a>버전 1.3.155.2
+## 버전 1.3.155.2
+<a id="version-131552" class="xliff"></a>
 
 **릴리스 날짜**: 2017년 2월 8일
 
@@ -86,7 +118,8 @@ Microsoft .NET Framework
 - [Azure Information Protection 사용자 가이드](client-user-guide.md)
 
 
-## <a name="version-1240"></a>버전 1.2.4.0
+## 버전 1.2.4.0
+<a id="version-1240" class="xliff"></a>
 
 **릴리스 날짜**: 2016년 10월 27일
 
@@ -104,13 +137,15 @@ Microsoft .NET Framework
 
     이 옵션에 대한 자세한 내용은 관리자 가이드의 [추가 검사 및 문제 해결](client-admin-guide.md#additional-checks-and-troubleshooting) 섹션을 참조하세요.
 
-## <a name="version-11230"></a>버전 1.1.23.0
+## 버전 1.1.23.0
+<a id="version-11230" class="xliff"></a>
 
 **릴리스 날짜**: 2016년 10월 1일
 
 일반 공급.
 
-## <a name="next-steps"></a>다음 단계
+## 다음 단계
+<a id="next-steps" class="xliff"></a>
 
 클라이언트를 설치하는 방법에 대한 자세한 정보:
 

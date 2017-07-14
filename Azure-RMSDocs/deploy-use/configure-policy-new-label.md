@@ -4,18 +4,20 @@ description: "Azure Information Protection은 사용자 지정 가능한 기본 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/05/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 91feb6dfd9421d7c5cccf53b45f8a0f35e74007d
-ms.sourcegitcommit: e3974cc1490581414084669632cad54b12b05d5a
+ms.openlocfilehash: ac12ab9023499d5aac632159ef689a8f10a91418
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Azure Information Protection에 대한 새 레이블을 만드는 방법
+# Azure Information Protection에 대한 새 레이블을 만드는 방법
+<a id="how-to-create-a-new-label-for-azure-information-protection" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection*
 
@@ -43,7 +45,10 @@ Azure Information Protection은 사용자 지정 가능한 기본 레이블과 �
 
 4. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
-## <a name="next-steps"></a>다음 단계
+5. 이 새로운 레이블 이름 및 설명을 다른 언어로 표시하려면 [다른 언어로 레이블을 구성하는 방법](configure-policy-languages.md)에 나오는 절차를 따르세요. 
+
+## 다음 단계
+<a id="next-steps" class="xliff"></a>
 
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 

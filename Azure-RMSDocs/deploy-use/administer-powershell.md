@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스(
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 38c515e482a9d80e10ae691af1d074a78c3771ab
-ms.sourcegitcommit: 9c033b7f5a6cbb20275aeecd48ff5071964eb587
-translationtype: HT
+ms.openlocfilehash: 018d04dc408230bf9a104f460930797d0a558ce7
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
+# Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
+<a id="administering-the-azure-rights-management-service-by-using-windows-powershell" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -26,14 +29,15 @@ PowerShell을 사용하여 Azure Information Protection에 대한 Azure Rights M
 
 다음 섹션에 제공된 표에는 PowerShell을 사용하는 몇 가지 고급 구성 시나리오가 나와 있습니다. PowerShell을 사용하지 않고도 구성을 완료할 수 있으며 이 정보는 표에도 나와 있습니다.
 
-사용 가능한 cmdlet의 전체 목록과 각 cmdlet에 대한 자세한 내용은 [Azure 권한 관리 cmdlet](http://msdn.microsoft.com/library/azure/dn629398.aspx)을 참조하세요.
+이 모듈에 대해 사용 가능한 cmdlet의 전체 목록과 각 cmdlet에 대한 자세한 내용은 [AADRM](/powershell/module/aadrm/?view=azureipps#aadrm)을 참조하세요.
 
 > [!NOTE]
 > PowerShell 모듈을 설치해야 하려면 [Azure Rights Management용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
 
 Azure Information Protection 클라이언트는 이 서비스 쪽 PowerShell 모듈 외에도 보조 PowerShell 모듈인 **AzureInformationProtection**을 설치합니다. 이 클라이언트 모듈은 여러 파일을 분류하고 보호하므로 예를 들어 폴더의 모든 파일을 대량으로 보호할 수 있습니다. 자세한 내용은 관리자 가이드에서 [Azure Information Protection 클라이언트에서 PowerShell 사용](../rms-client/client-admin-guide-powershell.md)을 참조하세요.
 
-## <a name="cmdlets-grouped-by-administration-task"></a>관리 작업별로 그룹화된 Cmdlet
+## 관리 작업별로 그룹화된 Cmdlet
+<a id="cmdlets-grouped-by-administration-task" class="xliff"></a>
 
 |수행할 작업|사용할 cmdlet|
 |-------------------|------------------------------|
@@ -41,7 +45,7 @@ Azure Information Protection 클라이언트는 이 서비스 쪽 PowerShell 모
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스에 연결/서비스 연결 끊기|[Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice)<br /><br />[Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice)|
 |직접 테넌트 키 생성/관리 - BYOK(Bring Your Own Key) 시나리오|[Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey)<br /><br />[Get-AadrmKeys](/powershell/aadrm/vlatest/get-aadrmkeys)|
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스 활성화/비활성화<br /><br />관리 포털에서 이러한 작업을 수행할 수도 있습니다. 자세한 내용은 [Azure Rights Management 서비스 활성화](activate-service.md)를 참조하세요.|[Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)<br /><br />[Disable-Aadrm](/powershell/aadrm/vlatest/disable-aadrm)|
-|Azure Information Protection에 대한 문서 추적 사이트를 사용하도록 설정하거나 사용하지 않도록 설정합니다.|[Disable-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/disable-aadrmdocumenttrackingfeature)<br /><br />[Enable-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/enable-aadrmdocumenttrackingfeature)<br /><br />[Get-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/get-aadrmdocumenttrackingfeature)|
+|Azure Information Protection에 대한 문서 추적 사이트를 사용하도록 설정하거나 사용하지 않도록 설정합니다.|[Disable-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/disable-aadrmdocumenttrackingfeature)<br /><br />[Enable-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/enable-aadrmdocumenttrackingfeature)<br /><br />[Get-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/get-aadrmdocumenttrackingfeature)<br /><br />[Set-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/set-aadrmdonottrackusergroup)<br /><br />[Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup)<br /><br />[Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup)|
 |Azure Rights Management 서비스의 단계적 배포를 위해 온보딩 컨트롤을 구성합니다.|[Get-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/get-aadrmonboardingcontrolpolicy)<br /><br />[Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy)|
 |조직의 Rights Management 템플릿을 만들고 관리합니다.<br /><br />PowerShell에서는 좀 더 세부적인 제어 기능을 제공하지만 이러한 작업 대부분을 Azure 클래식 포털에서 수행할 수도 있습니다. 자세한 내용은 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](configure-custom-templates.md)을 참조하세요.|[Add-AadrmTemplate](/powershell/aadrm/vlatest/add-aadrmtemplate)<br /><br />[Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate)<br /><br />[Get-AadrmTemplate](/powershell/aadrm/vlatest/get-aadrmtemplate)<br /><br />[Get-AadrmTemplateProperty](/powershell/aadrm/vlatest/get-aadrmtemplateproperty)<br /><br />[Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate)<br /><br />[New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition)<br /><br />[Remove-AadrmTemplate](/powershell/aadrm/vlatest/remove-aadrmtemplate)<br /><br />[Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty)|
 |조직에서 보호하는 콘텐츠 최대 일 수를 구성하면 인터넷 연결 없이 액세스될 수 있습니다.(사용 라이선스 유효 기간)|[Get-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/get-aadrmmaxuselicensevaliditytime)<br /><br />[Set-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/set-aadrmmaxuselicensevaliditytime)|

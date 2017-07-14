@@ -4,7 +4,7 @@ description: "RMS API를 사용하여 Azure Information Protection의 Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/20/2017
+ms.date: 05/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ae74cd40811f7af1da0c7288f574617f6fdaefa
-ms.sourcegitcommit: c7078f822cbcbb2bb33b841e8597c2a4163a54da
-translationtype: HT
+ms.openlocfilehash: 2c80ff43c07eab80527a3cb764ff3030f2459657
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
+# Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
+<a id="applications-that-support-azure-rights-management-data-protection" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -27,15 +30,16 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 
 별도의 설명이 없으면 지원되는 기능은 Azure RMS와 AD RMS 둘 다에 적용됩니다. 또한 iOS, Android, macOS 및 Windows Phone 8.1에서 AD RMS를 지원하려면 [Active Directory Rights Management Services 모바일 장치 확장](https://technet.microsoft.com/library/dn673574.aspx)이 필요합니다.
 
-## <a name="rms-enlightened-applications"></a>RMS 지원 응용 프로그램
+## RMS 지원 응용 프로그램
+<a id="rms-enlightened-applications" class="xliff"></a>
 
 다음 표에는 Microsoft 및 소프트웨어 공급업체에서 제공하는 RMS 지원 클라이언트 응용 프로그램이 표시되어 있습니다.
 
 테이블 열에 대한 정보:
 
--   **보호된 PDF**: 파일 이름 확장명이 .ppdf이고 RMS 공유 응용 프로그램을 사용하여 Office 파일 및 PDF 파일을 메일로 공유할 때 자동으로 생성되는 파일입니다. RMS 공유 응용 프로그램, iOS/Android용 Azure Information Protection 앱 및 Windows용 Azure Information Protection 클라이언트에는 보호되는 PDF 파일용 판독기가 포함되어 있습니다. 이전에 Azure RMS 또는 AD RMS를 사용하여 보호된 PDF 파일을 만든 경우 Foxit Reader 및 Nitro Pro를 사용하여 Windows, iOS 및 Android 장치에서 해당 파일을 계속 읽을 수 있습니다.
+-   **보호된 PDF**: 이러한 파일의 확장명은 .pdf 또는 .ppdf일 수 있습니다.
 
--   **메일:** 나열된 메일 클라이언트는 메일 메시지 자체를 보호할 수 있으므로 첨부된 파일도 자동으로 보호됩니다. 이 시나리오에서 클라이언트의 미리 보기 기능은 권한 있는 받는 사람에게 보호된 콘텐츠(메시지 및 첨부 파일)를 표시할 수 있습니다. 그러나 전자 메일 메시지 자체가 보호되지 않고 첨부 파일만 보호되면, 클라이언트의 미리 보기 기능이 권한 있는 받는 사람에게 보호된 첨부 파일을 표시할 수 없습니다.
+-   **메일:** 나열된 메일 클라이언트는 메일 메시지 자체를 보호할 수 있으므로 아직 보호되지 않은 첨부된 Office 파일도 자동으로 보호됩니다. 이 시나리오에서 클라이언트의 미리 보기 기능은 권한 있는 받는 사람에게 보호된 콘텐츠(메시지 및 첨부 파일)를 표시할 수 있습니다. 그러나 전자 메일 메시지 자체가 보호되지 않고 첨부 파일만 보호되면, 클라이언트의 미리 보기 기능이 권한 있는 받는 사람에게 보호된 첨부 파일을 표시할 수 없습니다.
 
 -   **기타 파일 형식**: 텍스트 및 이미지 파일에는 파일 이름 확장명이 .txt, .xml, .jpg, .jpeg와 같은 파일이 포함됩니다. 이러한 파일은 Rights Management의 기본 보호를 통해 읽기 전용으로 바뀌면 파일 이름 확장명이 변경됩니다. 기본 보호를 적용할 수 없는 파일은 Rights Management의 일반적인 보호를 받으며 파일 이름 확장명으로 .pfile이 지정됩니다. 자세한 내용은 Azure Information Protection 클라이언트 관리자 가이드에서 [지원되는 파일 형식](../rms-client/client-admin-guide-file-types.md)을 참조하세요.
 
@@ -52,34 +56,43 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 |**Blackberry 10**|지원되지 않음|지원되지 않음|Blackberry 메일 [[4]](#footnote-4)|지원되지 않음|
 
 
-###### <a name="footnote-1"></a>각주 1
+###### 각주 1
+<a id="footnote-1" class="xliff"></a>
 사용권 계약에 따라 보호하는 콘텐츠 보기를 지원합니다.
 
-###### <a name="footnote-2"></a>각주 2 
+###### 각주 2
+<a id="footnote-2" class="xliff"></a> 
 SharePoint Online 및 비즈니스용 OneDrive에서 보호되지 않은 문서를 보호된 라이브러리로 업로드하는 경우 보호된 문서 보기를 지원합니다. 
 
-###### <a name="footnote-3"></a>각주 3
+###### 각주 3
+<a id="footnote-3" class="xliff"></a>
 받는 사람이 보호된 메일을 수신하고 Exchange를 메일 서버로 사용하지 않거나 보내는 사람이 다른 조직에 속하는 경우, 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다. 이 콘텐츠는 Outlook Web Access에서 열 수 없습니다.
 
-###### <a name="footnote-4"></a>각주 4
+###### 각주 4
+<a id="footnote-4" class="xliff"></a>
 Exchange 관리자가 사용하도록 설정해야 하는 Exchange ActiveSync IRM을 사용합니다. 사용자는 보호된 메일 메시지를 보기, 회신 및 전체 회신할 수 있지만 사용자는 새 메일 메시지 자체를 보호할 수 없습니다.
 
 받는 사람이 보호된 메일을 수신하고 Exchange를 메일 서버로 사용하지 않거나 보내는 사람이 다른 조직에 속하는 경우, 이 콘텐츠는 Outlook과 같은 서식 있는 메일 클라이언트에서만 열 수 있습니다. 이 콘텐츠는 Exchange Active Sync IRM을 사용하여 모바일 메일 클라이언트 또는 Outlook Web Access에서 열 수 없습니다.
 
-###### <a name="footnote-5"></a>각주 5
-iOS용 보호된 문서 보기 및 편집을 지원하고, Android용 보호된 문서 보기를 지원합니다. 자세한 내용은 Office 블로그에서 [iPad 및 iPhone용 Office에 Azure 권한 관리 지원 제공](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) 게시물을 참조하세요.
+###### 각주 5
+<a id="footnote-5" class="xliff"></a>
+iOS용 보호된 문서 보기 및 편집을 지원합니다. 자세한 내용은 Office 블로그에서 [iPad 및 iPhone용 Office에 Azure 권한 관리 지원 제공](https://blogs.office.com/2015/07/22/azure-rights-management-support-comes-to-office-for-ipad-and-iphone-2/) 게시물을 참조하세요.
 
-###### <a name="footnote-6"></a>각주 6
+###### 각주 6
+<a id="footnote-6" class="xliff"></a>
 자세한 내용은 Citrix [WorxMail에 대한 제품 설명서](http://docs.citrix.com/en-us/worx-mobile-apps/10/xmob-worx-mail.html)를 참조하세요.
 
-###### <a name="footnote-7"></a>각주 7
+###### 각주 7
+<a id="footnote-7" class="xliff"></a>
 자세한 내용은 Office 블로그에서 [이제 일부 선택된 장치에서 Android용 OWA를 사용할 수 있음](http://blogs.office.com/2014/06/11/owa-for-android-now-available-on-select-devices/) 게시물을 참조하세요.
 
-###### <a name="footnote-8"></a>각주 8
+###### 각주 8
+<a id="footnote-8" class="xliff"></a>
 자세한 내용은 Enterprise Mobility + Security 블로그에서 [SealPath brings RMS protection to AutoCAD](https://blogs.technet.microsoft.com/enterprisemobility/2015/09/08/sealpath-brings-rms-protection-to-autocad/)(SealPath에서 AutoCAD에 대한 RMS 보호 제공) 게시물을 참조하세요.
 
 
-### <a name="more-information-about-azure-rms-support-for-office"></a>Office에 대한 Azure RMS 지원과 관련된 자세한 내용
+### Office에 대한 Azure RMS 지원과 관련된 자세한 내용
+<a id="more-information-about-azure-rms-support-for-office" class="xliff"></a>
 
 Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되어 있으며, 이러한 앱에서 이 기능은 종종 IRM(정보 권한 관리)이라고 불립니다. 다음 Office 클라이언트 버전은 Azure RMS를 사용하여 파일 및 메일 보호를 지원합니다.
 
@@ -101,7 +114,8 @@ Office Professional Plus 2010 또는 Office Professional 2010을 사용하는 Az
 
 - 페더레이션된 사용자 계정에 대한 양식 기반 인증은 지원되지 않습니다. 이러한 계정은 Windows 통합 인증을 사용해야 합니다.
 
-### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
+### iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
+<a id="more-information-about-the-azure-information-protection-app-for-ios-and-android" class="xliff"></a>
 
 iOS 및 Android용 Azure Information Protection 앱은 이러한 장치에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
 
@@ -110,7 +124,8 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 자세한 내용은 [iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ](../rms-client/mobile-app-faq.md)를 참조하세요.
 
 
-### <a name="more-information-about-the-azure-information-protection-client-for-windows"></a>Windows용 Azure Information Protection 클라이언트에 대한 자세한 내용
+### Windows용 Azure Information Protection 클라이언트에 대한 자세한 내용
+<a id="more-information-about-the-azure-information-protection-client-for-windows" class="xliff"></a>
 
 이 클라이언트는 Windows용 Rights Management 공유 응용 프로그램을 대신합니다. 
 
@@ -124,7 +139,8 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 [Microsoft Azure Information Protection 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 관련 앱을 다운로드하세요.
 
-### <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 자세한 내용
+### Rights Management 공유 응용 프로그램에 대한 자세한 내용
+<a id="more-information-about-the-rights-management-sharing-application" class="xliff"></a>
 
 이 응용 프로그램은 Azure Information Protection 클라이언트로 대체되고 있습니다. Mac 컴퓨터 및 Windows Phone 모바일 장치에는 여전히 필요합니다. 
 
@@ -139,7 +155,8 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 [Microsoft Azure Information Protection 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 Mac 컴퓨터 및 Windows Phone용 앱을 다운로드하세요.
 
 
-### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Azure Information Protection을 지원하는 다른 응용 프로그램에 대한 자세한 내용
+### Azure Information Protection을 지원하는 다른 응용 프로그램에 대한 자세한 내용
+<a id="more-information-about-other-applications-that-support-azure-information-protection" class="xliff"></a>
 
 표에 나와 있는 응용 프로그램 외에도 Azure Rights Management 서비스용 API를 지원하는 다음과 같은 모든 응용 프로그램을 Azure Information Protection과 통합할 수 있습니다.
 
@@ -149,7 +166,8 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 자세한 내용은 [Azure Information Protection 개발자 가이드](../develop/developers-guide.md)를 참조하세요.
 
-### <a name="applications-that-are-not-supported-by-azure-rms"></a>Azure RMS에서 지원되지 않는 응용 프로그램
+### Azure RMS에서 지원되지 않는 응용 프로그램
+<a id="applications-that-are-not-supported-by-azure-rms" class="xliff"></a>
 
 Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같습니다.
 
@@ -163,7 +181,8 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 -   Windows 컴퓨터의 경우: 최소 Windows 7 서비스 팩 1 이상 버전이 필요합니다.
 
-## <a name="rms-enlightened-solutions"></a>RMS 지원 솔루션
+## RMS 지원 솔루션
+<a id="rms-enlightened-solutions" class="xliff"></a>
 
 다음 표에는 소프트웨어 공급업체에서 제공하는 RMS 지원 솔루션이 표시되어 있습니다.
 
@@ -184,7 +203,8 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 |Security Sheriff|CryptZone |분류 및 액세스 권한을 기반으로 SharePoint에서 액세스 관리 및 문서 보호.
 |Symantec DLP|Symantec |보호된 파일에 대한 검색 및 모니터링.
 
-## <a name="next-steps"></a>다음 단계
+## 다음 단계
+<a id="next-steps" class="xliff"></a>
 기타 요구 사항을 확인하려면 [Azure Information Protection에 대한 요구 사항](requirements-azure-rms.md)을 참조하세요.
 
 자주 사용하는 응용 프로그램이 Azure RMS를 지원하는 방식에 대한 자세한 내용은 [응용 프로그램이 Azure 권한 관리 서비스를 지원하는 방식](../understand-explore/applications-support.md)을 참조하세요.

@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27ffbc6eb9e88840f1b33c59b76bdaa5d028cc36
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: d141589c9dc9d90cf3a507db77f624c849f955b5
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Azure Rights Management 서비스용 사용자 지정 템플릿 구성
+# Azure Rights Management 서비스용 사용자 지정 템플릿 구성
+<a id="configuring-custom-templates-for-the-azure-rights-management-service" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -59,6 +62,10 @@ Azure Rights Management 서비스를 [활성화](activate-service.md)하면 액�
 -   [사용자를 위해 템플릿을 새로 고치는 방법](refresh-templates.md)
 
 -   [PowerShell을 사용하여 템플릿 관리](configure-templates-with-powershell.md)
+
+> [!TIP]
+> Azure 권한 관리 보호를 구성하기 위한 템플릿 및 새 옵션은 Azure Portal로 이동되고 있습니다. 이 기능은 현재 미리 보기로 제공됩니다. 자세한 내용은 블로그 게시물 알림 [Azure Information Protection 통합 관리 미리 보기](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)를 참조하세요. 
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

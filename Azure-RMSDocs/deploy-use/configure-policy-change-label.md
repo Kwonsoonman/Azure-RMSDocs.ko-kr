@@ -4,17 +4,20 @@ description: "Azure Information Protection 정책에서 구성하여 사용자�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/25/2017
+ms.date: 05/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: 48faf9703176ba8f67f57582ea584733fe3e9b01
-ms.sourcegitcommit: d814d2876cf56e8fff0b107a5e3ec6df2aeda9ae
-translationtype: HT
+ms.openlocfilehash: ff32ea4759b46683398a86c0a549d50710f9a943
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법
+# Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법
+<a id="how-to-change-or-customize-an-existing-label-for-azure-information-protection" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection*
 
@@ -37,10 +40,13 @@ Azure Information Protection 정책에서 구성하여 사용자의 Information 
 
 4. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
+5. 레이블 이름 또는 설명을 변경했으며 추가 언어에 대해 이러한 항목을 구성한 경우 Azure Information Protection 정책을 다시 내보내고 새 번역을 제공하고 변경 내용을 가져와야 합니다. 자세한 내용은 [다른 언어에 대한 레이블을 구성하는 방법](configure-policy-languages.md)을 참조하세요.
+
 > [!TIP]
 >기본 레이블 중 하나를 기본값으로 반환하려면 [기본 Information Protection 정책](configure-policy-default.md)의 정보를 사용합니다.
 
-## <a name="next-steps"></a>다음 단계
+## 다음 단계
+<a id="next-steps" class="xliff"></a>
 
 레이블에 적용할 수 있는 옵션 구성 및 Azure Information Protection 정책의 기타 설정에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.
 

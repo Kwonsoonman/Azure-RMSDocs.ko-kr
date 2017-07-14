@@ -4,7 +4,7 @@ description: "권한 관리 템플릿을 만들고 관리하기 위해 Azure 클
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,14 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 40db2ba3856cab24f0162a1b46960816b85a5089
-ms.sourcegitcommit: 31e128cc1b917bf767987f0b2144b7f3b6288f2e
-translationtype: HT
+ms.openlocfilehash: 8da24d00f6b6cb62bc745404e68e691b5afc2cb8
+ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 06/30/2017
 ---
-# <a name="powershell-reference-for-custom-templates"></a>사용자 지정 템플릿에 대한 PowerShell 참조
+# 사용자 지정 템플릿에 대한 PowerShell 참조
+<a id="powershell-reference-for-custom-templates" class="xliff"></a>
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -25,7 +28,7 @@ translationtype: HT
 또한 내보내기 및 가져오기를 사용하여 사용자 지정 템플릿을 백업하고 복원할 수도 있습니다. 가장 좋은 방법은 사용자 지정 템플릿을 정기적으로 백업하는 것입니다. 이렇게 하면 의도하지 않은 변경을 수행한 경우 이전 버전으로 쉽게 되돌릴 수 있습니다.
 
 > [!IMPORTANT]
-> Windows PowerShell을 사용하여 Azure Rights Management 템플릿을 만들고 관리하려면 [Azure RMS용 Windows PowerShell 모듈](http://go.microsoft.com/fwlink/?LinkId=257721)버전 2.0.0.0 이상이 필요합니다.
+> PowerShell을 사용하여 Azure Rights Management 템플릿을 만들고 관리하려면 [Azure RMS용 Windows PowerShell 모듈](https://go.microsoft.com/fwlink/?LinkId=257721)버전 2.0.0.0 이상이 필요합니다.
 > 
 > 이전에 이 PowerShell 모듈을 설치한 경우 PowerShell 창에서 다음 명령을 실행하여 버전 번호를 확인합니다. `(Get-Module aadrm -ListAvailable).Version`
 
@@ -33,25 +36,26 @@ translationtype: HT
 
 템플릿 만들기 및 관리를 지원하는 cmdlet
 
--   [Add-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727075.aspx)
+- [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate)
 
--   [Export-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727078.aspx)
+- [Export-AadrmTemplate](/powershell/module/aadrm/export-aadrmtemplate)
 
--   [Get-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727079.aspx)
+- [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate)
 
--   [Get-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727081.aspx)
+- [Get-AadrmTemplateProperty](/powershell/module/aadrm/get-aadrmtemplateproperty)
 
--   [Import-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727077.aspx)
+- [Import-AadrmTemplate](/powershell/module/aadrm/import-aadrmtemplate)
 
--   [New-AadrmRightsDefinition](https://msdn.microsoft.com/library/azure/dn727080.aspx)
+- [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition)
 
--   [Remove-AadrmTemplate](https://msdn.microsoft.com/library/azure/dn727082.aspx)
+- [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate)
 
--   [Set-AadrmTemplateProperty](https://msdn.microsoft.com/library/azure/dn727076.aspx)
+- [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty)
 
 
 
-## <a name="see-also"></a>참고 항목
+## 참고 항목
+<a id="see-also" class="xliff"></a>
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

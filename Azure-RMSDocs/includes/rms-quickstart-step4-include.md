@@ -4,14 +4,14 @@
 
 전송된 메일 메시지를 읽도록 요청합니다. 메일 메시지와 함께, 먼저 다음 텍스트가 표시됩니다.
 
-**보낸 사람이 Microsoft RMS를 사용하여 첨부 파일을 보호했습니다. 
-      **파일을 열려면**** [로그인](http://aka.ms/rms)해야 합니다.
+**보낸 사람이 Microsoft RMS를 사용하여 첨부 파일을 보호했습니다. 첨부 파일을 열려면** [로그인](http://aka.ms/rms) **해야 합니다.**
 
 링크를 클릭하면 RMS 공유 앱 설치 지침으로 이동하며, 필요한 경우에는 무료 계정으로 가입할 수 있습니다. 무료 계정에는 개인별 RMS 구독 권한이 부여되므로 권한이 있는 사용자는 조직에 Azure RMS가 없어도 항상 보호된 문서를 읽을 수 있습니다. 그러면 다음과 같은 지침에 따라 보호된 첨부 파일을 읽을 준비가 완료됩니다.
 
 ![RM 자습서 스크린샷](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### <a name="to-view-the-protected-document-attachment"></a>보호된 문서 첨부 파일을 보호하려면
+#### 보호된 문서 첨부 파일을 보호하려면
+<a id="to-view-the-protected-document-attachment" class="xliff"></a>
 
 1.  Azure Rights Management에서 Word 문서를 보호했으므로 메일 메시지에 두 개의 첨부 파일이 포함됩니다. 두 파일은 사실 동일한 파일의 두 가지 버전이며 파일 이름 확장명만 서로 다릅니다. 파일 이름 확장명이 **.ppdf**인 버전(**Confidential.ppdf**)을 엽니다.
 

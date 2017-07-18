@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법
-<a id="how-to-change-or-customize-an-existing-label-for-azure-information-protection" class="xliff"></a>
+# <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -45,8 +44,7 @@ Azure Information Protection 정책에서 구성하여 사용자의 Information 
 > [!TIP]
 >기본 레이블 중 하나를 기본값으로 반환하려면 [기본 Information Protection 정책](configure-policy-default.md)의 정보를 사용합니다.
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 레이블에 적용할 수 있는 옵션 구성 및 Azure Information Protection 정책의 기타 설정에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.
 

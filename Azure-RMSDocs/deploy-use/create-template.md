@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# 사용자 지정 템플릿 만들기, 구성 및 게시
-<a id="create-configure-and-publish-a-custom-template" class="xliff"></a>
+# <a name="create-configure-and-publish-a-custom-template"></a>사용자 지정 템플릿 만들기, 구성 및 게시
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -33,8 +32,7 @@ Azure 클래식 포털에서 템플릿을 만들고 관리하려면 전역 관�
 
 Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시하려면 다음 절차를 따르세요.
 
-## 사용자 지정 템플릿을 만들려면
-<a id="to-create-a-custom-template" class="xliff"></a>
+## <a name="to-create-a-custom-template"></a>사용자 지정 템플릿을 만들려면
 
 1.  Office 365 관리 센터 또는 Azure 클래식 포털 중 어디에 로그인했는지에 따라 다음 중 하나를 수행하세요.
 
@@ -74,8 +72,7 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 
 4. 이제 **Rights Management가 시작되었습니다.** 빠른 시작 페이지에서 **권한 정책 템플릿 관리**를 클릭합니다. 새로 만든 템플릿이 템플릿 목록에 추가되어 **보관됨**상태로 표시됩니다. 이 단계에서는 템플릿이 만들어졌지만 구성되지 않아 사용자에게 보이지 않습니다.
 
-## 사용자 지정 템플릿을 구성 및 게시하려면
-<a id="to-configure-and-publish-a-custom-template" class="xliff"></a>
+## <a name="to-configure-and-publish-a-custom-template"></a>사용자 지정 템플릿을 구성 및 게시하려면
 
 1.  Azure 클래식 포털의 **템플릿** 페이지에서 새로 만든 템플릿을 선택합니다.
 
@@ -167,8 +164,7 @@ Rights Management에 대한 사용자 지정 템플릿을 생성, 구성, 게시
 > [!WARNING]
 > 이전에 저장된 템플릿을 변경하는 경우, 클라이언트는 해당 컴퓨터에서 템플릿이 새로 고침될 때까지 해당 템플릿의 변경을 볼 수 없게 됩니다. 자세한 내용은 [사용자를 위한 템플릿 새로 고침](refresh-templates.md)을 참조하세요.
 
-## 참고 항목
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

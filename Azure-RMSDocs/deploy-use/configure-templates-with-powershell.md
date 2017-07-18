@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# 사용자 지정 템플릿에 대한 PowerShell 참조
-<a id="powershell-reference-for-custom-templates" class="xliff"></a>
+# <a name="powershell-reference-for-custom-templates"></a>사용자 지정 템플릿에 대한 PowerShell 참조
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -54,8 +53,7 @@ ms.lasthandoff: 06/30/2017
 
 
 
-## 참고 항목
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>참고 항목
 [Azure 권한 관리용 사용자 지정 템플릿 구성](configure-custom-templates.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -18,15 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Azure Information Protection 정책 구성
-<a id="configuring-azure-information-protection-policy" class="xliff"></a>
+# <a name="configuring-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
 >*적용 대상: Azure Information Protection*
 
 분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다. 이 정책은 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치한 컴퓨터에 다운로드됩니다.
 
-## 구독 지원
-<a id="subscription-support" class="xliff"></a>
+## <a name="subscription-support"></a>구독 지원
 
 Azure Information Protection 정책은 다음과 같은 다양한 수준의 구독을 지원합니다.
 
@@ -44,8 +42,7 @@ Azure Information Protection P2 구독을 필요로 하는 옵션은 이제 포�
 
 범위 정책을 구성하는 방법에 대한 자세한 내용은 [범위 지정 정책을 사용하여 특정 사용자에 대한 정책을 구성하는 방법](configure-policy-scope.md)을 참조하세요.
 
-## Azure Information Protection 정책을 구성하는 방법
-<a id="how-to-configure-the-azure-information-protection-policy" class="xliff"></a>
+## <a name="how-to-configure-the-azure-information-protection-policy"></a>Azure Information Protection 정책을 구성하는 방법
 
 1. 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
@@ -88,8 +85,7 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 >[!NOTE]
 >클라이언트가 정책을 다운로드하면 정책이 완벽하게 작동하는 데 몇 분 정도 걸립니다. 실제 시간은 정책 구성의 크기 및 복잡도, 네트워크 연결 등 여러 요소에 따라 다릅니다. 레이블의 결과 작업이 최근 변경 내용과 일치하지 않는 경우에는 최대 15분 정도 기다렸다 다시 시도하세요.
 
-### 조직의 정책 구성
-<a id="configuring-your-organizations-policy" class="xliff"></a>
+### <a name="configuring-your-organizations-policy"></a>조직의 정책 구성
 
 다음 정보를 사용하여 Azure Information Protection 정책을 구성할 수 있습니다.
 
@@ -115,8 +111,7 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 - [다른 언어에 대해 레이블을 구성하는 방법](configure-policy-languages.md)
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
 

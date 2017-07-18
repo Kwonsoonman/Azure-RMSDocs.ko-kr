@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Azure Information Protection 클라이언트: 버전 릴리스 기록
-<a id="azure-information-protection-client-version-release-history" class="xliff"></a>
+# <a name="azure-information-protection-client-version-release-history"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록
 
 >*적용 대상: Azure Information Protection*
 
@@ -35,8 +34,7 @@ GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 �
 > 문제가 지속되면 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
 
 
-## 버전 1.7.210.0
-<a id="version-172100" class="xliff"></a>
+## <a name="version-172100"></a>버전 1.7.210.0
 
 **릴리스 날짜**: 2017년 6월 6일
 
@@ -61,8 +59,7 @@ GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 �
 - 새 PowerShell cmdlet, [Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification). 이 cmdlet을 실행하면 파일 콘텐츠를 검사한 후 Azure Information Protection 정책에 지정된 조건에 따라 레이블이 지정되지 않은 파일에 자동으로 레이블을 적용합니다.
 
 
-## 버전 1.4.21.0
-<a id="version-14210" class="xliff"></a>
+## <a name="version-14210"></a>버전 1.4.21.0
 
 **릴리스 날짜**: 2017년 3월 15일
 
@@ -89,8 +86,7 @@ GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 �
 - PDF 파일의 경우 이제 뷰어에서 검색, 확대/축소 및 회전과 같은 옵션을 지원합니다. 이러한 옵션을 사용하려면 파일이 뷰어에 표시되었을 때 마우스 오른쪽 단추로 클릭합니다.
 
 
-## 버전 1.3.155.2
-<a id="version-131552" class="xliff"></a>
+## <a name="version-131552"></a>버전 1.3.155.2
 
 **릴리스 날짜**: 2017년 2월 8일
 
@@ -118,8 +114,7 @@ Microsoft .NET Framework
 - [Azure Information Protection 사용자 가이드](client-user-guide.md)
 
 
-## 버전 1.2.4.0
-<a id="version-1240" class="xliff"></a>
+## <a name="version-1240"></a>버전 1.2.4.0
 
 **릴리스 날짜**: 2016년 10월 27일
 
@@ -137,15 +132,13 @@ Microsoft .NET Framework
 
     이 옵션에 대한 자세한 내용은 관리자 가이드의 [추가 검사 및 문제 해결](client-admin-guide.md#additional-checks-and-troubleshooting) 섹션을 참조하세요.
 
-## 버전 1.1.23.0
-<a id="version-11230" class="xliff"></a>
+## <a name="version-11230"></a>버전 1.1.23.0
 
 **릴리스 날짜**: 2016년 10월 1일
 
 일반 공급.
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 클라이언트를 설치하는 방법에 대한 자세한 정보:
 

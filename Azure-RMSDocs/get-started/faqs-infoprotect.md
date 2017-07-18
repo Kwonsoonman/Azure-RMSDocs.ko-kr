@@ -18,15 +18,13 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
-<a id="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection" class="xliff"></a>
+# <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
 >*적용 대상: Azure Information Protection, Office 365*
 
 Azure Information Protection에서 특별히 분류 및 레이블 지정에 대한 질문이 있나요?  여기에 해당 질문에 대한 대답이 있는지 확인하세요. 
 
-## Azure Information Protection에서 분류 기능으로 수행할 수 있는 작업은 무엇인가요?
-<a id="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection" class="xliff"></a>
+## <a name="what-can-i-do-with-the-classification-capabilities-in-azure-information-protection"></a>Azure Information Protection에서 분류 기능으로 수행할 수 있는 작업은 무엇인가요?
 
 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 통해 몇 분 만에 이러한 기능의 작동 방식을 확인해 보세요.
 
@@ -46,20 +44,17 @@ Azure Information Protection에서 특별히 분류 및 레이블 지정에 대�
 
 2월 릴리스에서는 이전의 여러 제한이 제거됩니다. 자세한 내용은 [블로그 게시물 알림](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/)을 참조하세요.
 
-## 분류 및 레이블을 구성하려면 전역 관리자여야 합니까?
-<a id="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels" class="xliff"></a>
+## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>분류 및 레이블을 구성하려면 전역 관리자여야 합니까?
 
 Azure Information Protection 정책을 구성하려 할 때, 더 이상 Azure Active Directory의 전역 관리자로 Azure Portal에 로그인할 필요가 없습니다. 또한 이제는 보안 관리자 역할이 있는 계정을 사용할 수 있습니다.
 
 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 레이블 지정 기능을 확인하고 사용해 보기 위해 포털에 로그인하지 않아도 됩니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure Portal에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
 
-## Azure Portal에서 어떤 옵션이 P2인가요?
-<a id="which-options-in-the-azure-portal-are-p2" class="xliff"></a>
+## <a name="which-options-in-the-azure-portal-are-p2"></a>Azure Portal에서 어떤 옵션이 P2인가요?
 
 **Azure Information Protection Premium 2**(P2) 구독이 필요한 Azure Portal의 옵션은 이제 옵션을 식별하기 위한 정보 팝업 메시지를 포함합니다. P1 및 P1 구독에 포함된 기능에 대한 자세한 내용은 Azure Information Protection 사이트의 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 참조하세요.
 
-## 파일에 분류가 여러 개 있을 수 있나요?
-<a id="can-a-file-have-more-than-one-classification" class="xliff"></a>
+## <a name="can-a-file-have-more-than-one-classification"></a>파일에 분류가 여러 개 있을 수 있나요?
 
 사용자는 각 문서 또는 메일에 대해 한 번에 레이블 하나만 선택할 수 있으며, 그 결과 분류가 하나만 생깁니다. 그러나 사용자가 하위 레이블을 선택하면 실제로 두 레이블(기본 레이블 및 보조 레이블)이 동시에 적용됩니다. 하위 레이블을 사용함으로써 추가 수준의 제어에 대해 파일에 부모\자식 관계를 나타내는 두 분류가 있을 수 있습니다.
 
@@ -67,18 +62,15 @@ Azure Information Protection 정책을 구성하려 할 때, 더 이상 Azure Ac
 
 하위 레이블을 사용할 때에는 기본 레이블에 시각적 표시, 보호 및 상태를 구성하지 마세요. 하위 수준을 사용할 때에는 하위 레이블에만 이러한 설정을 구성합니다. 기본 레이블과 하위 레이블에 이러한 설정을 구성하는 경우 하위 레이블의 설정이 우선합니다.
 
-## 메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
-<a id="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling" class="xliff"></a>
+## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
 
 아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블에 보호를 적용하는 경우 해당 보호는 첨부 파일에 적용됩니다.
 
-## DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
-<a id="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection" class="xliff"></a>
+## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
 
 Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 파일에서 이 메타데이터는 사용자 지정 속성에 저장됩니다. 전자 메일에서 이 정보는 전자 메일 헤더에 있습니다.
 
-## 전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
-<a id="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification" class="xliff"></a>
+## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
 
 Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능으로, Azure Information Protection 분류와는 독립적으로 구현됩니다. 
 

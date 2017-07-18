@@ -10,8 +10,7 @@
 
 ![RM 자습서 스크린샷](../media/AzRMS_Tutorial_4_Screenshots.png)
 
-#### 보호된 문서 첨부 파일을 보호하려면
-<a id="to-view-the-protected-document-attachment" class="xliff"></a>
+#### <a name="to-view-the-protected-document-attachment"></a>보호된 문서 첨부 파일을 보호하려면
 
 1.  Azure Rights Management에서 Word 문서를 보호했으므로 메일 메시지에 두 개의 첨부 파일이 포함됩니다. 두 파일은 사실 동일한 파일의 두 가지 버전이며 파일 이름 확장명만 서로 다릅니다. 파일 이름 확장명이 **.ppdf**인 버전(**Confidential.ppdf**)을 엽니다.
 

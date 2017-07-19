@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
-<a id="rms-protection-with-windows-server-file-classification-infrastructure-fci" class="xliff"></a>
+# <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
 >*적용 대상: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
@@ -34,8 +33,7 @@ Azure Information Protection 클라이언트와 PowerShell을 사용하여 파�
 
 아래의 지침은 Windows Server 2012 R2 또는 Windows Server 2012용입니다. 지원되는 다른 Windows 버전을 실행하는 경우에는 사용 중인 운영 체제 버전과 이 문서에서 설명하는 버전 간의 차이에 맞게 일부 단계를 조정해야 할 수 있습니다.
 
-## Windows Server FCI를 사용하는 Azure Rights Management 보호를 위한 필수 구성 요소
-<a id="prerequisites-for-azure-rights-management-protection-with-windows-server-fci" class="xliff"></a>
+## <a name="prerequisites-for-azure-rights-management-protection-with-windows-server-fci"></a>Windows Server FCI를 사용하는 Azure Rights Management 보호를 위한 필수 구성 요소
 이러한 지침을 적용하기 위한 필수 구성 요소는 다음과 같습니다.
 
 -  파일 분류 인프라를 사용하여 파일 리소스 관리자를 실행할 각 파일 서버에서 다음을 수행해야 합니다.
@@ -58,8 +56,7 @@ Azure Information Protection 클라이언트와 PowerShell을 사용하여 파�
     
 - 파일 서버에 Rights Management 템플릿을 다운로드했으며 파일을 보호할 템플릿 ID를 식별했습니다. 이를 위해 [Get-RMSTemplate](/powershell/azureinformationprotection/vlatest/get-rmstemplate) cmdlet을 사용합니다. 이 시나리오는 부서별 템플릿을 지원하지 않으므로 범위에 구성되지 않은 템플릿을 사용하거나, **응용 프로그램에서 사용자 ID를 지원하지 않는 경우 이 템플릿을 모든 사용자에게 표시** 확인란이 선택되도록 범위 구성에 응용 프로그램 호환성 옵션을 포함해야 합니다.
 
-## Azure Rights Management 보호를 위해 파일 서버 리소스 관리자 FCI를 구성하기 위한 지침
-<a id="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection" class="xliff"></a>
+## <a name="instructions-to-configure-file-server-resource-manager-fci-for-azure-rights-management-protection"></a>Azure Rights Management 보호를 위해 파일 서버 리소스 관리자 FCI를 구성하기 위한 지침
 PowerShell 스크립트를 사용자 지정 작업으로 사용하여 폴더의 모든 파일을 자동으로 보호하려면 아래 지침을 따르세요. 다음 절차를 이 순서대로 수행합니다.
 
 1. PowerShell 스크립트 저장
@@ -78,8 +75,7 @@ PowerShell 스크립트를 사용자 지정 작업으로 사용하여 폴더의 
 
 FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 파일 서버 컴퓨터에서 `Get-RMSTemplate -Force`를 실행하여 템플릿을 업데이트해야 합니다. 그러면 업데이트된 템플릿이 새 파일을 보호하기 위해 사용됩니다. 파일 서버의 파일을 다시 보호할 만큼 템플릿에 대한 변경 사항이 중요한 경우, 파일에 대한 내보내기 또는 모든 권한 사용 권한을 가진 계정으로Protect-RMSFile cmdlet을 대화형으로 실행하여 이 작업을 수행할 수 있습니다. FCI에 대해 사용할 새 템플릿을 게시하는 경우 이 파일 서버 컴퓨터에서 `Get-RMSTemplate -Force`도 실행해야 합니다.
 
-### Windows PowerShell 스크립트 저장
-<a id="save-the-windows-powershell-script" class="xliff"></a>
+### <a name="save-the-windows-powershell-script"></a>Windows PowerShell 스크립트 저장
 
 1.  파일 서버 리소스 관리자를 사용하여 Azure RMS 보호용 [Windows PowerShell 스크립트](fci-script.md)의 내용을 복사합니다. 컴퓨터에서 스크립트의 내용을 붙여넣은 다음 파일 이름을 **RMS-Protect-FCI.ps1**로 지정합니다.
 
@@ -126,8 +122,7 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
 
 이제 파일 서버 리소스 관리자 구성을 시작할 준비가 되었습니다.
 
-### RMS(Rights Management)용 분류 속성 만들기
-<a id="create-a-classification-property-for-rights-management-rms" class="xliff"></a>
+### <a name="create-a-classification-property-for-rights-management-rms"></a>RMS(Rights Management)용 분류 속성 만들기
 
 -   파일 서버 리소스 관리자의 분류 관리에서 새 로컬 속성을 만듭니다.
 
@@ -141,8 +136,7 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
 
 이제 이 속성을 사용하는 분류 규칙을 만들 수 있습니다.
 
-### 분류 규칙(RMS용 분류) 만들기
-<a id="create-a-classification-rule-classify-for-rms" class="xliff"></a>
+### <a name="create-a-classification-rule-classify-for-rms"></a>분류 규칙(RMS용 분류) 만들기
 
 -   새 분류 규칙을 만듭니다.
 
@@ -170,8 +164,7 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
 
 분류 규칙은 수동으로 실행할 수도 있지만 지속적으로 수행하는 작업의 경우에는 새 파일이 RMS 속성을 사용하여 분류되도록 일정에 따라 이 규칙을 실행할 수도 있습니다.
 
-### 분류 일정 구성
-<a id="configure-the-classification-schedule" class="xliff"></a>
+### <a name="configure-the-classification-schedule"></a>분류 일정 구성
 
 -   **자동 분류** 탭에서 다음을 수행합니다.
 
@@ -185,8 +178,7 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
 
 이제 분류 구성을 완료했으므로 파일에 RMS 보호를 적용하는 관리 작업을 구성할 준비가 되었습니다.
 
-### 사용자 지정 파일 관리 작업(RMS로 파일 보호) 만들기
-<a id="create-a-custom-file-management-task-protect-files-with-rms" class="xliff"></a>
+### <a name="create-a-custom-file-management-task-protect-files-with-rms"></a>사용자 지정 파일 관리 작업(RMS로 파일 보호) 만들기
 
 -   **파일 관리 작업**에서 새 파일 관리 작업을 만듭니다.
 
@@ -251,8 +243,7 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
 
         -   **새 파일에서 계속 실행**: 이 확인란을 선택합니다.
 
-### 수동으로 규칙 및 작업을 실행하여 구성 테스트
-<a id="test-the-configuration-by-manually-running-the-rule-and-task" class="xliff"></a>
+### <a name="test-the-configuration-by-manually-running-the-rule-and-task"></a>수동으로 규칙 및 작업을 실행하여 구성 테스트
 
 1.  분류 규칙을 실행합니다.
 
@@ -292,8 +283,7 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
 
 이러한 작업이 성공적으로 실행되었음을 확인한 경우 파일 리소스 관리자를 닫아도 됩니다. 예약된 작업이 실행될 때 새 파일이 자동으로 분류되고 보호됩니다. 
 
-## 파일을 선택적으로 보호하도록 지침 수정
-<a id="modifying-the-instructions-to-selectively-protect-files" class="xliff"></a>
+## <a name="modifying-the-instructions-to-selectively-protect-files"></a>파일을 선택적으로 보호하도록 지침 수정
 위에서 설명한 지침이 작동하는 경우에는 보다 자세한 구성용으로 지침을 매우 쉽게 수정할 수 있습니다. 예를 들어 같은 스크립트를 사용해 파일을 보호하되 개인 식별이 가능한 정보를 포함하는 파일만 보호할 수 있으며, 권한이 더 제한적인 템플릿을 선택할 수도 있습니다.
 
 이렇게 하려면 기본 제공 분류 속성 중 하나(예: **개인 식별이 가능한 정보**)를 사용하거나 새 속성을 직접 만듭니다. 그런 다음 이 속성을 사용하는 새 규칙을 만듭니다. 예를 들어 **콘텐츠 분류자**를 선택하고 값이 **높음** 인 **개인 식별이 가능한 정보**속성을 선택한 다음 이 속성에 대해 구성할 파일을 식별하는 문자열 또는 표현식 패턴(예: "**생년월일**" 문자열)을 구성할 수 있습니다.

@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/05/2017
 ---
-# Rights Management 보호에 대해 레이블을 구성하는 방법
-<a id="how-to-configure-a-label-for-rights-management-protection" class="xliff"></a>
+# <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -25,8 +24,7 @@ ms.lasthandoff: 07/05/2017
 
 템플릿은 Azure Rights Management를 활성화할 때 자동으로 만들어지는 기본 템플릿 또는 사용자 지정 템플릿 중 하나일 수 있습니다. Azure 권한 관리 부서별 템플릿은 지원되지만 문서 또는 메일 작성자가 구성된 템플릿 범위에 속하는 경우에만 보호를 적용합니다. 범위 내에 없는 사용자에게는 Azure Information Protection에서 레이블을 적용할 수 없음을 알리는 메시지가 표시됩니다.
 
-## 보호 작동 방식
-<a id="how-the-protection-works" class="xliff"></a>
+## <a name="how-the-protection-works"></a>보호 작동 방식
 
 권한 관리를 통해 보호되는 문서 또는 메일은 사용되지 않을 때와 전송 중에 암호화되며, 권한 있는 사용자만 암호를 해독할 수 있습니다. 이 암호화는 이름이 변경된 경우에도 문서 또는 메일과 함께 유지됩니다. 또한 다음 예와 같이 사용 권한 및 제한 사항을 구성할 수 있습니다.
 
@@ -52,8 +50,7 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
 - Exchange 온-프레미스의 경우 [RMS 커넥터를 배포하고 Exchange 서버를 구성](../deploy-use/deploy-rms-connector.md)해야 합니다. 
 
 
-## Rights Management 보호에 대해 레이블을 구성하려면
-<a id="to-configure-a-label-for-rights-management-protection" class="xliff"></a>
+## <a name="to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하려면
 
 1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창을 열고 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
 
@@ -122,8 +119,7 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
 
 13. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 

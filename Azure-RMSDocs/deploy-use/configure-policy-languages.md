@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/05/2017
 ---
-# Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법
-<a id="how-to-configure-labels-for-different-languages-in-azure-information-protection" class="xliff"></a>
+# <a name="how-to-configure-labels-for-different-languages-in-azure-information-protection"></a>Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -28,8 +27,7 @@ ms.lasthandoff: 07/05/2017
 
 Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어를 선택합니다. 그러면 이러한 레이블 이름 및 설명은 Office 앱의 Azure Information Protection 표시줄과 **분류 및 보호 - Azure Information Protection** 대화 상자에 각각 표시됩니다. 선택할 언어에 대한 자세한 내용은 이 페이지에서 [Azure Information Protection 클라이언트에서 표시할 언어를 결정하는 방법](#how-the-azure-information-protection-client-determines-the-language-to- display) 섹션을 참조하세요. 
 
-## 여러 언어로 표시되도록 레이블을 구성하려면
-<a id="to-configure-labels-to-display-in-different-languages" class="xliff"></a>
+## <a name="to-configure-labels-to-display-in-different-languages"></a>여러 언어로 표시되도록 레이블을 구성하려면
 
 1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
     
@@ -64,8 +62,7 @@ Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어�
     
     가져오기가 완료되면 다음 번에 Azure Information Protection 정책을 게시할 때 지역화된 레이블 이름 및 설명이 다운로드됩니다. **전역 정책** 또는 **범위 정책** 블레이드에서 **게시**를 클릭할 수 있습니다.
 
-## Azure Information Protection 클라이언트가 표시할 언어를 결정하는 방법
-<a id="how-the-azure-information-protection-client-determines-the-language-to-display" class="xliff"></a>
+## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Azure Information Protection 클라이언트가 표시할 언어를 결정하는 방법
 
 다른 언어를 지원하는 Azure Information Protection 정책을 다운로드하면 레이블 이름 및 도구 설명에 사용되는 언어는 다음 논리에 따라 결정됩니다.
 
@@ -81,8 +78,7 @@ Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어�
 
 - 운영 체제 언어와 일치하지 않을 경우 기본적으로 사용자가 지정한 언어의 레이블 이름 및 설명이 모든 사용자에게 표시됩니다. 이 언어는 일반적으로 기본 정책에 사용되는 언어인 영어입니다.
 
-## 지역화된 레이블 이름이 사용되지 않을 경우
-<a id="when-localized-label-names-are-not-used" class="xliff"></a>
+## <a name="when-localized-label-names-are-not-used"></a>지역화된 레이블 이름이 사용되지 않을 경우
 
 다음과 같은 시나리오에서 지역화된 레이블(및 하위 레이블) 이름은 사용되지 않습니다. 테넌트 간에 일관성을 위해 다음과 같은 경우 항상 기본 언어가 사용됩니다.
 
@@ -93,8 +89,7 @@ Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어�
 - 문서 메타데이터 및 전자 메일 헤더
 
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 레이블에 적용할 수 있는 옵션 구성 및 Azure Information Protection 정책의 기타 설정에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.
 

@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Azure Information Protection 테넌트 키에 대한 작업
-<a id="operations-for-your-azure-information-protection-tenant-key" class="xliff"></a>
+# <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키에 대한 작업
 
 >*적용 대상: Azure Information Protection, Office 365*
 

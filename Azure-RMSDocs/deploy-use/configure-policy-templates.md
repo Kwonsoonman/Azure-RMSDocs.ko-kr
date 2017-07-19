@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Azure Information Protection 정책의 템플릿 구성 및 관리
-<a id="configuring-and-managing-templates-in-the-azure-information-protection-policy" class="xliff"></a>
+# <a name="configuring-and-managing-templates-in-the-azure-information-protection-policy"></a>Azure Information Protection 정책의 템플릿 구성 및 관리
 
 >*적용 대상: Azure Information Protection*
 
@@ -42,8 +41,7 @@ ms.lasthandoff: 06/30/2017
 - 테넌트에 대한 권한 관리 템플릿은 레이블로 표시되며, 현재 분류 및 레이블 지정에 관련된 구성 설정도 사용할 수 있습니다. 
 
 
-## Azure Portal의 템플릿 고려 사항
-<a id="considerations-for-templates-in-the-azure-portal" class="xliff"></a>
+## <a name="considerations-for-templates-in-the-azure-portal"></a>Azure Portal의 템플릿 고려 사항
 
 이러한 템플릿을 편집하거나 Azure Portal에서 레이블로 변환하기 전에 Azure 클래식 포털에서 템플릿을 관리할 때와는 달라진 다음과 같은 구현 방식을 이해해야 합니다. 미리 보기 동안 다음과 같은 몇 가지 제한 사항이 해결될 것으로 예상됩니다.
 
@@ -67,8 +65,7 @@ ms.lasthandoff: 06/30/2017
 
 - **템플릿** 컨테이너에서 새 템플릿을 만들지 않도록 하고, 대신 **보호** 설정이 있는 레이블을 만들고 **보호** 블레이드에서 사용 권한 및 설정을 구성합니다. 전체 지침은 [새 템플릿을 만들려면](#to-create-a-new-template)을 참조하세요.
 
-## Azure Information Protection 정책에서 템플릿을 구성하려면
-<a id="to-configure-the-templates-in-the-azure-information-protection-policy" class="xliff"></a>
+## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Azure Information Protection 정책에서 템플릿을 구성하려면
 
 1. 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
 
@@ -90,8 +87,7 @@ ms.lasthandoff: 06/30/2017
 
 6. 사용자 응용 프로그램 및 서비스에 변경 내용을 적용하려면 **Azure Information Protection** 블레이드에서 **게시**를 클릭합니다.
 
-## 템플릿을 레이블로 변환하려면
-<a id="to-convert-templates-to-labels" class="xliff"></a>
+## <a name="to-convert-templates-to-labels"></a>템플릿을 레이블로 변환하려면
 
 분류, 레이블 지정 및 보호를 포함하는 구독이 있는 경우 템플릿을 레이블로 변환할 수 있습니다. 이 작업을 수행하는 경우 원본 템플릿은 유지되지만 Azure Portal에서 템플릿이 새 레이블에 포함된 것으로 표시됩니다.
 
@@ -111,8 +107,7 @@ ms.lasthandoff: 06/30/2017
 
 - 원본 템플릿은 더 이상 **템플릿** 아래에 표시되지 않으며, Azure Portal에서 편집하려는 경우 생성된 레이블을 편집해야 합니다. 템플릿은 Azure 권한 관리 서비스에 계속 사용할 수 있으며 [PowerShell 명령](administer-powershell.md)을 사용하여 계속 관리할 수 있습니다.  
 
-## 새 템플릿을 만들려면
-<a id="to-create-a-new-template" class="xliff"></a>
+## <a name="to-create-a-new-template"></a>새 템플릿을 만들려면
 
 보호 설정 **Azure RMS**를 사용하여 새 레이블을 만들 경우 내부적으로 새 사용자 지정 템플릿이 만들어진 다음 권한 관리 템플릿과 통합되는 서비스 및 응용 프로그램에서 액세스될 수 있습니다.
 
@@ -133,8 +128,7 @@ ms.lasthandoff: 06/30/2017
 5. 이러한 템플릿을 사용자 응용 프로그램 및 서비스에서 사용할 수 있게 하려면 **Azure Information Protection** 블레이드에서 **게시**를 클릭합니다.
 
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 모든 Azure Information Protection 정책 변경과 마찬가지로, Azure Information Protection 클라이언트를 실행하는 컴퓨터에서 이러한 템플릿의 다운로드를 완료하는 데 최대 15분이 걸릴 수 있습니다. 컴퓨터 및 서비스가 템플릿을 다운로드하고 새로 고치는 방법에 대한 자세한 내용은 [사용자 및 서비스를 위한 템플릿 새로 고침](refresh-templates.md)을 참조하세요.
 

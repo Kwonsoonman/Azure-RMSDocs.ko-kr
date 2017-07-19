@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
-<a id="administering-the-azure-rights-management-service-by-using-windows-powershell" class="xliff"></a>
+# <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -36,8 +35,7 @@ PowerShell을 사용하여 Azure Information Protection에 대한 Azure Rights M
 
 Azure Information Protection 클라이언트는 이 서비스 쪽 PowerShell 모듈 외에도 보조 PowerShell 모듈인 **AzureInformationProtection**을 설치합니다. 이 클라이언트 모듈은 여러 파일을 분류하고 보호하므로 예를 들어 폴더의 모든 파일을 대량으로 보호할 수 있습니다. 자세한 내용은 관리자 가이드에서 [Azure Information Protection 클라이언트에서 PowerShell 사용](../rms-client/client-admin-guide-powershell.md)을 참조하세요.
 
-## 관리 작업별로 그룹화된 Cmdlet
-<a id="cmdlets-grouped-by-administration-task" class="xliff"></a>
+## <a name="cmdlets-grouped-by-administration-task"></a>관리 작업별로 그룹화된 Cmdlet
 
 |수행할 작업|사용할 cmdlet|
 |-------------------|------------------------------|

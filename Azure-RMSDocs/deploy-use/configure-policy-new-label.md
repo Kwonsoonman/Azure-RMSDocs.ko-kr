@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Azure Information Protection에 대한 새 레이블을 만드는 방법
-<a id="how-to-create-a-new-label-for-azure-information-protection" class="xliff"></a>
+# <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Azure Information Protection에 대한 새 레이블을 만드는 방법
 
 >*적용 대상: Azure Information Protection*
 
@@ -47,8 +46,7 @@ Azure Information Protection은 사용자 지정 가능한 기본 레이블과 �
 
 5. 이 새로운 레이블 이름 및 설명을 다른 언어로 표시하려면 [다른 언어로 레이블을 구성하는 방법](configure-policy-languages.md)에 나오는 절차를 따르세요. 
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 

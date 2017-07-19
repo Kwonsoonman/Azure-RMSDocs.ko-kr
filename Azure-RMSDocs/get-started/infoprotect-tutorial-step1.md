@@ -16,8 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# 1단계: Rights Management 서비스 활성화
-<a id="step-1-activate-the-rights-management-service" class="xliff"></a>
+# <a name="step-1-activate-the-rights-management-service"></a>1단계: Rights Management 서비스 활성화
  
 >*적용 대상: Azure Information Protection*
 
@@ -30,8 +29,7 @@ Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요�
 
 이 자습서에서는 Office 365 관리자용 관리 포털의 활성화 페이지로 바로 이동합니다. 그렇지만 이 페이지로 직접 이동하지 않고 Office 365 관리자 포털에서 이 페이지로 이동하려면 [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요. 또한 Azure Portal에 대한 액세스 권한은 있지만 Office 365 관리자 포털에 대해서는 없는 경우 다음 전체 지침을 사용하세요.
 
-## Rights Management 서비스를 활성화하려면
-<a id="to-activate-the-rights-management-service" class="xliff"></a>
+## <a name="to-activate-the-rights-management-service"></a>Rights Management 서비스를 활성화하려면
 
 1. 새 브라우저 창을 열고 Office 365 관리자용 [Rights Management 활성화 페이지](https://account.activedirectory.windowsazure.com/RmsOnline/Manage.aspx)로 바로 이동합니다.
     

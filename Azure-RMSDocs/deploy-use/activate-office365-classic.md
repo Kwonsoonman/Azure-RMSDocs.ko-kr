@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# 이전 Office 365 관리 센터에서 Azure 권한 관리를 활성화하는 방법
-<a id="how-to-activate-azure-rights-management-from-the-old-office-365-admin-center" class="xliff"></a>
+# <a name="how-to-activate-azure-rights-management-from-the-old-office-365-admin-center"></a>이전 Office 365 관리 센터에서 Azure 권한 관리를 활성화하는 방법
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -50,8 +49,7 @@ ms.lasthandoff: 06/30/2017
 
 이제 **Rights Management가 활성화되었음** 이 표시되고 비활성화 옵션이 나타납니다.
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 [Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

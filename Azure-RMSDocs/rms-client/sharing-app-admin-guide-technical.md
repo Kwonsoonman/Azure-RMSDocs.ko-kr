@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보
-<a id="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application" class="xliff"></a>
+# <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
@@ -42,8 +41,7 @@ RMS의 2013년 10월 릴리스를 설치하면 Office 2010을 사용해 문서�
 
 배포 정보는 [Microsoft Rights Management 공유 응용 프로그램 자동 배포](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)를 참조하세요.
 
-## 보호 수준 - 기본 및 일반
-<a id="levels-of-protection--native-and-generic" class="xliff"></a>
+## <a name="levels-of-protection--native-and-generic"></a>보호 수준 - 기본 및 일반
 Microsoft Rights Management 공유 응용 프로그램은 다음 표에서 설명하는 것처럼 각기 다른 두 수준의 보호를 지원합니다.
 
 |보호 유형|네이티브|제네릭|
@@ -53,8 +51,7 @@ Microsoft Rights Management 공유 응용 프로그램은 다음 표에서 설�
 |파일 형식에 대한 기본값|이 보호 수준은 다음 파일 형식에 대한 기본 보호 수준입니다.<br /><br />- 텍스트 및 이미지 파일<br /><br />- Microsoft Office(Word, Excel, PowerPoint) 파일<br /><br />- Portable Document Format(.pdf)<br /><br />자세한 내용은 [지원되는 파일 형식 및 파일 이름 확장명](#supported-file-types-and-file-name-extensions) 섹션을 참조하세요.|이 수준은 전체 보호를 통해 지원되지 않는 .vsdx, .rtf 등의 기타 모든 파일 형식에 대한 기본 보호 수준입니다.|
 RMS 공유 응용 프로그램이 적용하는 기본 보호 수준을 변경할 수 있습니다. 기본 수준을 일반 수준으로 변경하거나 그 반대로 변경할 수 있으며, RMS 공유 응용 프로그램이 보호를 적용하지 않도록 차단할 수도 있습니다. 자세한 내용은 이 문서에서 [파일의 기본 보호 수준 변경](#changing-the-default-protection-level-of-files) 섹션을 참조하세요.
 
-## 지원되는 파일 형식 및 파일 이름 확장명
-<a id="supported-file-types-and-file-name-extensions" class="xliff"></a>
+## <a name="supported-file-types-and-file-name-extensions"></a>지원되는 파일 형식 및 파일 이름 확장명
 다음 표에는 Microsoft Rights Management 공유 응용 프로그램에서 기본적으로 지원하는 파일 형식이 나와 있습니다. 이러한 파일 형식의 경우 기본 보호를 적용하면 원래 파일 이름 확장명이 변경되며 해당 파일은 읽기 전용이 됩니다.
 
 또한 사용자가 공유를 통해 보호하는 Word, Excel 또는 PowerPoint 파일을 RMS 공유 응용 프로그램이 기본적으로 보호하는 경우 이 작업을 수행하면 원본과 파일 이름은 같은 복사본이며 파일 이름 확장명은 **.ppdf** 인 두 번째 파일이 자동으로 만들어집니다. 이 파일 버전이 만들어지므로 RMS 공유 응용 프로그램을 설치하는 받는 사람은 기본 보호가 적용된 파일을 항상 열 수 있습니다.
@@ -87,8 +84,7 @@ RMS 공유 응용 프로그램이 적용하는 기본 보호 수준을 변경할
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm|.pptx<br /><br />.thmx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
 
-### 파일의 기본 보호 수준 변경
-<a id="changing-the-default-protection-level-of-files" class="xliff"></a>
+### <a name="changing-the-default-protection-level-of-files"></a>파일의 기본 보호 수준 변경
 레지스트리를 편집하여 RMS 공유 응용 프로그램이 파일을 보호하는 방식을 변경할 수 있습니다. 예를 들어 기본 보호를 지원하는 파일을 RMS 공유 응용 프로그램에서 일반적으로 보호하도록 강제 지정할 수 있습니다.
 
 이러한 작업을 수행해야 하는 이유는 다음과 같습니다.
@@ -135,8 +131,7 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 
 -   **Off**: 보호 차단
 
-## 참고 항목
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -18,8 +18,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# Azure Rights Management 서비스용 사용자 지정 템플릿 구성
-<a id="configuring-custom-templates-for-the-azure-rights-management-service" class="xliff"></a>
+# <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Azure Rights Management 서비스용 사용자 지정 템플릿 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 

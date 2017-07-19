@@ -19,8 +19,7 @@ ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
 ---
-# 5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적
-<a id="step-5-see-sharing-of-protected-files-in-action-and-track-your-document" class="xliff"></a> 
+# <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
 
 >*적용 대상: Azure Information Protection*
 
@@ -28,8 +27,7 @@ ms.lasthandoff: 06/30/2017
 
 이제 이 문서를 메일로 안전하게 공유할 준비가 되었습니다. 
 
-## 문서를 메일로 안전하게 공유하려면
-<a id="to-safely-share-your-document-by-email" class="xliff"></a>
+## <a name="to-safely-share-your-document-by-email"></a>문서를 메일로 안전하게 공유하려면
 
 1. 파일 탐색기에서 문서를 마우스 오른쪽 단추로 클릭하고 **분류 및 보호**를 선택합니다. **분류 및 보호 - Azure Information Protection** 대화 상자가 열립니다.
 
@@ -67,8 +65,7 @@ ms.lasthandoff: 06/30/2017
 
 이제 보호된 문서를 보냈으니 수신자에게 도착하기를 기다렸다가 열어 보라고 요청하면 됩니다. 
 
-## 수신자에게 메일의 문서를 열라고 요청
-<a id="ask-your-recipients-to-open-the-emailed-document" class="xliff"></a>
+## <a name="ask-your-recipients-to-open-the-emailed-document"></a>수신자에게 메일의 문서를 열라고 요청
 
 보호된 문서가 메일 첨부 파일로 전송되면 수신자는 다양한 장치를 사용하여 읽을 수 있습니다. 이러한 장치에는 iPad, iPhone, Android 태블릿 및 전화, Mac 컴퓨터, Windows 컴퓨터 등이 포함됩니다.
 
@@ -76,8 +73,7 @@ ms.lasthandoff: 06/30/2017
 
 **등록**을 클릭하면 Azure Information Protection은 조직에 Azure Rights Management 데이터 보호 서비스를 포함하는 구독이 있는지 여부를 확인합니다. 그렇지 않은 경우 무료 계정을 신청할 수 있습니다.
 
-### 받는 사람에 대한 지침: 보호된 문서 첨부 파일을 보호하려면
-<a id="instructions-for-recipient-to-view-the-protected-document-attachment" class="xliff"></a>
+### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>받는 사람에 대한 지침: 보호된 문서 첨부 파일을 보호하려면
 
 1. Office가 설치된 PC 또는 모바일 장치에서 첨부 파일을 열고 문서를 읽습니다.  
 
@@ -89,8 +85,7 @@ ms.lasthandoff: 06/30/2017
 
 이제 받는 사람이 첨부 파일을 열었고, 선택적으로 해당 파일을 다른 사람에게 전달하기도 했으므로 문서를 추적할 준비가 되었습니다.
 
-## 보호된 문서를 추적하려면
-<a id="to-track-your-protected-document" class="xliff"></a>
+## <a name="to-track-your-protected-document"></a>보호된 문서를 추적하려면
 
 1.  보호 및 공유한 문서를 엽니다. 정보 배너에는 사용자가 지정한 사용자 지정 보호 설정이 표시됩니다.
 
@@ -123,8 +118,7 @@ ms.lasthandoff: 06/30/2017
 |문서 추적 사이트 사용 정보|[문서 추적 및 취소](../rms-client/client-track-revoke.md)
 
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 이제 기본 Azure Information Protection 정책, 이러한 정책의 사용자 지정 방법 및 Word 문서에 대해 레이블 지정이 작동하는 방식을 확인했으므로, 다른 설정을 사용해 보고 Azure Information Protection을 지원하는 다른 Office 프로그램(Excel, PowerPoint, Outlook)에서 이러한 설정이 작동하는 방식을 확인해 보세요. Azure Information Protection 클라이언트를 설치할 때 이러한 응용 프로그램이 열려 있었던 경우에는 이러한 응용 프로그램을 닫았다가 다시 연 후 Azure Information Protection에서 이러한 응용 프로그램을 사용해 보세요.
 

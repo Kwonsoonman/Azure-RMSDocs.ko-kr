@@ -4,20 +4,19 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: b91bfea99170b747bb199b3c966ae8c89fae5359
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f6cd01357db99ee9d299606172aa85f7e2f44ba0
+ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 ---
-# 2단계: Azure Information Protection 정책 구성 및 게시
-<a id="step-2-configure-and-publish-the-azure-information-protection-policy" class="xliff"></a>
+# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
 >*적용 대상: Azure Information Protection*
 
@@ -45,12 +44,11 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-labelsv2.png)
     
-    또한 예를 들어 모든 문서 및 메일에 레이블이 필요하지 않고, 기본 레이블이 없으며, 사용자가 레이블을 변경할 때 근거를 제공하지 않아도 되도록 일부 정책 설정은 지정되지 않습니다.
+    또한 일부 정책 설정은 설정되지 않습니다. 예를 들어 모든 문서 및 메일에 레이블이 필요하지 않고, 기본 레이블이 없으며, 사용자가 레이블을 변경할 때 근거를 제공하지 않아도 되는 경우입니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-settings.png)
 
-## 기본 레이블 및 근거에 대한 프롬프트 설정 변경
-<a id="changing-the-settings-for-a-default-label-and-prompt-for-justification" class="xliff"></a>
+## <a name="changing-the-settings-for-a-default-label-and-prompt-for-justification"></a>기본 레이블 및 근거에 대한 프롬프트 설정 변경
 
 이 자습서에서는 몇 가지 정책 설정의 작동 방식을 확인할 수 있도록 이러한 설정을 변경합니다.
 
@@ -60,12 +58,11 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 2. **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)에서 **On**(켜기)으로 설정합니다.
 
-## 보호를 위한 레이블, 워터마크 및 분류를 위한 프롬프트 조건 구성
-<a id="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification" class="xliff"></a>
+## <a name="configuring-a-label-for-protection-a-watermark-and-a-condition-to-prompt-for-classification"></a>보호를 위한 레이블, 워터마크 및 분류를 위한 프롬프트 조건 구성
 
 이제 **기밀** 기본 레이블에서 하위 레이블 중 하나인 **모든 직원**의 설정을 변경합니다. 
 
-이전 버전의 정책을 사용하고 있어 **기밀** 레이블에 하위 레이블이 없는 경우 대신 **기밀** 레이블을 사용할 수 있습니다. 구성 단계는 같지만, 레이블 블레이드의 이름은 **모든 직원** 대신 **기밀**이 됩니다.
+이전 버전의 정책을 사용하고 있어 **기밀** 레이블에 하위 레이블이 없는 경우 대신 **기밀** 레이블을 사용할 수 있습니다. 구성 단계는 같지만 레이블 블레이드의 이름은 **모든 직원**이 아닌 **기밀**이 됩니다.
 
 1. **기밀** 레이블이 확장되어 있는지 확인한 다음 해당 레이블에서 **모든 직원**을 선택합니다.
     
@@ -79,9 +76,11 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     이 작업을 수행하면 **보호**가 열립니다.
     
-3. **보호** 블레이드에서 **Azure RMS**가 선택되어 있고 **미리 정의된 템플릿 선택**도 선택되어 있는지 확인한 다음 드롭다운 상자를 클릭하고 기본 템플릿 **\<조직 이름> - 기밀**을 선택합니다.     
+3. **보호** 블레이드에서 **Azure RMS**와 **미리 정의된 템플릿 선택**이 선택되어 있는지 확인합니다. 그런 다음 드롭다운 상자를 클릭하고 조직의 모든 사용자가 보호된 콘텐츠를 보고 편집할 수 있는 기본 템플릿을 선택합니다. 
     
-    예를 들어 경우 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - Confidential**(기밀)이 표시되고 이를 선택합니다. 
+    최근에 Azure Rights Management 서비스를 활성화한 경우 이 템플릿의 이름은 **기밀 \ 모든 직원**입니다. 
+    
+    이 자습서를 시작하기 전에 Azure Rights Management 서비스가 이미 활성화된 경우 기본 템플릿의 이름은 **\<조직 이름> - 기밀**이 될 수 있습니다. 예를 들어 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - 기밀**이 표시되고 이를 선택합니다. 
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 | Azure RMS 보호 설정](../media/step2-select-rms-template.png)
     
@@ -105,7 +104,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     a. **Choose the type of condition**(조건 유형 선택): 기본값을 **Built-in**(기본 제공)으로 유지합니다.
     
-    b. **Select built-in**(기본 제공 선택): 드롭다운에서 **Credit Card Number**(신용 카드 번호)를 선택합니다.
+    b. **기본 제공 선택**: 드롭다운에서 **신용 카드 번호**를 선택합니다.
     
     c. **Minimum number of occurrences**(최소 발생 횟수): 기본값을 **1**로 유지합니다.
     
@@ -115,7 +114,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     **저장**을 클릭하여 **레이블: 모든 직원** 블레이드로 돌아갑니다.
 
-7. **레이블: 모든 직원** 블레이드에서 **신용 카드 번호**가 **CONDITION NAME**(조건 이름)으로 표시되고 **OCCURRENCES**(발생 횟수)는 **1**로 표시됩니다.
+7. **레이블: 모든 직원** 블레이드에서 **신용 카드 번호**가 **조건 이름**으로 표시되고 **OCCURRENCES**(발생 빈도)는 **1**로 표시됩니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 신용 카드 조건 구성](../media/step2-see-condition.png)
 

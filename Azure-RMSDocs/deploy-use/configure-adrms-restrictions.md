@@ -4,24 +4,23 @@ description: "Azure Information Protection에서 HYOK(AD RMS) 보호를 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/25/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: ca0fe89178840917fba4ae672547f6852123d699
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f1ae8d75b3fd3900b7c863be332656b71c647e1f
+ms.sourcegitcommit: 834b6bcab70a185018b4876b2d24b145e5089ac4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/07/2017
 ---
-# AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
-<a id="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection" class="xliff"></a>
+# <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
 >*적용 대상: Azure Information Protection*
 
-가장 중요한 문서와 메일을 보호하는 경우 Azure Rights Management(Azure RMS)를 적용하여 일반적으로 다음을 수행할 수 있습니다.
+가장 중요한 문서와 메일을 보호하는 경우 Azure RMS(Azure Rights Management) 보호를 적용하여 일반적으로 다음을 수행할 수 있습니다.
 
 - 서버 인프라가 필요하지 않으므로 온-프레미스 솔루션보다 더 빠르고 비용 효과적으로 이 솔루션을 배포 및 유지 관리할 수 있습니다.
 
@@ -56,8 +55,7 @@ Azure RMS는 Microsoft에서 관리(기본값)하거나 사용자가 관리("Bri
 
 [범위 지정 정책](configure-policy-scope.md)은 AD RMS 보호를 적용해야 하는 사용자만 AD RMS 보호가 구성된 레이블을 볼 수 있도록 하는 좋은 방법입니다. 
 
-## HYOK 사용 시 추가 제한 사항
-<a id="additional-limitations-when-using-hyok" class="xliff"></a>
+## <a name="additional-limitations-when-using-hyok"></a>HYOK 사용 시 추가 제한 사항
 
 Azure RMS 보호를 Azure Information Protection과 사용할 경우 Azure RMS 보호를 사용하면 얻는 나열된 혜택을 지원하지 않을 뿐 아니라 다음과 같은 제한 사항이 있습니다.
 
@@ -73,8 +71,7 @@ Azure RMS 보호를 Azure Information Protection과 사용할 경우 Azure RMS �
     
     유일한 해결책은 메일 메시지를 닫고 다시 시작하는 것입니다. 사용자가 처음에 Azure RMS 보호를 적용하는 레이블을 선택한 다음 AD RMS 보호를 적용하는 레이블로 레이블을 변경하는 경우에도 동일한 제한이 적용됩니다.
 
-## HYOK에 대한 요구 사항
-<a id="requirements-for-hyok" class="xliff"></a>
+## <a name="requirements-for-hyok"></a>HYOK에 대한 요구 사항
 
 AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공하기 위한 다음 요구 사항을 충족하는지 확인합니다.
 
@@ -106,8 +103,7 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
 배포 정보 및 AD RMS에 대한 지침은 Windows Server 라이브러리에서 [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx)를 참조하세요. 
 
 
-## Azure Information Protection 레이블을 사용하여 AD RMS 보호를 지정하는 데 필요한 정보 찾기
-<a id="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label" class="xliff"></a>
+## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Azure Information Protection 레이블을 사용하여 AD RMS 보호를 지정하는 데 필요한 정보 찾기
 
 **HYOK(AD RMS)** 보호에 대한 레이블을 구성하는 경우 AD RMS 클러스터의 템플릿 GUID 및 라이선스 URL을 지정해야 합니다. 이러한 두 값은 Active Directory Rights Management Services 콘솔에서 확인할 수 있습니다.
 
@@ -115,10 +111,9 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
 
 - 라이선스 URL을 찾으려면: 클러스터 이름을 클릭합니다. **클러스터 세부 정보**에서 **/_wmcs/licensing** 문자열을 제외하고 **라이선스**니다. 예: https://rmscluster.contoso.com 
     
-    인트라넷 라이선스값뿐 아니라 엑스트라넷 라이선스 값도 있고 두 값이 서로 다른 경우: 명시적 지점 간 트러스트를 사용하여 정의한 파트너와 보호된 문서 또는 메일을 공유할 경우에만 엑스트라넷 값을 지정합니다. 그렇지 않은 경우 인트라넷 값을 사용하고 Azure Information Protection에 AD RMS 보호를 사용하는 모든 클라이언트 컴퓨터에서 인트라넷 연결을 사용하여 연결하도록 합니다(예: 원격 컴퓨터에서 VPN 연결 사용).
+    인트라넷 라이선스 값뿐 아니라 엑스트라넷 라이선스 값도 있고 두 값이 서로 다른 경우: 명시적 지점 간 트러스트를 사용하여 정의한 파트너와 보호된 문서 또는 메일을 공유할 경우에만 엑스트라넷 값을 지정합니다. 그렇지 않은 경우 인트라넷 값을 사용하고 Azure Information Protection에 AD RMS 보호를 사용하는 모든 클라이언트 컴퓨터에서 인트라넷 연결을 사용하여 연결하도록 합니다(예: 원격 컴퓨터에서 VPN 연결 사용).
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 
 이 기능에 대한 자세한 내용과 사용 시 지침은 블로그 게시물 공지인 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)(Azure Information Protection 및 HYOK(Hold Your Own Key))를 참조하세요.
 

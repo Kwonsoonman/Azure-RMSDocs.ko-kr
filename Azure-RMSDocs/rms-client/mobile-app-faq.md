@@ -5,7 +5,7 @@ keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/05/2017
+ms.date: 07/08/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5ea28525653966d2de609c118bd18079cff99b2d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: dc6b9ee8c557ce04019534c4713c526265c207e0
+ms.sourcegitcommit: 0b097f0817fee0fb025caef3c46fdd887c782a43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/07/2017
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ
 
@@ -60,7 +60,9 @@ Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>이 앱에서 열 수 있는 파일 확장명은 무엇인가요?
 
-.rpmsg, .pdf, .ppdf, .pjpg, .ptxt 및 기타 다양한 텍스트 및 이미지 파일 형식을 열 수 있습니다.
+.rpmsg, .pdf, .ppdf, .pjpg, .pjpeg, .ptiff, .ppng, .ptxt, .pxml 및 기타 다양한 텍스트 및 이미지 파일 형식을 열 수 있습니다.
+
+텍스트 및 이미지 파일 이름 확장명의 전체 목록은 관리자 가이드의 [분류 및 보호가 지원되는 파일 형식](client-admin-guide-file-types.md#supported-file-types-for-classification-and-protection) 섹션에서 첫 번째 표를 참조하세요.
 
 ##  <a name="how-do-i-provide-feedback-about-this-app"></a>이 앱에 대한 피드백을 제공하려면 어떻게 해야 하나요?
 

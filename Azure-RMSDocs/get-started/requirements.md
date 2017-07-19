@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/09/2017
+ms.date: 07/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,43 +12,113 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 66874f6e60c2cd5efb2dedaae470170811a84a67
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 74c0725857148fe12943bd9368173124cb059dcf
+ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/11/2017
 ---
-# Azure Information Protection에 대한 요구 사항
-<a id="requirements-for-azure-information-protection" class="xliff"></a>
+# <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
 >*적용 대상: Azure Information Protection, Office 365*
 
 Azure Information Protection을 조직에 배포하기 전에 다음 필수 구성 요소가 준비되어 있는지 확인하세요. 
 
-|요구 사항|추가 정보|
-|---------------|--------------------|
-|Azure Information Protection 구독|분류, 레이블 지정 및 보호를 사용하려면 [Azure Information Protection 계획](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)이 있어야 합니다. 보호만 원할 경우 [권한 관리가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있으면 됩니다.<br /><br /> Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 검토하여 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하세요.<br /><br />참고: 구독 또는 라이선스에 대한 질문이 있는 경우 이 페이지에 게시하지 말고, Microsoft 계정 관리자 또는 [Microsoft 지원 서비스](information-support.md#to-contact-microsoft-support)에 문의하세요. |
-|Azure Active Directory|Azure Information Protection에 대해 사용자 인증 및 권한 부여를 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.<br /><br />MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure Information Protection에서 지원됩니다.<br /><br />인증 요구 사항에 대한 자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](requirements-azure-ad.md)을 참조하세요. <br /><br />권한을 부여할 사용자 및 그룹의 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](../plan-design/prepare.md)를 참조하세요.|
-|클라이언트 장치|사용자에게 Azure Information Protection을 지원하는 운영 체제를 실행하는 클라이언트 장치(컴퓨터 또는 모바일 장치)가 있어야 합니다.<br /><br />다음은 사용자가 Office 문서 및 메일을 분류하여 레이블링할 수 있도록 Azure Information Protection 클라이언트를 지원하는 장치입니다.<br /><br />- Windows 10(x86, x64)<br /><br />- Windows 8.1(x86, x64)<br /><br />- Windows 8(x86, x64)<br /><br />- Windows 7 서비스 팩 1(x86, x64)<br /><br />- Windows Server 2016 <br /><br /> - Windows Server 2012 R2 및 Windows Server 2012<br /><br />이 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 동일한 장치(Windows, Mac, iOS, Android)에서 이 데이터를 사용할 수 있습니다. <br /><br />Azure Rights Management 서비스를 지원하는 장치에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요.|
-|응용 프로그램|Azure Information Protection 클라이언트는 다음 Office 버전의 Office 응용 프로그램인 **Word**, **Excel**, **PowerPoint** 및 **Outlook**을 사용하여 파일 및 메일의 레이블을 지정하고 보호할 수 있습니다.<br /><br /> - Office 365 ProPlus(2016 앱 또는 2013 앱 포함)(간편 실행 또는 Windows Installer 기반 설치)<br /><br />- Office Professional Plus 2016<br /><br />- Office Professional Plus 2013 서비스 팩 1<br /><br />- Office Professional Plus 2010 <br /><br />다른 버전의 Office는 권한 관리 서비스를 사용하여 문서와 메일을 보호할 수 없습니다. 이러한 버전에서는 Azure Information Protection이 분류에만 지원되며 보호를 적용한 레이블은 Azure Information Protection 표시줄에 표시되지 않습니다. <br /><br />데이터 보호 서비스를 지원하는 Office 버전에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.|
-|인터넷 및 종속된 클라우스 서비스 연결을 지원하는 인프라|특정 연결을 허용하기 위해 구성해야 하는 방화벽 또는 유사한 중개 네트워크 장치가 있는 경우 Office 문서 [Office 365 URL 및 IP 주소 범위](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)의 [Office 365 포털 및 공유](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity) 섹션에 있는 **Azure RMS(Rights Management)** 정보를 참조하세요.<br /><br />이 Office 문서의 지침에 따라 RSS 피드를 구독하여 이 정보에 대한 최신 변경 내용을 확인하세요.<br /><br />Office 문서의 정보 외에 Azure Information Protection과 관련하여 다음 사항에 유의하세요.<br /><br />- TCP 443에서 **api.informationprotection.azure.com**으로의 HTTPS 트래픽을 허용합니다.<br /><br />- TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure RMS와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.<br /><br />- 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.|
+## <a name="subscription-for-azure-information-protection"></a>Azure Information Protection 구독
+
+분류, 레이블 지정 및 보호를 사용하려면 [Azure Information Protection 계획](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)이 있어야 합니다. 
+
+보호만 원할 경우 [권한 관리가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있으면 됩니다.
+
+조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하려면 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 검토하세요.
+
+> [!NOTE]
+> 구독 또는 라이선스에 대한 질문이 있는 경우 이 페이지에 게시하지 말고, Microsoft 계정 관리자 또는 [Microsoft 지원](information-support.md#to-contact-microsoft-support)에 문의하세요.
+
+## <a name="azure-active-directory"></a>Azure Active Directory
+
+Azure Information Protection에 대해 사용자 인증 및 권한 부여를 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.
+
+MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure Information Protection에서 지원됩니다.
+
+인증 요구 사항에 대한 자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](requirements-azure-ad.md)을 참조하세요. 
+
+권한을 부여할 사용자 및 그룹의 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](../plan-design/prepare.md)를 참조하세요.
+
+## <a name="client-devices"></a>클라이언트 장치
+
+사용자에게 Azure Information Protection을 지원하는 운영 체제를 실행하는 클라이언트 장치(컴퓨터 또는 모바일 장치)가 있어야 합니다.
+
+다음은 사용자가 문서 및 메일을 분류하여 레이블을 지정할 수 있도록 Azure Information Protection 클라이언트를 지원하는 장치입니다.
+
+- Windows 10(x86, x64)
+
+- Windows 8.1(x86, x64)
+
+- Windows 8(x86, x64)
+
+- Windows 7 서비스 팩 1(x86, x64)
+
+- Windows Server 2016 
+
+- Windows Server 2012 R2 및 Windows Server 2012
+
+- Windows Server 2008 R2 
+
+나열된 서버 버전의 경우 Azure Information Protection 클라이언트가 원격 데스크톱 서비스에 대해 지원됩니다. 원격 데스크톱 서비스와 함께 Azure Information Protection 클라이언트를 사용할 때 사용자 프로필을 삭제하는 경우 **%LocalAppData%\Roaming\Microsoft\Protect** 폴더는 삭제하지 마세요.
+
+Azure Information Protection 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 [동일한 장치](requirements-client-devices.md)에서 이 데이터를 사용할 수 있습니다.
+
+## <a name="applications"></a>응용 프로그램
+
+Azure Information Protection 클라이언트는 다음 Office 버전의 Office 응용 프로그램인 **Word**, **Excel**, **PowerPoint** 및 **Outlook**을 사용하여 문서 및 메일의 레이블을 지정하고 보호할 수 있습니다.
+
+- Office 365 ProPlus(2016 앱 또는 2013 앱 포함)(간편 실행 또는 Windows Installer 기반 설치)
+
+- Office Professional Plus 2016
+
+- Office Professional Plus 2013 서비스 팩 1
+
+- Office Professional Plus 2010 서비스 팩 2
+
+다른 버전의 Office는 권한 관리 서비스를 사용하여 문서와 메일을 보호할 수 없습니다. 이러한 버전에서는 Azure Information Protection이 분류용으로만 지원됩니다. 보호를 적용하는 레이블은 Azure Information Protection 표시줄에 표시되지 않습니다. 
+
+데이터 보호 서비스를 지원하는 Office 버전에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.
+
+## <a name="firewalls-and-network-infrastructure"></a>방화벽 및 네트워크 인프라
+
+특정 연결을 허용하도록 구성되는 방화벽이나 유사한 중개 네트워크 장치가 있는 경우 Office 문서 [Office 365 URL 및 IP 주소 범위](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)의 [Office 365 포털 및 공유](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#bkmk_portal-identity) 섹션에 있는 **Azure RMS(Rights Management)** 정보를 참조하세요.
+
+이 Office 문서의 지침에 따라 RSS 피드를 구독하여 이 정보에 대한 최신 변경 내용을 확인하세요.
+
+Office 문서의 정보 외에 Azure Information Protection과 관련하여 다음 사항에 유의하세요.
+
+- TCP 443에서 **api.informationprotection.azure.com**으로의 HTTPS 트래픽을 허용합니다.
+
+- TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure RMS와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.
+
+- 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.
+
+
+### <a name="on-premises-servers"></a>온-프레미스 서버
 
 온-프레미스 서버에서 Azure Information Protection의 Azure Rights Management 서비스를 사용하려는 경우에 지원되는 제품은 다음과 같습니다.
 
--   Exchange Server
+- Exchange Server
 
--   SharePoint Server
+- SharePoint Server
 
--   파일 분류 인프라를 지원하는 Windows Server 파일 서버
+- 파일 분류 인프라를 지원하는 Windows Server 파일 서버
 
 이 시나리오에 대한 추가 요구 사항에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버](requirements-servers.md)를 참조하세요.
 
-> [!IMPORTANT]
-> 다음 배포 시나리오는 AD RMS 보호를 Azure Information Protection("hold your own key" 또는 HYOK 구성)과 함께 사용하는 경우에만 지원됩니다.
-> 
-> -   [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)에 설명된 대로, 마이그레이션 중인 경우를 제외하고 같은 조직에서 AD RMS와 Azure RMS를 함께 실행하는 경우.
-> 
-> [AD RMS에서 Azure Information Protection으로](http://technet.microsoft.com/library/Dn858447.aspx), [Azure Information Protection에서 AD RMS로](/powershell/module/aadrm/Set-AadrmMigrationUrl)의 지원되는 마이그레이션 경로가 있습니다. Azure Information Protection을 배포한 후 이 클라우드 서비스를 더 이상 사용하지 않겠다고 결정한 경우 [Azure Information Protection 서비스 해제 및 비활성화](../deploy-use/decommission-deactivate.md)를 참조하세요.
+### <a name="coexistence-of-ad-rms-with-azure-rms"></a>Azure RMS와 AD RMS 함께 사용
+
+다음 배포 시나리오는 AD RMS 보호를 Azure Information Protection("hold your own key" 또는 HYOK 구성)과 함께 사용하는 경우에만 지원됩니다.
+
+- [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)에 설명된 대로, 마이그레이션 중인 경우를 제외하고 같은 조직에서 AD RMS와 Azure RMS를 함께 실행하는 경우.
+
+[AD RMS에서 Azure Information Protection으로](http://technet.microsoft.com/library/Dn858447.aspx), [Azure Information Protection에서 AD RMS로](/powershell/module/aadrm/Set-AadrmMigrationUrl)의 지원되는 마이그레이션 경로가 있습니다. Azure Information Protection을 배포한 후 이 클라우드 서비스를 더 이상 사용하지 않겠다고 결정한 경우 [Azure Information Protection 서비스 해제 및 비활성화](../deploy-use/decommission-deactivate.md)를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

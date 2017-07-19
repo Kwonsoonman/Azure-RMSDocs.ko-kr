@@ -4,7 +4,7 @@ description: "조직의 문서와 메일의 분류, 레이블 지정 및 보호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/03/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 362c5108238a0561c35d72faa556417f0f0f8566
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f49d00317503f23d03ae64aa3608375b871b3854
+ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 
@@ -70,9 +70,9 @@ Azure Rights Management 서비스를 사용하여 문서 및 메일을 보호할
 
 - 사용자 인증에는 Azure AD에 있는 두 특성 **proxyAddresses** 및 **userPrincipalName**이 사용됩니다.
 
-- **Azure AD proxyAddresses** 특성은 계정의 모든 메일 주소를 저장하며 다른 방법으로 채울 수 있습니다. 예를 들어, Office 365에서 Exchange Online 사서함이 있는 사용자는 이 특성에 자동으로 메일 주소가 저장됩니다. Office 365 사용자의 대체 메일 주소를 할당하면, 그 주소도 이 특성에 저장됩니다. 온-프레미스 계정에서 동기화되는 메일 주소를 여기에 채울 수도 있습니다. 
+- **Azure AD proxyAddresses** 특성은 계정의 모든 메일 주소를 저장하며 다른 방법으로 채울 수 있습니다. 예를 들어 Office 365에서 Exchange Online 사서함이 있는 사용자에게는 이 특성에 저장되는 메일 주소가 자동으로 부여됩니다. Office 365 사용자의 대체 메일 주소를 할당하면, 그 주소도 이 특성에 저장됩니다. 온-프레미스 계정에서 동기화되는 메일 주소를 여기에 채울 수도 있습니다. 
     
-    도메인이 테넌트에 추가되어 있으면(“확인된 도메인") Azure Information Protection에서 이 Azure AD proxyAddresses 특성에 있는 모든 값을 사용할 수 있습니다. 도메인 확인에 대한 자세한 내용은 다음을 참조하십시오.
+    도메인이 테넌트에 추가되어 있으면("확인된 도메인") Azure Information Protection에서 이 Azure AD proxyAddresses 특성에 있는 모든 값을 사용할 수 있습니다. 도메인 확인에 대한 자세한 내용은 다음을 참조하십시오.
     
     - Azure AD: [Azure Active Directory에 사용자 지정 도메인 이름 추가](/active-directory/active-directory-add-domain)
     
@@ -88,13 +88,13 @@ Azure Rights Management 서비스를 사용하여 문서 및 메일을 보호할
 
 레이블을 할당하는 경우:
 
-- Azure AD에서 어떤 유형의 그룹이든 사용해서 그룹 구성원에게 추가 레이블을 할당하는, 범위가 지정된 정책을 구성할 수 있습니다.
+- 그룹 구성원에 추가 레이블을 할당하는 범위 지정 정책을 구성하려면 Azure AD에서 사용자의 테넌트에 대한 확인된 도메인이 포함된 메일 주소를 가진 모든 유형의 그룹을 사용할 수 있습니다. 메일 주소가 있는 그룹을 메일 사용이 가능한 그룹이라고도 합니다.
+    
+    예를 들어, 메일 사용이 가능한 보안 그룹, 메일 그룹(정적 또는 동적) 및 Office 365 그룹을 사용할 수 있습니다. 보안 그룹(동적 또는 정적) 유형은 메일 주소가 없으므로 사용할 수 없습니다.
 
 사용 권한 및 액세스 제어 할당의 경우:
 
 - Azure AD에서 사용자의 테넌트에 대한 확인된 도메인이 포함된 이메일 주소를 가진 모든 유형의 그룹을 사용할 수 있습니다. 메일 주소가 있는 그룹을 메일 사용이 가능한 그룹이라고도 합니다. 
-    
-    예를 들어, 메일 사용이 가능한 보안 그룹, 메일 그룹(정적 또는 동적) 및 Office 365 그룹을 사용할 수 있습니다. 보안 그룹(동적 또는 정적) 유형은 메일 주소가 없으므로 사용할 수 없습니다.
 
 Azure Rights Management 서비스를 구성하는 경우:
 
@@ -193,7 +193,7 @@ Azure Information Protection에 사용할 그룹이 표시되어 있는지 확�
 
 ## <a name="group-membership-caching-by-azure-rights-management"></a>Azure Rights Management에 의한 그룹 구성원 자격 캐싱
 
-성능상의 이유로 Azure Rights Management 서비스에서 그룹 구성원이 캐시됩니다. 즉, Azure AD에 있는 그룹 구성원 자격을 Azure Rights Management에서 사용하는 경우, 변경 내용이 적용되는 데 최대 3시간이 걸릴 수 있으며 이 시간은 변경될 수 있습니다. 
+성능상의 이유로 Azure Rights Management 서비스에서 그룹 구성원이 캐시됩니다. 즉, Azure AD에 있는 그룹 멤버 자격을 Azure Rights Management에서 사용하는 경우, 변경 내용이 적용되는 데 최대 3시간이 걸릴 수 있으며 이 시간은 변경될 수 있습니다. 
 
 Azure Rights Management 서비스 구성이나 사용 권한 할당과 같이, Azure Rights Management에 그룹을 사용하는 경우는 모든 변경이나 테스트에서 이러한 지연을 고려해야 합니다. 
 

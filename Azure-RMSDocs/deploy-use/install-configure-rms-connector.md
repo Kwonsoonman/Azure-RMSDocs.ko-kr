@@ -4,7 +4,7 @@ description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d03cb1ff146839e4de805b66f5b2e6a3df851430
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: e3444ee0812d54988ad12461e0f492fe07637209
+ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/11/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
 
@@ -55,7 +55,7 @@ ms.lasthandoff: 06/30/2017
 ## <a name="entering-credentials"></a>자격 증명 입력
 RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있는 권한이 있는 계정의 자격 증명을 입력해야 합니다. 예를 들면 **admin@contoso.com**을 입력한 다음 이 계정에 대한 암호를 지정할 수 있습니다.
 
-이 암호에 대한 몇 가지 문자 제한이 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도, “RMS 커넥터에 대한 인증에 실패하고 **사용자 이름과 암호 조합이 잘못되었습니다.**”라는 오류 메시지가 표시됩니다. 이 사항을 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나, 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
+커넥터에서 MFA를 지원하지 않으므로 이 계정은 MFA(다단계 인증)를 요구하지 않아야 합니다. 커넥터에는 이 암호에 대한 몇 가지 문자 제한도 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증에 실패하고 **사용자 이름과 암호 조합이 잘못되었습니다.**라는 오류 메시지가 표시됩니다. 이 시나리오를 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
 
 또한 [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구현한 경우 지정한 계정이 콘텐츠를 보호할 수 있어야 합니다. 예를 들어 "IT department" 그룹에 콘텐츠를 보호하는 기능을 제한한 경우 여기서 지정한 계정은 해당 그룹의 구성원이어야 합니다. 그렇지 않으면 다음과 같은 오류 메시지가 표시됩니다. **관리 서비스 및 조직의 위치를 검색하려는 시도가 실패했습니다. 조직에 Microsoft Rights Management 서비스를 사용할 수 있는지 확인합니다.**
 
@@ -122,9 +122,9 @@ RMS 커넥터를 제거해야 할 경우 마법사를 다시 실행하고 제거
 
 이러한 서버에 권한을 부여할 때 다음 고려 사항에 주의하세요.
 
--   추가하는 서버에는 특수 권한이 부여됩니다. 커넥터 구성에서 Exchange Server 역할에 지정하는 모든 계정에 Azure RMS의 [슈퍼 사용자 역할](configure-super-users.md) 권한을 부여하며 RMS 테넌트에 대해 모든 콘텐츠를 액세스할 수 있도록 합니다. 이 시점에 필요한 경우 슈퍼 사용자 기능이 자동으로 설정됩니다. 권한 상승으로 인한 보안 위험을 방지하려면 조직의 Exchange Server에서 사용되는 계정을 지정하지 않도록 조심하세요. SharePoint Server 또는 FCI를 사용하는 파일 서버로 구성되는 모든 서버에는 일반 사용자 권한이 부여됩니다.
+- 추가하는 서버에는 특수 권한이 부여됩니다. 커넥터 구성에서 Exchange Server 역할에 지정하는 모든 계정에 Azure RMS의 [슈퍼 사용자 역할](configure-super-users.md) 권한을 부여하며 이 RMS 테넌트에 대한 모든 콘텐츠를 액세스할 수 있도록 합니다. 이 시점에 필요한 경우 슈퍼 사용자 기능이 자동으로 설정됩니다. 권한 상승으로 인한 보안 위험을 방지하려면 조직의 Exchange Server에서 사용되는 계정을 지정하지 않도록 조심하세요. SharePoint Server 또는 FCI를 사용하는 파일 서버로 구성되는 모든 서버에는 일반 사용자 권한이 부여됩니다.
 
--   Active Directory 보안 또는 메일 그룹이나 둘 이상의 서버에서 사용되는 서비스 계정을 지정하여 여러 서버를 단일 항목으로 추가할 수 있습니다. 이 구성을 사용할 경우 서버 그룹에서 동일한 RMS 인증서를 공유하고 이 서버 그룹에 속한 서버는 모두 이 서버 그룹의 특정 서버가 보호하는 콘텐츠의 소유자로 간주됩니다. 관리 오버헤드를 최소화하기 위해서는 조직의 Exchange Server 또는 SharePoint Server 팜에 권한을 부여하는 데 개별 서버가 아니라 이 단일 그룹 구성을 사용하는 것이 좋습니다.
+- Active Directory 보안 또는 메일 그룹이나 둘 이상의 서버에서 사용되는 서비스 계정을 지정하여 여러 서버를 단일 항목으로 추가할 수 있습니다. 이 구성을 사용할 경우 서버 그룹에서 동일한 RMS 인증서를 공유하고 이 서버 그룹에 속한 서버는 모두 이 서버 그룹의 특정 서버가 보호하는 콘텐츠의 소유자로 간주됩니다. 관리 오버헤드를 최소화하기 위해서는 조직의 Exchange Server 또는 SharePoint Server 팜에 권한을 부여하는 데 개별 서버가 아니라 이 단일 그룹 구성을 사용하는 것이 좋습니다.
 
 **커넥터를 사용할 수 있는 서버** 페이지에서 **추가**를 클릭합니다.
 
@@ -197,7 +197,7 @@ HTTPS 옵션을 사용하는 경우 커넥터를 실행하는 모든 서버에 E
 >
 > -   AD CS(Active Directory 인증서 서비스) 및 엔터프라이즈 CA(인증 기관)를 사용하여 이러한 서버 인증 인증서를 배포하는 경우 인증서를 복제한 후 웹 서버 인증서 템플릿을 사용할 수 있습니다. 이 인증서 템플릿에서는 인증서 주체 이름에 **요청에서 제공** 을 사용합니다. 즉, 인증서 요청 시 인증서 주체 이름 또는 주체 대체 이름에 RMS 커넥터 이름의 FQDN을 입력할 수 있습니다.
 > -   독립 CA를 사용하거나 다른 회사에서 이 인증서를 구입하는 경우에는 TechNet의 [웹 서버(IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 문서 라이브러리에서 [인터넷 서버 인증서 구성(IIS 7)](http://technet.microsoft.com/library/cc731977%28v=ws.10%29.aspx)을 참조하세요.
-> -   인증서를 사용하도록 IIS를 구성하려면 TechNet의 [웹 서버(IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx) 문서 라이브러리에서 [사이트에 바인딩 추가(IIS 7)](http://technet.microsoft.com/library/cc731692.aspx)를 참조하세요.
+> -   인증서를 사용하도록 IIS를 구성하려면 TechNet의 [Web Server (IIS)](http://technet.microsoft.com/library/cc753433%28v=ws.10%29.aspx)(웹 서버(IIS)) 문서 라이브러리에서 [Add a Binding to a Site (IIS 7)](http://technet.microsoft.com/library/cc731692.aspx)(사이트에 바인딩 추가(IIS 7))를 참조하세요.
 
 ## <a name="configuring-the-rms-connector-for-a-web-proxy-server"></a>웹 프록시 서버에 대해 RMS 커넥터 구성
 커넥터 서버가 직접 인터넷에 연결되어 있지 않은 네트워크에 설치되어 있고 아웃바운드 인터넷 액세스를 위해 웹 프록시 서버를 수동으로 구성해야 하는 경우 이러한 RMS 커넥터용 서버에서 레지스트리를 구성해야 합니다.

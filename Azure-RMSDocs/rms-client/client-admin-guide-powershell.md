@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/06/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e39097a4786ddd71082eda4a5b445b3fb682f6b7
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2f8ad221d1193f5a6f40cc773548b9342ffd6659
+ms.sourcegitcommit: 0fd2e63822280ec96ab957e22868c63de9ef3d47
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/18/2017
 ---
-# Azure Information Protection 클라이언트에서 PowerShell 사용
-<a id="using-powershell-with-the-azure-information-protection-client" class="xliff"></a>
+# <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Azure Information Protection 클라이언트를 설치하면 자동화에 대한 스크립트에 추가할 수 있는 명령을 실행하여 클라이언트를 관리할 수 있도록 PowerShell 명령이 자동으로 설치됩니다.
 
-cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩니다. 이 모듈은 RMS 보호 도구와 함께 설치된 RMSProtection 모듈을 대신합니다. Azure Information Protection 클라이언트를 설치할 때 RMSProtection 도구를 설치하면 RMSProtection 모듈이 자동으로 제거됩니다.
+cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩니다. 이 모듈은 RMS 보호 도구와 함께 설치되는 RMSProtection 모듈을 대체합니다. Azure Information Protection 클라이언트를 설치할 때 RMSProtection 도구를 설치하면 RMSProtection 모듈이 자동으로 제거됩니다.
 
 AzureInformationProtection 모듈에는 RMS 보호 도구의 모든 Rights Management cmdlet과 레이블을 지정하기 위해 AIP(Azure Information Protection) 서비스를 사용하는 3개의 새로운 cmdlet이 포함됩니다.
 
@@ -57,14 +56,12 @@ RMSProtection 모듈과 마찬가지로 AzureInformationProtection 모듈의 현
     - Azure Rights Management의 온-프레미스 버전인 AD RMS(Active Directory Rights Management Services)와 함께 보호만을 사용하는 경우 적용 가능
 
 
-## Azure Information Protection 서비스 및 Azure Rights Management 서비스
-<a id="azure-information-protection-service-and-azure-rights-management-service" class="xliff"></a>
+## <a name="azure-information-protection-service-and-azure-rights-management-service"></a>Azure Information Protection 서비스 및 Azure Rights Management 서비스
 
 조직에서 Azure Information Protection 및 Azure Rights Management 데이터 보호 서비스를 사용하는 경우나 Azure Rights Management 서비스만 사용하는 경우 먼저 이 섹션을 읽은 다음 PowerShell 명령 사용을 시작하세요.
 
 
-### 전제 조건
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>필수 구성 요소
 
 AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 외에, Azure Information Protection 서비스 및 Azure Rights Management 데이터 보호 서비스에 대한 추가적인 필수 구성 요소가 있습니다.
 
@@ -82,22 +79,19 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
     
     - 서비스에 인증할 레지스트리를 편집합니다.
 
-#### 필수 구성 요소 1: Azure Rights Management 서비스가 활성화되어야 함
-<a id="prerequisite-1-the-azure-rights-management-service-must-be-activated" class="xliff"></a>
+#### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>필수 구성 요소 1: Azure Rights Management 서비스가 활성화되어야 함
 
 레이블을 사용하여 데이터 보호를 적용하는 경우와 Azure Rights Management에 직접 연결하여 데이터 보호를 적용하는 경우 모두 이 필수 조건이 적용됩니다.
 
 Azure Information Protection 테넌트가 활성화되지 않은 경우 [Azure Rights Management 활성화](../deploy-use/activate-service.md)에 대한 지침을 참조하세요.
 
-#### 필수 구성 요소 2: 여러분의 계정을 사용하는 다른 사람을 위해 파일에서 보호 제거
-<a id="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account" class="xliff"></a>
+#### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>필수 구성 요소 2: 여러분의 계정을 사용하는 다른 사람을 위해 파일에서 보호 제거
 
 다른 사용자를 위해 파일에서 보호를 제거하기 위한 일반적인 시나리오에는 데이터 검색 또는 데이터 복구가 포함됩니다. 레이블을 사용하여 보호를 적용하는 경우 보호를 적용하지 않는 새 레이블을 설정하거나 레이블을 제거하여 보호를 제거할 수 있습니다. 하지만 Azure Rights Management 서비스에 직접 연결하여 보호를 제거할 가능성이 높습니다.
 
 파일에서 보호를 제거할 수 있는 Rights Management 사용 권한이 있거나 슈퍼 사용자여야 합니다. 데이터 검색 또는 데이터 복구의 경우 일반적으로 슈퍼 사용자 기능이 사용됩니다. 이 기능을 사용하도록 설정하고 사용자 계정을 슈퍼 사용자로 구성하려면 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
 
-#### 필수 구성 요소 3: 사용자 개입 없이 파일 보호 또는 보호 해제
-<a id="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction" class="xliff"></a>
+#### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>필수 구성 요소 3: 사용자 개입 없이 파일 보호 또는 보호 해제
 
 현재 비대화형으로 레이블을 적용할 수 없으나 비대화형으로 Azure Rights Management 서비스에 직접 연결하여 파일을 보호하거나 보호를 해제할 수 있습니다.
 
@@ -111,8 +105,7 @@ Azure Rights Management 서비스에 비대화형으로 연결할 때는 서비�
 
 다음 섹션에서는 이러한 식별자를 가져오는 방법을 설명합니다.
 
-##### BposTenantId를 가져오려면
-<a id="to-get-the-bpostenantid" class="xliff"></a>
+##### <a name="to-get-the-bpostenantid"></a>BposTenantId를 가져오려면
 
 Azure RMS Windows PowerShell 모듈에서 Get-AadrmConfiguration cmdlet을 실행합니다.
 
@@ -146,8 +139,7 @@ Azure RMS Windows PowerShell 모듈에서 Get-AadrmConfiguration cmdlet을 실�
     
         Disconnect-AadrmService
 
-##### AppPrincipalId 및 대칭 키를 가져오려면
-<a id="to-get-the-appprincipalid-and-symmetric-key" class="xliff"></a>
+##### <a name="to-get-the-appprincipalid-and-symmetric-key"></a>AppPrincipalId 및 대칭 키를 가져오려면
 
 Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServicePrincipal` cmdlet을 실행하여 새 서비스 주체를 만들고 다음 지침을 사용합니다. 
 
@@ -193,7 +185,7 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
 5. 이 출력에서 대칭 키 및 AppPrincialId를 적어둡니다.
 
-    나중에는 대칭 키를 완전히 검색할 수 없으며, 이 키를 모르면 다음에 Azure Rights Management 서비스에서 인증을 받아야 할 경우 서비스 사용자를 새로 만들어야 하므로 대칭 키 사본을 만드는 것이 특히 중요합니다.
+    나중에는 대칭 키를 완전히 검색할 수 없으며, 이 키를 모르면 다음에 Azure Rights Management 서비스에서 인증을 받아야 할 경우 서비스 사용자를 새로 만들어야 하므로 대칭 키 사본을 만드는 것이 중요합니다.
 
 이러한 지침 및 예제를 보면 Set-RMSServerAuthentication을 실행하는 데 다음과 같은 세 가지 식별자가 필요합니다.
 
@@ -216,8 +208,7 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 > [!NOTE]
 > 자체 계정을 사용하여 Azure Rights Management 서비스에서 인증을 받으려면 파일을 보호하거나 보호를 해제하거나, 템플릿을 가져오기 전에 Set-RMSServerAuthentication을 실행할 필요가 없습니다.
 
-#### 필수 구성 요소 4: 북미 이외의 지역
-<a id="prerequisite-4-for-regions-outside-north-america" class="xliff"></a>
+#### <a name="prerequisite-4-for-regions-outside-north-america"></a>필수 구성 요소 4: 북미 이외의 지역
 
 Azure North America 지역 외에서 인증을 받으려면 레지스트리를 다음과 같이 편집해야 합니다. Azure Information Protection 테넌트가 북미 지역에 있으면 이 단계를 수행하지 마세요.
 
@@ -237,8 +228,7 @@ Azure North America 지역 외에서 인증을 받으려면 레지스트리를 �
 
 5. 레지스트리 편집기를 닫습니다. 컴퓨터를 다시 시작할 필요는 없습니다. 그러나 사용자 고유의 사용자 계정이 아닌 서비스 사용자 계정을 사용하는 경우 이 레지스트리 편집을 수행한 후 Set-RMSServerAuthentication 명령을 실행해야 합니다.
 
-### Azure Information protection 및 Azure Rights Management 서비스에 대한 cmdlet 사용 예제 시나리오
-<a id="example-scenarios-for-using-the-cmdlets-for-azure-information-protection-and-the-azure-rights-management-service" class="xliff"></a>
+### <a name="example-scenarios-for-using-the-cmdlets-for-azure-information-protection-and-the-azure-rights-management-service"></a>Azure Information protection 및 Azure Rights Management 서비스에 대한 cmdlet 사용 예제 시나리오
 
 레이블을 사용하여 파일을 분류하고 보고하는 것이 좀 더 효율적입니다. 단독으로 또는 함께 실행할 수 있는 [Get-AIPFileStatus](/powershell/azureinformationprotection/vlatest/get-aipfilestatus) 및 [Set-AIPFileLabel](/powershell/azureinformationprotection/vlatest/set-aipfilelabel)의 두 cmdlet만 필요하기 때문입니다. 자세한 내용 및 예제를 보려면 이 cmdlet에 대한 도움말을 사용하세요.
 
@@ -318,14 +308,12 @@ Set-RMSServerAuthentication 명령을 실행하지 않은 경우 자체 사용�
 
 Rights Management 템플릿이 변경되면 `Get-RMSTemplate -force`를 사용하여 다시 다운로드해야 합니다. 
 
-## Active Directory Rights Management Services
-<a id="active-directory-rights-management-services" class="xliff"></a>
+## <a name="active-directory-rights-management-services"></a>Active Directory Rights Management Services
 
 조직에서 Active Directory Rights Management Services만 사용할 경우 PowerShell 명령을 사용하여 파일을 보호하거나 보호를 해제하려면 먼저 이 섹션을 읽어보세요.
 
 
-### 전제 조건
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>전제 조건
 
 AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 외에도 사용자 계정에는 ServerCertification.asmx에 액세스하기 위한 읽기 및 실행 권한이 있어야 합니다.
 
@@ -349,8 +337,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 10.**확인**을 두 번 차례로 클릭합니다.
 
-### Active Directory Rights Management Services에 대한 cmdlet 사용의 예제 시나리오
-<a id="example-scenarios-for-using-the-cmdlets-for-active-directory-rights-management-services" class="xliff"></a>
+### <a name="example-scenarios-for-using-the-cmdlets-for-active-directory-rights-management-services"></a>Active Directory Rights Management Services에 대한 cmdlet 사용의 예제 시나리오
 
 이러한 cmdlet에 대한 일반적인 시나리오는 권한 정책 템플릿을 사용하여 폴더의 모든 파일을 보호하거나 파일 보호를 해제하는 것입니다. 
 
@@ -433,12 +420,67 @@ RMS 보호를 적용한 후에 파일 이름 확장명이 변경되지 않으면
     ---------                             -------------
     C:\Test.docx                          C:\Test.docx
 
+## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>Azure Information Protection에 대해 비대화형으로 파일에 레이블을 지정하는 방법
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
-PowerShell 세션을 사용할 때 cmdlet 도움말을 보려면 Get-Help <cmdlet name> cmdlet을 사용합니다. 여기서 <cmdlet name>은 알아보려는 cmdlet의 이름입니다. 예를 들면 다음과 같습니다. 
+Azure Information Protection 클라이언트 버전 1.8.41.0(현재 미리 보기)부터 **Set-AIPAuthentication** cmdlet을 사용하여 비대화형으로 레이블링 cmdlet을 실행할 수 있습니다.
 
-    Get-Help Get-RMSTemplate
+기본적으로 레이블 지정에 대한 cmdlet을 실행하는 경우 명령이 대화형 PowerShell 세션의 자체적인 사용자 컨텍스트에서 실행됩니다. 무인으로 실행하려면 이 용도에 맞는 Azure AD 사용자 계정을 새로 만듭니다. 그런 다음 해당 사용자의 컨텍스트에서 Set-AIPAuthentication cmdlet을 설정하여 Azure AD의 액세스 토큰으로 자격 증명을 설정 및 저장합니다. 그런 후 이 사용자 계정이 Azure Rights Management 서비스에 대해 인증되고 부트스트랩됩니다. 이 계정은 레이블이 사용하는 Azure Information Protection 정책 및 모든 Rights Management 템플릿을 다운로드합니다.
+
+이 cmdlet을 처음 실행하면 Azure Information Protection에 로그인하라는 메시지가 표시됩니다. 무인 사용자에 대해 만든 사용자 계정 이름 및 암호를 지정합니다. 그러면 이 계정은 인증 토큰이 만료될 때까지 레이블링 cmdlet을 비대화형으로 실행할 수 있습니다. 토큰이 만료되면 이 cmdlet을 다시 실행하여 새 토큰을 획득합니다.
+
+매개 변수 없이 이 cmdlet을 실행하는 경우 계정은 90일 동안 또는 암호가 만료될 때까지 유효한 액세스 토큰을 획득합니다.  
+
+액세스 토큰이 만료되는 시기를 제어하려면 매개 변수를 지정하여 이 cmdlet을 실행합니다. 이렇게 하면 액세스 토큰을 1년 또는 2년용 구성하거나 절대 만료되지 않도록 구성할 수 있습니다. 이 구성을 사용하려면 Azure Active Directory에 2개의 응용 프로그램인 **웹앱/API** 응용 프로그램 및 **네이티브 응용 프로그램**이 등록되어야 합니다. 이 cmdlet용 매개 변수는 이러한 응용 프로그램의 값을 사용합니다.
+
+이 cmdlet을 실행한 후에는 만든 사용자 계정의 컨텍스트에서 레이블링 cmdlet을 실행할 수 있습니다. 둘 이상의 계정을 사용하려는 경우 각 계정은 Azure AD에 자체 응용 프로그램이 등록되어야 하므로 각 계정에 대해 이 cmdlet을 실행해야 합니다.
+
+### <a name="to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication"></a>Set-AIPAuthentication에 대해 Azure AD 응용 프로그램을 만들고 구성하려면
+
+1. 새 브라우저 창에서 [Azure Portal](https://portal.azure.com/)에 로그인합니다.
+
+2. Azure Information Protection을 사용할 Azure AD 테넌트에 대해 **Azure Active Directory** > **앱 등록**으로 이동합니다. 
+
+3. **새 응용 프로그램 등록**을 선택하여 웹앱/API 응용 프로그램을 만듭니다. **만들기** 레이블에서 다음 값을 지정하고 **만들기**를 클릭합니다.
+    
+    - 이름: **AIPOnBehalfOf**
+    
+    - 응용 프로그램 유형: **웹앱/API**
+    
+    - 로그온 URL: **http://localhost**
+    
+4. 방금 만든 응용 프로그램 **AIPOnBehalfOf**를 선택하고 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다. 
+    
+    이 값은 Set-AIPAuthentication cmdlet을 실행할 때 `WebAppId` 매개 변수에 사용됩니다.
+
+5. **설정** 블레이드에서 **키**를 선택합니다. 설명을 지정하고 기간(1년, 2년 또는 만료되지 않음)을 선택하여 새 키를 추가합니다. 그런 다음 **저장**을 선택하고 표시되는 **값**에 대한 문자열을 복사합니다. 이 문자열은 다시 표시되지 않으며 검색도 불가능하므로 반드시 저장해야 합니다.
+    
+    이 값은 Set-AIPAuthentication cmdlet을 실행할 때 `WebAppKey` 매개 변수에 사용됩니다.
+
+6. **앱 등록** 블레이드로 돌아가 **새 응용 프로그램 등록**을 선택하여 네이티브 응용 프로그램을 만듭니다. **만들기** 레이블에서 다음 값을 지정하고 **만들기**를 클릭합니다.
+    
+    - 이름: **AIPClient**
+    
+    - 응용 프로그램 유형: **네이티브**
+    
+    - 로그온 URL: **http://localhost**
+
+7. 방금 만든 응용 프로그램 **AIPClient**를 선택하고 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다.
+    
+    이 값은 Set-AIPAuthentication cmdlet을 실행할 때 `NativeAppId` 매개 변수에 사용됩니다.
+
+8. **설정** 블레이드에서 **필요한 권한**을 선택합니다. 
+
+9. **필요한 권한** 블레이드에서 **추가**를 클릭하고 **API 선택**을 클릭합니다. 검색 상자에 **AIPOnBehalfOf**를 입력합니다. 목록 상자에서 이 값을 선택한 다음 **선택**을 클릭합니다.
+
+10. **액세스 사용** 블레이드에서 **AIPOnBehalfOf**를 선택하고 **선택**을 클릭한 후 **완료**를 클릭합니다.
+    
+    이제 두 앱의 구성을 완료했으며 매개 변수를 사용하여 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)을 실행하는 데 필요한 값이 구성되었습니다.
+
+
+## <a name="next-steps"></a>다음 단계
+PowerShell 세션에 있는 경우에 cmdlet 도움말을 보려면 `Get-Help <cmdlet name> cmdlet`을 입력하고 -online 매개 변수를 사용하 여 가장 최신 정보를 읽어보세요. 예를 들면 다음과 같습니다. 
+
+    Get-Help Get-RMSTemplate -online
 
 Azure Information Protection 클라이언트를 지원하는 데 필요할 수 있는 추가 정보는 다음을 참조하세요.
 

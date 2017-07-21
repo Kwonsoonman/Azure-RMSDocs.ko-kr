@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 74c0725857148fe12943bd9368173124cb059dcf
-ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
+ms.openlocfilehash: 2a41876a8c307b0736901de895e10cf3d3201809
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -65,7 +65,7 @@ MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 �
 
 - Windows Server 2008 R2 
 
-나열된 서버 버전의 경우 Azure Information Protection 클라이언트가 원격 데스크톱 서비스에 대해 지원됩니다. 원격 데스크톱 서비스와 함께 Azure Information Protection 클라이언트를 사용할 때 사용자 프로필을 삭제하는 경우 **%LocalAppData%\Roaming\Microsoft\Protect** 폴더는 삭제하지 마세요.
+나열된 서버 버전의 경우 Azure Information Protection 클라이언트가 원격 데스크톱 서비스에 대해 지원됩니다. 원격 데스크톱 서비스와 함께 Azure Information Protection 클라이언트를 사용할 때 사용자 프로필을 삭제하는 경우 **%Appdata%\Microsoft\Protect** 폴더는 삭제하지 마세요.
 
 Azure Information Protection 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 [동일한 장치](requirements-client-devices.md)에서 이 데이터를 사용할 수 있습니다.
 

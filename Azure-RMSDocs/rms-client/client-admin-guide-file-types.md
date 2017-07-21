@@ -12,16 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4f187b3fa991fb4ed3a11ded34fa663dc6b4bafc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: cf36e96ff7399188818ef0afdbefc223a82b9900
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/17/2017
 ---
-# Azure Information Protection 클라이언트에서 지원하는 파일 형식
-<a id="file-types-supported-by-the-azure-information-protection-client" class="xliff"></a>
+# <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Azure Information Protection 클라이언트는 문서 및 전자 메일에 다음을 적용할 수 있습니다.
 
@@ -33,8 +32,7 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 
 다음 정보를 사용하여 지원되는 파일 형식, 다양한 보호 수준과 기본 보호 수준을 변경하는 방법, 분류 및 보호에서 자동으로 제외되는(건너뜀) 파일을 확인할 수 있습니다.
 
-## 분류만 지원되는 파일 형식
-<a id="file-types-supported-for-classification-only" class="xliff"></a>
+## <a name="file-types-supported-for-classification-only"></a>분류만 지원되는 파일 형식
 
 다음 파일 형식의 경우 분류만 지원됩니다. 추가 파일 형식은 보호되는 경우에도 분류를 지원합니다([분류 및 보호가 지원되는 파일 형식](#supported-file-types-for-classification-and-protection) 섹션 참조).
 
@@ -59,8 +57,7 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 
 - **디지털 네거티브**: .dng
 
-## 보호가 지원되는 파일 형식
-<a id="file-types-supported-for-protection" class="xliff"></a>
+## <a name="file-types-supported-for-protection"></a>보호가 지원되는 파일 형식
 
 Azure Information Protection 클라이언트는 다음 표에서 설명하는 것처럼 각기 다른 두 수준의 보호를 지원합니다.
 
@@ -74,8 +71,7 @@ Azure Information Protection 클라이언트가 적용하는 기본 보호 수�
 
 관리자가 구성한 레이블을 선택할 때 이 데이터 보호를 자동으로 적용할 수도 있고, [권한 수준](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels)을 사용하여 사용자 보호 설정을 직접 지정할 수도 있습니다. 
 
-### 보호가 지원되는 파일 크기
-<a id="file-sizes-supported-for-protection" class="xliff"></a>
+### <a name="file-sizes-supported-for-protection"></a>보호가 지원되는 파일 크기
 
 Azure Information Protection 클라이언트에서는 보호를 지원하는 최대 파일 크기가 있습니다.
 
@@ -87,10 +83,13 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
     |Excel 2007(AD RMS에서만 지원)<br /><br />Excel 2010<br /><br />Excel  2013<br /><br />Excel 2016|32비트: 2GB<br /><br />64비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한|
     |PowerPoint 2007(AD RMS에서만 지원)<br /><br />PowerPoint 2010<br /><br />PowerPoint  2013<br /><br />PowerPoint 2016|32비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한<br /><br />64비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한
 
-- **다른 모든 파일**: 1GB
+- **다른 모든 파일**:
+    
+    - 클라이언트의 일반 공급 버전: - 1GB
+    
+    - 미리 보기 클라이언트(최소 버전 **1.8.41.0**): 사용 가능한 디스크 공간 및 메모리에 의해서만 제한
 
-### 분류 및 보호가 지원되는 파일 형식
-<a id="supported-file-types-for-classification-and-protection" class="xliff"></a>
+### <a name="supported-file-types-for-classification-and-protection"></a>분류 및 보호가 지원되는 파일 형식
 
 다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 파일 형식의 하위 집합이 나와 있습니다. 
 
@@ -123,8 +122,7 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm|.pptx<br /><br />.thmx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
 
-### 파일의 기본 보호 수준 변경
-<a id="changing-the-default-protection-level-of-files" class="xliff"></a>
+### <a name="changing-the-default-protection-level-of-files"></a>파일의 기본 보호 수준 변경
 레지스트리를 편집하여 Azure Information Protection 클라이언트가 파일을 보호하는 방식을 변경할 수 있습니다. 예를 들어 기본 보호를 지원하는 파일을 Azure Information Protection 클라이언트에서 일반적으로 보호하도록 강제 지정할 수 있습니다.
 
 이러한 작업을 수행해야 하는 이유는 다음과 같습니다.
@@ -173,8 +171,7 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 자세한 내용은 개발자 지침에서 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 
 
-## Azure Information Protection 클라이언트에 의해 분류 및 보호에서 제외되는 파일 형식
-<a id="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client" class="xliff"></a>
+## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 의해 분류 및 보호에서 제외되는 파일 형식
 
 사용자가 컴퓨터 작업에 중요한 파일을 변경하지 못하게 하기 위해 일부 파일 형식 및 폴더가 분류 및 보호에서 자동으로 제외됩니다. 사용자가 이러한 파일을 분류하거나 보호하려고 하면 제외된다는 메시지가 표시됩니다.
 
@@ -187,8 +184,7 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
     - \AppData(모든 사용자용)
 
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>다음 단계
 Azure Information Protection 클라이언트에서 지원하는 파일 형식을 파악했으므로 다음에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.
 
 - [Customizations](client-admin-guide-customizations.md)(사용자 지정)

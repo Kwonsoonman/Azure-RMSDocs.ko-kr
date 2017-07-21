@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,23 +12,41 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6ab5465db1527e6236d2dca466936c36b260f03d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 5b5f8b336e1946bc4c394b9154eed50844b6b72b
+ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/18/2017
 ---
-# Azure Information Protection 클라이언트에 대한 사용자 지정 구성
-<a id="custom-configurations-for-the-azure-information-protection-client" class="xliff"></a>
+# <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
-Azure Information Protection 클라이언트를 관리할 때 특정 시나리오 또는 사용자의 하위 집합에 대해 필요할 수 있는 고급 구성을 수행할 경우 다음 정보를 사용합니다. 
+Azure Information Protection 클라이언트를 관리할 때 특정 시나리오 또는 사용자의 하위 집합에 대해 필요할 수 있는 고급 구성을 수행할 경우 다음 정보를 사용합니다.
 
-## AD RMS 전용 컴퓨터의 로그인 프롬프트 방지
-<a id="prevent-sign-in-prompts-for-ad-rms-only-computers" class="xliff"></a>
+경우에 따라 레지스트리를 편집해야 하는 설정도 있고 고급 설정을 사용해야 하는 경우도 있습니다. 고급 설정이 필요한 설정은 Azure Portal에서 구성한 후 클라이언트에서 다운로드할 수 있게 게시해야 합니다. 
 
-기본적으로 Azure Information Protection 클라이언트는 자동으로 Azure Information Protection 서비스에 연결하려 합니다. AD RMS와만 통신하는 컴퓨터의 경우는 그 때문에 불필요하게 사용자에게 로그인 프롬프트가 표시될 수 있습니다. 레지스트리를 편집하면 이 로그인 프롬프트를 방지할 수 있습니다.
+또한 일부 설정은 Azure Information Protection 클라이언트의 미리 보기 버전에서만 사용할 수 있습니다. 이러한 설정의 경우 최소 클라이언트 버전이 문서화되어 있습니다. 클라이언트의 일반 공급 버전에서 지원되는 설정 및 구성의 경우 최소 클라이언트 버전 번호가 문서화되어 있지 않습니다.
+
+### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>포털에서 고급 클라이언트 구성 설정을 구성하는 방법
+
+1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다.
+
+2. 초기 Azure Information Protection 블레이드에서 **범위 정책**을 선택합니다.
+
+3. **Azure Information Protection - 범위 정책** 블레이드에서 고급 설정을 포함할 정책 옆에 있는 상황에 맞는 메뉴(**...**)를 선택합니다. 그런 후 **고급 설정**을 선택합니다.
+    
+    범위 정책 뿐만 아니라 전역 정책에 대해 고급 설정을 구성할 수 있습니다.
+
+4. **고급 설정** 블레이드에서 고급 설정 이름 및 값을 입력한 다음 **저장 후 닫기**를 선택합니다.
+
+5. **게시**를 클릭하고 이 정책에 대한 사용자가 열어 놓은 모든 Office 응용 프로그램을 다시 시작하는지 확인합니다.
+
+6. 더 이상 해당 설정이 필요하지 않으며 기본 동작으로 되돌리려면 **고급 설정** 블레이드에서 더 이상 필요하지 않은 설정 옆에 있는 상황에 맞는 메뉴(**...**)를 선택하고 **삭제**를 선택합니다. **저장 후 닫기**를 클릭하고 수정된 정책을 다시 게시합니다.
+
+## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>AD RMS 전용 컴퓨터의 로그인 프롬프트 방지
+
+기본적으로 Azure Information Protection 클라이언트는 자동으로 Azure Information Protection 서비스에 연결하려 합니다. AD RMS와만 통신하는 컴퓨터의 경우 이 구성을 사용하면 불필요하게 사용자에게 로그인 프롬프트가 표시될 수 있습니다. 레지스트리를 편집하면 이 로그인 프롬프트를 방지할 수 있습니다.
 
 다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
 
@@ -36,14 +54,13 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 이 설정에 관계 없이 Azure Information Protection 클라이언트는 표준 [RMS 서비스 검색 프로세스](../rms-client/client-deployment-notes.md#rms-service-discovery)에 따라 AD RMS 클러스터를 찾습니다.
 
-## 다른 사용자로 로그인
-<a id="sign-in-as-a-different-user" class="xliff"></a>
+## <a name="sign-in-as-a-different-user"></a>다른 사용자로 로그인
 
-프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 여러 테넌트가 있는 경우에는 관리자로서 그렇게 해야 할 수 있습니다. 예를 들어 조직에서 사용하는 Office 365 또는 Azure 테넌트 외에 테스트 테넌트가 있을 수 있습니다.
+프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 관리자는 다른 사용자로 로그인해야 할 수 있습니다. 예를 들어 조직이 프로덕션 환경에서 사용하는 Office 365 또는 Azure 테넌트 외에 테스트 테넌트가 있을 수 있습니다.
 
 **Microsoft Azure Information Protection** 대화 상자를 사용하여 현재 로그인한 계정을 확인할 수 있습니다. Office 응용 프로그램을 열고 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 의견**을 클릭합니다. 계정 이름은 **클라이언트 상태** 섹션에 표시됩니다.
 
-특히 관리자 계정을 사용하고 있는 경우 표시된 로그인 계정의 도메인 이름을 확인해야 합니다. 예를 들어 두 개의 다른 테넌트에 "admin" 계정이 있는 경우 로그인한 계정 이름은 올바르지만 도메인은 잘못되었음을 모르기 쉽습니다. 이로 인해 Azure Information Protection 정책을 다운로드하지 못하거나 예상한 레이블 또는 동작이 표시되지 않을 수 있습니다.
+특히 관리자 계정을 사용하고 있는 경우 표시된 로그인 계정의 도메인 이름을 확인해야 합니다. 예를 들어 두 개의 다른 테넌트에 "admin" 계정이 있는 경우 로그인한 계정 이름은 올바르지만 도메인은 잘못되었음을 모르기 쉽습니다. 잘못된 계정을 사용할 경우 Azure Information Protection 정책을 다운로드하지 못하거나 예상한 레이블 또는 동작이 표시되지 않을 수 있습니다.
 
 다른 사용자로 로그인하려면 다음과 같이 합니다.
 
@@ -55,12 +72,11 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 - Single Sign-On을 사용할 경우 Windows에서 로그아웃하고 레지스트리를 편집한 후 다른 사용자 계정으로 로그인해야 합니다. Azure Information Protection 클라이언트에서는 현재 로그인한 사용자 계정을 사용하여 자동으로 인증합니다.
 
-- Azure 권한 관리 서비스에 대한 환경을 다시 초기화(부트스트래핑이라고도 함)하려는 경우 [RMS 분석기 도구](https://www.microsoft.com/en-us/download/details.aspx?id=46437)의 **재설정** 옵션을 사용할 수 있습니다.
+- Azure Rights Management 서비스에 대한 사용자 설정을 다시 지정하려는 경우 **도움말 및 피드백** 옵션을 사용하면 됩니다.
 
 - 현재 다운로드한 Azure Information Protection 정책을 삭제하려면 **%localappdata%\Microsoft\MSIP** 폴더에서 **Policy.msip** 파일을 삭제합니다.
 
-## Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
-<a id="hide-the-classify-and-protect-menu-option-in-windows-file-explorer" class="xliff"></a>
+## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
 
 Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하는 경우 레지스트리를 편집하여 이 고급 구성을 구성할 수 있습니다. 
 
@@ -68,17 +84,61 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
 
 **HKEY_CLASSES_ROOT\AllFilesystemObjects\shell\Microsoft.Azip.RightClick\LegacyDisable**
 
-## 연결이 끊어진 컴퓨터에 대한 지원
-<a id="support-for-disconnected-computers" class="xliff"></a>
+## <a name="support-for-disconnected-computers"></a>연결이 끊어진 컴퓨터에 대한 지원
 
-기본적으로 Azure Information Protection 클라이언트는 자동으로 Azure Information Protection 서비스에 연결하여 최신Azure Information Protection 정책을 다운로드합니다. 일정 기간 동안 인터넷에 연결할 수 없는 컴퓨터를 사용하는 경우 레지스트리를 편집하여 클라이언트가 서비스에 연결하지 못하도록 할 수 있습니다. 다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
+기본적으로 Azure Information Protection 클라이언트는 자동으로 Azure Information Protection 서비스에 연결하여 최신Azure Information Protection 정책을 다운로드합니다. 일정 기간 동안 인터넷에 연결할 수 없는 컴퓨터를 사용하는 경우 레지스트리를 편집하여 클라이언트가 서비스에 연결하지 못하도록 할 수 있습니다. 
+
+다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
 클라이언트의 **%localappdata%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 이름의 유효한 정책 파일이 있는지 확인합니다. 필요한 경우 Azure 포털에서 정책을 내보낼 수 있으며 클라이언트 컴퓨터에 내보내기된 파일을 복사할 수 있습니다. 또한 이러한 방법을 통해 오래된 정책 파일을 게시된 최신 정책으로 바꿀 수 있습니다.
 
-## 모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
-<a id="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution" class="xliff"></a>
+## <a name="hide-the-do-not-forward-button-in-outlook"></a>Outlook에서 전달 금지 단추 숨기기
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이 설정에는 **1.8.41.0** 이상 버전을 갖는 Azure Information Protection 클라이언트 미리 보기 버전도 필요합니다.
+
+이 설정을 구성하는 경우 Outlook의 리본에서 **전달 금지** 단추가 숨겨집니다. Office 메뉴에서는 이 옵션이 숨겨지지 않습니다.
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **DisableDNF**
+
+- 값: **True**
+
+## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>사용자 지정 권한 옵션을 사용자가 사용할 수 없음
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+이 설정을 구성하고 사용자에게 정책을 게시하는 경우 사용자는 다음 위치의 사용자 지정 권한 옵션을 선택할 수 없게 됩니다.
+
+- Office 응용 프로그램: **홈** 탭 > **보호** 그룹 > **보호** > **사용자 지정 권한**
+
+- 파일 탐색기: 마우스 오른쪽 단추 클릭 > **분류 및 보호** > **사용자 지정 권한**
+
+이 설정은 Office 메뉴 옵션에서 구성할 수 있는 사용자 지정 권한에는 적용되지 않습니다. 
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **EnableCustomPermissions**
+
+- 값: **False**
+
+## <a name="permanently-hide-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 영구적으로 숨기기
+
+이 구성에서는 Azure Portal에서 구성해야 하는 고급 설정을 사용합니다. 이 설정에는 **1.9.58.0** 이상 버전을 갖는 Azure Information Protection 클라이언트 미리 보기 버전도 필요합니다.
+
+사용자를 위해 이 설정을 구성하고 정책을 게시하며, 사용자가 Office 응용 프로그램에 Azure Information Protection 표시줄을 표시하지 않도록 선택하는 경우 이 표시줄은 숨겨진 상태를 유지합니다. 사용자가 **홈** 탭, **보호** 그룹, **보호** 단추에서 **표시줄 표시** 옵션을 선택 취소하면 이러한 상황이 발생합니다. **이 표시줄 닫기** 아이콘을 사용하여 표시줄을 닫으면 이 설정이 아무런 영향도 미치지 않습니다.
+
+Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 권장되는 분류를 구성했거나 문서 또는 전자 메일에 레이블이 필요한 경우 일시적으로 표시되는 표시줄에서 레이블을 계속 선택할 수 있습니다. 이 설정은 수동 또는 자동 분류, 기본 레이블 설정과 같이 사용자 또는 다른 사용자가 구성하는 레이블에도 영향을 주지 않습니다.
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **EnableBarHiding**
+
+- 값: **True**
+
+## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
 
 웹용 Outlook에서는 아직 기본적으로 Azure Information Protection 분류 및 보호를 지원하지 않지만 Exchange 메시지 분류를 사용하여 Azure Information Protection 레이블을 모바일 사용자로 확장할 수 있습니다.
 
@@ -96,24 +156,23 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
     
     ![특정 Azure Information Protection 레이블에 대한 메시지 헤더를 설정하는 Exchange Online 전송 규칙 예제](../media/exchange-rule-for-message-header.png)
 
-이를 테스트하기 전에 전송 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 규칙이 적용되면 사용자가 Rights Management 보호를 지원하는 모바일 장치 클라이언트 또는 웹용 Outlook을 사용할 때 다음과 같은 과정이 진행됩니다. 
+이 구성을 테스트하기 전에 전송 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 규칙이 적용되면 사용자가 Rights Management 보호를 지원하는 모바일 장치 클라이언트 또는 웹용 Outlook을 사용할 때 다음과 같은 이벤트가 진행됩니다. 
 
 - 사용자가 Exchange 메시지 분류를 선택하고 전자 메일을 보냅니다.
 
 - Exchange 규칙이 Exchange 분류를 검색한 다음 그에 따라 메시지 헤더를 수정하여 Azure Information Protection 분류를 추가합니다.
 
-- Azure Information Protection 클라이언트를 실행 중인 받는 사람이 Outlook에서 전자 메일을 볼 때 할당된 Azure Information Protection 레이블과 그에 해당하는 전자 메일 머리글, 바닥글 또는 워터마크가 표시됩니다. 
+- 받는 사람이 Outlook에서 전자 메일을 보며 Azure Information Protection 클라이언트를 설치한 경우 할당된 Azure Information Protection 레이블과 그에 해당하는 전자 메일 머리글, 바닥글 또는 워터마크가 표시됩니다. 
 
 Azure Information Protection 레이블이 권한 관리 보호를 적용하는 경우에는 메시지 보안을 수정하는 옵션을 선택하여 규칙 구성에 권한 관리 보호를 추가하고, 권한 보호를 적용한 후에 RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
 
-역방향 매핑을 수행하는 전송 규칙을 구성할 수도 있습니다. Azure Information Protection 레이블이 검색되면 해당 Exchange 메시지 분류를 설정합니다. 이렇게 하려면 다음을 수행합니다.
+또한 역방향 매핑을 수행하도록 전송 규칙을 구성할 수 있습니다. Azure Information Protection 레이블이 검색되면 해당 Exchange 메시지 분류를 설정합니다.
 
 - 각 Azure Information Protection 레이블에 대해 **msip_labels** 헤더에 레이블의 이름(예: **General**)이 포함될 때 적용되는 전송 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
 
 
-## 다음 단계
-<a id="next-steps" class="xliff"></a>
-Azure Information Protection 클라이언트를 사용자 지정했으므로 다음에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.
+## <a name="next-steps"></a>다음 단계
+Azure Information Protection 클라이언트를 사용자 지정했으므로 다음 리소스에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.
 
 - [클라이언트 파일 및 사용 현황 로깅](client-admin-guide-files-and-logging.md)
 

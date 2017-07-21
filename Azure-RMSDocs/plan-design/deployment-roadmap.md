@@ -4,7 +4,7 @@ description: "다음 단계에 따라 조직에 대해 Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 52a99ee84f00588aed2ad332e3f46e3f1f9ae97c
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 54f72dad3f7dbc259df602f0f613124c46ce5846
+ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure Information Protection 배포 로드맵
 
@@ -98,7 +98,7 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
     
     하나 이상의 레이블에 Rights Management 보호를 적용하도록 Azure Information Protection 정책을 수정합니다. 자세한 내용은 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](../deploy-use/configure-policy-protection.md)을 참조하세요.
     
-    사용자가 Outlook에서 레이블을 적용하여 Exchange에서 IRM(정보 권한 관리)이 구성되지 않은 경우에도 Rights Management 보호를 적용할 수 있습니다. 그러나 Exchange에서 IRM을 구성할 때까지 조직에서는 Exchange를 통한 Azure Rights Management 보호의 전체 기능을 사용할 수 없습니다. 이 추가 구성은 Exchange Online에 대한 3단계와 Exchange 온-프레미스에 대한 6단계에 포함되어 있습니다. 
+    사용자가 Outlook에서 레이블을 적용하여 Exchange에서 IRM(정보 권한 관리)이 구성되지 않은 경우에도 Rights Management 보호를 적용할 수 있습니다. 그러나 Exchange에서 IRM을 구성할 때까지 조직에서는 Exchange를 통한 Azure Rights Management 보호의 전체 기능을 사용할 수 없습니다. 이 추가 구성은 다음 목록에 포함되어 있습니다(Exchange Online의 경우 2단계, Exchange 온-프레미스의 경우 5단계). 
 
 2. IRM용 Office 응용 프로그램 및 서비스 구성
     
@@ -114,9 +114,9 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 
 6. 온-프레미스 서버에 대한 커넥터 배포
     
-    Azure Rights Management 서비스에 사용하려는 온-프레미스 서비스가 있으면 Rights Management 커넥터를 설치 및 구성합니다. 자세한 내용은 [Azure Rights Management 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
+    Azure Rights Management 서비스에 사용하려는 온-프레미스 서비스가 있으면 Rights Management 커넥터를 설치 및 구성합니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
-### <a name="step-4-use-and-monitor-your-data-protection-solutions"></a>4단계: 데이터 보호 솔루션 사용 및 모니터링
+### <a name="step-6-use-and-monitor-your-data-protection-solutions"></a>6단계: 데이터 보호 솔루션 사용 및 모니터링
 이제 데이터를 보호할 준비가 되었으므로 회사에서 구성된 레이블 및 Rights Management 데이터 보호를 사용하는 방식을 로깅하세요. 이 배포 단계를 지원하기 위한 추가 정보를 보려면 다음을 참조하세요.
 
 - [사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원](../deploy-use/help-users.md)
@@ -127,7 +127,7 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 
 Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파일을 자동으로 보호하는 데 관심이 있는 경우 [Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호](../rms-client/configure-fci.md) 항목을 참조하세요.
 
-### <a name="step-5-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>5단계: 필요에 따라 테넌트 계정의 Rights Management 서비스 관리
+### <a name="step-7-administer-the-rights-management-service-for-your-tenant-account-as-needed"></a>7단계: 필요에 따라 테넌트 계정의 Rights Management 서비스 관리
 Azure Rights Management 서비스 사용을 시작하면 Windows PowerShell용을 통해 관리 변경 작업을 스크립트로 작성하거나 자동화할 수 있습니다. 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스](../deploy-use/administer-powershell.md)를 참조하세요.
 
 

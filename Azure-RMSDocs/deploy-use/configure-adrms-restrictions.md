@@ -4,17 +4,17 @@ description: "Azure Information Protection에서 HYOK(AD RMS) 보호를 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/07/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: f1ae8d75b3fd3900b7c863be332656b71c647e1f
-ms.sourcegitcommit: 834b6bcab70a185018b4876b2d24b145e5089ac4
+ms.openlocfilehash: ac4068885df92c58ecba2a90e7aa0aeaaa34e8e9
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
@@ -64,6 +64,8 @@ Azure RMS 보호를 Azure Information Protection과 사용할 경우 Azure RMS �
 - Azure RMS 보호를 위해 레이블을 구성할 때 **전달 금지** 옵션을 사용하지 마세요. 또한 사용자에게 Outlook에서 이 옵션을 수동으로 선택하지 말라고 알려줘야 합니다. 
 
     레이블을 통해 또는 사용자가 수동으로 전달 금지 옵션을 적용하는 경우 필요한 Azure Rights Management 서비스가 아니라 AD RMS 배포에서 옵션이 적용될 수 있습니다. 이 시나리오에서는 공유하는 사람이 이 전달 금지 옵션이 적용된 메일 메시지를 외부에서 열 수 없습니다.
+    
+    Azure Information Protection 클라이언트의 버전 1.9.58.0(현재 미리 보기)부터 Outlook의 **전달 금지** 단추는 항상 Azure RMS를 사용합니다. 이 설정은 보호를 위해 레이블을 구성할 경우에는 Outlook의 **전달 금지** 메뉴 옵션 또는 **전달 금지** 옵션에 영향을 주지 않습니다. 이 동작을 원하지 않는 경우 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)을 구성하여 Outlook의 **전달 금지** 단추를 숨길 수 있습니다.
 
 - AD RMS(HYOK) 보호와 Azure RMS 보호를 사용할 때 사용자가 사용자 지정 권한을 구성하는 경우, 문서 또는 메일이 항상 Azure Rights Management로 보호됩니다.
 

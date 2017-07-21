@@ -4,7 +4,7 @@ description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e3444ee0812d54988ad12461e0f492fe07637209
-ms.sourcegitcommit: 1128ccda089727ac4a638e99532516474cef0ef4
+ms.openlocfilehash: be09e2c974d9d542b94bc16f140e764858cc9282
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
 
@@ -55,9 +55,11 @@ ms.lasthandoff: 07/11/2017
 ## <a name="entering-credentials"></a>자격 증명 입력
 RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있는 권한이 있는 계정의 자격 증명을 입력해야 합니다. 예를 들면 **admin@contoso.com**을 입력한 다음 이 계정에 대한 암호를 지정할 수 있습니다.
 
-커넥터에서 MFA를 지원하지 않으므로 이 계정은 MFA(다단계 인증)를 요구하지 않아야 합니다. 커넥터에는 이 암호에 대한 몇 가지 문자 제한도 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증에 실패하고 **사용자 이름과 암호 조합이 잘못되었습니다.**라는 오류 메시지가 표시됩니다. 이 시나리오를 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
+Microsoft Rights Management 관리 도구는 이 계정에 대해 MFA를 지원하지 않으므로 이 계정은 MFA(Multi-Factor Authentication)가 필요하지 않습니다. 
 
-또한 [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구현한 경우 지정한 계정이 콘텐츠를 보호할 수 있어야 합니다. 예를 들어 "IT department" 그룹에 콘텐츠를 보호하는 기능을 제한한 경우 여기서 지정한 계정은 해당 그룹의 구성원이어야 합니다. 그렇지 않으면 다음과 같은 오류 메시지가 표시됩니다. **관리 서비스 및 조직의 위치를 검색하려는 시도가 실패했습니다. 조직에 Microsoft Rights Management 서비스를 사용할 수 있는지 확인합니다.**
+커넥터에는 이 암호에 대한 몇 가지 문자 제한도 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증에 실패하고 **사용자 이름과 암호 조합이 잘못되었습니다.**라는 오류 메시지가 표시됩니다. 이 시나리오를 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
+
+또한 [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구현한 경우 지정한 계정이 콘텐츠를 보호할 수 있어야 합니다. 예를 들어 “IT department” 그룹에 콘텐츠를 보호하는 기능을 제한한 경우 여기서 지정한 계정은 해당 그룹의 구성원이어야 합니다. 그렇지 않으면 다음과 같은 오류 메시지가 표시됩니다. **관리 서비스 및 조직의 위치를 검색하려는 시도가 실패했습니다. 조직에 Microsoft Rights Management 서비스를 사용할 수 있는지 확인합니다.**
 
 다음 권한 중 하나가 있는 계정을 사용할 수 있습니다.
 

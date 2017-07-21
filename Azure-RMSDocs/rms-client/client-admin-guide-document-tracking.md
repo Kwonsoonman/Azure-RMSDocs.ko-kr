@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2f8e3310eee90f3e81da4f513d795af478015222
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: f815fb9f9f1092ce83e9edc72f91381d3e8b46f3
+ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>Azure Information Protection에 대한 문서 추적 구성 및 사용
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 [문서 추적 기능을 지원하는 구독](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다. 문서 추적은 보호된 문서에 액세스되는 경우에 대한 정보를 사용자 및 관리자에게 제공하며, 필요한 경우 추적된 문서를 해지할 수 있도록 합니다.
 

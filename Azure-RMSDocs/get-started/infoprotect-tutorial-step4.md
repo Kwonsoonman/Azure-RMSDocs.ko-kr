@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 9a21c10404582000a55ee0cea554aad9b5a552b3
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d397ed8290d8b792b55ee78865cdbd41e330f8a9
+ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>4단계: 실제 분류, 레이블 지정 및 보호 작동 방식 확인 
 
@@ -54,7 +54,7 @@ Information Protection 표시줄에서 **레이블 편집** 아이콘을 다시 
 
 이번에는 확인 메시지가 표시되면 "이 문서는 분류할 필요가 없습니다."를 입력하고 **확인**을 클릭합니다.  
 
-**Sensitivity**(민감도) 값에 **Not set**(설정 안 함)이 표시되며, 이는 기본 레이블을 설정하지 않은 경우 사용자에게 처음에 표시되는 내용입니다.
+**민감도** 값에 **설정 안 함**이 표시되며, 이는 기본 레이블을 설정하지 않은 경우 사용자에게 처음에 표시되는 내용입니다.
 
 ![Azure Information Protection 빠른 시작 자습서 4단계 - 분류 제거](../media/sensitivity-not-setv2.png)
 

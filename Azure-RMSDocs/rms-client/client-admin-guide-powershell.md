@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2f8ad221d1193f5a6f40cc773548b9342ffd6659
-ms.sourcegitcommit: 0fd2e63822280ec96ab957e22868c63de9ef3d47
+ms.openlocfilehash: 8dd4917b23b3732e0d835f957191db9c4578f60d
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -432,7 +432,7 @@ Azure Information Protection 클라이언트 버전 1.8.41.0(현재 미리 보�
 
 액세스 토큰이 만료되는 시기를 제어하려면 매개 변수를 지정하여 이 cmdlet을 실행합니다. 이렇게 하면 액세스 토큰을 1년 또는 2년용 구성하거나 절대 만료되지 않도록 구성할 수 있습니다. 이 구성을 사용하려면 Azure Active Directory에 2개의 응용 프로그램인 **웹앱/API** 응용 프로그램 및 **네이티브 응용 프로그램**이 등록되어야 합니다. 이 cmdlet용 매개 변수는 이러한 응용 프로그램의 값을 사용합니다.
 
-이 cmdlet을 실행한 후에는 만든 사용자 계정의 컨텍스트에서 레이블링 cmdlet을 실행할 수 있습니다. 둘 이상의 계정을 사용하려는 경우 각 계정은 Azure AD에 자체 응용 프로그램이 등록되어야 하므로 각 계정에 대해 이 cmdlet을 실행해야 합니다.
+이 cmdlet을 실행한 후에는 만든 사용자 계정의 컨텍스트에서 레이블링 cmdlet을 실행할 수 있습니다.
 
 ### <a name="to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication"></a>Set-AIPAuthentication에 대해 Azure AD 응용 프로그램을 만들고 구성하려면
 
@@ -444,15 +444,17 @@ Azure Information Protection 클라이언트 버전 1.8.41.0(현재 미리 보�
     
     - 이름: **AIPOnBehalfOf**
     
+    원하는 경우 다른 이름을 지정합니다. 이름은 테넌트별로 고유해야 합니다.
+    
     - 응용 프로그램 유형: **웹앱/API**
     
     - 로그온 URL: **http://localhost**
-    
-4. 방금 만든 응용 프로그램 **AIPOnBehalfOf**를 선택하고 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다. 
+
+4. 방금 만든 응용 프로그램을 선택합니다(예: **AIPOnBehalfOf**). 그런 다음 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다. 
     
     이 값은 Set-AIPAuthentication cmdlet을 실행할 때 `WebAppId` 매개 변수에 사용됩니다.
 
-5. **설정** 블레이드에서 **키**를 선택합니다. 설명을 지정하고 기간(1년, 2년 또는 만료되지 않음)을 선택하여 새 키를 추가합니다. 그런 다음 **저장**을 선택하고 표시되는 **값**에 대한 문자열을 복사합니다. 이 문자열은 다시 표시되지 않으며 검색도 불가능하므로 반드시 저장해야 합니다.
+5. **설정** 블레이드에서 **키**를 선택합니다. 설명을 지정하고 기간(1년, 2년 또는 만료되지 않음)을 선택하여 새 키를 추가합니다. 그런 다음 **저장**을 선택하고 표시되는 **값**에 대한 문자열을 복사합니다. 이 문자열은 다시 표시되지 않으며 검색도 불가능하므로 반드시 저장해야 합니다. 사용하는 키와 마찬가지로 저장한 값을 안전하게 보관하고 저장한 값에 대한 액세스를 제한합니다.
     
     이 값은 Set-AIPAuthentication cmdlet을 실행할 때 `WebAppKey` 매개 변수에 사용됩니다.
 
@@ -460,11 +462,13 @@ Azure Information Protection 클라이언트 버전 1.8.41.0(현재 미리 보�
     
     - 이름: **AIPClient**
     
+    원하는 경우 다른 이름을 지정합니다. 이름은 테넌트별로 고유해야 합니다.
+    
     - 응용 프로그램 유형: **네이티브**
     
     - 로그온 URL: **http://localhost**
 
-7. 방금 만든 응용 프로그램 **AIPClient**를 선택하고 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다.
+7. 방금 만든 응용 프로그램을 선택합니다(예: **AIPClient**). 그런 다음 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다.
     
     이 값은 Set-AIPAuthentication cmdlet을 실행할 때 `NativeAppId` 매개 변수에 사용됩니다.
 

@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/14/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: d397ed8290d8b792b55ee78865cdbd41e330f8a9
-ms.sourcegitcommit: d42c6bb914563ae798d4171bb017c85b7077abfb
+ms.openlocfilehash: 5ceb351e72ec30015697d2b27111ae76fb3b2b58
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>4단계: 실제 분류, 레이블 지정 및 보호 작동 방식 확인 
 
@@ -80,9 +80,7 @@ Information Protection 표시줄에서 **레이블 편집** 아이콘을 다시 
 |자세한 정보가 필요한 경우|추가 정보|
 |--------------------------------|--------------------------|
 |파일 레이블 지정 및 보호에 대한 전체 지침 |[파일 또는 전자 메일 분류 및 보호](../rms-client/client-classify-protect.md)|
-
-
-
+|레이블 활동 로깅 위치 |[Azure Information Protection 클라이언트에 대한 사용 현황 로깅](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)|
 
 
 >[!div class="step-by-step"]

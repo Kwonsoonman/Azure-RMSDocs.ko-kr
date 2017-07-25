@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e2f8f92595b21d122dfe76918a604ce7ff21b7ef
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 1a75a5db529ce3b520e38fb439c18a58230ceb0e
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
 
@@ -32,20 +32,20 @@ ms.lasthandoff: 06/30/2017
 
 다음은 Azure Information Protection에 HSM 키 및 AD RMS 구성을 가져오기 위한 두 부분으로 구성된 절차로, 이 작업을 수행하면 사용자가 관리하는(BYOK) Azure Information Protection 테넌트 키를 만들 수 있습니다.
 
-Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure Information Protection 외에도 Azure Key Vault에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure 주요 자격 증명 모음을 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
+Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure Information Protection 외에도 Azure Key Vault에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure Key Vault를 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
 
 시작하기 전에 조직에 Azure 주요 자격 증명 모음에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. Azure Information Protection 전용의 키 자격 증명 모음은 필수는 아니지만 갖고 있으면 좋습니다. Azure Information Protection 키만 이 주요 자격 증명 모음에 저장될 수 있도록 이 주요 자격 증명 모음은 Azure Rights Management 서비스에 액세스 권한을 허용하도록 구성됩니다.
 
 
 > [!TIP]
-> Azure 주요 자격 증명 모음에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure 주요 자격 증명 모음 시작](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)을 먼저 검토하면 도움이 됩니다. 
+> Azure Key Vault에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure Key Vault 시작](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)을 먼저 검토하면 도움이 됩니다. 
 
 
 ## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>1부: Azure 주요 자격 증명 모음에 키 전송
 
 이 절차는 Azure 주요 자격 증명 모음의 관리자가 수행합니다.
 
-1. 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault)을 사용하여 Azure Key Vault 설명서의 지침을 따르세요. 다음과 같은 예외가 있습니다.
+1. 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault)을 사용하여 Azure Key Vault 설명서의 지침을 따르세요. 다음과 같은 예외가 있습니다.
 
     - AD RMS 배포에서 생성된 동일한 키가 이미 있으므로 **테넌트 키 생성** 단계는 수행하지 마세요. 대신, Thales 설치의 AD RMS 서버에서 사용되는 키를 식별하고, 마이그레이션 중에 이 키를 사용해야 합니다. Thales 암호화된 키 파일 이름은 일반적으로 서버에서 로컬로 **key<*keyAppName*><*keyIdentifier*>**입니다.
 

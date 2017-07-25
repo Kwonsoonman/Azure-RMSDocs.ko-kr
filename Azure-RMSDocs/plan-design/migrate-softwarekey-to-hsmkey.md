@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0965ac3547449a23f4c40fe3f40bac2a6e0365e3
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d942e51994c6db3ee0c3e1127991a7007ed91f92
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
 
@@ -31,18 +31,18 @@ ms.lasthandoff: 06/30/2017
 
 먼저 AD RMS 구성 데이터에서 SLC(서버 사용 허가자 인증서) 키를 추출하여 온-프레미스 Thales HSM에 전송하고, HSM 키를 패키지하고 Azure Key Vault로 전송한 다음 Azure Information Protection의 Azure Rights Management에서 주요 자격 증명 모음에 액세스할 수 있도록 권한을 부여한 다음 구성 데이터를 가져와야 합니다.
 
-Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure Information Protection 외에도 Azure Key Vault에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure 주요 자격 증명 모음을 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
+Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure Information Protection 외에도 Azure Key Vault에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure Key Vault를 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
 
 시작하기 전에 조직에 Azure 주요 자격 증명 모음에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. Azure Information Protection 전용의 키 자격 증명 모음은 필수는 아니지만 갖고 있으면 좋습니다. 이 키 자격 증명 모음은 Azure Information Protection의 Azure Rights Management 서비스에서 액세스하도록 구성되어, Azure Information Protection 키만 이 키 자격 증명 모음에 저장될 수 있게 합니다.
 
 
 > [!TIP]
-> Azure 주요 자격 증명 모음에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure 주요 자격 증명 모음 시작](/azure/key-vault/key-vault-get-started)을 먼저 검토하면 도움이 됩니다. 
+> Azure Key Vault에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure Key Vault 시작](/azure/key-vault/key-vault-get-started)을 먼저 검토하면 도움이 됩니다. 
 
 
 ## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>1부: 구성 데이터에서 SLC 키를 추출하고 온-프레미스 HSM으로 키 가져오기
 
-1.  Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
+1.  Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azurekey-vault) 섹션의 다음 단계를 사용하세요.
 
     -   **키를 생성하여 Azure 주요 자격 증명 모음 HSM으로 전송**: [1단계: 인터넷에 연결된 워크스테이션 준비](/azure/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
 
@@ -108,15 +108,15 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호된 키를 패키지하고 Azure 주요 자격 증명 모음으로 전송할 준비가 되었습니다.
 
 > [!IMPORTANT]
-> 이 단계를 완료하면 이러한 PEM 파일을 연결이 끊어진 워크스테이션에서 안전하게 지워서 권한이 없는 사용자가 액세스할 수 없도록 합니다. 예를 들어 "cipher /w:E"를 실행하여 E: 드라이브에서 모든 파일을 안전하게 삭제합니다.
+> 이 단계를 완료하면 이러한 PEM 파일을 연결이 끊어진 워크스테이션에서 안전하게 지워서 권한이 없는 사용자가 액세스할 수 없도록 합니다. 예를 들어 "cipher /w: E"를 실행하여 E: 드라이브에서 모든 파일을 안전하게 삭제합니다.
 
 ## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>2부: HSM 키를 패키지한 후 Azure 주요 자격 증명 모음으로 전송
 
-Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
+Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault) 섹션의 다음 단계를 사용하세요.
 
 - [4단계: 키 전송 준비](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
 
-- [5단계: Azure Key Vault에 키 전송](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azure-key-vault)
+- [5단계: Azure Key Vault에 키 전송](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azurekey-vault)
 
 키가 이미 있으므로 키 쌍을 생성하는 단계를 수행하지 마세요. 대신 명령을 실행하여 온-프레미스 HSM에서 이 키를 전송합니다(이 예에서는 KeyIdentifier 매개 변수에 "contosobyok" 사용).
 

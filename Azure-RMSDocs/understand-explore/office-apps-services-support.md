@@ -4,7 +4,7 @@ description: "최종 사용자 Office 응용 프로그램(예: Word, Excel, Powe
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/11/2017
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7fe044ab9b8e253e3095af5828a33926271bc42b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d812476d882525b1fd5686418151188e57afa80d
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="office-applications-and-services"></a>Office 응용 프로그램 및 서비스
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 06/30/2017
 최종 사용자 Office 응용 프로그램(예: Word, Excel, PowerPoint, Outlook) 및 Office 서비스(예: Exchange, SharePoint)에서 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호할 수 있습니다.
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 응용 프로그램: Word, Excel, PowerPoint, Outlook
-이러한 응용 프로그램은 정보 권한 관리(IRM)를 사용하여 Rights Management를 기본적으로 지원하며 사용자가 저장된 문서 또는 전송할 메일 메시지에 보호를 적용할 수 있도록 합니다. 사용자는 템플릿을 적용하거나 Word, Excel 및 PowerPoint의 경우 액세스, 권한 및 사용 제한을 위해 자세하게 사용자 지정된 설정을 선택할 수 있습니다. 
+이러한 응용 프로그램은 정보 권한 관리(IRM)를 사용하여 Rights Management를 기본적으로 지원하며 사용자가 저장된 문서 또는 전송할 메일 메시지에 보호를 적용할 수 있도록 합니다. 사용자는 템플릿을 적용하거나 Word, Excel 및 PowerPoint의 경우 액세스, 권한 및 사용 제한을 위해 사용자 지정된 설정을 선택할 수 있습니다. 
 
 예를 들어 사용자는 조직 내의 사용자만 액세스할 수 있도록 Word 문서를 구성할 수도 있고 Excel 스프레드시트의 편집 가능 여부를 제어하거나 파일을 읽기 전용으로 제한하거나 파일 인쇄를 차단할 수도 있습니다. 시간이 중요한 파일의 경우에는 파일에 더 이상 액세스할 수 없는 만료 시간을 구성할 수 있습니다(사용자가 직접 구성하거나 템플릿 적용). Outlook에서는 사용자가 템플릿을 선택하는 일 외에 **전달 금지** 옵션을 선택하여 데이터 유출을 방지할 수도 있습니다.
 
@@ -48,7 +48,7 @@ Exchange Online 또는 Exchange Server를 사용할 때는 IRM(정보 권한 관
 
 -   **전송 규칙** - 관리자가 보낸 사람, 받는 사람, 메시지 제목, 내용 등의 속성을 기준으로 메일 메시지에 Rights Management 템플릿을 자동으로 적용하도록 구성하는 규칙입니다. 이러한 규칙은 개념상 보호 규칙과 비슷하지만 사용자가 보호를 제거할 수 없고, 모바일 장치에서 보내는 메일과 Outlook Web Access에도 적용 가능하며, 클라이언트에서 메일 메시지를 보내기 전에 암호화하지 않는다는 점이 다릅니다. 자세한 내용은 Exchange 라이브러리에서 [전송 보호 규칙 만들기](https://technet.microsoft.com/library/dd302432.aspx)를 참조하세요.
 
--   **DLP(데이터 손실 방지) 정책** - 메일 메시지를 필터링하고 기밀 또는 중요한 데이터(예: 개인 정보 또는 신용 카드 정보)에 대해 데이터 손실을 방지하기 위한 작업을 수행하는 조건 집합을 포함하는 정책입니다. 중요한 데이터가 검색되면 정책 팁을 사용하여 메일 메시지의 정보를 기준으로 정보 보호를 적용해야 할 수 있다는 알림을 사용자에게 표시할 수 있습니다. 자세한 내용은 Exchange 라이브러리에서 [데이터 손실 방지](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx)를 참조하세요.
+-   **DLP(데이터 손실 방지) 정책** - 메일 메시지를 필터링하고 기밀 또는 중요한 데이터(예: 개인 정보 또는 신용 카드 정보)에 대해 데이터 손실을 방지하기 위한 작업을 수행하는 조건 집합을 포함하는 정책입니다. 중요한 데이터가 검색되면 정책 팁을 사용하여 메일 메시지의 정보를 기준으로 정보 보호를 적용해야 할 수 있다는 알림을 사용자에게 표시할 수 있습니다. 자세한 내용은 Exchange 라이브러리에서 [데이터 손실 방지](https://technet.microsoft.com/library/jj150527(v=exchg.160).aspx)를 참조하세요.
 
 -   **Office 365 메시지 암호화** - 전송 규칙을 사용하여 회사 외부 사용자에게 암호화된 메일을 보냅니다. 이러한 메일은 Outlook Web App과 비슷한 인터페이스가 포함된 브라우저에서 읽을 수 있습니다. 회사의 암호화된 메일에서 고지 사항 텍스트와 헤더 텍스트를 사용자 지정할 수 있으며 회사 로고도 추가할 수 있습니다. 자세한 내용은 Office 웹사이트에서 [Office 365 메시지 암호화](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx)를 참조하세요.
 
@@ -96,8 +96,10 @@ IRM에 대해 SharePoint를 구성할 준비가 된 경우:
 
 ## <a name="next-steps"></a>다음 단계
 
+Office 365를 사용하는 경우 Office 365의 파일 보호에 대해 권장되는 기능을 제공하는 [Office 365의 파일 보호 솔루션](https://technet.microsoft.com/library/dn919927.aspx#BKMK_O365fileprotect)을 검토하는 데 관심이 있을 수 있습니다.
+
 다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
-이러한 응용 프로그램 및 서비스의 구성을 포함한 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](/plan-design/deployment-roadmap.md)을 참조하세요.
+이러한 응용 프로그램 및 서비스의 구성을 포함한 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

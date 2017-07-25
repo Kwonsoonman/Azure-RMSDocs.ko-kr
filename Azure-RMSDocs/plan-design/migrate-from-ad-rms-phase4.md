@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4157148c0109317851ed2f128a5ae74603d82af2
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6c93f38b0ae725c1bc1d3423baf64931593af3b7
+ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/19/2017
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>마이그레이션 4단계 - 지원 서비스 구성
 
@@ -75,7 +75,7 @@ AD RMS를 통해 Exchange Server 또는 SharePoint Server의 IRM(정보 권한 �
 
         $irmConfig = Get-IRMConfiguration
         $list = $irmConfig.LicensingLocation 
-        $list + "<Your Tenant URL>/_wmcs/licensing"
+        $list += "<Your Tenant URL>/_wmcs/licensing"
         Set-IRMConfiguration -LicensingLocation $list
 
 3.  이제 내부 받는 사람에게 전송되는 메시지에 대해 IRM 기능을 사용하지 않도록 설정합니다.

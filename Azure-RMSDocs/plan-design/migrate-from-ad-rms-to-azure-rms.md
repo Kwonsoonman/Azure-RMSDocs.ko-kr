@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cc11c4c9cfa9a6886180782c4ae88068bf280895
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6ce3936b36a716cfdc2651cda9f59eb9b552eeb3
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -34,7 +34,7 @@ AD RMS(Active Directory Rights Management Services) 배포를 Azure Information 
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>Azure Information Protection으로 마이그레이션하기 전에 읽어보면 좋은 자료
 
-반드시 읽어야 하는 자료는 아니지만, 마이그레이션 단계와 관련된 기술의 작동 원리를 이해할 수 있으므로 마이그레이션을 시작하기 전에 다음을 읽으면 유용합니다.
+필요하지는 않지만, 마이그레이션을 시작하기 전에 다음 문서를 읽으면 유용합니다. 마이그레이션 단계와 관련된 경우 기술의 원리를 보다 잘 이해하는 데 도움이 되는 지식을 제공합니다.
 
 - [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md): 클라우드에서 동일한 SLC 키를 Microsoft(기본값) 또는 사용자(BYOK(Bring Your Own Key 구성)가 관리하는 Azure Information Protection 테넌트에 대해 설정하는 키 관리 옵션을 이해합니다. 
 
@@ -135,11 +135,11 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - 파트너의 Azure Rights Management 서비스는 아직 활성화되지 않았지만, 파트너가 해당 Azure Rights Management 서비스 URL을 알고 있습니다.
 
-    파트너는 Azure Rights Management 도구를 설치하고 서비스에 연결([Connect-Aadrmservice](/powershell/aadrm/vlatest/connect-aadrmservice))한 다음 Azure Rights Management 서비스에 대한 테넌트 정보를 확인([Get-AadrmConfiguration](/powershell/aadrm/vlatest/get-aadrmconfiguration))하여 이 정보를 얻을 수 있습니다.
+    파트너는 Azure Rights Management 도구를 설치하고 서비스에 연결([Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice))한 다음 Azure Rights Management 서비스에 대한 테넌트 정보를 확인([Get-AadrmConfiguration](/powershell/aadrm/vlatest/get-aadrmconfiguration))하여 이 정보를 얻을 수 있습니다.
 
 - 파트너의 AD RMS로 보호된 콘텐츠에 대한 요청을 해당 테넌트의 Azure Rights Management 서비스로 리디렉션하도록 마이그레이션된 클라이언트를 구성할 수 있도록 파트너는 해당 AD RMS 클러스터의 URL 및 Azure Rights Management 서비스 URL을 제공합니다. 클라이언트 리디렉션 구성에 대한 지침은 7단계에 있습니다.
 
-- 사용자 마이그레이션을 시작하기 전에 파트너가 해당 AD RMS 클러스터 루트 키(SLC)를 해당 테넌트로 가져옵니다. 마찬가지로, 파트너가 사용자 마이그레이션을 시작하기 전에 AD RMS 클러스터 루트 키를 가져와야 합니다. 키 가져오기에 대한 지침은 이 마이그레이션 프로세스의 [4단계. AD RMS에서 구성 데이터를 내보낸 후 Azure Information Protection으로 가져오기](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)에 설명되어 있습니다. 
+- 사용자 마이그레이션을 시작하기 전에 파트너가 해당 AD RMS 클러스터 루트 키(SLC)를 해당 테넌트로 가져옵니다. 마찬가지로, 파트너가 사용자 마이그레이션을 시작하기 전에 AD RMS 클러스터 루트 키를 가져와야 합니다. 키 가져오기에 대한 지침은 이 마이그레이션 프로세스의 [4단계에 설명되어 있습니다. AD RMS에서 구성 데이터를 내보낸 후 Azure Information Protection으로 가져오기](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)에 설명되어 있습니다. 
 
 ## <a name="overview-of-the-steps-for-migrating-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션하는 단계 개요
 

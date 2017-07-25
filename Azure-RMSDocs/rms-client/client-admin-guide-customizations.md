@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5b5f8b336e1946bc4c394b9154eed50844b6b72b
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 41e9e8aff35727a40413e0bf18e46f1ad14e9222
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -56,25 +56,33 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="sign-in-as-a-different-user"></a>다른 사용자로 로그인
 
-프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 관리자는 다른 사용자로 로그인해야 할 수 있습니다. 예를 들어 조직이 프로덕션 환경에서 사용하는 Office 365 또는 Azure 테넌트 외에 테스트 테넌트가 있을 수 있습니다.
+프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 관리자는 테스트 단계 동안 다른 사용자로 로그인해야 할 수 있습니다. 
 
 **Microsoft Azure Information Protection** 대화 상자를 사용하여 현재 로그인한 계정을 확인할 수 있습니다. Office 응용 프로그램을 열고 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 의견**을 클릭합니다. 계정 이름은 **클라이언트 상태** 섹션에 표시됩니다.
 
-특히 관리자 계정을 사용하고 있는 경우 표시된 로그인 계정의 도메인 이름을 확인해야 합니다. 예를 들어 두 개의 다른 테넌트에 "admin" 계정이 있는 경우 로그인한 계정 이름은 올바르지만 도메인은 잘못되었음을 모르기 쉽습니다. 잘못된 계정을 사용할 경우 Azure Information Protection 정책을 다운로드하지 못하거나 예상한 레이블 또는 동작이 표시되지 않을 수 있습니다.
+또한 표시되는 로그인 계정의 도메인 이름을 확인해야 합니다. 계정 이름은 올바르지만 잘못된 도메인으로 로그인하는 경우를 간과하기 쉽습니다. 잘못된 계정을 사용할 경우 Azure Information Protection 정책을 다운로드하지 못하거나 예상한 레이블 또는 동작이 표시되지 않을 수 있습니다.
 
 다른 사용자로 로그인하려면 다음과 같이 합니다.
 
-1. 레지스트리 편집기를 사용하여 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**로 이동하고 **TokenCache** 값과 연결된 값 데이터를 삭제합니다.
+1. Azure Information Protection 클라이언트의 버전에 따라 다음과 같이 합니다. 
+    
+    - Azure Information Protection 클라이언트의 일반 공급 버전인 경우, 레지스트리 편집기를 사용하여 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**로 이동하고 **TokenCache** 값과 연결된 값 데이터를 삭제합니다.
+    
+    - Azure Information Protection 클라이언트의 현재 미리 보기 버전인 경우, **%localappdata%\Microsoft\MSIP**로 이동하고 **TokenCache** 파일을 삭제합니다.
 
 2. 열려 있는 Office 응용 프로그램을 다시 시작하고 다른 사용자 계정으로 로그인합니다. Office 응용 프로그램에서 Azure Information Protection 서비스에 로그인하라는 메시지가 표시되지 않는 경우 **Microsoft Azure Information Protection** 대화 상자로 돌아와 업데이트된 **클라이언트 상태** 섹션에서 **로그인**을 클릭합니다.
 
 추가 필수 구성 요소:
+
+- 이 솔루션은 동일한 테넌트의 다른 사용자로 로그인에 대해 지원됩니다. 이 솔루션은 다른 테넌트의 다른 사용자로 로그인에 대해 지원되지 않습니다. 여러 테넌트로 Azure Information Protection을 테스트하려면 여러 컴퓨터를 사용합니다.
 
 - Single Sign-On을 사용할 경우 Windows에서 로그아웃하고 레지스트리를 편집한 후 다른 사용자 계정으로 로그인해야 합니다. Azure Information Protection 클라이언트에서는 현재 로그인한 사용자 계정을 사용하여 자동으로 인증합니다.
 
 - Azure Rights Management 서비스에 대한 사용자 설정을 다시 지정하려는 경우 **도움말 및 피드백** 옵션을 사용하면 됩니다.
 
 - 현재 다운로드한 Azure Information Protection 정책을 삭제하려면 **%localappdata%\Microsoft\MSIP** 폴더에서 **Policy.msip** 파일을 삭제합니다.
+
+- Azure Information Protection 클라이언트의 현재 미리 보기 버전을 사용하는 경우 **Help and Feedback**(도움말 및 피드백)의 **Reset settings**(설정 재설정) 옵션을 사용하여 로그아웃하고 현재 다운로드한 Azure Information Protection 정책을 삭제할 수 있습니다.
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
 

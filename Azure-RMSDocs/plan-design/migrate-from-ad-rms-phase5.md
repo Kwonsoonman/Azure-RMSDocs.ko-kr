@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f7678af1314fe7130d1084309a43d7561f7b9494
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 85b00b8f1e6bd8612b4bd49770e2ff4a934d3177
+ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>마이그레이션 5단계 - 마이그레이션 후 작업
 
@@ -70,14 +70,14 @@ AD RMS 서버 프로비전을 해제한 후에는 Azure 클래식 포털에서 �
 
     출력에서 **License**가 **False**를 표시해야 하고, **SecurityGroupOjbectId**에 대해 표시되는 GUID가 없습니다.
 
-## <a name="step-12-re-key-your-azure-information-protection-tenant-key"></a>12단계. Azure Information Protection 테넌트 키 다시 입력
+## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>12단계. Azure Information Protection 테넌트 키 다시 입력
 이 단계는 AD RMS 배포에서 RMS 암호화 모드 1을 사용한 경우 마이그레이션이 완료되었을 때 필요합니다. 키를 다시 입력하면 RMS 암호화 모드 2를 사용하는 새 테넌트 키가 생성되기 때문입니다. 암호화 모드 1에서 Azure RMS를 사용하는 방식은 마이그레이션 프로세스 중에만 지원됩니다.
 
 이 단계는 선택 사항이지만 RMS 암호화 모드 2에서 실행 중이었을 때 마이그레이션이 완료된 경우에 권장됩니다. 이 시나리오의 키 다시 입력은 Azure Information Protection 테넌트 키를 AD RMS 키에 대한 잠재적인 보안 위반으로부터 보호하는 데 도움이 됩니다.
 
 Azure Information Protection 테넌트 키를 다시 입력하면("키 롤링"이라고도 함) 새 키가 만들어지고 원래 키는 보관됩니다. 하지만 한 키에서 다른 키로 바로 이동되지 않고 몇 주 이상이 걸립니다. 따라서 원래 키에 대해 의심스러운 위반이 발생할 때까지 기다리지 말고, 마이그레이션이 완료되는 즉시 Azure Information Protection 테넌트 키를 다시 입력합니다.
 
-Azure Information Protection 테넌트 키를 다시 입력하려면
+Azure Information Protection 테넌트 키를 다시 입력하려면 다음과 같이 합니다.
 
 - Microsoft에서 관리하는 테넌트 키인 경우: [Microsoft 지원](../get-started/information-support.md#to-contact-microsoft-support)에 문의하여 **AD RMS에서 마이그레이션 후 Azure Information Protection 키 다시 입력 요청에 관한 Azure Information Protection 지원 케이스**를 엽니다. 자신이 Azure Information Protection 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 다시 입력은 무료 지원 서비스가 아닙니다.
 

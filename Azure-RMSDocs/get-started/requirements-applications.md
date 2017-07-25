@@ -4,7 +4,7 @@ description: "RMS API를 사용하여 Azure Information Protection의 Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 07/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9b2395ad67bfee226bf10f36613cb6465eb0b019
-ms.sourcegitcommit: 0fd2e63822280ec96ab957e22868c63de9ef3d47
+ms.openlocfilehash: a85aafd3f3f23b1aa138fd3d44e206be143f7643
+ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/21/2017
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
 
@@ -85,7 +85,7 @@ iOS용 보호된 문서 보기 및 편집을 지원합니다. 자세한 내용�
 
 Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되어 있으며, 이러한 앱에서 이 기능은 종종 IRM(정보 권한 관리)이라고 불립니다. 
 
-다음 Office 클라이언트 버전은 Azure RMS를 사용하여 Windows 컴퓨터에서 파일 및 메일 보호를 지원합니다.
+다음 Office 클라이언트 제품군은 Azure RMS를 사용하여 Windows 컴퓨터에서 파일 및 메일 보호를 지원합니다.
 
 - Office 365 ProPlus: Office 2016 및 Office 2013
 
@@ -105,11 +105,13 @@ Azure RMS 및 Office Professional Plus 2010 서비스 팩 2 또는 Office Profes
 
 - 페더레이션된 사용자 계정에 대한 양식 기반 인증은 지원되지 않습니다. 이러한 계정은 Windows 통합 인증을 사용해야 합니다.
 
-다음 Office 클라이언트 버전은 Azure RMS를 사용하여 macOS에서 파일 및 메일 보호를 지원합니다.
+다음 Office 클라이언트 제품군은 Azure RMS를 사용하여 macOS에서 파일 및 메일 보호를 지원합니다.
 
 - Office 365 ProPlus: Office 2016
 
-- Mac용 Office 2016
+- Mac용 Office Standard 2016
+
+참고 항목: [Office 응용 프로그램 서비스 설명](https://technet.microsoft.com/library/office-applications-service-description.aspx)
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
 

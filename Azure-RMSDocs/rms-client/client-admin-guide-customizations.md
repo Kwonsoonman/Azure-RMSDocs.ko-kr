@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 41e9e8aff35727a40413e0bf18e46f1ad14e9222
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 32226274c8b50b02e453f1c1b6655fb01b4ec942
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -24,11 +24,11 @@ ms.lasthandoff: 07/21/2017
 
 Azure Information Protection 클라이언트를 관리할 때 특정 시나리오 또는 사용자의 하위 집합에 대해 필요할 수 있는 고급 구성을 수행할 경우 다음 정보를 사용합니다.
 
-경우에 따라 레지스트리를 편집해야 하는 설정도 있고 고급 설정을 사용해야 하는 경우도 있습니다. 고급 설정이 필요한 설정은 Azure Portal에서 구성한 후 클라이언트에서 다운로드할 수 있게 게시해야 합니다. 
-
-또한 일부 설정은 Azure Information Protection 클라이언트의 미리 보기 버전에서만 사용할 수 있습니다. 이러한 설정의 경우 최소 클라이언트 버전이 문서화되어 있습니다. 클라이언트의 일반 공급 버전에서 지원되는 설정 및 구성의 경우 최소 클라이언트 버전 번호가 문서화되어 있지 않습니다.
+경우에 따라 레지스트리를 편집해야 하는 설정도 있고 고급 설정을 사용해야 하는 경우도 있습니다. 고급 설정이 필요한 설정은 Azure Portal에서 구성한 후 클라이언트에서 다운로드할 수 있게 게시해야 합니다. 또한 일부 설정은 Azure Information Protection 클라이언트의 미리 보기 버전에서만 사용할 수 있습니다. 이러한 설정의 경우 최소 클라이언트 버전이 문서화되어 있습니다. 클라이언트의 일반 공급 버전에서 지원되는 설정 및 구성의 경우 최소 클라이언트 버전 번호가 문서화되어 있지 않습니다.
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>포털에서 고급 클라이언트 구성 설정을 구성하는 방법
+
+이 구성은 현재 미리 보기로 제공됩니다.
 
 1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다.
 
@@ -86,6 +86,8 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
 
+이 구성 옵션은 현재 미리 보기로 제공됩니다.
+
 Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하는 경우 레지스트리를 편집하여 이 고급 구성을 구성할 수 있습니다. 
 
 다음 DWORD 값 이름(모든 값 데이터 포함)을 만듭니다.
@@ -104,6 +106,8 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>Outlook에서 전달 금지 단추 숨기기
 
+이 구성 옵션은 현재 미리 보기로 제공됩니다.
+
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이 설정에는 **1.8.41.0** 이상 버전을 갖는 Azure Information Protection 클라이언트 미리 보기 버전도 필요합니다.
 
 이 설정을 구성하는 경우 Outlook의 리본에서 **전달 금지** 단추가 숨겨집니다. Office 메뉴에서는 이 옵션이 숨겨지지 않습니다.
@@ -115,6 +119,8 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
 - 값: **True**
 
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>사용자 지정 권한 옵션을 사용자가 사용할 수 없음
+
+이 구성 옵션은 현재 미리 보기로 제공됩니다.
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 

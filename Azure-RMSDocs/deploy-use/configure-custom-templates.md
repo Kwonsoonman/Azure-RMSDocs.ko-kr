@@ -4,7 +4,7 @@ description: "관리자가 사용 권한 템플릿을 구성하고 관리하는 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,27 +12,27 @@ ms.technology: techgroup-identity
 ms.assetid: 1775d8d0-9a59-42c8-914f-ce285b71ac1c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d141589c9dc9d90cf3a507db77f624c849f955b5
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6c3f066a373d253d8488c805828a65513370e3a4
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="configuring-custom-templates-for-the-azure-rights-management-service"></a>Azure Rights Management 서비스용 사용자 지정 템플릿 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-Azure Rights Management 서비스를 [활성화](activate-service.md)하면 액세스 권한이 조직의 권한 있는 사용자로 제한되는 관리 정책을 중요한 파일에 쉽게 적용할 수 있도록 두 가지 기본 템플릿을 자동으로 사용할 수 있습니다. 이 두 개의 템플릿에는 다음의 권한 정책 제한이 있습니다.
+Azure Rights Management 서비스가 [활성화되면](activate-service.md) 사용자는 자동으로 2개의 기본 템플릿을 사용할 수 있습니다. 템플릿을 사용하면 조직 내의 인증된 사용자로 액세스를 제한하는 권한 관리 정책을 중요한 파일에 쉽게 적용할 수 있습니다. 이 두 개의 템플릿에는 다음의 권한 정책 제한이 있습니다.
 
 -   보호된 콘텐츠의 읽기 전용 보기
 
-    -   표시 이름: **&lt;조직 이름&gt; - 기밀 보기 전용**
+    -   표시 이름: **&lt;조직 이름&gt; - 기밀 보기 전용** 또는 **주요 기밀 \ 모든 직원**
 
     -   권한 지정: 콘텐츠 보기
 
 -   보호된 콘텐츠의 사용 권한을 읽거나 수정하기
 
-    -   표시 이름: **&lt;조직 이름&gt; - 기밀**
+    -   표시 이름: **&lt;조직 이름&gt; - 기밀** 또는 **기밀 \ 모든 직원**
 
     -   권한 지정: 콘텐츠 보기, 파일 저장하기, 콘텐츠 편집하기, 할당된 권한 보기, 매크로 허용하기, 전달하기, 회신하기, 전체 회신하기
 

@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 491d3191a713bf30ef0da58e359249869d3c82a9
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: 9359d83ec2ee85edeef6a3d2680f95633d22546e
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -115,8 +115,25 @@ Office 응용 프로그램의 Azure Information Protection 클라이언트 추�
     
     이 업데이트가 필요한데 아직 설치되지 않은 경우 클라이언트 설치에서 설치해야 한다는 경고 메시지가 표시됩니다. 클라이언트가 설치된 후에 이 업데이트를 설치할 수 있지만 일부 작업이 차단되며 메시지가 다시 표시됩니다.  
 
+- Office 응용 프로그램을 위한 **Microsoft Azure Information Protection** 추가 기능을 비활성화하지 않습니다.
+    
+    그룹 정책 설정 **관리되는 추가 기능 목록**을 구성한 경우 Azure Information Protection을 위한 다음 프로그래밍 방식 식별자(ProgID)를 지정하고 옵션을 **1: 추가 기능을 항상 사용**으로 설정하여 Office 응용 프로그램을 위한 Microsoft Azure Information Protection 추가 기능을 추가합니다.
+    
+    - Outlook의 경우: `MSIP.OutlookAddin`
+    
+    - Word의 경우: `MSIP.WordAddin`
+    
+    - Excel의 경우: `MSIP.ExcelAddin`
+    
+    - PowerPoint의 경우: `MSIP.PowerPointAddin`
+    
+    이 **관리되는 추가 기능 목록** 그룹 정책 설정을 구성하지 않았더라도 Microsoft Azure Information Protection 추가 기능이 비활성화된다는 보고를 받을 경우 구성해야 할 수 있습니다. 이 추가 기능을 비활성화하면 사용자는 Office 응용 프로그램에서 Azure Information Protection 막대를 볼 수 없습니다.
+    
+    이 그룹 정책 설정에 대한 자세한 내용은 [Office 2013 및 Office 2016 프로그램에 대한 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)을 참조하세요.
+
 > [!IMPORTANT]
 > Azure Information Protection 클라이언트를 설치하려면 로컬 관리 권한이 필요합니다.
+
 
 ### <a name="options-to-install-the-azure-information-protection-client-for-users"></a>사용자를 위해 Azure Information Protection 클라이언트를 설치하는 옵션
 
@@ -252,16 +269,46 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 진단 정보 및 클라이언트 다시 설정에 대해서는 **진단 실행**을 선택합니다. 진단 테스트가 끝난 후 **결과 복사**를 클릭하여 Microsoft Support에 보내는 메일이나 최종 사용자가 지원 센터에 보내는 메일에 정보를 붙여넣을 수 있습니다. 테스트를 완료하면 클라이언트를 다시 설정할 수도 있습니다.
 
-**다시 설정** 옵션에 대한 자세한 정보:
+> [!NOTE]
+> 클라이언트의 미리 보기 버전에서 **진단 실행**이 제거되고 **설정 재설정**으로 대체되었습니다. 또한 이 옵션 동작이 [변경되었습니다](#more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client).
+
+#### <a name="more-information-about-the-reset-option-for-the-general-availability-ga-version-of-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 일반 공개(GA) 버전의 초기화 옵션에 대한 자세한 정보
 
 - 이 옵션을 사용하기 위해 로컬 관리자일 필요가 없으며 이 작업은 이벤트 뷰어에 로깅되지 않습니다. 
 
-- 파일이 잠겨 있지 않은 경우 이 작업을 수행하면 클라이언트 인증서 및 권한 관리 템플릿이 저장되는 위치인 **%localappdata%\Microsoft\MSIPC**의 파일이 모두 삭제됩니다. Azure Information Protection 정책이나 클라이언트 로그 파일은 삭제되지 않으며, 사용자가 로그아웃되지 않습니다.
+- 파일이 잠겨 있지 않은 경우 이 작업을 수행하면 클라이언트 인증서 및 Rights Management 템플릿이 저장되는 위치인 **%LocalAppData%\Microsoft\MSIPC**의 파일이 모두 삭제됩니다. Azure Information Protection 정책이나 클라이언트 로그 파일은 삭제되지 않으며, 사용자가 로그아웃되지 않습니다.
 
 - 다음 레지스트리 키 및 설정은 삭제됩니다. **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. 이 레지스트리 키에 대한 설정을 구성한 경우 클라이언트를 다시 설정한 후 레지스트리 설정을 다시 구성해야 합니다. 예를 들어 AD RMS에서 마이그레이션하는 데 네트워크에 서비스 연결 지점이 계속 있기 때문에 Azure Information Protection 테넌트로 리디렉션에 대한 설정을 구성한 경우입니다.
 
 - 클라이언트를 다시 설정한 후 사용자 환경을 다시 초기화해야 합니다. 그러면 클라이언트 및 최신 템플릿에 대한 인증서가 다운로드됩니다. 이렇게 하려면 Office의 모든 인스턴스를 닫은 다음 Office 응용 프로그램을 다시 시작합니다. 그러면 최신 Azure Information Protection 정책을 다운로드했는지도 확인됩니다. 이 작업을 완료할 때까지 진단 테스트를 다시 실행하지 마세요.
 
+#### <a name="more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 최신 미리 보기 버전의 초기화 옵션에 대한 자세한 정보
+
+- 이 옵션을 사용하기 위해 로컬 관리자일 필요가 없으며 이 작업은 이벤트 뷰어에 로깅되지 않습니다. 
+
+- 파일이 잠겨 있지 않으면 이 작업은 다음 위치에서 모든 파일을 삭제합니다. 여기에는 클라이언트 인증서, Rights Management 템플릿, Azure Information Protection 정책, 사용자 자격 증명 캐시가 포함됩니다. 클라이언트 로그 파일은 삭제되지 않습니다.
+    
+    - %LocalAppData%\Microsoft\DRM
+    
+    - %LocalAppData%\Microsoft\MSIPC
+    
+    - %LocalAppData%\Microsoft\MSIP\Policy.msip
+    
+    - %LocalAppData%\Microsoft\MSIP\TokenCache
+
+- 다음 레지스트리 키 및 설정이 삭제됩니다. 이 레지스트리 키에 대한 설정을 구성한 경우 클라이언트를 다시 설정한 후 레지스트리 설정을 다시 구성해야 합니다. 예를 들어 AD RMS에서 마이그레이션하는 데 네트워크에 서비스 연결 지점이 계속 있기 때문에 Azure Information Protection 테넌트로 리디렉션에 대한 설정을 구성한 경우입니다.
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\14.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\16.0\Common\DRM
+    
+    - HKEY_CURRENT-USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\MSIPC    
+
+- 현재 로그인된 사용자는 로그아웃됩니다.
 
 ### <a name="client-status-section"></a>**클라이언트 상태** 섹션
 
@@ -275,6 +322,11 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 **버전** 정보를 사용하여 설치된 클라이언트 버전을 확인합니다. **새로운 기능** 링크를 클릭하고 클라이언트의 [버전 릴리스 기록](client-version-release-history.md)을 읽으면 이 버전이 최신 릴리스 버전인지 여부와 해당 수정 사항 및 새로운 기능을 확인할 수 있습니다.
 
+## <a name="support-for-multiple-languages"></a>다국어 지원
+
+Azure Information Protection 클라이언트는 Office가 지원하는 모든 클라이언트 언어를 지원합니다. 예를 들어 메뉴 옵션, 대화 상자 및 메시지가 사용자 언어로 표시됩니다. 하나의 설치 프로그램이 언어를 감지하므로 다른 언어를 위한 클라이언트를 설치하기 위해 추가로 구성할 필요가 없습니다. 
+
+그러나 사용자에게 표시되는 레이블 이름은 [기본 정책](../deploy-use/configure-policy-default.md)에 대해 또는 지정한 레이블 이름에 대해 자동으로 번역되지 않습니다. 사용자가 다른 언어로 레이블을 볼 수 있게 하려면 직접 번역을 입력하고 Azure Information Protection 정책이 해당 번역을 사용하도록 지정해야 합니다. 자세한 정보는 [Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요.
 
 ## <a name="to-uninstall-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트를 제거하려면
 

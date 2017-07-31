@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d62bb6c3ed6738a3c4f32a506342c7137b9b35e
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: a73dcc5e2a38c5874361f0fc2845229f505b2d3e
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -143,7 +143,7 @@ Outlook을 열고 Office 365 회사 또는 학교 계정을 사용하여 프로�
 
 전자 메일 메시지 또는 문서를 보호하려면 **옵션** 탭에서 **사용 권한**을 클릭하고 전자 메일이나 문서를 보호하는 옵션 또는 템플릿을 선택합니다.
 
-문서를 호환 후 추적하려면 Azure Information Protection 클라이언트가 설치된 Windows 컴퓨터에서 Office 응용 프로그램 또는 파일 탐색기를 사용하여 해당 문서를 문서 추적 사이트에 등록합니다. 자세한 내용은 [문서 추적 및 취소](../rms-client/client-track-revoke.md)를 참조하세요. Mac 컴퓨터에서는 브라우저를 사용하여 문서 추적 사이트(https://track.azurerms.com)로 이동한 후 이 문서를 추적 및 취소할 수 있습니다.
+문서를 호환 후 추적하려면 Azure Information Protection 클라이언트가 설치된 Windows 컴퓨터에서 Office 응용 프로그램 또는 파일 탐색기를 사용하여 해당 문서를 문서 추적 사이트에 등록합니다. 자세한 내용은 [문서 추적 및 취소](../rms-client/client-track-revoke.md)를 참조하세요. Mac 컴퓨터에서는 웹 브라우저를 사용하여 문서 추적 사이트(https://track.azurerms.com)로 이동한 후 이 문서를 추적 및 취소할 수 있습니다.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>RMS로 보호된 Office 문서를 열면 연결된 임시 파일도 RMS로 보호되나요?
 아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 장치에 있습니다.

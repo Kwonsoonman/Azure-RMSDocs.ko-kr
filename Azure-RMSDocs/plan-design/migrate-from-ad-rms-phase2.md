@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7fb7beccf2f9fdf788f13e76796702ff64bffbbc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 24e832c63ce7ff4f774bbc2ec10a7b35f72e050a
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -34,7 +34,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는
 
 ### <a name="export-the-configuration-data-from-ad-rms"></a>AD RMS에서 구성 데이터 내보내기
 
-조직에 대해 보호된 콘텐츠가 있는 트러스트된 모든 게시 도메인에 대해 모든 AD RMS 클러스터에서 다음 절차를 수행합니다. 라이선스 전용 클러스터에서는 이 작업을 수행할 필요가 없습니다.
+조직에 대해 보호된 콘텐츠가 있는 트러스트된 모든 게시 도메인에 대해 모든 AD RMS 클러스터에서 다음 절차를 수행합니다. 라이선스 전용 클러스터에서는 이 프로시저를 수행할 필요가 없습니다.
 
 #### <a name="to-export-the-configuration-data-trusted-publishing-domain-information"></a>구성 데이터(트러스트된 게시 도메인 정보)를 내보내려면
 
@@ -80,16 +80,19 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는
 > [!IMPORTANT]
 > Exchange Online은 현재 Azure Information Protection의 BYOK와 호환되지 않습니다. 마이그레이션 후에 BYOK를 사용하고 Exchange Online을 사용하려는 경우 이 구성에서 Exchange Online에 대한 IRM 기능이 축소되는 방식을 이해해야 합니다. [BYOK 가격 및 제한 사항](byok-price-restrictions.md)에 제공된 정보를 검토하여 마이그레이션에 가장 적합한 Azure Information Protection 테넌트 키 토폴로지를 선택합니다.
 
-다음 테이블을 사용하여 마이그레이션에 사용할 절차를 식별하세요. 목록에 없는 조합은 지원되지 않습니다.
+다음 테이블을 사용하여 마이그레이션에 사용할 절차를 식별하세요. 
 
 |현재 AD RMS 배포|Azure Information Protection 테넌트 키 토폴로지 선택|마이그레이션 지침|
 |-----------------------------|----------------------------------------|--------------------------|
 |AD RMS 데이터베이스의 암호 보호|Microsoft 관리|이 표 다음에 나오는 **소프트웨어 보호된 키-소프트웨어 보호된 키** 마이그레이션 절차를 참조하세요.<br /><br />이것은 가장 간단한 마이그레이션 경로이며, Azure Information Protection으로 구성 데이터를 전송하기만 하면 됩니다.|
-|Thales nShield HSM(하드웨어 보안 모듈)을 사용한 HSM 보호|고객 관리(BYOK)|이 표 다음에 나오는 **HSM 보호된 키-HSM 보호된 키** 마이그레이션 절차를 참조하세요.<br /><br />이 작업을 위해서는 Azure Key Vault BYOK 도구 집합과, 온-프레미스 HSM에서 Azure Key Vault HSM으로 키를 전송한 다음, 테넌트 키를 사용하도록 Azure Information Protection의 Azure Rights Management 서비스에 권한을 부여하고, 마지막으로 구성 데이터를 Azure Information Protection으로 전송하는 세 단계가 필요합니다.|
+|Thales nShield HSM(하드웨어 보안 모듈)을 사용한 HSM 보호 |고객 관리(BYOK)|이 표 다음에 나오는 **HSM 보호된 키-HSM 보호된 키** 마이그레이션 절차를 참조하세요.<br /><br />이 작업을 위해서는 Azure Key Vault BYOK 도구 집합과, 온-프레미스 HSM에서 Azure Key Vault HSM으로 키를 전송한 다음, 테넌트 키를 사용하도록 Azure Information Protection의 Azure Rights Management 서비스에 권한을 부여하고, 마지막으로 구성 데이터를 Azure Information Protection으로 전송하는 세 단계가 필요합니다.|
 |AD RMS 데이터베이스의 암호 보호|고객 관리(BYOK)|이 표 다음에 나오는 **소프트웨어 보호된 키-HSM 보호된 키** 마이그레이션 절차를 참조하세요.<br /><br />이 작업을 위해서는 Azure Key Vault BYOK 도구 집합과, 소프트웨어 키를 먼저 추출하고 온-프레미스 HSM으로 가져온 다음, 온-프레미스 HSM의 키를 Azure Information Protection HSM으로 전송하고, Key Vault 데이터를 Azure Information Protection으로 전송하고, 마지막으로 구성 데이터를 Azure Information Protection으로 전송하는 네 단계가 필요합니다.|
-|Thales 이외의 공급업체가 제공한 HSM(하드웨어 보안 모듈)을 사용한 HSM 보호|고객 관리(BYOK)|이 HSM에서 Thales nShield HSM(하드웨어 보안 모듈)로 키를 전송하는 방법에 대한 지침은 HSM 공급업체에 문의하세요. 그런 다음 이 표 다음에 나오는 **HSM 보호된 키-HSM 보호된 키** 마이그레이션 절차의 지침을 따르세요.|
+|Thales 이외의 공급업체가 제공한 HSM(하드웨어 보안 모듈)을 사용한 HSM 보호 |고객 관리(BYOK)|이 HSM에서 Thales nShield HSM(하드웨어 보안 모듈)로 키를 전송하는 방법에 대한 지침은 HSM 공급업체에 문의하세요. 그런 다음 이 표 다음에 나오는 **HSM 보호된 키-HSM 보호된 키** 마이그레이션 절차의 지침을 따르세요.|
 |외부 암호화 공급자를 사용하여 암호 보호|고객 관리(BYOK)|Thales nShield HSM(하드웨어 보안 모듈)로 키를 전송하는 방법에 대한 지침은 암호화 공급자의 공급업체에 문의하세요. 그런 다음 이 표 다음에 나오는 **HSM 보호된 키-HSM 보호된 키** 마이그레이션 절차의 지침을 따르세요.|
-이러한 절차를 시작하기 전에 트러스트된 게시 도메인을 내보낼 때 만든 .xml 파일에 액세스할 수 있는지 확인하세요. 예를 들어, 이러한 파일은 AD RMS 서버에서 인터넷에 연결된 워크스테이션으로 가져오는 USB 드라이브에 저장되어 있을 수 있습니다.
+
+내보낼 수 없는 HSM 보호된 키가 있어도 AD RMS 클러스터를 읽기 전용 모드로 구성하면 Azure Information Protection으로 마이그레이션할 수 있습니다. 이 모드에서 이전에 보호된 콘텐츠는 열 수 있으나 새로 보호된 콘텐츠는 귀하(BYOK) 또는 Microsoft에서 관리하는 새로운 테넌트 키를 사용합니다. 자세한 내용은 [AD RMS에서 Azure RMS로 마이그레이션을 지원하는 새로운 Office 업데이트 사용 가능](https://support.microsoft.com/help/4023955/an-update-is-available-for-office-to-support-migrations-from-ad-rms-to)을 참조하세요.
+
+이러한 키 마이그레이션 절차를 시작하기 전에 트러스트된 게시 도메인을 내보낼 때 만든 .xml 파일에 액세스할 수 있는지 확인하세요. 예를 들어, 이러한 파일은 AD RMS 서버에서 인터넷에 연결된 워크스테이션으로 가져오는 USB 드라이브에 저장되어 있을 수 있습니다.
 
 > [!NOTE]
 > 하지만 이 데이터에 개인 키가 포함되어 있으므로 이러한 파일을 저장한 후 최적의 보안 권장 방법으로 파일을 보호합니다.

@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ed06deca76ed1241f0c9b3f104fd922263c5a6cd
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a093ca8cdd02448c877554ff87e971e956eab789
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -78,8 +78,8 @@ Windows용 Azure Information Protection 클라이언트에는 포함되어 있�
 
 |표시 이름|포함된 권한(일반 이름)|
 |----------------|---------------------------------|
-|&lt;*조직 이름*&gt; *- 기밀 보기 전용*|보기, 열기, 읽기|
-|&lt;*조직 이름*&gt; *- 기밀*|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 권한 보기, 매크로 허용, 전달, 회신, 전체 회신|
+|&lt;*조직 이름*&gt; *- 기밀 보기 전용* <br /><br />또는<br /><br /> *Highly Confidential \ All Employees*|보기, 열기, 읽기|
+|&lt;*조직 이름*&gt; *- 기밀* <br /><br />또는 <br /><br />*Confidential \ All Employees*|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 권한 보기, 매크로 허용, 전달, 회신, 전체 회신|
 
 ## <a name="do-not-forward-option-for-emails"></a>메일에 대한 전달 금지 옵션
 

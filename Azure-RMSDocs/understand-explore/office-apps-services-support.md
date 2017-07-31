@@ -4,7 +4,7 @@ description: "최종 사용자 Office 응용 프로그램(예: Word, Excel, Powe
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d812476d882525b1fd5686418151188e57afa80d
-ms.sourcegitcommit: 724b0b5d7a3ab694643988148ca68c0eac769f1e
+ms.openlocfilehash: 96707d0790747b4dac668508f58e9584f4649370
+ms.sourcegitcommit: 72208cabecaa233cdade0dae0c448037370f2c2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 07/28/2017
 ---
 # <a name="office-applications-and-services"></a>Office 응용 프로그램 및 서비스
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-최종 사용자 Office 응용 프로그램(예: Word, Excel, PowerPoint, Outlook) 및 Office 서비스(예: Exchange, SharePoint)에서 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호할 수 있습니다.
+최종 사용자 Office 응용 프로그램 및 Office 서비스(예: Exchange, SharePoint)에서 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호할 수 있습니다. 이 Office 응용 프로그램은 Word, Excel, PowerPoint 및 Outlook입니다. Office 서비스는 Exchange 및 SharePoint입니다. 
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 응용 프로그램: Word, Excel, PowerPoint, Outlook
 이러한 응용 프로그램은 정보 권한 관리(IRM)를 사용하여 Rights Management를 기본적으로 지원하며 사용자가 저장된 문서 또는 전송할 메일 메시지에 보호를 적용할 수 있도록 합니다. 사용자는 템플릿을 적용하거나 Word, Excel 및 PowerPoint의 경우 액세스, 권한 및 사용 제한을 위해 사용자 지정된 설정을 선택할 수 있습니다. 
@@ -78,12 +78,13 @@ SharePoint Server를 사용하는 경우에 Azure Rights Management 커넥터를
 > [!NOTE]
 > 현재 SharePoint IRM을 사용하는 경우 다음과 같이 몇 가지 제한 사항이 있습니다.
 > 
-> - 기본값 또는 Azure 클래식 포털에서 관리하는 사용자 지정 템플릿을 사용할 수 없습니다. 
+> - 기본값 또는 Azure 포털에서 관리하는 사용자 템플릿을 사용할 수 없습니다. 
 > 
 > - 보호된 PDF 파일에 대한 .PPDF 파일 이름 확장명을 가진 파일은 지원되지 않습니다. 기본적으로 Rights Management를 지원하는 PDF Reader를 사용하는 경우 파일 이름 확장명이 .PDF이며 Rights Management로 기본적으로 보호되는 파일이 지원됩니다.
+> 
+> - 파일을 보호하고 SharePoint 라이브러리나 OneDrive for Business로 업로드하는 경우 이 파일은 공동 작성, Office Online, 인덱싱 및 검색과 호환되지 않습니다.
 
-
-IRM 보호를 사용할 때, Azure Rights Management 서비스는 문서를 SharePoint에서 처음 만들거나 라이브러리로 업로드할 때가 아니라 SharePoint에서 다운로드할 때 문서에 사용 제한 및 데이터 암호화를 적용합니다. 문서가 다운로드되기 전에 보호하는 방법에 대한 자세한 내용은 SharePoint 설명서에서 [비즈니스용 OneDrive 및 SharePoint Online의 데이터 암호화](https://technet.microsoft.com/library/dn905447.aspx) 를 참조하세요.
+SharePoint IRM 보호를 사용할 때, Azure Rights Management 서비스는 문서를 SharePoint에서 처음 만들거나 라이브러리로 업로드할 때가 아니라 SharePoint에서 다운로드할 때 문서에 사용 제한 및 데이터 암호화를 적용합니다. 문서가 다운로드되기 전에 보호하는 방법에 대한 자세한 내용은 SharePoint 설명서에서 [비즈니스용 OneDrive 및 SharePoint Online의 데이터 암호화](https://technet.microsoft.com/library/dn905447.aspx) 를 참조하세요.
 
 Office 블로그 게시물 [SharePoint와 SharePoint Online의 정보 권한 관리의 새로운 기능](https://blogs.office.com/2012/11/09/whats-new-with-information-rights-management-in-sharepoint-and-sharepoint-online/)에 있는 내용은 더 이상 새로운 정보가 아니지만, 유용한 추가 정보 몇 가지가 있습니다.
 

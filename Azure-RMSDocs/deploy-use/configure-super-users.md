@@ -4,7 +4,7 @@ description: "Azure Rights Management에서 조직을 위해 보호하는 데이
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/24/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8b915ad2bf58352c41f1b534aa6c88f1640fb589
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 70c7bbd1f6244c3624cd4b1e32a98e71b5779004
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
 
@@ -71,7 +71,7 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 이러한 cmdlet에 대한 자세한 내용은 Azure Information Protection 클라이언트 관리자 가이드에서 [Azure Information Protection 클라이언트에서 PowerShell 사용](../rms-client/client-admin-guide-powershell.md)을 참조하세요.
 
 > [!NOTE]
-> AIP 모듈은 RMS 보호 도구와 함께 설치되는 RMS 보호 PowerShell 모듈을 대체합니다. 이러한 두 모듈은 서로 다르며 주 [Azure Rights Management용 Windows PowerShell 모듈](administer-powershell.md)을 보완합니다. AIP 모듈은 Azure Information Protection, Azure Information Protection용 Azure RMS(Azure Rights Management Services) 및 AD RMS(Active Directory Rights Management Services)를 지원합니다.
+> AzureInformationProtection 모듈은 RMS 보호 도구와 함께 설치되는 RMS 보호 PowerShell 모듈을 대체합니다. 이러한 두 모듈은 서로 다르며 주 [Azure Rights Management용 Windows PowerShell 모듈](administer-powershell.md)을 보완합니다. AzureInformationProtection 모듈은 Azure Information Protection, Azure Information Protection용 Azure RMS(Azure Rights Management Service) 및 AD RMS(Active Directory Rights Management Services)를 지원합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

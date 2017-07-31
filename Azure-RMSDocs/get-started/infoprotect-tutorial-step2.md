@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: f6cd01357db99ee9d299606172aa85f7e2f44ba0
-ms.sourcegitcommit: 1dee39e5e3b222b4aab2b6c4284b82927148407e
+ms.openlocfilehash: db87ffaa15802f081439f7983ef1060a60c0b24c
+ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/27/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
@@ -78,9 +78,9 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
 3. **보호** 블레이드에서 **Azure RMS**와 **미리 정의된 템플릿 선택**이 선택되어 있는지 확인합니다. 그런 다음 드롭다운 상자를 클릭하고 조직의 모든 사용자가 보호된 콘텐츠를 보고 편집할 수 있는 기본 템플릿을 선택합니다. 
     
-    최근에 Azure Rights Management 서비스를 활성화한 경우 이 템플릿의 이름은 **기밀 \ 모든 직원**입니다. 
+    최근에 구독한 경우 이 템플릿 이름은 **Confidential \ All Employees**입니다. 
     
-    이 자습서를 시작하기 전에 Azure Rights Management 서비스가 이미 활성화된 경우 기본 템플릿의 이름은 **\<조직 이름> - 기밀**이 될 수 있습니다. 예를 들어 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - 기밀**이 표시되고 이를 선택합니다. 
+    한동안 구독하지 않은 경우 기본 템플릿 이름이 **\<your organization name> - Confidential**일 수 있습니다. 예를 들어 조직 이름이 VanArsdel, Ltd인 경우 **VanArsdel, Ltd - 기밀**이 표시되고 이를 선택합니다. 
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 | Azure RMS 보호 설정](../media/step2-select-rms-template.png)
     

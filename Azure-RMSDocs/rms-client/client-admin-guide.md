@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9359d83ec2ee85edeef6a3d2680f95633d22546e
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 275f08ca0ea267c29f5b743300507d66ee1d1118
+ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/01/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -248,6 +248,8 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
     |Office 2010|Windows 8 및 Windows Server 2012|[KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|설치|
     |Office 2010|Windows 7|[KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB 3125574를 설치하지 않은 경우 설치|
     |해당 없음|Windows 7|KB 2627273 <br /><br /> 파일 이름에 포함된 버전 번호: v4|제거|
+    
+    Office 2016에 대한 추가 종속성은 없습니다.
 
 3. 기본 설치의 경우 **/quiet**를 지정하여 .msi를 실행합니다(예: `AzInfoProtection.msi /quiet`). 그렇지만 [실행 가능한 설치 관리자 지침](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)에 설명된 추가 설치 매개 변수를 지정해야 할 수 있습니다.  
 

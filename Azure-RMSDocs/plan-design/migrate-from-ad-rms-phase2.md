@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/27/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 24e832c63ce7ff4f774bbc2ec10a7b35f72e050a
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 9f04698064037343719d274e793eb560b703b031
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -125,7 +125,7 @@ PowerShell 세션을 열고 다음 명령을 실행합니다.
 
 가져온 템플릿의 기본 상태는 **보관됨**이므로 사용자가 Azure Rights Management 서비스에서 이러한 템플릿을 사용할 수 있도록 하려면 이 상태를 **게시됨** 으로 변경해야 합니다.
 
-AD RMS에서 가져오는 템플릿은 Azure 클래식 포털에서 만들 수 있는 사용자 지정 템플릿과 모양 및 동작이 유사합니다. 가져온 템플릿을 사용자가 응용 프로그램에서 보고 선택할 수 있도록 게시하기 위해 변경하려면 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
+AD RMS에서 가져오는 템플릿은 Azure 포털에서 만들 수 있는 사용자 지정 템플릿과 모양 및 동작이 유사합니다. 가져온 템플릿을 사용자가 응용 프로그램에서 보고 선택할 수 있도록 게시하기 위해 변경하려면 [Azure Information Protection용 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
 새로 가져온 템플릿을 게시하는 것 외에도 마이그레이션을 계속하기 전에 수행해야 하는 두 가지 중요한 템플릿 변경 사항이 있습니다. 마이그레이션 프로세스 중에 사용자에게 보다 일관된 환경을 제공하려면, 가져온 템플릿을 추가적으로 변경하지 않도록 하고, Azure Information Protection과 함께 제공되는 2개의 기본 템플릿을 게시하거나 새 템플릿을 만들지 않도록 합니다. 대신 마이그레이션 프로세스가 완료되고 AD RMS 서버 프로비전을 해제할 때까지 기다립니다.
 

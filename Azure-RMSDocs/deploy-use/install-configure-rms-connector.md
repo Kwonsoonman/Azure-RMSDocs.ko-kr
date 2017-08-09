@@ -4,7 +4,7 @@ description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be09e2c974d9d542b94bc16f140e764858cc9282
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: a8cfa6a5baf1661495fc8b485ac0a6535c22233d
+ms.sourcegitcommit: 2a1c690ca84611e5774ac8fac0fb4caba09fef2e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
 
@@ -116,6 +116,10 @@ RMS 커넥터 설치 프로세스 동안 모든 필수 구성 요소 소프트�
 > -   웹 브라우저에서 **http://&lt;connectoraddress&gt;/_wmcs/certification/servercertification.asmx**에 연결하고 *&lt;connectoraddress&gt;*를 RMS 커넥터가 설치된 서버 주소 또는 이름으로 바꿉니다. 연결에 성공하면 **ServerCertificationWebService** 페이지가 표시됩니다.
 
 RMS 커넥터를 제거해야 할 경우 마법사를 다시 실행하고 제거 옵션을 선택합니다.
+
+설치 중에 문제가 발생하면 다음 설치 로그를 확인하세요. **%LocalAppData%\Temp\Microsoft Rights Management connector_\<date and time>.log** 
+
+예를 들어 설치 로그가 C:\Users\Administrator\AppData\Local\Temp\Microsoft Rights Management connector_20170803110352.log와 비슷할 수 있습니다.
 
 ## <a name="authorizing-servers-to-use-the-rms-connector"></a>RMS 커넥터를 사용하도록 서버에 권한 부여
 두 대 이상의 컴퓨터에 RMS 커넥터를 설치한 경우 RMS 커넥터를 사용할 서버 및 서비스에 권한을 부여할 준비가 된 것입니다. Exchange Server 2013 또는 SharePoint Server 2013을 실행하는 서버를 예로 들 수 있습니다.

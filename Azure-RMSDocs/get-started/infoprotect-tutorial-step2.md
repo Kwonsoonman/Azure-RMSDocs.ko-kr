@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: db87ffaa15802f081439f7983ef1060a60c0b24c
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 86857d9fe744ee8b8949bdf247a360492ceb8165
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
@@ -33,18 +33,18 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 3. 서비스에 처음으로 연결할 때 자동으로 열리는 **빠른 시작** 페이지의 정보를 확인하세요. 나중에 이 페이지로 돌아올 수 있습니다. 이 자습서에서는 **전역 정책**을 클릭하여 **정책: 전역** 블레이드를 엽니다. 이 블레이드는 나중에 서비스에 다시 연결되면 자동으로 열리며 테넌트에 대해 자동으로 생성되는 기본 Information Protection 정책을 표시합니다.
     
-    - 분류 레이블: **개인**, **공개**, **일반**, **기밀** 및 **극비**. 마지막 두 개의 레이블은 확장되어 하위 레이블 **모든 직원** 및 **모든 사람(보호되지 않음)**을 표시하여 분류가 하위 범주를 포함할 수 있는 방식의 예를 제공합니다.
+    - 분류 레이블: **개인**, **공개**, **일반**, **기밀** 및 **극비**. 마지막 두 개의 레이블이 확장되고 **모든 직원** 및 **모든 사람(보호되지 않음)**을 포함하는 하위 레이블을 표시하여, 분류가 하위 범주를 포함할 수 있는 방식의 예를 제공합니다.
     
        > [!NOTE]
-       > 기본 정책은 이 자습서의 기본 정책과 약간 다르게 보일 수 있습니다. 예를 들어 **일반** 대신 **내부** 레이블이, **극비** 대신 **비밀**이 있을 수 있습니다. 해당하는 경우 이전 버전의 기본 정책을 사용하고 있는 것입니다. 또는 자습서를 시작하기 전에 직접 레이블을 편집했을 수 있습니다.
+       > 기본 정책은 이 자습서의 기본 정책과 약간 다르게 보일 수 있습니다. 예를 들어 **일반** 대신 **내부** 레이블이, **극비** 대신 **비밀**이 있을 수 있습니다. 또는 **받는 사람만**이라는 추가 하위 레이블이 있습니다. 테넌트용으로 작성된 시기에 따라 기본 정책의 버전이 달라지기 때문입니다. 또는 자습서를 시작하기 전에 직접 레이블을 편집했을 수 있습니다.
        > 
        > 기본 정책이 다르게 보이는 경우에도 여전히 이 자습서를 사용할 수 있지만, 뒤에 나오는 지침과 그림을 사용할 때 이러한 변경 내용을 인식해야 합니다. 현재 기본 정책과 일치하도록 기본 정책을 수정하려면 [기본 Azure Information Protection 정책](../deploy-use/configure-policy-default.md)을 참조하세요.
 
-    - 기본 구성을 사용하는 경우 일부 레이블에 구성된 시각적 표시(예: 바닥글, 머리글, 워터마크)가 없으며 레이블에 대해 보호가 설정되지 않습니다. 
+    - 기본 구성을 사용하는 경우 일부 레이블에 구성된 시각적 표시(예: 바닥글, 머리글, 워터마크)가 없습니다. 기본 정책에 따라 일부 레이블에 보호가 설정되거나 설정되지 않을 수 있습니다. 예를 들면 다음과 같습니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-labelsv2.png)
     
-    또한 일부 정책 설정은 설정되지 않습니다. 예를 들어 모든 문서 및 메일에 레이블이 필요하지 않고, 기본 레이블이 없으며, 사용자가 레이블을 변경할 때 근거를 제공하지 않아도 되는 경우입니다.
+    또한 일부 정책 설정은 설정되지 않습니다. 모든 문서 및 메일에 레이블이 필요하지 않고, 기본 레이블이 없으며, 사용자가 레이블을 변경할 때 근거를 제공하지 않아도 되는 경우입니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-settings.png)
 
@@ -64,19 +64,19 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 이전 버전의 정책을 사용하고 있어 **기밀** 레이블에 하위 레이블이 없는 경우 대신 **기밀** 레이블을 사용할 수 있습니다. 구성 단계는 같지만 레이블 블레이드의 이름은 **모든 직원**이 아닌 **기밀**이 됩니다.
 
-1. **기밀** 레이블이 확장되어 있는지 확인한 다음 해당 레이블에서 **모든 직원**을 선택합니다.
-    
-    새 **레이블: 모든 직원** 블레이드에 이제 각 레이블에 사용할 수 있는 설정이 표시됩니다. 
+1. **기밀** 레이블이 확장되어 하위 레이블이 표시되는지 확인한 다음 **모든 직원** 레이블에 대해 **Azure RMS**이 **보호** 열에 표시되는지 기록합니다. 표시되는 경우 최신 기본 정책이 있으며 이 레이블의 보호가 자동으로 구성됩니다. 이 열이 비어 있으면 이후 단계에서 보호를 구성해야 합니다.
+
+    새 **레이블: 모든 직원** 블레이드에서 이 **모든 직원** 하위 레벨을 선택하면, 이제 각 레이블에 사용할 수 있는 설정이 표시됩니다. 
 
 2. 이 레이블에 대한 **설명** 텍스트를 읽습니다. 이 텍스트는 선택한 레이블의 용도를 설명하고 사용자에게 도구 설명으로 표시되어 사용자가 선택할 레이블을 결정하는 데 도움을 줍니다.
 
-3. **이 레이블을 포함하는 문서 및 메일에 대한 권한 설정** 섹션을 찾아 **보호**를 선택합니다.
+3. 레이블에 보호가 이미 구성되어 있으면 5단계로 이동합니다.
     
-    ![Azure Information Protection 레이블에 대한 보호 구성](../media/info-protect-protection-barv2.png) 
+    레이블에 대해 보호가 구성되어 있지 않으면 **이 레이블을 포함하는 문서와 메일의 권한 설정** 섹션을 찾습니다. **보호**를 선택한 다음 **보호** 표시줄을 선택합니다.
     
-    이 작업을 수행하면 **보호**가 열립니다.
+    ![Azure Information Protection 레이블에 대해 구성된 보호](../media/info-protect-protection-bar-configured.png) 
     
-3. **보호** 블레이드에서 **Azure RMS**와 **미리 정의된 템플릿 선택**이 선택되어 있는지 확인합니다. 그런 다음 드롭다운 상자를 클릭하고 조직의 모든 사용자가 보호된 콘텐츠를 보고 편집할 수 있는 기본 템플릿을 선택합니다. 
+4. **보호** 블레이드에서 **Azure RMS**와 **미리 정의된 템플릿 선택**이 선택되어 있는지 확인합니다. 드롭다운 상자를 클릭하고 조직의 모든 사용자가 보호된 콘텐츠를 보고 편집할 수 있는 기본 템플릿을 선택합니다. 
     
     최근에 구독한 경우 이 템플릿 이름은 **Confidential \ All Employees**입니다. 
     
@@ -86,7 +86,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     이 기본 Azure 권한 관리 템플릿을 사용하지 않도록 설정한 경우 대체 템플릿을 선택합니다. 그러나 부서별 템플릿을 선택하는 경우 계정이 범위에 포함되는지 확인합니다.
     
-4. **확인**을 클릭하여 변경 내용을 저장합니다. 그러면 **보호** 블레이드가 닫힙니다. **레이블: 모든 직원** 블레이드에 구성이 반영된 것을 볼 수 있습니다.
+4. **확인**을 클릭하여 변경 내용을 저장합니다. 그러면 **보호** 블레이드가 닫힙니다. **레이블: 모든 직원** 블레이드에서 보호 표시줄이 업데이트되어 표시됩니다. 예를 들면 다음과 같습니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - Azure RMS 보호 구성됨](../media/protection-bar-configured.png)
     
@@ -96,7 +96,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 | Azure RMS 보호 설정](../media/step2-configure-watermark.png)
     
-    워터마크의 크기, 색, 레이아웃을 변경할 수는 있지만 지금은 기본값 그대로 유지하겠습니다.
+    워터마크의 크기, 색, 레이아웃을 변경할 수는 있지만 지금은 이러한 설정을 기본값 그대로 유지하겠습니다.
     
 6. **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션으로 이동합니다.
     
@@ -128,7 +128,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 10. 이 **레이블: 모든 직원** 블레이드에서 **저장**을 클릭합니다. 그런 다음 **정책:글로벌** 블레이드에서 **저장**을 다시 클릭합니다.
     
-    이때 이제 레이블은 방금 구성한 레이블에 대해 Azure RMS 보호를 표시합니다.
+    보호를 적용하도록 레이블을 구성한 경우 이제 Azure RMS 보호를 표시하도록 레이블이 업데이트됩니다.
 
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책 구성됨](../media/info-protect-policy-configuredv2.png)
     
@@ -147,6 +147,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 |자세한 정보가 필요한 경우|추가 정보|
 |--------------------------------|--------------------------|
 |정책에 대한 구성 옵션 정보|[Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)|
+|기본 정책의 구성 설정|[기본 Azure Information Protection 정책](../deploy-use/configure-policy-default.md)|
 
 
 >[!div class="step-by-step"]

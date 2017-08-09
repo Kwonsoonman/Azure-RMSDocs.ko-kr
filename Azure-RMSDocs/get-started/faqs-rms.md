@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/13/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a73dcc5e2a38c5874361f0fc2845229f505b2d3e
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 5a9f592584c090d8b0bb62acabd5775238b5e411
+ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/01/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -63,20 +63,22 @@ Rights Management 커넥터에서 정보, 경고 및 오류 메시지를 이벤�
 
 몇 가지 참고 사항:
 
-- Office 365에 대한 전역 관리자와 Azure AD에 대한 전역 관리자만 관리 포털(Office 365 관리 센터 또는 Azure 클래식 포털)을 사용하여 Azure RMS를 구성할 수 있습니다. Azure RMS에 대한 전역 관리자 역할을 할당받는 사용자는 Azure RMS PowerShell 명령을 사용하여 Azure RMS를 구성해야 합니다. 특정 작업에 대한 올바른 cmdlet을 찾는 데 도움이 필요하면 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](../deploy-use/administer-powershell.md) 항목을 참조하세요.
+- Office 365에 대한 전역 관리자와 Azure AD에 대한 전역 관리자만 Office 365 관리 센터 또는 Azure 클래식 포털을 사용하여 Azure RMS를 구성할 수 있습니다. Azure Information Protection을 위해 Azure 포털을 사용하는 경우 보안 관리자로도 로그인할 수 있습니다.
+
+- Azure RMS에 대한 전역 관리자 역할을 할당받는 사용자는 Azure RMS PowerShell 명령을 사용하여 Azure RMS를 구성해야 합니다. 특정 작업에 대한 올바른 cmdlet을 찾는 데 도움이 필요하면 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](../deploy-use/administer-powershell.md) 항목을 참조하세요.
 
 - [온보딩 컨트롤](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구성한 경우, 이 구성은 RMS 커넥터를 제외하고 Azure RMS를 관리하는 기능에 영향을 주지 않습니다. 예를 들어 콘텐츠를 보호하는 기능을 "IT 부서" 그룹으로 제한하도록 온보딩 컨트롤을 구성했으면 RMS 커넥터를 설치하고 구성하는 데 사용하는 계정은 해당 그룹의 구성원이어야 합니다. 
 
-- Azure RMS에 대한 관리자(테넌트의 전역 관리자 또는 Azure RMS 전역 관리자)는 Azure RMS로 보호된 문서나 메일에서 보호를 자동으로 제거할 수 없습니다. Azure RMS에 대한 슈퍼 사용자로 할당된 사용자만 그렇게 할 수 있으며, 이것도 슈퍼 사용자 기능을 활성화되어 있을 때 가능합니다. 그러나 테넌트의 전역 관리자와 Azure RMS 전역 관리자는 자신의 계정을 포함하여 사용자를 슈퍼 사용자로 할당할 수 있습니다. 이들은 슈퍼 사용자 기능을 활성화할 수도 있습니다. 이러한 작업은 Azure RMS 관리자 로그에 기록됩니다. 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)의 보안 모범 사례 섹션을 참조하세요. 
+- Azure RMS에 대한 관리자(예: 테넌트의 전역 관리자 또는 Azure RMS 전역 관리자)는 Azure RMS로 보호된 문서나 메일에서 보호를 자동으로 제거할 수 없습니다. Azure RMS에 대한 슈퍼 사용자로 할당된 사용자만 그렇게 할 수 있으며, 이것도 슈퍼 사용자 기능을 활성화되어 있을 때 가능합니다. 그러나 테넌트의 전역 관리자와 Azure RMS 전역 관리자는 자신의 계정을 포함하여 사용자를 슈퍼 사용자로 할당할 수 있습니다. 이들은 슈퍼 사용자 기능을 활성화할 수도 있습니다. 이러한 작업은 Azure RMS 관리자 로그에 기록됩니다. 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)의 보안 모범 사례 섹션을 참조하세요. 
 
 >[!NOTE]
-> Azure 권한 관리 보호를 구성하기 위한 템플릿 및 새 옵션은 Azure Portal로 이동되고 있습니다. 이를 통해 전역 관리자 액세스 외에도 보안 관리자가 지원됩니다. 자세한 내용은 블로그 게시물 알림 [Azure Information Protection 통합 관리 미리 보기](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/) 및 [Azure Information Protection 통합 관리 2단계](https://blogs.technet.microsoft.com/enterprisemobility/2017/05/23/azure-information-protection-unified-administration-phase-two/)를 참조하세요.
+> Azure 권한 관리 보호를 구성하기 위한 템플릿 및 새 옵션은 Azure Portal로 이동되고 있습니다. 이를 통해 전역 관리자 액세스 외에도 보안 관리자가 지원됩니다. 
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>Azure Portal에서 새 사용자 지정 템플릿을 만들려면 어떻게 해야 하나요?
 
-현재 미리 보기로 제공되는 사용자 지정 템플릿은 Azure Portal로 이동되고 있으며 여기에서 계속 템플릿으로 관리하거나 레이블로 변환할 수 있습니다. 새 템플릿을 만들려면 새 레이블을 만들고 Azure RMS에 대한 데이터 보호 설정을 구성합니다. 내부적으로 새 템플릿이 만들어진 다음 권한 관리 템플릿과 통합되는 서비스 및 응용 프로그램에서 액세스될 수 있습니다.
+사용자 지정 템플릿은 Azure Portal로 이동되고 있으며 여기에서 계속 템플릿으로 관리하거나 레이블로 변환할 수 있습니다. 새 템플릿을 만들려면 새 레이블을 만들고 Azure RMS에 대한 데이터 보호 설정을 구성합니다. 내부적으로 새 템플릿이 만들어진 다음 권한 관리 템플릿과 통합되는 서비스 및 응용 프로그램에서 액세스될 수 있습니다.
 
-Azure Portal에서 템플릿을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection 정책의 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
+Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Protection의 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Exchange Online의 사용자와 Exchange Server 서버의 다른 사용자로 구성된 Exchange의 하이브리드 배포입니다. Azure RMS에서 지원되나요?
 물론입니다. 사용자가 두 Exchange 배포에서 보호되는 메일과 첨부 파일을 원활하게 보호하고 소비할 수 있습니다. 이 구성을 사용하려면 [Azure RMS를 활성화](../deploy-use/activate-service.md)하고 [Exchange Online에 IRM을 사용하도록 설정](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)한 다음 Exchange Server용 [RMS 커넥터를 배포 및 구성](../deploy-use/deploy-rms-connector.md)합니다.
@@ -99,19 +101,14 @@ Azure Rights Management 서비스는 기업 간 공동 작업에서의 관리자
 
 이러한 계정에 대한 인증 방법은 다른 조직의 관리자가 Azure Active Directory 계정을 어떻게 구성했느냐에 따라 달라질 수 있습니다. 예를 들어, 이 계정에 대해 만든 암호, 다단계 인증(MFA), 페더레이션 또는 Active Directory Domain Services에서 생성된 후 Azure Active Directory에 동기화된 암호 등을 사용할 수 있습니다.
 
-## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>외부 사용자(회사 외부의 사용자)를 사용자 지정 템플릿에 추가할 수 있나요?
-예. 최종 사용자(및 관리자)가 응용 프로그램에서 선택할 수 있는 사용자 지정 템플릿을 만들면 지정한 사전 정의 정책을 통해 정보 보호를 쉽고 빠르게 적용할 수 있습니다. 템플릿의 설정 중 하나는 콘텐츠에 액세스할 수 있는 사용자이며, 조직 내의 사용자 및 그룹과 조직 외부의 사용자 및 그룹을 지정할 수 있습니다. 
+## <a name="can-i-add-external-users-people-from-outside-my-company-to-templates"></a>외부 사용자(회사 외부의 사용자)를 템플릿에 추가할 수 있나요?
+예. 최종 사용자(및 관리자)가 응용 프로그램에서 선택할 수 있는 템플릿을 만들면 지정한 사전 정의 정책을 통해 정보 보호를 쉽고 빠르게 적용할 수 있습니다. 템플릿의 설정 중 하나는 콘텐츠에 액세스할 수 있는 사용자이며, 조직 내의 사용자 및 그룹과 조직 외부의 사용자 및 그룹을 지정할 수 있습니다. 다른 조직의 모든 사용자도 지정할 수 있습니다.
 
-조직 외부에서 사용자를 지정하려면 템플릿을 구성할 때 Azure 클래식 포털에서 선택하는 그룹에 연락처로 추가합니다. 조직 외부의 그룹을 지정하려면 [Azure Rights Management용 Windows PowerShell 모듈](../deploy-use/install-powershell.md)을 사용합니다. 이 모듈을 사용하여 개별 외부 사용자는 물론 다른 조직의 사용자까지도 지정할 수 있습니다.
+[보호 설정](../deploy-use/configure-policy-protection.md)을 구성할 때 Azure 포털을 사용하여 이 구성을 수행할 수 있습니다. 또는 PowerShell을 사용하여 이 구성을 수행할 수 있습니다. PowerShell을 사용하려면 다음을 수행하세요.
 
--   **권한 정의 개체를 사용하여 템플릿을 생성하거나 업데이트**합니다.    권한 정의 개체에서 외부 메일 주소 및 해당 권한을 지정한 다음 템플릿을 만들거나 업데이트할 때 사용합니다. [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet을 통해 변수를 만든 다음 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet(새 템플릿의 경우) 또는 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet(기존 템플릿을 수정하는 경우)을 통해 이 변수를 -RightsDefinition 매개 변수에 제공하여 권한 정의 개체를 지정합니다. 그러나 기존 템플릿에 이러한 사용자를 추가하는 경우 외부 사용자뿐 아니라 템플릿의 기존 그룹에 대해 권한 정의 개체를 정의해야 합니다.
+-   **권한 정의 개체를 사용하여 템플릿을 생성하거나 업데이트**합니다.  권한 정의 개체에서 외부 메일 주소 및 해당 권한을 지정한 다음 템플릿을 만들거나 업데이트할 때 사용합니다. [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet을 통해 변수를 만든 다음 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet(새 템플릿의 경우) 또는 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet(기존 템플릿을 수정하는 경우)을 통해 이 변수를 RightsDefinition 매개 변수에 제공하여 권한 정의 개체를 지정합니다. 그러나 기존 템플릿에 이러한 사용자를 추가하는 경우 외부 사용자뿐 아니라 템플릿의 기존 그룹에 대해 권한 정의 개체를 정의해야 합니다.
 
-사용자 지정 템플릿에 대한 자세한 내용은 [Azure Rights Management Service용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
-
-> [!TIP]
-> Azure 권한 관리 보호를 구성하기 위한 템플릿 및 새 옵션은 Azure Portal로 이동되고 있습니다. 이러한 새 옵션을 사용하면 외부 사용자를 더 쉽게 지정할 수 있으므로 더 이상 외부 사용자가 포함된 그룹이나 PowerShell을 사용할 필요가 없습니다. 이 기능은 현재 미리 보기 [Azure Information Protection 통합 관리 미리 보기](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/26/azure-information-protection-unified-administration-now-in-preview/)로 제공됩니다. 
-
-> 문서화된 지침을 보려면 [Rights Management 보호를 적용하도록 레이블을 구성하려면](../deploy-use/configure-policy-protection.md#to-configure-a-label-for-rights-management-protection)을 참조하세요.
+템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure AD의 동적 그룹에서 Azure RMS가 작동하나요?
 Azure AD Premium 기능을 사용하면 [특성 기반 규칙](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)을 지정하여 보안 그룹에 대한 동적 멤버 자격을 구성할 수 있습니다. 이 그룹 유형은 전자 메일 주소를 지원하지 않으며 Azure 권한 관리 서비스에서도 사용할 수 없습니다. 그러나 Office 365 그룹은 동적 그룹 구성원 자격 및 메일 기능이 지원됩니다. 이 그룹은 메일 사용이 가능하므로 Azure Rights Management 보호와 함께 사용할 수 있습니다.
@@ -120,7 +117,7 @@ Azure 권한 관리 서비스에서 사용할 수 있는 사용자 및 그룹에
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>보호된 메일을 Gmail 또는 Hotmail 계정으로 보내려면 어떻게 해야 하나요?
 
-Azure Information Protection에서 보호된 메일을 Gmail 또는 Hotmail 계정으로 보내는 방법에 관한 참조 정보나 데모를 보았을 수 있습니다. 이 기능은 아직 비공개 미리 보기 상태이므로 공개 미리 보기로 릴리스되기 전에는 이 문서에서 자세한 관련 정보를 찾을 수 없습니다.
+Azure Information Protection에서 보호된 메일을 Gmail 또는 Hotmail 계정으로 보내는 방법에 관한 참조 정보나 데모를 보았을 수 있습니다. 이 기능은 아직 비공개 미리 보기 상태이므로 완전히 릴리스되기 전에는 이 문서에서 자세한 관련 정보를 찾을 수 없습니다.
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS에서는 어떤 장치 및 파일 형식을 지원하나요?
 Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요. 현재는 지원 장치 중 일부만 모든 Rights Management 기능을 지원하기 때문에 [RMS 기반 응용 프로그램](../get-started/requirements-applications.md#rms-enlightened-applications) 표도 확인해야 합니다.
@@ -154,7 +151,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 그러나 회사 정책에서 하드웨어 보안 모듈(HSM)의 사용을 요구하고 이러한 모듈이 Azure Information Protection 배포를 차단하는 경우, Exchange용 Rights Management 보호 기능을 축소한 상태로 지금 BYOK로 Azure Information Protection을 배포할 수도 있습니다. 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)에서 [BYOK 가격 및 제한 사항](../plan-design/byok-price-restrictions.md)을 참조하세요.
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>SharePoint 보호 라이브러리에서 작동하지 않는 것 같은 기능이 있습니다. 이 기능에 대한 지원이 예정되어 있나요?
-현재, SharePoint는 사용자 지정 템플릿, 문서 추적 및 일부 다른 기능을 지원하지 않는 IRM 보호 라이브러리를 사용하여 Rights Management 보호 문서를 지원합니다. 자세한 내용은 [Office 응용 프로그램 및 서비스](../understand-explore/office-apps-services-support.md) 문서에서 [SharePoint Online 및 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
+현재, SharePoint는 Rights Management 템플릿, 문서 추적 및 일부 다른 기능을 지원하지 않는 IRM 보호 라이브러리를 사용하여 RMS 보호 문서를 지원합니다. 자세한 내용은 [Office 응용 프로그램 및 서비스](../understand-explore/office-apps-services-support.md) 문서에서 [SharePoint Online 및 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
 
 아직 지원되지 않는 특정 기능에 관심이 있는 경우 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)의 공지에 관심을 기울이시기 바랍니다.
 
@@ -179,7 +176,7 @@ Azure Information Protection는 모든 사용자와 안전하게 공유할 수 �
 
 문서를 보호한 사용자인 [Rights Management 발급자](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)는 이 해지에서 제외되며 문서에 항상 액세스할 수 있습니다. 
 
-테넌트에 대한 사용권 유효 기간의 기본값은 30일이며 PowerShell cmdlet **Set-AadrmMaxUseLicenseValidityTime**을 사용하여 이 값을 구성할 수 있습니다. 이 설정은 사용자 지정 템플릿의 더 제한적인 설정으로 재정의할 수 있습니다. 
+테넌트에 대한 사용권 유효 기간의 기본값은 30일이며 PowerShell cmdlet **Set-AadrmMaxUseLicenseValidityTime**을 사용하여 이 값을 구성할 수 있습니다. 이 설정은 템플릿의 더 제한적인 설정으로 재정의할 수 있습니다. 
 
 자세한 내용 및 사용권 사용 방법의 예는 [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime)에 대한 자세한 설명을 참조하세요.
 

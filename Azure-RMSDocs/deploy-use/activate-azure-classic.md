@@ -4,7 +4,7 @@ description: "Azure Portal 액세스 권한이 있는 경우의 Azure Rights Man
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,20 @@ ms.technology: techgroup-identity
 ms.assetid: 9b0a0227-88ce-44b8-ba3f-31eeaab27ff7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1066ff9dc628c5df379fe3ce9126b42639ed23b1
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: d757d4fa93bfb1277ed38a955f563bcd2595fe4e
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-classic-portal"></a>Azure 클래식 포털에서 Azure 권한 관리를 활성화하는 방법
 
 >*적용 대상: Azure Information Protection*
 
+> [!NOTE]
+>이 기능은 Azure 포털로 이동하고 있으며 현재 미리 보기 상태에 있습니다. 자세한 내용은 [Azure 포털에서 Azure Rights Management 활성화하는 방법](activate-azure.md)을 참조하세요.
 
-Azure 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Information Protection Premium 구독이 있는 경우입니다.
+Azure 클래식 포털에 액세스할 수 있는 경우 다음 지침을 따르세요. 예를 들어 Enterprise Mobility Suite 구독이 있거나 Azure Information Protection Premium 구독이 있는 경우입니다.
 
 > [!TIP]
 > 2분 동영상 시청: [Azure RMS를 활성화하는 방법](https://channel9.msdn.com/series/pit-stop-enterprise-mobility-suite/activate-azure-rms)
@@ -55,6 +57,6 @@ Rights Management 서비스가 사용되도록 설정되고 사용할 준비가 
 |**권한 없음**|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스 상태를 볼 권한이 없습니다. 예를 들어 계정이 잠겼거나 선택한 테넌트에 대한 전역 관리자가 아닙니다.|
 
 ## <a name="next-steps"></a>다음 단계
-[Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
+[Azure Rights Management 활성화](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)를 다시 읽어보세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

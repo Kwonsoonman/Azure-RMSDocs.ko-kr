@@ -1,5 +1,5 @@
 ---
-title: "FCI를 사용하는 파일 서버 - Azure Information Protection"
+title: "FCI를 사용하는 파일 서버에서 AIP의 Azure RMS를 지원하는 방법"
 description: "Office 문서를 자동으로 보호하기 위해 RMS 커넥터를 배포할 때 Azure RMS에서 Windows Server 파일 분류 인프라를 사용하는 방법을 설명합니다."
 author: cabailey
 ms.author: cabailey
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 8fdad425-5daf-4ce1-822f-9d2fb0b87df1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7f49fc1613afcfdbad1f1f13e827a866b8ebe6f9
-ms.sourcegitcommit: 0fd2e63822280ec96ab957e22868c63de9ef3d47
+ms.openlocfilehash: 3f7a06edc5d685d9ca103d9e7cd0f70c3a5f7874
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/31/2017
 ---
-# <a name="file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci"></a>Windows Server를 실행하고 FCI(파일 분류 인프라)를 사용하는 파일 서버
+# <a name="how-file-servers-that-run-windows-server-and-use-file-classification-infrastructure-fci-support-azure-rights-management"></a>Windows Server를 실행하고 FCI(파일 분류 인프라)를 사용하는 파일 서버에서 Azure Rights Management를 지원하는 방식
 
 >*적용 대상: Azure Information Protection, Office 365*
 

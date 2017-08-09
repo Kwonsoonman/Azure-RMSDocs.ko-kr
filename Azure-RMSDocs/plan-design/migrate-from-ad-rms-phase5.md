@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 85b00b8f1e6bd8612b4bd49770e2ff4a934d3177
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 2ab4d8c9d253098b4f9ecb7fb820a3df1891e124
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>마이그레이션 5단계 - 마이그레이션 후 작업
 
@@ -43,7 +43,7 @@ SCP를 제거하려면 도메인 엔터프라이즈 관리자로 로그인하고
 
 RMS 클라이언트가 이러한 서버와 더 이상 통신하지 않으며 클라이언트가 Azure Information Protection을 성공적으로 사용하고 있는지 확인한 다음, 이러한 서버에서 AD RMS 서버 역할을 제거할 수 있습니다. 전용 서버를 사용하는 경우, 일정 기간 동안 서버를 종료한 후 이러한 서버를 다시 시작해야 하는 문제가 보고되지 않았는지 확인하는 준비 단계를 거쳐 클라이언트가 Azure Information Protection을 사용하지 않는 이유를 조사할 때 서비스가 중단되지 않도록 할 수 있습니다.
 
-AD RMS 서버 프로비전을 해제한 후에는 Azure 클래식 포털에서 템플릿을 검토하고 통합하여 사용자가 더 적은 수의 템플릿 중에서 선택하거나, 템플릿을 다시 구성하거나, 새 템플릿을 추가할 기회를 제공할 수 있습니다. 이때 기본 템플릿을 게시하는 것도 좋습니다. 자세한 내용은 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](../deploy-use/configure-custom-templates.md)을 참조하세요.
+AD RMS 서버 프로비전을 해제한 후에는 Azure 포털에서 템플릿을 검토하고 통합하여 사용자가 더 적은 수의 템플릿 중에서 선택하거나, 템플릿을 다시 구성하거나, 새 템플릿을 추가할 기회를 제공할 수 있습니다. 이때 기본 템플릿을 게시하는 것도 좋습니다. 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
 >[!IMPORTANT]
 > 이 마이그레이션이 끝나면 AD RMS 클러스터를 Azure Information Protection 및 HYOK(Hold Your Own Key) 옵션에 사용할 수 없습니다. 현재 구현된 리디렉션 때문에 Azure Information Protection 레이블에 HYOK를 사용하기로 한 경우 사용하는 AD RMS 클러스터의 라이선스 URL은 마이그레이션한 클러스터의 라이선스 URL과 달라야 합니다.

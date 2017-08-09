@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스(
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/08/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 018d04dc408230bf9a104f460930797d0a558ce7
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 53d60803b09133bc9e2bd5c1399d1b3cec1f0ded
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-PowerShell을 사용하여 Azure Information Protection에 대한 Azure Rights Management 서비스를 관리해야 하나요? 전역 관리자인 경우 이러한 작업이 필요하지 않을 수 있으며 이 서비스에 대해 필요한 구성은 활성화(또는 비활성화)하고 Rights Management 템플릿을 구성하는 것입니다.
+PowerShell을 사용하여 Azure Information Protection에 대한 Azure Rights Management 서비스를 관리해야 하나요? 전역 관리자 또는 [보안 관리자](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)인 경우 이러한 작업이 필요하지 않을 수 있으며 이 서비스에 대해 필요한 구성은 활성화(또는 비활성화)하고 Rights Management 템플릿을 구성하는 것입니다.
 
-그러나 더 많은 고급 구성을 수행하려면 PowerShell을 사용해야 하며 전역 관리자가 아니고 전역 관리자가 서비스를 관리할 수 있는 권한을 부여한 경우에도 PowerShell을 사용해야 합니다. 보다 효율적인 명령줄 제어 및 스크립팅을 위해 PowerShell을 사용하려고 할 수도 있습니다.
+그러나 더 많은 고급 구성을 수행하려면 PowerShell을 사용해야 하며 전역 관리자 또는 보안 관리자가 아니고 전역 관리자가 서비스를 관리할 수 있는 권한을 부여한 경우에도 PowerShell을 사용해야 합니다. 보다 효율적인 명령줄 제어 및 스크립팅을 위해 PowerShell을 사용하려고 할 수도 있습니다.
 
 다음 섹션에 제공된 표에는 PowerShell을 사용하는 몇 가지 고급 구성 시나리오가 나와 있습니다. PowerShell을 사용하지 않고도 구성을 완료할 수 있으며 이 정보는 표에도 나와 있습니다.
 
@@ -45,7 +45,7 @@ Azure Information Protection 클라이언트는 이 서비스 쪽 PowerShell 모
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스 활성화/비활성화<br /><br />관리 포털에서 이러한 작업을 수행할 수도 있습니다. 자세한 내용은 [Azure Rights Management 서비스 활성화](activate-service.md)를 참조하세요.|[Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)<br /><br />[Disable-Aadrm](/powershell/aadrm/vlatest/disable-aadrm)|
 |Azure Information Protection에 대한 문서 추적 사이트를 사용하도록 설정하거나 사용하지 않도록 설정합니다.|[Disable-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/disable-aadrmdocumenttrackingfeature)<br /><br />[Enable-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/enable-aadrmdocumenttrackingfeature)<br /><br />[Get-AadrmDocumentTrackingFeature](/powershell/aadrm/vlatest/get-aadrmdocumenttrackingfeature)<br /><br />[Set-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/set-aadrmdonottrackusergroup)<br /><br />[Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup)<br /><br />[Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup)|
 |Azure Rights Management 서비스의 단계적 배포를 위해 온보딩 컨트롤을 구성합니다.|[Get-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/get-aadrmonboardingcontrolpolicy)<br /><br />[Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy)|
-|조직의 Rights Management 템플릿을 만들고 관리합니다.<br /><br />PowerShell에서는 좀 더 세부적인 제어 기능을 제공하지만 이러한 작업 대부분을 Azure 클래식 포털에서 수행할 수도 있습니다. 자세한 내용은 [Azure Rights Management 서비스용 사용자 지정 템플릿 구성](configure-custom-templates.md)을 참조하세요.|[Add-AadrmTemplate](/powershell/aadrm/vlatest/add-aadrmtemplate)<br /><br />[Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate)<br /><br />[Get-AadrmTemplate](/powershell/aadrm/vlatest/get-aadrmtemplate)<br /><br />[Get-AadrmTemplateProperty](/powershell/aadrm/vlatest/get-aadrmtemplateproperty)<br /><br />[Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate)<br /><br />[New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition)<br /><br />[Remove-AadrmTemplate](/powershell/aadrm/vlatest/remove-aadrmtemplate)<br /><br />[Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty)|
+|조직의 Rights Management 템플릿을 만들고 관리합니다.<br /><br />PowerShell에서는 좀 더 세부적인 제어 기능을 제공하지만 이러한 작업 대부분을 Azure 포털에서 수행할 수도 있습니다. 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.|[Add-AadrmTemplate](/powershell/aadrm/vlatest/add-aadrmtemplate)<br /><br />[Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate)<br /><br />[Get-AadrmTemplate](/powershell/aadrm/vlatest/get-aadrmtemplate)<br /><br />[Get-AadrmTemplateProperty](/powershell/aadrm/vlatest/get-aadrmtemplateproperty)<br /><br />[Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate)<br /><br />[New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition)<br /><br />[Remove-AadrmTemplate](/powershell/aadrm/vlatest/remove-aadrmtemplate)<br /><br />[Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty)|
 |조직에서 보호하는 콘텐츠 최대 일 수를 구성하면 인터넷 연결 없이 액세스될 수 있습니다.(사용 라이선스 유효 기간)|[Get-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/get-aadrmmaxuselicensevaliditytime)<br /><br />[Set-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/set-aadrmmaxuselicensevaliditytime)|
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 슈퍼 사용자 기능 관리|[Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature)<br /><br />[Disable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/disable-aadrmsuperuserfeature)<br /><br />[Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser)<br /><br />[Get-AadrmSuperUser](/powershell/aadrm/vlatest/get-aadrmsuperuser)<br /><br />[Remove-AadrmSuperUser](/powershell/aadrm/vlatest/remove-aadrmsuperuser)<br /><br />[Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup)<br /><br />[Get-AadrmSuperUserGroup](/powershell/aadrm/vlatest/get-aadrmsuperusergroup)<br /><br />[Clear-AadrmSuperUserGroup](/powershell/aadrm/vlatest/clear-aadrmsuperusergroup)|
 |조직의 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 서비스 관리 권한이 있는 사용자 및 그룹 관리|[Add-AadrmRoleBasedAdministrator](/powershell/aadrm/vlatest/add-aadrmrolebasedadministrator)<br /><br />[Get-AadrmRoleBasedAdministrator](/powershell/aadrm/vlatest/get-aadrmrolebasedadministrator)<br /><br />[Remove-AadrmRoleBasedAdministrator](/powershell/aadrm/vlatest/remove-aadrmrolebasedadministrator)|

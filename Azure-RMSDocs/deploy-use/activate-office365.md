@@ -4,7 +4,7 @@ description: "새 버전의 Office 365 관리 센터를 사용할 때의 Azure R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c1a32450d7412006835ad6d3c37de3c6ec38b64d
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: ec41508974244a7abe4faf67831d348775cdc73c
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>Office 365 관리 센터에서 Azure 권한 관리를 활성화하는 방법
 
@@ -50,6 +50,6 @@ Office 365 관리 센터에서 Azure 권한 관리 서비스에 액세스해야 
 
 
 ## <a name="next-steps"></a>다음 단계
-[Azure 권한 관리 활성화](activate-service.md)로 돌아갑니다.
+[Azure Rights Management 활성화](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)를 다시 읽어보세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

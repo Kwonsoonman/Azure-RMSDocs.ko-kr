@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 587d24a005452874ca06b8fc179b25e91a7f0130
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a1f448a51ee4bfecfd0d680b842eed44aa816ed1
+ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/02/2017
 ---
 # <a name="migration-phase-1---preparation"></a>마이그레이션 1단계 - 준비
 
@@ -50,7 +50,11 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
     
 3. **LicensingIntranetDistributionPointUrl**에 대해 표시되는 값을 복사하고 이 문자열에서 `/_wmcs\licensing`을 제거합니다. 
     
-    남은 것은 Azure Information Protection 테넌트의 Azure Rights Management 서비스 URL이며, 다음 마이그레이션 지침에 대개 *테넌트 URL*로 줄여서 표현되어 있습니다.
+    Azure Information Protection 테넌트용 Azure Rights Management 서비스 URL이 남습니다. 이 값은 다음과 같은 마이그레이션 지침에서 *테넌트 URL*로 짧게 명시됩니다.
+    
+    다음 PowerShell 명령을 실행하여 올바른 값이 있는지 확인할 수 있습니다.
+    
+            (Get-AadrmConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
 ## <a name="step-2-prepare-for-client-migration"></a>2단계. 클라이언트 마이그레이션에 대한 준비
 

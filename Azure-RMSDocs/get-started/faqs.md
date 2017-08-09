@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/15/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cbceb3f3e68c558576cc275793dac6feb3b9245b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 7e8f49a9775ac6eab89b72a50f8ca866875313a5
+ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/28/2017
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -45,7 +45,7 @@ Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 
 
 Windows용 Azure Information Protection 클라이언트가 설치되어 있고 Azure Information Protection 정책이 없는 경우는 클라이언트가 자동으로 [보호 전용 모드](../rms-client/client-protection-only-mode.md)에서 작동합니다. 이 모드에서 사용자는 Rights Management 템플릿과 사용자 지정 권한을 쉽게 적용할 수 있습니다. 나중에 분류 및 레이블 지정이 포함된 구독을 구입하면 Azure Information Protection 정책을 다운로드할 때 클라이언트가 자동으로 표준 모드로 전환됩니다.
 
-현재 Windows용 Rights Management 공유 응용 프로그램을 사용하고 있다면 Azure Information Protection 클라이언트로 교체할 것을 권장합니다. 공유 응용 프로그램에 대한 지원은 2018년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 응용 프로그램으로 수행해왔던 작업](../rms-client/upgrade-client-app.md)을 참조하세요.
+현재 Windows용 Rights Management 공유 응용 프로그램을 사용하고 있다면 Azure Information Protection 클라이언트로 교체할 것을 권장합니다. 공유 응용 프로그램에 대한 지원은 2019년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 응용 프로그램으로 수행해왔던 작업](../rms-client/upgrade-client-app.md)을 참조하세요.
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 

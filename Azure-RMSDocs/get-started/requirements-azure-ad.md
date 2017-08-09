@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ac14cb491c39f57c7a0f81d71300db3917587cd9
-ms.sourcegitcommit: 55c36739e1d9f3f0cf2e1777fe4302b443a49b8e
+ms.openlocfilehash: 2a079dbc1df01c8c9402d7d79e3f587f13b44654
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-Azure Information Protection을 사용하려면 Azure AD 디렉터리가 있어야 합니다. Azure 클래식 포털에 로그인하려면 이 디렉터리의 조직 계정을 사용합니다. Azure 클래식 포털에서는 Rights Management 템플릿을 구성 및 관리하는 등의 작업을 할 수 있습니다.
+Azure Information Protection을 사용하려면 Azure AD 디렉터리가 있어야 합니다. Azure 포털에 로그인하려면 이 디렉터리의 조직 계정을 사용합니다. Azure 클래식 포털에서는 Rights Management 템플릿을 구성 및 관리하는 등의 작업을 할 수 있습니다.
 
 조직에 아직 Azure 구독이 없는 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. 이렇게 하려면 [Azure 시작하기](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따릅니다.
 

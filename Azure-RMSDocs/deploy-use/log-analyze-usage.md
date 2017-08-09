@@ -4,7 +4,7 @@ description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 92b64867486f64dd5920c578faeb411104f00ebd
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 032fb5525d1bd4f32419358cdeae5efe1be30f56
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
@@ -175,27 +175,27 @@ Azure Rights Management 서비스에는 다양한 요청 형식이 있습니다.
 |AcquirePreLicense|사용자 대신 클라이언트가 RMS로 보호된 콘텐츠에 대한 라이선스를 요청합니다.|
 |AcquireTemplates|템플릿 ID에 따라 템플릿을 얻도록 호출했습니다.|
 |AcquireTemplateInformation|서비스에서 템플릿 ID를 가져오도록 호출했습니다.|
-|AddTemplate|Azure 클래식 포털에서 템플릿을 추가하도록 호출합니다.|
+|AddTemplate|Azure 포털에서 템플릿을 추가하도록 호출합니다.|
 |AllDocsCsv|**모든 문서** 페이지에서 CSV 파일을 다운로드하도록 문서 추적 사이트에서 호출합니다.|
 |BECreateEndUserLicenseV1|모바일 장치에서 최종 사용자 라이선스를 만들도록 호출합니다.|
 |BEGetAllTemplatesV1|모바일 장치(백 엔드)에서 모든 템플릿을 가져오도록 호출합니다.|
 |Certify|클라이언트가 보호할 콘텐츠를 인증합니다.|
-|DeleteTemplateById|Azure 클래식 포털에서 템플릿 ID별로 템플릿을 삭제하도록 호출합니다.|
+|DeleteTemplateById|Azure 포털에서 템플릿 ID별로 템플릿을 삭제하도록 호출합니다.|
 |DocumentEventsCsv|단일 문서에 대한 .CSV 파일을 다운로드하도록 문서 추적 사이트에서 호출합니다.|
-|ExportTemplateById|Azure 클래식 포털에서 템플릿 ID에 따라 템플릿을 내보내도록 호출합니다.|
+|ExportTemplateById|Azure 포털에서 템플릿 ID에 따라 템플릿을 내보내도록 호출합니다.|
 |FECreateEndUserLicenseV1|AcquireLicense 요청과 비슷하지만 모바일 장치에서 수행하는 요청입니다.|
 |FECreatePublishingLicenseV1|Certify 및 GetClientLicensorCert가 결합된 형태의 요청으로, 모바일 클라이언트에서 사용됩니다.|
 |FEGetAllTemplates|모바일 장치(프런트 엔드)에서 템플릿을 가져오도록 호출합니다.|
 |FindServiceLocationsForUser|Certify 또는 AcquireLicense를 호출하는 데 사용되는 Url을 쿼리하도록 호출합니다.|
 |GetAllDocs|사용자에 대한 **모든 문서** 페이지를 로드하거나 테넌트에 대한 모든 문서를 검색하도록 문서 추적 사이트에서 호출합니다. 관리 작업 및 관리자 권한으로 실행 필드와 함께 이 값을 사용합니다.<br /><br />- 관리 작업이 비어 있는 경우: 사용자에게 해당 문서에 대한 **모든 문서** 페이지가 표시됩니다.<br /><br />- 관리 작업이 true이고 사용자 권한으로 실행이 비어 있는 경우: 관리자에게 해당 테넌트에 대한 모든 문서가 표시됩니다.<br /><br />- 관리 작업이 true이고 사용자 권한으로 실행이 비어 있지 않은 경우: 관리자에게 사용자에 대한 **모든 문서**가 표시됩니다.|
-|GetAllTemplates|Azure 클래식 포털에서 모든 템플릿을 가져오도록 호출합니다.|
+|GetAllTemplates|Azure 포털에서 모든 템플릿을 가져오도록 호출합니다.|
 |GetClientLicensorCert|클라이언트가 Windows 기반 컴퓨터에서 게시 인증서(나중에 콘텐츠를 보호하는 데 사용됨)를 요청합니다.|
 |GetConfiguration|Azure PowerShell cmdlet은 Azure RMS 테넌트의 구성을 가져오도록 호출됩니다.|
 |GetConnectorAuthorizations|RMS 커넥터에서 클라우드로부터 해당 구성을 가져오도록 호출합니다.|
 |GetRecipients|단일 문서에 대한 목록 보기로 이동하도록 문서 추적 사이트에서 호출합니다.|
 |GetSingle|**단일 문서**이동하도록 문서 추적 사이트에서 호출합니다.|
-|GetTenantFunctionalState|Azure 클래식 포털에서 Azure Rights Management 서비스 활성화 여부를 확인합니다.|
-|GetTemplateById|Azure 클래식 포털에서 템플릿 ID를 지정하여 템플릿을 가져오도록 호출합니다.|
+|GetTenantFunctionalState|Azure 포털에서 Azure Rights Management 서비스 활성화 여부를 확인합니다.|
+|GetTemplateById|Azure 포털에서 템플릿 ID를 지정하여 템플릿을 가져오도록 호출합니다.|
 |KeyVaultDecryptRequest|클라이언트가 RMS로 보호된 콘텐츠의 암호 해독을 시도합니다. Azure 주요 자격 증명 모음에서 고객이 관리하는 테넌트 키(BYOK)에 대해서만 적용할 수 있습니다.|
 |KeyVaultGetKeyInfoRequest|Azure Key Vault에서 Azure Information Protection 테넌트 키에 대해 사용되도록 지정된 키가 액세스 가능하며 이미 사용되지 않는지 확인하기 위해 호출합니다.|
 |KeyVaultSignDigest|서명 용도로 Azure 주요 자격 증명 모음의 고객 관리 키(BYOK)를 사용할 때 호출합니다. 대개 AcquireLicence(또는 FECreateEndUserLicenseV1), Certify 및 GetClientLicensorCert(또는 FECreatePublishingLicenseV1)당 한 번씩만 호출합니다.|
@@ -204,14 +204,14 @@ Azure Rights Management 서비스에는 다양한 요청 형식이 있습니다.
 |LoadEventsForMap|단일 문서에 대한 맵 보기로 이동하도록 문서 추적 사이트에서 호출합니다.|
 |LoadEventsForSummary|단일 문서에 대한 타임라인 보기로 이동하도록 문서 추적 사이트에서 호출합니다.|
 |LoadEventsForTimeline|단일 문서에 대한 맵 보기로 이동하도록 문서 추적 사이트에서 호출합니다.|
-|ImportTemplate|Azure 클래식 포털에서 템플릿을 가져오도록 호출합니다.|
+|ImportTemplate|Azure 포털에서 템플릿을 가져오도록 호출합니다.|
 |RevokeAccess|문서를 취소하도록 문서 추적 사이트에서 호출합니다.|
 |SearchUsers |테넌트의 모든 사용자를 검색하도록 문서 추적 사이트에서 호출합니다.|
 |ServerCertify|RMS 사용 클라이언트(예: SharePoint)에서 서버를 인증하도록 호출합니다.|
 |SetUsageLogFeatureState|사용 현황 로깅을 사용하도록 호출합니다.|
 |SetUsageLogStorageAccount|Azure Rights Management 서비스 로그의 위치를 지정하도록 호출합니다.|
 |UpdateNotificationSettings|단일 문서에 대한 알림 설정을 변경하도록 문서 추적 사이트에서 호출합니다.|
-|UpdateTemplate|Azure 클래식 포털에서 기존 템플릿을 업데이트하도록 호출합니다.|
+|UpdateTemplate|Azure 포털에서 기존 템플릿을 업데이트하도록 호출합니다.|
 
 
 ## <a name="windows-powershell-reference"></a>Windows PowerShell 참조

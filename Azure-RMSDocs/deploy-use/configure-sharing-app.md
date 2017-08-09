@@ -4,7 +4,7 @@ description: "관리자가 Windows 컴퓨터 및 모바일 장치에서 RMS(Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: af5541ab5dcec7224d1048121460b58b1ca13c48
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 65b4a60909f93090fa2e6d27660e1ed20f410955
+ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/28/2017
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
 > [!IMPORTANT]
-> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2018년 1월 31일에 중지됩니다. 
+> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
  
 RMS 공유 응용 프로그램은 Office 2010에 대한 인증 지원을 제공하고 사용자가 리본에서 직접 파일과 메일을 쉽게 보호할 수 있도록 Office 추가 기능을 설치하여 Office 응용 프로그램과 통합됩니다. 또한 Azure Rights Management 서비스에서 기본적으로 지원되지 않는 파일 형식에 대해 일반적인 보호를 제공하고 사용자가 보호한 파일을 추적하고 취소할 수 있도록 문서 추적 사이트를 제공합니다.
 

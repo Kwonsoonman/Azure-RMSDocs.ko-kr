@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/24/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a093ca8cdd02448c877554ff87e971e956eab789
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 62ea1579b61b096e1f7fe6900d72b1b8077c9ff1
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-Azure Information Protection의 Azure Rights Management 서비스를 사용하여 파일 또는 메일에 보호를 설정하고 템플릿을 사용하지 않는 경우 직접 사용 권한을 구성해야 합니다. 또한 Azure Rights Management에 대한 사용자 지정 템플릿을 구성할 때 선택한 사용 권한은 사용자, 관리자 또는 구성된 서비스에서 해당 템플릿을 선택할 경우 자동으로 적용됩니다. 예를 들어 Azure 클래식 포털에서 사용 권한의 논리적 그룹화를 구성하는 역할을 선택하거나 개별 권한을 구성할 수 있습니다.
+Azure Information Protection의 Azure Rights Management 서비스를 사용하여 파일 또는 메일에 보호를 설정하고 템플릿을 사용하지 않는 경우 직접 사용 권한을 구성해야 합니다. 또한 Azure Rights Management 보호에 대한 템플릿 또는 레이블을 구성할 때 선택한 사용 권한은 사용자, 관리자 또는 구성된 서비스에서 해당 템플릿 또는 레이블을 선택할 경우 자동으로 적용됩니다. 예를 들어 Azure 포털에서 사용 권한의 논리적 그룹화를 구성하는 역할을 선택하거나 개별 권한을 구성할 수 있습니다.
 
 이 문서는 사용 중인 응용 프로그램에 대해 원하는 사용 권한을 구성하고 이러한 권한이 응용 프로그램에서 해석되는 방법을 이해하는데 도움이 됩니다.
 
@@ -85,7 +85,7 @@ Windows용 Azure Information Protection 클라이언트에는 포함되어 있�
 
 Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web Access 앱 및 Exchange 전송 규칙)에는 메일에 대한 추가 정보 권한 보호 옵션인 **전달 금지**가 있습니다. 
 
-선택할 수 있는 기본 권한 관리 템플릿처럼 이 옵션이 사용자(및 Exchange 관리자)에게 표시되지만 **전달 금지**는 템플릿이 아닙니다. 이것이 바로 Azure Rights Management의 템플릿을 보고 관리할 때 Azure 클래식 포털에서 이 옵션을 볼 수 없는 이유입니다. 대신, **전달 금지** 옵션은 사용자가 메일 수신자에게 동적으로 적용하는 권한 집합입니다.
+선택할 수 있는 기본 권한 관리 템플릿처럼 이 옵션이 사용자(및 Exchange 관리자)에게 표시되지만 **전달 금지**는 템플릿이 아닙니다. 이것이 바로 Azure Rights Management의 템플릿을 보고 관리할 때 Azure 포털에서 이 옵션을 볼 수 없는 이유입니다. 대신, **전달 금지** 옵션은 사용자가 메일 수신자에게 동적으로 적용하는 권한 집합입니다.
 
 **전달 금지** 옵션을 메일에 적용하면 수신자는 메일을 전달하거나, 인쇄하거나, 메일에서 복사하거나, 첨부 파일을 저장하거나 다른 이름으로 저장할 수 없습니다. 예를 들어, Outlook 클라이언트에서 전달 단추를 사용할 수 없고, **다른 이름으로 저장**, **첨부 파일 저장** 및 **인쇄** 메뉴 옵션을 사용할 수 없으며, **받는 사람**, **참조** 또는 **숨은 참조** 상자에서 수신자를 추가하거나 변경할 수 없습니다.
 
@@ -129,7 +129,7 @@ Rights Management 발급자가 사용자를 대신하여 보호할 때, Rights M
 Rights Management 소유자는 Windows 파일 시스템의 소유자와 독립적입니다. 동일할 때도 많지만, SDK나 PowerShell을 사용하지 않는 경우에도 다를 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-[Azure Rights Management 서비스용 사용자 지정 템플릿 구성](configure-custom-templates.md)
+[Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md))
 
 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](configure-super-users.md)
 

@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/25/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 32226274c8b50b02e453f1c1b6655fb01b4ec942
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 28b4e89cd6300c9b206abdf45f5d580b4474eaa5
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -102,7 +102,20 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-클라이언트의 **%localappdata%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 이름의 유효한 정책 파일이 있는지 확인합니다. 필요한 경우 Azure 포털에서 정책을 내보낼 수 있으며 클라이언트 컴퓨터에 내보내기된 파일을 복사할 수 있습니다. 또한 이러한 방법을 통해 오래된 정책 파일을 게시된 최신 정책으로 바꿀 수 있습니다.
+클라이언트의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 이름의 유효한 정책 파일이 있는지 확인합니다. 필요한 경우 Azure 포털에서 정책을 내보낼 수 있으며 클라이언트 컴퓨터에 내보내기된 파일을 복사할 수 있습니다. 또한 이러한 방법을 통해 오래된 정책 파일을 게시된 최신 정책으로 바꿀 수 있습니다.
+
+정책을 내보낼 때 이 작업은 여러 다른 버전의 Azure Information Protection 클라이언트에 해당하는 여러 버전의 정책이 있는 압축된 파일을 다운로드합니다.
+
+1. 파일의 압축을 해제하고 다음 테이블을 사용하여 필요한 정책 파일을 식별합니다. 
+    
+    |파일 이름|해당하는 클라이언트 버전|
+    |--------------------------|---------------------------------------------|
+    |Policy1.1.msip |버전 1.2|
+    |Policy1.2.msip |버전 1.3 - 1.7|
+    |Policy1.3.msip |버전 1.8 이상|
+    
+2. 식별된 파일 이름을 **Policy.msip**로 변경하고 Azure Information Protection 클라이언트가 있는 컴퓨터의 **%LocalAppData%\Microsoft\MSIP** 폴더에 복사합니다. 
+
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>Outlook에서 전달 금지 단추 숨기기
 

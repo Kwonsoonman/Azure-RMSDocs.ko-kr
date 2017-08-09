@@ -4,7 +4,7 @@ description: "Azure Information Protection에서 이 정보 보호 서비스를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,21 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6dc6a42cf6d4a5e7a2768c927a75522a265432f7
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 277630708fb1d88d59b418146d0e42615ebf495c
+ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 07/31/2017
 ---
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>Azure 권한 관리 서비스 해제 및 비활성화
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-조직에서 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 콘텐츠를 보호할지 여부를 항상 제어할 수 있으며, 이 정보 보호 서비스를 더 이상 사용하지 않는 경우에도 이전에 보호했던 콘텐츠에 계속 액세스할 수 있습니다. 이전에 보호하던 콘텐츠에 지속적으로 액세스할 필요가 없는 경우 서비스를 비활성화하고 Azure Information Protection에 대한 구독을 만료하면 됩니다. 예를 들어 Azure Information Protection을 프로덕션 환경에 배포하기 전에 테스트를 완료한 경우 이와 같이 서비스를 비활성화할 수 있습니다.
+Azure Information Protection에서 Azure Rights Management 서비스를 사용하여 조직이 콘텐츠를 보호하는지 항상 제어할 수 있습니다. 이 정보 보호 솔루션을 더 이상 사용하지 않으려는 경우 이전에 보호했던 콘텐츠에는 계속 액세스할 수 있습니다.
 
-그러나 프로덕션에 Azure Information Protection을 배포하고 문서와 전자 메일을 보호한 경우 Azure Rights Management 서비스 비활성화에 앞서 Azure Information Protection 테넌트 키 사본이 필요하며 구독 만료 전에 이를 수행해야 합니다. 그래야 서비스 비활성화 후에도 Azure Rights Management에서 보호하던 콘텐츠에 대한 액세스를 유지할 수 있습니다. HSM에서 자체 키를 생성 및 관리하면서 BYOK(Bring Your Own Key)를 사용한 경우 이미 Azure Information Protection 테넌트 키가 있을 것입니다. 그러나 테넌트 키를 Microsoft에서 관리한 경우(기본값)에는 [Azure 권한 관리 테넌트 키에 대한 작업](operations-tenant-key.md) 문서에서 테넌트 키 내보내기 지침을 참조하세요.
+이전에 보호하던 콘텐츠에 지속적으로 액세스할 필요가 없는 경우 서비스를 비활성화하고 Azure Information Protection에 대한 구독을 만료하면 됩니다. 예를 들어 Azure Information Protection을 프로덕션 환경에 배포하기 전에 테스트를 완료한 경우 이와 같이 서비스를 비활성화할 수 있습니다.
+
+그러나 프로덕션에 Azure Information Protection을 배포하고 문서와 메일을 보호한 경우 Azure Rights Management 서비스를 비활성화하기 전에 Azure Information Protection 테넌트 키의 사본이 있는지 확인합니다. 서비스를 비활성화한 후 Azure Rights Management에서 보호한 콘텐츠에 대한 액세스 권한을 유지할 수 있도록 구독이 만료되기 전에 키의 사본이 있는지 확인합니다. HSM에서 자체 키를 생성 및 관리하면서 BYOK(Bring Your Own Key)를 사용한 경우 이미 Azure Information Protection 테넌트 키가 있을 것입니다. 그러나 테넌트 키를 Microsoft에서 관리한 경우(기본값)에는 [Azure 권한 관리 테넌트 키에 대한 작업](operations-tenant-key.md) 문서에서 테넌트 키 내보내기 지침을 참조하세요.
 
 > [!TIP]
 > 구독이 만료된 후에도 Azure Information Protection 테넌트가 그대로 유지되어 연장된 기간 동안 콘텐츠를 사용할 수 있습니다. 그러나 테넌트 키를 내보낼 수는 없습니다.
@@ -33,9 +35,9 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 |적용 대상...|… 방법|
 |----------------------------|--------------|
-|모든 사용자가 Rights Management를 계속 사용하지만 Azure Information Protection보다 온-프레미스 솔루션을 사용하려는 경우|[Set-AadrmMigrationUrl](/powershell/module/aadrm/Set-AadrmMigrationUrl) cmdlet을 사용하여 기존 사용자가 변경 후 보호되는 콘텐츠를 사용할 때 온-프레미스 배포를 사용하도록 안내합니다. 사용자가 자동으로 AD RMS 설치를 사용하여 보호되는 콘텐츠를 사용하게 됩니다.<br /><br />사용자가 이 변경 전에 보호한 콘텐츠를 사용하려면 RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md)에 설명된 Office 2016 또는 Office 2013용 **LicensingRedirection** 레지스트리 키 및 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 Office 2010용 **LicenseServerRedirection** 레지스트리 키를 사용하여 클라이언트를 온-프레미스 배포로 리디렉션합니다.|
-|권한 관리 기술의 사용을 완전히 중단하려는 경우 →|지정된 관리자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 해당 사용자에게 [RMS 보호 도구](http://www.microsoft.com/en-us/download/details.aspx?id=47256)를 제공합니다.<br /><br />그러면 이 관리자가 해당 도구를 사용하여 Azure Rights Management 서비스로 보호되던 폴더의 파일을 대량 해독하여 파일을 보호되지 않는 상태로 되돌릴 수 있으므로 Azure Information Protection이나 AD RMS같은 권한 관리 기술 없이도 읽을 수 있습니다. 이 도구는 Azure Information Protection의 Azure Rights Management 서비스 및 AD RMS 모두에 사용할 수 있으므로 Azure Rights Management 서비스를 비활성화하기 전이나 후 또는 둘을 조합하여 파일 해독 시점을 선택할 수 있습니다.|
-|Azure Information Protection의 Azure Rights Management 서비스로 보호되던 일부 파일을 파악할 수 없거나 모든 사용자가 자동으로 누락된 모든 보호되는 파일을 읽을 수 있게 하려는 경우 →|RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md)에 설명된 Office 2016 및 Office 2013용 **LicensingRedirection** 레지스트리 키와 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 Office 2010용 **LicenseServerRedirection** 레지스트리 키를 사용하여 모든 클라이언트 컴퓨터에서 레지스트리 설정을 배포합니다.<br /><br />또한 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에서 설명한 대로 **DisableCreation**을 **1**로 설정하여 사용자가 새 파일을 보호하지 못하도록 다른 레지스트리 설정을 배포할 수도 있습니다.|
+|모든 사용자가 Rights Management를 계속 사용하지만 Azure Information Protection보다 온-프레미스 솔루션을 사용하려는 경우|[Set-AadrmMigrationUrl](/powershell/module/aadrm/Set-AadrmMigrationUrl) cmdlet을 사용하여 기존 사용자가 변경 후 보호되는 콘텐츠를 사용할 때 온-프레미스 배포를 사용하도록 안내합니다. 사용자가 자동으로 AD RMS 설치를 사용하여 보호되는 콘텐츠를 사용하게 됩니다.<br /><br />이 변경 전에 보호된 콘텐츠를 사용할 수 있도록 Office 2016 또는 Office 2013의 **LicensingRedirection** 레지스트리 키를 사용하여 클라이언트를 온-프레미스 배포로 리디렉션합니다. 지침은 RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md) 및 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 대로 Office 2010의 **LicenseServerRedirection** 레지스트리 키를 참조하세요.|
+|권한 관리 기술의 사용을 완전히 중단하려는 경우 →|지정된 관리자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 해당 사용자에게 [RMS 보호 도구](http://www.microsoft.com/en-us/download/details.aspx?id=47256)를 제공합니다.<br /><br />그러면 이 관리자가 도구를 사용하여 Azure Rights Management 서비스를 통해 보호되는 폴더의 파일을 대량 해독할 수 있습니다. 파일을 보호되지 않은 상태로 되돌리므로, Azure Information Protection 또는 AD RMS와 같은 Rights Management 기술 없이도 읽을 수 있습니다. 이 도구는 Azure Information Protection의 Azure Rights Management 서비스 및 AD RMS 모두에 사용할 수 있으므로 Azure Rights Management 서비스를 비활성화하기 전이나 후 또는 둘을 조합하여 파일 해독 시점을 선택할 수 있습니다.|
+|Azure Information Protection의 Azure Rights Management 서비스에서 보호한 모든 파일을 식별할 수 없습니다. 또는 모든 사용자가 누락된 모든 보호 파일을 자동으로 읽을 수 있게 합니다.  →|RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md)에 설명된 Office 2016 및 Office 2013용 **LicensingRedirection** 레지스트리 키와 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 Office 2010용 **LicenseServerRedirection** 레지스트리 키를 사용하여 모든 클라이언트 컴퓨터에서 레지스트리 설정을 배포합니다.<br /><br />또한 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에서 설명한 대로 **DisableCreation**을 **1**로 설정하여 사용자가 새 파일을 보호하지 못하도록 다른 레지스트리 설정을 배포할 수도 있습니다.|
 |누락된 모든 파일에 대해 제어되는 수동 복구 서비스를 원하는 경우    →|데이터 복구 그룹에서 지정된 사용자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 [RMS 보호 도구](http://www.microsoft.com/en-us/download/details.aspx?id=47256)를 제공하여 표준 사용자의 요청 시 파일 보호를 해제할 수 있게 합니다.<br /><br />모든 컴퓨터에서 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 대로 **DisableCreation**을 **1**로 설정하여 사용자가 새 파일을 보호하지 못하도록 레지스트리 설정을 배포합니다.|
 이 표의 절차에 대한 자세한 내용은 다음 리소스를 참조하세요.
 
@@ -76,6 +78,21 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 4.  테넌트 이름이 선택되어 있는지 확인하고 **비활성화**를 클릭한 다음 작업을 확인합니다.
 
 이제 **Rights Management 상태** 가 **비활성** 으로 표시되고 **비활성화** 옵션이 **활성화**로 바뀝니다.
+
+#### <a name="to-deactivate-rights-management-from-the-azure-portal"></a>Azure 포털에서 Rights Management를 비활성화하려면
+
+이 메서드는 현재 미리 보기 상태입니다.
+
+1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창을 열고 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다.
+    
+    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+
+2. 초기 **Azure Information Protection** 블레이드에서 **RMS 설정(미리 보기)**을 선택합니다. 
+
+3.  **Azure Information Protection - RMS 설정(미리 보기)** 블레이드에서 **비활성화**를 선택합니다. **예**를 선택하여 확인합니다.
+
+정보 표시줄에 **비활성화가 성공적으로 완료됨**이 표시되고 **비활성화**는 이제 **활성화**로 바뀝니다. 
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

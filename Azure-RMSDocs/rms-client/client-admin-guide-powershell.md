@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8dd4917b23b3732e0d835f957191db9c4578f60d
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: 618e8b6a160ccc699658bf8c317c40ed2ded3bee
+ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
-Azure Information Protection 클라이언트를 설치하면 자동화에 대한 스크립트에 추가할 수 있는 명령을 실행하여 클라이언트를 관리할 수 있도록 PowerShell 명령이 자동으로 설치됩니다.
+Azure Information Protection 클라이언트를 설치할 때, PowerShell 명령이 자동으로 설치됩니다. 그러면 자동화를 위해 스크립트에 둘 수 있는 명령을 실행하여 클라이언트를 관리할 수 있습니다.
 
 cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩니다. 이 모듈은 RMS 보호 도구와 함께 설치되는 RMSProtection 모듈을 대체합니다. Azure Information Protection 클라이언트를 설치할 때 RMSProtection 도구를 설치하면 RMSProtection 모듈이 자동으로 제거됩니다.
 
@@ -46,7 +46,7 @@ RMSProtection 모듈과 마찬가지로 AzureInformationProtection 모듈의 현
 
 이러한 cmdlet을 사용하기 전에 배포에 해당하는 추가 필수 구성 요소 및 지침을 참조하세요.
 
-- [Azure Information Protection 서비스 및 Azure Rights Management 서비스](#azure-information-protection-service-and-azure-rights-management-service)
+- [Azure Information Protection 및 Azure Rights Management 서비스](#azure-information-protection-service-and-azure-rights-management-service)
 
     - 분류만 또는 Rights Management 보호가 적용된 분류를 사용하는 경우에 적용 가능: Azure Information Protection를 포함하는 구독이 있습니다(예: Enterprise Mobility + Security).
     - Azure Rights Management 서비스와 보호만을 사용하는 경우에 적용 가능: Azure Rights Management 서비스를 포함하는 구독이 있습니다(예: Office 365 E3 및 Office 365 E5).
@@ -56,14 +56,14 @@ RMSProtection 모듈과 마찬가지로 AzureInformationProtection 모듈의 현
     - Azure Rights Management의 온-프레미스 버전인 AD RMS(Active Directory Rights Management Services)와 함께 보호만을 사용하는 경우 적용 가능
 
 
-## <a name="azure-information-protection-service-and-azure-rights-management-service"></a>Azure Information Protection 서비스 및 Azure Rights Management 서비스
+## <a name="azure-information-protection-and-azure-rights-management-service"></a>Azure Information Protection 및 Azure Rights Management 서비스
 
-조직에서 Azure Information Protection 및 Azure Rights Management 데이터 보호 서비스를 사용하는 경우나 Azure Rights Management 서비스만 사용하는 경우 먼저 이 섹션을 읽은 다음 PowerShell 명령 사용을 시작하세요.
+조직에서 분류와 보호를 위해 Azure Information Protection을 사용하거나 데이터 보호를 위해 Azure Rights Management 서비스만 사용하는 경우 먼저 이 섹션을 읽은 다음 PowerShell 명령 사용을 시작하세요.
 
 
 ### <a name="prerequisites"></a>필수 구성 요소
 
-AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 외에, Azure Information Protection 서비스 및 Azure Rights Management 데이터 보호 서비스에 대한 추가적인 필수 구성 요소가 있습니다.
+AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 외에, Azure Information Protection 레이블링 및 Azure Rights Management 데이터 보호 서비스에 대한 추가적인 필수 구성 요소가 있습니다.
 
 1. Azure Rights Management 서비스가 활성화되어야 합니다.
 
@@ -93,9 +93,9 @@ Azure Information Protection 테넌트가 활성화되지 않은 경우 [Azure R
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>필수 구성 요소 3: 사용자 개입 없이 파일 보호 또는 보호 해제
 
-현재 비대화형으로 레이블을 적용할 수 없으나 비대화형으로 Azure Rights Management 서비스에 직접 연결하여 파일을 보호하거나 보호를 해제할 수 있습니다.
+비대화형으로 Azure Rights Management 서비스에 직접 연결하여 파일을 보호하거나 보호를 해제할 수 있습니다.
 
-Azure Rights Management 서비스에 비대화형으로 연결할 때는 서비스 사용자 계정을 사용해야 하며 이 작업은 `Set-RMSServerAuthentication` cmdlet을 사용하여 수행합니다. 각 Windows PowerShell 세션에 대해 이 작업을 수행하여 Azure Rights Management 서비스에 직접 연결하는 cmdlet을 실행해야 합니다. 이 cmdlet을 실행하기 전에 다음과 같은 세 가지 식별자가 있는지 확인합니다.
+Azure Rights Management 서비스에 비대화형으로 연결할 때는 서비스 사용자 계정을 사용해야 하며 이 작업은 `Set-RMSServerAuthentication` cmdlet을 사용하여 수행합니다. 각 Windows PowerShell 세션에 대해 이 작업을 수행하여 Azure Rights Management 서비스에 직접 연결하는 cmdlet을 실행해야 합니다. 이 cmdlet을 실행하기 전에 다음과 같은 세 가지 식별자가 있어야 합니다.
 
 - BposTenantId
 
@@ -103,7 +103,28 @@ Azure Rights Management 서비스에 비대화형으로 연결할 때는 서비�
 
 - 대칭 키
 
-다음 섹션에서는 이러한 식별자를 가져오는 방법을 설명합니다.
+다음 PowerShell 명령과 설명이 포함된 지침을 사용하여 식별자 값을 자동으로 가져오고 Set-RMSServerAuthentication cmdlet을 실행할 수 있습니다. 또는 수동으로 값을 가져오고 지정할 수 있습니다.
+
+자동으로 값을 가져오고 Set-RMSServerAuthentication을 실행하려면 다음을 수행하세요.
+
+````
+# Make sure that you have the AADRM and MSOnline modules installed
+
+$newServicePrincipalName="<new service principal name>"
+Connect-AadrmService
+$bposTenantID=(Get-AadrmConfiguration).BPOSId
+Disconnect-AadrmService
+New-MsolServicePrincipal -DisplayName $servicePrincipalName
+
+# Copy the value of the generated symmetric key
+
+$symmetricKey="<value from the display of the New-MsolServicePrincipal command>"
+$appPrincipalID=(Get-MsolServicePrincipal | Where { $_.DisplayName -eq $servicePrincipalName }).AppPrincipalId
+Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -BposTenantId $bposTenantID
+
+````
+
+다음 섹션에서는 각각에 대한 자세한 정보가 없어도 이러한 값을 수동으로 가져오고 지정하는 방법을 설명합니다.
 
 ##### <a name="to-get-the-bpostenantid"></a>BposTenantId를 가져오려면
 
@@ -117,7 +138,7 @@ Azure RMS Windows PowerShell 모듈에서 Get-AadrmConfiguration cmdlet을 실�
     
         Connect-AadrmService
     
-    메시지가 표시되면 Azure Information Protection 테넌트 관리자 자격 증명을 입력합니다(일반적으로 Azure Active Directory 또는 Office 365에 대한 전역 관리자 계정 사용).
+    메시지가 나타나면 Azure Information Protection 테넌트 관리자 자격 증명을 입력합니다. 일반적으로 Azure Active Directory 또는 Office 365의 전역 관리자인 계정을 사용합니다.
     
 4. `Get-AadrmConfiguration`을 실행하고 BPOSId 값의 복사본을 만듭니다.
     
@@ -185,7 +206,7 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
 5. 이 출력에서 대칭 키 및 AppPrincialId를 적어둡니다.
 
-    나중에는 대칭 키를 완전히 검색할 수 없으며, 이 키를 모르면 다음에 Azure Rights Management 서비스에서 인증을 받아야 할 경우 서비스 사용자를 새로 만들어야 하므로 대칭 키 사본을 만드는 것이 중요합니다.
+    이제 이 대칭 키의 사본을 만드는 것이 중요합니다. 나중에 이 키를 검색할 수 없으므로, Azure Rights Management 서비스를 인증해야 하는 다음 시기를 알지 못하면 새 서비스 주체를 만들어야 합니다.
 
 이러한 지침 및 예제를 보면 Set-RMSServerAuthentication을 실행하는 데 다음과 같은 세 가지 식별자가 필요합니다.
 
@@ -201,12 +222,15 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
 이전 명령에서와 같이 단일 명령을 사용해서 여러 값을 제공하거나, Set-RMSServerAuthentication만 입력하고 요구가 있을 때마다 값을 하나씩 제공할 수 있습니다. 명령이 완료되면 클라이언트가 현재 “서버 모드"에서 작동하는 것을 나타내는 "**The RmsServerAuthentication is set to ON**"(RmsServerAuthentication이 ON으로 설정됨)이 표시됩니다. 이 메시지는 사용자가 제공한 값을 사용하여 인증에 성공한 것을 확인하지 않고 서버 모드로의 전환에 성공한 것을 확인합니다.
 
-이 서비스 사용자를 슈퍼 사용자로 만드는 것을 고려: 이 서비스 사용자가 항상 다른 사용자를 위해 파일 보호를 해제할 수 있도록 하려면 슈퍼 사용자로 구성할 수 있습니다. 표준 사용자 계정을 슈퍼 사용자로 구성할 때와 같은 방식으로 동일한 Azure RMS cmdlet, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md)를 사용하되, AppPrincipalId 값을 갖는 **-ServicePrincipalId** 매개 변수를 지정합니다.
+이 서비스 사용자를 슈퍼 사용자로 만드는 것을 고려: 이 서비스 사용자가 항상 다른 사용자를 위해 파일 보호를 해제할 수 있도록 하려면 슈퍼 사용자로 구성할 수 있습니다. 표준 사용자 계정을 슈퍼 사용자로 구성할 때와 같은 방식으로 동일한 Azure RMS cmdlet, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md)를 사용하되, AppPrincipalId 값을 갖는 **ServicePrincipalId** 매개 변수를 지정합니다.
 
 슈퍼 사용자에 대한 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 검색을 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
 
 > [!NOTE]
 > 자체 계정을 사용하여 Azure Rights Management 서비스에서 인증을 받으려면 파일을 보호하거나 보호를 해제하거나, 템플릿을 가져오기 전에 Set-RMSServerAuthentication을 실행할 필요가 없습니다.
+
+
+
 
 #### <a name="prerequisite-4-for-regions-outside-north-america"></a>필수 구성 요소 4: 북미 이외의 지역
 
@@ -220,11 +244,15 @@ Azure North America 지역 외에서 인증을 받으려면 레지스트리를 �
 
 4. **ServiceLocation** 키가 없으면 **EnterpriseCertification** 및 **EnterprisePublishing** 이름의 키 2개를 만듭니다. 
     
-    이러한 REG_SZ 키를 만들 때 "(기본값)"인 Name을 변경하지 말고, 편집하여 값 데이터를 설정합니다.
+    이러한 키에 대해 자동으로 생성된 문자열 값에서 “(기본값)” 이름은 변경하지 않고 문자열을 편집하여 값 데이터를 설정합니다.
 
     - **EnterpriseCertification**으로 CertificationExtranetDistributionPointUrl 값을 붙여 넣습니다.
     
     - **EnterprisePublishing**으로 LicensingExtranetDistributionPointUrl 값을 붙여 넣습니다.
+    
+    예를 들어, EnterpriseCertification의 레지스트리 항목은 다음과 비슷해야 합니다.
+    
+    ![북아메리카 이외의 지역에 대한 Azure Information Protection PowerShell 모듈의 레지스트리 편집](../media/registry-example-rmsprotection.png)
 
 5. 레지스트리 편집기를 닫습니다. 컴퓨터를 다시 시작할 필요는 없습니다. 그러나 사용자 고유의 사용자 계정이 아닌 서비스 사용자 계정을 사용하는 경우 이 레지스트리 편집을 수행한 후 Set-RMSServerAuthentication 명령을 실행해야 합니다.
 
@@ -296,7 +324,7 @@ Set-RMSServerAuthentication 명령을 실행하지 않은 경우 자체 사용�
     --------                              ------
     \Server1\Documents\Test1.docx         Protected
 
-파일의 보호를 해제하려면 파일이 보호되었을 때 소유자 또는 압축 풀기 권한이 있거나 cmdlet을 슈퍼 사용자 권한으로 실행하고 있어야 합니다. 그런 후 Unprotect cmdlet을 사용합니다. 예를 들면 다음과 같습니다.
+파일의 보호를 해제하려면 파일이 보호되었을 때 소유자 또는 추출 권한이 있어야 합니다. 또는 슈퍼 사용자로 cmdlet을 실행해야 합니다. 그런 후 Unprotect cmdlet을 사용합니다. 예를 들면 다음과 같습니다.
 
     Unprotect-RMSFile C:\test.docx -InPlace
 
@@ -400,7 +428,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
     \\Server1\Documents\Test3.docx     \\Server1\Documents\Test3.docx   
     \\Server1\Documents\Test4.docx     \\Server1\Documents\Test4.docx   
 
-RMS 보호를 적용한 후에 파일 이름 확장명이 변경되지 않으면 나중에 항상 Get-RMSFileStatus cmdlet을 사용하여 파일이 보호되고 있는지 여부를 확인할 수 있습니다. 예를 들면 다음과 같습니다. 
+보호를 적용한 후에 파일 이름 확장명이 변경되지 않으면 나중에 항상 Get-RMSFileStatus cmdlet을 사용하여 파일이 보호되고 있는지 여부를 확인할 수 있습니다. 예를 들면 다음과 같습니다. 
 
     Get-RMSFileStatus -File \\Server1\Documents\Test1.docx
 

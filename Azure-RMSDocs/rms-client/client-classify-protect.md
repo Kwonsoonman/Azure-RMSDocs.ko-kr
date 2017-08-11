@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호하는 방법에 대
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c7678be03106719af4679ae06e2aaa84aff8ca3e
-ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
+ms.openlocfilehash: 954b69213c055c4b94981fabef40df29aa0e19ba
+ms.sourcegitcommit: 5a087ff509162a98f3d09fda4ef5a114028e5664
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -91,15 +91,6 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
     - **액세스 만료**: 특정 기간에만 제공해야 하는 파일에 한해 이 옵션을 선택합니다. 그러면 지정한 사용자가 설정한 날짜 이후로는 선택한 하나 이상의 파일을 열 수 없습니다. 원본 파일은 계속 열 수 있지만 현재 표준 시간대로 설정한 날짜의 자정이 지나면 지정된 사용자는 파일을 열 수 없습니다.
 
 5. **적용**을 클릭하고 **사용자 지정 권한 적용됨** 메시지가 표시되기를 기다립니다. 그런 다음 **닫기**를 클릭합니다.
-
-
-### <a name="keyboard-shortcuts-for-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 위한 바로 가기 키
-
-바로 가기 키를 사용하여 Azure Information Protection 표시줄에 액세스하려면 다음과 같은 키 조합을 사용합니다.
-
-- **Ctrl** + **Shift** + **~**를 누릅니다. 
-
-그 다음, 레이블과 표시줄에 있는 다른 컨트롤 (**레이블 숨기기** 아이콘 및 **레이블 삭제** 아이콘)을 선택하려면 Tab 키를 사용하고 Enter 키를 사용하여 선택합니다.
 
 ## <a name="using-file-explorer-to-classify-and-protect-files"></a>파일 탐색기를 사용하여 파일 분류 및 보호
 

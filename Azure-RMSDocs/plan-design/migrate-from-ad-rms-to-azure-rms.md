@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6ce3936b36a716cfdc2651cda9f59eb9b552eeb3
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 1e9a124e4b115491c014bb54977cdb9d922cad45
+ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -102,18 +102,15 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
 
 ### <a name="cryptographic-mode-considerations"></a>암호화 모드 고려 사항
 
-마이그레이션을 위한 필수 사항은 아니지만, 마이그레이션을 시작하기 전에 AD RMS 서버와 클라이언트가 암호화 모드 2에서 실행 중인 것이 좋습니다. 
+AD RMS 클러스터가 현재 암호화 모드 1인 경우 마이그레이션을 시작하기 전에 클러스터를 암호화 모드 2로 업그레이드하지 마세요. 대신 암호화 모드 1을 사용하여 마이그레이션하고 마이그레이션 종료 시 마이그레이션 후 작업의 하나로 테넌트 키를 다시 생성하세요.
 
-다른 모드 및 업그레이드 방법에 대한 자세한 내용은 [AD RMS 암호화 모드](https://technet.microsoft.com/library/hh867439(v=ws.10).aspx)를 참조하세요.
-
-AD RMS 클러스터가 암호화 모드 1인 경우에는 업그레이드할 수 없으므로 마이그레이션이 완료되었을 때 Azure Information Protection 테넌트 키를 다시 입력해야 합니다. 키를 다시 입력하면 암호화 모드 2를 사용하는 새 테넌트 키를 만듭니다. 암호화 모드 1에서 Azure Rights Management 서비스를 사용하는 방식은 마이그레이션 프로세스 중에만 지원됩니다.
+암호화 모드 1은 마이그레이션 프로세스 중에만 지원됩니다.
 
 AD RMS 암호화 모드를 확인하려면
  
 - Windows Server 2012 R2 및 Windows 2012의 경우: AD RMS 클러스터 속성 > **일반** 탭 
 
 - 지원되는 모든 버전의 AD RMS의 경우: [RMS 분석기](https://www.microsoft.com/en-us/download/details.aspx?id=46437) 및 **AD RMS 관리** 옵션을 사용하여 **RMS 서비스 정보**의 암호화 모드를 봅니다.
-
 
 ### <a name="migration-limitations"></a>마이그레이션 제한 사항
 

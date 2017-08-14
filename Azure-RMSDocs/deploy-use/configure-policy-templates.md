@@ -4,7 +4,7 @@ description: "현재 미리 보기로 제공되지만, 이제 Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b9c6b808de6c5967885f4937965b4e0e759668f3
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: dc39a52ca09ec7818b70a5bac320024bdc4de657
+ms.sourcegitcommit: 4186c8fadea7bcd32cce7d468916374a9cdf151b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 07/31/2017
 
 **분류, 레이블 지정 및 보호(Azure Information Protection P1 또는 P2)를 포함하는 구독이 있는 경우:**
 
-- 테넌트의 레이블과 통합되지 않는 Rights Management 템플릿이 **Azure Information Protection - 전역 정책** 블레이드의 레이블 다음에 **템플릿** 섹션에 표시됩니다. 이러한 템플릿을 레이블로 변환하거나 계속해서 별도 템플릿으로 관리하고 레이블에 대한 보호를 구성할 때 연결할 수 있습니다. 
+- 테넌트의 레이블과 통합되지 않는 Rights Management 템플릿이 **Azure Information Protection - 전역 정책** 블레이드의 레이블 다음에 **템플릿** 섹션에 표시됩니다. 이러한 템플릿을 레이블로 변환하거나 레이블에 대한 보호를 구성할 때 레이블에 연결할 수 있습니다. 
 
 **보호만 포함하는 구독(Azure 권한 관리 서비스를 포함하는 Office 365 구독)이 있는 경우:**
 
@@ -69,7 +69,7 @@ Azure Information Protection의 구독 또는 Azure Rights Management 서비스�
 - **\<organization name> - Confidential View Only** - 보호된 콘텐츠를 읽기 전용으로 볼 수 있습니다. 
 
 >[!NOTE]
->**Azure Information Protection - 전역 정책** 블레이드에 기본 템플릿이 표시되지 않으면 레이블로 변환됩니다. 레이블은 템플릿으로 여전히 존재하지만, Azure 포털에서는 Azure RMS 보호를 포함하는 레이블 구성의 일부로 표시됩니다. [AADRM PowerShell 모듈](administer-powershell.md)에서 [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate)을 실행하여 항상 테넌트에 있는 템플릿을 확인할 수 있습니다.
+>**Azure Information Protection - 전역 정책** 블레이드에 기본 템플릿이 표시되지 않으면 레이블로 변환되었거나 레이블에 연결된 것입니다. 레이블은 템플릿으로 여전히 존재하지만, Azure 포털에서는 Azure RMS 보호를 포함하는 레이블 구성의 일부로 표시됩니다. [AADRM PowerShell 모듈](administer-powershell.md)에서 [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate)을 실행하여 항상 테넌트에 있는 템플릿을 확인할 수 있습니다.
 >
 >다음 섹션 [템플릿을 레이블로 변환](#to-convert-templates-to-labels)에 설명된 대로 템플릿을 수동으로 변환한 다음 원하는 경우 이름을 바꿀 수 있습니다. 또는 최근에 기본 Azure Information Protection 정책을 만들었거나 그 당시 테넌트에 대해 Azure Rights Management 서비스가 활성화된 경우 템플릿이 자동으로 변환됩니다.
 

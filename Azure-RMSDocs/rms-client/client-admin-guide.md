@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 275f08ca0ea267c29f5b743300507d66ee1d1118
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: e942555c7a985db10054aa3f13be5ebcda2269a3
+ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -242,14 +242,14 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
     
     |Office 버전|운영 체제|소프트웨어|작업|
     |--------------------|--------------|----------------|---------------------|
-    |Office 2013|지원되는 모든 버전|[KB 3054941](https://www.microsoft.com/en-us/download/details.aspx?id=49337)<br /><br /> 파일 이름에 포함된 버전 번호: v3|설치|
+    |Office 2016|지원되는 모든 버전|64비트: [KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55073)<br /><br />32비트: [KB317866](https://www.microsoft.com/en-us/download/details.aspx?id=55058)<br /><br /> 버전: 1.0|설치|
+    |Office 2013|지원되는 모든 버전|64비트: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54992)<br /><br /> 32비트: [KB3172523](https://www.microsoft.com/en-us/download/details.aspx?id=54979) <br /><br />버전: 1.0|설치|
     |Office 2010|지원되는 모든 버전|[Microsoft Online Services 로그인 도우미](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> 버전: 2.1|설치|
-    |Office 2010|Windows 8.1 및 Windows Server 2012 R2|[KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB 2843630 또는 KB 2919355를 설치하지 않은 경우 설치|
-    |Office 2010|Windows 8 및 Windows Server 2012|[KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|설치|
-    |Office 2010|Windows 7|[KB 2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB 3125574를 설치하지 않은 경우 설치|
-    |해당 없음|Windows 7|KB 2627273 <br /><br /> 파일 이름에 포함된 버전 번호: v4|제거|
+    |Office 2010|Windows 8.1 및 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB2843630 또는 KB2919355를 설치하지 않은 경우 설치|
+    |Office 2010|Windows 8 및 Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|설치|
+    |Office 2010|Windows 7|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB3125574를 설치하지 않은 경우 설치|
+    |해당 없음|Windows 7|KB2627273 <br /><br /> 파일 이름에 포함된 버전 번호: v4|제거|
     
-    Office 2016에 대한 추가 종속성은 없습니다.
 
 3. 기본 설치의 경우 **/quiet**를 지정하여 .msi를 실행합니다(예: `AzInfoProtection.msi /quiet`). 그렇지만 [실행 가능한 설치 관리자 지침](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)에 설명된 추가 설치 매개 변수를 지정해야 할 수 있습니다.  
 
@@ -326,7 +326,9 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 ## <a name="support-for-multiple-languages"></a>다국어 지원
 
-Azure Information Protection 클라이언트는 Office가 지원하는 모든 클라이언트 언어를 지원합니다. 예를 들어 메뉴 옵션, 대화 상자 및 메시지가 사용자 언어로 표시됩니다. 하나의 설치 프로그램이 언어를 감지하므로 다른 언어를 위한 클라이언트를 설치하기 위해 추가로 구성할 필요가 없습니다. 
+Azure Information Protection 클라이언트는 Office 365가 지원하는 같은 언어를 지원합니다. 이러한 언어 목록은 Office의 [국가별 가용성](https://products.office.com/business/international-availability) 페이지 내 **Office 365, Exchange Online Protection 및 Power BI** 섹션을 참조하세요.
+
+이러한 언어의 경우 Azure Information Protection 클라이언트의 메뉴 옵션, 대화 상자 및 메시지가 사용자의 언어로 표시됩니다. 언어를 감지하는 단일 설치 관리자가 있으므로 다른 언어를 위한 Azure Information Protection 클라이언트를 설치하기 위해 추가로 구성할 필요가 없습니다. 
 
 그러나 사용자에게 표시되는 레이블 이름은 [기본 정책](../deploy-use/configure-policy-default.md)에 대해 또는 지정한 레이블 이름에 대해 자동으로 번역되지 않습니다. 사용자가 다른 언어로 레이블을 볼 수 있게 하려면 직접 번역을 입력하고 Azure Information Protection 정책이 해당 번역을 사용하도록 지정해야 합니다. 자세한 정보는 [Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요.
 

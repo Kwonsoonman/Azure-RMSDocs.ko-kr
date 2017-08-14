@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5a9f592584c090d8b0bb62acabd5775238b5e411
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: a2c0a8ef4534f8d5149178986688c4d00b4cee9f
+ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -101,14 +101,11 @@ Azure Rights Management 서비스는 기업 간 공동 작업에서의 관리자
 
 이러한 계정에 대한 인증 방법은 다른 조직의 관리자가 Azure Active Directory 계정을 어떻게 구성했느냐에 따라 달라질 수 있습니다. 예를 들어, 이 계정에 대해 만든 암호, 다단계 인증(MFA), 페더레이션 또는 Active Directory Domain Services에서 생성된 후 Azure Active Directory에 동기화된 암호 등을 사용할 수 있습니다.
 
-## <a name="can-i-add-external-users-people-from-outside-my-company-to-templates"></a>외부 사용자(회사 외부의 사용자)를 템플릿에 추가할 수 있나요?
-예. 최종 사용자(및 관리자)가 응용 프로그램에서 선택할 수 있는 템플릿을 만들면 지정한 사전 정의 정책을 통해 정보 보호를 쉽고 빠르게 적용할 수 있습니다. 템플릿의 설정 중 하나는 콘텐츠에 액세스할 수 있는 사용자이며, 조직 내의 사용자 및 그룹과 조직 외부의 사용자 및 그룹을 지정할 수 있습니다. 다른 조직의 모든 사용자도 지정할 수 있습니다.
+## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>외부 사용자(회사 외부의 사용자)를 사용자 지정 템플릿에 추가할 수 있나요?
 
-[보호 설정](../deploy-use/configure-policy-protection.md)을 구성할 때 Azure 포털을 사용하여 이 구성을 수행할 수 있습니다. 또는 PowerShell을 사용하여 이 구성을 수행할 수 있습니다. PowerShell을 사용하려면 다음을 수행하세요.
+예. Azure Portal에서 템플릿을 레이블로 변환할 때 조직 외부의 사용자 및 그룹과 심지어 다른 조직의 모든 사용자에게 권한을 추가하도록 [보호 설정](../deploy-use/configure-policy-protection.md)을 구성할 수 있습니다. 또는 PowerShell을 사용하여 이 구성을 수행할 수 있습니다.
 
--   **권한 정의 개체를 사용하여 템플릿을 생성하거나 업데이트**합니다.  권한 정의 개체에서 외부 메일 주소 및 해당 권한을 지정한 다음 템플릿을 만들거나 업데이트할 때 사용합니다. [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet을 통해 변수를 만든 다음 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet(새 템플릿의 경우) 또는 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet(기존 템플릿을 수정하는 경우)을 통해 이 변수를 RightsDefinition 매개 변수에 제공하여 권한 정의 개체를 지정합니다. 그러나 기존 템플릿에 이러한 사용자를 추가하는 경우 외부 사용자뿐 아니라 템플릿의 기존 그룹에 대해 권한 정의 개체를 정의해야 합니다.
-
-템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
+외부 사용자를 쉽게 추가할 수 있도록 사용자 지정 템플릿을 레이블로 변환하는 방법에 대한 자세한 내용은 [Azure Information Protection 정책의 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
 ## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure AD의 동적 그룹에서 Azure RMS가 작동하나요?
 Azure AD Premium 기능을 사용하면 [특성 기반 규칙](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)을 지정하여 보안 그룹에 대한 동적 멤버 자격을 구성할 수 있습니다. 이 그룹 유형은 전자 메일 주소를 지원하지 않으며 Azure 권한 관리 서비스에서도 사용할 수 없습니다. 그러나 Office 365 그룹은 동적 그룹 구성원 자격 및 메일 기능이 지원됩니다. 이 그룹은 메일 사용이 가능하므로 Azure Rights Management 보호와 함께 사용할 수 있습니다.

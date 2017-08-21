@@ -4,17 +4,17 @@ description: "레이블에 대한 조건을 구성할 때 문서 또는 메일�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 510375dec4fc4e28197270e62655375698580b95
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3aad6eb4956b6565e44c4b1019c984a28cb41fdc
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 06/30/2017
 
 레이블을 권장 작업으로 적용하도록 조건을 구성할 때 표시되는 예제 메시지 및 사용자 지정 정책 팁은 다음과 같습니다.
 
-![Azure Information Protection 보호 및 권장 사항](../media/info-protect-recommend-callouts.png)
+![Azure Information Protection 보호 및 권장 사항](../media/info-protect-recommend-calloutsv2.png)
 
-이 예제에서는 사용자가 **Change now**(지금 변경)를 클릭하여 권장 레이블을 적용하거나, 표시줄을 닫아 권장 사항을 재정의할 수 있습니다.
+이 예제에서는 사용자가 **Change now**(지금 변경)를 클릭하여 권장 레이블을 적용하거나, **Dismiss**(해제)를 선택하여 권장 사항을 재정의할 수 있습니다.
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>레이블에 대한 권장 또는 자동 분류를 구성하려면
 

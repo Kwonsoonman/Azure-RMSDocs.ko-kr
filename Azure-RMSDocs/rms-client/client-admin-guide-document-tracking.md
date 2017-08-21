@@ -4,7 +4,7 @@ description: "Azure Information Protection에 대한 문서 추적을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f815fb9f9f1092ce83e9edc72f91381d3e8b46f3
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: dd8b2dcf785d47ec779b314072fb5edddf556163
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="configuring-and-using-document-tracking-for-azure-information-protection"></a>Azure Information Protection에 대한 문서 추적 구성 및 사용
 
@@ -32,11 +32,13 @@ ms.lasthandoff: 07/17/2017
 
 문서 추적 사이트가 사용되도록 설정되면 기본적으로 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 이 수준의 정보는 공유 문서가 사용되는 방식과 의심스러운 작업이 확인될 때 문서 공유를 해지할지 여부를 결정하는 데 유용할 수 있습니다. 그러나 개인 정보 보호를 위해 일부 또는 모든 사용자에 대해 이 사용자 정보를 사용하지 않도록 설정해야 할 수도 있습니다. 
 
-이 작업이 추적되지 않아야 하는 사용자가 있는 경우 Azure AD에 저장된 그룹에 추가하고 [Set-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Set-AadrmDoNotTrackUserGroup) cmdlet을 사용하여 이 그룹을 지정해야 합니다. 이 cmdlet을 실행할 때는 단일 그룹을 지정해야 합니다. 그러나 그룹에 중첩된 그룹을 포함할 수 있습니다. 
+다른 사용자에 의해 이 작업이 추적되지 않아야 하는 사용자가 있는 경우 Azure AD에 저장된 그룹에 추가하고 [Set-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Set-AadrmDoNotTrackUserGroup) cmdlet을 사용하여 이 그룹을 지정해야 합니다. 이 cmdlet을 실행할 때는 단일 그룹을 지정해야 합니다. 그러나 그룹에 중첩된 그룹을 포함할 수 있습니다. 
 
-이러한 그룹 구성원의 경우 다른 사람이 함께 공유한 문서와 관련된 작업이 문서 추적 사이트에 기록되지 않습니다. 또한 전자 메일 알림이 문서를 공유한 사용자에게 전송되지 않습니다.
+해당 그룹 구성원의 경우 사용자는 작업이 공유하는 문서와 관련된 경우 문서 추적 사이트의 모든 작업을 볼 수 없습니다. 또한 전자 메일 알림이 문서를 공유한 사용자에게 전송되지 않습니다.
 
 이 구성을 사용하면 모든 사용자가 계속해서 문서 추적 사이트를 사용하고 보호한 문서에 대한 액세스 권한을 해지할 수 있습니다. 그러나 Set-AadrmDoNotTrackUserGroup cmdlet을 사용하면 지정한 사용자에 대한 활동이 표시되지 않습니다.
+
+이 설정은 최종 사용자에게만 영향을 줍니다. Azure Information Protection에 대한 관리자는 해당 사용자가 Set-AadrmDoNotTrackUserGroup을 사용하여 지정된 경우에도 모든 사용자의 작업을 항상 추적할 수 있습니다. 관리자가 사용자에 대한 문서를 추적할 수 있는 방법에 대한 자세한 내용은 [사용자에 대해 문서 추적 및 취소](#tracking-and-revoking-documents-for-users) 섹션을 참조하세요.
 
 이 옵션이 더 이상 필요하지 않으면 [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup)을 사용할 수 있습니다. 또는 사용자를 선택적으로 제거하려는 경우에는 그룹에서 제거합니다. 그렇지만 [그룹 캐싱](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management) 기능을 잘 알고 있어야 합니다. [Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup)을 사용하여 이 옵션이 현재 사용 중인지를 확인할 수 있습니다. 이 그룹 구성에 대해 이러한 cmdlet을 실행하려면 **2.10.0.0** 이상의 PowerShell용 Azure Information Protection(AADRM) 모듈 버전을 사용하고 있어야 합니다.
 
@@ -83,7 +85,7 @@ Bing 지도에서 사용자 위치를 표시하는 데 사용하는 virtualearth
 
 **ActingAsUser** - AdminAction 필드가 true이면 이 필드에 관리자가 검색된 사용자 또는 문서 소유자로 대신 작업하는 사용자 이름이 포함됩니다. 사용자가 문서 추적 사이트에 로그인할 때는 이 필드가 비어 있습니다. 
 
-사용자와 관리자가 문서 추적 사이트를 어떻게 사용하고 있는지를 기록하는 요청 유형도 있습니다. 예를 들어 **RevokeAccess**는 사용자 또는 사용자를 대신하는 관리자가 문서 추적 사이트에서에서 문서를 취소한 경우의 요청 유형입니다. 이 요청 유형을 AdminAction 필드와 함께 사용하여 사용자가 고유한 문서를 취소했는지(AdminAction 필드가 비어 있음), 아니면 관리자가 사용자 대신 문서를 취소했는지(AdminAction이 true임) 확인할 수 있습니다.
+사용자와 관리자가 문서 추적 사이트를 어떻게 사용하고 있는지를 기록하는 요청 유형도 있습니다. 예를 들어 **RevokeAccess**는 사용자 또는 사용자를 대신하는 관리자가 문서 추적 사이트에서 문서를 취소한 경우의 요청 유형입니다. 이 요청 유형을 AdminAction 필드와 함께 사용하여 사용자가 고유한 문서를 취소했는지(AdminAction 필드가 비어 있음), 아니면 관리자가 사용자 대신 문서를 취소했는지(AdminAction이 true임) 확인할 수 있습니다.
 
 
 사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.

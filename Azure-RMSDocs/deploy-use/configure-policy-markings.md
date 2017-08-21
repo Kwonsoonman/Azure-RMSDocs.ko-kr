@@ -4,27 +4,23 @@ description: "문서 또는 메일 메시지에 레이블을 할당하는 경우
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: efc60ee6126a6a0b2798f66c46c2242942878829
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: a65299651abd97adb0fc7641be2f2f3c6f1d8d2f
+ms.sourcegitcommit: adb38b008656ac706920a8488fd2beafedadbc97
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
 문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다.
-
-시각적 표시는 레이블이 적용될 때 및 문서가 Word, Excel, PowerPoint 문서 등의 Office 응용 프로그램에 저장될 때 적용됩니다. 메일 메시지의 경우 시각적 표시는 메일 메시지가 Outlook에서 전송될 때 적용됩니다.
-
-파일 탐색기 및 오른쪽 클릭 작업을 사용하여 레이블이 적용되는 경우에는 시각적 표시가 문서에 적용되지 않습니다. PowerShell을 사용하여 문서를 분류하는 경우도 마찬가지입니다.
 
 이러한 시각적 표식에 대한 추가 정보:
 
@@ -33,10 +29,32 @@ ms.lasthandoff: 06/30/2017
 - 워터마크는 Word, Excel 및 PowerPoint에 적용됩니다.
 
     - Excel: 페이지 레이아웃 및 인쇄 미리 보기 모드에 있을 때와 인쇄할 때만 워터마크가 표시됩니다.
-
+    
     - PowerPoint: 마스터 슬라이드에 배경 이미지로 워터마크가 적용됩니다.
+    
+    - Azure Information Protection 클라이언트의 현재 미리 보기 버전을 사용하는 경우 여러 줄의 텍스트가 지원됩니다.
 
 - 텍스트 문자열을 지정할 수도 있고, [변수](#using-variables-in-the-text-string)를 사용하여 머리글, 바닥글 또는 워터마크를 적용할 때 텍스트 문자열을 동적으로 만들 수도 있습니다.
+
+## <a name="when-visual-markings-are-applied"></a>시각적 표시가 적용되는 경우
+
+메일 메시지의 경우 시각적 표시는 메일 메시지가 Outlook에서 전송될 때 적용됩니다.
+
+문서의 경우 시각적 표시는 다음과 같이 적용됩니다.
+
+- Azure Information Protection 클라이언트의 **일반 공급 버전의 경우**: 
+    
+    - Office 앱에서 레이블의 시각적 표시는 레이블이 적용되고 문서가 저장될 때마다 적용됩니다. 
+    
+    - 파일 탐색기 또는 PowerShell을 사용하여 문서의 레이블이 지정되는 경우 시각적 표시는 즉시 적용되지 않지만 해당 문서가 Office 앱에서 열리는 경우 및 문서가 저장될 때마다 적용됩니다.
+
+- Azure Information Protection 클라이언트의 **현재 미리 보기 버전의 경우**: 
+    
+    - Office 앱에서 레이블의 시각적 표시는 레이블이 적용될 때 적용됩니다. 또한 시각적 표시는 레이블이 지정된 문서가 열리고 문서가 처음으로 저장될 때 적용됩니다.  
+    
+    - 파일 탐색기 또는 PowerShell을 사용하여 문서의 레이블이 지정되는 경우 시각적 표시는 즉시 적용되지 않지만 해당 문서가 Office 앱에서 열리고 문서가 처음으로 저장될 때 적용됩니다.
+
+## <a name="to-configure-visual-markings-for-a-label"></a>레이블에 대해 시각적 표시를 구성하려면
 
 다음 지침을 사용하여 레이블에 대한 시각적 표시를 구성할 수 있습니다.
 

@@ -4,17 +4,17 @@ description: "Azure Information Protection에서 HYOK(AD RMS) 보호를 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: ac4068885df92c58ecba2a90e7aa0aeaaa34e8e9
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: 4730c2e27a78ec8bf106f43b3ac7097a40e0555d
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
@@ -83,7 +83,7 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
     
     - 단일 AD RMS 루트 클러스터.
     
-    - [암호화 모드 2](https://technet.microsoft.com/library/hh867439.aspx): [RMS 분석기 도구](https://www.microsoft.com/en-us/download/details.aspx?id=46437)를 사용하여 AD RMS 클러스터의 암호화 모드의 버전 및 전반적인 상태를 확인할 수 있습니다.   
+    - [암호화 모드 2](https://technet.microsoft.com/library/hh867439.aspx): AD RMS 클러스터 속성, **일반** 탭을 확인하여 모드를 확인할 수 있습니다.
     
     - SCP(서비스 연결 지점)가 Active Directory에 등록되어 있지 않습니다. Azure Information Protection과 함께 AD RMS 보호를 사용하는 경우 SCP가 사용되지 않습니다. AD RMS 배포에 대한 SCP를 등록한 경우 이 SCP를 제거해야만 Azure Rights Management 보호를 위한 [서비스 검색](../rms-client/client-deployment-notes.md#rms-service-discovery)이 성공합니다.
     
@@ -111,7 +111,7 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
 
 - 템플릿 GUID를 찾으려면: 클러스터를 확장하고 **권한 정책 템플릿**을 클릭합니다. **분산 권한 정책 템플릿** 정보에서 사용할 템플릿의 GUID를 복사할 수 있습니다. 예: 82bf3474-6efe-4fa1-8827-d1bd93339119
 
-- 라이선스 URL을 찾으려면: 클러스터 이름을 클릭합니다. **클러스터 세부 정보**에서 **/_wmcs/licensing** 문자열을 제외하고 **라이선스**니다. 예: https://rmscluster.contoso.com 
+- 라이선스 URL을 찾으려면: 클러스터 이름을 클릭합니다. **클러스터 세부 정보**에서 **/_wmcs/licensing** 문자열을 제외하고 **라이선스**입니다. 예: https://rmscluster.contoso.com 
     
     인트라넷 라이선스 값뿐 아니라 엑스트라넷 라이선스 값도 있고 두 값이 서로 다른 경우: 명시적 지점 간 트러스트를 사용하여 정의한 파트너와 보호된 문서 또는 메일을 공유할 경우에만 엑스트라넷 값을 지정합니다. 그렇지 않은 경우 인트라넷 값을 사용하고 Azure Information Protection에 AD RMS 보호를 사용하는 모든 클라이언트 컴퓨터에서 인트라넷 연결을 사용하여 연결하도록 합니다(예: 원격 컴퓨터에서 VPN 연결 사용).
 

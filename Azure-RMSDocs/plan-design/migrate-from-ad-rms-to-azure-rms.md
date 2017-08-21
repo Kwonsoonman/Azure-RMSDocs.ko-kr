@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 08/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1e9a124e4b115491c014bb54977cdb9d922cad45
-ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
+ms.openlocfilehash: 8f81eee3c15b771e60c24a83f66d13a4a654a7e3
+ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -110,7 +110,7 @@ AD RMS 암호화 모드를 확인하려면
  
 - Windows Server 2012 R2 및 Windows 2012의 경우: AD RMS 클러스터 속성 > **일반** 탭 
 
-- 지원되는 모든 버전의 AD RMS의 경우: [RMS 분석기](https://www.microsoft.com/en-us/download/details.aspx?id=46437) 및 **AD RMS 관리** 옵션을 사용하여 **RMS 서비스 정보**의 암호화 모드를 봅니다.
+- Windows Server 2008 R2의 경우: [Windows Server 2008 R2 및 Windows Server 2008에서 AD RMS에 대해 RSA 키가 2048비트로 증가함](https://support.microsoft.com/help/2627272/rsa-key-length-is-increased-to-2048-bits-for-ad-rms-in-windows-server ) 핫픽스가 설치되었는지 확인합니다. 그렇지 않은 경우 AD RMS 클러스터가 암호화 모드 1에서 실행 중입니다.
 
 ### <a name="migration-limitations"></a>마이그레이션 제한 사항
 

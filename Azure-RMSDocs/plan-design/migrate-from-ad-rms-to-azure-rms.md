@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f81eee3c15b771e60c24a83f66d13a4a654a7e3
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: a4337d197e08cd75b974594fdd797c9bb383c1f9
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -102,9 +102,7 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
 
 ### <a name="cryptographic-mode-considerations"></a>암호화 모드 고려 사항
 
-AD RMS 클러스터가 현재 암호화 모드 1인 경우 마이그레이션을 시작하기 전에 클러스터를 암호화 모드 2로 업그레이드하지 마세요. 대신 암호화 모드 1을 사용하여 마이그레이션하고 마이그레이션 종료 시 마이그레이션 후 작업의 하나로 테넌트 키를 다시 생성하세요.
-
-암호화 모드 1은 마이그레이션 프로세스 중에만 지원됩니다.
+AD RMS 클러스터가 현재 암호화 모드 1인 경우 마이그레이션을 시작하기 전에 클러스터를 암호화 모드 2로 업그레이드하지 마세요. 대신 암호화 모드 1을 사용하여 마이그레이션하고 마이그레이션 종료 시 마이그레이션 후 작업의 하나로 테넌트 키를 다시 생성할 수 있습니다.
 
 AD RMS 암호화 모드를 확인하려면
  
@@ -215,7 +213,7 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - **12단계: Azure Information Protection 테넌트 키 다시 입력**
 
-    이 단계는 마이그레이션 전에 암호화 모드 2에서 실행하고 있지 않은 경우에는 필수이지만, Azure Information Protection 테넌트 키의 보안을 위해 모든 마이그레이션에 대해 권장됩니다.
+    이 단계는 마이그레이션 전에 암호화 모드 2에서 실행하지 않은 경우에 권장됩니다.
 
 
 ## <a name="next-steps"></a>다음 단계

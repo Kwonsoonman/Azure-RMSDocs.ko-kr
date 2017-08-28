@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9f04698064037343719d274e793eb560b703b031
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 22b43c2b149c7a7fd5ce79ca3ceef8100b9d5e7b
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -133,7 +133,9 @@ AD RMS에서 가져오는 템플릿은 Azure 포털에서 만들 수 있는 사�
 
 - 마이그레이션 전에 Azure Information Protection 사용자 지정 템플릿을 만든 경우 수동으로 내보냈다가 가져와야 합니다.
 
-- AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우에는 해당 그룹 및 권한을 수동으로 추가해야 합니다.
+- AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 조직 외부의 사용자 또는 그룹을 추가해야 할 수 있습니다. 
+    
+    AD RMS에서 ANYONE 그룹은 인증된 모든 사용자에게 권한을 부여합니다. 이 그룹은 Azure AD 테넌트의 모든 사용자로 자동으로 변환됩니다. 추가 사용자에게 권한을 부여할 필요가 없는 경우 추가 작업이 필요하지 않습니다. 그러나 ANYONE 그룹을 사용하여 외부 사용자를 포함한 경우 이러한 사용자와 부여하려는 권한을 수동으로 추가해야 합니다.
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>마이그레이션 전에 사용자 지정 템플릿을 만든 경우의 프로시저
 
@@ -149,21 +151,15 @@ Azure Rights Management 서비스를 활성화하기 전 또는 후, 마이그�
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 프로시저
 
-AD RMS의 템플릿이 **ANYONE** 그룹을 사용하는 경우 이 그룹은 Azure Information Protection에 템플릿을 가져올 때 자동으로 제거됩니다. 따라서 가져온 템플릿에 해당 그룹 또는 사용자와 동일한 권한을 수동으로 추가해야 합니다. Azure Information Protection에 해당하는 그룹의 이름은 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com**입니다. 예를 들어 이 그룹은 Contoso에 대해 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**과 같을 수 있습니다.
+AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 이 그룹은 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com**이라는 이름의 그룹을 사용하도록 자동으로 변환됩니다. 예를 들어 이 그룹은 Contoso에 대해 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**과 같을 수 있습니다. 이 그룹에는 Azure AD 테넌트의 모든 사용자가 포함됩니다.
+
+Azure Portal의 템플릿과 레이블을 관리할 때 이 그룹은 Azure AD에 테넌트의 도메인 이름으로 표시됩니다. 예를 들어 이 그룹은 Contoso에 대해 **contoso.onmicrosoft.com**과 같이 표시될 수 있습니다. 이 그룹을 추가하기 위해 옵션에 **\<조직 이름 추가> - 모든 멤버**가 표시됩니다.
 
 AD RMS 템플릿에 ANYONE 그룹이 포함되어 있는지가 확실하지 않은 경우 다음 샘플 Windows PowerShell 스크립트를 사용하여 이러한 템플릿을 식별할 수 있습니다. AD RMS와 함께 Windows PowerShell을 사용하는 방법에 대한 자세한 내용은 [Windows PowerShell을 사용하여 AD RMS 관리](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)를 참조하세요.
 
-Azure 클래식 포털에서 기본 권한 정책 템플릿 중 하나를 복사하고 **권한** 페이지에서 **사용자 이름**을 확인하면 조직에서 자동으로 생성된 그룹을 볼 수 있습니다. 그러나 Azure 클래식 포털을 사용하여 이 그룹을 수동으로 만들거나 가져온 템플릿에 추가할 수는 없습니다. 대신에 다음과 같은 Azure RMS PowerShell 옵션 중 하나를 사용해야 합니다.
+Azure Portal에서 이러한 템플릿을 레이블로 변환할 때 외부 사용자를 템플릿에 쉽게 추가할 수 있습니다. 그런 다음 **권한 추가** 블레이드에서 **Enter details**(세부 정보 입력)를 선택하여 이러한 사용자의 메일 주소를 수동으로 지정합니다. 
 
-- [New-AadrmRightsDefinition](/powershell/aadrm/vlatest/new-aadrmrightsdefinition) PowerShell cmdlet을 사용하여 "AllStaff" 그룹 및 권한을 권한 정의 개체로 정의하고, ANYONE 그룹 외에도 원래 템플릿의 각 그룹 또는 권한이 이미 부여된 사용자에 대해 이 명령을 다시 실행합니다. 그런 다음 [Set-AadrmTemplateProperty](/powershell/aadrm/vlatest/set-aadrmtemplateproperty) cmdlet을 사용하여 이러한 모든 권한 정의 개체를 템플릿에 추가합니다.
-
-- [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate) cmdlet을 사용하여 "AllStaff" 그룹 및 권한을 기존 그룹 및 권한에 추가할 수 있도록 편집할 수 있는 .XML 파일에 템플릿을 내보낸 다음 [Import-AadrmTemplate](/powershell/aadrm/vlatest/import-aadrmtemplate) cmdlet을 사용하여 이 변경 내용을 Azure Information Protection으로 다시 가져옵니다.
-
-> [!NOTE]
-> "AllStaff"의 이러한 동등한 그룹이 AD RMS의 ANYONE 그룹과 정확히 동일하지는 않습니다. "AllStaff" 그룹에는 Azure 테넌트의 모든 사용자가 포함되지만 ANYONE 그룹에는 조직의 외부에 있을 수 있는 인증된 모든 사용자가 포함됩니다.
-> 
-> 두 그룹 간의 이러한 차이 때문에 "AllStaff" 그룹뿐 아니라 외부 사용자도 추가해야 할 수 있습니다. 그룹에 대한 외부 전자 메일 주소는 현재 지원되지 않습니다.
-
+이 구성에 대한 자세한 내용은 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](../deploy-use/configure-policy-protection.md)을 참조하세요.
 
 #### <a name="sample-windows-powershell-script-to-identify-ad-rms-templates-that-include-the-anyone-group"></a>ANYONE 그룹을 포함하는 AD RMS 템플릿을 식별하기 위한 샘플 Windows PowerShell 스크립트
 이 섹션에는 이전 섹션에서 설명한 것과 같이 정의된 ANYONE 그룹이 있는 AD RMS 템플릿을 식별하는 데 도움이 되는 샘플 스크립트가 포함되어 있습니다.

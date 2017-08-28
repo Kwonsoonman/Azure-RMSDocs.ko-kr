@@ -4,7 +4,7 @@ description: "Microsoft에서 Azure Information Protection용 테넌트 키를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cacaa10d1a5cbf3a2de903cd4e9f893b546e5609
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: e4a484660aaf5a1820b04892ff006c08cceb5080
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 
@@ -28,25 +28,37 @@ Microsoft에서 Azure Information Protection용 테넌트 키를 관리하는 �
 Azure Information Protection에 대한 구독을 취소하면, Azure Information Protection에서 테넌트 키 사용이 중지되므로 별도의 조치가 필요하지 않습니다.
 
 ## <a name="rekey-your-tenant-key"></a>테넌트 키 다시 입력
-키 다시 입력을 키 롤링이라고도 합니다. 반드시 필요한 경우가 아니면 테넌트 키를 다시 입력하지 마세요. Office 2010 등의 이전 클라이언트는 키 변경 내용을 정상적으로 처리하지 못합니다. 이러한 경우에는 그룹 정책 또는 해당하는 메커니즘을 사용하여 컴퓨터에서 Rights Management 상태를 지워야 합니다. 그러나 테넌트 키를 다시 입력해야 하는 몇 가지 상황도 있습니다. 예를 들면 다음과 같습니다.
+키 다시 입력을 키 롤링이라고도 합니다. 이 작업을 수행하는 경우 Azure Information Protection이 문서 및 메일을 보호하기 위해 기존 테넌트 키 사용을 중지하고 다른 키를 사용하기 시작합니다. 정책 및 템플릿이 즉시 다시 서명되지만 이 전환은 Azure Information Protection을 사용하는 기존 클라이언트 및 서비스에 대해 점진적입니다. 일정 시간 동안에는 일부 새 콘텐츠가 계속해서 이전 테넌트 키로 보호됩니다.
 
--   회사가 둘 이상으로 분할된 경우. 테넌트 키를 다시 입력하면 새 회사에서는 직원이 게시하는 새 콘텐츠에 액세스할 수 없습니다. 이전 테넌트 키의 복사본이 있으면 이전 콘텐츠에는 액세스할 수 있습니다.
+키를 다시 생성하려면 테넌트 키 개체를 구성하고 사용할 대체 키를 지정해야 합니다. 그러면 이전에 사용한 키가 자동으로 Azure Information Protection에 대해 보관되는 것으로 표시됩니다. 이 구성을 통해 이 키를 사용하여 보호된 콘텐츠에 계속 액세스할 수 있습니다.
 
--   테넌트 키의 마스터 복사본(현재 소유 중인 복사본)이 노출되었다고 판단되는 경우.
+Azure Information Protection에 대해 키를 다시 생성해야 하는 경우는 다음과 같습니다.
 
-[Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 **Azure Information Protection 테넌트 키 다시 입력 요청에 관한 Azure Information Protection 지원 케이스**를 열면 테넌트 키를 다시 입력할 수 있습니다. 자신이 Azure Information Protection 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 다시 입력은 무료 지원 서비스가 아닙니다.
+- 암호화 모드 1 키를 사용하여 AD RMS(Active Directory Rights Management Services)에서 마이그레이션했습니다. 마이그레이션이 완료되면 암호화 모드 2를 사용하는 키를 사용하도록 변경하려고 합니다.
 
-테넌트 키를 다시 입력하면 새 테넌트 키를 사용하여 새 콘텐츠를 보호합니다. 이 과정은 단계별로 진행되므로 일정 시간 동안에는 일부 새 콘텐츠가 계속해서 이전 테넌트 키로 보호됩니다. 이전에 보호되었던 콘텐츠도 이전 테넌트 키로 계속 보호됩니다. 이 시나리오를 지원하기 위해 Azure Information Protection에서는 이전 콘텐츠용 라이선스를 발급할 수 있도록 이전 테넌트 키를 보존합니다.
+- 회사가 둘 이상으로 분할된 경우. 테넌트 키를 다시 입력하면 새 회사에서는 직원이 게시하는 새 콘텐츠에 액세스할 수 없습니다. 이전 테넌트 키의 복사본이 있으면 이전 콘텐츠에는 액세스할 수 있습니다.
+
+- 테넌트 키의 마스터 복사본이 노출되었다고 판단되는 경우.
+
+키를 다시 생성하려면 테넌트 키가 되도록 다른 Microsoft 관리 키를 선택할 수 있지만, 새 Microsoft 관리 키를 생성할 수는 없습니다. 새 키를 만들려면 키 토폴로지를 변경하여 테넌트 키를 고객이 관리(BYOK)하도록 만들어야 합니다.
+
+AD RMS(Active Directory Rights Management Services)에서 마이그레이션하고 Azure Information Protection에 대해 Microsoft 관리 키 토폴로지를 선택한 경우 두 개 이상의 Microsoft 관리 키가 있습니다. 이 시나리오에서는 테넌트에 대해 최소 둘 이상의 Microsoft 관리 키가 있습니다. 키 하나 또는 둘 이상의 키는 AD RMS에서 가져온 키입니다. Azure Information Protection 테넌트에 대해 자동으로 생성된 기본 키도 있습니다.
+
+다른 키를 선택하여 Azure Information Protection용 활성 테넌트 키를 만들려면 AADRM 모듈에서 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet을 사용합니다. 사용할 키를 식별하려면 [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) cmdlet을 사용합니다. 다음 명령을 실행하여 Azure Information Protection 테넌트에 대해 자동으로 생성된 기본 키를 식별할 수 있습니다.
+
+    (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
+
+키 토폴로지를 변경하여 테넌트 키를 고객이 관리(BYOK)하도록 만들려면 [Azure Information Protection 테넌트 키 구현](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key)을 참조하세요.
 
 ## <a name="backup-and-recover-your-tenant-key"></a>테넌트 키 백업/복구
 Microsoft에서 테넌트 키를 백업하며 사용자는 아무런 작업을 수행할 필요가 없습니다.
 
 ## <a name="export-your-tenant-key"></a>테넌트 키 내보내기
-다음 3단계의 지침에 따라 Azure Information Protection 구성 및 테넌트 키를 내보낼 수 있습니다.
+다음 세 단계의 지침에 따라 Azure Information Protection 구성 및 테넌트 키를 내보낼 수 있습니다.
 
 ### <a name="step-1-initiate-export"></a>1단계: 내보내기 시작
 
--   그러려면, [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 **Azure Information Protection 키 내보내기 요청에 관한 Azure Information Protection 지원 케이스**를 엽니다. 자신이 Azure Information Protection 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 내보내기는 무료 지원 서비스가 아닙니다.
+- [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 **Azure Information Protection 키 내보내기 요청에 관한 Azure Information Protection 지원 케이스**를 엽니다. 자신이 Azure Information Protection 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 내보내기는 무료 지원 서비스가 아닙니다.
 
 ### <a name="step-2-wait-for-verification"></a>2단계: 확인 대기
 
@@ -76,12 +88,12 @@ Microsoft에서 테넌트 키를 백업하며 사용자는 아무런 작업을 �
 
 ### <a name="step-4-ongoing-protect-your-tenant-key"></a>4단계: 지속적인 테넌트 키 보호
 
--   테넌트 키를 받은 후에는 지속적으로 보호해야 합니다. 테넌트 키에 액세스할 수 있으면 보호되는 모든 문서의 암호를 해당 키를 사용하여 해독할 수 있기 때문입니다.
+테넌트 키를 받은 후에는 지속적으로 보호해야 합니다. 테넌트 키에 액세스할 수 있으면 보호되는 모든 문서의 암호를 해당 키를 사용하여 해독할 수 있기 때문입니다.
 
-    Azure Information Protection을 더 이상 사용하기 않기 위해 테넌트 키를 내보낼 경우 Azure Information Protection 테넌트에서 Azure Rights Management 서비스를 비활성화하는 것이 가장 좋습니다. 테넌트 키를 받을 때까지 기다렸다가 테넌트를 비활성화하지 마세요. 이러한 예방 조치를 취해야 권한이 없는 사람이 테넌트 키에 액세스하는 경우의 영향을 최소화할 수 있습니다. 지침은 [Azure 권한 관리 서비스 해제 및 비활성화](decommission-deactivate.md)를 참조하세요.
+Azure Information Protection을 더 이상 사용하기 않기 위해 테넌트 키를 내보낼 경우 Azure Information Protection 테넌트에서 Azure Rights Management 서비스를 비활성화하는 것이 가장 좋습니다. 테넌트 키를 받을 때까지 기다렸다가 테넌트를 비활성화하지 마세요. 이러한 예방 조치를 취해야 권한이 없는 사람이 테넌트 키에 액세스하는 경우의 영향을 최소화할 수 있습니다. 지침은 [Azure 권한 관리 서비스 해제 및 비활성화](decommission-deactivate.md)를 참조하세요.
 
 ## <a name="respond-to-a-breach"></a>위반 사항에 대응
-아무리 강력한 보안 시스템이라도 위반 대응 프로세스가 없다면 완벽하다고 할 수 없습니다. 테넌트 키는 노출되거나 도용될 수 있습니다. 테넌트 키를 효율적으로 보호한다고 하더라도 현재 생성 HSM 기술 또는 현재 키 길이/알고리즘에 취약점이 있을 수도 있습니다.
+아무리 강력한 보안 시스템이라도 위반 대응 프로세스가 없다면 완벽하다고 할 수 없습니다. 테넌트 키는 노출되거나 도용될 수 있습니다. 테넌트 키를 효율적으로 보호한다고 하더라도 현재 생성 기술 또는 현재 키 길이/알고리즘에 취약점이 있을 수도 있습니다.
 
 Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응하고 있습니다. 이 팀은 신뢰할 만한 문제 보고서가 확인되는 즉시 해당 범위, 근본 원인 및 완화 방법을 조사합니다. 이 문제가 사용자의 자산에 영향을 주는 경우 Microsoft는 구독 시 사용자가 제공한 주소를 사용해 전자 메일로 Azure Information Protection 테넌트 관리자에게 문제를 알립니다.
 

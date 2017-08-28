@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27dc3de51c72d0142ac3dbdbd97c02c0241e902d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 35bd2d176cb71c54a489d4f4b8faca4d668a7867
+ms.sourcegitcommit: c960f1d2140dea11e54cbeb37d53d1512621d90c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/23/2017
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>마이그레이션 3단계 - 클라이언트 쪽 구성
 
@@ -24,24 +24,29 @@ ms.lasthandoff: 06/30/2017
 
 AD RMS에서 Azure Information Protection으로 마이그레이션 3단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 7단계를 설명합니다.
 
-모든 클라이언트를 한 번에 마이그레이션할 수 없는 경우 클라이언트 배치에 대해 이러한 절차를 실행합니다. 배치에서 마이그레이션할 Windows 컴퓨터가 있는 각 사용자의 경우 앞에서 만든 **AIPMigrated** 그룹에 사용자를 추가합니다.
-
 ## <a name="step-7-reconfigure-clients-to-use-azure-information-protection"></a>7단계. Azure Information Protection을 사용하도록 클라이언트 다시 구성
 
-이 단계에서는 마이그레이션 스크립트를 사용하여 AD RMS 클라이언트를 다시 구성합니다. 스크립트는 AD RMS 대신 Azure Rights Management 서비스를 사용하도록 Windows 컴퓨터에서 구성을 다시 설정합니다. 
+모바일 장치 클라이언트 및 Mac 컴퓨터:
 
-**CleanUpRMS.cmd**:
+- [AD RMS 모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포할 때 만든 DNS SRV 레코드를 제거합니다.
 
-- AD RMS 클라이언트에서 해당 구성을 저장하는 데 사용하는 모든 폴더와 레지스트리 키의 내용을 삭제합니다. 이 정보는 클라이언트의 AD RMS 클러스터 위치를 포함합니다.
+Windows 클라이언트:
 
-**MigrateClient.cmd**:
+- 다음 마이그레이션 스크립트를 사용하여 AD RMS 클라이언트를 다시 구성합니다. 이러한 스크립트는 AD RMS 대신 Azure Rights Management 서비스를 사용하도록 Windows 컴퓨터에서 구성을 다시 설정합니다. 
+    
+    **CleanUpRMS.cmd**
+    
+    - AD RMS 클라이언트에서 해당 구성을 저장하는 데 사용하는 모든 폴더와 레지스트리 키의 내용을 삭제합니다. 이 정보는 클라이언트의 AD RMS 클러스터 위치를 포함합니다.
+    
+    **MigrateClient.cmd**
+    
+    - Azure Rights Management 서비스에 대한 사용자 환경(부트스트랩)을 초기화하도록 클라이언트를 구성합니다.
+    
+    - Azure Rights Management 서비스에 연결하여 AD RMS 클러스터로 보호되는 콘텐츠에 대한 사용권을 가져오도록 클라이언트를 구성합니다. 
 
-- Azure Rights Management 서비스에 대한 사용자 환경(부트스트랩)을 초기화하도록 클라이언트를 구성합니다.
+모든 Windows 클라이언트를 한 번에 마이그레이션할 수 없는 경우 클라이언트 배치에 대해 다음 절차를 실행합니다. 배치에서 마이그레이션할 Windows 컴퓨터가 있는 각 사용자의 경우 앞에서 만든 **AIPMigrated** 그룹에 사용자를 추가합니다.
 
--  Azure Rights Management 서비스에 연결하여 AD RMS 클러스터로 보호되는 콘텐츠에 대한 사용권을 가져오도록 클라이언트를 구성합니다. 
-
-
-### <a name="client-reconfiguration-by-using-registry-edits"></a>레지스트리 편집을 사용하여 클라이언트 재구성
+### <a name="windows-client-reconfiguration-by-using-registry-edits"></a>레지스트리 편집을 사용하여 Windows 클라이언트 재구성
 
 1. 앞에서 추출한 마이그레이션 스크립트 **CleanUpRMS.cmd** 및 **MigrateClient.cmd**로 돌아갑니다.
 
@@ -54,8 +59,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 3단계에는
 
     *&lt;테넌트 URL&gt;*의 Azure Rights Management 서비스 URL을 검색해야 할 경우 다시 [Azure Rights Management 서비스 URL을 식별하려면](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)을 참조하세요.
 
-3.  **AIPMigrated** 그룹의 멤버에서 사용되는 클라이언트 컴퓨터에서 **CleanUpRMS.cmd**를 실행한 다음 **MigrateClient.cmd**를 실행합니다. 예를 들어 이러한 스크립트를 실행하는 그룹 정책 개체를 만들어 이 사용자 그룹에 할당합니다.
-
+3.  **AIPMigrated** 그룹의 멤버에서 사용되는 Windows 클라이언트 컴퓨터에서 **CleanUpRMS.cmd**를 실행한 다음 **MigrateClient.cmd**를 실행합니다. 예를 들어 이러한 스크립트를 실행하는 그룹 정책 개체를 만들어 이 사용자 그룹에 할당합니다.
 
 ## <a name="next-steps"></a>다음 단계
 마이그레이션을 계속하려면 [4단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.

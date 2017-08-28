@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 618e8b6a160ccc699658bf8c317c40ed2ded3bee
-ms.sourcegitcommit: 87f0c7a8f9f1fdf7eece0f9d0c114ecf91f57683
+ms.openlocfilehash: 6077b9eba8ee04bf22c17612183f3d41b6b71e35
+ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/24/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -77,7 +77,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 4. 북미 이외의 지역: 
     
-    - 서비스에 인증할 레지스트리를 편집합니다.
+    - 서비스 검색을 위해 레지스트리를 편집합니다.
 
 #### <a name="prerequisite-1-the-azure-rights-management-service-must-be-activated"></a>필수 구성 요소 1: Azure Rights Management 서비스가 활성화되어야 함
 
@@ -229,12 +229,9 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 > [!NOTE]
 > 자체 계정을 사용하여 Azure Rights Management 서비스에서 인증을 받으려면 파일을 보호하거나 보호를 해제하거나, 템플릿을 가져오기 전에 Set-RMSServerAuthentication을 실행할 필요가 없습니다.
 
-
-
-
 #### <a name="prerequisite-4-for-regions-outside-north-america"></a>필수 구성 요소 4: 북미 이외의 지역
 
-Azure North America 지역 외에서 인증을 받으려면 레지스트리를 다음과 같이 편집해야 합니다. Azure Information Protection 테넌트가 북미 지역에 있으면 이 단계를 수행하지 마세요.
+서비스 사용자 계정을 사용하여 Azure 북아메리카 이외의 지역에서 파일을 보호하고 템플릿을 다운로드할 때 레지스트리를 편집해야 합니다. 
 
 1. Get-AadrmConfiguration cmdlet을 다시 실행하고 **CertificationExtranetDistributionPointUrl** 및 **LicensingExtranetDistributionPointUrl** 값을 적어둡니다.
 

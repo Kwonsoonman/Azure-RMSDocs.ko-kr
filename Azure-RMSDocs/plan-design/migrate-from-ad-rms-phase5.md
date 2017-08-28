@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aeffd9780001f4c91ea8600f11d8fc3b36abce73
-ms.sourcegitcommit: 238657f9450f18213c2b9fb453174df0ce1f1aef
+ms.openlocfilehash: 11775c64cbd5abd7c10a145a2d48f335db2d5b69
+ms.sourcegitcommit: 8251e4db274519a2eb8033d3135a22c27130bd30
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>마이그레이션 5단계 - 마이그레이션 후 작업
 
@@ -70,20 +70,28 @@ AD RMS 서버 프로비전을 해제한 후 Azure Portal에서 템플릿을 검�
 
     출력에서 **License**가 **False**를 표시해야 하고, **SecurityGroupOjbectId**에 대해 표시되는 GUID가 없습니다.
 
-## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>12단계. Azure Information Protection 테넌트 키 다시 입력
-이 단계는 AD RMS 배포에서 RMS 암호화 모드 1을 사용 중이던 경우 마이그레이션이 완료될 때 필요합니다. 키를 다시 생성하면 RMS 암호화 모드 2를 사용하는 새 테넌트 키가 만들어집니다. 암호화 모드 1은 마이그레이션 프로세스 중에만 Azure Information Protection에 대해 지원됩니다.
+## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>12단계. Azure Information Protection 테넌트 키 다시 생성
 
-마이그레이션이 완료될 때 키를 다시 생성하면 Azure Information Protection 테넌트 키를 AD RMS 키에 대한 잠재적인 보안 위반으로부터 보호하는 데도 도움이 됩니다.
+이 단계는 AD RMS 배포에서 RMS 암호화 모드 1을 사용 중이던 경우 마이그레이션이 완료될 때 권장됩니다. 키를 다시 생성하면 RMS 암호화 모드 2를 사용하는 보호가 적용됩니다. 
 
-Azure Information Protection 테넌트 키를 다시 생성하면(“키 롤링”이라고도 함) 새 키가 만들어지고 원래 키는 보관됩니다. 그러나 한 키에서 다른 키로 이동하는 작업은 즉시 수행되는 것이 아니라 몇 주에 걸쳐서 수행됩니다. 즉시 수행되지 않으므로 원래 키에 대해 의심스러운 위반이 발생할 때까지 기다리지 말고, 마이그레이션이 완료되는 즉시 Azure Information Protection 테넌트 키를 다시 생성합니다.
+AD RMS 배포에서 암호화 모드 2를 사용한 경우에도 새 키는 AD RMS 키에 대한 잠재적인 보안 위반으로부터 테넌트를 보호하는 데 도움이 되므로 이 단계가 여전히 권장됩니다.
+
+그러나 AD RMS와 함께 Exchange Online을 사용한 경우 키를 다시 생성하지 마세요. Exchange Online은 암호화 모드 변경을 지원하지 않습니다. 
+
+Azure Information Protection 테넌트 키를 다시 생성하면(“키 롤링”이라고도 함) 현재 활성 키가 보관되고 Azure Information Protection이 지정하는 다른 키를 사용하기 시작합니다. 이 다른 키는 Azure Key Vault에서 생성하는 새 키이거나, 테넌트에 대해 자동으로 생성된 기본 키일 수 있습니다.
+
+한 키에서 다른 키로 이동하는 작업은 즉시 수행되는 것이 아니라 몇 주에 걸쳐서 수행됩니다. 즉시 수행되지 않으므로 원래 키에 대해 의심스러운 위반이 발생할 때까지 기다리지 말고, 마이그레이션이 완료되는 즉시 이 단계를 수행하세요.
 
 Azure Information Protection 테넌트 키를 다시 입력하려면 다음과 같이 합니다.
 
-- Microsoft에서 관리하는 테넌트 키인 경우: [Microsoft 지원](../get-started/information-support.md#to-contact-microsoft-support)에 문의하여 **AD RMS에서 마이그레이션 후 Azure Information Protection 키 다시 입력 요청에 관한 Azure Information Protection 지원 케이스**를 엽니다. 자신이 Azure Information Protection 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 다시 입력은 무료 지원 서비스가 아닙니다.
+- **테넌트가 Microsoft에서 관리되는 경우**: PowerShell cmdlet [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)를 실행하고 테넌트에 대해 자동으로 생성된 키의 키 식별자를 지정합니다. [Get-AadrmKeys](/powershell/module/aadrm/get-aadrmkeys) cmdlet을 실행하여 지정할 값을 식별할 수 있습니다. 테넌트에 대해 자동으로 생성된 키에는 가장 오래된 생성 날짜가 있으므로, 다음 명령을 사용하여 식별할 수 있습니다.
+    
+        (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-- 사용자가 관리하는 테넌트 키인 경우(BYOK): Azure Key Vault에서 Azure Information Protection 테넌트에 사용 중인 키를 다시 입력한 다음 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet을 다시 실행하여 새 키 URL을 지정합니다. 
+- **사용자가 관리하는 테넌트 키인 경우(BYOK)**: Azure Key Vault에서 Azure Information Protection 테넌트에 대해 키 생성 프로세스를 반복한 다음 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet을 다시 실행하여 이 새 키에 대한 URI를 지정합니다. 
 
 Azure Information Protection 테넌트 키 관리에 대한 자세한 내용은 [Azure Rights Management 테넌트 키에 대한 작업](../deploy-use/operations-tenant-key.md)을 참조하세요.
+
 
 ## <a name="next-steps"></a>다음 단계
 

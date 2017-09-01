@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: c3260d82c13c01bb16b22e472d57720777e82f7b
-ms.sourcegitcommit: a4f4edcbf0f0a7de74d1dcec9ce6e661c6882a74
+ms.openlocfilehash: ccc52f1fca6e968ac1794d7bad437c271f4bd485
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="step-3-install-the-client"></a>3단계: 클라이언트 설치
 
@@ -27,10 +27,8 @@ ms.lasthandoff: 08/07/2017
 
 1. Office가 설치된(그러나 Word는 현재 열려 있지 않은) PC에서 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)로 이동하여 **AzInfoProtection.exe**를 다운로드합니다. 이 버전은 프로덕션 네트워크에서 지원되는 클라이언트의 일반 공급 버전입니다. 그러나 모든 최신 기능 및 수정 사항이 포함된 현재 미리 보기 버전을 사용하려면 **AzInfoProtection_PREVIEW_1.10.52.0.exe**를 다운로드합니다.
     
-    이 자습서에 두 클라이언트 버전을 모두 사용할 수 있지만, 그림은 일반 공급 버전과 일치하며 자습서에 클라이언트의 미리 보기 버전에 포함된 새로운 기능은 포함되어 있지 않습니다.
-
 2. 방금 다운로드한 실행 파일을 실행하고 프롬프트에 따라 클라이언트를 설치합니다.
-
+    
     이 자습서에서는 방금 구성한 정책이 Azure에서 다운로드되고 설치된 경우 데모 정책을 바꿀 것이므로 데모 정책 설치 옵션의 선택 여부는 중요하지 않습니다. 그러나 Azure Information Protection에 연결하지 않고 기본 레이블을 경험해 보려는 경우 데모 정책 옵션을 사용할 수 있습니다. 
 
 ## <a name="verify-the-installation"></a>설치 확인
@@ -44,7 +42,7 @@ Word와 새 빈 문서를 열어 설치가 완료되었는지 확인합니다(�
 ![Azure Information Protection 빠른 시작 자습서 3단계 - 클라이언트 설치됨](../media/word2016-calloutsv2.png)
 
 - **홈** 탭의 새 **보호** 그룹(**보호** 단추가 포함됨)
-
+    
     **보호** > **도움말 및 피드백**을 클릭하고 **Microsoft Azure Information Protection** 대화 상자에서 클라이언트 상태를 확인합니다. **연결 방식**과 사용자 이름이 표시됩니다. 또한 마지막 연결의 최근 시간 및 날짜와 Information Protection 정책이 설치된 시기도 표시됩니다. 표시된 사용자 이름이 테넌트에 대해 올바른지 확인합니다.
 
 - 리본 아래에 새로운 표시줄인 Information Protection 표시줄이 표시됩니다. 여기에는 Azure Portal에서 봤던 **민감도** 제목과 레이블이 표시됩니다. 

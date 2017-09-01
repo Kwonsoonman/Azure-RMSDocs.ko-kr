@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 62ea1579b61b096e1f7fe6900d72b1b8077c9ff1
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 980d7eafa6490a00bc37de9b6f36052be0d70996
+ms.sourcegitcommit: 4b7f025e9f78d25c6f3079cceb42bc33f3f3a612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -129,7 +129,7 @@ Rights Management 발급자가 사용자를 대신하여 보호할 때, Rights M
 Rights Management 소유자는 Windows 파일 시스템의 소유자와 독립적입니다. 동일할 때도 많지만, SDK나 PowerShell을 사용하지 않는 경우에도 다를 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
-[Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md))
+[Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md)
 
 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](configure-super-users.md)
 

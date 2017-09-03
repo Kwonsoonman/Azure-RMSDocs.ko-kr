@@ -4,7 +4,6 @@
 # [서비스 배포 및 사용](activate-service.md)
 ## [서비스 활성화](activate-service.md)
 ### [Office 365 관리 센터](activate-office365.md)
-### [Azure 클래식 포털](activate-azure-classic.md)
 ### [Azure Portal](activate-azure.md)
 ## [응용 프로그램 구성](configure-applications.md)
 ### [Office 365](configure-office365.md)

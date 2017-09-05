@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 88843833b87eb054f534a7c85e6a7c2e52797e9b
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 7f3b64e5e4b0dfbccf694a986a85f1c207580915
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -48,7 +48,7 @@ Azure Information Protection P2 구독을 필요로 하는 옵션은 이제 포�
 
 2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
     
-    처음에 서비스에 연결할 때 **빠른 시작** 페이지가 자동으로 열립니다. 모든 사용자에게 적용되는 정책을 구성하려면 **전역 정책**을 클릭하여 **정책: 전역** 블레이드를 엽니다. 이 블레이드는 나중에 서비스에 다시 연결되면 자동으로 열리므로 모든 사용자에게 적용되는 전역 정책을 보고 편집할 수 있습니다. 
+    서비스에 처음 연결하면 **Azure Information Protection - 빠른 시작** 블레이드가 자동으로 열립니다. 모든 사용자가 받는 정책을 구성하려면 **정책** 메뉴 선택에서 **전역 정책**을 선택하여 **Azure Information Protection - 전역 정책** 블레이드를 엽니다. 이 블레이드는 나중에 서비스에 다시 연결되면 자동으로 열리므로 모든 사용자에게 적용되는 전역 정책을 보고 편집할 수 있습니다. 
     
     이 Azure Information Protection 정책에는 구성할 수 있는 다음 요소가 포함됩니다.
     
@@ -70,7 +70,7 @@ Azure Information Protection은 5개의 기본 레이블을 포함하는 [기본
 
 기본 레이블을 변경하지 않고 사용하거나, 이를 사용자 지정하거나, 삭제하고 새 레이블을 만들 수 있습니다. 다음 섹션의 링크에서 관련 옵션을 찾아 구성하는 방법을 자세히 확인할 수 있습니다. 
 
-Azure Information Protection 블레이드를 변경한 경우 **Save**(저장)를 클릭하여 변경 내용을 저장하거나 **Discard**(취소)를 클릭하여 마지막으로 저장된 설정으로 되돌립니다. 
+Azure Information Protection 블레이드를 변경한 경우 **Save**(저장)를 클릭하여 변경 내용을 저장하거나 **Discard**(취소)를 클릭하여 마지막으로 저장된 설정으로 되돌립니다.
 
 원하는 변경 작업을 마쳤으면 **Publish**(게시)를 클릭합니다. 
 

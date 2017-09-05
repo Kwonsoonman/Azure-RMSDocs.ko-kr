@@ -4,17 +4,17 @@ description: "조직에서 Microsoft Azure Information Protection 사용을 빠�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 9afee2da9cb6fdd787dfb6bdafe2ae64fdef9475
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: 34a20c3e83b2d3d6fde15d1226535ccb90431126
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure Information Protection 빠른 시작 자습서 
 
@@ -36,9 +36,11 @@ Azure Information Protection을 사용하여 이 자습서를 완료하는 데 �
   > [!TIP] 
   > 이 프로세스를 완료하려면 시간이 오래 걸릴 수도 있으므로 구독을 신청해야 할 경우에는 미리 준비해야 합니다.
 
-- Azure Portal에 로그인하여 Azure Information Protection 정책을 구성할 수 있는 전역 관리자 계정. 이 계정에 메일 주소와 제대로 작동하는 메일 서비스(예, Exchange Online 또는 Exchange Server)가 있어야 합니다.
+- Azure Portal에 로그인하여 Azure Information Protection 정책을 구성할 수 있는 전역 관리자 계정 또는 보안 관리자 계정. 이 계정에 메일 주소와 제대로 작동하는 메일 서비스(예: Exchange Online)가 있어야 합니다.
 
-- Windows(Windows 7 서비스 팩 1 이상)를 실행하며 Office 365 ProPlus(2016 앱 또는 2013 앱 포함), Office Professional Plus 2016, Office Professional Plus 2013 서비스 팩 1 또는 Office Professional Plus 2010 서비스 팩 2가 설치된 컴퓨터. 클라우드 계정을 사용하여 Office 앱에 로그인해야 합니다.
+- Windows(Windows 7 서비스 팩 1 이상)를 실행하며 Office 365 ProPlus(2016 앱 또는 2013 앱 포함), Office Professional Plus 2016, Office Professional Plus 2013 서비스 팩 1 또는 Office Professional Plus 2010 서비스 팩 2가 설치된 컴퓨터. 
+    
+    Azure Information Protection에서 이러한 응용 프로그램을 사용하려면 [Azure Rights Management 서비스 사용을 포함하는 Office 365 구독](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다. 예: Office 365 E3 또는 Office 365 E5 구독. 이 구독의 라이선스를 사용하여 Office 앱에 로그인해야 합니다.
 
 이제 시작하겠습니다.
 

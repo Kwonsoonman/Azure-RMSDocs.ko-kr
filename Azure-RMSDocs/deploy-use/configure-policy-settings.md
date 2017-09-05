@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 28997c346c727112a1acb35014af1c8ad8174ccf
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2bc5493c906b0d21be2679f0d777cb4fd5fbe30c
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 정책 설정을 구성하는 방법
 
@@ -27,11 +27,15 @@ Azure Information Protection 정책에는 Information Protection 표시줄 제�
 
 이러한 설정을 구성하려면
 
-1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창에서 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. 구성하려는 이러한 설정이 모든 사용자에게 적용되는 경우 **정책: 글로벌** 블레이드에서 다음과 같은 전역 설정을 구성합니다.
+2. 구성하려는 설정을 모든 사용자에게 적용하려는 경우 **Azure Information Protection - 전역 정책** 블레이드에 그대로 있습니다.
+    
+    구성하려는 설정이 선택한 사용자에게만 적용되도록 [범위 지정 정책](configure-policy-scope.md)에 포함되는 경우 **정책** 메뉴 선택에서 **범위 지정 정책**을 선택합니다. 그런 다음 **Azure Information Protection - 범위 지정 정책** 블레이드에서 범위 지정 정책을 선택합니다.
+
+3. **Azure Information Protection - 전역 정책** 블레이드 또는 **정책:\<이름>** 블레이드에서 설정을 구성합니다.
     
     - **All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함):이 옵션을 **On**(켜기)으로 설정하면 저장되는 모든 문서 및 전송되는 모든 메일에 레이블이 적용되어야 합니다. 레이블 지정은 사용자에 의해 수동으로 할당되거나, [조건](configure-policy-classification.md)의 결과로 자동으로 할당되거나, 기본적으로 할당(**Select the default label**(기본 레이블 선택) 옵션을 설정하여)될 수 있습니다. 
         
@@ -52,8 +56,6 @@ Azure Information Protection 정책에는 Information Protection 표시줄 제�
     - **Azure Information Protection 클라이언트 "추가 정보" 웹 페이지에 대한 사용자 지정 URL 제공**: 사용자가 Office 응용 프로그램의 **홈** 탭에서 **보호** > **도움말 및 피드백**을 선택할 때 **Microsoft Azure Information Protection** 대화 상자의 **도움말 및 피드백** 섹션에 이 링크가 표시됩니다. 기본적으로 이 링크를 누르면 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동됩니다. 이 링크로 다른 웹 페이지로 이동하려면 HTTP 또는 HTTPS(권장) URL을 입력할 수 있습니다. 입력한 사용자 URL이 액세스 가능하거나 모든 장치에 올바로 표시되는지 확인하는 작업은 수행되지 않습니다.
         
         예를 들어 지원 센터의 경우 클라이언트 설치 및 사용 방법에 대한 정보(**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 또는 릴리스 버전 정보(**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**)를 포함하는 Microsoft 설명서 페이지를 입력할 수 있습니다. 또는 사용자가 지원 센터에 문의할 때 필요한 정보를 포함하는 자체 웹 페이지나 구성한 레이블을 사용하는 방법을 단계별로 안내하는 비디오를 게시할 수 있습니다.
-        
-         [범위 지정 정책](configure-policy-scope.md)을 만든 경우에는 지정한 사용자에 대해 이러한 설정을 덮어쓸 수 있습니다. 범위 지정 정책에서 이러한 설정을 구성하려면 초기 **Azure Information Protection** 블레이드에서 해당 범위 지정 정책을 먼저 선택합니다.
 
 3. 변경 내용을 저장하려면 **Save**(저장)를 클릭합니다.
 

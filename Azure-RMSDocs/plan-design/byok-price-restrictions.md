@@ -1,6 +1,6 @@
 ---
 title: "BYOK 가격 및 제한 사항 - Azure Information Protection"
-description: "BYOK(\"Bring Your Own Key\")라고도 하는 고객 관리 키를 Azure RMS에서 사용할 때의 제한 사항에 대해 알아봅니다."
+description: "BYOK(“Bring Your Own Key”)라고도 하는 고객 관리 키를 Azure Information Protection에서 사용할 때의 제한 사항에 대해 알아봅니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cfc4243d15112545219f82964d09ce9ce238355d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3c8fb56d33c1aa745975254dc9a2134db857b352
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 

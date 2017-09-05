@@ -1,66 +1,78 @@
 ---
-title: "Azure Information Protection에서 다른 언어에 대한 레이블 구성"
-description: "Azure Information Protection 정책에서 언어를 지정하고 번역을 가져오는 방식으로 Information Protection 표시줄에 표시되는 레이블에 대해 여러 다른 언어에 대한 지원을 추가할 수 있습니다."
+title: "Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿 구성"
+description: "Azure Information Protection 정책에서 언어를 지정하고 번역을 가져오는 방식으로 Information Protection 표시줄에 표시되는 레이블과 표시되는 템플릿에 대한 다른 언어 지원을 추가할 수 있습니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/05/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: ec99bf36e8904a7304a9d33c32d17ba92e2e22d2
-ms.sourcegitcommit: 8b768e7e249e124f24acdf630d165eaf743f9c21
+ms.openlocfilehash: 33666be46b9b2fc022e541ec710a0be596f4ede0
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/30/2017
 ---
-# <a name="how-to-configure-labels-for-different-languages-in-azure-information-protection"></a>Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법
+# <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
 
 >[!NOTE]
->이 기능은 현재 미리 보기로 제공되며 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 다운로드 가능한 Azure Information Protection 클라이언트의 **미리 보기** 버전과 함께 사용됩니다.
+>이 기능은 현재 미리 보기로 제공되며 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 다운로드 가능한 Azure Information Protection 클라이언트의 현재 **미리 보기** 버전과 함께 사용됩니다.
 
-기본적으로 레이블의 이름 및 설명은 조직의 모든 사용자에게 표시되는 단일 언어를 지원합니다. 필요한 언어를 선택하고, 현재 레이블 이름 및 설명을 파일로 내보내고, 파일을 편집하여 번역을 제공한 다음 해당 파일을 다시 Azure Information Protection 정책으로 가져오는 방식으로 다른 언어에 대한 지원을 추가할 수 있습니다.
+Azure Information Protection의 기본 레이블이 여러 언어를 지원하더라도 지정하는 레이블 이름 및 설명에 대한 지원을 구성해야 합니다. 이 구성을 사용하려면 다음을 수행해야 합니다.
+
+1. 사용자가 사용하는 언어를 선택합니다. 
+
+2. 현재 레이블 이름과 설명을 파일로 내보냅니다.
+
+3. 파일을 편집하여 번역을 제공합니다.
+
+4. 파일을 다시 Azure Information Protection 정책으로 가져옵니다.
+
+다음 조건 중 하나가 적용되는 경우 다른 언어에 대한 템플릿을 구성할 수도 있습니다. 이 구성은 사용자 또는 관리자가 현재 템플릿 이름과 설명을 지역화된 해당 언어로 봐야 하는 경우 적합합니다.
+
+- 템플릿이 Azure 클래식 포털에서나 PowerShell을 사용하여 만들어졌고 템플릿이 **미리 정의된 템플릿 선택** 보호 설정을 사용하여 레이블에 연결되지 않았습니다.
+
+- 레이블을 지원하는 구독이 없으므로 Azure Portal에서 템플릿을 만들고 관리할 수만 있습니다.
 
 Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어를 선택합니다. 그러면 이러한 레이블 이름 및 설명은 Office 앱의 Azure Information Protection 표시줄과 **분류 및 보호 - Azure Information Protection** 대화 상자에 각각 표시됩니다. 선택할 언어에 대한 자세한 내용은 이 페이지에서 [Azure Information Protection 클라이언트에서 표시할 언어를 결정하는 방법](#how-the-azure-information-protection-client-determines-the-language-to- display) 섹션을 참조하세요. 
 
-## <a name="to-configure-labels-to-display-in-different-languages"></a>여러 언어로 표시되도록 레이블을 구성하려면
+## <a name="to-configure-labels-and-templates-for-different-languages"></a>다른 언어에 대한 레이블 및 템플릿을 구성하려면
 
-1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 그렇게 하지 않은 경우 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. 초기 **Azure Information Protection** 블레이드에서 **관리**를 찾은 후 **언어(미리 보기)**를 선택합니다.
+2. **관리** 메뉴 선택에서 **언어(미리 보기)**를 선택합니다.
 
-3. **Azure Information Protection - 언어(미리 보기)** 블레이드에서 검색 상자에 이름을 직접 입력하거나 사용 가능한 언어 목록을 따라 스크롤하여 추가하려는 첫 번째 언어를 찾습니다. 
+3. **Azure Information Protection - 언어(미리 보기)** 블레이드에서 **번역할 새 언어 추가**를 선택합니다. 추가할 언어를 선택한 다음 **확인**을 선택합니다. 검색 상자에 언어 이름을 입력하거나 사용 가능한 언어 목록을 스크롤할 수 있습니다.
 
-4. 언어를 선택하고 **확인**을 선택합니다.
-
-5. 다음 블레이드에서 목록에 추가한 선택된 언어가 표시됩니다.
+4. 이제 **Azure Information Protection - 언어(미리 보기)** 블레이드에 선택한 언어가 표시됩니다.
     
-    - 다른 언어를 추가하려면 **번역할 새 언어 추가**를 선택하고 3, 4단계를 반복합니다. 
+    - 다른 언어를 추가하려면 **번역할 새 언어 추가**를 선택하고 이전 단계를 반복합니다. 
         
         > [!NOTE]
         > Office 및 Windows에 대한 사용자의 언어를 선택해야 합니다. 경우에 따라 컴퓨터마다 두 개의 다른 항목을 선택해야 할 수 있습니다.
         
     - 추가한 언어가 마음에 들지 않으면 목록에서 해당 항목을 선택하고 **제거**를 클릭합니다.
 
-6. 지원하려는 모든 언어가 나열되면 **언어 이름** 옆에 있는 확인란을 선택하여 모든 항목을 선택하고(또는 개별 항목 선택) **내보내기**를 클릭하여 기존 레이블 이름 및 설명의 로컬 복사본을 파일에 저장합니다. 
+5. 지원하려는 모든 언어가 나열되면 **언어 이름** 옆에 있는 확인란을 선택하여 모든 항목을 선택하고(또는 개별 항목 선택) **내보내기**를 클릭하여 기존 레이블 이름 및 설명의 로컬 복사본을 파일에 저장합니다. 
     
     다운로드한 파일의 이름은 **exported localization.zip**으로 지정된 후 로컬 다운로드 폴더에 저장됩니다. Azure Portal의 상태 표시줄에서 이 파일 이름을 선택하여 액세스할 수도 있습니다.
 
-7. **exported localization.zip**에서 파일 압축을 풀면 다운로드하기 위해 선택한 각 언어에 대해 .xml 파일이 생성됩니다. 
+6. **exported localization.zip**에서 파일 압축을 풀면 다운로드하기 위해 선택한 각 언어에 대해 .xml 파일이 생성됩니다. 
 
-8. 각 .xml 파일을 편집합니다. `<LocalizedText>` 태그 내의 각 문자열에 대해 선택한 각 언어의 원하는 번역을 제공합니다. 
+7. 각 .xml 파일을 편집합니다. `<LocalizedText>` 태그 내의 각 문자열에 대해 선택한 각 언어의 원하는 번역을 제공합니다. 
 
-9. 각 .xml 파일을 편집한 경우 이러한 파일이 포함된 새 압축(zip) 폴더를 만듭니다. 압축한 폴더에는 이름을 지정할 수 이지만 확장명은 .zip이어야 합니다.
+8. 각 .xml 파일을 편집한 경우 이러한 파일이 포함된 새 압축(zip) 폴더를 만듭니다. 압축한 폴더에는 이름을 지정할 수 이지만 확장명은 .zip이어야 합니다.
 
-10. Azure Portal 블레이드로 돌아가서 **가져오기**를 선택합니다. 이 옵션을 사용할 수 없으면 **언어 이름**에 대한 확인란 또는 개별적으로 선택한 언어에 대한 확인란을 선택 취소합니다.
+9. **Azure Information Protection - 언어(미리 보기)** 블레이드로 돌아가서 **가져오기**를 선택합니다. 이 옵션을 사용할 수 없으면 **언어 이름**에 대한 확인란 또는 개별적으로 선택한 언어에 대한 확인란을 선택 취소합니다.
     
-    가져오기가 완료되면 다음 번에 Azure Information Protection 정책을 게시할 때 지역화된 레이블 이름 및 설명이 다운로드됩니다. **전역 정책** 또는 **범위 정책** 블레이드에서 **게시**를 클릭할 수 있습니다.
+    가져오기가 완료되면 다음에 Azure Information Protection 정책을 게시한 후 지역화된 이름 및 설명이 사용자에게 다운로드됩니다. **전역 정책** 또는 **범위 정책** 블레이드에서 **게시**를 클릭할 수 있습니다.
 
 ## <a name="how-the-azure-information-protection-client-determines-the-language-to-display"></a>Azure Information Protection 클라이언트가 표시할 언어를 결정하는 방법
 

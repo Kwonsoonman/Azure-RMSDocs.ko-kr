@@ -4,17 +4,17 @@ description: "문서 또는 메일 메시지에 레이블을 할당하는 경우
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: a65299651abd97adb0fc7641be2f2f3c6f1d8d2f
-ms.sourcegitcommit: adb38b008656ac706920a8488fd2beafedadbc97
+ms.openlocfilehash: 09e8bfdc9bae9979db6e6bc39457bdcdcf6dabca
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -35,6 +35,8 @@ ms.lasthandoff: 08/16/2017
     - Azure Information Protection 클라이언트의 현재 미리 보기 버전을 사용하는 경우 여러 줄의 텍스트가 지원됩니다.
 
 - 텍스트 문자열을 지정할 수도 있고, [변수](#using-variables-in-the-text-string)를 사용하여 머리글, 바닥글 또는 워터마크를 적용할 때 텍스트 문자열을 동적으로 만들 수도 있습니다.
+
+- 시각적 표식은 한 언어만 지원합니다.
 
 ## <a name="when-visual-markings-are-applied"></a>시각적 표시가 적용되는 경우
 
@@ -58,13 +60,13 @@ ms.lasthandoff: 08/16/2017
 
 다음 지침을 사용하여 레이블에 대한 시각적 표시를 구성할 수 있습니다.
 
-1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다.
-
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
+    
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. 시각적 표시용으로 구성하려는 레이블이 모든 사용자에게 적용되는 경우 **정책: 글로벌** 블레이드에서 변경할 레이블을 선택합니다.
-
-     구성하려는 레이블이 [범위 지정 정책](configure-policy-scope.md)에 포함되므로 선택한 사용자에게만 적용되는 경우에는 초기 **Azure Information Protection** 블레이드에서 해당 범위 지정 정책을 먼저 선택합니다.
+2. 구성하려는 레이블을 모든 사용자에게 적용하려는 경우 **Azure Information Protection - 전역 정책** 블레이드에 그대로 있습니다.
+    
+    구성하려는 레이블이 선택한 사용자에게만 적용되도록 [범위 지정 정책](configure-policy-scope.md)에 포함되는 경우 **정책** 메뉴 선택에서 **범위 지정 정책**을 선택합니다. 그런 다음 **Azure Information Protection - 범위 지정 정책** 블레이드에서 범위 지정 정책을 선택합니다.
 
 3. **Label**(레이블) 블레이드의 **Set visual marking (such as header or footer)**(시각적 표시(예: 머리글 또는 바닥글) 설정) 섹션에서 원하는 시각적 표식에 대한 설정을 구성한 다음 **Save**(저장)를 클릭합니다.
 

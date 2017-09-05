@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 468748c1-49d6-4c3e-a612-9c584acdc782
-ms.openlocfilehash: 5ceb351e72ec30015697d2b27111ae76fb3b2b58
-ms.sourcegitcommit: 64ba794e7844a74b1e25db0d44b90060e3ae1468
+ms.openlocfilehash: 3a5e3fc018bb19480a52729345ad2ac6d4c851be
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>4단계: 실제 분류, 레이블 지정 및 보호 작동 방식 확인 
 
@@ -56,22 +56,21 @@ Information Protection 표시줄에서 **레이블 편집** 아이콘을 다시 
 
 **민감도** 값에 **설정 안 함**이 표시되며, 이는 기본 레이블을 설정하지 않은 경우 사용자에게 처음에 표시되는 내용입니다.
 
-![Azure Information Protection 빠른 시작 자습서 4단계 - 분류 제거](../media/sensitivity-not-setv2.png)
-
-
 ## <a name="to-see-a-recommendation-prompt-for-labeling-and-automatic-protection"></a>레이블 지정 및 자동 보호에 대한 권장 메시지를 확인하려면
 
 1. Word 문서에서 유효한 신용 카드 번호(예: **4242-4242-4242-4242**)를 입력합니다. 
 
-2. 문서를 저장합니다(원하는 파일 이름, 원하는 위치 사용). 
+2. 원하는 파일 이름으로 문서를 로컬에 저장합니다. 
 
 3. 이제 신용 카드 번호가 감지될 경우 보호를 위해 구성한 레이블을 적용하기 위한 프롬프트가 표시됩니다. 권장 사항에 동의하지 않은 경우 정책 설정에서는 **해제**를 선택하여 거부할 수 있게 합니다. 권장 사항을 제공하되, 사용자가 권장 사항을 재정의할 수 있게 하면 자동 분류 사용 시 가양성을 줄이는 데 도움이 됩니다. 이 자습서에서는 **지금 변경**을 클릭합니다.
 
     ![Azure Information Protection 빠른 시작 자습서 4단계 - 권장 메시지](../media/change-nowv2.png)
 
-    이제 문서에서 구성된 레이블이 적용(예: **기밀 \ 모든 직원**)된 것을 볼 수 있을 뿐만 아니라 페이지에 걸쳐 조직 이름의 워터마크를 즉시 볼 수 있으며 **기밀로 분류됨** 바닥글도 적용된 것을 볼 수 있습니다. 
+    이제 문서에서 구성된 레이블이 적용(예: **기밀 \ 금융**)된 것을 볼 수 있을 뿐만 아니라 페이지에 걸쳐 조직 이름의 워터마크를 즉시 볼 수 있으며 **기밀로 분류됨** 바닥글도 적용된 것을 볼 수 있습니다. 
 
-    문서는 지정한 Azure 권한 관리 템플릿으로도 보호되며, 이는 **파일** 탭을 클릭하고 **문서 보호**에 대한 정보를 보고 확인할 수 있습니다. 기본 기밀 템플릿을 사용한 경우 문서는 내부 사용자로 제한되고(조직 외부의 사용자는 문서를 열 수 없음) 해당 내용을 복사하거나 인쇄할 수 없다는 정보가 표시됩니다. 문서의 소유자는 문서에서 복사하고 문서를 인쇄할 수 있지만, 조직의 다른 사용자에게 문서를 메일로 보내는 경우 해당 사용자는 이러한 작업을 수행할 수 없습니다.
+    또한 문서는 이 레이블에 지정한 권한으로 보호됩니다. **파일** 탭을 클릭하고 **문서 보호**에 대한 정보를 확인하여 문서가 보호되는지 확인할 수 있습니다. 문서가 **기밀 \ 금융**으로 보호되는 것과 레이블 설명을 확인할 수 있습니다. 
+    
+    레이블의 보호 구성 때문에 직원만 문서를 열 수 있으며 직원의 일부 작업이 제한됩니다. 예를 들어 인쇄 권한과 콘텐츠 복사 및 추출 권한이 없으므로 문서를 인쇄하거나 문서에서 복사할 수 없습니다. 이러한 제한은 데이터 손실을 방지하는 데 도움이 됩니다. 문서의 소유자는 문서를 인쇄하고 문서에서 복사할 수 있지만, 조직의 다른 사용자에게 문서를 메일로 보내는 경우 해당 사용자는 이러한 작업을 수행할 수 없습니다.
 
 4. 이제 이 문서를 닫을 수 있습니다.
 

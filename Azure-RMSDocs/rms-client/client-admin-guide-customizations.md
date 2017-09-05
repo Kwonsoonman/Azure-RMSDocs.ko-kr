@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 28b4e89cd6300c9b206abdf45f5d580b4474eaa5
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 9e7e5e67b664d177f60a445aa54df3f6072ff9c7
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -134,6 +134,9 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>사용자 지정 권한 옵션을 사용자가 사용할 수 없음
 
 이 구성 옵션은 현재 미리 보기로 제공됩니다.
+
+> [!IMPORTANT]
+> Word, Excel, PowerPoint 및 파일 탐색기의 사용자 정의 권한에 대해 구성된 레이블이 있는 경우 이 옵션을 사용하지 마세요. 이 옵션을 사용할 경우 레이블이 적용되면 사용자 지정 권한을 구성하라는 메시지가 사용자에게 표시되지 않습니다. 결과는 문서에 레이블이 지정되지만, 문서가 의도한 대로 보호되지 않습니다.
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 

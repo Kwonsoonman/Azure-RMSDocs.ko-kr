@@ -4,17 +4,17 @@ description: "Azure Information Protection에서 HYOK(AD RMS) 보호를 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 4730c2e27a78ec8bf106f43b3ac7097a40e0555d
-ms.sourcegitcommit: 17f593b099dddcbb1cf0422353d594ab964b2736
+ms.openlocfilehash: 80e7cb411132fa3c3fdff7f8c80febde68b071fa
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
@@ -61,13 +61,17 @@ Azure RMS 보호를 Azure Information Protection과 사용할 경우 Azure RMS �
 
 - Office 2010 또는 Office 2007을 지원하지 않습니다.
 
-- Azure RMS 보호를 위해 레이블을 구성할 때 **전달 금지** 옵션을 사용하지 마세요. 또한 사용자에게 Outlook에서 이 옵션을 수동으로 선택하지 말라고 알려줘야 합니다. 
+- 사용자에게 Outlook에서 **전달 금지**를 선택하지 않도록 알리거나 구체적인 지침을 제공합니다. 
 
-    레이블을 통해 또는 사용자가 수동으로 전달 금지 옵션을 적용하는 경우 필요한 Azure Rights Management 서비스가 아니라 AD RMS 배포에서 옵션이 적용될 수 있습니다. 이 시나리오에서는 공유하는 사람이 이 전달 금지 옵션이 적용된 메일 메시지를 외부에서 열 수 없습니다.
+    HYOK 또는 Azure Rights Management 서비스를 사용하도록 **전달 금지**에 대한 레이블을 구성할 수는 있지만, 사용자가 스스로 [전달 금지]를 선택할 수도 있습니다. 사용자는 Office 리본의 **메시지** 탭에 있는 **전달 금지** 단추를 사용하거나 Outlook 메뉴 옵션을 사용하여 이 옵션을 선택할 수 있습니다. **전달 금지** 메뉴 옵션은 **파일** > **사용 권한** 및 리본의 **옵션** 탭에 있는 **사용 권한** 단추에 있습니다. 
     
-    Azure Information Protection 클라이언트의 버전 1.9.58.0(현재 미리 보기)부터 Outlook의 **전달 금지** 단추는 항상 Azure RMS를 사용합니다. 이 설정은 보호를 위해 레이블을 구성할 경우에는 Outlook의 **전달 금지** 메뉴 옵션 또는 **전달 금지** 옵션에 영향을 주지 않습니다. 이 동작을 원하지 않는 경우 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)을 구성하여 Outlook의 **전달 금지** 단추를 숨길 수 있습니다.
+    사용자가 [전달 금지] 단추를 선택하면 Azure RMS 또는 AD RMS를 사용할 수 있으며 선택은 비결정적입니다. 사용자가 Outlook 메뉴 옵션에서 **전달 금지**를 선택하면 Azure RMS 또는 AD RMS 중에서 선택할 수 있지만, 메일 메시지에 대해 선택할 옵션을 알지 못할 수도 있습니다. 두 시나리오의 경우 모두, Azure RMS를 사용해야 하는 경우에 AD RMS를 사용하면 공유하는 사람이 외부에서 이러한 메일 메시지를 열 수 없습니다.
+    
+    Azure Information Protection 클라이언트의 현재 미리 보기 버전에서는 사용자가 Outlook에서 **전달 금지** 단추를 선택하면 항상 Azure RMS가 사용됩니다. 이 동작을 원하지 않는 경우 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)을 구성하여 Outlook의 **전달 금지** 단추를 숨길 수 있습니다. 
 
-- AD RMS(HYOK) 보호와 Azure RMS 보호를 사용할 때 사용자가 사용자 지정 권한을 구성하는 경우, 문서 또는 메일이 항상 Azure Rights Management로 보호됩니다.
+- Azure Information Protection 클라이언트의 현재 일반 공급 버전의 경우: AD RMS(HYOK) 보호와 Azure RMS 보호를 사용할 때 사용자가 사용자 지정 권한을 구성하면 문서 또는 메일이 항상 Azure Rights Management로 보호됩니다. 이 제한은 클라이언트의 현재 미리 보기 버전에는 적용되지 않습니다.
+
+- Word, Excel, PowerPoint 및 파일 탐색기에 대한 사용자 정의 권한을 구성하는 경우(Azure Information Protection 클라이언트의 현재 미리 보기 버전에서 지원됨): 파일 탐색기에서 HYOK(AD RMS) 보호가 아니라 Azure RMS를 사용한 보호가 항상 적용됩니다. 
 
 - 사용자가 Outlook에서 AD RMS 보호를 적용하는 레이블을 선택한 다음 메일을 보내기 전에 마음이 바뀌어 Azure RMS 보호를 적용하는 레이블을 선택하는 경우, 새로 선택한 레이블은 적용되지 않습니다. 다음 오류 메시지가 표시됩니다. **Azure Information Protection cannot apply this label. You don't have permission to perform this action.**(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 이 작업을 수행할 권한이 없습니다.)
     
@@ -107,7 +111,9 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
 
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Azure Information Protection 레이블을 사용하여 AD RMS 보호를 지정하는 데 필요한 정보 찾기
 
-**HYOK(AD RMS)** 보호에 대한 레이블을 구성하는 경우 AD RMS 클러스터의 템플릿 GUID 및 라이선스 URL을 지정해야 합니다. 이러한 두 값은 Active Directory Rights Management Services 콘솔에서 확인할 수 있습니다.
+**HYOK(AD RMS)** 보호에 대한 레이블을 구성하는 경우 AD RMS 클러스터의 라이선스 URL을 지정해야 합니다. 또한 사용자에게 부여할 권한에 대해 구성한 템플릿을 지정하거나, 사용자가 권한 및 사용자를 정의할 수 있도록 해야 합니다. 
+
+Active Directory Rights Management Services 콘솔에서 템플릿 GUID 및 라이선스 URL 값을 찾을 수 있습니다.
 
 - 템플릿 GUID를 찾으려면: 클러스터를 확장하고 **권한 정책 템플릿**을 클릭합니다. **분산 권한 정책 템플릿** 정보에서 사용할 템플릿의 GUID를 복사할 수 있습니다. 예: 82bf3474-6efe-4fa1-8827-d1bd93339119
 

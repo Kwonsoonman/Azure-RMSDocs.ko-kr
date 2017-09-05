@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 08/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6077b9eba8ee04bf22c17612183f3d41b6b71e35
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 3a4a84356d59692dd3693b4bbaa00a3e39c95597
+ms.sourcegitcommit: adeab31c7aa99eab115dd12035fc5d9dffec4e9c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/29/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -220,7 +220,7 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
     Set-RMSServerAuthentication -Key zIeMu8zNJ6U377CLtppkhkbl4gjodmYSXUVwAO5ycgA=-AppPrincipalId b5e3f76a-b5c2-4c96-a594-a0807f65bba4-BposTenantId 23976bc6-dcd4-4173-9d96-dad1f48efd42
 
-이전 명령에서와 같이 단일 명령을 사용해서 여러 값을 제공하거나, Set-RMSServerAuthentication만 입력하고 요구가 있을 때마다 값을 하나씩 제공할 수 있습니다. 명령이 완료되면 클라이언트가 현재 “서버 모드"에서 작동하는 것을 나타내는 "**The RmsServerAuthentication is set to ON**"(RmsServerAuthentication이 ON으로 설정됨)이 표시됩니다. 이 메시지는 사용자가 제공한 값을 사용하여 인증에 성공한 것을 확인하지 않고 서버 모드로의 전환에 성공한 것을 확인합니다.
+이전 명령에 표시된 것처럼, 비대화형으로 실행할 스크립트에서 하듯이 단일 명령으로 값을 제공할 수 있습니다. 그러나 테스트 목적으로는 Set-RMSServerAuthentication만 입력할 수 있으며 메시지가 표시되면 값을 하나씩 제공할 수 있습니다. 명령이 완료되면 이제 클라이언트가 스크립트 및 Windows Server 파일 분류 인프라와 같은 비대화형 사용에 적합한 “서버 모드”에서 작동합니다.
 
 이 서비스 사용자를 슈퍼 사용자로 만드는 것을 고려: 이 서비스 사용자가 항상 다른 사용자를 위해 파일 보호를 해제할 수 있도록 하려면 슈퍼 사용자로 구성할 수 있습니다. 표준 사용자 계정을 슈퍼 사용자로 구성할 때와 같은 방식으로 동일한 Azure RMS cmdlet, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md)를 사용하되, AppPrincipalId 값을 갖는 **ServicePrincipalId** 매개 변수를 지정합니다.
 

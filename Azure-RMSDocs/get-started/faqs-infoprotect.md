@@ -4,7 +4,7 @@ description: "Azure Information Protection를 사용한 분류 및 레이블 지
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/12/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 80efd633bc814af1ac28e4b6bf2d0b3062b27d01
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2ac8211b338b9d35bb7962455a117d02f9c1fa32
+ms.sourcegitcommit: 4b7f025e9f78d25c6f3079cceb42bc33f3f3a612
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
@@ -30,19 +30,15 @@ Azure Information Protection에서 특별히 분류 및 레이블 지정에 대�
 
 추가 분류 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility 및 보안 블로그](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요. 현재 릴리스에는 다음을 포함하는 몇 가지 제한이 있습니다.
 
-- 레이블 이름 및 도구 설명은 하나의 언어로만 지원됩니다. 그러나 다국어 지원은 현재 미리 보기로 제공됩니다. 자세한 내용은 [다른 언어에 대한 레이블을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요.
+- 레이블 이름 및 도구 설명은 하나의 언어로만 지원됩니다. 그러나 다국어 지원은 현재 미리 보기로 제공됩니다. 자세한 내용은 [다른 언어에 대한 레이블 및 템플릿을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요.
 
 - 분류 및 레이블 지정을 위한 중앙 집중식 로깅은 없습니다.
 
-- 자동 분류에 대한 조건은 구 또는 패턴이어야 합니다.
-
-- 모바일 장치(iOS 및 Android) 및 Mac 컴퓨터용 Office 앱과 Office Web Apps(Office Online)에 대한 레이블 지정 기능은 없습니다.
+- 모바일 장치(iOS 및 Android) 및 Mac 컴퓨터용 Office 앱 또는 Office Web Apps(Office Online)에는 레이블 지정 기능이 없습니다.
 
 - 분류 및 레이블 지정 기능이 Exchange Online 또는 SharePoint Online과는 통합되지 않습니다.
 
-- 파트너 및 개발자용 SDK에는 아직 분류 및 레이블 지정 기능이 포함되지 않습니다.
-
-2월 릴리스에서는 이전의 여러 제한이 제거됩니다. 자세한 내용은 [블로그 게시물 알림](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/08/azure-information-protection-december-update-moves-to-general-availability/)을 참조하세요.
+Azure Information Protection의 [사용자 의견 사이트](https://msip.uservoice.com/)를 방문하여 새로운 기능을 요청하고 요청에 투표하세요.
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>분류 및 레이블을 구성하려면 전역 관리자여야 합니까?
 

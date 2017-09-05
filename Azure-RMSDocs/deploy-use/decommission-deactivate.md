@@ -4,7 +4,7 @@ description: "Azure Information Protection에서 이 정보 보호 서비스를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 277630708fb1d88d59b418146d0e42615ebf495c
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: bebc3bf5593c2e8d166645b6cc18ad02d739d9ba
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="decommissioning-and-deactivating-azure-rights-management"></a>Azure 권한 관리 서비스 해제 및 비활성화
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 07/31/2017
 
 Azure Information Protection에서 Azure Rights Management 서비스를 사용하여 조직이 콘텐츠를 보호하는지 항상 제어할 수 있습니다. 이 정보 보호 솔루션을 더 이상 사용하지 않으려는 경우 이전에 보호했던 콘텐츠에는 계속 액세스할 수 있습니다.
 
-이전에 보호하던 콘텐츠에 지속적으로 액세스할 필요가 없는 경우 서비스를 비활성화하고 Azure Information Protection에 대한 구독을 만료하면 됩니다. 예를 들어 Azure Information Protection을 프로덕션 환경에 배포하기 전에 테스트를 완료한 경우 이와 같이 서비스를 비활성화할 수 있습니다.
+이전에 보호하던 콘텐츠에 계속 액세스할 필요가 없는 경우 서비스를 비활성화하고 Azure Information Protection에 대한 구독이 만료되게 하면 됩니다. 예를 들어 Azure Information Protection을 프로덕션 환경에 배포하기 전에 테스트를 완료한 경우 이와 같이 서비스를 비활성화할 수 있습니다.
 
 그러나 프로덕션에 Azure Information Protection을 배포하고 문서와 메일을 보호한 경우 Azure Rights Management 서비스를 비활성화하기 전에 Azure Information Protection 테넌트 키의 사본이 있는지 확인합니다. 서비스를 비활성화한 후 Azure Rights Management에서 보호한 콘텐츠에 대한 액세스 권한을 유지할 수 있도록 구독이 만료되기 전에 키의 사본이 있는지 확인합니다. HSM에서 자체 키를 생성 및 관리하면서 BYOK(Bring Your Own Key)를 사용한 경우 이미 Azure Information Protection 테넌트 키가 있을 것입니다. 그러나 테넌트 키를 Microsoft에서 관리한 경우(기본값)에는 [Azure 권한 관리 테넌트 키에 대한 작업](operations-tenant-key.md) 문서에서 테넌트 키 내보내기 지침을 참조하세요.
 
@@ -67,29 +67,15 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 이제 **Rights Management가 활성화되지 않았습니다.** 가 표시되고 활성화 옵션이 나타납니다.
 
-#### <a name="to-deactivate-rights-management-from-the-azure-classic-portal"></a>Azure 클래식 포털에서 Rights Management를 비활성화하려면
-
-1.  [Azure 클래식 포털](http://go.microsoft.com/fwlink/p/?LinkID=275081)에 로그인합니다.
-
-2.  왼쪽 창에서 **ACTIVE DIRECTORY**를 클릭합니다.
-
-3.  **Active Directory** 페이지에서 **Rights Management**를 클릭합니다.
-
-4.  테넌트 이름이 선택되어 있는지 확인하고 **비활성화**를 클릭한 다음 작업을 확인합니다.
-
-이제 **Rights Management 상태** 가 **비활성** 으로 표시되고 **비활성화** 옵션이 **활성화**로 바뀝니다.
-
 #### <a name="to-deactivate-rights-management-from-the-azure-portal"></a>Azure 포털에서 Rights Management를 비활성화하려면
 
-이 메서드는 현재 미리 보기 상태입니다.
-
-1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창을 열고 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다.
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. 초기 **Azure Information Protection** 블레이드에서 **RMS 설정(미리 보기)**을 선택합니다. 
+2. 초기 **Azure Information Protection** 블레이드에서 **RMS 설정**을 선택합니다. 
 
-3.  **Azure Information Protection - RMS 설정(미리 보기)** 블레이드에서 **비활성화**를 선택합니다. **예**를 선택하여 확인합니다.
+3.  **Azure Information Protection - RMS 설정** 블레이드에서 **비활성화**를 선택합니다. **예**를 선택하여 확인합니다.
 
 정보 표시줄에 **비활성화가 성공적으로 완료됨**이 표시되고 **비활성화**는 이제 **활성화**로 바뀝니다. 
 

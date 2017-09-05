@@ -4,7 +4,7 @@ description: "Azure Rights Management를 AD RMS와 함께 배포한 경우 지�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 577f91958c4b54c4fb023d973475c917b28f72b3
-ms.sourcegitcommit: 7bec3dfe3ce61793a33d53691046c5b2bdba3fb9
+ms.openlocfilehash: 2e8f6596216e06e2af773c0a19a2c5eaafd096b8
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>AD RMS(Active Directory Rights Management Services)도 배포했을 때 Azure Rights Management를 위한 환경 준비
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 07/27/2017
 
 ## <a name="you-see-an-option-to-activate-azure-rms-when-you-configure-azure-information-protection"></a>Azure Information Protection을 구성할 때 Azure RMS 활성화 옵션이 표시됩니다.
 
-**Azure Information Protection - RMS 설정(미리 보기)** 블레이드에 Azure RMS(Azure Rights Management Service) 활성화 옵션이 있습니다. 
+**Azure Information Protection - RMS 설정** 블레이드에 Azure RMS(Azure Rights Management 서비스) 활성화 옵션이 있습니다. 
 
 AD RMS(Active Directory Rights Management Services)도 사용하는 경우 **활성화** 옵션을 선택하지 마세요. AD RS도 있는 경우 Azure Rights Management를 활성화하면 호환되지 않습니다. 이 시나리오는 지원되지 않으며 불안정한 결과를 야기하므로 지금은 Azure Rights Management를 활성화하지 않는 것이 중요합니다. 
 

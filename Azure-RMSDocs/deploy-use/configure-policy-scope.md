@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d3138cd16e1bd86d63243feea30d23db9aa45bdb
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: e790b669298bb40b3397150d1b2c3ed7e26c10ab
+ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>범위 지정 정책을 사용하여 특정 사용자용 Azure Information Protection 정책을 구성하는 방법
 
@@ -35,26 +35,30 @@ ms.lasthandoff: 06/30/2017
 
 Azure Information Protection용 범위 지정 정책을 구성하려면 다음을 수행합니다.
 
-1. 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
 
-2. **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
+    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-    초기 **Azure Information Protection** 블레이드에서 **새 정책 추가**를 선택합니다. 그러면 새로 고쳐진 글로벌 정책을 표시하는 데 사용되는 두 번째 블레이드가 나타나므로 이제 새 범위 지정 정책을 구성할 수 있습니다.
+2. **정책** 메뉴 선택에서 **범위 지정 정책**을 선택합니다.
 
-3. Azure Portal에서 관리자에게만 표시되는 정책 이름과 설명을 지정합니다. 이름은 테넌트에서 고유해야 합니다. 그런 다음 **이 정책을 받을 사용자/그룹 지정**을 클릭하고 후속 블레이드에서 이 정책을 적용할 사용자와 그룹을 검색하여 선택할 수 있습니다. 이 범위 지정 정책에서 구성하는 레이블과 설정은 해당 사용자에게만 적용됩니다.
+3. **Azure Information Protection - 범위 지정 정책** 블레이드에서 **새 정책 추가**를 선택합니다. 그러면 이제 새 범위 지정 정책을 구성할 수 있는, 기존 전역 정책이 표시된 **정책** 블레이드를 볼 수 있습니다.
 
-4. 이제 새 레이블을 만들거나 범위 지정 정책 설정을 구성합니다. 항상 글로벌 정책이 먼저 적용되므로 새로운 레이블로 글로벌 정책을 보완할 수 있으며 전역 설정을 재정의할 수 있습니다. 예를 들어 글로벌 정책에 기본 레이블이 지정되어 있지 않은 경우 특정 부서용의 다른 범위 지정 정책에서 다른 기본 레이블을 구성할 수 있습니다.
+4. Azure Portal에서 관리자에게만 표시되는 정책 이름과 설명을 지정합니다. 이름은 테넌트에서 고유해야 합니다. 그런 다음 **Specify which users/groups get this policy**(이 정책을 받을 사용자/그룹 지정)를 선택하고 이후 블레이드에서 이 정책을 적용할 사용자와 그룹을 검색하여 선택할 수 있습니다. 이 범위 지정 정책에서 구성하는 레이블과 설정은 해당 사용자에게만 적용됩니다.
+
+5. 이제 새 레이블을 만들거나 범위 지정 정책 설정을 구성합니다. 항상 글로벌 정책이 먼저 적용되므로 새로운 레이블로 글로벌 정책을 보완할 수 있으며 전역 설정을 재정의할 수 있습니다. 예를 들어 글로벌 정책에 기본 레이블이 지정되어 있지 않은 경우 특정 부서용의 다른 범위 지정 정책에서 다른 기본 레이블을 구성할 수 있습니다.
 
     레이블이나 설정 구성과 관련하여 도움이 필요한 경우 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션에 나와 있는 링크를 사용하세요.
 
-5. Azure Information Protection 블레이드에서 변경을 수행할 때는 글로벌 정책을 편집할 때와 마찬가지로 **저장**을 클릭하여 변경 내용을 저장하거나 **취소**를 클릭하여 마지막으로 저장한 설정으로 되돌립니다. 
+6. Azure Information Protection 블레이드에서 변경을 수행할 때는 글로벌 정책을 편집할 때와 마찬가지로 **저장**을 클릭하여 변경 내용을 저장하거나 **취소**를 클릭하여 마지막으로 저장한 설정으로 되돌립니다. 
 
-6. 이 범위 지정 정책에 대해 원하는 변경을 완료한 후 초기 **Azure Information Protection** 블레이드에서 이 범위 지정 정책의 적용 순서가 올바른지 확인합니다. 여러 범위 지정 정책에 대해 같은 사용자를 선택한 경우에는 정책 적용 순서가 중요합니다. 그런 후에 **게시**를 클릭합니다. 
+7. 이 범위 지정 정책에 대해 원하는 변경을 완료한 후 초기 **Azure Information Protection - 범위 지정 정책** 블레이드에서 이 범위 지정 정책의 적용 순서가 원하는 대로 되어 있는지 확인합니다. 여러 범위 지정 정책에 대해 같은 사용자를 선택한 경우에는 정책 적용 순서가 중요합니다. 순서를 변경하려면 상황에 맞는 메뉴(**...**)를 선택하고 **위로 이동** 또는 **아래로 이동**을 선택합니다. 
+
+8. 변경 내용을 배포하려면 **게시**를 클릭합니다. 
 
 Azure Information Protection 클라이언트는 지원되는 Office 응용 프로그램 또는 파일 탐색기가 열릴 때마다 변경 내용을 확인하여 해당 사용자에게 적용되는 글로벌 정책 또는 범위 지정 정책의 변경 내용을 다운로드합니다.
 
 > [!TIP]
-> 범위가 지정된 정책을 저장한 후에 초기 **Azure Information Protection** 블레이드의 **전체 정책 편집기**를 사용하여 Azure Information Protection 정책에서 모든 레이블을 보고 다시 구성할 수 있습니다. 이 방법을 사용하여 여러 정책(전역 정책 및 범위가 지정된 모든 정책)의 레이블을 쉽게 비교할 수 있습니다. 그러나 이 편집기에서는 레이블을 추가하거나 순서를 변경하거나, 정책 설정을 보거나 구성할 수 없습니다.
+> 범위 지정 정책을 저장한 후 **정책** 섹션에서 **모두 - 전체 정책 보기** 옵션을 선택하여 Azure Information Protection 정책의 모든 레이블을 보고 다시 구성할 수 있습니다. 이 방법을 사용하여 전역 정책 및 모든 범위 지정 정책의 레이블을 쉽게 비교할 수 있습니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

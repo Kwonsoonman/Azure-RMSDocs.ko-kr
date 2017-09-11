@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9e7e5e67b664d177f60a445aa54df3f6072ff9c7
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: e590bd7983b0f3e4e4d1348fbe120452e9ceb79b
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -83,6 +83,20 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 - 현재 다운로드한 Azure Information Protection 정책을 삭제하려면 **%localappdata%\Microsoft\MSIP** 폴더에서 **Policy.msip** 파일을 삭제합니다.
 
 - Azure Information Protection 클라이언트의 현재 미리 보기 버전을 사용하는 경우 **Help and Feedback**(도움말 및 피드백)의 **Reset settings**(설정 재설정) 옵션을 사용하여 로그아웃하고 현재 다운로드한 Azure Information Protection 정책을 삭제할 수 있습니다.
+
+## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>조직에 혼합 라이선스가 있을 때 보호 전용 모드 적용
+
+조직에 Azure Information Protection에 대한 라이선스가 없지만 데이터 보호에 대한 Azure Rights Management 서비스가 포함된 Office 365에 대한 라이선스가 있는 경우, Windows용 Azure Information Protection 클라이언트는 자동으로 [보호 전용 모드](../rms-client/client-protection-only-mode.md)에서 실행됩니다.
+
+그러나 조직에 Azure Information Protection에 대한 구독이 있는 경우 기본적으로 모든 Windows 컴퓨터에서 Azure Information Protection 정책을 다운로드할 수 있습니다. Azure Information Protection 클라이언트는 라이선스 확인 및 적용을 수행하지 않습니다. 
+
+일부 사용자에게 Azure Information Protection에 대한 라이선스는 없지만 Azure Rights Management 서비스가 포함된 Office 365에 대한 라이선스가 있는 경우, 이러한 사용자의 컴퓨터에 있는 레지스트리를 편집하여 사용자가 Azure Information Protection의 라이선스가 없는 분류 및 레이블 지정 기능을 실행하지 못하도록 합니다.
+
+다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+또한 이러한 컴퓨터의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 파일이 없는지 확인합니다. 이 파일이 있는 경우 삭제합니다. 이 파일에는 Azure Information Protection 정책이 포함되어 있으며 레지스트리를 편집하기 전에 다운로드했거나, Azure Information Protection 클라이언트가 데모 옵션으로 설치되었을 수 있습니다.
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
 

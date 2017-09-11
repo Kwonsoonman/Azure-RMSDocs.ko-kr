@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7f3b64e5e4b0dfbccf694a986a85f1c207580915
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 23f41199f03bb6a6530f668c20c030b52613d3c2
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="configuring-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/30/2017
 
 ## <a name="subscription-support"></a>구독 지원
 
-Azure Information Protection 정책은 다음과 같은 다양한 수준의 구독을 지원합니다.
+Azure Information Protection은 다음과 같은 다양한 수준의 구독을 지원합니다.
 
 - Azure Information Protection P2: 분류, 레이블 지정 및 보호 기능을 지원합니다.
 
@@ -34,13 +34,16 @@ Azure Information Protection 정책은 다음과 같은 다양한 수준의 구�
 
 - Azure 권한 관리 서비스를 포함하는 Office 365: 보호 기능을 지원하지만 분류 및 레이블 지정은 지원하지 않습니다.
 
-Azure Information Protection P2 구독을 필요로 하는 옵션은 이제 포털에서 확인할 수 있습니다.
+Azure Information Protection P2 구독을 필요로 하는 옵션은 포털에서 확인할 수 있습니다.
 
-테넌트에 대해 다양한 사용자 구독이 있는 경우 사용자가 다운로드하는 Azure Information Protection 정책에 해당 계정에 사용이 허가되지 않은 구성 옵션이 포함되어 있지 않은지 반드시 확인해야 합니다. 일부 사용자에게만 라이선스가 있는 옵션을 구성할 때는 범위 정책을 사용하여 해당 사용자를 라이선스가 있는 기능을 사용하도록 구성합니다.
+조직에 여러 구독이 있는 경우 사용자 계정으로 사용이 허가되지 않은 기능을 사용하지 않도록 하는 것은 관리자의 책임입니다. Azure Information Protection 클라이언트는 라이선스 확인 및 적용을 수행하지 않습니다. 일부 사용자에게는 사용이 허가되지 않는 옵션을 구성하는 경우, 범위가 지정된 정책이나 레지스트리 설정을 사용하여 조직이 라이선스를 계속 준수하도록 합니다.
+
+- **조직에 Azure Information Protection P1 및 Azure Information Protection P2 라이선스가 있는 경우**: P2 라이선스가 있는 사용자에 대해 Azure Information Protection P2 라이선스가 필요한 옵션을 구성할 때 하나 이상의 [범위가 지정된 정책](configure-policy-scope.md)을 만들고 사용합니다. 전역 정책에 Azure Information Protection P2 라이선스를 필요로 하는 옵션이 포함되지 않도록 합니다.
+
+- **조직에 Azure Information Protection에 대한 구독이 있지만 일부 사용자에게는 Azure Rights Management 서비스가 포함되는 Office 365 라이선스만 있는 경우**: Azure Information Protection 라이선스가 없는 사용자에 대해 Azure Information Protection 정책을 다운로드하지 않도록 컴퓨터의 레지스트리를 편집합니다. 지침은 다음 사용자 지정에 대한 관리자 가이드를 참조하세요. [조직에 혼합 라이선스가 있을 때 보호 전용 모드 적용](../rms-client/client-admin-guide-customizations.md#enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses)
 
 구독에 대한 자세한 내용은 [Azure Information Protection을 사용하려면 어떤 구독이 필요하며, 포함된 기능은 무엇인가요?](../get-started/faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)를 참조하세요.
 
-범위 정책을 구성하는 방법에 대한 자세한 내용은 [범위 지정 정책을 사용하여 특정 사용자에 대한 정책을 구성하는 방법](configure-policy-scope.md)을 참조하세요.
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Azure Information Protection 정책을 구성하는 방법
 

@@ -4,7 +4,7 @@ description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 032fb5525d1bd4f32419358cdeae5efe1be30f56
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: ebfd7ce4266061cef3099fb8fb096c95b01e6fb4
+ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-이 정보를 통해 Azure Information Protection의 Azure Rights Management 서비스에 대한 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. 이 서비스는 조직의 문서와 전자 메일에 대한 데이터 보호를 제공하고 모든 요청을 기록할 수 있습니다. 이 요청에는 사용자 요청, 이 서비스에 대해 관리자가 수행하는 작업, Azure Information Protection 배포 지원을 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다.
+이 정보를 통해 Azure Information Protection의 Azure Rights Management 서비스에 대한 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. 이 서비스는 조직의 문서 및 메일에 대한 데이터 보호를 제공하고 모든 요청을 기록할 수 있습니다. 이러한 요청에는 사용자가 문서 및 메일을 보호하고 이 콘텐츠를 사용하는 시기, 이 서비스에 대해 관리자가 수행하는 작업, Azure Information Protection 배포를 지원하기 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다. 
 
 이러한 Azure Rights Management 서비스 로그를 사용하여 다음과 같은 비즈니스 시나리오를 지원할 수 있습니다.
 
@@ -40,12 +40,18 @@ ms.lasthandoff: 07/31/2017
 
     정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. 이 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure Rights Management로 보호되는 문서와 사진을 열려면 항상 Rights Management 라이선스를 받아야 하기 때문입니다. 이는 메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 저장소 장치에 복사하는 경우에도 마찬가지입니다. 즉, Azure Rights Management 서비스를 사용하여 데이터를 보호하는 경우 이 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
 
-> [!NOTE]
-> Azure Rights Management 서비스에 대한 관리 작업 로깅만 사용하고 사용자가 Rights Management 서비스를 사용하는 방법은 추적하지 않으려는 경우 Azure Rights Management용 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) Windows PowerShell cmdlet을 사용할 수 있습니다.
-> 
-> Azure 클래식 포털에서 **RMS 요약**, **RMS 활성 사용자**, **RMS 장치 플랫폼** 및 **RMS 응용 프로그램 사용**이 포함된 개괄적인 사용 현황 보고서를 사용할 수도 있습니다. Azure 클래식 포털에서 이러한 보고서에 액세스하려면 **Active Directory**를 클릭하고 디렉터리를 선택하여 연 다음 **보고서**를 클릭합니다.
+이 사용 현황 로깅 외에도 다음 로깅 옵션도 있습니다.
 
-다음 섹션에서 Azure 권한 관리 사용 현황 로깅에 대한 자세한 내용을 확인할 수 있습니다.
+|로깅 옵션|설명|
+|----------------|---------------|
+|관리자 로그|Azure Rights Management 서비스에 대한 관리 작업을 로그합니다. 예를 들면 서비스가 비활성화된 경우 슈퍼 사용자 기능이 활성화될 때와 사용자가 서비스에 관리자 권한을 위임할 때입니다. <br /><br />자세한 내용은 PowerShell cmdlet [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog)를 참조하세요.|
+|웹 보고서|Azure 클래식 포털의 개괄적인 사용 현황 보고서: **RMS 요약**, **RMS 활성 사용자**, **RMS 장치 플랫폼** 및 **RMS 응용 프로그램 사용**. <br /><br />Azure 클래식 포털에서 이러한 보고서에 액세스하려면 **Active Directory**를 클릭하고 디렉터리를 선택하여 연 다음 **보고서**를 클릭합니다.|
+|문서 추적|사용자가 Azure Information Protection 클라이언트 또는 RMS 공유 앱으로 추적한 문서를 추적하고 취소할 수 있습니다. 전역 관리자가 사용자를 대신하여 이러한 문서를 추적할 수도 있습니다. <br /><br />자세한 내용은 [Azure Information Protection에 대한 문서 추적 구성 및 사용](../rms-client/client-admin-guide-document-tracking.md)을 참조하세요.|
+|클라이언트 이벤트 로그|로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그(**Azure Information Protection**)에 기록된 Azure Information Protection 클라이언트에 대한 사용 활동입니다. <br /><br />자세한 내용은 [Azure Information Protection 클라이언트에 대한 사용 현황 로깅](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)을 참조하세요.|
+|클라이언트 로그 파일|**%localappdata%\Microsoft\MSIP**에 있는 Azure Information Protection 클라이언트에 대한 문제 해결 로그입니다. <br /><br />이러한 파일은 Microsoft 지원용으로 설계되었습니다.|
+
+
+Azure Rights Management 서비스에 대한 사용 현황 로깅에 대한 자세한 내용은 다음 섹션에서 확인할 수 있습니다. 
 
 ## <a name="how-to-enable-azure-rights-management-usage-logging"></a>Azure 권한 관리 사용 현황 로깅을 사용하도록 설정하는 방법
 2016년 2월부터 모든 고객에 대해 Azure 권한 관리 사용 현황 로깅이 기본적으로 사용됩니다. 이 내용은 2016년 2월 이전에 Azure Rights Management 서비스를 활성화한 고객과 2016년 2월 이후에 서비스를 활성화하는 고객에게 적용됩니다. 

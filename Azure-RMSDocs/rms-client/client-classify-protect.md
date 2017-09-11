@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호하는 방법에 대
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2017
+ms.date: 08/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 954b69213c055c4b94981fabef40df29aa0e19ba
-ms.sourcegitcommit: 5a087ff509162a98f3d09fda4ef5a114028e5664
+ms.openlocfilehash: 5e8329a441dcc871a155ef1b1484544732bec212
+ms.sourcegitcommit: 23aeb2bcce05968b850313333e359c99dd99a56f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -85,8 +85,6 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
     - **사용 권한 선택**: 자기만 액세스할 수 있도록 파일을 보호하려면 **Only for me**(나만)를 선택합니다. 그렇지 않은 경우 사람들에게 부여할 액세스 레이블을 선택합니다.
 
     - **사용자, 그룹 또는 조직 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 개인 메일 주소는 현재 지원되지 않습니다.
-    
-    Azure Information Protection 클라이언트의 최신 미리 보기 버전이 있는 경우 대신 **사용자, 그룹 또는 조직** 단추를 사용할 수 있습니다. 이 단추를 누르면 온-프레미스 Active Directory의 **사용자 또는 그룹 선택** 대화 상자가 표시됩니다. 지정할 사용자나 그룹이 Active Directory에 있으면 이 대화 상자에서 해당 사용자와 그룹을 검색하고 선택할 수 있습니다. 이 옵션을 사용하려면 컴퓨터가 내부 네트워크에 연결되어 있어야 하며, 컴퓨터가 도메인에 결합되어야 하고, 온-프레미스 Active Directory가 있어야 합니다. 이러한 조건을 만족하지 않으면 다음 메시지가 표시됩니다. **위치를 찾을 수 없으므로 프로그램에서 필수 대화 상자를 열 수 없습니다.**
         
     - **액세스 만료**: 특정 기간에만 제공해야 하는 파일에 한해 이 옵션을 선택합니다. 그러면 지정한 사용자가 설정한 날짜 이후로는 선택한 하나 이상의 파일을 열 수 없습니다. 원본 파일은 계속 열 수 있지만 현재 표준 시간대로 설정한 날짜의 자정이 지나면 지정된 사용자는 파일을 열 수 없습니다.
 
@@ -131,7 +129,7 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
     
     - **사용자, 그룹 또는 조직 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 개인 메일 주소는 현재 지원되지 않습니다.
     
-    또는 **사용자, 그룹 또는 조직 선택** 단추를 사용하여 Outlook 주소록에서 사용자 또는 그룹을 선택할 수 있습니다. Azure Information Protection 클라이언트의 최신 미리 보기 버전이 있는 경우 이 단추를 누르면 온-프레미스 Active Directory의 **사용자 또는 그룹 선택** 대화 상자가 표시됩니다. 지정할 사용자나 그룹이 Active Directory에 있으면 이 대화 상자에서 해당 사용자와 그룹을 검색하고 선택할 수 있습니다. 이 옵션을 사용하려면 컴퓨터가 내부 네트워크에 연결되어 있어야 하며, 컴퓨터가 도메인에 결합되어야 하고, 온-프레미스 Active Directory가 있어야 합니다. 이러한 조건을 만족하지 않으면 다음 메시지가 표시됩니다. **위치를 찾을 수 없으므로 프로그램에서 필수 대화 상자를 열 수 없습니다.**
+    또는 주소록 아이콘을 사용하여 Outlook 주소록에서 사용자 또는 그룹을 선택할 수 있습니다.
         
     - **액세스 만료**: 지정한 다른 사용자가 선택된 파일을 설정된 날짜 후에 열 수 없도록 하기 위해 시간이 중요한 파일에 대해서만 이 옵션을 선택합니다. 사용자 본인은 원본 파일을 여전히 열 수 있지만 설정한 날짜의 자정(현재 표준 시간대) 이후에는 지정한 다른 사용자가 해당 파일을 열 수 없게 됩니다.
     

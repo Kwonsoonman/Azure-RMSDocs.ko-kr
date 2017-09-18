@@ -4,17 +4,17 @@ description: "Rights Management 보호를 사용하도록 레이블을 구성하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 2f6bc027353f38e272a6765c10e770643b739d26
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: fce3c905f2f48c2723ee7f0b55ff5ddb77f6258a
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -39,7 +39,7 @@ Azure Rights Management 보호 및 해당 작동 방법에 대한 자세한 내�
 > [!IMPORTANT]
 > 이 보호를 적용하도록 레이블을 구성하려면 조직에 대해 Azure Rights Management 서비스를 활성화해야 합니다. 아직 활성화하지 않은 경우 [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
-레이블에서 보호를 적용하면 보호된 문서는 SharePoint 또는 OneDrive에서 저장하는 데 적합하지 않습니다. 이러한 위치에서는 보호된 파일에 대해 공동 작성, Office Online, 검색, 문서 미리 보기, 썸네일 및 eDiscovery를 지원하지 않습니다. 
+레이블에서 보호를 적용하면 보호된 문서는 SharePoint 또는 OneDrive에서 저장하는 데 적합하지 않습니다. 이러한 위치에서는 보호된 파일에 대해 공동 작성, Office Online, 검색, 문서 미리 보기, 썸네일, eDiscovery 및 DLP(데이터 손실 방지)를 지원하지 않습니다. 
 
 Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 Outlook에서 레이블을 적용하여 메일을 보호할 수 있습니다. 그러나 Exchange에서 IRM을 구성할 때까지 Exchange를 통한 Azure 권한 관리 보호 사용의 전체 기능을 활용할 수 없습니다. 예를 들어 사용자는 휴대폰에서나 웹용 Outlook에서 보호된 메일을 볼 수 없고, 보호된 메일을 검색을 위해 인덱싱할 수 없고, Exchange Online DLP에서 권한 관리 보호를 구성할 수 없습니다. 이러한 추가 시나리오를 지원하도록 Exchange를 구성하려면 다음 리소스를 참조하세요.
 
@@ -73,8 +73,9 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
     
     ![Azure Information Protection 레이블에 대한 보호 구성](../media/info-protect-protection-bar-configured.png)
 
-6. **보호** 블레이드에서 **Azure RMS** 또는 **HYOK(AD RMS)**를 선택합니다.     
-    대부분의 경우 사용 권한 설정에 대해 **Azure RMS**를 선택합니다. 이 "*HYOK(Hold Your Own Key)*" 구성에 수반되는 필수 조건 및 제한을 읽고 이해한 경우에만 **HYOK(AD RMS)**를 선택하세요. 자세한 내용은 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](configure-adrms-restrictions.md)을 참조하세요. HYOK(AD RMS)에 대한 구성을 계속하려면 10단계로 이동합니다.
+6. **보호** 블레이드에서 **Azure RMS** 또는 **Azure(클라우드 키)**를 선택하거나 **HYOK(AD RMS)**를 선택합니다. 첫 번째 옵션의 이름을 바꾸는 중입니다.
+    
+    대부분의 경우 사용 권한 설정에 대해 **Azure RMS** 또는 **Azure(클라우드 키)**를 선택합니다. 이 "*HYOK(Hold Your Own Key)*" 구성에 수반되는 필수 조건 및 제한을 읽고 이해한 경우에만 **HYOK(AD RMS)**를 선택하세요. 자세한 내용은 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](configure-adrms-restrictions.md)을 참조하세요. HYOK(AD RMS)에 대한 구성을 계속하려면 10단계로 이동합니다.
     
 7. 다음 옵션 중 하나를 선택합니다.
     
@@ -88,15 +89,15 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
         
         Word, Excel, PowerPoint 및 파일 탐색기에 대한 옵션을 선택하는 경우: 이 옵션을 사용하려면 Azure Information Protection 클라이언트의 미리 보기 버전이 필요합니다. 이 옵션을 설정하고 사용자에게 미리 보기 클라이언트가 있으면 레이블이 이러한 응용 프로그램에 표시됩니다. 사용자가 레이블을 적용할 때 결과 동작은 사용자 지정 권한을 선택하는 대화 상자를 사용자에게 표시하는 것입니다. 이 대화 상자에서 사용자는 사용 권한, 사용자 또는 그룹 및 만료 날짜를 지정해야 합니다. 사용자에게 이러한 값을 제공하는 방법에 대한 지침이 있는지 확인합니다.
 
-8. **Azure RMS**에 대해 **미리 정의된 템플릿 선택**을 선택한 경우 드롭다운 상자를 클릭하고 이 레이블이 있는 문서 및 메일을 보호하는 데 사용할 [템플릿](../deploy-use/configure-policy-templates.md)을 선택합니다. 다른 레이블에 이미 선택된 템플릿 또는 보관된 템플릿은 표시되지 않습니다.
+8. **Azure RMS** 또는 **Azure(클라우드 키)**에 대해 **미리 정의된 템플릿 선택**을 선택한 경우 드롭다운 상자를 클릭하고 이 레이블이 있는 문서 및 메일을 보호하는 데 사용할 [템플릿](../deploy-use/configure-policy-templates.md)을 선택합니다. 다른 레이블에 이미 선택된 템플릿 또는 보관된 템플릿은 표시되지 않습니다.
     
     **부서별 템플릿**을 선택하거나 [온보딩 컨트롤](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구성한 경우:
     
     - 구성된 템플릿 범위를 벗어나거나 적용되는 Azure 권한 관리 보호 적용에서 제외되는 사용자는 여전히 레이블을 볼 수 있지만 적용할 수는 없습니다. 레이블을 선택하는 경우 다음 메시지가 표시됩니다. **Azure Information Protection cannot apply this label. If this problem persists, contact your administrator.(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 문제가 지속되면 관리자에게 문의하세요.)**
         
-        범위 지정 정책을 구성하더라도 게시된 모든 템플릿은 항상 표시됩니다. 마케팅 그룹용 범위 지정 정책을 구성하는 경우를 예로 들어 보겠습니다. 이 경우 마케팅 그룹으로 범위가 지정된 Azure RMS 템플릿만 선택할 수 있는 것이 아니라 선택한 사용자가 사용할 수 없는 부서별 템플릿도 선택할 수 있습니다. 구성을 쉽게 수행하고 문제 해결 작업을 최소화하려면 범위 지정 정책의 레이블과 일치하도록 부서별 템플릿 이름을 지정하는 것이 좋습니다. 
+        범위 지정 정책을 구성하더라도 게시된 모든 템플릿은 항상 표시됩니다. 마케팅 그룹용 범위 지정 정책을 구성하는 경우를 예로 들어 보겠습니다. 이 경우 마케팅 그룹으로 범위가 지정된 템플릿만 선택할 수 있는 것이 아니라 선택한 사용자가 사용할 수 없는 부서별 템플릿도 선택할 수 있습니다. 구성을 쉽게 수행하고 문제 해결 작업을 최소화하려면 범위 지정 정책의 레이블과 일치하도록 부서별 템플릿 이름을 지정하는 것이 좋습니다. 
             
-9. **Azure RMS**에 대해 **권한 설정**을 선택한 경우 이 옵션을 사용하면 템플릿에서 구성할 수 있는 설정과 동일하게 구성할 수 있습니다. 
+9. **Azure RMS** 또는 **Azure(클라우드 키)**에 대해 **권한 설정**을 선택한 경우 이 옵션을 사용하면 템플릿에서 구성할 수 있는 설정과 동일하게 구성할 수 있습니다. 
     
     **권한 추가**를 선택하고 **권한 추가** 블레이드에서 선택한 레이블을 통해 보호할 콘텐츠를 사용할 권한이 있는 첫 번째 사용자 및 그룹 집합을 선택합니다.
     
@@ -143,7 +144,15 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
 
 12. **레이블** 블레이드에서 **저장**을 클릭합니다.
 
-13. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
+13. **Azure Information Protection** 블레이드에서 **보호** 열을 사용하여 레이블에서 이제 원하는 보호 설정을 표시하는지 확인합니다.
+    
+    - 보호를 구성한 경우 **Azure RMS** 또는 **HYOK(AD RMS)** 또는 확인 표시 
+    
+    - 보호를 제거하도록 레이블을 구성한 경우 **보호 제거** 또는 취소를 나타내는 x 표시
+    
+    - 보호가 설정되지 않은 경우 빈 필드 
+
+13. 변경 내용을 사용자에게 제공하려면 **Publish**(게시)를 클릭합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

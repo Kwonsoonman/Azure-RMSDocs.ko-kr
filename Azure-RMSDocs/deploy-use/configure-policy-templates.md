@@ -4,7 +4,7 @@ description: "Azure Portal에서 권한 관리 템플릿을 구성하고 관리�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5075c8cbab441a376595baabd7863005b15b84e3
-ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
+ms.openlocfilehash: 1094c0a711b3691b8186baafc06d1fb72daf5613
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
@@ -103,9 +103,9 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
     
     또한 현재는 부서별 템플릿에 대한 응용 프로그램 호환성 설정을 지정할 수 없습니다. 필요한 경우 PowerShell에서 [Set-aadrmtemplateproperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet을 사용하여 이 설정을 지정할 수 있습니다.
 
-- 템플릿을 레이블로 변환하거나 연결하면 다른 레이블에서 더 이상 사용할 수 없습니다. 또한 이 템플릿은 더 이상 **템플릿** 섹션에 표시되지 않습니다.
+- 템플릿을 레이블로 변환하거나 연결하면 다른 레이블에서 더 이상 사용할 수 없습니다. 또한 이 템플릿은 더 이상 **템플릿** 또는 **보호 템플릿** 섹션에 표시되지 않습니다. 이 섹션의 이름을 바꾸는 중입니다.
 
-- **템플릿** 컨테이너에서 새 템플릿을 만들지 않습니다. 대신 **보호** 설정이 있는 레이블을 만들고 **보호** 블레이드에서 사용 권한과 설정을 구성합니다. 전체 지침은 [새 템플릿을 만들려면](#to-create-a-new-template)을 참조하세요.
+- **템플릿** 또는 **보호 템플릿** 섹션에서 새 템플릿을 만들지 않습니다. 대신 **보호** 설정이 있는 레이블을 만들고 **보호** 블레이드에서 사용 권한과 설정을 구성합니다. 전체 지침은 [새 템플릿을 만들려면](#to-create-a-new-template)을 참조하세요.
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Azure Information Protection 정책에서 템플릿을 구성하려면
 
@@ -119,11 +119,11 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 3. **Azure Information Protection - 전역 정책** 블레이드 또는 **정책:\<이름>** 블레이드에서 구성할 템플릿을 찾습니다.
     
-    - 분류, 레이블 지정 및 보호를 포함하는 구독이 있는 경우 레이블 다음에 있는 **템플릿**을 확장합니다.
+    - 분류, 레이블 지정 및 보호를 포함하는 구독이 있는 경우 레이블 다음에 있는 **템플릿** 또는 **보호 템플릿**을 확장합니다.
     
     - 보호만 포함된 구독이 있는 경우에는 템플릿이 레이블로 표시됩니다.
 
-4. 템플릿을 선택하고 **레이블** 블레이드에서 필요한 경우 **레이블 이름** 및 **설명**합니다을 편집하여 템플릿 이름 및 설명을 변경할 수 있습니다. 그런 다음 값이 **Azure RMS**인 **보호**를 선택하여 **보호** 블레이드를 엽니다.
+4. 템플릿을 선택하고 **레이블** 블레이드에서 필요한 경우 **레이블 이름** 및 **설명**을 편집하여 템플릿 이름 및 설명을 변경할 수 있습니다. 그런 다음 값이 **Azure RMS** 또는 **Azure(클라우드 키)**인 **보호**를 선택하여 **보호** 블레이드를 엽니다.
 
 5. **보호** 블레이드에서 권한, 콘텐츠 만료 및 오프라인 액세스 설정을 변경할 수 있습니다. 보호 설정 구성에 대한 자세한 내용은 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](configure-policy-protection.md)을 참조하세요.
     
@@ -154,11 +154,11 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 - 보호 설정은 유지되며, 필요한 경우 이러한 설정을 편집할 수 있고 시각적 표식 및 조건 같은 기타 레이블 설정을 추가할 수도 있습니다.
 
-- 원본 템플릿이 더 이상 **템플릿**에 표시되지 않으므로 레이블에 보호를 구성할 때 미리 정의된 템플릿으로 선택할 수 없습니다. Azure 포털에서 이 템플릿을 편집하기 위해 이제 템플릿을 변환할 때 만든 레이블을 편집합니다. 템플릿은 Azure 권한 관리 서비스에 계속 사용할 수 있으며 [PowerShell 명령](administer-powershell.md)을 사용하여 계속 관리할 수 있습니다.  
+- 원본 템플릿이 더 이상 **템플릿** 또는 **보호 템플릿**에 표시되지 않으므로 레이블에 보호를 구성할 때 미리 정의된 템플릿으로 선택할 수 없습니다. Azure 포털에서 이 템플릿을 편집하기 위해 이제 템플릿을 변환할 때 만든 레이블을 편집합니다. 템플릿은 Azure 권한 관리 서비스에 계속 사용할 수 있으며 [PowerShell 명령](administer-powershell.md)을 사용하여 계속 관리할 수 있습니다.  
 
 ## <a name="to-create-a-new-template"></a>새 템플릿을 만들려면
 
-보호 설정 **Azure RMS**를 사용하여 새 레이블을 만들 경우 내부적으로 새 사용자 지정 템플릿이 만들어진 다음 권한 관리 템플릿과 통합되는 서비스 및 응용 프로그램에서 액세스될 수 있습니다.
+**Azure RMS** 또는 **Azure(클라우드 키)**의 보호 설정을 사용하여 새 레이블을 만들 경우 내부적으로 새 사용자 지정 템플릿이 만들어진 다음 권한 관리 템플릿과 통합되는 서비스 및 응용 프로그램에서 액세스될 수 있습니다.
 
 1. 새 템플릿이 모든 사용자를 위한 것이면 **Azure Information Protection - 전역 정책** 블레이드에 그대로 있습니다.
     

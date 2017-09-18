@@ -4,17 +4,17 @@ description: "Azure Information Protection에서 HYOK(AD RMS) 보호를 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 80e7cb411132fa3c3fdff7f8c80febde68b071fa
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: ef39c5489e63a67e0880e4faab4d9675a49f5f90
+ms.sourcegitcommit: 4e31a4797eb8df64af3ae8932d2b49839e7a4524
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
@@ -85,7 +85,15 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
     
     - 최소 버전의 Windows Server 2012 R2: 프로덕션 환경에 대해 필요하지만 테스트 및 평가용으로는 최소 버전의 Windows Server 2008 R2 서비스 팩 1을 사용할 수 있습니다.
     
-    - 단일 AD RMS 루트 클러스터.
+    - 다음 토폴로지 중 하나입니다.
+        
+        - 단일 AD RMS 루트 클러스터가 있는 단일 포리스트 
+        
+        - 독립 AD RMS 루트 클러스터 및 다른 포리스트의 사용자로 보호되는 콘텐츠에 액세스할 수 없는 사용자가 있는 다중 포리스트
+        
+        - 각각에서 AD RMS 클러스터가 있는 다중 포리스트 각 AD RMS 클러스터는 동일한 AD RMS 클러스터를 가리키는 라이선스 URL을 공유합니다. 이 AD RMS 클러스터에서 다른 모든 AD RMS 클러스터에서 모든 TUD(신뢰할 수 있는 사용자 도메인) 인증서를 가져와야 합니다. 이 토폴로지에 대한 자세한 내용은 [신뢰할 수 있는 사용자 도메인](https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx)을 참조하세요.
+        
+    별도 포리스트에 여러 AD RMS 클러스터가 있는 경우 HYOK(AD RMS) 보호를 적용하는 글로벌 정책에서 모든 레이블을 삭제하고 각 클러스터에 대한 [범위 지정 정책](configure-policy-scope.md)을 구성합니다. 그런 다음 사용자를 둘 이상의 범위 지정 정책에 할당하게 하는 그룹을 사용하지 않도록 각 클러스터에 대한 사용자를 해당 범위 지정 정책에 할당합니다. 결과는 각 사용자에 하나의 AD RMS 클러스터에 대한 레이블이 있어야 합니다. 
     
     - [암호화 모드 2](https://technet.microsoft.com/library/hh867439.aspx): AD RMS 클러스터 속성, **일반** 탭을 확인하여 모드를 확인할 수 있습니다.
     

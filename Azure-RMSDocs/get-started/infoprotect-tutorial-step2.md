@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: dbe198f84ed092f815e2c419d039d4f926fb5892
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: cf84cef5d6bc4d3df32a4e3c8bc3a6ac7380655c
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
@@ -67,7 +67,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 레이블에 대해 구성된 보호](../media/info-protect-protection-bar-configured.png) 
     
-4. **보호** 블레이드에서 **Azure RMS**가 선택되었는지 확인하고 **권한 설정**이 선택되었는지 확인합니다. 그런 다음 **권한 추가**를 선택합니다.
+4. **보호** 블레이드에서 **Azure RMS** 또는 **Azure(클라우드 키)**가 선택되었는지 확인합니다. 이 옵션의 이름을 바꾸는 중입니다. 또한 **사용 권한 설정**도 선택되었는지 확인합니다. 그런 다음 **권한 추가**를 선택합니다.
 
 5. **권한 추가** 블레이드에서 **\<조직 이름> 추가 - 모든 멤버**를 선택합니다. 예를 들어 조직 이름이 VanArsdel Ltd인 경우 선택할 다음 옵션이 표시됩니다.
     
@@ -123,7 +123,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 13. 이 **하위 레이블** 블레이드에서 **저장**을 클릭합니다. 그런 다음 **정책:글로벌** 블레이드에서 **저장**을 다시 클릭합니다.
     
-    이제 시각적 표시 및 Azure RMS 보호에 대해 구성된 새 하위 레이블을 볼 수 있습니다.
+    이제 시각적 표시 및 보호에 대해 구성된 새 하위 레이블을 볼 수 있습니다. 예를 들면 다음과 같습니다.
 
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책 구성됨](../media/info-protect-policy-configuredv2.png)
     

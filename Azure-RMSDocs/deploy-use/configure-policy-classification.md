@@ -4,17 +4,17 @@ description: "레이블에 대한 조건을 구성할 때 문서 또는 메일�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: ef84f3ceb8f732dd475b4db8eae489e715d4b7da
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 09ee8587e6b254584f70dbe2475063831fd5b845
+ms.sourcegitcommit: 6636defa6eca24360f15fb9ef93c2b82dc36cf76
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -80,7 +80,13 @@ ms.lasthandoff: 08/30/2017
 
 ## <a name="details-about-the-information-types"></a>정보 유형에 대한 세부 정보
 
-Azure Information Protection 클라이언트의 현재 미리 보기 버전이 있는 경우 전체 정보 유형 목록이 지원되며 Office 365 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지를 사용합니다. 여러 일반적인 중요한 정보 유형 중에서 선택할 수 있으며, 이 중 일부는 특정 지역과만 관련됩니다. 자세한 내용은 Office 설명서의 [중요한 정보 유형이 찾는 내용](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)을 참조하세요. Azure Information Protection에서 이러한 정보 유형을 평가할 때 Office DLP 신뢰도 설정을 사용하지 않고 가장 낮은 신뢰도에 따라 일치시킵니다.  
+현재 미리 보기 버전의 Azure Information Protection 클라이언트인 경우 포털에 표시되는 전체 정보 유형 목록이 지원됩니다.
+
+- 정보 유형은 Office 365 기본 제공 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지를 사용합니다. 여러 일반적인 중요한 정보 유형 중에서 선택할 수 있으며, 이 중 일부는 특정 지역과만 관련됩니다. 선택할 수 있는 정보 유형에 대한 자세한 내용은 Office 설명서의 [중요한 정보 유형이 찾는 내용](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)을 참조하세요. 
+
+- Azure Portal에서 선택할 수 있는 정보 유형의 목록은 새 Office DLP 추가 기능을 포함하도록 정기적으로 업데이트됩니다. 그러나 목록은 Office 365 Security & Compliance 센터에 규칙 패키지로 정의 및 업로드한 사용자 지정 중요한 정보 유형은 제외합니다. 
+
+- Azure Information Protection에서 선택한 정보 유형을 평가할 때 Office DLP 신뢰도 설정을 사용하지 않고 가장 낮은 신뢰도에 따라 일치시킵니다.
 
 클라이언트의 현재 일반 공급 버전이 있는 경우 다음 정보 유형만 지원됩니다.
 

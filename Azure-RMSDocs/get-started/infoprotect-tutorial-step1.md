@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: ac28e18573ec1bd8f0a3f1e715a8c8e1b7c2854e
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: e80d47d1a477c03296b9a2e0eb4373929cfaa66b
+ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="step-1-activate-the-rights-management-service"></a>1단계: Rights Management 서비스 활성화
  
@@ -40,15 +40,15 @@ Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요�
     > [!TIP] 
     > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
 
-4. 서비스에 처음으로 연결할 때 자동으로 열리는 **빠른 시작** 페이지의 정보를 확인하세요. 나중에 이 페이지로 돌아올 수 있습니다. 이 자습서에서는 **RMS 설정**을 선택합니다.  
+4. 서비스에 처음으로 연결할 때 자동으로 열리는 **빠른 시작** 페이지의 정보를 확인하세요. 나중에 이 페이지로 돌아올 수 있습니다. 이 자습서의 경우 **RMS 설정** 또는 **보호 활성화**를 선택합니다. 이 옵션의 이름을 바꾸는 중입니다. 
 
 5. 이제 테넌트에 대해 Azure Rights Management 서비스가 활성화되었는지가 표시됩니다. 
     
-    - 서비스가 활성화된 경우 다음 확인이 표시됩니다.
+    - 서비스가 활성화된 경우 다음과 같은 확인이 표시됩니다.
         
         ![Azure RMS의 Azure Information Protection 상태](../media/info-protect-azurerms-activated.png)
         
-    - 서비스가 활성화되지 않은 경우 이 내용이 상태 정보에 반영된 것을 확인할 수 있으며 활성화할 옵션이 표시됩니다.
+    - 서비스가 활성화되지 않은 경우 이 내용이 상태 정보에 반영된 것을 확인할 수 있으며 활성화할 옵션이 표시됩니다. 예를 들면 다음과 같습니다.
         
         ![Azure RMS의 Azure Information Protection 상태](../media/info-protect-azurerms-deactivated.png)
 

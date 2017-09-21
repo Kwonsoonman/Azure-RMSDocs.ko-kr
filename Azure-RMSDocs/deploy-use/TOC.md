@@ -26,6 +26,7 @@
 ### [템플릿 구성 및 관리](configure-policy-templates.md)
 #### [사용자를 위한 템플릿 새로 고침](refresh-templates.md)
 #### [PowerShell 참조](configure-templates-with-powershell.md)
+#### [Azure 클래식 포털에서 마이그레이션](migrate-portal.md)
 ### [언어 구성](configure-policy-languages.md)
 ## [RMS 커넥터 배포](deploy-rms-connector.md)
 ### [커넥터 설치 및 구성](install-configure-rms-connector.md)

@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 22b43c2b149c7a7fd5ce79ca3ceef8100b9d5e7b
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 3274cb1ddd457647159034b955c47e9ab775f00c
+ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -113,7 +113,7 @@ PowerShell 세션을 열고 다음 명령을 실행합니다.
 
 2. Azure Rights Management 서비스 활성화:
     
-        Enable-Aadrmservice
+        Enable-Aadrm
 
 **Azure Information Protection 테넌트가 이미 활성화된 경우에는 어떻게 하나요?** 조직에 대해 Azure Rights Management 서비스가 이미 활성화된 경우 사용자는 이미 Azure Information Protection을 사용하여 AD RMS의 기존 키(및 템플릿) 대신 자동으로 생성된 테넌트 키(및 기본 템플릿)로 콘텐츠를 보호하고 있을 수 있습니다. 인트라넷에서 잘 관리되는 컴퓨터는 AD RMS 인프라에 대해 자동으로 구성되므로 여기에 해당되지 않을 수 있습니다. 하지만 작업 그룹 컴퓨터 또는 인트라넷에 자주 연결되지 않는 컴퓨터는 여기에 해당될 수 있습니다. 아쉽게도 이러한 컴퓨터를 식별하는 것은 어려운 일이므로 AD RMS에서 구성 데이터를 가져오기 전에 서비스를 활성화하지 않는 것이 좋습니다.
 

@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 209815b9-81c9-430c-a82f-32cac991449b
-ms.openlocfilehash: ccc52f1fca6e968ac1794d7bad437c271f4bd485
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: cfe2fdf41174caf6184d3e160ce9f4d439d55566
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="step-3-install-the-client"></a>3단계: 클라이언트 설치
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/30/2017
 
 ## <a name="install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 설치
 
-1. Office가 설치된(그러나 Word는 현재 열려 있지 않은) PC에서 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)로 이동하여 **AzInfoProtection.exe**를 다운로드합니다. 이 버전은 프로덕션 네트워크에서 지원되는 클라이언트의 일반 공급 버전입니다. 그러나 모든 최신 기능 및 수정 사항이 포함된 현재 미리 보기 버전을 사용하려면 **AzInfoProtection_PREVIEW_1.10.52.0.exe**를 다운로드합니다.
+1. Office가 설치된(그러나 Word는 현재 열려 있지 않은) PC에서 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)로 이동하여 **AzInfoProtection.exe**를 다운로드합니다.
     
 2. 방금 다운로드한 실행 파일을 실행하고 프롬프트에 따라 클라이언트를 설치합니다.
     

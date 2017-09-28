@@ -4,17 +4,17 @@ description: "문서 또는 메일 메시지에 레이블을 할당하는 경우
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 09e8bfdc9bae9979db6e6bc39457bdcdcf6dabca
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 0da5df139d98f0468f49e7e3f17cd1cd2358a015
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/30/2017
     
     - PowerPoint: 마스터 슬라이드에 배경 이미지로 워터마크가 적용됩니다.
     
-    - Azure Information Protection 클라이언트의 현재 미리 보기 버전을 사용하는 경우 여러 줄의 텍스트가 지원됩니다.
+    - 여러 줄의 텍스트를 사용할 수 있습니다.
 
 - 텍스트 문자열을 지정할 수도 있고, [변수](#using-variables-in-the-text-string)를 사용하여 머리글, 바닥글 또는 워터마크를 적용할 때 텍스트 문자열을 동적으로 만들 수도 있습니다.
 
@@ -44,17 +44,9 @@ ms.lasthandoff: 08/30/2017
 
 문서의 경우 시각적 표시는 다음과 같이 적용됩니다.
 
-- Azure Information Protection 클라이언트의 **일반 공급 버전의 경우**: 
-    
-    - Office 앱에서 레이블의 시각적 표시는 레이블이 적용되고 문서가 저장될 때마다 적용됩니다. 
-    
-    - 파일 탐색기 또는 PowerShell을 사용하여 문서의 레이블이 지정되는 경우 시각적 표시는 즉시 적용되지 않지만 해당 문서가 Office 앱에서 열리는 경우 및 문서가 저장될 때마다 적용됩니다.
+- Office 앱에서 레이블의 시각적 표시는 레이블이 적용될 때 적용됩니다. 또한 시각적 표시는 레이블이 지정된 문서가 열리고 문서가 처음으로 저장될 때 적용됩니다.  
 
-- Azure Information Protection 클라이언트의 **현재 미리 보기 버전의 경우**: 
-    
-    - Office 앱에서 레이블의 시각적 표시는 레이블이 적용될 때 적용됩니다. 또한 시각적 표시는 레이블이 지정된 문서가 열리고 문서가 처음으로 저장될 때 적용됩니다.  
-    
-    - 파일 탐색기 또는 PowerShell을 사용하여 문서의 레이블이 지정되는 경우 시각적 표시는 즉시 적용되지 않지만 해당 문서가 Office 앱에서 열리고 문서가 처음으로 저장될 때 적용됩니다.
+- 파일 탐색기 또는 PowerShell을 사용하여 문서의 레이블이 지정되는 경우 시각적 표시는 즉시 적용되지 않지만 해당 문서가 Office 앱에서 열리고 문서가 처음으로 저장될 때 적용됩니다.
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>레이블에 대해 시각적 표시를 구성하려면
 
@@ -69,12 +61,12 @@ ms.lasthandoff: 08/30/2017
     구성하려는 레이블이 선택한 사용자에게만 적용되도록 [범위 지정 정책](configure-policy-scope.md)에 포함되는 경우 **정책** 메뉴 선택에서 **범위 지정 정책**을 선택합니다. 그런 다음 **Azure Information Protection - 범위 지정 정책** 블레이드에서 범위 지정 정책을 선택합니다.
 
 3. **Label**(레이블) 블레이드의 **Set visual marking (such as header or footer)**(시각적 표시(예: 머리글 또는 바닥글) 설정) 섹션에서 원하는 시각적 표식에 대한 설정을 구성한 다음 **Save**(저장)를 클릭합니다.
-
-    - 머리글을 구성하려면: **Documents with this label have a header**(이 레이블이 있는 문서에 머리글 있음)에서 머리글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **On**(켜기)을 선택한 경우 머리글 텍스트, 크기, 색 및 맞춤을 지정합니다.
-
-    - 바닥글을 구성하려면: **Documents with this label have a footer**(이 레이블이 있는 문서에 바닥글 있음)에서 바닥글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **On**(켜기)을 선택한 경우 바닥글 텍스트, 크기, 색 및 맞춤을 지정합니다.
-
-    - 워터마크를 구성하려면: **Documents with this label have a watermark**(이 레이블이 있는 문서에 바닥글 있음)에서 워터마크를 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **On**(켜기)을 선택한 경우 워터마크 텍스트, 크기, 색 및 레이아웃을 지정합니다.
+    
+    - 머리글을 구성하려면: **Documents with this label have a header**(이 레이블이 있는 문서에 머리글 있음)에서 머리글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 머리글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
+    
+    - 바닥글을 구성하려면: **Documents with this label have a footer**(이 레이블이 있는 문서에 바닥글 있음)에서 바닥글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 바닥글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
+    
+    - 워터마크를 구성하려면: **Documents with this label have a watermark**(이 레이블이 있는 문서에 바닥글 있음)에서 워터마크를 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 워터마크에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
 
 4. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 
@@ -95,6 +87,18 @@ ms.lasthandoff: 08/30/2017
 - `${Event.DateTime}` - 선택한 레이블을 설정한 날짜 및 시간 예: 2016년 8월 16일 오후 1시 30분
 
 예: **일반** 레이블 바닥글에 대해 `Document: ${item.name}  Classification: ${item.label}` 문자열을 지정하는 경우 문서화된 명명된 project.docx에 적용되는 바닥글 텍스트는 **Document: project.docx  Classification: General**이 됩니다.
+
+### <a name="setting-the-font-name"></a>글꼴 이름 설정
+
+이 설정은 현재 미리 보기로 있습니다.
+
+굴림은 머리글, 바닥 글 및 워터마크 텍스트에 대한 기본 글꼴입니다. 대체 글꼴 이름을 지정하는 경우 시각적 표식을 적용할 클라이언트 장치에서 사용할 수 있는지 확인합니다. 그렇지 않으면 사용할 글꼴이 명확하지 않습니다. 
+
+### <a name="setting-the-font-color"></a>글꼴 색 설정
+
+사용 가능한 색 목록에서 선택하거나 색의 RGB(빨강, 녹색 및 파랑) 구성 요소에 대한 16진수 3자리 코드를 입력하여 사용자 지정 색을 지정할 수 있습니다. 예: **#DAA520**. 
+
+이러한 코드에 대한 참조가 필요하면 MSDN 설명서의 [색 이름](https://msdn.microsoft.com/library/aa358802\(v=vs.85).aspx)이 유용한 시작 지점입니다. 또한 그림을 편집할 수 있는 많은 응용 프로그램에서 이러한 코드를 찾을 수 있습니다. 예를 들어 Microsoft 그림판을 사용하면 색상표에서 사용자 지정 색을 선택할 수 있으며 RGB 값이 자동으로 표시됩니다. 그런 다음 해당 색을 복사하면 됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

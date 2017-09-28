@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure RMS(Azure Rights Management)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 192f4ade987e9f9f88f5f30bb17c70e113569002
-ms.sourcegitcommit: 8b6fc2201d99d72ee9bb43bb73356040893eceeb
+ms.openlocfilehash: d4ce0ea6a3c04c5ca52dae1750e48d5618eeef76
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 08/02/2017
     
 -   **지원 센터 정보**
     
-    Azure Information Protection 클라이언트가 있는 경우 지원 센터 운영자는 **도움말 및 피드백**, **진단 실행** 옵션을 사용한 다음 클라이언트를 초기화하도록 요청합니다. 그러나 초기화를 수행해도 사용자가 로그아웃되거나 클라이언트가 다시 부트스트랩되지 않으며 자동 수정도 진행되지 않습니다.
+    사용자에게 Azure Information Protection 클라이언트가 있는 경우 지원 센터 운영자가 Office 버전에서 보호를 지원할 수 없는지 여부 및 현재 로그인한 사용자 계정과 같은 정보에 대해 **도움말 및 피드백** 옵션을 사용하도록 요청할 수 있습니다 . 이 옵션을 사용하여 로그 파일을 수집하고 클라이언트를 다시 설정할 수도 있습니다. 자세한 내용은 관리자 가이드의 [추가 검사 및 문제 해결](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting)을 참조하세요.
     
-    보호된 문서의 모든 액세스에 대한 합법적인 요청이 있을 경우 지원 센터는 Azure Rights Management [슈퍼 사용자 기능](configure-super-users.md)을 사용하여 이 액세스를 요청하는 프로세스를 진행해야 합니다. 예를 들어 직원이 조직을 떠난 후 법률 자문 부서 또는 관리자가 이러한 요청을 할 수도 있습니다. 
+    보호된 문서의 모든 액세스에 대한 합법적인 요청이 있을 경우 지원 센터는 Azure Rights Management [슈퍼 사용자 기능](configure-super-users.md)을 사용하여 이 액세스를 요청하는 프로세스를 진행해야 합니다. 예를 들어 직원이 조직을 떠난 후 법률 자문 부서 또는 관리자가 이러한 요청을 요구할 수 있습니다.
     
     또한 사용자가 보고할 수 있는 일반적인 문제 중 일부는 다음 범주로 구성됩니다.
     

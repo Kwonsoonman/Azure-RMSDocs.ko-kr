@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3a4a84356d59692dd3693b4bbaa00a3e39c95597
-ms.sourcegitcommit: adeab31c7aa99eab115dd12035fc5d9dffec4e9c
+ms.openlocfilehash: 99cb5d1ca256977cb07c41bbe153e5ca248b9efd
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="using-powershell-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -26,13 +26,15 @@ Azure Information Protection 클라이언트를 설치할 때, PowerShell 명령
 
 cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩니다. 이 모듈은 RMS 보호 도구와 함께 설치되는 RMSProtection 모듈을 대체합니다. Azure Information Protection 클라이언트를 설치할 때 RMSProtection 도구를 설치하면 RMSProtection 모듈이 자동으로 제거됩니다.
 
-AzureInformationProtection 모듈에는 RMS 보호 도구의 모든 Rights Management cmdlet과 레이블을 지정하기 위해 AIP(Azure Information Protection) 서비스를 사용하는 3개의 새로운 cmdlet이 포함됩니다.
+AzureInformationProtection 모듈에는 RMS 보호 도구의 모든 Rights Management cmdlet이가 포함되어 있습니다. 또한 레이블을 지정하기 위해 AIP(Azure Information Protection) 서비스를 사용하는 새로운 cmdlet도 있습니다. 예를 들면 다음과 같습니다.
 
 |레이블 지정 cmdlet|예제 사용법|
 |----------------|---------------|
 |[Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)|공유 폴더에 대해 특정 레이블이 있는 모든 파일을 식별합니다.|
 |[Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification)|공유 폴더에 대해 파일 콘텐츠를 검사하고 지정한 조건에 따라 레이블이 지정되지 않은 파일에 자동으로 레이블을 지정합니다.|
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|공유 폴더에 대해 레이블이 없는 모든 파일에 지정된 레이블을 적용합니다.|
+|[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipsuthentication)|일정에 따라 실행되는 스크립트를 사용하는 것처럼 비대화형 파일에 레이블을 지정합니다.|
+
 
 모든 cmdlet 목록 및 해당 도움말을 보려면 [AzureInformationProtection 모듈](/powershell/module/azureinformationprotection)을 참조하세요. PowerShell 세션 내에서 `Get-Help <cmdlet name> -online`를 입력하여 최신 도움말을 보고 영어 이외의 지원되는 언어를 확인하세요.  
 
@@ -95,7 +97,7 @@ Azure Information Protection 테넌트가 활성화되지 않은 경우 [Azure R
 
 비대화형으로 Azure Rights Management 서비스에 직접 연결하여 파일을 보호하거나 보호를 해제할 수 있습니다.
 
-Azure Rights Management 서비스에 비대화형으로 연결할 때는 서비스 사용자 계정을 사용해야 하며 이 작업은 `Set-RMSServerAuthentication` cmdlet을 사용하여 수행합니다. 각 Windows PowerShell 세션에 대해 이 작업을 수행하여 Azure Rights Management 서비스에 직접 연결하는 cmdlet을 실행해야 합니다. 이 cmdlet을 실행하기 전에 다음과 같은 세 가지 식별자가 있어야 합니다.
+서비스 사용자 계정을 사용하여 Azure Rights Management 서비스에 비대화형으로 연결해야 하며, 이 작업은 `Set-RMSServerAuthentication` cmdlet을 통해 수행합니다. 각 Windows PowerShell 세션에 대해 이 작업을 수행하여 Azure Rights Management 서비스에 직접 연결하는 cmdlet을 실행해야 합니다. 이 cmdlet을 실행하기 전에 다음과 같은 세 가지 식별자가 있어야 합니다.
 
 - BposTenantId
 
@@ -222,7 +224,7 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
 이전 명령에 표시된 것처럼, 비대화형으로 실행할 스크립트에서 하듯이 단일 명령으로 값을 제공할 수 있습니다. 그러나 테스트 목적으로는 Set-RMSServerAuthentication만 입력할 수 있으며 메시지가 표시되면 값을 하나씩 제공할 수 있습니다. 명령이 완료되면 이제 클라이언트가 스크립트 및 Windows Server 파일 분류 인프라와 같은 비대화형 사용에 적합한 “서버 모드”에서 작동합니다.
 
-이 서비스 사용자를 슈퍼 사용자로 만드는 것을 고려: 이 서비스 사용자가 항상 다른 사용자를 위해 파일 보호를 해제할 수 있도록 하려면 슈퍼 사용자로 구성할 수 있습니다. 표준 사용자 계정을 슈퍼 사용자로 구성할 때와 같은 방식으로 동일한 Azure RMS cmdlet, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md)를 사용하되, AppPrincipalId 값을 갖는 **ServicePrincipalId** 매개 변수를 지정합니다.
+이 서비스 사용자 계정 계정을 슈퍼 사용자로 만드는 것이 좋습니다. 슈퍼 사용자로 구성하면 항상 이 서비스 사용자 계정을 통해 다른 사용자에 대한 파일 보호를 해제할 수 있습니다. 표준 사용자 계정을 슈퍼 사용자로 구성할 때와 같은 방식으로 동일한 Azure RMS cmdlet, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md)를 사용하되, AppPrincipalId 값을 갖는 **ServicePrincipalId** 매개 변수를 지정합니다.
 
 슈퍼 사용자에 대한 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 검색을 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
 
@@ -259,7 +261,7 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
 그러나 Azure Rights Management 서비스에 직접 연결하여 파일을 보호하거나 보호를 해제하려면 다음에 설명된 것처럼 일반적으로 일련의 cmdlet을 실행해야 합니다.
 
-먼저, 자체 계정을 사용하는 대신, 서비스 사용자 계정을 사용해서 Azure Rights Management 서비스에서 인증을 받아야 할 경우 Powershell 세션에서 다음을 입력합니다.
+먼저 자신의 계정을 사용하는 대신, 서비스 사용자 계정을 사용하여 Azure Rights Management 서비스를 인증해야 하는 경우 PowerShell 세션에서 다음을 입력합니다.
 
     Set-RMSServerAuthentication
 
@@ -340,7 +342,7 @@ Rights Management 템플릿이 변경되면 `Get-RMSTemplate -force`를 사용�
 
 ### <a name="prerequisites"></a>전제 조건
 
-AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 외에도 사용자 계정에는 ServerCertification.asmx에 액세스하기 위한 읽기 및 실행 권한이 있어야 합니다.
+AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 외에도 파일을 보호하거나 보호 해제하는 데 사용되는 계정에는 ServerCertification.asmx에 액세스하기 위한 읽기 및 실행 권한이 있어야 합니다.
 
 1. AD RMS 서버로 로그온합니다.
 
@@ -356,7 +358,9 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 7. **ServerCertification.asmx에 대한 권한** 대화 상자에서 **추가**를 클릭합니다. 
 
-8. 계정 이름을 추가합니다. 다른 AD RMS 관리자도 이러한 cmdlet을 사용하여 파일을 보호 및 보호 해제하는 경우 해당 관리자 이름도 추가합니다.
+8. 계정 이름을 추가합니다. 다른 AD RMS 관리자 또는 서비스 계정에서도 이러한 cmdlet을 사용하여 파일을 보호하거나 보호 해제하는 경우 해당 계정 추가합니다. 
+    
+    비대화형으로 파일을 보호하거나 보호 해제하려면 관련 컴퓨터 계정 또는 계정을 추가합니다. 예를 들어 파일 분류 인프라용으로 구성된 Windows Server 컴퓨터의 컴퓨터 계정을 추가하고 PowerShell 스크립트를 사용하여 파일을 보호합니다. 이 시나리오에는 Azure Information Protection 클라이언트의 현재 미리 보기 버전이 필요합니다.
 
 9. **허용** 열에 **읽기 및 실행** 및 **읽기** 확인란이 선택되어 있는지 확인합니다.
 
@@ -435,7 +439,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
     --------                              ------
     \\Server1\Documents\Test1.docx        Protected
 
-파일의 보호를 해제하려면 파일이 보호되었을 때 소유자 또는 추출 권한이 있거나 AD RMS에 대한 슈퍼 사용자여야 합니다. 그런 후 Unprotect cmdlet을 사용합니다. 예를 들면 다음과 같습니다.
+파일 보호를 해제하려면 파일이 보호되었을 때의 소유자 또는 추출 사용 권한이 있거나 AD RMS에 대한 슈퍼 사용자여야 합니다. 그런 후 Unprotect cmdlet을 사용합니다. 예를 들면 다음과 같습니다.
 
     Unprotect-RMSFile C:\test.docx -InPlace
 
@@ -447,7 +451,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>Azure Information Protection에 대해 비대화형으로 파일에 레이블을 지정하는 방법
 
-Azure Information Protection 클라이언트 버전 1.8.41.0(현재 미리 보기)부터 **Set-AIPAuthentication** cmdlet을 사용하여 비대화형으로 레이블링 cmdlet을 실행할 수 있습니다.
+**Set-AIPAuthentication** cmdlet을 사용하여 레이블이 없는 cmdlet을 비대화형으로 실행할 수 있습니다.
 
 기본적으로 레이블 지정에 대한 cmdlet을 실행하는 경우 명령이 대화형 PowerShell 세션의 자체적인 사용자 컨텍스트에서 실행됩니다. 무인으로 실행하려면 이 용도에 맞는 Azure AD 사용자 계정을 새로 만듭니다. 그런 다음 해당 사용자의 컨텍스트에서 Set-AIPAuthentication cmdlet을 설정하여 Azure AD의 액세스 토큰으로 자격 증명을 설정 및 저장합니다. 그런 후 이 사용자 계정이 Azure Rights Management 서비스에 대해 인증되고 부트스트랩됩니다. 이 계정은 레이블이 사용하는 Azure Information Protection 정책 및 모든 Rights Management 템플릿을 다운로드합니다.
 

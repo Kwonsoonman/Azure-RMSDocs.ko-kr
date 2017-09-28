@@ -4,7 +4,7 @@ description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 219f39913261d22709238ee5393e8cc8080070f5
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 9db73573eb6ccb6ab5f09d926e395a31f94404ea
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -81,11 +81,7 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
     |Excel 2007(AD RMS에서만 지원)<br /><br />Excel 2010<br /><br />Excel  2013<br /><br />Excel 2016|32비트: 2GB<br /><br />64비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한|
     |PowerPoint 2007(AD RMS에서만 지원)<br /><br />PowerPoint 2010<br /><br />PowerPoint  2013<br /><br />PowerPoint 2016|32비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한<br /><br />64비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한
 
-- **다른 모든 파일**:
-    
-    - 클라이언트의 일반 공급 버전: - 1GB
-    
-    - 미리 보기 클라이언트(최소 버전 **1.8.41.0**): 사용 가능한 디스크 공간 및 메모리에 의해서만 제한
+- **다른 모든 파일**: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>분류 및 보호가 지원되는 파일 형식
 

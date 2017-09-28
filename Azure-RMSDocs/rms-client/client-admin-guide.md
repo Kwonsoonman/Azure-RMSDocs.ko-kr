@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f07d39e5110ae9bfb58a81585a042e8afdbbc639
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 6786ffde8d9903ee5c9d553159710052a6d5e7a2
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -269,22 +269,9 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 **로그 내보내기**는 Microsoft 지원에 로그 파일을 보내라는 요청을 받았을 때 Azure Information Protection 클라이언트의 로그 파일을 자동으로 수집하여 첨부합니다. 최종 사용자가 이 옵션을 사용하여 이러한 로그 파일을 지원 센터로 보낼 수도 있습니다.
 
-진단 정보 및 클라이언트 다시 설정에 대해서는 **진단 실행**을 선택합니다. 진단 테스트가 끝난 후 **결과 복사**를 클릭하여 Microsoft Support에 보내는 메일이나 최종 사용자가 지원 센터에 보내는 메일에 정보를 붙여넣을 수 있습니다. 테스트를 완료하면 클라이언트를 다시 설정할 수도 있습니다.
+**설정 재설정**은 사용자를 로그아웃하고, 현재 다운로드한 Azure Information Protection 정책을 삭제하고, Azure Rights Management 서비스에 대한 사용자 설정을 다시 설정합니다.
 
-> [!NOTE]
-> 클라이언트의 미리 보기 버전에서 **진단 실행**이 제거되고 **설정 재설정**으로 대체되었습니다. 또한 이 옵션 동작이 [변경되었습니다](#more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client).
-
-#### <a name="more-information-about-the-reset-option-for-the-general-availability-ga-version-of-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 일반 공개(GA) 버전의 초기화 옵션에 대한 자세한 정보
-
-- 이 옵션을 사용하기 위해 로컬 관리자일 필요가 없으며 이 작업은 이벤트 뷰어에 로깅되지 않습니다. 
-
-- 파일이 잠겨 있지 않은 경우 이 작업을 수행하면 클라이언트 인증서 및 Rights Management 템플릿이 저장되는 위치인 **%LocalAppData%\Microsoft\MSIPC**의 파일이 모두 삭제됩니다. Azure Information Protection 정책이나 클라이언트 로그 파일은 삭제되지 않으며, 사용자가 로그아웃되지 않습니다.
-
-- 다음 레지스트리 키 및 설정은 삭제됩니다. **HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC**. 이 레지스트리 키에 대한 설정을 구성한 경우 클라이언트를 다시 설정한 후 레지스트리 설정을 다시 구성해야 합니다. 예를 들어 AD RMS에서 마이그레이션하는 데 네트워크에 서비스 연결 지점이 계속 있기 때문에 Azure Information Protection 테넌트로 리디렉션에 대한 설정을 구성한 경우입니다.
-
-- 클라이언트를 다시 설정한 후 사용자 환경을 다시 초기화해야 합니다. 그러면 클라이언트 및 최신 템플릿에 대한 인증서가 다운로드됩니다. 이렇게 하려면 Office의 모든 인스턴스를 닫은 다음 Office 응용 프로그램을 다시 시작합니다. 그러면 최신 Azure Information Protection 정책을 다운로드했는지도 확인됩니다. 이 작업을 완료할 때까지 진단 테스트를 다시 실행하지 마세요.
-
-#### <a name="more-information-about-the-reset-option-for-the-current-preview-version-of-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 최신 미리 보기 버전의 초기화 옵션에 대한 자세한 정보
+#### <a name="more-information-about-the-reset-settings-option"></a>설정 재설정 옵션에 대한 자세한 내용
 
 - 이 옵션을 사용하기 위해 로컬 관리자일 필요가 없으며 이 작업은 이벤트 뷰어에 로깅되지 않습니다. 
 

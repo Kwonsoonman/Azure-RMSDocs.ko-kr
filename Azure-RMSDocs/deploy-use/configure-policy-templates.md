@@ -4,7 +4,7 @@ description: "Azure Portal에서 권한 관리 템플릿을 구성하고 관리�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1094c0a711b3691b8186baafc06d1fb72daf5613
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: c27f239467bf546479827c7ca215a8892553e9c0
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
 >*적용 대상: Azure Information Protection*
 
 >[!NOTE]
->이 기능은 Azure 클래식 포털의 사용자 지정 템플릿 구성을 대체합니다.
+>이 기능은 Azure 클래식 포털의 사용자 지정 템플릿 구성을 대체합니다. 사용하는 방법에 빠르게 매핑하려면 [Azure 클래식 포털과 관련된 작업](migrate-portal.md)을 참조하세요.
 >
 >Azure 클래식 포털에서 여전히 템플릿을 만들고 관리할 수 있지만, Azure 클래식 포털 및 Azure Portal에서 동일한 템플릿을 관리하는 것은 권장되지 않습니다. 이와 같이 여러 다른 포털에서 템플릿 구성을 위한 구현이 변경되었으므로, 여러 다른 포털에서 동일한 템플릿을 구성하면 구성을 신뢰할 수 없게 될 수 있습니다.
 
@@ -109,8 +109,7 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Azure Information Protection 정책에서 템플릿을 구성하려면
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
-    
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다.     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. 구성하려는 템플릿이 모든 사용자를 위한 것이면 **Azure Information Protection - 전역 정책** 블레이드에 그대로 있습니다.
@@ -119,11 +118,11 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 3. **Azure Information Protection - 전역 정책** 블레이드 또는 **정책:\<이름>** 블레이드에서 구성할 템플릿을 찾습니다.
     
-    - 분류, 레이블 지정 및 보호를 포함하는 구독이 있는 경우 레이블 다음에 있는 **템플릿** 또는 **보호 템플릿**을 확장합니다.
+    - 분류, 레이블 지정 및 보호가 포함된 구독이 있는 경우 레이블 뒤에 있는 **보호 템플릿**을 펼칩니다.
     
     - 보호만 포함된 구독이 있는 경우에는 템플릿이 레이블로 표시됩니다.
 
-4. 템플릿을 선택하고 **레이블** 블레이드에서 필요한 경우 **레이블 이름** 및 **설명**을 편집하여 템플릿 이름 및 설명을 변경할 수 있습니다. 그런 다음 값이 **Azure RMS** 또는 **Azure(클라우드 키)**인 **보호**를 선택하여 **보호** 블레이드를 엽니다.
+4. 템플릿을 선택하고 **레이블** 블레이드에서 필요한 경우 **레이블 이름** 및 **설명**합니다을 편집하여 템플릿 이름 및 설명을 변경할 수 있습니다. 그런 다음 **Azure(클라우드 키)**의 값이 있는 **보호**를 선택하여 **보호** 블레이드를 엽니다.
 
 5. **보호** 블레이드에서 권한, 콘텐츠 만료 및 오프라인 액세스 설정을 변경할 수 있습니다. 보호 설정 구성에 대한 자세한 내용은 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](configure-policy-protection.md)을 참조하세요.
     

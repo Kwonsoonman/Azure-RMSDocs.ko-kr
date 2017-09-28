@@ -1,10 +1,10 @@
 ---
 title: "Azure RMS 서비스 해제 및 비활성화"
-description: "Azure Information Protection에서 이 정보 보호 서비스를 더 이상 사용하지 않으려는 경우 해당 방법 및 지침을 제공합니다."
+description: "Azure Information Protection의 클라우드 기반 보호 서비스를 더 이상 사용하지 않으려는 경우에 적용되는 정보와 지침입니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1f8d7a56cec4df8f0ef50f4f83ef662ad8923f17
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: a4ed44939e9853373f272d916e0765572dc0590a
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
-# <a name="decommissioning-and-deactivating-azure-rights-management"></a>Azure 권한 관리 서비스 해제 및 비활성화
+# <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Azure Information Protection 보호 해제 및 비활성화
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -75,9 +75,9 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. 초기 **Azure Information Protection** 블레이드에서 **RMS 설정** 또는 **보호 활성화**를 선택합니다. 이 옵션의 이름을 바꾸는 중입니다. 
+2. 초기 **Azure Information Protection** 블레이드에서 **보호 활성화**를 선택합니다. 
 
-3.  **Azure Information Protection - RMS 설정** 또는 **Azure Information Protection - 보호 활성화** 블레이드에서 **비활성화**를 선택합니다. **예**를 선택하여 확인합니다.
+3.  **Azure Information Protection - 보호 활성화** 블레이드에서 **비활성화**를 선택합니다. **예**를 선택하여 확인합니다.
 
 정보 표시줄에 **비활성화가 성공적으로 완료됨**이 표시되고 **비활성화**는 이제 **활성화**로 바뀝니다. 
 

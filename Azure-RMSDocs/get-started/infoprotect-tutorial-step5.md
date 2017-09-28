@@ -5,7 +5,7 @@ keywords:
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c9964e013d24bb1f42acb5f1e7a180d2a85a8576
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6d62b6dd588b035ded582a87f5faf04a04df6ab6
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
 
@@ -39,9 +39,11 @@ ms.lasthandoff: 06/30/2017
 
     이 설정을 사용하면 받는 사람은 문서를 볼 수 있지만 편집하거나 인쇄할 수는 없습니다.
 
-4. 조직에서 업무를 같이 하는 사람에게 문서를 보낼 때와 마찬가지로 **사용자 선택**에 회사 메일 주소를 하나 이상 입력합니다. 현재 Azure Information Protection에서는 개인용 메일 주소를 지원하지 않으므로 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같은 회사 메일 주소를 지정해야 합니다. 
+4. 조직에서 업무를 같이 하는 사람에게 문서를 보낼 때와 마찬가지로 **사용자 선택**에 회사 메일 주소를 하나 이상 입력합니다. 주소를 둘 이상 지정하려면 세미콜론을 사용하거나 Enter 키를 누릅니다. 
 
-    또는 주소록을 클릭하여 동료의 전자 메일 주소를 선택합니다.
+    이 시나리오의 경우 Azure Information Protection에서 현재 개인 이메일 주소를 지원하지 않으므로 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같은 회사 이메일 주소를 지정해야 합니다. 
+
+    또는 **사용자, 그룹 또는 조직 선택** 아이콘을 클릭하여 동료의 이메일 주소를 선택할 수 있습니다.
 
     ![Azure Information Protection 빠른 시작 자습서 5단계 - 사용자 지정 권한으로 보호](../media/protect-custom-permissions.png)  
     
@@ -93,7 +95,7 @@ ms.lasthandoff: 06/30/2017
 
 2.  **홈** 탭에서 **보호** > **추적 및 해지**를 클릭합니다.
 
-    ![추적 사용 옵션](../media/track-usage-calloutv2.png)
+    ![추적 사용 옵션](../media/track-usage-calloutv3.png)
 
     이렇게 하면 문서 추적 사이트가 열립니다.
 

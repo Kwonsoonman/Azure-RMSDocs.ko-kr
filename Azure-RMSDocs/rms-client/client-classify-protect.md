@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호하는 방법에 대
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/04/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5e8329a441dcc871a155ef1b1484544732bec212
-ms.sourcegitcommit: 23aeb2bcce05968b850313333e359c99dd99a56f
+ms.openlocfilehash: b82904da81b73f0ae7ab5ab758a4cf3a982eb6ee
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -42,11 +42,14 @@ ms.lasthandoff: 09/05/2017
 
 Azure Information Protection 표시줄에서 자동으로 구성된 레이블 중 하나를 선택합니다. 
 
-예를 들어 다음 그림에서는 **민감도**가 **설정되지 않음**을 표시하므로 문서에 아직 레이블이 지정되지 않았음을 보여 줍니다. 레이블(예: "내부")을 설정하려면 **내부**를 클릭합니다. 현재 문서 또는 전자 메일에 적용할 레이블을 잘 모를 경우 레이블 도구 설명을 사용하여 각 레이블에 대해 자세히 알아보고 적용해야 하는 경우를 파악합니다.
+예를 들어 다음 그림에서는 **민감도**가 **설정되지 않음**을 표시하므로 문서에 아직 레이블이 지정되지 않았음을 보여 줍니다. "일반"과 같은 레이블을 설정하려면 **일반**을 클릭합니다. 현재 문서 또는 전자 메일에 적용할 레이블을 잘 모를 경우 레이블 도구 설명을 사용하여 각 레이블에 대해 자세히 알아보고 적용해야 하는 경우를 파악합니다. 
 
 ![Azure Information Protection 표시줄 예제](../media/info-protect-bar-not-set-callout.png)
 
 레이블을 문서에 이미 적용되어 있으며 변경하려는 경우에는 다른 레이블을 선택할 수 있습니다. 레이블을 표시줄에 표시되지 않으면 먼저 현재 레이블 값 옆에 있는 **레이블 편집**을 클릭합니다.
+
+> [!TIP]
+> **파일** 탭의 **보호** 단추에서 레이블을 선택할 수도 있습니다.
 
 레이블을 수동으로 선택하는 것 외에, 다음과 같은 방법으로 적용할 수도 있습니다.
 
@@ -83,9 +86,11 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
     - **사용자 지정 권한으로 보호**: 사용자 지정 권한을 지정하고 적용할 수 있도록 이 옵션이 선택되어 있는지 확인합니다. 사용자 지정 권한을 제거하려면 이 옵션을 선택 취소합니다.
     
     - **사용 권한 선택**: 자기만 액세스할 수 있도록 파일을 보호하려면 **Only for me**(나만)를 선택합니다. 그렇지 않은 경우 사람들에게 부여할 액세스 레이블을 선택합니다.
-
+    
     - **사용자, 그룹 또는 조직 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 개인 메일 주소는 현재 지원되지 않습니다.
         
+        현재 클라이언트의 미리 보기 버전이 있는 경우 주소록 아이콘을 사용하여 Outlook 주소록에서 사용자 또는 그룹을 선택할 수도 있습니다.
+    
     - **액세스 만료**: 특정 기간에만 제공해야 하는 파일에 한해 이 옵션을 선택합니다. 그러면 지정한 사용자가 설정한 날짜 이후로는 선택한 하나 이상의 파일을 열 수 없습니다. 원본 파일은 계속 열 수 있지만 현재 표준 시간대로 설정한 날짜의 자정이 지나면 지정된 사용자는 파일을 열 수 없습니다.
 
 5. **적용**을 클릭하고 **사용자 지정 권한 적용됨** 메시지가 표시되기를 기다립니다. 그런 다음 **닫기**를 클릭합니다.

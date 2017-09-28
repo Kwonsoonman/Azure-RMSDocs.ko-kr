@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: cf84cef5d6bc4d3df32a4e3c8bc3a6ac7380655c
-ms.sourcegitcommit: 94a9b6714c555b95f6064088e77ed94f08224a15
+ms.openlocfilehash: 4fb571f84e9916fb5573d551ec0f0bf374e5df2f
+ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
@@ -67,7 +67,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 레이블에 대해 구성된 보호](../media/info-protect-protection-bar-configured.png) 
     
-4. **보호** 블레이드에서 **Azure RMS** 또는 **Azure(클라우드 키)**가 선택되었는지 확인합니다. 이 옵션의 이름을 바꾸는 중입니다. 또한 **사용 권한 설정**도 선택되었는지 확인합니다. 그런 다음 **권한 추가**를 선택합니다.
+4. **보호** 블레이드에서 **Azure(클라우드 키)**가 선택되었는지 확인합니다. 이 옵션은 Azure Rights Management 서비스를 사용하여 문서 및 전자 메일을 보호합니다. 또한 **사용 권한 설정**도 선택되었는지 확인합니다. 그런 다음 **권한 추가**를 선택합니다.
 
 5. **권한 추가** 블레이드에서 **\<조직 이름> 추가 - 모든 멤버**를 선택합니다. 예를 들어 조직 이름이 VanArsdel Ltd인 경우 선택할 다음 옵션이 표시됩니다.
     

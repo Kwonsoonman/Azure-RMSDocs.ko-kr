@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 클라�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 63249b98578b952177351cc5547ef92c67164f06
-ms.sourcegitcommit: 12c9a4e3fe8e92d816f0a13003062f20dd2716df
+ms.openlocfilehash: d1802fbd3c659b154d585224a3f7b412b8995e5b
+ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="azure-information-protection-client-files-and-client-usage-logging"></a>Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
 
@@ -75,6 +75,11 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
     - 자동  
     
     - 시스템(로그인 및 다운로드 정책용)
+    
+    - DefaultAutomatic
+        
+        이 **DefaultAutomatic** 원본 작업은 미리 보기 클라이언트 전용이며, Azure Information Protection 정책에서 **기본 레이블 선택**을 사용하여 설정된 레이블을 참조합니다.
+
     
 - 작업 전/후의 레이블 
     

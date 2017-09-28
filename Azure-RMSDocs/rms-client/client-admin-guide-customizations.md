@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 09/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e590bd7983b0f3e4e4d1348fbe120452e9ceb79b
-ms.sourcegitcommit: 6000258a9f973a3ab8e608eda57b88a469e7b754
+ms.openlocfilehash: d5345f794fb69ddbfb4d6ffcddfcffd41ecacff5
+ms.sourcegitcommit: ff2fadacf9ef4c6ee27d9d08c4c455ffd48f21f8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -24,11 +24,9 @@ ms.lasthandoff: 09/08/2017
 
 Azure Information Protection 클라이언트를 관리할 때 특정 시나리오 또는 사용자의 하위 집합에 대해 필요할 수 있는 고급 구성을 수행할 경우 다음 정보를 사용합니다.
 
-경우에 따라 레지스트리를 편집해야 하는 설정도 있고 고급 설정을 사용해야 하는 경우도 있습니다. 고급 설정이 필요한 설정은 Azure Portal에서 구성한 후 클라이언트에서 다운로드할 수 있게 게시해야 합니다. 또한 일부 설정은 Azure Information Protection 클라이언트의 미리 보기 버전에서만 사용할 수 있습니다. 이러한 설정의 경우 최소 클라이언트 버전이 문서화되어 있습니다. 클라이언트의 일반 공급 버전에서 지원되는 설정 및 구성의 경우 최소 클라이언트 버전 번호가 문서화되어 있지 않습니다.
+경우에 따라 레지스트리를 편집해야 하는 설정도 있고 고급 설정을 사용해야 하는 경우도 있습니다. 고급 설정이 필요한 설정은 Azure Portal에서 구성한 후 클라이언트에서 다운로드할 수 있게 게시해야 합니다.  
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>포털에서 고급 클라이언트 구성 설정을 구성하는 방법
-
-이 구성은 현재 미리 보기로 제공됩니다.
 
 1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다.
 
@@ -64,11 +62,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 다른 사용자로 로그인하려면 다음과 같이 합니다.
 
-1. Azure Information Protection 클라이언트의 버전에 따라 다음과 같이 합니다. 
-    
-    - Azure Information Protection 클라이언트의 일반 공급 버전인 경우, 레지스트리 편집기를 사용하여 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**로 이동하고 **TokenCache** 값과 연결된 값 데이터를 삭제합니다.
-    
-    - Azure Information Protection 클라이언트의 현재 미리 보기 버전인 경우, **%localappdata%\Microsoft\MSIP**로 이동하고 **TokenCache** 파일을 삭제합니다.
+1. **%localappdata%\Microsoft\MSIP**로 이동하고 **TokenCache** 파일을 삭제합니다.
 
 2. 열려 있는 Office 응용 프로그램을 다시 시작하고 다른 사용자 계정으로 로그인합니다. Office 응용 프로그램에서 Azure Information Protection 서비스에 로그인하라는 메시지가 표시되지 않는 경우 **Microsoft Azure Information Protection** 대화 상자로 돌아와 업데이트된 **클라이언트 상태** 섹션에서 **로그인**을 클릭합니다.
 
@@ -78,11 +72,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 - Single Sign-On을 사용할 경우 Windows에서 로그아웃하고 레지스트리를 편집한 후 다른 사용자 계정으로 로그인해야 합니다. Azure Information Protection 클라이언트에서는 현재 로그인한 사용자 계정을 사용하여 자동으로 인증합니다.
 
-- Azure Rights Management 서비스에 대한 사용자 설정을 다시 지정하려는 경우 **도움말 및 피드백** 옵션을 사용하면 됩니다.
-
-- 현재 다운로드한 Azure Information Protection 정책을 삭제하려면 **%localappdata%\Microsoft\MSIP** 폴더에서 **Policy.msip** 파일을 삭제합니다.
-
-- Azure Information Protection 클라이언트의 현재 미리 보기 버전을 사용하는 경우 **Help and Feedback**(도움말 및 피드백)의 **Reset settings**(설정 재설정) 옵션을 사용하여 로그아웃하고 현재 다운로드한 Azure Information Protection 정책을 삭제할 수 있습니다.
+- **도움말 및 피드백**의 **설정 재설정** 옵션을 사용하여 로그아웃하고 현재 다운로드한 Azure Information Protection 정책을 삭제할 수 있습니다.
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>조직에 혼합 라이선스가 있을 때 보호 전용 모드 적용
 
@@ -99,10 +89,6 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 또한 이러한 컴퓨터의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 파일이 없는지 확인합니다. 이 파일이 있는 경우 삭제합니다. 이 파일에는 Azure Information Protection 정책이 포함되어 있으며 레지스트리를 편집하기 전에 다운로드했거나, Azure Information Protection 클라이언트가 데모 옵션으로 설치되었을 수 있습니다.
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
-
-이 구성 옵션은 현재 미리 보기로 제공됩니다.
-
-Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하는 경우 레지스트리를 편집하여 이 고급 구성을 구성할 수 있습니다. 
 
 다음 DWORD 값 이름(모든 값 데이터 포함)을 만듭니다.
 
@@ -133,9 +119,7 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
 
 ## <a name="hide-the-do-not-forward-button-in-outlook"></a>Outlook에서 전달 금지 단추 숨기기
 
-이 구성 옵션은 현재 미리 보기로 제공됩니다.
-
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이 설정에는 **1.8.41.0** 이상 버전을 갖는 Azure Information Protection 클라이언트 미리 보기 버전도 필요합니다.
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다.
 
 이 설정을 구성하는 경우 Outlook의 리본에서 **전달 금지** 단추가 숨겨집니다. Office 메뉴에서는 이 옵션이 숨겨지지 않습니다.
 
@@ -147,10 +131,8 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
 
 ## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>사용자 지정 권한 옵션을 사용자가 사용할 수 없음
 
-이 구성 옵션은 현재 미리 보기로 제공됩니다.
-
 > [!IMPORTANT]
-> Word, Excel, PowerPoint 및 파일 탐색기의 사용자 정의 권한에 대해 구성된 레이블이 있는 경우 이 옵션을 사용하지 마세요. 이 옵션을 사용할 경우 레이블이 적용되면 사용자 지정 권한을 구성하라는 메시지가 사용자에게 표시되지 않습니다. 결과는 문서에 레이블이 지정되지만, 문서가 의도한 대로 보호되지 않습니다.
+> 현재 미리 보기 버전의 클라이언트를 사용하지 않는 한 Word, Excel, PowerPoint 및 파일 탐색기의 사용자 정의 권한에 대해 구성된 레이블이 있는 경우 이 옵션을 사용하지 마세요. 이 옵션을 사용할 경우 레이블이 적용되면 사용자 지정 권한을 구성하라는 메시지가 사용자에게 표시되지 않습니다. 결과는 문서에 레이블이 지정되지만, 문서가 의도한 대로 보호되지 않습니다.
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
@@ -170,7 +152,7 @@ Azure Information Protection 클라이언트 1.3.0.0 이상 버전을 사용하�
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 영구적으로 숨기기
 
-이 구성에서는 Azure Portal에서 구성해야 하는 고급 설정을 사용합니다. 이 설정에는 **1.9.58.0** 이상 버전을 갖는 Azure Information Protection 클라이언트 미리 보기 버전도 필요합니다.
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
 사용자를 위해 이 설정을 구성하고 정책을 게시하며, 사용자가 Office 응용 프로그램에 Azure Information Protection 표시줄을 표시하지 않도록 선택하는 경우 이 표시줄은 숨겨진 상태를 유지합니다. 사용자가 **홈** 탭, **보호** 그룹, **보호** 단추에서 **표시줄 표시** 옵션을 선택 취소하면 이러한 상황이 발생합니다. **이 표시줄 닫기** 아이콘을 사용하여 표시줄을 닫으면 이 설정이 아무런 영향도 미치지 않습니다.
 
@@ -181,6 +163,39 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 - 키: **EnableBarHiding**
 
 - 값: **True**
+
+
+## <a name="enable-recommended-classification-in-outlook"></a>Outlook에서 권장 분류 사용
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다.
+
+권장 분류에 대한 레이블을 구성하면 Word, Excel 및 PowerPoint에서 권장 레이블을 적용할지 또는 해제할지 묻는 메시지가 표시됩니다. 이 설정은 이 레이블 권장 사항을 확장하여 Outlook에도 표시합니다.
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **OutlookRecommendationEnabled**
+
+- 값: **True**
+
+
+## <a name="set-a-different-default-label-for-outlook"></a>Outlook에 대한 다른 기본 레이블 설정
+
+이 구성 옵션은 현재 미리 보기 상태이며, 미리 보기 버전의 클라이언트가 필요합니다.
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+이 설정을 구성하면 Outlook에서 **기본 레이블 선택** 설정의 Azure Information Protection 정책에 구성된 기본 레이블을 적용하지 않습니다. 대신 Outlook에서 다른 레이블을 적용할 수 있거나 레이블이 적용되지 않습니다.
+
+다른 레이블을 적용하려면 레이블 ID를 지정해야 합니다. Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는 경우 레이블 ID 값이 **레이블** 블레이드에 표시됩니다. 레이블이 적용된 파일의 경우 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet을 실행하여 레이블 ID(MainLabelId 또는 SubLabelId)를 확인할 수도 있습니다. 레이블에 하위 레이블이 있는 경우 항상 부모 레이블이 아니라 하위 레이블의 ID만 지정합니다.
+
+따라서 Outlook에서 기본 레이블을 적용하지 않으려면 **없음**을 지정합니다.
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **OutlookDefaultLabel**
+
+- 값: \<**레이블 ID**> 또는 **없음**
+
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
 

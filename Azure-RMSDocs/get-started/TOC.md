@@ -11,7 +11,7 @@
 ## [정보 및 지원](information-support.md)
 ## [용어](terminology.md)
 ## [빠른 시작 자습서](infoprotect-quick-start-tutorial.md)
-### [1단계: 서비스 활성화](infoprotect-tutorial-step1.md)
+### [1단계: 보호 활성화](infoprotect-tutorial-step1.md)
 ### [2단계: 정책 구성 및 게시](infoprotect-tutorial-step2.md)
 ### [3단계: 클라이언트 설치](infoprotect-tutorial-step3.md)
 ### [4단계: 실제 작동 방식 확인 - 레이블 지정, 분류, 보호](infoprotect-tutorial-step4.md)

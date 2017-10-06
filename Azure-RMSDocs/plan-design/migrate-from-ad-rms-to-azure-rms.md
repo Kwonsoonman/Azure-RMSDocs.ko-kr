@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/11/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a4337d197e08cd75b974594fdd797c9bb383c1f9
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 6651c812c207494bc98d5a1b22e359910a94c3cc
+ms.sourcegitcommit: 7d07b82da9aca52fe9e38fa1bada144226168a6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 10/05/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -111,8 +111,6 @@ AD RMS 암호화 모드를 확인하려면
 - Windows Server 2008 R2의 경우: [Windows Server 2008 R2 및 Windows Server 2008에서 AD RMS에 대해 RSA 키가 2048비트로 증가함](https://support.microsoft.com/help/2627272/rsa-key-length-is-increased-to-2048-bits-for-ad-rms-in-windows-server ) 핫픽스가 설치되었는지 확인합니다. 그렇지 않은 경우 AD RMS 클러스터가 암호화 모드 1에서 실행 중입니다.
 
 ### <a name="migration-limitations"></a>마이그레이션 제한 사항
-
--   마이그레이션 프로세스는 SLC(서버 라이선스 인증서) 키를 Azure Information Protection에 대한 HSM(하드웨어 보안 모듈)로 마이그레이션하도록 지원하지만, Exchange Online은 현재 Azure Information Protection에서 사용되는 Rights Management 서비스에 대해 이러한 구성을 지원하지 않습니다. Azure Information Protection으로 마이그레이션한 후에 Exchange Online에서 IRM 기능을 모두 사용하려면 Azure Information Protection 테넌트 키를 [Microsoft에서 관리](../plan-design/plan-implement-tenant-key.md#choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok)해야 합니다. 또는 사용자가 Azure Information Protection의 테넌트 키를 관리할 때는(BYOK) Exchange Online에서 제한된 기능의 IRM을 실행할 수 있습니다. Azure Rights Management 서비스와 함께 Exchange Online을 사용하는 방법에 대한 자세한 내용은 이러한 마이그레이션 지침의 [8단계. Exchange Online에 대한 IRM 통합 구성](migrate-from-ad-rms-phase4.md#step-8-configure-irm-integration-for-exchange-online)을 참조하세요.
 
 -   Azure Information Protection에서 사용되는 Rights Management 서비스에 의해 지원되지 않는 소프트웨어 및 클라이언트에서는 Azure Rights Management로 보호되는 콘텐츠를 보호하거나 사용할 수 없습니다. [Azure Rights Management에 대한 요구 사항](../get-started/requirements-azure-rms.md)의 지원되는 응용 프로그램 및 클라이언트 섹션을 확인하세요.
 

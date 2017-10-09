@@ -4,7 +4,7 @@ description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9db73573eb6ccb6ab5f09d926e395a31f94404ea
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 5a3d13861e3eff0cfaf4a92eb005b8192f2b447c
+ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -176,6 +176,22 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
     - 프로그램 파일(\Program Files 및 \Program Files (x86))
     - \ProgramData 
     - \AppData(모든 사용자용)
+
+### <a name="files-that-cannot-be-protected-by-default"></a>기본적으로 보호할 수 없는 파일
+
+암호로 보호되어 있는 모든 파일은 Azure Information Protection 클라이언트를 통해 기본적으로 보호할 수 없습니다. 암호로 보호된 PDF 파일을 가장 많이 보지만, Office 앱과 같은 다른 응용 프로그램도 이 기능을 제공합니다.
+
+또한 Windows용 Azure Information Protection 클라이언트는 다음과 같은 상황에서 기본적으로 PDF 파일을 보호(또는 보호 해제)할 수 없습니다.
+
+- 양식 기반인 PDF 파일.
+
+- 파일 이름 확장명이 .pdf인 보호되는 PDF 파일. 
+    
+    Azure Information Protection 클라이언트는 보호 해제된 PDF 파일을 보호하고, 파일 이름 확장명이 .ppdf인 보호된 PDF 파일을 다시 보호할 수 있습니다.
+
+이러한 파일에 대한 해결 방법으로, [파일의 기본 보호 수준 변경](#changing-the-default-protection-level-of-files) 섹션의 지침에 따라 해당 파일을 일반적으로 보호할 수 있습니다. 그러나 이 방법은 컴퓨터 수준에서 파일 이름 확장명이 .pdf인 모든 파일에 대한 보호 수준을 변경합니다. 나열된 조건을 충족하는 파일에 대해서만 일반 보호를 정의할 수 없습니다.
+
+이러한 파일을 보호하는 것이 중요한 경우, 일시적으로 다른 컴퓨터로 복사하여 일반적으로 보호한 다음, 다시 복사할 수 있습니다.
 
 
 ## <a name="next-steps"></a>다음 단계

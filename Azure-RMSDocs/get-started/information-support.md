@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/26/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0d8c6a1ccfaf52af25ab0cfb5fb8074019939b90
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 0b788b8a380132d830fb6593f579dca9c8ac61bc
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -26,9 +26,10 @@ ms.lasthandoff: 07/31/2017
 
 |수행 작업|.. 방법|
 |----------------|---------------|
-|서비스에 권장되는 설명서 참조|[Azure Information Protection 설명서](https://docs.microsoft.com/information-protection/) 시작 페이지 사용.|
-|설명서에 대한 의견 제공 또는 설명서 관련 질문|[askipteam](mailto:%20askipteam@microsoft.com?subject=Documentation%20feedback)에 메일 보내기|
-|Azure Information Protection에 대한 제품 그룹의 트윗 및 문서 업데이트에 대한 공지 사항 수신|Microsoft에서 Azure Information Protection 팀을 담당하는 [@DanPlastina](https://twitter.com/DanPlastina) 팔로우.|
+|가장 자주 사용되는 문서보기|상위 5개 페이지 읽기: <br /><br />[시작 - iOS 및 Android용 AIP 앱](../rms-client/mobile-app-get-started.md) <br /><br /> [Azure Information Protection이란?](../understand-explore/what-is-information-protection.md)<br /><br /> [Azure Rights Management란?](../understand-explore/what-is-azure-rms.md)<br /><br />[Azure 권한 관리 활성화](../deploy-use/activate-service.md)<br /><br />[Azure Information Protection에 대한 요구 사항](../get-started/requirements.md)|
+|제품 팀 및 동료와의 소통|Azure Information Protection에 대한 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 방문하세요.|
+|새로운 기능 또는 기능 변경 요청|Azure Information Protection에 대한 [사용자 의견 사이트](https://msip.uservoice.com)에 방문하세요.|
+|제품 그룹의 트윗 수신|Twitter에서 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)를 팔로우하세요.|
 |구독 정보 및 지원되는 기능 확인|Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 사용하세요.|
 
 
@@ -67,6 +68,8 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility and Security Blo
 ### <a name="self-help"></a>자가 진단
 
 주문형 비디오:
+
+- [Azure Information Protection](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)의 Microsoft Ignite 2017 세션.
 
 - [Azure Information Protection](https://myignite.microsoft.com/videos?f=%5B%7B%22name%22:%22Azure%20Rights%20Management%22,%22facetName%22:%22products%22%7D,%7B%22name%22:%22Azure%20Information%20Protection%22,%22facetName%22:%22products%22%7D%5D)의 Microsoft Ignite 2016 세션.
 

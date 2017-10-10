@@ -4,27 +4,39 @@ description: "Azure Information Protection 정책에서 구성하여 사용자�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 09/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 2d11eb649ecec835d2ddf0045d8672c5b45af95f
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: f17e149dcd8cfb7398909cbe3a83cdcf71b80b33
+ms.sourcegitcommit: 2bca892231ca8393b88bd5da7d0890a573770a09
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Azure Information Protection에 대한 레이블을 삭제하거나 순서를 변경하는 방법
 
 >*적용 대상: Azure Information Protection*
 
-Azure Information Protection 정책에서 구성하여 사용자의 Information Protection 표시줄에 표시되는 레이블을 삭제하거나 순서를 변경할 수 있습니다.
+Azure Information Protection 정책에서 이러한 작업을 선택하여 사용자의 Information Protection 표시줄에 표시되는 레이블을 삭제하거나 순서를 변경할 수 있습니다.
 
 ![Azure Information Protection 정책에서 레이블 삭제 또는 순서 변경](../media/info-protect-contextmenu.png)
 
 문서 및 메일에 적용된 레이블을 삭제하고 Azure Information Protection 정책을 게시하면 다음에 Azure Information Protection 클라이언트에서 열 때 해당 레이블이 이러한 문서 또는 메일에서 자동으로 제거됩니다.
+
+그러나 레이블이 보호를 적용한 경우 해당 보호는 제거되지 않습니다. 레이블의 보호 설정은 유지되고 **보호 템플릿**에 표시됩니다. 이 템플릿을 새 레이블로 변환하거나 레이블에 연결할 수 있습니다. 이 템플릿이 유지되는 동안 삭제한 레이블과 이름이 같은 새 레이블을 만들 수 없습니다. 그렇게 하려면 다음과 같은 옵션이 있습니다.
+
+- 템플릿을 레이블로 변환합니다. 
+    
+    필요한 경우 템플릿의 이름을 변경하고 보호 설정을 수정할 수 있으므로 이 작업을 수행하는 것이 좋습니다.
+
+- PowerShell을 사용하여 템플릿의 이름을 바꾸거나 삭제합니다.
+    
+    이러한 작업을 수행하기 전에 다른 관리자나 서비스가 템플릿을 사용하고 있는지, 현재 이름으로 템플릿을 식별하는지 고려하십시오. 템플릿으로 보호된 문서나 전자 메일을 열 필요가 없는 경우에만 템플릿을 삭제하십시오.
+
+보호 템플릿 관리에 대한 자세한 내용은 [Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
 
 레이블을 삭제하기 전에 사용하지 않도록 설정할지를 고려하세요. 문서 및 전자 메일에 적용된 레이블을 사용하지 않도록 설정하면 적용된 레이블이 이러한 문서와 전자 메일에서 제거되지 않지만 더 이상 사용자가 정보 보호 모음에서 선택할 수 있는 레이블로 표시되지 않습니다. 또한 레이블을 사용하지 않도록 설정했다가, 사용자가 나중에 레이블을 선택할 수 있게 하려는 경우에 간단히 다시 사용하도록 설정하여 원래 구성을 유지할 수 있습니다.
 

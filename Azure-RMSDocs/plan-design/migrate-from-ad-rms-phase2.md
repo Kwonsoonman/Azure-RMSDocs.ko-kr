@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3274cb1ddd457647159034b955c47e9ab775f00c
-ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
+ms.openlocfilehash: db8f8de9cdda00f5983ff448aa895a5767d953b1
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -75,10 +75,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는
 > [!NOTE]
 > AD RMS에서 하드웨어 보안 모듈을 사용하는 방법에 대한 자세한 내용은 [하드웨어 보안 모듈에서 AD RMS 사용](http://technet.microsoft.com/library/jj651024.aspx)을 참조하세요.
 
-두 Azure Information Protection 테넌트 키 토폴로지 옵션은 Microsoft에서 테넌트 키를 관리하는 방식(**Microsoft 관리**) 또는 Azure Key Vault에서 사용자가 테넌트 키를 관리하는 방식(**고객 관리**)입니다. 자체 Azure Information Protection 테넌트 키를 관리할 경우를 BYOK("bring your own key")라고도 하며, Thales의 HSM(하드웨어 보안 모듈)이 필요합니다. 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](plan-implement-tenant-key.md) 문서를 참조하세요.
-
-> [!IMPORTANT]
-> Exchange Online은 현재 Azure Information Protection의 BYOK와 호환되지 않습니다. 마이그레이션 후에 BYOK를 사용하고 Exchange Online을 사용하려는 경우 이 구성에서 Exchange Online에 대한 IRM 기능이 축소되는 방식을 이해해야 합니다. [BYOK 가격 및 제한 사항](byok-price-restrictions.md)에 제공된 정보를 검토하여 마이그레이션에 가장 적합한 Azure Information Protection 테넌트 키 토폴로지를 선택합니다.
+두 Azure Information Protection 테넌트 키 토폴로지 옵션은 Microsoft에서 테넌트 키를 관리하는 방식(**Microsoft 관리**) 또는 Azure Key Vault에서 사용자가 테넌트 키를 관리하는 방식(**고객 관리**)입니다. Azure Information Protection 테넌트 키를 자체적으로 관리하는 경우 BYOK(bring your own key)라고 합니다. 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](plan-implement-tenant-key.md) 문서를 참조하세요.
 
 다음 테이블을 사용하여 마이그레이션에 사용할 절차를 식별하세요. 
 

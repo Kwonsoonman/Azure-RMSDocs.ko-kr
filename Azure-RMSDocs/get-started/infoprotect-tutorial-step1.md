@@ -1,6 +1,6 @@
 ---
 title: "빠른 시작 자습서 1단계 - AIP"
-description: "Azure Information Protection를 빠르게 사용해 보기 위한 소개 자습서 1단계 - Azure Rights Management 서비스 활성화"
+description: "Azure Information Protection을 빠르게 사용해 보기 위한 소개 자습서의 1단계 - 보호 서비스 활성화."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -10,20 +10,20 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: c168f54d873d8e5b1f2d455c9ae2d12cda8926b3
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 91eb9ec61f4fa1ebd7aac3cf0c244878ef450bb9
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="step-1-activate-the-rights-management-service"></a>1단계: Rights Management 서비스 활성화
+# <a name="step-1-activate-protection"></a>1단계: 보호 활성화
  
 >*적용 대상: Azure Information Protection*
 
 > [!NOTE]
 >이미 테넌트에 대해 Azure Rights Management 서비스를 활성화했더라도 이 단계를 완료하여 활성화 상태를 확인합니다. 지침에는 2단계에 대해 준비되도록 Azure Portal에 로그인하고 Azure Information Protection 블레이드를 만드는 방법이 포함되어 있습니다. 
 
-Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요한 문서와 전자 메일을 보호하고, 보호된 문서가 다른 사용자와 공유할 때 사용되는 방식을 추적할 수 있습니다. 이 서비스를 활성화하는 방법으로는 Windows PowerShell을 사용하거나, 관리 포털을 사용하는 방법 등 여러 가지가 있습니다.
+Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요한 문서와 전자 메일을 보호하고, 보호된 문서가 다른 사용자와 공유할 때 사용되는 방식을 추적할 수 있습니다. 보호를 활성화하는 방법으로는 Windows PowerShell을 사용하거나, 관리 포털을 사용하는 방법 등 여러 가지가 있습니다.
 
 이 자습서에서는 사용자에 대한 레이블을 구성하는 위치이기도 한 Azure Portal을 사용합니다. 
 

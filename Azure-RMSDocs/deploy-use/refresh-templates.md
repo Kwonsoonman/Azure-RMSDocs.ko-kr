@@ -4,7 +4,7 @@ description: "Azure Rights Management 서비스를 사용하는 경우 사용자
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9a4e01bd23f7f6107b4021cc792839cf38ee3b5
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 9a5feea87df01507520da6a118372de0f6364452
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>사용자 및 서비스를 위한 템플릿 새로 고침
 
@@ -26,7 +26,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 |응용 프로그램 또는 서비스|템플릿을 변경한 후 새로 고침하는 방법|
 |--------------------------|---------------------------------------------|
-|Exchange Online<br /><br />전송 규칙, DLP 규칙 및 Outlook Web App에 적용 가능|템플릿을 새로 고침하려면 수동 구성이 필요함<br /><br />구성 단계는 [Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법](#exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates) 섹션을 참조하세요.|
+|Exchange Online<br /><br />전송 규칙 및 Outlook Web App에 적용 가능 |1 시간 내에 자동으로 새로 고침 - 추가 단계가 필요하지 않습니다.<br /><br />이것은 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)를 사용하는 경우입니다. 이전에 TPD(트러스트된 게시 도메인)를 가져와서 Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성한 경우 동일한 지침 집합을 사용하여 Exchange Online의 새로운 기능을 사용하도록 설정하십시오.|
 |Azure Information Protection 클라이언트|클라이언트에서 Azure Information Protection 정책을 새로 고칠 때마다 자동으로 새로 고침:<br /><br /> - Azure Information Protection 막대를 지원하는 Office 응용 프로그램이 열릴 때. <br /><br /> - 마우스 오른쪽 단추를 클릭하여 파일 또는 폴더를 분류 및 보호하려 할 때. <br /><br /> - 레이블 지정 및 보호를 위해 PowerShell cmdlet을 실행할 때(Get-AIPFileStatus 및 Set-AIPFileLabel).<br /><br /> - 24시간마다.<br /><br /> 또한 Azure Information Protection 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 클라이언트에서도 새로 고쳐집니다.|
 |Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />- 이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />- Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
 |Office 2010|사용자가 Windows에서 로그아웃했다가 다시 로그인하고 1시간까지 기다리면 자동으로 새로 고침됩니다.|
@@ -35,67 +35,6 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |Mac 컴퓨터용 RMS 공유 앱|자동으로 새로 고침 - 추가 단계 불필요|
 
 클라이언트 응용 프로그램에서 템플릿을 다운로드해야 하는 경우(처음에 또는 변경 내용을 위해 새로 고칠 때) 다운로드가 완료되고 새 또는 업데이트된 템플릿이 완전히 작동하기까지 최대 15분이 걸립니다. 실제 시간은 템플릿 구성의 크기 및 복잡도, 네트워크 연결 등 여러 요소에 따라 다릅니다. 
-
-## <a name="exchange-online-only-how-to-configure-exchange-to-download-changed-custom-templates"></a>Exchange Online에만 해당: 변경된 사용자 지정 템플릿을 다운로드하기 위한 Exchange 구성 방법
-Exchange Online을 위해 이미 IRM(정보 Rights Management)을 구성했다면 Exchange Online의 Windows PowerShell을 사용해 다음과 같이 변경할 때까지 사용자는 사용자 지정 템플릿을 다운로드할 수 없습니다.
-
-> [!NOTE]
-> Exchange Online에서 Windows PowerShell을 사용하는 방법에 대한 자세한 내용은 [Exchange Online에서 PowerShell 사용](https://technet.microsoft.com/library/jj200677%28v=exchg.160%29.aspx)을 참조하세요.
-
-템플릿을 변경할 때마다 이 절차를 진행해야 합니다.
-
-### <a name="to-update-templates-for-exchange-online"></a>Exchange Online을 위해 템플릿을 업데이트하려면
-
-1.  Exchange Online에서 Windows PowerShell을 사용하여 서비스에 연결:
-
-    1.  Office 365 사용자 이름 및 암호 입력:
-
-        ```
-        $UserCredential = Get-Credential
-        ```
-
-    2.  다음 두 명령을 실행하여 Exchange Online 서비스에 연결합니다.
-
-        ```
-        $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-        ```
-
-        ```
-        Import-PSSession $Session
-        ```
-
-2.  Azure RMS에서 TPD(트러스트된 게시 도메인)를 다시 가져오려면 [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200724%28v=exchg.160%29.aspx) cmdlet을 사용합니다.
-
-    ```
-    Import-RMSTrustedPublishingDomain -Name "<TPD name>" -RefreshTemplates -RMSOnline
-    ```
-    예를 들어 TPD 이름이 대부분의 조직에서 일반적으로 사용하는 이름인 **RMS Online - 1**이라면 다음과 같이 입력합니다. **Import-RMSTrustedPublishingDomain -Name "RMS Online - 1" -RefreshTemplates -RMSOnline**
-
-    > [!NOTE]
-    > TPD 이름이 유효한지 확인하려면 [Get-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/jj200707%28v=exchg.160%29.aspx) cmdlet을 사용합니다.
-
-3.  템플릿이 성공적으로 가져오기 되었는지 확인하려면 몇 분 정도 기다린 후 [Get-RMSTemplate](http://technet.microsoft.com/library/dd297960%28v=exchg.160%29.aspx) cmdlet을 실행하고 Type을 All로 설정합니다. 예를 들면 다음과 같습니다.
-
-    ```
-    Get-RMSTemplate -TrustedPublishingDomain "RMS Online - 1" -Type All
-    ```
-    > [!TIP]
-    > 나중에 템플릿을 보관하는 경우 템플릿 이름이나 GUID를 쉽게 복사할 수 있도록 출력 복사본을 유지하는 것이 유용합니다.
-
-4.  Outlook Web App에서 사용할 수 있게 하려는 가져온 각 템플릿에 대해 [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) cmdlet을 사용하고 Type을 Distributed로 설정해야 합니다.
-
-    ```
-    Set-RMSTemplate -Identity "<name  or GUID of the template>" -Type Distributed
-    ```
-    Outlook Web Access에서 24시간 동안 UI를 캐시하므로 사용자에게 새 템플릿이 최대 하루 동안 표시되지 않을 수 있습니다.
-
-또한 템플릿(사용자 지정 또는 기본)을 보관하고 Office 365가 포함된 Exchange Online을 사용하는 경우, Exchange ActiveSync 프로토콜을 사용하는 모바일 장치 또는 Outlook Web App을 이용하는 사용자는 보관된 템플릿을 계속 볼 수 있습니다.
-
-이러한 템플릿이 사용자에게 더 이상 표시되지 않으므로, 사용자는 Exchange Online에서 Windows PowerShell을 사용하여 서비스에 연결하고 다음 명령을 실행하여 [Set-RMSTemplate](http://technet.microsoft.com/library/hh529923%28v=exchg.160%29.aspx) cmdlet을 사용합니다.
-
-```
-Set-RMSTemplate -Identity "<name or GUID of the template>" -Type Archived
-```
 
 ## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법
 Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 프로그램을 실행 중인 컴퓨터에서 레지스트리를 편집하여 컴퓨터에서 변경된 템플릿을 기본값보다 더 자주 새로 고치도록 자동 일정을 변경할 수 있습니다. 또한 레지스트리의 기존 데이터를 삭제하여 즉각적인 새로 고침을 강제 실행할 수 있습니다.
@@ -142,10 +81,10 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
 
     > 1.  Azure RMS에 대해 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
     > 2.  출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
-    > 
+    >
     >     예: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
     > 3.  이 값의 문자열에서 **https://** 및 **/_wmcs/licensing**을 제거합니다. 나머지 값이 Microsoft RMS 서비스 FQDN입니다. 이 예에서 Microsoft RMS 서비스 FQDN 값은 다음과 같습니다.
-    > 
+    >
     >     **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
 2.  다음 폴더와, 그 안의 모든 파일을 삭제합니다. **%localappdata%\Microsoft\MSIPC\Templates**

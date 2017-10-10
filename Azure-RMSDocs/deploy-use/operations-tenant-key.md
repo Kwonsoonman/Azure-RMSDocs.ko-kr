@@ -4,7 +4,7 @@ description: "Azure Information Protection 테넌트 키에 적용되는 다양�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,21 +12,21 @@ ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 75225e3a49b671449ee0f1d5fafd47de08660c41
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: afe33bcee3516589bd87642b0f15206b90a4bb41
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키에 대한 작업
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-Azure Information Protection 테넌트 키를 구현한 후의 제어 및 책임 수준은 테넌트 키 토폴로지(Microsoft 관리 또는 고객 관리)에 따라 다릅니다.
+Azure Information Protection에 대한 테넌트 키를 토폴로지에 따라 Azure Information Protection 테넌트 키에 대한 제어 및 책임 수준이 달라집니다. 두 가지 주요 토폴로지는 **Microsoft-managed** 및 **customer-managed**입니다.
 
-Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식은 대개 BYOK(Bring Your Own Key)라고 합니다. 이 시나리오 및 두 테넌트 키 토폴로지 중 선택하는 방법에 대한 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
+Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식은 대개 BYOK(Bring Your Own Key)라고 합니다. 이 시나리오 및 두 테넌트 키 토폴로지 중 선택하는 방법에 대한 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)을 참조하세요.
 
-다음 표에는 Azure Information Protection 테넌트 키에 대해 선택한 토폴로지에 따라 수행할 수 있는 작업이 나와 있습니다.
+다음 테이블에는 Azure Information Protection 테넌트 키에 대해 선택한 토폴로지에 따라 수행할 수 있는 작업이 나와 있습니다.
 
 |수명 주기 작업|Microsoft 관리(기본값)|고객 관리(BYOK)|
 |-----------------------|-------------------------------|---------------------------|
@@ -36,7 +36,7 @@ Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식
 |테넌트 키 내보내기|예|아니요|
 |위반 사항에 대응|예|예|
 
-구현한 토폴로지를 파악한 후 다음 중 하나를 선택하여 Azure Information Protection 테넌트 키에 수행할 수 있는 이러한 작업에 대한 자세한 내용을 확인하세요.
+구현한 토폴로지를 파악한 후 다음 링크 중 하나를 선택하여 Azure Information Protection 테넌트 키에 수행할 수 있는 작업에 대한 자세한 내용을 확인하세요.
 
 - [Microsoft 관리 테넌트 키](operations-microsoft-managed-tenant-key.md)
 - [고객 관리 테넌트 키](operations-customer-managed-tenant-key.md)

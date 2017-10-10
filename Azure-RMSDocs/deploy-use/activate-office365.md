@@ -4,7 +4,7 @@ description: "새 버전의 Office 365 관리 센터를 사용할 때의 Azure R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ec41508974244a7abe4faf67831d348775cdc73c
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 0bb1a1c466546582d4c21609ca86ba308d4bd9f9
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>Office 365 관리 센터에서 Azure 권한 관리를 활성화하는 방법
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 07/31/2017
 
 Office 365 관리 센터에서 Azure 권한 관리 서비스에 액세스해야 하는 경우 다음 지침을 따르세요. 예를 들어 Office 365 E3 또는 Office 365 E5에 대한 구독이 있는 경우
 
-1. Rights Management가 포함된 Office 365 계획에 등록한 후 Office 365 배포의 전역 관리자 역할이 있는 [회사 또는 학교 계정으로 Office 365에 로그인](https://portal.office.com/)합니다.
+1. Rights Management가 포함된 Office 365 요금제에 등록한 후 Office 365 배포의 전역 관리자 역할이 있는 [회사 또는 학교 계정으로 Office 365에 로그인](https://portal.office.com/)합니다.
 
 2. Office 365 관리 센터가 자동으로 표시되지 않으면 왼쪽 위에서 앱 시작 관리자 아이콘을 선택하고 **관리자**를 선택합니다. **관리자** 타일은 Office 365 관리자에게만 나타납니다.
 
@@ -35,7 +35,7 @@ Office 365 관리 센터에서 Azure 권한 관리 서비스에 액세스해야 
 
     - 탐색: **설정** > **서비스 및 추가 기능** > **Microsoft Azure Information Protection** > **Manage Microsoft Azure Information Protection settings**(Microsoft Azure Information Protection 설정 관리)
 
-    - 검색: **홈** 페이지의 검색 상자에 **Information Protection**을 입력하고 검색 결과에서 **Microsoft Azure Information Protection**을 클릭한 다음 **Manage Microsoft Azure Information Protection settings**(Microsoft Azure Information Protection 설정 관리)를 클릭합니다. 
+    - 검색: **홈** 페이지의 검색 상자에 **권한 관리**를 입력한 다음 검색 결과에서 **Azure 권한 관리 설정**을 클릭한 다음 **Microsoft Azure Information Protection 설정 관리**를 클릭합니다. 
     
     > [!NOTE]
     >이 옵션으로 이동하는 경우 사용 중인 디스플레이에 따라 이 옵션을 보려면 스크롤해야 할 수 있습니다. 그러나 해당 옵션이 페이지에 나타나지 않고 검색 결과로 표시되지 않으면 서비스 계획에 Azure Information Protection의 Azure Rights Management Service가 포함되지 않은 것일 수 있습니다.

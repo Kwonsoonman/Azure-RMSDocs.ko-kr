@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/10/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a2c0a8ef4534f8d5149178986688c4d00b4cee9f
-ms.sourcegitcommit: 5ea919b1b2bcb9c4b3e5dd1939ff8d0d937e1168
+ms.openlocfilehash: 381eaee2aa33a2a6a715c31616ad92a0f957e8b0
+ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -47,9 +47,15 @@ Azure Information Protection의 컨텍스트에서 **HYOK**(Hold Your Own Key)�
 
 HYOK에 대한 자세한 내용을 보고 제한 사항을 이해했음을 확인하고 HYOK 사용 시 지침을 보려면 [AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한](../deploy-use/configure-adrms-restrictions.md)을 참조하세요.
 
+## <a name="can-i-now-use-byok-with-exchange-online"></a>이제 Exchange Online에서 BYOK를 사용할 수 있습니까?
+
+예, 이제 [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)의 지침을 따르면 Exchange Online에서 BYOK를 사용할 수 있습니다. 이러한 지침을 통해 새로운 Office 365 메시지 암호화는 물론 Azure Information Protection에 대해 BYOK를 지원하는 Exchange Online의 새로운 기능을 사용할 수 있습니다.
+
+변경 내용에 대한 자세한 내용은 블로그 공지 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)를 참조하세요.
+
 ## <a name="where-can-i-find-information-about-third-party-solutions-that-integrate-with-azure-rms"></a>Azure RMS와 통합되는 타사 솔루션에 대한 정보는 어디서 찾을 수 있나요?
 
-많은 소프트웨어 공급 업체들은 이미 Azure Rights Management와 통합하는 솔루션을 보유하고 있거나 이러한 솔루션을 구현하고 있으며, 그 목록은 빠르게 증가되고 있습니다. [RMS 지원 솔루션](requirements-applications.md#rms-enlightened-solutions) 목록을 확인하고 Twitter에서 [Dan Plastina @TheRMSGuy](https://twitter.com/TheRMSGuy)의 최신 업데이트를 확인하는 것도 유용합니다. 그러나 특정 질문이 있으면 Information Protection 팀(askipteam@microsoft.com)으로 메일 메시지를 보내 주세요.
+많은 소프트웨어 공급 업체들은 이미 Azure Rights Management와 통합하는 솔루션을 보유하고 있거나 이러한 솔루션을 구현하고 있으며, 그 목록은 빠르게 증가되고 있습니다. [RMS 지원 솔루션](requirements-applications.md#rms-enlightened-solutions) 목록을 확인하고 Twitter에서 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)의 최신 업데이트를 확인하는 것도 유용합니다. 그러나 특정 질문이 있으면 Information Protection 팀(askipteam@microsoft.com)으로 메일 메시지를 보내 주세요.
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 커넥터에 대한 관리 팩이나 유사한 모니터링 메커니즘이 있나요?
 
@@ -86,7 +92,7 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 ## <a name="if-i-use-this-protection-for-my-production-environment-is-my-company-then-locked-into-the-solution-or-risk-losing-access-to-content-that-we-protected-with-azure-rms"></a>이 보호를 프로덕션 환경에서 사용할 경우 회사가 솔루션에 갇히거나, Azure RMS로 보호한 콘텐츠를 액세스할 수 없게 되나요?
 아니요. 항상 데이터를 제어하고 지속적으로 액세스할 수 있습니다. 더 이상 Azure Rights Management 서비스를 사용하지 않아도 마찬가지입니다. 자세한 내용은 [Azure 권한 관리 서비스 해제 및 비활성화](../deploy-use/decommission-deactivate.md)를 참조하세요.
 
-그러나 Azure RMS 배포를 해제하기 전에 그런 판단을 내리게 된 이유를 알고 싶습니다. Azure Rights Management 보호가 비즈니스 요구 사항에 부합하지 않을 경우 가까운 시일 내에 새로운 기능이 예정되어 있거나 대안이 있는지 확인해 보시기 바랍니다. 기술 및 비즈니스 요구 사항에 대한 논의는 [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS)으로 메일 메시지를 보내 주시면 됩니다.
+Azure Rights Management 서비스를 해제하기 전에 귀하의 의견을 듣고 그런 결정을 내린 이유를 이해하고 싶습니다. Azure Rights Management 보호가 비즈니스 요구 사항에 부합하지 않을 경우 가까운 시일 내에 새로운 기능이 예정되어 있거나 대안이 있는지 확인해 보시기 바랍니다. 기술 및 비즈니스 요구 사항에 대한 논의는 [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS)으로 메일 메시지를 보내 주시면 됩니다.
 
 ## <a name="can-i-control-which-of-my-users-can-use-azure-rms-to-protect-content"></a>Azure RMS를 사용하여 콘텐츠를 보호할 수 있는 사용자를 제어할 수 있나요?
 예. Azure Rights Management 서비스에는 이 시나리오에 대한 사용자 온보딩 컨트롤이 있습니다. 자세한 내용은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md) 문서에서 [단계별 배포에 대한 온보딩 컨트롤 구성](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
@@ -97,9 +103,12 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 사용자가 특정 조직과 안전하게 문서를 공유하지 못하게 하는 관리 옵션은 없습니다. 신뢰하지 않거나 경쟁 사업을 진행하는 조직을 차단하고 싶은 경우를 예로 들 수 있습니다. Azure Rights Management 서비스에서 이러한 조직의 사용자에게 보호된 문서를 보내지 못하게 하면 사용자가 보호되지 않은 상태로 문서를 공유하게 되므로 원치 않는 결과가 나타날 수 있습니다. 따라서 이 방법은 적절하지 않습니다. 예를 들어 누가 이러한 조직의 어떤 사용자와 회사 기밀 문서를 공유하는지, 문서(또는 메일)가 Azure Rights Management 서비스를 통해 보호될 때 어떤 작업을 수행할 수 있는지를 알 수 없게 됩니다.
 
 ## <a name="when-i-share-a-protected-document-with-somebody-outside-my-company-how-does-that-user-get-authenticated"></a>보호되는 문서를 회사 외부의 누군가와 공유할 때 해당 사용자를 어떻게 인증하나요?
-Azure Rights Management 서비스는 기업 간 공동 작업에서의 관리자 편의를 위해 항상 Azure Active Directory 계정과, 연결된 메일 주소를 사용자 인증에 사용합니다. 다른 조직에서 Azure 서비스를 사용한다면 온-프레미스에서 만들어져 관리되며 Azure에 동기화되는 계정이더라도 사용자에게 이미 Azure Active Directory 계정이 있을 것입니다. 해당 조직에 Office 365가 있다면 바탕에서는 사용자 계정에 Azure Active Directory를 사용하고 있습니다. 사용자 조직이 Azure에서 계정을 관리하지 않은 경우 [개인용 RMS](../understand-explore/rms-for-individuals.md)에 등록할 수 있습니다. 그러면 해당 사용자의 계정이 있는 조직에 대해 관리되지 않는 Azure 테넌트와 디렉터리가 생성되어 해당 사용자(및 후속 사용자)를 Azure Rights Management 서비스에 인증할 수 있게 됩니다.
+
+기본적으로 Azure Rights Management 서비스는 기업 간 공동 작업에서의 관리자 편의를 위해 Azure Active Directory 계정과, 연결된 전자 메일 주소를 사용자 인증에 사용합니다. 다른 조직에서 Azure 서비스를 사용한다면 온-프레미스에서 만들어져 관리되며 Azure에 동기화되는 계정이더라도 사용자에게 이미 Azure Active Directory 계정이 있을 것입니다.  해당 조직에 Office 365가 있다면 바탕에서는 사용자 계정에 Azure Active Directory를 사용하고 있습니다. 사용자 조직이 Azure에서 계정을 관리하지 않은 경우 [개인용 RMS](../understand-explore/rms-for-individuals.md)에 등록할 수 있습니다. 그러면 해당 사용자의 계정이 있는 조직에 대해 관리되지 않는 Azure 테넌트와 디렉터리가 생성되어 해당 사용자(및 후속 사용자)를 Azure Rights Management 서비스에 인증할 수 있게 됩니다.
 
 이러한 계정에 대한 인증 방법은 다른 조직의 관리자가 Azure Active Directory 계정을 어떻게 구성했느냐에 따라 달라질 수 있습니다. 예를 들어, 이 계정에 대해 만든 암호, 다단계 인증(MFA), 페더레이션 또는 Active Directory Domain Services에서 생성된 후 Azure Active Directory에 동기화된 암호 등을 사용할 수 있습니다.
+
+Azure AD에 계정이 없는 사용자에게 보내는 Office 문서 첨부 파일이 포함된 전자 메일을 보호하는 경우 인증 방법이 변경됩니다. Azure Rights Management 서비스는 Gmail과 같이 많이 사용되는 일부 소셜 ID 공급자와 페더레이션되어 있습니다. 사용자의 전자 메일 공급자가 지원되는 경우 사용자는 해당 서비스에 로그인 할 수 있으며 사용자의 전자 메일 공급자가 인증을 담당합니다. 사용자의 전자 메일 공급자가 지원되지 않거나 기본 설정인 경우 사용자는 인증을 위해 일회성 암호를 신청할 수 있으며 보호된 문서가 있는 전자 메일을 웹 브라우저에 표시할 수 있습니다.
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>외부 사용자(회사 외부의 사용자)를 사용자 지정 템플릿에 추가할 수 있나요?
 
@@ -107,14 +116,20 @@ Azure Rights Management 서비스는 기업 간 공동 작업에서의 관리자
 
 외부 사용자를 쉽게 추가할 수 있도록 사용자 지정 템플릿을 레이블로 변환하는 방법에 대한 자세한 내용은 [Azure Information Protection 정책의 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
-## <a name="does-azure-rms-work-with-dynamic-groups-in-azure-ad"></a>Azure AD의 동적 그룹에서 Azure RMS가 작동하나요?
-Azure AD Premium 기능을 사용하면 [특성 기반 규칙](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)을 지정하여 보안 그룹에 대한 동적 멤버 자격을 구성할 수 있습니다. 이 그룹 유형은 전자 메일 주소를 지원하지 않으며 Azure 권한 관리 서비스에서도 사용할 수 없습니다. 그러나 Office 365 그룹은 동적 그룹 구성원 자격 및 메일 기능이 지원됩니다. 이 그룹은 메일 사용이 가능하므로 Azure Rights Management 보호와 함께 사용할 수 있습니다.
+사용자 지정 템플릿을 레이블로 변환하는 방법에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
-Azure 권한 관리 서비스에서 사용할 수 있는 사용자 및 그룹에 대한 자세한 요구 사항을 보려면 [Azure Information Protection을 위한 사용자 및 그룹 준비](../plan-design/prepare.md)를 참조하세요.
+## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Azure RMS에서 사용할 수있는 그룹 유형은 무엇입니까?
+대부분의 시나리오에서 전자 메일 주소가 있는 Azure AD의 그룹 유형을 사용할 수 있습니다. 이 방법은 사용 권한을 할당할 때 항상 적용되지만 Azure Rights Management 서비스를 관리하기 위한 몇 가지 예외가 있습니다. 자세한 내용은 [그룹 계정에 대한 Azure Information Protection 요구 사항](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts)을 참조하세요.
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>보호된 메일을 Gmail 또는 Hotmail 계정으로 보내려면 어떻게 해야 하나요?
 
-Azure Information Protection에서 보호된 메일을 Gmail 또는 Hotmail 계정으로 보내는 방법에 관한 참조 정보나 데모를 보았을 수 있습니다. 이 기능은 아직 비공개 미리 보기 상태이므로 완전히 릴리스되기 전에는 이 문서에서 자세한 관련 정보를 찾을 수 없습니다.
+Exchange Online과 Azure Rights Management 서비스를 사용할 때는 전자 메일을 보호된 메시지로 보냅니다. 예를 들어 웹의 Outlook 명령 모음에서 새로운 **보호** 단추를 선택하거나, Outlook 전달 금지 옵션을 사용하거나, Azure Rights Management에서 보호를 적용하는 Azure Information Protection 레이블을 선택하거나, Exchange Online 전송 규칙에 의해 보호가 적용될 수 있습니다.
+
+받는 사람에게 Gmail, Yahoo 또는 Microsoft 계정에 로그인하는 옵션이 표시되고 보호된 전자 메일을 읽을 수 있게 됩니다. 또는 일회성 암호로 브라우저에서 전자 메일을 읽는 옵션을 선택할 수도 있습니다.
+
+이 시나리오를 지원하려면 Azure Rights Management 서비스 및 Office 365 메시지 암호화의 새로운 기능에서 Exchange Online을 사용할 수 있어야 합니다. 이 구성에 대한 자세한 내용은 [Exchange Online: IRM 구성](../deploy-use/configure-office365.md#exchange-online-irm-configuration)을 참조하세요.
+
+모든 장치에서 모든 전자 메일 계정을 지원하는 새로운 기능에 대한 자세한 내용은 블로그 게시물 [Office 365 메시지 암호화에서 사용할 수 있는 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 참조하세요.
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS에서는 어떤 장치 및 파일 형식을 지원하나요?
 Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요. 현재는 지원 장치 중 일부만 모든 Rights Management 기능을 지원하기 때문에 [RMS 기반 응용 프로그램](../get-started/requirements-applications.md#rms-enlightened-applications) 표도 확인해야 합니다.
@@ -142,11 +157,6 @@ Outlook을 열고 Office 365 회사 또는 학교 계정을 사용하여 프로�
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>RMS로 보호된 Office 문서를 열면 연결된 임시 파일도 RMS로 보호되나요?
 아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 장치에 있습니다.
 
-## <a name="we-really-want-to-use-byok-with-azure-information-protection-but-learned-that-this-isnt-compatible-with-exchange-onlinewhats-your-advice"></a>Azure Information Protection에 BYOK를 정말 사용하고 싶은데, Exchange Online과 호환되지 않는다고 합니다. 어떻게 해야 하나요?
-Azure Information Protection의 Azure Rights Management 서비스를 사용하여 이 현재 제한이 지연되지 않게 하세요. 기존 Exchange Online에서 BYOK를 사용하려는 경우 Microsoft가 키를 생성 및 관리하는 기본 키 관리 모드에서 Azure Information Protection을 배포하는 것이 좋습니다. 이런 방식으로 중요 파일과 메일을 즉시 보호하는 장점을 지금 활용하고 나중에 BYOK로 이동할 수 있습니다(예: Exchange Online에서 BYOK를 지원하게 될 때). BYOK 방식으로 전환하는 경우 보관된 키를 사용하여 이전에 보호했던 문서와 메일에 계속 액세스할 수 있습니다.
-
-그러나 회사 정책에서 하드웨어 보안 모듈(HSM)의 사용을 요구하고 이러한 모듈이 Azure Information Protection 배포를 차단하는 경우, Exchange용 Rights Management 보호 기능을 축소한 상태로 지금 BYOK로 Azure Information Protection을 배포할 수도 있습니다. 자세한 내용은 [Azure 권한 관리 테넌트 키 계획 및 구현](../plan-design/plan-implement-tenant-key.md)에서 [BYOK 가격 및 제한 사항](../plan-design/byok-price-restrictions.md)을 참조하세요.
-
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>SharePoint 보호 라이브러리에서 작동하지 않는 것 같은 기능이 있습니다. 이 기능에 대한 지원이 예정되어 있나요?
 현재, SharePoint는 Rights Management 템플릿, 문서 추적 및 일부 다른 기능을 지원하지 않는 IRM 보호 라이브러리를 사용하여 RMS 보호 문서를 지원합니다. 자세한 내용은 [Office 응용 프로그램 및 서비스](../understand-explore/office-apps-services-support.md) 문서에서 [SharePoint Online 및 SharePoint Server](../understand-explore/office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
 
@@ -158,12 +168,13 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 SharePoint 사이트 관리자가 자신이 소유한 SharePoint 라이브러리에 IRM을 활성화 및 구성하듯이 비즈니스용 OneDrive는 사용자가 본인이 보유한 비즈니스용 OneDrive 라이브러리를 활성화 및 구성할 수 있게 디자인되었습니다. 그러나 이러한 사용자를 위해 PowerShell을 사용하여 이 작업을 수행할 수 있습니다. 지침은 [Office 365: 클라이언트 및 온라인 서비스 구성](../deploy-use/configure-office365.md) 문서에서 [SharePoint Online 및 비즈니스용 OneDrive: IRM 구성](../deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) 섹션을 참조하세요.
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>배포 성공을 위한 팁이나 요령이 있나요?
+
 많은 배포를 감독하고 고객, 파트너, 컨설턴트와 지원 엔지니어의 이야기를 들어본 결과, 경험을 바탕으로 전달할 수 있는 가장 중요한 팁 중 하나는 **단순한 정책을 디자인 및 배포**하라는 것입니다.
 
-Azure Information Protection는 모든 사용자와 안전하게 공유할 수 있도록 하므로 데이터 보호 범위에 욕심을 부려도 좋습니다. 그러나 권한 정책에 대해서는 보수적인 견해를 견지하세요. 많은 조직에서 비즈니스에 대한 영향력이 가장 큰 것은 조직의 사용자에 대한 액세스를 제한하는 기본 권한 정책 템플릿을 적용하여 데이터 누출을 방지하는 것입니다. 물론, 사용자의 인쇄나 편집 등을 방지해야 하는 경우 훨씬 더 세분화할 수도 있습니다.  그러나 더 세분화된 제한은 정말로 높은 수준의 보안이 필요한 문서에 대한 예외로 유지하고, 처음부터 이러한 더 제한적인 정책을 구현하지는 말고 보다 단계적인 방법을 계획하세요.
+Azure Information Protection는 모든 사용자와 안전하게 공유할 수 있도록 하므로 데이터 보호 범위에 욕심을 부려도 좋습니다. 하지만 권한 사용 제한을 구성할 때는 신중해야합니다. 많은 조직에서 비즈니스에 대한 영향력이 가장 큰 것은 조직의 사람들에 대한 액세스를 제한하여 데이터 누출을 방지하는 것입니다. 물론, 사용자의 인쇄나 편집 등을 방지해야 하는 경우 훨씬 더 세분화할 수도 있습니다.  그러나 더 세분화된 제한은 정말로 높은 수준의 보안이 필요한 문서에 대한 예외로 유지하고, 처음부터 이러한 더 제한적인 사용 권한을 구현하지는 말고 보다 단계적으로 접근하도록 계획하십시오.
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>이제 조직을 떠난 직원이 보호하던 파일에 대한 액세스는 어떻게 확보하나요?
-인증된 사용자에게 조직의 테넌트 사용 라이선스에 대한 전체 권한을 제공하는 [슈퍼 사용자 기능](../deploy-use/configure-super-users.md)을 사용합니다. 이 기능은 권한이 있는 서비스가 필요에 따라 파일을 인덱스 및 검사할 수 있도록 합니다.
+[슈퍼 사용자 기능](../deploy-use/configure-super-users.md)을 사용하십시오. 이 기능은 테넌트가 보호하는 모든 문서 및 전자 메일에 대한 권한이 있는 사용자에게 모든 권한 사용권을 부여합니다. 수퍼 사용자는 보호된 콘텐츠를 언제나 읽을 수 있고 필요한 경우 다른 사용자를 위해 보호를 제거하거나 다시 적용할 수 있습니다. 이 기능은 권한이 있는 서비스가 필요에 따라 파일을 인덱스 및 검사할 수 있도록 합니다.
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>문서 추적 사이트에서 해지를 테스트할 때 다른 사용자가 최대 30일 동안 문서에 계속 액세스할 수 있다는 메시지가 표시되는데, 이 기간을 구성할 수 있나요?
 

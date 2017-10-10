@@ -4,17 +4,17 @@ description: "Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2017
+ms.date: 09/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: fff96103544242510b7e53b1636f1f95fbd4bb2b
-ms.sourcegitcommit: c5e117f5329c6e5a93d5858a3b4609aadd8a6e7e
+ms.openlocfilehash: ba39c332437e2710554d1e8f69c3f676f0d870db
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -43,13 +43,13 @@ Azure Information Protection 레이블을 사용하여 문서와 전자 메일�
 
 이 보호 기술은 암호화, ID 및 권한 부여 정책을 사용합니다. 적용되는 레이블과 마찬가지로 Rights Management를 사용하여 적용된 보호 기능은 조직, 네트워크, 파일 서버, 응용 프로그램 내/외의 위치에 관계없이 문서와 전자 메일에 계속 적용됩니다. 이 정보 보호 솔루션은 데이터를 다른 사용자와 공유하는 경우에도 데이터에 대한 제어를 유지할 수 있도록 합니다.
 
-예를 들어 조직 내의 사용자만 액세스할 수 있도록 보고서 문서 또는 판매 예측 스프레드시트를 구성할 수도 있고 해당 문서의 편집 가능 여부를 제어하거나, 읽기 전용으로 제한하거나 문서 인쇄를 차단할 수도 있습니다. 마찬가지로 메일을 구성할 수 있으며 전체 회신 옵션 사용 또는 메일 전달을 차단할 수도 있습니다. *권한 관리 템플릿*을 사용하면 이러한 보호 작업을 단순화하고 간소화할 수 있습니다.
+예를 들어 조직 내의 사용자만 액세스할 수 있도록 보고서 문서 또는 판매 예측 스프레드시트를 구성할 수도 있고 해당 문서의 편집 가능 여부를 제어하거나, 읽기 전용으로 제한하거나 문서 인쇄를 차단할 수도 있습니다. 마찬가지로 메일을 구성할 수 있으며 전체 회신 옵션 사용 또는 메일 전달을 차단할 수도 있습니다. *Rights Management 템플릿*을 사용하면 이러한 보호 작업을 단순화하고 간소화할 수 있습니다.
 
-### <a name="rights-management-templates"></a>권한 관리 템플릿
+### <a name="rights-management-templates"></a>Rights Management 템플릿
 
-Azure Rights Management 서비스를 활성화하면 바로 2개의 기본 템플릿이 만들어져 데이터 액세스를 조직에 있는 사용자로 제한할 수 있습니다. 이러한 템플릿을 사용하여 즉시 조직에서 데이터가 누출되는 것을 방지할 수 있습니다. 또한 제한이 강화된 컨트롤을 적용하는 사용자 고유의 사용자 지정 템플릿을 구성하여 이러한 기본 템플릿을 보완할 수도 있습니다.
+Azure Rights Management 서비스를 활성화하는 즉시 조직 내 사용자에 대한 데이터 액세스를 제한하는 두 가지 기본 템플릿을 사용할 수 있습니다. 이러한 템플릿을 사용하여 즉시 조직에서 데이터가 누출되는 것을 방지할 수 있습니다. 또한 제한이 강화된 컨트롤을 적용하는 자체 보호 설정을 구성하여 이러한 기본 템플릿을 보완할 수도 있습니다.
 
-이러한 템플릿은 레이블 구성에 포함될 수 있어 특정 레이블이 문서 또는 메일 메시지에 적용되면 데이터가 분류되고 자동으로 보호됩니다. 또한 Azure Rights Management를 지원하는 제품과 서비스에서 사용자나 관리자가 선택할 수도 있습니다.
+템플릿은 레이블 구성의 일부일 수 있습니다. 해당 레이블을 문서 또는 전자 메일 메시지에 적용하면 데이터가 분류되고 자동으로 보호됩니다. 또한 Azure Rights Management를 지원하는 제품과 서비스에서 사용자나 관리자가 선택할 수도 있습니다.
 
 이 예제에서는 Azure Portal에서 Azure Information Protection 정책을 구성할 때 레이블에 대한 템플릿을 선택하는 방법을 보여 줍니다.
 
@@ -84,8 +84,6 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 ## <a name="resources-for-azure-information-protection"></a>Azure Information Protection에 대한 리소스
 
-- 알림: [Azure Information Protection is now Generally Available](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/04/azure-information-protection-is-now-generally-available/)(Azure Information Protection 출시)
-
 - 무료 평가판: [Enterprise Mobility + Security E5](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7)
 
 - 클라이언트 다운로드: [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
@@ -98,17 +96,7 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/GWcnZFMPcnE" frameborder="0" allowfullscreen></iframe>
 
-    또한 Microsoft Ignite 2016에서는 Azure Information Protection에 대한 다음과 같은 여러 주문형 세션을 제공합니다.
-
-    - [BRK2127: Adopt a comprehensive identity-driven solution for protecting and sharing data securely](https://myignite.microsoft.com/videos?q=BRK2127)(BRK2127: 데이터를 안전하게 보호 및 공유하기 위한 포괄적인 ID 기반 솔루션 채택)
-    
-    - [THR2107: Collaborate securely using Azure Information Protection](https://myignite.microsoft.com/videos?q=THR2107)(THR2107: Azure Information Protection을 사용하여 안전하게 공동 작업)
-    
-    - [THR2108: Ensure comprehensive protection of your data with Azure Information Protection](https://myignite.microsoft.com/videos?q=THR2108)(THR2108: Azure Information Protection으로 데이터에 대한 포괄적인 보호 보장)
-    
-    - [BRK3095: Learn how classification, labeling, and protection delivers persistent data protection](https://myignite.microsoft.com/videos?q=BRK3095)(BRK3095: 분류, 레이블 지정 및 보호를 통해 지속적인 데이터 보호를 제공하는 방법 알아보기)
-    
-    - [BRK2128: Send secure email to anyone with the power of Microsoft Office 365 and Azure Information Protection](https://myignite.microsoft.com/videos?q=BRK2128)(BRK2128: Microsoft Office 365 및 Azure Information Protection의 기능을 통해 모든 사용자에게 보안 메일 보내기)
+또한 **Microsoft Ignite 2017**에는 주문형으로 제공될 Azure Information Protection에 대한 여러 세션이 있습니다. 이러한 세션이 제공되면 Ignite 웹 사이트에서 [검색하고 찾을 수](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522) 있습니다. 공지 사항 요약은 [Azure Information Protection @ Ignite 2017의 새로운 기능](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)을 참조하세요.
 
 
 ## <a name="next-steps"></a>다음 단계

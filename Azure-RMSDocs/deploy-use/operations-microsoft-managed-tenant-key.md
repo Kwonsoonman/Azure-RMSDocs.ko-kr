@@ -4,7 +4,7 @@ description: "Microsoft에서 Azure Information Protection용 테넌트 키를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e4a484660aaf5a1820b04892ff006c08cceb5080
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 5aaf4393e39412a8c8b18678f4edea7a61c148dc
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/23/2017
 ---
-# <a name="microsoft-managed-tenant-key-lifecycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
+# <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 
 >*적용 대상: Azure Information Protection, Office 365*
 
@@ -38,6 +38,8 @@ Azure Information Protection에 대해 키를 다시 생성해야 하는 경우�
 
 - 회사가 둘 이상으로 분할된 경우. 테넌트 키를 다시 입력하면 새 회사에서는 직원이 게시하는 새 콘텐츠에 액세스할 수 없습니다. 이전 테넌트 키의 복사본이 있으면 이전 콘텐츠에는 액세스할 수 있습니다.
 
+- 하나의 키 관리 토폴로지에서 다른 키 관리 토폴로지로 이동하려고 합니다.
+
 - 테넌트 키의 마스터 복사본이 노출되었다고 판단되는 경우.
 
 키를 다시 생성하려면 테넌트 키가 되도록 다른 Microsoft 관리 키를 선택할 수 있지만, 새 Microsoft 관리 키를 생성할 수는 없습니다. 새 키를 만들려면 키 토폴로지를 변경하여 테넌트 키를 고객이 관리(BYOK)하도록 만들어야 합니다.
@@ -48,7 +50,7 @@ AD RMS(Active Directory Rights Management Services)에서 마이그레이션하�
 
     (Get-AadrmKeys) | Sort-Object CreationTime | Select-Object -First 1
 
-키 토폴로지를 변경하여 테넌트 키를 고객이 관리(BYOK)하도록 만들려면 [Azure Information Protection 테넌트 키 구현](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key)을 참조하세요.
+키 토폴로지를 변경하여 테넌트 키를 고객이 관리(BYOK)하도록 만들려면 [Azure Information Protection 테넌트 키에 BYOK 구현](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)을 참조하세요.
 
 ## <a name="backup-and-recover-your-tenant-key"></a>테넌트 키 백업/복구
 Microsoft에서 테넌트 키를 백업하며 사용자는 아무런 작업을 수행할 필요가 없습니다.
@@ -62,11 +64,11 @@ Microsoft에서 테넌트 키를 백업하며 사용자는 아무런 작업을 �
 
 ### <a name="step-2-wait-for-verification"></a>2단계: 확인 대기
 
--   Microsoft는 Azure Information Protection 테넌트 키 해제 요청이 합법적인지 확인합니다. 이 프로세스는 최대 3주까지 걸릴 수 있습니다.
+- Microsoft는 Azure Information Protection 테넌트 키 해제 요청이 합법적인지 확인합니다. 이 프로세스는 최대 3주까지 걸릴 수 있습니다.
 
 ### <a name="step-3-receive-key-instructions-from-css"></a>3단계: CSS에서 키 관련 지침 받기
 
--   Microsoft CSS(고객 지원 서비스)에서 Azure Information Protection 구성 및 테넌트 키를 암호로 보호된 파일에 암호화된 상태로 포함하여 전송합니다. 이 파일은 **.tpd** 파일 이름 확장명을 사용합니다. 이를 위해 CSS는 먼저 내보내기를 시작한 사용자에게 전자 메일로 도구를 보냅니다. 다음과 같이 명령 프롬프트에서 해당 도구를 실행해야 합니다.
+- Microsoft CSS(고객 지원 서비스)에서 Azure Information Protection 구성 및 테넌트 키를 암호로 보호된 파일에 암호화된 상태로 포함하여 전송합니다. 이 파일은 **.tpd** 파일 이름 확장명을 사용합니다. 이를 위해 CSS는 먼저 내보내기를 시작한 사용자에게 전자 메일로 도구를 보냅니다. 다음과 같이 명령 프롬프트에서 해당 도구를 실행해야 합니다.
 
     ```
     AadrmTpd.exe -createkey
@@ -95,7 +97,7 @@ Azure Information Protection을 더 이상 사용하기 않기 위해 테넌트 
 ## <a name="respond-to-a-breach"></a>위반 사항에 대응
 아무리 강력한 보안 시스템이라도 위반 대응 프로세스가 없다면 완벽하다고 할 수 없습니다. 테넌트 키는 노출되거나 도용될 수 있습니다. 테넌트 키를 효율적으로 보호한다고 하더라도 현재 생성 기술 또는 현재 키 길이/알고리즘에 취약점이 있을 수도 있습니다.
 
-Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응하고 있습니다. 이 팀은 신뢰할 만한 문제 보고서가 확인되는 즉시 해당 범위, 근본 원인 및 완화 방법을 조사합니다. 이 문제가 사용자의 자산에 영향을 주는 경우 Microsoft는 구독 시 사용자가 제공한 주소를 사용해 전자 메일로 Azure Information Protection 테넌트 관리자에게 문제를 알립니다.
+Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응하고 있습니다. 이 팀은 신뢰할 만한 문제 보고서가 확인되는 즉시 해당 범위, 근본 원인 및 완화 방법을 조사합니다. 이 문제가 사용자의 자산에 영향을 주는 경우 Microsoft는 구독 시 사용자가 제공한 이메일 주소를 사용해 전자 메일로 Azure Information Protection 테넌트 관리자에게 알립니다.
 
 보안 위반이 발생한 경우 사용자나 Microsoft에서 수행할 수 있는 최선의 작업은 위반 범위에 따라 다르며, Microsoft는 사용자와 협의하여 이 프로세스를 진행합니다. 다음 표에는 몇 가지 일반적인 상황과 가능한 대응 방법이 나와 있습니다. 정확한 대응 방법은 조사 중에 확인되는 모든 정보에 따라 달라집니다.
 

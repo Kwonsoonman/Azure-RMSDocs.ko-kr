@@ -1,36 +1,60 @@
 ---
-title: "새로운 기능 및 릴리스 정보 | Azure RMS"
+title: "새로운 기능 및 릴리스 정보"
 description: "이 새로운 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다."
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 9fd96c934d4f7a8e09035ff7eda4517f65a27e17
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: df78d1f1740128c79c944a6b5d33353141933d78
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="whats-new-and-release-notes"></a>새로운 기능 및 릴리스 정보
 
 ## <a name="whats-new"></a>새로운 기능
-Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨씬 쉽고 유연해졌습니다. 이 항목에서는 이 버전의 RMS SDK에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다.
 
-### <a name="new-for-june-2016"></a>2016년 6월의 새로운 기능
+이 항목에서는 새로운 버전의 RMS SDK v4.x에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다.
+
+-   [2017년 7월의 새로운 기능](#new-for-july-2017)
+-   [2016년 10월 업데이트](#October-2016-update)
+-   [2016년 6월 업데이트](#new-for-June-2016)
+-   [2015년 12월 업데이트](#december-2015-update)
+-   [2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가](#july-2015-update-adds-support-for-linux-c-developm)
+-   [2015년 5월 업데이트 - 로깅 제어 추가](#may-2015-update-adds-logging-control)
+-   [2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가](#february-2015-update-adds-windows-store-application-support)
+-   [2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가](#january-2015-update-adds-winphone-platform-support)
+-   [2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
+-   [릴리스 정보](#release-notes)
+-   [질문과 대답](#frequently-asked-questions)
+
+### <a name="new-for-july-2017"></a>2017년 7월의 새로운 기능
+
+7월 릴리스에 대한 업데이트에는 SDK의 버전이 4.2.5로 증가했습니다.
+
+- Android SDK: 이제 Android SDK를 사용하여 앱에서 **로깅 레벨을 즉시 설정**할 수 있습니다. 자세한 내용은 [방법: 오류 및 성능 로깅 사용](https://docs.microsoft.com/en-us/information-protection/develop/enabling-logging)을 참조하세요.
+- iOS SDK는 로깅 수준을 지원하지 않습니다. 
+- 이제 SDK가 NULL 액세스 토큰에 대한 오류를 반환합니다.
+
+### <a name="october-2016-update"></a>2016년 10월 업데이트
+
+- 몇 가지 백 엔드 버그 수정을 구현.
+- Apple iOS/OSX SDK의 비트 코드를 사용하도록 설정.
+
+### <a name="june-2016-update"></a>2016년 6월 업데이트
 
 - **최신 인증에 대한 지원** - RMS 지원 앱에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다. MFA(Multi-Factor Authentication), SAML 기반 타사 ID 공급자와 RMS 클라이언트 응용 프로그램, 스마트 카드 및 인증서 기반 인증과 같은 로그인 기능이 가능하며, 기본 인증 프로토콜을 사용하기 위해 RMS 지원 앱을 사용할 필요가 없습니다.
 - **문서 추적 지원** - 이제 개발자는 앱에서 문서를 보호하는 경우 문서 추적을 사용할 수 있습니다.
 - 성능 향상
 - 버그 수정
-
 
 ### <a name="december-2015-update"></a>2015년 12월 업데이트
 
@@ -66,7 +90,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 ### <a name="july-2015-update---adds-support-for-linux--c-development"></a>2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가
 
-이 릴리스에서는 다음 기능이 추가되었습니다.
+이 릴리스에서는 다음 업데이트가 추가되었습니다.
 
 -   Linux 플랫폼용 RMS SDK 4.1
 
@@ -74,7 +98,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 ### <a name="may-2015-update---adds-logging-control"></a>2015년 5월 업데이트 - 로깅 제어 추가
 
-이 릴리스에서는 다음 기능에 대한 지원이 추가되었습니다.
+이 릴리스에서는 다음 업데이트에 대한 지원이 추가되었습니다.
 
 -   iOS
 
@@ -130,7 +154,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 -   Amazon® Kindle 장치에서 샘플 앱을 사용하여 .ptxt 첨부 파일을 보는 경우 파일을 보기 전에 먼저 다운로드해야 합니다.
 
-    **해결 방법** - 알려진 문제이며 나중에 해결할 예정입니다.
+    **해결 방법** - 알려진 문제이며 나중에 다룰 예정입니다.
 
 -   다중 인스턴스가 허용되는 경우 SDK를 사용하는 응용 프로그램이 충돌할 수 있습니다.
 
@@ -142,7 +166,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 **iOS 및 OS X**
 
--   iOS 및 OS X SDK에서 지원하는 두 가지 포르투갈어 언어가 있습니다. 버그로 인해 현재 첫 번째 지역화는 완전히 지원되지 않습니다. 이 버그 때문에 포르투갈어는 완전히 지원되지 않습니다. 대부분의 텍스트가 번역되었지만 UI는 번역되지 않았습니다.
+-   iOS 및 OS X SDK에서 지원하는 두 가지 포르투갈어 언어가 있습니다. 버그로 인해 현재 첫 번째 지역화가 완전히 지원되지 않습니다. 이 버그 때문에 포르투갈어는 완전히 지원되지 않습니다. 대부분의 텍스트가 번역되었지만 UI는 번역되지 않았습니다.
 
     1. 포르투갈어
 
@@ -181,7 +205,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 **Q**: SDK와 샘플 응용 프로그램을 사용하기 위해 새 조직 테넌트를 얻으려면 어떻게 하나요?
 
-**A**: Azure AD RMS 테스트 조직에 대한 자격 증명을 요청하려면 <rmcstbeta@microsoft.com>으로 메일을 보내세요.
+**A**: Azure AD RMS 테스트 조직에 대한 자격 증명을 요청하려면 <rmcstbeta@microsoft.com>으로 메일을 보내십시오.
 
 **Q**: 여기 설명서에 테스트 계층 구조 설명이 보이지 않습니다. 그 이유는 무엇일까요?
 
@@ -212,7 +236,7 @@ Microsoft 권한 관리 SDK 4.2에서는 RMS 응용 프로그램 사용이 훨�
 
 **OS x**
 
-**Q**: 샘플 앱 프레임워크는 Xcode 5에 맞게 조정되었습니다. Xcode 4.6에서도 사용할 수 있나요?
+**Q**: 샘플 앱 프레임워크가 Xcode 5에 맞게 조정되었습니다. Xcode 4.6에서도 사용할 수 있나요?
 
 **A**: OS X SDK는 Xcode 4.6 이상과 OS X 10.8 이상에서만 작동합니다.
 

@@ -1,22 +1,21 @@
 ---
-title: "개발자 가이드 - AIP"
+title: "Azure Information Protection 개발자 가이드"
 description: "개발자는 Azure Information Protection을 사용하여 모든 형식의 파일을 보호하고 관리할 수 있습니다."
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 03/13/2017
+ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 3268b175b2e029c55ec5488a8c4ace8ad92fcb18
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: ea13c3dbf37dd22a6e93786390bd6be4da7a6959
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
 
@@ -104,7 +103,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 ## <a name="videos"></a>동영상
 
-Microsoft의 Dan Plastina가 제공하는 [Azure Information Protection 소개](https://www.microsoft.com/cloud-platform/azure-information-protection)를 확인해 보세요.
+[Azure Information Protection 소개](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
 이러한 비디오는 Micorsoft 2016 Ignite 컨퍼런스에서 소개되었던 내용입니다.
 

@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/07/2017
+ms.date: 09/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 4c656ed4e7fdb7945b6ccf466a1138cdb68a2189
-ms.sourcegitcommit: f7ef0f040ae4af4bf1283ebcb0750b65b6939313
+ms.openlocfilehash: 660f29506e22feb742edf4041d7baed0cf749b8c
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -71,7 +71,9 @@ Azure Information Protection P2 구독을 필요로 하는 옵션은 포털에�
 
 Azure Information Protection은 5개의 기본 레이블을 포함하는 [기본 정책](configure-policy-default.md)과 함께 제공됩니다. 이러한 레이블은 조직에서 일반적으로 만들고 저장하는 최저 분류인 개인 데이터부터 최고 분류인 극비 데이터에 이르기까지 전체 범위의 데이터와 함께 사용할 수 있습니다. 
 
-기본 레이블을 변경하지 않고 사용하거나, 이를 사용자 지정하거나, 삭제하고 새 레이블을 만들 수 있습니다. 다음 섹션의 링크에서 관련 옵션을 찾아 구성하는 방법을 자세히 확인할 수 있습니다. 
+기본 레이블을 변경하지 않고 사용하거나, 이를 사용자 지정하거나, 삭제하고 새 레이블을 만들 수 있습니다. 다음 섹션의 링크에서 관련 옵션을 찾아 구성하는 방법을 자세히 확인할 수 있습니다.
+
+원하는 수의 레이블을 만들 수 있습니다. 하지만 사용자가 올바른 레이블을 쉽고 보고 선택하기에 레이블이 너무 많아지기 시작하면 사용자와 관련된 레이블만 표시되도록 범위 지정 정책을 만듭니다. 보호가 적용되는 레이블의 상한선은 500입니다.
 
 Azure Information Protection 블레이드를 변경한 경우 **Save**(저장)를 클릭하여 변경 내용을 저장하거나 **Discard**(취소)를 클릭하여 마지막으로 저장된 설정으로 되돌립니다.
 

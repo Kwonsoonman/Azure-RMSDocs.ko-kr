@@ -4,7 +4,7 @@ description: "최종 사용자 Office 응용 프로그램(예: Word 및 Outlook)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ede24547a01bc38e528ce02dac9abe0ade396c2d
-ms.sourcegitcommit: 6636defa6eca24360f15fb9ef93c2b82dc36cf76
+ms.openlocfilehash: eb40f6d2b43f175af71fd58b3bef4eb3d992152b
+ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 응용 프로그램 및 서비스에서 Azure Rights Management를 지원하는 방법 
 
@@ -50,7 +50,7 @@ Exchange Online 또는 Exchange Server를 사용할 때 Azure Rights Management�
 
 -   **DLP(데이터 손실 방지) 정책** - 메일 메시지를 필터링하고 기밀 또는 중요한 데이터에 대해 데이터 손실을 방지하기 위한 작업을 수행하는 조건 집합을 포함하는 정책입니다. 기밀 또는 중요한 콘텐츠의 예로 개인 정보 또는 신용 카드 정보가 있습니다. 중요한 데이터가 검색되면 정책 팁을 사용하여 보호를 적용해야 할 수 있다는 알림을 사용자에게 표시할 수 있습니다. 자세한 내용은 Exchange 라이브러리에서 [데이터 손실 방지](https://technet.microsoft.com/library/jj150527(v=exchg.160\).aspx)를 참조하세요.
 
--   **Office 365 메시지 암호화** - 전송 규칙을 사용하여 회사 외부 사용자에게 암호화된 메일을 보냅니다. 이러한 메일은 웹의 Outlook과 비슷한 인터페이스가 포함된 브라우저에서 읽을 수 있습니다. 회사의 암호화된 메일에서 고지 사항 텍스트와 헤더 텍스트를 사용자 지정할 수 있으며 회사 로고도 추가할 수 있습니다. 자세한 내용은 Office 웹사이트에서 [Office 365 메시지 암호화](https://office.microsoft.com/o365-message-encryption-FX104179182.aspx)를 참조하세요.
+-   보호된 전자 메일 메시지와 보호된 Office 문서를 모든 장치의 모든 주소에 첨부 파일로 보내도록 지원하는 **Office 365 메시지 암호화**. Azure AD를 사용하지 않는 사용자 계정의 경우 웹 환경에서 소셜 ID 공급자 또는 일회성 암호를 지원합니다. 자세한 내용은 Office 웹 사이트에서 [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)을 참조하세요.
 
 Exchange 온-프레미스를 사용하면 Azure Rights Management 커넥터를 배포하여 Azure Rights Management 서비스와 IRM 기능을 사용할 수 있습니다. 이 커넥터는 온-프레미스 서버와 Azure Rights Management 서비스 사이에서 릴레이 역할을 합니다.
 

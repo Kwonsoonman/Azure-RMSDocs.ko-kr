@@ -4,7 +4,7 @@ description: "Azure Information Protection 클라이언트를 설치해야 하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/30/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8fd80d6ff97118cd37dd62e293768b145c98595
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 8ed2480892d5a48075d986ee64733b0144bbc5b4
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일 보기 및 사용
 
@@ -50,13 +50,11 @@ ms.lasthandoff: 07/18/2017
 
 보호된 파일을 볼 수 있으려면 파일을 보호하는 데 사용한 Rights Management 서비스가 사용자에게 파일을 볼 수 있는 권한이 있는지 확인해야 합니다. 서비스는 이 작업을 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
 
-조직이 Office 365 또는 Azure용으로 사용하도록 클라우드 기반 계정을 제공하지 않으며 해당 온-프레미스 버전(AD RMS)를 사용하지 않으면 Rights Management를 사용하여 보호되는 파일을 열 수 있도록 자격 증명을 허용하는 무료 계정을 신청할 수 있습니다.
+조직에 사용할 수 있는 클라우드 기반 계정이 없고(Office 365 또는 Azure) 해당 온-프레미스 버전(AD RMS)을 사용하지 않는 경우, 두 가지 옵션이 있습니다.
 
--   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
-    
-    등록하면 개인 메일 주소보다 회사 메일 주소를 사용합니다. 보호된 첨부 파일을 메일로 전송받았기 때문에 등록한 경우 메일 메시지를 보내는 데 사용된 동일한 메일 주소를 사용합니다.
-    
--   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../understand-explore/rms-for-individuals.md)를 참조하세요.
+- 보호된 전자 메일이 전송된 경우 지침에 따라 소셜 ID 공급자(예: Gmail 계정용 Google)에 로그인하거나 일회성 암호를 신청하십시오.
+
+- Rights Management에 의해 보호되는 문서를 열 수 있도록 자격 증명을 수락할 무료 계정을 신청할 수 있습니다. 이 계정을 신청하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 신청하고 개인 이메일 주소 대신 회사 이메일 주소를 사용하십시오. 
 
 ## <a name="to-view-and-use-a-protected-document"></a>보호된 문서를 보고 사용하려면
 
@@ -64,7 +62,7 @@ ms.lasthandoff: 07/18/2017
 
 2. **로그인** 또는 **등록** 페이지가 표시되면 **로그인**을 클릭하고 자격 증명을 입력합니다. 보호된 파일이 첨부 파일로 전송된 경우에는 파일을 전송하는 데 사용된 것과 같은 전자 메일 주소를 지정해야 합니다.
     
-    허용되는 계정이 없는 경우 이 페이지에서 [인증 프롬프트](#prompts-for-authentication) 섹션을 참조하세요. 무료 계정을 등록하고 이 지침을 다시 수행하세요.
+    허용되는 계정이 없는 경우 이 페이지에서 [인증 프롬프트](#prompts-for-authentication) 섹션을 참조하세요.
 
 3. 읽기 전용 버전의 파일이 **Azure Information Protection 뷰어**에서 열립니다. 권한이 있으면 파일을 인쇄하고 편집할 수 있습니다. 
 
@@ -77,8 +75,7 @@ ms.lasthandoff: 07/18/2017
 5. 보호된 파일을 추가로 열려는 경우 **열기** 옵션을 사용하여 뷰어에서 해당 파일을 직접 찾아볼 수 있습니다. 그러면 뷰어에서 원본 파일 대신 선택한 파일이 표시됩니다. 
 
 > [!TIP]
-> 보호된 파일이 열리지 않으면 Azure Information Protection의 **도움말 및 피드백** 옵션을 사용하고 **진단 실행**을 선택합니다. 테스트가 완료된 후 클라이언트를 다시 설정하여 문제를 해결할 수 있습니다.
-
+> 보호된 파일이 열리지 않으면 Azure Information Protection 클라이언트의 **보호** > **도움말 및 피드백**에서 **진단 실행**을 실행하여 컴퓨터에서 보호된 문서가 열리지 않도록 하는 문제를 확인할 수 있습니다.
 
 ## <a name="other-instructions"></a>기타 지침
 Azure Information Protection 사용자 가이드의 사용 방법 지침:

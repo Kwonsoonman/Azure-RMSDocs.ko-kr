@@ -4,7 +4,7 @@ description: "Azure Information Protection용 테넌트 키를 직접 관리하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 09/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3220b1cbe93b110c838a4e85cc143b44de0d2d14
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 2f3ae7a0558cf209f3ec710a5114dbbc9a0dda9d
+ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/23/2017
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>고객 관리: 테넌트 키 수명 주기 작업
 
@@ -38,22 +38,28 @@ Azure Information Protection에 대해 키를 다시 생성해야 하는 경우�
 
 - 회사가 둘 이상으로 분할된 경우. 테넌트 키를 다시 입력하면 새 회사에서는 직원이 게시하는 새 콘텐츠에 액세스할 수 없습니다. 이전 테넌트 키의 복사본이 있으면 이전 콘텐츠에는 액세스할 수 있습니다.
 
+- 하나의 키 관리 토폴로지에서 다른 키 관리 토폴로지로 이동하려고 합니다. 
+
 - 테넌트 키의 마스터 복사본(현재 소유 중인 복사본)이 노출되었다고 판단되는 경우.
 
-키를 다시 생성하려면 Azure Key Vault에 새 키를 생성하거나 Azure Key Vault에 이미 있는 다른 키를 사용하면 됩니다. 그런 다음 Azure Information Protection에 대해 BYOK를 구현하기 위해 수행했던 것과 동일한 절차를 수행합니다.
+관리하는 다른 키로 키를 다시 생성하려면 Azure Key Vault에 새 키를 생성하거나 Azure Key Vault에 이미 있는 다른 키를 사용하면 됩니다. 그런 다음 Azure Information Protection에 대해 BYOK를 구현하기 위해 수행했던 것과 동일한 절차를 수행합니다.
 
 1. Azure Information Protection에 대해 이미 사용하고 있는 것과 다른 Key Vault에 새 키가 있는 경우에만 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet을 사용하여 Key Vault를 사용하도록 Azure Information Protection을 승인합니다.
 
-2. [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) cmdlet을 사용하여 새 키를 사용하도록 Azure Information Protection을 구성합니다.
+2. 사용하려는 키를 Azure Information Protection이 아직 모르는 경우 [Use-AadrmKeyVaultKey](/powershell/module/aadrm/use-aadrmkeyvaultkey) cmdlet을 실행합니다.
 
 3. [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet 실행을 통해 테넌트 키 개체를 구성합니다.
 
-이러한 각 단계에 대한 자세한 내용은 [Azure Information Protection 테넌트 키 구현](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key)을 참조하세요.
+각 단계에 대한 자세한 내용은 다음을 참조하세요.
+
+- 관리하는 다른 키로 키를 다시 생성하려면 [Azure Information Protection 테넌트 키에 BYOK 구현](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)을 참조하십시오.
+
+- Microsoft에서 관리하는 키로 변경하여 키를 다시 생성하려면, Microsoft 관리 작업에 대한 [테넌트 키 다시 생성](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) 섹션을 참조하세요.
 
 ## <a name="backup-and-recover-your-tenant-key"></a>테넌트 키 백업/복구
 테넌트 키를 직접 백업해야 합니다. Thales HSM에서 생성한 테넌트 키를 백업하려면 토큰화된 키 파일, World 파일 및 관리자 카드만 백업하면 됩니다.
 
-[BYOK(Bring Your Own Key) 구현](../plan-design/plan-implement-tenant-key.md#implementing-your-azure-information-protection-tenant-key)의 절차에 따라 키를 전송했기 때문에 Key Vault에서는 서비스 노드의 오류로부터 보호하기 위해 토큰화된 키 파일을 보존합니다. 이 파일은 특정 Azure 지역 또는 인스턴스에 대해 보안 권역에 바인딩되어 있습니다. 그러나 이러한 보존이 전체 백업은 아닙니다. 예를 들어 Thales HSM 외부에서 사용할 키의 일반 텍스트 복사본이 필요한 경우 Azure Key Vault는 복구 불가능한 복사본만 보존하므로 해당 복사본을 검색할 수 없습니다.
+[Azure Information Protection 테넌트 키에 BYOK 구현](../plan-design/plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)의 절차에 따라 키를 전송했기 때문에 Key Vault에서는 서비스 노드의 오류로부터 보호하기 위해 토큰화된 키 파일을 보존합니다. 이 파일은 특정 Azure 지역 또는 인스턴스에 대해 보안 권역에 바인딩되어 있습니다. 그러나 이러한 보존이 전체 백업은 아닙니다. 예를 들어 Thales HSM 외부에서 사용할 키의 일반 텍스트 복사본이 필요한 경우 Azure Key Vault는 복구 불가능한 복사본만 보존하므로 해당 복사본을 검색할 수 없습니다.
 
 ## <a name="export-your-tenant-key"></a>테넌트 키 내보내기
 BYOK 사용 시에는 Azure Key Vault 또는 Azure Information Protection에서 테넌트 키를 내보낼 수 없습니다. Azure 주요 자격 증명 모음의 복사본은 복구할 수 없습니다. 

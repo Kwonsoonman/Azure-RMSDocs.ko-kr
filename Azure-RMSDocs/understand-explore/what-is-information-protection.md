@@ -4,17 +4,17 @@ description: "Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: ba39c332437e2710554d1e8f69c3f676f0d870db
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 1564f6dc0a21017151254b1ae1fab1586761e766
+ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -92,11 +92,18 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 - Yammer: [Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
 
-- 비디오: "Information Protection에 대한 상위 5개 팁"
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GWcnZFMPcnE" frameborder="0" allowfullscreen></iframe>
+또한 **Microsoft Ignite 2017**에는 주문형으로 제공되는 Azure Information Protection에 대한 여러 세션이 있습니다. 이 회의에서 다룬 공지 사항 요약은 [What’s new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)(Ignite 2017에서 다룬 Azure Information Protection의 새로운 기능)을 참조하세요. 
 
-또한 **Microsoft Ignite 2017**에는 주문형으로 제공될 Azure Information Protection에 대한 여러 세션이 있습니다. 이러한 세션이 제공되면 Ignite 웹 사이트에서 [검색하고 찾을 수](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522) 있습니다. 공지 사항 요약은 [Azure Information Protection @ Ignite 2017의 새로운 기능](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)을 참조하세요.
+Ignite 웹 사이트에서 Azure Information Protection에 대한 태그가 지정된 세션을 [검색](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)할 수 있습니다. 그러나 다음 세션으로 시작하는 것이 좋습니다.
+
+- [Protecting complete data lifecycle using Microsoft information protection capabilities](https://myignite.microsoft.com/videos/55397)(Microsoft Information Protection 기능을 사용하여 전체 데이터 수명 주기 보호)
+
+- [Accelerate Azure information protection deployment and adoption](https://myignite.microsoft.com/videos/53454)(Azure Information Protection 배포 및 채택 가속화)
+
+- [Discover what’s new in Azure Information Protection and learn about the roadmap and strategy](https://myignite.microsoft.com/videos/53453)(Azure Information Protection의 새로운 기능과 로드맵 및 전략에 대해 알아보기)
+
+- [Protect and control your sensitive emails with new Office 365 Message Encryption capabilities](https://myignite.microsoft.com/videos/53230)(새 Office 365 메시지 암호화 기능을 사용하여 중요한 메일 보호 및 관리)
 
 
 ## <a name="next-steps"></a>다음 단계

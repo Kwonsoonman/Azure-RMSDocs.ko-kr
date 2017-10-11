@@ -4,7 +4,7 @@ description: "관리자가 Azure Information Protection의 Azure Rights Manageme
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 09/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 53d93a36d4b18c93f54349633046e5fc242e7c2b
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 5d652f938ac7a9008e36ee75b52f2b4b7b6612d1
+ms.sourcegitcommit: 9ed2c454a7aaf965ff1cceda0447928111001488
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: 클라이언트와 온라인 서비스가 Azure Rights Management 서비스를 사용하도록 구성
 
@@ -31,7 +31,7 @@ Exchange Online IRM이 Azure Rights Management 서비스와 함께 작동하는 
 
 Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성하려면 [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)을 참조하세요.
 
-이전에 TPD(트러스트된 게시 도메인)를 가져와서 Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성한 경우 동일한 지침 집합을 사용하여 Exchange Online의 새로운 기능을 사용하도록 설정하십시오.
+이전에 Azure Rights Management 서비스에서 TPD(트러스트된 게시 도메인)를 가져와서 IRM용 Exchange Online을 구성한 경우 동일한 지침 집합을 사용하여 Exchange Online의 새로운 기능을 사용하도록 설정하세요.
 
 Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성한 후에는 [전송 규칙](https://technet.microsoft.com/library/dd302432.aspx), [DLP(데이터 손실 방지) 정책](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) 및 [보호된 음성 메일](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)(통합 메시징)과 같이 정보 보호를 자동으로 적용하는 기능을 구성할 수 있습니다.
 

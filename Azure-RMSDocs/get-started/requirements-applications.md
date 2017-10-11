@@ -4,7 +4,7 @@ description: "RMS API를 사용하여 Azure Information Protection의 Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 09/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5371ad1a5fb89176e47406b6c051efd1fa33b37
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: ba8dbc42771a590e18ede4e45782741b12ef897e
+ms.sourcegitcommit: 2bca892231ca8393b88bd5da7d0890a573770a09
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
 
@@ -48,7 +48,7 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 |**iOS**|Office Mobile(보호된 문서 보기 및 편집)<br /><br />Office Online [[1]](#footnote-1)<br /><br />GigaTrust<br /><br /> TITUS Docs<br /><br />웹 브라우저 [[2]](#footnote-2)|Azure Information Protection 앱(보호된 문서 보기)<br /><br /> Foxit Reader<br /><br />TITUS Docs|Azure Information Protection 앱(보호된 전자 메일 보기)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 및 iPhone용 Outlook [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />웹 브라우저 [[3]](#footnote-3)|Azure Information Protection 앱(텍스트 및 이미지 보호 보기)<br /><br />TITUS Docs: Pfile|
 |**Android**|GigaTrust App for Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile(보호된 문서 보기) <br /><br />웹 브라우저 [[2]](#footnote-2)|Azure Information Protection 앱(보호된 문서 보기) <br /><br />GigaTrust App for Android<br /><br />Foxit Reader|9Folders [[4]](#footnote-4)<br /><br />Azure Information Protection 앱(보호된 전자 메일 보기)<br /><br />GigaTrust App for Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Android용 Outlook [[4]](#footnote-4)<br /><br />Samsung Email(S3 이상) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />웹 브라우저 [[3]](#footnote-3)|Azure Information Protection 앱(보호된 텍스트 및 이미지 보기)|
 |**macOS**|Office 2011(AD RMS만 해당)<br /><br />Mac용 Office 2016<br /><br />Office Online [[1]](#footnote-1)<br /><br />웹 브라우저 [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 공유 앱(보호된 문서 보기)|Outlook 2011(AD RMS만 해당)<br /><br />Mac용 Outlook 2016<br /><br />Outlook for Mac <br /><br />웹 브라우저 [[3]](#footnote-3)|RMS 공유 앱(보호된 텍스트, 이미지, 일반적으로 보호된 파일 보기)|
-|**Windows 10 Mobile**|Office Mobile 앱(Azure RMS를 사용하여 보호된 문서화 보기) <br /><br />웹 브라우저 [[2]](#footnote-2)|지원되지 않음|Citrix WorxMail <br /><br />Outlook 메일 <br /><br />웹 브라우저 [[3]](#footnote-3)|지원되지 않음|
+|**Windows 10 Mobile**|Office Mobile 앱(Azure RMS를 사용하여 보호된 문서 보기) <br /><br />웹 브라우저 [[2]](#footnote-2)|지원되지 않음|Citrix WorxMail <br /><br />Outlook 메일(보호된 메일 보기) <br /><br />웹 브라우저 [[3]](#footnote-3)|지원되지 않음|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />웹 브라우저 [[2]](#footnote-2)|지원되지 않음|Outlook 2013 RT<br /><br />Windows용 메일 앱<br /><br />웹 브라우저 [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go: JT 파일|
 |**Windows Phone 8.1**|Office Mobile(AD RMS만 해당)<br /><br />웹 브라우저 [[2]](#footnote-2)|RMS 공유 앱(보호된 문서 보기)|Outlook Mobile [[4]](#footnote-4) <br /><br />웹 브라우저 [[3]](#footnote-3)|RMS 공유 앱(보호된 텍스트, 이미지, 일반적으로 보호된 파일 보기)|
 |**Blackberry 10**|웹 브라우저 [[2]](#footnote-2)|지원되지 않음|Blackberry 메일 [[4]](#footnote-4) <br /><br />웹 브라우저 [[3]](#footnote-3)|지원되지 않음|

@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6651c812c207494bc98d5a1b22e359910a94c3cc
-ms.sourcegitcommit: 7d07b82da9aca52fe9e38fa1bada144226168a6b
+ms.openlocfilehash: 910d131ece4bae0cf5ef2685291431a3dc319264
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -181,12 +181,9 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 [**3단계: 클라이언트 쪽 구성**](migrate-from-ad-rms-phase3.md)
 
-- **7단계: Azure Information Protection을 사용하도록 클라이언트 다시 구성**
+- **7단계: Azure Information Protection을 사용하도록 Windows 컴퓨터 다시 구성**
 
     AD RMS 대신 Azure Rights Management 서비스를 사용하도록 기존 Windows 컴퓨터를 다시 구성해야 합니다. 이 단계는 조직의 컴퓨터, 그리고 AD RMS를 실행하는 동안 공동으로 작업한 경우 파트너 조직의 컴퓨터에 적용됩니다.
-
-    또한 iOS 휴대폰 및 iPad, Android 휴대폰 및 태블릿, Windows 휴대폰 및 Mac 컴퓨터와 같은 모바일 장치를 지원하기 위해 [모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포한 경우, AD RMS를 사용하도록 이러한 클라이언트를 리디렉션한 DNS의 SRV 레코드를 제거해야 합니다.
-
 
 [**4단계: 지원 서비스 구성**](migrate-from-ad-rms-phase4.md)
 
@@ -203,10 +200,12 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - **10단계: AD RMS 프로비전 해제**
 
-    모든 클라이언트에서 Azure Rights Management 서비스를 사용하고 있으며 더 이상 AD RMS 서버에 액세스하지 않음을 확인했으면 AD RMS 배포 프로비전을 해제할 수 있습니다.
+    모든 Windows 컴퓨터에서 Azure Rights Management 서비스를 사용하고 있으며 더 이상 AD RMS 서버에 액세스하지 않음을 확인했으면 AD RMS 배포 프로비전을 해제할 수 있습니다.
 
-- **11단계: 온보딩 컨트롤 제거**
+- **11단계: 모바일 장치 클라이언트 및 Mac 컴퓨터를 다시 구성 및 온보딩 컨트롤 제거**
 
+    iOS 휴대폰 및 iPad, Android 휴대폰 및 태블릿, Windows 휴대폰 및 Mac 컴퓨터와 같은 모바일 장치를 지원하기 위해 [모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포한 경우, AD RMS를 사용하도록 이러한 클라이언트를 리디렉션한 DNS의 SRV 레코드를 제거해야 합니다. 
+    
     준비 단계 중에 구성한 온보딩 컨트롤이 더 이상 필요하지 않습니다.
 
 - **12단계: Azure Information Protection 테넌트 키 다시 입력**

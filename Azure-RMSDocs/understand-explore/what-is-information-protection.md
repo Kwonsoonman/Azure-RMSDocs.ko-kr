@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 1564f6dc0a21017151254b1ae1fab1586761e766
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 1cbbad16590bde0fa6278764fe9351b1a4e0b996
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -88,6 +88,8 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 - 클라이언트 다운로드: [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
 
+- 사용자 지정 가능한 사용자 가이드 다운로드: [Azure Information Protection 최종 사용자 채택 가이드](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+
 - FAQ: [Azure Information Protection 질문과 대답](../get-started/faqs.md)
 
 - Yammer: [Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
@@ -102,6 +104,8 @@ Ignite 웹 사이트에서 Azure Information Protection에 대한 태그가 지�
 - [Accelerate Azure information protection deployment and adoption](https://myignite.microsoft.com/videos/53454)(Azure Information Protection 배포 및 채택 가속화)
 
 - [Discover what’s new in Azure Information Protection and learn about the roadmap and strategy](https://myignite.microsoft.com/videos/53453)(Azure Information Protection의 새로운 기능과 로드맵 및 전략에 대해 알아보기)
+
+- [규정 준수에 대한 암호화 키 관리 전략](https://myignite.microsoft.com/videos/53455)
 
 - [Protect and control your sensitive emails with new Office 365 Message Encryption capabilities](https://myignite.microsoft.com/videos/53230)(새 Office 365 메시지 암호화 기능을 사용하여 중요한 메일 보호 및 관리)
 

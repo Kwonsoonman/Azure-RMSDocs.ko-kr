@@ -4,7 +4,7 @@ description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5a3d13861e3eff0cfaf4a92eb005b8192f2b447c
-ms.sourcegitcommit: 4d730631ea8c16c7150b794722bb23921f1b2008
+ms.openlocfilehash: 0bd9bbdc6b29e8cd9497712dddb7205f3d8372b1
+ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -34,7 +34,7 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 
 ## <a name="file-types-supported-for-classification-only"></a>분류만 지원되는 파일 형식
 
-다음 파일 형식의 경우 분류만 지원됩니다. 추가 파일 형식은 보호되는 경우에도 분류를 지원합니다([분류 및 보호가 지원되는 파일 형식](#supported-file-types-for-classification-and-protection) 섹션 참조).
+다음 파일 형식은 보호되지 않는 경우에도 분류할 수 있습니다.
 
 - **Adobe Portable Document Format**: .pdf
 
@@ -45,15 +45,22 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 - **Microsoft Publisher**: .pub
 
 - **Microsoft Office 97, Office 2010, Office 2003**: .xls, .xlt, .doc, .dot, .ppt, .pps, .pot
+
 - **Microsoft XPS**: .xps .oxps
 
-- **이미지**: .jpg, .jpe, .jpeg, .jif, .jfif, .jfi.png, .tif, .tiff
+- **이미지**: jpg, .jpe, .jpeg, .jif, .jfif, .jfi, .png, .tif, .tiff
 
 - **Autodesk Design Review 2013**: .dwfx
 
 - **Adobe Photoshop**: .psd
 
 - **디지털 네거티브**: .dng
+
+추가 파일 형식은 보호도 수행해야 분류가 지원됩니다. 이러한 파일 형식은 [분류 및 보호가 지원되는 파일 형식](#supported-file-types-for-classification-and-protection) 섹션을 참조하세요.
+
+예를 들어 현재 [기본 정책](../deploy-use/configure-policy-default.md)에서 **일반** 레이블은 분류를 적용하고 보호를 적용하지 않습니다. **일반** 레이블을 sales.pdf라는 파일에 적용할 수는 있지만 이 레이블을 sales.txt라는 파일에는 적용할 수 없습니다. 
+
+또한 현재 기본 정책에서는 **Confidential \ All Employees**가 분류 및 보호를 적용합니다. 이 레이블은 sales.pdf 및 sales.txt라는 파일에 적용할 수 있습니다. 또한 분류하지 않고 이러한 파일에 보호만 적용할 수 있습니다.
 
 ## <a name="file-types-supported-for-protection"></a>보호가 지원되는 파일 형식
 
@@ -108,13 +115,15 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
 |.jfif|.pjfif|
 |.jt|.pjt|
 
+
 다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 나머지 파일 형식이 나와 있습니다. 이러한 형식은 Microsoft Office 앱용 파일 형식으로 인식할 수 있습니다. 
 
 이러한 파일의 경우에는 Rights Management 서비스를 통해 파일을 보호한 후에도 파일 이름 확장명이 동일하게 유지됩니다.
 
 |Office에서 지원하는 파일 형식|Office에서 지원하는 파일 형식|
 |----------------------------------|----------------------------------|
-|.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm|.pptx<br /><br />.thmx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
+|.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm<br /><br />.pptx<br /><br />.pptx<br /><br />.thmx|.vsdm<br /><br />.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
+
 
 ### <a name="changing-the-default-protection-level-of-files"></a>파일의 기본 보호 수준 변경
 레지스트리를 편집하여 Azure Information Protection 클라이언트가 파일을 보호하는 방식을 변경할 수 있습니다. 예를 들어 기본 보호를 지원하는 파일을 Azure Information Protection 클라이언트에서 일반적으로 보호하도록 강제 지정할 수 있습니다.
@@ -181,13 +190,13 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 암호로 보호되어 있는 모든 파일은 Azure Information Protection 클라이언트를 통해 기본적으로 보호할 수 없습니다. 암호로 보호된 PDF 파일을 가장 많이 보지만, Office 앱과 같은 다른 응용 프로그램도 이 기능을 제공합니다.
 
-또한 Windows용 Azure Information Protection 클라이언트는 다음과 같은 상황에서 기본적으로 PDF 파일을 보호(또는 보호 해제)할 수 없습니다.
+또한 Windows용 Azure Information Protection 클라이언트는 다음과 같은 상황에서 다음 파일을 볼 수는 있지만 기본적으로 PDF 파일을 보호(또는 보호 해제)할 수 없습니다.
 
 - 양식 기반인 PDF 파일.
 
 - 파일 이름 확장명이 .pdf인 보호되는 PDF 파일. 
     
-    Azure Information Protection 클라이언트는 보호 해제된 PDF 파일을 보호하고, 파일 이름 확장명이 .ppdf인 보호된 PDF 파일을 다시 보호할 수 있습니다.
+    Azure Information Protection 클라이언트는 보호 해제된 PDF 파일을 보호하고, 파일 이름 확장명이 .ppdf인 보호된 PDF 파일을 보호 해제하고 다시 보호할 수 있습니다.
 
 이러한 파일에 대한 해결 방법으로, [파일의 기본 보호 수준 변경](#changing-the-default-protection-level-of-files) 섹션의 지침에 따라 해당 파일을 일반적으로 보호할 수 있습니다. 그러나 이 방법은 컴퓨터 수준에서 파일 이름 확장명이 .pdf인 모든 파일에 대한 보호 수준을 변경합니다. 나열된 조건을 충족하는 파일에 대해서만 일반 보호를 정의할 수 없습니다.
 

@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/27/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a1f448a51ee4bfecfd0d680b842eed44aa816ed1
-ms.sourcegitcommit: e4199d243d9f6c80efccc0f0d5574d069d69f46d
+ms.openlocfilehash: 198698bbef8fbb778545c2599798afd1255a01bc
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-1---preparation"></a>마이그레이션 1단계 - 준비
 
@@ -70,13 +70,13 @@ Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights
 
     그런 다음 온보딩 컨트롤에 대해 이 그룹을 구성하여 그룹 개체 ID를 이 예제의 그룹 개체 ID로 대체하고 메시지가 표시되면 **Y**를 입력하여 확인합니다.
 
-        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501"
+        Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False -SecurityGroupObjectId "fba99fed-32a0-44e0-b032-37b419009501" -Scope WindowsApp
 
 3. 클라이언트 마이그레이션 스크립트가 포함된 [다음 파일을 다운로드](https://go.microsoft.com/fwlink/?LinkId=524619)합니다.
     
-    **ClientMigration.zip**
+    **Migration-Scripts.zip**
     
-4. 파일 압축을 풀고 **PrepareClient.cmd**의 지침에 따라 AD RMS 클러스터 엑스트라넷 라이선스 URL에 대한 서버 이름이 포함되도록 합니다. 
+4. 파일 압축을 풀고 **Prepare-Client.cmd**의 지침에 따라 AD RMS 클러스터 엑스트라넷 라이선스 URL에 대한 서버 이름이 포함되도록 합니다. 
     
     이 이름을 찾으려면: Active Directory Rights Management Services 콘솔에서 클러스터 이름을 클릭합니다. **클러스터 세부 정보**의 엑스트라넷 클러스터 URL 섹션에서 **라이선스** 값으로부터 서버 이름을 복사합니다. 예: **rmscluster.contoso.com**.
 

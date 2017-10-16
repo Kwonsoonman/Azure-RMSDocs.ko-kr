@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 381eaee2aa33a2a6a715c31616ad92a0f957e8b0
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: 9983b088b5856f8c2223d05624c3bee21b80fd15
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -86,6 +86,18 @@ Rights Management 커넥터에서 정보, 경고 및 오류 메시지를 이벤�
 
 Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Protection의 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
+## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>문서를 보호한 상태에서 이제 사용 권한을 변경하거나 사용자를 추가하려면 문서를 다시 보호해야 합니까?
+
+레이블 또는 템플릿을 사용하여 문서를 보호하는 경우 문서를 다시 보호할 필요는 없습니다. 사용 권한을 변경하거나 새 그룹(또는 사용자)을 추가하여 레이블 또는 템플릿을 수정한 다음, 이러한 변경 내용을 저장하고 게시합니다.
+
+- 사용자가 변경하기 전에 문서에 액세스하지 않은 경우 변경 내용은 사용자가 문서를 여는 즉시 적용됩니다. 
+
+- 사용자가 이미 문서에 액세스한 경우에는 해당 [사용 라이선스](../deploy-use/configure-usage-rights.md#rights-management-use-license) 기간이 만료된 후에 변경 내용이 적용됩니다. 사용 라이선스가 만료될 때까지 기다릴 수 없는 경우에만 문서를 다시 보호합니다. 효과적으로 다시 보호하는 방법은 문서의 새 버전, 그에 따른 사용자에 대한 새 사용 라이선스를 만드는 것입니다.
+
+또는 필요한 사용 권한에 대한 그룹을 이미 구성했다면 사용자를 포함하거나 제외하도록 그룹 구성원을 변경할 수 있으며, 레이블 또는 템플릿을 변경할 필요는 없습니다. 그룹 구성원은 Azure Rights Management 서비스에 의해 [캐시](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)되므로 변경 내용이 적용되기 전에 약간 지연이 있을 수 있습니다.
+
+사용자 지정 권한을 사용하여 문서를 보호한 경우 기존 문서에 대한 권한을 변경할 수 없습니다. 문서를 다시 보호하고 문서의 이 새 버전이 필요한 모든 사용자 및 모든 사용 권한을 지정해야 합니다. 보호된 문서를 다시 보호하려면 모든 권한 사용 권한이 있어야 합니다. 
+
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Exchange Online의 사용자와 Exchange Server 서버의 다른 사용자로 구성된 Exchange의 하이브리드 배포입니다. Azure RMS에서 지원되나요?
 물론입니다. 사용자가 두 Exchange 배포에서 보호되는 메일과 첨부 파일을 원활하게 보호하고 소비할 수 있습니다. 이 구성을 사용하려면 [Azure RMS를 활성화](../deploy-use/activate-service.md)하고 [Exchange Online에 IRM을 사용하도록 설정](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)한 다음 Exchange Server용 [RMS 커넥터를 배포 및 구성](../deploy-use/deploy-rms-connector.md)합니다.
 
@@ -116,9 +128,7 @@ Azure AD에 계정이 없는 사용자에게 보내는 Office 문서 첨부 파�
 
 외부 사용자를 쉽게 추가할 수 있도록 사용자 지정 템플릿을 레이블로 변환하는 방법에 대한 자세한 내용은 [Azure Information Protection 정책의 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
-사용자 지정 템플릿을 레이블로 변환하는 방법에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
-
-## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Azure RMS에서 사용할 수있는 그룹 유형은 무엇입니까?
+## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Azure RMS에서 사용할 수 있는 그룹 유형은 무엇입니까?
 대부분의 시나리오에서 전자 메일 주소가 있는 Azure AD의 그룹 유형을 사용할 수 있습니다. 이 방법은 사용 권한을 할당할 때 항상 적용되지만 Azure Rights Management 서비스를 관리하기 위한 몇 가지 예외가 있습니다. 자세한 내용은 [그룹 계정에 대한 Azure Information Protection 요구 사항](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts)을 참조하세요.
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>보호된 메일을 Gmail 또는 Hotmail 계정으로 보내려면 어떻게 해야 하나요?
@@ -129,7 +139,7 @@ Exchange Online과 Azure Rights Management 서비스를 사용할 때는 전자 
 
 이 시나리오를 지원하려면 Azure Rights Management 서비스 및 Office 365 메시지 암호화의 새로운 기능에서 Exchange Online을 사용할 수 있어야 합니다. 이 구성에 대한 자세한 내용은 [Exchange Online: IRM 구성](../deploy-use/configure-office365.md#exchange-online-irm-configuration)을 참조하세요.
 
-모든 장치에서 모든 전자 메일 계정을 지원하는 새로운 기능에 대한 자세한 내용은 블로그 게시물 [Office 365 메시지 암호화에서 사용할 수 있는 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 참조하세요.
+모든 장치에서 모든 전자 메일 계정 지원을 포함하는 새로운 기능에 대한 자세한 내용은 블로그 게시물 [Office 365 메시지 암호화에서 사용할 수 있는 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 참조하세요.
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS에서는 어떤 장치 및 파일 형식을 지원하나요?
 Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](../get-started/requirements-client-devices.md)를 참조하세요. 현재는 지원 장치 중 일부만 모든 Rights Management 기능을 지원하기 때문에 [RMS 기반 응용 프로그램](../get-started/requirements-applications.md#rms-enlightened-applications) 표도 확인해야 합니다.
@@ -171,22 +181,20 @@ SharePoint 사이트 관리자가 자신이 소유한 SharePoint 라이브러리
 
 많은 배포를 감독하고 고객, 파트너, 컨설턴트와 지원 엔지니어의 이야기를 들어본 결과, 경험을 바탕으로 전달할 수 있는 가장 중요한 팁 중 하나는 **단순한 정책을 디자인 및 배포**하라는 것입니다.
 
-Azure Information Protection는 모든 사용자와 안전하게 공유할 수 있도록 하므로 데이터 보호 범위에 욕심을 부려도 좋습니다. 하지만 권한 사용 제한을 구성할 때는 신중해야합니다. 많은 조직에서 비즈니스에 대한 영향력이 가장 큰 것은 조직의 사람들에 대한 액세스를 제한하여 데이터 누출을 방지하는 것입니다. 물론, 사용자의 인쇄나 편집 등을 방지해야 하는 경우 훨씬 더 세분화할 수도 있습니다.  그러나 더 세분화된 제한은 정말로 높은 수준의 보안이 필요한 문서에 대한 예외로 유지하고, 처음부터 이러한 더 제한적인 사용 권한을 구현하지는 말고 보다 단계적으로 접근하도록 계획하십시오.
+Azure Information Protection는 모든 사용자와 안전하게 공유할 수 있도록 하므로 데이터 보호 범위에 욕심을 부려도 좋습니다. 하지만 권한 사용 제한을 구성할 때는 신중해야 합니다. 많은 조직에서 비즈니스에 대한 영향력이 가장 큰 것은 조직의 사람들에 대한 액세스를 제한하여 데이터 누출을 방지하는 것입니다. 물론, 사용자의 인쇄나 편집 등을 방지해야 하는 경우 훨씬 더 세분화할 수도 있습니다.  그러나 더 세분화된 제한은 정말로 높은 수준의 보안이 필요한 문서에 대한 예외로 유지하고, 처음부터 이러한 더 제한적인 사용 권한을 구현하지는 말고 보다 단계적으로 접근하도록 계획하십시오.
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>이제 조직을 떠난 직원이 보호하던 파일에 대한 액세스는 어떻게 확보하나요?
 [슈퍼 사용자 기능](../deploy-use/configure-super-users.md)을 사용하십시오. 이 기능은 테넌트가 보호하는 모든 문서 및 전자 메일에 대한 권한이 있는 사용자에게 모든 권한 사용권을 부여합니다. 수퍼 사용자는 보호된 콘텐츠를 언제나 읽을 수 있고 필요한 경우 다른 사용자를 위해 보호를 제거하거나 다시 적용할 수 있습니다. 이 기능은 권한이 있는 서비스가 필요에 따라 파일을 인덱스 및 검사할 수 있도록 합니다.
 
 ## <a name="when-i-test-revocation-in-the-document-tracking-site-i-see-a-message-that-says-people-can-still-access-the-document-for-up-to-30-daysis-this-time-period-configurable"></a>문서 추적 사이트에서 해지를 테스트할 때 다른 사용자가 최대 30일 동안 문서에 계속 액세스할 수 있다는 메시지가 표시되는데, 이 기간을 구성할 수 있나요?
 
-예. 이 메시지는 해당 특정 파일에 대한 사용권을 나타냅니다. 사용 라이선스는 보호된 파일 및 메일 메시지를 여는 사용자에게 부여되는 문서별 인증서입니다. 이 인증서에는 문서의 정책에 정의된 추가적인 액세스 제한 사항뿐만 아니라 파일 또는 메일 메시지에 대한 사용자의 권한과 콘텐츠를 암호화하는 데 사용된 암호화 키도 들어 있습니다. 사용권의 유효 기간이 만료되고 사용자가 파일 또는 메일 메시지를 열려면 Azure Rights Management 서비스에 사용자 자격 증명을 다시 제출해야 합니다. 
+예. 이 메시지는 해당 특정 파일에 대한 [사용 라이선스](../deploy-use/configure-usage-rights.md#rights-management-use-license)를 나타냅니다. 
 
 파일을 해지하는 경우 해당 작업은 사용자가 Azure Rights Management 서비스에 인증하는 경우에만 적용될 수 있습니다. 따라서 파일의 사용권 유효 기간이 30일이고 사용자가 이미 문서를 연 경우 해당 사용자는 사용권 기간 동안 문서에 계속 액세스할 수 있습니다. 사용권이 만료되는 경우 사용자는 문서가 해지되어 액세스가 거부되는 시점에 다시 인증해야 합니다.
 
 문서를 보호한 사용자인 [Rights Management 발급자](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)는 이 해지에서 제외되며 문서에 항상 액세스할 수 있습니다. 
 
-테넌트에 대한 사용권 유효 기간의 기본값은 30일이며 PowerShell cmdlet **Set-AadrmMaxUseLicenseValidityTime**을 사용하여 이 값을 구성할 수 있습니다. 이 설정은 템플릿의 더 제한적인 설정으로 재정의할 수 있습니다. 
-
-자세한 내용 및 사용권 사용 방법의 예는 [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime)에 대한 자세한 설명을 참조하세요.
+테넌트에 대한 사용 라이선스 유효 기간에 대한 기본값은 30일이며, 이 설정은 레이블 또는 템플릿의 더 제한적인 설정에 따라 재정의할 수 있습니다. 사용 라이선스 및 구성하는 방법에 대한 자세한 내용은 [Rights Management 사용 라이선스](../deploy-use/configure-usage-rights.md#rights-management-use-license) 설명서를 참조하세요.
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Rights Management 기능을 사용하면 화면을 캡처할 수 없나요?
 Rights Management는 **복사** [사용 권한](../deploy-use/configure-usage-rights.md)을 부여하지 않음으로써 화면 캡처가 Windows 플랫폼(Windows 7, Windows 8.1, Windows 10, Windows Phone) 및 Android에서 일반적으로 사용되는 화면 캡처 도구가 되지 않도록 할 수 있습니다. 그러나 iOS 및 Mac 장치에서 화면 캡처를 보호하도록 모든 앱을 허용하지 않으므로 브라우저(예: Outlook Web App 및 Office Online과 함께 사용하는 경우)에서도 화면 캡처를 막을 수 없습니다.

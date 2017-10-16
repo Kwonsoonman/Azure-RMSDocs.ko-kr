@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dd576541ab7cb6f1f1132d2a826a5b602ab71328
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 54116659e37c22dbc20221d335e2e55443dff899
+ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -54,6 +54,13 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](../deploy-use/deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
 
 Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure Rights Management에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](../understand-explore/how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
+
+## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure Information Protection의 레이블과 Office 365의 레이블 간 차이는 무엇인가요?
+
+Azure Information Protection의 레이블을 사용하면 문서와 전자 메일이 온-프레미스에 있든 클라우드에 있든 상관 없이 일관성 있는 분류 및 보호 정책을 적용할 수 있습니다. 이 분류 및 보호는 콘텐츠가 저장된 위치 또는 이동된 방법과 무관합니다. [Office 365 Security & Compliance의 레이블](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)을 사용하면 해당 콘텐츠가 Office 365 서비스에 있는 경우 감사 및 보존을 위해 문서와 전자 메일을 분류할 수 있습니다. 
+
+현재 이러한 레이블은 개별적으로 적용 및 관리되지만, Microsoft는 Azure Information Protection, Office 365, Microsoft Cloud App Security 및 Windows Information Protection을 포함하는 여러 서비스를 위한 포괄적이고 통합 레이블링 전략을 달성하기 위해 노력하고 있습니다. 이 동일한 레이블 스키마 및 저장소는 소프트웨어 공급 업체에서도 사용할 수 있습니다. 자세한 내용은 Microsoft Ignite 2017 세션 [Microsoft Information Protection 기능을 사용하여 전체 데이터 수명 주기 보호](https://myignite.microsoft.com/videos/55397)를 참조하세요.
+
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>곧 새 릴리스가 Azure Information Protection용으로 나올 예정이라고 들었습니다. 언제 나오나요?
 

@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/24/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 11775c64cbd5abd7c10a145a2d48f335db2d5b69
-ms.sourcegitcommit: 8251e4db274519a2eb8033d3135a22c27130bd30
+ms.openlocfilehash: db6cb1c6327808616ee98b9e5b14f2a92a590bff
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>마이그레이션 5단계 - 마이그레이션 후 작업
 
@@ -48,11 +48,35 @@ AD RMS 서버 프로비전을 해제한 후 Azure Portal에서 템플릿을 검�
 >[!IMPORTANT]
 > 이 마이그레이션이 끝나면 AD RMS 클러스터를 Azure Information Protection 및 HYOK(Hold Your Own Key) 옵션에 사용할 수 없습니다. 현재 구현된 리디렉션 때문에 Azure Information Protection 레이블에 HYOK를 사용하기로 한 경우 사용하는 AD RMS 클러스터의 라이선스 URL은 마이그레이션한 클러스터의 라이선스 URL과 달라야 합니다.
 
-## <a name="step-11-remove-onboarding-controls"></a>11단계. 온보딩 컨트롤 제거
+## <a name="step-11-reconfigure-mobile-device-clients-and-mac-computers-and-remove-onboarding-controls"></a>11단계. 모바일 장치 클라이언트 및 Mac 컴퓨터 다시 구성 및 온보딩 컨트롤 제거
 
-모든 기존 클라이언트를 Azure Information Protection으로 마이그레이션했으면 계속 온보딩 컨트롤을 사용하거나 마이그레이션 프로세스를 위해 만든 **AIPMigrated** 그룹을 유지할 이유가 없습니다. 
+모바일 장치 클라이언트 및 Mac 컴퓨터의 경우: [AD RMS 모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포할 때 만든 DNS SRV 레코드를 제거합니다.
 
-먼저 온보딩 컨트롤을 제거한 다음 **AIPMigrated** 그룹과 리디렉션을 배포하기 위해 만든 모든 소프트웨어 배포 작업을 삭제할 수 있습니다.
+이러한 DNS 변경 내용이 전파되면 이러한 클라이언트는 자동으로 검색하고 Azure Rights Management 서비스를 사용하기 시작합니다. 그러나 Office Mac을 실행하는 Mac 컴퓨터는 AD RMS에서 정보를 캐시합니다. 이러한 컴퓨터에서 이 프로세스는 최대 30일이 걸릴 수 있습니다. 
+
+Mac 컴퓨터가 키 집합에서 검색 프로세스를 즉시 실행하도록 하려면 “adal”을 검색하고 ADAL 항목을 모두 삭제합니다. 그러고 나서 다음 명령을 해당 컴퓨터에서 실행합니다.
+
+````
+
+rm -r ~/Library/Cache/MSRightsManagement
+
+rm -r ~/Library/Caches/com.microsoft.RMS-XPCService
+
+rm -r ~/Library/Caches/Microsoft\ Rights\ Management\ Services
+
+rm -r ~/Library/Containers/com.microsoft.RMS-XPCService
+
+rm -r ~/Library/Containers/com.microsoft.RMSTestApp
+
+rm ~/Library/Group\ Containers/UBF8T346G9.Office/DRM.plist
+
+killall cfprefsd
+
+````
+
+모든 기존 Windows 컴퓨터를 Azure Information Protection으로 마이그레이션했으면 계속 온보딩 컨트롤을 사용하거나 마이그레이션 프로세스를 위해 만든 **AIPMigrated** 그룹을 유지할 이유가 없습니다. 
+
+먼저 온보딩 컨트롤을 제거한 다음 **AIPMigrated** 그룹과 마이그레이션 스크립트를 배포하기 위해 만든 모든 소프트웨어 배포 메서드를 삭제할 수 있습니다.
 
 온보딩 컨트롤을 제거하려면:
 
@@ -63,6 +87,8 @@ AD RMS 서버 프로비전을 해제한 후 Azure Portal에서 템플릿을 검�
 2. 다음 명령을 실행하고 **Y**를 입력하여 확인합니다.
 
         Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
+    
+    이 명령은 모든 컴퓨터가 문서 및 전자 메일을 보호할 수 있도록 Azure Rights Management 보호 서비스에 대한 모든 라이선스 적용을 제거합니다.
 
 3. 더 이상 온보딩 컨트롤이 설정되어 있지 않은지 확인합니다.
 

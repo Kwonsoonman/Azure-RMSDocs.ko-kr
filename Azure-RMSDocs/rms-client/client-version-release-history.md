@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2b6e6e4d824c8f76be605d9e728c0405aba960e5
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: ccd6d0cec6a71527fad0303369baad90dd733958
+ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록
 
@@ -46,6 +46,8 @@ GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 �
 - 레이블에 대해 구성할 수 있는 새로운 Office 365 DLP 조건을 지원합니다. 자세한 내용은 [Azure Information Protection 레이블에 대한 조건 구성](../deploy-use/configure-policy-classification.md)을 참조하세요.
 
 - 레이블은 Information Protection 표시줄뿐만 아니라 Office 리본의 **보호** 단추에도 표시됩니다. 
+
+- 다음 Visio 파일 형식에 대한 기본 보호: .vsdm, .vsdx, .vssm, .vssx, .vstm, .vstx
 
 - Azure Portal에서 구성하는 고급 클라이언트 구성을 지원합니다. 이러한 구성은 다음과 같습니다.
     

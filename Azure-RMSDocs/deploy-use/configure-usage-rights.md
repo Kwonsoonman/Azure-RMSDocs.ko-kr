@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 10/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a1fa8edb262f7ee35b91e069ac5556124c0bc754
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: f82eb8bc415b064793c1efd9b7b88795b1ec6ff2
+ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -32,7 +32,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 **API 상수 또는 값**은 MSIPC API 호출에 대한 SDK 이름이며 사용 권한을 확인하거나 사용 권한을 정책에 추가하는 RMS 지원 응용 프로그램을 작성할 때 사용됩니다.
 
 
-|Right|설명|구현|
+|사용 권한|설명|구현|
 |-------------------------------|---------------------------|-----------------|
 |일반 이름: **콘텐츠 편집, 편집** <br /><br />정책에서 인코딩: **DOCEDIT**|사용자가 응용 프로그램 내에서 콘텐츠를 수정, 다시 정렬, 형식 지정 또는 필터링할 수 있게 합니다. 편집된 복사본을 저장할 수 있는 권한은 부여하지 않습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 편집**<br /><br />Azure 포털의 이름: **편집 및 저장**에 포함<br /><br />AD RMS 템플릿의 이름: **편집** <br /><br />API 상수 또는 값: 해당 사항 없음|
 |일반 이름: **저장** <br /><br />정책에서 인코딩: **EDIT**|사용자가 현재 위치에 문서를 저장할 수 있게 합니다.<br /><br />또한 Office 응용 프로그램에서 이 권한을 사용하면 사용자는 문서를 수정할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **파일 저장**<br /><br />Azure 포털의 이름: **편집 및 저장**에 포함<br /><br />AD RMS 템플릿의 이름: **저장** <br /><br />API 상수 또는 값: `IPC_GENERIC_WRITE L"EDIT"`|
@@ -51,9 +51,9 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 일부 응용 프로그램은 사용 권한을 사용 권한 수준과 그룹화하여 일반적으로 함께 사용되는 사용 권한을 보다 수비게 선택할 수 있도록 합니다. 이러한 사용 권한 수준은 역할 기반의 옵션을 선택할 수 있는 보다 간단한 수준을 제시합니다.  예를 들어 **검토자** 및 **공동 작성자**가 있습니다. 이러한 옵션은 사용자에게 권한을 요약해서 표시하므로 앞에 나온 표에 제공된 모든 권한을 포함하지는 않을 수 있습니다.
 
-이러한 사용 권한 수준의 목록과 포함된 권한의 전체 목록을 보려면 다음 표를 참조하세요.
+이러한 사용 권한 수준의 목록과 포함된 사용 권한의 전체 목록을 보려면 다음 표를 참조하세요. 사용 권한은 해당 [일반 이름](#usage-rights-and-descriptions)으로 나열됩니다.
 
-|사용 권한 수준|응용 프로그램|포함된 권한(일반 이름)|
+|사용 권한 수준|응용 프로그램|포함된 사용 권한|
 |---------------------|----------------|---------------------------------|
 |보기 권한자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br /> Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 회신, 전체 회신, 매크로 허용 [[1]](#footnote-1)<br /><br />참고: 메일의 경우 메일의 회신이 첨부 파일이 아닌 메일 메시지로 수신되도록 이 권한 수준 대신 검토자 권한을 사용합니다. 검토자는 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다. 또는 [온보딩 컨트롤](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)을 구현했으므로 Azure Rights Management 서비스 사용을 면제받는 조직의 사용자에게 필요합니다.|
 |검토자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신: 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2), 매크로 허용 [[1]](#footnote-1)|
@@ -74,12 +74,14 @@ Windows용 Azure Information Protection 클라이언트에는 포함되어 있�
 
 
 ## <a name="rights-included-in-the-default-templates"></a>기본 템플릿에 포함된 권한
-기본 템플릿에 포함된 권한은 다음과 같습니다.
+다음 표에 기본 템플릿을 만들 때 포함된 사용 권한을 나열되어 있습니다. 사용 권한은 해당 [일반 이름](#usage-rights-and-descriptions)으로 나열됩니다.
 
-|표시 이름|포함된 권한(일반 이름)|
-|----------------|---------------------------------|
-|&lt;*조직 이름*&gt; *- 기밀 보기 전용* <br /><br />또는<br /><br /> *Highly Confidential \ All Employees*|보기, 열기, 읽기|
-|&lt;*조직 이름*&gt; *- 기밀* <br /><br />또는 <br /><br />*Confidential \ All Employees*|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 권한 보기, 매크로 허용, 전달, 회신, 전체 회신|
+이러한 기본 템플릿은 구독을 구매할 때 만들어지며, 이름 및 사용 권한은 Azure Portal에서 [변경](configure-policy-templates.md)할 수 있습니다. 
+
+|템플릿의 표시 이름|2017년 10월 6일부터 현재 날짜까지의 사용 권한|2017년 10월 6일 이전의 사용 권한|
+|----------------|--------------------|----------|
+|\<*조직 이름> - 기밀 보기 전용* <br /><br />또는<br /><br /> *Highly Confidential \ All Employees*|보기, 열기, 읽기, 복사, 매크로 허용, 인쇄, 전달, 회신, 전체 회신, 저장, 콘텐츠 편집, 편집|보기, 열기, 읽기|
+|\<*조직 이름>- 기밀* <br /><br />또는 <br /><br />*Confidential \ All Employees*|보기, 열기, 읽기, 다른 이름으로 저장, 내보내기, 복사, 매크로 허용, 인쇄, 전달, 회신, 전체 회신, 저장, 콘텐츠 편집, 편집, 모든 권한|보기, 열기, 읽기, 다른 이름으로 저장, 내보내기, 콘텐츠 편집, 편집, 매크로 허용, 전달, 회신, 전체 회신|
 
 ## <a name="do-not-forward-option-for-emails"></a>메일에 대한 전달 금지 옵션
 
@@ -122,11 +124,30 @@ Rights Management 발급자는 항상 문서 또는 메일에 대한 [모든 권
 
 Rights Management 발급자가 사용자를 대신하여 보호할 때, Rights Management 소유자를 할당하면 원본 문서 또는 메일 소유자는 자신이 보호를 시작한 것처럼 보호된 콘텐츠에 대해 같은 수준의 권한을 가집니다. 
 
-예를 들어, 문서를 만든 사용자는 [인쇄] 사용 권한이 포함되지 않은 템플릿으로 보호되고 있어도 문서를 인쇄할 수 있습니다. 그 사용자는 해당 템플릿에 구성된 오프라인 액세스 설정이나 만료 날짜에 관계 없이 항상 문서에 액세스할 수 있습니다. 또한, Rights Management 소유자에게 [모든 권한] 사용 권한이 있기 때문에 이 사용자는 문서를 다시 보호하여 추가 사용자 액세스를 부여할 수 있고(그 시점에서 사용자가 Rights Management 소유자인 동시에 Rights Management 발급자가 됨), 보호를 제거할 수도 있습니다. 그러나 문서를 추적하고 해지하는 일은 Rights Management 발급자만 할 수 있습니다.
+예를 들어, 문서를 만든 사용자는 [인쇄] 사용 권한이 포함되지 않은 템플릿으로 보호되고 있어도 문서를 인쇄할 수 있습니다. 그 사용자는 해당 템플릿에 구성된 오프라인 액세스 설정이나 만료 날짜에 관계 없이 항상 문서에 액세스할 수 있습니다. 또한, Rights Management 소유자에게 모든 권한 사용 권한이 있기 때문에 이 사용자는 문서를 다시 보호하여 추가 사용자 액세스를 부여할 수 있고(그 시점에서 사용자가 Rights Management 소유자인 동시에 Rights Management 발급자가 됨), 보호를 제거할 수도 있습니다. 그러나 문서를 추적하고 해지하는 일은 Rights Management 발급자만 할 수 있습니다.
 
 문서 또는 메일의 Rights Management 소유자는 [사용 현황 로그](log-analyze-usage.md#how-to-interpret-your-azure-rights-management-usage-logs)에서 **owner-email** 필드로 기록됩니다.
 
 Rights Management 소유자는 Windows 파일 시스템의 소유자와 독립적입니다. 동일할 때도 많지만, SDK나 PowerShell을 사용하지 않는 경우에도 다를 수 있습니다.
+
+## <a name="rights-management-use-license"></a>Rights Management 사용 라이선스
+
+사용자가 Azure Rights Management로 보호되는 문서 또는 전자 메일을 열면 해당 콘텐츠에 대한 Rights Management 사용 라이선스가 사용자에게 부여됩니다. 이 사용 라이선스는 문서 또는 전자 메일 메시지에 대한 사용자의 사용 권한 및 콘텐츠를 암호화하는 데 사용된 암호화 키를 포함하는 인증서입니다. 또한 사용 라이선스에는 설정된 경우 만료 날짜 및 사용 라이선스가 유효한 기간이 포함되어 있습니다.
+
+사용 라이선스의 기간 동안 사용자를 다시 인증하거나 다시 권한을 부여하지 않습니다. 이렇게 하면 사용자는 보호된 문서 또는 전자 메일을 인터넷 연결 없이 계속 열 수 있습니다. 사용 라이선스 유효 기간이 만료되면 다음에 사용자가 보호된 문서 또는 전자 메일에 액세스할 때 사용자를 다시 인증하고 다시 권한을 부여해야 합니다. 
+
+문서 및 전자 메일 메시지가 보호 설정을 정의하는 레이블 또는 템플릿을 사용하여 보호되는 경우 콘텐츠를 다시 보호할 필요 없이 레이블 또는 템플릿에서 이러한 설정을 변경할 수 있습니다. 사용자가 이미 콘텐츠에 액세스한 경우 변경 내용은 해당 사용 라이선스 기간이 만료된 후에 적용됩니다. 그러나 사용자가 사용자 지정 권한(임시 권한 정책이라고도 함)을 적용하고 이러한 사용 권한을 문서 또는 전자 메일을 보호한 후 변경해야 하는 경우, 해당 콘텐츠는 새 사용 권한으로 다시 보호되어야 합니다. 전자 메일 메시지에 대한 사용자 지정 권한은 전달 금지 옵션으로 구현됩니다.
+
+테넌트에 대한 기본 사용 라이선스 유효 기간은 30일이며, PowerShell cmdlet [Set-AadrmMaxUseLicenseValidityTime](/powershell/module/aadrm/set-aadrmmaxuselicensevaliditytime)을 사용하여 이 값을 구성할 수 있습니다. 보호가 레이블 또는 템플릿을 사용하여 적용되는 경우 더 제한적인 설정을 구성할 수 있습니다.
+
+- Azure Portal에서 레이블 또는 템플릿을 구성하는 경우 사용 라이선스 유효 기간은 **오프라인 액세스 허용 설정**에서 해당 값을 가져옵니다. 
+    
+    Azure Portal에서 이 설정을 구성하기 위한 자세한 내용 및 지침은 [Rights Management 보호를 위한 레이블을 구성하는 방법](configure-policy-protection.md)의 9단계에 있는 표를 참조하세요.
+
+- PowerShell을 사용하여 템플릿을 구성하는 경우 사용 라이선스 유효 기간은 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) 및 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet의 *LicenseValidityDuration* 매개 변수에서 해당 값을 가져옵니다.
+    
+    PowerShell을 사용하여 이 설정을 구성하기 위한 자세한 내용 및 지침은 각 cmdlet에 대한 도움말을 참조하세요.
+
 
 ## <a name="see-also"></a>참고 항목
 [Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md)

@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db8f8de9cdda00f5983ff448aa895a5767d953b1
-ms.sourcegitcommit: dd567f8395bb55e4ca174ef1d72b1a14cf7735e1
+ms.openlocfilehash: c81d7131bfb2a5f1e0742cd8dd55d52e3a65984a
+ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -46,7 +46,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는
 
 4. **트러스트된 게시 도메인 내보내기** 대화 상자에서 다음을 수행합니다.
 
-    - **다른 이름으로 저장** 을 클릭하고 선택한 경로와 파일 이름으로 저장합니다. 파일 이름 확장명으로 **.xml**을 지정해야 합니다. 파일 이름 확장명은 자동으로 추가되지 않습니다.
+    - **다른 이름으로 저장**을 클릭하고 선택한 경로와 파일 이름으로 저장합니다. 파일 이름 확장명으로 **.xml**을 지정해야 합니다. 파일 이름 확장명은 자동으로 추가되지 않습니다.
 
     - 강력한 암호를 지정하고 확인합니다. 나중에 구성 데이터를 Azure Information Protection으로 가져올 때 필요하므로, 이 암호를 기억해둡니다.
 
@@ -56,7 +56,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는
 
 트러스트된 게시 도메인에는 이전에 보호된 파일을 암호 해독하는 SLC(서버 사용 허가자 인증서) 키가 포함되어 있으므로 현재 활성 도메인뿐 아니라 트러스트된 게시 도메인을 모두 내보내고 나중에 Azure로 가져와야 합니다.
 
-예를 들어 AD RMS 서버를 암호화 모드 1에서 암호화 모드 2로 업그레이드한 경우 트리스트된 도메인이 여럿 있습니다. 마이그레이션 종료 시 암호화 모드 1을 사용하여 보관된 키를 포함하는 트러스트된 게시 도메인을 내보내고 가져오지 않는 경우 사용자가 암호화 모드 1 키로 보호된 콘텐츠를 열 수 없습니다.
+예를 들어 AD RMS 서버를 암호화 모드 1에서 암호화 모드 2로 업그레이드한 경우 트러스트된 도메인이 여럿 있습니다. 마이그레이션 종료 시 암호화 모드 1을 사용하여 보관된 키를 포함하는 트러스트된 게시 도메인을 내보내고 가져오지 않는 경우 사용자가 암호화 모드 1 키로 보호된 콘텐츠를 열 수 없습니다.
 
 
 ### <a name="import-the-configuration-data-to-azure-information-protection"></a>구성 데이터를 Azure Information Protection으로 가져오기
@@ -112,15 +112,11 @@ PowerShell 세션을 열고 다음 명령을 실행합니다.
     
         Enable-Aadrm
 
-**Azure Information Protection 테넌트가 이미 활성화된 경우에는 어떻게 하나요?** 조직에 대해 Azure Rights Management 서비스가 이미 활성화된 경우 사용자는 이미 Azure Information Protection을 사용하여 AD RMS의 기존 키(및 템플릿) 대신 자동으로 생성된 테넌트 키(및 기본 템플릿)로 콘텐츠를 보호하고 있을 수 있습니다. 인트라넷에서 잘 관리되는 컴퓨터는 AD RMS 인프라에 대해 자동으로 구성되므로 여기에 해당되지 않을 수 있습니다. 하지만 작업 그룹 컴퓨터 또는 인트라넷에 자주 연결되지 않는 컴퓨터는 여기에 해당될 수 있습니다. 아쉽게도 이러한 컴퓨터를 식별하는 것은 어려운 일이므로 AD RMS에서 구성 데이터를 가져오기 전에 서비스를 활성화하지 않는 것이 좋습니다.
-
-[7단계](migrate-from-ad-rms-phase3.md#step-7-reconfigure-clients-to-use-azure-information-protection)에서 설명한 대로 Azure Information Protection 테넌트가 이미 활성화되어 있고 이러한 컴퓨터를 식별할 수 있으면 이러한 컴퓨터에서 CleanUpRMS.cmd 스크립트를 실행해야 합니다. 이 스크립트를 실행하면 사용자 환경이 강제로 다시 초기화되므로 업데이트된 테넌트 키와 가져온 템플릿을 다운로드합니다.
-
-또한 마이그레이션 후 사용하고 싶은 사용자 지정 템플릿을 만든 경우 이 템플릿을 내보냈다가 가져와야 합니다. 이 절차는 다음 단계에서 다룹니다. 
+**Azure Information Protection 테넌트가 이미 활성화된 경우에는 어떻게 하나요?** 조직에서 이미 Azure Rights Management 서비스가 활성화되어 있으며 마이그레이션 후 사용하려는 사용자 지정 템플릿을 만든 경우 이러한 템플릿을 내보내고 가져와야 합니다. 이 절차는 다음 단계에서 다룹니다. 
 
 ## <a name="step-6-configure-imported-templates"></a>6단계. 가져온 템플릿 구성
 
-가져온 템플릿의 기본 상태는 **보관됨**이므로 사용자가 Azure Rights Management 서비스에서 이러한 템플릿을 사용할 수 있도록 하려면 이 상태를 **게시됨** 으로 변경해야 합니다.
+가져온 템플릿의 기본 상태는 **보관됨**이므로 사용자가 Azure Rights Management 서비스에서 이러한 템플릿을 사용할 수 있도록 하려면 이 상태를 **게시됨**으로 변경해야 합니다.
 
 AD RMS에서 가져오는 템플릿은 Azure 포털에서 만들 수 있는 사용자 지정 템플릿과 모양 및 동작이 유사합니다. 가져온 템플릿을 사용자가 응용 프로그램에서 보고 선택할 수 있도록 게시하기 위해 변경하려면 [Azure Information Protection용 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 

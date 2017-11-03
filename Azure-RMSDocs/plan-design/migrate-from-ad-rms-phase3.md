@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5de30d095e1c279babb8f8be74a5a9b9d54db204
-ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
+ms.openlocfilehash: ca2c8156489b55911ee340fd52f85e68b5280915
+ms.sourcegitcommit: 3952fc01c6182c143df7f0d2e748594e49bf1da8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>마이그레이션 3단계 - 클라이언트 쪽 구성
 
@@ -76,6 +76,6 @@ Windows 컴퓨터의 경우 두 개의 마이그레이션 스크립트를 사용
 3. 이 단계의 맨 앞에 나온 지침을 사용하여, AIPMigrated 그룹의 구성원이 사용하는 Windows 클라이언트 컴퓨터에서 **Migrate-Client.cmd** 및 **Migrate-User.cmd**를 실행하도록 스크립트 배포 메서드를 구성합니다. 
 
 ## <a name="next-steps"></a>다음 단계
-마이그레이션을 계속하려면 [4단계 - 지원 서비스 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
+마이그레이션을 계속하려면 [4단계 - 지원 서비스 구성](migrate-from-ad-rms-phase4.md)으로 이동합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

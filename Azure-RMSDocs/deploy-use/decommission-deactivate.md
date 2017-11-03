@@ -4,7 +4,7 @@ description: "Azure Information Protection의 클라우드 기반 보호 서비�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a4ed44939e9853373f272d916e0765572dc0590a
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 39eec911cd6506bd24fb48f5fdd931db68099269
+ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Azure Information Protection 보호 해제 및 비활성화
 
@@ -36,9 +36,9 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 |적용 대상...|… 방법|
 |----------------------------|--------------|
 |모든 사용자가 Rights Management를 계속 사용하지만 Azure Information Protection보다 온-프레미스 솔루션을 사용하려는 경우|[Set-AadrmMigrationUrl](/powershell/module/aadrm/Set-AadrmMigrationUrl) cmdlet을 사용하여 기존 사용자가 변경 후 보호되는 콘텐츠를 사용할 때 온-프레미스 배포를 사용하도록 안내합니다. 사용자가 자동으로 AD RMS 설치를 사용하여 보호되는 콘텐츠를 사용하게 됩니다.<br /><br />이 변경 전에 보호된 콘텐츠를 사용할 수 있도록 Office 2016 또는 Office 2013의 **LicensingRedirection** 레지스트리 키를 사용하여 클라이언트를 온-프레미스 배포로 리디렉션합니다. 지침은 RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md) 및 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 대로 Office 2010의 **LicenseServerRedirection** 레지스트리 키를 참조하세요.|
-|권한 관리 기술의 사용을 완전히 중단하려는 경우 →|지정된 관리자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 이 사용자에 대해 [Azure Information Protection 클라이언트](../rms-client/client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)를 설치합니다.<br /><br />그러면 이 관리자가 이 클라이언트의 PowerShell 모듈을 사용하여 Azure Rights Management 서비스를 통해 보호되는 폴더의 파일을 대량 해독할 수 있습니다. 파일을 보호되지 않은 상태로 되돌리므로, Azure Information Protection 또는 AD RMS와 같은 Rights Management 기술 없이도 읽을 수 있습니다. 이 PowerShell 모듈은 Azure Information Protection의 Azure Rights Management 서비스 및 AD RMS 모두에 사용할 수 있으므로 Azure Rights Management 서비스를 비활성화하기 전이나 후 또는 둘을 조합하여 파일 해독 시점을 선택할 수 있습니다.|
+|권한 관리 기술의 사용을 완전히 중단하려는 경우 →|지정된 관리자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 이 사용자에 대해 [Azure Information Protection 클라이언트](../rms-client/client-admin-guide-install.md)를 설치합니다.<br /><br />그러면 이 관리자가 이 클라이언트의 PowerShell 모듈을 사용하여 Azure Rights Management 서비스를 통해 보호되는 폴더의 파일을 대량 해독할 수 있습니다. 파일을 보호되지 않은 상태로 되돌리므로, Azure Information Protection 또는 AD RMS와 같은 Rights Management 기술 없이도 읽을 수 있습니다. 이 PowerShell 모듈은 Azure Information Protection의 Azure Rights Management 서비스 및 AD RMS 모두에 사용할 수 있으므로 Azure Rights Management 서비스를 비활성화하기 전이나 후 또는 둘을 조합하여 파일 해독 시점을 선택할 수 있습니다.|
 |Azure Information Protection의 Azure Rights Management 서비스에서 보호한 모든 파일을 식별할 수 없습니다. 또는 모든 사용자가 누락된 모든 보호 파일을 자동으로 읽을 수 있게 합니다.  →|RMS 클라이언트 배포 참고 사항의 [서비스 검색 섹션](../rms-client/client-deployment-notes.md)에 설명된 Office 2016 및 Office 2013용 **LicensingRedirection** 레지스트리 키와 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 Office 2010용 **LicenseServerRedirection** 레지스트리 키를 사용하여 모든 클라이언트 컴퓨터에서 레지스트리 설정을 배포합니다.<br /><br />또한 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에서 설명한 대로 **DisableCreation**을 **1**로 설정하여 사용자가 새 파일을 보호하지 못하도록 다른 레지스트리 설정을 배포할 수도 있습니다.|
-|누락된 모든 파일에 대해 제어되는 수동 복구 서비스를 원하는 경우    →|데이터 복구 그룹에서 지정된 사용자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 이러한 사용자에 대해 [Azure Information Protection 클라이언트](../rms-client/client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)를 설치하여 표준 사용자가 요청 시 파일 보호를 해제할 수 있게 합니다.<br /><br />모든 컴퓨터에서 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 대로 **DisableCreation**을 **1**로 설정하여 사용자가 새 파일을 보호하지 못하도록 레지스트리 설정을 배포합니다.|
+|누락된 모든 파일에 대해 제어되는 수동 복구 서비스를 원하는 경우    →|데이터 복구 그룹에서 지정된 사용자에게 [슈퍼 사용자 권한](../deploy-use/configure-super-users.md)을 부여하고 이러한 사용자에 대해 [Azure Information Protection 클라이언트](../rms-client/client-admin-guide-install.md)를 설치하여 표준 사용자가 요청 시 파일 보호를 해제할 수 있게 합니다.<br /><br />모든 컴퓨터에서 [Office 레지스트리 설정](https://technet.microsoft.com/library/dd772637%28v=ws.10%29.aspx)에 설명된 대로 **DisableCreation**을 **1**로 설정하여 사용자가 새 파일을 보호하지 못하도록 레지스트리 설정을 배포합니다.|
 이 표의 절차에 대한 자세한 내용은 다음 리소스를 참조하세요.
 
 - AD RMS 및 배포 참조에 대한 내용은 [Active Directory Rights Management Services 개요](https://technet.microsoft.com/library/hh831364.aspx)를 참조하세요.

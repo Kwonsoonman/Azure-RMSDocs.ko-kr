@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 1cbbad16590bde0fa6278764fe9351b1a4e0b996
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: c17453cddec7d570901ccf18287e8d1db2fd3f01
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -92,7 +92,7 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 - FAQ: [Azure Information Protection 질문과 대답](../get-started/faqs.md)
 
-- Yammer: [Azure Information Protection](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)
+- Yammer: [Azure Information Protection](https://www.yammer.com/AskIPTeam)
 
 
 또한 **Microsoft Ignite 2017**에는 주문형으로 제공되는 Azure Information Protection에 대한 여러 세션이 있습니다. 이 회의에서 다룬 공지 사항 요약은 [What’s new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)(Ignite 2017에서 다룬 Azure Information Protection의 새로운 기능)을 참조하세요. 

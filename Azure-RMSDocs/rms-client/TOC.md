@@ -16,6 +16,7 @@
 ##### [PowerShell 명령](client-admin-guide-powershell.md)
 #### [Azure Information Protection 사용자 가이드](client-user-guide.md)
 ##### [다운로드 및 클라이언트 설치](install-client-app.md)
+##### [파일 또는 전자 메일 분류](client-classify.md)
 ##### [파일 또는 전자 메일 분류 및 보호](client-classify-protect.md)
 ##### [문서 추적 및 취소](client-track-revoke.md)
 ##### [보호된 파일 열기](client-view-use-files.md)

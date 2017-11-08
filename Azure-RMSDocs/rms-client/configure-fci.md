@@ -4,7 +4,7 @@ description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e67bc3d82c1269343cd4e64f8a608a2a86d381ef
-ms.sourcegitcommit: 7cd6ff39731c7abe990a72a49bc10d104f47764d
+ms.openlocfilehash: cd580b14e35697d00a3c42abd51d2afc94d6959d
+ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
@@ -44,7 +44,7 @@ Azure Information Protection 클라이언트와 PowerShell을 사용하여 파�
     
     - AzureInformationProtection PowerShell 모듈을 설치하고 이 모듈에서 Azure Rights Management 서비스에 연결하기 위한 필수 구성 요소를 구성해야 합니다.
     
-    AzureInformationProtection PowerShell 모듈은 Azure Information Protection 클라이언트에 포함되어 있습니다. 설치 지침은 Azure Information Protection 관리자 가이드에서 [사용자를 위해 Azure Information Protection 클라이언트를 설치하는 방법](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)을 참조하세요. 필요한 경우 `PowerShellOnly=true` 매개 변수를 사용하여 해당 PowerShell 모듈만 설치할 수 있습니다.
+    AzureInformationProtection PowerShell 모듈은 Azure Information Protection 클라이언트에 포함되어 있습니다. 설치 지침은 Azure Information Protection 관리자 가이드에서 [사용자를 위해 Azure Information Protection 클라이언트 설치](client-admin-guide-install.md)를 참조하세요. 필요한 경우 `PowerShellOnly=true` 매개 변수를 사용하여 해당 PowerShell 모듈만 설치할 수 있습니다.
     
     [이 PowerShell 모듈을 사용하기 위한 필수 구성 요소](client-admin-guide-powershell.md#azure-information-protection-and-azure-rights-management-service)에는 Azure Rights Management 서비스 활성화, 서비스 사용자 만들기 및 레지스트리 편집(테넌트가 북미 지역 외부인 경우) 작업이 포함됩니다. 이 문서의 지침을 시작하기 전에 이러한 필수 구성 요소에 지정된 **BposTenantId**, **AppPrincipalId** 및 **대칭 키** 값을 설정했는지 확인합니다. 
     

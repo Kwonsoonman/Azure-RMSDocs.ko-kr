@@ -1,11 +1,11 @@
 ---
-title: "릴리스 정보 | Azure RMS"
-description: 
+title: "릴리스 정보"
+description: "SDK는 수정 버전 및 다른 개발자 정보로 업데이트됩니다."
 keywords: 
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/27/2017
+ms.date: 10/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -14,15 +14,20 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 875584683bcf1d35037691f21ac7d78d17806a07
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 52733dd7cac356879408e774c79331d705a71ea0
+ms.sourcegitcommit: 02e48f0e5137ba777ec9a2bccde08130e6075c20
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="release-notes"></a>릴리스 정보
 
-이 항목에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.
+이 문서에는 이 릴리스와 이전 릴리스의 RMS SDK 2.1에 대한 중요한 정보가 포함되어 있습니다.
+
+## <a name="october-2017---update"></a>2017년 10월 - 업데이트
+
+- 환경 초기화 및 초기화 해제에 대해 두 개의 새로운 API를 추가합니다. 자세한 내용은 [IpcInitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx) 및 [IpcUninitializeEnvironment](https://msdn.microsoft.com/library/hh535289.aspx)를 참조하세요.
+- Visio 파일 형식이 지원됩니다. 자세한 내용은 [파일 API 구성](file-api-configuration.md)을 참조하세요.
 
 ## <a name="february-2016---sdk-documentation-update"></a>2016년 2월 - SDK 문서 업데이트
 
@@ -37,7 +42,7 @@ ms.lasthandoff: 06/30/2017
  - 컴퓨터에 대한 관리자 권한 없이 RMS 2.1 클라이언트 설치
  - Windows 10용 응용 프로그램 인증
 
-- **RMS SDK를 사용하는 Microsoft Online SIA(로그인 도우미)에 대한 지원을 제거하는 중입니다.** 지원이 중지되는 시간 후 6개월 동안 SIA의 사용을 계속 지원할 예정입니다.
+- **RMS SDK를 사용하는 Microsoft Online SIA(로그인 도우미)에 대한 지원을 제거하는 중입니다.** 지원이 중지되는 시점 이후 6개월 동안 SIA를 사용하도록 계속 지원할 예정입니다.
 
 
 ## <a name="december-2015-update"></a>2015년 12월 업데이트
@@ -48,11 +53,11 @@ ms.lasthandoff: 06/30/2017
 
 - 오류 메시지 및 문제 해결 환경을 개선하기 위한 많은 업데이트.
 - [지원되는 플랫폼](supported-platforms.md) 목록도 업데이트되었습니다.
-- 사전 프로덕션 환경의 요구 및 응용 프로그램 매니페스트의 사용이 RMS SDK 2.1에서 제거되었습니다. 이 개발자 설명서 집합의 다음 섹션이 제거되었으며, 전체 설명서가 단순한 형태로 다시 구성되었습니다.
+- RMS SDK 2.1에서는 더 이상 사전 프로덕션 환경이 필요하지 않고 응용 프로그램 매니페스트를 사용하지 않습니다. 이 개발자 설명서 집합의 다음 섹션이 제거되었으며, 전체 설명서가 단순한 형태로 다시 구성되었습니다.
 
 ## <a name="may-2015-update"></a>2015년 5월 업데이트
 
--   **서비스 앱 및 클라우드 기반 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이와 관련된 항목이 이 정보의 처리 지침을 제공하도록 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 수정 버전을 참조하세요.
+-   **서비스 앱 및 클라우드 기반 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이 정보를 처리하는 지침을 제공하도록 이와 관련된 문서가 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 수정 버전을 참조하세요.
 
 ## <a name="april-2015-update"></a>2015년 4월 업데이트
 
@@ -78,7 +83,7 @@ ms.lasthandoff: 06/30/2017
 ## <a name="october-2014-update"></a>2014년 10월 업데이트
 
 -   SDK의 파일 API 구성 요소에 대한 기본 동작이 업데이트되었습니다. 자세한 내용은 [파일 API 구성](file-api-configuration.md)을 참조하세요.
--   새로운 기능인 메일 알림은 개발자 노트 항목인 [메일 알림 사용](how-to-enable-email-notification.md)에서 설명합니다.
+-   새로운 기능인 메일 알림은 개발자 노트 문서인 [메일 알림 사용](how-to-enable-email-notification.md)에서 설명합니다.
 
 ## <a name="july-2014-update"></a>2014년 7월 업데이트
 
@@ -89,7 +94,7 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
     이 릴리스에서 추가된 함수:
 
-    **참고** - 여기에 나열되지 않은 추가 지원 데이터 형식 및 구조체가 파일 API 확장을 위해 추가되었습니다. 이 릴리스에서 업데이트된 모든 항목에는 **임시 및 변경될 수 있음**이 표시됩니다.
+    **참고** - 여기에 나열되지 않은 추가 지원 데이터 형식 및 구조체가 파일 API 확장을 위해 추가되었습니다. 이 릴리스에서 업데이트된 모든 문서는 **임시 및 변경될 수 있음**이 표시됩니다.
 
     -   [IpcfOpenFileOnHandle](https://msdn.microsoft.com/library/dn771751.aspx)
     -   [IpcfOpenFileOnILockBytes](https://msdn.microsoft.com/library/dn771752.aspx)

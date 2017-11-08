@@ -4,24 +4,24 @@ description: "개발자는 Azure Information Protection을 사용하여 모든 �
 author: BrucePerlerMS
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: ea13c3dbf37dd22a6e93786390bd6be4da7a6959
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: a9a94744aa2eacb3ddb4bbda3989ae857ff708fd
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
 
-이 가이드에서는 Azure Information Protection의 Rights Management 서비스를 확장하고 해당 서비스와 통합할 수 있는 도구를 소개합니다. 이 가이드는 권한 관리 시스템을 활용하여 광범위한 지원 플랫폼용으로 다양한 유형의 응용 프로그램을 빌드하려는 개발자를 위해 제공됩니다.
+이 가이드에서는 Azure Information Protection의 Rights Management 서비스를 확장하고 해당 서비스와 통합할 수 있는 도구를 소개합니다.
 
->Azure Information Protection SDK의 권한 관리 구성 요소 및 분류/레이블 지정 기능은 현재 개발이 진행 중인 상태입니다.
+>현재 Azure Information Protection SDK에는 권한 관리 구성 요소가 있습니다. 분류 및 레이블 지정 구성 요소는 개발 중입니다.
 
 ## <a name="service-applications"></a>서비스 응용 프로그램
 
@@ -39,10 +39,7 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="powershell-guides"></a>PowerShell 가이드
 
-대개 Azure Rights Management 관리자가 사용하는 이러한 스크립트는 서비스 응용 프로그램을 개발하고 테스트하는 데 유용합니다.
-
-- [Azure Rights Management Cmdlet](https://msdn.microsoft.com/library/azure/dn629398.aspx)은 명령줄에서 Azure RMS를 관리할 수 있도록 합니다. 이 작업은 자동화를 가능하게 하지만 관리 오버헤드를 줄일 수 있도록 안정적이고 반복적인 프로세스를 지원하기도 합니다. 또한, 일부 Azure RMS 고급 구성 및 작업 시에는 Azure PowerShell이 필요합니다.
-- [RMS Protection Cmdlet](https://msdn.microsoft.com/library/azure/mt433195.aspx)은 Azure Information Protection의 Azure RMS(Rights Management Services) 데이터 보호 또는 AD RMS(Active Directory Rights Management Services)와 함께 사용될 수 있으며, 이러한 Rights Management 배포에 대한 기타 PowerShell 모듈을 보완할 수 있습니다. 이러한 RMS 보호 cmdlet을 사용하여 모든 파일 형식의 파일을 대량으로 보호하거나 보호 해제합니다.
+Azure Rights Management 관리자가 사용하는 PowerShell cmdlet은 서비스 응용 프로그램을 개발하고 테스트하는 데 유용합니다. 자세한 내용은 [Azure Information Protection 클라이언트에서 PowerShell 사용](/information-protection/rms-client/client-admin-guide-powershell)을 참조하세요.
 
 ## <a name="user-applications"></a>사용자 응용 프로그램
 
@@ -105,11 +102,11 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 [Azure Information Protection 소개](https://www.microsoft.com/cloud-platform/azure-information-protection)
 
-이러한 비디오는 Micorsoft 2016 Ignite 컨퍼런스에서 소개되었던 내용입니다.
+이러한 비디오는 Microsoft 2016 Ignite 컨퍼런스에서 소개되었습니다.
 
 - [조직 내의 전자 메일 보안](https://myignite.microsoft.com/videos/2787)
 - [Adopt a comprehensive identity-driven solution for protecting and sharing data securely](https://myignite.microsoft.com/videos/2784)(데이터를 안전하게 보호 및 공유하기 위한 포괄적인 ID 기반 솔루션 채택)
-- [Learn how classification, labeling, and protection delivers persistent data protection](https://myignite.microsoft.com/videos/2786)(분류, 레이블 지정 및 보호를 통해 지속적인 데이터 보호를 제공하는 방법 알아보기)
+- [분류, 레이블 지정 및 보호를 통해 지속적인 데이터 보호를 제공하는 방법 알아보기](https://myignite.microsoft.com/videos/2786)
 
 ## <a name="other-resources"></a>관련 자료
 
@@ -122,6 +119,17 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 - [지원되는 파일 형식](supported-file-formats.md)
 - [지원되는 플랫폼](supported-platforms.md)
 - [사용 제한 이해](understanding-usage-restrictions.md)
+
+### <a name="message-protocol-and-file-formats"></a>메시지 프로토콜 및 파일 형식
+
+- [클라이언트와 서버 간 프로토콜](https://msdn.microsoft.com/library/cc243191.aspx)
+- [권한 관리 전자 메일 개체 프로토콜](https://msdn.microsoft.com/library/cc463909(v=EXCHG.80).aspx)
+- [복합 파일 이진 파일 형식](https://msdn.microsoft.com/library/dd942138.aspx)
+
+#### <a name="rights-managed-email-message"></a>권한 관리 전자 메일 메시지
+
+- [.MSG 파일 형식(1부)](https://blogs.msdn.microsoft.com/openspecification/2009/11/06/msg-file-format-part-1/)
+- [.MSG 파일 형식(2부)](https://blogs.msdn.microsoft.com/openspecification/2010/06/20/msg-file-format-rights-managed-email-message-part-2/)
 
 ### <a name="api-reference"></a>API 참조
 
@@ -139,7 +147,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 ### <a name="see-also"></a>참고 항목
 
-- [개발자 관련 용어](terms.md)
+- [개발자 용어](terms.md)
 - [Azure Information Protection 용어 - ITPro](../get-started/terminology.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

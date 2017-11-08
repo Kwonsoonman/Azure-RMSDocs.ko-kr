@@ -5,7 +5,7 @@ keywords: "iOS 및 Android용 Azure Information Protection 앱으로 메일 또�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/06/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -13,19 +13,26 @@ ms.technology: techgroup-identity
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 351074937c45866f882d51b19e3cd3e4792ae649
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: db44f73c20d7440d403b1d3a7a7ea0201f8a7abb
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Microsoft Azure Information Protection 앱 시작
 
 *적용 대상: Active Directory Rights Management Services, Azure Information Protection*
 
-대부분의 사용자는 일반적으로 보호된 메일 또는 파일을 열어야 할 때 Azure Information Protection 앱을 자동으로 사용합니다. 하지만 사용자를 위해 앱을 테스트하려는 관리자이거나 단순히 필요하기 전에 사용해 보려는 경우 다음 지침을 따르면 됩니다.
+이 페이지에서 지침을 사용하기 전에 [iOS 및 Android용 Azure Information Protection 앱에 대한 FAQ](mobile-app-faq.md)를 읽도록 합니다. 해당 페이지에서는 앱의 기능, 지원되는 장치 및 앱을 사용하는 방법에 대한 기본 정보를 설명합니다.
 
-모바일 장치에서 뷰어의 작동을 확인하려면 앱에서 지원하는 파일 중 하나에 액세스해야 합니다. 예를 들면 다음과 같습니다.
+대부분의 사용자는 일반적으로 보호된 메일 또는 파일을 열어야 할 때 Azure Information Protection 앱을 사용합니다. 하지만 사용자를 위해 앱을 테스트하려는 관리자이거나 단순히 필요하기 전에 사용해 보려는 경우 다음 지침을 따르면 됩니다.
+
+> [!NOTE]
+> 먼저 앱을 열지 않고 확인할 문서와 전자 메일을 선택합니다. 대신, 문서 또는 전자 메일을 열고 이 앱을 선택하여 문서 또는 전자 메일을 확인합니다.
+>
+> 마찬가지로 메시지가 표시될 때까지 앱에 로그인하지 않습니다.
+
+다음 지침을 사용하려면 모바일 장치에서 앱이 지원하는 파일 중 하나로 액세스해야 합니다. 예를 들면 다음과 같습니다.
 
 - **.rpmsg 파일**: 이 권한으로 보호된 메일 메시지는 모바일 장치의 메일 앱에서 권한 관리 데이터 보호를 기본적으로 지원하지 않는 경우 메일 메시지의 첨부 파일로 표시됩니다. 
     
@@ -39,8 +46,8 @@ Azure Information Protection 뷰어 응용 프로그램에서 이러한 파일�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 앱에 대한 다른 질문이 있는 경우 [iOS 및 Android용 Azure Information Protection 앱에 대한 FAQ](mobile-app-faq.md)에 있는지 확인하세요. 
+[FAQ](mobile-app-faq.md)에서 다루지 않는 이 앱에 대한 질문 또는 피드백은 [Yammer 사이트](https://www.yammer.com/AskIPTeam)를 방문하세요.
 
-다른 질문의 경우, [Yammer 사이트](https://www.yammer.com/AskIPTeam)를 방문하거나 [Information Protection 팀에 메일을 보내 주세요](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
+앱이 설명된 대로 작동하지 않으면 [기본 규칙](../house-rules.md) 페이지에 나열된 리소스를 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

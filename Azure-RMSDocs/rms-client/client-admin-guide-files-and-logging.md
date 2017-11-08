@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 클라�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d1802fbd3c659b154d585224a3f7b412b8995e5b
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 64e6e17beb134fca1e51b35b39ff9f130c88ecbb
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="azure-information-protection-client-files-and-client-usage-logging"></a>Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
+# <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>관리자 가이드: Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -76,9 +76,9 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
     
     - 시스템(로그인 및 다운로드 정책용)
     
-    - DefaultAutomatic
+    - Default
         
-        이 **DefaultAutomatic** 원본 작업은 미리 보기 클라이언트 전용이며, Azure Information Protection 정책에서 **기본 레이블 선택**을 사용하여 설정된 레이블을 참조합니다.
+        이 **Default** 원본 작업은 미리 보기 클라이언트 전용이며, Azure Information Protection 정책에서 **기본 레이블 선택**을 사용하여 설정된 레이블을 참조합니다.
 
     
 - 작업 전/후의 레이블 

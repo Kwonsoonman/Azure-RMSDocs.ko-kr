@@ -4,24 +4,21 @@ description: "Azure Information Protection 정책에서 언어를 지정하고 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 76650461c0af6e705f7ab124d31cdb598889bbc8
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: 7a77b517531d5b4586871abbcb22d2158673d56c
+ms.sourcegitcommit: 222318da363a45c3a533f7b77b02f4e31a258979
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿을 구성하는 방법
 
 >*적용 대상: Azure Information Protection*
-
->[!NOTE]
->이 기능은 현재 미리 보기로 제공됩니다.
 
 Azure Information Protection의 기본 레이블이 여러 언어를 지원하더라도 지정하는 레이블 이름 및 설명에 대한 지원을 구성해야 합니다. 이 구성을 사용하려면 다음을 수행해야 합니다.
 
@@ -47,11 +44,11 @@ Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어�
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. **관리** 메뉴 선택에서 **언어(미리 보기)**를 선택합니다.
+2. **관리** 메뉴 선택에서 **언어**를 선택합니다.
 
-3. **Azure Information Protection - 언어(미리 보기)** 블레이드에서 **번역할 새 언어 추가**를 선택합니다. 추가할 언어를 선택한 다음 **확인**을 선택합니다. 검색 상자에 언어 이름을 입력하거나 사용 가능한 언어 목록을 스크롤할 수 있습니다.
+3. **Azure Information Protection - 언어** 블레이드에서 **번역할 새 언어 추가**를 선택합니다. 추가할 언어를 선택한 다음 **확인**을 선택합니다. 검색 상자에 언어 이름을 입력하거나 사용 가능한 언어 목록을 스크롤할 수 있습니다.
 
-4. 이제 **Azure Information Protection - 언어(미리 보기)** 블레이드에 선택한 언어가 표시됩니다.
+4. 이제 **Azure Information Protection - 언어** 블레이드에 선택한 언어가 표시됩니다.
     
     - 다른 언어를 추가하려면 **번역할 새 언어 추가**를 선택하고 이전 단계를 반복합니다. 
         
@@ -70,7 +67,7 @@ Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어�
 
 8. 각 .xml 파일을 편집한 경우 이러한 파일이 포함된 새 압축(zip) 폴더를 만듭니다. 압축한 폴더에는 이름을 지정할 수 이지만 확장명은 .zip이어야 합니다.
 
-9. **Azure Information Protection - 언어(미리 보기)** 블레이드로 돌아가서 **가져오기**를 선택합니다. 이 옵션을 사용할 수 없으면 **언어 이름**에 대한 확인란 또는 개별적으로 선택한 언어에 대한 확인란을 선택 취소합니다.
+9. **Azure Information Protection - 언어** 블레이드로 돌아가서 **가져오기**를 선택합니다. 이 옵션을 사용할 수 없으면 **언어 이름**에 대한 확인란 또는 개별적으로 선택한 언어에 대한 확인란을 선택 취소합니다.
     
     가져오기가 완료되면 다음에 Azure Information Protection 정책을 게시한 후 지역화된 이름 및 설명이 사용자에게 다운로드됩니다. **전역 정책** 또는 **범위 정책** 블레이드에서 **게시**를 클릭할 수 있습니다.
 

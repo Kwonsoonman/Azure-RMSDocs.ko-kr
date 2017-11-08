@@ -4,7 +4,7 @@ description: "Azure RMS(Rights Management) 커넥터를 사용할 온-프레미�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 10/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8837b6187aee8bc041df7185527470297e913f49
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 674acfafb305d8ac6ff530710ba311160c850288
+ms.sourcegitcommit: 8ba50d1fc813214b6e66baea140e626c74c5a518
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/16/2017
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터에 대해 서버 구성
 
@@ -198,7 +198,7 @@ SharePoint 2010을 실행하는 서버에는 RMS 암호화 모드 2에 대한 �
 
 ### <a name="to-configure-sharepoint-servers-to-use-the-connector"></a>커넥터를 사용하도록 SharePoint Server를 구성하려면
 
-1. RMS 커넥터 관리 도구와 [RMS 커넥터를 사용하도록 서버에 권한 부여](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector) 섹션의 정보를 사용하여 SharePoint 서버에 RMS 커넥터를 사용할 권한이 있는지 확인합니다. 이 구성은 Exchange에서 RMS 커넥터를 사용하는 데 필요합니다.
+1. RMS 커넥터 관리 도구와 [RMS 커넥터를 사용하도록 서버에 권한 부여](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector) 섹션의 정보를 사용하여 SharePoint 서버에 RMS 커넥터를 사용할 권한이 있는지 확인합니다. 이 구성은 SharePoint 서버에서 RMS 커넥터를 사용하는 데 필요합니다.
 
 2.  RMS 커넥터와 통신하는 SharePoint 서버에 대해 다음 중 하나를 수행합니다.
 
@@ -230,7 +230,7 @@ RMS 커넥터 및 파일 분류 인프라를 사용하여 Office 문서를 보�
 
 ### <a name="to-configure-file-servers-to-use-the-connector"></a>커넥터를 사용하도록 파일 서버를 구성하려면
 
-1.  RMS 커넥터 관리 도구와 [RMS 커넥터를 사용하도록 서버에 권한 부여](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector) 섹션의 정보를 사용하여 파일 서버에 RMS 커넥터를 사용할 권한이 있는지 확인합니다. 이 구성은 Exchange에서 RMS 커넥터를 사용하는 데 필요합니다.
+1.  RMS 커넥터 관리 도구와 [RMS 커넥터를 사용하도록 서버에 권한 부여](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector) 섹션의 정보를 사용하여 파일 서버에 RMS 커넥터를 사용할 권한이 있는지 확인합니다. 이 구성은 파일 서버에서 RMS 커넥터를 사용하는 데 필요합니다.
 
 2.  파일 분류 인프라용으로 구성되어 있고 RMS 커넥터와 통신할 파일 서버에서 다음 중 하나를 수행합니다.
 

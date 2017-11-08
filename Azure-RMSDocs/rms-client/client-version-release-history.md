@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,26 +12,32 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ccd6d0cec6a71527fad0303369baad90dd733958
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: ec73c1e0c0c2d5ef959f15975b2a972086a3bcff
+ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="azure-information-protection-client-version-release-history"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록
 
 >*적용 대상: Azure Information Protection*
 
-Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 이 클라이언트는 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에 포함되어 있으며, 언제든지 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 GA(일반 공급) 릴리스 버전 및 이후 버전(미리 보기 버전)을 다운로드할 수 있습니다.
+Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 이 클라이언트는 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에 포함되어 있으며, 언제든지 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 GA(일반 공급) 릴리스 버전 및 현재 미리 보기 버전을 다운로드할 수 있습니다. 
 
 미리 보기 버전을 프로덕션 네트워크의 최종 사용자에게 배포해서는 안 됩니다. 대신, 미리 보기 버전을 통해 다음 GA 버전의 새로운 기능 또는 수정 사항을 확인하고 사용해 볼 수 있습니다. 
 
-GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 정보를 참조하세요. 가장 최근 릴리스가 먼저 나열됩니다. 현재 미리 보기 버전에 대한 변경 내용은 다운로드 페이지의 정보를 참조하세요.
+GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 정보를 참조하세요. 가장 최근 릴리스가 먼저 나열됩니다. 
 
 > [!NOTE]
 > 사소한 수정 사항은 나열되지 않으므로 Azure Information Protection 클라이언트에 문제가 있는 경우 먼저 최신 GA 릴리스의 문제가 아닌지 확인하세요. 문제에 해당하는 경우 현재 미리 보기 버전을 확인하세요.
 >  
-> 문제가 지속되면 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
+> 기술 지원의 경우 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
+
+## <a name="versions-later-than-110560"></a>1.10.56.0 이상 버전
+
+1.10.56.0 이상 버전의 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다. 
+
+클라이언트의 최신 GA 버전부터 현재 미리 보기 버전에서 새로운 기능 및 변경 내용은 [다운로드 페이지](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 **세부 정보** 섹션을 참조하세요. 
 
 ## <a name="version-110560"></a>버전 1.10.56.0
 
@@ -41,9 +47,9 @@ GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 �
 
 **새로운 기능**:
 
-- 사용자 정의 작업에 대해 구성된 레이블을 지원합니다. Outlook의 경우 이 레이블에 따라 자동으로 Outlook 전달 금지 옵션이 적용됩니다. Word, Excel, PowerPoint 및 파일 탐색기의 경우 이 레이블에 따라 사용자 지정 권한을 지정하라는 메시지가 사용자에게 표시됩니다. 자세한 내용은 [보호에 대해 Azure Information Protection 레이블 구성](../deploy-use/configure-policy-protection.md)을 참조하세요.
-
 - 레이블에 대해 구성할 수 있는 새로운 Office 365 DLP 조건을 지원합니다. 자세한 내용은 [Azure Information Protection 레이블에 대한 조건 구성](../deploy-use/configure-policy-classification.md)을 참조하세요.
+
+- 사용자 정의 작업에 대해 구성된 레이블을 지원합니다. Outlook의 경우 이 레이블에 따라 자동으로 Outlook 전달 금지 옵션이 적용됩니다. Word, Excel, PowerPoint 및 파일 탐색기의 경우 이 레이블에 따라 사용자 지정 권한을 지정하라는 메시지가 사용자에게 표시됩니다. 자세한 내용은 [보호에 대해 Azure Information Protection 레이블 구성](../deploy-use/configure-policy-protection.md)을 참조하세요.
 
 - 레이블은 Information Protection 표시줄뿐만 아니라 Office 리본의 **보호** 단추에도 표시됩니다. 
 
@@ -115,7 +121,7 @@ GA 릴리스의 새로운 기능이나 변경 사항을 확인하려면 다음 �
 
 **요구 사항 변경:**
 
-이전 버전에서 전체 클라이언트에 새로 Microsoft .NET Framework 4.6.2 필수 조건이 도입되었습니다. 권장되지는 않지만, 사용자 지정 매개 변수 **DowngradeDotNetRequirement**을 사용하면 이 필수 조건을 무시할 수 있습니다. 자세한 내용은 관리자 가이드의 [클라이언트 설치 섹션](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)을 참조하세요.
+이전 버전에서 전체 클라이언트에 새로 Microsoft .NET Framework 4.6.2 필수 조건이 도입되었습니다. 권장되지는 않지만, 사용자 지정 매개 변수 **DowngradeDotNetRequirement**을 사용하면 이 필수 조건을 무시할 수 있습니다. 자세한 정보는 관리자 가이드에서 [사용자를 위해 Azure Information Protection 클라이언트 설치](client-admin-guide-install.md)를 참조하세요.
 
 **새로운 기능**:
 
@@ -169,7 +175,7 @@ Microsoft .NET Framework
 
 - Azure Information Protection 클라이언트가 설치되면 사용자가 Office 응용 프로그램에서 실행할 수 있는 진단 테스트 및 다시 설정 옵션: **홈** 탭의 **보호** 그룹에서 **보호**를 클릭하고 **도움말 및 피드백**을 클릭한 다음 **진단 실행**을 클릭합니다. 
 
-    이 옵션에 대한 자세한 내용은 관리자 가이드의 [추가 검사 및 문제 해결](client-admin-guide.md#additional-checks-and-troubleshooting) 섹션을 참조하세요.
+    이 옵션에 대한 자세한 내용은 관리자 가이드의 [추가 검사 및 문제 해결](client-admin-guide.md#installation-checks-and-troubleshooting) 섹션을 참조하세요.
 
 **수정 사항**:
 

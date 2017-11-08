@@ -4,17 +4,17 @@ description: "레이블에 대한 조건을 구성할 때 문서 또는 메일�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: aa41d4f34f0ed43682f9ba426ec18204457980c3
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 1c37f1b05126b8e8d9a5e64f033c503f27a8a1fc
+ms.sourcegitcommit: a8140a7215c8704f34c247f602e1f12eb7b49aa2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -22,22 +22,9 @@ ms.lasthandoff: 09/18/2017
 
 레이블에 대한 조건을 구성할 때 문서 또는 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다. 
 
-- Word, Excel 및 PowerPoint의 경우 파일이 저장될 때 자동 분류가 적용되고, Outlook의 경우 메일이 전송될 때 자동 분류가 적용됩니다. 이전에 수동으로 레이블을 지정한 파일에는 자동 분류를 사용할 수 없습니다.
- 
-- 권장 분류는 파일이 저장될 때 Word, Excel 및 PowerPoint에 적용됩니다.
+이러한 조건을 구성할 때 **신용 카드 번호** 또는 **SSN(사회 보장 번호)**과 같은 미리 정의된 패턴을 사용할 수 있습니다. 또는 자동 분류에 대한 조건으로 사용자 지정 문자열 또는 패턴을 정의할 수 있습니다. 이러한 조건은 문서와 메일의 본문 텍스트 및 머리글과 바닥글에 적용됩니다. 조건에 대한 자세한 내용은 [다음 절차](#to-configure-recommended-or-automatic-classification-for-a-label)의 5단계를 참조하세요.
 
-조건을 구성할 때 **신용 카드 번호** 또는 **주민등록번호**와 같은 미리 정의된 패턴을 사용할 수 있습니다. 또는 자동 분류에 대한 조건으로 사용자 지정 문자열 또는 패턴을 정의할 수 있습니다. 이러한 조건은 문서와 메일의 본문 텍스트 및 머리글과 바닥글에 적용됩니다. 조건에 대한 자세한 내용은 [다음 절차](#to-configure-recommended-or-automatic-classification-for-a-label)의 5단계를 참조하세요.
-
-둘 이상의 레이블에 적용할 때 여러 조건을 평가하는 방법:
-
-1. 레이블은 정책에서 지정한 해당 위치에 따라 평가 순서가 결정됩니다. 첫 번째에 위치한 레이블이 최하위 위치(민감도가 가장 낮음)이고 마지막에 위치한 레이블이 최상위 위치(민감도가 가장 높음)입니다.
-
-2. 민감도가 가장 높은 레이블이 적용됩니다.
- 
-3. 마지막 하위 레이블이 적용됩니다.
-
-> [!TIP]
->최상의 사용자 환경과 비즈니스 연속성 보장을 위해 자동 분류보다 사용자 권장 분류로 시작하는 것이 좋습니다. 이 구성을 사용하면 사용자가 레이블 지정 또는 보호 작업을 수락하거나, 이 작업이 자신의 문서 또는 메일 메시지에 적합하지 않은 경우 이러한 제안을 재정의할 수 있습니다.
+최상의 사용자 환경과 비즈니스 연속성 보장을 위해 자동 분류보다 사용자 권장 분류로 시작하는 것이 좋습니다. 이 구성을 통해 사용자가 분류 및 연결된 보호를 수락하거나, 이러한 제안이 해당 문서 또는 메일 메시지에 적합하지 않은 경우 재정의할 수 있습니다.
 
 레이블을 권장 작업으로 적용하도록 조건을 구성할 때 표시되는 예제 메시지 및 사용자 지정 정책 팁은 다음과 같습니다.
 
@@ -45,10 +32,54 @@ ms.lasthandoff: 09/18/2017
 
 이 예제에서는 사용자가 **Change now**(지금 변경)를 클릭하여 권장 레이블을 적용하거나, **Dismiss**(해제)를 선택하여 권장 사항을 재정의할 수 있습니다.
 
+> [!IMPORTANT]
+>자동 분류 및 사용자 정의 권한에 대한 레이블을 구성하지 않습니다. 사용자 정의 권한 옵션은 사용자가 권한을 부여받아야 하는 사용자를 지정하도록 하는 [보호 설정](configure-policy-protection.md)입니다.
+>
+>자동 분류 및 사용자 지정 권한에 대한 레이블을 구성하는 경우 조건에 대한 콘텐츠를 검사하고 사용자 정의 권한 설정을 적용하지 않습니다. 권장 분류 및 사용자 정의 권한을 사용할 수 있습니다.
+
+## <a name="how-automatic-or-recommended-labels-are-applied"></a>자동 또는 권장 레이블을 적용하는 방법
+
+**Azure Information Protection 클라이언트의 일반 공급 버전의 경우:**
+
+- Word, Excel 및 PowerPoint의 경우 문서가 저장될 때 자동 분류가 적용되고, Outlook의 경우 메일이 전송될 때 자동 분류가 적용됩니다. 
+    
+    이전에 수동으로 레이블이 지정되거나 더 높은 분류에서 이전에 자동으로 레이블이 지정된 문서 및 전자 메일에 자동 분류를 사용할 수 없습니다. 
+
+- 권장 분류는 문서가 저장될 때 Word, Excel 및 PowerPoint에 적용됩니다. Outlook에 권장 분류를 사용할 수 없습니다.
+    
+    더 높은 분류와 상관 없이 이전에 레이블이 지정된 문서에 권장 분류를 사용할 수 있습니다. 
+
+
+**Azure Information Protection 클라이언트의 현재 미리 보기 버전의 경우:**
+
+- 자동 분류는 Word, Excel, PowerPoint 및 Outlook에 적용됩니다. 문서의 경우 자동 분류는 [백그라운드에서 지속적으로](#more-information-about-running-continuously) 실행됩니다. Outlook의 경우 메일을 전송할 때 자동 분류가 실행됩니다. 
+    
+    이전에 수동으로 레이블이 지정되거나 더 높은 분류에서 이전에 자동으로 레이블이 지정된 문서에 자동 분류를 사용할 수 없습니다. 이 동작의 예외는 OverrideLabel 매개 변수가 설정된 Azure Information Protection 스캐너를 사용하는 경우입니다.
+
+- 권장 분류는 Word, Excel 및 PowerPoint에 적용됩니다. 이러한 문서의 경우 권장 분류는 [백그라운드에서 지속적으로](#more-information-about-running-continuously) 실행됩니다. Outlook에 권장 분류를 사용할 수 없습니다.
+    
+    더 높은 분류와 상관 없이 이전에 레이블이 지정된 문서에 권장 분류를 사용할 수 있습니다. 
+
+#### <a name="more-information-about-running-continuously"></a>지속적인 실행에 대한 자세한 정보
+
+현재 미리 보기 버전의 Azure Information Protection 클라이언트는 사용자가 지정한 조건 규칙에 대한 문서를 정기적으로 검사합니다. 이 동작을 사용하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류 및 보호를 사용할 수 있습니다. 조건 규칙을 이미 실행했기 때문에 큰 파일도 더 신속하게 저장됩니다. 
+
+조건 규칙은 사용자 형식으로 실시간으로 실행되지 않습니다. 대신, 문서를 수정할 때 주기적으로 백그라운드 작업으로 실행됩니다. 
+
+### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>둘 이상의 레이블에 적용할 때 여러 조건을 평가하는 방법
+
+Azure Information Protection 클라이언트의 일반 공급 버전 및 현재 미리 보기 클라이언트의 경우
+
+1. 레이블은 정책에서 지정한 해당 위치에 따라 평가 순서가 결정됩니다. 첫 번째에 위치한 레이블이 최하위 위치(민감도가 가장 낮음)이고 마지막에 위치한 레이블이 최상위 위치(민감도가 가장 높음)입니다.
+
+2. 민감도가 가장 높은 레이블이 적용됩니다.
+ 
+3. 마지막 하위 레이블이 적용됩니다.
+
+
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>레이블에 대한 권장 또는 자동 분류를 구성하려면
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
-    
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다.     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. 구성하려는 레이블을 모든 사용자에게 적용하려는 경우 **Azure Information Protection - 전역 정책** 블레이드에 그대로 있습니다.
@@ -86,8 +117,9 @@ ms.lasthandoff: 09/18/2017
 
 ## <a name="next-steps"></a>다음 단계
 
-Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
+[Azure Information Protection 스캐너](deploy-aip-scanner.md)를 배포하는 것이 좋습니다. 그러면 자동 분류 규칙을 사용하여 네트워크 공유 및 온-프레미스 파일 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.  
+
+Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
-
 

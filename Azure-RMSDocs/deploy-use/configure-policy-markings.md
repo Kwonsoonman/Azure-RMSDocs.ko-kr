@@ -4,17 +4,17 @@ description: "문서 또는 메일 메시지에 레이블을 할당하는 경우
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0da5df139d98f0468f49e7e3f17cd1cd2358a015
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: ff444afb1912239ec817882c76fc735f6d35ed1e
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -93,6 +93,8 @@ ms.lasthandoff: 09/22/2017
 이 설정은 현재 미리 보기로 있습니다.
 
 굴림은 머리글, 바닥 글 및 워터마크 텍스트에 대한 기본 글꼴입니다. 대체 글꼴 이름을 지정하는 경우 시각적 표식을 적용할 클라이언트 장치에서 사용할 수 있는지 확인합니다. 그렇지 않으면 사용할 글꼴이 명확하지 않습니다. 
+
+Azure Information Protection 클라이언트의 미리 보기 버전이 설치되어 있고 지정된 글꼴을 사용할 수 없는 경우 클라이언트는 Calibri 글꼴을 사용하도록 대체합니다.
 
 ### <a name="setting-the-font-color"></a>글꼴 색 설정
 

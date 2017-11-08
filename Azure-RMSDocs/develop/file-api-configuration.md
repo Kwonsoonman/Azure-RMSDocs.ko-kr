@@ -5,20 +5,20 @@ keywords:
 author: bruceperlerms
 ms.author: bruceper
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 10/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
-ms.reviewer: shubhamp
+ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 42c772b870c700da84d5dfaf04c1ac5c2cd51f96
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 252300e1d370a0c9b8260fb93315782dd01787c7
+ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="file-api-configuration"></a>파일 API 구성
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 06/30/2017
 -   **기본 보호** - MIME 형식(파일 이름 확장명)을 기반으로 하는 AD RMS 형식으로 파일이 보호됩니다.
 -   **PFile 보호** - AD RMS PFile(보호된 파일) 형식으로 파일이 보호됩니다.
 
-지원되는 파일 형식에 대한 자세한 내용은 이 항목에서 **파일 API 파일 지원 세부 정보**를 참조하세요.
+지원되는 파일 형식에 대한 자세한 내용은 이 문서에서 **파일 API 파일 지원 세부 정보**를 참조하세요.
 
 ## <a name="keykey-value-types-and-descriptions"></a>키/키 값 형식 및 설명
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 06/30/2017
 - 확장명이 없는 파일을 지정하려면 '.'을 사용합니다.
 - 특정 파일 확장명에 대한 키를 지정할 때는 '.' 문자를 지정하지 마세요. 예를 들어 `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\TXT`를 사용하여 .txt 파일에 대한 설정을 지정합니다. `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\.TXT`를 사용하지 마세요.
 
-키의 **Encryption** 값을 설정하여 보호 동작을 지정합니다. **Encryption** 값을 설정하지 않으면 파일 형식에 대한 기본 동작을 따릅니다.
+보호 동작을 지정하려면 키의 **Encryption** 값을 설정합니다. **Encryption** 값을 설정하지 않으면 파일 형식에 대한 기본 동작을 따릅니다.
 
 
 ### `HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\FileProtection\<EXT>\Encryption*`
@@ -66,7 +66,7 @@ ms.lasthandoff: 06/30/2017
 > [!Note]
 > 이 설정은 암호 해독과 아무 관계도 없습니다. 기본 보호 또는 Pfile 보호를 통해 암호화되었는지와 관계없이, 사용자에게 **EXTRACT** 권한이 있는 한 암호화된 파일의 암호를 해독할 수 있습니다.
 
-- **Native**: 기본 암호화가 사용됩니다. Office 파일의 경우 암호화된 파일의 확장명이 원본 파일과 같습니다. 예를 들어 .docx 파일 확장명을 가진 파일은 .docx 확장명을 가진 파일로 암호화됩니다. 기본 보호를 적용할 수 있는 기타 파일의 경우 p*zzz* 형식의 확장명을 가진 파일로 암호화됩니다. 여기서 *zzz*는 원래 파일 확장명입니다. 예를 들어 .txt 파일은 확장명이 .ptxt인 파일로 암호화됩니다. 아래에는 기본 보호를 적용할 수 있는 파일 확장명 목록이 나와 있습니다.
+- **Native**: 기본 암호화가 사용됩니다. Office 파일의 경우 암호화된 파일의 확장명이 원본 파일과 같습니다. 예를 들어 .docx 파일 확장명을 가진 파일은 .docx 확장명을 가진 파일로 암호화됩니다. 기본 보호를 적용할 수 있는 기타 파일의 경우 p*zzz* 형식의 확장명을 가진 파일로 암호화됩니다. 여기서 *zzz*는 원래 파일 확장명입니다. 예를 들어 .txt 파일은 확장명이 .ptxt인 파일로 암호화됩니다. 기본 보호를 적용할 수 있는 파일 확장명 목록은 다음과 같습니다.
 
 - **Pfile**: PFile 암호화가 사용됩니다. 암호화된 파일은 원래 확장명에 .pfile이 추가됩니다. 예를 들어 암호화 후에 .txt 파일은 .txt.pfile 확장명을 사용합니다.
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 06/30/2017
 
 **Office 파일**
 
--   파일 확장명: doc, dot, xla, xls, xlt, pps, ppt, docm, docx, dotm, dotx, xlam, xlsb, xlsm, xlsx, xltm, xltx, xps, potm, potx, ppsx, ppsm, pptm, pptx, thmx
+-   파일 확장명: doc, dot, xla, xls, xlt, pps, ppt, docm, docx, dotm, dotx, xlam, xlsb, xlsm, xlsx, xltm, xltx, xps, potm, potx, ppsx, ppsm, pptm, pptx, thmx, vsdx, vsdm, vssx, vssm, vstx, vstm 
 -   보호 유형 = 기본(기본값): sample.docx가 sample.docx로 암호화됩니다.
 -   보호 유형 = Pfile: Office 파일의 경우 기본 보호와 동일한 효과가 있습니다.
 -   Off: 암호화를 사용하지 않도록 설정합니다.
@@ -146,7 +146,7 @@ HKEY_LOCAL_MACHINE
                   Encryption = Off
 ```
 
-## <a name="related-topics"></a>관련 항목
+## <a name="related-articles"></a>관련된 문서
 
 - [개발자 노트](developer-notes.md)
 - [IPCERROR\_FILE\_ENCRYPT\_BLOCKED](https://msdn.microsoft.com/library/hh535248.aspx)

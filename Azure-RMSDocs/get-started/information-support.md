@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2017
+ms.date: 10/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 00167de7ff0c4448c558473bbd429e08a5615c6b
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 25a3baea4b1a25f23e06cc785d12f439c28ca8ea
+ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -83,7 +83,7 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility and Security Blo
 
 - 온-프레미스 서버를 위한 Rights Management 커넥터를 배포한 경우에는 이벤트 로그 항목, 성능 카운터 및 로깅에 대한 세부 정보를 포함하는 [모니터링](../deploy-use/monitor-rms-connector.md) 정보를 참조하세요.
 
-- Windows용 Azure Information Protection 클라이언트의 경우: 관리자 가이드에서 [추가 검사 및 문제 해결](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting) 섹션을 참조하세요.
+- Windows용 Azure Information Protection 클라이언트는 관리자 가이드에서 [설치 검사 및 문제 해결](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) 섹션을 참조하세요.
 
 ### <a name="community-resources"></a>커뮤니티 리소스
 

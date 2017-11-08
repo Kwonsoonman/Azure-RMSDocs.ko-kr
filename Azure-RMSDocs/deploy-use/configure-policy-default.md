@@ -4,17 +4,17 @@ description: "Azure Information Protection에 대한 기본 정책을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 712d273e735d2c9fc791a1f15c3f8dc9e917a1c3
-ms.sourcegitcommit: 5bcb916106021f624a69d620bbcc2c4a51398771
+ms.openlocfilehash: 86b04d47797f7e3201dd4fd7b7e5a9c662254d12
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="the-default-azure-information-protection-policy"></a>기본 Azure Information Protection 정책
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 08/30/2017
 
 보호가 **모든 직원** 하위 레벨에 적용된 경우 Azure 포털에서 레이블로 자동 전환되는 기본 템플릿을 사용하여 보호가 구성됩니다. 이 템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
 
-2017년 8월 30일부터 이 버전의 기본 정책에는 레이블 이름 및 설명의 번역된 버전이 포함됩니다. 
+2017년 8월 30일부터 이 버전의 기본 정책에는 여러 언어의 레이블 이름 및 설명이 포함됩니다. 
 
 #### <a name="more-information-about-the-recipients-only-sub-label"></a>받는 사람만 하위 레벨에 대한 자세한 내용
 
@@ -68,10 +68,10 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 |Label|도구 설명|설정|
 |-------------------------------|---------------------------|-----------------|
-|기밀 \ 모든 직원|모든 직원에게 전체 권한을 허용하는 보호가 필요한 기밀 데이터입니다. 데이터 소유자는 콘텐츠를 추적하고 해지할 수 있습니다.|**사용**: 켜기 <br /><br />**시각적 표시**: 바닥글(문서 및 메일)<br /><br />기밀로 분류됨<br /><br />**조건**: 없음<br /><br />**보호**: Azure RMS [[1]](#footnote-1)|
+|기밀 \ 모든 직원|모든 직원에게 전체 권한을 허용하는 보호가 필요한 기밀 데이터입니다. 데이터 소유자는 콘텐츠를 추적하고 해지할 수 있습니다.|**사용**: 켜기 <br /><br />**시각적 표시**: 바닥글(문서 및 메일)<br /><br />기밀로 분류됨<br /><br />**조건**: 없음<br /><br />**보호**: Azure(클라우드 키)[[1]](#footnote-1)|
 |기밀 \ 모든 사람(보호되지 않음)|보호가 필요하지 않은 데이터입니다. 이 옵션은 적절한 비즈니스 근거를 바탕으로 신중히 사용하세요.|**사용**: 켜기 <br /><br />**시각적 표시**: 바닥글(문서 및 메일)<br /><br />기밀로 분류됨 <br /><br />**조건**: 없음<br /><br />**보호**: 없음|
 |Confidential \ Recipients Only|보호가 필요하며 받는 사람만 볼 수 있는 기밀 데이터입니다.|**사용**: 켜기 <br /><br />**시각적 표시**: 바닥글(메일)<br /><br />기밀로 분류됨 <br /><br />**조건**: 없음<br /><br />**보호**: 사용자 정의 권한 설정(미리 보기), Outlook에서 전달 금지 적용|
-|극비 \ 모든 직원|모든 직원에게 이 콘텐츠에 대한 보기, 편집 및 회신 권한을 허용하는 극비 데이터입니다. 데이터 소유자는 콘텐츠를 추적하고 해지할 수 있습니다.|**사용**: 켜기 <br /><br />**시각적 표시**: 바닥글(문서 및 메일)<br /><br />극비로 분류됨<br /><br />**조건**: 없음<br /><br />**보호**: Azure RMS [[2]](#footnote-2)|
+|극비 \ 모든 직원|모든 직원에게 이 콘텐츠에 대한 보기, 편집 및 회신 권한을 허용하는 극비 데이터입니다. 데이터 소유자는 콘텐츠를 추적하고 해지할 수 있습니다.|**사용**: 켜기 <br /><br />**시각적 표시**: 바닥글(문서 및 메일)<br /><br />극비로 분류됨<br /><br />**조건**: 없음<br /><br />**보호**: Azure(클라우드 키)[[2]](#footnote-2)|
 |극비 \ 모든 사람(보호되지 않음)|보호가 필요하지 않은 데이터입니다. 이 옵션은 적절한 비즈니스 근거를 바탕으로 신중히 사용하세요.|**사용**: 켜기 <br /><br />**시각적 표시**: 바닥글(문서 및 메일)<br /><br />극비로 분류됨<br /><br />**조건**: 없음<br /><br />**보호**: 없음|
 |Highly Confidential \ Recipients Only|보호가 필요하며 받는 사람만 볼 수 있는 극비 데이터입니다.|**사용**: 켜기 <br /><br />**시각적 표시**: 바닥글(메일)<br /><br />극비로 분류됨 <br /><br />**조건**: 없음<br /><br />**보호**: 사용자 정의 권한 설정(미리 보기), Outlook에서 전달 금지 적용|
 
@@ -103,7 +103,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 ## <a name="default-policy-before-july-31-2017"></a>2017년 7월 31일 이전의 기본 정책
 
-이 정책의 설명에서는 보호가 필요한 데이터를 참조하고 데이터 추적 및 해지도 참조합니다. 정책에서는 이러한 레이블에 대해 이 보호를 구성하지 않으므로 이 설명을 준수하기 위한 추가 단계를 수행해야 합니다. 예를 들어 Azure RMS 보호를 적용하거나 DLP(데이터 손실 방지) 솔루션을 사용하도록 레이블을 구성합니다. 문서 추적 사이트를 사용하여 문서를 추적하고 해지하려면 먼저 문서를 Azure RMS로 보호해야 하며, 문서를 보호한 사람이 추적해야 합니다. 
+이 정책의 설명에서는 보호가 필요한 데이터를 참조하고 데이터 추적 및 해지도 참조합니다. 정책에서는 이러한 레이블에 대해 이 보호를 구성하지 않으므로 이 설명을 준수하기 위한 추가 단계를 수행해야 합니다. 예를 들어 보호를 적용하거나 DLP(데이터 손실 방지) 솔루션을 사용하도록 레이블을 구성합니다. 문서 추적 사이트를 사용하여 문서를 추적하고 해지하려면 먼저 문서를 Azure Rights Management 서비스로 보호해야 하며, 문서를 보호한 사람이 추적해야 합니다. 
 
 
 ### <a name="labels"></a>레이블입니다.

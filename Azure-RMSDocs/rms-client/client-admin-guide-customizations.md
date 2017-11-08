@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d5345f794fb69ddbfb4d6ffcddfcffd41ecacff5
-ms.sourcegitcommit: ff2fadacf9ef4c6ee27d9d08c4c455ffd48f21f8
+ms.openlocfilehash: 304425a2c64fb306615bbd5c6edf5e78e10b8e80
+ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 10/30/2017
 ---
-# <a name="custom-configurations-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용자 지정 구성
+# <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -167,6 +167,8 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 ## <a name="enable-recommended-classification-in-outlook"></a>Outlook에서 권장 분류 사용
 
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
+
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다.
 
 권장 분류에 대한 레이블을 구성하면 Word, Excel 및 PowerPoint에서 권장 레이블을 적용할지 또는 해제할지 묻는 메시지가 표시됩니다. 이 설정은 이 레이블 권장 사항을 확장하여 Outlook에도 표시합니다.
@@ -180,11 +182,11 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 ## <a name="set-a-different-default-label-for-outlook"></a>Outlook에 대한 다른 기본 레이블 설정
 
-이 구성 옵션은 현재 미리 보기 상태이며, 미리 보기 버전의 클라이언트가 필요합니다.
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 이 구성 옵션에는 미리 보기 버전의 클라이언트가 필요합니다.
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
-이 설정을 구성하면 Outlook에서 **기본 레이블 선택** 설정의 Azure Information Protection 정책에 구성된 기본 레이블을 적용하지 않습니다. 대신 Outlook에서 다른 레이블을 적용할 수 있거나 레이블이 적용되지 않습니다.
+이 설정을 구성하면 Outlook에서 **기본 레이블 선택** 설정의 Azure Information Protection 정책에 구성된 기본 레이블을 적용하지 않습니다. 대신 Outlook에서 다른 기본 레이블을 적용할 수 있거나 레이블을 적용하지 않습니다.
 
 다른 레이블을 적용하려면 레이블 ID를 지정해야 합니다. Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는 경우 레이블 ID 값이 **레이블** 블레이드에 표시됩니다. 레이블이 적용된 파일의 경우 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet을 실행하여 레이블 ID(MainLabelId 또는 SubLabelId)를 확인할 수도 있습니다. 레이블에 하위 레이블이 있는 경우 항상 부모 레이블이 아니라 하위 레이블의 ID만 지정합니다.
 

@@ -1,10 +1,10 @@
 ---
-title: "Azure Information Protection을 사용하여 분류 및 보호"
+title: "Azure Information Protection을 사용하여 파일 및 전자 메일 분류 및 보호"
 description: "문서와 전자 메일을 분류하고 보호하는 방법에 대한 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 996835254652a307f66c472fdc74707a59041fe0
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: bbd2d81149dd860d7707b6eee83dacce9c13dd54
+ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 11/03/2017
 ---
-# <a name="classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
+# <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
 >*적용 대상: Active Directory Rights Management 서비스, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
+
+> [!NOTE]
+> 이러한 지침을 사용하여 문서와 전자 메일을 분류하고 보호할 수 있도록 합니다. 문서와 전자 메일을 분류하기만 하고 보호하지 않아야 하는 경우 [분류 전용 지침](client-classify-protect.md)을 참조하세요. 사용할 일련의 지침이 확실하지 않은 경우 관리자 또는 지원 센터에 확인하세요.
 
 문서와 전자 메일을 분류 및 보호하는 가장 쉬운 방법은 Office 데스크톱 앱(**Word**, **Excel**, **PowerPoint**, **Outlook**) 내에서 해당 문서 및 전자 메일을 만들거나 편집하는 것입니다. 
 
@@ -163,5 +166,8 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 Azure Information Protection 사용자 가이드의 사용 방법 지침:
 
 -   [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
+
+## <a name="additional-information-for-administrators"></a>관리자용 추가 정보    
+[Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

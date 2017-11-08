@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호할 수 있도록 Wi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 792bb4b2554851eb4a9531e7ed9333c8bebc709a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 406ca5f8a1bdfec87dbec7743145ddfb2c4d18fb
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="download-and-install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 다운로드 및 설치
+# <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트를 다운로드 및 설치
 
 관리자가 Azure Information Protection 클라이언트를 설치하지 않는 경우 직접 설치할 수 있습니다. 이 클라이언트를 설치하여 문서 및 전자 메일에 레이블을 지정하고 보호하려면 PC의 로컬 관리자여야 합니다.
 
@@ -67,7 +67,7 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
 - [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
 
 ## <a name="additional-information-for-administrators"></a>관리자용 추가 정보    
-관리자 가이드에서 [사용자를 위해 Azure Information Protection 클라이언트를 설치하는 방법](client-admin-guide.md#how-to-install-the-azure-information-protection-client-for-users)을 참조하세요.
+[관리자 가이드](client-admin-guide.md)에서 [사용자를 위해 Azure Information Protection 클라이언트 설치](client-admin-guide-install.md)를 참조하세요.
  
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]  

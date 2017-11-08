@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure RMS(Azure Rights Management)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d4ce0ea6a3c04c5ca52dae1750e48d5618eeef76
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 29a85bf1bf216c785a1b9cd6511069fe688327db
+ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/18/2017
     
     > [!TIP]
     > 최종 사용자를 위한 예제 비디오:
-    > -   [Azure RMS user experience](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-user-experience)(Azure RMS 사용자 환경)
+    > -   [Microsoft Azure Information Protection](https://youtu.be/ToShAUdlrPo?list=PL8nfc9haGeb6qSm1kLU8n3Zqg398764h5)
     > -   [Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Azure RMS 문서 추적 및 해지)
 
 -   **관리자 정보**
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/18/2017
     
 -   **지원 센터 정보**
     
-    사용자에게 Azure Information Protection 클라이언트가 있는 경우 지원 센터 운영자가 Office 버전에서 보호를 지원할 수 없는지 여부 및 현재 로그인한 사용자 계정과 같은 정보에 대해 **도움말 및 피드백** 옵션을 사용하도록 요청할 수 있습니다 . 이 옵션을 사용하여 로그 파일을 수집하고 클라이언트를 다시 설정할 수도 있습니다. 자세한 내용은 관리자 가이드의 [추가 검사 및 문제 해결](../rms-client/client-admin-guide.md#additional-checks-and-troubleshooting)을 참조하세요.
+    사용자에게 Azure Information Protection 클라이언트가 있는 경우 지원 센터 운영자가 Office 버전에서 보호를 지원할 수 없는지 여부 및 현재 로그인한 사용자 계정과 같은 정보에 대해 **도움말 및 피드백** 옵션을 사용하도록 요청할 수 있습니다 . 이 옵션을 사용하여 로그 파일을 수집하고 클라이언트를 다시 설정할 수도 있습니다. 자세한 내용은 관리자 가이드인 [설치 검사 및 문제 해결](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)을 참조하세요.
     
     보호된 문서의 모든 액세스에 대한 합법적인 요청이 있을 경우 지원 센터는 Azure Rights Management [슈퍼 사용자 기능](configure-super-users.md)을 사용하여 이 액세스를 요청하는 프로세스를 진행해야 합니다. 예를 들어 직원이 조직을 떠난 후 법률 자문 부서 또는 관리자가 이러한 요청을 요구할 수 있습니다.
     

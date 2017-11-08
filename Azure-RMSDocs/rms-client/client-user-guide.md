@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트를 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3facc7898e048af6f715410c73c43309419bf957
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f1ea192bcacc856b1a4452e2ad3b21f4de45d511
+ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure Information Protection 사용자 가이드
 
@@ -30,6 +30,8 @@ Windows 7 서비스 팩 1 이상을 실행하는 컴퓨터만 있으면 됩니�
 ## <a name="what-do-you-want-to-do"></a>원하는 옵션을 선택하세요.
 
 - [Azure Information Protection 클라이언트 다운로드 및 설치](install-client-app.md)
+
+- [파일 또는 전자 메일 분류](client-classify.md)
 
 - [파일 또는 전자 메일 분류 및 보호](client-classify-protect.md)
 

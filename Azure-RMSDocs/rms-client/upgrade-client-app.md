@@ -4,7 +4,7 @@ description: "RMS 공유 응용 프로그램에서 Azure Information Protection 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/23/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: d7bc2478-c22f-4e19-9992-012658362b25
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 417294ff0890f2371909915a867fbdf56669e972
-ms.sourcegitcommit: 2bca892231ca8393b88bd5da7d0890a573770a09
+ms.openlocfilehash: dc0345ed289ecc95643c08ad86c1757848026826
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>RMS 공유 응용 프로그램으로 수행해왔던 작업
+# <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>사용자 가이드: RMS 공유 응용 프로그램으로 수행해왔던 작업
 
 최근에 Rights Management 공유 응용 프로그램("RMS 공유 앱"이라고도 함)에서 Azure Information Protection 클라이언트로 업그레이드했나요? 
 

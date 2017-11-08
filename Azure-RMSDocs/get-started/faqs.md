@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 54116659e37c22dbc20221d335e2e55443dff899
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: 324eb3eb5d749021da93213e807f6316ca784485
+ms.sourcegitcommit: a8140a7215c8704f34c247f602e1f12eb7b49aa2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 10/11/2017
 
 Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
-이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Enterprise Mobility and Security Blog(Enterprise Mobility 및 보안 블로그)](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)의 월간 설명서 업데이트 공지에 등록됩니다.
+이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Enterprise Mobility 및 보안 블로그](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)의 월간 설명서 업데이트 공지에 등록됩니다.
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Azure Information Protection과 Azure Rights Management의 차이는 무엇인가요?
 
@@ -45,7 +45,7 @@ Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 
 
 Windows용 Azure Information Protection 클라이언트가 설치되어 있고 Azure Information Protection 정책이 없는 경우는 클라이언트가 자동으로 [보호 전용 모드](../rms-client/client-protection-only-mode.md)에서 작동합니다. 이 모드에서 사용자는 Rights Management 템플릿과 사용자 지정 권한을 쉽게 적용할 수 있습니다. 나중에 분류 및 레이블 지정이 포함된 구독을 구입하면 Azure Information Protection 정책을 다운로드할 때 클라이언트가 자동으로 표준 모드로 전환됩니다.
 
-현재 Windows용 Rights Management 공유 응용 프로그램을 사용하고 있다면 Azure Information Protection 클라이언트로 교체할 것을 권장합니다. 공유 응용 프로그램에 대한 지원은 2019년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 응용 프로그램으로 수행해왔던 작업](../rms-client/upgrade-client-app.md)을 참조하세요.
+현재 Windows용 Rights Management 공유 응용 프로그램을 사용하고 있다면 이 응용 프로그램을 Azure Information Protection 클라이언트로 교체하는 것이 좋습니다. 공유 응용 프로그램에 대한 지원은 2019년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 응용 프로그램으로 수행해왔던 작업](../rms-client/upgrade-client-app.md)을 참조하세요.
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 
@@ -55,12 +55,29 @@ Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [R
 
 Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure Rights Management에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](../understand-explore/how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
 
+## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>Azure Information Protection이 조건부 액세스를 위한 사용 가능한 클라우드 앱으로 나열되어 있습니다. 작동 방법은 무엇인가요?
+
+예, 이제 공개 미리 보기용으로 Azure Information Protection에 대한 Azure AD의 조건부 액세스를 구성할 수 있습니다.
+
+이제 사용자가 Azure Information Protection에서 보호하는 문서를 열 때 관리자는 표준 조건부 액세스 제어에 따라 해당 테넌트의 사용자에게 액세스 권한을 부여할 수 있습니다. MFA(Multi-Factor Authentication)는 가장 공통적으로 요청되는 조건 중 하나입니다. 다른 한 가지 조건은 장치가 [Intune 정책을 준수](/intune/conditional-access-intune-common-ways-use)해야 한다는 점입니다. 예를 들어 모바일 장치가 암호 요구 사항 및 최소 운영 체제 버전을 충족하고 컴퓨터가 도메인에 가입되어 있어야 합니다.
+
+자세한 내용과 연습 예제는 다음 블로그 게시물을 참조하세요. [Azure Information Protection에 대한 조건부 액세스 정책](https://cloudblogs.microsoft.com/enterprisemobility/2017/10/17/conditional-access-policies-for-azure-information-protection/)
+
+추가 정보:
+
+- Windows 컴퓨터의 경우: 현재 미리 보기 릴리스에서 [사용자 환경이 초기화될](../understand-explore/how-does-it-work.md#initializing-the-user-environment) 때와 이후 30일마다 Azure Information Protection에 대한 조건부 액세스 정책을 평가합니다(이 프로세스는 부트스트팹이라고도 함).
+
+- 조건부 액세스 정책을 평가하는 빈도를 세밀하게 조정할 수 있습니다. 토큰 수명을 구성하여 이 작업을 수행할 수 있습니다. 자세한 내용은 [Azure Active Directory에서 구성 가능한 토큰 수명](/azure/active-directory/active-directory-configurable-token-lifetimes)을 참조하세요.
+
+- 이러한 계정은 Azure Portal에서 Azure Information Protection 블레이드에 액세스할 수 없기 때문에 관리자 계정을 조건부 액세스 정책에 추가하지 않는 것이 좋습니다.
+
+- 조건부 액세스에 많은 클라우드 앱을 사용하면 선택할 목록에 **Microsoft Azure Information Protection**이 표시되지 않을 수 있습니다. 이 경우에 목록 맨 위에 있는 검색 상자를 사용합니다. "Microsoft Azure Information Protection"을 입력하여 사용할 수 있는 앱을 필터링합니다. 지원되는 구독을 제공하면 선택할 **Microsoft Azure Information Protection**이 표시됩니다. 
+
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure Information Protection의 레이블과 Office 365의 레이블 간 차이는 무엇인가요?
 
 Azure Information Protection의 레이블을 사용하면 문서와 전자 메일이 온-프레미스에 있든 클라우드에 있든 상관 없이 일관성 있는 분류 및 보호 정책을 적용할 수 있습니다. 이 분류 및 보호는 콘텐츠가 저장된 위치 또는 이동된 방법과 무관합니다. [Office 365 Security & Compliance의 레이블](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)을 사용하면 해당 콘텐츠가 Office 365 서비스에 있는 경우 감사 및 보존을 위해 문서와 전자 메일을 분류할 수 있습니다. 
 
 현재 이러한 레이블은 개별적으로 적용 및 관리되지만, Microsoft는 Azure Information Protection, Office 365, Microsoft Cloud App Security 및 Windows Information Protection을 포함하는 여러 서비스를 위한 포괄적이고 통합 레이블링 전략을 달성하기 위해 노력하고 있습니다. 이 동일한 레이블 스키마 및 저장소는 소프트웨어 공급 업체에서도 사용할 수 있습니다. 자세한 내용은 Microsoft Ignite 2017 세션 [Microsoft Information Protection 기능을 사용하여 전체 데이터 수명 주기 보호](https://myignite.microsoft.com/videos/55397)를 참조하세요.
-
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>곧 새 릴리스가 Azure Information Protection용으로 나올 예정이라고 들었습니다. 언제 나오나요?
 
@@ -74,11 +91,13 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 
 기술 지원에 대해서는 표준 지원 채널을 사용하거나 [Microsoft 지원에 문의](information-support.md#to-contact-microsoft-support)하세요.
 
-향상된 기능 또는 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **피드백 보내기**를 클릭합니다. 그러면 Information Protection 팀으로 보낼 메일 메시지가 열립니다. 또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
+향상된 기능 또는 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **피드백 보내기**를 클릭합니다. 이 옵션을 통해 Information Protection 팀으로 보낼 메일 메시지가 열립니다.
+
+또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
 
 ## <a name="what-do-i-do-if-my-question-isnt-here"></a>내 문의 내용이 여기 없다면 어떻게 하나요?
 
-먼저 분류 및 레이블 지정 또는 데이터 보호와 관련된 질문과 대답을 검토합니다. Azure RMS(Rights Management Service)는 Azure Information Protection에 대한 데이터 보호 기술을 제공하며, Azure RMS는 분류 및 레이블 지정과 함께 사용하거나 분류 및 레이블 지정 없이 사용할 수 있습니다. 
+먼저 분류 및 레이블 지정 또는 데이터 보호와 관련된 다음 질문과 대답을 검토합니다. Azure RMS(Azure Rights Management 서비스)에서는 Azure Information Protection에 대한 데이터 보호 기술을 제공합니다. Azure RMS는 분류 및 레이블 지정 또는 단독으로 사용될 수 있습니다. 
 
 - [분류 및 레이블 지정에 대한 FAQ](faqs-infoprotect.md)
 

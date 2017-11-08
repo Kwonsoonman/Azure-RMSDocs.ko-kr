@@ -4,7 +4,7 @@ description: "문서를 보호한 후에는 사용자들이 해당 문서를 사
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8a908097e4207889b6441e3224e7e4110fa2f9ae
-ms.sourcegitcommit: ea03477312b64c0a846701e46d991fe2c85b3a1f
+ms.openlocfilehash: d5c8d326b68b5f60e8223112d2d5bd28ed3925bc
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지
+# <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>사용자 가이드: Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지
 
 >*적용 대상: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
 
@@ -49,6 +49,8 @@ Azure Information Protection을 사용하여 문서를 보호한 후에는 사�
     - 사용자가 문서를 문서 추적 사이트에 등록한 경우 Azure Information Protection의 관리자는 관리자 아이콘을 클릭하여 해당 사용자에 대해 보호된 문서를 추적하고 해지할 수 있습니다. 이 아이콘은 관리자에게만 표시됩니다.
         
         ![문서 추적 사이트의 관리자 아이콘](../media/tracking-site-admin-icon.png)
+        
+        전역 관리자임에도 이 아이콘이 표시되지 않은 원인은 문서를 아직 공유하지 않았기 때문입니다. 이 경우에 다음 URL을 사용하여 문서 추적 사이트에 액세스합니다. https://portal.azurerms.com/#/admin
 
 관리자가 아니면 직접 보호한 문서만 추적하고 해지할 수 있습니다. 문서 추적 사이트를 사용하여 보호된 전자 메일을 추적할 수는 없습니다.
 
@@ -109,5 +111,8 @@ Office 앱 또는 파일 탐색기를 사용하여 보호된 문서를 등록한
 Azure Information Protection 사용자 가이드의 사용 방법 지침:
 
 - [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
+
+## <a name="additional-information-for-administrators"></a>관리자용 추가 정보    
+[관리자 가이드](client-admin-guide.md)에서 [Azure Information Protection에 대한 문서 추적 구성 및 사용](client-admin-guide-document-tracking.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

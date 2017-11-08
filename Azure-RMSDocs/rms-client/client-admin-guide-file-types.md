@@ -4,7 +4,7 @@ description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,13 +12,13 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0bd9bbdc6b29e8cd9497712dddb7205f3d8372b1
-ms.sourcegitcommit: bcc2f69475f811245d2beaf79c67a3d8569c4821
+ms.openlocfilehash: a6a1c477a06c695a2183ad379c22492ea59d4bee
+ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/24/2017
 ---
-# <a name="file-types-supported-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 지원하는 파일 형식
+# <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
 >*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
@@ -88,7 +88,11 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
     |Excel 2007(AD RMS에서만 지원)<br /><br />Excel 2010<br /><br />Excel  2013<br /><br />Excel 2016|32비트: 2GB<br /><br />64비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한|
     |PowerPoint 2007(AD RMS에서만 지원)<br /><br />PowerPoint 2010<br /><br />PowerPoint  2013<br /><br />PowerPoint 2016|32비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한<br /><br />64비트: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한
 
-- **다른 모든 파일**: 사용 가능한 디스크 공간 및 메모리에 의해서만 제한
+- **다른 모든 파일**: 
+    
+    - 이러한 파일을 보호하려면 파일 크기는 사용 가능한 디스크 공간과 메모리에 의해서만 제한됩니다.
+    
+    - 이러한 파일을 Azure Information Protection 뷰어에서 열려면: 텍스트 기반 파일(.ptxt 및 .pxml)에 지원되는 최대 파일 크기는 20MB입니다. 그림 기반 파일 및 PDF 파일의 경우 최대 파일 크기는 메모리에 의해서만 제한됩니다.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>분류 및 보호가 지원되는 파일 형식
 
@@ -202,6 +206,13 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 이러한 파일을 보호하는 것이 중요한 경우, 일시적으로 다른 컴퓨터로 복사하여 일반적으로 보호한 다음, 다시 복사할 수 있습니다.
 
+### <a name="limitations-for-container-files-such-as-zip-files"></a>.zip 파일과 같은 컨테이너 파일의에 대한 제한 사항
+
+컨테이너 파일은 압축된 파일을 포함하는 .zip 파일의 일반적인 예제에서 다른 파일을 포함하는 파일입니다. 다른 예로는 .rar, .7z, .msg가 있습니다.
+
+이러한 컨테이너 파일을 분류하고 보호할 수 있지만 분류 및 보호는 컨테이너 내에 있는 각 파일에 적용되지 않습니다.
+
+분류되고 보호된 파일을 포함하는 컨테이너 파일이 있는 경우 먼저 파일을 추출하여 해당 분류 또는 보호 설정을 변경해야 합니다. 그러나 [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet을 사용하여 지원되는 컨테이너 파일에서 모든 파일에 대한 보호를 제거할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 Azure Information Protection 클라이언트에서 지원하는 파일 형식을 파악했으므로 다음에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.

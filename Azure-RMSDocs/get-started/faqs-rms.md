@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/09/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9983b088b5856f8c2223d05624c3bee21b80fd15
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 038cb3a81bac9f16055038f33d825daed6642479
+ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -124,16 +124,24 @@ Azure AD에 계정이 없는 사용자에게 보내는 Office 문서 첨부 파�
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>외부 사용자(회사 외부의 사용자)를 사용자 지정 템플릿에 추가할 수 있나요?
 
-예. Azure Portal에서 템플릿을 레이블로 변환할 때 조직 외부의 사용자 및 그룹과 심지어 다른 조직의 모든 사용자에게 권한을 추가하도록 [보호 설정](../deploy-use/configure-policy-protection.md)을 구성할 수 있습니다. 또는 PowerShell을 사용하여 이 구성을 수행할 수 있습니다.
+예. Azure Portal에서 구성한 [보호 설정](../deploy-use/configure-policy-protection.md)을 통해 조직 외부의 사용자 및 그룹과 심지어 다른 조직의 모든 사용자에게 권한을 추가할 수 있습니다. [Office 365 메시지 암호화의 새로운 기능](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)을 사용하는 전자 메일을 보내는 데 단독으로 템플릿을 사용하지 않는 경우 소셜 ID(예: Gmail 및 Microsoft)의 계정 또는 Azure AD에 있지 않은 다른 계정을 추가하지 않습니다.
 
-외부 사용자를 쉽게 추가할 수 있도록 사용자 지정 템플릿을 레이블로 변환하는 방법에 대한 자세한 내용은 [Azure Information Protection 정책의 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
+Azure Information Protection 레이블이 설치된 경우 Azure Portal에서 이러한 보호 설정을 구성하기 전에 먼저 사용자 지정 템플릿을 레이블로 변환해야 합니다. 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
-## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Azure RMS에서 사용할 수 있는 그룹 유형은 무엇입니까?
+또는 PowerShell을 사용하여 사용자 지정 템플릿(및 레이블)에 외부 사용자를 추가할 수 있습니다. 이 구성에서는 템플릿을 업데이트하는 데 사용하는 권한 정의 개체를 사용하도록 해야 합니다.
+
+1. 변수를 만드는 [New-AadrmRightsDefinition](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet을 사용하여 권한 정의 개체에서 외부 메일 주소 및 해당 권한을 지정합니다.
+
+2. [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet을 사용하여 이 변수를 RightsDefinition 매개 변수에 제공합니다.
+    
+    기존 템플릿에 사용자를 추가하는 경우 새 사용자 외에도 템플릿의 기존 사용자를 위한 권한 정의 개체를 정의해야 합니다. 이 시나리오에서는 cmdlet의 [예제](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) 섹션에서 유용한 **예제 3: 사용자 지정 템플릿에 새 사용자 및 권한 추가**를 찾을 수 있습닌다. 
+
+## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Azure RMS에서 사용할 수있는 그룹 유형은 무엇입니까?
 대부분의 시나리오에서 전자 메일 주소가 있는 Azure AD의 그룹 유형을 사용할 수 있습니다. 이 방법은 사용 권한을 할당할 때 항상 적용되지만 Azure Rights Management 서비스를 관리하기 위한 몇 가지 예외가 있습니다. 자세한 내용은 [그룹 계정에 대한 Azure Information Protection 요구 사항](../plan-design/prepare.md#azure-information-protection-requirements-for-group-accounts)을 참조하세요.
 
 ## <a name="how-do-i-send-a-protected-email-to-a-gmail-or-hotmail-account"></a>보호된 메일을 Gmail 또는 Hotmail 계정으로 보내려면 어떻게 해야 하나요?
 
-Exchange Online과 Azure Rights Management 서비스를 사용할 때는 전자 메일을 보호된 메시지로 보냅니다. 예를 들어 웹의 Outlook 명령 모음에서 새로운 **보호** 단추를 선택하거나, Outlook 전달 금지 옵션을 사용하거나, Azure Rights Management에서 보호를 적용하는 Azure Information Protection 레이블을 선택하거나, Exchange Online 전송 규칙에 의해 보호가 적용될 수 있습니다.
+Exchange Online과 Azure Rights Management 서비스를 사용할 때는 전자 메일을 사용자에게 보호된 메시지로 보냅니다. 예를 들어 웹의 Outlook의 명령 모음에서 새 **보호** 단추를 선택하고 Outlook **전달 금지** 단추 또는 메뉴 옵션을 사용할 수 있습니다. 또는 자동으로 전달 금지를 적용하고 전자 메일을 분류하는 Azure Information Protection 레이블을 선택할 수 있습니다. 
 
 받는 사람에게 Gmail, Yahoo 또는 Microsoft 계정에 로그인하는 옵션이 표시되고 보호된 전자 메일을 읽을 수 있게 됩니다. 또는 일회성 암호로 브라우저에서 전자 메일을 읽는 옵션을 선택할 수도 있습니다.
 
@@ -181,7 +189,7 @@ SharePoint 사이트 관리자가 자신이 소유한 SharePoint 라이브러리
 
 많은 배포를 감독하고 고객, 파트너, 컨설턴트와 지원 엔지니어의 이야기를 들어본 결과, 경험을 바탕으로 전달할 수 있는 가장 중요한 팁 중 하나는 **단순한 정책을 디자인 및 배포**하라는 것입니다.
 
-Azure Information Protection는 모든 사용자와 안전하게 공유할 수 있도록 하므로 데이터 보호 범위에 욕심을 부려도 좋습니다. 하지만 권한 사용 제한을 구성할 때는 신중해야 합니다. 많은 조직에서 비즈니스에 대한 영향력이 가장 큰 것은 조직의 사람들에 대한 액세스를 제한하여 데이터 누출을 방지하는 것입니다. 물론, 사용자의 인쇄나 편집 등을 방지해야 하는 경우 훨씬 더 세분화할 수도 있습니다.  그러나 더 세분화된 제한은 정말로 높은 수준의 보안이 필요한 문서에 대한 예외로 유지하고, 처음부터 이러한 더 제한적인 사용 권한을 구현하지는 말고 보다 단계적으로 접근하도록 계획하십시오.
+Azure Information Protection는 모든 사용자와 안전하게 공유할 수 있도록 하므로 데이터 보호 범위에 욕심을 부려도 좋습니다. 하지만 권한 사용 제한을 구성할 때는 신중해야합니다. 많은 조직에서 비즈니스에 대한 영향력이 가장 큰 것은 조직의 사람들에 대한 액세스를 제한하여 데이터 누출을 방지하는 것입니다. 물론, 사용자의 인쇄나 편집 등을 방지해야 하는 경우 훨씬 더 세분화할 수도 있습니다.  그러나 더 세분화된 제한은 정말로 높은 수준의 보안이 필요한 문서에 대한 예외로 유지하고, 처음부터 이러한 더 제한적인 사용 권한을 구현하지는 말고 보다 단계적으로 접근하도록 계획하십시오.
 
 ## <a name="how-do-we-regain-access-to-files-that-were-protected-by-an-employee-who-has-now-left-the-organization"></a>이제 조직을 떠난 직원이 보호하던 파일에 대한 액세스는 어떻게 확보하나요?
 [슈퍼 사용자 기능](../deploy-use/configure-super-users.md)을 사용하십시오. 이 기능은 테넌트가 보호하는 모든 문서 및 전자 메일에 대한 권한이 있는 사용자에게 모든 권한 사용권을 부여합니다. 수퍼 사용자는 보호된 콘텐츠를 언제나 읽을 수 있고 필요한 경우 다른 사용자를 위해 보호를 제거하거나 다시 적용할 수 있습니다. 이 기능은 권한이 있는 서비스가 필요에 따라 파일을 인덱스 및 검사할 수 있도록 합니다.

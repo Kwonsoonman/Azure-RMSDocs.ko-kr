@@ -4,19 +4,20 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/01/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
+ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 038cb3a81bac9f16055038f33d825daed6642479
-ms.sourcegitcommit: 91585427fe62956fd78d4e7897ec8abe55b3c11d
+ms.openlocfilehash: fb2af56222f686149e40afcd54b20c04114c2a1f
+ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -55,7 +56,7 @@ HYOK에 대한 자세한 내용을 보고 제한 사항을 이해했음을 확�
 
 ## <a name="where-can-i-find-information-about-third-party-solutions-that-integrate-with-azure-rms"></a>Azure RMS와 통합되는 타사 솔루션에 대한 정보는 어디서 찾을 수 있나요?
 
-많은 소프트웨어 공급 업체들은 이미 Azure Rights Management와 통합하는 솔루션을 보유하고 있거나 이러한 솔루션을 구현하고 있으며, 그 목록은 빠르게 증가되고 있습니다. [RMS 지원 솔루션](requirements-applications.md#rms-enlightened-solutions) 목록을 확인하고 Twitter에서 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)의 최신 업데이트를 확인하는 것도 유용합니다. 그러나 특정 질문이 있으면 Information Protection 팀(askipteam@microsoft.com)으로 메일 메시지를 보내 주세요.
+많은 소프트웨어 공급 업체들은 이미 Azure Rights Management와 통합하는 솔루션을 보유하고 있거나 이러한 솔루션을 구현하고 있으며, 그 목록은 빠르게 증가되고 있습니다. [RMS 지원 솔루션](requirements-applications.md#rms-enlightened-solutions) 목록을 확인하고 Twitter에서 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)의 최신 업데이트를 확인하는 것도 유용합니다. 또한 [개발자 가이드](../develop/developers-guide.md)를 확인하고 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에서 특정 통합 질문을 게시하세요.
 
 ## <a name="is-there-a-management-pack-or-similar-monitoring-mechanism-for-the-rms-connector"></a>RMS 커넥터에 대한 관리 팩이나 유사한 모니터링 메커니즘이 있나요?
 
@@ -103,8 +104,6 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 
 ## <a name="if-i-use-this-protection-for-my-production-environment-is-my-company-then-locked-into-the-solution-or-risk-losing-access-to-content-that-we-protected-with-azure-rms"></a>이 보호를 프로덕션 환경에서 사용할 경우 회사가 솔루션에 갇히거나, Azure RMS로 보호한 콘텐츠를 액세스할 수 없게 되나요?
 아니요. 항상 데이터를 제어하고 지속적으로 액세스할 수 있습니다. 더 이상 Azure Rights Management 서비스를 사용하지 않아도 마찬가지입니다. 자세한 내용은 [Azure 권한 관리 서비스 해제 및 비활성화](../deploy-use/decommission-deactivate.md)를 참조하세요.
-
-Azure Rights Management 서비스를 해제하기 전에 귀하의 의견을 듣고 그런 결정을 내린 이유를 이해하고 싶습니다. Azure Rights Management 보호가 비즈니스 요구 사항에 부합하지 않을 경우 가까운 시일 내에 새로운 기능이 예정되어 있거나 대안이 있는지 확인해 보시기 바랍니다. 기술 및 비즈니스 요구 사항에 대한 논의는 [AskIPTeam@Microsoft.com](mailto:askipteam@microsoft.com?subject=Planning%20to%20decommission%20Azure%20RMS)으로 메일 메시지를 보내 주시면 됩니다.
 
 ## <a name="can-i-control-which-of-my-users-can-use-azure-rms-to-protect-content"></a>Azure RMS를 사용하여 콘텐츠를 보호할 수 있는 사용자를 제어할 수 있나요?
 예. Azure Rights Management 서비스에는 이 시나리오에 대한 사용자 온보딩 컨트롤이 있습니다. 자세한 내용은 [Azure 권한 관리 활성화](../deploy-use/activate-service.md) 문서에서 [단계별 배포에 대한 온보딩 컨트롤 구성](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.

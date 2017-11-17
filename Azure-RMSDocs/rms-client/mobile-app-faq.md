@@ -5,19 +5,20 @@ keywords: "iOS 및 Android용 Azure Information Protection 앱을 사용하는 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/08/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
 ms.technology: techgroup-identity
+ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dc6b9ee8c557ce04019534c4713c526265c207e0
-ms.sourcegitcommit: 0b097f0817fee0fb025caef3c46fdd887c782a43
+ms.openlocfilehash: a12fce4f7e235ee67cc9f202c38f52f01204078b
+ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ
 
@@ -71,6 +72,6 @@ Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4
 
 ## <a name="my-question-has-not-been-answeredwhat-should-i-do"></a>내 질문에 대한 답변이 없습니다. 어떻게 해야 하나요?
 
-질문을 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 게시하거나 [Information Protection 팀에 메일을 보내 주세요](mailto:askIPteam@microsoft.com?subject=Question%20about%20Azure%20Information%20Protection%20app).
+[Yammer 사이트](https://www.yammer.com/AskIPTeam)에 질문을 게시하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -4,19 +4,20 @@ description: "조직이 문서와 전자 메일을 보호하기 시작할 수 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/21/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
+ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 15b8abd6b8ba8fa494e1d7d5c7b02221204507d1
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: 23133038e2a845aae6a86a014cdef31843668ef8
+ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Azure 포털에서 Azure 권한 관리를 활성화하는 방법
 
@@ -28,7 +29,7 @@ Azure 포털에서 Azure Rights Management 서비스(Azure RMS)를 활성화하�
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
     
-    Azure Information Protection 블레이드를 열려면 [Azure Information Protection Premium 요금제](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 또는 [Rights Management가 포함된 Office 365 요금제](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)가 있어야 합니다. 이러한 구독 중 하나가 있지만 유효한 구독을 찾을 수 없다는 메시지가 표시되면 [askipteam](mailto:askipteam@microsoft.com?subject=I%20cannot%20activate%20RMS)에 메일 메시지를 보내세요.
+    Azure Information Protection 블레이드를 열려면 [Azure Information Protection Premium 요금제](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 또는 [Rights Management가 포함된 Office 365 요금제](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)가 있어야 합니다. 이러한 구독 중 하나가 있지만 유효한 구독을 찾을 수 없다는 메시지가 표시되면 [Microsoft 지원에 연락](../get-started/information-support.md#to-contact-microsoft-support)하거나 표준 지원 채널을 사용하세요.
 
 2. **관리** 메뉴 옵션을 찾고 **보호 활성화**를 선택합니다. 
     

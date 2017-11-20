@@ -4,7 +4,7 @@ description: "RMS API를 사용하여 Azure Information Protection의 Azure Righ
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 11/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6dd3345d2064b87c307583b63d36b5263318bd53
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 9e8e9bd9e8c8c15d11661202cfa11abeec76376f
+ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
 
@@ -55,7 +55,7 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 
 
 ###### <a name="footnote-1"></a>각주 1
-SharePoint Online 및 비즈니스용 OneDrive에 저장된 문서를 보려면 문서를 보호된 라이브러리에 업로드하기 전에 보호를 해제해야 합니다.
+SharePoint Online 및 비즈니스용 OneDrive에서만 지원되며, 문서는 먼저 보호된 라이브러리에 업로드해야 보호할 수 있습니다.
 
 ###### <a name="footnote-2"></a>각주 2
 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)를 사용하여 보호되는 [Office 첨부 파일](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)에 해당합니다.

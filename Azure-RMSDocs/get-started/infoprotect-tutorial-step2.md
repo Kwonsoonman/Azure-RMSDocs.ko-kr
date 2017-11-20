@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/12/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 4fb571f84e9916fb5573d551ec0f0bf374e5df2f
-ms.sourcegitcommit: 76bf1f93b02fd75bead8ccdaaf34da1a6aad571f
+ms.openlocfilehash: cf9c30baab257c9a90c3383eaf6bfcadd0275184
+ms.sourcegitcommit: 63a8186d727bec185903a5201f3b1efc9b4fa8b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
@@ -37,7 +37,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-labelsv2.png)
     
-3. 또한 설정되지 않은 일부 정책 설정을 볼 수 있습니다. 모든 문서 및 메일에 레이블이 필요하지 않고, 기본 레이블이 없으며, 사용자가 레이블을 변경할 때 근거를 제공하지 않아도 되는 경우입니다.
+3. 또한 일부 정책 설정이 있음도 알 수 있습니다. 예를 들어 기본 레이블 집합이 없으며, 문서와 전자 메일에 레이블이 필요하지 않으며, 레이블을 변경할 때 사용자가 근거를 제공하지 않아도 됩니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-settings.png)
 

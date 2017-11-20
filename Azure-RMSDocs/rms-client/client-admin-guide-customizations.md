@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 304425a2c64fb306615bbd5c6edf5e78e10b8e80
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 67ef633fe429eef208f1f24e71a274959ad7077b
+ms.sourcegitcommit: 8810f9d68489a89601c43ce0aacff737728b1d02
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -198,6 +198,33 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 - 값: \<**레이블 ID**> 또는 **없음**
 
+## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>기존 사용자 지정 속성을 사용하여 Office 문서에 레이블을 지정합니다.
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+이 설정을 구성할 때 레이블 이름 중 하나와 일치하는 값이 있는 기존 사용자 지정 속성이 있으면 Office 문서를 분류하고 선택적으로 보호할 수 있습니다. 이 사용자 지정 속성은 다른 분류 솔루션에서 설정하거나 SharePoint에서 속성으로 설정할 수 있습니다.
+
+이 구성으로 인해 사용자가 Office 응용 프로그램에서 Azure Information Protection 레이블이 없는 문서를 열고 저장하면 해당 속성 값과 일치하는 레이블이 해당 문서에 지정됩니다. 
+
+이 구성을 사용하려면 함께 작동하는 두 가지 고급 설정을 지정해야 합니다. 첫 번째 설정은 **SyncPropertyName**이며, 다른 분류 솔루션에서 설정한 사용자 지정 속성 이름이거나 SharePoint에서 설정한 속성입니다. 두 번째 설정은 **SyncPropertyState**이며, OneWay로 설정해야 합니다.
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키 1: **SyncPropertyName**
+
+- 키 1 값: \<**속성 이름**> 
+
+- 키 2: **SyncPropertyState**
+
+- 키 2 값: **OneWay**
+
+예를 들어 **공용**, **일반** 및 **기밀** 값을 포함할 수 있는 **분류**라는 SharePoint 열이 있습니다. 문서는 SharePoint에 저장되며, 분류 속성에는 이러한 값 중 하나가 설정됩니다.
+
+이러한 분류 값 중 하나를 사용하여 Office 문서에 레이블을 지정하려면 **SyncPropertyName**을 **분류**로 설정하고 **SyncPropertyState**를 **OneWay**로 설정합니다. 
+
+이제 사용자가 이러한 Office 문서 중 하나를 열고 저장할 때 Azure Information Protection 정책에 이러한 이름의 레이블이 있으면 **공용**, **일반** 또는 **기밀**이라는 레이블이 지정됩니다. 이러한 이름의 레이블이 없으면 문서에 레이블이 지정되지 않습니다.
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
 

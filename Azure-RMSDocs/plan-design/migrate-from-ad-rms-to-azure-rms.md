@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 910d131ece4bae0cf5ef2685291431a3dc319264
-ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
+ms.openlocfilehash: 1b1c7a084aa5d81a0abfd50021b95ae8af32d034
+ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -28,9 +28,9 @@ AD RMS(Active Directory Rights Management Services) 배포를 Azure Information 
 
 이 AD RMS 마이그레이션이 조직에 맞는지 확실하지 않습니까?
 
--   Azure Information Protection에 대한 자세한 내용은 [Azure Information Protection이란?](../understand-explore/what-is-information-protection.md)을 참조하세요.
+- Azure Information Protection에 대한 자세한 내용은 [Azure Information Protection이란?](../understand-explore/what-is-information-protection.md)을 참조하세요.
 
--   Azure Information Protection과 AD RMS에 대한 비교는 [Azure Information Protection 및 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요.
+- Azure Information Protection과 AD RMS에 대한 비교는 [Azure Information Protection 및 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요.
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>Azure Information Protection으로 마이그레이션하기 전에 읽어보면 좋은 자료
 
@@ -112,10 +112,10 @@ AD RMS 암호화 모드를 확인하려면
 
 ### <a name="migration-limitations"></a>마이그레이션 제한 사항
 
--   Azure Information Protection에서 사용되는 Rights Management 서비스에 의해 지원되지 않는 소프트웨어 및 클라이언트에서는 Azure Rights Management로 보호되는 콘텐츠를 보호하거나 사용할 수 없습니다. [Azure Rights Management에 대한 요구 사항](../get-started/requirements-azure-rms.md)의 지원되는 응용 프로그램 및 클라이언트 섹션을 확인하세요.
+- Azure Information Protection에서 사용되는 Rights Management 서비스에 의해 지원되지 않는 소프트웨어 및 클라이언트에서는 Azure Rights Management로 보호되는 콘텐츠를 보호하거나 사용할 수 없습니다. [Azure Rights Management에 대한 요구 사항](../get-started/requirements-azure-rms.md)의 지원되는 응용 프로그램 및 클라이언트 섹션을 확인하세요.
 
--   외부 파트너와 공동 작업하도록 AD RMS 배포가 구성된 경우(예: 트러스트된 사용자 도메인 또는 페더레이션 사용) 해당 파트너가 마이그레이션과 동시에 또는 마이그레이션 후 최대한 빨리 Azure Information Protection으로도 마이그레이션해야 합니다. 외부 파트너가 조직에서 이전에 Azure Information Protection을 사용하여 보호하던 콘텐츠에 계속 액세스하려면 사용자가 변경한 구성(이 문서에 포함됨)과 비슷하게 클라이언트 구성을 변경해야 합니다.
-
+- 외부 파트너와 공동 작업하도록 AD RMS 배포가 구성된 경우(예: 트러스트된 사용자 도메인 또는 페더레이션 사용) 해당 파트너가 마이그레이션과 동시에 또는 마이그레이션 후 최대한 빨리 Azure Information Protection으로도 마이그레이션해야 합니다. 외부 파트너가 조직에서 이전에 Azure Information Protection을 사용하여 보호하던 콘텐츠에 계속 액세스하려면 사용자가 변경한 구성(이 문서에 포함됨)과 비슷하게 클라이언트 구성을 변경해야 합니다.
+    
     파트너에서 있을 수 있는 가능한 구성 차이로 인해 이러한 재구성에 대한 정확한 지침은 이 문서에서 다루지 않습니다. 그러나 계획 지침의 다음 섹션을 참조하고 추가로 도움이 필요하면 [Microsoft 지원에 문의](../get-started/information-support.md#support-options-and-community-resources)하세요.
 
 ## <a name="migration-planning-if-you-collaborate-with-external-partners"></a>외부 파트너와 공동 작업하는 경우 마이그레이션 계획
@@ -146,11 +146,11 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - **2단계. 클라이언트 마이그레이션에 대한 준비**
 
-     모든 클라이언트를 한 번에 마이그레이션할 수 없어 배치로 마이그레이션하는 경우 온보딩 컨트롤을 사용하고 마이그레이션 전 스크립트를 배포합니다.
+    모든 클라이언트를 한 번에 마이그레이션할 수 없어 배치로 마이그레이션하는 경우 온보딩 컨트롤을 사용하고 마이그레이션 전 스크립트를 배포합니다. 그러나 단계별로 마이그레이션하지 않고 모든 항목을 동시에 마이그레이션하려는 경우 이 단계를 건너뛸 수 있습니다.
 
 - **3단계: 마이그레이션에 대한 Exchange 배포 준비**
 
-    이 단계는 현재 Exchange Online 또는 Exchange 온-프레미스의 IRM 기능을 사용하여 메일을 보호하는 경우에만 필요합니다.
+    이 단계는 현재 Exchange Online 또는 Exchange 온-프레미스의 IRM 기능을 사용하여 메일을 보호하는 경우에만 필요합니다. 그러나 단계별로 마이그레이션하지 않고 모든 항목을 동시에 마이그레이션하려는 경우 이 단계를 건너뛸 수 있습니다.
 
 [**2단계: AD RMS에 대한 서버 쪽 구성**](migrate-from-ad-rms-phase2.md)
 
@@ -206,7 +206,7 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
     iOS 휴대폰 및 iPad, Android 휴대폰 및 태블릿, Windows 휴대폰 및 Mac 컴퓨터와 같은 모바일 장치를 지원하기 위해 [모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포한 경우, AD RMS를 사용하도록 이러한 클라이언트를 리디렉션한 DNS의 SRV 레코드를 제거해야 합니다. 
     
-    준비 단계 중에 구성한 온보딩 컨트롤이 더 이상 필요하지 않습니다.
+    준비 단계 중에 구성한 온보딩 컨트롤이 더 이상 필요하지 않습니다. 그러나 단계별로 마이그레이션하지 않고 모든 항목을 동시에 마이그레이션하도록 선택함에 따라 온보딩 컨트롤을 사용하지 않은 경우 온보딩 컨트롤을 제거하도록 요구하는 지침을 건너뛸 수 있습니다.
 
 - **12단계: Azure Information Protection 테넌트 키 다시 입력**
 

@@ -4,7 +4,7 @@ description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 11/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6aa009795e45281df1c9406357f810b8d25302bc
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: 75c0bf83c84cb8b5d2116b05dbf2def790562b4e
+ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="activating-azure-rights-management"></a>Azure 권한 관리 활성화
 
@@ -26,7 +26,9 @@ ms.lasthandoff: 08/30/2017
 > 이 구성 정보는 조직의 모든 사용자에게 적용되는 서비스를 담당하는 관리자를 위해 작성되었습니다. 특정 응용 프로그램용 Rights Management 기능을 사용하기 위한 사용자 도움말 및 정보 또는 권한으로 보호된 파일 또는 메일을 여는 방법에 대한 정보를 원하는 경우 응용 프로그램을 함께 제공되는 지침 및 도움말을 사용하세요.
 >
 > 예를 들어 Office 응용 프로그램의 경우 도움말 아이콘을 클릭하고 **Rights Management** 또는 **IRM**과 같은 검색 용어를 입력합니다. Windows용 Azure Information Protection 클라이언트의 경우 [Azure Information Protection 클라이언트 사용자 가이드](../rms-client/client-user-guide.md)를 참조하세요.
- 
+>
+> 서비스에 대한 기술 지원 및 기타 질문은 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요.
+
 Azure Information Protection의 Azure Rights Management 서비스가 테넌트에 대해 활성화되면 조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 중요한 데이터 보호를 시작할 수 있습니다. 또한 관리자는 조직에서 소유한 보호된 파일 및 전자 메일을 관리하고 모니터링할 수 있습니다. Office, SharePoint 및 Exchange 내에서 IRM(정보 권한 관리) 기능을 사용하고 중요한 파일이나 기밀 파일을 보호하려면 먼저 이 서비스를 사용하도록 설정해야 합니다.
 
 Azure Rights Management 서비스를 활성화하기 전에 해결되는 비즈니스 문제, 일반적인 몇 가지 사용 사례, 작동 방식 등 서비스에 대해 자세히 알아보려면 [Azure 권한 관리란?](../understand-explore/what-is-azure-rms.md)을 참조하세요.

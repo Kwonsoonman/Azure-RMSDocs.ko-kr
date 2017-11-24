@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호할 수 있도록 Wi
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 406ca5f8a1bdfec87dbec7743145ddfb2c4d18fb
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 190a6a371e67417139e033c0b5472042a24b2502
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트를 다운로드 및 설치
 
@@ -58,7 +58,8 @@ ms.lasthandoff: 10/24/2017
 
 2. **Microsoft Azure Information Protection** 대화 상자에서 **확인**을 클릭합니다.
 
-3. **사용자 액세스 제어** 대화 상자가 표시되면 Azure Information Protection 클라이언트가 레지스트리를 업데이트할 수 있도록 **예**를 클릭합니다.   
+3. **사용자 액세스 제어** 대화 상자가 표시되면 Azure Information Protection 클라이언트가 레지스트리를 업데이트할 수 있도록 **예**를 클릭합니다.
+
 이제 설치가 완료되었으며 Azure Information Protection을 사용하여 문서와 메일에 레이블을 지정하고 보호할 수 있습니다.
 
 ## <a name="other-instructions"></a>기타 지침    

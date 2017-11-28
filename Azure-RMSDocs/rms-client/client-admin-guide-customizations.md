@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 67ef633fe429eef208f1f24e71a274959ad7077b
-ms.sourcegitcommit: 8810f9d68489a89601c43ce0aacff737728b1d02
+ms.openlocfilehash: 0bd05c0553cdcab792c674c6945d7dfea5f02eaf
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -117,46 +117,40 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 2. 식별된 파일 이름을 **Policy.msip**로 변경하고 Azure Information Protection 클라이언트가 있는 컴퓨터의 **%LocalAppData%\Microsoft\MSIP** 폴더에 복사합니다. 
 
 
-## <a name="hide-the-do-not-forward-button-in-outlook"></a>Outlook에서 전달 금지 단추 숨기기
+## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>Outlook에서 전달 금지 단추 숨기기 또는 표시
 
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다.
+이 옵션 구성 시 권장되는 방법은 **Outlook 리본에 전달 금지 단추 추가** [정책 설정](../deploy-use/configure-policy-settings.md)을 사용하는 것입니다. 하지만 Azure Portal에서 구성하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용하여 이 옵션을 구성할 수도 있습니다.
 
-이 설정을 구성하는 경우 Outlook의 리본에서 **전달 금지** 단추가 숨겨집니다. Office 메뉴에서는 이 옵션이 숨겨지지 않습니다.
+이 설정을 구성하는 경우 Outlook의 리본에서 **전달 금지** 단추가 숨겨지거나 표시됩니다. 이 설정은 Office 메뉴의 전달 금지 옵션에 적용되지 않습니다.
 
 이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
 
 - 키: **DisableDNF**
 
-- 값: **True**
+- 값: 단추를 숨기려면 **True**, 단추를 표시하려면 **False**
 
-## <a name="make-the-custom-permissions-options-unavailable-to-users"></a>사용자 지정 권한 옵션을 사용자가 사용할 수 없음
+## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정
 
-> [!IMPORTANT]
-> 현재 미리 보기 버전의 클라이언트를 사용하지 않는 한 Word, Excel, PowerPoint 및 파일 탐색기의 사용자 정의 권한에 대해 구성된 레이블이 있는 경우 이 옵션을 사용하지 마세요. 이 옵션을 사용할 경우 레이블이 적용되면 사용자 지정 권한을 구성하라는 메시지가 사용자에게 표시되지 않습니다. 결과는 문서에 레이블이 지정되지만, 문서가 의도한 대로 보호되지 않습니다.
+이 옵션 구성 시 권장되는 방법은 **Make the custom permissions option available for users**(사용자가 사용자 지정 권한 옵션을 사용할 수 있게 허용) [정책 설정](../deploy-use/configure-policy-settings.md)을 사용하는 것입니다. 하지만 Azure Portal에서 구성하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용하여 이 옵션을 구성할 수도 있습니다. 
 
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
-
-이 설정을 구성하고 사용자에게 정책을 게시하는 경우 사용자는 다음 위치의 사용자 지정 권한 옵션을 선택할 수 없게 됩니다.
-
-- Office 응용 프로그램: **홈** 탭 > **보호** 그룹 > **보호** > **사용자 지정 권한**
-
-- 파일 탐색기: 마우스 오른쪽 단추 클릭 > **분류 및 보호** > **사용자 지정 권한**
-
-이 설정은 Office 메뉴 옵션에서 구성할 수 있는 사용자 지정 권한에는 적용되지 않습니다. 
+이 설정을 구성하고 사용자에게 정책을 게시하면 사용자가 사용자 지정 권한 옵션을 사용할 수 있게 되어 고유한 보호 설정을 선택할 수 있거나, 사용자가 사용할 수 없게 되어 메시지가 표시되어야만 고유한 보호 설정을 선택할 수 있습니다.
 
 이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
 
 - 키: **EnableCustomPermissions**
 
-- 값: **False**
+- 값: 사용자 지정 권한 옵션을 사용할 수 있게 하려면 **True**, 이 옵션을 사용할 수 없게 하려면 **False**
+
+> [!IMPORTANT]
+> 현재 미리 보기 버전의 클라이언트를 사용하지 않는 한 Word, Excel, PowerPoint 및 파일 탐색기의 사용자 정의 권한에 대해 구성된 레이블이 있는 경우 이 옵션을 **False**로 설정하지 마세요. 이 옵션을 사용할 경우 레이블이 적용되면 사용자 지정 권한을 구성하라는 메시지가 사용자에게 표시되지 않습니다. 결과는 문서에 레이블이 지정되지만, 문서가 의도한 대로 보호되지 않습니다.
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 영구적으로 숨기기
 
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. **Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시) [정책 설정](../deploy-use/configure-policy-settings.md)이 **켜기**로 설정된 경우에만 사용하세요.
 
 사용자를 위해 이 설정을 구성하고 정책을 게시하며, 사용자가 Office 응용 프로그램에 Azure Information Protection 표시줄을 표시하지 않도록 선택하는 경우 이 표시줄은 숨겨진 상태를 유지합니다. 사용자가 **홈** 탭, **보호** 그룹, **보호** 단추에서 **표시줄 표시** 옵션을 선택 취소하면 이러한 상황이 발생합니다. **이 표시줄 닫기** 아이콘을 사용하여 표시줄을 닫으면 이 설정이 아무런 영향도 미치지 않습니다.
 
-Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 권장되는 분류를 구성했거나 문서 또는 전자 메일에 레이블이 필요한 경우 일시적으로 표시되는 표시줄에서 레이블을 계속 선택할 수 있습니다. 이 설정은 수동 또는 자동 분류, 기본 레이블 설정과 같이 사용자 또는 다른 사용자가 구성하는 레이블에도 영향을 주지 않습니다.
+Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 권장되는 분류를 구성했거나 문서 또는 전자 메일에 레이블이 필요한 경우 일시적으로 표시되는 표시줄에서 레이블을 계속 선택할 수 있습니다. 
 
 이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
 
@@ -219,6 +213,8 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 - 키 2: **SyncPropertyState**
 
 - 키 2 값: **OneWay**
+
+이러한 키와 해당 값은 하나의 사용자 지정 속성에만 사용하세요.
 
 예를 들어 **공용**, **일반** 및 **기밀** 값을 포함할 수 있는 **분류**라는 SharePoint 열이 있습니다. 문서는 SharePoint에 저장되며, 분류 속성에는 이러한 값 중 하나가 설정됩니다.
 

@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: cf9c30baab257c9a90c3383eaf6bfcadd0275184
-ms.sourcegitcommit: 63a8186d727bec185903a5201f3b1efc9b4fa8b5
+ms.openlocfilehash: 0e10a1809aaf792ac8c5960e30917aabd5c44548
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 11/14/2017
 
 Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책과 함께 제공되지만, 해당 정책을 살펴보고 몇 가지를 변경합니다.
 
-1. 계속 Azure Portal에서 **전역 정책**을 선택하여 **정책: 전역** 블레이드를 엽니다. 이 블레이드는 나중에 서비스에 다시 연결되면 자동으로 열리며 테넌트에 대해 생성되는 기본 Information Protection 정책을 표시합니다.
+1. [1단계](infoprotect-tutorial-step1.md)에 이어서 계속 Azure Portal에서 **전역 정책**을 선택하여 **정책: 전역** 블레이드를 엽니다. 이 블레이드는 나중에 서비스에 다시 연결되면 자동으로 열리며 테넌트에 대해 생성되는 기본 Information Protection 정책을 표시합니다.
 
 2. 몇 분간 표시되는 레이블에 친숙해지는 시간을 가집니다.
     

@@ -4,7 +4,7 @@ description: "조직이 문서와 전자 메일을 보호하기 시작할 수 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23133038e2a845aae6a86a014cdef31843668ef8
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 430e84ac0a634052eb48e19347eafca436c47659
+ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/18/2017
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Azure 포털에서 Azure 권한 관리를 활성화하는 방법
 
@@ -28,6 +28,8 @@ Azure 포털에서 Azure Rights Management 서비스(Azure RMS)를 활성화하�
 1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    
+    이전에 Azure Information Protection 블레이드에 액세스한 적이 없는 경우 이 블레이드를 포털에 추가하기 위한 일회성 [추가 단계](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time)를 참조하세요.
     
     Azure Information Protection 블레이드를 열려면 [Azure Information Protection Premium 요금제](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 또는 [Rights Management가 포함된 Office 365 요금제](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)가 있어야 합니다. 이러한 구독 중 하나가 있지만 유효한 구독을 찾을 수 없다는 메시지가 표시되면 [Microsoft 지원에 연락](../get-started/information-support.md#to-contact-microsoft-support)하거나 표준 지원 채널을 사용하세요.
 

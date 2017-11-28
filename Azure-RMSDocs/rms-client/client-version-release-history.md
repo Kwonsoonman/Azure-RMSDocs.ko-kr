@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e107d796ebda1b1942e19ede8c794f79defbf64e
-ms.sourcegitcommit: fd3932ab19a00229b56efc3e301abaf9cff3f70b
+ms.openlocfilehash: c3c0acad413ddbbcd1caccd4f1a73c7b0884ae7c
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -35,7 +35,6 @@ Azure Information Protection 클라이언트의 GA(일반 공급) 버전은 릴�
 ### <a name="release-history"></a>릴리스 기록
 
 다음 정보를 사용하여 지원되는 Windows용 Azure Information Protection 클라이언트 릴리스에서 새롭거나 변경된 기능에 대해 알아보세요. 가장 최근 릴리스가 먼저 나열됩니다. 
-
 
 > [!NOTE]
 > 사소한 수정 사항은 나열되지 않으므로 Azure Information Protection 클라이언트에 문제가 발생있으면 최신 GA 릴리스로 수정되었는지 확인하는 것이 좋습니다. 문제가 계속되면 현재 미리 보기 버전을 확인하세요.
@@ -60,17 +59,19 @@ Azure Information Protection 클라이언트의 GA(일반 공급) 버전은 릴�
 
 - 사용자 정의 작업에 대해 구성된 레이블을 지원합니다. Outlook의 경우 이 레이블에 따라 자동으로 Outlook 전달 금지 옵션이 적용됩니다. Word, Excel, PowerPoint 및 파일 탐색기의 경우 이 레이블에 따라 사용자 지정 권한을 지정하라는 메시지가 사용자에게 표시됩니다. 자세한 내용은 [보호에 대해 Azure Information Protection 레이블 구성](../deploy-use/configure-policy-protection.md)을 참조하세요.
 
+- 레이블에는 다국어가 지원됩니다. 2017년 8월 30일부터 [기본 정책](../deploy-use/configure-policy-default.md)에 이 버전의 클라이언트가 사용자에게 표시하는 여러 언어에 대한 지원이 포함됩니다. 이 날짜 이전에 기본 정책에서 원하는 언어로 레이블을 볼 수 있는 사용자와 구성 가능한 레이블에 대한 자세한 내용은 [Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요.
+
 - 레이블은 Information Protection 표시줄뿐만 아니라 Office 리본의 **보호** 단추에도 표시됩니다. 
 
 - 다음 Visio 파일 형식에 대한 기본 보호: .vsdm, .vsdx, .vssm, .vssx, .vstm, .vstx
 
 - Azure Portal에서 구성하는 고급 클라이언트 구성을 지원합니다. 이러한 구성은 다음과 같습니다.
     
-    - [Outlook에서 전달 금지 단추 숨기기](../rms-client/client-admin-guide-customizations.md#hide-the-do-not-forward-button-in-outlook)
+    - [Outlook에서 전달 금지 단추 숨기기 또는 표시](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
     
-    - [사용자가 사용자 지정 권한 옵션을 사용할 수 없음](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-unavailable-to-users)
+    - [사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
     
-    - [Azure Information Protection 표시줄을 영구적으로 숨기기](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-unavailable-to-users)
+    - [Azure Information Protection 표시줄을 영구적으로 숨기기](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
     
     - [Outlook에서 권장 분류 사용](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
 

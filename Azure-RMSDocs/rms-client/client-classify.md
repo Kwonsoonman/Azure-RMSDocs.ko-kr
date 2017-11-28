@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하는 방법에 대한 지침을
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: cb8e7bab70ab6b135b7741a8f7ae6ba82b3585a7
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: aee3ec8673217cf130c4705e750532c7aeefe084
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류
 
@@ -53,7 +53,9 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 ##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>Office 앱에 이 Information Protection 표시줄이 표시되지 않나요?
 
 - Azure Information Protection 클라이언트가 컴퓨터에 [설치](install-client-app.md)되지 않았습니다.
- 
+
+- 클라이언트가 설치되어 있지만 관리자가 표시줄을 표시하지 않는 설정을 구성했습니다. 대신, Office 리본에 있는 **파일** 탭의 **보호** 단추에서 레이블을 선택하세요. 
+
 ##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>표시줄에 예상된 레이블이 표시되지 않나요? 
 
 - 관리자가 최근에 새 레이블을 구성했으면 모든 Office 앱을 닫았다가 다시 열어보세요. 이 작업은 레이블의 변경 내용이 있는지 확인합니다.

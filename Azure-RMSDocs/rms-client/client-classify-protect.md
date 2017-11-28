@@ -4,7 +4,7 @@ description: "문서와 전자 메일을 분류하고 보호하는 방법에 대
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 13d751bf9754ba3645cb7bb7417e7f5be394eb27
-ms.sourcegitcommit: 769057f5ffb366fc645bff542a32b2eab4f20c70
+ms.openlocfilehash: 683764d005e3223f6e5bdaa49b1d4c881a8daed4
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -41,16 +41,13 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Office 앱을 사용하여 문서와 전자 메일 분류 및 보호
 
-Azure Information Protection 표시줄에서 자동으로 구성된 레이블 중 하나를 선택합니다. 
+Azure Information Protection 표시줄 또는 리본의 **보호** 단추를 사용하여 자동으로 구성된 레이블 중 하나를 선택합니다. 
 
-예를 들어 다음 그림에서는 **민감도**가 **설정되지 않음**을 표시하므로 문서에 아직 레이블이 지정되지 않았음을 보여 줍니다. "일반"과 같은 레이블을 설정하려면 **일반**을 클릭합니다. 현재 문서 또는 전자 메일에 적용할 레이블을 잘 모를 경우 레이블 도구 설명을 사용하여 각 레이블에 대해 자세히 알아보고 적용해야 하는 경우를 파악합니다. 
+예를 들어 다음 그림에서는 Azure Information Protection 표시줄의 **민감도**가 **설정되지 않음**을 표시하므로 문서에 아직 레이블이 지정되지 않았음을 보여 줍니다. "일반"과 같은 레이블을 설정하려면 **일반**을 클릭합니다. 현재 문서 또는 전자 메일에 적용할 레이블을 잘 모를 경우 레이블 도구 설명을 사용하여 각 레이블에 대해 자세히 알아보고 적용해야 하는 경우를 파악합니다. 
 
 ![Azure Information Protection 표시줄 예제](../media/info-protect-bar-not-set-callout.png)
 
 레이블을 문서에 이미 적용되어 있으며 변경하려는 경우에는 다른 레이블을 선택할 수 있습니다. 레이블을 표시줄에 표시되지 않으면 먼저 현재 레이블 값 옆에 있는 **레이블 편집**을 클릭합니다.
-
-> [!TIP]
-> **파일** 탭의 **보호** 단추에서 레이블을 선택할 수도 있습니다.
 
 레이블을 수동으로 선택하는 것 외에, 다음과 같은 방법으로 적용할 수도 있습니다.
 
@@ -62,9 +59,17 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 
 ##### <a name="dont-see-this-information-protection-bar-in-your-office-apps"></a>Office 앱에 이 Information Protection 표시줄이 표시되지 않나요?
 
-- Azure Information Protection 클라이언트를 [설치](install-client-app.md)하지 않았거나 클라이언트가 [보호 전용 모드](client-protection-only-mode.md)로 실행되고 있습니다.
+가능한 원인:
+
+- Azure Information Protection 클라이언트가 컴퓨터에 [설치](install-client-app.md)되지 않았습니다.
+
+- 클라이언트가 설치되어 있지만 관리자가 표시줄을 표시하지 않는 설정을 구성했습니다. 대신, Office 리본에 있는 **파일** 탭의 **보호** 단추에서 레이블을 선택하세요. 
+
+- 클라이언트가 [보호 전용 모드](client-protection-only-mode.md)에서 실행 중입니다.
  
-##### <a name="is-the-label-that-you-expect-to-see-not-displayed-on-the-bar"></a>표시줄에 예상된 레이블이 표시되지 않나요? 
+##### <a name="is-the-label-that-you-expect-to-see-not-displayed"></a>예상된 레이블이 표시되지 않나요? 
+
+가능한 원인:
 
 - 관리자가 최근에 새 레이블을 구성했으면 모든 Office 앱을 닫았다가 다시 열어보세요. 이 작업은 레이블의 변경 내용이 있는지 확인합니다.
 
@@ -74,11 +79,13 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 
 ### <a name="set-custom-permissions-for-a-document"></a>문서에 대한 사용자 지정 권한 설정
 
-선택한 레이블에 관리자가 포함한 보호를 사용하지 않고 직접 문서 보호 설정을 지정할 수 있습니다.
+관리자가 허용한 경우 선택한 레이블에 관리자가 포함한 보호를 사용하지 않고 직접 문서 보호 설정을 지정할 수 있습니다.
 
 1. **홈** 탭의 **보호** 그룹에서 **보호** > **사용자 지정 권한**을 클릭합니다.
 
     ![사용자 지정 권한 옵션](../media/custom-permissions-callout.png)
+    
+    **사용자 지정 권한**을 선택할 수 없는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
     
     지정하는 사용자 지정 권한은 선택된 레이블에 대해 관리자가 정의했을 수 있는 보호 설정을 보완하지 않고 대신합니다.  
 
@@ -135,7 +142,9 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
     
     ![분류 및 보호 - Azure Information Protection** 대화 상자에 레이블이 없음](../media/info-protect-dialog-labels-protection-only.png)
     
-3. 선택된 레이블에 관리자가 포함했을 수 있는 보호 설정을 사용하지 않고 고유의 보호 설정을 지정하려면 **사용자 지정 권한으로 보호**를 선택합니다.
+3. 관리자가 허용한 경우 선택한 레이블에 관리자가 포함한 보호를 사용하지 않고 직접 보호 설정을 지정할 수 있습니다. 그러려면 **사용자 지정 권한으로 보호**를 선택합니다.
+    
+    **사용자 지정 권한으로 보호**를 선택할 수 없는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
     
     지정하는 사용자 지정 권한은 선택된 레이블에 대해 관리자가 정의했을 수 있는 보호 설정을 보완하지 않고 대신합니다.  
 

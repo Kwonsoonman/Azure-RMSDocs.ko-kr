@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: db6cb1c6327808616ee98b9e5b14f2a92a590bff
-ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
+ms.openlocfilehash: 2cf486a5319d6addcd150351054d44db62c250b0
+ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>마이그레이션 5단계 - 마이그레이션 후 작업
 
@@ -48,7 +48,7 @@ AD RMS 서버 프로비전을 해제한 후 Azure Portal에서 템플릿을 검�
 >[!IMPORTANT]
 > 이 마이그레이션이 끝나면 AD RMS 클러스터를 Azure Information Protection 및 HYOK(Hold Your Own Key) 옵션에 사용할 수 없습니다. 현재 구현된 리디렉션 때문에 Azure Information Protection 레이블에 HYOK를 사용하기로 한 경우 사용하는 AD RMS 클러스터의 라이선스 URL은 마이그레이션한 클러스터의 라이선스 URL과 달라야 합니다.
 
-## <a name="step-11-reconfigure-mobile-device-clients-and-mac-computers-and-remove-onboarding-controls"></a>11단계. 모바일 장치 클라이언트 및 Mac 컴퓨터 다시 구성 및 온보딩 컨트롤 제거
+## <a name="step-11-complete-client-migration-tasks"></a>11단계. 전체 클라이언트 마이그레이션 작업
 
 모바일 장치 클라이언트 및 Mac 컴퓨터의 경우: [AD RMS 모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포할 때 만든 DNS SRV 레코드를 제거합니다.
 
@@ -95,6 +95,8 @@ killall cfprefsd
         Get-AadrmOnboardingControlPolicy
 
     출력에서 **License**가 **False**를 표시해야 하고, **SecurityGroupOjbectId**에 대해 표시되는 GUID가 없습니다.
+
+마지막으로, Office 2010을 사용 중이며, Windows 작업 스케줄러 라이브러리에서 **AD RMS Rights Policy Template Management(자동)** 작업을 활성화한 경우 Azure Information Protection 클라이언트에서는 이 작업이 사용되지 않으므로 비활성화하세요. 이 작업은 일반적으로 그룹 정책을 사용하여 활성화되며 AD RMS 배포를 지원합니다. 이 작업은 **Microsoft** > **Windows** > **Active Directory Rights Management Services 클라이언트**에 있습니다.
 
 ## <a name="step-12-rekey-your-azure-information-protection-tenant-key"></a>12단계. Azure Information Protection 테넌트 키 다시 생성
 

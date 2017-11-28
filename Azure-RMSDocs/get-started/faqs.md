@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 324eb3eb5d749021da93213e807f6316ca784485
-ms.sourcegitcommit: a8140a7215c8704f34c247f602e1f12eb7b49aa2
+ms.openlocfilehash: da0ba7876b1098671428e87117bed97c4f464071
+ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -78,6 +78,27 @@ Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동�
 Azure Information Protection의 레이블을 사용하면 문서와 전자 메일이 온-프레미스에 있든 클라우드에 있든 상관 없이 일관성 있는 분류 및 보호 정책을 적용할 수 있습니다. 이 분류 및 보호는 콘텐츠가 저장된 위치 또는 이동된 방법과 무관합니다. [Office 365 Security & Compliance의 레이블](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)을 사용하면 해당 콘텐츠가 Office 365 서비스에 있는 경우 감사 및 보존을 위해 문서와 전자 메일을 분류할 수 있습니다. 
 
 현재 이러한 레이블은 개별적으로 적용 및 관리되지만, Microsoft는 Azure Information Protection, Office 365, Microsoft Cloud App Security 및 Windows Information Protection을 포함하는 여러 서비스를 위한 포괄적이고 통합 레이블링 전략을 달성하기 위해 노력하고 있습니다. 이 동일한 레이블 스키마 및 저장소는 소프트웨어 공급 업체에서도 사용할 수 있습니다. 자세한 내용은 Microsoft Ignite 2017 세션 [Microsoft Information Protection 기능을 사용하여 전체 데이터 수명 주기 보호](https://myignite.microsoft.com/videos/55397)를 참조하세요.
+
+## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?
+
+한동안 Windows Server File Classification Infrastructure를 사용하여 서류를 분류한 후 [Rights Management 커넥터](../deploy-use/deploy-rms-connector.md)(Office 문서만 해당) 또는 [PowerShell 스크립트](../rms-client/configure-fci.md)(모든 파일 형식)를 사용하여 분류된 문서를 보호할 수 있었습니다. 
+
+이제 [Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)(현재 미리 보기 상태)를 사용할 수 있습니다. 이 스캐너는 Azure Information Protection 클라이언트 및 Azure Information Protection 정책을 사용하여 문서(모든 파일 형식)에 레이블을 지정하여 이러한 문서가 분류되고 선택적으로 보호되도록 합니다.
+
+이러한 두 솔루션의 주요 차이점은 다음과 같습니다.
+
+|Windows Server FCI|Azure Information Protection 스캐너|
+|--------------------------------|-------------------------------------|
+|지원되는 데이터 저장소: <br /><br />- Windows Server의 로컬 폴더|지원되는 데이터 저장소: <br /><br />- Windows Server의 로컬 폴더<br /><br />- Windows 파일 공유 및 네트워크 연결 저장소<br /><br />- SharePoint Server 2016 및 SharePoint Server 2013|
+|작동 모드: <br /><br />- 실시간|작동 모드: <br /><br />- 데이터 저장소를 체계적으로 탐색하고 이 주기를 한 번 또는 반복적으로 실행할 수 있습니다.|
+
+현재 로컬 폴더 또는 네트워크 저장소에서 보호되는 파일에 대한 [Rights Management 소유자](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)를 설정할 때는 차이점이 있습니다. 기본적으로 두 솔루션 모두에서 Rights Management 소유자는 파일을 보호하는 계정으로 설정되지만 이 설정을 재정의할 수 있습니다.
+
+- Windows Server FCI: Rights Management 소유자를 모든 파일에 대한 단일 계정으로 설정하거나 각 파일에 대한 Rights Management 소유자를 동적으로 설정할 수 있습니다. Rights Management 소유자를 동적으로 설정하려면 **-OwnerMail [Source File Owner Email]** 매개 변수 및 값을 사용합니다. 이 구성은 파일의 Owner 속성에 있는 사용자 계정 이름을 사용하여 Active Directory에서 해당 사용자의 이메일 주소를 검색합니다.
+
+- Azure Information Protection 스캐너: Rights Management 소유자를 모든 파일에 대한 단일 계정으로 설정할 수 있지만 각 파일에 대한 Rights Management 소유자를 동적으로 설정할 수는 없습니다. 계정을 설정하려면 [scanner configuration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration?view=azureipps#optional-parameters)에 **-DefaultOwner** 옵션 매개 변수를 지정하세요.
+
+스캐너가 SharePoint 사이트 및 라이브러리의 파일을 보호하는 경우 SharePoint 작성자 값을 사용하여 각 파일의 Rights Management 소유자가 동적으로 설정됩니다.
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>곧 새 릴리스가 Azure Information Protection용으로 나올 예정이라고 들었습니다. 언제 나오나요?
 

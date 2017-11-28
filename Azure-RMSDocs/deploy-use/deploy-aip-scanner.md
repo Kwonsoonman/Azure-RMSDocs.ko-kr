@@ -4,7 +4,7 @@ description: "Azure Information Protection 스캐너를 설치, 구성 및 실�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 89772a9239308fbd60c34ec9a3e122061bbf9dbe
-ms.sourcegitcommit: 63a8186d727bec185903a5201f3b1efc9b4fa8b5
+ms.openlocfilehash: 6dfda21368713c652df6c815dbb3895517182af1
+ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -238,6 +238,8 @@ Azure Information Protection 정책은 %localappdata%\Microsoft\MSIP에 저장�
 
 
 ## <a name="next-steps"></a>다음 단계
+
+[Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?](../get-started/faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 확인
 
 PowerShell을 사용하여 데스크톱 컴퓨터의 파일을 대화형으로 분류하고 보호할 수도 있습니다. PowerShell을 사용하는 시나리오에 대한 자세한 내용은 [Azure Information Protection 클라이언트에서 PowerShell 사용](../rms-client/client-admin-guide-powershell.md)을 참조하세요.
 

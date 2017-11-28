@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/20/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 96eb4a9fde5c5664a41ad7f68c550af697e8216f
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: c338fe4258d6d8b20a4d8c285bc821981810b409
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 10/21/2017
 
 Azure Information Protection 클라이언트에는 다음이 포함됩니다.
 
-- 사용자가 분류 레이블을 선택할 수 있는 Azure Information Protection 표시줄을 설치하는 Office 추가 기능과 추가 옵션용 리본의 **보호** 단추 Outlook의 경우 **전달 금지** 단추가 리본 메뉴에도 추가됩니다.
+- 사용자가 분류 레이블을 선택할 수 있는 Azure Information Protection 표시줄을 설치하는 Office 추가 기능과 추가 옵션용 리본의 **보호** 단추 Outlook의 경우 리본에서도 **전달 금지** 단추를 사용할 수 있습니다.
 
 - 파일에 분류 레이블 및 보호를 적용하기 위한 Windows 파일 탐색기의 오른쪽 클릭 옵션
 
@@ -127,7 +127,9 @@ Windows Update, 실행 파일, 또는 Windows Installer 파일을 사용하여 A
     
     - %LocalAppData%\Microsoft\MSIP\TokenCache
 
-- 다음 레지스트리 키 및 설정이 삭제됩니다. 이 레지스트리 키에 대한 설정을 구성한 경우 클라이언트를 다시 설정한 후 레지스트리 설정을 다시 구성해야 합니다. 예를 들어 AD RMS에서 마이그레이션하는 데 네트워크에 서비스 연결 지점이 계속 있기 때문에 Azure Information Protection 테넌트로 리디렉션에 대한 설정을 구성한 경우입니다.
+- 다음 레지스트리 키 및 설정이 삭제됩니다. 이 레지스트리 키에 대한 설정에 사용자 지정 값이 있을 경우 클라이언트를 다시 설정한 후 레지스트리 설정을 다시 구성해야 합니다. 
+    
+    일반적으로 엔터프라이즈 네트워크의 경우 그룹 정책을 사용하여 이러한 설정을 구성하며, 이 경우 컴퓨터에서 그룹 정책을 새로 고치면 이러한 설정이 자동으로 다시 적용됩니다. 하지만 스크립트를 사용하여 한 번 구성하거나 수동으로 구성하는 일부 설정도 있을 수 있습니다. 이러한 경우 해당 설정을 다시 구성하기 위한 추가 단계를 수행해야 합니다. 예를 들어 AD RMS에서 마이그레이션하는 데 네트워크에 서비스 연결 지점이 계속 있기 때문에 컴퓨터에서 스크립트를 한 번 실행하여 Azure Information Protection으로 리디렉션에 대한 설정을 구성할 수 있습니다. 클라이언트를 재설정한 후 컴퓨터에서 이 스크립트를 다시 실행해야 합니다.
     
     - HKEY_CURRENT-USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity
     

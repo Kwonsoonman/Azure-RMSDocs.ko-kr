@@ -4,7 +4,7 @@ description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 11/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cd580b14e35697d00a3c42abd51d2afc94d6959d
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: dfa751ef7cd4c8405fa02299576cb57083d63495
+ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
@@ -289,5 +289,9 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
 이와 같이 수정하려면 기본 제공 분류 속성 중 하나(예: **개인 식별이 가능한 정보**)를 사용하거나 새 속성을 직접 만듭니다. 그런 다음 이 속성을 사용하는 새 규칙을 만듭니다. 예를 들어 **콘텐츠 분류자**를 선택하고 값이 **높음** 인 **개인 식별이 가능한 정보**속성을 선택한 다음 이 속성에 대해 구성할 파일을 식별하는 문자열 또는 표현식 패턴(예: "**생년월일**" 문자열)을 구성할 수 있습니다.
 
 그리고 나면 스크립트는 동일하지만 다른 템플릿을 사용하는 새 파일 관리 작업을 만들고 방금 구성한 분류 속성에 대해 조건을 구성하기만 하면 됩니다. 예를 들어 이전에 구성한 조건(**RMS** 속성, **같음**, **예**) 대신 **연산자** 값을 **같음** 으로 설정했으며 **값** 이 **높음** 인 **개인 식별이 가능한 정보**속성을 선택할 수 있습니다.
+
+## <a name="next-steps"></a>다음 단계
+
+[Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?](../get-started/faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 확인 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

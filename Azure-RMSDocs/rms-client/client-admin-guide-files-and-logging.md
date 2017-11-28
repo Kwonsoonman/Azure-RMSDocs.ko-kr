@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 클라�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 64e6e17beb134fca1e51b35b39ff9f130c88ecbb
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 33047865430004f91eb85ec7e32bbfc3f2f6bbde
+ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 11/20/2017
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>관리자 가이드: Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
 
@@ -38,7 +38,7 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
 
 ## <a name="usage-logging-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용 현황 로깅
 
-클라이언트는 사용자 활동을 로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그(**Azure Information Protection**)에 기록합니다. 이벤트에는 다음과 같은 정보가 포함됩니다.
+클라이언트는 사용자 활동을 로컬 Windows 이벤트 로그 **응용 프로그램 및 서비스 로그** > **Azure Information Protection**에 기록합니다. 이벤트에는 다음과 같은 정보가 포함됩니다.
 
 - 날짜, 클라이언트 버전, 정책 ID
 

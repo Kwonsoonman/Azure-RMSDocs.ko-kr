@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2017
+ms.date: 11/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1b1c7a084aa5d81a0abfd50021b95ae8af32d034
-ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
+ms.openlocfilehash: a65e1178594e14c7d8f4faaedee96d827a9412e5
+ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -202,11 +202,13 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
     모든 Windows 컴퓨터에서 Azure Rights Management 서비스를 사용하고 있으며 더 이상 AD RMS 서버에 액세스하지 않음을 확인했으면 AD RMS 배포 프로비전을 해제할 수 있습니다.
 
-- **11단계: 모바일 장치 클라이언트 및 Mac 컴퓨터를 다시 구성 및 온보딩 컨트롤 제거**
+- **11단계: 클라이언트 마이그레이션 작업 완료**
 
     iOS 휴대폰 및 iPad, Android 휴대폰 및 태블릿, Windows 휴대폰 및 Mac 컴퓨터와 같은 모바일 장치를 지원하기 위해 [모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포한 경우, AD RMS를 사용하도록 이러한 클라이언트를 리디렉션한 DNS의 SRV 레코드를 제거해야 합니다. 
     
     준비 단계 중에 구성한 온보딩 컨트롤이 더 이상 필요하지 않습니다. 그러나 단계별로 마이그레이션하지 않고 모든 항목을 동시에 마이그레이션하도록 선택함에 따라 온보딩 컨트롤을 사용하지 않은 경우 온보딩 컨트롤을 제거하도록 요구하는 지침을 건너뛸 수 있습니다.
+    
+    Windows 컴퓨터가 Office 2010을 실행 중인 경우 **AD RMS Rights Policy Template Management(자동)** 작업을 비활성화해야 하는지 확인해야 합니다.
 
 - **12단계: Azure Information Protection 테넌트 키 다시 입력**
 

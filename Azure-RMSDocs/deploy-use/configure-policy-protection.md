@@ -4,17 +4,17 @@ description: "Rights Management 보호를 사용하도록 레이블을 구성하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 17f95d9875320c64d2983fcd176e371ee45d2f48
-ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
+ms.openlocfilehash: 1b16d3ab7923592a011b6be39586a02a378f39f0
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -101,7 +101,7 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
         
         사용자 또는 그룹은 반드시 메일 주소가 있어야 합니다. 프로덕션 환경에서는 거의 언제나 메일 주소가 있지만 단순한 테스트 환경에서는 사용자 계정 또는 그룹에 메일 주소를 추가해야 할 수도 있습니다.
         
-    - **세부 정보 입력**을 선택하여 개별 사용자 또는 그룹(내부 또는 외부)의 메일 주소를 수동으로 지정합니다. 또는 다른 조직의 도메인 이름을 입력하여 해당 조직의 모든 사용자를 지정합니다. 
+    - **세부 정보 입력**을 선택하여 개별 사용자 또는 그룹(내부 또는 외부)의 메일 주소를 수동으로 지정합니다. 또는 다른 조직의 도메인 이름을 입력하여 해당 조직의 모든 사용자를 지정합니다. 개인 메일 계정을 지원하는 소셜 공급자의 도메인 이름은 입력하지 마세요. 예를 들어 **gmail.com**, **hotmail.com** 또는 **outlook.com**은 입력하지 않습니다.
         
     >[!NOTE]
     >사용자 또는 그룹을 선택한 후 메일 주소를 변경하는 경우 계획 설명서에서 [메일 주소를 변경하는 경우 고려할 사항](../plan-design/prepare.md#considerations-for-azure-information-protection-if-email-addresses-change) 섹션을 참조하세요.

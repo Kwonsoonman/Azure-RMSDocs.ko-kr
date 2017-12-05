@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/08/2017
+ms.date: 11/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 89f0863f11d43a19a81b31a648de13fd1733df75
-ms.sourcegitcommit: a63b3ac3949e66cc38e20d7f14ac129b8e3224c3
+ms.openlocfilehash: 91ba855bb9bd9c41c81ae819b7b3afee1f04adb8
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 11/09/2017
 
 |수행 작업|.. 방법|
 |----------------|---------------|
-|가장 자주 사용되는 문서보기|상위 5개 페이지 읽기: <br /><br />[시작 - iOS 및 Android용 AIP 앱](../rms-client/mobile-app-get-started.md) <br /><br /> [Azure Information Protection이란?](../understand-explore/what-is-information-protection.md)<br /><br /> [Azure Rights Management란?](../understand-explore/what-is-azure-rms.md)<br /><br />[Azure 권한 관리 활성화](../deploy-use/activate-service.md)<br /><br />[Azure Information Protection에 대한 요구 사항](../get-started/requirements.md)|
+|가장 자주 사용되는 문서보기|상위 5개 페이지 읽기:<br /><br /> - [Azure Information Protection이란?](../understand-explore/what-is-information-protection.md)<br /> - [Azure Rights Management란?](../understand-explore/what-is-azure-rms.md)<br />- [시작 - iOS 및 Android용 AIP 앱](../rms-client/mobile-app-get-started.md) <br />- [Azure Rights Management 활성화](../deploy-use/activate-service.md)<br />- [Azure Information Protection에 대한 요구 사항](../get-started/requirements.md)|
 |제품 팀 및 동료와의 소통|Azure Information Protection에 대한 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 방문하세요.|
 |새로운 기능 또는 기능 변경 요청|Azure Information Protection에 대한 [사용자 의견 사이트](https://msip.uservoice.com)에 방문하세요.|
 |제품 그룹의 트윗 수신|Twitter에서 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)를 팔로우하세요.|
@@ -83,12 +83,14 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility and Security Blo
 
 - 온-프레미스 서버를 위한 Rights Management 커넥터를 배포한 경우에는 이벤트 로그 항목, 성능 카운터 및 로깅에 대한 세부 정보를 포함하는 [모니터링](../deploy-use/monitor-rms-connector.md) 정보를 참조하세요.
 
-- Windows용 Azure Information Protection 클라이언트는 관리자 가이드에서 [설치 검사 및 문제 해결](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) 섹션을 참조하세요.
+- Windows용 Azure Information Protection 클라이언트는 관리자 가이드에서 [설치 검사 및 문제 해결](../rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) 섹션을 참조하고 [지원되는 버전](../rms-client/client-version-release-history.md#servicing-information-and-timelines)을 사용 중인지 확인하세요.
 
 ### <a name="community-resources"></a>커뮤니티 리소스
 
 [Azure Information Protection에 대한 Yammer 사이트](https://www.yammer.com/AskIPTeam)가 권장됩니다. 이 리소스를 통해 Azure Information Protection 팀의 직접적인 답변을 얻고 다른 관리자 및 컨설턴트의 풍부한 경험과 지식을 공유할 수 있습니다.
 
-Yammer에 액세스할 수 없으면 [Microsoft RMS를 위한 TechNet 포럼(클라우드)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)을 사용해 보세요.
+질문하고 정보를 공유할 수 있는 [Azure Information Protection 공간](https:/techcommunity.microsoft.com/t5/Azure-Information-Protection/bd-p/Azure-Information-Protection)이 있으며 빠르게 성장하는 [기술 커뮤니티](https:/techcommunity.microsoft.com)를 확인해 보세요.
+
+이러한 사이트에 액세스할 수 없으면 [Microsoft RMS를 위한 TechNet 포럼(클라우드)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)을 사용해 보세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

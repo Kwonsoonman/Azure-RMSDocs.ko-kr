@@ -4,7 +4,7 @@ description: "Azure Portal에서 권한 관리 템플릿을 구성하고 관리�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 74f3f9e22e5607c8b85b752bcd3881d5b7a092b1
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: bb6aeea8f939614b9c1903d8e006815228f99723
+ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
@@ -53,13 +53,13 @@ Azure Information Protection의 구독 또는 Azure Rights Management 서비스�
 
 ### <a name="default-template-names"></a>기본 템플릿 이름
 
-최근에 Azure Information Protection의 구독을 얻은 경우 기본 템플릿은 다음과 같은 이름으로 만들어집니다.
+최근에 구독을 얻은 경우 기본 템플릿은 다음과 같은 이름으로 만들어집니다.
 
 - **Confidential \ All Employees** - 보호된 콘텐츠의 읽기 및 수정 권한이 있습니다.
 
 - **Highly Confidential \ All Employees** - 보호된 콘텐츠의 읽기 전용 권한이 있습니다.
 
-이전에 Azure Information Protection 구독을 얻었거나 Azure Information Protection 구독이 없었지만 Azure Rights Management를 포함하는 Office 365 구독이 있으면 기본 템플릿은 다음과 같은 이름으로 만들어집니다.
+최근에 구독을 얻은 경우 기본 템플릿은 다음과 같은 이름으로 만들어집니다.
 
 - **\<조직 이름> - 기밀** - 보호된 콘텐츠의 읽기 및 수정 권한이 있습니다.
 

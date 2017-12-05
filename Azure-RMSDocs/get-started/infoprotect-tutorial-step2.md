@@ -4,17 +4,17 @@ description: "Azure Information Protection를 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/17/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 0e10a1809aaf792ac8c5960e30917aabd5c44548
-ms.sourcegitcommit: 0ef66a8479b4105c00bf1b1df46d2ddf044b7670
+ms.openlocfilehash: 3dd58454709dd5a73edc23578f12e79d85a9b9c9
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
 
@@ -50,6 +50,10 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     이전 버전의 정책을 사용하고 있어 이 레이블이 없는 경우 같은 레이블로 **내부**를 선택합니다.
 
 2. **분류 레이블 낮추기, 레이블 제거 또는 보호 제거를 설정하려면 근거를 제공해야 합니다.**에서 이 옵션을 **켜기**로 설정합니다.
+
+3. 또한 **Make the custom permissions option available to users**(사용자 지정 권한 옵션을 사용자가 사용할 수 있게 허용) 설정을 찾습니다. **끄기**로 설정되어 있으면 **켜기**로 변경합니다.
+    
+    기본값은 구독을 얻은 시기에 따라 달라지므로 이 설정을 변경할 필요가 없을 수도 있습니다. 이 자습서의 뒷부분에서는 사용자 지정 권한을 사용하여 파일 탐색기에서 파일을 마우스 오른쪽 단추로 클릭할 때 지정한 사용자와 보호된 문서를 공유할 것입니다.
 
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>보호를 위한 새 레이블, 시각적 표식 및 분류를 위한 메시지 표시 조건 만들기
 
@@ -142,7 +146,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 |자세한 정보가 필요한 경우|추가 정보|
 |--------------------------------|--------------------------|
 |기본 정책 및 다양한 버전에 대한 정보|[기본 Azure Information Protection 정책](../deploy-use/configure-policy-default.md)|
-|정책에 대한 구성 옵션 정보|[Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)|
+|정책 구성에 대한 정보|[Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)|
 |보호를 위한 레이블 구성에 대한 자세한 지침|[Rights Management 보호에 대해 레이블을 구성하는 방법](../deploy-use/configure-policy-protection.md)|
 |권한에 대한 자세한 정보|[Azure Rights Management에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md)|
 

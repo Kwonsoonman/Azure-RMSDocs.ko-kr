@@ -4,7 +4,7 @@ description: "조직의 문서와 메일의 분류, 레이블 지정 및 보호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 41269f709df4b00a6f127e81aa060a062ab1005f
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 8f29aec107c344489ae38afabfa79129fd3fa000
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 
@@ -207,7 +207,7 @@ Azure Information Protection에 사용할 그룹이 표시되어 있는지 확�
 
 사용자 또는 그룹의 메일 주소를 변경할 경우 사용자 또는 그룹에 이전 메일 주소를 두 번째 메일 주소(일명 프록시 주소, 별칭 또는 대체 메일 주소)로 추가할 것을 권장합니다. 이렇게 하면 이전 메일 주소가 Azure AD proxyAddresses 특성에 추가됩니다. 이 계정 관리를 사용하면 이전 메일 주소를 사용할 때 저장된 사용 권한이나 기타 구성에 대한 비즈니스 연속성을 보장할 수 있습니다. 
 
-그럴 수 없는 경우는 새 메일 주소를 사용하는 사용자 또는 그룹에서 이전에 보호된 문서 및 메일에 대한 액세스가 거부되거나 이전 값을 사용한 다른 구성이 잘못될 위험이 있습니다. 이 경우, 구성을 반복하여 새 메일 주소를 저장해야 합니다.
+그럴 수 없는 경우는 새 메일 주소를 사용하는 사용자 또는 그룹에서 이전에 이전 메일 주소로 보호된 문서 및 메일에 대한 액세스가 거부될 위험이 있습니다. 이 경우, 보호 구성을 반복하여 새 메일 주소를 저장해야 합니다. 예를 들어, 사용자 또는 그룹에게 템플릿 또는 레이블에 대한 사용 권한이 부여된 경우 이러한 템플릿 또는 레이블을 편집하고 이전 전자 메일 주소에 부여한 것과 동일한 사용 권한으로 새 전자 메일 주소를 지정합니다.
 
 그룹에서 메일 주소를 변경하는 일은 드물며, 개별 사용자가 아닌 그룹에 사용 권한을 할당하면 사용자의 메일 주소가 변경되어도 상관이 없습니다. 이 시나리오에서는 사용 권한이 개별 사용자 메일 주소가 아닌 그룹 메일 주소에 할당됩니다. 이 방법은 관리자가 문서 및 메일을 보호하기 위한 사용 권한을 구성할 때 가장 많이 사용하는 권장 방법입니다. 그러나 사용자가 개별 사용자에 사용자 지정 권한을 할당하는 경우가 더 일반적입니다. 액세스 권한을 부여하는데 사용자 계정과 그룹 중에서 어느 쪽이 사용되었는지 알기 어려운 경우도 있으므로, 항상 이전 메일 주소를 두 번째 메일 주소로 추가하는 것이 안전합니다.
 

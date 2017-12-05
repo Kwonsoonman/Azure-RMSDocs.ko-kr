@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 11/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 28dceed5268b26f78cf3662746fc4434d909f735
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: e6fa7c2912f2598f8eb2ad31d237caab80fd0273
+ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -40,6 +40,8 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 Azure Information Protection에 대해 사용자 인증 및 권한 부여를 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.
 
 MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure Information Protection에서 지원됩니다.
+
+조건부 액세스는 Azure Information Protection으로 보호되는 문서에 대한 미리 보기에서 지원됩니다. 자세한 내용은 다음 FAQ를 참조하세요. [Azure Information Protection이 조건부 액세스를 위한 사용 가능한 클라우드 앱으로 나열되어 있습니다. 작동 방법은 무엇인가요?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 인증 요구 사항에 대한 자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](requirements-azure-ad.md)을 참조하세요. 
 

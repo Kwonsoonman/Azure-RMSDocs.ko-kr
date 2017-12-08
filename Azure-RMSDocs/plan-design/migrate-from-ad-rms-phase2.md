@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b65e3d803f94e6c8a494217e2a494c704640e5fc
-ms.sourcegitcommit: 3952fc01c6182c143df7f0d2e748594e49bf1da8
+ms.openlocfilehash: 0dff1b664cbac830dda2750cc6120ab4476c8183
+ms.sourcegitcommit: c5408506170bdb00d9e677b02161b9f61d4d5d3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -138,7 +138,7 @@ Azure Rights Management 서비스를 활성화하기 전 또는 후, 마이그�
 
 2. Azure RMS PowerShell cmdlet인 [Export-AadrmTemplate](/powershell/aadrm/vlatest/export-aadrmtemplate)을 사용하여 템플릿을 내보냅니다.
 
-3. Azure RMS PowerShell cmdlet인 [Import-AadrmTemplate](/powershell/aadrm/vlatest/Import-AadrmTpd)을 사용하여 템플릿을 가져옵니다.
+3. Azure RMS PowerShell cmdlet인 [Import-AadrmTemplate](/powershell/module/aadrm/import-aadrmtemplate)을 사용하여 템플릿을 가져옵니다.
 
 이렇게 하면 마이그레이션 후에 만든 다른 템플릿으로 하듯이 이 템플릿을 게시하거나 보관할 수 있습니다.
 

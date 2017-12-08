@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 690cbc194be79a4e4fe9d85cda0e731d31d33822
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: 986603d54b69fcf85bafecef2691fbd44af94942
+ms.sourcegitcommit: c5408506170bdb00d9e677b02161b9f61d4d5d3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -79,7 +79,7 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
     
     - SQL Server Express의 경우: `Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS`
     
-    [자세한 예제](/powershell/module/azureinformationprotection/set-aipscannerconfiguration#examples)가 더 필요할 경우 이 cmdlet에 대한 온라인 도움말을 사용하세요.
+    [자세한 예제](/powershell/module/azureinformationprotection/install-aipscanner#examples)가 더 필요할 경우 이 cmdlet에 대한 온라인 도움말을 사용하세요.
 
 4. **관리 도구** > **서비스**를 사용하여 서비스가 현재 설치되어 있는지 확인합니다. 
     

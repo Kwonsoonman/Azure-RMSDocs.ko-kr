@@ -4,7 +4,7 @@ description: "BYOK(“Bring Your Own Key”)라고도 하는 고객 관리 키�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: afc25e638cff4bddc342ed29dee7fab304d67bd7
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 981f7349c9ae279d48f5cb4795ffc2087f5ae4d8
+ms.sourcegitcommit: 850869505942f9d1b74720085d253de4b54b19c1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 
@@ -27,7 +27,11 @@ Azure Information Protection을 포함하는 구독이 있는 조직은 Azure In
 
 키는 Azure 구독이 필요한 Azure Key Vault에 저장해야 합니다. HSM 보호 키를 사용하려면 Azure Key Vault 프리미엄 서비스 계층을 사용해야 합니다. Azure 주요 자격 증명 모음의 키를 사용하면 월별 요금이 발생합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/en-us/pricing/details/key-vault/) 페이지를 참조하세요.
 
-Azure Information Protection 테넌트 키에 Azure Key Vault를 사용하는 경우 전용 구독과 함께 이 키에 대한 전용 Key Vault를 사용하는 것이 좋습니다. 이 구성은 Azure Rights Management 서비스에서만 사용되도록 하는 데 도움이 됩니다. 
+Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용하는 경우, Azure Rights Management Service에서만 사용할 수 있도록 이 키에 대한 전용 Key Vault를 사용하는 것이 좋습니다. 이 구성은 다른 서비스의 호출이 Azure Rights Management 서비스에 대한 응답 시간을 단축시킬 수 있는 키 자격 증명 모음에 대한 [서비스 제한](/azure/key-vault/key-vault-service-limits)을 초과하지 않도록 합니다.  
+
+또한 일반적으로 Azure Key Vault를 사용하는 각 서비스마다 키 관리 요구 사항이 다르기 때문에 잘못 구성하지 않도록 이 키 자격 증명 모음에 대해 별도로 Azure 구독에 가입하는 것이 좋습니다. 
+
+그러나 Azure Key Vault를 사용하는 다른 서비스와 Azure 구독을 공유하려는 경우 구독이 공통된 관리자 집합을 공유하는지 확인하세요. 이 주의 사항은 구독을 사용하는 관리자가 액세스할 수 있는 모든 키를 잘 이해하고 있기 때문에 잘못 구성할 가능성이 낮음을 의미합니다. 예를 들어 Azure Information Protection 테넌트 키 관리자가 Office 365 고객 키 및 CRM 온라인에 대한 키를 관리하는 사람과 동일한 경우 Azure 구독을 공유합니다. 그러나 고객 키 또는 CRM 온라인에 대한 키를 관리하는 관리자가 Azure Information Protection 테넌트 키를 관리하는 사람과 다른 경우 Azure Information Protection를 위해 Azure 구독을 공유하지 않는 것이 좋습니다.
 
 ## <a name="benefits-of-using-azure-key-vault"></a>Azure Key Vault를 사용할 경우의 이점
 

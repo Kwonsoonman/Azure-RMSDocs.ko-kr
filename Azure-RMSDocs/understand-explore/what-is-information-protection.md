@@ -4,17 +4,17 @@ description: "Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c17453cddec7d570901ccf18287e8d1db2fd3f01
-ms.sourcegitcommit: 8c02aa2c6abc301a52a7f8ad9ee9d0ecd0b810f7
+ms.openlocfilehash: 7e16be928a12142b695f2eac60bdbd3e353c3119
+ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -43,19 +43,17 @@ Azure Information Protection 레이블을 사용하여 문서와 전자 메일�
 
 이 보호 기술은 암호화, ID 및 권한 부여 정책을 사용합니다. 적용되는 레이블과 마찬가지로 Rights Management를 사용하여 적용된 보호 기능은 조직, 네트워크, 파일 서버, 응용 프로그램 내/외의 위치에 관계없이 문서와 전자 메일에 계속 적용됩니다. 이 정보 보호 솔루션은 데이터를 다른 사용자와 공유하는 경우에도 데이터에 대한 제어를 유지할 수 있도록 합니다.
 
-예를 들어 조직 내의 사용자만 액세스할 수 있도록 보고서 문서 또는 판매 예측 스프레드시트를 구성할 수도 있고 해당 문서의 편집 가능 여부를 제어하거나, 읽기 전용으로 제한하거나 문서 인쇄를 차단할 수도 있습니다. 마찬가지로 메일을 구성할 수 있으며 전체 회신 옵션 사용 또는 메일 전달을 차단할 수도 있습니다. *Rights Management 템플릿*을 사용하면 이러한 보호 작업을 단순화하고 간소화할 수 있습니다.
+예를 들어 조직 내의 사용자만 액세스할 수 있도록 보고서 문서 또는 판매 예측 스프레드시트를 구성할 수도 있고 해당 문서의 편집 가능 여부를 제어하거나, 읽기 전용으로 제한하거나 문서 인쇄를 차단할 수도 있습니다. 마찬가지로 메일을 구성할 수 있으며 전체 회신 옵션 사용 또는 메일 전달을 차단할 수도 있습니다. 
+
+이러한 보호 설정은 레이블 구성의 일부가 될 수 있으므로 사용자는 단순히 레이블을 적용하여 문서와 전자 메일을 분류하고 보호할 수 있습니다. 그러나 보호를 지원하지만 레이블링을 지원하지 않는 응용 프로그램 및 서비스에서 동일한 보호 설정을 사용할 수도 있습니다. 이러한 응용 프로그램과 서비스의 경우 보호 설정은 *Rights Management 템플릿*으로 표시됩니다.
 
 ### <a name="rights-management-templates"></a>Rights Management 템플릿
 
 Azure Rights Management 서비스를 활성화하는 즉시 조직 내 사용자에 대한 데이터 액세스를 제한하는 두 가지 기본 템플릿을 사용할 수 있습니다. 이러한 템플릿을 사용하여 즉시 조직에서 데이터가 누출되는 것을 방지할 수 있습니다. 또한 제한이 강화된 컨트롤을 적용하는 자체 보호 설정을 구성하여 이러한 기본 템플릿을 보완할 수도 있습니다.
 
-템플릿은 레이블 구성의 일부일 수 있습니다. 해당 레이블을 문서 또는 전자 메일 메시지에 적용하면 데이터가 분류되고 자동으로 보호됩니다. 또한 Azure Rights Management를 지원하는 제품과 서비스에서 사용자나 관리자가 선택할 수도 있습니다.
+내부적으로 보호 설정이 포함된 Azure Information Protection에 대해 레이블을 만드는 경우 이 작업은 해당 Rights Management 템플릿을 만듭니다. 그런 다음 Azure Rights Management를 지원하는 응용 프로그램 및 서비스로 해당 템플릿을 사용할 수 있습니다.
 
-이 예제에서는 Azure Portal에서 Azure Information Protection 정책을 구성할 때 레이블에 대한 템플릿을 선택하는 방법을 보여 줍니다.
-
-![Azure Portal에서 템플릿을 선택하는 예](../media/info-protect-template-callout.png)
-
-Exchange 관리 센터에서 동일한 템플릿을 선택할 수 있습니다. 예를 들어 Exchange는 Azure Rights Management 기술을 지원하므로 이러한 템플릿을 사용하도록 Exchange Online 메일 흐름 규칙을 구성할 수 있습니다.
+예를 들어 Exchange 관리 센터에서 Exchange Online 메일 흐름 규칙을 구성하여 이들 템플릿을 사용할 수 있습니다.
 
 ![Exchange Online용 템플릿을 선택하는 예](../media/templates-exchangeonline-callouts.png)
 

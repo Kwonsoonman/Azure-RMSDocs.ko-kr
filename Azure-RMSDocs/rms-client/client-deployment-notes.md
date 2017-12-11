@@ -4,7 +4,7 @@ description: "MSIPC 클라이언트라고도 하는 Rights Management Service �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2017
+ms.date: 12/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b7879dd85c2e46823cfe9c8f1f4482952a8db8aa
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6ddf4e43a087a9eb283651567244d96c69b4071f
+ms.sourcegitcommit: 07456cc544bc3383e05e0ee99638964d9968f257
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 클라이언트 배포 참고 사항
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 7 SP1, Windows 8, Windows 8.1, Windows 10, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Vista*
+>*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 7 with SP1, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016*
 
 RMS 클라이언트(권한 관리 서비스 클라이언트) 버전 2는 MSIPC 클라이언트로도 알려져 있습니다. 이 제품은 온-프레미스 또는 클라우드에서 Microsoft 권한 관리 서비스와 통신하는 Windows 컴퓨터용 소프트웨어로, 조직의 경계 내에서 또는 관리되는 경계 외부에서 응용 프로그램 및 장치를 통과하는 정보에 대한 액세스 및 사용을 보호하는 데 도움이 됩니다. 
 
@@ -62,7 +62,7 @@ RMS 클라이언트는 다음 운영 체제에서 지원됩니다.
 |Windows Server 2012 R2|Windows 8.1|
 |Windows Server 2012|Windows 8|
 |Windows Server 2008 R2|Windows 7 SP1 이상|
-|Windows Server 2008(AD RMS만 해당)|Windows Vista SP2 이상(AD RMS만 해당)|
+
 
 ### <a name="which-processors-or-platforms-support-the--rms-client"></a>어떤 프로세서 또는 플랫폼이 RMS 클라이언트를 지원하나요?
 RMS 클라이언트는 x86 및 x64 컴퓨팅 플랫폼에서 지원됩니다.

@@ -4,7 +4,7 @@ description: "Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/23/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,17 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 26c82884c706c8397eae63197ed0307faa3562d3
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 1a7075287eebe2c68534de95d01cef455ebe63b5
+ms.sourcegitcommit: f185b1d742c345a465927f88e606413421fe1150
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-Azure RMS가 작동하는 방식과 관련하여 Rights Management Service(및 Microsoft)가 데이터를 보거나 정보 보호 프로세스의 일부로 저장하지 않는다는 점을 이해해야 합니다. 보호하는 정보는 Azure에 명시적으로 저장하거나 Azure에 정보를 저장하는 다른 클라우드 서비스를 사용하지 않는 한, Azure로 전송되거나 Azure에 저장되지 않습니다. Azure RMS는 단순히 문서의 데이터를 허가된 사용자 및 서비스 이외의 사람이 읽을 수 없게 합니다.
+Azure RMS가 작동하는 방식을 이해하는 데 중요한 점은 Azure Information Protection의 이 데이터 보호 서비스가 보호 프로세스의 일부로 데이터를 보거나 저장하지 않는다는 것입니다. 보호하는 정보는 Azure에 명시적으로 저장하거나 Azure에 정보를 저장하는 다른 클라우드 서비스를 사용하지 않는 한, Azure로 전송되거나 Azure에 저장되지 않습니다. Azure RMS는 단순히 문서의 데이터를 허가된 사용자 및 서비스 이외의 사람이 읽을 수 없게 합니다.
 
 - 데이터는 응용 프로그램 수준에서 암호화되며 해당 문서의 허가된 사용을 정의하는 정책을 포함합니다.
 
@@ -39,7 +39,7 @@ Azure RMS가 암호화하거나 암호를 해독하고 권한을 부여하고 �
 Azure RMS에서 사용하는 알고리즘 및 키 길이에 대한 자세한 기술 내용은 다음 섹션을 참조하세요.
 
 ## <a name="cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths"></a>Azure RMS에서 사용하는 암호화 컨트롤: 알고리즘 및 키 길이
-RMS의 작동 방식을 이해할 필요는 없지만 업무 표준의 보안 보호 유지를 위해 어떤 암호화 컨트롤을 사용하는지에 대해 질문을 받을 수는 있습니다.
+이 기술의 작동 방식을 자세히 알 필요가 없더라도 이 기술이 사용하는 암호화 컨트롤에 대해 질문을 받을 수 있습니다. 보안 보호가 산업 표준인지 확인하는 경우를 예로 들 수 있습니다.
 
 
 |암호화 컨트롤|Azure RMS에서 사용|
@@ -60,7 +60,7 @@ RMS의 작동 방식을 이해할 필요는 없지만 업무 표준의 보안 �
 
 - 온-프레미스에서 마이그레이션 후 AD RMS 클러스터에서 Exchange Online을 사용하는 경우
 
-- AD RMS로 보호된 콘텐츠가 Azure Rights Management로 마이그레이션한 후 계속 열 수 있도록 보관된 키가 마이그레이션 전에 온-프레미스에서 생성된 경우
+- 이전에 마이그레이션 전에 온-프레미스에서 생성된 보관된 키의 경우 이전에 AD RMS로 보호된 콘텐츠는 Azure Rights Management 서비스 게시 마이그레이션에서 계속 열 수 있습니다.
 
 - 고객이 Azure Key Vault를 사용하여 BYOK(Bring Your Own Key) 방식을 선택하는 경우 Azure Information Protection은 1024비트 및 2048비트의 키 길이를 지원합니다. 강력한 보안을 위해 2048비트의 키 길이가 권장됩니다.
 

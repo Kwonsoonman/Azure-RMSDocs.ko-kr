@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 12/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 91ba855bb9bd9c41c81ae819b7b3afee1f04adb8
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: d6937e86fd0fd544ff2030e52d03c32daa67a134
+ms.sourcegitcommit: a9376b5431dc6ae9819833146a84fc1dd5e685fb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -88,8 +88,6 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility and Security Blo
 ### <a name="community-resources"></a>커뮤니티 리소스
 
 [Azure Information Protection에 대한 Yammer 사이트](https://www.yammer.com/AskIPTeam)가 권장됩니다. 이 리소스를 통해 Azure Information Protection 팀의 직접적인 답변을 얻고 다른 관리자 및 컨설턴트의 풍부한 경험과 지식을 공유할 수 있습니다.
-
-질문하고 정보를 공유할 수 있는 [Azure Information Protection 공간](https:/techcommunity.microsoft.com/t5/Azure-Information-Protection/bd-p/Azure-Information-Protection)이 있으며 빠르게 성장하는 [기술 커뮤니티](https:/techcommunity.microsoft.com)를 확인해 보세요.
 
 이러한 사이트에 액세스할 수 없으면 [Microsoft RMS를 위한 TechNet 포럼(클라우드)](https://social.technet.microsoft.com/Forums/en-US/home?forum=rmscloud)을 사용해 보세요.
 

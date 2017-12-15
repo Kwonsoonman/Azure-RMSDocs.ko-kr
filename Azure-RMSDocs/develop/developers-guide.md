@@ -11,11 +11,11 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: a9a94744aa2eacb3ddb4bbda3989ae857ff708fd
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
+ms.openlocfilehash: 2aba222457dfb56cca29e1a2948cc08041552d9f
+ms.sourcegitcommit: f3d5a1de317b9bd114d802b3965bf6b679d7ccf2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 10/17/2017
 
 서비스 응용 프로그램은 엔터프라이즈 콘텐츠 관리 시스템, 비즈니스 응용 프로그램 또는 클라우드 기반 비즈니스 솔루션에서 내보내는 정보를 보호하는 기능을 제공합니다. 서비스 응용 프로그램의 예로는 DLP(Data Loss Prevention) 및 CAS(Cloud Application Security) 응용 프로그램이 있습니다. 서비스 응용 프로그램 개발용 SDK는 두 가지 프로그래밍 모델을 통해 제공됩니다.
 
-- [C++](https://www.microsoft.com/en-us/download/details.aspx?id=38397)
+- [C++](https://www.microsoft.com/download/details.aspx?id=38397)
 - [C# 관리되는 API](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcManagedAPI)
 
 ### <a name="examples-of-service-applications"></a>서비스 응용 프로그램의 예
@@ -84,7 +84,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 ### <a name="security-and-authentication"></a>보안 및 인증
 
-- [Azure Active Directory 로그인을 사용하여 App Service 응용 프로그램을 구성하는 방법](https://docs.microsoft.com/en-us/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)
+- [Azure Active Directory 로그인을 사용하여 App Service 응용 프로그램을 구성하는 방법](https://docs.microsoft.com/azure/app-service-mobile/app-service-mobile-how-to-configure-active-directory-authentication)
 - [ADAL(Azure Active Directory 인증) 인증을 사용하는 방법](how-to-use-adal-authentication.md)
 - [인증용으로 Azure RMS 구성(서비스)](adal-auth.md)
 - [API 보안 모드를 설정하는 방법(서비스)](setting-the-api-security-mode-api-mode.md)
@@ -112,7 +112,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 - [보안 모범 사례 가이드](security-guidelines.md)
 - [RMS 개발자 코너(블로그)](https://blogs.msdn.microsoft.com/rms/)
-- [Azure Information Protection 질문과 대답](https://docs.microsoft.com/en-us/information-protection/get-started/faqs)
+- [Azure Information Protection 질문과 대답](https://docs.microsoft.com/information-protection/get-started/faqs)
 
 ### <a name="support-articles"></a>지원 문서
 
@@ -133,17 +133,17 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 ### <a name="api-reference"></a>API 참조
 
-- [Windows API 참조](https://msdn.microsoft.com/en-us/library/hh535292.aspx)
+- [Windows API 참조](https://msdn.microsoft.com/library/hh535292.aspx)
   - [Windows SDK 오류 코드](https://msdn.microsoft.com/library/hh535248.aspx)
 - [Windows Phone 및 Windows 스토어 API 참조](https://msdn.microsoft.com/library/dn891914.aspx)
-- [iOS/OSX API 참조](https://msdn.microsoft.com/en-us/library/dn758306.aspx)
-- [Android API 참조](https://msdn.microsoft.com/en-us/library/dn758245.aspx)
+- [iOS/OSX API 참조](https://msdn.microsoft.com/library/dn758306.aspx)
+- [Android API 참조](https://msdn.microsoft.com/library/dn758245.aspx)
 - [Linux API 참조](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)
 
 ### <a name="previous-versions"></a>이전 버전
 
-- [AD RMS SDK](https://msdn.microsoft.com/en-us/library/cc530379.aspx)는 RMS SDK의 첫 번째 버전입니다.
-- [AD RMS 스크립팅 도구](https://msdn.microsoft.com/en-us/library/bb968797.aspx)는 AD RMS 설치용 관리 도구입니다.
+- [AD RMS SDK](https://msdn.microsoft.com/library/cc530379.aspx)는 RMS SDK의 첫 번째 버전입니다.
+- [AD RMS 스크립팅 도구](https://msdn.microsoft.com/library/bb968797.aspx)는 AD RMS 설치용 관리 도구입니다.
 
 ### <a name="see-also"></a>참고 항목
 

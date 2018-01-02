@@ -4,17 +4,17 @@ description: "Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/01/2017
+ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 7e16be928a12142b695f2eac60bdbd3e353c3119
-ms.sourcegitcommit: 43d77093d97509170bbdfa72bc28e1c2100228ee
+ms.openlocfilehash: 18ec6241d09eb8de2417dd939237de0544a401e8
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -45,13 +45,13 @@ Azure Information Protection 레이블을 사용하여 문서와 전자 메일�
 
 예를 들어 조직 내의 사용자만 액세스할 수 있도록 보고서 문서 또는 판매 예측 스프레드시트를 구성할 수도 있고 해당 문서의 편집 가능 여부를 제어하거나, 읽기 전용으로 제한하거나 문서 인쇄를 차단할 수도 있습니다. 마찬가지로 메일을 구성할 수 있으며 전체 회신 옵션 사용 또는 메일 전달을 차단할 수도 있습니다. 
 
-이러한 보호 설정은 레이블 구성의 일부가 될 수 있으므로 사용자는 단순히 레이블을 적용하여 문서와 전자 메일을 분류하고 보호할 수 있습니다. 그러나 보호를 지원하지만 레이블링을 지원하지 않는 응용 프로그램 및 서비스에서 동일한 보호 설정을 사용할 수도 있습니다. 이러한 응용 프로그램과 서비스의 경우 보호 설정은 *Rights Management 템플릿*으로 표시됩니다.
+이러한 보호 설정은 레이블 구성의 일부가 될 수 있으므로 사용자는 단순히 레이블을 적용하여 문서와 전자 메일을 분류하고 보호할 수 있습니다. 그러나 보호를 지원하지만 레이블링을 지원하지 않는 응용 프로그램 및 서비스에서 동일한 보호 설정을 사용할 수도 있습니다. 이러한 응용 프로그램과 서비스의 경우 보호 설정은 *Rights Management 템플릿*으로 제공됩니다.
 
 ### <a name="rights-management-templates"></a>Rights Management 템플릿
 
 Azure Rights Management 서비스를 활성화하는 즉시 조직 내 사용자에 대한 데이터 액세스를 제한하는 두 가지 기본 템플릿을 사용할 수 있습니다. 이러한 템플릿을 사용하여 즉시 조직에서 데이터가 누출되는 것을 방지할 수 있습니다. 또한 제한이 강화된 컨트롤을 적용하는 자체 보호 설정을 구성하여 이러한 기본 템플릿을 보완할 수도 있습니다.
 
-내부적으로 보호 설정이 포함된 Azure Information Protection에 대해 레이블을 만드는 경우 이 작업은 해당 Rights Management 템플릿을 만듭니다. 그런 다음 Azure Rights Management를 지원하는 응용 프로그램 및 서비스로 해당 템플릿을 사용할 수 있습니다.
+내부적으로 보호 설정이 포함된 Azure Information Protection에 대해 레이블을 만드는 경우 이 작업은 해당 Rights Management 템플릿을 만듭니다. 그런 다음 Azure Rights Management를 지원하는 응용 프로그램 및 서비스로 해당 템플릿을 사용할 수도 있습니다.
 
 예를 들어 Exchange 관리 센터에서 Exchange Online 메일 흐름 규칙을 구성하여 이들 템플릿을 사용할 수 있습니다.
 
@@ -59,7 +59,7 @@ Azure Rights Management 서비스를 활성화하는 즉시 조직 내 사용자
 
 Azure Rights Management 보호에 대한 자세한 내용은 [Azure Rights Management란?](what-is-azure-rms.md)을 참조하세요.
 
-## <a name="integration-with-end-user-workflows"></a>최종 사용자 워크플로와 통합
+## <a name="integration-with-end-user-workflows-for-documents-and-emails"></a>문서 및 메일에 대한 최종 사용자 워크플로와 통합
 
 Azure Information Protection 클라이언트가 설치되면 Azure Information Protection은 최종 사용자의 기존 워크플로와 통합됩니다. 이 클라이언트는 Word에 Information Protection 표시줄이 표시된 첫 번째 그림에서 살펴본 대로 Office 응용 프로그램에 이 표시줄을 설치합니다. 동일한 Information Protection 표시줄이 Excel, PowerPoint 및 Outlook에 추가됩니다. 예를 들면 다음과 같습니다.
 
@@ -79,6 +79,25 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 ![문서 추적 사이트의 해지 액세스 아이콘](../media/tracking-site-revoke-access-icon.png)
 
+### <a name="additional-integration-for-email"></a>메일에 대한 추가 통합
+
+Azure Information Protection을 Exchange Online과 함께 사용하는 경우 추가 이점이 있습니다. 즉, 보호된 메일을 모든 사용자에게 보내 사용자가 원하는 장치에서 읽을 수 있도록 할 수 있습니다.
+
+예를 들어 **Gmail**, **Hotmail** 또는 **Microsoft** 계정을 사용하는 개인 메일 계정이나 Office 365용 계정 또는 Azure AD의 계정이 없는 사용자에게 중요한 정보를 보내야 한다고 가정합니다. 이러한 메일은 미사용 시와 전송 중에 암호화해야 하고 원래 받는 사람만 읽어야 합니다.
+
+이 시나리오에서는 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)이 필요합니다. 받은 사람이 기본 메일 클라이언트에서 보호된 메일을 열 수 없는 경우 일회성 암호를 사용하여 브라우저에서 중요한 정보를 읽을 수 있습니다.
+
+예를 들어 Gmail 사용자의 메일 메시지에는 다음이 표시됩니다.
+
+![OME 및 AIP에 대한 Gmail 받은 사람 환경](../media/ome-message.png)
+
+메일을 보내는 사용자의 워크플로는 자신의 조직에 속한 사용자에게 보호된 메일을 보낼 때와 다르지 않습니다. 예를 들어 Azure Information Protection 클라이언트가 Outlook 리본에 추가할 수 있는 **전달 금지** 단추를 선택할 수 있습니다. 또는 이 전달 금지 기능을 사용자가 선택하는 레이블에 통합하여 메일도 보호되는 항목으로 분류되도록 할 수 있습니다.
+
+![전달 금지가 구성된 레이블 선택](../media/recipients-only-label.png)
+
+또는 권한 보호를 적용하는 메일 흐름 규칙을 사용하여 사용자에 대한 보호를 자동으로 제공할 수도 있습니다. 
+
+이러한 메일에 Office 문서를 첨부하면 해당 문서도 자동으로 보호됩니다.
 
 ## <a name="resources-for-azure-information-protection"></a>Azure Information Protection에 대한 리소스
 

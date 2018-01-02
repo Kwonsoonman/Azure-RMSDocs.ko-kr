@@ -4,17 +4,17 @@ description: "모든 사용자와 모든 장치에 적용되는 Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: f651a621b961bfba63ad43e5372eec9a68c170d4
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 49eb10a999f541cb9979576faac55ca28ff35a0b
+ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 정책 설정을 구성하는 방법
 
@@ -39,7 +39,7 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
 3. **Azure Information Protection - 전역 정책** 블레이드 또는 **정책:\<이름>** 블레이드에서 설정을 구성합니다.
     
     - **Select the default label**(기본 레이블 선택): 이 옵션을 설정한 경우 레이블이 없는 문서와 메일에 할당할 레이블을 선택합니다. 하위 레이블이 있는 경우에는 레이블을 기본값으로 설정할 수 없습니다. 
-        
+    
     - **All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함):이 옵션을 **On**(켜기)으로 설정하면 저장되는 모든 문서 및 전송되는 모든 메일에 레이블이 적용되어야 합니다. 레이블 지정은 사용자에 의해 수동으로 할당되거나, [조건](configure-policy-classification.md)의 결과로 자동으로 할당되거나, 기본적으로 할당(**Select the default label**(기본 레이블 선택) 옵션을 설정하여)될 수 있습니다.
         
         사용자가 문서를 저장하거나 메일을 보낼 때 레이블이 할당되지 않은 경우에는 레이블을 선택하라는 메시지가 표시됩니다. 예를 들면 다음과 같습니다.
@@ -55,12 +55,15 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
     - **For email messages with attachments, apply a label that matches the highest classification of those attachments**(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용): 이 옵션을 **권장**으로 설정한 경우 메일 메시지에 레이블을 적용하라는 메시지가 표시됩니다. 첨부 파일에 적용된 분류 레이블에 따라 레이블이 동적으로 선택되고 최고 분류 레이블이 선택됩니다. 첨부 파일은 실제 파일이어야 하며 파일에 대한 링크일 수 없습니다(예를 들어 SharePoint 또는 비즈니스용 OneDrive의 파일에 대한 링크). 사용자는 권장 사항을 수락하거나 해제할 수 있습니다. 이 옵션을 **켜기**로 설정한 경우 레이블이 자동으로 적용되지만, 사용자가 메일을 보내기 전에 레이블을 제거하거나 다른 레이블을 선택할 수 있습니다.  
     
     - **Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시): 이 설정이 꺼져 있으면 사용자가 Word, Excel, PowerPoint 및 Outlook의 표시줄에서 레이블을 선택할 수 없습니다. 대신, 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택해야 합니다. 이 설정이 켜져 있으면 사용자가 표시줄이나 단추에서 레이블을 선택할 수 있습니다.
-    
-    이 설정이 켜져 있으면 고급 클라이언트 설정과 함께 사용할 수 있으므로 사용자가 표시줄을 표시하지 않도록 선택할 경우 [Azure Information Protection 표시줄을 영구적으로 숨기기](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)를 지정할 수 있습니다. **보호** 단추에서 **표시줄 표시** 옵션을 선택 해제하면 됩니다.
+        
+        > [!IMPORTANT]
+        > 이 설정은 미리 보기로 제공되며 Azure Information Protection 클라이언트의 현재 미리 보기 버전이 필요합니다.
+        
+        이 설정이 켜져 있으면 고급 클라이언트 설정과 함께 사용할 수 있으므로 사용자가 표시줄을 표시하지 않도록 선택할 경우 [Azure Information Protection 표시줄을 영구적으로 숨기기](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)를 지정할 수 있습니다. **보호** 단추에서 **표시줄 표시** 옵션을 선택 해제하면 됩니다.
     
     - **Outlook 리본에 전달 금지 단추 추가**: 이 설정이 켜져 있으면 사용자가 Outlook 메뉴에서 **전달 금지** 옵션을 선택할 수 있을 뿐만 아니라 Outlook 리본의 **보호** 그룹에서 이 단추를 선택할 수 있습니다. 사용자가 메일을 분류하고 보호하도록 하려면 이 단추를 추가하는 대신 [보호용 레이블을 구성](configure-policy-protection.md)하고 Outlook에 대한 사용자 정의 권한을 구성하는 것이 좋습니다. 이 보호 설정은 기능적으로 **전달 금지** 단추를 선택하는 것과 동일하지만 레이블에 이 기능이 포함되어 있으면 메일이 분류 및 보호됩니다.
     
-    고급 클라이언트 설정을 사용하여 이 정책 설정을 [클라이언트 사용자 지정](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)으로 구성할 수도 있습니다.
+        고급 클라이언트 설정을 사용하여 이 정책 설정을 [클라이언트 사용자 지정](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)으로 구성할 수도 있습니다.
     
     - **Make the custom permissions option available to users**(사용자에게 사용자 지정 권한 옵션 제공): 이 설정이 켜져 있으면 사용자가 사용자 지정 보호 설정을 지정하고 레이블 구성에 포함된 정책 설정을 재정의할 수 있습니다. 이 설정이 꺼져 있으면 사용자가 사용자 지정 권한 옵션을 선택할 수 없습니다.
         

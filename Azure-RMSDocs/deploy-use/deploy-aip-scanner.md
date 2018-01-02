@@ -4,7 +4,7 @@ description: "Azure Information Protection 스캐너를 설치, 구성 및 실�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 986603d54b69fcf85bafecef2691fbd44af94942
-ms.sourcegitcommit: c5408506170bdb00d9e677b02161b9f61d4d5d3c
+ms.openlocfilehash: 3e78fd3c306136c57b75e74c8846e38670e9eb94
+ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -65,21 +65,23 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 
 2. **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell 세션을 엽니다.
 
-3. [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet을 실행하여 Azure Information Protection 스캐너에 대한 데이터베이스를 만들 SQL Server 인스턴스를 지정합니다. 메시지가 표시되는 경우 스캐너 서비스 계정(\<domain\user name>) 및 암호에 대한 자격 증명을 제공합니다. 
+3. [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner) cmdlet을 실행하여 Azure Information Protection 스캐너에 대한 데이터베이스를 만들 SQL Server 인스턴스를 지정합니다. 
     
     ```
     Install-AIPScanner -SqlServerInstance <database name>
     ```
     
     예:
-        
-    - 기본 인스턴스의 경우: `Install-AIPScanner -SqlServerInstance SQLSERVER1`
     
-    - 명명된 인스턴스의 경우: `Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER`
+    기본 인스턴스의 경우: `Install-AIPScanner -SqlServerInstance SQLSERVER1`
     
-    - SQL Server Express의 경우: `Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS`
+    명명된 인스턴스의 경우: `Install-AIPScanner -SqlServerInstance SQLSERVER1\AIPSCANNER`
+    
+    SQL Server Express의 경우: `Install-AIPScanner -SqlServerInstance SQLSERVER1\SQLEXPRESS`
     
     [자세한 예제](/powershell/module/azureinformationprotection/install-aipscanner#examples)가 더 필요할 경우 이 cmdlet에 대한 온라인 도움말을 사용하세요.
+    
+    메시지가 표시되는 경우 스캐너 서비스 계정(\<domain\user name>) 및 암호에 대한 자격 증명을 입력합니다.
 
 4. **관리 도구** > **서비스**를 사용하여 서비스가 현재 설치되어 있는지 확인합니다. 
     

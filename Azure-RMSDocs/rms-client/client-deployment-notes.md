@@ -100,8 +100,8 @@ RMS 클라이언트는 로컬 디스크에 라이선스를 저장하고 Windows 
 
 |설명|클라이언트 모드 경로|서버 모드 경로|
 |---------------|---------------------|---------------------|
-|라이선스 저장소 위치|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\*<SID>*\|
-|템플릿 저장소 위치|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\Templates\*<SID>*\|
+|라이선스 저장소 위치|%localappdata%\Microsoft\MSIPC|%allusersprofile%\Microsoft\MSIPC\Server\*<SID>\*\|
+|템플릿 저장소 위치|%localappdata%\Microsoft\MSIPC\Templates|%allusersprofile%\Microsoft\MSIPC\Server\Templates\*<SID>\*\|
 |레지스트리 위치|HKEY_CURRENT_USER<br /> \Software<br /> \Classes<br /> \Local Settings<br /> \Software<br /> \Microsoft<br /> \MSIPC|HKEY_CURRENT_USER<br /> \Software<br /> \Microsoft<br /> \MSIPC<br /> \Server<br /> \*<SID>*|
 > [!NOTE]
 > *\<SID\>*는 서버 응용 프로그램이 실행되고 있는 계정의 SID(보안 식별자)입니다. 예를 들어 응용 프로그램이 기본 제공 네트워크 서비스 계정에서 실행 중인 경우 *<SID>*를 해당 계정의 잘 알려진 SID 값(S-1-5-20)으로 바꿉니다.
@@ -126,7 +126,7 @@ Windows 레지스트리 키를 사용하여 일부 RMS 클라이언트 구성을
 
 **클라이언트 모드:** %localappdata%\Microsoft\MSIPC\UnmanagedTemplates
 
-**서버 모드:** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\*\<SID\>\*
+**서버 모드:** %allusersprofile%\Microsoft\MSIPC\Server\UnmanagedTemplates\\\*\<SID\>\*
 
 이 폴더를 사용하는 경우 RMS 서버 또는 서비스에서 템플릿을 발급해야 하고 템플릿 확장자가 .xml이어야 한다는 점을 제외하고 필요한 특별한 명명 규칙은 없습니다. 예를 들어 Contoso-Confidential.xml 또는 Contoso-ReadOnly.xml은 유효한 이름입니다.
 

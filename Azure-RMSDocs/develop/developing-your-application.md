@@ -14,11 +14,11 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: c4334bad5a7ca6650c087425e4794c348b73501b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 1854329b9cb949a6b4318d00f981f0be9065a33e
+ms.sourcegitcommit: 1b6af3c85ed32e8d80ed10cb6ba86fc61026eaa4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="developing-your-application"></a>응용 프로그램 배포
 
@@ -35,9 +35,9 @@ ms.lasthandoff: 06/30/2017
 
 ### <a name="azure-ad-tenant-configuration"></a>Azure AD 테넌트 구성
 
-Azure Information Protection용으로 Azure AD 환경을 구성하려면 [Azure 권한 관리 활성화](https://docs.microsoft.com/en-us/information-protection/deploy-use/activate-service)의 지침을 따릅니다.
+Azure Information Protection용으로 Azure AD 환경을 구성하려면 [Azure 권한 관리 활성화](https://docs.microsoft.com/information-protection/deploy-use/activate-service)의 지침을 따릅니다.
 
-서비스가 활성화되면 다음 단계를 수행하기 위한 PowerShell 구성 요소를 준비해야 합니다. 이러한 구성 요소를 준비하려면 [Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리](https://docs.microsoft.com/en-us/information-protection/deploy-use/administer-powershell)의 지침을 따릅니다.
+서비스가 활성화되면 다음 단계를 수행하기 위한 PowerShell 구성 요소를 준비해야 합니다. 이러한 구성 요소를 준비하려면 [Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리](https://docs.microsoft.com/information-protection/deploy-use/administer-powershell)의 지침을 따릅니다.
 
 ### <a name="getting-your-tenant-id"></a>테넌트 ID 가져오기
 

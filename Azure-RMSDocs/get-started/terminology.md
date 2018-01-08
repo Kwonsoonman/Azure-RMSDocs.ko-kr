@@ -4,7 +4,7 @@ description: "Microsoft Azure Information Protection과 관련된 단어, 구 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2017
+ms.date: 12/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f2c0053a8f1f4cde5193b65e5b8e521a2b6934c1
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: da20ac2ea327b5b97f021c85f62d97b9aa1b9824
+ms.sourcegitcommit: fc205eae0c0b378d41da5f1eceb0c699e60ad66f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure Information Protection에 사용되는 용어
 
@@ -26,8 +26,8 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 
 |용어|정의|
 |--------|--------------|
-|AADRM|Azure Rights Management의 Windows PowerShell 모듈 이름으로, 이전 이름이 (Windows) Azure Active Directory Rights Management였을 때 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]의 비공식 약어에서 파생된 서비스입니다.|
-|활성화|조직이 문서 및 메일을 보호할 수 있도록 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 서비스를 사용합니다. 이 동작은 Exchange Online 및 SharePoint Online에서 권한 관리 기능이 사용되도록 합니다.|
+|AADRM|Azure Rights Management의 Windows PowerShell 모듈 이름으로, 이전 이름이 (Windows) Azure Active Directory Rights Management였을 때 Azure Rights Management의 비공식 약어에서 파생된 서비스입니다.|
+|활성화|조직이 문서 및 메일을 보호할 수 있도록 Azure Rights Management 서비스를 사용합니다. 이 동작은 Exchange Online 및 SharePoint Online에서 권한 관리 기능이 사용되도록 합니다.|
 |Active Directory Rights Management Services|흔히 약어로 *AD RMS*라고 합니다.<br /><br />암호화 및 정책을 사용하여 권한 관리 보호를 제공함으로써 문서, 파일 및 메일을 보호하는 Windows Server 역할입니다.|
 |AD RMS|*Active Directory Rights Management Services*를 참조하세요.|
 |Azure Information Protection|분류, 레이블 지정 및 보호를 사용하여 문서와 메일을 보호하는 클라우드 기반 서비스입니다. Azure 권한 관리에서는 암호화, ID 및 권한 부여 정책을 사용하여 보호를 제공합니다.|
@@ -58,6 +58,8 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 |보호|데이터 보호를 위한 암호화, ID, 액세스 제어 정책 등을 통해 권한 관리 제어를 파일이나 전자 메일 메시지에 적용합니다.|
 |publish|무단 액세스 및 사용으로부터 파일을 보호하기 위해 파일에 보호 조치를 취하는 것입니다.|
 |권한 관리 커넥터|Azure Rights Management 서비스로 데이터를 보호하기 위해 온-프레미스 서비스(예: Exchange Server 및 SharePoint)에 대해 배포할 수 있는 아웃바운드 프록시 릴레이입니다.|
+|Rights Management 발급자|문서 또는 전자 메일을 보호하는 계정입니다.|
+|Rights Management 소유자|Rights Management Full Control 사용 권한을 자동으로 부여하여 보호된 문서 또는 전자 메일에 대해 완전한 제어 권한을 가지고 만료 날짜 또는 오프 라인 설정으로부터 제외되는 계정입니다.|
 |권한 관리 서비스|[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]의 클라우드 버전([!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)])과 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]의 온-프레미스 버전(AD RMS) 둘 다에 적용되는 일반 용어입니다.|
 |Rights Management 공유 응용 프로그램|현재 Azure Information Protection 클라이언트로 대체되며, Windows 및 가장 널리 사용되는 모바일 장치용의 선택적 응용 프로그램으로서 내부 및 메일을 통해 파일이 안전하게 공유되도록 합니다.|
 |RMS|*Rights Management Services*를 참조하세요.|

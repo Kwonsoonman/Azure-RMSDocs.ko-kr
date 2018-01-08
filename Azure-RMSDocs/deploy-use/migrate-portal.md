@@ -4,7 +4,7 @@ description: "Azure 클래식 포털에서 수행했던 관리 작업을 Azure P
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/01/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 194c746298024ef294c8a6a6fa0361d21cbd869e
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 2764c1349847ca862147a5cc9f21fbd9c4a83624
+ms.sourcegitcommit: 2a7f20684a041385e2d2425ab886e46917d2da9a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Azure 클래식 포털과 관련된 작업
 
@@ -33,6 +33,8 @@ Azure Rights Management 서비스를 관리하기 위한 Azure 클래식 포털�
 
 다음 정보는 새로운 포털로 신속하게 전환하는 데 도움이 됩니다.
 
+그러나 Office 365 미국 정부(Government Community Cloud)에 가입한 고객은 현재 Azure Portal을 사용할 수 없으며, 대신 [PowerShell](configure-templates-with-powershell.md)을 사용하여 템플릿을 관리해야 합니다. 
+
 |Azure 클래식 포털|Azure Portal에서 이 작업을 수행하는 방법
 |-----------|--------------------|
 |처음으로 구성 설정 액세스|1. 테넌트에 대한 전역 관리자 또는 보안 관리자로 Azure Portal에 로그인합니다.<br /><br />2. 허브 메뉴에서 **새로 만들기**를 클릭한 다음 **MARKETPLACE** 목록에서 **보안 + ID**를 클릭합니다.<br /><br />3. **보안 + ID** 블레이드의 **추천 앱** 목록에서 **Azure Information Protection**을 선택합니다. 그런 다음 **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.<br /><br />이 작업으로 **Azure Information Protection** 블레이드가 만들어지며, 다음에 포털에 로그인할 때 허브 **추가 서비스** 목록에서 서비스를 선택할 수 있습니다.
@@ -42,7 +44,7 @@ Azure Rights Management 서비스를 관리하기 위한 Azure 클래식 포털�
 |범위 지정 템플릿 만들기|범위 지정 정책을 만들고 이 범위에서 보호를 적용하는 레이블을 만듭니다. <br /><br />자세한 내용은 [범위 지정 정책을 사용하여 특정 사용자용 Azure Information Protection 정책을 구성하는 방법](configure-policy-scope.md)을 참조하세요.
 |템플릿 복사|Azure Portal에서는 템플릿을 복사할 수 없습니다. 두 레이블에서 동일한 보호 설정을 유지하려면 각 레이블에 대한 권한을 설정해야 합니다. <br /><br />자세한 내용은 [Rights Management 보호에 대한 레이블 구성](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection)을 참조하세요.
 |템플릿 삭제|템플릿을 삭제하면 액세스할 수 없는 데이터가 될 수 있으므로 Azure Portal에서는 이 작업을 지원하지 않습니다. 그러나 레이블을 삭제한 다음 [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) PowerShell cmdlet을 사용하여 템플릿을 제거할 수 있습니다. <br /><br />자세한 내용은 [Azure Information Protection에 대한 레이블을 삭제하거나 순서를 변경하는 방법](configure-policy-delete-reorder.md)을 참조하세요.
-|다중 언어 지원|**관리** 메뉴 선택에서 **언어(미리 보기)**를 선택하여 템플릿 이름과 설명을 포함하는 사용자 지정 가능한 필드를 내보냅니다. 문자열을 번역한 다음 이러한 문자열을 포털로 가져옵니다. <br /><br />자세한 내용은 [Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿을 구성하는 방법](configure-policy-languages.md)을 참조하세요.
+|다중 언어 지원|**관리** 메뉴 선택에서 **언어**를 선택하여 템플릿 이름과 설명을 포함하는 사용자 지정 가능한 필드를 내보냅니다. 문자열을 번역한 다음 이러한 문자열을 포털로 가져옵니다. <br /><br />자세한 내용은 [Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿을 구성하는 방법](configure-policy-languages.md)을 참조하세요.
 |Rights Management 웹 보고서|[Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) PowerShell cmdlet을 사용하여 Azure Rights Management 서비스에 대한 사용 현황 로그를 다운로드합니다. 그런 다음 이 데이터를 사용하여 사용자 지정 보고서를 만들 수 있습니다. <br /><br />자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.<br /><br />팁: 새로운 Azure Information Protection용 중앙 집중식 보고 솔루션에 대한 [Enterprise Mobility and Security 블로그(영문)](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)의 공지 사항을 확인하세요. 
 |Rights Management 서비스 활성화 및 비활성화|**관리** 메뉴 옵션에서 **RMS 설정** 또는 **보호 활성화**를 선택합니다. 이 옵션의 이름을 바꾸는 중입니다.<br /><br />자세한 내용은 [Azure 포털에서 Azure Rights Management 활성화하는 방법](activate-azure.md)을 참조하세요.
 

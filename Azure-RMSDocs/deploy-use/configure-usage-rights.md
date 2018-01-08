@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/06/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f82eb8bc415b064793c1efd9b7b88795b1ec6ff2
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 5d57f1cc7728fef1b877fc25fce01bbc9c768b3c
+ms.sourcegitcommit: 24b35e27b3aa861ae8ba6bacab571b0071b058d7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -57,8 +57,8 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |---------------------|----------------|---------------------------------|
 |보기 권한자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br /> Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 회신, 전체 회신, 매크로 허용 [[1]](#footnote-1)<br /><br />참고: 메일의 경우 메일의 회신이 첨부 파일이 아닌 메일 메시지로 수신되도록 이 권한 수준 대신 검토자 권한을 사용합니다. 검토자는 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다. 또는 [온보딩 컨트롤](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)을 구현했으므로 Azure Rights Management 서비스 사용을 면제받는 조직의 사용자에게 필요합니다.|
 |검토자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 회신: 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2), 매크로 허용 [[1]](#footnote-1)|
-|공동 작성자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기 [[3]](#footnote-3), 인쇄, 회신 [[2]](#footnote-2), 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2)|
-|공동 소유자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 권한 보기, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[2]](#footnote-2), 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2), 모든 권한|
+|공동 작성자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 매크로 허용, 다른 이름으로 저장, 내보내기 [[3]](#footnote-3), 인쇄, 회신 [[2]](#footnote-2), 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2)|
+|공동 소유자|Azure 클래식 포털 <br /><br />Azure 포털<br /><br />Windows용 Rights Management 공유 응용 프로그램<br /><br />Windows용 Azure Information Protection 클라이언트|보기, 열기, 읽기, 저장, 콘텐츠 편집, 편집, 복사, 매크로 허용, 다른 이름으로 저장, 내보내기, 인쇄, 회신 [[2]](#footnote-2), 전체 회신 [[2]](#footnote-2), 전달 [[2]](#footnote-2), 모든 권한|
 
 ----
 
@@ -70,8 +70,7 @@ Windows용 Azure Information Protection 클라이언트의 경우 이 권한은 
 Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램에는 해당되지 않습니다.
 
 ###### <a name="footnote-3"></a>각주 3
-Windows용 Azure Information Protection 클라이언트에는 포함되어 있지 않습니다. 이 클라이언트에서는 내보내기 사용 권한에 보호 제거 기능이 포함되어 있습니다.
-
+Windows용 Azure Portal 또는 Azure Information Protection 클라이언트에는 포함되어 있지 않습니다.
 
 ## <a name="rights-included-in-the-default-templates"></a>기본 템플릿에 포함된 권한
 다음 표에 기본 템플릿을 만들 때 포함된 사용 권한을 나열되어 있습니다. 사용 권한은 해당 [일반 이름](#usage-rights-and-descriptions)으로 나열됩니다.

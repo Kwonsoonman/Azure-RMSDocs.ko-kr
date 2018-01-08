@@ -4,7 +4,7 @@ description: "엔터프라이즈 네트워크에서 Windows용 Azure Information
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 675afc962da542a03b90bea2dcb5d004829e361a
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: d4ad7c3419d3ad83389baece95c1e30c32f06da6
+ms.sourcegitcommit: 7b90b3692bbef6fafab41c0f8c56bd4350985f37
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -50,6 +50,12 @@ ms.lasthandoff: 10/24/2017
     
     이 업데이트가 필요한데 아직 설치되지 않은 경우 클라이언트 설치에서 설치해야 한다는 경고 메시지가 표시됩니다. 클라이언트가 설치된 후에 이 업데이트를 설치할 수 있지만 일부 작업이 차단되며 메시지가 다시 표시됩니다.  
 
+- Visual Studio 2015용 Visual C++ 재배포 가능 패키지(32비트 버전)
+    
+    Windows 7 서비스 팩 1을 실행하는 컴퓨터의 경우 다음 다운로드 페이지에서 **vc_redist.x86.exe**를 설치합니다. [Visual Studio 2015용 Visual C++ 재배포 가능 패키지](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+    
+    클라이언트 설치는 이러한 전제 조건을 확인하지 않지만 Azure Information Protection 클라이언트가 PDF 파일을 분류하고 보호하는 데 필요합니다.
+
 - Office 응용 프로그램을 위한 **Microsoft Azure Information Protection** 추가 기능을 비활성화하지 않습니다.
     
     그룹 정책 설정 **관리되는 추가 기능 목록**을 구성한 경우 Azure Information Protection을 위한 다음 프로그래밍 방식 식별자(ProgID)를 지정하고 옵션을 **1: 추가 기능을 항상 사용**으로 설정하여 Office 응용 프로그램을 위한 Microsoft Azure Information Protection 추가 기능을 추가합니다.
@@ -65,6 +71,14 @@ ms.lasthandoff: 10/24/2017
     이 **관리되는 추가 기능 목록** 그룹 정책 설정을 구성하지 않았더라도 Microsoft Azure Information Protection 추가 기능이 비활성화된다는 보고를 받을 경우 구성해야 할 수 있습니다. 이 추가 기능을 비활성화하면 사용자는 Office 응용 프로그램에서 Azure Information Protection 막대를 볼 수 없습니다.
     
     이 그룹 정책 설정에 대한 자세한 내용은 [Office 2013 및 Office 2016 프로그램에 대한 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)을 참조하세요.
+
+- Office 버전 16.0.8628.2010 이상의 경우(간편 실행): 모니터에 대한 레거시 지원 사용
+    
+    Azure Information Protection 표시줄이 이러한 Office 버전용 Office 응용 프로그램 외부에 표시되는 것을 방지하기 위해 모니터에 대한 레거시 지원을 사용합니다. Office 응용 프로그램을 구성하려면 다음을 수행합니다. **파일** > **일반** > **사용자 인터페이스 옵션**:
+    
+    - 옵션이 표시되면 **여러 디스플레이 사용 시**를 **최적의 모양을 위해 최적화**로 설정하고, **호환성을 위해 최적화(응용 프로그램 다시 시작 필요)**를 대신 선택합니다. 
+        
+    - **내 디스플레이에 대해 최적의 설정 사용** 옵션이 선택된 것으로 확인되면 이 선택 항목을 제거합니다.
 
 > [!IMPORTANT]
 > Azure Information Protection 클라이언트를 설치하려면 로컬 관리 권한이 필요합니다.
@@ -157,7 +171,7 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 이 최신 버전 Microsoft .NET Framework를 설치하는 것이 적절하지 않을 경우는 Microsoft .NET Framework 버전 4.5.1이 설치되어 있을 때 이 요구 사항을 무시하도록 **DowngradeDotNetRequirement=True** 매개 변수 및 값을 사용하여 클라이언트를 설치할 수 있습니다.
 
-`AzInfoProtection.exe DowngradeDotNetRequirement=True`
+예를 들어 `AzInfoProtection.exe DowngradeDotNetRequirement=True`를 구성할 수 있습니다.
 
 이 방법으로 Azure Information Protection 클라이언트를 이전 버전의 Microsoft .NET Framework에서 사용할 경우 Office 응용 프로그램이 멈추는 문제가 보고되어 있으므로 이 매개 변수를 주의해서 사용해야 합니다. 응용 프로그램이 멈추는 문제가 실제로 발생할 경우, 다른 문제 해결 방법을 시도하기 전에 원장 버전으로 업그레이드하는 것이 좋습니다. 
 
@@ -183,8 +197,8 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
     |Office 2010|Windows 8.1 및 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB2843630 또는 KB2919355를 설치하지 않은 경우 설치|
     |Office 2010|Windows 8 및 Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|설치|
     |Office 2010|Windows 7|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB3125574를 설치하지 않은 경우 설치|
+    |해당 없음|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|설치|
     |해당 없음|Windows 7|KB2627273 <br /><br /> 파일 이름에 포함된 버전 번호: v4|제거|
-    
 
 3. 기본 설치의 경우 **/quiet**를 지정하여 .msi를 실행합니다(예: `AzInfoProtection.msi /quiet`). 그렇지만 [실행 가능한 설치 관리자 지침](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)에 설명된 추가 설치 매개 변수를 지정해야 할 수 있습니다.  
 

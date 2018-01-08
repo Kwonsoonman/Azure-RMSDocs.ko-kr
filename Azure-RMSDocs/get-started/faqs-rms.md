@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/03/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fb2af56222f686149e40afcd54b20c04114c2a1f
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: b23fe95721c442529237ea72d30b3df490ad02dc
+ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -97,7 +97,9 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 
 또는 필요한 사용 권한에 대한 그룹을 이미 구성했다면 사용자를 포함하거나 제외하도록 그룹 구성원을 변경할 수 있으며, 레이블 또는 템플릿을 변경할 필요는 없습니다. 그룹 구성원은 Azure Rights Management 서비스에 의해 [캐시](../plan-design/prepare.md#group-membership-caching-by-azure-rights-management)되므로 변경 내용이 적용되기 전에 약간 지연이 있을 수 있습니다.
 
-사용자 지정 권한을 사용하여 문서를 보호한 경우 기존 문서에 대한 권한을 변경할 수 없습니다. 문서를 다시 보호하고 문서의 이 새 버전이 필요한 모든 사용자 및 모든 사용 권한을 지정해야 합니다. 보호된 문서를 다시 보호하려면 모든 권한 사용 권한이 있어야 합니다. 
+사용자 지정 권한을 사용하여 문서를 보호한 경우 기존 문서에 대한 권한을 변경할 수 없습니다. 문서를 다시 보호하고 문서의 이 새 버전이 필요한 모든 사용자 및 모든 사용 권한을 지정해야 합니다. 보호된 문서를 다시 보호하려면 모든 권한 사용 권한이 있어야 합니다.
+
+문서가 템플릿 또는 사용자 지정 권한을 사용하여 보호되었는지 확인하려면 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet을 사용합니다. [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate)을 실행할 때 표시되지 않는 고유한 템플릿 ID와 함께 사용자 지정 권한에 대한 **제한된 액세스**의 템플릿 설명이 항상 표시됩니다.
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Exchange Online의 사용자와 Exchange Server 서버의 다른 사용자로 구성된 Exchange의 하이브리드 배포입니다. Azure RMS에서 지원되나요?
 물론입니다. 사용자가 두 Exchange 배포에서 보호되는 메일과 첨부 파일을 원활하게 보호하고 소비할 수 있습니다. 이 구성을 사용하려면 [Azure RMS를 활성화](../deploy-use/activate-service.md)하고 [Exchange Online에 IRM을 사용하도록 설정](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)한 다음 Exchange Server용 [RMS 커넥터를 배포 및 구성](../deploy-use/deploy-rms-connector.md)합니다.
@@ -117,7 +119,7 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 
 기본적으로 Azure Rights Management 서비스는 기업 간 공동 작업에서의 관리자 편의를 위해 Azure Active Directory 계정과, 연결된 전자 메일 주소를 사용자 인증에 사용합니다. 다른 조직에서 Azure 서비스를 사용한다면 온-프레미스에서 만들어져 관리되며 Azure에 동기화되는 계정이더라도 사용자에게 이미 Azure Active Directory 계정이 있을 것입니다.  해당 조직에 Office 365가 있다면 바탕에서는 사용자 계정에 Azure Active Directory를 사용하고 있습니다. 사용자 조직이 Azure에서 계정을 관리하지 않은 경우 [개인용 RMS](../understand-explore/rms-for-individuals.md)에 등록할 수 있습니다. 그러면 해당 사용자의 계정이 있는 조직에 대해 관리되지 않는 Azure 테넌트와 디렉터리가 생성되어 해당 사용자(및 후속 사용자)를 Azure Rights Management 서비스에 인증할 수 있게 됩니다.
 
-이러한 계정에 대한 인증 방법은 다른 조직의 관리자가 Azure Active Directory 계정을 어떻게 구성했느냐에 따라 달라질 수 있습니다. 예를 들어, 이 계정에 대해 만든 암호, 다단계 인증(MFA), 페더레이션 또는 Active Directory Domain Services에서 생성된 후 Azure Active Directory에 동기화된 암호 등을 사용할 수 있습니다.
+이러한 계정에 대한 인증 방법은 다른 조직의 관리자가 Azure Active Directory 계정을 어떻게 구성했느냐에 따라 달라질 수 있습니다. 예를 들어, 이 계정에 대해 만든 암호, 다단계 인증(MFA), 페더레이션 또는 Active Directory 도메인 서비스에서 생성된 후 Azure Active Directory에 동기화된 암호 등을 사용할 수 있습니다.
 
 Azure AD에 계정이 없는 사용자에게 보내는 Office 문서 첨부 파일이 포함된 전자 메일을 보호하는 경우 인증 방법이 변경됩니다. Azure Rights Management 서비스는 Gmail과 같이 많이 사용되는 일부 소셜 ID 공급자와 페더레이션되어 있습니다. 사용자의 전자 메일 공급자가 지원되는 경우 사용자는 해당 서비스에 로그인 할 수 있으며 사용자의 전자 메일 공급자가 인증을 담당합니다. 사용자의 전자 메일 공급자가 지원되지 않거나 기본 설정인 경우 사용자는 인증을 위해 일회성 암호를 신청할 수 있으며 보호된 문서가 있는 전자 메일을 웹 브라우저에 표시할 수 있습니다.
 

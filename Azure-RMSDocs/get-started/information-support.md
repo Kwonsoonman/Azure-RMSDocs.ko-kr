@@ -4,7 +4,7 @@ description: "새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Mic
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d6937e86fd0fd544ff2030e52d03c32daa67a134
-ms.sourcegitcommit: a9376b5431dc6ae9819833146a84fc1dd5e685fb
+ms.openlocfilehash: e1fb9251722656811752f7d47cb52388b5d18dc5
+ms.sourcegitcommit: 42c1e72320197534f720ca78bf25da9f139a17de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 12/08/2017
 
 다음 리소스를 사용하여 조직에 대해 Azure Information Protection을 알아보고 배포하고 지원합니다.
 
-|수행 작업|.. 방법|
+|수행 작업 ...|...방법:|
 |----------------|---------------|
 |가장 자주 사용되는 문서보기|상위 5개 페이지 읽기:<br /><br /> - [Azure Information Protection이란?](../understand-explore/what-is-information-protection.md)<br /> - [Azure Rights Management란?](../understand-explore/what-is-azure-rms.md)<br />- [시작 - iOS 및 Android용 AIP 앱](../rms-client/mobile-app-get-started.md) <br />- [Azure Rights Management 활성화](../deploy-use/activate-service.md)<br />- [Azure Information Protection에 대한 요구 사항](../get-started/requirements.md)|
 |제품 팀 및 동료와의 소통|Azure Information Protection에 대한 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 방문하세요.|
@@ -33,16 +33,12 @@ ms.lasthandoff: 12/08/2017
 |구독 정보 및 지원되는 기능 확인|Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 사용하세요.|
 
 
-## <a name="information-about-new-releases-and-updated-documentation"></a>새 릴리스 및 업데이트된 설명서에 대한 정보
-Azure Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)(Enterprise Mobility 및 보안 블로그)에 새 릴리스와 업데이트에 대한 공지를 게시합니다. 이러한 블로그 게시물은 제품 문서와 지원 정보를 보완합니다.
+## <a name="information-about-new-releases-and-updates"></a>새 릴리스 및 업데이트에 대한 정보
+Azure Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)(Enterprise Mobility 및 보안 블로그)에 새 릴리스에 대한 공지를 게시합니다. 이러한 블로그 게시물은 제품 문서와 지원 정보를 보완합니다.
 
-최신 상태를 유지할 수 있도록 매달 다음 [**업데이트**](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)를 게시합니다.
+또한 정보 및 위협 보호를 위한 주 그룹 PM 관리자는 일반 [업데이트](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)를 게시하여 최신 상태로 유지할 수 있도록 합니다.
 
-- 새로운 기능과 향후 예정 사항을 위한 상태 업데이트. 이러한 게시물의 제목은 "**Azure Information Protection 상태 업데이트 – \<month year>**"입니다.
-
-- 새로운 릴리스, 지원 정책 및 기존 릴리스의 정정 사항과 설명에 대한 문서가 포함된 문서 변경 요약. 이러한 게시물의 제목은 "**\<month year>의 Azure Information Protection 문서 업데이트**" 
-
-또한 [Azure Information Protection Yammer 사이트](https://www.yammer.com/AskIPTeam)에서 새로운 기능과 미리 보기에 대한 정보를 찾을 수 있습니다. 여기에서는 Azure Information Protection에 대해 질문할 수도 있습니다. 새 기능을 제안하거나 새 기능에 대해 투표하려면 Azure Information Protection의 [사용자 의견 사이트](https://msip.uservoice.com)를 방문하세요.
+문서 변경에 대한 요약은 매월 [Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)에 게시됩니다. 이전 요약은 [Enterprise Mobility 및 보안 블로그](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection)에 게시되었습니다. 이 문서 업데이트에는 새로운 릴리스, 지원 문의에 대한 업데이트, 정책, 그리고 기존 릴리스의 정정 사항과 설명에 대한 정보가 포함되어 있습니다. 이러한 게시물의 제목은 "**\<month year>의 Azure Information Protection 문서 업데이트**"입니다.
 
 ## <a name="support-options-and-community-resources"></a>지원 옵션 및 커뮤니티 리소스
 다음 섹션에서는 지원 및 문제 해결 옵션과 커뮤니티 리소스에 대한 정보를 제공합니다.

@@ -2,8 +2,8 @@
 title: "Windows 스토어 설정 | Azure RMS"
 description: "Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 9180684ee216befaf9a2661724830bf72af039d1
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 4dfbb1ba71aedaa0d818b00b3696b422e57ac0d4
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="windows-store-setup"></a>Windows 스토어 설정
 
@@ -31,7 +31,7 @@ Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2�
 -   [개발 환경 구성](#configuring-your-development-environment)
 -   [참고 항목](#see-also)
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 
 개발 시스템에 다음 소프트웨어가 있어야 합니다.
@@ -44,7 +44,7 @@ Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2�
 
 API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
-## <a name="optional"></a>선택 사항입니다.
+## <a name="optional"></a>선택 사항
 
 UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 개발자에게 사용 및 보호 작업을 위한 다시 사용 가능한 UI를 제공합니다([Windows 스토어 앱용 UI 라이브러리](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore)). 또한 Windows 스토어 앱 샘플 응용 프로그램인 [Windows 스토어용 RMS 샘플 응용 프로그램](https://github.com/AzureADSamples/rms-samples-for-windowsstore)도 제공합니다.
 

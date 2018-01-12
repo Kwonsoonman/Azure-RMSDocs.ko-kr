@@ -2,8 +2,8 @@
 title: "파일 API 구성 | Azure RMS"
 description: "레지스트리 설정을 통해 파일 API의 동작을 구성할 수 있습니다."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 930878C2-D2B4-45F1-885F-64927CEBAC1D
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 252300e1d370a0c9b8260fb93315782dd01787c7
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
+ms.openlocfilehash: 84b0f1ec7e5ef647161c5e44059140ea59ffab77
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="file-api-configuration"></a>파일 API 구성
 

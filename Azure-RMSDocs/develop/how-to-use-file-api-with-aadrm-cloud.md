@@ -2,8 +2,8 @@
 title: "방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정 | Azure RMS"
 description: "이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 015a32453a92ab05d3ca99ed462e48ee9f5149eb
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: df82a503107aae3db61101eb468009e47f546ceb
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 06/30/2017
 **중요**  
 Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그램을 사용하려면 사용자 고유의 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독)](../get-started/requirements-subscriptions.md) 항목을 참조하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 -   RMS SDK 2.1을 설치 및 구성해야 합니다. 자세한 내용은 [RMS SDK 2.1 시작](getting-started-with-ad-rms-2-0.md)을 참조하세요.
 -   대칭 키 옵션을 사용하거나 다른 방법으로 [ACS를 통해 서비스 ID를 만들고](https://msdn.microsoft.com/en-us/library/gg185924.aspx) 해당 프로세스에서 얻은 키 정보를 기록해야 합니다.

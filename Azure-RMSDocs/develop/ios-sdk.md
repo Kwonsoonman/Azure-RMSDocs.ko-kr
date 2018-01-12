@@ -2,8 +2,8 @@
 title: "iOS 및 OS X 설치 | Azure RMS"
 description: "iOS 및 OS X 응용 프로그램에서 RMS SDK 4.2를 통해 AAD RM을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b31e5b72-e65e-450a-b1b8-d46e81e9fb34
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: ed077a6d908ae5d9b6b3b187cee9c63f47dc826d
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: f2cb573f8c347215f130fd76321886ade2877a16
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 및 OS X 설정
 
@@ -34,7 +34,7 @@ iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 -   [개발 환경 구성](#configuring-your-development-environment)
 -   [참고 항목](#see-also)
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 다음 소프트웨어는 개발 시스템에서 사용하는 것이 좋습니다.
 
@@ -53,7 +53,7 @@ iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 
 API 업데이트, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
-## <a name="optional"></a>선택 사항입니다.
+## <a name="optional"></a>선택 사항
 
 UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 개발자에게 사용 및 보호 작업을 위한 다시 사용 가능한 UI를 제공합니다([iOS용 UI 라이브러리 및 샘플 앱](https://github.com/AzureAD/rms-sdk-ui-for-ios)).
 

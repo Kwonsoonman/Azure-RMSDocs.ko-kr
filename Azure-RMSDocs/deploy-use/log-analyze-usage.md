@@ -4,7 +4,7 @@ description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/07/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a7a983ed075e41ee6f3328634b451107e579134d
-ms.sourcegitcommit: e089661f23f199b122b0ca9ba4748792b349bc27
+ms.openlocfilehash: cf919749b74727412ab6fa76cc52a5c71b69efcd
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
@@ -45,7 +45,6 @@ ms.lasthandoff: 12/13/2017
 |로깅 옵션|설명|
 |----------------|---------------|
 |관리자 로그|Azure Rights Management 서비스에 대한 관리 작업을 로그합니다. 예를 들면 서비스가 비활성화된 경우 슈퍼 사용자 기능이 활성화될 때와 사용자가 서비스에 관리자 권한을 위임할 때입니다. <br /><br />자세한 내용은 PowerShell cmdlet [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog)를 참조하세요.|
-|웹 보고서|Azure 클래식 포털의 개괄적인 사용 현황 보고서: **RMS 요약**, **RMS 활성 사용자**, **RMS 장치 플랫폼** 및 **RMS 응용 프로그램 사용**. <br /><br />Azure 클래식 포털에서 이러한 보고서에 액세스하려면 **Active Directory**를 클릭하고 디렉터리를 선택하여 연 다음 **보고서**를 클릭합니다.|
 |문서 추적|사용자가 Azure Information Protection 클라이언트 또는 RMS 공유 앱으로 추적한 문서를 추적하고 취소할 수 있습니다. 전역 관리자가 사용자를 대신하여 이러한 문서를 추적할 수도 있습니다. <br /><br />자세한 내용은 [Azure Information Protection에 대한 문서 추적 구성 및 사용](../rms-client/client-admin-guide-document-tracking.md)을 참조하세요.|
 |클라이언트 이벤트 로그|로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그(**Azure Information Protection**)에 기록된 Azure Information Protection 클라이언트에 대한 사용 활동입니다. <br /><br />자세한 내용은 [Azure Information Protection 클라이언트에 대한 사용 현황 로깅](../rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)을 참조하세요.|
 |클라이언트 로그 파일|**%localappdata%\Microsoft\MSIP**에 있는 Azure Information Protection 클라이언트에 대한 문제 해결 로그입니다. <br /><br />이러한 파일은 Microsoft 지원용으로 설계되었습니다.|
@@ -145,7 +144,7 @@ Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니
 |date|날짜|요청이 처리된 UTC 날짜입니다.<br /><br />원본은 요청을 처리한 서버의 로컬 시계입니다.|2013-06-25|
 |time|시간|요청이 처리된 UTC 시간(24시간 형식)입니다.<br /><br />원본은 요청을 처리한 서버의 로컬 시계입니다.|21:59:28|
 |row-id|텍스트|이 로그 레코드의 고유 GUID입니다. 값이 없으면 상관 관계 ID 값을 사용하여 항목을 식별합니다.<br /><br />로그를 집계하거나 다른 형식으로 복사할 때 이 값을 활용하면 유용합니다.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
-|request-type|Name|요청한 RMS API의 이름입니다.|AcquireLicense|
+|request-type|이름|요청한 RMS API의 이름입니다.|AcquireLicense|
 |user-id|문자열|요청을 한 사용자입니다.<br /><br />값은 작은따옴표로 묶입니다. 본인이 관리하는 테넌트 키(BYOK)로부터의 호출에는 **"**라는 값이 있으며, 이것은 요청 종류가 익명일 경우에도 적용됩니다.|‘joe@contoso.com’|
 |result|문자열|요청이 정상적으로 처리된 경우 'Success'입니다.<br /><br />요청이 실패한 경우에는 작은따옴표로 묶인 오류 유형이 표시됩니다.|'성공'|
 |correlation-id|텍스트|지정된 요청에 대해 RMS 클라이언트 로그와 서버 로그 간에 공통적으로 사용되는 GUID입니다.<br /><br />이 값은 클라이언트 문제 해결 시 유용할 수 있습니다.|cab52088-8925-4371-be34-4b71a3112356|

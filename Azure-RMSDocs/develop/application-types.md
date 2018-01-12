@@ -2,8 +2,8 @@
 title: "응용 프로그램 종류 | Azure RMS"
 description: "이 항목에서는 권한 사용 응용 프로그램으로 만들도록 선택할 수 있는 응용 프로그램 종류에 대해 설명합니다."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 97169FC3-1395-4433-A632-7B0F020FABFE
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f7ebcb3a432a4521a71e3cc80c20b1af64e051c7
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d25f377f8a3d592ef8af414ab275783c6c614ede
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="application-types"></a>응용 프로그램 종류
 

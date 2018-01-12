@@ -2,8 +2,8 @@
 title: "Android 설정 | Azure RMS"
 description: "Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다."
 keywords: 
-author: bruceperlerms
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 7a575b869adec5da1b8a61eed772256fe7469551
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: cf81959a7ef4f20ab550dcec1c295e5045f321f3
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="android-setup"></a>Android 설정
 
@@ -31,7 +31,7 @@ Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 
 -   [개발 환경 구성](#configuring-your-development-environment)
 -   [참고 항목](#see-also)
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 다음 소프트웨어는 개발 시스템에서 사용하는 것이 좋습니다.
 
@@ -56,7 +56,7 @@ Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 
 
 API 업데이트, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
-## <a name="optional"></a>선택 사항입니다.
+## <a name="optional"></a>선택 사항
 
 UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 개발자에게 사용 및 보호 작업을 위한 다시 사용 가능한 UI를 제공합니다([Android용 UI 라이브러리 및 샘플 앱](https://github.com/AzureAD/rms-sdk-ui-for-android)).
 
@@ -126,9 +126,14 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 -   텍스트 편집기 보기에서 매니페스트를 보면 매니페스트 단계를 확인할 수 있습니다. 다음 줄이 나타나는지 확인합니다.
 
-
-    <uses-sdk      android:minSdkVersion="15"      android:targetSdkVersion="19"/> <uses-permission android:name="android.permission.INTERNET"/> <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> <uses-permission/>
-
+   ```
+    <uses-sdk
+         android:minSdkVersion="15"
+         android:targetSdkVersion="19"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission/>
+   ```
 
 **참고** SDK는 *android.support.v4*를 사용합니다.
 

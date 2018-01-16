@@ -1,8 +1,8 @@
 ---
 title: "Azure Information Protection 개발자 가이드"
 description: "개발자는 Azure Information Protection을 사용하여 모든 형식의 파일을 보호하고 관리할 수 있습니다."
-author: BrucePerlerMS
-ms.author: bruceper
+author: lleonard-msft
+ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/11/2017
 ms.topic: article
@@ -11,11 +11,11 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 2aba222457dfb56cca29e1a2948cc08041552d9f
-ms.sourcegitcommit: f3d5a1de317b9bd114d802b3965bf6b679d7ccf2
+ms.openlocfilehash: a32f4d774b67007ccc6638e3151bd6038e3f274c
+ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
 
@@ -98,15 +98,9 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 - [기본 제공 권한을 사용하는 방법(사용자)](built-in-rights-usage-restriction-reference.md)
 - [오류 및 성능 로깅을 사용하도록 설정하는 방법(사용자)](enabling-logging.md)
 
-## <a name="videos"></a>동영상
+## <a name="introduction-and-datasheets"></a>소개 및 데이터 시트
 
 [Azure Information Protection 소개](https://www.microsoft.com/cloud-platform/azure-information-protection)
-
-이러한 비디오는 Microsoft 2016 Ignite 컨퍼런스에서 소개되었습니다.
-
-- [조직 내의 전자 메일 보안](https://myignite.microsoft.com/videos/2787)
-- [Adopt a comprehensive identity-driven solution for protecting and sharing data securely](https://myignite.microsoft.com/videos/2784)(데이터를 안전하게 보호 및 공유하기 위한 포괄적인 ID 기반 솔루션 채택)
-- [분류, 레이블 지정 및 보호를 통해 지속적인 데이터 보호를 제공하는 방법 알아보기](https://myignite.microsoft.com/videos/2786)
 
 ## <a name="other-resources"></a>관련 자료
 

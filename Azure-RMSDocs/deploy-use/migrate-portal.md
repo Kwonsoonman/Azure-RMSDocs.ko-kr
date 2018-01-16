@@ -4,7 +4,7 @@ description: "Azure 클래식 포털에서 수행했던 관리 작업을 Azure P
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/14/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 2764c1349847ca862147a5cc9f21fbd9c4a83624
-ms.sourcegitcommit: 2a7f20684a041385e2d2425ab886e46917d2da9a
+ms.openlocfilehash: 367189865266e85df967c398b17153d970241e98
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Azure 클래식 포털과 관련된 작업
 
@@ -24,16 +24,16 @@ ms.lasthandoff: 01/03/2018
 
 Azure Rights Management 서비스를 관리하기 위한 Azure 클래식 포털에 사용되며 Azure Portal로 전환하는 데 도움이 필요합니까? 
 
-> [!NOTE]
-> Azure 클래식 포털은 **2018년 1월 8일**에 사용 중지됩니다. 이 날짜 이후에 이 포털을 사용하려 하면 자동으로 새 Azure Portal로 리디렉션됩니다. 
-> 
-> 자세한 내용은 [미래로의 Azure AD 관리자 환경: Azure 클래식 포털 사용 중지(영문)](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/) 블로그 게시물 공지 사항을 참조하세요. 원래 사용 중지 날짜를 일시적으로 연장하려면 [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/)(Azure AD 클래식 포털 경험 사용 중지 및 조건부 액세스 정책 마이그레이션)를 참조하세요.
+Azure 클래식 포털은 **2018년 1월 8일**에 사용 중지됩니다. 이 날짜 이후에는 클래식 포털에서 Azure Rights Management 서비스 및 사용자 지정 템플릿을 관리할 수 없습니다. 클래식 포털에 액세스하려고 하면 새 Azure Portal로 이동하는 링크가 표시됩니다. 
+
+클래식 포털 중지에 대한 자세한 내용은 [미래로의 Azure AD 관리자 환경: Azure 클래식 포털 사용 중지(영문)](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/) 블로그 게시물 공지 사항을 참조하세요. 원래 사용 중지 날짜를 일시적으로 연장하려면 [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/)(Azure AD 클래식 포털 경험 사용 중지 및 조건부 액세스 정책 마이그레이션)를 참조하세요.
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>친숙한 관리 작업을 수행하는 방법
 
-다음 정보는 새로운 포털로 신속하게 전환하는 데 도움이 됩니다.
+다음 정보는 현재 포털로 신속하게 전환하는 데 도움이 됩니다.
 
 그러나 Office 365 미국 정부(Government Community Cloud)에 가입한 고객은 현재 Azure Portal을 사용할 수 없으며, 대신 [PowerShell](configure-templates-with-powershell.md)을 사용하여 템플릿을 관리해야 합니다. 
+
 
 |Azure 클래식 포털|Azure Portal에서 이 작업을 수행하는 방법
 |-----------|--------------------|

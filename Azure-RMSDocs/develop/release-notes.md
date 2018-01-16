@@ -1,23 +1,9 @@
+# <a name="required-metadata"></a>필수 메타데이터
+
+제목: 새로운 기능과 릴리스 정보 설명: 이 버전 및 이전 버전에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다.
+작성자: lleonard-msft ms.author: alleonar 관리자: mbaldwin ms.date: 09/25/2017 ms.topic: 문서 ms.service: information-protection ms.technology: techgroup-identity ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af 대상: 개발자 ms.reviewer: kartikk ms.suite: ems
 ---
-title: "새로운 기능 및 릴리스 정보"
-description: "이 버전 및 이전 버전에 포함된 중요한 변경 내용과 기능을 간략하게 설명합니다."
-author: bruceperlerms
-ms.author: bruceper
-manager: mbaldwin
-ms.date: 09/25/2017
-ms.topic: article
-ms.service: information-protection
-ms.technology: techgroup-identity
-ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
-audience: developer
-ms.reviewer: kartikk
-ms.suite: ems
-ms.openlocfilehash: 6587685e3bd40d696ce24a9aa0ed80d1f6f43f55
-ms.sourcegitcommit: 965108d50739148864b2ae7dcc661ae65f1b154c
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2017
----
+
 # <a name="whats-new-and-release-notes"></a>새로운 기능 및 릴리스 정보
 
 ## <a name="whats-new"></a>새로운 기능
@@ -150,7 +136,7 @@ ms.lasthandoff: 10/17/2017
 
 -   RMS SDK 4.x API는 *스레드로부터 안전*하지 않습니다.
 
-**Android**
+**OWA(Outlook Web Access)**
 
 -   Amazon® Kindle 장치에서 샘플 앱을 사용하여 .ptxt 첨부 파일을 보는 경우 파일을 보기 전에 먼저 다운로드해야 합니다.
 
@@ -215,7 +201,7 @@ ms.lasthandoff: 10/17/2017
 
 **A**: 아니요, 3.0 이상 버전의 권한 관리 SDK에서는 매니페스트가 더 이상 필요하지 않습니다.
 
-**Android**
+**OWA(Outlook Web Access)**
 
 **Q**: SDK가 테스트된 개발 환경은 무엇인가요.
 

@@ -4,7 +4,7 @@ description: "Azure Portal에서 권한 관리 템플릿을 구성하고 관리�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,20 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb6aeea8f939614b9c1903d8e006815228f99723
-ms.sourcegitcommit: f6ba613445463c3c4c64b1620095d54b48194650
+ms.openlocfilehash: f69a163566a9654ee6286c4bf9ca4d018e8f8db5
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
 >*적용 대상: Azure Information Protection*
 
 >[!NOTE]
->이 기능은 Azure 클래식 포털의 사용자 지정 템플릿 구성을 대체합니다. 사용하는 방법에 빠르게 매핑하려면 [Azure 클래식 포털과 관련된 작업](migrate-portal.md)을 참조하세요.
->
->Azure 클래식 포털에서 여전히 템플릿을 만들고 관리할 수 있지만, Azure 클래식 포털 및 Azure Portal에서 동일한 템플릿을 관리하는 것은 권장되지 않습니다. 이와 같이 여러 다른 포털에서 템플릿 구성을 위한 구현이 변경되었으므로, 여러 다른 포털에서 동일한 템플릿을 구성하면 구성을 신뢰할 수 없게 될 수 있습니다.
+>이 기능은 Azure 클래식 포털의 사용자 지정 템플릿 구성을 대체합니다. 클래식 포털은 이제 사용 중지되었으므로 Azure Portal을 사용해야 합니다. 사용하는 방법에 빠르게 매핑하려면 [Azure 클래식 포털과 관련된 작업](migrate-portal.md)을 참조하세요.
 
 
 권한 관리 템플릿은 이제 Azure Information Protection 정책과 통합됩니다. 
@@ -40,7 +38,7 @@ ms.lasthandoff: 11/29/2017
 
 ## <a name="default-templates"></a>기본 템플릿
 
-Azure Information Protection의 구독 또는 Azure Rights Management 서비스를 포함하는 Office 365 구독을 얻을 때, 조직에서 권한 있는 사용자만 액세스할 수 있도록 제한하는 두 개의 기본 템플릿이 테넌트용으로 자동 생성됩니다. 이러한 두 가지 템플릿을 만드는 경우 [Azure Rights Management에 대한 사용 권한 구성](configure-usage-rights.md#rights-included-in-the-default-templates) 설명서에 나열되어 있는 사용 권한을 갖게 됩니다.
+Azure Information Protection의 구독 또는 Azure Rights Management 서비스를 포함하는 Office 365 구독을 얻을 때, 두 개의 기본 템플릿이 테넌트용으로 자동 생성됩니다. 이러한 템플릿은 조직에서 권한 있는 사용자만 액세스할 수 있도록 제한합니다. 이러한 템플릿을 만드는 경우 [Azure Rights Management에 대한 사용 권한 구성](configure-usage-rights.md#rights-included-in-the-default-templates) 설명서에 나열되어 있는 사용 권한을 갖게 됩니다.
 
 또한 템플릿은 7일간 오프라인 액세스를 허용하도록 구성되며 만료 날짜가 없습니다.
 
@@ -85,7 +83,7 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
     - **매크로 허용**(일반 이름)이 자동으로 추가됩니다. 이 사용 권한은 Office 앱의 Azure Information Protection 표시줄에 필요합니다.
     
 
-- **게시됨** 및 **보관됨** 설정은 **레이블** 블레이드에서 각각 **사용**: **설정** 및 **사용**: **해제**로 표시됩니다. 유지하고 싶지만 사용자나 서비스에 표시되지 않는 템플릿의 경우 **사용**: **오프**로 설정합니다.
+- **게시됨** 및 **보관됨** 설정은 **레이블** 블레이드에서 각각 **사용**: **설정** 및 **사용**: **해제**로 표시됩니다. 유지하고 싶지만 사용자나 서비스에 표시되지 않는 템플릿의 경우 해당 템플릿을 **사용**: **끄기**로 설정합니다.
 
 - Azure 포털에서 템플릿을 복사하거나 삭제할 수 없습니다. 템플릿이 레이블로 변환되면 **이 레이블을 포함하는 문서와 메일의 권한 설정** 옵션을 **구성되지 않음**으로 선택하여 템플릿 사용을 중지하도록 레이블을 구성할 수 있습니다. 또는 레이블을 삭제할 수 있습니다. 그러나 이 두 시나리오에서는 모두 템플릿이 삭제되지 않고 보관된 상태로 남아 있습니다.
     
@@ -102,6 +100,7 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Azure Information Protection 정책에서 템플릿을 구성하려면
 
 1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다.     
+    
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. 구성하려는 템플릿이 모든 사용자를 위한 것이면 **Azure Information Protection - 전역 정책** 블레이드에 그대로 있습니다.
@@ -127,7 +126,7 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 ## <a name="to-convert-templates-to-labels"></a>템플릿을 레이블로 변환하려면
 
-분류, 레이블 지정 및 보호를 포함하는 구독이 있는 경우 템플릿을 레이블로 변환할 수 있습니다. 이 작업을 수행하는 경우 원본 템플릿은 유지되지만 Azure Portal에서 템플릿이 새 레이블에 포함된 것으로 표시됩니다.
+분류, 레이블 지정 및 보호를 포함하는 구독이 있는 경우 템플릿을 레이블로 변환할 수 있습니다. 템플릿을 변환하는 경우 원본 템플릿은 유지되지만 Azure Portal에서 템플릿이 새 레이블에 포함된 것으로 표시됩니다.
 
 예를 들어 마케팅 그룹에 대한 사용 권한을 부여하는 **Marketing**이라는 레이블을 변환하는 경우 Azure Portal에서 같은 보호 설정이 지정된 **Marketing**이라는 레이블로 표시됩니다. 새로 생성된 레이블에서 보호 설정을 변경하면 템플릿에서 변경을 수행하는 것이므로 이 템플릿을 사용하는 모든 사용자 또는 서비스는 다음 번에 템플릿을 새로 고칠 때 새 보호 설정이 적용됩니다. 
 

@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/02/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5d57f1cc7728fef1b877fc25fce01bbc9c768b3c
-ms.sourcegitcommit: 24b35e27b3aa861ae8ba6bacab571b0071b058d7
+ms.openlocfilehash: 9c10c7c4afdc6269b3bab23b3aba4da76e383e8b
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -25,6 +25,11 @@ ms.lasthandoff: 01/03/2018
 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 파일 또는 메일에 보호를 설정하고 템플릿을 사용하지 않는 경우 직접 사용 권한을 구성해야 합니다. 또한 Azure Rights Management 보호에 대한 템플릿 또는 레이블을 구성할 때 선택한 사용 권한은 사용자, 관리자 또는 구성된 서비스에서 해당 템플릿 또는 레이블을 선택할 경우 자동으로 적용됩니다. 예를 들어 Azure 포털에서 사용 권한의 논리적 그룹화를 구성하는 역할을 선택하거나 개별 권한을 구성할 수 있습니다.
 
 이 문서는 사용 중인 응용 프로그램에 대해 원하는 사용 권한을 구성하고 이러한 권한이 응용 프로그램에서 해석되는 방법을 이해하는데 도움이 됩니다.
+
+> [!NOTE] 
+> 완성도를 위해 이 문서는 2018년 1월 8일에 사용이 중지된 Azure 클래식 포털의 값을 포함합니다. 이 날짜 이후에 이 포털을 사용하려 하면 자동으로 새 Azure Portal로 리디렉션됩니다.
+>
+> 새 포털로 마이그레이션하려면 [Azure 클래식 포털과 관련된 작업](migrate-portal.md)을 참조하세요.
 
 ## <a name="usage-rights-and-descriptions"></a>사용 권한 및 설명
 다음 테이블은 Rights Management가 지원하는 사용 권한 및 사용하고 해석되는 방식에 대해 나열하고 설명합니다. 일반적으로 코드에 사용되는 단일 단어 값(**정책에서 인코딩** 값)의 더 친숙한 버전으로 표시되거나 참조된 사용 권한을 확인하는 방식인 **일반 이름**을 기준으로 나열됩니다. 

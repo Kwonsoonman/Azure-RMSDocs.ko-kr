@@ -4,7 +4,7 @@ description: "데이터 보호 서비스인 Azure Information Protection의 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/03/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b23fe95721c442529237ea72d30b3df490ad02dc
-ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
+ms.openlocfilehash: d2f88d35550b47a4f73e87eeca9ecd6309a3c73e
+ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -70,7 +70,7 @@ Rights Management 커넥터에서 정보, 경고 및 오류 메시지를 이벤�
 
 몇 가지 참고 사항:
 
-- Office 365에 대한 전역 관리자와 Azure AD에 대한 전역 관리자만 Office 365 관리 센터 또는 Azure 클래식 포털을 사용하여 Azure RMS를 구성할 수 있습니다. Azure Information Protection을 위해 Azure 포털을 사용하는 경우 보안 관리자로도 로그인할 수 있습니다.
+- Office 365에 대한 전역 관리자와 Azure AD에 대한 전역 관리자만 Office 365 관리 센터를 사용하여 Azure RMS를 구성할 수 있습니다. Azure Information Protection을 위해 Azure Portal을 사용하는 경우 전역 관리자 또는 보안 관리자로 로그인할 수 있습니다.
 
 - Azure RMS에 대한 전역 관리자 역할을 할당받는 사용자는 Azure RMS PowerShell 명령을 사용하여 Azure RMS를 구성해야 합니다. 특정 작업에 대한 올바른 cmdlet을 찾는 데 도움이 필요하면 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](../deploy-use/administer-powershell.md) 항목을 참조하세요.
 

@@ -4,7 +4,7 @@ description: "RMS 공유 응용 프로그램에서 Azure RMS를 지원하는 방
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 16/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3c96d8718f42dcedebba03354c149bb2b9667d66
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: b7c2b05d9bf360b08ea6a35efd959559132df864
+ms.sourcegitcommit: 3a2177df7a23d65f93d3ce2eea3fc3e042ea901c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램
 
 >*적용 대상: Azure Information Protection, Office 365*
 
 > [!IMPORTANT]
-> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2018년 1월 31일에 중지됩니다. 
+> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
  
 RMS 공유 응용 프로그램은 Windows 컴퓨터용 Office 2010을 지원하며 이전에 모든 Windows 컴퓨터와 모바일 장치에서 권장되었던 다운로드 가능 응용 프로그램입니다. Mac 컴퓨터 및 Windows Phone 장치에서는 여전히 권장됩니다. 이 응용 프로그램의 장점 중 하나는 기본적으로 Azure Rights Management 서비스를 지원하지 않는 응용 프로그램과 파일에 대해서도 일반적인 보호를 적용할 수 있으므로 모든 파일을 보호할 수 있다는 점입니다. 다양한 보호 수준에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)에서 [보호 수준 - 기본 및 일반](../rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) 섹션을 참조하세요.
 
@@ -39,7 +39,7 @@ Windows 컴퓨터에서 RMS 공유 응용 프로그램은 사용자가 이미 �
 
 -   Office 2010 제품군의 Word, Excel, PowerPoint 및 Outlook이 Azure Rights Management 서비스와 원활하게 연동되도록 하는 Office 2010용 백 엔드 구성이 적용됩니다.
 
-[Microsoft Rights Management 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)를 사용하여 단일 컴퓨터에 대해 Windows용 RMS 공유 응용 프로그램을 다운로드하여 설치할 수 있지만 자동 설치 및 사용자 지정 구성에 대한 엔터프라이즈 배포도 지원됩니다. 자세한 내용은 다음 리소스를 참조하세요.
+[Microsoft Rights Management 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)를 사용하여 단일 컴퓨터에 대해 Windows용 RMS 공유 응용 프로그램을 다운로드하여 설치할 수 있지만 자동 설치 및 사용자 지정 구성에 대한 엔터프라이즈 배포도 지원됩니다. 자세한 내용은 다음 참조 자료를 참조하세요.
 
 -   [Rights Management 공유 응용 프로그램 관리자 가이드](../rms-client/sharing-app-admin-guide.md)
 

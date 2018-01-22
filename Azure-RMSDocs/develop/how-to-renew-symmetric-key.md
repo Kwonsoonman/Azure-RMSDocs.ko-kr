@@ -2,20 +2,20 @@
 title: "Azure Information Protection에서 대칭 키를 갱신하는 방법"
 description: "이 문서에서는 Azure Information Protection에서 대칭 키를 갱신하는 프로세스를 설명합니다."
 keywords: 
-author: kkanakas
+author: lleonard-msft
 manager: mbaldwin
-ms.author: kartikk
+ms.author: alleonar
 ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0b8c8f0-6ed5-48bb-8155-ac4f319ec178
-ms.openlocfilehash: 6153067c308206cb93ad99de1075913c68d1fa3b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 159e5b58883490e4417ecbdb9815340c9ccaa66d
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-renew-the-symmetric-key-in-azure-information-protection"></a>방법: Azure Information Protection에서 대칭 키 갱신
 
@@ -23,9 +23,9 @@ ms.lasthandoff: 06/30/2017
 
 Azure AD(Azure Active Directory)에서 응용 프로그램을 나타내는 서비스 주체 개체를 만들 때 이 프로세스에서는 응용 프로그램을 확인하기 위한 256비트 대칭 키도 생성합니다. 이 대칭 키는 기본적으로 1년 동안 유효합니다. 
 
-아래 단계에서는 대칭 키를 갱신하는 방법을 간략하게 설명합니다. 
+다음 단계는 대칭 키를 갱신하는 방법을 보여줍니다. 
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 
 * [Azure AD PowerShell 참조](https://docs.microsoft.com/powershell/msonline/)에 설명된 대로 Azure AD(Azure Active Directory) PowerShell 모듈을 설치해야 합니다.
 
@@ -60,7 +60,7 @@ EndDate : 3/22/2018 3:27:53 PM
 Usage : Verify
 ```
 
-위 예제에서 만든 대칭 키는 2018/3/22 오후 3:27:53에 만료됩니다. 이 시간 이후에도 계속 서비스 주체를 사용하려면 대칭 키를 갱신해야 합니다. [`New-MsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) 명령을 사용하여 이렇게 할 수 있습니다. 
+이 대칭 키는 2018/3/22, 오후 3:27:53에 만료됩니다. 현재 서비스 주체를 사용하려면 대칭 키를 갱신해야 합니다. 이렇게 하려면 [`New-MsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) 명령을 사용합니다. 
 
 ```
 New-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963
@@ -74,7 +74,7 @@ The following symmetric key was created as one was not supplied ON8YYaMYNmwSfMX6
 [`GetMsolServicePrincipalCredential`](https://docs.microsoft.com/powershell/msonline/v1/get-msolserviceprincipalcredential) 명령을 사용하여 표시된 것처럼 새 대칭 키가 올바른 서비스 주체와 연결되었는지 확인할 수 있습니다. 이 명령은 현재 서비스 주체와 연결된 모든 키를 나열합니다.
 
 ```
-Get-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963 -ReturnKeyValues true
+Get-MsolServicePrincipalCredential -AppPrincipalId 7d9c1f38-600c-4b4d-8249-22427f016963 -ReturnKeyValues $true
 
 Type : Symmetric
 Value :

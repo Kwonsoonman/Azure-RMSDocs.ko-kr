@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2017
+ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5dae84eea9e67be75530d69b6124b97c7c29f8a3
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 0deb1b47036a4439f393bf7351c5d149a8e85559
+ms.sourcegitcommit: 152b4855e23f443c04ac27fedfdc1dcc9fda8949
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="installing-windows-powershell-for-azure-rights-management"></a>Azure 권한 관리용 Windows PowerShell 설치
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 06/30/2017
 
 인터넷에 연결되어 있고 다음 섹션에 나열된 필수 구성 요소를 충족하는 컴퓨터를 사용하여 명령줄에서 Azure Rights Management 서비스를 관리하는 데 이 PowerShell 모듈을 사용할 수 있습니다. [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell은 자동화용 스크립팅을 지원하거나 고급 구성 시나리오에 필요할 수 있습니다. 모듈에서 지원하는 관리 작업 및 구성에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure 권한 관리 관리](administer-powershell.md)를 참조하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>전제 조건
 아래 표에는 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell을 설치 및 사용하기 위한 필수 조건이 나와 있습니다.
 
 |요구 사항|추가 정보|
@@ -43,9 +43,9 @@ ms.lasthandoff: 06/30/2017
 
 ## <a name="how-to-install-the-rights-management-administration-module"></a>Rights Management 관리 모듈을 설치하는 방법
 
-1.  Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 관리 모듈이 포함된 [Azure Rights Management 관리 도구를 다운로드](https://go.microsoft.com/fwlink/?LinkId=257721)합니다.
+1. Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)] 관리 모듈이 포함된 [Azure Rights Management 관리 도구](https://go.microsoft.com/fwlink/?LinkId=257721)를 찾습니다.
 
-2.  [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 설치 관리자 파일을 다운로드하여 저장한 로컬 폴더에서 사용 중인 플랫폼용으로 다운로드한 실행 파일(WindowsAzureADRightsManagementAdministration_x64 또는 WindowsAzureADRightsManagementAdministration_x86.exe)을 두 번 클릭하여 Azure AD Rights Management 관리 도구 설치 마법사를 시작합니다.
+2. [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 설치 프로그램 파일, **WindowsAzureADRightsManagementAdministration_x64**를 다운로드하여 저장합니다. 그런 다음 이 파일을 두 번 클릭하여 Azure AD Rights Management 관리 설정 마법사를 시작합니다.
 
 3.  마법사를 완료합니다.
 

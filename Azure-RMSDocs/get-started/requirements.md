@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 01/18/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e6fa7c2912f2598f8eb2ad31d237caab80fd0273
-ms.sourcegitcommit: 8d47080abab0be9b16672fee0d885ebe00f7f5f3
+ms.openlocfilehash: 21faf358d5e0aa137e615dab9b411ecdcd5a7a73
+ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -97,10 +97,15 @@ Office 문서의 정보 외에 Azure Information Protection과 관련하여 다�
 
 - TCP 443에서 **api.informationprotection.azure.com**으로의 HTTPS 트래픽을 허용합니다.
 
-- TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure RMS와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.
-
 - 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.
 
+- TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure Rights Management 서비스와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.
+    
+    - 팁: Chrome에서 주소 표시줄에 보안 연결을 표시하는 방법으로 이 브라우저를 사용하여 Azure Rights Management 서비스에 연결하기 전에 클라이언트 연결이 종료되는지를 신속하게 확인할 수 있습니다. 브라우저 주소 표시줄에 URL(`https://admin.na.aadrm.com/admin/admin.svc`)을 입력합니다. 
+    
+        브라우저 창에 표시되는 내용은 걱정하지 않아도 됩니다. 대신 주소 표시줄의 자물쇠를 클릭하여 사이트 정보를 보세요. 사이트 정보를 사용하면 발행 인증 기관(CA)을 볼 수 있습니다. Microsoft CA에서 인증서를 발행하지 않은 경우 클라이언트-서비스 연결이 종료되어 방화벽을 재구성해야 할 가능성이 큽니다. 다음 그림은 Microsoft 발행 CA의 예제를 보여줍니다. 내부 CA에서 인증서를 발행한 경우 이 구성은 Azure Information Protection과 호환되지 않습니다.
+        
+        ![Azure Information Protection 연결을 위해 발급된 인증서 확인](../media/certificate-checking.png)
 
 ### <a name="on-premises-servers"></a>온-프레미스 서버
 

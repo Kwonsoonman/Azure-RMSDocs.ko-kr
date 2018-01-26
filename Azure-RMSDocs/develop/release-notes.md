@@ -26,7 +26,7 @@
 
 7월 릴리스에 대한 업데이트에는 SDK의 버전이 4.2.5로 증가했습니다.
 
-- Android SDK: 이제 Android SDK를 사용하여 앱에서 **로깅 레벨을 즉시 설정**할 수 있습니다. 자세한 내용은 [방법: 오류 및 성능 로깅 사용](https://docs.microsoft.com/en-us/information-protection/develop/enabling-logging)을 참조하세요.
+- Android SDK: 이제 Android SDK를 사용하여 앱에서 **로깅 레벨을 즉시 설정**할 수 있습니다. 자세한 내용은 [방법: 오류 및 성능 로깅 사용](https://docs.microsoft.com/information-protection/develop/enabling-logging)을 참조하세요.
 - iOS SDK는 로깅 수준을 지원하지 않습니다. 
 - 이제 SDK가 NULL 액세스 토큰에 대한 오류를 반환합니다.
 
@@ -66,7 +66,7 @@
 
     [UserPolicy.acquire 동기 메서드](https://msdn.microsoft.com/library/mt631384.aspx)
 
-    [UserPolicy.create(PolicyDescriptor...) 동기 메서드**](https://msdn.microsoft.com/library/mt631385.aspx) 
+    [UserPolicy.create(PolicyDescriptor...) 동기 메서드**](https://msdn.microsoft.com/library/mt631385.aspx)
 
     [UserPolicy.create(TempalteDescriptor...) 동기 메서드](https://msdn.microsoft.com/library/mt631386.aspx)
 

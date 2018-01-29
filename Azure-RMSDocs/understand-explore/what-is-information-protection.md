@@ -4,17 +4,17 @@ description: "Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2017
+ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 18ec6241d09eb8de2417dd939237de0544a401e8
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 0eeb9a6cf8eb819c19a32dbcf76e4d0104c18b99
+ms.sourcegitcommit: ae4cdee7211796182c47a11c1853232464673834
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -131,8 +131,8 @@ Ignite 웹 사이트에서 Azure Information Protection에 대한 태그가 지�
 
 블로그 게시물, [Azure Information Protection: 준비, 설정 보호!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)를 읽어보세요.
 
-5단계의 [Azure Information Protection 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 통해 Azure Information Protection을 스스로 구성하고 확인하세요.
+5단계의 [빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 통해 Azure Information Protection을 스스로 구성하고 확인하세요. 조직을 위해 이 서비스를 배포할 준비가 되었다면 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 참조하세요.
 
-Azure Information Protection 또는 Azure Rights Management를 다른 이름으로 알고 있을 수 있습니다. [서비스에 대한 대체 조건의 목록](azure-rms-aka.md)을 참조하세요.
+Azure Information Protection을 다른 이름으로 알고 있을 수 있습니다. [서비스에 대한 대체 용어 목록](azure-rms-aka.md)을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

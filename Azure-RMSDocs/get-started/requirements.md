@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/18/2018
+ms.date: 01/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 21faf358d5e0aa137e615dab9b411ecdcd5a7a73
-ms.sourcegitcommit: dca4534a0aa7f63c0c525c9a3ce445088d1362bb
+ms.openlocfilehash: 9496696791c343b01f5c311cb140333bcbbe7b2c
+ms.sourcegitcommit: eeeb1123349ab5e7eb2d352509670af6217123de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -85,6 +85,8 @@ Azure Information Protection 클라이언트는 다음 Office 버전의 Office �
 
 다른 버전의 Office는 권한 관리 서비스를 사용하여 문서와 메일을 보호할 수 없습니다. 이러한 버전에서는 Azure Information Protection이 분류용으로만 지원됩니다. 보호를 적용하는 레이블은 Azure Information Protection 표시줄에 표시되지 않습니다. 
 
+Azure Information Protection 클라이언트는 동일한 컴퓨터에 여러 버전의 Office를 지원하지 않습니다. 또한 이 클라이언트는 Office의 사용자 계정 전환을 지원하지 않습니다.
+
 데이터 보호 서비스를 지원하는 Office 버전에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.
 
 ## <a name="firewalls-and-network-infrastructure"></a>방화벽 및 네트워크 인프라
@@ -103,7 +105,7 @@ Office 문서의 정보 외에 Azure Information Protection과 관련하여 다�
     
     - 팁: Chrome에서 주소 표시줄에 보안 연결을 표시하는 방법으로 이 브라우저를 사용하여 Azure Rights Management 서비스에 연결하기 전에 클라이언트 연결이 종료되는지를 신속하게 확인할 수 있습니다. 브라우저 주소 표시줄에 URL(`https://admin.na.aadrm.com/admin/admin.svc`)을 입력합니다. 
     
-        브라우저 창에 표시되는 내용은 걱정하지 않아도 됩니다. 대신 주소 표시줄의 자물쇠를 클릭하여 사이트 정보를 보세요. 사이트 정보를 사용하면 발행 인증 기관(CA)을 볼 수 있습니다. Microsoft CA에서 인증서를 발행하지 않은 경우 클라이언트-서비스 연결이 종료되어 방화벽을 재구성해야 할 가능성이 큽니다. 다음 그림은 Microsoft 발행 CA의 예제를 보여줍니다. 내부 CA에서 인증서를 발행한 경우 이 구성은 Azure Information Protection과 호환되지 않습니다.
+        브라우저 창에 표시되는 내용은 걱정하지 않아도 됩니다. 대신 주소 표시줄의 자물쇠를 클릭하여 사이트 정보를 보세요. 사이트 정보를 사용하면 발행 인증 기관(CA)을 볼 수 있습니다. Microsoft CA에서 인증서를 발행하지 않은 경우 보안 클라이언트-서비스 연결이 종료되어 방화벽을 재구성해야 할 가능성이 큽니다. 다음 그림은 Microsoft 발행 CA의 예제를 보여줍니다. 내부 CA에서 인증서를 발행한 경우 이 구성은 Azure Information Protection과 호환되지 않습니다.
         
         ![Azure Information Protection 연결을 위해 발급된 인증서 확인](../media/certificate-checking.png)
 

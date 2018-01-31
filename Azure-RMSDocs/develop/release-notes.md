@@ -66,7 +66,7 @@
 
     [UserPolicy.acquire 동기 메서드](https://msdn.microsoft.com/library/mt631384.aspx)
 
-    [UserPolicy.create(PolicyDescriptor...) 동기 메서드**](https://msdn.microsoft.com/library/mt631385.aspx)
+    [UserPolicy.create(PolicyDescriptor...) 동기 메서드** ](https://msdn.microsoft.com/library/mt631385.aspx)
 
     [UserPolicy.create(TempalteDescriptor...) 동기 메서드](https://msdn.microsoft.com/library/mt631386.aspx)
 

@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/03/2018
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: aee9a9f665d3aa0a0e8a8c568f3abbd044469fc7
-ms.sourcegitcommit: 6c7874f54b8b983d3ac547bb23a51e02c68ee67b
+ms.openlocfilehash: 27799ff64e8c224c64b0ffc858b79818650d74af
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -461,7 +461,11 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 > [!NOTE]
 > [범위 지정 정책](../deploy-use/configure-policy-scope.md)을 사용하는 경우 범위 지정 정책에 이 계정을 추가해야 할 수도 있습니다.
 
-이 cmdlet을 처음 실행하면 Azure Information Protection에 로그인하라는 메시지가 표시됩니다. 무인 사용자에 대해 만든 사용자 계정 이름과 암호를 지정합니다. 그러면 이 계정은 인증 토큰이 만료될 때까지 레이블링 cmdlet을 비대화형으로 실행할 수 있습니다. 토큰이 만료되면 이 cmdlet을 다시 실행하여 새 토큰을 획득합니다.
+이 cmdlet을 처음 실행하면 Azure Information Protection에 로그인하라는 메시지가 표시됩니다. 무인 사용자에 대해 만든 사용자 계정 이름과 암호를 지정합니다. 그러면 이 계정은 인증 토큰이 만료될 때까지 레이블링 cmdlet을 비대화형으로 실행할 수 있습니다. 
+
+사용자 계정을 처음으로 대화형으로 로그인할 수 있으려면 계정에는 **로컬로 로그온** 권한이 있어야 합니다. 이 권한은 사용자 계정에서 표준이지만 회사 정책은 서비스 계정에서 이 구성을 금지할 수 있습니다. 해당되는 경우 인증이 로그인 프롬프트 없이 완료되도록 *토큰* 매개 변수를 사용하여 Set-AIPAuthentication을 실행할 수 있습니다. 이 명령을 예약된 작업으로 실행하고 **일괄 작업으로 로그온**의 오른쪽 아래에서 계정에 권한을 부여할 수 있습니다. 자세한 내용은 다음 섹션을 참조하세요. 
+
+토큰이 만료되면 이 cmdlet을 다시 실행하여 새 토큰을 획득합니다.
 
 매개 변수 없이 이 cmdlet을 실행하는 경우 계정은 90일 동안 또는 암호가 만료될 때까지 유효한 액세스 토큰을 획득합니다.  
 
@@ -517,7 +521,85 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 12. **필요한 권한** 블레이드로 돌아가 **사용 권한 부여**를 선택하고, **예**를 클릭하여 확인한 다음, 이 블레이드를 닫습니다.
     
-이제 두 앱의 구성을 완료했으며 매개 변수를 사용하여 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)을 실행하는 데 필요한 값이 구성되었습니다.
+이제 두 앱의 구성을 완료했으며 *WebAppId*, *WebAppKey* 및 *NativeAppId* 매개 변수를 사용하여 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)을 실행하는 데 필요한 값이 구성되었습니다. 예를 들면 다음과 같습니다.
+
+`Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"`
+
+비대화형으로 문서의 레이블을 지정하고 보호하는 계정의 컨텍스트에서 이 명령을 실행합니다. 예를 들어 Azure Information Protection 스캐너를 실행할 PowerShell 스크립트의 사용자 계정 또는 서비스 계정입니다.  
+
+처음으로 이 명령을 실행하면 로그인하라는 메시지가 표시됩니다. 그러면 %localappdata%\Microsoft\MSIP에서 계정에 대한 액세스 토큰을 만들고 안전하게 저장합니다. 이 초기 로그인 이후에 컴퓨터에서 비대화형으로 파일의 레이블을 지정하고 보호할 수 있습니다. 그러나 서비스 계정을 사용하여 파일의 레이블을 지정하고 보호하며, 이 서비스 계정이 대화형으로 로그인할 수 없는 경우 토큰을 사용하여 서비스 계정을 인증할 수 있도록 다음 섹션의 지침을 사용합니다.
+
+### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>Set-AIPAuthentication에 토큰 매개 변수 지정 및 사용
+
+> [!NOTE]
+> 이 옵션은 미리 보기로 제공되며 Azure Information Protection 클라이언트의 현재 미리 보기 버전이 필요합니다.
+
+다음과 같은 추가 단계 및 지침을 사용하여 파일의 레이블을 지정하고 보호하는 계정에서 초기 대화형 로그인을 방지합니다. 일반적으로 이 계정에 **로컬로 로그온** 권한을 부여할 수 없지만 **일괄 작업으로 로그온** 권한을 부여하는 경우에만 이러한 추가 단계가 필요합니다. 예를 들어 Azure Information Protection 스캐너를 실행하는 서비스 계정에 대한 사례일 수 있습니다.
+
+1. 로컬 컴퓨터에서 PowerShell 스크립트를 만듭니다.
+
+2. Set-AIPAuthentication을 실행하여 액세스 토큰을 가져오고 클립보드에 복사합니다.
+
+2. 토큰을 포함하도록 PowerShell 스크립트를 수정합니다.
+
+3. 파일의 레이블을 지정하고 보호하는 서비스 계정의 컨텍스트에서 PowerShell 스크립트를 실행하는 작업을 만듭니다.
+
+4. 서비스 계정에 토큰을 저장했음을 확인하고 PowerShell 스크립트를 삭제합니다.
+
+
+#### <a name="step-1-create-a-powershell-script-on-your-local-computer"></a>1단계: 로컬 컴퓨터에서 PowerShell 스크립트 만들기
+
+1. 컴퓨터에서 Aipauthentication.ps1이라는 새 PowerShell 스크립트를 만듭니다.
+
+2. 다음 명령을 복사하고 이 스크립트에 붙여 넣습니다.
+    
+         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+
+3. 이전 섹션의 지침을 사용하면 **WebAppId**, **WebAppkey** 및 **NativeAppId** 매개 변수에 대한 고유한 값을 지정하여 이 명령을 수정합니다. 이 경우에 **토큰** 매개 변수에 대한 값이 없으며 나중에 지정합니다. 
+    
+    예를 들어 `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f -Token <token value>`를 구성할 수 있습니다.
+    
+#### <a name="step-2-run-set-aipauthentication-to-get-an-access-token-and-copy-it-to-the-clipboard"></a>2단계: Set-AIPAuthentication을 실행하여 액세스 토큰 가져오기 및 클립보드에 복사
+
+1. Windows PowerShell 세션을 엽니다.
+
+2. 스크립트에서 지정한 것과 동일한 값을 사용하여 다음 명령을 실행합니다.
+    
+        (Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application >).token | clip
+    
+    예를 들어 `(Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f").token | clip`를 구성할 수 있습니다.
+
+#### <a name="step-3-modify-the-powershell-script-to-supply-the-token"></a>3단계: 토큰을 제공하도록 PowerShell 스크립트 수정
+
+1. PowerShell 스크립트에서 클립보드에서 문자열을 붙여 넣어 토큰 값을 지정하고 파일을 저장합니다.
+
+2. 스크립트에 서명을 합니다. 스크립트에 서명을 하지 않으면(더 안전함) 레이블 지정 명령을 실행하는 컴퓨터에서 Windows PowerShell을 구성해야 합니다. 예를 들어 **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell 세션을 실행하고 `Set-ExecutionPolicy RemoteSigned`를 입력합니다. 그러나 이 구성을 통해 서명되지 않은 모든 스크립트를 이 컴퓨터에 저장할 때 실행할 수 있습니다.
+    
+    Windows PowerShell 스크립트에 서명을 하는 방법에 대한 자세한 내용은 PowerShell 문서 라이브러리에서 [about_Signing](/powershell/module/microsoft.powershell.core/about/about_signing) 을 참조하세요.
+
+3. 파일의 레이블을 지정하고 보호하는 컴퓨터에서 이 PowerShell 스크립트를 복사하고 컴퓨터에서 원본을 삭제합니다. 예를 들어 PowerShell 스크립트를 Windows Server 컴퓨터의 C:\Scripts\Aipauthentication.ps1에 복사합니다.
+
+#### <a name="step-4-create-a-task-that-runs-the-powershell-script"></a>4단계: PowerShell 스크립트를 실행하는 작업 만들기
+
+1. 파일의 레이블을 지정하고 보호하는 서비스 계정에 **일괄 작업으로 로그온** 권한이 있어야 합니다.
+
+2. 파일의 레이블을 지정하고 보호하는 컴퓨터에서 작업 스케줄러를 열고 새 작업을 만듭니다. 파일의 레이블을 지정하고 보호하는 서비스 계정으로 실행하도록 이 작업을 구성한 다음, **작업**에 대해 다음 값을 구성합니다.
+    
+    - **작업**: `Start a program`
+    - **프로그램/스크립트**: `Powershell.exe`
+    - **추가 인수(선택 사항)**: `-NoProfile -WindowStyle Hidden -command "&{C:\Scripts\Aipauthentication.ps1}"` 
+    
+    인수 줄의 경우 예제와 다른 경우 고유한 경로 및 파일 이름을 지정합니다.
+
+3. 이 작업을 수동으로 실행합니다.
+
+#### <a name="step-4-confirm-that-the-token-is-saved-and-delete-the-powershell-script"></a>4단계: 토큰 저장 확인 및 PowerShell 스크립트 삭제
+
+1. 이제 토큰이 서비스 계정 프로필의 %localappdata%\Microsoft\MSIP 폴더에 저장되어 있는지 확인합니다. 이 값은 서비스 계정에 의해 보호됩니다.
+
+2. 토큰 값(예: Aipauthentication.ps1)을 포함하는 PowerShell 스크립트를 삭제합니다.
+    
+    필요에 따라 작업을 삭제합니다. 토큰이 만료된 경우 이 프로세스를 반복해야 합니다. 그러려면 새 토큰 값을 포함하는 새 PowerShell에 복사할 때 다시 실행할 준비가 되도록 구성된 작업을 그대로 두는 것이 더 편리할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 PowerShell 세션에 있는 경우에 cmdlet 도움말을 보려면 `Get-Help <cmdlet name> cmdlet`을 입력하고 -online 매개 변수를 사용하 여 가장 최신 정보를 읽어보세요. 예를 들면 다음과 같습니다. 

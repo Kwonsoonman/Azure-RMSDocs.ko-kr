@@ -4,17 +4,17 @@ description: "문서 또는 메일 메시지에 레이블을 할당하는 경우
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 99aba6560f9dcdbd564f317e8d9e0ce89845f4a9
-ms.sourcegitcommit: f78f5209f0e19c6edfd1815d76e0e9750b4ce71d
+ms.openlocfilehash: 01208dda12b5989e546c1042b48c17e166d48687
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -82,11 +82,43 @@ ms.lasthandoff: 12/12/2017
 
 - `${User.Name}` - 문서 또는 메일의 소유자, Windows 로그인 사용자 이름별 예: rsimone
 
-- `${User.PrincipalName}` - 문서 또는 메일의 소유자, Azure Information Protection 클라이언트 로그인 메일 주소(UPN)별 예를 들면 다음과 같습니다. rsimone@vanarsdelltd.com
+- `${User.PrincipalName}` - 문서 또는 메일의 소유자, Azure Information Protection 클라이언트 로그인 메일 주소(UPN)별 예를 들어 rsimone@vanarsdelltd.com를 구성할 수 있습니다.
 
 - `${Event.DateTime}` - 선택한 레이블을 설정한 날짜 및 시간 예: 2016년 8월 16일 오후 1시 30분
 
 예: **일반** 레이블 바닥글에 대해 `Document: ${item.name}  Classification: ${item.label}` 문자열을 지정하는 경우 문서화된 명명된 project.docx에 적용되는 바닥글 텍스트는 **Document: project.docx  Classification: General**이 됩니다.
+
+## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Word, Excel, PowerPoint 및 Outlook에서 다양한 시각적 표시 설정
+
+이 설정은 현재 미리 보기로 제공되며 Azure Information Protection 클라이언트의 미리 보기 버전이 필요합니다.
+
+기본적으로 지정한 시각적 표시는 Word, Excel, PowerPoint 및 Outlook에서 적용됩니다. 그러나 텍스트 문자열에서 "If.App" 변수 문을 사용하는 경우 Office 응용 프로그램 형식마다 시각적 표시를 지정하고 **Word**, **Excel**, **PowerPoint** 또는 **Outlook** 값을 사용하여 응용 프로그램 형식을 식별할 수 있습니다. 또한 이러한 값을 축약할 수 있습니다. 이 작업은 동일한 If.App 문에서 하나 이상을 지정하려는 경우에 필요합니다.
+
+다음 구문을 사용합니다.
+
+    ${If.App.<application type>}<your visual markings text> ${If.End}
+
+이 문의 이 구문은 대/소문자를 구분합니다.
+
+예:
+
+- **Word 문서에서만 헤더 텍스트를 설정합니다.**
+    
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+    
+    레이블은 Word 문서 헤더에서만 "이 Word 문서는 중요합니다."라는 헤더 텍스트를 적용합니다. 헤더 텍스트는 다른 Office 응용 프로그램에 적용되지 않습니다.
+
+- **Word, Excel, Outlook에 바닥글 텍스트를 설정하고 PowerPoint에 다른 바닥글 텍스트를 설정합니다.**
+    
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+    
+    Word, Excel 및 Outlook에서 레이블은 "이 콘텐츠는 기밀입니다."라는 바닥글 텍스트를 적용합니다. PowerPoint에서 레이블은 "이 프리젠테이션은 기밀입니다."라는 바닥글 텍스트를 적용합니다.
+
+- **Word 및 PowerPoint에 대한 특정 워터마크 텍스트 및 Word, Excel 및 PowerPoint에 대한 워터마크 텍스트를 설정합니다.**
+    
+    `${If.App.WP}This content is ${If.End}Confidential`
+    
+    Word 및 PointPoint에서 레이블은 "이 콘텐츠는 기밀입니다."라는 워터마크 텍스트를 적용합니다. Excel에서 레이블은 "기밀"이라는 워터마크 텍스트를 적용합니다. 시각적 표시인 워터마크가 Outlook에 지원되지 않으므로 Outlook에서 레이블은 워터마크 텍스트를 사용하지 않습니다.
 
 ### <a name="setting-the-font-name"></a>글꼴 이름 설정
 

@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0bd05c0553cdcab792c674c6945d7dfea5f02eaf
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: 3ee5bd789b62261867d6de4f56efaa3890dc1a57
+ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -52,6 +52,15 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 이 설정에 관계 없이 Azure Information Protection 클라이언트는 표준 [RMS 서비스 검색 프로세스](../rms-client/client-deployment-notes.md#rms-service-discovery)에 따라 AD RMS 클러스터를 찾습니다.
 
+## <a name="suppress-the-initial-congratulations-welcome-page"></a>처음에 "축하합니다!" 표시 안 함 시작 페이지
+
+Azure Information Protection 클라이언트가 컴퓨터에 처음 설치되고 사용자가 Word, Excel, PowerPoint 또는 Outlook을 열 때 **축하합니다!** 페이지가 새 Information Protection 표시줄을 사용하여 레이블을 선택하는 방법에 대한 짧은 지침과 함께 표시됩니다. 레지스트리를 편집하여 이 페이지를 표시하지 않을 수 있습니다.
+
+다음과 같은 값 이름을 찾고 값 데이터를 **0**으로 설정합니다.
+
+**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnableWelcomeExperience** 
+
+
 ## <a name="sign-in-as-a-different-user"></a>다른 사용자로 로그인
 
 프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 관리자는 테스트 단계 동안 다른 사용자로 로그인해야 할 수 있습니다. 
@@ -73,6 +82,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 - Single Sign-On을 사용할 경우 Windows에서 로그아웃하고 레지스트리를 편집한 후 다른 사용자 계정으로 로그인해야 합니다. Azure Information Protection 클라이언트에서는 현재 로그인한 사용자 계정을 사용하여 자동으로 인증합니다.
 
 - **도움말 및 피드백**의 **설정 재설정** 옵션을 사용하여 로그아웃하고 현재 다운로드한 Azure Information Protection 정책을 삭제할 수 있습니다.
+
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>조직에 혼합 라이선스가 있을 때 보호 전용 모드 적용
 

@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/22/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 20ee380a48fa8fb303a5c71f43df17b8740b0cb4
-ms.sourcegitcommit: fc9a4487e2a0bc3481a814c7c308939868d52db9
+ms.openlocfilehash: 19390c05719ebfee7e3442437d3f5bdfd303c652
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -43,9 +43,63 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 ## <a name="versions-later-than-110560"></a>1.10.56.0 이상 버전
 
-1.10.56.0 이상 버전의 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다. 
+1.10.56.0 이상 버전의 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다.
 
-클라이언트의 최신 GA 버전부터 현재 미리 보기 버전에서 새로운 기능 및 변경 내용은 [다운로드 페이지](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 **세부 정보** 섹션을 참조하세요. 
+현재 미리 보기 버전은 **1.21.203.0**이며 클라이언트의 현재 GA 버전 이후에 다음과 같이 변경되었습니다.
+
+이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.3403.1224가 포함되어 있습니다.
+
+**새로운 기능**:
+
+- Azure Information Protection 스캐너: 클라이언트에 포함된 PowerShell 모듈에는 온-프레미스 데이터 저장소에서 파일을 검색하고, 분류하고, 보호할 수 있도록 스캐너를 설치하고 구성할 새로운 cmdlet이 있습니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-use/deploy-aip-scanner.md)를 참조하세요. 
+
+- Office 앱의 경우 자동 및 권장 분류는 문서를 저장할 때 실행하는 대신 백그라운드에서 계속 실행됩니다. 이제 동작을 이렇게 변경하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류를 적용할 수 있습니다. [추가 정보](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) 
+
+- 이제 텍스트 문자열에서 "If.App" 변수 문을 사용하여 Word, Excel, PowerPoint 및 Outlook에 대새 다른 시각적 표시를 설정하고 응용 프로그램 형식을 식별할 수 있습니다. [추가 정보](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+
+- [정책 설정](../deploy-use/configure-policy-settings.md)인 **Office 앱에 Information Protection 표시줄 표시**에 대한 지원입니다. 이 설정을 끄기로 설정하면 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택합니다.
+
+- 새로운 고급 클라이언트 설정은 Outlook이 Azure Information Protection 정책에서 구성된 기본 레이블을 적용하지 않도록 합니다. 대신 Outlook에서 다른 기본 레이블을 적용할 수 있거나 레이블을 적용하지 않습니다. [추가 정보](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook) 
+
+- Office 앱에서 사용자 지정 권한을 지정하는 경우 이제 주소록 아이콘에서 사용자를 찾아보고 선택할 수 있습니다. 이 옵션을 통해 파일 탐색기를 사용하여 사용자 지정 권한을 지정하는 경우 사용자 환경에 패리티를 제공합니다.
+
+- PowerShell을 사용하고 **로컬로 로그온** 권한을 허용할 수 없는 서비스 계정의 완전한 비대화형 인증 방법에 대한 지원입니다. 이 인증 방법은 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication)을 사용하여 새 *토큰* 매개 변수를 사용하고, PowerShell 스크립트를 작업으로 실행해야 합니다. [추가 정보](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
+
+- [Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication)의 새 매개 변수인 *IntegratedAuth*입니다. 이 매개 변수는 AD RMS에 서버 모드를 지원합니다. 이 기능은 Windows Server FCI를 지원하기 위해 AD RMS에 필요합니다.
+
+
+**수정 사항**:
+
+안정성 및 다음을 포함하는 특정 시나리오에 대한 수정
+
+- Office 버전 16.0.8628.2010 이상(간편-실행)의 경우 Azure Information Protection 표시줄은 이전에 Office 응용 프로그램 외부에서 표시줄을 표시할 수 있는 최신 모니터 표시 옵션을 지원합니다.
+
+- Azure Information Protection을 사용하는 두 조직에서 레이블이 지정된 문서와 이메일을 공유하는 경우 해당하는 고유한 레이블이 유지되며 다른 조직의 레이블로 대체되지 않습니다.
+
+- 교차 참조를 포함하는 Excel의 셀에 대한 지원은 이전에 셀에서 텍스트 손상을 발생시켰습니다.
+
+- Office 테마 또는 Windows 테마 변경에 대한 지원은 테마가 변경된 후에 Excel이 데이터를 표시하지 않는 결과를 발생시켰습니다.
+
+- 이제 권장 또는 자동 분류를 위해 .xml 파일 이름 확장명을 가진 파일을 검사할 수 있습니다.
+
+- 이제 뷰어는 20MB를 넘는 보호된 텍스트 기반 파일(.ptxt 및 .pxml)을 열 수 있습니다. 
+
+- Outlook 미리 알림기를 사용하는 경우 Outlook의 작동이 중지되지 않도록 방지합니다.
+
+- 문서와 이메일을 보호할 수 있도록 부트스트랩은 Office 64비트에서 성공합니다.
+
+- 이제 Word, Excel, PowerPoint 및 파일 탐색기에 대한 사용자 정의 사용 권한에 대한 레이블을 구성하고, 고급 클라이언트 설정을 사용하여 사용자 지정 사용 권한 옵션을 숨길 수도 있습니다. [추가 정보](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
+
+- Azure Information Protection 정책의 시각적 표시가 클라이언트에 설치되어 있지 않은 글꼴 이름에 대해 구성된 경우 Calibri 글꼴로 대체합니다.
+
+- Azure Information Protection 클라이언트를 업그레이드한 후에 Office 충돌을 방지합니다.
+
+- Office 앱의 경우 성능 및 메모리 사용을 향상시킵니다.
+
+- 사용자 정의 사용 권한을 사용자 및 HYOK(AD RMS) 보호에 레이블을 구성하는 경우 보호는 더 이상 Azure Rights Management 서비스를 잘못 사용하지 않습니다.
+
+- 보다 일관된 관리 환경을 위해 하위 레이블은 더 이상 부모 레이블에서 시각적 표시 및 보호 설정을 상속하지 않습니다.
+
 
 ## <a name="version-110560"></a>버전 1.10.56.0
 

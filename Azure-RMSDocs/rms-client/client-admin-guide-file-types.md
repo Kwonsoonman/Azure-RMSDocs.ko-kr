@@ -4,7 +4,7 @@ description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a6a1c477a06c695a2183ad379c22492ea59d4bee
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: e1adb23e00b447d5633b37b310e3b9ce96d0becf
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -92,7 +92,7 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
     
     - 이러한 파일을 보호하려면 파일 크기는 사용 가능한 디스크 공간과 메모리에 의해서만 제한됩니다.
     
-    - 이러한 파일을 Azure Information Protection 뷰어에서 열려면: 텍스트 기반 파일(.ptxt 및 .pxml)에 지원되는 최대 파일 크기는 20MB입니다. 그림 기반 파일 및 PDF 파일의 경우 최대 파일 크기는 메모리에 의해서만 제한됩니다.
+    - Azure Information Protection 뷰어에서 이러한 파일을 열려면 현재 미리 보기 버전의 Azure Information Protection 클라이언트가 없는 경우 텍스트 기반 파일(.ptxt 및 .pxml)에 지원되는 최대 파일 크기는 20MB입니다. 그림 기반 파일 및 PDF 파일의 경우 최대 파일 크기는 메모리에 의해서만 제한됩니다.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>분류 및 보호가 지원되는 파일 형식
 

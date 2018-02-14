@@ -4,7 +4,7 @@ description: "보호 전용 모드에서 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 51dcca7823321defba2ffe45cde3e544ea16662a
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: ea865f91751ed171779c587d1af4cb0f4226a59e
+ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트에 대한 보호 전용 모드
 
@@ -37,6 +37,9 @@ Azure Information Protection 클라이언트에 문서 및 메일을 분류하�
 - 조직에 Azure Information Protection에 대한 구독이 있으나 Azure Information Protection 정책을 다운로드할 수 없습니다. 
     
     - 이 문제는 구성이 잘못되었거나 로그인이 실패했기 때문에 발생할 수 있습니다. 기술 지원 팀 또는 관리자에게 문의해야 하지만 당분간은 Azure Information Protection 클라이언트를 사용하여 파일을 보호하고 보호된 파일을 볼 수 있습니다.
+
+- 조직에서는 AD RMS(Active Directory Rights Management Services)만을 사용합니다. 
+
 
 ## <a name="limitations-for-protection-only-mode"></a>보호 전용 모드에 대한 제한 사항
 

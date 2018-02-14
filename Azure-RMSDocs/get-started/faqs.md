@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da0ba7876b1098671428e87117bed97c4f464071
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: 23c2b24a830b6d1ab7e0712fc1d1d70056f5d736
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -96,7 +96,7 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 
 - Windows Server FCI: Rights Management 소유자를 모든 파일에 대한 단일 계정으로 설정하거나 각 파일에 대한 Rights Management 소유자를 동적으로 설정할 수 있습니다. Rights Management 소유자를 동적으로 설정하려면 **-OwnerMail [Source File Owner Email]** 매개 변수 및 값을 사용합니다. 이 구성은 파일의 Owner 속성에 있는 사용자 계정 이름을 사용하여 Active Directory에서 해당 사용자의 이메일 주소를 검색합니다.
 
-- Azure Information Protection 스캐너: Rights Management 소유자를 모든 파일에 대한 단일 계정으로 설정할 수 있지만 각 파일에 대한 Rights Management 소유자를 동적으로 설정할 수는 없습니다. 계정을 설정하려면 [scanner configuration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration?view=azureipps#optional-parameters)에 **-DefaultOwner** 옵션 매개 변수를 지정하세요.
+- Azure Information Protection 스캐너: Rights Management 소유자를 지정된 데이터 저장소에서 모든 파일에 대한 단일 계정으로 설정할 수 있지만 각 파일에 대한 Rights Management 소유자를 동적으로 설정할 수는 없습니다. 계정을 설정하려면 [데이터 리포지토리 프로필](/powershell/module/azureinformationprotection/Set-AIPScannerRepository?view=azureipps#optional-parameters)에 **-DefaultOwner** 매개 변수를 지정합니다.
 
 스캐너가 SharePoint 사이트 및 라이브러리의 파일을 보호하는 경우 SharePoint 작성자 값을 사용하여 각 파일의 Rights Management 소유자가 동적으로 설정됩니다.
 

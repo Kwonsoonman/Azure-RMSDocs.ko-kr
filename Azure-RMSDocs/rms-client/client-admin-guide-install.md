@@ -4,7 +4,7 @@ description: "엔터프라이즈 네트워크에서 Windows용 Azure Information
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2018
+ms.date: 02/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0af9b6847c920d486d727cb6748b84aa581012d1
-ms.sourcegitcommit: d3b82dd8dbafb86ddbe698cdcd0edee445fff416
+ms.openlocfilehash: d91c52ac5ae1f70ed664e54a549c906d934fdb16
+ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -73,6 +73,8 @@ ms.lasthandoff: 01/25/2018
     이 그룹 정책 설정에 대한 자세한 내용은 [Office 2013 및 Office 2016 프로그램에 대한 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)을 참조하세요.
 
 - Office 버전 16.0.8628.2010 이상의 경우(간편 실행): 모니터에 대한 레거시 지원 사용
+    
+    참고: 이 필수 구성 요소는 현재 미리 보기 버전의 Azure Information Protection 클라이언트에 필요하지 않습니다. 
     
     Azure Information Protection 표시줄이 이러한 Office 버전용 Office 응용 프로그램 외부에 표시되는 것을 방지하기 위해 모니터에 대한 레거시 지원을 사용하는 것이 좋습니다. 이 시나리오에서 막대가 제대로 표시되지 않을 경우 **AdxTaskPane**으로 표시될 수 있습니다. 
     
@@ -200,7 +202,7 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
     |Office 2010|지원되는 모든 버전|[Microsoft Online Services 로그인 도우미](https://www.microsoft.com/en-us/download/details.aspx?id=28177)<br /><br /> 버전: 2.1|설치|
     |Office 2010|Windows 8.1 및 Windows Server 2012 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB2843630 또는 KB2919355를 설치하지 않은 경우 설치|
     |Office 2010|Windows 8 및 Windows Server 2012|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41708)<br /><br /> 파일 이름에 포함된 버전 번호: v3|설치|
-    |Office 2010|Windows 7|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB3125574를 설치하지 않은 경우 설치|
+    |Office 2010|Windows 7 및 Windows Server 2008 R2|[KB2843630](https://www.microsoft.com/en-us/download/details.aspx?id=41709)<br /><br /> 파일 이름에 포함된 버전 번호: v3|KB3125574를 설치하지 않은 경우 설치|
     |해당 없음|Windows 7|[vc_redist.x86.exe](https://www.microsoft.com/en-us/download/details.aspx?id=48145)|설치|
     |해당 없음|Windows 7|KB2627273 <br /><br /> 파일 이름에 포함된 버전 번호: v4|제거|
 

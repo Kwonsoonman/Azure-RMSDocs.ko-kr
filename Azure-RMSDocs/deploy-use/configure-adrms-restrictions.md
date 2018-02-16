@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: d7788b909da4219ae80475bac4bd26b2a2ec8da9
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 00b17536467e2990d807c3494c645fa8a559f241
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
@@ -129,7 +129,7 @@ Active Directory Rights Management Services 콘솔에서 템플릿 GUID 및 라�
 
 ## <a name="next-steps"></a>다음 단계
 
-이 기능에 대한 자세한 내용과 사용 시 지침은 블로그 게시물 공지인 [Azure Information Protection with HYOK (Hold Your Own Key)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)(Azure Information Protection 및 HYOK(Hold Your Own Key))를 참조하세요.
+이 기능에 대한 자세한 내용과 사용 시 지침은 블로그 게시물 공지인 [Azure Information Protection with HYOK (Hold Your Own Key)](https://cloudblogs.microsoft.com/enterprisemobility/2016/08/10/azure-information-protection-with-hyok-hold-your-own-key/)(Azure Information Protection 및 HYOK(Hold Your Own Key))를 참조하세요.
 
 AD RMS 보호에 대한 레이블을 구성하려면 [Rights Management 보호를 적용하도록 레이블을 구성하는 방법](../deploy-use/configure-policy-protection.md)을 참조하세요. 
 

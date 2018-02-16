@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4040e67a7bae2ee5a208d61134b842762ef4ace1
-ms.sourcegitcommit: 9de66368b75ffd003289f998c7b1e78736736524
+ms.openlocfilehash: 014b4d7100a0be36951a21db9a1dcf35bdbe5dd6
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Azure Information Protection 설명서에 대한 의견 관련 기본 규칙
 
@@ -33,7 +33,7 @@ Livefyre 메모 및 사이드 노트를 다음 용도로 사용하지 마세요.
 
 - **기술 지원**. 기능이 작동하지 않아 요구 사항을 확인하고 설명서 지침을 따른 경우나 [지원되는 버전](./rms-client/client-version-release-history.md#servicing-information-and-timelines)의 Azure Information Protection 클라이언트를 사용 중인지 확인한 경우가 있습니다. 대신 [Microsoft 지원](./get-started/information-support.md#to-contact-microsoft-support)에 문의하거나 표준 지원 채널을 사용하세요. 또는 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에서 커뮤니티와 의견을 교환하세요.
 
-- **로드맵 정보**. 새 릴리스가 제공되거나 추가 기능이 계획된 시기를 예로 들 수 있습니다. 이 정보는 [Enterprise Mobility 및 Security 블로그](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)를 방문하거나 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에서 질문하세요. Azure Information Protection에 대해 [사용자 의견 사이트](https://msip.uservoice.com)를 확인하고 이 리소스를 사용하여 새로운 기능을 요청할 수 있습니다.
+- **로드맵 정보**. 새 릴리스가 제공되거나 추가 기능이 계획된 시기를 예로 들 수 있습니다. 이 정보는 [Enterprise Mobility 및 Security 블로그](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)를 방문하거나 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에서 질문하세요. Azure Information Protection에 대해 [사용자 의견 사이트](https://msip.uservoice.com)를 확인하고 이 리소스를 사용하여 새로운 기능을 요청할 수 있습니다.
 
 - **제품 사용자 의견**. 제품 향상이나 새로운 기능을 위한 제안을 예로 들 수 있습니다. 대신 Azure Information Protection에 대한 [User Voice site](https://msip.uservoice.com)(사용자 의견 사이트)를 방문하여 새로운 기능을 제안하고, 다른 사용자가 게시한 아이디어에 대해 투표하고, Azure Information Protection 팀에서 심사한 현재 상태를 확인하세요. 일반적인 피드백, 질문 및 조언을 보려면 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에서 커뮤니티와 의견을 교환하세요. 
 

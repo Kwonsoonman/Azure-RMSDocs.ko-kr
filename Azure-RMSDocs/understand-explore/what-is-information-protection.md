@@ -10,11 +10,11 @@ ms.prod:
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 0eeb9a6cf8eb819c19a32dbcf76e4d0104c18b99
-ms.sourcegitcommit: ae4cdee7211796182c47a11c1853232464673834
+ms.openlocfilehash: c3bbf2a9e0fee14ddeb2f18fa5671209ad92cfd4
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -112,7 +112,7 @@ Azure Information Protection을 Exchange Online과 함께 사용하는 경우 �
 - Yammer: [Azure Information Protection](https://www.yammer.com/AskIPTeam)
 
 
-또한 **Microsoft Ignite 2017**에는 주문형으로 제공되는 Azure Information Protection에 대한 여러 세션이 있습니다. 이 회의에서 다룬 공지 사항 요약은 [What’s new in Azure Information Protection @ Ignite 2017](https://blogs.technet.microsoft.com/enterprisemobility/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)(Ignite 2017에서 다룬 Azure Information Protection의 새로운 기능)을 참조하세요. 
+또한 **Microsoft Ignite 2017**에는 주문형으로 제공되는 Azure Information Protection에 대한 여러 세션이 있습니다. 이 회의에서 다룬 공지 사항 요약은 [What’s new in Azure Information Protection @ Ignite 2017](https://cloudblogs.microsoft.com/ENTERPRISEMOBILITY/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)(Ignite 2017에서 다룬 Azure Information Protection의 새로운 기능)을 참조하세요. 
 
 Ignite 웹 사이트에서 Azure Information Protection에 대한 태그가 지정된 세션을 [검색](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)할 수 있습니다. 그러나 다음 세션으로 시작하는 것이 좋습니다.
 
@@ -129,7 +129,7 @@ Ignite 웹 사이트에서 Azure Information Protection에 대한 태그가 지�
 
 ## <a name="next-steps"></a>다음 단계
 
-블로그 게시물, [Azure Information Protection: 준비, 설정 보호!](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)를 읽어보세요.
+블로그 게시물, [Azure Information Protection: 준비, 설정 보호!](https://cloudblogs.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)를 읽어보세요.
 
 5단계의 [빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 통해 Azure Information Protection을 스스로 구성하고 확인하세요. 조직을 위해 이 서비스를 배포할 준비가 되었다면 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 참조하세요.
 

@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 837026a45529312dbdb1657cc563e8b02bff6675
-ms.sourcegitcommit: 9b229852c59441f9387bab1d5f28a3c5d9017696
+ms.openlocfilehash: 614adfa0aca5b65750704d45f52355780c19c137
+ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 
@@ -49,7 +49,7 @@ Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용�
 
 키 관리 외에도 Azure Key Vault는 보안 관리자에게 암호화를 사용하는 다른 서비스 및 응용 프로그램의 인증서 및 암호를 저장하고 액세스하고 관리하는 동일한 관리 환경을 제공합니다. 
 
-Azure Key Vault에 대한 자세한 내용은 [Azure Key Vault란?](/azure/key-vault/key-vault-whatis)을 참조하고, 최신 정보는 [Azure Key Vault 팀 블로그](https://blogs.technet.microsoft.com/kv/)를 방문하여 다른 서비스에서 이 기술을 어떻게 사용하는지 알아보세요.
+Azure Key Vault에 대한 자세한 내용은 [Azure Key Vault란?](/azure/key-vault/key-vault-whatis)을 참조하고, 최신 정보는 [Azure Key Vault 팀 블로그](https://cloudblogs.microsoft.com/kv/)를 방문하여 다른 서비스에서 이 기술을 어떻게 사용하는지 알아보세요.
 
 ## <a name="restrictions-when-using-byok"></a>BYOK 사용 시 제한 사항
 

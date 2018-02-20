@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0deb1b47036a4439f393bf7351c5d149a8e85559
-ms.sourcegitcommit: 152b4855e23f443c04ac27fedfdc1dcc9fda8949
+ms.openlocfilehash: 5946ab7315b646abf119cb32cd66ac62535253c9
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="installing-windows-powershell-for-azure-rights-management"></a>Azure 권한 관리용 Windows PowerShell 설치
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/18/2018
 |요구 사항|추가 정보|
 |---------------|--------------------|
 |[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 관리 모듈을 지원하는 Windows 버전|지원되는 운영 체제 목록은 **Azure Rights Management 관리 도구 다운로드 페이지** 의 [시스템 요구 사항](http://go.microsoft.com/fwlink/?LinkId=257721)섹션에서 확인할 수 있습니다.|
-|최소 Windows PowerShell 버전: 2.0<br /><br /> |기본적으로 대부분의 Windows 운영 체제를 설치할 때는 Windows PowerShell 버전 2.0 이상이 함께 설치됩니다. 이 지원되는 최소 버전을 설치해야 하는 경우 [Windows PowerShell 2.0 설치](https://msdn.microsoft.com/library/ff637750.aspx)를 참조하세요.<br /><br />팁: PowerShell 세션에서 `$PSVersionTable`을 입력하면 실행 중인 Windows PowerShell 버전을 확인할 수 있습니다. <br /><br /> 이 최소 버전이 있는 경우 `Import-Module AADRM`을 실행하여 PowerShell 세션에 모듈을 수동으로 로드해야 해야만 Rights Management 관리 모듈의 cmdlet을 사용할 수 있습니다. Windows PowerShell v3 이상이 있는 경우 모듈이 자동으로 로드되고 이 추가 명령이 필요하지 않습니다.|
+|최소 Windows PowerShell 버전: 3.0|PowerShell 세션에서 `$PSVersionTable`을 입력하면 실행 중인 Windows PowerShell 버전을 확인할 수 있습니다. <br /><br /> Windows PowerShell의 최신 버전을 설치해야 할 경우 [기존 Windows PowerShell 업그레이드](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)를 참조하세요.|
 |최소 Microsoft .NET Framework 버전: 4.5<br /><br />참고: 이 버전의 Microsoft .NET Framework는 최신 운영 체제에 포함되어 있으므로 클라이언트 운영 체제가 Windows 8.0보다 낮거나 서버 운영 체제가 Windows Server 2012보다 낮은 경우에만 수동으로 설치해야 합니다.|Microsoft .NET Framework의 최소 버전을 아직 설치하지 않은 경우 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)를 다운로드할 수 있습니다.<br /><br />[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)] 관리 모듈이 사용하는 일부 클래스에는 이 Microsoft .NET Framework의 최소 버전이 필요합니다.|
 
 > [!NOTE]

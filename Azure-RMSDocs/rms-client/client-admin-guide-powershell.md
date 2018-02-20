@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 27799ff64e8c224c64b0ffc858b79818650d74af
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: a6ca8145768559a556b051974f59620a0750c660
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -24,9 +24,7 @@ ms.lasthandoff: 02/09/2018
 
 Azure Information Protection 클라이언트를 설치할 때, PowerShell 명령이 자동으로 설치됩니다. 그러면 자동화를 위해 스크립트에 둘 수 있는 명령을 실행하여 클라이언트를 관리할 수 있습니다.
 
-cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩니다. 이 모듈은 RMS 보호 도구와 함께 설치되는 RMSProtection 모듈을 대체합니다. Azure Information Protection 클라이언트를 설치할 때 RMSProtection 도구를 설치하면 RMSProtection 모듈이 자동으로 제거됩니다.
-
-AzureInformationProtection 모듈에는 RMS 보호 도구의 모든 Rights Management cmdlet이가 포함되어 있습니다. 또한 레이블을 지정하기 위해 AIP(Azure Information Protection) 서비스를 사용하는 새로운 cmdlet도 있습니다. 예를 들면 다음과 같습니다.
+cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩니다. 이 모듈에는 RMS 보호 도구(더 이상 지원되지 않음)의 모든 Rights Management cmdlet이 포함되어 있습니다. 또한 레이블을 지정하기 위해 AIP(Azure Information Protection) 서비스를 사용하는 새로운 cmdlet도 있습니다. 예를 들면 다음과 같습니다.
 
 |레이블 지정 cmdlet|예제 사용법|
 |----------------|---------------|
@@ -36,13 +34,13 @@ AzureInformationProtection 모듈에는 RMS 보호 도구의 모든 Rights Manag
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|일정에 따라 실행되는 스크립트를 사용하는 것처럼 비대화형 파일에 레이블을 지정합니다.|
 
 
-또한 [Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)(현재 미리 보기)는 Windows Server에서 서비스를 설치하고 구성하는 cmdlet을 사용합니다. 그런 다음 이 스캐너를 통해 데이터 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.
+또한 [Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)는 Windows Server에서 서비스를 설치하고 구성하는 cmdlet을 사용합니다. 그런 다음 이 스캐너를 통해 데이터 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.
 
 모든 cmdlet 목록 및 해당 도움말을 보려면 [AzureInformationProtection 모듈](/powershell/module/azureinformationprotection)을 참조하세요. PowerShell 세션 내에서 `Get-Help <cmdlet name> -online`을 입력하여 최신 도움말을 볼 수 있습니다.  
 
 이 모듈은 **\ProgramFiles (x86)\Microsoft Azure Information Protection**에 설치되고 이 폴더를 **PSModulePath** 시스템 변수에 추가합니다. 이 모듈의 .dll 이름은 **AIP.dll**입니다.
 
-RMSProtection 모듈과 마찬가지로 AzureInformationProtection 모듈의 현재 릴리스에는 다음과 같은 제한이 있습니다.
+AzureInformationProtection 모듈의 현재 릴리스에는 다음과 같은 제한이 있습니다.
 
 - Outlook 개인 폴더(.pst 파일)의 보호를 해제할 수 있지만 현재는 이 PowerShell 모듈을 사용하여 이러한 파일 또는 기타 컨테이너 파일을 고유하게 보호할 수 없습니다.
 
@@ -454,7 +452,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 ## <a name="how-to-label-files-non-interactively-for-azure-information-protection"></a>Azure Information Protection에 대해 비대화형으로 파일에 레이블을 지정하는 방법
 
-**Set-AIPAuthentication** cmdlet을 사용하여 레이블이 없는 cmdlet을 비대화형으로 실행할 수 있습니다. 비대화형 작업은 Azure Information Protection 스캐너에도 필요하며, 현재 미리 보기로 제공됩니다.
+**Set-AIPAuthentication** cmdlet을 사용하여 레이블이 없는 cmdlet을 비대화형으로 실행할 수 있습니다. 비대화형 작업은 Azure Information Protection 스캐너에도 필요합니다.
 
 기본적으로 레이블 지정에 대한 cmdlet을 실행하는 경우 명령이 대화형 PowerShell 세션의 자체적인 사용자 컨텍스트에서 실행됩니다. 무인으로 실행하려면 이 용도에 맞는 Azure AD 사용자 계정을 새로 만듭니다. 그런 다음 해당 사용자의 컨텍스트에서 Set-AIPAuthentication cmdlet을 설정하여 Azure AD의 액세스 토큰으로 자격 증명을 설정 및 저장합니다. 그런 후 이 사용자 계정이 Azure Rights Management 서비스에 대해 인증되고 부트스트랩됩니다. 이 계정은 레이블이 사용하는 Azure Information Protection 정책 및 모든 Rights Management 템플릿을 다운로드합니다.
 
@@ -521,6 +519,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 12. **필요한 권한** 블레이드로 돌아가 **사용 권한 부여**를 선택하고, **예**를 클릭하여 확인한 다음, 이 블레이드를 닫습니다.
     
+
 이제 두 앱의 구성을 완료했으며 *WebAppId*, *WebAppKey* 및 *NativeAppId* 매개 변수를 사용하여 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)을 실행하는 데 필요한 값이 구성되었습니다. 예를 들면 다음과 같습니다.
 
 `Set-AIPAuthentication -WebAppId "57c3c1c3-abf9-404e-8b2b-4652836c8c66" -WebAppKey "sc9qxh4lmv31GbIBCy36TxEEuM1VmKex5sAdBzABH+M=" -NativeAppId "8ef1c873-9869-4bb1-9c11-8313f9d7f76f"`
@@ -532,7 +531,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 ### <a name="specify-and-use-the-token-parameter-for-set-aipauthentication"></a>Set-AIPAuthentication에 토큰 매개 변수 지정 및 사용
 
 > [!NOTE]
-> 이 옵션은 미리 보기로 제공되며 Azure Information Protection 클라이언트의 현재 미리 보기 버전이 필요합니다.
+> 이 옵션을 사용하려면 Azure Information Protection 스캐너의 GA(일반 공급) 버전 또는 현재 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
 
 다음과 같은 추가 단계 및 지침을 사용하여 파일의 레이블을 지정하고 보호하는 계정에서 초기 대화형 로그인을 방지합니다. 일반적으로 이 계정에 **로컬로 로그온** 권한을 부여할 수 없지만 **일괄 작업으로 로그온** 권한을 부여하는 경우에만 이러한 추가 단계가 필요합니다. 예를 들어 Azure Information Protection 스캐너를 실행하는 서비스 계정에 대한 사례일 수 있습니다.
 
@@ -540,12 +539,11 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 2. Set-AIPAuthentication을 실행하여 액세스 토큰을 가져오고 클립보드에 복사합니다.
 
-2. 토큰을 포함하도록 PowerShell 스크립트를 수정합니다.
+3. 토큰을 포함하도록 PowerShell 스크립트를 수정합니다.
 
-3. 파일의 레이블을 지정하고 보호하는 서비스 계정의 컨텍스트에서 PowerShell 스크립트를 실행하는 작업을 만듭니다.
+4. 파일의 레이블을 지정하고 보호하는 서비스 계정의 컨텍스트에서 PowerShell 스크립트를 실행하는 작업을 만듭니다.
 
-4. 서비스 계정에 토큰을 저장했음을 확인하고 PowerShell 스크립트를 삭제합니다.
-
+5. 서비스 계정에 토큰을 저장했음을 확인하고 PowerShell 스크립트를 삭제합니다.
 
 #### <a name="step-1-create-a-powershell-script-on-your-local-computer"></a>1단계: 로컬 컴퓨터에서 PowerShell 스크립트 만들기
 

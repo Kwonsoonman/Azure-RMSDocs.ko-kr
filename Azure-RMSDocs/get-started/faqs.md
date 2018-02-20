@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23c2b24a830b6d1ab7e0712fc1d1d70056f5d736
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 78d6e75b432635420405f9cb7280c5e2548b65f2
+ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 02/09/2018
 
 Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
-이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Enterprise Mobility 및 보안 블로그](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)의 월간 설명서 업데이트 공지에 등록됩니다.
+이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Enterprise Mobility 및 보안 블로그](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)의 월간 설명서 업데이트 공지에 등록됩니다.
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Azure Information Protection과 Azure Rights Management의 차이는 무엇인가요?
 
@@ -47,6 +47,29 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 
 현재 Windows용 Rights Management 공유 응용 프로그램을 사용하고 있다면 이 응용 프로그램을 Azure Information Protection 클라이언트로 교체하는 것이 좋습니다. 공유 응용 프로그램에 대한 지원은 2019년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 응용 프로그램으로 수행해왔던 작업](../rms-client/upgrade-client-app.md)을 참조하세요.
 
+## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators"></a>Azure Information Protection을 구성하려면 전역 관리자여야 하나요? 또는 다른 관리자에게 위임할 수 있나요?
+
+분명 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
+
+- **Information Protection관리자**(현재 미리 보기): 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Information Protection의 모든 측면을 구성할 수 있지만 다른 서비스는 구성할 수 없습니다. 이 역할을 가진 관리자는 Azure Rights Management 보호 서비스를 활성화 및 비활성화하고 보호 설정 및 레이블을 구성하며 Azure Information Protection 정책을 구성할 수 있습니다. 또한 이 역할을 가진 관리자는 모든 [AADRM 모듈의 PowerShell cmdlet](../deploy-use/administer-powershell.md)을 실행할 수 있습니다. 
+    
+    사용자에게 이 관리 역할을 할당하려면 [Azure Active Directory에서 사용자에게 관리자 역할 할당](/azure/active-directory/active-directory-users-assign-role-azure-portal)을 참조하세요.
+
+- **보안 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Portal에서 Azure Information Protection의 모든 측면을 구성하고 다른 Azure 서비스의 일부 측면을 구성할 수 있습니다. 이 역할을 가진 관리자는 [AADRM 모듈의 PowerShell cmdlet](../deploy-use/administer-powershell.md)을 실행할 수 없습니다.
+    
+    사용자에게 이 관리 역할을 할당하려면 [Azure Active Directory에서 사용자에게 관리자 역할 할당](/azure/active-directory/active-directory-users-assign-role-azure-portal)을 참조하세요. 이 역할이 있는 사용자에게 어떤 다른 권한이 있는지 보려면 Azure Active Directory 설명서의 [사용 가능한 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) 섹션을 참조하세요.
+
+- Azure Rights Management **전역 관리자** 및 **커넥터 관리자**: 이러한 Azure Rights Management 관리자 역할의 경우, 첫 번째 역할은 다른 클라우드 서비스의 전역 관리자가 되지 않고 모든 [AADRM 모듈의 PowerShell cmdlet](../deploy-use/administer-powershell.md)을 실행할 권한을 사용자에게 부여하고 두 번째 역할은 RMS(Rights Management) 커넥터만 실행하는 권한을 부여합니다. 이러한 관리 역할은 모두 관리 콘솔에 권한을 부여하지 않습니다.
+
+    이러한 관리 역할 중 하나를 할당하려면 AADRM PowerShell cmdlet, [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator)를 사용합니다.
+
+몇 가지 참고 사항:
+
+- [온보딩 컨트롤](../deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구성한 경우, 이 구성은 RMS 커넥터를 제외하고 Azure Information Protection을 관리하는 기능에 영향을 주지 않습니다. 예를 들어 콘텐츠를 보호하는 기능을 "IT 부서" 그룹으로 제한하도록 온보딩 컨트롤을 구성했으면 RMS 커넥터를 설치하고 구성하는 데 사용하는 계정은 해당 그룹의 구성원이어야 합니다. 
+
+- 관리 역할이 할당된 사용자는 Azure Information Protection에 의해 보호된 문서나 이메일에서 보호를 자동으로 제거할 수 없습니다. 슈퍼 사용자로 할당된 사용자만 그렇게 할 수 있으며, 이것도 슈퍼 사용자 기능을 활성화되어 있을 때 가능합니다. 그러나 Azure Information Protection에 관리 권한을 할당한 사용자는 자신의 계정을 포함하여 사용자를 슈퍼 사용자로 할당할 수 있습니다. 이들은 슈퍼 사용자 기능을 활성화할 수도 있습니다. 이러한 작업은 관리자 로그에 기록됩니다. 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)의 보안 모범 사례 섹션을 참조하세요. 
+
+
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 
 예. Azure Information Protection은 클라우드 기반 솔루션이지만 클라우드 뿐 아니라 온-프레미스에 저장된 문서 및 전자 메일을 분류, 레이블 지정 및 보호할 수 있습니다.
@@ -54,6 +77,12 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](../deploy-use/deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
 
 Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure Rights Management에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](../understand-explore/how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](../understand-explore/how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
+
+## <a name="what-types-of-data-can-azure-information-protection-classify-and-protect"></a>Azure Information Protection은 어떤 형식의 데이터를 분류하고 보호할 수 있나요?
+
+Azure Information Protection은 온-프레미스 또는 클라우드에 있는 이메일 메시지 및 문서를 분류하고 보호할 수 있습니다. 이러한 문서에는 Word 문서, Excel 스프레드시트, PowerPoint 프레젠테이션, PDF 문서, 텍스트 기반 파일 및 이미지 파일이 포함됩니다. 지원되는 문서 형식 목록은 관리자 가이드의 [지원되는 파일 형식](../rms-client/client-admin-guide-file-types.md) 목록을 참조하세요.
+
+Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerBI 보고서, Yammer 게시물, Sway 콘텐츠 및 OneNote 전자 필기장과 같은 구조화된 데이터는 분류하고 보호할 수 없습니다.
 
 ## <a name="i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work"></a>Azure Information Protection이 조건부 액세스를 위한 사용 가능한 클라우드 앱으로 나열되어 있습니다. 작동 방법은 무엇인가요?
 
@@ -83,7 +112,7 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 
 한동안 Windows Server File Classification Infrastructure를 사용하여 서류를 분류한 후 [Rights Management 커넥터](../deploy-use/deploy-rms-connector.md)(Office 문서만 해당) 또는 [PowerShell 스크립트](../rms-client/configure-fci.md)(모든 파일 형식)를 사용하여 분류된 문서를 보호할 수 있었습니다. 
 
-이제 [Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)(현재 미리 보기 상태)를 사용할 수 있습니다. 이 스캐너는 Azure Information Protection 클라이언트 및 Azure Information Protection 정책을 사용하여 문서(모든 파일 형식)에 레이블을 지정하여 이러한 문서가 분류되고 선택적으로 보호되도록 합니다.
+이제 [Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)를 사용할 수 있습니다. 이 스캐너는 Azure Information Protection 클라이언트 및 Azure Information Protection 정책을 사용하여 문서(모든 파일 형식)에 레이블을 지정하여 이러한 문서가 분류되고 선택적으로 보호되도록 합니다.
 
 이러한 두 솔루션의 주요 차이점은 다음과 같습니다.
 
@@ -102,7 +131,7 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>곧 새 릴리스가 Azure Information Protection용으로 나올 예정이라고 들었습니다. 언제 나오나요?
 
-기술 설명서에는 예정된 릴리스에 대한 정보가 없습니다. 이러한 종류의 정보와 릴리스 발표에 대해서는 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)에서 최신 업데이트를 받으세요. 관심이 있는 Office 릴리스의 경우에는 [Office 블로그](https://blogs.office.com/)도 꼭 확인하세요.
+기술 설명서에는 예정된 릴리스에 대한 정보가 없습니다. 이러한 종류의 정보와 릴리스 발표에 대해서는 [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)에서 최신 업데이트를 받으세요. 관심이 있는 Office 릴리스의 경우에는 [Office 블로그](https://blogs.office.com/)도 꼭 확인하세요.
 
 ## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>법적 정보, 규정 준수, SLA 등의 Azure Information Protection 관련 지원 정보는 어디서 찾을 수 있나요?
 

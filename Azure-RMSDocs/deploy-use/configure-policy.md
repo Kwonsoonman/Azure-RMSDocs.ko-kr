@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/25/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b04c7881f982b33094107b6de33920a83b17b960
-ms.sourcegitcommit: a7cdf911088fdf663e43894484530ea15150284f
+ms.openlocfilehash: 6b0556755597fe20755e7b798a24498a780b87b5
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -44,9 +44,24 @@ Azure Information Protection P2 구독을 필요로 하는 옵션은 포털에�
 
 구독에 대한 자세한 내용은 [Azure Information Protection을 사용하려면 어떤 구독이 필요하며, 포함된 기능은 무엇인가요?](../get-started/faqs.md#what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included)를 참조하세요.
 
+## <a name="signing-in-to-the-azure-portal"></a>Azure Portal에 로그인
+
+Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 관리하려면
+
+- 다음 링크를 사용합니다. https://portal.azure.com
+
+- 다음 [관리자 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) 중 하나가 있는 계정을 사용합니다.
+    
+    - **Information Protection 관리자**(현재 미리 보기 상태)
+
+    - **보안 관리자**
+
+    - **전역 관리자 / 회사 관리자**
+
+
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>Azure Information Protection 블레이드에 처음으로 액세스하려면
 
-1. 테넌트의 전역 관리자 또는 보안 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다.
+1. Azure Portal에 로그인합니다.
 
 2. 허브 메뉴에서 **새로 만들기**를 클릭한 다음 **MARKETPLACE** 목록에서 **보안 + ID**를 클릭합니다. 
     
@@ -63,7 +78,7 @@ Azure Information Protection P2 구독을 필요로 하는 옵션은 포털에�
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Azure Information Protection 정책을 구성하는 방법
 
-1. 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인하도록 합니다.
+1. Information Protection 관리자, 보안 관리자 또는 전역 관리와 같은 관리 역할 중 하나를 사용하여 Azure Portal에 로그인했는지 확인합니다. 이러한 관리 역할에 대한 자세한 내용은 [이전 섹션](#signing-in-to-the-azure-portal)을 참조하세요.
 
 2. 필요한 경우 **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
     

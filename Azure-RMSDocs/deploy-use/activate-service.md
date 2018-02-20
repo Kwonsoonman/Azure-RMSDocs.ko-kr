@@ -4,7 +4,7 @@ description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/15/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e8fede85cddc44318ce93497a9ac454c689673d3
-ms.sourcegitcommit: c3d57b175a4e7b5e136f7183c837fa08e7ac982e
+ms.openlocfilehash: 0696f6562cd39542c2447b8b9e897c05e8571525
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="activating-azure-rights-management"></a>Azure 권한 관리 활성화
 
@@ -44,11 +44,13 @@ Azure Rights Management 서비스를 활성화하기 전에 해결되는 비즈�
 
 Azure Information Protection의 Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자는 해당 파일에 정보 보호를 적용할 수 있으며 모든 사용자가 Azure Rights Management 서비스로 보호되는 파일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
 
+## <a name="choosing-your-activation-method"></a>정품 인증 방법 선택
+
 관리 포털에서 Rights Management 서비스를 활성화하는 방법에 대한 지침을 보려면 Office 365 관리 센터를 사용할지, Azure Portal을 사용할지를 선택합니다.
 
-- [**Office 365 관리 센터**](activate-office365.md) - 전역 관리자 계정 필요
+- [Office 365 관리 센터](activate-office365.md) - 전역 관리자 계정 필요
 
-- [**Azure 포털**](activate-azure.md) - 전역 관리자 계정 또는 [보안 관리자 계정 필요](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)
+- [Azure Portal](activate-azure.md) - 전역 관리자 계정이 필요하지 않음
 
 또는 PowerShell을 사용하여 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 활성화할 수 있습니다.
 

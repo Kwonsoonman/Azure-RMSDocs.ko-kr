@@ -4,7 +4,7 @@ description: "엔터프라이즈 네트워크에서 Windows용 Azure Information
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d91c52ac5ae1f70ed664e54a549c906d934fdb16
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 92e4f6c05378b36165db0628f14941b0ccd26cb7
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -211,7 +211,11 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 ## <a name="how-to-install-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너를 설치하는 방법
 
-현재 미리 보기 버전의 Azure Information Protection 클라이언트에는 Azure Information Protection 스캐너가 포함됩니다. 클라이언트에 포함된 PowerShell 모듈에는 스캐너를 설치하고 구성하는 cmdlet이 있습니다.
+현재 Azure Information Protection 스캐너의 GA(일반 공급) 버전은 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 **AzInfoProtectionScanner.exe**라는 별도의 다운로드입니다. 스캐너의 후속 릴리스는 Azure Information Protection 클라이언트에 포함될 예정입니다.
+
+현재 미리 보기 버전의 Azure Information Protection 클라이언트에는 Azure Information Protection 스캐너도 포함됩니다. 
+
+스캐너 및 미리 보기 클라이언트에 포함된 PowerShell 모듈에는 스캐너를 설치하고 구성하는 cmdlet이 있습니다.
 
 스캐너에 클라이언트를 설치하려면 이전 섹션에서 동일한 지침을 따릅니다. Office 추가 기능 및 뷰어와 같은 클라이언트의 구성 요소가 모두 필요하지 않은 경우 PowerShell 모듈만을 설치할 수 있습니다. 예를 들어 `PowerShellOnly=true /quiet`에서 실행 파일을 실행할 수 있습니다.
 

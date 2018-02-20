@@ -4,17 +4,17 @@ description: "Azure Information Protection 정책에서 구성하여 사용자�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/26/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: f17e149dcd8cfb7398909cbe3a83cdcf71b80b33
-ms.sourcegitcommit: 2bca892231ca8393b88bd5da7d0890a573770a09
+ms.openlocfilehash: b6694c7c205f7ccd899669cc887b79ab39ec8ec4
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Azure Information Protection에 대한 레이블을 삭제하거나 순서를 변경하는 방법
 
@@ -34,11 +34,11 @@ Azure Information Protection 정책에서 이러한 작업을 선택하여 사�
 
 - PowerShell을 사용하여 템플릿의 이름을 바꾸거나 삭제합니다.
     
-    이러한 작업을 수행하기 전에 다른 관리자나 서비스가 템플릿을 사용하고 있는지, 현재 이름으로 템플릿을 식별하는지 고려하십시오. 템플릿으로 보호된 문서나 전자 메일을 열 필요가 없는 경우에만 템플릿을 삭제하십시오.
+    이러한 작업을 수행하기 전에 다른 관리자나 서비스가 템플릿을 사용하고 있는지, 현재 이름으로 템플릿을 식별하는지 고려하세요. 템플릿으로 보호된 문서나 전자 메일을 열 필요가 없는 경우에만 템플릿을 삭제하십시오.
 
 보호 템플릿 관리에 대한 자세한 내용은 [Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
 
-레이블을 삭제하기 전에 사용하지 않도록 설정할지를 고려하세요. 문서 및 전자 메일에 적용된 레이블을 사용하지 않도록 설정하면 적용된 레이블이 이러한 문서와 전자 메일에서 제거되지 않지만 더 이상 사용자가 정보 보호 모음에서 선택할 수 있는 레이블로 표시되지 않습니다. 또한 레이블을 사용하지 않도록 설정했다가, 사용자가 나중에 레이블을 선택할 수 있게 하려는 경우에 간단히 다시 사용하도록 설정하여 원래 구성을 유지할 수 있습니다.
+레이블을 삭제하기 전에 사용하지 않도록 설정할지를 고려하세요. 문서 및 이메일에 적용된 레이블을 사용하지 않도록 설정하면 적용된 레이블이 이러한 문서와 이메일에서 제거되지 않지만 더 이상 사용자가 정보 보호 모음에서 선택할 수 있는 레이블로 표시되지 않습니다. 또한 레이블을 사용하지 않도록 설정했다가, 사용자가 나중에 레이블을 선택할 수 있게 하려는 경우에 간단히 다시 사용하도록 설정하여 원래 구성을 유지할 수 있습니다.
 
 사용자가 Information Protection 표시줄에서 논리적 진행률을 볼 수 있도록 레이블의 순서를 지정합니다. 예를 들어 민감도 수준이 가장 낮은 레이블이 처음에 표시되고 민감도 수준이 가장 높은 레이블이 마지막에 표시되도록 민감도 오름차순으로 레이블을 정렬합니다. [기본 정책](configure-policy-default.md)에서는 이 구성을 사용하고 레이블 이름에 민감도 오름차순을 반영합니다.
 
@@ -48,7 +48,7 @@ Azure Information Protection 정책에서 이러한 작업을 선택하여 사�
 
 이와 같이 변경하려면 다음 지침을 사용합니다.
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
@@ -62,7 +62,7 @@ Azure Information Protection 정책에서 이러한 작업을 선택하여 사�
 
     - 레이블을 사용하지 않도록 설정하려면: 사용하지 않도록 설정할 레이블을 선택합니다. **Label**(레이블) 블레이드에서 **Enabled**(사용)에 대해 **Off**(끄기)를 클릭한 다음 **Save**(저장)를 클릭합니다.
 
-    - 레이블 순서를 변경하려면: 마우스 오른쪽 단추를 클릭하거나 순서를 변경할 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택하고 레이블이 원하는 순서대로 정렬될 때까지 **Move up**(위로 이동) 또는 **Move down**(아래로 이동)을 클릭합니다. 그런 다음 **Save**(저장)를 클릭합니다. 
+    - 레이블 순서를 변경하려면: 마우스 오른쪽 단추를 클릭하거나 순서를 변경할 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택하고 레이블이 원하는 순서대로 정렬될 때까지 **위로 이동** 또는 **아래로 이동**을 클릭합니다. 그런 다음 **Save**(저장)를 클릭합니다. 
 
 4. 변경 내용을 사용자에게 제공하려면 **Azure Information Protection** 블레이드에서 **Publish**(게시)를 클릭합니다.
 

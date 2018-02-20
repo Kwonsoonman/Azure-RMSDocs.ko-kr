@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/02/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 3ee5bd789b62261867d6de4f56efaa3890dc1a57
-ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
+ms.openlocfilehash: 662ed627fc6138e1ff16efb731b209964784432f
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -28,7 +28,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>포털에서 고급 클라이언트 구성 설정을 구성하는 방법
 
-1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 보안 관리자나 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다.
+1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 [Azure Portal에 로그인](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal)한 다음, **Azure Information Protection** 블레이드로 이동합니다.
 
 2. 초기 Azure Information Protection 블레이드에서 **범위 정책**을 선택합니다.
 

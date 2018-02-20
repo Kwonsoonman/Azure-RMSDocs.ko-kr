@@ -4,17 +4,17 @@ description: "Azure Information Protection은 사용자 지정 가능한 기본 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/23/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 540cd59c2df0653c449f495124334920c2cff305
-ms.sourcegitcommit: 13e95906c24687eb281d43b403dcd080912c54ec
+ms.openlocfilehash: cb7af6831040bb42a3c7e3a7e8ea355f72fc433c
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-create-a-new-label-for-azure-information-protection"></a>Azure Information Protection에 대한 새 레이블을 만드는 방법
 
@@ -26,7 +26,7 @@ Azure Information Protection은 사용자 지정 가능한 기본 레이블과 �
 
 다음 지침을 사용하여 Azure Information Protection 정책에 새 레이블을 추가할 수 있습니다.
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창에서 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
@@ -38,7 +38,7 @@ Azure Information Protection은 사용자 지정 가능한 기본 레이블과 �
     
     - 새 레이블을 만들려면: **Add a new label**(새 레이블 추가)을 클릭합니다.
     
-    - 새 하위 레이블을 만들려면: 마우스 오른쪽 단추를 클릭하거나 하위 레이블을 만들려는 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택하고 **Add a sub-label**(하위 레이블 추가)을 클릭합니다.
+    - 새 하위 레이블을 만들려면: 마우스 오른쪽 단추를 클릭하거나 하위 레이블을 만들려는 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택하고 **하위 레이블 추가**를 클릭합니다.
 
 4. **Label**(레이블) 또는 **Sub-label**(하위 레이블) 블레이드에서 이 새 레이블에 대한 옵션을 선택하고 **Save**(저장)를 클릭합니다.
     

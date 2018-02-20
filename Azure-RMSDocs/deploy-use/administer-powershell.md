@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스(
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,19 +12,17 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 94ec0107930e64d42ed55bce407c4b8c92f1df32
-ms.sourcegitcommit: 0fa5dd38c9d66ee2ecb47dfdc9f2add12731485e
+ms.openlocfilehash: 597590dbf33dd43329d27ccadf081e5e8d9fd0b6
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
 
 >*적용 대상: Azure Information Protection, Office 365*
 
-PowerShell을 사용하여 Azure Information Protection에 대한 Azure Rights Management 서비스를 관리해야 하나요? 전역 관리자 또는 [보안 관리자](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)인 경우 이러한 작업이 필요하지 않을 수 있으며 이 서비스에 대해 필요한 구성은 활성화(또는 비활성화)하고 Rights Management 템플릿을 구성하는 것입니다.
-
-그러나 더 많은 고급 구성을 수행하려면 PowerShell을 사용해야 하며 전역 관리자 또는 보안 관리자가 아니고 전역 관리자가 서비스를 관리할 수 있는 권한을 부여한 경우에도 PowerShell을 사용해야 합니다. 보다 효율적인 명령줄 제어 및 스크립팅을 위해 PowerShell을 사용하려고 할 수도 있습니다.
+PowerShell을 사용하여 Azure Information Protection에 대한 Azure Rights Management 서비스를 관리해야 하나요? Azure Portal이나 Office 365 포털에서 모든 구성을 수행할 필요가 없을 수도 있습니다. 그러나 일부 고급 구성에는 PowerShell을 사용해야 하고 보다 효율적인 명령줄 제어 및 스크립팅을 위해 PowerShell을 사용하는 것을 선호할 수도 있습니다.
 
 다음 섹션에 제공된 표에는 PowerShell을 사용하는 몇 가지 고급 구성 시나리오가 나와 있습니다. PowerShell을 사용하지 않고도 구성을 완료할 수 있으며 이 정보는 표에도 나와 있습니다.
 

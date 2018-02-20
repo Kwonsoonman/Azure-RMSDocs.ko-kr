@@ -4,7 +4,7 @@ description: "보호 전용 모드에서 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/02/2018
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ea865f91751ed171779c587d1af4cb0f4226a59e
-ms.sourcegitcommit: bc47834ae7180491ed1d9bc9f69eab398bcdc0a8
+ms.openlocfilehash: 201415526b57d691d999ddba6af2451df4d36de4
+ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트에 대한 보호 전용 모드
 
@@ -33,6 +33,10 @@ Azure Information Protection 클라이언트에 문서 및 메일을 분류하�
 - 조직에 다음 사용자 하위 집합 전용의 Azure Information Protection 구독이 있습니다.
     
     - 이 혼합 구독의 경우 사용자 하위 집합만 분류 및 레이블 지정 기능을 사용할 수 있도록 하는 것은 관리자의 책임입니다. 나머지 사용자는 보호 전용 모드에서 Azure Information Protection 클라이언트를 실행해야 합니다. 
+
+- 조직은 Azure Information Protection에 대한 구독을 보유하지만 어떤 레이블도 구성되어 있지 않습니다.
+    
+    - 이는 글로벌 정책의 모든 레이블이 비활성화되고 사용자의 계정이 범위 지정 정책에 추가되지 않은 경우에 발생할 수 있습니다. 이는 IT 부서에서 Azure Information Protection을 롤아웃했지만 문서 및 이메일을 분류하기 위한 레이블을 아직 제공하지 않았기 때문일 수 있습니다. 당분간은 Azure Information Protection 클라이언트를 사용하여 파일을 보호하고 보호된 파일을 볼 수 있습니다.
 
 - 조직에 Azure Information Protection에 대한 구독이 있으나 Azure Information Protection 정책을 다운로드할 수 없습니다. 
     

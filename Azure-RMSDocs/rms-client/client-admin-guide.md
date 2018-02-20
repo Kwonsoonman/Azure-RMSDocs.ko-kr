@@ -4,7 +4,7 @@ description: "Windows용 Azure Information Protection 클라이언트 배포를 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c338fe4258d6d8b20a4d8c285bc821981810b409
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: a7412378655ea75500bd1339c0ba41f677fe4d9a
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -54,7 +54,7 @@ Azure Information Protection 클라이언트에는 다음이 포함됩니다.
 
 - 파일에서 분류 레이블 및 보호를 적용 및 제거하기 위한 PowerShell 모듈 
     
-    이 모듈에는 Windows Server에서 서비스로 실행되는 [Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)(현재 미리 보기)를 설치하고 구성하는 cmdlet이 포함되어 있습니다. 이 서비스를 통해 네트워크 공유 및 SharePoint Server 라이브러리와 같은 데이터 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.
+    이 모듈에는 Windows Server에서 서비스로 실행되는 [Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)를 설치하고 구성하는 cmdlet이 포함되어 있습니다. 이 서비스를 통해 네트워크 공유 및 SharePoint Server 라이브러리와 같은 데이터 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.
 
 - Azure RMS(Azure Rights Management) 또는 AD RMS(Active Directory Rights Management Services)와 통신하는 Rights Management 클라이언트
 
@@ -73,7 +73,7 @@ AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 
 
 - PowerShell 명령을 사용하여 문서를 분류(및 필요에 따라 보호)하는 스크립트를 실행하려고 합니다.
 
-- 저장된 온-프레미스인 파일을 검색하고 분류(및 필요에 따라 보호)하는 서비스를 실행하려고 합니다. 이 스캐너 서비스는 현재 미리 보기 상태입니다.
+- 저장된 온-프레미스인 파일을 검색하고 분류(및 필요에 따라 보호)하는 서비스를 실행하려고 합니다.
 
 - 네이티브 응용 프로그램이 설치되어 있지 않거나 이러한 문서를 열 수 없을 때 보호된 문서를 보려고 합니다.
 
@@ -171,7 +171,7 @@ Azure Information Protection 클라이언트는 Office 365가 지원하는 같�
 
 - **AzInfoProtection.exe**와 같은 실행 파일을 다시 실행하고 **설치 수정** 페이지에서 **제거**를 클릭합니다. 
 
-- **/uninstall**을 사용하여 실행 파일을 실행합니다. `AzInfoProtection.exe /uninstall`
+- **/uninstall**을 사용하여 실행 파일을 실행합니다. 예를 들어 `AzInfoProtection.exe /uninstall`를 구성할 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 클라이언트를 설치하려면 [사용자를 위해 Azure Information Protection 클라이언트 설치](client-admin-guide-install.md)를 참조하세요.

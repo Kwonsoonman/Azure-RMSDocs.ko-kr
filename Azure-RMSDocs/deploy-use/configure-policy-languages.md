@@ -4,17 +4,17 @@ description: "Azure Information Protection 정책에서 언어를 지정하고 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/26/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 7a77b517531d5b4586871abbcb22d2158673d56c
-ms.sourcegitcommit: 222318da363a45c3a533f7b77b02f4e31a258979
+ms.openlocfilehash: f57b3802386aced71967a5ab619cdabf2fd67a37
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿을 구성하는 방법
 
@@ -40,7 +40,7 @@ Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어�
 
 ## <a name="to-configure-labels-and-templates-for-different-languages"></a>다른 언어에 대한 레이블 및 템플릿을 구성하려면
 
-1. 아직 그렇게 하지 않은 경우 보안 관리자 또는 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인한 다음 **Azure Information Protection** 블레이드로 이동합니다. 
+1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 

@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 7bc1e4021eeb2620857577f3970d1da9db21b6e8
-ms.sourcegitcommit: 51b93125988e6e63077b1df721985b89059f425e
+ms.openlocfilehash: b9885f020f78bd20bec39c8c1ede2018d6254a7b
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
@@ -28,7 +28,7 @@ Azure Information Protection에서 특별히 분류 및 레이블 지정에 대�
 
 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 통해 몇 분 만에 이러한 기능의 작동 방식을 확인해 보세요.
 
-추가 분류 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility 및 보안 블로그](https://blogs.technet.microsoft.com/enterprisemobility/?product=azure-information-protection) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요. 현재 릴리스에는 다음을 포함하는 몇 가지 제한이 있습니다.
+추가 분류 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility 및 보안 블로그](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요. 현재 릴리스에는 다음을 포함하는 몇 가지 제한이 있습니다.
 
 - 분류 및 레이블 지정을 위한 중앙 집중식 로깅은 없습니다.
 
@@ -40,7 +40,7 @@ Azure Information Protection의 [사용자 의견 사이트](https://msip.uservo
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>분류 및 레이블을 구성하려면 전역 관리자여야 합니까?
 
-Azure Information Protection 정책을 구성하려 할 때, 더 이상 Azure Active Directory의 전역 관리자로 Azure Portal에 로그인할 필요가 없습니다. 또한 이제는 보안 관리자 역할이 있는 계정을 사용할 수 있습니다.
+새로 도입된 Information Protection 관리자 역할을 통해 이제 이 질문에 대한 답변은 기본 FAQ 페이지에 제공됩니다. [Azure Information Protection을 구성하려면 전역 관리자여야 하나요? 또는 다른 관리자에게 위임할 수 있나요?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
 
 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 레이블 지정 기능을 확인하고 사용해 보기 위해 포털에 로그인하지 않아도 됩니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure Portal에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
 
@@ -52,7 +52,7 @@ Azure Information Protection 정책을 구성하려 할 때, 더 이상 Azure Ac
 
 사용자는 각 문서 또는 메일에 대해 한 번에 레이블 하나만 선택할 수 있으며, 그 결과 분류가 하나만 생깁니다. 그러나 사용자가 하위 레이블을 선택하면 실제로 두 레이블(기본 레이블 및 보조 레이블)이 동시에 적용됩니다. 하위 레이블을 사용함으로써 추가 수준의 제어에 대해 파일에 부모\자식 관계를 나타내는 두 분류가 있을 수 있습니다.
 
-예를 들어 레이블 **기밀**은 **법률**과 **금융** 같은 하위 레이블을 포함할 수 있습니다. 서로 다른 분류 시각적 표시와 서로 다른 Rights Management 템플릿을 이러한 하위 레이블에 적용할 수 있습니다. 사용자는 **기밀** 레이블 자체만 선택할 수 없으며 **법률** 같은 하위 레이블 중 하나를 선택해야 합니다. 결과적으로 표시되는 레이블은 **기밀 \ 법률**입니다. 해당 파일의 메타데이터에는 **기밀**에 대한 사용자 지정 텍스트 속성 하나, **법률**에 대한 사용자 지정 텍스트 속성 하나, 두 값을 모두 포함하는 다른 사용자 지정 텍스트 속성(**기밀 법률**)이 포함됩니다. 
+예를 들어, **기밀** 레이블은 **법률**과 **금융** 같은 하위 레이블을 포함할 수 있습니다. 서로 다른 분류 시각적 표시와 서로 다른 Rights Management 템플릿을 이러한 하위 레이블에 적용할 수 있습니다. 사용자는 **기밀** 레이블 자체만 선택할 수 없으며 **법률** 같은 하위 레이블 중 하나를 선택해야 합니다. 결과적으로 표시되는 레이블은 **기밀 \ 법률**입니다. 해당 파일의 메타데이터에는 **기밀**에 대한 사용자 지정 텍스트 속성 하나, **법률**에 대한 사용자 지정 텍스트 속성 하나, 두 값을 모두 포함하는 다른 사용자 지정 텍스트 속성(**기밀 법률**)이 포함됩니다. 
 
 하위 레이블을 사용할 때에는 기본 레이블에 시각적 표시, 보호 및 상태를 구성하지 마세요. 하위 수준을 사용할 때에는 하위 레이블에만 이러한 설정을 구성합니다. 기본 레이블과 하위 레이블에 이러한 설정을 구성하는 경우 하위 레이블의 설정이 우선합니다.
 

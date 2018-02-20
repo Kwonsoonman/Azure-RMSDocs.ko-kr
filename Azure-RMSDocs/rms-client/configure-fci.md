@@ -1,10 +1,10 @@
 ---
 title: "Windows Server FCI를 사용하는 Azure RMS 보호 - AIP"
-description: "RMS(Rights Management) 클라이언트와 RMS 보호 도구를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하는 지침을 제공합니다."
+description: "RMS(Rights Management) 클라이언트와 Azure Information Protection 클라이언트를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하는 지침을 제공합니다."
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dfa751ef7cd4c8405fa02299576cb57083d63495
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: 49133bec323b00541c92ac3739fafab266cc92cf
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
@@ -50,7 +50,7 @@ Azure Information Protection 클라이언트와 PowerShell을 사용하여 파�
     
     - 특정 파일 이름 확장명에 대해 보호의 기본 수준(기본 또는 일반)을 변경하려는 경우 관리자 가이드의 [파일의 기본 보호 수준 변경](client-admin-guide-file-types.md#changing-the-default-protection-level-of-files) 섹션에 설명된 대로 레지스트리를 편집해야 합니다.
     
-    - 인터넷 연결이 있고 컴퓨터 설정이 프록시 서버에 필요한 경우 해당 설정이 구성되어 있습니다. `netsh winhttp import proxy source=ie`
+    - 인터넷 연결이 있고 컴퓨터 설정이 프록시 서버에 필요한 경우 해당 설정이 구성되어 있습니다. 예를 들어 `netsh winhttp import proxy source=ie`를 구성할 수 있습니다.
     
 - 온-프레미스 Active Directory 사용자 계정을 Azure Active Directory 또는 Office 365와 동기화해야 합니다(각각의 메일 주소를 포함). 이렇게 하려면 모든 사용자가 파일을 FCI 및 Azure Rights Management 서비스로 보호한 후에 해당 파일에 액세스해야 할 수도 있습니다. 이 단계를 수행하지 않으면(예: 테스트 환경) 사용자가 이러한 파일에 액세스하지 못하도록 차단될 수 있습니다. 이 요구 사항에 대한 자세한 내용이 필요한 경우는 [Azure Information Protection을 위한 사용자 및 그룹 준비](../plan-design/prepare.md)를 참조하세요.
     

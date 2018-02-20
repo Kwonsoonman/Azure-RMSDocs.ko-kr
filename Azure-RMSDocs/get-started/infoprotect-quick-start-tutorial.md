@@ -4,17 +4,17 @@ description: "조직에서 Microsoft Azure Information Protection 사용을 빠�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/30/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: c851eb1ecf1551caee1ab2a6aac6f05c550cb96b
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: a93b226f80382d4c751ca88d037398939db9d61b
+ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure Information Protection 빠른 시작 자습서 
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/28/2017
 
 Azure Information Protection을 사용하여 이 자습서를 완료하는 데 문제가 있거나 이에 대한 다른 사용자의 의견을 확인하려면 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)를 참조하세요.
 
-## <a name="prerequisites"></a>필수 구성 요소 
+## <a name="prerequisites"></a>전제 조건 
 이 자습서를 완료하려면 다음이 필요합니다.
 
 - 분류, 레이블 지정 및 보호를 위해 Azure Information Protection이 포함된 구독. 이 자습서에는 사용자 권장 사항으로 자동화된 데이터 분류 및 문서 추적 사이트와 같은 고급 기능이 포함되어 있습니다. 이 자습서를 진행하려면 이러한 기능을 지원하는 구독이 있는지 확인해야 합니다. 자세한 내용은 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 확인하세요.
@@ -36,7 +36,7 @@ Azure Information Protection을 사용하여 이 자습서를 완료하는 데 �
   > [!TIP] 
   > 이 프로세스를 완료하려면 시간이 오래 걸릴 수도 있으므로 구독을 신청해야 할 경우에는 미리 준비해야 합니다.
 
-- Azure Portal에 로그인하여 보호를 활성화하고 Azure Information Protection 정책을 구성할 수 있는 전역 관리자 계정 또는 보안 관리자 계정. 이 계정에 메일 주소와 제대로 작동하는 메일 서비스(예: Exchange Online)가 있어야 합니다.
+- Azure Portal에 로그인하여 보호를 활성화하고 Azure Information Protection 정책을 구성할 수 있는 전역 관리자 계정. 또는 [Information Protection 관리자 또는 보안 관리자](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)와 같은 다음 관리 역할을 가진 계정을 사용할 수 있습니다. 이 계정에 메일 주소와 제대로 작동하는 메일 서비스(예: Exchange Online)가 있어야 합니다.
 
 - Windows(Windows 7 서비스 팩 1 이상)를 실행하며 Office 365 ProPlus(2016 앱 또는 2013 앱 포함), Office Professional Plus 2016, Office Professional Plus 2013 서비스 팩 1 또는 Office Professional Plus 2010 서비스 팩 2가 설치된 컴퓨터. 
     

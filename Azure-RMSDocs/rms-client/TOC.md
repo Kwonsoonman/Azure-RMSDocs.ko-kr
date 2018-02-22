@@ -8,7 +8,7 @@
 #### [Azure Information Protection 클라이언트: 버전 릴리스 기록](client-version-release-history.md)
 #### [Azure Information Protection 클라이언트 관리자 가이드](client-admin-guide.md)
 ##### [사용자용 클라이언트 설치](client-admin-guide-install.md)
-##### [Customizations](client-admin-guide-customizations.md)(사용자 지정)
+##### [사용자 지정](client-admin-guide-customizations.md)
 ##### [클라이언트 파일 및 사용 현황 로깅](client-admin-guide-files-and-logging.md)
 ##### [문서 추적](client-admin-guide-document-tracking.md)
 ##### [지원되는 파일 유형](client-admin-guide-file-types.md)

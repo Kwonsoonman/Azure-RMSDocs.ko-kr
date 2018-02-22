@@ -42,7 +42,7 @@
 ### [고객 관리](operations-customer-managed-tenant-key.md)
 ## [서비스 해제 및 비활성화](decommission-deactivate.md)
 ## [PowerShell을 사용한 관리](administer-powershell.md)
-### [Azure RMS용 Windows PowerShell 설치](install-powershell.md)
+### [AADRM PowerShell 모듈 설치](install-powershell.md)
 # [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
 # [앱 개발 및 사용자 지정](/information-protection/develop/developers-guide)
 

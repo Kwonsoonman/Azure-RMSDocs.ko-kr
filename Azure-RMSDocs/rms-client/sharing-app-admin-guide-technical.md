@@ -101,7 +101,7 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 
 기본적으로 기본 보호가 적용되는 모든 파일에 대해 RMS 공유 응용 프로그램이 일반 보호를 적용하도록 구성하려면 다음 레지스트리를 편집합니다. RmsSharingApp 또는 FileProtection 키가 없으면 직접 만들어야 합니다.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: 이름이 *인 새 키를 만듭니다.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: 이름이 \* 인 새 키를 만듭니다.
 
     이 설정은 임의의 파일 이름 확장명이 지정된 파일을 나타냅니다.
 

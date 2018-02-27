@@ -4,17 +4,17 @@ description: "Azure Information Protection에 대한 기본 정책을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: 86b04d47797f7e3201dd4fd7b7e5a9c662254d12
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: da8557be0a70cee0e7a207a8ed285f6e843ac626
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>기본 Azure Information Protection 정책
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/24/2017
 
 이 버전의 기본 정책은 2017년 7월 31일에 생성되었습니다.
 
-이 기본 정책은 정책을 만들 때 Azure Rights Management 서비스를 활성화하는 경우에만 생성됩니다. 이 서비스가 활성화되지 않은 경우 기본 정책에서는 다음 하위 레이블에 대한 보호를 구성하지 않습니다.
+이 기본 정책은 정책을 만들 때 Azure Rights Management 서비스를 [활성화](activate-service.md)하는 경우에만 생성됩니다. 이 서비스가 활성화되지 않은 경우 기본 정책에서는 다음 하위 레이블에 대한 보호를 구성하지 않습니다.
 
 - **Confidential \ All Employees**
 
@@ -40,13 +40,13 @@ ms.lasthandoff: 10/24/2017
 
 - **Highly Confidential \ Recipients Only** 
 
-이러한 하위 레이블에 사용하도록 보호가 자동으로 구성되지 않은 경우 기본 정책이 [이전 기본 정책](#default-policy-before-july-31-2017)과 동일한 상태로 남아 있습니다.
+이러한 하위 레이블이 보호를 자동으로 구성하지 않은 경우 기본 정책이 [이전 기본 정책](#default-policy-before-july-31-2017)과 동일하게 유지됩니다.
 
-보호가 **모든 직원** 하위 레벨에 적용된 경우 Azure 포털에서 레이블로 자동 전환되는 기본 템플릿을 사용하여 보호가 구성됩니다. 이 템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
+보호가 **모든 직원** 하위 레벨에 적용된 경우 Azure Portal에서 레이블로 자동 전환되는 기본 템플릿을 사용하여 보호가 구성됩니다. 이 템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
 
 2017년 8월 30일부터 이 버전의 기본 정책에는 여러 언어의 레이블 이름 및 설명이 포함됩니다. 
 
-#### <a name="more-information-about-the-recipients-only-sub-label"></a>받는 사람만 하위 레벨에 대한 자세한 내용
+#### <a name="more-information-about-the-recipients-only-sublabel"></a>받는 사람만 하위 레벨에 대한 자세한 내용
 
 Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또는 파일 탐색기에서는 이 레이블이 표시되지 않습니다. 
 
@@ -64,7 +64,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 |극비|권한이 없는 사람들과 공유할 경우 비즈니스에 피해를 야기하는 매우 중요한 비즈니스 데이터입니다. 직원 및 고객 정보, 암호, 소스 코드 및 미리 공개된 재무 보고서 등을 예로 들 수 있습니다.|**사용**: 켜기 <br /><br />**색**: 빨간색<br /><br />**시각적 표시**: 끄기<br /><br />**조건**: 없음<br /><br />**보호**: 없음|
 
 
-### <a name="sub-labels"></a>하위 레이블
+### <a name="sublabels"></a>하위 레이블
 
 |Label|도구 설명|설정|
 |-------------------------------|---------------------------|-----------------|
@@ -84,7 +84,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 ### <a name="information-protection-bar"></a>Information Protection 표시줄
 
-|설정|값|
+|Setting|값|
 |-------------------------------|---------------------------|
 |제목|민감도|
 |도구 설명|이 콘텐츠의 현재 레이블입니다. 이 설정은 통해 조직 내부 또는 외부의 권한이 없는 사람들과 이 콘텐츠를 공유할 경우 비즈니스에 대한 위험을 식별합니다.|
@@ -92,7 +92,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 ### <a name="settings"></a>설정
 
-|설정|값|
+|Setting|값|
 |-------------------------------|---------------------------|
 |All documents and emails must have a label (applied automatically or by users)(모든 문서와 메일에 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨))|꺼짐|
 |Select the default label(기본 레이블 선택)|없음|
@@ -117,7 +117,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 |극비|권한이 없는 사람들과 공유할 경우 비즈니스에 피해를 야기하는 매우 중요한 비즈니스 데이터입니다. 직원 및 고객 정보, 암호, 소스 코드 및 미리 공개된 재무 보고서 등을 예로 들 수 있습니다.|**사용**: 켜기 <br /><br />**색**: 빨간색<br /><br />**시각적 표시**: 끄기<br /><br />**조건**: 없음<br /><br />**보호**: 없음|
 
 
-### <a name="sub-labels"></a>하위 레이블
+### <a name="sublabels"></a>하위 레이블
 
 |Label|도구 설명|설정|
 |-------------------------------|---------------------------|-----------------|
@@ -128,7 +128,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 ### <a name="information-protection-bar"></a>Information Protection 표시줄
 
-|설정|값|
+|Setting|값|
 |-------------------------------|---------------------------|
 |제목|민감도|
 |도구 설명|이 콘텐츠의 현재 레이블입니다. 이 설정은 통해 조직 내부 또는 외부의 권한이 없는 사람들과 이 콘텐츠를 공유할 경우 비즈니스에 대한 위험을 식별합니다.|
@@ -136,7 +136,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 ### <a name="settings"></a>설정
 
-|설정|값|
+|Setting|값|
 |-------------------------------|---------------------------|
 |All documents and emails must have a label (applied automatically or by users)(모든 문서와 메일에 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨))|꺼짐|
 |Select the default label(기본 레이블 선택)|없음|
@@ -157,7 +157,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 |비밀|이 데이터는 보호해야 하는 매우 민감한 비즈니스 정보를 포함합니다. 권한 없는 사용자에게 비밀 데이터를 노출하면 조직이 심각한 해를 입을 수 있습니다. 비밀 정보의 예로는 개인 식별 정보, 고객 레코드, 소스 코드, 사전 발표된 재무 보고서 등이 있습니다.|**사용**: 켜기 <br /><br />**색**: 빨간색<br /><br />**시각적 표시**: 바닥글(문서 및 메일):<br /><br /> 민감도: 비밀<br /><br />**조건**: 없음<br /><br />**보호**: 없음|
 
 
-### <a name="sub-labels"></a>하위 레이블
+### <a name="sublabels"></a>하위 레이블
 
 |Label|도구 설명|설정|
 |-------------------------------|---------------------------|-----------------|
@@ -166,7 +166,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 ### <a name="information-protection-bar"></a>Information Protection 표시줄
 
-|설정|값|
+|Setting|값|
 |-------------------------------|---------------------------|
 |제목|민감도|
 |도구 설명|정보 민감도는 사용자가 회사 내부 또는 외부의 권한 없는 사용자에게 정보를 노출하는 위험을 식별할 수 있도록 네 가지 고유 수준(공개, 내부, 기밀, 비밀)으로 구성됩니다.|
@@ -174,7 +174,7 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 ### <a name="settings"></a>설정
 
-|설정|값|
+|Setting|값|
 |-------------------------------|---------------------------|
 |All documents and emails must have a label (applied automatically or by users)(모든 문서와 메일에 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨))|꺼짐|
 |Select the default label(기본 레이블 선택)|없음|

@@ -4,7 +4,7 @@ description: "Azure 클래식 포털에서 수행했던 관리 작업을 Azure P
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 5f160d766abb4a81864ac1ff466362b8ae24027d
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 25604d8537aedb4421b460850ce34723c8047964
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Azure 클래식 포털과 관련된 작업
 
@@ -37,7 +37,7 @@ Azure 클래식 포털은 **2018년 1월 8일**에 사용 중지됩니다. 이 �
 
 |Azure 클래식 포털|Azure Portal에서 이 작업을 수행하는 방법
 |-----------|--------------------|
-|처음으로 구성 설정 액세스|1. [Azure Portal에 로그인합니다](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. 허브 메뉴에서 **새로 만들기**를 클릭한 다음 **MARKETPLACE** 목록에서 **보안 + ID**를 클릭합니다.<br /><br />3. **보안 + ID** 블레이드의 **추천 앱** 목록에서 **Azure Information Protection**을 선택합니다. 그런 다음 **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.<br /><br />이 작업으로 **Azure Information Protection** 블레이드가 만들어지며, 다음에 포털에 로그인할 때 허브 **추가 서비스** 목록에서 서비스를 선택할 수 있습니다.
+|처음으로 구성 설정 액세스|1. [Azure Portal에 로그인합니다](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. 허브 메뉴에서 **리소스 만들기**를 클릭한 다음, **MARKETPLACE** 목록에서 **보안 + ID**를 선택합니다.<br /><br />3. **보안 + ID** 블레이드의 **추천 앱** 목록에서 **Azure Information Protection**을 선택합니다. 그런 다음 **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.<br /><br />이 작업은 다음에 포털에 로그인할 때 허브의 **모든 서비스** 목록에서 서비스를 선택할 수 있도록 **Azure Information Protection** 블레이드를 만듭니다.
 |새 템플릿 만들기|보호를 적용하는 레이블을 만들고, **권한 설정**을 사용하여 권한, 만료 및 오프라인 액세스를 정의합니다. <br /><br />내부적으로 이 구성에서는 Rights Management 템플릿과 통합되는 서비스 및 응용 프로그램을 통해 액세스할 수 있는 새 사용자 지정 템플릿을 만듭니다.<br /><br />자세한 내용은 [새 템플릿 만들기](configure-policy-templates.md#to-create-a-new-template)를 참조하세요.
 |템플릿 속성 편집: <br /><br />- 템플릿 이름 및 설명<br /><br />- 사용 권한, 콘텐츠 만료 및 오프라인 액세스 설정|아직 수행하지 않은 경우 [템플릿을 레이블로 변환](configure-policy-templates.md#to-convert-templates-to-labels)한 후 다음을 수행합니다<br /><br />1. 레이블 이름 및 설명을 변경합니다.<br /><br />2. 레이블의 보호 설정을 변경하여 권한, 만료 및 오프라인 액세스 설정을 업데이트합니다.<br /><br />자세한 내용은 [Rights Management 보호에 대한 레이블 구성](configure-policy-protection.md#to-configure-a-label-for-rights-management-protection)을 참조하세요.
 |템플릿 보관|레이블 상태를 **사용 안 함**으로 설정합니다.

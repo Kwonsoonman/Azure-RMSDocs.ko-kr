@@ -4,28 +4,28 @@ description: "Azure Information Protection을 빠르게 사용해 보기 위한 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 30f86870bb2302ff61641ffa4c10e3da6b5c3f9b
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 952431771e89e934be4a725ece4f3d9cd47165fe
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="step-1-activate-protection"></a>1단계: 보호 활성화
  
 >*적용 대상: Azure Information Protection*
 
 > [!NOTE]
->이미 테넌트에 대해 Azure Rights Management 서비스를 활성화했더라도 이 단계를 완료하여 활성화 상태를 확인합니다. 지침에는 2단계에 대해 준비되도록 Azure Portal에 로그인하고 Azure Information Protection 블레이드를 만드는 방법이 포함되어 있습니다. 
+>Azure Rights Management 서비스가 테넌트에 대해 활성화되더라도 이 단계를 완료하여 활성화 상태를 확인합니다. 지침에는 2단계에 대해 준비되도록 Azure Portal에 로그인하고 Azure Information Protection 블레이드를 만드는 방법이 포함되어 있습니다.
 
-Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요한 문서와 전자 메일을 보호하고, 보호된 문서가 다른 사용자와 공유할 때 사용되는 방식을 추적할 수 있습니다. 보호를 활성화하는 방법으로는 Windows PowerShell을 사용하거나, 관리 포털을 사용하는 방법 등 여러 가지가 있습니다.
+Azure Rights Management 서비스가 활성화되면 조직의 가장 중요한 문서 및 이메일을 보호할 수 있습니다. 이러한 보호된 문서를 다른 사용자와 공유할 때 이들 문서의 사용 방식을 추적할 수도 있습니다. 
 
-이 자습서에서는 사용자에 대한 레이블을 구성하는 위치이기도 한 Azure Portal을 사용합니다. 
+보호를 활성화할 수 있는 다른 방법이 있습니다. PowerShell 및 관리 포털을 사용할 수 있습니다. 그러나 이 자습서에서는 사용자에 대한 레이블을 구성하는 위치이기도 한 Azure Portal을 사용합니다. 
 
 ## <a name="to-activate-the-azure-rights-management-service"></a>Azure Rights Management 서비스를 활성화하려면
 
@@ -33,11 +33,11 @@ Azure Rights Management 서비스가 활성화되면 조직에서 가장 중요�
     
     전역 관리자가 아닌 경우 **Information Protection 관리자** 또는 **보안 관리자**와 같은 다음 [관리 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) 중 하나를 사용할 수 있습니다.
 
-2. 허브 메뉴에서 **새로 만들기**를 클릭한 다음 **MARKETPLACE** 목록에서 **보안 + ID**를 클릭합니다. 
+2. 허브 메뉴에서 **리소스 만들기**를 클릭한 다음, **MARKETPLACE** 목록에서 **보안 + ID**를 선택합니다. 
     
 3.  **보안 + ID** 블레이드의 **추천 앱** 목록에서 **Azure Information Protection**을 선택합니다. 그런 다음 **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.
     
-    이 작업으로 **Azure Information Protection** 블레이드가 만들어지며, 다음에 포털에 로그인할 때 허브 **추가 서비스** 목록에서 서비스를 선택할 수 있습니다. 
+    이 작업은 다음에 포털에 로그인할 때 허브의 **모든 서비스** 목록에서 서비스를 선택할 수 있도록 **Azure Information Protection** 블레이드를 만듭니다. 
     
     > [!TIP] 
     > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.

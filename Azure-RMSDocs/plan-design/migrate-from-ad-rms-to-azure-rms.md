@@ -4,7 +4,7 @@ description: "AD RMS(Active Directory Rights Management Services) 배포를 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/16/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a65e1178594e14c7d8f4faaedee96d827a9412e5
-ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
+ms.openlocfilehash: 2ba3ae79308ddee15dc77700b7b660fd4bd91b49
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -140,9 +140,9 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 [**1단계: 마이그레이션 준비**](migrate-from-ad-rms-phase1.md)
 
-- **1단계: Azure RMS 관리의 관리 도구 다운로드 및 테넌트 URL 식별**
+- **1단계: AADRM PowerShell 모듈을 설치하고 테넌트 URL 식별**
 
-    마이그레이션 프로세스에서는 Azure RMS 관리의 관리 도구와 함께 설치된 Azure RMS 모듈의 PowerShell cmdlet을 하나 이상 실행해야 합니다. 또한 많은 마이그레이션 단계를 완료하려면 테넌트의 Azure Rights Management 서비스 URL을 알아야 하고, PowerShell을 사용하여 이 값을 식별할 수 있습니다.
+    마이그레이션 프로세스를 수행하려면 하나 이상의 PowerShell cmdlets을 AADRM 모듈에서 실행해야 합니다. 많은 마이그레이션 단계를 완료하려면 테넌트의 Azure Rights Management 서비스 URL을 알아야 하고, PowerShell을 사용하여 이 값을 식별할 수 있습니다.
 
 - **2단계. 클라이언트 마이그레이션에 대한 준비**
 

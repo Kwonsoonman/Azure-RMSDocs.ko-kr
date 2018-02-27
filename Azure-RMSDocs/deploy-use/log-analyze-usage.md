@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cf919749b74727412ab6fa76cc52a5c71b69efcd
-ms.sourcegitcommit: fc789ce08821e031d3a2b22d850b4318302d3585
+ms.openlocfilehash: 09d076299f70718b65bb3746486f559a880a2660
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
@@ -67,7 +67,7 @@ Azure Rights Management 서비스는 로그를 일련의 Blob으로 Azure 저장
 
 Azure 권한 관리 작업 이후 저장소 계정에 로그가 표시될 때까지 다소 시간이 걸릴 수 있습니다. 대부분의 로그는 15분 이내에 표시됩니다. 로컬 폴더, 데이터베이스 또는 맵 감소 리포지토리와 같은 로컬 저장소에 로그를 다운로드하는 것이 좋습니다.
 
-사용 현황 로그를 다운로드하려면 Windows PowerShell에 대한 Azure Rights Management 관리 모듈을 사용합니다. 설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요. 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 **2.4.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version` 
+사용 현황 로그를 다운로드하려면 Windows PowerShell에 대한 Azure Rights Management 관리 모듈을 사용합니다. 설치 지침은 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요. 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 **2.4.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version` 
 
 ### <a name="to-download-your-usage-logs-by-using-powershell"></a>PowerShell을 사용하여 사용 현황 로그를 다운로드하려면
 

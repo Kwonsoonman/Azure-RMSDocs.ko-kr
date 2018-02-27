@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c3b1662275b051ea75dcc104c4f09b5db53dbe3e
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: d8e31eb4f573a149ae39c32c89607775de61bfce
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="powershell-reference-for-custom-templates"></a>사용자 지정 템플릿에 대한 PowerShell 참조
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 07/31/2017
 > 
 > 이전에 이 PowerShell 모듈을 설치한 경우 PowerShell 창에서 다음 명령을 실행하여 버전 번호를 확인합니다. `(Get-Module aadrm -ListAvailable).Version`
 
-설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
+설치 지침은 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
 
 템플릿 만들기 및 관리를 지원하는 cmdlet
 

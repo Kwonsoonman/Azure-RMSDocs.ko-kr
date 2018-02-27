@@ -4,7 +4,7 @@ description: "Azure Information Protection의 클라우드 기반 보호 서비�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 14887bb14599b24d95a19ee111ec3ab30ea95612
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 18eff00f6b316c48dbca5a9a8ec2c2ab4e58f76c
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Azure Information Protection 보호 해제 및 비활성화
 
@@ -45,7 +45,7 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 - TPD 파일로 Azure Information Protection 테넌트 키를 가져오는 방법에 대한 자세한 내용은 [TPD(트러스트된 게시 도메인) 추가](https://technet.microsoft.com/library/cc771460.aspx)를 참조하세요.
 
-- Azure Rights Management용 Windows PowerShell 모듈을 설치하고 마이그레이션 URL을 설정하려면 [Azure Rights Management용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
+- Azure Rights Management용 Windows PowerShell 모듈을 설치하고 마이그레이션 URL을 설정하려면 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
 
 - Azure Information Protection 클라이언트에서 PowerShell을 사용하려면 [Azure Information Protection 클라이언트에서 PowerShell 사용](../rms-client/client-admin-guide-powershell.md)을 참조하세요.
 
@@ -73,7 +73,7 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
     
-    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. 초기 **Azure Information Protection** 블레이드에서 **보호 활성화**를 선택합니다. 
 

@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/11/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 198698bbef8fbb778545c2599798afd1255a01bc
-ms.sourcegitcommit: 45c23b3b353ad0e438292cb1cd8d1b13061620e1
+ms.openlocfilehash: c74bbf88adced03ba73c2431c4c3ccd2ea3359d1
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="migration-phase-1---preparation"></a>마이그레이션 1단계 - 준비
 
@@ -25,11 +25,11 @@ ms.lasthandoff: 10/12/2017
 AD RMS에서 Azure Information Protection으로 마이그레이션 1단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 1~3단계를 설명하고 사용자에게 아무런 영향을 주지 않으면서 마이그레이션을 위한 환경을 준비합니다.
 
 
-## <a name="step-1-download-the-azure-rights-management-administration-tool-and-identify-your-tenant-url"></a>1단계: Azure Rights Management 관리 도구 다운로드 및 테넌트 URL 식별
+## <a name="step-1-install-the-aadrm-powershell-module-and-identify-your-tenant-url"></a>1 단계: AADRM PowerShell 모듈을 설치하고 테넌트 URL 식별
 
-Microsoft 다운로드 센터로 이동하여 Windows PowerShell용 Azure Rights Management 관리 모듈이 포함된 [Azure Rights Management 관리 도구](https://go.microsoft.com/fwlink/?LinkId=257721)를 다운로드합니다. Azure RMS(Azure Rights Management)는 Azure Information Protection에 대한 데이터 보호를 제공하는 서비스입니다.
+Azure Information Protection을 위한 데이터 보호를 제공하는 서비스를 구성하고 관리할 수 있도록 AADRM 모듈을 설치합니다.
 
-도구를 설치합니다. 지침은 [Azure Rights Management용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
+자세한 지침은 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 > [!NOTE]
 > 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version` 이상인지 확인합니다.

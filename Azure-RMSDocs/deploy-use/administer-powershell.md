@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 597590dbf33dd43329d27ccadf081e5e8d9fd0b6
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: cdd35669360b172d456254c1e8e9f1d980117cdb
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
 
@@ -29,7 +29,7 @@ PowerShell을 사용하여 Azure Information Protection에 대한 Azure Rights M
 이 모듈에 대해 사용 가능한 cmdlet의 전체 목록과 각 cmdlet에 대한 자세한 내용은 [AADRM](/powershell/module/aadrm/?view=azureipps#aadrm)을 참조하세요.
 
 > [!NOTE]
-> PowerShell 모듈을 설치해야 하려면 [Azure Rights Management용 Windows PowerShell 설치](install-powershell.md)를 참조하세요.
+> 이 PowerShell 모듈을 설치하려면 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
 
 Azure Information Protection 클라이언트는 이 서비스 쪽 PowerShell 모듈 외에도 보조 PowerShell 모듈인 **AzureInformationProtection**을 설치합니다. 이 클라이언트 모듈은 여러 파일을 분류하고 보호하므로 예를 들어 폴더의 모든 파일을 대량으로 보호할 수 있습니다. 자세한 내용은 관리자 가이드에서 [Azure Information Protection 클라이언트에서 PowerShell 사용](../rms-client/client-admin-guide-powershell.md)을 참조하세요.
 

@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a6ca8145768559a556b051974f59620a0750c660
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 714afa8c839d91ba61043a643433c5045a4aad7d
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -133,7 +133,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 Azure RMS Windows PowerShell 모듈에서 Get-AadrmConfiguration cmdlet을 실행합니다.
 
-1. 이 모듈이 컴퓨터에 설치되지 않은 경우 [Azure Rights Management용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
+1. 이 모듈이 컴퓨터에 아직 설치되지 않은 경우 [AADRM PowerShell 모듈](../deploy-use/install-powershell.md)를 참조하세요.
 
 2. **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell을 시작합니다.
 
@@ -606,7 +606,7 @@ PowerShell 세션에 있는 경우에 cmdlet 도움말을 보려면 `Get-Help <c
 
 Azure Information Protection 클라이언트를 지원하는 데 필요할 수 있는 추가 정보는 다음을 참조하세요.
 
-- [Customizations](client-admin-guide-customizations.md)(사용자 지정)
+- [사용자 지정](client-admin-guide-customizations.md)
 
 - [클라이언트 파일 및 사용 현황 로깅](client-admin-guide-files-and-logging.md)
 

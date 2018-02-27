@@ -4,17 +4,17 @@ description: "레이블에 대한 조건을 구성할 때 문서 또는 메일�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 94d7f3a743597ef61472c5b03b5b931a0c1eecd8
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: d24a38420c0ae9d543d0e9c6de54ad0ce4cbc804
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -81,7 +81,7 @@ Azure Information Protection 클라이언트의 일반 공급 버전 및 현재 
 
 1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다. 
     
-    예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. 구성하려는 레이블을 모든 사용자에게 적용하려는 경우 **Azure Information Protection - 전역 정책** 블레이드에 그대로 있습니다.
     
@@ -94,7 +94,7 @@ Azure Information Protection 클라이언트의 일반 공급 버전 및 현재 
 5. **조건** 블레이드에서 미리 정의된 조건을 사용하려면 **정보 유형**을 선택하고, 사용자 고유의 조건을 지정하려면 **사용자 지정**을 선택합니다.
     - **정보 유형**의 경우: 사용 가능한 조건 목록에서 선택한 다음 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 선택합니다.
         
-        정보 유형에서는 Office 365 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지를 사용합니다. 여러 일반적인 중요한 정보 유형 중에서 선택할 수 있으며, 이 중 일부는 특정 지역과만 관련됩니다. 자세한 내용은 Office 설명서의 [중요한 정보 유형이 찾는 내용](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)을 참조하세요. 
+        정보 유형에서는 Office 365 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지를 사용합니다. 여러 일반적인 중요한 정보 유형 중에서 선택할 수 있으며, 이 중 일부는 특정 지역과만 관련됩니다. 자세한 내용은 Office 설명서의 [중요한 정보 유형이 찾는 내용](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)을 참조하세요.
         
         Azure Portal에서 선택할 수 있는 정보 유형의 목록은 새 Office DLP 추가 기능을 포함하도록 정기적으로 업데이트됩니다. 그러나 목록은 Office 365 Security & Compliance 센터에 규칙 패키지로 정의 및 업로드한 사용자 지정 중요한 정보 유형은 제외합니다. 
         
@@ -102,7 +102,7 @@ Azure Information Protection 클라이언트의 일반 공급 버전 및 현재 
     
     - **Custom**(사용자 지정)의 경우: 따옴표와 특수 문자를 포함하여 일치시킬 이름 및 구를 지정합니다. 그런 다음 정규식으로 일치시킬지 여부, 대/소문자를 구분할지 여부, 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 지정합니다.
         
-        정규식은 Office 365 정규식(regex) 패턴을 사용합니다. 자세한 내용은 Office 설명서의 [정규식 기반 일치 정의](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2)를 참조하세요.
+        정규식은 Office 365 정규식(regex) 패턴을 사용합니다. 자세한 내용은 Office 설명서의 [정규식 기반 일치 정의](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2)를 참조하세요. 또한 부스트에서 [Perl 정규식 구문](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)을 참조하는 것이 유용할 수 있습니다.
         
 6. **최소 발생 수**와 **Count occurrence with unique value only(고유 값만 있는 발생 수)**로 변경해야 하는지 여부를 결정한 다음 **저장**을 선택합니다. 
     

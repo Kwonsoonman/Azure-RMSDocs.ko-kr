@@ -4,7 +4,7 @@ description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0696f6562cd39542c2447b8b9e897c05e8571525
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 4817736329fe78084d66467f68ea2f5392ec95e2
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activating-azure-rights-management"></a>Azure 권한 관리 활성화
 
@@ -29,14 +29,25 @@ ms.lasthandoff: 02/14/2018
 >
 > 서비스에 대한 기술 지원 및 기타 질문은 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요.
 
-Azure Information Protection의 Azure Rights Management 서비스가 테넌트에 대해 활성화되면 조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 중요한 데이터 보호를 시작할 수 있습니다. 또한 관리자는 조직에서 소유한 보호된 파일 및 전자 메일을 관리하고 모니터링할 수 있습니다. Office, SharePoint 및 Exchange 내에서 IRM(정보 권한 관리) 기능을 사용하고 중요한 파일이나 기밀 파일을 보호하려면 먼저 이 서비스를 사용하도록 설정해야 합니다.
+Azure Information Protection용 Azure Rights Management 서비스가 조직에 활성화되면, 관리자와 사용자는 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 중요한 데이터 보호를 시작할 수 있습니다. 또한 관리자는 조직에서 소유한 보호된 문서 및 이메일을 관리하고 모니터링할 수 있습니다. 
 
-Azure Rights Management 서비스를 활성화하기 전에 해결되는 비즈니스 문제, 일반적인 몇 가지 사용 사례, 작동 방식 등 서비스에 대해 자세히 알아보려면 [Azure 권한 관리란?](../understand-explore/what-is-azure-rms.md)을 참조하세요.
+
+## <a name="do-you-need-to-activate-azure-rights-management"></a>Azure Rights Management를 활성화해야 하나요?
+
+Azure Rights Management가 포함된 서비스 계획을 가지고 있는 경우, 서비스를 활성화하지 않아도 됩니다.
+
+- Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 **2018년 2 월** 또는 그 이후에 얻은 경우 서비스가 자동으로 활성화됩니다. 사용자 또는 조직의 다른 전역 관리자가 Azure Rights Management를 비활성하지 않으면 서비스를 활성화할 필요가 없습니다.
+
+- 이번 달 전에 구독을 얻은 경우 직접 서비스를 활성화해야 합니다. 
+
+Azure Information Protection의 Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자는 해당 파일에 정보 보호를 적용할 수 있으며 모든 사용자가 Azure Rights Management 서비스로 보호되는 파일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
+
+## <a name="how-to-activate-or-confirm-the-status-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 상태를 활성화하거나 확인하는 방법 
 
 > [!IMPORTANT]
 > 조직에서 사용하도록 AD RMS(Active Directory Rights Management Services)를 배포한 경우 Azure Rights Management 서비스를 활성화하지 마세요. [추가 정보](prepare-environment-adrms.md)
 
-[!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 활성화하기 전에 조직에 Azure Rights Management 데이터 보호가 포함된 서비스 계획이 있는지 확인합니다. 서비스 계획이 없는 경우 Azure Rights Management를 활성화할 수 없습니다. 다음 중 하나가 있어야 합니다.
+이 데이터 보호 솔루션을 사용하려면 조직에 Azure Information Protection에서 Azure Rights Management 서비스가 포함된 서비스 계획이 있어야 합니다. 이렇게 하지 않으면 Azure Rights Management 서비스는 활성화할 수 없습니다. 다음 중 하나가 있어야 합니다.
 
 - [Azure Information Protection 요금제](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 
 
@@ -52,13 +63,15 @@ Azure Information Protection의 Azure Rights Management 서비스가 활성화�
 
 - [Azure Portal](activate-azure.md) - 전역 관리자 계정이 필요하지 않음
 
-또는 PowerShell을 사용하여 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]를 활성화할 수 있습니다.
+또는 다음의 PowerShell 명령을 사용할 수 있습니다.
 
-1. Azure 권한 관리 관리 모듈을 설치하는 Azure 권한 관리 관리 도구를 설치합니다. 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
+1. AADRM 모듈을 설치하여 보호 서비스를 구성하고 관리합니다. 자세한 지침은 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 2. PowerShell 세션에서 [Connect-AadrmService](/powershell/module/aadrm/connect-aadrmservice)를 실행하고, 메시지가 표시되면 Azure Information Protection 테넌트에 대한 전역 관리자 계정 세부 정보를 제공합니다.
 
-3. Azure Rights Management 서비스를 활성화하는 [Enable-Aadrm](/powershell/module/aadrm/enable-aadrm)을 실행합니다.
+3. [Get-Aadrm](/powershell/aadrm/vlatest/get-aadrm)을 실행하여 Azure Rights Management 서비스가 활성화되었는지 확인합니다. **Enabled** 상태는 활성화를 확인합니다. **비활성화**는 서비스가 비활성화되었음을 나타냅니다.
+
+4. 서비스를 활성화하려면 [Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)을 실행합니다.
 
 ## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>단계적 배포용 등록 컨트롤 구성
 일부 사용자만 Azure Rights Management를 사용하여 즉시 파일을 보호할 수 있게 하려면 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 명령을 사용하여 사용자 등록 컨트롤을 구성할 수 있습니다. Azure Rights Management 서비스를 활성화하기 전이나 후에 이 명령을 실행할 수 있습니다.
@@ -88,14 +101,13 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $True
 Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 ```
 
-
 이 cmdlet 및 추가 예제에 대한 자세한 내용은 [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy) 도움말을 참조하세요.
 
 이러한 등록 컨트롤을 사용할 경우 조직의 모든 사용자는 항상 하위 사용자가 보호하는 보호된 콘텐츠를 사용할 수 있지만 클라이언트 응용 프로그램에서 자체적으로 정보 보호를 적용할 수는 없습니다. 예를 들어 Azure Rights Management 서비스가 활성화되면 자동으로 게시된 기본 템플릿 또는 사용자가 구성할 수 있는 사용자 지정 템플릿이 Office 클라이언트에 표시되지 않습니다.  Exchange 등의 서버 쪽 응용 프로그램은 같은 결과를 달성하기 위해 Rights Management 통합을 위한 자체 사용자별 컨트롤을 구현할 수 있습니다.
 
 
 ## <a name="next-steps"></a>다음 단계
-이제 조직에 대해 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 활성화했으므로 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용하여 Azure Information Protection을 사용자 및 관리자에게 배포하기 전에 수행해야 하는 다른 구성 단계가 있는지 확인합니다. 
+Azure Rights Management 서비스가 조직에 활성화되면, [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)을 사용하여 Azure Information Protection을 사용자 및 관리자에게 배포하기 전에 수행해야 하는 다른 구성 단계가 있는지 확인합니다. 
 
 예를 들어, 사용자가 파일에 정보 보호를 적용하기 쉽도록 [템플릿](configure-policy-templates.md)을 사용하고, [Rights Management 커넥터](deploy-rms-connector.md)를 설치하여 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 사용할 온-프레미스 서버를 연결하며, 모든 장치에서 모든 파일 형식 보호를 지원하는 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)를 배포할 수 있습니다. 
 

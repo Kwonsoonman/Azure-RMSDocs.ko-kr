@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 92e4f6c05378b36165db0628f14941b0ccd26cb7
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: a62c8c1c27855b25e5de69bd162d524bf1851890
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -158,7 +158,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 1. PowerShell 세션에서 먼저 [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice)를 실행하고 관리자 자격 증명을 지정하여 Azure Rights Management 서비스에 연결합니다. 그런 다음 [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration)을 실행합니다. 
  
-    Azure Rights Management 서비스용 PowerShell 모듈을 아직 설치하지 않은 경우 [Azure Rights Management용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
+    Azure Rights Management 서비스용 PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 2. 출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
 
@@ -225,7 +225,7 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 ## <a name="next-steps"></a>다음 단계
 Azure Information Protection 클라이언트를 설치했으므로 다음에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.
 
-- [Customizations](client-admin-guide-customizations.md)(사용자 지정)
+- [사용자 지정](client-admin-guide-customizations.md)
 
 - [클라이언트 파일 및 사용 현황 로깅](client-admin-guide-files-and-logging.md)
 

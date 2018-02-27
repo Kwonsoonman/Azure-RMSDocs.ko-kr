@@ -4,7 +4,7 @@ description: "다음 단계에 따라 조직에 대해 Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2017
+ms.date: 02/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 71565ddaeccda9171a6cd8775c93e2ac0785ba59
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: d0ebe0456933fd3b5940d50479038200008d9a44
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure Information Protection 배포 로드맵
 
@@ -84,7 +84,7 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 
 3. 온-프레미스 권한 관리 서비스를 사용 중인 경우: 마이그레이션을 수행하여 키, 템플릿 및 URL을 클라우드로 이동합니다. 자세한 내용은 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
-4. 문서 및 전자 메일 보호를 시작할 수 있도록 Azure Rights Management 서비스를 활성화합니다. 단계별 배포가 필요한 경우 특정 사용자로 사용을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요.
+4. 문서 및 이메일 보호를 시작할 수 있도록 Azure Rights Management 서비스가 활성화되어 있는지 확인합니다. 단계별 배포가 필요한 경우 특정 사용자로 사용을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
 원하는 경우 다음 항목을 구성할 수 있습니다.
 
@@ -114,7 +114,7 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 
 6. 온-프레미스 서버에 대한 커넥터 배포
     
-    Azure Rights Management 서비스에 사용하려는 온-프레미스 서비스가 있으면 Rights Management 커넥터를 설치 및 구성합니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
+    Azure Rights Management 서비스에 사용하려는 온-프레미스 서비스가 있으면 Rights Management 커넥터를 설치 및 구성합니다. 자세한 내용은 [Azure Rights Management 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
 ### <a name="step-6-use-and-monitor-your-data-protection-solutions"></a>6단계: 데이터 보호 솔루션 사용 및 모니터링
 이제 데이터를 보호할 준비가 되었으므로 회사에서 구성된 레이블 및 Rights Management 데이터 보호를 사용하는 방식을 로깅하세요. 이 배포 단계를 지원하기 위한 추가 정보를 보려면 다음을 참조하세요.
@@ -146,11 +146,11 @@ Azure Information Protection 사이트에서 [구독 정보](https://www.microso
 
 2. 테넌트 키를 Microsoft에서 관리하도록 할지(기본값) 아니면 직접 생성하고 관리할지(BYOK, Bring Your Own Key라고도 함)를 결정합니다. 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)을 참조하세요.
 
-3. 인터넷에 연결된 한 대 이상의 컴퓨터에 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]용 Windows PowerShell 모듈을 설치합니다. 이 단계는 지금 수행해도 되고 나중에 수행해도 됩니다. 자세한 내용은 [Azure Rights Management용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요.
+3. 인터넷에 연결된 한 대 이상의 컴퓨터에 [!INCLUDE[aad_rightsmanagement_2](../includes/aad_rightsmanagement_2_md.md)]용 Windows PowerShell 모듈을 설치합니다. 이 단계는 지금 수행해도 되고 나중에 수행해도 됩니다. 자세한 내용은 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요.
 
 4. 온-프레미스 권한 관리 서비스를 사용 중인 경우: 마이그레이션을 수행하여 키, 템플릿 및 URL을 클라우드로 이동합니다. 자세한 내용은 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
-5. 서비스 사용을 시작할 수 있도록 권한 관리를 활성화합니다. 단계별 배포가 필요한 경우 특정 사용자로 사용을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요.
+5. 문서 및 이메일 보호를 시작할 수 있도록 Azure Rights Management 서비스가 활성화되어 있는지 확인합니다. 단계별 배포가 필요한 경우 특정 사용자로 사용을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
 원하는 경우 다음 항목을 구성할 수 있습니다.
 

@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9e8b7f3bbebe50fb6f219142a17961dc8b565f6c
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: 7a3ed134c84c5293ecc2391fdaec32ccfc425910
+ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키 계획 및 구현
 
@@ -82,7 +82,7 @@ Azure Information Protection 테넌트 키란?
 
 > [!NOTE]
 
-> 추가 보호 조치로 Azure 주요 자격 증명 모음에서는 북아메리카, EMEA(유럽, 중동 및 아시아) 및 아시아 같은 지역의 데이터 센터에 별도의 보안 도메인을 사용합니다. Azure Key Vault는 Microsoft Azure 독일 및 Azure Government처럼 다른 Azure 인스턴스도 사용합니다. 
+> 추가 보호 조치로 Azure Key Vault에서는 북아메리카, EMEA(유럽, 중동 및 아시아) 및 아시아 같은 지역의 데이터 센터에 별도의 보안 도메인을 사용합니다. Azure Key Vault는 Microsoft Azure 독일 및 Azure Government처럼 다른 Azure 인스턴스도 사용합니다. 
 
 선택 사항이기는 하지만 테넌트 키가 언제, 어떻게 사용되는지를 정확하게 확인하기 위해 Azure Information Protection의 근 실시간 사용 현황 로그를 사용하기를 원할 수도 있습니다.
 
@@ -110,7 +110,7 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 |---------------|--------------------|
 |Azure Information Protection 테넌트는 Azure 구독이 있어야 합니다. 구독이 없는 경우 [무료 계정](https://azure.microsoft.com/pricing/free-trial/)을 등록할 수 있습니다. <br /><br /> HSM 보호 키를 사용하려면 Azure Key Vault 프리미엄 서비스 계층이 있어야 합니다.|Azure Active Directory 구성 및 Azure Rights Management 사용자 지정 템플릿 구성에 대한 액세스 권한을 제공하는 무료 Azure 구독(**Azure Active Directory에 액세스**)은 Azure Key Vault를 사용하기에 충분하지 않습니다. BYOK에 대해 사용할 수 있는 Azure 구독이 있는지 확인하려면 [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet을 사용하세요. <br /><br /> 1. **Run as administrator**(관리자로 실행) 옵션으로 Azure PowerShell 세션을 시작하고 다음 명령을 사용하여 Azure Information Protection 테넌트의 전역 관리자로 로그인합니다. `Login-AzureRmAccount`<br /><br />2. 다음을 입력하고 구독 이름 및 ID, Azure Information Protection 테넌트 ID에 대해 표시된 값과 상태가 활성화되어 있는지 확인합니다. `Get-AzureRmSubscription`<br /><br />값이 표시되지 않고 프롬프트로 돌아가는 경우 BYOK를 사용할 수 있는 Azure 구독이 없습니다. <br /><br />**참고**: BYOK 필수 조건 외에도, 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure Information Protection으로 마이그레이션하는 경우 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
 |온-프레미스에서 만든 HSM 보호 키를 사용하기 위해 Key Vault BYOK에 나열된 모든 필수 조건. |Azure Key Vault 설명서에서 [BYOK에 대한 필수 조건](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#prerequisites-for-byok)을 참조하세요. <br /><br /> **참고**: BYOK 필수 조건 외에도, 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure Information Protection으로 마이그레이션하는 경우 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
-|Windows PowerShell용 Azure Rights Management 관리 모듈.|설치 지침은 [Azure 권한 관리용 Windows PowerShell 설치](../deploy-use/install-powershell.md)를 참조하세요. <br /><br />이전에 이 Windows PowerShell 모듈을 설치한 경우 다음 명령을 실행하여 버전 번호가 **2.9.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version`|
+|Windows PowerShell용 Azure Rights Management 관리 모듈.|설치 지침은 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요. <br /><br />이전에 이 Windows PowerShell 모듈을 설치한 경우 다음 명령을 실행하여 버전 번호가 **2.9.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version`|
 
 Thales HSM 및 Azure 주요 자격 증명 모음과 함께 사용되는 방법에 대한 자세한 내용은 [Thales 웹 사이트](https://www.thales-esecurity.com/msrms/cloud)를 참조하세요.
 
@@ -166,7 +166,7 @@ Azure Information Protection에서 키를 사용할 수 있으려면 조직의 �
 > [!IMPORTANT]
 > 이 예에서는 "aaaabbbbcccc111122223333"이 사용할 키 버전입니다. 버전을 지정하지 않으면 경고 없이 키의 현재 버전이 사용되고 작업할 명령이 표시됩니다. 그러나 Key Vault의 키가 나중에 업데이트(갱신)되는 경우, Use-AadrmKeyVaultKey 명령을 다시 실행하더라도 Azure Rights Management 서비스에서 테넌트에 대해 작동을 중지합니다.
 >
->이 명령을 실행할 때 키 이름과 함께 키 버전을 지정하세요. Azure Key Vault cmd([Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey))를 사용하여 현재 키의 버전 번호를 가져올 수 있습니다. 예를 들면 다음과 같습니다. `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`
+>이 명령을 실행할 때 키 이름과 함께 키 버전을 지정하세요. Azure Key Vault cmd([Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey))를 사용하여 현재 키의 버전 번호를 가져올 수 있습니다. 예를 들어 `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`를 구성할 수 있습니다.
 
 Azure Information Protection에 대해 키 URL이 제대로 설정되어 있는지 확인하려면 Azure Key Vault에서 [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey)를 실행하여 키 URL을 확인할 수 있습니다.
 

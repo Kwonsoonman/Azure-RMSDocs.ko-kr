@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6b0556755597fe20755e7b798a24498a780b87b5
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: 67d38d19408c67c5da8db188395e00a7d3f9d999
+ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -63,11 +63,11 @@ Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 �
 
 1. Azure Portal에 로그인합니다.
 
-2. 허브 메뉴에서 **새로 만들기**를 클릭한 다음 **MARKETPLACE** 목록에서 **보안 + ID**를 클릭합니다. 
+2. 허브 메뉴에서 **리소스 만들기**를 클릭한 다음, **MARKETPLACE** 목록에서 **보안 + ID**를 선택합니다. 
     
 3. **보안 + ID** 블레이드의 **추천 앱** 목록에서 **Azure Information Protection**을 선택합니다. 그런 다음 **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.
     
-    이 작업으로 테넌트에 **Azure Information Protection** 블레이드가 만들어지며, 다음에 포털에 로그인할 때 허브 **추가 서비스** 목록에서 서비스를 선택할 수 있습니다. 
+    이 작업은 다음에 포털에 로그인할 때 허브의 **모든 서비스** 목록에서 서비스를 선택할 수 있도록 테넌트에 **Azure Information Protection** 블레이드를 만듭니다. 
     
     > [!TIP] 
     > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
@@ -80,7 +80,7 @@ Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 �
 
 1. Information Protection 관리자, 보안 관리자 또는 전역 관리와 같은 관리 역할 중 하나를 사용하여 Azure Portal에 로그인했는지 확인합니다. 이러한 관리 역할에 대한 자세한 내용은 [이전 섹션](#signing-in-to-the-azure-portal)을 참조하세요.
 
-2. 필요한 경우 **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **추가 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
+2. 필요한 경우 **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
     
     모든 사용자가 받는 글로벌 정책을 보고 편집할 수 있는 **Azure Information Protection - 글로벌 정책** 블레이드가 자동으로 열립니다. 
     

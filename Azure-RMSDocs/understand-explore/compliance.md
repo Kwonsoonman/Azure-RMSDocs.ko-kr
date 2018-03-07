@@ -4,7 +4,7 @@ description: "법적 정보, 규정 준수, SLA를 포함하는 Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/10/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,15 +12,31 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1157eaff62100d4c47dd00c1ef1d99ea50c064c
-ms.sourcegitcommit: e9a24fc5303b21f5eeebf16afed44db0d163ac77
+ms.openlocfilehash: ef0b40db5dbbb66d7cbf45028862576a58886051
+ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure Information Protection에 대한 규정 준수 및 지원 정보
 
 Azure Information Protection은 다른 서비스를 지원하는 동시에 다른 서비스가 있어야 작동합니다. Azure Information Protection 관련 정보를 찾고 있지만 Azure Information Protection 서비스를 사용하는 방법에 대해서는 알아보지 않으려는 경우 다음 리소스를 확인하세요.
+
+## <a name="suitability-for-different-countries"></a>다양한 국가의 적합성
+
+다양한 국가의 법률과 규정 간의 가변성, 다양한 사용 사례와 시나리오 및 다양한 비즈니스 섹터 간의 다양한 요구 사항으로 인해 Information Protection이 사용자의 국가에 적합한지 대답하는 데 도움을 줄 수 있는 법률 고문과 상의해야 합니다.
+
+그러나 법적 관리자를 도울 수 있는 몇 가지 관련 정보는 다음을 결정합니다.
+
+- Azure Information Protection은 AES 256 및 AES 128을 사용하여 문서를 암호화합니다. [추가 정보](../understand-explore/how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
+
+- Azure Information Protection에서 사용하는 모든 암호화 키는 RSA 2048비트를 사용하는 고객 관련 루트 키로 보호됩니다. 하지만 RSA 1024는 이전 버전과 호환성을 지원합니다. [추가 정보](../understand-explore/how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
+
+- "BYOK([bring your own key](../plan-design/plan-implement-tenant-key.md))"를 사용하여 고객 관련 루트 키가 Microsoft에서 관리되거나 Thales HSM의 고객에 프로비전됩니다. 또한 클라우드 기반 키를 사용하여 보호되어야 함을 나타내는 요구 사항에 영향을 받는 콘텐츠의 경우 Azure Information Protection은 "HYOK([hold your own key](../deploy-use/configure-adrms-restrictions.md))"를 사용하여 온-프레미스 키에서 제한된 기능을 지원합니다.
+
+- Azure Information Protection 서비스는 전 세계 지역 데이터 센터에서 호스팅됩니다. Azure Information Protection 키 및 정책은 원래 배포된 지역 내에 항상 남아 있습니다.
+ 
+- Azure Information Protection은 문서 콘텐츠를 클라이언트에서 Azure Information Protection 서비스로 전송하지 않습니다. 클라이언트 장치에서 콘텐츠 암호화 및 암호 해독 작업이 수행됩니다. 또는 이러한 작업은 서비스 기반 렌더링을 위해 콘텐츠를 렌더링하는 서비스 내에서 수행됩니다. [추가 정보](../understand-explore/how-does-it-work.md)
 
 ## <a name="legal-and-privacy"></a>법적 정보 및 개인 정보 보호
 

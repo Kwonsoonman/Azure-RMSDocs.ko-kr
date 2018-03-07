@@ -4,7 +4,7 @@ description: "Azure Information Protection 스캐너를 설치, 구성 및 실�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/16/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: bfe4074710bd93c92e383056f587994ec805b6c2
-ms.sourcegitcommit: 4234de57201411cd9b292492fddc683df0e6b4cc
+ms.openlocfilehash: badc9ea2db84e0537ab394ccb616c0d172469e35
+ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -202,7 +202,10 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 **Full**로 설정된 `-Type` 매개 변수와 함께 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)을 실행하여 스캐너에서 모든 파일을 다시 검사하도록 강제할 수 있습니다. 이 구성은 보고서에 모든 파일이 포함되도록 하려는 경우에 유용하며, 일반적으로 스캐너가 검색 모드로 실행될 때 사용됩니다. 전체 검사가 완료되면 검사 유형이 증분 방식으로 자동으로 변경되어 후속 검사에서 새롭거나 수정된 파일만 검사됩니다.
 
-또한 스캐너에서 새롭거나 변경된 조건이 있는 Azure Information Protection 정책을 다운로드할 때에도 모든 파일이 검사됩니다. 스캐너는 서비스 시작 시 및 매시간 정책을 새로 고칩니다.
+또한 스캐너에서 새롭거나 변경된 조건이 있는 Azure Information Protection 정책을 다운로드할 때에도 모든 파일이 검사됩니다. 스캐너는 서비스를 시작할 때, 정책이 1시간보다 오래되었을 때 및 매시간 정책을 새로 고칩니다.
+
+> [!TIP]
+> 이 1시간 간격보다 더 자주 정책을 새로 고쳐야 하는 경우(예: 테스트 기간 동안) 정책 파일 **%LocalAppData%\Microsoft\MSIP\Policy.msip**를 수동으로 삭제하고 Azure 정보 스캐너 서비스를 다시 시작합니다.
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 성능 최적화
 

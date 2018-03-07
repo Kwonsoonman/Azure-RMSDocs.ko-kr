@@ -4,7 +4,7 @@ description: "Azure 클래식 포털에서 수행했던 관리 작업을 Azure P
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 25604d8537aedb4421b460850ce34723c8047964
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 066e6e028012aa47953f0fe9ce80556f0f0ac6d4
+ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Azure 클래식 포털과 관련된 작업
 
@@ -46,7 +46,7 @@ Azure 클래식 포털은 **2018년 1월 8일**에 사용 중지됩니다. 이 �
 |템플릿 삭제|템플릿을 삭제하면 액세스할 수 없는 데이터가 될 수 있으므로 Azure Portal에서는 이 작업을 지원하지 않습니다. 그러나 레이블을 삭제한 다음 [Remove-AadrmTemplate](/powershell/module/aadrm/remove-aadrmtemplate) PowerShell cmdlet을 사용하여 템플릿을 제거할 수 있습니다. <br /><br />자세한 내용은 [Azure Information Protection에 대한 레이블을 삭제하거나 순서를 변경하는 방법](configure-policy-delete-reorder.md)을 참조하세요.
 |다중 언어 지원|**관리** 메뉴 선택에서 **언어**를 선택하여 템플릿 이름과 설명을 포함하는 사용자 지정 가능한 필드를 내보냅니다. 문자열을 번역한 다음 이러한 문자열을 포털로 가져옵니다. <br /><br />자세한 내용은 [Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿을 구성하는 방법](configure-policy-languages.md)을 참조하세요.
 |Rights Management 웹 보고서|[Get-AadrmUsageLog](/powershell/module/aadrm/Get-AadrmUsageLog) PowerShell cmdlet을 사용하여 Azure Rights Management 서비스에 대한 사용 현황 로그를 다운로드합니다. 그런 다음 이 데이터를 사용하여 사용자 지정 보고서를 만들 수 있습니다. <br /><br />자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.<br /><br />팁: 새로운 Azure Information Protection용 중앙 집중식 보고 솔루션에 대한 [Enterprise Mobility and Security 블로그(영문)](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)의 공지 사항을 확인하세요.
-|Rights Management 서비스 활성화 및 비활성화|**관리** 메뉴 옵션에서 **RMS 설정** 또는 **보호 활성화**를 선택합니다. 이 옵션의 이름을 바꾸는 중입니다.<br /><br />자세한 내용은 [Azure 포털에서 Azure Rights Management 활성화하는 방법](activate-azure.md)을 참조하세요.
+|Rights Management 서비스 활성화 및 비활성화|**관리** 메뉴 옵션에서 **보호 활성화**를 선택합니다.<br /><br />자세한 내용은 [Azure 포털에서 Azure Rights Management 활성화하는 방법](activate-azure.md)을 참조하세요.
 
 Azure Portal에서 템플릿을 편집하거나 레이블로 변환하기 전에 [Azure Portal의 템플릿 고려 사항](configure-policy-templates.md#considerations-for-templates-in-the-azure-portal)을 참조하세요.
 
@@ -59,7 +59,7 @@ Azure Portal에서 템플릿을 편집하거나 레이블로 변환하기 전에
 
 - 템플릿을 레이블로 변환하여 템플릿과 레이블을 독립적으로 관리하는 대신 단일 개체를 관리할 수 있습니다. 지침은 [템플릿을 레이블로 변환](configure-policy-templates.md#to-convert-templates-to-labels)을 참조하세요.
 
-- 다른 관리자 역할 지원: Azure 클래식 포털에 전역 관리자로 로그인하여 Azure Rights Management를 구성해야 했지만, Azure Portal에 전역 관리자, 보안 관리자 또는 Information Protection 관리자의 관리 역할이 있는 계정을 사용하여 로그인하여 Azure Information Protection을 구성할 수 있습니다. 이러한 각 역할에 대한 자세한 내용은 Azure Active Directory 설명서에서 [사용 가능한 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)을 참조하세요.
+- 다른 관리자 역할 지원: Azure 클래식 포털에 전역 관리자로 로그인하여 Azure Rights Management를 구성해야 했지만, Azure Portal에 **전역 관리자**, **보안 관리자** 또는 **Information Protection 관리자**라는 관리 역할이 있는 계정을 사용하여 로그인하여 Azure Information Protection을 구성할 수 있습니다. 이러한 각 역할에 대한 자세한 내용은 Azure Active Directory 설명서에서 [사용 가능한 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)을 참조하세요.
 
 템플릿을 만들고 관리하고 서비스를 활성화하거나 비활성화하는 PowerShell cmdlet은 변경 없이 계속 지원됩니다.
 

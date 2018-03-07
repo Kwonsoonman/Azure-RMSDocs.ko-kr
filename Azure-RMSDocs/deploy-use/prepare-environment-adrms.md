@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5ab34172a4e822373161752142d9e082014285e1
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: de42f0d87f42c304c2df906fe037816be7f2ba25
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>AD RMS(Active Directory Rights Management Services)도 배포했을 때 Azure Rights Management를 위한 환경 준비
 
@@ -24,13 +24,13 @@ ms.lasthandoff: 02/23/2018
 
 이미 AD RMS(Active Directory Rights Management Services)를 사용하고 있고 다음 시나리오 중 하나가 적용될 때 중요한 지침:
 
-- [Azure Rights Management가 포함된 구독은 2018년 2월 또는 그 이후에 구매된 것입니다](#your-subscription-was-purchased-during-or-after-february-2018).
+- [Azure Rights Management가 포함된 구독은 2018년 2월 중 또는 그 이후에 구매된 것입니다](#your-subscription-was-purchased-during-or-after-february-2018).
 
 - [Azure Portal에서 Azure Information Protection 정책을 구성할 때 보호를 활성화하는 옵션이 표시됩니다.](#you-see-an-option-to activate-azure-rights-management-when-you-configure-azure-information-protection)
 
 ## <a name="your-subscription-was-purchased-during-or-after-february-2018"></a>2018년 2월 또는 그 이후에 구독을 구매했습니다.
 
-Azure Rigths Management가 포함된 구독을 2018년 2월 또는 그 이후에 구매하는 경우 Azure Rights Management 서비스는 기본적으로 활성화됩니다. AD RMS(Active Directory Rights Management Services)도 사용하는 경우 이 조합은 호환되지 않습니다. 추가 단계가 없으면 일부 컴퓨터에서 Azure Rights Management 서비스를 자동으로 시작하고 AD RMS 클러스터에 연결할 수도 있습니다. 이 시나리오는 지원되지 않으며 불안정한 결과를 야기하므로 가능한 한 Azure Rights Management를 비활성화하는 것이 중요합니다. 
+이제 2018년 2월부터 Azure Information Protection을 포함하는 새 구독은 기본적으로 Azure Rights Management 서비스를 활성화합니다. 이 서비스가 사용자에게 자동으로 활성화되고 AD RMS(Active Directory Rights Management Services)도 사용하는 경우 이 조합은 호환되지 않습니다. 추가 단계가 없으면 일부 컴퓨터에서 Azure Rights Management 서비스를 자동으로 시작하고 AD RMS 클러스터에 연결할 수도 있습니다. 이 시나리오는 지원되지 않으며 불안정한 결과를 야기하므로 가능한 한 Azure Rights Management를 비활성화하는 것이 중요합니다. 
 
 AD RMS에서 Azure Rights Management 서비스로 컴퓨터를 이동할 준비가 되면 마이그레이션 프로세스를 시작할 수 있습니다. 마이그레이션 단계 중 하나는 서비스를 다시 활성화하는 것이지만 AD RMS에서 Azure Rights Management 서비스로 구성 정보를 내보낸 후 이 단계를 수행합니다. 이 순서는 AD RMS로 보호되는 문서와 이메일을 여전히 열 수 있도록 합니다.
 

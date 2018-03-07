@@ -4,7 +4,7 @@ description: "AD RMS에서 Azure Information Protection으로 마이그레이션
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: beda6273c306a55130223c7b4b9ed9fc4d088fac
-ms.sourcegitcommit: 228953e96609b3c5ec8deddaab91be59650d9006
+ms.openlocfilehash: d516d9c82ce0c7bfd35dbb839cd861a301c3443f
+ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>마이그레이션 4단계 - 지원 서비스 구성
 
@@ -31,9 +31,15 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 4단계에는
 
 선택한 Azure Information Protection 테넌트 키 토폴로지와 별개로 다음을 수행하세요.
 
-1. Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성하려면 [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)을 참조하세요. 
+1. Exchange Online[Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 명령을 실행합니다. 이 명령을 실행하기 위해 도움말이 필요한 경우 [Exchange Online: IRM 구성](/..deploy-use/configure-office365.md#exchange-online-irm-configuration)에서 단계별 지침을 참조하세요.
+    
+    출력에서 **AzureRMSLicensingEnabled**를 **True**로 설정했는지 확인합니다.
+    
+    - AzureRMSLicensingEnabled를 **True**로 설정하면 이 단계에서 추가 구성이 필요하지 않습니다. 
+    
+    - AzureRMSLicensingEnabled를 **False**로 설정하면 [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)에서 명령을 실행하세요. 
 
-2. Exchange Online에 대해 IRM을 사용하도록 설정하기 위한 표준 구성 외에 다음 PowerShell 명령을 실행하여 사용자가 AD RMS 보호를 사용하여 전송된 메일을 읽을 수 있도록 합니다.
+2. 다음 PowerShell 명령을 실행하여 사용자가 AD RMS 보호를 사용하여 전송된 이메일을 읽을 수 있도록 합니다.
 
     *\<yourcompany.domain>*을 조직 도메인 이름으로 대체합니다.
 

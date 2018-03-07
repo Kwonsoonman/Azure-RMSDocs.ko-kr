@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/14/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 78d6e75b432635420405f9cb7280c5e2548b65f2
-ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
+ms.openlocfilehash: a6316872d3d3d0987da731a634c13fc4f4a0887b
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -24,7 +24,7 @@ ms.lasthandoff: 02/15/2018
 
 Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
-이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Enterprise Mobility 및 보안 블로그](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services&content-type=updates)의 월간 설명서 업데이트 공지에 등록됩니다.
+이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)의 월간 설명서 업데이트 공지에 등록됩니다.
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Azure Information Protection과 Azure Rights Management의 차이는 무엇인가요?
 
@@ -37,7 +37,7 @@ Azure Information Protection은 조직의 문서와 메일을 분류하고, 레�
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>Azure Information Protection을 사용하려면 어떤 구독이 필요하며, 포함된 기능은 무엇인가요?
 Azure Information Protection 사이트의 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 참조하세요. 
 
-Rights Management를 포함하는 Office 365 구독이 있는 경우 **기능** 페이지에서 [Azure Information Protection 라이선싱 데이터시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)를 다운로드하세요.
+Rights Management를 포함하는 Office 365 구독이 있는 경우 [Azure Information Protection 라이선싱 데이터시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)를 다운로드하세요. 여기에는 라이선스에 대한 질문과 대답도 포함됩니다.
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure Information Protection 클라이언트는 분류 및 레이블이 포함된 구독에만 사용할 수 있나요?
 
@@ -106,7 +106,7 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 
 Azure Information Protection의 레이블을 사용하면 문서와 전자 메일이 온-프레미스에 있든 클라우드에 있든 상관 없이 일관성 있는 분류 및 보호 정책을 적용할 수 있습니다. 이 분류 및 보호는 콘텐츠가 저장된 위치 또는 이동된 방법과 무관합니다. [Office 365 Security & Compliance의 레이블](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)을 사용하면 해당 콘텐츠가 Office 365 서비스에 있는 경우 감사 및 보존을 위해 문서와 전자 메일을 분류할 수 있습니다. 
 
-현재 이러한 레이블은 개별적으로 적용 및 관리되지만, Microsoft는 Azure Information Protection, Office 365, Microsoft Cloud App Security 및 Windows Information Protection을 포함하는 여러 서비스를 위한 포괄적이고 통합 레이블링 전략을 달성하기 위해 노력하고 있습니다. 이 동일한 레이블 스키마 및 저장소는 소프트웨어 공급 업체에서도 사용할 수 있습니다. 자세한 내용은 Microsoft Ignite 2017 세션 [Microsoft Information Protection 기능을 사용하여 전체 데이터 수명 주기 보호](https://myignite.microsoft.com/videos/55397)를 참조하세요.
+현재 이러한 레이블은 개별적으로 적용 및 관리되지만, Microsoft는 Azure Information Protection, Office 365, Microsoft Cloud App Security 및 Windows Information Protection을 포함하는 여러 서비스를 위한 포괄적이고 통합 레이블링 전략을 달성하기 위해 노력하고 있습니다. MIP("Microsoft Information Protection")라고 하는 이 전략을 들어보았을 수 있습니다. 이 동일한 레이블 스키마 및 저장소는 소프트웨어 공급 업체에서도 사용할 수 있습니다. 자세한 내용은 [Office 365 및 Azure Information Protection에 제공될 일관된 레이블 지정 및 보호 정책](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Consistent-labeling-and-protection-policies-coming-to-Office-365/ba-p/161553) 블로그 게시물을 참조하세요.
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?
 
@@ -133,8 +133,15 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 
 기술 설명서에는 예정된 릴리스에 대한 정보가 없습니다. 이러한 종류의 정보와 릴리스 발표에 대해서는 [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)에서 최신 업데이트를 받으세요. 관심이 있는 Office 릴리스의 경우에는 [Office 블로그](https://blogs.office.com/)도 꼭 확인하세요.
 
-## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>법적 정보, 규정 준수, SLA 등의 Azure Information Protection 관련 지원 정보는 어디서 찾을 수 있나요?
+## <a name="is-azure-information-protection-suitable-for-my-country"></a>Azure Information Protection이 내 국가에 적합한가요?
 
+국가마다 다양한 요구 사항 및 규정이 있습니다. 조직에 대한 이 질문에 대답하려면 [다양한 국가의 적합성](../understand-explore/compliance.md#suitability-for-different-countries)을 참조하세요.
+
+## <a name="how-can-azure-information-protection-help-with-gdpr"></a>GDPR에서 Azure Information Protection을 활용하려면 어떻게 하나요?
+
+GDPR(일반 데이터 보호 규정)을 충족하기 위한 Azure Information Protection의 활용 방법을 확인하려면 비디오에서 [Microsoft 365에서는 GDPR에 도움이 되는 Information Protection 전략을 제공합니다.](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr) 블로그 게시물 공지를 참조하세요.
+
+## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>법적 정보, 규정 준수, SLA 등의 Azure Information Protection 관련 지원 정보는 어디서 찾을 수 있나요?
 [Azure Information Protection에 대한 규정 준수 및 지원 정보](../understand-explore/compliance.md)를 참조하세요.
 
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>Azure Information Protection에 대한 문제를 보고하거나 의견을 보낼 수 있나요?

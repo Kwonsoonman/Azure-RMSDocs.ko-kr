@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4817736329fe78084d66467f68ea2f5392ec95e2
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: d521b105b3cc8077a5e30a825007e18f9b5a59f0
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="activating-azure-rights-management"></a>Azure 권한 관리 활성화
 
@@ -36,7 +36,7 @@ Azure Information Protection용 Azure Rights Management 서비스가 조직에 �
 
 Azure Rights Management가 포함된 서비스 계획을 가지고 있는 경우, 서비스를 활성화하지 않아도 됩니다.
 
-- Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 **2018년 2 월** 또는 그 이후에 얻은 경우 서비스가 자동으로 활성화됩니다. 사용자 또는 조직의 다른 전역 관리자가 Azure Rights Management를 비활성하지 않으면 서비스를 활성화할 필요가 없습니다.
+- Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 **2018년 2월** 말 이후에 얻은 경우 서비스가 자동으로 활성화됩니다. 사용자 또는 조직의 다른 전역 관리자가 Azure Rights Management를 비활성하지 않으면 서비스를 활성화할 필요가 없습니다.
 
 - 이번 달 전에 구독을 얻은 경우 직접 서비스를 활성화해야 합니다. 
 

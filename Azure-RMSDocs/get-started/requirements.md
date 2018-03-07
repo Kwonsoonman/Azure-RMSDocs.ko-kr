@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/22/2018
+ms.date: 02/26/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9496696791c343b01f5c311cb140333bcbbe7b2c
-ms.sourcegitcommit: eeeb1123349ab5e7eb2d352509670af6217123de
+ms.openlocfilehash: f256d8d972c8f74152f40b92bc5adb8bbc340fc7
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -26,14 +26,20 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 
 ## <a name="subscription-for-azure-information-protection"></a>Azure Information Protection 구독
 
-분류, 레이블 지정 및 보호를 사용하려면 [Azure Information Protection 계획](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)이 있어야 합니다. 
+**분류, 레이블 지정 및 보호의 경우**: [Azure Information Protection 계획](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)이 있어야 합니다. 
 
-보호만 원할 경우 [권한 관리가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있으면 됩니다.
+**보호 전용의 경우**: [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다.
 
 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하려면 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 검토하세요.
 
-> [!NOTE]
-> 구독 또는 라이선스에 대한 질문이 있는 경우 이 페이지에 게시하지 말고, Microsoft 계정 관리자 또는 [Microsoft 지원](information-support.md#to-contact-microsoft-support)에 문의하세요.
+> [!TIP]
+> 개인 이메일 주소에 보호된 이메일을 보내려면, Office 365 계획 또는 Exchange Online 독립 실행형 계획이 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 지원하는지 확인하세요. 예: Gmail, Yahoo 및 Microsoft 다음 리소스를 확인합니다.
+>
+> [Exchange Online 서비스 설명](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
+>
+> [Office 365 Education](https://technet.microsoft.com/library/mt844095.aspx)
+
+구독 또는 라이선스에 대한 질문이 있는 경우 이 페이지에 게시하지 말고, Microsoft 계정 관리자 또는 [Microsoft 지원](information-support.md#to-contact-microsoft-support)에 문의하세요.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 

@@ -4,17 +4,17 @@ description: "Rights Management 보호를 사용하도록 레이블을 구성하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: e4f4ced3495af71cd36caf8fc54258cd77befd99
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: a00c6e669f01a8166b53ae1ae0a5a63737253d61
+ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -60,10 +60,14 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
 4. **Label**(레이블) 블레이드에서 **Set permissions for documents and emails containing this label**(이 레이블을 포함하는 문서 및 메일에 대한 사용 권한 설정)로 이동하고 다음 옵션 중 하나를 선택합니다.
     
     - **Not configured**(구성되지 않음): 레이블이 현재 보호를 적용하도록 구성되어 있는데 선택한 레이블에 더 이상 보호를 적용하지 않으려면 이 옵션을 선택합니다. 11단계로 이동합니다.
+        
+        이전에 구성된 보호 설정은 보관된 보호 템플릿으로 유지되고, 옵션을 **보호**로 변경하는 경우 다시 표시됩니다. Azure Portal에 이 템플릿을 표시하지 않지만 필요한 경우 [PowerShell](configure-templates-with-powershell.md)을 사용하여 템플릿을 관리할 수 있습니다. 이 동작은 콘텐츠에 이전에 적용된 보호 설정을 가진 이 레이블이 포함되는 경우 계속 액세스할 수 있음을 의미합니다.
     
     - **Protect**(보호): 보호를 적용하려면 이 옵션을 선택한 다음 5단계로 이동합니다.
     
     - **보호 제거**: 문서 또는 메일이 보호되는 경우 보호를 제거하려면 이 옵션을 선택합니다. 11단계로 이동합니다.
+        
+        이전에 구성된 보호 설정은 보관된 보호 템플릿으로 유지되고, 옵션을 **보호**로 변경하는 경우 다시 표시됩니다. Azure Portal에 이 템플릿을 표시하지 않지만 필요한 경우 [PowerShell](configure-templates-with-powershell.md)을 사용하여 템플릿을 관리할 수 있습니다. 이 동작은 콘텐츠에 이전에 적용된 보호 설정을 가진 이 레이블이 포함되는 경우 계속 액세스할 수 있음을 의미합니다.
         
         이 옵션이 있는 레이블을 적용하려는 사용자는 Rights Management 보호를 제거할 수 있는 권한이 있어야 합니다. 이 요구 사항은 사용자에게 **내보내기** 또는 **모든 권한** [사용 권한](../deploy-use/configure-usage-rights.md)이 있어야 한다는 의미입니다. 또는 모든 권한 사용 권한을 가지고 있거나 Rights Management 소유자(자동으로 모든 권한 사용 권한 부여) 또는 [Azure Rights Management의 슈퍼 사용자](../deploy-use/configure-super-users.md)여야 합니다. 기본 Azure Rights Management 템플릿에는 사용자가 보호를 제거할 수 있는 사용 권한이 포함되어 있지 않습니다. 
         
@@ -113,7 +117,7 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
     필요한 경우 이제 사용자 권한이 있는 두 번째 사용자와 그룹 집합을 추가할 수 있습니다. 각각의 권한과 함께 모든 사용자와 그룹을 지정할 때까지 반복합니다.
 
     >[!TIP]
-    >**콘텐츠 복사 및 추출** 사용자 지정 권한을 추가하여 데이터 복구 관리자 또는 정보를 복구해야 하는 다른 역할의 직원에게 이 권한을 부여하는 것이 좋습니다. 이러한 사용자는 이 레이블이나 템플릿을 사용하여 보호될 파일과 메일에서 필요에 따라 보호를 제거할 수 있습니다. 문서 또는 메일의 권한 수준에서 보호를 제거하는 기능은 [슈퍼 사용자 기능](configure-super-users.md)을 사용하는 경우보다 세분화된 제어를 제공합니다.
+    >**다른 이름으로 저장, 내보내기(EXPORT)** 사용자 지정 권한을 추가하여 데이터 복구 관리자 또는 정보를 복구해야 하는 다른 역할의 직원에게 이 권한을 부여하는 것이 좋습니다. 이러한 사용자는 이 레이블이나 템플릿을 사용하여 보호될 파일과 메일에서 필요에 따라 보호를 제거할 수 있습니다. 문서 또는 메일의 권한 수준에서 보호를 제거하는 기능은 [슈퍼 사용자 기능](configure-super-users.md)을 사용하는 경우보다 세분화된 제어를 제공합니다.
     
     지정한 모든 사용자와 그룹을 위해 **보호** 블레이드에서 이제 다음 설정을 변경할지 확인합니다. 사용 권한과 마찬가지로 이러한 설정은 [Rights Management 발급자 또는 Rights Management 소유자](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)나 사용자가 할당한 [슈퍼 사용자](configure-super-users.md)에게는 적용되지 않습니다.
     
@@ -225,6 +229,8 @@ Exchange에서 IRM(정보 권한 관리)을 구성하지 않고도 사용자가 
 이 레이블은 Outlook에 제한될 수 없지만 전달 금지를 사용하는 것보다 제한적이지 않은 제어를 제공합니다. 예를 들어 받는 사람이 전자 메일 또는 첨부 파일을 복사하거나 첨부 파일을 인쇄하고 저장할 수 있도록 합니다.
 
 Azure AD에 계정이 없는 외부 사용자를 지정하는 경우, 이 레이블을 문서에 사용하지 않고 이메일에만 사용하도록 사용자에게 지시해야 합니다. 또한 이러한 외부 사용자를 지원하려면 [Office 365 메시지 암호화의 새로운 기능](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)에 Exchange Online을 구성해야 합니다.  
+> [!NOTE]
+> Exchange Online은 새로운 옵션인 [암호화 전용](configure-usage-rights.md#encrypt-only-option-for-emails)을 롤아웃합니다. 레이블 구성에 이 옵션이 제공되지 않습니다.
 
 사용자가 **받는 사람** 상자에서 전자 메일 주소를 지정하는 경우 주소가 레이블 구성에 지정한 동일한 사용자를 위한 것이어야 합니다. 사용자가 그룹에 속하고 둘 이상의 이메일 주소가 있으므로 지정한 이메일 주소는 해당 권한에 지정한 이메일 주소와 일치할 필요가 없습니다. 그러나 동일한 이메일 주소를 지정하는 것이 받는 사람에게 권한을 성공적으로 부여하는 가장 쉬운 방법입니다. 사용자에게 사용 권한을 부여하는 방법에 대한 자세한 내용은 [Azure Information Protection을 위해 사용자 및 그룹 준비](../plan-design/prepare.md)를 참조하세요. 
 

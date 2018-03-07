@@ -4,14 +4,14 @@ description: "Azure Information Protection은 사용자 지정 가능한 기본 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1b45faa5-0c9c-40d6-910a-f117e7b6e8a3
-ms.openlocfilehash: 5fb49e5472ea200a7c19e240585940bcf440278c
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 8628fa5b17659a49ff9f63ae6dad32f073e8ced6
+ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/23/2018
@@ -23,6 +23,8 @@ ms.lasthandoff: 02/23/2018
 Azure Information Protection은 사용자 지정 가능한 기본 레이블과 함께 제공되지만 사용자의 Information Protection 표시줄에 표시되는 고유의 레이블을 만들 수도 있습니다.
 
 추가 수준의 분류가 필요한 경우 새 레이블 또는 새 하위 레이블을 기존 레이블에 추가할 수 있습니다. 예를 들어 [기본 정책](configure-policy-default.md)의 마지막 레이블은 하위 레이블을 포함합니다.
+
+레이블에 대한 첫 번째 하위 레이블을 만들 때 사용자는 더 이상 원래 부모 레이블을 선택할 수 없습니다. 필요한 경우 사용자가 동일한 설정을 적용할 수 있도록 부모 레이블 설정을 다시 만드는 새 하위 레이블을 만듭니다.
 
 다음 지침을 사용하여 Azure Information Protection 정책에 새 레이블을 추가할 수 있습니다.
 

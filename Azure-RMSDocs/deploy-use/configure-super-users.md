@@ -4,7 +4,7 @@ description: "Azure Rights Management에서 조직을 위해 보호하는 데이
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1bee86e8aa119e4ac2c2ef76bd778b6230d78080
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 686b1dc007da43ca5fbd68e510a3bff374867431
+ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
 
@@ -36,6 +36,8 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 
 - 감사, 법률 또는 기타 준수상의 이유로 인해 대량으로 파일의 암호를 해독해야 하는 경우
 
+## <a name="configuration-for-the-super-user-feature"></a>슈퍼 사용자 기능의 구성
+
 기본적으로 슈퍼 사용자 기능은 사용하도록 설정되지 않으며 이 역할은 사용자에게 할당되지 않습니다. Exchange Server용 Rights Management 커넥터를 구성하는 경우에는 이 기능이 자동으로 사용하도록 설정되지만 Exchange Online, SharePoint Online 또는 SharePoint Server를 실행하는 표준 서비스에는 이 기능이 필요하지 않습니다.
 
 슈퍼 사용자 기능을 수동으로 사용하도록 설정해야 하는 경우 PowerShell cmdlet [Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature)를 사용합니다. 그런 다음 [Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser) cmdlet 또는 [Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup) cmdlet을 사용하여 필요에 따라 사용자 또는 서비스 계정을 할당하고, 필요에 따라 이 그룹에 사용자 또는 다른 그룹을 추가합니다. 
@@ -45,15 +47,21 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 > [!NOTE]
 > [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
 
-슈퍼 사용자 기능에 대한 보안 모범 사례
+슈퍼 사용자 기능을 사용할 경우나 사용자를 슈퍼 사용자로 추가할 경우 문제가 되지 않습니다. 예를 들어 목요일에 기능을 사용한 다음, 금요일에 사용자를 추가하는 경우 해당 사용자는 해당 주가 시작될 때 즉시 보호된 콘텐츠를 열 수 있습니다.
+
+## <a name="security-best-practices-for-the-super-user-feature"></a>슈퍼 사용자 기능에 대한 보안 모범 사례
 
 - Office 365 또는 Azure Information Protection 테넌트의 전역 관리자로 할당되거나 [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) cmdlet을 사용하여 GlobalAdministrator 역할이 할당된 관리자를 제한하고 모니터링합니다. 이러한 사용자는 슈퍼 사용자 기능을 사용하도록 설정하고 사용자(및 자신)를 슈퍼 사용자로 할당하며, 잠재적으로 조직에서 보호하는 모든 파일의 암호를 해독할 수 있습니다.
 
-- 슈퍼 사용자로 할당된 사용자 및 서비스 계정을 개별적으로 확인하려면 [Get-AadrmSuperUser cmdlet](/powershell/module/aadrm/get-aadrmsuperuser)을 사용합니다. 슈퍼 사용자 그룹이 구성되어 있는지 여부를 확인하려면 [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperusergroup) cmdlet 및 표준 사용자 관리 도구를 사용하여 어느 사용자가 이 그룹의 구성원인지 확인합니다. 모든 관리 작업과 마찬가지로 슈퍼 기능을 사용하거나 사용하지 않도록 설정하는 작업 및 슈퍼 사용자를 추가하거나 제거하는 작업은 기록되며 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) 명령을 사용하여 감사할 수 있습니다. 슈퍼 사용자가 파일의 암호를 해독하면 이 작업이 기록되고 [사용 현황 로깅](log-analyze-usage.md)을 통해 감사할 수 있습니다.
+- 슈퍼 사용자로 할당된 사용자 및 서비스 계정을 개별적으로 확인하려면 [Get-AadrmSuperUser cmdlet](/powershell/module/aadrm/get-aadrmsuperuser)을 사용합니다. 슈퍼 사용자 그룹이 구성되어 있는지 여부를 확인하려면 [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperusergroup) cmdlet 및 표준 사용자 관리 도구를 사용하여 어느 사용자가 이 그룹의 구성원인지 확인합니다. 모든 관리 작업과 마찬가지로 슈퍼 기능을 사용하거나 사용하지 않도록 설정하는 작업 및 슈퍼 사용자를 추가하거나 제거하는 작업은 기록되며 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) 명령을 사용하여 감사할 수 있습니다. 예제는 다음 섹션을 참조하세요. 슈퍼 사용자가 파일의 암호를 해독하면 이 작업이 기록되고 [사용 현황 로깅](log-analyze-usage.md)을 통해 감사할 수 있습니다.
 
 - 일상적인 서비스에 슈퍼 사용자 기능이 필요하지 않은 경우에는 필요할 때만 이 기능을 사용하도록 설정하고 [Disable-AadrmSuperUserFeature](/powershell/module/aadrm/disable-aadrmsuperuserfeature) cmdlet를 사용하여 다시 사용하지 않도록 설정합니다.
 
-다음 로그 추출은 Get-AadrmAdminLog cmdlet을 사용한 일부 예제 항목을 보여 줍니다. 이 예제에서 Contoso Ltd의 관리자는 슈퍼 사용자 기능이 사용하지 않도록 설정되어 있음을 확인하고, Richard Simone을 슈퍼 사용자로 추가하고, Richard가 Azure Rights Management 서비스에 대해 구성된 유일한 슈퍼 사용자인지 확인한 다음, Richard가 현재 퇴사한 직원이 보호한 일부 파일의 암호를 해독할 수 있도록 슈퍼 사용자 기능을 사용하도록 설정합니다.
+### <a name="example-auditing-for-the-super-user-feature"></a>슈퍼 사용자 기능의 예제 감사
+
+다음 로그 추출은 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) cmdlet을 사용하는 일부 예제 항목을 보여줍니다. 
+
+이 예제에서 Contoso Ltd의 관리자는 슈퍼 사용자 기능이 사용하지 않도록 설정되어 있음을 확인하고, Richard Simone을 슈퍼 사용자로 추가하고, Richard가 Azure Rights Management 서비스에 대해 구성된 유일한 슈퍼 사용자인지 확인한 다음, Richard가 현재 퇴사한 직원이 보호한 일부 파일의 암호를 해독할 수 있도록 슈퍼 사용자 기능을 사용하도록 설정합니다.
 
 `2015-08-01T18:58:20    admin@contoso.com   GetSuperUserFeatureState    Passed  Disabled`
 
@@ -71,7 +79,7 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 이러한 cmdlet에 대한 자세한 내용은 Azure Information Protection 클라이언트 관리자 가이드에서 [Azure Information Protection 클라이언트에서 PowerShell 사용](../rms-client/client-admin-guide-powershell.md)을 참조하세요.
 
 > [!NOTE]
-> AzureInformationProtection 모듈은 RMS 보호 도구와 함께 설치되는 RMS 보호 PowerShell 모듈을 대체합니다. 이러한 두 모듈은 서로 다르며 주 [Azure Rights Management용 Windows PowerShell 모듈](administer-powershell.md)을 보완합니다. AzureInformationProtection 모듈은 Azure Information Protection, Azure Information Protection용 Azure RMS(Azure Rights Management Service) 및 AD RMS(Active Directory Rights Management Services)를 지원합니다.
+> AzureInformationProtection 모듈은 RMS 보호 도구와 함께 설치되는 RMS 보호 PowerShell 모듈을 대체합니다. 이러한 두 모듈은 서로 다르며 [Azure Rights Management의 PowerShell 모듈](administer-powershell.md)을 보완합니다. AzureInformationProtection 모듈은 Azure Information Protection, Azure Information Protection용 Azure RMS(Azure Rights Management Service) 및 AD RMS(Active Directory Rights Management Services)를 지원합니다.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

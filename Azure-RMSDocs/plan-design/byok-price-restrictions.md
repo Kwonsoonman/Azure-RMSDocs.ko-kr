@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 614adfa0aca5b65750704d45f52355780c19c137
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: 6e0f63857e3b11af82dae18c23080aa849a9d03b
+ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 02/12/2018
 
 Azure Information Protection을 포함하는 구독이 있는 조직은 Azure Information Protection 테넌트를 구성하여 추가 요금 없이 고객 관리 키(BYOK)를 사용하고 [사용 현황을 기록](../deploy-use/log-analyze-usage.md)할 수 있습니다. 
 
-키는 Azure 구독이 필요한 Azure Key Vault에 저장해야 합니다. HSM 보호 키를 사용하려면 Azure Key Vault 프리미엄 서비스 계층을 사용해야 합니다. Azure 주요 자격 증명 모음의 키를 사용하면 월별 요금이 발생합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/en-us/pricing/details/key-vault/) 페이지를 참조하세요.
+키는 Azure 구독이 필요한 Azure Key Vault에 저장해야 합니다. HSM 보호 키를 사용하려면 Azure Key Vault 프리미엄 서비스 계층을 사용해야 합니다. Azure 주요 자격 증명 모음의 키를 사용하면 월별 요금이 발생합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/pricing/details/key-vault/) 페이지를 참조하세요.
 
 Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용하는 경우, Azure Rights Management Service에서만 사용할 수 있도록 이 키에 대한 전용 Key Vault를 사용하는 것이 좋습니다. 이 구성은 다른 서비스의 호출이 Azure Rights Management 서비스에 대한 응답 시간을 단축시킬 수 있는 키 자격 증명 모음에 대한 [서비스 제한](/azure/key-vault/key-vault-service-limits)을 초과하지 않도록 합니다.  
 

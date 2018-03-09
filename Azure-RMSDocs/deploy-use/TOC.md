@@ -19,7 +19,7 @@
 ### [레이블 삭제 또는 순서 변경](configure-policy-delete-reorder.md)
 ### [레이블 변경](configure-policy-change-label.md)
 ### [보호 구성](configure-policy-protection.md)
-#### [HYOK 제한](configure-adrms-restrictions.md)
+#### [HYOK](configure-adrms-restrictions.md)
 ### [시각적 표시 구성](configure-policy-markings.md)
 ### [조건 구성](configure-policy-classification.md)
 ### [범위 지정 정책 구성](configure-policy-scope.md)

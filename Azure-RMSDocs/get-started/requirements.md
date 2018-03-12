@@ -4,7 +4,7 @@ description: "Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/26/2018
+ms.date: 03/07/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f256d8d972c8f74152f40b92bc5adb8bbc340fc7
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: 20726f99a10328fac777dc22cb59372db0ab384d
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -26,11 +26,11 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 
 ## <a name="subscription-for-azure-information-protection"></a>Azure Information Protection 구독
 
-**분류, 레이블 지정 및 보호의 경우**: [Azure Information Protection 계획](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)이 있어야 합니다. 
+**분류, 레이블 지정 및 보호의 경우**: [Azure Information Protection 계획](https://azure.microsoft.com/pricing/details/information-protection/)이 있어야 합니다. 
 
-**보호 전용의 경우**: [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다.
+**보호 전용의 경우**: [Azure Information Protection이 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다.
 
-조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하려면 Azure Information Protection 사이트에서 [구독 정보](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 및 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 검토하세요.
+조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하려면 [Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 기능 목록을 검토합니다.
 
 > [!TIP]
 > 개인 이메일 주소에 보호된 이메일을 보내려면, Office 365 계획 또는 Exchange Online 독립 실행형 계획이 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 지원하는지 확인하세요. 예: Gmail, Yahoo 및 Microsoft 다음 리소스를 확인합니다.

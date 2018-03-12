@@ -4,7 +4,7 @@ description: "Microsoft에서 Azure Information Protection용 테넌트 키를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5aaf4393e39412a8c8b18678f4edea7a61c148dc
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: dea6fffc32876b548e5daa33a76e7891088f1e9b
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 
@@ -103,9 +103,9 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 
 |문제 설명|가능한 대응 방법|
 |------------------------|-------------------|
-|테넌트 키가 유출되었습니다.|테넌트 키를 다시 입력합니다. 이 문서에서 [테넌트 키 다시 입력](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) 섹션을 참조하세요.|
+|테넌트 키가 유출되었습니다.|테넌트 키를 다시 입력합니다. 이 문서에서 [테넌트 키 다시 입력](#rekey-your-tenant-key) 섹션을 참조하세요.|
 |권한이 없는 개인이나 맬웨어가 테넌트 키 사용 권한을 확보했으나 키 자체가 유출되지는 않았습니다.|이 경우에는 테넌트 키를 다시 입력해도 도움이 되지 않으며 근본 원인을 분석해야 합니다. 프로세스 또는 소프트웨어 버그로 인해 권한이 없는 개인이 액세스 권한을 얻은 경우에는 해당 상황을 해결해야 합니다.|
-|RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure Information Protection을 업데이트하고 모든 고객에게 테넌트 키를 갱신하도록 지시해야 합니다.|
+|RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure Information Protection을 업데이트하고 모든 고객에게 테넌트 키를 다시 생성하도록 지시해야 합니다.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

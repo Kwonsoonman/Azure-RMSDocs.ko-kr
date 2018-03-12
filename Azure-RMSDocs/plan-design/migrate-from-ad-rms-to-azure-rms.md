@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2ba3ae79308ddee15dc77700b7b660fd4bd91b49
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 6ed025029e3d901a4ee2090bbc9334e396da646c
+ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -97,7 +97,7 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
 
 - **HSM 보호된 키를 사용하여 고유한 Azure Information Protection 테넌트 키를 관리하려는 경우**:
 
-    - 이 선택적 구성에는 Azure 주요 자격 증명 모음 및 HSM 보호된 키를 사용하여 주요 자격 증명 모음을 지원하는 Azure 구독이 필요합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/en-us/pricing/details/key-vault/) 페이지를 참조하세요. 
+    - 이 선택적 구성에는 Azure 주요 자격 증명 모음 및 HSM 보호된 키를 사용하여 주요 자격 증명 모음을 지원하는 Azure 구독이 필요합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/pricing/details/key-vault/) 페이지를 참조하세요. 
 
 
 ### <a name="cryptographic-mode-considerations"></a>암호화 모드 고려 사항

@@ -4,7 +4,7 @@ description: "Azure Information Protection 테넌트 키를 계획 및 관리하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a3ed134c84c5293ecc2391fdaec32ccfc425910
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 05b6a4facc4158cc7e2cb7ab4067c6b19566ef69
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키 계획 및 구현
 
@@ -46,7 +46,7 @@ Azure Information Protection 테넌트 키란?
 
 조직에 가장 적합한 테넌트 키 토폴로지를 결정하세요.
 
-- **Microsoft에서 관리**: Azure Information Protection이 조직의 테넌트 키를 자동으로 생성합니다. 기본적으로 Microsoft는 이 키를 테넌트에 사용하고 테넌트 키 수명 주기에 대한 대부분의 측면을 관리합니다. 
+- **Microsoft에서 관리**: Microsoft가 조직의 테넌트 키를 자동으로 생성하며, 이 키는 Azure Information Protection에서 단독으로 사용됩니다. 기본적으로 Microsoft는 이 키를 테넌트에 사용하고 테넌트 키 수명 주기에 대한 대부분의 측면을 관리합니다. 
     
     이 옵션은 관리 오버헤드가 가장 낮은 가장 간단한 옵션입니다. 대부분의 경우 고객은 테넌트 키를 가지고 있다는 사실조차 알 필요가 없습니다. Azure Information Protection에 등록하기만 하면 나머지 키 관리 프로세스는 Microsoft에서 처리합니다.
 

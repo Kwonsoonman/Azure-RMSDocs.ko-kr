@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2cf486a5319d6addcd150351054d44db62c250b0
-ms.sourcegitcommit: 9b975e66b12a3836003c6c4de139ded4bbf370bf
+ms.openlocfilehash: 0c15bcca607992a2782611286205509377f9fd4d
+ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>마이그레이션 5단계 - 마이그레이션 후 작업
 
@@ -103,8 +103,6 @@ killall cfprefsd
 이 단계는 AD RMS 배포에서 RMS 암호화 모드 1을 사용 중이던 경우 마이그레이션이 완료될 때 권장됩니다. 키를 다시 생성하면 RMS 암호화 모드 2를 사용하는 보호가 적용됩니다. 
 
 AD RMS 배포에서 암호화 모드 2를 사용한 경우에도 새 키는 AD RMS 키에 대한 잠재적인 보안 위반으로부터 테넌트를 보호하는 데 도움이 되므로 이 단계가 여전히 권장됩니다.
-
-그러나 AD RMS와 함께 Exchange Online을 사용한 경우 키를 다시 생성하지 마세요. Exchange Online은 암호화 모드 변경을 지원하지 않습니다. 
 
 Azure Information Protection 테넌트 키를 다시 생성하면(“키 롤링”이라고도 함) 현재 활성 키가 보관되고 Azure Information Protection이 지정하는 다른 키를 사용하기 시작합니다. 이 다른 키는 Azure Key Vault에서 생성하는 새 키이거나, 테넌트에 대해 자동으로 생성된 기본 키일 수 있습니다.
 

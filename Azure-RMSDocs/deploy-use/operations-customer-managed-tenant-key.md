@@ -4,7 +4,7 @@ description: "Azure Information Protection용 테넌트 키를 직접 관리하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 47f2e19e7eed107a44ac1bed744015c878876e9f
-ms.sourcegitcommit: db0c5185aab9ba4f71b9d2aa1dd87681dfe7c1b5
+ms.openlocfilehash: 70d34253300e2bef442cdd7d8cf2c06ac8a9fd88
+ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>고객 관리: 테넌트 키 수명 주기 작업
 
@@ -59,7 +59,7 @@ Azure Information Protection에 대해 키를 다시 생성해야 하는 경우�
 ## <a name="backup-and-recover-your-tenant-key"></a>테넌트 키 백업/복구
 사용자가 테넌트 키를 관리 중이므로 Azure Information Protection을 사용하는 키를 백업해야 하는 책임이 있습니다. 
 
-Thales HSM의 온-프레미스에서 테넌트 키를 생성한 경우: 키를 백업하려면 토큰화된 키 파일, 권역 파일 및 관리자 카드를 백업합니다. Azure Key Vault에 키를 전송할 때 서비스는 서비스 노드의 오류로부터 보호하기 위해 토큰화된 키 파일을 저장합니다. 이 파일은 특정 Azure 지역 또는 인스턴스에 대해 보안 권역에 바인딩되어 있습니다. 그러나 이러한 보존이 전체 백업은 아닙니다. 예를 들어 Thales HSM 외부에서 사용할 키의 일반 텍스트 복사본이 필요한 경우 Azure Key Vault는 복구 불가능한 복사본만 보존하므로 해당 복사본을 검색할 수 없습니다.
+Thales HSM의 온-프레미스에서 테넌트 키를 생성한 경우: 키를 백업하려면 토큰화된 키 파일, 권역 파일 및 관리자 카드를 백업합니다. Azure Key Vault에 키를 전송할 때 서비스는 서비스 노드의 오류로부터 보호하기 위해 토큰화된 키 파일을 저장합니다. 이 파일은 특정 Azure 지역 또는 인스턴스에 대해 보안 권역에 바인딩되어 있습니다. 그러나 이 토큰화된 키 파일이 전체 백업은 아닙니다. 예를 들어 Thales HSM 외부에서 사용할 키의 일반 텍스트 복사본이 필요한 경우 Azure Key Vault는 복구 불가능한 복사본만 보존하므로 해당 복사본을 검색할 수 없습니다.
 
 Azure Key Vault에는 다운로드하여 파일에 저장하여 키를 백업하는 데 사용할 수 있는 [백업 cmdlet](/powershell/module/azurerm.keyvault/Backup-AzureKeyVaultKey)이 있습니다. 다운로드된 콘텐츠는 암호화되어 있으므로 Azure Key Vault 외부에서 사용할 수 없습니다. 
 
@@ -75,10 +75,10 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 
 |문제 설명|가능한 대응 방법|
 |------------------------|-------------------|
-|테넌트 키가 유출되었습니다.|테넌트 키를 다시 입력합니다. [테넌트 키 다시 입력](#rkey-your-tenant-key)을 참조하세요.|
+|테넌트 키가 유출되었습니다.|테넌트 키를 다시 입력합니다. [테넌트 키 다시 입력](#rekey-your-tenant-key)을 참조하세요.|
 |권한이 없는 개인이나 맬웨어가 테넌트 키 사용 권한을 확보했으나 키 자체가 유출되지는 않았습니다.|이 경우에는 테넌트 키를 다시 입력해도 도움이 되지 않으며 근본 원인을 분석해야 합니다. 프로세스 또는 소프트웨어 버그로 인해 권한이 없는 개인이 액세스 권한을 얻은 경우에는 해당 상황을 해결해야 합니다.|
 |현재 생성 HSM 기술에서 취약점이 발견되었습니다.|Microsoft에서 HSM을 업데이트해야 합니다. 취약점으로 인해 키가 노출되었다고 생각되면 Microsoft는 모든 고객에게 테넌트 키를 갱신할 것을 지시합니다.|
-|RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure Key Vault 또는 Azure Information Protection을 업데이트하고 모든 고객에게 테넌트 키를 갱신하도록 지시해야 합니다.|
+|RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure Key Vault 또는 Azure Information Protection을 업데이트하고 모든 고객에게 테넌트 키를 다시 생성하도록 지시해야 합니다.|
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

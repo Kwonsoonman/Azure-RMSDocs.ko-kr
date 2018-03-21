@@ -4,7 +4,7 @@ description: "PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 714afa8c839d91ba61043a643433c5045a4aad7d
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 5bd2af4da402c0096cb58bba1d44684ad73656d6
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -534,6 +534,8 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 > 이 옵션을 사용하려면 Azure Information Protection 스캐너의 GA(일반 공급) 버전 또는 현재 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
 
 다음과 같은 추가 단계 및 지침을 사용하여 파일의 레이블을 지정하고 보호하는 계정에서 초기 대화형 로그인을 방지합니다. 일반적으로 이 계정에 **로컬로 로그온** 권한을 부여할 수 없지만 **일괄 작업으로 로그온** 권한을 부여하는 경우에만 이러한 추가 단계가 필요합니다. 예를 들어 Azure Information Protection 스캐너를 실행하는 서비스 계정에 대한 사례일 수 있습니다.
+
+상위 수준 단계:
 
 1. 로컬 컴퓨터에서 PowerShell 스크립트를 만듭니다.
 

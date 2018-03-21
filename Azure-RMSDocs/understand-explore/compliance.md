@@ -4,7 +4,7 @@ description: "법적 정보, 규정 준수, SLA를 포함하는 Azure Informatio
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ef0b40db5dbbb66d7cbf45028862576a58886051
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 2980032c72905ec237dea799e8d6d13e11746df3
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure Information Protection에 대한 규정 준수 및 지원 정보
 
@@ -56,11 +56,11 @@ Azure Rights Management 서비스의 특정 인증에 대한 자세한 내용은
 
 ## <a name="service-level-agreements"></a>서비스 수준 계약
 
-- 선택한 지역에 대한 Azure Information Protection 서비스 수준 계약: [제품 라이선스 검색 페이지에서 다운로드](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=37)
+- [Azure Information Protection에 대한 SLA](https://azure.microsoft.com/support/legal/sla/information-protection/v1_0/)
 
-    - 예를 들어 **OnlineSvcsConsolidatedSLA(WW)(English)(March2016)**를 클릭하여 북미 지역에 대한 2016년 3월 서비스 수준 계약을 다운로드합니다.
+- [Azure Active Directory에 대한 SLA](https://azure.microsoft.com/en-us/support/legal/sla/active-directory/v1_0/)
 
--   Azure Active Directory의 서비스 수준 계약: [서비스 수준 계약](http://azure.microsoft.com/support/legal/sla/)
+- [Azure Key Vault에 대한 SLA](https://azure.microsoft.com/en-us/support/legal/sla/key-vault/v1_0/)
 
 ## <a name="documentation"></a>문서
 

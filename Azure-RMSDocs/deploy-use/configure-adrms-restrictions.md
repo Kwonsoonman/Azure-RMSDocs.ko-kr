@@ -4,17 +4,17 @@ description: "Azure Information Protection에서 HYOK(AD RMS) 보호를 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/08/2017
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 6167b99593bacdf9e717c3b57839440bac39ecec
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: a0329d66ee71ee815c0700a63172617d1fddf30a
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
@@ -89,13 +89,19 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
         
         - 독립 AD RMS 루트 클러스터 및 다른 포리스트의 사용자로 보호되는 콘텐츠에 액세스할 수 없는 사용자가 있는 다중 포리스트
         
-        - 각각에서 AD RMS 클러스터가 있는 다중 포리스트 각 AD RMS 클러스터는 동일한 AD RMS 클러스터를 가리키는 라이선스 URL을 공유합니다. 이 AD RMS 클러스터에서 다른 모든 AD RMS 클러스터에서 모든 TUD(신뢰할 수 있는 사용자 도메인) 인증서를 가져와야 합니다. 이 토폴로지에 대한 자세한 내용은 [신뢰할 수 있는 사용자 도메인](https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx)을 참조하세요.
+        - 각각에서 AD RMS 클러스터가 있는 다중 포리스트 각 AD RMS 클러스터는 동일한 AD RMS 클러스터를 가리키는 라이선스 URL을 공유합니다. 이 AD RMS 클러스터에서 다른 모든 AD RMS 클러스터에서 모든 TUD(신뢰할 수 있는 사용자 도메인) 인증서를 가져와야 합니다. 이 토폴로지에 대한 자세한 내용은 [트러스트된 사용자 도메인](https://technet.microsoft.com/library/dd983944(v=ws.10\).aspx)을 참조하세요.
         
     별도 포리스트에 여러 AD RMS 클러스터가 있는 경우 HYOK(AD RMS) 보호를 적용하는 글로벌 정책에서 모든 레이블을 삭제하고 각 클러스터에 대한 [범위 지정 정책](configure-policy-scope.md)을 구성합니다. 그런 다음 사용자를 둘 이상의 범위 지정 정책에 할당하게 하는 그룹을 사용하지 않도록 각 클러스터에 대한 사용자를 해당 범위 지정 정책에 할당합니다. 결과는 각 사용자에 하나의 AD RMS 클러스터에 대한 레이블이 있어야 합니다. 
     
     - [암호화 모드 2](https://technet.microsoft.com/library/hh867439.aspx): AD RMS 클러스터 속성, **일반** 탭을 확인하여 모드를 확인할 수 있습니다.
     
-    - SCP(서비스 연결 지점)가 Active Directory에 등록되어 있지 않습니다. Azure Information Protection과 함께 AD RMS 보호를 사용하는 경우 SCP가 사용되지 않습니다. AD RMS 배포에 대한 SCP를 등록한 경우 이 SCP를 제거해야만 Azure Rights Management 보호를 위한 [서비스 검색](../rms-client/client-deployment-notes.md#rms-service-discovery)이 성공합니다.
+    - 각 AD RMS 서버에 인증 URL이 구성되어 있습니다. [지침](#configuring-ad-rms-servers-to-locate-the-certification-url) 
+    
+    - SCP(서비스 연결 지점)가 Active Directory에 등록되어 있지 않습니다. Azure Information Protection과 함께 AD RMS 보호를 사용하는 경우 SCP가 사용되지 않습니다. 
+    
+        - AD RMS 배포에 대한 SCP를 등록한 경우 이 SCP를 제거해야만 Azure Rights Management 보호를 위한 [서비스 검색](../rms-client/client-deployment-notes.md#rms-service-discovery)이 성공합니다. 
+        
+        - HYOK에 대해 새 AD RMS 클러스터를 설치하는 경우에는 첫 번째 노드를 구성할 때 SCP를 등록하는 단계를 건너뜁니다. 노드를 추가할 때마다 AD RMS 역할을 추가하고 기존 클러스터를 연결하기 전에 서버에 인증 URL이 구성되어 있는지 확인합니다.
     
     - AD RMS 서버는 연결 중인 클라이언트에서 신뢰할 수 있는 유효한 x.509 인증서와 SSL/TLS를 사용하도록 구성되어 있습니다. 프로덕션 환경에 필요하지만 테스트 또는 평가용으로는 필요하지 않습니다.
     
@@ -115,6 +121,24 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
 배포 정보 및 AD RMS에 대한 지침은 Windows Server 라이브러리에서 [Active Directory Rights Management Services](https://technet.microsoft.com/library/hh831364.aspx)를 참조하세요. 
 
 
+## <a name="configuring-ad-rms-servers-to-locate-the-certification-url"></a>AD RMS 서버를 구성하여 인증 URL 찾기
+
+1. 클러스터의 각 AD RMS 서버에서 다음 레지스트리 항목을 작성합니다.
+
+    `Computer\HKEY_LOCAL_MACHINE\Software\Microsoft\DRMS\GICURL = "<string>"`
+    
+    \<문자열 값>에는 다음 중 하나를 지정합니다.
+    
+    - SSL/TLS를 사용하는 AD RMS 클러스터의 경우:
+
+            https://<cluster_name>/_wmcs/certification/certification.asmx
+    
+    - SSL/TLS를 사용하지 않는 AD RMS 클러스터의 경우(테스트 네트워크에만 해당):
+        
+            http://<cluster_name>/_wmcs/certification/certification.asmx
+
+2. IIS를 다시 시작합니다.
+
 ## <a name="locating-the-information-to-specify-ad-rms-protection-with-an-azure-information-protection-label"></a>Azure Information Protection 레이블을 사용하여 AD RMS 보호를 지정하는 데 필요한 정보 찾기
 
 **HYOK(AD RMS)** 보호에 대한 레이블을 구성하는 경우 AD RMS 클러스터의 라이선스 URL을 지정해야 합니다. 또한 사용자에게 부여할 권한에 대해 구성한 템플릿을 지정하거나, 사용자가 권한 및 사용자를 정의할 수 있도록 해야 합니다. 
@@ -123,7 +147,7 @@ Active Directory Rights Management Services 콘솔에서 템플릿 GUID 및 라�
 
 - 템플릿 GUID를 찾으려면: 클러스터를 확장하고 **권한 정책 템플릿**을 클릭합니다. **분산 권한 정책 템플릿** 정보에서 사용할 템플릿의 GUID를 복사할 수 있습니다. 예: 82bf3474-6efe-4fa1-8827-d1bd93339119
 
-- 라이선스 URL을 찾으려면: 클러스터 이름을 클릭합니다. **클러스터 세부 정보**에서 **/_wmcs/licensing** 문자열을 제외하고 **라이선스**입니다. 예: https://rmscluster.contoso.com 
+- 라이선스 URL을 찾으려면: 클러스터 이름을 클릭합니다. **클러스터 세부 정보**에서 **/_wmcs/licensing** 문자열을 제외하고 **라이선스**입니다. 예를 들어 https://rmscluster.contoso.com를 구성할 수 있습니다. 
     
     인트라넷 라이선스 값뿐 아니라 엑스트라넷 라이선스 값도 있고 두 값이 서로 다른 경우: 명시적 지점 간 트러스트를 사용하여 정의한 파트너와 보호된 문서 또는 메일을 공유할 경우에만 엑스트라넷 값을 지정합니다. 그렇지 않은 경우 인트라넷 값을 사용하고 Azure Information Protection에 AD RMS 보호를 사용하는 모든 클라이언트 컴퓨터에서 인트라넷 연결을 사용하여 연결하도록 합니다(예: 원격 컴퓨터에서 VPN 연결 사용).
 

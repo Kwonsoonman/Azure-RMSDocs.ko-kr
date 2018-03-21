@@ -4,7 +4,7 @@ description: "Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/27/2018
+ms.date: 03/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: faa00eee76e6c084db1a4dfb1d477e491fae5fee
-ms.sourcegitcommit: 3e9b3c2206807e82cc4721a50862b74152906f63
+ms.openlocfilehash: 8411fd46305da69e8fe06ae3851d5066695cdc24
+ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -95,7 +95,7 @@ Windows용 Azure Portal 또는 Azure Information Protection 클라이언트에�
 
 ## <a name="do-not-forward-option-for-emails"></a>메일에 대한 전달 금지 옵션
 
-Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web Access 앱 및 Exchange 전송 규칙)에는 이메일에 대한 추가 정보 권한 보호 옵션인 **전달 금지**가 있습니다. 
+Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web Access 앱 및 Exchange 메일 흐름 규칙)에는 메일에 대한 추가 정보 권한 보호 옵션인 **전달 금지**가 있습니다. 
 
 선택할 수 있는 기본 권한 관리 템플릿처럼 이 옵션이 사용자(및 Exchange 관리자)에게 표시되지만 **전달 금지**는 템플릿이 아닙니다. 이것이 바로 Azure Rights Management의 템플릿을 보고 관리할 때 Azure 포털에서 이 옵션을 볼 수 없는 이유입니다. 대신, **전달 금지** 옵션은 사용자가 메일 수신자에게 동적으로 적용하는 권한 집합입니다.
 
@@ -116,7 +116,7 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 
 Exchange Online에서 Office 365 메시지 암호화의 새로운 기능을 사용하면 이메일 옵션인 **암호화 전용**이 가능해 집니다.
 
-이 옵션은 Exchange Online을 사용하는 테넌트(초기에는 웹에서 Outlook에만 해당) 및 전송 규칙에 대한 다른 권한 보호 옵션으로 배포됩니다. 자세한 내용은 Office 팀에서 [Office 365 메시지 암호화에서 롤아웃된 암호화](https://aka.ms/omefeb2018) 블로그 게시물 공지를 참조하세요.
+이 옵션은 Exchange Online을 사용하는 테넌트(초기에는 웹에서 Outlook에만 해당) 및 메일 흐름 규칙에 대한 다른 권한 보호 옵션으로 배포됩니다. 자세한 내용은 Office 팀에서 [Office 365 메시지 암호화에서 롤아웃된 암호화](https://aka.ms/omefeb2018) 블로그 게시물 공지를 참조하세요.
 
 이 옵션을 선택하면 이메일이 암호화되고 받는 사람을 인증해야 합니다. 그런 다음, 받는 사람은 모든 권한을 제외한 모든 사용 권한을 가집니다. 이 사용 권한 조합은 받는 사람에게 보호를 제거할 수 없다는 것을 제외하고 제한이 없다는 것을 의미합니다. 예를 들어 받는 사람은 이메일을 복사, 인쇄 및 전달할수 있습니다. 마찬가지로, 첨부되어 자동으로 보호되는 모든 Office 문서는 저장, 복사 및 인쇄할 수 있습니다.
 
@@ -165,7 +165,6 @@ Rights Management 소유자는 Windows 파일 시스템의 소유자와 독립�
 - PowerShell을 사용하여 템플릿을 구성하는 경우 사용 라이선스 유효 기간은 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) 및 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet의 *LicenseValidityDuration* 매개 변수에서 해당 값을 가져옵니다.
     
     PowerShell을 사용하여 이 설정을 구성하기 위한 자세한 내용 및 지침은 각 cmdlet에 대한 도움말을 참조하세요.
-
 
 ## <a name="see-also"></a>참고 항목
 [Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md)

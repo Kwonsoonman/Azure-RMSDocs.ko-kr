@@ -4,17 +4,17 @@ description: "Azure Information Protection에 대한 기본 정책을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: da8557be0a70cee0e7a207a8ed285f6e843ac626
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: d89acde3a2d9e4db529c429fdedf2f3ed05e2fe5
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="the-default-azure-information-protection-policy"></a>기본 Azure Information Protection 정책
 
@@ -30,7 +30,11 @@ ms.lasthandoff: 02/23/2018
 
 이 버전의 기본 정책은 2017년 7월 31일에 생성되었습니다.
 
-이 기본 정책은 정책을 만들 때 Azure Rights Management 서비스를 [활성화](activate-service.md)하는 경우에만 생성됩니다. 이 서비스가 활성화되지 않은 경우 기본 정책에서는 다음 하위 레이블에 대한 보호를 구성하지 않습니다.
+이 기본 정책은 Azure Rights Management 서비스를 활성화할 때 생성되며, 2018년 2월부터 새 테넌트에 적용됩니다. 자세한 내용은 블로그 게시물 알림인 [Improvements to the protection stack in Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection)(Azure Information Protection의 보호 스택에 대한 개선 사항)을 참조하세요.
+
+이 기본 정책은 정책을 만들기 전에 수동으로 [서비스를 활성화](activate-service.md)하는 경우에도 생성됩니다. 
+
+이 서비스가 활성화되지 않은 경우 기본 정책에서는 다음 하위 레이블에 대한 보호를 구성하지 않습니다.
 
 - **Confidential \ All Employees**
 

@@ -4,7 +4,7 @@ description: "Azure Information Protection과, 데이터 보호 서비스인 Azu
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0a351c59b9c0cb3d26b5c7e623928ecb53900f41
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 604f675b34bfdc4dddb3c36c73c13dcccae40f11
+ms.sourcegitcommit: 2749d8d41fd374a9e4e2697a684eeb2bf85082d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -51,7 +51,7 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 
 분명 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
 
-- **Information Protection관리자**(현재 미리 보기): 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Information Protection의 모든 측면을 구성할 수 있지만 다른 서비스는 구성할 수 없습니다. 이 역할을 가진 관리자는 Azure Rights Management 보호 서비스를 활성화 및 비활성화하고 보호 설정 및 레이블을 구성하며 Azure Information Protection 정책을 구성할 수 있습니다. 또한 이 역할을 가진 관리자는 모든 [AADRM 모듈의 PowerShell cmdlet](../deploy-use/administer-powershell.md)을 실행할 수 있습니다. 
+- **Information Protection 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Information Protection의 모든 측면을 구성할 수 있지만 다른 서비스는 구성할 수 없습니다. 이 역할을 가진 관리자는 Azure Rights Management 보호 서비스를 활성화 및 비활성화하고 보호 설정 및 레이블을 구성하며 Azure Information Protection 정책을 구성할 수 있습니다. 또한 이 역할을 가진 관리자는 모든 [AADRM 모듈의 PowerShell cmdlet](../deploy-use/administer-powershell.md)을 실행할 수 있습니다. 
     
     사용자에게 이 관리 역할을 할당하려면 [Azure Active Directory에서 사용자에게 관리자 역할 할당](/azure/active-directory/active-directory-users-assign-role-azure-portal)을 참조하세요.
 

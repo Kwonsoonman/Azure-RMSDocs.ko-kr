@@ -4,7 +4,7 @@ description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Infor
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9ff8109240dee992563a0dde68a4980d0ebd955e
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 9dda33998de8f37af5dd5acd1c234a8029cc6d02
+ms.sourcegitcommit: 2749d8d41fd374a9e4e2697a684eeb2bf85082d8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -48,11 +48,11 @@ Azure Information Protection P2 구독을 필요로 하는 옵션은 포털에�
 
 Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 관리하려면
 
-- 다음 링크를 사용합니다. https://portal.azure.com
+- https://portal.azure.com의 다음 링크를 참조하세요.
 
 - 다음 [관리자 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) 중 하나가 있는 계정을 사용합니다.
     
-    - **Information Protection 관리자**(현재 미리 보기 상태)
+    - **Information Protection 관리자**
 
     - **보안 관리자**
 

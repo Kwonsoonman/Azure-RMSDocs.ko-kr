@@ -4,7 +4,7 @@ description: "Azure Information Protection 스캐너를 설치, 구성 및 실�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/08/2018
+ms.date: 03/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3c15fe1e43f5a9d93ad70e6ac401592bbd41754b
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: f3c302b2379262a6dac87873cb607cf3cd408bcd
+ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -58,7 +58,7 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 
 ## <a name="install-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 설치
 
-1. 스캐너를 실행하기 위해 만든 서비스 계정을 사용하여 스캐너를 실행하는 Windows Server 컴퓨터에 로그인합니다.
+1. 스캐너를 실행하는 Windows Server 컴퓨터에 로그인합니다. 로컬 관리자 권한이 있고 SQL Server 마스터 데이터베이스에 쓸 수 있는 권한이 있는 계정을 사용합니다.
 
 2. **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell 세션을 엽니다.
 
@@ -92,15 +92,17 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
     
     이러한 응용 프로그램을 만들려면 관리자 가이드에서 [Azure Information Protection에서 비대화형으로 파일의 레이블을 지정하는 방법](../rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)에서 지침에 따릅니다.
 
-2. Windows Server 컴퓨터에서 스캐너 서비스 계정을 사용하여 로그인했다면 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)을 실행하여 이전 단계에서 복사한 값을 지정합니다.
+2. Windows Server 컴퓨터에서 사용 중인 스캐너 서비스 계정에 설치를 위한 **로컬로 로그온** 권한이 부여된 경우 이 계정으로 로그인하고 PowerShell 세션을 시작합니다. [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)을 실행하고 이전 단계에서 복사한 값을 지정합니다.
     
     ```
     Set-AIPAuthentication -webAppId <ID of the "Web app / API" application>  -webAppKey <key value generated in the "Web app / API" application> -nativeAppId <ID of the "Native" application >
     ```
+    
+    메시지가 나타나면 Azure AD의 서비스 계정 자격 증명에 대한 암호를 지정하고 **허용**을 클릭합니다.
+    
+    스캐너 서비스 계정에 설치를 위한 **로컬로 로그온** 권한을 부여할 수 없는 경우에는 관리자 가이드의 [Set-AIPAuthentication에 대한 토큰 매개 변수 지정 및 사용](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication) 섹션의 지침을 따릅니다. 
 
-3. 메시지가 나타나면 Azure AD의 서비스 계정 자격 증명에 대한 암호를 지정하고 **허용**을 클릭합니다.
-
-이제 스캐너에는 Azure AD에 인증한 토큰이 있습니다. 이 토큰은 Azure AD에서 **웹앱/API**의 구성에 따라 1년, 2년 동안 유효하거나 만료되지 않게 됩니다. 토큰이 만료되면 1~3단계를 반복해야 합니다.
+이제 스캐너에는 Azure AD에 인증한 토큰이 있습니다. 이 토큰은 Azure AD에서 **웹앱/API**의 구성에 따라 1년, 2년 동안 유효하거나 만료되지 않게 됩니다. 토큰이 만료되면 1단계와 2단계를 반복해야 합니다.
 
 이제 검색할 데이터 저장소를 지정할 준비가 되었습니다. 
 
@@ -209,7 +211,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 > 
 > 정책에서 보호 설정을 변경한 경우 서비스를 다시 시작하기 전에 보호 설정을 저장한 후 15분 동안 기다립니다.
 
-구성된 자동 조건이 없는 정책을 스캐너가 다운로드하면 스캐너 폴더에서 정책 파일의 복사본이 업데이트되지 않습니다. 이 시나리오에서 레이블이 자동 조건에 대해 올바르게 구성되어 있는 새로 다운로드한 정책 파일을 스캐너에서 사용할 수 있으려면 **%LocalAppData%\Microsoft\MSIP\Scanner\Policy.msip** 파일을 삭제해야 합니다.
+구성된 자동 조건이 없는 정책을 스캐너가 다운로드하면 스캐너 폴더에서 정책 파일의 복사본이 업데이트되지 않습니다. 이 시나리오에서 레이블이 자동 조건에 대해 올바르게 구성되어 있는 새로 다운로드한 정책 파일을 스캐너에서 사용할 수 있으려면 **%LocalAppData%\Microsoft\MSIP\Policy.msip** 및 **%LocalAppData%\Microsoft\MSIP\Scanner** 모두에서 정책 파일 **Policy.msip**를 삭제해야 합니다.
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 성능 최적화
 

@@ -1,22 +1,22 @@
 ---
-title: "Azure Information Protection 클라이언트&colon; 버전 릴리스 기록 및 지원 정책"
-description: "Windows용 Azure Information Protection 클라이언트 릴리스에서 새롭거나 변경된 기능을 알아보고 지원에 대한 수명 주기 정책을 파악합니다."
+title: Azure Information Protection 클라이언트&colon; 버전 릴리스 기록 및 지원 정책
+description: Windows용 Azure Information Protection 클라이언트 릴리스에서 새롭거나 변경된 기능을 알아보고 지원에 대한 수명 주기 정책을 파악합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/06/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 19390c05719ebfee7e3442437d3f5bdfd303c652
-ms.sourcegitcommit: d32d1f5afa5ee9501615a6ecc4af8a4cd4901eae
+ms.openlocfilehash: 10fe839ff24994af0c50fff6aeac303d57a19ea6
+ms.sourcegitcommit: 65d6b0ecfbca5071afe29e63aea6226ad7a911b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -154,30 +154,6 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 - 사용자가 사용자 지정 권한을 지정할 때 전자 메일의 유효성을 검사합니다. 또한 Enter 키를 눌러 여러 이메일 주소를 지정할 수 있습니다.
 
 - 모든 하위 레이블이 보호를 위해 구성되고 클라이언트에 보호를 지원하는 Office 버전이 없는 경우 부모 레이블이 표시되지 않습니다. 
-
-## <a name="version-172100"></a>버전 1.7.210.0
-
-**릴리스 날짜**: 2017년 6월 6일
-
-이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.2217.1이 포함됩니다.
-
-**새로운 기능**:
-
-- 새 PowerShell cmdlet, [Set-AIPFileClassification](/powershell/module/azureinformationprotection/Set-AIPFileClassification). 이 cmdlet을 실행하면 파일 콘텐츠를 검사한 후 Azure Information Protection 정책에 지정된 조건에 따라 레이블이 지정되지 않은 파일에 자동으로 레이블을 적용합니다.
-
-**수정 사항**:
-
-- 이제 인터넷에 연결되어 있지 않지만 유효한 Azure Information Protection 정책이 지정된 컴퓨터에서는 모든 레이블 지정 및 분류 cmdlet이 지원됩니다.
-
-- 일관성을 위해 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) cmdlet의 출력 매개 변수는 영국 영어(**IsLabelled**) 미국 영어(**IsLabeled**)로 변경되었습니다. 이 매개 변수를 검색하는 스크립트 또는 자동화 프로세스가 있는 경우 이 매개 변수의 철자를 업데이트하세요.
-
-- 다음을 포함하는 안정성에 대한 일반 수정 내용:
-
-    - Outlook: 충돌, 높은 메모리 사용량 및 메뉴 표시 문제를 수정합니다.
-    
-    - Word, Excel 및 PowerPoint: 높은 CPU 사용량, 큰 Excel 파일을 저장할 때의 표시 문제 또는 응용 프로그램이 응답을 중지하는 문제를 수정합니다. 
-    
-    또한 이러한 응용 프로그램에서 SharePoint Online 및 비즈니스용 OneDrive가 있는 Office 2016의 성능을 향상시키기 위해, 파일이 저장될 때(자동으로 저장 또는 사용자가 저장하도록 선택)가 아니라 파일이 닫힐 때 자동 및 권장 레이블이 적용됩니다. 마찬가지로 **모든 문서 및 전자 메일에 레이블이 있어야 함** 설정을 사용하도록 지정되면 파일을 닫을 때까지 레이블을 선택하라는 메시지가 표시되지 않습니다. 예외는 Word 2016 및 Excel 2016이며, 사용자는 **다른 이름으로 저장** 옵션을 선택합니다. 그러면 구성에 따라 이러한 레이블 지정 동작이 트리거됩니다. 
 
 ## <a name="next-steps"></a>다음 단계
 

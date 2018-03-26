@@ -1,22 +1,22 @@
 ---
-title: "Azure RMS 템플릿 새로 고침 - AIP"
-description: "Azure Rights Management 서비스를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다."
+title: Azure RMS 템플릿 새로 고침 - AIP
+description: Azure Rights Management 서비스를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 73ba65e3c453b1e06e02925a0b3ecc09a0bca1f0
-ms.sourcegitcommit: 240378d216e386ad760460c50b7a664099c669e9
+ms.openlocfilehash: 0f3c7f45789339aca0186ad2855c2e25f931182f
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>사용자 및 서비스를 위한 템플릿 새로 고침
 
@@ -70,22 +70,24 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
 
 1.  레지스트리 편집기에서 **LastUpdatedTime** 값의 데이터를 삭제합니다. 예를 들어 데이터가 **2015-04-20T15:52**로 표시된다면 2015-04-20T15:52를 삭제하여 아무 데이터도 표시되지 않게 합니다. 다음 정보를 참조하여 이 레지스트리 값 데이터를 삭제할 레지스트리 경로를 찾습니다.
 
-    **레지스트리 경로:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\<*MicrosoftRMS_FQDN*>\Template
+    **레지스트리 경로:** HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC\\<*MicrosoftRMS_FQDN*>\Template\\<*user_alias*>
 
     **형식:** REG_SZ
 
     **값:** LastUpdatedTime
 
     > [!TIP]
-        > 레지스트리 경로에서 <*MicrosoftRMS_FQDN*>은 사용자의 Microsoft RMS 서비스 FQDN을 가리킵니다. 이 값을 확인하려면:
+    > 레지스트리 경로에서 <*MicrosoftRMS_FQDN*>은 사용자의 Microsoft RMS 서비스 FQDN을 가리킵니다. 이 값을 확인하려면:
 
-    > 1.  Azure RMS에 대해 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
-    > 2.  출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
+    > Azure RMS에 대해 [Get-AadrmConfiguration](https://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
     >
-    >     예: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
-    > 3.  이 값의 문자열에서 **https://** 및 **/_wmcs/licensing**을 제거합니다. 나머지 값이 Microsoft RMS 서비스 FQDN입니다. 이 예에서 Microsoft RMS 서비스 FQDN 값은 다음과 같습니다.
+    > 출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
     >
-    >     **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
+    > 예: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+    > 
+    > 이 값의 문자열에서 **https://** 및 **/_wmcs/licensing**을 제거합니다. 나머지 값이 Microsoft RMS 서비스 FQDN입니다. 이 예에서 Microsoft RMS 서비스 FQDN 값은 다음과 같습니다.
+    >
+    >**5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
 2.  다음 폴더와, 그 안의 모든 파일을 삭제합니다. **%localappdata%\Microsoft\MSIPC\Templates**
 

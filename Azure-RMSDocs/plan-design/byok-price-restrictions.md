@@ -1,22 +1,22 @@
 ---
-title: "BYOK 가격 및 제한 사항 - Azure Information Protection"
-description: "BYOK(“Bring Your Own Key”)라고도 하는 고객 관리 키를 Azure Information Protection에서 사용할 때의 제한 사항에 대해 알아봅니다."
+title: BYOK 가격 및 제한 사항 - Azure Information Protection
+description: BYOK(“Bring Your Own Key”)라고도 하는 고객 관리 키를 Azure Information Protection에서 사용할 때의 제한 사항에 대해 알아봅니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6e0f63857e3b11af82dae18c23080aa849a9d03b
-ms.sourcegitcommit: 25146c649d5f4c95debebdf3823785139f2d9ea1
+ms.openlocfilehash: ac9324a0418a557682714b6f2b5621a2d9f7530e
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 
@@ -59,8 +59,8 @@ BYOK 및 사용 현황 로깅 기능은 Azure Information Protection에서 사�
 
 ## <a name="next-steps"></a>다음 단계
 
-고유한 키를 관리하기로 결정한 경우 [Azure 권한 관리 테넌트 키 구현](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)으로 이동합니다.
+고유한 키를 관리하기로 한 경우 [Azure Information Protection 테넌트 키 구현](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)으로 이동하세요.
 
-Microsoft에서 테넌트 키를 관리하는 기본 구성을 유지하기로 결정한 경우 Azure 권한 관리 테넌트 키 계획 및 구현 문서에서 [다음 단계](plan-implement-tenant-key.md#next-steps) 섹션을 참조하세요.
+Microsoft에서 테넌트 키를 관리하는 기본 구성을 유지하기로 한 경우 Azure Information Protection 테넌트 키 계획 및 구현 문서에서 [다음 단계](plan-implement-tenant-key.md#next-steps) 섹션을 참조하세요.
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

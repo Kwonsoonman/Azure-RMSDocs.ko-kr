@@ -1,22 +1,22 @@
 ---
-title: "AIP에 대한 Azure Active Directory 요구 사항"
-description: "사용자가 정상적으로 인증할 수 있도록, Azure Information Protection을 사용하는 데 필요한 Azure AD 요구 사항을 파악합니다."
+title: AIP에 대한 Azure Active Directory 요구 사항
+description: 사용자가 정상적으로 인증할 수 있도록, Azure Information Protection을 사용하는 데 필요한 Azure AD 요구 사항을 파악합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2017
+ms.date: 03/19/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2a079dbc1df01c8c9402d7d79e3f587f13b44654
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 62c9bba17c561fda86393ed4e76c00895613d0e3
+ms.sourcegitcommit: 1b44f6bd25b756fa85fa5f47aa4c0486f9486832
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
 
@@ -89,7 +89,13 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
         이 시나리오에 대한 자세한 내용은 Office 블로그에서 [Office 365로 작동 - 이제 간소화된 ID 프로그램](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)을 참조하세요.
 
-Rights Management 커넥터에서 MFA를 지원하지 않습니다. 온-프레미스 서버에 대해 이 커넥터를 배포하는 경우 MFA를 요구하지 않는 커넥터에 대한 계정을 사용해야 합니다.
+Rights Management 커넥터와 Azure Information Protection 스캐너는 MFA를 지원하지 않습니다. 커넥터 또는 스캐너를 배포하는 경우 다음 계정에 MFA가 필요하지 않아야 합니다.
+
+- 커넥터를 설치하고 구성하는 계정
+
+- 커넥터가 만드는 Azure AD의 서비스 주체 계정 **Aadrm_S-1-7-0**
+ 
+- 스캐너를 실행하는 서비스 계정
 
 ## <a name="next-steps"></a>다음 단계
 기타 요구 사항을 확인하려면 [Azure Information Protection에 대한 요구 사항](requirements-azure-rms.md)을 참조하세요.

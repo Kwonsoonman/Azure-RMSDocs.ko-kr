@@ -1,22 +1,22 @@
 ---
-title: "Azure Information Protection 클라이언트에 대한 사용자 지정 구성"
-description: "Windows용 Azure Information Protection 클라이언트의 사용자 지정에 대한 정보"
+title: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
+description: Windows용 Azure Information Protection 클라이언트의 사용자 지정에 대한 정보
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 662ed627fc6138e1ff16efb731b209964784432f
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: e5c71068f979c13b2d8c9ee7c9c5c43e2ad3a7ad
+ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -202,9 +202,91 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 - 값: \<**레이블 ID**> 또는 **없음**
 
+## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 이 구성 옵션에는 미리 보기 버전의 클라이언트가 필요합니다.
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+Secure Islands에서 레이블을 지정한 Office 문서 및 PDF 문서의 경우 직접 정의하는 매핑을 사용하여 이러한 문서의 레이블을 Azure Information Protection 레이블로 재지정할 수 있습니다. 또한 다른 솔루션의 레이블이 Office 문서에 있는 경우 이 방법으로 해당 레이블을 재사용할 수도 있습니다. 
+
+이 구성 옵션의 결과로 새 Azure Information Protection 레이블이 Azure Information Protection 클라이언트에 의해 다음과 같이 적용됩니다.
+
+- Office 문서의 경우: 데스크톱 앱에서 문서를 열면 새 Azure Information Protection 레이블이 설정된 대로 표시되며 문서를 저장할 때 적용됩니다.
+
+- 파일 탐색기의 경우: Azure Information Protection 대화 상자에서 새 Azure Information Protection 레이블이 설정된 대로 표시되며 사용자가 **적용**을 선택하면 적용됩니다. 사용자 **취소**를 선택하면 새 레이블이 적용되지 않습니다.
+
+- PowerShell의 경우: [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)은 새 Azure Information Protection 레이블을 적용합니다. [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)는 다른 방법으로 설정되기 전까지는 새 Azure Information Protection 레이블을 표시하지 않습니다.
+
+- Azure Information Protection 스캐너의 경우: 검색에서 새 Azure Information Protection 레이블이 설정되는 시기를 보고하며 적용 모드를 사용하여 이 레이블을 적용할 수 있습니다.
+
+이 구성을 사용하려면 이전 레이블에 매핑할 각 Azure Information Protection 레이블에 대해 **LabelbyCustomProperty**라는 고급 클라이언트 설정을 지정해야 합니다. 그런 다음 각 항목의 값을 다음 구문을 사용하여 설정합니다.
+
+`[Azure Information Protection label ID],[migration rule name],[Secure Islands custom property name],[Secure Islands metadata Regex value]`
+
+Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는 경우 레이블 ID 값이 **레이블** 블레이드에 표시됩니다. 하위 레이블을 지정하려면 상위 레이블이 같은 범위 또는 전역 정책에 있어야 합니다.
+
+원하는 마이그레이션 규칙 이름을 지정합니다. 이전 레이블 지정 솔루션의 레이블 하나 이상이 Azure Information Protection 레이블에 매핑되는 방식을 식별하는 데 도움이 되는 설명이 포함된 이름을 사용합니다. 이 이름은 스캐너 보고서와 이벤트 뷰어에 표시됩니다. 
+
+### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>예 1: 동일한 레이블 이름의 일대일 매핑
+
+Secure Islands 레이블이 “기밀”인 문서는 Azure Information Protection에서 레이블이 “기밀”로 재지정되어야 합니다.
+
+이 예에서는 다음과 같습니다.
+
+- Azure Information Protection 레이블 **기밀**의 레이블 ID는 1ace2cc3-14bc-4142-9125-bf946a70542c입니다. 
+
+- Secure Islands 레이블은 **Classification**이라는 사용자 지정 속성에 저장됩니다.
+
+고급 클라이언트 설정은 다음과 같습니다.
+
+    
+|이름|값|
+|---------------------|---------|
+|LabelbyCustomProperty|1ace2cc3-14bc-4142-9125-bf946a70542c,"Secure Islands label is Confidential",Classification,Confidential|
+
+### <a name="example-2-one-to-one-mapping-for-a-different-label-name"></a>예 2: 다른 레이블 이름의 일대일 매핑
+
+Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Information Protection에서 레이블이 “극비”로 재지정되어야 합니다.
+
+이 예에서는 다음과 같습니다.
+
+- Azure Information Protection 레이블 **극비**의 레이블 ID는 3e9df74d-3168-48af-8b11-037e3021813f입니다.
+
+- Secure Islands 레이블은 **Classification**이라는 사용자 지정 속성에 저장됩니다.
+
+고급 클라이언트 설정은 다음과 같습니다.
+
+    
+|이름|값|
+|---------------------|---------|
+|LabelbyCustomProperty|3e9df74d-3168-48af-8b11-037e3021813f,"Secure Islands label is Sensitive",Classification,Sensitive|
+
+
+### <a name="example-3-many-to-one-mapping-of-label-names"></a>예제 3: 레이블 이름의 다대일 매핑
+
+“내부”라는 단어를 포함하는 Secure Islands 레이블은 두 가지이며 이러한 Secure Islands 레이블 중 하나가 있는 문서는 Azure Information Protection에서 레이블을 “일반”으로 재지정할 수 있습니다.
+
+이 예에서는 다음과 같습니다.
+
+- Azure Information Protection 레이블 **일반**의 레이블 ID는 2beb8fe7-8293-444c-9768-7fdc6f75014d입니다.
+
+- Secure Islands 레이블은 **Classification**이라는 사용자 지정 속성에 저장됩니다.
+
+고급 클라이언트 설정은 다음과 같습니다.
+
+    
+|이름|값|
+|---------------------|---------|
+|LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d,"Secure Islands label contains Internal",Classification,.\*Internal.\*|
+
+
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>기존 사용자 지정 속성을 사용하여 Office 문서에 레이블을 지정합니다.
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
+
+> [!NOTE]
+> 이 구성과 이전 섹션의 구성을 사용하여 다른 레이블 지정 솔루션에서 마이그레이션하는 경우 레이블 지정 마이그레이션 설정이 우선합니다. 
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 

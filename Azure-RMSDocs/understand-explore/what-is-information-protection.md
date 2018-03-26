@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection이란?"
-description: "Azure Information Protection 서비스에 대해 간략하게 설명합니다."
+title: Azure Information Protection이란?
+description: Azure Information Protection 서비스에 대해 간략하게 설명합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/24/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: c3bbf2a9e0fee14ddeb2f18fa5671209ad92cfd4
-ms.sourcegitcommit: 6bfbf08b935a7a60e437af44aab72db13f87eff1
+ms.openlocfilehash: 22cb2afc014ce7538d7163edc3b12e7d7a137c72
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
 >*적용 대상: Azure Information Protection*
 
-Azure Information Protection은 클라우드 기반 솔루션으로 조직에서 문서와 전자 메일을 분류하고 레이블을 지정하며 보호하는 데 도움이 됩니다. 이 기능은 규칙 및 조건을 정의하는 관리자는 자동으로, 사용자는 수동으로 수행할 수 있으며, 사용자가 권장 사항을 제공받은 경우에는 자동 또는 수동으로 수행할 수 있습니다. 
+Azure Information Protection(AIP라고도 함)은 클라우드 기반 솔루션으로 조직에서 문서와 메일을 분류하고 레이블을 지정하며 보호하는 데 도움이 됩니다. 이 기능은 규칙 및 조건을 정의하는 관리자는 자동으로, 사용자는 수동으로 수행할 수 있으며, 사용자가 권장 사항을 제공받은 경우에는 자동 또는 수동으로 수행할 수 있습니다. 
 
 다음 그림은 Azure Information Protection의 실제 작동 방식 예를 보여 줍니다. 관리자는 중요한 데이터를 검색하는 데 필요한 규칙을 정의했습니다(이 경우 신용 카드 정보). 신용 카드 정보가 포함된 Word 문서를 저장할 때 관리자가 구성한 특정 레이블을 적용하도록 권장하는 사용자 지정 도구 설명이 나타납니다. 이 레이블은 문서를 분류하고 구성에 따라 선택적으로 문서를 보호합니다. 
 

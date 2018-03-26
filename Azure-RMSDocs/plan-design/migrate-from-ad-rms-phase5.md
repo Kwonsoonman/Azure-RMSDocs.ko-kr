@@ -1,22 +1,22 @@
 ---
-title: "AD RMS-Azure Information Protection 마이그레이션 - 5단계"
-description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 다섯 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 10~12단계가 포함됩니다."
+title: AD RMS-Azure Information Protection 마이그레이션 - 5단계
+description: AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 다섯 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 10~12단계가 포함됩니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0c15bcca607992a2782611286205509377f9fd4d
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 520773a2a893e7e88feb970a2539db4100287a72
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>마이그레이션 5단계 - 마이그레이션 후 작업
 
@@ -116,7 +116,7 @@ Azure Information Protection 테넌트 키를 다시 입력하려면 다음과 �
 
 - **사용자가 관리하는 테넌트 키인 경우(BYOK)**: Azure Key Vault에서 Azure Information Protection 테넌트에 대해 키 생성 프로세스를 반복한 다음 [Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey) cmdlet을 다시 실행하여 이 새 키에 대한 URI를 지정합니다. 
 
-Azure Information Protection 테넌트 키 관리에 대한 자세한 내용은 [Azure Rights Management 테넌트 키에 대한 작업](../deploy-use/operations-tenant-key.md)을 참조하세요.
+Azure Information Protection 테넌트 키 관리에 대한 자세한 내용은 [Azure Information Protection 테넌트 키에 대한 작업](../deploy-use/operations-tenant-key.md)을 참조하세요.
 
 
 ## <a name="next-steps"></a>다음 단계

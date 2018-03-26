@@ -1,22 +1,22 @@
 ---
-title: "Azure Information Protection에 대한 요구 사항"
-description: "Azure Information Protection을 조직에 배포하기 위한 필수 구성 요소를 식별합니다."
+title: Azure Information Protection에 대한 요구 사항
+description: Azure Information Protection을 조직에 배포하기 위한 필수 구성 요소를 식별합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 20726f99a10328fac777dc22cb59372db0ab384d
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 9542eb6f679d931de556f706afa3b51cfd9d2bb8
+ms.sourcegitcommit: 58cd89cc6f6407648854e2e2d28a61325b5c8922
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -38,12 +38,16 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 > [Exchange Online 서비스 설명](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
 >
 > [Office 365 Education](https://technet.microsoft.com/library/mt844095.aspx)
+>
+> [Office 365 US Government](https://technet.microsoft.com/library/mt774581.aspx)
 
 구독 또는 라이선스에 대한 질문이 있는 경우 이 페이지에 게시하지 말고, Microsoft 계정 관리자 또는 [Microsoft 지원](information-support.md#to-contact-microsoft-support)에 문의하세요.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
 Azure Information Protection에 대해 사용자 인증 및 권한 부여를 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.
+
+Azure Information Protection에 대해 SSO(Single Sign-On)가 지원되므로 사용자에게 자격 증명을 입력하라는 메시지가 반복해서 표시되지 않습니다. 페더레이션에 다른 공급업체 솔루션을 사용하는 경우에는 해당 공급업체에 Azure AD용으로 구성하는 방법을 확인하세요. WS-Trust는 이러한 솔루션에서 Single Sign-On을 지원하기 위해 공통으로 필요합니다. 
 
 MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure Information Protection에서 지원됩니다.
 

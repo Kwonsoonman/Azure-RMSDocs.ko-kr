@@ -1,22 +1,22 @@
 ---
-title: "Azure RMS 서비스 해제 및 비활성화"
-description: "Azure Information Protection의 클라우드 기반 보호 서비스를 더 이상 사용하지 않으려는 경우에 적용되는 정보와 지침입니다."
+title: Azure RMS 서비스 해제 및 비활성화
+description: Azure Information Protection의 클라우드 기반 보호 서비스를 더 이상 사용하지 않으려는 경우에 적용되는 정보와 지침입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0b1c2064-0d01-45ae-a541-cebd7fd762ad
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 18eff00f6b316c48dbca5a9a8ec2c2ab4e58f76c
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: fc2fd8d043c04c3820de30d2087ff498b4ea4e90
+ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Azure Information Protection 보호 해제 및 비활성화
 
@@ -26,7 +26,7 @@ Azure Information Protection에서 Azure Rights Management 서비스를 사용�
 
 이전에 보호하던 콘텐츠에 계속 액세스할 필요가 없는 경우 서비스를 비활성화하고 Azure Information Protection에 대한 구독이 만료되게 하면 됩니다. 예를 들어 Azure Information Protection을 프로덕션 환경에 배포하기 전에 테스트를 완료한 경우 이와 같이 서비스를 비활성화할 수 있습니다.
 
-그러나 프로덕션에 Azure Information Protection을 배포하고 문서와 메일을 보호한 경우 Azure Rights Management 서비스를 비활성화하기 전에 Azure Information Protection 테넌트 키의 사본이 있는지 확인합니다. 서비스를 비활성화한 후 Azure Rights Management에서 보호한 콘텐츠에 대한 액세스 권한을 유지할 수 있도록 구독이 만료되기 전에 키의 사본이 있는지 확인합니다. HSM에서 자체 키를 생성 및 관리하면서 BYOK(Bring Your Own Key)를 사용한 경우 이미 Azure Information Protection 테넌트 키가 있을 것입니다. 그러나 테넌트 키를 Microsoft에서 관리한 경우(기본값)에는 [Azure 권한 관리 테넌트 키에 대한 작업](operations-tenant-key.md) 문서에서 테넌트 키 내보내기 지침을 참조하세요.
+그러나 프로덕션에 Azure Information Protection을 배포하고 문서와 메일을 보호한 경우 Azure Rights Management 서비스를 비활성화하기 전에 Azure Information Protection 테넌트 키의 사본이 있는지 확인합니다. 서비스를 비활성화한 후 Azure Rights Management에서 보호한 콘텐츠에 대한 액세스 권한을 유지할 수 있도록 구독이 만료되기 전에 키의 사본이 있는지 확인합니다. HSM에서 자체 키를 생성 및 관리하면서 BYOK(Bring Your Own Key)를 사용한 경우 이미 Azure Information Protection 테넌트 키가 있을 것입니다. 그러나 테넌트 키를 Microsoft에서 관리한 경우(기본값)에는 [Azure Information Protection 테넌트 키에 대한 작업](operations-tenant-key.md) 문서에서 테넌트 키 내보내기 지침을 참조하세요.
 
 > [!TIP]
 > 구독이 만료된 후에도 Azure Information Protection 테넌트가 그대로 유지되어 연장된 기간 동안 콘텐츠를 사용할 수 있습니다. 그러나 테넌트 키를 내보낼 수는 없습니다.

@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/20/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e5c71068f979c13b2d8c9ee7c9c5c43e2ad3a7ad
-ms.sourcegitcommit: 32b233bc1f8cef0885d9f4782874f1781170b83d
+ms.openlocfilehash: bb478a91a0af035bc07a77e4aae8c2f6c19eab4a
+ms.sourcegitcommit: c66da7a66f25a3c080e43c548e7945fec35ed751
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -204,7 +204,7 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 이 구성 옵션에는 미리 보기 버전의 클라이언트가 필요합니다.
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 이 구성 옵션에는 미리 보기 버전의 클라이언트 또는 Azure Information Protection 스캐너가 필요합니다.
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
@@ -316,13 +316,13 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
 
-웹용 Outlook에서는 아직 기본적으로 Azure Information Protection 분류 및 보호를 지원하지 않지만 Exchange 메시지 분류를 사용하여 Azure Information Protection 레이블을 모바일 사용자로 확장할 수 있습니다.
+웹용 Outlook에서는 아직 기본적으로 Azure Information Protection 분류 및 보호를 지원하지 않지만, Exchange 메시지 분류를 사용하여 웹용 Outlook을 사용하는 모바일 사용자로 Azure Information Protection 레이블을 확장할 수 있습니다. Outlook Mobile은 Exchange 메시지 분류를 지원하지 않습니다.
 
 이 솔루션을 활용하려면 다음을 수행합니다. 
 
 1. [New-MessageClassification](https://technet.microsoft.com/library/bb124400) Exchange PowerShell cmdlet을 사용하여 Azure Information Protection 정책의 레이블 이름에 매핑되는 Name 속성을 포함하는 메시지 분류를 만듭니다. 
 
-2. 각 레이블에 대해 Exchange 전송 규칙을 만든 다음 구성된 분류가 메시지 속성에 포함될 때 해당 규칙을 적용하고 메시지 속성을 수정하여 메시지 헤더를 설정합니다. 
+2. 각 레이블에 대해 Exchange 메일 흐름 규칙을 만든 다음, 구성된 분류가 메시지 속성에 포함될 때 해당 규칙을 적용하고 메시지 속성을 수정하여 메시지 헤더를 설정합니다. 
 
     메시지 헤더에서는 Azure Information Protection 레이블을 사용하여 분류하고 보낸 메일의 인터넷 헤더를 검사하면 지정할 정보를 확인할 수 있습니다. **msip_labels** 헤더와 바로 뒤에서 세미콜론까지의 문자열(세미콜론도 포함)을 찾습니다. 이전 예를 사용하면 다음과 같습니다.
     
@@ -330,9 +330,9 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
     
     그런 다음 규칙의 메시지 헤더에 대해 **msip_labels**를 헤더로, 이 문자열의 나머지 부분을 헤더 값으로 지정합니다. 예를 들면 다음과 같습니다.
     
-    ![특정 Azure Information Protection 레이블에 대한 메시지 헤더를 설정하는 Exchange Online 전송 규칙 예제](../media/exchange-rule-for-message-header.png)
+    ![특정 Azure Information Protection 레이블에 대한 메시지 헤더를 설정하는 Exchange Online 메일 흐름 규칙 예제](../media/exchange-rule-for-message-header.png)
 
-이 구성을 테스트하기 전에 전송 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 규칙이 적용되면 사용자가 Rights Management 보호를 지원하는 모바일 장치 클라이언트 또는 웹용 Outlook을 사용할 때 다음과 같은 이벤트가 진행됩니다. 
+이 구성을 테스트하기 전에 메일 흐름 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 이제 규칙이 적용되면 사용자가 Exchange ActiveSync IRM을 지원하는 모바일 장치 클라이언트 또는 웹용 Outlook을 사용할 때 다음과 같은 이벤트가 발생합니다. 
 
 - 사용자가 Exchange 메시지 분류를 선택하고 전자 메일을 보냅니다.
 
@@ -340,11 +340,11 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 - 받는 사람이 Outlook에서 전자 메일을 보며 Azure Information Protection 클라이언트를 설치한 경우 할당된 Azure Information Protection 레이블과 그에 해당하는 전자 메일 머리글, 바닥글 또는 워터마크가 표시됩니다. 
 
-Azure Information Protection 레이블이 권한 관리 보호를 적용하는 경우에는 메시지 보안을 수정하는 옵션을 선택하여 규칙 구성에 권한 관리 보호를 추가하고, 권한 보호를 적용한 후에 RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
+Azure Information Protection 레이블이 보호를 적용하는 경우에는 메시지 보안을 수정하는 옵션을 선택하여 규칙 구성에 권한 관리 보호를 추가하고, 권한 보호를 적용한 후에 RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
 
-또한 역방향 매핑을 수행하도록 전송 규칙을 구성할 수 있습니다. Azure Information Protection 레이블이 검색되면 해당 Exchange 메시지 분류를 설정합니다.
+또한 역방향 매핑을 수행하도록 메일 흐름 규칙을 구성할 수 있습니다. Azure Information Protection 레이블이 검색되면 해당 Exchange 메시지 분류를 설정합니다.
 
-- 각 Azure Information Protection 레이블에 대해 **msip_labels** 헤더에 레이블의 이름(예: **General**)이 포함될 때 적용되는 전송 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
+- 각 Azure Information Protection 레이블에 대해 **msip_labels** 헤더에 레이블의 이름(예: **General**)이 포함될 때 적용되는 메일 흐름 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
 
 
 ## <a name="next-steps"></a>다음 단계

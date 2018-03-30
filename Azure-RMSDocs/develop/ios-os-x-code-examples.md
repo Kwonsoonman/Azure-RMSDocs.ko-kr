@@ -1,24 +1,24 @@
 ---
-title: "iOS/OS X 코드 예제 | Azure RMS"
-description: "이 항목에서는 iOS/OS X 버전의 RMS SDK에 대한 중요한 코드 요소를 소개합니다."
-keywords: 
+title: iOS/OS X 코드 예제 | Azure RMS
+description: 이 항목에서는 iOS/OS X 버전의 RMS SDK에 대한 중요한 코드 요소를 소개합니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7E12EBF2-5A19-4A8D-AA99-531B09DA256A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: a610bd7983ffcf5e56cad4038375ed6c9b3f5e0a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 121296ed8d2e160bd602ae9d88843eb1580f17f6
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="iosos-x-code-examples"></a>iOS/OS X 코드 예제
 
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/11/2018
 
 -   **1단계**: 사용자가 제공한 메일 주소를 사용하여 정책 설명자를 만듭니다.
 
-    **설명**: 실제로 다음 개체는 장치 인터페이스 [MSUserRights](https://msdn.microsoft.com/en-us/library/dn790811.aspx) 및 [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx)의 사용자 입력을 사용하여 생성됩니다.
+    **설명**: 실제로 다음 개체는 장치 인터페이스 [MSUserRights](https://msdn.microsoft.com/library/dn790811.aspx) 및 [MSPolicyDescriptor](https://msdn.microsoft.com/library/dn758339.aspx)의 사용자 입력을 사용하여 생성됩니다.
 
         + (void)policyDescriptor
         {

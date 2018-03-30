@@ -1,24 +1,24 @@
 ---
-title: "Windows 스토어 설정 | Azure RMS"
-description: "Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다."
-keywords: 
+title: Windows 스토어 설정 | Azure RMS
+description: Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4dfbb1ba71aedaa0d818b00b3696b422e57ac0d4
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: dde2b47ddf91c6f79d50df5ad776d981c1494047
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="windows-store-setup"></a>Windows 스토어 설정
 
@@ -40,7 +40,7 @@ Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2�
 -   [Windows 8.1용 Windows SDK](https://msdn.microsoft.com/windows/desktop/bg162891.aspx)
 -   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) 이상 또는 Windows 8.0/8.1용 Windows SDK에 포함되어 있는 Visual Studio Express 2012
 -   Windows 스토어 응용 프로그램용 MS RMS SDK 4.2 패키지 자세한 내용은 [시작](get-started.md)을 참조하세요.
--   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/en-us/library/jj573266.aspx)를 사용하는 것이 좋으며 다른 인증 라이브러리를 사용할 수도 있습니다.
+-   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/library/jj573266.aspx)를 사용하는 것이 좋으며 다른 인증 라이브러리를 사용할 수도 있습니다.
 
 API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 

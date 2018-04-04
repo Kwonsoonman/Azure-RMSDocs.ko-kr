@@ -1,27 +1,27 @@
 ---
-title: "빠른 시작 자습서 5단계 - AIP"
-description: "Azure Information Protection를 빠르게 사용해 보기 위한 소개 자습서 5단계 - 보호된 파일 공유 및 추적"
-keywords: 
+title: 빠른 시작 자습서 5단계 - AIP
+description: Azure Information Protection를 빠르게 사용해 보기 위한 소개 자습서 5단계 - 보호된 파일 공유 및 추적
+keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/18/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6d62b6dd588b035ded582a87f5faf04a04df6ab6
-ms.sourcegitcommit: 2f1936753adf8d2fbea780d0a3878afa621daab5
+ms.openlocfilehash: 718c15769e5719d5e8dde612cf66e4215f1e235d
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
 
->*적용 대상: Azure Information Protection*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 이 자습서의 마지막 단계에서는 이미 만들어 놓았고 파트너나 동료에게 보낼 Word 문서 또는 Excel 스프레드시트를 찾습니다. 이 자습서에서 실제로 포함되는 텍스트는 중요하지 않지만, 텍스트를 포함하면 권한이 있는 수신자가 읽었는지 더 쉽게 확인할 수 있습니다.
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 09/18/2017
 
 7. 받는 사람에게 적합하게 기본 메시지 설명을 수정합니다. 그렇지만 다음 텍스트를 추가합니다.
 
-    **Microsoft Azure Information Protection로 이 파일을 보호했습니다. 처음 사용할 경우 https://aka.ms/rms-signup의 지침을 참조하세요.** 
+    **Microsoft Azure Information Protection로 이 파일을 보호했습니다. 처음 사용할 경우 이러한 지침을 참조하세요. https://aka.ms/rms-signup.** 
 
     ![Azure Information Protection 빠른 시작 자습서 5단계 - 전자 메일로 보호된 문서 공유](../media/share-protected-emailv2.png)
 

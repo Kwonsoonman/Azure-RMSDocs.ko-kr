@@ -1,26 +1,26 @@
 ---
-title: "사용자를 위해 Azure Information Protection 클라이언트 설치"
-description: "엔터프라이즈 네트워크에서 Windows용 Azure Information Protection 클라이언트를 배포하는 관리자를 위한 지침 및 정보입니다."
+title: 사용자를 위해 Azure Information Protection 클라이언트 설치
+description: 엔터프라이즈 네트워크에서 Windows용 Azure Information Protection 클라이언트를 배포하는 관리자를 위한 지침 및 정보입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a62c8c1c27855b25e5de69bd162d524bf1851890
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: 2a3daec687739956bb0b7bd235b69cea30039171
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 엔터프라이즈 네트워크에 Azure Information Protection 클라이언트를 설치하기 전에 컴퓨터에 Azure Information Protection에 대한 필수 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다. [Azure Information Protection에 대한 요구 사항](../get-started/requirements-azure-rms.md) 
 

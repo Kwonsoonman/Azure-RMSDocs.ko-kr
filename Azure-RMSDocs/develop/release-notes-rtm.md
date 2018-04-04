@@ -1,24 +1,24 @@
 ---
-title: "릴리스 정보"
-description: "SDK는 수정 버전 및 다른 개발자 정보로 업데이트됩니다."
-keywords: 
+title: 릴리스 정보
+description: SDK는 수정 버전 및 다른 개발자 정보로 업데이트됩니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: f05191f2c2700e59bb83a79d025ba181b799ab5a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 74f4eacb7601d137e8eb459fad3853ac5ec52e97
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="release-notes"></a>릴리스 정보
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/11/2018
 >[!Note]
 > 이 섹션의 기능 문서 업데이트는 2015년 12월 11일자 SDK 다운로드에 적용됩니다.
 
-- **개선된 인증 흐름** - [Azure ADAL(Active Directory 인증 라이브러리)](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)을 통해 OAuth2 토큰 기반 인증을 사용합니다. 이 프로세스와 해당 프로세스의 API 확장에 대한 자세한 내용은 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md)(RMS 사용 응용 프로그램에 대한 ADAL 인증) 항목을 참조하세요.
+- **개선된 인증 흐름** - [Azure ADAL(Active Directory 인증 라이브러리)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)을 통해 OAuth2 토큰 기반 인증을 사용합니다. 이 프로세스와 해당 프로세스의 API 확장에 대한 자세한 내용은 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md)(RMS 사용 응용 프로그램에 대한 ADAL 인증) 항목을 참조하세요.
 
 - **ADAL로 업데이트**: Microsoft Online 로그인 도우미 대신 ADAL 인증을 사용하도록 응용 프로그램을 업데이트하면 개발자와 고객이 다음을 수행할 수 있습니다.
 
@@ -121,7 +121,7 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
     지원되는 파일 형식에 대한 자세한 내용은 [파일 API 구성](file-api-configuration.md)을 참조하세요.
 
--   [KB2533623](https://support.microsoft.com/en-us/kb/2533623) 업데이트가 없는 **Windows 7 SP1 및 Windows Server 2008 R2 SP1 컴퓨터**에서는 Office 파일을 보호하는 중 "매개 변수가 잘못되었습니다. 오류 코드 0x80070057"이라는 오류가 발생할 수 있습니다. 이 오류가 표시되면 업데이트를 설치하고 다시 시도하세요. 그래도 문제가 표시되면 RMS SDK 베타 피드백 별칭인 <rmcstbeta@microsoft.com>으로 문의하세요.
+-   [KB2533623](https://support.microsoft.com/kb/2533623) 업데이트가 없는 **Windows 7 SP1 및 Windows Server 2008 R2 SP1 컴퓨터**에서는 Office 파일을 보호하는 중 "매개 변수가 잘못되었습니다. 오류 코드 0x80070057"이라는 오류가 발생할 수 있습니다. 이 오류가 표시되면 업데이트를 설치하고 다시 시도하세요. 그래도 문제가 표시되면 RMS SDK 베타 피드백 별칭인 <rmcstbeta@microsoft.com>으로 문의하세요.
 
     **참고** 2015년 4월 릴리스를 기준으로, 이 기술 자료에 대한 확인이 설치 프로세스에 추가되었습니다.
 
@@ -139,7 +139,7 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
     파일 API는 다음과 같이 4개의 새로운 함수를 통해 구현됩니다. [IpcfDecryptFile](https://msdn.microsoft.com/library/dn133058.aspx), [IpcfEncryptFile](https://msdn.microsoft.com/library/dn133059.aspx), [IpcfGetSerializedLicenseFromFile](https://msdn.microsoft.com/library/dn133060.aspx) 및 [IpcfIsFileEncrypted](https://msdn.microsoft.com/library/dn133061.aspx)
 
-    파일 API를 사용하려면 클라이언트 컴퓨터에 Rights Management Service Client 2.1을 설치해야 하고 컴퓨터에서 RMS 서버에 연결해야 합니다. RMS 서버, RMS 클라이언트 및 해당 기능에 대한 자세한 내용은 [IT Pro documentation for RMS](https://technet.microsoft.com/en-us/library/cc771234(v=ws.10).aspx)(RMS에 대한 IT 전문가 설명서) 항목의 TechNet 콘텐츠를 참조하세요.
+    파일 API를 사용하려면 클라이언트 컴퓨터에 Rights Management Service Client 2.1을 설치해야 하고 컴퓨터에서 RMS 서버에 연결해야 합니다. RMS 서버, RMS 클라이언트 및 해당 기능에 대한 자세한 내용은 [IT Pro documentation for RMS](https://technet.microsoft.com/library/cc771234(v=ws.10).aspx)(RMS에 대한 IT 전문가 설명서) 항목의 TechNet 콘텐츠를 참조하세요.
 
 -   **문제**: 라이선스를 처음부터 만드는 경우 소유권 권한을 명시적으로 부여해야 합니다.
 

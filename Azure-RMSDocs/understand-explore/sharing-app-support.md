@@ -1,26 +1,26 @@
 ---
-title: "Windows 및 모바일 플랫폼용 RMS 공유 앱 - AIP"
-description: "RMS 공유 응용 프로그램에서 Azure RMS를 지원하는 방식을 설명합니다. Azure RMS는 Office 2010을 지원하기 위해 필요하며 Windows 컴퓨터, Mac 컴퓨터 및 모바일 장치에서도 사용할 수 있는 무료 다운로드 가능 응용 프로그램입니다."
+title: Windows 및 모바일 플랫폼용 RMS 공유 앱 - AIP
+description: RMS 공유 응용 프로그램에서 Azure RMS를 지원하는 방식을 설명합니다. Azure RMS는 Office 2010을 지원하기 위해 필요하며 Windows 컴퓨터, Mac 컴퓨터 및 모바일 장치에서도 사용할 수 있는 무료 다운로드 가능 응용 프로그램입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 16/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b7c2b05d9bf360b08ea6a35efd959559132df864
-ms.sourcegitcommit: 3a2177df7a23d65f93d3ce2eea3fc3e042ea901c
+ms.openlocfilehash: f0b7204695ade31df0f6132684fd379704a4b338
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 

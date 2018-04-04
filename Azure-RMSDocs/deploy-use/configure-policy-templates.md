@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection의 템플릿 구성 및 관리"
-description: "Azure Portal에서 권한 관리 템플릿을 구성하고 관리합니다."
+title: Azure Information Protection의 템플릿 구성 및 관리
+description: Azure Portal에서 권한 관리 템플릿을 구성하고 관리합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c9c2ef1338f1d5e1c3d360ad261f89f652a804ec
-ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
+ms.openlocfilehash: 4f0cc5be090a425c7be28c81f20b85eef485772d
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
->*적용 대상: Azure Information Protection*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 >[!NOTE]
 >이 기능은 Azure 클래식 포털의 사용자 지정 템플릿 구성을 대체합니다. 클래식 포털은 이제 사용 중지되었으므로 Azure Portal을 사용해야 합니다. 사용하는 방법에 빠르게 매핑하려면 [Azure 클래식 포털과 관련된 작업](migrate-portal.md)을 참조하세요.

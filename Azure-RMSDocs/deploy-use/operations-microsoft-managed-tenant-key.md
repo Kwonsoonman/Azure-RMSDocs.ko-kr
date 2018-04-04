@@ -1,26 +1,26 @@
 ---
-title: "Microsoft 관리 - AIP 테넌트 키 수명 주기 작업"
-description: "Microsoft에서 Azure Information Protection용 테넌트 키를 관리하는 경우(기본값)와 관련하여 수명 주기 작업에 대한 정보를 제공합니다."
+title: Microsoft 관리 - AIP 테넌트 키 수명 주기 작업
+description: Microsoft에서 Azure Information Protection용 테넌트 키를 관리하는 경우(기본값)와 관련하여 수명 주기 작업에 대한 정보를 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dea6fffc32876b548e5daa33a76e7891088f1e9b
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: 47653ccfb7ce512f8b9ac2a1a5540a62a7295ec2
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Microsoft에서 Azure Information Protection용 테넌트 키를 관리하는 경우(기본값) 다음 섹션에서 이 토폴로지와 관련된 수명 주기 작업에 대한 자세한 내용을 확인하세요.
 

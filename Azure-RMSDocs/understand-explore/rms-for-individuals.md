@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bce7efc1f35f5e455f76a24f2f96e7d62f568425
-ms.sourcegitcommit: 1b44f6bd25b756fa85fa5f47aa4c0486f9486832
+ms.openlocfilehash: fadaac4b5ea7828c53544485b1685226176a2a75
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>개인용 RMS 및 Azure Information Protection
 
->*적용 대상: Azure Information Protection*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 개인용 RMS는 Azure Information Protection으로 보호된 파일을 열어야 하는 사용자를 위한 무료 셀프 서비스 구독입니다. Azure Active Directory에서 이러한 사용자를 인증할 수 없고 해당 조직에 AD RMS(Active Directory Rights Management)가 없는 경우 이 무료 등록 서비스는 사용자의 Azure Active Directory에 계정을 만들 수 있습니다. 결과적으로 이 사용자는 회사 이메일 주소를 사용하여 인증한 다음 컴퓨터 또는 모바일 장치에서 보호된 파일을 읽을 수 있습니다.
 

@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection의 이전 이름들"
-description: "Azure Information Protection은 여러 차례 이름이 바뀌었으며, 이전 이름으로 알고 있는 사용자도 있을 것입니다."
+title: Azure Information Protection의 이전 이름들
+description: Azure Information Protection은 여러 차례 이름이 바뀌었으며, 이전 이름으로 알고 있는 사용자도 있을 것입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0af1b2ff-46a7-4a38-803c-5a730e4ff56d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 81e49f6904f43552dc6222f489c3719f02e59928
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: ee5c0406f351c8d46b42c25793a0f94823bf4ef3
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure Information Protection의 이전 이름들
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection(경우에 따라 AIP로 축약)은 Microsoft에서 오랫 동안 구현된 권한 관리 보호 기술에서 발전되었습니다. 이와 같이 발전해 왔으므로 이 솔루션을 이전 이름 중 하나로 알고 있는 경우가 많습니다. 또는 설명서, UI 및 로그 파일에서 이러한 이름이 참조되었을 수 있습니다. 
 

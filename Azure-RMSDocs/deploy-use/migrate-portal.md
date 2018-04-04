@@ -1,26 +1,26 @@
 ---
-title: "Azure 클래식 포털에서 마이그레이션 - AIP"
-description: "Azure 클래식 포털에서 수행했던 관리 작업을 Azure Portal에서 한눈에 볼 수 있습니다."
+title: Azure 클래식 포털에서 마이그레이션 - AIP
+description: Azure 클래식 포털에서 수행했던 관리 작업을 Azure Portal에서 한눈에 볼 수 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 066e6e028012aa47953f0fe9ce80556f0f0ac6d4
-ms.sourcegitcommit: bb6be1812beb6adf73203c352f73ef3006416848
+ms.openlocfilehash: bdf319e29e469ccb420a2979f43f5beb9f194947
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Azure 클래식 포털과 관련된 작업
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Rights Management 서비스를 관리하기 위한 Azure 클래식 포털에 사용되며 Azure Portal로 전환하는 데 도움이 필요합니까?
 

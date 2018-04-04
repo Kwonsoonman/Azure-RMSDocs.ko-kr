@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection을 위한 사용자 및 그룹 준비"
-description: "조직의 문서와 메일의 분류, 레이블 지정 및 보호를 시작하는 데 필요한 사용자 및 그룹 계정이 있는지 확인합니다."
+title: Azure Information Protection을 위한 사용자 및 그룹 준비
+description: 조직의 문서와 메일의 분류, 레이블 지정 및 보호를 시작하는 데 필요한 사용자 및 그룹 계정이 있는지 확인합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 45f75834d687247808107708e082ff61d8510899
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 7d9c58649eb06b614a25e28c909d34318ea80133
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 조직에 Azure Information Protection을 배포하기 전에 조직에 있는 테넌트의 Azure AD에 사용자 및 그룹 계정이 있는지 확인합니다.
 

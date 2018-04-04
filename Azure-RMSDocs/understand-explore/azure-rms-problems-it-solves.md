@@ -1,26 +1,26 @@
 ---
-title: "Azure Rights Management로 해결되는 문제 - AIP"
-description: "조직에 해당될 수 있는 요구 사항이나 문제에 대해 알아보고 Azure RMS 기술을 통해 이러한 요구 사항을 충족하고 문제를 해결하는 방법을 파악합니다."
+title: Azure Rights Management로 해결되는 문제 - AIP
+description: 조직에 해당될 수 있는 요구 사항이나 문제에 대해 알아보고 Azure RMS 기술을 통해 이러한 요구 사항을 충족하고 문제를 해결하는 방법을 파악합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b551c62d-5ac6-4359-85b3-90693e77b37f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 76ffef5259d9ecc16f78cbcde40862d7686b714c
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 4ca7d733cfe1045f46cfe47ee99d0df51dcac347
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="what-problems-does-azure-rms-solve"></a>Azure RMS를 통해 해결할 수 있는 문제
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 표를 통해 문서와 메일 보호를 위해 조직에 해당될 수 있는 비즈니스 요구 사항이나 문제 및 Azure RMS(Azure Rights Management) 기술로 이러한 사항을 해결하는 방법을 파악할 수 있습니다.
 

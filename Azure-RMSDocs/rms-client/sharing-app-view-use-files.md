@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 앱에서 RMS로 보호된 파일 열기 - AIP"
-description: "보호된 파일을 보고 사용하기 위한 지침을 제공합니다. 여기서 설명하는 작업을 수행하려면 (RMS)Rights Management 공유 응용 프로그램을 설치해야 합니다."
+title: RMS 공유 앱에서 RMS로 보호된 파일 열기 - AIP
+description: 보호된 파일을 보고 사용하기 위한 지침을 제공합니다. 여기서 설명하는 작업을 수행하려면 (RMS)Rights Management 공유 응용 프로그램을 설치해야 합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0a510d559573e942b8a2bf392f36a1300dfbfb7a
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: 393db5da6f2a563b073b071e873a8c5d555a76e6
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일 보기 및 사용
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 [Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치](install-sharing-app.md)되어 있는 경우 보호된 파일을 두 번 클릭하면 파일이 표시됩니다. 파일은 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다.
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 07/18/2017
 
 파일이 어떻게 열리는지는 파일이 어떻게 보호되는지에 따라 다르며 파일 이름 확장명을 보면 알 수 있습니다. 각각의 경우에서 파일 열기는 감사될 수 있고 보호되는 한 감사는 유지됩니다. 또한 파일이 메일 첨부 파일로 전송되었다면 발신자는 파일을 열 때마다 메일로 알림을 받을 수 있습니다.
 
-- **파일에*.pfile* 파일 이름 확장명** 이 있습니다.
+- **파일에*.pfile*파일 이름 확장명** 이 있습니다.
 
     파일이 일반적으로 보호되었습니다.
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 07/18/2017
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 메일로 공유한 pfile의 대화 상자](../media/ADRMS_MSRMSApp_PfilePermission.png)
 
-- ***파일에* .ppdf *파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예:* .ptxt *또는* .pjpg**) 입니다.
+- ***파일에* .ppdf*파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예:*.ptxt*또는*.pjpg**) 입니다.
 
     파일을 읽기 전용 복사본으로 고유하게 보호합니다.
 
@@ -73,7 +73,7 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 ## <a name="to-use-files-that-have-been-protected-for-example-edit-and-print-the-file"></a>보호된 파일을 사용하려면(예: 파일 편집 및 인쇄)
 보호된 파일을 연 후 읽기 이상의 작업(예: 편집, 복사 및 인쇄)을 수행하려는 경우 파일 이름 확장명에 따라 다음 지침을 따르세요.
 
-- **파일에*.pfile* 파일 이름 확장명** 이 있습니다.
+- **파일에*.pfile*파일 이름 확장명** 이 있습니다.
 
     열린 파일을 저장하고 사용하려는 응용 프로그램과 연결된 새 파일 이름 확장명을 줍니다.
 
@@ -81,7 +81,7 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 
     새 파일이 더 이상 보호되지 않습니다. 보호하려는 경우 수동으로 수행해야 합니다. 지침은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md)를 참조하세요.
 
-- ***파일에* .ppdf *파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예:* .ptxt *또는* .pjpg**) 입니다.
+- ***파일에* .ppdf*파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예:*.ptxt*또는*.pjpg**) 입니다.
 
     파일을 볼 수 있고 이름을 바꾸거나 이동하는 경우 파일은 보호가 유지됩니다.
 

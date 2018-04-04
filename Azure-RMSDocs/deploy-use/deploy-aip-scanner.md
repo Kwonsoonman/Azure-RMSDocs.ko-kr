@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection 스캐너 배포"
-description: "Azure Information Protection 스캐너를 설치, 구성 및 실행하여 데이터 저장소에서 파일을 검색, 분류 및 보호하는 지침입니다."
+title: Azure Information Protection 스캐너 배포
+description: Azure Information Protection 스캐너를 설치, 구성 및 실행하여 데이터 저장소에서 파일을 검색, 분류 및 보호하는 지침입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: f3c302b2379262a6dac87873cb607cf3cd408bcd
-ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
+ms.openlocfilehash: c4e71ec21d6ec06a3bab32bf6bb62e6f614a7e33
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
->*적용 대상: Azure Information Protection, Windows Server 2016, Windows Server 2012 R2*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2*
 
 이 정보를 사용하여 Azure Information Protection 스캐너에 대한 정보 및 성공적으로 설치, 구성 및 실행하는 방법을 알아봅니다. 
 

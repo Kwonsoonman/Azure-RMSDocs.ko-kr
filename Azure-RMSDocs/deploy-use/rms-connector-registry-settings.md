@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 커넥터에 대한 레지스트리 설정 - AIP"
-description: "RMS 커넥터를 사용하는 서버의 레지스트리 설정에 대한 정보를 제공합니다. 이러한 설정을 구성할 때는 Microsoft RMS 커넥터용 서버 구성 도구를 사용하는 것이 좋습니다."
+title: Rights Management 커넥터에 대한 레지스트리 설정 - AIP
+description: RMS 커넥터를 사용하는 서버의 레지스트리 설정에 대한 정보를 제공합니다. 이러한 설정을 구성할 때는 Microsoft RMS 커넥터용 서버 구성 도구를 사용하는 것이 좋습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 976493cd23c7690420094f80cade32179c3f7998
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: bc0cb2a7349bf19ee19a42bdb283cd86297748bc
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 커넥터에 대한 레지스트리 설정
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동으로 레지스트리 설정을 추가하거나 확인하려는 경우에만 다음 섹션의 표를 사용하세요. 이러한 레지스트리 설정은 [RMS 커넥터](deploy-rms-connector.md)를 사용하도록 서버를 구성합니다. 이 서버를 구성하려면 Microsoft RMS 커넥터용 서버 구성 도구를 사용하는 것이 좋습니다.

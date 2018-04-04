@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection 클라이언트 &colon; 설치 및 구성"
-description: "Windows 컴퓨터 및 모바일 장치에서 Azure Information Protection 클라이언트를 배포하기 위한 관리자용 정보입니다."
+title: Azure Information Protection 클라이언트 &colon; 설치 및 구성
+description: Windows 컴퓨터 및 모바일 장치에서 Azure Information Protection 클라이언트를 배포하기 위한 관리자용 정보입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 39d2fb244be91d7fc655efbdda24e4e268ac1329
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 54e66d8ffde33e3e73b24e39fa609686fa2601b0
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure Information Protection 클라이언트: 클라이언트 설치 및 구성
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Office 2010을 실행하는 컴퓨터는 Azure Rights Management 서비스 및 Azure Information Protection 서비스에서 인증을 받기 위해 Azure Information Protection 클라이언트(또는 Rights Management 공유 응용 프로그램)가 필요합니다. 이 클라이언트는 Azure Rights Management 서비스 및 Azure Information Protection을 지원하는 모든 Windows 컴퓨터와 iOS 및 Android 장치에서도 권장됩니다. 
 

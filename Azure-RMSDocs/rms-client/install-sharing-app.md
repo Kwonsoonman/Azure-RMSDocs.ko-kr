@@ -1,26 +1,29 @@
 ---
-title: "RMS 공유 앱 다운로드 및 설치 - AIP"
-description: "다른 사용자와 문서를 안전하게 공유할 수 있도록 Windows용 RMS 공유 응용 프로그램을 대화형으로 설치하는 지침을 제공합니다."
+title: RMS 공유 앱 다운로드 및 설치 - AIP
+description: 다른 사용자와 문서를 안전하게 공유할 수 있도록 Windows용 RMS 공유 응용 프로그램을 대화형으로 설치하는 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9c954f750c6f49d3db1bf6383efa2805f291682c
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6c9fe3e28cb44812a6f3a5830546128975522b5f
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램 다운로드 및 설치 
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+
+> [!IMPORTANT]
+> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다.
 
 로컬 관리자가 아니더라도 RMS 공유 응용 프로그램을 설치할 수 있습니다. 하지만 로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우 몇 가지 제한 사항이 있습니다. 자세한 내용은 이 페이지에서 [로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우](#if-you-are-not-a-local-administrator-and-use-office-2010) 섹션을 참조하세요.
 
@@ -32,7 +35,7 @@ ms.lasthandoff: 06/30/2017
 
 3.  다운로드된 Setup.exe 파일을 두 번 클릭합니다. 계속하라는 메시지가 표시되면 **예**를 클릭합니다.
 
-4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료될 때까지 기다립니다.
+4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료되기를 기다립니다.
 
     > [!NOTE]
     > RMS 공유 응용 프로그램에는 Microsoft.NET Framework 버전 4.0 이상이 필요합니다. 설치 프로그램에서 이 버전이 설치되어 있는지 확인하며, 설치되어 있지 않은 경우 설치할 수 있는 링크가 포함된 메시지가 나타납니다.

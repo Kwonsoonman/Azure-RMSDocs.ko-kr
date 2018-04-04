@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 앱을 사용하여 보호 제거 - AIP"
-description: "이전에 RMS 공유 응용 프로그램을 사용하여 보호된 파일에서 보호를 제거(파일을 보호 해제)하는 지침을 제공합니다."
+title: RMS 공유 앱을 사용하여 보호 제거 - AIP
+description: 이전에 RMS 공유 응용 프로그램을 사용하여 보호된 파일에서 보호를 제거(파일을 보호 해제)하는 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: da95b938-eaad-4c83-a21e-ff1d4872aae4
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 370b19894efb53604c798b38be02dda3f8804b8b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: e467557f8e22c1bb41fdab07ae6335c85bdc2987
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="remove-protection-from-a-file-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 파일에서 보호 제거
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 이전에 RMS 공유 응용 프로그램을 사용하여 보호했던 파일에서 보호를 제거하여 파일 보호를 해제하려면 파일 탐색기에서 **보호 제거** 옵션을 사용합니다.
 

@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection에서 지원하는 파일 형식"
-description: "지원되는 파일 형식, 파일 이름 확장명 및 Windows용 Azure Information Protection 클라이언트에 대한 책임이 있는 관리자의 보호 수준에 대한 기술 세부 정보입니다."
+title: Azure Information Protection에서 지원하는 파일 형식
+description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 Azure Information Protection 클라이언트에 대한 책임이 있는 관리자의 보호 수준에 대한 기술 세부 정보입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e9b281fbce9ad423249137c5dfff5a6f88dd2178
-ms.sourcegitcommit: bf3967c5b74d2bc57b0f93239a297ccd56682178
+ms.openlocfilehash: a8a159813dba899cf79a13f15d10e2ff10c11494
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Azure Information Protection 클라이언트는 문서 및 전자 메일에 다음을 적용할 수 있습니다.
 
@@ -194,7 +194,7 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>기본적으로 보호할 수 없는 파일
 
-암호로 보호되어 있는 모든 파일은 Azure Information Protection 클라이언트를 통해 기본적으로 보호할 수 없습니다. 암호로 보호된 PDF 파일을 가장 많이 보지만, Office 앱과 같은 다른 응용 프로그램도 이 기능을 제공합니다.
+암호로 보호된 파일은 파일이 보호 기능을 적용하는 응용 프로그램에서 현재 열려 있지 않으면 Azure Information Protection 클라이언트에서 기본적으로 보호할 수 없습니다. 암호로 보호된 PDF 파일을 가장 많이 보지만, Office 앱과 같은 다른 응용 프로그램도 이 기능을 제공합니다.
 
 또한 Windows용 Azure Information Protection 클라이언트는 다음과 같은 상황에서 다음 파일을 볼 수는 있지만 기본적으로 PDF 파일을 보호(또는 보호 해제)할 수 없습니다.
 

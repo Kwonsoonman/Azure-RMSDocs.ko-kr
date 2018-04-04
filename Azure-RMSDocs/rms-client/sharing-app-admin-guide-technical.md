@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 앱에 대한 기술 개요 - AIP"
-description: "Windows용 RMS 공유 응용 프로그램 배포를 담당하는 기업 네트워크의 관리자와 관련된 기술 세부 정보를 제공합니다."
+title: RMS 공유 앱에 대한 기술 개요 - AIP
+description: Windows용 RMS 공유 응용 프로그램 배포를 담당하는 기업 네트워크의 관리자와 관련된 기술 세부 정보를 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 06/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1bb3308dc6e0561109602411fea3e63252fb9d4
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: c4f37d2c3e7a90171662d91a4f78d61b629dd650
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 
 Microsoft Rights Management 공유 응용 프로그램은 선택적으로 다운로드 가능하며 다음 기능을 제공하는 Microsoft Windows 및 기타 플랫폼용 응용 프로그램입니다.
@@ -101,7 +101,7 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 
 기본적으로 기본 보호가 적용되는 모든 파일에 대해 RMS 공유 응용 프로그램이 일반 보호를 적용하도록 구성하려면 다음 레지스트리를 편집합니다. RmsSharingApp 또는 FileProtection 키가 없으면 직접 만들어야 합니다.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: 이름이 \* 인 새 키를 만듭니다.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: 이름이 *인 새 키를 만듭니다.
 
     이 설정은 임의의 파일 이름 확장명이 지정된 파일을 나타냅니다.
 

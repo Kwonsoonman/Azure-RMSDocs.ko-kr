@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection 정책 구성"
-description: "분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다."
+title: Azure Information Protection 정책 구성
+description: 분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9dda33998de8f37af5dd5acd1c234a8029cc6d02
-ms.sourcegitcommit: 2749d8d41fd374a9e4e2697a684eeb2bf85082d8
+ms.openlocfilehash: a0194b1cf6b1b134c3fd37ae9f042f117570d9ce
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
->*적용 대상: Azure Information Protection*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다. 이 정책은 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치한 컴퓨터에 다운로드됩니다.
 

@@ -1,26 +1,26 @@
 ---
-title: "소프트웨어 보호된 키-HSM 보호된 키 마이그레이션 - AIP"
-description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
+title: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션 - AIP
+description: AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d942e51994c6db3ee0c3e1127991a7007ed91f92
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: 659fbe634326e7571f489b1ae2e1bc4176eadb0a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 
 [AD RMS에서 Azure Information Protection으로 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS 키가 소프트웨어로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다. 
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/20/2017
 
 Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure Information Protection 외에도 Azure Key Vault에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure Key Vault를 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
 
-시작하기 전에 조직에 Azure 주요 자격 증명 모음에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. Azure Information Protection 전용의 키 자격 증명 모음은 필수는 아니지만 갖고 있으면 좋습니다. 이 키 자격 증명 모음은 Azure Information Protection의 Azure Rights Management 서비스에서 액세스하도록 구성되어, Azure Information Protection 키만 이 키 자격 증명 모음에 저장될 수 있게 합니다.
+시작하기 전에 조직에 Azure Key Vault에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. Azure Information Protection 전용의 키 자격 증명 모음은 필수는 아니지만 갖고 있으면 좋습니다. 이 키 자격 증명 모음은 Azure Information Protection의 Azure Rights Management 서비스에서 액세스하도록 구성되어, Azure Information Protection 키만 이 키 자격 증명 모음에 저장될 수 있게 합니다.
 
 
 > [!TIP]
@@ -122,7 +122,7 @@ Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하
 
 Azure 주요 자격 증명 모음으로 키를 전송하기 전에 권한이 낮춰진 키 복사본을 만들고(4.1단계) 키를 암호화할 때(4.3단계) KeyTransferRemote.exe 유틸리티가 **Result: SUCCESS**를 반환하는지 확인합니다.
 
-키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**과 같이 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Information Protection의 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
+키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**과 유사하게 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Information Protection의 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
 
 그러면 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet을 사용하여 Key Vault에 액세스할 Azure Rights Management 서비스 주체에 권한을 부여할 수 있습니다. 필요한 권한은 decrypt, encrypt, unwrapkey, wrapkey, verify 및 sign입니다.
 
@@ -130,7 +130,7 @@ Azure 주요 자격 증명 모음으로 키를 전송하기 전에 권한이 낮
     
     Set-AzureRmKeyVaultAccessPolicy -VaultName "contosorms-byok-kv" -ResourceGroupName "contosorms-byok-rg" -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,encrypt,unwrapkey,wrapkey,verify,sign,get
 
-이제 HSM 키를 Azure 주요 자격 증명 모음으로 전송했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
+이제 HSM 키를 Azure Key Vault로 전송했으므로 AD RMS 구성 데이터를 가져올 수 있습니다.
 
 ## <a name="part-3-import-the-configuration-data-to-azure-information-protection"></a>3부: 구성 데이터를 Azure Information Protection으로 가져오기
 

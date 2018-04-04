@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 앱을 사용하여 내부에서 보호 - AIP"
-description: "컴퓨터, 서버 또는 다른 저장 장치에 파일을 안전하게 저장하는 방법에 대한 지침을 제공합니다."
+title: RMS 공유 앱을 사용하여 내부에서 보호 - AIP
+description: 컴퓨터, 서버 또는 다른 저장 장치에 파일을 안전하게 저장하는 방법에 대한 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a0654dba53f493551b2cc4d1fbb8790f246e0c18
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 0d819fd242e57402a790e9acb40ffa48eeb701b4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(내부 보호)
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 파일을 내부에서 보호하면 보호되지 않는 원본 파일을 대체합니다. 그러면 파일을 원 위치에 남겨 두고 다른 폴더나 장치에 복사하거나, 파일이 들어 있는 폴더를 공유하여 파일을 보호할 수 있습니다. 메일을 통해 보호된 파일을 공유하는 권장 방법은 파일 탐색기나 Office 응용 프로그램에서 직접 공유하는 것이지만 보호된 파일을 메일 메시지에 첨부할 수도 있습니다([Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md) 참조).
 

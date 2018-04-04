@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 앱의 대화 상자 옵션 - AIP"
-description: "RMS 공유 응용 프로그램의 보호 추가 대화 상자 또는 보호된 항목 공유 대화 상자에서 옵션을 지정하는 방법을 설명합니다. 공유하는 파일을 보호하거나 준비된 파일을 보호하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다."
+title: RMS 공유 앱의 대화 상자 옵션 - AIP
+description: RMS 공유 응용 프로그램의 보호 추가 대화 상자 또는 보호된 항목 공유 대화 상자에서 옵션을 지정하는 방법을 설명합니다. 공유하는 파일을 보호하거나 준비된 파일을 보호하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 190d8ac29bec0fc3825eb9fe099e06bd16e2112f
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 429be436bc1a9fec3d31933d9cb6e8f88de7506a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 이 정보를 사용하여 RMS 공유 응용 프로그램 **보호 추가** 대화 상자 또는 **보호된 항목 공유** 대화 상자에서 옵션을 지정하게 합니다. [공유하는 파일을 보호](sharing-app-protect-by-email.md)하거나 [준비된 파일을 보호](sharing-app-protect-in-place.md)하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다.
 

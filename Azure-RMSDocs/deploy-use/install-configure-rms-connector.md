@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 커넥터 설치 및 구성 - AIP"
-description: "Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 1~4단계를 설명합니다."
+title: Rights Management 커넥터 설치 및 구성 - AIP
+description: Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 1~4단계를 설명합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 73cbcc73b2ce96b2e41f6fef90d70cee71ee3dff
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: a1526c3efea1a03a82baed526d65b748d2aa7bae
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 설치 및 구성할 수 있습니다. 이러한 절차는 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)의 1-4단계를 설명합니다.
 
@@ -216,7 +216,7 @@ HTTPS 옵션을 사용하는 경우 커넥터를 실행하는 모든 서버에 E
 
 3.  **ProxyAddress**의 문자열 값을 추가한 후 이 값의 데이터가 **http://&lt;MyProxyDomainOrIPaddress&gt;:&lt;MyProxyPort&gt;**가 되도록 설정합니다.
 
-    예를 들어 **http://proxyserver.contoso.com:8080**입니다.
+    예: **http://proxyserver.contoso.com:8080**
 
 4.  레지스트리 편집기를 닫은 후 서버를 다시 시작하거나 IISReset 명령을 수행하여 IIS를 다시 시작합니다.
 

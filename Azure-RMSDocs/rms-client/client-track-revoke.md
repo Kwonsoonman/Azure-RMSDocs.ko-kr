@@ -1,26 +1,26 @@
 ---
-title: "문서 추적 및 취소 - Azure Information Protection"
-description: "문서를 보호한 후에는 사용자들이 해당 문서를 사용하는 방식을 추적할 수 있습니다. 그리고 필요에 따라 사용자들이 더 이상 이러한 문서를 읽을 수 없도록 문서 액세스 권한을 해지할 수도 있습니다."
+title: 문서 추적 및 취소 - Azure Information Protection
+description: 문서를 보호한 후에는 사용자들이 해당 문서를 사용하는 방식을 추적할 수 있습니다. 그리고 필요에 따라 사용자들이 더 이상 이러한 문서를 읽을 수 없도록 문서 액세스 권한을 해지할 수도 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c8d326b68b5f60e8223112d2d5bd28ed3925bc
-ms.sourcegitcommit: 832d3ef5f9c41d6adb18a8cf5304f6048cc7252e
+ms.openlocfilehash: 84f5f0ed8b98895b8c056ff03295afef379e6b74
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>사용자 가이드: Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지
 
->*적용 대상: Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
 
 Azure Information Protection을 사용하여 문서를 보호한 후에는 사용자들이 해당 문서를 사용하는 방식을 추적할 수 있습니다. 그리고 필요에 따라 사용자들이 더 이상 이러한 문서를 읽을 수 없도록 문서 액세스 권한을 해지할 수도 있습니다. 이렇게 하려면 **문서 추적 사이트**를 사용합니다. 이 사이트는 Windows 컴퓨터와 Mac 컴퓨터뿐 아니라 태블릿과 휴대폰에서도 액세스할 수 있습니다.
 

@@ -1,26 +1,26 @@
 ---
-title: "AD RMS-Azure Information Protection 마이그레이션 - 1단계"
-description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 첫 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 1~3단계가 포함됩니다."
+title: AD RMS-Azure Information Protection 마이그레이션 - 1단계
+description: AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 첫 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 1~3단계가 포함됩니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c74bbf88adced03ba73c2431c4c3ccd2ea3359d1
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: ea4c121d8945aabb4bb5a13a043a100e32e5924a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migration-phase-1---preparation"></a>마이그레이션 1단계 - 준비
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 AD RMS에서 Azure Information Protection으로 마이그레이션 1단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 1~3단계를 설명하고 사용자에게 아무런 영향을 주지 않으면서 마이그레이션을 위한 환경을 준비합니다.
 

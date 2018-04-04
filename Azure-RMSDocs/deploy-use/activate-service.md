@@ -1,26 +1,26 @@
 ---
-title: "Azure Rights Management 활성화 - AIP"
-description: "조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 문서 및 전자 메일 보호를 시작할 수 있도록 하려면 Azure Rights Management 서비스를 활성화해야 합니다."
+title: Azure Rights Management 활성화 - AIP
+description: 조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 문서 및 전자 메일 보호를 시작할 수 있도록 하려면 Azure Rights Management 서비스를 활성화해야 합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d521b105b3cc8077a5e30a825007e18f9b5a59f0
-ms.sourcegitcommit: 23d98a405057d61a737313c8dfef042996131d3e
+ms.openlocfilehash: 7c257b16737a916d597be858fcfeaf6c475bb423
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="activating-azure-rights-management"></a>Azure 권한 관리 활성화
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
 > 이 구성 정보는 조직의 모든 사용자에게 적용되는 서비스를 담당하는 관리자를 위해 작성되었습니다. 특정 응용 프로그램용 Rights Management 기능을 사용하기 위한 사용자 도움말 및 정보 또는 권한으로 보호된 파일 또는 메일을 여는 방법에 대한 정보를 원하는 경우 응용 프로그램을 함께 제공되는 지침 및 도움말을 사용하세요.

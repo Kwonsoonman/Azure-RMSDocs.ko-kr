@@ -1,24 +1,24 @@
 ---
-title: "Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿 구성"
-description: "Azure Information Protection 정책에서 언어를 지정하고 번역을 가져오는 방식으로 Information Protection 표시줄에 표시되는 레이블과 표시되는 템플릿에 대한 다른 언어 지원을 추가할 수 있습니다."
+title: Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿 구성
+description: Azure Information Protection 정책에서 언어를 지정하고 번역을 가져오는 방식으로 Information Protection 표시줄에 표시되는 레이블과 표시되는 템플릿에 대한 다른 언어 지원을 추가할 수 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: dee720e99a3671dec788e048fac6f28c3992daa0
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: b3341237d494766242ef790798ad1f97404919e9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿을 구성하는 방법
 
->*적용 대상: Azure Information Protection*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Azure Information Protection의 기본 레이블이 여러 언어를 지원하더라도 지정하는 레이블 이름 및 설명에 대한 지원을 구성해야 합니다. 이 구성을 사용하려면 다음을 수행해야 합니다.
 

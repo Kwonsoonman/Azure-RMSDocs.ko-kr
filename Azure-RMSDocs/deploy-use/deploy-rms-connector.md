@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87746ad526f191907ad2670604c357e5e926b84e
-ms.sourcegitcommit: 758e0cfeb6c05f4c6f5310dc36fbf0c02c256eed
+ms.openlocfilehash: d389816fbe438cbf13ddbe1302872f81afcb6bf5
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 배포
 
->*적용 대상: Azure Information Protection, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 이 정보를 이용하여 Azure 권한 관리 커넥터와 이 커넥터를 조직에 배포하는 방법에 대해 알아보세요. 이 커넥터는 **Microsoft Exchange Server**, **SharePoint Server** 또는 Windows Server 및 **FCI(파일 분류 인프라)**를 실행하는 파일 서버를 사용하는 기존 온-프레미스 배포의 데이터를 보호합니다.
 

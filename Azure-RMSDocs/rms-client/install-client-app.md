@@ -1,28 +1,30 @@
 ---
-title: "Azure Information Protection 클라이언트 다운로드 및 설치"
-description: "문서와 전자 메일을 분류하고 보호할 수 있도록 Windows용 Azure Information Protection 클라이언트를 설치하는 사용자용 지침을 제공합니다."
+title: Azure Information Protection 클라이언트 다운로드 및 설치
+description: 문서와 전자 메일을 분류하고 보호할 수 있도록 Windows용 Azure Information Protection 클라이언트를 설치하는 사용자용 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 190a6a371e67417139e033c0b5472042a24b2502
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: c5e048c5418b956ddb881ed2eb63ad0cc257bde4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트를 다운로드 및 설치
 
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
+
 관리자가 Azure Information Protection 클라이언트를 설치하지 않는 경우 직접 설치할 수 있습니다. 이 클라이언트를 설치하여 문서 및 전자 메일에 레이블을 지정하고 보호하려면 PC의 로컬 관리자여야 합니다.
 
-이 밖에도 다음 지침을 따릅니다.
+또한,
 
 - Azure Information Protection 클라이언트에는 최소한 Microsoft .NET Framework 4.6.2 버전이 필요하며, 이 프로그램이 없으면 설치 관리자는 이 필수 구성 요소를 다운로드한 후 설치하려고 합니다. 이 필수 구성 요소가 클라이언트 설치의 일부로 설치된 경우 컴퓨터를 다시 시작해야 합니다.
 

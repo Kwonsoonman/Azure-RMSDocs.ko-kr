@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 응용 프로그램&colon; 설치 및 구성"
-description: "관리자가 Windows 컴퓨터 및 모바일 장치에서 RMS(Rights Management) 공유 응용 프로그램을 배포하는 방법을 설명합니다."
+title: RMS 공유 응용 프로그램&colon; 설치 및 구성
+description: 관리자가 Windows 컴퓨터 및 모바일 장치에서 RMS(Rights Management) 공유 응용 프로그램을 배포하는 방법을 설명합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 65b4a60909f93090fa2e6d27660e1ed20f410955
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: 6acedb72d270bb5d4153701a6d42aa2757fbacbd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](../rms-client/aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 

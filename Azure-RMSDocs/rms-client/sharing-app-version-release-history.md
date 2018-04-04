@@ -1,27 +1,27 @@
 ---
-title: "RMS 공유 앱&colon; 버전 릴리스 기록 - AIP"
-description: "Windows용 Rights Management 공유 응용 프로그램의 각 릴리스에서 새롭게 추가되었거나 변경된 기능을 살펴봅니다."
+title: RMS 공유 앱&colon; 버전 릴리스 기록 - AIP
+description: Windows용 Rights Management 공유 응용 프로그램의 각 릴리스에서 새롭게 추가되었거나 변경된 기능을 살펴봅니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.custom: askipteam
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ed3725f65d5e1b357a2cd1cda1e28a8ddcb8fae6
-ms.sourcegitcommit: 79aa9838956f755994efcb97cef6dd5d1892f06f
+ms.openlocfilehash: 1e3dc88f69b1fb4ed178f3f2d1268c47fae13621
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>Rights Management 공유 응용 프로그램: 버전 릴리스 기록
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights Management 공유 응용 프로그램을 정기적으로 업데이트합니다. 다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다.
 

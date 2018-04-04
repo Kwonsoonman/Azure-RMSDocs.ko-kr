@@ -1,27 +1,27 @@
 ---
-title: "Azure RMS에 대한 FAQ - AIP"
-description: "데이터 보호 서비스인 Azure Information Protection의 Azure Rights Management 서비스(Azure RMS)의 몇 가지 질문과 대답입니다."
+title: Azure RMS에 대한 FAQ - AIP
+description: 데이터 보호 서비스인 Azure Information Protection의 Azure Rights Management 서비스(Azure RMS)의 몇 가지 질문과 대답입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bf640c7faf6bcd5ce7467547095b44f09e72fa8c
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: b1968f277ca7c9237487d4d767b8a85eb15a9331
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 데이터 보호 서비스인 Azure Information Protection의 Azure Rights Management 서비스에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
@@ -156,7 +156,7 @@ Outlook을 열고 Office 365 회사 또는 학교 계정을 사용하여 프로�
 
 전자 메일 메시지 또는 문서를 보호하려면 **옵션** 탭에서 **사용 권한**을 클릭하고 전자 메일이나 문서를 보호하는 옵션 또는 템플릿을 선택합니다.
 
-문서를 호환 후 추적하려면 Azure Information Protection 클라이언트가 설치된 Windows 컴퓨터에서 Office 응용 프로그램 또는 파일 탐색기를 사용하여 해당 문서를 문서 추적 사이트에 등록합니다. 자세한 내용은 [문서 추적 및 취소](../rms-client/client-track-revoke.md)를 참조하세요. Mac 컴퓨터에서는 웹 브라우저를 사용하여 문서 추적 사이트 (https://track.azurerms.com) 로 이동한 후 이 문서를 추적 및 취소할 수 있습니다.
+문서를 호환 후 추적하려면 Azure Information Protection 클라이언트가 설치된 Windows 컴퓨터에서 Office 응용 프로그램 또는 파일 탐색기를 사용하여 해당 문서를 문서 추적 사이트에 등록합니다. 자세한 내용은 [문서 추적 및 취소](../rms-client/client-track-revoke.md)를 참조하세요. Mac 컴퓨터에서는 웹 브라우저를 사용하여 문서 추적 사이트(https://track.azurerms.com))로 이동한 후 이 문서를 추적 및 취소할 수 있습니다.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>RMS로 보호된 Office 문서를 열면 연결된 임시 파일도 RMS로 보호되나요?
 아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 장치에 있습니다.

@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection 클라이언트에서 PowerShell 사용"
-description: "PowerShell을 사용하여 Azure Information Protection 클라이언트를 관리하는 관리자를 위한 지침 및 정보입니다."
+title: Azure Information Protection 클라이언트에서 PowerShell 사용
+description: PowerShell을 사용하여 Azure Information Protection 클라이언트를 관리하는 관리자를 위한 지침 및 정보입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5bd2af4da402c0096cb58bba1d44684ad73656d6
-ms.sourcegitcommit: 335c854eb5c6f387a9369d4b6f1e22160517e6ce
+ms.openlocfilehash: 32ae599bc9251fd1504adc2b7c60190e9d78f5fd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 PowerShell 사용
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Azure Information Protection 클라이언트를 설치할 때, PowerShell 명령이 자동으로 설치됩니다. 그러면 자동화를 위해 스크립트에 둘 수 있는 명령을 실행하여 클라이언트를 관리할 수 있습니다.
 
@@ -238,9 +238,11 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
 1. Get-AadrmConfiguration cmdlet을 다시 실행하고 **CertificationExtranetDistributionPointUrl** 및 **LicensingExtranetDistributionPointUrl** 값을 적어둡니다.
 
-2. AzureInformationProtection cmdlet을 실행할 각 컴퓨터에서 레지스트리 편집기를 열고 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC`로 이동합니다.
+2. AzureInformationProtection cmdlet을 실행할 각 컴퓨터에서 레지스트리 편집기를 엽니다.
 
-3. **ServiceLocation** 키가 표시되지 않으면 만듭니다. 그러면 레지스트리 경로에 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation**이 표시됩니다.
+3. 다음 경로로 이동합니다. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation` 
+    
+    **MSIPC** 키 또는 **ServiceLocation** 키가 표시되지 않으면 해당 키를 만듭니다.
 
 4. **ServiceLocation** 키가 없으면 **EnterpriseCertification** 및 **EnterprisePublishing** 이름의 키 2개를 만듭니다. 
     

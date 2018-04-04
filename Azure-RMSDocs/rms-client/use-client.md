@@ -1,27 +1,27 @@
 ---
-title: "Azure Information Protection용 클라이언트"
-description: "Microsoft Azure Information Protection은 조직 데이터를 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다. 클라이언트(Azure Information Protection 클라이언트 또는 Rights Management 클라이언트)는 컴퓨터와 모바일 장치에서 실행하는 응용 프로그램과 통합됩니다."
+title: Azure Information Protection용 클라이언트
+description: Microsoft Azure Information Protection은 조직 데이터를 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다. 클라이언트(Azure Information Protection 클라이언트 또는 Rights Management 클라이언트)는 컴퓨터와 모바일 장치에서 실행하는 응용 프로그램과 통합됩니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb09862e5a265b8c5c8f2b81a08582181547df84
-ms.sourcegitcommit: 1c3ebf4ad64b55db4fec3ad007fca71ab7d38c02
+ms.openlocfilehash: efbc164b27e1dfe1b839e2ace893c4e3c5e656aa
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure Information Protection의 클라이언트 측면
 
->*적용 대상: Active Directory Rights Management Services, Azure Rights Management, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Azure Information Protection은 조직의 문서와 전자 메일을 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다.
 

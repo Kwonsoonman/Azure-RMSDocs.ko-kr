@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection 사용자 가이드"
-description: "Windows용 Azure Information Protection 클라이언트를 사용하면 전자 메일을 다른 위치로 전달하거나 문서를 다른 위치에 저장할 때도 중요한 문서와 전자 메일을 확인해서는 안 되는 사용자로부터 안전하게 유지할 수 있습니다."
+title: Azure Information Protection 사용자 가이드
+description: Windows용 Azure Information Protection 클라이언트를 사용하면 전자 메일을 다른 위치로 전달하거나 문서를 다른 위치에 저장할 때도 중요한 문서와 전자 메일을 확인해서는 안 되는 사용자로부터 안전하게 유지할 수 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f1ea192bcacc856b1a4452e2ad3b21f4de45d511
-ms.sourcegitcommit: 92bbef77091c66300e0d2acce60c064ffe314752
+ms.openlocfilehash: 1e6ce5660a0ccc8385c6ab728c4d2c1c202023ed
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure Information Protection 사용자 가이드
 
->*적용 대상: Active Directory Rights Management 서비스, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
 
 Windows용 Azure Information Protection 클라이언트를 사용하면 전자 메일을 다른 위치로 전달하거나 문서를 다른 위치에 저장할 때도 중요한 문서와 전자 메일을 확인해서는 안 되는 사용자로부터 안전하게 유지할 수 있습니다. 이 클라이언트를 사용하여 Azure Information Protection에서 권한 관리 보호 기술을 통해 다른 사용자가 보호한 문서를 열 수도 있습니다.
 

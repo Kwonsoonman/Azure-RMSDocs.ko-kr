@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection용 범위 지정 정책 구성"
-description: "특정 사용자에 대해 다른 설정과 레이블을 구성하려면 Azure Information Protection용 범위 지정 정책을 구성해야 합니다."
+title: Azure Information Protection용 범위 지정 정책 구성
+description: 특정 사용자에 대해 다른 설정과 레이블을 구성하려면 Azure Information Protection용 범위 지정 정책을 구성해야 합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 081766a70c6d142e3016797708e347d2b9bc2204
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: fd8299c734ca039db621208e53dba570047e61af
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>범위 지정 정책을 사용하여 특정 사용자용 Azure Information Protection 정책을 구성하는 방법
 
->*적용 대상: Azure Information Protection*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)가 설치되어 있는 컴퓨터에 Azure Information Protection 정책을 다운로드하면 모든 사용자가 기본 정책의 설정 및 레이블 또는 글로벌 정책에 대해 구성된 변경 내용을 받게 됩니다. 특정 사용자에게 설정/레이블 변경 내용을 추가로 제공하려는 경우에는 해당 사용자용으로 구성된 **범위 지정 정책**을 만들어야 합니다.
 

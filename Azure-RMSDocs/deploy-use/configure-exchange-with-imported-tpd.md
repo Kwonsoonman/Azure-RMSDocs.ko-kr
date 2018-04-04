@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection의 Azure Rights Management 서비스용 Exchange Online IRM 구성"
-description: "Office 365 테넌트가 Office 365 메시지 암호화의 새로운 기능을 지원하지 않을 때 관리자가 Azure Rights Management 서비스를 위해 Exchange Online을 구성하기 위한 정보 및 지침."
+title: Azure Information Protection의 Azure Rights Management 서비스용 Exchange Online IRM 구성
+description: Office 365 테넌트가 Office 365 메시지 암호화의 새로운 기능을 지원하지 않을 때 관리자가 Azure Rights Management 서비스를 위해 Exchange Online을 구성하기 위한 정보 및 지침.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
-ms.assetid: 
+ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a0c6fe7f7b6a34eea21b646ce5573ca03b13be3c
-ms.sourcegitcommit: cd3320fa34acb90f05d5d3e0e83604cdd46bd9a9
+ms.openlocfilehash: 022eb960ef58e69c0a4c2d8a76962ed792a9ed38
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="exchange-online-irm-configuration-when-you-have-imported-a-trusted-publishing-domain"></a>트러스트된 게시 도메인을 가져온 경우 Exchange Online IRM 구성
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 이전에 TPD(트러스트된 게시 도메인)를 가져와서 IRM용 Exchange Online을 미리 구성한 경우에만 이 지침을 사용하며, 이전에 암호화된 전자 메일의 암호를 해독할 수 있어야 합니다.
 

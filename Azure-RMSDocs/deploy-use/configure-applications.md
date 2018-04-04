@@ -1,26 +1,26 @@
 ---
-title: "Azure Rights Management용 응용 프로그램 구성 - AIP"
-description: "Azure Information Protection에 대한 Azure Rights Management 보호 서비스를 지원하도록 응용 프로그램 및 서비스를 구성하는 관리자에 대한 지침입니다. Word 2013, Word 2010등의 Office 응용 프로그램과 Exchange Online(전송 규칙, 데이터 손실 방지, 전달 금지, 메시지 암호화) 및 SharePoint Online(보호된 라이브러리) 등의 서비스를 예로 들 수 있습니다."
+title: Azure Rights Management용 응용 프로그램 구성 - AIP
+description: Azure Information Protection에 대한 Azure Rights Management 보호 서비스를 지원하도록 응용 프로그램 및 서비스를 구성하는 관리자에 대한 지침입니다. Word 2013, Word 2010등의 Office 응용 프로그램과 Exchange Online(전송 규칙, 데이터 손실 방지, 전달 금지, 메시지 암호화) 및 SharePoint Online(보호된 라이브러리) 등의 서비스를 예로 들 수 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/26/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ea09cbc5-b98b-444e-8b60-5bc3cb199c36
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e3030aca9e7b93d93df583934b2a6ad2f0013903
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 2477432e53a3aaeee89781a8bd7a595315e86561
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>Azure 권한 관리에 대해 응용 프로그램 구성
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
 > 이 정보는 Azure Information Protection을 배포한 IT 관리자 및 컨설턴트를 대상으로 합니다. 특정 응용 프로그램용 Rights Management 기능을 사용하는 방법이나 권한으로 보호된 파일을 여는 방법에 대한 정보와 사용자 도움말을 원하는 경우 응용 프로그램을 함께 제공되는 지침 및 도움말을 사용하세요.

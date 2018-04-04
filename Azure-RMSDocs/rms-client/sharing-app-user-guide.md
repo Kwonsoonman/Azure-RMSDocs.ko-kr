@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 앱 사용자 가이드 - AIP"
-description: "Windows용 Microsoft RMS(Rights Management) 공유 응용 프로그램을 사용하면 중요한 문서와 사진을 보아서는 안 되는 사용자에게 전자 메일로 보내거나 다른 장치에 저장한 경우에도 해당 사용자로부터 안전하게 보관할 수 있습니다."
+title: RMS 공유 앱 사용자 가이드 - AIP
+description: Windows용 Microsoft RMS(Rights Management) 공유 응용 프로그램을 사용하면 중요한 문서와 사진을 보아서는 안 되는 사용자에게 전자 메일로 보내거나 다른 장치에 저장한 경우에도 해당 사용자로부터 안전하게 보관할 수 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02eab7970b98cbc0ed27a3928a9a3c68ebd2927a
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: c361c3fadb1bc4a65d94c79f7a41f8aebb6f247a
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-user-guide"></a>Rights Management 공유 응용 프로그램 사용자 가이드
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 > [!IMPORTANT]
 > **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 

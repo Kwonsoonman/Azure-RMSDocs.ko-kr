@@ -1,26 +1,26 @@
 ---
-title: "Azure RMS 데이터 보호를 위한 서버 지원 - AIP"
-description: "Rights Management 커넥터를 통해 Azure Information Protection의 Azure Rights Management 서비스를 사용할 수 있는 온-프레미스 서버 제품을 식별합니다."
+title: Azure RMS 데이터 보호를 위한 서버 지원 - AIP
+description: Rights Management 커넥터를 통해 Azure Information Protection의 Azure Rights Management 서비스를 사용할 수 있는 온-프레미스 서버 제품을 식별합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/22/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 87e887bb121b3d92065153a5d264767ef87d517b
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: dbd75a31d5c4105f5a22051ca1460b62371ac413
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Rights Management 커넥터를 사용할 때 Azure Information Protection에서 지원되는 온-프레미스 서버 제품은 다음과 같습니다. 이 커넥터는 Azure Information Protection에서 Office 문서 및 메일을 보호하는 데 사용되는 온-프레미스 서버와 Azure Rights Management 서비스 간의 통신 인터페이스(릴레이) 역할을 합니다. 
 

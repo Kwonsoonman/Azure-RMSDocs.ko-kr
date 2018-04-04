@@ -1,26 +1,26 @@
 ---
-title: "클라이언트에서 AIP의 Azure RMS와 함께 Office 앱을 사용하도록 구성"
-description: "관리자가 Azure Information Protection의 Azure Rights Management 서비스에서 작동하도록 Office 앱을 구성하는 방법 및 지침을 제공합니다."
+title: 클라이언트에서 AIP의 Azure RMS와 함께 Office 앱을 사용하도록 구성
+description: 관리자가 Azure Information Protection의 Azure Rights Management 서비스에서 작동하도록 Office 앱을 구성하는 방법 및 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 52b3942d7918ada46cbdd7b45ed3925817e75f45
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: 79c3da1d2fcf9405389f5ceba25b81f4808713b8
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="office-apps-configuration-for-clients-to-use-the-azure-rights-management-service"></a>Office 앱: 클라이언트가 Azure Rights Management 서비스를 사용하도록 구성
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 이 정보를 사용하여 Office 앱이 Azure Information Protection의 Azure Rights Management 서비스와 함께 작동하기 위해 수행해야 하는 작업을 확인할 수 있습니다.

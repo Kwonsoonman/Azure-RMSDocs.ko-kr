@@ -1,26 +1,26 @@
 ---
-title: "AD RMS-Azure Information Protection 마이그레이션 - 3단계"
-description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 세 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 7단계가 포함됩니다."
+title: AD RMS-Azure Information Protection 마이그레이션 - 3단계
+description: AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 세 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 7단계가 포함됩니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 18ddadd2f46cdf20d437b2f754084bc25f737d8e
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: e5e1f0fa043a0a15ef34c9e4d5690e974cf6bddd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>마이그레이션 3단계 - 클라이언트 쪽 구성
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 AD RMS에서 Azure Information Protection으로 마이그레이션 3단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 7단계를 설명합니다.
 
@@ -132,7 +132,7 @@ Office 2016 간편 실행 데스크톱 앱을 사용하는 Windows 컴퓨터의 
     > [!IMPORTANT]
     > 앞서와 같이 주소 앞 또는 뒤에 추가 공백이 생기지 않도록 주의하세요.
     > 
-    > 또한 AD RMS 서버에서 SSL/TLS 서버 인증서를 사용하는 경우 라이선스 URL 값의 문자열에 포트 번호 **443**이 포함되어 있는지 확인하세요. 예: https:// rms.treyresearch.net:443/_wmcs/licensing 이 정보는 Active Directory Rights Management Services 콘솔에서 클러스터 이름을 클릭하고 **클러스터 세부 정보** 정보에서 확인할 수 있습니다. URL에 포함된 포트 번호 443이 포함된 경우 스크립트를 수정할 때 이 값을 포함하세요. 예: https://rms.treyresearch.net:**443**. 
+    > 또한 AD RMS 서버에서 SSL/TLS 서버 인증서를 사용하는 경우 라이선스 URL 값의 문자열에 포트 번호 **443**이 포함되어 있는지 확인하세요. 예: https:// rms.treyresearch.net:443/_wmcs/licensing 이 정보는 Active Directory Rights Management Services 콘솔에서 클러스터 이름을 클릭하고 **클러스터 세부 정보** 정보에서 확인할 수 있습니다. URL에 포함된 포트 번호 443이 포함된 경우 스크립트를 수정할 때 이 값을 포함하세요. 예, https://rms.treyresearch.net:**443**. 
     
     *&lt;테넌트 URL&gt;*의 Azure Rights Management 서비스 URL을 검색해야 할 경우 다시 [Azure Rights Management 서비스 URL을 식별하려면](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)을 참조하세요.
 

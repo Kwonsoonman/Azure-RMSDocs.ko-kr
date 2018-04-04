@@ -1,26 +1,26 @@
 ---
-title: "AD RMS-Azure Information Protection 마이그레이션 - 2단계"
-description: "AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 두 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 4~6단계가 포함됩니다."
+title: AD RMS-Azure Information Protection 마이그레이션 - 2단계
+description: AD RMS에서 Azure Information Protection으로 마이그레이션하는 과정의 두 번째 단계로, AD RMS에서 Azure Information Protection으로 마이그레이션 4~6단계가 포함됩니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 12/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0dff1b664cbac830dda2750cc6120ab4476c8183
-ms.sourcegitcommit: c5408506170bdb00d9e677b02161b9f61d4d5d3c
+ms.openlocfilehash: 9871c5890be8b5aa019d9788ecdfe929cfab0eb9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Office 365*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 4~6단계를 설명합니다.
 
@@ -114,7 +114,7 @@ PowerShell 세션을 열고 다음 명령을 실행합니다.
 
 **Azure Information Protection 테넌트가 이미 활성화된 경우에는 어떻게 하나요?** 조직에서 이미 Azure Rights Management 서비스가 활성화되어 있으며 마이그레이션 후 사용하려는 사용자 지정 템플릿을 만든 경우 이러한 템플릿을 내보내고 가져와야 합니다. 이 절차는 다음 단계에서 다룹니다. 
 
-## <a name="step-6-configure-imported-templates"></a>6단계. 가져온 템플릿 구성
+## <a name="step-6-configure-imported-templates"></a>6단계. 가져온 템플릿을 구성합니다.
 
 가져온 템플릿의 기본 상태는 **보관됨**이므로 사용자가 Azure Rights Management 서비스에서 이러한 템플릿을 사용할 수 있도록 하려면 이 상태를 **게시됨** 으로 변경해야 합니다.
 

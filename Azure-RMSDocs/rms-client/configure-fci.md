@@ -1,26 +1,26 @@
 ---
-title: "Windows Server FCI를 사용하는 Azure RMS 보호 - AIP"
-description: "RMS(Rights Management) 클라이언트와 Azure Information Protection 클라이언트를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하는 지침을 제공합니다."
+title: Windows Server FCI를 사용하는 Azure RMS 보호 - AIP
+description: RMS(Rights Management) 클라이언트와 Azure Information Protection 클라이언트를 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하는 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/13/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 49133bec323b00541c92ac3739fafab266cc92cf
-ms.sourcegitcommit: c157636577db2e2a2ba5df81eb985800cdb82054
+ms.openlocfilehash: be2c1a7c0432d3054eb5eced844ba42f402481d6
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
->*적용 대상: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 Azure Information Protection 클라이언트와 PowerShell을 사용하여 파일 서버 리소스 관리자 및 FCI(파일 분류 인프라)를 구성하려면 이 문서에 나와 있는 지침과 스크립트를 사용합니다.
 

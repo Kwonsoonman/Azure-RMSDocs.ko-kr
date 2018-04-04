@@ -4,7 +4,7 @@ description: Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/21/2018
+ms.date: 03/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9542eb6f679d931de556f706afa3b51cfd9d2bb8
-ms.sourcegitcommit: 58cd89cc6f6407648854e2e2d28a61325b5c8922
+ms.openlocfilehash: 91c7ec9b7d9c0ed1d85ccbdd0b4c7750fd5b007c
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection을 조직에 배포하기 전에 다음 필수 구성 요소가 준비되어 있는지 확인하세요. 
 
@@ -86,6 +86,8 @@ Azure Information Protection 클라이언트에서 Azure Rights Management 서�
 Azure Information Protection 클라이언트는 다음 Office 버전의 Office 응용 프로그램인 **Word**, **Excel**, **PowerPoint** 및 **Outlook**을 사용하여 문서 및 메일의 레이블을 지정하고 보호할 수 있습니다.
 
 - Office 365 ProPlus(2016 앱 또는 2013 앱 포함)(간편 실행 또는 Windows Installer 기반 설치)
+    
+    이러한 Office 버전은 Azure Information Protection에서 데이터 보호를 포함하는 Office 365 구독의 전부는 아니지만 대부분이 포함됩니다. Office 365 ProPlus가 포함되어 있는지 확인하려면 구독 정보를 확인합니다. 또한 이 정보는 [Azure Information Protection 데이터 시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)에서 찾을 수 있습니다.
 
 - Office Professional Plus 2016
 
@@ -93,7 +95,7 @@ Azure Information Protection 클라이언트는 다음 Office 버전의 Office �
 
 - Office Professional Plus 2010 서비스 팩 2
 
-다른 버전의 Office는 권한 관리 서비스를 사용하여 문서와 메일을 보호할 수 없습니다. 이러한 버전에서는 Azure Information Protection이 분류용으로만 지원됩니다. 보호를 적용하는 레이블은 Azure Information Protection 표시줄에 표시되지 않습니다. 
+다른 버전의 Office는 권한 관리 서비스를 사용하여 문서와 메일을 보호할 수 없습니다. 이러한 버전에서는 Azure Information Protection이 분류용으로만 지원됩니다. 따라서 보호를 적용하는 레이블은 Azure Information Protection 모음이나 Office 리본의 **보호** 단추에서 사용자에게 표시되지 않습니다. 
 
 Azure Information Protection 클라이언트는 동일한 컴퓨터에 여러 버전의 Office를 지원하지 않습니다. 또한 이 클라이언트는 Office의 사용자 계정 전환을 지원하지 않습니다.
 

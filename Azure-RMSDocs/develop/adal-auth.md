@@ -1,24 +1,24 @@
 ---
-title: "ADAL 인증을 위한 앱 구성 - AIP"
-description: "Azure ADAL 기반 인증을 사용하기 위한 Azure Information Protection 앱 구성 단계"
-keywords: "인증, RMS, ADAL, Information Protection,"
+title: ADAL 인증을 위한 앱 구성 - AIP
+description: Azure ADAL 기반 인증을 사용하기 위한 Azure Information Protection 앱 구성 단계
+keywords: 인증, RMS, ADAL, Information Protection,
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 4ff8fd5b3c188f73e2210a64ec770b3e5f347142
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 5900a011a4470a46cc86e1bca1ada32b43cb0213
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>ADAL 인증을 위한 앱 구성
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 01/11/2018
 
 다음이 필요합니다.
 
-- [Microsoft Azure에 대한 구독](https://azure.microsoft.com/en-us/)(무료 평가판이면 충분). 자세한 내용은 [사용자가 개인용 RMS를 등록하는 방법](../understand-explore/rms-for-individuals-user-sign-up.md)을 참조하세요.
-- Microsoft Azure 권한 관리에 대한 구독(무료 [개인용 RMS](https://technet.microsoft.com/en-us/library/dn592127.aspx) 계정이면 충분)
+- [Microsoft Azure에 대한 구독](https://azure.microsoft.com/)(무료 평가판이면 충분). 자세한 내용은 [사용자가 개인용 RMS를 등록하는 방법](../understand-explore/rms-for-individuals-user-sign-up.md)을 참조하세요.
+- Microsoft Azure 권한 관리에 대한 구독(무료 [개인용 RMS](https://technet.microsoft.com/library/dn592127.aspx) 계정이면 충분)
 
 > [!NOTE]
 > Microsoft Azure 권한 관리에 대한 구독이 있는지 여부에 대해서는 IT 관리자에게 문의하고 다음 단계를 수행하도록 요청하세요. 조직에 구독이 없는 경우 IT 관리자에게 만들어 달라고 요청해야 합니다. 또한 IT 관리자는 *Microsoft 계정*(예: Hotmail)이 아닌 *회사 또는 학교 계정*으로 가입되어 있어야 합니다.

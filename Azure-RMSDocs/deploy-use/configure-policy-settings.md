@@ -1,24 +1,24 @@
 ---
-title: "Azure Information Protection 정책 설정 구성"
-description: "모든 사용자와 모든 장치에 적용되는 Azure Information Protection 정책의 설정을 구성하는 방법을 설명합니다."
+title: Azure Information Protection 정책 설정 구성
+description: 모든 사용자와 모든 장치에 적용되는 Azure Information Protection 정책의 설정을 구성하는 방법을 설명합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 0a31316b2f69ffb2640fdd1672af4b740c863f85
-ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
+ms.openlocfilehash: 0ba75a1898d8618ebe38bcf2680e8a9623c79265
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 정책 설정을 구성하는 방법
 
->*적용 대상: Azure Information Protection*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 Azure Information Protection 정책에는 Information Protection 표시줄 제목과 도구 설명 외에 레이블에서 독립적으로 구성할 수 있는 다음과 같은 몇 가지 설정이 있습니다.
 
@@ -80,7 +80,7 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
     
     - **Azure Information Protection 클라이언트 "추가 정보" 웹 페이지에 대한 사용자 지정 URL 제공**: 사용자가 Office 응용 프로그램의 **홈** 탭에서 **보호** > **도움말 및 피드백**을 선택할 때 **Microsoft Azure Information Protection** 대화 상자의 **도움말 및 피드백** 섹션에 이 링크가 표시됩니다. 기본적으로 이 링크를 누르면 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동됩니다. 이 링크로 다른 웹 페이지로 이동하려면 HTTP 또는 HTTPS(권장) URL을 입력할 수 있습니다. 입력한 사용자 URL이 액세스 가능하거나 모든 장치에 올바로 표시되는지 확인하는 작업은 수행되지 않습니다.
         
-        예를 들어 지원 센터의 경우 클라이언트 설치 및 사용 방법에 대한 정보(**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 또는 릴리스 버전 정보(**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**)를 포함하는 Microsoft 설명서 페이지를 입력할 수 있습니다. 또는 사용자가 지원 센터에 문의할 때 필요한 정보를 포함하는 자체 웹 페이지나 구성한 레이블을 사용하는 방법을 단계별로 안내하는 비디오를 게시할 수 있습니다.
+        예를 들어 지원 센터의 경우, 클라이언트 설치 및 사용(**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 또는 릴리스 버전 정보(**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**)에 대한 정보를 포함하는 Microsoft 설명서 페이지를 입력할 수 있습니다. 또는 사용자가 지원 센터에 문의할 때 필요한 정보를 포함하는 자체 웹 페이지나 구성한 레이블을 사용하는 방법을 단계별로 안내하는 비디오를 게시할 수 있습니다.
 
 3. 변경 내용을 저장하려면 **Save**(저장)를 클릭합니다.
 

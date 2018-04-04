@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 앱을 사용하여 문서 추적 및 취소 - AIP"
-description: "RMS 공유 응용 프로그램을 사용하여 문서를 보호하고 나면 사용자들이 보호된 문서를 사용하는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다."
+title: RMS 공유 앱을 사용하여 문서 추적 및 취소 - AIP
+description: RMS 공유 응용 프로그램을 사용하여 문서를 보호하고 나면 사용자들이 보호된 문서를 사용하는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 71f08e7500fbc9326bed3a5b37d694ecc5e37984
-ms.sourcegitcommit: 02e48f0e5137ba777ec9a2bccde08130e6075c20
+ms.openlocfilehash: 86da59d624d197aaad25e3f6fb04cfdd47ad1c3e
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소
 
->*적용 대상: Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 조직에서 Active Directory Rights Management Services가 아닌 Azure Information Protection을 사용하고 있다면 RMS 공유 응용 프로그램을 사용하여 문서를 보호한 후에 보호된 문서가 사용되는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다. 이렇게 하려면 Windows 컴퓨터와 Mac 컴퓨터뿐 아니라 태블릿과 휴대폰에서도 액세스할 수 있는 **문서 추적 사이트**를 사용합니다.
 

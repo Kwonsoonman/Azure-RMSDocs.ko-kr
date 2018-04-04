@@ -1,24 +1,24 @@
 ---
-title: "Azure Information Protection 빠른 시작 자습서"
-description: "조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서입니다."
+title: Azure Information Protection 빠른 시작 자습서
+description: 조직에서 Microsoft Azure Information Protection 사용을 빠르게 시작하는 방법을 확인할 수 있는 20분 정도의 소개 자습서입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: e20b3e4d84b2230cf7bcbc64c31970fd53d5a7ae
-ms.sourcegitcommit: c2aecb470d0aab89baae237b892dcd82b3ad223e
+ms.openlocfilehash: 997c4c873eb7c9340fb765f513c1e06cd3725fdd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure Information Protection 빠른 시작 자습서 
 
->*적용 대상: Azure Information Protection*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 이 자습서를 사용하여 20분 정도에 완료할 수 있는 5단계를 통해 Azure Information Protection을 빠르게 사용해 보세요. 이 자습서는 Azure Information Protection에서 제공하는 기능 중 일부 경우를 빠르게 보여 주는 자가 주도형 데모로 만들어졌습니다. 사용 가능한 모든 기능이 포함되어 있지는 않으므로 조직에 대한 배포 가이드 목적이 아닙니다. 조직에 대한 Azure Information Protection을 배포하려면 [배포 로드맵 설명서](../plan-design/deployment-roadmap.md)를 참조하세요. 
 

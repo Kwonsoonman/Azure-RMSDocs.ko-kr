@@ -1,26 +1,26 @@
 ---
-title: "Office 앱 및 서비스가 AIP에서 Azure RMS를 지원하는 방법"
-description: "최종 사용자 Office 응용 프로그램(예: Word 및 Outlook) 및 Office 서비스(예: Exchange 및 SharePoint)에서 AIP의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다."
+title: Office 앱 및 서비스가 AIP에서 Azure RMS를 지원하는 방법
+description: '최종 사용자 Office 응용 프로그램(예: Word 및 Outlook) 및 Office 서비스(예: Exchange 및 SharePoint)에서 AIP의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다.'
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb40f6d2b43f175af71fd58b3bef4eb3d992152b
-ms.sourcegitcommit: faaab68064f365c977dfd1890f7c8b05a144a95c
+ms.openlocfilehash: be1c41c2f17720d522770f9e023c7468602ceb67
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 응용 프로그램 및 서비스에서 Azure Rights Management를 지원하는 방법 
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 최종 사용자 Office 응용 프로그램 및 Office 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호할 수 있습니다. 이 Office 응용 프로그램은 Word, Excel, PowerPoint 및 Outlook입니다. Office 서비스는 Exchange 및 SharePoint입니다. Azure Rights Management 서비스를 지원하는 Office 구성에서 종종 **IRM(정보 권한 관리)**이라는 용어를 사용합니다.
 
@@ -73,7 +73,7 @@ SharePoint 목록 및 라이브러리의 경우 항상 최종 사용자가 아�
 
 이렇게 하려면 먼저 SharePoint에 대해 IRM 서비스를 사용하도록 설정해야 합니다. 그런 다음 라이브러리의 IRM 사용 권한을 지정합니다. SharePoint Online 및 비즈니스용 OneDrive의 경우, 사용자는 비즈니스 라이브러리용 OneDrive에 대해 IRM 사용 권한도 지정할 수 있습니다. SharePoint는 템플릿에서 지정할 수 있는 몇 가지 설정과 일치하며 선택 가능한 SharePoint 구성 설정이 있더라도 권한 정책 템플릿을 사용하지 않습니다.
 
-SharePoint Server를 사용하는 경우에 Azure Rights Management 커넥터를 배포하여 이 IRM 보호 기능을 사용할 수 있습니다. 이 커넥터는 온-프레미스 서버와 Rights Management 클라우드 서비스 사이에서 릴레이 역할을 합니다. 자세한 내용은 [Azure 권한 관리 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
+SharePoint Server를 사용하는 경우에 Azure Rights Management 커넥터를 배포하여 이 IRM 보호 기능을 사용할 수 있습니다. 이 커넥터는 온-프레미스 서버와 Rights Management 클라우드 서비스 사이에서 릴레이 역할을 합니다. 자세한 내용은 [Azure Rights Management 커넥터 배포](../deploy-use/deploy-rms-connector.md)를 참조하세요.
 
 > [!NOTE]
 > 현재 SharePoint IRM을 사용하는 경우 다음과 같이 몇 가지 제한 사항이 있습니다.

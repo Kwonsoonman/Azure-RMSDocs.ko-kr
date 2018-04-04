@@ -1,26 +1,26 @@
 ---
-title: "사용자가 Azure RMS를 사용하여 파일을 보호할 수 있도록 지원 - AIP"
-description: "Azure Information Protection의 Azure RMS(Azure Rights Management)Rights Management 서비스를 배포 및 구성한 후 사용자, 관리자 및 지원 센터에 지침을 제공할 때 도움이 되는 정보를 제공합니다."
+title: 사용자가 Azure RMS를 사용하여 파일을 보호할 수 있도록 지원 - AIP
+description: Azure Information Protection의 Azure RMS(Azure Rights Management)Rights Management 서비스를 배포 및 구성한 후 사용자, 관리자 및 지원 센터에 지침을 제공할 때 도움이 되는 정보를 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 29a85bf1bf216c785a1b9cd6511069fe688327db
-ms.sourcegitcommit: 73973986ae7086e6f30cab579187241fd98bef61
+ms.openlocfilehash: 468550dd2389407b20d66adb814a7487988180bd
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 조직에 대해 Azure Information Protection을 배포 및 구성한 후에는 사용자, 관리자 및 지원 센터를 위해 도움말과 지침을 제공합니다.
 

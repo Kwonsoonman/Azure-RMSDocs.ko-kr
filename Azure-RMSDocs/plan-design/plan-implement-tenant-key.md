@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection 테넌트 키"
-description: "Azure Information Protection 테넌트 키를 계획 및 관리하는 데 도움이 되는 정보를 제공합니다. Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다."
+title: Azure Information Protection 테넌트 키
+description: Azure Information Protection 테넌트 키를 계획 및 관리하는 데 도움이 되는 정보를 제공합니다. Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 05b6a4facc4158cc7e2cb7ab4067c6b19566ef69
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.openlocfilehash: 714d00036d263cc64e44b67b547d743ff4cbab4b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키 계획 및 구현
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 이 문서의 정보는 Azure Information Protection 테넌트 키를 계획 및 관리하는 데 도움이 됩니다. 예를 들어 Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다.
 
@@ -149,7 +149,7 @@ Azure Key Vault 설명서를 사용하여 Azure Information Protection에 사용
 
 온-프레미스에서 HSM 보호 키를 만들어서 키 자격 증명 모음에 HSM 보호 키로 전송하려면 [Azure Key Vault용으로 HSM 보호 키를 생성하여 전송하는 방법](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/)의 절차를 따르십시오.
 
-Key Vault에 저장된 키에는 키 ID가 있습니다. 키 ID는 키 자격 증명 모음의 이름, 키 컨테이너, 키 이름 및 키 버전이 포함된 URL입니다. 예를 들면 다음과 같습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333** 이 키를 사용하려면 Key Vault URL을 지정하여 Azure Information Protection을 구성해야 합니다.
+Key Vault에 저장된 키에는 키 ID가 있습니다. 키 ID는 키 자격 증명 모음의 이름, 키 컨테이너, 키 이름 및 키 버전이 포함된 URL입니다. 예: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. 이 키를 사용하려면 Key Vault URL을 지정하여 Azure Information Protection을 구성해야 합니다.
 
 Azure Information Protection에서 키를 사용할 수 있으려면 조직의 키 자격 증명 모음에서 Azure Rights Management 서비스에 키를 사용할 수 있도록 권한을 부여해야 합니다. 그렇게 하려면 Azure Key Vault 관리자는 Key Vault PowerShell cmdlet([Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy))을 사용하고 GUID 00000012-0000-0000-c000-000000000000을 사용하여 Azure Rights Management 서비스 주체에 권한을 부여합니다. 예를 들면 다음과 같습니다.
 

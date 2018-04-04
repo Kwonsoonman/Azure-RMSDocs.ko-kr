@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection에 대한 FAQ"
-description: "Azure Information Protection과, 데이터 보호 서비스인 Azure Rights Management(Azure RMS)에 대한 몇 가지 질문과 대답입니다."
+title: Azure Information Protection에 대한 FAQ
+description: Azure Information Protection과, 데이터 보호 서비스인 Azure Rights Management(Azure RMS)에 대한 몇 가지 질문과 대답입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 604f675b34bfdc4dddb3c36c73c13dcccae40f11
-ms.sourcegitcommit: 2749d8d41fd374a9e4e2697a684eeb2bf85082d8
+ms.openlocfilehash: 42d3437b204f97b5d9caa4a2fa67b60fc1a570e4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 

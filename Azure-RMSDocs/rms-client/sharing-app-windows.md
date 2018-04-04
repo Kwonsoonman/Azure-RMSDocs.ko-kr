@@ -1,26 +1,26 @@
 ---
-title: "Windows용 Rights Management 공유 응용 프로그램 - AIP"
-description: "Windows용 Rights Management 공유 응용 프로그램의 정보 리소스를 소개합니다. 이 응용 프로그램은 AD RMS(Active Directory Rights Management Services) 또는 Azure Information Protection을 사용하는 조직과 자체 정보 보호 인프라가 없지만, Azure Information Protection을 사용하는 다른 조직에서 보호한 콘텐츠를 사용하려는 조직에서 무료로 다운로드할 수 있습니다."
+title: Windows용 Rights Management 공유 응용 프로그램 - AIP
+description: Windows용 Rights Management 공유 응용 프로그램의 정보 리소스를 소개합니다. 이 응용 프로그램은 AD RMS(Active Directory Rights Management Services) 또는 Azure Information Protection을 사용하는 조직과 자체 정보 보호 인프라가 없지만, Azure Information Protection을 사용하는 다른 조직에서 보호한 콘텐츠를 사용하려는 조직에서 무료로 다운로드할 수 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7d8a8abe-6de1-4088-90ee-e0c4bd6deec8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a496ed482f6973f03c63b3792fd1f3ccc4b9403e
-ms.sourcegitcommit: d7bdf865a06df2150b261c98b66503c1db7fed11
+ms.openlocfilehash: 4a5541e076fa4324c4a79df4d18daacc6b3dafb5
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rights-management-sharing-application-for-windows"></a>Windows용 권한 관리 공유 응용 프로그램
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!IMPORTANT]
 > **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 

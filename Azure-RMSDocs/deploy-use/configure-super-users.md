@@ -1,26 +1,26 @@
 ---
-title: "Azure Rights Management에 대한 슈퍼 사용자 구성 - AIP"
-description: "Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 있는 사용자와 서비스가 항상 읽고 검사할 수 있도록 하는 Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능 및 이 기능을 구현하는 방법을 설명합니다. ‘데이터 추론’이라고도 하는 이 기능은 조직 데이터에 대한 통제력을 유지하는 데 필수적인 요소입니다."
+title: Azure Rights Management에 대한 슈퍼 사용자 구성 - AIP
+description: Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 있는 사용자와 서비스가 항상 읽고 검사할 수 있도록 하는 Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능 및 이 기능을 구현하는 방법을 설명합니다. ‘데이터 추론’이라고도 하는 이 기능은 조직 데이터에 대한 통제력을 유지하는 데 필수적인 요소입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 686b1dc007da43ca5fbd68e510a3bff374867431
-ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
+ms.openlocfilehash: 5d35f7faed0e02a253e5ba48cbdb2bca0aa76419
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능을 사용하면 Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 부여된 사용자와 서비스가 항상 읽고 검사할 수 있습니다. 또한 필요한 경우 이전에 적용했던 보호를 변경하거나 제거할 수 있습니다. 
 

@@ -1,26 +1,26 @@
 ---
-title: "RMS 공유 앱으로 보호되는 공유 - AIP"
-description: "메일을 통해 문서를 안전하게 공유하는 방법에 대한 지침을 제공합니다."
+title: RMS 공유 앱으로 보호되는 공유 - AIP
+description: 메일을 통해 문서를 안전하게 공유하는 방법에 대한 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4110050a0e45fd75633bc27dd220f71855d50672
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 71bc303aaadf6856cce2f63db0acf5280fbe172b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 메일로 공유하는 파일 보호
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 메일을 통해 공유하는 파일을 보호하는 경우 원래 파일의 새 버전이 만들어집니다. 원래 파일은 보호되지 않은 상태로 유지되고 새 버전이 보호되며 보내는 메일에 자동으로 첨부됩니다.
 

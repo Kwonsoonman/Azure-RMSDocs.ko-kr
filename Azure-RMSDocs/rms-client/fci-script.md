@@ -1,26 +1,26 @@
 ---
-title: "Azure RMS 및 FCI용 PowerShell 스크립트 - AIP"
-description: "Windows Server 파일 분류 인프라를 사용하는 RMS 보호를 위한 지침에 설명된 대로 복사하고 편집할 수 있는 샘플 스크립트를 제공합니다."
+title: Azure RMS 및 FCI용 PowerShell 스크립트 - AIP
+description: Windows Server 파일 분류 인프라를 사용하는 RMS 보호를 위한 지침에 설명된 대로 복사하고 편집할 수 있는 샘플 스크립트를 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae6d8d0f-4ebc-43fe-a1f6-26b690fd83d0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dc43fa78b7c13dc1b4891690e0e29bfe4b0cc07c
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: d00e0037634601cd92b9f0858c197975ea9f896b
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>파일 서버 리소스 관리자 FCI를 사용하는 Azure RMS 보호용 Windows PowerShell 스크립트
 
->*적용 대상: Azure Information Protection, Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012, Windows Server 2012 R2*
 
 이 페이지에는 [Windows Server 파일 분류 인프라를 사용하는 RMS 보호](configure-fci.md)에 설명된 대로 복사하고 편집할 샘플 스크립트가 포함되어 있습니다.
 

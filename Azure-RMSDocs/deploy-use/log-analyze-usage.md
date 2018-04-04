@@ -1,26 +1,26 @@
 ---
-title: "Azure RMS 서비스의 사용 현황 로깅 및 분석 - AIP"
-description: "Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 사용하는 방법에 대한 정보와 지침을 제공합니다."
+title: Azure RMS 서비스의 사용 현황 로깅 및 분석 - AIP
+description: Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 사용하는 방법에 대한 정보와 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 09d076299f70718b65bb3746486f559a880a2660
-ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
+ms.openlocfilehash: b4a9c6b259e5863bb5be276f89beb0de33002ca4
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 이 정보를 통해 Azure Information Protection의 Azure Rights Management 서비스에 대한 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. 이 서비스는 조직의 문서 및 메일에 대한 데이터 보호를 제공하고 모든 요청을 기록할 수 있습니다. 이러한 요청에는 사용자가 문서 및 메일을 보호하고 이 콘텐츠를 사용하는 시기, 이 서비스에 대해 관리자가 수행하는 작업, Azure Information Protection 배포를 지원하기 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다. 
 

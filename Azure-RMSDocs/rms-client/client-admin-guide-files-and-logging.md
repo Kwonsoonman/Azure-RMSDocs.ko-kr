@@ -1,26 +1,26 @@
 ---
-title: "Azure Information Protection 클라이언트 파일 및 사용 현황 로깅"
-description: "Windows용 Azure Information Protection 클라이언트의 클라이언트 파일 및 사용 현황 로깅에 대한 정보"
+title: Azure Information Protection 클라이언트 파일 및 사용 현황 로깅
+description: Windows용 Azure Information Protection 클라이언트의 클라이언트 파일 및 사용 현황 로깅에 대한 정보
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 33047865430004f91eb85ec7e32bbfc3f2f6bbde
-ms.sourcegitcommit: f1d0b899e6d79ebef3829f24711f947316bca8ef
+ms.openlocfilehash: a60169a2c98a751c787a7ca4a8aee31f99a18590
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>관리자 가이드: Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Azure Information Protection 클라이언트를 설치한 후에 파일의 위치를 파악하고 클라이언트가 사용되는 방식을 모니터링해야 합니다.
 
@@ -95,7 +95,7 @@ Azure Rights Management 서비스의 사용 현황 로깅에 대한 자세한 �
 ## <a name="next-steps"></a>다음 단계
 Azure Information Protection 클라이언트와 연결된 모든 로그 파일을 파악했으므로 다음에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.
 
-- [Customizations](client-admin-guide-customizations.md)(사용자 지정)
+- [사용자 지정](client-admin-guide-customizations.md)
 
 - [문서 추적](client-admin-guide-document-tracking.md)
 

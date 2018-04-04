@@ -1,26 +1,26 @@
 ---
-title: "앱에서 AIP의 Azure Rights Management를 지원하는 방식"
-description: "Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 응용 프로그램과 Exchange, SharePoint 등의 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 통해 조직의 문서와 전자 메일을 보호하는 방식을 파악합니다."
+title: 앱에서 AIP의 Azure Rights Management를 지원하는 방식
+description: Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 응용 프로그램과 Exchange, SharePoint 등의 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 통해 조직의 문서와 전자 메일을 보호하는 방식을 파악합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6e66ada9f950f7b4cbeac3a98f548afd760e0c7a
-ms.sourcegitcommit: 55a71f83947e7b178930aaa85a8716e993ffc063
+ms.openlocfilehash: af3d103908aff785d48f70cc1cf89a7b9d17643e
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 정보를 사용하여 가장 일반적으로 사용하는 최종 사용자 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 통해 조직의 문서와 메일을 보호하는 방식을 파악할 수 있습니다. 이 응용 프로그램은 Word, Excel, PowerPoint 및 Outlook을 포함합니다. 서비스에는 Exchange 및 SharePoint가 포함됩니다.
 

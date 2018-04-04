@@ -1,26 +1,26 @@
 ---
-title: "HSM 보호된 키-HSM 보호된 키 마이그레이션 - AIP"
-description: "AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS HSM으로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다."
+title: HSM 보호된 키-HSM 보호된 키 마이그레이션 - AIP
+description: AD RMS에서 Azure Information Protection으로 마이그레이션 경로에 포함되며, AD RMS HSM으로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1a75a5db529ce3b520e38fb439c18a58230ceb0e
-ms.sourcegitcommit: 52ad844cd42479a56b1ae0e56ba0614f088d8a1a
+ms.openlocfilehash: c8ed0fd3e8daa2c03f179cf71c0c258b8ef79901
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 
 [AD RMS에서 Azure Information Protection으로 마이그레이션 경로](migrate-from-ad-rms-to-azure-rms.md)에 포함되며, AD RMS HSM으로 보호되고 Azure Key Vault의 HSM으로 보호된 테넌트 키를 사용하여 Azure Information Protection으로 마이그레이션하려는 경우에만 적용되는 지침에 대해 설명합니다. 
@@ -34,7 +34,7 @@ ms.lasthandoff: 07/20/2017
 
 Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 관리되므로 이 마이그레이션 부분에서는 Azure Information Protection 외에도 Azure Key Vault에서 관리가 필요합니다. 조직에서 고객 외에 다른 관리자가 Azure Key Vault를 관리하는 경우 해당 관리자와 조정하고 협력하여 이러한 절차를 완료해야 합니다.
 
-시작하기 전에 조직에 Azure 주요 자격 증명 모음에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. Azure Information Protection 전용의 키 자격 증명 모음은 필수는 아니지만 갖고 있으면 좋습니다. Azure Information Protection 키만 이 주요 자격 증명 모음에 저장될 수 있도록 이 주요 자격 증명 모음은 Azure Rights Management 서비스에 액세스 권한을 허용하도록 구성됩니다.
+시작하기 전에 조직에 Azure Key Vault에 만든 주요 자격 증명 모음이 있으며 HSM 보호된 키를 지원하는지 확인합니다. Azure Information Protection 전용의 키 자격 증명 모음은 필수는 아니지만 갖고 있으면 좋습니다. Azure Information Protection 키만 이 주요 자격 증명 모음에 저장될 수 있도록 이 주요 자격 증명 모음은 Azure Rights Management 서비스에 액세스 권한을 허용하도록 구성됩니다.
 
 
 > [!TIP]
@@ -49,7 +49,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
     - AD RMS 배포에서 생성된 동일한 키가 이미 있으므로 **테넌트 키 생성** 단계는 수행하지 마세요. 대신, Thales 설치의 AD RMS 서버에서 사용되는 키를 식별하고, 마이그레이션 중에 이 키를 사용해야 합니다. Thales 암호화된 키 파일 이름은 일반적으로 서버에서 로컬로 **key<*keyAppName*><*keyIdentifier*>**입니다.
 
-    키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333과 같이 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
+    키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333과 유사하게 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
 
 2. 인터넷에 연결된 워크스테이션의 PowerShell 세션에서 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet을 사용하여 Azure Rights Management 서비스 주체가 Azure Information Protection 테넌트 키를 저장하는 Key Vault에 액세스하도록 권한을 부여합니다. 필요한 권한은 decrypt, encrypt, unwrapkey, wrapkey, verify 및 sign입니다.
     

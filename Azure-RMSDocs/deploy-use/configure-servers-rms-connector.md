@@ -1,26 +1,26 @@
 ---
-title: "Rights Management 커넥터에 대해 서버 구성 - AIP"
-description: "Azure RMS(Rights Management) 커넥터를 사용할 온-프레미스 서버를 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 5단계를 설명합니다."
+title: Rights Management 커넥터에 대해 서버 구성 - AIP
+description: Azure RMS(Rights Management) 커넥터를 사용할 온-프레미스 서버를 구성하는 방법을 설명합니다. 이러한 절차는 Azure 권한 관리 커넥터 배포의 5단계를 설명합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 10/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 674acfafb305d8ac6ff530710ba311160c850288
-ms.sourcegitcommit: 8ba50d1fc813214b6e66baea140e626c74c5a518
+ms.openlocfilehash: c15c18f7d0a0f43e4f91193ee4a11b324f0187f2
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터에 대해 서버 구성
 
->*적용 대상: Azure Information Protection, Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2012, Windows Server 2012 R2*
 
 
 다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 사용할 온-프레미스 서버를 구성할 수 있습니다. 이러한 절차는 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)의 5단계를 설명합니다.
@@ -106,7 +106,7 @@ RMS 커넥터를 설치 및 구성했으면 커넥터를 통해 Azure Rights Man
     Get-help .\GenConnectorConfig.ps1 -detailed
     ```
 
-스크립트를 실행하려면 조직의 RMS 커넥터 URL을 입력해야 합니다. 프로토콜 접두사(HTTP:// 또는 HTTPS://)를 입력하고 DNS에서 커넥터의 부하 분산 주소에 대해 정의한 커넥터 이름을 입력합니다. https://connector.contoso.com을 예로 들 수 있습니다. 그러면 도구에서 해당 URL을 사용하여 RMS 커넥터를 실행 중인 서버에 연결하고 필요한 구성을 만드는 데 사용되는 다른 매개 변수를 가져옵니다.
+스크립트를 실행하려면 조직의 RMS 커넥터 URL을 입력해야 합니다. 프로토콜 접두사(HTTP:// 또는 HTTPS://)를 입력하고 DNS에서 커넥터의 부하 분산 주소에 대해 정의한 커넥터 이름을 입력합니다. 정의합니다(예: https://connector.contoso.com). 그러면 도구에서 해당 URL을 사용하여 RMS 커넥터를 실행 중인 서버에 연결하고 필요한 구성을 만드는 데 사용되는 다른 매개 변수를 가져옵니다.
 
 > [!IMPORTANT]
 > 이 도구를 실행할 때는 RMS 커넥터 서비스를 실행하는 단일 서버 이름이 아니라, 조직의 부하 분산된 RMS 커넥터 이름을 지정해야 합니다.
@@ -214,7 +214,7 @@ SharePoint 2010을 실행하는 서버에는 RMS 암호화 모드 2에 대한 �
 
 3.  SharePoint에서 IRM을 사용하도록 설정합니다. 자세한 내용은 SharePoint 라이브러리에서 [정보 권한 관리 구성(SharePoint Server 2010)](https://technet.microsoft.com/library/hh545607%28v=office.14%29.aspx)을 참조하세요.
 
-    다음 지침을 따를 때는 **이 RMS 서버 사용**을 지정하여 커넥터를 사용하도록 SharePoint를 구성한 후 구성한 부하 분산 커넥터 URL을 입력해야 합니다. 프로토콜 접두사(HTTP:// 또는 HTTPS://)를 입력하고 DNS에서 커넥터의 부하 분산 주소에 대해 정의한 커넥터 이름을 입력합니다. 예를 들어 프로그램 커넥터 이름이 https://connector.contoso.com 인 경우 구성은 다음 그림과 같이 표시됩니다.
+    다음 지침을 따를 때는 **이 RMS 서버 사용**을 지정하여 커넥터를 사용하도록 SharePoint를 구성한 후 구성한 부하 분산 커넥터 URL을 입력해야 합니다. 프로토콜 접두사(HTTP:// 또는 HTTPS://)를 입력하고 DNS에서 커넥터의 부하 분산 주소에 대해 정의한 커넥터 이름을 입력합니다. 예를 들어 커넥터 이름이 https://connector.contoso.com인 경우 구성은 다음 그림과 같이 표시됩니다.
 
     ![RMS 커넥터에 대한 SharePoint Server 구성](../media/AzRMS_SharePointConnector.png)
 

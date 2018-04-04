@@ -1,30 +1,30 @@
 ---
-title: "보안 모범 사례 | Microsoft Information Protection"
-description: "RMS 지원 응용 프로그램은 Azure Information Protection 모범 사례를 사용하여 빌드하면 가장 효율적입니다."
+title: 보안 모범 사례 | Microsoft Information Protection
+description: RMS 지원 응용 프로그램은 Azure Information Protection 모범 사례를 사용하여 빌드하면 가장 효율적입니다.
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.assetid: 4e9f72d5-9e7c-43e1-bb8a-5972dd22dcee
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 04fc73bac667b461a37e87a1c726c5a645495197
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 6c3669c1ada24afcf3b9ec48ea5bb9c38939b47e
+ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure Information Protection에 대한 보안 모범 사례
 
 AIP(Azure Information Protection) SDK(소프트웨어 개발 키트)는 모든 종류의 보호된 정보를 게시 및 사용하기 위한 강력한 시스템을 제공합니다. AIP 시스템이 최대한의 보호 기능을 제공하도록 하려면 AIP 사용 응용 프로그램을 AIP 모범 사례에 따라 빌드해야 합니다. AIP 사용 응용 프로그램은 이 에코시스템의 보안을 유지할 공동 책임이 있습니다. 보안 위험을 식별하고 응용 프로그램 개발 중 발생하는 위험을 완화하는 방법을 제공하면 덜 안전한 소프트웨어를 구현할 가능성을 최소화할 수 있습니다.
 
 Azure Information Protection SDK(소프트웨어 개발 키트)를 사용하여 응용 프로그램을 구현하기 위한 모범 사례에는 다음과 같은 범주의 제안이 포함됩니다.
-- [Threat Models and Mitigations](https://msdn.microsoft.com/en-us/library/aa362751.aspx)(위협 모델 및 완화 방법)
-- [Security Attacks](https://msdn.microsoft.com/en-us/library/aa362736.aspx)(보안 공격)
+- [Threat Models and Mitigations](https://msdn.microsoft.com/library/aa362751.aspx)(위협 모델 및 완화 방법)
+- [Security Attacks](https://msdn.microsoft.com/library/aa362736.aspx)(보안 공격)
 
 이 정보는 AIP SDK를 사용하여 응용 프로그램을 구현하는 데 필요한 디지털 인증서를 얻으려면 서명해야 하는 법적 계약서를 보완합니다.
 
@@ -86,7 +86,7 @@ AIP 시스템에서는 권한을 몇 가지 그룹으로 구성합니다. 자세
 API에서는 사용자의 정보 암호 해독을 허용하거나 허용하지 않으므로 정보가 본질적으로 보호되는 것은 아닙니다. 사용자가 정보 암호를 해독할 수 있는 권한이 있고 API에서 이를 허용하는 경우 응용 프로그램에서는 정보가 일반 텍스트 상태가 된 후 해당 정보를 관리하거나 보호할 책임이 있습니다. 응용 프로그램은 해당 환경 및 인터페이스를 관리하여 정보의 무단 사용을 방지해야 합니다. 예를 들어 라이선스에서 PLAY 권한만 부여하는 경우 **인쇄** 및 **복사** 단추를 사용하지 않도록 설정합니다. 테스트 도구 모음에서는 응용 프로그램이 인식되는 모든 라이선스 권한에 대해 올바르게 작동하지는 확인해야 합니다.
 
 ### <a name="minimum-standard"></a>최소 표준
-- XrML v.1.2 권한을 구현하는 고객은 XrML 웹 사이트(http://www.xrml.org) 에서 제공되는 XrML 사양에 설명된 이러한 권한에 대한 정의를 따라 구현해야 합니다. 응용 프로그램과 관련된 모든 권한은 응용 프로그램에 관심 있는 모든 엔터티에 대해 정의해야 합니다.
+- XrML v.1.2 권한을 구현하는 고객은 XrML 웹 사이트(http://www.xrml.org))에서 제공되는 XrML 사양에 설명된 이러한 권한에 대한 정의를 따라 구현해야 합니다. 응용 프로그램과 관련된 모든 권한은 응용 프로그램에 관심 있는 모든 엔터티에 대해 정의해야 합니다.
 - 테스트 도구 모음 및 테스트 프로세스에서는 응용 프로그램이 지원하는 권한에 대해 올바로 실행되고 지원되지 않은 권한을 행사하지 않는지 확인해야 합니다.
 - 게시 응용 프로그램을 빌드하는 경우 게시 응용 프로그램에서 지원하거나 지원하지 않는 기본 권한과 이러한 권한을 해석하는 방법을 설명하는 정보를 제공해야 합니다. 또한 사용자 인터페이스에서는 개별 정보를 부여하거나 거부한 각 권한의 의미를 최종 사용자에게 명확히 설명해야 합니다.
 

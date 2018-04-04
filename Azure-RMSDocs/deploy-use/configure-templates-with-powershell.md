@@ -1,26 +1,26 @@
 ---
-title: "보호 템플릿의 PowerShell - Azure Information Protection"
-description: "보호 템플릿을 만들고 관리하기 위해 Azure Portal에서 수행할 수 있는 모든 작업은 PowerShell을 사용하여 명령줄에서도 수행할 수 있습니다. 또한 테넌트 간에 템플릿을 복사하거나 다국어 이름/설명 등 템플릿의 복잡한 속성을 대량으로 편집할 수 있도록 템플릿을 내보내고 가져올 수도 있습니다."
+title: 보호 템플릿의 PowerShell - Azure Information Protection
+description: 보호 템플릿을 만들고 관리하기 위해 Azure Portal에서 수행할 수 있는 모든 작업은 PowerShell을 사용하여 명령줄에서도 수행할 수 있습니다. 또한 테넌트 간에 템플릿을 복사하거나 다국어 이름/설명 등 템플릿의 복잡한 속성을 대량으로 편집할 수 있도록 템플릿을 내보내고 가져올 수도 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 051144562b1c26a22953f6e83a41b4902404fd2f
-ms.sourcegitcommit: 85250f5ea80c2ee22197058ff2f65a79503b0f0c
+ms.openlocfilehash: 30dbfbe2cd9ef7d8acd89a9a76cd1108d7c03ab2
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="powershell-reference-for-protection-templates"></a>보호 템플릿의 PowerShell 참조
 
->*적용 대상: Azure Information Protection, Office 365*
+>*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection에 대한 보호 설정은 보호 템플릿에 저장됩니다. 보호 설정을 만들고 관리하기 위해 Azure Portal에서 수행할 수 있는 모든 작업은 PowerShell을 사용하여 명령줄에서도 수행할 수 있습니다. 
 

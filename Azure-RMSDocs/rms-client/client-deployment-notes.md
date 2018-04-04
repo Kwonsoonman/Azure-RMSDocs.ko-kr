@@ -1,26 +1,26 @@
 ---
-title: "RMS 클라이언트 배포 참고 사항 - Azure Information Protection"
-description: "MSIPC 클라이언트라고도 하는 Rights Management Service 클라이언트(RMS 클라이언트) 버전 2의 설치, 지원되는 운영 체제, 레지스트리 설정 및 서비스 검색에 대한 정보입니다."
+title: RMS 클라이언트 배포 참고 사항 - Azure Information Protection
+description: MSIPC 클라이언트라고도 하는 Rights Management Service 클라이언트(RMS 클라이언트) 버전 2의 설치, 지원되는 운영 체제, 레지스트리 설정 및 서비스 검색에 대한 정보입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6518b9d91e8f73b9ac6c0fb9e4bb5c2bbcebd612
-ms.sourcegitcommit: 704700acf7302d258e9c58c365c3244e833a86cd
+ms.openlocfilehash: edaa24b6e86fc1cacecfa79185b7fe4ddb1d34c9
+ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 클라이언트 배포 참고 사항
 
->*적용 대상: Active Directory Rights Management Services, Azure Information Protection, Windows 7 with SP1, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 7 with SP1, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016*
 
 RMS 클라이언트(권한 관리 서비스 클라이언트) 버전 2는 MSIPC 클라이언트로도 알려져 있습니다. 이 제품은 온-프레미스 또는 클라우드에서 Microsoft 권한 관리 서비스와 통신하는 Windows 컴퓨터용 소프트웨어로, 조직의 경계 내에서 또는 관리되는 경계 외부에서 응용 프로그램 및 장치를 통과하는 정보에 대한 액세스 및 사용을 보호하는 데 도움이 됩니다. 
 
@@ -35,7 +35,7 @@ RMS 클라이언트는 다른 응용 프로그램 및 IT 솔루션과 함께 자
 - RMS 클라이언트에 응용 프로그램에 대한 필수 구성 요소를 지정합니다. 이 옵션을 사용할 경우 사용자가 응용 프로그램을 사용하도록 하기 위해 먼저 클라이언트를 구하고 설치하고 클라이언트로 해당 컴퓨터를 업데이트하기 위한 추가 지침을 제공해야 할 수 있습니다.
 
 ## <a name="installing-the-rms-client"></a>RMS 클라이언트 설치
-RMS 클라이언트는 **setup_msipc_*\<arch\>*.exe**라는 설치 관리자 실행 파일에 포함되어 있습니다. 여기서 *\<arch>*는 **x86**(32비트 클라이언트 컴퓨터의 경우) 또는 **x64**(64비트 클라이언트 컴퓨터의 경우)입니다. 64비트(x64) 설치 관리자 패키지는 64비트 운영 체제 설치에서 실행되는 32비트 응용 프로그램과의 호환성을 위한 32비트 런타임 실행 파일과 네이티브 64비트 응용 프로그램을 지원하기 위한 64비트 런타임 실행 파일을 모두 설치합니다. 32비트(x86) 설치 관리자는 64비트 Windows 설치에서 실행되지 않습니다.
+RMS 클라이언트는 ***setup_msipc_\<\>arch***.exe라는 설치 관리자 실행 파일에 포함되어 있습니다. 여기서 *\<arch>*는 **x86**(32비트 클라이언트 컴퓨터의 경우) 또는 **x64**(64비트 클라이언트 컴퓨터의 경우)입니다. 64비트(x64) 설치 관리자 패키지는 64비트 운영 체제 설치에서 실행되는 32비트 응용 프로그램과의 호환성을 위한 32비트 런타임 실행 파일과 네이티브 64비트 응용 프로그램을 지원하기 위한 64비트 런타임 실행 파일을 모두 설치합니다. 32비트(x86) 설치 관리자는 64비트 Windows 설치에서 실행되지 않습니다.
 
 > [!NOTE]
 > RMS 클라이언트를 설치하려면 로컬 컴퓨터에서 Administrators 그룹의 멤버와 같은 상승된 권한이 있어야 합니다.
@@ -48,7 +48,7 @@ RMS 클라이언트는 **setup_msipc_*\<arch\>*.exe**라는 설치 관리자 실
     setup_msipc_x64.exe /quiet
     ```
 
-- **대화형 모드.** RMS 클라이언트 설치 마법사에서 제공하는 GUI 기반 설치 프로그램을 사용하여 RMS 클라이언트를 설치할 수도 있습니다. 대화형으로 설치하려면 로컬 컴퓨터에 복사 또는 다운로드한 폴더에서 RMS 클라이언트 설치 관리자 패키지(**setup_msipc_*\<arch\>*.exe**)를 두 번 클릭합니다.
+- **대화형 모드.** RMS 클라이언트 설치 마법사에서 제공하는 GUI 기반 설치 프로그램을 사용하여 RMS 클라이언트를 설치할 수도 있습니다. 대화형으로 설치하려면 로컬 컴퓨터에 복사 또는 다운로드한 폴더에서 RMS 클라이언트 설치 관리자 패키지(***setup_msipc_\<\>arch***.exe)를 두 번 클릭합니다.
 
 ## <a name="questions-and-answers-about-the-rms-client"></a>RMS 클라이언트에 대한 질문과 대답
 다음 섹션에는 RMS 클라이언트에 대한 질문과 대답이 포함되어 있습니다.
@@ -174,7 +174,7 @@ RMS 서비스 검색을 사용하여 RMS 클라이언트는 콘텐츠를 보호�
 > [!NOTE]
 > 이 서비스 검색 흐름의 경우 세 가지 중요한 예외가 있습니다.
 > 
-> - 모바일 장치는 클라우드 서비스를 사용하기에 적합하므로 기본적으로 Azure Rights Management Service에 대해 서비스 검색(https://discover.aadrm.com) 을 사용합니다. 모바일 장치에서 Azure Rights Management Service보다 AD RMS를 사용하도록 이 기본값을 재정의하려면 DNS의 SRV 레코드를 지정하고 [Active Directory Rights Management Services 모바일 장치 확장](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)에 설명된 것처럼 모바일 장치 확장을 설치합니다. 
+> - 모바일 장치는 클라우드 서비스를 사용하기에 가장 적합하므로 기본적으로 Azure Rights Management Service(https://discover.aadrm.com))에 대해 서비스 검색을 사용합니다. 모바일 장치에서 Azure Rights Management Service보다 AD RMS를 사용하도록 이 기본값을 재정의하려면 DNS의 SRV 레코드를 지정하고 [Active Directory Rights Management Services 모바일 장치 확장](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)에 설명된 것처럼 모바일 장치 확장을 설치합니다. 
 >
 > - Rights Management Service가 Azure Information Protection 레이블에서 호출되면 서비스 검색이 수행되지 않습니다. 대신, Azure Information Protection 정책에서 구성되는 레이블 설정에서 URL이 바로 지정됩니다.  
 

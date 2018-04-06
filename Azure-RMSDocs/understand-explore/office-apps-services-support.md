@@ -4,7 +4,7 @@ description: '최종 사용자 Office 응용 프로그램(예: Word 및 Outlook)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be1c41c2f17720d522770f9e023c7468602ceb67
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f7ca9a9e85a1d76d2d7bdc505c884ee9f02ddb42
+ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 응용 프로그램 및 서비스에서 Azure Rights Management를 지원하는 방법 
 
@@ -99,7 +99,7 @@ IRM에 대해 SharePoint를 구성할 준비가 된 경우:
 
 ## <a name="next-steps"></a>다음 단계
 
-Office 365를 사용하는 경우 Office 365의 파일 보호에 대해 권장되는 기능을 제공하는 [Office 365의 파일 보호 솔루션](https://technet.microsoft.com/library/dn919927.aspx#BKMK_O365fileprotect)을 검토하는 데 관심이 있을 수 있습니다.
+Office 365를 사용하는 경우 Office 365의 파일 보호에 대해 권장되는 기능을 제공하는 [Office 365의 파일 보호 솔루션](/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365fileprotect)을 검토하는 데 관심이 있을 수 있습니다.
 
 다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 

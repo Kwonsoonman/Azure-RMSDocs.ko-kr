@@ -4,7 +4,7 @@ description: Azure Information Protection를 사용한 분류 및 레이블 지�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/22/2018
+ms.date: 03/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 543abf11ce2d107c3d2a52a24c6c2a474b80cfbd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 24e99c6645832bcddbbf881a2b5728af3589f1e5
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
->*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection에서 특별히 분류 및 레이블 지정에 대한 질문이 있나요?  여기에 해당 질문에 대한 대답이 있는지 확인하세요. 
 
@@ -44,10 +44,6 @@ Azure Information Protection의 [사용자 의견 사이트](https://msip.uservo
 
 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치할 때 데모 정책 설치 옵션을 선택하면 레이블 지정 기능을 확인하고 사용해 보기 위해 포털에 로그인하지 않아도 됩니다. 데모 정책에서는 Azure Information Protection에 대한 기본 정책을 로컬로 설치하므로 문서 및 메일에 레이블을 지정해 볼 수 있지만, Azure Portal에 로그인하지 않고서는 레이블을 변경하거나 새 레이블을 추가할 수 없습니다. 
 
-## <a name="which-options-in-the-azure-portal-are-p2"></a>Azure Portal에서 어떤 옵션이 P2인가요?
-
-**Azure Information Protection Premium 2**(P2) 구독이 필요한 Azure Portal의 옵션은 이제 옵션을 식별하기 위한 정보 팝업 메시지를 포함합니다. P1 및 P1 구독에 포함된 기능에 대한 자세한 내용은 Azure Information Protection 사이트의 [기능 목록](https://www.microsoft.com/cloud-platform/azure-information-protection-features)을 참조하세요.
-
 ## <a name="can-a-file-have-more-than-one-classification"></a>파일에 분류가 여러 개 있을 수 있나요?
 
 사용자는 각 문서 또는 메일에 대해 한 번에 레이블 하나만 선택할 수 있으며, 그 결과 분류가 하나만 생깁니다. 그러나 사용자가 하위 레이블을 선택하면 실제로 두 레이블(기본 레이블 및 보조 레이블)이 동시에 적용됩니다. 하위 레이블을 사용함으로써 추가 수준의 제어에 대해 파일에 부모\자식 관계를 나타내는 두 분류가 있을 수 있습니다.
@@ -60,7 +56,7 @@ Azure Information Protection의 [사용자 의견 사이트](https://msip.uservo
 
 사용자가 분류 레이블을 낮추거나 보호를 제거하는 이유를 설명해야 하는 [정책 설정](../deploy-use/configure-policy-settings.md)이 있지만 이 설정으로 인해 이러한 작업이 방해되지는 않습니다. 사용자가 레이블을 제거하거나 변경하지 않도록 방지하려면 콘텐츠를 미리 보호하고 보호 권한에서 사용자에게 내보내기 또는 모든 권한 [사용 권한](../deploy-use/configure-usage-rights.md)을 부여하지 않습니다. 
 
-# <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
+## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
 
 아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블에 보호를 적용하는 경우 해당 보호는 첨부 파일에 적용됩니다.
 

@@ -4,7 +4,7 @@ description: Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/04/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 91c7ec9b7d9c0ed1d85ccbdd0b4c7750fd5b007c
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 380b2f715ead6f3f8c8e497c911ff425c12424e8
+ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -111,9 +111,11 @@ Office 문서의 정보 외에 Azure Information Protection과 관련하여 다�
 
 - TCP 443에서 **api.informationprotection.azure.com**으로의 HTTPS 트래픽을 허용합니다.
 
+- TCP 443의 HTTPS 트래픽을 **mobile.pipe.aria.microsoft.com**에 허용합니다.
+
 - 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.
 
-- TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure Rights Management 서비스와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.
+- Azure Rights Management 서비스에 대한 TLS 클라이언트-서비스 연결을 종료하지 마세요(예: 패킷 수준 조사를 수행하려면). 연결을 종료하면 Azure Rights Management 서비스와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.
     
     - 팁: Chrome에서 주소 표시줄에 보안 연결을 표시하는 방법으로 이 브라우저를 사용하여 Azure Rights Management 서비스에 연결하기 전에 클라이언트 연결이 종료되는지를 신속하게 확인할 수 있습니다. 브라우저 주소 표시줄에 URL(`https://admin.na.aadrm.com/admin/admin.svc`)을 입력합니다. 
     

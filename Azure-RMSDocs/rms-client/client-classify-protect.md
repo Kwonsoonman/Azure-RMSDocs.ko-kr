@@ -4,7 +4,7 @@ description: 문서와 전자 메일을 분류하고 보호하는 방법에 대�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 49518c1324ad541c4880c7930b6e661a2aba46d8
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0d5f4e081ea68f3e8c9ddcb46409370b486f6210
+ms.sourcegitcommit: d1987b1abb65f3466bbbb8f8c28e30668d629e50
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -79,7 +79,7 @@ Azure Information Protection 표시줄 또는 리본의 **보호** 단추를 사
 
 ### <a name="set-custom-permissions-for-a-document"></a>문서에 대한 사용자 지정 권한 설정
 
-관리자가 허용한 경우 선택한 레이블에 관리자가 포함한 보호를 사용하지 않고 직접 문서 보호 설정을 지정할 수 있습니다.
+관리자가 허용한 경우 선택한 레이블에 관리자가 포함한 보호를 사용하지 않고 직접 문서 보호 설정을 지정할 수 있습니다. 이 옵션은 문서에 특정되고, Outlook에서 지원되지 않습니다.
 
 1. **홈** 탭의 **보호** 그룹에서 **보호** > **사용자 지정 권한**을 클릭합니다.
 

@@ -4,7 +4,7 @@ description: MSIPC 클라이언트라고도 하는 Rights Management Service 클
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: edaa24b6e86fc1cacecfa79185b7fe4ddb1d34c9
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: df86d75cd7337fa4642a9b758312923a3577325f
+ms.sourcegitcommit: 40ac805183589a1c8ef22bc1bd9556bcc92f65e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 클라이언트 배포 참고 사항
 
@@ -112,7 +112,7 @@ Windows 레지스트리 키를 사용하여 일부 RMS 클라이언트 구성을
 
 |작업|설정|
 |--------|------------|
-|클라이언트가 버전 1.03102.0221 이상인 경우<br /><br />**응용 프로그램 데이터 수집을 제어하려면**|**중요**: 사용자 개인 정보를 보호하기 위해 관리자는 데이터 수집을 사용하도록 설정하기 전에 동의하도록 요청해야 합니다.<br /><br />데이터 수집을 사용하도록 설정하는 경우 인터넷을 통해 Microsoft로 데이터를 전송하는 데 동의하는 것으로 간주됩니다. Microsoft는 이 데이터를 사용하여 Microsoft 제품 및 서비스의 품질, 보안 및 무결성을 제공하고 향상합니다. 예를 들어, Microsoft는 사용하는 기능, 기능의 응답 속도, 장치 성능, 사용자 인터페이스 조작, 제품에서 발생하는 문제 등 성능 및 안정성을 분석합니다. 데이터에는 현재 실행 중인 소프트웨어, IP 주소처럼 소프트웨어의 구성에 대한 정보도 포함됩니다.<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**값:** 환경 속성 [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx)를 사용하여 정의된 응용 프로그램: 0(기본값), 사용 안 함: 1, 사용: 2<br /><br />**참고**: 32비트 MSIPC 기반 응용 프로그램이 64비트 버전의 Windows에서 실행되는 경우 위치는 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC입니다.|
+|클라이언트가 버전 1.03102.0221 이상인 경우<br /><br />**응용 프로그램 데이터 수집을 제어하려면**|**중요**: 사용자 개인 정보를 보호하기 위해 관리자는 데이터 수집을 사용하도록 설정하기 전에 동의하도록 요청해야 합니다.<br /><br />데이터 수집을 사용하도록 설정하는 경우 인터넷을 통해 Microsoft로 데이터를 전송하는 데 동의하는 것으로 간주됩니다. Microsoft는 이 데이터를 사용하여 Microsoft 제품 및 서비스의 품질, 보안 및 무결성을 제공하고 향상합니다. 예를 들어, Microsoft는 사용하는 기능, 기능의 응답 속도, 장치 성능, 사용자 인터페이스 조작, 제품에서 발생하는 문제 등 성능 및 안정성을 분석합니다. 데이터에는 현재 실행 중인 소프트웨어, IP 주소처럼 소프트웨어의 구성에 대한 정보도 포함됩니다.<br /><br />1.0.3356 이상 버전의 경우: <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticAvailability<br /><br />1.0.3356 이전 버전의 경우: <br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft\MSIPC<br />REG_DWORD: DiagnosticState<br /><br />**값:** 환경 속성 [IPC_EI_DATA_COLLECTION_ENABLED](https://msdn.microsoft.com/library/hh535247(v=vs.85).aspx)를 사용하여 정의된 응용 프로그램: 0(기본값), 사용 안 함: 1, 사용: 2<br /><br />**참고**: 32비트 MSIPC 기반 응용 프로그램이 64비트 버전의 Windows에서 실행되는 경우 위치는 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC입니다.|
 |AD RMS만 해당:<br /><br />**클라이언트 컴퓨터에 대한 엔터프라이즈 서비스 위치를 업데이트하려면**|다음 레지스트리 키를 업데이트합니다.<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification<br />REG_SZ: default<br /><br />**값:**\<http 또는 https>://*RMS_Cluster_Name*/_wmcs/Certification<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing<br />REG_SZ: default<br /><br />**값:** \<http 또는 https>://*RMS_Cluster_Name*/_wmcs/Licensing|
 |**추적을 사용하거나 사용하지 않도록 설정하려면**|다음 레지스트리 키를 업데이트합니다.<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC<br />REG_DWORD: Trace<br /><br />**Value:** 추적을 사용하도록 설정하려면 1, 추적을 사용하지 않도록 설정하려면 0(기본값)|
 |**템플릿 새로 고침 빈도(일)를 변경하려면**|다음 레지스트리 값은 TemplateUpdateFrequencyInSeconds 값이 설정되지 않은 경우 사용자 컴퓨터에서 템플릿을 새로 고치는 빈도를 지정합니다.  이러한 값을 모두 설정하지 않으면 RMS 클라이언트(버전 1.0.1784.0)를 사용하는 응용 프로그램이 템플릿을 다운로드하는 기본 새로 고침 간격은 1일입니다. 이전 버전에서는 기본값이 7일 간격입니다.<br /><br />**클라이언트 모드:**<br /><br />HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\MSIPC<br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Value:** 다운로드 사이의 일 수(최소 1)를 지정하는 정수 값입니다.<br /><br />**서버 모드:**<br /><br />HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\Server\\<SID\><br />REG_DWORD: TemplateUpdateFrequency<br /><br />**Value:** 다운로드 사이의 일 수(최소 1)를 지정하는 정수 값입니다.|

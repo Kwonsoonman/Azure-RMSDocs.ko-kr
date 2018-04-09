@@ -4,7 +4,7 @@ description: Microsoft Azure Information Protection과 관련된 단어, 구 또
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/15/2017
+ms.date: 03/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 742877bf-26f5-40e3-b1f7-8475e7c3ce11
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b3513a4ec00abf8727e2a5e07f9b4a67c96b7574
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 20ec9893bba090b1d17d67b06fb614a2baee3403
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure Information Protection에 사용되는 용어
 
->*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가 헷갈리시나요? Azure Information Protection에 관련이 있거나 이 서비스 컨텍스트에서 사용될 때 특정 의미를 지니는 용어 및 약어의 정의를 여기서 확인해 보세요.
 
@@ -49,6 +49,7 @@ Microsoft Azure Information Protection과 관련된 단어, 구 또는 약어가
 |정보 보호|경우에 따라 약어로 *IP*라고 합니다.<br /><br />무단 액세스로부터 데이터와 파일을 보호하는 것을 지칭하는 업계 표준의 일반 용어로서, 메일 또는 문서 공유를 통해 데이터와 파일이 조직 경계를 벗어난 후에도 해당합니다. Microsoft Azure Information Protection은 IP(정보 보호) 솔루션의 한 가지 예입니다.|
 |정보 권한 관리|흔히 약어로 *IRM*이라고 합니다.<br /><br />Office 서비스(예: Exchange Server, Word 및 SharePoint Online)와 함께 Microsoft Rights Management 서비스를 지원하는 기능을 설명하는 데 사용되는 용어입니다.|
 |IRM|*정보 권한 관리*를 참조하세요.|
+|Office 메시지 암호화|흔히 약어로 *OME*라고 합니다.<br /><br />새 Office 365 메시지 암호화 기능은 Azure Rights Management 서비스와의 네이티브 통합이 포함되어 고유한 키(BYOK) 시나리오에서 자동 내부 및 외부 사용자에게 동일한 이메일 보호, 템플릿 자동 새로 고침 및 지원을 제공합니다. 이전 OME 구현은 외부 받는 사람을 위해 설계되었으며, 메일 흐름 규칙이 필요했고, BYOK를 지원하지 않았습니다.|
 |MSDRM|경우에 따라 RMS 클라이언트 1.0을 지칭하는 용어로 사용되며, RMS 클라이언트 1.0은 최신 클라이언트인 MSIPC로 바뀌었습니다. 이 이전 클라이언트는 RMS SDK 1.0으로 개발된 응용 프로그램과 Office 2010 및 Office 2007, Exchange 2010 및 Exchange 2013, SharePoint 2010 및 SharePoint 2007을 지원합니다.|
 |MSIPC|경우에 따라 RMS 클라이언트 2.0을 지칭하는 용어로 사용되며, RMS 클라이언트 2.0은 이전 RMS 클라이언트인 MSDRM을 대체합니다. 이 나중 클라이언트는 RMS SDK 2.0으로 개발한 응용 프로그램을 지원하고 Office 2016 및 Office 2013, SharePoint 2013, RMS 공유 응용 프로그램과 Azure Information Protection 클라이언트를 지원합니다.|
 |기본 보호|무단 사용자가 파일을 열지 못하도록 하고 더 엄격한 정책(예: 읽기 전용 및 인쇄 금지)도 강제 적용할 수 있는 모든 지원 응용 프로그램에서 사용 가능한 보호 수준입니다. 또한 이 보호 수준은 파일이 다른 사용자에게 전달되거나 다른 사용자가 액세스할 수 있는 공용 위치에 저장되는 경우에도 파일에 유지됩니다.|

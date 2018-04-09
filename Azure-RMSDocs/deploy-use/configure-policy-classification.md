@@ -4,17 +4,17 @@ description: 레이블에 대한 조건을 구성할 때 문서 또는 메일에
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 80537b32bee11df72673b869932f2d59cef11469
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f7242c05d830ecd1b702e4e9bb049e72740843f3
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -62,9 +62,11 @@ ms.lasthandoff: 03/28/2018
 
 #### <a name="more-information-about-running-continuously"></a>지속적인 실행에 대한 자세한 정보
 
-현재 미리 보기 버전의 Azure Information Protection 클라이언트는 사용자가 지정한 조건 규칙에 대한 문서를 정기적으로 검사합니다. 이 동작을 사용하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류 및 보호를 사용할 수 있습니다. 조건 규칙을 이미 실행했기 때문에 큰 파일도 더 신속하게 저장됩니다. 
+기본적으로 현재 미리 보기 버전의 Azure Information Protection 클라이언트는 사용자가 지정한 조건 규칙에 대한 문서를 정기적으로 검사합니다. 이 동작을 사용하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류 및 보호를 사용할 수 있습니다. 조건 규칙을 이미 실행했기 때문에 큰 파일도 더 신속하게 저장됩니다. 
 
-조건 규칙은 사용자 형식으로 실시간으로 실행되지 않습니다. 대신, 문서를 수정할 때 주기적으로 백그라운드 작업으로 실행됩니다. 
+조건 규칙은 사용자 형식으로 실시간으로 실행되지 않습니다. 대신, 문서를 수정할 때 주기적으로 백그라운드 작업으로 실행됩니다.
+
+Azure Information Protection 클라이언트가 자동 및 권장 레이블을 일반 공급 버전의 클라이언트와 동일한 방식으로 적용하도록 이 동작을 변경할 수 있습니다. 이 구성에는 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#turn-off-classification-running-continuously-in-the-background)이 필요합니다.
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>둘 이상의 레이블에 적용할 때 여러 조건을 평가하는 방법
 

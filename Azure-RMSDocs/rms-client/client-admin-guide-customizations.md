@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/22/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 47b7a82ba7dc6ba7dc3fc21ed114452578b62593
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 08412c2c1cf1182b6d8bdae6e68d53d0b46f4b41
+ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -201,6 +201,20 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 - 키: **OutlookDefaultLabel**
 
 - 값: \<**레이블 ID**> 또는 **없음**
+
+## <a name="turn-off-classification-running-continuously-in-the-background"></a>백그라운드에서 계속해서 실행되는 분류를 해제합니다.
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 이 구성 옵션에는 미리 보기 버전의 클라이언트가 필요합니다.
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+이 설정을 구성할 때 미리 보기 버전의 Azure Information Protection 클라이언트는 사용자가 지정한 조건 규칙에 대한 문서를 정기적으로 검사하지 않습니다. 대신 자동 및 권장 레이블이 [동일한 방식으로 일반 공급 버전의 Azure Information Protection 클라이언트](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)에 적용됩니다. 성능상의 이유로 이 설정이 필요할 수 있습니다.
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **RunPolicyInBackground**
+
+- 값: **False**
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션
 

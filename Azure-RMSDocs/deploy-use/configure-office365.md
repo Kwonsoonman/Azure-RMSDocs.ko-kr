@@ -4,7 +4,7 @@ description: 관리자가 Azure Information Protection의 Azure Rights Managemen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/27/2018
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ecf30ece9370a732e0bf302be5733273b64eea1a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 22182613f3bc12e5ed5aec0079c7b3e54ba8f69d
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: 클라이언트와 온라인 서비스가 Azure Rights Management 서비스를 사용하도록 구성
 
@@ -110,7 +110,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
 
 3. **설정** 아이콘을 선택합니다. **설정** 창에서 **리본**이 **꺼짐**으로 설정된 경우, 이 설정을 선택하여 리본을 켭니다.
 
-4. 비즈니스용 OneDrive 파일을 모두 보호하도록 구성하려면 리본에서 **라이브러리** 탭을 선택한 다음, **라이브러리 설정**을 선택합니다. 보호할 특정 폴더의 모든 파일을 선택하려면 먼저 해당 폴더를 선택합니다.
+4. 비즈니스용 OneDrive 파일을 모두 보호하도록 구성하려면 리본에서 **라이브러리** 탭을 선택한 다음, **라이브러리 설정**을 선택합니다.
 
 5. **문서 > 설정** 페이지의 **사용 권한 및 관리** 섹션에서 **정보 권한 관리**를 선택합니다.
 

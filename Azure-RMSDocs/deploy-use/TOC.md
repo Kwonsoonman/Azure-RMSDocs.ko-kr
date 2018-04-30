@@ -16,6 +16,7 @@
 ### [기본 정책](configure-policy-default.md)
 ### [정책 설정 구성](configure-policy-settings.md)
 ### [새 레이블 만들기](configure-policy-new-label.md)
+### [레이블 추가 또는 제거](configure-policy-add-remove-label.md)
 ### [레이블 삭제 또는 순서 변경](configure-policy-delete-reorder.md)
 ### [레이블 변경](configure-policy-change-label.md)
 ### [보호 구성](configure-policy-protection.md)

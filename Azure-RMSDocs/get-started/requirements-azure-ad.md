@@ -4,7 +4,7 @@ description: 사용자가 정상적으로 인증할 수 있도록, Azure Informa
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/19/2018
+ms.date: 04/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,25 +12,21 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 82e2fcb1cdbce0476e95b35b0faef7ada7637795
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 53d9d9b25ab71c91275bf770a6038eccbaa2659c
+ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Azure Information Protection을 사용하려면 Azure AD 디렉터리가 있어야 합니다. Azure 포털에 로그인하려면 이 디렉터리의 조직 계정을 사용합니다. Azure 클래식 포털에서는 Rights Management 템플릿을 구성 및 관리하는 등의 작업을 할 수 있습니다.
+Azure Information Protection을 사용하려면 Azure AD 디렉터리가 있어야 합니다. 예를 들어 Azure Information Protection 레이블과 Rights Management 템플릿을 구성하고 관리할 수 있는 Azure Portal에 로그인하려면 이 디렉터리의 계정을 사용합니다.
 
-조직에 아직 Azure 구독이 없는 경우 무료 평가판을 신청하여 사용해 볼 수 있습니다. 이렇게 하려면 [Azure 시작하기](https://account.windowsazure.com/organization) 페이지로 이동하여 지침을 따릅니다.
+Azure Information Protection 또는 Azure Rights Management가 포함된 구독이 있는 경우 필요에 따라 Azure AD 디렉터리가 자동으로 만들어집니다.  
 
-자세한 내용은 Azure Active Directory 문서에서 다음 리소스를 참조하세요.
-
--   [Azure AD 디렉터리란?](/active-directory/active-directory-whatis)
-
--   [Azure 구독과 Azure Active Directory의 연관 관계](/active-directory/active-directory-how-subscriptions-associated-directory)
+Azure AD에 대한 자세한 내용은 [Azure Active Directory란?](/active-directory/active-directory-whatis)을 참조하세요.
 
 Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Azure Active Directory와 온-프레미스 ID 통합](/active-directory/active-directory-aadconnect)을 참조하세요.
 

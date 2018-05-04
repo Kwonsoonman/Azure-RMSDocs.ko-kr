@@ -4,24 +4,21 @@ description: Rights Management 보호를 사용하도록 레이블을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: b4db47cecb190b47854565beaeac72d768aa8e28
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: bcbc3e79da3c158ca3d6582e5dcd4882c327f7b6
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> 이 문서는 전역 정책이나 범위 지정 정책과 관계없이 레이블을 만들 수 있는 Azure Portal에 대한 최신 업데이트를 반영합니다. 정책 게시 옵션도 제거됩니다. 테넌트에서 이러한 변경 내용이 업데이트되지 않은 경우(예: Azure Information Protection에 대한 **게시** 옵션이 계속 표시되고 **분류** 메뉴 옵션이 표시되지 않는 경우) 며칠만 기다린 후 이러한 지침을 다시 확인하세요.
 
 Rights Management 서비스를 사용하여 가장 중요한 문서와 메일을 보호할 수 있습니다. 이 서비스에서는 암호화, ID 및 권한 부여 정책을 사용하여 데이터 손실을 방지합니다. 보호는 문서 및 전자 메일에 대해 Rights Management 보호를 사용하도록 구성된 레이블로 적용되며, 사용자는 Outlook에서 **전달 금지** 단추를 선택할 수도 있습니다.
 

@@ -4,24 +4,21 @@ description: 사용자에게 표시되는 Azure Information Protection 레이블
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 6b790eddb4e111333cbd78fc0b8ec09963393494
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 887fbf7c349a7400e46393dc07c824238fba9e09
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Azure Information Protection에 대한 레이블을 삭제하거나 순서를 변경하는 방법
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> 이 문서는 전역 정책이나 범위 지정 정책과 관계없이 레이블을 만들 수 있는 Azure Portal에 대한 최신 업데이트를 반영합니다. 정책 게시 옵션도 제거됩니다. 테넌트에서 이러한 변경 내용이 업데이트되지 않은 경우(예: Azure Information Protection에 대한 **게시** 옵션이 계속 표시되고 **분류** 메뉴 옵션이 표시되지 않는 경우) 며칠만 기다린 후 이러한 지침을 다시 확인하세요.
 
 레이블에 대해 이러한 작업을 선택하여 Office 응용 프로그램에서 사용자에게 표시되는 Azure Information Protection 레이블을 삭제하거나 순서를 변경할 수 있습니다.
 

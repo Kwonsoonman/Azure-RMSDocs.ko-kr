@@ -4,24 +4,21 @@ description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0b8bef6acd02abb664b274bc04fe77eea06de356
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 1fc9e3babd83368f1fa6389da3e2b66e8080d308
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> 이 문서는 전역 정책이나 범위 지정 정책과 관계없이 레이블을 만들 수 있는 Azure Portal에 대한 최신 업데이트를 반영합니다. 정책 게시 옵션도 제거됩니다. 테넌트에서 이러한 변경 내용이 업데이트되지 않은 경우(예: Azure Information Protection에 대한 **게시** 옵션이 계속 표시되고 **분류** 메뉴 옵션이 표시되지 않는 경우) 며칠만 기다린 후 이러한 지침을 다시 확인하세요.
 
 문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다.
 

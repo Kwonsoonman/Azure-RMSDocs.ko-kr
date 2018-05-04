@@ -4,24 +4,21 @@ description: 모든 사용자와 모든 장치에 적용되는 Azure Information
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: f4b79f66bc3f747285b2811327ea158bb83af03d
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: cfdb1537ad5444ef478c18380b535f38b5f7c667
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 정책 설정을 구성하는 방법
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> 이 문서는 전역 정책이나 범위 지정 정책과 관계없이 레이블을 만들 수 있는 Azure Portal에 대한 최신 업데이트를 반영합니다. 정책 게시 옵션도 제거됩니다. 테넌트에서 이러한 변경 내용이 업데이트되지 않은 경우(예: Azure Information Protection에 대한 **게시** 옵션이 계속 표시되고 **분류** 메뉴 옵션이 표시되지 않는 경우) 며칠만 기다린 후 이러한 지침을 다시 확인하세요.
 
 Azure Information Protection 정책에는 Information Protection 표시줄 제목과 도구 설명 외에 레이블에서 독립적으로 구성할 수 있는 다음과 같은 몇 가지 설정이 있습니다.
 

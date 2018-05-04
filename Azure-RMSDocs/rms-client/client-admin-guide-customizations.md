@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb48a3e35d18c111d3df1907b7cc7a2832e0ae13
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: 80f0b29b05f3a63972f7bc45e14ee721cf289a86
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -27,9 +27,6 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 경우에 따라 레지스트리를 편집해야 하는 설정도 있고 고급 설정을 사용해야 하는 경우도 있습니다. 고급 설정이 필요한 설정은 Azure Portal에서 구성한 후 클라이언트에서 다운로드할 수 있게 게시해야 합니다.  
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>포털에서 고급 클라이언트 구성 설정을 구성하는 방법
-
->[!NOTE]
-> 이러한 지침은 Azure Portal의 최신 업데이트를 반영합니다. **분류** 메뉴 옵션이 표시되지 않고 **게시** 옵션이 계속 표시되면 탐색 지침이 표시되는 내용과 정확하게 일치하지 않습니다. 이 경우 테넌트가 최신 변경 내용에 대해 업데이트되는 며칠 후에 이 절차를 다시 시도하는 것이 좋습니다.
 
 1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 [Azure Portal에 로그인](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal)한 다음, **Azure Information Protection** 블레이드로 이동합니다.
 
@@ -261,7 +258,7 @@ Secure Islands에서 레이블을 지정한 Office 문서 및 PDF 문서의 경�
 
 `[Azure Information Protection label ID],[migration rule name],[Secure Islands custom property name],[Secure Islands metadata Regex value]`
 
-Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는 경우 레이블 ID 값이 **레이블** 블레이드에 표시됩니다. 하위 레이블을 지정하려면 부모 레이블이 같은 범위 또는 전역 정책에 있어야 합니다.
+Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는 경우 레이블 ID 값이 **레이블** 블레이드에 표시됩니다. 하위 레이블을 지정하려면 상위 레이블이 같은 범위 또는 전역 정책에 있어야 합니다.
 
 원하는 마이그레이션 규칙 이름을 지정합니다. 이전 레이블 지정 솔루션의 레이블 하나 이상이 Azure Information Protection 레이블에 매핑되는 방식을 식별하는 데 도움이 되는 설명이 포함된 이름을 사용합니다. 이 이름은 스캐너 보고서와 이벤트 뷰어에 표시됩니다. 
 

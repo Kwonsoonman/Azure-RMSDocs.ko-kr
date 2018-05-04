@@ -4,24 +4,21 @@ description: 모든 사용자에 대한 전역 정책 또는 사용자 하위 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: 73152d2202096775d315f874b30269c89213f8e1
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: ad74efff44738c5475e988d861fda8d93686e794
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Azure Information Protection 정책에 대해 레이블을 추가 또는 제거
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
-
->[!NOTE]
-> 이 문서는 전역 정책이나 범위 지정 정책과 관계없이 레이블을 만들 수 있는 Azure Portal에 대한 최신 업데이트를 반영합니다. 정책 게시 옵션도 제거됩니다. 테넌트에서 이러한 변경 내용이 업데이트되지 않은 경우(예: Azure Information Protection에 대한 **게시** 옵션이 계속 표시되고 **분류** 메뉴 옵션이 표시되지 않는 경우) 며칠만 기다린 후 이러한 지침을 다시 확인하세요.  
 
 Azure Information Protection 레이블을 만든 후에 사용자가 사용할 수 있도록 이 레이블을 정책에 추가할 수 있습니다. 모든 사용자에 대한 레이블인 경우 전역 정책에 레이블을 추가합니다. 사용자 하위 집합에 대한 레이블인 경우 범위 지정 정책에 레이블을 추가합니다. 현재 레이블은 하나의 정책에만 추가할 수 있습니다. 하위 레이블을 추가하려면 부모 레이블이 동일한 정책 또는 전역 정책에 포함되어야 합니다.
 

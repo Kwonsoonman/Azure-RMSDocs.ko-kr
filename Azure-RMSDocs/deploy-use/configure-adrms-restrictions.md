@@ -4,17 +4,17 @@ description: Azure Information Protection에서 HYOK(AD RMS) 보호를 사용하
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/14/2018
+ms.date: 04/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: a768b373ad5fbcbeb66e82d72ff263a7ea16e56b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 8e9a29f01c3fe22a2eb30380510a3c532780fdf2
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="hold-your-own-key-hyok-requirements-and-restrictions-for-ad-rms-protection"></a>AD RMS 보호에 대한 HYOK(Hold Your Own Key) 요구 사항 및 제한
 
@@ -69,8 +69,6 @@ Azure RMS 보호를 Azure Information Protection과 사용할 경우 Azure RMS �
     
     사용자가 Outlook 메뉴 옵션에서 **전달 금지**를 선택하면 Azure RMS 또는 AD RMS 중에서 선택할 수 있지만, 메일 메시지에 대해 선택할 옵션을 알지 못할 수도 있습니다. Azure RMS를 사용해야 할 때 AD RMS를 사용하는 경우 외부에서 공유하는 사용자는 이러한 전자 메일 메시지를 열 수 없습니다.
 
-- Word, Excel, PowerPoint 및 파일 탐색기에 대한 사용자 정의 권한을 구성하는 경우 파일 탐색기에서 HYOK(AD RMS) 보호 대신 Azure RMS를 사용한 보호가 항상 적용됩니다. 이 제한은 클라이언트의 현재 미리 보기 버전에는 적용되지 않습니다.
-
 - 사용자가 Outlook에서 AD RMS 보호를 적용하는 레이블을 선택한 다음 메일을 보내기 전에 마음이 바뀌어 Azure RMS 보호를 적용하는 레이블을 선택하는 경우, 새로 선택한 레이블은 적용되지 않습니다. 다음 오류 메시지가 표시됩니다. **Azure Information Protection cannot apply this label. You don't have permission to perform this action.**(Azure Information Protection에서 이 레이블을 적용할 수 없습니다. 이 작업을 수행할 권한이 없습니다.)
     
     유일한 해결책은 메일 메시지를 닫고 다시 시작하는 것입니다. 사용자가 처음에 Azure RMS 보호를 적용하는 레이블을 선택한 다음 AD RMS 보호를 적용하는 레이블로 레이블을 변경하는 경우에도 동일한 제한이 적용됩니다.
@@ -111,7 +109,10 @@ AD RMS 배포가 Azure Information Protection에 대해 AD RMS 보호를 제공�
 
 - AD RMS로 보호되는 문서 또는 메일을 조직 외부의 다른 사용자와 공유할 경우: TUD(트러스트된 사용자 도메인) 또는 AD FS(Active Directory Federation Services)를 통해 만들어진 페더레이션 트러스트를 사용하여 다른 조직과의 직접 지점 간 관계에서 명시적으로 정의된 트러스트에 대해 AD RMS가 구성되었습니다.
 
-- 사용자가 Office 2013 Pro Plus 서비스 팩 1 또는 Office 2016 Pro Plus인 Office 버전을 Windows 7 서비스 팩 1 이상에서 실행하고 있습니다. Office 2010과 Office 2007은 이 시나리오에서 지원되지 않습니다.
+- 사용자가 Office 2016 Professional Plus 또는 Office 2013 Professional Plus 서비스 팩 1인 Office 버전을 Windows 7 서비스 팩 1 이상에서 실행하고 있습니다. Office 2010과 Office 2007은 이 시나리오에서 지원되지 않습니다.
+    
+    
+    - Office 2016, Microsoft Installer(.msi) 기반 버전의 경우: [2018년 3월 6일에 출시된 Microsoft Office 2016용 업데이트 4018295](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295)를 설치했습니다.
 
 > [!IMPORTANT]
 > 이 시나리오에서 제공하는 높은 보증을 충족하려면 AD RMS 서버가 DMZ에 있지 않고 잘 관리된 컴퓨터에서만 사용하는 것이 좋습니다(예: 모바일 장치 또는 작업 그룹 컴퓨터 아님). 

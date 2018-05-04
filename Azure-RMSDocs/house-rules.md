@@ -4,7 +4,7 @@ description: Azure Information Protection 설명서에 대한 Livefyre 메모 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.custom: askipteam
 ms.assetid: 4eafbe72-f537-4e66-80ae-d11894d373f7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b337324d31fa2e12c6cac2d93545498e4f778f4b
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 647e68050ebfd5cdb74b495a7823e7eb3a6f9307
+ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="house-rules-for-comments-on-the-azure-information-protection-documentation"></a>Azure Information Protection 설명서에 대한 의견 관련 기본 규칙
 
@@ -29,7 +29,9 @@ ms.lasthandoff: 03/28/2018
  
 Livefyre 메모 및 사이드 노트를 다음 용도로 사용하지 마세요.
  
-- **조직에 대한 구독 질문**. 예를 들어 사용하려는 기능을 기존 구독에서 지원하는지 여부와 사용자가 [Azure Information Protection에 대한 구독 요구 사항](./get-started/requirements.md#subscription-for-azure-information-protection)을 확인했는지 여부가 있습니다. 대신 Microsoft 계정 관리자나 [Microsoft 지원](./get-started/information-support.md#to-contact-microsoft-support)에 문의하세요.
+- **조직에 대한 구독 질문**. 예를 들어 사용하려는 기능을 기존 구독에서 지원하는지 여부에 대한 질문이나, 사용자에게 특정 라이선스가 필요하고 [Azure Information Protection에 대한 구독 요구 사항](./get-started/requirements.md#subscription-for-azure-information-protection)을 확인했는지 여부에 대한 질문이 있습니다. 대신 Microsoft 계정 관리자나 [Microsoft 지원](./get-started/information-support.md#to-contact-microsoft-support)에 문의하세요.
+    
+    참고: 현재 Azure Information Protection을 위한 구독 및 라이선스 정보에 대한 피드백을 요청하고 있습니다. 다음 Yammer 게시물을 사용하여 해당 팀에 관련 피드백을 보낼 수 있습니다. https://www.yammer.com/askipteam/#/threads/show?threadId=1048644961 
 
 - **기술 지원**. 기능이 작동하지 않아 요구 사항을 확인하고 설명서 지침을 따른 경우나 [지원되는 버전](./rms-client/client-version-release-history.md#servicing-information-and-timelines)의 Azure Information Protection 클라이언트를 사용 중인지 확인한 경우가 있습니다. 대신 [Microsoft 지원](./get-started/information-support.md#to-contact-microsoft-support)에 문의하거나 표준 지원 채널을 사용하세요. 또는 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에서 커뮤니티와 의견을 교환하세요.
 

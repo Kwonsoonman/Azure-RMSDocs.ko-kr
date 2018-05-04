@@ -4,25 +4,28 @@ description: Azure Information Protection를 빠르게 사용해 보기 위한 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2017
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: fecf9887937d3d17347e85759e2ed10b124ae8a1
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e2850a0f67f18febdbd98e59d01b2f28b00bff2a
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="step-2-configure-and-publish-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성 및 게시
+# <a name="step-2-configure-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
+>[!NOTE]
+> 이 자습서 단계는 Azure Portal에 대한 최신 업데이트를 반영합니다. **분류** 메뉴 옵션이 표시되지 않고 **게시** 옵션이 계속 표시되면 탐색 지침이 표시되는 내용과 정확하게 일치하지 않습니다. 이 경우 테넌트가 최신 변경 내용에 대해 업데이트되는 며칠 후에 이 자습서 단계를 다시 시도하는 것이 좋습니다.
+
 Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책과 함께 제공되지만, 해당 정책을 살펴보고 몇 가지를 변경합니다.
 
-1. [1단계](infoprotect-tutorial-step1.md)에 이어서 계속 Azure Portal에서 **전역 정책**을 선택하여 **정책: 전역** 블레이드를 엽니다. 이 블레이드는 나중에 서비스에 다시 연결되면 자동으로 열리며 테넌트에 대해 생성되는 기본 Information Protection 정책을 표시합니다.
+1. [1단계](infoprotect-tutorial-step1.md)에 이어서 Azure Portal에서 **분류** > **정책** > **전역**을 선택하여 **정책: 전역** 블레이드를 엽니다. 이 블레이드는 테넌트에 대해 생성되는 기본 Azure Information Protection 정책을 표시합니다.
 
 2. 몇 분간 표시되는 레이블에 친숙해지는 시간을 가집니다.
     
@@ -49,7 +52,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
     이전 버전의 정책을 사용하고 있어 이 레이블이 없는 경우 같은 레이블로 **내부**를 선택합니다.
 
-2. **분류 레이블 낮추기, 레이블 제거 또는 보호 제거를 설정하려면 근거를 제공해야 합니다.**에서 이 옵션을 **켜기**로 설정합니다.
+2. **분류 레이블 낮추기, 레이블 제거 또는 보호 제거를 설정하려면 근거를 제공해야 합니다.** 에서 이 옵션을 **켜기**로 설정합니다.
 
 3. 또한 **Make the custom permissions option available to users**(사용자 지정 권한 옵션을 사용자가 사용할 수 있게 허용) 설정을 찾습니다. **끄기**로 설정되어 있으면 **켜기**로 변경합니다.
     
@@ -71,7 +74,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 레이블에 대해 구성된 보호](../media/info-protect-protection-bar-configured.png) 
     
-4. **보호** 블레이드에서 **Azure(클라우드 키)**가 선택되었는지 확인합니다. 이 옵션은 Azure Rights Management 서비스를 사용하여 문서 및 전자 메일을 보호합니다. 또한 **사용 권한 설정**도 선택되었는지 확인합니다. 그런 다음 **권한 추가**를 선택합니다.
+4. **보호** 블레이드에서 **Azure(클라우드 키)** 가 선택되었는지 확인합니다. 이 옵션은 Azure Rights Management 서비스를 사용하여 문서 및 전자 메일을 보호합니다. 또한 **사용 권한 설정**도 선택되었는지 확인합니다. 그런 다음 **권한 추가**를 선택합니다.
 
 5. **권한 추가** 블레이드에서 **\<조직 이름> 추가 - 모든 멤버**를 선택합니다. 예를 들어 조직 이름이 VanArsdel Ltd인 경우 선택할 다음 옵션이 표시됩니다.
     
@@ -135,10 +138,6 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 설정 구성됨](../media/info-protect-settings-configuredv2.png)
     
-14. 변경을 수행하고 저장했으므로 이러한 내용을 사용자에게 제공하기 위해 **게시**를 클릭하고 **예**를 클릭하여 확인합니다.
-
-    ![Azure Information Protection 빠른 시작 자습서 3단계 - 구성된 정책 게시](../media/info-protect-publish.png)
-
 이 자습서를 완료한 후 Azure 포털을 닫거나, 열어 둔 채로 추가 구성 옵션을 사용해 볼 수 있습니다.
 
 기본 정책을 살펴보고 몇 가지를 변경했으므로 다음 단계는 Azure Information Protection 클라이언트를 설치하는 것입니다.

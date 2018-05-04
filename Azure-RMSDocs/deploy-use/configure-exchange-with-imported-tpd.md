@@ -4,7 +4,7 @@ description: Office 365 테넌트가 Office 365 메시지 암호화의 새로운
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/22/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,30 +12,34 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 022eb960ef58e69c0a4c2d8a76962ed792a9ed38
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e452f5ac4e3297106a54a2034d64f57d8f6d5302
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="exchange-online-irm-configuration-when-you-have-imported-a-trusted-publishing-domain"></a>트러스트된 게시 도메인을 가져온 경우 Exchange Online IRM 구성
+# <a name="exchange-online-irm-configuration-to-import-a-trusted-publishing-domain"></a>트러스트된 게시 도메인을 가져오기 위한 Exchange Online IRM 구성
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-이전에 TPD(트러스트된 게시 도메인)를 가져와서 IRM용 Exchange Online을 미리 구성한 경우에만 이 지침을 사용하며, 이전에 암호화된 전자 메일의 암호를 해독할 수 있어야 합니다.
+테넌트가 Office 365 메시지 암호화의 새 기능을 사용할 수 없는 경우에만 다음 지침을 사용하세요. 확인하려면 Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 명령을 실행하고 **AzureRMSLicensingEnabled** 매개 변수가 있는지 확인합니다. 이 매개 변수가 표시되면 테넌트는 Office 365 메시지 암호화의 새 기능을 사용할 수 있습니다.
 
-이러한 조건이 모두 해당되지 않는 경우 이 지침을 사용하지 말고 [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)의 지침을 사용하십시오.
+- **AzureRMSLicensingEnabled**가 **True**로 설정된 경우 테넌트는 Office 365 메시지 암호화의 새 기능을 이미 사용 중이므로 다음 섹션의 지침을 사용해서는 안 됩니다.
 
-## <a name="exchange-online-irm-configuration-if-you-have-an-imported-tpd"></a>가져온 TPD가 있는 경우 Exchange Online IRM 구성
+- **AzureRMSLicensingEnabled**가 **False**로 설정된 경우 테넌트는 Office 365 메시지 암호화의 새 기능을 지원하지만 해당 기능을 사용하도록 구성되어 있지 않습니다. 이러한 새 기능을 사용하도록 테넌트를 구성하려면 [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)을 참조하세요. 
 
-Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성하려면 Exchange Online에 대해 IRM(정보 권한 관리) 서비스를 구성해야 합니다. 이렇게 하려면 Windows PowerShell을 사용하고(별도 모듈을 설치할 필요 없음) [Exchange Online용 PowerShell 명령](https://technet.microsoft.com/library/jj200677.aspx)을 실행합니다.
+테넌트가 Office 365 메시지 암호화의 새 기능을 지원할 수 없는 경우에만 다음 지침을 사용합니다.
+
+## <a name="exchange-online-irm-configuration"></a>Exchange Online IRM 구성
+
+Exchange Online IRM을 구성하려면 Windows PowerShell을 사용하고(별도 모듈을 설치할 필요 없음) [Exchange Online용 PowerShell 명령](https://technet.microsoft.com/library/jj200677.aspx)을 실행합니다.
 
 > [!NOTE]
-> Microsoft가 Office 365 테넌트를 마이그레이션할 때까지 Azure Information Protection에 대해 Microsoft에서 관리하는 테넌트 키의 기본 구성이 아니라 고객이 관리하는 테넌트 키(BYOK)를 사용하는 경우 Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성할 수 없습니다.
+> Microsoft가 새 기능을 지원하기 위해 Office 365 테넌트를 마이그레이션할 때까지 Azure Information Protection에 대해 Microsoft에서 관리하는 테넌트 키의 기본 구성이 아니라 고객이 관리하는 테넌트 키(BYOK)를 사용하는 경우 Azure Rights Management 서비스를 지원하도록 Exchange Online을 구성할 수 없습니다.
 >
 > Azure Rights Management 서비스가 BYOK를 사용하는 경우 Exchange Online을 구성하려고 하면 키를 가져오는 명령(다음 절차의 5단계)이 실패하고 **[FailureCategory=Cmdlet-FailedToGetTrustedPublishingDomainFromRmsOnlineException]** 오류 메시지가 표시됩니다.
 
-다음 단계에서는 Exchange Online에서 이 시나리오에 대해 Azure Rights Management 서비스를 사용하도록 하기 위해 실행하는 일반적인 명령 집합을 제공합니다.
+다음 단계에서는 Exchange Online IRM을 사용하도록 설정하기 위해 실행하는 일반적인 명령 집합을 제공합니다.
 
 1.  컴퓨터에서 Exchange Online에 대해 Windows PowerShell을 처음 사용하는 경우에는 서명된 스크립트를 실행하도록 Windows PowerShell을 구성해야 합니다. **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell 세션을 시작한 후 다음을 입력합니다.
 

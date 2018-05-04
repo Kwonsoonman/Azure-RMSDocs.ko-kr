@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/19/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff9d6a4ce66deed8add68d7b1efc889ee9448f53
-ms.sourcegitcommit: 5866509c17872e274720d3014fe218ed95e86ee3
+ms.openlocfilehash: 02e54d3d1f324aa6d67e9fb81c3f5f83e785fe81
+ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -41,11 +41,9 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 >  
 > 기술 지원의 경우 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
 
-## <a name="versions-later-than-110560"></a>1.10.56.0 이상 버전
+## <a name="version-12660"></a>버전 1.26.6.0
 
-1.10.56.0 이상 버전의 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다.
-
-현재 미리 보기 버전은 **1.21.203.0**이며 클라이언트의 현재 GA 버전 이후에 다음과 같이 변경되었습니다.
+**릴리스 날짜**: 2018년 4월 17일
 
 이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.3403.1224가 포함되어 있습니다.
 
@@ -53,11 +51,11 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Azure Information Protection 스캐너: 클라이언트에 포함된 PowerShell 모듈에는 온-프레미스 데이터 저장소에서 파일을 검색하고, 분류하고, 보호할 수 있도록 스캐너를 설치하고 구성할 새로운 cmdlet이 있습니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-use/deploy-aip-scanner.md)를 참조하세요. 
 
-- Office 앱의 경우 자동 및 권장 분류는 문서를 저장할 때 실행하는 대신 백그라운드에서 계속 실행됩니다. 이제 동작을 이렇게 변경하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류를 적용할 수 있습니다. [추가 정보](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied) 
-
 - 이제 텍스트 문자열에서 "If.App" 변수 문을 사용하여 Word, Excel, PowerPoint 및 Outlook에 대새 다른 시각적 표시를 설정하고 응용 프로그램 형식을 식별할 수 있습니다. [추가 정보](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - [정책 설정](../deploy-use/configure-policy-settings.md)인 **Office 앱에 Information Protection 표시줄 표시**에 대한 지원입니다. 이 설정을 끄기로 설정하면 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택합니다.
+
+- 백그라운드에서 계속 실행되도록 분류를 켜기 위한 새 고급 클라이언트 설정(미리 보기)입니다. 이 설정을 사용하도록 설정하면 Office 앱의 경우 자동 및 권장 분류는 문서를 저장할 때 실행하는 대신 백그라운드에서 계속 실행됩니다. 이제 동작을 이렇게 변경하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류를 적용할 수 있습니다. [추가 정보](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 
 - 새로운 고급 클라이언트 설정은 Outlook이 Azure Information Protection 정책에서 구성된 기본 레이블을 적용하지 않도록 합니다. 대신 Outlook에서 다른 기본 레이블을 적용할 수 있거나 레이블을 적용하지 않습니다. [추가 정보](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook) 
 
@@ -76,14 +74,21 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Azure Information Protection을 사용하는 두 조직에서 레이블이 지정된 문서와 이메일을 공유하는 경우 해당하는 고유한 레이블이 유지되며 다른 조직의 레이블로 대체되지 않습니다.
 
-- 교차 참조를 포함하는 Excel의 셀에 대한 지원은 이전에 셀에서 텍스트 손상을 발생시켰습니다.
+- Excel의 경우:
+        
+    - Office 테마 또는 Windows 테마 변경에 대한 지원은 테마가 변경된 후에 Excel이 데이터를 표시하지 않는 결과를 발생시켰습니다.
+        
+    - 교차 참조를 포함하는 셀에 대한 지원은 이전에 셀에서 텍스트 손상을 발생시켰습니다.
+    
+    - 일본어, 중국어 또는 한국어 문자 입력에 대한 지원은 이전에 창을 닫았으므로 이러한 문자를 선택할 수 없습니다.
+    
+    - 주석에 대한 지원은 이전에 주석이 입력되는 동안 주석을 닫았습니다.
 
-- Office 테마 또는 Windows 테마 변경에 대한 지원은 테마가 변경된 후에 Excel이 데이터를 표시하지 않는 결과를 발생시켰습니다.
+- PowerPoint의 경우: 공동 작업에 대한 지원은 이전에 데이터 손실을 일으킬 수 있었습니다.
 
 - 이제 권장 또는 자동 분류를 위해 .xml 파일 이름 확장명을 가진 파일을 검사할 수 있습니다.
 
 - 이제 뷰어는 20MB를 넘는 보호된 텍스트 기반 파일(.ptxt 및 .pxml)을 열 수 있습니다. 
-
 - Outlook 미리 알림기를 사용하는 경우 Outlook의 작동이 중지되지 않도록 방지합니다.
 
 - 문서와 이메일을 보호할 수 있도록 부트스트랩은 Office 64비트에서 성공합니다.

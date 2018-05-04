@@ -4,7 +4,7 @@ description: Azure Information Protection에 대한 문서 추적을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 04/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 04b6f65495c6b7251d000ff438ecab20c3a44db7
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e24d91f04dc3186a9451546c8a962c49129f326b
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>관리자 가이드: Azure Information Protection에 대한 문서 추적 구성 및 사용
 
@@ -24,11 +24,17 @@ ms.lasthandoff: 03/28/2018
 
 [문서 추적 기능을 지원하는 구독](https://www.microsoft.com/en-us/cloud-platform/azure-information-protection-features)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다. 문서 추적은 보호된 문서에 액세스되는 경우에 대한 정보를 사용자 및 관리자에게 제공하며, 필요한 경우 추적된 문서를 해지할 수 있도록 합니다.
 
-## <a name="privacy-controls-for-your-document-tracking-site"></a>문서 추적 사이트에 대한 개인 정보 관리
+## <a name="using-powershell-to-manage-the-document-tracking-site"></a>PowerShell을 사용하여 문서 추적 사이트 관리
+
+다음 섹션에는 PowerShell을 사용하여 문서 추적 사이트를 관리하는 방법을 설명합니다. PowerShell 모듈에 대한 설치 지침은 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요. 모듈을 이미 다운로드하여 설치한 경우 `(Get-Module aadrm –ListAvailable).Version`을 실행하여 버전 번호를 확인합니다.
+
+각 cmdlet에 대한 자세한 내용은 제공된 링크를 사용하세요.
+
+### <a name="privacy-controls-for-your-document-tracking-site"></a>문서 추적 사이트에 대한 개인 정보 관리
 
 개인 정보 취급 방침 요구 사항으로 인해 조직의 모든 문서 추적 정보 표시가 금지된 경우 [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature) cmdlet을 사용하여 문서 추적을 사용하지 않도록 설정할 수 있습니다. 
 
-이 cmdlet은 조직의 모든 사용자가 보호된 문서를 추적하거나 문서에 대한 액세스 권한을 취소할 수 없도록 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정합니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature)를 사용하여 문서 추적을 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature)를 사용하여 문서 추적이 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다. 이러한 cmdlet을 실행하려면 **2.3.0.0** 이상의 PowerShell용 Azure Information Protection(AADRM) 모듈 버전을 사용하고 있어야 합니다. 
+이 cmdlet은 조직의 모든 사용자가 보호된 문서를 추적하거나 문서에 대한 액세스 권한을 취소할 수 없도록 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정합니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature)를 사용하여 문서 추적을 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature)를 사용하여 문서 추적이 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다. 이러한 cmdlet을 실행하려면 **2.3.0.0** 이상의 PowerShell용 AADRM 모듈 버전을 사용하고 있어야 합니다. 
 
 문서 추적 사이트가 사용되도록 설정되면 기본적으로 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 이 수준의 정보는 공유 문서가 사용되는 방식과 의심스러운 작업이 확인될 때 문서 공유를 해지할지 여부를 결정하는 데 유용할 수 있습니다. 그러나 개인 정보 보호를 위해 일부 또는 모든 사용자에 대해 이 사용자 정보를 사용하지 않도록 설정해야 할 수도 있습니다. 
 
@@ -40,11 +46,19 @@ ms.lasthandoff: 03/28/2018
 
 이 설정은 최종 사용자에게만 영향을 줍니다. Azure Information Protection에 대한 관리자는 해당 사용자가 Set-AadrmDoNotTrackUserGroup을 사용하여 지정된 경우에도 모든 사용자의 작업을 항상 추적할 수 있습니다. 관리자가 사용자에 대한 문서를 추적할 수 있는 방법에 대한 자세한 내용은 [사용자에 대해 문서 추적 및 취소](#tracking-and-revoking-documents-for-users) 섹션을 참조하세요.
 
-이 옵션이 더 이상 필요하지 않으면 [Clear-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/Clear-AadrmDoNotTrackUserGroup)을 사용할 수 있습니다. 또는 사용자를 선택적으로 제거하려는 경우에는 그룹에서 제거합니다. 그렇지만 [그룹 캐싱](../plan-design/prepare.md#group-membership-caching-by-azure-information-protection) 기능을 잘 알고 있어야 합니다. [Get-AadrmDoNotTrackUserGroup](/powershell/module/aadrm/get-AadrmDoNotTrackUserGroup)을 사용하여 이 옵션이 현재 사용 중인지를 확인할 수 있습니다. 이 그룹 구성에 대해 이러한 cmdlet을 실행하려면 **2.10.0.0** 이상의 PowerShell용 Azure Information Protection(AADRM) 모듈 버전을 사용하고 있어야 합니다.
 
-이러한 cmdlet에 대한 자세한 내용은 제공된 링크를 사용하세요. PowerShell 모듈에 대한 설치 지침은 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요. 모듈을 이미 다운로드하여 설치한 경우 `(Get-Module aadrm –ListAvailable).Version`을 실행하여 버전 번호를 확인합니다.
+### <a name="logging-information-from-the-document-tracking-site"></a>문서 추적 사이트의 로깅 정보
 
+**2.13.0.0** 이상의 AADRM 모듈 버전을 사용하고 있는 경우 다음 cmdlet을 사용하여 문서 추적 사이트에서 로깅 정보를 다운로드할 수 있습니다.
 
+- [Get-AadrmTrackingLog](/powershell/module/aadrm/Get-AadrmTrackingLog)
+    
+    이 cmdlet은 문서를 보호한 지정된 사용자(Rights Management 발급자) 또는 보호된 문서에 액세스한 지정된 사용자의 보호된 문서에 대한 추적 정보를 반환합니다. 이 cmdlet을 사용하여 “지정된 사용자가 추적하거나 액세스한 보호된 문서는 무엇인가요?”라는 질문에 답할 수 있습니다.
+
+- [Get-AadrmDocumentLog](/powershell/module/aadrm/Get-AadrmDocumentLog)
+    
+    이 cmdlet은 지정된 사용자가 문서를 보호하거나(Rights Management 발급자) 문서의 Rights Management 소유자인 경우 또는 보호된 문서가 사용자에게 액세스 권한을 직접 부여하도록 구성된 경우 해당 사용자의 추적된 문서에 대한 보호 정보를 반환합니다. 이 cmdlet을 사용하여 “지정된 사용자의 문서가 어떻게 보호되었나요?”라는 질문에 답할 수 있습니다.
+ 
 ## <a name="destination-urls-used-by-the-document-tracking-site"></a>문서 추적 사이트에서 사용되는 대상 URL
 
 다음 URL은 문서 추적에 사용되며, 모든 장치 및 Azure Information Protection 클라이언트를 실행하는 클라이언트와 인터넷 간의 모든 서비스에서 허용되어야 합니다. 예를 들어 보안이 강화된 Internet Explorer를 사용하는 경우 이러한 URL을 방화벽이나 신뢰할 수 있는 사이트에 추가합니다.

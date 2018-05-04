@@ -4,7 +4,7 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: c4e71ec21d6ec06a3bab32bf6bb62e6f614a7e33
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e13dc2a6307dfa11cd812586762ec4c496d33fcf
+ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/28/2018
 
 - 스캐너를 실행하는 Windows Server 컴퓨터의 로컬 폴더
 
-- CIFS(Common Internet File System) 프로토콜을 사용하는 네트워크 공유를 위한 UNC 경로
+- SMB(서버 메시지 블록) 프로토콜을 사용하는 네트워크 공유의 UNC 경로
 
 - SharePoint Server 2016 및 SharePoint Server 2013의 사이트 및 라이브러리
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 03/28/2018
 
 자동 분류를 적용하는 레이블에 [Azure Information Protection 정책](configure-policy.md)을 구성한 경우 이 스캐너를 검색하는 파일은 레이블이 지정될 수 있습니다. 레이블은 분류를 적용하고 필요에 따라 보호를 적용하거나 제거합니다.
 
-![Azure Information Protection 스캐너 개요](../media/infoprotect-scanner.png)
+![Azure Information Protection 스캐너 아키텍처 개요](../media/infoprotect-scanner.png)
 
 스캐너는 컴퓨터에 설치된 iFilters를 사용하여 Windows에서 인덱싱하는 파일을 검사할 수 있습니다. 그런 다음, 파일에 레이블을 지정해야 하는지를 결정하려면 스캐너는 Office 365 기본 제공 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지 또는 Office 365 정규식 패턴을 사용합니다. 스캐너가 Azure Information Protection 클라이언트를 사용하기 때문에 동일한 [파일 형식](../rms-client/client-admin-guide-file-types.md)을 분류하고 보호할 수 있습니다.
 
@@ -51,10 +51,11 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 |---------------|--------------------|
 |스캐너 서비스를 실행할 Windows Server 컴퓨터:<br /><br />- 4개 프로세서<br /><br />- 4GB RAM|Windows Server 2016 또는 Windows Server 2012 R2 <br /><br />참고: 비-프로덕션 환경에서 테스트 또는 평가는 [Azure Information Protection 클라이언트에서 지원하는](../get-started/requirements.md#client-devices) Windows 클라이언트 운영 체제를 사용할 수 있습니다.<br /><br />이 컴퓨터는 검색할 데이터 저장소에 안정적인 고속 네트워크를 연결한 실제 또는 가상 컴퓨터일 수 있습니다. <br /><br />이 컴퓨터가 Azure Information Protection에 필요한 [인터넷이 연결](../get-started/requirements.md#firewalls-and-network-infrastructure)되어 있는지 확인합니다. 또는 [연결이 끊어진 컴퓨터](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)로 구성해야 합니다. |
 |스캐너 구성을 저장할 SQL Server:<br /><br />- 로컬 또는 원격 인스턴스<br /><br />-스캐너를 설치하기 위한 Sysadmin 역할|SQL Server 2012는 다음 버전의 최소 버전입니다.<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />스캐너를 설치하는 계정에는 마스터 데이터베이스(db_datawriter 역할의 멤버이어야 함)에 쓸 수 있는 권한이 필요합니다. 설치 프로세스는 스캐너를 실행하는 서비스 계정에 db-owner 역할을 부여합니다. 또는 스캐너를 설치하기 전에 수동으로 AzInfoProtectionScanner 데이터베이스를 만들고 스캐너 서비스 계정에 db-owner 역할을 할당할 수 있습니다.|
-|스캐너 서비스를 실행할 서비스 계정|이 계정은 다음과 같은 추가 요구 사항을 포함하여 Azure AD에 동기화된 Active Directory 계정이어야 합니다.<br /><br />- **로컬 로그온** 권한 이 권한은 스캐너를 설치하고 구성하는 데 필요하지만 작동하는 데는 필요하지 않습니다. 서비스 계정에 이 권한을 부여해야 하지만 스캐너가 파일을 검색, 분류 및 보호하는지 확인한 후에 이 권한을 제거할 수 있습니다. <br /><br />참고: 내부 정책을 사용하면 서비스 계정에 이 권한을 허용하지 않지만 서비스 계정에 **일괄 작업으로 로그온** 권한이 부여되지 않는 경우 추가 구성을 사용하여 이 요구 사항을 충족할 수 있습니다. 자세한 내용은 관리 가이드에서 [Set-AIPAuthentication에 대한 토큰 매개 변수 지정 및 사용](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)을 참조하세요.<br /><br />- **서비스로 로그온** 권한 스캐너 설치 중에 서비스 계정에 이 권한이 자동으로 부여됩니다. 이 권한은 스캐너의 설치, 구성 및 작동에 필요합니다. <br /><br />- 데이터 리포지토리에 대한 사용 권한: Azure Information Protection 정책에서 파일을 검색한 다음 조건을 충족하는 파일에 분류 및 보호를 적용하는 **읽기** 및 **쓰기** 권한을 부여해야 합니다. 검색 모드 전용으로 스캐너를 실행하려면 **읽기** 권한으로 충분합니다.<br /><br />- 다시 보호하거나 보호를 제거하는 레이블의 경우: 스캐너가 항상 보호된 파일에 액세스할 수 있도록 하려면 이 계정을 Azure Rights Management 서비스에 대한 [슈퍼 사용자](configure-super-users.md)로 지정하고 슈퍼 사용자 기능을 사용하도록 합니다. 보호를 적용하기 위한 계정 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](../plan-design/prepare.md)를 참조하세요.|
-|Azure Information Protection 스캐너가 Windows Server 컴퓨터에 설치되었습니다.|현재 Azure Information Protection 스캐너는 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 **AzInfoProtectionScanner.exe**라는 별도의 다운로드입니다. 스캐너의 후속 릴리스는 Azure Information Protection 클라이언트에 포함될 예정입니다.|
-|자동 분류 및 필요에 따라 보호를 적용하는 구성된 레이블|조건을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](configure-policy-classification.md)을 참조하세요.<br /><br />파일에 보호를 적용하도록 레이블을 구성하는 방법에 대한 자세한 내용은 [Rights Management 보호를 위한 레이블을 구성하는 방법](configure-policy-protection.md)을 참조하세요.<br /><br />이러한 레이블은 전역 정책 또는 하나 이상의 [범위 지정 정책](configure-policy-scope.md)에 있을 수 있습니다.|
-|하나 이상의 데이터 리포지토리에 있는 모든 파일에 레이블이 있어야 하는 경우:<br /><br />- 기본 레이블을 정책 설정으로 구성|기본 레이블 설정을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 정책 설정을 구성하는 방법](configure-policy-settings.md)을 참조하세요.<br /><br />이 기본 레이블 설정은 전역 정책 또는 스캐너의 범위 지정 정책에 있어야 합니다. 그러나 이 기본 레이블 설정은 데이터 리포지토리 레벨에서 구성하는 다른 기본 레이블로 재정의할 수 있습니다.|
+|스캐너 서비스를 실행할 서비스 계정|스캐너 서비스를 실행하는 것 외에도 이 계정은 Azure AD에 대해 인증되고 Azure Information Protection 정책을 다운로드합니다. 따라서 이 계정은 다음과 같은 추가 요구 사항을 포함하여 Azure AD에 동기화된 Active Directory 계정이어야 합니다.<br /><br />- **로컬 로그온** 권한 이 권한은 스캐너를 설치하고 구성하는 데 필요하지만 작동하는 데는 필요하지 않습니다. 서비스 계정에 이 권한을 부여해야 하지만 스캐너가 파일을 검색, 분류 및 보호하는지 확인한 후에 이 권한을 제거할 수 있습니다. <br /><br />참고: 내부 정책을 사용하면 서비스 계정에 이 권한을 허용하지 않지만 서비스 계정에 **일괄 작업으로 로그온** 권한이 부여되지 않는 경우 추가 구성을 사용하여 이 요구 사항을 충족할 수 있습니다. 자세한 내용은 관리 가이드에서 [Set-AIPAuthentication에 대한 토큰 매개 변수 지정 및 사용](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)을 참조하세요.<br /><br />- **서비스로 로그온** 권한 스캐너 설치 중에 서비스 계정에 이 권한이 자동으로 부여됩니다. 이 권한은 스캐너의 설치, 구성 및 작동에 필요합니다. <br /><br />- 데이터 리포지토리에 대한 사용 권한: Azure Information Protection 정책에서 파일을 검색한 다음 조건을 충족하는 파일에 분류 및 보호를 적용하는 **읽기** 및 **쓰기** 권한을 부여해야 합니다. 검색 모드 전용으로 스캐너를 실행하려면 **읽기** 권한으로 충분합니다.<br /><br />- 다시 보호하거나 보호를 제거하는 레이블의 경우: 스캐너가 항상 보호된 파일에 액세스할 수 있도록 하려면 이 계정을 Azure Rights Management 서비스에 대한 [슈퍼 사용자](configure-super-users.md)로 지정하고 슈퍼 사용자 기능을 사용하도록 합니다. 보호를 적용하기 위한 계정 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](../plan-design/prepare.md)를 참조하세요.|
+|Azure Information Protection 클라이언트가 Windows Server 컴퓨터에 설치되었습니다.|스캐너를 위해 전체 클라이언트를 설치해야 합니다. PowerShell 모듈만으로 클라이언트를 설치하지 마세요.<br /><br />클라이언트 설치 지침은 [관리자 가이드](../rms-client/client-admin-guide.md)를 참조하세요.|
+|자동 분류 및 필요에 따라 보호를 적용하는 구성된 레이블|Azure Information Protection 정책에서 조건을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](configure-policy-classification.md)을 참조하세요.<br /><br />파일에 보호를 적용하도록 레이블을 구성하는 방법에 대한 자세한 내용은 [Rights Management 보호를 위한 레이블을 구성하는 방법](configure-policy-protection.md)을 참조하세요.<br /><br />이러한 레이블은 전역 정책 또는 하나 이상의 [범위 지정 정책](configure-policy-scope.md)에 있을 수 있습니다.|
+|하나 이상의 데이터 리포지토리에 있는 모든 파일에 레이블이 있어야 하는 경우:<br /><br />- 기본 레이블을 정책 설정으로 구성|기본 레이블 설정을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 정책 설정을 구성하는 방법](configure-policy-settings.md)을 참조하세요.<br /><br />이 기본 레이블 설정은 전역 정책 또는 스캐너의 범위 지정 정책에 있어야 합니다. 그러나 이 기본 레이블 설정은 데이터 리포지토리 레벨에서 구성하는 다른 기본 레이블로 재정의할 수 있습니다.| 
+
 
 ## <a name="install-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 설치
 

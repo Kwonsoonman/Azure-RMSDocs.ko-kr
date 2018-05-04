@@ -4,7 +4,7 @@ description: 분류, 레이블 지정 및 보호를 구성하려면 Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/15/2017
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a0194b1cf6b1b134c3fd37ae9f042f117570d9ce
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e8d641fd3165346ab052daad7ec7040b0d9e543f
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+
+>[!NOTE]
+> 이 문서는 전역 정책이나 범위 지정 정책과 관계없이 레이블을 만들 수 있는 Azure Portal에 대한 최신 업데이트를 반영합니다. 정책 게시 옵션도 제거됩니다. 테넌트에서 이러한 변경 내용이 업데이트되지 않은 경우(예: Azure Information Protection에 대한 **게시** 옵션이 계속 표시되고 **분류** 메뉴 옵션이 표시되지 않는 경우) 며칠만 기다린 후 이러한 지침을 다시 확인하세요.
 
 분류, 레이블 지정 및 보호를 구성하려면 Azure Information Protection 정책을 구성해야 합니다. 이 정책은 [Azure Information Protection 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=53018)를 설치한 컴퓨터에 다운로드됩니다.
 
@@ -74,7 +77,7 @@ Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 �
 
 4. 서비스에 처음으로 연결할 때 자동으로 열리는 **빠른 시작** 페이지를 확인하세요. 제안된 리소스를 찾아보거나 다른 메뉴 옵션을 사용합니다. 사용자가 선택할 수 있는 레이블을 구성하려면 다음 절차를 사용합니다.
 
-다음에 **Azure Information Protection** 블레이드에 액세스하는 경우 모든 사용자에 대한 레이블을 구성할 수 있도록 **정책** > **글로벌 정책** 옵션을 자동으로 선택합니다. **일반** 메뉴에서 선택하여 **빠른 시작** 페이지로 돌아갈 수 있습니다.
+다음에 **Azure Information Protection** 블레이드에 액세스하는 경우 모든 사용자에 대한 레이블을 보고 구성할 수 있도록 **레이블** 옵션을 자동으로 선택합니다. **일반** 메뉴에서 선택하여 **빠른 시작** 페이지로 돌아갈 수 있습니다.
 
 ## <a name="how-to-configure-the-azure-information-protection-policy"></a>Azure Information Protection 정책을 구성하는 방법
 
@@ -82,21 +85,29 @@ Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 �
 
 2. 필요한 경우 **Azure Information Protection** 블레이드로 이동합니다. 예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information Protection**을 입력합니다. 결과에서 **Azure Information Protection**을 선택합니다. 
     
-    모든 사용자가 받는 글로벌 정책을 보고 편집할 수 있는 **Azure Information Protection - 글로벌 정책** 블레이드가 자동으로 열립니다. 
+    사용 가능한 레이블을 보고 편집할 수 있도록 **Azure Information Protection - 레이블** 블레이드가 자동으로 열립니다. 정책에서 사용자를 추가하거나 제거하여 모든 사용자 또는 선택한 사용자가 레이블을 사용할 수 있거나 어느 사용자도 사용할 수 없도록 설정합니다.
+
+3. 정책을 보고 편집하려면 메뉴 옵션에서 **정책**을 선택합니다. 모든 사용자가 가져오는 정책을 보고 편집하려면 **전역** 정책을 선택합니다. 선택한 사용자에 대한 사용자 지정 정책을 만들려면 **새 정책 추가**를 선택합니다.
     
     이 Azure Information Protection 정책에는 구성할 수 있는 다음 요소가 포함됩니다.
     
-    - 문서 및 전자 메일을 분류할 수 있는 레이블.
+    - 관리자와 사용자가 문서 및 메일을 분류하는 데 사용할 수 있는 레이블.
     
     - 사용자의 Office 응용 프로그램에 표시되는 Information Protection 표시줄의 제목 및 도구 설명.
     
-    - 사용자가 문서를 저장하고 전자 메일을 보낼 때 분류를 적용할 수 있는 옵션.
-    
     - 문서 및 전자 메일을 분류하기 위한 시작점으로 기본 레이블을 설정할 수 있는 옵션.
+     
+    - 사용자가 문서를 저장하고 전자 메일을 보낼 때 분류를 적용할 수 있는 옵션.
     
     - 원래보다 민감도 수준이 낮은 레이블을 선택한 경우 이유를 제공하라는 메시지를 사용자에게 표시할 수 있는 옵션.
     
     - 첨부 파일에 따라 메일 메시지에 자동으로 레이블을 지정할 수 있는 옵션.
+
+    - Information Protection 막대가 Office 응용 프로그램에 표시되는지 여부를 제어하는 옵션.
+
+    - [전달 안 함] 단추가 Outlook에 표시되는지 여부를 제어하는 옵션.
+    
+    - 사용자가 문서에 대한 고유 권한을 지정할 수 있는 옵션.
     
     - 사용자를 위한 사용자 지정 도움말 링크를 제공하는 옵션.
 
@@ -108,9 +119,7 @@ Azure Information Protection 레이블은 조직에서 일반적으로 만들고
 
 원하는 수의 레이블을 만들 수 있습니다. 하지만 사용자가 올바른 레이블을 쉽고 보고 선택하기에 레이블이 너무 많아지기 시작하면 사용자와 관련된 레이블만 표시되도록 범위 지정 정책을 만듭니다. 보호가 적용되는 레이블의 상한선은 500입니다.
 
-Azure Information Protection 블레이드를 변경한 경우 **Save**(저장)를 클릭하여 변경 내용을 저장하거나 **Discard**(취소)를 클릭하여 마지막으로 저장된 설정으로 되돌립니다.
-
-원하는 변경 작업을 마쳤으면 **Publish**(게시)를 클릭합니다. 
+Azure Information Protection 블레이드를 변경한 경우 **Save**(저장)를 클릭하여 변경 내용을 저장하거나 **Discard**(취소)를 클릭하여 마지막으로 저장된 설정으로 되돌립니다. 정책에 변경 내용을 저장하거나 정책에 추가된 레이블의 내용을 변경하면 해당 변경 내용이 자동으로 게시됩니다. 별도의 게시 옵션이 없습니다.
 
 Azure Information Protection 클라이언트는 지원되는 Office 응용 프로그램이 시작될 때마다 변경 내용을 확인하여 해당 최신 Azure Information Protection 정책으로 변경 내용을 다운로드합니다. 클라이언트에서 정책을 새로 고치는 추가 트리거:
 
@@ -136,6 +145,8 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 - [새 레이블을 만드는 방법](configure-policy-new-label.md)
 
+- [레이블을 추가 또는 제거하는 방법](configure-policy-add-remove-label.md)
+ 
 - [레이블을 삭제하거나 순서를 변경하는 방법](configure-policy-delete-reorder.md)
 
 - [기존 레이블을 변경하거나 사용자 지정하는 방법](configure-policy-change-label.md)

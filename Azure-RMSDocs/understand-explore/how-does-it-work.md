@@ -4,7 +4,7 @@ description: Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/29/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a261e356e167687190cc71eed4b2da715ab45697
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 321b18946c934878a422bd28a115c06d443b8d18
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
@@ -96,7 +96,9 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 **2단계에서 발생하는 작업**: 사용자가 인증되면 연결이 조직의 Azure Information Protection 테넌트로 자동으로 리디렉션됩니다. 그러면 테넌트는 사용자가 Azure Rights Management Service에서 인증하여 보호된 콘텐츠를 사용하고 오프라인으로 콘텐츠를 보호할 수 있도록 인증서를 발급합니다.
 
-사용자 인증서 복사본은 Azure에 저장되므로 사용자가 다른 장치로 이동하면 동일한 키를 사용하여 인증서가 만들어집니다.
+이러한 인증서 중 하나는 일반적으로 RAC로 간략하게 표시되는 권한 계정 인증서입니다. 이 인증서는 Azure Active Directory에 대해 사용자를 인증하고 31일 동안 유효합니다. 사용자 계정이 아직 Azure Active Directory에 있고 계정이 사용 가능한 경우 인증서는 RMS 클라이언트에 의해 자동으로 갱신됩니다. 이 인증서는 관리자가 구성할 수 없습니다. 
+
+인증서 복사본은 Azure에 저장되므로 사용자가 다른 장치로 이동하면 동일한 키를 사용하여 인증서가 만들어집니다.
 
 ### <a name="content-protection"></a>콘텐츠 보호
 사용자가 문서를 보호하면 RMS 클라이언트는 보호되지 않은 문서에 대해 다음 작업을 수행합니다.

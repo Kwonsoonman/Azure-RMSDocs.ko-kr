@@ -12,25 +12,25 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fadaac4b5ea7828c53544485b1685226176a2a75
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: df2d97fd8abdf7c2f210d857287d3590838222db
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>개인용 RMS 및 Azure Information Protection
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-개인용 RMS는 Azure Information Protection으로 보호된 파일을 열어야 하는 사용자를 위한 무료 셀프 서비스 구독입니다. Azure Active Directory에서 이러한 사용자를 인증할 수 없고 해당 조직에 AD RMS(Active Directory Rights Management)가 없는 경우 이 무료 등록 서비스는 사용자의 Azure Active Directory에 계정을 만들 수 있습니다. 결과적으로 이 사용자는 회사 이메일 주소를 사용하여 인증한 다음 컴퓨터 또는 모바일 장치에서 보호된 파일을 읽을 수 있습니다.
+개인용 RMS는 Azure Information Protection으로 보호된 파일을 열어야 하는 사용자를 위한 무료 셀프 서비스 구독입니다. Azure Active Directory에서 이러한 사용자를 인증할 수 없는 경우 이 무료 등록 서비스는 사용자의 Azure Active Directory에 계정을 만들 수 있습니다. 결과적으로 이 사용자는 회사 이메일 주소를 사용하여 인증한 다음 컴퓨터 또는 모바일 장치에서 보호된 파일을 읽을 수 있습니다.
 
-개인용 RMS는 Azure Active Directory 셀프 서비스 등록을 사용합니다. 사용자가 조직의 계정을 만든 경우 조직의 관리자는 사용자 계정에 대한 소유권을 요구하고 해당 계정을 제어할 수 있습니다. 
+개인용 RMS는 Azure Active Directory 셀프 서비스 등록을 사용합니다. 사용자가 이 구독을 사용하여 조직의 계정을 만든 경우 조직의 관리자는 사용자 계정에 대한 소유권을 요구하고 [해당 계정을 제어](/active-directory/domains-admin-takeover#external-admin-takeover)할 수 있습니다. 
 
 
 > [!NOTE]
 > 이 무료 구독은 조직에서 보호하는 파일을 조직 외부의 인증된 사람이 항상 읽을 수 있도록 하는 하나의 옵션입니다. 또 다른 옵션은 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)를 사용하여 문서를 전자 메일로 보내는 것입니다. 이 메일 솔루션은 모든 장치에서 모든 메일 주소로 작동하며 메일로 조직 외부 사용자와 정보를 공유하고 Office 문서를 보는 안전한 방법으로 권장됩니다. 
 
-이 체험 계정에 등록하려면 [Microsoft Azure Information Protection 페이지](https://aka.ms/rms-signup)로 이동하여 업무용 메일 주소를 제공합니다. Microsoft에서 답장 메일을 받으면 자세한 정보를 입력하고 계정을 만들어 등록 프로세스를 완료합니다. 
+이 체험 계정에 등록하려면 사용자가 [Microsoft Azure Information Protection 페이지](https://aka.ms/rms-signup)로 이동하여 업무용 메일 주소를 제공합니다. Microsoft로부터 응답 메일을 받으면 계정을 만드는 데 필요한 세부 정보를 입력하여 등록 프로세스를 완료할 수 있습니다. 
 
 계정을 만들면 마지막 페이지에 다른 장치용 Azure Information Protection 클라이언트 또는 뷰어를 다운로드할 수 있는 링크, 사용자 가이드에 대한 링크 및 Rights Management 보호를 기본적으로 지원하는 응용 프로그램의 최신 목록에 대한 링크가 표시됩니다. 
 

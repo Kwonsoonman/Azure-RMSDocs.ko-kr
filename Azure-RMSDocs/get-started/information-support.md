@@ -4,7 +4,7 @@ description: 새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Micr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 04/23/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 72d1c9872acd603f545f796550d44415dd996ab4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9eafa28bb6a259c7f845f54268a30c8cdc6fc988
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/28/2018
 
 |수행 작업 ...|...방법:|
 |----------------|---------------|
-|가장 자주 사용되는 문서보기|상위 5개 페이지 읽기:<br /><br /> - [iOS 및 Android용 Azure Information Protection 앱 시작](../rms-client/mobile-app-get-started.md)<br /> - [Azure Rights Management 활성화](../deploy-use/activate-service.md)<br />- [Azure Information Protection에 대한 요구 사항](requirements.md) <br />- [Azure Information Protection 스캐너 배포](../deploy-use/deploy-aip-scanner.md)<br />- [Office 365 관리 센터에서 Azure Rights Management를 활성화](../deploy-use/activate-office365.md)|
+|가장 자주 사용되는 문서보기|상위 5개 페이지 읽기:<br /><br /> - [Azure Rights Management에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md)<br /> - [Azure Information Protection 질문과 대답](../get-started/faqs.md)<br />- [Azure Information Protection에 대한 요구 사항](requirements.md) <br />- [Azure Information Protection 스캐너 배포](../deploy-use/deploy-aip-scanner.md)<br />- [기본 Azure Information Protection 정책](../deploy-use/configure-policy-default.md)|
 |제품 팀 및 동료와의 소통|Azure Information Protection에 대한 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 방문하세요.|
 |새로운 기능 또는 기능 변경 요청|Azure Information Protection에 대한 [사용자 의견 사이트](https://msip.uservoice.com)에 방문하세요.|
 |제품 그룹의 트윗 수신|Twitter에서 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)를 팔로우하세요.|

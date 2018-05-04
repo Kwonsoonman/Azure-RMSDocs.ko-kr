@@ -4,7 +4,7 @@ description: Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0ec4710618227573fa7442a8fe1f0bd52b2c8f6f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 297e530406c33ca50d1e8287509e4c3a6f3c7a80
+ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -158,7 +158,9 @@ Rights Management 소유자는 Windows 파일 시스템의 소유자와 독립�
 
 사용자가 Azure Rights Management로 보호되는 문서 또는 전자 메일을 열면 해당 콘텐츠에 대한 Rights Management 사용 라이선스가 사용자에게 부여됩니다. 이 사용 라이선스는 문서 또는 전자 메일 메시지에 대한 사용자의 사용 권한 및 콘텐츠를 암호화하는 데 사용된 암호화 키를 포함하는 인증서입니다. 또한 사용 라이선스에는 설정된 경우 만료 날짜 및 사용 라이선스가 유효한 기간이 포함되어 있습니다.
 
-사용 라이선스의 기간 동안 사용자를 다시 인증하거나 다시 권한을 부여하지 않습니다. 이렇게 하면 사용자는 보호된 문서 또는 전자 메일을 인터넷 연결 없이 계속 열 수 있습니다. 사용 라이선스 유효 기간이 만료되면 다음에 사용자가 보호된 문서 또는 이메일에 액세스할 때 사용자를 다시 인증하고 다시 권한을 부여해야 합니다. 
+사용자는 [사용자 환경이 초기화](../understand-explore/how-does-it-work.md#initializing-the-user-environment)된 후 31일마다 갱신될 때 부여되는 인증서인 RAC(권한 계정 인증서) 외에 콘텐츠를 열기 위한 유효한 사용 라이선스가 있어야 합니다.
+
+사용 라이선스의 기간에는 콘텐츠에 대해 사용자를 다시 인증하거나 다시 권한을 부여하지 않습니다. 이렇게 하면 사용자는 보호된 문서 또는 전자 메일을 인터넷 연결 없이 계속 열 수 있습니다. 사용 라이선스 유효 기간이 만료되면 다음에 사용자가 보호된 문서 또는 이메일에 액세스할 때 사용자를 다시 인증하고 다시 권한을 부여해야 합니다. 
 
 문서 및 전자 메일 메시지가 보호 설정을 정의하는 레이블 또는 템플릿을 사용하여 보호되는 경우 콘텐츠를 다시 보호할 필요 없이 레이블 또는 템플릿에서 이러한 설정을 변경할 수 있습니다. 사용자가 이미 콘텐츠에 액세스한 경우 변경 내용은 해당 사용 라이선스 기간이 만료된 후에 적용됩니다. 그러나 사용자가 사용자 지정 권한(임시 권한 정책이라고도 함)을 적용하고 이러한 사용 권한을 문서 또는 전자 메일을 보호한 후 변경해야 하는 경우, 해당 콘텐츠는 새 사용 권한으로 다시 보호되어야 합니다. 전자 메일 메시지에 대한 사용자 지정 권한은 전달 금지 옵션으로 구현됩니다.
 

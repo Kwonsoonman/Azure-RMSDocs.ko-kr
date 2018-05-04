@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/02/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 08412c2c1cf1182b6d8bdae6e68d53d0b46f4b41
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: bb48a3e35d18c111d3df1907b7cc7a2832e0ae13
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -28,19 +28,22 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>포털에서 고급 클라이언트 구성 설정을 구성하는 방법
 
+>[!NOTE]
+> 이러한 지침은 Azure Portal의 최신 업데이트를 반영합니다. **분류** 메뉴 옵션이 표시되지 않고 **게시** 옵션이 계속 표시되면 탐색 지침이 표시되는 내용과 정확하게 일치하지 않습니다. 이 경우 테넌트가 최신 변경 내용에 대해 업데이트되는 며칠 후에 이 절차를 다시 시도하는 것이 좋습니다.
+
 1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 [Azure Portal에 로그인](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal)한 다음, **Azure Information Protection** 블레이드로 이동합니다.
 
-2. 초기 Azure Information Protection 블레이드에서 **범위 정책**을 선택합니다.
+2. **분류** > **레이블** 메뉴 옵션에서: **정책**을 선택합니다.
 
-3. **Azure Information Protection - 범위 정책** 블레이드에서 고급 설정을 포함할 정책 옆에 있는 상황에 맞는 메뉴(**...**)를 선택합니다. 그런 후 **고급 설정**을 선택합니다.
+3. **Azure Information Protection - 정책** 블레이드에서 고급 설정을 포함할 정책 옆에 있는 상황에 맞는 메뉴(**...**)를 선택합니다. 그런 후 **고급 설정**을 선택합니다.
     
     범위 정책 뿐만 아니라 전역 정책에 대해 고급 설정을 구성할 수 있습니다.
 
 4. **고급 설정** 블레이드에서 고급 설정 이름 및 값을 입력한 다음 **저장 후 닫기**를 선택합니다.
 
-5. **게시**를 클릭하고 이 정책에 대한 사용자가 열어 놓은 모든 Office 응용 프로그램을 다시 시작하는지 확인합니다.
+5. 이 정책에 대한 사용자가 열어 놓은 모든 Office 응용 프로그램을 다시 시작하는지 확인합니다.
 
-6. 더 이상 해당 설정이 필요하지 않으며 기본 동작으로 되돌리려면 **고급 설정** 블레이드에서 더 이상 필요하지 않은 설정 옆에 있는 상황에 맞는 메뉴(**...**)를 선택하고 **삭제**를 선택합니다. **저장 후 닫기**를 클릭하고 수정된 정책을 다시 게시합니다.
+6. 더 이상 해당 설정이 필요하지 않으며 기본 동작으로 되돌리려면 **고급 설정** 블레이드에서 더 이상 필요하지 않은 설정 옆에 있는 상황에 맞는 메뉴(**...**)를 선택하고 **삭제**를 선택합니다. 그런 다음, **저장 후 닫기**를 클릭합니다.
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>AD RMS 전용 컴퓨터의 로그인 프롬프트 방지
 
@@ -151,8 +154,6 @@ Azure Information Protection 클라이언트가 컴퓨터에 처음 설치되고
 
 - 값: 사용자 지정 권한 옵션을 사용할 수 있게 하려면 **True**, 이 옵션을 사용할 수 없게 하려면 **False**
 
-> [!IMPORTANT]
-> 현재 미리 보기 버전의 클라이언트를 사용하지 않는 한 Word, Excel, PowerPoint 및 파일 탐색기의 사용자 정의 권한에 대해 구성된 레이블이 있는 경우 이 옵션을 **False**로 설정하지 마세요. 이 옵션을 사용할 경우 레이블이 적용되면 사용자 지정 권한을 구성하라는 메시지가 사용자에게 표시되지 않습니다. 결과는 문서에 레이블이 지정되지만, 문서가 의도한 대로 보호되지 않습니다.
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 영구적으로 숨기기
 
@@ -171,9 +172,7 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 ## <a name="enable-recommended-classification-in-outlook"></a>Outlook에서 권장 분류 사용
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
-
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다.
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이 설정은 미리 보기로 제공되고 변경될 수 있습니다.
 
 권장 분류에 대한 레이블을 구성하면 Word, Excel 및 PowerPoint에서 권장 레이블을 적용할지 또는 해제할지 묻는 메시지가 표시됩니다. 이 설정은 이 레이블 권장 사항을 확장하여 Outlook에도 표시합니다.
 
@@ -185,8 +184,6 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 
 ## <a name="set-a-different-default-label-for-outlook"></a>Outlook에 대한 다른 기본 레이블 설정
-
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 이 구성 옵션에는 미리 보기 버전의 클라이언트가 필요합니다.
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
@@ -202,19 +199,45 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 - 값: \<**레이블 ID**> 또는 **없음**
 
-## <a name="turn-off-classification-running-continuously-in-the-background"></a>백그라운드에서 계속해서 실행되는 분류를 해제합니다.
-
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 이 구성 옵션에는 미리 보기 버전의 클라이언트가 필요합니다.
+## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>필수 레이블을 사용하는 경우 문서에 대한 “나중에” 제거
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
-이 설정을 구성할 때 미리 보기 버전의 Azure Information Protection 클라이언트는 사용자가 지정한 조건 규칙에 대한 문서를 정기적으로 검사하지 않습니다. 대신 자동 및 권장 레이블이 [동일한 방식으로 일반 공급 버전의 Azure Information Protection 클라이언트](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)에 적용됩니다. 성능상의 이유로 이 설정이 필요할 수 있습니다.
+**All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함)의 [정책 설정](../deploy-use/configure-policy-settings.md)을 사용할 경우 사용자가 Office 문서를 처음 저장할 때와 메일을 보낼 때 레이블을 선택할지 묻는 메시지가 사용자에게 표시됩니다. 문서의 경우 사용자는 **나중에**를 선택하여 일시적으로 레이블 선택 프롬프트를 무시하고 문서로 돌아갈 수 있습니다. 그러나 레이블을 지정해야 저장된 문서를 닫을 수 있습니다. 
+
+이 설정을 구성하면 **나중에** 옵션이 제거되므로 문서가 처음 저장될 때 사용자가 레이블을 선택해야 합니다.
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **PostponeMandatoryBeforeSave**
+
+- 값: **False**
+
+## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>백그라운드에서 계속해서 실행되도록 분류 켜기
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+이 설정을 구성하면 다음과 같이 Azure Information Protection 클라이언트가 자동 및 권장 레이블을 적용하는 방식의 [기본 동작](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)이 변경됩니다.
+
+- 자동 분류는 Word, Excel, PowerPoint 및 Outlook에 적용됩니다. 문서의 경우 자동 분류는 백그라운드에서 지속적으로 실행됩니다. Outlook의 경우 메일을 전송할 때 자동 분류가 실행됩니다. 
+    
+    이전에 수동으로 레이블이 지정되거나 더 높은 분류에서 이전에 자동으로 레이블이 지정된 문서에 자동 분류를 사용할 수 없습니다. 이 동작의 예외는 OverrideLabel 매개 변수가 설정된 Azure Information Protection 스캐너를 사용하는 경우입니다.
+
+- 권장 분류는 Word, Excel 및 PowerPoint에 적용됩니다. 이러한 문서의 경우 권장 분류는 백그라운드에서 지속적으로 실행됩니다. Outlook에 권장 분류를 사용할 수 없습니다.
+    
+    더 높은 분류와 상관 없이 이전에 레이블이 지정된 문서에 권장 분류를 사용할 수 있습니다. 
+
+Azure Information Protection 클라이언트가 지정되는 조건 규칙에 대해 문서를 정기적으로 확인하는 경우 이 동작을 사용하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류 및 보호를 사용할 수 있습니다. 조건 규칙을 이미 실행했기 때문에 큰 파일도 더 신속하게 저장됩니다. 
+
+조건 규칙은 사용자 형식으로 실시간으로 실행되지 않습니다. 대신, 문서를 수정할 때 주기적으로 백그라운드 작업으로 실행됩니다.
 
 이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
 
 - 키: **RunPolicyInBackground**
 
-- 값: **False**
+- 값: **True**
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션
 
@@ -238,7 +261,7 @@ Secure Islands에서 레이블을 지정한 Office 문서 및 PDF 문서의 경�
 
 `[Azure Information Protection label ID],[migration rule name],[Secure Islands custom property name],[Secure Islands metadata Regex value]`
 
-Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는 경우 레이블 ID 값이 **레이블** 블레이드에 표시됩니다. 하위 레이블을 지정하려면 상위 레이블이 같은 범위 또는 전역 정책에 있어야 합니다.
+Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는 경우 레이블 ID 값이 **레이블** 블레이드에 표시됩니다. 하위 레이블을 지정하려면 부모 레이블이 같은 범위 또는 전역 정책에 있어야 합니다.
 
 원하는 마이그레이션 규칙 이름을 지정합니다. 이전 레이블 지정 솔루션의 레이블 하나 이상이 Azure Information Protection 레이블에 매핑되는 방식을 식별하는 데 도움이 되는 설명이 포함된 이름을 사용합니다. 이 이름은 스캐너 보고서와 이벤트 뷰어에 표시됩니다. 
 
@@ -296,8 +319,6 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>기존 사용자 지정 속성을 사용하여 Office 문서에 레이블을 지정합니다.
-
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
 
 > [!NOTE]
 > 이 구성과 이전 섹션의 구성을 사용하여 다른 레이블 지정 솔루션에서 마이그레이션하는 경우 레이블 지정 마이그레이션 설정이 우선합니다. 

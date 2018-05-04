@@ -4,25 +4,28 @@ description: 레이블에 대한 조건을 구성할 때 문서 또는 메일에
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/02/2018
+ms.date: 04/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: f7242c05d830ecd1b702e4e9bb049e72740843f3
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: 1019b7d7ea32b26a24aa2417a77345ff87e52e4b
+ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
+>[!NOTE]
+> 이 문서는 전역 정책이나 범위 지정 정책과 관계없이 레이블을 만들 수 있는 Azure Portal에 대한 최신 업데이트를 반영합니다. 정책 게시 옵션도 제거됩니다. 테넌트에서 이러한 변경 내용이 업데이트되지 않은 경우(예: Azure Information Protection에 대한 **게시** 옵션이 계속 표시되고 **분류** 메뉴 옵션이 표시되지 않는 경우) 며칠만 기다린 후 이러한 지침을 다시 확인하세요.
+
 레이블에 대한 조건을 구성할 때 문서 또는 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다. 
 
-이러한 조건을 구성할 때 **신용 카드 번호** 또는 **SSN(사회 보장 번호)**과 같은 미리 정의된 패턴을 사용할 수 있습니다. 또는 자동 분류에 대한 조건으로 사용자 지정 문자열 또는 패턴을 정의할 수 있습니다. 이러한 조건은 문서와 메일의 본문 텍스트 및 머리글과 바닥글에 적용됩니다. 조건에 대한 자세한 내용은 [다음 절차](#to-configure-recommended-or-automatic-classification-for-a-label)의 5단계를 참조하세요.
+이러한 조건을 구성할 때 **신용 카드 번호** 또는 **SSN(사회 보장 번호)** 과 같은 미리 정의된 패턴을 사용할 수 있습니다. 또는 자동 분류에 대한 조건으로 사용자 지정 문자열 또는 패턴을 정의할 수 있습니다. 이러한 조건은 문서와 메일의 본문 텍스트 및 머리글과 바닥글에 적용됩니다. 조건에 대한 자세한 내용은 [다음 절차](#to-configure-recommended-or-automatic-classification-for-a-label)의 5단계를 참조하세요.
 
 최상의 사용자 환경과 비즈니스 연속성 보장을 위해 자동 분류보다 사용자 권장 분류로 시작하는 것이 좋습니다. 이 구성을 통해 사용자가 분류 및 연결된 보호를 수락하거나, 이러한 제안이 해당 문서 또는 메일 메시지에 적합하지 않은 경우 재정의할 수 있습니다.
 
@@ -30,7 +33,7 @@ ms.lasthandoff: 04/03/2018
 
 ![Azure Information Protection 보호 및 권장 사항](../media/info-protect-recommend-calloutsv2.png)
 
-이 예제에서는 사용자가 **Change now**(지금 변경)를 클릭하여 권장 레이블을 적용하거나, **Dismiss**(해제)를 선택하여 권장 사항을 재정의할 수 있습니다.
+이 예제에서는 사용자가 **Change now**(지금 변경)를 클릭하여 권장 레이블을 적용하거나, **Dismiss**(해제)를 선택하여 권장 사항을 재정의할 수 있습니다. 사용자가 권장 사항을 무시하도록 선택하고 다음에 문서가 열릴 때 조건이 계속 적용되는 경우 레이블 권장 사항이 다시 표시됩니다. 
 
 > [!IMPORTANT]
 >자동 분류 및 사용자 정의 권한에 대한 레이블을 구성하지 않습니다. 사용자 정의 권한 옵션은 사용자가 권한을 부여받아야 하는 사용자를 지정하도록 하는 [보호 설정](configure-policy-protection.md)입니다.
@@ -38,8 +41,6 @@ ms.lasthandoff: 04/03/2018
 >자동 분류 및 사용자 지정 권한에 대한 레이블을 구성하는 경우 조건에 대한 콘텐츠를 검사하고 사용자 정의 권한 설정을 적용하지 않습니다. 권장 분류 및 사용자 정의 권한을 사용할 수 있습니다.
 
 ## <a name="how-automatic-or-recommended-labels-are-applied"></a>자동 또는 권장 레이블을 적용하는 방법
-
-**Azure Information Protection 클라이언트의 일반 공급 버전의 경우:**
 
 - Word, Excel 및 PowerPoint의 경우 문서가 저장될 때 자동 분류가 적용되고, Outlook의 경우 메일이 전송될 때 자동 분류가 적용됩니다. 
     
@@ -49,28 +50,9 @@ ms.lasthandoff: 04/03/2018
     
     더 높은 분류와 상관 없이 이전에 레이블이 지정된 문서에 권장 분류를 사용할 수 있습니다. 
 
-
-**Azure Information Protection 클라이언트의 현재 미리 보기 버전의 경우:**
-
-- 자동 분류는 Word, Excel, PowerPoint 및 Outlook에 적용됩니다. 문서의 경우 자동 분류는 [백그라운드에서 지속적으로](#more-information-about-running-continuously) 실행됩니다. Outlook의 경우 메일을 전송할 때 자동 분류가 실행됩니다. 
-    
-    이전에 수동으로 레이블이 지정되거나 더 높은 분류에서 이전에 자동으로 레이블이 지정된 문서에 자동 분류를 사용할 수 없습니다. 이 동작의 예외는 OverrideLabel 매개 변수가 설정된 Azure Information Protection 스캐너를 사용하는 경우입니다.
-
-- 권장 분류는 Word, Excel 및 PowerPoint에 적용됩니다. 이러한 문서의 경우 권장 분류는 [백그라운드에서 지속적으로](#more-information-about-running-continuously) 실행됩니다. Outlook에 권장 분류를 사용할 수 없습니다.
-    
-    더 높은 분류와 상관 없이 이전에 레이블이 지정된 문서에 권장 분류를 사용할 수 있습니다. 
-
-#### <a name="more-information-about-running-continuously"></a>지속적인 실행에 대한 자세한 정보
-
-기본적으로 현재 미리 보기 버전의 Azure Information Protection 클라이언트는 사용자가 지정한 조건 규칙에 대한 문서를 정기적으로 검사합니다. 이 동작을 사용하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류 및 보호를 사용할 수 있습니다. 조건 규칙을 이미 실행했기 때문에 큰 파일도 더 신속하게 저장됩니다. 
-
-조건 규칙은 사용자 형식으로 실시간으로 실행되지 않습니다. 대신, 문서를 수정할 때 주기적으로 백그라운드 작업으로 실행됩니다.
-
-Azure Information Protection 클라이언트가 자동 및 권장 레이블을 일반 공급 버전의 클라이언트와 동일한 방식으로 적용하도록 이 동작을 변경할 수 있습니다. 이 구성에는 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#turn-off-classification-running-continuously-in-the-background)이 필요합니다.
+Azure Information Protection 클라이언트에서 사용자가 지정한 조건 규칙에 대한 문서를 정기적으로 검사하도록 이 동작을 변경할 수 있습니다. 이 구성에는 현재 미리 보기로 제공되는 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)이 필요합니다.
 
 ### <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>둘 이상의 레이블에 적용할 때 여러 조건을 평가하는 방법
-
-Azure Information Protection 클라이언트의 일반 공급 버전 및 현재 미리 보기 클라이언트의 경우
 
 1. 레이블은 정책에서 지정한 해당 위치에 따라 평가 순서가 결정됩니다. 첫 번째에 위치한 레이블이 최하위 위치(민감도가 가장 낮음)이고 마지막에 위치한 레이블이 최상위 위치(민감도가 가장 높음)입니다.
 
@@ -85,15 +67,11 @@ Azure Information Protection 클라이언트의 일반 공급 버전 및 현재 
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. 구성하려는 레이블을 모든 사용자에게 적용하려는 경우 **Azure Information Protection - 전역 정책** 블레이드에 그대로 있습니다.
-    
-    구성하려는 레이블이 선택한 사용자에게만 적용되도록 [범위 지정 정책](configure-policy-scope.md)에 포함되는 경우 **정책** 메뉴 선택에서 **범위 지정 정책**을 선택합니다. 그런 다음 **Azure Information Protection - 범위 지정 정책** 블레이드에서 범위 지정 정책을 선택합니다.
+2. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 구성할 레이블을 선택합니다.
 
-3. **Azure Information Protection - 전역 정책** 블레이드 또는 **정책:\<이름>** 블레이드에서 구성할 레이블을 선택합니다. 
+3. **레이블** 블레이드의 **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션에서 **Add a new condition**(새 조건 추가)을 클릭합니다.
 
-4. **레이블** 블레이드의 **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션에서 **Add a new condition**(새 조건 추가)을 클릭합니다.
-
-5. **조건** 블레이드에서 미리 정의된 조건을 사용하려면 **정보 유형**을 선택하고, 사용자 고유의 조건을 지정하려면 **사용자 지정**을 선택합니다.
+4. **조건** 블레이드에서 미리 정의된 조건을 사용하려면 **정보 유형**을 선택하고, 사용자 고유의 조건을 지정하려면 **사용자 지정**을 선택합니다.
     - **정보 유형**의 경우: 사용 가능한 조건 목록에서 선택한 다음 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 선택합니다.
         
         정보 유형에서는 Office 365 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지를 사용합니다. 여러 일반적인 중요한 정보 유형 중에서 선택할 수 있으며, 이 중 일부는 특정 지역과만 관련됩니다. 자세한 내용은 Office 설명서의 [중요한 정보 유형이 찾는 내용](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)을 참조하세요.
@@ -106,17 +84,17 @@ Azure Information Protection 클라이언트의 일반 공급 버전 및 현재 
         
         정규식은 Office 365 정규식(regex) 패턴을 사용합니다. 자세한 내용은 Office 설명서의 [정규식 기반 일치 정의](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2)를 참조하세요. 또한 부스트에서 [Perl 정규식 구문](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)을 참조하는 것이 유용할 수 있습니다.
         
-6. **최소 발생 수**와 **Count occurrence with unique value only(고유 값만 있는 발생 수)**로 변경해야 하는지 여부를 결정한 다음 **저장**을 선택합니다. 
+5. **최소 발생 수**와 **Count occurrence with unique value only(고유 값만 있는 발생 수)** 로 변경해야 하는지 여부를 결정한 다음 **저장**을 선택합니다. 
     
-    발생 옵션의 예: 주민등록번호에 대한 정보 유형을 선택하고, 최소 발생 수를 2로 설정하고, 문서에 동일한 주민등록번호가 두 번 나열됩니다. **Count occurrence with unique value only(고유 값만 있는 발생 수)**를 **설정**으로 설정하면 조건이 충족되지 않습니다. 이 옵션을 **끄기**로 설정하면 조건을 충족합니다.
+    발생 옵션의 예: 주민등록번호에 대한 정보 유형을 선택하고, 최소 발생 수를 2로 설정하고, 문서에 동일한 주민등록번호가 두 번 나열됩니다. **Count occurrence with unique value only(고유 값만 있는 발생 수)** 를 **설정**으로 설정하면 조건이 충족되지 않습니다. 이 옵션을 **끄기**로 설정하면 조건을 충족합니다.
 
-7. **레이블** 블레이드에서 다음을 구성한 후 **저장**을 클릭합니다.
+6. **레이블** 블레이드에서 다음을 구성한 후 **저장**을 클릭합니다.
     
     - 자동 또는 권장 분류를 선택합니다. **Select how this label is applied: automatically or recommended to user**(이 레이블이 적용되는 방식 선택: 자동 또는 사용자에게 권장)에서 **Automatic**(자동) 또는 **Recommended**(권장)를 선택합니다.
     
     - 사용자 프롬프트 또는 정책 팁에 대한 텍스트를 지정합니다. 기본 텍스트를 유지하거나 사용자 고유의 문자열을 지정할 수 있습니다.
 
-8. 변경 내용을 사용자에게 제공하려면 초기 **Azure Information Protection** 블레이드에서 **게시**를 클릭합니다.
+**저장**을 클릭하면 변경 내용이 사용자 및 서비스에 자동으로 제공됩니다. 더 이상 별도의 게시 옵션이 없습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

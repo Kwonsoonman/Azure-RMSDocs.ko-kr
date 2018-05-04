@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 클라�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a60169a2c98a751c787a7ca4a8aee31f99a18590
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 13f82bc12fd77d4f145b059c2962af01094760c3
+ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>관리자 가이드: Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
 
@@ -40,9 +40,9 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
 
 클라이언트는 사용자 활동을 로컬 Windows 이벤트 로그 **응용 프로그램 및 서비스 로그** > **Azure Information Protection**에 기록합니다. 이벤트에는 다음과 같은 정보가 포함됩니다.
 
-- 날짜, 클라이언트 버전, 정책 ID
+- 클라이언트 버전, 정책 ID
 
-- 로그인한 사용자 이름, 컴퓨터 이름
+- 로그인한 사용자의 IP 주소
 
 - 파일 이름 및 위치
 
@@ -77,9 +77,6 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
     - 시스템(로그인 및 다운로드 정책용)
     
     - Default
-        
-        이 **Default** 원본 작업은 미리 보기 클라이언트 전용이며, Azure Information Protection 정책에서 **기본 레이블 선택**을 사용하여 설정된 레이블을 참조합니다.
-
     
 - 작업 전/후의 레이블 
     

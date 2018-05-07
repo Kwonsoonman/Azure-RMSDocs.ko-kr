@@ -5,7 +5,7 @@
 # [클라이언트 배포 및 사용](/information-protection/rms-client/use-client)
 # [앱 개발 및 사용자 지정](developers-guide.md)
 ## [개발자 가이드](developers-guide.md)
-## Microsoft Information Protection
+## [Microsoft Information Protection](https://aka.ms/mipsdkdocs)
 ## [권한 관리 SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)
 ### [개요](overview.md)
 ### [시작](get-started.md)

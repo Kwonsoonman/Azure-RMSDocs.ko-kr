@@ -4,7 +4,7 @@ description: Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/09/2018
+ms.date: 05/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 297e530406c33ca50d1e8287509e4c3a6f3c7a80
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: f5006ef3d0401b6a7f018be1f65979c079cf04fc
+ms.sourcegitcommit: fdcfc006108f61fcd380ff6f3c3208c78ecf4056
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -40,7 +40,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |사용 권한|설명|구현|
 |-------------------------------|---------------------------|-----------------|
 |일반 이름: **콘텐츠 편집, 편집** <br /><br />정책에서 인코딩: **DOCEDIT**|사용자가 응용 프로그램 내에서 콘텐츠를 수정, 다시 정렬, 형식 지정 또는 필터링할 수 있게 합니다. 편집된 복사본을 저장할 수 있는 권한은 부여하지 않습니다.<br /><br />Word에서는 이 권한으로 부족해 **변경 내용 추적**을 켜거나 끌 수 없고 검토자로 일부 변경 내용 추적 기능을 사용할 수 없습니다. 모든 변경 내용 추적 옵션을 사용하려면 **모든 권한**이 필요합니다. |Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 편집**<br /><br />Azure Portal의 이름: **콘텐츠 편집, 편집(DOCEDIT)**<br /><br />AD RMS 템플릿의 이름: **편집** <br /><br />API 상수 또는 값: 해당 사항 없음|
-|일반 이름: **저장** <br /><br />정책에서 인코딩: **EDIT**|사용자가 현재 위치에 문서를 저장할 수 있게 합니다.<br /><br />또한 Office 응용 프로그램에서 이 권한을 사용하면 사용자는 문서를 수정할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **파일 저장**<br /><br />Azure Portal의 이름: **저장(EDIT)**<br /><br />AD RMS 템플릿의 이름: **저장** <br /><br />API 상수 또는 값: `IPC_GENERIC_WRITE L"EDIT"`|
+|일반 이름: **저장** <br /><br />정책에서 인코딩: **EDIT**|사용자가 현재 위치에 문서를 저장할 수 있게 합니다.<br /><br />Office 응용 프로그램에서 사용자가 이 권한을 사용하면 선택한 파일 형식이 Rights Management 보호를 기본적으로 지원하는 경우 문서를 수정하고 새 위치에 저장하고 새 이름을 저장할 수 있습니다. 파일 형식 제한은 원본 보호를 파일에서 제거할 수 없도록 합니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **파일 저장**<br /><br />Azure Portal의 이름: **저장(EDIT)**<br /><br />AD RMS 템플릿의 이름: **저장** <br /><br />API 상수 또는 값: `IPC_GENERIC_WRITE L"EDIT"`|
 |일반 이름: **주석** <br /><br />정책에서 인코딩: **COMMENT**|옵션을 사용하여 메모를 추가하거나 콘텐츠에 주석을 추가할 수 있습니다.<br /><br />이 권한은 SDK에서 사용할 수 있으며 Windows PowerShell 용 AzureInformationProtection 및 RMS 보호 모듈에서 임시 정책으로 사용할 수 있고 일부 소프트웨어 공급업체 응용 프로그램에서 구현되었습니다. 그러나 널리 사용되지 않으며 현재 Office 응용 프로그램에서 지원되지 않습니다.|Office 사용자 지정 권한: 구현되지 않음 <br /><br />Azure 클래식 포털의 이름: 구현되지 않음<br /><br />Azure 포털의 이름: 구현되지 않음<br /><br />AD RMS 템플릿의 이름: 구현되지 않음 <br /><br />API 상수 또는 값: `IPC_GENERIC_COMMENT L"COMMENT`|
 |일반 이름: **다른 이름으로 저장, 내보내기** <br /><br />정책에서 인코딩: **EXPORT**|콘텐츠를 다른 파일 이름에 저장하는 옵션(다른 이름으로 저장)을 사용할 수 있게 합니다. <br /><br />Office 문서와 Azure Information Protection 클라이언트의 경우에는 파일은 보호하지 않고 저장되어 새로운 설정과 사용 권한을 사용하여 다시 보호될 수 있습니다. 이러한 허용되는 동작은 권한이 있는 사용자가 보호된 문서 또는 이메일에서 Azure Information Protection 레이블을 변경하거나 제거할 수 있음을 의미합니다. <br /><br />이 권한이 부여된 사용자는 응용 프로그램에서 **OneNote로 보내기**등의 다른 내보내기 옵션도 수행할 수 있습니다.<br /><br /> 참고: 이 권한이 부여되면, 선택한 파일 형식이 기본적으로 Rights Management 보호를 지원하는 경우 사용자는 Office 응용 프로그램을 사용하여 문서를 새 이름으로 저장할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 내보내기(다른 이름으로 저장)** <br /><br />Azure Portal의 이름: **다른 이름으로 저장, 내보내기(EXPORT)**<br /><br />AD RMS 템플릿의 이름: **내보내기(다른 이름으로 저장)** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXPORT L"EXPORT"`|
 |일반 이름: **전달** <br /><br />정책에서 인코딩: **FORWARD**|전자 메일 메시지를 전달하고 **받는 사람** 및 **참조** 줄에 받는 사람을 추가하는 옵션을 사용할 수 있게 합니다. 이 권한은 문서에 적용되지 않고 메일 메시지에만 적용됩니다.<br /><br />전달자가 전달 동작의 일부로 다른 사용자에게 권한을 부여할 수 없게 합니다. <br /><br />이 권한을 부여할 때, 원래 메일이 첨부 파일이 아니라 전달된 메일 메시지의 일부로 포함되도록 **콘텐츠 편집, 편집** 권한(일반 이름)도 부여합니다. 이 권한은 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다. 또는 [온보딩 컨트롤](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)을 구현했으므로 Azure Rights Management 서비스 사용을 면제받는 조직의 사용자에게 필요합니다.|Office 사용자 지정 권한: **전달 금지** 표준 정책을 사용하는 경우 거부됩니다.<br /><br />Azure 클래식 포털의 이름: **전달**<br /><br />Azure Portal의 이름: **전달(FORWARD)**<br /><br />AD RMS 템플릿의 이름: **전달** <br /><br />API 상수 또는 값: `IPC_EMAIL_FORWARD L"FORWARD"`|

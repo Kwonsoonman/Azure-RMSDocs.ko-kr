@@ -4,7 +4,7 @@ description: RMS API를 사용하여 Azure Information Protection의 Azure Right
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
+ms.date: 04/26/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b304f65d70361b3fdb4dbf93291f408be93d363f
-ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
+ms.openlocfilehash: d044ac76ea910f2874219bd20fe262d8bd5c4c59
+ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
 
@@ -78,6 +78,10 @@ Exchange ActiveSync IRM을 사용하도록 설정되지 않아서 전자 메일 
 
 Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되어 있으며, 이러한 앱에서 이 기능은 종종 IRM(정보 권한 관리)이라고 불립니다. 
 
+참고 항목: [Office 응용 프로그램 서비스 설명](https://technet.microsoft.com/library/office-applications-service-description.aspx)
+
+#### <a name="windows-computers-for-information-rights-management-irm"></a>IRM(정보 권한 관리)용 Windows 컴퓨터
+
 다음 Office 클라이언트 제품군은 Azure RMS를 사용하여 Windows 컴퓨터에서 파일 및 메일 보호를 지원합니다.
 
 - Office 365 ProPlus: Office 2016 및 Office 2013
@@ -102,17 +106,19 @@ Azure RMS 및 Office Professional Plus 2010 서비스 팩 2 또는 Office Profes
 
 - 사용자가 Azure Information Protection 클라이언트에서 선택한 사용자 지정 권한으로 템플릿 보호를 재정의하는 것은 지원되지 않습니다. 이 시나리오에서는 사용자 지정 사용 권한을 적용하기 전에 원래 보호를 먼저 제거해야 합니다.
 
+#### <a name="mac-computers-for-information-rights-management-irm"></a>IRM(정보 권한 관리)용 Mac 컴퓨터
+
 다음 Office 클라이언트 제품군은 Azure RMS를 사용하여 macOS에서 파일 및 메일 보호를 지원합니다.
 
 - Office 365 ProPlus: Office 2016
 
 - Mac용 Office Standard 2016
 
-참고 항목: [Office 응용 프로그램 서비스 설명](https://technet.microsoft.com/library/office-applications-service-description.aspx)
+팁: Mac용 Office를 사용하여 문서를 보호하려면 [문서를 보호하고 추적하도록 Mac 컴퓨터를 구성하려면 어떻게 해야 하나요?](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)라는 유용한 FAQ를 찾아볼 수 있습니다.
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
 
-iOS 및 Android용 Azure Information Protection 앱은 이러한 장치에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
+iOS 및 Android용 Azure Information Protection 뷰어 앱은 이러한 장치에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
 
 Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관리 앱을 사용하여 이 앱을 배포 및 관리할 수 있습니다. 자세한 내용은 Intune 설명서에서 [Microsoft Intune 콘솔에서 모바일 응용 프로그램 관리 정책 구성 및 배포](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)를 참조하세요. 이 Intune 설명서에서 2단계에서는 정책 관리 앱 게시 지침을 사용합니다.
 
@@ -135,7 +141,9 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 ### <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 자세한 내용
 
-이 응용 프로그램은 Azure Information Protection 클라이언트로 대체되고 있습니다. Mac 컴퓨터 및 Windows Phone 모바일 장치에는 여전히 필요합니다.
+이 응용 프로그램은 Azure Information Protection 클라이언트로 대체되고 있습니다. 하지만 Windows Phone 모바일 장치에서 보호된 파일을 보려면 여전히 필요합니다. 
+
+Mac 컴퓨터의 경우 보호된 PDF 파일(.ppdf), 보호된 텍스트 이미지 및 일반적으로 보호되는 파일에 대한 뷰어를 제공합니다. Mac용 RMS 공유 앱은 이미지 파일을 보호할 수 있지만 다른 파일은 보호할 수 없습니다. Office 파일을 보호하려면 Mac용 Office를 사용합니다. 
 
 자세한 내용은 다음 참조 자료를 참조하세요.
 
@@ -145,7 +153,7 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 -   [모바일 플랫폼용 Microsoft Rights Management 공유 응용 프로그램 FAQ](https://technet.microsoft.com/dn451248)
 
-[Microsoft Azure Information Protection 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 Mac 컴퓨터 및 Windows Phone용 앱을 다운로드하세요.
+[Microsoft Azure Information Protection 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 Mac 컴퓨터 및 Windows Phone용 뷰어를 다운로드하세요.
 
 
 ### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Azure Information Protection을 지원하는 다른 응용 프로그램에 대한 자세한 내용

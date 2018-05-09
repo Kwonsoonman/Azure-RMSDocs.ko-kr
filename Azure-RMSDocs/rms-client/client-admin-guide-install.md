@@ -4,7 +4,7 @@ description: 엔터프라이즈 네트워크에서 Windows용 Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 04/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2a3daec687739956bb0b7bd235b69cea30039171
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d52026fcffd3a3a0b51e361e6671f247eac5296d
+ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -71,20 +71,6 @@ ms.lasthandoff: 03/28/2018
     이 **관리되는 추가 기능 목록** 그룹 정책 설정을 구성하지 않았더라도 Microsoft Azure Information Protection 추가 기능이 비활성화된다는 보고를 받을 경우 구성해야 할 수 있습니다. 이 추가 기능을 비활성화하면 사용자는 Office 응용 프로그램에서 Azure Information Protection 막대를 볼 수 없습니다.
     
     이 그룹 정책 설정에 대한 자세한 내용은 [Office 2013 및 Office 2016 프로그램에 대한 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)을 참조하세요.
-
-- Office 버전 16.0.8628.2010 이상의 경우(간편 실행): 모니터에 대한 레거시 지원 사용
-    
-    참고: 이 필수 구성 요소는 현재 미리 보기 버전의 Azure Information Protection 클라이언트에 필요하지 않습니다. 
-    
-    Azure Information Protection 표시줄이 이러한 Office 버전용 Office 응용 프로그램 외부에 표시되는 것을 방지하기 위해 모니터에 대한 레거시 지원을 사용하는 것이 좋습니다. 이 시나리오에서 막대가 제대로 표시되지 않을 경우 **AdxTaskPane**으로 표시될 수 있습니다. 
-    
-    이 요구 사항에 맞게 Office 응용 프로그램을 구성하려면 **파일** > **옵션** > **일반** > **사용자 인터페이스 옵션**으로 이동합니다.
-    
-    - 옵션이 표시되면 **여러 디스플레이 사용 시**를 **최적의 모양을 위해 최적화**로 설정하고, **호환성을 위해 최적화(응용 프로그램 다시 시작 필요)**를 대신 선택합니다. 
-        
-    - **내 디스플레이에 대해 최적의 설정 사용** 옵션이 선택된 것으로 확인되면 이 선택 항목을 제거합니다.
-    
-    - 이러한 두 옵션이 표시되지 않을 경우 추가 구성이 필요하지 않습니다.
 
 > [!IMPORTANT]
 > Azure Information Protection 클라이언트를 설치하려면 로컬 관리 권한이 필요합니다.
@@ -211,16 +197,9 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 ## <a name="how-to-install-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너를 설치하는 방법
 
-현재 Azure Information Protection 스캐너의 GA(일반 공급) 버전은 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 **AzInfoProtectionScanner.exe**라는 별도의 다운로드입니다. 스캐너의 후속 릴리스는 Azure Information Protection 클라이언트에 포함될 예정입니다.
+Azure Information Protection 클라이언트에 포함된 PowerShell 모듈에는 스캐너를 설치하고 구성하는 cmdlet이 있습니다. 하지만 스캐너를 사용하려면 전체 버전의 클라이언트를 설치해야 하며 PowerShell 모듈만 설치할 수는 없습니다.
 
-현재 미리 보기 버전의 Azure Information Protection 클라이언트에는 Azure Information Protection 스캐너도 포함됩니다. 
-
-스캐너 및 미리 보기 클라이언트에 포함된 PowerShell 모듈에는 스캐너를 설치하고 구성하는 cmdlet이 있습니다.
-
-스캐너에 클라이언트를 설치하려면 이전 섹션에서 동일한 지침을 따릅니다. Office 추가 기능 및 뷰어와 같은 클라이언트의 구성 요소가 모두 필요하지 않은 경우 PowerShell 모듈만을 설치할 수 있습니다. 예를 들어 `PowerShellOnly=true /quiet`에서 실행 파일을 실행할 수 있습니다.
-
-클라이언트를 설치한 다음에 스캐너를 설치할 준비가 됩니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-use/deploy-aip-scanner.md)를 참조하세요.
-
+스캐너에 클라이언트를 설치하려면 이전 섹션에서 동일한 지침을 따릅니다. 그러면 스캐너를 설치할 준비가 된 것입니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-use/deploy-aip-scanner.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 Azure Information Protection 클라이언트를 설치했으므로 다음에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.

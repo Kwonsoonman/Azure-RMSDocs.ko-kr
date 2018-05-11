@@ -4,7 +4,7 @@ description: 조직의 문서와 메일의 분류, 레이블 지정 및 보호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7d9c58649eb06b614a25e28c909d34318ea80133
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 760fe51d8c864ff28f599dd3cf1f84ae72c03343
+ms.sourcegitcommit: 2b031166026b4b6dd87e0dbaec44a99204c8691c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 
@@ -41,24 +41,6 @@ ms.lasthandoff: 03/28/2018
 ## <a name="how-users-and-groups-are-used-by-azure-information-protection"></a>Azure Information Protection에서 사용자 및 그룹을 사용하는 방법
 
 Azure Information Protection에서 사용자 및 그룹을 사용하는 시나리오는 세 가지입니다.
-
-- 레이블 지정 및 분류를 사용할 때 **사용자에게 레이블을 할당하는 경우**. 관리자만 이러한 그룹을 선택합니다.
-    
-    - 기본 Azure Information Protection 정책이 테넌트의 Azure AD에 있는 모든 사용자에게 자동으로 할당됩니다. 그러나 범위가 지정된 정책을 사용하여 추가 레이블을 지정된 사용자나 그룹에 할당할 수도 있습니다.
-
-- Azure Rights Management 서비스를 사용하여 문서 및 메일을 보호할 때 **사용 권한 및 액세스 제어를 할당하는 경우**. 관리자 및 사용자가 이러한 사용자 및 그룹을 선택할 수 있습니다.
-
-    - 사용 권한은 사용자가 문서 또는 메일을 열 수 있는지 여부와 사용할 수 있는 방법을 결정합니다. 예를 들어, 읽기만 가능한지, 읽고 인쇄할 수 있는지, 읽고 편집할 수 있는지를 정합니다.
-
-    - 액세스 제어에는 만료 날짜, 그리고 액세스에 인터넷 연결이 필요한지 여부가 포함됩니다.
-
-- 특정 시나리오를 지원하도록 **Azure Rights Management 서비스를 구성하는 경우**에는 관리자만 이러한 그룹을 선택할 수 있습니다. 다음을 구성하는 경우의 예가 포함됩니다.
-
-    - eDiscovery 또는 데이터 복구를 위해 필요한 경우 지정된 서비스나 사람이 암호화된 콘텐츠를 열 수 있도록 슈퍼 사용자 구성.
-
-    - Azure Rights Management 서비스의 위임된 관리 구성.
-
-    - 단계적 배포를 지원하기 위한 등록 컨트롤 구성.
 
 Azure Information Protection을 구성할 때 문서와 메일에 레이블을 적용할 수 있도록 **사용자에게 레이블을 할당하는 경우**입니다. 이러한 사용자 및 그룹은 관리자만 선택할 수 있습니다.
 

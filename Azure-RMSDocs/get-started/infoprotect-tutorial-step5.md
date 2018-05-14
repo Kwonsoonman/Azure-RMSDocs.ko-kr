@@ -5,7 +5,7 @@ keywords: ''
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/18/2017
+ms.date: 05/09/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,11 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 718c15769e5719d5e8dde612cf66e4215f1e235d
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 7c6acb5a4b5c8f33193cbf5d8833201e0d68287e
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
 
@@ -103,7 +103,7 @@ ms.lasthandoff: 03/28/2018
 
 3.  **공유 문서** 페이지에 공유한 문서 이름이 표시됩니다. 이 시점에서는 이 파일이 유일하게 표시된 파일이지만, 보호된 문서를 더 공유하면 목록도 커집니다.
 
-    이 페이지에는 문서를 공유한 시기(보호된 첨부 파일이 있는 메일을 보낸 시기), 마지막 활동 날짜, 메일을 받는 수신자가 표시됩니다. 추가 세부 정보를 확인하려면 문서 이름을 클릭합니다.
+    이 페이지에는 문서를 공유한 시기(보호된 첨부 파일이 있는 메일을 보낸 시기), 현재 상태(활성, 해지됨 또는 만료됨), 메일을 받는 수신자가 표시됩니다. 추가 세부 정보를 확인하려면 문서 이름을 클릭합니다.
 
 4.  클릭한 파일의 이름이 표시된 새 페이지에서는 해당 문서만의 요약 세부 정보와 문서에 사용할 수 있는 다른 옵션(**목록**, **타임라인**, **지도**, **설정**)의 목록을 확인할 수 있습니다.
 

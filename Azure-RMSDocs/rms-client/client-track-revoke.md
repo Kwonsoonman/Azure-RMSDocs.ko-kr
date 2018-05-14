@@ -4,7 +4,7 @@ description: 문서를 보호한 후에는 사용자들이 해당 문서를 사�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/23/2017
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 84f5f0ed8b98895b8c056ff03295afef379e6b74
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: e4e35659ab964a636c6ca0c7066b1c809cc5958b
+ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>사용자 가이드: Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지
 
@@ -24,7 +24,9 @@ ms.lasthandoff: 03/28/2018
 
 Azure Information Protection을 사용하여 문서를 보호한 후에는 사용자들이 해당 문서를 사용하는 방식을 추적할 수 있습니다. 그리고 필요에 따라 사용자들이 더 이상 이러한 문서를 읽을 수 없도록 문서 액세스 권한을 해지할 수도 있습니다. 이렇게 하려면 **문서 추적 사이트**를 사용합니다. 이 사이트는 Windows 컴퓨터와 Mac 컴퓨터뿐 아니라 태블릿과 휴대폰에서도 액세스할 수 있습니다.
 
-이 사이트에 액세스할 때 로그인하여 문서를 추적할 수 있습니다. 조직에 [문서 추적 및 취소를 지원하는 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-features)이 있으며 사용자에게 이 구독에 대한 라이선스가 할당되어 있으면 보호한 파일을 열려고 시도한 사람과 이러한 시도의 성공(인증) 여부를 확인할 수 있습니다. 이러한 사용자가 각각 문서 액세스를 시도한 시간과 해당 시간의 위치도 확인합니다. 또한,
+이 사이트에 액세스할 때 로그인하여 문서를 추적할 수 있습니다. 조직에 [문서 추적 및 취소를 지원하는 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-features)이 있으며 사용자에게 이 구독에 대한 라이선스가 할당되어 있으면 보호한 파일을 열려고 시도한 사람과 이러한 시도의 성공(인증) 여부를 확인할 수 있습니다. 이러한 사용자가 각각 문서 액세스를 시도한 시간과 해당 시간의 위치도 확인합니다. 그러나 드물게 보고된 위치가 정확하지 않을 수 있습니다. 예를 들어 보호된 문서를 열고 있는 사용자가 VPN 연결을 사용하거나 컴퓨터에 IPv6 주소가 있는 경우입니다.
+
+문서 추적 사이트에서 수행할 수 있는 작업은 다음과 같습니다.
 
 - 문서 공유를 중지해야 하는 
     

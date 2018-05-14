@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 80f0b29b05f3a63972f7bc45e14ee721cf289a86
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 0b71519002816f5bae272f002bfec123186a65a1
+ms.sourcegitcommit: 22072325721cfd26b6546ef625e8b38f5551d30b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -56,10 +56,21 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 Azure Information Protection 클라이언트가 컴퓨터에 처음 설치되고 사용자가 Word, Excel, PowerPoint 또는 Outlook을 열 때 **축하합니다!** 페이지가 새 Information Protection 표시줄을 사용하여 레이블을 선택하는 방법에 대한 짧은 지침과 함께 표시됩니다. 레지스트리를 편집하여 이 페이지를 표시하지 않을 수 있습니다.
 
-다음과 같은 값 이름을 찾고 값 데이터를 **0**으로 설정합니다.
+1. 다음 레지스트리 키가 없는 경우 생성하세요.
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnableWelcomeExperience** 
+2. **EnableWelcomeExperience**라는 이름의 DWORD(32비트) 값(REG-DWORD)이 없는 경우 생성하고 데이터 값을 **0**으로 설정합니다.
 
+## <a name="suppress-the-whats-new-in-azure-information-protection-page"></a>“Azure Information Protection의 새로운 기능” 표시 안 함 페이지
+
+Azure Information Protection 클라이언트가 컴퓨터에 처음으로 설치되거나 업그레이드되고 Word, Excel, PowerPoint 또는 Outlook에 Azure Information Protection 표시줄이 표시되면 사용자 지정 권한에 대해 사용자에게 알리고 사용량을 추적하기 위해 **What's new in Azure Information Protection?**(Azure Information Protection의 새로운 기능) 페이지가 표시됩니다. 레지스트리를 편집하여 이 페이지를 표시하지 않을 수 있습니다.
+
+1. 다음 레지스트리 키가 없는 경우 생성하세요.
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
+
+2.  **WhatsNewVersion** 문자열 값(REG-SZ)이 없는 경우 생성하고 데이터 값을 **1.4**로 설정합니다.
 
 ## <a name="sign-in-as-a-different-user"></a>다른 사용자로 로그인
 

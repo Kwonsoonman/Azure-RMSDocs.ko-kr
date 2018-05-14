@@ -4,17 +4,17 @@ description: Rights Management 보호를 사용하도록 레이블을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: bcbc3e79da3c158ca3d6582e5dcd4882c327f7b6
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 8b1024a26e086cb8cbd4696dc37d66350968a0b4
+ms.sourcegitcommit: fbc83d699b9e4e9c8e0e7d36f574630af6a4e3d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -103,7 +103,7 @@ Exchange에서 Azure Information Protection을 구성하지 않고도 사용자�
     
     **권한 추가**를 선택하고 **권한 추가** 블레이드에서 선택한 레이블을 통해 보호할 콘텐츠를 사용할 권한이 있는 첫 번째 사용자 및 그룹 집합을 선택합니다.
     
-    - **목록에서 선택**을 선택하여 조직의 모든 사용자를 추가하거나 디렉터리를 찾아봅니다.
+    - **Select from the list**(목록에서 선택)를 선택하고  **\<조직 이름 > - 모든 구성원 추가**를 선택하여 조직의 모든 사용자를 추가합니다. 이 설정에서 게스트 계정은 제외됩니다. 또는 디렉터리를 찾아봅니다.
         
         사용자 또는 그룹은 반드시 메일 주소가 있어야 합니다. 프로덕션 환경에서 사용자 및 그룹에는 거의 항상 이메일 주소가 있지만, 단순한 테스트 환경에서는 사용자 계정 또는 그룹에 이메일 주소를 추가해야 할 수도 있습니다.
         
@@ -244,7 +244,7 @@ Azure AD에 계정이 없는 외부 사용자를 지정하는 경우, 이 레이
     
 2. **사용 권한 설정**을 선택했는지 확인하고 **사용 권한 추가**를 선택합니다.
 
-3. **권한 추가** 블레이드에서 조직의 사용자에게 권한을 부여하려면, **\<조직 이름> - 모든 구성원 추가**를 선택하여 테넌트의 모든 사용자를 선택하거나 **디렉터리 찾아보기**를 선택하여 특정 그룹을 선택합니다. 외부 사용자에게 권한을 부여하거나 이메일 주소를 입력하려면, **세부 정보 입력**을 선택하고 사용자의 이메일 주소 또는 Azure AD 그룹을 입력합니다.
+3. **권한 추가** 블레이드에서 조직의 사용자에게 권한을 부여하려면, **\<조직 이름> - 모든 구성원 추가**를 선택하여 테넌트의 모든 사용자를 선택합니다. 이 설정에서 게스트 계정은 제외됩니다. 또는 **디렉터리 찾아보기**를 선택하여 특정 그룹을 선택합니다. 외부 사용자에게 권한을 부여하거나 이메일 주소를 입력하려면, **세부 정보 입력**을 선택하고 사용자의 이메일 주소 또는 Azure AD 그룹을 입력합니다.
     
     동일한 사용 권한을 가져야 하는 추가 사용자를 지정하려면 이 단계를 반복합니다.
 

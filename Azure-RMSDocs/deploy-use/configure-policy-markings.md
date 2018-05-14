@@ -4,17 +4,17 @@ description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 1fc9e3babd83368f1fa6389da3e2b66e8080d308
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 3a732f49a299b4d66af70da3d26df193eaca36ac
+ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -47,6 +47,8 @@ ms.lasthandoff: 05/03/2018
 - Office 앱에서 레이블의 시각적 표시는 레이블이 적용될 때 적용됩니다. 또한 시각적 표시는 레이블이 지정된 문서가 열리고 문서가 처음으로 저장될 때 적용됩니다.  
 
 - 파일 탐색기 또는 PowerShell을 사용하여 문서의 레이블이 지정되는 경우 시각적 표시는 즉시 적용되지 않지만 해당 문서가 Office 앱에서 열리고 문서가 처음으로 저장될 때 적용됩니다.
+    
+    SharePoint Online, OneDrive 또는 비즈니스용 OneDrive에 저장된 파일에 대해 Office 2016에서 [자동 저장](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)을 사용하는 경우 예외: 자동 저장이 켜져 있으면 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)을 구성하여 백그라운드에서 계속해서 실행되도록 분류를 켜지 않으면 시각적 표시가 적용되지 않습니다. 
 
 ## <a name="to-configure-visual-markings-for-a-label"></a>레이블에 대해 시각적 표시를 구성하려면
 

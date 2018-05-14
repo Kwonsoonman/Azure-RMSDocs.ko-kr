@@ -4,7 +4,7 @@ description: RMS 공유 응용 프로그램을 사용하여 문서를 보호하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2017
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 86da59d624d197aaad25e3f6fb04cfdd47ad1c3e
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 80c184892af6f82e744d32d96d562f2fadf9b859
+ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소
 
@@ -24,31 +24,29 @@ ms.lasthandoff: 03/28/2018
 
 조직에서 Active Directory Rights Management Services가 아닌 Azure Information Protection을 사용하고 있다면 RMS 공유 응용 프로그램을 사용하여 문서를 보호한 후에 보호된 문서가 사용되는 방식을 추적할 수 있습니다. 필요한 경우 공유를 중지하고 싶을 때 이러한 문서에 대한 액세스 권한을 취소할 수도 있습니다. 이렇게 하려면 Windows 컴퓨터와 Mac 컴퓨터뿐 아니라 태블릿과 휴대폰에서도 액세스할 수 있는 **문서 추적 사이트**를 사용합니다.
 
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation/player" frameborder="0" allowfullscreen></iframe>
-</div>
+이 사이트에 액세스할 때 로그인하여 문서를 추적할 수 있습니다. 조직에 [문서 추적 및 취소를 지원하는 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-features)이 있으며 사용자에게 이 구독에 대한 라이선스가 할당되었으면 보호한 파일을 열려고 하는 사람과 시도의 성공(인증) 여부를 확인할 수 있습니다. 이러한 사용자가 각각 문서 액세스를 시도한 시간과 해당 시간의 위치도 표시됩니다. 그러나 드물게 보고된 위치가 정확하지 않을 수 있습니다. 예를 들어 보호된 문서를 열고 있는 사용자가 VPN 연결을 사용하거나 컴퓨터에 IPv6 주소가 있는 경우입니다.
 
-이 사이트에 액세스할 때 로그인하여 문서를 추적할 수 있습니다. 조직에 [문서 추적 및 취소를 지원하는 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-features)이 있으며 사용자에게 이 구독에 대한 라이선스가 할당되었으면 보호한 파일을 열려고 하는 사람과 시도의 성공(인증) 여부를 확인할 수 있습니다. 이러한 사용자가 각각 문서 액세스를 시도한 시간과 해당 시간의 위치도 표시됩니다. 또한,
+문서 추적 사이트에서 수행할 수 있는 작업은 다음과 같습니다.
 
--   문서 공유를 중지해야 하는 경우 **허용 취소**를 클릭하고 문서를 계속 사용할 수 있는 기간을 확인한 다음, 이전에 공유했던 문서에 대한 액세스를 취소함을 사용자에게 알릴지와 사용자 지정된 메시지를 제공할지 여부를 결정합니다. 문서를 해지하는 경우 공유한 문서가 삭제되지는 않지만, 권한 있는 사용자가 이 문서를 더 이상 열 수 없게 됩니다.
+- 문서 공유를 중지해야 하는 경우 **허용 취소**를 클릭하고 문서를 계속 사용할 수 있는 기간을 확인한 다음, 이전에 공유했던 문서에 대한 액세스를 취소함을 사용자에게 알릴지와 사용자 지정된 메시지를 제공할지 여부를 결정합니다. 문서를 해지하는 경우 공유한 문서가 삭제되지는 않지만, 권한 있는 사용자가 이 문서를 더 이상 열 수 없게 됩니다.
 
--   Excel로 내보내려는 경우 **CSV로 내보내기**를 클릭합니다. 그러면 데이터를 수정하고 보기와 그래프를 직접 만들 수 있습니다.
+- Excel로 내보내려는 경우 **CSV로 내보내기**를 클릭합니다. 그러면 데이터를 수정하고 보기와 그래프를 직접 만들 수 있습니다.
 
--   전자 메일 알림을 구성하려는 경우 **설정** 을 클릭하고 문서 액세스 시 전자 메일로 알림을 받을지 여부와 해당 방법을 선택합니다.
+- 전자 메일 알림을 구성하려는 경우 **설정** 을 클릭하고 문서 액세스 시 전자 메일로 알림을 받을지 여부와 해당 방법을 선택합니다.
 
 - 다른 사용자에 대한 공유 문서를 추적 및 취소하려는 경우 Azure Information Protection의 관리자는 관리 아이콘을 클릭하여 다른 사용자에 대한 문서를 추적 및 취소할 수 있습니다. 이 아이콘은 관리자에게만 표시됩니다.
     
     참고: 전역 관리자임에도 이 아이콘이 표시되지 않은 원인은 문서를 아직 공유하지 않았기 때문입니다. 이 경우에 다음 URL을 사용하여 문서 추적 사이트에 액세스합니다. https://portal.azurerms.com/#/admin
 
--   문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [문서 추적 FAQ](http://go.microsoft.com/fwlink/?LinkId=523977)에 액세스합니다.
+- 문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [문서 추적 FAQ](http://go.microsoft.com/fwlink/?LinkId=523977)에 액세스합니다.
 
 ## <a name="using-office-to-access-the-document-tracking-site"></a>Office를 사용하여 문서 추적 사이트 액세스
 
--   Office 응용 프로그램, Word, Excel, PowerPoint의 경우 **홈** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
+- Office 응용 프로그램, Word, Excel, PowerPoint의 경우 **홈** 탭의 **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 Office 응용 프로그램에서 사용 추적 ](../media/ADRMS_MSRMSApp_OfficeToolbarTrackUsage.png)
 
--   Outlook의 경우 **홈** 탭의  **RMS** 그룹에서 **사용량 추적**을 클릭합니다.
+- Outlook의 경우 **홈** 탭의  **RMS** 그룹에서 **사용량 추적**을 클릭합니다.
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 Outlook에서 사용 추적 선택 ](../media/ADRMS_MSRMSApp_OutlookTrackUsage.png)
 
@@ -70,7 +68,7 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 #### <a name="using-a-web-browser-to-access-the-doc-tracking-site"></a>웹 브라우저를 사용하여 문서 추적 사이트 액세스
 
--   지원되는 브라우저를 사용하여 [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다.
+- 지원되는 브라우저를 사용하여 [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다.
 
     지원되는 브라우저: Internet Explorer 버전 10 이상을 사용하는 것이 좋지만 다음 브라우저를 통해서도 문서 추적 사이트를 사용할 수 있습니다.
 
@@ -86,13 +84,13 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 #### <a name="using-file-explorer-to-access-the-doc-tracking-site"></a>파일 탐색기를 사용하여 문서 추적 사이트에 액세스
 
--   파일을 마우스 오른쪽 단추로 클릭하고 **RMS로 보호**를 선택한 다음 **사용량 추적**을 선택합니다.
+- 파일을 마우스 오른쪽 단추로 클릭하고 **RMS로 보호**를 선택한 다음 **사용량 추적**을 선택합니다.
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 탐색기에서 사용 추적 선택](../media/ADRMS_MSRMSApp_ExplorerTrackUsage.png)
 
 #### <a name="using-an-outlook-email-message-to-access-the-doc-tracking-site"></a>Outlook 전자 메일 메시지를 사용하여 문서 추적 사이트에 액세스
 
--   전자 메일 메시지의 **메시지** 탭  **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
+- 전자 메일 메시지의 **메시지** 탭  **RMS** 그룹에서 **보호된 항목 공유**를 클릭하고 **사용량 추적**을 클릭합니다.
 
     ![RMS 공유 응용 프로그램을 사용하는 경우 Outlook에서 사용 추적 선택](../media/ADRMS_MSRMSApp_OutlookMessageTrackUsage.png)
 

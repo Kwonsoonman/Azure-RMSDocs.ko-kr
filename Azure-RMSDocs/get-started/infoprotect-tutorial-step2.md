@@ -4,17 +4,17 @@ description: Azure Information Protection를 빠르게 사용해 보기 위한 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 3b9dbbc16fe26d7f111d37dbcd28d6477372a5d9
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: ffae0c9ef0e9ffd1fc9a4c25ef5c60e8da6de5ca
+ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성
 
@@ -55,11 +55,13 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     기본값은 구독을 얻은 시기에 따라 달라지므로 이 설정을 변경할 필요가 없을 수도 있습니다. 이 자습서의 뒷부분에서는 사용자 지정 권한을 사용하여 파일 탐색기에서 파일을 마우스 오른쪽 단추로 클릭할 때 지정한 사용자와 보호된 문서를 공유할 것입니다.
 
+4. 이 **Policy: Global**(정책: 전역) 블레이드에서 **저장**을 선택하고, 작업을 확인하라는 메시지가 표시되는 경우 **확인**을 선택합니다. 이 블레이드를 닫습니다.
+
 ## <a name="creating-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>보호를 위한 새 레이블, 시각적 표식 및 분류를 위한 메시지 표시 조건 만들기
 
 이제 **기밀**에 대한 새 하위 레이블을 만듭니다.
 
-1. **기밀**을 마우스 오른쪽 단추로 클릭하고 **하위 레이블 추가**를 선택합니다.
+1. **분류** > **레이블** 메뉴 옵션에서 **기밀** 레이블을 마우스 오른쪽 단추로 클릭하고 **Add a sub-label**(하위 레이블 추가)을 선택합니다.
     
     **기밀**이라는 레이블이 없는 경우 다른 레이블을 선택하거나 대신 새 레이블을 만들고 약간의 차이는 있지만 계속 자습서를 따를 수 있습니다.
 
@@ -125,9 +127,13 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 12. **Enter notes for internal housekeeping**(내부 하우스키핑을 위한 메모 입력) 상자에 **For testing purposes only**(테스트 전용)를 입력합니다.
 
-13. 이 **하위 레이블** 블레이드에서 **저장**을 클릭합니다. 그런 다음 **정책:글로벌** 블레이드에서 **저장**을 다시 클릭합니다.
-    
-    이제 시각적 표시 및 보호에 대해 구성된 새 하위 레이블을 볼 수 있습니다. 예를 들면 다음과 같습니다.
+13. 이 **하위 레이블** 블레이드에서 **저장**을 클릭합니다. 확인하라는 메시지가 표시되면 **확인**을 클릭합니다. 새 레이블이 생성되고 저장되지만, 아직 정책에 추가되지는 않습니다.
+
+14. **분류** > **정책** 메뉴 옵션에서 **전역**을 다시 선택하고 레이블 뒤에서 **Add or remove labels**(레이블 추가 또는 제거) 링크를 선택합니다.
+
+15. **Policy: Add or remove labels**(정책: 레이블 추가 또는 제거) 블레이드에서 방금 만든 레이블과 **재무**라는 하위 레이블을 선택한 다음, **확인**을 클릭합니다.
+
+16. **Policy: Global**(정책: 전역) 블레이드에서 이제 시각적 표시 및 보호에 대해 구성된 전역 정책의 새 하위 레이블을 확인합니다. 예를 들면 다음과 같습니다.
 
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책 구성됨](../media/info-protect-policy-configuredv2.png)
     
@@ -135,6 +141,9 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 설정 구성됨](../media/info-protect-settings-configuredv2.png)
     
+
+17. 이 **Policy: Global**(정책: 전역) 블레이드에서 **저장**을 클릭합니다. 이 작업을 확인하라는 메시지가 표시되면 **확인**을 클릭합니다.
+
 이 자습서를 완료한 후 Azure 포털을 닫거나, 열어 둔 채로 추가 구성 옵션을 사용해 볼 수 있습니다.
 
 기본 정책을 살펴보고 몇 가지를 변경했으므로 다음 단계는 Azure Information Protection 클라이언트를 설치하는 것입니다.

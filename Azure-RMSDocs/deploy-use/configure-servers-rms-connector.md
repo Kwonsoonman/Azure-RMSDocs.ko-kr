@@ -4,7 +4,7 @@ description: Azure RMS(Rights Management) 커넥터를 사용할 온-프레미�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/16/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,15 @@ ms.technology: techgroup-identity
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c15c18f7d0a0f43e4f91193ee4a11b324f0187f2
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: dd9063cfda08f0b580ca4f669bb5385b91c25acb
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터에 대해 서버 구성
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2012, Windows Server 2012 R2*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 
 다음 정보를 참조하여 Azure 권한 관리(RMS) 커넥터를 사용할 온-프레미스 서버를 구성할 수 있습니다. 이러한 절차는 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)의 5단계를 설명합니다.
@@ -224,15 +224,17 @@ SharePoint 2010을 실행하는 서버에는 RMS 암호화 모드 2에 대한 �
 ## <a name="configuring-a-file-server-for-file-classification-infrastructure-to-use-the-connector"></a>커넥터를 사용하도록 파일 분류 인프라용 파일 서버 구성
 RMS 커넥터 및 파일 분류 인프라를 사용하여 Office 문서를 보호하려면 파일 서버가 다음 운영 체제 중 하나를 실행 중이어야 합니다.
 
--   Windows Server 2012 R2
+- Windows Server 2016
 
--   Windows Server 2012
+- Windows Server 2012 R2
+
+- Windows Server 2012
 
 ### <a name="to-configure-file-servers-to-use-the-connector"></a>커넥터를 사용하도록 파일 서버를 구성하려면
 
-1.  RMS 커넥터 관리 도구와 [RMS 커넥터를 사용하도록 서버에 권한 부여](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector) 섹션의 정보를 사용하여 파일 서버에 RMS 커넥터를 사용할 권한이 있는지 확인합니다. 이 구성은 파일 서버에서 RMS 커넥터를 사용하는 데 필요합니다.
+1. RMS 커넥터 관리 도구와 [RMS 커넥터를 사용하도록 서버에 권한 부여](install-configure-rms-connector.md#authorizing-servers-to-use-the-rms-connector) 섹션의 정보를 사용하여 파일 서버에 RMS 커넥터를 사용할 권한이 있는지 확인합니다. 이 구성은 파일 서버에서 RMS 커넥터를 사용하는 데 필요합니다.
 
-2.  파일 분류 인프라용으로 구성되어 있고 RMS 커넥터와 통신할 파일 서버에서 다음 중 하나를 수행합니다.
+2. 파일 분류 인프라용으로 구성되어 있고 RMS 커넥터와 통신할 파일 서버에서 다음 중 하나를 수행합니다.
 
     -   Microsoft RMS 커넥터용 서버 구성 도구를 실행합니다. 자세한 내용은 이 문서에서 [Microsoft RMS 커넥터용 서버 구성 도구를 사용하는 방법](#how-to-use-the-server-configuration-tool-for-microsoft-rms-connector)을 참조하세요.
 
@@ -244,7 +246,7 @@ RMS 커넥터 및 파일 분류 인프라를 사용하여 Office 문서를 보�
 
     - [RMS 커넥터에 대한 레지스트리 설정](rms-connector-registry-settings.md)의 정보를 참조해서 수동으로 레지스트리를 편집하여 서버의 레지스트리 설정을 수동으로 추가합니다. 
 
-3.  RMS 암호화로 문서를 보호하기 위한 분류 규칙 및 파일 관리 작업을 만들고, RMS 정책을 자동으로 적용하기 위한 RMS 템플릿을 지정합니다. 자세한 내용은 Windows Server 문서 라이브러리의 [파일 서버 리소스 관리자 개요](http://technet.microsoft.com/library/hh831701.aspx) 를 참조하세요.
+3. RMS 암호화로 문서를 보호하기 위한 분류 규칙 및 파일 관리 작업을 만들고, RMS 정책을 자동으로 적용하기 위한 RMS 템플릿을 지정합니다. 자세한 내용은 Windows Server 문서 라이브러리의 [파일 서버 리소스 관리자 개요](http://technet.microsoft.com/library/hh831701.aspx) 를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 이제 RMS 커넥터가 설치 및 구성되고 서버가 RMS 커넥터를 사용하도록 구성되었으므로, IT 관리자와 사용자는 Azure Rights Management 서비스를 사용하여 메일 메시지 및 문서를 보호하고 사용할 수 있습니다. 사용자가 이러한 작업을 간편하게 수행할 수 있도록, Office용 추가 기능을 설치하고 파일 탐색기에 새로운 오른쪽 클릭 옵션을 추가하는 Azure Information Protection 클라이언트를 배포합니다. 자세한 내용은 [Azure Information Protection 클라이언트 관리자 가이드](../rms-client/client-admin-guide.md)를 참조하세요.

@@ -4,7 +4,7 @@ description: RMS 커넥터를 사용하는 서버의 레지스트리 설정에 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,22 +12,22 @@ ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bc0cb2a7349bf19ee19a42bdb283cd86297748bc
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9334a781378ffdbe76dd9fe9d78f5db5913766d1
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 커넥터에 대한 레지스트리 설정
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 
 Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동으로 레지스트리 설정을 추가하거나 확인하려는 경우에만 다음 섹션의 표를 사용하세요. 이러한 레지스트리 설정은 [RMS 커넥터](deploy-rms-connector.md)를 사용하도록 서버를 구성합니다. 이 서버를 구성하려면 Microsoft RMS 커넥터용 서버 구성 도구를 사용하는 것이 좋습니다.
 
 다음 설정을 사용할 경우의 지침:
 
--   *\<YourTenantURL>*은 Azure Information Protection 테넌트의 Azure Rights Management 서비스 URL입니다. 이 값을 찾으려면:
+-   *\<YourTenantURL>* 은 Azure Information Protection 테넌트의 Azure Rights Management 서비스 URL입니다. 이 값을 찾으려면:
 
     1.  Azure Rights Management 서비스의 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
 
@@ -43,7 +43,7 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
         
             (Get-AadrmConfiguration).LicensingIntranetDistributionPointUrl -match "https:\/\/[0-9A-Za-z\.-]*" | Out-Null; $matches[0]
 
--   *\<ConnectorFQDN>*은 DNS에서 커넥터에 대해 정의한 부하 분산 이름입니다. **rmsconnector.contoso.com**을 예로 들 수 있습니다.
+-   *\<ConnectorFQDN>* 은 DNS에서 커넥터에 대해 정의한 부하 분산 이름입니다. **rmsconnector.contoso.com**을 예로 들 수 있습니다.
 
 -   온-프레미스 서버와 통신하는 데 HTTPS를 사용하도록 커넥터를 구성한 경우 커넥터 URL에 HTTPS 접두사를 사용합니다. 자세한 내용은 기본 지침의 [HTTPS를 사용하도록 RMS 커넥터 구성](install-configure-rms-connector.md#configuring-the-rms-connector-to-use-https) 섹션을 참조하세요. Azure Rights Management 서비스 URL에서는 항상 HTTPS를 사용합니다.
 

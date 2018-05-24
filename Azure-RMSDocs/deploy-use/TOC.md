@@ -41,6 +41,7 @@
 ## [테넌트 키에 대한 작업](operations-tenant-key.md)
 ### [Microsoft 관리](operations-microsoft-managed-tenant-key.md)
 ### [고객 관리](operations-customer-managed-tenant-key.md)
+## [Azure Information Protection을 위한 개인 데이터 관리](manage-personal-data.md)
 ## [서비스 해제 및 비활성화](decommission-deactivate.md)
 ## [PowerShell을 사용한 관리](administer-powershell.md)
 ### [AADRM PowerShell 모듈 설치](install-powershell.md)

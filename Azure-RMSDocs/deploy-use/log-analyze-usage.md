@@ -4,7 +4,7 @@ description: Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 01/08/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,11 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b4a9c6b259e5863bb5be276f89beb0de33002ca4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 989f75361d96680bf0bedff00251b6d60aa999c5
+ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/28/2018
 
 -   **법정 분석 수행**
 
-    정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. 이 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure Rights Management로 보호되는 문서와 사진을 열려면 항상 Rights Management 라이선스를 받아야 하기 때문입니다. 이는 메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 저장소 장치에 복사하는 경우에도 마찬가지입니다. 즉, Azure Rights Management 서비스를 사용하여 데이터를 보호하는 경우 이 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
+    정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. 이 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure Rights Management 서비스로 보호되는 문서와 사진을 열려면 항상 Rights Management 라이선스를 받아야 하기 때문입니다. 이는 메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 저장소 장치에 복사하는 경우에도 마찬가지입니다. 즉, Azure Rights Management 서비스를 사용하여 데이터를 보호하는 경우 이 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
 
 이 사용 현황 로깅 외에도 다음 로깅 옵션도 있습니다.
 
@@ -145,7 +145,7 @@ Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니
 |time|시간|요청이 처리된 UTC 시간(24시간 형식)입니다.<br /><br />원본은 요청을 처리한 서버의 로컬 시계입니다.|21:59:28|
 |row-id|텍스트|이 로그 레코드의 고유 GUID입니다. 값이 없으면 상관 관계 ID 값을 사용하여 항목을 식별합니다.<br /><br />로그를 집계하거나 다른 형식으로 복사할 때 이 값을 활용하면 유용합니다.|1c3fe7a9-d9e0-4654-97b7-14fafa72ea63|
 |request-type|이름|요청한 RMS API의 이름입니다.|AcquireLicense|
-|user-id|문자열|요청을 한 사용자입니다.<br /><br />값은 작은따옴표로 묶입니다. 본인이 관리하는 테넌트 키(BYOK)로부터의 호출에는 **"**라는 값이 있으며, 이것은 요청 종류가 익명일 경우에도 적용됩니다.|‘joe@contoso.com’|
+|user-id|문자열|요청을 한 사용자입니다.<br /><br />값은 작은따옴표로 묶입니다. 본인이 관리하는 테넌트 키(BYOK)로부터의 호출에는 **"** 라는 값이 있으며, 이것은 요청 종류가 익명일 경우에도 적용됩니다.|‘joe@contoso.com’|
 |result|문자열|요청이 정상적으로 처리된 경우 'Success'입니다.<br /><br />요청이 실패한 경우에는 작은따옴표로 묶인 오류 유형이 표시됩니다.|'성공'|
 |correlation-id|텍스트|지정된 요청에 대해 RMS 클라이언트 로그와 서버 로그 간에 공통적으로 사용되는 GUID입니다.<br /><br />이 값은 클라이언트 문제 해결 시 유용할 수 있습니다.|cab52088-8925-4371-be34-4b71a3112356|
 |content-id|텍스트|문서 등의 보호된 콘텐츠를 식별하는 중괄호로 묶인 GUID입니다.<br /><br />request-type이 AcquireLicense인 경우에만 이 필드에 값이 포함되며 기타 모든 요청 유형의 경우 이 필드는 비어 있습니다.|{bb4af47b-cfed-4719-831d-71b98191a4f2}|
@@ -165,7 +165,7 @@ user-id 필드는 보통 요청을 수행한 사용자를 나타내지만 해당
 
 -   **'microsoftrmsonline@&lt;테넌트 ID&gt;.rms.&lt;지역&gt;.aadrm.com'** 값
 
-    이 값은 Exchange Online 또는 SharePoint Online과 같은 Office 365 서비스에서 요청을 수행함을 나타냅니다. 위 문자열에서 *&lt;테넌트 ID&gt;*는 테넌트의 GUID이고, *&lt;지역&gt;*은 테넌트가 등록된 지역입니다. 예를 들어 **na** 는 북미, **eu** 는 유럽, **ap** 는 아시아를 나타냅니다.
+    이 값은 Exchange Online 또는 SharePoint Online과 같은 Office 365 서비스에서 요청을 수행함을 나타냅니다. 위 문자열에서 *&lt;테넌트 ID&gt;* 는 테넌트의 GUID이고, *&lt;지역&gt;* 은 테넌트가 등록된 지역입니다. 예를 들어 **na** 는 북미, **eu** 는 유럽, **ap** 는 아시아를 나타냅니다.
 
 -   RMS 커넥터를 사용하는 경우
 

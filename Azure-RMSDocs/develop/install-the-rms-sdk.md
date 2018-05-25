@@ -1,13 +1,13 @@
 ---
-title: "SDK 설치 | Azure RMS"
-description: "이 항목에서는 개발자 도구를 설치하는 과정을 안내합니다."
-keywords: 
+title: SDK 설치 | Azure RMS
+description: 이 항목에서는 개발자 도구를 설치하는 과정을 안내합니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
@@ -15,10 +15,10 @@ audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
 ms.openlocfilehash: 33401c6119d56ad8b24dbbc70b209bf5cbd92a6b
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.sourcegitcommit: d1a3f35ea2d2c246a5b1e3f3da75df9c182fd0da
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="install-the-sdk"></a>SDK 설치
 

@@ -4,7 +4,7 @@ description: Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/02/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f5006ef3d0401b6a7f018be1f65979c079cf04fc
-ms.sourcegitcommit: fdcfc006108f61fcd380ff6f3c3208c78ecf4056
+ms.openlocfilehash: 697fa4674699fd3b24f7f7353ff9f9d476040bd8
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423360"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -168,7 +169,7 @@ Rights Management 소유자는 Windows 파일 시스템의 소유자와 독립�
 
 - Azure Portal에서 레이블 또는 템플릿을 구성하는 경우 사용 라이선스 유효 기간은 **오프라인 액세스 허용 설정**에서 해당 값을 가져옵니다. 
     
-    Azure Portal에서 이 설정을 구성하기 위한 자세한 내용 및 지침은 [Rights Management 보호를 위한 레이블을 구성하는 방법](configure-policy-protection.md)의 9단계에 있는 표를 참조하세요.
+    Azure Portal에서 이 설정을 구성하기 위한 자세한 내용 및 지침은 Rights Management 보호를 위한 레이블을 구성하는 방법 지침에서 [보호 설정 정보](../deploy-use/configure-policy-protection.md#information-about-the-protection-settings) 표를 참조하세요.
 
 - PowerShell을 사용하여 템플릿을 구성하는 경우 사용 라이선스 유효 기간은 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) 및 [Add-AadrmTemplate](/powershell/module/aadrm/add-aadrmtemplate) cmdlet의 *LicenseValidityDuration* 매개 변수에서 해당 값을 가져옵니다.
     

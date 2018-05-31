@@ -5,7 +5,7 @@ keywords: iOS 및 Android용 Azure Information Protection 앱을 사용하는 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: azure
 ms.service: information-protection
@@ -14,11 +14,12 @@ ms.custom: askipteam
 ms.assetid: 539b4ff8-5d3b-4c4d-9c84-c14da83ff76d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 655829682f6fe962a27eb48ecf73deb9cabc481a
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 190fce3f1725775ae699dbc523a810dc79b96f88
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444251"
 ---
 # <a name="faqs-for-microsoft-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ
 
@@ -51,13 +52,18 @@ Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4
 앱을 설치한 후에는 더 이상 수행할 작업이 없습니다. 보려는 보호된 메일 또는 파일을 받을 때까지 기다린 다음 **AIP 뷰어**를 선택하여 엽니다. 그러면 회사 또는 학교 계정으로 로그인하라는 메시지가 표시되거나 인증서를 선택하라는 메시지가 표시됩니다. 이러한 자격 증명이 인증된 후 내용을 읽을 수 있습니다.
 
 그러나 기다리고 싶지 않은 경우 [iOS 및 Android용 Microsoft Azure Information Protection 앱 시작](mobile-app-get-started.md)의 지침에 따라 자신에게 보려는 보호된 메일 또는 파일을 보낼 수 있습니다. 
+
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>이 앱에 로그인하는 데 어떤 자격 증명을 사용해야 하나요?
 
-조직에 AD RMS 온-프레미스(모바일 장치 확장 포함)가 이미 있거나 Azure Rights Management 서비스를 사용하는 경우 자격 증명을 사용하여 로그인할 수 있습니다. 그렇지 않은 경우 [Azure Information Protection 페이지](https://portal.office.com/signup?sku=rms&ru=https%3A%2F%2Fportal.azurerms.com%2F%23%2Fdownload)를 사용하여 새 계정을 무료로 등록할 수 있습니다.
+조직에 AD RMS 온-프레미스(모바일 장치 확장 포함)가 이미 있거나 Azure Rights Management 서비스를 사용하는 경우 회사 자격 증명을 사용하여 로그인합니다. 
+
+파일을 보호하는 데 개인 메일 주소를 사용한 경우에는 [Microsoft 계정](https://signup.live.com)의 자격 증명을 사용하여 로그인합니다.
 
 ## <a name="can-i-sign-up-for-the-free-account-with-my-personal-email-address-such-as-a-hotmail-or-gmail-account"></a>개인 메일 주소(예: Hotmail 또는 Gmail 계정)로 무료 계정에 등록할 수 있나요?
 
-아직은 아닙니다. 현재는 비즈니스 메일 주소(직장 또는 학교 계정)로만 등록할 수 있습니다. 현재 개인 메일 주소를 지원하기 위해 노력하고 있으며 사용 가능한 경우 이 항목을 업데이트할 것입니다.
+예. Microsoft 계정을 신청하면 Hotmail 또는 Gmail 메일 주소나 소유한 다른 메일 주소를 지정할 수 있습니다. 
+
+그러나 이 뷰어는 이 계정으로 보호된 파일을 열 수 있지만 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>이 앱에서 열 수 있는 파일 확장명은 무엇인가요?
 

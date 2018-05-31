@@ -4,7 +4,7 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/18/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: e13dc2a6307dfa11cd812586762ec4c496d33fcf
-ms.sourcegitcommit: 2eb5245b6afb291eae5ba87034e1698f096139dc
+ms.openlocfilehash: 207f3b91e656bb65820a42137ce3bd66109f36e1
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423326"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -40,21 +41,31 @@ ms.lasthandoff: 04/19/2018
 
 스캐너는 컴퓨터에 설치된 iFilters를 사용하여 Windows에서 인덱싱하는 파일을 검사할 수 있습니다. 그런 다음, 파일에 레이블을 지정해야 하는지를 결정하려면 스캐너는 Office 365 기본 제공 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지 또는 Office 365 정규식 패턴을 사용합니다. 스캐너가 Azure Information Protection 클라이언트를 사용하기 때문에 동일한 [파일 형식](../rms-client/client-admin-guide-file-types.md)을 분류하고 보호할 수 있습니다.
 
-스캐너를 검색 모드에서만 실행할 수 있습니다. 여기서는 보고서를 사용하여 파일에 레이블을 적용했을 때 발생한 결과를 확인합니다. 또는 스캐너를 실행하여 레이블을 자동으로 적용할 수 있습니다.
+스캐너를 검색 모드에서만 실행할 수 있습니다. 여기서는 보고서를 사용하여 파일에 레이블을 적용했을 때 발생한 결과를 확인합니다. 또는 스캐너를 실행하여 레이블을 자동으로 적용할 수 있습니다. 미리 보기 버전의 경우에만 스캐너를 실행하여 자동 분류를 적용하는 조건에 대한 레이블을 구성하지 않고 중요한 정보 유형이 있는 파일을 검색할 수도 있습니다.
 
 스캐너는 실시간으로 검색하고 레이블을 지정하지 않습니다. 지정한 데이터 저장소의 파일을 체계적으로 크롤링하여 이 주기를 한 번 또는 반복적으로 실행되도록 구성할 수 있습니다.
+
+스캐너의 미리 보기 버전에만 해당:
+
+- 기본적으로 모든 파일 형식이 아닌 Office 문서만 보호됩니다. 지원되는 Office 파일 형식의 전체 목록은 **Office에서 지원하는 파일 형식** 표의 [관리자 가이드](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection)에 나열되어 있습니다. 
+    
+    이 기본 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다.
+
+- 스캔할 파일 형식을 지정하거나 스캔에서 제외할 수 있습니다. 스캐너가 검사하는 파일을 제한하려면 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType)을 사용하여 파일 형식 목록을 정의합니다.
+
+- 스캐너가 모든 중요한 정보 유형의 파일을 검사하도록 구성하거나 파일 검사 없이 기본 레이블을 적용할 수 있습니다. [추가 정보](#using-the-scanner-with-alternative-configurations)
 
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너의 필수 구성 요소
 Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사항이 설정되어 있는지 확인하세요.
 
 |요구 사항|추가 정보|
 |---------------|--------------------|
-|스캐너 서비스를 실행할 Windows Server 컴퓨터:<br /><br />- 4개 프로세서<br /><br />- 4GB RAM|Windows Server 2016 또는 Windows Server 2012 R2 <br /><br />참고: 비-프로덕션 환경에서 테스트 또는 평가는 [Azure Information Protection 클라이언트에서 지원하는](../get-started/requirements.md#client-devices) Windows 클라이언트 운영 체제를 사용할 수 있습니다.<br /><br />이 컴퓨터는 검색할 데이터 저장소에 안정적인 고속 네트워크를 연결한 실제 또는 가상 컴퓨터일 수 있습니다. <br /><br />이 컴퓨터가 Azure Information Protection에 필요한 [인터넷이 연결](../get-started/requirements.md#firewalls-and-network-infrastructure)되어 있는지 확인합니다. 또는 [연결이 끊어진 컴퓨터](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)로 구성해야 합니다. |
+|스캐너 서비스를 실행할 Windows Server 컴퓨터:<br /><br />- 4개 프로세서<br /><br />- 4GB RAM|Windows Server 2016 또는 Windows Server 2012 R2 <br /><br />참고: 비-프로덕션 환경에서 테스트 또는 평가는 [Azure Information Protection 클라이언트에서 지원하는](../get-started/requirements.md#client-devices) Windows 클라이언트 운영 체제를 사용할 수 있습니다.<br /><br />이 컴퓨터는 검색할 데이터 저장소에 안정적인 고속 네트워크를 연결한 실제 또는 가상 컴퓨터일 수 있습니다. <br /><br />이 컴퓨터가 Azure Information Protection에 필요한 [인터넷이 연결](../get-started/requirements.md#firewalls-and-network-infrastructure)되어 있는지 확인합니다. 또는 [연결이 끊어진 컴퓨터](../rms-client/client-admin-guide-customizations.md#support-for-disconnected-computers)로 구성해야 합니다.|
 |스캐너 구성을 저장할 SQL Server:<br /><br />- 로컬 또는 원격 인스턴스<br /><br />-스캐너를 설치하기 위한 Sysadmin 역할|SQL Server 2012는 다음 버전의 최소 버전입니다.<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />스캐너를 설치하는 계정에는 마스터 데이터베이스(db_datawriter 역할의 멤버이어야 함)에 쓸 수 있는 권한이 필요합니다. 설치 프로세스는 스캐너를 실행하는 서비스 계정에 db-owner 역할을 부여합니다. 또는 스캐너를 설치하기 전에 수동으로 AzInfoProtectionScanner 데이터베이스를 만들고 스캐너 서비스 계정에 db-owner 역할을 할당할 수 있습니다.|
 |스캐너 서비스를 실행할 서비스 계정|스캐너 서비스를 실행하는 것 외에도 이 계정은 Azure AD에 대해 인증되고 Azure Information Protection 정책을 다운로드합니다. 따라서 이 계정은 다음과 같은 추가 요구 사항을 포함하여 Azure AD에 동기화된 Active Directory 계정이어야 합니다.<br /><br />- **로컬 로그온** 권한 이 권한은 스캐너를 설치하고 구성하는 데 필요하지만 작동하는 데는 필요하지 않습니다. 서비스 계정에 이 권한을 부여해야 하지만 스캐너가 파일을 검색, 분류 및 보호하는지 확인한 후에 이 권한을 제거할 수 있습니다. <br /><br />참고: 내부 정책을 사용하면 서비스 계정에 이 권한을 허용하지 않지만 서비스 계정에 **일괄 작업으로 로그온** 권한이 부여되지 않는 경우 추가 구성을 사용하여 이 요구 사항을 충족할 수 있습니다. 자세한 내용은 관리 가이드에서 [Set-AIPAuthentication에 대한 토큰 매개 변수 지정 및 사용](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)을 참조하세요.<br /><br />- **서비스로 로그온** 권한 스캐너 설치 중에 서비스 계정에 이 권한이 자동으로 부여됩니다. 이 권한은 스캐너의 설치, 구성 및 작동에 필요합니다. <br /><br />- 데이터 리포지토리에 대한 사용 권한: Azure Information Protection 정책에서 파일을 검색한 다음 조건을 충족하는 파일에 분류 및 보호를 적용하는 **읽기** 및 **쓰기** 권한을 부여해야 합니다. 검색 모드 전용으로 스캐너를 실행하려면 **읽기** 권한으로 충분합니다.<br /><br />- 다시 보호하거나 보호를 제거하는 레이블의 경우: 스캐너가 항상 보호된 파일에 액세스할 수 있도록 하려면 이 계정을 Azure Rights Management 서비스에 대한 [슈퍼 사용자](configure-super-users.md)로 지정하고 슈퍼 사용자 기능을 사용하도록 합니다. 보호를 적용하기 위한 계정 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](../plan-design/prepare.md)를 참조하세요.|
-|Azure Information Protection 클라이언트가 Windows Server 컴퓨터에 설치되었습니다.|스캐너를 위해 전체 클라이언트를 설치해야 합니다. PowerShell 모듈만으로 클라이언트를 설치하지 마세요.<br /><br />클라이언트 설치 지침은 [관리자 가이드](../rms-client/client-admin-guide.md)를 참조하세요.|
-|자동 분류 및 필요에 따라 보호를 적용하는 구성된 레이블|Azure Information Protection 정책에서 조건을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](configure-policy-classification.md)을 참조하세요.<br /><br />파일에 보호를 적용하도록 레이블을 구성하는 방법에 대한 자세한 내용은 [Rights Management 보호를 위한 레이블을 구성하는 방법](configure-policy-protection.md)을 참조하세요.<br /><br />이러한 레이블은 전역 정책 또는 하나 이상의 [범위 지정 정책](configure-policy-scope.md)에 있을 수 있습니다.|
-|하나 이상의 데이터 리포지토리에 있는 모든 파일에 레이블이 있어야 하는 경우:<br /><br />- 기본 레이블을 정책 설정으로 구성|기본 레이블 설정을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 정책 설정을 구성하는 방법](configure-policy-settings.md)을 참조하세요.<br /><br />이 기본 레이블 설정은 전역 정책 또는 스캐너의 범위 지정 정책에 있어야 합니다. 그러나 이 기본 레이블 설정은 데이터 리포지토리 레벨에서 구성하는 다른 기본 레이블로 재정의할 수 있습니다.| 
+|Azure Information Protection 클라이언트가 Windows Server 컴퓨터에 설치되었습니다.|스캐너를 위해 전체 클라이언트를 설치해야 합니다. PowerShell 모듈만으로 클라이언트를 설치하지 마세요.<br /><br />클라이언트 설치 지침은 [관리자 가이드](../rms-client/client-admin-guide.md)를 참조하세요.<br /><br />참고: 이제 테스트용으로 설치할 수 있는 스캐너의 미리 보기 버전이 있습니다. 이 미리 보기를 설치하려면 Microsoft 다운로드 센터에서 클라이언트의 미리 보기 버전을 다운로드하여 설치합니다.|
+|자동 분류 및 필요에 따라 보호를 적용하는 구성된 레이블|Azure Information Protection 정책에서 조건을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](configure-policy-classification.md)을 참조하세요.<br /><br />파일에 보호를 적용하도록 레이블을 구성하는 방법에 대한 자세한 내용은 [Rights Management 보호를 위한 레이블을 구성하는 방법](configure-policy-protection.md)을 참조하세요.<br /><br />이러한 레이블은 전역 정책 또는 하나 이상의 [범위 지정 정책](configure-policy-scope.md)에 있을 수 있습니다.<br /><br />참고: 미리 보기 버전의 경우, 자동 분류를 적용하는 레이블을 구성하지 않은 경우에도 스캐너를 실행할 수 있지만, 이 시나리오에는 이러 지침이 적용되지 않습니다. [추가 정보](#using-the-scanner-without-automatic-classification)|
+|하나 이상의 데이터 리포지토리에 있는 모든 파일에 레이블이 있어야 하는 경우:<br /><br />- 기본 레이블을 정책 설정으로 구성|기본 레이블 설정을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 정책 설정을 구성하는 방법](configure-policy-settings.md)을 참조하세요.<br /><br />이 기본 레이블 설정은 전역 정책 또는 스캐너의 범위 지정 정책에 있어야 합니다. 그러나 이 기본 레이블 설정은 데이터 리포지토리 레벨에서 구성하는 다른 기본 레이블로 재정의할 수 있습니다.<br /><br />참고: 미리 보기 버전의 경우, 더 이상 정책에서 기본 레이블을 구성할 필요가 없습니다.| 
 
 
 ## <a name="install-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 설치
@@ -149,7 +160,13 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 1. Windows Server 컴퓨터의 PowerShell 세션에서 다음 명령을 실행합니다.
     
+    일반 공급 버전:
+    
         Set-AIPScannerConfiguration -ScanMode Enforce -Schedule Continuous
+    
+    미리 보기 버전:
+    
+        Set-AIPScannerConfiguration -Enforce On -Schedule Continuous
     
     다른 구성 설정을 변경하려는 경우가 있습니다. 예를 들어 파일 특성의 변경 여부 및 보고서에 기록된 내용을 변경하려고 합니다. 또한 Azure Information Protection 정책에 분류 수준을 낮추거나 보호를 제거하라는 근거 메시지가 필요한 설정을 포함하는 경우 이 cmdlet을 사용하여 해당 메시지를 지정합니다. 각 구성 설정에 대한 자세한 내용은 [온라인 도움말](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters)을 사용합니다. 
 
@@ -164,6 +181,8 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 스캐너는 [분류 및 보호에서 제외](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client)된 파일(예: 실행 파일 및 시스템 파일)을 자동으로 건너뜁니다.
 
+미리 보기 버전의 경우, 스캔할 파일 형식 목록을 정의하여 이 동작을 변경하거나 스캔에서 제외할 수 있습니다. 이 목록을 지정하고 데이터 리포지토리를 지정하지 않으면 지정된 자체 목록이 없는 모든 데이터 리포지토리에 이 목록이 적용됩니다. 이 목록을 지정하려면 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType)을 사용합니다. 파일 형식 목록을 지정한 후 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)을 사용하여 새 파일 형식을 목록에 추가하고 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType)을 사용하여 목록에서 파일 형식을 제거할 수 있습니다.
+
 그런 다음, 스캐너는 Windows iFilter를 사용하여 다음 파일 형식을 검색합니다. 이러한 파일 형식에 대해 레이블에 지정한 조건을 사용하여 문서의 레이블을 지정합니다.
 
 |응용 프로그램 유형|파일 형식|
@@ -176,7 +195,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 |텍스트|.txt; .xml; .csv|
 
 
-마지막으로 스캐너는 나머지 파일 형식에 대해 Azure Information Protection 정책에서 기본 레이블은 적용합니다.
+마지막으로 나머지 파일 형식의 경우 스캐너는 Azure Information Protection 정책의 기본 레이블 또는 스캐너에 대해 구성한 기본 레이블을 적용합니다.
 
 |응용 프로그램 유형|파일 형식|
 |--------------------------------|-------------------------------------|
@@ -196,7 +215,16 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 레이블이 문서에 일반 보호를 적용하는 경우 파일 이름 확장명을 .pfile로 변경합니다. 또한 권한 있는 사용자가 열고 해당 네이티브 형식으로 저장될 때까지 파일은 읽기 전용입니다. 텍스트 및 이미지 파일은 해당 파일 이름 확장명을 변경하고 읽기 전용으로 설정할 수도 있습니다. 이 동작을 수행하지 않은 경우 특정 파일 형식의 파일을 보호하지 않도록 방지할 수 있습니다. 예를 들어 PDF 파일을 보호된 PDF(.ppdf) 파일로 변환하지 않고, .txt 파일을 보호된 텍스트(.ptxt) 파일로 변환하지 않습니다.
 
-다른 파일 형식에 다른 수준의 보호를 적용하는 방법 및 보호 동작을 제어하는 방법에 대한 자세한 내용은 관리자 가이드에서 [보호를 위해 지원되는 파일 형식](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) 섹션을 참조하세요.
+다른 파일 형식에 다른 수준의 보호를 적용하는 방법 및 레지스트리를 편집하여 보호 동작을 제어하는 방법에 대한 자세한 내용은 관리자 가이드에서 [보호를 위해 지원되는 파일 형식](../rms-client/client-admin-guide-file-types.md#file-types-supported-for-protection) 섹션을 참조하세요.
+
+스캐너의 일반 공급 버전:
+
+- 기본적으로 모든 파일 형식은 보호됩니다.
+
+
+스캐너의 미리 보기 버전:
+
+- 기본적으로 Office 파일 형식만 보호됩니다.
 
 
 ## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너로 파일을 다시 검사하는 경우
@@ -213,6 +241,23 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 > 정책에서 보호 설정을 변경한 경우 서비스를 다시 시작하기 전에 보호 설정을 저장한 후 15분 동안 기다립니다.
 
 구성된 자동 조건이 없는 정책을 스캐너가 다운로드하면 스캐너 폴더에서 정책 파일의 복사본이 업데이트되지 않습니다. 이 시나리오에서 레이블이 자동 조건에 대해 올바르게 구성되어 있는 새로 다운로드한 정책 파일을 스캐너에서 사용할 수 있으려면 **%LocalAppData%\Microsoft\MSIP\Policy.msip** 및 **%LocalAppData%\Microsoft\MSIP\Scanner** 모두에서 정책 파일 **Policy.msip**를 삭제해야 합니다.
+
+## <a name="using-the-scanner-with-alternative-configurations"></a>대체 구성으로 스캐너 사용
+
+스캐너의 미리 보기 버전을 사용하는 경우, 어떤 조건에도 레이블을 구성할 필요가 없고 스캐너에서 지원하는 두 가지 대체 시나리오가 있습니다. 
+
+- 데이터 리포지토리의 모든 파일에 기본 레이블을 적용합니다.
+    
+    이 구성에서는 [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) cmdlet을 사용하여 *MatchPolicy* 매개 변수를 **Off**로 설정합니다. 
+    
+    파일 콘텐츠는 검사되지 않고 데이터 리포지토리의 모든 파일에는 데이터 리포지토리에 대해 지정한 기본 레이블(*SetDefaultLabel* 매개 변수 사용) 또는 기본 레이블이 지정되지 않은 경우에는 스캐너 계정에 대한 정책 설정으로 지정된 기본 레이블에 따라 레이블이 지정됩니다.
+    
+
+- 모든 사용자 지정 조건 및 알려진 중요한 정보 유형을 식별합니다.
+    
+    이 구성에서는 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet을 사용하여 *DiscoverInformationTypes* 매개 변수를 **All**로 설정합니다.
+    
+    스캐너는 Azure Information Protection 정책의 레이블에 대해 지정한 모든 사용자 지정 조건과 Azure Information Protection 정책의 레이블에 대해 지정할 수 있는 정보 유형 목록을 사용합니다. 
 
 ## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 성능 최적화
 
@@ -256,6 +301,15 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
     
     - 큰 파일은 작은 파일보다 분명히 스캔하는 데 더 오랜 시간이 걸립니다.
 
+- 스캐너의 미리 보기 버전:
+    
+    - 스캐너를 실행하는 서비스 계정에 [스캐너 필수 구성 요소](#prerequisites-for-the-azure-information-protection-scanner) 섹션에 설명된 권한만 있는지 확인한 다음, 스캐너에 대해 낮은 무결성 수준을 사용하지 않도록 [고급 클라이언트 속성](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner)을 구성합니다.
+    
+    - 스캐너는 파일 콘텐츠를 검사하지 않으므로 [대체 구성](#using-the-scanner-with-alternative-configurations)을 사용하여 기본 레이블을 모든 파일에 적용하면 스캐너가 더 빠르게 실행됩니다.
+    
+    - [대체 구성](#using-the-scanner-with-alternative-configurations)을 사용하여 모든 사용자 지정 조건 및 알려진 중요한 정보 유형을 식별하면 스캐너가 더 느리게 실행됩니다.
+    
+
 ## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너의 cmdlet 목록 
 
 스캐너의 다른 cmdlet을 사용하여 스캐너의 서비스 계정과 데이터베이스를 변경하고, 스캐너의 현재 설정을 가져오고, 스캐너 서비스를 제거할 수 있습니다. 스캐너는 다음 cmdlet을 사용합니다.
@@ -277,6 +331,14 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
+
+스캐너 미리 보기 버전의 추가 cmdlet:
+
+- [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)
+
+- [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType)
+
+- [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
 
 
 ## <a name="event-log-ids-and-descriptions"></a>이벤트 로그 ID 및 설명

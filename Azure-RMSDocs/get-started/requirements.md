@@ -4,7 +4,7 @@ description: Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c031bffeb5f4f3d6edbdab71e157b3f1580d46ed
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 9cdb205488c300f1df1e002be105765a90ce1a1a
+ms.sourcegitcommit: 09072591f1aa9878d063feb78ffcc4accec63fd1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/18/2018
+ms.locfileid: "34308174"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -139,11 +140,12 @@ Office 문서의 정보 외에 Azure Information Protection과 관련하여 다�
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>Azure RMS와 AD RMS 함께 사용
 
-다음 배포 시나리오는 AD RMS 보호를 Azure Information Protection("hold your own key" 또는 HYOK 구성)과 함께 사용하는 경우에만 지원됩니다.
+다음 배포 시나리오는 [HYOK 보호](../deploy-use/configure-adrms-restrictions.md)용 AD RMS를 Azure Information Protection과 함께 사용하는 경우(“hold your own key” 구성)에만 지원됩니다.
 
 - [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)에 설명된 대로, 마이그레이션 중인 경우를 제외하고 같은 조직에서 AD RMS와 Azure RMS를 함께 실행하는 경우.
 
 [AD RMS에서 Azure Information Protection으로](http://technet.microsoft.com/library/Dn858447.aspx), [Azure Information Protection에서 AD RMS로](/powershell/module/aadrm/Set-AadrmMigrationUrl)의 지원되는 마이그레이션 경로가 있습니다. Azure Information Protection을 배포한 후 이 클라우드 서비스를 더 이상 사용하지 않겠다고 결정한 경우 [Azure Information Protection 서비스 해제 및 비활성화](../deploy-use/decommission-deactivate.md)를 참조하세요.
+
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

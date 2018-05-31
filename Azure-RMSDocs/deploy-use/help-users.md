@@ -4,7 +4,7 @@ description: Azure Information Protection의 Azure RMS(Azure Rights Management)R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/20/2017
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 468550dd2389407b20d66adb814a7487988180bd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 0243961b4dfdf3bb8c8b04059793098b26880615
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444268"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
 
->*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 조직에 대해 Azure Information Protection을 배포 및 구성한 후에는 사용자, 관리자 및 지원 센터를 위해 도움말과 지침을 제공합니다.
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/28/2018
     
     - **로그인 도움말**
         
-        Azure Rights Management 서비스에서 사용자를 인증해야 하는데 캐시된 자격 증명을 사용할 수 없으면 사용자에게 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 이러한 필수 자격 증명은 Office 365 테넌트 또는 Azure Active Directory 테넌트와 연결된 사용자의 회사 또는 학교 계정과 암호입니다. Microsoft 계정(이전의 Microsoft Live ID) 또는 개인 전자 메일 계정은 현재 Azure Rights Management 서비스에서 지원되지 않기 때문에 필수 자격 증명으로 사용할 수 없습니다. 
+        Azure Rights Management 서비스에서 사용자를 인증해야 하는데 캐시된 자격 증명을 사용할 수 없으면 사용자에게 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 일반적으로 이러한 필수 자격 증명은 Office 365 테넌트 또는 Azure Active Directory 테넌트와 연결된 사용자의 회사 또는 학교 계정과 암호입니다. Azure Rights Management 서비스는 Azure AD 계정을 인증할 수 있지만 인증에 Microsoft 계정이 사용될 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수도 있습니다. [추가 정보](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
         
         사용자가 Azure Rights Management 서비스를 사용하는 응용 프로그램이 있는 경우 자격 증명을 입력하라는 메시지가 표시되면 사용할 계정에 대한 지침을 사용자와 지원 센터에 제공합니다.
         
@@ -57,7 +58,7 @@ ms.lasthandoff: 03/28/2018
         
         사용자가 사용하는 응용 프로그램에 대해 적절한 지침이 있으며 Azure Rights Management 서비스에서 지원하는 응용 프로그램 및 장치를 사용하고 있는지 확인합니다. 지원되는 응용 프로그램 및 장치에 대한 자세한 내용은 [Azure 권한 관리에 대한 요구 사항](../get-started/requirements-azure-rms.md)을 참조하세요.
         
-        인증 및 권한 부여는 Azure Active Directory의 계정 및 그룹에 의존합니다. 특정 사용자 또는 그룹이 보호된 콘텐츠를 사용하도록 권한을 부여할 수 있는지 확인하려면 [Azure Information Protection에 대한 사용자 및 그룹 준비](../plan-design/prepare.md)에 포함된 유효성 검사를 사용합니다.
+        Azure Active Directory를 통해 보호된 콘텐츠를 보호하거나 사용하도록 특정 사용자 또는 그룹에게 권한을 부여할 수 있는지 확인하려면 [Azure Information Protection에 대한 사용자 및 그룹 준비](../plan-design/prepare.md)에 포함된 유효성 검사를 사용합니다.
         
         사용자가 보호된 콘텐츠를 열 수는 있지만 필요한 권한이 없는 경우 Rights Management 템플릿에 대해 구성된 올바른 그룹에 포함되어 있지 않은 것일 수 있습니다. 또는 사용자 또는 그룹에 대해 [템플릿을 다시 구성해야](configure-policy-templates.md) 하는 문제일 수 있습니다. 
         

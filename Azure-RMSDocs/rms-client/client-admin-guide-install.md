@@ -4,7 +4,7 @@ description: 엔터프라이즈 네트워크에서 Windows용 Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d52026fcffd3a3a0b51e361e6671f247eac5296d
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: b8cd6aeb13398bdfd65ba3e743e3e12bf3cc5f53
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423292"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -30,11 +31,13 @@ ms.lasthandoff: 05/03/2018
 
 - Microsoft .NET Framework 4.6.2
     
-    기본적으로 Azure Information Protection 클라이언트를 전체 설치하려면 최소한 Microsoft .NET Framework 4.6.2 버전이 필요하며, 이 프로그램이 없으면 설치 관리자는 이 필수 구성 요소를 다운로드한 후 설치하려고 합니다. 이 필수 구성 요소가 클라이언트 설치의 일부로 설치된 경우 컴퓨터를 다시 시작해야 합니다. 권장되지는 않지만 [사용자 지정 설치 매개 변수](#more-information-about-the-downgradedotnetrequirement-installation-parameter)를 사용하면 이러한 필수 구성 요소를 무시할 수 있습니다.
+    기본적으로 Azure Information Protection 클라이언트를 전체 설치하려면 최소한 Microsoft .NET Framework 4.6.2 버전이 필요하며, 이 프로그램이 없으면 실행 가능한 설치 관리자의 설치 마법사는 이 필수 구성 요소를 다운로드한 후 설치하려고 합니다. 이 필수 구성 요소가 클라이언트 설치의 일부로 설치된 경우 컴퓨터를 다시 시작해야 합니다. 권장되지는 않지만 [사용자 지정 설치 매개 변수](#more-information-about-the-downgradedotnetrequirement-installation-parameter)를 사용하면 설치 마법사를 사용할 때 이 필수 구성 요소를 무시할 수 있습니다.
+    
+    실행 가능한 설치 관리자, Windows 업데이트 또는 Windows Installer를 사용하여 클라이언트를 자동으로 설치할 경우, 이 필수 구성 요소는 자동으로 설치되지 않습니다. 이러한 시나리오의 경우 필요하면 이 필수 구성 요소를 조건을 별도로 설치해야 합니다. 그렇지 않으면 설치에 실패합니다. [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53344)에서 Microsoft .NET Framework 4.6.2(오프라인 설치 관리자)를 다운로드할 수 있습니다.
 
 - Microsoft .NET Framework 4.5.2
     
-    Azure Information Protection 뷰어가 별도로 설치되어 있으면 최소한 Microsoft .NET Framework 4.5.2 버전이 필요하며, 이 프로그램이 없어도 설치 관리자는 다운로드하여 설치하려고 하지 않습니다.
+    Azure Information Protection 뷰어가 별도로 설치되어 있으면 최소한 Microsoft .NET Framework 4.5.2 버전이 필요하며, 이 프로그램이 없어도 실행 가능한 설치 관리자는 다운로드하여 설치하려고 하지 않습니다.
 
 - Windows PowerShell 버전 4.0
     
@@ -71,6 +74,14 @@ ms.lasthandoff: 05/03/2018
     이 **관리되는 추가 기능 목록** 그룹 정책 설정을 구성하지 않았더라도 Microsoft Azure Information Protection 추가 기능이 비활성화된다는 보고를 받을 경우 구성해야 할 수 있습니다. 이 추가 기능을 비활성화하면 사용자는 Office 응용 프로그램에서 Azure Information Protection 막대를 볼 수 없습니다.
     
     이 그룹 정책 설정에 대한 자세한 내용은 [Office 2013 및 Office 2016 프로그램에 대한 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)을 참조하세요.
+
+- Outlook 간편 실행 버전 16.0.9324.1000 이상: 모니터에 대한 레거시 지원 사용
+    
+    Azure Information Protection 표시줄이 확인된 간편 실행 버전용 Outlook 외부에 표시되는 것을 방지하기 위해 모니터에 대한 레거시 지원을 사용해야 합니다. 이 시나리오에서 막대가 제대로 표시되지 않을 경우 **AdxTaskPane**으로 표시될 수 있습니다. 
+    
+    이 요구 사항에 맞게 Outlook을 구성하려면: **파일** > **옵션** > **일반**:
+    
+    - **사용자 인터페이스 옵션** 섹션에서 **내 디스플레이에 대해 최적의 설정 사용** 옵션이 선택된 것으로 확인되면 이 선택 항목을 선택 취소합니다.
 
 > [!IMPORTANT]
 > Azure Information Protection 클라이언트를 설치하려면 로컬 관리 권한이 필요합니다.
@@ -159,7 +170,7 @@ Office 2010 및 Azure RMS에 대해 클라이언트를 자동으로 설치하는
 
 #### <a name="more-information-about-the-downgradedotnetrequirement-installation-parameter"></a>DowngradeDotNetRequirement 설치 매개 변수에 대한 자세한 정보
 
-Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Office 응용 프로그램과 안정적으로 통합하기 위해, Azure Information Protection 클라이언트에서는 Microsoft .NET Framework 버전 4.6.2를 사용합니다. 기본적으로 설치 과정에서 이 버전을 확인하고, 없을 경우 설치하려 합니다. 그리고 컴퓨터를 다시 시작할 것을 요구합니다.
+Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Office 응용 프로그램과 안정적으로 통합하기 위해, Azure Information Protection 클라이언트에서는 Microsoft .NET Framework 버전 4.6.2를 사용합니다. 기본적으로 실행 파일 검사를 사용한 대화형 설치는 이 버전이 있는지 확인하고 없을 경우 설치하려 합니다. 그리고 컴퓨터를 다시 시작할 것을 요구합니다.
 
 이 최신 버전 Microsoft .NET Framework를 설치하는 것이 적절하지 않을 경우는 Microsoft .NET Framework 버전 4.5.1이 설치되어 있을 때 이 요구 사항을 무시하도록 **DowngradeDotNetRequirement=True** 매개 변수 및 값을 사용하여 클라이언트를 설치할 수 있습니다.
 

@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/11/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: de7829532139556b6407506d61bc89de936b3739
-ms.sourcegitcommit: 9e2719ab070fa2d1e3ac8f6f11e57640939a1dff
+ms.openlocfilehash: c0e1011da16c9e3e91595cd06375cb744aa8fe00
+ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/12/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34402271"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -54,6 +55,8 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="suppress-the-initial-congratulations-welcome-page"></a>처음에 "축하합니다!" 표시 안 함 시작 페이지
 
+미리 보기 클라이언트가 더 이상 이 “축하합니다!” 시작 페이지를 표시하지 않습니다.
+
 Azure Information Protection 클라이언트가 컴퓨터에 처음 설치되고 사용자가 Word, Excel, PowerPoint 또는 Outlook을 열 때 **축하합니다!** 페이지가 새 Information Protection 표시줄을 사용하여 레이블을 선택하는 방법에 대한 짧은 지침과 함께 표시됩니다. 레지스트리를 편집하여 이 페이지를 표시하지 않을 수 있습니다.
 
 1. 다음 레지스트리 키가 없는 경우 생성하세요.
@@ -64,13 +67,15 @@ Azure Information Protection 클라이언트가 컴퓨터에 처음 설치되고
 
 ## <a name="suppress-the-whats-new-in-azure-information-protection-page"></a>“Azure Information Protection의 새로운 기능” 표시 안 함 페이지
 
+미리 보기 클라이언트가 더 이상 이 “Azure Information Protection의 새로운 기능” 페이지를 표시하지 않습니다.
+
 Azure Information Protection 클라이언트가 컴퓨터에 처음으로 설치되거나 업그레이드되고 Word, Excel, PowerPoint 또는 Outlook에 Azure Information Protection 표시줄이 표시되면 사용자 지정 권한에 대해 사용자에게 알리고 사용량을 추적하기 위해 **What's new in Azure Information Protection?**(Azure Information Protection의 새로운 기능) 페이지가 표시됩니다. 레지스트리를 편집하여 이 페이지를 표시하지 않을 수 있습니다.
 
 1. 다음 레지스트리 키가 없는 경우 생성하세요.
     
     **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP**
 
-2.  **WhatsNewVersion** 문자열 값(REG-SZ)이 없는 경우 생성하고 데이터 값을 **1.4**로 설정합니다.
+2. **WhatsNewVersion** 문자열 값(REG-SZ)이 없는 경우 생성하고 데이터 값을 **1.4**로 설정합니다.
 
 ## <a name="sign-in-as-a-different-user"></a>다른 사용자로 로그인
 
@@ -356,6 +361,25 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 이러한 분류 값 중 하나를 사용하여 Office 문서에 레이블을 지정하려면 **SyncPropertyName**을 **분류**로 설정하고 **SyncPropertyState**를 **OneWay**로 설정합니다. 
 
 이제 사용자가 이러한 Office 문서 중 하나를 열고 저장할 때 Azure Information Protection 정책에 이러한 이름의 레이블이 있으면 **공용**, **일반** 또는 **기밀**이라는 레이블이 지정됩니다. 이러한 이름의 레이블이 없으면 문서에 레이블이 지정되지 않습니다.
+
+## <a name="disable-the-low-integrity-level-for-the-scanner"></a>스캐너에 대해 낮은 무결성 수준 사용 안 함
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 Azure Information Protection 클라이언트의 현재 미리 보기 버전이 필요합니다.
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+기본적으로 Azure Information Protection 스캐너의 미리 보기 버전은 낮은 무결성 수준에서 실행됩니다. 이 설정은 더 높은 보안 격리를 제공하지만 성능이 저하됩니다. 이 설정이 스캐너를 실행하는 컴퓨터를 보호하는 데 도움이 되므로 권한이 있는 계정(예: 로컬 관리자 계정)으로 스캐너를 실행하는 경우 낮은 무결성 수준이 적합합니다.
+
+그러나 스캐너를 실행하는 서비스 계정에 [스캐너 필수 구성 요소](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)에 설명된 권한만 있는 경우 낮은 무결성 수준은 필요하지 않고 성능에 부정적인 영향을 주기 때문에 권장되지 않습니다. 
+
+Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커니즘이란?](https://msdn.microsoft.com/library/bb625957.aspx)을 참조하세요.
+
+스캐너가 Windows에서 자동으로 할당된 무결성 수준으로 실행되도록(표준 사용자 계정은 중간 무결성 수준으로 실행됨) 이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **ProcessUsingLowIntegrity**
+
+- 값: **False**
+
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
 

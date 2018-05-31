@@ -4,7 +4,7 @@ description: AD RMS(Active Directory Rights Management Services)에 대해 잘 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8fe6c95c9e141e63aa70d60920fbc127f49996f5
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 8c53a88b75c145a743f878c4d4138f179c9dae8c
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444142"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Azure Information Protection 및 AD RMS 비교
 
@@ -28,7 +29,7 @@ Azure Information Protection에 대한 주요 차이점 중 일부를 사용합�
 
 - **필요한 서버 인프라 없음**: Microsoft Azure에서 자동으로 처리하므로 Azure Information Protection에는 추가 서버 및 AD RMS에 필요한 PKI 인증서가 필요하지 않습니다. 따라서 이 클라우드 솔루션을 빠르게 배포하고 쉽게 유지 관리할 수 있습니다.
 
-- **클라우드 기반 인증**: Azure Information Protection에서는 내부 사용자와 다른 조직의 사용자 모두에 대해 Azure AD를 사용하여 인증합니다. 즉, 내부 네트워크에 연결되지 않았으며 다른 조직의 사용자와 보호된 콘텐츠를 더 쉽게 공유하는 경우에도 모바일 사용자를 인증할 수 있습니다. 대부분의 조직에서는 Azure 서비스를 실행하거나 Office 365를 사용하고 있으므로 이미 Azure AD의 사용자 계정을 갖고 있습니다. 그러나 그렇지 않은 경우 개인용 RMS를 통해 사용자는 무료 계정을 만들 수 있습니다. 다른 조직과 AD RMS로 보호된 콘텐츠를 공유하려면 각 조직에 대한 명시적 트러스트를 구성해야 합니다.
+- **클라우드 기반 인증**: Azure Information Protection에서는 내부 사용자와 다른 조직의 사용자 모두에 대해 Azure AD를 사용하여 인증합니다. 즉, 내부 네트워크에 연결되지 않았으며 다른 조직의 사용자와 보호된 콘텐츠를 더 쉽게 공유하는 경우에도 모바일 사용자를 인증할 수 있습니다. 대부분의 조직에서는 Azure 서비스를 실행하거나 Office 365를 사용하고 있으므로 이미 Azure AD의 사용자 계정을 갖고 있습니다. 그러나 사용자 계정이 없는 경우, 사용자는 개인용 RMS를 사용하여 체험 계정을 만들거나, [Azure Information Protection을 위해 이 인증을 지원하는 응용 프로그램](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)에 대해 Microsoft 계정을 사용할 수 있습니다. 다른 조직과 AD RMS로 보호된 콘텐츠를 공유하려면 각 조직에 대한 명시적 트러스트를 구성해야 합니다.
 
 - **모바일 장치에 대한 기본 제공 지원**: 모바일 장치 및 Mac 컴퓨터를 지원하기 위해 Azure RMS에 대한 배포를 변경할 필요가 없습니다. AD RMS를 사용하는 이러한 장치를 지원하려면 모바일 장치 확장을 설치하고, 페더레이션을 위한 AD FS를 구성하며, 공용 DNS 서비스에 대한 추가 레코드를 만듭니다.
 

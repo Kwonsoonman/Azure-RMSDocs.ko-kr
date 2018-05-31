@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 02e54d3d1f324aa6d67e9fb81c3f5f83e785fe81
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 4ff64b5bb4f73533352aa5497a98263c86842800
+ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34423258"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -40,6 +41,40 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 > 사소한 수정 사항은 나열되지 않으므로 Azure Information Protection 클라이언트에 문제가 발생있으면 최신 GA 릴리스로 수정되었는지 확인하는 것이 좋습니다. 문제가 계속되면 현재 미리 보기 버전을 확인하세요.
 >  
 > 기술 지원의 경우 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
+
+## <a name="versions-later-than-12660"></a>1.26.6.0 이상 버전
+
+1.26.6.0 이상 버전의 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다. 
+ 
+**릴리스 날짜**: 2018년 5월 21일 
+
+현재 미리 보기 버전은 **1.27.48.0**이며 클라이언트의 현재 GA 버전 이후에 다음과 같이 변경되었습니다.  
+
+**새로운 기능**: 
+
+- Azure Information Protection 스캐너:
+    
+    - 스캐닝에서 포함 또는 제외할 파일 형식 목록을 지정할 수 있습니다. 이 목록을 지정하려면 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)를 사용합니다. 파일 형식 목록을 지정한 후 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)을 사용하여 새 파일 형식을 목록에 추가하고 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType)을 사용하여 목록에서 파일 형식을 제거할 수 있습니다.
+    
+    - 기본 레이블을 적용하면 콘텐츠를 검사하지 않고 파일에 레이블을 지정할 수 있습니다. [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) cmdlet을 사용하여 *MatchPolicy* 매개 변수를 **Off**로 설정합니다. 
+    
+    - 자동 분류용 레이블을 구성하지 않고 중요한 정보 유형의 파일을 검색할 수 있습니다. [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet을 사용하여 *DiscoverInformationTypes* 매개 변수를 **All**로 설정합니다.
+    
+    - 기본적으로 Office 문서 유형만 보호됩니다. 다른 파일 형식은 레지스트리에서 정의하는 경우 보호될 수 있습니다. 자세한 내용은 개발자 지침의 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요.
+    
+    - 기본적으로 권한이 있는 계정으로 스캐너를 실행하는 경우 이제 스캐너는 보안을 강화하기 위해 낮은 무결성 수준으로 실행됩니다. 스캐너를 실행하는 서비스 계정에 [스캐너 필수 구성 요소](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)에 설명된 권한만 있는 경우 낮은 무결성 수준은 필요하지 않고 성능에 부정적인 영향을 주기 때문에 권장되지 않습니다. 고급 클라이언트 설정을 사용하여 낮은 무결성 수준을 사용하지 않도록 설정할 수 있습니다. [추가 정보](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
+    
+- [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus)의 경우 이제 출력에는 Rights Management 소유자 및 Rights Management 발급자와 콘텐츠가 보호된 날짜가 포함됩니다.
+ 
+**추가 변경 내용**:
+
+- Azure Information Protection 스캐너: 
+    
+    - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)의 *ScanMode* 매개 변수 이름이 **Enforce**로 바뀌고 값으로 Off 및 On을 사용합니다.
+    
+    - 기본 레이블을 사용하기 위해 더 이상 기본 레이블을 정책 설정으로 구성할 필요가 없습니다. 대신에 리포지토리 구성을 사용하여 이 기본 레이블을 지정합니다. 
+
+- Office 응용 프로그램에서 처음 사용할 때 표시되는 “축하합니다!” 시작 페이지와 “Azure Information Protection의 새로운 기능” 페이지가 제거되었습니다.
 
 ## <a name="version-12660"></a>버전 1.26.6.0
 

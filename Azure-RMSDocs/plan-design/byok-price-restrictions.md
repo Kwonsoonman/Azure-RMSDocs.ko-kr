@@ -4,7 +4,7 @@ description: BYOK(“Bring Your Own Key”)라고도 하는 고객 관리 키를
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/07/2017
+ms.date: 05/18/2017
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,18 +12,19 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ccbca7f0309e03128ebbe0544e55b341ece47d0f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f5380dc364255fd085c82fd9c0a834afea368c97
+ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/21/2018
+ms.locfileid: "34402152"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 
->*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
-Azure Information Protection을 포함하는 구독이 있는 조직은 Azure Information Protection 테넌트를 구성하여 추가 요금 없이 고객 관리 키(BYOK)를 사용하고 [사용 현황을 기록](../deploy-use/log-analyze-usage.md)할 수 있습니다. 
+Azure Information Protection을 포함하는 구독이 있는 조직은 Azure Information Protection 테넌트를 구성하여 고객 관리 키(BYOK)를 사용하고 [사용 현황을 기록](../deploy-use/log-analyze-usage.md)할 수 있습니다. 
 
 키는 Azure 구독이 필요한 Azure Key Vault에 저장해야 합니다. HSM 보호 키를 사용하려면 Azure Key Vault 프리미엄 서비스 계층을 사용해야 합니다. Azure 주요 자격 증명 모음의 키를 사용하면 월별 요금이 발생합니다. 자세한 내용은 [Azure Key Vault Pricing(Azure 주요 자격 증명 모음 가격)](https://azure.microsoft.com/pricing/details/key-vault/) 페이지를 참조하세요.
 

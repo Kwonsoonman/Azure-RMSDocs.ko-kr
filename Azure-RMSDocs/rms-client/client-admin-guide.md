@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 359e374f23b9a3b8931d67c765949befa5b7c105
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 17fa8d2269bce0d6ef01506bcbadafd01fc768b6
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444234"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -162,6 +163,14 @@ Azure Information Protection 클라이언트는 Office 365가 지원하는 같�
 이러한 언어의 경우 Azure Information Protection 클라이언트의 메뉴 옵션, 대화 상자 및 메시지가 사용자의 언어로 표시됩니다. 언어를 감지하는 단일 설치 관리자가 있으므로 다른 언어를 위한 Azure Information Protection 클라이언트를 설치하기 위해 추가로 구성할 필요가 없습니다. 
 
 그러나 지정한 레이블 이름 및 설명은 Azure Information Protection 정책에서 레이블을 구성할 때 자동으로 번역되지 않습니다. 2017년 8월 30일부터 현재 [기본 정책](../deploy-use/configure-policy-default.md)에는 일부 언어에 대한 지원이 포함됩니다. 사용자가 원하는 언어로 레이블을 볼 수 있게 하려면 직접 번역을 제공하고 이러한 번역을 사용하도록 Azure Information Protection 정책을 구성합니다. 자세한 정보는 [Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요. 시각적 표시는 번역되지 않으며 둘 이상의 언어를 지원하지 않습니다.
+
+## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 업그레이드 및 유지 관리
+
+Azure Information Protection 팀은 새로운 기능과 수정을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 공지 사항은 팀의 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 게시됩니다.
+
+실행 파일 또는 Windows Installer 파일을 사용하여 클라이언트를 설치한 경우에는 Microsoft 다운로드 센터에서 새 릴리스를 수동으로 다운로드하여 클라이언트에 대한 업데이트를 설치해야 합니다. Windows 업데이트를 사용하여 클라이언트를 설치하면 릴리스하고 몇 주 후에 카탈로그에서 새 릴리스를 자동으로 다운로드할 수 있게 됩니다. 
+
+[버전 릴리스 기록 및 지원 정책](../rms-client/client-version-release-history.md)을 사용하여 Azure Information Protection 클라이언트에 대한 지원 정책, 현재 지원되는 버전 및 지원되는 릴리스의 새로운 기능과 변경된 기능을 이해합니다. 
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 제거
 

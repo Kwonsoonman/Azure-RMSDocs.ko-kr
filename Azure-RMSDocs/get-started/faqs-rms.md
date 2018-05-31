@@ -4,7 +4,7 @@ description: 데이터 보호 서비스인 Azure Information Protection의 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/13/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -13,11 +13,12 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b1968f277ca7c9237487d4d767b8a85eb15a9331
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: af2157b8163d9ad5adbb69e057330b3b03259fd0
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444183"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -106,11 +107,15 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 
 이러한 계정에 대한 인증 방법은 다른 조직의 관리자가 Azure Active Directory 계정을 어떻게 구성했느냐에 따라 달라질 수 있습니다. 예를 들어, 이 계정에 대해 만든 암호, 다단계 인증(MFA), 페더레이션 또는 Active Directory 도메인 서비스에서 생성된 후 Azure Active Directory에 동기화된 암호 등을 사용할 수 있습니다.
 
-Azure AD에 계정이 없는 사용자에게 보내는 Office 문서 첨부 파일이 포함된 전자 메일을 보호하는 경우 인증 방법이 변경됩니다. Azure Rights Management 서비스는 Gmail과 같이 많이 사용되는 일부 소셜 ID 공급자와 페더레이션되어 있습니다. 사용자의 전자 메일 공급자가 지원되는 경우 사용자는 해당 서비스에 로그인 할 수 있으며 사용자의 전자 메일 공급자가 인증을 담당합니다. 사용자의 전자 메일 공급자가 지원되지 않거나 기본 설정인 경우 사용자는 인증을 위해 일회성 암호를 신청할 수 있으며 보호된 문서가 있는 전자 메일을 웹 브라우저에 표시할 수 있습니다.
+기타 인증 방법:
+
+- Azure AD에 계정이 없는 사용자에게 보내는 Office 문서 첨부 파일이 포함된 전자 메일을 보호하는 경우 인증 방법이 변경됩니다. Azure Rights Management 서비스는 Gmail과 같이 많이 사용되는 일부 소셜 ID 공급자와 페더레이션되어 있습니다. 사용자의 전자 메일 공급자가 지원되는 경우 사용자는 해당 서비스에 로그인 할 수 있으며 사용자의 전자 메일 공급자가 인증을 담당합니다. 사용자의 전자 메일 공급자가 지원되지 않거나 기본 설정인 경우 사용자는 인증을 위해 일회성 암호를 신청할 수 있으며 보호된 문서가 있는 전자 메일을 웹 브라우저에 표시할 수 있습니다.
+
+- Azure Information Protection은 지원되는 응용 프로그램에 Microsoft 계정을 사용할 수 있습니다. 현재 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>외부 사용자(회사 외부의 사용자)를 사용자 지정 템플릿에 추가할 수 있나요?
 
-예. Azure Portal에서 구성한 [보호 설정](../deploy-use/configure-policy-protection.md)을 통해 조직 외부의 사용자 및 그룹과 심지어 다른 조직의 모든 사용자에게 권한을 추가할 수 있습니다. [Office 365 메시지 암호화의 새로운 기능](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)을 사용하는 전자 메일을 보내는 데 단독으로 템플릿을 사용하지 않는 경우 소셜 ID(예: Gmail 및 Microsoft)의 계정 또는 Azure AD에 있지 않은 다른 계정을 추가하지 않습니다.
+예. Azure Portal에서 구성한 [보호 설정](../deploy-use/configure-policy-protection.md)을 통해 조직 외부의 사용자 및 그룹과 심지어 다른 조직의 모든 사용자에게 권한을 추가할 수 있습니다. [Azure Information Protection을 사용하여 보안 문서 공동 작업](secure-collaboration-documents.md) 단계별 예제를 참조하는 것이 좋습니다. 
 
 Azure Information Protection 레이블이 설치된 경우 Azure Portal에서 이러한 보호 설정을 구성하기 전에 먼저 사용자 지정 템플릿을 레이블로 변환해야 합니다. 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 

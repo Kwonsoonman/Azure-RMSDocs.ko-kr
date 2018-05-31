@@ -4,7 +4,7 @@ description: 조직의 문서와 메일의 분류, 레이블 지정 및 보호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/07/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 760fe51d8c864ff28f599dd3cf1f84ae72c03343
-ms.sourcegitcommit: 2b031166026b4b6dd87e0dbaec44a99204c8691c
+ms.openlocfilehash: bb38d33972fb99596fcde8bc54e53c38e3817336
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444115"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 
@@ -84,7 +85,11 @@ Azure Rights Management 서비스를 사용하여 문서 및 메일을 보호할
 
 테넌트에 있는 사용자에게 Azure AD proxyAddresses 및 Azure AD userPrincipalName을 사용하기도 하지만, Azure Information Protection에서는 이러한 특성을 같은 방식으로 사용하여 다른 테넌트의 사용자에게 권한을 부여하기도 합니다.
 
-Azure AD에 계정이 없는 사용자에게 새로운 기능을 갖춘 Office 365 메시지 암호화를 사용하여 전자 메일을 보내면 소셜 ID 공급자와의 페더레이션을 사용하거나 일회용 암호를 사용하여 먼저 사용자를 인증합니다. 그런 다음 보호된 전자 메일에 지정된 이메일 주소를 사용하여 사용자를 인증합니다.
+기타 권한 부여 방법:
+
+- Azure AD에 없는 메일 주소의 경우, Azure Information Protection은 Microsoft 계정으로 인증될 때 이러한 메일 주소에 권한을 부여할 수 있습니다. 그러나 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+
+- Azure AD에 계정이 없는 사용자에게 새로운 기능을 갖춘 Office 365 메시지 암호화를 사용하여 전자 메일을 보내면 소셜 ID 공급자와의 페더레이션을 사용하거나 일회용 암호를 사용하여 먼저 사용자를 인증합니다. 그런 다음 보호된 전자 메일에 지정된 이메일 주소를 사용하여 사용자를 인증합니다.
 
 ## <a name="azure-information-protection-requirements-for-group-accounts"></a>그룹 계정에 대한 Azure Information Protection 요구 사항
 

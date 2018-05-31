@@ -4,7 +4,7 @@ description: 보호된 파일을 전송받았으나 IT 부서가 Azure에서 해
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/19/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: df2d97fd8abdf7c2f210d857287d3590838222db
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: 358ef172192b3bed65dd8f1853705c8f189cbf97
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444319"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>개인용 RMS 및 Azure Information Protection
 
@@ -28,7 +29,9 @@ ms.lasthandoff: 04/16/2018
 
 
 > [!NOTE]
-> 이 무료 구독은 조직에서 보호하는 파일을 조직 외부의 인증된 사람이 항상 읽을 수 있도록 하는 하나의 옵션입니다. 또 다른 옵션은 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)를 사용하여 문서를 전자 메일로 보내는 것입니다. 이 메일 솔루션은 모든 장치에서 모든 메일 주소로 작동하며 메일로 조직 외부 사용자와 정보를 공유하고 Office 문서를 보는 안전한 방법으로 권장됩니다. 
+> 이 무료 구독은 조직에서 보호하는 파일을 조직 외부의 인증된 사람이 항상 읽을 수 있도록 하는 하나의 옵션입니다. 또 다른 옵션은 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)를 사용하여 문서를 전자 메일로 보내는 것입니다. 이 메일 솔루션은 모든 장치에서 모든 메일 주소로 작동하며 브라우저에서 조직 외부 사용자와 정보를 공유하고 Office 문서를 보는 안전한 방법으로 권장됩니다.
+> 
+> 또 다른 옵션은 Microsoft 계정을 사용하는 것입니다. 그러나 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
 
 이 체험 계정에 등록하려면 사용자가 [Microsoft Azure Information Protection 페이지](https://aka.ms/rms-signup)로 이동하여 업무용 메일 주소를 제공합니다. Microsoft로부터 응답 메일을 받으면 계정을 만드는 데 필요한 세부 정보를 입력하여 등록 프로세스를 완료할 수 있습니다. 
 

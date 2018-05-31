@@ -4,17 +4,18 @@ description: Rights Management 보호를 사용하도록 레이블을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/10/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 8b1024a26e086cb8cbd4696dc37d66350968a0b4
-ms.sourcegitcommit: fbc83d699b9e4e9c8e0e7d36f574630af6a4e3d9
+ms.openlocfilehash: 00305b1ba4f9ff750dd0fde9eb6a524cead39094
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444217"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -231,9 +232,14 @@ Exchange에서 Azure Information Protection을 구성하지 않고도 사용자�
 
 ### <a name="example-4-label-for-protected-email-that-supports-less-restrictive-permissions-than-do-not-forward"></a>예제 4: 전달 금지보다 적은 권한 제한을 지원하는 보호된 전자 메일의 레이블
 
-이 레이블은 Outlook에 제한될 수 없지만 전달 금지를 사용하는 것보다 제한적이지 않은 제어를 제공합니다. 예를 들어 받는 사람이 전자 메일 또는 첨부 파일을 복사하거나 첨부 파일을 인쇄하고 저장할 수 있도록 합니다.
+이 레이블은 Outlook에 제한될 수 없지만 전달 금지를 사용하는 것보다 제한적이지 않은 제어를 제공합니다. 예를 들어, 받는 사람이 메일 또는 첨부 파일을 복사하거나 첨부 파일을 저장하고 편집할 수 있도록 합니다.
 
-Azure AD에 계정이 없는 외부 사용자를 지정하는 경우, 이 레이블을 문서에 사용하지 않고 이메일에만 사용하도록 사용자에게 지시해야 합니다. 또한 이러한 외부 사용자를 지원하려면 [Office 365 메시지 암호화의 새로운 기능](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)에 Exchange Online을 구성해야 합니다.  
+Azure AD에 계정이 없는 외부 사용자를 지정하는 경우:
+
+- 이 레이블은 Exchange Online이 [Office 365 메시지 암호화의 새로운 기능](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)을 사용하는 경우 메일에 적합합니다. 
+ 
+- 자동으로 보호되는 Office 첨부 파일의 경우 이러한 문서를 브라우저에서 볼 수 있습니다. 이러한 문서를 편집하려면 Office 2016 간편 실행 및 동일한 메일 주소를 사용하는 Microsoft 계정을 사용하여 문서를 다운로드하고 편집합니다. [추가 정보](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+
 
 > [!NOTE]
 > Exchange Online은 새로운 옵션인 [암호화 전용](configure-usage-rights.md#encrypt-only-option-for-emails)을 롤아웃합니다. 레이블 구성에 이 옵션이 제공되지 않습니다. 그러나 이 예제를 사용하여 동일한 사용 권한 집합으로 레이블을 구성할 수 있습니다.

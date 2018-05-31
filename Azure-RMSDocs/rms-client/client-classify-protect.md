@@ -4,7 +4,7 @@ description: 문서와 전자 메일을 분류하고 보호하는 방법에 대�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 9462795fb46c6eef857d3fd42bfe873ac869e51c
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: 223dd5681b6b5c6911a90cf6540b2ab4c9d7f54e
+ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444143"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -33,11 +34,14 @@ ms.lasthandoff: 04/18/2018
 
 ### <a name="safely-share-a-file-with-people-outside-your-organization"></a>조직 외부 사용자와 파일을 안전하게 공유
 
-보호되는 파일은 다른 사용자와 공유해도 안전합니다. 예를 들어 메일에 파일을 첨부합니다.
+보호되는 파일은 다른 사용자와 공유해도 안전합니다. 예를 들어, 보호된 문서를 메일에 첨부합니다.
 
-조직 외부 사용자와 파일을 정기적으로 공유하는 경우 관리자가 이러한 사용자가 읽을 수 있도록 보호를 설정하는 레이블을 구성했을 수 있습니다. 또는 파일을 공유하기 전에 [Office 앱을 사용하여 사용자 지정 권한을 설정](#set-custom-permissions-for-a-document)하거나 [파일 탐색기를 사용하여 사용자 지정 권한을 설정](#using-file-explorer-to-classify-and-protect-files)할 수 있습니다. 사용자 고유의 사용자 지정 권한을 설정했으며 파일이 이미 내부 사용을 위해 보호된 경우 먼저 복사본을 만들어 원래 권한을 보존할 수 있습니다. 그 후에 이 복사본을 사용하여 사용자 지정 권한을 설정합니다.  
+조직 외부 사용자와 파일을 공유하기 전에 지원 센터 또는 관리자에게 문의하여 외부 사용자의 파일을 보호하는 방법을 확인합니다.
 
-파일에 사용자 지정 권한으로 보호되어 있으면 표준 공유 메커니즘을 사용하여 파일을 공유합니다. 파일을 함께 공유하는 이러한 사용자가 보호된 파일을 처음 받아보는 경우라면 파일을 보기 위한 지침이 필요할 수 있습니다. 이러한 사용자를 위해 다음 메시지를 복사한 후 붙여 넣을 수 있습니다. **이 파일은 Microsoft Azure Information Protection으로 보호되어 있습니다. 처음 사용할 경우 이러한 [지침](https://aka.ms/rms-signup)을 참조하세요.**
+예를 들어, 조직에서 다른 조직의 사용자와 정기적으로 통신하는 경우, 관리자는 이러한 사용자가 보호된 문서를 읽고 사용할 수 있도록 보호를 설정하는 레이블을 구성했을 수 있습니다. 그런 다음, 이러한 레이블을 선택하여 공유할 문서를 분류하고 보호합니다.
+
+또는 외부 사용자가 [B2B(business-to-business) 계정](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)을 만든 경우에는 [사용자 지정 권한을 설정하는 데 Office 앱](#set-custom-permissions-for-a-document)을 사용하거나 공유하기 전에 문서에 대한 [사용자 지정 권한을 설정하는 데 파일 탐색기](#using-file-explorer-to-classify-and-protect-files)를 사용할 수 있습니다. 고유한 사용자 지정 권한을 설정하고 파일이 이미 내부용으로 보호된 경우, 먼저 복사본을 만들어 원래 권한을 보존할 수 있습니다. 그 후에 이 복사본을 사용하여 사용자 지정 권한을 설정합니다.
+
 
 ## <a name="using-office-apps-to-classify-and-protect-your-documents-and-emails"></a>Office 앱을 사용하여 문서와 전자 메일 분류 및 보호
 
@@ -95,7 +99,7 @@ Azure Information Protection 표시줄 또는 리본의 **보호** 단추를 사
     
     - **사용 권한 선택**: 자기만 액세스할 수 있도록 파일을 보호하려면 **Only for me**(나만)를 선택합니다. 그렇지 않은 경우 사람들에게 부여할 액세스 레이블을 선택합니다.
     
-    - **사용자, 그룹 또는 조직 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 개인 메일 주소는 현재 지원되지 않습니다.
+    - **사용자, 그룹 또는 조직 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 
         
         주소록 아이콘을 사용하여 Outlook 주소록에서 사용자 또는 그룹을 선택할 수도 있습니다.
     
@@ -152,7 +156,7 @@ Azure Information Protection 표시줄 또는 리본의 **보호** 단추를 사
 
     - **권한 선택**: 선택한 하나 이상의 파일을 보호할 때 사용자에게 제공할 액세스 권한 수준을 선택합니다.
     
-    - **사용자, 그룹 또는 조직 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 개인 메일 주소는 현재 지원되지 않습니다.
+    - **사용자, 그룹 또는 조직 선택**: 하나 이상의 파일에 대해 선택한 권한을 소유해야 하는 사용자를 지정합니다. 조직의 모든 사용자에 대한 전체 메일 주소, 그룹 메일 주소 또는 조직 도메인 이름을 입력합니다. 
     
     또는 주소록 아이콘을 사용하여 Outlook 주소록에서 사용자 또는 그룹을 선택할 수 있습니다.
         

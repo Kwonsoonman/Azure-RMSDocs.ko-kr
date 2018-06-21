@@ -1,12 +1,12 @@
 ---
 title: Add-AadrmKey
-description: "AADRM 모듈의 Add-AadrmKey에 대한 도움말입니다."
+description: AADRM 모듈의 Add-AadrmKey에 대한 도움말입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: A1C99424-D986-4A5A-B2E1-6D18EEF11B21
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 31c79d948ec3089a4dc65639f1842c07c7aecba6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/20/2018
+ms.locfileid: "29371137"
 ---
 # <a name="add-aadrmkey"></a>Add-AadrmKey
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204693"
 ---
 # <a name="office-apps-configuration-for-clients-to-use-the-azure-rights-management-service"></a>Office 앱: 클라이언트가 Azure Rights Management 서비스를 사용하도록 구성
 

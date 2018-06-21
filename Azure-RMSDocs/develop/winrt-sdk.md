@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/29/2018
+ms.locfileid: "30259009"
 ---
 # <a name="windows-store-setup"></a>Windows 스토어 설정
 
@@ -53,7 +54,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 -   Visual Studio를 엽니다.
 -   **파일**, **새로 만들기**를 차례로 클릭한 다음 **프로젝트**를 클릭합니다.
--   **새 프로젝트** 대화 상자에서 **Visual C\#** 을 클릭하고 **비어 있는 앱(Windows)**을 선택한 다음 **확인**을 클릭합니다.
+-   **새 프로젝트** 대화 상자에서 **Visual C\#** 을 클릭하고 **비어 있는 앱(Windows)** 을 선택한 다음 **확인**을 클릭합니다.
 
     ![새 프로젝트 만들기](../media/winrtsetup-newproj.png)
 

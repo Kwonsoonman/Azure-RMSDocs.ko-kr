@@ -1,12 +1,12 @@
 ---
-title: "Azure Information Protection에 대한 도움말 봇"
-description: "질문에 답을 하거나, 문서를 검색하거나 기술 지원이 필요한 경우 지원 티켓을 열기 위한 Azure Information Protection에 대한 도움말 봇."
+title: Azure Information Protection에 대한 도움말 봇
+description: 질문에 답을 하거나, 문서를 검색하거나 기술 지원이 필요한 경우 지원 티켓을 열기 위한 Azure Information Protection에 대한 도움말 봇.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 98105d30-ff81-4b9c-9f41-9e9ffd6e7aa6
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 67750454f8fa86d12772a0075a1d01a69f167bcb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29476255"
 ---
 # <a name="help-bot-for-azure-information-protection"></a>Azure Information Protection에 대한 도움말 봇
 

@@ -1,13 +1,13 @@
 ---
-title: "방법: RMS 서버 설치, 구성 및 테스트 | Azure RMS"
-description: "권한 사용 응용 프로그램 테스트에 사용할 RMS 서버를 설치 및 구성합니다."
-keywords: 
+title: '방법: RMS 서버 설치, 구성 및 테스트 | Azure RMS'
+description: 권한 사용 응용 프로그램 테스트에 사용할 RMS 서버를 설치 및 구성합니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765174"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>방법: RMS 서버 설치, 구성 및 테스트
 

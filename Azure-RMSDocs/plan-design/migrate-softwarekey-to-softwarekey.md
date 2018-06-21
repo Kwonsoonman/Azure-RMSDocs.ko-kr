@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205214"
 ---
 # <a name="step-2-software-protected-key-to-software-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-소프트웨어 보호된 키 마이그레이션
 

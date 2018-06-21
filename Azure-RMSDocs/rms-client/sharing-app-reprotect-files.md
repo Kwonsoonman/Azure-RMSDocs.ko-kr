@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207804"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일에 대한 사용 권한 변경
 

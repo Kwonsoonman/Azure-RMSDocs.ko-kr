@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33823530"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>사용자 가이드: Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지
 

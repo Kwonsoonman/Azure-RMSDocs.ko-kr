@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204676"
 ---
 # <a name="more-information-about-thales-hsms-and-microsoft-additions-retired-content"></a>Thales HSM 및 Microsoft 추가 사항에 대한 자세한 내용: 사용 중지된 콘텐츠
 

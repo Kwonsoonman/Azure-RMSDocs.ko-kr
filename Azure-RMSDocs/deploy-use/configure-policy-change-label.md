@@ -15,6 +15,7 @@ ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32326262"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법
 

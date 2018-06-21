@@ -1,13 +1,13 @@
 ---
-title: "방법: 문서 추적 및 해지 사용 | Azure RMS"
-description: "콘텐츠의 문서 추적과 메타데이터 업데이트에 대한 예제 코드를 구현하고, 앱에 대한 사용 추적 단추를 만들기 위한 기본 지침입니다."
-keywords: 
+title: '방법: 문서 추적 및 해지 사용 | Azure RMS'
+description: 콘텐츠의 문서 추적과 메타데이터 업데이트에 대한 예제 코드를 구현하고, 앱에 대한 사용 추적 단추를 만들기 위한 기본 지침입니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765428"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>방법: 문서 추적 및 해지 사용
 

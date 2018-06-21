@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207821"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법
 

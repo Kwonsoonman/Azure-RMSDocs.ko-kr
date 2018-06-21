@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/29/2018
+ms.locfileid: "30258970"
 ---
 # <a name="testing-your-application"></a>응용 프로그램 테스트
 

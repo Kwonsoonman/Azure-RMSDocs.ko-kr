@@ -15,6 +15,7 @@ ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32326306"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Azure Information Protection 정책에 대해 레이블을 추가 또는 제거
 

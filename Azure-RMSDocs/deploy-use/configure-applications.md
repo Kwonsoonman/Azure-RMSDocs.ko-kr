@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207739"
 ---
 # <a name="configuring-applications-for-azure-rights-management"></a>Azure 권한 관리에 대해 응용 프로그램 구성
 

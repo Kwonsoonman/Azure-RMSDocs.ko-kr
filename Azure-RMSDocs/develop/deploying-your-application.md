@@ -1,13 +1,13 @@
 ---
-title: "응용 프로그램 배포 - AIP"
-description: "이 항목에서는 응용 프로그램의 배포 과정을 간략하게 설명합니다."
-keywords: "배포, RMS, AIP"
+title: 응용 프로그램 배포 - AIP
+description: 이 항목에서는 응용 프로그램의 배포 과정을 간략하게 설명합니다.
+keywords: 배포, RMS, AIP
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 03/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 4B785564-6839-49ED-A243-E2A6DFF88B2E
@@ -19,6 +19,7 @@ ms.sourcegitcommit: e21fb3385de6f0e251167e5dc973e90f0e7f2bcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/01/2018
+ms.locfileid: "28908088"
 ---
 # <a name="deploy-into-production"></a>프로덕션에 배포
 
@@ -104,7 +105,7 @@ RMS 클라이언트 2.1 설치 관리자를 시작하거나 자동으로 설치�
 > 인증을 위해 새로운 ADAL 모델로 마이그레이션한 경우 **SIA**를 설치할 필요가 없습니다. 자세한 내용은 [RMS 사용 응용 프로그램에서 ADAL 인증](adal-auth.md)을 참조하세요.
 > 또한 **Windows 10용 응용 프로그램을 인증**할 수 있습니다. 사용자와 고객은 Microsoft Online 로그인 도우미 대신 ADAL 인증을 사용하도록 응용 프로그램을 업데이트하여 컴퓨터에 대한 관리자 권한이 필요 없이 다단계 인증 설치 RMS 클라이언트 2.1을 활용할 수 있습니다.
 
-최종 사용자가 Information Protection 서비스를 활용하기 위해 *Online Services SIA(로그인 도우미)*를 배포해야 합니다. 사용자가 응용 프로그램 개발자인 경우 최종 사용자가 RMS(온-프레미스) 또는 Azure Information Protection을 통해 Information Protection을 사용할지 여부를 알 수 없습니다.
+최종 사용자가 Information Protection 서비스를 활용하기 위해 *Online Services SIA(로그인 도우미)* 를 배포해야 합니다. 사용자가 응용 프로그램 개발자인 경우 최종 사용자가 RMS(온-프레미스) 또는 Azure Information Protection을 통해 Information Protection을 사용할지 여부를 알 수 없습니다.
 
 
 > [!IMPORTANT]

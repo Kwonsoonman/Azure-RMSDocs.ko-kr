@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31817147"
 ---
 # <a name="installing-the-aadrm-powershell-module"></a>AADRM PowerShell 모듈 설치
 

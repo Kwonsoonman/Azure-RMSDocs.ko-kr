@@ -1,13 +1,13 @@
 ---
-title: "API SDK 4.2 참조 | Microsoft Docs"
-description: "Azure Information Protection SDK 4.2에서는 Android, iOS, OS X, Linux, Windows Phone 및 Windows 스토어 등의 여러 운영 체제를 지원합니다."
-keywords: 
+title: API SDK 4.2 참조 | Microsoft Docs
+description: Azure Information Protection SDK 4.2에서는 Android, iOS, OS X, Linux, Windows Phone 및 Windows 스토어 등의 여러 운영 체제를 지원합니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6a8df1d8-1279-4189-b17d-f128b7ca5643
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27764316"
 ---
 # <a name="api-sdk-42-reference"></a>API SDK 4.2 참조
 

@@ -1,6 +1,6 @@
 ---
-title: "Azure Information Protection 개발자 가이드"
-description: "개발자는 Azure Information Protection을 사용하여 모든 형식의 파일을 보호하고 관리할 수 있습니다."
+title: Azure Information Protection 개발자 가이드
+description: 개발자는 Azure Information Protection을 사용하여 모든 형식의 파일을 보호하고 관리할 수 있습니다.
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765530"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
 

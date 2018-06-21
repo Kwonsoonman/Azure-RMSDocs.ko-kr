@@ -1,13 +1,13 @@
 ---
-title: "방법&#58; 기본 제공 권한 사용 | Azure RMS"
-description: "RMS SDK 4.2에서 제공하는 기본 제공 권한 및 앱이 이러한 제한에 따라 적용해야 하는 사용 제한에 대해 간략하게 설명합니다."
-keywords: 
+title: 방법&#58; 기본 제공 권한 사용 | Azure RMS
+description: RMS SDK 4.2에서 제공하는 기본 제공 권한 및 앱이 이러한 제한에 따라 적용해야 하는 사용 제한에 대해 간략하게 설명합니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 9142dd29-f1f4-4c2f-82ac-534f14b8bba1
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765669"
 ---
 # <a name="how-to-use-built-in-rights"></a>방법: 기본 제공 권한 사용
 

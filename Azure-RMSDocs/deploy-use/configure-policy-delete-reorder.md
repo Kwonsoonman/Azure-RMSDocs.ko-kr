@@ -15,6 +15,7 @@ ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32326602"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Azure Information Protection에 대한 레이블을 삭제하거나 순서를 변경하는 방법
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208059"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>기본 Azure Information Protection 정책
 

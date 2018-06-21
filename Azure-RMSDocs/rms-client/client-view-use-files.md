@@ -17,6 +17,7 @@ ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31441865"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>사용자 가이드: Rights Management로 보호된 파일 보기 및 사용
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207464"
 ---
 # <a name="step-4-see-classification-labeling-and-protection-in-action"></a>4단계: 실제 분류, 레이블 지정 및 보호 작동 방식 확인 
 

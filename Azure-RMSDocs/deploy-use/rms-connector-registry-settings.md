@@ -17,6 +17,7 @@ ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34216837"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 커넥터에 대한 레지스트리 설정
 

@@ -1,13 +1,13 @@
 ---
-title: "앱 배포 방법 - AIP"
-description: "이 문서에서는 처음에 개발된 프로세스가 아니라 서비스 응용 프로그램을 다른 테넌트에 배포하는 프로세스를 설명합니다."
-keywords: 
+title: 앱 배포 방법 - AIP
+description: 이 문서에서는 처음에 개발된 프로세스가 아니라 서비스 응용 프로그램을 다른 테넌트에 배포하는 프로세스를 설명합니다.
+keywords: ''
 author: kkanakas
 ms.author: kartikk
 manager: mbaldwin
 ms.date: 02/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 06/30/2017
+ms.locfileid: "20232839"
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>다른 테넌트에 서비스 응용 프로그램 배포
 

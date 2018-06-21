@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205039"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>Office 365 관리 센터에서 Azure 권한 관리를 활성화하는 방법
 
@@ -47,7 +48,7 @@ Office 365 관리 센터에서 Azure 권한 관리 서비스에 액세스해야 
 
 4. **Rights Management** 페이지에서 **활성화**를 클릭합니다.
 
-5. **Rights Management를 활성화하시겠습니까?**라는 메시지가 나타나면 **활성화**를 클릭합니다.
+5. **Rights Management를 활성화하시겠습니까?** 라는 메시지가 나타나면 **활성화**를 클릭합니다.
 
 이제 **Rights Management가 활성화되었음** 이 표시되고 비활성화 옵션이 나타납니다.
 

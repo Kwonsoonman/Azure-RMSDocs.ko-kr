@@ -17,6 +17,7 @@ ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327316"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>사용자 가이드; Azure Information Protection에 의해 레이블이 지정되었거나 Rights Management로 보호된 파일 및 전자 메일에서 분류 레이블 및 보호를 제거합니다.
 

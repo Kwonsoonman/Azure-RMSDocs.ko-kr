@@ -17,6 +17,7 @@ ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33821099"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소
 

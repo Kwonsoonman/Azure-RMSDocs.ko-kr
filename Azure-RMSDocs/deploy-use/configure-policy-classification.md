@@ -15,6 +15,7 @@ ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32326755"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 

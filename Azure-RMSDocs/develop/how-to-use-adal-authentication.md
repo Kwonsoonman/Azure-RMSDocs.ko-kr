@@ -1,13 +1,13 @@
 ---
-title: "RMS 사용 응용 프로그램에 대한 ADAL 인증 | Azure RMS"
-description: "ADAL 인증을 위한 프로세스를 간략히 설명합니다."
-keywords: "인증, RMS, ADAL"
+title: RMS 사용 응용 프로그램에 대한 ADAL 인증 | Azure RMS
+description: ADAL 인증을 위한 프로세스를 간략히 설명합니다.
+keywords: 인증, RMS, ADAL
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765887"
 ---
 # <a name="how-to-use-adal-authentication"></a>방법: ADAL 인증 사용
 

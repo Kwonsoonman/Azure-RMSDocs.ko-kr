@@ -1,13 +1,13 @@
 ---
-title: "Linux 설정"
-description: "이제 여러 버전의 Linux 운영 체제에서 Rights Management SDK 4.x를 사용할 수 있습니다."
-keywords: 
+title: Linux 설정
+description: 이제 여러 버전의 Linux 운영 체제에서 Rights Management SDK 4.x를 사용할 수 있습니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: A348541C-17E0-4024-BF97-84B0099B0E69
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 2733b1df2ebdda02b60d9471db29e545552f99ff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/15/2018
+ms.locfileid: "29349783"
 ---
 # <a name="linux-setup"></a>Linux 설정
 

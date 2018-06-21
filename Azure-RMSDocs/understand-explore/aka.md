@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207610"
 ---
 # <a name="azure-information-protection---also-known-as-"></a>Azure Information Protection의 이전 이름들
 

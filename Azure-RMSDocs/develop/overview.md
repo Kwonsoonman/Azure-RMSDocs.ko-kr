@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/29/2018
+ms.locfileid: "30258822"
 ---
 # <a name="overview"></a>개요
 

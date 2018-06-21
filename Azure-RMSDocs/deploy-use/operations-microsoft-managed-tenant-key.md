@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208195"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 

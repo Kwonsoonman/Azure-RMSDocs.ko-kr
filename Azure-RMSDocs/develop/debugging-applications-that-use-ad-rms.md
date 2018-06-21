@@ -1,13 +1,13 @@
 ---
-title: "방법: 권한 사용 응용 프로그램 디버그 | Azure RMS"
-description: "다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다."
-keywords: 
+title: '방법: 권한 사용 응용 프로그램 디버그 | Azure RMS'
+description: 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 6F6C7651-6A6E-45DD-A0C5-F036F803249B
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765445"
 ---
 # <a name="how-to-debug-a-rights-enabled-application"></a>방법: 권한 사용 응용 프로그램 디버그
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32326568"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>범위 지정 정책을 사용하여 특정 사용자용 Azure Information Protection 정책을 구성하는 방법
 

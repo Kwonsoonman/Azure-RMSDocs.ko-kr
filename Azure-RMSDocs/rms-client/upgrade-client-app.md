@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206862"
 ---
 # <a name="user-guide-tasks-that-you-used-to-do-with-the-rms-sharing-application"></a>사용자 가이드: RMS 공유 응용 프로그램으로 수행해왔던 작업
 

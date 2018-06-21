@@ -17,6 +17,7 @@ ms.sourcegitcommit: 5892db302bdf96538ecb3af8e3c2f678f5d1ebe2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31817222"
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: 클라이언트와 온라인 서비스가 Azure Rights Management 서비스를 사용하도록 구성
 

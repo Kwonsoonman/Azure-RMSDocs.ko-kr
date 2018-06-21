@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208416"
 ---
 # <a name="decommissioning-and-deactivating-protection-for-azure-information-protection"></a>Azure Information Protection 보호 해제 및 비활성화
 
@@ -65,7 +66,7 @@ Azure Information Protection 테넌트 키가 있으면 온-프레미스에 권�
 
 2. **Rights Management** 페이지에서 **비활성화**를 클릭합니다.
 
-3.  **Rights Management를 비활성화하시겠습니까?**라는 메시지가 나타나면 **비활성화**를 클릭합니다.
+3.  **Rights Management를 비활성화하시겠습니까?** 라는 메시지가 나타나면 **비활성화**를 클릭합니다.
 
 이제 **Rights Management가 활성화되지 않았습니다.** 가 표시되고 활성화 옵션이 나타납니다.
 

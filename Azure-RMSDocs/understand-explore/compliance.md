@@ -1,12 +1,12 @@
 ---
-title: "Azure Information Protection에 대한 규정 준수 및 정보"
-description: "법적 정보, 규정 준수, SLA를 포함하는 Azure Information Protection 관련 지원 정보입니다."
+title: Azure Information Protection에 대한 규정 준수 및 정보
+description: 법적 정보, 규정 준수, SLA를 포함하는 Azure Information Protection 관련 지원 정보입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 29d3d4760131eb2642e17b0732f852b6d8cfe314
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/15/2018
+ms.locfileid: "29884176"
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure Information Protection에 대한 규정 준수 및 지원 정보
 

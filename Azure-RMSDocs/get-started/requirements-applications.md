@@ -17,6 +17,7 @@ ms.sourcegitcommit: f4a97427d61e4b539c91c49c952658aa2dc729ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32018538"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
 

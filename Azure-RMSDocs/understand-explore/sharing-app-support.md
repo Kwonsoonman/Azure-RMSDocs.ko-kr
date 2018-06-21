@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206920"
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램
 

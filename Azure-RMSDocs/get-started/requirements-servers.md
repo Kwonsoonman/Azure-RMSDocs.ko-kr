@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207559"
 ---
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버
 

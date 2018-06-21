@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207440"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션
 

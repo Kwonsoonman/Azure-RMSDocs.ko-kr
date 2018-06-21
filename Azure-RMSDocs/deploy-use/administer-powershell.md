@@ -17,6 +17,7 @@ ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31009171"
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
 

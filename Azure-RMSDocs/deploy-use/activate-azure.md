@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207175"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Azure 포털에서 Azure 권한 관리를 활성화하는 방법
 

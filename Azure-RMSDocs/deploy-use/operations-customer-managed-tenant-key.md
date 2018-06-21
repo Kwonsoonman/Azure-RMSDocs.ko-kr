@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208229"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>고객 관리: 테넌트 키 수명 주기 작업
 

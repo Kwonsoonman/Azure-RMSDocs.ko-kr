@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208331"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 

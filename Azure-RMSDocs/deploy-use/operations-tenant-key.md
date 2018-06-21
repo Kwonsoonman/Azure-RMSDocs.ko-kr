@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30205798"
 ---
 # <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키에 대한 작업
 

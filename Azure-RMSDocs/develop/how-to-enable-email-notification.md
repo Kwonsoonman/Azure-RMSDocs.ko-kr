@@ -1,13 +1,13 @@
 ---
-title: "메일 알림 사용 | Azure RMS"
-description: "메일 알림을 사용하면 누군가가 보호된 콘텐츠에 액세스할 경우 보호된 콘텐츠 소유자가 알림을 받을 수 있습니다."
-keywords: 
+title: 메일 알림 사용 | Azure RMS
+description: 메일 알림을 사용하면 누군가가 보호된 콘텐츠에 액세스할 경우 보호된 콘텐츠 소유자가 알림을 받을 수 있습니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 5FB975EE-E4E5-4089-B8E1-CAFD5B9B34EC
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27765836"
 ---
 # <a name="how-to-enable-email-notification"></a>방법: 메일 알림 사용
 

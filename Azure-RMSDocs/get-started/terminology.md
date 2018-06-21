@@ -17,6 +17,7 @@ ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/03/2018
+ms.locfileid: "30297720"
 ---
 # <a name="terminology-for-azure-information-protection"></a>Azure Information Protection에 사용되는 용어
 

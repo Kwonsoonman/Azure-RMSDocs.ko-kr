@@ -1,6 +1,6 @@
 ---
-title: "새로운 기능 및 릴리스 정보"
-description: "이 버전과 이전 버전의 중요한 변경 내용 및 기능을 간략하게 설명합니다."
+title: 새로운 기능 및 릴리스 정보
+description: 이 버전과 이전 버전의 중요한 변경 내용 및 기능을 간략하게 설명합니다.
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 972acdb468ac32a28e3e24c90694aff4b75206fc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/29/2018
+ms.locfileid: "28878938"
 ---
 # <a name="whats-new-and-release-notes"></a>새로운 기능 및 릴리스 정보
 

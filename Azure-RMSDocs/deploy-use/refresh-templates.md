@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206020"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>사용자 및 서비스를 위한 템플릿 새로 고침
 

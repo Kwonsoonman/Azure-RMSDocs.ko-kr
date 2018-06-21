@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30207018"
 ---
 # <a name="windows-powershell-script-for-azure-rms-protection-by-using-file-server-resource-manager-fci"></a>파일 서버 리소스 관리자 FCI를 사용하는 Azure RMS 보호용 Windows PowerShell 스크립트
 

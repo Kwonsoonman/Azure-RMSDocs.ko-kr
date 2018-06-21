@@ -15,6 +15,7 @@ ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327469"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Azure Information Protection용 HYOK(Hold your own key) 보호
 

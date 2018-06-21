@@ -17,6 +17,7 @@ ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34217025"
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 배포
 

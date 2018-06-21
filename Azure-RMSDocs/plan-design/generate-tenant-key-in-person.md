@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204975"
 ---
 # <a name="generate-and-transfer-your-tenant-key--in-person-retired-content"></a>직접 테넌트 키 생성 및 전송 | 사용 중지된 콘텐츠
 

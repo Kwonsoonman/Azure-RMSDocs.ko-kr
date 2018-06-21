@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30204801"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure Information Protection 클라이언트: 클라이언트 설치 및 구성
 

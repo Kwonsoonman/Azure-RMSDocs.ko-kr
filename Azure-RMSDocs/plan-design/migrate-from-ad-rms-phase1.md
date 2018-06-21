@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206726"
 ---
 # <a name="migration-phase-1---preparation"></a>마이그레이션 1단계 - 준비
 
@@ -34,7 +35,7 @@ Azure Information Protection을 위한 데이터 보호를 제공하는 서비�
 > [!NOTE]
 > 이전에 이 Windows PowerShell 모듈을 다운로드한 경우 다음 명령을 실행하여 버전 번호가 **2.9.0.0**: `(Get-Module aadrm -ListAvailable).Version` 이상인지 확인합니다.
 
-일부 마이그레이션 지침을 완료하려면 *\<테넌트 URL\>*에 대한 참조가 있을 때 대체할 수 있도록 테넌트의 Azure Rights Management 서비스 URL을 알아야 합니다. Azure Rights Management 서비스 URL 형식은 **{GUID}.rms.[Region].aadrm.com**입니다.
+일부 마이그레이션 지침을 완료하려면 *\<테넌트 URL\>* 에 대한 참조가 있을 때 대체할 수 있도록 테넌트의 Azure Rights Management 서비스 URL을 알아야 합니다. Azure Rights Management 서비스 URL 형식은 **{GUID}.rms.[Region].aadrm.com**입니다.
 
 예: **5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
@@ -92,7 +93,7 @@ Azure Information Protection을 위한 데이터 보호를 제공하는 서비�
 
 Exchange 온-프레미스 또는 Exchange Online을 사용하는 경우 이전에 Exchange를 AD RMS 배포와 통합했을 수 있습니다. 이 단계에서는 Azure RMS로 보호된 콘텐츠를 지원하기 위해 기존 AD RMS 구성을 사용하도록 구성합니다. 
 
-[테넌트의 Azure Rights Management 서비스 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)을 확보하여 이 값으로 다음 명령의 *&lt;테넌트 URL&gt;*을 대체할 수 있도록 합니다. 
+[테넌트의 Azure Rights Management 서비스 URL](migrate-from-ad-rms-phase1.md#to-identify-your-azure-rights-management-service-url)을 확보하여 이 값으로 다음 명령의 *&lt;테넌트 URL&gt;* 을 대체할 수 있도록 합니다. 
 
 **Exchange Online을 AD RMS와 통합한 경우**: Exchange Online PowerShell 세션을 열고 다음 PowerShell 명령을 하나씩 또는 스크립트로 실행합니다.
 

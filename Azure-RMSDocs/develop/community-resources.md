@@ -1,13 +1,13 @@
 ---
-title: "개발자 커뮤니티 리소스 | Microsoft Docs"
-description: "Azure Information Protection은 여러 플랫폼에서 증가하고 있는 개발자 커뮤니티의 원활한 지원을 받습니다."
-keywords: 
+title: 개발자 커뮤니티 리소스 | Microsoft Docs
+description: Azure Information Protection은 여러 플랫폼에서 증가하고 있는 개발자 커뮤니티의 원활한 지원을 받습니다.
+keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
@@ -19,6 +19,7 @@ ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2018
+ms.locfileid: "27764574"
 ---
 # <a name="community-resources"></a>커뮤니티 리소스
 

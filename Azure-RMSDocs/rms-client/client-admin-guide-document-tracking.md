@@ -17,6 +17,7 @@ ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31008984"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>관리자 가이드: Azure Information Protection에 대한 문서 추적 구성 및 사용
 

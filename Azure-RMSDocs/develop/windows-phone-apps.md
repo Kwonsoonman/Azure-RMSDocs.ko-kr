@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/29/2018
+ms.locfileid: "30258805"
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 설정
 
@@ -51,7 +52,7 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 
 -   *Visual Studio*를 엽니다.
 -   **파일**을 클릭합니다. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
--   **새 프로젝트** 대화 상자에서 **Visual C\#**, **비어 있는 앱(Windows Phone)**을 차례로 선택하고 **확인**을 클릭합니다.
+-   **새 프로젝트** 대화 상자에서 **Visual C\#**, **비어 있는 앱(Windows Phone)** 을 차례로 선택하고 **확인**을 클릭합니다.
 
     ![새 프로젝트 만들기](../media/wpsetup-newproj.png)
 

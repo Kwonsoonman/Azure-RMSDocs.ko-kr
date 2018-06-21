@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30208467"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 

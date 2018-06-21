@@ -18,6 +18,7 @@ ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33946439"
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
 

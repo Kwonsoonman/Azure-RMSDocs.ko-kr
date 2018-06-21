@@ -19,6 +19,7 @@ ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/29/2018
+ms.locfileid: "30258998"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/28/2018
+ms.locfileid: "30206209"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트에 대한 보호 전용 모드
 

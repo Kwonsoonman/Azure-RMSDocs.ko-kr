@@ -17,6 +17,7 @@ ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34216871"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 

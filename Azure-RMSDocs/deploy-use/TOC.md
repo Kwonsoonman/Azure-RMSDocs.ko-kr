@@ -29,6 +29,7 @@
 #### [PowerShell 참조](configure-templates-with-powershell.md)
 #### [Azure 클래식 포털에서 마이그레이션](migrate-portal.md)
 ### [언어 구성](configure-policy-languages.md)
+## [Azure Information Protection 레이블에 대한 메일 흐름 규칙 구성](configure-exo-rules.md)
 ## [Azure Information Protection 스캐너 배포](deploy-aip-scanner.md)
 ## [RMS 커넥터 배포](deploy-rms-connector.md)
 ### [커넥터 설치 및 구성](install-configure-rms-connector.md)

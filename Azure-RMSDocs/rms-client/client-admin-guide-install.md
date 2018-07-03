@@ -4,7 +4,7 @@ description: 엔터프라이즈 네트워크에서 Windows용 Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b8cd6aeb13398bdfd65ba3e743e3e12bf3cc5f53
-ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
+ms.openlocfilehash: 511fea3a6176cf047eb4c1568d2efa755c46f39c
+ms.sourcegitcommit: e0a47ccee898b50907374cc74fcfd9abf59cd98d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34423292"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949830"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -74,14 +74,6 @@ ms.locfileid: "34423292"
     이 **관리되는 추가 기능 목록** 그룹 정책 설정을 구성하지 않았더라도 Microsoft Azure Information Protection 추가 기능이 비활성화된다는 보고를 받을 경우 구성해야 할 수 있습니다. 이 추가 기능을 비활성화하면 사용자는 Office 응용 프로그램에서 Azure Information Protection 막대를 볼 수 없습니다.
     
     이 그룹 정책 설정에 대한 자세한 내용은 [Office 2013 및 Office 2016 프로그램에 대한 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)을 참조하세요.
-
-- Outlook 간편 실행 버전 16.0.9324.1000 이상: 모니터에 대한 레거시 지원 사용
-    
-    Azure Information Protection 표시줄이 확인된 간편 실행 버전용 Outlook 외부에 표시되는 것을 방지하기 위해 모니터에 대한 레거시 지원을 사용해야 합니다. 이 시나리오에서 막대가 제대로 표시되지 않을 경우 **AdxTaskPane**으로 표시될 수 있습니다. 
-    
-    이 요구 사항에 맞게 Outlook을 구성하려면: **파일** > **옵션** > **일반**:
-    
-    - **사용자 인터페이스 옵션** 섹션에서 **내 디스플레이에 대해 최적의 설정 사용** 옵션이 선택된 것으로 확인되면 이 선택 항목을 선택 취소합니다.
 
 > [!IMPORTANT]
 > Azure Information Protection 클라이언트를 설치하려면 로컬 관리 권한이 필요합니다.

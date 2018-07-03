@@ -4,7 +4,7 @@ description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/26/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a8a159813dba899cf79a13f15d10e2ff10c11494
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 88fa2fa62e4090e962f96868b7c1070114d740c1
+ms.sourcegitcommit: 0437ff841f278f5293a74b3ff7d41f81ccfef414
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208331"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36310264"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -57,7 +57,7 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
     
     |Office 파일 형식|Office 파일 형식|
     |----------------------------------|----------------------------------|
-    |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm<br /><br />.pptx<br /><br />.vdw<br /><br />.vsd<br /><br />.vsdm|.vsdx<br /><br />.vss<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx|
+    |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm<br /><br />.pptx<br /><br />.vdw<br /><br />.vsd|.vsdm<br /><br /> .vsdx<br /><br />.vss<br /><br />.vssm<br /><br />.vst<br /><br />.vstm<br /><br />.vssx<br /><br />.vstx<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx|
 
 추가 파일 형식은 보호도 수행해야 분류가 지원됩니다. 이러한 파일 형식은 [분류 및 보호가 지원되는 파일 형식](#supported-file-types-for-classification-and-protection) 섹션을 참조하세요.
 

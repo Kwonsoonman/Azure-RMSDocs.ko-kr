@@ -4,7 +4,7 @@ description: PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b4376d9f2b0cde836b37553eb83efd8068e6c2f8
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: a830fa6172df3dab2701109fd30484156c69fc29
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "35726870"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 05/17/2018
 
 Azure Information Protection 클라이언트를 설치할 때, PowerShell 명령이 자동으로 설치됩니다. 그러면 자동화를 위해 스크립트에 둘 수 있는 명령을 실행하여 클라이언트를 관리할 수 있습니다.
 
-cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩니다. 이 모듈에는 RMS 보호 도구(더 이상 지원되지 않음)의 모든 Rights Management cmdlet이 포함되어 있습니다. 또한 레이블을 지정하기 위해 AIP(Azure Information Protection) 서비스를 사용하는 새로운 cmdlet도 있습니다. 예를 들면 다음과 같습니다.
+cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩니다. 이 모듈에는 RMS 보호 도구(더 이상 지원되지 않음)의 모든 Rights Management cmdlet이 포함되어 있습니다. 레이블을 지정하기 위해 Azure Information Protection을 사용하는 cmdlet도 있습니다. 예를 들면 다음과 같습니다.
 
 |레이블 지정 cmdlet|예제 사용법|
 |----------------|---------------|
@@ -33,8 +34,12 @@ cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩�
 |[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)|공유 폴더에 대해 레이블이 없는 모든 파일에 지정된 레이블을 적용합니다.|
 |[Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)|일정에 따라 실행되는 스크립트를 사용하는 것처럼 비대화형 파일에 레이블을 지정합니다.|
 
+> [!TIP]
+> 경로 길이가 260자보다 긴 cmdlet을 사용하려면 Windows 10 1주년 업데이트에서 사용할 수 있는 다음 [그룹 정책 설정](https://blogs.msdn.microsoft.com/jeremykuhne/2016/07/30/net-4-6-2-and-long-paths-on-windows-10/)을 사용합니다.<br /> **로컬 컴퓨터 정책** > **컴퓨터 구성** > **관리 템플릿** > **모든 설정** > **NTFS** > **Win32 긴 경로 사용** 
+> 
+> Windows Server 2016의 경우, Windows 10용 최신 관리 템플릿(.admx)을 설치하면 동일한 그룹 정책 설정을 사용할 수 있습니다.
 
-또한 [Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)는 Windows Server에서 서비스를 설치하고 구성하는 cmdlet을 사용합니다. 그런 다음 이 스캐너를 통해 데이터 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.
+[Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)는 AzureInformationProtection 모듈의 cmdlet을 사용하여 Windows Server에 서비스를 설치하고 구성합니다. 그런 다음 이 스캐너를 통해 데이터 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.
 
 모든 cmdlet 목록 및 해당 도움말을 보려면 [AzureInformationProtection 모듈](/powershell/module/azureinformationprotection)을 참조하세요. PowerShell 세션 내에서 `Get-Help <cmdlet name> -online`을 입력하여 최신 도움말을 볼 수 있습니다.  
 

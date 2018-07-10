@@ -4,7 +4,7 @@ description: Azure Rights Management에서 조직을 위해 보호하는 데이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2018
+ms.date: 05/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5d35f7faed0e02a253e5ba48cbdb2bca0aa76419
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: aed109667fe5c58f50735b8cc223f02009ebde55
+ms.sourcegitcommit: 0782e460d29e11974ec1c4bb9286572d0ef000d0
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37102833"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
 
@@ -53,7 +54,7 @@ Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사�
 
 - Office 365 또는 Azure Information Protection 테넌트의 전역 관리자로 할당되거나 [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator) cmdlet을 사용하여 GlobalAdministrator 역할이 할당된 관리자를 제한하고 모니터링합니다. 이러한 사용자는 슈퍼 사용자 기능을 사용하도록 설정하고 사용자(및 자신)를 슈퍼 사용자로 할당하며, 잠재적으로 조직에서 보호하는 모든 파일의 암호를 해독할 수 있습니다.
 
-- 슈퍼 사용자로 할당된 사용자 및 서비스 계정을 개별적으로 확인하려면 [Get-AadrmSuperUser cmdlet](/powershell/module/aadrm/get-aadrmsuperuser)을 사용합니다. 슈퍼 사용자 그룹이 구성되어 있는지 여부를 확인하려면 [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperusergroup) cmdlet 및 표준 사용자 관리 도구를 사용하여 어느 사용자가 이 그룹의 구성원인지 확인합니다. 모든 관리 작업과 마찬가지로 슈퍼 기능을 사용하거나 사용하지 않도록 설정하는 작업 및 슈퍼 사용자를 추가하거나 제거하는 작업은 기록되며 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) 명령을 사용하여 감사할 수 있습니다. 예제는 다음 섹션을 참조하세요. 슈퍼 사용자가 파일의 암호를 해독하면 이 작업이 기록되고 [사용 현황 로깅](log-analyze-usage.md)을 통해 감사할 수 있습니다.
+- 슈퍼 사용자로 할당된 사용자 및 서비스 계정을 개별적으로 확인하려면 [Get-AadrmSuperUser](/powershell/module/aadrm/get-aadrmsuperuser) cmdlet을 사용합니다. 슈퍼 사용자 그룹이 구성되어 있는지 여부를 확인하려면 [Get-AadrmSuperUserGroup](/powershell/module/aadrm/get-aadrmsuperusergroup) cmdlet 및 표준 사용자 관리 도구를 사용하여 어느 사용자가 이 그룹의 구성원인지 확인합니다. 모든 관리 작업과 마찬가지로 슈퍼 기능을 사용하거나 사용하지 않도록 설정하는 작업 및 슈퍼 사용자를 추가하거나 제거하는 작업은 기록되며 [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog) 명령을 사용하여 감사할 수 있습니다. 예제는 다음 섹션을 참조하세요. 슈퍼 사용자가 파일의 암호를 해독하면 이 작업이 기록되고 [사용 현황 로깅](log-analyze-usage.md)을 통해 감사할 수 있습니다.
 
 - 일상적인 서비스에 슈퍼 사용자 기능이 필요하지 않은 경우에는 필요할 때만 이 기능을 사용하도록 설정하고 [Disable-AadrmSuperUserFeature](/powershell/module/aadrm/disable-aadrmsuperuserfeature) cmdlet를 사용하여 다시 사용하지 않도록 설정합니다.
 

@@ -4,7 +4,7 @@ description: Azure Information Protection에 의해 보호되는 문서에서 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4895c429-959f-47c7-9007-b8f032f6df6f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d5c24747bcb05f7004f7d42b0145ce6cc1bbade5
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 4a642960e81a7d1a5cb6f8433e4098bed06a663d
+ms.sourcegitcommit: dc98226f339339c10fd01535a1adf7e30a817a41
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444343"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36300026"
 ---
 # <a name="secure-document-collaboration-by-using-azure-information-protection"></a>Azure Information Protection을 사용하여 문서 공동 작업 보호
 
@@ -27,7 +27,7 @@ Azure Information Protection을 사용하면 권한 부여된 사용자의 공�
 
 이러한 권한을 사용 권한이라고 하며 보기, 편집, 인쇄와 같은 권한을 포함합니다. 문서가 보호될 때 개별 사용 권한을 정의하거나, 권한 수준이라는 사용 권한 그룹을 정의할 수 있습니다. 권한 수준을 통해 일반적으로 함께 사용되는 사용 권한(예: 검토자 및 공동 작성자)을 더 쉽게 선택할 수 있습니다. 사용 권한 및 권한 수준에 대한 자세한 내용은 [Azure Rights Management에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md)을 참조하세요.
 
-이러한 권한을 구성할 때 사용자의 역할도 지정합니다.
+이러한 권한을 구성할 때 사용자의 역할을 지정할 수 있습니다.
 
 - **Azure Active Directory를 사용하는 자체 조직 또는 다른 조직의 사용자**: Azure AD 사용자 계정, Azure AD 그룹 또는 해당 조직의 모든 사용자를 지정할 수 있습니다. 
 
@@ -35,12 +35,16 @@ Azure Information Protection을 사용하면 권한 부여된 사용자의 공�
     
     Microsoft 계정으로 문서를 열려면 사용자가 Office 2016 간편 실행을 사용해야 합니다. 다른 Office 버전은 Microsoft 계정으로 Office 보호 문서를 여는 기능을 아직 지원하지 않습니다.
 
+- **인증된 사용자의 경우**: 이 옵션은 사용자를 인증할 수 있는 경우 보호된 문서에 액세스하는 사용자를 제어하지 않아도 되는 경우에 적합합니다. 이 인증은 Azure AD, Microsoft 계정 사용 또는 콘텐츠가 Office 365 메시지 암호화의 새 기능으로 보호되는 경우 페더레이션 소셜 공급자나 일회용 암호를 통해 수행될 수 있습니다. 
+
 관리자는 권한과 권한 부여된 사용자를 적용하도록 Azure Information Protection 레이블을 구성할 수 있습니다. 이 구성을 사용하면 세부 정보를 지정할 필요 없이 레이블을 적용하면 되므로 사용자와 다른 관리자가 올바른 보호 설정을 매우 쉽게 적용할 수 있습니다. 다음 섹션에서는 내부 및 외부 사용자와 보안 공동 작업을 지원하는 문서를 보호하는 예제 연습을 제공합니다.
 
 
 ## <a name="example-configuration-for-a-label-to-apply-protection-to-support-internal-and-external-collaboration"></a>내부 및 외부 공동 작업을 지원하기 위해 보호를 적용하는 레이블의 예제 구성
 
-이 예제에서는 조직의 사용자가 Office 365 또는 Azure AD가 있는 다른 조직의 모든 사용자, Office 365 또는 Azure AD가 있는 다른 조직의 그룹 및 Azure AD에 계정이 없고 대신 Gmail 메일 주소를 사용하는 사용자와 문서에 대한 공동 작업을 할 수 있도록 보호를 적용하는 기존 레이블을 구성하는 작업을 연습합니다. 
+이 예제에서는 조직의 사용자가 Office 365 또는 Azure AD가 있는 다른 조직의 모든 사용자, Office 365 또는 Azure AD가 있는 다른 조직의 그룹 및 Azure AD에 계정이 없고 대신 Gmail 메일 주소를 사용하는 사용자와 문서에 대한 공동 작업을 할 수 있도록 보호를 적용하는 기존 레이블을 구성하는 작업을 연습합니다.
+
+이 시나리오에서는 특정 사용자에 대한 액세스 권한을 제한하므로 인증된 사용자에 대한 설정은 포함되지 않습니다. 이 설정으로 레이블을 구성하는 방법에 대한 예는 [예제 5: 콘텐츠를 암호화하지만 액세스할 수 있는 사용자는 제한하지 않는 레이블](../deploy-use/configure-policy-protection.md#example-5-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it)을 참조하세요.  
 
 1. 전역 정책 또는 범위 지정 정책에서 기존에 있는 레이블을 선택합니다. **보호** 블레이드에서 **Azure(클라우드 키)** 가 선택되었는지 확인합니다.
     
@@ -62,11 +66,11 @@ Azure Information Protection을 사용하면 권한 부여된 사용자의 공�
         
     ![보안 공동 작업을 위한 권한 구성](../media/collaboration-permissions.png)
 
-
-
 5. **사용 권한 추가** 블레이드에서 **확인**을 클릭합니다.
 
-6. **보호** 블레이드에서 **확인**을 클릭합니다. 
+6. **보호** 블레이드에서 **확인**을 클릭합니다.
+
+7. **레이블** 블레이드에서 **저장**을 선택합니다. 
 
 ## <a name="applying-the-label-that-supports-secure-collaboration"></a>보안 공동 작업을 지원하는 레이블 적용
 
@@ -98,8 +102,9 @@ Azure Information Protection을 사용하면 권한 부여된 사용자의 공�
 
 ![Azure Information Protection 권한 예제 대화 상자](../media/example-permisisons-popup.png)
 
+참고: Azure Information Protection을 사용하는 외부 사용자가 문서를 열면 레이블의 시각적 표시가 남아 있더라도 Office 응용 프로그램에서 문서에 대한 분류 레이블을 표시하지 않습니다. 대신 외부 사용자가 해당 조직의 분류 체계에 맞춰 자신의 레이블을 적용할 수 있습니다. 그런 다음, 이러한 외부 사용자가 편집된 문서를 사용자에게 다시 보내면 사용자가 문서를 다시 열 때 Office에서 원래 분류 레이블을 표시합니다.
 
-문서가 열리기 전에 다음 인증 흐름 중 하나가 발생합니다.
+보호된 문서가 열리기 전에 다음 인증 흐름 중 하나가 발생합니다.
 
 - Azure AD 계정이 있는 사용자의 경우 Azure AD 자격 증명을 사용하여 Azure AD에서 인증을 받고 문서가 열립니다. 
 
@@ -118,15 +123,19 @@ Azure Information Protection을 사용하면 권한 부여된 사용자의 공�
 
 ### <a name="supported-scenarios-for-opening-protected-documents"></a>보호된 문서를 열기 위해 지원되는 시나리오
 
-다음 표에서는 보호된 문서를 열고 편집하기 위해 지원되는 여러 인증 방법을 요약합니다.
+다음 표에서는 보호된 문서를 보고 편집할 수 있도록 지원하는 여러 인증 방법을 요약합니다.
 
-또한 iOS 및 Android용 Azure Information Protection 뷰어는 Microsoft 계정을 사용하여 볼 수 있도록 파일을 열 수 있습니다.
+또한 다음 시나리오에서는 문서 보기를 지원합니다.
 
-|문서 열기 및 편집을 위한 플랫폼: <br />Word, Excel, PowerPoint|인증 방법:<br />Azure AD|인증 방법:<br />Microsoft 계정|
+- Windows용은 물론 iOS 및 Android용 Azure Information Protection 뷰어는 Microsoft 계정을 사용하여 파일을 열 수 있습니다. 
+
+- 소셜 공급자와 일회용 암호가 Exchange Online 인증 및 Office 365 메시지 암호화의 새로운 기능에 사용되는 경우, 브라우저에서 보호된 첨부 파일을 열 수 있습니다. 
+
+|문서 보기 및 편집을 위한 플랫폼: <br />Word, Excel, PowerPoint|인증 방법:<br />Azure AD|인증 방법:<br />Microsoft 계정|
 |---------------|----------|-----------|-----------|
 |Windows|예 [[1]](#footnote-1)|예 [[2]](#footnote-2)|
 |iOS|예 [[1]](#footnote-1)|아니요|
-|Android|예 [[1]](#footnote-1)|아니요 |
+|Android|예 [[1]](#footnote-1)|아니요|
 |MacOS|예 [[1]](#footnote-1)|아니요|
 
 ###### <a name="footnote-1"></a>각주 1
@@ -134,6 +143,8 @@ Azure Information Protection을 사용하면 권한 부여된 사용자의 공�
 
 ###### <a name="footnote-2"></a>각주 2
 현재 Office 2016 간편 실행에서만 지원됩니다.
+
+
 
 
 ## <a name="next-steps"></a>다음 단계

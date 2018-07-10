@@ -4,7 +4,7 @@ description: Azure Information Protection를 사용한 분류 및 레이블 지�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/30/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 24e99c6645832bcddbbf881a2b5728af3589f1e5
-ms.sourcegitcommit: b17432ed155394111c878eb57b5fa7adf9df9755
+ms.openlocfilehash: 0b8c0ecbf85a49101372c741c534b3b1e35c8dde
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/03/2018
-ms.locfileid: "30297737"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37069107"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
@@ -59,17 +59,13 @@ Azure Information Protection의 [사용자 의견 사이트](https://msip.uservo
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
 
-아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블에 보호를 적용하는 경우 해당 보호는 첨부 파일에 적용됩니다.
+아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블이 보호를 적용하는 경우 해당 보호는 Office 첨부 파일에 적용됩니다.
 
 ## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
 
 Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 
 
-- Word 문서(.doc 및 .docx), Excel 스프레드시트(.xls 및 .xlsx), PowerPoint 프레젠테이션(.ppt 및 .pptx) 및 PDF 문서(.pdf)의 경우 이 메타데이터는 **MSIP_Label_\<GUID>_Enabled=True** 사용자 지정 속성에 저장됩니다.  
-
-- 전자 메일에서 이 정보는 x- 헤더(**msip_labels: MSIP_Label_\<GUID>_Enabled=True;**)에 저장됩니다.  
-
-레이블에 대한 GUID를 확인하려면 Azure Portal에서 Azure Information Protection 정책을 보거나 구성할 때 [레이블] 블레이드에서 레이블 ID 값을 찾습니다. 레이블이 적용된 파일의 경우 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet을 실행하여 GUID(MainLabelId 또는 SubLabelId)를 확인할 수도 있습니다. 레이블에 하위 레이블이 있는 경우 항상 부모 레이블이 아니라 하위 레이블의 GUID만 지정합니다.
+이 메타데이터를 Exchange Online 메일 흐름 규칙에 사용하는 방법에 대한 자세한 내용 및 예제는 [Azure Information Protection 레이블에 대한 Exchange Online 메일 흐름 규칙 구성](../deploy-use/configure-exo-rules.md)을 참조하세요.
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
 

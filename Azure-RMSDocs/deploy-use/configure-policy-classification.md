@@ -4,18 +4,18 @@ description: 레이블에 대한 조건을 구성할 때 문서 또는 메일에
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 053d8dfd51d8c79cdc733f4395226c12ab6e2102
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: c7ef58cd42a793cacb3b64aec33d2cd0a0b105f4
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326755"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37068884"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -44,7 +44,7 @@ ms.locfileid: "32326755"
     
     이전에 수동으로 레이블이 지정되거나 더 높은 분류에서 이전에 자동으로 레이블이 지정된 문서 및 전자 메일에 자동 분류를 사용할 수 없습니다. 
 
-- 권장 분류는 문서가 저장될 때 Word, Excel 및 PowerPoint에 적용됩니다. Outlook에 권장 분류를 사용할 수 없습니다.
+- 권장 분류는 문서가 저장될 때 Word, Excel 및 PowerPoint에 적용됩니다. 현재 미리 보기에 있는 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)을 구성하지 않으면 Outlook에 권장 분류를 사용할 수 없습니다.
     
     이전에 더 높은 분류로 레이블이 지정된 문서에는 권장 분류를 사용할 수 없습니다. 
 

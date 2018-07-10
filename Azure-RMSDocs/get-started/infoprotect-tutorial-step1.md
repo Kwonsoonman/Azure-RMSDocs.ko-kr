@@ -4,17 +4,18 @@ description: Azure Information Protection을 빠르게 사용해 보기 위한 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: f6dbb143-96f7-4a9c-8208-be9280d69de9
-ms.openlocfilehash: 5dcc63f6ffbd7402c94258fe0d8677908c603e1f
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: f5daff0083e653a9a4a4b2bdeb96daa85075428b
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562061"
 ---
 # <a name="step-1-activate-protection"></a>1단계: 보호 활성화
  
@@ -33,14 +34,14 @@ ms.lasthandoff: 04/23/2018
     
     전역 관리자가 아닌 경우 **Information Protection 관리자** 또는 **보안 관리자**와 같은 다음 [관리 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) 중 하나를 사용할 수 있습니다.
 
-2. 허브 메뉴에서 **리소스 만들기**를 클릭한 다음, **MARKETPLACE** 목록에서 **보안 + ID**를 선택합니다. 
+2. 허브 메뉴에서 **리소스 만들기**를 선택한 다음, Marketplace 검색 상자에 **Azure Information Protection**을 입력합니다. 
     
-3.  **보안 + ID** 블레이드의 **추천 앱** 목록에서 **Azure Information Protection**을 선택합니다. 그런 다음 **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.
-    
-    이 작업은 다음에 포털에 로그인할 때 허브의 **모든 서비스** 목록에서 서비스를 선택할 수 있도록 **Azure Information Protection** 블레이드를 만듭니다. 
+3. 결과 목록에서 **Azure Information Protection**을 선택합니다. **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.
     
     > [!TIP] 
-    > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
+    > 또는 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
+    
+    다시 **만들기**를 클릭합니다.
 
 4. 서비스에 처음으로 연결할 때 자동으로 열리는 **빠른 시작** 페이지의 정보를 확인하세요. 나중에 이 페이지로 돌아올 수 있습니다. 이 자습서의 경우 **관리** > **보호 활성화**를 선택합니다. 
 

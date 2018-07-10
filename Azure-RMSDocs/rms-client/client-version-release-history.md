@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ff64b5bb4f73533352aa5497a98263c86842800
-ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
+ms.openlocfilehash: 732eb98b1cbd1af575f15ddc992349d77b436131
+ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34423258"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37088262"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -25,11 +25,13 @@ ms.locfileid: "34423258"
 
 Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 
 
-[Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 GA 릴리스 버전과 현재 미리 보기 버전을 다운로드할 수 있습니다. 이러한 버전은 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에도 포함되어 있으므로, WSUS, Configuration Manager 또는 Microsoft Update를 사용하는 다른 소프트웨어 배포 메커니즘을 사용하여 클라이언트를 배포할 수 있습니다.
+[Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 일반 공급 릴리스 버전과 현재 미리 보기 버전(사용 가능한 경우)을 다운로드할 수 있습니다. 일반 공급 버전은 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에도 포함되어 있으므로, WSUS, Configuration Manager 또는 Microsoft 업데이트를 사용하는 다른 소프트웨어 배포 메커니즘을 사용하여 클라이언트를 업그레이드할 수 있습니다.
+
+자세한 내용은 [Azure Information Protection 클라이언트 업그레이드 및 유지 관리](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)를 참조하세요.
 
 ### <a name="servicing-information-and-timelines"></a>서비스 정보 및 타임라인
 
-Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전은 후속 GA 버전이 릴리스된 후 최대 6개월 동안 지원됩니다. 지원되지 않는 버전의 클라이언트는 이 페이지에 포함되지 않습니다. 수정 사항 및 새로운 기능은 항상 최신 GA 버전에 적용되며, 이전의 GA 버전에는 적용되지 않습니다.
+Azure Information Protection 클라이언트의 각 GA(일반 공급) 버전은 후속 GA 버전이 릴리스된 후 최대 6개월 동안 지원됩니다. 지원되지 않는 버전의 클라이언트는 이 페이지에 포함되지 않습니다. 수정 사항 및 새로운 기능은 항상 최신 GA 버전에 적용되며, 이전의 GA 버전에는 적용되지 않습니다.
 
 미리 보기 버전을 프로덕션 네트워크의 최종 사용자에게 배포해서는 안 됩니다. 대신 최신 미리 보기 버전을 통해 다음 GA 버전에서 제공되는 새로운 기능 또는 수정 사항을 확인하고 사용해 볼 수 있습니다. 현재 존재하지 않는 미리 보기 버전은 지원되지 않습니다.
 
@@ -42,19 +44,34 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 >  
 > 기술 지원의 경우 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
 
-## <a name="versions-later-than-12660"></a>1.26.6.0 이상 버전
+## <a name="version-12950"></a>버전 1.29.5.0 
 
-1.26.6.0 이상 버전의 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다. 
- 
-**릴리스 날짜**: 2018년 5월 21일 
+**릴리스 날짜**: 2018년 6월 26일
 
-현재 미리 보기 버전은 **1.27.48.0**이며 클라이언트의 현재 GA 버전 이후에 다음과 같이 변경되었습니다.  
+이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.3403.1224가 포함되어 있습니다.
+
+**수정 사항**:
+
+- Outlook 버전 16.0.9324.1000 이상(간편 실행)의 경우 Azure Information Protection 표시줄은 이전에 Outlook 응용 프로그램 외부에 표시줄을 표시할 수 있는 최신 모니터 표시 옵션을 지원합니다.
+
+- 이제 [Office 응용 프로그램 유형별](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)로 구성한 시각적 표시가 이전에 Azure Information Protection 레이블에 의해 적용된 헤더 또는 바닥글을 대체합니다.
+
+- Excel 파일에 이미 레이블이 지정되어 있고 레이블이 시각적 표시를 적용하는 경우 이제 새 시트에도 레이블의 시각적 표시가 적용됩니다.
+
+- 고급 클라이언트 설정을 사용함으로써 [기존 사용자 지정 속성을 사용하여 Office 문서에 레이블을 지정](client-admin-guide-customizations.md#label-an-office-document-by-using-an-existing-custom-property)하면 자동 레이블 지정이 수동 레이블 지정을 재정의하지 않습니다.
+
+
+## <a name="version-127480"></a>버전 1.27.48.0
+
+**릴리스 날짜**: 2018년 5월 30일
+
+이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.3403.1224가 포함되어 있습니다.
 
 **새로운 기능**: 
 
 - Azure Information Protection 스캐너:
     
-    - 스캐닝에서 포함 또는 제외할 파일 형식 목록을 지정할 수 있습니다. 이 목록을 지정하려면 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)를 사용합니다. 파일 형식 목록을 지정한 후 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)을 사용하여 새 파일 형식을 목록에 추가하고 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType)을 사용하여 목록에서 파일 형식을 제거할 수 있습니다.
+    - 스캐닝에서 포함 또는 제외할 파일 형식 목록을 지정할 수 있습니다. 이 목록을 지정하려면 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)를 사용합니다. 파일 형식 목록을 지정한 후 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)를 사용하여 새 파일 형식을 목록에 추가하고 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)를 사용하여 목록에서 파일 형식을 제거할 수 있습니다.
     
     - 기본 레이블을 적용하면 콘텐츠를 검사하지 않고 파일에 레이블을 지정할 수 있습니다. [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository) cmdlet을 사용하여 *MatchPolicy* 매개 변수를 **Off**로 설정합니다. 
     
@@ -69,6 +86,8 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 **추가 변경 내용**:
 
 - Azure Information Protection 스캐너: 
+    
+    - 이전 버전의 스캐너를 설치한 경우 Azure Information Protection 클라이언트를 업그레이드한 후 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)로 스캐너 설치 명령을 다시 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 스캐너를 다시 설치하면 보고서에 필요한 스캐너 데이터베이스에 대한 삭제 권한이 스캐너 서비스 계정에 부여됩니다.    
     
     - [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)의 *ScanMode* 매개 변수 이름이 **Enforce**로 바뀌고 값으로 Off 및 On을 사용합니다.
     
@@ -128,7 +147,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - 문서와 이메일을 보호할 수 있도록 부트스트랩은 Office 64비트에서 성공합니다.
 
-- 이제 Word, Excel, PowerPoint 및 파일 탐색기에 대한 사용자 정의 사용 권한에 대한 레이블을 구성하고, 고급 클라이언트 설정을 사용하여 사용자 지정 사용 권한 옵션을 숨길 수도 있습니다. [추가 정보](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
+- 이제 Word, Excel, PowerPoint 및 파일 탐색기에 대한 사용자 정의 권한에 대해 레이블을 구성하고, 고급 클라이언트 설정을 사용하여 사용자 지정 권한 옵션을 숨길 수도 있습니다. [추가 정보](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
 
 - Azure Information Protection 정책의 시각적 표시가 클라이언트에 설치되어 있지 않은 글꼴 이름에 대해 구성된 경우 Calibri 글꼴로 대체합니다.
 
@@ -136,10 +155,13 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Office 앱의 경우 성능 및 메모리 사용을 향상시킵니다.
 
-- 사용자 정의 사용 권한을 사용자 및 HYOK(AD RMS) 보호에 레이블을 구성하는 경우 보호는 더 이상 Azure Rights Management 서비스를 잘못 사용하지 않습니다.
+- 사용자 정의 권한 및 HYOK(AD RMS) 보호에 대해 레이블을 구성하는 경우 보호는 Azure Rights Management 서비스를 더 이상 잘못 사용하지 않습니다.
 
 - 보다 일관된 관리 환경을 위해 하위 레이블은 더 이상 부모 레이블에서 시각적 표시 및 보호 설정을 상속하지 않습니다.
 
+**추가 변경 내용**:
+
+- [클라이언트 사용 현황 로깅](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client )의 경우: 이벤트 ID 102 및 ID 103은 이벤트 ID 101로 대체됩니다.
 
 ## <a name="version-110560"></a>버전 1.10.56.0
 

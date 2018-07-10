@@ -4,7 +4,7 @@ description: Azure Portal에서 권한 관리 템플릿을 구성하고 관리�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d26b69bc06a4c0d4f9c097e791b8b10bfc9feb1d
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 44c1166ce4205d6e77b4877d6aca0eaf16911530
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562146"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
@@ -96,9 +97,6 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Azure Information Protection 정책에서 템플릿을 구성하려면
 
->[!NOTE]
-> 이러한 지침은 Azure Portal의 최신 업데이트를 반영합니다. **분류** 메뉴 옵션이 표시되지 않고 **게시** 옵션이 계속 표시되면 탐색 지침이 표시되는 내용과 정확하게 일치하지 않습니다. 이 경우 테넌트가 최신 변경 내용에 대해 업데이트되는 며칠 후에 이 절차를 다시 시도하는 것이 좋습니다.
-
 1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. 그런 다음, **Azure Information Protection - 레이블** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
@@ -138,14 +136,11 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 ## <a name="to-create-a-new-template"></a>새 템플릿을 만들려면
 
->[!NOTE]
-> 이러한 지침은 Azure Portal의 최신 업데이트를 반영합니다. **분류** 메뉴 옵션이 표시되지 않고 **게시** 옵션이 계속 표시되면 탐색 지침이 표시되는 내용과 정확하게 일치하지 않습니다. 이 경우 테넌트가 최신 변경 내용에 대해 업데이트되는 며칠 후에 이 절차를 다시 시도하는 것이 좋습니다.
-
 **Azure(클라우드 키)** 의 보호 설정을 사용하여 새 레이블을 만들 경우 이 동작은 내부적으로 Rights Management 템플릿과 통합되는 서비스 및 응용 프로그램에서 액세스할 수 있는 새 사용자 지정 템플릿을 만듭니다.
 
 1. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 **새 블레이드 추가**를 선택합니다.
 
-2. **레이블** 블레이드에서 이 새 템플릿을 게시하려면 기본값인 **사용**: **설정**을 그대로 두고, 템플릿을 보관된 상태로 만들려면 **해제**로 변경합니다. 그런 후 템플릿 이름 및 설명으로 레이블 이름과 설명을 입력합니다.
+2. **레이블** 블레이드에서 기본값인 **사용**: **켜기**를 유지한 다음, 템플릿 이름 및 설명으로 레이블 이름과 설명을 입력합니다.
 
 3. **이 레이블을 포함하는 문서 및 메일에 대한 권한 설정**에서 **보호**를 선택하고 **보호**를 선택합니다.
     
@@ -156,19 +151,10 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
     **확인**을 클릭하여 변경 내용을 유지하고 **레이블** 블레이드에서 **저장**을 클릭합니다.
     
     이제 **Azure Information Protection - 레이블** 블레이드의 **보호** 열에 새 레이블이 표시되어 보호 설정을 포함한다는 것을 나타냅니다. 이러한 보호 설정은 Azure Rights Management 서비스를 지원하는 응용 프로그램 및 서비스에 템플릿으로 표시됩니다.
+    
+    기본적으로 레이블을 사용하도록 설정되어 있지만, 템플릿은 보관됩니다. 그러므로 응용 프로그램 및 서비스에서 템플릿을 사용하여 문서 및 메일을 보호하고, 마지막 단계를 완료하여 템플릿을 게시할 수 있습니다.
 
-5. 새로 만들어진 템플릿을 일부 사용자가 사용할 수 없는 경우에는 새로 만들어진 레이블을 전역 정책 이외의 정책에 추가해야 합니다.
-    
-    a. **분류** > **정책** 메뉴 옵션에서 **정책**을 선택합니다.
-    
-    b. **새 정책 추가**를 선택한 다음, **정책** 블레이드에서 사용자 범위 이름 및 설명을 지정합니다. 그러고 나서 다음 옵션을 사용하여 사용자의 하위 집합을 선택합니다. **이 정책을 가져올 사용자 또는 그룹을 선택합니다. 메일을 사용하도록 설정된 그룹이어야 합니다.**
-    
-    또는 사용자의 하위 집합에 대한 기존 정책이 있는 경우에는 **정책** 블레이드에서 해당 정책을 선택합니다.
-    
-    c. **정책** 블레이드에서 **레이블 추가 또는 제거**를 선택합니다. 그런 다음, **정책: 레이블 추가 또는 제거** 블레이드에서 보호 설정을 포함하는 새로 만들어진 레이블을 선택하고 **확인**을 클릭합니다.
-    
-    d. **정책** 블레이드로 돌아가서 **저장**을 클릭합니다.  
-
+5. **분류** > **정책** 메뉴 옵션에서 새 보호 설정을 포함하는 정책을 선택합니다. 그런 다음, **레이블 추가 또는 제거**를 선택합니다. **정책: 레이블 추가 또는 제거** 블레이드에서 보호 설정을 포함하는 새로 만든 레이블을 선택하고 **확인**을 선택한 다음, **저장**을 선택합니다.
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -4,7 +4,7 @@ description: 조직에서 이 정보 보호 솔루션을 지원하는 응용 프
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/21/2018
+ms.date: 06/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,15 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7c257b16737a916d597be858fcfeaf6c475bb423
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 8e8a5062efe3b14f1867cf8440dc91c368a810f5
+ms.sourcegitcommit: 6bdc1e5c328ad3b63aeb6f60ba9905551261a7a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/30/2018
+ms.locfileid: "37137783"
 ---
 # <a name="activating-azure-rights-management"></a>Azure 권한 관리 활성화
 
->*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
 > 이 구성 정보는 조직의 모든 사용자에게 적용되는 서비스를 담당하는 관리자를 위해 작성되었습니다. 특정 응용 프로그램용 Rights Management 기능을 사용하기 위한 사용자 도움말 및 정보 또는 권한으로 보호된 파일 또는 메일을 여는 방법에 대한 정보를 원하는 경우 응용 프로그램을 함께 제공되는 지침 및 도움말을 사용하세요.
@@ -36,11 +37,13 @@ Azure Information Protection용 Azure Rights Management 서비스가 조직에 �
 
 Azure Rights Management가 포함된 서비스 계획을 가지고 있는 경우, 서비스를 활성화하지 않아도 됩니다.
 
-- Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 **2018년 2월** 말 이후에 얻은 경우 서비스가 자동으로 활성화됩니다. 사용자 또는 조직의 다른 전역 관리자가 Azure Rights Management를 비활성하지 않으면 서비스를 활성화할 필요가 없습니다.
+- **Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 2018년 2월 말경 또는 그 이후에 얻은 경우:** 서비스가 자동으로 활성화됩니다. 사용자 또는 조직의 다른 전역 관리자가 Azure Rights Management를 비활성하지 않으면 서비스를 활성화할 필요가 없습니다.
 
-- 이번 달 전에 구독을 얻은 경우 직접 서비스를 활성화해야 합니다. 
+- **Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 2018년 2월 이전 또는 2월 중에 얻은 경우:** 테넌트가 Exchange Online을 사용하는 경우 Microsoft에서 이러한 구독에 대해 Azure Rights Management 서비스를 활성화하기 시작합니다. 이러한 구독의 경우 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)을 실행할 때 **AutomaticServiceUpdateEnabled**가 **false**로 설정되지 않는 한 서비스가 활성화될 때 2018년 8월 1일에 자동 활성화가 롤아웃되기 시작합니다. 
 
-Azure Information Protection의 Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자는 해당 파일에 정보 보호를 적용할 수 있으며 모든 사용자가 Azure Rights Management 서비스로 보호되는 파일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
+후속 시나리오 중 어느 것도 적용되지 않는 경우 보호 서비스를 수동으로 활성화해야 합니다. 
+
+서비스가 활성화되면 조직의 모든 사용자가 해당 문서 및 메일에 정보 보호를 적용할 수 있으며, 모든 사용자가 Azure Rights Management 서비스로 보호되는 문서 및 메일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
 
 ## <a name="how-to-activate-or-confirm-the-status-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 상태를 활성화하거나 확인하는 방법 
 
@@ -53,7 +56,7 @@ Azure Information Protection의 Azure Rights Management 서비스가 활성화�
 
 - [Rights Management가 포함된 Office 365 요금제](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
-Azure Information Protection의 Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자는 해당 파일에 정보 보호를 적용할 수 있으며 모든 사용자가 Azure Rights Management 서비스로 보호되는 파일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
+Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자가 해당 문서 및 메일에 정보 보호를 적용할 수 있으며, 모든 사용자가 Azure Rights Management 서비스로 보호되는 문서 및 메일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
 
 ## <a name="choosing-your-activation-method"></a>정품 인증 방법 선택
 
@@ -74,7 +77,7 @@ Azure Information Protection의 Azure Rights Management 서비스가 활성화�
 4. 서비스를 활성화하려면 [Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)을 실행합니다.
 
 ## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>단계적 배포용 등록 컨트롤 구성
-일부 사용자만 Azure Rights Management를 사용하여 즉시 파일을 보호할 수 있게 하려면 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 명령을 사용하여 사용자 등록 컨트롤을 구성할 수 있습니다. Azure Rights Management 서비스를 활성화하기 전이나 후에 이 명령을 실행할 수 있습니다.
+일부 사용자만 Azure Rights Management를 사용하여 즉시 문서 및 메일을 보호할 수 있게 하려면 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 명령을 사용하여 사용자 온보딩 컨트롤을 구성할 수 있습니다. Azure Rights Management 서비스를 활성화하기 전이나 후에 이 명령을 실행할 수 있습니다.
 
 > [!IMPORTANT]
 > 이 명령을 사용하려면 **2.1.0.0** 버전 이상의 [Azure Rights Management PowerShell 모듈](https://go.microsoft.com/fwlink/?LinkId=257721)이 있어야 합니다.
@@ -103,7 +106,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 
 이 cmdlet 및 추가 예제에 대한 자세한 내용은 [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy) 도움말을 참조하세요.
 
-이러한 등록 컨트롤을 사용할 경우 조직의 모든 사용자는 항상 하위 사용자가 보호하는 보호된 콘텐츠를 사용할 수 있지만 클라이언트 응용 프로그램에서 자체적으로 정보 보호를 적용할 수는 없습니다. 예를 들어 Azure Rights Management 서비스가 활성화되면 자동으로 게시된 기본 템플릿 또는 사용자가 구성할 수 있는 사용자 지정 템플릿이 Office 클라이언트에 표시되지 않습니다.  Exchange 등의 서버 쪽 응용 프로그램은 같은 결과를 달성하기 위해 Rights Management 통합을 위한 자체 사용자별 컨트롤을 구현할 수 있습니다.
+이러한 등록 컨트롤을 사용할 경우 조직의 모든 사용자는 항상 하위 사용자가 보호하는 보호된 콘텐츠를 사용할 수 있지만 클라이언트 응용 프로그램에서 자체적으로 정보 보호를 적용할 수는 없습니다. 예를 들어 Azure Rights Management 서비스가 활성화되면 자동으로 게시된 기본 템플릿 또는 사용자가 구성할 수 있는 사용자 지정 템플릿이 Office 클라이언트에 표시되지 않습니다. Exchange 등의 서버 쪽 응용 프로그램은 같은 결과를 달성하기 위해 Rights Management 통합을 위한 자체 사용자별 컨트롤을 구현할 수 있습니다.
 
 
 ## <a name="next-steps"></a>다음 단계

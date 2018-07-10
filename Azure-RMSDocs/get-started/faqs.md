@@ -4,7 +4,7 @@ description: Azure Information Protection과, 데이터 보호 서비스인 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 54106b67888f8c8a669d2c93e60f9967d484ebf3
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: f0ae817fb8b60b0086d2684b620fa17da970f8e8
+ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37043355"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -59,7 +60,7 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
     
     사용자에게 이 관리 역할을 할당하려면 [Azure Active Directory에서 사용자에게 관리자 역할 할당](/azure/active-directory/active-directory-users-assign-role-azure-portal)을 참조하세요. 이 역할이 있는 사용자에게 어떤 다른 권한이 있는지 보려면 Azure Active Directory 설명서의 [사용 가능한 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) 섹션을 참조하세요.
 
-- Azure Rights Management **전역 관리자** 및 **커넥터 관리자**: 이러한 Azure Rights Management 관리자 역할의 경우, 첫 번째 역할은 다른 클라우드 서비스의 전역 관리자가 되지 않고 모든 [AADRM 모듈의 PowerShell cmdlet](../deploy-use/administer-powershell.md)을 실행할 권한을 사용자에게 부여하고 두 번째 역할은 RMS(Rights Management) 커넥터만 실행하는 권한을 부여합니다. 이러한 관리 역할은 모두 관리 콘솔에 권한을 부여하지 않습니다.
+- Azure Rights Management **전역 관리자** 및 **커넥터 관리자**: 이러한 Azure Rights Management 관리자 역할의 경우, 첫 번째 역할은 다른 클라우드 서비스의 전역 관리자가 되지 않고 모든 [AADRM 모듈의 PowerShell cmdlet](../deploy-use/administer-powershell.md)을 실행할 권한을 사용자에게 부여하고 두 번째 역할은 RMS(Rights Management) 커넥터만 실행하는 권한을 부여합니다. 이러한 관리 역할은 관리 콘솔에 대한 권한을 부여하거나 문서 추적 사이트에서 관리자 모드를 사용하도록 권한을 부여하지 않습니다.
 
     이러한 관리 역할 중 하나를 할당하려면 AADRM PowerShell cmdlet, [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator)를 사용합니다.
 
@@ -120,6 +121,7 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 |--------------------------------|-------------------------------------|
 |지원되는 데이터 저장소: <br /><br />- Windows Server의 로컬 폴더|지원되는 데이터 저장소: <br /><br />- Windows Server의 로컬 폴더<br /><br />- Windows 파일 공유 및 네트워크 연결 저장소<br /><br />- SharePoint Server 2016 및 SharePoint Server 2013|
 |작동 모드: <br /><br />- 실시간|작동 모드: <br /><br />- 데이터 저장소를 체계적으로 탐색하고 이 주기를 한 번 또는 반복적으로 실행할 수 있습니다.|
+|파일 형식에 대한 지원: <br /><br />- 기본적으로 모든 파일 형식이 보호됩니다. <br /><br />- 레지스트리를 편집하여 특정 파일 형식을 보호에서 제외할 수 있습니다.|파일 형식에 대한 지원: <br /><br />- 기본적으로 Office 파일 형식이 보호됩니다. <br /><br />- 레지스트리를 편집하여 특정 파일 형식을 보호에 포함할 수 있습니다.|
 
 현재 로컬 폴더 또는 네트워크 저장소에서 보호되는 파일에 대한 [Rights Management 소유자](../deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)를 설정할 때는 차이점이 있습니다. 기본적으로 두 솔루션 모두에서 Rights Management 소유자는 파일을 보호하는 계정으로 설정되지만 이 설정을 재정의할 수 있습니다.
 

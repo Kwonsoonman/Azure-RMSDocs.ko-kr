@@ -4,7 +4,7 @@ description: Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/18/2018
+ms.date: 06/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9cdb205488c300f1df1e002be105765a90ce1a1a
-ms.sourcegitcommit: 09072591f1aa9878d063feb78ffcc4accec63fd1
+ms.openlocfilehash: 18168f89c762011146f7f3f131079f5a502820ac
+ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/18/2018
-ms.locfileid: "34308174"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37069379"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -34,7 +34,7 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하려면 [Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 기능 목록을 검토합니다.
 
 > [!TIP]
-> 개인 이메일 주소에 보호된 이메일을 보내려면, Office 365 계획 또는 Exchange Online 독립 실행형 계획이 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 지원하는지 확인하세요. 예: Gmail, Yahoo 및 Microsoft 다음 리소스를 확인합니다.
+> 개인 이메일 주소에 보호된 메일을 보내려면, Office 365 계획 또는 Exchange Online 독립 실행형 계획이 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 지원하는지 확인하세요. 예: Gmail, Yahoo 및 Microsoft 다음 리소스를 확인합니다.
 >
 > [Exchange Online 서비스 설명](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
 >
@@ -83,6 +83,8 @@ MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 �
 나열된 서버 버전의 경우 Azure Information Protection 클라이언트가 원격 데스크톱 서비스에 대해 지원됩니다. 원격 데스크톱 서비스와 함께 Azure Information Protection 클라이언트를 사용할 때 사용자 프로필을 삭제하는 경우 **%Appdata%\Microsoft\Protect** 폴더는 삭제하지 마세요.
 
 Azure Information Protection 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 [동일한 장치](requirements-client-devices.md)에서 이 데이터를 사용할 수 있습니다.
+
+Azure Information Protection 클라이언트에는 관리자 가이드에 나열된 [추가적인 전제 조건](../rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)이 있습니다.
 
 ## <a name="applications"></a>응용 프로그램
 

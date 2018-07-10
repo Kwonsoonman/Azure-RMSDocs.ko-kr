@@ -4,7 +4,7 @@ description: 새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Micr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 05/31/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3ed8c53c235520d53c3d0a3666aa4aba45c174f5
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: f6b65ef43535152e03d456533b48e2c792cedd48
+ms.sourcegitcommit: 2e85f87f7276b284b4f17de1d4e752c790eff651
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34686679"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 05/03/2018
 |----------------|---------------|
 |가장 자주 사용되는 문서보기|상위 5개 페이지 읽기:<br /><br /> - [Azure Information Protection이란?](../understand-explore/what-is-information-protection.md)<br /> - [사용자를 위해 Azure Information Protection 클라이언트 설치](../rms-client/client-admin-guide-install.md)<br />- [Azure Information Protection에 대한 요구 사항](requirements.md) <br />- [Azure Information Protection 스캐너 배포](../deploy-use/deploy-aip-scanner.md)<br />- [기본 Azure Information Protection 정책](../deploy-use/configure-policy-default.md)|
 |제품 팀 및 동료와의 소통|Azure Information Protection에 대한 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 방문하세요.|
-|새로운 기능 또는 기능 변경 요청|Azure Information Protection에 대한 [사용자 의견 사이트](https://msip.uservoice.com)에 방문하세요.|
+|새로운 기능 또는 기능 변경 요청|Azure Information Protection에 대한 내용을 다루는 [UserVoice](https://msip.uservoice.com) 사이트를 방문하여 회사 메일 주소를 사용하여 로그인하세요.|
 |제품 그룹의 트윗 수신|Twitter에서 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)를 팔로우하세요.|
 |구독 정보 및 지원되는 기능 확인|[Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 사용하세요.|
 

@@ -4,7 +4,7 @@ description: 분류, 레이블 지정 및 보호를 구성하려면 Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 05/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0b95db2e96ca2fc250e7031f394e2e0bd8d4fdef
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 43fade205d4d518f6fc8f5dd7c7280a80d2c7eae
+ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "34562180"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -63,14 +64,14 @@ Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 �
 
 1. Azure Portal에 로그인합니다.
 
-2. 허브 메뉴에서 **리소스 만들기**를 클릭한 다음, **MARKETPLACE** 목록에서 **보안 + ID**를 선택합니다. 
+2. 허브 메뉴에서 **리소스 만들기**를 선택한 다음, Marketplace 검색 상자에 **Azure Information Protection**을 입력합니다. 
     
-3. **보안 + ID** 블레이드의 **추천 앱** 목록에서 **Azure Information Protection**을 선택합니다. 그런 다음 **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.
-    
-    이 작업은 다음에 포털에 로그인할 때 허브의 **모든 서비스** 목록에서 서비스를 선택할 수 있도록 테넌트에 **Azure Information Protection** 블레이드를 만듭니다. 
+3. 결과 목록에서 **Azure Information Protection**을 선택합니다. **Azure Information Protection** 블레이드에서 **만들기**를 클릭합니다.
     
     > [!TIP] 
-    > 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
+    > 또는 다음에 포털에 로그인할 때 서비스 찾아보기 단계를 건너뛸 수 있도록 **대시보드에 고정**을 선택하여 대시보드에 **Azure Information Protection** 타일을 만듭니다.
+    
+    다시 **만들기**를 클릭합니다.
 
 4. 서비스에 처음으로 연결할 때 자동으로 열리는 **빠른 시작** 페이지를 확인하세요. 제안된 리소스를 찾아보거나 다른 메뉴 옵션을 사용합니다. 사용자가 선택할 수 있는 레이블을 구성하려면 다음 절차를 사용합니다.
 

@@ -4,7 +4,7 @@ description: Azure Information Protection에 대한 문서 추적을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/13/2018
+ms.date: 06/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e24d91f04dc3186a9451546c8a962c49129f326b
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: fbf672fbdbc5fcc0538a5c5bac6b656fac3fddc7
+ms.sourcegitcommit: e0a47ccee898b50907374cc74fcfd9abf59cd98d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31008984"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36949769"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>관리자 가이드: Azure Information Protection에 대한 문서 추적 구성 및 사용
 
@@ -76,9 +76,11 @@ Bing 지도에서 사용자 위치를 표시하는 데 사용하는 virtualearth
 
 ## <a name="tracking-and-revoking-documents-for-users"></a>사용자에 대해 문서 추적 및 취소
 
-사용자는 문서 추적 사이트에 로그인하면 Azure Information Protection 클라이언트를 사용하여 보호하거나 Rights Management 공유 응용 프로그램을 사용하여 공유한 문서를 추적 및 취소할 수 있습니다. Azure Information Protection에 대한 관리자(전역 관리자) 권한으로 로그인하면 관리자 아이콘을 클릭하여 관리자 모드로 전환할 수 있습니다. 이 모드에서는 조직의 사용자가 Azure Information Protection 클라이언트를 사용하여 추적하도록 선택하거나 Rights Management 공유 응용 프로그램을 사용하여 공유한 문서를 볼 수 있습니다.
+사용자는 문서 추적 사이트에 로그인하면 Azure Information Protection 클라이언트를 사용하여 보호하거나 Rights Management 공유 응용 프로그램을 사용하여 공유한 문서를 추적 및 취소할 수 있습니다. 테넌트에 대한 Azure AD 전역 관리자로 로그인하면 관리 아이콘을 클릭하여 관리자 모드로 전환할 수 있습니다. 다른 관리자 역할은 문서 추적 사이트에 대해 이 모드를 지원하지 않습니다. 
 
 ![문서 추적 사이트의 관리자 아이콘](../media/tracking-site-admin-icon.png)
+
+관리자 모드에서는 조직의 사용자가 Azure Information Protection 클라이언트를 사용하여 추적하도록 선택하거나 Rights Management 공유 응용 프로그램을 사용하여 공유한 문서를 볼 수 있습니다.
 
 > [!NOTE] 
 > 전역 관리자임에도 이 아이콘이 표시되지 않은 원인은 아직 스스로 문서를 공유하지 않았기 때문입니다. 이 경우에 다음 URL을 사용하여 문서 추적 사이트에 액세스합니다. https://portal.azurerms.com/#/admin

@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 17fa8d2269bce0d6ef01506bcbadafd01fc768b6
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 50eefe938a4d37dc63d2209a71b5a06f84a24587
+ms.sourcegitcommit: b5cefaefdd460ed5249db8747f232972b470c619
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444234"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263320"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -168,9 +168,19 @@ Azure Information Protection 클라이언트는 Office 365가 지원하는 같�
 
 Azure Information Protection 팀은 새로운 기능과 수정을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 공지 사항은 팀의 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 게시됩니다.
 
-실행 파일 또는 Windows Installer 파일을 사용하여 클라이언트를 설치한 경우에는 Microsoft 다운로드 센터에서 새 릴리스를 수동으로 다운로드하여 클라이언트에 대한 업데이트를 설치해야 합니다. Windows 업데이트를 사용하여 클라이언트를 설치하면 릴리스하고 몇 주 후에 카탈로그에서 새 릴리스를 자동으로 다운로드할 수 있게 됩니다. 
+Windows 업데이트를 사용하는 경우 Azure Information Protection 클라이언트는 클라이언트가 설치된 방법과 관계없이 클라이언트의 일반 공급 버전을 자동으로 업그레이드합니다. 새 클라이언트 릴리스는 릴리스 후 몇 주간 카탈로그에 게시됩니다.
+
+또는 [Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 새 릴리스를 다운로드하여 수동으로 클라이언트를 업그레이드할 수 있습니다. 그런 다음, 새 버전을 설치하여 클라이언트를 업그레이드하세요. 미리 보기 버전을 업그레이드하려면 이 방법을 사용해야 합니다.
+
+수동으로 업그레이드할 때 설치 방법을 변경하는 경우에만 이전 버전을 먼저 제거하세요. 예를 들어, 클라이언트의 실행 파일(.exe) 버전을 클라이언트의 Windows Installer(.msi) 버전으로 변경하는 경우입니다. 또는 이전 버전의 클라이언트를 설치해야 하는 경우가 있습니다. 예를 들어, 테스트용으로 설치된 최신 미리 보기 버전이므로 현재 일반 공급 버전으로 되돌려야 합니다.
 
 [버전 릴리스 기록 및 지원 정책](../rms-client/client-version-release-history.md)을 사용하여 Azure Information Protection 클라이언트에 대한 지원 정책, 현재 지원되는 버전 및 지원되는 릴리스의 새로운 기능과 변경된 기능을 이해합니다. 
+
+### <a name="upgrading-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 업그레이드
+
+Azure Information Protection 스캐너를 업그레이드하려면 최신 버전의 Azure Information Protection 클라이언트를 설치하세요.
+
+그런 다음, 이전에 설치된 클라이언트 버전이 1.26.6.0 또는 이전 버전인 경우, [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)를 사용하여 스캐너 설치 명령을 다시 실행하세요. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 스캐너를 다시 설치하면 보고서에 필요한 스캐너 데이터베이스에 대한 삭제 권한이 스캐너 서비스 계정에 부여됩니다.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 제거
 

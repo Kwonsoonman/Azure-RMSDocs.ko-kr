@@ -4,7 +4,7 @@ description: AD RMS에서 Azure Information Protection으로 마이그레이션�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7aaec205863bf855cc68887f3eafed27386ee49f
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 254e3ecc1292d2b9db0e291f9c45af343f3ccb9c
+ms.sourcegitcommit: 93e83ed71250e408e11fb098551e486282494013
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36324308"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>마이그레이션 4단계 - 지원 서비스 구성
 
@@ -30,11 +31,13 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 4단계에는
 ## <a name="step-8-configure-irm-integration-for-exchange-online"></a>8단계: Exchange Online에 대한 IRM 통합 구성
 
 > [!IMPORTANT]
-> 마이그레이션된 사용자가 보호된 이메일에 대해 선택하는 받는 사람을 제어할 수 없으므로 조직의 모든 사용자와 메일 사용이 가능한 그룹은 Azure Information Protection을 통해 사용할 수 있는 Azure AD 계정이 있습니다. [추가 정보](prepare.md)
+> 마이그레이션된 사용자가 보호된 메일에 대해 선택하는 받는 사람을 제어할 수 없으므로 조직의 모든 사용자와 메일 사용이 가능한 그룹은 Azure Information Protection을 통해 사용할 수 있는 Azure AD 계정이 있습니다. [추가 정보](prepare.md)
 
 선택한 Azure Information Protection 테넌트 키 토폴로지와 별개로 다음을 수행하세요.
 
-1. 사용자가 AD RMS 보호를 사용하여 전송된 이메일을 읽을 수 있는지 확인하려면 AD RMS 클러스터에 대한 DNS SRV 레코드가 있는지 확인합니다. 7단계에서 클라이언트 재구성에 대한 DNS SRV 레코드를 만들지 않은 경우 이제 Exchange Online을 지원하도록 이 레코드를 만듭니다. [지침](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
+1. Exchange Online에서 AD RMS에 의해 보호되는 메일을 암호 해독할 수 있으려면 클러스터의 AD RMS URL이 테넌트에서 사용 가능한 키에 해당하는지 알아야 합니다. 이 작업은 Azure Information Protection을 사용하도록 Office 클라이언트를 다시 구성하는 데에도 사용되는 AD RMS 클러스터의 DNS SRV 레코드로 수행됩니다. 7단계에서 클라이언트 재구성에 대한 DNS SRV 레코드를 만들지 않은 경우 이제 Exchange Online을 지원하도록 이 레코드를 만듭니다. [지침](migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)
+    
+    이 DNS 레코드가 제 위치에 있으면 웹 및 모바일 메일 클라이언트에서 Outlook을 사용하는 사용자가 해당 앱에서 AD RMS로 보호된 메일을 볼 수 있으며, Exchange는 AD RMS에서 가져온 키를 사용하여 AD RMS로 보호되는 콘텐츠를 암호 해독, 인덱싱, 저널링 및 보호할 수 있습니다.  
 
 2. Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 명령을 실행합니다. 이 명령을 실행하기 위해 도움말이 필요한 경우 [Exchange Online: IRM 구성](/..deploy-use/configure-office365.md#exchange-online-irm-configuration)에서 단계별 지침을 참조하세요.
     
@@ -63,7 +66,7 @@ AD RMS를 통해 Exchange Server 또는 SharePoint Server의 IRM(정보 권한 �
 
 2. Exchange Server 중 하나에서 다음 PowerShell 명령을 실행하여 사용자가 Azure Rights Management로 보호되는 메일을 읽을 수 있게 합니다.
 
-    이러한 명령을 실행하기 전에 *\<테넌트 URL>*을 해당 Azure Rights Management 서비스 URL로 대체합니다.
+    이러한 명령을 실행하기 전에 *\<테넌트 URL>* 을 해당 Azure Rights Management 서비스 URL로 대체합니다.
 
         $irmConfig = Get-IRMConfiguration
         $list = $irmConfig.LicensingLocation 
@@ -118,12 +121,9 @@ AD RMS를 통해 Exchange Server 또는 SharePoint Server의 IRM(정보 권한 �
 
 #### <a name="registry-edits-for-exchange"></a>Exchange에 대한 레지스트리 편집
 
-모든 Exchange Server의 경우 준비 단계 중에 LicenseServerRedirection에 대해 추가한 레지스트리 값을 제거합니다. 이러한 값은 다음 경로에 추가되었습니다.
+모든 Exchange 서버의 경우, Exchange의 버전에 따라 다음 레지스트리 값을 LicenseServerRedirection에 추가하세요.
 
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
-
-HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
-
+---
 
 Exchange 2013 및 Exchange 2016의 경우 - 레지스트리 편집 1:
 
@@ -147,7 +147,7 @@ Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것
 
 ---
 
-Exchange 2013의 경우 - 레지스트리 편집 2:
+Exchange 2013 - 레지스트리 편집 2:
 
 **레지스트리 경로:**
 

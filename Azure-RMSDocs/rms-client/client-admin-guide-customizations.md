@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c078536a3f8501b52c8980b4d71f9138971a8e05
-ms.sourcegitcommit: b1e739bd911579ab9af09654b5517c4d0a23f482
+ms.openlocfilehash: 8cc13eabc504c876c2118a18f1fb7bdb5bb9cfc4
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36271456"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973497"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -230,7 +230,7 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 이 구성 옵션에는 미리 보기 버전의 클라이언트 또는 Azure Information Protection 스캐너가 필요합니다.
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 

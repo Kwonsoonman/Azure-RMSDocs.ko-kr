@@ -4,7 +4,7 @@ description: AD RMS에서 Azure Information Protection으로 마이그레이션�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 07/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: d954d3ee-3c48-4241-aecf-01f4c75fa62c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ea4c121d8945aabb4bb5a13a043a100e32e5924a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 683609cd2da2d13e11f92599813753a2a4747bd2
+ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206726"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38973374"
 ---
 # <a name="migration-phase-1---preparation"></a>마이그레이션 1단계 - 준비
 

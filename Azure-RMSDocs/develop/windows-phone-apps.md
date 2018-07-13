@@ -14,12 +14,12 @@ ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: e606703aa764f8e4fea009131f41c9394ebb29fb
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: d236eaf4f9027a84a36819b5234a43cfc5674c54
+ms.sourcegitcommit: 55c7461f705a46f385a967753187ba2dda642238
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258805"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38229956"
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 설정
 
@@ -45,7 +45,7 @@ Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 
 API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
-Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx) 가이드에 있는 정보를 검토합니다.
+Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microsoft.com/library/windowsphone/develop/ff402535.aspx) 가이드에 있는 정보를 검토합니다.
 
 ## <a name="configuring-your-development-environment"></a>개발 환경 구성
 
@@ -77,7 +77,7 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 
 [핵심 개념](core-concepts.md)
 
-[Windows Phone 개발](https://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402535.aspx)
+[Windows Phone 개발](https://msdn.microsoft.com/library/windowsphone/develop/ff402535.aspx)
 
 [Windows API 참조](https://msdn.microsoft.com/library/dn891914.aspx)
 

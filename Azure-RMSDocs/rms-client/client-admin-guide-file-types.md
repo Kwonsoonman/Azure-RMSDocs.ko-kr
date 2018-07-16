@@ -4,7 +4,7 @@ description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/21/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 88fa2fa62e4090e962f96868b7c1070114d740c1
-ms.sourcegitcommit: 0437ff841f278f5293a74b3ff7d41f81ccfef414
+ms.openlocfilehash: da4e3a5efec9ba7a19131a1b03fc2ddd5a7651ef
+ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310264"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37935718"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -181,9 +181,9 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 자세한 내용은 개발자 지침에서 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 
 
-## <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 의해 분류 및 보호에서 제외되는 파일 형식
+## <a name="file-types-that-are-excluded-from-classification-and-protection"></a>분류 및 보호에서 제외된 파일 형식
 
-사용자가 컴퓨터 작업에 중요한 파일을 변경하지 못하게 하기 위해 일부 파일 형식 및 폴더가 분류 및 보호에서 자동으로 제외됩니다. 사용자가 이러한 파일을 분류하거나 보호하려고 하면 제외된다는 메시지가 표시됩니다.
+사용자가 컴퓨터 작업에 중요한 파일을 변경하지 못하게 하기 위해 일부 파일 형식 및 폴더가 분류 및 보호에서 자동으로 제외됩니다. 사용자가 Azure Information Protection 클라이언트를 사용하여 이러한 파일을 분류하거나 보호하려고 하면 제외된다는 메시지가 표시됩니다.
 
 - **제외되는 파일 형식**:.lnk,.exe,.com,.cmd,.bat,.dll,.ini,.pst,.sca,.drm,.sys,.cpl,.inf,.drv,.dat,.tmp,.msp,.msi,.pdb,.jar
 
@@ -192,6 +192,18 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
     - 프로그램 파일(\Program Files 및 \Program Files (x86))
     - \ProgramData 
     - \AppData(모든 사용자용)
+
+### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너에 의해 분류 및 보호에서 제외되는 파일 형식
+
+기본적으로 스캐너도 Azure Information Protection 클라이언트와 동일한 파일 형식을 제외합니다. 그러나 다음 PowerShell cmdlet을 사용하여 스캐너의 이 동작을 변경할 수 있습니다.
+
+- [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)
+
+- [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)
+
+- [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)
+
+기본적으로 스캐너는 Office 파일 형식만 보호합니다. 스캐너의 이 동작을 변경하려면 레지스트리를 편집하고 보호할 추가 파일 형식을 지정합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요.
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>기본적으로 보호할 수 없는 파일
 

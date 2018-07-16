@@ -4,26 +4,26 @@ description: Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2018
+ms.date: 07/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 5a9edbb36384af4aee531854b973adfa28362bda
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: c851c2f6af3d355b017c7fbc3de188d15ed16e90
+ms.sourcegitcommit: 7a58d6bec0b504b889980c83e8551301d49e44f4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208127"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37910094"
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-Azure Information Protection(AIP라고도 함)은 클라우드 기반 솔루션으로 조직에서 문서와 메일을 분류하고 레이블을 지정하며 보호하는 데 도움이 됩니다. 이 기능은 규칙 및 조건을 정의하는 관리자는 자동으로, 사용자는 수동으로 수행할 수 있으며, 사용자가 권장 사항을 제공받은 경우에는 자동 또는 수동으로 수행할 수 있습니다. 
+Azure Information Protection(AIP라고도 함)은 클라우드 기반 솔루션으로서 조직에서 문서와 메일을 분류하고, 레이블을 적용하여 선택적으로 문서와 메일을 보호하는 데 도움이 됩니다. 레이블은 규칙 및 조건을 정의하는 관리자가 자동으로 적용하거나, 사용자가 수동으로 적용할 수 있으며, 사용자가 권장 사항을 제공받은 경우에는 자동 또는 수동으로 적용할 수 있습니다. 
 
-다음 그림은 Azure Information Protection의 실제 작동 방식 예를 보여 줍니다. 관리자는 중요한 데이터를 검색하는 데 필요한 규칙을 정의했습니다(이 경우 신용 카드 정보). 신용 카드 정보가 포함된 Word 문서를 저장할 때 관리자가 구성한 특정 레이블을 적용하도록 권장하는 사용자 지정 도구 설명이 나타납니다. 이 레이블은 문서를 분류하고 구성에 따라 선택적으로 문서를 보호합니다. 
+다음 그림은 사용자의 컴퓨터에서 Azure Information Protection의 실제 작동 방식 예를 보여 줍니다. 관리자는 중요한 데이터를 검색하는 규칙을 사용하여 레이블을 구성했으며, 이 예에서는 신용 카드 정보입니다. 신용 카드 정보가 포함된 Word 문서를 저장할 때 관리자가 구성한 레이블을 권장하는 사용자 지정 도구 설명이 나타납니다. 이 레이블은 문서를 분류하고 보호합니다. 
 
 ![Azure Information Protection에 권장되는 분류 예](../media/info-protect-recommend-calloutsv2.png)
 
@@ -31,9 +31,9 @@ Azure Information Protection(AIP라고도 함)은 클라우드 기반 솔루션�
 
 ## <a name="how-labels-apply-classification"></a>레이블에서 분류를 적용하는 방법
 
-Azure Information Protection 레이블을 사용하여 문서와 전자 메일을 분류할 수 있습니다. 이 작업을 수행하면 데이터가 저장된 위치나 데이터를 공유한 사용자가 누구인지와 관계없이 항상 분류를 식별할 수 있게 됩니다. 이러한 레이블로는 머리글, 바닥글, 워터마크 등의 시각적 표시가 있습니다. 메타데이터는 일반 텍스트로 파일 및 메일 머리글에 추가됩니다. 일반 텍스트는 다른 서비스(예: 데이터 손실 방지 솔루션)에서 분류를 식별하고 적절한 조치를 취할 수 있도록 합니다. 
+Azure Information Protection 레이블을 사용하여 문서와 전자 메일을 분류할 수 있습니다. 이 작업을 수행하면 데이터가 저장된 위치나 데이터를 공유한 사용자가 누구인지와 관계없이 분류를 식별할 수 있게 됩니다. 이러한 레이블은 머리글, 바닥글, 워터마크 등의 시각적 표시를 포함할 수 있습니다. 메타데이터는 일반 텍스트로 파일 및 메일 머리글에 추가됩니다. 일반 텍스트는 다른 서비스(예: 데이터 손실 방지 솔루션)에서 분류를 식별하고 적절한 조치를 취할 수 있도록 합니다. 
 
-예를 들어 다음 메일 메시지는 "일반"으로 분류되었습니다. 이 레이블은 바닥글로 메일 메시지에 추가됩니다. 이 바닥글을 통해 모든 받는 사람은 메시지가 조직 외부로 전송되면 안 되는 일반적인 비즈니스 데이터용임을 시각적으로 쉽게 구별할 수 있습니다. 이 레이블은 메일 서비스에서 이 값을 검사하여 감사 항목을 만들거나 조직 외부로 전송되지 않도록 메일 머리글에도 포함됩니다.
+예를 들어 다음 메일 메시지는 "일반"으로 분류되었습니다. 레이블은 메일 메시지에 “민감도: 일반”의 바닥글을 추가했습니다. 이 바닥글을 통해 모든 받는 사람은 메시지가 조직 외부로 전송되면 안 되는 일반적인 비즈니스 데이터용임을 시각적으로 쉽게 구별할 수 있습니다. 이 레이블은 메일 서비스에서 이 값을 검사하여 감사 항목을 만들거나 조직 외부로 전송되지 않도록 메일 머리글에 포함됩니다.
 
 ![Azure Information Protection 분류를 보여 주는 머리글 및 바닥글 예](../media/example-email-footerv2.png)
 
@@ -99,6 +99,17 @@ Azure Information Protection을 Exchange Online과 함께 사용하는 경우 �
 또는 권한 보호를 적용하는 메일 흐름 규칙을 사용하여 사용자에 대한 보호를 자동으로 제공할 수도 있습니다. 
 
 이러한 메일에 Office 문서를 첨부하면 해당 문서도 자동으로 보호됩니다.
+
+## <a name="classifying-and-protecting-existing-documents"></a>기존 문서 분류 및 보호
+
+이상적으로 문서와 메일은 처음 생성될 때 레이블이 지정됩니다. 그러나 데이터 저장소에 기존 문서가 많이 있고 이러한 문서도 분류하고 보호하기를 원할 것입니다. 이러한 데이터 저장소는 온-프레미스 또는 클라우드일 수 있습니다.
+
+온-프레미스 데이터 저장소의 경우 Azure Information Protection 스캐너를 사용하여 로컬 폴더, 네트워크 공유 및 SharePoint Server 사이트와 라이브러리에서 문서를 검색, 분류 및 보호합니다. 스캐너는 Windows Server에서 서비스로 실행됩니다. 정책에서 동일한 규칙을 사용하여 중요한 정보를 검색하고 특정 레이블을 문서에 적용할 수 있습니다. 또는 파일 콘텐츠를 검사하지 않고 데이터 리포지토리의 모든 문서에 기본 레이블을 적용할 수 있습니다. 스캐너를 보고 모드에서만 사용하여 사용자가 모를 수 있는 중요한 정보를 검색할 수도 있습니다. 
+
+스캐너 배포 및 사용에 대한 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 자동으로 파일 분류 및 보호](../deploy-use/deploy-rms-connector.md)를 참조하세요.
+
+클라우드 데이터 저장소의 경우 Microsoft Cloud App Security를 사용하여 Box, SharePoint Online 및 비즈니스용 OneDrive의 문서에 레이블을 적용합니다. 자세한 내용은 [Azure Information Protection 분류 레이블 자동 적용](/cloud-app-security/use-case-information-protection) 및 [Azure Information Protection 통합](/cloud-app-security/azip-integration)을 참조하세요.
+
 
 ## <a name="resources-for-azure-information-protection"></a>Azure Information Protection에 대한 리소스
 

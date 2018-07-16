@@ -4,17 +4,18 @@ description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/07/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 3a732f49a299b4d66af70da3d26df193eaca36ac
-ms.sourcegitcommit: 6a67fc50bd8b8a06974de647c15115a673f0217c
+ms.openlocfilehash: c41dcb0a11e61be4a2dfd974d9bf6803a992b858
+ms.sourcegitcommit: ef3d187da900107095d499de7e7dac5c947e4b13
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37947460"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -22,7 +23,7 @@ ms.lasthandoff: 05/07/2018
 
 문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다.
 
-이러한 시각적 표식에 대한 추가 정보:
+이러한 시각적 표시에 대한 추가 정보:
 
 - 머리글 및 바닥글은 Word, Excel, PowerPoint 및 Outlook에 적용됩니다.
 
@@ -30,13 +31,15 @@ ms.lasthandoff: 05/07/2018
 
     - Excel: 페이지 레이아웃 및 인쇄 미리 보기 모드에 있을 때와 인쇄할 때만 워터마크가 표시됩니다.
     
-    - PowerPoint: 마스터 슬라이드에 배경 이미지로 워터마크가 적용됩니다.
+    - PowerPoint: 마스터 슬라이드에 배경 이미지로 워터마크가 적용됩니다. **보기** 탭, **슬라이드 마스터**에서 **배경 그래픽 숨기기** 확인란이 선택되어 있지 않은지 확인합니다.
     
     - 여러 줄의 텍스트를 사용할 수 있습니다.
 
 - 텍스트 문자열을 지정할 수도 있고, [변수](#using-variables-in-the-text-string)를 사용하여 머리글, 바닥글 또는 워터마크를 적용할 때 텍스트 문자열을 동적으로 만들 수도 있습니다.
 
-- 시각적 표식은 한 언어만 지원합니다.
+- Word, PowerPoint 및 Outlook은 다른 색의 시각적 표시를 지원합니다. 색의 경우 구성된 시각적 표시는 Excel에서 항상 검은색으로 표시됩니다.
+
+- 시각적 표시는 한 언어만 지원합니다.
 
 ## <a name="when-visual-markings-are-applied"></a>시각적 표시가 적용되는 경우
 
@@ -46,7 +49,7 @@ ms.lasthandoff: 05/07/2018
 
 - Office 앱에서 레이블의 시각적 표시는 레이블이 적용될 때 적용됩니다. 또한 시각적 표시는 레이블이 지정된 문서가 열리고 문서가 처음으로 저장될 때 적용됩니다.  
 
-- 파일 탐색기 또는 PowerShell을 사용하여 문서의 레이블이 지정되는 경우 시각적 표시는 즉시 적용되지 않지만 해당 문서가 Office 앱에서 열리고 문서가 처음으로 저장될 때 적용됩니다.
+- 파일 탐색기, PowerShell 또는 Azure Information Protection 스캐너를 사용하여 문서의 레이블이 지정되는 경우 시각적 표시는 즉시 적용되지 않지만 해당 문서가 Office 앱에서 열리고 문서가 처음으로 저장될 때 Azure Information Protection 클라이언트에 의해 적용됩니다.
     
     SharePoint Online, OneDrive 또는 비즈니스용 OneDrive에 저장된 파일에 대해 Office 2016에서 [자동 저장](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)을 사용하는 경우 예외: 자동 저장이 켜져 있으면 [고급 클라이언트 설정](../rms-client/client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)을 구성하여 백그라운드에서 계속해서 실행되도록 분류를 켜지 않으면 시각적 표시가 적용되지 않습니다. 
 
@@ -60,7 +63,7 @@ ms.lasthandoff: 05/07/2018
 
 2. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 추가하거나 변경할 시각적 표시가 포함된 레이블을 선택합니다.
 
-3. **Label**(레이블) 블레이드의 **Set visual marking (such as header or footer)**(시각적 표시(예: 머리글 또는 바닥글) 설정) 섹션에서 원하는 시각적 표식에 대한 설정을 구성한 다음 **Save**(저장)를 클릭합니다.
+3. **레이블** 블레이드의 **Set visual marking (such as header or footer)**(시각적 표시(예: 머리글 또는 바닥글) 설정) 섹션에서 원하는 시각적 표시에 대한 설정을 구성한 다음, **저장**을 클릭합니다.
     
     - 머리글을 구성하려면: **Documents with this label have a header**(이 레이블이 있는 문서에 머리글 있음)에서 머리글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 머리글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
     
@@ -121,7 +124,7 @@ ms.lasthandoff: 05/07/2018
 
 ### <a name="setting-the-font-name"></a>글꼴 이름 설정
 
-굴림은 머리글, 바닥 글 및 워터마크 텍스트에 대한 기본 글꼴입니다. 대체 글꼴 이름을 지정하는 경우 시각적 표식을 적용할 클라이언트 장치에서 사용할 수 있는지 확인합니다. 
+굴림은 머리글, 바닥 글 및 워터마크 텍스트에 대한 기본 글꼴입니다. 대체 글꼴 이름을 지정하는 경우 시각적 표시를 적용할 클라이언트 장치에서 사용할 수 있는지 확인합니다. 
 
 지정된 글꼴을 사용할 수 없는 경우 클라이언트는 Calibri 글꼴을 사용하도록 대체합니다.
 

@@ -4,7 +4,7 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 07/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 0b663f8f514aadf51b0ad549761d90d30e07811d
-ms.sourcegitcommit: 92bb6d3163e455250a84281dac62b5af82f8c4f1
+ms.openlocfilehash: 3df9e33542d40d00f601ded599b454b2a9f8f045
+ms.sourcegitcommit: 666308d042c079b2d6bedfbe85ab0bf2450f255b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042884"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433634"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -47,7 +47,7 @@ ms.locfileid: "37042884"
 
 스캐너는 실시간으로 검색하고 레이블을 지정하지 않습니다. 지정한 데이터 저장소의 파일을 체계적으로 크롤링하여 이 주기를 한 번 또는 반복적으로 실행되도록 구성할 수 있습니다.
 
-스캔할 파일 형식을 지정하거나 스캔에서 제외할 수 있습니다. 스캐너가 검사하는 파일을 제한하려면 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType)을 사용하여 파일 형식 목록을 정의합니다.
+스캔할 파일 형식을 지정하거나 스캔에서 제외할 수 있습니다. 스캐너가 검사하는 파일을 제한하려면 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)를 사용하여 파일 형식 목록을 정의합니다.
 
 
 ## <a name="prerequisites-for-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너의 필수 구성 요소
@@ -220,7 +220,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 스캐너는 [분류 및 보호에서 제외](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client)된 파일(예: 실행 파일 및 시스템 파일)을 자동으로 건너뜁니다.
 
-검색할 파일 형식 목록을 정의하여 이 동작을 변경하거나 검색에서 제외할 수 있습니다. 이 목록을 지정하고 데이터 리포지토리를 지정하지 않으면 지정된 자체 목록이 없는 모든 데이터 리포지토리에 이 목록이 적용됩니다. 이 목록을 지정하려면 [Set-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileType)을 사용합니다. 파일 형식 목록을 지정한 후 [Add-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileType)을 사용하여 새 파일 형식을 목록에 추가하고 [Remove-AIPScannerScannedFileType](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileType)을 사용하여 목록에서 파일 형식을 제거할 수 있습니다.
+검색할 파일 형식 목록을 정의하여 이 동작을 변경하거나 검색에서 제외할 수 있습니다. 이 목록을 지정하고 데이터 리포지토리를 지정하지 않으면 지정된 자체 목록이 없는 모든 데이터 리포지토리에 이 목록이 적용됩니다. 이 목록을 지정하려면 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)를 사용합니다. 파일 형식 목록을 지정한 후 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)를 사용하여 새 파일 형식을 목록에 추가하고 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)를 사용하여 목록에서 파일 형식을 제거할 수 있습니다.
 
 그런 다음, 스캐너는 Windows iFilter를 사용하여 다음 파일 형식을 검색합니다. 이러한 파일 형식에 대해 레이블에 지정한 조건을 사용하여 문서의 레이블을 지정합니다.
 

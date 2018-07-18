@@ -4,7 +4,7 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3df9e33542d40d00f601ded599b454b2a9f8f045
-ms.sourcegitcommit: 666308d042c079b2d6bedfbe85ab0bf2450f255b
+ms.openlocfilehash: 77204e78a46b536d7a5b42c2765d5eaea8cd745a
+ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433634"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37935735"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -113,7 +113,7 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 - Azure Active Directory 계정의 경우 관리자 가이드의 [Set-AIPAuthentication에 토큰 매개 변수 지정 및 사용](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)에 나와 있는 지침을 따릅니다.
 
 
-## <a name="install-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 설치
+## <a name="install-the-scanner"></a>스캐너 설치
 
 1. 스캐너를 실행하는 Windows Server 컴퓨터에 로그인합니다. 로컬 관리자 권한이 있고 SQL Server 마스터 데이터베이스에 쓸 수 있는 권한이 있는 계정을 사용합니다.
 
@@ -143,7 +143,9 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 
 이제 스캐너를 설치했으므로 스캐너 서비스 계정에 Azure AD 토큰을 가져와서 무인 모드로 실행될 수 있도록 인증합니다. 
 
-## <a name="get-an-azure-ad-token-for-the-scanner-service-account-to-authenticate-to-the-azure-information-protection-service"></a>스캐너 서비스 계정에 Azure AD 토큰을 가져와서 Azure Information Protection 서비스에 인증
+## <a name="get-an-azure-ad-token-for-the-scanner"></a>스캐너에 대한 Azure AD 토큰 가져오기
+
+Azure AD 토큰을 사용하면 스캐너 서비스 계정으로 Azure Information Protection 서비스에 인증할 수 있습니다.
 
 1. 동일한 Windows Server 컴퓨터 또는 데스크톱에서 Azure Portal에 로그인하여 인증을 위해 액세스 토큰을 지정하는 데 필요한 두 개의 Azure AD 응용 프로그램을 만듭니다. 초기 대화형 로그인 후에 이 토큰을 통해 스캐너를 비대화형으로 실행할 수 있습니다.
     
@@ -163,7 +165,7 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 
 이제 검색할 데이터 저장소를 지정할 준비가 되었습니다. 
 
-## <a name="specify-data-stores-for-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너의 데이터 저장소 지정
+## <a name="specify-data-stores-for-the-scanner"></a>스캐너에 대한 데이터 저장소 지정
 
 [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository) cmdlet을 사용하여 Azure Information Protection 스캐너에서 검색할 데이터 저장소를 지정합니다. SharePoint 사이트 및 라이브러리에 대한 로컬 폴더, UNC 경로 및 SharePoint 서버 URL을 지정할 수 있습니다. 
 
@@ -185,7 +187,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 스캐너의 기본 구성에서 이제 검색 모드에서 첫 번째 검색을 실행할 준비가 되었습니다.
 
-## <a name="run-a-discovery-cycle-and-view-reports-for-the-azure-information-protection-scanner"></a>검색 주기 실행 및 Azure Information Protection 스캐너에 대한 보고서 보기
+## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>스캐너에 대한 검색 주기 실행 및 보고서 보기
 
 1. **관리 도구** > **서비스**를 사용하여 **Azure Information Protection 스캐너** 서비스를 시작합니다.
 
@@ -199,7 +201,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 스캐너가 검색하는 파일에 레이블을 자동으로 지정할 준비가 되면 다음 절차를 계속합니다. 
 
-## <a name="configure-the-azure-information-protection-scanner-to-apply-classification-and-protection-to-discovered-files"></a>검색된 파일에 분류 및 보호를 적용하도록 Azure Information Protection 스캐너 구성
+## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>스캐너를 구성하여 분류 및 보호 적용
 
 기본 설정에서 스캐너는 보고 전용 모드로 한 번 실행됩니다. 이러한 설정을 변경하려면 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet을 실행합니다.
 
@@ -216,9 +218,9 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 일정을 계속해서 실행하도록 구성했기 때문에 스캐너가 모든 파일을 사용할 때 새롭게 변경된 파일이 검색되도록 새 주기를 시작합니다.
 
 
-## <a name="how-files-are-scanned-by-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너로 파일을 검사하는 방법
+## <a name="how-files-are-scanned"></a>파일 검사 방법
 
-스캐너는 [분류 및 보호에서 제외](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-client)된 파일(예: 실행 파일 및 시스템 파일)을 자동으로 건너뜁니다.
+스캐너는 [분류 및 보호에서 제외](../rms-client/client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection)된 파일(예: 실행 파일 및 시스템 파일)을 자동으로 건너뜁니다.
 
 검색할 파일 형식 목록을 정의하여 이 동작을 변경하거나 검색에서 제외할 수 있습니다. 이 목록을 지정하고 데이터 리포지토리를 지정하지 않으면 지정된 자체 목록이 없는 모든 데이터 리포지토리에 이 목록이 적용됩니다. 이 목록을 지정하려면 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)를 사용합니다. 파일 형식 목록을 지정한 후 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)를 사용하여 새 파일 형식을 목록에 추가하고 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)를 사용하여 목록에서 파일 형식을 제거할 수 있습니다.
 
@@ -256,7 +258,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 “PFile”이라고 합니다.
 
-## <a name="when-files-are-rescanned-by-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너로 파일을 다시 검사하는 경우
+## <a name="when-files-are-rescanned"></a>파일이 다시 검사되는 경우
 
 첫 번째 검사 주기에서는 스캐너에서 구성된 데이터 저장소의 모든 파일을 검사한 다음, 후속 검사에서는 새롭거나 수정된 파일만 검사합니다. 
 
@@ -273,7 +275,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 ## <a name="using-the-scanner-with-alternative-configurations"></a>대체 구성으로 스캐너 사용
 
-스캐너에서 지원하는 다음 두 가지 대체 시나리오에서는 어떤 조건에도 레이블을 구성할 필요가 없습니다. 
+Azure Information Protection 스캐너에서 지원하는 다음 두 가지 대체 시나리오에서는 어떤 조건에도 레이블을 구성할 필요가 없습니다. 
 
 - 데이터 리포지토리의 모든 파일에 기본 레이블을 적용합니다.
     
@@ -288,7 +290,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
     
     스캐너는 Azure Information Protection 정책의 레이블에 대해 지정한 모든 사용자 지정 조건과 Azure Information Protection 정책의 레이블에 대해 지정할 수 있는 정보 유형 목록을 사용합니다. 
 
-## <a name="optimizing-the-performance-of-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 성능 최적화
+## <a name="optimizing-the-performance-of-the-scanner"></a>스캐너 성능 최적화
 
 스캐너 성능을 최대화하려면:
 
@@ -339,7 +341,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
     - [대체 구성](#using-the-scanner-with-alternative-configurations)을 사용하여 모든 사용자 지정 조건 및 알려진 중요한 정보 유형을 식별하면 스캐너가 더 느리게 실행됩니다.
     
 
-## <a name="list-of-cmdlets-for-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너의 cmdlet 목록 
+## <a name="list-of-cmdlets-for-the-scanner"></a>스캐너에 대한 cmdlet 목록 
 
 스캐너의 다른 cmdlet을 사용하여 스캐너의 서비스 계정과 데이터베이스를 변경하고, 스캐너의 현재 설정을 가져오고, 스캐너 서비스를 제거할 수 있습니다. 스캐너는 다음 cmdlet을 사용합니다.
 
@@ -368,7 +370,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
 
 
-## <a name="event-log-ids-and-descriptions"></a>이벤트 로그 ID 및 설명
+## <a name="event-log-ids-and-descriptions-for-the-scanner"></a>스캐너에 대한 이벤트 로그 ID 및 설명
 
 다음 섹션을 사용하여 스캐너에 가능한 이벤트 ID 및 설명을 식별합니다. Windows **응용 프로그램 및 서비스** 이벤트 로그 및 **Azure Information Protection**에서 스캐너 서비스를 실행하는 서버에서 이러한 이벤트를 기록합니다.
 

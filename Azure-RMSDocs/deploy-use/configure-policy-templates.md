@@ -4,7 +4,7 @@ description: Azure Portal에서 권한 관리 템플릿을 구성하고 관리�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/28/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 44c1166ce4205d6e77b4877d6aca0eaf16911530
-ms.sourcegitcommit: 1bc4c9d6e773809893d02a6abb09aeb4ae28cb03
+ms.openlocfilehash: ba56e6b165cd378c957b2c54bd41ce54f1830797
+ms.sourcegitcommit: 1b0c387b2848b7dfaee0b0548dde7e41383ffe6e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "34562146"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138307"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
@@ -77,7 +77,7 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 이러한 템플릿을 편집하거나 레이블로 변환하기 전에 다음 변경 사항과 고려 사항을 인지하고 있는지 확인합니다. 구현이 변경되었으므로, Azure 클래식 포털에서 이전에 템플릿을 관리한 경우 다음 목록이 특히 중요합니다.
 
-- 템플릿을 편집하거나 변환하고 Azure Information Protection 정책을 저장한 후에 원래 [사용 권한](configure-usage-rights.md)이 다음과 같이 변경됩니다. 필요한 경우 Azure Portal을 사용하여 개별 사용 권한을 추가하거나 제거할 수 있습니다. 또는 [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) 및 [Set-AadrmTemplateProperty](/powershell/module/aadrm/new-aadrmrightsdefinition) cmdlet과 함께 PowerShell을 사용합니다.
+- 템플릿을 편집하거나 변환하고 Azure Information Protection 정책을 저장한 후에 원래 [사용 권한](configure-usage-rights.md)이 다음과 같이 변경됩니다. 필요한 경우 Azure Portal을 사용하여 개별 사용 권한을 추가하거나 제거할 수 있습니다. 또는 [New-AadrmRightsDefinition](/powershell/module/aadrm/set-aadrmtemplateproperty) 및 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet과 함께 PowerShell을 사용합니다.
     
     - **매크로 허용**(일반 이름)이 자동으로 추가됩니다. 이 사용 권한은 Office 앱의 Azure Information Protection 표시줄에 필요합니다.
 

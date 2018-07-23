@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/20/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8cc13eabc504c876c2118a18f1fb7bdb5bb9cfc4
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 6b5a2856f54ec6d38ae69007e80d9eb22d416799
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973497"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029936"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -135,13 +135,13 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 이 옵션 구성 시 권장되는 방법은 **Make the custom permissions option available for users**(사용자가 사용자 지정 권한 옵션을 사용할 수 있게 허용) [정책 설정](../deploy-use/configure-policy-settings.md)을 사용하는 것입니다. 하지만 Azure Portal에서 구성하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용하여 이 옵션을 구성할 수도 있습니다. 
 
-이 설정을 구성하고 사용자에게 정책을 게시하면 사용자가 사용자 지정 권한 옵션을 사용할 수 있게 되어 고유한 보호 설정을 선택할 수 있거나, 사용자가 사용할 수 없게 되어 메시지가 표시되어야만 고유한 보호 설정을 선택할 수 있습니다.
+이 설정을 구성하고 사용자에게 정책을 게시하면 사용자에게 사용자 지정 권한 옵션이 표시되어 고유한 보호 설정을 선택하거나, 숨겨져서 메시지가 표시되지 않으면 사용자가 고유한 보호 설정을 선택할 수 없게 됩니다.
 
 이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
 
 - 키: **EnableCustomPermissions**
 
-- 값: 사용자 지정 권한 옵션을 사용할 수 있게 하려면 **True**, 이 옵션을 사용할 수 없게 하려면 **False**
+- 값: 사용자 지정 권한 옵션을 표시하려면 **True**, 이 옵션을 숨기려면 **False**입니다.
 
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 영구적으로 숨기기

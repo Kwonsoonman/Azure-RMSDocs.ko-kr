@@ -4,7 +4,7 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/09/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 77204e78a46b536d7a5b42c2765d5eaea8cd745a
-ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
+ms.openlocfilehash: 794a8649b803407eff0e651a0b9396d164355380
+ms.sourcegitcommit: 61a4cda950706c823233b19e63951668fdcd5ef3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37935735"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39088635"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -256,7 +256,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 스캐너에서 보호를 사용하는 레이블을 적용하는 경우 기본적으로 Office 파일 형식만 보호됩니다. 추가 파일 형식이 보호되도록 이 동작을 변경할 수 있습니다. 그러나 레이블이 문서에 일반 보호를 적용하는 경우 파일 이름 확장명을 .pfile로 변경합니다. 또한 권한 있는 사용자가 열고 해당 네이티브 형식으로 저장될 때까지 파일은 읽기 전용입니다. 텍스트 및 이미지 파일은 해당 파일 이름 확장명을 변경하고 읽기 전용으로 설정할 수도 있습니다. 
 
-기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 “PFile”이라고 합니다.
+기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 스캐너의 경우 특정 파일 이름 확장명을 지정해야 하고 `*` 와일드 카드를 사용할 수 없습니다.
 
 ## <a name="when-files-are-rescanned"></a>파일이 다시 검사되는 경우
 

@@ -4,7 +4,7 @@ description: 문서와 전자 메일을 분류하고 보호하는 방법에 대�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 223dd5681b6b5c6911a90cf6540b2ab4c9d7f54e
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 07abfb8da932dea6fe29507cca9f3066eaf546cf
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444143"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029902"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -89,7 +89,7 @@ Azure Information Protection 표시줄 또는 리본의 **보호** 단추를 사
 
     ![사용자 지정 권한 옵션](../media/custom-permissions-callout.png)
     
-    **사용자 지정 권한**을 선택할 수 없는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
+    **사용자 지정 권한**이 표시되지 않는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
     
     지정하는 사용자 지정 권한은 선택된 레이블에 대해 관리자가 정의했을 수 있는 보호 설정을 보완하지 않고 대신합니다.  
 
@@ -146,9 +146,9 @@ Azure Information Protection 표시줄 또는 리본의 **보호** 단추를 사
     
     ![분류 및 보호 - Azure Information Protection** 대화 상자에 레이블이 없음](../media/info-protect-dialog-labels-protection-only.png)
     
-3. 관리자가 허용한 경우 선택한 레이블에 관리자가 포함한 보호를 사용하지 않고 직접 보호 설정을 지정할 수 있습니다. 그러려면 **사용자 지정 권한으로 보호**를 선택합니다.
+3. 관리자에 의해 허용된 경우 선택한 레이블에 관리자가 포함한 보호를 사용하지 않고 직접 보호 설정을 지정할 수 있습니다. 그러려면 **사용자 지정 권한으로 보호**를 선택합니다.
     
-    **사용자 지정 권한으로 보호**를 선택할 수 없는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
+    **사용자 지정 권한으로 보호**가 표시되지 않는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
     
     지정하는 사용자 지정 권한은 선택된 레이블에 대해 관리자가 정의했을 수 있는 보호 설정을 보완하지 않고 대신합니다.  
 
@@ -181,6 +181,8 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
 -   [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
 
 ## <a name="additional-information-for-administrators"></a>관리자용 추가 정보    
-[Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)을 참조하세요.
+**사용자에게 사용자 지정 권한 옵션 제공** 정책 설정을 사용하도록 설정하는 구성 지침은 [Azure Information Protection 정책 구성 설정](../deploy-use/configure-policy-settings.md)을 참조하세요.
+
+기타 구성 지침: [Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

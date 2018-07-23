@@ -4,7 +4,7 @@ description: Azure Information Protection에 의해 레이블이 지정되었거
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ce5a6de0c2f0ab1ad374b4a0fbc01e755f28abe3
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 429af8c070b40f20b67f4e859e0659870dee177c
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327316"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029885"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>사용자 가이드; Azure Information Protection에 의해 레이블이 지정되었거나 Rights Management로 보호된 파일 및 전자 메일에서 분류 레이블 및 보호를 제거합니다.
 
@@ -30,7 +30,7 @@ ms.locfileid: "32327316"
 > [!IMPORTANT]
 > 보호를 제거하려면 파일의 소유자이거나 보호를 제거하기 위한 권한(Rights Management 추출 권한 또는 모든 권한)이 부여되어야 합니다.
 
-다른 레이블 또는 다른 보호 설정 집합을 선택하려는 경우에는 레이블 또는 보호를 제거할 필요가 없습니다. 대신 새 레이블을 선택하고, 필요한 경우 사용자 지정 권한을 정의할 수 있습니다. 
+다른 레이블 또는 다른 보호 설정 집합을 선택하려는 경우에는 레이블 또는 보호를 제거할 필요가 없습니다. 대신 새 레이블을 선택하고, 필요한 경우 관리자가 이 구성을 허용하면 사용자 지정 권한을 정의할 수 있습니다. 
 
 Office 데스크톱 앱 **Word**, **Excel**, **PowerPoint**, **Outlook** 내에서 Office 문서 및 전자 메일을 만들거나 편집할 때 해당 문서 및 전자 메일에서 레이블 및 보호를 제거할 수 있습니다. 
 
@@ -57,13 +57,17 @@ Information Protection 표시줄에서 **레이블 제거** 아이콘을 클릭�
 
 파일 탐색기를 사용할 때는 파일 하나, 여러 개 또는 폴더에서 빠르게 레이블 및 보호를 제거할 수 있습니다. 폴더를 선택하면 해당 폴더의 모든 파일 및 하위 폴더가 자동으로 선택됩니다. 
 
-1.  파일 탐색기에서 파일 하나/여러 개 또는 폴더를 선택합니다. 마우스 오른쪽 단추를 클릭하고 **분류 및 보호**를 선택합니다.
+1. 파일 탐색기에서 파일 하나/여러 개 또는 폴더를 선택합니다. 마우스 오른쪽 단추를 클릭하고 **분류 및 보호**를 선택합니다.
 
 2. 레이블을 제거하려면: **분류 및 보호 - Azure Information Protection** 대화 상자에서 **레이블 삭제**를 클릭합니다. 레이블이 보호를 적용하도록 구성된 경우 보호가 자동으로 제거됩니다.
 
-3. 단일 파일에서 사용자 지정 보호를 제거하려면: **분류 및 보호 - Azure Information Protection** 대화 상자에서 **사용자 지정 권한으로 보호** 옵션을 선택 취소합니다.
+3. 단일 파일에서 사용자 지정 보호를 제거하려면: **분류 및 보호 - Azure Information Protection** 대화 상자에서 **사용자 지정 권한으로 보호** 옵션을 선택 취소합니다. 
+    
+    **사용자 지정 권한으로 보호** 옵션이 표시되지 않는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
     
 4. 여러 파일에서 사용자 지정 보호를 제거하려면: **분류 및 보호 - Azure Information Protection** 대화 상자에서 **사용자 지정 권한 제거** 옵션을 클릭합니다.
+    
+    **사용자 지정 권한 삭제** 옵션이 표시되지 않는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
 
 5. **적용**을 클릭하고 **작업 완료** 메시지가 표시될 때까지 기다린 후 결과를 확인합니다. 그런 다음 **닫기**를 클릭합니다.
 
@@ -72,6 +76,11 @@ Information Protection 표시줄에서 **레이블 제거** 아이콘을 클릭�
 Azure Information Protection 사용자 가이드의 사용 방법 지침:
 
 - [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
+
+## <a name="additional-information-for-administrators"></a>관리자용 추가 정보    
+**사용자에게 사용자 지정 권한 옵션 제공** 정책 설정을 사용하도록 설정하는 구성 지침은 [Azure Information Protection 정책 구성 설정](../deploy-use/configure-policy-settings.md)을 참조하세요.
+
+기타 구성 지침: [Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

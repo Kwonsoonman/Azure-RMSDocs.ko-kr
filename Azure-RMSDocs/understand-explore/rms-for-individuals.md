@@ -4,7 +4,7 @@ description: 보호된 파일을 전송받았으나 IT 부서가 Azure에서 해
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 358ef172192b3bed65dd8f1853705c8f189cbf97
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: 3885dfcdf9c5858fe6e3a43b3980e0862dc4cb51
+ms.sourcegitcommit: 85a56a778973be1c95df08bcd5b56e4f0bc12ad7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444319"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39104933"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>개인용 RMS 및 Azure Information Protection
 
@@ -45,7 +45,7 @@ ms.locfileid: "34444319"
 
 3. **로그인**을 클릭합니다.
 
-    Microsoft는 메일 주소를 사용하여 조직에서 이미 Azure Information Protection Premium을 구독(https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)하거나 [Azure Information Protection을 사용하여 데이터 보호 기능이 포함된 Office 365를 구독](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)하는지 확인합니다. 이러한 구독 중 하나가 있는 경우 개인용 RMS는 필요하지 않습니다. 즉시 로그인되고 개인용 RMS에 대한 셀프 서비스 등록이 취소됩니다. 이러한 구독이 없는 경우 다음 단계를 진행합니다.
+    Microsoft는 이메일 주소를 사용하여 조직에서 이미 [Azure Information Protection Premium을 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)하거나 [Azure Information Protection을 사용하여 데이터 보호 기능이 포함된 Office 365를 구독](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)하는지 확인합니다. 이러한 구독 중 하나가 있는 경우 개인용 RMS는 필요하지 않습니다. 즉시 로그인되고 개인용 RMS에 대한 셀프 서비스 등록이 취소됩니다. 이러한 구독이 없는 경우 다음 단계를 진행합니다.
 
 4. 입력한 주소로 확인 메일 메시지가 전송될 때까지 기다립니다. 이 메일은 Office 365 팀support@email.microsoftonline.com에서 보내며 제목은 **Microsoft Azure Information Protection 등록 완료**입니다.
 

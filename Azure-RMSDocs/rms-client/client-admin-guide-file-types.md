@@ -4,7 +4,7 @@ description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/09/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da4e3a5efec9ba7a19131a1b03fc2ddd5a7651ef
-ms.sourcegitcommit: f50b9bc28c6fff372651a3af7a6afc086645ba68
+ms.openlocfilehash: d8472b8146aa80f00ae8c66f04ee253f7a0777da
+ms.sourcegitcommit: 3276c1f3f32137cb5450f335f4f55e3b5858694d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37935718"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39157785"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -53,7 +53,9 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 
 - **디지털 네거티브**: .dng
 
-- **Microsoft Office**: 다음 테이블의 파일 형식:
+- **Microsoft Office**: 다음 테이블의 파일 형식입니다.
+    
+    이러한 파일 형식에 대해 지원되는 파일 형식: 최소 Office 97-2003 문서 및 Open Office XML
     
     |Office 파일 형식|Office 파일 형식|
     |----------------------------------|----------------------------------|
@@ -123,14 +125,13 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
 |.jt|.pjt|
 
 
-다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 나머지 파일 형식이 나와 있습니다. 이러한 형식은 Microsoft Office 앱용 파일 형식으로 인식할 수 있습니다. 
+다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 나머지 파일 형식이 나와 있습니다. 이러한 형식은 Microsoft Office 앱용 파일 형식으로 인식할 수 있습니다. 지원되는 파일 형식은 최소 Office 97-2003 문서 및 Open Office XML입니다. 
 
 이러한 파일의 경우에는 Rights Management 서비스를 통해 파일을 보호한 후에도 파일 이름 확장명이 동일하게 유지됩니다.
 
 |Office에서 지원하는 파일 형식|Office에서 지원하는 파일 형식|
 |----------------------------------|----------------------------------|
 |.doc<br /><br />.docm<br /><br />.docx<br /><br />.dot<br /><br />.dotm<br /><br />.dotx<br /><br />.potm<br /><br />.potx<br /><br />.pps<br /><br />.ppsm<br /><br />.ppsx<br /><br />.ppt<br /><br />.pptm<br /><br />.pptx<br /><br />.vsdm|.vsdx<br /><br />.vssm<br /><br />.vssx<br /><br />.vstm<br /><br />.vstx<br /><br />.xla<br /><br />.xlam<br /><br />.xls<br /><br />.xlsb<br /><br />.xlt<br /><br />.xlsm<br /><br />.xlsx<br /><br />.xltm<br /><br />.xltx<br /><br />.xps|
-
 
 ### <a name="changing-the-default-protection-level-of-files"></a>파일의 기본 보호 수준 변경
 레지스트리를 편집하여 Azure Information Protection 클라이언트가 파일을 보호하는 방식을 변경할 수 있습니다. 예를 들어 기본 보호를 지원하는 파일을 Azure Information Protection 클라이언트에서 일반적으로 보호하도록 강제 지정할 수 있습니다.

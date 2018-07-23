@@ -4,18 +4,18 @@ description: 모든 사용자와 모든 장치에 적용되는 Azure Information
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: cfdb1537ad5444ef478c18380b535f38b5f7c667
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: c03ec14c8c2fefd72e7972c486120e3a2dd1760d
+ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326551"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39029919"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 정책 설정을 구성하는 방법
 
@@ -63,7 +63,7 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
     
         고급 클라이언트 설정을 사용하여 이 정책 설정을 [클라이언트 사용자 지정](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)으로 구성할 수도 있습니다.
     
-    - **Make the custom permissions option available to users**(사용자에게 사용자 지정 권한 옵션 제공): 이 설정이 켜져 있으면 사용자가 사용자 지정 보호 설정을 지정하고 레이블 구성에 포함된 정책 설정을 재정의할 수 있습니다. 이 설정이 꺼져 있으면 사용자가 사용자 지정 권한 옵션을 선택할 수 없습니다.
+    - **사용자에게 사용자 지정 권한 옵션 제공**: 이 설정이 켜져 있으면 사용자에게는 레이블 구성에 포함된 정책 설정을 재정의할 수 있는 고유한 보호 설정을 지정하는 옵션이 표시됩니다. 또한 보호를 제거하는 옵션도 확인할 수 있습니다. 이 설정이 꺼진 경우 사용자에게는 이러한 옵션이 표시되지 않습니다.
         
         이 정책 설정은 Office 메뉴 옵션에서 구성할 수 있는 사용자 지정 권한에는 적용되지 않습니다. 하지만 고급 클라이언트 설정을 사용하여 이 정책 설정을 [클라이언트 사용자 지정](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)으로 구성할 수도 있습니다.
         

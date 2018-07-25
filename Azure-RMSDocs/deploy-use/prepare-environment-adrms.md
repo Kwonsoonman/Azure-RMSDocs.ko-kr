@@ -44,16 +44,16 @@ Azure Information Protection으로 마이그레이션하면 이전에 보호된 
 
 Azure Information Protection으로 마이그레이션하기로 결정했거나 현재 AD RMS 배포를 사용할 때의 제한 사항을 받아들이기로 한 경우 먼저, Azure Rights Management 서비스가 비활성화되어 있는지 확인해야 합니다. 자세한 지침은 다음 중 해당하는 시나리오의 단계를 따르세요.
 
-- [Azure Rights Management가 포함된 구독이 2018년 2월 중 또는 그 이후에 구매된 것입니다](#your-subscription-was-purchased-during-or-after-february-2018).
+- [Azure Rights Management가 포함된 구독을 2018년 2월 중 또는 그 이후에 구매했습니다](#your-subscription-was-purchased-during-or-after-february-2018).
 
-- [구독이 2018년 2월 이전 또는 2월 중에 구매된 것이며, Exchange Online을 사용하고 있습니다](#your-subscription-was-purchased-before-or-during-february-2018-and-you-have-exchange-online).
+- [구독을 2018년 2월 이전 또는 2월 중에 구매했으며, Exchange Online을 사용하고 있습니다](#your-subscription-was-purchased-before-or-during-february-2018-and-you-have-exchange-online).
 
 - [Azure Portal에서 Azure Information Protection 정책을 구성할 때 보호를 활성화하는 옵션이 표시됩니다.](#you-see-an-option-to-activate-protection-when-you-configure-azure-information-protection)
 
 
 ## <a name="your-subscription-was-purchased-during-or-after-february-2018"></a>2018년 2월 또는 그 이후에 구독을 구매했습니다.
 
-이제 2018년 2월부터 Azure Information Protection을 포함하는 새 구독은 기본적으로 Azure Rights Management 서비스를 활성화합니다. 이 서비스가 자동으로 활성화되는데 AD RMS(Active Directory Rights Management Services)도 사용하는 경우 이 조합은 호환되지 않으므로 가능한 한 빨리 Azure Rights Management 서비스를 비활성화하는 것이 중요합니다. 
+이제 2018년 2월 후반부터 Azure Information Protection을 포함하는 새 구독은 기본적으로 Azure Rights Management 서비스를 활성화합니다. 이 서비스가 자동으로 활성화되는데 AD RMS(Active Directory Rights Management Services)도 사용하는 경우 이 조합은 호환되지 않으므로 가능한 한 빨리 Azure Rights Management 서비스를 비활성화하는 것이 중요합니다. 
 
 ### <a name="step-1-deactivate-azure-rights-management"></a>1단계: Azure Rights Mangement 비활성화
 [!INCLUDE[aad_rightsmanagement_1](../includes/aad_rightsmanagement_1_md.md)]를 비활성화하려면 다음 절차 중 하나를 사용하세요.
@@ -92,7 +92,7 @@ Azure Information Protection으로 마이그레이션하기로 결정했거나 �
 마이그레이션 지침: [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
 
-## <a name="your-subscription-was-purchased-before-or-during-february-2018-and-you-have-exchange-online"></a>구독이 2018년 2월 이전 또는 2월 중에 구매된 것이며, Exchange Online을 사용하고 있습니다.
+## <a name="your-subscription-was-purchased-before-or-during-february-2018-and-you-have-exchange-online"></a>구독을 2018년 2월 이전 또는 2월 중에 구매했으며, Exchange Online을 사용하고 있습니다.
 
 Microsoft가 Azure Rights Management 또는 Azure Information Protection이 포함된 구독에 대해 Azure Rights Management 서비스를 활성화하기 시작했으며, 테넌트가 Exchange Online을 사용하고 있습니다. 이러한 테넌트의 경우 2018년 8월 1일에 자동 활성화가 롤아웃되기 시작합니다.
 

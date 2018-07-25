@@ -128,7 +128,7 @@ Azure Information Protection 정책에서 이 레이블은 메일을 **일반**�
 
 Exchange Online 메일 흐름 규칙에 사용할 레이블을 만들고 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)을 참조하세요.
 
-또한 첨부 파일이 포함된 메일 메시지를 분류하려면 Azure Information Protection [정책 설정](configure-policy-settings.md), **For email messages with attachments, apply a label that matches the highest classification of those attachments**(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용)를 사용하는 것이 좋습니다.
+또한 첨부 파일이 포함된 메일 메시지를 분류하려면 Azure Information Protection [정책 설정](configure-policy-settings.md): **첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최상위 분류와 일치하는 레이블 적용**을 사용하는 것이 좋습니다.
 
 
 [!INCLUDE[Commenting house rules](../includes/houserules.md)]

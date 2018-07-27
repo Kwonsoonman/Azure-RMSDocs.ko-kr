@@ -4,18 +4,18 @@ description: Rights Management 보호를 사용하도록 레이블을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 0cac50caf3a7ecf9189d7731f1248e543871be9a
-ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
+ms.openlocfilehash: c551c83a41a7fbf6340a9e5fbd867b825a971ad6
+ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37068944"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217895"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -94,12 +94,6 @@ Exchange에서 Azure Information Protection을 구성하지 않고도 사용자�
         
         Word, Excel, PowerPoint 및 파일 탐색기에 대한 옵션을 선택하는 경우: 이 옵션을 설정하면 이러한 응용 프로그램에 레이블이 표시됩니다. 사용자가 레이블을 적용할 때 결과 동작은 사용자 지정 권한을 선택하는 대화 상자를 사용자에게 표시하는 것입니다. 이 대화 상자에서 사용자는 사용 권한, 사용자 또는 그룹 및 만료 날짜를 지정해야 합니다. 사용자에게 이러한 값을 제공하는 방법에 대한 지침이 있는지 확인합니다.
     
-    - **미리 정의된 템플릿 선택**: 기본 템플릿 또는 구성한 사용자 지정 템플릿을 중 하나를 사용합니다. 이전에 **사용 권한 설정** 옵션을 사용한 레이블을 편집하는 경우 이 옵션이 표시되지 않습니다.
-    
-    미리 정의된 템플릿을 선택하려면 템플릿이 보관되어 있는 것이 아니라 게시되어 있어야 하며 이미 다른 레이블에 연결되어 있지 않아야 합니다. 이 옵션을 선택하면 **템플릿 편집** 단추를 사용하여 [템플릿을 레이블로 변환](configure-policy-templates.md#to-convert-templates-to-labels)할 수 있습니다.
-    
-    팁: 사용자 지정 템플릿을 만들고 편집하는 데 익숙한 경우 [Azure 클래식 포털과 관련된 작업](migrate-portal.md)을 참조하는 것이 유용할 수 있습니다.
-
     - **미리 정의된 템플릿 선택**: 기본 템플릿 또는 구성한 사용자 지정 템플릿을 중 하나를 사용합니다. 이전에 **사용 권한 설정** 옵션을 사용한 레이블을 편집하는 경우 이 옵션이 표시되지 않습니다.
     
     미리 정의된 템플릿을 선택하려면 템플릿이 보관되어 있는 것이 아니라 게시되어 있어야 하며 이미 다른 레이블에 연결되어 있지 않아야 합니다. 이 옵션을 선택하면 **템플릿 편집** 단추를 사용하여 [템플릿을 레이블로 변환](configure-policy-templates.md#to-convert-templates-to-labels)할 수 있습니다.

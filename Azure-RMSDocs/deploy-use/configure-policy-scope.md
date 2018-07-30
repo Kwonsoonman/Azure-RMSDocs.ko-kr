@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b5e7bd86ea2e46939b8c4655287e58e3e270feb4
-ms.sourcegitcommit: 87d73477b7ae9134b5956d648c390d2027a82010
+ms.openlocfilehash: 88aa83d5e23da59592b15a4d8fa66735eebcbdb1
+ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32326568"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39217793"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>범위 지정 정책을 사용하여 특정 사용자용 Azure Information Protection 정책을 구성하는 방법
 
@@ -27,9 +27,9 @@ ms.locfileid: "32326568"
 
 Azure Information Protection 클라이언트를 지원하는 응용 프로그램의 경우 모든 사용자는 Information Protection 표시줄 제목/도구 설명, 전역 설정, 전역 레이블이 포함된 글로벌 정책을 받게 됩니다. 특정 사용자용으로 범위 지정 정책을 구성한 경우 해당 사용자는 추가 설정과 레이블을 받습니다. 
 
-Azure Information Protection 클라이언트를 지원하는 Office 데스크톱 응용 프로그램 외에 PowerShell 및 Azure Information Protection 스캐너에서도 레이블이 지원됩니다. 즉, Powershell 명령 또는 스캐너를 실행하는 계정에 대한 범위 정책을 만들고 구성할 수 있습니다. 
+Azure Information Protection 클라이언트를 지원하는 Office 데스크톱 응용 프로그램 외에 PowerShell 및 Azure Information Protection 스캐너에서도 레이블이 지원됩니다. 즉, PowerShell 명령 또는 스캐너를 실행하는 계정에 대한 범위 지정 정책을 만들고 구성할 수 있습니다. 
 
-범위 지정 정책도 레이블과 마찬가지로 Azure Portal에서 순서가 지정됩니다. 특정 사용자에게 여러 범위를 설정한 경우에는 정책을 다운로드하기 전에 해당 사용자에 대한 실제 정책을 계산합니다. 정책 순서에 따라 마지막 정책 설정이 적용됩니다. 글로벌 정책의 레이블과 사용자가 속한 범위 지정 정책의 추가 레이블이 사용자에게 표시됩니다. 
+범위 지정 정책도 레이블과 마찬가지로 Azure Portal에서 순서가 지정됩니다. 특정 사용자에게 여러 범위를 설정한 경우에는 정책을 다운로드하기 전에 해당 사용자에 대한 실제 정책을 계산합니다. 정책 순서에 따라 마지막 정책 설정이 적용됩니다. 글로벌 정책의 레이블과 사용자가 속한 범위 지정 정책의 추가 레이블이 사용자에게 표시됩니다.
 
 범위 지정 정책은 항상 글로벌 정책에서 레이블과 설정을 상속하므로, 범위 지정 정책을 만들거나 편집할 때는 글로벌 정책의 레이블이 표시됩니다. 범위 지정 정책을 편집할 때 글로벌 정책의 레이블을 편집할 수는 없지만 상속된 레이블에 하위 레이블을 추가할 수는 있습니다.
 

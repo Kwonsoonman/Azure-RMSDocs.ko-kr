@@ -4,7 +4,7 @@ description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/19/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d8472b8146aa80f00ae8c66f04ee253f7a0777da
-ms.sourcegitcommit: 3276c1f3f32137cb5450f335f4f55e3b5858694d
+ms.openlocfilehash: 90dac73ce15382b4be58e5eb191e44167bdee56f
+ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157785"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39295443"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -55,7 +55,7 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 
 - **Microsoft Office**: 다음 테이블의 파일 형식입니다.
     
-    이러한 파일 형식에 대해 지원되는 파일 형식: 최소 Office 97-2003 문서 및 Open Office XML
+    이러한 파일 형식에 대해 지원되는 파일 형식은 Office 프로그램(Word, Excel, PowerPoint)에 대한 97-2003 파일 형식 및 Office Open XML 형식입니다. 
     
     |Office 파일 형식|Office 파일 형식|
     |----------------------------------|----------------------------------|
@@ -95,9 +95,9 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
 
 - **다른 모든 파일**: 
     
-    - 이러한 파일을 보호하려면 파일 크기는 사용 가능한 디스크 공간과 메모리에 의해서만 제한됩니다.
+    - 기타 파일 형식을 보호 및 Azure Information Protection 뷰어에서 이러한 파일 형식 열기: 최대 파일 크기는 사용 가능한 디스크 공간 및 메모리까지로 제한됩니다.
     
-    - Azure Information Protection 뷰어에서 이러한 파일을 열려면 현재 미리 보기 버전의 Azure Information Protection 클라이언트가 없는 경우 텍스트 기반 파일(.ptxt 및 .pxml)에 지원되는 최대 파일 크기는 20MB입니다. 그림 기반 파일 및 PDF 파일의 경우 최대 파일 크기는 메모리에 의해서만 제한됩니다.
+    - [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet을 사용하여 파일 보호 해제: .pst 파일에 대해 지원되는 최대 파일 크기는 5GB입니다. 기타 파일 형식은 사용 가능한 디스크 공간 및 메모리까지로 제한됩니다.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>분류 및 보호가 지원되는 파일 형식
 
@@ -125,7 +125,7 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
 |.jt|.pjt|
 
 
-다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 나머지 파일 형식이 나와 있습니다. 이러한 형식은 Microsoft Office 앱용 파일 형식으로 인식할 수 있습니다. 지원되는 파일 형식은 최소 Office 97-2003 문서 및 Open Office XML입니다. 
+다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 나머지 파일 형식이 나와 있습니다. 이러한 형식은 Microsoft Office 앱용 파일 형식으로 인식할 수 있습니다. 이러한 파일 형식에 대해 지원되는 파일 형식은 Office 프로그램(Word, Excel, PowerPoint)에 대한 97-2003 파일 형식 및 Office Open XML 형식입니다.
 
 이러한 파일의 경우에는 Rights Management 서비스를 통해 파일을 보호한 후에도 파일 이름 확장명이 동일하게 유지됩니다.
 

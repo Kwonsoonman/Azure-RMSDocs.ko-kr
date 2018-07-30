@@ -4,7 +4,7 @@ description: Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 697fa4674699fd3b24f7f7353ff9f9d476040bd8
-ms.sourcegitcommit: c41490096af48e778947739e320e0dc8511f6c68
+ms.openlocfilehash: f632acdb4091967b0d8f5aebab97464d69b0b2e3
+ms.sourcegitcommit: 752368caff1bf5bff64a5d262e7bc4105d906827
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34423360"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39270613"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -40,7 +40,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 
 |사용 권한|설명|구현|
 |-------------------------------|---------------------------|-----------------|
-|일반 이름: **콘텐츠 편집, 편집** <br /><br />정책에서 인코딩: **DOCEDIT**|사용자가 응용 프로그램 내에서 콘텐츠를 수정, 다시 정렬, 형식 지정 또는 필터링할 수 있게 합니다. 편집된 복사본을 저장할 수 있는 권한은 부여하지 않습니다.<br /><br />Word에서는 이 권한으로 부족해 **변경 내용 추적**을 켜거나 끌 수 없고 검토자로 일부 변경 내용 추적 기능을 사용할 수 없습니다. 모든 변경 내용 추적 옵션을 사용하려면 **모든 권한**이 필요합니다. |Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 편집**<br /><br />Azure Portal의 이름: **콘텐츠 편집, 편집(DOCEDIT)**<br /><br />AD RMS 템플릿의 이름: **편집** <br /><br />API 상수 또는 값: 해당 사항 없음|
+|일반 이름: **콘텐츠 편집, 편집** <br /><br />정책에서 인코딩: **DOCEDIT**|사용자가 응용 프로그램 내에서 콘텐츠를 수정, 다시 정렬, 형식 지정 또는 정렬할 수 있게 합니다. 편집된 복사본을 저장할 수 있는 권한은 부여하지 않습니다.<br /><br />Word에서는, Office 365 ProPlus 1807 버전 이상(10325.20000 빌드 이상)이 없는 경우, 이 권한으로 부족해 **변경 내용 추적**을 켜거나 끌 수 없고 검토자로 일부 변경 내용 추적 기능을 사용할 수 없습니다. 대신, 모든 변경 내용 추적 옵션을 사용하려면 **모든 권한**이 필요합니다. |Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 편집**<br /><br />Azure Portal의 이름: **콘텐츠 편집, 편집(DOCEDIT)**<br /><br />AD RMS 템플릿의 이름: **편집** <br /><br />API 상수 또는 값: 해당 사항 없음|
 |일반 이름: **저장** <br /><br />정책에서 인코딩: **EDIT**|사용자가 현재 위치에 문서를 저장할 수 있게 합니다.<br /><br />Office 응용 프로그램에서 사용자가 이 권한을 사용하면 선택한 파일 형식이 Rights Management 보호를 기본적으로 지원하는 경우 문서를 수정하고 새 위치에 저장하고 새 이름을 저장할 수 있습니다. 파일 형식 제한은 원본 보호를 파일에서 제거할 수 없도록 합니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **파일 저장**<br /><br />Azure Portal의 이름: **저장(EDIT)**<br /><br />AD RMS 템플릿의 이름: **저장** <br /><br />API 상수 또는 값: `IPC_GENERIC_WRITE L"EDIT"`|
 |일반 이름: **주석** <br /><br />정책에서 인코딩: **COMMENT**|옵션을 사용하여 메모를 추가하거나 콘텐츠에 주석을 추가할 수 있습니다.<br /><br />이 권한은 SDK에서 사용할 수 있으며 Windows PowerShell 용 AzureInformationProtection 및 RMS 보호 모듈에서 임시 정책으로 사용할 수 있고 일부 소프트웨어 공급업체 응용 프로그램에서 구현되었습니다. 그러나 널리 사용되지 않으며 현재 Office 응용 프로그램에서 지원되지 않습니다.|Office 사용자 지정 권한: 구현되지 않음 <br /><br />Azure 클래식 포털의 이름: 구현되지 않음<br /><br />Azure 포털의 이름: 구현되지 않음<br /><br />AD RMS 템플릿의 이름: 구현되지 않음 <br /><br />API 상수 또는 값: `IPC_GENERIC_COMMENT L"COMMENT`|
 |일반 이름: **다른 이름으로 저장, 내보내기** <br /><br />정책에서 인코딩: **EXPORT**|콘텐츠를 다른 파일 이름에 저장하는 옵션(다른 이름으로 저장)을 사용할 수 있게 합니다. <br /><br />Office 문서와 Azure Information Protection 클라이언트의 경우에는 파일은 보호하지 않고 저장되어 새로운 설정과 사용 권한을 사용하여 다시 보호될 수 있습니다. 이러한 허용되는 동작은 권한이 있는 사용자가 보호된 문서 또는 이메일에서 Azure Information Protection 레이블을 변경하거나 제거할 수 있음을 의미합니다. <br /><br />이 권한이 부여된 사용자는 응용 프로그램에서 **OneNote로 보내기**등의 다른 내보내기 옵션도 수행할 수 있습니다.<br /><br /> 참고: 이 권한이 부여되면, 선택한 파일 형식이 기본적으로 Rights Management 보호를 지원하는 경우 사용자는 Office 응용 프로그램을 사용하여 문서를 새 이름으로 저장할 수 있습니다.|Office 사용자 지정 권한: **변경** 및 **모든 권한** 옵션의 일부로 제공됩니다. <br /><br />Azure 클래식 포털의 이름: **콘텐츠 내보내기(다른 이름으로 저장)** <br /><br />Azure Portal의 이름: **다른 이름으로 저장, 내보내기(EXPORT)**<br /><br />AD RMS 템플릿의 이름: **내보내기(다른 이름으로 저장)** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXPORT L"EXPORT"`|
@@ -49,7 +49,7 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |일반 이름: **인쇄** <br /><br />정책에서 인코딩: **PRINT**|콘텐츠 인쇄 옵션을 사용할 수 있게 합니다.|Office 사용자 지정 권한: 사용자 지정 권한에서 **콘텐츠 인쇄** 옵션의 일부로 제공됩니다. 받는 사람별 설정이 아닙니다.<br /><br />Azure 클래식 포털의 이름: **인쇄**<br /><br />Azure Portal의 이름: **인쇄(PRINT)**<br /><br />AD RMS 템플릿의 이름: **인쇄** <br /><br />API 상수 또는 값: `IPC_GENERIC_PRINT L"PRINT"`|
 |일반 이름: **회신** <br /><br />정책에서 인코딩: **REPLY**|**받는 사람** 또는 **참조** 줄의 변경을 허용하지 않고 메일 클라이언트에서 **회신** 옵션을 사용할 수 있게 합니다.<br /><br />이 권한을 부여할 때, 원래 메일이 첨부 파일이 아니라 전달된 메일 메시지의 일부로 포함되도록 **콘텐츠 편집, 편집** 권한(일반 이름)도 부여합니다. 이 권한은 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다. 또는 [온보딩 컨트롤](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)을 구현했으므로 Azure Rights Management 서비스 사용을 면제받는 조직의 사용자에게 필요합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **회신**<br /><br />Azure 클래식 포털의 이름: **회신(REPLY)**<br /><br />AD RMS 템플릿의 이름: **회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLY`|
 |일반 이름: **전체 회신** <br /><br />정책에서 인코딩: **REPLYALL**|메일 클라이언트에서 **전체 회신** 옵션을 사용할 수 있게 하지만 사용자가 **받는 사람** 또는 **참조** 줄에 받는 사람을 추가할 수 없습니다.<br /><br />이 권한을 부여할 때, 원래 메일이 첨부 파일이 아니라 전달된 메일 메시지의 일부로 포함되도록 **콘텐츠 편집, 편집** 권한(일반 이름)도 부여합니다. 이 권한은 Outlook 클라이언트나 Outlook Web App을 사용하는 다른 조직에 메일을 보낼 때에도 필요합니다. 또는 [온보딩 컨트롤](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy)을 구현했으므로 Azure Rights Management 서비스 사용을 면제받는 조직의 사용자에게 필요합니다.|Office 사용자 지정 권한: 해당 없음<br /><br />Azure 클래식 포털의 이름: **전체 회신**<br /><br />Azure Portal의 이름: **전체 회신(REPLY ALL)**<br /><br />AD RMS 템플릿의 이름: **전체 회신** <br /><br />API 상수 또는 값: `IPC_EMAIL_REPLYALL L"REPLYALL"`|
-|일반 이름: **보기, 열기, 읽기** <br /><br />정책에서 인코딩: **VIEW**|사용자가 문서를 열고 콘텐츠를 시각화할 수 있게 합니다.<br /><br /> Excel에서는 이 권한으로 부족해 데이터를 정렬 및 필터링하거나 피벗 테이블을 만들 수 없습니다. 이러한 작업을 수행하려면 **콘텐츠 편집, 편집** 권한이 필요합니다. [추가 정보](https://cloudblogs.microsoft.com/enterprisemobility/2015/12/09/enabling-document-interaction-sort-filter-etc-while-disabling-saving-with-rms/)|Office 사용자 지정 권한: **읽기** 사용자 지정 정책의 **보기** 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **보기**<br /><br />Azure Portal의 이름: **보기, 열기, 읽기(VIEW)**<br /><br />AD RMS 템플릿의 이름: **전체 회신** <br /><br />API 상수 또는 값: `IPC_GENERIC_READ L"VIEW"`|
+|일반 이름: **보기, 열기, 읽기** <br /><br />정책에서 인코딩: **VIEW**|사용자가 문서를 열고 콘텐츠를 시각화할 수 있게 합니다.<br /><br /> Excel에서는 이 권한으로는 데이터를 정렬할 수 없습니다. **콘텐츠 편집, 편집** 권한이 필요합니다. Excel에서 데이터를 필터링하려면 **콘텐츠 편집, 편집** 및 **복사** 권한이 필요합니다.|Office 사용자 지정 권한: **읽기** 사용자 지정 정책의 **보기** 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **보기**<br /><br />Azure Portal의 이름: **보기, 열기, 읽기(VIEW)**<br /><br />AD RMS 템플릿의 이름: **읽기** <br /><br />API 상수 또는 값: `IPC_GENERIC_READ L"VIEW"`|
 |일반 이름: **복사** <br /><br />정책에서 인코딩: **EXTRACT**|문서의 데이터(화면 캡처 포함)를 동일한 문서나 다른 문서에 복사하는 옵션을 사용할 수 있게 합니다.<br /><br />일부 응용 프로그램에서는 전체 문서를 보호되지 않은 형태로 저장할 수도 있습니다.<br /><br />비즈니스용 Skype 및 이와 유사한 화면 공유 응용 프로그램에서 발표자는 이 권한이 있어야만 보호된 문서를 프레젠테이션할 수 있습니다. 발표자에게 이 권한이 없으면 참석자는 문서를 볼 수 없고 이 문서가 까맣게 표시됩니다.|Office 사용자 지정 권한: **읽기 권한이 있는 사용자에게 내용 복사 허용** 사용자 지정 정책 옵션으로 제공됩니다.<br /><br />Azure 클래식 포털의 이름: **콘텐츠 복사 및 추출**<br /><br />Azure Portal의 이름: **복사(EXTRACT)**<br /><br />AD RMS 템플릿의 이름: **추출** <br /><br />API 상수 또는 값: `IPC_GENERIC_EXTRACT L"EXTRACT"`|
 |일반 이름: **권한 보기** <br /><br />정책에서 인코딩: **VIEWRIGHTSDATA**|사용자가 문서에 적용된 정책을 볼 수 있게 합니다.|Office 사용자 지정 권한: 구현되지 않음<br /><br />Azure 클래식 포털의 이름: **할당된 권한 보기**<br /><br />Azure Portal의 이름: **권한 보기(VIEWRIGHTSDATA)**<br /><br />AD RMS 템플릿의 이름: **권한 보기** <br /><br />API 상수 또는 값: `IPC_READ_RIGHTS L"VIEWRIGHTSDATA"`|
 |일반 이름: **권한 변경** <br /><br />정책에서 인코딩: **EDITRIGHTSDATA**|사용자가 문서에 적용된 정책을 변경할 수 있게 합니다. 보호 제거 포함을 포함합니다.|Office 사용자 지정 권한: 구현되지 않음<br /><br />Azure 클래식 포털의 이름: **권한 변경**<br /><br />Azure Portal의 이름: **권한 편집 (EDITRIGHTSDATA)**<br /><br />AD RMS 템플릿의 이름: **권한 편집** <br /><br />API 상수 또는 값: `PC_WRITE_RIGHTS L"EDITRIGHTSDATA"`|
@@ -125,7 +125,9 @@ Exchange Online에서 Office 365 메시지 암호화의 새로운 기능을 사�
 
 이 옵션을 선택하면 이메일이 암호화되고 받는 사람을 인증해야 합니다. 그런 다음, 받는 사람은  **다른 이름으로 저장, 내보내기** 및 **모든 권한**을 제외한 모든 사용 권한을 가집니다. 이 사용 권한 조합은 받는 사람에게 보호를 제거할 수 없다는 것을 제외하고 제한이 없다는 것을 의미합니다. 예를 들어 받는 사람은 이메일에서 복사, 인쇄 및 전달할 수 있습니다. 
 
-마찬가지로 이메일에 연결된 보호되지 않은 [Office 문서](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)는 동일한 사용 권한을 상속합니다. 이러한 문서는 자동으로 보호되며 받는 사람이 저장, 편집, 복사 및 인쇄할 수 있습니다. 받는 사람이 문서를 저장할 때 새 이름과 다른 형식으로 문서를 저장할 수 있습니다. 그러나 보호를 지원하는 파일 형식만 사용할 수 있으므로 원래 보호 기능 없이 문서를 저장할 수 없습니다. 첨부 파일에 대해 다른 사용 권한을 원하거나 첨부 파일이 상속된 보호를 지원하는 Office 문서가 아닌 경우 이메일에 첨부하기 전에 파일을 보호합니다. 그런 다음, 파일에 필요한 특정 사용 권한을 할당할 수 있습니다.
+마찬가지로, 기본적으로 메일에 연결된 보호되지 않은 [Office 문서](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)는 동일한 사용 권한을 상속합니다. 이러한 문서는 자동으로 보호되며, 다운로드되면 Office 응용 프로그램에서 받는 사람이 저장, 편집, 복사 및 인쇄할 수 있습니다. 받는 사람이 문서를 저장할 때 새 이름과 다른 형식으로 문서를 저장할 수 있습니다. 그러나 보호를 지원하는 파일 형식만 사용할 수 있으므로 원래 보호 기능 없이 문서를 저장할 수 없습니다. 첨부 파일에 대해 다른 사용 권한을 원하거나 첨부 파일이 상속된 보호를 지원하는 Office 문서가 아닌 경우 이메일에 첨부하기 전에 파일을 보호합니다. 그런 다음, 파일에 필요한 특정 사용 권한을 할당할 수 있습니다.
+
+또는 브라우저에서 문서를 볼 받는 사람에 대한 문서의 이 암호화 상속을 변경할 수 있습니다. 사용자가 인증된 후 문서에 대한 원래 보호를 유지할 필요가 없는 경우 이 구성을 사용해 보세요. 이와 같이 변경하려면 Exchange Online PowerShell 명령: `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`를 사용합니다. 그런 다음, 이러한 받는 사람이 문서를 다운로드하면 보호가 제거됩니다. 자세한 내용은 Office 블로그 게시물 [Admin control for attachments now available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)(이제 Office 365 메시지 암호화에서 첨부 파일에 대한 관리자 제어 사용 가능)을 참조하세요. 문서를 다운로드한 후 원래 보호를 유지해야 하는 경우 [Azure Information Protection을 사용하여 문서 공동 작업 보호](../get-started/secure-collaboration-documents.md)를 참조하세요.      
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>Rights Management 발급자와 Rights Management 소유자
 

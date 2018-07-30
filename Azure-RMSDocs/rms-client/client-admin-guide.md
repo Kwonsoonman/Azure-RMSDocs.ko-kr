@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/19/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 50eefe938a4d37dc63d2209a71b5a06f84a24587
-ms.sourcegitcommit: b5cefaefdd460ed5249db8747f232972b470c619
+ms.openlocfilehash: 45e1f405c751449148b0bfe3a7249640155778c6
+ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263320"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39295528"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -163,6 +163,28 @@ Azure Information Protection 클라이언트는 Office 365가 지원하는 같�
 이러한 언어의 경우 Azure Information Protection 클라이언트의 메뉴 옵션, 대화 상자 및 메시지가 사용자의 언어로 표시됩니다. 언어를 감지하는 단일 설치 관리자가 있으므로 다른 언어를 위한 Azure Information Protection 클라이언트를 설치하기 위해 추가로 구성할 필요가 없습니다. 
 
 그러나 지정한 레이블 이름 및 설명은 Azure Information Protection 정책에서 레이블을 구성할 때 자동으로 번역되지 않습니다. 2017년 8월 30일부터 현재 [기본 정책](../deploy-use/configure-policy-default.md)에는 일부 언어에 대한 지원이 포함됩니다. 사용자가 원하는 언어로 레이블을 볼 수 있게 하려면 직접 번역을 제공하고 이러한 번역을 사용하도록 Azure Information Protection 정책을 구성합니다. 자세한 정보는 [Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요. 시각적 표시는 번역되지 않으며 둘 이상의 언어를 지원하지 않습니다.
+
+## <a name="post-installation-tasks"></a>설치 후 작업
+
+Azure Information Protection 클라이언트를 설치한 후 문서 및 메일에 레이블을 지정하는 방법에 대한 지침과 특정 시나리오의 경우 선택하는 레이블에 대한 지침을 사용자에게 제공합니다. 예를 들면 다음과 같습니다.
+
+- 온라인 사용자 지침: [Azure Information Protection 사용자 가이드](client-user-guide.md)
+
+- 사용자 지정 가능한 사용자 가이드 다운로드: [Azure Information Protection 최종 사용자 채택 가이드](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+
+### <a name="update-macros-in-excel-spreadsheets"></a>Excel 스프레드시트에서 매크로 업데이트
+
+매크로가 포함된 Excel 스프레드시트가 있는 경우 다음과 같이 매크로를 편집하여 Azure Information Protection 클라이언트 설치 후 원하는 대로 계속 작동되도록 합니다.
+
+1. 매크로 시작에 다음을 추가합니다.
+
+        Application.EnableEvents = False
+
+2. 매크로 끝에 다음을 추가합니다.
+
+        Application.EnableEvents = True
+
+자세한 내용은 [Application.EnableEvents Property (Excel)](https://msdn.microsoft.com/vba/excel-vba/articles/application-enableevents-property-excel)(Application.EnableEvents 속성(Excel))을 참조하세요.
 
 ## <a name="upgrading-and-maintaining-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 업그레이드 및 유지 관리
 

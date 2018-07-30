@@ -4,18 +4,18 @@ description: Azure Information Protection를 빠르게 사용해 보기 위한 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/09/2018
+ms.date: 07/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: ffae0c9ef0e9ffd1fc9a4c25ef5c60e8da6de5ca
-ms.sourcegitcommit: 342b0bd8c57eb621714609ec28234dd07fe95d1e
+ms.openlocfilehash: 994b9fb3db3c4a1616896ffac7fcd68b0aff7887
+ms.sourcegitcommit: c7e943700189eeaad3f4c919cc0fa3410fd4df5b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33946371"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204461"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성
 
@@ -38,7 +38,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-labelsv2.png)
     
-3. 또한 일부 정책 설정이 있음도 알 수 있습니다. 예를 들어 기본 레이블 집합이 없으며, 문서와 전자 메일에 레이블이 필요하지 않으며, 레이블을 변경할 때 사용자가 근거를 제공하지 않아도 됩니다.
+3. 레이블 뒤의 **Information Protection 최종 사용자에게 표시하고 적용할 설정 구성** 섹션에서 몇 가지 정책 설정을 확인할 수도 있습니다. 예를 들어 기본 레이블 집합이 없으며, 문서와 전자 메일에 레이블이 필요하지 않으며, 레이블을 변경할 때 사용자가 근거를 제공하지 않아도 됩니다.
     
     ![Azure Information Protection 빠른 시작 자습서 3단계 - 기본 정책](../media/info-protect-policy-default-settings.png)
 
@@ -52,7 +52,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 2. **분류 레이블 낮추기, 레이블 제거 또는 보호 제거를 설정하려면 근거를 제공해야 합니다.** 에서 이 옵션을 **켜기**로 설정합니다.
 
-3. 또한 **Make the custom permissions option available to users**(사용자 지정 권한 옵션을 사용자가 사용할 수 있게 허용) 설정을 찾습니다. **끄기**로 설정되어 있으면 **켜기**로 변경합니다.
+3. 또한 **Make the custom permissions option available to users**(사용자 지정 권한 옵션을 사용자가 사용할 수 있게 허용) 설정을 찾습니다. 이 설정이 **끄기**인 경우 **켜기**로 변경합니다.
     
     기본값은 구독을 얻은 시기에 따라 달라지므로 이 설정을 변경할 필요가 없을 수도 있습니다. 이 자습서의 뒷부분에서는 사용자 지정 권한을 사용하여 파일 탐색기에서 파일을 마우스 오른쪽 단추로 클릭할 때 지정한 사용자와 보호된 문서를 공유할 것입니다.
 
@@ -74,7 +74,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
     
     ![Azure Information Protection 레이블에 대해 구성된 보호](../media/info-protect-protection-bar-configured.png) 
     
-4. **보호** 블레이드에서 **Azure(클라우드 키)** 가 선택되었는지 확인합니다. 이 옵션은 Azure Rights Management 서비스를 사용하여 문서 및 전자 메일을 보호합니다. 또한 **사용 권한 설정**도 선택되었는지 확인합니다. 그런 다음 **권한 추가**를 선택합니다.
+4. **보호** 블레이드에서 **Azure(클라우드 키)** 가 선택되었는지 확인합니다. 이 옵션은 Azure Rights Management 서비스를 사용하여 문서 및 전자 메일을 보호합니다. 또한 **권한 설정** 옵션이 선택되어 있는지 확인합니다. 그런 다음 **권한 추가**를 선택합니다.
 
 5. **권한 추가** 블레이드에서 **\<조직 이름> 추가 - 모든 멤버**를 선택합니다. 예를 들어 조직 이름이 VanArsdel Ltd인 경우 선택할 다음 옵션이 표시됩니다.
     

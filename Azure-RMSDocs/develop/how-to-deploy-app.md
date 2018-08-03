@@ -14,12 +14,12 @@ ms.assetid: 34dc6d6f-cfe4-4848-9b11-8d90c4b38ef7
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 3b7ff758abeb3f1ddc1ae82349233e437d05dacc
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 3299981f6e45cc8c82da66e2fce07cece552c81f
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
-ms.locfileid: "20232839"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372277"
 ---
 # <a name="deploying-a-service-application-into-a-different-tenant"></a>다른 테넌트에 서비스 응용 프로그램 배포
 
@@ -51,5 +51,3 @@ ms.locfileid: "20232839"
 ## <a name="flow-2-abc-it-administrator-provides-the-key-to-the-coolapp-team"></a>흐름 2: *ABC* IT 관리자가 *CoolApp* 팀에 키 제공
 
 *ABC*의 IT 관리자가 **그림 1**과 같이 서비스 사용자를 만들면 *ABC*는 *CoolApp* 팀에 해당 정보를 제공합니다. 그러면 *CoolApp* 팀은 *ABC*의 테넌트에서 사용할 수 있게 해당 정보를 *CoolApp* 응용 프로그램에 포함합니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

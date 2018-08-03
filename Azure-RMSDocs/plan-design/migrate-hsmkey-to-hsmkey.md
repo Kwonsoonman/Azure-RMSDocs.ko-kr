@@ -4,7 +4,7 @@ description: AD RMS에서 Azure Information Protection으로 마이그레이션 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 757b3af36fb15c3069c5bef7ca4509ff92cee1f9
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: ccd62b7a539906c6e1f375e8bfc51e461f4cd547
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973327"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370519"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
 
@@ -80,7 +80,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
     지정한 암호를 입력하여 구성 데이터 파일을 내보냅니다. 그리고 다음 명령을 실행한 후 이 작업을 수행하려는 것을 확인합니다.
     
     ```
-    Import-AadrmTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultStringUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
+    Import-AadrmTpd -TpdFile "C:\contoso-tpd1.xml" -ProtectionPassword $TPD_Password –KeyVaultKeyUrl https://contoso-byok-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333 -Verbose
     ```
     
     이 가져오기의 일부로, SLC 키를 가져오고 보관됨으로 자동 설정됩니다.
@@ -97,5 +97,4 @@ Azure Key Vault에서 Azure Information Protection 테넌트 키가 사용하는
 
 이제 [5단계. Azure Rights Management 서비스 활성화](migrate-from-ad-rms-phase2.md#step-5-activate-the-azure-rights-management-service)로 이동할 수 있습니다.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

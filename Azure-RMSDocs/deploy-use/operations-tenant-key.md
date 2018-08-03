@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 1284d0ee-0a72-45ba-a64c-3dcb25846c3d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f459504f43c8e361e36832b19011f93d1cbaccc4
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: a12d0a885b4ed4762124511929bb9f139e8c02db
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205798"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369778"
 ---
 # <a name="operations-for-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키에 대한 작업
 
@@ -44,4 +44,3 @@ Azure 주요 자격 증명 모음의 테넌트 키를 직접 관리하는 방식
 
 그러나 Active Directory Rights Management Services에서 TPD(신뢰할 수 있는 게시 도메인)를 가져와서 Azure Information Protection 테넌트 키를 만들려는 경우 이 가져오기 작업은 [AD RMS에서 Azure Information Protection으로의 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)에 포함되어 진행됩니다.  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

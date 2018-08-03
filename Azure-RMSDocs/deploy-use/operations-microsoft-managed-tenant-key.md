@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 47653ccfb7ce512f8b9ac2a1a5540a62a7295ec2
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: cac2506f7c98431048c29291ca95f197a02c7fcd
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208195"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473766"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 
@@ -61,7 +61,7 @@ Microsoft에서 테넌트 키를 백업하며 사용자는 아무런 작업을 �
 
 ### <a name="step-1-initiate-export"></a>1단계: 내보내기 시작
 
-- [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 **Azure Information Protection 키 내보내기 요청에 관한 Azure Information Protection 지원 케이스**를 엽니다. 자신이 Azure Information Protection 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 내보내기는 무료 지원 서비스가 아닙니다.
+- [Microsoft 지원에 문의](../information-support.md#to-contact-microsoft-support)하여 **Azure Information Protection 키 내보내기 요청에 관한 Azure Information Protection 지원 케이스**를 엽니다. 자신이 Azure Information Protection 테넌트의 관리자임을 증명해야 하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 표준 지원 요금이 적용됩니다. 테넌트 키 내보내기는 무료 지원 서비스가 아닙니다.
 
 ### <a name="step-2-wait-for-verification"></a>2단계: 확인 대기
 
@@ -108,5 +108,4 @@ Microsoft에서는 전담 팀이 제품 및 서비스의 보안 문제에 대응
 |권한이 없는 개인이나 맬웨어가 테넌트 키 사용 권한을 확보했으나 키 자체가 유출되지는 않았습니다.|이 경우에는 테넌트 키를 다시 입력해도 도움이 되지 않으며 근본 원인을 분석해야 합니다. 프로세스 또는 소프트웨어 버그로 인해 권한이 없는 개인이 액세스 권한을 얻은 경우에는 해당 상황을 해결해야 합니다.|
 |RSA 알고리즘이나 키 길이에 취약점이 있거나 전산상 무차별 암호 대입 공격(brute force attack)이 가능합니다.|Microsoft에서 복원 가능한 더 긴 키 길이와 새 알고리즘을 지원하도록 Azure Information Protection을 업데이트하고 모든 고객에게 테넌트 키를 다시 생성하도록 지시해야 합니다.|
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 

@@ -13,16 +13,16 @@ ms.custom: askipteam
 ms.assetid: a2b3e1a2-59a0-4191-bf4c-4485ae7a70a9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 77d511cc466441ffc28d813be9a0ec86ff3d8fa7
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 9cc8d49b62155354b96ad04f76c335be2124f15a
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205039"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473511"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-office-365-admin-center"></a>Office 365 관리 센터에서 Azure 권한 관리를 활성화하는 방법
 
->*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Office 365 관리 센터에서 Azure 권한 관리 서비스에 액세스해야 하는 경우 다음 지침을 따르세요. 예를 들어 Office 365 E3 또는 Office 365 E5에 대한 구독이 있는 경우
 
@@ -44,7 +44,7 @@ Office 365 관리 센터에서 Azure 권한 관리 서비스에 액세스해야 
     >
     >Azure Rights Management Service를 활성화하려면 [Azure Information Protection Premium plan](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)(Azure Information Protection Premium 계획) 또는 [Rights Management가 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다. 
     
-    서비스를 활성화하는 데 도움이 필요하거나 구독 요구 사항에 대한 질문이 있는 경우 [Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하거나 표준 지원 채널을 사용하세요.
+    서비스를 활성화하는 데 도움이 필요하거나 구독 요구 사항에 대한 질문이 있는 경우 [Microsoft 지원에 문의](../information-support.md#to-contact-microsoft-support)하거나 표준 지원 채널을 사용하세요.
 
 4. **Rights Management** 페이지에서 **활성화**를 클릭합니다.
 
@@ -56,4 +56,3 @@ Office 365 관리 센터에서 Azure 권한 관리 서비스에 액세스해야 
 ## <a name="next-steps"></a>다음 단계
 [Azure Rights Management 활성화](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)를 다시 읽어보세요.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

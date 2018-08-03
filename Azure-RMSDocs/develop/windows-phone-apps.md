@@ -14,12 +14,12 @@ ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d236eaf4f9027a84a36819b5234a43cfc5674c54
-ms.sourcegitcommit: 55c7461f705a46f385a967753187ba2dda642238
+ms.openlocfilehash: b80045ac541402799ab51bc51e5f361c31b87555
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38229956"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372906"
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 설정
 
@@ -84,5 +84,3 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
 
 [Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

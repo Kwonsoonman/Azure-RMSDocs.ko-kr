@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8301aabb-047d-4892-935c-7574f6af8813
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: ba56e6b165cd378c957b2c54bd41ce54f1830797
-ms.sourcegitcommit: 1b0c387b2848b7dfaee0b0548dde7e41383ffe6e
+ms.openlocfilehash: fed57de220a5448a16a866fae76969eb4f9332de
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138307"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473868"
 ---
 # <a name="configuring-and-managing-templates-for-azure-information-protection"></a>Azure Information Protection의 템플릿 구성 및 관리
 
@@ -46,7 +46,7 @@ Azure Information Protection의 구독 또는 Azure Rights Management 서비스�
 >[!NOTE]
 > 이러한 설정과 기본 템플릿의 이름 및 설명을 변경할 수 있습니다. 이 기능은 Azure 클래식 포털에서는 사용할 수 없었으며 PowerShell에는 계속 지원되지 않습니다.
 
-이러한 기본 템플릿을 사용하면 사용자 및 다른 사용자가 조직의 중요한 데이터 보호를 즉시 쉽게 시작할 수 있습니다. 이러한 템플릿은 Azure Information Protection 레이블과 함께 사용하거나 Rights Management 템플릿을 사용할 수 있는 [응용 프로그램과 서비스](../understand-explore/applications-support.md)에서 단독으로 사용할 수 있습니다.
+이러한 기본 템플릿을 사용하면 사용자 및 다른 사용자가 조직의 중요한 데이터 보호를 즉시 쉽게 시작할 수 있습니다. 이러한 템플릿은 Azure Information Protection 레이블과 함께 사용하거나 Rights Management 템플릿을 사용할 수 있는 [응용 프로그램과 서비스](../applications-support.md)에서 단독으로 사용할 수 있습니다.
 
 사용자 지정 템플릿을 직접 만들 수도 있습니다. 대체로 몇 개의 템플릿만 필요하지만 Azure에는 최대 500개의 사용자 지정 템플릿이 저장되어 있을 수 있습니다.
 
@@ -164,4 +164,3 @@ Azure Information Protection 클라이언트를 실행하는 컴퓨터에서 이
 
 Azure Information Protection 정책 구성에 대해 자세히 알아보려면 [조직의 정책 구성](configure-policy.md#configuring-your-organizations-policy) 섹션의 링크를 사용하세요.  
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

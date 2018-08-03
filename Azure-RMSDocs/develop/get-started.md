@@ -14,12 +14,12 @@ ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: bddbc42a555ee6ccbd4dd7b41a4183374a1db070
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 34ad679cf5af056b1397a8ec4bdab6542f29c7f8
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764546"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371709"
 ---
 # <a name="get-started"></a>시작
 
@@ -54,5 +54,3 @@ ms.locfileid: "27764546"
   |[개발자 환경 설정](setup-developer-environment.md)|다음 항목에서는 특정 운영 체제용 AD RMS SDK API를 사용하도록 개발 환경을 설정하는 과정을 보여 줍니다.|
   |[코드 예제](code-examples.md)|MS RMS SDK 4.2에는 지원되는 일부 운영 체제에 대한 예제 코드와 작업 프로젝트가 포함되어 있습니다.|
   |[커뮤니티 리소스](community-resources.md)|여러 플랫폼에서 Active Directory Rights Management Services를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다.|
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

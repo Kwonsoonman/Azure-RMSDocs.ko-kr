@@ -11,12 +11,12 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: a32f4d774b67007ccc6638e3151bd6038e3f274c
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: cfd090df79e640ef6106f2c72001b2b05969cdf6
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765530"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473902"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
 
@@ -143,6 +143,5 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 ### <a name="see-also"></a>참고 항목
 
 - [개발자 용어](terms.md)
-- [Azure Information Protection 용어 - ITPro](../get-started/terminology.md)
+- [Azure Information Protection 용어 - ITPro](./terminology.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

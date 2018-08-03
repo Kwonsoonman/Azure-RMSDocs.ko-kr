@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2cf46bf9-7d23-4f49-b5c1-7ed7b71c858f
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 1e6ce5660a0ccc8385c6ab728c4d2c1c202023ed
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: d1014f139d0ddf81034708c636f3e13d946f3e06
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205842"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370825"
 ---
 # <a name="azure-information-protection-user-guide"></a>Azure Information Protection 사용자 가이드
 
@@ -48,5 +48,3 @@ Windows 7 서비스 팩 1 이상을 실행하는 컴퓨터만 있으면 됩니�
 > [!NOTE]
 > 엔터프라이즈 네트워크의 Azure Information Protection 클라이언트를 담당하는 관리인 경우 [Azure Information Protection 클라이언트 관리자 가이드](client-admin-guide.md)에서 추가 기술 정보를 참조하세요. 
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

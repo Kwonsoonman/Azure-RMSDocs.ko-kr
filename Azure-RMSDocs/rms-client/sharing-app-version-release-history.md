@@ -13,12 +13,12 @@ ms.custom: askipteam
 ms.assetid: 6751bd90-959f-4eba-91ed-6588ac983762
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1e3dc88f69b1fb4ed178f3f2d1268c47fae13621
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 1ebeef2847a8404d5970673acd3163b336cf0406
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208620"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473358"
 ---
 # <a name="rights-management-sharing-application-version-release-history"></a>Rights Management 공유 응용 프로그램: 버전 릴리스 기록
 
@@ -81,7 +81,7 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
 -   최신 인증을 사용하는 응용 프로그램에서 Microsoft 로그인 도우미에 대한 종속성도 제거하는 Azure RMS에 대한 MFA(다단계 인증)를 지원합니다.
 
-    자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](../get-started/requirements-azure-ad.md)에서 [MFA(Multi-Factor Authentication) 및 Azure RMS](../get-started/requirements-azure-ad.md#multi-factor-authentication-mfa-and-azure-information-protection) 섹션을 참조하세요.
+    자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](../requirements-servers.md)에서 [MFA(Multi-Factor Authentication) 및 Azure RMS](../requirements-servers.md) 섹션을 참조하세요.
 
 ## <a name="version-1017840"></a>버전 1.0.1784.0
 **릴리스 날짜**: 2015년 7월 30일
@@ -130,4 +130,3 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
 -   **조직 내의 여러 메일 도메인 지원**: AD RMS를 사용하며 조직의 사용자에게 여러 메일 도메인이 있는 경우 이 업데이트를 통해 사용자가 다른 도메인의 조직 사용자에 의해 보호된 콘텐츠를 사용할 수 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [AD RMS에만 해당: 조직 내의 여러 메일 도메인 지원](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) 섹션을 참조하세요.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 740a97298d27f5abb2cda8e0b6f3ce931c1a6d91
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: 937d9b1e91690ed7633d2112725f49e1325afcbd
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973463"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473929"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -29,9 +29,9 @@ AD RMS(Active Directory Rights Management Services) 배포를 Azure Information 
 
 이 AD RMS 마이그레이션이 조직에 맞는지 확실하지 않습니까?
 
-- Azure Information Protection에 대한 자세한 내용은 [Azure Information Protection이란?](../understand-explore/what-is-information-protection.md)을 참조하세요.
+- Azure Information Protection에 대한 자세한 내용은 [Azure Information Protection이란?](../what-is-information-protection.md)을 참조하세요.
 
-- Azure Information Protection과 AD RMS에 대한 비교는 [Azure Information Protection 및 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요.
+- Azure Information Protection과 AD RMS에 대한 비교는 [Azure Information Protection 및 AD RMS 비교](../compare-on-premise.md)를 참조하세요.
 
 ## <a name="recommended-reading-before-you-migrate-to-azure-information-protection"></a>Azure Information Protection으로 마이그레이션하기 전에 읽어보면 좋은 자료
 
@@ -43,7 +43,7 @@ AD RMS(Active Directory Rights Management Services) 배포를 Azure Information 
 
 - [Microsoft Rights Management 커넥터 개요](../deploy-use/deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector): RMS 커넥터 문서의 이 섹션에서는 온-프레미스 서버에서 Azure Rights Management Service에 연결하여 문서 및 메일을 보호하는 방법을 설명합니다.
 
-또한 AD RMS 작동 방법에 대해 잘 알고 있다면 [Azure RMS는 어떤 방식으로 작동하나요? 기본적인 이해](../understand-explore/how-does-it-work.md)를 읽으면 유용합니다. 클라우드 버전과 같거나 다른 기술 프로세스를 파악하는 데 도움이 됩니다.
+또한 AD RMS 작동 방법에 대해 잘 알고 있다면 [Azure RMS는 어떤 방식으로 작동하나요? 기본적인 이해](../how-does-it-work.md)를 읽으면 유용합니다. 클라우드 버전과 같거나 다른 기술 프로세스를 파악하는 데 도움이 됩니다.
 
 ## <a name="prerequisites-for-migrating-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션하기 위한 필수 구성 요소
 
@@ -73,7 +73,7 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
 
 - **Azure Information Protection에 대한 구독을 포함하여 Azure Information Protection을 실행하기 위한 모든 요구 사항(Azure Rights Management 서비스는 활성화되지 않음):**
 
-    [Azure Information Protection에 대한 요구 사항](../get-started/requirements-azure-rms.md)을 참조하세요.
+    [Azure Information Protection에 대한 요구 사항](../requirements.md)을 참조하세요.
 
     Office 2010을 실행하는 컴퓨터가 있는 경우 Azure Information Protection 클라이언트가 클라우드 서비스에 대해 사용자를 인증하는 기능을 제공하므로 이 클라이언트를 설치해야 합니다. 이후 버전 Office의 경우 분류 및 레이블 지정에 Azure Information Protection 클라이언트가 필요하며, 데이터를 보호하기만 하려는 경우 이는 선택 사항이지만 권장됩니다. 자세한 내용은 [Azure Information Protection 클라이언트 관리자 가이드](../rms-client/client-admin-guide.md)를 참조하세요.
 
@@ -113,11 +113,11 @@ AD RMS 암호화 모드를 확인하려면
 
 ### <a name="migration-limitations"></a>마이그레이션 제한 사항
 
-- Azure Information Protection에서 사용되는 Rights Management 서비스에 의해 지원되지 않는 소프트웨어 및 클라이언트에서는 Azure Rights Management로 보호되는 콘텐츠를 보호하거나 사용할 수 없습니다. [Azure Rights Management에 대한 요구 사항](../get-started/requirements-azure-rms.md)의 지원되는 응용 프로그램 및 클라이언트 섹션을 확인하세요.
+- Azure Information Protection에서 사용되는 Rights Management 서비스에 의해 지원되지 않는 소프트웨어 및 클라이언트에서는 Azure Rights Management로 보호되는 콘텐츠를 보호하거나 사용할 수 없습니다. [Azure Rights Management에 대한 요구 사항](../requirements.md)의 지원되는 응용 프로그램 및 클라이언트 섹션을 확인하세요.
 
 - 외부 파트너와 공동 작업하도록 AD RMS 배포가 구성된 경우(예: 트러스트된 사용자 도메인 또는 페더레이션 사용) 해당 파트너가 마이그레이션과 동시에 또는 마이그레이션 후 최대한 빨리 Azure Information Protection으로도 마이그레이션해야 합니다. 외부 파트너가 조직에서 이전에 Azure Information Protection을 사용하여 보호하던 콘텐츠에 계속 액세스하려면 사용자가 변경한 구성(이 문서에 포함됨)과 비슷하게 클라이언트 구성을 변경해야 합니다.
     
-    파트너에서 있을 수 있는 가능한 구성 차이로 인해 이러한 재구성에 대한 정확한 지침은 이 문서에서 다루지 않습니다. 그러나 계획 지침의 다음 섹션을 참조하고 추가로 도움이 필요하면 [Microsoft 지원에 문의](../get-started/information-support.md#support-options-and-community-resources)하세요.
+    파트너에서 있을 수 있는 가능한 구성 차이로 인해 이러한 재구성에 대한 정확한 지침은 이 문서에서 다루지 않습니다. 그러나 계획 지침의 다음 섹션을 참조하고 추가로 도움이 필요하면 [Microsoft 지원에 문의](../information-support.md#support-options-and-community-resources)하세요.
 
 ## <a name="migration-planning-if-you-collaborate-with-external-partners"></a>외부 파트너와 공동 작업하는 경우 마이그레이션 계획
 
@@ -219,4 +219,3 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 ## <a name="next-steps"></a>다음 단계
 마이그레이션을 시작하려면 [1단계 - 준비](migrate-from-ad-rms-phase1.md)로 이동합니다.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

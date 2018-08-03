@@ -14,12 +14,12 @@ ms.assetid: B546B6C1-ADC1-4EBD-95E2-B4A74E4E980B
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: fcf72e8c633186424957cde4bb98b5e2051b9dcf
-ms.sourcegitcommit: d1a3f35ea2d2c246a5b1e3f3da75df9c182fd0da
+ms.openlocfilehash: 3557dbf0d9f659bb5ffebd9afb4d4ef69e749985
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34480241"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370756"
 ---
 # <a name="overview"></a>개요
 
@@ -56,5 +56,3 @@ AD RMS 서버, AD RMS 클라이언트 및 해당 기능에 대한 자세한 내�
 * [RMS 개념](application-types.md)
 * [시작](getting-started-with-ad-rms-2-0.md)
 * [IT Pro documentation for AD RMS](https://technet.microsoft.com/library/cc771234.aspx)(AD RMS에 대한 IT 전문가 설명서)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

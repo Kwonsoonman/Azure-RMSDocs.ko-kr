@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b459babbf16b536b1cd73d0bb0ec2c36a499f9e1
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 2943d976e617a4ea2fae42f115b99d65774fb732
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207933"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473987"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure Information Protection 배포 로드맵
 
@@ -25,10 +25,10 @@ ms.locfileid: "30207933"
 
 다음 단계를 권고 사항으로 사용하여 조직에 대해 Azure Information Protection을 준비, 구현 및 관리할 수 있습니다.
 
-그러나 프로덕션 환경에서 롤아웃하지 않고 직접 Azure Information Protection을 빠르게 시도하려는 경우 [Azure Information Protection에 대한 빠른 시작 자습서](../get-started/infoprotect-quick-start-tutorial.md)를 참조하세요.
+그러나 프로덕션 환경에서 롤아웃하지 않고 직접 Azure Information Protection을 빠르게 시도하려는 경우 [Azure Information Protection에 대한 빠른 시작 자습서](../infoprotect-quick-start-tutorial.md)를 참조하세요.
 
 > [!IMPORTANT]
-> 다음 단계를 수행하기 전에 [Azure Information Protection 요구 사항](../get-started/requirements-azure-rms.md)을 검토해야 합니다.
+> 다음 단계를 수행하기 전에 [Azure Information Protection 요구 사항](../requirements.md)을 검토해야 합니다.
 
 조직에 적용 가능하고, 필요한 [구독 기능](https://azure.microsoft.com/pricing/details/information-protection/)과 일치하는 배포 로드맵을 선택합니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "30207933"
 ### <a name="step-1-confirm-your-subscription-and-assign-user-licenses"></a>1단계: 구독을 확인하고 사용자 라이선스 할당
 [Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 검토하여 예상하는 기능이 포함된 구독이 조직에 있는지 확인합니다. 그런 다음 문서와 전자 메일을 분류하고, 레이블 지정하고, 보호할 조직의 각 사용자에게 이 구독의 라이선스를 할당합니다.
 
-참고: 개인용 무료 RMS 구독에서 사용자 라이선스를 수동으로 할당하지 말고 이 라이선스를 사용하여 조직의 Azure Rights Management 서비스를 관리하지 마세요. 이러한 라이선스는 Office 365 관리 센터에 **Rights Management Adhoc**으로 표시되고, Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx)를 실행할 경우 **RIGHTSMANAGEMENT_ADHOC**으로 표시됩니다. 개인용 RMS 구독이 사용자에게 자동으로 부여되고 할당되는 방법에 대한 자세한 내용은 [개인용 RMS 및 Azure Information Protection](../understand-explore/rms-for-individuals.md)을 참조하세요.
+참고: 개인용 무료 RMS 구독에서 사용자 라이선스를 수동으로 할당하지 말고 이 라이선스를 사용하여 조직의 Azure Rights Management 서비스를 관리하지 마세요. 이러한 라이선스는 Office 365 관리 센터에 **Rights Management Adhoc**으로 표시되고, Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx)를 실행할 경우 **RIGHTSMANAGEMENT_ADHOC**으로 표시됩니다. 개인용 RMS 구독이 사용자에게 자동으로 부여되고 할당되는 방법에 대한 자세한 내용은 [개인용 RMS 및 Azure Information Protection](../rms-for-individuals.md)을 참조하세요.
 
 
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>2단계: Azure Information Protection을 사용하도록 테넌트 준비
@@ -137,7 +137,7 @@ Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파�
 ### <a name="step-1-confirm-that-you-have-a-subscription-that-includes-the-protection-service-from-azure-information-protection"></a>1단계: Azure Information Protection의 보호 서비스를 포함하는 구독이 있는지 확인
 [Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 검토하여 예상하는 기능이 포함된 구독이 조직에 있는지 확인합니다. 그런 다음, 문서와 이메일을 보호할 조직의 각 사용자에게 이 구독의 라이선스를 할당합니다.
 
-참고: 개인용 무료 RMS 구독에서 사용자 라이선스를 수동으로 할당하지 말고 이 라이선스를 사용하여 조직의 Azure Rights Management 서비스를 관리하지 마세요. 이러한 라이선스는 Office 365 관리 센터에 **Rights Management Adhoc**으로 표시되고, Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx)를 실행할 경우 **RIGHTSMANAGEMENT_ADHOC**으로 표시됩니다. 개인용 RMS 구독이 사용자에게 자동으로 부여되고 할당되는 방법에 대한 자세한 내용은 [개인용 RMS 및 Azure Information Protection](../understand-explore/rms-for-individuals.md)을 참조하세요.
+참고: 개인용 무료 RMS 구독에서 사용자 라이선스를 수동으로 할당하지 말고 이 라이선스를 사용하여 조직의 Azure Rights Management 서비스를 관리하지 마세요. 이러한 라이선스는 Office 365 관리 센터에 **Rights Management Adhoc**으로 표시되고, Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx)를 실행할 경우 **RIGHTSMANAGEMENT_ADHOC**으로 표시됩니다. 개인용 RMS 구독이 사용자에게 자동으로 부여되고 할당되는 방법에 대한 자세한 내용은 [개인용 RMS 및 Azure Information Protection](../rms-for-individuals.md)을 참조하세요.
 
 
 ### <a name="step-2-prepare-your-tenant-to-use-azure-information-protection"></a>2단계: Azure Information Protection을 사용하도록 테넌트 준비
@@ -190,4 +190,3 @@ Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파�
 ### <a name="step-5-administer-the-protection-service-for-your-tenant-account-as-needed"></a>5단계: 필요에 따라 테넌트 계정의 보호 서비스 관리
 보호 서비스 사용을 시작하면 PowerShell을 통해 관리 변경 작업을 스크립트로 작성하거나 자동화할 수 있습니다. 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스](../deploy-use/administer-powershell.md)를 참조하세요.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

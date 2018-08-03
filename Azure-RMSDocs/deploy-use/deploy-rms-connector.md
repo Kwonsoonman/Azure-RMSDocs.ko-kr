@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 90e7e33f-9ecc-497b-89c5-09205ffc5066
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c49306a731bf629f3678dc9aa95b23b8ee46190e
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: 5e7003c2b2dbcd81ee980dda1dfab14291e81088
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34217025"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473402"
 ---
 # <a name="deploying-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 배포
 
@@ -41,7 +41,7 @@ RMS 커넥터는 Exchange Server, SharePoint Server 및 Windows Server를 실행
 > [!NOTE]
 > 파일 분류 인프라를 사용하여 Office 문서뿐 아니라 여러 파일 형식을 보호하려는 경우 RMS 커넥터가 아닌 [AzureInformationProtection cmdlet](/powershell/azureinformationprotection/vlatest/aip)을 대신 사용합니다.
 
-RMS 커넥터에서 지원하는 이러한 온-프레미스 서버의 버전은 [Azure RMS를 지원하는 온-프레미스 서버](..\get-started\requirements-servers.md)를 참조하세요.
+RMS 커넥터에서 지원하는 이러한 온-프레미스 서버의 버전은 [Azure RMS를 지원하는 온-프레미스 서버](../requirements-servers.md)를 참조하세요.
 
 
 ### <a name="support-for-hybrid-scenarios"></a>하이브리드 시나리오에 대한 지원
@@ -94,5 +94,3 @@ RMS 커넥터를 설치하기 전에 먼저 다음 요구 사항이 설정되어
 ## <a name="next-steps"></a>다음 단계
 
 1단계: [Azure 권한 관리 커넥터 설치 및 구성](install-configure-rms-connector.md)으로 이동합니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

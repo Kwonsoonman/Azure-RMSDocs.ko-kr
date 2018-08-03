@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: b9af5dc3-73d4-4147-b7ef-f6803b0d5216
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6acedb72d270bb5d4153701a6d42aa2757fbacbd
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4da8df0696ce011e2bbe91ee8a1fd53fd5e854f5
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204818"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371920"
 ---
 # <a name="rights-management-sharing-application-installation-and-configuration-for-clients"></a>Rights Management 공유 응용 프로그램: 클라이언트 설치 및 구성
 
@@ -40,6 +40,5 @@ Mac 컴퓨터 및 Windows Phone 장치용 RMS 공유 앱은 [Microsoft Azure Inf
 더 이상 이 페이지에서 iOS 및 Android용 RMS 공유 앱을 다운로드할 수 있습니다. 이 모바일 장치용 링크를 클릭하면 이제 Azure Information Protection 클라이언트가 다운로드됩니다. 
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

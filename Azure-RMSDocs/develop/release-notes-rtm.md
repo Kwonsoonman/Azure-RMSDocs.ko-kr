@@ -14,12 +14,12 @@ ms.assetid: CE379738-4E1D-42AD-83F4-F89B70456EBB
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 74f4eacb7601d137e8eb459fad3853ac5ec52e97
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 7f634e554b342e35b359fe870a5b0f033794b9c1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30259033"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373705"
 ---
 # <a name="release-notes"></a>릴리스 정보
 
@@ -165,5 +165,3 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
     3 - The first available language specified in the Rights Management Server (RMS) template.
 
 이름 및 설명을 검색할 수 없으면 오류가 반환됩니다. 특정 LCID마다 하나의 이름과 설명만 사용할 수 있습니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

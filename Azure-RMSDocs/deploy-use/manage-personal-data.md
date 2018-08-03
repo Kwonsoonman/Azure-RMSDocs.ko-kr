@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 99a51862-83e9-4a1e-873a-a84ae1465f07
 ms.reviewer: aashishr
 ms.suite: ems
-ms.openlocfilehash: f0fc9b01b042c3210abf69804d552607d92c5928
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: f42e1318e8be0d805216cffd402a9b87a1259e1e
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444344"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473851"
 ---
 # <a name="manage-personal-data-for-azure-information-protection"></a>Azure Information Protection을 위한 개인 데이터 관리
 
@@ -254,7 +254,7 @@ Azure Rights Management 서비스에 대한 문서 추적 로그, 관리 로그 
 다음 세 단계를 사용하여 Microsoft에서 Azure Rights Management 서비스에 대한 문서 추적 로그, 관리 로그 또는 사용 로그에서 개인 데이터를 삭제하도록 요청합니다. 
 
 **1: 삭제 요청 시작**
-[Microsoft 지원에 문의](../get-started/information-support.md#to-contact-microsoft-support)하여 테넌트에서 데이터를 삭제하기 위한 요청이 포함된 Azure Information Protection 지원 케이스를 엽니다. Azure Information Protection 테넌트의 관리자임을 증명하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 요청을 제출하는 동안 삭제해야 하는 데이터에 따라 추가 정보를 제공해야 합니다.
+[Microsoft 지원에 문의](../information-support.md#to-contact-microsoft-support)하여 테넌트에서 데이터를 삭제하기 위한 요청이 포함된 Azure Information Protection 지원 케이스를 엽니다. Azure Information Protection 테넌트의 관리자임을 증명하고, 이 프로세스를 확인하는 데 며칠이 걸린다는 것을 이해해야 합니다. 요청을 제출하는 동안 삭제해야 하는 데이터에 따라 추가 정보를 제공해야 합니다.
 
 - 관리 로그를 삭제하려면 **종료 날짜**를 제공합니다. 해당 종료 날짜까지 모든 관리 로그가 삭제됩니다.
 - 사용 로그를 삭제하려면 **종료 날짜**를 제공합니다. 해당 종료 날짜까지 모든 사용 로그가 삭제됩니다.
@@ -277,4 +277,3 @@ Azure Information Protection은 개인 데이터를 기반으로 한 프로파�
 
 삭제 작업의 경우 지원 요청은 Microsoft에서 수행한 작업에 대한 감사 및 보고 내역으로 사용됩니다. 삭제 후 삭제된 데이터는 검색 및 내보내기에 사용할 수 없으며 관리자는 AADRM 모듈에서 Get cmdlet을 사용하여 이를 확인할 수 있습니다.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

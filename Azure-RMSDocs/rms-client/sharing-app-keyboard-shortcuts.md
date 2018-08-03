@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 72760134-94e0-4699-b20c-07b96aa061f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 39787218e1c9e1d130748aa309ae49790b64275a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 1c260cd3d27d38328c3e09c71b3db77bb30ecfaa
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30206957"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375388"
 ---
 # <a name="use-keyboard-shortcuts-in-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에서 바로 가기 키 사용
 
@@ -38,5 +38,3 @@ RMS 공유 응용 프로그램을 사용할 때 **Alt** 키를 누르면 사용 
 
 ## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

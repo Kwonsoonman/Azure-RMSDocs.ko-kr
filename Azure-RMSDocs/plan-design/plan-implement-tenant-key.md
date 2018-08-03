@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6456bb5e124b1ec29090132e0bce750260c10f25
-ms.sourcegitcommit: b993c332e53d7aa48d93d4bbd42c80abcf79b351
+ms.openlocfilehash: e38f2c84e450b11ea8d86aa8b1680e4754a5aae4
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37107018"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372654"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키 계획 및 구현
 
@@ -51,7 +51,7 @@ Azure Information Protection 테넌트 키란?
     
     이 옵션은 관리 오버헤드가 가장 낮은 가장 간단한 옵션입니다. 대부분의 경우 고객은 테넌트 키를 가지고 있다는 사실조차 알 필요가 없습니다. Azure Information Protection에 등록하기만 하면 나머지 키 관리 프로세스는 Microsoft에서 처리합니다.
 
-- **고객이 직접 관리(BYOK)**: 테넌트 키를 완전히 제어하려면 Azure Information Protection과 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)를 사용하세요. 이러한 테넌트 키 토폴로지의 경우 Key Vault에서 직접 키를 만들거나 온-프레미스에서 만듭니다. 온-프레미스에서 만들면 이 키를 Key Vault로 전송하거나 가져옵니다. 그런 다음 이 키를 사용하도록 Azure Information Protection을 구성하고 Azure Key Vault에서 관리합니다.
+- **고객이 직접 관리(BYOK)**: 테넌트 키를 완전히 제어하려면 Azure Information Protection과 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)를 사용하십시오. 이러한 테넌트 키 토폴로지의 경우 Key Vault에서 직접 키를 만들거나 온-프레미스에서 만듭니다. 온-프레미스에서 만들면 이 키를 Key Vault로 전송하거나 가져옵니다. 그런 다음 이 키를 사용하도록 Azure Information Protection을 구성하고 Azure Key Vault에서 관리합니다.
     
 
 ### <a name="more-information-about-byok"></a>BYOK에 대한 추가 정보
@@ -199,5 +199,3 @@ Azure Information Protection에 대해 키 URL이 제대로 설정되어 있는�
 3.  테넌트 키 관리.
     
     테넌트 키의 수명 주기 작업에 대한 자세한 내용은 [Azure Information Protection 테넌트 키에 대한 작업](../deploy-use/operations-tenant-key.md)을 참조하세요.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

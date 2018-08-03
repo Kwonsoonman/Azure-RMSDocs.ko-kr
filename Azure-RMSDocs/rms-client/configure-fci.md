@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: be2c1a7c0432d3054eb5eced844ba42f402481d6
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: a9780e355839edaa4b6eccea9692b2a1058affaa
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30208365"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474191"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
@@ -293,6 +293,5 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
 
 ## <a name="next-steps"></a>다음 단계
 
-[Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?](../get-started/faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 확인 
+[Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?](../faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 확인 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

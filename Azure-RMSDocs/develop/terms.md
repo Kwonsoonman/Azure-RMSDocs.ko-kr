@@ -14,12 +14,12 @@ ms.assetid: adb1f868-0da7-431b-83d1-86f41c2da4ae
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: c99a87deb6c333ed61e13c5d98f59d6623f75cbd
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: a0b63f08041c7cf57dd079136bd55a95b1659fd3
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764527"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375371"
 ---
 # <a name="terms"></a>용어
 
@@ -38,5 +38,3 @@ PFile 형식이라고도 하며, AD RMS의 기본 파일 형식이고 RMS 사용
 
 PFile 형식은 Microsoft Rights Management SDK 4.2가 설계된 방식에 포함되므로 응용 프로그램 개발자에게 투명합니다.
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

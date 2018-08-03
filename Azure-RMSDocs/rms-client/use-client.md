@@ -13,12 +13,12 @@ ms.assetid: a6fa85be-f92a-4e00-9efc-9dbfd4dfbfcb
 ROBOTS: noindex,nofollow
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: efbc164b27e1dfe1b839e2ace893c4e3c5e656aa
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: f9dcd216a3591dee9fc328dac9d17d9338a9a978
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205132"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474429"
 ---
 # <a name="the-client-side-of-azure-information-protection"></a>Azure Information Protection의 클라이언트 측면
 
@@ -48,6 +48,4 @@ Windows용 Rights Management 공유 응용 프로그램 및 RMS 보호 도구는
 
 
 ## <a name="see-also"></a>참고 항목
-[Azure Information Protection 및 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
+[Azure Information Protection 및 AD RMS 비교](../compare-on-premise.md)

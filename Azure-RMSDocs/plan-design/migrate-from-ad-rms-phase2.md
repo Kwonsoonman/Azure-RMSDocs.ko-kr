@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 033504a26ae04bae3e4f1179503855bcfce63d73
-ms.sourcegitcommit: 0fda9ea4a7b91d4bb3a9e4f9d5cc4106ce1e2d43
+ms.openlocfilehash: d37f6fa84cc59645cb58213958f760a82fb1c810
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38973405"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375405"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -195,5 +195,3 @@ Remove-PSDrive MyRmsAdmin -force
 
 ## <a name="next-steps"></a>다음 단계
 [3단계 - 클라이언트 쪽 구성](migrate-from-ad-rms-phase3.md)으로 이동합니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -14,12 +14,12 @@ ms.assetid: B57AC6F3-733C-42A8-AF83-0E15FBF27C99
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f79c0d60bf460c0f8cca68f6b0447303a383c686
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 2fe2745a0966c7ff6d9d0c9a2c1b3dd5d73156ac
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765785"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39369958"
 ---
 # <a name="development-environment-files"></a>개발 환경 파일
 
@@ -48,5 +48,3 @@ ms.locfileid: "27765785"
 |Msipc.lib|\lib\x64|RMS SDK 2.1을 사용하여 x64 응용 프로그램을 빌드할 때 연결할 라이브러리입니다.|
 |Msipc_s.lib|\lib\x64|x64 응용 프로그램의 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)에 대한 진입점을 제공합니다.|
 |Genmanifest.exe|\tools|RMS 사용 응용 프로그램을 개발하는 동안 사용할 매니페스트를 생성합니다.|
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 429af8c070b40f20b67f4e859e0659870dee177c
-ms.sourcegitcommit: 56a49619c0c52fa5296810b27161f23b3380eab9
+ms.openlocfilehash: 2b7973c2f0a0edeeba262d647243bfce643f7f88
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39029885"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373008"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>사용자 가이드; Azure Information Protection에 의해 레이블이 지정되었거나 Rights Management로 보호된 파일 및 전자 메일에서 분류 레이블 및 보호를 제거합니다.
 
@@ -82,5 +82,3 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
 
 기타 구성 지침: [Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

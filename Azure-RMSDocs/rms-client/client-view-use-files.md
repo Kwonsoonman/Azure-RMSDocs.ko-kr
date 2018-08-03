@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb631b0153ce047177ef12887c025303acfac1db
-ms.sourcegitcommit: c207a2f592d167a4a0b6c4427259683e2087f143
+ms.openlocfilehash: a9b09347531bc27c965222e5d8b3c23fe593cd72
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31441865"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473327"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>사용자 가이드: Rights Management로 보호된 파일 보기 및 사용
 
@@ -40,7 +40,7 @@ ms.locfileid: "31441865"
 > 
 > 다른 조직의 누군가로부터 보호된 문서를 받았거나 PC에 대해 로컬 관리자 권한이 없으면 뷰어를 설치합니다.
 
-보호된 문서를 열 수 있으려면 응용 프로그램이 "RMS 지원" 프로그램이어야 합니다. Office 앱 및 Azure Information Protection 뷰어가 RMS 지원 응용 프로그램의 예입니다. 유형 및 지원되는 장치별로 응용 프로그램 목록을 보려면 [RMS 지원 응용 프로그램](../get-started/requirements-applications.md#rms-enlightened-applications) 표를 참조하세요.  
+보호된 문서를 열 수 있으려면 응용 프로그램이 "RMS 지원" 프로그램이어야 합니다. Office 앱 및 Azure Information Protection 뷰어가 RMS 지원 응용 프로그램의 예입니다. 유형 및 지원되는 장치별로 응용 프로그램 목록을 보려면 [RMS 지원 응용 프로그램](../requirements-applications.md#rms-enlightened-applications) 표를 참조하세요.  
 ## <a name="messagerpmsg-as-an-email-attachment"></a>Message.rpmsg를 메일 첨부 파일로 사용
 
 **message.rpmsg**를 메일 첨부 파일로 보는 경우 보호된 문서가 아니며 첨부 파일로 표시되는 보호된 메일 메시지입니다. Windows PC에서 이 보호된 메일 메시지를 보기 위해 Windows용 Azure Information Protection 뷰어를 사용할 수는 없습니다. 대신 Office Outlook과 같은 Rights Management 보호를 지원하는 Windows용 전자 메일 응용 프로그램이 필요합니다. 또는 웹용 Outlook을 사용할 수 있습니다.
@@ -87,5 +87,3 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
 
 -   [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 62f854264f48b51e6177c033d95dabaf75e2dc5d
-ms.sourcegitcommit: affda7572064edaf9e3b63d88f4a18d0d6932b13
+ms.openlocfilehash: 07da614bf7971ee4ef89ec9ec3830be188483201
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31009120"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371767"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>마이그레이션 3단계 - 클라이언트 쪽 구성
 
@@ -67,7 +67,8 @@ Office 2016 간편 실행 데스크톱 앱을 사용하는 Windows 컴퓨터의 
     |**우선 순위**|0|  
     |**가중치**|0|  
     |**포트 번호**|80|  
-    |**이 서비스를 제공하는 호스트**|5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com|  
+    |
+  **이 서비스를 제공하는 호스트**|5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com|  
 
 2. AD RMS 게시 엔드포인트에서 Office 2016 사용자에 대한 거부 권한을 설정합니다.
 
@@ -141,5 +142,3 @@ Office 2016 간편 실행 데스크톱 앱을 사용하는 Windows 컴퓨터의 
 
 ## <a name="next-steps"></a>다음 단계
 마이그레이션을 계속하려면 [4단계 - 지원 서비스 구성](migrate-from-ad-rms-phase4.md)으로 이동합니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -14,12 +14,12 @@ ms.assetid: f89f59b7-33d1-4ab3-bb64-1e9bda269935
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 5900a011a4470a46cc86e1bca1ada32b43cb0213
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 01202f34d31569d7835ad57a70e2a2d0d49a9678
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258968"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473419"
 ---
 # <a name="configure-your-app-for-adal-authentication"></a>ADAL 인증을 위한 앱 구성
 
@@ -29,7 +29,7 @@ ms.locfileid: "30258968"
 
 다음이 필요합니다.
 
-- [Microsoft Azure에 대한 구독](https://azure.microsoft.com/)(무료 평가판이면 충분). 자세한 내용은 [사용자가 개인용 RMS를 등록하는 방법](../understand-explore/rms-for-individuals-user-sign-up.md)을 참조하세요.
+- [Microsoft Azure에 대한 구독](https://azure.microsoft.com/)(무료 평가판이면 충분). 자세한 내용은 [사용자가 개인용 RMS를 등록하는 방법](../rms-for-individuals-user-sign-up.md)을 참조하세요.
 - Microsoft Azure 권한 관리에 대한 구독(무료 [개인용 RMS](https://technet.microsoft.com/library/dn592127.aspx) 계정이면 충분)
 
 > [!NOTE]
@@ -104,4 +104,3 @@ Microsoft Azure에 등록한 후
 
 ![저장 선택](../media/SaveApplication.png)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

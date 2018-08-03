@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 099d85a753d81d3d7e8a649f132ee723d9f20006
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: e9de16a5ed4322dc0a35f89d6a43218a8256c154
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34217042"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371046"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
 
@@ -246,4 +246,3 @@ RMS 커넥터 관리 도구를 설치하려면 다음 파일을 실행합니다.
 ## <a name="next-steps"></a>다음 단계
 이제 RMS 커넥터를 설치 및 구성했으므로 커넥터를 사용하도록 온-프레미스 서버를 구성할 준비가 되었습니다. [Azure 권한 관리 커넥터에 대해 서버 구성](configure-servers-rms-connector.md)으로 이동합니다.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

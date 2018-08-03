@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 30ee2f77-ce16-4113-bcda-6089131849ec
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 30dbfbe2cd9ef7d8acd89a9a76cd1108d7c03ab2
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: aad2683fb5c30eda8b94f2208a1c72f46d4a0e13
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30205723"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370604"
 ---
 # <a name="powershell-reference-for-protection-templates"></a>보호 템플릿의 PowerShell 참조
 
->*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection에 대한 보호 설정은 보호 템플릿에 저장됩니다. 보호 설정을 만들고 관리하기 위해 Azure Portal에서 수행할 수 있는 모든 작업은 PowerShell을 사용하여 명령줄에서도 수행할 수 있습니다. 
 
@@ -54,4 +54,3 @@ Azure Information Protection에 대한 보호 설정은 보호 템플릿에 저�
 ## <a name="see-also"></a>참고 항목
 [Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

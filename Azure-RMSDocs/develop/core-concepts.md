@@ -14,12 +14,12 @@ ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1cd646a7c4685b2cda270fca23a8201e80c2222e
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 38eda4cf3f29443deed7887308096d5e4dfff8eb
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764583"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375500"
 ---
 # <a name="developer-guidance"></a>개발자 지침
 Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management Services)를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는 데 중점을 둡니다.
@@ -30,5 +30,3 @@ Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management 
 - [방법: 오류 및 성능 로깅 사용](enabling-logging.md) - RMS SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
 - [방법: 기본 제공 권한 사용](built-in-rights-usage-restriction-reference.md) - RMS SDK 4.2에서 제공하는 기본 제공 권한 및 앱이 이러한 제한에 따라 적용해야 하는 사용 제한에 대해 간략하게 설명합니다.
 - [방법: 문서 추적 사용](how-to-use-document-tracking.md) - 문서 추적 기능을 사용하려면 관련 메타데이터 및 서비스 등록 관리에 대한 몇 가지 간단한 사항을 이해해야 합니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 610a1e5f147ab8ce0cca3adb59191d145d01a1ae
-ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
+ms.openlocfilehash: c62179f67d7b7176886f6bb8c003a1cb58868a58
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088279"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372219"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>사용자 가이드: Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지
 
@@ -117,5 +117,3 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
 
 ## <a name="additional-information-for-administrators"></a>관리자용 추가 정보    
 [관리자 가이드](client-admin-guide.md)에서 [Azure Information Protection에 대한 문서 추적 구성 및 사용](client-admin-guide-document-tracking.md)을 참조하세요.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

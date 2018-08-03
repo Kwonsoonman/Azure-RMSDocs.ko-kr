@@ -12,16 +12,16 @@ ms.technology: techgroup-identity
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43689f942bae88c9b7099f45a980f0fd96b1bdaf
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 4cdf429527bfc97b4e02438ae45aae80754e5fe1
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204958"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474354"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>Azure Rights Management 서비스 확인
 
->*적용 대상:[ Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection의 Azure Rights Management 서비스를 활성화하고 조직에서 필요한 추가 구성 단계를 수행한 후에는 이 보호 서비스가 정상적으로 작동하는지를 확인할 수 있습니다. 
 
@@ -32,12 +32,11 @@ Azure Information Protection의 Azure Rights Management 서비스를 활성화�
 테스트가 실패한 경우 [Azure Information Protection 배포 로드맵](../plan-design/deployment-roadmap.md)의 구성 단계를 검토합니다.
 
 > [!TIP]
-> 추가 도움이 필요한 경우 [Azure Information Protection에 대한 정보 및 지원](../get-started/information-support.md) 문서에서 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 섹션을 참조하세요.
+> 추가 도움이 필요한 경우 [Azure Information Protection에 대한 정보 및 지원](../information-support.md) 문서에서 [지원 옵션 및 커뮤니티 리소스](../information-support.md#support-options-and-community-resources) 섹션을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 
 사용 현황을 사용하여 조직에서 Azure Rights Management를 사용하는 방식을 모니터링할 수 있습니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

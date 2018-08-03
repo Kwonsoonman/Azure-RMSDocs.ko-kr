@@ -4,7 +4,7 @@ description: Azure 클래식 포털에서 수행했던 관리 작업을 Azure Po
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/22/2018
+ms.date: 06/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,11 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: ff1cae1695ac37c3e884053e6633a631e236efbe
-ms.sourcegitcommit: 94d1c7c795e305444e9fde17ad73e46f242bcfa9
+ms.openlocfilehash: 0eb56adc41c18427a2f5058affc525ecfbbf68ba
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39376527"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Azure 클래식 포털과 관련된 작업
 
@@ -31,9 +32,6 @@ Azure 클래식 포털은 **2018년 1월 8일**에 사용 중지됩니다. 이 �
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>친숙한 관리 작업을 수행하는 방법
 
 다음 정보는 현재 포털로 신속하게 전환하는 데 도움이 됩니다.
-
-그러나 Office 365 미국 정부(Government Community Cloud)에 가입한 고객은 현재 Azure Portal을 사용할 수 없으며, 대신 [PowerShell](configure-templates-with-powershell.md)을 사용하여 템플릿을 관리해야 합니다.
-
 
 |Azure 클래식 포털|Azure Portal에서 이 작업을 수행하는 방법
 |-----------|--------------------|
@@ -66,4 +64,3 @@ Azure Portal에서 템플릿을 편집하거나 레이블로 변환하기 전에
 ## <a name="see-also"></a>참고 항목
 자세한 내용은 [Azure Information Protection의 템플릿 구성 및 관리](../deploy-use/configure-policy-templates.md)를 참조하세요.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

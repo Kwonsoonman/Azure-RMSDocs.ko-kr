@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bb38d33972fb99596fcde8bc54e53c38e3817336
-ms.sourcegitcommit: aae04d78ff301921a4e29ac23bd932fb24a83dbe
+ms.openlocfilehash: e14844a5bd1b0ace4085eaaa9c15be6b3c814146
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34444115"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473749"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 
@@ -87,7 +87,7 @@ Azure Rights Management 서비스를 사용하여 문서 및 메일을 보호할
 
 기타 권한 부여 방법:
 
-- Azure AD에 없는 메일 주소의 경우, Azure Information Protection은 Microsoft 계정으로 인증될 때 이러한 메일 주소에 권한을 부여할 수 있습니다. 그러나 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](../get-started/secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- Azure AD에 없는 메일 주소의 경우, Azure Information Protection은 Microsoft 계정으로 인증될 때 이러한 메일 주소에 권한을 부여할 수 있습니다. 그러나 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 - Azure AD에 계정이 없는 사용자에게 새로운 기능을 갖춘 Office 365 메시지 암호화를 사용하여 전자 메일을 보내면 소셜 ID 공급자와의 페더레이션을 사용하거나 일회용 암호를 사용하여 먼저 사용자를 인증합니다. 그런 다음 보호된 전자 메일에 지정된 이메일 주소를 사용하여 사용자를 인증합니다.
 
@@ -215,4 +215,3 @@ Azure Information Protection에 사용할 그룹이 표시되어 있는지 확�
 
 활성화 상태 확인을 포함한 자세한 내용은, [Azure Rights Management 활성화](../deploy-use/activate-service.md)를 참조하세요.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

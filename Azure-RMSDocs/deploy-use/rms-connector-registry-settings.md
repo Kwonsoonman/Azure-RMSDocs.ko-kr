@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9334a781378ffdbe76dd9fe9d78f5db5913766d1
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: 3a6c53bf7bb1a983c34936405b8e51afb8427ac7
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34216837"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374286"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 커넥터에 대한 레지스트리 설정
 
@@ -218,5 +218,3 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 
 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)로 돌아갑니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

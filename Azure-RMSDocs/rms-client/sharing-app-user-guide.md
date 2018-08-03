@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: eaf6d02c-aa36-4915-856e-49bb71ab1484
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c361c3fadb1bc4a65d94c79f7a41f8aebb6f247a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 55a44324df67cbead2dd1b0bcf2169929e747c42
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207372"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373127"
 ---
 # <a name="rights-management-sharing-application-user-guide"></a>Rights Management 공유 응용 프로그램 사용자 가이드
 
@@ -66,6 +66,5 @@ Windows 7 서비스 팩 1 이상을 실행하는 컴퓨터만 있으면 됩니�
 
 - [대화 상자에서 설정 지정](sharing-app-dialog-box.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

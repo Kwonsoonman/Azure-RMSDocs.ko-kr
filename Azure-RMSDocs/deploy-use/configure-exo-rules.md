@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: cbb34f8417f3f4d63369399ffe962e7c957f65a6
-ms.sourcegitcommit: 3f524c5af39bee39169f86d9c4e72c661c960d83
+ms.openlocfilehash: cebfc618e4d1660bbae371d1f54f764b67f642b0
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37069596"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372787"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Azure Information Protection 레이블에 대한 Exchange Online 메일 흐름 규칙 구성
 
@@ -131,4 +131,3 @@ Exchange Online 메일 흐름 규칙에 사용할 레이블을 만들고 구성�
 또한 첨부 파일이 포함된 메일 메시지를 분류하려면 Azure Information Protection [정책 설정](configure-policy-settings.md): **첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최상위 분류와 일치하는 레이블 적용**을 사용하는 것이 좋습니다.
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

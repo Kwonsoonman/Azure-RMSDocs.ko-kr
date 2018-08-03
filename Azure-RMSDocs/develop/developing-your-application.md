@@ -14,12 +14,12 @@ ms.assetid: 396A2C19-3A00-4E9A-9088-198A48B15289
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 794e0b89f58944c6734992c57e1ad3a7aa58238a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: ecbc6ced2b67f3f378a03e98cd6a12b488efbce4
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765819"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373042"
 ---
 # <a name="developing-your-application"></a>응용 프로그램 배포
 
@@ -231,4 +231,3 @@ Azure에 연결하는 데 필요한 매개 변수를 로드합니다.
 
 6. 마지막으로 몇 가지 정책 메타데이터(정책 이름, 설명, 발급자(Azure AD 테넌트) 표시 이름)를 입력합니다. ![앱 출력 - 6단계](../media/develop/app-output-6.png)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

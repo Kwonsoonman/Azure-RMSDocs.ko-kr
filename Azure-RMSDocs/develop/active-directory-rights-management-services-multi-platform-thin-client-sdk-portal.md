@@ -14,12 +14,12 @@ ms.assetid: 4ee4fa26-b4f7-478f-b360-be6f421c5718
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: efa05d43cc8541f6781951addc3f6c1ed4268ea5
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 770bbc39f44d0ee4fe6a2221f9aa6fd336343c77
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765641"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375007"
 ---
 # <a name="rights-management-sdk-42"></a>Rights Management SDK 4.2
 
@@ -50,5 +50,3 @@ RMS SDK 4.2 API는 각 운영 체제에 대한 표준 프로그래밍 언어와 
 [개발자 지침 및 용어](core-concepts.md) - RMS SDK 4.2는 Right Management Services를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는 데 중점을 둡니다.
 
 [API 참조](api-reference-4-2.md) - RMS SDK 4.2에서는 다음 목차에 나와 있는 여러 운영 체제를 지원합니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

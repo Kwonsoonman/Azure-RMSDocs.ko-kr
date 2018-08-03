@@ -14,12 +14,12 @@ ms.assetid: F5AD3826-2292-4A25-AF5C-D17D083F5742
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 906746990fd08a749d2879fbc04b054e49e65f01
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 68ed6db23caf5cab0a98e4704a36366c721d4194
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764488"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39373392"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>방법: 오류 및 성능 로깅 사용
 Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
@@ -98,5 +98,3 @@ Microsoft로 자동 진단, 성능 및 원격 분석 로깅 데이터 업로드�
 **참고** - 위의 Windows 코드 조각은 C++로 작성되었습니다. C\#의 경우 '::' 대신 '.'을 사용하여 구문을 업데이트합니다.
 
 **Linux/C++** - 이 SDK의 기본 로깅은 다른 플랫폼의 로깅만큼 광범위하지 않습니다. 자세한 내용은 [이식 가능한 C++용 RMS SDK](https://github.com/AzureAD/rms-sdk-for-cpp#troubleshooting)에서 "README.md"의 **문제 해결** 섹션을 참조하세요.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

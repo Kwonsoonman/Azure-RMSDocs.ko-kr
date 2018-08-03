@@ -14,12 +14,12 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8f99338daf79b2a59ddacb914d424da81d2b630b
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 90013f4ee1285afbf112b1309a5e7b7826802584
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258970"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374585"
 ---
 # <a name="testing-your-application"></a>응용 프로그램 테스트
 
@@ -50,4 +50,3 @@ Azure RMS 또는 Windows Server에서 실행 중인 RMS 서버로 테스트할 �
 * [SDK 설치](install-the-rms-sdk.md)
 * [RMS Client 2.1 배포 참고 사항](https://technet.microsoft.com/library/jj159267(WS.10).aspx)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

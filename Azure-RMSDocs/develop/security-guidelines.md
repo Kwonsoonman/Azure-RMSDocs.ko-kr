@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 6c3669c1ada24afcf3b9ec48ea5bb9c38939b47e
-ms.sourcegitcommit: 8e622a93ff8d07a180e3be6e8b14748354e640bd
+ms.openlocfilehash: 194e676807145dffdf326fe782f4b4051876552d
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/29/2018
-ms.locfileid: "30258778"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371852"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure Information Protection에 대한 보안 모범 사례
 
@@ -94,5 +94,3 @@ API에서는 사용자의 정보 암호 해독을 허용하거나 허용하지 �
 - 응용 프로그램에서 구현된 새 권한에 포함되어 요약된 모든 권한은 새로운 용어에 매핑되어야 합니다. 예를 들어 MANAGER라는 새 권한에는 요약된 권한으로서 PRINT, COPY 및 EDIT 권한이 포함될 수 있습니다.
 권장 표준: 현재는 없습니다.
 기본 표준: 현재는 없습니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

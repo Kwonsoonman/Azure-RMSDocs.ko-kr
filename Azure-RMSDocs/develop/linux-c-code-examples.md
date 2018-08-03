@@ -14,12 +14,12 @@ ms.assetid: 0F7714CA-1D3E-4846-B187-739825B7DE26
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: b711e68f970c26f627802c05a3a9417734e72fb5
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 610356d02579cd37baacc97588fe3193eb2eef00
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765513"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371087"
 ---
 # <a name="linux-code-examples"></a>Linux 코드 예제
 
@@ -590,5 +590,3 @@ ms.locfileid: "27765513"
 **5단계**: 결과에서 액세스 토큰을 가져옵니다. 설명: **result-> accessToken()** 메서드를 호출합니다.
 
 **참고** 인증 라이브러리 메서드는 **rmsauth::Exception**을 발생시킬 수 있습니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

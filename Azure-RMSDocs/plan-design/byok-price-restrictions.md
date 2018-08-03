@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f5380dc364255fd085c82fd9c0a834afea368c97
-ms.sourcegitcommit: 10f530fa1a43928581da4830a32f020c96736bc8
+ms.openlocfilehash: c40e1b628c4a6160d6ab665293c37b9cefa3fe0c
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/21/2018
-ms.locfileid: "34402152"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39375257"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 
@@ -64,4 +64,3 @@ BYOK 및 사용 현황 로깅 기능은 Azure Information Protection에서 사�
 
 Microsoft에서 테넌트 키를 관리하는 기본 구성을 유지하기로 한 경우 Azure Information Protection 테넌트 키 계획 및 구현 문서에서 [다음 단계](plan-implement-tenant-key.md#next-steps) 섹션을 참조하세요.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

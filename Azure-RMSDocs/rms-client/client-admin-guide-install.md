@@ -12,18 +12,18 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 511fea3a6176cf047eb4c1568d2efa755c46f39c
-ms.sourcegitcommit: e0a47ccee898b50907374cc74fcfd9abf59cd98d
+ms.openlocfilehash: af9cfca4d328dba7646c1c319744476fe0e6b43f
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36949830"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474174"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
-엔터프라이즈 네트워크에 Azure Information Protection 클라이언트를 설치하기 전에 컴퓨터에 Azure Information Protection에 대한 필수 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다. [Azure Information Protection에 대한 요구 사항](../get-started/requirements-azure-rms.md) 
+엔터프라이즈 네트워크에 Azure Information Protection 클라이언트를 설치하기 전에 컴퓨터에 Azure Information Protection에 대한 필수 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다. [Azure Information Protection에 대한 요구 사항](../requirements.md) 
 
 그런 후 다음 섹션에서 설명한 대로 Azure Information Protection 클라이언트에 필요할 수 있는 추가 필수 구성 요소를 확인합니다. 설치 프로그램에서는 일부 필수 구성 요소만 확인합니다.
 
@@ -218,4 +218,3 @@ Azure Information Protection 클라이언트를 설치했으므로 다음에서 
 - [PowerShell 명령](client-admin-guide-powershell.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

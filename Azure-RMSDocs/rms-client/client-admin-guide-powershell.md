@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 0d2ca2ddfea8bfd58392e6849457c53a29566d5e
-ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
+ms.openlocfilehash: 7853cfc577329e04a1f378a419f0e1ef3eca0f2a
+ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39295545"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39411073"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -559,7 +559,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 2. 다음 명령을 복사하고 이 스크립트에 붙여 넣습니다.
     
-         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application>  -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
+         Set-AIPAuthentication -WebAppId <ID of the "Web app / API" application> -WebAppKey <key value generated in the "Web app / API" application> -NativeAppId <ID of the "Native" application > -Token <token value>
 
 3. 이전 섹션의 지침을 사용하면 **WebAppId**, **WebAppkey** 및 **NativeAppId** 매개 변수에 대한 고유한 값을 지정하여 이 명령을 수정합니다. 이 경우에 **토큰** 매개 변수에 대한 값이 없으며 나중에 지정합니다. 
     
@@ -623,4 +623,3 @@ Azure Information Protection 클라이언트를 지원하는 데 필요할 수 �
 - [지원되는 파일 유형](client-admin-guide-file-types.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

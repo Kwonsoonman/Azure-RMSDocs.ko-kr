@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 8c9d61e5-75da-4785-9942-1c6313879fd5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 07c6c1b925426ba599755042094df3e5a93fd237
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 78034d0c1d00da8cd3640ac6634884d84d96eda1
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204676"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39374973"
 ---
 # <a name="more-information-about-thales-hsms-and-microsoft-additions-retired-content"></a>Thales HSM 및 Microsoft 추가 사항에 대한 자세한 내용: 사용 중지된 콘텐츠
 
@@ -25,4 +25,3 @@ ms.locfileid: "30204676"
 
 이 문서의 정보는 Azure 권한 관리에서 고객 관리 테넌트 키(Bring Your Own Key 또는 BYOK라고도 함)에 대해 Azure 주요 자격 증명 모음을 사용하기 때문에 더 이상 관련이 없으므로 제거되었습니다. 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

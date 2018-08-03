@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 989f75361d96680bf0bedff00251b6d60aa999c5
-ms.sourcegitcommit: 373e05ff0c411d29cc5b61c36edaf5a203becc14
+ms.openlocfilehash: 98fe9b957d577cc59a719dbe5a7ba3b532ea8c87
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34216871"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371410"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
@@ -243,6 +243,5 @@ Azure Rights Management 로깅 변경 전에 Azure 저장소에 로그가 있는
 
 Azure Rights Management 서비스용 Windows PowerShell 사용에 대한 자세한 내용은 [Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리](administer-powershell.md)를 참조하세요.
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]
 
 

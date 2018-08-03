@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 429be436bc1a9fec3d31933d9cb6e8f88de7506a
-ms.sourcegitcommit: dbbfadc72f4005f81c9f28c515119bc3098201ce
+ms.openlocfilehash: 8fc94edec250fd0cef1be5f3030e19ce8628cc92
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30207440"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370162"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션
 
@@ -76,4 +76,3 @@ ms.locfileid: "30207440"
 ## <a name="see-also"></a>참고 항목
 [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md)
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

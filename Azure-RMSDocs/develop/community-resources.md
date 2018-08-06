@@ -14,12 +14,12 @@ ms.assetid: e3bdaa6d-e8ca-421a-a429-553bfc54b78b
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: daec2cd2d27245f2eb741eedc1f84ea69c8c0e4f
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: 1ce9cd377484aac8bbb65c7c994b232bd1225a87
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27764574"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39372151"
 ---
 # <a name="community-resources"></a>커뮤니티 리소스
 
@@ -35,10 +35,8 @@ Connect 사이트의 권한 관리 서비스 섹션에서 현재 결과물을 �
 >
 >Microsoft Connect에 등록하지 않은 경우 다음을 수행합니다.
 >
->-   [Microsoft Connect](http://connect.microsoft.com) (http://connect.microsoft.com) 로 이동합니다
+>-   [Microsoft Connect](http://connect.microsoft.com)(http://connect.microsoft.com)로 이동합니다.
 >-   Microsoft 계정을 사용하여 로그인합니다.
 >-   명령 모음에서 **디렉터리**를 클릭합니다.
 >-   "권한 관리 서비스"를 검색합니다.
 >-   **가입**을 클릭하여 등록합니다.
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

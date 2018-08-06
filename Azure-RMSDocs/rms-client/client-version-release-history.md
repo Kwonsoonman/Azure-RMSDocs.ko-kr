@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/28/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 732eb98b1cbd1af575f15ddc992349d77b436131
-ms.sourcegitcommit: 78d368a4480cc1febedc8535c6c3e184e69caf7f
+ms.openlocfilehash: 61762157ff6419bb325d92470d5264dc9b55f840
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088262"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39474218"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -31,7 +31,7 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure 
 
 ### <a name="servicing-information-and-timelines"></a>서비스 정보 및 타임라인
 
-Azure Information Protection 클라이언트의 각 GA(일반 공급) 버전은 후속 GA 버전이 릴리스된 후 최대 6개월 동안 지원됩니다. 지원되지 않는 버전의 클라이언트는 이 페이지에 포함되지 않습니다. 수정 사항 및 새로운 기능은 항상 최신 GA 버전에 적용되며, 이전의 GA 버전에는 적용되지 않습니다.
+Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전은 후속 GA 버전이 릴리스된 후 최대 6개월 동안 지원됩니다. 지원되지 않는 버전의 클라이언트는 이 페이지에 포함되지 않습니다. 수정 사항 및 새로운 기능은 항상 최신 GA 버전에 적용되며, 이전의 GA 버전에는 적용되지 않습니다.
 
 미리 보기 버전을 프로덕션 네트워크의 최종 사용자에게 배포해서는 안 됩니다. 대신 최신 미리 보기 버전을 통해 다음 GA 버전에서 제공되는 새로운 기능 또는 수정 사항을 확인하고 사용해 볼 수 있습니다. 현재 존재하지 않는 미리 보기 버전은 지원되지 않습니다.
 
@@ -42,7 +42,62 @@ Azure Information Protection 클라이언트의 각 GA(일반 공급) 버전은 
 > [!NOTE]
 > 사소한 수정 사항은 나열되지 않으므로 Azure Information Protection 클라이언트에 문제가 발생있으면 최신 GA 릴리스로 수정되었는지 확인하는 것이 좋습니다. 문제가 계속되면 현재 미리 보기 버전을 확인하세요.
 >  
-> 기술 지원의 경우 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
+> 기술 지원의 경우 [지원 옵션 및 커뮤니티 리소스](../information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
+
+## <a name="versions-later-than-12950"></a>1.29.5.0 이후 버전
+
+1.29.5.0 이후 버전의 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다.
+
+이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.3557.524가 포함되어 있습니다.
+
+**새로운 기능**: 
+
+- 개인 정보를 포함하는 문서를 분류할 수 있는 새롭고 중요한 정보 형식을 지원합니다. [추가 정보](../deploy-use/configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
+
+- Word, Excel 및 PowerPoint 파일에서 **엄격한 Open XML 문서** 형식에 대한 지원 레이블을 지정합니다. Open XML 형식에 대한 자세한 내용은 Office 블로그 게시물인 [새로운 Office에서 새 파일 형식 옵션](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/)을 참조하세요. 
+
+- 새로운 [고급 클라이언트 구성](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)을 구성하여 PDF 암호화에 대한 ISO 표준을 지원합니다. 이 옵션을 구성하는 경우 보호한 PDF 문서는 .ppdf로 변경되지 않고 .pdf 파일 이름 확장명을 유지하고 이 ISO 표준을 지원하는 PDF 판독기에서 열릴 수 있습니다. 
+
+- 해당 파일이 PDF 및 Office 문서가 아닌 경우 Secure Islands에서 보호한 파일을 지원합니다. 예를 들어 보호된 텍스트 및 그림 파일입니다. 또는 .pfile 파일 이름 확장명을 사용하는 파일입니다. 이 지원을 사용하면 Azure Information protection과 같은 새로운 시나리오가 중요한 정보에 대해 이러한 파일을 검사할 수 있고 Azure Information Protection에 대한 레이블을 자동으로 재지정할 수 있습니다. [추가 정보](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
+
+- Azure Information Protection 스캐너:
+
+    - 새 cmdlet, [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner): 1.26.6.0 버전 이하에서 업그레이드한 후에 한 번 실행해야 합니다.
+    
+    - 새 cmdlet, [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus): 스캐너에 대한 서비스의 현재 상태를 가져옵니다.  
+    
+    - 새 cmdlet, [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan): 일정을 수동으로 설정하는 경우 스캐너에 일회성 검사를 시작하도록 지시합니다.
+    
+    - SharePoint Server 2010은 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객에 대해 지원됩니다.
+    
+**수정 사항**
+
+- Azure Information Protection 스캐너:
+    
+    - SharePoint 라이브러리에서 보호된 문서의 경우 *DefaultOwner* 매개 변수를 데이터 리포지토리에 사용하지 않으면 이제 작성자 값 대신 SharePoint 편집기 값을 기본값으로 사용합니다.
+    
+    - 스캐너 보고서에는 Office 문서에 대한 "마지막으로 수정한 사용자"가 포함됩니다. 
+
+- PowerShell 또는 스캐너를 사용하여 분류하고 보호하는 경우 Office 문서 메타데이터를 제거하거나 암호화하지 않습니다.
+
+- 빠른 액세스 도구 모음에서 다음 항목 및 이전 항목 화살표 아이콘을 사용하여 이메일을 보면 각 이메일에 대한 올바른 레이블이 표시됩니다.
+
+- 사용자 지정 사용 권한은 아포스트로피가 포함된 받는 사람 이메일 주소를 지원합니다.
+
+- SharePoint Online에 저장된 보호된 문서를 열어 이 작업을 시작할 때 컴퓨터 환경은 부트스트랩을 성공적으로 초기화합니다. 
+
+**추가 변경 내용**:
+   
+- [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)의 경우:
+    
+    - *일정* 매개 변수의 값은 더 이상 **OneTime**, **Continuous** 및 **Never**가 아니라 **Manual** 및 **Always**입니다.
+        
+    - *형식* 매개 변수를 제거했습니다. 따라서 [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration)을 실행하면 출력에서 제거됩니다.
+    
+- 스캐너의 경우 이제 기본 제외 목록에는 .rtf 파일이 포함됩니다. [추가 정보](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)
+
+- 정책 버전은 1.4로 변경됩니다. 버전 번호를 식별하려면 [연결이 끊어진 컴퓨터를 구성](client-admin-guide-customizations.md#support-for-disconnected-computers)해야 합니다. 
+
 
 ## <a name="version-12950"></a>버전 1.29.5.0 
 
@@ -59,7 +114,6 @@ Azure Information Protection 클라이언트의 각 GA(일반 공급) 버전은 
 - Excel 파일에 이미 레이블이 지정되어 있고 레이블이 시각적 표시를 적용하는 경우 이제 새 시트에도 레이블의 시각적 표시가 적용됩니다.
 
 - 고급 클라이언트 설정을 사용함으로써 [기존 사용자 지정 속성을 사용하여 Office 문서에 레이블을 지정](client-admin-guide-customizations.md#label-an-office-document-by-using-an-existing-custom-property)하면 자동 레이블 지정이 수동 레이블 지정을 재정의하지 않습니다.
-
 
 ## <a name="version-127480"></a>버전 1.27.48.0
 
@@ -226,4 +280,3 @@ Azure Information Protection 클라이언트의 각 GA(일반 공급) 버전은 
 - 관리자: [Azure Information Protection 클라이언트 관리자 가이드](client-admin-guide.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

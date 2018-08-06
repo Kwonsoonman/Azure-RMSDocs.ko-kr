@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 45e1f405c751449148b0bfe3a7249640155778c6
-ms.sourcegitcommit: 1f5a5cb650be2b4c302ad4b7a0b109246da3eb80
+ms.openlocfilehash: 74cb6b6cd03621f52860012331fbf4cf518459dc
+ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39295528"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39473970"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -59,7 +59,7 @@ Azure Information Protection 클라이언트에는 다음이 포함됩니다.
 
 - Azure RMS(Azure Rights Management) 또는 AD RMS(Active Directory Rights Management Services)와 통신하는 Rights Management 클라이언트
 
-Azure Information Protection 클라이언트는 해당 Azure 서비스인 Azure Information Protection와 해당 데이터 보호 서비스인 Azure Rights Management에서 가장 잘 작동됩니다. 몇 가지 제한 사항이 있으나 Azure Information Protection 클라이언트는 온-프레미스 버전의 Rights Management인 AD RMS에도 잘 작동합니다. Azure Information Protection 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure Information Protection과 AD RMS 비교](../understand-explore/compare-azure-rms-ad-rms.md)를 참조하세요. 
+Azure Information Protection 클라이언트는 해당 Azure 서비스인 Azure Information Protection와 해당 데이터 보호 서비스인 Azure Rights Management에서 가장 잘 작동됩니다. 몇 가지 제한 사항이 있으나 Azure Information Protection 클라이언트는 온-프레미스 버전의 Rights Management인 AD RMS에도 잘 작동합니다. Azure Information Protection 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure Information Protection과 AD RMS 비교](../compare-on-premise.md)를 참조하세요. 
 
 AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](../plan-design/migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
@@ -108,7 +108,7 @@ Windows Update, 실행 파일, 또는 Windows Installer 파일을 사용하여 A
 
 **추가 정보 링크**를 클릭하면 기본적으로 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책의 [정책 설정](../deploy-use/configure-policy-settings.md) 중 하나로 사용자 지정 URL로 이동하도록 이 링크를 구성할 수 있습니다.
 
-**피드백 보내기** 링크를 사용하여 Information Protection 팀에 제안 사항이나 요청을 보냅니다. 기술 지원을 위해 이 옵션을 사용하지 않는 경우에는 대신 [지원 옵션 및 커뮤니티 리소스](../get-started/information-support.md#support-options-and-community-resources)를 참조하세요. 
+**피드백 보내기** 링크를 사용하여 Information Protection 팀에 제안 사항이나 요청을 보냅니다. 기술 지원을 위해 이 옵션을 사용하지 않는 경우에는 대신 [지원 옵션 및 커뮤니티 리소스](../information-support.md#support-options-and-community-resources)를 참조하세요. 
 
 **로그 내보내기**는 Microsoft 지원에 로그 파일을 보내라는 요청을 받았을 때 Azure Information Protection 클라이언트의 로그 파일을 자동으로 수집하여 첨부합니다. 최종 사용자가 이 옵션을 사용하여 이러한 로그 파일을 지원 센터로 보낼 수도 있습니다.
 
@@ -200,9 +200,15 @@ Windows 업데이트를 사용하는 경우 Azure Information Protection 클라�
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 업그레이드
 
-Azure Information Protection 스캐너를 업그레이드하려면 최신 버전의 Azure Information Protection 클라이언트를 설치하세요.
+Azure Information Protection 스캐너를 업그레이드하려면 최신 버전의 Azure Information Protection 클라이언트를 설치하세요. 그런 다음, 다음 일회성 작업 중 하나를 수행합니다.
 
-그런 다음, 이전에 설치된 클라이언트 버전이 1.26.6.0 또는 이전 버전인 경우, [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)를 사용하여 스캐너 설치 명령을 다시 실행하세요. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 스캐너를 다시 설치하면 보고서에 필요한 스캐너 데이터베이스에 대한 삭제 권한이 스캐너 서비스 계정에 부여됩니다.
+현재 GA 버전의 경우: 
+
+- 이전에 설치된 클라이언트 버전이 1.26.6.0 또는 이전 버전인 경우 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)를 사용하여 스캐너 설치 명령을 다시 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 스캐너를 다시 설치하면 보고서에 필요한 스캐너 데이터베이스에 대한 삭제 권한이 스캐너 서비스 계정에 부여됩니다.
+
+미리 보기 버전: 
+
+- 이전에 설치된 버전의 클라이언트가 1.26.6.0 이전인 경우 클라이언트를 설치한 후에 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)를 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 이 cmdlet을 실행하려면 스캐너에 대한 데이터베이스 스키마를 업데이트해야 하고 필요한 경우 스캐너 서비스 계정에 스캐너 데이터베이스에 대한 삭제 권한을 부여합니다. 이 업데이트 cmdlet을 실행할 때까지 스캐너는 실행되지 않습니다.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 제거
 
@@ -230,4 +236,3 @@ Azure Information Protection 스캐너를 업그레이드하려면 최신 버전
 - [PowerShell 명령](client-admin-guide-powershell.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

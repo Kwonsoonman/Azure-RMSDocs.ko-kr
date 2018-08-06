@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: fe04cc36f99e641cb11ef832e967699106728749
-ms.sourcegitcommit: dc46351ac5a9646499b90e9565260c3ecd45d305
+ms.openlocfilehash: 7bc9e67ae029cedc734f3060fe43f62367a805ba
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217844"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39371495"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -114,7 +114,8 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
     |--------------------------|---------------------------------------------|
     |Policy1.1.msip |버전 1.2|
     |Policy1.2.msip |버전 1.3 - 1.7|
-    |Policy1.3.msip |버전 1.8 이상|
+    |Policy1.3.msip |버전 1.8 - 1.29|
+    |Policy1.4.msip |버전 1.32 이상|
     
 2. 식별된 파일 이름을 **Policy.msip**로 변경하고 Azure Information Protection 클라이언트가 있는 컴퓨터의 **%LocalAppData%\Microsoft\MSIP** 폴더에 복사합니다. 
 
@@ -228,6 +229,51 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 
 - 값: **True**
 
+## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+기본적으로 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 결과 파일은 .ppdf 파일 이름 확장명입니다. 파일 이름 확장명이 .pdf로 유지되고 PDF 암호화에 대해 ISO 표준을 준수하도록 이 동작을 변경할 수 있습니다. 이 표준에 대한 자세한 내용은 [ISO 32000-1에서 파생되고](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) Adobe Systems incorporated에서 게시한 문서의 **7.6 암호화** 섹션을 참조하세요.  
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **EnablePDFv2Protection**
+
+- 값: **True**
+
+이 구성 옵션의 결과로 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 이 작업은 미리 보기 버전의 Windows용 Azure Information Protection 클라이언트를 사용하여 열릴 수 있는 PDF 문서 및 PDF 암호화에 대해 ISO 표준을 지원하는 다른 PDF 판독기를 만듭니다. iOS 및 Android용 Azure Information Protection 앱은 현재 PDF 암호화에 대해 ISO 표준을 지원하지 않습니다.
+
+Azure Information Protection 스캐너에서 새 설정을 사용하려면 스캐너 서비스를 다시 시작해야 합니다.
+
+현재 미리 보기에서 알려진 문제: 보호된 PDF는 문서 속성에서 작성자에 대해 잘못된 값을 표시합니다.
+
+## <a name="support-for-files-protected-by-secure-islands"></a>Secure Islands에서 보호한 파일에 대한 지원
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 여기에는 미리 보기 버전의 Azure Information Protection 클라이언트, Azure Information Protection 스캐너 또는 Azure Information Protection 뷰어도 필요합니다.
+
+Secure Islands를 사용하여 문서를 보호한 경우 보호된 텍스트 및 그림 파일 및 이 보호의 결과로 일반적으로 보호된 파일이 있을 수 있습니다. 예를 들어 .ptxt, .pjpeg 또는 .pfile 파일이라는 이름 확장명의 파일입니다. 다음과 같이 레지스트리를 편집하면 Azure Information Protection은 다음과 같은 파일을 해독할 수 있습니다.
+
+
+**EnableIQPFormats**의 다음 DWORD 값을 다음 레지스트리 경로에 추가하고 값 데이터를 **1**로 설정합니다.
+
+- 64비트 버전의 Windows: HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\MSIP
+
+- 32비트 버전의 Windows: HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MSIP
+
+이 레지스트리 편집의 결과로 다음과 같은 시나리오가 지원됩니다.
+
+- Azure Information Protection 뷰어에서는 이러한 보호된 파일을 열 수 있습니다.
+
+- 파일 탐색기 및 PowerShell은 Azure Information Protection을 사용하여 이러한 파일의 보호를 해제하거나 다시 보호할 수 있습니다.
+
+- 파일 탐색기, PowerShell 및 Azure Information Protection 스캐너는 이러한 파일의 레이블을 지정할 수 있습니다.
+
+- Azure Information Protection 스캐너는 중요한 정보를 위해 이러한 파일을 검사할 수 있습니다.
+
+- [마이그레이션 클라이언트 사용자 지정 레이블 지정](#migrate-labels-from-secure-islands-and-other-labeling-solutions) 기능을 사용하여 이러한 보호된 파일의 Secure Islands 레이블을 Azure Information Protection 레이블로 변환할 수 있습니다.
+
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션
 
 이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
@@ -235,6 +281,9 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
 Secure Islands에서 레이블을 지정한 Office 문서 및 PDF 문서의 경우 직접 정의하는 매핑을 사용하여 이러한 문서의 레이블을 Azure Information Protection 레이블로 재지정할 수 있습니다. 또한 다른 솔루션의 레이블이 Office 문서에 있는 경우 이 방법으로 해당 레이블을 재사용할 수도 있습니다. 
+
+> [!NOTE]
+> Secure Islands로 보호되는 PDF 및 Office 문서 이외의 파일이 있는 경우 [앞의 섹션](#support-for-files-protected-by-secure-islands)에 설명된 대로 레지스트리를 편집한 후에 이러한 파일의 레이블을 재지정할 수 있습니다. 
 
 이 구성 옵션의 결과로 새 Azure Information Protection 레이블이 Azure Information Protection 클라이언트에 의해 다음과 같이 적용됩니다.
 
@@ -402,4 +451,3 @@ Azure Information Protection 클라이언트를 사용자 지정했으므로 다
 - [PowerShell 명령](client-admin-guide-powershell.md)
 
 
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

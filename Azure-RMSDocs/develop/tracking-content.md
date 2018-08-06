@@ -14,12 +14,12 @@ ms.assetid: F5089765-9D94-452B-85E0-00D22675D847
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: e632e99f42947afa10223bb1b11fcc18cdec6f7a
-ms.sourcegitcommit: 93124ef58e471277c7793130f1a82af33dabcea9
+ms.openlocfilehash: a3aeddd9a22f93bed1f942b666b8c246761a8a6b
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2018
-ms.locfileid: "27765428"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370072"
 ---
 # <a name="how-to-enable-document-tracking-and-revocation"></a>방법: 문서 추적 및 해지 사용
 
@@ -143,7 +143,7 @@ ms.locfileid: "27765428"
 
 - 해당 메타데이터에 액세스할 수 없는 경우(즉, 보호되지 않는 버전의 문서를 검사 중인 경우) 다음 형식에서 **Content_Name**을 사용할 수 있습니다. `https://track.azurerms.com/#/?q={ContentName}`
 
-  예 - https://track.azurerms.com/#/?q=Secret!.txt
+  예제 - https://track.azurerms.com/#/?q=Secret!.txt
 
 클라이언트에서는 브라우저로 적절한 URL을 열기만 하면 됩니다. RMS 문서 추적 포털은 인증 및 모든 필수 리디렉션을 처리합니다.
 
@@ -159,5 +159,3 @@ ms.locfileid: "27765428"
 * [IpcfEncryptFileStreamWithMetadata](https://msdn.microsoft.com/library/dn974051.aspx)
 * [IpcRegisterLicense](https://msdn.microsoft.com/library/dn974057.aspx)
 
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

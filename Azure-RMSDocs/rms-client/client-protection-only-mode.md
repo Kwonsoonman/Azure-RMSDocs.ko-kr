@@ -4,7 +4,7 @@ description: 보호 전용 모드에서 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/14/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d55ef8caa7540cba2cd783613f5ea373ba1d545c
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: ce7d502a4d8f3515be67762cfa39a695a5b562fd
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39372396"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575763"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트에 대한 보호 전용 모드
 
@@ -57,7 +57,7 @@ Azure Information Protection 클라이언트에 문서 및 메일을 분류하�
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>보호 전용 모드에 대한 지원 작업
 
-- Office IRM(정보 권한 관리) 기능을 사용하여 Office 앱 내에서 문서 및 전자 메일 보호(및 보호 해제): 예제: **파일** > **정보** > **문서 보호** > **액세스 제한**을 클릭합니다. 자세한 내용은 [Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용](../deploy-use/help-users.md)을 참조하세요.
+- Office IRM(정보 권한 관리) 기능을 사용하여 Office 앱 내에서 문서 및 전자 메일 보호(및 보호 해제): 예제: **파일** > **정보** > **문서 보호** > **액세스 제한**을 클릭합니다. 자세한 내용은 [Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용](../help-users.md)을 참조하세요.
 
 - Windows 파일 탐색기를 사용하여 파일 보호(및 보호 해제): 파일을 마우스 오른쪽 단추로 클릭하고 파일 또는 폴더 > **분류 및 보호**를 클릭합니다. 관리자가 구성한 보호를 적용하려면 **분류 및 보호 - Azure Information Protection** 대화 상자에서 **템플릿 선택**을 클릭하고 사용 가능한 템플릿 중 하나를 선택합니다.
 

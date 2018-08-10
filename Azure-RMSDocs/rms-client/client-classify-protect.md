@@ -4,7 +4,7 @@ description: 문서와 전자 메일을 분류하고 보호하는 방법에 대�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/12/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: baf3edc435672c8339c15ea74f5b5e14d6951f96
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: dbe983b1c777308a01a2c1c9b7a97571cb9a7d08
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371546"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575460"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -181,7 +181,7 @@ Azure Information Protection 사용자 가이드의 사용 방법 지침:
 -   [원하는 옵션을 선택하](client-user-guide.md#what-do-you-want-to-do)세요.
 
 ## <a name="additional-information-for-administrators"></a>관리자용 추가 정보    
-**사용자에게 사용자 지정 권한 옵션 제공** 정책 설정을 사용하도록 설정하는 구성 지침은 [Azure Information Protection 정책 구성 설정](../deploy-use/configure-policy-settings.md)을 참조하세요.
+**사용자에게 사용자 지정 권한 옵션 제공** 정책 설정을 사용하도록 설정하는 구성 지침은 [Azure Information Protection 정책 구성 설정](../configure-policy-settings.md)을 참조하세요.
 
-기타 구성 지침: [Azure Information Protection 정책 구성](../deploy-use/configure-policy.md)
+기타 구성 지침: [Azure Information Protection 정책 구성](../configure-policy.md)
 

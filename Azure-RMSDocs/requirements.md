@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f126fe6b76a0d637e202d86bde9f257561c5a72e
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 98c4f32e0964b736c16d28ada37a1d59ee565d41
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474690"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489368"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -56,7 +56,7 @@ MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 �
 
 인증 요구 사항에 대한 자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](requirements-azure-ad.md)을 참조하세요. 
 
-권한을 부여할 사용자 및 그룹의 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](./plan-design/prepare.md)를 참조하세요.
+권한을 부여할 사용자 및 그룹의 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](prepare.md)를 참조하세요.
 
 ## <a name="client-devices"></a>클라이언트 장치
 
@@ -142,11 +142,11 @@ Office 문서의 정보 외에 Azure Information Protection과 관련하여 다�
 
 ### <a name="coexistence-of-ad-rms-with-azure-rms"></a>Azure RMS와 AD RMS 함께 사용
 
-다음 배포 시나리오는 [HYOK 보호](./deploy-use/configure-adrms-restrictions.md)용 AD RMS를 Azure Information Protection과 함께 사용하는 경우(“hold your own key” 구성)에만 지원됩니다.
+다음 배포 시나리오는 [HYOK 보호](configure-adrms-restrictions.md)용 AD RMS를 Azure Information Protection과 함께 사용하는 경우(“hold your own key” 구성)에만 지원됩니다.
 
-- [AD RMS에서 Azure Information Protection으로 마이그레이션](./plan-design/migrate-from-ad-rms-to-azure-rms.md)에 설명된 대로, 마이그레이션 중인 경우를 제외하고 같은 조직에서 AD RMS와 Azure RMS를 함께 실행하는 경우.
+- [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)에 설명된 대로, 마이그레이션 중인 경우를 제외하고 같은 조직에서 AD RMS와 Azure RMS를 함께 실행하는 경우.
 
-[AD RMS에서 Azure Information Protection으로](http://technet.microsoft.com/library/Dn858447.aspx), [Azure Information Protection에서 AD RMS로](/powershell/module/aadrm/Set-AadrmMigrationUrl)의 지원되는 마이그레이션 경로가 있습니다. Azure Information Protection을 배포한 후 이 클라우드 서비스를 더 이상 사용하지 않겠다고 결정한 경우 [Azure Information Protection 서비스 해제 및 비활성화](./deploy-use/decommission-deactivate.md)를 참조하세요.
+[AD RMS에서 Azure Information Protection으로](http://technet.microsoft.com/library/Dn858447.aspx), [Azure Information Protection에서 AD RMS로](/powershell/module/aadrm/Set-AadrmMigrationUrl)의 지원되는 마이그레이션 경로가 있습니다. Azure Information Protection을 배포한 후 이 클라우드 서비스를 더 이상 사용하지 않겠다고 결정한 경우 [Azure Information Protection 서비스 해제 및 비활성화](decommission-deactivate.md)를 참조하세요.
 
 
 

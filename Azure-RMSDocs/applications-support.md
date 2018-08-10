@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 2cdc7bde-4044-4021-b887-11476f99afd9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f529b761ef757612b621e948a49805448f9414ba
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: a450aabe8b2e318e4cb7be65f9c4d7d48941dc95
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474670"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488763"
 ---
 # <a name="how-applications-support-the-azure-rights-management-service"></a>응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법
 
@@ -30,11 +30,11 @@ ms.locfileid: "39474670"
 
 일부 경우 관리자가 구성하는 정에 따라 Azure Rights Management 서비스가 보호를 자동으로 적용합니다. SharePoint 라이브러리 및 Exchange 전송 규칙 등을 예로 들 수 있습니다. 기타 경우 최종 사용자가 응용 프로그램에서 보호를 직접 적용해야 합니다. 예를 들어 사용자가 보호를 적용하도록 구성된 분류 레이블을 선택하거나 템플릿을 선택하거나 특정 옵션을 선택합니다. 사용자가 적용하는 보호는 사용자가 공유할 파일을 보호하고, 선택된 사용자 또는 조직 외부 사용자에게 액세스 또는 사용을 제한할 때 일반적입니다.
 
-정책을 구성하는 관리자와 사용자는 템플릿을 통해 보다 간편하게 올바른 수준의 보호를 적용하고 조직 내 사용자에 대해 액세스를 제한할 수 있습니다. Azure Rights Management 서비스에서는 기본 템플릿 두 개가 제공되지만 사용자와 관리자가 개별 옵션을 지정해야 하는 경우 시간을 단축하기 위해 사용자 지정 템플릿을 만들 수도 있습니다. 템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](./deploy-use/configure-policy-templates.md)를 참조하세요.
+정책을 구성하는 관리자와 사용자는 템플릿을 통해 보다 간편하게 올바른 수준의 보호를 적용하고 조직 내 사용자에 대해 액세스를 제한할 수 있습니다. Azure Rights Management 서비스에서는 기본 템플릿 두 개가 제공되지만 사용자와 관리자가 개별 옵션을 지정해야 하는 경우 시간을 단축하기 위해 사용자 지정 템플릿을 만들 수도 있습니다. 템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
 
-사용자가 보호를 직접 적용해야 하는 경우에는 적용 방법과 시기에 대한 지침을 제공해야 합니다. 사용하는 응용 프로그램과 버전 및 사용 방식에 특정한 지침을 만듭니다. 사용자가 비즈니스에 적합한 보호를 적용해야 하는 시기와 방법에 대한 지침도 제공합니다. 자세한 내용은 [사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원](./deploy-use/help-users.md)을 참조하세요.
+사용자가 보호를 직접 적용해야 하는 경우에는 적용 방법과 시기에 대한 지침을 제공해야 합니다. 사용하는 응용 프로그램과 버전 및 사용 방식에 특정한 지침을 만듭니다. 사용자가 비즈니스에 적합한 보호를 적용해야 하는 시기와 방법에 대한 지침도 제공합니다. 자세한 내용은 [사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원](help-users.md)을 참조하세요.
 
-이러한 응용 프로그램을 Azure Information Protection의 Azure Rights Management 서비스에 대해 구성하는 방법에 대한 자세한 내용은 [Azure Rights Management에 대해 응용 프로그램 구성](./deploy-use/configure-applications.md)을 참조하세요.
+이러한 응용 프로그램을 Azure Information Protection의 Azure Rights Management 서비스에 대해 구성하는 방법에 대한 자세한 내용은 [Azure Rights Management에 대해 응용 프로그램 구성](configure-applications.md)을 참조하세요.
 
 검색 서비스는 여러 방법으로 Rights Management를 통합할 수 있습니다. 예를 들면 다음과 같습니다. 
 

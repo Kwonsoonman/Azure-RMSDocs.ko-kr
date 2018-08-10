@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 03cc8c6f-3b63-4794-8d92-a5df4cdf598f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 751f1a5bf2728a848bd450ce1081a15ea1e35456
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 571545905a0fac6bb1ea9b80c351b96f9f70899b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39376537"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489446"
 ---
 # <a name="rms-client-deployment-notes"></a>RMS 클라이언트 배포 참고 사항
 
@@ -158,7 +158,7 @@ RMS 서비스 검색을 사용하여 RMS 클라이언트는 콘텐츠를 보호�
 
 1. **로컬 컴퓨터의 Windows 레지스트리**: 레지스트리에 서비스 검색 설정이 구성된 경우 이러한 설정이 먼저 시도됩니다. 
 
-    기본적으로 이러한 설정은 레지스트리에 구성되지 않지만 관리자는 [다음 단원](#enabling-client-side-service-discovery-by-using-the-windows-registry)에 설명된 것처럼 AD RMS에 대해 설정을 구성할 수 있습니다. 관리자는 일반적으로 AD RMS에서 Azure Information Protection으로 [마이그레이션 프로세스](../plan-design/migrate-from-ad-rms-phase2.md) 중에 Azure Rights Management Service에 대한 이러한 설정을 구성합니다.
+    기본적으로 이러한 설정은 레지스트리에 구성되지 않지만 관리자는 [다음 단원](#enabling-client-side-service-discovery-by-using-the-windows-registry)에 설명된 것처럼 AD RMS에 대해 설정을 구성할 수 있습니다. 관리자는 일반적으로 AD RMS에서 Azure Information Protection으로 [마이그레이션 프로세스](../migrate-from-ad-rms-phase2.md) 중에 Azure Rights Management Service에 대한 이러한 설정을 구성합니다.
 
 2. **Active Directory Domain Services**: 도메인에 연결된 컴퓨터는 Active Directory에서 SCP(서비스 연결 지점)를 쿼리합니다. 
 
@@ -181,7 +181,7 @@ RMS 서비스 검색을 사용하여 RMS 클라이언트는 콘텐츠를 보호�
 >  
 > - 사용자가 Office 응용 프로그램에서 로그인하면 인증의 사용자 이름(및 도메인)이 사용할 Azure Information Protection 테넌트를 식별하는 데 사용됩니다. 이 경우 레지스트리 설정이 필요하지 않으며 SCP가 검사되지 않습니다.
 > 
-> - Office 2016 간편 실행 데스크톱 앱에 대해 [DNS 리디렉션](../plan-design/migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)을 구성한 경우 RMS 클라이언트에서는 이전에 발견된 AD RMS 클러스터에 대한 액세스를 거부하여 Azure Rights Management 서비스를 찾습니다. 이 거부 작업은 클라이언트가 SRV 레코드를 찾도록 트리거하여 테넌트의 Azure Rights Management 서비스에 클라이언트를 리디렉션합니다. 또한 이 SRV 레코드를 통해 Exchange Online에서는 AD RMS 클러스터로 보호된 이메일을 해독할 수 있습니다. 
+> - Office 2016 간편 실행 데스크톱 앱에 대해 [DNS 리디렉션](../migrate-from-ad-rms-phase3.md#client-reconfiguration-by-using-dns-redirection)을 구성한 경우 RMS 클라이언트에서는 이전에 발견된 AD RMS 클러스터에 대한 액세스를 거부하여 Azure Rights Management 서비스를 찾습니다. 이 거부 작업은 클라이언트가 SRV 레코드를 찾도록 트리거하여 테넌트의 Azure Rights Management 서비스에 클라이언트를 리디렉션합니다. 또한 이 SRV 레코드를 통해 Exchange Online에서는 AD RMS 클러스터로 보호된 이메일을 해독할 수 있습니다. 
 
 ### <a name="ad-rms-only-enabling-server-side-service-discovery-by-using-active-directory"></a>AD RMS에만 해당: Active Directory를 사용하여 서버 쪽 서비스 검색 사용
 계정에 충분한 권한(AD RMS 서버에 대한 엔터프라이즈 관리자 및 로컬 관리자)이 있으면 AD RMS 루트 클러스터 서버를 설치할 때 SCP(서비스 연결 지점)를 자동으로 등록할 수 있습니다. 포리스트에 SCP가 이미 있는 경우 새 SCP를 등록하기 전에 먼저 기존 SCP를 삭제해야 합니다.

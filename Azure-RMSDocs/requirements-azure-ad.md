@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d15e4a5e22089fa1ac98303fb00b95d082be872a
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: f6aa26cb64a07e8ccc2415b874e7240897633cd0
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475000"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489263"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
 
@@ -47,7 +47,7 @@ CBA(인증서 기반 인증) 지원:
 
 - 권장 구성이 아닙니다. UPN 값을 변경할 수 없는 경우 사용자의 대체 로그인 ID를 구성하고 이 대체 로그인 정보로 Office에 로그인하는 방법을 알려주세요. 자세한 내용은 [대체 로그인 ID 구성](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 및 [Office applications periodically prompt for credentials to SharePoint Online, OneDrive, and Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)(Office 응용 프로그램에서 주기적으로 SharePoint Online, OneDrive 및 Lync Online의 자격 증명 요구)을 참조하세요.
     
-    UPN 값에 있는 도메인이 테넌트에 대해 확인된 도메인인 경우는 사용자의 UPN 값을 Azure AD proxyAddresses 특성에 대한 다른 메일 주소로 추가합니다. 이렇게 하면 사용 권한을 부여할 때 사용자의 UPN 값이 지정되어 있을 경우 사용자에게 Azure Rights Management에 대한 사용 권한을 부여할 수 있습니다. 여기에 대한 자세한 내용과 사용자 계정에 권한을 부여하는 방법은 [Azure Information Protection을 위한 사용자 및 그룹 준비](./plan-design/prepare.md)를 참조하세요.
+    UPN 값에 있는 도메인이 테넌트에 대해 확인된 도메인인 경우는 사용자의 UPN 값을 Azure AD proxyAddresses 특성에 대한 다른 메일 주소로 추가합니다. 이렇게 하면 사용 권한을 부여할 때 사용자의 UPN 값이 지정되어 있을 경우 사용자에게 Azure Rights Management에 대한 사용 권한을 부여할 수 있습니다. 여기에 대한 자세한 내용과 사용자 계정에 권한을 부여하는 방법은 [Azure Information Protection을 위한 사용자 및 그룹 준비](prepare.md)를 참조하세요.
 
 AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스 인증을 수행하는 모바일 장치나 Mac 컴퓨터:
 

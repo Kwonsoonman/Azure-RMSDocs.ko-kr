@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 93e5af9843ef215ec074024179c71d577722096b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: cebca1f9ce2bb7d73f29e3e1ea7d6fd2fc6a5742
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474750"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489885"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
@@ -71,13 +71,13 @@ Azure RMS의 보호를 받는 각 문서나 메일에 대해 Azure RMS는 단일
 
 콘텐츠 키는 문서에서 정책의 일부로 조직의 RSA 키("Azure Information Protection 테넌트 키")로 보호되고, 문서 작성자도 정책에 서명합니다. 이 테넌트 키는 조직의 Azure Rights Management 서비스에 의해 보호되는 모든 문서와 전자 메일에 공통적이며, 조직에서 고객을 관리하는 테넌트 키(BYOK(Bring Your Own Key)라고 함)를 사용하는 경우 Azure Information Protection 관리자만 이 키를 변경할 수 있습니다. 
 
-이 테넌트 키는 Microsoft의 온라인 서비스나 매우 통제가 강화된 환경에서, 그리고 면밀한 모니터링이 진행 중인 경우에 보호됩니다. 고객 관리 테넌트 키(BYOK)를 사용하는 경우 키를 추출하거나 내보내거나 모든 환경에서 공유하는 기능이 없어도 이 보안은 각 Azure 지역의 고급 HSM(하드웨어 보안 모듈) 배열을 사용하여 강화됩니다. 테넌트 키 및 BYOK에 대한 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](./plan-design/plan-implement-tenant-key.md)을 참조하세요.
+이 테넌트 키는 Microsoft의 온라인 서비스나 매우 통제가 강화된 환경에서, 그리고 면밀한 모니터링이 진행 중인 경우에 보호됩니다. 고객 관리 테넌트 키(BYOK)를 사용하는 경우 키를 추출하거나 내보내거나 모든 환경에서 공유하는 기능이 없어도 이 보안은 각 Azure 지역의 고급 HSM(하드웨어 보안 모듈) 배열을 사용하여 강화됩니다. 테넌트 키 및 BYOK에 대한 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)을 참조하세요.
 
 Windows 장치에 전송되는 라이선스 및 인증서는 클라이언트의 장치 개인 키로 보호되며, 이 키는 사용자가 장치에서 Azure RMS를 처음 사용하는 경우 생성됩니다. 따라서 이 개인 키는 클라이언트에서 DPAPI로 보호됩니다. 이 DPAPI는 사용자의 암호에서 파생된 키를 사용하여 이러한 암호를 보호합니다. 모바일 장치에서 키가 한 번만 사용됩니다. 따라서 키가 클라이언트에 저장되지 않으므로 이러한 키를 장치에서 보호하지 않아도 됩니다. 
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비
-Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Rights Management Service가 활성화되고](./deploy-use/activate-service.md) 사용자가 해당 Windows 컴퓨터에서 Rights Management Service를 처음 사용하고(**사용자 환경 초기화** 또는 부트스트래핑으로도 알려진 프로세스) **콘텐츠(문서 또는 메일)를 보호하고** 다른 사용자가 보호하는 콘텐츠를 **소비**(열어서 사용)하는 일반적인 흐름을 단계별로 살펴보겠습니다.
+Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Rights Management Service가 활성화되고](activate-service.md) 사용자가 해당 Windows 컴퓨터에서 Rights Management Service를 처음 사용하고(**사용자 환경 초기화** 또는 부트스트래핑으로도 알려진 프로세스) **콘텐츠(문서 또는 메일)를 보호하고** 다른 사용자가 보호하는 콘텐츠를 **소비**(열어서 사용)하는 일반적인 흐름을 단계별로 살펴보겠습니다.
 
 사용자 환경이 초기화되면 사용자는 문서를 보호하거나 해당 컴퓨터에서 보호된 문서를 사용할 수 있습니다.
 
@@ -110,7 +110,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 ![RMS 문서 보호 - 2단계, 정책이 만들어짐](./media/AzRMS_documentprotection2.png)
 
-**2단계에서 발생하는 작업**: 그런 다음 RMS 클라이언트는 사용자 또는 그룹에 대한 [사용 권한](./deploy-use/configure-usage-rights.md) 및 만료 날짜와 같은 기타 제한 사항이 포함된 문서에 대한 정책을 포함하는 인증서를 만듭니다. 이러한 설정은 관리자가 이전에 구성한 템플릿에 정의하거나 콘텐츠를 보호할 때 지정할 수 있습니다("임시 정책"이라고도 함).   
+**2단계에서 발생하는 작업**: 그런 다음 RMS 클라이언트는 사용자 또는 그룹에 대한 [사용 권한](configure-usage-rights.md) 및 만료 날짜와 같은 기타 제한 사항이 포함된 문서에 대한 정책을 포함하는 인증서를 만듭니다. 이러한 설정은 관리자가 이전에 구성한 템플릿에 정의하거나 콘텐츠를 보호할 때 지정할 수 있습니다("임시 정책"이라고도 함).   
 
 선택한 사용자 및 그룹을 식별하는 데 사용하는 기본 Azure AD 특성은 사용자나 그룹의 메일 주소를 모두 저장하는 Azure AD proxyAddress 특성입니다. 그러나 사용자 계정의 AD ProxyAddresses 특성에 값이 없으면 대신 사용자의 UserPrincipalName 값이 사용됩니다.
 
@@ -127,7 +127,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 ![RMS 문서 소비 - 1단계, 사용자가 인증되고 권한 목록을 가져옴](./media/AzRMS_documentconsumption1.png)
 
-**1단계에서 발생하는 작업**: 인증된 사용자는 문서 정책과 사용자의 인증서를 Azure Rights Management Service에 전송합니다. 서비스는 정책의 암호를 해독하고 평가한 후 사용자가 문서에 대해 갖는 권한(있는 경우) 목록을 작성합니다. 사용자를 식별하려면 사용자의 계정 및 사용자가 멤버인 그룹에 대해 Azure AD ProxyAddresses 특성을 사용합니다. 성능을 높이기 위해 그룹 멤버 자격은 [캐시](./plan-design/prepare.md#group-membership-caching-by-azure-information-protection)됩니다. 사용자 계정에 Azure AD ProxyAddresses 특성 값이 없는 경우는 대신 Azure AD UserPrincipalName에 있는 값이 사용됩니다.
+**1단계에서 발생하는 작업**: 인증된 사용자는 문서 정책과 사용자의 인증서를 Azure Rights Management Service에 전송합니다. 서비스는 정책의 암호를 해독하고 평가한 후 사용자가 문서에 대해 갖는 권한(있는 경우) 목록을 작성합니다. 사용자를 식별하려면 사용자의 계정 및 사용자가 멤버인 그룹에 대해 Azure AD ProxyAddresses 특성을 사용합니다. 성능을 높이기 위해 그룹 멤버 자격은 [캐시](prepare.md#group-membership-caching-by-azure-information-protection)됩니다. 사용자 계정에 Azure AD ProxyAddresses 특성 값이 없는 경우는 대신 Azure AD UserPrincipalName에 있는 값이 사용됩니다.
 
 ![RMS 문서 소비 - 2단계, 사용 라이선스가 클라이언트에 반환됨](./media/AzRMS_documentconsumption2.png)
 
@@ -166,7 +166,7 @@ Azure Rights Management Service에 대해 자세히 알아보려면 **이해 및
 
 Azure Rights Management Service 구성 및 사용 시 나올 수 있는 용어를 파악할 수 있도록 [Azure Information Protection 용어](./terminology.md)를 검토하고, 배포를 시작하기 전에 [Azure Information Protection에 대한 요구 사항](requirements.md)도 확인하세요. 직접 사용해 보려는 경우에는 [Azure Information Protection에 대한 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 참조하세요.
 
-그러나 조직에 대해 데이터 보호 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](./plan-design/deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
+그러나 조직에 대해 데이터 보호 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
 
 > [!TIP]
 > 추가 정보와 도움말을 확인하려면 [Azure Information Protection에 대한 정보 및 지원](information-support.md)의 리소스와 링크를 사용하세요.

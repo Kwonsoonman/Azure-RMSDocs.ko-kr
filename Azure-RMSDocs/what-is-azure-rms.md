@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c7af3c166eafda4d0fa5ec5a85c47353b593776b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 96eb395f9fb8a73d903422d2f6afbba22b7df91b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475040"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489256"
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 권한 관리란?
 
@@ -51,7 +51,7 @@ Azure Information Protection의 이 데이터 보호 서비스에 대한 자세�
 
 Azure Information Protection 레이블을 사용하여 직접 사용해 보고 문서를 보호하려는 경우 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 참조하세요. 이 자습서에는 중요한 데이터가 검색되었을 때 문서 보호 확인에 대한 내용이 포함됩니다. 또한 메일로 공유하는 문서 보호(사용 현황을 파악할 수 있도록 추적할 수 있고, 필요한 경우 액세스를 취소할 수 있음)에 대한 내용도 포함됩니다.
 
-그러나 관리자 및 사용자가 문서 및 전자 메일 보호를 시작할 수 있도록 조직에 대해 Azure Information Protection 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](./plan-design/deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
+그러나 관리자 및 사용자가 문서 및 전자 메일 보호를 시작할 수 있도록 조직에 대해 Azure Information Protection 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
 
 > [!TIP]
 > 추가 정보와 도움말을 확인하려면 [Azure Information Protection에 대한 정보 및 지원](information-support.md)의 리소스와 링크를 사용하세요.

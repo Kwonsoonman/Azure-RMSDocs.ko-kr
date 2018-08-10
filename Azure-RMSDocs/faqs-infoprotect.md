@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 691bf76154689e69966f173a19e047120748687b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 154c4beb398bdd772f91b85ea2d7d05fe3e3fd16
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474700"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489174"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
@@ -55,7 +55,7 @@ Azure Information Protection의 [사용자 의견 사이트](https://msip.uservo
 
 ## <a name="how-do-i-prevent-somebody-from-removing-or-changing-a-label"></a>다른 사용자가 레이블을 제거하거나 변경하지 않도록 방지하려면 어떻게 할까요?
 
-사용자가 분류 레이블을 낮추거나 보호를 제거하는 이유를 설명해야 하는 [정책 설정](./deploy-use/configure-policy-settings.md)이 있지만 이 설정으로 인해 이러한 작업이 방해되지는 않습니다. 사용자가 레이블을 제거하거나 변경하지 않도록 방지하려면 콘텐츠를 미리 보호하고 보호 권한에서 사용자에게 내보내기 또는 모든 권한 [사용 권한](./deploy-use/configure-usage-rights.md)을 부여하지 않습니다. 
+사용자가 분류 레이블을 낮추거나 보호를 제거하는 이유를 설명해야 하는 [정책 설정](configure-policy-settings.md)이 있지만 이 설정으로 인해 이러한 작업이 방해되지는 않습니다. 사용자가 레이블을 제거하거나 변경하지 않도록 방지하려면 콘텐츠를 미리 보호하고 보호 권한에서 사용자에게 내보내기 또는 모든 권한 [사용 권한](configure-usage-rights.md)을 부여하지 않습니다. 
 
 ## <a name="when-an-email-is-labeled-do-any-attachments-automatically-get-the-same-labeling"></a>메일에 레이블이 지정되면 첨부 파일에 자동으로 동일한 레이블이 지정되나요?
 
@@ -65,7 +65,7 @@ Azure Information Protection의 [사용자 의견 사이트](https://msip.uservo
 
 Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 
 
-이 메타데이터를 Exchange Online 메일 흐름 규칙에 사용하는 방법에 대한 자세한 내용 및 예제는 [Azure Information Protection 레이블에 대한 Exchange Online 메일 흐름 규칙 구성](./deploy-use/configure-exo-rules.md)을 참조하세요.
+이 메타데이터를 Exchange Online 메일 흐름 규칙에 사용하는 방법에 대한 자세한 내용 및 예제는 [Azure Information Protection 레이블에 대한 Exchange Online 메일 흐름 규칙 구성](configure-exo-rules.md)을 참조하세요.
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
 

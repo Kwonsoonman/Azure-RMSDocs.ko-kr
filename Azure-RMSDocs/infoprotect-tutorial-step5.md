@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4e59a3b3-f0f4-4535-8b96-cac68303d855
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 01bf7e0e090482a74c8f5e162bb8771cf8ee941b
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 288b945f785f3f12226d48ad7a91aab8a2747c77
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474580"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489351"
 ---
 # <a name="step-5-see-sharing-of-protected-files-in-action-and-track-your-document"></a>5단계: 작업에서 보호된 파일 공유 확인 및 문서 추적 
 
@@ -127,4 +127,4 @@ ms.locfileid: "39474580"
 
 더 많은 문서를 공유해 보고 사용되는 방식을 추적하고, 문서 취소 작업 방법을 확인합니다.
 
-Azure Portal의 **빠른 시작** 페이지로 돌아가 Azure Information Protection [질문과 대답](faqs.md)에서 일부 내용을 읽어보고 다른 설명서 문서의 내용도 살펴보는 것이 도움이 될 수 있습니다. 그러나 조직에 대해 Azure Information Protection 배포를 시작할 준비가 되면 그다음 단계로 [Azure Information Protection 배포 로드맵](./plan-design/deployment-roadmap.md)을 확인해야 합니다. 
+Azure Portal의 **빠른 시작** 페이지로 돌아가 Azure Information Protection [질문과 대답](faqs.md)에서 일부 내용을 읽어보고 다른 설명서 문서의 내용도 살펴보는 것이 도움이 될 수 있습니다. 그러나 조직에 대해 Azure Information Protection 배포를 시작할 준비가 되면 그다음 단계로 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)을 확인해야 합니다. 

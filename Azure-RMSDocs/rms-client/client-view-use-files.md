@@ -4,7 +4,7 @@ description: Azure Information Protection 클라이언트를 설치해야 하는
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/17/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a9b09347531bc27c965222e5d8b3c23fe593cd72
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 84a41cb828d2ccd931191f5f0fcf094e3903fb21
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473327"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575501"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>사용자 가이드: Rights Management로 보호된 파일 보기 및 사용
 
@@ -69,7 +69,7 @@ ms.locfileid: "39473327"
 
     **권한**을 클릭하면 파일에 대한 권한을 확인할 수 있습니다. **권한** 대화 상자에서는 추가 권한과 함께 새 파일 버전을 요청하려는 경우 연락할 수 있는 파일 소유자도 확인할 수 있습니다.
     
-    권한 및 각 권한에 포함되는 사용 권한에 대한 자세한 내용은 [권한 수준에 포함된 권한](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels)을 참조하세요.
+    권한 및 각 권한에 포함되는 사용 권한에 대한 자세한 내용은 [권한 수준에 포함된 권한](../configure-usage-rights.md#rights-included-in-permissions-levels)을 참조하세요.
 
 4. 파일을 편집하려면 **다른 이름으로 저장**을 클릭합니다. 이렇게 하면 보호되지 않은 파일을 레이블 없이 원본 파일 이름 확장명으로 저장할 수 있습니다. 그런 다음 해당 파일 형식과 연결된 응용 프로그램을 사용하여 파일을 편집할 수 있습니다. 
     

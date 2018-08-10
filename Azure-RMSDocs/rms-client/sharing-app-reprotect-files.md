@@ -13,12 +13,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a503c4232847828bf32d889f4702fbfed39463ad
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 15df93cfe3a88e3aaafefcb0df05579a726e6d84
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473715"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575831"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일에 대한 사용 권한 변경
 
@@ -33,7 +33,7 @@ ms.locfileid: "39473715"
 >
 > 마찬가지로 사용 권한을 추가하거나 제거하려는 경우 추가하거나 제거할 해당 사용 권한만 지정할 수는 없으며, 지정된 사용자에게 부여할 모든 사용 권한을 지정해야 합니다.
 
-다시 보호하려는 파일의 소유자(예: 공유 응용 프로그램을 사용하여 원래 파일을 보호한 사람)인 경우 자동으로 파일을 다시 보호하는 권한을 가지게 됩니다. 소유자가 아닌 경우 현재 보호된 파일에 있는 사용 권한에 따라 파일을 다시 보호할 권한이 있을 수도 있고 없을 수도 있습니다. 파일을 다시 보호하기 위해 [모든 권한 사용 권리](../deploy-use/configure-usage-rights.md#usage-rights-and-descriptions)가 필요합니다.
+다시 보호하려는 파일의 소유자(예: 공유 응용 프로그램을 사용하여 원래 파일을 보호한 사람)인 경우 자동으로 파일을 다시 보호하는 권한을 가지게 됩니다. 소유자가 아닌 경우 현재 보호된 파일에 있는 사용 권한에 따라 파일을 다시 보호할 권한이 있을 수도 있고 없을 수도 있습니다. 파일을 다시 보호하기 위해 [모든 권한 사용 권리](../configure-usage-rights.md#usage-rights-and-descriptions)가 필요합니다.
 
 예를 들어 다른 사용자가 Rights Management 공유 응용 프로그램을 사용하여 파일을 보호한 경우 해당 사용자가, 사용자가 속하는 그룹을 지정하고 사용자 지정 권한으로 **공동 소유자**를 지정하면 사용자는 파일을 다시 보호할 수 있습니다. 그러나 해당 사용자가, 사용자가 속하는 이름이나 그룹을 지정하지 않았거나 **검토자 - 보기 및 편집**이나 사용자가 사용 권한을 제거할 수 없는 템플릿을 선택한 경우 사용자는 파일을 다시 보호할 수 없습니다. 확인하는 가장 쉬운 방법은 파일을 다시 보호해 보는 것입니다.
 

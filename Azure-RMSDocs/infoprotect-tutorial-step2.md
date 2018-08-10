@@ -10,12 +10,12 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: 403d5d2222438136e5d449dbe4b26b693ad566d0
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: eb99fb447702dd2f453c1caacbb8ccd341ed127b
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474640"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489487"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성
 
@@ -32,7 +32,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
        > [!NOTE]
        > 기본 정책은 이 자습서의 기본 정책과 약간 다르게 보일 수 있습니다. 예를 들어 **일반** 대신 **내부** 레이블이, **극비** 대신 **비밀**이 있을 수 있습니다. **받는 사람만**이라는 하위 레이블은 없을 수도 있으며, 레이블이 전혀 없을 수도 있습니다. 이러한 변경 내용은 테넌트용으로 작성된 시기에 따라 기본 정책의 버전이 달라지기 때문입니다. 또는 자습서를 시작하기 전에 직접 레이블을 편집했을 수 있습니다.
        > 
-       > 기본 정책이 다르게 보이는 경우에도 여전히 이 자습서를 사용할 수 있지만, 뒤에 나오는 지침과 그림을 사용할 때 이러한 변경 내용을 인식해야 합니다. 현재 기본 정책과 일치하도록 기본 정책을 수정하려면 [기본 Azure Information Protection 정책](./deploy-use/configure-policy-default.md)을 참조하세요.
+       > 기본 정책이 다르게 보이는 경우에도 여전히 이 자습서를 사용할 수 있지만, 뒤에 나오는 지침과 그림을 사용할 때 이러한 변경 내용을 인식해야 합니다. 현재 기본 정책과 일치하도록 기본 정책을 수정하려면 [기본 Azure Information Protection 정책](configure-policy-default.md)을 참조하세요.
     
     - 기본 구성을 사용하는 경우 일부 레이블에 구성된 시각적 표시가 없습니다. 시각적 표식은 바닥글, 머리글 및 워터마크입니다. 기본 정책에 따라 일부 레이블에 보호가 설정될 수도 있습니다. 예를 들면 다음과 같습니다. 
     
@@ -151,10 +151,10 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 |자세한 정보가 필요한 경우|추가 정보|
 |--------------------------------|--------------------------|
-|기본 정책 및 다양한 버전에 대한 정보|[기본 Azure Information Protection 정책](./deploy-use/configure-policy-default.md)|
-|정책 구성에 대한 정보|[Azure Information Protection 정책 구성](./deploy-use/configure-policy.md)|
-|보호를 위한 레이블 구성에 대한 자세한 지침|[Rights Management 보호에 대해 레이블을 구성하는 방법](./deploy-use/configure-policy-protection.md)|
-|권한에 대한 자세한 정보|[Azure Rights Management에 대한 사용 권한 구성](./deploy-use/configure-usage-rights.md)|
+|기본 정책 및 다양한 버전에 대한 정보|[기본 Azure Information Protection 정책](configure-policy-default.md)|
+|정책 구성에 대한 정보|[Azure Information Protection 정책 구성](configure-policy.md)|
+|보호를 위한 레이블 구성에 대한 자세한 지침|[Rights Management 보호에 대해 레이블을 구성하는 방법](configure-policy-protection.md)|
+|권한에 대한 자세한 정보|[Azure Rights Management에 대한 사용 권한 구성](configure-usage-rights.md)|
 
 
 

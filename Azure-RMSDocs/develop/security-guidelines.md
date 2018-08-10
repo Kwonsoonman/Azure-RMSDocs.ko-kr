@@ -12,12 +12,12 @@ ms.service: information-protection
 ms.technology: techgroup-identity
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 194e676807145dffdf326fe782f4b4051876552d
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: cb4195b1b63c39d1d6e47d1c94d2f7e1c2c83e63
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371852"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575848"
 ---
 # <a name="security-best-practices-for-azure-information-protection"></a>Azure Information Protection에 대한 보안 모범 사례
 
@@ -81,7 +81,7 @@ AIP에서는 런타임에 코드를 수정하거나 IAT(가져오기 주소 테�
 
 응용 프로그램에서 AIP 발급 라이선스에 명시된 권한을 잘못 해석하고 적용하는 경우 정보 소유자가 의도하지 않은 방식으로 정보를 제공할 수 있습니다. 발급 라이선스에서는 정보를 볼 수 있는 권한만 부여하는데 응용 프로그램에서 사용자가 암호화되지 않은 정보를 새 미디어에 저장할 수 있도록 하는 경우를 예로 들 수 있습니다.
 
-AIP 시스템에서는 권한을 몇 가지 그룹으로 구성합니다. 자세한 내용은 [Azure 권한 관리에 대한 사용 권한 구성](../deploy-use/configure-usage-rights.md)을 참조하세요.
+AIP 시스템에서는 권한을 몇 가지 그룹으로 구성합니다. 자세한 내용은 [Azure 권한 관리에 대한 사용 권한 구성](../configure-usage-rights.md)을 참조하세요.
 
 ### <a name="azure-information-protection"></a>Azure Information Protection  
 API에서는 사용자의 정보 암호 해독을 허용하거나 허용하지 않으므로 정보가 본질적으로 보호되는 것은 아닙니다. 사용자가 정보 암호를 해독할 수 있는 권한이 있고 API에서 이를 허용하는 경우 응용 프로그램에서는 정보가 일반 텍스트 상태가 된 후 해당 정보를 관리하거나 보호할 책임이 있습니다. 응용 프로그램은 해당 환경 및 인터페이스를 관리하여 정보의 무단 사용을 방지해야 합니다. 예를 들어 라이선스에서 PLAY 권한만 부여하는 경우 **인쇄** 및 **복사** 단추를 사용하지 않도록 설정합니다. 테스트 도구 모음에서는 응용 프로그램이 인식되는 모든 라이선스 권한에 대해 올바르게 작동하지는 확인해야 합니다.

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1e4db3996a201909fcf861a4190cbe6647a7326c
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 55d3b303a84a557ad5f65760d963221878a7b521
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474620"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488854"
 ---
 # <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure Information Protection에 대한 규정 준수 및 지원 정보
 
@@ -33,7 +33,7 @@ Azure Information Protection은 다른 서비스를 지원하는 동시에 다�
 
 - Azure Information Protection에서 사용하는 모든 암호화 키는 RSA 2048비트를 사용하는 고객 관련 루트 키로 보호됩니다. 하지만 RSA 1024는 이전 버전과 호환성을 지원합니다. [추가 정보](./how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths)
 
-- "BYOK([bring your own key](./plan-design/plan-implement-tenant-key.md))"를 사용하여 고객 관련 루트 키가 Microsoft에서 관리되거나 Thales HSM의 고객에 프로비전됩니다. 또한 클라우드 기반 키를 사용하여 보호되어야 함을 나타내는 요구 사항에 영향을 받는 콘텐츠의 경우 Azure Information Protection은 "HYOK([hold your own key](./deploy-use/configure-adrms-restrictions.md))"를 사용하여 온-프레미스 키에서 제한된 기능을 지원합니다.
+- "BYOK([bring your own key](plan-implement-tenant-key.md))"를 사용하여 고객 관련 루트 키가 Microsoft에서 관리되거나 Thales HSM의 고객에 프로비전됩니다. 또한 클라우드 기반 키를 사용하여 보호되어야 함을 나타내는 요구 사항에 영향을 받는 콘텐츠의 경우 Azure Information Protection은 "HYOK([hold your own key](configure-adrms-restrictions.md))"를 사용하여 온-프레미스 키에서 제한된 기능을 지원합니다.
 
 - Azure Information Protection 서비스는 전 세계 지역 데이터 센터에서 호스팅됩니다. Azure Information Protection 키 및 정책은 원래 배포된 지역 내에 항상 남아 있습니다.
  

@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: e7d91f2d-d6a7-4c7e-821f-c94e4be9967d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8cc1ac191b33177e5a20e6cecbdb8e1c711b4c59
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 6bbd9422159627d8e8e94b6ff7c1993590b3069d
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475020"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488688"
 ---
 # <a name="on-premises-servers-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 온-프레미스 서버
 
@@ -58,7 +58,7 @@ Azure Rights Management 커넥터를 사용할 때 Azure Information Protection�
 
 Rights Management 커넥터는 Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 및 Windows Server 2008 R2에서 지원됩니다.
 
-이러한 온-프레미스 서버에 대해 Rights Management 커넥터를 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리 커넥터 배포](./deploy-use/deploy-rms-connector.md)를 참조하세요.
+이러한 온-프레미스 서버에 대해 Rights Management 커넥터를 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리 커넥터 배포](deploy-rms-connector.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 기타 요구 사항을 확인하려면 [Azure 권한 관리 요구 사항](requirements.md)을 참조하세요.

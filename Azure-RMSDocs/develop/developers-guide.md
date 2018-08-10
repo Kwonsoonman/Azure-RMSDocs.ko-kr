@@ -11,12 +11,12 @@ ms.technology: techgroup-identity
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: cfd090df79e640ef6106f2c72001b2b05969cdf6
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 096f5d02e4bcb39390bcd6f6ed64476f4a74d5eb
+ms.sourcegitcommit: 7ed2a257f68435fe6807af8975a5477801ec2537
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39473902"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501271"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
 
@@ -40,7 +40,7 @@ ms.locfileid: "39473902"
 
 ## <a name="powershell-guides"></a>PowerShell 가이드
 
-Azure Rights Management 관리자가 사용하는 PowerShell cmdlet은 서비스 응용 프로그램을 개발하고 테스트하는 데 유용합니다. 자세한 내용은 [Azure Information Protection 클라이언트에서 PowerShell 사용](/information-protection/rms-client/client-admin-guide-powershell)을 참조하세요.
+Azure Rights Management 관리자가 사용하는 PowerShell cmdlet은 서비스 응용 프로그램을 개발하고 테스트하는 데 유용합니다. 자세한 내용은 [Azure Information Protection 클라이언트에서 PowerShell 사용](/azure/information-protection/rms-client/client-admin-guide-powershell)을 참조하세요.
 
 ## <a name="user-applications"></a>사용자 응용 프로그램
 
@@ -143,5 +143,5 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 ### <a name="see-also"></a>참고 항목
 
 - [개발자 용어](terms.md)
-- [Azure Information Protection 용어 - ITPro](./terminology.md)
+- [Azure Information Protection 용어 - ITPro](../terminology.md)
 

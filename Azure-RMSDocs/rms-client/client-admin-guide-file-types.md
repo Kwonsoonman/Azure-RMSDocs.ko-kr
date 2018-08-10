@@ -4,7 +4,7 @@ description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: cdf710737c4bcf5ffbfdd3ab6476f6b5cd118854
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: fcba3a4bf59c3c18dab53de9e06d5484e092465c
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371284"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575593"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -63,7 +63,7 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 
 추가 파일 형식은 보호도 수행해야 분류가 지원됩니다. 이러한 파일 형식은 [분류 및 보호가 지원되는 파일 형식](#supported-file-types-for-classification-and-protection) 섹션을 참조하세요.
 
-예를 들어 현재 [기본 정책](../deploy-use/configure-policy-default.md)에서 **일반** 레이블은 분류를 적용하고 보호를 적용하지 않습니다. **일반** 레이블을 sales.pdf라는 파일에 적용할 수는 있지만 이 레이블을 sales.txt라는 파일에는 적용할 수 없습니다. 
+예를 들어 현재 [기본 정책](../configure-policy-default.md)에서 **일반** 레이블은 분류를 적용하고 보호를 적용하지 않습니다. **일반** 레이블을 sales.pdf라는 파일에 적용할 수는 있지만 이 레이블을 sales.txt라는 파일에는 적용할 수 없습니다. 
 
 또한 현재 기본 정책에서는 **Confidential \ All Employees**가 분류 및 보호를 적용합니다. 이 레이블은 sales.pdf 및 sales.txt라는 파일에 적용할 수 있습니다. 또한 분류하지 않고 이러한 파일에 보호만 적용할 수 있습니다.
 
@@ -79,7 +79,7 @@ Azure Information Protection 클라이언트는 다음 표에서 설명하는 �
 
 Azure Information Protection 클라이언트가 적용하는 기본 보호 수준을 변경할 수 있습니다. 기본 수준을 일반 수준으로 변경하거나 그 반대로 변경할 수 있으며, Azure Information Protection 클라이언트가 보호를 적용하지 않도록 차단할 수도 있습니다. 자세한 내용은 이 문서에서 [파일의 기본 보호 수준 변경](#changing-the-default-protection-level-of-files) 섹션을 참조하세요.
 
-관리자가 구성한 레이블을 선택할 때 이 데이터 보호를 자동으로 적용할 수도 있고, [권한 수준](../deploy-use/configure-usage-rights.md#rights-included-in-permissions-levels)을 사용하여 사용자 보호 설정을 직접 지정할 수도 있습니다. 
+관리자가 구성한 레이블을 선택할 때 이 데이터 보호를 자동으로 적용할 수도 있고, [권한 수준](../configure-usage-rights.md#rights-included-in-permissions-levels)을 사용하여 사용자 보호 설정을 직접 지정할 수도 있습니다. 
 
 ### <a name="file-sizes-supported-for-protection"></a>보호가 지원되는 파일 크기
 

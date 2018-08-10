@@ -10,18 +10,18 @@ ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: 1260b9e5-dba1-41de-84fd-609076587842
-ms.openlocfilehash: 601b60d7ece2cf1c67865b25b6e897b8f2905dc8
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: b060288efd080397f754d6aecd71abc4bbaabf81
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475150"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488813"
 ---
 # <a name="quick-start-tutorial-for-azure-information-protection"></a>Azure Information Protection 빠른 시작 자습서 
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-이 자습서를 사용하여 20분 정도에 완료할 수 있는 5단계를 통해 Azure Information Protection을 빠르게 사용해 보세요. 이 자습서는 Azure Information Protection에서 제공하는 기능 중 일부 경우를 빠르게 보여 주는 자가 주도형 데모로 만들어졌습니다. 사용 가능한 모든 기능이 포함되어 있지는 않으므로 조직에 대한 배포 가이드 목적이 아닙니다. 조직에 대한 Azure Information Protection을 배포하려면 [배포 로드맵 설명서](./plan-design/deployment-roadmap.md)를 참조하세요. 
+이 자습서를 사용하여 20분 정도에 완료할 수 있는 5단계를 통해 Azure Information Protection을 빠르게 사용해 보세요. 이 자습서는 Azure Information Protection에서 제공하는 기능 중 일부 경우를 빠르게 보여 주는 자가 주도형 데모로 만들어졌습니다. 사용 가능한 모든 기능이 포함되어 있지는 않으므로 조직에 대한 배포 가이드 목적이 아닙니다. 조직에 대한 Azure Information Protection을 배포하려면 [배포 로드맵 설명서](deployment-roadmap.md)를 참조하세요. 
 
 이 자습서는 IT 관리자 및 컨설턴트를 대상으로 하며, 목표는 조직의 엔터프라이즈 정보 보호 솔루션으로 Azure Information Protection을 평가하는 데 도움이 되는 것입니다. 프로덕션 환경에서 Information Protection 정책을 구성하며 사용자용 클라이언트를 설치하는 단계는 관리자가 수행합니다. 문서 레이블을 지정하고 메일을 통해 문서를 안전하게 공유하고 최종 사용자가 수행하는 작업을 추적하는 단계입니다. 이 자습서에는 조직의 데이터를 분류하고 레이블을 지정하며 보호하는 일반적인 종단 간 시나리오를 설명하기 위해 모든 단계가 포함되어 있습니다. 
 

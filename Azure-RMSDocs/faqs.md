@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: eb50971c3bdfd464927866a72e2657f7acffd515
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 8fccb3dccfdef523bf1ffdee4bc5be175b3f94fd
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474710"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39488953"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -52,30 +52,30 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 
 분명 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
 
-- **Information Protection 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Information Protection의 모든 측면을 구성할 수 있지만 다른 서비스는 구성할 수 없습니다. 이 역할을 가진 관리자는 Azure Rights Management 보호 서비스를 활성화 및 비활성화하고 보호 설정 및 레이블을 구성하며 Azure Information Protection 정책을 구성할 수 있습니다. 또한 이 역할을 가진 관리자는 모든 [Azure Information Protection 클라이언트](./rms-client/client-admin-guide-powershell.md) 및 [AADRM 모듈](./deploy-use/administer-powershell.md)의 PowerShell cmdlet을 모두 실행할 수 있습니다. 
+- **Information Protection 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Information Protection의 모든 측면을 구성할 수 있지만 다른 서비스는 구성할 수 없습니다. 이 역할을 가진 관리자는 Azure Rights Management 보호 서비스를 활성화 및 비활성화하고 보호 설정 및 레이블을 구성하며 Azure Information Protection 정책을 구성할 수 있습니다. 또한 이 역할을 가진 관리자는 모든 [Azure Information Protection 클라이언트](./rms-client/client-admin-guide-powershell.md) 및 [AADRM 모듈](administer-powershell.md)의 PowerShell cmdlet을 모두 실행할 수 있습니다. 
     
     사용자에게 이 관리 역할을 할당하려면 [Azure Active Directory에서 사용자에게 관리자 역할 할당](/azure/active-directory/active-directory-users-assign-role-azure-portal)을 참조하세요.
 
-- **보안 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Portal에서 Azure Information Protection의 모든 측면을 구성하고 다른 Azure 서비스의 일부 측면을 구성할 수 있습니다. 이 역할을 가진 관리자는 [AADRM 모듈의 PowerShell cmdlet](./deploy-use/administer-powershell.md)을 실행할 수 없습니다.
+- **보안 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Portal에서 Azure Information Protection의 모든 측면을 구성하고 다른 Azure 서비스의 일부 측면을 구성할 수 있습니다. 이 역할을 가진 관리자는 [AADRM 모듈의 PowerShell cmdlet](administer-powershell.md)을 실행할 수 없습니다.
     
     사용자에게 이 관리 역할을 할당하려면 [Azure Active Directory에서 사용자에게 관리자 역할 할당](/azure/active-directory/active-directory-users-assign-role-azure-portal)을 참조하세요. 이 역할이 있는 사용자에게 어떤 다른 권한이 있는지 보려면 Azure Active Directory 설명서의 [사용 가능한 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) 섹션을 참조하세요.
 
-- Azure Rights Management **전역 관리자** 및 **커넥터 관리자**: 이러한 Azure Rights Management 관리자 역할의 경우, 첫 번째 역할은 다른 클라우드 서비스의 전역 관리자가 되지 않고 모든 [AADRM 모듈의 PowerShell cmdlet](./deploy-use/administer-powershell.md)을 실행할 권한을 사용자에게 부여하고 두 번째 역할은 RMS(Rights Management) 커넥터만 실행하는 권한을 부여합니다. 이러한 관리 역할은 관리 콘솔에 대한 권한을 부여하거나 문서 추적 사이트에서 관리자 모드를 사용하도록 권한을 부여하지 않습니다.
+- Azure Rights Management **전역 관리자** 및 **커넥터 관리자**: 이러한 Azure Rights Management 관리자 역할의 경우, 첫 번째 역할은 다른 클라우드 서비스의 전역 관리자가 되지 않고 모든 [AADRM 모듈의 PowerShell cmdlet](administer-powershell.md)을 실행할 권한을 사용자에게 부여하고 두 번째 역할은 RMS(Rights Management) 커넥터만 실행하는 권한을 부여합니다. 이러한 관리 역할은 관리 콘솔에 대한 권한을 부여하거나 문서 추적 사이트에서 관리자 모드를 사용하도록 권한을 부여하지 않습니다.
 
     이러한 관리 역할 중 하나를 할당하려면 AADRM PowerShell cmdlet, [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator)를 사용합니다.
 
 몇 가지 참고 사항:
 
-- [온보딩 컨트롤](./deploy-use/activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구성한 경우, 이 구성은 RMS 커넥터를 제외하고 Azure Information Protection을 관리하는 기능에 영향을 주지 않습니다. 예를 들어 콘텐츠를 보호하는 기능을 "IT 부서" 그룹으로 제한하도록 온보딩 컨트롤을 구성했으면 RMS 커넥터를 설치하고 구성하는 데 사용하는 계정은 해당 그룹의 구성원이어야 합니다. 
+- [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구성한 경우, 이 구성은 RMS 커넥터를 제외하고 Azure Information Protection을 관리하는 기능에 영향을 주지 않습니다. 예를 들어 콘텐츠를 보호하는 기능을 "IT 부서" 그룹으로 제한하도록 온보딩 컨트롤을 구성했으면 RMS 커넥터를 설치하고 구성하는 데 사용하는 계정은 해당 그룹의 구성원이어야 합니다. 
 
-- 관리 역할이 할당된 사용자는 Azure Information Protection에 의해 보호된 문서나 이메일에서 보호를 자동으로 제거할 수 없습니다. 슈퍼 사용자로 할당된 사용자만 그렇게 할 수 있으며, 이것도 슈퍼 사용자 기능을 활성화되어 있을 때 가능합니다. 그러나 Azure Information Protection에 관리 권한을 할당한 사용자는 자신의 계정을 포함하여 사용자를 슈퍼 사용자로 할당할 수 있습니다. 이들은 슈퍼 사용자 기능을 활성화할 수도 있습니다. 이러한 작업은 관리자 로그에 기록됩니다. 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](./deploy-use/configure-super-users.md)의 보안 모범 사례 섹션을 참조하세요. 
+- 관리 역할이 할당된 사용자는 Azure Information Protection에 의해 보호된 문서나 이메일에서 보호를 자동으로 제거할 수 없습니다. 슈퍼 사용자로 할당된 사용자만 그렇게 할 수 있으며, 이것도 슈퍼 사용자 기능을 활성화되어 있을 때 가능합니다. 그러나 Azure Information Protection에 관리 권한을 할당한 사용자는 자신의 계정을 포함하여 사용자를 슈퍼 사용자로 할당할 수 있습니다. 이들은 슈퍼 사용자 기능을 활성화할 수도 있습니다. 이러한 작업은 관리자 로그에 기록됩니다. 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](configure-super-users.md)의 보안 모범 사례 섹션을 참조하세요. 
 
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 
 예. Azure Information Protection은 클라우드 기반 솔루션이지만 클라우드 뿐 아니라 온-프레미스에 저장된 문서 및 전자 메일을 분류, 레이블 지정 및 보호할 수 있습니다.
 
-Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](./deploy-use/deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
+Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
 
 Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure Rights Management에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](./how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](./how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
 
@@ -111,9 +111,9 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?
 
-한동안 Windows Server File Classification Infrastructure를 사용하여 서류를 분류한 후 [Rights Management 커넥터](./deploy-use/deploy-rms-connector.md)(Office 문서만 해당) 또는 [PowerShell 스크립트](./rms-client/configure-fci.md)(모든 파일 형식)를 사용하여 분류된 문서를 보호할 수 있었습니다. 
+한동안 Windows Server File Classification Infrastructure를 사용하여 서류를 분류한 후 [Rights Management 커넥터](deploy-rms-connector.md)(Office 문서만 해당) 또는 [PowerShell 스크립트](./rms-client/configure-fci.md)(모든 파일 형식)를 사용하여 분류된 문서를 보호할 수 있었습니다. 
 
-이제 [Azure Information Protection 스캐너](./deploy-use/deploy-aip-scanner.md)를 사용할 수 있습니다. 이 스캐너는 Azure Information Protection 클라이언트 및 Azure Information Protection 정책을 사용하여 문서(모든 파일 형식)에 레이블을 지정하여 이러한 문서가 분류되고 선택적으로 보호되도록 합니다.
+이제 [Azure Information Protection 스캐너](deploy-aip-scanner.md)를 사용할 수 있습니다. 이 스캐너는 Azure Information Protection 클라이언트 및 Azure Information Protection 정책을 사용하여 문서(모든 파일 형식)에 레이블을 지정하여 이러한 문서가 분류되고 선택적으로 보호되도록 합니다.
 
 이러한 두 솔루션의 주요 차이점은 다음과 같습니다.
 
@@ -123,7 +123,7 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 |작동 모드: <br /><br />- 실시간|작동 모드: <br /><br />- 데이터 저장소를 체계적으로 탐색하고 이 주기를 한 번 또는 반복적으로 실행할 수 있습니다.|
 |파일 형식에 대한 지원: <br /><br />- 기본적으로 모든 파일 형식이 보호됩니다. <br /><br />- 레지스트리를 편집하여 특정 파일 형식을 보호에서 제외할 수 있습니다.|파일 형식에 대한 지원: <br /><br />- 기본적으로 Office 파일 형식이 보호됩니다. <br /><br />- 레지스트리를 편집하여 특정 파일 형식을 보호에 포함할 수 있습니다.|
 
-현재 로컬 폴더 또는 네트워크 저장소에서 보호되는 파일에 대한 [Rights Management 소유자](./deploy-use/configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)를 설정할 때는 차이점이 있습니다. 기본적으로 두 솔루션 모두에서 Rights Management 소유자는 파일을 보호하는 계정으로 설정되지만 이 설정을 재정의할 수 있습니다.
+현재 로컬 폴더 또는 네트워크 저장소에서 보호되는 파일에 대한 [Rights Management 소유자](configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)를 설정할 때는 차이점이 있습니다. 기본적으로 두 솔루션 모두에서 Rights Management 소유자는 파일을 보호하는 계정으로 설정되지만 이 설정을 재정의할 수 있습니다.
 
 - Windows Server FCI: Rights Management 소유자를 모든 파일에 대한 단일 계정으로 설정하거나 각 파일에 대한 Rights Management 소유자를 동적으로 설정할 수 있습니다. Rights Management 소유자를 동적으로 설정하려면 **-OwnerMail [Source File Owner Email]** 매개 변수 및 값을 사용합니다. 이 구성은 파일의 Owner 속성에 있는 사용자 계정 이름을 사용하여 Active Directory에서 해당 사용자의 이메일 주소를 검색합니다.
 

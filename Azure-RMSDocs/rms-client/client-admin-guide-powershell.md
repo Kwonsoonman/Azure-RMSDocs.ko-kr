@@ -4,7 +4,7 @@ description: PowerShell을 사용하여 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/26/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 4f9d2db7-ef27-47e6-b2a8-d6c039662d3c
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7853cfc577329e04a1f378a419f0e1ef3eca0f2a
-ms.sourcegitcommit: 6cbd03b28873b192dc730556c6dd5a7da6e705df
+ms.openlocfilehash: 69aa0078f854c04c6eaf360e8f17a0597523f832
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39411073"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575644"
 ---
 # <a name="admin-guide-using-powershell-with-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 PowerShell 사용
 
@@ -39,7 +39,7 @@ cmdlet은 PowerShell 모듈 **AzureInformationProtection**과 함께 설치됩�
 > 
 > Windows Server 2016의 경우, Windows 10용 최신 관리 템플릿(.admx)을 설치하면 동일한 그룹 정책 설정을 사용할 수 있습니다.
 
-[Azure Information Protection 스캐너](../deploy-use/deploy-aip-scanner.md)는 AzureInformationProtection 모듈의 cmdlet을 사용하여 Windows Server에 서비스를 설치하고 구성합니다. 그런 다음 이 스캐너를 통해 데이터 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.
+[Azure Information Protection 스캐너](../deploy-aip-scanner.md)는 AzureInformationProtection 모듈의 cmdlet을 사용하여 Windows Server에 서비스를 설치하고 구성합니다. 그런 다음 이 스캐너를 통해 데이터 저장소에서 파일을 검색, 분류 및 보호할 수 있습니다.
 
 모든 cmdlet 목록 및 해당 도움말을 보려면 [AzureInformationProtection 모듈](/powershell/module/azureinformationprotection)을 참조하세요. PowerShell 세션 내에서 `Get-Help <cmdlet name> -online`을 입력하여 최신 도움말을 볼 수 있습니다.  
 
@@ -92,13 +92,13 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 레이블을 사용하여 데이터 보호를 적용하는 경우와 Azure Rights Management에 직접 연결하여 데이터 보호를 적용하는 경우 모두 이 필수 조건이 적용됩니다.
 
-Azure Information Protection 테넌트가 활성화되지 않은 경우 [Azure Rights Management 활성화](../deploy-use/activate-service.md)에 대한 지침을 참조하세요.
+Azure Information Protection 테넌트가 활성화되지 않은 경우 [Azure Rights Management 활성화](../activate-service.md)에 대한 지침을 참조하세요.
 
 #### <a name="prerequisite-2-to-remove-protection-from-files-for-others-using-your-own-account"></a>필수 구성 요소 2: 여러분의 계정을 사용하는 다른 사람을 위해 파일에서 보호 제거
 
 다른 사용자를 위해 파일에서 보호를 제거하기 위한 일반적인 시나리오에는 데이터 검색 또는 데이터 복구가 포함됩니다. 레이블을 사용하여 보호를 적용하는 경우 보호를 적용하지 않는 새 레이블을 설정하거나 레이블을 제거하여 보호를 제거할 수 있습니다. 하지만 Azure Rights Management 서비스에 직접 연결하여 보호를 제거할 가능성이 높습니다.
 
-파일에서 보호를 제거할 수 있는 Rights Management 사용 권한이 있거나 슈퍼 사용자여야 합니다. 데이터 검색 또는 데이터 복구의 경우 일반적으로 슈퍼 사용자 기능이 사용됩니다. 이 기능을 사용하도록 설정하고 사용자 계정을 슈퍼 사용자로 구성하려면 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
+파일에서 보호를 제거할 수 있는 Rights Management 사용 권한이 있거나 슈퍼 사용자여야 합니다. 데이터 검색 또는 데이터 복구의 경우 일반적으로 슈퍼 사용자 기능이 사용됩니다. 이 기능을 사용하도록 설정하고 사용자 계정을 슈퍼 사용자로 구성하려면 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../configure-super-users.md)을 참조하세요.
 
 #### <a name="prerequisite-3-to-protect-or-unprotect-files-without-user-interaction"></a>필수 구성 요소 3: 사용자 개입 없이 파일 보호 또는 보호 해제
 
@@ -140,7 +140,7 @@ Set-RMSServerAuthentication -Key $symmetricKey -AppPrincipalId $appPrincipalID -
 
 Azure RMS Windows PowerShell 모듈에서 Get-AadrmConfiguration cmdlet을 실행합니다.
 
-1. 이 모듈이 컴퓨터에 아직 설치되지 않은 경우 [AADRM PowerShell 모듈](../deploy-use/install-powershell.md)를 참조하세요.
+1. 이 모듈이 컴퓨터에 아직 설치되지 않은 경우 [AADRM PowerShell 모듈](../install-powershell.md)를 참조하세요.
 
 2. **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell을 시작합니다.
 
@@ -234,7 +234,7 @@ Azure Active Directory에 대한 MSOnline PowerShell 모듈에서 `New-MsolServi
 
 이 서비스 사용자 계정 계정을 슈퍼 사용자로 만드는 것이 좋습니다. 슈퍼 사용자로 구성하면 항상 이 서비스 사용자 계정을 통해 다른 사용자에 대한 파일 보호를 해제할 수 있습니다. 표준 사용자 계정을 슈퍼 사용자로 구성할 때와 같은 방식으로 동일한 Azure RMS cmdlet, [Add-AadrmSuperUser](/powershell/aadrm/vlatest/Add-AadrmSuperUser.md)를 사용하되, AppPrincipalId 값을 갖는 **ServicePrincipalId** 매개 변수를 지정합니다.
 
-슈퍼 사용자에 대한 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 검색을 위한 슈퍼 사용자 구성](../deploy-use/configure-super-users.md)을 참조하세요.
+슈퍼 사용자에 대한 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 검색을 위한 슈퍼 사용자 구성](../configure-super-users.md)을 참조하세요.
 
 > [!NOTE]
 > 자체 계정을 사용하여 Azure Rights Management 서비스에서 인증을 받으려면 파일을 보호하거나 보호를 해제하거나, 템플릿을 가져오기 전에 Set-RMSServerAuthentication을 실행할 필요가 없습니다.
@@ -466,7 +466,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 기본적으로 레이블 지정에 대한 cmdlet을 실행하는 경우 명령이 대화형 PowerShell 세션의 자체적인 사용자 컨텍스트에서 실행됩니다. 무인으로 실행하려면 이 용도에 맞는 Azure AD 사용자 계정을 새로 만듭니다. 그런 다음 해당 사용자의 컨텍스트에서 Set-AIPAuthentication cmdlet을 설정하여 Azure AD의 액세스 토큰으로 자격 증명을 설정 및 저장합니다. 그런 후 이 사용자 계정이 Azure Rights Management 서비스에 대해 인증되고 부트스트랩됩니다. 이 계정은 레이블이 사용하는 Azure Information Protection 정책 및 모든 Rights Management 템플릿을 다운로드합니다.
 
 > [!NOTE]
-> [범위 지정 정책](../deploy-use/configure-policy-scope.md)을 사용하는 경우 범위 지정 정책에 이 계정을 추가해야 할 수도 있습니다.
+> [범위 지정 정책](../configure-policy-scope.md)을 사용하는 경우 범위 지정 정책에 이 계정을 추가해야 할 수도 있습니다.
 
 이 cmdlet을 처음 실행하면 Azure Information Protection에 로그인하라는 메시지가 표시됩니다. 무인 사용자에 대해 만든 사용자 계정 이름과 암호를 지정합니다. 그러면 이 계정은 인증 토큰이 만료될 때까지 레이블링 cmdlet을 비대화형으로 실행할 수 있습니다. 
 

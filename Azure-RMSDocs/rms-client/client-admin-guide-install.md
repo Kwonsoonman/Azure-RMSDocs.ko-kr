@@ -4,7 +4,7 @@ description: 엔터프라이즈 네트워크에서 Windows용 Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: af9cfca4d328dba7646c1c319744476fe0e6b43f
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 5c162b1a25332c977d2c4976338854904abfcc54
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474174"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575552"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -117,7 +117,7 @@ Microsoft 업데이트 카탈로그를 사용하지 않거나 Intune 같은 중�
 
     - 컴퓨터에서 Office 2010를 실행하는 경우 컴퓨터를 다시 시작합니다. 
         
-        클라이언트를 ServiceLocation 매개 변수를 사용하여 설치하지 않은 경우 먼저 Azure Information Protection 표시줄을 사용하는 Office 응용 프로그램 중 하나(예: Word)를 열고 이 최초 사용을 위해 레지스트리를 업데이트하라는 메시지가 표시되는지 확인합니다. [서비스 검색](../rms-client/client-deployment-notes.md#rms-service-discovery)을 사용하여 레지스트리 키를 채울 수 있습니다. 
+        클라이언트를 ServiceLocation 매개 변수를 사용하여 설치하지 않은 경우 먼저 Azure Information Protection 표시줄을 사용하는 Office 응용 프로그램 중 하나(예: Word)를 열고 이 최초 사용을 위해 레지스트리를 업데이트하라는 메시지가 표시되는지 확인합니다. [서비스 검색](client-deployment-notes.md#rms-service-discovery)을 사용하여 레지스트리 키를 채울 수 있습니다. 
     
     - 기타 버전의 Office에서는 모든 Office 응용 프로그램 및 파일 탐색기의 모든 인스턴스를 다시 시작합니다. 
         
@@ -147,7 +147,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 1. PowerShell 세션에서 먼저 [Connect-AadrmService](https://docs.microsoft.com/powershell/aadrm/vlatest/connect-aadrmservice)를 실행하고 관리자 자격 증명을 지정하여 Azure Rights Management 서비스에 연결합니다. 그런 다음 [Get-AadrmConfiguration](https://docs.microsoft.com/powershell/aadrm/vlatest/get-aadrmconfiguration)을 실행합니다. 
  
-    Azure Rights Management 서비스용 PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요.
+    Azure Rights Management 서비스용 PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](../install-powershell.md)를 참조하세요.
 
 2. 출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
 
@@ -202,7 +202,7 @@ Windows 업데이트를 사용하여 자동 업그레이드를 지원하고 Offi
 
 Azure Information Protection 클라이언트에 포함된 PowerShell 모듈에는 스캐너를 설치하고 구성하는 cmdlet이 있습니다. 하지만 스캐너를 사용하려면 전체 버전의 클라이언트를 설치해야 하며 PowerShell 모듈만 설치할 수는 없습니다.
 
-스캐너에 클라이언트를 설치하려면 이전 섹션에서 동일한 지침을 따릅니다. 그러면 스캐너를 설치할 준비가 된 것입니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-use/deploy-aip-scanner.md)를 참조하세요.
+스캐너에 클라이언트를 설치하려면 이전 섹션에서 동일한 지침을 따릅니다. 그러면 스캐너를 설치할 준비가 된 것입니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-aip-scanner.md)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 Azure Information Protection 클라이언트를 설치했으므로 다음에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.

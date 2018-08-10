@@ -4,7 +4,7 @@ description: Azure Information Protection에 대한 문서 추적을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8153b189a6e4f77e2a4c1f7d630fbb2f32b667f1
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 00e044274f27409b39c06b4e6cbd2beaa58eb8f2
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39373739"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575433"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>관리자 가이드: Azure Information Protection에 대한 문서 추적 구성 및 사용
 
@@ -27,7 +27,7 @@ ms.locfileid: "39373739"
 
 ## <a name="using-powershell-to-manage-the-document-tracking-site"></a>PowerShell을 사용하여 문서 추적 사이트 관리
 
-다음 섹션에는 PowerShell을 사용하여 문서 추적 사이트를 관리하는 방법을 설명합니다. PowerShell 모듈에 대한 설치 지침은 [AADRM PowerShell 모듈 설치](../deploy-use/install-powershell.md)를 참조하세요. 모듈을 이미 다운로드하여 설치한 경우 `(Get-Module aadrm –ListAvailable).Version`을 실행하여 버전 번호를 확인합니다.
+다음 섹션에는 PowerShell을 사용하여 문서 추적 사이트를 관리하는 방법을 설명합니다. PowerShell 모듈에 대한 설치 지침은 [AADRM PowerShell 모듈 설치](../install-powershell.md)를 참조하세요. 모듈을 이미 다운로드하여 설치한 경우 `(Get-Module aadrm –ListAvailable).Version`을 실행하여 버전 번호를 확인합니다.
 
 각 cmdlet에 대한 자세한 내용은 제공된 링크를 사용하세요.
 
@@ -108,7 +108,7 @@ Bing 지도에서 사용자 위치를 표시하는 데 사용하는 virtualearth
 사용자와 관리자가 문서 추적 사이트를 어떻게 사용하고 있는지를 기록하는 요청 유형도 있습니다. 예를 들어 **RevokeAccess**는 사용자 또는 사용자를 대신하는 관리자가 문서 추적 사이트에서 문서를 취소한 경우의 요청 유형입니다. 이 요청 유형을 AdminAction 필드와 함께 사용하여 사용자가 고유한 문서를 취소했는지(AdminAction 필드가 비어 있음), 아니면 관리자가 사용자 대신 문서를 취소했는지(AdminAction이 true임) 확인할 수 있습니다.
 
 
-사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../deploy-use/log-analyze-usage.md)을 참조하세요.
+사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../log-analyze-usage.md)을 참조하세요.
 
 
 

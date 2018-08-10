@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6c500c099a382d4a4a070b05a55043bc66dc9543
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: aa1b24e24d05487014280fd6334d013466b6777f
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474650"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489130"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 응용 프로그램 및 서비스에서 Azure Rights Management를 지원하는 방법 
 
@@ -34,9 +34,9 @@ ms.locfileid: "39474650"
 
 Office 앱 및 Azure Information Protection 클라이언트를 구성할 준비가 된 경우:
 
-- Office 앱을 구성하려면 [Office 앱: 클라이언트 구성](./deploy-use/configure-office-apps.md)을 참조하세요.
+- Office 앱을 구성하려면 [Office 앱: 클라이언트 구성](configure-office-apps.md)을 참조하세요.
 
-- Azure Information Protection 클라이언트를 설치 및 구성하려면 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](./deploy-use/configure-client.md)을 참조하세요.
+- Azure Information Protection 클라이언트를 설치 및 구성하려면 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
 ## <a name="exchange-online-and-exchange-server"></a>Exchange Online 및 Exchange Server
 Exchange Online 또는 Exchange Server를 사용할 때 Azure Rights Management를 지원하는 IRM(정보 권한 관리) 옵션을 구성할 수 있습니다. 이 구성을 사용하면 Exchange에서 다음 보호 솔루션을 제공할 수 있습니다.
@@ -57,9 +57,9 @@ Exchange 온-프레미스를 사용하면 Azure Rights Management 커넥터를 �
 
 IRM에 대해 Exchange를 구성할 준비가 된 경우:
 
-- Exchange Online에 관한 내용은 [Exchange Online: IRM 구성](./deploy-use/configure-office365.md#exchange-online-irm-configuration)을 참조하세요.
+- Exchange Online에 관한 내용은 [Exchange Online: IRM 구성](configure-office365.md#exchange-online-irm-configuration)을 참조하세요.
 
-- Exchange 온-프레미스에 관한 내용은 [Azure Rights Management 커넥터 배포](./deploy-use/deploy-rms-connector.md)를 참조하세요.
+- Exchange 온-프레미스에 관한 내용은 [Azure Rights Management 커넥터 배포](deploy-rms-connector.md)를 참조하세요.
 
 
 ## <a name="sharepoint-online-and-sharepoint-server"></a>SharePoint Online 및 SharePoint Server
@@ -74,7 +74,7 @@ SharePoint 목록 및 라이브러리의 경우 항상 최종 사용자가 아�
 
 이렇게 하려면 먼저 SharePoint에 대해 IRM 서비스를 사용하도록 설정해야 합니다. 그런 다음 라이브러리의 IRM 사용 권한을 지정합니다. SharePoint Online 및 비즈니스용 OneDrive의 경우, 사용자는 비즈니스 라이브러리용 OneDrive에 대해 IRM 사용 권한도 지정할 수 있습니다. SharePoint는 템플릿에서 지정할 수 있는 몇 가지 설정과 일치하며 선택 가능한 SharePoint 구성 설정이 있더라도 권한 정책 템플릿을 사용하지 않습니다.
 
-SharePoint Server를 사용하는 경우에 Azure Rights Management 커넥터를 배포하여 이 IRM 보호 기능을 사용할 수 있습니다. 이 커넥터는 온-프레미스 서버와 Rights Management 클라우드 서비스 사이에서 릴레이 역할을 합니다. 자세한 내용은 [Azure Rights Management 커넥터 배포](./deploy-use/deploy-rms-connector.md)를 참조하세요.
+SharePoint Server를 사용하는 경우에 Azure Rights Management 커넥터를 배포하여 이 IRM 보호 기능을 사용할 수 있습니다. 이 커넥터는 온-프레미스 서버와 Rights Management 클라우드 서비스 사이에서 릴레이 역할을 합니다. 자세한 내용은 [Azure Rights Management 커넥터 배포](deploy-rms-connector.md)를 참조하세요.
 
 > [!NOTE]
 > 현재 SharePoint IRM을 사용하는 경우 다음과 같이 몇 가지 제한 사항이 있습니다.
@@ -93,9 +93,9 @@ Office 365 블로그 게시물 [SharePoint와 SharePoint Online의 정보 권한
 
 IRM에 대해 SharePoint를 구성할 준비가 된 경우:
 
-- SharePoint Online에 관한 내용은 [SharePoint Online 및 비즈니스용 OneDrive: IRM 구성](./deploy-use/configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)을 참조하세요.
+- SharePoint Online에 관한 내용은 [SharePoint Online 및 비즈니스용 OneDrive: IRM 구성](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration)을 참조하세요.
 
-- Sharepoint Server에 관한 내용은 [Azure Rights Management 커넥터 배포](./deploy-use/deploy-rms-connector.md)를 참조하세요.
+- Sharepoint Server에 관한 내용은 [Azure Rights Management 커넥터 배포](deploy-rms-connector.md)를 참조하세요.
 
 
 ## <a name="next-steps"></a>다음 단계
@@ -104,4 +104,4 @@ Office 365를 사용하는 경우 Office 365의 파일 보호에 대해 권장�
 
 다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
-이러한 응용 프로그램 및 서비스의 구성을 포함한 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](./plan-design/deployment-roadmap.md)을 참조하세요.
+이러한 응용 프로그램 및 서비스의 구성을 포함한 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)을 참조하세요.

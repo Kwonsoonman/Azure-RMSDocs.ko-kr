@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61762157ff6419bb325d92470d5264dc9b55f840
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 1c41e1e6622dc76a2a2afe68a48d0761573ccf06
+ms.sourcegitcommit: 6eab0086306a4e12cbcf7d8578cb5fd42abe1e66
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474218"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40020603"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -52,7 +52,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 **새로운 기능**: 
 
-- 개인 정보를 포함하는 문서를 분류할 수 있는 새롭고 중요한 정보 형식을 지원합니다. [추가 정보](../deploy-use/configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
+- 개인 정보를 포함하는 문서를 분류할 수 있는 새롭고 중요한 정보 형식을 지원합니다. [추가 정보](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
 
 - Word, Excel 및 PowerPoint 파일에서 **엄격한 Open XML 문서** 형식에 대한 지원 레이블을 지정합니다. Open XML 형식에 대한 자세한 내용은 Office 블로그 게시물인 [새로운 Office에서 새 파일 형식 옵션](https://www.microsoft.com/en-us/microsoft-365/blog/2012/08/13/new-file-format-options-in-the-new-office/)을 참조하세요. 
 
@@ -92,7 +92,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
     
     - *일정* 매개 변수의 값은 더 이상 **OneTime**, **Continuous** 및 **Never**가 아니라 **Manual** 및 **Always**입니다.
         
-    - *형식* 매개 변수를 제거했습니다. 따라서 [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration)을 실행하면 출력에서 제거됩니다.
+    - *형식* 매개 변수를 제거했습니다. 따라서 [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Get-AIPScannerConfiguration)을 실행하면 출력에서 제거됩니다. 기본적으로 첫 번째 검사 주기 후 수정된 파일이나 새 파일만 검사합니다. 모든 파일을 다시 검사하기 위해 이전에 *형식* 매개 변수를 **전체**로 설정한 경우 지금 *재설정* 매개 변수를 사용하여 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)을 실행합니다. 수동 일정에 대해서도 스캐너를 구성해야 합니다. 그러려면 *일정* 매개 변수를 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)을 사용하여 **수동**으로 설정해야 합니다.
     
 - 스캐너의 경우 이제 기본 제외 목록에는 .rtf 파일이 포함됩니다. [추가 정보](client-admin-guide-file-types.md#file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner)
 
@@ -109,7 +109,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Outlook 버전 16.0.9324.1000 이상(간편 실행)의 경우 Azure Information Protection 표시줄은 이전에 Outlook 응용 프로그램 외부에 표시줄을 표시할 수 있는 최신 모니터 표시 옵션을 지원합니다.
 
-- 이제 [Office 응용 프로그램 유형별](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)로 구성한 시각적 표시가 이전에 Azure Information Protection 레이블에 의해 적용된 헤더 또는 바닥글을 대체합니다.
+- 이제 [Office 응용 프로그램 유형별](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)로 구성한 시각적 표시가 이전에 Azure Information Protection 레이블에 의해 적용된 헤더 또는 바닥글을 대체합니다.
 
 - Excel 파일에 이미 레이블이 지정되어 있고 레이블이 시각적 표시를 적용하는 경우 이제 새 시트에도 레이블의 시각적 표시가 적용됩니다.
 
@@ -133,7 +133,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
     
     - 기본적으로 Office 문서 유형만 보호됩니다. 다른 파일 형식은 레지스트리에서 정의하는 경우 보호될 수 있습니다. 자세한 내용은 개발자 지침의 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요.
     
-    - 기본적으로 권한이 있는 계정으로 스캐너를 실행하는 경우 이제 스캐너는 보안을 강화하기 위해 낮은 무결성 수준으로 실행됩니다. 스캐너를 실행하는 서비스 계정에 [스캐너 필수 구성 요소](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)에 설명된 권한만 있는 경우 낮은 무결성 수준은 필요하지 않고 성능에 부정적인 영향을 주기 때문에 권장되지 않습니다. 고급 클라이언트 설정을 사용하여 낮은 무결성 수준을 사용하지 않도록 설정할 수 있습니다. [추가 정보](../rms-client/client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
+    - 기본적으로 권한이 있는 계정으로 스캐너를 실행하는 경우 이제 스캐너는 보안을 강화하기 위해 낮은 무결성 수준으로 실행됩니다. 스캐너를 실행하는 서비스 계정에 [스캐너 필수 구성 요소](../deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)에 설명된 권한만 있는 경우 낮은 무결성 수준은 필요하지 않고 성능에 부정적인 영향을 주기 때문에 권장되지 않습니다. 고급 클라이언트 설정을 사용하여 낮은 무결성 수준을 사용하지 않도록 설정할 수 있습니다. [추가 정보](client-admin-guide-customizations.md#disable-the-low-integrity-level-for-the-scanner) 
     
 - [Get-AIPFileStatus](/powershell/module/azureinformationprotection/Get-AIPFileStatus)의 경우 이제 출력에는 Rights Management 소유자 및 Rights Management 발급자와 콘텐츠가 보호된 날짜가 포함됩니다.
  
@@ -157,11 +157,11 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 **새로운 기능**:
 
-- Azure Information Protection 스캐너: 클라이언트에 포함된 PowerShell 모듈에는 온-프레미스 데이터 저장소에서 파일을 검색하고, 분류하고, 보호할 수 있도록 스캐너를 설치하고 구성할 새로운 cmdlet이 있습니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-use/deploy-aip-scanner.md)를 참조하세요. 
+- Azure Information Protection 스캐너: 클라이언트에 포함된 PowerShell 모듈에는 온-프레미스 데이터 저장소에서 파일을 검색하고, 분류하고, 보호할 수 있도록 스캐너를 설치하고 구성할 새로운 cmdlet이 있습니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-aip-scanner.md)를 참조하세요. 
 
-- 이제 텍스트 문자열에서 "If.App" 변수 문을 사용하여 Word, Excel, PowerPoint 및 Outlook에 대새 다른 시각적 표시를 설정하고 응용 프로그램 형식을 식별할 수 있습니다. [추가 정보](../deploy-use/configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+- 이제 텍스트 문자열에서 "If.App" 변수 문을 사용하여 Word, Excel, PowerPoint 및 Outlook에 대새 다른 시각적 표시를 설정하고 응용 프로그램 형식을 식별할 수 있습니다. [추가 정보]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
-- [정책 설정](../deploy-use/configure-policy-settings.md)인 **Office 앱에 Information Protection 표시줄 표시**에 대한 지원입니다. 이 설정을 끄기로 설정하면 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택합니다.
+- [정책 설정](../configure-policy-settings.md)인 **Office 앱에 Information Protection 표시줄 표시**에 대한 지원입니다. 이 설정을 끄기로 설정하면 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택합니다.
 
 - 백그라운드에서 계속 실행되도록 분류를 켜기 위한 새 고급 클라이언트 설정(미리 보기)입니다. 이 설정을 사용하도록 설정하면 Office 앱의 경우 자동 및 권장 분류는 문서를 저장할 때 실행하는 대신 백그라운드에서 계속 실행됩니다. 이제 동작을 이렇게 변경하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류를 적용할 수 있습니다. [추가 정보](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 
@@ -169,7 +169,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Office 앱에서 사용자 지정 권한을 지정하는 경우 이제 주소록 아이콘에서 사용자를 찾아보고 선택할 수 있습니다. 이 옵션을 통해 파일 탐색기를 사용하여 사용자 지정 권한을 지정하는 경우 사용자 환경에 패리티를 제공합니다.
 
-- PowerShell을 사용하고 **로컬로 로그온** 권한을 허용할 수 없는 서비스 계정의 완전한 비대화형 인증 방법에 대한 지원입니다. 이 인증 방법은 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication)을 사용하여 새 *토큰* 매개 변수를 사용하고, PowerShell 스크립트를 작업으로 실행해야 합니다. [추가 정보](../rms-client/client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
+- PowerShell을 사용하고 **로컬로 로그온** 권한을 허용할 수 없는 서비스 계정의 완전한 비대화형 인증 방법에 대한 지원입니다. 이 인증 방법은 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication)을 사용하여 새 *토큰* 매개 변수를 사용하고, PowerShell 스크립트를 작업으로 실행해야 합니다. [추가 정보](client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
 
 - [Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication)의 새 매개 변수인 *IntegratedAuth*입니다. 이 매개 변수는 AD RMS에 서버 모드를 지원합니다. 이 기능은 Windows Server FCI를 지원하기 위해 AD RMS에 필요합니다.
 
@@ -225,11 +225,11 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 **새로운 기능**:
 
-- 레이블에 대해 구성할 수 있는 새로운 Office 365 DLP 조건을 지원합니다. 자세한 내용은 [Azure Information Protection 레이블에 대한 조건 구성](../deploy-use/configure-policy-classification.md)을 참조하세요.
+- 레이블에 대해 구성할 수 있는 새로운 Office 365 DLP 조건을 지원합니다. 자세한 내용은 [Azure Information Protection 레이블에 대한 조건 구성](../configure-policy-classification.md)을 참조하세요.
 
-- 사용자 정의 작업에 대해 구성된 레이블을 지원합니다. Outlook의 경우 이 레이블에 따라 자동으로 Outlook 전달 금지 옵션이 적용됩니다. Word, Excel, PowerPoint 및 파일 탐색기의 경우 이 레이블에 따라 사용자 지정 권한을 지정하라는 메시지가 사용자에게 표시됩니다. 자세한 내용은 [보호에 대해 Azure Information Protection 레이블 구성](../deploy-use/configure-policy-protection.md)을 참조하세요.
+- 사용자 정의 작업에 대해 구성된 레이블을 지원합니다. Outlook의 경우 이 레이블에 따라 자동으로 Outlook 전달 금지 옵션이 적용됩니다. Word, Excel, PowerPoint 및 파일 탐색기의 경우 이 레이블에 따라 사용자 지정 권한을 지정하라는 메시지가 사용자에게 표시됩니다. 자세한 내용은 [보호에 대해 Azure Information Protection 레이블 구성](../configure-policy-protection.md)을 참조하세요.
 
-- 레이블에는 다국어가 지원됩니다. 2017년 8월 30일부터 [기본 정책](../deploy-use/configure-policy-default.md)에 이 버전의 클라이언트가 사용자에게 표시하는 여러 언어에 대한 지원이 포함됩니다. 이 날짜 이전에 기본 정책에서 원하는 언어로 레이블을 볼 수 있는 사용자와 구성 가능한 레이블에 대한 자세한 내용은 [Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법](../deploy-use/configure-policy-languages.md)을 참조하세요.
+- 레이블에는 다국어가 지원됩니다. 2017년 8월 30일부터 [기본 정책](../configure-policy-default.md)에 이 버전의 클라이언트가 사용자에게 표시하는 여러 언어에 대한 지원이 포함됩니다. 이 날짜 이전에 기본 정책에서 원하는 언어로 레이블을 볼 수 있는 사용자와 구성 가능한 레이블에 대한 자세한 내용은 [Azure Information Protection에서 다른 언어에 대한 레이블을 구성하는 방법](configure-policy-languages.md)을 참조하세요.
 
 - 레이블은 Information Protection 표시줄뿐만 아니라 Office 리본의 **보호** 단추에도 표시됩니다. 
 
@@ -237,15 +237,15 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Azure Portal에서 구성하는 고급 클라이언트 구성을 지원합니다. 이러한 구성은 다음과 같습니다.
     
-    - [Outlook에서 전달 금지 단추 숨기기 또는 표시](../rms-client/client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
+    - [Outlook에서 전달 금지 단추 숨기기 또는 표시](client-admin-guide-customizations.md#hide-or-show-the-do-not-forward-button-in-outlook)
     
-    - [사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정](../rms-client/client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
+    - [사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users)
     
-    - [Azure Information Protection 표시줄을 영구적으로 숨기기](../rms-client/client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
+    - [Azure Information Protection 표시줄을 영구적으로 숨기기](client-admin-guide-customizations.md#permanently-hide-the-azure-information-protection-bar)
     
-    - [Outlook에서 권장 분류 사용](../rms-client/client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
+    - [Outlook에서 권장 분류 사용](client-admin-guide-customizations.md#enable-recommended-classification-in-outlook)
 
-- PowerShell의 경우 새로운 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 및 [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication) PowerShell cmdlet을 사용하여 파일에 레이블을 비대화형으로 지정할 수 있습니다. 이러한 cmdlet을 사용하는 방법에 대한 자세한 내용은 관리자 가이드의 [PowerShell 섹션](../rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)을 참조하세요.
+- PowerShell의 경우 새로운 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 및 [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication) PowerShell cmdlet을 사용하여 파일에 레이블을 비대화형으로 지정할 수 있습니다. 이러한 cmdlet을 사용하는 방법에 대한 자세한 내용은 관리자 가이드의 [PowerShell 섹션](client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)을 참조하세요.
 
 - [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 및 [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell cmdlet에는 새로운 **Owner** 및 **PreserveFileDetails** 매개 변수가 있습니다. 이러한 매개 변수를 사용하여 Owner 사용자 지정 속성에 대한 이메일 주소를 지정할 수 있지만 레이블이 지정되는 문서의 날짜는 변경되지 않습니다.
 
@@ -259,7 +259,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - SharePoint Server에 저장된 파일의 레이블 지정 및 보호를 지원합니다.
 
-- 워터마크는 이제 여러 줄을 지원합니다. 또한 시각적 표시는 이제 문서를 저장할 때마다가 아니라 [문서를 처음 저장할 때만](../deploy-use/configure-policy-markings.md#when-visual-markings-are-applied) 문서에 적용됩니다().
+- 워터마크는 이제 여러 줄을 지원합니다. 또한 시각적 표시는 이제 문서를 저장할 때마다가 아니라 [문서를 처음 저장할 때만](configure-policy-markings.md#when-visual-markings-are-applied) 문서에 적용됩니다.
 
 - **도움말 및 피드백** 대화 상자의 **진단 실행** 옵션이 **설정 재설정**으로 바뀌었습니다. 이 작업의 동작에 사용자 로그아웃 및 Azure Information Protection 정책 삭제가 포함되도록 변경되었습니다. 자세한 내용은 관리자 가이드의 [설정 재설정 옵션에 대한 자세한 내용](..\rms-client\client-admin-guide.md#more-information-about-the-reset-settings-option)을 참조하세요.
 

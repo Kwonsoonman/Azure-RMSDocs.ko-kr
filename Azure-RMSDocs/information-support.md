@@ -1,10 +1,10 @@
 ---
-title: Azure Information Protection에 대한 관리 정보 및 지원
+title: Azure Information Protection에 대한 정보 및 지원
 description: 새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Microsoft에 연락하는 방법에 대한 정보가 포함된 관리자용 리소스입니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/31/2018
+ms.date: 08/06/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 427f758dd541c111f5a5554221983f10072b6ffd
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 0b0c83e987ad2fa1e6e8638970e2f4450024997a
+ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474680"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575535"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -27,15 +27,15 @@ ms.locfileid: "39474680"
 
 |수행 작업 ...|...방법:|
 |----------------|---------------|
-|가장 자주 사용되는 문서보기|상위 5개 페이지 읽기:<br /><br /> - [Azure Information Protection이란?](./what-is-information-protection.md)<br /> - [사용자를 위해 Azure Information Protection 클라이언트 설치](./rms-client/client-admin-guide-install.md)<br />- [Azure Information Protection에 대한 요구 사항](requirements.md) <br />- [Azure Information Protection 스캐너 배포](./deploy-use/deploy-aip-scanner.md)<br />- [기본 Azure Information Protection 정책](./deploy-use/configure-policy-default.md)|
-|제품 팀 및 동료와의 소통|Azure Information Protection에 대한 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 방문하세요.|
-|새로운 기능 또는 기능 변경 요청|Azure Information Protection에 대한 내용을 다루는 [UserVoice](https://msip.uservoice.com) 사이트를 방문하여 회사 메일 주소를 사용하여 로그인하세요.|
-|제품 그룹의 트윗 수신|Twitter에서 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)를 팔로우하세요.|
+|새 릴리스 및 향후 릴리스에 대해 알아보기|이 페이지의 [새 릴리스 및 업데이트에 대한 정보](#information-about-new-releases-and-updates)를 참조하세요.|
+|제품에 대한 도움말 보기|이 페이지의 [지원 옵션 및 커뮤니티 리소스](#support-options-and-community-resources)를 참조하세요.|
 |구독 정보 및 지원되는 기능 확인|[Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 사용하세요.|
-
+|새로운 기능 또는 기능 변경 요청|Azure Information Protection에 대한 내용을 다루는 [UserVoice](https://msip.uservoice.com) 사이트를 방문하여 회사 메일 주소를 사용하여 로그인하세요.|
+|제품 팀 및 동료와의 소통|Azure Information Protection에 대한 [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 방문하세요.|
+|특정 Azure Information Protection 용어 이해|[용어](terminology.md) 페이지에서 용어 또는 약어를 검색하세요.|
 
 ## <a name="information-about-new-releases-and-updates"></a>새 릴리스 및 업데이트에 대한 정보
-Azure Information Protection 제품 팀은 [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)(Enterprise Mobility 및 보안 블로그)에 새 릴리스와 업데이트에 대한 공지를 게시합니다. 이러한 블로그 게시물은 제품 문서와 지원 정보를 보완합니다.
+Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블로그](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)에 주요 새 릴리스에 대한 공지를 게시합니다. 소규모 릴리스는 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 발표되며, 요청된 기능의 상태에 대해서는 [UserVoice 사이트](https://msip.uservoice.com)를 확인해 보면 유용할 수도 있습니다.
 
 또한 문서 변경에 대한 요약은 매월 [Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)에 게시됩니다. 이 문서 업데이트에는 새로운 릴리스, 지원 문의에 대한 업데이트, 정책, 그리고 기존 릴리스의 정정 사항과 설명에 대한 정보가 포함되어 있습니다. 이러한 게시물의 제목은 "**\<month year>의 Azure Information Protection 문서 업데이트**"입니다.
 
@@ -76,9 +76,9 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility and Security Blo
 
 - Azure Information Protection에 대한 지원 정책에 대한 질문이 있으면 정기적으로 업데이트되는 [요구 사항](requirements.md) 정보를 참조하세요.
 
-- 최종 사용자 지원을 위한 정보, 지원 센터, 그리고 Azure Information Protection을 사용하는 서비스 및 응용 프로그램을 구성하는 관리자에 대해서는 [Helping users to protect files(사용자가 파일을 보호할 수 있도록 지원)](./deploy-use/help-users.md)를 참조하세요.
+- 최종 사용자 지원에 대한 정보, 지원 센터, Azure Information Protection의 보호 서비스를 사용하는 서비스 및 응용 프로그램을 구성하는 관리자의 경우 [(Helping users to protect files)사용자가 파일을 보호할 수 있도록 지원](help-users.md)을 참조하세요.
 
-- 온-프레미스 서버를 위한 Rights Management 커넥터를 배포한 경우에는 이벤트 로그 항목, 성능 카운터 및 로깅에 대한 세부 정보를 포함하는 [모니터링](./deploy-use/monitor-rms-connector.md) 정보를 참조하세요.
+- 온-프레미스 서버를 위한 Rights Management 커넥터를 배포한 경우에는 이벤트 로그 항목, 성능 카운터 및 로깅에 대한 세부 정보를 포함하는 [모니터링](monitor-rms-connector.md) 정보를 참조하세요.
 
 - Windows용 Azure Information Protection 클라이언트는 관리자 가이드에서 [설치 검사 및 문제 해결](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) 섹션을 참조하고 [지원되는 버전](./rms-client/client-version-release-history.md#servicing-information-and-timelines)을 사용 중인지 확인하세요.
 

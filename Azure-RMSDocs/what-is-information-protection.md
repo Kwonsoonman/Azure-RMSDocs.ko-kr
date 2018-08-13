@@ -4,18 +4,18 @@ description: Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/23/2018
+ms.date: 08/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.technology: techgroup-identity
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 9031309c7fbc109d23ea3ddba6fe97dc6db8c00d
-ms.sourcegitcommit: cf930d768536980b7754f7992f604aa99548ee73
+ms.openlocfilehash: 11ac7ab7a1c1b55811f2f62b426dceedfa9c4874
+ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39476961"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39489402"
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -106,7 +106,7 @@ Azure Information Protection을 Exchange Online과 함께 사용하는 경우 �
 
 온-프레미스 데이터 저장소의 경우 Azure Information Protection 스캐너를 사용하여 로컬 폴더, 네트워크 공유 및 SharePoint Server 사이트와 라이브러리에서 문서를 검색, 분류 및 보호합니다. 스캐너는 Windows Server에서 서비스로 실행됩니다. 정책에서 동일한 규칙을 사용하여 중요한 정보를 검색하고 특정 레이블을 문서에 적용할 수 있습니다. 또는 파일 콘텐츠를 검사하지 않고 데이터 리포지토리의 모든 문서에 기본 레이블을 적용할 수 있습니다. 스캐너를 보고 모드에서만 사용하여 사용자가 모를 수 있는 중요한 정보를 검색할 수도 있습니다. 
 
-스캐너 배포 및 사용에 대한 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 자동으로 파일 분류 및 보호](./deploy-use/deploy-rms-connector.md)를 참조하세요.
+스캐너 배포 및 사용에 대한 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 자동으로 파일 분류 및 보호](deploy-rms-connector.md)를 참조하세요.
 
 클라우드 데이터 저장소의 경우 Microsoft Cloud App Security를 사용하여 Box, SharePoint Online 및 비즈니스용 OneDrive의 문서에 레이블을 적용합니다. 자세한 내용은 [Azure Information Protection 분류 레이블 자동 적용](/cloud-app-security/use-case-information-protection) 및 [Azure Information Protection 통합](/cloud-app-security/azip-integration)을 참조하세요.
 
@@ -125,8 +125,11 @@ Azure Information Protection을 Exchange Online과 함께 사용하는 경우 �
 
 - Yammer: [Azure Information Protection](https://www.yammer.com/AskIPTeam)
 
+추가 리소스: [Azure Information Protection에 대한 정보 및 지원](information-support.md)
 
-또한 **Microsoft Ignite 2017**에는 주문형으로 제공되는 Azure Information Protection에 대한 여러 세션이 있었습니다. 이 회의에서 다룬 공지 사항 요약은 [What’s new in Azure Information Protection @ Ignite 2017](https://cloudblogs.microsoft.com/ENTERPRISEMOBILITY/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)(Ignite 2017에서 다룬 Azure Information Protection의 새로운 기능)을 참조하세요. 
+### <a name="microsoft-ignite"></a>Microsoft Ignite
+
+Microsoft Ignite 2017에는 주문형으로 제공되는 Azure Information Protection에 대한 여러 세션이 있었습니다. 이 회의에서 다룬 공지 사항 요약은 [What’s new in Azure Information Protection @ Ignite 2017](https://cloudblogs.microsoft.com/ENTERPRISEMOBILITY/2017/09/27/whats-new-in-azure-information-protection-ignite-2017/)(Ignite 2017에서 다룬 Azure Information Protection의 새로운 기능)을 참조하세요. 
 
 Ignite 웹 사이트에서 Azure Information Protection에 대한 태그가 지정된 세션을 [검색](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)할 수 있습니다. 그러나 다음 세션으로 시작하는 것이 좋습니다.
 
@@ -145,7 +148,7 @@ Ignite 웹 사이트에서 Azure Information Protection에 대한 태그가 지�
 
 블로그 게시물, [Azure Information Protection: 준비, 설정 보호!](https://cloudblogs.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)를 읽어보세요.
 
-5단계의 [빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 통해 Azure Information Protection을 스스로 구성하고 확인하세요. 조직을 위해 이 서비스를 배포할 준비가 되었다면 [Azure Information Protection 배포 로드맵](./plan-design/deployment-roadmap.md)을 참조하세요.
+5단계의 [빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 통해 Azure Information Protection을 스스로 구성하고 확인하세요. 조직을 위해 이 서비스를 배포할 준비가 되었다면 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)을 참조하세요.
 
 Azure Information Protection을 다른 이름으로 알고 있을 수 있습니다. [서비스에 대한 대체 용어 목록](aka.md)을 참조하세요.
 

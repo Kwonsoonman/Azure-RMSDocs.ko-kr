@@ -4,7 +4,7 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
@@ -12,12 +12,12 @@ ms.technology: techgroup-identity
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7bc9e67ae029cedc734f3060fe43f62367a805ba
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 2008a40e03e502c4dad85826d957434b218b151e
+ms.sourcegitcommit: 1eddd81dc659ffa38872b81a1bf4b5f69f71c30e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39371495"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39631574"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -29,7 +29,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ### <a name="how-to-configure-advanced-client-configuration-settings-in-the-portal"></a>포털에서 고급 클라이언트 구성 설정을 구성하는 방법
 
-1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 [Azure Portal에 로그인](../deploy-use/configure-policy.md#signing-in-to-the-azure-portal)한 다음, **Azure Information Protection** 블레이드로 이동합니다.
+1. 아직 그렇게 하지 않은 경우에는, 새 브라우저 창에서 [Azure Portal에 로그인](../configure-policy.md#signing-in-to-the-azure-portal)한 다음, **Azure Information Protection** 블레이드로 이동합니다.
 
 2. **분류** > **레이블** 메뉴 옵션에서: **정책**을 선택합니다.
 
@@ -51,7 +51,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-이 설정에 관계 없이 Azure Information Protection 클라이언트는 표준 [RMS 서비스 검색 프로세스](../rms-client/client-deployment-notes.md#rms-service-discovery)에 따라 AD RMS 클러스터를 찾습니다.
+이 설정에 관계 없이 Azure Information Protection 클라이언트는 표준 [RMS 서비스 검색 프로세스](client-deployment-notes.md#rms-service-discovery)에 따라 AD RMS 클러스터를 찾습니다.
 
 ## <a name="sign-in-as-a-different-user"></a>다른 사용자로 로그인
 
@@ -78,7 +78,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>조직에 혼합 라이선스가 있을 때 보호 전용 모드 적용
 
-조직에 Azure Information Protection에 대한 라이선스가 없지만 데이터 보호에 대한 Azure Rights Management 서비스가 포함된 Office 365에 대한 라이선스가 있는 경우, Windows용 Azure Information Protection 클라이언트는 자동으로 [보호 전용 모드](../rms-client/client-protection-only-mode.md)에서 실행됩니다.
+조직에 Azure Information Protection에 대한 라이선스가 없지만 데이터 보호에 대한 Azure Rights Management 서비스가 포함된 Office 365에 대한 라이선스가 있는 경우, Windows용 Azure Information Protection 클라이언트는 자동으로 [보호 전용 모드](client-protection-only-mode.md)에서 실행됩니다.
 
 그러나 조직에 Azure Information Protection에 대한 구독이 있는 경우 기본적으로 모든 Windows 컴퓨터에서 Azure Information Protection 정책을 다운로드할 수 있습니다. Azure Information Protection 클라이언트는 라이선스 확인 및 적용을 수행하지 않습니다. 
 
@@ -104,9 +104,9 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-클라이언트의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 이름의 유효한 정책 파일이 있는지 확인합니다. 필요한 경우 Azure Portal에서 전역 정책 또는 범위 지정 정책을 내보낼 수 있으며 클라이언트 컴퓨터에 내보내기 된 파일을 복사할 수 있습니다. 또한 이러한 방법을 통해 오래된 정책 파일을 게시된 최신 정책으로 바꿀 수 있습니다. 그러나 정책 내보내기는 사용자가 둘 이상의 범위 지정 정책에 속하는 시나리오를 지원하지 않습니다.
+클라이언트의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 이름의 유효한 정책 파일이 있는지 확인합니다. 필요한 경우 Azure Portal에서 전역 정책 또는 범위 지정 정책을 내보낼 수 있으며 클라이언트 컴퓨터에 내보내기 된 파일을 복사할 수 있습니다. 또한 이러한 방법을 통해 오래된 정책 파일을 게시된 최신 정책으로 바꿀 수 있습니다. 그러나 정책 내보내기는 사용자가 둘 이상의 범위 지정 정책에 속하는 시나리오를 지원하지 않습니다. 사용자가 [도움말 및 피드백](client-admin-guide.md#help-and-feedback-section)의 **설정 재설정** 옵션을 선택하는 경우, 정책 파일이 삭제되고 정책 파일을 수동으로 바꾸거나 클라이언트가 서비스에 연결하여 정책을 다운로드할 때까지 클라이언트가 작동 불가능하게 됩니다.
 
-정책을 내보낼 때 이 작업은 여러 다른 버전의 Azure Information Protection 클라이언트에 해당하는 여러 버전의 정책이 있는 압축된 파일을 다운로드합니다.
+Azure Portal에서 정책을 내보내면 여러 버전의 정책이 포함된 Zip 파일이 다운로드됩니다. 이러한 정책 버전은 여러 버전의 Azure Information Protection 클라이언트에 해당됩니다.
 
 1. 파일의 압축을 해제하고 다음 테이블을 사용하여 필요한 정책 파일을 식별합니다. 
     
@@ -122,7 +122,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="hide-or-show-the-do-not-forward-button-in-outlook"></a>Outlook에서 전달 금지 단추 숨기기 또는 표시
 
-이 옵션 구성 시 권장되는 방법은 **Outlook 리본에 전달 금지 단추 추가** [정책 설정](../deploy-use/configure-policy-settings.md)을 사용하는 것입니다. 하지만 Azure Portal에서 구성하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용하여 이 옵션을 구성할 수도 있습니다.
+이 옵션 구성 시 권장되는 방법은 **Outlook 리본에 전달 금지 단추 추가** [정책 설정](../configure-policy-settings.md)을 사용하는 것입니다. 하지만 Azure Portal에서 구성하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용하여 이 옵션을 구성할 수도 있습니다.
 
 이 설정을 구성하는 경우 Outlook의 리본에서 **전달 금지** 단추가 숨겨지거나 표시됩니다. 이 설정은 Office 메뉴의 전달 금지 옵션에 적용되지 않습니다.
 
@@ -134,7 +134,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정
 
-이 옵션 구성 시 권장되는 방법은 **Make the custom permissions option available for users**(사용자가 사용자 지정 권한 옵션을 사용할 수 있게 허용) [정책 설정](../deploy-use/configure-policy-settings.md)을 사용하는 것입니다. 하지만 Azure Portal에서 구성하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용하여 이 옵션을 구성할 수도 있습니다. 
+이 옵션 구성 시 권장되는 방법은 **Make the custom permissions option available for users**(사용자가 사용자 지정 권한 옵션을 사용할 수 있게 허용) [정책 설정](../configure-policy-settings.md)을 사용하는 것입니다. 하지만 Azure Portal에서 구성하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용하여 이 옵션을 구성할 수도 있습니다. 
 
 이 설정을 구성하고 사용자에게 정책을 게시하면 사용자에게 사용자 지정 권한 옵션이 표시되어 고유한 보호 설정을 선택하거나, 숨겨져서 메시지가 표시되지 않으면 사용자가 고유한 보호 설정을 선택할 수 없게 됩니다.
 
@@ -147,7 +147,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 영구적으로 숨기기
 
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. **Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시) [정책 설정](../deploy-use/configure-policy-settings.md)이 **켜기**로 설정된 경우에만 사용하세요.
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. **Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시) [정책 설정](../configure-policy-settings.md)이 **켜기**로 설정된 경우에만 사용하세요.
 
 사용자를 위해 이 설정을 구성하고 정책을 게시하며, 사용자가 Office 응용 프로그램에 Azure Information Protection 표시줄을 표시하지 않도록 선택하는 경우 이 표시줄은 숨겨진 상태를 유지합니다. 사용자가 **홈** 탭, **보호** 그룹, **보호** 단추에서 **표시줄 표시** 옵션을 선택 취소하면 이러한 상황이 발생합니다. **이 표시줄 닫기** 아이콘을 사용하여 표시줄을 닫으면 이 설정이 아무런 영향도 미치지 않습니다.
 
@@ -193,7 +193,7 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
-**All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함)의 [정책 설정](../deploy-use/configure-policy-settings.md)을 사용할 경우 사용자가 Office 문서를 처음 저장할 때와 메일을 보낼 때 레이블을 선택할지 묻는 메시지가 사용자에게 표시됩니다. 문서의 경우 사용자는 **나중에**를 선택하여 일시적으로 레이블 선택 프롬프트를 무시하고 문서로 돌아갈 수 있습니다. 그러나 레이블을 지정해야 저장된 문서를 닫을 수 있습니다. 
+**All documents and emails must have a label**(모든 문서와 메일에 레이블이 있어야 함)의 [정책 설정](../configure-policy-settings.md)을 사용할 경우 사용자가 Office 문서를 처음 저장할 때와 메일을 보낼 때 레이블을 선택할지 묻는 메시지가 사용자에게 표시됩니다. 문서의 경우 사용자는 **나중에**를 선택하여 일시적으로 레이블 선택 프롬프트를 무시하고 문서로 돌아갈 수 있습니다. 그러나 레이블을 지정해야 저장된 문서를 닫을 수 있습니다. 
 
 이 설정을 구성하면 **나중에** 옵션이 제거되므로 문서가 처음 저장될 때 사용자가 레이블을 선택해야 합니다.
 
@@ -209,15 +209,11 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
-이 설정을 구성하면 다음과 같이 Azure Information Protection 클라이언트가 자동 및 권장 레이블을 적용하는 방식의 [기본 동작](../deploy-use/configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)이 변경됩니다.
+이 설정을 구성하면 다음과 같이 Azure Information Protection 클라이언트가 문서에 자동 및 권장 레이블을 적용하는 방식의 [기본 동작](../configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)이 변경됩니다. 
 
-- 자동 분류는 Word, Excel, PowerPoint 및 Outlook에 적용됩니다. 문서의 경우 자동 분류는 백그라운드에서 지속적으로 실행됩니다. Outlook의 경우 메일을 전송할 때 자동 분류가 실행됩니다. 
-    
-    이전에 수동으로 레이블이 지정되거나 더 높은 분류에서 이전에 자동으로 레이블이 지정된 문서에 자동 분류를 사용할 수 없습니다. 이 동작의 예외는 OverrideLabel 매개 변수가 설정된 Azure Information Protection 스캐너를 사용하는 경우입니다.
+- Word, Excel 및 PowerPoint의 경우 자동 분류가 백그라운드에서 지속적으로 실행됩니다.  
 
-- 권장 분류는 Word, Excel 및 PowerPoint에 적용됩니다. 이러한 문서의 경우 권장 분류는 백그라운드에서 지속적으로 실행됩니다. Outlook에 권장 분류를 사용할 수 없습니다.
-    
-    더 높은 분류와 상관 없이 이전에 레이블이 지정된 문서에 권장 분류를 사용할 수 있습니다. 
+Outlook의 경우 변경되지 않습니다.
 
 Azure Information Protection 클라이언트가 지정되는 조건 규칙에 대해 문서를 정기적으로 확인하는 경우 이 동작을 사용하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류 및 보호를 사용할 수 있습니다. 조건 규칙을 이미 실행했기 때문에 큰 파일도 더 신속하게 저장됩니다. 
 
@@ -393,7 +389,7 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 기본적으로 Azure Information Protection 스캐너는 낮은 무결성 수준에서 실행됩니다. 이 설정은 더 높은 보안 격리를 제공하지만 성능이 저하됩니다. 이 설정이 스캐너를 실행하는 컴퓨터를 보호하는 데 도움이 되므로 권한이 있는 계정(예: 로컬 관리자 계정)으로 스캐너를 실행하는 경우 낮은 무결성 수준이 적합합니다.
 
-그러나 스캐너를 실행하는 서비스 계정에 [스캐너 필수 구성 요소](../deploy-use/deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)에 설명된 권한만 있는 경우 낮은 무결성 수준은 필요하지 않고 성능에 부정적인 영향을 주기 때문에 권장되지 않습니다. 
+그러나 스캐너를 실행하는 서비스 계정에 [스캐너 필수 구성 요소](../deploy-aip-scanner.md#prerequisites-for-the-azure-information-protection-scanner)에 설명된 권한만 있는 경우 낮은 무결성 수준은 필요하지 않고 성능에 부정적인 영향을 주기 때문에 권장되지 않습니다. 
 
 Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커니즘이란?](https://msdn.microsoft.com/library/bb625957.aspx)을 참조하세요.
 

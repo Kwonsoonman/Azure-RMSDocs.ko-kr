@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/18/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4143cd12138e82bcf94331ef0911033acdb1942c
-ms.sourcegitcommit: 949bf02d5d12bef8e26d89ad5d6a0d5cc7826135
+ms.openlocfilehash: 101b59b4b4a5aaaf4506f3fe894cf17e3653a4e8
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39474378"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42808902"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일 보기 및 사용
 

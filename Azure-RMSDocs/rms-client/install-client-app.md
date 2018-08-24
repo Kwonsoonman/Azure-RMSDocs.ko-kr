@@ -6,18 +6,16 @@ ms.author: cabailey
 manager: mbaldwin
 ms.date: 11/20/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 95616111b2ed5449e4c65c2df02b7fb181458728
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: f80fa184c524cd577bd0812c41f02b361292d438
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39370196"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42803848"
 ---
 # <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트를 다운로드 및 설치
 

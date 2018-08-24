@@ -7,19 +7,17 @@ ms.author: alleonar
 manager: mbaldwin
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: ae67523a-c094-44da-86b8-739bedba7111
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 38eda4cf3f29443deed7887308096d5e4dfff8eb
-ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
+ms.openlocfilehash: 10faa9d472e93b355446bfc5b0ab12fff5d5b02d
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39375500"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804557"
 ---
 # <a name="developer-guidance"></a>개발자 지침
 Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management Services)를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는 데 중점을 둡니다.

@@ -4,18 +4,16 @@ description: 레이블에 대한 조건을 구성할 때 문서 또는 메일에
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2018
+ms.date: 08/16/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 1df91b83935054e6437f0f7d6922c483ca02cf09
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 7d9e128dd771f6d4d4882bedcd7f49aeefb41809
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490246"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804186"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -83,7 +81,7 @@ Azure Information Protection 클라이언트에서 사용자가 지정한 조건
     
     - **Custom**(사용자 지정)의 경우: 따옴표와 특수 문자를 포함하여 일치시킬 이름 및 구를 지정합니다. 그런 다음 정규식으로 일치시킬지 여부, 대/소문자를 구분할지 여부, 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 지정합니다.
         
-        정규식은 Office 365 정규식(regex) 패턴을 사용합니다. 자세한 내용은 Office 설명서의 [정규식 기반 일치 정의](https://technet.microsoft.com/library/jj674702(v=exchg.150).aspx#Anchor_2)를 참조하세요. 또한 부스트에서 [Perl 정규식 구문](http://www.boost.org/doc/libs/1_66_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)을 참조하는 것이 유용할 수 있습니다.
+        정규식은 Office 365 정규식(regex) 패턴을 사용합니다. 사용자 지정 조건에 대한 정규식을 지정하려면 Boost에서 다음 특정 버전의 [Perl Regular Expression Syntax](https://www.boost.org/doc/libs/1_37_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)(Perl 정규식 구문)를 참조하세요.
         
 5. **최소 발생 수**와 **Count occurrence with unique value only(고유 값만 있는 발생 수)** 로 변경해야 하는지 여부를 결정한 다음 **저장**을 선택합니다. 
     

@@ -4,20 +4,18 @@ description: Azure Information Protection에 의해 레이블이 지정되었거
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f74354ea3c588093b4fefcf98ce0b4cbf807aedb
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: a18014a210607b2c9a38cc4c68e955e01403c986
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575780"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805785"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>사용자 가이드; Azure Information Protection에 의해 레이블이 지정되었거나 Rights Management로 보호된 파일 및 전자 메일에서 분류 레이블 및 보호를 제거합니다.
 
@@ -28,7 +26,7 @@ ms.locfileid: "39575780"
 제거하는 레이블이 보호를 적용하도록 구성된 경우 파일에서 보호도 제거됩니다. 레이블을 제거하는 이유를 기록하라는 메시지가 표시될 수 있습니다.
 
 > [!IMPORTANT]
-> 보호를 제거하려면 파일의 소유자이거나 보호를 제거하기 위한 권한(Rights Management 추출 권한 또는 모든 권한)이 부여되어야 합니다.
+> 보호를 제거하려면 파일의 소유자이거나 보호를 제거하기 위한 권한(Rights Management **내보내기** 권한 또는 **모든 권한**)이 부여되어야 합니다.
 
 다른 레이블 또는 다른 보호 설정 집합을 선택하려는 경우에는 레이블 또는 보호를 제거할 필요가 없습니다. 대신 새 레이블을 선택하고, 필요한 경우 관리자가 이 구성을 허용하면 사용자 지정 권한을 정의할 수 있습니다. 
 

@@ -4,20 +4,18 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 1545c7bd931ab6aa4a76ddfd256a916d31d262bc
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 77d24243d4f6b38338b2a6d709a252cc4859a2b3
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490566"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806054"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -246,9 +244,14 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 |Word|.docx; .docm; .dotm; .dotx|
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
 |PowerPoint|.ppt; .pps; .pot; .pptx; .ppsx; .pptm; .ppsm; .potx; .potm|
-|PDF|.pdf|
+|PDF |.pdf|
 |텍스트|.txt; .xml; .csv|
 
+기본적으로 Office 파일 형식만 스캐너에서 보호되므로 [레지스트리를 편집](develop/file-api-configuration.md)하여 파일 형식을 지정하지 않는 경우 PDF 및 텍스트 파일은 보호되지 않습니다.
+
+- 레지스트리에 .pdf 파일 형식을 추가하지 않는 경우: 이 파일 이름 확장명의 파일은 레이블이 지정되지만 이 레이블이 보호되도록 구성된 경우 보호가 적용되지 않습니다.
+
+- 레지스트리에 .txt, .xml 또는 .csv 파일 형식을 추가하지 않는 경우: 이러한 파일 형식에서 분류 전용을 지원하지 않으므로 이러한 파일 이름 확장명의 파일은 레이블이 지정되지 않습니다.
 
 마지막으로 나머지 파일 형식의 경우 스캐너는 Azure Information Protection 정책의 기본 레이블 또는 스캐너에 대해 구성한 기본 레이블을 적용합니다.
 
@@ -270,7 +273,11 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 스캐너에서 보호를 사용하는 레이블을 적용하는 경우 기본적으로 Office 파일 형식만 보호됩니다. 추가 파일 형식이 보호되도록 이 동작을 변경할 수 있습니다. 그러나 레이블이 문서에 일반 보호를 적용하는 경우 파일 이름 확장명을 .pfile로 변경합니다. 또한 권한 있는 사용자가 열고 해당 네이티브 형식으로 저장될 때까지 파일은 읽기 전용입니다. 텍스트 및 이미지 파일은 해당 파일 이름 확장명을 변경하고 읽기 전용으로 설정할 수도 있습니다. 
 
-기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 스캐너의 경우 특정 파일 이름 확장명을 지정해야 하고 `*` 와일드 카드를 사용할 수 없습니다.
+기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 또한 스캐너에만 한정되는 사항은 다음과 같습니다.
+
+- 특정 파일 이름 확장명을 지정해야 하고 `*` 와일드카드를 사용할 수 없습니다.
+
+- 스캐너에는 고유한 기본 동작이 있습니다. 즉, 기본적으로 Office 파일 형식만 보호됩니다. 레지스트리에 추가되지 않은 다른 파일 형식은 스캐너에서 보호되지 않습니다.
 
 ## <a name="when-files-are-rescanned"></a>파일이 다시 검사되는 경우
 

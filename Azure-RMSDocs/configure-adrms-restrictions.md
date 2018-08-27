@@ -4,18 +4,16 @@ description: Azure Information Protection에서 HYOK(AD RMS) 보호의 개요, �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/01/2018
+ms.date: 08/16/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: 07ce6d2bc9a606692ccaffb42cfe6717092c72b6
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 050ffcf6e500316912ac4b0894594b99b441aab5
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490326"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804309"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Azure Information Protection용 HYOK(Hold your own key) 보호
 
@@ -92,7 +90,7 @@ HYOK 보호를 적용하려면 Azure Information Protection 레이블을 사용�
 
 또한 HYOK 보호 기능을 Azure Information Protection 레이블과 함께 사용하면 다음과 같은 제한 사항이 있습니다.
 
-- Office 2010 또는 Office 2007을 지원하지 않습니다.
+- Office 2013 이전의 Office 버전은 지원하지 않습니다.
 
 - Office 365 서비스 및 기타 온라인 서비스는 HYOK 보호 문서 및 이메일을 해독하여 콘텐츠를 검사하고 이에 대한 조치를 취할 수 없습니다. 이 제한 사항은 Rights Management 커넥터로 보호된 HYOK 보호 문서 및 이메일까지 확장됩니다. 
     

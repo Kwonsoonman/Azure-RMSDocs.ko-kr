@@ -4,20 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/13/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f9189de08c7089087ba37964a9d7acee3f537d02
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: f0f3c6a5f46024083d8e4d105dd535abc1b46552
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575678"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805445"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -204,11 +202,13 @@ Azure Information Protection 스캐너를 업그레이드하려면 최신 버전
 
 현재 GA 버전의 경우: 
 
-- 이전에 설치된 클라이언트 버전이 1.26.6.0 또는 이전 버전인 경우 [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)를 사용하여 스캐너 설치 명령을 다시 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 스캐너를 다시 설치하면 보고서에 필요한 스캐너 데이터베이스에 대한 삭제 권한이 스캐너 서비스 계정에 부여됩니다.
+- [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)를 사용하여 스캐너 설치 명령을 다시 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 스캐너를 다시 설치하면 보고서에 필요한 스캐너 데이터베이스에 대한 삭제 권한이 스캐너 서비스 계정에 부여됩니다.
 
 미리 보기 버전: 
 
-- 이전에 설치된 버전의 클라이언트가 1.26.6.0 이전인 경우 클라이언트를 설치한 후에 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)를 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 이 cmdlet을 실행하려면 스캐너에 대한 데이터베이스 스키마를 업데이트해야 하고 필요한 경우 스캐너 서비스 계정에 스캐너 데이터베이스에 대한 삭제 권한을 부여합니다. 이 업데이트 cmdlet을 실행할 때까지 스캐너는 실행되지 않습니다.
+- 클라이언트를 설치한 후 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)를 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 이 cmdlet을 실행하려면 스캐너에 대한 데이터베이스 스키마를 업데이트해야 하고 필요한 경우 스캐너 서비스 계정에 스캐너 데이터베이스에 대한 삭제 권한을 부여합니다. 
+    
+    이 업데이트 cmdlet을 실행할 때까지 스캐너가 실행되지 않으며 일반적으로 Windows 이벤트 로그에 이벤트 ID **1000**이 보이고 **개체 이름 ‘ScannerStatus’가 잘못되었습니다**라는 오류 메시지가 표시됩니다.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 제거
 

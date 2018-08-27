@@ -4,20 +4,18 @@ description: AD RMS(Active Directory Rights Management Services)에 대해 잘 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 08/16/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 8123bd62-1814-4d79-b306-e20c1a00e264
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a5bf7bd4a4d82c40346694d243403ea2684174d9
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: bc93e9674c2f37f1e78487e5c5d051d63a5ed630
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489300"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42804766"
 ---
 # <a name="comparing-azure-information-protection-and-ad-rms"></a>Azure Information Protection 및 AD RMS 비교
 
@@ -55,7 +53,7 @@ Azure Information Protection에 대한 주요 차이점 중 일부를 사용합�
 |인증에 Azure AD를 사용하는 조직의 문서에 대한 보안 공동 작업을 자동으로 사용할 수 있습니다. 즉 조직은 내부적으로 공유하거나 다른 조직과 공유하는 문서를 보호할 수 있습니다.|조직 외부의 문서에 대한 보안 공동 작업은 두 조직 간의 직접 지점 간 관계에서 인증 트러스트를 명시적으로 정의해야 합니다. AD FS(Active Directory Federation Services)를 사용하여 만드는 TUD(신뢰할 수 있는 사용자 도메인) 또는 페더레이션된 트러스트를 구성해야 합니다.|
 |인증 신뢰 관계가 없는 경우 보호된 메일(자동으로 보호되는 Office 문서 첨부 파일을 선택적으로 포함)을 사용자에게 보냅니다. 이 시나리오는 소셜 공급자의 페더레이션이나 일회성 암호와 보기용 웹 브라우저를 사용하여 수행할 수 있습니다.|인증 트러스트 관계가 없는 경우 보호된 메일 전송을 지원하지 않습니다.|
 |조직의 콘텐츠 액세스를 제한하는 기본 권한 정책 템플릿 두 개가 제공됩니다. 그 중 하나는 보호된 콘텐츠에 대한 읽기 전용 보기 권한을 제공하고 다른 하나는 보호된 콘텐츠에 대한 쓰기 또는 수정 권한을 제공합니다.<br /><br />또한 하위 집합의 사용자에게만 표시되는 부서별 템플릿을 포함한 사용자 지정 템플릿을 만들 수 있습니다. 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.<br /><br />템플릿의 권한만으로는 부족한 경우 사용자가 원하는 권한 집합을 정의할 수도 있습니다.|기본 템플릿은 없습니다. 자신 만의 템플릿을 만든 후 배포해야 합니다. 자세한 내용은 [AD RMS 정책 템플릿 고려 사항](http://go.microsoft.com/fwlink/?LinkId=154765)을 참조하세요.<br /><br />템플릿의 권한만으로는 부족한 경우 사용자가 원하는 권한 집합을 정의할 수도 있습니다.|
-|지원되는 최소 버전의 Microsoft Office는 Office 2010이며, 여기에는 [Azure Information Protection 클라이언트](./rms-client/aip-client.md) 또는 RMS 공유 응용 프로그램이 필요합니다.<br /><br />Microsoft Office for Mac:<br /><br />- Microsoft Office for Mac 2016: 지원됨<br /><br />- Microsoft Office for Mac 2011: 지원되지 않음|지원되는 최소 Microsoft Office 버전은 Office 2007입니다.<br /><br />Microsoft Office for Mac:<br /><br />- Microsoft Office for Mac 2016: 지원됨<br /><br />- Microsoft Office for Mac 2011: 지원됨|
+|지원되는 최소 버전의 Microsoft Office는 Office 2010이며, 여기에는 [Azure Information Protection 클라이언트](./rms-client/aip-client.md) 또는 RMS 공유 응용 프로그램이 필요합니다.<br /><br />Microsoft Office for Mac:<br /><br />- Microsoft Office for Mac 2016: 지원됨|지원되는 최소 Microsoft Office 버전은 Office 2010입니다.<br /><br />Microsoft Office for Mac:<br /><br />- Microsoft Office for Mac 2016: 지원됨|
 |Windows, iOS 및 Android용 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)를 지원합니다. Mac 컴퓨터와 Windows Phone은 RMS 공유 앱에서 계속 지원될 예정입니다.<br /><br />또한 Azure Information Protection 클라이언트는 다음을 지원합니다.<br /><br />- 다른 조직의 사용자와 공유합니다.<br /><br />- 사용자에 대한 사이트를 추적하는 문서는 해지하는 기능을 포함합니다.|Windows, iOS 및 Android용 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)를 지원합니다. Mac 컴퓨터와 Windows Phone은 RMS 공유 앱에서 계속 지원될 예정입니다. 그러나 공유는 다른 조직 또는 사이트를 추적하는 문서 및 문서를 해지하려는 사용자를 위한 기능을 사람들과 공유하도록 지원하지 않습니다.|
 |Azure Information Protection 클라이언트를 사용할 때 대부분의 [파일 형식](./rms-client/client-admin-guide-file-types.md)은 분류 및 보호될 수 있습니다.<br /><br />다른 응용 프로그램의 경우 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](./requirements-applications.md)의 표를 확인합니다.|Azure Information Protection 클라이언트를 사용할 때 대부분의 [파일 형식](./rms-client/client-admin-guide-file-types.md)은 보호될 수 있습니다.<br /><br />다른 응용 프로그램의 경우 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](./requirements-applications.md)의 표를 확인합니다.|
 |지원되는 최소 Windows 클라이언트 버전은 Windows 7 SP1입니다.|지원되는 최소 Windows 클라이언트 버전은 Windows 7 SP1입니다.|

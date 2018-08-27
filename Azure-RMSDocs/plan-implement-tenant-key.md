@@ -4,20 +4,18 @@ description: Azure Information Protection 테넌트 키를 계획 및 관리하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 05aee77b60b5fd5a7239b51665e2afb122704afb
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 65f1b158e9745efa39d4088dcb615016ddecb206
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490126"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807272"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키 계획 및 구현
 
@@ -36,14 +34,13 @@ Azure Information Protection 테넌트 키란?
 |비즈니스 요구 사항|권장되는 테넌트 키 토폴로지|
 |------------------------|-----------------------------------|
 |Azure Information Protection을 특별한 하드웨어, 추가 소프트웨어 또는 Azure 구독 없이 신속하게 배포합니다.<br /><br />예: 테스트 환경 및 키 관리에 대한 규정 요구 사항이 조직에 없는 경우.|Microsoft에서 관리|
-|모든 수명 주기 작업에 대한 제어, 추가 보안 및 준수 규정. <br /><br />예: 키는 HSM(하드웨어 보안 모듈)로 보호되어야 합니다.|BYOK [[1]](#footnote-1)|
+|모든 수명 주기 작업에 대한 제어, 추가 보안 및 준수 규정. <br /><br />예: 키는 HSM(하드웨어 보안 모듈)로 보호되어야 합니다.|BYOK|
 
 
 필요한 경우 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet을 사용하여 배포 후 테넌트 키 토폴로지를 변경할 수 있습니다.
 
 
 ## <a name="choose-your-tenant-key-topology-managed-by-microsoft-the-default-or-managed-by-you-byok"></a>테넌트 키 토폴로지 선택: Microsoft가 관리(기본값) 또는 고객이 직접 관리(BYOK)
-조직에 가장 적합한 테넌트 키 토폴로지를 결정하세요. 기본적으로 Azure Information Protection은 고객의 테넌트 키를 생성하고 테넌트 키 수명 주기의 대부분의 측면을 관리합니다. 이 옵션은 관리 오버헤드가 가장 낮은 가장 간단한 옵션입니다. 대부분의 경우 고객은 테넌트 키를 가지고 있다는 사실조차 알 필요가 없습니다. Azure Information Protection에 등록하기만 하면 나머지 키 관리 프로세스는 Microsoft에서 처리합니다.
 
 조직에 가장 적합한 테넌트 키 토폴로지를 결정하세요.
 
@@ -94,7 +91,7 @@ Microsoft가 테넌트 키를 관리하도록 결정한 경우:
 - AD RMS에서 마이그레이션하는 경우가 아니라면 키를 생성하기 위해 추가적인 조치가 필요하지 않으므로 [다음 단계](plan-implement-tenant-key.md#next-steps)로 바로 이동할 수 있습니다.
 
 
-- 현재 AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 AD RMS에서 Azure Information Protection으로 마이그레이션이라는 지침을 참조하세요. 
+- 현재 AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)이라는 지침을 참조하세요. 
 
 테넌트 키를 직접 관리하기로 결정한 경우 다음 섹션에서 자세한 내용을 확인하세요.
 
@@ -182,11 +179,11 @@ Azure Information Protection에 대해 키 URL이 제대로 설정되어 있는�
 
 1.  테넌트 키 사용을 시작합니다.
     
-    - 아직 Rights Management 서비스를 활성화하지 않은 경우 조직에서 Azure Information Protection 사용을 시작할 수 있도록 Rights Management 서비스를 활성화해야 합니다. 사용자는 즉시 테넌트 키(Microsoft에서 관리하거나 Azure Key Vault에서 고객이 직접 관리함) 사용을 시작합니다.
+    - 보호 서비스를 아직 활성화하지 않은 경우 조직에서 Azure Information Protection 사용을 시작할 수 있도록 Rights Management 서비스를 활성화해야 합니다. 사용자는 즉시 테넌트 키(Microsoft에서 관리하거나 Azure Key Vault에서 고객이 직접 관리함) 사용을 시작합니다.
     
         활성화에 대한 자세한 내용은 [Azure 권한 관리 활성화](./activate-service.md)를 참조하세요.
         
-    - 이미 Rights Management 서비스를 활성화한 후 직접 테넌트 키를 관리하기로 결정한 경우 사용자는 점진적으로 이전 테넌트 키에서 새 테넌트 키로 전환하며, 시차를 두고 진행되는 이 전환이 완료되기까지 몇 주가 걸릴 수 있습니다. 권한 있는 사용자는 이전 테넌트 키로 보호된 문서와 파일에 계속 액세스할 수 있습니다.
+    - 이미 Rights Management 서비스를 활성화한 후 직접 테넌트 키를 관리하기로 결정한 경우 사용자는 점진적으로 이전 테넌트 키에서 새 테넌트 키로 전환합니다. 시차를 두고 진행되는 이 전환이 완료되기까지 몇 주가 걸릴 수 있습니다. 권한 있는 사용자는 이전 테넌트 키로 보호된 문서와 파일에 계속 액세스할 수 있습니다.
         
 2. Azure Rights Management 서비스에서 수행하는 모든 트랜잭션을 기록하는 사용 현황 로깅을 사용하는 것이 좋습니다.
     

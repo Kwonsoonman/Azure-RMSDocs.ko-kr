@@ -4,20 +4,18 @@ description: '최종 사용자 Office 응용 프로그램(예: Word 및 Outlook)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/17/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aa1b24e24d05487014280fd6334d013466b6777f
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: c302972e8a048ec851af85cdba9d86bd7fbcc971
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39489130"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42803822"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 응용 프로그램 및 서비스에서 Azure Rights Management를 지원하는 방법 
 
@@ -66,7 +64,7 @@ IRM에 대해 Exchange를 구성할 준비가 된 경우:
 
 SharePoint Online 또는 SharePoint Server를 사용할 때 SharePoint IRM(정보 권한 관리) 기능을 사용하여 문서를 보호할 수 있습니다. 이 기능을 사용하면 관리자가 목록 또는 라이브러리를 보호할 수 있습니다. 그러므로 사용자가 문서를 체크 아웃할 때 다운로드된 파일이 보호된 상태이기 때문에 지정한 정보 보호 정책에 따라 권한이 있는 사용자만 파일을 확인 및 사용할 수 있습니다. 예를 들어 파일을 읽기 전용으로 지정하고, 텍스트를 복사할 수 없도록 설정하고, 로컬 복사본 저장 및 파일 인쇄를 금지할 수 있습니다.
 
-Word, PowerPoint, Excel 및 PDF 문서는 이 SharePoint IRM 보호를 지원합니다. 기본적으로 보호는 문서를 다운로드하는 사람에게 제한됩니다. 하지만 SharePoint의 문서에 대해 액세스 권한이 있는 모든 사용자 또는 사용자가 지정한 그룹으로 보호를 확장하는 구성 옵션을 사용하여 이러한 기본값을 변경할 수 있습니다.
+Word, PowerPoint, Excel 및 PDF 문서는 이 SharePoint IRM 보호를 지원합니다. 기본적으로 보호는 문서를 다운로드하는 사람에게 제한됩니다. **그룹 보호 허용**이라는 구성 옵션을 사용하여 이 기본값을 변경할 수 있습니다. 이 옵션을 선택하면 지정하는 그룹으로 보호가 확장됩니다. 예를 들어 라이브러리의 문서를 편집할 권한이 있는 그룹을 지정하여 문서를 다운로드한 사용자와 관계없이 동일한 사용자 그룹이 SharePoint 외부의 문서를 편집할 수 있습니다. 또는 SharePoint에서 권한이 부여되지 않은 그룹을 지정할 수 있지만, 이러한 그룹의 사용자는 SharePoint 외부에서 문서에 액세스해야 합니다. 
 
 SharePoint 목록 및 라이브러리의 경우 항상 최종 사용자가 아닌 관리자가 이 보호 기능을 구성합니다. 사용 권한은 사이트 수준에서 설정하며, 이러한 사용 권한은 기본적으로 해당 사이트에 있는 모든 목록 또는 라이브러리에 상속됩니다. SharePoint Online을 사용하면 사용자는 IRM 보호를 위해 비즈니스 라이브러리용 OneDrive를 구성할 수도 있습니다.
 

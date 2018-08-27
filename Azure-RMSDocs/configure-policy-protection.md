@@ -4,18 +4,16 @@ description: Rights Management 보호를 사용하도록 레이블을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2018
+ms.date: 08/14/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: b41add3430fbf00a372a5ec54d1ecd8c27fa7fa6
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 16cb22a7f16b82056d58d569dc0d65b3b16d0ae1
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490676"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42807060"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -90,9 +88,9 @@ Exchange에서 Azure Information Protection을 구성하지 않고도 사용자�
     
     - **사용자 정의 권한 설정(미리 보기)**: 사용자가 권한을 부여받아야 하는 사용자와 해당 권한을 지정할 수 있습니다. 그러면 이 옵션을 구체화하고 Outlook 전용 또는 Word, Excel, PowerPoint 및 파일 탐색기를 선택할 수 있습니다. [자동 분류](configure-policy-classification.md)에 대한 레이블이 구성되어 있으면 이 옵션이 지원되지 않고 작동하지 않습니다.
         
-        Outlook에 대한 옵션을 선택하는 경우: 레이블이 Outlook에 표시되고 사용자가 레이블을 적용할 때 결과 동작은 전달 금지 옵션과 같습니다.
+        Outlook에 대한 옵션을 선택하는 경우: 레이블이 Outlook에 표시되고 사용자가 레이블을 적용할 때 결과 동작은 [전달 금지](configure-usage-rights.md#do-not-forward-option-for-emails) 옵션과 같습니다.
         
-        Word, Excel, PowerPoint 및 파일 탐색기에 대한 옵션을 선택하는 경우: 이 옵션을 설정하면 이러한 응용 프로그램에 레이블이 표시됩니다. 사용자가 레이블을 적용할 때 결과 동작은 사용자 지정 권한을 선택하는 대화 상자를 사용자에게 표시하는 것입니다. 이 대화 상자에서 사용자는 사용 권한, 사용자 또는 그룹 및 만료 날짜를 지정해야 합니다. 사용자에게 이러한 값을 제공하는 방법에 대한 지침이 있는지 확인합니다.
+        Word, Excel, PowerPoint 및 파일 탐색기에 대한 옵션을 선택하는 경우: 이 옵션을 설정하면 이러한 응용 프로그램에 레이블이 표시됩니다. 사용자가 레이블을 적용할 때 결과 동작은 사용자 지정 권한을 선택하는 대화 상자를 사용자에게 표시하는 것입니다. 이 대화 상자에서 사용자는 [미리 정의된 권한 수준](configure-usage-rights.md#rights-included-in-permissions-levels) 중 하나를 선택하고, 사용자 또는 그룹을 찾거나 지정하고, 선택적으로 만료 날짜를 설정합니다. 사용자에게 이러한 값을 제공하는 방법에 대한 지침이 있는지 확인합니다.
     
     - **미리 정의된 템플릿 선택**: 기본 템플릿 또는 구성한 사용자 지정 템플릿을 중 하나를 사용합니다. 이전에 **사용 권한 설정** 옵션을 사용한 레이블을 편집하는 경우 새 레이블에 대해 이 옵션이 표시되지 않습니다.
     
@@ -110,10 +108,11 @@ Exchange에서 Azure Information Protection을 구성하지 않고도 사용자�
         
         ###### <a name="more-information-about-add-any-authenticated-users"></a>**인증된 사용자 추가**에 대한 자세한 정보 
         이 설정은 레이블이 보호하는 콘텐츠에 액세스할 수 있는 사용자를 제한하지 않으면서 콘텐츠를 암호화하며 콘텐츠의 사용 방법(권한) 및 액세스 방법(만료 및 오프라인 액세스)을 제한하는 옵션을 제공합니다. 그러나 보호된 콘텐츠를 여는 응용 프로그램은 사용 중인 인증을 지원할 수 있어야 합니다. 이러한 이유로 Google과 같은 페더레이션 소셜 공급자 및 일회성 암호 인증은 메일에만 그리고 Exchange Online 및 Office 365 메시지 암호화의 새로운 기능을 사용할 때만 사용되어야 합니다. Microsoft 계정은 Azure Information Protection 뷰어 및 Office 2016 간편 실행에 사용할 수 있습니다. 
-        
-        인증된 사용자 설정에 대한 몇 가지 일반적인 시나리오: - 콘텐츠를 보는 사용자를 신경 쓰지 않지만, 콘텐츠의 사용 방법을 제한하려고 합니다. 예를 들어 콘텐츠가 편집되거나 복사되거나 인쇄되지 않도록 하려고 합니다.
-            - 콘텐츠에 액세스하는 사용자를 제한할 필요는 없지만, 콘텐츠를 여는 사용자를 추적하고 잠재적으로 이를 취소할 수 있기를 원합니다.
-            - 콘텐츠를 전송 중에 그리고 미사용 시에 암호화해야 한다는 요구 사항이 있지만, 콘텐츠에 대한 액세스 제어는 필요하지 않습니다.     
+          
+        인증된 사용자 설정에 대한 몇 가지 일반적인 시나리오:  
+                - 누가 콘텐츠를 보든 관계없지만 콘텐츠 사용 방법은 제한하려고 합니다. 예를 들어 콘텐츠가 편집되거나 복사되거나 인쇄되지 않도록 하려고 합니다.  
+                - 콘텐츠에 액세스하는 사용자를 제한할 필요는 없지만, 콘텐츠를 여는 사용자를 추적하고 잠재적으로 이를 취소할 수 있기를 원합니다.  
+                - 콘텐츠를 전송 중에 그리고 미사용 시에 암호화해야 한다는 요구 사항이 있지만, 콘텐츠에 대한 액세스 제어는 필요하지 않습니다.  
         
     - **세부 정보 입력**을 선택하여 개별 사용자 또는 그룹(내부 또는 외부)의 메일 주소를 수동으로 지정합니다. 또는 이 옵션을 사용하여 다른 조직의 도메인 이름을 입력하여 해당 조직의 모든 사용자를 지정합니다. 또한 소셜 공급자에 대해 **gmail.com**, **hotmail.com** 또는 **outlook.com**과 같은 도메인 이름을 입력하여 이 옵션을 사용할 수 있습니다.
         
@@ -156,9 +155,9 @@ Exchange에서 Azure Information Protection을 구성하지 않고도 사용자�
     
     사용자 정의 권한 옵션을 사용하면 사용자가 권한을 부여받아야 하는 사용자와 해당 권한을 지정할 수 있습니다. 그러면 이 옵션을 구체화하고 Outlook만(기본값) 또는 Word, Excel, PowerPoint 및 파일 탐색기를 선택할 수 있습니다. [자동 분류](configure-policy-classification.md)에 대한 레이블이 구성되어 있으면 이 옵션이 지원되지 않고 작동하지 않습니다.
     
-    Outlook에 대한 옵션을 선택하는 경우: 레이블이 Outlook에 표시되고 사용자가 레이블을 적용할 때 결과 동작은 전달 금지 옵션과 같습니다.
+    Outlook에 대한 옵션을 선택하는 경우: 레이블이 Outlook에 표시되고 사용자가 레이블을 적용할 때 결과 동작은 [전달 금지](configure-usage-rights.md#do-not-forward-option-for-emails) 옵션과 같습니다.
     
-    Word, Excel, PowerPoint 및 파일 탐색기에 대한 옵션을 선택하는 경우: 레이블이 이러한 응용 프로그램에 표시됩니다. 사용자가 레이블을 적용할 때 결과 동작은 사용자 지정 권한을 선택하는 대화 상자를 사용자에게 표시하는 것입니다. 이 대화 상자에서 사용자는 사용 권한, 사용자 또는 그룹 및 만료 날짜를 지정해야 합니다. 사용자에게 이러한 값을 제공하는 방법에 대한 지침이 있는지 확인합니다.
+    Word, Excel, PowerPoint 및 파일 탐색기에 대한 옵션을 선택하는 경우: 이 옵션을 설정하면 이러한 응용 프로그램에 레이블이 표시됩니다. 사용자가 레이블을 적용할 때 결과 동작은 사용자 지정 권한을 선택하는 대화 상자를 사용자에게 표시하는 것입니다. 이 대화 상자에서 사용자는 [미리 정의된 권한 수준](configure-usage-rights.md#rights-included-in-permissions-levels) 중 하나를 선택하고, 사용자 또는 그룹을 찾거나 지정하고, 선택적으로 만료 날짜를 설정합니다. 사용자에게 이러한 값을 제공하는 방법에 대한 지침이 있는지 확인합니다.
 
 10. **확인**을 클릭하여 **보호** 블레이드를 닫고, **사용자 정의** 선택 항목 또는 **레이블** 블레이드의 **보호** 옵션에 대해 선택한 템플릿 표시를 확인합니다.
 

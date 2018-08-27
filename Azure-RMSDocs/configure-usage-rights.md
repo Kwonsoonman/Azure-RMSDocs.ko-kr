@@ -4,20 +4,18 @@ description: Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/30/2018
+ms.date: 08/22/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 48a2cf7c8d827ce5a9be9b35e6f03e5d5479aa71
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: 61d57cb33175c3c3e87d615cee65e2b82f21ab74
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39490486"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42808775"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -127,7 +125,13 @@ Exchange Online에서 Office 365 메시지 암호화의 새로운 기능을 사�
 
 마찬가지로, 기본적으로 메일에 연결된 보호되지 않은 [Office 문서](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)는 동일한 사용 권한을 상속합니다. 이러한 문서는 자동으로 보호되며, 다운로드되면 Office 응용 프로그램에서 받는 사람이 저장, 편집, 복사 및 인쇄할 수 있습니다. 받는 사람이 문서를 저장할 때 새 이름과 다른 형식으로 문서를 저장할 수 있습니다. 그러나 보호를 지원하는 파일 형식만 사용할 수 있으므로 원래 보호 기능 없이 문서를 저장할 수 없습니다. 첨부 파일에 대해 다른 사용 권한을 원하거나 첨부 파일이 상속된 보호를 지원하는 Office 문서가 아닌 경우 이메일에 첨부하기 전에 파일을 보호합니다. 그런 다음, 파일에 필요한 특정 사용 권한을 할당할 수 있습니다.
 
-또는 브라우저에서 문서를 볼 받는 사람에 대한 문서의 이 암호화 상속을 변경할 수 있습니다. 사용자가 인증된 후 문서에 대한 원래 보호를 유지할 필요가 없는 경우 이 구성을 사용해 보세요. 이와 같이 변경하려면 Exchange Online PowerShell 명령: `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`를 사용합니다. 그런 다음, 이러한 받는 사람이 문서를 다운로드하면 보호가 제거됩니다. 자세한 내용은 Office 블로그 게시물 [Admin control for attachments now available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)(이제 Office 365 메시지 암호화에서 첨부 파일에 대한 관리자 제어 사용 가능)을 참조하세요. 문서를 다운로드한 후 원래 보호를 유지해야 하는 경우 [Azure Information Protection을 사용하여 문서 공동 작업 보호](secure-collaboration-documents.md)를 참조하세요.      
+또는 [Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) 명령 **Set-IRMConfiguration**으로 설정하는 다음 구성 매개 변수 하나를 사용하여 문서에 대한 이 보호 상속을 변경할 수 있습니다. 사용자가 인증된 후 문서에 대한 원래 보호를 유지할 필요가 없는 경우 이러한 옵션을 사용하세요.
+
+- 브라우저에서 문서를 보는 받는 사람에 대해서만 문서의 보호를 제거하려는 경우(일반적으로 Gmail과 같은 소셜 공급자 주소로 전송되므로): `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. 이러한 받는 사람이 문서를 다운로드하면 보호가 제거됩니다.
+
+- 모든 받는 사람에 대해 문서의 보호를 항상 제거하려는 경우: `Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`. 이러한 받는 사람이 메일 메시지를 열면 문서가 보호되지 않습니다.
+
+브라우저에서 문서를 보는 받는 사람에 대해서만 보호를 제거하는 방법은 Office 블로그 게시물, [Admin control for attachments now available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)(이제 Office 365 메시지 암호화에서 첨부 파일에 대한 관리자 제어 사용 가능)을 참조하세요. 첨부된 문서에서 원래 보호를 유지해야 하는 경우 [Secure document collaboration by using Azure Information Protection](secure-collaboration-documents.md)(Azure Information Protection을 사용하여 문서 공동 작업 보호)을 참조하세요.
 
 ## <a name="rights-management-issuer-and-rights-management-owner"></a>Rights Management 발급자와 Rights Management 소유자
 

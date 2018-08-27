@@ -4,20 +4,18 @@ description: 엔터프라이즈 네트워크에서 Windows용 Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/21/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5c162b1a25332c977d2c4976338854904abfcc54
-ms.sourcegitcommit: a437d527131ca48d2c1b21742b5346605648952b
+ms.openlocfilehash: 5a56836d8a77cc65c633cdb6777f1666d24b5777
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575552"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805593"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -81,13 +79,13 @@ ms.locfileid: "39575552"
 
 ## <a name="options-to-install-the-azure-information-protection-client-for-users"></a>사용자를 위해 Azure Information Protection 클라이언트를 설치하는 옵션
 
-사용자를 위해 클라이언트를 설치하는 옵션에는 다음 세 가지가 있습니다.
-
-**Windows 업데이트**: Azure Information Protection 클라이언트는 Microsoft 업데이트 카탈로그에 포함되어 있으므로 카탈로그를 사용하는 소프트웨어 업데이트 서비스를 사용하여 클라이언트를 설치하고 업데이트할 수 있습니다.
+사용자를 위해 클라이언트를 설치하는 옵션에는 다음 두 가지가 있습니다.
 
 **클라이언트의 실행 파일(.exe) 버전 실행**: 대화형 또는 자동으로 실행할 수 있는 권장 설치 방법입니다. 이 방법은 가장 유연하며, 설치 관리자가 많은 필수 구성 요소를 확인하고 누락된 필수 구성 요소를 자동으로 설치할 수 있으므로 권장됩니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)
 
 **Windows installer(.msi) 버전의 클라이언트 배포**: 그룹 정책, Configuration Manager 및 Microsoft Intune 등의 중앙 배포 메커니즘을 사용하는 자동 설치에만 지원됩니다. 이 방법은 Intune 및 MDM(모바일 장치 관리)에 의해 관리되는 Windows 10 PC에서 필요합니다. 이러한 컴퓨터의 경우 실행 파일로 설치하도록 지원되지 않기 때문입니다. 그러나 이 설치 방법을 사용하면 실행 파일용 설치 관리자가 각 컴퓨터에 대해 수행하는 종속 소프트웨어를 수동으로 확인한 후 설치 또는 제거해야 합니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)
+
+Azure Information Protection 클라이언트를 설치한 후에는 선택한 설치 방법을 반복하여 이 클라이언트를 업데이트하거나 Windows 업데이트를 사용하여 클라이언트가 계속 자동으로 업그레이드되도록 할 수 있습니다. 업그레이드에 대한 자세한 내용은 [Azure Information Protection 클라이언트 업그레이드 및 유지 관리](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client) 섹션을 참조하세요.
 
 ### <a name="to-install-the-azure-information-protection-client-by-using-the-executable-installer"></a>실행 파일 설치 관리자를 사용하여 Azure Information Protection 클라이언트를 설치하려면
 

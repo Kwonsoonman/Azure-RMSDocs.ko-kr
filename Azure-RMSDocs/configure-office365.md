@@ -4,20 +4,18 @@ description: 관리자가 Azure Information Protection의 Azure Rights Managemen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2018
+ms.date: 08/15/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d7b6aa93b534343473dbc163c51e5f2477e00d46
-ms.sourcegitcommit: 5fdf013fe05b65517b56245e1807875d80be6e70
+ms.openlocfilehash: bb55fa6156eb27adf6ef2aaa2fde37142baf28af
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39491086"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42805306"
 ---
 # <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: 클라이언트와 온라인 서비스가 Azure Rights Management 서비스를 사용하도록 구성
 
@@ -81,7 +79,7 @@ SharePoint Online IRM이 Azure Rights Management 서비스와 함께 작동하�
 Azure Rights Management 서비스를 지원하도록 SharePoint Online 및 비즈니스용 OneDrive를 구성하려면 먼저 SharePoint 관리 센터를 통해 SharePoint Online에 대해 IRM(정보 권한 관리) 서비스가 사용되도록 해야 합니다. 그러면 사이트 소유자는 SharePoint 목록 및 문서 라이브러리를 IRM으로 보호할 수 있으며, 사용자는 비즈니스용 OneDrive 라이브러리를 IRM으로 보호하여 해당 라이브러리에 저장된 문서와 다른 사람과 공유하는 문서가 Azure Rights Management 서비스를 통해 자동으로 보호되도록 할 수 있습니다.
 
 > [!NOTE]
-> IRM으로 보호되는 SharePoint용 라이브러리 및 비즈니스용 OneDrive에는 새 OneDrive 동기화 클라이언트(OneDrive.exe)의 최신 버전이 필요합니다. 자세한 내용은 [엔터프라이즈 환경에서 새 OneDrive 동기화 클라이언트 배포](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)를 참조하세요.
+> IRM으로 보호되는 SharePoint용 라이브러리 및 비즈니스용 OneDrive에는 새 OneDrive 동기화 클라이언트(OneDrive.exe)의 최신 버전 및 [Microsoft 다운로드 센터에서 제공되는 RMS 클라이언트](https://www.microsoft.com/en-us/download/details.aspx?id=38396) 버전이 필요합니다. Azure Information Protection 클라이언트를 설치한 경우에도 이 버전의 RMS 클라이언트를 설치하세요. 이 배포 시나리오에 대한 자세한 내용은 [엔터프라이즈 환경에서 새 OneDrive 동기화 클라이언트 배포](https://support.office.com/article/Deploy-the-new-OneDrive-sync-client-in-an-enterprise-environment-3f3a511c-30c6-404a-98bf-76f95c519668)를 참조하세요.
 
 SharePoint Online에 대한 IRM(정보 권한 관리) 서비스를 사용하도록 설정하려면 Office 웹 사이트의 다음 지침을 참조하세요.
 

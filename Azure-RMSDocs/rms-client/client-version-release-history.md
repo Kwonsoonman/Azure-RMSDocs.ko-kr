@@ -4,20 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/09/2018
+ms.date: 08/13/2018
 ms.topic: article
-ms.prod: ''
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1c41e1e6622dc76a2a2afe68a48d0761573ccf06
-ms.sourcegitcommit: 6eab0086306a4e12cbcf7d8578cb5fd42abe1e66
+ms.openlocfilehash: b9f7381daac2398af459adbb945c548a6ca194c4
+ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020603"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42806241"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -62,7 +60,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Azure Information Protection 스캐너:
 
-    - 새 cmdlet, [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner): 1.26.6.0 버전 이하에서 업그레이드한 후에 한 번 실행해야 합니다.
+    - 새 cmdlet, [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner): 모든 이전 버전에서 업그레이드한 후에 한 번 실행해야 합니다.
     
     - 새 cmdlet, [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus): 스캐너에 대한 서비스의 현재 상태를 가져옵니다.  
     

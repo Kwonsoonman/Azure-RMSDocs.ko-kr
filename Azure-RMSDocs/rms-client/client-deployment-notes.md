@@ -173,7 +173,7 @@ RMS 서비스 검색을 사용하여 RMS 클라이언트는 콘텐츠를 보호�
 > [!NOTE]
 > 이 서비스 검색 흐름의 경우 네 가지 중요한 예외가 있습니다.
 > 
-> - 모바일 장치는 클라우드 서비스를 사용하기에 가장 적합하므로 기본적으로 Azure Rights Management Service(https://discover.aadrm.com))에 대해 서비스 검색을 사용합니다. 모바일 장치에서 Azure Rights Management Service보다 AD RMS를 사용하도록 이 기본값을 재정의하려면 DNS의 SRV 레코드를 지정하고 [Active Directory Rights Management Services 모바일 장치 확장](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)에 설명된 것처럼 모바일 장치 확장을 설치합니다. 
+> - 모바일 장치는 클라우드 서비스를 사용하기에 가장 적합하므로 기본적으로 Azure Rights Management Service (https://discover.aadrm.com)) 에 대해 서비스 검색을 사용합니다. 모바일 장치에서 Azure Rights Management Service보다 AD RMS를 사용하도록 이 기본값을 재정의하려면 DNS의 SRV 레코드를 지정하고 [Active Directory Rights Management Services 모바일 장치 확장](https://technet.microsoft.com/library/dn673574\(v=ws.11\).aspx)에 설명된 것처럼 모바일 장치 확장을 설치합니다. 
 >
 > - Rights Management Service가 Azure Information Protection 레이블에서 호출되면 서비스 검색이 수행되지 않습니다. 대신, Azure Information Protection 정책에서 구성되는 레이블 설정에서 URL이 바로 지정됩니다. 
 >  

@@ -4,16 +4,16 @@ description: 레이블에 대한 조건을 구성할 때 문서 또는 메일에
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 7d9e128dd771f6d4d4882bedcd7f49aeefb41809
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 605173136442ed3af5b50e565cae79a94b16fb27
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804186"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43297993"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -96,9 +96,6 @@ Azure Information Protection 클라이언트에서 사용자가 지정한 조건
 **저장**을 클릭하면 변경 내용이 사용자 및 서비스에 자동으로 제공됩니다. 더 이상 별도의 게시 옵션이 없습니다.
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>중요한 정보 형식에는 최소 버전의 클라이언트가 필요합니다.
-
-> [!NOTE]
-> 이제 다음 민감도 정보 형식은 테넌트를 롤아웃하지만 아직 선택하도록 표시되지 않을 수 있습니다. 그러나 Azure Information Protection 스캐너를 구성하여 [모든 사용자 지정 조건 및 알려진 중요한 정보 형식을 식별](deploy-aip-scanner.md#using-the-scanner-with-alternative-configurations)하는 경우 사용자가 Azure Portal에서 선택할 수 없더라도 미리 보기 버전의 스캐너는 이러한 새 정보 형식을 검색할 수 있습니다.
 
 다음 중요한 정보 형식에는 현재 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
 

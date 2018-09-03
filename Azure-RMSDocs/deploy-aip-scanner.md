@@ -4,18 +4,18 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 77d24243d4f6b38338b2a6d709a252cc4859a2b3
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: ddf9ebcdce4cf51e35dfc76b099194873796919f
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806054"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117888"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -275,9 +275,9 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 또한 스캐너에만 한정되는 사항은 다음과 같습니다.
 
-- 특정 파일 이름 확장명을 지정해야 하고 `*` 와일드카드를 사용할 수 없습니다.
+- 스캐너에는 고유한 기본 동작이 있습니다. 즉, 기본적으로 Office 파일 형식만 보호됩니다. 레지스트리가 수정되지 않은 경우, 다른 파일 형식은 스캐너에서 보호되지 않습니다.
 
-- 스캐너에는 고유한 기본 동작이 있습니다. 즉, 기본적으로 Office 파일 형식만 보호됩니다. 레지스트리에 추가되지 않은 다른 파일 형식은 스캐너에서 보호되지 않습니다.
+- 현재 미리 보기 버전의 스캐너를 사용하지 않는 경우, 특정 파일 이름 확장명을 지정해야 하고 `*` 와일드 카드를 사용할 수 없습니다. 미리 보기 버전의 스캐너는 이 와일드카드를 지원합니다.
 
 ## <a name="when-files-are-rescanned"></a>파일이 다시 검사되는 경우
 

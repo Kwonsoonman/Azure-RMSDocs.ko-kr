@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/13/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f0f3c6a5f46024083d8e4d105dd535abc1b46552
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 7510350957c867e144704af261053b73fa04651a
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805445"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43118009"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -106,7 +106,9 @@ Windows Update, 실행 파일, 또는 Windows Installer 파일을 사용하여 A
 
 **추가 정보 링크**를 클릭하면 기본적으로 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책의 [정책 설정](../configure-policy-settings.md) 중 하나로 사용자 지정 URL로 이동하도록 이 링크를 구성할 수 있습니다.
 
-**피드백 보내기** 링크를 사용하여 Information Protection 팀에 제안 사항이나 요청을 보냅니다. 기술 지원을 위해 이 옵션을 사용하지 않는 경우에는 대신 [지원 옵션 및 커뮤니티 리소스](../information-support.md#support-options-and-community-resources)를 참조하세요. 
+**피드백 보내기** 링크(일반 공급 버전)를 사용하여 Information Protection 팀에 제안 사항이나 요청을 보냅니다. 기술 지원을 위해 이 옵션을 사용하지 않는 경우에는 대신 [지원 옵션 및 커뮤니티 리소스](../information-support.md#support-options-and-community-resources)를 참조하세요. 
+
+미리 보기 버전의 클라이언트에서는 **문제 보고** 링크가 **피드백 보내기** 링크를 대체합니다. 기본적으로 이 옵션을 사용하면 Microsoft에 메일이 전송되지만 [고급 클라이언트 설정](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)을 지정하여 사용자에 대한 HTTP 문자열을 구성할 수 있습니다. 예를 들어, 지원 센터의 메일 주소를 지정합니다.
 
 **로그 내보내기**는 Microsoft 지원에 로그 파일을 보내라는 요청을 받았을 때 Azure Information Protection 클라이언트의 로그 파일을 자동으로 수집하여 첨부합니다. 최종 사용자가 이 옵션을 사용하여 이러한 로그 파일을 지원 센터로 보낼 수도 있습니다.
 
@@ -206,7 +208,7 @@ Azure Information Protection 스캐너를 업그레이드하려면 최신 버전
 
 미리 보기 버전: 
 
-- 클라이언트를 설치한 후 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)를 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 이 cmdlet을 실행하려면 스캐너에 대한 데이터베이스 스키마를 업데이트해야 하고 필요한 경우 스캐너 서비스 계정에 스캐너 데이터베이스에 대한 삭제 권한을 부여합니다. 
+- Azure Information Protection 클라이언트를 일반 공급 버전 1.29.5.0 또는 그 이전 버전에서 업그레이드한 후 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)를 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 이 cmdlet을 실행하려면 스캐너에 대한 데이터베이스 스키마를 업데이트해야 하고 필요한 경우 스캐너 서비스 계정에 스캐너 데이터베이스에 대한 삭제 권한을 부여합니다. 
     
     이 업데이트 cmdlet을 실행할 때까지 스캐너가 실행되지 않으며 일반적으로 Windows 이벤트 로그에 이벤트 ID **1000**이 보이고 **개체 이름 ‘ScannerStatus’가 잘못되었습니다**라는 오류 메시지가 표시됩니다.
 

@@ -4,18 +4,18 @@ description: Azure Information Protection에 의해 레이블이 지정되었거
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: a18014a210607b2c9a38cc4c68e955e01403c986
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 4031a332d900e91f66026dd661d83fb07d47e6d7
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805785"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117858"
 ---
 # <a name="user-guide-remove-labels-and-protection-from-files-and-emails-that-have-been-labeled-by-azure-information-protection-or-protected-by-rights-management"></a>사용자 가이드; Azure Information Protection에 의해 레이블이 지정되었거나 Rights Management로 보호된 파일 및 전자 메일에서 분류 레이블 및 보호를 제거합니다.
 
@@ -43,6 +43,8 @@ Information Protection 표시줄에서 **레이블 제거** 아이콘을 클릭�
 **레이블 삭제** 아이콘을 즉시 사용할 수 있는 경우가 아니면 먼저 **레이블 편집** 아이콘을 클릭합니다.
 
 ![Azure Information Protection 표시줄 - 레이블 편집](../media/edit-label.png)
+
+**레이블 삭제** 아이콘이 계속 표시되지 않는 경우 관리자가 이 옵션을 사용하도록 허용하지 않은 것입니다.
 
 > [!NOTE]
 > Office 앱에 이 Information Protection 표시줄이 표시되지 않는 경우

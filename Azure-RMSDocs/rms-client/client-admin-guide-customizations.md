@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/08/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bb724f8c35ae5ae34f81cfec01fcbabffcbcff44
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 8a91b39b0f503ebb53b8b652de21423ef4cae9c8
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805118"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43298017"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -88,6 +88,20 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 또한 이러한 컴퓨터의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 파일이 없는지 확인합니다. 이 파일이 있는 경우 삭제합니다. 이 파일에는 Azure Information Protection 정책이 포함되어 있으며 레지스트리를 편집하기 전에 다운로드했거나, Azure Information Protection 클라이언트가 데모 옵션으로 설치되었을 수 있습니다.
 
+## <a name="modify-the-email-address-for-the-report-an-issue-link"></a>문제 보고 링크의 메일 주소 수정
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+
+사용자가 **도울말 및 피드백** 클라이언트 대화 상자에서 **문제 보고** 링크를 선택하면 기본적으로 메일 메시지에 Microsoft 주소가 채워집니다. 다음 고급 클라이언트 설정을 사용하여 해당 주소를 수정합니다. 예를 들어 지원 센터의 메일 주소에 대해 `mailto:helpdesk@contoso.com`을 지정합니다. 
+
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+
+- 키: **ReportAnIssueLink**
+
+- 값: **\<HTTP 문자열>**
+
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
 
 다음 DWORD 값 이름(모든 값 데이터 포함)을 만듭니다.
@@ -98,7 +112,9 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 기본적으로 Azure Information Protection 클라이언트는 자동으로 Azure Information Protection 서비스에 연결하여 최신Azure Information Protection 정책을 다운로드합니다. 일정 기간 동안 인터넷에 연결할 수 없는 컴퓨터를 사용하는 경우 레지스트리를 편집하여 클라이언트가 서비스에 연결하지 못하도록 할 수 있습니다. 
 
-다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
+인터넷에 연결하지 않으면 클라이언트가 조직의 클라우드 기반 키를 사용하여 보호를 적용(또는 보호를 제거)할 수 없습니다. 대신 클라이언트는 분류만 적용하는 레이블을 사용하거나 [HYOK](../configure-adrms-restrictions.md)를 활용하는 보호를 사용하도록 제한됩니다.
+
+이 설정을 구성하려면 레지스트리에서 다음 값 이름을 찾고 값 데이터를 **0**으로 설정합니다.
 
 **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
@@ -223,25 +239,21 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 
 - 값: **True**
 
-## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호
+## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일을 보호하지 않음
 
 이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
-기본적으로 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 결과 파일은 .ppdf 파일 이름 확장명입니다. 파일 이름 확장명이 .pdf로 유지되고 PDF 암호화에 대해 ISO 표준을 준수하도록 이 동작을 변경할 수 있습니다. 이 표준에 대한 자세한 내용은 [ISO 32000-1에서 파생되고](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) Adobe Systems incorporated에서 게시한 문서의 **7.6 암호화** 섹션을 참조하세요.  
+GA(일반 공급) 버전의 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 결과 파일의 파일 이름 확장명은 .ppdf입니다. 그러나 현재 미리 보기 버전의 Azure Information Protection 클라이언트가 PDF 파일을 보호할 때 결과 파일 이름 확장명은 .pdf로 유지되고 PDF 암호화에 대한 ISO 표준을 준수합니다. 이 표준에 대한 자세한 내용은 [ISO 32000-1에서 파생되고](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) Adobe Systems incorporated에서 게시한 문서의 **7.6 암호화** 섹션을 참조하세요.
 
-이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+현재 미리 보기 버전의 클라이언트를 GA 동작으로 되돌려야 하는 경우 다음 문자열을 입력하여 다음 고급 설정을 사용합니다.
 
 - 키: **EnablePDFv2Protection**
 
-- 값: **True**
-
-이 구성 옵션의 결과로 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 이 작업은 미리 보기 버전의 Windows용 Azure Information Protection 클라이언트를 사용하여 열릴 수 있는 PDF 문서 및 PDF 암호화에 대해 ISO 표준을 지원하는 다른 PDF 판독기를 만듭니다. iOS 및 Android용 Azure Information Protection 앱은 현재 PDF 암호화에 대해 ISO 표준을 지원하지 않습니다.
+- 값: **False**
 
 Azure Information Protection 스캐너에서 새 설정을 사용하려면 스캐너 서비스를 다시 시작해야 합니다.
-
-현재 미리 보기에서 알려진 문제: 보호된 PDF는 문서 속성에서 작성자에 대해 잘못된 값을 표시합니다.
 
 ## <a name="support-for-files-protected-by-secure-islands"></a>Secure Islands에서 보호한 파일에 대한 지원
 

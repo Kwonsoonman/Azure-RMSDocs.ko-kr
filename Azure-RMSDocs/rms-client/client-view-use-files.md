@@ -4,18 +4,18 @@ description: Azure Information Protection 클라이언트를 설치해야 하는
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 518fd44053f6a6ee0c4b45024d5be0ac0122ec22
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 54042dfd49c1f12fc50eca127dfc0441686b1513
+ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808224"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43117961"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>사용자 가이드: Rights Management로 보호된 파일 보기 및 사용
 
@@ -28,13 +28,7 @@ ms.locfileid: "42808224"
 이 뷰어는 Azure Information Protection 클라이언트의 일부로 자동으로 설치되거나 별도로 설치할 수 있습니다. Microsoft 웹 사이트의 [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) 페이지에서 클라이언트와 뷰어를 둘 다 설치할 수 있습니다. 클라이언트를 설치하는 방법에 대한 자세한 내용은 [Azure Information Protection 클라이언트 다운로드 및 설치](install-client-app.md)를 참조하세요.
 
 > [!NOTE]
-> 클라이언트를 설치하면 더 많은 기능을 사용할 수 있지만 로컬 관리자 권한이 필요하며 전체 기능을 사용하려면 조직에 대한 해당 서비스가 있어야 합니다.
-> 
->-Azure Information Protection
-> 
->-Azure Rights Management
-> 
->-Active Directory Rights Management Services 
+> 클라이언트를 설치하면 더 많은 기능을 사용할 수 있지만 로컬 관리자 권한이 필요하며 전체 기능을 사용하려면 조직에 대한 해당 서비스가 있어야 합니다. 예를 들어, Azure Information Protection 또는 Active Directory Rights Management Services가 필요합니다.
 > 
 > 다른 조직의 누군가로부터 보호된 문서를 받았거나 PC에 대해 로컬 관리자 권한이 없으면 뷰어를 설치합니다.
 

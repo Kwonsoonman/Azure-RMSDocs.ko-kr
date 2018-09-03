@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 97ddde38-b91b-42a5-8eb4-3ce6ce15393d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 61d57cb33175c3c3e87d615cee65e2b82f21ab74
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 9f7c9ef4e6a6eccc1f42fa60a78550f53d4a64b6
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808775"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920672"
 ---
 # <a name="configuring-usage-rights-for-azure-rights-management"></a>Azure Rights Management에 대한 사용 권한 구성
 
@@ -98,7 +98,7 @@ Exchange 클라이언트 및 서비스(예: Outlook 클라이언트, Outlook Web
 
 선택할 수 있는 기본 권한 관리 템플릿처럼 이 옵션이 사용자(및 Exchange 관리자)에게 표시되지만 **전달 금지**는 템플릿이 아닙니다. 이것이 바로 템플릿을 보고 관리할 때 Azure Portal에서 이 옵션을 볼 수 없는 이유입니다. 대신, **전달 금지** 옵션은 사용자가 이메일 수신자에게 동적으로 적용되는 사용 권한 집합입니다.
 
-**전달 금지** 옵션이 이메일에 적용되면, 이메일이 암호화되고 받는 사람을 인증해야 합니다. 그런 다음, 받는 사람은 전달하거나, 인쇄하거나, 복사하거나, 첨부 파일을 저장하거나 다른 이름으로 저장할 수 없습니다. 예를 들어, Outlook 클라이언트에서 전달 단추를 사용할 수 없고, **다른 이름으로 저장**, **첨부 파일 저장** 및 **인쇄** 메뉴 옵션을 사용할 수 없으며, **받는 사람**, **참조** 또는 **숨은 참조** 상자에서 수신자를 추가하거나 변경할 수 없습니다.
+**전달 금지** 옵션이 이메일에 적용되면, 이메일이 암호화되고 받는 사람을 인증해야 합니다. 그러면 받는 사람이 전달하거나 인쇄하거나 복사할 수 없습니다. 예를 들어, Outlook 클라이언트에서 전달 단추를 사용할 수 없고, **다른 이름으로 저장** 및 **인쇄** 메뉴 옵션을 사용할 수 없으며, **받는 사람**, **참조** 또는 **숨은 참조** 상자에서 수신자를 추가하거나 변경할 수 없습니다.
 
 보호되지 않은 이메일에 연결된 [Office 문서](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)는 동일한 제한 사항을 자동으로 상속합니다. 이러한 문서에 적용되는 사용 권한은 **콘텐츠 편집, 편집**; **저장**; **보기, 열기, 읽기**; 및 **매크로 허용**입니다. 첨부 파일에 대해 다른 사용 권한을 원하거나 첨부 파일이 상속된 보호를 지원하는 Office 문서가 아닌 경우 이메일에 첨부하기 전에 파일을 보호합니다. 그런 다음, 파일에 필요한 특정 사용 권한을 할당할 수 있습니다. 
 
@@ -127,9 +127,9 @@ Exchange Online에서 Office 365 메시지 암호화의 새로운 기능을 사�
 
 또는 [Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) 명령 **Set-IRMConfiguration**으로 설정하는 다음 구성 매개 변수 하나를 사용하여 문서에 대한 이 보호 상속을 변경할 수 있습니다. 사용자가 인증된 후 문서에 대한 원래 보호를 유지할 필요가 없는 경우 이러한 옵션을 사용하세요.
 
-- 브라우저에서 문서를 보는 받는 사람에 대해서만 문서의 보호를 제거하려는 경우(일반적으로 Gmail과 같은 소셜 공급자 주소로 전송되므로): `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. 이러한 받는 사람이 문서를 다운로드하면 보호가 제거됩니다.
+- 모든 받는 사람에 대해 문서의 보호를 제거하려는 경우: `Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`. 이러한 받는 사람이 메일 메시지를 열면 문서가 보호되지 않습니다.
 
-- 모든 받는 사람에 대해 문서의 보호를 항상 제거하려는 경우: `Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true`. 이러한 받는 사람이 메일 메시지를 열면 문서가 보호되지 않습니다.
+- 브라우저에서 문서를 보는 받는 사람에 대해서만 문서의 보호를 제거하려는 경우(일반적으로 Gmail과 같은 소셜 공급자 주소로 전송되므로): `Set-IRMConfiguration -DecryptAttachmentFromPortal $true`. 이러한 받는 사람이 문서를 다운로드하면 보호가 제거됩니다.
 
 브라우저에서 문서를 보는 받는 사람에 대해서만 보호를 제거하는 방법은 Office 블로그 게시물, [Admin control for attachments now available in Office 365 Message Encryption](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Admin-control-for-attachments-now-available-in-Office-365/ba-p/204007)(이제 Office 365 메시지 암호화에서 첨부 파일에 대한 관리자 제어 사용 가능)을 참조하세요. 첨부된 문서에서 원래 보호를 유지해야 하는 경우 [Secure document collaboration by using Azure Information Protection](secure-collaboration-documents.md)(Azure Information Protection을 사용하여 문서 공동 작업 보호)을 참조하세요.
 

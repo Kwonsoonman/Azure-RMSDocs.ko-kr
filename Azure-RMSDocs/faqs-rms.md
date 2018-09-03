@@ -4,19 +4,19 @@ description: 데이터 보호 서비스인 Azure Information Protection의 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0964d6de3f06d8620de89d9c4c9cca65a64b71c1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 67a3720f38faab750f04e91d7a4848cf88ae4eef
+ms.sourcegitcommit: b0c4fe8c522987a7863958ffdc6866a91ebabf86
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805956"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43242217"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
@@ -73,7 +73,7 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 
 ## <a name="ive-protected-a-document-and-now-want-to-change-the-usage-rights-or-add-usersdo-i-need-to-reprotect-the-document"></a>문서를 보호한 상태에서 이제 사용 권한을 변경하거나 사용자를 추가하려면 문서를 다시 보호해야 합니까?
 
-레이블 또는 템플릿을 사용하여 문서를 보호하는 경우 문서를 다시 보호할 필요는 없습니다. 사용 권한을 변경하거나 새 그룹(또는 사용자)을 추가하여 레이블 또는 템플릿을 수정한 다음, 이러한 변경 내용을 저장하고 게시합니다.
+레이블 또는 템플릿을 사용하여 문서를 보호하는 경우 문서를 다시 보호할 필요는 없습니다. 사용 권한을 변경하거나 새 그룹(또는 사용자)을 추가하여 레이블 또는 템플릿을 수정한 다음, 이러한 변경 내용을 저장합니다.
 
 - 사용자가 변경하기 전에 문서에 액세스하지 않은 경우 변경 내용은 사용자가 문서를 여는 즉시 적용됩니다.
 

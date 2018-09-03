@@ -4,16 +4,16 @@ description: Rights Management 보호를 사용하도록 레이블을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/14/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 16cb22a7f16b82056d58d569dc0d65b3b16d0ae1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: bc60f1791cd7c36f179851b1759a46ba3980dd96
+ms.sourcegitcommit: b2d5c77bf8a0271d8d23f170314c0f49c3a328b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807060"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42920301"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -62,9 +62,7 @@ Exchange에서 Azure Information Protection을 구성하지 않고도 사용자�
         
         이전에 구성된 보호 설정은 보관된 보호 템플릿으로 유지되고, 옵션을 **보호**로 변경하는 경우 다시 표시됩니다. Azure Portal에 이 템플릿을 표시하지 않지만 필요한 경우 [PowerShell](configure-templates-with-powershell.md)을 사용하여 템플릿을 관리할 수 있습니다. 이 동작은 콘텐츠에 이전에 적용된 보호 설정을 가진 이 레이블이 포함되는 경우 계속 액세스할 수 있음을 의미합니다.
     
-    - **Protect**(보호): 보호를 적용하려면 이 옵션을 선택한 다음, 5단계로 이동하여 보호 설정을 구성합니다.
-    
-    참고: 추가 구성없이 이 단계에서 새 레이블을 저장할 수 있습니다. 이렇게 하면 레이블을 적용한 사용자만 사용 제한 없이 문서나 이메일을 열 수 있도록 보호가 적용되도록 레이블이 구성됩니다. 경우에 따라 사용자가 파일을 모든 위치에 저장하고 열 수 있음을 보장하기 위해 필요한 결과일 수 있습니다. 이 결과가 요구 사항과 일치하고 다른 사용자가 보호된 콘텐츠에 대해 공동 작업을 수행할 필요가 없는 경우 5단계 대신 12단계로 바로 이동합니다.
+    - **보호**: 보호를 적용하려면 이 옵션을 선택한 후 4단계로 이동합니다.
     
     - **보호 제거**: 문서 또는 메일이 보호되는 경우 보호를 제거하려면 이 옵션을 선택합니다. 11단계로 이동합니다.
         

@@ -4,18 +4,18 @@ description: Azure Information Protection용 테넌트 키를 직접 관리하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: c5b19c59-812d-420c-9c54-d9776309636c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e910ad5226310f0c76de437c30e95fb7f6ba8f87
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 4dd322c95d9aadc6df73e426fb92d2bb77312ed4
+ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804056"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43298041"
 ---
 # <a name="customer-managed-tenant-key-life-cycle-operations"></a>고객 관리: 테넌트 키 수명 주기 작업
 
@@ -41,7 +41,7 @@ Azure Information Protection에 대해 키를 다시 생성해야 하는 경우�
 
 - 테넌트 키의 마스터 복사본(현재 소유 중인 복사본)이 노출되었다고 판단되는 경우.
 
-관리하는 다른 키로 키를 다시 생성하려면 Azure Key Vault에 새 키를 생성하거나 Azure Key Vault에 이미 있는 다른 키를 사용하면 됩니다. 그런 다음 Azure Information Protection에 대해 BYOK를 구현하기 위해 수행했던 것과 동일한 절차를 수행합니다.
+관리하는 다른 키로 키를 다시 생성하려면 Azure Key Vault에 새 키를 생성하거나 Azure Key Vault에 이미 있는 다른 키를 사용하면 됩니다. 그런 다음 Azure Information Protection에 대해 BYOK를 구현하기 위해 수행했던 것과 동일한 절차를 수행합니다. 
 
 1. Azure Information Protection에 대해 이미 사용하고 있는 것과 다른 Key Vault에 새 키가 있는 경우에만 [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy) cmdlet을 사용하여 Key Vault를 사용하도록 Azure Information Protection을 승인합니다.
 
@@ -52,6 +52,8 @@ Azure Information Protection에 대해 키를 다시 생성해야 하는 경우�
 각 단계에 대한 자세한 내용은 다음을 참조하세요.
 
 - 관리하는 다른 키로 키를 다시 생성하려면 [Azure Information Protection 테넌트 키에 BYOK 구현](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)을 참조하십시오.
+    
+    온-프레미스에서 생성하고 Key Vault로 전송하는 HSM 보호된 키를 다시 생성하는 경우 현재 키에 사용한 것과 동일한 보안 권역을 사용하고 카드에 액세스할 수 있습니다.
 
 - Microsoft에서 관리하는 키로 변경하여 키를 다시 생성하려면, Microsoft 관리 작업에 대한 [테넌트 키 다시 생성](operations-microsoft-managed-tenant-key.md#rekey-your-tenant-key) 섹션을 참조하세요.
 

@@ -33,7 +33,7 @@ Connect 사이트의 권한 관리 서비스 섹션에서 현재 결과물을 �
 >
 >Microsoft Connect에 등록하지 않은 경우 다음을 수행합니다.
 >
->-   [Microsoft Connect](http://connect.microsoft.com)(http://connect.microsoft.com)로 이동합니다.
+>-   [Microsoft Connect](http://connect.microsoft.com)(http://connect.microsoft.com) 로 이동합니다.
 >-   Microsoft 계정을 사용하여 로그인합니다.
 >-   명령 모음에서 **디렉터리**를 클릭합니다.
 >-   "권한 관리 서비스"를 검색합니다.

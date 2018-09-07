@@ -4,18 +4,18 @@ description: 사용자 계정 하나를 사용해 파일 또는 전자 메일 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/18/2017
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 08664a01-81a5-4fa5-884c-7306ee55dba0
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ff01a7dab134eec65a7da452ef7a87e682432a3
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 5b19fcbe3bb86fb1cbd90e10b016343c0826311d
+ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807572"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380664"
 ---
 # <a name="verifying-the-azure-rights-management-service"></a>Azure Rights Management 서비스 확인
 

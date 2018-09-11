@@ -8,12 +8,12 @@ ms.date: 07/12/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 36dc3e0c8e6780440b0272ed7a4dae1ae34633e7
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 29dc6601bfa33fed84f0b26e46a5caf54df582d0
+ms.sourcegitcommit: beb4e480e0e821e32c9d35e86f2cf4321005c521
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42803725"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43663419"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 정책 설정을 구성하는 방법
 
@@ -51,7 +51,7 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
         
         이 옵션은 하위 레이블에 적용되지 않습니다.
         
-    - **For email messages with attachments, apply a label that matches the highest classification of those attachments**(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용): 이 옵션을 **권장**으로 설정한 경우 메일 메시지에 레이블을 적용하라는 메시지가 표시됩니다. 첨부 파일에 적용된 분류 레이블에 따라 레이블이 동적으로 선택되고 최고 분류 레이블이 선택됩니다. 첨부 파일은 실제 파일이어야 하며 파일에 대한 링크일 수 없습니다(예를 들어 SharePoint 또는 비즈니스용 OneDrive의 파일에 대한 링크). 사용자는 권장 사항을 수락하거나 해제할 수 있습니다. 이 옵션을 **켜기**로 설정한 경우 레이블이 자동으로 적용되지만, 사용자가 메일을 보내기 전에 레이블을 제거하거나 다른 레이블을 선택할 수 있습니다.  
+    - **For email messages with attachments, apply a label that matches the highest classification of those attachments**(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용): 이 옵션을 **권장**으로 설정한 경우 메일 메시지에 레이블을 적용하라는 메시지가 표시됩니다. 첨부 파일에 적용된 분류 레이블에 따라 레이블이 동적으로 선택되고 최고 분류 레이블이 선택됩니다. 첨부 파일은 실제 파일이어야 하며 파일에 대한 링크일 수 없습니다(예를 들어 SharePoint 또는 비즈니스용 OneDrive의 파일에 대한 링크). 사용자는 권장 사항을 수락하거나 해제할 수 있습니다. 이 옵션을 **자동**으로 설정한 경우 레이블이 자동으로 적용되지만 사용자가 이메일을 보내기 전에 레이블을 제거하거나 다른 레이블을 선택할 수 있습니다.  
     
     - **Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시): 이 설정이 꺼져 있으면 사용자가 Word, Excel, PowerPoint 및 Outlook의 표시줄에서 레이블을 선택할 수 없습니다. 대신, 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택해야 합니다. 이 설정이 켜져 있으면 사용자가 표시줄이나 단추에서 레이블을 선택할 수 있습니다.
         

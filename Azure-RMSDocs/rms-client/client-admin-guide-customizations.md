@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/04/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 8a91b39b0f503ebb53b8b652de21423ef4cae9c8
-ms.sourcegitcommit: 0bc877840b168d05a16964b4ed0d28a9ed33f871
+ms.openlocfilehash: 3e6d5f30e3db48eced850649976ac4da56271622
+ms.sourcegitcommit: a42bb93adbb5be2cd39606fed3de0785ac52dd65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43298017"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43703933"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -76,7 +76,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="enforce-protection-only-mode-when-your-organization-has-a-mix-of-licenses"></a>조직에 혼합 라이선스가 있을 때 보호 전용 모드 적용
 
-조직에 Azure Information Protection에 대한 라이선스가 없지만 데이터 보호에 대한 Azure Rights Management 서비스가 포함된 Office 365에 대한 라이선스가 있는 경우, Windows용 Azure Information Protection 클라이언트는 자동으로 [보호 전용 모드](client-protection-only-mode.md)에서 실행됩니다.
+조직에 Azure Information Protection에 대한 라이선스가 없지만 데이터를 보호하기 위해 Azure Rights Management 서비스가 포함된 Office 365에 대한 라이선스가 있는 경우, Windows용 Azure Information Protection 클라이언트는 자동으로 [보호 전용 모드](client-protection-only-mode.md)에서 실행됩니다.
 
 그러나 조직에 Azure Information Protection에 대한 구독이 있는 경우 기본적으로 모든 Windows 컴퓨터에서 Azure Information Protection 정책을 다운로드할 수 있습니다. Azure Information Protection 클라이언트는 라이선스 확인 및 적용을 수행하지 않습니다. 
 
@@ -309,6 +309,8 @@ Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는
 
 원하는 마이그레이션 규칙 이름을 지정합니다. 이전 레이블 지정 솔루션의 레이블 하나 이상이 Azure Information Protection 레이블에 매핑되는 방식을 식별하는 데 도움이 되는 설명이 포함된 이름을 사용합니다. 이 이름은 스캐너 보고서와 이벤트 뷰어에 표시됩니다. 
 
+이 설정은 이전 레이블이 적용될 수 있는 시각적 표시를 제거하지 않습니다. 헤더 및 바닥글을 제거하려면 다음 섹션인 [다른 레이블 지정 솔루션에서 헤더 및 바닥글 제거](#remove-headers-and-footers-from-other-labeling-solutions)를 참조하세요.
+
 ### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>예 1: 동일한 레이블 이름의 일대일 매핑
 
 Secure Islands 레이블이 “기밀”인 문서는 Azure Information Protection에서 레이블이 “기밀”로 재지정되어야 합니다.
@@ -362,10 +364,107 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 |LabelbyCustomProperty|2beb8fe7-8293-444c-9768-7fdc6f75014d,"Secure Islands label contains Internal",Classification,.\*Internal.\*|
 
 
+## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>다른 레이블 지정 솔루션에서 헤더 및 바닥글 제거
+
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
+
+이 구성에서는 Azure Portal에서 구성해야 하는 여러 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다.
+
+이러한 설정을 통해 다른 레이블 지정 솔루션에서 해당 시각적 표시가 적용된 경우 문서에서 헤더 또는 바닥글을 제거하거나 바꿀 수 있습니다. 예를 들어, 이전 바닥글에는 이제 새 레이블 이름 및 고유한 바닥글이 있는 Azure Information Protection으로 마이그레이션한 이전 레이블의 이름이 포함됩니다.
+
+클라이언트가 해당 정책에서 이 구성을 가져오면 Office 앱에서 문서를 열고 Azure Information Protection 레이블을 문서에 적용할 때 이전 헤더 및 바닥글을 제거하거나 대체합니다.
+
+이 구성은 Outlook에 지원되지 않습니다. Word, Excel 및 PowerPoint에서 사용하는 경우 이러한 앱의 성능에 부정적인 영향을 줄 수 있습니다. 구성을 통해 응용 프로그램별로 설정을 정의할 수 있습니다. 예를 들어, Word 문서의 헤더 및 바닥글에 있는 텍스트를 검색하지만 Excel 스프레드시트 또는 PowerPoint 프레젠테이션은 검색하지 않습니다.
+
+패턴 일치가 성능에 영향을 주기 때문에 Office 응용 프로그램 형식(**W**ord, **E**xcel, **P**owerPoint)을 검색되어야 하는 것으로 제한하는 것이 좋습니다.
+
+- 키: **RemoveExternalContentMarkingInApp**
+
+- 값: \<**Office 응용 프로그램 형식 WXP**> 
+
+예:
+
+- Word 문서만을 검색하려면 **W**를 지정합니다.
+
+- Word 문서 및 PowerPoint 프레젠테이션을 검색하려면 **WP**를 지정합니다.
+
+그런 다음, 하나 이상의 고급 클라이언트 설정인 **ExternalContentMarkingToRemove**이 헤더 또는 바닥글의 내용 및 제거하거나 대체하는 방법을 지정해야 합니다.
+
+### <a name="how-to-configure-externalcontentmarkingtoremove"></a>ExternalContentMarkingToRemove를 구성하는 방법
+
+**ExternalContentMarkingToRemove** 키에 대한 문자열 값을 지정하는 경우 정규식을 사용하는 세 가지 옵션이 있습니다.
+
+- 헤더 또는 바닥글의 모든 항목을 제거하는 부분 일치 항목입니다.
+    
+    예제: 헤더 또는 바닥글에는 **TEXT TO REMOVE**라는 문자열이 포함됩니다. 이러한 헤더 또는 바닥글을 완전히 제거하려고 합니다. `*TEXT*` 값을 지정합니다.
+
+- 헤더 또는 바닥글에서 특정 단어를 제거하는 전체 일치입니다.
+    
+    예제: 헤더 또는 바닥글에는 **TEXT TO REMOVE**라는 문자열이 포함됩니다. **TEXT**라는 단어를 제거하려고 합니다. 그러면 헤더 또는 바닥글 문자열을 **TO REMOVE**로 유지합니다. `TEXT ` 값을 지정합니다.
+
+- 헤더 또는 바닥글의 모든 항목을 제거하는 전체 일치 항목입니다.
+    
+    예제: 헤더 또는 바닥글에는 **TEXT TO REMOVE**라는 문자열이 있습니다. 이 문자열이 정확하게 포함된 헤더 또는 바닥글을 제거하려고 합니다. `^TEXT TO REMOVE$` 값을 지정합니다.
+    
+
+지정한 문자열에 대한 패턴 일치는 대/소문자를 구분합니다. 최대 문자열 길이는 255자입니다.
+
+일부 문서에 보이지 않는 문자 또는 다른 종류의 공백이나 탭이 포함될 수 있으므로 구 또는 문장에 지정한 문자열은 검색되지 않을 수 있습니다. 가능하면 값에 대해 구별되는 단일 단어를 지정하고 프로덕션에 배포하기 전에 결과를 테스트해야 합니다.
+
+- 키: **ExternalContentMarkingToRemove**
+
+- 값: \<**일치할 문자열, 정규식으로 정의됨**> 
+
+#### <a name="multiline-headers-or-footers"></a>여러 줄 헤더 또는 바닥글
+
+헤더 또는 바닥글 텍스트가 단일 줄보다 크면 각 줄에 대한 키와 값을 만듭니다. 예를 들어, 다음 두 줄을 포함한 바닥글이 있습니다.
+
+**해당 파일이 기밀로 분류됨**
+
+**수동으로 레이블이 적용됨**
+
+이 여러 줄 바닥글을 제거하려면 다음 두 항목을 만듭니다.
+
+- 키 1: **ExternalContentMarkingToRemove**
+
+- 키 값 1: **\*기밀***
+
+- 키 2: **ExternalContentMarkingToRemove**
+
+- 키 값 2: **\*레이블이 적용됨*** 
+
+#### <a name="optimization-for-powerpoint"></a>PowerPoint에 대한 최적화
+
+PowerPoint의 바닥글이 도형으로 구현됩니다. 지정한 텍스트를 포함하지만 헤더나 바닥글이 아닌 도형을 제거하지 않도록 방지하려면 **PowerPointShapeNameToRemove**라는 추가 고급 클라이언트 설정을 사용합니다. 리소스를 많이 사용하는 프로세스인 모든 도형에 있는 텍스트를 확인하지 않으려면 이 설정을 사용하는 것이 좋습니다.
+
+이 추가 고급 클라이언트 설정을 지정하지 않고 PowerPoint가 **RemoveExternalContentMarkingInApp** 키 값에 포함된 경우  **ExternalContentMarkingToRemove** 값에서 지정한 텍스트에 대한 모든 도형을 확인합니다. 
+
+헤더 또는 바닥글을 사용하는 도형 이름을 찾으려면:
+
+1. PowerPoint에서는 **선택** 창: **형식** 탭 > **정렬** 그룹 > **선택 창**을 표시합니다.
+
+2. 헤더 또는 바닥글을 포함하는 슬라이드에서 도형을 선택합니다. 이제 **선택 영역** 창에서 선택한 도형 이름을 강조 표시합니다.
+
+도형 이름을 사용하여 **PowerPointShapeNameToRemove** 키에 대한 문자열 값을 지정합니다. 
+
+예제: 셰이프 이름은 **fc**입니다. 이 이름을 가진 도형을 제거하려면 `fc` 값을 지정합니다.
+
+- 키: **PowerPointShapeNameToRemove**
+
+- 값: \<**PowerPoint 도형 이름**> 
+
+둘 이상의 PowerPoint 도형을 제거할 경우 도형을 제거할 만큼 **PowerPointShapeNameToRemove** 키를 만듭니다. 각 항목에 대해 제거할 도형의 이름을 지정합니다.
+
+기본적으로 헤더 및 바닥글에 대한 마스터 슬라이드만을 확인합니다. 리소스를 훨씬 더 많이 사용하는 모든 슬라이드로 이 검색을 확장하려면 **RemoveExternalContentMarkingInAllSlides**라는 추가 고급 클라이언트 설정을 사용합니다.
+
+- 키: **RemoveExternalContentMarkingInAllSlides**
+
+- 값: **True**
+
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>기존 사용자 지정 속성을 사용하여 Office 문서에 레이블을 지정합니다.
 
 > [!NOTE]
-> 이 구성과 이전 섹션의 구성을 사용하여 다른 레이블 지정 솔루션에서 마이그레이션하는 경우 레이블 지정 마이그레이션 설정이 우선합니다. 
+> 이 구성 및 [Secure Islands 및 기타 레이블 지정 솔루션에서 레이블을 마이그레이션](#migrate-labels-from-secure-islands-and-other-labeling-solutions)하는 구성을 사용하는 경우 레이블 지정 마이그레이션 설정이 우선합니다. 
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 

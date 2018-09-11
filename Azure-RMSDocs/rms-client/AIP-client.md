@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트에 대한 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/08/2017
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: f9b61b6b-05ba-4422-b8b0-cd20af774a2b
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c10558c9a24d5348bd3188cbdf352653df993867
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 33312efdaaa9a9b65e79f2f5b40fd910db35a686
+ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808919"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380704"
 ---
 # <a name="azure-information-protection-client-for-windows"></a>Windows용 Azure Information Protection 클라이언트
 
@@ -33,5 +33,12 @@ Windows용 Azure Information Protection 클라이언트는 [Azure Information Pr
 > iOS 및 Android용 Microsoft Azure Information Protection 앱도 있습니다. 자세한 내용은 [iOS 및 Android용 Azure Information Protection 앱에 대한 FAQ](mobile-app-faq.md )를 참조하세요.
 > 
 > Mac 컴퓨터 및 Windows Phone: 모바일 장치용 RMS 공유 앱을 사용하고 [모바일 및 Mac 플랫폼용 Rights Management 공유 응용 프로그램에 대한 FAQ](http://technet.microsoft.com/dn451248)를 읽어보세요.
+
+## <a name="install-instructions"></a>설치 지침
+
+- [관리자](client-admin-guide-install.md)
+
+- [최종 사용자](install-client-app.md)
+
 
 

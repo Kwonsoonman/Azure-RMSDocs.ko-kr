@@ -4,18 +4,18 @@ description: Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/22/2018
+ms.date: 08/31/2018
 ms.topic: get-started-article
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 03b97ca4324b9352db7abec37666e7de262e6f39
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 0cfaaa199178b7bede1d5b0d3fe54dd43dcfbf01
+ms.sourcegitcommit: beb4e480e0e821e32c9d35e86f2cf4321005c521
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808037"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43663402"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -90,7 +90,7 @@ Azure Information Protection 클라이언트는 다음 Office 버전의 Office �
 
 - Office 365 ProPlus(2016 앱 또는 2013 앱 포함)(간편 실행 또는 Windows Installer 기반 설치)
     
-    이러한 Office 버전은 Azure Information Protection에서 데이터 보호를 포함하는 Office 365 구독의 전부는 아니지만 대부분이 포함됩니다. Office 365 ProPlus가 포함되어 있는지 확인하려면 구독 정보를 확인합니다. 또한 이 정보는 [Azure Information Protection 데이터 시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)에서 찾을 수 있습니다.
+    이러한 Office 버전은 대부분 포함되지만 Azure Information Protection에서 데이터를 보호하는 작업을 포함하는 모든 Office 365 구독에는 포함되지 않습니다. Office 365 ProPlus가 포함되어 있는지 확인하려면 구독 정보를 확인합니다. 또한 이 정보는 [Azure Information Protection 데이터 시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)에서 찾을 수 있습니다.
 
 - Office Professional Plus 2016
 
@@ -102,7 +102,7 @@ Azure Information Protection 클라이언트는 다음 Office 버전의 Office �
 
 Azure Information Protection 클라이언트는 동일한 컴퓨터에 여러 버전의 Office를 지원하지 않습니다. 또한 이 클라이언트는 Office의 사용자 계정 전환을 지원하지 않습니다.
 
-데이터 보호 서비스를 지원하는 Office 버전에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.
+보호 서비스를 지원하는 Office 버전에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.
 
 ## <a name="firewalls-and-network-infrastructure"></a>방화벽 및 네트워크 인프라
 
@@ -110,7 +110,7 @@ Azure Information Protection 클라이언트는 동일한 컴퓨터에 여러 �
 
 Office 문서의 정보 외에 Azure Information Protection과 관련하여 다음 사항에 유의하세요.
 
-- TCP 443에서 **api.informationprotection.azure.com**으로의 HTTPS 트래픽을 허용합니다.
+- **informationprotection.hosting.portal.azure.net**에 대한 TCP 443의 HTTPS 트래픽을 허용합니다.
 
 - 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.
 

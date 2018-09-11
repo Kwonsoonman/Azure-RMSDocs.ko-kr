@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 945b05a99122b7caf1d9a73ea8b75717a5522660
-ms.sourcegitcommit: 8cde6611ab6d95d816e1c80267cacd32443f31cb
+ms.openlocfilehash: 3e067f42b216efda48d46cd95be66c4939bf6240
+ms.sourcegitcommit: ba7ef4fe439bbf00cdad888017cbb8f44c801f77
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43117930"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43348694"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -59,6 +59,8 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 - 해당 파일이 PDF 및 Office 문서가 아닌 경우 Secure Islands에서 보호한 파일을 지원합니다. 예를 들어 보호된 텍스트 및 그림 파일입니다. 또는 .pfile 파일 이름 확장명을 사용하는 파일입니다. 이 지원을 사용하면 Azure Information protection과 같은 새로운 시나리오가 중요한 정보에 대해 이러한 파일을 검사할 수 있고 Azure Information Protection에 대한 레이블을 자동으로 재지정할 수 있습니다. [추가 정보](client-admin-guide-customizations.md#support-for-files-protected-by-secure-islands)
 
 - **도움말 및 피드백** 대화 상자의 **피드백 보내기** 링크는 사용자 지정할 수 있는 **문제 보고**로 대체됩니다. 기본적으로 이 옵션을 사용하면 Microsoft에 메일이 전송됩니다. 사용자가 이 옵션을 선택하면 지정하는 HTTP 문자열을 사용하도록 이 메일 주소를 변경할 수 있습니다. 예를 들어 사용자가 문제를 보고하는 사용자 지정된 웹 페이지 또는 지원 센터로 이동하는 메일 주소입니다. 이 주소를 수정하려면 [고급 클라이언트 설정](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)을 사용합니다.
+
+- 다른 레이블 지정 솔루션에 의해 문서에 적용된 헤더 및 바닥글을 제거하는 새 고급 클라이언트 설정입니다. [추가 정보](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)
 
 - Azure Information Protection 스캐너:
 
@@ -161,7 +163,6 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 **새로운 기능**:
 
 - Azure Information Protection 스캐너: 클라이언트에 포함된 PowerShell 모듈에는 온-프레미스 데이터 저장소에서 파일을 검색하고, 분류하고, 보호할 수 있도록 스캐너를 설치하고 구성할 새로운 cmdlet이 있습니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-aip-scanner.md)를 참조하세요. 
-
 - 이제 텍스트 문자열에서 "If.App" 변수 문을 사용하여 Word, Excel, PowerPoint 및 Outlook에 대새 다른 시각적 표시를 설정하고 응용 프로그램 형식을 식별할 수 있습니다. [추가 정보]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - [정책 설정](../configure-policy-settings.md)인 **Office 앱에 Information Protection 표시줄 표시**에 대한 지원입니다. 이 설정을 끄기로 설정하면 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택합니다.

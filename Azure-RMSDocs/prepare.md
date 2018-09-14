@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 05/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 661fac0fc006bb79fc07603482e5e1f7e64ca4c3
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 0277b638f9d069d2cfb1084136068d7ef58b1e2b
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806350"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44151625"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 

@@ -4,18 +4,18 @@ description: RMS(Rights Management) 클라이언트와 Azure Information Protect
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
-ms.topic: article
+ms.date: 09/12/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 9aa693db-9727-4284-9f64-867681e114c9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e8eed649c89e854a4499260af15af8af510a39ea
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 8c97e4591343c0c6f04c39b5fa162acb1feacdd1
+ms.sourcegitcommit: 62da5075a6b3d13e4688d2d7d82beff53cade440
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804687"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45540091"
 ---
 # <a name="rms-protection-with-windows-server-file-classification-infrastructure-fci"></a>Windows Server FCI(파일 분류 인프라)를 사용하는 RMS 보호
 
@@ -209,11 +209,11 @@ FCI에 대해 사용하는 Rights Management 템플릿을 변경하는 경우 �
         -   **인수**: 다음을 지정합니다. 이때 &lt;경로&gt;와 &lt;템플릿 ID&gt;에는 고유한 값을 입력합니다.
 
             ```
-            -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail [Source File Owner Email]"
+            -Noprofile -Command "<path>\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID <template GUID> -OwnerMail '[Source File Owner Email]'"
             ```
             예를 들어 C:\RMS-Protection에 스크립트를 복사했으며 필수 구성 요소에서 지정한 템플릿 ID가 e6ee2481-26b9-45e5-b34a-f744eacd53b0인 경우 다음을 지정합니다.
 
-            `-Noprofile -Command "C:\RMS-Protection\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID e6ee2481-26b9-45e5-b34a-f744eacd53b0 -OwnerMail [Source File Owner Email]"`
+            `-Noprofile -Command "C:\RMS-Protection\RMS-Protect-FCI.ps1 -File '[Source File Path]' -TemplateID e6ee2481-26b9-45e5-b34a-f744eacd53b0 -OwnerMail '[Source File Owner Email]'"`
 
             이 명령에서 **[원본 파일 경로]** 및 **[원본 파일 소유자 메일]** 은 모두 FCI에 따라 달라지는 변수이므로 이전 명령에 표시되는 그대로 정확하게 입력합니다. 첫 번째 변수는 FCI가 폴더에서 식별된 파일을 자동으로 지정하는 데 사용되고 두 번째 변수는 FCI가 식별된 파일의 명명된 소유자 메일 주소를 자동으로 검색하는 데 사용됩니다. 이 명령은 폴더의 각 파일(이 예에서는 C:\FileShare 폴더의 각 파일)에 대해 반복 실행되며 파일 분류 속성으로 RMS도 추가로 포함합니다.
 

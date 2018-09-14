@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 01/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 89900a1231ec4a5a6458287cf5580bf0ad5f28b1
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 944d47d77efa06999e21ebe42b03a5b35733cc05
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804536"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44150095"
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램 다운로드 및 설치 
 
@@ -34,7 +34,7 @@ ms.locfileid: "42804536"
 
 3.  다운로드된 Setup.exe 파일을 두 번 클릭합니다. 계속하라는 메시지가 표시되면 **예**를 클릭합니다.
 
-4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료되기를 기다립니다.
+4.  **Microsoft RMS 설치** 페이지에서 **다음**을 클릭하고 설치가 완료될 때까지 기다립니다.
 
     > [!NOTE]
     > RMS 공유 응용 프로그램에는 Microsoft.NET Framework 버전 4.0 이상이 필요합니다. 설치 프로그램에서 이 버전이 설치되어 있는지 확인하며, 설치되어 있지 않은 경우 설치할 수 있는 링크가 포함된 메시지가 나타납니다.

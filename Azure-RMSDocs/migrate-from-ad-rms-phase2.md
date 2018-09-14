@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/11/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 8f8249ef2632385768cc084896b22482025a59a2
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 04ca9cdfe3f528d71ee45a88a81b59268a6357aa
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42804967"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44150469"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 

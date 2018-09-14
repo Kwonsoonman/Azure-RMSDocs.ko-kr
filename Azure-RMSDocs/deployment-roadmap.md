@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 68a02ba4ec9ef0a91d2aa4fbd541c27ba2a07bcd
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 43f99a35104ecdc3bfb422ed9f6747043e895ac7
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806448"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44149840"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure Information Protection 배포 로드맵
 

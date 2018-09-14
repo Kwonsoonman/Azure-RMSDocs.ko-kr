@@ -4,18 +4,18 @@ description: RMS API를 사용하여 Azure Information Protection의 Azure Right
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2018
-ms.topic: get-started-article
+ms.date: 09/07/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c37dfd1f0c5beabb00709fc68bfc66969c90967c
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 5f64391c3eb47d9b65908e95c300d19ae3ad82e2
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807380"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44149126"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
 
@@ -48,7 +48,7 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 |**Windows**|Office 2010<br /><br />Office 2013<br /><br />Office 2016 <br /><br />Office Online(보호된 문서 보기)[[1]](#footnote-1)<br /><br />웹 브라우저 [[2]](#footnote-2)|Windows용 Azure Information Protection 클라이언트 <br /><br />Gaaiho 문서<br /><br />GigaTrust Desktop PDF Client for Adobe<br /><br />Foxit Reader<br /><br />Nitro PDF Reader<br /><br />RMS 공유 앱|Outlook 2010<br /><br />Outlook 2013<br /><br />Office 2016 <br /><br />웹 브라우저 [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4) |Windows용 Azure Information Protection 클라이언트: 텍스트, 이미지, pfile<br /><br />Windows용 RMS 공유 응용 프로그램: 텍스트, 이미지, pfile<br /><br />AutoCAD용 SealPath RMS 플러그 인: .dwg|
 |**iOS**|Office Mobile(보호된 문서 보기 및 편집)<br /><br />Office Online [[1]](#footnote-1)<br /><br />GigaTrust<br /><br /> TITUS Docs<br /><br />웹 브라우저 [[2]](#footnote-2)|Azure Information Protection 앱(보호된 문서 보기)<br /><br /> Foxit Reader<br /><br />TITUS Docs|Azure Information Protection 앱(보호된 전자 메일 보기)<br /><br />BlackBerry 작업<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />iPad 및 iPhone용 Outlook [[4]](#footnote-4)<br /><br />TITUS Mail <br /><br />웹 브라우저 [[3]](#footnote-3)|Azure Information Protection 앱(텍스트 및 이미지 보호 보기)<br /><br />TITUS Docs: Pfile|
 |**OWA(Outlook Web Access)**|GigaTrust App for Android<br /><br />Office Online [[1]](#footnote-1)<br /><br />Office Mobile(보호된 문서 보기 및 편집) <br /><br />웹 브라우저 [[2]](#footnote-2)|Azure Information Protection 앱(보호된 문서 보기) <br /><br />GigaTrust App for Android<br /><br />Foxit Reader|9Folders [[4]](#footnote-4)<br /><br />Azure Information Protection 앱(보호된 전자 메일 보기)<br /><br />BlackBerry 작업 <br /><br />GigaTrust App for Android [[4]](#footnote-4)<br /><br />Citrix WorxMail <br /><br />NitroDesk [[4]](#footnote-4)<br /><br />Android용 Outlook [[4]](#footnote-4)<br /><br />Samsung Email(S3 이상) [[4]](#footnote-4)<br /><br />TITUS Classification for Mobile <br /><br />웹 브라우저 [[3]](#footnote-3)|Azure Information Protection 앱(보호된 텍스트 및 이미지 보기)|
-|**macOS**|Office 2011(AD RMS만 해당)<br /><br />Mac용 Office 2016<br /><br />Office Online [[1]](#footnote-1)<br /><br />웹 브라우저 [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 공유 앱(보호된 문서 보기)|Outlook 2011(AD RMS만 해당)<br /><br />Mac용 Outlook 2016<br /><br />Outlook for Mac <br /><br />웹 브라우저 [[3]](#footnote-3)|RMS 공유 앱(보호된 텍스트, 이미지, 일반적으로 보호된 파일 보기)|
+|**macOS**|Mac용 Office 2016<br /><br />Office Online [[1]](#footnote-1)<br /><br />웹 브라우저 [[2]](#footnote-2)|Foxit Reader<br /><br />RMS 공유 앱(보호된 문서 보기)|Mac용 Outlook 2016<br /><br />웹 브라우저 [[3]](#footnote-3)|RMS 공유 앱(보호된 텍스트, 이미지, 일반적으로 보호된 파일 보기)|
 |**Windows 10 Mobile**|Office Mobile 앱(Azure RMS를 사용하여 보호된 문서 보기) <br /><br />웹 브라우저 [[2]](#footnote-2)|지원되지 않음|Citrix WorxMail <br /><br />Outlook 메일(보호된 메일 보기) <br /><br />웹 브라우저 [[3]](#footnote-3)|지원되지 않음|
 |**Windows RT**|Office 2013 RT<br /><br />Office Online [[1]](#footnote-1)<br /><br />웹 브라우저 [[2]](#footnote-2)|지원되지 않음|Outlook 2013 RT<br /><br />Windows용 메일 앱<br /><br />웹 브라우저 [[3]](#footnote-3)<br /><br />Windows Mail [[4]](#footnote-4)|Siemens JT2Go: JT 파일|
 |**Windows Phone 8.1**|Office Mobile(AD RMS만 해당)<br /><br />웹 브라우저 [[2]](#footnote-2)|RMS 공유 앱(보호된 문서 보기)|Outlook Mobile [[4]](#footnote-4) <br /><br />웹 브라우저 [[3]](#footnote-3)|RMS 공유 앱(보호된 텍스트, 이미지, 일반적으로 보호된 파일 보기)|
@@ -87,7 +87,7 @@ Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되�
 
 - Office 365 ProPlus: Office 2016 및 Office 2013
     
-    이러한 Office 버전은 Azure Information Protection에서 데이터 보호를 포함하는 Office 365 구독의 전부는 아니지만 대부분이 포함됩니다. Office 365 ProPlus가 포함되어 있는지 확인하려면 구독 정보를 확인합니다. 또한 이 정보는 [Azure Information Protection 데이터 시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)에서 찾을 수 있습니다.
+    이러한 Office 버전은 대부분 포함되지만 Azure Information Protection에서 데이터를 보호하는 작업을 포함하는 모든 Office 365 구독에는 포함되지 않습니다. Office 365 ProPlus가 포함되어 있는지 확인하려면 구독 정보를 확인합니다. 또한 이 정보는 [Azure Information Protection 데이터 시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)에서 찾을 수 있습니다.
 
 - Office Professional Plus 2016
 
@@ -171,8 +171,6 @@ Mac 컴퓨터의 경우 보호된 PDF 파일(.ppdf), 보호된 텍스트 이미�
 
 Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같습니다.
 
--   Microsoft Office for Mac 2011
-
 -   SharePoint Server 2013에 대한 Microsoft 비즈니스용 OneDrive
 
 -   XPS 뷰어
@@ -193,7 +191,7 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 |절대|절대|DLP(데이터 손실 방지)를 통한 콘텐츠 보호.|
 |Content Locker|VMware|보호된 콘텐츠를 저장, 소비, 생성합니다.|
 |Controle|TakeControle|레이블 지정 및 보호를 사용한 eDiscovery.|
-|Forcepoint|Forcepoint DLP|조직의 데이터 보안 정책을 적용하는 끝점 DLP(데이터 손실 방지) 솔루션입니다.|
+|Forcepoint|Forcepoint DLP|조직의 데이터 보안 정책을 적용하는 엔드포인트 DLP(데이터 손실 방지) 솔루션입니다.|
 |Halocore|Secude|SAP 환경에서 내보낸 파일을 보호합니다.|
 |MaaS 360|IBM|문서 소비 및 보호를 위한 통합.|
 |Mobiliya|Mobiliya|EMC의 Documentum 리포지토리에서 문서를 보호합니다.

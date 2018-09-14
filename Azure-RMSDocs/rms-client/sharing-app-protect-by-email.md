@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 02/23/2017
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4c1cd1d3-78dd-4f90-8b37-dcc9205a6736
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 428f1a231eda72ba21d0420d1c0cbd8ea247f362
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 157a08ea1d30a7ff515e76cfd21f2393f2a16202
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42805340"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44148582"
 ---
 # <a name="protect-a-file-that-you-share-by-email-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 메일로 공유하는 파일 보호
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 6fd4c5768d29a231960b3e048c74d4c0e5ec3e7d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7e72aa9af0d248f54880f8b5bb6df0ce75018f2b
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149925"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211227"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>관리자 가이드: Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
 
@@ -87,7 +87,7 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
     
 보호 서비스의 사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../log-analyze-usage.md)을 참조하세요.
 
-
+보호 서비스의 사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../log-analyze-usage.md)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 Azure Information Protection 클라이언트와 연결된 모든 로그 파일을 파악했으므로 다음에서 이 클라이언트를 지원하는 데 필요할 수 있는 추가 정보를 참조하세요.

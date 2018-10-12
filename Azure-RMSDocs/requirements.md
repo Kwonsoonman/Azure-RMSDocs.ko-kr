@@ -4,18 +4,18 @@ description: Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 09/19/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e471cd5e4de5c4bd4c24fd5c5627e69f7db1ec90
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 00daf488568fef8569f97db378b771383a221ce3
+ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148344"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46473820"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -32,7 +32,7 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하려면 [Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 기능 목록을 검토합니다.
 
 > [!TIP]
-> 개인 이메일 주소에 보호된 이메일을 보내려면, Office 365 계획 또는 Exchange Online 독립 실행형 계획이 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 지원하는지 확인하세요. 예: Gmail, Yahoo 및 Microsoft 다음 리소스를 확인합니다.
+> 개인 메일 주소에 보호된 메일을 보내려면, Office 365 계획 또는 Exchange Online 독립 실행형 계획이 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 지원하는지 확인하세요. 예: Gmail, Yahoo 및 Microsoft 다음 리소스를 확인합니다.
 >
 > [Exchange Online 서비스 설명](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
 >
@@ -78,6 +78,8 @@ MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 �
 
 - Windows Server 2008 R2 
 
+물리적 컴퓨터에 Azure Information Protection 클라이언트를 설치하는 것은 물론, 가상 머신에도 설치할 수 있습니다. 가상 데스크톱 솔루션의 소프트웨어 공급업체에 Azure Information Protection 클라이언트를 실행하는 데 필요한 추가 구성 사항이 있는지 확인합니다. .예를 들어, Citrix 솔루션의 경우 Office(winword.exe, excel.exe, outlook.exe, powerpoint.exe) 및 Azure Information Protection 클라이언트(msip.app.exe, msip.viewer.exe) 에 대해 [Citrix API(응용 프로그래밍 인터페이스) 후크를 사용하지 않도록 설정](https://support.citrix.com/article/CTX107825)해야 할 수 있습니다.
+
 나열된 서버 버전의 경우 Azure Information Protection 클라이언트가 원격 데스크톱 서비스에 대해 지원됩니다. 원격 데스크톱 서비스와 함께 Azure Information Protection 클라이언트를 사용할 때 사용자 프로필을 삭제하는 경우 **%Appdata%\Microsoft\Protect** 폴더는 삭제하지 마세요.
 
 Azure Information Protection 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 [동일한 장치](requirements-client-devices.md)에서 이 데이터를 사용할 수 있습니다.
@@ -88,9 +90,9 @@ Azure Information Protection 클라이언트에는 관리자 가이드에 나열
 
 Azure Information Protection 클라이언트는 다음 Office 버전의 Office 응용 프로그램인 **Word**, **Excel**, **PowerPoint** 및 **Outlook**을 사용하여 문서 및 메일의 레이블을 지정하고 보호할 수 있습니다.
 
+- 사용자에게 Azure Rights Management(Office 365용 Azure Information Protection이라고도 함) 라이선스가 지정될 경우 Office 365(Office 2016 앱)(최소 버전 1805, 빌드 9330.2078)
+
 - Office 365 ProPlus(2016 앱 또는 2013 앱 포함)(간편 실행 또는 Windows Installer 기반 설치)
-    
-    이러한 Office 버전은 대부분 포함되지만 Azure Information Protection에서 데이터를 보호하는 작업을 포함하는 모든 Office 365 구독에는 포함되지 않습니다. Office 365 ProPlus가 포함되어 있는지 확인하려면 구독 정보를 확인합니다. 또한 이 정보는 [Azure Information Protection 데이터 시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)에서 찾을 수 있습니다.
 
 - Office Professional Plus 2016
 

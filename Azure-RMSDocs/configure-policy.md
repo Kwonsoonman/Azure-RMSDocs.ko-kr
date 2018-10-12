@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 57c410432377d5a98c132239ac1805293d1a5133
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e63b98118cda3a927577a90c7c0999d8781f8d93
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151489"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211295"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -25,9 +25,9 @@ ms.locfileid: "44151489"
 
 정책에는 다음과 같은 레이블 및 설정이 포함됩니다.
 
-- 레이블은 문서 및 이메일에 분류 값을 적용하고, 선택적으로 이 콘텐츠를 보호할 수 있습니다. Azure Information Protection 클라이언트는 사용자가 파일 탐색기에서 마우스 오른쪽 단추로 클릭하는 경우 Office 앱의 사용자에게 이러한 레이블을 표시합니다. PowerShell 및 Azure Information Protection 스캐너를 사용하여 이러한 레이블은 적용할 수도 있습니다.
+- 레이블은 문서 및 메일에 분류 값을 적용하고, 선택적으로 이 콘텐츠를 보호할 수 있습니다. Azure Information Protection 클라이언트는 사용자가 파일 탐색기에서 마우스 오른쪽 단추로 클릭하는 경우 Office 앱의 사용자에게 이러한 레이블을 표시합니다. PowerShell 및 Azure Information Protection 스캐너를 사용하여 이러한 레이블은 적용할 수도 있습니다.
 
-- 이렇게 설정하면 Azure Information Protection 클라이언트의 기본 동작을 변경합니다. 예를 들어 모든 문서와 이메일에 레이블이 있어야 하는지 여부 및 Office 앱에서 Azure Information Protection 표시줄이 표시되는지 여부에 관계 없이 기본 레이블을 선택할 수 있습니다.
+- 이렇게 설정하면 Azure Information Protection 클라이언트의 기본 동작을 변경합니다. 예를 들어 모든 문서와 메일에 레이블이 있어야 하는지 여부 및 Office 앱에서 Azure Information Protection 표시줄이 표시되는지 여부에 관계 없이 기본 레이블을 선택할 수 있습니다.
 
 ## <a name="subscription-support"></a>구독 지원
 
@@ -96,7 +96,7 @@ Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 �
 
 이 Azure Information Protection 정책에는 구성할 수 있는 다음 요소가 포함됩니다.
     
-- 관리자와 사용자가 문서 및 이메일을 분류하고 선택적으로 보호하는 데 사용할 수 있는 레이블.
+- 관리자와 사용자가 문서 및 메일을 분류하고 선택적으로 보호하는 데 사용할 수 있는 레이블.
 
 - 사용자의 Office 응용 프로그램에 표시되는 Information Protection 표시줄의 제목 및 도구 설명.
 
@@ -168,7 +168,11 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 - [다른 언어에 대해 레이블을 구성하는 방법](configure-policy-languages.md)
 
+- [Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법](configure-policy-migrate-labels.md)
+
 ## <a name="next-steps"></a>다음 단계
 
 기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 참조하세요.
+
+정책에 수행되는 방법을 알아보려면 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요.
 

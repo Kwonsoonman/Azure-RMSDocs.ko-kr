@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 63e84e8a5d072f0bb57bb72754f97ca8963a2c76
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c415868045e2064696181217f66262e90887e25a
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149109"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403015"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -106,9 +106,7 @@ Windows Update, 실행 파일, 또는 Windows Installer 파일을 사용하여 A
 
 **추가 정보 링크**를 클릭하면 기본적으로 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책의 [정책 설정](../configure-policy-settings.md) 중 하나로 사용자 지정 URL로 이동하도록 이 링크를 구성할 수 있습니다.
 
-**피드백 보내기** 링크(일반 공급 버전)를 사용하여 Information Protection 팀에 제안 사항이나 요청을 보냅니다. 기술 지원을 위해 이 옵션을 사용하지 않는 경우에는 대신 [지원 옵션 및 커뮤니티 리소스](../information-support.md#support-options-and-community-resources)를 참조하세요. 
-
-미리 보기 버전의 클라이언트에서는 **문제 보고** 링크가 **피드백 보내기** 링크를 대체합니다. 기본적으로 이 옵션을 사용하면 Microsoft에 메일이 전송되지만 [고급 클라이언트 설정](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)을 지정하여 사용자에 대한 HTTP 문자열을 구성할 수 있습니다. 예를 들어, 지원 센터의 메일 주소를 지정합니다.
+**문제 보고** 링크는 일반 공급 버전이 아닌 클라이언트 미리 보기 버전에 표시됩니다. 기본적으로 이 옵션을 사용하면 Microsoft에 메일이 전송되지만 [고급 클라이언트 설정](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)을 지정하여 사용자에 대한 HTTP 문자열을 구성할 수 있습니다. 예를 들어, 지원 센터의 메일 주소를 지정합니다.
 
 **로그 내보내기**는 Microsoft 지원에 로그 파일을 보내라는 요청을 받았을 때 Azure Information Protection 클라이언트의 로그 파일을 자동으로 수집하여 첨부합니다. 최종 사용자가 이 옵션을 사용하여 이러한 로그 파일을 지원 센터로 보낼 수도 있습니다.
 

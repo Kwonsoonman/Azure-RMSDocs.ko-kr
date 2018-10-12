@@ -4,16 +4,16 @@ description: 사용자에게 표시되는 Azure Information Protection 레이블
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: 9589985fa0ab5f80ce78483dedac8c7bc4b9879e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0b4631cd5664ba7951db04ce9ba221a19c0674ff
+ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151710"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48794313"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Azure Information Protection에 대한 레이블을 삭제하거나 순서를 변경하는 방법
 
@@ -25,7 +25,7 @@ ms.locfileid: "44151710"
 
 문서 및 메일에 적용된 레이블을 삭제하면 다음에 Azure Information Protection 클라이언트에서 해당 문서 및 메일을 열 때 레이블 상태가 **설정되지 않음**으로 표시됩니다. 그러나 레이블 정보는 메타데이터에 남아 있고 검색하는 서비스에서 이 레이블 정보를 계속 읽을 수 있습니다.
 
-또한 삭제된 레이블이 보호를 적용한 경우 해당 보호는 제거되지 않습니다. 레이블의 보호 설정은 유지되고 **보호 템플릿** 섹션에 표시됩니다. 이 템플릿을 새 레이블로 변환하거나 레이블에 연결할 수 있습니다. 이 템플릿이 유지되는 동안 삭제한 레이블과 이름이 같은 새 레이블을 만들 수 없습니다. 그렇게 하려면 다음과 같은 옵션이 있습니다.
+또한 삭제된 레이블이 보호를 적용한 경우 해당 보호는 제거되지 않습니다. 레이블의 보호 설정은 유지되고 **보호 템플릿** 섹션에 표시됩니다. 이 템플릿을 새 레이블로 변환할 수 있습니다. 이 템플릿이 유지되는 동안 삭제한 레이블과 이름이 같은 새 레이블을 만들 수 없습니다. 그렇게 하려면 다음과 같은 옵션이 있습니다.
 
 - 템플릿을 레이블로 변환합니다. 
     

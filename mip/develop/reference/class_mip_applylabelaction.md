@@ -1,3 +1,18 @@
+---
+title: 클래스 mip ApplyLabelAction
+description: 클래스 mip ApplyLabelAction에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 06a17ef1e60503cfb7d690bea9bb72316544f16d
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445770"
+---
 # <a name="class-mipapplylabelaction"></a>class mip::ApplyLabelAction 
 레이블 적용 동작에 따라 호출 응용 프로그램은 특정 레이블을 적용해야 합니다.
   

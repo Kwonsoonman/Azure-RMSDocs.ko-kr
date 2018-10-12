@@ -1,3 +1,18 @@
+---
+title: 클래스 mip Label
+description: 클래스 mip Label에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 2a80748430df83a16a4d5ee716344d17ce7deee4
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446280"
+---
 # <a name="class-miplabel"></a>클래스 mip::Label 
 단일 Microsoft Information Protection 레이블에 대한 추상화입니다.
   

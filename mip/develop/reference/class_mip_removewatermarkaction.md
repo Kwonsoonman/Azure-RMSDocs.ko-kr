@@ -1,3 +1,18 @@
+---
+title: 클래스 mip RemoveWatermarkAction
+description: 클래스 mip RemoveWatermarkAction에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 8f0b0a06088ed8a48e358c4ff9f005abf50db38f
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445328"
+---
 # <a name="class-mipremovewatermarkaction"></a>클래스 mip::RemoveWatermarkAction 
 문서에서 워터마크를 제거하도록 지정하는 동작 클래스입니다.
   

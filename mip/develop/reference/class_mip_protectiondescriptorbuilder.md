@@ -1,5 +1,20 @@
+---
+title: 클래스 mip ProtectionDescriptorBuilder
+description: 클래스 mip ProtectionDescriptorBuilder에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 42e44cfaf269a43d0210c0c040ea70ccc1fb192e
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446637"
+---
 # <a name="class-mipprotectiondescriptorbuilder"></a>class mip::ProtectionDescriptorBuilder 
-보호된 콘텐츠와 연결된 임시 정책을 나타냅니다.
+콘텐츠 부분과 관련된 보호를 설명하는 [ProtectionDescriptor](class_mip_protectiondescriptor.md)를 생성합니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                
@@ -50,7 +65,7 @@ public void SetSignedAppData(const std::map<std::string, std::string>& value)  |
 보호 정책에서 오프라인 콘텐츠 액세스를 허용하는지 여부를 설정합니다.
 
 매개 변수:  
-* **value**: 정책에서 오프라인 콘텐츠 액세스를 허용하는지 여부
+* **value**: 보호 정책이 오프라인 콘텐츠 액세스를 허용하는지 여부
 
 
   

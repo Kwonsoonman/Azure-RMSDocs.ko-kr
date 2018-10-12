@@ -1,5 +1,20 @@
+---
+title: 클래스 UserRights
+description: 클래스 mip UserRights에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: c1ef7aaba00bf595d80f07f318aa5808f3a56409
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445124"
+---
 # <a name="class-mipuserrights"></a>클래스 mip::UserRights 
-사용자 그룹 및 이들과 연결된 권한을 나타냅니다.
+사용자 그룹 및 이들과 연결된 권한입니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                

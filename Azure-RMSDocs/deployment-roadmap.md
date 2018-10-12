@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43f99a35104ecdc3bfb422ed9f6747043e895ac7
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 20fcfa3790dc9ad1612a508f4fe28f72997fc475
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149840"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211278"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure Information Protection 배포 로드맵
 
@@ -83,7 +83,7 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 
 3. AD RMS를 사용 중인 경우: 마이그레이션을 수행하여 키, 템플릿 및 URL을 클라우드로 이동합니다. 자세한 내용은 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
-4. 문서 및 이메일 보호를 시작할 수 있도록 보호 서비스가 활성화되어 있는지 확인합니다. 단계별 배포가 필요한 경우 특정 사용자로 사용을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](./activate-service.md)를 참조하세요.
+4. 문서 및 메일 보호를 시작할 수 있도록 보호 서비스가 활성화되어 있는지 확인합니다. 단계별 배포가 필요한 경우 특정 사용자로 사용을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](./activate-service.md)를 참조하세요.
 
 원하는 경우 다음 항목을 구성할 수 있습니다.
 
@@ -118,9 +118,11 @@ Azure Information Protection 사용을 시작하기 전에 다음 준비를 수�
 ### <a name="step-6-use-and-monitor-your-data-protection-solutions"></a>6단계: 데이터 보호 솔루션 사용 및 모니터링
 이제 데이터를 보호할 준비가 되었으므로 회사에서 구성된 레이블 및 데이터 보호를 사용하는 방식을 로깅하세요. 이 배포 단계를 지원하기 위한 추가 정보를 보려면 다음을 참조하세요.
 
+- [Azure Information Protection의 보고](reports-aip.md)
+
 - [사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원](./help-users.md)
 
--  [Azure Rights Management 서비스의 사용 현황 로깅 및 분석](./log-analyze-usage.md)
+- [Azure Rights Management 서비스의 사용 현황 로깅 및 분석](./log-analyze-usage.md)
 
 - [클라이언트 파일 및 사용 현황 로깅](./rms-client/client-admin-guide-files-and-logging.md)
 
@@ -133,7 +135,7 @@ Windows 기반 파일 서버에서 파일 분류 인프라를 사용하여 파�
 ## <a name="deployment-roadmap-for-data-protection-only"></a>배포 로드맵(데이터 보호만 해당)
 
 ### <a name="step-1-confirm-that-you-have-a-subscription-that-includes-the-protection-service-from-azure-information-protection"></a>1단계: Azure Information Protection의 보호 서비스를 포함하는 구독이 있는지 확인
-[Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 검토하여 예상하는 기능이 포함된 구독이 조직에 있는지 확인합니다. 그런 다음, 문서와 이메일을 보호할 조직의 각 사용자에게 이 구독의 라이선스를 할당합니다.
+[Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 검토하여 예상하는 기능이 포함된 구독이 조직에 있는지 확인합니다. 그런 다음, 문서와 메일을 보호할 조직의 각 사용자에게 이 구독의 라이선스를 할당합니다.
 
 참고: 개인용 무료 RMS 구독에서 사용자 라이선스를 수동으로 할당하지 말고 이 라이선스를 사용하여 조직의 Azure Rights Management 서비스를 관리하지 마세요. 이러한 라이선스는 Office 365 관리 센터에 **Rights Management Adhoc**으로 표시되고, Azure AD PowerShell cmdlet [Get-MsolAccountSku](https://msdn.microsoft.com/library/azure/dn194118.aspx)를 실행할 경우 **RIGHTSMANAGEMENT_ADHOC**으로 표시됩니다. 개인용 RMS 구독이 사용자에게 자동으로 부여되고 할당되는 방법에 대한 자세한 내용은 [개인용 RMS 및 Azure Information Protection](./rms-for-individuals.md)을 참조하세요.
 
@@ -149,7 +151,7 @@ Azure Information Protection에서 보호 서비스 사용을 시작하기 전�
 
 4. AD RMS를 사용 중인 경우: 마이그레이션을 수행하여 키, 템플릿 및 URL을 클라우드로 이동합니다. 자세한 내용은 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
-5. 문서 및 이메일 보호를 시작할 수 있도록 보호 서비스가 활성화되어 있는지 확인합니다. 단계별 배포가 필요한 경우 특정 사용자로 사용을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](./activate-service.md)를 참조하세요.
+5. 문서 및 메일 보호를 시작할 수 있도록 보호 서비스가 활성화되어 있는지 확인합니다. 단계별 배포가 필요한 경우 특정 사용자로 사용을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](./activate-service.md)를 참조하세요.
 
 원하는 경우 다음 항목을 구성할 수 있습니다.
 

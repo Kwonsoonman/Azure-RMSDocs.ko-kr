@@ -1,3 +1,18 @@
+---
+title: 클래스 mip RemoveContentFooterAction
+description: 클래스 mip RemoveContentFooterAction에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: d275e2256c8a65bf63fd16d5761f42563d7a7f07
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445634"
+---
 # <a name="class-mipremovecontentfooteraction"></a>클래스 mip::RemoveContentFooterAction 
 문서에서 콘텐츠 바닥글을 제거하도록 지정하는 동작 클래스입니다.
   

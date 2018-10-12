@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/04/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b4d0f104c0c0562f98c5418b9763adf62bdee97f
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 40415c25befd3eea8d33a2b8572b0d48f7ee918c
+ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149778"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403100"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -90,11 +90,9 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 ## <a name="modify-the-email-address-for-the-report-an-issue-link"></a>문제 보고 링크의 메일 주소 수정
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 일반 공급 버전의 클라이언트에는 **문제 보고** 링크가 표시되지 않으므로 이 설정은 미리 보기 버전의 Azure Information Protection 클라이언트에만 적용됩니다.
 
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
-
-사용자가 **도울말 및 피드백** 클라이언트 대화 상자에서 **문제 보고** 링크를 선택하면 기본적으로 메일 메시지에 Microsoft 주소가 채워집니다. 다음 고급 클라이언트 설정을 사용하여 해당 주소를 수정합니다. 예를 들어 지원 센터의 메일 주소에 대해 `mailto:helpdesk@contoso.com`을 지정합니다. 
+사용자가 이전 버전의 클라이언트에서 **도움말 및 피드백** 클라이언트 대화 상자의 **문제 보고** 링크를 선택하면 기본적으로 메일 메시지에 Microsoft 주소가 채워집니다. 다음 고급 클라이언트 설정을 사용하여 해당 주소를 수정합니다. 예를 들어 지원 센터의 메일 주소에 대해 `mailto:helpdesk@contoso.com`을 지정합니다. 
 
 이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
 
@@ -219,9 +217,7 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>백그라운드에서 계속해서 실행되도록 분류 켜기
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
-
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이 설정은 미리 보기로 제공되고 변경될 수 있습니다.
 
 이 설정을 구성하면 다음과 같이 Azure Information Protection 클라이언트가 문서에 자동 및 권장 레이블을 적용하는 방식의 [기본 동작](../configure-policy-classification.md#how-automatic-or-recommended-labels-are-applied)이 변경됩니다. 
 
@@ -239,25 +235,61 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 
 - 값: **True**
 
-## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일을 보호하지 않음
-
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
+## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
-GA(일반 공급) 버전의 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 결과 파일의 파일 이름 확장명은 .ppdf입니다. 그러나 현재 미리 보기 버전의 Azure Information Protection 클라이언트가 PDF 파일을 보호할 때 결과 파일 이름 확장명은 .pdf로 유지되고 PDF 암호화에 대한 ISO 표준을 준수합니다. 이 표준에 대한 자세한 내용은 [ISO 32000-1에서 파생되고](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) Adobe Systems incorporated에서 게시한 문서의 **7.6 암호화** 섹션을 참조하세요.
+기본적으로 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 결과 파일은 .ppdf 파일 이름 확장명입니다. 파일 이름 확장명이 .pdf로 유지되고 PDF 암호화에 대해 ISO 표준을 준수하도록 이 동작을 변경할 수 있습니다. 이 표준에 대한 자세한 내용은 [ISO 32000-1에서 파생되고](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) Adobe Systems incorporated에서 게시한 문서의 **7.6 암호화** 섹션을 참조하세요.
 
-현재 미리 보기 버전의 클라이언트를 GA 동작으로 되돌려야 하는 경우 다음 문자열을 입력하여 다음 고급 설정을 사용합니다.
+이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
 
 - 키: **EnablePDFv2Protection**
 
-- 값: **False**
+- 값: **True**
+
+이 구성 옵션의 결과로 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 이 작업은 최신 버전의 Windows용 Azure Information Protection 클라이언트를 사용하여 열릴 수 있는 PDF 문서 및 PDF 암호화에 대해 ISO 표준을 지원하는 다른 PDF 판독기를 만듭니다. iOS 및 Android용 Azure Information Protection 앱은 현재 PDF 암호화에 대해 ISO 표준을 지원하지 않습니다. Adobe Acrobat Reader에 대한 최신 정보를 보려면 [Starting October, use Adobe Acrobat Reader for PDFs protected by Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)(10월부터 Microsoft Information Protection으로 보호되는 PDF에 Adobe Acrobat Reader 사용)을 참조하세요.
 
 Azure Information Protection 스캐너에서 새 설정을 사용하려면 스캐너 서비스를 다시 시작해야 합니다.
 
+이 PDF 암호화에 대한 자세한 내용은 블로그 게시물 [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/2627570)(Microsoft Information Protection을 사용하여 PDF 암호화 새로 지원)을 참조하세요.
+
+### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>기존의 .ppdf 파일을 보호된 .pdf 파일로 변환하려면
+
+Azure Information Protection 클라이언트가 새 설정을 사용하여 클라이언트 정책을 다운로드한 경우 PowerShell 명령을 사용하여 기존 .ppdf 파일을 PDF 암호화에 ISO 표준을 사용하는 보호된 .pdf 파일로 변환할 수 있습니다. 
+
+직접 보호하지 않는 파일에 다음 지침을 사용하려면 파일에서 보호를 제거하기 위한 [Rights Management 사용 권한](../configure-usage-rights.md)이 있거나 슈퍼 사용자여야 합니다. 슈퍼 사용자 기능을 사용하도록 설정하고 사용자 계정을 슈퍼 사용자로 구성하려면 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](../configure-super-users.md)을 참조하세요.
+
+또한 직접 보호하지 않는 파일에 이러한 지침을 사용할 경우 [RMS 발급자](../configure-usage-rights.md#rights-management-issuer-and-rights-management-owner)가 됩니다. 이 시나리오에서 원래 문서를 보호한 사용자는 더 이상 문서를 추적하고 해지할 수 없습니다. 사용자가 보호된 PDF 문서를 추적 및 해지해야 할 경우 수동으로 제거한 후 파일 탐색기에서 마우스 오른쪽 단추를 클릭하여 레이블을 다시 적용하도록 요청합니다.
+
+PowerShell 명령을 사용하여 기존의 .ppdf 파일을 PDF 암호화의 ISO 표준을 사용하는 보호된 .pdf 파일로 변환하려면
+
+1. .ppdf 파일에 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)를 사용합니다. 예를 들면 다음과 같습니다.
+    
+        Get-AIPFileStatus -Path \\Finance\Projectx\sales.ppdf
+
+2. 출력에서 다음 매개 변수 값을 기록해 둡니다.
+    
+    - **SubLabelId**의 값(GUID)(있는 경우). 이 값을 비워 두면 하위 레이블을 사용되지 않으므로 대신 **MainLabelId** 값을 기록해 둡니다.
+    
+    참고: **MainLabelId** 값도 없으면 파일에 레이블이 지정되지 않습니다. 이 경우 3 및 4단계의 명령 대신, [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) 명령 및 [Protect-RMSFile](/powershell/module/azureinformationprotection/protect-rmsfile) 명령을 사용할 수 있습니다.
+    
+    - **RMSTemplateId** 값. 이 값이 **제한된 액세스**이면 사용자는 레이블에 대해 구성된 보호 설정이 아니라 사용자 지정 권한을 사용하여 파일을 보호한 것입니다. 계속하면 이러한 사용자 지정 권한은 레이블의 보호 설정으로 덮어쓰여집니다. 계속할지 또는 사용자에게 원래 사용자 지정 권한과 함께 레이블을 제거했다가 다시 적용할 것을 사용자(**RMSIssuer**에 표시되는 값)에게 요청할지를 결정합니다.
+
+3. *RemoveLabel* 매개 변수와 함께 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)을 사용하여 레이블을 제거합니다. [정책 설정](../configure-policy-settings.md)으로 **Users must provide justification to set a lower classification label, remove a label, or remove protection(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)** 을 사용하는 경우 *Justification* 매개 변수와 근거를 지정해야 합니다. 예를 들면 다음과 같습니다. 
+    
+        Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
+    
+    필수 레이블 지정을 [정책 설정](../configure-policy-settings.md)(**All documents and emails must have a label(모든 문서와 메일에 레이블이 있어야 함)**)으로 사용하기 때문에 레이블을 제거할 수 없는 경우, 대신 다른 레이블을 일시적으로 적용합니다.
+
+4. 1단계에서 식별한 레이블의 값을 지정하여 원래 레이블을 다시 적용합니다. 예를 들면 다음과 같습니다.
+    
+        Set-AIPFileLabel \\Finance\Projectx\sales.pdf -LabelId d9f23ae3-1234-1234-1234-f515f824c57b
+
+파일은 .pdf 파일 이름 확장명을 유지하지만 이전과 같이 분류되며, PDF 암호화의 ISO 표준을 사용하여 보호됩니다.
+
 ## <a name="support-for-files-protected-by-secure-islands"></a>Secure Islands에서 보호한 파일에 대한 지원
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 여기에는 미리 보기 버전의 Azure Information Protection 클라이언트, Azure Information Protection 스캐너 또는 Azure Information Protection 뷰어도 필요합니다.
+이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
 
 Secure Islands를 사용하여 문서를 보호한 경우 보호된 텍스트 및 그림 파일 및 이 보호의 결과로 일반적으로 보호된 파일이 있을 수 있습니다. 예를 들어 .ptxt, .pjpeg 또는 .pfile 파일이라는 이름 확장명의 파일입니다. 다음과 같이 레지스트리를 편집하면 Azure Information Protection은 다음과 같은 파일을 해독할 수 있습니다.
 
@@ -282,9 +314,9 @@ Secure Islands를 사용하여 문서를 보호한 경우 보호된 텍스트 �
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다.
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이 설정은 미리 보기로 제공되고 변경될 수 있습니다.
 
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
+이 구성은 현재 [Protect PDF files by using the ISO standard for PDF encryption(PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호)](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption) 설정과 호환되지 않습니다. 두 설정을 함께 사용하면 .ppdf 파일을 파일 탐색기, PowerShell 또는 검사 기능에서 열 수 없습니다.
 
 Secure Islands에서 레이블을 지정한 Office 문서 및 PDF 문서의 경우 직접 정의하는 매핑을 사용하여 이러한 문서의 레이블을 Azure Information Protection 레이블로 재지정할 수 있습니다. 또한 다른 솔루션의 레이블이 Office 문서에 있는 경우 이 방법으로 해당 레이블을 재사용할 수도 있습니다. 
 
@@ -366,11 +398,9 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 ## <a name="remove-headers-and-footers-from-other-labeling-solutions"></a>다른 레이블 지정 솔루션에서 헤더 및 바닥글 제거
 
-이 구성 옵션은 현재 미리 보기로 제공되며 변경될 예정입니다. 또한 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
+이 구성에서는 Azure Portal에서 구성해야 하는 여러 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이러한 설정은 미리 보기로 제공되고 변경될 수 있습니다.
 
-이 구성에서는 Azure Portal에서 구성해야 하는 여러 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다.
-
-이러한 설정을 통해 다른 레이블 지정 솔루션에서 해당 시각적 표시가 적용된 경우 문서에서 헤더 또는 바닥글을 제거하거나 바꿀 수 있습니다. 예를 들어, 이전 바닥글에는 이제 새 레이블 이름 및 고유한 바닥글이 있는 Azure Information Protection으로 마이그레이션한 이전 레이블의 이름이 포함됩니다.
+이 설정을 통해 다른 레이블 지정 솔루션에서 해당 시각적 표시가 적용된 경우 문서에서 헤더 또는 바닥글을 제거하거나 바꿀 수 있습니다. 예를 들어, 이전 바닥글에는 이제 새 레이블 이름 및 고유한 바닥글이 있는 Azure Information Protection으로 마이그레이션한 이전 레이블의 이름이 포함됩니다.
 
 클라이언트가 해당 정책에서 이 구성을 가져오면 Office 앱에서 문서를 열고 Azure Information Protection 레이블을 문서에 적용할 때 이전 헤더 및 바닥글을 제거하거나 대체합니다.
 

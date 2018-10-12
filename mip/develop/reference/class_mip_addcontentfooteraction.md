@@ -1,3 +1,18 @@
+---
+title: 클래스 mip AddContentFooterAction
+description: 클래스 mip AddContentFooterAction에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 73f641d965c3cf0236919557128af2ed07705672
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445838"
+---
 # <a name="class-mipaddcontentfooteraction"></a>클래스 mip::AddContentFooterAction 
 문서에 콘텐츠 바닥글을 추가하도록 지정하는 동작 클래스입니다.
   
@@ -43,7 +58,7 @@
 콘텐츠 바닥글을 표시하는 데 사용되는 글꼴 색을 가져옵니다.
 
   
-**반환**: 문자열 글꼴 색(예: “#000000”)
+**반환**: 문자열 글꼴 색(예: "#000000")
   
 ### <a name="getalignment"></a>GetAlignment
 바닥글의 맞춤을 가져옵니다.

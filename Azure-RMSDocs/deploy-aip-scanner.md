@@ -4,18 +4,18 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: c1ad35bde57822460f0f3e7346d05d95647eedd6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5a61018b9e93a7a622c288f56110e9d99b30404f
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151863"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211312"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -29,7 +29,7 @@ ms.locfileid: "44151863"
 
 - SMB(서버 메시지 블록) 프로토콜을 사용하는 네트워크 공유의 UNC 경로
 
-- SharePoint Server 2016 및 SharePoint Server 2013의 사이트 및 라이브러리 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객 및 스캐너의 미리 보기 버전을 사용하는 고객에 대해 SharePoint 2010도 지원됩니다.
+- SharePoint Server 2016 및 SharePoint Server 2013의 사이트 및 라이브러리 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객의 경우 SharePoint 2010도 지원됩니다.
 
 클라우드 리포지토리에서 파일을 검색하고 레이블을 지정하려면 [Cloud App Security](https://docs.microsoft.com/cloud-app-security/)를 사용합니다.
 
@@ -168,7 +168,7 @@ Azure AD 토큰을 사용하면 스캐너 서비스 계정으로 Azure Informati
 
 [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/Add-AIPScannerRepository) cmdlet을 사용하여 Azure Information Protection 스캐너에서 검색할 데이터 저장소를 지정합니다. SharePoint 사이트 및 라이브러리에 대한 로컬 폴더, UNC 경로 및 SharePoint 서버 URL을 지정할 수 있습니다. 
 
-SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 2013 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객 및 스캐너의 미리 보기 버전을 사용하는 고객에 대해 SharePoint Server 2010도 지원됩니다.
+SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 2013 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객의 경우 SharePoint Server 2010도 지원됩니다.
 
 1. 동일한 Windows Server 컴퓨터의 PowerShell 세션에서 다음 명령을 실행하여 첫 번째 데이터 저장소를 추가합니다.
     
@@ -188,43 +188,34 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 ## <a name="run-a-discovery-cycle-and-view-reports-for-the-scanner"></a>스캐너에 대한 검색 주기 실행 및 보고서 보기
 
-1. **관리 도구** > **서비스**를 사용하여 **Azure Information Protection 스캐너** 서비스를 시작합니다.
+1. PowerShell 세션에서 다음 명령을 실행하여 **Azure Information Protection 검사기** 서비스를 다시 시작합니다.
     
-    스캐너의 현재 미리 보기 버전이 설치된 경우 PowerShell 세션에서 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)을 실행할 수도 있습니다.
+        Start-AIPScan
 
 2. 스캐너가 해당 주기를 완료할 때까지 기다립니다. 스캐너가 지정한 데이터 저장소에서 모든 파일을 크롤링하면 서비스가 중지됩니다. 로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그, **Azure Information Protection**을 사용하여 서비스가 중지된 시기를 확인할 수 있습니다. 정보 이벤트 ID **911**을 찾아봅니다.
 
 3. %*localappdata*%\Microsoft\MSIP\Scanner\Reports에 저장되고 .csv 파일 형식인 보고서를 검토합니다. 스캐너의 기본 구성에서 자동 분류에 대한 조건을 충족하는 파일만이 이러한 보고서에 포함됩니다.
     
+    > [!TIP]
+    > 현재 미리 보기에서 이러한 보고서의 정보는 Azure Information Protection으로 전송되므로 Azure Portal에서 볼 수 있습니다. 자세한 내용은 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요. 
+        
     예상 대로 결과가 발생하지 않는 경우 Azure Information Protection 정책에서 지정한 조건을 세밀하게 조정해야 합니다. 이러한 경우 분류 및 필요에 따라 보호를 적용하도록 구성을 변경할 준비가 될 때까지 1~3단계를 반복합니다. 
-    
-    스캐너의 현재 GA 버전의 경우: 이러한 단계를 반복할 때마다 Windows Server 컴퓨터에서 다음 PowerShell 명령을 먼저 실행합니다.
-  
-        Set-AIPScannerConfiguration -Schedule OneTime
-    
-    스캐너의 현재 미리 보기 버전이 설치된 경우 Set-AIPScannerConfiguration 명령을 실행하지 마십시오.
-  
+
 스캐너가 검색하는 파일에 레이블을 자동으로 지정할 준비가 되면 다음 절차를 계속합니다. 
 
 ## <a name="configure-the-scanner-to-apply-classification-and-protection"></a>스캐너를 구성하여 분류 및 보호 적용
 
 기본 설정에서 스캐너는 보고 전용 모드로 한 번 실행됩니다. 이러한 설정을 변경하려면 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet을 실행합니다.
 
-1. Windows Server 컴퓨터의 PowerShell 세션에서 다음 명령 중 하나를 실행합니다.
+1. Windows Server 컴퓨터의 PowerShell 세션에서 다음 명령을 실행합니다.
     
-    스캐너의 현재 GA 버전의 경우:
-       
-        Set-AIPScannerConfiguration -Enforce On -Schedule Continuous
-    
-    스캐너의 미리 보기 버전:
-       
         Set-AIPScannerConfiguration -Enforce On -Schedule Always
     
     다른 구성 설정을 변경하려는 경우가 있습니다. 예를 들어 파일 특성의 변경 여부 및 보고서에 기록된 내용을 변경하려고 합니다. 또한 Azure Information Protection 정책에 분류 수준을 낮추거나 보호를 제거하라는 근거 메시지가 필요한 설정을 포함하는 경우 이 cmdlet을 사용하여 해당 메시지를 지정합니다. 각 구성 설정에 대한 자세한 내용은 [온라인 도움말](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters)을 사용합니다. 
 
-2. **관리 도구** > **서비스**를 사용하여 **Azure Information Protection 스캐너** 서비스를 다시 시작합니다.
+2. 다음 명령을 실행하여 **Azure Information Protection 검사기** 서비스를 다시 시작합니다.
     
-    스캐너의 현재 미리 보기 버전이 설치된 경우 PowerShell 세션에서 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)을 실행할 수도 있습니다.
+        Start-AIPScan
 
 3. 이전처럼 이벤트 로그 및 보고서를 모니터링하여 레이블이 지정된 파일, 적용된 분류 및 보호 적용 여부를 확인합니다.
 
@@ -273,25 +264,16 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 스캐너에서 보호를 사용하는 레이블을 적용하는 경우 기본적으로 Office 파일 형식만 보호됩니다. 추가 파일 형식이 보호되도록 이 동작을 변경할 수 있습니다. 그러나 레이블이 문서에 일반 보호를 적용하는 경우 파일 이름 확장명을 .pfile로 변경합니다. 또한 권한 있는 사용자가 열고 해당 네이티브 형식으로 저장될 때까지 파일은 읽기 전용입니다. 텍스트 및 이미지 파일은 해당 파일 이름 확장명을 변경하고 읽기 전용으로 설정할 수도 있습니다. 
 
-기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 또한 스캐너에만 한정되는 사항은 다음과 같습니다.
+기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 또는 `*` 와일드카드를 지정하여 모든 파일 형식을 보호할 수 있습니다. 자세한 내용은 개발자 지침의 [파일 API 구성](develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 또한 스캐너에만 한정되는 사항은 다음과 같습니다.
 
 - 스캐너에는 고유한 기본 동작이 있습니다. 즉, 기본적으로 Office 파일 형식만 보호됩니다. 레지스트리가 수정되지 않은 경우, 다른 파일 형식은 스캐너에서 보호되지 않습니다.
 
-- 현재 미리 보기 버전의 스캐너를 사용하지 않는 경우, 특정 파일 이름 확장명을 지정해야 하고 `*` 와일드 카드를 사용할 수 없습니다. 미리 보기 버전의 스캐너는 이 와일드카드를 지원합니다.
 
 ## <a name="when-files-are-rescanned"></a>파일이 다시 검사되는 경우
 
 첫 번째 검사 주기에서는 스캐너에서 구성된 데이터 저장소의 모든 파일을 검사한 다음, 후속 검사에서는 새롭거나 수정된 파일만 검사합니다. 
 
-스캐너는 다음 명령을 실행하여 모든 파일을 다시 검사할 수 있습니다.
-
-- 스캐너의 현재 GA 버전의 경우:
-    
-    **전체**로 설정된 `-Type` 매개 변수를 사용하여 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)을 실행합니다.
-
-- 스캐너의 미리 보기 버전:
-    
-    `-Reset` 매개 변수에서 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)을 사용합니다. 수동 일정에 대해 스캐너를 구성해야 합니다. 그러려면 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)을 사용하여 `-Schedule` 매개 변수를 **수동**으로 설정해야 합니다.
+`-Reset` 매개 변수와 함께 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)을 실행하여 강제로 검사 기능이 모든 파일을 다시 검사하도록 할 수 있습니다. 수동 일정에 대해 스캐너를 구성해야 합니다. 그러려면 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)을 사용하여 `-Schedule` 매개 변수를 **수동**으로 설정해야 합니다.
 
 모든 파일을 다시 검사하는 작업은 보고서에 모든 파일이 포함되도록 하려는 경우에 유용하며, 이 구성은 일반적으로 스캐너가 검색 모드로 실행될 때 사용됩니다. 전체 검사가 완료되면 검사 유형이 증분 방식으로 자동으로 변경되어 후속 검사에서 새롭거나 수정된 파일만 검사됩니다.
 
@@ -384,6 +366,8 @@ Azure Information Protection 스캐너에서 지원하는 다음 두 가지 대�
 
 - [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/Get-AIPScannerRepository)
 
+- [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
+
 - [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)
 
 - [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/Remove-AIPScannerRepository)
@@ -398,14 +382,9 @@ Azure Information Protection 스캐너에서 지원하는 다음 두 가지 대�
 
 - [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/Set-AIPScannerRepository)
 
+- [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)
+
 - [Uninstall-AIPScanner](/powershell/module/azureinformationprotection/Uninstall-AIPScanner)
-
-
-미리 보기 버전의 추가 cmdlet:
-
-- [Get-AIPScannerStatus](/powershell/module/azureinformationprotection/Get-AIPScannerStatus)
-
-- [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan) 
 
 - [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)
 

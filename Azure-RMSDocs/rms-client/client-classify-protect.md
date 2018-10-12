@@ -4,18 +4,18 @@ description: 문서와 전자 메일을 분류하고 보호하는 방법에 대�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 09/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75268245-6f14-4218-b904-202f63fb3ce6
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 01637807680e4172af8938a3c63b092191ef41cd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 355d71f844d64fb26898c482d2414ca388ac38be
+ms.sourcegitcommit: ea8207da513f61bc0691c952da1f8b61ceb10887
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148685"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45696520"
 ---
 # <a name="user-guide-classify-and-protect-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류 및 보호
 
@@ -76,6 +76,8 @@ Azure Information Protection 표시줄 또는 리본의 **보호** 단추를 사
 - 관리자가 최근에 새 레이블을 구성했으면 모든 Office 앱을 닫았다가 다시 열어보세요. 이 작업은 레이블의 변경 내용이 있는지 확인합니다.
 
 - 누락된 레이블이 보호를 적용하는 경우 Rights Management 보호 적용을 지원하지 않는 Office 버전이 있을 수 있습니다. 확인하려면 **보호** > **도움말 및 피드백**을 클릭합니다. 대화 상자에서 **클라이언트 상태** 섹션에 **이 클라이언트에 Office Professional Plus에 대한 사용 허가가 없습니다**라는 메시지가 표시되는지 확인합니다. 
+    
+    최소 버전 1805, 빌드 9330.2078의 Office 2016 앱이 있으며 계정에 Azure Rights Management(Office 365용 Azure Information Protection라고도 함)의 라이선스가 지정된 경우 Office Professional Plus가 필요하지 않습니다.
 
 - 이 레이블은 계정에 포함되지 않는 정책 범위에 해당될 수 있습니다. 기술 지원 팀 또는 관리자에게 문의하세요.
 

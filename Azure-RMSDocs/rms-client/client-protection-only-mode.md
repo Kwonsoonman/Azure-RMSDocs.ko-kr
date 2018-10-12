@@ -4,18 +4,18 @@ description: 보호 전용 모드에서 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 10/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 5a2b01af0e246e732d087a344ecf037c13a47546
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c9f8408c4417b1b5131a51276a829a16687f1870
+ms.sourcegitcommit: ccc99efd2402a8b93912c8df4df330fa1311aacb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151582"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812421"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트에 대한 보호 전용 모드
 
@@ -38,7 +38,7 @@ Azure Information Protection 클라이언트에 문서 및 메일을 분류하�
 
 - 조직은 Azure Information Protection에 대한 구독을 보유하지만 어떤 레이블도 구성되어 있지 않습니다.
     
-    - 이는 글로벌 정책의 모든 레이블이 비활성화되고 사용자의 계정이 범위 지정 정책에 추가되지 않은 경우에 발생할 수 있습니다. 이는 IT 부서에서 Azure Information Protection을 롤아웃했지만 문서 및 이메일을 분류하기 위한 레이블을 아직 제공하지 않았기 때문일 수 있습니다. 당분간은 Azure Information Protection 클라이언트를 사용하여 파일을 보호하고 보호된 파일을 볼 수 있습니다.
+    - 이는 글로벌 정책의 모든 레이블이 비활성화되고 사용자의 계정이 범위 지정 정책에 추가되지 않은 경우에 발생할 수 있습니다. 이는 IT 부서에서 Azure Information Protection을 롤아웃했지만 문서 및 메일을 분류하기 위한 레이블을 아직 제공하지 않았기 때문일 수 있습니다. 당분간은 Azure Information Protection 클라이언트를 사용하여 파일을 보호하고 보호된 파일을 볼 수 있습니다.
 
 - 조직에 Azure Information Protection에 대한 구독이 있으나 Azure Information Protection 정책을 다운로드할 수 없습니다. 
     

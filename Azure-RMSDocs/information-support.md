@@ -4,18 +4,18 @@ description: 새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Micr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: aa5fffe039c8e5b8dc960d6197ecd8a03837e5e6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 145889772dd3d2a8e29967264c1f0f7de7a7c222
+ms.sourcegitcommit: d5669b9bcc4aebabf64e8891eda4e20ea3acb2a1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150044"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48046991"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -35,7 +35,7 @@ ms.locfileid: "44150044"
 ## <a name="information-about-new-releases-and-updates"></a>새 릴리스 및 업데이트에 대한 정보
 Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블로그](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)에 주요 새 릴리스에 대한 공지를 게시합니다. 소규모 릴리스는 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 발표되며, 요청된 기능의 상태에 대해서는 [UserVoice 사이트](https://msip.uservoice.com)를 확인해 보면 유용할 수도 있습니다.
 
-또한 문서 변경에 대한 요약은 매월 [Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)에 게시됩니다. 이 문서 업데이트에는 새로운 릴리스, 지원 문의에 대한 업데이트, 정책, 그리고 기존 릴리스의 정정 사항과 설명에 대한 정보가 포함되어 있습니다. 이러한 게시물의 제목은 "**\<month year>의 Azure Information Protection 문서 업데이트**"입니다.
+[Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)에서 추가 정보 및 자세한 내용을 확인할 수 있습니다. 예를 들어, 설명서 변경 요약이 매월 게시되어 새로운 릴리스, 지원 정책 업데이트 및 기존 릴리스의 정정 사항과 분류에 대한 정보가 제공됩니다. 이러한 문서 업데이트 게시물의 제목은 "**\<month year>의 Azure Information Protection 문서 업데이트**"입니다.
 
 ## <a name="support-options-and-community-resources"></a>지원 옵션 및 커뮤니티 리소스
 다음 섹션에서는 지원 및 문제 해결 옵션과 커뮤니티 리소스에 대한 정보를 제공합니다.
@@ -64,7 +64,9 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블�
 
 주문형 비디오:
 
-- [Azure Information Protection](https://myignite.microsoft.com/videos?q=%2522azure%2520information%2520protection%2522)의 Microsoft Ignite 2017 세션.
+- [Azure Information Protection](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection)의 Microsoft Ignite 2018 세션.
+    
+    - [상위 5가지](what-is-information-protection.md#microsoft-ignite) 권장 세션을 참조하세요.
 
 - [Azure Information Protection](https://mva.microsoft.com/search/SearchResults.aspx#!q=Azure%20Information%20protection)을 포함하는 Microsoft Virtual Academy 세션.
 

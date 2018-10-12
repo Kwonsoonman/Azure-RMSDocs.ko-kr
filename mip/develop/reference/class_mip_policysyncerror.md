@@ -1,20 +1,20 @@
 ---
-title: 클래스 mip FileIOError
-description: 클래스 mip FileIOError에 대한 참조
+title: 클래스 mip PolicySyncError
+description: 클래스 mip PolicySyncError에 대한 참조
 author: BryanLa
 ms.service: information-protection
 ms.topic: reference
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 754ecbc296b69b4071bcf50ae01109c2c8e7bd29
+ms.openlocfilehash: 29b107f94303d39a233b798996d1ee9fd28b3b40
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
-ms.locfileid: "47445447"
+ms.locfileid: "47446897"
 ---
-# <a name="class-mipfileioerror"></a>클래스 mip::FileIOError 
-파일 IO 오류입니다.
+# <a name="class-mippolicysyncerror"></a>클래스 mip::PolicySyncError 
+정책 데이터를 동기화하려는 시도가 실패했습니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                

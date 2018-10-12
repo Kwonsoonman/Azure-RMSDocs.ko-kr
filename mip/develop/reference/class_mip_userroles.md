@@ -1,5 +1,20 @@
+---
+title: 클래스 mip UserRoles
+description: 클래스 mip UserRoles에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 1cc1da6f443fa22095f216bb2ec2f0e51e75bf78
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445260"
+---
 # <a name="class-mipuserroles"></a>클래스 mip::UserRoles 
-사용자 그룹 및 이들과 연결된 역할을 나타냅니다.
+사용자 그룹 및 이들과 연결된 역할입니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                

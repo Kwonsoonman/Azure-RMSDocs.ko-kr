@@ -1,3 +1,18 @@
+---
+title: 클래스 mip RemoveContentHeaderAction
+description: 클래스 mip RemoveContentHeaderAction에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: dc79ebf5d5c7cd35a8fc5ed854315179ed9190f0
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446450"
+---
 # <a name="class-mipremovecontentheaderaction"></a>클래스 mip::RemoveContentHeaderAction 
 문서에서 콘텐츠 헤더를 제거하도록 지정하는 동작 클래스입니다.
   

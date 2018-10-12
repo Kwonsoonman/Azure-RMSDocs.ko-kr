@@ -4,18 +4,18 @@ description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 09/24/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2f96a9c395b2a5df11a05acb4ce7dac0da516164
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f9def0ae81a3887f9f6e1c99f7e1f02c54581fdb
+ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151829"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168763"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -55,7 +55,7 @@ Azure Information Protection 클라이언트는 문서 및 전자 메일에 다�
 
 - **Microsoft Office**: 다음 테이블의 파일 형식입니다.
     
-    이러한 파일 형식에 대해 지원되는 파일 형식은 Office 프로그램(Word, Excel, PowerPoint)에 대한 97-2003 파일 형식 및 Office Open XML 형식입니다. 미리 보기 버전의 Azure Information Protection 클라이언트가 설치되지 않았다면 엄격한 Open XML 문서 형식이 지원되지 않습니다.
+    이러한 파일 형식에 대해 지원되는 파일 형식은 Office 프로그램(Word, Excel, PowerPoint)에 대한 97-2003 파일 형식 및 Office Open XML 형식입니다.
     
     |Office 파일 형식|Office 파일 형식|
     |----------------------------------|----------------------------------|
@@ -125,9 +125,9 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
 |.jt|.pjt|
 
 ###### <a name="footnote-1"></a>각주 1
-미리 보기 버전의 Azure Information Protection 클라이언트를 사용하는 경우 [기본적으로](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption) 보호된 PDF 문서의 파일 이름 확장명이 .pdf로 유지됩니다.
+[PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일을 보호](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)하도록 Azure Information Protection 클라이언트를 구성하는 경우 보호된 PDF 문서의 파일 이름 확장명이 .pdf로 유지됩니다.
 
-다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 나머지 파일 형식이 나와 있습니다. 이러한 형식은 Microsoft Office 앱용 파일 형식으로 인식할 수 있습니다. 이러한 파일 형식에 대해 지원되는 파일 형식은 Office 프로그램(Word, Excel, PowerPoint)에 대한 97-2003 파일 형식 및 Office Open XML 형식입니다. 미리 보기 버전의 Azure Information Protection 클라이언트가 설치되지 않았다면 엄격한 Open XML 문서 형식이 지원되지 않습니다.
+다음 표에는 Azure Information Protection의 기본 보호를 지원하고 분류할 수도 있는 나머지 파일 형식이 나와 있습니다. 이러한 형식은 Microsoft Office 앱용 파일 형식으로 인식할 수 있습니다. 이러한 파일 형식에 대해 지원되는 파일 형식은 Office 프로그램(Word, Excel, PowerPoint)에 대한 97-2003 파일 형식 및 Office Open XML 형식입니다.
 
 이러한 파일의 경우에는 Rights Management 서비스를 통해 파일을 보호한 후에도 파일 이름 확장명이 동일하게 유지됩니다.
 
@@ -188,7 +188,9 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 사용자가 컴퓨터 작업에 중요한 파일을 변경하지 못하게 하기 위해 일부 파일 형식 및 폴더가 분류 및 보호에서 자동으로 제외됩니다. 사용자가 Azure Information Protection 클라이언트를 사용하여 이러한 파일을 분류하거나 보호하려고 하면 제외된다는 메시지가 표시됩니다.
 
-- **제외되는 파일 형식**:.lnk,.exe,.com,.cmd,.bat,.dll,.ini,.pst,.sca,.drm,.sys,.cpl,.inf,.drv,.dat,.tmp,.msp,.msi,.pdb,.jar
+- **제외되는 파일 형식**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msg,.msp, .msi, .pdb, .jar
+    
+    현재 파일 형식 .zip, .msg, 및 .rar도 제외됩니다. 
 
 - **제외되는 폴더**: 
     - Windows
@@ -198,7 +200,7 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 ### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너에 의해 분류 및 보호에서 제외되는 파일 형식
 
-기본적으로 스캐너는 미리 보기 버전의 스캐너에 대해 Azure Information Protection 클라이언트와 동일한 파일 형식도 제외합니다. .rar, .rtf, .msg 및 .zip는 예외입니다. 
+기본적으로 이 검사 기능은 .rtf도 제외된다는 점을 제외하고 Azure Information Protection 클라이언트와 동일한 파일 형식을 제외합니다. 
 
 다음 PowerShell cmdlet을 사용하는 경우 스캐너에서 파일 검사에 대해 포함되거나 제외되는 파일 형식을 변경할 수 있습니다.
 
@@ -217,23 +219,19 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 암호로 보호된 파일은 파일이 보호 기능을 적용하는 응용 프로그램에서 현재 열려 있지 않으면 Azure Information Protection 클라이언트에서 기본적으로 보호할 수 없습니다. 암호로 보호된 PDF 파일을 가장 많이 보지만, Office 앱과 같은 다른 응용 프로그램도 이 기능을 제공합니다.
 
-또한 GA(일반 공급) 버전의 Windows용 Azure Information Protection 클라이언트는 다음과 같은 상황에서 다음 파일을 볼 수는 있지만 기본적으로 PDF 파일을 보호(또는 보호 해제)할 수 없습니다.
-
-- 양식 기반인 PDF 파일. 
-
-- 파일 이름 확장명이 .pdf인 보호되는 PDF 파일.
-    
-    Azure Information Protection 클라이언트는 보호 해제된 PDF 파일을 보호하고, 파일 이름 확장명이 .ppdf인 보호된 PDF 파일을 보호 해제하고 다시 보호할 수 있습니다.
-
-이러한 파일에 대한 해결 방법으로, [파일의 기본 보호 수준 변경](#changing-the-default-protection-level-of-files) 섹션의 지침에 따라 해당 파일을 일반적으로 보호할 수 있습니다. 그러나 이 방법은 컴퓨터 수준에서 파일 이름 확장명이 .pdf인 모든 파일에 대한 보호 수준을 변경합니다. 나열된 조건을 충족하는 파일에 대해서만 일반 보호를 정의할 수 없습니다.
-
-이러한 파일을 보호하는 것이 중요한 경우, 일시적으로 다른 컴퓨터로 복사하여 일반적으로 보호한 다음, 다시 복사할 수 있습니다. 또는 미리 보기 버전의Azure Information Protection 클라이언트를 사용합니다.
-
-현재 미리 보기 버전의 Azure Information Protection 클라이언트를 사용하는 경우 [기본적으로](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption) 다음과 같은 상황 모두에서 PDF 파일을 보호하고 보호를 해제할 수 있습니다.
+또한 [PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일을 보호](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)하도록 Azure Information Protection 클라이언트를 구성하지 않는 한, 이 클라이언트는 다음 파일을 볼 수 있지만 다음과 같은 상황에서 기본적으로 PDF 파일을 보호하거나 보호를 해제할 수 없습니다.
 
 - 양식 기반인 PDF 파일.
 
-- 파일 이름 확장명이 .pdf인 보호되는 PDF 파일. 
+- 파일 이름 확장명이 .pdf인 보호되는 PDF 파일.
+
+이러한 파일에 대한 해결 방법으로, [파일의 기본 보호 수준 변경](#changing-the-default-protection-level-of-files) 섹션의 지침에 따라 해당 파일을 일반적으로 보호할 수 있습니다. 그러나 이 방법은 컴퓨터 수준에서 파일 이름 확장명이 .pdf인 모든 파일에 대한 보호 수준을 변경합니다. 나열된 조건을 충족하는 파일에 대해서만 일반 보호를 정의할 수 없습니다.
+
+이러한 파일을 보호하는 것이 중요한 경우, 일시적으로 다른 컴퓨터로 복사하여 일반적으로 보호한 다음, 다시 복사할 수 있습니다. 또는 클라이언트를 [PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일을 보호](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)하도록 구성하여 기본적으로 다음과 같은 상황에서 PDF 파일을 보호하고 보호를 해제할 수 있습니다.
+
+- 양식 기반인 PDF 파일.
+
+- 파일 이름 확장명이 .pdf인 보호되는 PDF 파일.
 
 ### <a name="limitations-for-container-files-such-as-zip-files"></a>.zip 파일과 같은 컨테이너 파일의에 대한 제한 사항
 

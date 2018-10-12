@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f147ad04ec61e7a5796cbb1f02c7fa33afdeae7d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1deea1b4353e2d48c85ae24625ab29eca96a3968
+ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149687"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47211329"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
@@ -48,6 +48,7 @@ ms.locfileid: "44149687"
 |클라이언트 이벤트 로그|로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그(**Azure Information Protection**)에 기록된 Azure Information Protection 클라이언트에 대한 사용 활동입니다. <br /><br />자세한 내용은 [Azure Information Protection 클라이언트에 대한 사용 현황 로깅](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)을 참조하세요.|
 |클라이언트 로그 파일|**%localappdata%\Microsoft\MSIP**에 있는 Azure Information Protection 클라이언트에 대한 문제 해결 로그입니다. <br /><br />이러한 파일은 Microsoft 지원용으로 설계되었습니다.|
 
+또한 Azure Information Protection 클라이언트 사용 현황 로그 및 Azure Information Protection 검사기의 정보가 수집 및 집계된 후 Azure Portal에서 보고서가 생성됩니다. 자세한 내용은 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요.
 
 Azure Rights Management 서비스에 대한 사용 현황 로깅에 대한 자세한 내용은 다음 섹션에서 확인할 수 있습니다. 
 
@@ -58,8 +59,6 @@ Azure Rights Management 서비스에 대한 사용 현황 로깅에 대한 자�
 > 로그 저장소 또는 로깅 기능에 대한 무료로 제공됩니다.
 > 
 > 2016년 2월 이전에 Azure Rights Management에 대한 사용 현황 로깅을 사용한 경우 Azure 구독이 필요하며 Azure에 충분한 저장소가 있어야 했지만 지금은 그렇지 않습니다.
-
-
 
 ## <a name="how-to-access-and-use-your-azure-rights-management-usage-logs"></a>Azure 권한 관리 사용 현황 로그에 액세스 및 사용 방법
 Azure Rights Management 서비스는 로그를 일련의 Blob으로 Azure 저장소 계정에 기록합니다. 각 Blob에는 W3C 확장 로그 형식의 로그 레코드가 하나 이상 포함됩니다. Blob 이름은 숫자이며 작성된 순서를 나타냅니다. 이 문서의 뒷부분에 있는 [Azure 권한 관리 사용 현황 로그를 해석하는 방법](#how-to-interpret-your-azure-rights-management-usage-logs) 섹션에 로그 콘텐츠 및 콘텐츠 생성에 대한 자세한 내용이 나와 있습니다.

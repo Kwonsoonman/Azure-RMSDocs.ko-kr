@@ -4,18 +4,18 @@ description: Azure Information Protection를 사용한 분류 및 레이블 지�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/26/2018
+ms.date: 09/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 6048867049046384a7a226d3caeed10fd09bb264
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: a6df966c75a1d556aeb3341804fa18d912389e24
+ms.sourcegitcommit: 4bc807177cf6c284f673cea667b6086121d69231
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147579"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47233731"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
@@ -29,13 +29,17 @@ Azure Information Protection에서 특별히 분류 및 레이블 지정에 대�
 
 추가 분류 기능 및 특징을 사용할 수 있게 되면 [Enterprise Mobility 및 보안 블로그](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection) 및 [Yammer 사이트](https://www.yammer.com/askipteam/#/threads/inGroup?type=in_group&feedId=8652489&view=all)에서 공지 사항을 확인하세요. 현재 릴리스에는 다음을 포함하는 몇 가지 제한이 있습니다.
 
-- 분류 및 레이블 지정을 위한 중앙 집중식 로깅은 없습니다.
-
-- 모바일 장치(iOS 및 Android) 및 Mac 컴퓨터용 Office 앱 또는 Office Web Apps(Office Online)에는 레이블 지정 기능이 없습니다.
+- Office Web Apps(Office Online)에는 레이블 지정 기능이 없습니다.
 
 - 분류 및 레이블 지정 기능이 Exchange Online 또는 SharePoint Online과는 통합되지 않습니다.
 
-Azure Information Protection의 [사용자 의견 사이트](https://msip.uservoice.com/)를 방문하여 새로운 기능을 요청하고 요청에 투표하세요.
+> [!NOTE]
+> **현재 미리 보기로 제공되는 기능**:
+> - 분류 및 레이블 지정을 위한 중앙 집중식 보고. 자세한 내용은 [Azure Information Protection의 중앙 보고](reports-aip.md)를 참조하세요.
+> - [Office Insider 프로그램](https://support.office.com/article/what-is-office-insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)에 옵트인(opt in)한 고객을 위한 모바일 장치(iOS 및 Android) 및 Mac 컴퓨터용 Office 앱 레이블 지정 기능 자세한 내용은 [Office 내의 문서 및 전자 메일에 민감도 레이블 적용](https://aka.ms/officemipdocs)을 참조하세요.
+
+
+Azure Information Protection의 [UserVoice 사이트](https://msip.uservoice.com/)를 방문하여 새로운 기능을 요청하고 요청에 투표하세요.
 
 ## <a name="do-i-need-to-be-a-global-admin-to-configure-classification-and-labels"></a>분류 및 레이블을 구성하려면 전역 관리자여야 합니까?
 

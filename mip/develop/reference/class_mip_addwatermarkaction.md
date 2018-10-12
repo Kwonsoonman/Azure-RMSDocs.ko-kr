@@ -1,3 +1,18 @@
+---
+title: 클래스 mip AddWatermarkAction
+description: 클래스 mip AddWatermarkAction에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: f49bd7aa16ae12aef240d05fff6acf507ddc341d
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446093"
+---
 # <a name="class-mipaddwatermarkaction"></a>클래스 mip::AddWatermarkAction 
 워터마크를 추가하도록 지정하는 동작 클래스입니다.
   
@@ -48,7 +63,7 @@
 워터마크를 표시하는 데 사용되는 글꼴 색을 가져옵니다.
 
   
-**반환**: 문자열 글꼴 색(예: “#000000”)
+**반환**: 문자열 글꼴 색(예: "#000000")
   
 ### <a name="actiontype"></a>ActionType
 [동작](class_mip_action.md) 유형을 가져옵니다.

@@ -1,3 +1,18 @@
+---
+title: 클래스 mip AddContentHeaderAction
+description: 클래스 mip AddContentHeaderAction에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: bc60fe32005a0c6bc8088ab7687a3f711ae7a99a
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445651"
+---
 # <a name="class-mipaddcontentheaderaction"></a>클래스 mip::AddContentHeaderAction 
 콘텐츠 헤더를 추가하도록 지정하는 동작 클래스입니다.
   
@@ -43,7 +58,7 @@
 콘텐츠 헤더를 표시하는 데 사용되는 글꼴 색을 가져옵니다.
 
   
-**반환**: 문자열 글꼴 색(예: “#000000”)
+**반환**: 문자열 글꼴 색(예: #000000")
   
 ### <a name="getalignment"></a>GetAlignment
 헤더의 맞춤을 가져옵니다.

@@ -1,3 +1,18 @@
+---
+title: ConsentDelegate 클래스
+description: ConsentDelegate 클래스에 대한 참조
+author: BryanLa
+ms.service: information-protection
+ms.topic: reference
+ms.date: 09/27/2018
+ms.author: bryanla
+ms.openlocfilehash: 841049b1e6b369eb2f6a34d9701ed34eca028af6
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47446365"
+---
 # <a name="class-consentdelegate"></a>ConsentDelegate 클래스 
 동의 관련 작업에 대한 대리자입니다.
 이 대리자는 사용자에게 동의 요청 알림을 표시해야 하는 시기를 알기 위해 클라이언트 응용 프로그램에 의해 구현됩니다.

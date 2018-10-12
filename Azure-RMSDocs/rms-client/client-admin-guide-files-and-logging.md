@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 클라�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7e72aa9af0d248f54880f8b5bb6df0ce75018f2b
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: d935d5eafd3d893b67bbdccb1893bf67d418ae79
+ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47211227"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866121"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>관리자 가이드: Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
 
@@ -85,8 +85,6 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
 
 - 지정된 사용자, 그룹 또는 조직에 대한 [인코딩 이름별 사용 권한](../configure-usage-rights.md#usage-rights-and-descriptions)을 포함하는 사용자 지정 사용 권한(해당하는 경우)
     
-보호 서비스의 사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../log-analyze-usage.md)을 참조하세요.
-
 보호 서비스의 사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](../log-analyze-usage.md)을 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계

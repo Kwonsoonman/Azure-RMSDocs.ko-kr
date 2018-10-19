@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 40415c25befd3eea8d33a2b8572b0d48f7ee918c
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: 7657969916f69424a2823cb8b1dd79f9a50b6011
+ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403100"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382649"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -251,7 +251,7 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 
 Azure Information Protection 스캐너에서 새 설정을 사용하려면 스캐너 서비스를 다시 시작해야 합니다.
 
-이 PDF 암호화에 대한 자세한 내용은 블로그 게시물 [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/2627570)(Microsoft Information Protection을 사용하여 PDF 암호화 새로 지원)을 참조하세요.
+이 PDF 암호화에 대한 자세한 내용은 블로그 게시물 [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)(Microsoft Information Protection을 사용하여 PDF 암호화 새로 지원)을 참조하세요.
 
 ### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>기존의 .ppdf 파일을 보호된 .pdf 파일로 변환하려면
 
@@ -278,8 +278,6 @@ PowerShell 명령을 사용하여 기존의 .ppdf 파일을 PDF 암호화의 ISO
 3. *RemoveLabel* 매개 변수와 함께 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)을 사용하여 레이블을 제거합니다. [정책 설정](../configure-policy-settings.md)으로 **Users must provide justification to set a lower classification label, remove a label, or remove protection(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)** 을 사용하는 경우 *Justification* 매개 변수와 근거를 지정해야 합니다. 예를 들면 다음과 같습니다. 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
-    
-    필수 레이블 지정을 [정책 설정](../configure-policy-settings.md)(**All documents and emails must have a label(모든 문서와 메일에 레이블이 있어야 함)**)으로 사용하기 때문에 레이블을 제거할 수 없는 경우, 대신 다른 레이블을 일시적으로 적용합니다.
 
 4. 1단계에서 식별한 레이블의 값을 지정하여 원래 레이블을 다시 적용합니다. 예를 들면 다음과 같습니다.
     

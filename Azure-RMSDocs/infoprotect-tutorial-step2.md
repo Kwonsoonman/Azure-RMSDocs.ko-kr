@@ -8,12 +8,12 @@ ms.date: 07/21/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 3bc193c2-0be0-4c8e-8910-5d2cee5b14f7
-ms.openlocfilehash: d399edf1e8b367ad45118447a5d3a88257953f4d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8ceda2342638b77de40844a9b5dc00d4f3b1494f
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170045"
 ---
 # <a name="step-2-configure-the-azure-information-protection-policy"></a>2단계: Azure Information Protection 정책 구성
 
@@ -21,7 +21,7 @@ ms.locfileid: "44148752"
 
 Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책과 함께 제공되지만, 해당 정책을 살펴보고 몇 가지를 변경합니다.
 
-1. [1단계](infoprotect-tutorial-step1.md)에 이어서 Azure Portal에서 **분류** > **정책** > **전역**을 선택하여 **정책: 전역** 블레이드를 엽니다. 이 블레이드는 테넌트에 대해 생성되는 기본 Azure Information Protection 정책을 표시합니다.
+1. [1단계](infoprotect-tutorial-step1.md)에 이어서 Azure Portal에서 **분류** > **정책** > **글로벌**을 선택하여 **정책: 글로벌** 블레이드를 엽니다. 이 블레이드는 테넌트에 대해 생성되는 기본 Azure Information Protection 정책을 표시합니다.
 
 2. 몇 분간 표시되는 레이블에 친숙해지는 시간을 가집니다.
     
@@ -60,7 +60,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 이제 **기밀**에 대한 새 하위 레이블을 만듭니다.
 
-1. **분류** > **레이블** 메뉴 옵션에서 **기밀** 레이블을 마우스 오른쪽 단추로 클릭하고 **Add a sub-label**(하위 레이블 추가)을 선택합니다.
+1. **분류** > **레이블** 메뉴 옵션에서 **기밀** 레이블을 마우스 오른쪽 단추로 클릭하고, **하위 레이블 추가**를 선택합니다.
     
     **기밀**이라는 레이블이 없는 경우 다른 레이블을 선택하거나 대신 새 레이블을 만들고 약간의 차이는 있지만 계속 자습서를 따를 수 있습니다.
 
@@ -128,7 +128,7 @@ Azure Information Protection은 구성 없이 사용할 수 있는 기본 정책
 
 13. 이 **하위 레이블** 블레이드에서 **저장**을 클릭합니다. 확인하라는 메시지가 표시되면 **확인**을 클릭합니다. 새 레이블이 생성되고 저장되지만, 아직 정책에 추가되지는 않습니다.
 
-14. **분류** > **정책** 메뉴 옵션에서 **전역**을 다시 선택하고 레이블 뒤에서 **Add or remove labels**(레이블 추가 또는 제거) 링크를 선택합니다.
+14. **분류** > **정책** 메뉴 옵션에서 **글로벌**을 다시 선택한 다음, 레이블 뒤에서 **레이블 추가 또는 제거** 링크를 선택합니다.
 
 15. **Policy: Add or remove labels**(정책: 레이블 추가 또는 제거) 블레이드에서 방금 만든 레이블과 **재무**라는 하위 레이블을 선택한 다음, **확인**을 클릭합니다.
 

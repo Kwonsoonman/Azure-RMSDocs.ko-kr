@@ -4,18 +4,18 @@ description: Azure Information Protection 레이블에 대한 Exchange Online �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/27/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: 1f80f939c857c3b36c7999eaaeb2af1ae1680444
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9d30e7c3e15e9aa6b67c2e1b653d56c1af36ffe0
+ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148260"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49366991"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Azure Information Protection 레이블에 대한 Exchange Online 메일 흐름 규칙 구성
 
@@ -93,7 +93,7 @@ Azure Information Protection 정책에서 이 레이블은 메일을 **일반**�
 
 ### <a name="example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization"></a>예제 2: 메일에 **기밀 \ 파트너** 레이블이 지정된 첨부 파일이 있고 메일이 조직 외부로 전송되는 경우 이러한 메일에 암호화 전용 옵션을 적용하는 규칙
 
-이 예제에서 **기밀 \ 파트너** 하위 레이블의 GUID는 5ab1c8a1-8241-72bc-3f22-304a0558362a입니다. 이 규칙에 사용하려는 고유 레이블 또는 하위 레이블 GUID를 대체하세요. 
+이 예제에서 **일반\파트너** 하위 레이블에는 0e421e6d-ea17-4fdb-8f01-93a3e71333b8이라는 GUID가 있습니다. 이 규칙에 사용하려는 고유 레이블 또는 하위 레이블 GUID를 대체하세요. 
 
 이 레이블은 파트너 공동 작업에 사용하는 문서를 분류하고 보호하는 데 사용됩니다.   
 

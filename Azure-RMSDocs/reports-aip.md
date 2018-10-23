@@ -4,19 +4,19 @@ description: 중앙 보고 기능을 사용하여 Azure Information Protection �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: cf951bba3cc74a82e31841986dde9e75ec34a630
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 424be5910d6a4498bc9d2684888cd2bf9af010af
+ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862127"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324893"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure Information Protection이 중앙 보고
 
@@ -104,11 +104,11 @@ Log Analytics 작업 영역을 만드는 데 도움이 필요한 경우 [Azure P
 
 ## <a name="how-to-view-the-reports"></a>보고서 확인 방법
 
-Azure Information Protection 블레이드에서 **대시보드(미리 보기)** 메뉴 옵션을 찾은 후 다음 옵션 중 하나를 선택합니다.
+Azure Information Protection 블레이드에서 **대시보드(미리 보기)** 메뉴 옵션을 찾고 다음 옵션 중 하나를 선택합니다.
 
-- **사용 현황 보고서**: 레이블이 사용되는 방식을 확인하려면 이 보고서를 사용합니다. 
+- **사용 현황 보고서(미리 보기)**: 레이블이 사용되는 방식을 확인하려면 이 보고서를 사용합니다. 
 
-- **데이터 검색**: 검사 기능이 찾은 파일에 대한 정보를 보려면 이 보고서를 사용합니다.
+- **데이터 검색(미리 보기)**: 검사에서 찾은 파일에 대한 정보를 보려면 이 보고서를 사용합니다.
 
 ## <a name="how-to-modify-the-reports"></a>보고서 수정 방법
 
@@ -116,6 +116,8 @@ Azure Information Protection 블레이드에서 **대시보드(미리 보기)** 
 
 ![Azure Information Protection 보고서를 사용자 지정하기 위한 Log Analytics 아이콘](./media/log-analytics-icon.png)
 
+
+Azure Information Protection에 대한 기록된 데이터는 다음 테이블에 저장됩니다. **InformationProtectionLogs_CL**
 
 ## <a name="next-steps"></a>다음 단계
 보고서의 정보를 검토한 후에 Azure Information Protection 정책을 변경할지 결정할 수 있습니다. 지침에 대해서는 [Azure Information Protection 정책 구성](configure-policy.md)을 참조하세요.

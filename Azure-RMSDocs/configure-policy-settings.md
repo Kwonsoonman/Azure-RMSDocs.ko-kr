@@ -4,16 +4,16 @@ description: 모든 사용자와 모든 장치에 적용되는 Azure Information
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/01/2018
+ms.date: 10/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: eb2f539486464d93e99f8485fc8d0812f9a7953d
-ms.sourcegitcommit: 4e2493d7856dc35bb3f5869fff1276c98bf88192
+ms.openlocfilehash: 03736896f73fc83f699191677846e757eaf17be7
+ms.sourcegitcommit: d6c29e0d23c079045f9a9a2a270cf3cf22d628d5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864120"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336462"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 정책 설정을 구성하는 방법
 
@@ -31,7 +31,7 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. **분류** > **정책** 메뉴 옵션에서: 구성할 설정이 모든 사용자에게 적용될 경우 **Azure Information Protection - 정책** 블레이드에서 **전역**을 선택합니다.
+2. **분류** > **정책** 메뉴 옵션에서: 구성할 설정이 모든 사용자에게 적용될 경우 **Azure Information Protection - 정책** 블레이드에서 **글로벌**을 선택합니다.
     
     구성하려는 설정이 선택한 사용자에게만 적용되도록 [범위 지정 정책](configure-policy-scope.md)에 포함되는 경우에는 범위 지정 정책을 선택합니다.
 
@@ -45,13 +45,15 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
         
         ![레이블 지정이 적용된 경우의 Azure Information Protection 프롬프트](./media/info-protect-enforce-labelv2.png)
         
+        *RemoveLabel* 매개 변수와 함께 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) PowerShell cmdlet을 사용하여 레이블을 제거하면 이 옵션이 적용되지 않습니다.
+        
     - **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함): 이 옵션을 **켜기**로 설정하고 이러한 작업 중 하나를 수행하면(예: **공용** 레이블을 **개인**으로 변경) 이 작업에 대한 설명을 제공하라는 메시지가 표시됩니다. 예를 들어 사용자는 문서에 더 이상 민감한 정보가 포함되어 있지 않다고 설명할 수 있습니다. 작업 및 해당 근거는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램 및 서비스 로그** > **Azure Information Protection**에 기록됩니다.  
         
         ![새 분류가 하위 수준인 경우의 Azure Information Protection 프롬프트](./media/info-protect-lower-justification.png)
         
         이 옵션은 동일한 부모 레이블 아래로 하위 레이블의 분류를 낮추는 데는 적용되지 않습니다.
         
-    - **For email messages with attachments, apply a label that matches the highest classification of those attachments**(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용): 이 옵션을 **권장**으로 설정한 경우 메일 메시지에 레이블을 적용하라는 메시지가 표시됩니다. 첨부 파일에 적용된 분류 레이블에 따라 레이블이 동적으로 선택되고 최고 분류 레이블이 선택됩니다. 첨부 파일은 실제 파일이어야 하며 파일에 대한 링크일 수 없습니다(예를 들어 SharePoint 또는 비즈니스용 OneDrive의 파일에 대한 링크). 사용자는 권장 사항을 수락하거나 해제할 수 있습니다. 이 옵션을 **자동**으로 설정한 경우 레이블이 자동으로 적용되지만 사용자가 메일을 보내기 전에 레이블을 제거하거나 다른 레이블을 선택할 수 있습니다.  
+    - **For email messages with attachments, apply a label that matches the highest classification of those attachments**(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용): 이 옵션을 **권장**으로 설정한 경우 메일 메시지에 레이블을 적용하라는 메시지가 표시됩니다. 첨부 파일에 적용된 분류 레이블에 따라 레이블이 동적으로 선택되고 최고 분류 레이블이 선택됩니다. 첨부 파일은 실제 파일이어야 하며 파일에 대한 링크일 수 없습니다(예를 들어 SharePoint 또는 비즈니스용 OneDrive의 파일에 대한 링크). 사용자는 권장 사항을 수락하거나 해제할 수 있습니다. 이 옵션을 **자동**으로 설정한 경우 레이블이 자동으로 적용되지만 사용자가 이메일을 보내기 전에 레이블을 제거하거나 다른 레이블을 선택할 수 있습니다.  
     
     - **Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시): 이 설정이 꺼져 있으면 사용자가 Word, Excel, PowerPoint 및 Outlook의 표시줄에서 레이블을 선택할 수 없습니다. 대신, 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택해야 합니다. 이 설정이 켜져 있으면 사용자가 표시줄이나 단추에서 레이블을 선택할 수 있습니다.
         

@@ -4,16 +4,16 @@ description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/10/2018
+ms.date: 10/16/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 2b7b94c7e53cd59a72602a2b3076eaefbc49e2ef
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: dbc63a0ddca9e7583693219103268048b524121c
+ms.sourcegitcommit: 6a732226a3c97fc06fcf815fbbb24a2e2faae209
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148871"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49358978"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -32,6 +32,12 @@ ms.locfileid: "44148871"
     - PowerPoint: 마스터 슬라이드에 배경 이미지로 워터마크가 적용됩니다. **보기** 탭, **슬라이드 마스터**에서 **배경 그래픽 숨기기** 확인란이 선택되어 있지 않은지 확인합니다.
     
     - 여러 줄의 텍스트를 사용할 수 있습니다.
+
+- 최대 문자열 길이:
+    
+    - 헤더 및 바닥글에 입력할 수 있는 최대 문자열 길이는 1024자입니다. 그러나 Excel에서는 헤더 및 바닥글을 총 255자로 제한됩니다. Excel에서 헤더 및 바닥글에 긴 문자열을 입력하면 이 텍스트는 255자 이하로 잘릴 수 있습니다.
+    
+    - 워터마크에 입력할 수 있는 최대 문자열 길이는 255자입니다.
 
 - 텍스트 문자열을 지정할 수도 있고, [변수](#using-variables-in-the-text-string)를 사용하여 머리글, 바닥글 또는 워터마크를 적용할 때 텍스트 문자열을 동적으로 만들 수도 있습니다.
 

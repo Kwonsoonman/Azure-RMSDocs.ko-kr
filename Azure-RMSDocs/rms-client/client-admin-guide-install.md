@@ -4,18 +4,18 @@ description: 엔터프라이즈 네트워크에서 Windows용 Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/21/2018
+ms.date: 10/17/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d8818ff71acbd338ebb4959f9eb3ef617655b25d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 2b6e3a40f7faab35053c1bd3146bfc08767e0066
+ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149279"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49367008"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -57,9 +57,9 @@ ms.locfileid: "44149279"
     
     클라이언트 설치는 이러한 전제 조건을 확인하지 않지만 Azure Information Protection 클라이언트가 PDF 파일을 분류하고 보호하는 데 필요합니다.
 
-- Office 응용 프로그램을 위한 **Microsoft Azure Information Protection** 추가 기능을 비활성화하지 않습니다.
+- **관리되는 추가 기능 목록**에 대한 그룹 정책 구성
     
-    그룹 정책 설정 **관리되는 추가 기능 목록**을 구성한 경우 Azure Information Protection을 위한 다음 프로그래밍 방식 식별자(ProgID)를 지정하고 옵션을 **1: 추가 기능을 항상 사용**으로 설정하여 Office 응용 프로그램을 위한 Microsoft Azure Information Protection 추가 기능을 추가합니다.
+    Office 2013 이후 버전의 경우 그룹 정책 설정 **관리되는 추가 기능 목록**을 구성하고 Office 응용 프로그램에 대한 **Microsoft Azure Information Protection** 추가 기능을 추가합니다. Azure Information Protection에 대한 다음과 같은 프로그래밍 방식 식별자(ProgID)를 지정하고 **1: 추가 기능을 항상 사용**하는 옵션을 설정합니다.
     
     - Outlook의 경우: `MSIP.OutlookAddin`
     
@@ -69,9 +69,9 @@ ms.locfileid: "44149279"
     
     - PowerPoint의 경우: `MSIP.PowerPointAddin`
     
-    이 **관리되는 추가 기능 목록** 그룹 정책 설정을 구성하지 않았더라도 Microsoft Azure Information Protection 추가 기능이 비활성화된다는 보고를 받을 경우 구성해야 할 수 있습니다. 이 추가 기능을 비활성화하면 사용자는 Office 응용 프로그램에서 Azure Information Protection 막대를 볼 수 없습니다.
+    이 설정을 구성하지 않으면 Microsoft Azure Information Protection 추가 기능은 비활성화되고 사용자는 해당 Office 응용 프로그램에서 문서 및 이메일에 레이블을 지정할 수 없습니다.
     
-    이 그룹 정책 설정에 대한 자세한 내용은 [Office 2013 및 Office 2016 프로그램에 대한 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)을 참조하세요.
+    이 그룹 정책 설정을 구성하는 방법에 대한 자세한 내용은 Office 설명서에서 [추가 기능을 통한 시스템 관리자 컨트롤](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)을 참조하세요.
 
 > [!IMPORTANT]
 > Azure Information Protection 클라이언트를 설치하려면 로컬 관리 권한이 필요합니다.

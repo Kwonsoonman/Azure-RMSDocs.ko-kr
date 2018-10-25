@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 12d5674fdebd3c857e7458b84f430cf3ee6755c2
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: b7aed6f8cdf6cf95b6b7af0bfa06554bde79dc02
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403083"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862178"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -44,7 +44,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 ## <a name="versions-later-than-137190"></a>1.37.19.0 이후 버전
 
-1.37.19.0 이후 버전의 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다.
+1.37.19.0 이후의 버전 1 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다.
 
 **릴리스 날짜**: 2018년 9월 20일
 
@@ -52,6 +52,17 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Microsoft Ignite에 발표된 Azure Information Protection 분석 기능의 [중앙 보고](../reports-aip.md) 지원
 
+**추가 정보:**
+
+이 미리 보기 버전에서는 스캐너를 사용하기 위해 다음 단계를 수행해야 합니다.
+
+1. 클라이언트의 현재 GA 버전(1.37.19.0)을 설치합니다.
+2. 스캐너를 설치 및 구성합니다.
+3. 스캐너를 시작합니다.
+4. Azure Information Protection 클라이언트를 이 미리 보기 버전으로 업그레이드합니다.
+5. 스캐너를 시작합니다.
+
+스캐너를 설치, 구성 및 시작하기 위한 지침이 필요한 경우 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-aip-scanner.md)를 참조하세요.
 
 ## <a name="version-137190"></a>버전 1.37.19.0
 
@@ -95,9 +106,9 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - PowerShell 또는 스캐너를 사용하여 분류하고 보호하는 경우 Office 문서 메타데이터를 제거하거나 암호화하지 않습니다.
 
-- 빠른 액세스 도구 모음에서 다음 항목 및 이전 항목 화살표 아이콘을 사용하여 메일을 보면 각 메일에 대한 올바른 레이블이 표시됩니다.
+- 빠른 액세스 도구 모음에서 다음 항목 및 이전 항목 화살표 아이콘을 사용하여 이메일을 보면 각 이메일에 대한 올바른 레이블이 표시됩니다.
 
-- 사용자 지정 사용 권한은 아포스트로피가 포함된 받는 사람 메일 주소를 지원합니다.
+- 사용자 지정 사용 권한은 아포스트로피가 포함된 받는 사람 이메일 주소를 지원합니다.
 
 - SharePoint Online에 저장된 보호된 문서를 열어 이 작업을 시작할 때 컴퓨터 환경은 부트스트랩을 성공적으로 초기화합니다.
 
@@ -199,7 +210,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Office 버전 16.0.8628.2010 이상(간편-실행)의 경우 Azure Information Protection 표시줄은 이전에 Office 응용 프로그램 외부에서 표시줄을 표시할 수 있는 최신 모니터 표시 옵션을 지원합니다.
 
-- Azure Information Protection을 사용하는 두 조직에서 레이블이 지정된 문서와 메일을 공유하는 경우 해당하는 고유한 레이블이 유지되며 다른 조직의 레이블로 대체되지 않습니다.
+- Azure Information Protection을 사용하는 두 조직에서 레이블이 지정된 문서와 이메일을 공유하는 경우 해당하는 고유한 레이블이 유지되며 다른 조직의 레이블로 대체되지 않습니다.
 
 - Excel의 경우:
         
@@ -218,7 +229,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 - 이제 뷰어는 20MB를 넘는 보호된 텍스트 기반 파일(.ptxt 및 .pxml)을 열 수 있습니다. 
 - Outlook 미리 알림기를 사용하는 경우 Outlook의 작동이 중지되지 않도록 방지합니다.
 
-- 문서와 메일을 보호할 수 있도록 부트스트랩은 Office 64비트에서 성공합니다.
+- 문서와 이메일을 보호할 수 있도록 부트스트랩은 Office 64비트에서 성공합니다.
 
 - 이제 Word, Excel, PowerPoint 및 파일 탐색기에 대한 사용자 정의 권한에 대해 레이블을 구성하고, 고급 클라이언트 설정을 사용하여 사용자 지정 권한 옵션을 숨길 수도 있습니다. [추가 정보](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
 
@@ -266,7 +277,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - PowerShell의 경우 새로운 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) 및 [Clear-AIPAuthentication](/powershell/module/azureinformationprotection/clear-aipauthentication) PowerShell cmdlet을 사용하여 파일에 레이블을 비대화형으로 지정할 수 있습니다. 이러한 cmdlet을 사용하는 방법에 대한 자세한 내용은 관리자 가이드의 [PowerShell 섹션](client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)을 참조하세요.
 
-- [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 및 [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell cmdlet에는 새로운 **Owner** 및 **PreserveFileDetails** 매개 변수가 있습니다. 이러한 매개 변수를 사용하여 Owner 사용자 지정 속성에 대한 메일 주소를 지정할 수 있지만 레이블이 지정되는 문서의 날짜는 변경되지 않습니다.
+- [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) 및 [Set-AIPFileClassification](/powershell/module/azureinformationprotection/set-aipfileclassification) PowerShell cmdlet에는 새로운 **Owner** 및 **PreserveFileDetails** 매개 변수가 있습니다. 이러한 매개 변수를 사용하여 Owner 사용자 지정 속성에 대한 이메일 주소를 지정할 수 있지만 레이블이 지정되는 문서의 날짜는 변경되지 않습니다.
 
 **수정 사항**:
 
@@ -286,7 +297,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 향상된 사용자 환경에 대한 수정
 
-- 사용자가 사용자 지정 권한을 지정할 때 전자 메일의 유효성을 검사합니다. 또한 Enter 키를 눌러 여러 메일 주소를 지정할 수 있습니다.
+- 사용자가 사용자 지정 권한을 지정할 때 전자 메일의 유효성을 검사합니다. 또한 Enter 키를 눌러 여러 이메일 주소를 지정할 수 있습니다.
 
 - 모든 하위 레이블이 보호를 위해 구성되고 클라이언트에 보호를 지원하는 Office 버전이 없는 경우 부모 레이블이 표시되지 않습니다. 
 

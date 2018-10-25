@@ -4,17 +4,17 @@ description: Azure Information Protection 레이블을 통합 레이블 지정�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/28/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 64063af186f01a5829b7aa668260928e3b13656d
-ms.sourcegitcommit: 304702a3f2f2ab2b32493c4aedeb5ee8424b925c
+ms.openlocfilehash: 075330138910da90049cad3c1ccc74a1a360a218
+ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47415012"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100646"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법
 
@@ -93,7 +93,7 @@ Azure Information Protection 클라이언트는 Azure Portal에서 레이블을 
 
 2. **Azure Information Protection - 통합 레이블 지정** 블레이드에서 **활성화**를 선택하고 온라인 지침을 따릅니다.
 
-마이그레이션된 레이블을 보안 및 준수 센터에 게시하면 [통합 레이블 지정을 지원하는 클라이언트](#clients-that-support-unified-labeling)가 사용할 수 있습니다.
+마이그레이션된 레이블의 경우 이제 [통합 레이블 지정을 지원하는 클라이언트](#clients-that-support-unified-labeling)가 사용할 수 있습니다. 그러나 먼저 보안 및 준수 센터에서 이러한 레이블을 게시해야 합니다.
 
 
 ### <a name="clients-that-support-unified-labeling"></a>통합 레이블 지정을 지원하는 클라이언트
@@ -107,4 +107,4 @@ Azure Information Protection 클라이언트는 Azure Portal에서 레이블을 
 
 ## <a name="next-steps"></a>다음 단계
 
-Office 365 보안 및 준수 센터에서 마이그레이션된 레이블을 구성하는 방법에 대한 자세한 내용은 블로그 게시물 [Announcing the availability of unified labeling management in the Security & Compliance Center](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)(보안 및 준수 센터의 통합 레이블 지정 관리 가용성 알림)를 참조하세요.
+Office 365 보안 및 준수 센터에서 마이그레이션된 레이블을 구성 및 게시하는 방법에 대한 자세한 내용은 블로그 게시물 [Announcing the availability of unified labeling management in the Security & Compliance Center](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)(보안 및 준수 센터의 통합 레이블 지정 관리 가용성 알림)를 참조하세요.

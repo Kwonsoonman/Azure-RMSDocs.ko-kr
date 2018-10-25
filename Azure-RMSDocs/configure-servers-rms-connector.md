@@ -4,18 +4,18 @@ description: Azure RMS(Rights Management) 커넥터를 사용할 온-프레미�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 10/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 36ca84c29891efc3bdcaa42c633b4c87ad4ce1b6
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 952aca2aebac0996a46d23912f126dd7dc6141da
+ms.sourcegitcommit: 82cbbeb833510b2de93980cd7dbebf41e34291e1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151438"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48817901"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터에 대해 서버 구성
 
@@ -167,7 +167,7 @@ Exchange 서버에서 이전 버전의 운영 체제를 실행 중인 경우에�
 
     -   [RMS 커넥터에 대한 레지스트리 설정](rms-connector-registry-settings.md)의 정보를 참조해서 수동으로 레지스트리를 편집하여 서버의 레지스트리 설정을 수동으로 추가합니다. 
 
-3.  Exchange에서 IRM 기능을 사용합니다. 자세한 내용은 Exchange 라이브러리에서 [정보 권한 관리 절차](https://technet.microsoft.com/library/dd351212%28v=exchg.150%29.aspx)를 참조하세요.
+3. Exchange의 IRM 기능을 사용하도록 설정합니다[내부 메시지용 IRM을 사용하도록 설정하여](https://technet.microsoft.com/library/bb124077(v=exchg.150\).aspx#Anchor_1)).
 
     > [!NOTE]
     > 기본적으로 **Set-IRMConfiguration -InternalLicensingEnabled $true**를 실행하면 IRM이 사서함뿐만 아니라 Outlook Web App 및 모바일 장치에 대해서도 자동으로 활성화됩니다. 그러나 관리자가 클라이언트 액세스 서버, Outlook Web App 가상 디렉터리 또는 Outlook Web App 사서함 정책, 모바일 장치 사서함 정책 등의 여러 수준에서 IRM을 비활성화하도록 설정할 수 있습니다. Outlook Web App에서 Azure RMS 템플릿 중 하나 이상이 표시되지 않거나(하루를 기다린 후) Outlook 클라이언트에서는 템플릿이 표시되지만 모바일 장치에서는 표시되지 않는 경우 관련 설정을 확인하여 해당 IRM이 비활성화되어 있지 않은지 알아보세요. 자세한 내용은 Exchange 문서의 [클라이언트 액세스 서버에서 정보 권한 관리를 사용하거나 사용하지 않도록 설정](https://technet.microsoft.com/library/dd876938(v=exchg.150).aspx) 항목을 참조하세요. 

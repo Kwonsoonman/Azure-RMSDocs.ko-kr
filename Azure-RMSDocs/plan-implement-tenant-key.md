@@ -4,18 +4,18 @@ description: Azure Information Protection 테넌트 키를 계획 및 관리하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 72b2fe408f77742b8ca5f1ba8727e3a065818322
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 42451d8b50b0ad1edb75d767e622e697b12acf90
+ms.sourcegitcommit: 4767afef8fb7b81065a6bf207cd0a5518bf0e97a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151149"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48907164"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키 계획 및 구현
 
@@ -152,9 +152,24 @@ Azure Key Vault 설명서를 사용하여 Azure Information Protection에 사용
 
 Key Vault에 저장된 키에는 키 ID가 있습니다. 키 ID는 키 자격 증명 모음의 이름, 키 컨테이너, 키 이름 및 키 버전이 포함된 URL입니다. 예: **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**. 이 키를 사용하려면 Key Vault URL을 지정하여 Azure Information Protection을 구성해야 합니다.
 
-Azure Information Protection에서 키를 사용할 수 있으려면 조직의 키 자격 증명 모음에서 Azure Rights Management 서비스에 키를 사용할 수 있도록 권한을 부여해야 합니다. 그렇게 하려면 Azure Key Vault 관리자는 Key Vault PowerShell cmdlet([Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy))을 사용하고 GUID 00000012-0000-0000-c000-000000000000을 사용하여 Azure Rights Management 서비스 주체에 권한을 부여합니다. 예를 들면 다음과 같습니다.
+Azure Information Protection에서 키를 사용할 수 있으려면 조직의 키 자격 증명 모음에서 Azure Rights Management 서비스에 키를 사용할 수 있도록 권한을 부여해야 합니다. 이를 수행하기 위해 Azure Key Vault 관리자는 Azure Portal 또는 Azure PowerShell을 사용할 수 있습니다.
 
-    Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
+Azure Portal을 사용하여 구성:
+
+1. **Key Vault** > **\<’Key Vault 이름’>** > **액세스 정책** > **새로 추가**로 이동합니다.
+
+2. **액세스 정책 추가** 블레이드의 **템플릿에서 구성(선택 사항)** 목록 상자에서 **Azure Information Protection BYOK**를 선택하고 **확인**을 클릭합니다.
+    
+    선택한 템플릿을 다음 구성이 포함합니다.
+    
+    - **Microsoft Rights Management Services**가 **주체 선택**에 자동으로 할당됩니다.
+    - 키 사용 권한으로 **가져오기**, **암호 해독** 및 **서명**이 자동으로 선택됩니다. 
+
+PowerShell을 사용하여 구성:
+
+- Key Vault PowerShell cmdlet, [Set-AzureRmKeyVaultAccessPolicy](/powershell/module/azurerm.keyvault/set-azurermkeyvaultaccesspolicy)를 실행하고 GUID **00000012-0000-0000-c000-000000000000**을 사용하여 Azure Rights Management 서비스 주체에 권한을 부여합니다. 예를 들면 다음과 같습니다.
+    
+        Set-AzureRmKeyVaultAccessPolicy -VaultName 'ContosoRMS-kv' -ResourceGroupName 'ContosoRMS-byok-rg' -ServicePrincipalName 00000012-0000-0000-c000-000000000000 -PermissionsToKeys decrypt,sign,get
 
 이제 Azure Information Protection을 구성하여 조직의 Azure Information Protection 테넌트 키로 이 키를 사용할 준비가 되었습니다. Azure RMS cmdlet을 사용하여 Azure Rights Management 서비스에 연결한 다음 로그인합니다.
 

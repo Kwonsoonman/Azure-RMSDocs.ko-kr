@@ -4,16 +4,16 @@ description: 레이블에 대한 조건을 구성할 때 문서 또는 메일에
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/29/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 252b92a7a6ea6b64858acb0e7ace1cf9c56c1f63
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 3e911d8190e524efe56677d6afaec8f679c773b9
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148162"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862110"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -97,7 +97,7 @@ Azure Information Protection 클라이언트에서 사용자가 지정한 조건
 
 ### <a name="sensitive-information-types-that-require-a-minimum-version-of-the-client"></a>중요한 정보 형식에는 최소 버전의 클라이언트가 필요합니다.
 
-다음 중요한 정보 형식에는 현재 미리 보기 버전의 Azure Information Protection 클라이언트가 필요합니다.
+다음과 같은 중요한 정보 유형에는 최소 버전 1.37.19.0의 Azure Information Protection 클라이언트가 필요합니다.
 
 - **EU 전화 번호**
 - **EU 휴대폰 번호**

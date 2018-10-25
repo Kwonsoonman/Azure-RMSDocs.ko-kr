@@ -4,18 +4,18 @@ description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/24/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f9def0ae81a3887f9f6e1c99f7e1f02c54581fdb
-ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
+ms.openlocfilehash: 23baab9ba6ab9a7b1d43dd1f5f12947f383d9d28
+ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168763"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072479"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -98,6 +98,8 @@ Azure Information Protection 클라이언트에서는 보호를 지원하는 최
     - 기타 파일 형식을 보호 및 Azure Information Protection 뷰어에서 이러한 파일 형식 열기: 최대 파일 크기는 사용 가능한 디스크 공간 및 메모리까지로 제한됩니다.
     
     - [Unprotect-RMSFile](/powershell/module/azureinformationprotection/unprotect-rmsfile) cmdlet을 사용하여 파일 보호 해제: .pst 파일에 대해 지원되는 최대 파일 크기는 5GB입니다. 기타 파일 형식은 사용 가능한 디스크 공간 및 메모리까지로 제한됩니다.
+    
+    팁: 큰 .pst 파일에서 보호된 항목을 검색하거나 복구해야 하는 경우 [eDiscovery용 Unprotect-RMSFile을 사용하기 위한 지침](../configure-super-users.md#guidance-for-using-unprotect-rmsfile-for-ediscovery)을 참조하세요.
 
 ### <a name="supported-file-types-for-classification-and-protection"></a>분류 및 보호가 지원되는 파일 형식
 
@@ -214,6 +216,22 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 > 검사하기 위해 .rtf 파일을 포함하는 경우 신중하게 스캐너를 모니터링합니다. 일부 .rtf 파일은 스캐너에서 성공적으로 검사될 수 없습니다. 이러한 파일의 경우 검사가 완료되지 않으면 서비스를 다시 시작해야 합니다. 
 
 기본적으로 스캐너는 Office 파일 형식만 보호합니다. 스캐너의 이 동작을 변경하려면 레지스트리를 편집하고 보호할 추가 파일 형식을 지정합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](../develop/file-api-configuration.md)을 참조하세요.
+
+#### <a name="to-scan-zip-files"></a>.zip 파일을 검사하려면
+
+다음 지침을 따르면 스캐너를 통해 .zip 파일을 검사할 수 있습니다.
+
+1. 스캐너를 실행하는 Windows Server 컴퓨터의 경우 [Office 2010 Filter Pack SP2](https://support.microsoft.com/en-us/help/2687447/description-of-office-2010-filter-pack-sp2)를 설치합니다.
+
+2. 이전 섹션에서 설명한 대로 검사할 .zip 파일을 포함하도록 스캐너를 구성합니다.
+
+3. 단지 중요한 정보만 검사하지 않고 .zip 파일을 분류 및 보호해야 할 경우 이전 섹션에 설명된 것처럼 일반 보호(pfile)가 적용되도록 이 파일 이름 확장명을 가진 파일의 레지스트리 항목을 추가합니다.
+
+다음 단계를 수행한 이후의 예제 시나리오: 
+
+**accounts.zip**이라는 파일에는 신용 카드 번호가 있는 Excel 스프레드시트가 포함되어 있습니다. Azure Information Protection 정책에는 **기밀 \ 금융** 레이블이 있습니다. 이 레이블은 신용 카드 번호를 검색하고, 금융 그룹에 대한 액세스를 제한하는 보호 레이블을 자동으로 적용합니다. 
+
+스캐너는 이 파일을 검사한 후 **기밀 \ 금융**으로 분류하고, Finance 그룹의 멤버만 압축을 풀 수 있도록 파일에 일반 보호를 적용하고 파일 이름을 **accounts.zip.pfile**로 바꿉니다.
 
 ### <a name="files-that-cannot-be-protected-by-default"></a>기본적으로 보호할 수 없는 파일
 

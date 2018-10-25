@@ -4,18 +4,18 @@ description: Azure Information Protection과, 데이터 보호 서비스인 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/31/2018
+ms.date: 10/03/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4d991a96dd82bdc27aed036fd05119ba3f7ca1f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e49912fd777a97c51f9ef7b4e7cff5a2aeb2c3ad
+ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151676"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48794330"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -99,13 +99,17 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 
 - 이러한 계정은 Azure Portal에서 Azure Information Protection 블레이드에 액세스할 수 없기 때문에 관리자 계정을 조건부 액세스 정책에 추가하지 않는 것이 좋습니다.
 
+- 다른 조직(B2B)과 공동으로 작업하기 위해 조건부 액세스 정책에서 MFA를 사용하는 경우 [Azure AD B2B 공동 작업](/active-directory/b2b/what-is-b2b)을 사용하고 다른 조직에서 공유할 사용자의 게스트 계정을 만들어야 합니다.
+
 - 조건부 액세스에 많은 클라우드 앱을 사용하면 선택할 목록에 **Microsoft Azure Information Protection**이 표시되지 않을 수 있습니다. 이 경우에 목록 맨 위에 있는 검색 상자를 사용합니다. "Microsoft Azure Information Protection"을 입력하여 사용할 수 있는 앱을 필터링합니다. 지원되는 구독을 제공하면 선택할 **Microsoft Azure Information Protection**이 표시됩니다. 
 
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure Information Protection의 레이블과 Office 365의 레이블 간 차이는 무엇인가요?
 
-Azure Information Protection의 레이블을 사용하면 문서와 전자 메일이 온-프레미스에 있든 클라우드에 있든 상관 없이 일관성 있는 분류 및 보호 정책을 적용할 수 있습니다. 이 분류 및 보호는 콘텐츠가 저장된 위치 또는 이동된 방법과 무관합니다. [Office 365 Security & Compliance의 레이블](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)을 사용하면 해당 콘텐츠가 Office 365 서비스에 있는 경우 감사 및 보존을 위해 문서와 전자 메일을 분류할 수 있습니다. 
+Azure Information Protection의 레이블을 사용하면 문서와 전자 메일이 온-프레미스에 있든 클라우드에 있든 상관 없이 일관성 있는 분류 및 보호 정책을 적용할 수 있습니다. 이 분류 및 보호는 콘텐츠가 저장된 위치 또는 이동된 방법과 무관합니다. 최근까지 Office 365는 해당 콘텐츠가 Office 365 서비스에 있는 경우 감사 및 보존을 위해 문서와 메일을 분류할 수 있는 [보존 레이블](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)만 제공했습니다. 
 
-현재 이러한 레이블은 개별적으로 적용 및 관리되지만, Microsoft는 Azure Information Protection, Office 365, Microsoft Cloud App Security 및 Windows Information Protection을 포함하는 여러 서비스를 위한 포괄적이고 통합 레이블링 전략을 달성하기 위해 노력하고 있습니다. MIP("Microsoft Information Protection")라고 하는 이 전략을 들어보았을 수 있습니다. 이 동일한 레이블 스키마 및 저장소는 소프트웨어 공급 업체에서도 사용할 수 있습니다. 자세한 내용은 [Office 365 및 Azure Information Protection에 제공될 일관된 레이블 지정 및 보호 정책](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Consistent-labeling-and-protection-policies-coming-to-Office-365/ba-p/161553) 블로그 게시물을 참조하세요.
+Microsoft는 Azure Information Protection, Office 365, Microsoft Cloud App Security 및 Windows Information Protection을 포함하는 여러 서비스를 위한 포괄적이고 통합 레이블링 전략을 달성하기 위해 노력해왔습니다.  “Microsoft Information Protection”이라는 이 전략을 들어보았을 것입니다. 이 동일한 레이블 지정 스키마 및 저장소는 소프트웨어 공급업체에서도 MIP SDK를 통해 사용할 수 있습니다.
+
+Microsoft Ignite 2018에서 발표된 것처럼, 이제 Office 365 보안 및 준수 센터에서 보존 레이블 외에 **민감도 레이블**을 구성하는 옵션도 제공됩니다. 여러 서비스에서의 통합된 레이블 지원 상황에 대한 자세한 내용은 [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)(중요한 데이터를 보호하기 위한 정보 보호 기능 지원 발표) 블로그 게시물을 읽어보세요.
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?
 
@@ -117,7 +121,7 @@ Azure Information Protection의 레이블을 사용하면 문서와 전자 메�
 
 |Windows Server FCI|Azure Information Protection 스캐너|
 |--------------------------------|-------------------------------------|
-|지원되는 데이터 저장소: <br /><br />- Windows Server의 로컬 폴더|지원되는 데이터 저장소: <br /><br />- Windows Server의 로컬 폴더<br /><br />- Windows 파일 공유 및 네트워크 연결 저장소<br /><br />- SharePoint Server 2016 및 SharePoint Server 2013 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객 및 스캐너의 미리 보기 버전을 사용하는 고객에 대해 SharePoint Server 2010도 지원됩니다.|
+|지원되는 데이터 저장소: <br /><br />- Windows Server의 로컬 폴더|지원되는 데이터 저장소: <br /><br />- Windows Server의 로컬 폴더<br /><br />- Windows 파일 공유 및 네트워크 연결 저장소<br /><br />- SharePoint Server 2016 및 SharePoint Server 2013 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객의 경우 SharePoint Server 2010도 지원됩니다.|
 |작동 모드: <br /><br />- 실시간|작동 모드: <br /><br />- 데이터 저장소를 체계적으로 탐색하고 이 주기를 한 번 또는 반복적으로 실행할 수 있습니다.|
 |파일 형식에 대한 지원: <br /><br />- 기본적으로 모든 파일 형식이 보호됩니다. <br /><br />- 레지스트리를 편집하여 특정 파일 형식을 보호에서 제외할 수 있습니다.|파일 형식에 대한 지원: <br /><br />- 기본적으로 Office 파일 형식이 보호됩니다. <br /><br />- 레지스트리를 편집하여 특정 파일 형식을 보호에 포함할 수 있습니다.|
 

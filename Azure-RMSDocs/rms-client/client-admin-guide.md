@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/27/2018
+ms.date: 10/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c415868045e2064696181217f66262e90887e25a
-ms.sourcegitcommit: 7d477c418f3e5d8950c73af154c1575c84791ccc
+ms.openlocfilehash: b5eccdd62d828bc5104815746458d4c7036594fd
+ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403015"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100639"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -198,7 +198,7 @@ Windows 업데이트를 사용하는 경우 Azure Information Protection 클라�
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 업그레이드
 
-Azure Information Protection 스캐너를 업그레이드하려면 최신 버전의 Azure Information Protection 클라이언트를 설치하세요. 그런 다음, 다음 일회성 작업 중 하나를 수행합니다.
+Azure Information Protection 스캐너를 업그레이드하려면 최신 버전의 Azure Information Protection 클라이언트를 설치하세요. 이어서 다음 일회성 작업 중 하나를 수행합니다. 이 작업을 수행한 후에는 이미 검사한 파일을 다시 검사할 필요가 없습니다.
 
 현재 GA 버전의 경우: 
 

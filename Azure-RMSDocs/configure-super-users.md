@@ -4,24 +4,24 @@ description: Azure Rights Management에서 조직을 위해 보호하는 데이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/31/2018
+ms.date: 10/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 762b46ac33b57bd81b5c1ab36d07f4d33305b4c0
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 07b780721bc0f22de6c36d88d98a2c8360af67b8
+ms.sourcegitcommit: f5395541fa3f74839402805dab68d0c2de395249
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150998"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101837"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능을 사용하면 Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 부여된 사용자와 서비스가 항상 읽고 검사할 수 있습니다. 또한 필요한 경우 이전에 적용했던 보호를 변경하거나 제거할 수 있습니다. 
+Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능을 사용하면 Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 부여된 사용자와 서비스가 항상 읽고 검사할 수 있습니다. 필요하다면 보호를 제거하거나 변경할 수 있습니다.
 
 슈퍼 사용자는 항상 조직의 Azure Information Protection 테넌트로 보호되는 문서 및 메일에 대한 Rights Management 전체 제어 [사용 권한](configure-usage-rights.md)을 가집니다. "데이터 추론"이라고도 하는 이 기능은 조직 데이터에 대한 통제력을 유지하는 데 필수적인 요소입니다. 예를 들어 다음과 같은 시나리오에서 이 기능을 사용할 수 있습니다.
 
@@ -78,6 +78,23 @@ Azure Rights Management에 대한 슈퍼 사용자 역할이 할당된 사용자
 이러한 cmdlet에 대한 자세한 내용은 Azure Information Protection 클라이언트 관리자 가이드에서 [Azure Information Protection 클라이언트에서 PowerShell 사용](./rms-client/client-admin-guide-powershell.md)을 참조하세요.
 
 > [!NOTE]
-> AzureInformationProtection 모듈은 RMS 보호 도구와 함께 설치되는 RMS 보호 PowerShell 모듈을 대체합니다. 이러한 두 모듈은 서로 다르며 [Azure Rights Management의 PowerShell 모듈](administer-powershell.md)을 보완합니다. AzureInformationProtection 모듈은 Azure Information Protection, Azure Information Protection용 Azure RMS(Azure Rights Management Service) 및 AD RMS(Active Directory Rights Management Services)를 지원합니다.
+> AzureInformationProtection 모듈은 Azure Information Protection용 Azure Rights Management 서비스를 관리하는 [AADRM PowerShell 모듈](administer-powershell.md)과는 다르며 해당 모듈을 보완합니다.
 
+### <a name="guidance-for-using-unprotect-rmsfile-for-ediscovery"></a>eDiscovery용 Unprotect-RMSFile을 사용하기 위한 지침
+
+Unprotect-RMSFile cmdlet을 사용하여 PST 파일에 있는 보호된 콘텐츠의 암호를 해독할 수 있더라도 eDiscovery 프로세스의 일부로서 전략적으로 이 cmdlet을 사용하세요. 컴퓨터의 큰 파일에 대해 Unprotect-RMSFile을 실행하는 데에는 리소스(메모리 및 디스크 공간)가 많이 소모되며 이 cmdlet에 지원되는 최대 파일 크기는 5GB입니다.
+
+이상적으로는 [Office 365 eDiscovery](/office365/securitycompliance/ediscovery)를 사용하여 메일에서 보호된 메일과 보호된 첨부 파일을 검색하고 추출하는 것이 좋습니다. 슈퍼 사용자 기능은 Office 365 보안 및 준수 센터의 eDiscovery가 내보내기를 수행하기 전에 암호화된 항목을 검색하거나 내보내기 시 암호화된 메일을 해독할 수 있도록 자동으로 Exchange Online에 통합됩니다.
+
+Office 365 eDiscovery를 사용할 수 없다면, 유사한 데이터 관련 프로그래밍 결정을 내릴 수 있는 Azure Rights Management 서비스와 통합되는 다른 eDiscovery 솔루션이 있을 수 있습니다. 또는 eDiscovery 솔루션이 보호된 콘텐츠를 자동으로 읽고 암호 해독할 수 없는 경우에도 Unprotect-RMSFile을 보다 효율적으로 실행할 수 있도록 해주는 다단계 프로세스에서 여전히 이 솔루션을 사용할 수 있습니다.
+
+1. 문제의 메일을 Exchange Online 또는 Exchange Server 또는 사용자가 메일을 저장한 워크스테이션에서 PST 파일로 내보냅니다.
+
+2. PST 파일을 eDiscovery 도구에 가져옵니다. 이 도구는 보호된 콘텐츠를 읽을 수 없으므로 이러한 항목은 오류를 생성할 것으로 예상됩니다.
+
+3. 이 도구가 열 수 없는 모든 항목에서, 이번에는 보호된 항목만 포함하는 새 PST 파일을 생성합니다. 이 두 번째 PST 파일은 원래 PST 파일보다 훨씬 작을 수 있습니다.
+
+4. 이 두 번째 PST 파일에 대해 Unprotect-RMSFile을 실행하여 이 훨씬 더 작은 파일의 콘텐츠를 암호 해독합니다. 출력에서 지금 암호 해독한 PST 파일을 검색 도구에 가져옵니다.
+
+사서함 및 PST 파일에서 eDiscovery를 수행하기 위한 자세한 정보 및 지침은 [Azure Information Protection and eDiscovery Processes](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216)(Azure Information Protection 및 eDiscovery 프로세스) 블로그 게시물을 참조하세요.
 

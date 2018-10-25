@@ -4,18 +4,18 @@ description: Azure Information Protection 클라이언트를 설치해야 하는
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 10/08/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 358463bbfd7cd89ccd11c815e73516f688086817
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 3b4dfc62950166ca7221002169005fa3693a5998
+ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150758"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48862094"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>사용자 가이드: Rights Management로 보호된 파일 보기 및 사용
 
@@ -63,11 +63,13 @@ ms.locfileid: "44150758"
     
     권한 및 각 권한에 포함되는 사용 권한에 대한 자세한 내용은 [권한 수준에 포함된 권한](../configure-usage-rights.md#rights-included-in-permissions-levels)을 참조하세요.
 
-4. 파일을 편집하려면 **다른 이름으로 저장**을 클릭합니다. 이렇게 하면 보호되지 않은 파일을 레이블 없이 원본 파일 이름 확장명으로 저장할 수 있습니다. 그런 다음 해당 파일 형식과 연결된 응용 프로그램을 사용하여 파일을 편집할 수 있습니다. 
+4. 파일을 편집하려면 **다른 이름으로 저장**을 클릭합니다. 이렇게 하면 보호된 파일을 원본 파일 이름 확장명으로 저장할 수 있습니다. 그런 다음 해당 파일 형식과 연결된 응용 프로그램을 사용하여 파일을 편집할 수 있습니다. 이때 파일의 레이블 및 보호가 제거됩니다.
     
-    파일 편집을 마치면 파일 탐색기에서 파일을 마우스 오른쪽 단추로 클릭하여 레이블을 다시 적용합니다. 그러면 보호가 다시 적용됩니다.
+    뷰어는 보호된 파일을 위한 것이므로 **다른 이름으로 저장** 단추는 사용하면 보호된 파일에만 사용할 수 있습니다.
+    
+5. 파일 편집을 마치면 파일 탐색기에서 파일을 마우스 오른쪽 단추로 클릭하여 레이블을 다시 적용합니다. 그러면 보호가 다시 적용됩니다.
 
-5. 보호된 파일을 추가로 열려는 경우 **열기** 옵션을 사용하여 뷰어에서 해당 파일을 직접 찾아볼 수 있습니다. 그러면 뷰어에서 원본 파일 대신 선택한 파일이 표시됩니다. 
+6. 보호된 파일을 추가로 열려는 경우 **열기** 옵션을 사용하여 뷰어에서 해당 파일을 직접 찾아볼 수 있습니다. 그러면 뷰어에서 원본 파일 대신 선택한 파일이 표시됩니다. 
 
 > [!TIP]
 > 보호된 파일이 열리지 않고 전체 Azure Information Protection 클라이언트를 설치한 경우 **설정 재설정** 옵션을 시도해 봅니다. Office 앱에서 이 옵션에 액세스하려면 **보호** 단추 > **도움말 및 피드백** > **설정 재설정**을 선택합니다. 

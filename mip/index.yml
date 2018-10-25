@@ -1,0 +1,27 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: d999bc903ba3fd1c962cee81d3952ae08c353e74
+ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47445073"
+documentType: LandingData
+title: Microsoft Information Protection
+metadata:
+  title: Microsoft Information Protection 설명서
+  description: 회사 외부에서 공유하는 메일, 문서 및 중요한 데이터를 제어하고 보호하세요. 쉬운 분류부터 포함된 레이블 및 권한에 이르기까지 어디에 저장되었든 누구와 공유하든지 간에 Microsoft Information Protection으로 항상 데이터 보호를 강화하세요.
+  author: BryanLa
+  manager: mbaldwin
+  ms.service: information-protection
+  services: information-protection
+  ms.topic: landing-page
+  ms.date: 09/26/2018
+  ms.author: bryanla
+  layout: LandingPage
+abstract:
+  description: 회사 외부에서 공유하는 메일, 문서 및 중요한 데이터를 제어하고 보호하세요. 쉬운 분류부터 포함된 레이블 및 권한에 이르기까지 어디에 저장되었든 누구와 공유하든지 간에 Microsoft Information Protection으로 항상 데이터 보호를 강화하세요.
+sections:
+- title: Microsoft Information Protection SDK
+  items:
+  - type: paragraph
+    text: <a href="develop/">Microsoft Information Protection SDK 개요</a>에서 시작하세요.

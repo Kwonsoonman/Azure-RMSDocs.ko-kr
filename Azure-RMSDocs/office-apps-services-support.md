@@ -4,18 +4,18 @@ description: '최종 사용자 Office 응용 프로그램(예: Word 및 Outlook)
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 10/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 388e67cd-c16f-4fa0-a7bb-ffe0def2be81
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b17e0f850fbd319011e0a50cccc2b661f773adc8
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
+ms.openlocfilehash: 22df24a7af17dd87dd6f3947e39ea72d7b7b1372
+ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169943"
 ---
 # <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 응용 프로그램 및 서비스에서 Azure Rights Management를 지원하는 방법 
 
@@ -83,7 +83,7 @@ SharePoint Server를 사용하는 경우에 Azure Rights Management 커넥터를
 > 
 > - 기본값 또는 Azure Portal에서 관리하는 사용자 지정 보호 템플릿을 사용할 수 없습니다. 
 > 
-> - 보호된 PDF 파일에 대한 .ppdf 파일 이름 확장명을 가진 파일은 지원되지 않습니다. .pdf 파일 이름 확장명이 있는 파일은 지원되며 다운로드 시 기본적으로 Rights Management를 지원하는 PDF 응용 프로그램에서 열 수 있습니다. 예를 들어 Windows용 Azure Information Protection 클라이언트에는 이러한 보호된 PDF 파일에 대한 뷰어가 포함되어 있습니다. 대체 PDF 뷰어는 [RMS 지원 응용 프로그램 표](./requirements-applications.md#rms-enlightened-applications)에 나열됩니다.
+> - 보호된 PDF 파일에 대한 .ppdf 파일 이름 확장명을 가진 파일은 지원되지 않습니다. 보호된 PDF 문서를 보는 방법에 대한 자세한 내용은 [Microsoft Information Protection에 대한 보호된 PDF reader](./rms-client/protected-pdf-readers.md)를 참조하세요.
 > 
 > - 두 명 이상의 사용자가 동시에 문서를 편집하는 경우 공동 작성이 지원되지 않습니다. IRM으로 보호되는 라이브러리의 문서를 편집하려면 먼저 문서를 체크 아웃하여 다운로드한 후 Office 응용 프로그램에서 편집해야 합니다. 따라서 한 번에 한 사용자만 문서를 편집할 수 있습니다.
 

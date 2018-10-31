@@ -4,17 +4,17 @@ description: Windows용 Azure Information Protection 통합 레이블 지정 클
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 10/23/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: maayan
 ms.suite: ems
-ms.openlocfilehash: f05c1e96222eb70a7257123301d14ef7d885564d
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: a1544e0fa3c6d09328d1801a75ffbccd496e3482
+ms.sourcegitcommit: b275c1f82bf9176fe3fb36016c6f8692b8418295
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951842"
 ---
 # <a name="azure-information-protection-unified-labeling-client-version-release-information"></a>Azure Information Protection 통합 레이블 지정 클라이언트: 버전 릴리스 정보
 
@@ -50,6 +50,8 @@ Windows용 Azure Information Protection 통합 레이블 지정 클라이언트�
 - 사용자가 민감도 수준을 낮출 경우 근거 프롬프트
 
 - 재설정 및 내보내기 로그를 포함하는 도움말 및 피드백 대화 상자
+
+- Office 앱당 4시간마다 보안 및 준수 센터에서 정책 새로 고침
 
 다음 기능은 이 미리 보기 버전에서 작동하지 않습니다.
 

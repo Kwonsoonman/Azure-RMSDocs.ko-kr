@@ -4,18 +4,18 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/09/2018
+ms.date: 10/24/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: b4306a45f8bfa1f6c865f634e270ba8eafa6e8d8
-ms.sourcegitcommit: aaa3eabffc9cdc2389955de770b43ffa9fa984fd
+ms.openlocfilehash: 315c1e04d6d941643ee6625053b1cae8bd08b292
+ms.sourcegitcommit: 51c99ea4c98b867cde964f51c35450eaa22fac27
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48889464"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991380"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -54,7 +54,7 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 |요구 사항|추가 정보|
 |---------------|--------------------|
 |스캐너 서비스를 실행할 Windows Server 컴퓨터:<br /><br />- 4 코어 프로세서<br /><br />- 4GB RAM<br /><br />- 임시 파일에 대해 10GB의 사용 가능한 공간(평균)|Windows Server 2016 또는 Windows Server 2012 R2 <br /><br />참고: 비-프로덕션 환경에서 테스트 또는 평가는 [Azure Information Protection 클라이언트에서 지원하는](requirements.md#client-devices) Windows 클라이언트 운영 체제를 사용할 수 있습니다.<br /><br />이 컴퓨터는 검색할 데이터 저장소에 안정적인 고속 네트워크를 연결한 실제 또는 가상 컴퓨터일 수 있습니다.<br /><br /> 스캐너는 검색하는 각 파일에 대한 임시 파일(코어당 4개의 파일)을 생성하기에 충분한 디스크 공간이 필요합니다. 10GB의 권장 디스크 공간을 통해 4 코어 프로세서가 각각 625MB의 파일 크기를 갖는 16개의 파일을 검색할 수 있습니다. <br /><br />이 컴퓨터가 Azure Information Protection에 필요한 [인터넷이 연결](requirements.md#firewalls-and-network-infrastructure)되어 있는지 확인합니다. 조직 정책으로 인해 인터넷에 연결할 수 없는 경우 [대체 구성으로 스캐너 배포](#deploying-the-scanner-with-alternative-configurations) 섹션을 참조하세요.|
-|스캐너 구성을 저장할 SQL Server:<br /><br />- 로컬 또는 원격 인스턴스<br /><br />-스캐너를 설치하기 위한 Sysadmin 역할|SQL Server 2012는 다음 버전의 최소 버전입니다.<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />둘 이상의 스캐너 인스턴스를 설치하는 경우 각 스캐너 인스턴스에는 고유한 SQL Server 데이터베이스가 필요합니다.<br /><br />스캐너를 설치하고, 계정에 Sysadmin 역할이 있는 경우 설치 프로세스가 자동으로 AzInfoProtectionScanner 데이터베이스를 생성하며 스캐너를 실행하는 서비스 계정에 필요한 db_owner 역할을 부여합니다.  Sysadmin 역할을 부여받을 수 없거나 조직 정책에 따라 데이터베이스를 수동으로 생성하고 구성해야 하는 경우 [대체 구성으로 스캐너 배포](#deploying-the-scanner-with-alternative-configurations) 섹션을 참조하세요.|
+|스캐너 구성을 저장할 SQL Server:<br /><br />- 로컬 또는 원격 인스턴스<br /><br />-스캐너를 설치하기 위한 Sysadmin 역할|SQL Server 2012는 다음 버전의 최소 버전입니다.<br /><br />- SQL Server Enterprise<br /><br />- SQL Server Standard<br /><br />- SQL Server Express<br /><br />둘 이상의 스캐너 인스턴스를 설치하는 경우 각 스캐너 인스턴스에는 고유한 SQL Server 인스턴스가 필요합니다.<br /><br />스캐너를 설치하고, 계정에 Sysadmin 역할이 있는 경우 설치 프로세스가 자동으로 AzInfoProtectionScanner 데이터베이스를 생성하며 스캐너를 실행하는 서비스 계정에 필요한 db_owner 역할을 부여합니다.  Sysadmin 역할을 부여받을 수 없거나 조직 정책에 따라 데이터베이스를 수동으로 생성하고 구성해야 하는 경우 [대체 구성으로 스캐너 배포](#deploying-the-scanner-with-alternative-configurations) 섹션을 참조하세요.|
 |스캐너 서비스를 실행할 서비스 계정|스캐너 서비스를 실행하는 것 외에도 이 계정은 Azure AD에 대해 인증되고 Azure Information Protection 정책을 다운로드합니다. 이 계정은 Active Directory 계정이어야 하며 Azure AD와 동기화되어야 합니다. 조직 정책으로 인해 이 계정을 동기화할 수 없는 경우 [대체 구성으로 스캐너 배포](#deploying-the-scanner-with-alternative-configurations) 섹션을 참조하세요.<br /><br />이 서비스 계정에는 다음과 같은 요구 사항이 있습니다.<br /><br />- **로컬 로그온** 권한 이 권한은 스캐너를 설치하고 구성하는 데 필요하지만 작동하는 데는 필요하지 않습니다. 서비스 계정에 이 권한을 부여해야 하지만 스캐너가 파일을 검색, 분류 및 보호하는지 확인한 후에 이 권한을 제거할 수 있습니다. 조직 정책으로 인해 짧은 시간 동안에도 이 권한을 부여할 수 없는 경우 [대체 구성으로 스캐너 배포](#deploying-the-scanner-with-alternative-configurations) 섹션을 참조하세요.<br /><br />- **서비스로 로그온** 권한 스캐너 설치 중에 서비스 계정에 이 권한이 자동으로 부여됩니다. 이 권한은 스캐너의 설치, 구성 및 작동에 필요합니다. <br /><br />- 데이터 리포지토리에 대한 사용 권한: Azure Information Protection 정책에서 파일을 검색한 다음 조건을 충족하는 파일에 분류 및 보호를 적용하는 **읽기** 및 **쓰기** 권한을 부여해야 합니다. 검색 모드 전용으로 스캐너를 실행하려면 **읽기** 권한으로 충분합니다.<br /><br />- 다시 보호하거나 보호를 제거하는 레이블의 경우: 스캐너가 항상 보호된 파일에 액세스할 수 있도록 하려면 이 계정을 Azure Rights Management 서비스에 대한 [슈퍼 사용자](configure-super-users.md)로 지정하고 슈퍼 사용자 기능을 사용하도록 합니다. 보호를 적용하기 위한 계정 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](prepare.md)를 참조하세요. 또한 단계적 배포용 [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구현한 경우 구성한 온보딩 컨트롤에 이 계정이 포함되어 있는지 확인해야 합니다.|
 |Azure Information Protection 클라이언트가 Windows Server 컴퓨터에 설치되었습니다.|스캐너를 위해 전체 클라이언트를 설치해야 합니다. PowerShell 모듈만으로 클라이언트를 설치하지 마세요.<br /><br />클라이언트 설치 지침은 [관리자 가이드](./rms-client/client-admin-guide.md)를 참조하세요. 이전에 스캐너를 설치했는데 이제 스캐너를 최신 버전으로 업그레이드해야 하는 경우 [Azure Information Protection 스캐너 업그레이드](./rms-client/client-admin-guide.md#upgrading-the-azure-information-protection-scanner)를 참조하세요.|
 |자동 분류 및 필요에 따라 보호를 적용하는 구성된 레이블|Azure Information Protection 정책에서 조건을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](configure-policy-classification.md)을 참조하세요.<br /><br />파일에 보호를 적용하도록 레이블을 구성하는 방법에 대한 자세한 내용은 [Rights Management 보호를 위한 레이블을 구성하는 방법](configure-policy-protection.md)을 참조하세요.<br /><br />이러한 레이블은 전역 정책 또는 하나 이상의 [범위 지정 정책](configure-policy-scope.md)에 있을 수 있습니다.<br /><br />참고: 자동 분류를 적용하는 레이블을 구성하지 않은 경우에도 스캐너를 실행할 수 있지만, 이러한 지침에서는 이 시나리오를 다루지 않습니다. [추가 정보](#using-the-scanner-with-alternative-configurations)|
@@ -192,7 +192,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
     
         Start-AIPScan
 
-2. 스캐너가 해당 주기를 완료할 때까지 기다립니다. 스캐너가 지정한 데이터 저장소에서 모든 파일을 크롤링하면 서비스가 중지됩니다. 로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그, **Azure Information Protection**을 사용하여 서비스가 중지된 시기를 확인할 수 있습니다. 정보 이벤트 ID **911**을 찾아봅니다.
+2. 스캐너가 해당 주기를 완료할 때까지 기다립니다. 스캐너가 지정한 데이터 저장소에서 모든 파일을 크롤링하면 스캐너 서비스가 실행 중이더라도 서비스가 중지됩니다. 로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그, **Azure Information Protection**을 사용하여 스캐너가 중지된 시점을 확인할 수 있습니다. 정보 이벤트 ID **911**을 찾아봅니다.
 
 3. %*localappdata*%\Microsoft\MSIP\Scanner\Reports에 저장되고 .csv 파일 형식인 보고서를 검토합니다. 스캐너의 기본 구성에서 자동 분류에 대한 조건을 충족하는 파일만이 이러한 보고서에 포함됩니다.
     
@@ -238,7 +238,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 |PDF |.pdf|
 |텍스트|.txt; .xml; .csv|
 
-기본적으로 Office 파일 형식만 스캐너에서 보호되므로 [레지스트리를 편집](develop/file-api-configuration.md)하여 파일 형식을 지정하지 않는 경우 PDF 및 텍스트 파일은 보호되지 않습니다.
+기본적으로 Office 파일 형식만 스캐너에서 보호되므로 [레지스트리를 편집](#editing-the-registry-for-the-scanner)하여 파일 형식을 지정하지 않는 경우 PDF 및 텍스트 파일은 보호되지 않습니다.
 
 - 레지스트리에 .pdf 파일 형식을 추가하지 않는 경우: 이 파일 이름 확장명의 파일은 레이블이 지정되지만 이 레이블이 보호되도록 구성된 경우 보호가 적용되지 않습니다.
 
@@ -262,12 +262,21 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 |DigitalNegative|.dng|
 |Pfile|.pfile|
 
-스캐너에서 보호를 사용하는 레이블을 적용하는 경우 기본적으로 Office 파일 형식만 보호됩니다. 추가 파일 형식이 보호되도록 이 동작을 변경할 수 있습니다. 그러나 레이블이 문서에 일반 보호를 적용하는 경우 파일 이름 확장명을 .pfile로 변경합니다. 또한 권한 있는 사용자가 열고 해당 네이티브 형식으로 저장될 때까지 파일은 읽기 전용입니다. 텍스트 및 이미지 파일은 해당 파일 이름 확장명을 변경하고 읽기 전용으로 설정할 수도 있습니다. 
+스캐너에서 보호를 사용하는 레이블을 적용하는 경우 기본적으로 Office 파일 형식만 보호됩니다. 추가 파일 형식이 보호되도록 이 동작을 변경할 수 있습니다. 그러나 레이블이 문서에 일반 보호를 적용하는 경우 파일 이름 확장명을 .pfile로 변경합니다. 다른 파일 유형은 파일 이름 확장명도 변경할 수 있습니다. 또한 이러한 파일은 권한이 있는 사용자가 열어 원시 형식으로 저장할 때까지 읽기 전용 상태입니다.
 
-기본 스캐너 동작을 변경하려면(예: 일반적으로 다른 파일 형식 보호) 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 또는 `*` 와일드카드를 지정하여 모든 파일 형식을 보호할 수 있습니다. 자세한 내용은 개발자 지침의 [파일 API 구성](develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 또한 스캐너에만 한정되는 사항은 다음과 같습니다.
+### <a name="editing-the-registry-for-the-scanner"></a>스캐너의 레지스트리 편집
+
+Office 파일 이외의 파일 유형을 보호하기 위한 기본 스캐너 동작을 변경하려면 레지스트리를 수동으로 편집하고 보호할 추가 파일 형식을 지정해야 합니다. 자세한 내용은 개발자 지침의 [파일 API 구성](develop/file-api-configuration.md)을 참조하세요. 개발자를 위한 이 설명서에서는 일반 보호를 "PFile"이라고 합니다. 또한 스캐너에만 한정되는 사항은 다음과 같습니다.
 
 - 스캐너에는 고유한 기본 동작이 있습니다. 즉, 기본적으로 Office 파일 형식만 보호됩니다. 레지스트리가 수정되지 않은 경우, 다른 파일 형식은 스캐너에서 보호되지 않습니다.
 
+- 모든 파일이 기본 또는 일반 보호로 자동 보호되는 경우 Azure Information Protection 클라이언트와 동일한 기본 보호 동작이 필요하면 `*` 와일드카드를 레지스트리 키로, `Default`를 값 데이터로 지정합니다.
+
+레지스트리를 편집할 때 **MSIPC** 키와 **FileProtection** 키가 없으면 수동으로 생성하고 각 파일 이름 확장명에 대한 키도 생성합니다.
+
+예를 들어 스캐너가 Office 파일 이외에 PDF 파일을 보호하려면 편집 후 레지스트리의 모양이 다음 그림과 같아야 합니다.
+
+![스캐너가 보호를 적용할 수 있도록 레지스트리 편집](./media/editregistry-scanner.png)
 
 ## <a name="when-files-are-rescanned"></a>파일이 다시 검사되는 경우
 
@@ -321,7 +330,7 @@ Azure Information Protection 스캐너에서 지원하는 다음 두 가지 대�
     
     Windows 서버에 스캔할 폴더가 있을 경우 다른 컴퓨터에 스캐너를 설치하고 해당 폴더를 스캔할 네트워크 공유로 구성합니다. 파일 호스팅 기능과 파일 스캔 기능을 구분하면 이러한 서비스의 컴퓨팅 리소스가 다른 서비스와 경쟁하지 않습니다.
 
-필요한 경우 이 스캐너의 다중 인스턴스를 설치하세요. 각 스캐너 인스턴스에는 고유한 구성 데이터베이스가 필요합니다.
+필요한 경우 이 스캐너의 다중 인스턴스를 설치하세요. 스캐너 각 스캐너 인스턴스에는 SQL Server 인스턴스가 다른 고유한 구성 데이터베이스가 필요합니다.
 
 스캐너 성능에 영향을 주는 다른 요소:
 

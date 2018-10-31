@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: reference
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 5c5b5e807a80c8db3cbdb69ea5d09da1e79aec6e
-ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
+ms.openlocfilehash: 9999b450d614b4465f151f0b2df80892a83bc143
+ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49651348"
 ---
 # <a name="class-mipprotectionengineobserver"></a>class mip::ProtectionEngine::Observer 
 [ProtectionEngine](class_mip_protectionengine.md)과 관련된 알림을 받는 인터페이스입니다.
@@ -24,7 +24,7 @@ public virtual void OnGetTemplatesSuccess(const std::shared_ptr<std::vector<std:
 public virtual void OnGetTemplatesFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  템플릿 검색 시 오류가 발생될 때 호출됩니다.
 public virtual void OnGetRightsForLabelIdSuccess(const std::shared_ptr<std::vector<std::string>>& rights, const std::shared_ptr<void>& context)  |  권한이 성공적으로 검색될 때 호출됩니다.
 public virtual void OnGetRightsForLabelIdFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  레이블 ID에 대한 사용자의 권한을 검색할 때 호출됩니다.
-public virtual void OnGetGrantingLabelIdsSuccess(const std::shared_ptr<std::vector<std::string>>& lableIds, const std::shared_ptr<void>& context)  |  레이블 ID가 성공적으로 검색될 때 호출됩니다.
+public virtual void OnGetGrantingLabelIdsSuccess(const std::shared_ptr<std::vector<std::string>>& labelIds, const std::shared_ptr<void>& context)  |  레이블 ID가 성공적으로 검색될 때 호출됩니다.
 public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error, const std::shared_ptr<void>& context)  |  사용자의 레이블 ID를 검색할 때 호출됩니다.
   
 ## <a name="members"></a>멤버
@@ -81,7 +81,7 @@ public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error
 레이블 ID가 성공적으로 검색될 때 호출됩니다.
 
 매개 변수:  
-* **lableIds**: 검색된 레이블 ID 목록에 대한 참조 
+* **labelIds**:검색된 레이블 ID 목록에 대한 참조 
 
 
 * **context**: [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)에 전달된 동일한 컨텍스트

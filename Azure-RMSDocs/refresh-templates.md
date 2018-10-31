@@ -4,18 +4,18 @@ description: Azure Rights Management 서비스를 사용하는 경우 사용자�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/16/2018
+ms.date: 10/25/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8c2064f0-dd71-4ca5-9040-1740ab8876fb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b801266dfb757286599b5bd2fd3b36c9590717f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 90c046f0cf2f954e70a17d127bc99b0479115928
+ms.sourcegitcommit: a5fd0afd84b62f84c3b9f0d076fab1b674267bf3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148514"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083883"
 ---
 # <a name="refreshing-templates-for-users-and-services"></a>사용자 및 서비스를 위한 템플릿 새로 고침
 
@@ -26,12 +26,14 @@ Azure Information Protection의 Azure Rights Management 서비스를 사용하�
 |응용 프로그램 또는 서비스|템플릿을 변경한 후 새로 고침하는 방법|
 |--------------------------|---------------------------------------------|
 |Exchange Online<br /><br />전송 규칙 및 Outlook Web App에 적용 가능 |1 시간 내에 자동으로 새로 고침 - 추가 단계가 필요하지 않습니다.<br /><br />이것은 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)를 사용하는 경우입니다. 이전에 TPD(트러스트된 게시 도메인)를 가져와서 Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성한 경우 동일한 지침 집합을 사용하여 Exchange Online의 새로운 기능을 사용하도록 설정하십시오.|
-|Azure Information Protection 클라이언트|클라이언트에서 Azure Information Protection 정책을 새로 고칠 때마다 자동으로 새로 고침:<br /><br /> - Azure Information Protection 막대를 지원하는 Office 응용 프로그램이 열릴 때. <br /><br /> - 마우스 오른쪽 단추를 클릭하여 파일 또는 폴더를 분류 및 보호하려 할 때. <br /><br /> - 레이블 지정 및 보호를 위해 PowerShell cmdlet을 실행할 때(Get-AIPFileStatus 및 Set-AIPFileLabel).<br /><br /> - Azure Information Protection 스캐너 서비스가 시작될 때 및 로컬 정책이 1시간보다 오래되었을 때. 또한 스캐너 서비스는 매시간 변경 내용을 확인하고 이러한 변경 내용을 다음 검색 주기에 사용합니다.<br /><br /> - 24시간마다.<br /><br /> 또한 Azure Information Protection 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 클라이언트에서도 새로 고쳐집니다.|
+|Azure Information Protection 클라이언트|클라이언트에서 Azure Information Protection 정책을 새로 고칠 때마다 자동으로 새로 고침:<br /><br /> - Azure Information Protection 막대를 지원하는 Office 응용 프로그램이 열릴 때. <br /><br /> - 마우스 오른쪽 단추를 클릭하여 파일 또는 폴더를 분류 및 보호하려 할 때. <br /><br /> - 레이블 지정 및 보호를 위해 PowerShell cmdlet을 실행할 때(Get-AIPFileStatus 및 Set-AIPFileLabel).<br /><br /> - Azure Information Protection 스캐너 서비스가 시작될 때 및 로컬 정책이 1시간보다 오래되었을 때. 또한 스캐너 서비스는 매시간 변경 내용을 확인하고 이러한 변경 내용을 다음 검색 주기에 사용합니다.<br /><br /> - 24시간마다.<br /><br /> 또한 이 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 클라이언트에서도 새로 고쳐집니다.|
+|Azure Information Protection 통합 레이블 지정 클라이언트(미리 보기)|Office 앱당 4시간마다 자동으로 새로 고침 됩니다.<br /><br /> 또한 이 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 통합 레이블 지정 클라이언트에서도 새로 고쳐집니다.|
 |Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />- 이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />- Windows용 RMS 공유 응용 프로그램: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고치는 방법](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
 |Office 2010|사용자가 Windows에서 로그아웃했다가 다시 로그인하고 1시간까지 기다리면 자동으로 새로 고침됩니다.|
 |Exchange 온-프레미스와 Rights Management 커넥터<br /><br />전송 규칙 및 Outlook Web App에 적용 가능|자동으로 새로 고침 - 추가 단계 불필요 Outlook Web App은 하루 동안 UI를 캐시합니다.|
 |Mac용 Office 2016|자동으로 새로 고침 - 추가 단계 불필요|
 |Mac 컴퓨터용 RMS 공유 앱|자동으로 새로 고침 - 추가 단계 불필요|
+|[민감도 기능을 지원하는](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable) Office 앱|이러한 클라이언트는 템플릿을 다운로드하지 않지만, 추가 단계를 수행할 필요 없이 온라인으로 템플릿에 액세스합니다.|
 
 클라이언트 응용 프로그램에서 템플릿을 다운로드해야 하는 경우(처음에 또는 변경 내용을 위해 새로 고칠 때) 다운로드가 완료되고 새 또는 업데이트된 템플릿이 완전히 작동하기까지 최대 15분이 걸립니다. 실제 시간은 템플릿 구성의 크기 및 복잡도, 네트워크 연결 등 여러 요소에 따라 다릅니다. 
 

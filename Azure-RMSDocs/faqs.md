@@ -4,18 +4,18 @@ description: Azure Information Protection과, 데이터 보호 서비스인 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/03/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e49912fd777a97c51f9ef7b4e7cff5a2aeb2c3ad
-ms.sourcegitcommit: 1cedaa9cefea49775f574f2ede61539bc6f0b813
+ms.openlocfilehash: dbc6cfc22e887ec9866586be50ffe807f3a4cbba
+ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48794330"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49399895"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -24,6 +24,16 @@ ms.locfileid: "48794330"
 Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
 이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)의 월간 설명서 업데이트 공지에 등록됩니다.
+
+## <a name="whats-the-difference-between-azure-information-protection-and-microsoft-information-protection"></a>Azure Information Protection과 Microsoft Information Protection 간의 차이는 무엇인가요?
+
+Azure Information Protection과 달리 Microsoft Information Protection은 구입 가능한 구독 또는 제품이 아닙니다. 대신, Microsoft Information Protection은 조직의 중요한 정보를 보호하도록 지원하는 제품 및 통합 기능을 위한 프레임워크입니다.
+
+- 이 프레임워크의 개별 제품에는 Azure Information Protection, Office 365 Information Protection(예: Office 365 DLP), Windows Information Protection 및 Microsoft Cloud App Security가 있습니다. 
+
+- 이 프레임워크의 통합된 기능에는 통합 레이블 관리, Office 앱을 기반으로 한 최종 사용자 레이블 지정 환경, Windows에서 통합 레이블을 이해하고 데이터에 보호를 적용하는 기능, Microsoft Information Protection SDK와 레이블이 지정된 PDF 및 보호된 PDF를 보는 Adobe Acrobat Reader의 새로운 기능이 포함됩니다.
+
+자세한 내용은 [중요한 데이터를 보호하기 위해 사용 가능한 정보 보호 기능 발표](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)를 참조하세요.
 
 ## <a name="whats-the-difference-between-azure-information-protection-and-azure-rights-management"></a>Azure Information Protection과 Azure Rights Management의 차이는 무엇인가요?
 
@@ -68,6 +78,7 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 
 - 관리 역할이 할당된 사용자는 Azure Information Protection에 의해 보호된 문서나 이메일에서 보호를 자동으로 제거할 수 없습니다. 슈퍼 사용자로 할당된 사용자만 그렇게 할 수 있으며, 이것도 슈퍼 사용자 기능을 활성화되어 있을 때 가능합니다. 그러나 Azure Information Protection에 관리 권한을 할당한 사용자는 자신의 계정을 포함하여 사용자를 슈퍼 사용자로 할당할 수 있습니다. 이들은 슈퍼 사용자 기능을 활성화할 수도 있습니다. 이러한 작업은 관리자 로그에 기록됩니다. 자세한 내용은 [Azure 권한 관리 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](configure-super-users.md)의 보안 모범 사례 섹션을 참조하세요. 
 
+- Azure Information Protection 레이블을 Office 365로 마이그레이션하는 경우 레이블 마이그레이션 설명서에서 [관리 역할에 대한 중요한 정보](configure-policy-migrate-labels.md#important-information-about-administrative-roles) 섹션을 참조하세요.
 
 ## <a name="does-azure-information-protection-support-on-premises-and-hybrid-scenarios"></a>Azure Information Protection에서는 온-프레미스 및 하이브리드 시나리오를 지원하나요?
 
@@ -105,17 +116,19 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure Information Protection의 레이블과 Office 365의 레이블 간 차이는 무엇인가요?
 
-Azure Information Protection의 레이블을 사용하면 문서와 전자 메일이 온-프레미스에 있든 클라우드에 있든 상관 없이 일관성 있는 분류 및 보호 정책을 적용할 수 있습니다. 이 분류 및 보호는 콘텐츠가 저장된 위치 또는 이동된 방법과 무관합니다. 최근까지 Office 365는 해당 콘텐츠가 Office 365 서비스에 있는 경우 감사 및 보존을 위해 문서와 메일을 분류할 수 있는 [보존 레이블](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)만 제공했습니다. 
+최근까지 Office 365는 해당 콘텐츠가 Office 365 서비스에 있는 경우 감사 및 보존을 위해 문서와 메일을 분류할 수 있는 [보존 레이블](https://support.office.com/article/af398293-c69d-465e-a249-d74561552d30)만 제공했습니다. 반면에, Azure Information Protection의 레이블을 사용하면 문서와 메일이 온-프레미스에 있든 클라우드에 있든 상관없이 일관성 있는 분류 및 보호 정책을 적용할 수 있습니다.
 
-Microsoft는 Azure Information Protection, Office 365, Microsoft Cloud App Security 및 Windows Information Protection을 포함하는 여러 서비스를 위한 포괄적이고 통합 레이블링 전략을 달성하기 위해 노력해왔습니다.  “Microsoft Information Protection”이라는 이 전략을 들어보았을 것입니다. 이 동일한 레이블 지정 스키마 및 저장소는 소프트웨어 공급업체에서도 MIP SDK를 통해 사용할 수 있습니다.
+Microsoft Ignite 2018에서 발표된 것처럼, 이제 Office 365 보안 및 준수 센터에서 보존 레이블 외에 [민감도 레이블](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)을 생성 및 구성하는 옵션도 제공됩니다. 또한 이제 미리 보기에서 기존 Azure Information Protection 레이블을 새로운 통합 레이블 저장소로 마이그레이션할 수 있습니다. 
 
-Microsoft Ignite 2018에서 발표된 것처럼, 이제 Office 365 보안 및 준수 센터에서 보존 레이블 외에 **민감도 레이블**을 구성하는 옵션도 제공됩니다. 여러 서비스에서의 통합된 레이블 지원 상황에 대한 자세한 내용은 [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)(중요한 데이터를 보호하기 위한 정보 보호 기능 지원 발표) 블로그 게시물을 읽어보세요.
+통합 레이블 관리와 이러한 레이블 지원 방식에 대한 자세한 내용은 블로그 게시물, [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)(중요한 데이터를 보호하기 위한 사용 가능한 정보 보호 기능 발표)를 참조하세요.
+
+기존 레이블 마이그레이션에 대한 자세한 내용은 [Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법](configure-policy-migrate-labels.md)을 참조하세요.
 
 ## <a name="whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner"></a>Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?
 
-한동안 Windows Server File Classification Infrastructure를 사용하여 서류를 분류한 후 [Rights Management 커넥터](deploy-rms-connector.md)(Office 문서만 해당) 또는 [PowerShell 스크립트](./rms-client/configure-fci.md)(모든 파일 형식)를 사용하여 분류된 문서를 보호할 수 있었습니다. 
+과거에는 Windows Server File Classification Infrastructure를 사용하여 서류를 분류한 후 [Rights Management 커넥터](deploy-rms-connector.md)(Office 문서만 해당) 또는 [PowerShell 스크립트](./rms-client/configure-fci.md)(모든 파일 형식)를 사용하여 분류된 문서를 보호할 수 있었습니다. 
 
-이제 [Azure Information Protection 스캐너](deploy-aip-scanner.md)를 사용할 수 있습니다. 이 스캐너는 Azure Information Protection 클라이언트 및 Azure Information Protection 정책을 사용하여 문서(모든 파일 형식)에 레이블을 지정하여 이러한 문서가 분류되고 선택적으로 보호되도록 합니다.
+이제는 [Azure Information Protection 스캐너](deploy-aip-scanner.md)를 사용하는 것을 추천합니다. 이 스캐너는 Azure Information Protection 클라이언트 및 Azure Information Protection 정책을 사용하여 문서(모든 파일 형식)에 레이블을 지정하여 이러한 문서가 분류되고 선택적으로 보호되도록 합니다.
 
 이러한 두 솔루션의 주요 차이점은 다음과 같습니다.
 
@@ -135,7 +148,7 @@ Microsoft Ignite 2018에서 발표된 것처럼, 이제 Office 365 보안 및 �
 
 ## <a name="ive-heard-a-new-release-is-going-to-be-available-soon-for-azure-information-protectionwhen-will-it-be-released"></a>곧 새 릴리스가 Azure Information Protection용으로 나올 예정이라고 들었습니다. 언제 나오나요?
 
-기술 설명서에는 예정된 릴리스에 대한 정보가 없습니다. 이러한 종류의 정보와 릴리스 발표에 대해서는 [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection,azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)에서 최신 업데이트를 받으세요. 관심이 있는 Office 릴리스의 경우에는 [Office 블로그](https://blogs.office.com/)도 꼭 확인하세요.
+기술 설명서에는 예정된 릴리스에 대한 정보가 없습니다. 이러한 종류의 정보와 릴리스 발표에 대해서는 [Enterprise Mobility and Security Blog](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity?product=azure-information-protection,azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)를 확인하고 Twitter의 [Microsoft Mobility@MSFTMobility](https://twitter.com/MSFTMobility)에서 최신 업데이트를 받으세요. 관심이 있는 Office 릴리스의 경우에는 [Office 365 블로그](https://techcommunity.microsoft.com/t5/Office-365-Blog/bg-p/Office365Blog) 및 [Office 앱 블로그](https://techcommunity.microsoft.com/t5/Office-Apps-Blog/bg-p/OfficeAppsBlog)도 꼭 확인하세요.
 
 ## <a name="is-azure-information-protection-suitable-for-my-country"></a>Azure Information Protection이 내 국가에 적합한가요?
 

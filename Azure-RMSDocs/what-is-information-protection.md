@@ -4,16 +4,16 @@ description: Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/30/2018
+ms.date: 10/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: 0984cfc7b71c30d4a333b8cc6e24d8c3fbef216b
-ms.sourcegitcommit: 5cda0c64b486280ff0581e7f190d198b013a87d6
+ms.openlocfilehash: b789697a398a0e201cbf041b36d7cd41a82a9e0d
+ms.sourcegitcommit: 2c4e72120213407516a49286368f9b2860505f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47593764"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236835"
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -104,7 +104,7 @@ Azure Information Protection을 Exchange Online과 함께 사용하는 경우 �
 
 온-프레미스 데이터 저장소의 경우 Azure Information Protection 스캐너를 사용하여 로컬 폴더, 네트워크 공유 및 SharePoint Server 사이트와 라이브러리에서 문서를 검색, 분류 및 보호합니다. 스캐너는 Windows Server에서 서비스로 실행됩니다. 정책에서 동일한 규칙을 사용하여 중요한 정보를 검색하고 특정 레이블을 문서에 적용할 수 있습니다. 또는 파일 콘텐츠를 검사하지 않고 데이터 리포지토리의 모든 문서에 기본 레이블을 적용할 수 있습니다. 스캐너를 보고 모드에서만 사용하여 사용자가 모를 수 있는 중요한 정보를 검색할 수도 있습니다. 
 
-스캐너 배포 및 사용에 대한 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 자동으로 파일 분류 및 보호](deploy-rms-connector.md)를 참조하세요.
+스캐너 배포 및 사용에 대한 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 자동으로 파일 분류 및 보호](deploy-aip-scanner.md)를 참조하세요.
 
 클라우드 데이터 저장소의 경우 Microsoft Cloud App Security를 사용하여 Box, SharePoint Online 및 비즈니스용 OneDrive의 문서에 레이블을 적용합니다. 자세한 내용은 [Azure Information Protection 분류 레이블 자동 적용](/cloud-app-security/use-case-information-protection) 및 [Azure Information Protection 통합](/cloud-app-security/azip-integration)을 참조하세요.
 

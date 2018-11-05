@@ -4,18 +4,18 @@ description: 보호된 파일을 전송받았으나 IT 부서가 Azure에서 해
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/17/2018
+ms.date: 11/02/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 321464e50a517c17518e35a715e154d0c7c8b07d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 40cc70864d68b4bdcc1081f908539663ba8366a8
+ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146678"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915566"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>개인용 RMS 및 Azure Information Protection
 
@@ -23,7 +23,7 @@ ms.locfileid: "44146678"
 
 개인용 RMS는 Azure Information Protection으로 보호된 파일을 열어야 하는 사용자를 위한 무료 셀프 서비스 구독입니다. Azure Active Directory에서 이러한 사용자를 인증할 수 없는 경우 이 무료 등록 서비스는 사용자의 Azure Active Directory에 계정을 만들 수 있습니다. 결과적으로 이 사용자는 회사 이메일 주소를 사용하여 인증한 다음 컴퓨터 또는 모바일 장치에서 보호된 파일을 읽을 수 있습니다.
 
-개인용 RMS는 Azure Active Directory 셀프 서비스 등록을 사용합니다. 사용자가 이 구독을 사용하여 조직의 계정을 만든 경우 조직의 관리자는 사용자 계정에 대한 소유권을 요구하고 [해당 계정을 제어](/active-directory/domains-admin-takeover#external-admin-takeover)할 수 있습니다. 
+개인용 RMS는 Azure Active Directory 셀프 서비스 등록을 사용합니다. 사용자가 이 구독을 사용하여 조직의 계정을 만든 경우 조직의 관리자는 사용자 계정에 대한 소유권을 요구하고 [해당 계정을 제어](/azure/active-directory/users-groups-roles/domains-admin-takeover#external-admin-takeover)할 수 있습니다. 
 
 
 > [!NOTE]
@@ -60,5 +60,5 @@ ms.locfileid: "44146678"
 
 
 ## <a name="next-steps"></a>다음 단계
-개인용 RMS는 Azure Active Directory에서 지원하는 셀프 서비스 등록을 사용하는 한 예입니다. 작동 방법에 대한 자세한 내용은 Azure Active Directory 문서의 [Azure 셀프서비스 가입이란?](/active-directory/active-directory-self-service-signup)을 참조하세요.
+개인용 RMS는 Azure Active Directory에서 지원하는 셀프 서비스 등록을 사용하는 한 예입니다. 작동 방법에 대한 자세한 내용은 Azure Active Directory 문서의 [Azure Active Directory 셀프서비스 가입이란?](/azure/active-directory/users-groups-roles/directory-self-service-signup)을 참조하세요.
 

@@ -4,18 +4,18 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/24/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 315c1e04d6d941643ee6625053b1cae8bd08b292
-ms.sourcegitcommit: 51c99ea4c98b867cde964f51c35450eaa22fac27
+ms.openlocfilehash: 47a8633852139bf0a84e6c55321c69b1af2c2892
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991380"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751290"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -191,13 +191,23 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 1. PowerShell 세션에서 다음 명령을 실행하여 **Azure Information Protection 검사기** 서비스를 다시 시작합니다.
     
         Start-AIPScan
+    
+    또는 **Scanner**(스캐너) > **Nodes (Preview)**(노드(미리 보기)) > \**<* scanner node(스캐너 노드)*>**> **Scan now**(지금 검사) 옵션을 사용하면 Azure Portal의 **Azure Information Protection** 블레이드에서 스캐너를 시작할 수 있습니다.
 
-2. 스캐너가 해당 주기를 완료할 때까지 기다립니다. 스캐너가 지정한 데이터 저장소에서 모든 파일을 크롤링하면 스캐너 서비스가 실행 중이더라도 서비스가 중지됩니다. 로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그, **Azure Information Protection**을 사용하여 스캐너가 중지된 시점을 확인할 수 있습니다. 정보 이벤트 ID **911**을 찾아봅니다.
+2. 다음 명령을 실행하여 스캐너가 주기를 완료할 때까지 기다립니다.
+    
+    Get-AIPScannerStatus
+    
+    **검사 중**이 아니라 **유휴 상태**를 표시하는 상태를 찾습니다. 스캐너가 지정한 데이터 저장소에서 모든 파일을 크롤링하면 스캐너 서비스가 실행 중이더라도 서비스가 중지됩니다. 
+    
+    또는 **Scanner**(스캐너) > **Nodes (Preview)**(노드(미리 보기)) > \**<* scanner node(스캐너 노드)*>**> **상태** 열을 선택하여 Azure Portal의 **Azure Information Protection** 블레이드에서 상태를 볼 수 있습니다.
+    
+    로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그(**Azure Information Protection**)를 확인합니다. 이 로그도 스캐너가 검사를 완료하면 결과 요약과 함께 보고합니다. 정보 이벤트 ID **911**을 찾아봅니다.
 
 3. %*localappdata*%\Microsoft\MSIP\Scanner\Reports에 저장되고 .csv 파일 형식인 보고서를 검토합니다. 스캐너의 기본 구성에서 자동 분류에 대한 조건을 충족하는 파일만이 이러한 보고서에 포함됩니다.
     
     > [!TIP]
-    > 현재 미리 보기에서 이러한 보고서의 정보는 Azure Information Protection으로 전송되므로 Azure Portal에서 볼 수 있습니다. 자세한 내용은 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요. 
+    > 미리 보기 버전의 스캐너를 사용할 때, Azure Portal에서 거의 실시간으로 결과를 볼 수 있도록 스캐너(현재 미리 보기로 제공됨)는 이 정보를 5분마다 Azure Information Protection으로 보냅니다. 자세한 내용은 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요. 
         
     예상 대로 결과가 발생하지 않는 경우 Azure Information Protection 정책에서 지정한 조건을 세밀하게 조정해야 합니다. 이러한 경우 분류 및 필요에 따라 보호를 적용하도록 구성을 변경할 준비가 될 때까지 1~3단계를 반복합니다. 
 
@@ -213,13 +223,17 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
     
     다른 구성 설정을 변경하려는 경우가 있습니다. 예를 들어 파일 특성의 변경 여부 및 보고서에 기록된 내용을 변경하려고 합니다. 또한 Azure Information Protection 정책에 분류 수준을 낮추거나 보호를 제거하라는 근거 메시지가 필요한 설정을 포함하는 경우 이 cmdlet을 사용하여 해당 메시지를 지정합니다. 각 구성 설정에 대한 자세한 내용은 [온라인 도움말](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters)을 사용합니다. 
 
-2. 다음 명령을 실행하여 **Azure Information Protection 검사기** 서비스를 다시 시작합니다.
+2. 현재 시간을 메모하고 다음 명령을 실행하여 스캐너를 다시 시작합니다.
     
         Start-AIPScan
+    
+    또는 **Scanner**(스캐너) > **Nodes (Preview)**(노드(미리 보기)) > \**<* scanner node(스캐너 노드)*>**> **Scan now**(지금 검사) 옵션을 사용하면 Azure Portal의 **Azure Information Protection** 블레이드에서 스캐너를 시작할 수 있습니다.
 
-3. 이전처럼 이벤트 로그 및 보고서를 모니터링하여 레이블이 지정된 파일, 적용된 분류 및 보호 적용 여부를 확인합니다.
+3. 이전 단계에서 검사를 시작하면 이후 타임스탬프와 함께 정보 유형 **911**에 대한 이벤트 로그를 다시 모니터링합니다. 
+    
+    그런 다음, 보고서를 확인하여 레이블이 지정된 파일의 세부 정보, 각 파일에 적용된 분류 및 보호 적용 여부를 확인합니다. 또는 Azure Portal을 사용하여 이 정보를 보다 쉽게 확인합니다.
 
-일정을 계속해서 실행하도록 구성했기 때문에 스캐너가 모든 파일을 사용할 때 새롭게 변경된 파일이 검색되도록 새 주기를 시작합니다.
+일정을 계속해서 실행하도록 구성했기 때문에 스캐너가 모든 파일을 검사할 때 새롭게 변경된 파일이 검색되도록 새 주기를 시작합니다.
 
 
 ## <a name="how-files-are-scanned"></a>파일 검사 방법
@@ -283,6 +297,8 @@ Office 파일 이외의 파일 유형을 보호하기 위한 기본 스캐너 �
 첫 번째 검사 주기에서는 스캐너에서 구성된 데이터 저장소의 모든 파일을 검사한 다음, 후속 검사에서는 새롭거나 수정된 파일만 검사합니다. 
 
 `-Reset` 매개 변수와 함께 [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan)을 실행하여 강제로 검사 기능이 모든 파일을 다시 검사하도록 할 수 있습니다. 수동 일정에 대해 스캐너를 구성해야 합니다. 그러려면 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration)을 사용하여 `-Schedule` 매개 변수를 **수동**으로 설정해야 합니다.
+
+또는 **Scanner**(스캐너) > **Nodes (Preview)**(노드(미리 보기)) > \**<* scanner node(스캐너 노드)*>**> **Rescan all files**(모든 파일 다시 검사) 옵션을 사용하면 Azure Portal의 **Azure Information Protection** 블레이드에서 스캐너에서 모든 파일을 다시 검사하도록 할 수 있습니다.
 
 모든 파일을 다시 검사하는 작업은 보고서에 모든 파일이 포함되도록 하려는 경우에 유용하며, 이 구성은 일반적으로 스캐너가 검색 모드로 실행될 때 사용됩니다. 전체 검사가 완료되면 검사 유형이 증분 방식으로 자동으로 변경되어 후속 검사에서 새롭거나 수정된 파일만 검사됩니다.
 
@@ -425,6 +441,8 @@ Azure Information Protection 스캐너에서 지원하는 다음 두 가지 대�
 ----
 
 ## <a name="next-steps"></a>다음 단계
+
+Microsoft의 Core Services Engineering and Operations 팀이 이 스캐너를 구현한 방법에 관심이 있으세요?  기술 사례 연구 [Automating data protection with Azure Information Protection scanner](https://www.microsoft.com/itshowcase/Article/Content/1070/Automating-data-protection-with-Azure-Information-Protection-scanner)(Azure Information Protection 스캐너로 데이터 보호 자동화)를 읽으세요.
 
 [Windows Server FCI와 Azure Information Protection 스캐너의 차이점은 무엇인가요?](faqs.md#whats-the-difference-between-windows-server-fci-and-the-azure-information-protection-scanner) 확인
 

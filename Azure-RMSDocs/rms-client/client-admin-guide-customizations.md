@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/15/2018
+ms.date: 11/02/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 7657969916f69424a2823cb8b1dd79f9a50b6011
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: beac842cdb8cfde5b3a209f3e37084828d3df7ba
+ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382649"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915583"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -302,13 +302,11 @@ Secure Islands를 사용하여 문서를 보호한 경우 보호된 텍스트 �
 
 - Azure Information Protection 뷰어에서는 이러한 보호된 파일을 열 수 있습니다.
 
-- 파일 탐색기 및 PowerShell은 Azure Information Protection을 사용하여 이러한 파일의 보호를 해제하거나 다시 보호할 수 있습니다.
-
-- 파일 탐색기, PowerShell 및 Azure Information Protection 스캐너는 이러한 파일의 레이블을 지정할 수 있습니다.
-
 - Azure Information Protection 스캐너는 중요한 정보를 위해 이러한 파일을 검사할 수 있습니다.
 
-- [마이그레이션 클라이언트 사용자 지정 레이블 지정](#migrate-labels-from-secure-islands-and-other-labeling-solutions) 기능을 사용하여 이러한 보호된 파일의 Secure Islands 레이블을 Azure Information Protection 레이블로 변환할 수 있습니다.
+- 파일 탐색기, PowerShell 및 Azure Information Protection 스캐너는 이러한 파일의 레이블을 지정할 수 있습니다. 그 결과, Azure Information Protection의 새 보호를 적용하거나 Secure Islands의 기존 보호를 제거하는 Azure Information Protection 레이블을 적용할 수 있습니다.
+
+- [마이그레이션 클라이언트 사용자 지정 레이블 지정](#migrate-labels-from-secure-islands-and-other-labeling-solutions) 기능을 사용하여 이러한 보호된 파일의 Secure Islands 레이블을 Azure Information Protection 레이블로 자동으로 변환할 수 있습니다.
 
 ## <a name="migrate-labels-from-secure-islands-and-other-labeling-solutions"></a>Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션
 

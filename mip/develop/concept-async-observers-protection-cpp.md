@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: d7077678ba336b031f7a8f812a3c4e90d8c5b05a
-ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
+ms.openlocfilehash: 35c0fb8eb358c5872ab378755d303425cc8e80a4
+ms.sourcegitcommit: 2c4e72120213407516a49286368f9b2860505f56
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48251712"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236818"
 ---
 # <a name="microsoft-information-protection-sdk---protection-api-observers"></a>Microsoft Information Protection SDK - 보호 API 관찰자
 
@@ -25,7 +25,7 @@ ms.locfileid: "48251712"
 
 아래 예제에서는 SDK 샘플에서도 사용되는 promise/future 패턴을 보여 주며, 원하는 콜백 동작을 구현하기 위해 확장할 수 있습니다. 
 
-## <a name="protection-protection-observer-implementation"></a>보호 - 보호 관찰자 구현
+## <a name="protectionprofile-observer-implementation"></a>ProtectionProfile 관찰자 구현
 
 다음 예제에서는 `mip::ProtectionProfile::Observer`에서 파생된 `ProtectionProfileObserverImpl` 클래스를 만들었습니다. 멤버 함수는 샘플 전체에서 사용되는 promise/future 패턴을 사용하도록 재정의되었습니다.
 

@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 10/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4ccf6468ff1cfb2ee786e1f1bef95c9c07f39afe
-ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
+ms.openlocfilehash: b05b41b802b54d874d13dcf13f541374d4150564
+ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49399912"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751256"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -103,6 +103,8 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
     
     - SharePoint Server 2010은 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객에 대해 지원됩니다.
     
+- 중앙 위치에서 스캐너를 관리할 수 있는, Azure Portal의 새 **Azure Information Protection - Nodes (Preview)**(Azure Information Protection - 노드(미리 보기)) 블레이드에 대한 지원입니다. Azure에 연결된, 배포된 스캐너의 정보가 5분마다 업데이트됩니다. 이 블레이드에서 일회성 검사를 위해 스캐너를 시작하고, 모든 파일을 다시 검사하고, 스캐너의 상태를 확인하며, 검색 속도를 볼 수 있습니다.
+
 **수정 사항**
 
 - Azure Information Protection 스캐너:
@@ -111,7 +113,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
     
     - 스캐너 보고서에는 Office 문서에 대한 "마지막으로 수정한 사용자"가 포함됩니다.
     
-    - 이제 [파일 API 구성](../develop/file-api-configuration.md) 지침에 설명된 대로 레지스트리를 편집할 때 `*` 와일드카드를 사용하여 모든 파일 형식을 보호할 수 있습니다.
+    - 이제 [스캐너용 레지스트리 편집](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner) 섹션에 설명된 대로 레지스트리를 편집할 때 `*` 와일드카드를 사용하여 모든 파일 형식을 보호할 수 있습니다.
 
 - PowerShell 또는 스캐너를 사용하여 분류하고 보호하는 경우 Office 문서 메타데이터를 제거하거나 암호화하지 않습니다.
 

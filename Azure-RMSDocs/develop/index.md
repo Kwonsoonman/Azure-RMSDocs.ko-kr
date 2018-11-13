@@ -1,23 +1,22 @@
 ---
-title: "RMS 개발자 가이드 | Azure RMS"
-description: "현재 세 가지 세대의 Rights Management SDK를 사용할 수 있습니다."
-keywords: 
-author: bruceperlerms
+title: RMS 개발자 가이드 | Azure RMS
+description: 현재 세 가지 세대의 Rights Management SDK를 사용할 수 있습니다.
+keywords: ''
+author: bryanla
 manager: mbaldwin
-ms.date: 02/23/2017
-ms.topic: article
-ms.prod: azure
+ms.date: 09/07/2018
+ms.topic: conceptual
 ms.service: information-protection
-ms.technology: techgroup-identity
 ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 899c05d233ec31db27cee058982c98d8dd809c3a
-ms.sourcegitcommit: 04eb4990e2bf0004684221592cb93df35e6acebe
+ms.openlocfilehash: 6f964c6a6cf36cbd6f78cf58096f8c912fb0ff68
+ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/30/2017
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "51527931"
 ---
 # <a name="rms-developers-guide"></a>RMS 개발자 가이드
 
@@ -48,5 +47,3 @@ ms.lasthandoff: 06/30/2017
 | [UI 라이브러리 및 샘플 앱](https://github.com/AzureAD/rms-sdk-ui-for-ios) |iOS|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 이상 버전의 4.x SDK|GitHub의 **iOS용 UI 라이브러리 및 샘플 앱**은 빨리 시작하고 앱에서 표준 UI를 다시 사용할 수 있게 해줍니다.|
 | [UI 라이브러리 및 샘플 앱](https://github.com/AzureAD/rms-sdk-ui-for-android) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 이상 버전의 4.x SDK|GitHub의 **Android용 UI 라이브러리 및 샘플 앱**은 빨리 시작하고 앱에서 표준 UI를 다시 사용할 수 있게 해줍니다.|
 | [Android 사용 시나리오](https://msdn.microsoft.com/en-us/library/dn758246(v=vs.85).aspx) |Android|[RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) 이상 버전의 4.x SDK|**Java 코드 예제**는 RMS SDK를 익히는 데 중요한 개발 시나리오를 나타냅니다. 예를 들어 Microsoft 보호된 파일 형식, 사용자 지정 보호된 파일 형식 및 사용자 지정 UI 컨트롤 사용이 포함됩니다.|
-
-[!INCLUDE[Commenting house rules](../includes/houserules.md)]

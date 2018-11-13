@@ -1,12 +1,17 @@
 ---
 layout: LandingPage
 ms.topic: landing-page
-ms.openlocfilehash: 16adbfde4f2b0cf3673b0f9d51b63065b6817d95
-ms.sourcegitcommit: dd53f3dc2ea2456ab512e3a541d251924018444e
+ms.service: information-protection
+author: cabailey
+manager: mbaldwin
+ms.author: cabailey
+ms.date: 09/26/2018
+ms.openlocfilehash: 4319abfc402b8cf16272bee856118864a0bb532b
+ms.sourcegitcommit: 860955fb2c292b3ca5910cd41095363f58caf553
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29772978"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "51527979"
 ---
 # <a name="azure-information-protection-documentation"></a>Azure Information Protection 설명서
 
@@ -14,7 +19,7 @@ ms.locfileid: "29772978"
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/information-protection/understand-explore/what-is-information-protection#resources-for-azure-information-protection">
+        <a href="/information-protection/understand-explore/what-is-information-protection#microsoft-ignite">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -24,7 +29,7 @@ ms.locfileid: "29772978"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Microsoft Ignite 2016의 Azure Information Protection 보기</h3>
+                        <h3>Microsoft Ignite 2018의 Azure Information Protection 보기</h3>
                     </div>
                 </div>
             </div>

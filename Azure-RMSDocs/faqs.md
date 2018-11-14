@@ -4,24 +4,24 @@ description: Azure Information Protection과, 데이터 보호 서비스인 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: dbc6cfc22e887ec9866586be50ffe807f3a4cbba
-ms.sourcegitcommit: 00e508f97c9191035763384959a8b8fa9f742d4c
+ms.openlocfilehash: 04cafed6317bd17f08e6b09a7f0b42b2cb2e20c7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49399895"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026675"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
+Azure Information Protection 또는 Rights Management 보호(Azure RMS)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
 이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)의 월간 설명서 업데이트 공지에 등록됩니다.
 
@@ -47,6 +47,10 @@ Azure Information Protection은 조직의 문서와 메일을 분류하고, 레�
 [Azure Information Protection 가격 책정](https://azure.microsoft.com/en-us/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 참조하세요. 
 
 Azure Rights Management 데이터 보호를 포함하는 Office 365 구독이 있는 경우 [Azure Information Protection 라이선싱 데이터시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)를 다운로드하세요. 여기에는 라이선스에 대한 질문과 대답도 포함됩니다.
+
+## <a name="ive-just-got-my-azure-information-protection-subscriptionhow-do-i-get-going"></a>방금 Azure Information Protection 구독을 구입했습니다. 이제 어떻게 해야 하나요?
+
+Azure Information Protection을 처음 사용하며 좀 더 빠르게 익숙해지고 싶은 경우 먼저 [빠른 시작](quickstart-viewpolicy.md)으로 가서 [일반적인 시나리오에 대한 방법 가이드](how-to-guides.md)를 검토하세요.
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure Information Protection 클라이언트는 분류 및 레이블이 포함된 구독에만 사용할 수 있나요?
 
@@ -158,7 +162,7 @@ Microsoft Ignite 2018에서 발표된 것처럼, 이제 Office 365 보안 및 �
 
 GDPR(일반 데이터 보호 규정)을 충족하기 위한 Azure Information Protection의 활용 방법을 확인하려면 비디오에서 [Microsoft 365에서는 GDPR에 도움이 되는 Information Protection 전략을 제공합니다.](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr) 블로그 게시물 공지를 참조하세요.
 
-## <a name="where-can-i-find-supporting-information-for-azure-information-protectionsuch-as-legal-compliance-and-slas"></a>법적 정보, 규정 준수, SLA 등의 Azure Information Protection 관련 지원 정보는 어디서 찾을 수 있나요?
+## <a name="where-can-i-find-supporting-information-for-azureinformation-protectionsuch-as-legal-compliance-and-slas"></a>법적 정보, 규정 준수, SLA 등의 Azure Information Protection 관련 지원 정보는 어디서 찾을 수 있나요?
 [Azure Information Protection에 대한 규정 준수 및 지원 정보](./compliance.md)를 참조하세요.
 
 ## <a name="how-can-i-report-a-problem-or-send-feedback-for-azure-information-protection"></a>Azure Information Protection에 대한 문제를 보고하거나 의견을 보낼 수 있나요?

@@ -4,18 +4,18 @@ description: 특정 사용자에 대해 다른 설정과 레이블을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b134785-0353-4109-8fa7-096d1caa2242
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b40431632d02445d12e1faac012c28c1b1e6f8e2
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: f1623c14377feb545f945a447363e7f3d12e8dd3
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169960"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026573"
 ---
 # <a name="how-to-configure-the-azure-information-protection-policy-for-specific-users-by-using-scoped-policies"></a>범위 지정 정책을 사용하여 특정 사용자용 Azure Information Protection 정책을 구성하는 방법
 
@@ -57,5 +57,5 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 ## <a name="next-steps"></a>다음 단계
 
-기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 참조하세요.
+기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 애플리케이션에서 결과 동작을 확인하고 [정책 편집 및 새 레이블 만들기](infoprotect-quick-start-tutorial.md) 자습서를 진행해 보세요.
 

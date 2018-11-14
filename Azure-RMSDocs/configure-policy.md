@@ -4,18 +4,18 @@ description: 분류, 레이블 지정 및 보호를 구성하려면 Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/02/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: bc6ec93104f2fc4f037b2410d53d7e3e70874725
-ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
+ms.openlocfilehash: 98c3d09a72a74ce8f2abc679df1e155b3a9ee5d8
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49651331"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026590"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -92,35 +92,7 @@ Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 �
 3. 정책을 보고 편집하려면 메뉴 옵션에서 **정책**을 선택합니다. 모든 사용자가 가져오는 정책을 보고 편집하려면 **전역** 정책을 선택합니다. 선택한 사용자에 대한 사용자 지정 정책을 만들려면 **새 정책 추가**를 선택합니다.
     
 
-### <a name="overview-of-the-policy"></a>정책 개요
-
-이 Azure Information Protection 정책에는 구성할 수 있는 다음 요소가 포함됩니다.
-    
-- 관리자와 사용자가 문서 및 이메일을 분류하고 선택적으로 보호하는 데 사용할 수 있는 레이블.
-
-- 사용자의 Office 응용 프로그램에 표시되는 Information Protection 표시줄의 제목 및 도구 설명.
-
-- 문서 및 전자 메일을 분류하기 위한 시작점으로 기본 레이블을 설정할 수 있는 옵션.
-
-- 사용자가 문서를 저장하고 전자 메일을 보낼 때 분류를 적용할 수 있는 옵션.
-
-- 원래보다 민감도 수준이 낮은 레이블을 선택한 경우 이유를 제공하라는 메시지를 사용자에게 표시할 수 있는 옵션.
-
-- 첨부 파일에 따라 메일 메시지에 자동으로 레이블을 지정할 수 있는 옵션.
-
-- Information Protection 막대가 Office 응용 프로그램에 표시되는지 여부를 제어하는 옵션.
-
-- [전달 안 함] 단추가 Outlook에 표시되는지 여부를 제어하는 옵션.
-
-- 사용자가 문서에 대한 고유 권한을 지정할 수 있는 옵션.
-
-- 사용자를 위한 사용자 지정 도움말 링크를 제공하는 옵션.
-
-Azure Information Protection은 5개의 기본 레이블을 포함하는 [기본 정책](configure-policy-default.md)과 함께 제공됩니다. 이러한 레이블 중 두 가지는 필요할 때 하위 범주를 제공하는 하위 레이블을 포함합니다. 하위 레이블에 대한 레이블이 구성된 경우 사용자가 기본 레이블을 선택할 수 없지만 하위 레이블 중 하나를 선택해야 합니다.
-
-Azure Information Protection 레이블은 조직에서 일반적으로 만들고 저장하는 최저 분류인 개인 데이터부터 최고 분류인 극비 데이터에 이르기까지 전체 범위의 데이터와 함께 사용할 수 있습니다. 
-
-기본 레이블을 변경하지 않고 사용하거나, 이를 사용자 지정하거나, 삭제하고 새 레이블을 만들 수 있습니다. 다음 섹션의 링크에서 관련 옵션을 찾아 구성하는 방법을 자세히 확인할 수 있습니다.
+### <a name="making-changes-to-the-policy"></a>정책 변경
 
 원하는 수의 레이블을 만들 수 있습니다. 하지만 사용자가 올바른 레이블을 쉽고 보고 선택하기에 레이블이 너무 많아지기 시작하면 사용자와 관련된 레이블만 표시되도록 범위 지정 정책을 만듭니다. 보호가 적용되는 레이블의 상한선은 500입니다.
 
@@ -172,7 +144,11 @@ Azure Information Protection 클라이언트는 지원되는 Office 응용 프�
 
 ## <a name="next-steps"></a>다음 단계
 
-기본 정책을 사용자 지정하는 방법에 대한 예제를 보려면 Office 응용 프로그램에서 결과 동작을 확인하고 [Azure Information Protection 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 참조하세요.
+Azure Information Protection 정책을 사용자 지정하고 결과 동작을 확인하는 방법에 대한 예제를 보려면 다음 자습서를 시도해 보세요.
+
+- [Azure Information Protection 정책 편집 및 새 레이블 만들기](infoprotect-quick-start-tutorial.md)
+
+- [함께 작동하는 Azure Information Protection 정책 설정 구성](infoprotect-settings-tutorial.md)
 
 정책에 수행되는 방법을 알아보려면 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요.
 

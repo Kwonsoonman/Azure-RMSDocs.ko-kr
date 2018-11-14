@@ -4,16 +4,15 @@ description: Azure Information Protection에 대한 기본 정책을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/09/2018
-ms.topic: article
+ms.date: 11/06/2018
+ms.topic: conceptual
 ms.service: information-protection
-ms.assetid: 671281c8-f0d1-42b6-aae3-681d1821e2cf
-ms.openlocfilehash: ada4e4b2b7f8ef4bcf95307184d9c262a930c9f0
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: d74dfcd35dca2f3ab5e88a66eaaba37b13636e4d
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807325"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223979"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>기본 Azure Information Protection 정책
 
@@ -21,19 +20,19 @@ ms.locfileid: "42807325"
 
 다음 정보를 사용하여 Azure Information Protection에 대한 기본 정책을 구성하는 방법을 이해할 수 있습니다.
 
-관리자가 처음 Azure Portal을 사용하여 Azure Information Protection 서비스에 연결하면 해당 테넌트에 대한 기본 정책이 만들어집니다. 경우에 따라 Microsoft에서 기본 정책을 변경할 수 있지만, 기본 정책이 수정되기 전에 이미 서비스를 사용하고 있었던 경우 이전 버전의 기본 정책을 구성하고 프로덕션 환경에 배포했을 수 있으므로 이전 버전의 기본 정책은 업데이트되지 않습니다.
+관리자가 처음 Azure Portal을 사용하여 Azure Information Protection 서비스에 연결하면 해당 테넌트에 대한 Azure Information Protection 기본 정책이 만들어집니다. 경우에 따라 Microsoft에서 기본 정책을 변경할 수 있지만, 기본 정책이 수정되기 전에 이미 서비스를 사용하고 있었던 경우 이전 버전의 기본 정책을 구성하고 프로덕션 환경에 배포했을 수 있으므로 이전 버전의 Azure Information Protection 기본 정책은 업데이트되지 않습니다.
 
-다음 값을 참조하여 정책을 기본값으로 되돌리거나 정책을 최신 값으로 업데이트할 수 있습니다.
+다음 값을 참조하여 Azure Information Protection 정책을 기본값으로 되돌리거나 Azure Information Protection 정책을 최신 값으로 업데이트할 수 있습니다.
 
 ## <a name="current-default-policy"></a>현재 기본 정책
 
-이 버전의 기본 정책은 2017년 7월 31일에 생성되었습니다.
+Azure Information Protection 기본 정책의 이 버전은 2017년 7월 31일에 만든 것입니다.
 
-이 기본 정책은 Azure Rights Management 서비스를 활성화할 때 생성되며, 2018년 2월부터 새 테넌트에 적용됩니다. 자세한 내용은 블로그 게시물 알림인 [Improvements to the protection stack in Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection)(Azure Information Protection의 보호 스택에 대한 개선 사항)을 참조하세요.
+이 Azure Information Protection 기본 정책은 Azure Rights Management 서비스를 활성화할 때 생성되며, 2018년 2월부터 새 테넌트에 적용됩니다. 자세한 내용은 블로그 게시물 알림인 [Improvements to the protection stack in Azure Information Protection](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/08/improvements-to-the-protection-stack-in-azure-information-protection)(Azure Information Protection의 보호 스택에 대한 개선 사항)을 참조하세요.
 
-이 기본 정책은 정책을 만들기 전에 수동으로 [서비스를 활성화](activate-service.md)하는 경우에도 생성됩니다. 
+이 Azure Information Protection 기본 정책은 Azure Information Protection 정책을 만들기 전에 수동으로 [서비스를 활성화](activate-service.md)하는 경우에도 생성됩니다. 
 
-이 서비스가 활성화되지 않은 경우 기본 정책에서는 다음 하위 레이블에 대한 보호를 구성하지 않습니다.
+이 서비스가 활성화되지 않은 경우 Azure Information Protection 기본 정책에서는 다음 하위 레이블에 대한 보호를 구성하지 않습니다.
 
 - **Confidential \ All Employees**
 
@@ -43,11 +42,11 @@ ms.locfileid: "42807325"
 
 - **Highly Confidential \ Recipients Only** 
 
-이러한 하위 레이블이 보호를 자동으로 구성하지 않은 경우 기본 정책이 [이전 기본 정책](#default-policy-before-july-31-2017)과 동일하게 유지됩니다.
+이러한 하위 레이블이 보호를 자동으로 구성하지 않은 경우 Azure Information Protection 기본 정책이 [이전 기본 정책](#default-policy-before-july-31-2017)과 동일하게 유지됩니다.
 
 보호가 **모든 직원** 하위 레벨에 적용된 경우 Azure Portal에서 레이블로 자동 전환되는 기본 템플릿을 사용하여 보호가 구성됩니다. 이 템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
 
-2017년 8월 30일부터 이 버전의 기본 정책에는 여러 언어의 레이블 이름 및 설명이 포함됩니다. 
+2017년 8월 30일부터 이 버전의 Azure Information Protection 기본 정책에는 여러 언어의 레이블 이름 및 설명이 포함됩니다. 
 
 #### <a name="more-information-about-the-recipients-only-sublabel"></a>받는 사람만 하위 레벨에 대한 자세한 내용
 

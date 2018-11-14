@@ -4,18 +4,18 @@ description: 다음 단계에 따라 조직에 대해 Azure Information Protecti
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4d1a63ac3ea5fae9782588b1779d7c7950738e23
-ms.sourcegitcommit: 3b41a6e730fa40660a2bdf5b1a73d155c87aacc2
+ms.openlocfilehash: 4e2fa20d542a9509476c78ebe21143e49863b788
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48834609"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026828"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure Information Protection 배포 로드맵
 
@@ -23,7 +23,7 @@ ms.locfileid: "48834609"
 
 다음 단계를 권고 사항으로 사용하여 조직에 대해 Azure Information Protection을 준비, 구현 및 관리할 수 있습니다.
 
-그러나 프로덕션 환경에서 롤아웃하지 않고 직접 Azure Information Protection을 빠르게 시도하려는 경우 [Azure Information Protection에 대한 빠른 시작 자습서](./infoprotect-quick-start-tutorial.md)를 참조하세요.
+그러나 시나리오 기반 지침을 원할 경우 [Azure Information Protection을 사용하는 일반적인 시나리오에 대한 방법 가이드](how-to-guides.md)를 참조하세요.
 
 > [!NOTE]
 > 제품 릴리스 로드맵을 찾으려면 [새 릴리스 및 업데이트 섹션에 대한 정보](information-support.md#information-about-new-releases-and-updates)를 참조하세요.
@@ -32,7 +32,7 @@ ms.locfileid: "48834609"
 
 ### <a name="identify-your-deployment-roadmap"></a>배포 로드맵 식별
 
-Azure Information Protection을 배포하려면 다음 단계를 수행하기 전에 먼저 [Azure Information Protection 요구 사항](./requirements.md)을 검토해야 합니다.
+Azure Information Protection을 배포하려면 다음 단계를 구현하기 전에 먼저 [Azure Information Protection 요구 사항](./requirements.md)을 검토해야 합니다.
 
 그런 후 조직에 적용 가능하고, 필요한 [구독 기능](https://azure.microsoft.com/pricing/details/information-protection/)과 일치하는 배포 로드맵을 선택합니다.
 
@@ -59,7 +59,7 @@ Azure Information Protection을 사용하기 전에 사용자 계정 및 그룹�
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>3단계: 분류 및 레이블 지정 구성 및 배포
 
 > [!TIP]
-> **선택 사항이지만 권장됨**: [Azure Information Protection 스캐너](deploy-aip-scanner.md)를 배포하여 로컬 데이터 저장소에 있는 중요한 정보를 확인합니다. 이 스캐너가 찾는 정보는 데이터 분류에 도움이 되고, 필요한 레이블과 보호가 필요한 파일에 대한 귀중한 정보를 제공합니다.
+> **선택 사항이지만 권장됨**: Azure Information Protection 검사 기능을 배포하여 로컬 데이터 저장소에 있는 중요한 정보를 확인합니다. 이 시나리오를 다루는 [빠른 시작](quickstart-findsensitiveinfo.md)을 사용할 수 있습니다. 이 스캐너가 찾는 정보는 데이터 분류에 도움이 되고, 필요한 레이블과 보호가 필요한 파일에 대한 귀중한 정보를 제공합니다.
 > 
 > Windows Server의 로컬 파일, 네트워크 공유의 파일, 온-프레미스 버전의 SharePoint 파일에서 잘 알려진 중요한 정보 형식을 찾도록 스캐너를 구성할 수 있습니다. 이 구성에서는 레이블을 구성하거나 분류법을 정의하지 않아도 되므로, 이러한 방식으로 스캐너를 실행하는 것은 배포 초기 단계에 적합합니다. 또한 레이블 조건을 구성할 때까지 이 스캐너 구성과 다음 배포 단계를 함께 사용할 수 있습니다.
 
@@ -113,7 +113,7 @@ Azure Information Protection을 사용하기 전에 사용자 계정 및 그룹�
 
 3. 데이터 복구를 위한 슈퍼 사용자 기능 구성
     
-    Azure Information Protection이 보호하는 파일을 검사해야 하는 기존 IT 서비스(DLP(데이터 손실 방지) 솔루션, CEG(콘텐츠 암호화 게이트웨이) 및 맬웨어 방지 제품)가 있는 경우 Azure Rights Management에 대한 슈퍼 사용자가 되도록 서비스 계정을 구성합니다. 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](./configure-super-users.md)을 참조하세요.
+    Azure Information Protection이 보호하는 파일을 검사해야 하는 기존 IT 서비스[DLP(데이터 손실 방지) 솔루션, CEG(콘텐츠 암호화 게이트웨이) 및 맬웨어 방지 제품]가 있는 경우 Azure Rights Management에 대한 슈퍼 사용자가 되도록 서비스 계정을 구성합니다. 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](./configure-super-users.md)을 참조하세요.
 
 4. 대량으로 기존 파일 분류 및 보호
     
@@ -179,7 +179,7 @@ Azure Information Protection에서 보호 서비스 사용을 시작하기 전�
 
 3. 데이터 복구를 위한 슈퍼 사용자 기능 구성
     
-    Azure Information Protection이 보호하는 파일을 검사해야 하는 기존 IT 서비스(DLP(데이터 손실 방지) 솔루션, CEG(콘텐츠 암호화 게이트웨이) 및 맬웨어 방지 제품)가 있는 경우 Azure Rights Management에 대한 슈퍼 사용자가 되도록 서비스 계정을 구성합니다. 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](./configure-super-users.md)을 참조하세요.
+    Azure Information Protection이 보호하는 파일을 검사해야 하는 기존 IT 서비스[DLP(데이터 손실 방지) 솔루션, CEG(콘텐츠 암호화 게이트웨이) 및 맬웨어 방지 제품]가 있는 경우 Azure Rights Management에 대한 슈퍼 사용자가 되도록 서비스 계정을 구성합니다. 자세한 내용은 [Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성](./configure-super-users.md)을 참조하세요.
 
 4. 대량으로 기존 파일 보호 
     

@@ -4,18 +4,18 @@ description: Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/19/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 00daf488568fef8569f97db378b771383a221ce3
-ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
+ms.openlocfilehash: 92b7ca3feceb70bc9b8b085b58c26231d2ae70ce
+ms.sourcegitcommit: 8a4bab8dc6ee4c322a54d79091af04ec9449e5c2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473820"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51020057"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -32,7 +32,7 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하려면 [Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 기능 목록을 검토합니다.
 
 > [!TIP]
-> 개인 메일 주소에 보호된 메일을 보내려면, Office 365 계획 또는 Exchange Online 독립 실행형 계획이 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 지원하는지 확인하세요. 예: Gmail, Yahoo 및 Microsoft 다음 리소스를 확인합니다.
+> 개인 이메일 주소에 보호된 이메일을 보내려면, Office 365 계획 또는 Exchange Online 독립 실행형 계획이 [Office 365 메시지 암호화의 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 지원하는지 확인하세요. 예: Gmail, Yahoo 및 Microsoft 다음 리소스를 확인합니다.
 >
 > [Exchange Online 서비스 설명](https://technet.microsoft.com/library/exchange-online-service-description.aspx)
 >
@@ -44,7 +44,7 @@ Azure Information Protection을 조직에 배포하기 전에 다음 필수 구�
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
-Azure Information Protection에 대해 사용자 인증 및 권한 부여를 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)의 사용자 계정을 사용하려는 경우 디렉터리 통합도 구성해야 합니다.
+Azure Information Protection에 대해 사용자 인증 및 권한 부여를 지원하려면 조직에 Azure AD(Azure Active Directory)가 있어야 합니다. 또한 온-프레미스 디렉터리(AD DS)에서 사용자 계정을 사용하려면 디렉터리 통합도 구성해야 합니다.
 
 Azure Information Protection에 대해 SSO(Single Sign-On)가 지원되므로 사용자에게 자격 증명을 입력하라는 메시지가 반복해서 표시되지 않습니다. 페더레이션에 다른 공급업체 솔루션을 사용하는 경우에는 해당 공급업체에 Azure AD용으로 구성하는 방법을 확인하세요. WS-Trust는 이러한 솔루션에서 Single Sign-On을 지원하기 위해 공통으로 필요합니다. 
 
@@ -111,8 +111,6 @@ Azure Information Protection 클라이언트는 동일한 컴퓨터에 여러 �
 특정 연결을 허용하도록 구성된 방화벽 또는 유사한 중개 네트워크 장치가 있는 경우 네트워크 연결 요구 사항은 Office 문서 [Office 365 URL 및 IP 주소 범위](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)에 포함되어 있습니다. **Microsoft 365 Common 및 Office Online** 섹션을 참조하세요.
 
 Office 문서의 정보 외에 Azure Information Protection과 관련하여 다음 사항에 유의하세요.
-
-- **informationprotection.hosting.portal.azure.net**에 대한 TCP 443의 HTTPS 트래픽을 허용합니다.
 
 - 인증이 필요한 웹 프록시를 사용하는 경우 사용자의 Active Directory 로그온 자격 증명으로 통합된 Windows 인증을 사용하도록 구성해야 합니다.
 

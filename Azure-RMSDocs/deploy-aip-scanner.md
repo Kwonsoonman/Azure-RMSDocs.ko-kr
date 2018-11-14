@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 47a8633852139bf0a84e6c55321c69b1af2c2892
-ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
+ms.openlocfilehash: b97b000aaeb545592910a32b00e88ad6dd579ab1
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751290"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026794"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -326,7 +326,9 @@ Azure Information Protection 스캐너에서 지원하는 다음 두 가지 대�
     
     이 구성에서는 [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration) cmdlet을 사용하여 *DiscoverInformationTypes* 매개 변수를 **All**로 설정합니다.
     
-    스캐너는 Azure Information Protection 정책의 레이블에 대해 지정한 모든 사용자 지정 조건과 Azure Information Protection 정책의 레이블에 대해 지정할 수 있는 정보 유형 목록을 사용합니다. 
+    스캐너는 Azure Information Protection 정책의 레이블에 대해 지정한 모든 사용자 지정 조건과 Azure Information Protection 정책의 레이블에 대해 지정할 수 있는 정보 유형 목록을 사용합니다.
+    
+    다음 빠른 시작에서는 [빠른 시작: 보유한 중요한 정보 찾기](quickstart-findsensitiveinfo.md) 구성을 사용합니다.
 
 ## <a name="optimizing-the-performance-of-the-scanner"></a>스캐너 성능 최적화
 

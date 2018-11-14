@@ -4,18 +4,18 @@ description: Azure RMS의 작동 방식과 Azure RMS에서 사용하는 암호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed6c964e-4701-4663-a816-7c48cbcaf619
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 821038f555a73e89748541d5b512d5a631094fa8
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 19b45c3e24de5eba9f0bd243baf73797b66431f7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149364"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026777"
 ---
 # <a name="how-does-azure-rms-work-under-the-hood"></a>Azure RMS는 어떤 방식으로 작동합니까? 기본적인 이해
 
@@ -160,9 +160,9 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 ## <a name="next-steps"></a>다음 단계
 
-Azure Rights Management Service에 대해 자세히 알아보려면 **이해 및 탐색** 섹션에 나와 있는 [응용 프로그램에서 Rights Management Service를 지원하는 방법](applications-support.md) 등의 다른 문서를 사용하여 정보 보호 솔루션을 제공하기 위해 기존 응용 프로그램을 Azure Rights Management와 통합하는 방법을 확인합니다. 
+Azure Rights Management Service에 대해 자세히 알아보려면 **이해 및 탐색** 섹션에 나와 있는 [에서 Rights Management Service를 지원하는 방법](applications-support.md) 등의 다른 문서를 사용하여 정보 보호 솔루션을 제공하기 위해 기존 애플리케이션을 Azure Rights Management와 통합하는 방법을 확인합니다. 
 
-Azure Rights Management Service 구성 및 사용 시 나올 수 있는 용어를 파악할 수 있도록 [Azure Information Protection 용어](./terminology.md)를 검토하고, 배포를 시작하기 전에 [Azure Information Protection에 대한 요구 사항](requirements.md)도 확인하세요. 직접 사용해 보려는 경우에는 [Azure Information Protection에 대한 빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 참조하세요.
+Azure Rights Management Service 구성 및 사용 시 나올 수 있는 용어를 파악할 수 있도록 [Azure Information Protection 용어](./terminology.md)를 검토하고, 배포를 시작하기 전에 [Azure Information Protection에 대한 요구 사항](requirements.md)도 확인하세요. 이 기능을 직접 사용해 보려는 경우에는 [정책 편집 및 새 레이블 만들기](infoprotect-quick-start-tutorial.md) 자습서를 사용하세요.
 
 그러나 조직에 대해 데이터 보호 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)에서 배포 단계 및 방법 지침 링크를 확인할 수 있습니다.
 

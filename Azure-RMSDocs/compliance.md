@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e7c6c078d992bc4d3be9480227715be2157178f2
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0269888af84f4f1b17ce5523bb5bbc8648d0d1a7
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150791"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026709"
 ---
-# <a name="compliance-and-supporting-information-for-azure-information-protection"></a>Azure Information Protection에 대한 규정 준수 및 지원 정보
+# <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure Information Protection에 대한 규정 준수 및 지원 정보
 
-Azure Information Protection은 다른 서비스를 지원하는 동시에 다른 서비스가 있어야 작동합니다. Azure Information Protection 관련 정보를 찾고 있지만 Azure Information Protection 서비스를 사용하는 방법에 대해서는 알아보지 않으려는 경우 다음 리소스를 확인하세요.
+Azure Information Protection은 다른 서비스를 지원하는 동시에 다른 서비스가 있어야 작동합니다. Azure Information Protection 서비스 사용 방법이 아닌 Azure Information Protection 관련 정보를 찾는 경우 다음 리소스를 확인하세요.
 
 ## <a name="suitability-for-different-countries"></a>다양한 국가의 적합성
 
@@ -41,11 +41,11 @@ Azure Information Protection은 다른 서비스를 지원하는 동시에 다�
 
 - Microsoft Azure 계약 정보: [Microsoft Azure 계약](http://azure.microsoft.com/support/legal/subscription-agreement/)
 
-- Microsoft Azure 개인 정보 보호: [Microsoft Azure 개인 정보 취급 방침](http://azure.microsoft.com/support/legal/privacy-statement/)
+- Microsoft Azure 개인 정보 보호: [Microsoft Azure 개인정보처리방침](http://azure.microsoft.com/support/legal/privacy-statement/)
 
 ## <a name="security-compliance-and-auditing"></a>보안, 규정 준수 및 감사
 
-Azure Rights Management 서비스의 특정 인증에 대한 자세한 내용은 [Azure RMS를 통해 해결할 수 있는 문제](./azure-rms-problems-it-solves.md) 문서의 [보안, 준수 및 규정 요구 사항](./azure-rms-problems-it-solves.md#security-compliance-and-regulatory-requirements) 섹션을 참조하세요. 또한,
+Azure Rights Management 서비스의 특정 인증에 대한 자세한 내용은 [Azure RMS를 통해 해결할 수 있는 문제](./azure-rms-problems-it-solves.md) 문서의 [보안, 준수 및 규정 요구 사항](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements) 섹션을 참조하세요. 또한,
 
 - Azure Information Protection 외부 인증: [Microsoft Azure 보안 센터](http://azure.microsoft.com/support/trust-center/)
 

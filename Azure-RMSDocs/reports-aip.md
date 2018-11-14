@@ -4,19 +4,19 @@ description: 중앙 보고 기능을 사용하여 Azure Information Protection �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/15/2018
+ms.date: 11/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 424be5910d6a4498bc9d2684888cd2bf9af010af
-ms.sourcegitcommit: 26e1ccdd0c4339a51ec7812082b399f13ef73b2b
+ms.openlocfilehash: 4cb496e6cca01d7a4ad6636acc315bd40dc4c58c
+ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324893"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273585"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure Information Protection이 중앙 보고
 
@@ -62,17 +62,25 @@ Azure Information Protection 분석을 사용하여 중앙 보고 기능에서 �
 
 - 레이블 작업. 예를 들어 레이블을 설정하거나, 레이블을 변경하거나, 보호, 자동 및 권장 레이블을 추가 또는 제거합니다.
 
+- 레이블 작업 앞뒤의 레이블 이름입니다.
+
 - 조직의 테넌트 ID
 
 - 사용자 ID(메일 주소 또는 UPN)
 
-- 레이블이 지정된 문서의 파일 경로 및 파일 이름
+- 사용자 디바이스의 이름입니다.
+
+- 문서의 경우: 레이블이 지정된 문서의 파일 경로 및 파일 이름입니다.
+
+- 이메일의 경우: 레이블이 지정된 이메일의 이메일 제목, 이메일 보낸 사람 및 이메일 받는 사람입니다. 
+
+- 콘텐츠에서 발견된 중요한 정보 유형([사전 정의](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 및 사용자 지정)입니다.
 
 - Azure Information Protection 클라이언트의 버전
 
 - 클라이언트 운영 체제 버전
 
-이 정보는 사용자가 소유한 Azure Log Analytics 작업 영역에 저장됩니다.
+이 정보는 사용자가 소유하는 Azure Log Analytics 작업 영역에 저장되며 이 작업 영역에 대한 액세스 권한이 있는 사용자가 볼 수 있습니다. 작업 영역에 대한 액세스를 구성하는 방법에 대한 내용은 Azure 설명서에서 [계정 및 사용자 관리](/azure/log-analytics/log-analytics-manage-access?toc=/azure/azure-monitor#manage-accounts-and-users) 섹션을 참조하세요.
 
 ## <a name="prerequisites-for-azure-information-protection-analytics"></a>Azure Information Protection 분석의 필수 구성 요소
 Azure Information Protection 보고서를 보고 직접 만들려면 다음 요구 사항이 충족되어야 합니다.

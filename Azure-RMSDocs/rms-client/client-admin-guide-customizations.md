@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/02/2018
+ms.date: 11/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: beac842cdb8cfde5b3a209f3e37084828d3df7ba
-ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
+ms.openlocfilehash: 62d53acd482b9efdd0425d5a944d2241f8a33b30
+ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915583"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223996"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -40,6 +40,25 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 5. 이 정책에 대한 사용자가 열어 놓은 모든 Office 응용 프로그램을 다시 시작하는지 확인합니다.
 
 6. 더 이상 해당 설정이 필요하지 않으며 기본 동작으로 되돌리려면 **고급 설정** 블레이드에서 더 이상 필요하지 않은 설정 옆에 있는 상황에 맞는 메뉴(**...**)를 선택하고 **삭제**를 선택합니다. 그런 다음, **저장 후 닫기**를 클릭합니다.
+
+#### <a name="available-advanced-client-settings"></a>사용 가능한 고급 클라이언트 설정
+
+|Setting|시나리오 및 지침|
+|----------------|---------------|
+|DisableDNF|[Outlook에서 전달 금지 단추 숨기기 또는 표시](#hide-or-show-the-do-not-forward-button-in-outlook)|
+|EnableBarHiding|[Azure Information Protection 표시줄을 영구적으로 숨기기](#permanently-hide-the-azure-information-protection-bar)|
+|EnableCustomPermissions|[사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
+|EnablePDFv2Protection|[PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호](#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
+|LabelbyCustomProperty|[Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
+|OutlookDefaultLabel|[Outlook에 대한 다른 기본 레이블 설정](#set-a-different-default-label-for-outlook)|
+|OutlookRecommendationEnabled|[Outlook에서 권장 분류 사용](#enable-recommended-classification-in-outlook)|
+|PostponeMandatoryBeforeSave|[필수 레이블을 사용하는 경우 문서에 대한 “나중에” 제거](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
+|ProcessUsingLowIntegrity|[스캐너에 대해 낮은 무결성 수준 사용 안 함](#disable-the-low-integrity-level-for-the-scanner)|
+|RemoveExternalContentMarkingInApp|[다른 레이블 지정 솔루션에서 헤더 및 바닥글 제거](#remove-headers-and-footers-from-other-labeling-solutions)|
+|ReportAnIssueLink|[문제 보고 링크의 메일 주소 수정](#modify-the-email-address-for-the-report-an-issue-link)|
+|RunPolicyInBackground|[백그라운드에서 계속해서 실행되도록 분류 켜기](#turn-on-classification-to-run-continuously-in-the-background)|
+|SyncPropertyName|[기존 사용자 지정 속성을 사용하여 Office 문서에 레이블 지정](#label-an-office-document-by-using-an-existing-custom-property)|
+|SyncPropertyState|[기존 사용자 지정 속성을 사용하여 Office 문서에 레이블 지정](#label-an-office-document-by-using-an-existing-custom-property)|
 
 ## <a name="prevent-sign-in-prompts-for-ad-rms-only-computers"></a>AD RMS 전용 컴퓨터의 로그인 프롬프트 방지
 

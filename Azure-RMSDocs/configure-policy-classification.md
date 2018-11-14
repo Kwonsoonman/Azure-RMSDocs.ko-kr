@@ -4,16 +4,16 @@ description: 레이블에 대한 조건을 구성할 때 문서 또는 메일에
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: f47a6ea33c6abbfba6ca95772c7050ad11f76875
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 49d3879dd4dd5d9a5459638b1b539f4fa233ee2f
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170062"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026556"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 
@@ -70,7 +70,7 @@ Azure Information Protection 클라이언트에서 사용자가 지정한 조건
 4. **조건** 블레이드에서 미리 정의된 조건을 사용하려면 **정보 유형**을 선택하고, 사용자 고유의 조건을 지정하려면 **사용자 지정**을 선택합니다.
     - **정보 유형**의 경우: 사용 가능한 조건 목록에서 선택한 다음 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 선택합니다.
         
-        정보 유형에서는 Office 365 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지를 사용합니다. 여러 일반적인 중요한 정보 유형 중에서 선택할 수 있으며, 이 중 일부는 특정 지역과만 관련됩니다. 자세한 내용은 Office 설명서의 [중요한 정보 유형이 찾는 내용](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)을 참조하세요.
+        정보 유형에서는 Office 365 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지를 사용합니다. 여러 일반적인 중요한 정보 유형 중에서 선택할 수 있으며, 이 중 일부는 특정 지역과만 관련됩니다. 자세한 내용은 Office 365 설명서의 [중요한 정보 유형이 찾는 내용](/office365/securitycompliance/what-the-sensitive-information-types-look-for)을 참조하세요.
         
         Azure Portal에서 선택할 수 있는 정보 유형의 목록은 새 Office DLP 추가 기능을 포함하도록 정기적으로 업데이트됩니다. 그러나 목록은 Office 365 Security & Compliance 센터에 규칙 패키지로 정의 및 업로드한 사용자 지정 중요한 정보 유형은 제외합니다.
         

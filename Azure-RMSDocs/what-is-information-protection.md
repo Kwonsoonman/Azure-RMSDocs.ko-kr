@@ -4,16 +4,16 @@ description: Azure Information Protection 서비스에 대해 간략하게 설�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2018
+ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: cd8a88e2-3555-4be2-9637-3cdee992f2c8
-ms.openlocfilehash: b789697a398a0e201cbf041b36d7cd41a82a9e0d
-ms.sourcegitcommit: 2c4e72120213407516a49286368f9b2860505f56
+ms.openlocfilehash: 979f0acfc2177ba05e57f7c36d5bf3ca3840a65f
+ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236835"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51026694"
 ---
 # <a name="what-is-azure-information-protection"></a>Azure Information Protection이란?
 
@@ -144,9 +144,4 @@ Microsoft Ignite 2018 in Orlando에는 [Azure Information Protection](https://my
 
 ## <a name="next-steps"></a>다음 단계
 
-블로그 게시물, [Azure Information Protection: 준비, 설정 보호!](https://cloudblogs.microsoft.com/enterprisemobility/2017/02/21/azure-information-protection-ready-set-protect/)를 읽어보세요.
-
-5단계의 [빠른 시작 자습서](infoprotect-quick-start-tutorial.md)를 통해 Azure Information Protection을 스스로 구성하고 확인하세요. 조직을 위해 이 서비스를 배포할 준비가 되었다면 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)을 참조하세요.
-
-Azure Information Protection을 다른 이름으로 알고 있을 수 있습니다. [서비스에 대한 대체 용어 목록](aka.md)을 참조하세요.
-
+[빠른 시작](quickstart-viewpolicy.md) 및 [자습서](infoprotect-quick-start-tutorial.md)를 통해 Azure Information Protection을 스스로 구성하고 확인하세요. 또는 조직에 이 서비스를 배포할 준비가 되면 [일반적인 시나리오에 대한 방법 가이드](how-to-guides.md)를 진행하세요.

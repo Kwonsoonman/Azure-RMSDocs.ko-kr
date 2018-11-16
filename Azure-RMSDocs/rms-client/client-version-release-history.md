@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/30/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b05b41b802b54d874d13dcf13f541374d4150564
-ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
+ms.openlocfilehash: d4b9419ee12dfef0db29604dc7a396eedd7225fc
+ms.sourcegitcommit: a547dee247e4961e8f7c1f08e39b03dff710a74c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751256"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51628074"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -114,8 +114,6 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
     - 스캐너 보고서에는 Office 문서에 대한 "마지막으로 수정한 사용자"가 포함됩니다.
     
     - 이제 [스캐너용 레지스트리 편집](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner) 섹션에 설명된 대로 레지스트리를 편집할 때 `*` 와일드카드를 사용하여 모든 파일 형식을 보호할 수 있습니다.
-
-- PowerShell 또는 스캐너를 사용하여 분류하고 보호하는 경우 Office 문서 메타데이터를 제거하거나 암호화하지 않습니다.
 
 - 빠른 액세스 도구 모음에서 다음 항목 및 이전 항목 화살표 아이콘을 사용하여 이메일을 보면 각 이메일에 대한 올바른 레이블이 표시됩니다.
 

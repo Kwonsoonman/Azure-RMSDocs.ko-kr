@@ -4,18 +4,18 @@ description: 분류, 레이블 지정 및 보호를 구성하려면 Azure Inform
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba0e8119-886c-4830-bd26-f98fb14b2933
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 98c3d09a72a74ce8f2abc679df1e155b3a9ee5d8
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 9813f71535de9058c2cb3382ae590ba5f8102fd1
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026590"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644797"
 ---
 # <a name="configuring-the-azure-information-protection-policy"></a>Azure Information Protection 정책 구성
 
@@ -62,7 +62,9 @@ Azure Portal에 로그인인하고 Azure Information Protection을 구성 및 �
     - **보안 관리자**
 
     - **전역 관리자 / 회사 관리자**
-
+    
+    > [!NOTE] 
+    > 테넌트가 통합 레이블 지정 저장소로 마이그레이션된 경우 Azure Portal에서 레이블을 관리하려면 사용자 계정에 Office 365 보안 및 준수 센터에 액세스할 수 있는 권한도 있어야 합니다. [추가 정보](configure-policy-migrate-labels.md#important-information-about-administrative-roles)
 
 ## <a name="to-access-the-azure-information-protection-blade-for-the-first-time"></a>Azure Information Protection 블레이드에 처음으로 액세스하려면
 

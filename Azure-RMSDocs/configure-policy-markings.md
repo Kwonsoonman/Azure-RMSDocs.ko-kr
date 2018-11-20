@@ -4,16 +4,16 @@ description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/16/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: dbc63a0ddca9e7583693219103268048b524121c
-ms.sourcegitcommit: 6a732226a3c97fc06fcf815fbbb24a2e2faae209
+ms.openlocfilehash: 0e40e0044c38e58690b3e4130a4980042296edf4
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49358978"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644729"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -23,7 +23,7 @@ ms.locfileid: "49358978"
 
 이러한 시각적 표시에 대한 추가 정보:
 
-- 머리글 및 바닥글은 Word, Excel, PowerPoint 및 Outlook에 적용됩니다.
+- 머리글 및 바닥글에서는 Word, Excel, PowerPoint 및 Outlook에 적용되는 한 줄의 텍스트를 지원합니다.
 
 - 워터마크는 Word, Excel 및 PowerPoint에 적용됩니다.
 

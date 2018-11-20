@@ -4,18 +4,18 @@ description: 엔터프라이즈 네트워크에서 Windows용 Azure Information 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 2b6e3a40f7faab35053c1bd3146bfc08767e0066
-ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
+ms.openlocfilehash: f4067698a97ded8aa4c7fd6144fa7738822f1910
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49367008"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644678"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
@@ -41,6 +41,11 @@ ms.locfileid: "49367008"
     
     클라이언트용 PowerShell 모듈에는 이전 운영 체제에 설치해야 할 수도 있는 Windows PowerShell 버전 4.0이 필요합니다. 자세한 내용은 [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)(Windows PowerShell 4.0을 설치하는 방법)을 참조하세요. 설치 관리자는 이러한 필수 구성 요소를 확인하거나 설치하지 않습니다. 실행 중인 Windows PowerShell 버전을 확인하려면 PowerShell 세션에 `$PSVersionTable`을 입력합니다.
 
+- 화면 해상도 800x600 이상
+    
+    800x600 이하의 해상도에서는 파일 탐색기에서 파일이나 폴더를 마우스 오른쪽 단추로 클릭할 때 **분류 및 보호 - Azure Information Protection** 대화 상자를 완전히 표시할 수 없습니다.
+
+
 - Microsoft Online Services 로그인 도우미 7.250.4303.0
     
     Office 2010을 실행하는 컴퓨터에는 Microsoft Online Services 로그인 도우미 버전 7.250.4303.0이 필요합니다. 이 버전은 클라이언트 설치에 포함되어 있습니다. 최신 버전의 로그인 도우미가 있는 경우 먼저 제거한 후에 Azure Information Protection 클라이언트를 설치해야 합니다. 예를 들어 버전을 확인하고 **제어판** > **프로그램 및 기능** > **프로그램 제거 또는 변경**을 사용하여 로그인 도우미를 제거합니다.
@@ -57,21 +62,21 @@ ms.locfileid: "49367008"
     
     클라이언트 설치는 이러한 전제 조건을 확인하지 않지만 Azure Information Protection 클라이언트가 PDF 파일을 분류하고 보호하는 데 필요합니다.
 
-- **관리되는 추가 기능 목록**에 대한 그룹 정책 구성
+- Azure Information Protection 추가 기능을 사용하지 않도록 설정할 수 없도록 그룹 정책을 구성합니다.
     
-    Office 2013 이후 버전의 경우 그룹 정책 설정 **관리되는 추가 기능 목록**을 구성하고 Office 응용 프로그램에 대한 **Microsoft Azure Information Protection** 추가 기능을 추가합니다. Azure Information Protection에 대한 다음과 같은 프로그래밍 방식 식별자(ProgID)를 지정하고 **1: 추가 기능을 항상 사용**하는 옵션을 설정합니다.
+    Office 2013 이후 버전의 경우 Office 애플리케이션용 **Microsoft Azure Information Protection** 추가 기능을 항상 사용할 수 있도록 그룹 정책을 구성합니다. 이렇게 구성하지 않으면 Microsoft Azure Information Protection 추가 기능을 사용하지 않도록 설정할 수 있고 사용자가 Office 애플리케이션에서 문서 및 메일에 레이블을 지정할 수 없습니다.
     
-    - Outlook의 경우: `MSIP.OutlookAddin`
+    - Outlook: Office 설명서의 [System Administrator control over add-ins](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)(시스템 관리자 추가 기능 제어)에 설명된 그룹 정책 설정을 사용합니다.
     
-    - Word의 경우: `MSIP.WordAddin`
-    
-    - Excel의 경우: `MSIP.ExcelAddin`
-    
-    - PowerPoint의 경우: `MSIP.PowerPointAddin`
-    
-    이 설정을 구성하지 않으면 Microsoft Azure Information Protection 추가 기능은 비활성화되고 사용자는 해당 Office 응용 프로그램에서 문서 및 이메일에 레이블을 지정할 수 없습니다.
-    
-    이 그룹 정책 설정을 구성하는 방법에 대한 자세한 내용은 Office 설명서에서 [추가 기능을 통한 시스템 관리자 컨트롤](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)을 참조하세요.
+    - Word, Excel 및 PowerPoint: 지원 문서 [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)(Office 2013 및 Office 2016 프로그램의 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음)에 설명된 **관리되는 추가 기능의 그룹 정책 설정 목록**을 사용합니다. 
+        
+        Azure Information Protection에 대한 다음과 같은 프로그래밍 방식 식별자(ProgID)를 지정하고 **1: 추가 기능을 항상 사용**하는 옵션을 설정합니다.
+        
+        Word의 경우: `MSIP.WordAddin`
+        
+        Excel의 경우: `MSIP.ExcelAddin`
+        
+        PowerPoint의 경우: `MSIP.PowerPointAddin`
 
 > [!IMPORTANT]
 > Azure Information Protection 클라이언트를 설치하려면 로컬 관리 권한이 필요합니다.

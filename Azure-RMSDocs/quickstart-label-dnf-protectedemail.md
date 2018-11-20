@@ -4,15 +4,15 @@ description: 전달 금지 보호를 자동으로 적용하여 사용자를 위�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 6beb55b6dbcd82582cc24c7beb787bf4b232f518
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 793c3ff3b68de66dce5876c25cb4ba5455d19c33
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027050"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644695"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>빠른 시작: 사용자가 중요한 정보가 포함된 이메일을 쉽게 보호하도록 레이블 구성
 
@@ -64,9 +64,11 @@ Azure Information Protection을 사용하기 위한 필수 구성 요소의 전�
 
 ## <a name="configure-an-existing-label-to-apply-the-do-not-forward-protection"></a>전달 금지 보호를 적용하도록 기존 레이블 구성
 
-1. 새 브라우저 창을 열고 [Azure Portal](https://portal.azure.com)에 로그인합니다. 그런 후 **Azure Information Protection**로 이동합니다. 
+1. 새 브라우저 창을 열고 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. 그런 후 **Azure Information Protection**로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    
+    전역 관리자가 아니면 대체 역할: [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal) 링크를 사용합니다.
 
 2. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 보호를 적용하도록 구성하려는 레이블을 선택합니다. 
 

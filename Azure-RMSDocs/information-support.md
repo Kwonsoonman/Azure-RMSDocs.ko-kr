@@ -4,18 +4,18 @@ description: 새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Micr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/01/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 145889772dd3d2a8e29967264c1f0f7de7a7c222
-ms.sourcegitcommit: d5669b9bcc4aebabf64e8891eda4e20ea3acb2a1
+ms.openlocfilehash: da86d4dbdc5b5ac98dad8aac21772c43354b4b90
+ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48046991"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51707728"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
@@ -33,7 +33,7 @@ ms.locfileid: "48046991"
 |특정 Azure Information Protection 용어 이해|[용어](terminology.md) 페이지에서 용어 또는 약어를 검색하세요.|
 
 ## <a name="information-about-new-releases-and-updates"></a>새 릴리스 및 업데이트에 대한 정보
-Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블로그](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-information-protection)에 주요 새 릴리스에 대한 공지를 게시합니다. 소규모 릴리스는 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 발표되며, 요청된 기능의 상태에 대해서는 [UserVoice 사이트](https://msip.uservoice.com)를 확인해 보면 유용할 수도 있습니다.
+Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블로그](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection)에 주요 새 릴리스에 대한 공지 사항을 게시합니다. 소규모 릴리스는 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 발표되며, 요청된 기능의 상태에 대해서는 [UserVoice 사이트](https://msip.uservoice.com)를 확인해 보면 유용할 수도 있습니다.
 
 [Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)에서 추가 정보 및 자세한 내용을 확인할 수 있습니다. 예를 들어, 설명서 변경 요약이 매월 게시되어 새로운 릴리스, 지원 정책 업데이트 및 기존 릴리스의 정정 사항과 분류에 대한 정보가 제공됩니다. 이러한 문서 업데이트 게시물의 제목은 "**\<month year>의 Azure Information Protection 문서 업데이트**"입니다.
 

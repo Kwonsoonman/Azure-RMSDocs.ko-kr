@@ -4,15 +4,15 @@ description: 조직을 위한 Microsoft Azure Information Protection 정책을 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2018
+ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: 9e5fb752e75a6b6616fa0ef347c6a6102cd859fa
-ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
+ms.openlocfilehash: 7f8fc76b0ad3d90d422cc18229d10b1f1a8d6e8d
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273602"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644746"
 ---
 # <a name="tutorial-edit-the-azure-information-protection-policy-and-create-a-new-label"></a>자습서: Azure Information Protection 정책 편집 및 새 레이블 만들기
 
@@ -67,9 +67,11 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
 
 ### <a name="edit-the-policy-settings"></a>정책 설정 편집
 
-1. 새 브라우저 창을 열고 [Azure Portal](https://portal.azure.com)에 로그인합니다. 그런 후 **Azure Information Protection**로 이동합니다. 
+1. 새 브라우저 창을 열고 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. 그런 후 **Azure Information Protection**로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    
+    전역 관리자가 아니면 대체 역할: [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal) 링크를 사용합니다.
 
 2. **분류** > **정책** > **전역**을 선택하여 **정책: 전역** 블레이드를 엽니다. 
 

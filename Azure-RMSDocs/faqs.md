@@ -4,24 +4,24 @@ description: Azure Information Protection과, 데이터 보호 서비스인 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04cafed6317bd17f08e6b09a7f0b42b2cb2e20c7
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: 06434646727b93da5746f66f062fb49f986aaa95
+ms.sourcegitcommit: e70480e4d3dabbc1b5ae03a56cf54473400d25e2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026675"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51527793"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Azure Information Protection 또는 Rights Management 보호(Azure RMS)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
+Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
 이 FAQ 페이지는 정기적으로 업데이트되며, 새로 추가된 내용은 [Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)의 월간 설명서 업데이트 공지에 등록됩니다.
 
@@ -47,10 +47,6 @@ Azure Information Protection은 조직의 문서와 메일을 분류하고, 레�
 [Azure Information Protection 가격 책정](https://azure.microsoft.com/en-us/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 참조하세요. 
 
 Azure Rights Management 데이터 보호를 포함하는 Office 365 구독이 있는 경우 [Azure Information Protection 라이선싱 데이터시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)를 다운로드하세요. 여기에는 라이선스에 대한 질문과 대답도 포함됩니다.
-
-## <a name="ive-just-got-my-azure-information-protection-subscriptionhow-do-i-get-going"></a>방금 Azure Information Protection 구독을 구입했습니다. 이제 어떻게 해야 하나요?
-
-Azure Information Protection을 처음 사용하며 좀 더 빠르게 익숙해지고 싶은 경우 먼저 [빠른 시작](quickstart-viewpolicy.md)으로 가서 [일반적인 시나리오에 대한 방법 가이드](how-to-guides.md)를 검토하세요.
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure Information Protection 클라이언트는 분류 및 레이블이 포함된 구독에만 사용할 수 있나요?
 
@@ -117,6 +113,16 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 - 다른 조직(B2B)과 공동으로 작업하기 위해 조건부 액세스 정책에서 MFA를 사용하는 경우 [Azure AD B2B 공동 작업](/active-directory/b2b/what-is-b2b)을 사용하고 다른 조직에서 공유할 사용자의 게스트 계정을 만들어야 합니다.
 
 - 조건부 액세스에 많은 클라우드 앱을 사용하면 선택할 목록에 **Microsoft Azure Information Protection**이 표시되지 않을 수 있습니다. 이 경우에 목록 맨 위에 있는 검색 상자를 사용합니다. "Microsoft Azure Information Protection"을 입력하여 사용할 수 있는 앱을 필터링합니다. 지원되는 구독을 제공하면 선택할 **Microsoft Azure Information Protection**이 표시됩니다. 
+
+## <a name="i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive"></a>Azure Information Protection이 Microsoft Graph Security용 보안 공급자로 나열됩니다. 이 기능은 어떻게 작동하며 어떤 경고를 받게 되나요?
+
+예, 공개 미리 보기 서비스로 이제 **Azure Information Protection 비정상적인 데이터 액세스**에 대한 경고를 받을 수 있습니다. 이 경고는 Azure Information Protection에서 보호하는 데이터에 액세스하려는 비정상적인 시도가 있는 경우 트리거됩니다. 비정상적으로 높은 데이터 볼륨에 액세스하거나, 비정상적인 시간에 액세스하거나, 알 수 없는 위치에서 액세스하는 경우를 예로 들 수 있습니다.
+
+이러한 경고는 환경에서 고급 데이터 관련 공격 및 참가자 위협을 발견하는 데 도움이 될 수 있습니다. 이러한 경고에서는 보호된 데이터에 액세스하는 사용자의 동작을 기계 학습을 활용하여 프로파일링합니다. 
+
+[Microsoft Graph Security API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/security-api-overview)를 사용하여 Azure Information Protection 경고에 액세스할 수 있거나 Azure Monitor를 사용하여 Splunk 및 IBM Qradar와 같은 SIEM 솔루션으로 [경고를 스트리밍](https://developer.microsoft.com/en-us/graph/docs/concepts/security_siemintegration)할 수 있습니다.
+
+Microsoft Graph Security API에 대한 자세한 내용은 [Microsoft Graph Security API overview](https://developer.microsoft.com/graph/docs/concepts/security-concept-overview)(Microsoft Graph Security API 개요)를 참조하세요.
 
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure Information Protection의 레이블과 Office 365의 레이블 간 차이는 무엇인가요?
 

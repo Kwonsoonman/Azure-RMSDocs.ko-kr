@@ -4,18 +4,18 @@ description: AD RMS에서 Azure Information Protection으로 마이그레이션�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 04ca9cdfe3f528d71ee45a88a81b59268a6357aa
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ebc5a9867bad267b71f2f4ae6ebe0e22c9e7a607
+ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150469"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51707762"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -125,9 +125,9 @@ AD RMS에서 가져오는 템플릿은 Azure 포털에서 만들 수 있는 사�
 
 - 마이그레이션 전에 Azure Information Protection 사용자 지정 템플릿을 만든 경우 수동으로 내보냈다가 가져와야 합니다.
 
-- AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 조직 외부의 사용자 또는 그룹을 추가해야 할 수 있습니다. 
+- AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 사용자 또는 그룹을 수동으로 추가해야 할 수 있습니다. 
     
-    AD RMS에서 ANYONE 그룹은 인증된 모든 사용자에게 권한을 부여합니다. 이 그룹은 Azure AD 테넌트의 모든 사용자로 자동으로 변환됩니다. 추가 사용자에게 권한을 부여할 필요가 없는 경우 추가 작업이 필요하지 않습니다. 그러나 ANYONE 그룹을 사용하여 외부 사용자를 포함한 경우 이러한 사용자와 부여하려는 권한을 수동으로 추가해야 합니다.
+    AD RMS에서 ANYONE 그룹은 온-프레미스 Active Directory에서 인증된 모든 사용자에게 권리를 부여하며 Azure Information Protection에서는 이 그룹이 지원되지 않습니다. 이와 가장 근접한 그룹은 Azure AD 테넌트의 모든 사용자를 대상으로 자동으로 만들어지는 그룹입니다. AD RMS 템플릿에 ANYONE 그룹을 사용하는 경우 사용자 및 이 사용자에 부여할 권한을 추가해야 할 수 있습니다.
 
 ### <a name="procedure-if-you-created-custom-templates-before-the-migration"></a>마이그레이션 전에 사용자 지정 템플릿을 만든 경우의 프로시저
 
@@ -143,7 +143,7 @@ Azure Rights Management 서비스를 활성화하기 전 또는 후, 마이그�
 
 ### <a name="procedure-if-your-templates-in-ad-rms-used-the-anyone-group"></a>AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 프로시저
 
-AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 이 그룹은 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com**이라는 이름의 그룹을 사용하도록 자동으로 변환됩니다. 예를 들어 이 그룹은 Contoso에 대해 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**과 같을 수 있습니다. 이 그룹에는 Azure AD 테넌트의 모든 사용자가 포함됩니다.
+AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 Azure Information Protection에서 가장 근접한 그룹의 이름은 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com**입니다. 예를 들어 이 그룹은 Contoso에 대해 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**과 같을 수 있습니다. 이 그룹에는 Azure AD 테넌트의 모든 사용자가 포함됩니다.
 
 Azure Portal의 템플릿과 레이블을 관리할 때 이 그룹은 Azure AD에 테넌트의 도메인 이름으로 표시됩니다. 예를 들어 이 그룹은 Contoso에 대해 **contoso.onmicrosoft.com**과 같이 표시될 수 있습니다. 이 그룹을 추가하기 위해 옵션에 **\<조직 이름 추가> - 모든 멤버**가 표시됩니다.
 

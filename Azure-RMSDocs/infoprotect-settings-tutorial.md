@@ -4,15 +4,15 @@ description: 조직의 문서와 이메일을 분류하는 데 도움이 되도�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: ead65d9fef1b6c4f0087757e044caccee14805df
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: b9f60d0e8cc61a1d38b2992c0d430507bf494d18
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027079"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644655"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>자습서: 함께 작동하는 Azure Information Protection 정책 설정 구성
 
@@ -69,9 +69,11 @@ Azure Information Protection을 사용하기 위한 필수 구성 요소의 전�
 
 Azure Portal을 사용하여 전역 정책을 편집하여 모든 사용자의 정책 설정을 변경합니다.
 
-1. 새 브라우저 창을 열고 [Azure Portal](https://portal.azure.com)에 로그인합니다. 그런 후 **Azure Information Protection**로 이동합니다. 
+1. 새 브라우저 창을 열고 전역 관리자로 [Azure Portal](https://portal.azure.com)에 로그인합니다. 그런 후 **Azure Information Protection**로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    
+    전역 관리자가 아니면 대체 역할: [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal) 링크를 사용합니다.
 
 2. **분류** > **정책** > **전역**을 선택하여 **정책: 전역** 블레이드를 엽니다. 
 

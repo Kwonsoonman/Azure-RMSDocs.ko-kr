@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/05/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: aa541481aa11ad904a486b28d0bf37b85fd72543
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: adcaa1e0f15536d83a20c54017813d7e1546d860
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027063"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644712"
 ---
 # <a name="quickstart-get-started-in-the-azure-portal"></a>빠른 시작: Azure Portal에서 시작
 
@@ -36,7 +36,7 @@ Azure Information Protection은 Azure Portal에서 자동으로 사용할 수 �
 
 1. 테넌트에 대한 전역 관리자 계정을 사용하여 [Azure Portal](https://portal.azure.com)에 로그인합니다. 
     
-    전역 관리자가 아닌 경우 **Information Protection 관리자** 또는 **보안 관리자**와 같은 다음 [관리 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) 중 하나를 사용할 수 있습니다.
+    전역 관리자가 아니면 대체 역할: [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal) 링크를 사용합니다.
 
 2. 허브 메뉴에서 **리소스 만들기**를 선택한 다음, Marketplace 검색 상자에 **Azure Information Protection**을 입력합니다. 
     

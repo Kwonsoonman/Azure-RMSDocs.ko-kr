@@ -4,19 +4,19 @@ description: 중앙 보고 기능을 사용하여 Azure Information Protection �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/07/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 4cb496e6cca01d7a4ad6636acc315bd40dc4c58c
-ms.sourcegitcommit: 8e43a41998045fe574710e9da0b7747eaeccdba1
+ms.openlocfilehash: 85ca097a1808c2940ce534c7ce3d0542aaf3f27a
+ms.sourcegitcommit: 0f9e2ba05b61f8db08387576a697b8deff45fd36
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273585"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611423"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure Information Protection이 중앙 보고
 
@@ -28,7 +28,7 @@ ms.locfileid: "51273585"
 
 Azure Information Protection 분석을 사용하여 중앙 보고 기능에서 레이블이 지정된 문서 및 메일에 대한 사용자 액세스와 분류 변경 내용을 모니터링할 수 있을 뿐만 아니라 Azure Information Protection 레이블 도입을 추적할 수 있습니다. 또한 보호해야 하는 중요한 정보를 포함하는 문서를 식별할 수 있습니다.
 
-사용자에게 표시되는 데이터는 Azure Information Protection 클라이언트, Azure Information Protection 검사기 및 [통합 레이블 지정을 지원하는 클라이언트](configure-policy-migrate-labels.md#clients-that-support-unified-labeling)에서 집계됩니다.
+현재 사용자에게 표시되는 데이터는 Azure Information Protection 클라이언트 및 Azure Information Protection 스캐너에서 집계됩니다.
 
 예를 들어 다음을 볼 수 있습니다.
 

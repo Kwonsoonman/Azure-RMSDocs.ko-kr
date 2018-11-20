@@ -4,15 +4,15 @@ description: 범위가 지정된 정책을 사용하여 특정 사용자의 문�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 921b1343e533b4643d97098350c34f5a69bfcf3e
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: dca90c7635702226e7414947aad6f3d89cf91efd
+ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51027058"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644654"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>빠른 시작: 특정 사용자를 위해 새 Azure Information Protection 레이블 만들기
 
@@ -48,9 +48,11 @@ Azure Information Protection을 사용하기 위한 필수 구성 요소의 전�
 
 먼저 새 레이블을 만듭니다.
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
+1. 아직 하지 않았으면 새 브라우저 창을 열고 [Azure Portal](configure-policy.md#signing-in-to-the-azure-portal)에 로그인합니다. **Azure Information Protection** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
+    
+    전역 관리자가 아니면 대체 역할: [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal) 링크를 사용합니다.
 
 2. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 **새 블레이드 추가**를 클릭합니다.
 

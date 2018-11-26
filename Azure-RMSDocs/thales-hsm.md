@@ -4,18 +4,18 @@ description: 이 문서의 정보는 Azure 권한 관리에서 고객 관리 테
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/23/2017
-ms.topic: article
+ms.date: 11/19/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8c9d61e5-75da-4785-9942-1c6313879fd5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c8621c690db38733e57429594d08703c57caadac
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: ac508190d48bc24b4c8ccc366d4136337269d48f
+ms.sourcegitcommit: 03a9fc3f1b96a4edc0e2a9d538ce04a0579023be
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806399"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52268124"
 ---
 # <a name="more-information-about-thales-hsms-and-microsoft-additions-retired-content"></a>Thales HSM 및 Microsoft 추가 사항에 대한 자세한 내용: 사용 중지된 콘텐츠
 
@@ -23,3 +23,4 @@ ms.locfileid: "42806399"
 
 이 문서의 정보는 Azure 권한 관리에서 고객 관리 테넌트 키(Bring Your Own Key 또는 BYOK라고도 함)에 대해 Azure 주요 자격 증명 모음을 사용하기 때문에 더 이상 관련이 없으므로 제거되었습니다. 
 
+자세한 내용은 [Azure Information Protection 테넌트 키 BYOK 구현](plan-implement-tenant-key.md#implementing-byok-for-your-azure-information-protection-tenant-key)을 참조하세요.

@@ -8,30 +8,30 @@ ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 0e40e0044c38e58690b3e4130a4980042296edf4
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 1a2702d1cff5cdf62b8969829f0389c15b5c7fae
+ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644729"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52292612"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다.
+문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다. 
 
 이러한 시각적 표시에 대한 추가 정보:
 
-- 머리글 및 바닥글에서는 Word, Excel, PowerPoint 및 Outlook에 적용되는 한 줄의 텍스트를 지원합니다.
+- 모든 시각적 표시에서 여러 줄의 텍스트를 사용할 수 있습니다.
+
+- 머리글 및 바닥글은 Word, Excel, PowerPoint 및 Outlook에 적용됩니다.
 
 - 워터마크는 Word, Excel 및 PowerPoint에 적용됩니다.
 
     - Excel: 페이지 레이아웃 및 인쇄 미리 보기 모드에 있을 때와 인쇄할 때만 워터마크가 표시됩니다.
     
     - PowerPoint: 마스터 슬라이드에 배경 이미지로 워터마크가 적용됩니다. **보기** 탭, **슬라이드 마스터**에서 **배경 그래픽 숨기기** 확인란이 선택되어 있지 않은지 확인합니다.
-    
-    - 여러 줄의 텍스트를 사용할 수 있습니다.
 
 - 최대 문자열 길이:
     

@@ -6,12 +6,12 @@ ms.service: information-protection
 ms.topic: quickstart
 ms.date: 09/27/2018
 ms.author: bryanla
-ms.openlocfilehash: 6c0b9a878f98081312a0b81b965e75bcc0ade7e8
-ms.sourcegitcommit: 13b5b8e7457b09e1b828dad3cdfae086fd019819
+ms.openlocfilehash: 2790c64095a6fca4a33f70aeada68fa0c6668020
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508445"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386732"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>MIP(Microsoft Information Protection) SDK 설정 및 구성 
 
@@ -21,11 +21,18 @@ MIP SDK는 다음 플랫폼에서 지원됩니다.
 
 [!INCLUDE [MIP SDK platform support](../include/mip-sdk-platform-support.md)]
 
+## <a name="prerequisites"></a>필수 구성 요소
+
 시작하기 전에 다음 항목을 검토하세요.
 
 - [Office 365 보안 및 준수 센터란?](https://docs.microsoft.com/office365/securitycompliance/security-and-compliance)
 - [Azure Information Protection이란?](/azure/information-protection/understand-explore/what-is-information-protection)
 - [Azure Information Protection에서 보호가 작동하는 방식](/azure/information-protection/understand-explore/what-is-information-protection#how-data-is-protected)
+
+> [!IMPORTANT]
+> **사용자 개인 정보를 보호 하기 위해 자동 로깅을 사용 하도록 설정 하기 전에 동의 요청 해야 합니다.** 다음 예제는 Microsoft에서 로깅 알림에 사용 하는 표준 메시지:
+>
+> *오류 및 성능 로깅을 설정함으로써 Microsoft에 오류 및 성능 데이터를 보내는 것에 동의하게 됩니다. Microsoft는 인터넷을 통해 오류 및 성능 데이터(“데이터”)를 수집합니다. Microsoft는 이 데이터를 사용하여 Microsoft 제품 및 서비스의 품질, 보안 및 무결성을 제공하고 향상합니다. 예를 들어, Microsoft는 사용하는 기능, 기능의 응답 속도, 장치 성능, 사용자 인터페이스 조작, 제품에서 발생하는 문제 등 성능 및 안정성을 분석합니다. 데이터에는 현재 실행 중인 소프트웨어, IP 주소처럼 소프트웨어의 구성에 대한 정보도 포함됩니다.*
 
 ## <a name="sign-up-for-an-office-365-subscription"></a>Office 365 구독 등록
 
@@ -41,7 +48,7 @@ MIP SDK는 다음 플랫폼에서 지원됩니다.
 
 ## <a name="configure-sensitivity-labels"></a>민감도 레이블 구성
 
-현재 Azure Information Protection을 사용하는 경우에는 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 단계를 수행해야 합니다. 이 프로세스에 대한 자세한 내용은 [Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법](/azure/information-protection/configure-policy-migrate-labels)을 참조하세요. 
+사용자는 현재 사용 중인 Azure Information Protection 레이블과 Office 365 보안 및 규정 준수 센터를 마이그레이션해야 합니다. 이 프로세스에 대한 자세한 내용은 [Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법](/azure/information-protection/configure-policy-migrate-labels)을 참조하세요. 
 
 ## <a name="configure-your-client-workstation"></a>클라이언트 워크스테이션 구성
 

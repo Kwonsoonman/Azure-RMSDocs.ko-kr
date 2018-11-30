@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 06434646727b93da5746f66f062fb49f986aaa95
-ms.sourcegitcommit: e70480e4d3dabbc1b5ae03a56cf54473400d25e2
+ms.openlocfilehash: 5e78630e39c63f69037dd7288f764c435ff5c81e
+ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51527793"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304062"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -84,7 +84,7 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 
 예. Azure Information Protection은 클라우드 기반 솔루션이지만 클라우드 뿐 아니라 온-프레미스에 저장된 문서 및 전자 메일을 분류, 레이블 지정 및 보호할 수 있습니다.
 
-Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](http://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
+Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity#what-is-azure-ad-connect)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
 
 Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure Rights Management에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](./how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](./how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
 

@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/13/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 778d83926e67a3f15fb182de3d2658d9881c29a5
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 7ddaf0a54aa116a317cee8699caf437faae9676f
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42807085"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330335"
 ---
 # <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
 
@@ -37,14 +37,14 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 
 > [!TIP]
-> Azure Key Vault에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure Key Vault 시작](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)을 먼저 검토하면 도움이 됩니다. 
+> Azure Key Vault에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure Key Vault 시작](/azure/key-vault/key-vault-get-started)을 먼저 검토하면 도움이 됩니다. 
 
 
 ## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>1부: Azure 주요 자격 증명 모음에 키 전송
 
 이 절차는 Azure 주요 자격 증명 모음의 관리자가 수행합니다.
 
-1. 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault)을 사용하여 Azure Key Vault 설명서의 지침을 따르세요. 다음과 같은 예외가 있습니다.
+1. 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault)을 사용하여 Azure Key Vault 설명서의 지침을 따르세요. 다음과 같은 예외가 있습니다.
 
     - AD RMS 배포에서 생성된 동일한 키가 이미 있으므로 **테넌트 키 생성** 단계는 수행하지 마세요. 대신, Thales 설치의 AD RMS 서버에서 사용되는 키를 식별하고, 마이그레이션 중에 이 키를 사용해야 합니다. Thales 암호화된 키 파일 이름은 일반적으로 서버에서 로컬로 **key<*keyAppName*><*keyIdentifier*>** 입니다.
 

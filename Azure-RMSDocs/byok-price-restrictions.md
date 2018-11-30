@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 57914b0268102e8f7f5049ee1c63b58bf54c9a14
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 93e538b882da557715b04e8675b5a3b86de018b0
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149145"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330279"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 
@@ -34,7 +34,7 @@ Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용�
 
 ## <a name="benefits-of-using-azure-key-vault"></a>Azure Key Vault를 사용할 경우의 이점
 
-Azure Information Protection 사용 현황 로깅 사용과 함께, Azure Rights Management Service에서만 이 키를 사용하고 있음을 독립적으로 모니터링하기 위해 [Azure Key Vault 로깅](https://azure.microsoft.com/documentation/articles/key-vault-logging/)을 사용하여 상호 참조할 수 있습니다. 필요한 경우 Key Vault에 대한 권한을 제거하여 키에 대한 액세스 권한을 즉시 취소할 수 있습니다.
+Azure Information Protection 사용 현황 로깅 사용과 함께, Azure Rights Management Service에서만 이 키를 사용하고 있음을 독립적으로 모니터링하기 위해 [Azure Key Vault 로깅](/azure/key-vault/key-vault-logging)을 사용하여 상호 참조할 수 있습니다. 필요한 경우 Key Vault에 대한 권한을 제거하여 키에 대한 액세스 권한을 즉시 취소할 수 있습니다.
 
 Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용하는 기타 이점은 다음과 같습니다.
 

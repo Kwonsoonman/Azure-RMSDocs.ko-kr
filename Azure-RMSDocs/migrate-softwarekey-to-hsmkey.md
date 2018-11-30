@@ -5,17 +5,17 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 07/11/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bacfe4f0bdc7c400e58bc3f054d3539b6883a9fd
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 1d749c77ada71a7f086b5d7836f44b530cab2dc9
+ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808054"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52330346"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
 
@@ -111,11 +111,11 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 
 ## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>2부: HSM 키를 패키지한 후 Azure 주요 자격 증명 모음으로 전송
 
-Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#implementing-bring-your-own-key-byok-for-azurekey-vault) 섹션의 다음 단계를 사용하세요.
+Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
 
-- [4단계: 키 전송 준비](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-4-prepare-your-key-for-transfer)
+- [4단계: 키 전송 준비](/azure/key-vault/key-vault-hsm-protected-keys#step-4-prepare-your-key-for-transfer)
 
-- [5단계: Azure Key Vault에 키 전송](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/#step-5-transfer-your-key-to-azurekey-vault)
+- [5단계: Azure Key Vault에 키 전송](/azure/key-vault/key-vault-hsm-protected-keys#step-5-transfer-your-key-to-azure-key-vault)
 
 키가 이미 있으므로 키 쌍을 생성하는 단계를 수행하지 마세요. 대신 명령을 실행하여 온-프레미스 HSM에서 이 키를 전송합니다(이 예에서는 KeyIdentifier 매개 변수에 "contosobyok" 사용).
 

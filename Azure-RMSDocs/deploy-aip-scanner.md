@@ -4,18 +4,18 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 9c5c07d09096d5d0f75c53fd03f85f5e29af1640
-ms.sourcegitcommit: 74d13c7162a0a94cda4762556a975a1d12433a13
+ms.openlocfilehash: 3e331c859c3808ceba2305224a6dd524b1a5ea6c
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281312"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386800"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -39,7 +39,7 @@ ms.locfileid: "52281312"
 
 ![Azure Information Protection 스캐너 아키텍처 개요](./media/infoprotect-scanner.png)
 
-스캐너는 컴퓨터에 설치된 iFilters를 사용하여 Windows에서 인덱싱하는 파일을 검사할 수 있습니다. 그런 다음, 파일에 레이블을 지정해야 하는지를 결정하려면 스캐너는 Office 365 기본 제공 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지 또는 Office 365 정규식 패턴을 사용합니다. 스캐너가 Azure Information Protection 클라이언트를 사용하기 때문에 동일한 [파일 형식](./rms-client/client-admin-guide-file-types.md)을 분류하고 보호할 수 있습니다.
+스캐너는 컴퓨터에 설치된 IFilter를 사용하여 Windows에서 인덱싱하는 파일을 검사할 수 있습니다. 그런 다음, 파일에 레이블을 지정해야 하는지를 결정하려면 스캐너는 Office 365 기본 제공 DLP(데이터 손실 방지) 민감도 정보 유형 및 패턴 감지 또는 Office 365 정규식 패턴을 사용합니다. 스캐너가 Azure Information Protection 클라이언트를 사용하기 때문에 동일한 [파일 형식](./rms-client/client-admin-guide-file-types.md)을 분류하고 보호할 수 있습니다.
 
 스캐너를 검색 모드에서만 실행할 수 있습니다. 여기서는 보고서를 사용하여 파일에 레이블을 적용했을 때 발생한 결과를 확인합니다. 또는 스캐너를 실행하여 레이블을 자동으로 적용할 수 있습니다. 또한 스캐너를 실행하여 자동 분류를 적용하는 조건에 대한 레이블을 구성하지 않고 중요한 정보 유형이 포함된 파일을 검색할 수도 있습니다.
 
@@ -192,7 +192,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
     
         Start-AIPScan
     
-    또는 **Scanner**(스캐너) > **Nodes (Preview)**(노드(미리 보기)) > \**<* scanner node(스캐너 노드)*>**> **Scan now**(지금 검사) 옵션을 사용하면 Azure Portal의 **Azure Information Protection** 블레이드에서 스캐너를 시작할 수 있습니다.
+    또는 **Scanner**(스캐너) > **Nodes (Preview)**(노드(미리 보기)) > \**<* scanner node *(스캐너 노드)>** > **Scan now**(지금 검사) 옵션을 사용하면 Azure Portal의 **Azure Information Protection** 블레이드에서 스캐너를 시작할 수 있습니다.
 
 2. 다음 명령을 실행하여 스캐너가 주기를 완료할 때까지 기다립니다.
     
@@ -207,7 +207,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 3. %*localappdata*%\Microsoft\MSIP\Scanner\Reports에 저장되고 .csv 파일 형식인 보고서를 검토합니다. 스캐너의 기본 구성에서 자동 분류에 대한 조건을 충족하는 파일만이 이러한 보고서에 포함됩니다.
     
     > [!TIP]
-    > 미리 보기 버전의 스캐너를 사용할 때, Azure Portal에서 거의 실시간으로 결과를 볼 수 있도록 스캐너(현재 미리 보기로 제공됨)는 이 정보를 5분마다 Azure Information Protection으로 보냅니다. 자세한 내용은 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요. 
+    > Azure Portal에서 거의 실시간으로 결과를 볼 수 있도록 스캐너는 이 정보를 5분마다 Azure Information Protection으로 보냅니다. 자세한 내용은 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요. 
         
     예상 대로 결과가 발생하지 않는 경우 Azure Information Protection 정책에서 지정한 조건을 세밀하게 조정해야 합니다. 이러한 경우 분류 및 필요에 따라 보호를 적용하도록 구성을 변경할 준비가 될 때까지 1~3단계를 반복합니다. 
 
@@ -242,7 +242,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 
 검색할 파일 형식 목록을 정의하여 이 동작을 변경하거나 검색에서 제외할 수 있습니다. 이 목록을 지정하고 데이터 리포지토리를 지정하지 않으면 지정된 자체 목록이 없는 모든 데이터 리포지토리에 이 목록이 적용됩니다. 이 목록을 지정하려면 [Set-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Set-AIPScannerScannedFileTypes)를 사용합니다. 파일 형식 목록을 지정한 후 [Add-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Add-AIPScannerScannedFileTypes)를 사용하여 새 파일 형식을 목록에 추가하고 [Remove-AIPScannerScannedFileTypes](/powershell/module/azureinformationprotection/Remove-AIPScannerScannedFileTypes)를 사용하여 목록에서 파일 형식을 제거할 수 있습니다.
 
-그런 다음, 스캐너는 Windows iFilter를 사용하여 다음 파일 형식을 검색합니다. 이러한 파일 형식에 대해 레이블에 지정한 조건을 사용하여 문서의 레이블을 지정합니다.
+그런 다음, 스캐너는 Windows IFilter를 사용하여 다음 파일 형식을 검색합니다. 이러한 파일 형식에 대해 레이블에 지정한 조건을 사용하여 문서의 레이블을 지정합니다.
 
 |응용 프로그램 유형|파일 형식|
 |--------------------------------|-------------------------------------|
@@ -252,13 +252,17 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 |PDF |.pdf|
 |텍스트|.txt; .xml; .csv|
 
-기본적으로 Office 파일 형식만 스캐너에서 보호되므로 [레지스트리를 편집](#editing-the-registry-for-the-scanner)하여 파일 형식을 지정하지 않는 경우 PDF 및 텍스트 파일은 보호되지 않습니다.
+스캐너를 실행하는 컴퓨터에서 [Windows TIFF IFilter 설정](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)을 구성한 경우, OCR(Optical Character Recognition)을 사용하여 .tiff 파일 이름 확장명을 갖는 TIFF 이미지를 검사합니다.
+
+기본적으로 Office 파일 형식만 스캐너에서 보호되므로 [레지스트리를 편집](#editing-the-registry-for-the-scanner)하여 파일 형식을 지정하지 않는 경우 PDF 문서 및 텍스트 파일과 TIFF 이미지는 보호되지 않습니다.
 
 - 레지스트리에 .pdf 파일 형식을 추가하지 않는 경우: 이 파일 이름 확장명의 파일은 레이블이 지정되지만 이 레이블이 보호되도록 구성된 경우 보호가 적용되지 않습니다.
 
 - 레지스트리에 .txt, .xml 또는 .csv 파일 형식을 추가하지 않는 경우: 이러한 파일 형식에서 분류 전용을 지원하지 않으므로 이러한 파일 이름 확장명의 파일은 레이블이 지정되지 않습니다.
 
-마지막으로 나머지 파일 형식의 경우 스캐너는 Azure Information Protection 정책의 기본 레이블 또는 스캐너에 대해 구성한 기본 레이블을 적용합니다.
+- Windows TIFF IFilter를 구성한 후에 레지스트리에 .tiff 파일 형식을 추가하지 않은 경우: 이 파일 이름 확장명을 갖는 파일은 레이블이 지정되지만 이 레이블이 보호되도록 구성된 경우 보호가 적용되지 않습니다.
+
+마지막으로, 나머지 파일 형식은 스캐너가 검사하지 않지만 Azure Information Protection 정책의 기본 레이블 또는 스캐너에 대해 구성한 기본 레이블을 적용합니다.
 
 |응용 프로그램 유형|파일 형식|
 |--------------------------------|-------------------------------------|

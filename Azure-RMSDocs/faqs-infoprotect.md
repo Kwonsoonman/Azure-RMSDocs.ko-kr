@@ -4,18 +4,18 @@ description: Azure Information Protection를 사용한 분류 및 레이블 지�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4b595b6a-7eb0-4438-b49a-686431f95ddd
 ms.reviewer: adhall
 ms.suite: ems
-ms.openlocfilehash: 2c0d391e2d00ec7d0bc09d98de3fe6f502f999a4
-ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
+ms.openlocfilehash: a4aa5b1a6375655b9b6ab20f092a7def47187225
+ms.sourcegitcommit: ff77e4da1f7c7cf2262c208f8e58b85cfdb54903
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51707745"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52421048"
 ---
 # <a name="frequently-asked-questions-about-classification-and-labeling-in-azure-information-protection"></a>Azure Information Protection에서 분류 및 레이블 지정에 대한 질문과 대답
 
@@ -68,6 +68,24 @@ Azure Information Protection의 [UserVoice 사이트](https://msip.uservoice.com
 Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 
 
 이 메타데이터를 Exchange Online 메일 흐름 규칙에 사용하는 방법에 대한 자세한 내용 및 예제는 [Azure Information Protection 레이블에 대한 Exchange Online 메일 흐름 규칙 구성](configure-exo-rules.md)을 참조하세요.
+
+## <a name="can-i-create-a-document-template-that-automatically-includes-the-classification"></a>분류를 자동으로 포함하는 문서 템플릿을 만들 수 있나요?
+
+예. [레이블 이름을 포함하는 헤더 또는 바닥글을 적용하도록](configure-policy-markings.md) 레이블을 구성할 수 있습니다. 또는 원하는 서식을 갖는 문서 템플릿을 만들고 분류를 필드 코드로 추가할 수 있습니다. 
+
+예를 들어, 문서의 헤더에 분류를 표시하는 표를 포함할 수 있습니다. 또는 문서의 분류를 참조하는 소개에 특정 단어를 사용할 수 있습니다.
+
+문서에 이러한 필드 코드를 추가하려면:
+
+1. 문서에 레이블을 지정하고 저장합니다. 이렇게 하면 필드 코드에 사용할 수 있는 새로운 메타데이터 필드가 생성됩니다.
+
+2. 문서에서 레이블의 분류를 추가할 위치에 커서를 두고 **삽입** 탭에서 **텍스트** > **빠른 문서 요소** > **필드**를 선택합니다.
+
+3. **필드** 대화 상자의 **범주** 드롭다운에서 **문서 정보**를 선택합니다. 그런 다음, **필드 이름** 드롭다운에서 **DocProperty**를 선택합니다.
+
+4. **속성** 드롭다운에서 **Sensitivity**를 선택하고 **확인**을 선택합니다.
+
+현재 레이블의 분류가 문서에 표시되고, 문서를 열거나 템플릿을 사용할 때마다 이 값이 자동으로 업데이트됩니다. 따라서 레이블이 변경되면 이 필드 코드에 대해 표시되는 분류가 문서에서 자동으로 업데이트됩니다.
 
 ## <a name="how-is-azure-information-protection-classification-for-emails-different-from-exchange-message-classification"></a>전자 메일에 대한 Azure Information Protection 분류와 Exchange 메시지 분류는 어떻게 다른가요?
 

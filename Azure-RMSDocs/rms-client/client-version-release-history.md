@@ -4,18 +4,17 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/29/2018
 ms.topic: conceptual
 ms.service: information-protection
-ms.assetid: 6ebd0ca3-1864-4b3d-bb3e-a168eee5eb1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d4b9419ee12dfef0db29604dc7a396eedd7225fc
-ms.sourcegitcommit: a547dee247e4961e8f7c1f08e39b03dff710a74c
+ms.openlocfilehash: b0dc98bb1c626737fb087c78691bb3a9e35a445e
+ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51628074"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52586012"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -42,36 +41,42 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 >  
 > 기술 지원의 경우 [지원 옵션 및 커뮤니티 리소스](../information-support.md#support-options-and-community-resources) 정보를 참조하세요. 또한 Azure Information Protection 팀의 [Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다.
 
-## <a name="versions-later-than-137190"></a>1.37.19.0 이후 버전
-
-1.37.19.0 이후의 버전 1 클라이언트가 설치된 경우 테스트 및 평가를 위한 미리 보기 빌드입니다. 
+## <a name="version-141510"></a>버전 1.41.51.0
 
 > [!TIP]
 > 레이블이 Office 365 보안 및 준수 센터에서 게시되었기 때문에 Azure Information Protection 통합 레이블 지정 클라이언트를 평가하는 데 관심이 있으신가요? [Azure Information Protection 통합 레이블 지정 클라이언트: 버전 릴리스 정보](unifiedlabelingclient-version-release-history.md)를 참조하세요.
 
-**릴리스 날짜**: 2018년 9월 20일
+**릴리스 날짜**: 2018/11/27
+
+이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.3592.627이 포함되어 있습니다.
 
 **새로운 기능:**
 
 - Microsoft Ignite에 발표된 Azure Information Protection 분석 기능의 [중앙 보고](../reports-aip.md) 지원
 
-**추가 정보:**
+- 이제 Excel에서도 다양한 색상의 [시각적 표시](../configure-policy-markings.md)가 지원됩니다.
 
-이 미리 보기 버전에서 스캐너와 관련된 내용입니다.
+- 기존 S/MIME 배포의 경우, Outlook에서 자동으로 S/MIME 보호를 적용하는 레이블을 구성하는 새로운 고급 클라이언트 설정(현재 미리 보기 버전)이 제공됩니다. [추가 정보](client-admin-guide-customizations.md#configure-a-label-to-apply-smime-protection-in-outlook)
 
-- 다음 단계에 따라 스캐너를 설치하세요.
+- [연결 해제된 컴퓨터](client-admin-guide-customizations.md#support-for-disconnected-computers)의 Azure Information Protection 서비스 로그인 프롬프트를 방지하기 위해 레지스트리를 편집하는 대신 새로운 고급 클라이언트 설정이 제공됩니다.
+
+**수정 사항**:
+
+- Azure Information Protection 클라이언트에서 이제 더 이상 .파일 탐색기(마우스 오른쪽 단추 클릭)의 msg, .rar 및 .zip 파일 이름 확장명과 PowerShell 명령이 제외되지 않습니다. 단, 스캐너에서는 여전히 이러한 파일 이름 확장명이 기본적으로 제외됩니다. 
+
+- 파일 탐색기에서 마우스 오른쪽 단추를 클릭할 때 Azure Information Protection 클라이언트가 여러 개의 파일을 보호할 수 있습니다(여러 파일과 보호되는 파일들이 포함된 폴더 한 개 선택)
+
+- Excel의 경우:
     
-    1. 클라이언트의 현재 GA 버전(1.37.19.0)을 설치합니다.
-    2. 스캐너를 설치 및 구성합니다.
-    3. 스캐너를 시작합니다.
-    4. Azure Information Protection 클라이언트를 이 미리 보기 버전으로 업그레이드합니다.
-    5. 스캐너를 시작합니다.
-
-- 대형 데이터 집합 검색과 관련된 알려진 문제:
+    - 이제 셀을 편집하면서 스프레드시트를 저장하면 시각적 표시가 적용됩니다.
     
-    이 미리 보기 버전에서는 검색 대상 파일 수가 점점 늘어나고 진행률을 모니터링합니다. 실행 중이지만 새 파일을 검색할 수 없다고 스캐너 상태에 보고되면 검색 대상 파일 수를 줄이고 스캐너를 다시 시작하세요. 
+    - Excel 2010: 공동 작성자 [권한 수준](../configure-usage-rights.md#rights-included-in-permissions-levels)을 사용하여 스프레드시트를 보호하는 경우, 이제 파일을 마우스 오른쪽 단추로 클릭하고 **분류 및 보호**를 선택하면 **레이블 삭제** 단추를 사용할 수 있습니다.
 
-스캐너를 설치, 구성 및 시작하기 위한 지침이 필요한 경우 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-aip-scanner.md)를 참조하세요.
+- [다른 레이블 지정 솔루션에서 헤더 및 바닥글을 제거](client-admin-guide-customizations.md#remove-headers-and-footers-from-other-labeling-solutions)하는 고급 클라이언트 설정에서 이제 사용자 지정 레이아웃을 지원합니다.
+
+**추가 변경 내용**:
+
+- 스캐너의 일정을 **항상**으로 설정하면 이제 30초의 지연 후에 다음 검사가 시작됩니다.
 
 ## <a name="version-137190"></a>버전 1.37.19.0
 
@@ -117,7 +122,9 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - 빠른 액세스 도구 모음에서 다음 항목 및 이전 항목 화살표 아이콘을 사용하여 이메일을 보면 각 이메일에 대한 올바른 레이블이 표시됩니다.
 
-- 사용자 지정 사용 권한은 아포스트로피가 포함된 받는 사람 이메일 주소를 지원합니다.
+- 파일 탐색기, PowerShell 또는 스캐너를 사용하여 분류하고 보호하는 경우 Office 문서 메타데이터를 제거하거나 암호화하지 않습니다.
+
+- 사용자 지정 사용 권한은 아포스트로피가 포함된 받는 사람 메일 주소를 지원합니다.
 
 - SharePoint Online에 저장된 보호된 문서를 열어 이 작업을 시작할 때 컴퓨터 환경은 부트스트랩을 성공적으로 초기화합니다.
 
@@ -198,9 +205,12 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 **새로운 기능**:
 
 - Azure Information Protection 스캐너: 클라이언트에 포함된 PowerShell 모듈에는 온-프레미스 데이터 저장소에서 파일을 검색하고, 분류하고, 보호할 수 있도록 스캐너를 설치하고 구성할 새로운 cmdlet이 있습니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-aip-scanner.md)를 참조하세요. 
-- 이제 텍스트 문자열에서 "If.App" 변수 문을 사용하여 Word, Excel, PowerPoint 및 Outlook에 대새 다른 시각적 표시를 설정하고 응용 프로그램 형식을 식별할 수 있습니다. [추가 정보]configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
+
+- 이제 텍스트 문자열에서 "If.App" 변수 문을 사용하여 Word, Excel, PowerPoint 및 Outlook에 대새 다른 시각적 표시를 설정하고 응용 프로그램 형식을 식별할 수 있습니다. [추가 정보](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
 
 - [정책 설정](../configure-policy-settings.md)인 **Office 앱에 Information Protection 표시줄 표시**에 대한 지원입니다. 이 설정을 끄기로 설정하면 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택합니다.
+
+- Word, Excel, PowerPoint의 헤더 및 바닥글에서 여러 줄의 텍스트를 사용할 수 있습니다.
 
 - 백그라운드에서 계속 실행되도록 분류를 켜기 위한 새 고급 클라이언트 설정(미리 보기)입니다. 이 설정을 사용하도록 설정하면 Office 앱의 경우 자동 및 권장 분류는 문서를 저장할 때 실행하는 대신 백그라운드에서 계속 실행됩니다. 이제 동작을 이렇게 변경하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류를 적용할 수 있습니다. [추가 정보](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
 

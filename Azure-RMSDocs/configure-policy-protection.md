@@ -8,12 +8,12 @@ ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: 0ee7333baebd0a34f518ff9500df95ed57ed2b01
-ms.sourcegitcommit: b70d49870960a7a3feaf9a97a6e04ad350c4d2c8
+ms.openlocfilehash: e16c50422268a05596ebc28e09d464959fd1e0b2
+ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751171"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303926"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 
@@ -107,9 +107,10 @@ Exchange에서 Azure Information Protection을 구성하지 않고도 사용자�
         ###### <a name="more-information-about-add-any-authenticated-users"></a>**인증된 사용자 추가**에 대한 자세한 정보 
         이 설정은 레이블이 보호하는 콘텐츠에 액세스할 수 있는 사용자를 제한하지 않으면서 콘텐츠를 암호화하며 콘텐츠의 사용 방법(권한) 및 액세스 방법(만료 및 오프라인 액세스)을 제한하는 옵션을 제공합니다. 그러나 보호된 콘텐츠를 여는 응용 프로그램은 사용 중인 인증을 지원할 수 있어야 합니다. 이러한 이유로 Google과 같은 페더레이션 소셜 공급자 및 일회성 암호 인증은 메일에만 그리고 Exchange Online 및 Office 365 메시지 암호화의 새로운 기능을 사용할 때만 사용되어야 합니다. Microsoft 계정은 Azure Information Protection 뷰어 및 Office 2016 간편 실행에 사용할 수 있습니다. 
           
-        인증된 사용자 설정에 대한 몇 가지 일반적인 시나리오: - 콘텐츠를 보는 사용자를 신경 쓰지 않지만, 콘텐츠의 사용 방법을 제한하려고 합니다. 예를 들어 콘텐츠가 편집되거나 복사되거나 인쇄되지 않도록 하려고 합니다.  
-            - 콘텐츠에 액세스하는 사용자를 제한할 필요는 없지만, 콘텐츠를 여는 사용자를 추적하고 잠재적으로 이를 취소할 수 있기를 원합니다.  
-            - 콘텐츠를 전송 중에 그리고 미사용 시에 암호화해야 한다는 요구 사항이 있지만, 콘텐츠에 대한 액세스 제어는 필요하지 않습니다.
+        인증된 사용자 설정에 대한 몇 가지 일반적인 시나리오:
+        - 누가 콘텐츠를 보든 관계없지만 콘텐츠 사용 방법은 제한하려고 합니다. 예를 들어 콘텐츠가 편집되거나 복사되거나 인쇄되지 않도록 하려고 합니다.
+        - 콘텐츠에 액세스하는 사용자를 제한할 필요는 없지만, 콘텐츠를 여는 사용자를 추적하고 잠재적으로 이를 취소할 수 있기를 원합니다.
+        - 콘텐츠를 전송 중에 그리고 미사용 시에 암호화해야 한다는 요구 사항이 있지만, 콘텐츠에 대한 액세스 제어는 필요하지 않습니다.
         
     - **세부 정보 입력**을 선택하여 개별 사용자 또는 그룹(내부 또는 외부)의 메일 주소를 수동으로 지정합니다. 또는 이 옵션을 사용하여 다른 조직의 도메인 이름을 입력하여 해당 조직의 모든 사용자를 지정합니다. 또한 소셜 공급자에 대해 **gmail.com**, **hotmail.com** 또는 **outlook.com**과 같은 도메인 이름을 입력하여 이 옵션을 사용할 수 있습니다.
         

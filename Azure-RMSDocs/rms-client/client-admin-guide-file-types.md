@@ -4,18 +4,18 @@ description: 지원되는 파일 형식, 파일 이름 확장명 및 Windows용 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/10/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ''
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 23baab9ba6ab9a7b1d43dd1f5f12947f383d9d28
-ms.sourcegitcommit: d049c23ddd0bb7f4c4d40153c753f178b3a04d43
+ms.openlocfilehash: 9bc0bbcf6eb74d889e7cd31e6d7ff3f0b6320050
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072479"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386749"
 ---
 # <a name="admin-guide-file-types-supported-by-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에서 지원하는 파일 형식
 
@@ -192,7 +192,6 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 - **제외되는 파일 형식**: .lnk, .exe, .com, .cmd, .bat, .dll, .ini, .pst, .sca, .drm, .sys, .cpl, .inf, .drv, .dat, .tmp, .msg,.msp, .msi, .pdb, .jar
     
-    현재 파일 형식 .zip, .msg, 및 .rar도 제외됩니다. 
 
 - **제외되는 폴더**: 
     - Windows
@@ -202,7 +201,9 @@ Azure Information Protection 클라이언트가 파일 보호를 차단하도록
 
 ### <a name="file-types-that-are-excluded-from-classification-and-protection-by-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너에 의해 분류 및 보호에서 제외되는 파일 형식
 
-기본적으로 이 검사 기능은 .rtf도 제외된다는 점을 제외하고 Azure Information Protection 클라이언트와 동일한 파일 형식을 제외합니다. 
+기본적으로 이 검사 기능은 Azure Information Protection 클라이언트와 동일한 파일 형식을 제외합니다. 단, 다음은 예외입니다.
+
+    - .rtf, .rar, .zip도 제외됩니다.
 
 다음 PowerShell cmdlet을 사용하는 경우 스캐너에서 파일 검사에 대해 포함되거나 제외되는 파일 형식을 변경할 수 있습니다.
 

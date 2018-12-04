@@ -4,16 +4,16 @@ description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 1a2702d1cff5cdf62b8969829f0389c15b5c7fae
-ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
+ms.openlocfilehash: 23185d2d6b5b1bb14633647c345d0e58eeda3bdc
+ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52292612"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52585995"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 
@@ -23,8 +23,6 @@ ms.locfileid: "52292612"
 
 이러한 시각적 표시에 대한 추가 정보:
 
-- 모든 시각적 표시에서 여러 줄의 텍스트를 사용할 수 있습니다.
-
 - 머리글 및 바닥글은 Word, Excel, PowerPoint 및 Outlook에 적용됩니다.
 
 - 워터마크는 Word, Excel 및 PowerPoint에 적용됩니다.
@@ -32,6 +30,8 @@ ms.locfileid: "52292612"
     - Excel: 페이지 레이아웃 및 인쇄 미리 보기 모드에 있을 때와 인쇄할 때만 워터마크가 표시됩니다.
     
     - PowerPoint: 마스터 슬라이드에 배경 이미지로 워터마크가 적용됩니다. **보기** 탭, **슬라이드 마스터**에서 **배경 그래픽 숨기기** 확인란이 선택되어 있지 않은지 확인합니다.
+
+- Word, Excel, PowerPoint의 워터마크와 헤더 및 바닥글에서 여러 줄이 지원됩니다. Outlook에서 적용된 레이블의 헤더 또는 바닥글에 여러 줄을 지정하면 한 줄로 결합됩니다. 이 경우에는 [Word, Excel, PowerPoint, Outlook에 대해 서로 다른 시각적 표시를 설정하는](##setting-different-visual-markings-for-word-excel-powerpoint-and-outlook) 구성을 사용하세요.
 
 - 최대 문자열 길이:
     
@@ -41,7 +41,7 @@ ms.locfileid: "52292612"
 
 - 텍스트 문자열을 지정할 수도 있고, [변수](#using-variables-in-the-text-string)를 사용하여 머리글, 바닥글 또는 워터마크를 적용할 때 텍스트 문자열을 동적으로 만들 수도 있습니다.
 
-- Word, PowerPoint 및 Outlook은 다른 색의 시각적 표시를 지원합니다. 색의 경우 구성된 시각적 표시는 Excel에서 항상 검은색으로 표시됩니다.
+- Word, PowerPoint, Outlook에 더해 이제 Excel에서도 다양한 색상의 시각적 표시가 지원됩니다.
 
 - 시각적 표시는 한 언어만 지원합니다.
 
@@ -82,7 +82,7 @@ ms.locfileid: "52292612"
 
 머리글, 바닥글 또는 워터마크에 대한 텍스트 문자열에 다음 변수를 사용할 수 있습니다.
 
-- `${Item.Label}` - 선택한 레이블 예: 내부
+- `${Item.Label}` - 선택한 레이블 예: 일반
 
 - `${Item.Name}` - 파일 이름 또는 메일 제목 예: JulySales.docx
 
@@ -95,6 +95,9 @@ ms.locfileid: "52292612"
 - `${Event.DateTime}` - 선택한 레이블을 설정한 날짜 및 시간 예: 2016년 8월 16일 오후 1시 30분
 
 예: **일반** 레이블 바닥글에 대해 `Document: ${item.name}  Classification: ${item.label}` 문자열을 지정하는 경우 문서화된 명명된 project.docx에 적용되는 바닥글 텍스트는 **Document: project.docx  Classification: General**이 됩니다.
+
+>[!TIP]
+> 문서 또는 템플릿에 [레이블 이름을 삽입할 때도 필드 코드](faqs-infoprotect.md#can-i-create-a-document-template-that-automatically-includes-the-classification)를 사용합니다.
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Word, Excel, PowerPoint 및 Outlook에서 다양한 시각적 표시 설정
 

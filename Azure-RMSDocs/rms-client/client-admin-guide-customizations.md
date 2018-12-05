@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/06/2018
+ms.date: 11/27/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 4d3a44426de151ad9d1f1262cae967fdddf0da6f
-ms.sourcegitcommit: 520c8758c46ab46427fe205234bb221688ec9ec4
+ms.openlocfilehash: 41e092b379cfb52db286a61ad715703514e500d0
+ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52292595"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52386783"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -50,10 +50,12 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 |EnableCustomPermissions|[사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
 |EnablePDFv2Protection|[PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호](#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
 |LabelbyCustomProperty|[Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
+|LabelToSMIME|[Outlook에서 S/MIME 보호를 적용하도록 레이블 구성](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |OutlookDefaultLabel|[Outlook에 대한 다른 기본 레이블 설정](#set-a-different-default-label-for-outlook)|
 |OutlookRecommendationEnabled|[Outlook에서 권장 분류 사용](#enable-recommended-classification-in-outlook)|
 |PostponeMandatoryBeforeSave|[필수 레이블을 사용하는 경우 문서에 대한 “나중에” 제거](#remove-not-now-for-documents-when-you-use-mandatory-labeling)|
 |ProcessUsingLowIntegrity|[스캐너에 대해 낮은 무결성 수준 사용 안 함](#disable-the-low-integrity-level-for-the-scanner)|
+|PullPolicy|[연결 해제된 컴퓨터 지원](#support-for-disconnected-computers)
 |RemoveExternalContentMarkingInApp|[다른 레이블 지정 솔루션에서 헤더 및 바닥글 제거](#remove-headers-and-footers-from-other-labeling-solutions)|
 |ReportAnIssueLink|[문제 보고 링크의 메일 주소 수정](#modify-the-email-address-for-the-report-an-issue-link)|
 |RunPolicyInBackground|[백그라운드에서 계속해서 실행되도록 분류 켜기](#turn-on-classification-to-run-continuously-in-the-background)|
@@ -64,11 +66,11 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 기본적으로 Azure Information Protection 클라이언트는 자동으로 Azure Information Protection 서비스에 연결하려 합니다. AD RMS와만 통신하는 컴퓨터의 경우 이 구성을 사용하면 불필요하게 사용자에게 로그인 프롬프트가 표시될 수 있습니다. 레지스트리를 편집하면 이 로그인 프롬프트를 방지할 수 있습니다.
 
-다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
+ - 다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
+    
+    **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
-
-이 설정에 관계 없이 Azure Information Protection 클라이언트는 표준 [RMS 서비스 검색 프로세스](client-deployment-notes.md#rms-service-discovery)에 따라 AD RMS 클러스터를 찾습니다.
+이 설정과 관계없이 Azure Information Protection 클라이언트는 표준 [RMS 서비스 검색 프로세스](client-deployment-notes.md#rms-service-discovery)에 따라 AD RMS 클러스터를 찾습니다.
 
 ## <a name="sign-in-as-a-different-user"></a>다른 사용자로 로그인
 
@@ -133,11 +135,28 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 인터넷에 연결하지 않으면 클라이언트가 조직의 클라우드 기반 키를 사용하여 보호를 적용(또는 보호를 제거)할 수 없습니다. 대신 클라이언트는 분류만 적용하는 레이블을 사용하거나 [HYOK](../configure-adrms-restrictions.md)를 활용하는 보호를 사용하도록 제한됩니다.
 
-이 설정을 구성하려면 레지스트리에서 다음 값 이름을 찾고 값 데이터를 **0**으로 설정합니다.
+[고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용하여 Azure Information Protection 서비스 로그인 프롬프트를 방지할 수 있습니다. 고급 클라이언트 설정은 Azure Portal에서 구성한 다음 컴퓨터로 정책을 다운로드해야 합니다. 또는 레지스트리를 편집하여 이 로그인 프롬프트를 방지할 수도 있습니다.
 
-**HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+- 고급 클라이언트 설정을 구성하려면:
+    
+    1. 다음 문자열을 입력합니다.
+    
+        - 키: **PullPolicy**
+        
+        - 값: **False**
+    
+    2. 이 설정으로 된 정책을 다운로드한 후 다음 지침에 따라 컴퓨터에 설치합니다.
 
-클라이언트의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 이름의 유효한 정책 파일이 있는지 확인합니다. 필요한 경우 Azure Portal에서 전역 정책 또는 범위 지정 정책을 내보낼 수 있으며 클라이언트 컴퓨터에 내보내기 된 파일을 복사할 수 있습니다. 또한 이러한 방법을 통해 오래된 정책 파일을 게시된 최신 정책으로 바꿀 수 있습니다. 그러나 정책 내보내기는 사용자가 둘 이상의 범위 지정 정책에 속하는 시나리오를 지원하지 않습니다. 사용자가 [도움말 및 피드백](client-admin-guide.md#help-and-feedback-section)의 **설정 재설정** 옵션을 선택하는 경우, 정책 파일이 삭제되고 정책 파일을 수동으로 바꾸거나 클라이언트가 서비스에 연결하여 정책을 다운로드할 때까지 클라이언트가 작동 불가능하게 됩니다.
+- 레지스트리를 편집하려면:
+    
+    - 다음 값 이름을 찾아서 값 데이터를 **0**으로 설정합니다.
+    
+        **HKEY_CURRENT_USER\SOFTWARE\Microsoft\MSIP\EnablePolicyDownload** 
+
+
+클라이언트의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 이름의 유효한 정책 파일이 있어야 합니다.
+
+Azure Portal에서 전역 정책 또는 범위 지정 정책을 내보낸 다음, 내보낸 파일을 클라이언트 컴퓨터로 복사할 수 있습니다. 이 방법을 사용하여 오래된 정책 파일을 최신 정책으로 바꿀 수도 있습니다. 그러나 정책 내보내기는 사용자가 둘 이상의 범위 지정 정책에 속하는 시나리오를 지원하지 않습니다. 사용자가 [도움말 및 피드백](client-admin-guide.md#help-and-feedback-section)의 **설정 재설정** 옵션을 선택하는 경우, 정책 파일이 삭제되고 정책 파일을 수동으로 바꾸거나 클라이언트가 서비스에 연결하여 정책을 다운로드할 때까지 클라이언트가 작동 불가능하게 됩니다.
 
 Azure Portal에서 정책을 내보내면 여러 버전의 정책이 포함된 Zip 파일이 다운로드됩니다. 이러한 정책 버전은 여러 버전의 Azure Information Protection 클라이언트에 해당됩니다.
 
@@ -222,6 +241,46 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 - 값: \<**레이블 ID**> 또는 **없음**
 
+## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Outlook에서 S/MIME 보호를 적용하도록 레이블 구성
+
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이 설정은 미리 보기로 제공되고 변경될 수 있습니다.
+
+정상 작동하는 [S/MIME 배포](https://docs.microsoft.com/office365/SecurityCompliance/s-mime-for-message-signing-and-encryption)가 있고, Azure Information Protection의 Rights Management를 사용하는 대신 메일에 이 보호 방법을 자동으로 적용하는 레이블을 사용하려는 경우에만 이 설정을 사용합니다. 그 결과로 적용되는 보호는 사용자가 Outlook에서 수동으로 S/MIME 옵션을 선택한 경우와 동일합니다.
+
+이 구성을 사용하려면 S/MIME 보호를 적용하려는 각 Azure Information Protection 레이블에서 이름이 **LabelToSMIME**인 고급 클라이언트 설정을 지정해야 합니다. 그런 다음 각 항목의 값을 다음 구문을 사용하여 설정합니다.
+
+`[Azure Information Protection label ID];[S/MIME action]`
+
+Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는 경우 레이블 ID 값이 **레이블** 블레이드에 표시됩니다. 하위 레이블이 있는 S/MIME를 사용하려면 항상 상위 레이블이 아닌 하위 레이블의 ID를 지정해야 합니다. 하위 레이블을 지정할 때는 상위 레이블이 같은 범위 또는 전역 정책에 있어야 합니다.
+
+S/MIME 작업은 다음이 될 수 있습니다.
+
+- `Sign;Encrypt`: 디지털 서명 및 S/MIME 암호화를 적용하려는 경우
+
+- `Encrypt`: S/MIME 암호화만 적용하려는 경우
+
+- `Sign`: 디지털 서명만 적용하려는 경우
+
+레이블 ID **dcf781ba-727f-4860-b3c1-73479e31912b**의 값 예시:
+
+- 디지털 서명과 S/MIME 암호화를 적용하려면:
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Sign;Encrypt**
+
+- S/MIME 암호화만 적용하려면:
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Encrypt**
+    
+- 디지털 서명만 적용하려면:
+    
+    **dcf781ba-727f-4860-b3c1-73479e31912b;Sign**
+
+이 구성의 결과로, 메일 메시지에 레이블을 적용하면 레이블의 분류에 더해 S/MIME 보호도 메일에 적용됩니다.
+
+지정한 레이블이 Azure Portal에서 Rights Management 보호에 대해 구성된 경우, 오직 Outlook에서만 S/MIME 보호가 Rights Management 보호를 대체합니다. 레이블 지정을 지원하는 다른 모든 시나리오에서는 Rights Management 보호가 적용됩니다.
+
+레이블이 Outlook에서만 표시되도록 하려면, [빠른 시작: 사용자가 중요한 정보가 포함된 메일을 쉽게 보호하도록 레이블 구성](../quickstart-label-dnf-protectedemail.md)에서 설명하는 바와 같이 단일 사용자 정의 작업 **전달 금지**를 적용하도록 레이블을 구성합니다.
+
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>필수 레이블을 사용하는 경우 문서에 대한 “나중에” 제거
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
@@ -296,7 +355,8 @@ PowerShell 명령을 사용하여 기존의 .ppdf 파일을 PDF 암호화의 ISO
     
     - **RMSTemplateId** 값. 이 값이 **제한된 액세스**이면 사용자는 레이블에 대해 구성된 보호 설정이 아니라 사용자 지정 권한을 사용하여 파일을 보호한 것입니다. 계속하면 이러한 사용자 지정 권한은 레이블의 보호 설정으로 덮어쓰여집니다. 계속할지 또는 사용자에게 원래 사용자 지정 권한과 함께 레이블을 제거했다가 다시 적용할 것을 사용자(**RMSIssuer**에 표시되는 값)에게 요청할지를 결정합니다.
 
-3. *RemoveLabel* 매개 변수와 함께 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)을 사용하여 레이블을 제거합니다. [정책 설정](../configure-policy-settings.md)으로 **Users must provide justification to set a lower classification label, remove a label, or remove protection(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)** 을 사용하는 경우 *Justification* 매개 변수와 근거를 지정해야 합니다. 예를 들면 다음과 같습니다. 
+3. *RemoveLabel* 매개 변수와 함께 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)을 사용하여 레이블을 제거합니다. [정책 설정](../configure-settings.md)으로
+4. **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)을 사용하는 경우 *Justification* 매개 변수와 근거를 지정해야 합니다. 예를 들면 다음과 같습니다. 
     
         Set-AIPFileLabel \\Finance\Projectx\sales.ppdf -RemoveLabel -JustificationMessage 'Removing .ppdf protection to replace with .pdf ISO standard'
 
@@ -417,7 +477,7 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 이 구성에서는 Azure Portal에서 구성해야 하는 여러 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이러한 설정은 미리 보기로 제공되고 변경될 수 있습니다.
 
-이 설정을 통해 다른 레이블 지정 솔루션에서 해당 시각적 표시가 적용된 경우 문서에서 헤더 또는 바닥글을 제거하거나 바꿀 수 있습니다. 예를 들어, 이전 바닥글에는 이제 새 레이블 이름 및 고유한 바닥글이 있는 Azure Information Protection으로 마이그레이션한 이전 레이블의 이름이 포함됩니다.
+이 설정을 통해 다른 레이블 지정 솔루션에서 해당 시각적 표시가 적용된 경우 문서에서 텍스트 기반 헤더 또는 바닥글을 제거하거나 바꿀 수 있습니다. 예를 들어, 이전 바닥글에는 이제 새 레이블 이름 및 고유한 바닥글이 있는 Azure Information Protection으로 마이그레이션한 이전 레이블의 이름이 포함됩니다.
 
 클라이언트가 해당 정책에서 이 구성을 가져오면 Office 앱에서 문서를 열고 Azure Information Protection 레이블을 문서에 적용할 때 이전 헤더 및 바닥글을 제거하거나 대체합니다.
 

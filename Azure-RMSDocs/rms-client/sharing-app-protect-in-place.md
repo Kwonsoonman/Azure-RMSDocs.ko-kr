@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 33920329-5247-4f6c-8651-6227afb4a1fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 218f20f7ad42b3f7b6e1a47a8c1f57556df612c3
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9156f7af9cb7915595f911b6d0ff8fa70332d8d7
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150724"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023450"
 ---
 # <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(내부 보호)
 
@@ -24,7 +24,7 @@ ms.locfileid: "44150724"
 파일을 내부에서 보호하면 보호되지 않는 원본 파일을 대체합니다. 그러면 파일을 원 위치에 남겨 두고 다른 폴더나 장치에 복사하거나, 파일이 들어 있는 폴더를 공유하여 파일을 보호할 수 있습니다. 메일을 통해 보호된 파일을 공유하는 권장 방법은 파일 탐색기나 Office 응용 프로그램에서 직접 공유하는 것이지만 보호된 파일을 메일 메시지에 첨부할 수도 있습니다([Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md) 참조).
 
 > [!TIP]
-> 파일을 보호하려 할 때 오류가 나타나면 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](http://go.microsoft.com/fwlink/?LinkId=303971)를 참조하세요.
+> 파일을 보호하려 할 때 오류가 나타나면 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](https://go.microsoft.com/fwlink/?LinkId=303971)를 참조하세요.
 
 ## <a name="to-protect-a-file-on-a-device-protect-in-place"></a>장치에서 파일을 보호하려면(내부 보호)
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 3b4dfc62950166ca7221002169005fa3693a5998
-ms.sourcegitcommit: e70bb1a02e96d701fd5ae2a25536fa485bbf2e87
+ms.openlocfilehash: 0bb7a5333124c7581144ec00ac0b758691ff349f
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48862094"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023799"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>사용자 가이드: Rights Management로 보호된 파일 보기 및 사용
 
@@ -47,7 +47,7 @@ ms.locfileid: "48862094"
 
 - 보호된 전자 메일이 전송된 경우 지침에 따라 소셜 ID 공급자(예: Gmail 계정용 Google)에 로그인하거나 일회성 암호를 신청하십시오.
 
-- Rights Management에 의해 보호되는 문서를 열 수 있도록 자격 증명을 수락할 무료 계정을 신청할 수 있습니다. 이 계정을 신청하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 신청하고 개인 이메일 주소 대신 회사 이메일 주소를 사용하십시오. 
+- Rights Management에 의해 보호되는 문서를 열 수 있도록 자격 증명을 수락할 무료 계정을 신청할 수 있습니다. 이 계정을 신청하려면 링크를 클릭하여 [개인용 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)를 신청하고 개인 이메일 주소 대신 회사 이메일 주소를 사용하십시오. 
 
 ## <a name="to-view-and-use-a-protected-document"></a>보호된 문서를 보고 사용하려면
 

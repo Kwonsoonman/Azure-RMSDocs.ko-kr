@@ -11,12 +11,12 @@ ms.service: information-protection
 ms.assetid: 5ac121b3-d7a0-40e4-8fe7-90bf4cf796f1
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 283e3dc21997f455301fcd7a6edb3caf84f82572
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 9ca34cc149f86fa99174ea9792d05d7dfecc35dc
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150826"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023583"
 ---
 # <a name="change-permissions-on-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일에 대한 사용 권한 변경
 
@@ -65,7 +65,7 @@ ms.locfileid: "44150826"
 >
 > 조직에서 Azure Information Protection 또는 AD RMS를 사용하지 않으면 RMS로 보호된 파일을 사용할 수 있도록 사용자의 자격 증명을 허용하는 무료 계정을 신청할 수 있습니다.
 >
-> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
+> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
 >
 >     등록하면 개인 메일 주소보다 회사 메일 주소를 사용합니다. 보호된 첨부 파일을 메일로 전송받았기 때문에 등록한 경우 메일 메시지를 보내는 데 사용된 동일한 메일 주소를 사용합니다.
 > -   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../rms-for-individuals.md)를 참조하세요.

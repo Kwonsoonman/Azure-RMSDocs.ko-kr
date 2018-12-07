@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 944d47d77efa06999e21ebe42b03a5b35733cc05
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 139198780f5a83b1336715dccf8540c2962cda00
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150095"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023319"
 ---
 # <a name="download-and-install-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램 다운로드 및 설치 
 
@@ -28,7 +28,7 @@ ms.locfileid: "44150095"
 
 ## <a name="to-download-and-install-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 다운로드하고 설치하려면
 
-1.  Microsoft 웹 사이트의 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
+1.  Microsoft 웹 사이트의 [Microsoft Rights Management](https://go.microsoft.com/fwlink/?LinkId=303970) 페이지로 이동합니다.
 
 2.  **컴퓨터** 섹션에서 **Windows용 RMS 앱** 의 아이콘을 클릭하고 **Setup.exe** 파일을 저장하여 Microsoft Rights Management 공유 응용 프로그램을 설치합니다.
 

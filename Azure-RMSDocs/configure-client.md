@@ -4,18 +4,18 @@ description: Windows 컴퓨터 및 모바일 장치에서 Azure Information Prot
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: b1a19ae7-db26-40da-9e21-6620af3d0b02
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 58b569fef27050388e94440af371e605cd3c1f91
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e60ef4d683abe920072fdc9cf6a0b8e9537cf5ff
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149585"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023416"
 ---
 # <a name="azure-information-protection-client-installation-and-configuration-for-clients"></a>Azure Information Protection 클라이언트: 클라이언트 설치 및 구성
 
@@ -32,7 +32,7 @@ Windows용 클라이언트의 엔터프라이즈 설치 및 구성에 대한 자
 > 단일 컴퓨터에 대해 Azure Information Protection 클라이언트를 빠르게 설치하고 테스트하려면 [Azure Information Protection 클라이언트 사용자 가이드](./rms-client/client-user-guide.md)에서 [Azure Information Protection 클라이언트 다운로드 및 설치](./rms-client/install-client-app.md)를 참조하세요.
 
 ## <a name="the-azure-information-protection-client-for-ios-and-android-installation-and-management"></a>iOS 및 Android용 Azure Information Protection 클라이언트: 설치 및 관리
-이러한 널리 사용되는 모바일 플랫폼에 대해 Azure Information Protection 클라이언트를 설치하려면 [Microsoft Azure Information Protection 페이지](http://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 관련 앱을 다운로드할 수 있습니다. 별도의 구성이 필요 없습니다.
+이러한 널리 사용되는 모바일 플랫폼에 대해 Azure Information Protection 클라이언트를 설치하려면 [Microsoft Azure Information Protection 페이지](https://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 관련 앱을 다운로드할 수 있습니다. 별도의 구성이 필요 없습니다.
 
 > [!NOTE]
 > Mac 컴퓨터 및 Windows Phone의 경우 이 페이지의 링크를 클릭하면 모바일 장치용 RMS 공유 앱이 다운로드됩니다. 이러한 장치는 현재 Azure Information Protection 클라이언트를 지원하지 않습니다.

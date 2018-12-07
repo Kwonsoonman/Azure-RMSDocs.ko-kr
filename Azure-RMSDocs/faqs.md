@@ -4,18 +4,18 @@ description: Azure Information Protection과, 데이터 보호 서비스인 Azur
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/09/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5e78630e39c63f69037dd7288f764c435ff5c81e
-ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
+ms.openlocfilehash: fd3c4701abba55bc80117345444781a02cd8f6a2
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304062"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024402"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
@@ -110,7 +110,7 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 
 - 이러한 계정은 Azure Portal에서 Azure Information Protection 블레이드에 액세스할 수 없기 때문에 관리자 계정을 조건부 액세스 정책에 추가하지 않는 것이 좋습니다.
 
-- 다른 조직(B2B)과 공동으로 작업하기 위해 조건부 액세스 정책에서 MFA를 사용하는 경우 [Azure AD B2B 공동 작업](/active-directory/b2b/what-is-b2b)을 사용하고 다른 조직에서 공유할 사용자의 게스트 계정을 만들어야 합니다.
+- 다른 조직(B2B)과 공동으로 작업하기 위해 조건부 액세스 정책에서 MFA를 사용하는 경우 [Azure AD B2B 공동 작업](/azure/active-directory/b2b/what-is-b2b)을 사용하고 다른 조직에서 공유할 사용자의 게스트 계정을 만들어야 합니다.
 
 - 조건부 액세스에 많은 클라우드 앱을 사용하면 선택할 목록에 **Microsoft Azure Information Protection**이 표시되지 않을 수 있습니다. 이 경우에 목록 맨 위에 있는 검색 상자를 사용합니다. "Microsoft Azure Information Protection"을 입력하여 사용할 수 있는 앱을 필터링합니다. 지원되는 구독을 제공하면 선택할 **Microsoft Azure Information Protection**이 표시됩니다. 
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 5a189695-40a6-4b36-afe6-0823c94993ef
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ebc5a9867bad267b71f2f4ae6ebe0e22c9e7a607
-ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
+ms.openlocfilehash: 861d262a04f80a6e1326f15b06942afd27f41990
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51707762"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024300"
 ---
 # <a name="migration-phase-2---server-side-configuration-for-ad-rms"></a>마이그레이션 2단계 - AD RMS에 대한 서버 쪽 구성
 
@@ -72,7 +72,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 2단계에는
 - 외부 암호화 공급자를 사용하여 암호 보호.
 
 > [!NOTE]
-> AD RMS에서 하드웨어 보안 모듈을 사용하는 방법에 대한 자세한 내용은 [하드웨어 보안 모듈에서 AD RMS 사용](http://technet.microsoft.com/library/jj651024.aspx)을 참조하세요.
+> AD RMS에서 하드웨어 보안 모듈을 사용하는 방법에 대한 자세한 내용은 [하드웨어 보안 모듈에서 AD RMS 사용](https://technet.microsoft.com/library/jj651024.aspx)을 참조하세요.
 
 두 Azure Information Protection 테넌트 키 토폴로지 옵션은 Microsoft에서 테넌트 키를 관리하는 방식(**Microsoft 관리**) 또는 Azure Key Vault에서 사용자가 테넌트 키를 관리하는 방식(**고객 관리**)입니다. Azure Information Protection 테넌트 키를 자체적으로 관리하는 경우 BYOK(bring your own key)라고 합니다. 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](plan-implement-tenant-key.md) 문서를 참조하세요.
 
@@ -145,7 +145,7 @@ Azure Rights Management 서비스를 활성화하기 전 또는 후, 마이그�
 
 AD RMS의 템플릿에서 **ANYONE** 그룹을 사용한 경우 Azure Information Protection에서 가장 근접한 그룹의 이름은 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@\<tenant_name>.onmicrosoft.com**입니다. 예를 들어 이 그룹은 Contoso에 대해 **AllStaff-7184AB3F-CCD1-46F3-8233-3E09E9CF0E66@contoso.onmicrosoft.com**과 같을 수 있습니다. 이 그룹에는 Azure AD 테넌트의 모든 사용자가 포함됩니다.
 
-Azure Portal의 템플릿과 레이블을 관리할 때 이 그룹은 Azure AD에 테넌트의 도메인 이름으로 표시됩니다. 예를 들어 이 그룹은 Contoso에 대해 **contoso.onmicrosoft.com**과 같이 표시될 수 있습니다. 이 그룹을 추가하기 위해 옵션에 **\<조직 이름 추가> - 모든 멤버**가 표시됩니다.
+Azure Portal의 템플릿과 레이블을 관리할 때 이 그룹은 Azure AD에 테넌트의 도메인 이름으로 표시됩니다. 예를 들어 이 그룹은 Contoso에 대해 **contoso.onmicrosoft.com**과 같이 표시될 수 있습니다. 이 그룹을 추가하기 위해 옵션에 **\<조직 이름 추가> - 모든 멤버가 표시됩니다.
 
 AD RMS 템플릿에 ANYONE 그룹이 포함되어 있는지가 확실하지 않은 경우 다음 샘플 Windows PowerShell 스크립트를 사용하여 이러한 템플릿을 식별할 수 있습니다. AD RMS와 함께 Windows PowerShell을 사용하는 방법에 대한 자세한 내용은 [Windows PowerShell을 사용하여 AD RMS 관리](https://technet.microsoft.com/library/ee221079%28v=ws.10%29.aspx)를 참조하세요.
 

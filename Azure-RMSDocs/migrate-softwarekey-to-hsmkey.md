@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1d749c77ada71a7f086b5d7836f44b530cab2dc9
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 7a95da3590a666e1d90452e514e93ab6100b8ad7
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330346"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024028"
 ---
 # <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
 
@@ -43,9 +43,9 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 1.  Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azurekey-vault) 섹션의 다음 단계를 사용하세요.
 
-    -   **키를 생성하여 Azure 주요 자격 증명 모음 HSM으로 전송**: [1단계: 인터넷에 연결된 워크스테이션 준비](/azure/key-vault-hsm-protected-keys/#step-1-prepare-your-internet-connected-workstation)
+    -   **키를 생성하여 Azure 주요 자격 증명 모음 HSM으로 전송**: [1단계: 인터넷에 연결된 워크스테이션 준비](/azure/key-vault/key-vault-hsm-protected-keys#step-1-prepare-your-internet-connected-workstation)
 
-    -   **인터넷을 통해 테넌트 키 생성 및 전송**: [2단계: 연결이 끊어진 워크스테이션 준비](/azure/key-vault-hsm-protected-keys/#step-2-prepare-your-disconnected-workstation)
+    -   **인터넷을 통해 테넌트 키 생성 및 전송**: [2단계: 연결이 끊어진 워크스테이션 준비](/azure/key-vault/key-vault-hsm-protected-keys#step-2-prepare-your-disconnected-workstation)
 
     내보낸 구성 데이터(.xml) 파일에 테넌트 키가 이미 있으므로, 테넌트 키를 생성하는 단계는 수행하지 않도록 합니다. 대신 도구를 실행하여 파일에서 이 키를 추출한 후 온-프레미스 HSM으로 가져옵니다. 도구를 실행하면 파일 두 개가 만들어집니다.
 

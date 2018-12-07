@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 7b91ab30-6363-4929-bcbd-4dfbd05f644a
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 435432c1c759c040482096393c3a36cdee02691b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: f6e84919653d68fb4f09671b233ccdc31bf1a82f
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148497"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024283"
 ---
 # <a name="dialog-box-options-for-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션
 
@@ -24,7 +24,7 @@ ms.locfileid: "44148497"
 이 정보를 사용하여 RMS 공유 응용 프로그램 **보호 추가** 대화 상자 또는 **보호된 항목 공유** 대화 상자에서 옵션을 지정하게 합니다. [공유하는 파일을 보호](sharing-app-protect-by-email.md)하거나 [준비된 파일을 보호](sharing-app-protect-in-place.md)하고 사용자 지정 권한을 선택하면 이 대화 상자가 표시됩니다.
 
 > [!IMPORTANT]
-> 표시되는 옵션이 여기서 설명하는 것과 다른 경우 아마도 설치된 공유 응용 프로그램의 최신 버전이 필요하지 않습니다. 최신 버전을 [Microsoft Rights Management](http://go.microsoft.com/fwlink/?LinkId=303970) 페이지에서 다운로드할 수 있습니다.
+> 표시되는 옵션이 여기서 설명하는 것과 다른 경우 아마도 설치된 공유 응용 프로그램의 최신 버전이 필요하지 않습니다. 최신 버전을 [Microsoft Rights Management](https://go.microsoft.com/fwlink/?LinkId=303970) 페이지에서 다운로드할 수 있습니다.
 > 
 > 최신 버전을 사용하는지 어떻게 알 수 있을까요? 프로그램 및 기능에 나열된 **Microsoft Rights Management 공유 응용 프로그램** 을 검색하고 해당 버전 번호를 확인합니다. 테이블에서 옵션을 확인하고 사용하려면 적어도 **1.0.1770.0**버전이어야 합니다. 다운로드 페이지에서 최신 버전 번호를 확인할 수 있습니다.
 

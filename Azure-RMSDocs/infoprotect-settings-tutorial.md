@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: tutorial
 ms.service: information-protection
-ms.openlocfilehash: b9f60d0e8cc61a1d38b2992c0d430507bf494d18
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 75a13413cbbbb1a7ab653522fcec9606c002f7d8
+ms.sourcegitcommit: dce7b4f95c216afc9ec6524a686a02287e6bdcf7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644655"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53007501"
 ---
 # <a name="tutorial-configure-azure-information-protection-policy-settings-that-work-together"></a>자습서: 함께 작동하는 Azure Information Protection 정책 설정 구성
 
@@ -35,7 +35,7 @@ ms.locfileid: "51644655"
 
 이 자습서를 완료하려면 다음이 필요합니다.
 
-1. Azure Information Protection 플랜 2를 포함하는 구독.
+1. Azure Information Protection 플랜 1 또는 플랜 2를 포함하는 구독.
     
     이러한 플랜을 포함하는 구독이 없으면 조직을 위해 [무료](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7) 계정을 만들 수 있습니다.
 

@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/05/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: adcaa1e0f15536d83a20c54017813d7e1546d860
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 351b026429a803bf1ac74cdddd547c73a29dfa18
+ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644712"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52953349"
 ---
 # <a name="quickstart-get-started-in-the-azure-portal"></a>빠른 시작: Azure Portal에서 시작
 
@@ -24,7 +24,7 @@ ms.locfileid: "51644712"
 
 이 빠른 시작을 완료하려면 다음이 필요합니다.
 
-- Azure Information Protection 플랜 1 또는 플랜 1을 포함하는 구독.
+- Azure Information Protection 플랜 1 또는 플랜 2를 포함하는 구독.
     
     이러한 구독 중 하나라도 없으면 조직을 위해 [무료](https://portal.office.com/Signup/Signup.aspx?OfferId=87dd2714-d452-48a0-a809-d2f58c4f68b7) 계정을 만들 수 있습니다.
 

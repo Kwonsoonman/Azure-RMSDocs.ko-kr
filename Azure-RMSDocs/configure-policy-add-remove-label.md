@@ -1,5 +1,5 @@
 ---
-title: Azure Information Protection 정책에 대해 레이블을 추가 또는 제거
+title: Azure Information Protection 정책에 대해 레이블을 추가 또는 제거 - AIP
 description: 모든 사용자에 대한 전역 정책 또는 사용자 하위 집합에 대한 범위 지정 정책에 대해 Azure Information Protection 레이블을 추가하거나 제거합니다.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: a5e5e50f5271476c3690280cbe026be9ada7ceb2
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: f097ec2f0e3db75d679e6c0a6251fb128f583d4b
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170277"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023307"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Azure Information Protection 정책에 대해 레이블을 추가 또는 제거
 

@@ -1,6 +1,6 @@
 ---
-title: Azure Information Protection 레이블에 대한 조건 구성
-description: 레이블에 대한 조건을 구성할 때 문서 또는 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장하는 레이블을 선택하라는 메시지를 표시할 수 있습니다.
+title: Azure Information Protection 레이블에 대한 조건 구성 - AIP
+description: 레이블에 대한 조건을 사용하여 문서 또는 메일에 레이블을 자동으로 할당할 수 있습니다. 또는 사용자에게 권장 레이블을 선택하도록 프롬프트할 수 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -8,12 +8,12 @@ ms.date: 11/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e915f959-eafb-4375-8d2c-2f312edf2d29
-ms.openlocfilehash: 49d3879dd4dd5d9a5459638b1b539f4fa233ee2f
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: adf877a3f5f08d0adefd1cbe8864a0c0c2bb17b1
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026556"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023858"
 ---
 # <a name="how-to-configure-conditions-for-automatic-and-recommended-classification-for-azure-information-protection"></a>Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법
 

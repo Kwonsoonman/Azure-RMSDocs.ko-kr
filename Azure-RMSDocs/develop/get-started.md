@@ -12,27 +12,27 @@ ms.assetid: 9f4cbd16-58e5-421f-a472-8d279e952760
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6234cb19d58bcdad7ea34bad791abbbfa57706ed
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0503baead6ef46c7b09f4e1d8b055279c795c007
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148004"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023365"
 ---
 # <a name="get-started"></a>시작
 
-이 릴리스의 Microsoft Rights Management SDK 4.2에서 첫 번째 응용 프로그램에 빠른 시작 접근 방식은 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 사용합니다. 먼저 다음을 수행하여 권한 사용 응용 프로그램을 만듭니다.
+이 릴리스의 Microsoft Rights Management SDK 4.2에서 첫 번째 애플리케이션에 빠른 시작 접근 방식은 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 사용합니다. 먼저 다음을 수행하여 권한 사용 응용 프로그램을 만듭니다.
 
 1. 다음 링크 표를 사용하여 대상 운영 체제용 **SDK 패키지를 다운로드**합니다.
 
   |RMS SDK 4.2|
   |---------------|
-  |[Android SDK](http://Go.Microsoft.Com/FWLink/p/?LinkId=404271)|
-  |[iOS SDK](http://Go.Microsoft.Com/FWLink/p/?LinkId=404272)|
+  |[Android SDK](https://go.microsoft.com/fwlink/p/?LinkId=404271)|
+  |[iOS SDK](https://go.microsoft.com/fwlink/p/?LinkId=404272)|
   |Github에서 오픈 소스 프로젝트로 제공되는 [Linux/C++ SDK](https://github.com/AzureAD/rms-sdk-for-cpp)|
-  |[OS X SDK](http://Go.Microsoft.Com/FWLink/p/?LinkId=404273)|
-  |[Windows Phone](http://go.microsoft.com/fwlink/p/?LinkId=524758)|
-  |[Windows 스토어 응용 프로그램](http://go.microsoft.com/fwlink/p/?LinkID=526163)|
+  |[OS X SDK](https://go.microsoft.com/fwlink/p/?LinkId=404273)|
+  |[Windows Phone](https://go.microsoft.com/fwlink/p/?LinkId=524758)|
+  |[Windows 스토어 응용 프로그램](https://go.microsoft.com/fwlink/p/?LinkID=526163)|
 
 2. 운영 체제에 대한 **설치 가이드를 진행**합니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "44148004"
 
   |항목|설명|
   |-----|-----------|
-  |[새로운 기능](release-notes.md)|MS RMS SDK 4.2에서는 RMS 응용 프로그램 사용이 훨씬 쉽고 유연해졌습니다.|
+  |[새로운 기능](release-notes.md)|MS RMS SDK 4.2에서는 RMS 애플리케이션 사용이 훨씬 쉽고 유연해졌습니다.|
   |[개발자 환경 설정](setup-developer-environment.md)|다음 항목에서는 특정 운영 체제용 AD RMS SDK API를 사용하도록 개발 환경을 설정하는 과정을 보여 줍니다.|
   |[코드 예제](code-examples.md)|MS RMS SDK 4.2에는 지원되는 일부 운영 체제에 대한 예제 코드와 작업 프로젝트가 포함되어 있습니다.|
   |[커뮤니티 리소스](community-resources.md)|여러 플랫폼에서 Active Directory Rights Management Services를 잘 지원하는 개발자 커뮤니티가 점점 확장되고 있습니다.|

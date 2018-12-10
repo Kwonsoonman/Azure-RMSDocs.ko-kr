@@ -4,18 +4,18 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/30/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: d29203359bcfdda09d7792f1f65a7c85723ee18f
-ms.sourcegitcommit: c1c34529f10dd7c1545ca37be9629b52be87e33e
+ms.openlocfilehash: 153009e9c9760649bd42d85bece421e3b8ee5afd
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52731152"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024249"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -62,7 +62,7 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 
 요구 사항이 조직 정책에 의해 금지되어 있어 표의 일부 요구 사항을 충족할 수 없는 경우 대안에 대한 다음 섹션을 참조하세요.
 
-모든 요구 사항이 충족되는 경우 [설치 섹션](#install-the-azure-information-protection-scanner)으로 바로 이동하세요.
+모든 요구 사항이 충족되는 경우 [설치 섹션](#install-the-scanner)으로 바로 이동하세요.
 
 ### <a name="deploying-the-scanner-with-alternative-configurations"></a>대체 구성으로 스캐너 배포
 
@@ -221,7 +221,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
     
         Set-AIPScannerConfiguration -Enforce On -Schedule Always
     
-    다른 구성 설정을 변경하려는 경우가 있습니다. 예를 들어 파일 특성의 변경 여부 및 보고서에 기록된 내용을 변경하려고 합니다. 또한 Azure Information Protection 정책에 분류 수준을 낮추거나 보호를 제거하라는 근거 메시지가 필요한 설정을 포함하는 경우 이 cmdlet을 사용하여 해당 메시지를 지정합니다. 각 구성 설정에 대한 자세한 내용은 [온라인 도움말](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#parameters)을 사용합니다. 
+    다른 구성 설정을 변경하려는 경우가 있습니다. 예를 들어 파일 특성의 변경 여부 및 보고서에 기록된 내용을 변경하려고 합니다. 또한 Azure Information Protection 정책에 분류 수준을 낮추거나 보호를 제거하라는 근거 메시지가 필요한 설정을 포함하는 경우 이 cmdlet을 사용하여 해당 메시지를 지정합니다. 각 구성 설정에 대한 자세한 내용은 [온라인 도움말](/powershell/module/azureinformationprotection/Set-AIPScannerConfiguration#optional-parameters)을 사용합니다. 
 
 2. 현재 시간을 메모하고 다음 명령을 실행하여 스캐너를 다시 시작합니다.
     
@@ -364,7 +364,7 @@ Azure Information Protection 스캐너에서 지원하는 다음 두 가지 대�
 
 - Azure Information Protection의 조건 변경
     
-    스캐너가 모든 파일을 검사해야 하는 첫 번째 검색 주기는 기본적으로 새로 추가되거나 변경된 파일만 검사하는 후속 스캔 주기보다 분명히 더 오래 걸립니다. 그러나 Azure Information Protection 정책의 조건을 변경하면 [이전 섹션](#when-files-are-rescanned-by-the-azure-information-protection-scanner)에 설명된 것처럼 모든 파일이 다시 스캔됩니다.
+    스캐너가 모든 파일을 검사해야 하는 첫 번째 검색 주기는 기본적으로 새로 추가되거나 변경된 파일만 검사하는 후속 스캔 주기보다 분명히 더 오래 걸립니다. 그러나 Azure Information Protection 정책의 조건을 변경하면 [이전 섹션](#when-files-are-rescanned)에 설명된 것처럼 모든 파일이 다시 스캔됩니다.
 
 - 선택한 로깅 수준
     

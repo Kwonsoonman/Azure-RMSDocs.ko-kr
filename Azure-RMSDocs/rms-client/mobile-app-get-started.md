@@ -1,7 +1,6 @@
 ---
 title: 시작 - iOS 및 Android용 AIP 앱
-description: ''
-keywords: iOS 및 Android용 Azure Information Protection 앱으로 메일 또는 파일을 보는 방법
+description: iOS 및 Android용 Azure Information Protection 앱으로 메일 또는 파일 보기
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -11,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 3d5d18d8-7b2e-456c-bb45-48da4eb55544
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c1a8722c91e456dcc1686d6edb51b906e288f5ba
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: aea2c8734aa36cb5ca735e351abe27e4e6dcc4e2
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147613"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023798"
 ---
 # <a name="get-started-with-the-microsoft-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Microsoft Azure Information Protection 앱 시작
 

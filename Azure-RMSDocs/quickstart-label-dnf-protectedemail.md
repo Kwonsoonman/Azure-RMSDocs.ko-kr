@@ -1,5 +1,5 @@
 ---
-title: 빠른 시작 - 사용자가 중요한 정보가 포함된 이메일을 쉽게 보호하도록 레이블 구성
+title: '빠른 시작: 사용자가 중요한 정보가 포함된 이메일을 쉽게 보호하도록 레이블 구성 - AIP'
 description: 전달 금지 보호를 자동으로 적용하여 사용자를 위해 이메일을 보호하는 레이블을 구성합니다.
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 793c3ff3b68de66dce5876c25cb4ba5455d19c33
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 217fbdc45967b5677f554410bca2ac1da58552d2
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644695"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023501"
 ---
 # <a name="quickstart-configure-a-label-for-users-to-easily-protect-emails-that-contain-sensitive-information"></a>빠른 시작: 사용자가 중요한 정보가 포함된 이메일을 쉽게 보호하도록 레이블 구성
 

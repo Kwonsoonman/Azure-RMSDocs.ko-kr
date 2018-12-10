@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: f9b02f62ff31665e60455cdcd77e0de9da4db9af
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: ec0c231e2036dc66b941be7f764bb5e5fd5c518a
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148438"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023808"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보
 
@@ -36,7 +36,7 @@ Microsoft Rights Management 공유 응용 프로그램은 선택적으로 다운
 
 Microsoft Rights Management 공유 응용 프로그램은 [AD RMS 클라이언트 2.1 런타임](http://www.microsoft.com/download/details.aspx?id=38396)을 사용합니다. Microsoft Rights Management 공유 응용 프로그램은 AD RMS 2.1의 기능을 사용하여 최종 사용자에게 단순한 보호 및 사용 환경을 제공합니다.
 
-RMS의 2013년 10월 릴리스를 설치하면 Office 2010을 사용해 문서를 기본적으로 보호할 수 있으며 다른 회사 직원에게 문서를 보낼 수 있습니다. 문서를 받은 사용자는 Azure Information Protection의 Azure Rights Management 서비스를 통해 문서를 사용할 수 있습니다. 또한 이 릴리스에서는 암호화 모드 2에서 AD RMS를 사용하는 경우 개별 사용자에 대해 RMS를 사용할 수 있으며 Azure Rights Management 서비스를 사용하는 다른 회사 직원의 콘텐츠도 사용할 수 있습니다. 암호화 모드 2에 대한 자세한 내용은 [AD RMS 암호화 모드](http://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)를 참조하세요.
+RMS의 2013년 10월 릴리스를 설치하면 Office 2010을 사용해 문서를 기본적으로 보호할 수 있으며 다른 회사 직원에게 문서를 보낼 수 있습니다. 문서를 받은 사용자는 Azure Information Protection의 Azure Rights Management 서비스를 통해 문서를 사용할 수 있습니다. 또한 이 릴리스에서는 암호화 모드 2에서 AD RMS를 사용하는 경우 개별 사용자에 대해 RMS를 사용할 수 있으며 Azure Rights Management 서비스를 사용하는 다른 회사 직원의 콘텐츠도 사용할 수 있습니다. 암호화 모드 2에 대한 자세한 내용은 [AD RMS 암호화 모드](https://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)를 참조하세요.
 
 배포 정보는 [Microsoft Rights Management 공유 응용 프로그램 자동 배포](sharing-app-admin-guide.md#automatic-deployment-for-the-microsoft-rights-management-sharing-application)를 참조하세요.
 
@@ -75,9 +75,9 @@ RMS 공유 응용 프로그램이 적용하는 기본 보호 수준을 변경할
 |.jpe|.pjpe|
 |.jfif|.pjfif|
 |.jt|.pjt|
-¹ PDF 렌더링 기능은 Foxit에서 제공합니다. Copyright © 2003–2014 by Foxit C또는p또는ation.
+¹ PDF 렌더링 기능은 Foxit에서 제공합니다. Copyright © 2003–2014 by Foxit C또는p또는ation.
 
-다음 표에는 Microsoft Rights Management 공유 응용 프로그램이 Microsoft Office 2016, Office 2013 및 Office 2010에서 기본적으로 지원하는 파일 형식이 나와 있습니다. 이러한 파일의 경우에는 Rights Management 서비스를 통해 파일을 보호한 후에도 파일 이름 확장명이 동일하게 유지됩니다.
+다음 표에는 Microsoft Rights Management 공유 애플리케이션이 Microsoft Office 2016, Office 2013 및 Office 2010에서 기본적으로 지원하는 파일 형식이 나와 있습니다. 이러한 파일의 경우에는 Rights Management 서비스를 통해 파일을 보호한 후에도 파일 이름 확장명이 동일하게 유지됩니다.
 
 |Office에서 지원하는 파일 형식|Office에서 지원하는 파일 형식|
 |----------------------------------|----------------------------------|

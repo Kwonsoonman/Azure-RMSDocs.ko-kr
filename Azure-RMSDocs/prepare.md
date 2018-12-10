@@ -4,18 +4,18 @@ description: 조직의 문서와 메일의 분류, 레이블 지정 및 보호�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0277b638f9d069d2cfb1084136068d7ef58b1e2b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: abbb7e5af52952dc3ed69f2825a8e32d25ab9982
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151625"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024104"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 
@@ -73,9 +73,9 @@ Azure Rights Management 서비스를 사용하여 문서 및 메일을 보호할
     
     도메인이 테넌트에 추가되어 있으면("확인된 도메인") Azure Information Protection에서 이 Azure AD proxyAddresses 특성에 있는 모든 값을 사용할 수 있습니다. 도메인 확인에 대한 자세한 내용은 다음을 참조하십시오.
     
-    - Azure AD: [Azure Active Directory에 사용자 지정 도메인 이름 추가](/active-directory/active-directory-add-domain)
+    - Azure AD: [Azure Active Directory에 사용자 지정 도메인 이름 추가](/azure/active-directory/fundamentals/add-custom-domain)
 
-    - Office 365: [Office 365에 도메인 및 사용자 추가](https://go.microsoft.com/fwlinkid/?linkid=847121)
+    - Office 365의 경우: [Office 365에 도메인 추가](/office365/admin/setup/add-domain?view=o365-worldwide)
 
 - **Azure AD userPrincipalName** 특성은 테넌트에 있는 계정에 Azure AD proxyAddresses 특성의 값이 없는 경우에만 사용됩니다. 예를 들어, Azure Portal에 사용자를 만들거나 Office 365에 사서함이 없는 사용자를 만듭니다.
 

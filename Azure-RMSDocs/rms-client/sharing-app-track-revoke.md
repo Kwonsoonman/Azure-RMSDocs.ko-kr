@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 61f349ce-bdd2-45c1-acc5-bc83937fb187
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c20ead2b01b2a37d63bbf3b2b0295f37c9421fdd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: d0efb37ee0d424593b9cdb4c2690088e11afc29d
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151693"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024062"
 ---
 # <a name="track-and-revoke-your-documents-when-you-use-the-rms-sharing-application"></a>RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소
 
@@ -37,7 +37,7 @@ ms.locfileid: "44151693"
     
     참고: 전역 관리자임에도 이 아이콘이 표시되지 않은 원인은 문서를 아직 공유하지 않았기 때문입니다. 이 경우에 다음 URL을 사용하여 문서 추적 사이트에 액세스합니다. https://portal.azurerms.com/#/admin
 
-- 문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [문서 추적 FAQ](http://go.microsoft.com/fwlink/?LinkId=523977)에 액세스합니다.
+- 문서 추적 사이트에 대한 질문이 있거나 피드백을 제공하려는 경우 도움말 아이콘을 클릭하여 [문서 추적 FAQ](https://go.microsoft.com/fwlink/?LinkId=523977)에 액세스합니다.
 
 ## <a name="using-office-to-access-the-document-tracking-site"></a>Office를 사용하여 문서 추적 사이트 액세스
 
@@ -67,7 +67,7 @@ Office 응용 프로그램을 사용하여 Windows 컴퓨터에서 문서를 추
 
 #### <a name="using-a-web-browser-to-access-the-doc-tracking-site"></a>웹 브라우저를 사용하여 문서 추적 사이트 액세스
 
-- 지원되는 브라우저를 사용하여 [문서 추적 사이트](http://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다.
+- 지원되는 브라우저를 사용하여 [문서 추적 사이트](https://go.microsoft.com/fwlink/?LinkId=529562)로 이동합니다.
 
     지원되는 브라우저: Internet Explorer 버전 10 이상을 사용하는 것이 좋지만 다음 브라우저를 통해서도 문서 추적 사이트를 사용할 수 있습니다.
 

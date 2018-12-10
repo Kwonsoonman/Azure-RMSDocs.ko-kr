@@ -4,18 +4,18 @@ description: Azure Information Protection의 Azure RMS(Azure Rights Management)R
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/21/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0359329513bdd2825f7121a95d4e940a76c401a5
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 43bc10ce43a4ba7a26958e562c4acc6e245ad76a
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148803"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024079"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
 
@@ -30,7 +30,7 @@ ms.locfileid: "44148803"
     > [!TIP]
     > 최종 사용자를 위한 예제 비디오:
     > -   [Microsoft Azure Information Protection](https://youtu.be/ToShAUdlrPo?list=PL8nfc9haGeb6qSm1kLU8n3Zqg398764h5)
-    > -   [Azure RMS Document Tracking and Revocation](http://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Azure RMS 문서 추적 및 해지)
+    > -   [Azure RMS Document Tracking and Revocation](https://channel9.msdn.com/Series/Information-Protection/Azure-RMS-Document-Tracking-and-Revocation)(Azure RMS 문서 추적 및 해지)
 
 -   **관리자 정보**
     
@@ -66,20 +66,20 @@ ms.locfileid: "44148803"
 
 ## <a name="using-information-protection-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 정보 보호 사용
 
-Office 2010이 있는 경우 보호된 문서 및 전자 메일을 보호하고 사용하기 위해 Azure Information Protection 클라이언트(또는 이전 응용 프로그램, RMS 공유 응용 프로그램)가 필요합니다. 그러나 Azure Information Protection 클라이언트는 이 서비스를 지원하는 모든 컴퓨터 및 모바일 장치에도 권장됩니다.
+Office 2010이 있는 경우 보호된 문서 및 메일을 보호하고 사용하기 위해 Azure Information Protection 클라이언트(또는 이전 애플리케이션, RMS 공유 애플리케이션)가 필요합니다. 그러나 Azure Information Protection 클라이언트는 이 서비스를 지원하는 모든 컴퓨터 및 모바일 장치에도 권장됩니다.
 
 Azure Information Protection 클라이언트는 사용자가 보다 쉽게 문서 및 메일을 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 합니다. 또한 이전에 권한이 부여된 사용자가 더 이상 액세스할 필요가 없는 경우 추적된 문서를 해지할 수도 있습니다.
 
 이 Windows 컴퓨터용 클라이언트를 사용하기 위한 지침은 [Azure Information Protection 클라이언트 사용자 가이드](./rms-client/client-user-guide.md)를 참조하세요.
 
 
-## <a name="using-information-protection-with-office-365-office-2016-or-office-2013"></a>Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용
+## <a name="using-information-protection-with-office365-office-2016-or-office2013"></a>Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용
 Azure Rights Management 서비스를 사용하고 있으며 Azure Information Protection 클라이언트를 설치하지 않은 경우 Office 데스크톱 앱의 Azure Information Protection 표시줄이 표시되지 않습니다. 리본의 **보호** 단추나 파일 탐색기의 **분류 및 보호**도 표시되지 않습니다. 이러한 추가 옵션은 파일 및 전자 메일을 보다 쉽게 보호할 수 있도록 합니다. 이러한 사용자는 다음에 나오는 단계와 유사한 지침을 따라야 합니다.
 
 > [!TIP]
 > 이러한 응용 프로그램에서 정보 보호 기능을 사용하기 위한 응용 프로그램별 도움말과 지침을 찾으려면 **IRM** 및 응용 프로그램 이름과 버전을 검색합니다.
 
-#### <a name="to-protect-a-document-in-word-2013"></a>Word 2013에서 문서를 보호하려면
+#### <a name="to-protect-a-document-in-word2013"></a>Word 2013에서 문서를 보호하려면
 
 1.  Microsoft Word 내에서 문서를 만듭니다.
 
@@ -98,7 +98,7 @@ Azure Rights Management 서비스를 사용하고 있으며 Azure Information Pr
 
 사용 권한은 제한 배너를 통해 문서 맨 위에 표시됩니다. 이 배너에는 문서에 적용된 권한이 표시될 수도 있고 해당 권한을 표시할 수 있는 링크가 제공될 수도 있습니다.
 
-#### <a name="to-protect-an-email-message-using-outlook-2013-and-exchange-online"></a>Outlook 2013 및 Exchange Online을 사용하여 전자 메일 메시지를 보호하려면
+#### <a name="to-protect-an-email-message-using-outlook2013-and-exchange-online"></a>Outlook 2013 및 Exchange Online을 사용하여 전자 메일 메시지를 보호하려면
 
 1.  Outlook 내에서 조직의 받는 사람 주소를 지정하여 메일 메시지를 작성합니다.
 

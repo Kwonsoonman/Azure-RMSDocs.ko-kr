@@ -12,19 +12,18 @@ ms.assetid: EA1457D1-282F-4CF3-A23C-46793D2C2F32
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 8c047aaf0d78c9389720345551b9c19038b82ad1
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 7f9965628cce150c8bb53e02b206c4291677f8bc
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149670"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023476"
 ---
 # <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
 
 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/library/jj585016.aspx)을 참조하세요.
 
-**중요**  
-Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그램을 사용하려면 사용자 고유의 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독)](../requirements.md) 항목을 참조하세요.
+**중요**   Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 애플리케이션을 사용하려면 사용자 고유의 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독)](../requirements.md) 항목을 참조하세요.
 
 ## <a name="prerequisites"></a>전제 조건
 
@@ -41,9 +40,9 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
         IpcSetGlobalProperty(IPC_EI_API_MODE, &(mode));
 
 
-  **참고** 자세한 내용은 [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)을 참조하세요.
+  **참고**  자세한 내용은 [API 보안 모드 설정](setting-the-api-security-mode-api-mode.md)을 참조하세요.
 
-     
+     
 -   다음 단계는 *pcCredential*([IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx)) 멤버에 Azure Rights Management 서비스의 연결 정보를 채워 [IPC\_PROMPT\_CTX](https://msdn.microsoft.com/library/hh535278.aspx) 구조체 인스턴스를 만들기 위한 설정입니다.
 -   [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 구조체 인스턴스를 만드는 경우 대칭 키 서비스 ID 생성(이 항목의 앞부분에 나열된 필수 조건 참조)의 정보를 사용하여 *wszServicePrincipal*, *wszBposTenantId* 및 *cbKey* 매개 변수를 설정합니다.
 
@@ -53,10 +52,10 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 
 ### <a name="instructions-to-generate-a-symmetric-key"></a>대칭 키 생성 지침
 
--   [Microsoft Online 로그인 도우미](http://go.microsoft.com/fwlink/p/?LinkID=286152)를 설치합니다.
+-   [Microsoft Online 로그인 도우미](https://go.microsoft.com/fwlink/p/?LinkID=286152)를 설치합니다.
 -   [Azure AD Powershell 모듈](https://bposast.vo.msecnd.net/MSOPMW/8073.4/amd64/AdministrationConfig-en.msi)을 설치합니다.
 
-**참고** - Powershell cmdlet을 사용하려면 테넌트 관리자여야 합니다.
+**참고** - Powershell cmdlet을 사용하려면 테넌트 관리자여야 합니다.
 
 - Powershell을 시작하고 다음 명령을 실행하여 키를 생성합니다.
 
@@ -104,7 +103,7 @@ Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 응용 프로그�
 
 -   [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx) 인스턴스를 포함하는 [IPC\_CREDENTIAL](https://msdn.microsoft.com/library/hh535275.aspx) 구조체 인스턴스를 만듭니다.
 
-**참고** - *connectionInfo* 멤버는 이전 `Get-AadrmConfiguration` 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
+**Note** - *connectionInfo* 구성원은 `Get-AadrmConfiguration`에 대한 이전 호출의 URL로 설정되며 여기서 해당 필드 이름으로 설명됩니다.
 
     // Create a credential structure.
     IPC_CREDENTIAL cred = {0};

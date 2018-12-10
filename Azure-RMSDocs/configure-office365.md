@@ -4,28 +4,28 @@ description: 관리자가 Azure Information Protection의 Azure Rights Managemen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/15/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c876d4ffb3ecfb04aeb8aaad3dab83ea20ac35fa
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c87dc5692afff775069ec468438edddbeb61ac3e
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148973"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024215"
 ---
-# <a name="office-365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: 클라이언트와 온라인 서비스가 Azure Rights Management 서비스를 사용하도록 구성
+# <a name="office365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: 클라이언트와 온라인 서비스가 Azure Rights Management 서비스를 사용하도록 구성
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Office 365는 기본적으로 Azure Information Protection의 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 웹의 Outlook과 같은 응용 프로그램에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 모든 사용자는 Rights Management 자격 증명으로 Office 응용 프로그램에 로그인해야 합니다. 그러면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
+Office 365는 기본적으로 Azure Information Protection의 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 웹의 Outlook과 같은 애플리케이션에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 모든 사용자는 Rights Management 자격 증명으로 Office 응용 프로그램에 로그인해야 합니다. 그러면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
 
 그러나 사용자가 Office 추가 기능 및 추가 파일 형식 지원에 따른 이점을 얻을 수 있도록 Azure Information Protection 클라이언트로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
-## <a name="exchange-online-irm-configuration"></a>Exchange Online: IRM 구성
+## <a name="exchangeonline-irm-configuration"></a>Exchange Online: IRM 구성
 Exchange Online IRM이 Azure Rights Management 서비스와 함께 작동하는 방식에 대한 자세한 내용은 **이해 및 탐색** 섹션에서 [Exchange Online 및 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server)를 참조하세요.
 
 Exchange Online는 Azure Rights Management 서비스를 이미 사용하도록 설정한 상태일 수 있습니다. 확인하려면 다음 명령을 실행합니다.
@@ -72,7 +72,7 @@ Exchange Online는 Azure Rights Management 서비스를 이미 사용하도록 �
 
 Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성할 때 [메일 흐름 규칙](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8), [DLP(데이터 손실 방지) 정책](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) 및 [보호된 음성 메일](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)(통합 메시징)과 같이 Information Protection을 자동으로 적용하는 기능을 구성할 수 있습니다.
 
-## <a name="sharepoint-online-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 및 비즈니스용 OneDrive: IRM 구성
+## <a name="sharepointonline-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 및 비즈니스용 OneDrive: IRM 구성
 
 SharePoint Online IRM이 Azure Rights Management 서비스와 함께 작동하는 방식에 대한 자세한 내용은 **이해 및 탐색** 섹션에서 [SharePoint Online 및 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server)를 참조하세요.
 
@@ -245,7 +245,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
                     {
                         if($_.Exception.Message -match "Could not load file or assembly")
                         {
-                            Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=35588"
+                            Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=35588"
                         }
                         else
                         {
@@ -533,7 +533,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
 ##### <a name="additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file"></a>모든 비즈니스용 OneDrive URL을 .CSV 파일로 출력하는 추가 스크립트
 4c 위의 단계에서 다음 Windows PowerShell 스크립트를 사용해 모든 사용자의 Business용 OneDrive 라이브러리의 URL을 추출할 수 있습니다. 그런 다음 확인해서 필요한 경우 편집하여 기본 스크립트로 가져올 수 있습니다.
 
-이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](http://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 동일한 지침에 따라 복사하여 붙여넣고 파일을 로컬로 저장(예: "Report-OneDriveForBusinessSiteInfo.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 이전과 마찬가지로 수정하고 스크립트를 실행합니다.
+이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](https://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 동일한 지침에 따라 복사하여 붙여넣고 파일을 로컬로 저장(예: "Report-OneDriveForBusinessSiteInfo.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 이전과 마찬가지로 수정하고 스크립트를 실행합니다.
 
 *&#42;&#42;고지 사항&#42;&#42;*: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
 
@@ -552,7 +552,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
    http://www.microsoft.com/en-us/download/details.aspx?id=42038
 
    SharePoint Online Management Shell
-   http://www.microsoft.com/en-us/download/details.aspx?id=35588
+   https://www.microsoft.com/en-us/download/details.aspx?id=35588
 
 ======
 #>
@@ -647,7 +647,7 @@ function Load-SharePointOnlineModule
                 {
                     if($_.Exception.Message -match "Could not load file or assembly")
                     {
-                        Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=35588"
+                        Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=35588"
                     }
                     else
                     {
@@ -758,7 +758,7 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 ##### <a name="script-to-disable-irm-for-onedrive-for-business"></a>비즈니스용 OneDrive에 대한 IRM를 사용하지 않도록 설정하는 스크립트
 사용자의 비즈니스용 OneDrive에 대한 IRM을 사용하지 않도록 설정해야 하는 경우 다음 샘플 스크립트를 사용합니다.
 
-이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](http://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 콘텐츠를 복사하여 붙여넣고 파일을 로컬로 저장(예: "Disable-IRMOnOneDriveForBusiness.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 수정합니다. 비즈니스용 OneDrive URL을 수동으로 지정하거나 이전 섹션의 스크립트를 사용하여 해당 URL을 가져온 다음 스크립트를 실행합니다.
+이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](https://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 콘텐츠를 복사하여 붙여넣고 파일을 로컬로 저장(예: "Disable-IRMOnOneDriveForBusiness.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 수정합니다. 비즈니스용 OneDrive URL을 수동으로 지정하거나 이전 섹션의 스크립트를 사용하여 해당 URL을 가져온 다음 스크립트를 실행합니다.
 
 *&#42;&#42;고지 사항&#42;&#42;*: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
 
@@ -776,7 +776,7 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
    http://www.microsoft.com/en-us/download/details.aspx?id=42038
 
    SharePoint Online Management Shell
-   http://www.microsoft.com/en-us/download/details.aspx?id=35588
+   https://www.microsoft.com/en-us/download/details.aspx?id=35588
 
 ======
 #>
@@ -876,7 +876,7 @@ function Load-SharePointOnlineModule
                 {
                     if($_.Exception.Message -match "Could not load file or assembly")
                     {
-                        Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=35588"
+                        Write-Error -Message "Unable to load the SharePoint Online Management Shell.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=35588"
                     }
                     else
                     {

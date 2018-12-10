@@ -1,5 +1,5 @@
 ---
-title: Azure Information Protection의 기본 정책
+title: Azure Information Protection - AIP의 기본 정책
 description: Azure Information Protection에 대한 기본 정책을 구성하는 방법을 설명합니다. 기본 정책을 수정하는 경우 이러한 값을 참조하여 정책을 기본값으로 반환할 수 있습니다.
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/06/2018
 ms.topic: conceptual
 ms.service: information-protection
-ms.openlocfilehash: d74dfcd35dca2f3ab5e88a66eaaba37b13636e4d
-ms.sourcegitcommit: fa0be701b85b1fba5e75428714bb4525dd739a93
+ms.openlocfilehash: f4e5301ec9c1f2bd1a98da6acedd58f3f42f5ffa
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223979"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024385"
 ---
 # <a name="the-default-azure-information-protection-policy"></a>기본 Azure Information Protection 정책
 

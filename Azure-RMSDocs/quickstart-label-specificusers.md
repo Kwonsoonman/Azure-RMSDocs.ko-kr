@@ -1,5 +1,5 @@
 ---
-title: 빠른 시작 - 특정 사용자를 위해 새 Azure Information Protection 레이블 만들기
+title: '빠른 시작: 특정 사용자를 위해 새 Azure Information Protection 레이블 만들기 - AIP'
 description: 범위가 지정된 정책을 사용하여 특정 사용자의 문서 및 이메일을 분류하는 새 레이블을 만들고 구성합니다.
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/14/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: dca90c7635702226e7414947aad6f3d89cf91efd
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 1a8af09681411e49936c067c6161376c9d4f9f16
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644654"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023577"
 ---
 # <a name="quickstart-create-a-new-azure-information-protection-label-for-specific-users"></a>빠른 시작: 특정 사용자를 위해 새 Azure Information Protection 레이블 만들기
 

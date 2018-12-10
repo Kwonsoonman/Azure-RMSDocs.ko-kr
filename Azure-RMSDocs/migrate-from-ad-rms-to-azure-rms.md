@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ff3e9f93de5a46ec12ae001d798ec0292da8526a
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 79dbf817086aa3f4b7919d87136008222a0bb1a6
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149007"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024266"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
@@ -55,9 +55,9 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
         
         - Windows Server 2012(x64)
         
-        - Windows Server 2012 R2(x64)
+        - Windows Server 2012 R2(x64)
         
-        - Windows Server 2016(x64)
+        - Windows Server 2016(x64)
         
     - 유효한 모든 AD RMS 토폴로지가 지원됩니다.
     
@@ -86,7 +86,7 @@ Azure Information Protection으로 마이그레이션을 시작하기 전에 다
 
     [Azure Information Protection을 위한 사용자 및 그룹 준비](prepare.md)를 참조하세요.
 
-- **AD RMS와 함께 Exchange Server(예: 전송 규칙 및 Outlook Web Access) 또는 SharePoint Server의 IRM(정보 권한 관리) 기능을 사용한 경우**:
+- **AD RMS와 함께 Exchange Server(예: 전송 규칙 및 Outlook 웹 액세스) 또는 SharePoint Server의 IRM(정보 권한 관리) 기능을 사용한 경우**:
 
     - 이러한 서버에서 IRM을 사용할 수 없는 짧은 기간 계획
  
@@ -131,7 +131,7 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - 파트너의 AD RMS로 보호된 콘텐츠에 대한 요청을 해당 테넌트의 Azure Rights Management 서비스로 리디렉션하도록 마이그레이션된 클라이언트를 구성할 수 있도록 파트너는 해당 AD RMS 클러스터의 URL 및 Azure Rights Management 서비스 URL을 제공합니다. 클라이언트 리디렉션 구성에 대한 지침은 7단계에 있습니다.
 
-- 사용자 마이그레이션을 시작하기 전에 파트너가 해당 AD RMS 클러스터 루트 키(SLC)를 해당 테넌트로 가져옵니다. 마찬가지로, 파트너가 사용자 마이그레이션을 시작하기 전에 AD RMS 클러스터 루트 키를 가져와야 합니다. 키 가져오기에 대한 지침은 이 마이그레이션 프로세스의 [4단계에 설명되어 있습니다. AD RMS에서 구성 데이터를 내보낸 후 Azure Information Protection으로 가져오기](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection)에 설명되어 있습니다. 
+- 사용자 마이그레이션을 시작하기 전에 파트너가 해당 AD RMS 클러스터 루트 키(SLC)를 해당 테넌트로 가져옵니다. 마찬가지로, 파트너가 사용자 마이그레이션을 시작하기 전에 AD RMS 클러스터 루트 키를 가져와야 합니다. 키 가져오기에 대한 지침은 이 마이그레이션 프로세스의 [4단계에 설명되어 있습니다. AD RMS에서 구성 데이터를 내보낸 후 Azure Information Protection으로 가져옵니다](migrate-from-ad-rms-phase2.md#step-4-export-configuration-data-from-ad-rms-and-import-it-to-azure-information-protection). 
 
 ## <a name="overview-of-the-steps-for-migrating-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션하는 단계 개요
 
@@ -203,7 +203,7 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - **11단계: 클라이언트 마이그레이션 작업 완료**
 
-    iOS 휴대폰 및 iPad, Android 휴대폰 및 태블릿, Windows 휴대폰 및 Mac 컴퓨터와 같은 모바일 장치를 지원하기 위해 [모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포한 경우, AD RMS를 사용하도록 이러한 클라이언트를 리디렉션한 DNS의 SRV 레코드를 제거해야 합니다. 
+    iOS 휴대폰 및 iPad, Android 휴대폰 및 태블릿, Windows 휴대폰 및 Mac 컴퓨터와 같은 모바일 장치를 지원하기 위해 [모바일 장치 확장](https://technet.microsoft.com/library/dn673574.aspx)을 배포한 경우, AD RMS를 사용하도록 이러한 클라이언트를 리디렉션한 DNS의 SRV 레코드를 제거해야 합니다. 
     
     준비 단계 중에 구성한 온보딩 컨트롤이 더 이상 필요하지 않습니다. 그러나 단계별로 마이그레이션하지 않고 모든 항목을 동시에 마이그레이션하도록 선택함에 따라 온보딩 컨트롤을 사용하지 않은 경우 온보딩 컨트롤을 제거하도록 요구하는 지침을 건너뛸 수 있습니다.
     

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: d51e7bdd-2e5c-4304-98cc-cf2e7858557d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 16d3aa308395a65f7d3af6e74f817d88d6033747
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: e535295c4393d2d7267174f587fcbbf34fa986b0
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150588"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023875"
 ---
 # <a name="migration-phase-5---post-migration-tasks"></a>마이그레이션 5단계 - 마이그레이션 후 작업
 
@@ -38,7 +38,7 @@ SCP를 제거하려면 도메인 엔터프라이즈 관리자로 로그인하고
 
 4. **현재 SCP 제거**를 클릭하고 **확인**을 클릭합니다.
 
-이제 AD RMS 서버의 활동을 모니터링합니다. 예를 들어 [시스템 상태 보고서의 요청](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [ServiceRequest 테이블](http://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) 또는 [보호된 콘텐츠에 대한 사용자 액세스 감사](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx)를 확인합니다. 
+이제 AD RMS 서버의 활동을 모니터링합니다. 예를 들어 [시스템 상태 보고서의 요청](https://technet.microsoft.com/library/ee221012%28v=ws.10%29.aspx), [ServiceRequest 테이블](https://technet.microsoft.com/library/dd772686%28v=ws.10%29.aspx) 또는 [보호된 콘텐츠에 대한 사용자 액세스 감사](http://social.technet.microsoft.com/wiki/contents/articles/3440.ad-rms-frequently-asked-questions-faq.aspx)를 확인합니다. 
 
 RMS 클라이언트가 이러한 서버와 더 이상 통신하지 않으며 클라이언트가 Azure Information Protection을 성공적으로 사용하고 있는지 확인한 다음, 이러한 서버에서 AD RMS 서버 역할을 제거할 수 있습니다. 전용 서버를 사용하는 경우 일정 기간 먼저 서버를 종료하는 준비 단계를 거칠 수 있습니다. 이렇게 하면 클라이언트가 Azure Information Protection을 사용하지 않는 이유를 조사하는 동안 서비스 연속성을 위해 이러한 서버를 다시 시작해야 할 수 있는 문제가 보고되지 않았는지 확인하는 시간을 가질 수 있습니다.
 
@@ -49,7 +49,7 @@ AD RMS 서버 프로비전을 해제한 후 Azure Portal에서 템플릿을 검�
 
 ## <a name="step-11-complete-client-migration-tasks"></a>11단계. 전체 클라이언트 마이그레이션 작업
 
-모바일 장치 클라이언트 및 Mac 컴퓨터의 경우: [AD RMS 모바일 장치 확장](http://technet.microsoft.com/library/dn673574.aspx)을 배포할 때 만든 DNS SRV 레코드를 제거합니다.
+모바일 장치 클라이언트 및 Mac 컴퓨터의 경우: [AD RMS 모바일 장치 확장](https://technet.microsoft.com/library/dn673574.aspx)을 배포할 때 만든 DNS SRV 레코드를 제거합니다.
 
 이러한 DNS 변경 내용이 전파되면 이러한 클라이언트는 자동으로 검색하고 Azure Rights Management 서비스를 사용하기 시작합니다. 그러나 Office Mac을 실행하는 Mac 컴퓨터는 AD RMS에서 정보를 캐시합니다. 이러한 컴퓨터에서 이 프로세스는 최대 30일이 걸릴 수 있습니다. 
 

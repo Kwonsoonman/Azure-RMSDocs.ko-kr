@@ -12,17 +12,17 @@ ms.assetid: 32C7F387-CF7E-4CE0-AFC9-4C63FE1E134A
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2a239c802ae818a3b51eb0fb05f98f509f469e3c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5a3fabd4d76dc86b52d0d8891b7032d1e017cf28
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146322"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023303"
 ---
 # <a name="how-to-install-configure-and-test-with-an-rms-server"></a>방법: RMS 서버 설치, 구성 및 테스트
 
 이 항목에서는 권한 사용 응용 프로그램 테스트에 사용할 RMS 서버 또는 Azure RMS에 연결하는 단계를 설명합니다.
- 
+ 
 ## <a name="instructions"></a>지침
 
 ### <a name="step-1-setup-your-rms-server"></a>1단계: RMS 서버 설정
@@ -38,7 +38,7 @@ ms.locfileid: "44146322"
 
     Windows Server 2008 이상에서는 클라이언트 및 서버 구성 요소가 운영 체제에 포함되어 있습니다. 이전 운영 체제에 대한 서버 구성 요소는 다음 위치에서 다운로드할 수 있습니다.
 
-    -   [RMS 서버 v1.0 SP2](http://go.microsoft.com/fwlink/p/?linkid=73722)
+    -   [RMS 서버 v1.0 SP2](https://go.microsoft.com/fwlink/p/?linkid=73722)
 
     Windows Server 2008에서 서버 구성 요소를 구성하려면 AD RMS 역할을 설치해야 합니다. 이전 서버 운영 체제를 기반으로 하여 응용 프로그램을 개발하는 경우 RMS 서버 v1.0 SP2를 설치한 후 RMS 서비스를 프로비전하기 전에 레지스트리를 구성합니다.
 

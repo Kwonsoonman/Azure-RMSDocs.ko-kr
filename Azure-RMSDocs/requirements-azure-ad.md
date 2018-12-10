@@ -1,21 +1,21 @@
 ---
-title: AIP에 대한 Azure Active Directory 요구 사항
+title: Azure Information Protection에 대한 Azure AD 요구 사항 - AIP
 description: 사용자가 정상적으로 인증할 수 있도록, Azure Information Protection을 사용하는 데 필요한 Azure AD 요구 사항을 파악합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/26/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed25aa83-e272-437b-b445-3f01e985860c
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 442c1b6ec44421696aef928c38692ded70911966
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 58de817eec541c4bbb1b5d4541469cda0d93e417
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146873"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024198"
 ---
 # <a name="azure-active-directory-requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 Azure Active Directory 요구 사항
 
@@ -25,9 +25,9 @@ Azure Information Protection을 사용하려면 Azure AD 디렉터리가 있어�
 
 Azure Information Protection 또는 Azure Rights Management가 포함된 구독이 있는 경우 필요에 따라 Azure AD 디렉터리가 자동으로 만들어집니다.  
 
-Azure AD에 대한 자세한 내용은 [Azure Active Directory란?](/active-directory/active-directory-whatis)을 참조하세요.
+Azure AD에 대한 자세한 내용은 [Azure Active Directory란?](/azure/active-directory/fundamentals/active-directory-whatis)을 참조하세요.
 
-Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Azure Active Directory와 온-프레미스 ID 통합](/active-directory/active-directory-aadconnect)을 참조하세요.
+Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Azure Active Directory와 온-프레미스 Active Directory 도메인 통합](/azure/architecture/reference-architectures/identity/azure-ad)을 참조하세요.
 
 ### <a name="scenarios-that-have-specific-requirements"></a>특정 요구 사항이 있는 시나리오 
 
@@ -47,7 +47,7 @@ CBA(인증서 기반 인증) 지원:
     
     UPN 값에 있는 도메인이 테넌트에 대해 확인된 도메인인 경우는 사용자의 UPN 값을 Azure AD proxyAddresses 특성에 대한 다른 메일 주소로 추가합니다. 이렇게 하면 사용 권한을 부여할 때 사용자의 UPN 값이 지정되어 있을 경우 사용자에게 Azure Rights Management에 대한 사용 권한을 부여할 수 있습니다. 여기에 대한 자세한 내용과 사용자 계정에 권한을 부여하는 방법은 [Azure Information Protection을 위한 사용자 및 그룹 준비](prepare.md)를 참조하세요.
 
-AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스 인증을 수행하는 모바일 장치나 Mac 컴퓨터:
+AD FS 또는 이와 동등한 인증 공급자를 사용하여 온-프레미스 인증을 수행하는 모바일 디바이스 또는 Mac 컴퓨터:
 
 - **Windows Server 2012 R2** 이상의 서버 버전이나 OAuth 2.0 프로토콜을 지원하는 다른 인증 공급자에서 AD FS를 사용해야 합니다.
 

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 27de9df7062f6072e7e15b66759f540d5ce81dba
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 926a6d34b34b486577f6a8481010d058e465b3e8
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148055"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023994"
 ---
 # <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일 보기 및 사용
 
@@ -28,7 +28,7 @@ ms.locfileid: "44148055"
 >
 > 조직이 Azure Information Protection 또는 AD RMS를 사용하지 않으면 자격 증명을 허용하는 무료 계정을 적용하므로 RMS를 사용하여 보호되는 파일을 열 수 있습니다.
 >
-> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](http://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
+> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
 >
 >     등록하면 개인 메일 주소보다 회사 메일 주소를 사용합니다. 보호된 첨부 파일을 메일로 전송받았기 때문에 등록한 경우 메일 메시지를 보내는 데 사용된 동일한 메일 주소를 사용합니다.
 > -   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../rms-for-individuals.md)를 참조하세요.
@@ -86,7 +86,7 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 
 - **기타 파일 이름 확장명**
 
-    장치는 Rights Management 보호를 이해하는 응용 프로그램으로 이런 파일을 사용해야 합니다. 이러한 응용 프로그램은 RMS 지원 응용 프로그램이라고 합니다. Office 2016, Office 2013 및 Office 2010의 응용 프로그램(Word, Excel, PowerPoint 및 Outlook 등)은 Rights Management를 지원하는 응용 프로그램의 예입니다. 하지만 다른 소프트웨어 회사 또는 고유의 업무 응용 프로그램과 같은 Microsoft에서 제공되지 않는 응용 프로그램도 Rights Management에 대해 지원될 수 있습니다.
+    장치는 Rights Management 보호를 이해하는 응용 프로그램으로 이런 파일을 사용해야 합니다. 이러한 응용 프로그램은 RMS 지원 응용 프로그램이라고 합니다. Office 2016, Office 2013 및 Office 2010의 애플리케이션(Word, Excel, PowerPoint 및 Outlook 등)은 Rights Management를 지원하는 애플리케이션의 예입니다. 하지만 다른 소프트웨어 회사 또는 고유의 업무 응용 프로그램과 같은 Microsoft에서 제공되지 않는 응용 프로그램도 Rights Management에 대해 지원될 수 있습니다.
 
     Rights Management를 지원하는 응용 프로그램은 응용 프로그램을 지원하는 다른 Rights Management에서 보호된 파일을 여는 방법을 압니다. 또한 파일을 편집하거나 다른 파일 이름 또는 다른 위치에 저장할 경우 적용 되는 보호를 유지할 수 있습니다. 이러한 응용 프로그램은 파일에 현재 적용되는 권한에 따라 파일을 사용하므로 파일을 사용하는 권한이 있는 경우 그렇게 할 수 있습니다. 예를 들어 파일을 편집하지만 인쇄하지 않을 수 있습니다.
 

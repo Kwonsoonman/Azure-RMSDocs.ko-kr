@@ -1,5 +1,5 @@
 ---
-title: 보호를 위해 Azure Information Protection 레이블 구성
+title: 보호를 위해 Azure Information Protection 레이블 구성 - AIP
 description: Rights Management 보호를 사용하도록 레이블을 구성하면 가장 중요한 문서 및 메일을 보호할 수 있습니다.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 10/31/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df26430b-315a-4012-93b5-8f5f42e049cc
-ms.openlocfilehash: e16c50422268a05596ebc28e09d464959fd1e0b2
-ms.sourcegitcommit: ef70dab87478084fca853f389dab2408b95d1df1
+ms.openlocfilehash: ba878086ec29f85bd6191cb193dcde52a47ea813
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303926"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53022719"
 ---
 # <a name="how-to-configure-a-label-for-rights-management-protection"></a>Rights Management 보호에 대해 레이블을 구성하는 방법
 

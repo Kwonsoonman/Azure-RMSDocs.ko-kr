@@ -1,5 +1,5 @@
 ---
-title: 빠른 시작 - Azure Information Protection 스캐너를 사용하여 온-프레미스에 저장된 파일에 있는 중요한 정보 찾기
+title: 빠른 시작 - Azure Information Protection 스캐너를 사용하여 파일에서 중요한 정보 찾기 - AIP
 description: Azure Information Protection 검사 기능을 사용하여 온-프레미스에 저장된 파일에 있는 중요한 정보를 찾습니다.
 author: cabailey
 ms.author: cabailey
@@ -7,12 +7,12 @@ manager: mbaldwin
 ms.date: 11/05/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: a69972ec4371c808b7a295bfc993a257e440d1e1
-ms.sourcegitcommit: 227f54a8e90aa57d778ab60c646179c10e5edb44
+ms.openlocfilehash: 050c56887b83f0badf692bf2ee3b4616ad5b8bf4
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51272400"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024232"
 ---
 # <a name="quickstart-find-what-sensitive-information-you-have-in-files-stored-on-premises"></a>빠른 시작: 온-프레미스에 저장된 파일에 있는 중요한 정보 찾기
 

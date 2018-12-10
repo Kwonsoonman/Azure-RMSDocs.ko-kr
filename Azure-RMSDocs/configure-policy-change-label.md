@@ -1,5 +1,5 @@
 ---
-title: Azure Information Protection 레이블 변경
+title: Azure Information Protection 레이블 변경 - AIP
 description: Azure Information Protection 정책에서 구성하여 사용자의 Information Protection 표시줄에 표시되는 레이블을 변경하거나 구체화할 수 있습니다.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3b6d95f-334b-4d17-80a9-7d5487ab5d32
-ms.openlocfilehash: bb6d9e6ea17f91652c04741ae7915a4fe431d695
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: b2323e4dc372ee7f1649230d06c7ecb58cd6943b
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170283"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023479"
 ---
 # <a name="how-to-change-or-customize-an-existing-label-for-azure-information-protection"></a>Azure Information Protection에 대한 기존 레이블을 변경하거나 사용자 지정하는 방법
 

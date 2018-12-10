@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 84bd09aef5390c9ff8eee299febf41e91c2cb606
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6ea5a80ad9d08873f817f21a9f6ac4d059618af7
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149483"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024045"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>마이그레이션 4단계 - 지원 서비스 구성
 
@@ -37,7 +37,7 @@ AD RMS에서 Azure Information Protection으로 마이그레이션 4단계에는
     
     이 DNS 레코드가 제 위치에 있으면 웹 및 모바일 메일 클라이언트에서 Outlook을 사용하는 사용자가 해당 앱에서 AD RMS로 보호된 메일을 볼 수 있으며, Exchange는 AD RMS에서 가져온 키를 사용하여 AD RMS로 보호되는 콘텐츠를 암호 해독, 인덱싱, 저널링 및 보호할 수 있습니다.  
 
-2. Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 명령을 실행합니다. 이 명령을 실행하기 위해 도움말이 필요한 경우 [Exchange Online: IRM 구성](/..deploy-use/configure-office365.md#exchange-online-irm-configuration)에서 단계별 지침을 참조하세요.
+2. Exchange Online [Get-IRMConfiguration](https://technet.microsoft.com/library/dd776120(v=exchg.160\).aspx) 명령을 실행합니다. 이 명령을 실행하기 위해 도움이 필요한 경우 [Exchange Online: IRM 구성](configure-office365.md#exchange-online-irm-configuration)에서 단계별 지침을 참조하세요.
     
     출력에서 **AzureRMSLicensingEnabled**를 **True**로 설정했는지 확인합니다.
     

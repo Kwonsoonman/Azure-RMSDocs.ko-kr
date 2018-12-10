@@ -1,5 +1,5 @@
 ---
-title: 빠른 시작 - Azure Portal에서 시작
+title: 빠른 시작 - Azure Portal에서 Azure Information Protection 시작 - AIP
 description: 조직이 Azure Information Protection을 처음 사용하는 경우 여기에서 시작하여 Azure Portal에 서비스를 추가하고, 보호 서비스가 활성화되었는지 확인하고, 정책을 봅니다.
 author: cabailey
 ms.author: cabailey
@@ -7,14 +7,14 @@ manager: mbaldwin
 ms.date: 11/05/2018
 ms.topic: quickstart
 ms.service: information-protection
-ms.openlocfilehash: 351b026429a803bf1ac74cdddd547c73a29dfa18
-ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
+ms.openlocfilehash: f5cf70b0827e36ffae6644634ef198385ef6d11a
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52953349"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023518"
 ---
-# <a name="quickstart-get-started-in-the-azure-portal"></a>빠른 시작: Azure Portal에서 시작
+# <a name="quickstart-get-started-with-azure-information-protection-in-the-azure-portal"></a>빠른 시작: Azure Portal에서 Azure Information Protection 시작
 
 이 빠른 시작에서는 Azure Portal에 Azure Information Protection을 추가하고, 보호 서비스가 활성화되었는지 확인하고, 조직의 기본 정책을 봅니다. 
 

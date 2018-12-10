@@ -1,5 +1,5 @@
 ---
-title: Azure Information Protection 레이블에 대한 시각적 표시 구성
+title: Azure Information Protection 레이블에 대한 시각적 표시 구성 - AIP
 description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 11/28/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: df2676eeb062-f25a-4cf8-a782-e59664427d54
-ms.openlocfilehash: 23185d2d6b5b1bb14633647c345d0e58eeda3bdc
-ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
+ms.openlocfilehash: 3f94e9b1993573e8fe392dc75bcf999452bab626
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52585995"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023977"
 ---
 # <a name="how-to-configure-a-label-for-visual-markings-for-azure-information-protection"></a>Azure Information Protection에 대한 시각적 표시용 레이블을 구성하는 방법
 

@@ -4,17 +4,17 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/29/2018
+ms.date: 12/05/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: b0dc98bb1c626737fb087c78691bb3a9e35a445e
-ms.sourcegitcommit: e72c89e35cae6a19dca060f688838d78dc8f0448
+ms.openlocfilehash: bfca9c6aab0625a9d35d7648a53f7cce6b74bce6
+ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52586012"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861220"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
@@ -22,7 +22,7 @@ ms.locfileid: "52586012"
 
 Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 
 
-[Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 일반 공급 릴리스 버전과 현재 미리 보기 버전(사용 가능한 경우)을 다운로드할 수 있습니다. 일반 공급 버전은 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에도 포함되어 있으므로, WSUS, Configuration Manager 또는 Microsoft 업데이트를 사용하는 다른 소프트웨어 배포 메커니즘을 사용하여 클라이언트를 업그레이드할 수 있습니다.
+[Microsoft 다운로드 센터](https://www.microsoft.com/en-us/download/details.aspx?id=53018)에서 최신 일반 공급 릴리스 버전과 현재 미리 보기 버전(사용 가능한 경우)을 다운로드할 수 있습니다. 통상적으로 몇 주가 지나면 Microsoft 업데이트 카탈로그(범주: **Azure Information Protection**)에 GA(일반 공급) 버전이 포함됩니다. Microsoft 업데이트 카탈로그에 GA 버전이 포함되면 WSUS 또는 Configuration Manager, 그 밖에 Microsoft 업데이트를 사용하는 소프트웨어 배포 메커니즘을 통해 클라이언트를 업그레이드할 수 있습니다.
 
 자세한 내용은 [Azure Information Protection 클라이언트 업그레이드 및 유지 관리](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client)를 참조하세요.
 
@@ -52,6 +52,10 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 **새로운 기능:**
 
+- Azure Information Protection 클라이언트는 이제 기본적으로 PDF 암호화를 위한 ISO 표준을 사용하여 PDF 파일을 보호합니다. 종전까지는 고급 클라이언트 설정에서 이 지원을 활성화해야 했습니다.
+    
+    클라이언트가 종전처럼 .ppdf 파일 이름 확장명을 사용하여 PDF 파일을 보호하도록 하려면 [고급 클라이언트 설정](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)을 **False**로 지정하세요.
+
 - Microsoft Ignite에 발표된 Azure Information Protection 분석 기능의 [중앙 보고](../reports-aip.md) 지원
 
 - 이제 Excel에서도 다양한 색상의 [시각적 표시](../configure-policy-markings.md)가 지원됩니다.
@@ -78,6 +82,8 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - 스캐너의 일정을 **항상**으로 설정하면 이제 30초의 지연 후에 다음 검사가 시작됩니다.
 
+- 파일이 이미 보호되고 있는 경우 스캐너가 레이블을 적용하는 파일의 Rights Management 소유자를 더 이상 변경하지 않습니다.
+
 ## <a name="version-137190"></a>버전 1.37.19.0
 
 **릴리스 날짜**: 2018년 9월 17일
@@ -86,7 +92,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 **새로운 기능**: 
 
-- 새로운 [고급 클라이언트 구성](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)을 구성하여 PDF 암호화에 대한 ISO 표준을 지원합니다. 이 옵션을 구성하는 경우 보호한 PDF 문서는 .ppdf로 변경되지 않고 .pdf 파일 이름 확장명을 유지하고 이 ISO 표준을 지원하는 PDF 판독기에서 열릴 수 있습니다. 현재는 사용자에게 Azure Information Protection 뷰어를 사용하여 이러한 보호된 PDF를 수동으로 열도록 지시해야 합니다. 사용자가 이러한 작업을 수행하는 것을 돕기 위해 사용자가 보호된 PDF 중 하나를 열 때 운영 체제를 선택하는 아이콘이 있는 페이지가 표시됩니다.
+- 새로운 [고급 클라이언트 구성](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)을 구성하여 PDF 암호화에 대한 ISO 표준을 지원합니다. 이 옵션이 **True**로 설정된 경우, 사용자가 보호하는 PDF 문서는 .ppdf로 변경되는 대신 .pdf 파일 이름 확장명을 그대로 유지하며, 이 ISO 표준을 지원하는 PDF 리더로 열 수 있습니다. 현재는 사용자에게 Azure Information Protection 뷰어를 사용하여 이러한 보호된 PDF를 수동으로 열도록 지시해야 합니다. 사용자가 이러한 작업을 수행하는 것을 돕기 위해 사용자가 보호된 PDF 중 하나를 열 때 운영 체제를 선택하는 아이콘이 있는 페이지가 표시됩니다.
 
 - 개인 정보를 포함하는 문서를 분류할 수 있는 새롭고 중요한 정보 형식을 지원합니다. [추가 정보](../configure-policy-classification.md#sensitive-information-types-that-require-a-minimum-version-of-the-client) 
 
@@ -196,76 +202,6 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - Office 응용 프로그램에서 처음 사용할 때 표시되는 “축하합니다!” 시작 페이지와 “Azure Information Protection의 새로운 기능” 페이지가 제거되었습니다.
 
-## <a name="version-12660"></a>버전 1.26.6.0
-
-**릴리스 날짜**: 2018년 4월 17일
-
-이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.3403.1224가 포함되어 있습니다.
-
-**새로운 기능**:
-
-- Azure Information Protection 스캐너: 클라이언트에 포함된 PowerShell 모듈에는 온-프레미스 데이터 저장소에서 파일을 검색하고, 분류하고, 보호할 수 있도록 스캐너를 설치하고 구성할 새로운 cmdlet이 있습니다. 자세한 내용은 [Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호](../deploy-aip-scanner.md)를 참조하세요. 
-
-- 이제 텍스트 문자열에서 "If.App" 변수 문을 사용하여 Word, Excel, PowerPoint 및 Outlook에 대새 다른 시각적 표시를 설정하고 응용 프로그램 형식을 식별할 수 있습니다. [추가 정보](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)
-
-- [정책 설정](../configure-policy-settings.md)인 **Office 앱에 Information Protection 표시줄 표시**에 대한 지원입니다. 이 설정을 끄기로 설정하면 사용자는 리본에 있는 **보호** 단추에서 레이블을 선택합니다.
-
-- Word, Excel, PowerPoint의 헤더 및 바닥글에서 여러 줄의 텍스트를 사용할 수 있습니다.
-
-- 백그라운드에서 계속 실행되도록 분류를 켜기 위한 새 고급 클라이언트 설정(미리 보기)입니다. 이 설정을 사용하도록 설정하면 Office 앱의 경우 자동 및 권장 분류는 문서를 저장할 때 실행하는 대신 백그라운드에서 계속 실행됩니다. 이제 동작을 이렇게 변경하면 SharePoint Online에 저장된 문서에 대한 자동 및 권장 분류를 적용할 수 있습니다. [추가 정보](client-admin-guide-customizations.md#turn-on-classification-to-run-continuously-in-the-background)
-
-- 새로운 고급 클라이언트 설정은 Outlook이 Azure Information Protection 정책에서 구성된 기본 레이블을 적용하지 않도록 합니다. 대신 Outlook에서 다른 기본 레이블을 적용할 수 있거나 레이블을 적용하지 않습니다. [추가 정보](client-admin-guide-customizations.md#set-a-different-default-label-for-outlook) 
-
-- Office 앱에서 사용자 지정 권한을 지정하는 경우 이제 주소록 아이콘에서 사용자를 찾아보고 선택할 수 있습니다. 이 옵션을 통해 파일 탐색기를 사용하여 사용자 지정 권한을 지정하는 경우 사용자 환경에 패리티를 제공합니다.
-
-- PowerShell을 사용하고 **로컬로 로그온** 권한을 허용할 수 없는 서비스 계정의 완전한 비대화형 인증 방법에 대한 지원입니다. 이 인증 방법은 [Set-AIPAuthentication](/powershell/module/azureinformationprotection/Set-AIPAuthentication)을 사용하여 새 *토큰* 매개 변수를 사용하고, PowerShell 스크립트를 작업으로 실행해야 합니다. [추가 정보](client-admin-guide-powershell.md#specify-and-use-the-token-parameter-for-set-aipauthentication)
-
-- [Set-RMSServerAuthentication](/powershell/module/azureinformationprotection/set-rmsserverauthentication)의 새 매개 변수인 *IntegratedAuth*입니다. 이 매개 변수는 AD RMS에 서버 모드를 지원합니다. 이 기능은 Windows Server FCI를 지원하기 위해 AD RMS에 필요합니다.
-
-
-**수정 사항**:
-
-안정성 및 다음을 포함하는 특정 시나리오에 대한 수정
-
-- Office 버전 16.0.8628.2010 이상(간편-실행)의 경우 Azure Information Protection 표시줄은 이전에 Office 응용 프로그램 외부에서 표시줄을 표시할 수 있는 최신 모니터 표시 옵션을 지원합니다.
-
-- Azure Information Protection을 사용하는 두 조직에서 레이블이 지정된 문서와 이메일을 공유하는 경우 해당하는 고유한 레이블이 유지되며 다른 조직의 레이블로 대체되지 않습니다.
-
-- Excel의 경우:
-        
-    - Office 테마 또는 Windows 테마 변경에 대한 지원은 테마가 변경된 후에 Excel이 데이터를 표시하지 않는 결과를 발생시켰습니다.
-        
-    - 교차 참조를 포함하는 셀에 대한 지원은 이전에 셀에서 텍스트 손상을 발생시켰습니다.
-    
-    - 일본어, 중국어 또는 한국어 문자 입력에 대한 지원은 이전에 창을 닫았으므로 이러한 문자를 선택할 수 없습니다.
-    
-    - 주석에 대한 지원은 이전에 주석이 입력되는 동안 주석을 닫았습니다.
-
-- PowerPoint의 경우: 공동 작업에 대한 지원은 이전에 데이터 손실을 일으킬 수 있었습니다.
-
-- 이제 권장 또는 자동 분류를 위해 .xml 파일 이름 확장명을 가진 파일을 검사할 수 있습니다.
-
-- 이제 뷰어는 20MB를 넘는 보호된 텍스트 기반 파일(.ptxt 및 .pxml)을 열 수 있습니다. 
-- Outlook 미리 알림기를 사용하는 경우 Outlook의 작동이 중지되지 않도록 방지합니다.
-
-- 문서와 이메일을 보호할 수 있도록 부트스트랩은 Office 64비트에서 성공합니다.
-
-- 이제 Word, Excel, PowerPoint 및 파일 탐색기에 대한 사용자 정의 권한에 대해 레이블을 구성하고, 고급 클라이언트 설정을 사용하여 사용자 지정 권한 옵션을 숨길 수도 있습니다. [추가 정보](client-admin-guide-customizations.md#make-the-custom-permissions-options-available-or-unavailable-to-users) 
-
-- Azure Information Protection 정책의 시각적 표시가 클라이언트에 설치되어 있지 않은 글꼴 이름에 대해 구성된 경우 Calibri 글꼴로 대체합니다.
-
-- Azure Information Protection 클라이언트를 업그레이드한 후에 Office 충돌을 방지합니다.
-
-- Office 앱의 경우 성능 및 메모리 사용을 향상시킵니다.
-
-- 사용자 정의 권한 및 HYOK(AD RMS) 보호에 대해 레이블을 구성하는 경우 보호는 Azure Rights Management 서비스를 더 이상 잘못 사용하지 않습니다.
-
-- 보다 일관된 관리 환경을 위해 하위 레이블은 더 이상 부모 레이블에서 시각적 표시 및 보호 설정을 상속하지 않습니다.
-
-**추가 변경 내용**:
-
-- [클라이언트 사용 현황 로깅](client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client )의 경우: 이벤트 ID 102 및 ID 103은 이벤트 ID 101로 대체됩니다.
-
 ## <a name="next-steps"></a>다음 단계
 
 클라이언트를 설치하고 사용하는 방법에 대한 자세한 내용은 다음과 같습니다. 
@@ -273,5 +209,4 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 - 사용자: [다운로드 및 클라이언트 설치](install-client-app.md)
 
 - 관리자: [Azure Information Protection 클라이언트 관리자 가이드](client-admin-guide.md)
-
 

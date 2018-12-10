@@ -4,18 +4,18 @@ description: Azure Information Protection 스캐너를 설치, 구성 및 실행
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 20d29079-2fc2-4376-b5dc-380597f65e8a
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 3e331c859c3808ceba2305224a6dd524b1a5ea6c
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: d29203359bcfdda09d7792f1f65a7c85723ee18f
+ms.sourcegitcommit: c1c34529f10dd7c1545ca37be9629b52be87e33e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386800"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52731152"
 ---
 # <a name="deploying-the-azure-information-protection-scanner-to-automatically-classify-and-protect-files"></a>Azure Information Protection 스캐너를 배포하여 파일 자동으로 분류 및 보호
 
@@ -252,7 +252,7 @@ SharePoint에 지원되는 버전: SharePoint Server 2016 및 SharePoint Server 
 |PDF |.pdf|
 |텍스트|.txt; .xml; .csv|
 
-스캐너를 실행하는 컴퓨터에서 [Windows TIFF IFilter 설정](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)을 구성한 경우, OCR(Optical Character Recognition)을 사용하여 .tiff 파일 이름 확장명을 갖는 TIFF 이미지를 검사합니다.
+스캐너를 실행하는 컴퓨터에서 Windows TIFF IFilter 기능을 설치하고 [Windows TIFF IFilter 설정](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-7/dd744701%28v%3dws.10%29)을 구성한 경우, 스캐너가 OCR(광학 문자 인식)을 사용하여 .tiff 파일 이름 확장명을 갖는 TIFF 이미지를 검사할 수 있습니다.
 
 기본적으로 Office 파일 형식만 스캐너에서 보호되므로 [레지스트리를 편집](#editing-the-registry-for-the-scanner)하여 파일 형식을 지정하지 않는 경우 PDF 문서 및 텍스트 파일과 TIFF 이미지는 보호되지 않습니다.
 

@@ -4,18 +4,18 @@ description: Azure Information Protection을 조직에 배포하기 위한 필�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/05/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 92b7ca3feceb70bc9b8b085b58c26231d2ae70ce
-ms.sourcegitcommit: 8a4bab8dc6ee4c322a54d79091af04ec9449e5c2
+ms.openlocfilehash: 62a291667cf0ae60debbd62047d3a6b09962ac1d
+ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51020057"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52831241"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -64,7 +64,7 @@ MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 �
 
 - Windows 10(x86, x64)
     
-    - 참가자용 Windows 10 RS4 빌드에는 필기 지원이 없습니다. 
+    - Windows 10 RS4 이상 빌드에는 필기 지원이 없습니다. 
 
 - Windows 8.1(x86, x64)
 

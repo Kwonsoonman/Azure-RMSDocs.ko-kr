@@ -4,17 +4,17 @@ description: Azure Information Protection 레이블을 통합 레이블 지정�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 2d0ed8103ce4e0b42d67ea87b6b464dfb8f04f36
-ms.sourcegitcommit: 283782ee7e3ec566f479c8914eae7bf84d904392
+ms.openlocfilehash: 771cbb26a842cbf19184ace94ae47ba9d549a33f
+ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382615"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52953332"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법
 
@@ -48,7 +48,7 @@ Office 365 보안 및 준수 센터에서 레이블을 사용하려면 레이블
     
     좀 더 일관된 사용자 환경을 사용하려면 보안 및 준수 센터에서 동일한 범위에 동일한 레이블을 게시하는 것이 좋습니다.
 
-- 마이그레이션된 레이블의 모든 설정을 보안 및 준수 센터에서 지원하는 것은 아닙니다. [보안 및 준수 센터에서 지원되지 않는 레이블 설정](#label-settings-that-are-not-supported-in-the-security--compliance-center) 섹션의 표를 사용하여 이러한 설정과 보안 및 준수 센터에서 마이그레이션한 레이블의 게시를 제외할지 여부를 확인하는 데 도움을 얻을 수 있습니다.
+- 마이그레이션된 레이블의 모든 설정을 보안 및 준수 센터에서 지원하는 것은 아닙니다. [보안 및 준수 센터에서 지원되지 않는 레이블 설정](#label-settings-that-are-not-supported-in-the-security--compliance-center) 섹션에 있는 표를 참고하여 보안 및 준수 센터에서 지원되지 않는 설정을 확인하세요.
 
 - 보호 템플릿:
     
@@ -66,37 +66,30 @@ Office 365 보안 및 준수 센터에서 레이블을 사용하려면 레이블
 
 - 레이블의 현지화된 문자열은 마이그레이션되지 않습니다. 보안 및 준수 센터에서 마이그레이션된 레이블의 지역화된 문자열을 새로 정의해야 합니다.
 
-- 마이그레이션 후 Azure Portal에서 마이그레이션된 레이블을 편집하는 경우 동일한 변경 내용이 보안 및 준수 센터에서도 자동으로 반영됩니다. 그러나 보안 및 준수 센터에서 마이그레이션된 레이블을 편집한 경우 Azure Portal에서 레이블을 업데이트해야만 레이블에 변경 내용이 적용될 수 있습니다. 예를 들어 **레이블** 블레이드에서 **관리자 사용을 위한 메모 추가** 상자를 편집합니다. 
-
-- 통합 레이블 지정은 아직 테넌트로 롤아웃되고 있습니다. 통합 레이블 지정이 테넌트에서 아직 지원되지 않으면 마이그레이션은 실패하고 변경 내용은 정상적으로 실행 취소되지 않습니다. 모든 테넌트에서 지원될 때까지는 테넌트 및 레이블 마이그레이션 옵션에 액세스하기 위한 특수 링크를 사용해야 합니다. 이 링크는 다음 지침에 제공됩니다.
+- 마이그레이션 후 Azure Portal에서 마이그레이션된 레이블을 편집하는 경우 동일한 변경 내용이 보안 및 준수 센터에서도 자동으로 반영됩니다. 단, 보안 및 준수 센터에서 마이그레이션된 레이블을 편집한 경우에는 Azure Portal의 **Azure Information Protection - 통합 레이블 지정** 블레이드로 돌아가서 **게시**를 선택해야 합니다. Azure Information Protection 클라이언트에 레이블 변경 사항이 반영되도록 하려면 이 추가 작업이 필요합니다.
 
 ### <a name="label-settings-that-are-not-supported-in-the-security--compliance-center"></a>보안 및 준수 센터에서 지원되지 않는 레이블 설정
 
-다음 표를 사용하여 이러한 레이블을 사용하는 클라이언트에서 지원되지 않는 마이그레이션된 레이블의 구성 설정과 보안 및 준수 센터에서 마이그레이션된 레이블을 편집 및 게시해야 하는지 여부를 확인합니다. 게시에서 제외되는 것으로 확인된 레이블을 게시하면 통합 레이블 지정을 지원하는 클라이언트용으로 표시되는 레이블이 없습니다.
+아래 표를 참고하여 통합 레이블 지정 클라이언트가 지원하지 않거나 제한적으로 지원하는 마이그레이션된 레이블의 구성 설정을 확인하세요. 혼동을 피하기 위해 통합 레이블 지정 클라이언트에 영향을 주지 않는 설정은 구성하지 않을 것을 권장합니다.
 
 Azure Information Protection 클라이언트는 Azure Portal에서 레이블을 계속 다운로드하므로 아무 문제 없이 이러한 레이블 설정을 사용할 수 있습니다.
 
-|레이블 구성|보안 및 준수 센터에서 지원|보안 및 준수 센터에서 편집 및 게시하지 않도록 제외|
+|레이블 구성|통합 레이블 지정 클라이언트가 지원함|보안 및 준수 센터에서 편집하지 않도록 제외|
 |-------------------|---------------------------------------------|-------------------------|
-|사용 또는 사용 안 함 상태<br /><br />참고: 보안 및 준수 센터에 동기화되지 않음 |해당 사항 없음|해당 사항 없음|
-|레이블 색상: 목록에서 선택하거나 RGB 코드를 사용하여 지정합니다.<br /><br />참고: 레이블 색은 보안 및 준수 센터에서 지원되지 않습니다. |해당 사항 없음|해당 사항 없음|
+|사용 또는 사용 안 함 상태<br /><br />참고: 보안 및 준수 센터에 동기화되지 않음 |해당 없음|해당 없음|
+|레이블 색상: 목록에서 선택하거나 RGB 코드를 사용하여 지정합니다.<br /><br />참고: 레이블 색은 보안 및 준수 센터에서 지원되지 않습니다. |해당 없음|해당 없음|
 |미리 정의된 템플릿을 사용하는 클라우드 기반 보호 또는 HYOK 기반 보호 |아니요|예|
 |Word, Excel 및 PowerPoint에서 사용자 정의 권한을 사용하는 클라우드 기반 보호 |아니요|예|
 |전달 금지에 대한 Outlook의 사용자 정의 권한을 사용하는 HYOK 기반 보호 |아니요|예|
 |보호 제거 |아니요|예|
 |시각적 표시(머리글, 바닥글, 워터마크): RGB 코드별 사용자 지정 글꼴 및 사용자 지정 글꼴 색|아니요|변수를 사용하는 경우 권장됩니다.<br /><br />- 클라이언트에서 변수는 동적 값을 표시하지 않고 텍스트로 표시됩니다.|
 |앱별 시각적 표시|아니요|변수를 사용하는 경우 권장됩니다.<br /><br />- 클라이언트에서 변수는 동적 값을 표시하지 않고 텍스트로 표시됩니다.|
-|조건 및 관련 설정 <br /><br />참고: 자동 및 권장 레이블과 해당 도구 설명을 포함합니다.|해당 사항 없음|아니요|
+|조건 및 관련 설정 <br /><br />참고: 자동 및 권장 레이블과 해당 도구 설명을 포함합니다.|해당 없음|아니요|
 
 
 ## <a name="to-migrate-azure-information-protection-labels"></a>Azure Information Protection 레이블을 마이그레이션하려면
 
-> [!IMPORTANT]
-> Office 365 보안 및 준수 센터에서 민감도 레이블을 편집 및 게시할 수 있는지 확인한 후에만 레이블을 마이그레이션합니다. 민감도 레이블은 Office 365 테넌트에 롤아웃되고 있지만 아직 모든 테넌트에서 사용 가능하지는 않습니다.
-> 
-> 이를 확인하려면 Office 365 보안 및 준수 센터에서 **분류** > **레이블**로 이동하고 **민감도** 탭이 있는지 확인합니다. 이 탭이 표시되지 않으면 테넌트에서 민감도 레이블이 아직 준비되지 않은 것이며 지금은 Azure Information Protection 레이블을 마이그레이션하지 않아야 합니다.
-
-보안 및 준수 센터에서 테넌트가 민감도 레이블을 지원하는지 확인한 경우 다음 지침에 따라 테넌트 및 Azure Information Protection 레이블을 마이그레이션합니다.
+다음 지침에 따라 테넌트 및 Azure Information Protection 레이블이 새로운 통합 레이블 지정 스토리지를 사용하도록 마이그레이션합니다.
 
 레이블을 마이그레이션하려면 전역 관리자여야 합니다.
 
@@ -106,6 +99,8 @@ Azure Information Protection 클라이언트는 Azure Portal에서 레이블을 
 
 마이그레이션된 레이블의 경우 이제 [통합 레이블 지정을 지원하는 클라이언트](#clients-that-support-unified-labeling)가 사용할 수 있습니다. 그러나 먼저 보안 및 준수 센터에서 이러한 레이블을 게시해야 합니다.
 
+> [!IMPORTANT]
+> Azure Portal 외부에서 Azure Information Protection 클라이언트의 레이블을 편집한 경우, 이 **Azure Information Protection - 통합 레이블 지정** 블레이드로 돌아와서 **게시**를 선택하세요.
 
 ### <a name="clients-that-support-unified-labeling"></a>통합 레이블 지정을 지원하는 클라이언트
 

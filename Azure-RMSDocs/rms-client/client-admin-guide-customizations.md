@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/27/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 41e092b379cfb52db286a61ad715703514e500d0
-ms.sourcegitcommit: bdce88088f7a575938db3848dce33e7ae24fdc26
+ms.openlocfilehash: d4e2af4a9123b7276f2afad6f0d41232f3555d62
+ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386783"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861186"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
@@ -48,7 +48,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 |DisableDNF|[Outlook에서 전달 금지 단추 숨기기 또는 표시](#hide-or-show-the-do-not-forward-button-in-outlook)|
 |EnableBarHiding|[Azure Information Protection 표시줄을 영구적으로 숨기기](#permanently-hide-the-azure-information-protection-bar)|
 |EnableCustomPermissions|[사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정](#make-the-custom-permissions-options-available-or-unavailable-to-users)|
-|EnablePDFv2Protection|[PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호](#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
+|EnablePDFv2Protection|[PDF 암호화를 위한 ISO 표준을 사용하여 PDF 파일을 보호하지 않음](#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)|
 |LabelbyCustomProperty|[Secure Islands 및 기타 레이블 지정 솔루션에서 레이블 마이그레이션](#migrate-labels-from-secure-islands-and-other-labeling-solutions)|
 |LabelToSMIME|[Outlook에서 S/MIME 보호를 적용하도록 레이블 구성](#configure-a-label-to-apply-smime-protection-in-outlook)|
 |OutlookDefaultLabel|[Outlook에 대한 다른 기본 레이블 설정](#set-a-different-default-label-for-outlook)|
@@ -315,23 +315,21 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 
 - 값: **True**
 
-## <a name="protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호
+## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일을 보호하지 않음
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
-기본적으로 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 결과 파일은 .ppdf 파일 이름 확장명입니다. 파일 이름 확장명이 .pdf로 유지되고 PDF 암호화에 대해 ISO 표준을 준수하도록 이 동작을 변경할 수 있습니다. 이 표준에 대한 자세한 내용은 [ISO 32000-1에서 파생되고](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) Adobe Systems incorporated에서 게시한 문서의 **7.6 암호화** 섹션을 참조하세요.
+최신 버전의 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우, 결과로 생성되는 파일 이름 확장명은 .pdf로 유지되고 PDF 암호화를 위한 ISO 표준을 준수합니다. 이 표준에 대한 자세한 내용은 [ISO 32000-1에서 파생되고](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf) Adobe Systems incorporated에서 게시한 문서의 **7.6 암호화** 섹션을 참조하세요.
 
-이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
+.ppdf 파일 이름 확장명을 사용하여 클라이언트가 보호된 PDF 파일을 보호하는 클라이언트의 이전 버전에서 동작으로 복귀해야 하는 경우 다음 문자열을 입력하여 다음과 같은 고급 설정을 사용하세요.
 
 - 키: **EnablePDFv2Protection**
 
-- 값: **True**
-
-이 구성 옵션의 결과로 Azure Information Protection 클라이언트가 PDF 파일을 보호하는 경우 이 작업은 최신 버전의 Windows용 Azure Information Protection 클라이언트를 사용하여 열릴 수 있는 PDF 문서 및 PDF 암호화에 대해 ISO 표준을 지원하는 다른 PDF 판독기를 만듭니다. iOS 및 Android용 Azure Information Protection 앱은 현재 PDF 암호화에 대해 ISO 표준을 지원하지 않습니다. Adobe Acrobat Reader에 대한 최신 정보를 보려면 [Starting October, use Adobe Acrobat Reader for PDFs protected by Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)(10월부터 Microsoft Information Protection으로 보호되는 PDF에 Adobe Acrobat Reader 사용)을 참조하세요.
+- 값: **False**
 
 Azure Information Protection 스캐너에서 새 설정을 사용하려면 스캐너 서비스를 다시 시작해야 합니다.
 
-이 PDF 암호화에 대한 자세한 내용은 블로그 게시물 [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)(Microsoft Information Protection을 사용하여 PDF 암호화 새로 지원)을 참조하세요.
+새로운 PDF 암호화에 대한 자세한 내용은 블로그 게시물 [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)(Microsoft Information Protection을 사용한 새로운 PDF 암호화 지원)을 참조하세요.
 
 ### <a name="to-convert-existing-ppdf-files-to-protected-pdf-files"></a>기존의 .ppdf 파일을 보호된 .pdf 파일로 변환하려면
 

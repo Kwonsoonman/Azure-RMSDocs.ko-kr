@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/12/2018
+ms.date: 12/02/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: b5eccdd62d828bc5104815746458d4c7036594fd
-ms.sourcegitcommit: 39403f0e9fe5912d467b119ed45da94bccd1cc80
+ms.openlocfilehash: be6477edae471bddbcf3a5d4e6c7bb0cfcec1e4e
+ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100639"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52831258"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -198,15 +198,9 @@ Windows 업데이트를 사용하는 경우 Azure Information Protection 클라�
 
 ### <a name="upgrading-the-azure-information-protection-scanner"></a>Azure Information Protection 스캐너 업그레이드
 
-Azure Information Protection 스캐너를 업그레이드하려면 최신 버전의 Azure Information Protection 클라이언트를 설치하세요. 이어서 다음 일회성 작업 중 하나를 수행합니다. 이 작업을 수행한 후에는 이미 검사한 파일을 다시 검사할 필요가 없습니다.
+Azure Information Protection 스캐너를 업그레이드하려면 최신 버전의 Azure Information Protection 클라이언트를 설치하세요. 이어서 다음과 같은 일회성 작업을 수행합니다. 이 작업을 수행한 후에는 이미 검사한 파일을 다시 검사할 필요가 없습니다.
 
-현재 GA 버전의 경우: 
-
-- [Install-AIPScanner](/powershell/module/azureinformationprotection/Install-AIPScanner)를 사용하여 스캐너 설치 명령을 다시 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 스캐너를 다시 설치하면 보고서에 필요한 스캐너 데이터베이스에 대한 삭제 권한이 스캐너 서비스 계정에 부여됩니다.
-
-미리 보기 버전: 
-
-- Azure Information Protection 클라이언트를 일반 공급 버전 1.29.5.0 또는 그 이전 버전에서 업그레이드한 후 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)를 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 이 cmdlet을 실행하려면 스캐너에 대한 데이터베이스 스키마를 업데이트해야 하고 필요한 경우 스캐너 서비스 계정에 스캐너 데이터베이스에 대한 삭제 권한을 부여합니다. 
+- Azure Information Protection 클라이언트를 업그레이드한 후에 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)를 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 이 cmdlet을 실행하려면 스캐너에 대한 데이터베이스 스키마를 업데이트해야 하고 필요한 경우 스캐너 서비스 계정에 스캐너 데이터베이스에 대한 삭제 권한을 부여합니다. 
     
     이 업데이트 cmdlet을 실행할 때까지 스캐너가 실행되지 않으며 일반적으로 Windows 이벤트 로그에 이벤트 ID **1000**이 보이고 **개체 이름 ‘ScannerStatus’가 잘못되었습니다**라는 오류 메시지가 표시됩니다.
 

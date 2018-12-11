@@ -1,5 +1,5 @@
 ---
-title: Azure Information Protection에 대한 요구 사항
+title: Azure Information Protection에 대한 요구 사항 - AIP
 description: Azure Information Protection을 조직에 배포하기 위한 필수 구성 요소를 식별합니다.
 author: cabailey
 ms.author: cabailey
@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 62a291667cf0ae60debbd62047d3a6b09962ac1d
-ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
+ms.openlocfilehash: 43ff5d8fabf8197ba8ea235b01258dff12a5acd4
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52831241"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024149"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
@@ -140,7 +140,7 @@ Office 문서의 정보 외에 Azure Information Protection과 관련하여 다�
 
 - [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)에 설명된 대로, 마이그레이션 중인 경우를 제외하고 같은 조직에서 AD RMS와 Azure RMS를 함께 실행하는 경우.
 
-[AD RMS에서 Azure Information Protection으로](http://technet.microsoft.com/library/Dn858447.aspx), [Azure Information Protection에서 AD RMS로](/powershell/module/aadrm/Set-AadrmMigrationUrl)의 지원되는 마이그레이션 경로가 있습니다. Azure Information Protection을 배포한 후 이 클라우드 서비스를 더 이상 사용하지 않겠다고 결정한 경우 [Azure Information Protection 서비스 해제 및 비활성화](decommission-deactivate.md)를 참조하세요.
+[AD RMS에서 Azure Information Protection으로](https://technet.microsoft.com/library/Dn858447.aspx), [Azure Information Protection에서 AD RMS로](/powershell/module/aadrm/Set-AadrmMigrationUrl)의 지원되는 마이그레이션 경로가 있습니다. Azure Information Protection을 배포한 후 이 클라우드 서비스를 더 이상 사용하지 않겠다고 결정한 경우 [Azure Information Protection 서비스 해제 및 비활성화](decommission-deactivate.md)를 참조하세요.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Information Protection 정책 설정 구성
+title: Azure Information Protection 정책 설정 구성 - AIP
 description: 모든 사용자와 모든 장치에 적용되는 Azure Information Protection 정책의 설정을 구성하는 방법을 설명합니다.
 author: cabailey
 ms.author: cabailey
@@ -8,12 +8,12 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 629815c0-457d-4697-a4cc-df0e6cc0c1a6
-ms.openlocfilehash: 3533a8a83d5fa24eb98ae36092eaf08d4ff75ccc
-ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
+ms.openlocfilehash: aa39e1150dbb4310fb0e075d01385f40a18a3e1d
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52831224"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023705"
 ---
 # <a name="how-to-configure-the-policy-settings-for-azure-information-protection"></a>Azure Information Protection에 대한 정책 설정을 구성하는 방법
 

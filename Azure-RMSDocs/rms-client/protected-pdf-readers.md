@@ -1,7 +1,6 @@
 ---
 title: Microsoft Information Protection에 대해 보호된 PDF reader
-description: ''
-keywords: ''
+description: 분류 및 보호를 위해 레이블이 지정된 PDF 문서 및 이를 보는 방법에 대해 알아봅니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -12,12 +11,12 @@ ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: d4421caa4ec6846456c12aa831644e957c5b4fd9
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: 4a4d396db6eaac2709577023d873587697327bef
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861203"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53023603"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>Microsoft Information Protection에 대해 지원되는 PDF reader
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션
+title: Azure Information Protection 레이블을 Office 365 보안 및 규정 준수 센터로 마이그레이션 - AIP
 description: Azure Information Protection 레이블을 통합 레이블 지정을 지원하는 클라이언트용 Office 365 보안 및 준수 센터로 마이그레이션합니다.
 author: cabailey
 ms.author: cabailey
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 771cbb26a842cbf19184ace94ae47ba9d549a33f
-ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
+ms.openlocfilehash: be48797931dc0e8c76f29094715df37d6488f800
+ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52953332"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53024011"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법
 
@@ -29,7 +29,7 @@ Office 365 보안 및 준수 센터에서 레이블을 사용하려면 레이블
 
 ### <a name="important-information-about-administrative-roles"></a>관리 역할에 대한 중요 정보
 
-**보안 관리자** 및 **Information Protection 관리자**의 [Azure AD 역할](/active-directory/users-groups-roles/directory-assign-admin-roles)은 통합 레이블 지정 플랫폼에서 지원하지 않습니다. 조직에서 이러한 관리 역할을 사용하는 경우 레이블을 마이그레이션하기 전에 이러한 역할을 가진 사용자를 Office 365 보안 및 준수 센터의 **준수 관리자** 또는 **조직 관리** 역할 그룹에 추가합니다. 또는 이러한 사용자를 위한 새 역할 그룹을 만들고 이 그룹에 **보존 관리** 또는 **조직 구성** 역할을 추가할 수 있습니다. 자세한 내용은 [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)(사용자에게 Office 365 보안 및 준수 센터에 대한 액세스 권한 제공)를 참조하세요.
+**보안 관리자** 및 **Information Protection 관리자**의 [Azure AD 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal)은 통합 레이블 지정 플랫폼에서 지원하지 않습니다. 조직에서 이러한 관리 역할을 사용하는 경우 레이블을 마이그레이션하기 전에 이러한 역할을 가진 사용자를 Office 365 보안 및 준수 센터의 **준수 관리자** 또는 **조직 관리** 역할 그룹에 추가합니다. 또는 이러한 사용자를 위한 새 역할 그룹을 만들고 이 그룹에 **보존 관리** 또는 **조직 구성** 역할을 추가할 수 있습니다. 자세한 내용은 [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center)(사용자에게 Office 365 보안 및 준수 센터에 대한 액세스 권한 제공)를 참조하세요.
 
 이러한 구성 중 하나를 사용했는데도 사용자에게 보안 및 준수 센터에 대한 액세스 권한을 제공하지 못하면 레이블이 마이그레이션된 뒤에 사용자가 Azure Portal에서 레이블 및 정책에 액세스할 수 없게 됩니다.
 

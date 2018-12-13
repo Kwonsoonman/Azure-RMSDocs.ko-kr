@@ -4,39 +4,39 @@ description: 현재 세 가지 세대의 Rights Management SDK를 사용할 수 
 keywords: ''
 author: bryanla
 manager: mbaldwin
-ms.date: 09/07/2018
+ms.author: bryanla
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0510ead4-2fe7-4269-885b-fe16bcc69888
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 6f964c6a6cf36cbd6f78cf58096f8c912fb0ff68
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: c94965a6007ea93e657e719c6c9cd963cf54e66c
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "51527931"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266446"
 ---
 # <a name="rms-developers-guide"></a>RMS 개발자 가이드
 
 ## <a name="overview"></a>개요 ##
-현재 Android, iOS/OS X, Windows 장치 및 Linux용 **Microsoft Rights Management SDK 4.2**, Windows 데스크톱 클라이언트용 **Microsoft Rights Management SDK 2.1**, 대체된 **AD RMS SDK** 등 세 가지 세대의 Rights Management SDK를 사용할 수 있습니다.
+현재 세 가지 세대의 Rights Management SDK를 사용할 수 있습니다. Android, iOS/OS X, Windows 디바이스 및 Linux용 **Microsoft Rights Management SDK 4.2**, Windows 데스크톱 클라이언트용 **Microsoft Rights Management SDK 2.1** 및 대체된 **AD RMS SDK**
 
 ## <a name="software-development-kits"></a>소프트웨어 개발 키트 ##
 | SDK | 설명 |
 |------|---------|
 | [RMS SDK 4.2](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md) | Microsoft Rights Management Services를 통해 Android, iOS, Mac OS X, Windows Phone/RT 및 Linux/C++ 장치 앱이 정보 보호를 사용할 수 있도록 하는 간단한 개발 환경을 제공하는 간소화된 차세대 도구 집합입니다. |
 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) | Windows 데스크톱 응용 프로그램 개발자와 서버 기반 솔루션 공급자가 해당 제품에서 권한 관리를 사용할 수 있도록 하는 강력한 SDK 제품입니다.|
-|[AD RMS SDK]()|** 참고 ** - 클라이언트가 Msdrm.dll에 노출하는 기능을 활용하는 AD RMS SDK는 Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 및 Windows Vista에서 사용할 수 있습니다. 이후 버전에서는 변경되거나 제공되지 않을 수 있습니다. 클라이언트가 Msipc.dll에 노출하는 기능을 활용하는 Microsoft Rights Management Services SDK 2.1을 대신 사용합니다.|
-|[AD RMS Scripting API]()(AD RMS 스크립팅 API)| AD RMS 설치를 관리할 스크립트를 만드는 데 사용됩니다.|
+|[AD RMS SDK](/azure/information-protection/develop/) |** 참고 ** - 클라이언트가 Msdrm.dll에 노출하는 기능을 활용하는 AD RMS SDK는 Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 및 Windows Vista에서 사용할 수 있습니다. 이후 버전에서는 변경되거나 제공되지 않을 수 있습니다. 클라이언트가 Msipc.dll에 노출하는 기능을 활용하는 Microsoft Rights Management Services SDK 2.1을 대신 사용합니다.|
+|[AD RMS Scripting API](/azure/information-protection/develop/)(AD RMS 스크립팅 API) | AD RMS 설치를 관리할 스크립트를 만드는 데 사용됩니다.|
 
 ## <a name="code-samples-and-tools"></a>코드 샘플 및 도구 ##
 이 Microsoft 제공 RMS 코드 샘플 및 개발자 지원 도구 컬렉션은 지원되는 모든 운영 체제(Android, iOS/OS X, Windows Phone 및 Windows 데스크톱)에 걸쳐 있으며, 지원되는 SDK와의 호환성을 유지하기 위해 정기적으로 업데이트됩니다.
 
 | 항목 | 운영 체제 | 지원 SDK 버전 | 설명 |
 |------|------------------|------------------------|-------------|
-| [PFILE 보호된 PDF 읽기](https://blogs.msdn.microsoft.com/rms/2015/11/09/reading-a-pfile-protected-pdf/) | Windows 데스크톱| [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 이상 버전의 2.x SDK | **PFILE 보호된 PDF 읽기**는 RMS 개발자 코너 블로그에 있는 간단한 코드 예제로, MSIPC 파일 API를 사용하여 PFILE 보호된 PDF 문서의 암호를 해독하고 엽니다.|
 | [IpcManagedAPI](https://github.com/Azure-Samples/active-directory-dotnet-rms) | Windows 데스크톱 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 이상 버전의 2.x SDK | **IpcManagedAPI**는 관리되는 응용 프로그램에서 쉽게 RMS를 사용할 수 있도록 하는 RMS SDK 2.1의 .NET(C#) 표현입니다.|
 | [IPCNotepad](https://code.msdn.microsoft.com/ipcnotepad-sample-f67dae80) | Windows 데스크톱 | [RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 이상 버전의 2.x SDK| **IPCNotepad**는 각 RMS 사용 응용 프로그램이 제한된 콘텐츠를 보호 및 사용할 때 수행해야 하는 기본 단계를 안내하는 샘플 RMS 사용 응용 프로그램입니다.|
 | [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms)|Windows 데스크톱|[RMS SDK 2.1](microsoft-information-protection-and-control-client-portal.md) 이상 버전의 2.x SDK|**IpcDlp**는 DLP RMS 사용 응용 프로그램이 제한된 콘텐츠를 보호 및 사용하기 위해 파일 API를 통해 수행해야 하는 기본 단계를 안내하는 샘플 RMS 사용 DLP(데이터 노출 방지) 응용 프로그램입니다.|

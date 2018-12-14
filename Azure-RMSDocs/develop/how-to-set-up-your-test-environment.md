@@ -12,12 +12,12 @@ ms.assetid: E480D8D6-F070-43D1-B2B0-6921459C3437
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 054121899523056e9d61a673c01f70022e77d13c
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 481922859e14009e345a38853c15e51b065d5387
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149637"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266378"
 ---
 # <a name="testing-your-application"></a>응용 프로그램 테스트
 
@@ -32,7 +32,7 @@ Azure RMS 또는 Windows Server에서 실행 중인 RMS 서버로 테스트할 �
 - 개발자 런타임을 설치하려면 다음을 수행합니다.
 
    응용 프로그램을 테스트할 컴퓨터에 Rights Management Service Client 2.1이 설치되어 있어야 합니다.
-   - 개발 컴퓨터 이외의 컴퓨터에서 응용 프로그램을 테스트하려면 [AD RMS 클라이언트 다운로드 페이지](http://www.microsoft.com/en-us/download/details.aspx?id=38396)에서 해당 컴퓨터에 RMS Client 2.1을 설치합니다.
+   - 개발 컴퓨터 이외의 컴퓨터에서 응용 프로그램을 테스트하려면 [AD RMS 클라이언트 다운로드 페이지](https://www.microsoft.com/download/details.aspx?id=38396)에서 해당 컴퓨터에 RMS Client 2.1을 설치합니다.
    - 개발 컴퓨터에는 이전에 설치된 Rights Management Services SDK 2.1이 있어야 합니다.
 
    RMS SDK 2.1 설치에 대한 도움말은 [SDK 설치](install-the-rms-sdk.md)를 참조하세요.

@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: a53c2df2-a0a2-4f1f-995b-75ba55e4489b
 ms.suite: ems
 ms.reviewer: kartikk
-ms.openlocfilehash: 54eaa9819ce1bffd85bb11b7e1936abacbd5457b
-ms.sourcegitcommit: 07af86511a394274f10cf1340de4cf4bad6d1675
+ms.openlocfilehash: 122a7b3c8614e8f5a18b1a2a87d4d673d5dae049
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46473803"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266718"
 ---
 # <a name="azure-information-protection-developers-guide"></a>Azure Information Protection 개발자 가이드
 
@@ -105,8 +105,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 ## <a name="other-resources"></a>관련 자료
 
 - [보안 모범 사례 가이드](security-guidelines.md)
-- [RMS 개발자 코너(블로그)](https://blogs.msdn.microsoft.com/rms/)
-- [Azure Information Protection 질문과 대답](https://docs.microsoft.com/information-protection/get-started/faqs)
+- [Azure Information Protection 질문과 대답](/azure/information-protection/faqs)
 
 ### <a name="support-articles"></a>지원 문서
 
@@ -132,7 +131,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 - [Windows Phone 및 Windows 스토어 API 참조](https://msdn.microsoft.com/library/dn891914.aspx)
 - [iOS/OSX API 참조](https://msdn.microsoft.com/library/dn758306.aspx)
 - [Android API 참조](https://msdn.microsoft.com/library/dn758245.aspx)
-- [Linux API 참조](http://azuread.github.io/rms-sdk-for-cpp/annotated.html)
+- [Linux API 참조](https://azuread.github.io/rms-sdk-for-cpp/annotated.html)
 
 ### <a name="previous-versions"></a>이전 버전
 

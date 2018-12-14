@@ -12,12 +12,12 @@ ms.assetid: 17B05780-B0EF-4805-8304-52DCDEB3AADB
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d190dd1559378473e52c2c741fcf4693f9e43a59
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 0f937825a55eee3b58dc60830748a35982c5a8c8
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151336"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266480"
 ---
 # <a name="server"></a>서버
 
@@ -28,7 +28,7 @@ ms.locfileid: "44151336"
 > [!IMPORTANT] 
 > Azure RMS를 통해 응용 프로그램을 개발하고 테스트하는 것이 좋습니다.
 
-**Windows Server** - Windows Server 2008 이상의 RMS 온-프레미스 서버에서는 RMS 서비스를 역할로 추가하여 설치하고 구성할 수 있습니다. 이전 운영 체제에 서비스를 설치하려면 Microsoft 다운로드 센터의 [Microsoft Windows Rights Management Services 서비스 팩 2](http://www.microsoft.com/download/en/details.aspx?id=4909)에서 다운로드합니다.
+**Windows Server** - Windows Server 2008 이상의 RMS 온-프레미스 서버에서는 RMS 서비스를 역할로 추가하여 설치하고 구성할 수 있습니다. 이전 운영 체제에 서비스를 설치하려면 Microsoft 다운로드 센터의 [Microsoft Windows Rights Management Services 서비스 팩 2](https://www.microsoft.com/download/details.aspx?id=4909)에서 다운로드합니다.
 
 설치된 여러 웹 서비스 중, Windows Server에서 RMS 서버의 응용 프로그램 개발에 중요한 웹 서비스는 다음과 같습니다.
 
@@ -43,9 +43,9 @@ ms.locfileid: "44151336"
 
 ## <a name="related-topics"></a>관련 항목 ##
 * [개요](ad-rms-overview.md)
-* [Microsoft Internet Information Services](http://www.iis.net/overview)(Microsoft 인터넷 정보 서비스)
+* [Microsoft Internet Information Services](https://www.iis.net/overview)(Microsoft 인터넷 정보 서비스)
 * [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)
-* [Microsoft Windows Rights Management Services 서비스 팩 2](http://www.microsoft.com/download/en/details.aspx?id=4909)
+* [Microsoft Windows Rights Management Services 서비스 팩 2](https://www.microsoft.com/download/details.aspx?id=4909)
 * [Active Directory Rights Management Services Scripting API](https://msdn.microsoft.com/library/Bb968797)(Active Directory Rights Management Services 스크립팅 API)
 * [Activating a Computer](https://msdn.microsoft.com/library/Cc530377)(컴퓨터 정품 인증)
 * [Activating a User](https://msdn.microsoft.com/library/Cc530378)(사용자 활성화)

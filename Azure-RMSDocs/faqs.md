@@ -58,7 +58,7 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators"></a>Azure Information Protection을 구성하려면 전역 관리자여야 하나요? 또는 다른 관리자에게 위임할 수 있나요?
 
-분명 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
+당연히 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
 
 - **Information Protection 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Information Protection의 모든 측면을 구성할 수 있지만 다른 서비스는 구성할 수 없습니다. 이 역할을 가진 관리자는 Azure Rights Management 보호 서비스를 활성화 및 비활성화하고 보호 설정 및 레이블을 구성하며 Azure Information Protection 정책을 구성할 수 있습니다. 또한 이 역할을 가진 관리자는 모든 [Azure Information Protection 클라이언트](./rms-client/client-admin-guide-powershell.md) 및 [AADRM 모듈](administer-powershell.md)의 PowerShell cmdlet을 모두 실행할 수 있습니다. 
     
@@ -122,7 +122,7 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 
 [Microsoft Graph Security API](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/security-api-overview)를 사용하여 Azure Information Protection 경고에 액세스할 수 있거나 Azure Monitor를 사용하여 Splunk 및 IBM Qradar와 같은 SIEM 솔루션으로 [경고를 스트리밍](https://developer.microsoft.com/en-us/graph/docs/concepts/security_siemintegration)할 수 있습니다.
 
-Microsoft Graph Security API에 대한 자세한 내용은 [Microsoft Graph Security API overview](https://developer.microsoft.com/graph/docs/concepts/security-concept-overview)(Microsoft Graph Security API 개요)를 참조하세요.
+Microsoft Graph Security API에 대한 자세한 내용은 [Microsoft Graph Security API 개요](https://developer.microsoft.com/graph/docs/concepts/security-concept-overview)를 참조하세요.
 
 ## <a name="whats-the-difference-between-labels-in-azure-information-protection-and-labels-in-office-365"></a>Azure Information Protection의 레이블과 Office 365의 레이블 간 차이는 무엇인가요?
 
@@ -130,7 +130,7 @@ Microsoft Graph Security API에 대한 자세한 내용은 [Microsoft Graph Secu
 
 Microsoft Ignite 2018에서 발표된 것처럼, 이제 Office 365 보안 및 준수 센터에서 보존 레이블 외에 [민감도 레이블](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)을 생성 및 구성하는 옵션도 제공됩니다. 또한 이제 미리 보기에서 기존 Azure Information Protection 레이블을 새로운 통합 레이블 저장소로 마이그레이션할 수 있습니다. 
 
-통합 레이블 관리와 이러한 레이블 지원 방식에 대한 자세한 내용은 블로그 게시물, [Announcing availability of information protection capabilities to help protect your sensitive data](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)(중요한 데이터를 보호하기 위한 사용 가능한 정보 보호 기능 발표)를 참조하세요.
+통합 레이블 관리와 이러한 레이블 지원 방식에 대한 자세한 내용은 블로그 게시물, [중요한 데이터를 보호하기 위한 사용 가능한 정보 보호 기능 발표](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Announcing-availability-of-information-protection-capabilities/ba-p/261967)를 참조하세요.
 
 기존 레이블 마이그레이션에 대한 자세한 내용은 [Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법](configure-policy-migrate-labels.md)을 참조하세요.
 

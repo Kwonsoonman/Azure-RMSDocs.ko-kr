@@ -28,7 +28,7 @@ ms.locfileid: "49169943"
 
 예를 들어 조직의 사용자만 액세스할 수 있도록 Word 문서를 구성할 수 있습니다. 또는 Excel 스프레드시트를 편집할 수 있는지, 읽기 전용으로 제한되는지, 아니면 인쇄되지 못하게 방지되는지 제어합니다. 시간이 중요한 파일의 경우에는 파일에 더 이상 액세스할 수 없는 만료 시간을 구성할 수 있습니다. 이 구성은 사용자가 직접 만들거나 보호 템플릿을 적용하여 만들 수 있습니다. Outlook에서는 사용자가 **전달 금지** 옵션을 선택하여 데이터 유출을 방지할 수도 있습니다.
 
-이러한 응용 프로그램은 네이티브 Officedml Azure Rights Management 지원 외에도 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)와 함께 설치되는 Azure Information Protection 표시줄도 지원합니다. 이 표시줄에는 사용자가 자동으로 중요한 데이터가 포함된 문서 및 메일에 보호를 보다 쉽게 적용할 수 있는 레이블이 표시됩니다.
+이러한 응용 프로그램은 네이티브 Office Azure Rights Management 지원 외에도 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)와 함께 설치되는 Azure Information Protection 표시줄도 지원합니다. 이 표시줄에는 사용자가 자동으로 중요한 데이터가 포함된 문서 및 메일에 보호를 보다 쉽게 적용할 수 있는 레이블이 표시됩니다.
 
 Office 앱 및 Azure Information Protection 클라이언트를 구성할 준비가 된 경우:
 
@@ -41,11 +41,11 @@ Exchange Online 또는 Exchange Server를 사용하는 경우 Azure Information 
 
 -   **Exchange ActiveSync IRM** - 모바일 장치에서 메일 메시지를 보호하고 보호된 메일 메시지를 사용할 수 있습니다.
 
--   Outlook 클라이언트와 비슷하게 구현된 **웹의 Outlook**의 메일 보호 지원 이 구성을 사용하면 보호 템플릿 또는 옵션을 사용하여 메일 메시지를 보호할 수 있습니다. 사용자가 받은 보호된 메일 메시지를 읽고 사용할 수 있습니다.
+-   Outlook 클라이언트와 비슷하게 구현된 **Outlook 웹 앱**의 메일 보호 지원 이 구성을 사용하면 보호 템플릿 또는 옵션을 사용하여 메일 메시지를 보호할 수 있습니다. 사용자가 받은 보호된 메일 메시지를 읽고 사용할 수 있습니다.
 
 -   Outlook 클라이언트용**보호 규칙** - 관리자가 지정된 받는 사람의 메일 메시지에 보호 템플릿 및 옵션을 자동으로 적용하도록 구성하는 규칙입니다. 예를 들어 법률 자문 부서로 전송하는 내부 메일은 법률 자문 부서 구성원만 읽을 수 있으며 전달할 수 없도록 구성할 수 있습니다. 사용자는 메일 메시지를 보내기 전에 메시지에 적용되는 보호를 확인할 수 있으며 기본적으로 보호가 필요하지 않다고 판단되면 제거할 수 있습니다. 메일은 전송되기 전에 암호화됩니다. 자세한 내용은 Exchange 라이브러리에서 [Outlook 보호 규칙](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) 및 [Outlook 보호 규칙 만들기](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx)를 참조하세요.
 
--   **Mail flow rules**(메일 흐름 규칙) - 관리자가 메일 메시지에 보호 템플릿 또는 옵션을 자동으로 적용하도록 구성하는 규칙입니다. 이러한 규칙은 보낸 사람, 받는 사람, 메시지 제목 및 콘텐츠 등의 속성을 기반으로 합니다. 이러한 규칙은 보호 규칙 개념과 유사하지만, 클라이언트가 아닌 Exchange 서비스에서 보호를 설정하므로 사용자가 보호를 제거할 수 없습니다. 서비스가 보호를 설정하므로 사용자가 사용하는 장치나 운영 체제는 관계가 없습니다. 자세한 내용은 [Exchange Online의 메일 흐름 규칙(전송 규칙)](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)을 참조하고 Exchange 온-프레미스의 경우는 [전송 보호 규칙 만들기](https://technet.microsoft.com/library/dd302432.aspx)를 참조하세요.
+-   **메일 전송 규칙** - 관리자가 메일 메시지에 보호 템플릿 또는 옵션을 자동으로 적용하도록 구성하는 규칙입니다. 이러한 규칙은 보낸 사람, 받는 사람, 메시지 제목 및 콘텐츠 등의 속성을 기반으로 합니다. 이러한 규칙은 보호 규칙 개념과 유사하지만, 클라이언트가 아닌 Exchange 서비스에서 보호를 설정하므로 사용자가 보호를 제거할 수 없습니다. 서비스가 보호를 설정하므로 사용자가 사용하는 장치나 운영 체제는 관계가 없습니다. 자세한 내용은 [Exchange Online의 메일 흐름 규칙(전송 규칙)](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)을 참조하고 Exchange 온-프레미스의 경우는 [전송 보호 규칙 만들기](https://technet.microsoft.com/library/dd302432.aspx)를 참조하세요.
 
 -   **DLP(데이터 손실 방지) 정책** - 기밀 또는 중요 콘텐츠의 데이터 손실을 방지하기 위해 메일 메시지를 필터링하고 여러 작업을 수행하는 조건 집합이 포함된 정책입니다. 지정할 수 있는 작업 중 하나는 보호 템플릿 또는 옵션 중 하나를 지정하여 암호화를 보호로 적용하는 것입니다. 중요한 데이터가 검색되면 정책 팁을 사용하여 보호를 적용해야 할 수 있다는 알림을 사용자에게 표시할 수 있습니다. 자세한 내용은 Exchange Online 설명서에서 [데이터 손실 방지](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)를 참조하세요.
 

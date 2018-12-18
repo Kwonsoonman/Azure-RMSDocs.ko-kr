@@ -86,15 +86,15 @@ Azure Portal을 사용하여 전역 정책을 편집하여 모든 사용자의 �
     |Setting|값|정보 산업|
     |-------|-----|-----|
     |**기본 레이블 선택**|**일반**|**일반**이라는 레이블이 없는 경우 드롭다운 목록에서 다른 레이블을 선택합니다. 레이블이 지정되지 않은 문서와 이메일에는 기본 분류로 이 레이블이 자동으로 적용됩니다. 그러나 사용자는 선택한 레이블을 다른 레이블로 변경할 수 있습니다.|
-    |**All documents and emails must have a label**(모든 문서 및 메일에 레이블이 있어야 함)|**On**(켜짐)|이 설정은 사용자가 레이블이 지정되지 않은 문서를 저장하거나 이메일을 전송하지 못하게 하므로 필수 레이블 지정이라고도 합니다. 문서 및 이메일에는 기본 레이블과 함께 사용자가 설정한 기본 레이블 또는 선택한 레이블이 지정됩니다.
-    |**For email messages with attachments, apply a label that matches the highest classification of those attachments**(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용)|**권장됨**|이 설정은 사용자가 선택한 기본 레이블보다 더 높은 수준의 분류를 갖는 문서를 첨부할 때 이메일에 대해 더 높은 분류 레이블을 선택하라는 메시지를 표시합니다.
-    |**Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시)|**On**(켜짐)|Information Protection 표시줄을 표시하여 사용자가 기본 레이블을 보다 쉽게 보고 변경할 수 있도록 합니다.
+    |**모든 문서와 전자 메일에는 레이블이 있어야 합니다.|**설정**|이 설정은 사용자가 레이블이 지정되지 않은 문서를 저장하거나 이메일을 전송하지 못하게 하므로 필수 레이블 지정이라고도 합니다. 문서 및 이메일에는 기본 레이블과 함께 사용자가 설정한 기본 레이블 또는 선택한 레이블이 지정됩니다.
+    |**첨부 파일이 있는 전자 메일 메시지의 경우 해당 첨부 파일의 최상위 분류와 일치하는 레이블을 적용합니다.**|**권장**|이 설정은 사용자가 선택한 기본 레이블보다 더 높은 수준의 분류를 갖는 문서를 첨부할 때 이메일에 대해 더 높은 분류 레이블을 선택하라는 메시지를 표시합니다.
+    |**Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시)|**설정**|Information Protection 표시줄을 표시하여 사용자가 기본 레이블을 보다 쉽게 보고 변경할 수 있도록 합니다.
     
     해당 설정은 다음과 같습니다.
     
     ![Azure Information Protection 자습서 - 기본 설정이 변경됨](./media/defaultsettings-aip-changed.png)
 
-5. 이 **Policy: Global**(정책: 전역) 블레이드에서 **저장**을 선택하고, 작업을 확인하라는 메시지가 표시되는 경우 **확인**을 선택합니다. 
+5. 이 **정책: 전역** 블레이드에서 **저장**을 선택하고, 작업을 확인하라는 메시지가 표시되는 경우 **확인**을 선택합니다. 
 
 ## <a name="see-your-policy-settings-in-action"></a>작동 중인 정책 설정 보기 
 
@@ -125,7 +125,7 @@ Information Protection 표시줄을 다시 표시하려면 풀다운 메뉴에�
 
 ### <a name="mandatory-labeling"></a>필수 레이블 지정
 
-현재 선택된 **일반** 레이블을 다른 레이블로 변경할 수 있지만 제거할 수는 없습니다. **All documents and emails must have a label**(모든 문서 및 메일에 레이블이 있어야 함)을 **On**(켜짐)으로 변경했으므로 Information Protection 표시줄에서 **레이블 삭제** 아이콘을 사용할 수 없습니다. 
+현재 선택된 **일반** 레이블을 다른 레이블로 변경할 수 있지만 제거할 수는 없습니다. **모든 문서와 전자 메일에는 레이블이 있어야 합니다.**을 **설정**으로 변경했으므로 Information Protection 표시줄에서 **레이블 삭제** 아이콘을 사용할 수 없습니다. 
 
 해당 설정을 변경하지 않은 경우 Information Protection 표시줄에 다음 아이콘이 표시됩니다.
 

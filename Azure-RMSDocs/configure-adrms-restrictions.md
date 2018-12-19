@@ -4,16 +4,16 @@ description: Azure Information Protection에서 HYOK(AD RMS) 보호의 개요, �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7667b5b0-c2e9-4fcf-970f-05577ba51126
-ms.openlocfilehash: d4d653f5244467b29fc2be7d4554d92d035d0f87
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: de278dbb9fd9f051c3a4e47ef719988df4706434
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151761"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305559"
 ---
 # <a name="hold-your-own-key-hyok-protection-for-azure-information-protection"></a>Azure Information Protection용 HYOK(Hold your own key) 보호
 
@@ -68,7 +68,7 @@ HYOK 보호를 적용하려면 Azure Information Protection 레이블을 사용�
 |Windows|Office 2016 및 Office 2013을 사용하는 Azure Information Protection 클라이언트 <br /><br />- Word, Excel, PowerPoint|보호: 예<br /><br />소비: 예|
 |Windows|Office 2016 및 Office 2013을 사용하는 Azure Information Protection 클라이언트 <br /><br />- Outlook|보호: 예<br /><br />소비: 예|
 |Windows|파일 탐색기를 사용하는 Azure Information Protection 클라이언트|보호: 예 <br /><br />소비: 예|
-|Windows|Azure Information Protection 뷰어|보호: 해당 사항 없음<br /><br />소비: 예|
+|Windows|Azure Information Protection 뷰어|보호: 해당 없음<br /><br />소비: 예|
 |Windows|PowerShell 레이블 지정 cmdlet를 사용하는 Azure Information Protection 클라이언트|보호: 예<br /><br />소비: 예|
 |Windows|Azure Information Protection 스캐너|보호: 예<br /><br />소비: 예|
 |Windows|Rights Management 공유 앱|보호: 아니요<br /><br />소비: 예|
@@ -77,10 +77,10 @@ HYOK 보호를 적용하려면 Azure Information Protection 레이블을 사용�
 |MacOS|Rights Management 공유 앱|보호: 아니요<br /><br />소비: 예|
 |iOS|Office Mobile <br /><br />- Word, Excel, PowerPoint|보호: 아니요<br /><br />소비: 예|
 |iOS|Office Mobile <br /><br />-Outlook|보호: 아니요<br /><br />소비: 아니요|
-|iOS|Azure Information Protection 뷰어|보호: 해당 사항 없음<br /><br />소비: 예|
+|iOS|Azure Information Protection 뷰어|보호: 해당 없음<br /><br />소비: 예|
 |Android|Office Mobile <br /><br />- Word, Excel, PowerPoint|보호: 아니요<br /><br />소비: 예|
 |Android|Office Mobile <br /><br />- Outlook|보호: 아니요<br /><br />소비: 아니요|
-|Android|Azure Information Protection 뷰어|보호: 해당 사항 없음<br /><br />소비: 예|
+|Android|Azure Information Protection 뷰어|보호: 해당 없음<br /><br />소비: 예|
 |웹|웹 상의 Outlook|보호: 아니요<br /><br />소비: 아니요|
 |웹|Office Online<br /><br />- Word, Excel, PowerPoint|보호: 아니요<br /><br />소비: 아니요|
 |유니버설|Office 유니버설 앱<br /><br />- Word, Excel, PowerPoint|보호: 아니요<br /><br />소비: 아니요|
@@ -114,7 +114,7 @@ AD RMS 배포는 Azure Information Protection 레이블에 대해 HYOK 보호를
 
 - AD RMS 구성:
     
-    - 최소 버전의 Windows Server 2012 R2: 프로덕션 환경에 대해 필요하지만 테스트 및 평가용으로는 최소 버전의 Windows Server 2008 R2 서비스 팩 1을 사용할 수 있습니다.
+    - 최소 버전의 Windows Server 2012 R2: 프로덕션 환경에 대해 필요하지만 테스트 및 평가 목적으로는 최소 버전의 Windows Server 2008 R2 서비스 팩 1을 사용할 수 있습니다.
     
     - 다음 토폴로지 중 하나입니다.
         
@@ -130,27 +130,27 @@ AD RMS 배포는 Azure Information Protection 레이블에 대해 HYOK 보호를
     
     - 각 AD RMS 서버에 인증 URL이 구성되어 있습니다. [지침](#configuring-ad-rms-servers-to-locate-the-certification-url) 
     
-    - SCP(서비스 연결 지점)가 Active Directory에 등록되어 있지 않습니다. Azure Information Protection과 함께 AD RMS 보호를 사용하는 경우 SCP가 사용되지 않습니다. 
+    - SCP(서비스 연결 지점)은 Active Directory에 등록 되지 않습니다. Azure Information Protection으로 AD RMS 보호를 사용하는 경우 SCP를 사용하지 않습니다. 
     
         - AD RMS 배포에 대한 SCP를 등록한 경우 이 SCP를 제거해야만 Azure Rights Management 보호를 위한 [서비스 검색](./rms-client/client-deployment-notes.md#rms-service-discovery)이 성공합니다. 
         
         - HYOK에 대해 새 AD RMS 클러스터를 설치하는 경우에는 첫 번째 노드를 구성할 때 SCP를 등록하는 단계를 건너뜁니다. 노드를 추가할 때마다 AD RMS 역할을 추가하고 기존 클러스터를 연결하기 전에 서버에 인증 URL이 구성되어 있는지 확인합니다.
     
-    - AD RMS 서버는 연결 중인 클라이언트에서 신뢰할 수 있는 유효한 x.509 인증서와 SSL/TLS를 사용하도록 구성되어 있습니다. 프로덕션 환경에 필요하지만 테스트 또는 평가용으로는 필요하지 않습니다.
+    - 연결하는 클라이언트에서 신뢰할 수 있는 유효한 x.509 인증서가 포함된 SSL/TLS를 사용하도록 AD RMS 서버를 구성합니다. 프로덕션 환경에 필요하지만 테스트 또는 평가 목적으로는 필요하지 않습니다.
     
     - 구성된 권한 템플릿.
     
     - Exchange IRM에 대해 구성되지 않았습니다.
     
-    - 모바일 장치 및 Mac 컴퓨터의 경우: [Active Directory Rights Management Services Mobile Device Extension](https://technet.microsoft.com/library/dn673574.aspx)이 설치되고 구성됩니다.
+    - 모바일 디바이스 및 Mac 컴퓨터의 경우: [Active Directory Rights Management Services Mobile Device Extension](https://technet.microsoft.com/library/dn673574.aspx)이 설치되고 구성됩니다.
 
 - 온-프레미스 Active Directory와 Azure Active Directory 간에 디렉터리 동기화가 구성되었으며 HYOK 보호를 사용할 사용자에 대해 Single Sign-On이 구성되었습니다.
 
-- AD RMS로 보호되는 문서 또는 메일을 조직 외부의 다른 사용자와 공유할 경우: TUD(트러스트된 사용자 도메인) 또는 AD FS(Active Directory Federation Services)를 통해 만들어진 페더레이션 트러스트를 사용하여 다른 조직과의 직접 지점 간 관계에서 명시적으로 정의된 트러스트에 대해 HYOK가 구성되었습니다.
+- HYOK으로 보호되는 문서 또는 이메일을 조직 외부 사람들과 공유하는 경우: AD FS(Active Directory Federation Services)를 사용하여 만드는 페더레이션 트러스트 또는 TUD(트러스트된 사용자 도메인)를 통해 다른 조직과의 직접 지점 간 관계에서 명시적으로 정의된 트러스트에 대해 AD RMS를 구성합니다.
 
 - 사용자가 Office 2016 Professional Plus 또는 Office 2013 Professional Plus 서비스 팩 1인 Office 버전을 Windows 7 서비스 팩 1 이상에서 실행하고 있습니다. Office 2010과 Office 2007은 이 시나리오에서 지원되지 않습니다.
     
-    - Office 2016, Microsoft Installer(.msi) 기반 버전의 경우: [2018년 3월 6일에 출시된 Microsoft Office 2016용 업데이트 4018295](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295)를 설치했습니다.
+    - Office 2016용 Microsoft Installer(.msi) 기반 버전: [2018년 3월 6일에 릴리스된 Microsoft Office 2016용 업데이트 4018295](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295)를 설치했습니다.
 
 > [!IMPORTANT]
 > HYOK 보호에서 제공하는 높은 보증을 충족하려면 AD RMS 서버가 DMZ에 있지 않고 잘 관리된 장치에서만 사용하는 것이 좋습니다. 
@@ -184,11 +184,11 @@ AD RMS 배포는 Azure Information Protection 레이블에 대해 HYOK 보호를
 
 Active Directory Rights Management Services 콘솔에서 템플릿 GUID 및 라이선스 URL 값을 찾을 수 있습니다.
 
-- 템플릿 GUID를 찾으려면: 클러스터를 확장하고 **권한 정책 템플릿**을 클릭합니다. **분산 권한 정책 템플릿** 정보에서 사용할 템플릿의 GUID를 복사할 수 있습니다. 예: 82bf3474-6efe-4fa1-8827-d1bd93339119
+- 템플릿 GUID를 찾으려면: 클러스터를 확장하고 **권한 정책 템플릿**을 클릭합니다. **분산 권한 정책 템플릿** 정보에서 사용할 템플릿의 GUID를 복사할 수 있습니다. 예를 들면 다음과 같습니다. 82bf3474-6efe-4fa1-8827-d1bd93339119
 
-- 라이선스 URL을 찾으려면: 클러스터 이름을 클릭합니다. **클러스터 세부 정보**에서 **/_wmcs/licensing** 문자열을 제외하고 **라이선스**입니다. 예를 들어 https://rmscluster.contoso.com를 구성할 수 있습니다. 
+- 라이선트 URL을 찾으려면: 클러스터 이름을 클릭합니다. **클러스터 세부 정보**에서 **/_wmcs/licensing** 문자열을 제외하고 **라이선스**입니다. 예를 들어 https://rmscluster.contoso.com를 구성할 수 있습니다. 
     
-    인트라넷 라이선스 값뿐 아니라 엑스트라넷 라이선스 값도 있고 두 값이 서로 다른 경우: 명시적 지점 간 트러스트를 사용하여 정의한 파트너와 보호된 문서 또는 메일을 공유할 경우에만 엑스트라넷 값을 지정합니다. 그렇지 않은 경우 인트라넷 값을 사용하고 Azure Information Protection에 AD RMS 보호를 사용하는 모든 클라이언트 컴퓨터에서 인트라넷 연결을 사용하여 연결하도록 합니다(예: 원격 컴퓨터에서 VPN 연결 사용).
+    인트라넷 라이선스 값뿐만 아니라 엑스트라넷 라이선스 값이 있고, 이 값이 서로 다른 경우: 보호된 문서 또는 이메일을 명시적 지점 간 트러스트를 통해 정의한 파트너와 공유할 경우 엑스트라넷 값을 지정합니다. 그렇지 않은 경우 인트라넷 값을 사용하고 Azure Information Protection에 AD RMS 보호를 사용하는 모든 클라이언트 컴퓨터에서 인트라넷 연결을 사용하여 연결하도록 합니다(예: 원격 컴퓨터에서 VPN 연결 사용).
 
 
 ## <a name="next-steps"></a>다음 단계

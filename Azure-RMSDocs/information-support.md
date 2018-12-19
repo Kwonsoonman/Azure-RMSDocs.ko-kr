@@ -4,22 +4,22 @@ description: 새로운 릴리스, 지원 옵션 및 문제 보고를 위해 Micr
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 11/14/2018
+ms.date: 12/07/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 7cc73d92-27d6-49ff-a8ab-2fae73519b4b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: da86d4dbdc5b5ac98dad8aac21772c43354b4b90
-ms.sourcegitcommit: 4c4af9766342272eaa18df720ba3738d44ba99c8
+ms.openlocfilehash: 2844271ff0318cc6c9e90615000fce1689e8a939
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51707728"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173760"
 ---
 # <a name="information-and-support-for-azure-information-protection"></a>Azure Information Protection에 대한 정보 및 지원
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 리소스를 사용하여 조직에 대해 Azure Information Protection을 알아보고 배포하고 지원합니다.
 
@@ -35,7 +35,7 @@ ms.locfileid: "51707728"
 ## <a name="information-about-new-releases-and-updates"></a>새 릴리스 및 업데이트에 대한 정보
 Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블로그](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity/label-name/Azure%20Information%20Protection)에 주요 새 릴리스에 대한 공지 사항을 게시합니다. 소규모 릴리스는 Azure Information Protection [Yammer 사이트](https://www.yammer.com/AskIPTeam)에 발표되며, 요청된 기능의 상태에 대해서는 [UserVoice 사이트](https://msip.uservoice.com)를 확인해 보면 유용할 수도 있습니다.
 
-[Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)에서 추가 정보 및 자세한 내용을 확인할 수 있습니다. 예를 들어, 설명서 변경 요약이 매월 게시되어 새로운 릴리스, 지원 정책 업데이트 및 기존 릴리스의 정정 사항과 분류에 대한 정보가 제공됩니다. 이러한 문서 업데이트 게시물의 제목은 "**\<month year>의 Azure Information Protection 문서 업데이트**"입니다.
+[Azure Information Protection 기술 블로그](https://aka.ms/AIPblog)에서 추가 정보 및 자세한 내용을 확인할 수 있습니다. 예를 들어, 설명서 변경 요약이 매월 게시되어 새로운 릴리스, 지원 정책 업데이트 및 기존 릴리스의 정정 사항과 분류에 대한 정보가 제공됩니다. 이러한 문서 업데이트 게시물의 제목은 다음과 같습니다: "**\<month year>의 Azure Information Protection 문서 업데이트**".
 
 ## <a name="support-options-and-community-resources"></a>지원 옵션 및 커뮤니티 리소스
 다음 섹션에서는 지원 및 문제 해결 옵션과 커뮤니티 리소스에 대한 정보를 제공합니다.
@@ -44,7 +44,7 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블�
 
 프리미어 지원이 있는 경우는 [프리미어 지원 고객용 포털](https://premier.microsoft.com/)을 방문하여 사건을 제출하고, 해결 방법을 검색하고, 도움을 받습니다.
 
-**FastTrack** 자격: 적격 플랜을 통해 Azure Information Protection에 150개 이상의 라이선스를 구매하면 FastTrack 센터 혜택을 사용할 수 있습니다. FastTrack 센터 혜택을 사용하면 Microsoft 전문가와 협업하여 적격 서비스를 평가, 수정 및 활성화할 수 있습니다. 자세한 내용은 [EMS(Enterprise Mobility + Security)에 대한 FastTrack 센터 혜택](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)을 참조하세요.
+**FastTrack**에 적합할 수 있습니다. Azure Information Protection에 적합한 플랜을 통해 150개 이상의 라이선스를 구매하면 FastTrack 센터 혜택을 사용할 수 있습니다. FastTrack 센터 혜택을 사용하면 Microsoft 전문가와 협업하여 적격 서비스를 평가, 수정 및 활성화할 수 있습니다. 자세한 내용은 [EMS(Enterprise Mobility + Security)에 대한 FastTrack 센터 혜택](/enterprise-mobility-security/Solutions/fasttrack-center-benefit-process-for-enterprise-mobility-suite-ems)을 참조하세요.
 
 다른 고객의 경우는 Azure Information Protection 구독에 따라 다음 표의 지원 채널을 사용합니다.
 
@@ -62,6 +62,8 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블�
 
 [Azure Information Protection 도움말 봇](help-bot.md)(현재 베타 버전)을 사용해 보세요.
 
+실습 랩 [Azure Information Protection 실습 랩](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Hands-On-Lab/ba-p/265433)을 참조하세요.
+
 주문형 비디오:
 
 - [Azure Information Protection](https://myignite.techcommunity.microsoft.com/sessions?q=Azure%2520Information%2520Protection)의 Microsoft Ignite 2018 세션.
@@ -74,11 +76,11 @@ Azure Information Protection 제품 팀은 [Enterprise Mobility + Security 블�
 
 - 작동 방식에 대해 궁금한 사항이 있으면 해당 질문에 대한 답변이 [질문과 대답](faqs.md) 페이지에 있는지 확인하세요.
 
-- Azure Information Protection에 대한 지원 정책에 대한 질문이 있으면 정기적으로 업데이트되는 [요구 사항](requirements.md) 정보를 참조하세요.
+- Azure Information Protection에 대한 지원 문에 대해 궁금한 사항이 있으면 정기적으로 업데이트되는 [요구 사항](requirements.md) 정보를 참조하세요.
 
-- 최종 사용자 지원에 대한 정보, 지원 센터, Azure Information Protection의 보호 서비스를 사용하는 서비스 및 응용 프로그램을 구성하는 관리자의 경우 [(Helping users to protect files)사용자가 파일을 보호할 수 있도록 지원](help-users.md)을 참조하세요.
+- 최종 사용자 지원에 대한 정보, 지원 센터 및 Azure Information Protection의 보호 서비스를 사용하는 서비스 및 애플리케이션을 구성하는 관리자의 경우 [사용자가 파일을 보호할 수 있도록 지원](help-users.md)을 참조하세요.
 
-- 온-프레미스 서버를 위한 Rights Management 커넥터를 배포한 경우에는 이벤트 로그 항목, 성능 카운터 및 로깅에 대한 세부 정보를 포함하는 [모니터링](monitor-rms-connector.md) 정보를 참조하세요.
+- 온-프레미스 서버용 Rights Management 커넥터를 배포한 경우 이벤트 로그 항목, 성능 카운터 및 로깅에 대한 세부 정보를 포함하는 [모니터링](monitor-rms-connector.md) 정보를 참조하세요.
 
 - Windows용 Azure Information Protection 클라이언트는 관리자 가이드에서 [설치 검사 및 문제 해결](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting) 섹션을 참조하고 [지원되는 버전](./rms-client/client-version-release-history.md#servicing-information-and-timelines)을 사용 중인지 확인하세요.
 

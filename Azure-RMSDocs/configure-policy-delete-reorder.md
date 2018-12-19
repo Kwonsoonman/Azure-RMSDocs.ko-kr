@@ -4,16 +4,16 @@ description: 사용자에게 표시되는 Azure Information Protection 레이블
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ae0f603f-a632-4ac5-a3f7-6358d4255eff
-ms.openlocfilehash: ccb5f4ff84e590640ed4e5204d2170384611775f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 1f957874649fe9e5697c3dd0164b0b0b255d1e6e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023399"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304879"
 ---
 # <a name="how-to-delete-or-reorder-a-label-for-azure-information-protection"></a>Azure Information Protection에 대한 레이블을 삭제하거나 순서를 변경하는 방법
 
@@ -55,13 +55,13 @@ ms.locfileid: "53023399"
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 다음 작업 중 하나 이상을 수행합니다. 
+2. **분류** > **레이블** 메뉴 옵션: **Azure Information Protection - 레이블** 블레이드에서 다음 작업 중 하나 이상을 수행합니다. 
 
-    - 레이블을 삭제하려면: 마우스 오른쪽 단추를 클릭하거나 삭제할 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택하고 **Delete this label**(이 레이블 삭제)을 클릭한 다음, **확인**을 클릭하여 확인합니다. 
+    - 레이블을 삭제하려면: 삭제하려는 레이블에 대한 상황에 맞는 메뉴(**...**)를 마우스 오른쪽 단추로 클릭하거나 선택하고 **이 레이블 삭제**를 클릭한 다음, **확인**을 클릭하여 확인합니다. 
 
-    - 레이블을 사용하지 않도록 설정하려면: 사용하지 않도록 설정할 레이블을 선택합니다. **레이블** 블레이드에서 **사용**에 대해 **끄기**를 선택한 다음, **저장**을 클릭합니다.
+    - 레이블 사용하지 않도록 설정하려면: 사용하지 않도록 설정하려는 레이블을 선택합니다. **레이블** 블레이드에서 **사용**에 대해 **끄기**를 선택한 다음, **저장**을 클릭합니다.
 
-    - 레이블 순서를 변경하려면: 마우스 오른쪽 단추를 클릭하거나 순서를 변경할 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택하고 레이블이 원하는 순서대로 정렬될 때까지 **위로 이동** 또는 **아래로 이동**을 클릭합니다.  
+    - 레이블 순서를 변경하려면: 순서를 변경할 레이블에 대한 상황에 맞는 메뉴(**...**)를 마우스 오른쪽 단추로 클릭하거나 선택하고 원하는 순서로 레이블이 정렬될 때까지 **위로 이동** 또는 **아래로 이동**을 클릭합니다.  
 
 ## <a name="next-steps"></a>다음 단계
 

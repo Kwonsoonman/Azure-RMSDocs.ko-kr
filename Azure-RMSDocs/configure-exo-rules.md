@@ -4,22 +4,22 @@ description: Azure Information Protection 레이블에 대한 Exchange Online �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ba4e4a4d-5280-4e97-8f5c-303907db1bf5
 ms.reviewer: shakella
 ms.suite: ems
-ms.openlocfilehash: 9d30e7c3e15e9aa6b67c2e1b653d56c1af36ffe0
-ms.sourcegitcommit: 6d4792755226a61d59e79fd8795a9b0f653770bb
+ms.openlocfilehash: c6f220e995aa785c44d4227884da2c7379918a8d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49366991"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305474"
 ---
 # <a name="configuring-exchange-online-mail-flow-rules-for-azure-information-protection-labels"></a>Azure Information Protection 레이블에 대한 Exchange Online 메일 흐름 규칙 구성
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 정보를 사용하여 Exchange Online의 메일 흐름 규칙을 구성함으로써 Azure Information Protection 레이블을 사용하고 특정 시나리오에 대해 추가 보호를 적용할 수 있습니다. 예를 들면 다음과 같습니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "49366991"
 
 Azure Information Protection 레이블이 메타데이터에 저장되므로 Exchange Online의 메일 흐름 규칙은 메시지 및 문서 첨부 파일에 대한 이 정보를 읽을 수 있습니다.
 
-- 전자 메일에서 이 정보는 x- 헤더(**msip_labels: MSIP_Label_\<GUID>_Enabled=True;**)에 저장됩니다. 
+- 이메일에서 이 정보는 x-헤더(**msip_labels: MSIP_Label_\<GUID>_Enabled=True;**)에 저장됩니다. 
 
 - Word 문서(.doc 및 .docx), Excel 스프레드시트(.xls 및 .xlsx), PowerPoint 프레젠테이션(.ppt 및 .pptx) 및 PDF 문서(.pdf)의 경우 이 메타데이터는 **MSIP_Label_\<GUID>_Enabled=True** 사용자 지정 속성에 저장됩니다.  
 
@@ -63,7 +63,7 @@ Azure Information Protection 레이블이 메타데이터에 저장되므로 Exc
 예제에는 메일이 조직 외부로 전송될 때 보호를 적용하는 단일 조건이 있습니다. 선택할 수 있는 다른 조건에 대한 자세한 내용은 [Exchange Online에서 메일 흐름 규칙 조건 및 예외(조건자)](https://technet.microsoft.com/library/jj919235(v=exchg.150\).aspx))를 참조하세요.
 
 
-### <a name="example-1-rule-that-applies-the-do-not-forward-option-to-emails-that-are-labeled-general-when-they-are-sent-outside-the-organization"></a>예제 1: **일반** 레이블이 지정된 메일이 조직 외부로 전송될 때 이 메일에 전달 금지 옵션을 적용하는 규칙
+### <a name="example-1-rule-that-applies-the-do-not-forward-option-to-emails-that-are-labeled-general-when-they-are-sent-outside-the-organization"></a>예제 1: **일반** 레이블이 지정된 이메일이 조직 외부로 전송될 때 이메일에 전달 금지 옵션을 적용하는 규칙
 
 이 예제에서 **일반** 레이블에는 0e421e6d-ea17-4fdb-8f01-93a3e71333b8의 GUID가 있습니다. 이 규칙에 사용하려는 고유 레이블 또는 하위 레이블 GUID를 대체하세요. 
 
@@ -71,11 +71,11 @@ Azure Information Protection 정책에서 이 레이블은 메일을 **일반**�
 
 1. **이름**에 `Apply Do Not Forward for General emails sent externally`와 같이 규칙 이름을 입력합니다.
  
-2. **다음의 경우 이 규칙 적용**에서 **The recipient is located**(수신자 위치)를 선택하고, **Outside the organization**(조직 외부), **확인**을 차례로 선택합니다.
+2. **다음의 경우 이 규칙 적용**에서 **수신자 위치**를 선택한 다음, **조직 외부** 및 **확인**을 차례로 선택합니다.
 
 3. **추가 옵션**을 선택한 후 **조건 추가**를 선택합니다.
  
-4. **그리고**에서 **A message header**(메시지 헤더)를 선택한 후 **includes any of these words**(다음 단어 중 하나 포함)를 선택합니다.
+4. (**및**의 경우) **메시지 헤더**를 선택한 다음, **다음 단어 중 하나 포함**을 선택합니다.
      
     a. **텍스트 입력**을 선택하고 `msip_labels`를 입력합니다.
      
@@ -83,15 +83,15 @@ Azure Information Protection 정책에서 이 레이블은 메일을 **일반**�
     
     c. **+** 를 선택한 후 **확인**을 선택합니다.
 
-5. **다음 작업 실행**에서 **메시지 보안 수정** > **Apply Office 365 Message Encryption and rights protection** > **전달 금지**를 선택한 후 **확인**을 선택합니다.
+5. **다음 작업 수행**에서 **메시지 보안 수정** > **Office 365 메시지 암호화 및 권리 보호 적용** > **전달 금지**를 선택한 다음, **확인**을 선택합니다.
     
-    이제 규칙 구성이 다음과 유사하게 표시됩니다. ![Azure Information Protection 레이블에 대해 구성된 Exchange Online 메일 흐름 규칙 - 예제1](./media/aip-exo-rule-ex1.png)
+    이제 규칙 구성이 다음과 비슷하게 표시됩니다.  ![Azure Information Protection 레이블에 대해 구성된 Exchange Online 메일 흐름 규칙 - 예제 1](./media/aip-exo-rule-ex1.png)
 
 7. **저장**을 선택합니다. 
 
 전달 금지 옵션에 대한 자세한 내용은 [메일에 대한 전달 금지 옵션](configure-usage-rights.md#do-not-forward-option-for-emails)을 참조하세요.
 
-### <a name="example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization"></a>예제 2: 메일에 **기밀 \ 파트너** 레이블이 지정된 첨부 파일이 있고 메일이 조직 외부로 전송되는 경우 이러한 메일에 암호화 전용 옵션을 적용하는 규칙
+### <a name="example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization"></a>예제 2: 이메일에 **기밀 \ 파트너** 레이블이 지정된 첨부 파일이 있고 이메일이 조직 외부로 전송되는 경우 이러한 이메일에 암호화 전용 옵션을 적용하는 규칙
 
 이 예제에서 **일반\파트너** 하위 레이블에는 0e421e6d-ea17-4fdb-8f01-93a3e71333b8이라는 GUID가 있습니다. 이 규칙에 사용하려는 고유 레이블 또는 하위 레이블 GUID를 대체하세요. 
 
@@ -99,11 +99,11 @@ Azure Information Protection 정책에서 이 레이블은 메일을 **일반**�
 
 1. **이름**에 `Apply Encrypt to emails sent externally if protected attachments`와 같이 규칙 이름을 입력합니다.
  
-2. **다음의 경우 이 규칙 적용**에서 **The recipient is located**(수신자 위치)를 선택하고, **Outside the organization**(조직 외부), **확인**을 차례로 선택합니다.
+2. **다음의 경우 이 규칙 적용**에서 **수신자 위치**를 선택한 다음, **조직 외부** 및 **확인**을 차례로 선택합니다.
 
 3. **추가 옵션**을 선택한 후 **조건 추가**를 선택합니다.
  
-4. **그리고**에서 **Any attachment**(임의 첨부 파일)를 선택한 후 **has these properties, including any of these words**(다음 단어 중 하나를 포함하여 이러한 속성이 있음)를 선택합니다.
+4. (**및**의 경우) **모든 첨부 파일**을 선택한 다음, **이러한 단어 중 하나를 포함하여 이러한 속성이 있음**을 선택합니다.
      
     a. **+** > **Specify a custom attachment property**(사용자 지정 첨부 파일 속성 지정)를 선택합니다.
   
@@ -113,9 +113,9 @@ Azure Information Protection 정책에서 이 레이블은 메일을 **일반**�
     
     d. **저장**을 선택한 후 **확인**을 선택합니다.
 
-5. **다음 작업 실행**에서 **메시지 보안 수정** > **Apply Office 365 Message Encryption and rights protection** > **암호화**를 선택한 후 **확인**을 선택합니다.
+5. **다음 작업 수행**에서 **메시지 보안 수정** > **Office 365 메시지 암호화 및 권리 보호 적용** > **암호화**를 선택한 다음, **확인**을 선택합니다.
     
-    이제 규칙 구성이 다음과 유사하게 표시됩니다. ![Azure Information Protection 레이블에 대해 구성된 Exchange Online 메일 흐름 규칙 - 예제1](./media/aip-exo-rule-ex2.png)
+    이제 규칙 구성이 다음과 비슷하게 표시됩니다.  ![Azure Information Protection 레이블에 대해 구성된 Exchange Online 메일 흐름 규칙 - 예제 1](./media/aip-exo-rule-ex2.png)
 
 6. **저장**을 선택합니다. 
 
@@ -126,6 +126,6 @@ Azure Information Protection 정책에서 이 레이블은 메일을 **일반**�
 
 Exchange Online 메일 흐름 규칙에 사용할 레이블을 만들고 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection 정책 구성](configure-policy.md)을 참조하세요.
 
-또한 첨부 파일이 포함된 메일 메시지를 분류하려면 Azure Information Protection [정책 설정](configure-policy-settings.md): **첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최상위 분류와 일치하는 레이블 적용**을 사용하는 것이 좋습니다.
+또한 첨부 파일이 포함된 이메일 메시지를 분류하려면 다음의 Azure Information Protection [정책 설정](configure-policy-settings.md)을 사용하는 것이 좋습니다. **첨부 파일이 있는 이메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용**.
 
 

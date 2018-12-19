@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: aeeebcd7-6646-4405-addf-ee1cc74df5df
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fa7bf6ae5eb60b6fc6b0310c11e9acfbbd3b240c
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: ba44c23b56c2832268f0ed6df122a347c9a8fdf3
+ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024164"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53218462"
 ---
 # <a name="what-is-azure-rights-management"></a>Azure 권한 관리란?
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Azure Rights Management(줄여서 Azure RMS라고도 함)는 [Azure Information Protection](what-is-information-protection.md)에서 사용하는 보호 기술입니다.
@@ -62,13 +62,13 @@ Azure Information Protection에 대한 구독뿐만 아니라 Office 365 구독�
 ## <a name="security-compliance-and-regulatory-requirements"></a>보안, 준수 및 규정 요구 사항
 Azure Rights Management는 다음과 같은 보안, 준수 및 규정 요구 사항을 지원합니다.
 
-√ 업계 표준 암호화가 사용되며 FIPS 140-2가 지원됩니다. 자세한 내용은 [Azure RMS에서 사용하는 암호화 컨트롤: 알고리즘 및 키 길이](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths) 정보를 참조하세요.
+√ 업계 표준 암호화가 사용되며 FIPS 140-2가 지원됩니다. 자세한 내용은 [Azure RMS에서 사용되는 암호화 컨트롤: 알고리즘 및 키 길이](how-does-it-work.md#cryptographic-controls-used-by-azure-rms-algorithms-and-key-lengths) 정보를 참조하세요.
 
 √ Microsoft Azure 데이터 센터에 테넌트 키를 저장할 수 있도록 Thales HSM(하드웨어 보안 모듈)이 지원됩니다. Azure Rights Management는 북아메리카, EMEA(유럽, 중동 및 아시아) 및 아시아의 데이터 센터에 별도의 보안 환경을 이용하므로 조직의 키는 해당 지역에서만 사용될 수 있습니다.
 
 √ Azure RMS는 다음과 같은 인증을 받았습니다.
 
--   ISO/IEC 27001:2013([ISO/IEC 27018](http://azure.microsoft.com/blog/2015/02/16/azure-first-cloud-computing-platform-to-conform-to-isoiec-27018-only-international-set-of-privacy-controls-in-the-cloud/) 포함)
+-   ISO/IEC 27001:2013([ISO/IEC 27018](https://azure.microsoft.com/blog/2015/02/16/azure-first-cloud-computing-platform-to-conform-to-isoiec-27018-only-international-set-of-privacy-controls-in-the-cloud/) 포함)
 
 -   SOC 2 SSAE 16/ISAE 3402 증명
 
@@ -80,7 +80,7 @@ Azure Rights Management는 다음과 같은 보안, 준수 및 규정 요구 사
 
 -   PCI DSS 수준 1
 
-이러한 외부 인증에 대한 자세한 내용은 [Azure 보안 센터](http://azure.microsoft.com/support/trust-center/compliance/)를 참조하세요.
+이러한 외부 인증에 대한 자세한 내용은 [Azure 보안 센터](https://azure.microsoft.com/support/trust-center/compliance/)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

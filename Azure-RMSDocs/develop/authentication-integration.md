@@ -12,12 +12,12 @@ ms.assetid: 200D9B23-F35D-4165-9AC4-C482A5CE1D28
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: 1adb21ac41a922ebb3636fcce9e13c9fd785930d
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 42a1944dcb643c1647ee7299456307815f1023b4
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151659"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266633"
 ---
 # <a name="how-to-register-and-rms-enable-your-app-with-azure-ad"></a>Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법
 
@@ -33,12 +33,12 @@ Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 
 응용 프로그램을 배포하려면 먼저 Microsoft Information Protection 팀의 IPIA를 완료해야 합니다. 자세한 내용은 [프로덕션 환경에 배포](deploying-your-application.md) 항목의 첫 번째 섹션을 참조하세요.
 
 ## <a name="implement-user-authentication-for-your-app"></a>앱에 대한 사용자 인증 구현
-각 RMS API에는 사용자 인증을 사용하기 위해 구현해야 하는 콜백이 있습니다. 그러면 액세스 토큰을 제공하지 않거나, 액세스 토큰을 새로 고쳐야 하거나, 액세스 토큰이 만료된 경우 RMS SDK 4.2에서 인증 콜백 구현을 사용합니다.
+각 RMS API에는 사용자 인증을 사용하기 위해 구현해야 하는 콜백이 있습니다. 액세스 토큰을 제공하지 않거나, 액세스 토큰을 새로 고쳐야 하거나, 액세스 토큰이 만료된 경우 RMS SDK 4.2에서 콜백 구현을 사용합니다.
 
 - Android - [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx) 및 [AuthenticationCompletionCallback](https://msdn.microsoft.com/library/dn758250.aspx) 인터페이스.
 - iOS / OS X -  [MSAuthenticationCallback](https://msdn.microsoft.com/library/dn758312.aspx) 프로토콜.
 -  Windows Phone / Window RT -  [IAuthenticationCallback](https://msdn.microsoft.com/library/microsoft.rightsmanagement.iauthenticationcallback.aspx) 인터페이스.
-- Linux -  [IAuthenticationCallback](http://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 인터페이스.
+- Linux -  [IAuthenticationCallback](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1IAuthenticationCallback.html) 인터페이스.
 
 ### <a name="what-library-to-use-for-authentication"></a>인증에 사용할 라이브러리
 인증 콜백을 구현하려면 적절한 라이브러리를 다운로드하고 해당 라이브러리를 사용하도록 개발 환경을 구성해야 합니다. GitHub에서 이러한 플랫폼에 대한 ADAL 라이브러리를 찾을 수 있습니다.
@@ -51,8 +51,7 @@ Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 
 -   [Microsoft Azure Active Directory Authentication Library (ADAL) for dotnet](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet)(dotnet용 Microsoft Azure ADAL(Active Directory 인증 라이브러리))
 -   Linux SDK의 경우 [Github](https://github.com/AzureAD/rms-sdk-for-cpp)를 통해 제공되는 SDK 원본과 함께 ADAL 라이브러리가 패키징되어 있습니다.
 
->[!NOTE]  
-> ADAL 중 하나를 사용할 것을 권장하지만, 다른 인증 라이브러리를 사용할 수도 있습니다.
+>[!NOTE]   다른 인증 라이브러리를 사용할 수도 있지만, ADAL 중 하나를 사용하는 것이 좋습니다.
 
 ### <a name="authentication-parameters"></a>인증 매개 변수
 
@@ -72,8 +71,7 @@ Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
 
     iOS: `<app-scheme>://<bundle-id>`
 
->[!NOTE] 
-> 앱이 이러한 지침을 따르지 않으면 Azure RMS 및 Azure AD 워크플로가 실패할 가능성이 크며 Microsoft.com에서 지원되지 않습니다. 또한 프로덕션 앱에서 잘못된 클라이언트 ID를 사용할 경우 RMLA(권한 관리 사용권 계약)를 위반할 수 있습니다.
+>[!NOTE]  앱이 이러한 지침을 따르지 않으면 Azure RMS 및 Azure AD 워크플로는 실패할 가능성이 크며 Microsoft.com에서 지원되지 않습니다. 또한 프로덕션 앱에서 잘못된 클라이언트 ID를 사용할 경우 RMLA(권한 관리 사용권 계약)를 위반할 수 있습니다.
 
 ### <a name="what-should-an-authentication-callback-implementation-look-like"></a>필요한 인증 콜백 구현 모양
 **인증 코드 예제** - 이 SDK에는 인증 콜백 사용을 보여 주는 예제 코드가 있습니다. 편의상, 이러한 코드 예제는 여기뿐 아니라 연결된 다음 각 항목에도 표시되어 있습니다.

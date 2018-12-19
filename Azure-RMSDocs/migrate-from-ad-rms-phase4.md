@@ -4,22 +4,22 @@ description: AD RMS에서 Azure Information Protection으로 마이그레이션�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/01/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 8b039ad5-95a6-4c73-9c22-78c7b0e12cb7
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6ea5a80ad9d08873f817f21a9f6ac4d059618af7
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: d694876a91e0d39d0d429e5dd5503bb153fd5521
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024045"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305457"
 ---
 # <a name="migration-phase-4---supporting-services-configuration"></a>마이그레이션 4단계 - 지원 서비스 구성
 
->*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 AD RMS에서 Azure Information Protection으로 마이그레이션 4단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 8-9단계를 설명합니다.
@@ -105,7 +105,7 @@ AD RMS를 통해 Exchange Server 또는 SharePoint Server의 IRM(정보 권한 �
 
 ### <a name="configure-exchange-and-sharepoint-to-use-the-connector"></a>커넥터를 사용하도록 Exchange 및 SharePoint 구성
 
-1. RMS 커넥터를 배포하기 위한 지침: [5단계: RMS 커넥터를 사용하도록 서버 구성](./configure-servers-rms-connector.md)으로 돌아갑니다.
+1. RMS 커넥터를 배포하기 위한 지침을 반환합니다. [5단계: RMS 커넥터를 사용하도록 서버 구성](./configure-servers-rms-connector.md)
 
     SharePoint Server만 있는 경우 바로 [다음 단계](#next-steps)로 이동하여 마이그레이션을 계속합니다. 
 
@@ -130,7 +130,7 @@ Exchange 2013 및 Exchange 2016의 경우 - 레지스트리 편집 1:
 
 HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://\<AD RMS 인트라넷 라이선스 URL\>/_wmcs/licensing
 
@@ -151,7 +151,7 @@ Exchange 2013 - 레지스트리 편집 2:
 
 HKLM\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection 
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
 
@@ -172,7 +172,7 @@ Exchange 2010의 경우 - 레지스트리 편집 1:
 
 HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://\<AD RMS 인트라넷 라이선스 URL\>/_wmcs/licensing
 
@@ -194,7 +194,7 @@ Exchange 2010의 경우 - 레지스트리 편집 2:
 
 HKLM\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://\<AD RMS 엑스트라넷 라이선스 URL\>/_wmcs/licensing
 

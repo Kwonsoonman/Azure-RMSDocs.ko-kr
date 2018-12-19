@@ -10,22 +10,22 @@ ms.service: information-protection
 ms.assetid: 57a1073c-02e0-441b-bf49-c6b72fdba24f
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: 0f94a36f7653ef4aff590bb6815c75210768f7c5
-ms.sourcegitcommit: 227f54a8e90aa57d778ab60c646179c10e5edb44
+ms.openlocfilehash: 1988552916494ec6673f7439c0b132ccf87786c2
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51272366"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174083"
 ---
 # <a name="tasks-that-you-used-to-do-with-the-azure-classic-portal"></a>Azure 클래식 포털과 관련된 작업
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Rights Management 서비스를 관리하기 위한 Azure 클래식 포털에 사용되며 Azure Portal로 전환하는 데 도움이 필요합니까?
 
 Azure 클래식 포털은 **2018년 1월 8일**에 사용 중지됩니다. 이 날짜 이후에는 클래식 포털에서 Azure Rights Management 서비스 및 사용자 지정 템플릿을 관리할 수 없습니다. 클래식 포털에 액세스하려고 하면 새 Azure Portal로 이동하는 링크가 표시됩니다.
 
-클래식 포털 중지에 대한 자세한 내용은 [미래로의 Azure AD 관리자 환경: Azure 클래식 포털 사용 중지(영문)](https://cloudblogs.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/) 블로그 게시물 공지 사항을 참조하세요. 원래 사용 중지 날짜를 일시적으로 연장하려면 [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/)(Azure AD 클래식 포털 경험 사용 중지 및 조건부 액세스 정책 마이그레이션)를 참조하세요.
+클래식 포털 사용 중지에 대한 자세한 내용은 블로그 공지 게시물: [미래로의 Azure AD 관리자 환경: Azure 클래식 포털 사용 중지](https://cloudblogs.microsoft.com/enterprisemobility/2017/09/18/marching-into-the-future-of-the-azure-ad-admin-experience-retiring-the-azure-classic-portal/)를 참조하세요. 원래 사용 중지 날짜를 일시적으로 연장하려면 [Update on retirement of Azure AD classic portal experience and migration of conditional access policies](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/29/update-on-retirement-of-azure-ad-classic-portal-experience-and-migration-of-conditional-access-policies/)(Azure AD 클래식 포털 경험 사용 중지 및 조건부 액세스 정책 마이그레이션)를 참조하세요.
 
 ## <a name="how-to-do-your-familiar-admin-tasks"></a>친숙한 관리 작업을 수행하는 방법
 
@@ -55,7 +55,7 @@ Azure Portal에서 템플릿을 편집하거나 레이블로 변환하기 전에
 
 - 템플릿을 레이블로 변환하여 템플릿과 레이블을 독립적으로 관리하는 대신 단일 개체를 관리할 수 있습니다. 지침은 [템플릿을 레이블로 변환](configure-policy-templates.md#to-convert-templates-to-labels)을 참조하세요.
 
-- 다른 관리자 역할 지원: Azure 클래식 포털에 전역 관리자로 로그인하여 Azure Rights Management를 구성해야 했지만, Azure Portal에 **전역 관리자**, **보안 관리자** 또는 **Information Protection 관리자**라는 관리 역할이 있는 계정을 사용하여 로그인하여 Azure Information Protection을 구성할 수 있습니다. 이러한 각 역할에 대한 자세한 내용은 Azure Active Directory 설명서에서 [사용 가능한 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)을 참조하세요.
+- 기타 관리자 역할 지원: Azure 클래식 포털에 글로벌 관리자로 로그인하여 Azure Rights Management를 구성해야 했지만, Azure Portal에 다음과 같은 관리자 역할이 있는 계정으로 로그인하여 Azure Information Protection를 구성할 수 있습니다: **글로벌 관리자**, **보안 관리자** 또는 **Information Protection 관리자**. 이러한 각 역할에 대한 자세한 내용은 Azure Active Directory 설명서에서 [사용 가능한 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles)을 참조하세요.
 
 템플릿을 만들고 관리하고 서비스를 활성화하거나 비활성화하는 PowerShell cmdlet은 변경 없이 계속 지원됩니다.
 

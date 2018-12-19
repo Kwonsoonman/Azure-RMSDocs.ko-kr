@@ -4,20 +4,20 @@ description: AD RMS에서 Azure Information Protection으로 마이그레이션 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5f4c6ea-fd2a-423a-9fcb-07671b3c2f4f
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7a95da3590a666e1d90452e514e93ab6100b8ad7
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 3e8f0b9e2ca404f1f5a4c37c60d44f4fa95ace1e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024028"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305430"
 ---
-# <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호된 키-HSM 보호된 키 마이그레이션
+# <a name="step-2-software-protected-key-to-hsm-protected-key-migration"></a>2단계: 소프트웨어 보호 키-HSM 보호 키 마이그레이션
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
@@ -41,9 +41,9 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 
 ## <a name="part-1-extract-your-slc-key-from-the-configuration-data-and-import-the-key-to-your-on-premises-hsm"></a>1부: 구성 데이터에서 SLC 키를 추출하고 온-프레미스 HSM으로 키 가져오기
 
-1.  Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azurekey-vault) 섹션의 다음 단계를 사용하세요.
+1.  Azure Key Vault 관리자: Azure Key Vault에 저장하려는 내보낸 각 SLC 키의 경우 Azure Key Vault 설명서의 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션에 설명된 다음 단계를 사용하세요.
 
-    -   **키를 생성하여 Azure 주요 자격 증명 모음 HSM으로 전송**: [1단계: 인터넷에 연결된 워크스테이션 준비](/azure/key-vault/key-vault-hsm-protected-keys#step-1-prepare-your-internet-connected-workstation)
+    -   **키를 생성하여 Azure Key Vault HSM으로 전송**: [1단계: 인터넷에 연결된 워크스테이션 준비](/azure/key-vault/key-vault-hsm-protected-keys#step-1-prepare-your-internet-connected-workstation)
 
     -   **인터넷을 통해 테넌트 키 생성 및 전송**: [2단계: 연결이 끊어진 워크스테이션 준비](/azure/key-vault/key-vault-hsm-protected-keys#step-2-prepare-your-disconnected-workstation)
 
@@ -109,9 +109,9 @@ SLC 키를 추출하고 온-프레미스 HSM으로 가져왔으므로 HSM 보호
 > [!IMPORTANT]
 > 이 단계를 완료하면 이러한 PEM 파일을 연결이 끊어진 워크스테이션에서 안전하게 지워서 권한이 없는 사용자가 액세스할 수 없도록 합니다. 예를 들어 "cipher /w: E"를 실행하여 E: 드라이브에서 모든 파일을 안전하게 삭제합니다.
 
-## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>2부: HSM 키를 패키지한 후 Azure 주요 자격 증명 모음으로 전송
+## <a name="part-2-package-and-transfer-your-hsm-key-to-azure-key-vault"></a>2부: HSM 키를 패키지하여 Azure Key Vault로 전송
 
-Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하려는 경우 Azure Key Vault 설명서에서 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션의 다음 단계를 사용하세요.
+Azure Key Vault 관리자: Azure Key Vault에 저장하려는 내보낸 각 SLC 키의 경우 Azure Key Vault 설명서의 [Azure Key Vault에 대해 BYOK(Bring Your Own Key) 구현](/azure/key-vault/key-vault-hsm-protected-keys#implementing-bring-your-own-key-byok-for-azure-key-vault) 섹션에 설명된 다음 단계를 사용하세요.
 
 - [4단계: 키 전송 준비](/azure/key-vault/key-vault-hsm-protected-keys#step-4-prepare-your-key-for-transfer)
 
@@ -119,7 +119,7 @@ Azure Key Vault 관리자: 내보낸 각 SLC 키를 Azure Key Vault에 저장하
 
 키가 이미 있으므로 키 쌍을 생성하는 단계를 수행하지 마세요. 대신 명령을 실행하여 온-프레미스 HSM에서 이 키를 전송합니다(이 예에서는 KeyIdentifier 매개 변수에 "contosobyok" 사용).
 
-Azure 주요 자격 증명 모음으로 키를 전송하기 전에 권한이 낮춰진 키 복사본을 만들고(4.1단계) 키를 암호화할 때(4.3단계) KeyTransferRemote.exe 유틸리티가 **Result: SUCCESS**를 반환하는지 확인합니다.
+Azure Key Vault에 키를 전송하기 전에 KeyTransferRemote.exe 유틸리티가 **결과: SUCCESS**를 반환하는 경우 축소된 권한으로 키 복사본을 만들고(4.1단계) 키를 암호화(4.3단계)하는지 확인합니다.
 
 키를 Azure 주요 자격 증명 모음으로 업로드할 때 키 속성이 표시되며 여기에 키 ID가 포함되어 있습니다. **https://contosorms-kv.vault.azure.net/keys/contosorms-byok/aaaabbbbcccc111122223333**과 유사하게 표시됩니다. 이 URL은 Azure Information Protection 관리자가 Azure Information Protection의 Azure Rights Management 서비스에 이 키를 테넌트 키로 사용하도록 지시하는 데 필요하므로 URL을 기록해 두세요.
 

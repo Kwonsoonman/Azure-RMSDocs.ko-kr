@@ -4,22 +4,22 @@ description: BYOK(“Bring Your Own Key”)라고도 하는 고객 관리 키를
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f5930ed3-a6cf-4eac-b2ec-fcf63aa4e809
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 93e538b882da557715b04e8675b5a3b86de018b0
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 68e479eb7f19f60d6d68b913eae46dd287b5a04f
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330279"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305151"
 ---
 # <a name="byok-pricing-and-restrictions"></a>BYOK 가격 및 제한 사항
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Azure Information Protection을 포함하는 구독이 있는 조직은 Azure Information Protection 테넌트를 구성하여 고객 관리 키(BYOK)를 사용하고 [사용 현황을 기록](./log-analyze-usage.md)할 수 있습니다. 
@@ -48,7 +48,7 @@ Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용�
 
 키 관리 외에도 Azure Key Vault는 보안 관리자에게 암호화를 사용하는 다른 서비스 및 응용 프로그램의 인증서 및 암호를 저장하고 액세스하고 관리하는 동일한 관리 환경을 제공합니다. 
 
-Azure Key Vault에 대한 자세한 내용은 [Azure Key Vault란?](/azure/key-vault/key-vault-whatis)을 참조하고, 최신 정보는 [Azure Key Vault 팀 블로그](https://cloudblogs.microsoft.com/kv/)를 방문하여 다른 서비스에서 이 기술을 어떻게 사용하는지 알아보세요.
+Azure Key Vault에 대한 자세한 내용은 [Azure Key Vault란?](/azure/key-vault/key-vault-whatis)을 참조하고, 최신 정보는 [Azure Key Vault 팀 블로그](https://blogs.technet.microsoft.com/kv/)를 방문하여 다른 서비스에서 이 기술을 어떻게 사용하는지 알아보세요.
 
 ## <a name="restrictions-when-using-byok"></a>BYOK 사용 시 제한 사항
 

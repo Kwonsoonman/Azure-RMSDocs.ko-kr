@@ -5,21 +5,21 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 04/11/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e3fd9bd9-3638-444a-a773-e1d5101b1793
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 86b21f531521a5f56d90dfb2ddb1764d091f898e
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 13729d124ce0e49eddeda6c4c19aeae2c62eb8c6
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42806956"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174253"
 ---
 # <a name="migration-phase-3---client-side-configuration"></a>마이그레이션 3단계 - 클라이언트 쪽 구성
 
->*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 AD RMS에서 Azure Information Protection으로 마이그레이션 3단계에는 다음 정보를 사용합니다. 이러한 절차는 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)의 7단계를 설명합니다.
 
@@ -126,7 +126,7 @@ Office 2016 간편 실행 데스크톱 앱을 사용하는 Windows 컴퓨터의 
 
 1. [준비 단계](migrate-from-ad-rms-phase1.md#step-2-prepare-for-client-migration)에서 이러한 스크립트를 다운로드할 때 이전에 추출한 마이그레이션 스크립트, **Migrate-Client.cmd** 및 **Migrate-User.cmd**로 반환합니다.
 
-2.  **Migrate-Client.cmd**의 지침에 따라 테넌트의 Azure Rights Management 서비스 URL과 AD RMS 클러스터 엑스트라넷 라이선스 URL 및 인트라넷 라이선스 URL의 서버 이름을 포함하도록 스크립트를 수정합니다. 그런 다음 이전에 설명된 스크립트 버전을 증가시킵니다. 스크립트 버전을 추적하기 위해서는 YYYYMMDD와 같은 형식의 현재 날짜를 사용하는 것이 좋습니다.
+2.  **Migrate-Client.cmd**의 지침에 따라 테넌트의 Azure Rights Management 서비스 URL과 AD RMS 클러스터 엑스트라넷 라이선스 URL 및 인트라넷 라이선스 URL의 서버 이름을 포함하도록 스크립트를 수정합니다. 그런 다음 이전에 설명된 스크립트 버전을 증가시킵니다. 스크립트 버전을 추적하려면 YYYYMMDD와 같은 형식의 현재 날짜를 사용하는 것이 좋습니다.
     
     > [!IMPORTANT]
     > 앞서와 같이 주소 앞 또는 뒤에 추가 공백이 생기지 않도록 주의하세요.

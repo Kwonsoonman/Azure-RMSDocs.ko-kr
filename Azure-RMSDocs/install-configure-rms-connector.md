@@ -4,18 +4,18 @@ description: Azure RMS(Rights Management) 커넥터를 설치 및 구성하는 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4fed9d4f-e420-4a7f-9667-569690e0d733
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2e3babe4a402b8f77700e9b9890dc5f826a5850a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: c0fc5812eedd7cce5c0e17231d9ee19dbf4edd1b
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026967"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305678"
 ---
 # <a name="installing-and-configuring-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터 설치 및 구성
 
@@ -57,15 +57,15 @@ RMS 커넥터를 구성하기 전에 먼저 RMS 커넥터를 구성할 수 있�
 
 Microsoft Rights Management 관리 도구는 이 계정에 대해 MFA를 지원하지 않으므로 이 계정은 MFA(Multi-Factor Authentication)가 필요하지 않습니다. 
 
-커넥터에는 이 암호에 대한 몇 가지 문자 제한도 있습니다. 암호에 앰퍼샌드( **&** ), 왼쪽 꺾쇠 괄호( **[** ), 오른쪽 꺾쇠 괄호( **]** ), 곧은 따옴표( **"** ) 및 아포스트로피( **'** )와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증에 실패하고 **사용자 이름과 암호 조합이 잘못되었습니다.** 라는 오류 메시지가 표시됩니다. 이 시나리오를 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
+커넥터에는 이 암호에 대한 몇 가지 문자 제한도 있습니다. 암호에 앰퍼샌드(**&**), 왼쪽 꺾쇠 괄호(**[**), 오른쪽 꺾쇠 괄호(**]**), 곧은 따옴표(**"**) 및 아포스트로피(**'**)와 같은 문자를 사용할 수 없습니다. 암호에 이러한 문자가 포함된 경우 다른 시나리오에 이 계정과 암호를 사용하여 로그인할 수 있더라도 RMS 커넥터에 대한 인증에 실패하고 **사용자 이름과 암호 조합이 잘못되었습니다.** 라는 오류 메시지가 표시됩니다. 이 시나리오를 암호에 적용할 경우 이러한 특수 문자가 포함되지 않은 암호에 다른 계정을 사용하거나 이러한 특수 문자가 포함되지 않도록 암호를 재설정합니다.
 
-또한 [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구현한 경우 지정한 계정이 콘텐츠를 보호할 수 있어야 합니다. 예를 들어 “IT department” 그룹에 콘텐츠를 보호하는 기능을 제한한 경우 여기서 지정한 계정은 해당 그룹의 구성원이어야 합니다. 그렇지 않으면 다음과 같은 오류 메시지가 표시됩니다. **관리 서비스 및 조직의 위치를 검색하려는 시도가 실패했습니다. 조직에 Microsoft Rights Management 서비스를 사용할 수 있는지 확인합니다.**
+또한 [온보딩 컨트롤](activate-service.md#configuring-onboarding-controls-for-a-phased-deployment)을 구현한 경우 지정한 계정이 콘텐츠를 보호할 수 있어야 합니다. 예를 들어 “IT department” 그룹에 콘텐츠를 보호하는 기능을 제한한 경우 여기서 지정한 계정은 해당 그룹의 구성원이어야 합니다. 그렇지 않은 경우 오류 메시지가 표시됩니다. **관리 서비스 및 조직의 위치를 검색하려는 시도가 실패했습니다. 조직에 Microsoft Rights Management 서비스를 사용할 수 있는지 확인합니다.**
 
 다음 권한 중 하나가 있는 계정을 사용할 수 있습니다.
 
--   **테넌트에 대한 전역 관리자**: Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자인 계정입니다.
+-   **테넌트의 글로벌 관리자**: Office 365 테넌트 또는 Azure AD 테넌트의 글로벌 관리자인 계정입니다.
 
--   **Azure Rights Management 전역 관리자**: Azure RMS 전역 관리자 역할이 할당된 Azure Active Directory에 있는 계정입니다.
+-   **Azure Rights Management 글로벌 관리자**: Azure RMS 글로벌 관리자 역할이 할당된 Azure Active Directory의 계정입니다.
 
 -   **Azure Rights Management 커넥터 관리자**: 조직의 RMS 커넥터를 설치 및 관리할 권한이 부여된 Azure Active Directory의 계정입니다.
 
@@ -145,7 +145,7 @@ RMS 커넥터를 제거해야 할 경우 마법사를 다시 실행하고 제거
 
 다양한 서버 역할에 대한 자세한 내용:
 
--   Exchange를 실행하는 서버의 경우: 보안 그룹을 지정해야 하며, Exchange가 자동으로 만들어 포리스트의 모든 Exchange 서비스를 유지 관리하는 데 사용하는 기본 그룹(**Exchange Servers**)을 사용할 수 있습니다.
+-   Exchange를 실행하는 서버의 경우: 보안 그룹을 지정해야 하며, Exchange가 자동으로 포리스트의 모든 Exchange 서버를 만들고 유지 관리하는 기본 그룹(**Exchange Servers**)을 사용할 수 있습니다.
 
 -   SharePoint를 실행하는 서버의 경우:
 

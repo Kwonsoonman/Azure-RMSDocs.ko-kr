@@ -4,19 +4,18 @@ description: 분류 및 보호를 위해 레이블이 지정된 PDF 문서 및 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/04/2018
+ms.date: 12/12/2018
 ms.topic: article
-ms.prod: azure
 ms.service: information-protection
 ms.assetid: aab59e02-930b-4a17-8442-2d5d081fe1a6
 ms.reviewer: kartikka
 ms.suite: ems
-ms.openlocfilehash: 4a4d396db6eaac2709577023d873587697327bef
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: fc1a6c136d0b44671cbae0e6eb15202364e356d4
+ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023603"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53246125"
 ---
 # <a name="supported-pdf-readers-for-microsoft-information-protection"></a>Microsoft Information Protection에 대해 지원되는 PDF reader
 
@@ -34,7 +33,7 @@ Microsoft와 Adobe 간의 공동 작업을 통해 분류되고 필요에 따라 
     
     [관리자가 이 기능을 사용 안 함으로 설정](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption)하지 않은 이상, 이 보호된 PDF 파일 형식은 이제 최신 버전의 Azure Information Protection 클라이언트에서 기본적으로 사용하도록 설정됩니다.
 
-자세한 정보는 [10월부터 Microsoft Information Protection으로 보호되는 PDF에 Adobe Acrobat Reader 사용](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738) 블로그 게시물을 참조하세요.
+자세한 내용은 다음의 블로그 게시물 [10월부터 Microsoft Information Protection으로 보호되는 PDF에 대해 Adobe Acrobat Reader 사용](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Starting-October-use-Adobe-Acrobat-Reader-for-PDFs-protected-by/ba-p/262738)을 참조하세요.
 
 ## <a name="supported-pdf-readers"></a>지원되는 PDF reader
 
@@ -42,7 +41,7 @@ Microsoft와 Adobe 간의 공동 작업을 통해 분류되고 필요에 따라 
 
 |운영 체제|지원되는 reader 및 다운로드 링크|
 |----------------|-----------------------------------|
-|Windows 10 이전 버전<br />Windows 7 서비스 팩 1을 통해|Adobe Acrobat Reader(기본 설정):<br />-  [Adobe 일반 사용 약관 참고](https://www.adobe.com/legal/terms.html) <br />- [미리 보기 다운로드](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/MIP_Preview/1900820120/Adobe_MIP_Preview_1900820120.zip) <br /><br /> Azure Information Protection 뷰어: [미리 보기](https://go.microsoft.com/fwlink/?linkid=838993)<br /><br />Foxit reader: [다운로드](https://www.foxitsoftware.com/pdf-reader/)|
+|Windows 10 이전 버전<br />Windows 7 서비스 팩 1을 통해|Adobe Acrobat Reader(기본 설정):<br />-  1. [Adobe 일반 사용 약관](https://www.adobe.com/legal/terms.html) 참고 <br />- 2. [Adobe 사이트](https://www.adobe.com/)에서 Adobe Reader 설치<br />- 3. [Adobe 플러그 인](https://go.microsoft.com/fwlink/?linkid=2050049) 설치<br />- 4. 메시지가 표시되면 관리자에게 [플러그 인 권한 부여](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/General-Availability-of-Adobe-Acrobat-Reader-integration-with/ba-p/298396) 요청 <br /><br /> Azure Information Protection 뷰어: [다운로드](https://go.microsoft.com/fwlink/?linkid=838993)<br /><br />Foxit 리더: [다운로드](https://www.foxitsoftware.com/pdf-reader/)|
 |Android|Azure Information Protection 앱: [다운로드](https://go.microsoft.com/fwlink/?LinkId=325340)|
 |iOS|Azure Information Protection 앱: [다운로드](https://go.microsoft.com/fwlink/?LinkId=325338)|
 

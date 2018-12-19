@@ -4,22 +4,22 @@ description: 조직에서 이 정보 보호 솔루션을 지원하는 응용 프
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/06/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: f8707e01-b239-4d1a-a1ea-0d1cf9a8d214
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0642dcf6b2d8db1921cd2c5d4d662a36e8f78ead
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 4eb4b477091990bfff036288cf2d33795bafeb3d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149398"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305440"
 ---
 # <a name="activating-azure-rights-management"></a>Azure 권한 관리 활성화
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
 > 이 구성 정보는 조직의 모든 사용자에게 적용되는 서비스를 담당하는 관리자를 위해 작성되었습니다. 특정 응용 프로그램용 Rights Management 기능을 사용하기 위한 사용자 도움말 및 정보 또는 권한으로 보호된 파일 또는 메일을 여는 방법에 대한 정보를 원하는 경우 응용 프로그램을 함께 제공되는 지침 및 도움말을 사용하세요.
@@ -35,9 +35,9 @@ Azure Information Protection용 Azure Rights Management 서비스가 조직에 �
 
 Azure Rights Management가 포함된 서비스 계획을 가지고 있는 경우, 서비스를 활성화하지 않아도 됩니다.
 
-- **Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 2018년 2월 말경 또는 그 이후에 얻은 경우:** 서비스가 자동으로 활성화됩니다. 사용자 또는 조직의 다른 전역 관리자가 Azure Rights Management를 비활성하지 않으면 서비스를 활성화할 필요가 없습니다.
+- **Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 2018년 2월 말경이나 이후에 얻은 경우:** 서비스가 자동으로 활성화됩니다. 사용자 또는 조직의 다른 전역 관리자가 Azure Rights Management를 비활성하지 않으면 서비스를 활성화할 필요가 없습니다.
 
-- **Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 2018년 2월 이전 또는 2월 중에 얻은 경우:** 테넌트가 Exchange Online을 사용하는 경우 Microsoft에서 이러한 구독에 대해 Azure Rights Management 서비스를 활성화하기 시작합니다. 이러한 구독의 경우 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)을 실행할 때 **AutomaticServiceUpdateEnabled**가 **false**로 설정되지 않는 한 서비스가 활성화될 때 2018년 8월 1일에 자동 활성화가 롤아웃되기 시작합니다. 
+- **Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 2018년 2월 전이나 그 중에 얻은 경우:** 테넌트가 Exchange Online을 사용하는 경우 Microsoft에서는 이러한 구독에 대해 Azure Rights Management 서비스를 활성화하기 시작합니다. 이러한 구독의 경우 [Get-IRMConfiguration](/powershell/module/exchange/encryption-and-certificates/get-irmconfiguration?view=exchange-ps)을 실행할 때 **AutomaticServiceUpdateEnabled**가 **false**로 설정되지 않는 한 서비스가 활성화될 때 2018년 8월 1일에 자동 활성화가 롤아웃되기 시작합니다. 
 
 후속 시나리오 중 어느 것도 적용되지 않는 경우 보호 서비스를 수동으로 활성화해야 합니다. 
 
@@ -48,11 +48,11 @@ Azure Rights Management가 포함된 서비스 계획을 가지고 있는 경우
 > [!IMPORTANT]
 > 조직에서 사용하도록 AD RMS(Active Directory Rights Management Services)를 배포한 경우 Azure Rights Management 서비스를 활성화하지 마세요. [추가 정보](prepare-environment-adrms.md)
 
-이 데이터 보호 솔루션을 사용하려면 조직에 Azure Information Protection에서 Azure Rights Management 서비스가 포함된 서비스 계획이 있어야 합니다. 이렇게 하지 않으면 Azure Rights Management 서비스는 활성화할 수 없습니다. 다음 중 하나가 있어야 합니다.
+이 데이터 보호 솔루션을 사용하려면 조직에 Azure Information Protection에서 Azure Rights Management 서비스가 포함된 서비스 계획이 있어야 합니다. 이 계획이 없으면 Azure Rights Management 서비스를 활성화할 수 없습니다. 다음 중 하나가 있어야 합니다.
 
 - [Azure Information Protection 요금제](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 
 
-- [Rights Management가 포함된 Office 365 요금제](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
+- [Rights Management가 포함된 Office 365 요금제](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf).
 
 Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자가 해당 문서 및 메일에 정보 보호를 적용할 수 있으며, 모든 사용자가 Azure Rights Management 서비스로 보호되는 문서 및 메일을 열거나 사용할 수 있습니다. 하지만 원하는 경우 단계적 배포용 등록 컨트롤을 사용하여 정보 보호를 적용할 수 있는 사용자를 제한할 수 있습니다. 자세한 내용은 이 문서에서 [단계별 배포용 온보딩 컨트롤 구성](#configuring-onboarding-controls-for-a-phased-deployment) 섹션을 참조하세요.
 
@@ -75,12 +75,12 @@ Azure Rights Management 서비스가 활성화되면 조직의 모든 사용자�
 4. 서비스를 활성화하려면 [Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)을 실행합니다.
 
 ## <a name="configuring-onboarding-controls-for-a-phased-deployment"></a>단계적 배포용 등록 컨트롤 구성
-일부 사용자만 Azure Rights Management를 사용하여 즉시 문서 및 메일을 보호할 수 있게 하려면 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 명령을 사용하여 사용자 온보딩 컨트롤을 구성할 수 있습니다. Azure Rights Management 서비스를 활성화하기 전이나 후에 이 명령을 실행할 수 있습니다.
+일부 사용자만 Azure Rights Management를 사용하여 즉시 문서 및 이메일을 보호할 수 있게 하려면 [Set-AadrmOnboardingControlPolicy](/powershell/module/aadrm/set-aadrmonboardingcontrolpolicy) PowerShell 명령을 사용하여 사용자 온보딩 컨트롤을 구성할 수 있습니다. Azure Rights Management 서비스를 활성화하기 전이나 후에 이 명령을 실행할 수 있습니다.
 
 > [!IMPORTANT]
-> 이 명령을 사용하려면 **2.1.0.0** 버전 이상의 [Azure Rights Management PowerShell 모듈](https://go.microsoft.com/fwlink/?LinkId=257721)이 있어야 합니다.
+> 이 명령을 사용하려면 **2.1.0.0** 버전 이상의 [Azure Rights Management PowerShell 모듈](https://www.powershellgallery.com/packages/AADRM)이 있어야 합니다.
 >
-> 설치한 버전을 확인하려면 다음을 실행합니다. **(Get-Module aadrm –ListAvailable).Version**
+> 설치한 버전을 확인하려면 다음을 실행하세요. **(Get-Module aadrm –ListAvailable).Version**
 
 예를 들어 초기에 개체 ID가 fbb99ded-32a0-45f1-b038-38b519009503인 "IT 부서" 그룹의 관리자만 테스트 목적으로 콘텐츠를 보호할 수 있도록 하려면 다음 명령을 사용합니다.
 

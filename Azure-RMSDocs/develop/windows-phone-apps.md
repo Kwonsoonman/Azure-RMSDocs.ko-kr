@@ -1,28 +1,28 @@
 ---
 title: Windows Phone 설정 | Azure RMS
-description: Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+description: Windows Phone 애플리케이션에서 Microsoft Rights Management SDK 4.2를 통해 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: e25a446e-b977-4736-9c65-7711171fb0e1
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 50480fef2983f715a54b68ae1b21dbcf28e9b554
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 2c85449615fd0db5f88c452031cbc5b837cb0f82
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151506"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266395"
 ---
 # <a name="windows-phone-setup"></a>Windows Phone 설정
 
 
-Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+Windows Phone 애플리케이션에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 
 이 항목에서는 새 앱을 만들기 위한 환경을 설정하는 과정을 안내합니다.
 
@@ -35,11 +35,11 @@ Windows Phone 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 �
 
 개발 시스템에 다음 소프트웨어가 있어야 합니다.
 
--   [Windows 8.1](http://windows.microsoft.com/en-US/windows-8/meet) 운영 체제
--   [Windows Phone 8.1 개발 도구(SDK)](http://dev.windowsphone.com/en-us/downloadsdk)
--   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) 이상 또는 Windows Phone SDK 8.0/8.1에 포함되어 있는 Visual Studio Express 2012
+-   [Windows 8.1](https://windows.microsoft.com/windows-8/meet) 운영 체제
+-   [Windows Phone 8.1 개발 도구(SDK)](https://developer.microsoft.com/windows/downloads/sdk-archive)
+-   Microsoft [Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/) 이상 또는 Windows Phone SDK 8.0/8.1에 포함되어 있는 Visual Studio Express 2012
 -   Windows Phone용 MS RMS SDK 4.2 패키지. 자세한 내용은 [시작](get-started.md)을 참조하세요.
--   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/library/jj573266.aspx)를 사용하는 것이 좋으며 다른 인증 라이브러리를 사용할 수도 있습니다.
+-   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/library/jj573266.aspx)를 사용하는 것이 좋지만 다른 인증 라이브러리를 사용할 수도 있습니다.
 
 API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
@@ -79,6 +79,6 @@ Windows Phone 개발자 센터에서 [Windows Phone 개발](https://msdn.microso
 
 [Windows API 참조](https://msdn.microsoft.com/library/dn891914.aspx)
 
-[Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
+[Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/)
 
-[Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)
+[Windows Phone SDK](https://developer.microsoft.com/windows/downloads/sdk-archive)

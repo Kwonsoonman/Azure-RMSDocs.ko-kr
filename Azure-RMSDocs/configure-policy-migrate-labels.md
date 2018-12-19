@@ -9,16 +9,16 @@ ms.topic: article
 ms.service: information-protection
 ms.reviewer: demizets
 ms.suite: ems
-ms.openlocfilehash: be48797931dc0e8c76f29094715df37d6488f800
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 84f3aa3cc5dc7955056c98a957fa5d307340da1d
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024011"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174134"
 ---
 # <a name="how-to-migrate-azure-information-protection-labels-to-the-office-365-security--compliance-center"></a>Azure Information Protection 레이블을 Office 365 보안 및 준수 센터로 마이그레이션하는 방법
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > 이 기능은 미리 보기로 제공되며, 테넌트를 역시 미리 보기로 제공되는 새로운 플랫폼으로 마이그레이션합니다. 이 마이그레이션은 되돌릴 수 없습니다. 새 플랫폼은 통합 레이블 지정을 지원하므로 만들어 관리하는 레이블을 여러 클라이언트 및 서비스에서 사용할 수 있습니다.
@@ -76,15 +76,15 @@ Azure Information Protection 클라이언트는 Azure Portal에서 레이블을 
 
 |레이블 구성|통합 레이블 지정 클라이언트가 지원함|보안 및 준수 센터에서 편집하지 않도록 제외|
 |-------------------|---------------------------------------------|-------------------------|
-|사용 또는 사용 안 함 상태<br /><br />참고: 보안 및 준수 센터에 동기화되지 않음 |해당 없음|해당 없음|
-|레이블 색상: 목록에서 선택하거나 RGB 코드를 사용하여 지정합니다.<br /><br />참고: 레이블 색은 보안 및 준수 센터에서 지원되지 않습니다. |해당 없음|해당 없음|
+|사용 또는 사용 안 함 상태<br /><br />참고: 보안 및 규정 준수 센터에 동기화되지 않음 |해당 없음|해당 없음|
+|레이블 색상: 목록에서 선택하거나 RGB 코드를 사용하여 지정<br /><br />참고: 레이블 색상은 보안 및 규정 준수 센터에서 지원되지 않음 |해당 없음|해당 없음|
 |미리 정의된 템플릿을 사용하는 클라우드 기반 보호 또는 HYOK 기반 보호 |아니요|예|
 |Word, Excel 및 PowerPoint에서 사용자 정의 권한을 사용하는 클라우드 기반 보호 |아니요|예|
 |전달 금지에 대한 Outlook의 사용자 정의 권한을 사용하는 HYOK 기반 보호 |아니요|예|
 |보호 제거 |아니요|예|
-|시각적 표시(머리글, 바닥글, 워터마크): RGB 코드별 사용자 지정 글꼴 및 사용자 지정 글꼴 색|아니요|변수를 사용하는 경우 권장됩니다.<br /><br />- 클라이언트에서 변수는 동적 값을 표시하지 않고 텍스트로 표시됩니다.|
+|시각적 표시(머리글, 바닥글, 워터마크): 사용자 지정 글꼴 및 RGB 코드별 사용자 지정 글꼴 색|아니요|변수를 사용하는 경우 권장됩니다.<br /><br />- 클라이언트에서 변수는 동적 값을 표시하지 않고 텍스트로 표시됩니다.|
 |앱별 시각적 표시|아니요|변수를 사용하는 경우 권장됩니다.<br /><br />- 클라이언트에서 변수는 동적 값을 표시하지 않고 텍스트로 표시됩니다.|
-|조건 및 관련 설정 <br /><br />참고: 자동 및 권장 레이블과 해당 도구 설명을 포함합니다.|해당 없음|아니요|
+|조건 및 관련 설정 <br /><br />참고: 자동 및 권장 레이블과 해당 도구 설명 포함|해당 없음|아니요|
 
 
 ## <a name="to-migrate-azure-information-protection-labels"></a>Azure Information Protection 레이블을 마이그레이션하려면
@@ -117,4 +117,4 @@ Azure Information Protection 클라이언트는 Azure Portal에서 레이블을 
 
 이제 Office 365 보안 및 준수 센터에서 구성 및 게시할 수 있는 마이그레이션된 레이블에 대한 자세한 내용은 [민감도 레이블 개요](/Office365/SecurityCompliance/sensitivity-labels)를 참조하세요.
 
-발표 블로그 게시물 [Announcing the availability of unified labeling management in the Security & Compliance Center](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)(보안 및 준수 센터에서 사용 가능한 통합 레이블 지정 관리 발표)를 읽어보세요.
+공지 블로그 게시물을 읽으려면: [보안 및 규정 준수 센터에서 사용 가능한 통합 레이블 지정 관리 공지](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-the-availability-of-unified-labeling-management-in/ba-p/262492)를 참조하세요.

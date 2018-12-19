@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: b3a7127b-6d24-4439-bc4e-2a0a325e8ea3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 96746e39d564c87471205fa442976a3904ddf992
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: e6586c60934bf0db48295c3d9a7a40ece84f4ad2
+ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023824"
+ms.locfileid: "53068863"
 ---
 # <a name="compliance-and-supporting-information-for-azureinformation-protection"></a>Azure Information Protection에 대한 규정 준수 및 지원 정보
 
@@ -39,15 +39,15 @@ Azure Information Protection은 다른 서비스를 지원하는 동시에 다�
 
 ## <a name="legal-and-privacy"></a>법적 정보 및 개인 정보 보호
 
-- Microsoft Azure 계약 정보: [Microsoft Azure 계약](http://azure.microsoft.com/support/legal/subscription-agreement/)
+- Microsoft Azure 계약 정보: [Microsoft Azure 계약](https://azure.microsoft.com/support/legal/subscription-agreement/)
 
-- Microsoft Azure 개인 정보 보호: [Microsoft Azure 개인정보처리방침](http://azure.microsoft.com/support/legal/privacy-statement/)
+- Microsoft Azure 개인 정보 보호: [Microsoft Azure 개인정보처리방침](https://azure.microsoft.com/support/legal/privacy-statement/)
 
 ## <a name="security-compliance-and-auditing"></a>보안, 규정 준수 및 감사
 
 Azure Rights Management 서비스의 특정 인증에 대한 자세한 내용은 [Azure RMS를 통해 해결할 수 있는 문제](./azure-rms-problems-it-solves.md) 문서의 [보안, 준수 및 규정 요구 사항](./what-is-azure-rms.md#security-compliance-and-regulatory-requirements) 섹션을 참조하세요. 또한,
 
-- Azure Information Protection 외부 인증: [Microsoft Azure 보안 센터](http://azure.microsoft.com/support/trust-center/)
+- Azure Information Protection 외부 인증: [Microsoft Azure 보안 센터](https://azure.microsoft.com/support/trust-center/)
 
 - FIPS 140 정보: [FIPS 140 유효성 검사](https://technet.microsoft.com/library/security/cc750357.aspx)
 
@@ -63,7 +63,7 @@ Azure Rights Management 서비스의 특정 인증에 대한 자세한 내용은
 
 ## <a name="documentation"></a>문서
 
-- Azure Active Directory 설명서: [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
+- Azure Active Directory 설명서: [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 
 - Office 365 Enterprise 설명서: [Office 365](https://docs.microsoft.com/en-us/Office365/Enterprise/)
 

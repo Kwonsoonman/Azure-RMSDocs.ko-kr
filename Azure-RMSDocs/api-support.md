@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: c50a8cbb-d12f-4a0e-bc29-74c463e6ac3e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: a84ea42c2260e213ef15159f76d26a08aeded49f
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: cc0977bab0bccf5a652fd0af13e1abe1f8e81e27
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146457"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53172825"
 ---
 # <a name="other-applications-that-support-the-rights-management-apis"></a>Rights Management API를 지원하는 다른 응용 프로그램
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 정보를 통해 Azure Information Protection의 Azure Rights Management 서비스에서 다른 응용 프로그램을 지원하여 조직의 데이터를 보호하는 방법을 파악합니다.
 

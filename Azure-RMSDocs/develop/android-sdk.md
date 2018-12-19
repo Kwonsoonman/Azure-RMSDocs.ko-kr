@@ -1,6 +1,6 @@
 ---
 title: Android 설정 | Azure RMS
-description: Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+description: Android 애플리케이션에서 Microsoft Rights Management SDK 4.2를 통해 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -12,16 +12,16 @@ ms.assetid: 986f6932-159b-4791-bd1a-7640a83ee792
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: d6a851cc5568b14b1f18ad71169b2c0e6efc136b
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 242700c089e34bc69eef10a45ea761f9668f4a42
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147528"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266650"
 ---
 # <a name="android-setup"></a>Android 설정
 
-Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+Android 애플리케이션에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 
 이 항목에서는 새 앱을 만들기 위한 환경을 설정하는 과정을 안내합니다.
 
@@ -34,12 +34,12 @@ Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 
 
 다음 소프트웨어는 개발 시스템에서 사용하는 것이 좋습니다.
 
--   [Eclipse](http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html) 개발 환경을 실행할 Windows 또는 OS X 운영 체제.
+-   [Eclipse](https://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html) 개발 환경을 실행할 Windows 또는 OS X 운영 체제.
 -   이 가이드에서는 Eclipse Juno 4.2 이상의 Eclipse SDK 및 기본 설치를 사용한다고 가정합니다.
 -   Java 1.6 이상의 Java
--   [ADT(Android 개발자 도구) 플러그 인](http://developer.android.com/sdk/installing/index.html) 참고 - 설치를 완료하려면 Eclipse를 다시 시작하라는 메시지가 표시될 수도 있습니다.
+-   [ADT(Android 개발자 도구) 플러그 인](https://developer.android.com/studio/install) 참고 - 설치를 완료하려면 Eclipse를 다시 시작하라는 메시지가 표시될 수도 있습니다.
 
-     
+     
 
 -   Android용 MS RMS SDK 4.2 패키지. 자세한 내용은 [시작](get-started.md)을 참조하세요.
 
@@ -49,9 +49,9 @@ Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 
 
     자세한 내용은 [Android용 ADAL](https://github.com/MSOpenTech/azure-activedirectory-library-for-android)을 참조하세요.
 
-    **참고** 응용 프로그램에서 ADAL 라이브러리를 OAuth 2.0 인증 라이브러리로 사용하지 않는 경우 Android 지침인 [일부 SecureRandom 아이디어](http://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)를 검토해야 합니다.
+    **참고**  애플리케이션에서 ADAL 라이브러리를 OAuth 2.0 인증 라이브러리로 사용하지 않는 경우 Android 지침인 [일부 SecureRandom 아이디어](https://android-developers.blogspot.com/2013/08/some-securerandom-thoughts.html)를 검토해야 합니다.
 
-     
+     
 
 API 업데이트, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
@@ -61,9 +61,9 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 ## <a name="configuring-your-development-environment"></a>개발 환경 구성
 
-**참고** MS RMS SDK 4.2 미리 보기 릴리스: 이 미리 보기 릴리스에서는 스크린샷이 com/microsoft/protection에서 com/microsoft/rightsmanagment로의 경로 이름 변경을 표시하도록 업데이트되지 않았습니다. 하지만 텍스트는 업데이트되었습니다.
+**참고**  MS RMS SDK 4.2 미리 보기 릴리스: 이 미리 보기 릴리스에서는 스크린샷이 com/microsoft/protection에서 com/microsoft/rightsmanagment로 경로 이름 변경을 표시하도록 업데이트되지 않았습니다. 하지만 텍스트는 업데이트되었습니다.
 
- 
+ 
 -   Eclipse 개발 환경을 엽니다.
 -   새 Android 응용 프로그램 프로젝트를 만들려면 **File** 메뉴에서 **New**를 클릭하고 **Project**를 클릭한 다음 **Android Application Project**를 선택합니다.
 
@@ -117,7 +117,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 -   **확인**을 클릭합니다.
 
-    MS RMS SDK 4.2는 AAD RM에 연결하기 때문에 응용 프로그램에 **INTERNET** 및 **ACCESS\_NETWORK\_STATE** 권한을 부여해야 합니다. 이렇게 하려면 프로젝트 루트에 있는 *AndroidManifest.xml* 파일을 엽니다.
+    MS RMS SDK 4.2는 AAD RM에 연결하기 때문에 애플리케이션에 **INTERNET** 및 **ACCESS\_NETWORK\_STATE** 권한을 부여해야 합니다. 이렇게 하려면 프로젝트 루트에 있는 *AndroidManifest.xml* 파일을 엽니다.
 
     사용 권한을 추가하려면 **Add**를 클릭하고 **Uses Permissions**를 선택합니다.
 
@@ -134,7 +134,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
     <uses-permission/>
    ```
 
-**참고** SDK는 *android.support.v4*를 사용합니다.
+**참고**  SDK는 *android.support.v4* 사용
 
 -   이제 새 Android 앱을 만들 준비가 되었습니다.
 

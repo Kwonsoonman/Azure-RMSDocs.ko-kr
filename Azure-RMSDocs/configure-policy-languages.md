@@ -4,16 +4,16 @@ description: Azure Information Protection 정책에서 언어를 지정하고 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a0e89fd0-795b-4e7a-aea9-ff6fc9163bde
-ms.openlocfilehash: 489850c6311fae95d92fa4cbf88441f1a57da150
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 4c9bc0f8e09b71637b5b731d8e7236bbd8e1fc27
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023382"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305407"
 ---
 # <a name="how-to-configure-labels-and-templates-for-different-languages-in-azure-information-protection"></a>Azure Information Protection에서 다른 언어에 대한 레이블 및 템플릿을 구성하는 방법
 
@@ -43,7 +43,7 @@ Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어�
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. **관리** > **언어** 메뉴 옵션에서: **Azure Information Protection - 언어** 블레이드에서 **번역할 새 언어 추가**를 선택합니다. 추가할 언어를 선택한 다음 **확인**을 선택합니다. 검색 상자에 언어 이름을 입력하거나 사용 가능한 언어 목록을 스크롤할 수 있습니다.
+2. **관리** > **언어** 메뉴 옵션: **Azure Information Protection - 언어** 블레이드에서 **번역할 새 언어 추가**를 선택합니다. 추가할 언어를 선택한 다음 **확인**을 선택합니다. 검색 상자에 언어 이름을 입력하거나 사용 가능한 언어 목록을 스크롤할 수 있습니다.
 
 3. 이제 **Azure Information Protection - 언어** 블레이드에 선택한 언어가 표시됩니다.
     
@@ -60,7 +60,7 @@ Office 및 Windows에 대한 사용자의 언어 설정과 일치하는 언어�
 
 5. **exported localization.zip**에서 파일 압축을 풀면 다운로드하기 위해 선택한 각 언어에 대해 .xml 파일이 생성됩니다. 
 
-6. 각 .xml 파일을 편집합니다. `<LocalizedText>` 태그 내의 각 문자열에 대해 선택한 각 언어의 원하는 번역을 제공합니다. 
+6. 각.xml 파일 편집: `<LocalizedText>` 태그 내의 각 문자열에 대해 선택한 각 언어의 원하는 번역을 제공합니다. 
 
 7. 각 .xml 파일을 편집한 경우 이러한 파일이 포함된 새 압축(zip) 폴더를 만듭니다. 압축한 폴더에는 이름을 지정할 수 이지만 확장명은 .zip이어야 합니다.
 

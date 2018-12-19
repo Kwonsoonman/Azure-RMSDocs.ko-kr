@@ -4,20 +4,20 @@ description: 문서와 전자 메일을 분류하고 보호할 수 있도록 Win
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2bf09690-9dba-43b7-9e0a-0110915d4081
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: be7ae3dd29034813e9b0b4475407f68c8685c167
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: d45c13a0cf3c7725c5b817339e9aadec96f27477
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147930"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305229"
 ---
-# <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트를 다운로드 및 설치
+# <a name="user-guide-download-and-install-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트 다운로드 및 설치
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
 

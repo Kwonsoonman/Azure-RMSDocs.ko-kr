@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: afbca2d6-32a7-4bda-8aaf-9f93f5da5abc
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: abbb7e5af52952dc3ed69f2825a8e32d25ab9982
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: e5717d83ece5f188476c0f7bca677088aa4373ae
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024104"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173879"
 ---
 # <a name="preparing-users-and-groups-for-azure-information-protection"></a>Azure Information Protection을 위한 사용자 및 그룹 준비
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 조직에 Azure Information Protection을 배포하기 전에 조직에 있는 테넌트의 Azure AD에 사용자 및 그룹 계정이 있는지 확인합니다.
 
@@ -73,7 +73,7 @@ Azure Rights Management 서비스를 사용하여 문서 및 메일을 보호할
     
     도메인이 테넌트에 추가되어 있으면("확인된 도메인") Azure Information Protection에서 이 Azure AD proxyAddresses 특성에 있는 모든 값을 사용할 수 있습니다. 도메인 확인에 대한 자세한 내용은 다음을 참조하십시오.
     
-    - Azure AD: [Azure Active Directory에 사용자 지정 도메인 이름 추가](/azure/active-directory/fundamentals/add-custom-domain)
+    - Azure AD의 경우: [Azure Active Directory에 사용자 지정 도메인 이름 추가](/azure/active-directory/fundamentals/add-custom-domain)
 
     - Office 365의 경우: [Office 365에 도메인 추가](/office365/admin/setup/add-domain?view=o365-worldwide)
 
@@ -113,7 +113,7 @@ Azure Rights Management 서비스를 구성하는 경우:
 
 ## <a name="using-accounts-from-active-directory-on-premises-for-azure-information-protection"></a>Azure Information Protection에 대해 Active Directory 온-프레미스의 계정 사용
 
-온-프레미스에서 관리되며 Azure Information Protection에 사용할 계정이 있는 경우에는 해당 계정을 Azure AD로 동기화해야 합니다. 쉬운 배포를 위해서는 [Azure AD Connect](/azure/active-directory/connect/active-directory-aadconnect)를 사용할 것을 권장합니다. 그러나 같은 결과를 달성하는 모든 디렉터리 동기화 방법을 사용할 수 있습니다.
+온-프레미스에서 관리되며 Azure Information Protection에 사용할 계정이 있는 경우에는 해당 계정을 Azure AD로 동기화해야 합니다. 쉬운 배포를 위해서는 [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)를 사용할 것을 권장합니다. 그러나 같은 결과를 달성하는 모든 디렉터리 동기화 방법을 사용할 수 있습니다.
 
 계정을 동기화할 때 모든 특성을 동기화할 필요는 없습니다. 동기화해야 하는 특성 목록은 Azure Active Directory 설명서에서 [Azure RMS 섹션](/azure/active-directory/connect/active-directory-aadconnectsync-attributes-synchronized#azure-rms)을 참조하세요.
 
@@ -128,7 +128,7 @@ Azure AD PowerShell을 사용하여 사용자 및 그룹을 Azure Information Pr
     Connect-MsolService
 
 
-참고: 이 명령을 사용할 수 없을 경우 `Install-Module MSOnline`을 실행하여 MSOnline 모듈을 설치할 수 있습니다.
+참고: 이 명령이 작동하지 않는 경우 `Install-Module MSOnline`을 실행하여 MSOnline 모듈을 설치할 수 있습니다.
 
 다음으로는 PowerShell 세션에서 값을 자르지 않도록 구성합니다.
 
@@ -207,9 +207,9 @@ Azure Information Protection에 사용할 그룹이 표시되어 있는지 확�
 
 사용자와 그룹을 Azure Information Protection에 사용할 수 있는 것을 확인하고 문서 및 이메일 보호를 시작할 준비가 되면, Azure Rights Management 서비스를 활성화해야 하는지 여부를 학인합니다. 조직의 문서 및 이메일을 보호하려면 먼저 이 서비스를 활성화해야 합니다. 
 
-- 2018년 2월부터: 이달 또는 그 이후에 Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 얻은 경우 서비스가 자동으로 활성화됩니다. 
+- 2018년 2월부터: Azure Rights Management 또는 Azure Information Protection이 포함된 구독을 2월 중 또는 그 이후에 얻은 경우 서비스가 자동으로 활성화됩니다. 
 
-- 2018년 2월 이전에 구독을 얻은 경우에는, 직접 서비스를 활성화해야 합니다. 
+- 2018년 2월 전에 구독을 얻은 경우: 직접 서비스를 활성화해야 합니다. 
 
 활성화 상태 확인을 포함한 자세한 내용은, [Azure Rights Management 활성화](./activate-service.md)를 참조하세요.
 

@@ -4,22 +4,22 @@ description: Azure Information Protection의 Azure Rights Management 서비스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/23/2018
-ms.topic: article
+ms.date: 12/12/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0d665ed6-b1de-4d63-854a-bc57c1c49844
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 5fe03b296020e28234e439f634074746ff1bd677
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 8809524c197321840016e2db4347b0c37154e352
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808885"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305355"
 ---
 # <a name="installing-the-aadrm-powershell-module"></a>AADRM PowerShell 모듈 설치
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 정보를 통해 Azure Information Protection의 Azure Rights Management 서비스에 대한 Windows PowerShell 모듈을 설치할 수 있습니다. 이 모듈의 이름은 AADRM입니다.
 
@@ -30,8 +30,8 @@ ms.locfileid: "42808885"
 
 |요구 사항|추가 정보|
 |---------------|--------------------|
-|최소 Windows PowerShell 버전: 3.0|PowerShell 세션에서 `$PSVersionTable`을 입력하면 실행 중인 Windows PowerShell 버전을 확인할 수 있습니다. <br /><br /> Windows PowerShell의 최신 버전을 설치해야 할 경우 [기존 Windows PowerShell 업그레이드](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)를 참조하세요.|
-|최소 Microsoft .NET Framework 버전: 4.5<br /><br />참고: 이 버전의 Microsoft .NET Framework는 최신 운영 체제에 포함되어 있으므로 클라이언트 운영 체제가 Windows 8.0보다 낮거나 서버 운영 체제가 Windows Server 2012보다 낮은 경우에만 수동으로 설치해야 합니다.|Microsoft .NET Framework의 최소 버전을 아직 설치하지 않은 경우 [Microsoft .NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)를 다운로드할 수 있습니다.<br /><br />AADRM 모듈이 사용하는 일부 클래스에는 이 Mrciosoft .NET Framework의 최소 버전이 필요합니다.|
+|최소 Windows PowerShell 버전: 3.0|PowerShell 세션에 `$PSVersionTable`을 입력하면 실행 중인 Windows PowerShell 버전을 확인할 수 있습니다. <br /><br /> Windows PowerShell의 최신 버전을 설치해야 할 경우 [기존 Windows PowerShell 업그레이드](/powershell/scripting/setup/installing-windows-powershell#upgrading-existing-windows-powershell)를 참조하세요.|
+|최소 Microsoft .NET Framework 버전: 4.5<br /><br />참고: 이 버전의 Microsoft .NET Framework는 최신 운영 체제에 포함되어 있으므로 클라이언트 운영 체제가 Windows 8.0보다 낮거나 서버 운영 체제가 Windows Server 2012보다 낮은 경우에만 수동으로 설치해야 합니다.|Microsoft .NET Framework의 최소 버전을 아직 설치하지 않은 경우 [Microsoft .NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653)를 다운로드할 수 있습니다.<br /><br />AADRM 모듈이 사용하는 일부 클래스에는 이 Mrciosoft .NET Framework의 최소 버전이 필요합니다.|
 
 AADRM 모듈의 2.5.0.0 버전부터는 Microsoft Online Services 로그인 도우미가 더 이상 필요하지 않습니다.
 
@@ -68,7 +68,7 @@ Windows PowerShell 세션에서 설치된 모듈의 버전을 확인합니다. �
 (Get-Module AADRM –ListAvailable).Version
 ```
 
-참고: 이 명령이 실패하는 경우 먼저 **Import-module AADRM**을 실행합니다.
+참고: 이 명령이 실패하는 경우 먼저 **Import-Module AADRM**을 실행합니다.
 
 사용할 수 있는 cmdlet을 보려면 다음을 입력합니다.
 

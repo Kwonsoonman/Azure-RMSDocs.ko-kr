@@ -4,18 +4,18 @@ description: Azure RMS(Rights Management) 커넥터를 사용할 온-프레미�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/05/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 75846ee1-2370-4360-81ad-e2b6afe3ebc9
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e66b4941cdfa86fbb1dcfe8593b39b59eb45ed9e
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 606ca10f04ad9fa21d90fdf4bfcbc368db6febb1
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024130"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305627"
 ---
 # <a name="configuring-servers-for-the-azure-rights-management-connector"></a>Azure 권한 관리 커넥터에 대해 서버 구성
 
@@ -36,9 +36,9 @@ RMS 커넥터를 설치 및 구성했으면 커넥터를 통해 Azure Rights Man
 
 -   **SharePoint의 경우**: 중앙 관리 서버를 호스트하는 서버를 비롯한 프런트 엔드 SharePoint 웹 서버
 
--   **파일 분류 인프라**: 파일 리소스 관리자를 설치한 Windows Server 컴퓨터
+-   **파일 분류 인프라의 경우**: 파일 리소스 관리자를 설치한 Windows Server 컴퓨터
 
-이 구성에는 레지스트리 설정이 필요합니다. 이 작업을 수행하는 방법에는 Microsoft RMS 커넥터용 서버 구성 도구를 사용하여 자동으로 또는 레지스트리를 편집하여 수동으로 수행하는 두 가지 옵션이 있습니다.
+이 구성에는 레지스트리 설정이 필요합니다. 레지스트리를 설정하는 옵션은 다음과 같은 두 가지가 있습니다. Microsoft RMS 커넥터용 서버 구성 도구를 사용하여 자동으로 또는 레지스트리를 편집하여 수동으로.
 
 ---
 
@@ -90,9 +90,9 @@ RMS 커넥터를 설치 및 구성했으면 커넥터를 통해 Azure Rights Man
 
 3.  도구 실행 방법을 결정합니다.
 
-    -   **로컬로**: 이 도구는 RMS 커넥터와 통신하도록 구성할 서버에서 대화형으로 실행할 수 있습니다. 이 방법은 테스트 환경과 같은 일회성 구성에 유용합니다.
+    -   **로컬**: 이 도구는 RMS 커넥터와 통신하도록 구성할 서버에서 대화형으로 실행할 수 있습니다. 이 방법은 테스트 환경과 같은 일회성 구성에 유용합니다.
 
-    -   **소프트웨어 배포**: 도구를 실행하고 소프트웨어 배포를 지원하는 시스템 관리 응용 프로그램(예: System Center Configuration Manager)을 사용하여 하나 이상의 관련 서버에 배포할 레지스트리 파일을 생성할 수 있습니다.
+    -   **소프트웨어 배포**: 도구를 실행하고 소프트웨어 배포를 지원하는 시스템 관리 애플리케이션(예: System Center Configuration Manager)을 사용하여 하나 이상의 관련 서버에 배포할 레지스트리 파일을 생성할 수 있습니다.
 
     -   **그룹 정책**: 도구를 실행하여 구성할 서버의 그룹 정책 개체를 만들 수 있는 관리자에게 제공할 스크립트를 생성할 수 있습니다. 이 스크립트는 구성할 각 서버 유형에 대해 하나의 그룹 정책 개체를 만들며, 관리자는 이 개체를 관련 서버에 할당할 수 있습니다.
 

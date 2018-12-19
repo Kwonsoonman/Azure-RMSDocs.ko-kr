@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: 2efcb440-fefd-45e9-872b-f471573aadf2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 40cc70864d68b4bdcc1081f908539663ba8366a8
-ms.sourcegitcommit: d969a82dc801f3d653163de2b18a3a772607b74c
+ms.openlocfilehash: 72735ea07a00f37377bbbab781c03c4516f032de
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915566"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173794"
 ---
 # <a name="rms-for-individuals-and-azure-information-protection"></a>개인용 RMS 및 Azure Information Protection
 
@@ -43,7 +43,7 @@ ms.locfileid: "50915566"
 
 3. **로그인**을 클릭합니다.
 
-    Microsoft는 이메일 주소를 사용하여 조직에서 이미 [Azure Information Protection Premium을 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)하거나 [Azure Information Protection을 사용하여 데이터 보호 기능이 포함된 Office 365를 구독](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)하는지 확인합니다. 이러한 구독 중 하나가 있는 경우 개인용 RMS는 필요하지 않습니다. 즉시 로그인되고 개인용 RMS에 대한 셀프 서비스 등록이 취소됩니다. 이러한 구독이 없는 경우 다음 단계를 진행합니다.
+    Microsoft는 이메일 주소를 사용하여 조직에서 이미 [Azure Information Protection Premium을 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing)하거나 [Azure Information Protection을 사용하여 데이터 보호 기능이 포함된 Office 365를 구독](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)하는지 확인합니다. 이러한 구독 중 하나가 있는 경우 개인용 RMS는 필요하지 않습니다. 즉시 로그인되고 개인용 RMS에 대한 셀프 서비스 등록이 취소됩니다. 이러한 구독이 없는 경우 다음 단계를 진행합니다.
 
 4. 입력한 주소로 확인 메일 메시지가 전송될 때까지 기다립니다. 이 메일은 Office 365 팀support@email.microsoftonline.com에서 보내며 제목은 **Microsoft Azure Information Protection 등록 완료**입니다.
 

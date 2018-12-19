@@ -1,6 +1,6 @@
 ---
 title: 시작 | Azure RMS
-description: RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다.
+description: RMS SDK 2.1 플랫폼을 사용하면 개발자가 RMS 정보 보호를 활용하는 애플리케이션을 빌드할 수 있습니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -12,18 +12,18 @@ ms.assetid: 728113C9-FCF9-4280-BE1D-6AF5C15E449E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 2113d408356fc80efa90838bf667712d47ce7e0f
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 43e63165fcf8c19760a9f82619a02923ba55e97e
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147341"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266344"
 ---
 # <a name="getting-started"></a>시작하기
 
 권한 관리 서비스 SDK 2.1 플랫폼을 사용하면 개발자가 RMS 서버 또는 Azure RMS를 통해 RMS 정보 보호를 활용하는 응용 프로그램을 빌드할 수 있습니다. 이 플랫폼은 키 관리, 암호화 및 암호 해독 처리와 같은 복잡한 보안 사례를 처리하고 쉬운 응용 프로그램 개발을 위해 간소화된 API를 제공합니다.
 
-## <a name="get-started-with-rms-sdk-21"></a>RMS SDK 2.1 시작
+## <a name="get-started-with-rmssdk21"></a>RMS SDK 2.1 시작
 
 이 항목에서는 테스트 환경에서 권한 사용 응용 프로그램을 설정하고 실행하는 과정을 안내합니다. 다음 항목은 개발 환경을 설정하는 방법을 설명하며, 작업을 수행하는 순서를 제안하도록 나열되어 있습니다.
 
@@ -47,9 +47,9 @@ ms.locfileid: "44147341"
 - [응용 프로그램 테스트](how-to-set-up-your-test-environment.md)
 - [프로덕션 환경에 배포](deploying-your-application.md)
 
-### <a name="why-use-rms-sdk-21-for-protecting-your-content"></a>콘텐츠를 보호하기 위해 RMS SDK 2.1을 사용하는 이유
+### <a name="why-use-rmssdk21-for-protecting-your-content"></a>콘텐츠를 보호하기 위해 RMS SDK 2.1을 사용하는 이유
 
-새 응용 프로그램과 기존 응용 프로그램에 RMS 지원을 추가하려는 개발자는 RMS SDK 2.1을 사용하여 다음 작업을 보다 쉽게 수행할 수 있습니다.
+새 애플리케이션과 기존 애플리케이션에 RMS 지원을 추가하려는 개발자는 RMS SDK 2.1을 사용하여 다음 작업을 보다 쉽게 수행할 수 있습니다.
 
 -   관리 가능하고 강력한 규격 RMS 인식 응용 프로그램을 작성합니다.
 -   사용자 데이터를 영구적으로 암호화합니다. 환경, 장치 또는 운영 체제에 관계없이 데이터가 암호화된 상태로 유지됩니다.
@@ -68,4 +68,3 @@ RMS SDK 2.1에서는 다양한 중요 클라이언트 및 서버 플랫폼을 �
 ## <a name="related-topics"></a>관련 항목
 
 * [RMS 개발자 가이드](developers-guide.md)
-* [AD RMS 개발자 코너](http://blogs.msdn.com/b/rms/)

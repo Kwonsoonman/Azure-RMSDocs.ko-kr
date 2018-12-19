@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 58f9a6ff-4121-4c8c-9865-1bb290604ad2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43bc10ce43a4ba7a26958e562c4acc6e245ad76a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 25471f9e047b4b3c1dac94cdf0856d7413de268a
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024079"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173896"
 ---
 # <a name="helping-users-to-protect-files-by-using-the-azure-rights-management-service"></a>사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 조직에 대해 Azure Information Protection을 배포 및 구성한 후에는 사용자, 관리자 및 지원 센터를 위해 도움말과 지침을 제공합니다.
 
@@ -40,7 +40,7 @@ ms.locfileid: "53024079"
     
 -   **지원 센터 정보**
     
-    사용자에게 Azure Information Protection 클라이언트가 있는 경우 지원 센터 운영자가 Office 버전에서 보호를 지원할 수 없는지 여부 및 현재 로그인한 사용자 계정과 같은 정보에 대해 **도움말 및 피드백** 옵션을 사용하도록 요청할 수 있습니다 . 이 옵션을 사용하여 로그 파일을 수집하고 클라이언트를 다시 설정할 수도 있습니다. 자세한 내용은 관리자 가이드인 [설치 검사 및 문제 해결](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)을 참조하세요.
+    사용자에게 Azure Information Protection 클라이언트가 있는 경우 지원 센터 운영자가 Office 버전에서 보호를 지원할 수 없는지 여부 및 현재 로그인한 사용자 계정과 같은 정보에 대해 **도움말 및 피드백** 옵션을 사용하도록 요청할 수 있습니다 . 이 옵션을 사용하여 로그 파일을 수집하고 클라이언트를 다시 설정할 수도 있습니다. 자세한 내용은 관리자 가이드 [설치 검사 및 문제 해결](./rms-client/client-admin-guide.md#installation-checks-and-troubleshooting)을 참조하세요.
     
     보호된 문서의 모든 액세스에 대한 합법적인 요청이 있을 경우 지원 센터는 Azure Rights Management [슈퍼 사용자 기능](configure-super-users.md)을 사용하여 이 액세스를 요청하는 프로세스를 진행해야 합니다. 예를 들어 직원이 조직을 떠난 후 법률 자문 부서 또는 관리자가 이러한 요청을 요구할 수 있습니다.
     
@@ -102,7 +102,7 @@ Azure Rights Management 서비스를 사용하고 있으며 Azure Information Pr
 
 1.  Outlook 내에서 조직의 받는 사람 주소를 지정하여 메일 메시지를 작성합니다.
 
-2.  **옵션** 탭에서 **권한**을 클릭하고 옵션을 선택합니다. 예: **전달 금지** 또는 **\<회사 이름>- 기밀** 또는 **\<회사 이름> - 기밀 보기 전용**.
+2.  **옵션** 탭에서 **권한**을 클릭하고 옵션을 선택합니다. 예를 들면 다음과 같습니다. **전달 금지** 또는 **\<회사 이름>- 기밀** 또는 **\<회사 이름> - 기밀 보기 전용**.
 
 3.  메시지를 보냅니다.
 
@@ -114,7 +114,7 @@ Azure Rights Management 서비스를 사용하고 있으며 Azure Information Pr
 
 1.  웹용 Outlook을 사용하여 조직의 받는 사람 주소가 지정된 새 메일 메시지를 작성합니다.
 
-2.  **…**, **사용 권한 설정**을 차례로 클릭하고 옵션을 선택합니다. 예: **전달 금지** 또는 **전체 회신 금지**. 또는 **\<회사 이름>- 기밀** 또는 **\<회사 이름> - 기밀 보기 전용**.
+2.  **…**, **사용 권한 설정**을 차례로 클릭하고 옵션을 선택합니다. 예를 들면 다음과 같습니다. **전달 금지** 또는 **전체 회신 금지**. 또는 **\<회사 이름>- 기밀** 또는 **\<회사 이름> - 기밀 보기 전용**.
 
 3.  메시지를 보냅니다.
 

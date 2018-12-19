@@ -4,18 +4,18 @@ description: Azure Information Protection 클라이언트를 설치해야 하는
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ce1c7d4c-b5ff-4672-8b9a-a72129bac992
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 0bb7a5333124c7581144ec00ac0b758691ff349f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 5a09cc6ecba5759c39717053f434396ade47a610
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023799"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305253"
 ---
 # <a name="user-guide-view-and-use-files-that-have-been-protected-by-rights-management"></a>사용자 가이드: Rights Management로 보호된 파일 보기 및 사용
 
@@ -53,7 +53,7 @@ ms.locfileid: "53023799"
 
 1. 보호된 파일을 엽니다. 예를 들어 파일이나 첨부 파일을 두 번 클릭하거나 파일의 링크를 클릭합니다. 앱을 선택하라는 메시지가 나타나면 **Azure Information Protection 뷰어**를 선택합니다. 
 
-2. **로그인** 또는 **등록** 페이지가 표시되면 **로그인**을 클릭하고 자격 증명을 입력합니다. 보호된 파일이 첨부 파일로 전송된 경우에는 파일을 전송하는 데 사용된 것과 같은 전자 메일 주소를 지정해야 합니다.
+2. **로그인** 또는 **등록**할 페이지를 확인하려면 **로그인**을 클릭하고 사용자 자격 증명을 입력합니다. 보호된 파일이 첨부 파일로 전송된 경우에는 파일을 전송하는 데 사용된 것과 같은 전자 메일 주소를 지정해야 합니다.
     
     허용되는 계정이 없는 경우 이 페이지에서 [인증 프롬프트](#prompts-for-authentication) 섹션을 참조하세요.
 

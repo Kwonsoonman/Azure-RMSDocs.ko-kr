@@ -11,16 +11,16 @@ ms.custom: askipteam
 ms.assetid: 90df11c5-355c-4ae6-a762-351b05d0fbed
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 15cf2c9c893adfb6e81e6a0c94001a3a0e120076
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: f6c4bd30c09ff54eab6da4bb63130a16373faebc
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644763"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174015"
 ---
 # <a name="frequently-asked-questions-about-data-protection-in-azure-information-protection"></a>Azure Information Protection에서 데이터 보호에 대한 질문과 대답
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 데이터 보호 서비스인 Azure Information Protection의 Azure Rights Management 서비스에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
@@ -51,7 +51,7 @@ HYOK에 대한 자세한 내용을 보고 제한 사항을 이해했음을 확�
 
 예, 이제 [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)의 지침을 따르면 Exchange Online에서 BYOK를 사용할 수 있습니다. 이러한 지침을 통해 새로운 Office 365 메시지 암호화는 물론 Azure Information Protection에 대해 BYOK를 지원하는 Exchange Online의 새로운 기능을 사용할 수 있습니다.
 
-변경 내용에 대한 자세한 내용은 블로그 공지 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)를 참조하세요.
+이 변화에 대한 자세한 내용은 블로그 공지를 참조하세요. [새로운 기능을 사용하여 office 365 메시지 암호화](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)
 
 ## <a name="where-can-i-find-information-about-third-party-solutions-that-integrate-with-azure-rms"></a>Azure RMS와 통합되는 타사 솔루션에 대한 정보는 어디서 찾을 수 있나요?
 
@@ -63,7 +63,7 @@ Rights Management 커넥터에서 정보, 경고 및 오류 메시지를 이벤�
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-rms-or-can-i-delegate-to-other-administrators"></a>Azure RMS를 구성하려면 전역 관리자여야 하나요? 또는, 다른 관리자에게 위임할 수 있나요?
 
-새로 도입된 Information Protection 관리자 역할을 통해 이제 이 질문(및 답변)은 기본 FAQ 페이지로 이동됩니다. [Azure Information Protection을 구성하려면 전역 관리자여야 하나요? 또는 다른 관리자에게 위임할 수 있나요?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
+새로 도입된 Information Protection 관리자 역할을 통해 이 질문(및 답변)은 이제 기본 FAQ 페이지로 이동되었습니다. [Azure Information Protection을 구성하려면 글로벌 관리자여야 하나요? 또는 다른 관리자에게 위임할 수 있나요?](faqs.md#do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators)
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>Azure Portal에서 새 사용자 지정 템플릿을 만들려면 어떻게 해야 하나요?
 
@@ -83,7 +83,7 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 
 사용자 지정 권한을 사용하여 문서를 보호한 경우 기존 문서에 대한 권한을 변경할 수 없습니다. 문서를 다시 보호하고 문서의 이 새 버전이 필요한 모든 사용자 및 모든 사용 권한을 지정해야 합니다. 보호된 문서를 다시 보호하려면 모든 권한 사용 권한이 있어야 합니다.
 
-문서가 템플릿 또는 사용자 지정 권한을 사용하여 보호되었는지 확인하려면 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet을 사용합니다. [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate)을 실행할 때 표시되지 않는 고유한 템플릿 ID와 함께 사용자 지정 권한에 대한 **제한된 액세스**의 템플릿 설명이 항상 표시됩니다.
+팁: 문서가 템플릿 또는 사용자 지정 권한으로 보호되었는지 확인하려면 [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus) PowerShell cmdlet을 사용합니다. [Get-RMSTemplate](/powershell/module/azureinformationprotection/get-rmstemplate)을 실행할 때 표시되지 않는 고유한 템플릿 ID와 함께 사용자 지정 권한에 대한 **제한된 액세스**의 템플릿 설명이 항상 표시됩니다.
 
 ## <a name="i-have-a-hybrid-deployment-of-exchange-with-some-users-on-exchange-online-and-others-on-exchange-serveris-this-supported-by-azure-rms"></a>Exchange Online의 사용자와 Exchange Server 서버의 다른 사용자로 구성된 Exchange의 하이브리드 배포입니다. Azure RMS에서 지원되나요?
 물론입니다. 사용자가 두 Exchange 배포에서 보호되는 메일과 첨부 파일을 원활하게 보호하고 소비할 수 있습니다. 이 구성을 사용하려면 [Azure RMS를 활성화](activate-service.md)하고 [Exchange Online에 IRM을 사용하도록 설정](https://technet.microsoft.com/library/dn151475%28v=exchg.150%29.aspx)한 다음, Exchange Server용 [RMS 커넥터를 배포 및 구성](deploy-rms-connector.md)합니다.
@@ -123,7 +123,7 @@ Azure Information Protection 레이블이 설치된 경우 Azure Portal에서 �
 
 2. [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet을 사용하여 이 변수를 RightsDefinition 매개 변수에 제공합니다.
 
-    기존 템플릿에 사용자를 추가하는 경우 새 사용자 외에도 템플릿의 기존 사용자를 위한 권한 정의 개체를 정의해야 합니다. 이 시나리오에서는 cmdlet의 [예제](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) 섹션에서 유용한 **예제 3: 사용자 지정 템플릿에 새 사용자 및 권한 추가**를 찾을 수 있습닌다.
+    기존 템플릿에 사용자를 추가하는 경우 새 사용자 외에도 템플릿의 기존 사용자를 위한 권한 정의 개체를 정의해야 합니다. 이 시나리오의 cmdlet의 [예제](/powershell/module/aadrm/set-aadrmtemplateproperty#examples) 섹션에서 유용한 **예제 3: 사용자 지정 템플릿에 새 사용자 및 권한 추가**를 찾을 수 있습니다.
 
 ## <a name="what-type-of-groups-can-i-use-with-azure-rms"></a>Azure RMS에서 사용할 수있는 그룹 유형은 무엇입니까?
 대부분의 시나리오에서 전자 메일 주소가 있는 Azure AD의 그룹 유형을 사용할 수 있습니다. 이 방법은 사용 권한을 할당할 때 항상 적용되지만 Azure Rights Management 서비스를 관리하기 위한 몇 가지 예외가 있습니다. 자세한 내용은 [그룹 계정에 대한 Azure Information Protection 요구 사항](prepare.md#azure-information-protection-requirements-for-group-accounts)을 참조하세요.
@@ -136,7 +136,7 @@ Exchange Online과 Azure Rights Management 서비스를 사용할 때는 전자 
 
 이 시나리오를 지원하려면 Azure Rights Management 서비스 및 Office 365 메시지 암호화의 새로운 기능에서 Exchange Online을 사용할 수 있어야 합니다. 이 구성에 대한 자세한 내용은 [Exchange Online: IRM 구성](configure-office365.md#exchange-online-irm-configuration)을 참조하세요.
 
-모든 장치에서 모든 전자 메일 계정 지원을 포함하는 새로운 기능에 대한 자세한 내용은 블로그 게시물 [Office 365 메시지 암호화에서 사용할 수 있는 새로운 기능](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)을 참조하세요.
+모든 디바이스에서 모든 이메일 계정 지원을 포함하는 새로운 기능에 대한 자세한 내용은 블로그 게시물 [Office 365 메시지 암호화에서 사용할 수 있는 새로운 기능 공지](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)를 참조하세요.
 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS에서는 어떤 장치 및 파일 형식을 지원하나요?
 Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](./requirements-client-devices.md)를 참조하세요. 현재는 지원 장치 중 일부만 모든 Rights Management 기능을 지원하기 때문에 [RMS 기반 응용 프로그램](./requirements-applications.md#rms-enlightened-applications) 표도 확인해야 합니다.
@@ -157,9 +157,9 @@ Outlook을 열고 Office 365 회사 또는 학교 계정을 사용하여 프로�
 
     그러면 Azure 권한 관리 템플릿이 다운로드되고 **자격 증명 확인**은 **제한 없음**, **전달 금지** 및 테넌트에 대해 게시된 Azure 권한 관리 템플릿을 포함하는 옵션으로 바뀝니다. 이제 이 새 메시지를 취소할 수 있습니다.
 
-전자 메일 메시지 또는 문서를 보호하려면 **옵션** 탭에서 **사용 권한**을 클릭하고 전자 메일이나 문서를 보호하는 옵션 또는 템플릿을 선택합니다.
+이메일 메시지 또는 문서를 보호하려면 **옵션** 탭에서 **사용 권한**을 클릭하고 이메일이나 문서를 보호하는 옵션 또는 템플릿을 선택합니다.
 
-문서를 호환 후 추적하려면 Azure Information Protection 클라이언트가 설치된 Windows 컴퓨터에서 Office 응용 프로그램 또는 파일 탐색기를 사용하여 해당 문서를 문서 추적 사이트에 등록합니다. 자세한 내용은 [문서 추적 및 취소](./rms-client/client-track-revoke.md)를 참조하세요. Mac 컴퓨터에서는 웹 브라우저를 사용하여 문서 추적 사이트 (https://track.azurerms.com) 로 이동한 후 이 문서를 추적 및 취소할 수 있습니다.
+문서를 보호 조치한 후 추적하려면 Azure Information Protection 클라이언트가 설치된 Windows 컴퓨터에서 Office 애플리케이션 또는 파일 탐색기를 사용하여 해당 문서를 문서 추적 사이트에 등록합니다. 자세한 내용은 [문서 추적 및 취소](./rms-client/client-track-revoke.md)를 참조하세요. Mac 컴퓨터에서는 웹 브라우저를 사용하여 문서 추적 사이트 (https://track.azurerms.com) 로 이동한 후 이 문서를 추적 및 취소할 수 있습니다.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>RMS로 보호된 Office 문서를 열면 연결된 임시 파일도 RMS로 보호되나요?
 아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 장치에 있습니다.
@@ -172,7 +172,7 @@ Outlook을 열고 Office 365 회사 또는 학교 계정을 사용하여 프로�
 ## <a name="how-do-i-configure-one-drive-for-business-in-sharepoint-online-so-that-users-can-safely-share-their-files-with-people-inside-and-outside-the-company"></a>사용자가 회사 내부와 외부의 사람들과 파일을 안전하게 공유할 수 있게, SharePoint Online에서 One Drive for Business를 어떻게 구성하나요?
 기본적으로 이것은 Office 365 관리자가 구성하는 것이 아니라 사용자가 구성합니다.
 
-SharePoint 사이트 관리자가 자신이 소유한 SharePoint 라이브러리에 IRM을 활성화 및 구성하듯이 비즈니스용 OneDrive는 사용자가 본인이 보유한 비즈니스용 OneDrive 라이브러리를 활성화 및 구성할 수 있게 디자인되었습니다. 그러나 이러한 사용자를 위해 PowerShell을 사용하여 이 작업을 수행할 수 있습니다. 지침은 [Office 365: 클라이언트 및 온라인 서비스 구성](configure-office365.md) 문서에서 [SharePoint Online 및 비즈니스용 OneDrive: IRM 구성](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) 섹션을 참조하세요.
+SharePoint 사이트 관리자가 자신이 소유한 SharePoint 라이브러리에 IRM을 활성화 및 구성하듯이 비즈니스용 OneDrive는 사용자가 본인이 보유한 비즈니스용 OneDrive 라이브러리를 활성화 및 구성할 수 있게 디자인되었습니다. 그러나 이러한 사용자를 위해 PowerShell을 사용하여 이 작업을 수행할 수 있습니다. 지침은 [Office 365: 클라이언트 및 온라인 서비스 구성](configure-office365.md) 문서의 [SharePoint Online 및 비즈니스용 OneDrive: IRM 구성](configure-office365.md#sharepoint-online-and-onedrive-for-business-irm-configuration) 섹션을 참조하세요.
 
 ## <a name="do-you-have-any-tips-or-tricks-for-a-successful-deployment"></a>배포 성공을 위한 팁이나 요령이 있나요?
 

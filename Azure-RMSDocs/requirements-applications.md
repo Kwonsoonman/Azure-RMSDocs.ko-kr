@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 7b33bcb8-63da-46be-ad56-b06de97822fa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e3c4e28fc9f67faeefcb1e6c98dda99711f1ef2b
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: cc823bcb175c9f4181d365a8caf99da33171c338
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024419"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173913"
 ---
 # <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RMS(Azure Rights Management 서비스)를 기본적으로 지원하는 응용 프로그램 및 솔루션을 식별하려면 다음 표를 참조하세요.
@@ -36,11 +36,11 @@ Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RM
 
 테이블 열에 대한 정보:
 
--   **메일:** 나열된 메일 클라이언트는 메일 메시지 자체를 보호할 수 있으므로 아직 보호되지 않은 첨부된 Office 파일도 자동으로 보호됩니다. 이 시나리오에서 클라이언트의 미리 보기 기능은 권한 있는 받는 사람에게 보호된 콘텐츠(메시지 및 첨부 파일)를 표시할 수 있습니다. 그러나 전자 메일 메시지 자체가 보호되지 않고 첨부 파일만 보호되면, 클라이언트의 미리 보기 기능이 권한 있는 받는 사람에게 보호된 첨부 파일을 표시할 수 없습니다. 
+-   **이메일:** 나열된 이메일 클라이언트는 이메일 메시지 자체를 보호할 수 있으므로 아직 보호되지 않은 첨부된 모든 Office 파일도 자동으로 보호됩니다. 이 시나리오에서 클라이언트의 미리 보기 기능은 권한 있는 받는 사람에게 보호된 콘텐츠(메시지 및 첨부 파일)를 표시할 수 있습니다. 그러나 전자 메일 메시지 자체가 보호되지 않고 첨부 파일만 보호되면, 클라이언트의 미리 보기 기능이 권한 있는 받는 사람에게 보호된 첨부 파일을 표시할 수 없습니다. 
     
-    팁: 메일 보호를 지원하지 않는 메일 클라이언트의 경우 [Exchange Online 메일 흐름 규칙을 사용하여 이 보호를 적용](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8)해 보세요.
+    팁: 팁: 이메일 보호를 지원하지 않는 이메일 클라이언트의 경우 [Exchange Online 메일 흐름 규칙을 사용하여 이 보호를 적용](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8)하는 것이 좋습니다.
 
--   **기타 파일 형식**: 텍스트 및 이미지 파일에는 파일 이름 확장명이 .txt, .xml, .jpg, .jpeg와 같은 파일이 포함됩니다. 이러한 파일은 Rights Management의 기본 보호를 통해 읽기 전용으로 바뀌면 파일 이름 확장명이 변경됩니다. 기본 보호를 적용할 수 없는 파일은 Rights Management의 일반적인 보호를 받으며 파일 이름 확장명으로 .pfile이 지정됩니다. 자세한 내용은 Azure Information Protection 클라이언트 관리자 가이드에서 [지원되는 파일 형식](./rms-client/client-admin-guide-file-types.md)을 참조하세요.
+-   **다른 파일 형식**: 텍스트 및 이미지 파일에는 파일 확장명이 .txt, .xml, .jpg 및 .jpeg와 같은 파일이 포함됩니다. 이러한 파일은 Rights Management의 기본 보호를 통해 읽기 전용으로 바뀌면 파일 이름 확장명이 변경됩니다. 기본 보호를 적용할 수 없는 파일은 Rights Management의 일반적인 보호를 받으며 파일 이름 확장명으로 .pfile이 지정됩니다. 자세한 내용은 Azure Information Protection 클라이언트 관리자 가이드에서 [지원되는 파일 형식](./rms-client/client-admin-guide-file-types.md)을 참조하세요.
 
 
 |**장치 운영 체제**|Word, Excel, PowerPoint|메일|다른 파일 형식|
@@ -78,7 +78,7 @@ Exchange ActiveSync IRM을 사용하도록 설정되지 않아서 전자 메일 
 
 Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되어 있으며, 이러한 앱에서 이 기능은 종종 IRM(정보 권한 관리)이라고 불립니다. 
 
-참고 항목: [Office 응용 프로그램 서비스 설명](https://technet.microsoft.com/library/office-applications-service-description.aspx)
+참고 항목: [Office 애플리케이션 서비스 설명](https://technet.microsoft.com/library/office-applications-service-description.aspx)
 
 #### <a name="windows-computers-for-information-rights-management-irm"></a>IRM(정보 권한 관리)용 Windows 컴퓨터
 
@@ -88,7 +88,7 @@ Azure RMS는 Word, Excel, PowerPoint 및 Outlook 앱에 긴밀하게 통합되�
 
 - Office 365 ProPlus: Office 2016 및 Office 2013
     
-    이러한 Office 버전은 Azure Information Protection에서 데이터 보호를 포함하는 Office 365 구독의 전부는 아니지만 대부분이 포함됩니다. Office 365 ProPlus가 포함되어 있는지 확인하려면 구독 정보를 확인합니다. 또한 이 정보는 [Azure Information Protection 데이터 시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)에서 찾을 수 있습니다.
+    이러한 Office 버전은 Azure Information Protection에서 데이터 보호를 포함하는 Office 365 구독의 전부는 아니지만 대부분이 포함됩니다. Office 365 ProPlus가 포함되어 있는지 확인하려면 구독 정보를 확인합니다. 또한 이 정보는 [Azure Information Protection 데이터 시트](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)에서 찾을 수 있습니다.
 
 - Office Professional Plus 2016
 
@@ -116,7 +116,7 @@ Office Professional Plus 2010 서비스 팩 2 또는 Office Professional 2010 �
 
 - Mac용 Office Standard 2016
 
-팁: Mac용 Office를 사용하여 문서를 보호하려면 [문서를 보호하고 추적하도록 Mac 컴퓨터를 구성하려면 어떻게 해야 하나요?](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)라는 유용한 FAQ를 찾아볼 수 있습니다.
+팁: Mac용 Office를 사용하여 문서를 보호하려면 다음과 같은 유용한 FAQ를 찾아볼 수 있습니다: [문서를 보호하고 추적하도록 Mac 컴퓨터를 구성하려면 어떻게 해야 하나요?](faqs-rms.md#how-do-i-configure-a-mac-computer-to-protect-and-track-documents)
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
 
@@ -178,7 +178,7 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 또한 RMS 공유 응용 프로그램 및 Azure Information Protection 클라이언트에 다음과 같은 제한 사항이 적용됩니다.
 
--   Windows 컴퓨터의 경우: 최소 Windows 7 서비스 팩 1 이상 버전이 필요합니다.
+-   Windows 컴퓨터의 경우: 최소 Windows 7 서비스 팩 1 버전이 필요함
 
 ## <a name="rms-enlightened-solutions"></a>RMS 지원 솔루션
 
@@ -189,7 +189,7 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 |제품|공급업체|설명|
 |-------------------------------|---------------------------|-----------------|
-|Absolute|Absolute|DLP(데이터 손실 방지)를 통한 콘텐츠 보호.|
+|절대|절대|DLP(데이터 손실 방지)를 통한 콘텐츠 보호.|
 |Content Locker|VMware|보호된 콘텐츠를 저장, 소비, 생성합니다.|
 |Controle|TakeControle|레이블 지정 및 보호를 사용한 eDiscovery.|
 |Forcepoint|Forcepoint DLP|조직의 데이터 보안 정책을 적용하는 엔드포인트 DLP(데이터 손실 방지) 솔루션입니다.|

@@ -5,28 +5,28 @@ keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 58CC2E50-1E4D-4621-A947-25312C3FF519
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: bf1958dca3c4c1c461fa7c66758a9a6f97377569
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 8537a4a9e51b99e0dd37e7abc720473b364cd879
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147460"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173692"
 ---
 # <a name="android-code-examples"></a>Android 코드 예제
 
 이 문서에서는 Android 버전의 RMS SDK 요소를 코딩하는 방법을 보여줍니다.
 
-**참고**: 이 문서에서 ‘MSIPC’(Microsoft 정보 보호 및 제어)라는 용어는 클라이언트 프로세스를 의미합니다.
+**참고**  이 문서에서 _MSIPC_(Microsoft 정보 보호 및 제어)라는 용어는 클라이언트 프로세스를 의미합니다.
 
 
-## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Microsoft Rights Management SDK 4.2 사용 - 주요 시나리오
+## <a name="using-the-microsoft-rights-management-sdk42---key-scenarios"></a>Microsoft Rights Management SDK 4.2 사용 - 주요 시나리오
 
 이러한 코드 샘플은 이 SDK를 이해하는 데 중요한 개발 시나리오를 나타내는 더 큰 응용 프로그램 예제에서 가져옵니다. 다음을 사용하는 방법을 보여줍니다.
 
@@ -108,7 +108,7 @@ ms.locfileid: "44147460"
 
     **원본**: *MsipcAuthenticationCallback.java*.
 
-    **설명**: 이 단계에서는 예제 인증 매개 변수와 함께 ADAL을 사용하여 [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx)을 구현합니다. 자세한 내용은 [ADAL(Azure AD 인증 라이브러리)](https://msdn.microsoft.com/library/jj573266.aspx)을 참조하세요.
+    **설명**: 이 단계에서는 ADAL을 사용하여 예제 인증 매개 변수로 [AuthenticationRequestCallback](https://msdn.microsoft.com/library/dn758255.aspx)을 구현합니다. 자세한 내용은 [ADAL(Azure AD 인증 라이브러리)](https://msdn.microsoft.com/library/jj573266.aspx)을 참조하세요.
 
 
     ``` java
@@ -185,7 +185,7 @@ ms.locfileid: "44147460"
                       }
     ```
 
-- **3단계**: [UserPolicy.accessCheck](https://msdn.microsoft.comlibrary/dn790885.aspx) 메서드를 통해 이 사용자에게 이 콘텐츠에 대한 **편집** 권한이 있는지 확인합니다.
+- **3단계**: [UserPolicy.accessCheck](https://msdn.microsoft.com/library/dn790885.aspx) 메서드를 통해 이 사용자에게 이 콘텐츠에 대한 **편집** 권한이 있는지 확인합니다.
 
     **원본**: *TextEditorFragment.java*
 
@@ -291,7 +291,7 @@ ms.locfileid: "44147460"
       }
     ```
 
--  **3단계**: [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx)을 만들고 파일에 콘텐츠를 씁니다.
+-  **3단계**: [ProtectedFileOutputStream](https://msdn.microsoft.com/library/dn790855.aspx)을 만들어 콘텐츠를 씁니다.
 
     **원본**: *MsipcTaskFragment.java*
 
@@ -488,7 +488,7 @@ ms.locfileid: "44147460"
     }
     ```
 
-- **3단계**: [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx)의 콘텐츠를 *mDecryptedContent*로 읽어온 다음 닫습니다.
+- **3단계**: [CustomProtectedInputStream](https://msdn.microsoft.com/library/dn758271.aspx)의 콘텐츠를 *mDecryptedContent*로 읽어온 다음, 닫습니다.
 
     **원본**: *MsipcTaskFragment.java*
 
@@ -525,11 +525,11 @@ ms.locfileid: "44147460"
 
 ### <a name="scenario-create-a-custom-protected-file-using-a-custom-policy"></a>시나리오: 사용자 지정 정책을 사용하여 사용자 지정 보호된 파일 만들기
 
-- **1단계**: 사용자가 제공한 메일 주소를 사용하여 정책 설명자를 만듭니다.
+- **1단계**: 사용자가 제공한 이메일 주소를 사용하여 정책 설명자를 만듭니다.
 
     **원본**: *MsipcTaskFragment.java*
 
-    **설명**: 실제로 다음 개체는 장치 인터페이스 [UserRights](https://msdn.microsoft.com/library/dn790911.aspx) 및 [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx)의 사용자 입력을 사용하여 생성됩니다.
+    **설명**: 실제로 다음 개체는 디바이스 인터페이스 [UserRights](https://msdn.microsoft.com/library/dn790911.aspx) 및 [PolicyDescriptor](https://msdn.microsoft.com/library/dn790843.aspx)의 사용자 입력을 사용하여 생성됩니다.
 
     ``` java
       // create userRights list
@@ -556,7 +556,7 @@ ms.locfileid: "44147460"
     ```
 
 
-- **3단계**: [CustomProtectedOutputStream](https://msdn.microsoft.com/library/dn758274.aspx)을 만들고 콘텐츠를 쓴 다음 닫습니다.
+- **3단계**: [CustomProtectedOutputStream](https://msdn.microsoft.com/library/dn758274.aspx)을 만들어 콘텐츠를 쓴 다음, 닫습니다.
 
     **원본**: *MsipcTaskFragment.java*
 

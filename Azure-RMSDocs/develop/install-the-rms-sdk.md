@@ -12,12 +12,12 @@ ms.assetid: C827E6B8-8CF2-4C86-AF97-60D66851827E
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: 1b801e3928c335846f5f2ec56953ec8bc4998718
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 4a19f6d1bf594d6a181b41685ecc1f1ba82a4408
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148769"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266412"
 ---
 # <a name="install-the-sdk"></a>SDK 설치
 
@@ -27,7 +27,7 @@ ms.locfileid: "44148769"
 
 ### <a name="install-the-developer-tools"></a>개발자 도구 설치
 
-1.  Microsoft 다운로드 센터에서 컴퓨터에 해당하는 아키텍처 버전을 선택하여 [권한 관리 서비스 SDK 2.1](http://www.microsoft.com/en-us/download/details.aspx?id=38397)을 다운로드합니다.
+1.  컴퓨터에 올바른 아키텍처 버전을 신중히 선택하려면 Microsoft 다운로드 센터에서 [Rights Management Services SDK 2.1](https://www.microsoft.com/download/details.aspx?id=38397)을 다운로드합니다.
 2.  설치 위치에서 설치 관리자 패키지를 실행합니다.
 
     **...\\setup\_sdk.exe**

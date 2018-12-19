@@ -4,27 +4,27 @@ description: 문서와 전자 메일을 분류하는 방법에 대한 지침을 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/31/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: d65c7690-fab7-4823-845c-8c73903e9c79
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: e49cd5da0c34c8dd6fa537bca3d90ba56c32e690
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 823f252756e18d5a2ab2239afb85b58fc3aa048e
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150231"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305304"
 ---
-# <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 전자 메일 분류
+# <a name="user-guide-classify-a-file-or-email-by-using-azure-information-protection"></a>사용자 가이드: Azure Information Protection을 사용하여 파일이나 이메일 분류
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 SP1*
 
 > [!NOTE]
 > 이러한 지침을 사용하여 문서와 전자 메일을 분류할 수 있도록 합니다(보호하지 않음). 문서와 전자 메일을 보호해야 하는 경우 [분류 및 보호 지침](client-classify-protect.md)을 참조하세요. 사용할 일련의 지침이 확실하지 않은 경우 관리자 또는 지원 센터에 확인하세요.
 
-문서와 전자 메일을 분류하는 가장 쉬운 방법은 Office 데스크톱 앱(**Word**, **Excel**, **PowerPoint**, **Outlook**) 내에서 해당 문서 및 전자 메일을 만들거나 편집하는 것입니다. 
+문서와 이메일을 분류하는 가장 쉬운 방법은 Office 데스크톱 앱(**Word**, **Excel**, **PowerPoint**, **Outlook**) 내에서 해당 문서 및 이메일을 만들거나 편집하는 것입니다. 
 
 그러나 **파일 탐색기**를 사용하여 파일을 분류할 수도 있습니다. 이 메서드는 추가 파일 유형을 지원하며, 여러 파일을 한 번에 분류하는 편리한 방법입니다. 
 
@@ -70,7 +70,7 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 
 파일 탐색기를 사용하여 파일을 분류할 때 하나 이상의 레이블이 흐리게 표시되면 선택한 파일이 해당 파일의 보호 없이 분류를 지원하지 않는 것입니다.
 
-관리자 가이드에는 보호 없이 분류를 지원하는 파일 형식의 전체 목록이 포함됩니다. [분류 목적으로만 지원되는 파일 형식](client-admin-guide-file-types.md#file-types-supported-for-classification-only)
+관리자 가이드에는 다음과 같이 보호 없이 분류를 지원하는 파일 형식의 전체 목록이 포함됩니다: [분류 목적으로만 지원되는 파일 형식](client-admin-guide-file-types.md#file-types-supported-for-classification-only).
 
 ### <a name="to-classify-a-file-by-using-file-explorer"></a>파일 탐색기를 사용하여 파일을 분류하려면
 
@@ -80,7 +80,7 @@ Azure Information Protection 표시줄에서 자동으로 구성된 레이블 �
 
 2. **분류 및 보호 - Azure Information Protection** 대화 상자에서 Office 응용 프로그램에서와 같이 레이블을 사용합니다. 그러면 관리자가 정의한 분류가 설정됩니다. 
     
-    이러한 레이블을 선택할 수 없는 경우(흐리게 표시): 선택한 파일이 분류를 지원하지 않습니다. 예를 들면 다음과 같습니다.
+    레이블을 선택할 수 없는 경우(흐리게 표시): 선택한 파일은 분류를 지원하지 않습니다. 예를 들면 다음과 같습니다.
     
     ![분류 및 보호 - Azure Information Protection** 대화 상자에서 사용할 수 있는 레이블이 없음](../media/info-protect-dialog-labels-dimmed.png)
 

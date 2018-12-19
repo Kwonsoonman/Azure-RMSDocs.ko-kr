@@ -4,18 +4,18 @@ description: RMS 커넥터를 사용하는 서버의 레지스트리 설정에 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
-ms.topic: article
+ms.date: 12/06/2018
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ed3e9a3d-0f7c-4abc-9d0b-aa3b18403d39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 9b99f914e78adafbcfd0f01f0937c6d636f43159
-ms.sourcegitcommit: 7ba9850e5bb07b14741bb90ebbe98f1ebe057b10
+ms.openlocfilehash: 6af7fe3a7b23f655a79d67421f67292416792792
+ms.sourcegitcommit: 0632c89a316ff31f588e9752dd474445983b1690
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42808699"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53120588"
 ---
 # <a name="registry-setting-for-the-rights-management-connector"></a>Rights Management 커넥터에 대한 레지스트리 설정
 
@@ -28,11 +28,11 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 -   *\<YourTenantURL>* 은 Azure Information Protection 테넌트의 Azure Rights Management 서비스 URL입니다. 이 값을 찾으려면:
 
-    1.  Azure Rights Management 서비스의 [Get-AadrmConfiguration](http://msdn.microsoft.com/library/windowsazure/dn629410.aspx) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
+    1.  Azure Rights Management 서비스의 [Get-AadrmConfiguration](/powershell/module/aadrm/get-aadrmconfiguration) cmdlet을 실행합니다. Azure RMS용 Windows PowerShell 모듈을 아직 설치하지 않은 경우 [AADRM PowerShell 모듈 설치](install-powershell.md)를 참조하세요.
 
     2.  출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
 
-        예: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+        예를 들면 다음과 같습니다. **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
     3.  값에서 이 문자열의 **/_wmcs/licensing**을 제거합니다. 나머지 문자열은 Azure Rights Management 서비스 URL입니다. 이 예에서 Azure Rights Management 서비스 URL의 값은 다음과 같습니다.
 
@@ -51,9 +51,9 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
-**값:** 기본값
+**값:** Default
 
 **데이터:** https://*\<YourTenantURL>*/_wmcs/certification
 
@@ -61,9 +61,9 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
-**값:** 기본값
+**값:** Default
 
 **데이터:** https://*\<YourTenantURL>*/_wmcs/Licensing
 
@@ -71,12 +71,12 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\CertificationServerRedirection
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://*\<YourTenantURL>*
 
 
-**데이터:** Exchange Server에서 RMS 커넥터로의 연결에 HTTP를 사용하는지 또는 HTTPS를 사용하는지에 따라 다음 중 하나:
+**데이터** Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
 - http://*<\ConnectorFQDN>*
 
@@ -86,12 +86,12 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v15\IRM\LicenseServerRedirection
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://*<\YourTenantURL>*
 
 
-**데이터:** Exchange Server에서 RMS 커넥터로의 연결에 HTTP를 사용하는지 또는 HTTPS를 사용하는지에 따라 다음 중 하나:
+**데이터** Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
 - http://*<\ConnectorFQDN>*
 
@@ -102,9 +102,9 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\Activation
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
-**값:** 기본값
+**값:** Default
 
 **데이터:** https://*<\YourTenantURL>*/_wmcs/certification
 
@@ -112,9 +112,9 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\Software\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
-**값:** 기본값
+**값:** Default
 
 **데이터:** https://*<\YourTenantURL>*/_wmcs/Licensing
 
@@ -122,11 +122,11 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\CertificationServerRedirection
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://*<\YourTenantURL>*
 
-**데이터:** Exchange Server에서 RMS 커넥터로의 연결에 HTTP를 사용하는지 또는 HTTPS를 사용하는지에 따라 다음 중 하나:
+**데이터** Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
 - http://*<\ConnectorFQDN>*
 
@@ -136,11 +136,11 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ExchangeServer\v14\IRM\LicenseServerRedirection
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://*<\YourTenantURL>*
 
-**데이터:** Exchange Server에서 RMS 커넥터로의 연결에 HTTP를 사용하는지 또는 HTTPS를 사용하는지에 따라 다음 중 하나:
+**데이터** Exchange Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나:
 
 - http://*<\ConnectorFQDN>*
 
@@ -151,12 +151,12 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\LicensingRedirection
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
 **값:** https://*<\YourTenantURL>*/_wmcs/licensing
 
 
-**데이터:** SharePoint Server에서 RMS 커넥터로의 연결에 HTTP를 사용하는지 또는 HTTPS를 사용하는지에 따라 다음 중 하나:
+**데이터** SharePoint Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나입니다.
 
 - http://*<\ConnectorFQDN>*/_wmcs/licensing
 
@@ -166,11 +166,11 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterpriseCertification
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
-**값:** 기본값
+**값:** Default
 
-**데이터:** SharePoint Server에서 RMS 커넥터로의 연결에 HTTP를 사용하는지 또는 HTTPS를 사용하는지에 따라 다음 중 하나:
+**데이터** SharePoint Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나입니다.
 
 - http://*<\ConnectorFQDN>*/_wmcs/certification
 
@@ -180,12 +180,12 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation\EnterprisePublishing
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
-**값:** 기본값
+**값:** Default
 
 
-**데이터:** SharePoint Server에서 RMS 커넥터로의 연결에 HTTP를 사용하는지 또는 HTTPS를 사용하는지에 따라 다음 중 하나:
+**데이터** SharePoint Server에서 RMS 커넥터로의 연결에 HTTP와 HTTPS 중 어느 것을 사용하는지에 따라 다음 중 하나입니다.
 
 - http://*<\ConnectorFQDN>*/_wmcs/licensing
 
@@ -198,9 +198,9 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\EnterprisePublishing
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
-**값:** 기본값
+**값:** Default
 
 **데이터:** http://*<\ConnectorFQDN>*/_wmcs/licensing
 
@@ -208,9 +208,9 @@ Exchange, SharePoint 또는 Windows Server를 실행하는 서버에서 수동�
 
 **레지스트리 경로:** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
-**형식:** Reg_SZ
+**유형:** Reg_SZ
 
-**값:** 기본값
+**값:** Default
 
 **데이터:** http://*<\ConnectorFQDN>*/_wmcs/certification
 

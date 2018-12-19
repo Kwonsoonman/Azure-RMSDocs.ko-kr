@@ -10,18 +10,18 @@ ms.service: information-protection
 ms.assetid: ea3ec965-3720-4614-8564-3ecfe60bc175
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: f4067698a97ded8aa4c7fd6144fa7738822f1910
-ms.sourcegitcommit: ad37950f6a747c86f6496c6de859e18446f9b03f
+ms.openlocfilehash: 8df9ded90829c620751529f011a0113e6f51b30e
+ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644678"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53218530"
 ---
 # <a name="admin-guide-install-the-azure-information-protection-client-for-users"></a>관리자 가이드: 사용자를 위해 Azure Information Protection 클라이언트 설치
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
-엔터프라이즈 네트워크에 Azure Information Protection 클라이언트를 설치하기 전에 컴퓨터에 Azure Information Protection에 대한 필수 운영 체제 버전 및 응용 프로그램이 있는지 확인합니다. [Azure Information Protection에 대한 요구 사항](../requirements.md) 
+엔터프라이즈 네트워크에 Azure Information Protection 클라이언트를 설치하기 전에 컴퓨터에 Azure Information Protection에 대한 필수 운영 체제 버전 및 애플리케이션이 있는지 확인합니다: [Azure Information Protection에 대한 요구 사항](../requirements.md). 
 
 그런 후 다음 섹션에서 설명한 대로 Azure Information Protection 클라이언트에 필요할 수 있는 추가 필수 구성 요소를 확인합니다. 설치 프로그램에서는 일부 필수 구성 요소만 확인합니다.
 
@@ -39,7 +39,7 @@ ms.locfileid: "51644678"
 
 - Windows PowerShell 버전 4.0
     
-    클라이언트용 PowerShell 모듈에는 이전 운영 체제에 설치해야 할 수도 있는 Windows PowerShell 버전 4.0이 필요합니다. 자세한 내용은 [How to Install Windows PowerShell 4.0](http://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)(Windows PowerShell 4.0을 설치하는 방법)을 참조하세요. 설치 관리자는 이러한 필수 구성 요소를 확인하거나 설치하지 않습니다. 실행 중인 Windows PowerShell 버전을 확인하려면 PowerShell 세션에 `$PSVersionTable`을 입력합니다.
+    클라이언트용 PowerShell 모듈에는 이전 운영 체제에 설치해야 할 수도 있는 Windows PowerShell 버전 4.0이 필요합니다. 자세한 내용은 [How to Install Windows PowerShell 4.0](https://social.technet.microsoft.com/wiki/contents/articles/21016.how-to-install-windows-powershell-4-0.aspx)(Windows PowerShell 4.0을 설치하는 방법)을 참조하세요. 설치 관리자는 이러한 필수 구성 요소를 확인하거나 설치하지 않습니다. 실행 중인 Windows PowerShell 버전을 확인하려면 PowerShell 세션에 `$PSVersionTable`을 입력합니다.
 
 - 화면 해상도 800x600 이상
     
@@ -52,13 +52,13 @@ ms.locfileid: "51644678"
 
 - KB 2533623
     
-    Windows 7 서비스 팩 1을 실행하는 컴퓨터에는 KB 2533623이 필요합니다. 이 업데이트에 대한 자세한 내용은 [Microsoft 보안 공지: 비보안 라이브러리 로드 시 원격 코드 실행 허용](https://support.microsoft.com/en-us/kb/2533623)을 참조하세요. 이 업데이트를 직접 설치하거나, 설치하는 다른 업데이트로 대체될 수도 있습니다.
+    Windows 7 서비스 팩 1을 실행하는 컴퓨터에는 KB 2533623이 필요합니다. 이 업데이트에 대한 자세한 내용은 [Microsoft 보안 공지: 보안되지 않는 라이브러리를 로드하면 원격 코드 실행이 허용됨](https://support.microsoft.com/en-us/kb/2533623)을 참조하세요. 이 업데이트를 직접 설치하거나, 설치하는 다른 업데이트로 대체될 수도 있습니다.
     
     이 업데이트가 필요한데 아직 설치되지 않은 경우 클라이언트 설치에서 설치해야 한다는 경고 메시지가 표시됩니다. 클라이언트가 설치된 후에 이 업데이트를 설치할 수 있지만 일부 작업이 차단되며 메시지가 다시 표시됩니다.  
 
 - Visual Studio 2015용 Visual C++ 재배포 가능 패키지(32비트 버전)
     
-    Windows 7 서비스 팩 1을 실행하는 컴퓨터의 경우 다음 다운로드 페이지에서 **vc_redist.x86.exe**를 설치합니다. [Visual Studio 2015용 Visual C++ 재배포 가능 패키지](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+    Windows 7 서비스 팩 1을 실행하는 컴퓨터의 경우 다음의 다운로드 페이지에서 **vc_redist.x86.exe**를 설치합니다: [Visual Studio 2015용 Visual C++ 재배포 가능 패키지](https://www.microsoft.com/en-us/download/details.aspx?id=48145).
     
     클라이언트 설치는 이러한 전제 조건을 확인하지 않지만 Azure Information Protection 클라이언트가 PDF 파일을 분류하고 보호하는 데 필요합니다.
 
@@ -66,11 +66,11 @@ ms.locfileid: "51644678"
     
     Office 2013 이후 버전의 경우 Office 애플리케이션용 **Microsoft Azure Information Protection** 추가 기능을 항상 사용할 수 있도록 그룹 정책을 구성합니다. 이렇게 구성하지 않으면 Microsoft Azure Information Protection 추가 기능을 사용하지 않도록 설정할 수 있고 사용자가 Office 애플리케이션에서 문서 및 메일에 레이블을 지정할 수 없습니다.
     
-    - Outlook: Office 설명서의 [System Administrator control over add-ins](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)(시스템 관리자 추가 기능 제어)에 설명된 그룹 정책 설정을 사용합니다.
+    - Outlook의 경우 Office 설명서의 [시스템 관리자 추가 기능 제어](https://docs.microsoft.com/office/vba/outlook/concepts/getting-started/support-for-keeping-add-ins-enabled#system-administrator-control-over-add-ins)에 설명된 그룹 정책 설정을 사용합니다.
     
-    - Word, Excel 및 PowerPoint: 지원 문서 [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)(Office 2013 및 Office 2016 프로그램의 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음)에 설명된 **관리되는 추가 기능의 그룹 정책 설정 목록**을 사용합니다. 
+    - Word, Excel 및 PowerPoint의 경우 지원 문서 [Office 2013 및 Office 2016 프로그램의 그룹 정책 설정으로 인해 추가 기능이 로드되지 않음](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off)에 설명된 **관리형 추가 기능의 그룹 정책 설정 목록**을 사용합니다. 
         
-        Azure Information Protection에 대한 다음과 같은 프로그래밍 방식 식별자(ProgID)를 지정하고 **1: 추가 기능을 항상 사용**하는 옵션을 설정합니다.
+        Azure Information Protection에 대한 다음과 같은 프로그래밍 방식 식별자(ProgID)를 지정하고 **1: 추가 기능 항상 사용** 옵션을 설정합니다.
         
         Word의 경우: `MSIP.WordAddin`
         
@@ -86,9 +86,9 @@ ms.locfileid: "51644678"
 
 사용자를 위해 클라이언트를 설치하는 옵션에는 다음 두 가지가 있습니다.
 
-**클라이언트의 실행 파일(.exe) 버전 실행**: 대화형 또는 자동으로 실행할 수 있는 권장 설치 방법입니다. 이 방법은 가장 유연하며, 설치 관리자가 많은 필수 구성 요소를 확인하고 누락된 필수 구성 요소를 자동으로 설치할 수 있으므로 권장됩니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)
+**실행 파일(.exe) 버전의 클라이언트 실행**: 대화형 또는 자동으로 실행할 수 있는 권장 설치 방법입니다. 이 방법은 가장 유연하며, 설치 관리자가 많은 필수 구성 요소를 확인하고 누락된 필수 구성 요소를 자동으로 설치할 수 있으므로 권장됩니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)
 
-**Windows installer(.msi) 버전의 클라이언트 배포**: 그룹 정책, Configuration Manager 및 Microsoft Intune 등의 중앙 배포 메커니즘을 사용하는 자동 설치에만 지원됩니다. 이 방법은 Intune 및 MDM(모바일 장치 관리)에 의해 관리되는 Windows 10 PC에서 필요합니다. 이러한 컴퓨터의 경우 실행 파일로 설치하도록 지원되지 않기 때문입니다. 그러나 이 설치 방법을 사용하면 실행 파일용 설치 관리자가 각 컴퓨터에 대해 수행하는 종속 소프트웨어를 수동으로 확인한 후 설치 또는 제거해야 합니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)
+**Windows 설치 관리자(.msi) 버전의 클라이언트 배포**: 그룹 정책, Configuration Manager 및 Microsoft Intune 등의 중앙 배포 메커니즘을 사용하는 자동 설치에만 지원됩니다. 이 방법은 Intune 및 MDM(모바일 장치 관리)에 의해 관리되는 Windows 10 PC에서 필요합니다. 이러한 컴퓨터의 경우 실행 파일로 설치하도록 지원되지 않기 때문입니다. 그러나 이 설치 방법을 사용하면 실행 파일용 설치 관리자가 각 컴퓨터에 대해 수행하는 종속 소프트웨어를 수동으로 확인한 후 설치 또는 제거해야 합니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)
 
 Azure Information Protection 클라이언트를 설치한 후에는 선택한 설치 방법을 반복하여 이 클라이언트를 업데이트하거나 Windows 업데이트를 사용하여 클라이언트가 계속 자동으로 업그레이드되도록 할 수 있습니다. 업그레이드에 대한 자세한 내용은 [Azure Information Protection 클라이언트 업그레이드 및 유지 관리](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client) 섹션을 참조하세요.
 
@@ -108,11 +108,11 @@ Microsoft 업데이트 카탈로그를 사용하지 않거나 Intune 같은 중�
     
     도움말 화면에 나열되지 않은 추가 매개 변수:
     
-    - **ServiceLocation**: Office 2010을 실행하는 컴퓨터에 클라이언트를 설치하며, 사용자가 컴퓨터의 로컬 관리자가 아니거나 사용자에게 메시지가 표시되지 않게 하려는 경우 이 매개 변수를 사용합니다. [추가 정보](#more-information-about-the-servicelocation-installation-parameter) 
+    - **ServiceLocation**: Office 2010을 실행하는 컴퓨터에 클라이언트를 설치하고 사용자가 컴퓨터의 로컬 관리자가 아니거나 사용자에게 메시지가 표시되지 않게 하려는 경우 이 매개 변수를 사용합니다. [추가 정보](#more-information-about-the-servicelocation-installation-parameter) 
     
     - **DowngradeDotNetRequirement**: Microsoft Framework .NET 버전 4.6.2 요구 사항을 무시하려면 이 매개 변수를 사용합니다. [추가 정보](#more-information-about-the-downgradedotnetrequirement-installation-parameter)
     
-    - **AllowTelemetry=0**: 이 매개 변수를 사용하여 **Microsoft로 사용 현황 통계를 보내서 Azure Information Protection 개선에 도움을 줍니다.** 설치 옵션을 사용하지 않도록 설정합니다. 
+    - **AllowTelemetry=0**: 이 매개 변수를 사용하여 **Microsoft에 사용 현황 통계를 보내 Azure Information Protection 개선 지원** 설치 옵션을 사용하지 않도록 설정합니다. 
     
 3. 대화형으로 설치하는 경우 Office 365 또는 Azure Active Directory에 연결할 수 없지만 데모용으로 로컬 정책을 사용하여 Azure Information Protection의 클라이언트 쪽을 확인해 보려면 **데모 정책**을 설치하는 옵션을 선택합니다. 클라이언트에서 Azure Information Protection 서비스에 연결하면 이 데모 정책이 조직의 Azure Information Protection 정책으로 바뀝니다.
     
@@ -128,9 +128,9 @@ Microsoft 업데이트 카탈로그를 사용하지 않거나 Intune 같은 중�
  
     이 파일의 이름 형식은 다음과 같습니다. `Microsoft_Azure_Information_Protection_<number>_<number>_MSIP.Setup.Main.msi.log`
     
-    예: **Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
+    예를 들면 다음과 같습니다. **Microsoft_Azure_Information_Protection_20161201093652_000_MSIP.Setup.Main.msi.log**
     
-    이 로그 파일에서 다음 문자열을 검색합니다. **Product: Microsoft Azure Information Protection -- Installation completed successfully.**(제품: Microsoft Azure Information Protection -- 설치를 완료했습니다.) 설치가 실패하면 이 로그 파일에 문제를 식별하고 해결하는 데 도움이 되는 세부 정보가 포함됩니다.
+    이 로그 파일에서 다음의 문자열을 검색합니다. **제품: Microsoft Azure Information Protection - 설치를 성공적으로 완료**. 설치가 실패하면 이 로그 파일에 문제를 식별하고 해결하는 데 도움이 되는 세부 정보가 포함됩니다.
 
 #### <a name="more-information-about-the-servicelocation-installation-parameter"></a>ServiceLocation 설치 매개 변수에 대한 자세한 정보
 
@@ -154,7 +154,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSDRM\ServiceLocation\Activation
 
 2. 출력에서 **LicensingIntranetDistributionPointUrl** 값을 식별합니다.
 
-    예: **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
+    예를 들면 다음과 같습니다. **LicensingIntranetDistributionPointUrl   : https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing**
 
 3. 값에서 이 문자열의 **/_wmcs/licensing**을 제거합니다. 예: **https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 

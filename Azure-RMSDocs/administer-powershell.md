@@ -4,22 +4,22 @@ description: Azure Information Protection의 Azure Rights Management 서비스(A
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 09/13/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a890e04a-4b70-41b5-8d5f-3c210a669faa
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: de522b734b923927972d6491d922651f26196440
-ms.sourcegitcommit: c1274d6d7ab486590dcd2a4e6aca3dcd3d284c1b
+ms.openlocfilehash: 3a0dadd58536044ee8749c2dcb61efd50e626fa8
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168729"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305338"
 ---
 # <a name="administering-the-azure-rights-management-service-by-using-windows-powershell"></a>Windows PowerShell을 사용하여 Azure Rights Management 서비스 관리
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 PowerShell을 사용하여 Azure Information Protection에 대한 Azure Rights Management 서비스를 관리해야 하나요? Azure Portal이나 Office 365 포털에서 모든 구성을 수행할 필요가 없을 수도 있습니다. 그러나 일부 고급 구성에는 PowerShell을 사용해야 하고 보다 효율적인 명령줄 제어 및 스크립팅을 위해 PowerShell을 사용하는 것을 선호할 수도 있습니다.
 
@@ -36,7 +36,7 @@ Azure Information Protection 클라이언트는 이 서비스 쪽 PowerShell 모
 
 |수행할 작업|사용할 cmdlet|
 |-------------------|------------------------------|
-|온-프레미스 Rights Management(AD RMS 또는 Windows RMS)에서 Azure Information Protection으로 마이그레이션|[Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd)<br /><br />[Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)|
+|온-프레미스 Rights Management(AD RMS 또는 Windows RMS)에서 Azure Information Protection으로 마이그레이션합니다.|[Import-AadrmTpd](/powershell/aadrm/vlatest/import-aadrmtpd)<br /><br />[Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)|
 |조직에서 Rights Management 서비스 간에 연결 설정 또는 끊기|[Connect-AadrmService](/powershell/aadrm/vlatest/connect-aadrmservice)<br /><br />[Disconnect-AadrmService](/powershell/aadrm/vlatest/disconnect-aadrmservice)|
 |직접 테넌트 키 생성/관리 - BYOK(Bring Your Own Key) 시나리오|[Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)<br /><br />[Use-AadrmKeyVaultKey](/powershell/aadrm/vlatest/use-aadrmkeyvaultkey)<br /><br />[Get-AadrmKeys](/powershell/aadrm/vlatest/get-aadrmkeys)|
 |조직에서 Rights Management 서비스 활성화 또는 비활성화<br /><br />관리 포털에서 이러한 작업을 수행할 수도 있습니다. 자세한 내용은 [Azure Rights Management 서비스 활성화](activate-service.md)를 참조하세요.|[Enable-Aadrm](/powershell/aadrm/vlatest/enable-aadrm)<br /><br />[Disable-Aadrm](/powershell/aadrm/vlatest/disable-aadrm)|
@@ -46,8 +46,8 @@ Azure Information Protection 클라이언트는 이 서비스 쪽 PowerShell 모
 |조직에서 보호하는 콘텐츠 최대 일 수를 구성하면 인터넷 연결 없이 액세스될 수 있습니다.(사용 라이선스 유효 기간)|[Get-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/get-aadrmmaxuselicensevaliditytime)<br /><br />[Set-AadrmMaxUseLicenseValidityTime](/powershell/aadrm/vlatest/set-aadrmmaxuselicensevaliditytime)|
 |조직에서 Rights Management의 슈퍼 사용자 기능 관리|[Enable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/enable-aadrmsuperuserfeature)<br /><br />[Disable-AadrmSuperUserFeature](/powershell/aadrm/vlatest/disable-aadrmsuperuserfeature)<br /><br />[Add-AadrmSuperUser](/powershell/aadrm/vlatest/add-aadrmsuperuser)<br /><br />[Get-AadrmSuperUser](/powershell/aadrm/vlatest/get-aadrmsuperuser)<br /><br />[Remove-AadrmSuperUser](/powershell/aadrm/vlatest/remove-aadrmsuperuser)<br /><br />[Set-AadrmSuperUserGroup](/powershell/aadrm/vlatest/set-aadrmsuperusergroup)<br /><br />[Get-AadrmSuperUserGroup](/powershell/aadrm/vlatest/get-aadrmsuperusergroup)<br /><br />[Clear-AadrmSuperUserGroup](/powershell/aadrm/vlatest/clear-aadrmsuperusergroup)|
 |조직에서 Rights Management 서비스 관리 권한이 있는 사용자 및 그룹 관리|[Add-AadrmRoleBasedAdministrator](/powershell/aadrm/vlatest/add-aadrmrolebasedadministrator)<br /><br />[Get-AadrmRoleBasedAdministrator](/powershell/aadrm/vlatest/get-aadrmrolebasedadministrator)<br /><br />[Remove-AadrmRoleBasedAdministrator](/powershell/aadrm/vlatest/remove-aadrmrolebasedadministrator)|
-|조직의 Rights Management 관리 작업 로그 가져오기|[Get-AadrmAdminLog](https://msdn.microsoft.com/library/azure/dn629430.aspx)|
+|조직의 Rights Management 관리 작업 로그 가져오기|[Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog)|
 |Rights Management의 사용량 로깅 기록 및 분석|[Get-AadrmUserLog](/powershell/aadrm/vlatest/get-aadrmuserlog)|
 |조직에서 현재 Rights Management 서비스 구성 표시|[Get-AadrmConfiguration](/powershell/aadrm/vlatest/get-aadrmconfiguration)|
-|Azure Information Protection에서 온-프레미스 AD RMS 배포로 조직 마이그레이션|[Set-AadrmMigrationUrl](/powershell/aadrm/vlatest/set-aadrmmigrationurl)<br /><br />[Get-AadrmMigrationUrl](/powershell/aadrm/vlatest/get-aadrmmigrationurl)|
+|Azure Information Protection에서 온-프레미스 AD RMS 배포로 조직을 마이그레이션합니다.|[Set-AadrmMigrationUrl](/powershell/aadrm/vlatest/set-aadrmmigrationurl)<br /><br />[Get-AadrmMigrationUrl](/powershell/aadrm/vlatest/get-aadrmmigrationurl)|
 

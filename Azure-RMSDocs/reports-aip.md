@@ -4,19 +4,19 @@ description: 중앙 보고 기능을 사용하여 Azure Information Protection �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: information-protection
 ms.assetid: b2da2cdc-74fd-4bfb-b3c2-2a3a59a6bf2e
 ms.reviewer: lilukov
 ms.suite: ems
-ms.openlocfilehash: 8dc53c6bad6c8f68ac5786afb0600cafb6398765
-ms.sourcegitcommit: b4118cd75db6478f86b9994e8d84d0ada15c7f95
+ms.openlocfilehash: 58ea955deef9341ec80b516b89feec609389b9ad
+ms.sourcegitcommit: 4caf3aa13506554928c5fda38994301ddcbdfb41
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52953315"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068812"
 ---
 # <a name="central-reporting-for-azure-information-protection"></a>Azure Information Protection이 중앙 보고
 
@@ -67,9 +67,13 @@ Azure Information Protection 분석을 중앙 보고용으로 사용하여 Azure
     
     - 알려진 범주의 중요한 정보(예: 재무 데이터 및 개인 정보)를 포함하는 파일과 이러한 범주별 파일 위치
     
-보고서는 [Azure Log Analytics](/azure/log-analytics/log-analytics-overview)를 사용하여 조직이 소유하는 작업 영역에 데이터를 저장합니다. 쿼리 언어에 익숙한 경우 해당 쿼리를 수정할 수 있으며 새 보고서와 Power BI 대시보드를 만들 수 있습니다. 자습서 [분석 포털 시작](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal)은 쿼리 언어를 이해하는 데 도움이 될 수 있습니다. 
+보고서는 [Azure Log Analytics](/azure/log-analytics/log-analytics-overview)를 사용하여 조직이 소유하는 작업 영역에 데이터를 저장합니다. 쿼리 언어에 익숙한 경우 해당 쿼리를 수정할 수 있으며 새 보고서와 Power BI 대시보드를 만들 수 있습니다. 다음 자습서는 쿼리 언어를 이해하는 데 도움이 될 수 있습니다. [Analytics Portal 시작](https://docs.loganalytics.io/docs/Learn/Getting-Started/Getting-started-with-the-Analytics-portal). 
 
-자세한 내용은 블로그 게시물 [Data discovery, reporting and analytics for all your data with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854)(Microsoft Information Protection을 사용한 모든 데이터의 데이터 검색, 보고 및 분석)을 참조하세요.
+자세한 내용은 다음 블로그 게시물 
+
+- [Microsoft Information Protection을 사용한 모든 데이터의 데이터 검색, 보고 및 분석](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Data-discovery-reporting-and-analytics-for-all-your-data-with/ba-p/253854) 및
+
+- [Azure Information Protection 및 Windows Defender ATP를 통해 중요한 데이터 검색 및 보호](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Discover-and-protect-sensitive-data-through-Azure-Information/ba-p/297292)를 참조하세요.
 
 ### <a name="information-collected-and-sent-to-microsoft"></a>수집되어 Microsoft로 전송된 정보
 
@@ -85,9 +89,9 @@ Azure Information Protection 분석을 중앙 보고용으로 사용하여 Azure
 
 - 사용자 디바이스의 이름입니다.
 
-- 문서의 경우: 레이블이 지정된 문서의 파일 경로 및 파일 이름입니다.
+- 문서의 경우: 레이블이 지정된 문서의 파일 경로 및 파일 이름
 
-- 이메일의 경우: 레이블이 지정된 이메일의 이메일 제목, 이메일 보낸 사람 및 이메일 받는 사람입니다. 
+- 이메일의 경우: 레이블이 지정된 이메일의 이메일 제목, 이메일 보낸 사람 및 이메일 받는 사람. 
 
 - 콘텐츠에서 발견된 중요한 정보 유형([사전 정의](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for) 및 사용자 지정)입니다.
 
@@ -116,9 +120,9 @@ Azure Information Protection 보고서를 보고 직접 만들려면 다음 요�
 
 3. **Azure Information Protection Log Analytics** 블레이드에서 테넌트가 소유한 모든 Log Analytics 작업 영역 목록을 확인합니다. 다음 중 하나를 수행합니다.
     
-    - 새 Log Analytics 작업 영역 만들기: **새 작업 영역 만들기**를 선택하고 **Log Analytics 작업 영역** 블레이드에서 요청된 정보를 제공합니다.
+    - 새 Log Analytics 작업 영역을 만들려면 **새 작업 영역 만들기**를 선택하고 **Log Analytics 작업 영역** 블레이드에서 요청된 정보를 제공합니다.
     
-    - 기존 Log Analytics 작업 영역 사용: 목록에서 해당 작업 영역을 선택합니다.
+    - 기존 Log Analytics 작업 영역을 사용하려면 목록에서 작업 영역을 선택합니다.
 
 Log Analytics 작업 영역을 만드는 데 도움이 필요한 경우 [Azure Portal에서 Log Analytics 작업 영역 만들기](https://docs.microsoft.com/azure/log-analytics/log-analytics-quick-create-workspace)를 참조하세요.
 
@@ -130,13 +134,13 @@ Azure Information Protection 블레이드에서 **대시보드(미리 보기)** 
 
 - **사용 현황 보고서(미리 보기)**: 레이블이 사용되는 방식을 확인하려면 이 보고서를 사용합니다. 
 
-- **활동 로그(미리 보기)**: 사용자가 또는 디바이스 및 파일 경로에서 수행된 레이블 지정 작업을 보려면 이 보고서를 사용합니다.
+- **활동 로그(미리 보기)**: 사용자, 디바이스 및 파일 경로에서 수행된 레이블 지정 작업을 확인하려면 이 보고서를 사용합니다.
     
     이 보고서는 현재 테넌트를 대상으로 점진적으로 롤아웃되고 있으므로 지금 보이지 않는다면 며칠 후에 다시 시도해 보세요.
     
     이 보고서에는 기본적으로 표시되는 것보다 더 많은 활동 정보를 표시할 수 있는 **열** 옵션이 있습니다.
 
-- **데이터 검색(미리 보기)**: 스캐너 또는 Windows Defender ATP가 발견한 파일에 대한 정보를 확인하려면 이 보고서를 사용합니다.
+- **데이터 검색(미리 보기)**: 스캐너 또는 Windows Defender ATP에서 발견된 파일에 대한 정보를 확인하려면 이 보고서를 사용합니다.
 
 ## <a name="how-to-modify-the-reports"></a>보고서 수정 방법
 
@@ -145,7 +149,7 @@ Azure Information Protection 블레이드에서 **대시보드(미리 보기)** 
 ![Azure Information Protection 보고서를 사용자 지정하기 위한 Log Analytics 아이콘](./media/log-analytics-icon.png)
 
 
-Azure Information Protection에 대한 기록된 데이터는 다음 테이블에 저장됩니다. **InformationProtectionLogs_CL**
+Azure Information Protection에 대한 기록된 데이터는 **InformationProtectionLogs_CL** 테이블에 저장됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 보고서의 정보를 검토한 후에 Azure Information Protection 정책을 변경할지 결정할 수 있습니다. 지침에 대해서는 [Azure Information Protection 정책 구성](configure-policy.md)을 참조하세요.

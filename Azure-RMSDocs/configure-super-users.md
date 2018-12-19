@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: acb4c00b-d3a9-4d74-94fe-91eeb481f7e3
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c4b4df01be10ce033dd7369e71420e949750e667
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: 3a4cf3eaaf177a9424a438d0cdbee54b6a0a252e
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169910"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173828"
 ---
 # <a name="configuring-super-users-for-azure-rights-management-and-discovery-services-or-data-recovery"></a>Azure Rights Management 및 검색 서비스 또는 데이터 복구를 위한 슈퍼 사용자 구성
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection의 Azure Rights Management 서비스의 슈퍼 사용자 기능을 사용하면 Azure Rights Management에서 조직을 위해 보호하는 데이터를 권한이 부여된 사용자와 서비스가 항상 읽고 검사할 수 있습니다. 필요하다면 보호를 제거하거나 변경할 수 있습니다.
 
@@ -96,5 +96,5 @@ Office 365 eDiscovery를 사용할 수 없다면, 유사한 데이터 관련 프
 
 4. 이 두 번째 PST 파일에 대해 Unprotect-RMSFile을 실행하여 이 훨씬 더 작은 파일의 콘텐츠를 암호 해독합니다. 출력에서 지금 암호 해독한 PST 파일을 검색 도구에 가져옵니다.
 
-사서함 및 PST 파일에서 eDiscovery를 수행하기 위한 자세한 정보 및 지침은 [Azure Information Protection and eDiscovery Processes](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216)(Azure Information Protection 및 eDiscovery 프로세스) 블로그 게시물을 참조하세요.
+사서함 및 PST 파일에서 eDiscovery를 수행하기 위한 자세한 정보 및 지침은 블로그 게시물 [Azure Information Protection 및 eDiscovery 프로세스](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-and-eDiscovery-Processes/ba-p/270216)를 참조하세요.
 

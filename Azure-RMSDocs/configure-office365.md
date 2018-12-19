@@ -4,29 +4,29 @@ description: 관리자가 Azure Information Protection의 Azure Rights Managemen
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/06/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0a6ce612-1b6b-4e21-b7fd-bcf79e492c3b
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: c87dc5692afff775069ec468438edddbeb61ac3e
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 83f633ff1051a5d54c7254b35e89403de2e53277
+ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024215"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53319434"
 ---
-# <a name="office365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: 클라이언트와 온라인 서비스가 Azure Rights Management 서비스를 사용하도록 구성
+# <a name="office365-configuration-for-clients-and-online-services-to-use-the-azure-rights-management-service"></a>Office 365: 클라이언트와 온라인 서비스가 Azure Rights Management 서비스를 사용하도록 구성
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Office 365는 기본적으로 Azure Information Protection의 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 웹의 Outlook과 같은 애플리케이션에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 모든 사용자는 Rights Management 자격 증명으로 Office 응용 프로그램에 로그인해야 합니다. 그러면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
 
 그러나 사용자가 Office 추가 기능 및 추가 파일 형식 지원에 따른 이점을 얻을 수 있도록 Azure Information Protection 클라이언트로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
-## <a name="exchangeonline-irm-configuration"></a>Exchange Online: IRM 구성
-Exchange Online IRM이 Azure Rights Management 서비스와 함께 작동하는 방식에 대한 자세한 내용은 **이해 및 탐색** 섹션에서 [Exchange Online 및 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server)를 참조하세요.
+## <a name="exchangeonline-irm-configuration"></a>Exchange Online: IRM 구성
+Exchange Online IRM이 Azure Rights Management 서비스와 함께 작동하는 방식에 대한 자세한 내용은 [Office 애플리케이션 및 서비스에서 Azure Rights Management를 지원하는 방법](office-apps-services-support.md)에서 [Exchange Online 및 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 섹션을 참조하세요.
 
 Exchange Online는 Azure Rights Management 서비스를 이미 사용하도록 설정한 상태일 수 있습니다. 확인하려면 다음 명령을 실행합니다.
 
@@ -66,13 +66,13 @@ Exchange Online는 Azure Rights Management 서비스를 이미 사용하도록 �
     ```
     Test-IRMConfiguration -Sender <user email address>
     ```
-    예: **Test-IRMConfiguration -Sender  adams@contoso.com**
+    예를 들면 다음과 같습니다. **Test-IRMConfiguration -Sender  adams@contoso.com**
     
-    이 명령은 서비스에 대한 연결 확인, 구성 검색, URL, 라이선스 및 템플릿 검색을 포함하는 일련의 검사를 실행합니다. Windows PowerShell 세션에 각 검사의 결과가 표시되며 이러한 모든 검사를 통과하면 맨 마지막에 다음 결과가 표시됩니다. **OVERALL RESULT: PASS**
+    이 명령은 서비스에 대한 연결 확인, 구성 검색, URL, 라이선스 및 템플릿 검색을 포함하는 일련의 검사를 실행합니다. Windows PowerShell 세션에 각 검사의 결과가 표시되며 이러한 모든 검사를 통과하면 맨 마지막에 다음 결과가 표시됩니다. **전체 결과: 통과**
 
 Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성할 때 [메일 흐름 규칙](https://support.office.com/article/define-mail-flow-rules-to-encrypt-email-messages-in-office-365-9b7daf19-d5f2-415b-bc43-a0f5f4a585e8), [DLP(데이터 손실 방지) 정책](https://technet.microsoft.com/library/jj150527%28v=exchg.150%29.aspx) 및 [보호된 음성 메일](https://technet.microsoft.com/library/dn198211%28v=exchg.150%29.aspx)(통합 메시징)과 같이 Information Protection을 자동으로 적용하는 기능을 구성할 수 있습니다.
 
-## <a name="sharepointonline-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 및 비즈니스용 OneDrive: IRM 구성
+## <a name="sharepointonline-and-onedrive-for-business-irm-configuration"></a>SharePoint Online 및 비즈니스용 OneDrive: IRM 구성
 
 SharePoint Online IRM이 Azure Rights Management 서비스와 함께 작동하는 방식에 대한 자세한 내용은 **이해 및 탐색** 섹션에서 [SharePoint Online 및 SharePoint Server](office-apps-services-support.md#sharepoint-online-and-sharepoint-server)를 참조하세요.
 
@@ -128,7 +128,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
 
 3.  다음 스크립트의 콘텐츠를 복사하고 컴퓨터에 Set-IRMOnOneDriveForBusiness.ps1 파일의 이름을 지정합니다.
 
-    *&#42;&#42;고지 사항&#42;&#42;*: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
+    ***고지 사항***: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
 
     ```
     # Requires Windows PowerShell version 3
@@ -211,7 +211,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
             {
                 if($_.Exception.Message -match "Could not load file or assembly")
                 {
-                    Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                    Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
                 }
                 else
                 {
@@ -517,7 +517,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
 
     5.  `ADMIN INSTRUCTIONS`를 검색합니다. 이 섹션의 변경 사항을 적용하지 않으면 사용자의 비즈니스용 OneDrive가 "보호된 파일"이라는 정책 제목과 "이 정책은 권한 있는 사용자에 대한 액세스 권한을 제한합니다."라는 설명으로 IRM에 대해 구성됩니다.  대부분의 환경에 적합한 다른 IRM 옵션은 설정되지 않습니다. 그러나 제안된 정책 제목과 설명을 변경할 수 있고, 사용 중인 환경에 적합한 다른 IRM 옵션을 추가할 수도 있습니다. Set-IrmConfiguration 명령에 고유한 매개 변수 집합을 생성하려면 스크립트에 설명된 예제를 참조하세요.
 
-5.  스크립트를 저장한 후 서명합니다. 스크립트에 서명(더 안전)하지 않은 경우 컴퓨터에서 Windows PowerShell을 구성하여 서명되지 않은 스크립트를 실행해야 합니다. 이렇게 하려면 **관리자 권한으로 실행** 옵션을 사용하여 Windows PowerShell 세션을 실행하고 **Set-ExecutionPolicy Unrestricted**를 입력합니다. 그러나 이 구성에서는 서명되지 않은 모든 스크립트를 실행할 수 있으므로 보안 수준이 낮습니다.
+5.  스크립트를 저장한 후 서명합니다. 스크립트에 서명(더 안전)하지 않은 경우 컴퓨터에서 Windows PowerShell을 구성하여 서명되지 않은 스크립트를 실행해야 합니다. 이렇게 하려면 **관리자로 실행** 옵션으로 Windows PowerShell 세션을 실행하고 **Set-ExecutionPolicy Unrestricted**를 입력합니다. 그러나 이 구성에서는 서명되지 않은 모든 스크립트를 실행할 수 있으므로 보안 수준이 낮습니다.
 
     Windows PowerShell 스크립트에 서명을 하는 방법에 대한 자세한 내용은 PowerShell 문서 라이브러리에서 [about_Signing](https://technet.microsoft.com/library/hh847874.aspx) 을 참조하세요.
 
@@ -533,9 +533,9 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
 ##### <a name="additional-script-to-output-all-onedrive-for-business-urls-to-a-csv-file"></a>모든 비즈니스용 OneDrive URL을 .CSV 파일로 출력하는 추가 스크립트
 4c 위의 단계에서 다음 Windows PowerShell 스크립트를 사용해 모든 사용자의 Business용 OneDrive 라이브러리의 URL을 추출할 수 있습니다. 그런 다음 확인해서 필요한 경우 편집하여 기본 스크립트로 가져올 수 있습니다.
 
-이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](https://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 동일한 지침에 따라 복사하여 붙여넣고 파일을 로컬로 저장(예: "Report-OneDriveForBusinessSiteInfo.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 이전과 마찬가지로 수정하고 스크립트를 실행합니다.
+이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](https://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 동일한 지침에 따라 복사하여 붙여넣고 파일을 로컬로 저장(예: "Report-OneDriveForBusinessSiteInfo.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 이전과 마찬가지로 수정하고 스크립트를 실행합니다.
 
-*&#42;&#42;고지 사항&#42;&#42;*: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
+***고지 사항***: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
 
 ```
 # Requires Windows PowerShell version 3
@@ -549,7 +549,7 @@ SharePoint Online용 IRM 서비스를 사용하도록 설정하면 Rights Manage
  Script Installation Requirements:
 
    SharePoint Online Client Components SDK
-   http://www.microsoft.com/en-us/download/details.aspx?id=42038
+   https://www.microsoft.com/en-us/download/details.aspx?id=42038
 
    SharePoint Online Management Shell
    https://www.microsoft.com/en-us/download/details.aspx?id=35588
@@ -613,7 +613,7 @@ function Load-SharePointOnlineClientComponentAssemblies
         {
             if($_.Exception.Message -match "Could not load file or assembly")
             {
-                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
             }
             else
             {
@@ -758,9 +758,9 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
 ##### <a name="script-to-disable-irm-for-onedrive-for-business"></a>비즈니스용 OneDrive에 대한 IRM를 사용하지 않도록 설정하는 스크립트
 사용자의 비즈니스용 OneDrive에 대한 IRM을 사용하지 않도록 설정해야 하는 경우 다음 샘플 스크립트를 사용합니다.
 
-이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](https://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 콘텐츠를 복사하여 붙여넣고 파일을 로컬로 저장(예: "Disable-IRMOnOneDriveForBusiness.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 수정합니다. 비즈니스용 OneDrive URL을 수동으로 지정하거나 이전 섹션의 스크립트를 사용하여 해당 URL을 가져온 다음 스크립트를 실행합니다.
+이 스크립트에는 [SharePoint Online 클라이언트 구성 요소 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=42038)와 [SharePoint Online 관리 셸](https://www.microsoft.com/en-us/download/details.aspx?id=35588)도 필요합니다. 콘텐츠를 복사하여 붙여넣고 파일을 로컬로 저장(예: "Disable-IRMOnOneDriveForBusiness.ps1")한 다음 `$sharepointAdminCenterUrl` 및 `$tenantAdmin` 값을 수정합니다. 비즈니스용 OneDrive URL을 수동으로 지정하거나 이전 섹션의 스크립트를 사용하여 해당 URL을 가져온 다음 스크립트를 실행합니다.
 
-*&#42;&#42;고지 사항&#42;&#42;*: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
+***고지 사항***: 이 샘플 스크립트는 Microsoft 표준 지원 프로그램 또는 서비스를 통해 지원되지 않습니다. 이 샘플 스크립트는 어떤 종류의 보증도 없이 있는 그대로 제공됩니다.
 
 ```
 # Requires Windows PowerShell version 3
@@ -773,7 +773,7 @@ $oneDriveForBusinessSiteUrls | Out-File -FilePath $reportName
  Script Installation Requirements:
 
    SharePoint Online Client Components SDK
-   http://www.microsoft.com/en-us/download/details.aspx?id=42038
+   https://www.microsoft.com/en-us/download/details.aspx?id=42038
 
    SharePoint Online Management Shell
    https://www.microsoft.com/en-us/download/details.aspx?id=35588
@@ -842,7 +842,7 @@ function Load-SharePointOnlineClientComponentAssemblies
         {
             if($_.Exception.Message -match "Could not load file or assembly")
             {
-                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: http://www.microsoft.com/en-us/download/details.aspx?id=42038"
+                Write-Error -Message "Unable to load the SharePoint Server 2013 Client Components.`nDownload Location: https://www.microsoft.com/en-us/download/details.aspx?id=42038"
             }
             else
             {

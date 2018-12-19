@@ -10,19 +10,19 @@ ms.service: information-protection
 ms.assetid: 1da6e372-2b3f-4af7-80f7-6b9073dff7f5
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: e78a870afea9828bf2020aca7007db9a766a1076
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 16110efd8d0874ba1235cc02576848d122203ea8
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023322"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173444"
 ---
 # <a name="rms-sharing-application-for-windows-and-mobile-platforms"></a>Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
-> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
+> **지원 종료 알림**: Windows용 Rights Management 공유 애플리케이션은 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
  
 RMS 공유 애플리케이션은 Windows 컴퓨터용 Office 2010을 지원하며 이전에 모든 Windows 컴퓨터와 모바일 디바이스에서 권장되었던 다운로드 가능 애플리케이션입니다. Mac 컴퓨터 및 Windows Phone 장치에서는 여전히 권장됩니다. 이 응용 프로그램의 장점 중 하나는 기본적으로 Azure Rights Management 서비스를 지원하지 않는 응용 프로그램과 파일에 대해서도 일반적인 보호를 적용할 수 있으므로 모든 파일을 보호할 수 있다는 점입니다. 다양한 보호 수준에 대한 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](./rms-client/sharing-app-admin-guide.md)에서 [보호 수준 - 기본 및 일반](./rms-client/sharing-app-admin-guide-technical.md#levels-of-protection--native-and-generic) 섹션을 참조하세요.
 
@@ -46,7 +46,7 @@ Windows 컴퓨터에서 RMS 공유 응용 프로그램은 사용자가 이미 �
 
 모바일 장치용 RMS 공유 응용 프로그램은 iPad/iPhone, Android, Windows Phone, Windows RT 등 널리 사용되는 모바일 장치를 지원합니다. 사용자는 [Microsoft Rights Management 페이지](https://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 통해 관련 스토어에서 이 앱을 다운로드할 수 있습니다.
 
-**Microsoft Intune을 사용하는 경우**: RMS 공유 앱에는 Microsoft Intune 앱 소프트웨어 개발 키트가 포함되어 있으므로 다음 옵션을 사용할 수 있습니다.
+**Microsoft Intune이 있는 경우**: RMS 공유 앱에는 Microsoft Intune 앱 소프트웨어 개발 키트가 포함되므로 다음 옵션을 사용할 수 있습니다.
 
 -   Intune에서 등록된 iOS 및 Android 장치용 앱을 배포 및 관리합니다.
 

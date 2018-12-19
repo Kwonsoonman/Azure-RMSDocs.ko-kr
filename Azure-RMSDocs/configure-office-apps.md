@@ -5,32 +5,32 @@ author: cabailey
 ms.author: cabailey
 manager: mbaldwin
 ms.date: 08/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: ec269afe-4e87-4cc1-9144-5fbb594b412e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 88e09013b41b0813295cf90a759c72acdb791c8f
-ms.sourcegitcommit: 99b33cee47bc4588174d44e90ade16edba12ee44
+ms.openlocfilehash: 4b93d1f860ec3e894571da70a0b09aa4b37d59a1
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43380804"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174287"
 ---
 # <a name="office-apps-configuration-for-clients-to-use-the-azure-rights-management-service"></a>Office 앱: 클라이언트가 Azure Rights Management 서비스를 사용하도록 구성
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
 이 정보를 사용하여 Office 앱이 Azure Information Protection의 Azure Rights Management 서비스와 함께 작동하기 위해 수행해야 하는 작업을 확인할 수 있습니다.
 
-## <a name="office-2016-and-office-2013"></a>Office 2016 및 Office 2013
+## <a name="office2016-and-office-2013"></a>Office 2016 및 Office 2013
 이러한 이후 버전의 Office는 기본적으로 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 웹의 Outlook과 같은 응용 프로그램에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 모든 사용자는 Rights Management 자격 증명으로 Office 응용 프로그램에 로그인해야 합니다. 그러면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
 
 그러나 사용자가 Office 추가 기능 및 추가 파일 형식 지원에 따른 이점을 얻을 수 있도록 Azure Information Protection 클라이언트로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
-## <a name="office-2010"></a>Office 2010
-클라이언트 컴퓨터가 Azure Rights Management 서비스를 Office 2010과 함께 사용하도록 하려면 클라이언트 컴퓨터에 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램이 있어야 합니다. 사용자가 Rights Management 자격 증명을 사용하여 로그인하는 것 외에 추가 구성은 필요하지 않으며, 로그인하면 파일을 보호하고 다른 사용자가 보호한 파일을 사용할 수 있습니다.
+## <a name="office2010"></a>Office 2010
+클라이언트 컴퓨터가 Azure Rights Management 서비스를 Office 2010과 함께 사용하도록 하려면 클라이언트 컴퓨터에 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 애플리케이션이 있어야 합니다. 사용자가 Rights Management 자격 증명을 사용하여 로그인하는 것 외에 추가 구성은 필요하지 않으며, 로그인하면 파일을 보호하고 다른 사용자가 보호한 파일을 사용할 수 있습니다.
 
 Azure Information Protection 클라이언트에 대한 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 

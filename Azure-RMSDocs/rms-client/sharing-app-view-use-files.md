@@ -1,5 +1,5 @@
 ---
-title: RMS 공유 앱에서 RMS로 보호된 파일 열기 - AIP
+title: RMS 공유 앱에서 RMS로 보호된 파일 열기
 description: 보호된 파일을 보고 사용하기 위한 지침을 제공합니다. 여기서 설명하는 작업을 수행하려면 (RMS)Rights Management 공유 응용 프로그램을 설치해야 합니다.
 author: cabailey
 ms.author: cabailey
@@ -10,28 +10,31 @@ ms.service: information-protection
 ms.assetid: e5fa4666-6906-405a-9e0c-2c52d4cd27c8
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 926a6d34b34b486577f6a8481010d058e465b3e8
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: f3e3158e8cd5fb054daab65a3b86a0e99074bee3
+ms.sourcegitcommit: db60fe8f74ffaa4f6ffbf5defb22efc476c28312
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023994"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53319468"
 ---
-# <a name="view-and-use-files-that-have-been-protected-by-rights-management"></a>Rights Management로 보호된 파일 보기 및 사용
+# <a name="use-the-rights-management-sharing-application-to-view-and-use-protected-files"></a>Rights Management 공유 애플리케이션을 사용하여 보호된 파일 보기 및 사용
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
-[Rights Management(RMS) 공유 응용 프로그램이 컴퓨터에 설치](install-sharing-app.md)되어 있는 경우 보호된 파일을 두 번 클릭하면 파일이 표시됩니다. 파일은 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다.
+> [!IMPORTANT]
+> **지원 종료 알림**: Windows용 Rights Management 공유 애플리케이션은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다.
 
-> [!NOTE]
-> 보호된 파일을 볼 수 있기 전에 먼저 Rights Management 서비스는 파일을 볼 수 있는 권한이 있는지 확인하기 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
->
-> 조직이 Azure Information Protection 또는 AD RMS를 사용하지 않으면 자격 증명을 허용하는 무료 계정을 적용하므로 RMS를 사용하여 보호되는 파일을 열 수 있습니다.
->
-> -   이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다.
->
->     등록하면 개인 메일 주소보다 회사 메일 주소를 사용합니다. 보호된 첨부 파일을 메일로 전송받았기 때문에 등록한 경우 메일 메시지를 보내는 데 사용된 동일한 메일 주소를 사용합니다.
-> -   자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../rms-for-individuals.md)를 참조하세요.
+[RMS(Rights Management) 공유 애플리케이션이 컴퓨터에 설치](install-sharing-app.md)되어 있는 경우 보호된 파일을 두 번 클릭하면 파일이 표시됩니다. 파일은 메일 메시지에 첨부되거나 파일 탐색기를 사용하는 경우 확인할 수 있습니다.
+
+보호된 파일을 볼 수 있기 전에 먼저 Rights Management 서비스는 파일을 볼 수 있는 권한이 있는지 확인하기 위해 사용자 이름 및 암호를 확인합니다. 이는 어떤 경우에 캐시될 수도 있고 자격 증명을 요청하는 메시지가 표시되지 않습니다. 다른 경우 자격 증명을 제공하라는 메시지가 표시됩니다.
+
+조직이 Azure Information Protection 또는 AD RMS를 사용하지 않으면 자격 증명을 허용하는 무료 계정을 적용하므로 RMS를 사용하여 보호되는 파일을 열 수 있습니다.
+
+- 이 계정에 적용하려면 링크를 클릭하여 [개인용 RMS](https://go.microsoft.com/fwlink/?LinkId=309469)를 적용합니다. 
+    
+    등록하면 개인 메일 주소보다 회사 메일 주소를 사용합니다. 보호된 첨부 파일을 메일로 전송받았기 때문에 등록한 경우 메일 메시지를 보내는 데 사용된 동일한 메일 주소를 사용합니다.
+
+- 자세한 내용은 [개인용 RMS 및 Azure 권한 관리](../rms-for-individuals.md)를 참조하세요.
 
 ## <a name="to-view-a-protected-file"></a>보호된 파일을 보려면
 파일 탐색기 또는 첨부 파일을 포함하는 메일 메시지를 사용하여 보호된 파일을 두 번 클릭하고 자격 증명을 입력하라는 메시지가 나타나면 그렇게 수행합니다.

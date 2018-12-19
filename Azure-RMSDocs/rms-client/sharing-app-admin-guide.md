@@ -10,19 +10,19 @@ ms.service: information-protection
 ms.assetid: d9992e30-f3d1-48d5-aedc-4e721f7d7c25
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7be58d201ddd24497ff79935554c2a68efd04a3f
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 84f013014f0256a01c30d9518089f2604ed9a668
+ms.sourcegitcommit: b2414cc00d50ccefe10f8c3719eb3f6c1e78fc65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024436"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53246193"
 ---
 # <a name="rights-management-sharing-application-administrator-guide"></a>Rights Management 공유 응용 프로그램 관리자 가이드
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 > [!IMPORTANT]
-> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
+> **지원 종료 알림**: Windows용 Rights Management 공유 애플리케이션은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
 
 엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 응용 프로그램을 담당하고 있거나, [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md) 또는 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](https://go.microsoft.com/fwlink/?LinkId=303971)에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다.
 
@@ -33,11 +33,11 @@ Rights Management 공유 응용 프로그램 기술 개요, 기본 및 일반 �
 ## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 응용 프로그램 자동 배포
 RMS 공유 응용 프로그램의 Windows 버전은 스크립트 방식 설치를 지원하므로 엔터프라이즈 배포에 적합합니다.
 
-설치의 유일한 필수 조건으로, 컴퓨터에서 Windows 7 서비스 팩 1 이상 버전을 실행하고 Microsoft Framework 버전 4.0 이상이 설치되어 있어야 합니다. Microsoft .NET Framework 4.0을 설치해야 하는 경우 [Microsoft 다운로드 센터에서 설치를 위해 해당 버전을 다운로드](http://www.microsoft.com/download/details.aspx?id=17718)할 수 있습니다.
+설치의 유일한 필수 조건으로, 컴퓨터에서 Windows 7 서비스 팩 1 이상 버전을 실행하고 Microsoft Framework 버전 4.0 이상이 설치되어 있어야 합니다. Microsoft .NET Framework 4.0을 설치해야 하는 경우 [Microsoft 다운로드 센터에서 설치를 위해 해당 버전을 다운로드](https://www.microsoft.com/download/details.aspx?id=17718)할 수 있습니다.
 
 ### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>자동 배포용 RMS 공유 응용 프로그램을 다운로드하려면
 
-1.  Microsoft 다운로드 센터의 [Windows용 Microsoft Rights Management 공유 응용 프로그램](http://www.microsoft.com/download/details.aspx?id=40857) 페이지로 이동하여 **다운로드**를 클릭합니다.
+1.  Microsoft 다운로드 센터의 [Windows용 Microsoft Rights Management 공유 응용 프로그램](https://www.microsoft.com/download/details.aspx?id=40857) 페이지로 이동하여 **다운로드**를 클릭합니다.
 
 2.  필요한 파일을 선택하여 다운로드합니다. Windows 64비트용(Microsoft Rights Management 공유 응용 프로그램 x64.zip) 및 Windows 32비트용(Microsoft Rights Management 공유 응용 프로그램 x86.zip)의 두 가지 클라이언트 설치 패키지가 있습니다.
 
@@ -92,7 +92,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
     1.  로컬 관리자 계정을 사용하여 컴퓨터에 로그인합니다.
 
-    2.  해당 컴퓨터에서 [Microsoft Online 로그인 도우미를 다운로드하여 설치](http://www.microsoft.com/download/details.aspx?id=28177)합니다.
+    2.  해당 컴퓨터에서 [Microsoft Online 로그인 도우미를 다운로드하여 설치](https://www.microsoft.com/download/details.aspx?id=28177)합니다.
 
     3.  다음 명령을 실행하여 화면에 표시되는 인증 서비스 URL을 확인합니다. 이 URL을 복사한 후 다음 단계에서 사용하기 위해 저장할 수 있습니다.
 
@@ -274,21 +274,21 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 ### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만의 설치 성공 여부를 확인하려면
 
-1.  Setup_ipviewer.exe 명령이 정상적으로 실행되었는지 확인하려면 설치 로그 파일에서 다음 텍스트를 검색합니다. **Installation success or error status: 0**
+1.  Setup_ipviewer.exe 명령의 성공을 확인하려면 설치 로그 파일에서 다음 텍스트를 검색합니다. **설치 성공 또는 오류 상태: 0.**
 
     정상적으로 설치된 경우에 표시되는 줄 예제:
 
-    **MSI (s) (F0:B8) [14:19:57:854]: 제품: Active Directory Rights Management Services 클라이언트 2.1 -- 설치를 완료했습니다.**
+    **MSI (s) (F0:B8) [14:19:57:854]: Product: Active Directory Rights Management Services Client 2.1 -- Installation completed successfully.**
 
-    **MSI (s) (F0:B8) [14:19:57:854]: Windows Installer에서 제품을 설치했습니다. 제품 이름: Active Directory Rights Management Services 클라이언트 2.1. 제품 버전: 1.0.1179.1. 제품 언어: 1033. 제조업체: Microsoft Corporation. 설치 성공 또는 오류 상태: 0.**
+    **MSI (s) (F0:B8) [14:19:57:854]: Windows Installer installed the product. Product Name: Active Directory Rights Management Services 클라이언트 2.1. Product Version: 1.0.1179.1. 제품 언어: 1033. Manufacturer: Microsoft Corporation. Installation success or error status: 0.**
 
-2.  Office 추가 기능의 설치 성공 여부를 각 컴퓨터의 설치 로그 파일에서 다음 텍스트를 검색합니다. **Installation success or error status: 0**
+2.  Office 추가 기능의 성공을 확인하려면 각 컴퓨터의 설치 로그 파일에서 다음 텍스트를 검색합니다. **설치 성공 또는 오류 상태: 0.**
 
     정상적으로 설치된 경우에 표시되는 줄 예제:
 
-    **MSI (s) (9C:88) [18:49:04:007]: 제품: Microsoft RMS Office 추가 기능 -- 설치를 완료했습니다.**
+    **MSI (s) (9C:88) [18:49:04:007]: Product: Microsoft RMS Office Addins -- Installation completed successfully.**
 
-    **MSI (s) (9C:88) [18:49:04:007]: Windows Installer에서 제품을 설치했습니다. 제품 이름: Microsoft RMS Office 추가 기능. 제품 버전: 1.0.7. 제품 언어: 1033. 제조업체: Microsoft. 설치 성공 또는 오류 상태: 0.**
+    **MSI (s) (9C:88) [18:49:04:007]: Windows Installer installed the product. 제품 이름: Microsoft RMS Office 추가 기능. 제품 버전: 1.0.7. Product Language: 1033. 제조업체: Microsoft. Installation success or error status: 0.**
 
 ## <a name="uninstall-commands"></a>제거 명령
 이러한 배포에 필요한 설치 명령 중 일부만이 제거 명령을 지원합니다. AD RMS 클라이언트와 공유 응용 프로그램 및 Office 추가 기능을 제거할 수 있습니다. 이러한 요소를 제거하려면 다음 명령을 사용합니다.
@@ -340,7 +340,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 
 3.  테스트를 완료하고 모든 문제를 해결한 후 이 가이드에 나와 있는 자동 배포 지침을 사용하여 모든 사용자에게 최신 버전을 배포합니다.
 
-## <a name="azure-information-protection-only-configuring-document-tracking"></a>Azure Information Protection만 해당: 문서 추적 기능 구성
+## <a name="azure-information-protection-only-configuring-document-tracking"></a>Azure Information Protection 전용 문서 추적 기능 구성
 [문서 추적 기능을 지원하는 구독](https://www.microsoft.com/cloud-platform/azure-information-protection-features)이 있는 경우 기본적으로 조직의 모든 사용자에 대해 문서 추적 사이트를 사용하도록 설정됩니다. 문서 추적 기능에서는 사용자가 공유하는 보호된 문서에 액세스하려고 시도하는 사람의 메일 주소, 해당 문서에 액세스하려고 시도한 시간 및 해당 위치와 같은 정보를 표시합니다. 개인정보취급방침 요구 사항으로 인해 조직에서 이 정보 표시가 금지된 경우 [Disable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/disable-aadrmdocumenttrackingfeature) cmdlet을 사용하여 문서 추적 사이트에 대한 액세스를 사용하지 않도록 설정할 수 있습니다. 언제든지 [Enable-AadrmDocumentTrackingFeature](/powershell/module/aadrm/enable-aadrmdocumenttrackingfeature)를 사용하여 사이트에 대한 액세스를 다시 사용하도록 설정할 수 있고 [Get-AadrmDocumentTrackingFeature](/powershell/module/aadrm/get-aadrmdocumenttrackingfeature)를 사용하여 액세스가 현재 사용하거나 사용하지 않도록 설정되어 있는지 확인할 수 있습니다.
 
 이러한 cmdlet을 실행하려면 **2.3.0.0** 이상의 Windows PowerShell용 Azure Information Protection 모듈 버전을 사용하고 있어야 합니다. 설치 지침은 [AADRM PowerShell 모듈 설치](../install-powershell.md)를 참조하세요.
@@ -377,7 +377,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 
 ### <a name="usage-logging-for-the-document-tracking-site"></a>문서 추적 사이트에 대한 사용 현황 로깅
 
-사용 현황 로그 파일의 두 필드 **AdminAction** 및 **ActingAsUser**가 문서 추적에 적용됩니다.
+사용 현황 로그 파일의 다음과 같은 두 필드가 문서 추적에 적용됩니다: **AdminAction** 및 **ActingAsUser**.
 
 **AdminAction** - 관리자가 문서 추적 사이트를 관리자 모드로 사용하는 경우(예: 사용자 대신 문서를 취소하거나 언제 공유되었는지 확인하기 위해) 이 필드에 true 값이 포함됩니다. 사용자가 문서 추적 사이트에 로그인할 때는 이 필드가 비어 있습니다.
 
@@ -395,7 +395,7 @@ AD RMS를 사용하며 합병 또는 인수의 결과로 조직의 사용자에�
 
 2.  **RmsSharingApp**을 선택하고 새 다중 문자열 값 **FederatedDomains**를 만든 후 조직에서 사용하는 도메인과 모든 하위 도메인을 추가합니다. 와일드카드는 지원되지 않습니다.
 
-    예를 들면 다음과 같습니다. Coho Vineyard &amp; Winery라는 회사의 표준 메일 도메인은 **cohovineyardandwinery.com**이지만 합병으로 인해 **cohowinery.com**, **eastcoast.cohowinery.com** 및 **cohovineyard** 메일 도메인도 사용합니다. 이 경우 관리자는 **FederatedDomains** 값 데이터에 **cohowinery.com; eastcoast.cohowinery.com; cohovineyard**를 입력합니다.
+    예를 들면 다음과 같습니다. Coho Vineyard &amp; Winery라는 회사의 표준 이메일 도메인은 **cohovineyardandwinery.com**이지만 합병으로 인해 **cohowinery.com**, **eastcoast.cohowinery.com** 및 **cohovineyard** 이메일 도메인도 사용합니다. 이 경우 관리자는 **FederatedDomains** 값 데이터에 **cohowinery.com; eastcoast.cohowinery.com; cohovineyard**를 입력합니다.
 
 레지스트리를 이와 같이 변경하지 않으면 사용자가 조직의 다른 사용자에 의해 보호된 콘텐츠를 사용하지 못할 수도 있습니다. Azure Information Protection을 사용하는 경우에는 레지스트리를 이와 같이 편집할 필요가 없습니다.
 

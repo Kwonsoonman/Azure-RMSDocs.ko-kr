@@ -4,19 +4,19 @@ description: 이 버전 및 이전 버전에 포함된 중요한 변경 내용�
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 09/25/2017
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 4fa1c686-b00b-4734-9abb-141ce582a6af
 audience: developer
 ms.reviewer: kartikk
 ms.suite: ems
-ms.openlocfilehash: e3b4812f06c7ee86c48c0984e440d34f858bb4e7
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6433352f05401fcaafc84704a0441941ff87bdf3
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44148786"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266701"
 ---
 # <a name="whats-new-and-release-notes"></a>새로운 기능 및 릴리스 정보
 
@@ -26,13 +26,13 @@ ms.locfileid: "44148786"
 
 -   [2017년 7월의 새로운 기능](#new-for-july-2017)
 -   [2016년 10월 업데이트](#October-2016-update)
--   [2016년 6월 업데이트](#new-for-June-2016)
+-   [2016년 6월 업데이트](#june-2016-update)
 -   [2015년 12월 업데이트](#december-2015-update)
--   [2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가](#july-2015-update-adds-support-for-linux-c-developm)
--   [2015년 5월 업데이트 - 로깅 제어 추가](#may-2015-update-adds-logging-control)
--   [2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가](#february-2015-update-adds-windows-store-application-support)
--   [2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가](#january-2015-update-adds-winphone-platform-support)
--   [2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드](#october-2014-update-upgrade-to-microsoft-rms-sdk-4-1)
+-   [2015년 7월 업데이트 - Linux/C++ 개발에 대한 지원 추가](#july-2015-update---adds-support-for-linux--c-development)
+-   [2015년 5월 업데이트 - 로깅 제어 추가](#may-2015-update---adds-logging-control)
+-   [2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가](#february-2015-update---adds-windows-store-application-support)
+-   [2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가](#january-2015-update---adds-winphone-platform-support)
+-   [2014년 10월 업데이트 - Microsoft RMS SDK 4.1로 업그레이드](#october-2014-update---upgrade-to-microsoft-rms-sdk-4-1)
 -   [릴리스 정보](#release-notes)
 -   [질문과 대답](#frequently-asked-questions)
 
@@ -40,7 +40,7 @@ ms.locfileid: "44148786"
 
 7월 릴리스에 대한 업데이트에는 SDK의 버전이 4.2.5로 증가했습니다.
 
-- Android SDK: 이제 Android SDK를 사용하여 앱에서 **로깅 레벨을 즉시 설정**할 수 있습니다. 자세한 내용은 [방법: 오류 및 성능 로깅 사용](https://docs.microsoft.com/information-protection/develop/enabling-logging)을 참조하세요.
+- Android SDK: 이제 Android SDK를 사용하여 앱에서 **로깅 레벨을 즉시 설정**할 수 있습니다. 자세한 내용은 [방법: 오류 및 성능 로깅 사용](https://docs.microsoft.com/information-protection/develop/enabling-logging) 참조
 - iOS SDK는 로깅 수준을 지원하지 않습니다. 
 - 이제 SDK가 NULL 액세스 토큰에 대한 오류를 반환합니다.
 
@@ -108,7 +108,7 @@ ms.locfileid: "44148786"
 
     로그 수준 제어 설정을 사용할 수 있습니다.
 
-    자세한 내용은 [방법: 오류 및 성능 로깅 사용](enabling-logging.md)을 참조하세요.
+    자세한 내용은 [방법: 오류 및 성능 로깅 사용](enabling-logging.md) 참조
 
     캐시 지우기 지원이 추가되었습니다.
 
@@ -193,7 +193,7 @@ ms.locfileid: "44148786"
 
 
 
-**참고** MDI 응용 프로그램은 iOS API에서 지원되지 않습니다.
+**참고**  MDI 애플리케이션은 iOS API에서 지원되지 않습니다.
 
 ## <a name="frequently-asked-questions"></a>질문과 대답
 
@@ -203,21 +203,21 @@ ms.locfileid: "44148786"
 
 **A**: 알려진 문제이며 나중에 해결할 예정입니다.
 
-**Q**: SDK와 샘플 응용 프로그램을 사용하기 위해 새 조직 테넌트를 얻으려면 어떻게 하나요?
+**Q**: SDK와 샘플 애플리케이션을 사용하기 위해 새 조직 테넌트를 얻으려면 어떻게 하나요?
 
 **A**: Azure AD RMS 테스트 조직에 대한 자격 증명을 요청하려면 <rmcstbeta@microsoft.com>으로 이메일을 보내세요.
 
-**Q**: 여기 설명서에 테스트 계층 구조 설명이 보이지 않습니다. 그 이유는 무엇일까요?
+**Q**: 여기 설명서에 테스트 계층 구조 설명이 표시되지 않습니다. 그 이유는 무엇일까요?
 
 **A**: 새 AD RMS SDK에는 테스트 계층 구조 개념이 없습니다. 항상 프로덕션 계층 구조를 사용합니다.
 
-**Q**: 2.1 버전의 RMS SDK에서는 정보 보호를 구현하는 각 응용 프로그램에 대해 생성된 매니페스트가 필요했습니다. 4.0 이상 버전의 SDK에서도 마찬가지인가요?
+**Q**: 2.1 버전의 RMS SDK에서는 정보 보호를 구현하는 각 애플리케이션에 대해 생성된 매니페스트가 필요했습니다. 4.0 이상 버전의 SDK에서도 마찬가지인가요?
 
-**A**: 아니요, 3.0 이상 버전의 권한 관리 SDK에서는 매니페스트가 더 이상 필요하지 않습니다.
+**A**: 아니요. 3.0 이상 버전의 Rights Management SDK에는 더 이상 매니페스트가 필요하지 않습니다.
 
 **OWA(Outlook Web Access)**
 
-**Q**: SDK가 테스트된 개발 환경은 무엇인가요.
+**Q**: SDK가 테스트된 개발 환경은 무엇인가요?
 
 **A**: Google API 15 이상을 사용하는 Eclipse Juno입니다.
 
@@ -232,11 +232,11 @@ ms.locfileid: "44148786"
 
 **Q**: 작업에 대해 cancel() 메서드를 호출했는데 작업이 완료되었다는 알림이 표시되었습니다. 그 이유는 무엇일까요?
 
-**A**: 일부 작업은 취소할 수 없으므로 취소 작업은 가능한 경우에만 실행됩니다.
+**A**: 모든 작업을 취소할 수 없으므로 취소 작업은 가능한 경우에만 실행됩니다.
 
 **OS x**
 
-**Q**: 샘플 앱 프레임워크가 Xcode 5에 맞게 조정되었습니다. Xcode 4.6에서도 사용할 수 있나요?
+**Q**: 샘플 앱 프레임워크가 Xcode 5에 맞게 조정되면 Xcode 4.6에서도 작동할 수 있나요?
 
 **A**: OS X SDK는 Xcode 4.6 이상과 OS X 10.8 이상에서만 작동합니다.
 

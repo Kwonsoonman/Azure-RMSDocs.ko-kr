@@ -4,21 +4,21 @@ description: Windows용 Azure Information Protection 클라이언트 릴리스�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/05/2018
+ms.date: 12/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: bfca9c6aab0625a9d35d7648a53f7cce6b74bce6
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: c6312d3f10a70ffcb3cc48447fcbc751b7072a0d
+ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861220"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53335526"
 ---
 # <a name="azure-information-protection-client-version-release-history-and-support-policy"></a>Azure Information Protection 클라이언트: 버전 릴리스 기록 및 지원 정책
 
->*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Azure Information Protection 클라이언트를 정기적으로 업데이트합니다. 
 
@@ -46,7 +46,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 > [!TIP]
 > 레이블이 Office 365 보안 및 준수 센터에서 게시되었기 때문에 Azure Information Protection 통합 레이블 지정 클라이언트를 평가하는 데 관심이 있으신가요? [Azure Information Protection 통합 레이블 지정 클라이언트: 버전 릴리스 정보](unifiedlabelingclient-version-release-history.md)를 참조하세요.
 
-**릴리스 날짜**: 2018/11/27
+**릴리스 날짜**: 2018년 11월 27일
 
 이 버전에는 RMS 클라이언트의 MSIPC 버전 1.0.3592.627이 포함되어 있습니다.
 
@@ -112,6 +112,8 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
     
     - 새 cmdlet, [Start-AIPScan](/powershell/module/azureinformationprotection/Start-AIPScan): 일정을 수동으로 설정하는 경우 스캐너에 일회성 검사를 시작하도록 지시합니다.
     
+    - 이제 PDF 암호화에 대한 ISO 표준을 사용하는 경우 PDF 문서가 기본적으로 보호됩니다.
+    
     - SharePoint Server 2010은 [이 버전의 SharePoint에 대한 지원을 확장](https://support.microsoft.com/lifecycle/search?alpha=SharePoint%20Server%202010)한 고객에 대해 지원됩니다.
     
 - 중앙 위치에서 스캐너를 관리할 수 있는, Azure Portal의 새 **Azure Information Protection - Nodes (Preview)**(Azure Information Protection - 노드(미리 보기)) 블레이드에 대한 지원입니다. Azure에 연결된, 배포된 스캐너의 정보가 5분마다 업데이트됩니다. 이 블레이드에서 일회성 검사를 위해 스캐너를 시작하고, 모든 파일을 다시 검사하고, 스캐너의 상태를 확인하며, 검색 속도를 볼 수 있습니다.
@@ -150,7 +152,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 - 정책 버전은 1.4로 변경됩니다. 버전 번호를 식별하려면 [연결이 끊어진 컴퓨터를 구성](client-admin-guide-customizations.md#support-for-disconnected-computers)해야 합니다.
 
-- **도움말 및 피드백** 대화 상자의 **피드백 보내기** 링크가 제거됩니다. 이 링크는 일시적으로 **문제 보고**로 대체되었으나 지금은 미리 보기 버전에만 표시됩니다. 기본적으로 이 옵션은 Microsoft에 메일을 보내지만 이 메일 주소를 지정한 HTTP 문자열로 변경할 수 있습니다. 예를 들어 사용자가 문제를 보고하는 사용자 지정된 웹 페이지 또는 지원 센터로 이동하는 메일 주소입니다. 이 주소를 수정하려면 [고급 클라이언트 설정](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)을 사용합니다.
+- **도움말 및 피드백** 대화 상자의 **피드백 보내기** 링크가 제거됩니다. 기본적으로 이메일을 Microsoft로 전송하는 **문제 보고**를 사용하여 일시적으로 대체되었습니다. 2018년 12월부터 **문제 보고** 옵션은 기본적으로 표시되지 않지만, 링크에 대한 HTTP 문자열을 지정하는  [고급 클라이언트 설정](client-admin-guide-customizations.md#add-report-an-issue-for-users)을 사용하여 추가할 수 있습니다. 예를 들어 사용자가 문제를 보고하는 사용자 지정된 웹 페이지 또는 지원 센터로 이동하는 메일 주소입니다. 
 
 ## <a name="version-12950"></a>버전 1.29.5.0 
 
@@ -206,7 +208,7 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 클라이언트를 설치하고 사용하는 방법에 대한 자세한 내용은 다음과 같습니다. 
 
-- 사용자: [다운로드 및 클라이언트 설치](install-client-app.md)
+- 사용자의 경우: [다운로드 및 클라이언트 설치](install-client-app.md)
 
-- 관리자: [Azure Information Protection 클라이언트 관리자 가이드](client-admin-guide.md)
+- 관리자의 경우: [Azure Information Protection 클라이언트 관리자 가이드](client-admin-guide.md)
 

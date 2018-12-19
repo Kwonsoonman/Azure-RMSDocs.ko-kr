@@ -4,20 +4,20 @@ description: AD RMS에서 Azure Information Protection으로 마이그레이션 
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/13/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: c5bbf37e-f1bf-4010-a60f-37177c9e9b39
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 7ddaf0a54aa116a317cee8699caf437faae9676f
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 77037f5ab82e7b36899c4b1bdb2399d27b662a5d
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330335"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305044"
 ---
-# <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>2단계: HSM 보호된 키-HSM 보호된 키 마이그레이션
+# <a name="step-2-hsm-protected-key-to-hsm-protected-key-migration"></a>2단계: HSM 보호 키-HSM 보호 키 마이그레이션:
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
@@ -40,7 +40,7 @@ Azure Information Protection 테넌트 키는 Azure Key Vault에 저장되고 �
 > Azure Key Vault에 대한 구성 단계를 수행하려는데 이 Azure 서비스에 익숙하지 않은 경우 [Azure Key Vault 시작](/azure/key-vault/key-vault-get-started)을 먼저 검토하면 도움이 됩니다. 
 
 
-## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>1부: Azure 주요 자격 증명 모음에 키 전송
+## <a name="part-1-transfer-your-hsm-key-to-azure-key-vault"></a>1부: Azure Key Vault으로 HSM 키 전송
 
 이 절차는 Azure 주요 자격 증명 모음의 관리자가 수행합니다.
 

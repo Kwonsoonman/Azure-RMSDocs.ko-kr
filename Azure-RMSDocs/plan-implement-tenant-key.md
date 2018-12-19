@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: f0d33c5f-a6a6-44a1-bdec-5be1bc8e1e14
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2f0088cb2b95a9c0f7a50c780d89dec0b91111f4
-ms.sourcegitcommit: bcc9e0f9ae8512bf48d819533cf8ef3b667eb298
+ms.openlocfilehash: 3efae21dfabdb347826b177d5c58a3498d3276c5
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52330296"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173964"
 ---
 # <a name="planning-and-implementing-your-azure-information-protection-tenant-key"></a>Azure Information Protection 테넌트 키 계획 및 구현
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 이 문서의 정보는 Azure Information Protection 테넌트 키를 계획 및 관리하는 데 도움이 됩니다. 예를 들어 Microsoft에서 테넌트 키(기본값)를 관리하는 대신, 조직에 적용되는 특정 규정을 준수하도록 자체 테넌트 키를 관리하려고 할 수 있습니다. 자체 테넌트 키를 관리하는 것을 BYOK(bring your own key)라고도 합니다.
 
@@ -33,8 +33,8 @@ Azure Information Protection 테넌트 키란?
 
 |비즈니스 요구 사항|권장되는 테넌트 키 토폴로지|
 |------------------------|-----------------------------------|
-|Azure Information Protection을 특별한 하드웨어, 추가 소프트웨어 또는 Azure 구독 없이 신속하게 배포합니다.<br /><br />예: 테스트 환경 및 키 관리에 대한 규정 요구 사항이 조직에 없는 경우.|Microsoft에서 관리|
-|모든 수명 주기 작업에 대한 제어, 추가 보안 및 준수 규정. <br /><br />예: 키는 HSM(하드웨어 보안 모듈)로 보호되어야 합니다.|BYOK|
+|Azure Information Protection을 특별한 하드웨어, 추가 소프트웨어 또는 Azure 구독 없이 신속하게 배포합니다.<br /><br />예를 들면 다음과 같습니다. 테스트 환경 및 키 관리에 대한 규정 요구 사항이 조직에 없는 경우.|Microsoft에서 관리|
+|모든 수명 주기 작업에 대한 제어, 추가 보안 및 준수 규정. <br /><br />예를 들면 다음과 같습니다. 키는 HSM(하드웨어 보안 모듈)로 보호되어야 합니다.|BYOK|
 
 
 필요한 경우 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties) cmdlet을 사용하여 배포 후 테넌트 키 토폴로지를 변경할 수 있습니다.
@@ -44,11 +44,11 @@ Azure Information Protection 테넌트 키란?
 
 조직에 가장 적합한 테넌트 키 토폴로지를 결정하세요.
 
-- **Microsoft에서 관리**: Microsoft가 조직의 테넌트 키를 자동으로 생성하며, 이 키는 Azure Information Protection에서 단독으로 사용됩니다. 기본적으로 Microsoft는 이 키를 테넌트에 사용하고 테넌트 키 수명 주기에 대한 대부분의 측면을 관리합니다. 
+- **Microsoft에서 관리**: Microsoft에서 조직의 테넌트 키를 자동으로 생성하며, 이 키는 Azure Information Protection의 전용으로 사용됩니다. 기본적으로 Microsoft는 이 키를 테넌트에 사용하고 테넌트 키 수명 주기에 대한 대부분의 측면을 관리합니다. 
     
     이 옵션은 관리 오버헤드가 가장 낮은 가장 간단한 옵션입니다. 대부분의 경우 고객은 테넌트 키를 가지고 있다는 사실조차 알 필요가 없습니다. Azure Information Protection에 등록하기만 하면 나머지 키 관리 프로세스는 Microsoft에서 처리합니다.
 
-- **고객이 직접 관리(BYOK)**: 테넌트 키를 완전히 제어하려면 Azure Information Protection과 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)를 사용하십시오. 이러한 테넌트 키 토폴로지의 경우 Key Vault에서 직접 키를 만들거나 온-프레미스에서 만듭니다. 온-프레미스에서 만들면 이 키를 Key Vault로 전송하거나 가져옵니다. 그런 다음 이 키를 사용하도록 Azure Information Protection을 구성하고 Azure Key Vault에서 관리합니다.
+- **고객이 직접 관리(BYOK)**: 테넌트 키를 완전히 제어하려면 Azure Information Protection에서 [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)를 사용하십시오. 이러한 테넌트 키 토폴로지의 경우 Key Vault에서 직접 키를 만들거나 온-프레미스에서 만듭니다. 온-프레미스에서 만들면 이 키를 Key Vault로 전송하거나 가져옵니다. 그런 다음 이 키를 사용하도록 Azure Information Protection을 구성하고 Azure Key Vault에서 관리합니다.
     
 
 ### <a name="more-information-about-byok"></a>BYOK에 대한 추가 정보
@@ -90,7 +90,7 @@ Microsoft가 테넌트 키를 관리하도록 결정한 경우:
 
 - AD RMS에서 마이그레이션하는 경우가 아니라면 키를 생성하기 위해 추가적인 조치가 필요하지 않으므로 [다음 단계](plan-implement-tenant-key.md#next-steps)로 바로 이동할 수 있습니다.
 
-- 현재 AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)이라는 지침을 참조하세요. 
+- 현재 AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md) 지침을 참조하세요. 
 
 테넌트 키를 직접 관리하기로 결정한 경우 다음 섹션에서 자세한 내용을 확인하세요.
 
@@ -106,8 +106,8 @@ BYOK(Bring Your Own Key) 사전 요구 사항 목록은 다음 표를 참조하�
 
 |요구 사항|추가 정보|
 |---------------|--------------------|
-|Azure Information Protection 테넌트는 Azure 구독이 있어야 합니다. 구독이 없는 경우 [무료 계정](https://azure.microsoft.com/pricing/free-trial/)을 등록할 수 있습니다. <br /><br /> HSM 보호 키를 사용하려면 Azure Key Vault 프리미엄 서비스 계층이 있어야 합니다.|Azure Active Directory 구성 및 Azure Rights Management 사용자 지정 템플릿 구성에 대한 액세스 권한을 제공하는 무료 Azure 구독(**Azure Active Directory에 액세스**)은 Azure Key Vault를 사용하기에 충분하지 않습니다. BYOK에 대해 사용할 수 있는 Azure 구독이 있는지 확인하려면 [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet을 사용하세요. <br /><br /> 1. **Run as administrator**(관리자로 실행) 옵션으로 Azure PowerShell 세션을 시작하고 다음 명령을 사용하여 Azure Information Protection 테넌트의 전역 관리자로 로그인합니다. `Login-AzureRmAccount`<br /><br />2. 다음을 입력하고 구독 이름 및 ID, Azure Information Protection 테넌트 ID에 대해 표시된 값과 상태가 활성화되어 있는지 확인합니다. `Get-AzureRmSubscription`<br /><br />값이 표시되지 않고 프롬프트로 돌아가는 경우 BYOK를 사용할 수 있는 Azure 구독이 없습니다. <br /><br />**참고**: 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure Information Protection으로 마이그레이션하는 경우, BYOK 필수 조건에 더해 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
-|온-프레미스에서 생성한 HSM 보호 키를 사용하려면: <br /><br />- Key Vault BYOK에 대해 나열된 모든 필수 조건 |Azure Key Vault 설명서에서 [BYOK에 대한 필수 조건](/azure/key-vault/key-vault-hsm-protected-keys#prerequisites-for-byok)을 참조하세요. <br /><br /> **참고**: 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure Information Protection으로 마이그레이션하는 경우, BYOK 필수 조건에 더해 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
+|Azure Information Protection 테넌트는 Azure 구독이 있어야 합니다. 구독이 없는 경우 [무료 계정](https://azure.microsoft.com/pricing/free-trial/)을 등록할 수 있습니다. <br /><br /> HSM 보호 키를 사용하려면 Azure Key Vault 프리미엄 서비스 계층이 있어야 합니다.|Azure Active Directory 구성 및 Azure Rights Management 사용자 지정 템플릿 구성에 대한 액세스 권한을 제공하는 무료 Azure 구독(**Azure Active Directory에 액세스**)은 Azure Key Vault를 사용하기에 충분하지 않습니다. BYOK에 대해 사용할 수 있는 Azure 구독이 있는지 확인하려면 [Azure Resource Manager](https://msdn.microsoft.com/library/azure/mt786812\(v=azure.300\).aspx) PowerShell cmdlet을 사용하세요. <br /><br /> 1. **Run as administrator**(관리자로 실행) 옵션으로 Azure PowerShell 세션을 시작하고 다음 명령을 사용하여 Azure Information Protection 테넌트의 전역 관리자로 로그인합니다. `Login-AzureRmAccount`<br /><br />2. 다음을 입력하고 구독 이름 및 ID, Azure Information Protection 테넌트 ID에 대해 표시된 값과 상태가 활성화되어 있는지 확인합니다. `Get-AzureRmSubscription`<br /><br />값이 표시되지 않고 프롬프트로 돌아가는 경우 BYOK를 사용할 수 있는 Azure 구독이 없습니다. <br /><br />**참고**: 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure Information Protection으로 마이그레이션하는 경우, BYOK 필수 조건 외에 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
+|온-프레미스에서 생성한 HSM 보호 키를 사용하려면: <br /><br />- Key Vault BYOK에 대해 나열된 모든 필수 조건 |Azure Key Vault 설명서에서 [BYOK에 대한 필수 조건](/azure/key-vault/key-vault-hsm-protected-keys#prerequisites-for-byok)을 참조하세요. <br /><br /> **참고**: 소프트웨어 키-하드웨어 키를 사용하여 AD RMS에서 Azure Information Protection으로 마이그레이션하는 경우, BYOK 필수 조건 외에 11.62 버전 이상의 Thales 펌웨어가 있어야 합니다.|
 |테넌트 키를 포함할 키 자격 증명 모음이 Azure Key Vault의 Virtual Network 서비스 엔드포인트를 사용하는 경우: <br /><br />- 신뢰할 수 있는 Microsoft 서비스가 이 방화벽을 우회할 수 있습니다.|자세한 내용은 [Azure Key Vault의 Virtual Network 서비스 엔드포인트(미리 보기)](/azure/key-vault/key-vault-overview-vnet-service-endpoints)를 참조하세요.|
 |Windows PowerShell용 Azure Rights Management 관리 모듈.|설치 지침은 [AADRM PowerShell 모듈 설치](./install-powershell.md)를 참조하세요. <br /><br />이전에 이 Windows PowerShell 모듈을 설치한 경우 다음 명령을 실행하여 버전 번호가 **2.9.0.0** 이상인지 확인합니다. `(Get-Module aadrm -ListAvailable).Version`|
 
@@ -184,7 +184,7 @@ PowerShell을 사용하여 구성:
 >
 >이 명령을 실행할 때 키 이름과 함께 키 버전을 지정하세요. Azure Key Vault cmd([Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey))를 사용하여 현재 키의 버전 번호를 가져올 수 있습니다. 예를 들어 `Get-AzureKeyVaultKey -VaultName 'contosorms-kv' -KeyName 'contosorms-byok'`를 구성할 수 있습니다.
 
-Azure Information Protection에 대해 키 URL이 제대로 설정되어 있는지 확인하려면 Azure Key Vault에서 [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey)를 실행하여 키 URL을 확인할 수 있습니다.
+키 URL이 Azure Information Protection에 대해 올바르게 설정되어 있는지 확인 하려면 Azure Key Vault에서 [Get-AzureKeyVaultKey](/powershell/module/azurerm.keyvault\get-azurekeyvaultkey)를 실행하여 키 URL을 확인합니다.
 
 마지막으로 Azure Rights Management 서비스가 이미 활성화된 경우 [Set-AadrmKeyProperties](/powershell/module/aadrm/set-aadrmkeyproperties)를 실행하여 Azure Information Protection에 이 키를 Azure Rights Management 서비스에 대한 활성 테넌트 키로 사용하도록 알립니다. 이 단계를 수행하지 않으면 Azure Information Protection은 테넌트에 대해 자동으로 생성된 기본 Microsoft 관리 키를 계속 사용합니다.
 

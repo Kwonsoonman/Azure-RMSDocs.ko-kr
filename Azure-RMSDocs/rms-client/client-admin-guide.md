@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트 배포를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/02/2018
+ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 33a5982f-7125-4031-92c2-05daf760ced1
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: be6477edae471bddbcf3a5d4e6c7bb0cfcec1e4e
-ms.sourcegitcommit: 4f22874c3c2fb9632d57932148664c40b3907a78
+ms.openlocfilehash: a9f54931d8409fd88bddb6be85f1a0d7c2b416a1
+ms.sourcegitcommit: 40ea9568688b9da95d72b48f02b4152e54da17c6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52831258"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53029407"
 ---
 # <a name="azure-information-protection-client-administrator-guide"></a>Azure Information Protection 클라이언트 관리자 가이드
 
@@ -98,15 +98,15 @@ Windows Update, 실행 파일, 또는 Windows Installer 파일을 사용하여 A
 
 클라이언트를 설치할 때 **도움말 및 피드백** 옵션을 사용하여 **Microsoft Azure Information Protection** 대화 상자를 엽니다.
 
-- Office 응용 프로그램에서: **홈** 탭의 **보호** 그룹에서 **보호**를 선택한 다음 **도움말 및 피드백**을 선택합니다.
+- Office 응용 프로그램에서: **홈** 탭의 **보호** 그룹에서 **보호**를 선택한 다음, **도움말 및 피드백**을 선택합니다.
 
-- 파일 탐색기에서: 마우스 오른쪽 단추로 파일 또는 폴더를 선택한 다음 **분류 및 보호**를 선택하고 **도움말 및 피드백**을 선택합니다. 
+- 파일 탐색기에서: 파일 또는 폴더를 마우스 오른쪽 단추로 선택한 다음, **분류 및 보호**를 선택하고 **도움말 및 피드백**을 선택합니다. 
 
 #### <a name="help-and-feedback-section"></a>**도움말 및 피드백** 섹션
 
 **추가 정보 링크**를 클릭하면 기본적으로 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동되지만 Azure Information Protection 정책의 [정책 설정](../configure-policy-settings.md) 중 하나로 사용자 지정 URL로 이동하도록 이 링크를 구성할 수 있습니다.
 
-**문제 보고** 링크는 일반 공급 버전이 아닌 클라이언트 미리 보기 버전에 표시됩니다. 기본적으로 이 옵션을 사용하면 Microsoft에 메일이 전송되지만 [고급 클라이언트 설정](client-admin-guide-customizations.md#modify-the-email-address-for-the-report-an-issue-link)을 지정하여 사용자에 대한 HTTP 문자열을 구성할 수 있습니다. 예를 들어, 지원 센터의 메일 주소를 지정합니다.
+**문제 보고** 링크는 [고급 클라이언트 설정](client-admin-guide-customizations.md#add-report-an-issue-for-users)을 지정하는 경우에만 표시됩니다. 이 설정을 구성하는 경우 기술 지원팀의 이메일 주소와 같은 HTTP 링크를 지정합니다.
 
 **로그 내보내기**는 Microsoft 지원에 로그 파일을 보내라는 요청을 받았을 때 Azure Information Protection 클라이언트의 로그 파일을 자동으로 수집하여 첨부합니다. 최종 사용자가 이 옵션을 사용하여 이러한 로그 파일을 지원 센터로 보낼 수도 있습니다.
 
@@ -150,7 +150,7 @@ Windows Update, 실행 파일, 또는 Windows Installer 파일을 사용하여 A
 
 **마지막 연결**은 클라이언트가 조직의 Azure Information Protection 서비스에 마지막으로 연결된 시기를 표시합니다. **Information Protection 정책 설치** 날짜 및 시간과 함께 이 정보를 사용하여 Azure Information Protection 정책이 마지막으로 설치되거나 업데이트된 시기를 확인할 수 있습니다. 클라이언트는 서비스에 연결할 때 현재 정책에서 변경된 사항이 발견될 경우, 그리고 24시간마다 최신 정책을 자동으로 다운로드합니다. 표시된 시간 이후에 정책을 변경한 경우 Office 응용 프로그램을 닫았다가 다시 엽니다.
 
-**This client is not licensed for Office Professional Plus**(Office Professional Plus 대상 클라이언트가 아님)이 표시될 경우: Azure Information Protection 클라이언트에서 설치된 버전의 Office가 Rights Management 보호의 적용을 지원하지 않는 것을 감지했습니다. 이 상태가 감지되면 보호를 적용하는 레이블이 Azure Information Protection 막대에 표시되지 않습니다.
+**이 클라이언트는 Office Professional Plus에 대해 사용이 허가되지 않았습니다**라는 메시지가 표시되는 경우 Azure Information Protection 클라이언트에서 설치된 버전의 Office가 Rights Management 보호의 적용을 지원하지 않는 것을 감지했습니다. 이 상태가 감지되면 보호를 적용하는 레이블이 Azure Information Protection 막대에 표시되지 않습니다.
 
 **버전** 정보를 사용하여 설치된 클라이언트 버전을 확인합니다. **새로운 기능** 링크를 클릭하고 클라이언트의 [버전 릴리스 기록](client-version-release-history.md)을 읽으면 이 버전이 최신 릴리스 버전인지 여부와 해당 수정 사항 및 새로운 기능을 확인할 수 있습니다.
 
@@ -166,9 +166,9 @@ Azure Information Protection 클라이언트는 Office 365가 지원하는 같�
 
 Azure Information Protection 클라이언트를 설치한 후 문서 및 메일에 레이블을 지정하는 방법에 대한 지침과 특정 시나리오의 경우 선택하는 레이블에 대한 지침을 사용자에게 제공합니다. 예를 들면 다음과 같습니다.
 
-- 온라인 사용자 지침: [Azure Information Protection 사용자 가이드](client-user-guide.md)
+- 온라인 사용자 지침 [Azure Information Protection 사용자 가이드](client-user-guide.md)
 
-- 사용자 지정 가능한 사용자 가이드 다운로드: [Azure Information Protection 최종 사용자 채택 가이드](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
+- 사용자 지정 가능한 사용자 가이드를 다운로드합니다. [Azure Information Protection 최종 사용자 채택 가이드](https://download.microsoft.com/download/7/1/2/712A280C-1C66-4EF9-8DC3-88EE43BEA3D4/Azure_Information_Protection_End_User_Adoption_Guide_EN_US.pdf)
 
 ### <a name="update-macros-in-excel-spreadsheets"></a>Excel 스프레드시트에서 매크로 업데이트
 
@@ -202,13 +202,13 @@ Azure Information Protection 스캐너를 업그레이드하려면 최신 버전
 
 - Azure Information Protection 클라이언트를 업그레이드한 후에 [Update-AIPScanner](/powershell/module/azureinformationprotection/Update-AIPScanner)를 실행합니다. 스캐너 및 리포지토리에 대한 구성 설정은 유지됩니다. 이 cmdlet을 실행하려면 스캐너에 대한 데이터베이스 스키마를 업데이트해야 하고 필요한 경우 스캐너 서비스 계정에 스캐너 데이터베이스에 대한 삭제 권한을 부여합니다. 
     
-    이 업데이트 cmdlet을 실행할 때까지 스캐너가 실행되지 않으며 일반적으로 Windows 이벤트 로그에 이벤트 ID **1000**이 보이고 **개체 이름 ‘ScannerStatus’가 잘못되었습니다**라는 오류 메시지가 표시됩니다.
+    이 업데이트 cmdlet을 실행할 때까지 스캐너가 실행되지 않으며 일반적으로 Windows 이벤트 로그에 이벤트 ID **1000**이 표시되고 **개체 이름 ‘ScannerStatus’가 잘못되었습니다**라는 오류 메시지가 나타납니다.
 
 ## <a name="uninstalling-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 제거
 
 다음 옵션 중 하나를 사용하여 클라이언트를 제거할 수 있습니다.
 
-- 제어판을 사용하여 프로그램을 제거합니다. **Microsoft Azure Information Protection** > **제거**를 클릭합니다.
+- 제어판을 사용하여 프로그램을 제거합니다. **Microsoft Azure Information Protection** > **제거** 클릭
 
 - **AzInfoProtection.exe**와 같은 실행 파일을 다시 실행하고 **설치 수정** 페이지에서 **제거**를 클릭합니다. 
 

@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 11ffa730-c5dc-4b6b-9c1e-c58eff8aafc2
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: d93e761db545ac9934ca04f7cad148203cdb8c12
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 1a09edc0ed8a9bad27aa599282c9aaaf42ffc07a
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151778"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173675"
 ---
 # <a name="preparing-the-environment-for-azure-rights-management-when-you-also-have-active-directory-rights-management-services-ad-rms"></a>AD RMS(Active Directory Rights Management Services)도 배포했을 때 Azure Rights Management를 위한 환경 준비
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!IMPORTANT]
 > AD RMS(Active Directory Rights Management Services)를 사용하는 경우 지침
@@ -85,9 +85,9 @@ Azure Rights Management를 비활성화하려면 다음 절차 중 하나를 사
 
 정보 표시줄에 **비활성화가 성공적으로 완료됨**이 표시되고 **비활성화**는 이제 **활성화**로 바뀝니다. 
 
-### <a name="step-2-start-planning-for-migration"></a>2단계: 마이그레이션 계획 시작
+### <a name="step-2-start-planning-for-migration"></a>2단계: 마이그레이션 플랜 시작
 
-마이그레이션 지침: [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
+다음과 같은 마이그레이션 지침을 참조하세요. [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)
 
 
 ## <a name="your-subscription-was-purchased-before-or-during-february-2018-and-you-have-exchange-online"></a>구독을 2018년 2월 이전 또는 2월 중에 구매했으며, Exchange Online을 사용하고 있습니다.
@@ -102,9 +102,9 @@ Microsoft가 Azure Rights Management 또는 Azure Information Protection이 포�
 
 [추가 정보](https://support.office.com/article/protection-features-in-azure-information-protection-rolling-out-to-existing-office-365-tenants-7ad6f58e-65d7-4c82-8e65-0b773666634d) 
 
-### <a name="step-2-start-planning-for-migration"></a>2단계: 마이그레이션 계획 시작
+### <a name="step-2-start-planning-for-migration"></a>2단계: 마이그레이션 플랜 시작
 
-마이그레이션 지침: [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
+다음과 같은 마이그레이션 지침을 참조하세요. [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)
 
 
 ## <a name="you-see-an-option-to-activate-protection-when-you-configure-azure-information-protection"></a>Azure Information Protection을 구성할 때 보호를 활성화하는 옵션이 표시됩니다.
@@ -117,9 +117,9 @@ AD RMS도 사용하는 경우 **활성화** 옵션을 선택하지 않아야 합
 
 **Azure Information Protection - 레이블** 블레이드에서 데이터 보호 옵션이 포함되지 않은 레이블을 확인하고 구성합니다. 레이블 및 정책 설정을 구성하는 방법에 대한 자세한 내용은 [Azure Information Protection 정책 구성](configure-policy.md)을 참조하세요.
 
-### <a name="step-2-start-planning-for-migration"></a>2단계: 마이그레이션 계획 시작
+### <a name="step-2-start-planning-for-migration"></a>2단계: 마이그레이션 플랜 시작
 
-마이그레이션 지침: [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
+다음과 같은 마이그레이션 지침을 참조하세요. [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)
 
 ### <a name="step-3-configure-labels-for-protection"></a>3단계: 보호를 위한 레이블 구성
 

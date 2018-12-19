@@ -4,22 +4,22 @@ description: Azure RMS(Azure Rights Management)에서 사용 현황 로깅을 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 05/16/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: a735f3f7-6eb2-4901-9084-8c3cd3a9087e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 1deea1b4353e2d48c85ae24625ab29eca96a3968
-ms.sourcegitcommit: bf58c5d94eb44a043f53711fbdcf19ce503f8aab
+ms.openlocfilehash: 3d287df4fbea3f4b040444182aed89da7c470ea1
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47211329"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305644"
 ---
 # <a name="logging-and-analyzing-usage-of-the-azure-rights-management-service"></a>Azure Rights Management 서비스의 사용 현황 로깅 및 분석
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 이 정보를 통해 Azure Information Protection의 Azure Rights Management 서비스에 대한 사용 현황 로깅을 사용하는 방법을 파악할 수 있습니다. 이 서비스는 조직의 문서 및 메일에 대한 데이터 보호를 제공하고 모든 요청을 기록할 수 있습니다. 이러한 요청에는 사용자가 문서 및 메일을 보호하고 이 콘텐츠를 사용하는 시기, 이 서비스에 대해 관리자가 수행하는 작업, Azure Information Protection 배포를 지원하기 위해 Microsoft 운영자가 수행하는 작업이 포함됩니다. 
 
@@ -37,7 +37,7 @@ ms.locfileid: "47211329"
 
 -   **법정 분석 수행**
 
-    정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. 이 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure Rights Management 서비스로 보호되는 문서와 사진을 열려면 항상 Rights Management 라이선스를 받아야 하기 때문입니다. 이는 메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 저장소 장치에 복사하는 경우에도 마찬가지입니다. 즉, Azure Rights Management 서비스를 사용하여 데이터를 보호하는 경우 이 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
+    정보가 유출된 경우 최근 특정 문서에 액세스한 사용자와 유출이 의심되는 사용자가 최근 액세스한 정보를 확인해야 할 가능성이 높습니다. 이 로깅을 사용하는 경우 관련 질문에 답할 수 있습니다. 보호된 콘텐츠의 사용자가 Azure Rights Management 서비스로 보호되는 문서와 사진을 열려면 항상 Rights Management 라이선스를 받아야 하기 때문입니다. 이는 이메일을 통해 이러한 파일을 이동하거나 USB 드라이브 또는 기타 스토리지 디바이스에 복사하는 경우에도 마찬가지입니다. 즉, Azure Rights Management 서비스를 사용하여 데이터를 보호하는 경우 이 로그를 법정 분석용의 최종 정보 출처로 사용할 수 있습니다.
 
 이 사용 현황 로깅 외에도 다음 로깅 옵션도 있습니다.
 
@@ -52,8 +52,8 @@ ms.locfileid: "47211329"
 
 Azure Rights Management 서비스에 대한 사용 현황 로깅에 대한 자세한 내용은 다음 섹션에서 확인할 수 있습니다. 
 
-## <a name="how-to-enable-azure-rights-management-usage-logging"></a>Azure 권한 관리 사용 현황 로깅을 사용하도록 설정하는 방법
-2016년 2월부터 모든 고객에 대해 Azure 권한 관리 사용 현황 로깅이 기본적으로 사용됩니다. 이 내용은 2016년 2월 이전에 Azure Rights Management 서비스를 활성화한 고객과 2016년 2월 이후에 서비스를 활성화하는 고객에게 적용됩니다. 
+## <a name="how-to-enable-azure-rightsmanagement-usage-logging"></a>Azure 권한 관리 사용 현황 로깅 사용 방법
+2016년 2월부터 Azure 권한 관리 사용 현황 로깅은 기본적으로 모든 고객에 대해 설정됩니다. 이 내용은 2016년 2월 이전에 Azure Rights Management 서비스를 활성화한 고객과 2016년 2월 이후에 서비스를 활성화하는 고객에게 적용됩니다. 
 
 > [!NOTE]
 > 로그 저장소 또는 로깅 기능에 대한 무료로 제공됩니다.
@@ -190,7 +190,7 @@ Azure Rights Management 서비스에는 다양한 요청 형식이 있습니다.
 |FECreatePublishingLicenseV1|Certify 및 GetClientLicensorCert가 결합된 형태의 요청으로, 모바일 클라이언트에서 사용됩니다.|
 |FEGetAllTemplates|모바일 장치(프런트 엔드)에서 템플릿을 가져오도록 호출합니다.|
 |FindServiceLocationsForUser|Certify 또는 AcquireLicense를 호출하는 데 사용되는 Url을 쿼리하도록 호출합니다.|
-|GetAllDocs|사용자에 대한 **모든 문서** 페이지를 로드하거나 테넌트에 대한 모든 문서를 검색하도록 문서 추적 사이트에서 호출합니다. 관리 작업 및 관리자 권한으로 실행 필드와 함께 이 값을 사용합니다.<br /><br />- 관리 작업이 비어 있는 경우: 사용자에게 해당 문서에 대한 **모든 문서** 페이지가 표시됩니다.<br /><br />- 관리 작업이 true이고 사용자 권한으로 실행이 비어 있는 경우: 관리자에게 해당 테넌트에 대한 모든 문서가 표시됩니다.<br /><br />- 관리 작업이 true이고 사용자 권한으로 실행이 비어 있지 않은 경우: 관리자에게 사용자에 대한 **모든 문서**가 표시됩니다.|
+|GetAllDocs|사용자에 대한 **모든 문서** 페이지를 로드하거나 테넌트에 대한 모든 문서를 검색하도록 문서 추적 사이트에서 호출합니다. 관리 작업 및 관리자 권한으로 실행 필드와 함께 이 값을 사용합니다.<br /><br />- admin-action이 비어 있는 경우: 사용자에게 자신의 문서에 대한 **모든 문서** 페이지가 표시됩니다.<br /><br />- admin-action이 true이고 acting-as-user가 비어 있는 경 우: 관리자에게 해당 테넌트에 대한 모든 문서가 표시됩니다.<br /><br />- admin-action이 true이고 acting-as-user가 비어 있지 않은 경우: 관리자에게 사용자에 대한 **모든 문서** 페이지가 표시됩니다.|
 |GetAllTemplates|Azure 포털에서 모든 템플릿을 가져오도록 호출합니다.|
 |GetClientLicensorCert|클라이언트가 Windows 기반 컴퓨터에서 게시 인증서(나중에 콘텐츠를 보호하는 데 사용됨)를 요청합니다.|
 |GetConfiguration|Azure PowerShell cmdlet은 Azure RMS 테넌트의 구성을 가져오도록 호출됩니다.|

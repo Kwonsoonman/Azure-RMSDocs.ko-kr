@@ -4,16 +4,16 @@ description: 모든 사용자에 대한 전역 정책 또는 사용자 하위 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 04/30/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 0546cc11-67a5-4194-8c54-f3ac8ce9ebe1
-ms.openlocfilehash: f097ec2f0e3db75d679e6c0a6251fb128f583d4b
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 367426324af487cbdf0ddaac53eb86aa89c168b7
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023307"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304860"
 ---
 # <a name="add-or-remove-a-label-to-or-from-an-azure-information-protection-policy"></a>Azure Information Protection 정책에 대해 레이블을 추가 또는 제거
 
@@ -33,7 +33,7 @@ Azure Information Protection 레이블을 만든 후에 사용자가 사용할 �
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
-2. **분류** > **정책** 메뉴 옵션에서: 추가하거나 제거할 레이블이 모든 사용자에게 적용될 경우 **Azure Information Protection** - **정책** 블레이드에서 **글로벌**을 선택합니다.
+2. **분류** > **정책** 메뉴 옵션에서: 추가하거나 제거할 레이블이 모든 사용자에게 적용되는 경우 **Azure Information Protection** - **정책** 블레이드에서 **글로벌**을 선택합니다.
 
     추가하거나 제거할 레이블이 사용자 하위 집합에 적용될 경우에는 범위 지정 정책을 선택합니다.
 

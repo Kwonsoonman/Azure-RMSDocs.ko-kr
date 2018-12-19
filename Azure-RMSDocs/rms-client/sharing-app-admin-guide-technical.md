@@ -10,12 +10,12 @@ ms.service: information-protection
 ms.assetid: f7b13fa4-4f8e-489a-ba46-713d7a79f901
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: ec0c231e2036dc66b941be7f764bb5e5fd5c518a
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 7104da9852458cbe9100600c3e14b43ee4aa7986
+ms.sourcegitcommit: 2a1c0882d2b0400f4da6370dbc1830df09867e3d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53023808"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53218479"
 ---
 # <a name="technical-overview-and-protection-details-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보
 
@@ -34,7 +34,7 @@ Microsoft Rights Management 공유 응용 프로그램은 선택적으로 다운
 
 -   FCI(파일 분류 인프라) 및 지원되는 PDF 작성 도구를 사용하여 보호된 PDF 파일과의 완벽한 상호 운용성을 제공합니다.
 
-Microsoft Rights Management 공유 응용 프로그램은 [AD RMS 클라이언트 2.1 런타임](http://www.microsoft.com/download/details.aspx?id=38396)을 사용합니다. Microsoft Rights Management 공유 응용 프로그램은 AD RMS 2.1의 기능을 사용하여 최종 사용자에게 단순한 보호 및 사용 환경을 제공합니다.
+Microsoft Rights Management 공유 응용 프로그램은 [AD RMS 클라이언트 2.1 런타임](https://www.microsoft.com/download/details.aspx?id=38396)을 사용합니다. Microsoft Rights Management 공유 응용 프로그램은 AD RMS 2.1의 기능을 사용하여 최종 사용자에게 단순한 보호 및 사용 환경을 제공합니다.
 
 RMS의 2013년 10월 릴리스를 설치하면 Office 2010을 사용해 문서를 기본적으로 보호할 수 있으며 다른 회사 직원에게 문서를 보낼 수 있습니다. 문서를 받은 사용자는 Azure Information Protection의 Azure Rights Management 서비스를 통해 문서를 사용할 수 있습니다. 또한 이 릴리스에서는 암호화 모드 2에서 AD RMS를 사용하는 경우 개별 사용자에 대해 RMS를 사용할 수 있으며 Azure Rights Management 서비스를 사용하는 다른 회사 직원의 콘텐츠도 사용할 수 있습니다. 암호화 모드 2에 대한 자세한 내용은 [AD RMS 암호화 모드](https://technet.microsoft.com/library/hh867439%28v=ws.10%29.aspx)를 참조하세요.
 
@@ -110,7 +110,7 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 
 이 두 설정을 사용하면 RMS 공유 응용 프로그램이 특정 파일 이름 확장명을 사용하는 모든 파일에 일반 보호를 적용합니다. 이러한 결과를 원하는 경우에는 추가 구성을 수행할 필요가 없습니다. 그러나 계속 기본적으로 보호되도록 특정 파일 형식에 대해 예외를 정의할 수 있습니다. 이렇게 하려면 각 파일 형식에 대해 추가로 3개 레지스트리를 편집해야 합니다.
 
-1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: 파일 이름 확장명(앞의 마침표는 제외)이 이름으로 지정된 새 키를 추가합니다.
+1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC\RmsSharingApp\FileProtection**: 파일 이름 확장명의 이름(앞에 점 포함 안 함)을 가진 키를 새로 추가합니다.
 
     예를 들어 파일 이름 확장명이 .docx인 파일의 경우 **DOCX**키를 만듭니다.
 
@@ -126,7 +126,7 @@ RMS 공유 응용 프로그램이 파일 보호를 차단하도록, 즉 기본 �
 
 -   **Pfile**: 일반 보호
 
--   **Native**: 기본 보호
+-   **기본**: 기본 보호
 
 -   **Off**: 보호 차단
 

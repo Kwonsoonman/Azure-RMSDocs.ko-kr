@@ -1,27 +1,27 @@
 ---
 title: Windows 스토어 설정 | Azure RMS
-description: Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+description: Windows 스토어 애플리케이션에서 Microsoft Rights Management SDK 4.2를 통해 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
 manager: mbaldwin
-ms.date: 02/23/2017
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 2720aa0e-0d37-469f-be99-678bf95a9c51
 audience: developer
 ms.reviewer: shubhamp
 ms.suite: ems
-ms.openlocfilehash: f7fde149e080607633b0e916123d4da1e06d7715
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 6d16237ff8d4fbfe1b26a73577c16b78b31849e1
+ms.sourcegitcommit: 1cd4edd4ba1eb5e10cb61628029213eda316783a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44147513"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266361"
 ---
 # <a name="windows-store-setup"></a>Windows 스토어 설정
 
-Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+Windows 스토어 애플리케이션에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 
 이 항목에서는 새 앱을 만들기 위한 환경을 설정하는 과정을 안내합니다.
 
@@ -35,11 +35,11 @@ Windows 스토어 응용 프로그램에서 Microsoft Rights Management SDK 4.2�
 
 개발 시스템에 다음 소프트웨어가 있어야 합니다.
 
--   [Windows 8.1](http://windows.microsoft.com/en-US/windows-8/meet) 운영 체제
+-   [Windows 8.1](https://windows.microsoft.com/windows-8/meet) 운영 체제
 -   [Windows 8.1용 Windows SDK](https://msdn.microsoft.com/windows/desktop/bg162891.aspx)
--   Microsoft [Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview) 이상 또는 Windows 8.0/8.1용 Windows SDK에 포함되어 있는 Visual Studio Express 2012
--   Windows 스토어 응용 프로그램용 MS RMS SDK 4.2 패키지 자세한 내용은 [시작](get-started.md)을 참조하세요.
--   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/library/jj573266.aspx)를 사용하는 것이 좋으며 다른 인증 라이브러리를 사용할 수도 있습니다.
+-   Microsoft [Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/) 이상 또는 Windows 8.0/8.1용 Windows SDK에 포함되어 있는 Visual Studio Express 2012
+-   Windows 스토어 애플리케이션용 MS RMS SDK 4.2 패키지 자세한 내용은 [시작](get-started.md)을 참조하세요.
+-   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/library/jj573266.aspx)를 사용하는 것이 좋지만 다른 인증 라이브러리를 사용할 수도 있습니다.
 
 API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
@@ -77,8 +77,8 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 [개발자 용어 및 개념](core-concepts.md)
 
-[Windows 8](http://windows.microsoft.com/en-US/windows-8/meet)
+[Windows 8](https://windows.microsoft.com/windows-8/meet)
 
-[Visual Studio 2012](http://www.microsoft.com/visualstudio/eng/products/visual-studio-overview)
+[Visual Studio 2012](https://visualstudio.microsoft.com/vs/older-downloads/)
 
 [Windows API 참조](https://msdn.microsoft.com/library/dn891914.aspx)

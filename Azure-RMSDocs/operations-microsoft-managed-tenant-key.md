@@ -4,22 +4,22 @@ description: Microsoft에서 Azure Information Protection용 테넌트 키를 �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 03/07/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 3c48cda6-e004-4bbd-adcf-589815c56c55
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 6fd356e88cbd7581bfafaf9a946eaa8fd9eba15e
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 3cddb4660ddae7bb19ff2ef1994fb4fa3c0bf9a6
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44149517"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305389"
 ---
 # <a name="microsoft-managed-tenant-key-life-cycle-operations"></a>Microsoft 관리: 테넌트 키 수명 주기 작업
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Microsoft에서 Azure Information Protection용 테넌트 키를 관리하는 경우(기본값) 다음 섹션에서 이 토폴로지와 관련된 수명 주기 작업에 대한 자세한 내용을 확인하세요.
 
@@ -72,14 +72,14 @@ Microsoft에서 테넌트 키를 백업하며 사용자는 아무런 작업을 �
     ```
     AadrmTpd.exe -createkey
     ```
-    그러면 RSA 키 쌍이 생성되며 공용 및 개인 키가 현재 폴더에 파일로 저장됩니다. 예를 들어 **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 및 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**입니다.
+    그러면 RSA 키 쌍이 생성되며 공용 및 개인 키가 현재 폴더에 파일로 저장됩니다. 예를 들면 다음과 같습니다. **PublicKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt** 및 **PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt**입니다.
 
     이름이 **PublicKey**로 시작하는 파일을 첨부하여 CSS의 메일에 회신합니다. 그러면 CSS에서 RSA 키를 사용하여 암호화된 .xml 파일 형태로 TPD 파일을 보냅니다. 원래 AadrmTpd 도구를 실행한 것과 같은 폴더에 이 파일을 복사하고 **PrivateKey**로 시작하는 파일과 CSS의 파일을 사용하여 도구를 다시 실행합니다. 예를 들면 다음과 같습니다.
 
     ```
     AadrmTpd.exe -key PrivateKey-FA29D0FE-5049-4C8E-931B-96C6152B0441.txt -target TPD-77172C7B-8E21-48B7-9854-7A4CEAC474D0.xml
     ```
-    이 명령을 실행하면 암호로 보호된 TPD의 일반 텍스트 암호가 포함된 파일, 암호로 보호된 TPD 자체 등 두 개의 파일이 출력됩니다. 파일에는 새 GUID가 있습니다. 예:
+    이 명령을 실행하면 두 개의 파일이 출력되어야 합니다. 하나는 암호로 보호된 TPD의 일반 텍스트 암호가 포함된 파일이고 다른 하나는 암호로 보호된 TPD 자체입니다. 파일에는 새 GUID가 있습니다. 예:
      
     - Password-5E4C2018-8C8C-4548-8705-E3218AA1544E.txt
 

@@ -4,18 +4,18 @@ description: 보호 전용 모드에서 Azure Information Protection 클라이�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/04/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 16042717-0d7a-41f5-87e3-12826fda35df
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: c9f8408c4417b1b5131a51276a829a16687f1870
-ms.sourcegitcommit: ccc99efd2402a8b93912c8df4df330fa1311aacb
+ms.openlocfilehash: 2f73f8bf107aaebe0e87588c410e1e7f66093ef7
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48812421"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305100"
 ---
 # <a name="user-guide-protection-only-mode-for-the-azure-information-protection-client"></a>사용자 가이드: Azure Information Protection 클라이언트에 대한 보호 전용 모드
 
@@ -38,7 +38,7 @@ Azure Information Protection 클라이언트에 문서 및 메일을 분류하�
 
 - 조직은 Azure Information Protection에 대한 구독을 보유하지만 어떤 레이블도 구성되어 있지 않습니다.
     
-    - 이는 글로벌 정책의 모든 레이블이 비활성화되고 사용자의 계정이 범위 지정 정책에 추가되지 않은 경우에 발생할 수 있습니다. 이는 IT 부서에서 Azure Information Protection을 롤아웃했지만 문서 및 메일을 분류하기 위한 레이블을 아직 제공하지 않았기 때문일 수 있습니다. 당분간은 Azure Information Protection 클라이언트를 사용하여 파일을 보호하고 보호된 파일을 볼 수 있습니다.
+    - 이는 글로벌 정책의 모든 레이블이 비활성화되고 사용자의 계정이 범위 지정 정책에 추가되지 않은 경우에 발생할 수 있습니다. 이는 IT 부서에서 Azure Information Protection을 롤아웃했지만 문서 및 이메일을 분류하기 위한 레이블을 아직 제공하지 않았기 때문일 수 있습니다. 당분간은 Azure Information Protection 클라이언트를 사용하여 파일을 보호하고 보호된 파일을 볼 수 있습니다.
 
 - 조직에 Azure Information Protection에 대한 구독이 있으나 Azure Information Protection 정책을 다운로드할 수 없습니다. 
     
@@ -55,9 +55,9 @@ Azure Information Protection 클라이언트에 문서 및 메일을 분류하�
 
 ## <a name="supported-tasks-for-protection-only-mode"></a>보호 전용 모드에 대한 지원 작업
 
-- Office IRM(정보 권한 관리) 기능을 사용하여 Office 앱 내에서 문서 및 전자 메일 보호(및 보호 해제): 예제: **파일** > **정보** > **문서 보호** > **액세스 제한**을 클릭합니다. 자세한 내용은 [Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용](../help-users.md)을 참조하세요.
+- Office IRM(정보 권한 관리) 기능을 사용하여 Office 앱 내에서 문서 및 이메일 보호(및 보호 해제): 예를 들면 다음과 같습니다. **파일** > **정보** > **문서 보호** > **액세스 제한**을 클릭합니다. 자세한 내용은 [Office 365, Office 2016 또는 Office 2013에서 정보 보호 기능 사용](../help-users.md)을 참조하세요.
 
-- Windows 파일 탐색기를 사용하여 파일 보호(및 보호 해제): 파일을 마우스 오른쪽 단추로 클릭하고 파일 또는 폴더 > **분류 및 보호**를 클릭합니다. 관리자가 구성한 보호를 적용하려면 **분류 및 보호 - Azure Information Protection** 대화 상자에서 **템플릿 선택**을 클릭하고 사용 가능한 템플릿 중 하나를 선택합니다.
+- Windows 파일 탐색기를 사용하여 파일을 보호(및 보호 해제): 파일 또는 폴더 > **분류 및 보호**를 마우스 오른쪽 단추로 클릭합니다. 관리자가 구성한 보호를 적용하려면 **분류 및 보호 - Azure Information Protection** 대화 상자에서 **템플릿 선택**을 클릭하고 사용 가능한 템플릿 중 하나를 선택합니다.
 
 - Azure Information Protection 뷰어를 사용하여 보호된 파일 보기
 

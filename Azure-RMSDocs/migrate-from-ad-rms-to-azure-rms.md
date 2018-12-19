@@ -4,22 +4,22 @@ description: AD RMS(Active Directory Rights Management Services) 배포를 Azure
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/11/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 828cf1f7-d0e7-4edf-8525-91896dbe3172
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 79dbf817086aa3f4b7919d87136008222a0bb1a6
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: d9b79faa2444560ec209faa199072f2a745152cd
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024266"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305576"
 ---
 # <a name="migrating-from-ad-rms-to-azure-information-protection"></a>AD RMS에서 Azure Information Protection으로 마이그레이션
 
->*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 AD RMS(Active Directory Rights Management Services) 배포를 Azure Information Protection으로 마이그레이션하려면 다음 지침을 사용합니다. 
 
@@ -35,11 +35,11 @@ AD RMS(Active Directory Rights Management Services) 배포를 Azure Information 
 
 필요하지는 않지만, 마이그레이션을 시작하기 전에 다음 문서를 읽으면 유용합니다. 마이그레이션 단계와 관련된 경우 기술의 원리를 보다 잘 이해하는 데 도움이 되는 지식을 제공합니다.
 
-- [Azure Information Protection 테넌트 키 계획 및 구현](./plan-implement-tenant-key.md): 클라우드에서 동일한 SLC 키를 Microsoft(기본값) 또는 사용자(BYOK(Bring Your Own Key 구성)가 관리하는 Azure Information Protection 테넌트에 대해 설정하는 키 관리 옵션을 이해합니다. 
+- [Azure Information Protection 테넌트 키 계획 및 구현](./plan-implement-tenant-key.md): 클라우드에서 동일한 SLC 키를 Microsoft(기본값) 또는 사용자(“Bring Your Own Key” 또는 BYOK 구성)가 관리하는 Azure Information Protection 테넌트에 대해 설정하는 키 관리 옵션을 이해합니다. 
 
 - [RMS 서비스 검색](./rms-client/client-deployment-notes.md#rms-service-discovery): RMS 클라이언트 배포 참고 사항의 이 섹션에서는 서비스 검색 순서가 **레지스트리**, **SCP**, **클라우드**임을 설명합니다. SCP가 계속 설치되어 있을 때 마이그레이션 프로세스 중 SCP에서 반환한 AD RMS 클러스터를 사용하지 않도록 Azure Information Protection 테넌트에 대한 레지스트리 설정으로 클라이언트를 구성합니다.
 
-- [Microsoft Rights Management 커넥터 개요](./deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector): RMS 커넥터 문서의 이 섹션에서는 온-프레미스 서버에서 Azure Rights Management Service에 연결하여 문서 및 메일을 보호하는 방법을 설명합니다.
+- [Microsoft Rights Management 커넥터 개요](./deploy-rms-connector.md#overview-of-the-microsoft-rights-management-connector): RMS 커넥터 문서의 이 섹션에서는 온-프레미스 서버에서 Azure Rights Management Service에 연결하여 문서 및 이메일을 보호하는 방법을 설명합니다.
 
 또한 AD RMS 작동 방법에 대해 잘 알고 있다면 [Azure RMS는 어떤 방식으로 작동하나요? 기본적인 이해](./how-does-it-work.md)를 읽으면 유용합니다. 클라우드 버전과 같거나 다른 기술 프로세스를 파악하는 데 도움이 됩니다.
 
@@ -105,9 +105,9 @@ AD RMS 클러스터가 현재 암호화 모드 1인 경우 마이그레이션을
 
 AD RMS 암호화 모드를 확인하려면
  
-- Windows Server 2012 R2 및 Windows 2012의 경우: AD RMS 클러스터 속성 > **일반** 탭 
+- Windows Server 2012 R2 및 Windows 2012의 경우: AD RMS 클러스터 속성 > **일반** 탭. 
 
-- Windows Server 2008 R2의 경우: [Windows Server 2008 R2 및 Windows Server 2008에서 AD RMS에 대해 RSA 키가 2048비트로 증가함](https://support.microsoft.com/help/2627272/rsa-key-length-is-increased-to-2048-bits-for-ad-rms-in-windows-server ) 핫픽스가 설치되었는지 확인합니다. 그렇지 않은 경우 AD RMS 클러스터가 암호화 모드 1에서 실행 중입니다.
+- Windows Server 2008 r 2의 경우: [Windows Server 2008 R2 및 Windows Server 2008에서 AD RMS에 대해 RSA 키가 2048비트로 증가함](https://support.microsoft.com/help/2627272/rsa-key-length-is-increased-to-2048-bits-for-ad-rms-in-windows-server ) 핫픽스가 설치되었는지 확인합니다. 그렇지 않은 경우 AD RMS 클러스터가 암호화 모드 1에서 실행 중입니다.
 
 ### <a name="migration-limitations"></a>마이그레이션 제한 사항
 
@@ -209,7 +209,7 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
     
     Windows 컴퓨터가 Office 2010을 실행 중인 경우 **AD RMS Rights Policy Template Management(자동)** 작업을 비활성화해야 하는지 확인해야 합니다.
 
-- **12단계: Azure Information Protection 테넌트 키 다시 입력**
+- **12단계: Azure Information Protection 테넌트 키 다시 생성**
 
     이 단계는 마이그레이션 전에 암호화 모드 2에서 실행하지 않은 경우에 권장됩니다.
 

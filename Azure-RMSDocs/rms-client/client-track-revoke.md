@@ -4,18 +4,18 @@ description: 문서를 보호한 후에는 사용자들이 해당 문서를 사�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 06/28/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 643c762e-23ca-4b02-bc39-4e3eeb657a1d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 485b999ce8b5adcbe284d0ea8286cdf1183ac8da
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 251de2d7e959dc46bcf95c003fd8924cc4c34d13
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44151036"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305230"
 ---
 # <a name="user-guide-track-and-revoke-your-documents-when-you-use-azure-information-protection"></a>사용자 가이드: Azure Information Protection 사용 시 보호된 문서 추적 및 액세스 권한 해지
 
@@ -99,7 +99,7 @@ Office 앱 또는 파일 탐색기를 사용하여 보호된 문서를 등록한
 
     - Internet Explorer: 버전 10 이상
 
-    - Internet Explorer 9 MS12-037 이상: Internet Explorer용 누적 보안 업데이트: 2012년 6월 12일
+    - Internet Explorer 9 MS12-037 이상: Internet Explorer용 누적 보안 업데이트 2012년 6월 12일
 
     - Mozilla Firefox: 버전 12 이상
 

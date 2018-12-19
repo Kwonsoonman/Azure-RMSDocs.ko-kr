@@ -4,19 +4,19 @@ description: 조직이 문서와 전자 메일을 보호하기 시작할 수 있
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 02/20/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.custom: askipteam
 ms.assetid: 4e886f5a-f535-4207-b8c4-8e0376c0758e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 82d1ee4267210b4fef989ab6a20385e24e2a8b35
-ms.sourcegitcommit: 1e6394044d646278ae582c7713cac8ffb9bf4c1e
+ms.openlocfilehash: cb90744828595b6cbf68962368fd001f3ca0eebd
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169892"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304828"
 ---
 # <a name="how-to-activate-azure-rights-management-from-the-azure-portal"></a>Azure 포털에서 Azure 권한 관리를 활성화하는 방법
 
@@ -30,7 +30,7 @@ Azure 포털에서 Azure Rights Management 서비스(Azure RMS)를 활성화하�
     
     이전에 Azure Information Protection 블레이드에 액세스한 적이 없는 경우 이 블레이드를 포털에 추가하기 위한 일회성 [추가 단계](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time)를 참조하세요.
     
-    Azure Information Protection 블레이드를 열려면 [Azure Information Protection Premium 요금제](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 또는 [Rights Management가 포함된 Office 365 요금제](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)가 있어야 합니다. 이러한 구독 중 하나가 있지만 유효한 구독을 찾을 수 없다는 메시지가 표시되면 [Microsoft 지원에 연락](information-support.md#to-contact-microsoft-support)하거나 표준 지원 채널을 사용하세요.
+    Azure Information Protection 블레이드를 열려면 [Azure Information Protection Premium 요금제](https://www.microsoft.com/cloud-platform/azure-information-protection-pricing) 또는 [Rights Management가 포함된 Office 365 요금제](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)가 있어야 합니다. 이러한 구독 중 하나가 있지만 유효한 구독을 찾을 수 없다는 메시지가 표시되면 [Microsoft 지원에 연락](information-support.md#to-contact-microsoft-support)하거나 표준 지원 채널을 사용하세요.
 
 2. **관리** 메뉴 옵션을 찾고 **보호 활성화**를 선택합니다. 
     

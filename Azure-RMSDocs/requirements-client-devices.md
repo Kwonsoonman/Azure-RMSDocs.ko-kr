@@ -4,22 +4,22 @@ description: Azure Information Protection에서 Azure Rights Management 서비�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 07/14/2017
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 93f8021d-43c5-47fe-ad63-8a1bacff9971
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 2004ca8962f1ef40c101ad75b7ea06b1ac30dccd
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 673e57a9a63dfb88ab9ef5f92a0f692ed31d7cdb
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44146440"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304947"
 ---
 # <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 섹션에서 Azure Rights Management 서비스를 지원하는 장치를 확인할 수 있습니다. 이 서비스는 Azure Information Protection에 대해 데이터 보호를 제공합니다.
 
@@ -34,16 +34,16 @@ Azure Rights Management 서비스를 지원하는 컴퓨터 운영 체제는 다
 
 -   **Windows 10**(x86, x64)
 
--   **macOS**: macOS 10.8(Mountain Lion) 이상
+-   **macOS**: 최소 버전의 macOS 10.8(Mountain Lion)
 
 ## <a name="mobile-devices"></a>모바일 장치
-Azure Rights Management 서비스를 지원하는 모바일 장치 운영 체제는 다음과 같습니다.
+Azure Rights Management 서비스를 지원하는 모바일 디바이스 운영 체제는 다음과 같습니다.
 
--   **Windows Phone**: Windows Phone 8.1
+-   **Windows Phone**: Windows Phone 8.1
 
--   **Android 휴대폰 및 태블릿**: 최소 Android 4.4 버전 이상
+-   **Android 휴대폰 및 태블릿**: 최소 버전의 Android 4.4
 
--   **iPhone 및 iPad**: 최소 iOS 8.0 버전 이상
+-   **iPhone 및 iPad**: 최소 버전의 iOS 8.0
 
 -   **Windows 태블릿**: Windows 10 Mobile 및 Windows 8.1 RT
 

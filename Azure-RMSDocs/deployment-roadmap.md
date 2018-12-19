@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 086600c2-c5d8-47ec-a4c0-c782e1797486
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 4e2fa20d542a9509476c78ebe21143e49863b788
-ms.sourcegitcommit: 80de8762953bdea2553c48b02259cd107d0c71dd
+ms.openlocfilehash: a74478895c7bdb500b40dc4732c871cbc130fe36
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51026828"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174049"
 ---
 # <a name="azure-information-protection-deployment-roadmap"></a>Azure Information Protection 배포 로드맵
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 다음 단계를 권고 사항으로 사용하여 조직에 대해 Azure Information Protection을 준비, 구현 및 관리할 수 있습니다.
 
@@ -59,7 +59,7 @@ Azure Information Protection을 사용하기 전에 사용자 계정 및 그룹�
 ### <a name="step-3-configure-and-deploy-classification-and-labeling"></a>3단계: 분류 및 레이블 지정 구성 및 배포
 
 > [!TIP]
-> **선택 사항이지만 권장됨**: Azure Information Protection 검사 기능을 배포하여 로컬 데이터 저장소에 있는 중요한 정보를 확인합니다. 이 시나리오를 다루는 [빠른 시작](quickstart-findsensitiveinfo.md)을 사용할 수 있습니다. 이 스캐너가 찾는 정보는 데이터 분류에 도움이 되고, 필요한 레이블과 보호가 필요한 파일에 대한 귀중한 정보를 제공합니다.
+> **선택 사항이지만 권장됨**: Azure Information Protection 스캐너를 배포하여 로컬 데이터 저장소에 있는 중요한 정보를 검색합니다. 이 시나리오를 다루는 [빠른 시작](quickstart-findsensitiveinfo.md)을 사용할 수 있습니다. 이 스캐너가 찾는 정보는 데이터 분류에 도움이 되고, 필요한 레이블과 보호가 필요한 파일에 대한 귀중한 정보를 제공합니다.
 > 
 > Windows Server의 로컬 파일, 네트워크 공유의 파일, 온-프레미스 버전의 SharePoint 파일에서 잘 알려진 중요한 정보 형식을 찾도록 스캐너를 구성할 수 있습니다. 이 구성에서는 레이블을 구성하거나 분류법을 정의하지 않아도 되므로, 이러한 방식으로 스캐너를 실행하는 것은 배포 초기 단계에 적합합니다. 또한 레이블 조건을 구성할 때까지 이 스캐너 구성과 다음 배포 단계를 함께 사용할 수 있습니다.
 
@@ -91,7 +91,7 @@ Azure Information Protection을 사용하기 전에 사용자 계정 및 그룹�
 
 2. 인터넷에 연결된 한 대 이상의 컴퓨터에 AADRM용 PowerShell 모듈을 설치합니다. 이 단계는 지금 수행해도 되고 나중에 수행해도 됩니다. 자세한 내용은 [AADRM PowerShell 모듈 설치](./install-powershell.md)를 참조하세요.
 
-3. AD RMS를 사용 중인 경우: 마이그레이션을 수행하여 키, 템플릿 및 URL을 클라우드로 이동합니다. 자세한 내용은 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
+3. 현재 AD RMS를 사용 중인 경우: 마이그레이션을 수행하여 키, 템플릿 및 URL을 클라우드로 이동합니다. 자세한 내용은 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
 4. 문서 및 이메일 보호를 시작할 수 있도록 보호 서비스가 활성화되어 있는지 확인합니다. 단계별 배포가 필요한 경우 보호를 적용하는 사용자 능력을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](./activate-service.md)를 참조하세요.
 
@@ -99,7 +99,7 @@ Azure Information Protection을 사용하기 전에 사용자 계정 및 그룹�
 
 - 조직에서 보호 서비스를 사용하는 방식을 모니터링할 수 있도록 사용 현황 로깅을 구성합니다. 이 단계는 지금 수행해도 되고 나중에 수행해도 됩니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](./log-analyze-usage.md)을 참조하세요.
 
-### <a name="step-5-configure-your-azure-information-protection-policy-applications-and-services-for-data-protection"></a>5단계: 데이터 보호에 대한 Azure Information Protection 정책, 응용 프로그램 및 서비스 구성
+### <a name="step-5-configure-your-azure-information-protection-policy-applications-and-services-for-data-protection"></a>5단계: 데이터 보호에 대한 Azure Information Protection 정책, 애플리케이션 및 서비스 구성
 
 1. Azure Information Protection 정책을 업데이트하여 데이터 보호 적용
     
@@ -157,7 +157,7 @@ Azure Information Protection에서 보호 서비스 사용을 시작하기 전�
 
 3. 인터넷에 연결된 한 대 이상의 컴퓨터에 AADRM용 PowerShell 모듈을 설치합니다. 이 단계는 지금 수행해도 되고 나중에 수행해도 됩니다. 자세한 내용은 [AADRM PowerShell 모듈 설치](./install-powershell.md)를 참조하세요.
 
-4. AD RMS를 사용 중인 경우: 마이그레이션을 수행하여 키, 템플릿 및 URL을 클라우드로 이동합니다. 자세한 내용은 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
+4. 현재 AD RMS를 사용 중인 경우: 마이그레이션을 수행하여 키, 템플릿 및 URL을 클라우드로 이동합니다. 자세한 내용은 [AD RMS에서 Azure Information Protection으로 마이그레이션](migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
 5. 문서 및 이메일 보호를 시작할 수 있도록 보호 서비스가 활성화되어 있는지 확인합니다. 단계별 배포가 필요한 경우 보호를 적용하는 사용자 능력을 제한하도록 사용자 온보딩 컨트롤을 구성합니다. 자세한 내용은 [Azure Rights Management 활성화](./activate-service.md)를 참조하세요.
 
@@ -167,7 +167,7 @@ Azure Information Protection에서 보호 서비스 사용을 시작하기 전�
 
 - 조직에서 보호 서비스를 사용하는 방식을 모니터링할 수 있도록 사용 현황 로깅을 구성합니다. 이 단계는 지금 수행해도 되고 나중에 수행해도 됩니다. 자세한 내용은 [Azure Rights Management Service의 사용 현황 로깅 및 분석](./log-analyze-usage.md)을 참조하세요.
 
-### <a name="step-3-install-the-client-and-configure-applications-and-services-for-rights-management"></a>3단계: Rights Management용 클라이언트 설치 및 응용 프로그램/서비스 구성
+### <a name="step-3-install-the-client-and-configure-applications-and-services-for-rights-management"></a>3단계: 클라이언트 설치 및 Rights Management용 애플리케이션/서비스 구성
 
 1. Azure Information Protection 클라이언트 배포
     

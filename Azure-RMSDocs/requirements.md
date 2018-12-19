@@ -10,24 +10,24 @@ ms.service: information-protection
 ms.assetid: dc78321d-d759-4653-8818-80da74b6cdeb
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 43ff5d8fabf8197ba8ea235b01258dff12a5acd4
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: 4ef35134a8f5d6a3a8a615be6c956ec5e445557d
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024149"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53173743"
 ---
 # <a name="requirements-for-azure-information-protection"></a>Azure Information Protection에 대한 요구 사항
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection을 조직에 배포하기 전에 다음 필수 구성 요소가 준비되어 있는지 확인하세요. 
 
 ## <a name="subscription-for-azure-information-protection"></a>Azure Information Protection 구독
 
-**분류, 레이블 지정 및 보호의 경우**: [Azure Information Protection 계획](https://azure.microsoft.com/pricing/details/information-protection/)이 있어야 합니다. 
+**분류, 레이블 지정 및 보호 기능의 경우**: [Azure Information Protection 플랜](https://azure.microsoft.com/pricing/details/information-protection/)이 있어야 합니다. 
 
-**보호 전용의 경우**: [Azure Information Protection이 포함된 Office 365 계획](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다.
+**보호 전용의 경우**: [Azure Information Protection이 포함된 Office 365 플랜](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)이 있어야 합니다.
 
 조직의 구독에 사용하려는 Azure Information Protection 기능이 포함되어 있는지 확인하려면 [Azure Information Protection 가격 책정](https://azure.microsoft.com/pricing/details/information-protection) 페이지에서 기능 목록을 검토합니다.
 
@@ -50,7 +50,7 @@ Azure Information Protection에 대해 SSO(Single Sign-On)가 지원되므로 �
 
 MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 올바르게 구성된 MFA 지원 인프라가 있는 경우 Azure Information Protection에서 지원됩니다.
 
-조건부 액세스는 Azure Information Protection으로 보호되는 문서에 대한 미리 보기에서 지원됩니다. 자세한 내용은 다음 FAQ를 참조하세요. [Azure Information Protection이 조건부 액세스를 위한 사용 가능한 클라우드 앱으로 나열되어 있습니다. 작동 방법은 무엇인가요?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
+조건부 액세스는 Azure Information Protection으로 보호되는 문서에 대한 미리 보기에서 지원됩니다. 자세한 내용은 다음 FAQ를 참조하세요. [Azure Information Protection이 조건부 액세스에 사용 가능한 클라우드 앱으로 나열되어 있습니다. 작동 방법은 무엇인가요?](faqs.md#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)
 
 인증 요구 사항에 대한 자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](requirements-azure-ad.md)을 참조하세요. 
 
@@ -116,7 +116,7 @@ Office 문서의 정보 외에 Azure Information Protection과 관련하여 다�
 
 - **aadrm.com** URL로의 TLS 클라이언트-서비스 연결을 종료하지 마세요(예를 들어 패킷 수준 조사를 수행하려는 경우). 연결을 종료하면 Azure Rights Management 서비스와의 통신 보안 유지를 위해 Microsoft에서 관리하는 CA와 함께 RMS 클라이언트가 사용하는 인증서 고정이 끊어집니다.
     
-    - 팁: Chrome에서 주소 표시줄에 보안 연결을 표시하는 방법으로 이 브라우저를 사용하여 Azure Rights Management 서비스에 연결하기 전에 클라이언트 연결이 종료되는지를 신속하게 확인할 수 있습니다. 브라우저 주소 표시줄에 URL(`https://admin.na.aadrm.com/admin/admin.svc`)을 입력합니다. 
+    - 팁: Chrome에서 주소 표시줄에 보안 연결을 표시하는 방법 때문에 이 브라우저를 사용하여 Azure Rights Management 서비스에 연결하기 전에 클라이언트 연결이 종료되는지를 신속하게 확인할 수 있습니다. 브라우저 주소 표시줄에 URL(`https://admin.na.aadrm.com/admin/admin.svc`)을 입력합니다. 
     
         브라우저 창에 표시되는 내용은 걱정하지 않아도 됩니다. 대신 주소 표시줄의 자물쇠를 클릭하여 사이트 정보를 보세요. 사이트 정보를 사용하면 발행 인증 기관(CA)을 볼 수 있습니다. Microsoft CA에서 인증서를 발행하지 않은 경우 보안 클라이언트-서비스 연결이 종료되어 방화벽을 재구성해야 할 가능성이 큽니다. 다음 그림은 Microsoft 발행 CA의 예제를 보여줍니다. 내부 CA에서 인증서를 발행한 경우 이 구성은 Azure Information Protection과 호환되지 않습니다.
         

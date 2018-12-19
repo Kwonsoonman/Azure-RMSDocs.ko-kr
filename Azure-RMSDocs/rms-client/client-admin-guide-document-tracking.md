@@ -4,18 +4,18 @@ description: Azure Information Protection에 대한 문서 추적을 구성하�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 08/06/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 983ecdc9-5631-48b8-8777-f4cbbb4934e8
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: 181183d701cb5fa4891be0aa3e0ea3028682bea7
-ms.sourcegitcommit: 26a2c1becdf3e3145dc1168f5ea8492f2e1ff2f3
+ms.openlocfilehash: 5add56fb5c033243acccb5308b7b9569b0c72624
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44150843"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305202"
 ---
 # <a name="admin-guide-configuring-and-using-document-tracking-for-azure-information-protection"></a>관리자 가이드: Azure Information Protection에 대한 문서 추적 구성 및 사용
 
@@ -97,7 +97,7 @@ Bing 지도에서 사용자 위치를 표시하는 데 사용하는 virtualearth
 
 ## <a name="usage-logging-for-the-document-tracking-site"></a>문서 추적 사이트에 대한 사용 현황 로깅
 
-사용 현황 로그 파일의 두 필드 **AdminAction** 및 **ActingAsUser**가 문서 추적에 적용됩니다.
+사용 현황 로그 파일의 다음과 같은 두 필드가 문서 추적에 적용됩니다: **AdminAction** 및 **ActingAsUser**.
 
 **AdminAction** - 관리자가 문서 추적 사이트를 관리자 모드로 사용하는 경우(예: 사용자 대신 문서를 취소하거나 언제 공유되었는지 확인하기 위해) 이 필드에 true 값이 포함됩니다. 사용자가 문서 추적 사이트에 로그인할 때는 이 필드가 비어 있습니다.
 

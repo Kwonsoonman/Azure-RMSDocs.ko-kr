@@ -4,22 +4,22 @@ description: Windows용 Azure Information Protection 클라이언트의 사용�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/04/2018
+ms.date: 12/13/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5eb3a8a4-3392-4a50-a2d2-e112c9e72a78
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d4e2af4a9123b7276f2afad6f0d41232f3555d62
-ms.sourcegitcommit: 8e7b135bf48ced7e53d91f45d62b7bbd0f37634e
+ms.openlocfilehash: 2ecb0376ac7d4d4ddd476e76a60053ff408e2bbd
+ms.sourcegitcommit: db24caa96033fd0c7a0fad4e36518a816a570c94
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861186"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53335543"
 ---
 # <a name="admin-guide-custom-configurations-for-the-azure-information-protection-client"></a>관리자 가이드: Azure Information Protection 클라이언트에 대한 사용자 지정 구성
 
->*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 with SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
+>*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 8.1, Windows 8, Windows 7 SP1, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2*
 
 Azure Information Protection 클라이언트를 관리할 때 특정 시나리오 또는 사용자의 하위 집합에 대해 필요할 수 있는 고급 구성을 수행할 경우 다음 정보를 사용합니다.
 
@@ -39,7 +39,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 5. 이 정책에 대한 사용자가 열어 놓은 모든 Office 응용 프로그램을 다시 시작하는지 확인합니다.
 
-6. 더 이상 해당 설정이 필요하지 않으며 기본 동작으로 되돌리려면 **고급 설정** 블레이드에서 더 이상 필요하지 않은 설정 옆에 있는 상황에 맞는 메뉴(**...**)를 선택하고 **삭제**를 선택합니다. 그런 다음, **저장 후 닫기**를 클릭합니다.
+6. 더 이상 해당 설정이 필요하지 않고 기본 동작으로 되돌리려는 경우: **고급 설정** 블레이드에서 더 이상 필요하지 않은 설정 옆에 있는 바로 가기 메뉴(**...**)를 선택하고 **삭제**를 선택합니다. 그런 다음, **저장 후 닫기**를 클릭합니다.
 
 #### <a name="available-advanced-client-settings"></a>사용 가능한 고급 클라이언트 설정
 
@@ -57,7 +57,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 |ProcessUsingLowIntegrity|[스캐너에 대해 낮은 무결성 수준 사용 안 함](#disable-the-low-integrity-level-for-the-scanner)|
 |PullPolicy|[연결 해제된 컴퓨터 지원](#support-for-disconnected-computers)
 |RemoveExternalContentMarkingInApp|[다른 레이블 지정 솔루션에서 헤더 및 바닥글 제거](#remove-headers-and-footers-from-other-labeling-solutions)|
-|ReportAnIssueLink|[문제 보고 링크의 메일 주소 수정](#modify-the-email-address-for-the-report-an-issue-link)|
+|ReportAnIssueLink|[사용자에 대한 “문제 보고” 추가](#add-report-an-issue-for-users)|
 |RunPolicyInBackground|[백그라운드에서 계속해서 실행되도록 분류 켜기](#turn-on-classification-to-run-continuously-in-the-background)|
 |SyncPropertyName|[기존 사용자 지정 속성을 사용하여 Office 문서에 레이블 지정](#label-an-office-document-by-using-an-existing-custom-property)|
 |SyncPropertyState|[기존 사용자 지정 속성을 사용하여 Office 문서에 레이블 지정](#label-an-office-document-by-using-an-existing-custom-property)|
@@ -76,7 +76,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 프로덕션 환경에서는 Azure Information Protection 클라이언트를 사용 중에 일반적으로 다른 사용자로 로그인할 필요가 없습니다. 그러나 관리자는 테스트 단계 동안 다른 사용자로 로그인해야 할 수 있습니다. 
 
-**Microsoft Azure Information Protection** 대화 상자를 사용하여 현재 로그인한 계정을 확인할 수 있습니다. Office 응용 프로그램을 열고 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 의견**을 클릭합니다. 계정 이름은 **클라이언트 상태** 섹션에 표시됩니다.
+**Microsoft Azure Information Protection** 대화 상자를 사용하여 현재 로그인한 계정을 확인할 수 있습니다. Office 응용 프로그램을 열고 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. 계정 이름은 **클라이언트 상태** 섹션에 표시됩니다.
 
 또한 표시되는 로그인 계정의 도메인 이름을 확인해야 합니다. 계정 이름은 올바르지만 잘못된 도메인으로 로그인하는 경우를 간과하기 쉽습니다. 잘못된 계정을 사용할 경우 Azure Information Protection 정책을 다운로드하지 못하거나 예상한 레이블 또는 동작이 표시되지 않을 수 있습니다.
 
@@ -111,17 +111,17 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 또한 이러한 컴퓨터의 **%LocalAppData%\Microsoft\MSIP** 폴더에 **Policy.msip**라는 파일이 없는지 확인합니다. 이 파일이 있는 경우 삭제합니다. 이 파일에는 Azure Information Protection 정책이 포함되어 있으며 레지스트리를 편집하기 전에 다운로드했거나, Azure Information Protection 클라이언트가 데모 옵션으로 설치되었을 수 있습니다.
 
-## <a name="modify-the-email-address-for-the-report-an-issue-link"></a>문제 보고 링크의 메일 주소 수정
+## <a name="add-report-an-issue-for-users"></a>사용자에 대한 “문제 보고” 추가
 
-이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 일반 공급 버전의 클라이언트에는 **문제 보고** 링크가 표시되지 않으므로 이 설정은 미리 보기 버전의 Azure Information Protection 클라이언트에만 적용됩니다.
+이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 
 
-사용자가 이전 버전의 클라이언트에서 **도움말 및 피드백** 클라이언트 대화 상자의 **문제 보고** 링크를 선택하면 기본적으로 메일 메시지에 Microsoft 주소가 채워집니다. 다음 고급 클라이언트 설정을 사용하여 해당 주소를 수정합니다. 예를 들어 지원 센터의 메일 주소에 대해 `mailto:helpdesk@contoso.com`을 지정합니다. 
+다음 고급 클라이언트 설정을 지정하는 경우 **도움말 및 피드백** 클라이언트 대화 상자에서 선택할 수 있는 **문제 보고** 옵션이 사용자에게 표시됩니다. 링크에 대한 HTTP 문자열을 지정합니다. 예를 들어 사용자가 문제를 보고하는 사용자 지정된 웹 페이지 또는 지원 센터로 이동하는 메일 주소입니다. 
 
 이 고급 설정을 구성하려면 다음 문자열을 입력합니다.
 
 - 키: **ReportAnIssueLink**
 
-- 값: **\<HTTP 문자열>**
+- Value: **\<HTTP 문자열>**
 
 ## <a name="hide-the-classify-and-protect-menu-option-in-windows-file-explorer"></a>Windows 파일 탐색기에서 [분류 및 보호] 메뉴 옵션 숨기기
 
@@ -143,7 +143,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
     
         - 키: **PullPolicy**
         
-        - 값: **False**
+        - Value: **False**
     
     2. 이 설정으로 된 정책을 다운로드한 후 다음 지침에 따라 컴퓨터에 설치합니다.
 
@@ -182,7 +182,7 @@ Azure Portal에서 정책을 내보내면 여러 버전의 정책이 포함된 Z
 
 - 키: **DisableDNF**
 
-- 값: 단추를 숨기려면 **True**, 단추를 표시하려면 **False**
+- Value: 단추를 숨기려면 **True**, 단추를 표시하려면 **False**
 
 ## <a name="make-the-custom-permissions-options-available-or-unavailable-to-users"></a>사용자의 사용자 지정 권한 옵션 사용 가능 여부 지정
 
@@ -194,7 +194,7 @@ Azure Portal에서 정책을 내보내면 여러 버전의 정책이 포함된 Z
 
 - 키: **EnableCustomPermissions**
 
-- 값: 사용자 지정 권한 옵션을 표시하려면 **True**, 이 옵션을 숨기려면 **False**입니다.
+- Value: 사용자 지정 권한 옵션을 표시하려면 **True**, 이 옵션을 숨기려면 **False**입니다.
 
 
 ## <a name="permanently-hide-the-azure-information-protection-bar"></a>Azure Information Protection 표시줄을 영구적으로 숨기기
@@ -209,7 +209,7 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 - 키: **EnableBarHiding**
 
-- 값: **True**
+- Value: **True**
 
 
 ## <a name="enable-recommended-classification-in-outlook"></a>Outlook에서 권장 분류 사용
@@ -222,7 +222,7 @@ Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 �
 
 - 키: **OutlookRecommendationEnabled**
 
-- 값: **True**
+- Value: **True**
 
 
 ## <a name="set-a-different-default-label-for-outlook"></a>Outlook에 대한 다른 기본 레이블 설정
@@ -255,11 +255,11 @@ Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는
 
 S/MIME 작업은 다음이 될 수 있습니다.
 
-- `Sign;Encrypt`: 디지털 서명 및 S/MIME 암호화를 적용하려는 경우
+- `Sign;Encrypt`: 디지털 서명과 S/MIME 암호화를 적용하려면
 
-- `Encrypt`: S/MIME 암호화만 적용하려는 경우
+- `Encrypt`: S/MIME 암호화만 적용하려면
 
-- `Sign`: 디지털 서명만 적용하려는 경우
+- `Sign`: 디지털 서명만 적용하려면
 
 레이블 ID **dcf781ba-727f-4860-b3c1-73479e31912b**의 값 예시:
 
@@ -279,7 +279,7 @@ S/MIME 작업은 다음이 될 수 있습니다.
 
 지정한 레이블이 Azure Portal에서 Rights Management 보호에 대해 구성된 경우, 오직 Outlook에서만 S/MIME 보호가 Rights Management 보호를 대체합니다. 레이블 지정을 지원하는 다른 모든 시나리오에서는 Rights Management 보호가 적용됩니다.
 
-레이블이 Outlook에서만 표시되도록 하려면, [빠른 시작: 사용자가 중요한 정보가 포함된 메일을 쉽게 보호하도록 레이블 구성](../quickstart-label-dnf-protectedemail.md)에서 설명하는 바와 같이 단일 사용자 정의 작업 **전달 금지**를 적용하도록 레이블을 구성합니다.
+레이블이 Outlook에서만 표시되도록 하려면, **전달 금지**의 단일 사용자 정의 작업을 적용하도록 레이블을 구성합니다. 이는 [빠른 시작: 사용자가 중요한 정보가 포함된 이메일을 쉽게 보호하도록 레이블 구성](../quickstart-label-dnf-protectedemail.md)에 설명되어 있습니다.
 
 ## <a name="remove-not-now-for-documents-when-you-use-mandatory-labeling"></a>필수 레이블을 사용하는 경우 문서에 대한 “나중에” 제거
 
@@ -293,7 +293,7 @@ S/MIME 작업은 다음이 될 수 있습니다.
 
 - 키: **PostponeMandatoryBeforeSave**
 
-- 값: **False**
+- Value: **False**
 
 ## <a name="turn-on-classification-to-run-continuously-in-the-background"></a>백그라운드에서 계속해서 실행되도록 분류 켜기
 
@@ -313,7 +313,7 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 
 - 키: **RunPolicyInBackground**
 
-- 값: **True**
+- Value: **True**
 
 ## <a name="dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption"></a>PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일을 보호하지 않음
 
@@ -325,9 +325,9 @@ Azure Information Protection 클라이언트가 지정되는 조건 규칙에 �
 
 - 키: **EnablePDFv2Protection**
 
-- 값: **False**
+- Value: **False**
 
-Azure Information Protection 스캐너에서 새 설정을 사용하려면 스캐너 서비스를 다시 시작해야 합니다.
+Azure Information Protection 스캐너에서 새 설정을 사용하려면 스캐너 서비스를 다시 시작해야 합니다. 또한 스캐너는 더 이상 기본적으로 PDF 문서를 보호하지 않습니다. EnablePDFv2Protection이 False로 설정된 경우 스캐너에서 PDF 문서를 보호하도록 하려면 [레지스트리를 편집](../deploy-aip-scanner.md#editing-the-registry-for-the-scanner)해야 합니다.
 
 새로운 PDF 암호화에 대한 자세한 내용은 블로그 게시물 [New support for PDF encryption with Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/New-support-for-PDF-encryption-with-Microsoft-Information/ba-p/262757)(Microsoft Information Protection을 사용한 새로운 PDF 암호화 지원)을 참조하세요.
 
@@ -373,9 +373,9 @@ Secure Islands를 사용하여 문서를 보호한 경우 보호된 텍스트 �
 
 **EnableIQPFormats**의 다음 DWORD 값을 다음 레지스트리 경로에 추가하고 값 데이터를 **1**로 설정합니다.
 
-- 64비트 버전의 Windows: HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\MSIP
+- Windows 64비트 버전의 경우: HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\MSIP
 
-- 32비트 버전의 Windows: HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MSIP
+- Windows 32비트 버전의 경우: HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MSIP
 
 이 레지스트리 편집의 결과로 다음과 같은 시나리오가 지원됩니다.
 
@@ -391,7 +391,7 @@ Secure Islands를 사용하여 문서를 보호한 경우 보호된 텍스트 �
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. 이 설정은 미리 보기로 제공되고 변경될 수 있습니다.
 
-이 구성은 현재 [Protect PDF files by using the ISO standard for PDF encryption(PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일 보호)](client-admin-guide-customizations.md#protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption) 설정과 호환되지 않습니다. 두 설정을 함께 사용하면 .ppdf 파일을 파일 탐색기, PowerShell 또는 검사 기능에서 열 수 없습니다.
+이 구성은 현재 PDF 암호화에 대해 ISO 표준을 사용하여 PDF 파일을 보호하는 새로운 기본 동작과 호환되지 않습니다. 이 시나리오에서 .ppdf 파일을 파일 탐색기, PowerShell 또는 스캐너에서 열 수 없습니다. 이를 해결하려면 [PDF 암호화에 대한 ISO 표준을 사용하지 않는](client-admin-guide-customizations.md#dont-protect-pdf-files-by-using-the-iso-standard-for-pdf-encryption) 고급 클라이언트 설정을 사용합니다.
 
 Secure Islands에서 레이블을 지정한 Office 문서 및 PDF 문서의 경우 직접 정의하는 매핑을 사용하여 이러한 문서의 레이블을 Azure Information Protection 레이블로 재지정할 수 있습니다. 또한 다른 솔루션의 레이블이 Office 문서에 있는 경우 이 방법으로 해당 레이블을 재사용할 수도 있습니다. 
 
@@ -406,7 +406,7 @@ Secure Islands에서 레이블을 지정한 Office 문서 및 PDF 문서의 경�
 
 - PowerShell의 경우: [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel)은 새 Azure Information Protection 레이블을 적용합니다. [Get-AIPFileStatus](/powershell/module/azureinformationprotection/get-aipfilestatus)는 다른 방법으로 설정되기 전까지는 새 Azure Information Protection 레이블을 표시하지 않습니다.
 
-- Azure Information Protection 스캐너의 경우: 검색에서 새 Azure Information Protection 레이블이 설정되는 시기를 보고하며 적용 모드를 사용하여 이 레이블을 적용할 수 있습니다.
+- Azure Information Protection 스캐너: 검색에서 새 Azure Information Protection 레이블이 설정되는 시기를 보고하며 적용 모드를 사용하여 이 레이블을 적용할 수 있습니다.
 
 이 구성을 사용하려면 이전 레이블에 매핑할 각 Azure Information Protection 레이블에 대해 **LabelbyCustomProperty**라는 고급 클라이언트 설정을 지정해야 합니다. 그런 다음 각 항목의 값을 다음 구문을 사용하여 설정합니다.
 
@@ -418,7 +418,7 @@ Azure Portal에서 Azure Information Protection 정책을 보거나 구성하는
 
 이 설정은 이전 레이블이 적용될 수 있는 시각적 표시를 제거하지 않습니다. 헤더 및 바닥글을 제거하려면 다음 섹션인 [다른 레이블 지정 솔루션에서 헤더 및 바닥글 제거](#remove-headers-and-footers-from-other-labeling-solutions)를 참조하세요.
 
-### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>예 1: 동일한 레이블 이름의 일대일 매핑
+### <a name="example-1-one-to-one-mapping-of-the-same-label-name"></a>예제 1: 동일한 레이블 이름의 일대일 매핑
 
 Secure Islands 레이블이 “기밀”인 문서는 Azure Information Protection에서 레이블이 “기밀”로 재지정되어야 합니다.
 
@@ -435,7 +435,7 @@ Secure Islands 레이블이 “기밀”인 문서는 Azure Information Protecti
 |---------------------|---------|
 |LabelbyCustomProperty|1ace2cc3-14bc-4142-9125-bf946a70542c,"Secure Islands label is Confidential",Classification,Confidential|
 
-### <a name="example-2-one-to-one-mapping-for-a-different-label-name"></a>예 2: 다른 레이블 이름의 일대일 매핑
+### <a name="example-2-one-to-one-mapping-for-a-different-label-name"></a>예제 2: 다른 레이블 이름의 일대일 매핑
 
 Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Information Protection에서 레이블이 “극비”로 재지정되어야 합니다.
 
@@ -485,7 +485,7 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 - 키: **RemoveExternalContentMarkingInApp**
 
-- 값: \<**Office 응용 프로그램 형식 WXP**> 
+- Value: \<**Office 애플리케이션 형식 WXP**> 
 
 예:
 
@@ -501,15 +501,15 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 - 헤더 또는 바닥글의 모든 항목을 제거하는 부분 일치 항목입니다.
     
-    예제: 헤더 또는 바닥글에는 **TEXT TO REMOVE**라는 문자열이 포함됩니다. 이러한 헤더 또는 바닥글을 완전히 제거하려고 합니다. `*TEXT*` 값을 지정합니다.
+    예: 헤더 또는 바닥글에 **TEXT TO REMOVE**라는 문자열이 포함됩니다. 이러한 헤더 또는 바닥글을 완전히 제거하려고 합니다. `*TEXT*` 값을 지정합니다.
 
 - 헤더 또는 바닥글에서 특정 단어를 제거하는 전체 일치입니다.
     
-    예제: 헤더 또는 바닥글에는 **TEXT TO REMOVE**라는 문자열이 포함됩니다. **TEXT**라는 단어를 제거하려고 합니다. 그러면 헤더 또는 바닥글 문자열을 **TO REMOVE**로 유지합니다. `TEXT ` 값을 지정합니다.
+    예: 헤더 또는 바닥글에 **TEXT TO REMOVE**라는 문자열이 포함됩니다. **TEXT**라는 단어를 제거하려고 합니다. 그러면 헤더 또는 바닥글 문자열을 **TO REMOVE**로 유지합니다. `TEXT ` 값을 지정합니다.
 
 - 헤더 또는 바닥글의 모든 항목을 제거하는 전체 일치 항목입니다.
     
-    예제: 헤더 또는 바닥글에는 **TEXT TO REMOVE**라는 문자열이 있습니다. 이 문자열이 정확하게 포함된 헤더 또는 바닥글을 제거하려고 합니다. `^TEXT TO REMOVE$` 값을 지정합니다.
+    예: 헤더 또는 바닥글에 **TEXT TO REMOVE**라는 문자열이 포함됩니다. 이 문자열이 정확하게 포함된 헤더 또는 바닥글을 제거하려고 합니다. `^TEXT TO REMOVE$` 값을 지정합니다.
     
 
 지정한 문자열에 대한 패턴 일치는 대/소문자를 구분합니다. 최대 문자열 길이는 255자입니다.
@@ -536,7 +536,7 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 - 키 2: **ExternalContentMarkingToRemove**
 
-- 키 값 2: **\*레이블이 적용됨*** 
+- 키 값 2: **\*레이블 적용됨*** 
 
 #### <a name="optimization-for-powerpoint"></a>PowerPoint에 대한 최적화
 
@@ -546,17 +546,17 @@ PowerPoint의 바닥글이 도형으로 구현됩니다. 지정한 텍스트를 
 
 헤더 또는 바닥글을 사용하는 도형 이름을 찾으려면:
 
-1. PowerPoint에서는 **선택** 창: **형식** 탭 > **정렬** 그룹 > **선택 창**을 표시합니다.
+1. PowerPoint에서 다음과 같은 **선택** 창을 표시합니다. **형식** 탭 > **정렬** 그룹 > **선택 창**.
 
 2. 헤더 또는 바닥글을 포함하는 슬라이드에서 도형을 선택합니다. 이제 **선택 영역** 창에서 선택한 도형 이름을 강조 표시합니다.
 
 도형 이름을 사용하여 **PowerPointShapeNameToRemove** 키에 대한 문자열 값을 지정합니다. 
 
-예제: 셰이프 이름은 **fc**입니다. 이 이름을 가진 도형을 제거하려면 `fc` 값을 지정합니다.
+예: 셰이프 이름은 **fc**입니다. 이 이름을 가진 도형을 제거하려면 `fc` 값을 지정합니다.
 
 - 키: **PowerPointShapeNameToRemove**
 
-- 값: \<**PowerPoint 도형 이름**> 
+- Value: \<**PowerPoint 도형 이름**> 
 
 둘 이상의 PowerPoint 도형을 제거할 경우 도형을 제거할 만큼 **PowerPointShapeNameToRemove** 키를 만듭니다. 각 항목에 대해 제거할 도형의 이름을 지정합니다.
 
@@ -564,7 +564,7 @@ PowerPoint의 바닥글이 도형으로 구현됩니다. 지정한 텍스트를 
 
 - 키: **RemoveExternalContentMarkingInAllSlides**
 
-- 값: **True**
+- Value: **True**
 
 ## <a name="label-an-office-document-by-using-an-existing-custom-property"></a>기존 사용자 지정 속성을 사용하여 Office 문서에 레이블을 지정합니다.
 
@@ -611,7 +611,7 @@ Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커
 
 - 키: **ProcessUsingLowIntegrity**
 
-- 값: **False**
+- Value: **False**
 
 
 ## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
@@ -622,7 +622,7 @@ Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커
 
 1. [New-MessageClassification](https://technet.microsoft.com/library/bb124400) Exchange PowerShell cmdlet을 사용하여 Azure Information Protection 정책의 레이블 이름에 매핑되는 Name 속성을 포함하는 메시지 분류를 만듭니다. 
 
-2. 각 레이블에 대해 Exchange 메일 흐름 규칙을 만든 다음, 구성된 분류가 메시지 속성에 포함될 때 해당 규칙을 적용하고 메시지 속성을 수정하여 메시지 헤더를 설정합니다. 
+2. 각 레이블에 대해 Exchange 이메일 흐름 규칙을 만듭니다. 구성한 분류가 메시지 속성에 포함될 때 해당 규칙을 적용하고 메시지 속성을 수정하여 메시지 헤더를 설정합니다. 
 
      메시지 헤더에서는 Azure Information Protection 레이블을 사용하여 분류하고 보낸 메일의 인터넷 헤더를 검사하면 지정할 정보를 확인할 수 있습니다. **msip_labels** 헤더와 바로 뒤에서 세미콜론까지의 문자열(세미콜론도 포함)을 찾습니다. 예를 들면 다음과 같습니다.
     
@@ -642,11 +642,11 @@ Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커
 
 - Azure Information Protection 클라이언트가 설치된 경우 내부 받는 사람이 Outlook에서 메일을 볼 때 할당된 Azure Information Protection 레이블이 표시됩니다. 
 
-Azure Information Protection 레이블이 보호를 적용하는 경우에는 메시지 보안을 수정하는 옵션을 선택하여 규칙 구성에 권한 관리 보호를 추가하고, 권한 보호를 적용한 후에 RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
+Azure Information Protection 레이블이 보호를 적용하는 경우 이 보호를 규칙 구성에 추가합니다. 메시지 보안을 수정하는 옵션을 선택하고 권한 보호를 적용한 다음, RMS 템플릿 또는 전달 금지 옵션을 선택합니다.
 
 또한 역방향 매핑을 수행하도록 메일 흐름 규칙을 구성할 수 있습니다. Azure Information Protection 레이블이 검색되면 해당 Exchange 메시지 분류를 설정합니다.
 
-- 각 Azure Information Protection 레이블에 대해 **msip_labels** 헤더에 레이블의 이름(예: **General**)이 포함될 때 적용되는 메일 흐름 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
+- 각 Azure Information Protection 레이블의 경우: **msip_labels** 헤더에 레이블의 이름(예: **General**)이 포함될 때 적용되는 이메일 흐름 규칙을 만들고 이 레이블에 매핑되는 메시지 분류를 적용합니다.
 
 
 ## <a name="next-steps"></a>다음 단계

@@ -10,16 +10,16 @@ ms.service: information-protection
 ms.assetid: 71ce491f-41c1-4d15-9646-455a6eaa157d
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: fd3c4701abba55bc80117345444781a02cd8f6a2
-ms.sourcegitcommit: d06594550e7ff94b4098a2aa379ef2b19bc6123d
+ms.openlocfilehash: a513f495b2dd6ef75a3c2f219a207a98f1f6e143
+ms.sourcegitcommit: 5b4eb0e17fb831d338d8c25844e9e6f4ca72246d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53024402"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53174100"
 ---
 # <a name="frequently-asked-questions-for-azure-information-protection"></a>Azure Information Protection 질문과 대답
 
->*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
+>*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 Azure Information Protection 또는 Azure RMS(Azure Rights Management 서비스)에 대해 질문이 있나요? 여기에 해당 질문에 대한 대답이 있는지 확인하세요.
 
@@ -46,7 +46,7 @@ Azure Information Protection은 조직의 문서와 메일을 분류하고, 레�
 ## <a name="what-subscription-do-i-need-for-azure-information-protection-and-what-features-are-included"></a>Azure Information Protection을 사용하려면 어떤 구독이 필요하며, 포함된 기능은 무엇인가요?
 [Azure Information Protection 가격 책정](https://azure.microsoft.com/en-us/pricing/details/information-protection) 페이지에서 구독 정보 및 기능 목록을 참조하세요. 
 
-Azure Rights Management 데이터 보호를 포함하는 Office 365 구독이 있는 경우 [Azure Information Protection 라이선싱 데이터시트](http://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)를 다운로드하세요. 여기에는 라이선스에 대한 질문과 대답도 포함됩니다.
+Azure Rights Management 데이터 보호를 포함하는 Office 365 구독이 있는 경우 [Azure Information Protection 라이선싱 데이터시트](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)를 다운로드하세요. 여기에는 라이선스에 대한 질문과 대답도 포함됩니다.
 
 ## <a name="is-the-azure-information-protection-client-only-for-subscriptions-that-include-classification-and-labeling"></a>Azure Information Protection 클라이언트는 분류 및 레이블이 포함된 구독에만 사용할 수 있나요?
 
@@ -64,11 +64,11 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
     
     사용자에게 이 관리 역할을 할당하려면 [Azure Active Directory에서 사용자에게 관리자 역할 할당](/azure/active-directory/active-directory-users-assign-role-azure-portal)을 참조하세요.
 
-- **보안 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Portal에서 Azure Information Protection의 모든 측면을 구성하고 다른 Azure 서비스의 일부 측면을 구성할 수 있습니다. 이 역할을 가진 관리자는 [AADRM 모듈의 PowerShell cmdlet](administer-powershell.md)을 실행할 수 없습니다.
+- **보안 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Portal에서 Azure Information Protection의 모든 측면을 구성하고 다른 Azure 서비스의 일부 측면도 구성할 수 있습니다. 이 역할을 가진 관리자는 [AADRM 모듈의 PowerShell cmdlet](administer-powershell.md)을 실행할 수 없습니다.
     
     사용자에게 이 관리 역할을 할당하려면 [Azure Active Directory에서 사용자에게 관리자 역할 할당](/azure/active-directory/active-directory-users-assign-role-azure-portal)을 참조하세요. 이 역할이 있는 사용자에게 어떤 다른 권한이 있는지 보려면 Azure Active Directory 설명서의 [사용 가능한 역할](/azure/active-directory/active-directory-assign-admin-roles-azure-portal#available-roles) 섹션을 참조하세요.
 
-- Azure Rights Management **전역 관리자** 및 **커넥터 관리자**: 이러한 Azure Rights Management 관리자 역할의 경우, 첫 번째 역할은 다른 클라우드 서비스의 전역 관리자가 되지 않고 모든 [AADRM 모듈의 PowerShell cmdlet](administer-powershell.md)을 실행할 권한을 사용자에게 부여하고 두 번째 역할은 RMS(Rights Management) 커넥터만 실행하는 권한을 부여합니다. 이러한 관리 역할은 관리 콘솔에 대한 권한을 부여하거나 문서 추적 사이트에서 관리자 모드를 사용하도록 권한을 부여하지 않습니다.
+- Azure Rights Management **글로벌 관리자** 및 **커넥터 관리자**: 이러한 Azure Rights Management 관리자 역할의 경우, 첫 번째 역할은 다른 클라우드 서비스의 글로벌 관리자가 되지 않고 모든 [AADRM 모듈의 PowerShell cmdlet](administer-powershell.md)을 실행할 권한을 사용자에게 부여하고 두 번째 역할은 RMS(Rights Management) 커넥터만 실행할 권한을 부여합니다. 이러한 관리 역할은 관리 콘솔에 대한 권한을 부여하거나 문서 추적 사이트에서 관리자 모드를 사용하도록 권한을 부여하지 않습니다.
 
     이러한 관리 역할 중 하나를 할당하려면 AADRM PowerShell cmdlet, [Add-AadrmRoleBasedAdministrator](/powershell/module/aadrm/add-aadrmrolebasedadministrator)를 사용합니다.
 
@@ -84,9 +84,9 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 
 예. Azure Information Protection은 클라우드 기반 솔루션이지만 클라우드 뿐 아니라 온-프레미스에 저장된 문서 및 전자 메일을 분류, 레이블 지정 및 보호할 수 있습니다.
 
-Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity#what-is-azure-ad-connect)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
+Exchange Server, SharePoint Server 및 Windows 파일 서버가 있는 경우 [Rights Management 커넥터](deploy-rms-connector.md)를 배포하여 이러한 온-프레미스 서버가 Azure Rights Management 서비스를 통해 전자 메일 및 문서를 보호하도록 할 수 있습니다. [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect)등을 통해, 더 원활한 인증 환경을 위해 Active Directory 도메인 컨트롤러를 동기화 및 페더레이션할 수도 있습니다.
 
-Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure Rights Management에서 인증서를 사용하는 방식에 대한 자세한 내용은 [Azure RMS 작동 방식](./how-does-it-work.md) 문서에서 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](./how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션을 참조하세요.
+Azure Rights Management 서비스는 필요에 따라 XrML 인증서를 자동으로 생성하여 관리하므로 온-프레미스 PKI를 사용하지 않습니다. Azure RMS가 인증서를 사용하는 방법에 대한 자세한 내용은 [Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비](./how-does-it-work.md#walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption) 섹션([Azure RMS 작동 방식은?](./how-does-it-work.md) 문서의)을 참조하세요.
 
 ## <a name="what-types-of-data-can-azure-information-protection-classify-and-protect"></a>Azure Information Protection은 어떤 형식의 데이터를 분류하고 보호할 수 있나요?
 
@@ -100,11 +100,11 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 
 이제 사용자가 Azure Information Protection에서 보호하는 문서를 열 때 관리자는 표준 조건부 액세스 제어에 따라 해당 테넌트의 사용자에게 액세스 권한을 부여할 수 있습니다. MFA(Multi-Factor Authentication)는 가장 공통적으로 요청되는 조건 중 하나입니다. 다른 한 가지 조건은 장치가 [Intune 정책을 준수](/intune/conditional-access-intune-common-ways-use)해야 한다는 점입니다. 예를 들어 모바일 장치가 암호 요구 사항 및 최소 운영 체제 버전을 충족하고 컴퓨터가 도메인에 가입되어 있어야 합니다.
 
-자세한 내용과 연습 예제는 다음 블로그 게시물을 참조하세요. [Azure Information Protection에 대한 조건부 액세스 정책](https://cloudblogs.microsoft.com/enterprisemobility/2017/10/17/conditional-access-policies-for-azure-information-protection/)
+자세한 내용과 일부 연습 예제는 블로그 게시물 [Azure Information Protection용 조건부 액세스 정책](https://cloudblogs.microsoft.com/enterprisemobility/2017/10/17/conditional-access-policies-for-azure-information-protection/)을 참조하세요.
 
 추가 정보:
 
-- Windows 컴퓨터의 경우: 현재 미리 보기 릴리스에서 [사용자 환경이 초기화될](./how-does-it-work.md#initializing-the-user-environment) 때와 이후 30일마다 Azure Information Protection에 대한 조건부 액세스 정책을 평가합니다(이 프로세스는 부트스트팹이라고도 함).
+- Windows 컴퓨터의 경우: 현재 미리 보기 릴리스에서 [사용자 환경이 초기화될](./how-does-it-work.md#initializing-the-user-environment) 때(이 프로세스는 부트스트랩이라고도 함)와 이후 30일마다 Azure Information Protection에 대한 조건부 액세스 정책을 평가합니다.
 
 - 조건부 액세스 정책을 평가하는 빈도를 세밀하게 조정할 수 있습니다. 토큰 수명을 구성하여 이 작업을 수행할 수 있습니다. 자세한 내용은 [Azure Active Directory에서 구성 가능한 토큰 수명](/azure/active-directory/active-directory-configurable-token-lifetimes)을 참조하세요.
 
@@ -166,7 +166,7 @@ Microsoft Ignite 2018에서 발표된 것처럼, 이제 Office 365 보안 및 �
 
 ## <a name="how-can-azure-information-protection-help-with-gdpr"></a>GDPR에서 Azure Information Protection을 활용하려면 어떻게 하나요?
 
-GDPR(일반 데이터 보호 규정)을 충족하기 위한 Azure Information Protection의 활용 방법을 확인하려면 비디오에서 [Microsoft 365에서는 GDPR에 도움이 되는 Information Protection 전략을 제공합니다.](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr) 블로그 게시물 공지를 참조하세요.
+GDPR(일반 데이터 보호 규정)을 충족하기 위한 Azure Information Protection의 활용 방법을 확인하려면 비디오에서 [Microsoft 365에서는 GDPR에 도움이 되는 Information Protection 전략을 제공합니다](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)라는 블로그 게시물 공지를 참조하세요.
 
 ## <a name="where-can-i-find-supporting-information-for-azureinformation-protectionsuch-as-legal-compliance-and-slas"></a>법적 정보, 규정 준수, SLA 등의 Azure Information Protection 관련 지원 정보는 어디서 찾을 수 있나요?
 [Azure Information Protection에 대한 규정 준수 및 지원 정보](./compliance.md)를 참조하세요.
@@ -175,7 +175,7 @@ GDPR(일반 데이터 보호 규정)을 충족하기 위한 Azure Information Pr
 
 기술 지원에 대해서는 표준 지원 채널을 사용하거나 [Microsoft 지원에 문의](information-support.md#to-contact-microsoft-support)하세요.
 
-향상된 기능 또는 새 기능에 대한 제안과 같은 피드백을 보내려면 Office 응용 프로그램의 **홈** 탭에 있는 **보호** 그룹에서 **보호**를 클릭한 다음 **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **피드백 보내기**를 클릭합니다. 이 옵션을 통해 Information Protection 팀으로 보낼 메일 메시지가 열립니다.
+향상된 기능 및 새로운 기능에 대한 제안과 같은 피드백을 보내려면: Office 애플리케이션에 있는 **홈** 탭의 **보호** 그룹에서 **보호**를 클릭한 다음, **도움말 및 피드백**을 클릭합니다. **Microsoft Azure Information Protection** 대화 상자에서 **피드백 보내기**를 클릭합니다. 이 옵션을 통해 Information Protection 팀으로 보낼 메일 메시지가 열립니다.
 
 또한 엔지니어링 팀과 의견을 나눌 수 있게 [Azure Information Protection Yammer 사이트](https://www.yammer.com/askipteam/)에 여러분을 초대합니다. 
 

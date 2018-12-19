@@ -4,18 +4,18 @@ description: Windows용 Azure Information Protection 클라이언트의 클라�
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 12/12/2018
 ms.topic: conceptual
 ms.service: information-protection
 ms.assetid: 5a34ab85-773f-4782-ba09-c321cddf5bc0
 ms.reviewer: eymanor
 ms.suite: ems
-ms.openlocfilehash: d935d5eafd3d893b67bbdccb1893bf67d418ae79
-ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
+ms.openlocfilehash: 2aa0e470d9a2801b695c6b2c9d922836c010690c
+ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866121"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53304913"
 ---
 # <a name="admin-guide-azure-information-protection-client-files-and-client-usage-logging"></a>관리자 가이드: Azure Information Protection 클라이언트 파일 및 클라이언트 사용 현황 로깅
 
@@ -47,11 +47,11 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
 
 - 작업:
 
-    - 레이블 설정: 정보 ID 101
+    - 레이블 설정:  정보 ID 101
     
-    - 레이블 설정(하위 수준): 정보 ID 101
+    - 레이블 설정(낮게):  정보 ID 101
     
-    - 레이블 설정(상위 수준): 정보 ID 101
+    - 레이블 설정(높게): 정보 ID 101
     
     - 레이블 제거: 정보 ID 104
    
@@ -59,11 +59,11 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
     
     - 사용자 지정 보호 적용: 정보 ID 201
     
-    - 사용자 지정 보호 제거: 정보 ID 202
+    - 사용자 지정 보호 적용: 정보 ID 202
     
     - 로그인(운영): 정보 ID 902
     
-    - 정책 다운로드(운영): 정보 ID 901
+    - 다운로드 정책(운영): 정보 ID 901
     
 - 작업 소스:
     

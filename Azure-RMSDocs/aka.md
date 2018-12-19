@@ -34,13 +34,13 @@ Azure Information Protection(경우에 따라 AIP로 축약)은 Microsoft에서 
 
 - **Azure Active Directory Rights Management**- 경우에 따라 약어로 *AADRM*
 
-- **Microsoft Azure Active Directory Rights Management**- 흔히 약어로 *Windows Azure AD Rights Management*
+- **Windows Azure Active Directory Rights Management**- 흔히 약어로 *Windows Azure AD Rights Management*
 
 ## <a name="on-premises-solutions"></a>온-프레미스 솔루션
 
 - **Active Directory Rights Management Services**- 경우에 따라 약어로 *AD RMS*
 
-- **Microsoft Rights Management Services**— 흔히 약어로 *Windows RMS*
+- **Windows Rights Management Services**— 흔히 약어로 *Windows RMS*
 
 ## <a name="other-names"></a>기타 이름
 
@@ -48,7 +48,7 @@ Azure Information Protection(경우에 따라 AIP로 축약)은 Microsoft에서 
     
     현재 온-프레미스 버전(AD RMS) 및 클라우드 기반 버전(Azure RMS)을 포함하는 통합 이름입니다.
 
-- "**새 Microsoft RMS**"
+- "**새로운 Microsoft RMS**"
     
     클라우드 기반 버전이 공식적으로 릴리스되었을 때 온-프레미스 선행 기능에 비해 배포의 용이성을 강조하기 위해 종종 사용된 인기 있는 레이블입니다.
 

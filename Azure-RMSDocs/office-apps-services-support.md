@@ -28,7 +28,7 @@ ms.locfileid: "53173998"
 
 예를 들어 조직의 사용자만 액세스할 수 있도록 Word 문서를 구성할 수 있습니다. 또는 Excel 스프레드시트를 편집할 수 있는지, 읽기 전용으로 제한되는지, 아니면 인쇄되지 못하게 방지되는지 제어합니다. 시간이 중요한 파일의 경우에는 파일에 더 이상 액세스할 수 없는 만료 시간을 구성할 수 있습니다. 이 구성은 사용자가 직접 만들거나 보호 템플릿을 적용하여 만들 수 있습니다. Outlook에서는 사용자가 **전달 금지** 옵션을 선택하여 데이터 유출을 방지할 수도 있습니다.
 
-이러한 응용 프로그램은 네이티브 Officedml Azure Rights Management 지원 외에도 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)와 함께 설치되는 Azure Information Protection 표시줄도 지원합니다. 이 표시줄에는 사용자가 자동으로 중요한 데이터가 포함된 문서 및 메일에 보호를 보다 쉽게 적용할 수 있는 레이블이 표시됩니다.
+이러한 응용 프로그램은 네이티브 Office Azure Rights Management 지원 외에도 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)와 함께 설치되는 Azure Information Protection 표시줄도 지원합니다. 이 표시줄에는 사용자가 자동으로 중요한 데이터가 포함된 문서 및 메일에 보호를 보다 쉽게 적용할 수 있는 레이블이 표시됩니다.
 
 Office 앱 및 Azure Information Protection 클라이언트를 구성할 준비가 된 경우:
 

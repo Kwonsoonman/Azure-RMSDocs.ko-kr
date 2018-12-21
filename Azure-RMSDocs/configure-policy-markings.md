@@ -61,19 +61,19 @@ ms.locfileid: "53023977"
 
 다음 지침을 사용하여 레이블에 대한 시각적 표시를 구성할 수 있습니다.
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다. 
+1.  Azure Portal에 로그인이 되어 있지 않다면, 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 추가하거나 변경할 시각적 표시가 포함된 레이블을 선택합니다.
 
-3. **레이블** 블레이드의 **Set visual marking (such as header or footer)**(시각적 표시(예: 머리글 또는 바닥글) 설정) 섹션에서 원하는 시각적 표시에 대한 설정을 구성한 다음, **저장**을 클릭합니다.
+3. **레이블** 블레이드의 **시각적 표시(예: 머리글 또는 바닥글)설정** 섹션에서 원하는 시각적 표시에 대한 설정을 구성한 다음, **저장**을 클릭합니다.
     
-    - 머리글을 구성하려면: **Documents with this label have a header**(이 레이블이 있는 문서에 머리글 있음)에서 머리글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 머리글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
+    - 머리글을 구성하려면: **이 레이블이 포함된 문서에는 머리글이 있습니다.** 에서 머리글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **끄기**를 선택합니다. **설정**을 선택한 경우 머리글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
     
-    - 바닥글을 구성하려면: **Documents with this label have a footer**(이 레이블이 있는 문서에 바닥글 있음)에서 바닥글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 바닥글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
+    - 바닥글을 구성하려면: **이 레이블이 포함된 문서에는 바닥글이 있습니다.** 에서 바닥글을 원하는 경우 **설정**을 선택하고 그렇지 않은 경우 **끄기**를 선택합니다. **설정**을 선택한 경우 바닥글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
     
-    - 워터마크를 구성하려면: **Documents with this label have a watermark**(이 레이블이 있는 문서에 바닥글 있음)에서 워터마크를 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 워터마크에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
+    - 워터마크를 구성하려면: **이 레이블이 포함된 문서에는 워터마크가 있습니다.** 에서 워터마크를 원하는 경우 **설정**을 선택하고 그렇지 않은 경우 **끄기**를 선택합니다. **설정**을 선택한 경우 워터마크에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
     
 **저장**을 클릭하면 변경 내용이 사용자 및 서비스에 자동으로 제공됩니다. 더 이상 별도의 게시 옵션이 없습니다.
 

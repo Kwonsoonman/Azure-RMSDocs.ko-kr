@@ -146,7 +146,6 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 |첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최상위 분류와 일치하는 레이블 적용합니다.|꺼짐|
 |Azure Information Protection 클라이언트 "추가 정보" 웹 페이지에 대한 사용자 지정 URL 제공|비어 있음|
 
-
 ## <a name="default-policy-before-march-21-2017"></a>2017년 3월 21일 이전의 기본 정책
 
 ### <a name="labels"></a>레이블입니다.

@@ -71,7 +71,7 @@ handler->NotifyCommittedActions(*state);
 
 ## <a name="audit-dashboard"></a>감사 대시보드
 
-Azure Information Protection 감사 파이프라인에 제출된 이벤트에는 https://portal.azure.com의 보고서에 표시됩니다. Azure Information Protection Analytics 공개 미리 보기로 제공 되며 기능 변경 될 수 있습니다.
+Azure Information Protection 감사 파이프라인에 제출된 이벤트에는 https://portal.azure.com 의 보고서에 표시됩니다. Azure Information Protection Analytics 공개 미리 보기로 제공 되며 기능 변경 될 수 있습니다.
 
 ## <a name="next-steps"></a>다음 단계
 

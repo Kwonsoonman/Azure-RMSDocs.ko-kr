@@ -27,7 +27,7 @@ Azure Information Protection은 사용자 지정 가능한 기본 레이블과 �
 
 다음 지침을 사용하여 Azure Information Protection 정책에 추가할 수 있는 새 레이블을 추가합니다.
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
+1. Azure Portal에 로그인이 되어 있지 않다면, 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 

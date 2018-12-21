@@ -90,9 +90,9 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
     >
     >**5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
-2.  다음 폴더와, 그 안의 모든 파일을 삭제합니다. **%localappdata%\Microsoft\MSIPC\Templates**
+2.  다음 위치의 **%localappdata%\Microsoft\MSIPC\Templates** 폴더와 그 안의 모든 파일을 삭제합니다. 
 
-3.  Office 응용 프로그램과 파일 탐색기 인스턴스를 지금 시작합니다.
+3.  Office 응용 프로그램과 파일 탐색기를 다시 시작합니다.
 
 
 ## <a name="see-also"></a>참고 항목

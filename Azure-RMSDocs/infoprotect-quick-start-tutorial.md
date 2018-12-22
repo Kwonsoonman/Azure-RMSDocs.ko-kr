@@ -75,7 +75,7 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
 
 2. **분류** > **정책** > **전역**을 선택하여 **정책: 전역** 블레이드를 엽니다. 
 
-3. 레이블 뒤의 **Information Protection 최종 사용자에게 표시하고 적용할 설정 구성** 섹션에서 정책 설정을 찾습니다. 
+3. 레이블 뒤의 **설정을 구성하여 Information Protection 최종 사용자에게 표시하고 적용** 섹션에서 정책 설정을 찾습니다. 
     
     현재 설정이 구성된 방식을 기록해 둡니다. 특히, **기본 레이블 선택** 및 **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함) 설정 예를 들면 다음과 같습니다.
     
@@ -89,7 +89,7 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
 
 5. **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함) 옵션을 **On**(켜짐)으로 설정합니다(아직 설정하지 않은 경우).
 
-6. 또한 **Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시)가 **On**(켜짐)으로 설정되어 있는지 확인합니다.
+6. 또한 **Office 앱에 Information Protection 표시줄을 표시합니다.** 가 **설정**으로 설정되어 있는지 확인합니다.
 
 7. 이 **Policy: Global**(정책: 전역) 블레이드에서 **저장**을 선택하고, 작업을 확인하라는 메시지가 표시되는 경우 **확인**을 선택합니다. 이 블레이드를 닫습니다.
 
@@ -139,19 +139,19 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
     
     이러한 시각적 표식의 모양을 변경할 수는 있지만, 지금은 이러한 설정을 기본값으로 그대로 유지합니다.
     
-9. **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션으로 이동합니다.
+9. **자동으로 이 레이블을 적용하기 위한 조건 구성** 섹션으로 이동합니다.
     
     **새 조건 추가**를 클릭한 다음 **조건** 블레이드에서 다음을 선택합니다.
     
     a. **조건 형식 선택**: **정보 유형**의 기본값을 유지합니다.
     
-    b. **Choose an industry**(산업 선택): 기본값인 **모두**를 유지합니다.
+    b. **산업 선택**: 기본값인 **모두**를 유지합니다.
     
     c. **정보 유형 선택** 검색 상자에 **신용 카드 번호**를 입력합니다. 그런 다음 검색 결과에서 **신용 카드 번호**를 선택합니다.
     
-    d. **Minimum number of occurrences**(최소 발생 횟수): 기본값을 **1**로 유지합니다.
+    d. **최소 발생 횟수**: 기본값을 **1**로 유지합니다.
     
-    e. **Count occurrences with unique values only**(고유 값이 있는 발생만 계산): 기본값을 **Off**(끄기)로 유지합니다.
+    e. **고유 값이 포함된 발생 수만 계산**: 기본값을 **끄기**로 유지합니다.
     
     ![Azure Information Protection 자습서 - 신용 카드 조건 구성](./media/step2-configure-condition.png)
     
@@ -163,7 +163,7 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
 
 11. **이 레이블이 적용되는 방법 선택**의 경우: 기본값 **권장**을 유지하고 기본 정책 팁을 변경하지 않습니다. 
 
-12. **Add notes for administrator use**(관리자 사용을 위한 메모 추가) 상자에 **테스트 전용**을 입력합니다.
+12. **관리자 사용을 위한 메모 추가** 상자에 **테스트 전용**을 입력합니다.
 
 13. 이 **하위 레이블** 블레이드에서 **저장**을 클릭합니다. 확인하라는 메시지가 표시되면 **확인**을 클릭합니다. 새 레이블이 생성되고 저장되지만, 아직 정책에 추가되지는 않습니다.
 
@@ -171,7 +171,7 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
 
 15. **정책: 레이블 추가 또는 제거** 블레이드에서 방금 만든 레이블과 **재무**라는 하위 레이블을 선택한 다음, **확인**을 클릭합니다.
 
-16. **Policy: Global**(정책: 전역) 블레이드에서 이제 시각적 표시 및 보호에 대해 구성된 전역 정책의 새 하위 레이블을 확인합니다. 예를 들면 다음과 같습니다.
+16. **정책: 전역** 블레이드에서 이제 시각적 표시 및 보호에 대해 구성된 전역 정책의 새 하위 레이블을 확인합니다. 예를 들면 다음과 같습니다.
 
     ![Azure Information Protection 자습서 - 새 하위 레이블](./media/info-protect-policy-configuredv2.png)
     
@@ -220,7 +220,7 @@ Word에서 새 문서를 엽니다. Azure Information Protection 클라이언트
     
     ![Azure Information Protection 자습서 - 낮추는 이유를 확인하는 메시지](./media/info-protect-lower-justification.png)
     
-    **The previous label no longer applies**(이전 레이블이 더 이상 적용 안 됨)를 선택하고 **Confirm**(확인)을 클릭합니다. **민감도** 값이 **개인**으로 변경되고 다른 레이블은 다시 숨겨집니다.
+    **이전 레이블이 더 이상 적용 안됨**을 선택하고 **확인**을 클릭합니다. **민감도** 값이 **개인**으로 변경되고 다른 레이블은 다시 숨겨집니다.
 
 ### <a name="to-remove-the-classification-completely"></a>분류를 완전히 제거하려면
 

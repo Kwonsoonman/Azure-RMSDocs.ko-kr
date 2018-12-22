@@ -125,7 +125,7 @@ Information Protection 표시줄을 다시 표시하려면 풀다운 메뉴에�
 
 ### <a name="mandatory-labeling"></a>필수 레이블 지정
 
-현재 선택된 **일반** 레이블을 다른 레이블로 변경할 수 있지만 제거할 수는 없습니다. **All documents and emails must have a label**(모든 문서 및 메일에 레이블이 있어야 함)을 **On**(켜짐)으로 변경했으므로 Information Protection 표시줄에서 **레이블 삭제** 아이콘을 사용할 수 없습니다. 
+현재 선택된 **일반** 레이블을 다른 레이블로 변경할 수 있지만 제거할 수는 없습니다. **모든 문서와 이메일에는 레이블이 있어야 합니다.** 를 **설정**으로 변경했으므로 Information Protection 표시줄에서 **레이블 삭제** 아이콘을 사용할 수 없습니다. 
 
 해당 설정을 변경하지 않은 경우 Information Protection 표시줄에 다음 아이콘이 표시됩니다.
 

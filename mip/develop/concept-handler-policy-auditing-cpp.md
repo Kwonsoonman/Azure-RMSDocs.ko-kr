@@ -38,7 +38,7 @@ SDK를 통해 Azure Information Protection Analytics에 제출할 수 있는 세
 
 ### <a name="discovery-events"></a>검색 이벤트
 
-검색 이벤트는 정책 API에서 읽거나 사용하는 레이블이 지정된 정보에 대한 정보를 제공합니다. 이러한 이벤트는 조직 전체의 정보에 액세스하는 장치, 위치 및 사용자를 나타낼 때 유용합니다.
+검색 이벤트는 정책 API에서 읽거나 사용하는 레이블이 지정된 정보에 대한 정보를 제공합니다. 이러한 이벤트는 조직 전체의 정보에 액세스하는 디바이스, 위치 및 사용자를 나타낼 때 유용합니다.
 
 검색 이벤트는 만들 때 플래그를 설정 하 여 정책 API에 생성 된 `mip::PolicyHandler` 개체입니다. 값 아래 예에서 **isAuditDiscoveryEnabled** 로 설정 된 `true`합니다. 때 `mip::ExecutionState` 넘어갑니다 `ComputeActions()` 또는 `GetSensitivityLabel()` (기존 메타 데이터 정보 및 콘텐츠 식별자)와 함께 검색 정보를 Azure Information Protection Analytics에 제출 됩니다.
 

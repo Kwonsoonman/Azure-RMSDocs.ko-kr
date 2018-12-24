@@ -66,7 +66,7 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
     - 제어판 > 프로그램 및 기능을 사용하여 확인할 수 있는 최소 버전 1.0.1908.0을 설치해야 합니다. Rights Management 공유 응용 프로그램은 이제 Azure Information Protection 클라이언트로 대체됩니다. 공유 응용 프로그램에 대한 자세한 내용은 [Windows용 Rights Management 공유 응용 프로그램](./rms-client/sharing-app-windows.md)을 참조하세요.
 
--   모바일 장치 및 Mac 컴퓨터에 대한 Rights Management 공유 앱:
+-   모바일 디바이스 및 Mac 컴퓨터에 대한 Rights Management 공유 앱:
 
     -   설치된 최신 버전이 있는지 확인하세요. MFA 지원은 RMS 공유 앱의 2015년 9월 릴리스에 들어있습니다.
 

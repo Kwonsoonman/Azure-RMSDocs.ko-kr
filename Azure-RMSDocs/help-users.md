@@ -54,7 +54,7 @@ ms.locfileid: "53173896"
         
     - **콘텐츠 보호 또는 사용 문제**
         
-        사용자가 사용하는 응용 프로그램에 대해 적절한 지침이 있으며 Azure Rights Management 서비스에서 지원하는 응용 프로그램 및 장치를 사용하고 있는지 확인합니다. 지원되는 응용 프로그램 및 장치에 대한 자세한 내용은 [Azure 권한 관리에 대한 요구 사항](requirements.md)을 참조하세요.
+        사용자가 사용하는 응용 프로그램에 대해 적절한 지침이 있으며 Azure Rights Management 서비스에서 지원하는 응용 프로그램 및 디바이스를 사용하고 있는지 확인합니다. 지원되는 응용 프로그램 및 디바이스에 대한 자세한 내용은 [Azure 권한 관리에 대한 요구 사항](requirements.md)을 참조하세요.
         
         Azure Active Directory를 통해 보호된 콘텐츠를 보호하거나 사용하도록 특정 사용자 또는 그룹에게 권한을 부여할 수 있는지 확인하려면 [Azure Information Protection에 대한 사용자 및 그룹 준비](prepare.md)에 포함된 유효성 검사를 사용합니다.
         
@@ -66,7 +66,7 @@ ms.locfileid: "53173896"
 
 ## <a name="using-information-protection-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 정보 보호 사용
 
-Office 2010이 있는 경우 보호된 문서 및 메일을 보호하고 사용하기 위해 Azure Information Protection 클라이언트(또는 이전 애플리케이션, RMS 공유 애플리케이션)가 필요합니다. 그러나 Azure Information Protection 클라이언트는 이 서비스를 지원하는 모든 컴퓨터 및 모바일 장치에도 권장됩니다.
+Office 2010이 있는 경우 보호된 문서 및 메일을 보호하고 사용하기 위해 Azure Information Protection 클라이언트(또는 이전 애플리케이션, RMS 공유 애플리케이션)가 필요합니다. 그러나 Azure Information Protection 클라이언트는 이 서비스를 지원하는 모든 컴퓨터 및 모바일 디바이스에도 권장됩니다.
 
 Azure Information Protection 클라이언트는 사용자가 보다 쉽게 문서 및 메일을 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 합니다. 또한 이전에 권한이 부여된 사용자가 더 이상 액세스할 필요가 없는 경우 추적된 문서를 해지할 수도 있습니다.
 

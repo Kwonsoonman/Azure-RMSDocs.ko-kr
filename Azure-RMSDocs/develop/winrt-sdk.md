@@ -41,7 +41,7 @@ Windows 스토어 애플리케이션에서 Microsoft Rights Management SDK 4.2�
 -   Windows 스토어 애플리케이션용 MS RMS SDK 4.2 패키지 자세한 내용은 [시작](get-started.md)을 참조하세요.
 -   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/library/jj573266.aspx)를 사용하는 것이 좋지만 다른 인증 라이브러리를 사용할 수도 있습니다.
 
-API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
+API 업데이트, 디바이스 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
 ## <a name="optional"></a>선택 사항
 

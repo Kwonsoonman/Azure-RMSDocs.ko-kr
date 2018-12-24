@@ -1,6 +1,6 @@
 ---
 title: Azure Information Protection용 클라이언트
-description: Microsoft Azure Information Protection은 조직 데이터를 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다. 클라이언트(Azure Information Protection 클라이언트 또는 Rights Management 클라이언트)는 컴퓨터와 모바일 장치에서 실행하는 응용 프로그램과 통합됩니다.
+description: Microsoft Azure Information Protection은 조직 데이터를 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다. 클라이언트(Azure Information Protection 클라이언트 또는 Rights Management 클라이언트)는 컴퓨터와 모바일 디바이스에서 실행하는 응용 프로그램과 통합됩니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -23,7 +23,7 @@ ms.locfileid: "52177197"
 
 Azure Information Protection은 조직의 문서와 전자 메일을 보호하는 데 사용할 수 있는 클라이언트-서버 솔루션을 제공합니다.
 
-- 클라이언트는 Azure Information Protection 클라이언트 또는 Rights Management 클라이언트일 수 있으며, 컴퓨터와 모바일 장치에서 실행하는 응용 프로그램과 통합됩니다. 
+- 클라이언트는 Azure Information Protection 클라이언트 또는 Rights Management 클라이언트일 수 있으며, 컴퓨터와 모바일 디바이스에서 실행하는 응용 프로그램과 통합됩니다. 
 
 - 서비스는 클라우드(정보 보호를 위해 Azure Rights Management 서비스를 사용하는 Azure Information Protection) 또는 온-프레미스(Active Directory Rights Management Services)에서 제공됩니다. 
 

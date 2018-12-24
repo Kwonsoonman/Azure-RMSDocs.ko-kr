@@ -34,15 +34,15 @@ ms.locfileid: "53023756"
 
 이 앱을 실행하면 SharePoint 및 비즈니스용 OneDrive 외부에서 보호된 PDF 파일(보호된 PDF 및 .ppdf 파일)도 열 수 있습니다.
 
-## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>모바일 장치에서 Azure Information Protection 앱을 실행할 수 있나요?
+## <a name="can-my-mobile-device-run-the-azure-information-protection-app"></a>모바일 디바이스에서 Azure Information Protection 앱을 실행할 수 있나요?
 
 Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4.4** 이상 버전이 필요합니다.
 
-이러한 버전이 있거나 그 이상 버전이 있으면 모바일 장치에 앱을 설치할 수 있습니다.
+이러한 버전이 있거나 그 이상 버전이 있으면 모바일 디바이스에 앱을 설치할 수 있습니다.
 
-- 모바일 장치가 Microsoft Intune을 통해 관리되는 경우 회사 포털에서 Azure Information Protection 앱을 설치할 수 있습니다.
+- 모바일 디바이스가 Microsoft Intune을 통해 관리되는 경우 회사 포털에서 Azure Information Protection 앱을 설치할 수 있습니다.
 
-- 모바일 장치가 Microsoft Intune을 통해 관리되지 않거나 회사 포털에서 Azure Information Protection을 사용할 수 없으면 iTunes 스토어 및 Google Play 스토어에서 직접 앱을 설치하거나 [Azure Information Protection 다운로드 페이지](https://portal.azurerms.com/#/download)의 **모바일 장치** 섹션에서 iOS 또는 Android 아이콘을 클릭하여 앱을 설치할 수 있습니다. 
+- 모바일 디바이스가 Microsoft Intune을 통해 관리되지 않거나 회사 포털에서 Azure Information Protection을 사용할 수 없으면 iTunes 스토어 및 Google Play 스토어에서 직접 앱을 설치하거나 [Azure Information Protection 다운로드 페이지](https://portal.azurerms.com/#/download)의 **모바일 디바이스** 섹션에서 iOS 또는 Android 아이콘을 클릭하여 앱을 설치할 수 있습니다. 
 
 ## <a name="how-do-i-get-started-with-the-viewer-app"></a>뷰어 앱을 시작하려면 어떻게 하나요?
 
@@ -52,7 +52,7 @@ Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4
 
 ## <a name="what-credentials-should-i-use-to-sign-in-to-this-app"></a>이 앱에 로그인하는 데 어떤 자격 증명을 사용해야 하나요?
 
-조직에 AD RMS 온-프레미스(모바일 장치 확장 포함)가 이미 있거나 Azure Rights Management 서비스를 사용하는 경우 회사 자격 증명을 사용하여 로그인합니다. 
+조직에 AD RMS 온-프레미스(모바일 디바이스 확장 포함)가 이미 있거나 Azure Rights Management 서비스를 사용하는 경우 회사 자격 증명을 사용하여 로그인합니다. 
 
 파일을 보호하는 데 개인 메일 주소를 사용한 경우에는 [Microsoft 계정](https://signup.live.com)의 자격 증명을 사용하여 로그인합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: Rights Management SDK 4.2 - AIP
-description: RMS SDK 4.2는 권한 관리 기술을 사용하여 장치 앱을 업그레이드할 때 간단한 개발 환경을 지원하는 간소화된 차세대 API입니다.
+description: RMS SDK 4.2는 권한 관리 기술을 사용하여 디바이스 앱을 업그레이드할 때 간단한 개발 환경을 지원하는 간소화된 차세대 API입니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -23,7 +23,7 @@ ms.locfileid: "44151608"
 
 ## <a name="purpose"></a>용도
 
-Rights Management SDK 4.2는 Rights Management Services를 통해 정보 보호 기능으로 장치 앱을 업그레이드할 때 간단한 개발 환경을 지원하는 간소화된 차세대 API입니다. 개발자는 AD RMS(Active Directory Rights Management Services) 또는 Azure 권한 관리를 활용하여 정보 보호 기능을 제공하고 키 관리, 암호화 및 암호 해독, 정책 및 사용 권한 만들기, 보안 캐싱, AD RMS 및 Azure RMS 서비스와 통신 등의 복잡한 보안 작업을 투명하게 처리하는 동시에 정보를 쉽게 보호하거나 사용할 수 있는 앱을 빌드할 수 있습니다.
+Rights Management SDK 4.2는 Rights Management Services를 통해 정보 보호 기능으로 디바이스 앱을 업그레이드할 때 간단한 개발 환경을 지원하는 간소화된 차세대 API입니다. 개발자는 AD RMS(Active Directory Rights Management Services) 또는 Azure 권한 관리를 활용하여 정보 보호 기능을 제공하고 키 관리, 암호화 및 암호 해독, 정책 및 사용 권한 만들기, 보안 캐싱, AD RMS 및 Azure RMS 서비스와 통신 등의 복잡한 보안 작업을 투명하게 처리하는 동시에 정보를 쉽게 보호하거나 사용할 수 있는 앱을 빌드할 수 있습니다.
 
 ## <a name="developer-audience"></a>대상 개발자
 

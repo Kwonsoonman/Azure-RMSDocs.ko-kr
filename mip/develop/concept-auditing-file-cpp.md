@@ -38,7 +38,7 @@ SDK를 통해 Azure Information Protection Analytics에 제출할 수 있는 세
 
 ### <a name="discovery-events"></a>검색 이벤트
 
-검색 이벤트는 파일 API에서 읽거나 사용하는 레이블이 지정된 정보에 대한 정보를 제공합니다. 이러한 이벤트는 조직 전체의 정보에 액세스하는 장치, 위치 및 사용자를 나타낼 때 유용합니다.
+검색 이벤트는 파일 API에서 읽거나 사용하는 레이블이 지정된 정보에 대한 정보를 제공합니다. 이러한 이벤트는 조직 전체의 정보에 액세스하는 디바이스, 위치 및 사용자를 나타낼 때 유용합니다.
 
 이러한 이벤트는 새 `mip::FileHandler`를 만들 때 `AuditDiscoveryEnabled` 매개 변수를 true로 설정하여 Azure Information Protection Analytics에 제출됩니다. 또한 사람이 읽을 수 있는 몇 가지 형식의 파일을 식별하는 콘텐츠 식별자가 제공됩니다. 이 식별자에 대한 파일 경로를 사용하는 것이 좋습니다.
 

@@ -81,7 +81,7 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 
     예를 들어 파일 이름 document.vsdx.pfile를 사용하여 파일을 보호하는 경우 파일을 보고 파일 탐색기에서 document.vsdx로 저장합니다.
 
-    새 파일이 더 이상 보호되지 않습니다. 보호하려는 경우 수동으로 수행해야 합니다. 지침은 [Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md)를 참조하세요.
+    새 파일이 더 이상 보호되지 않습니다. 보호하려는 경우 수동으로 수행해야 합니다. 지침은 [Rights Management 공유 응용 프로그램을 사용하여 디바이스에서 파일 보호(바로 보호)](sharing-app-protect-in-place.md)를 참조하세요.
 
 - ***파일에* .ppdf*파일 이름 확장명이 있거나 파일이 보호된 텍스트 또는 이미지 파일(예:*.ptxt*또는*.pjpg**) 입니다.
 
@@ -89,7 +89,7 @@ Rights Management 서비스에서 지원하는 파일 이름 확장명의 전체
 
 - **기타 파일 이름 확장명**
 
-    장치는 Rights Management 보호를 이해하는 응용 프로그램으로 이런 파일을 사용해야 합니다. 이러한 응용 프로그램은 RMS 지원 응용 프로그램이라고 합니다. Office 2016, Office 2013 및 Office 2010의 애플리케이션(Word, Excel, PowerPoint 및 Outlook 등)은 Rights Management를 지원하는 애플리케이션의 예입니다. 하지만 다른 소프트웨어 회사 또는 고유의 업무 응용 프로그램과 같은 Microsoft에서 제공되지 않는 응용 프로그램도 Rights Management에 대해 지원될 수 있습니다.
+    디바이스는 Rights Management 보호를 이해하는 응용 프로그램으로 이런 파일을 사용해야 합니다. 이러한 응용 프로그램은 RMS 지원 응용 프로그램이라고 합니다. Office 2016, Office 2013 및 Office 2010의 애플리케이션(Word, Excel, PowerPoint 및 Outlook 등)은 Rights Management를 지원하는 애플리케이션의 예입니다. 하지만 다른 소프트웨어 회사 또는 고유의 업무 응용 프로그램과 같은 Microsoft에서 제공되지 않는 응용 프로그램도 Rights Management에 대해 지원될 수 있습니다.
 
     Rights Management를 지원하는 응용 프로그램은 응용 프로그램을 지원하는 다른 Rights Management에서 보호된 파일을 여는 방법을 압니다. 또한 파일을 편집하거나 다른 파일 이름 또는 다른 위치에 저장할 경우 적용 되는 보호를 유지할 수 있습니다. 이러한 응용 프로그램은 파일에 현재 적용되는 권한에 따라 파일을 사용하므로 파일을 사용하는 권한이 있는 경우 그렇게 할 수 있습니다. 예를 들어 파일을 편집하지만 인쇄하지 않을 수 있습니다.
 

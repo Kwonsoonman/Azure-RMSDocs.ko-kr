@@ -60,7 +60,7 @@ ms.locfileid: "53305202"
  
 ## <a name="destination-urls-used-by-the-document-tracking-site"></a>문서 추적 사이트에서 사용되는 대상 URL
 
-다음 URL은 문서 추적에 사용되며, 모든 장치 및 Azure Information Protection 클라이언트를 실행하는 클라이언트와 인터넷 간의 모든 서비스에서 허용되어야 합니다. 예를 들어 보안이 강화된 Internet Explorer를 사용하는 경우 이러한 URL을 방화벽이나 신뢰할 수 있는 사이트에 추가합니다.
+다음 URL은 문서 추적에 사용되며, 모든 디바이스 및 Azure Information Protection 클라이언트를 실행하는 클라이언트와 인터넷 간의 모든 서비스에서 허용되어야 합니다. 예를 들어 보안이 강화된 Internet Explorer를 사용하는 경우 이러한 URL을 방화벽이나 신뢰할 수 있는 사이트에 추가합니다.
 
 -  `https://*.azurerms.com`
 

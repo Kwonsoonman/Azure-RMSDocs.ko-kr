@@ -35,7 +35,7 @@ Azure Information Protection 클라이언트|사용자, 관리자 및 서비스�
 |Azure Information Protection 레이블|문서 및 메일에 분류 값을 적용하는 항목으로, 선택적으로 문서와 메일을 보호할 수 있습니다.|
 |Azure Information Protection 정책|Azure Information Protection 레이블 및 정책 설정을 사용하는 클라이언트 및 서비스에 대해 관리자가 정의한 구성입니다.|
 |Azure Information Protection 스캐너|Windows Server에서 실행되고 로컬 폴더, 네트워크 공유, SharePoint 서버 사이트 및 라이브러리에서 문서를 검색, 분류 및 보호할 수 있는 서비스입니다.|
-|Azure Information Protection 뷰어|보호된 파일을 표시하기 위해 Windows 컴퓨터 및 모바일 장치에서 실행되는 앱입니다.|
+|Azure Information Protection 뷰어|보호된 파일을 표시하기 위해 Windows 컴퓨터 및 모바일 디바이스에서 실행되는 앱입니다.|
 |Azure Rights Management|흔히 약어로 *Azure RMS*라고 합니다.<br /><br />암호화 및 정책을 사용하여 문서, 파일 및 전자 메일을 보호하는 Azure Information Protection에서 사용되는 Azure 서비스입니다.  *Azure 권한 관리 서비스*라고도 합니다. 이전 이름은 다음과 같습니다.<br /><br />- *Windows Azure Active Directory Rights Management* 종종 indows Azure AD 권한 관리 서비스로 축약되었습니다.<br /><br />- *RMS Online*: 원래의 제안 이름으로, 간혹 오류 메시지와 로그 파일에서 보일 것입니다.|
 |Azure RMS|*Azure Rights Management*를 참조하세요.|
 |기본 템플릿|중요한 정보가 포함되어 있는 문서와 메일 보호를 즉시 시작할 수 있도록 Azure Information Protection에 대한 구독을 구입할 때 자동으로 생성된 보호 템플릿입니다.|
@@ -69,7 +69,7 @@ Azure Information Protection 클라이언트|사용자, 관리자 및 서비스�
 |Rights Management 발급자|문서 또는 전자 메일을 보호하는 계정입니다.|
 |Rights Management 소유자|Rights Management Full Control 사용 권한을 자동으로 부여하여 보호된 문서 또는 전자 메일에 대해 완전한 제어 권한을 가지고 만료 날짜 또는 오프 라인 설정으로부터 제외되는 계정입니다.|
 |권한 관리 서비스|클라우드 버전의 Rights Management(Azure Rights Management) 및 온-프레미스 버전의 Rights Management(AD RMS)에 모두 적용되는 일반 용어입니다.|
-|Rights Management 공유 응용 프로그램|현재 Azure Information Protection 클라이언트로 대체되며, Windows 및 모바일 장치용의 선택적 응용 프로그램으로서 내부 및 메일을 통해 파일이 안전하게 공유되도록 합니다.|
+|Rights Management 공유 응용 프로그램|현재 Azure Information Protection 클라이언트로 대체되며, Windows 및 모바일 디바이스용의 선택적 응용 프로그램으로서 내부 및 메일을 통해 파일이 안전하게 공유되도록 합니다.|
 |RMS|*Rights Management Services*를 참조하세요.|
 |RMS 커넥터|*Rights Management 커넥터*를 참조하세요.|
 |개인용 RMS|조직이 Office 365 또는 Azure Active Directory 구독을 보유하고 있지 않은 경우 사용자가 Rights Management를 사용할 수 있도록 하는 무료 구독입니다.|

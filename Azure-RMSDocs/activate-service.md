@@ -110,7 +110,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 ## <a name="next-steps"></a>다음 단계
 Azure Rights Management 서비스가 조직에 활성화되면, [Azure Information Protection 배포 로드맵](deployment-roadmap.md)을 사용하여 Azure Information Protection을 사용자 및 관리자에게 배포하기 전에 수행해야 하는 다른 구성 단계가 있는지 확인합니다. 
 
-예를 들어, 사용자가 파일에 정보 보호를 적용하기 쉽도록 [템플릿](configure-policy-templates.md)을 사용하고, [Rights Management 커넥터](deploy-rms-connector.md)를 설치하여 Azure Rights Management를 사용할 온-프레미스 서버를 연결하며, 모든 장치에서 모든 파일 형식을 보호하도록 지원하는 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)를 배포할 수 있습니다. 
+예를 들어, 사용자가 파일에 정보 보호를 적용하기 쉽도록 [템플릿](configure-policy-templates.md)을 사용하고, [Rights Management 커넥터](deploy-rms-connector.md)를 설치하여 Azure Rights Management를 사용할 온-프레미스 서버를 연결하며, 모든 디바이스에서 모든 파일 형식을 보호하도록 지원하는 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)를 배포할 수 있습니다. 
 
 Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정보 권한 관리) 기능을 사용하려면 추가 구성이 필요합니다. 사용자 응용 프로그램이 Rights Management Service에서 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure Rights Management Service를 지원하는 방법](applications-support.md)을 참조하세요.
 

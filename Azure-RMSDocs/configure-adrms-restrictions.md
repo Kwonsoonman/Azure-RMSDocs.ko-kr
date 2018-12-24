@@ -94,7 +94,7 @@ HYOK 보호를 적용하려면 Azure Information Protection 레이블을 사용�
 
 - Office 365 서비스 및 기타 온라인 서비스는 HYOK 보호 문서 및 이메일을 해독하여 콘텐츠를 검사하고 이에 대한 조치를 취할 수 없습니다. 이 제한 사항은 Rights Management 커넥터로 보호된 HYOK 보호 문서 및 이메일까지 확장됩니다. 
     
-    HYOK 보호 이메일에 대한 이러한 기능 손실에는 맬웨어 검사기, DLP(데이터 손실 방지) 솔루션, 메일 라우팅 규칙, 저널링, eDiscovery, 보관 솔루션 및 Exchange ActiveSync가 포함됩니다. 또한 사용자가 일부 장치에서 HYOK 보호 이메일을 열 수 없는 이유를 알지 못해 헬프 데스크로 전화할 수 있습니다. 이러한 많은 제한 사항 때문에 이메일에는 HYOK 보호를 사용하지 않는 것이 좋습니다.
+    HYOK 보호 이메일에 대한 이러한 기능 손실에는 맬웨어 검사기, DLP(데이터 손실 방지) 솔루션, 메일 라우팅 규칙, 저널링, eDiscovery, 보관 솔루션 및 Exchange ActiveSync가 포함됩니다. 또한 사용자가 일부 디바이스에서 HYOK 보호 이메일을 열 수 없는 이유를 알지 못해 헬프 데스크로 전화할 수 있습니다. 이러한 많은 제한 사항 때문에 이메일에는 HYOK 보호를 사용하지 않는 것이 좋습니다.
 
 ## <a name="implementing-hyok"></a>HYOK 구현
 
@@ -153,7 +153,7 @@ AD RMS 배포는 Azure Information Protection 레이블에 대해 HYOK 보호를
     - Office 2016용 Microsoft Installer(.msi) 기반 버전: [2018년 3월 6일에 릴리스된 Microsoft Office 2016용 업데이트 4018295](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295)를 설치했습니다.
 
 > [!IMPORTANT]
-> HYOK 보호에서 제공하는 높은 보증을 충족하려면 AD RMS 서버가 DMZ에 있지 않고 잘 관리된 장치에서만 사용하는 것이 좋습니다. 
+> HYOK 보호에서 제공하는 높은 보증을 충족하려면 AD RMS 서버가 DMZ에 있지 않고 잘 관리된 디바이스에서만 사용하는 것이 좋습니다. 
 > 
 > 또한 AD RMS 배포가 위반되거나 손상되는 경우 SLC(서버 사용 허가자 인증서)의 개인 키가 노출되거나 도난당하지 않도록 AD RMS 클러스터에서 HSM(하드웨어 보안 모듈)을 사용하는 것이 좋습니다. 
 

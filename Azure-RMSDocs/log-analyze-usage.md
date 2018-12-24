@@ -27,7 +27,7 @@ ms.locfileid: "53305644"
 
 -   **비즈니스 관련 정보 분석**
 
-    Azure Rights Management 서비스에서 생성한 로그를 데이터베이스, OLAP(온라인 분석 처리) 시스템 또는 맵 감소 시스템과 같은 선택한 리포지토리로 가져와서 정보를 분석하고 보고서를 생성할 수 있습니다. 예를 들어 보호된 데이터에 액세스하는 사용자를 파악할 수 있습니다. 그리고 사용자들이 액세스하는 보호된 데이터 및 액세스에 사용하는 장치와 액세스 위치를 확인할 수 있습니다. 사용자들이 보호된 콘텐츠를 정상적으로 읽을 수 있는지 확인할 수 있으며, 보호된 중요 문서를 사용자들이 읽었는지도 파악할 수 있습니다.
+    Azure Rights Management 서비스에서 생성한 로그를 데이터베이스, OLAP(온라인 분석 처리) 시스템 또는 맵 감소 시스템과 같은 선택한 리포지토리로 가져와서 정보를 분석하고 보고서를 생성할 수 있습니다. 예를 들어 보호된 데이터에 액세스하는 사용자를 파악할 수 있습니다. 그리고 사용자들이 액세스하는 보호된 데이터 및 액세스에 사용하는 디바이스와 액세스 위치를 확인할 수 있습니다. 사용자들이 보호된 콘텐츠를 정상적으로 읽을 수 있는지 확인할 수 있으며, 보호된 중요 문서를 사용자들이 읽었는지도 파악할 수 있습니다.
 
 -   **남용 모니터링**
 
@@ -180,15 +180,15 @@ Azure Rights Management 서비스에는 다양한 요청 형식이 있습니다.
 |AcquireTemplateInformation|서비스에서 템플릿 ID를 가져오도록 호출했습니다.|
 |AddTemplate|Azure 포털에서 템플릿을 추가하도록 호출합니다.|
 |AllDocsCsv|**모든 문서** 페이지에서 CSV 파일을 다운로드하도록 문서 추적 사이트에서 호출합니다.|
-|BECreateEndUserLicenseV1|모바일 장치에서 최종 사용자 라이선스를 만들도록 호출합니다.|
-|BEGetAllTemplatesV1|모바일 장치(백 엔드)에서 모든 템플릿을 가져오도록 호출합니다.|
+|BECreateEndUserLicenseV1|모바일 디바이스에서 최종 사용자 라이선스를 만들도록 호출합니다.|
+|BEGetAllTemplatesV1|모바일 디바이스(백 엔드)에서 모든 템플릿을 가져오도록 호출합니다.|
 |Certify|클라이언트가 보호할 콘텐츠를 인증합니다.|
 |DeleteTemplateById|Azure 포털에서 템플릿 ID별로 템플릿을 삭제하도록 호출합니다.|
 |DocumentEventsCsv|단일 문서에 대한 .CSV 파일을 다운로드하도록 문서 추적 사이트에서 호출합니다.|
 |ExportTemplateById|Azure 포털에서 템플릿 ID에 따라 템플릿을 내보내도록 호출합니다.|
-|FECreateEndUserLicenseV1|AcquireLicense 요청과 비슷하지만 모바일 장치에서 수행하는 요청입니다.|
+|FECreateEndUserLicenseV1|AcquireLicense 요청과 비슷하지만 모바일 디바이스에서 수행하는 요청입니다.|
 |FECreatePublishingLicenseV1|Certify 및 GetClientLicensorCert가 결합된 형태의 요청으로, 모바일 클라이언트에서 사용됩니다.|
-|FEGetAllTemplates|모바일 장치(프런트 엔드)에서 템플릿을 가져오도록 호출합니다.|
+|FEGetAllTemplates|모바일 디바이스(프런트 엔드)에서 템플릿을 가져오도록 호출합니다.|
 |FindServiceLocationsForUser|Certify 또는 AcquireLicense를 호출하는 데 사용되는 Url을 쿼리하도록 호출합니다.|
 |GetAllDocs|사용자에 대한 **모든 문서** 페이지를 로드하거나 테넌트에 대한 모든 문서를 검색하도록 문서 추적 사이트에서 호출합니다. 관리 작업 및 관리자 권한으로 실행 필드와 함께 이 값을 사용합니다.<br /><br />- admin-action이 비어 있는 경우: 사용자에게 자신의 문서에 대한 **모든 문서** 페이지가 표시됩니다.<br /><br />- admin-action이 true이고 acting-as-user가 비어 있는 경 우: 관리자에게 해당 테넌트에 대한 모든 문서가 표시됩니다.<br /><br />- admin-action이 true이고 acting-as-user가 비어 있지 않은 경우: 관리자에게 사용자에 대한 **모든 문서** 페이지가 표시됩니다.|
 |GetAllTemplates|Azure 포털에서 모든 템플릿을 가져오도록 호출합니다.|

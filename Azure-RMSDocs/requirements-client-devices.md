@@ -1,6 +1,6 @@
 ---
-title: 데이터 보호를 위한 클라이언트 장치 지원 - AIP
-description: Azure Information Protection에서 Azure Rights Management 서비스를 지원하는 장치를 식별합니다.
+title: 데이터 보호를 위한 클라이언트 디바이스 지원 - AIP
+description: Azure Information Protection에서 Azure Rights Management 서비스를 지원하는 디바이스를 식별합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -17,11 +17,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/12/2018
 ms.locfileid: "53304947"
 ---
-# <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치
+# <a name="client-devices-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 클라이언트 디바이스
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-다음 섹션에서 Azure Rights Management 서비스를 지원하는 장치를 확인할 수 있습니다. 이 서비스는 Azure Information Protection에 대해 데이터 보호를 제공합니다.
+다음 섹션에서 Azure Rights Management 서비스를 지원하는 디바이스를 확인할 수 있습니다. 이 서비스는 Azure Information Protection에 대해 데이터 보호를 제공합니다.
 
 ## <a name="computers"></a>컴퓨터
 Azure Rights Management 서비스를 지원하는 컴퓨터 운영 체제는 다음과 같습니다.
@@ -36,7 +36,7 @@ Azure Rights Management 서비스를 지원하는 컴퓨터 운영 체제는 다
 
 -   **macOS**: 최소 버전의 macOS 10.8(Mountain Lion)
 
-## <a name="mobile-devices"></a>모바일 장치
+## <a name="mobile-devices"></a>모바일 디바이스
 Azure Rights Management 서비스를 지원하는 모바일 디바이스 운영 체제는 다음과 같습니다.
 
 -   **Windows Phone**: Windows Phone 8.1

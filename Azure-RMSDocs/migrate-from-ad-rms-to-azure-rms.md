@@ -203,7 +203,7 @@ AD RMS 파트너도 Azure Information Protection으로 마이그레이션해야 
 
 - **11단계: 클라이언트 마이그레이션 작업 완료**
 
-    iOS 휴대폰 및 iPad, Android 휴대폰 및 태블릿, Windows 휴대폰 및 Mac 컴퓨터와 같은 모바일 장치를 지원하기 위해 [모바일 장치 확장](https://technet.microsoft.com/library/dn673574.aspx)을 배포한 경우, AD RMS를 사용하도록 이러한 클라이언트를 리디렉션한 DNS의 SRV 레코드를 제거해야 합니다. 
+    iOS 휴대폰 및 iPad, Android 휴대폰 및 태블릿, Windows 휴대폰 및 Mac 컴퓨터와 같은 모바일 디바이스를 지원하기 위해 [모바일 디바이스 확장](https://technet.microsoft.com/library/dn673574.aspx)을 배포한 경우, AD RMS를 사용하도록 이러한 클라이언트를 리디렉션한 DNS의 SRV 레코드를 제거해야 합니다. 
     
     준비 단계 중에 구성한 온보딩 컨트롤이 더 이상 필요하지 않습니다. 그러나 단계별로 마이그레이션하지 않고 모든 항목을 동시에 마이그레이션하도록 선택함에 따라 온보딩 컨트롤을 사용하지 않은 경우 온보딩 컨트롤을 제거하도록 요구하는 지침을 건너뛸 수 있습니다.
     

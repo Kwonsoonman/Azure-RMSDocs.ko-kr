@@ -4,18 +4,20 @@ description: 조직의 Azure Information Protection의 Azure Rights Management �
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
-ms.date: 12/12/2018
-ms.topic: conceptual
+ms.date: 05/16/2018
+ms.topic: article
+ms.prod: ''
 ms.service: information-protection
+ms.technology: techgroup-identity
 ms.assetid: 8a1b3e54-f788-4f84-b9d7-5d5079e50b4e
 ms.reviewer: esaggese
 ms.suite: ems
-ms.openlocfilehash: 46f8c817911408d62f12a1fce0a7ae0ce14069e2
-ms.sourcegitcommit: 1d2912b4f0f6e8d7596cbf31e2143a783158ab11
+ms.openlocfilehash: 2be1df328867fa1ccb13b1d6bc53b59e58f12903
+ms.sourcegitcommit: 44ff610dec678604c449d42cc0b0863ca8224009
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305491"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39370791"
 ---
 # <a name="monitor-the-azure-rights-management-connector"></a>Azure Rights Management 커넥터 모니터링
 
@@ -164,7 +166,7 @@ RMS 커넥터를 설치하면 **Microsoft Rights Management 커넥터** 성능 �
 
 예를 들어 문서나 전자 메일이 보호될 때 정기적으로 지연이 발생합니다. 또는 보호된 문서나 전자 메일을 열면 지연이 발생합니다. 이러한 경우 성능 카운터는 지연이 커넥터의 처리 시간, Azure Rights Management 서비스의 처리 시간 또는 네트워크 지연 중 어떤 문제로 야기되었는지 확인하는 데 도움이 될 수 있습니다. 
 
-지연이 발생하는 위치를 쉽게 찾을 수 있도록 **커넥터 처리 시간**, **서비스 응답 시간**, **커넥터 응답 시간**의 평균 수를 포함하는 카운터를 확인합니다. 예를 들면 다음과 같습니다. **라이선싱 성공 일괄 처리 요청 평균 커넥터 응답 시간**.
+지연이 발생하는 위치를 쉽게 찾을 수 있도록 **커넥터 처리 시간**, **서비스 응답 시간**, **커넥터 응답 시간**의 평균 수를 포함하는 카운터를 확인합니다. 예: **라이선싱 성공 일괄 처리 요청 평균 커넥터 응답 시간**.
 
 최근에 커넥터를 사용할 새 서버 계정을 추가한 경우에 **마지막 권한 부여 정책 업데이트 이후 시간** 카운터를 확인하여 커넥터를 업데이트한 후 목록을 다운로드했는지, 아니면 조금 더 기다려야 하는지(최대 15분) 확인할 수 있습니다.
 
@@ -174,7 +176,7 @@ RMS 커넥터를 설치하면 **Microsoft Rights Management 커넥터** 성능 �
 
 사용 현황 로깅에 대한 자세한 내용은 [Azure Rights Management Service 사용 현황 로깅 및 분석](log-analyze-usage.md)을 참조하세요.
 
-진단 목적으로 좀 더 자세한 로깅이 필요한 경우 Windows Sysinternals의 [Debugview](https://go.microsoft.com/fwlink/?LinkID=309277)를 사용할 수 있습니다. IIS에서 기본 사이트에 대한 web.config 파일을 수정하여 RMS 커넥터에 대한 추적을 사용하도록 설정합니다.
+진단 목적으로 좀 더 자세한 로깅이 필요한 경우 Windows Sysinternals의 [Debugview](http://go.microsoft.com/fwlink/?LinkID=309277)를 사용할 수 있습니다. IIS에서 기본 사이트에 대한 web.config 파일을 수정하여 RMS 커넥터에 대한 추적을 사용하도록 설정합니다.
 
 1. **%programfiles%\Microsoft Rights Management connector\Web Service**에서 web.config 파일을 찾습니다.
 

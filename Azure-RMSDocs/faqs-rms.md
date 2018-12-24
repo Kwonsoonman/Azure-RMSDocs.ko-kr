@@ -41,7 +41,7 @@ Azure Information Protection의 컨텍스트에서 **BYOK**(Bring Your Own Key)�
 
 BYOK에 대한 자세한 내용과 조직에 대해 이 키 토폴로지를 선택해야 하는지 여부는 [Azure Information Protection 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)을 참조하세요.
 
-Azure Information Protection의 컨텍스트에서 **HYOK**(Hold Your Own Key)는 클라우드에 저장되는 키로 보호할 수 없는 일부 문서 또는 메일이 있는 적은 수의 조직에서 사용합니다. 이러한 조직에서는 BYOK를 사용하여 키를 만들고 관리하는 경우에도 이 제한이 적용됩니다. 제한은 종종 규정 또는 규정 준수 사유가 될 수 있으며, HYOK 구성은 조직 외부에서 공유해서는 안되며 내부 네트워크에서만 사용되고 모바일 장치에서 액세스해서는 안 되는 "일급 비밀" 정보에만 적용되어야 합니다.
+Azure Information Protection의 컨텍스트에서 **HYOK**(Hold Your Own Key)는 클라우드에 저장되는 키로 보호할 수 없는 일부 문서 또는 메일이 있는 적은 수의 조직에서 사용합니다. 이러한 조직에서는 BYOK를 사용하여 키를 만들고 관리하는 경우에도 이 제한이 적용됩니다. 제한은 종종 규정 또는 규정 준수 사유가 될 수 있으며, HYOK 구성은 조직 외부에서 공유해서는 안되며 내부 네트워크에서만 사용되고 모바일 디바이스에서 액세스해서는 안 되는 "일급 비밀" 정보에만 적용되어야 합니다.
 
 이러한 예외(일반적으로 보호되어야 하는 모든 콘텐츠의 10% 미만)의 경우, 조직은 온-프레미스 솔루션인 Active Directory Rights Management Services를 사용하여 온-프레미스에 유지하는 키를 만들 수 있습니다. 이 솔루션을 사용하면 컴퓨터는 클라우드에서 Azure Information Protection 정책을 가져오지만 이 확인된 콘텐츠는 온-프레미스 키를 사용하여 보호될 수 있습니다.
 
@@ -138,8 +138,8 @@ Exchange Online과 Azure Rights Management 서비스를 사용할 때는 전자 
 
 모든 디바이스에서 모든 이메일 계정 지원을 포함하는 새로운 기능에 대한 자세한 내용은 블로그 게시물 [Office 365 메시지 암호화에서 사용할 수 있는 새로운 기능 공지](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)를 참조하세요.
 
-## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS에서는 어떤 장치 및 파일 형식을 지원하나요?
-Azure Rights Management 서비스를 지원하는 장치 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 장치](./requirements-client-devices.md)를 참조하세요. 현재는 지원 장치 중 일부만 모든 Rights Management 기능을 지원하기 때문에 [RMS 기반 응용 프로그램](./requirements-applications.md#rms-enlightened-applications) 표도 확인해야 합니다.
+## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS에서는 어떤 디바이스 및 파일 형식을 지원하나요?
+Azure Rights Management 서비스를 지원하는 디바이스 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 디바이스](./requirements-client-devices.md)를 참조하세요. 현재는 지원 디바이스 중 일부만 모든 Rights Management 기능을 지원하기 때문에 [RMS 기반 응용 프로그램](./requirements-applications.md#rms-enlightened-applications) 표도 확인해야 합니다.
 
 Azure Rights Management 서비스는 모든 형식의 파일을 지원할 수 있습니다. 텍스트, 이미지, Microsoft Office(Word, Excel, PowerPoint) 파일, .pdf 파일 및 일부 기타 응용 프로그램 파일 형식의 경우 Azure Rights Management는 권한 적용 및 암호화를 모두 포함하는 기본 보호 기능을 제공합니다. 기타 모든 응용 프로그램 및 파일 형식의 경우 일반적인 보호를 통해 사용자가 파일을 열 권한이 있는지 확인하는 인증 및 파일 캡슐화 기능을 제공합니다.
 
@@ -162,7 +162,7 @@ Outlook을 열고 Office 365 회사 또는 학교 계정을 사용하여 프로�
 문서를 보호 조치한 후 추적하려면 Azure Information Protection 클라이언트가 설치된 Windows 컴퓨터에서 Office 애플리케이션 또는 파일 탐색기를 사용하여 해당 문서를 문서 추적 사이트에 등록합니다. 자세한 내용은 [문서 추적 및 취소](./rms-client/client-track-revoke.md)를 참조하세요. Mac 컴퓨터에서는 웹 브라우저를 사용하여 문서 추적 사이트 (https://track.azurerms.com) 로 이동한 후 이 문서를 추적 및 취소할 수 있습니다.
 
 ## <a name="when-i-open-an-rms-protected-office-document-does-the-associated-temporary-file-become-rms-protected-as-well"></a>RMS로 보호된 Office 문서를 열면 연결된 임시 파일도 RMS로 보호되나요?
-아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 장치에 있습니다.
+아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 디바이스에 있습니다.
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>SharePoint 보호 라이브러리에서 작동하지 않는 것 같은 기능이 있습니다. 이 기능에 대한 지원이 예정되어 있나요?
 현재, SharePoint는 Rights Management 템플릿, 문서 추적 및 일부 다른 기능을 지원하지 않는 IRM 보호 라이브러리를 사용하여 RMS 보호 문서를 지원합니다. 자세한 내용은 [Office 응용 프로그램 및 서비스](./office-apps-services-support.md) 문서에서 [SharePoint Online 및 SharePoint Server](./office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
@@ -194,7 +194,7 @@ Azure Information Protection는 모든 사용자와 안전하게 공유할 수 �
 테넌트에 대한 사용 라이선스 유효 기간에 대한 기본값은 30일이며, 이 설정은 레이블 또는 템플릿의 더 제한적인 설정에 따라 재정의할 수 있습니다. 사용 라이선스 및 구성하는 방법에 대한 자세한 내용은 [Rights Management 사용 라이선스](configure-usage-rights.md#rights-management-use-license) 설명서를 참조하세요.
 
 ## <a name="can-rights-management-prevent-screen-captures"></a>Rights Management 기능을 사용하면 화면을 캡처할 수 없나요?
-Rights Management는 **복사** [사용 권한](configure-usage-rights.md)을 부여하지 않음으로써 화면 캡처가 Windows 플랫폼(Windows 7, Windows 8.1, Windows 10, Windows Phone) 및 Android에서 일반적으로 사용되는 화면 캡처 도구가 되지 않도록 할 수 있습니다. 그러나 iOS 및 Mac 장치에서 화면 캡처를 보호하도록 모든 앱을 허용하지 않으므로 브라우저(예: Outlook Web App 및 Office Online과 함께 사용하는 경우)에서도 화면 캡처를 막을 수 없습니다.
+Rights Management는 **복사** [사용 권한](configure-usage-rights.md)을 부여하지 않음으로써 화면 캡처가 Windows 플랫폼(Windows 7, Windows 8.1, Windows 10, Windows Phone) 및 Android에서 일반적으로 사용되는 화면 캡처 도구가 되지 않도록 할 수 있습니다. 그러나 iOS 및 Mac 디바이스에서 화면 캡처를 보호하도록 모든 앱을 허용하지 않으므로 브라우저(예: Outlook Web App 및 Office Online과 함께 사용하는 경우)에서도 화면 캡처를 막을 수 없습니다.
 
 화면 캡처를 차단하면 실수나 부주의로 인한 기밀 또는 중요한 정보 공개를 방지할 수 있습니다. 그러나 사용자가 화면에 표시되는 데이터를 공유할 수 있는 방법은 여러 가지가 있으며 스크린 샷을 만드는 것은 한 가지 방법에 불과합니다. 예를 들어 표시되는 정보를 공유하려는 사용자가 휴대폰 카메라로 사진을 찍거나 데이터를 다시 입력하거나, 누군가에게 구두로 전달할 수도 있습니다.
 

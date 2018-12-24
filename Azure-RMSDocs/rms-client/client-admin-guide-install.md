@@ -88,7 +88,7 @@ ms.locfileid: "53218530"
 
 **실행 파일(.exe) 버전의 클라이언트 실행**: 대화형 또는 자동으로 실행할 수 있는 권장 설치 방법입니다. 이 방법은 가장 유연하며, 설치 관리자가 많은 필수 구성 요소를 확인하고 누락된 필수 구성 요소를 자동으로 설치할 수 있으므로 권장됩니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-executable-installer)
 
-**Windows 설치 관리자(.msi) 버전의 클라이언트 배포**: 그룹 정책, Configuration Manager 및 Microsoft Intune 등의 중앙 배포 메커니즘을 사용하는 자동 설치에만 지원됩니다. 이 방법은 Intune 및 MDM(모바일 장치 관리)에 의해 관리되는 Windows 10 PC에서 필요합니다. 이러한 컴퓨터의 경우 실행 파일로 설치하도록 지원되지 않기 때문입니다. 그러나 이 설치 방법을 사용하면 실행 파일용 설치 관리자가 각 컴퓨터에 대해 수행하는 종속 소프트웨어를 수동으로 확인한 후 설치 또는 제거해야 합니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)
+**Windows 설치 관리자(.msi) 버전의 클라이언트 배포**: 그룹 정책, Configuration Manager 및 Microsoft Intune 등의 중앙 배포 메커니즘을 사용하는 자동 설치에만 지원됩니다. 이 방법은 Intune 및 MDM(모바일 디바이스 관리)에 의해 관리되는 Windows 10 PC에서 필요합니다. 이러한 컴퓨터의 경우 실행 파일로 설치하도록 지원되지 않기 때문입니다. 그러나 이 설치 방법을 사용하면 실행 파일용 설치 관리자가 각 컴퓨터에 대해 수행하는 종속 소프트웨어를 수동으로 확인한 후 설치 또는 제거해야 합니다. [지침](#to-install-the-azure-information-protection-client-by-using-the-msi-installer)
 
 Azure Information Protection 클라이언트를 설치한 후에는 선택한 설치 방법을 반복하여 이 클라이언트를 업데이트하거나 Windows 업데이트를 사용하여 클라이언트가 계속 자동으로 업그레이드되도록 할 수 있습니다. 업그레이드에 대한 자세한 내용은 [Azure Information Protection 클라이언트 업그레이드 및 유지 관리](client-admin-guide.md#upgrading-and-maintaining-the-azure-information-protection-client) 섹션을 참조하세요.
 

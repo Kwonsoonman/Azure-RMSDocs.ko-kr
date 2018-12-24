@@ -98,7 +98,7 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 
 예, 이제 공개 미리 보기용으로 Azure Information Protection에 대한 Azure AD의 조건부 액세스를 구성할 수 있습니다.
 
-이제 사용자가 Azure Information Protection에서 보호하는 문서를 열 때 관리자는 표준 조건부 액세스 제어에 따라 해당 테넌트의 사용자에게 액세스 권한을 부여할 수 있습니다. MFA(Multi-Factor Authentication)는 가장 공통적으로 요청되는 조건 중 하나입니다. 다른 한 가지 조건은 장치가 [Intune 정책을 준수](/intune/conditional-access-intune-common-ways-use)해야 한다는 점입니다. 예를 들어 모바일 장치가 암호 요구 사항 및 최소 운영 체제 버전을 충족하고 컴퓨터가 도메인에 가입되어 있어야 합니다.
+이제 사용자가 Azure Information Protection에서 보호하는 문서를 열 때 관리자는 표준 조건부 액세스 제어에 따라 해당 테넌트의 사용자에게 액세스 권한을 부여할 수 있습니다. MFA(Multi-Factor Authentication)는 가장 공통적으로 요청되는 조건 중 하나입니다. 다른 한 가지 조건은 디바이스가 [Intune 정책을 준수](/intune/conditional-access-intune-common-ways-use)해야 한다는 점입니다. 예를 들어 모바일 디바이스가 암호 요구 사항 및 최소 운영 체제 버전을 충족하고 컴퓨터가 도메인에 가입되어 있어야 합니다.
 
 자세한 내용과 일부 연습 예제는 블로그 게시물 [Azure Information Protection용 조건부 액세스 정책](https://cloudblogs.microsoft.com/enterprisemobility/2017/10/17/conditional-access-policies-for-azure-information-protection/)을 참조하세요.
 

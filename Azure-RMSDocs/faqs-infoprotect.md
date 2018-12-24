@@ -95,7 +95,7 @@ Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능
 
 웹용 Outlook 및 이러한 모바일 메일 응용 프로그램에서 레이블을 사용할 때도 이와 동일한 방법을 사용할 수 있습니다.
 
-구성 단계에 대해서는 [모바일 장치 레이블 지정 솔루션을 위해 Azure Information protection에 Exchange 메시지 분류 통합](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)합니다. 
+구성 단계에 대해서는 [모바일 디바이스 레이블 지정 솔루션을 위해 Azure Information protection에 Exchange 메시지 분류 통합](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)합니다. 
 
 
 

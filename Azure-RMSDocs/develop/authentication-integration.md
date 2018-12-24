@@ -24,7 +24,7 @@ ms.locfileid: "53266633"
 이 항목에서는 Azure 포털을 통해 앱을 등록하고 RMS를 사용하도록 설정하는 기본적인 방법과 Azure ADAL(Active Directory Authentication Library)을 통한 사용자 인증 방법을 안내합니다.
 
 ## <a name="what-is-user-authentication"></a>사용자 인증이란?
-사용자 인증은 장치 앱과 RMS 인프라 간의 통신을 설정하기 위한 필수 단계입니다. 이 인증 프로세스에서는 현재 사용자 및 인증 요청에 관한 주요 정보가 필요한 표준 OAuth 2.0 프로토콜을 사용합니다.
+사용자 인증은 디바이스 앱과 RMS 인프라 간의 통신을 설정하기 위한 필수 단계입니다. 이 인증 프로세스에서는 현재 사용자 및 인증 요청에 관한 주요 정보가 필요한 표준 OAuth 2.0 프로토콜을 사용합니다.
 
 ## <a name="registration-via-azure-portal"></a>Azure 포털을 통해 등록
 Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)부터 수행합니다. 나중에 사용할 수 있도록 이 프로세스에서 **클라이언트 ID** 및 **리디렉션 URI**를 복사하여 저장해야 합니다.

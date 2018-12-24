@@ -1,6 +1,6 @@
 ---
 title: RMS 공유 앱을 사용하여 내부에서 보호 - AIP
-description: 컴퓨터, 서버 또는 다른 저장 장치에 파일을 안전하게 저장하는 방법에 대한 지침을 제공합니다.
+description: 컴퓨터, 서버 또는 다른 저장 디바이스에 파일을 안전하게 저장하는 방법에 대한 지침을 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -17,16 +17,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/07/2018
 ms.locfileid: "53023450"
 ---
-# <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 장치에서 파일 보호(내부 보호)
+# <a name="protect-a-file-on-a-device-protect-in-place-by-using-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램을 사용하여 디바이스에서 파일 보호(내부 보호)
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
-파일을 내부에서 보호하면 보호되지 않는 원본 파일을 대체합니다. 그러면 파일을 원 위치에 남겨 두고 다른 폴더나 장치에 복사하거나, 파일이 들어 있는 폴더를 공유하여 파일을 보호할 수 있습니다. 메일을 통해 보호된 파일을 공유하는 권장 방법은 파일 탐색기나 Office 응용 프로그램에서 직접 공유하는 것이지만 보호된 파일을 메일 메시지에 첨부할 수도 있습니다([Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md) 참조).
+파일을 내부에서 보호하면 보호되지 않는 원본 파일을 대체합니다. 그러면 파일을 원 위치에 남겨 두고 다른 폴더나 디바이스에 복사하거나, 파일이 들어 있는 폴더를 공유하여 파일을 보호할 수 있습니다. 메일을 통해 보호된 파일을 공유하는 권장 방법은 파일 탐색기나 Office 응용 프로그램에서 직접 공유하는 것이지만 보호된 파일을 메일 메시지에 첨부할 수도 있습니다([Rights Management 공유 응용 프로그램을 사용하여 메일을 통해 공유하는 파일 보호](sharing-app-protect-by-email.md) 참조).
 
 > [!TIP]
 > 파일을 보호하려 할 때 오류가 나타나면 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](https://go.microsoft.com/fwlink/?LinkId=303971)를 참조하세요.
 
-## <a name="to-protect-a-file-on-a-device-protect-in-place"></a>장치에서 파일을 보호하려면(내부 보호)
+## <a name="to-protect-a-file-on-a-device-protect-in-place"></a>디바이스에서 파일을 보호하려면(내부 보호)
 
 1.  파일 탐색기에서 보호할 파일을 선택합니다. 마우스 오른쪽 단추를 클릭하고 **RMS로 보호**를 선택한 다음 **바로 보호**를 선택합니다. 예를 들면 다음과 같습니다.
 

@@ -120,9 +120,9 @@ Office Professional Plus 2010 서비스 팩 2 또는 Office Professional 2010 �
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
 
-iOS 및 Android용 Azure Information Protection 뷰어 앱은 이러한 장치에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
+iOS 및 Android용 Azure Information Protection 뷰어 앱은 이러한 디바이스에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
 
-Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관리 앱을 사용하여 이 앱을 배포 및 관리할 수 있습니다. 자세한 내용은 Intune 설명서에서 [Microsoft Intune 콘솔에서 모바일 응용 프로그램 관리 정책 구성 및 배포](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)를 참조하세요. 이 Intune 설명서에서 2단계에서는 정책 관리 앱 게시 지침을 사용합니다.
+Microsoft Intune에서 iOS 및 Android 디바이스를 등록하는 경우 정책 관리 앱을 사용하여 이 앱을 배포 및 관리할 수 있습니다. 자세한 내용은 Intune 설명서에서 [Microsoft Intune 콘솔에서 모바일 응용 프로그램 관리 정책 구성 및 배포](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)를 참조하세요. 이 Intune 설명서에서 2단계에서는 정책 관리 앱 게시 지침을 사용합니다.
 
 자세한 내용은 [iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ](./rms-client/mobile-app-faq.md)를 참조하세요.
 
@@ -143,7 +143,7 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 ### <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 자세한 내용
 
-이 응용 프로그램은 Azure Information Protection 클라이언트로 대체되고 있습니다. 하지만 Windows Phone 모바일 장치에서 보호된 파일을 보려면 여전히 필요합니다. 
+이 응용 프로그램은 Azure Information Protection 클라이언트로 대체되고 있습니다. 하지만 Windows Phone 모바일 디바이스에서 보호된 파일을 보려면 여전히 필요합니다. 
 
 Mac 컴퓨터의 경우 보호된 PDF 파일(.ppdf), 보호된 텍스트 이미지 및 일반적으로 보호되는 파일에 대한 뷰어를 제공합니다. Mac용 RMS 공유 앱은 이미지 파일을 보호할 수 있지만 다른 파일은 보호할 수 없습니다. Office 파일을 보호하려면 Mac용 Office를 사용합니다. 
 

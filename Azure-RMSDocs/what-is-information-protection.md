@@ -80,7 +80,7 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 ### <a name="additional-integration-for-email"></a>메일에 대한 추가 통합
 
-Azure Information Protection을 Exchange Online과 함께 사용하는 경우 추가 이점이 있습니다. 즉, 보호된 메일을 모든 사용자에게 보내 사용자가 원하는 장치에서 읽을 수 있도록 할 수 있습니다.
+Azure Information Protection을 Exchange Online과 함께 사용하는 경우 추가 이점이 있습니다. 즉, 보호된 메일을 모든 사용자에게 보내 사용자가 원하는 디바이스에서 읽을 수 있도록 할 수 있습니다.
 
 예를 들어 사용자가 **Gmail**, **Hotmail** 또는 **Microsoft** 계정을 사용하는 개인 이메일 주소나 Office 365 또는 Azure AD의 계정이 없는 사용자에게 중요한 정보를 보내야 한다고 가정합니다. 이러한 메일은 미사용 시와 전송 중에 암호화해야 하고 원래 받는 사람만 읽어야 합니다.
 

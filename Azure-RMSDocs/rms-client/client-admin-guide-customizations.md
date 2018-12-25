@@ -614,7 +614,7 @@ Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커
 - Value: **False**
 
 
-## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
+## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 디바이스 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
 
 웹용 Outlook에서는 아직 기본적으로 Azure Information Protection 분류 및 보호를 지원하지 않지만, Exchange 메시지 분류를 사용하여 웹용 Outlook을 사용하는 모바일 사용자로 Azure Information Protection 레이블을 확장할 수 있습니다. Outlook Mobile은 Exchange 메시지 분류를 지원하지 않습니다.
 
@@ -634,7 +634,7 @@ Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커
     
     참고: 레이블이 하위 레이블인 경우 헤더 값의 하위 레이블 앞에 부모 레이블도 같은 형식을 사용하여 지정해야 합니다. 예를 들어 하위 레이블의 GUID가 27efdf94-80a0-4d02-b88c-b615c12d69a9이면 값은 다음과 같을 수 있습니다. `MSIP_Label_ab70158b-bdcc-42a3-8493-2a80736e9cbd_Enabled=True;MSIP_Label_27efdf94-80a0-4d02-b88c-b615c12d69a9_Enabled=True;`
 
-이 구성을 테스트하기 전에 메일 흐름 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 이제 규칙이 적용되면 사용자가 Exchange ActiveSync IRM을 지원하는 모바일 장치 클라이언트 또는 웹용 Outlook을 사용할 때 다음과 같은 이벤트가 발생합니다. 
+이 구성을 테스트하기 전에 메일 흐름 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 이제 규칙이 적용되면 사용자가 Exchange ActiveSync IRM을 지원하는 모바일 디바이스 클라이언트 또는 웹용 Outlook을 사용할 때 다음과 같은 이벤트가 발생합니다. 
 
 - 사용자가 Exchange 메시지 분류를 선택하고 전자 메일을 보냅니다.
 

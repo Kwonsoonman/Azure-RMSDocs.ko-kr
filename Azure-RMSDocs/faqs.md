@@ -58,7 +58,7 @@ Windows용 Azure Information Protection 클라이언트가 설치되어 있고 A
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators"></a>Azure Information Protection을 구성하려면 전역 관리자여야 하나요? 또는 다른 관리자에게 위임할 수 있나요?
 
-분명 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
+물론 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
 
 - **Information Protection 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Information Protection의 모든 측면을 구성할 수 있지만 다른 서비스는 구성할 수 없습니다. 이 역할을 가진 관리자는 Azure Rights Management 보호 서비스를 활성화 및 비활성화하고 보호 설정 및 레이블을 구성하며 Azure Information Protection 정책을 구성할 수 있습니다. 또한 이 역할을 가진 관리자는 모든 [Azure Information Protection 클라이언트](./rms-client/client-admin-guide-powershell.md) 및 [AADRM 모듈](administer-powershell.md)의 PowerShell cmdlet을 모두 실행할 수 있습니다. 
     

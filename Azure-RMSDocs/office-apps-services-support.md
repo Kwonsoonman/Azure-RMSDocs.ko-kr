@@ -1,4 +1,4 @@
----
+﻿---
 title: Office 앱 및 서비스가 AIP에서 Azure RMS를 지원하는 방법
 description: '최종 사용자 Office 애플리케이션(예: Word 및 Outlook) 및 Office 서비스(예: Exchange 및 SharePoint)에서 AIP의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다.'
 author: cabailey
@@ -41,7 +41,7 @@ Exchange Online 또는 Exchange Server를 사용하는 경우 Azure Information 
 
 -   **Exchange ActiveSync IRM** - 모바일 장치에서 메일 메시지를 보호하고 보호된 메일 메시지를 사용할 수 있습니다.
 
--   Outlook 클라이언트와 비슷하게 구현된 **웹의 Outlook**의 메일 보호 지원 이 구성을 사용하면 보호 템플릿 또는 옵션을 사용하여 메일 메시지를 보호할 수 있습니다. 사용자가 받은 보호된 메일 메시지를 읽고 사용할 수 있습니다.
+-   Outlook 클라이언트와 비슷하게 구현된 **Outlook 웹 앱**의 메일 보호 지원 이 구성을 사용하면 보호 템플릿 또는 옵션을 사용하여 메일 메시지를 보호할 수 있습니다. 사용자가 받은 보호된 메일 메시지를 읽고 사용할 수 있습니다.
 
 -   Outlook 클라이언트용**보호 규칙** - 관리자가 지정된 받는 사람의 메일 메시지에 보호 템플릿 및 옵션을 자동으로 적용하도록 구성하는 규칙입니다. 예를 들어 법률 자문 부서로 전송하는 내부 메일은 법률 자문 부서 구성원만 읽을 수 있으며 전달할 수 없도록 구성할 수 있습니다. 사용자는 메일 메시지를 보내기 전에 메시지에 적용되는 보호를 확인할 수 있으며 기본적으로 보호가 필요하지 않다고 판단되면 제거할 수 있습니다. 메일은 전송되기 전에 암호화됩니다. 자세한 내용은 Exchange 라이브러리에서 [Outlook 보호 규칙](https://technet.microsoft.com/library/dd638178%28v=exchg.150%29.aspx) 및 [Outlook 보호 규칙 만들기](https://technet.microsoft.com/library/dd638196%28v=exchg.150%29.aspx)를 참조하세요.
 

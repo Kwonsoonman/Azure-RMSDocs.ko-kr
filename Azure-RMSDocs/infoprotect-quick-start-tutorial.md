@@ -1,4 +1,4 @@
----
+﻿---
 title: '자습서: Azure Information Protection 정책 편집 및 새 레이블 만들기 - AIP'
 description: 조직을 위한 Microsoft Azure Information Protection 정책을 편집하는 소개 자습서로, 약 15분이면 완료할 수 있습니다.
 author: cabailey
@@ -77,7 +77,7 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
 
 3. 레이블 뒤의 **설정을 구성하여 Information Protection 최종 사용자에게 표시하고 적용** 섹션에서 정책 설정을 찾습니다. 
     
-    현재 설정이 구성된 방식을 기록해 둡니다. 특히, **기본 레이블 선택** 및 **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함) 설정 예를 들면 다음과 같습니다.
+    현재 설정이 구성된 방식을 기록해 둡니다. 특히, **기본 레이블 선택** 및 **분류 레이블 낮추기, 레이블 제거 또는 보호 제거를 설정하려면 근거를 제공해야 합니다.** 설정 예를 들면 다음과 같습니다.
     
     ![Azure Information Protection 자습서 - 변경할 정책 설정](./media/info-protect-policy-default-settings.png)
     
@@ -87,11 +87,11 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
 
     이전 버전의 정책을 사용하고 있어 이 레이블이 없는 경우 같은 레이블로 **내부**를 선택합니다.
 
-5. **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함) 옵션을 **On**(켜짐)으로 설정합니다(아직 설정하지 않은 경우).
+5. **분류 레이블 낮추기, 레이블 제거 또는 보호 제거를 설정하려면 근거를 제공해야 합니다.** 옵션을 **설정** 으로 설정합니다(아직 설정하지 않은 경우).
 
 6. 또한 **Office 앱에 Information Protection 표시줄을 표시합니다.** 가 **설정**으로 설정되어 있는지 확인합니다.
 
-7. 이 **Policy: Global**(정책: 전역) 블레이드에서 **저장**을 선택하고, 작업을 확인하라는 메시지가 표시되는 경우 **확인**을 선택합니다. 이 블레이드를 닫습니다.
+7. 이 **정책: 전역** 블레이드에서 **저장**을 선택하고, 작업을 확인하라는 메시지가 표시되는 경우 **확인**을 선택합니다. 이 블레이드를 닫습니다.
 
 ### <a name="create-a-new-label-for-protection-visual-markers-and-a-condition-to-prompt-for-classification"></a>보호를 위한 새 레이블, 시각적 표식 및 분류를 위한 메시지 표시 조건 만들기
 
@@ -133,9 +133,9 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
 
 8. **하위 레이블** 블레이드로 돌아가서 **시각적 표시 설정** 섹션을 찾습니다.
     
-    **이 레이블이 포함된 문서에는 바닥글이 있습니다.** 설정에 대해 **켜기**를 클릭한 다음 **텍스트** 상자에 **기밀로 분류됨**을 입력합니다. 
+    **이 레이블이 포함된 문서에는 바닥글이 있습니다.** 설정에 대해 **설정**를 클릭한 다음 **텍스트** 상자에 **기밀로 분류됨**을 입력합니다. 
     
-    **Documents with this label have a watermark**(이 레이블이 있는 문서는 워터마크를 포함함) 설정에서 **On**(켜기)을 클릭하고 **Text**(텍스트) 상자에 조직 이름을 입력합니다. 예를 들어 **VanArsdel, Ltd**를 입력합니다. 
+    **이 레이블이 포함된 문서에는 워터마크가 있습니다.** 설정에서 **설정**을 클릭하고 **워터마크 텍스트** 상자에 조직 이름을 입력합니다. 예를 들어 **VanArsdel, Ltd**를 입력합니다. 
     
     이러한 시각적 표식의 모양을 변경할 수는 있지만, 지금은 이러한 설정을 기본값으로 그대로 유지합니다.
     
@@ -180,7 +180,7 @@ Azure Portal을 사용하여 먼저 일부 정책 설정을 변경한 후 새 �
     ![Azure Information Protection 자습서 - 설정이 구성됨](./media/info-protect-settings-configuredv2.png)
     
 
-17. 이 **Policy: Global**(정책: 전역) 블레이드에서 **저장**을 클릭합니다. 이 작업을 확인하라는 메시지가 표시되면 **확인**을 클릭합니다.
+17. 이 **정책: 전역** 블레이드에서 **저장**을 클릭합니다. 이 작업을 확인하라는 메시지가 표시되면 **확인**을 클릭합니다.
 
 이 자습서를 완료한 후 Azure Portal을 닫거나, 열어 둔 채로 추가 구성 옵션을 사용해 볼 수 있습니다.
 
@@ -258,7 +258,7 @@ Word에서 새 문서를 엽니다. Azure Information Protection 클라이언트
 
 2. 정책 설정을 기록해 둔 원래 값으로 되돌린 후 **저장**을 선택합니다. 
 
-3. **분류** > **레이블** 메뉴 옵션의 **Azure Information Protection - 레이블** 블레이드에서 만든 **재무** 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택합니다.
+3. 분류 > 레이블 메뉴 옵션의 Azure Information Protection - 레이블 블레이드에서 만든 재무 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택합니다.
 
 4. **이 레이블 삭제**를 선택하고 확인하라는 메시지가 표시되면 **확인**을 선택합니다.
 

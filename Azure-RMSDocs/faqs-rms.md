@@ -67,7 +67,7 @@ Rights Management 커넥터에서 정보, 경고 및 오류 메시지를 이벤�
 
 ## <a name="how-do-i-create-a-new-custom-template-in-the-azure-portal"></a>Azure Portal에서 새 사용자 지정 템플릿을 만들려면 어떻게 해야 하나요?
 
-사용자 지정 템플릿은 Azure Portal로 이동되고 있으며 여기에서 계속 템플릿으로 관리하거나 레이블로 변환할 수 있습니다. 새 템플릿을 만들려면 새 레이블을 만들고 Azure RMS에 대한 데이터 보호 설정을 구성합니다. 내부적으로 새 템플릿이 만들어진 다음 권한 관리 템플릿과 통합되는 서비스 및 응용 프로그램에서 액세스될 수 있습니다.
+사용자 지정 템플릿은 Azure Portal로 이동되고 있으며 여기에서 계속 템플릿으로 관리하거나 레이블로 변환할 수 있습니다. 새 템플릿을 만들려면 새 레이블을 만들고 Azure RMS에 대한 데이터 보호 설정을 구성합니다. 내부적으로 새 템플릿이 만들어진 다음 권한 관리 템플릿과 통합되는 서비스 및 애플리케이션에서 액세스될 수 있습니다.
 
 Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Protection의 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
 
@@ -109,7 +109,7 @@ Azure Portal의 템플릿에 대한 자세한 내용은 [Azure Information Prote
 
 - Azure AD에 계정이 없는 사용자에게 보내는 Office 문서 첨부 파일이 포함된 전자 메일을 보호하는 경우 인증 방법이 변경됩니다. Azure Rights Management 서비스는 Gmail과 같이 많이 사용되는 일부 소셜 ID 공급자와 페더레이션되어 있습니다. 사용자의 전자 메일 공급자가 지원되는 경우 사용자는 해당 서비스에 로그인 할 수 있으며 사용자의 전자 메일 공급자가 인증을 담당합니다. 사용자의 전자 메일 공급자가 지원되지 않거나 기본 설정인 경우 사용자는 인증을 위해 일회성 암호를 신청할 수 있으며 보호된 문서가 있는 전자 메일을 웹 브라우저에 표시할 수 있습니다.
 
-- Azure Information Protection은 지원되는 응용 프로그램에 Microsoft 계정을 사용할 수 있습니다. 현재 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- Azure Information Protection은 지원되는 애플리케이션에 Microsoft 계정을 사용할 수 있습니다. 현재 인증에 Microsoft 계정을 사용할 경우, 일부 애플리케이션이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="can-i-add-external-users-people-from-outside-my-company-to-custom-templates"></a>외부 사용자(회사 외부의 사용자)를 사용자 지정 템플릿에 추가할 수 있나요?
 
@@ -141,7 +141,7 @@ Exchange Online과 Azure Rights Management 서비스를 사용할 때는 전자 
 ## <a name="what-devices-and-which-file-types-are-supported-by-azure-rms"></a>Azure RMS에서는 어떤 디바이스 및 파일 형식을 지원하나요?
 Azure Rights Management 서비스를 지원하는 디바이스 목록은 [Azure Rights Management 데이터 보호를 지원하는 클라이언트 디바이스](./requirements-client-devices.md)를 참조하세요. 현재는 지원 디바이스 중 일부만 모든 Rights Management 기능을 지원하기 때문에 [RMS 기반 응용 프로그램](./requirements-applications.md#rms-enlightened-applications) 표도 확인해야 합니다.
 
-Azure Rights Management 서비스는 모든 형식의 파일을 지원할 수 있습니다. 텍스트, 이미지, Microsoft Office(Word, Excel, PowerPoint) 파일, .pdf 파일 및 일부 기타 응용 프로그램 파일 형식의 경우 Azure Rights Management는 권한 적용 및 암호화를 모두 포함하는 기본 보호 기능을 제공합니다. 기타 모든 응용 프로그램 및 파일 형식의 경우 일반적인 보호를 통해 사용자가 파일을 열 권한이 있는지 확인하는 인증 및 파일 캡슐화 기능을 제공합니다.
+Azure Rights Management 서비스는 모든 형식의 파일을 지원할 수 있습니다. 텍스트, 이미지, Microsoft Office(Word, Excel, PowerPoint) 파일, .pdf 파일 및 일부 기타 애플리케이션 파일 형식의 경우 Azure Rights Management는 권한 적용 및 암호화를 모두 포함하는 기본 보호 기능을 제공합니다. 기타 모든 애플리케이션 및 파일 형식의 경우 일반적인 보호를 통해 사용자가 파일을 열 권한이 있는지 확인하는 인증 및 파일 캡슐화 기능을 제공합니다.
 
 Azure Rights Management에 의해 고유하게 지원되는 파일 이름 확장명 목록을 보려면 [Azure Information Protection 클라이언트에서 지원하는 파일 형식](./rms-client/client-admin-guide-file-types.md)을 참조하세요. 여기에 나열되지 않은 파일 이름 확장명은 해당 파일에 일반 보호를 자동 적용하는 Azure Information Protection 클라이언트를 통해 지원됩니다.
 
@@ -165,7 +165,7 @@ Outlook을 열고 Office 365 회사 또는 학교 계정을 사용하여 프로�
 아니요. 이 시나리오에서는 연결된 임시 파일에 원래 문서의 데이터가 포함되지 않고 대신 파일이 열려 있는 동안 사용자가 입력하는 내용만 포함됩니다. 원본 파일과 달리 임시 파일은 명시적으로 공유를 위해 설계되지 않았으며 로컬 보안 컨트롤(예: BitLocker 및 EFS)로 보호되는 디바이스에 있습니다.
 
 ## <a name="a-feature-i-am-looking-for-doesnt-seem-to-work-with-sharepoint-protected-librariesis-support-for-my-feature-planned"></a>SharePoint 보호 라이브러리에서 작동하지 않는 것 같은 기능이 있습니다. 이 기능에 대한 지원이 예정되어 있나요?
-현재, SharePoint는 Rights Management 템플릿, 문서 추적 및 일부 다른 기능을 지원하지 않는 IRM 보호 라이브러리를 사용하여 RMS 보호 문서를 지원합니다. 자세한 내용은 [Office 응용 프로그램 및 서비스](./office-apps-services-support.md) 문서에서 [SharePoint Online 및 SharePoint Server](./office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
+현재, SharePoint는 Rights Management 템플릿, 문서 추적 및 일부 다른 기능을 지원하지 않는 IRM 보호 라이브러리를 사용하여 RMS 보호 문서를 지원합니다. 자세한 내용은 [Office 애플리케이션 및 서비스](./office-apps-services-support.md) 문서에서 [SharePoint Online 및 SharePoint Server](./office-apps-services-support.md#sharepoint-online-and-sharepoint-server) 섹션을 참조하세요.
 
 아직 지원되지 않는 특정 기능에 관심이 있는 경우 [Enterprise Mobility and Security Blog](https://cloudblogs.microsoft.com/enterprisemobility/?product=azure-rights-management-services)(Enterprise Mobility 및 보안 블로그)의 공지에 관심을 기울이시기 바랍니다.
 

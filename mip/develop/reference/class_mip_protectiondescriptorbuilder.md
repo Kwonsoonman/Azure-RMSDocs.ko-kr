@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 42e44cfaf269a43d0210c0c040ea70ccc1fb192e
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446637"
@@ -85,7 +85,7 @@ public void SetSignedAppData(const std::map<std::string, std::string>& value)  |
 * **value**: 앱별 데이터
 
 
-응용 프로그램이 보호 서비스에서 암호화되는 앱별 데이터의 사전을 지정할 수 있습니다. 이 암호화된 데이터는 SetSignedAppData를 통해 설정된 서명된 데이터와 관련이 없습니다.
+애플리케이션이 보호 서비스에서 암호화되는 앱별 데이터의 사전을 지정할 수 있습니다. 이 암호화된 데이터는 SetSignedAppData를 통해 설정된 서명된 데이터와 관련이 없습니다.
   
 ### <a name="setsignedappdata"></a>SetSignedAppData
 서명해야 하는 앱별 데이터를 설정합니다.
@@ -94,7 +94,7 @@ public void SetSignedAppData(const std::map<std::string, std::string>& value)  |
 * **value**: 앱별 데이터
 
 
-응용 프로그램이 보호 서비스에서 서명되는 앱별 데이터의 사전을 지정할 수 있습니다. 이 서명된 데이터는 SetEncryptedAppData를 통해 설정된 암호화된 데이터와 관련이 없습니다.
+애플리케이션이 보호 서비스에서 서명되는 앱별 데이터의 사전을 지정할 수 있습니다. 이 서명된 데이터는 SetEncryptedAppData를 통해 설정된 암호화된 데이터와 관련이 없습니다.
   
 ### <a name="protectiondescriptorbuilder"></a>~ProtectionDescriptorBuilder
 _아직 문서화되지 않았습니다._

@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 5af209d5a627263399c8c60f474495dcadab24a0
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446501"
@@ -18,7 +18,7 @@ ms.locfileid: "47446501"
 --------------------------------|---------------------------------------------
 **공용** |
 enum Consent       |  서비스 엔드포인트에 연결하기 위해 동의를 요청하는 경우 사용자의 응답입니다.
-struct ApplicationInfo  |  응용 프로그램 특정 정보를 포함하는 구조체입니다.
+struct ApplicationInfo  |  애플리케이션 특정 정보를 포함하는 구조체입니다.
 **mip** |
 enum ErrorType       | _아직 문서화되지 않았습니다._
 enum HttpRequestType       |  HTTP 요청 유형입니다.
@@ -137,20 +137,20 @@ ProtectionHandlerCreationOptions 비트 OR 연산자입니다.
 
 ### <a name="releaseallresources"></a>ReleaseAllResources
 종료하기 전에 모든 리소스(예: 스레드)를 해제합니다.
-MIP 동적 라이브러리가 응용 프로그램에 의해 지연 로드되는 경우 응용 프로그램이 이 MIP 라이브러리를 명시적으로 언로드하기 전에 교착 상태를 방지하기 위해 이 함수를 호출해야 합니다. 예를 들어 win32에서 FreeLibrary 또는 \__FUnloadDelayLoadedDLL2를 통해 명시적으로 MIP DLL을 언로드하는 호출이 발생하기 전에 이 함수를 호출해야 합니다. 응용 프로그램에서 이 함수를 호출하기 전에 모든 MIP 개체(예: 프로필, 엔진, 처리기)에 대한 참조를 해제해야 합니다.
+MIP 동적 라이브러리가 애플리케이션에 의해 지연 로드되는 경우 애플리케이션이 이 MIP 라이브러리를 명시적으로 언로드하기 전에 교착 상태를 방지하기 위해 이 함수를 호출해야 합니다. 예를 들어 win32에서 FreeLibrary 또는 \__FUnloadDelayLoadedDLL2를 통해 명시적으로 MIP DLL을 언로드하는 호출이 발생하기 전에 이 함수를 호출해야 합니다. 애플리케이션에서 이 함수를 호출하기 전에 모든 MIP 개체(예: 프로필, 엔진, 처리기)에 대한 참조를 해제해야 합니다.
   
 **반환**: 매개 변수의 비트 OR
   
 ## <a name="structures"></a>구조
 
 ### <a name="applicationinfo"></a>ApplicationInfo 
-응용 프로그램 특정 정보를 포함하는 구조체입니다.
+애플리케이션 특정 정보를 포함하는 구조체입니다.
 
  필드                        | 설명                                
 --------------------------------|---------------------------------------------
- public std::string applicationId  |  Azure AD 포털에서 설정된 응용 프로그램 식별자입니다.
+ public std::string applicationId  |  Azure AD 포털에서 설정된 애플리케이션 식별자입니다.
  public std::string applicationName  |  응용 프로그램 이름
- public std::string applicationVersion  |  사용 중인 응용 프로그램의 버전입니다.
+ public std::string applicationVersion  |  사용 중인 애플리케이션의 버전입니다.
   
 ### <a name="mippublishinglicensecontext"></a>mip::PublishingLicenseContext 
 보호 처리기를 만드는 데 사용되는 게시 라이선스의 세부 정보를 포함합니다.

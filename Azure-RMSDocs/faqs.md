@@ -54,7 +54,7 @@ Azure Rights Management 데이터 보호를 포함하는 Office 365 구독이 �
 
 Windows용 Azure Information Protection 클라이언트가 설치되어 있고 Azure Information Protection 정책이 없는 경우는 클라이언트가 자동으로 [보호 전용 모드](./rms-client/client-protection-only-mode.md)에서 작동합니다. 이 모드에서 사용자는 Rights Management 템플릿과 사용자 지정 권한을 쉽게 적용할 수 있습니다. 나중에 분류 및 레이블 지정이 포함된 구독을 구입하면 Azure Information Protection 정책을 다운로드할 때 클라이언트가 자동으로 표준 모드로 전환됩니다.
 
-현재 Windows용 Rights Management 공유 응용 프로그램을 사용하고 있다면 이 응용 프로그램을 Azure Information Protection 클라이언트로 교체하는 것이 좋습니다. 공유 응용 프로그램에 대한 지원은 2019년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 응용 프로그램으로 수행해왔던 작업](./rms-client/upgrade-client-app.md)을 참조하세요.
+현재 Windows용 Rights Management 공유 애플리케이션을 사용하고 있다면 이 애플리케이션을 Azure Information Protection 클라이언트로 교체하는 것이 좋습니다. 공유 애플리케이션에 대한 지원은 2019년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 애플리케이션으로 수행해왔던 작업](./rms-client/upgrade-client-app.md)을 참조하세요.
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators"></a>Azure Information Protection을 구성하려면 전역 관리자여야 하나요? 또는 다른 관리자에게 위임할 수 있나요?
 

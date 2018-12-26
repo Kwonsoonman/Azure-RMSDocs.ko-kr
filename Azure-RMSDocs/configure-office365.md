@@ -21,9 +21,9 @@ ms.locfileid: "53319434"
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Office 365는 기본적으로 Azure Information Protection의 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 웹의 Outlook과 같은 애플리케이션에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 모든 사용자는 Rights Management 자격 증명으로 Office 응용 프로그램에 로그인해야 합니다. 그러면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
+Office 365는 기본적으로 Azure Information Protection의 Azure Rights Management 서비스를 지원하므로 Word, Excel, PowerPoint, Outlook 및 웹의 Outlook과 같은 애플리케이션에 대해 IRM(정보 권한 관리) 기능을 지원하기 위해 클라이언트 컴퓨터를 구성할 필요가 없습니다. 모든 사용자는 Rights Management 자격 증명으로 Office 애플리케이션에 로그인해야 합니다. 그러면 파일과 메일을 보호하고 다른 사용자가 보호한 파일과 메일을 사용할 수 있습니다.
 
-그러나 사용자가 Office 추가 기능 및 추가 파일 형식 지원에 따른 이점을 얻을 수 있도록 Azure Information Protection 클라이언트로 이러한 응용 프로그램을 보완하는 것이 좋습니다. 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
+그러나 사용자가 Office 추가 기능 및 추가 파일 형식 지원에 따른 이점을 얻을 수 있도록 Azure Information Protection 클라이언트로 이러한 애플리케이션을 보완하는 것이 좋습니다. 자세한 내용은 [Azure Information Protection 클라이언트: 클라이언트 설치 및 구성](configure-client.md)을 참조하세요.
 
 ## <a name="exchangeonline-irm-configuration"></a>Exchange Online: IRM 구성
 Exchange Online IRM이 Azure Rights Management 서비스와 함께 작동하는 방식에 대한 자세한 내용은 [Office 애플리케이션 및 서비스에서 Azure Rights Management를 지원하는 방법](office-apps-services-support.md)에서 [Exchange Online 및 Exchange Server](office-apps-services-support.md#exchange-online-and-exchange-server) 섹션을 참조하세요.

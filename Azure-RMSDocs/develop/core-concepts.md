@@ -20,9 +20,9 @@ ms.lasthandoff: 09/07/2018
 ms.locfileid: "44146254"
 ---
 # <a name="developer-guidance"></a>개발자 지침
-Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management Services)를 활용하는 AD RMS 사용 응용 프로그램을 가능한 한 간단하게 빌드할 수 있도록 지원하는 데 중점을 둡니다.
+Microsoft Rights Management SDK 4.2는 AD RMS(Active Directory Right Management Services)를 활용하는 AD RMS 사용 애플리케이션을 가능한 한 간단하게 빌드할 수 있도록 지원하는 데 중점을 둡니다.
 
-다음 항목은 RMS 사용 응용 프로그램을 개발하기 위한 디자인 프로세스를 지원하기 위한 것입니다.
+다음 항목은 RMS 사용 애플리케이션을 개발하기 위한 디자인 프로세스를 지원하기 위한 것입니다.
 
 - [Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법](authentication-integration.md) - RMS 지원 앱에 대한 사용자 인증의 기본 사항을 설명합니다.
 - [방법: 오류 및 성능 로깅 사용](enabling-logging.md) - RMS SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.

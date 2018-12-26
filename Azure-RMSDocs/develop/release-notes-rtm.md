@@ -33,13 +33,13 @@ ms.locfileid: "44151353"
 >[!Note]
 > 이 섹션의 기능 문서 업데이트는 2015년 12월 11일자 SDK 다운로드에 적용됩니다.
 
-- **개선된 인증 흐름** - [Azure ADAL(Active Directory 인증 라이브러리)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)을 통해 OAuth2 토큰 기반 인증을 사용합니다. 이 프로세스와 해당 프로세스의 API 확장에 대한 자세한 내용은 [ADAL authentication for your RMS enabled application](how-to-use-adal-authentication.md)(RMS 사용 응용 프로그램에 대한 ADAL 인증) 항목을 참조하세요.
+- **개선된 인증 흐름** - [Azure ADAL(Active Directory 인증 라이브러리)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)을 통해 OAuth2 토큰 기반 인증을 사용합니다. 이 프로세스와 해당 프로세스의 API 확장에 대한 자세한 내용은 [RMS에 대한 ADAL 인증 사용 애플리케이션](how-to-use-adal-authentication.md) 항목을 참조하세요.
 
 - **ADAL로 업데이트**: Microsoft Online 로그인 도우미 대신 ADAL 인증을 사용하도록 응용 프로그램을 업데이트하면 개발자와 고객이 다음을 수행할 수 있습니다.
 
  - 다단계 인증 활용
  - 컴퓨터에 대한 관리자 권한 없이 RMS 2.1 클라이언트 설치
- - Windows 10용 응용 프로그램 인증
+ - Windows 10용 애플리케이션 인증
 
 - **RMS SDK를 사용하는 Microsoft Online SIA(로그인 도우미)에 대한 지원을 제거하는 중입니다.** 지원이 중지되는 시점 이후 6개월 동안 SIA를 사용하도록 계속 지원할 예정입니다.
 
@@ -52,11 +52,11 @@ ms.locfileid: "44151353"
 
 - 오류 메시지 및 문제 해결 환경을 개선하기 위한 많은 업데이트.
 - [지원되는 플랫폼](supported-platforms.md) 목록도 업데이트되었습니다.
-- RMS SDK 2.1에서는 더 이상 사전 프로덕션 환경이 필요하지 않고 응용 프로그램 매니페스트를 사용하지 않습니다. 이 개발자 설명서 집합의 다음 섹션이 제거되었으며, 전체 설명서가 단순한 형태로 다시 구성되었습니다.
+- RMS SDK 2.1에서는 더 이상 사전 프로덕션 환경이 필요하지 않고 애플리케이션 매니페스트를 사용하지 않습니다. 이 개발자 설명서 집합의 다음 섹션이 제거되었으며, 전체 설명서가 단순한 형태로 다시 구성되었습니다.
 
 ## <a name="may-2015-update"></a>2015년 5월 업데이트
 
--   **서비스 앱 및 클라우드 기반 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이 정보를 처리하는 지침을 제공하도록 이와 관련된 문서가 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 수정 버전을 참조하세요.
+-   **서비스 앱 및 클라우드 기반 RMS** - [IPC\_CREDENTIAL\_SYMMETRIC\_KEY](https://msdn.microsoft.com/library/dn133062.aspx)에는 대칭 키, **AppPrincipalId** 및 **TenantBposId**의 세 가지 정보가 필요합니다. 이 정보를 처리하는 지침을 제공하도록 이와 관련된 문서가 업데이트되었습니다. 이 업데이트에 대해서는 [서비스 애플리케이션이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)의 수정 버전을 참조하세요.
 
 ## <a name="april-2015-update"></a>2015년 4월 업데이트
 
@@ -65,7 +65,7 @@ ms.locfileid: "44151353"
 
     **참고** **IPC\_LI\_DEPRECATED\_ENCRYPTION\_ALGORITHMS** 플래그는 더 이상 API에 노출되지 않습니다. 즉, 이후 앱에서 이 플래그를 참조할 경우 더 이상 컴파일되지 않지만 API 코드에서 비공개로 플래그가 적용되므로 이미 빌드된 앱은 계속 작동합니다. 플래그를 변경하기만 하면 사용되지 않는 이전 암호화 알고리즘 플래그를 여전히 활용할 수 있습니다. 자세한 내용은 [암호화 작업](working-with-encryption.md)을 참조하세요.
 
--   [API 모드 값](https://msdn.microsoft.com/library/hh535236.aspx)이 **IPC\_API\_MODE\_SERVER**인 **서버 모드 응용 프로그램**에는 응용 프로그램 매니페스트가 더 이상 필요하지 않습니다. 프로덕션 RMS 서버에서 응용 프로그램을 테스트할 수 있으며, 프로덕션 환경으로 전환할 때 프로덕션 라이선스를 얻지 않아도 됩니다. 서버 모드 응용 프로그램에 대한 자세한 내용은 [응용 프로그램 종류](application-types.md)를 참조하세요.
+-   [API 모드 값](https://msdn.microsoft.com/library/hh535236.aspx)이 **IPC\_API\_MODE\_SERVER**인 **서버 모드 응용 프로그램**에는 응용 프로그램 매니페스트가 더 이상 필요하지 않습니다. 프로덕션 RMS 서버에서 애플리케이션을 테스트할 수 있으며, 프로덕션 환경으로 전환할 때 프로덕션 라이선스를 얻지 않아도 됩니다. 서버 모드 애플리케이션에 대한 자세한 내용은 [애플리케이션 종류](application-types.md)를 참조하세요.
 -   이제 **로깅**이 파일 및 Windows용 이벤트 추적 방법 둘 다를 통해 구현됩니다.
 -   **Windows 7 SP1 또는 Windows Server 2008 R2 컴퓨터**에서 실행하는 경우 "중요한 개발자 노트" 아래에 있는 참고 사항을 참조하세요.
 
@@ -107,10 +107,10 @@ SDK의 파일 API 구성 요소가 확장되었으며 다음 기능을 제공합
 
 -   특히 큰 PFile의 경우 **파일 API 메모리 사용**이 훨씬 향상되었습니다.
 -   이제 **IPC\_LI\_CONTENT\_ID** 속성을 통해 **콘텐츠 ID**를 쓸 수 있습니다. 자세한 내용은 [라이선스 속성 형식](https://msdn.microsoft.com/library/hh535287.aspx) 항목을 참조하세요.
--   **프로덕션 매니페스트 요구 사항** - 서버 모드에서 RMS 사용 응용 프로그램/서비스를 실행하는 경우에는 더 이상 매니페스트가 필요하지 않습니다. 자세한 내용은 [응용 프로그램 종류](application-types.md)를 참조하세요.
+-   **프로덕션 매니페스트 요구 사항** - 서버 모드에서 RMS 사용 응용 프로그램/서비스를 실행하는 경우에는 더 이상 매니페스트가 필요하지 않습니다. 자세한 내용은 [애플리케이션 종류](application-types.md)를 참조하세요.
 -   **설명서 업데이트**
 
-    **테스트 모범 사례** - Azure RMS를 사용하여 테스트하기 전에 온-프레미스 서버를 사용하는 지침이 추가되었습니다. 자세한 내용은 [서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
+    **테스트 모범 사례** - Azure RMS를 사용하여 테스트하기 전에 온-프레미스 서버를 사용하는 지침이 추가되었습니다. 자세한 내용은 [서비스 애플리케이션이 클라우드 기반 RMS를 사용할 수 있도록 설정](how-to-use-file-api-with-aadrm-cloud.md)을 참조하세요.
 
 ## <a name="important-developer-notes"></a>중요한 개발자 노트
 

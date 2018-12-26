@@ -33,7 +33,7 @@ ms.locfileid: "44151132"
 
 이러한 지침은 Microsoft Visual Studio 2010에 해당합니다. 다른 버전의 Microsoft Visual Studio를 사용하는 경우 설정 대화 상자가 약간 다르게 나타날 수도 있습니다.
 
-이러한 지침은 네이티브 32비트 응용 프로그램 빌드에 적용됩니다.
+이러한 지침은 네이티브 32비트 애플리케이션 빌드에 적용됩니다.
 
 1.  Visual Studio 2010 프로젝트에 RMS SDK 2.1 포함 디렉터리를 추가합니다.
 

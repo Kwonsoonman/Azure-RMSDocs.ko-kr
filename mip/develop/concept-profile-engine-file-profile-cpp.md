@@ -1,6 +1,6 @@
 ---
 title: 개념 - 파일 API 프로필 개체
-description: 이 문서는 응용 프로그램 초기화 중에 생성된 File 프로필 개체의 개념을 이해하는 데 도움이 됩니다.
+description: 이 문서는 애플리케이션 초기화 중에 생성된 File 프로필 개체의 개념을 이해하는 데 도움이 됩니다.
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 33ec266068d15e827267b7d518344aebd0f8f072
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47445906"
@@ -21,7 +21,7 @@ ms.locfileid: "47445906"
 
 - `AuthDelegateImpl`은 `mip::AuthDelegate`를 확장하도록 구현되었습니다.
 - `ConsentDelegateImpl`은 `mip::ConsentDelegate`를 확장하도록 구현되었습니다.
-- 응용 프로그램이 [Azure Active Directory에 등록](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad.md)되었으며 클라이언트 ID가 응용 프로그램 또는 구성 파일에 하드 코드되었습니다. 
+- 애플리케이션이 [Azure Active Directory에 등록](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad.md)되었으며 클라이언트 ID가 애플리케이션 또는 구성 파일에 하드 코드되었습니다. 
 - `mip::FileProfile::Observer`를 상속하는 클래스가 적절하게 구현되었습니다.
 
 ## <a name="load-a-profile"></a>프로필 로드
@@ -37,7 +37,7 @@ ms.locfileid: "47445906"
 - `std::shared_ptr<mip::AuthDelegate> authDelegate`: `mip::AuthDelegate` 클래스의 공유 포인터입니다. 
 - `std::shared_ptr<mip::ConsentDelegate>`: 
 - `std::shared_ptr<mip::FileProfile::Observer> observer`: `FileProfile::Observer` 구현에 대한 공유 포인터입니다.
-- `mip::ApplicationInfo applicationInfo`: 개체입니다. SDK를 사용 중인 응용 프로그램에 관한 정보를 정의하는 데 사용됩니다.
+- `mip::ApplicationInfo applicationInfo`: 개체입니다. SDK를 사용 중인 애플리케이션에 관한 정보를 정의하는 데 사용됩니다.
 
 다음 예제에서는 메모리 내뿐만 아니라 상태 저장소에 로컬 저장소를 사용하여 `profileSettings` 개체를 만드는 방법을 보여 줍니다. 둘 다 `authDelegateImpl` 개체가 이미 생성되었다고 가정합니다.
 

@@ -1,6 +1,6 @@
 ---
-title: RMS 공유 응용 프로그램 관리자 가이드 - AIP
-description: Windows용 Microsoft Rights Management 공유 응용 프로그램 배포를 담당하는 엔터프라이즈 네트워크의 관리자를 위한 지침과 정보를 제공합니다.
+title: RMS 공유 애플리케이션 관리자 가이드 - AIP
+description: Windows용 Microsoft Rights Management 공유 애플리케이션 배포를 담당하는 엔터프라이즈 네트워크의 관리자를 위한 지침과 정보를 제공합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -17,43 +17,43 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/11/2018
 ms.locfileid: "53246193"
 ---
-# <a name="rights-management-sharing-application-administrator-guide"></a>Rights Management 공유 응용 프로그램 관리자 가이드
+# <a name="rights-management-sharing-application-administrator-guide"></a>Rights Management 공유 애플리케이션 관리자 가이드
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
 > [!IMPORTANT]
-> **지원 종료 알림**: Windows용 Rights Management 공유 애플리케이션은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
+> **지원 종료 알림**: Windows용 Rights Management 공유 애플리케이션은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 애플리케이션에 대한 지원은 2019년 1월 31일에 중지됩니다. 
 
-엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 응용 프로그램을 담당하고 있거나, [Rights Management 공유 응용 프로그램 사용자 가이드](sharing-app-user-guide.md) 또는 [Windows용 Microsoft Rights Management 공유 응용 프로그램 FAQ](https://go.microsoft.com/fwlink/?LinkId=303971)에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다.
+엔터프라이즈 네트워크에서 Microsoft Rights Management 공유 애플리케이션을 담당하고 있거나, [Rights Management 공유 애플리케이션 사용자 가이드](sharing-app-user-guide.md) 또는 [Windows용 Microsoft Rights Management 공유 애플리케이션 FAQ](https://go.microsoft.com/fwlink/?LinkId=303971)에 나와 있는 것보다 자세한 기술 정보를 확인하려는 경우 이 문서의 정보를 참조할 수 있습니다.
 
-RMS 공유 응용 프로그램은 Azure Information Protection에서 가장 효율적으로 작동합니다. 이 배포 구성에서는 다른 조직의 사용자에게 보호된 첨부 파일을 보낼 수 있으며, 메일 알림 및 취소 기능이 포함된 문서 추적 등의 옵션도 지원되기 때문입니다. 그러나 온-프레미스 버전인 AD RMS에서도 해당 응용 프로그램을 사용할 수 있습니다(일부 제한이 적용됨). Azure Information Protection 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure Information Protection과 AD RMS 비교](../compare-on-premise.md)를 참조하세요. AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](../migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
+RMS 공유 애플리케이션은 Azure Information Protection에서 가장 효율적으로 작동합니다. 이 배포 구성에서는 다른 조직의 사용자에게 보호된 첨부 파일을 보낼 수 있으며, 메일 알림 및 취소 기능이 포함된 문서 추적 등의 옵션도 지원되기 때문입니다. 그러나 온-프레미스 버전인 AD RMS에서도 해당 응용 프로그램을 사용할 수 있습니다(일부 제한이 적용됨). Azure Information Protection 및 AD RMS에서 지원하는 기능을 포괄적으로 비교한 내용을 보려면 [Azure Information Protection과 AD RMS 비교](../compare-on-premise.md)를 참조하세요. AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 [AD RMS에서 Azure Information Protection으로 마이그레이션](../migrate-from-ad-rms-to-azure-rms.md)을 참조하세요.
 
-Rights Management 공유 응용 프로그램 기술 개요, 기본 및 일반 보호에 대한 정보, 지원되는 파일 형식, 파일 이름 확장명 및 기본 보호 수준을 변경하는 방법은 [Rights Management 공유 응용 프로그램 기술 개요 및 보호 세부 정보](sharing-app-admin-guide-technical.md)를 참조하세요. 
+Rights Management 공유 애플리케이션 기술 개요, 기본 및 일반 보호에 대한 정보, 지원되는 파일 형식, 파일 이름 확장명 및 기본 보호 수준을 변경하는 방법은 [Rights Management 공유 애플리케이션 기술 개요 및 보호 세부 정보](sharing-app-admin-guide-technical.md)를 참조하세요. 
 
-## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 응용 프로그램 자동 배포
-RMS 공유 응용 프로그램의 Windows 버전은 스크립트 방식 설치를 지원하므로 엔터프라이즈 배포에 적합합니다.
+## <a name="automatic-deployment-for-the-microsoft-rights-management-sharing-application"></a>Microsoft Rights Management 공유 애플리케이션 자동 배포
+RMS 공유 애플리케이션의 Windows 버전은 스크립트 방식 설치를 지원하므로 엔터프라이즈 배포에 적합합니다.
 
 설치의 유일한 필수 조건으로, 컴퓨터에서 Windows 7 서비스 팩 1 이상 버전을 실행하고 Microsoft Framework 버전 4.0 이상이 설치되어 있어야 합니다. Microsoft .NET Framework 4.0을 설치해야 하는 경우 [Microsoft 다운로드 센터에서 설치를 위해 해당 버전을 다운로드](https://www.microsoft.com/download/details.aspx?id=17718)할 수 있습니다.
 
-### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>자동 배포용 RMS 공유 응용 프로그램을 다운로드하려면
+### <a name="to-download-the-rms-sharing-application-for-automatic-deployment"></a>자동 배포용 RMS 공유 애플리케이션을 다운로드하려면
 
-1.  Microsoft 다운로드 센터의 [Windows용 Microsoft Rights Management 공유 응용 프로그램](https://www.microsoft.com/download/details.aspx?id=40857) 페이지로 이동하여 **다운로드**를 클릭합니다.
+1.  Microsoft 다운로드 센터의 [Windows용 Microsoft Rights Management 공유 애플리케이션](https://www.microsoft.com/download/details.aspx?id=40857) 페이지로 이동하여 **다운로드**를 클릭합니다.
 
-2.  필요한 파일을 선택하여 다운로드합니다. Windows 64비트용(Microsoft Rights Management 공유 응용 프로그램 x64.zip) 및 Windows 32비트용(Microsoft Rights Management 공유 응용 프로그램 x86.zip)의 두 가지 클라이언트 설치 패키지가 있습니다.
+2.  필요한 파일을 선택하여 다운로드합니다. Windows 64비트용(Microsoft Rights Management 공유 애플리케이션 x64.zip) 및 Windows 32비트용(Microsoft Rights Management 공유 애플리케이션 x86.zip)의 두 가지 클라이언트 설치 패키지가 있습니다.
 
 3.  압축된 설치 패키지를 두 번 클릭하는 등의 방법으로 파일의 압축을 풉니다. 그런 다음 클라이언트 컴퓨터가 액세스할 수 있는 네트워크 위치에 압축을 푼 파일을 복사합니다.
 
-RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한 배포 시나리오를 지원합니다.
+RMS 공유 애플리케이션의 설치 패키지는 다음과 같은 다양한 배포 시나리오를 지원합니다.
 
 |설명|배포 시나리오|
 |---------------|-----------------------|
 |Microsoft Online 로그인 도우미|Office 2010 및 Azure Information Protection<br /><br />[Office 2013용 2015년 6월 9일 업데이트](https://support.microsoft.com/kb/3054853)(KB3054853)를 설치하지 않은 경우 Office 2013 및 Azure Information Protection|
 |Office용 핫픽스(KB 2596501)|Office 2010 및 Azure Information Protection<br /><br />Office 2010 및 Active Directory RMS|
 |AD RMS 클라이언트 1.0이 Azure Information Protection에서 작동하도록 설정하기 위한 핫픽스(KB 2843630)|Office 2010 및 Azure Information Protection<br /><br />Office 2010 및 Active Directory RMS|
-|AD RMS 클라이언트 및 RMS 공유 응용 프로그램|Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS<br /><br />Office 2010 및 Azure Information Protection<br /><br />Office 2010 및 Active Directory RMS<br /><br />RMS 공유 응용 프로그램 및 Office 추가 기능만|
-|리본용 Office 추가 기능|Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS<br /><br />Office 2010 및 Azure Information Protection<br /><br />Office 2010 및 Active Directory RMS<br /><br />RMS 공유 응용 프로그램 및 Office 추가 기능만|
+|AD RMS 클라이언트 및 RMS 공유 애플리케이션|Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS<br /><br />Office 2010 및 Azure Information Protection<br /><br />Office 2010 및 Active Directory RMS<br /><br />RMS 공유 애플리케이션 및 Office 추가 기능만|
+|리본용 Office 추가 기능|Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS<br /><br />Office 2010 및 Azure Information Protection<br /><br />Office 2010 및 Active Directory RMS<br /><br />RMS 공유 애플리케이션 및 Office 추가 기능만|
 |Azure Active Directory Rights Management 준비 도구|Office 2010 및 Azure Information Protection|
-이러한 배포 시나리오용으로 RMS 공유 응용 프로그램을 배포하는 데 필요한 명령을 확인하려면 다음 절차를 수행합니다.
+이러한 배포 시나리오용으로 RMS 공유 애플리케이션을 배포하는 데 필요한 명령을 확인하려면 다음 절차를 수행합니다.
 
 -   **Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS**
 
@@ -69,7 +69,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 -   **RMS 공유 응용 프로그램 및 Office 추가 기능만**
 
-    사용자가 Office 2016, Office 2013 또는 Office 2010을 실행하고 조직에서 AD RMS를 사용하며 사용자가 Azure Information Protection을 사용하는 다른 조직과 공동 작업을 할 필요가 없습니다. 이 설치의 경우 공유 응용 프로그램과 Office 추가 기능만 설치하면 됩니다.
+    사용자가 Office 2016, Office 2013 또는 Office 2010을 실행하고 조직에서 AD RMS를 사용하며 사용자가 Azure Information Protection을 사용하는 다른 조직과 공동 작업을 할 필요가 없습니다. 이 설치의 경우 공유 애플리케이션과 Office 추가 기능만 설치하면 됩니다.
 
 > [!NOTE]
 > 이러한 시나리오에서 조직이 AD RMS를 실행하는 경우 사용자는 Azure Information Protection을 사용하는 다른 조직으로부터 보호된 콘텐츠를 받을 수는 있지만 Azure Information Protection을 사용하는 조직의 사용자에게 보호된 콘텐츠를 보낼 수는 없습니다. 그러나 조직이 Azure Information Protection을 실행하는 경우에는 사용자가 다른 조직과 보호된 콘텐츠를 주고받을 수 있습니다.
@@ -78,7 +78,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 ### <a name="to-deploy-the-rms-sharing-application-for-office2016-or-office-2013-and-azure-information-protection-or-active-directory-rms"></a>Office 2016 또는 Office 2013 및 Azure Information Protection 또는 Active Directory RMS용 RMS 공유 애플리케이션을 배포하려면
 
--   RMS 공유 응용 프로그램 및 관련 구성 요소를 설치하려는 각 컴퓨터에서 상승된 권한으로 다음 명령을 실행합니다.
+-   RMS 공유 애플리케이션 및 관련 구성 요소를 설치하려는 각 컴퓨터에서 상승된 권한으로 다음 명령을 실행합니다.
 
     ```
     setup.exe /s
@@ -86,9 +86,9 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
-### <a name="to-deploy-the-rms-sharing-application-for-office-2010-and-azure-information-protection"></a>Office 2010 및 Azure Information Protection용 RMS 공유 응용 프로그램을 배포하려면
+### <a name="to-deploy-the-rms-sharing-application-for-office-2010-and-azure-information-protection"></a>Office 2010 및 Azure Information Protection용 RMS 공유 애플리케이션을 배포하려면
 
-1.  Azure Active Directory Rights Management 준비 도구를 실행하여 조직의 인증 서비스 URL을 가져올 수 있으려면 Office 365 또는 Azure Active Directory 테넌트에 대한 전역 관리자여야 합니다. 이 도구는 단일 컴퓨터에서 한 번만 실행하면 됩니다. 각 컴퓨터에 RMS 공유 응용 프로그램을 설치할 때 인증 서비스 URL을 사용합니다.
+1.  Azure Active Directory Rights Management 준비 도구를 실행하여 조직의 인증 서비스 URL을 가져올 수 있으려면 Office 365 또는 Azure Active Directory 테넌트에 대한 전역 관리자여야 합니다. 이 도구는 단일 컴퓨터에서 한 번만 실행하면 됩니다. 각 컴퓨터에 RMS 공유 애플리케이션을 설치할 때 인증 서비스 URL을 사용합니다.
 
     1.  로컬 관리자 계정을 사용하여 컴퓨터에 로그인합니다.
 
@@ -117,13 +117,13 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         > [!NOTE]
         > 이 명령을 실행하면 Azure용 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 컴퓨터가 도메인에 가입되어 있지 않으면 이 메시지가 표시됩니다. 컴퓨터가 도메인에 가입되어 있으면 이 도구는 캐시된 자격 증명을 사용할 수 있습니다.
 
-2.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 상승된 권한으로 다음 명령을 한 번 실행합니다.
+2.  RMS 공유 애플리케이션을 설치할 각 컴퓨터에서 상승된 권한으로 다음 명령을 한 번 실행합니다.
 
     ```
     setup.exe /s /configureO2010Admin /certificationUrl <certification_url>
     ```
 
-3.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 해당 컴퓨터의 각 사용자는 다음 명령을 실행해야 합니다(상승된 권한은 필요하지 않음). 여러 가지 방법으로 이 작업을 수행할 수 있습니다. 예를 들어 메일 메시지나 지원 센터 포털의 링크를 통해 사용자가 명령을 실행하도록 할 수도 있고 로그온 스크립트에 명령을 추가할 수도 있습니다.
+3.  RMS 공유 애플리케이션을 설치할 각 컴퓨터에서 해당 컴퓨터의 각 사용자는 다음 명령을 실행해야 합니다(상승된 권한은 필요하지 않음). 여러 가지 방법으로 이 작업을 수행할 수 있습니다. 예를 들어 메일 메시지나 지원 센터 포털의 링크를 통해 사용자가 명령을 실행하도록 할 수도 있고 로그온 스크립트에 명령을 추가할 수도 있습니다.
 
     ```
     bin\RMSSetup.exe /configureO2010Only
@@ -131,15 +131,15 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
-### <a name="to-deploy-the-rms-sharing-application-for-office2010-and-active-directoryrms"></a>Active Directory RMS 및 Office 2010용 RMS 공유 응용 프로그램을 배포하려면
+### <a name="to-deploy-the-rms-sharing-application-for-office2010-and-active-directoryrms"></a>Active Directory RMS 및 Office 2010용 RMS 공유 애플리케이션을 배포하려면
 
-1.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 상승된 권한으로 다음 명령을 실행합니다.
+1.  RMS 공유 애플리케이션을 설치할 각 컴퓨터에서 상승된 권한으로 다음 명령을 실행합니다.
 
     ```
     setup.exe /s /configureO2010Admin
     ```
 
-2.  RMS 공유 응용 프로그램을 설치할 각 컴퓨터에서 사용자가 다음 명령을 실행해야 합니다(상승된 권한은 필요하지 않음). 여러 가지 방법으로 이 작업을 수행할 수 있습니다. 예를 들어 전자 메일 메시지나 지원 센터 포털의 링크를 통해 사용자가 명령을 실행하도록 할 수도 있고 로그온 스크립트에 명령을 추가할 수도 있습니다.
+2.  RMS 공유 애플리케이션을 설치할 각 컴퓨터에서 사용자가 다음 명령을 실행해야 합니다(상승된 권한은 필요하지 않음). 여러 가지 방법으로 이 작업을 수행할 수 있습니다. 예를 들어 전자 메일 메시지나 지원 센터 포털의 링크를 통해 사용자가 명령을 실행하도록 할 수도 있고 로그온 스크립트에 명령을 추가할 수도 있습니다.
 
     -   Windows 10, Windows 8.1 및 Windows 8 64비트:
 
@@ -168,9 +168,9 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
 설치 성공 여부를 확인하려면 이 문서에서 [설치 성공 여부 확인](#verifying-installation-success) 섹션을 참조하세요.
 
-### <a name="to-install-the-rms-sharing-application-and-office-add-in-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만 설치하려면
+### <a name="to-install-the-rms-sharing-application-and-office-add-in-only"></a>RMS 공유 애플리케이션 및 Office 추가 기능만 설치하려면
 
-1.  다음 명령을 사용하고 로그 파일을 만들 기존 폴더를 지정하여 AD RMS 클라이언트 및 RMS 공유 응용 프로그램을 설치합니다.
+1.  다음 명령을 사용하고 로그 파일을 만들 기존 폴더를 지정하여 AD RMS 클라이언트 및 RMS 공유 애플리케이션을 설치합니다.
 
     -   64비트 Windows:
 
@@ -241,7 +241,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
     **CLC-alice@isvtenant999.onmicrosoft.com-{1b9cfccf;k5b11;k4a10;kac15;k29b2b6980f4c}.drm**
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2010-and-active-directory-rms"></a>Office 2010 및 Active Directory RMS용 RMS 공유 응용 프로그램의 설치 성공 여부를 확인하려면
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-for-office-2010-and-active-directory-rms"></a>Office 2010 및 Active Directory RMS용 RMS 공유 애플리케이션의 설치 성공 여부를 확인하려면
 
 1.  Setup.exe 명령이 정상적으로 실행되었는지 확인하려면 각 컴퓨터의 *%temp%\RMS_installer_&lt;guid&gt;* 폴더에서 설치 로그 파일을 검색한 다음 종료 코드를 확인합니다.
 
@@ -272,7 +272,7 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
 
         DefaultUser="&lt;default_user&gt;"
 
-### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>RMS 공유 응용 프로그램 및 Office 추가 기능만의 설치 성공 여부를 확인하려면
+### <a name="to-verify-installation-success-for-the-rms-sharing-application-and-office-add-in-only"></a>RMS 공유 애플리케이션 및 Office 추가 기능만의 설치 성공 여부를 확인하려면
 
 1.  Setup_ipviewer.exe 명령의 성공을 확인하려면 설치 로그 파일에서 다음 텍스트를 검색합니다. **설치 성공 또는 오류 상태: 0.**
 
@@ -291,9 +291,9 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
     **MSI (s) (9C:88) [18:49:04:007]: Windows Installer installed the product. 제품 이름: Microsoft RMS Office 추가 기능. 제품 버전: 1.0.7. Product Language: 1033. 제조업체: Microsoft. Installation success or error status: 0.**
 
 ## <a name="uninstall-commands"></a>제거 명령
-이러한 배포에 필요한 설치 명령 중 일부만이 제거 명령을 지원합니다. AD RMS 클라이언트와 공유 응용 프로그램 및 Office 추가 기능을 제거할 수 있습니다. 이러한 요소를 제거하려면 다음 명령을 사용합니다.
+이러한 배포에 필요한 설치 명령 중 일부만이 제거 명령을 지원합니다. AD RMS 클라이언트와 공유 애플리케이션 및 Office 추가 기능을 제거할 수 있습니다. 이러한 요소를 제거하려면 다음 명령을 사용합니다.
 
-### <a name="to-uninstall-the-adrms-client-and-the-rms-sharing-application"></a>AD RMS 클라이언트 및 RMS 공유 응용 프로그램을 제거하려면
+### <a name="to-uninstall-the-adrms-client-and-the-rms-sharing-application"></a>AD RMS 클라이언트 및 RMS 공유 애플리케이션을 제거하려면
 
 -   다음 명령을 사용합니다.
 
@@ -326,13 +326,13 @@ RMS 공유 응용 프로그램의 설치 패키지는 다음과 같은 다양한
         ```
 
 ## <a name="suppressing-automatic-updates"></a>자동 업데이트를 사용하지 않도록 설정
-기본적으로는 최신 버전의 RMS 공유 응용 프로그램을 사용할 수 있으면 사용자에게 알림이 표시되며 해당 버전을 다운로드할지를 묻는 메시지가 나타납니다. 다음 레지스트리를 편집하여 이 알림을 표시하지 않도록 설정할 수 있습니다.
+기본적으로는 최신 버전의 RMS 공유 애플리케이션을 사용할 수 있으면 사용자에게 알림이 표시되며 해당 버전을 다운로드할지를 묻는 메시지가 나타납니다. 다음 레지스트리를 편집하여 이 알림을 표시하지 않도록 설정할 수 있습니다.
 
 1.  **HKEY_LOCAL_MACHINE\Software\Microsoft\MSIPC**로 이동한 다음 **RmsSharingApp** 키가 아직 없으면 새로 만듭니다.
 
 2.  **RmsSharingApp**을 선택하고 새 DWORD 값 **AllowUpdatePrompt**를 만든 후에 값을 **0**으로 설정합니다.
 
-WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음 기술을 사용하여 새 RMS 공유 응용 프로그램 버전을 모든 사용자에게 배포하기 전에 테스트를 할 수 있습니다.
+WSUS에서는 RMS 공유 애플리케이션을 지원하지 않으므로 다음 기술을 사용하여 새 RMS 공유 애플리케이션 버전을 모든 사용자에게 배포하기 전에 테스트를 할 수 있습니다.
 
 1.  모든 사용자의 컴퓨터에서 자동 업데이트를 표시하지 않도록 설정하는 스크립트를 실행합니다. 관리자가 새 버전을 테스트하는 데 사용하는 컴퓨터에서는 이 스크립트를 실행하지 마세요.
 
@@ -363,7 +363,7 @@ WSUS에서는 RMS 공유 응용 프로그램을 지원하지 않으므로 다음
 
 ### <a name="tracking-and-revoking-documents-for-users"></a>사용자에 대해 문서 추적 및 취소
 
-사용자가 문서 추적 사이트에 로그인하면 RMS 공유 응용 프로그램을 사용하여 공유한 문서를 추적 및 취소할 수 있습니다. Azure Information Protection에 대한 관리자(전역 관리자) 권한으로 로그인하면 페이지 오른쪽 위에 있는 관리자 아이콘을 클릭하여 관리자 모드로 전환하고 조직의 사용자가 공유한 문서를 확인할 수 있습니다.
+사용자가 문서 추적 사이트에 로그인하면 RMS 공유 애플리케이션을 사용하여 공유한 문서를 추적 및 취소할 수 있습니다. Azure Information Protection에 대한 관리자(전역 관리자) 권한으로 로그인하면 페이지 오른쪽 위에 있는 관리자 아이콘을 클릭하여 관리자 모드로 전환하고 조직의 사용자가 공유한 문서를 확인할 수 있습니다.
 
 관리자 모드에서 수행하는 작업은 감사되어 사용 현황 로그 파일에 기록되며, 계속하려면 확인해야 합니다. 이 로깅에 대한 자세한 내용은 다음 섹션을 참조하세요.
 
@@ -401,5 +401,5 @@ AD RMS를 사용하며 합병 또는 인수의 결과로 조직의 사용자에�
 
 
 ## <a name="next-steps"></a>다음 단계
-보호 수준(기본 및 일반) 간의 차이점 설명, 지원되는 파일 형식 및 파일 이름 확장명, 기본 보호 수준을 변경하는 방법을 포함하는 자세한 기술 정보는 [Rights Management 공유 응용 프로그램에 대한 기술 개요](sharing-app-admin-guide-technical.md)를 참조하세요.
+보호 수준(기본 및 일반) 간의 차이점 설명, 지원되는 파일 형식 및 파일 이름 확장명, 기본 보호 수준을 변경하는 방법을 포함하는 자세한 기술 정보는 [Rights Management 공유 애플리케이션에 대한 기술 개요](sharing-app-admin-guide-technical.md)를 참조하세요.
 

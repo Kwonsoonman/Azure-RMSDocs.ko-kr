@@ -1,6 +1,6 @@
 ---
 title: MIP(Microsoft Information Protection) SDK 설정 및 구성
-description: Microsoft Azure Information Protection SDK에서 빌드한 응용 프로그램을 사용하기 위한 설정 및 구성 전제 조건을 제공합니다.
+description: Microsoft Azure Information Protection SDK에서 빌드한 애플리케이션을 사용하기 위한 설정 및 구성 전제 조건을 제공합니다.
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
@@ -15,7 +15,7 @@ ms.locfileid: "52386732"
 ---
 # <a name="microsoft-information-protection-mip-sdk-setup-and-configuration"></a>MIP(Microsoft Information Protection) SDK 설정 및 구성 
 
-빠른 시작 및 자습서 문서는 MIP SDK 라이브러리 및 API를 사용하는 응용 프로그램 빌드를 중점적으로 설명합니다. 이 문서에서는 SDK 사용을 준비하면서 Office 365 구독 및 클라이언트 워크스테이션을 설정하고 구성하는 방법을 보여 줍니다.
+빠른 시작 및 자습서 문서는 MIP SDK 라이브러리 및 API를 사용하는 애플리케이션 빌드를 중점적으로 설명합니다. 이 문서에서는 SDK 사용을 준비하면서 Office 365 구독 및 클라이언트 워크스테이션을 설정하고 구성하는 방법을 보여 줍니다.
 
 MIP SDK는 다음 플랫폼에서 지원됩니다.  
 
@@ -125,7 +125,7 @@ MIP SDK는 다음 플랫폼에서 지원됩니다.
     Install-Package Microsoft.InformationProtection.Protection
     ```  
     
-6. SDK 이진 파일[동적 연결 라이브러리(.dll)]의 경로를 PATH 환경 변수에 추가합니다. PATH 변수를 사용하면 클라이언트 응용 프로그램이 런타임에 종속 DLL을 찾을 수 있습니다.
+6. SDK 이진 파일[동적 연결 라이브러리(.dll)]의 경로를 PATH 환경 변수에 추가합니다. PATH 변수를 사용하면 클라이언트 애플리케이션이 런타임에 종속 DLL을 찾을 수 있습니다.
    - 왼쪽 아래에서 Windows 아이콘을 클릭합니다.
    - “경로”를 입력하고 **시스템 환경 변수 편집** 항목이 표시되면 “Enter” 키를 누릅니다.
    - **시스템 속성** 대화 상자에서 **환경 변수**를 클릭합니다.
@@ -137,27 +137,27 @@ MIP SDK는 다음 플랫폼에서 지원됩니다.
    
    - **Path** 변수 업데이트가 완료되면 **확인**을 클릭합니다. 그런 다음, **환경 변수** 대화 상자로 돌아가면 **확인**을 클릭합니다.
 
-## <a name="register-a-client-application-with-azure-active-directory"></a>Azure Active Directory에 클라이언트 응용 프로그램 등록
+## <a name="register-a-client-application-with-azure-active-directory"></a>Azure Active Directory에 클라이언트 애플리케이션 등록
 
-Office 365 구독 프로비저닝 프로세스의 일부로, 연결된 Azure AD 테넌트가 만들어집니다. Azure AD 테넌트는 Office 365 ‘사용자 계정’ 및 ‘응용 프로그램 계정’에 대한 ID와 액세스 관리를 제공합니다. 보안 API에 액세스해야 하는 응용 프로그램(예: MIP API)에는 응용 프로그램 계정이 필요합니다.
+Office 365 구독 프로비저닝 프로세스의 일부로, 연결된 Azure AD 테넌트가 만들어집니다. Azure AD 테넌트는 Office 365 ‘사용자 계정’ 및 ‘애플리케이션 계정’에 대한 ID와 액세스 관리를 제공합니다. 보안 API에 액세스해야 하는 애플리케이션(예: MIP API)에는 애플리케이션 계정이 필요합니다.
 
-런타임 시 인증 및 권한 부여를 위해 계정은 계정 ID 정보에서 파생된 ‘보안 주체’로 표시됩니다. 응용 프로그램 계정을 나타내는 보안 주체를 [*서비스 주체*](/azure/active-directory/develop/developer-glossary#service-principal-object)라고 합니다. 
+런타임 시 인증 및 권한 부여를 위해 계정은 계정 ID 정보에서 파생된 ‘보안 주체’로 표시됩니다. 애플리케이션 계정을 나타내는 보안 주체를 [*서비스 주체*](/azure/active-directory/develop/developer-glossary#service-principal-object)라고 합니다. 
 
-빠른 시작 및 MIP SDK 샘플에서 사용하기 위해 응용 프로그램 계정을 Azure AD에 등록하려면:
+빠른 시작 및 MIP SDK 샘플에서 사용하기 위해 애플리케이션 계정을 Azure AD에 등록하려면:
 
   > [!IMPORTANT] 
-  > 계정을 만들기 위해 Azure AD 테넌트 관리에 액세스하려면 [구독에서 “소유자” 역할](/azure/billing/billing-add-change-azure-subscription-administrator)의 멤버인 사용자 계정으로 Azure Portal에 로그인해야 합니다. 테넌트의 구성에 따라 [응용 프로그램을 등록](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)하려면 “전역 관리자” 디렉터리 역할의 멤버여야 할 수도 있습니다.
+  > 계정을 만들기 위해 Azure AD 테넌트 관리에 액세스하려면 [구독에서 “소유자” 역할](/azure/billing/billing-add-change-azure-subscription-administrator)의 멤버인 사용자 계정으로 Azure Portal에 로그인해야 합니다. 테넌트의 구성에 따라 [애플리케이션을 등록](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps)하려면 “전역 관리자” 디렉터리 역할의 멤버여야 할 수도 있습니다.
   > 제한된 계정으로 테스트하는 것이 좋습니다. 계정에 필요한 SCC 엔드포인트에 액세스할 수 있는 권한만 있는지 확인합니다. 명령줄을 통해 전달된 일반 텍스트 암호를 로깅 시스템에서 수집할 수 있습니다.
 
 1. [Azure Active Directory와 응용 프로그램 통합, 응용 프로그램 추가 섹션](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#adding-an-application)의 단계를 따릅니다. 테스트를 위해, 가이드 단계를 진행할 때 지정된 속성에 대해 다음 값을 사용합니다. 
-    - **응용 프로그램 유형** - SDK에서 설명하는 응용 프로그램은 기본적으로 설치되는 콘솔 응용 프로그램이므로 “네이티브”를 선택합니다. 네이티브 응용 프로그램은 보안 방식으로 응용 프로그램 자격 증명을 저장/사용할 수 없으므로 OAuth2에서 “공용” 클라이언트로 간주됩니다. 자체 자격 증명으로 등록되는 웹 응용 프로그램과 같은 “기밀” 서버 기반 응용 프로그램과는 다릅니다. 
+    - **응용 프로그램 유형** - SDK에서 설명하는 응용 프로그램은 기본적으로 설치되는 콘솔 응용 프로그램이므로 “네이티브”를 선택합니다. 네이티브 애플리케이션은 보안 방식으로 애플리케이션 자격 증명을 저장/사용할 수 없으므로 OAuth2에서 “공용” 클라이언트로 간주됩니다. 자체 자격 증명으로 등록되는 웹 애플리케이션과 같은 “기밀” 서버 기반 애플리케이션과는 다릅니다. 
     - **리디렉션 URI** - SDK는 단순 콘솔 클라이언트 응용 프로그램을 사용하므로 `<app-name>://authorize` 형식의 URI를 사용합니다.
 
-2. 완료되면 새 응용 프로그램 등록을 위해 **등록된 앱** 페이지로 돌아갑니다. 빠른 시작에 필요하므로 GUID를 복사한 후 **응용 프로그램 ID** 필드에 저장합니다. 
+2. 완료되면 새 애플리케이션 등록을 위해 **등록된 앱** 페이지로 돌아갑니다. 빠른 시작에 필요하므로 GUID를 복사한 후 **애플리케이션 ID** 필드에 저장합니다. 
 
 3. 그런 다음, **설정**을 클릭하여 클라이언트가 액세스해야 하는 API 및 권한을 추가합니다. **설정** 페이지에서 **필요한 권한**을 클릭합니다.
 
-4. 이제 런타임에 응용 프로그램에 필요한 MIP API 및 권한을 추가합니다.
+4. 이제 런타임에 애플리케이션에 필요한 MIP API 및 권한을 추가합니다.
    - **필요한 권한** 페이지에서 **추가**를 클릭합니다. 
    - **API 액세스 추가** 페이지에서 **API 선택**을 클릭합니다.
    - **API 선택** 페이지에서 “ **Microsoft Rights Management Services**” API를 클릭하고 **선택**을 클릭합니다.
@@ -167,14 +167,14 @@ Office 365 구독 프로비저닝 프로세스의 일부로, 연결된 Azure AD 
    - **API 선택** 페이지의 검색 상자에 “**Microsoft Information Protection Sync Service**”를 입력하고 API를 클릭한 후 **선택**을 클릭합니다.
    - API의 사용 가능한 권한에 대한 **액세스 사용** 페이지에서 “**Read all unified policies a user has access to**(사용자에게 액세스 권한이 있는 모든 통합 정책 읽기)”를 클릭하고 **선택**을 클릭한 후 **완료**를 클릭합니다.
 
-6. **필요한 권한** 페이지로 다시 돌아가면 **권한 부여**를 클릭하고 **예**를 클릭합니다. 이 단계에서는 지정된 권한으로 API에 액세스하기 위해 이 등록을 사용하는 응용 프로그램에 대한 사전 동의를 제공합니다. 전역 관리자로 로그인한 경우, 응용 프로그램을 실행하는 테넌트의 모든 사용자의 동의가 기록됩니다. 그렇지 않으면 사용자 계정에만 적용됩니다. 
+6. **필요한 권한** 페이지로 다시 돌아가면 **권한 부여**를 클릭하고 **예**를 클릭합니다. 이 단계에서는 지정된 권한으로 API에 액세스하기 위해 이 등록을 사용하는 애플리케이션에 대한 사전 동의를 제공합니다. 전역 관리자로 로그인한 경우, 애플리케이션을 실행하는 테넌트의 모든 사용자의 동의가 기록됩니다. 그렇지 않으면 사용자 계정에만 적용됩니다. 
 
-완료되면 응용 프로그램 등록 및 API 권한은 다음 예제와 유사합니다.
+완료되면 애플리케이션 등록 및 API 권한은 다음 예제와 유사합니다.
 
    [![Azure AD 앱 등록](media/setup-mip-client/aad-app-registration.png)](media/setup-mip-client/aad-app-registration.png#lightbox)
 
 
-등록에 API 및 권한을 추가하는 방법에 대한 자세한 내용은 [응용 프로그램 업데이트, 웹 API 섹션에 액세스하도록 클라이언트 응용 프로그램 구성](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#updating-an-application)을 참조하세요. 여기에서 클라이언트 응용 프로그램에 필요한 API 및 권한을 추가하는 방법에 대한 정보를 확인할 수 있습니다.  
+등록에 API 및 권한을 추가하는 방법에 대한 자세한 내용은 [애플리케이션 업데이트, 웹 API 섹션에 액세스하도록 클라이언트 애플리케이션 구성](/azure/active-directory/develop/quickstart-v1-integrate-apps-with-azure-ad#updating-an-application)을 참조하세요. 여기에서 클라이언트 애플리케이션에 필요한 API 및 권한을 추가하는 방법에 대한 정보를 확인할 수 있습니다.  
 
 ## <a name="request-an-information-protection-integration-agreement-ipia"></a>IPIA(정보 보호 통합 계약) 요청
 
@@ -185,7 +185,7 @@ MIP를 사용 하 여 개발한 응용 프로그램을 릴리스할 수 있습�
    **제목:** *회사 이름*의 IPIA 요청
 
    전자 메일의 본문에서 다음을 포함합니다.
-   - 응용 프로그램 또는 제품 이름
+   - 애플리케이션 또는 제품 이름
    - 요청자의 성과 이름
    - 요청자의 메일 주소
 
@@ -196,8 +196,8 @@ MIP를 사용 하 여 개발한 응용 프로그램을 릴리스할 수 있습�
    - 회사 URL
    - 담당자의 전자 메일 주소
    - 회사의 추가 주소(선택 사항)
-   - 회사 응용 프로그램의 이름
-   - 응용 프로그램에 대한 간략한 설명
+   - 회사 애플리케이션의 이름
+   - 애플리케이션에 대한 간략한 설명
    - *Azure 테넌트 ID*
    - 응용 프로그램의 *앱 ID*
    - 급한 상황에 연락할 수 있는 회사 연락처, 전자 메일 및 전화 번호
@@ -206,12 +206,12 @@ MIP를 사용 하 여 개발한 응용 프로그램을 릴리스할 수 있습�
 
 ### <a name="already-have-a-signed-ipia"></a>서명된 IPIA가 이미 있나요?
 
-서명된 IPIA가 이미 있으며 릴리스할 응용 프로그램에 대해 새 *앱 ID*를 추가하려는 경우에는 [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=Updating%20IPIA%20for%20<company-name>)에 전자 메일을 보내 다음과 같은 정보를 제공하세요.
+서명된 IPIA가 이미 있으며 릴리스할 애플리케이션에 대해 새 *앱 ID*를 추가하려는 경우에는 [IPIA@microsoft.com](mailto:IPIA@microsoft.com?subject=Updating%20IPIA%20for%20<company-name>)에 전자 메일을 보내 다음과 같은 정보를 제공하세요.
 
-- 회사 응용 프로그램의 이름
-- 응용 프로그램에 대한 간략한 설명
+- 회사 애플리케이션의 이름
+- 애플리케이션에 대한 간략한 설명
 - Azure 테넌트 ID(이전에 동일한 ID가 있어도 필요함)
-- 응용 프로그램의 앱 ID
+- 애플리케이션의 앱 ID
 - 급한 상황에 연락할 수 있는 회사 연락처, 전자 메일 및 전화 번호
 
 전자 메일을 보내신 후에 승인이 수신될 때까지 최대 72시간이 소요될 수 있습니다.
@@ -219,6 +219,6 @@ MIP를 사용 하 여 개발한 응용 프로그램을 릴리스할 수 있습�
 ## <a name="next-steps"></a>다음 단계
 
 - MIP SDK는 거의 완전히 비동기식으로 디자인되므로 빠른 시작 섹션을 시작하기 전에 [MIP SDK의 관찰자](concept-async-observers.md)에 대한 내용을 읽어야 합니다.
-- SDK에 대한 실무 경험을 진행할 준비가 되면 [빠른 시작: 클라이언트 응용 프로그램 초기화(C++)](quick-app-initialization-cpp.md)로 시작합니다.
+- SDK에 대한 실무 경험을 진행할 준비가 되면 [빠른 시작: 클라이언트 애플리케이션 초기화(C++)](quick-app-initialization-cpp.md)로 시작합니다.
 
 

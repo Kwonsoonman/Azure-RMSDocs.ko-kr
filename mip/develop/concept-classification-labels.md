@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: a32193194b9806dbab5066db27192265566ca44f
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446654"
@@ -24,7 +24,7 @@ ms.locfileid: "47446654"
 * **기밀**: 합당한 수준에서 판단할 때, 무단으로 공개되는 경우 원래 분류 기관이 확인하거나 설명할 수 있는 국가 보안에 손해를 미칠 것으로 예상되는 정보에 적용합니다.
 * **분류 안 됨**: 실제로 분류가 아니라 위의 세 가지 중 하나에 해당하지 않는 경우입니다.
 
-상업용 또는 민간 부문 응용 프로그램에서는 Azure Information Protection 서비스의 기본값과 비슷한 목록을 화폐 가치와 연결하여 정의할 수 있습니다.
+상업용 또는 민간 부문 애플리케이션에서는 Azure Information Protection 서비스의 기본값과 비슷한 목록을 화폐 가치와 연결하여 정의할 수 있습니다.
 
 * **극비**: 합당한 수준에서 판단할 때, 무단으로 공개되는 경우 미화 1백만 달러가 넘는 손해를 미칠 것으로 예상되는 정보에 적용합니다.
 * **기밀**: 합당한 수준에서 판단할 때, 무단으로 공개되는 경우 미화 10만 달러가 넘는 손해를 미칠 것으로 예상되는 정보에 적용합니다.

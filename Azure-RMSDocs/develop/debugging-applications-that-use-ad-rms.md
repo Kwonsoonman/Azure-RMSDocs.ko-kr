@@ -1,6 +1,6 @@
 ---
-title: '방법: 권한 사용 응용 프로그램 디버그 | Azure RMS'
-description: 다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
+title: '방법: 권한 사용 애플리케이션 디버그 | Azure RMS'
+description: 다음 항목에서는 애플리케이션을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -19,11 +19,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/07/2018
 ms.locfileid: "44147375"
 ---
-# <a name="how-to-debug-a-rights-enabled-application"></a>방법: 권한 사용 응용 프로그램 디버그
+# <a name="how-to-debug-a-rights-enabled-application"></a>방법: 권한 사용 애플리케이션 디버그
 
-다음 항목에서는 응용 프로그램을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
+다음 항목에서는 애플리케이션을 디버그하고 Windows 이벤트 로그를 사용하는 방법을 보여 줍니다.
 
-## <a name="debugging-your-application"></a>응용 프로그램 디버그
+## <a name="debugging-your-application"></a>애플리케이션 디버그
 
 권한 관리 서비스 SDK 2.1에서는 개발자 버전의 런타임에 있는 디버깅 검사 방지 기능을 사용할 수 없습니다.
 
@@ -40,7 +40,7 @@ HKEY_LOCAL_MACHINE
             dword
 ```
 
-### <a name="application-logging-by-using-the-windows-event-log"></a>Windows 이벤트 로그를 사용하는 응용 프로그램 로깅
+### <a name="application-logging-by-using-the-windows-event-log"></a>Windows 이벤트 로그를 사용하는 애플리케이션 로깅
 
 이벤트 로그의 이름은 "Microsoft-RMS-MSIPC/Debug"입니다. 즉, Windows 이벤트 뷰어에서 로그는 "Application and Services Logs\\Microsoft\\RMS\\MSIPC\\Debug"로 표시됩니다.
 

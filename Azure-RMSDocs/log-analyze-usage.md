@@ -45,7 +45,7 @@ ms.locfileid: "53305644"
 |----------------|---------------|
 |관리자 로그|Azure Rights Management 서비스에 대한 관리 작업을 로그합니다. 예를 들면 서비스가 비활성화된 경우 슈퍼 사용자 기능이 활성화될 때와 사용자가 서비스에 관리자 권한을 위임할 때입니다. <br /><br />자세한 내용은 PowerShell cmdlet [Get-AadrmAdminLog](/powershell/module/aadrm/get-aadrmadminlog)를 참조하세요.|
 |문서 추적|사용자가 Azure Information Protection 클라이언트 또는 RMS 공유 앱으로 추적한 문서를 추적하고 취소할 수 있습니다. 전역 관리자가 사용자를 대신하여 이러한 문서를 추적할 수도 있습니다. <br /><br />자세한 내용은 [Azure Information Protection에 대한 문서 추적 구성 및 사용](./rms-client/client-admin-guide-document-tracking.md)을 참조하세요.|
-|클라이언트 이벤트 로그|로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그(**Azure Information Protection**)에 기록된 Azure Information Protection 클라이언트에 대한 사용 활동입니다. <br /><br />자세한 내용은 [Azure Information Protection 클라이언트에 대한 사용 현황 로깅](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)을 참조하세요.|
+|클라이언트 이벤트 로그|로컬 Windows **애플리케이션 및 서비스** 이벤트 로그(**Azure Information Protection**)에 기록된 Azure Information Protection 클라이언트에 대한 사용 활동입니다. <br /><br />자세한 내용은 [Azure Information Protection 클라이언트에 대한 사용 현황 로깅](./rms-client/client-admin-guide-files-and-logging.md#usage-logging-for-the-azure-information-protection-client)을 참조하세요.|
 |클라이언트 로그 파일|**%localappdata%\Microsoft\MSIP**에 있는 Azure Information Protection 클라이언트에 대한 문제 해결 로그입니다. <br /><br />이러한 파일은 Microsoft 지원용으로 설계되었습니다.|
 
 또한 Azure Information Protection 클라이언트 사용 현황 로그 및 Azure Information Protection 검사기의 정보가 수집 및 집계된 후 Azure Portal에서 보고서가 생성됩니다. 자세한 내용은 [Azure Information Protection의 보고](reports-aip.md)를 참조하세요.
@@ -129,7 +129,7 @@ Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니
 
 **#Version: 1.1**
 
-첫 번째 줄은 이러한 로그가 Azure 권한 관리 로그임을 나타냅니다. 두 번째 줄은 Blob의 나머지 부분이 버전 1.1 사양을 따름을 나타냅니다. 이러한 로그를 구문 분석하는 응용 프로그램에서 이 두 줄을 먼저 확인한 후에 Blob의 나머지 부분 구문 분석을 계속하도록 하는 것이 좋습니다.
+첫 번째 줄은 이러한 로그가 Azure 권한 관리 로그임을 나타냅니다. 두 번째 줄은 Blob의 나머지 부분이 버전 1.1 사양을 따름을 나타냅니다. 이러한 로그를 구문 분석하는 애플리케이션에서 이 두 줄을 먼저 확인한 후에 Blob의 나머지 부분 구문 분석을 계속하도록 하는 것이 좋습니다.
 
 세 번째 줄에는 탭으로 구분된 필드 이름 목록이 열거됩니다.
 
@@ -150,9 +150,9 @@ Azure Rights Management 서비스는 일련의 Blob으로 로그를 기록합니
 |owner-email|문자열|문서 소유자의 전자 메일 주소입니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|alice@contoso.com|
 |issuer|문자열|문서 발급자의 전자 메일 주소입니다. <br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|alice@contoso.com (또는) FederatedEmail.4c1f4d-93bf-00a95fa1e042@contoso.onmicrosoft.com'|
 |template-id|문자열|문서를 보호하는 데 사용된 템플릿의 ID입니다. <br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|{6d9371a6-4e2d-4e97-9a38-202233fed26e}|
-|file-name|문자열|Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램을 사용하여 추적되는 보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|TopSecretDocument.docx|
+|file-name|문자열|Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 애플리케이션을 사용하여 추적되는 보호된 문서의 파일 이름입니다. <br /><br />현재 일부 파일(예: Office 문서)은 실제 파일 이름을 아닌 GUID로 표시됩니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|TopSecretDocument.docx|
 |date-published|날짜|문서를 보호한 날짜입니다.<br /><br /> 요청 형식이 RevokeAccess이면 이 필드는 비어 있습니다.|2015-10-15T21:37:00|
-|c-info|문자열|요청을 수행하는 클라이언트 플랫폼에 대한 정보입니다.<br /><br />구체적인 문자열은 운영 체제, 브라우저 등의 응용 프로그램에 따라 다릅니다.|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
+|c-info|문자열|요청을 수행하는 클라이언트 플랫폼에 대한 정보입니다.<br /><br />구체적인 문자열은 운영 체제, 브라우저 등의 애플리케이션에 따라 다릅니다.|'MSIPC;version=1.0.623.47;AppName=WINWORD.EXE;AppVersion=15.0.4753.1000;AppArch=x86;OSName=Windows;OSVersion=6.1.7601;OSArch=amd64'|
 |c-ip|주소|요청을 수행하는 클라이언트의 IP 주소입니다.|64.51.202.144|
 |admin-action|Bool|관리자가 관리자 모드에서 문서 추적 사이트를 액세스했는지 여부입니다.|True|
 |acting-as-user|문자열|관리자가 해당 문서 추적 사이트에 액세스하는 사용자의 전자 메일 주소입니다. |'joe@contoso.com'|

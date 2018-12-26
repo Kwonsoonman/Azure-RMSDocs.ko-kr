@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 3bb9cd594022085c24c45bde428cb11f6734caab
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446518"
@@ -113,7 +113,7 @@ std::ostream에서 [스트림](class_mip_stream.md)을 만듭니다.
 
 종료하기 전에 모든 리소스(예: 스레드)를 해제합니다.  
 
-MIP 동적 라이브러리가 응용 프로그램에 의해 지연 로드되는 경우 응용 프로그램이 이 MIP 라이브러리를 명시적으로 언로드하기 전에 교착 상태를 방지하기 위해 이 함수를 호출해야 합니다. 예를 들어 win32에서 FreeLibrary 또는 \__FUnloadDelayLoadedDLL2를 통해 명시적으로 MIP DLL을 언로드하는 호출이 발생하기 전에 이 함수를 호출해야 합니다. 응용 프로그램은 이 함수를 호출하기 전에 모든 MIP 개체(예: 프로필, 엔진, 처리기)에 대한 참조를 해제해야 합니다.
+MIP 동적 라이브러리가 애플리케이션에 의해 지연 로드되는 경우 애플리케이션이 이 MIP 라이브러리를 명시적으로 언로드하기 전에 교착 상태를 방지하기 위해 이 함수를 호출해야 합니다. 예를 들어 win32에서 FreeLibrary 또는 \__FUnloadDelayLoadedDLL2를 통해 명시적으로 MIP DLL을 언로드하는 호출이 발생하기 전에 이 함수를 호출해야 합니다. 애플리케이션은 이 함수를 호출하기 전에 모든 MIP 개체(예: 프로필, 엔진, 처리기)에 대한 참조를 해제해야 합니다.
 
 ## <a name="functions-miprights"></a>함수(mip::rights)
 

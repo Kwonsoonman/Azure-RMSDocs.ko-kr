@@ -21,7 +21,7 @@ ms.locfileid: "44149619"
 ---
 # <a name="overview"></a>개요
 
-Microsoft Rights Management SDK 4.2는 여러 플랫폼에서 사용할 수 있는 정보 보호 기술이며,  클라이언트 컴퓨터 및 디바이스에서 "권한 사용" 응용 프로그램을 통해 전송되는 정보에 대한 액세스 및 사용을 보호할 수 있도록 설계된 SDK(소프트웨어 개발자 키트) 또는 프레임워크를 제공합니다. 이러한 플랫폼용 SDK는 응용 프로그램 개발자에게 디지털 콘텐츠 보호 또는 사용, 템플릿 검색, 서버에서 정책 가져오기 및 기타 관련된 권한 관리 작업을 위한 간단한 API를 제공합니다.
+Microsoft Rights Management SDK 4.2는 여러 플랫폼에서 사용할 수 있는 정보 보호 기술이며,  클라이언트 컴퓨터 및 디바이스에서 "권한 사용" 응용 프로그램을 통해 전송되는 정보에 대한 액세스 및 사용을 보호할 수 있도록 설계된 SDK(소프트웨어 개발자 키트) 또는 프레임워크를 제공합니다. 이러한 플랫폼용 SDK는 애플리케이션 개발자에게 디지털 콘텐츠 보호 또는 사용, 템플릿 검색, 서버에서 정책 가져오기 및 기타 관련된 권한 관리 작업을 위한 간단한 API를 제공합니다.
 
 현재 지원되는 플랫폼에 대한 자세한 내용은 [Microsoft Rights Management SDK](active-directory-rights-management-services-multi-platform-thin-client-sdk-portal.md)에 대한 개발자 설명서 포털을 참조하세요.
 

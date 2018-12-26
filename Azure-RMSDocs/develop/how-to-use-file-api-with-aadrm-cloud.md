@@ -1,6 +1,6 @@
 ---
-title: '방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정 | Azure RMS'
-description: 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다.
+title: '방법: 서비스 애플리케이션이 클라우드 기반 RMS를 사용할 수 있도록 설정 | Azure RMS'
+description: 이 항목에서는 Azure 권한 관리를 사용하도록 서비스 애플리케이션을 설정하는 단계를 간략하게 설명합니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -19,9 +19,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/07/2018
 ms.locfileid: "53023476"
 ---
-# <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>방법: 서비스 응용 프로그램이 클라우드 기반 RMS를 사용할 수 있도록 설정
+# <a name="how-to-enable-your-service-application-to-work-with-cloud-based-rms"></a>방법: 서비스 애플리케이션이 클라우드 기반 RMS를 사용할 수 있도록 설정
 
-이 항목에서는 Azure 권한 관리를 사용하도록 서비스 응용 프로그램을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/library/jj585016.aspx)을 참조하세요.
+이 항목에서는 Azure 권한 관리를 사용하도록 서비스 애플리케이션을 설정하는 단계를 간략하게 설명합니다. 자세한 내용은 [Azure 권한 관리 시작](https://technet.microsoft.com/library/jj585016.aspx)을 참조하세요.
 
 **중요**   Azure RMS와 함께 권한 관리 서비스 SDK 2.1 서비스 애플리케이션을 사용하려면 사용자 고유의 테넌트를 만들어야 합니다. 자세한 내용은 [Azure RMS requirements: Cloud subscriptions that support Azure RMS(Azure RMS 요구 사항: Azure RMS를 지원하는 클라우드 구독)](../requirements.md) 항목을 참조하세요.
 
@@ -158,7 +158,7 @@ ms.locfileid: "53023476"
            NULL,
            &wszOutputFilePath);
 
-이제 응용 프로그램이 Azure 권한 관리를 사용할 수 있도록 설정하는 데 필요한 단계를 완료했습니다.
+이제 애플리케이션이 Azure 권한 관리를 사용할 수 있도록 설정하는 데 필요한 단계를 완료했습니다.
 
 ## <a name="related-topics"></a>관련 항목
 

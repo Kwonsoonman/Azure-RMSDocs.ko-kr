@@ -37,7 +37,7 @@ Azure Information Protection 클라이언트를 설치한 후에 파일의 위�
 
 ## <a name="usage-logging-for-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에 대한 사용 현황 로깅
 
-클라이언트는 사용자 활동을 로컬 Windows 이벤트 로그 **응용 프로그램 및 서비스 로그** > **Azure Information Protection**에 기록합니다. 이벤트에는 다음과 같은 정보가 포함됩니다.
+클라이언트는 사용자 활동을 로컬 Windows 이벤트 로그 **애플리케이션 및 서비스 로그** > **Azure Information Protection**에 기록합니다. 이벤트에는 다음과 같은 정보가 포함됩니다.
 
 - 클라이언트 버전, 정책 ID
 

@@ -1,6 +1,6 @@
 ---
 title: 개념 - 보호 API 엔진 개체
-description: 이 문서는 응용 프로그램 초기화 중에 생성된 보호 엔진 개체의 개념을 이해하는 데 도움이 됩니다.
+description: 이 문서는 애플리케이션 초기화 중에 생성된 보호 엔진 개체의 개념을 이해하는 데 도움이 됩니다.
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: da0c50de6a818fcd8beda0483696ba433ce22149
 ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/29/2018
 ms.locfileid: "47453319"

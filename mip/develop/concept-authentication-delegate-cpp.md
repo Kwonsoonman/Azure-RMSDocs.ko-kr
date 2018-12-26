@@ -23,7 +23,7 @@ MIP SDK는 인증 챌린지를 처리하고 토큰으로 응답하기 위한 인
 
 ### <a name="authdelegateimplh"></a>auth_delegate_impl.h
 
-이 예제에서는 기본 생성자가 사용자 이름, 암호 및 응용 프로그램의 [응용 프로그램 ID](/azure/active-directory/develop/developer-glossary#application-id-client-id)만 허용합니다. 이는 private 변수 `mUserName`, `mPassword` 및 `mClientId`에 저장됩니다.
+이 예제에서는 기본 생성자가 사용자 이름, 암호 및 애플리케이션의 [애플리케이션 ID](/azure/active-directory/develop/developer-glossary#application-id-client-id)만 허용합니다. 이는 private 변수 `mUserName`, `mPassword` 및 `mClientId`에 저장됩니다.
 
 ID 공급자나 리소스 URI와 같은 정보는 적어도 `AuthDelegateImpl` 생성자에서 구현할 필요가 없다는 점에 유의해야 합니다. 이 정보는 `OAuth2Challenge` 개체에 `AcquireOAuth2Token`의 일부로 전달됩니다. 대신, 해당 세부 정보를 `AcquireOAuth2Token`의 `AcquireToken` 호출에 전달하겠습니다.
 

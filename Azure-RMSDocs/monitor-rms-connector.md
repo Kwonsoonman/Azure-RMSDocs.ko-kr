@@ -23,9 +23,9 @@ ms.locfileid: "53305491"
 
 RMS 커넥터를 설치하고 구성한 후에 다음과 같은 방법과 정보를 사용하여 커넥터와 조직의 Azure Information Protection의 Azure Rights Management 사용을 모니터링할 수 있습니다.
 
-## <a name="application-event-log-entries"></a>응용 프로그램 이벤트 로그 항목
+## <a name="application-event-log-entries"></a>애플리케이션 이벤트 로그 항목
 
-RMS 커넥터에서는 응용 프로그램 이벤트 로그를 사용하여 **Microsoft RMS 커넥터**의 항목을 기록합니다. 
+RMS 커넥터에서는 애플리케이션 이벤트 로그를 사용하여 **Microsoft RMS 커넥터**의 항목을 기록합니다. 
 
 예를 들어 다음과 같은 정보 이벤트가 기록됩니다.
 

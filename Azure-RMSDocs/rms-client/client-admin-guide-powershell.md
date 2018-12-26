@@ -474,11 +474,11 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
 
 매개 변수 없이 이 cmdlet을 실행하는 경우 계정은 90일 동안 또는 암호가 만료될 때까지 유효한 액세스 토큰을 획득합니다.  
 
-액세스 토큰이 만료되는 시기를 제어하려면 매개 변수를 지정하여 이 cmdlet을 실행합니다. 이렇게 하면 액세스 토큰을 1년 또는 2년용 구성하거나 절대 만료되지 않도록 구성할 수 있습니다. 이 구성을 사용하려면 Azure Active Directory에 2개의 애플리케이션인 **웹앱/API** 애플리케이션 및 **네이티브 애플리케이션**이 등록되어야 합니다. 이 cmdlet용 매개 변수는 이러한 응용 프로그램의 값을 사용합니다.
+액세스 토큰이 만료되는 시기를 제어하려면 매개 변수를 지정하여 이 cmdlet을 실행합니다. 이렇게 하면 액세스 토큰을 1년 또는 2년용 구성하거나 절대 만료되지 않도록 구성할 수 있습니다. 이 구성을 사용하려면 Azure Active Directory에 2개의 애플리케이션인 **웹앱/API** 애플리케이션 및 **네이티브 애플리케이션**이 등록되어야 합니다. 이 cmdlet용 매개 변수는 이러한 애플리케이션의 값을 사용합니다.
 
 이 cmdlet을 실행한 후에는 만든 사용자 계정의 컨텍스트에서 레이블링 cmdlet을 실행할 수 있습니다.
 
-### <a name="to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication"></a>Set-AIPAuthentication에 대해 Azure AD 응용 프로그램을 만들고 구성하려면
+### <a name="to-create-and-configure-the-azure-ad-applications-for-set-aipauthentication"></a>Set-AIPAuthentication에 대해 Azure AD 애플리케이션을 만들고 구성하려면
 
 1. 새 브라우저 창에서 [Azure Portal](https://portal.azure.com/)에 로그인합니다.
 
@@ -494,7 +494,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
     
     - 로그온 URL: **http://localhost**
 
-4. 방금 만든 응용 프로그램을 선택합니다(예: **AIPOnBehalfOf**). 그런 다음 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다. 
+4. 방금 만든 애플리케이션을 선택합니다(예: **AIPOnBehalfOf**). 그런 다음 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다. 
     
     이 값은 Set-AIPAuthentication cmdlet을 실행할 때 `WebAppId` 매개 변수에 사용됩니다. 나중에 참조하기 위해 붙여넣어 저장합니다.
 
@@ -514,7 +514,7 @@ AzureInformationProtection 모듈을 설치하기 위한 필수 구성 요소 �
     
     - 로그온 URL: **http://localhost**
 
-8. 방금 만든 응용 프로그램을 선택합니다(예: **AIPClient**). 그런 다음 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다.
+8. 방금 만든 애플리케이션을 선택합니다(예: **AIPClient**). 그런 다음 **설정** 블레이드에서 **속성**을 선택합니다. **속성** 블레이드에서 **응용 프로그램 ID**에 대한 값을 복사하고 이 블레이드를 닫습니다.
     
     이 값은 Set-AIPAuthentication cmdlet을 실행할 때 `NativeAppId` 매개 변수에 사용됩니다. 나중에 참조하기 위해 붙여넣어 저장합니다.
 

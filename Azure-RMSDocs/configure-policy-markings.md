@@ -101,7 +101,7 @@ ms.locfileid: "53023977"
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Word, Excel, PowerPoint 및 Outlook에서 다양한 시각적 표시 설정
 
-기본적으로 지정한 시각적 표시는 Word, Excel, PowerPoint 및 Outlook에서 적용됩니다. 그러나 텍스트 문자열에서 "If.App" 변수 문을 사용하는 경우 Office 응용 프로그램 형식마다 시각적 표시를 지정하고 **Word**, **Excel**, **PowerPoint** 또는 **Outlook** 값을 사용하여 응용 프로그램 형식을 식별할 수 있습니다. 또한 이러한 값을 축약할 수 있습니다. 이 작업은 동일한 If.App 문에서 하나 이상을 지정하려는 경우에 필요합니다.
+기본적으로 지정한 시각적 표시는 Word, Excel, PowerPoint 및 Outlook에서 적용됩니다. 그러나 텍스트 문자열에서 "If.App" 변수 문을 사용하는 경우 Office 애플리케이션 형식마다 시각적 표시를 지정하고 **Word**, **Excel**, **PowerPoint** 또는 **Outlook** 값을 사용하여 애플리케이션 형식을 식별할 수 있습니다. 또한 이러한 값을 축약할 수 있습니다. 이 작업은 동일한 If.App 문에서 하나 이상을 지정하려는 경우에 필요합니다.
 
 다음 구문을 사용합니다.
 
@@ -115,7 +115,7 @@ ms.locfileid: "53023977"
     
     `${If.App.Word}This Word document is sensitive ${If.End}`
     
-    레이블은 Word 문서 헤더에서만 "이 Word 문서는 중요합니다."라는 헤더 텍스트를 적용합니다. 헤더 텍스트는 다른 Office 응용 프로그램에 적용되지 않습니다.
+    레이블은 Word 문서 헤더에서만 "이 Word 문서는 중요합니다."라는 헤더 텍스트를 적용합니다. 헤더 텍스트는 다른 Office 애플리케이션에 적용되지 않습니다.
 
 - **Word, Excel, Outlook에 바닥글 텍스트를 설정하고 PowerPoint에 다른 바닥글 텍스트를 설정합니다.**
     
@@ -139,7 +139,7 @@ ms.locfileid: "53023977"
 
 사용 가능한 색 목록에서 선택하거나 색의 RGB(빨강, 녹색 및 파랑) 구성 요소에 대한 16진수 3자리 코드를 입력하여 사용자 지정 색을 지정할 수 있습니다. 예: **#DAA520**. 
 
-이러한 코드에 대한 참조가 필요하면 MSDN 설명서의 [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx)(이름별 색)이 유용한 시작점입니다. 또한 그림을 편집할 수 있는 많은 응용 프로그램에서 이러한 코드를 찾을 수 있습니다. 예를 들어 Microsoft 그림판을 사용하면 색상표에서 사용자 지정 색을 선택할 수 있으며 RGB 값이 자동으로 표시됩니다. 그런 다음 해당 색을 복사하면 됩니다.
+이러한 코드에 대한 참조가 필요하면 MSDN 설명서의 [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx)(이름별 색)이 유용한 시작점입니다. 또한 그림을 편집할 수 있는 많은 애플리케이션에서 이러한 코드를 찾을 수 있습니다. 예를 들어 Microsoft 그림판을 사용하면 색상표에서 사용자 지정 색을 선택할 수 있으며 RGB 값이 자동으로 표시됩니다. 그런 다음 해당 색을 복사하면 됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

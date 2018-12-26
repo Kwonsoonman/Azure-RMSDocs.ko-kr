@@ -25,7 +25,7 @@ ms.locfileid: "52304166"
 
 ## <a name="mipexecutionstate-members"></a>mip::ExecutionState 멤버
 
-`ExecutionState`는 다음 가상 멤버를 표시합니다. 각 작업은 정책 엔진에 일부 컨텍스트를 제공하여 응용 프로그램에서 수행해야 하는 작업에 대한 정보를 반환합니다. 또한 이 정보를 사용하여 Azure Information Protection 보고 기능에 감사 정보를 제공할 수 있습니다.
+`ExecutionState`는 다음 가상 멤버를 표시합니다. 각 작업은 정책 엔진에 일부 컨텍스트를 제공하여 애플리케이션에서 수행해야 하는 작업에 대한 정보를 반환합니다. 또한 이 정보를 사용하여 Azure Information Protection 보고 기능에 감사 정보를 제공할 수 있습니다.
 
 
 | 멤버                                                                           | 반환                                                                                                              |
@@ -42,7 +42,7 @@ ms.locfileid: "52304166"
 | `mip::ContentFormat GetContentFormat()`                                            | mip::ContentFormat 반환                                                                                           |
 | `mip::ActionType GetSupportedActions()`                                           | 레이블에 대한 mip::ActionTypes를 반환합니다.                                                                              |
 
-`mip::ExecutionState`에서 파생된 클래스의 구현에서 각 항목을 재정의해야 합니다. 위에 링크된 샘플 응용 프로그램에서 이 프로세스는 `ExecutionStateOptions`이라는 구조체를 구현하고 파생 클래스의 생성자에 전달함으로써 수행됩니다.
+`mip::ExecutionState`에서 파생된 클래스의 구현에서 각 항목을 재정의해야 합니다. 위에 링크된 샘플 애플리케이션에서 이 프로세스는 `ExecutionStateOptions`이라는 구조체를 구현하고 파생 클래스의 생성자에 전달함으로써 수행됩니다.
 
 [예제](https://github.com/Azure-Samples/mipsdk-policyapi-cpp-sample-basic/blob/master/mipsdk-policyapi-cpp-sample-basic/execution_state_impl.h)에서 `ExecutionStateOptions`이라는 구조체는 다음과 같이 정의됩니다.
 
@@ -61,7 +61,7 @@ struct ExecutionStateOptions {
 };
 ```
 
-각 속성은 응용 프로그램에 의해 설정되고 `ExecutionStateOptions`는 `mip::ExecutionState`에서 파생된 클래스의 생성자로 전달됩니다. 이 정보는 수행할 작업을 결정하는 데 사용됩니다. `mip::ExecutionState`에 제공된 테이터도 Azure Information Protection Analytics에 표시됩니다.
+각 속성은 애플리케이션에 의해 설정되고 `ExecutionStateOptions`는 `mip::ExecutionState`에서 파생된 클래스의 생성자로 전달됩니다. 이 정보는 수행할 작업을 결정하는 데 사용됩니다. `mip::ExecutionState`에 제공된 테이터도 Azure Information Protection Analytics에 표시됩니다.
 
 ### <a name="next-steps"></a>다음 단계
 

@@ -70,11 +70,11 @@ Office 응용 프로그램, Word, Excel 및 PowerPoint의 경우:
 
     ![추적 사용 옵션](../media/track-usage-callout.png)
     
-    Office 응용 프로그램에 이러한 옵션이 표시되지 않는 경우 다음 이유 중 하나 때문일 수 있습니다.
+    Office 애플리케이션에 이러한 옵션이 표시되지 않는 경우 다음 이유 중 하나 때문일 수 있습니다.
     
     - Azure Information Protection 클라이언트가 컴퓨터에 설치되지 않았습니다.
     
-    - Office 응용 프로그램을 다시 시작해야 합니다.
+    - Office 애플리케이션을 다시 시작해야 합니다.
     
     - 설치를 완료하려면 컴퓨터를 다시 시작해야 합니다.
     

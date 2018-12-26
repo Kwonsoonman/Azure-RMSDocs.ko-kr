@@ -16,7 +16,7 @@ ms.locfileid: "52304200"
 ---
 # <a name="auditing-in-the-mip-sdk"></a>MIP SDK의 감사
 
-Azure Information Protection 관리 포털은 관리자 보고서에 대한 액세스 권한을 제공합니다. 이러한 보고서는 MIP SDK를 통합한 모든 응용 프로그램에서 사용자가 수동 또는 자동으로 적용하는 레이블에 대한 가시성을 제공합니다. SDK를 활용하는 개발 파트너는 고객 보고서에 표시되도록 응용 프로그램의 정보를 제공할 수 있으므로 이러한 기능을 쉽게 지원할 수 있습니다.
+Azure Information Protection 관리 포털은 관리자 보고서에 대한 액세스 권한을 제공합니다. 이러한 보고서는 MIP SDK를 통합한 모든 애플리케이션에서 사용자가 수동 또는 자동으로 적용하는 레이블에 대한 가시성을 제공합니다. SDK를 활용하는 개발 파트너는 고객 보고서에 표시되도록 애플리케이션의 정보를 제공할 수 있으므로 이러한 기능을 쉽게 지원할 수 있습니다.
 
 ## <a name="event-types"></a>이벤트 유형
 
@@ -24,7 +24,7 @@ SDK를 통해 Azure Information Protection Analytics에 제출할 수 있는 세
 
 ### <a name="heartbeat-events"></a>하트비트 이벤트
 
-하트비트 이벤트는 정책 API를 통합한 모든 응용 프로그램에 대해 자동으로 생성됩니다. 하트비트 이벤트에는 다음이 포함됩니다.
+하트비트 이벤트는 정책 API를 통합한 모든 애플리케이션에 대해 자동으로 생성됩니다. 하트비트 이벤트에는 다음이 포함됩니다.
 
 * TenantId
 * 생성 시간
@@ -32,9 +32,9 @@ SDK를 통해 Azure Information Protection Analytics에 제출할 수 있는 세
 * 감사가 생성된 머신의 이름
 * 프로세스 이름
 * 플랫폼
-* 응용 프로그램 ID - Azure AD 응용 프로그램 ID에 해당합니다.
+* 애플리케이션 ID - Azure AD 애플리케이션 ID에 해당합니다.
 
-이러한 이벤트는 Microsoft Information Protection SDK를 사용하는 엔터프라이즈 전체의 응용 프로그램을 검색하는 데 유용합니다.
+이러한 이벤트는 Microsoft Information Protection SDK를 사용하는 엔터프라이즈 전체의 애플리케이션을 검색하는 데 유용합니다.
 
 ### <a name="discovery-events"></a>검색 이벤트
 
@@ -42,7 +42,7 @@ SDK를 통해 Azure Information Protection Analytics에 제출할 수 있는 세
 
 검색 이벤트는 만들 때 플래그를 설정 하 여 정책 API에 생성 된 `mip::PolicyHandler` 개체입니다. 값 아래 예에서 **isAuditDiscoveryEnabled** 로 설정 된 `true`합니다. 때 `mip::ExecutionState` 넘어갑니다 `ComputeActions()` 또는 `GetSensitivityLabel()` (기존 메타 데이터 정보 및 콘텐츠 식별자)와 함께 검색 정보를 Azure Information Protection Analytics에 제출 됩니다.
 
-검색 감사는 응용 프로그램이 `ComputeActions()` 또는 `GetSensitivityLabel()`을 호출하고 `mip::ExecutionState`를 제공하면 생성됩니다. 이 이벤트는 처리기당 한 번만 생성됩니다.
+검색 감사는 애플리케이션이 `ComputeActions()` 또는 `GetSensitivityLabel()`을 호출하고 `mip::ExecutionState`를 제공하면 생성됩니다. 이 이벤트는 처리기당 한 번만 생성됩니다.
 
 실행 상태에 대한 자세한 내용은 `mip::ExecutionState` 개념 설명서를 검토하세요.
 
@@ -63,7 +63,7 @@ auto label = handler->GetSensitivityLabel(*state);
 
 변경 이벤트는 파일, 적용되거나 변경된 레이블 및 사용자가 제공한 모든 근거에 대한 정보를 제공합니다. 변경 이벤트는 `mip::PolicyHandler`에서 `NotifyCommittedActions()`을 호출하여 생성됩니다. 변경 내용이 성공적으로 커밋된 후 호출이 수행되고 작업을 계산하는 데 사용된 `mip::ExecutionState`가 전달됩니다.
 
-> 이 함수를 응용 프로그램이 호출하지 못하면 Azure Information Protection Analytics에 랜딩하는 이벤트가 없습니다.
+> 이 함수를 애플리케이션이 호출하지 못하면 Azure Information Protection Analytics에 랜딩하는 이벤트가 없습니다.
 
 ```cpp
 handler->NotifyCommittedActions(*state);

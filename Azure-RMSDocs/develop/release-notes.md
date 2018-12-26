@@ -51,7 +51,7 @@ ms.locfileid: "53266701"
 
 ### <a name="june-2016-update"></a>2016년 6월 업데이트
 
-- **최신 인증에 대한 지원** - RMS 지원 앱에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다. MFA(Multi-Factor Authentication), SAML 기반 타사 ID 공급자와 RMS 클라이언트 응용 프로그램, 스마트 카드 및 인증서 기반 인증과 같은 로그인 기능이 가능하며, 기본 인증 프로토콜을 사용하기 위해 RMS 지원 앱을 사용할 필요가 없습니다.
+- **최신 인증에 대한 지원** - RMS 지원 앱에서 ADAL(Active Directory Authentication Library) 기반 로그인이 가능합니다. MFA(Multi-Factor Authentication), SAML 기반 타사 ID 공급자와 RMS 클라이언트 애플리케이션, 스마트 카드 및 인증서 기반 인증과 같은 로그인 기능이 가능하며, 기본 인증 프로토콜을 사용하기 위해 RMS 지원 앱을 사용할 필요가 없습니다.
 - **문서 추적 지원** - 이제 개발자는 앱에서 문서를 보호하는 경우 문서 추적을 사용할 수 있습니다.
 - 성능 향상
 - 버그 수정
@@ -114,9 +114,9 @@ ms.locfileid: "53266701"
 
     자세한 내용은 [MSProtection:resetStateWithCompletionBlock](https://msdn.microsoft.com/library/mt210991.aspx)을 참조하세요.
 
-### <a name="february-2015-update---adds-windows-store-application-support"></a>2015년 2월 업데이트 - Windows 스토어 응용 프로그램 지원 추가
+### <a name="february-2015-update---adds-windows-store-application-support"></a>2015년 2월 업데이트 - Windows 스토어 애플리케이션 지원 추가
 
-이 릴리스에서는 Windows 스토어 응용 프로그램에 대한 지원이 추가되었으며 Windows Phone, Android 및 iOS/OS X 릴리스의 RMS SDK 4.1과 기능 패리티를 제공합니다.
+이 릴리스에서는 Windows 스토어 애플리케이션에 대한 지원이 추가되었으며 Windows Phone, Android 및 iOS/OS X 릴리스의 RMS SDK 4.1과 기능 패리티를 제공합니다.
 
 ### <a name="january-2015-update---adds-winphone-platform-support"></a>2015년 1월 업데이트 - WinPhone 플랫폼 지원 추가
 
@@ -156,7 +156,7 @@ ms.locfileid: "53266701"
 
     **해결 방법** - 알려진 문제이며 나중에 다룰 예정입니다.
 
--   다중 인스턴스가 허용되는 경우 SDK를 사용하는 응용 프로그램이 충돌할 수 있습니다.
+-   다중 인스턴스가 허용되는 경우 SDK를 사용하는 애플리케이션이 충돌할 수 있습니다.
 
     **해결 방법** - 응용 프로그램에서 Android API에 대한 다중 인스턴스 호출을 허용하지 않도록 합니다.
 

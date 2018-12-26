@@ -1,5 +1,5 @@
 ---
-title: RMS 사용 응용 프로그램에 대한 ADAL 인증 | Azure RMS
+title: RMS 사용 애플리케이션에 대한 ADAL 인증 | Azure RMS
 description: ADAL 인증을 위한 프로세스를 간략히 설명합니다.
 keywords: 인증, RMS, ADAL
 author: lleonard-msft
@@ -23,11 +23,11 @@ ms.locfileid: "44146747"
 
 Azure ADAL(Active Directory 인증 라이브러리)을 사용하여 Azure RMS에 앱을 인증합니다.
 
-Microsoft Online 로그인 도우미 대신 ADAL 인증을 사용하도록 응용 프로그램을 업데이트하면 개발자와 고객이 다음을 수행할 수 있습니다.
+Microsoft Online 로그인 도우미 대신 ADAL 인증을 사용하도록 애플리케이션을 업데이트하면 개발자와 고객이 다음을 수행할 수 있습니다.
 
 - 다단계 인증 활용
 - 컴퓨터에 대한 관리자 권한 없이 RMS 2.1 클라이언트 설치
-- Windows 10용 응용 프로그램 인증
+- Windows 10용 애플리케이션 인증
 
 ## <a name="two-approaches-to-authentication"></a>인증에 대한 두 가지 접근 방법
 
@@ -35,14 +35,14 @@ Microsoft Online 로그인 도우미 대신 ADAL 인증을 사용하도록 응�
 
 - **내부 인증** - RMS SDK를 통해 관리되는 OAuth 인증입니다.
 
-  인증이 필요한 경우 RMS 클라이언트에서 ADAL 인증 프롬프트를 표시하는 경우 이 방법을 사용합니다. 응용 프로그램을 구성하는 방법에 대한 자세한 내용은 "내부 인증" 섹션을 참조하세요.
+  인증이 필요한 경우 RMS 클라이언트에서 ADAL 인증 프롬프트를 표시하는 경우 이 방법을 사용합니다. 애플리케이션을 구성하는 방법에 대한 자세한 내용은 "내부 인증" 섹션을 참조하세요.
 
   > [!Note]
-  > 현재 응용 프로그램에서 로그인 도우미와 함께 AD RMS SDK 2.1을 사용하는 경우 내부 인증 방법을 응용 프로그램 마이그레이션 경로로 사용하는 것이 좋습니다.
+  > 현재 애플리케이션에서 로그인 도우미와 함께 AD RMS SDK 2.1을 사용하는 경우 내부 인증 방법을 애플리케이션 마이그레이션 경로로 사용하는 것이 좋습니다.
 
 - **외부 인증** - 응용 프로그램을 통해 관리되는 OAuth 인증입니다.
 
-  응용 프로그램에서 자체 OAuth 인증을 관리하려는 경우 이 방법을 사용합니다. 이 방법의 경우 인증이 필요할 때 RMS 클라이언트에서 응용 프로그램 정의 콜백을 실행합니다. 자세한 예제를 보려면 이 항목의 끝에 있는 "외부 인증" 섹션을 참조하세요.
+  애플리케이션에서 자체 OAuth 인증을 관리하려는 경우 이 방법을 사용합니다. 이 방법의 경우 인증이 필요할 때 RMS 클라이언트에서 애플리케이션 정의 콜백을 실행합니다. 자세한 예제를 보려면 이 항목의 끝에 있는 "외부 인증" 섹션을 참조하세요.
 
   > [!Note]
   > 외부 인증이 사용자를 변경할 수 있는 기능을 의미하지는 않습니다. RMS 클라이언트는 항상 지정된 RMS 테넌트의 기본 사용자를 사용합니다.
@@ -50,7 +50,7 @@ Microsoft Online 로그인 도우미 대신 ADAL 인증을 사용하도록 응�
 ## <a name="internal-authentication"></a>내부 인증
 
 1. [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)의 Azure 구성 단계를 따른 후 다음 앱 초기화 단계로 돌아갑니다.
-2. 이제 RMS SDK 2.1에서 제공하는 내부 ADAL 인증을 사용하도록 응용 프로그램을 구성할 준비가 되었습니다.
+2. 이제 RMS SDK 2.1에서 제공하는 내부 ADAL 인증을 사용하도록 애플리케이션을 구성할 준비가 되었습니다.
 
 RMS 클라이언트를 구성하려면 [IpcInitialize](https://msdn.microsoft.com/library/jj127295.aspx)를 호출하여 RMS 클라이언트를 구성한 직후에 [IpcSetGlobalProperty](https://msdn.microsoft.com/library/hh535270.aspx)에 대한 호출을 추가합니다. 예를 들어 다음 코드 조각을 사용합니다.
 

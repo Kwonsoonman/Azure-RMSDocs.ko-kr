@@ -76,15 +76,15 @@ Azure Information Protection을 사용하면 권한 부여된 사용자의 공�
 
 |다양한 레이블 적용 방법|추가 정보|
 |---------------|----------|
-|해당 문서가 Office 응용 프로그램에서 만들어진 경우 사용자가 레이블을 수동으로 선택합니다.|사용자는 Office 리본의 **보호** 단추 또는 Azure Information Protection 막대에서 레이블을 선택합니다.|
+|해당 문서가 Office 애플리케이션에서 만들어진 경우 사용자가 레이블을 수동으로 선택합니다.|사용자는 Office 리본의 **보호** 단추 또는 Azure Information Protection 막대에서 레이블을 선택합니다.|
 |새 문서가 저장될 때 레이블을 선택하라는 메시지가 표시됩니다.|**All documents and emails must have a label(모든 문서와 메일에 레이블이 있어야 함)** 이라는 Azure Information Protection [정책 설정](configure-policy-settings.md)을 구성했습니다.|
 |사용자는 메일로 문서를 공유하고 Outlook에서 레이블을 수동으로 선택합니다.|사용자는 Office 리본의 **보호** 단추 또는 Azure Information Protection 막대에서 레이블을 선택하고, 첨부된 문서는 동일한 설정으로 자동으로 보호됩니다.|
 |관리자는 PowerShell을 사용하여 문서에 레이블을 적용합니다.|[Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) cmdlet을 사용하여 폴더의 특정 문서 또는 모든 문서에 레이블을 적용합니다.|
 |이제 Azure Information Protection 스캐너 또는 PowerShell을 사용하여 적용할 수 있는 자동 분류를 적용하도록 레이블을 추가로 구성했습니다.|[Azure Information Protection에 대한 자동 및 권장 분류 조건을 구성하는 방법](configure-policy-classification.md)을 참조하세요.|
 
-이 연습을 완료하려면 Office 응용 프로그램에서 문서를 만들 때 레이블을 수동으로 적용합니다. 
+이 연습을 완료하려면 Office 애플리케이션에서 문서를 만들 때 레이블을 수동으로 적용합니다. 
 
-1. 클라이언트 컴퓨터에서 Office 응용 프로그램이 이미 열려 있는 경우 먼저 닫았다가 다시 열어 새로 구성된 레이블을 포함하는 최신 정책 변경 내용을 가져옵니다. 
+1. 클라이언트 컴퓨터에서 Office 애플리케이션이 이미 열려 있는 경우 먼저 닫았다가 다시 열어 새로 구성된 레이블을 포함하는 최신 정책 변경 내용을 가져옵니다. 
 
 2. 레이블을 문서에 적용하고 저장합니다.
 
@@ -151,7 +151,7 @@ Azure Information Protection을 사용하면 권한 부여된 사용자의 공�
 
 레이블에 대해 구성할 수 있는 다른 옵션 및 설정에 대한 자세한 내용은 [Azure Information Protection 정책 구성](configure-policy.md)을 참조하세요. 
 
-또한 이 문서에 구성된 레이블은 동일한 이름으로 보호 템플릿을 만듭니다. Azure Information Protection의 보호 템플릿과 통합되는 응용 프로그램 및 서비스가 있는 경우, 이 템플릿을 적용할 수 있습니다. 예를 들면 DLP 솔루션 및 메일 흐름 규칙입니다. 웹용 Outlook은 Azure Information Protection 전역 정책의 보호 템플릿을 자동으로 표시합니다. 
+또한 이 문서에 구성된 레이블은 동일한 이름으로 보호 템플릿을 만듭니다. Azure Information Protection의 보호 템플릿과 통합되는 애플리케이션 및 서비스가 있는 경우, 이 템플릿을 적용할 수 있습니다. 예를 들면 DLP 솔루션 및 메일 흐름 규칙입니다. 웹용 Outlook은 Azure Information Protection 전역 정책의 보호 템플릿을 자동으로 표시합니다. 
 
 
 

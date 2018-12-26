@@ -8,13 +8,13 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 6053c29463b34b938f919508cb24f4e03f504c47
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446467"
 ---
 # <a name="class-mipnotsupportederror"></a>클래스 mip::NotSupportedError 
-응용 프로그램에서 요청한 작업이 SDK에서 지원되지 않습니다.
+애플리케이션에서 요청한 작업이 SDK에서 지원되지 않습니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                

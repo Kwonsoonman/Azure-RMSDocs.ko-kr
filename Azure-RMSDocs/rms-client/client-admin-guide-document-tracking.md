@@ -74,20 +74,20 @@ Bing 지도에서 사용자 위치를 표시하는 데 사용하는 virtualearth
 
 ## <a name="tracking-and-revoking-documents-for-users"></a>사용자에 대해 문서 추적 및 취소
 
-사용자는 문서 추적 사이트에 로그인하면 Azure Information Protection 클라이언트를 사용하여 보호하거나 Rights Management 공유 응용 프로그램을 사용하여 공유한 문서를 추적 및 취소할 수 있습니다. 테넌트에 대한 Azure AD 전역 관리자로 로그인하면 관리 아이콘을 클릭하여 관리자 모드로 전환할 수 있습니다. 다른 관리자 역할은 문서 추적 사이트에 대해 이 모드를 지원하지 않습니다. 
+사용자는 문서 추적 사이트에 로그인하면 Azure Information Protection 클라이언트를 사용하여 보호하거나 Rights Management 공유 애플리케이션을 사용하여 공유한 문서를 추적 및 취소할 수 있습니다. 테넌트에 대한 Azure AD 전역 관리자로 로그인하면 관리 아이콘을 클릭하여 관리자 모드로 전환할 수 있습니다. 다른 관리자 역할은 문서 추적 사이트에 대해 이 모드를 지원하지 않습니다. 
 
 ![문서 추적 사이트의 관리자 아이콘](../media/tracking-site-admin-icon.png)
 
-관리자 모드에서는 조직의 사용자가 Azure Information Protection 클라이언트를 사용하여 추적하도록 선택하거나 Rights Management 공유 응용 프로그램을 사용하여 공유한 문서를 볼 수 있습니다.
+관리자 모드에서는 조직의 사용자가 Azure Information Protection 클라이언트를 사용하여 추적하도록 선택하거나 Rights Management 공유 애플리케이션을 사용하여 공유한 문서를 볼 수 있습니다.
 
 > [!NOTE] 
 > 전역 관리자임에도 이 아이콘이 표시되지 않은 원인은 아직 스스로 문서를 공유하지 않았기 때문입니다. 이 경우에 다음 URL을 사용하여 문서 추적 사이트에 액세스합니다. https://portal.azurerms.com/#/admin
 
 관리자 모드에서 수행하는 작업은 감사되어 사용 현황 로그 파일에 기록되며, 계속하려면 확인해야 합니다. 이 로깅에 대한 자세한 내용은 다음 섹션을 참조하세요.
 
-관리자 모드에 있는 경우 사용자 또는 문서로 검색할 수 있습니다. 사용자로 검색하면 지정한 사용자가 Azure Information Protection 클라이언트를 사용하여 추적하도록 선택하거나 Rights Management 공유 응용 프로그램을 사용하여 공유한 모든 문서가 표시됩니다. 
+관리자 모드에 있는 경우 사용자 또는 문서로 검색할 수 있습니다. 사용자로 검색하면 지정한 사용자가 Azure Information Protection 클라이언트를 사용하여 추적하도록 선택하거나 Rights Management 공유 애플리케이션을 사용하여 공유한 모든 문서가 표시됩니다. 
 
-문서로 검색하면 Azure Information Protection 클라이언트를 사용하여 해당 문서를 추적하거나 Rights Management 공유 응용 프로그램을 사용하여 공유한 조직의 모든 사용자가 표시됩니다. 그러면 검색 결과를 드릴하여 사용자가 보호한 문서를 추적하고 필요한 경우 해당 문서를 해지할 수 있습니다. 
+문서로 검색하면 Azure Information Protection 클라이언트를 사용하여 해당 문서를 추적하거나 Rights Management 공유 애플리케이션을 사용하여 공유한 조직의 모든 사용자가 표시됩니다. 그러면 검색 결과를 드릴하여 사용자가 보호한 문서를 추적하고 필요한 경우 해당 문서를 해지할 수 있습니다. 
 
 관리자 모드를 종료하려면 **관리자 모드 끝내기** 옆에 있는 **X**를 클릭합니다.
 

@@ -107,9 +107,9 @@ Azure Information Protection을 사용하기 전에 사용자 계정 및 그룹�
     
     사용자가 Outlook에서 레이블을 적용하여 Exchange에서 IRM(정보 권한 관리)이 구성되지 않은 경우에도 Rights Management 보호를 적용할 수 있습니다. 하지만 Exchange가 IRM 또는 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)에 대해 구성될 때까지 조직에서는 Exchange를 통한 Azure Rights Management 보호의 전체 기능을 사용할 수 없습니다. 이 추가 구성은 다음 목록에 포함되어 있습니다(Exchange Online의 경우 2단계, Exchange 온-프레미스의 경우 5단계). 
 
-2. Office 응용 프로그램 및 서비스 구성
+2. Office 애플리케이션 및 서비스 구성
     
-    SharePoint Online 또는 Exchange Online에서 IRM(정보 권한 관리) 기능을 지원하도록 Office 응용 프로그램 및 서비스를 구성합니다. 자세한 내용은 [Azure Rights Management에 대해 응용 프로그램 구성](configure-applications.md)을 참조하세요.
+    SharePoint Online 또는 Exchange Online에서 IRM(정보 권한 관리) 기능을 지원하도록 Office 애플리케이션 및 서비스를 구성합니다. 자세한 내용은 [Azure 권한 관리에 대해 애플리케이션 구성](configure-applications.md)을 참조하세요.
 
 3. 데이터 복구를 위한 슈퍼 사용자 기능 구성
     
@@ -173,9 +173,9 @@ Azure Information Protection에서 보호 서비스 사용을 시작하기 전�
     
     사용자가 Office 2010을 지원하고, Office 문서와 메일 이외의 파일을 보호하고, 보호된 문서를 추적할 수 있게 하려면 Azure Information Protection을 설치합니다. 이 클라이언트에 대해 사용자 교육을 제공합니다. 자세한 내용은 [Windows용 Azure Information Protection 클라이언트](./rms-client/aip-client.md)를 참조하세요.
 
-2. Office 응용 프로그램 및 서비스 구성
+2. Office 애플리케이션 및 서비스 구성
     
-    SharePoint Online 또는 Exchange Online에서 IRM(정보 권한 관리) 기능을 지원하도록 Office 응용 프로그램 및 서비스를 구성합니다. 자세한 내용은 [Azure Rights Management에 대해 응용 프로그램 구성](./configure-applications.md)을 참조하세요.
+    SharePoint Online 또는 Exchange Online에서 IRM(정보 권한 관리) 기능을 지원하도록 Office 애플리케이션 및 서비스를 구성합니다. 자세한 내용은 [Azure 권한 관리에 대해 애플리케이션 구성](./configure-applications.md)을 참조하세요.
 
 3. 데이터 복구를 위한 슈퍼 사용자 기능 구성
     

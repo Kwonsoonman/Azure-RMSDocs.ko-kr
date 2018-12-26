@@ -19,7 +19,7 @@ ms.locfileid: "44151642"
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-이 단계에서는 방금 구성한 정책이 Windows PC에 다운로드되고 Office 응용 프로그램에 레이블이 표시되도록 Azure Information Protection 클라이언트를 설치합니다.
+이 단계에서는 방금 구성한 정책이 Windows PC에 다운로드되고 Office 애플리케이션에 레이블이 표시되도록 Azure Information Protection 클라이언트를 설치합니다.
 
 
 ## <a name="install-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트 설치

@@ -9,7 +9,7 @@ items:
   href: setup-configure-mip.md
 - name: 빠른 시작
   items:
-  - name: 응용 프로그램 초기화(C++)
+  - name: 애플리케이션 초기화(C++)
     href: quick-app-initialization-cpp.md
   - name: 파일 API
     items:

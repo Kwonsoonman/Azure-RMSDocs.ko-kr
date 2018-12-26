@@ -1,6 +1,6 @@
 ---
-title: Windows용 Rights Management 공유 응용 프로그램 - AIP
-description: Windows용 Rights Management 공유 응용 프로그램의 정보 리소스를 소개합니다. 이 응용 프로그램은 AD RMS(Active Directory Rights Management Services) 또는 Azure Information Protection을 사용하는 조직과 자체 정보 보호 인프라가 없지만, Azure Information Protection을 사용하는 다른 조직에서 보호한 콘텐츠를 사용하려는 조직에서 무료로 다운로드할 수 있습니다.
+title: Windows용 Rights Management 공유 애플리케이션 - AIP
+description: Windows용 Rights Management 공유 애플리케이션의 정보 리소스를 소개합니다. 이 애플리케이션은 AD RMS(Active Directory Rights Management Services) 또는 Azure Information Protection을 사용하는 조직과 자체 정보 보호 인프라가 없지만, Azure Information Protection을 사용하는 다른 조직에서 보호한 콘텐츠를 사용하려는 조직에서 무료로 다운로드할 수 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -17,15 +17,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/11/2018
 ms.locfileid: "53246159"
 ---
-# <a name="rights-management-sharing-application-for-windows"></a>Windows용 권한 관리 공유 응용 프로그램
+# <a name="rights-management-sharing-application-for-windows"></a>Windows용 권한 관리 공유 애플리케이션
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
 > [!IMPORTANT]
-> **지원 종료 알림**: Windows용 Rights Management 공유 애플리케이션은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
+> **지원 종료 알림**: Windows용 Rights Management 공유 애플리케이션은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 애플리케이션에 대한 지원은 2019년 1월 31일에 중지됩니다. 
 
 
-Windows용 Rights Management 공유 응용 프로그램(간단히 "RMS 공유 앱"이라고도 함)은 AD RMS([Active Directory Rights Management Services](https://technet.microsoft.com/library/cc772403.aspx)) 또는 [Azure Information Protection](../what-is-information-protection.md)을 사용하는 조직이 사용하기 위해 다운로드할 수 있는 무료 응용 프로그램입니다. 이 애플리케이션은 고유한 정보 보호 인프라가 없지만 Azure Information Protection의 Azure Rights Management 서비스를 사용하는 다른 조직에서 보호되는 콘텐츠를 사용하려는 조직용이기도 합니다.
+Windows용 Rights Management 공유 애플리케이션(간단히 "RMS 공유 앱"이라고도 함)은 AD RMS([Active Directory Rights Management Services](https://technet.microsoft.com/library/cc772403.aspx)) 또는 [Azure Information Protection](../what-is-information-protection.md)을 사용하는 조직이 사용하기 위해 다운로드할 수 있는 무료 애플리케이션입니다. 이 애플리케이션은 고유한 정보 보호 인프라가 없지만 Azure Information Protection의 Azure Rights Management 서비스를 사용하는 다른 조직에서 보호되는 콘텐츠를 사용하려는 조직용이기도 합니다.
 
 -   [Rights Management 공유 애플리케이션: 버전 릴리스 기록](sharing-app-version-release-history.md)
 

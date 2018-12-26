@@ -8,14 +8,14 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: a7dffb4a6b1490ef185eb9a5062f394f4509f00a
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446688"
 ---
 # <a name="class-mipprotectionprofile"></a>클래스 mip::ProtectionProfile 
 [ProtectionProfile](class_mip_protectionprofile.md)은 보호 작업을 수행하기 위한 루트 클래스입니다.
-보호 작업을 수행하기 전에 응용 프로그램이 [ProtectionProfile](class_mip_protectionprofile.md)을 만들어야 합니다.
+보호 작업을 수행하기 전에 애플리케이션이 [ProtectionProfile](class_mip_protectionprofile.md)을 만들어야 합니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                

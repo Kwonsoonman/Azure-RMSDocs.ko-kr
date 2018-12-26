@@ -1,6 +1,6 @@
 ---
 title: 개념 - 파일 API 엔진 개체
-description: 이 문서는 응용 프로그램 초기화 중에 만들어지는 파일 엔진 개체의 개념을 이해하는 데 도움이 됩니다.
+description: 이 문서는 애플리케이션 초기화 중에 만들어지는 파일 엔진 개체의 개념을 이해하는 데 도움이 됩니다.
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 9ccea755c83b570aa17ff4d30d98783f4bef79e5
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446603"
 ---
 # <a name="microsoft-information-protection-sdk---file-api-engine-concepts"></a>Microsoft Information Protection SDK - 파일 API 엔진 개념
 
-MIP SDK 파일 API의 `mip::FileEngine`은 지정된 ID를 대신하여 수행되는 모든 작업을 위한 인터페이스를 제공합니다. 응용 프로그램에 로그인하는 사용자별로 엔진이 하나씩 추가되고, 이 엔진이 수행하는 모든 작업은 해당 ID의 컨텍스트에서 수행됩니다.
+MIP SDK 파일 API의 `mip::FileEngine`은 지정된 ID를 대신하여 수행되는 모든 작업을 위한 인터페이스를 제공합니다. 애플리케이션에 로그인하는 사용자별로 엔진이 하나씩 추가되고, 이 엔진이 수행하는 모든 작업은 해당 ID의 컨텍스트에서 수행됩니다.
 
 `FileEngine`은 인증된 사용자의 레이블을 나열하고 사용자를 대신하여 파일 작업을 수행하는 파일 처리기를 만드는 등 두 가지 기본적인 역할을 담당합니다. 
 

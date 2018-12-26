@@ -8,14 +8,14 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: f317f1eff0266db1da211e164ec5e427ba7ce17d
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47445889"
 ---
 # <a name="class-mipfileprofile"></a>클래스 mip::FileProfile 
 [FileProfile](class_mip_fileprofile.md) 클래스는 Microsoft Information Protection 작업을 사용하기 위한 루트 클래스입니다.
-일반적인 응용 프로그램에는 프로필이 하나만 필요합니다.
+일반적인 애플리케이션에는 프로필이 하나만 필요합니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                

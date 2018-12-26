@@ -60,7 +60,7 @@ Azure Information Protection 앱을 사용하려면 **iOS 8** 또는 **Android 4
 
 예. Microsoft 계정을 신청하면 Hotmail 또는 Gmail 메일 주소나 소유한 다른 메일 주소를 지정할 수 있습니다. 
 
-그러나 이 뷰어는 이 계정으로 보호된 파일을 열 수 있지만 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+그러나 이 뷰어는 이 계정으로 보호된 파일을 열 수 있지만 인증에 Microsoft 계정을 사용할 경우, 일부 애플리케이션이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](../secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="which-file-extensions-can-i-open-with-this-app"></a>이 앱에서 열 수 있는 파일 확장명은 무엇인가요?
 

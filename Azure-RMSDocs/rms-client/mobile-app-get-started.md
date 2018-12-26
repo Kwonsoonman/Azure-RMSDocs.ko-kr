@@ -34,7 +34,7 @@ ms.locfileid: "53023798"
 
 - **.rpmsg 파일**: 이 권한으로 보호된 메일 메시지는 모바일 장치의 메일 앱에서 권한 관리 데이터 보호를 기본적으로 지원하지 않는 경우 메일 메시지의 첨부 파일로 표시됩니다. 
     
-    모바일 디바이스에서 액세스할 수 있는 권한으로 보호된 메일 메시지를 다른 디바이스를 사용하여 자신에게 보냅니다. 예를 들어 Windows 컴퓨터에서 Outlook을 사용합니다. 권한 관리를 기본적으로 지원하는 메일 클라이언트 목록은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](../requirements-applications.md) 페이지에서 메일 열을 참조하세요.
+    모바일 디바이스에서 액세스할 수 있는 권한으로 보호된 메일 메시지를 다른 디바이스를 사용하여 자신에게 보냅니다. 예를 들어 Windows 컴퓨터에서 Outlook을 사용합니다. 권한 관리를 기본적으로 지원하는 메일 클라이언트 목록은 [Azure Rights Management 데이터 보호를 지원하는 애플리케이션](../requirements-applications.md) 페이지에서 메일 열을 참조하세요.
 
 - **권한으로 보호된 PDF 파일**: Windows 컴퓨터에서 Azure Information Protection 클라이언트를 사용하여 [PDF 파일을 보호](client-classify-protect.md)한 다음 권한으로 보호된 이 PDF 파일을 전자 메일에 첨부하여 본인에게 보냅니다. 또는 PDF 파일을 SharePoint 보호된 라이브러리로 업로드한 다음 메일 주소를 사용하여 이 파일을 공유합니다.
 

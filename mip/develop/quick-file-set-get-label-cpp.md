@@ -9,7 +9,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 651fc73c00f18d06ad1a824337a096331bc7e897
 ms.sourcegitcommit: d677088db8588fb2cc4a5d7dd296e76d0d9a2e9c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/03/2018
 ms.locfileid: "48251746"
@@ -27,7 +27,7 @@ ms.locfileid: "48251746"
 
 ## <a name="implement-an-observer-class-to-monitor-the-file-handler-object"></a>파일 처리기 개체를 모니터링하기 위한 Observer 클래스 구현
 
-응용 프로그램 초기화 빠른 시작에서 구현한 Observer(파일 프로필 및 엔진 관련)와 비슷한 Observer 클래스를 파일 처리기 개체에 대해 구현합니다.
+애플리케이션 초기화 빠른 시작에서 구현한 Observer(파일 프로필 및 엔진 관련)와 비슷한 Observer 클래스를 파일 처리기 개체에 대해 구현합니다.
 
 SDK의 `mip::FileHandler::Observer` 클래스를 확장하여 Observer 클래스에 대한 기본 구현을 만듭니다. Observer는 인스턴스화된 후 나중에 파일 처리기 작업을 모니터링하는 데 사용됩니다.
 
@@ -199,13 +199,13 @@ SDK의 `mip::FileHandler::Observer` 클래스를 확장하여 Observer 클래스
    | \<label-id\> | 이전 빠른 시작의 출력 콘솔에서 복사한 민감도 레이블 ID(예: `f42a3342-8706-4288-bd31-ebb85995028z`)입니다. |
    | \<output-file-path\> | 입력 파일의 레이블 지정 사본이 되는 출력 파일의 전체 경로(예: `c:\\Test\\Test_labeled.docx`)입니다. |
 
-## <a name="build-and-test-the-application"></a>응용 프로그램 빌드 및 테스트
+## <a name="build-and-test-the-application"></a>애플리케이션 빌드 및 테스트
 
-클라이언트 응용 프로그램을 빌드하고 테스트합니다. 
+클라이언트 애플리케이션을 빌드하고 테스트합니다. 
 
-1. F6 키(**솔루션 빌드**)를 사용하여 클라이언트 응용 프로그램을 빌드합니다. 빌드 오류가 없으면 F5 키(**디버깅 시작**)를 사용하여 응용 프로그램을 실행합니다.
+1. F6 키(**솔루션 빌드**)를 사용하여 클라이언트 애플리케이션을 빌드합니다. 빌드 오류가 없으면 F5 키(**디버깅 시작**)를 사용하여 애플리케이션을 실행합니다.
 
-2. 프로젝트가 성공적으로 빌드 및 실행되면 응용 프로그램은 SDK가 `AcquireOAuth2Token()` 메서드를 호출할 때마다 액세스 토큰을 묻는 메시지를 표시합니다. 이전에 "민감도 레이블 나열" 빠른 시작에서 수행한 것처럼 제공된 값을 사용하여 매번 토큰을 가져오기 위한 PowerShell 스크립트를 실행합니다. 요청된 인증 및 리소스가 동일한 경우 `AcquireOAuth2Token()`이 이전에 생성된 토큰을 사용하려고 하면 다음을 수행할 수 있습니다.
+2. 프로젝트가 성공적으로 빌드 및 실행되면 애플리케이션은 SDK가 `AcquireOAuth2Token()` 메서드를 호출할 때마다 액세스 토큰을 묻는 메시지를 표시합니다. 이전에 "민감도 레이블 나열" 빠른 시작에서 수행한 것처럼 제공된 값을 사용하여 매번 토큰을 가져오기 위한 PowerShell 스크립트를 실행합니다. 요청된 인증 및 리소스가 동일한 경우 `AcquireOAuth2Token()`이 이전에 생성된 토큰을 사용하려고 하면 다음을 수행할 수 있습니다.
 
    ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:

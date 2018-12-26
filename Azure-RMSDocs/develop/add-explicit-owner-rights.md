@@ -1,6 +1,6 @@
 ---
 title: 명시적 소유자 권한 추가 방법 | Azure RMS
-description: 라이선스를 처음부터 만드는 경우 응용 프로그램에서 "소유자" 권한을 명시적으로 추가해야 합니다.
+description: 라이선스를 처음부터 만드는 경우 애플리케이션에서 "소유자" 권한을 명시적으로 추가해야 합니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -25,7 +25,7 @@ ms.locfileid: "44147122"
 
 ## <a name="prerequisites"></a>전제 조건
 
-응용 프로그램이 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)를 사용하여 라이선스 핸들을 만드는 경우 소유자에게 모든 권한을 명시적으로 부여해야 합니다.
+애플리케이션이 [IpcCreateLicenseFromScratch](https://msdn.microsoft.com/library/hh535256.aspx)를 사용하여 라이선스 핸들을 만드는 경우 소유자에게 모든 권한을 명시적으로 부여해야 합니다.
 
 >[!NOTE] 
 > **IPC\_LI\_OWNER** 속성과 함께 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)를 사용하여 사용자를 "소유자"로 설정하는 경우에는 소유자에게 모든 권한이 부여되지 않습니다.

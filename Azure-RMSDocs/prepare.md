@@ -85,7 +85,7 @@ Azure Rights Management 서비스를 사용하여 문서 및 메일을 보호할
 
 기타 권한 부여 방법:
 
-- Azure AD에 없는 메일 주소의 경우, Azure Information Protection은 Microsoft 계정으로 인증될 때 이러한 메일 주소에 권한을 부여할 수 있습니다. 그러나 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](./secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- Azure AD에 없는 메일 주소의 경우, Azure Information Protection은 Microsoft 계정으로 인증될 때 이러한 메일 주소에 권한을 부여할 수 있습니다. 그러나 인증에 Microsoft 계정을 사용할 경우 일부 애플리케이션이 보호된 콘텐츠를 열 수 없습니다. [추가 정보](./secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 - Azure AD에 계정이 없는 사용자에게 새로운 기능을 갖춘 Office 365 메시지 암호화를 사용하여 전자 메일을 보내면 소셜 ID 공급자와의 페더레이션을 사용하거나 일회용 암호를 사용하여 먼저 사용자를 인증합니다. 그런 다음 보호된 전자 메일에 지정된 이메일 주소를 사용하여 사용자를 인증합니다.
 
@@ -167,7 +167,7 @@ Azure AD PowerShell을 사용하여 사용자 및 그룹을 Azure Information Pr
 
 2. UPN을 라우팅할 수 없는 경우(예: **ankurroy@contoso.local**), 사용자의 대체 로그인 ID를 구성하고 이 대체 로그인 정보로 Office에 로그인하는 방법을 알려주세요. Office의 레지스트리 키도 설정해야 합니다.
 
-    자세한 내용은 [대체 로그인 ID 구성](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 및 [Office applications periodically prompt for credentials to SharePoint Online, OneDrive, and Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)(Office 응용 프로그램에서 주기적으로 SharePoint Online, OneDrive 및 Lync Online의 자격 증명 요구)을 참조하세요.
+    자세한 내용은 [대체 로그인 ID 구성](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 및 [Office applications periodically prompt for credentials to SharePoint Online, OneDrive, and Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)(Office 애플리케이션에서 주기적으로 SharePoint Online, OneDrive 및 Lync Online의 자격 증명 요구)을 참조하세요.
 
 > [!TIP]
 > Export-Csv cmdlet을 사용하여 결과를 스프레드시트로 내보내면 검색과 가져오기를 위한 대량 편집 등을 보다 쉽게 관리할 수 있습니다.

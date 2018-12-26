@@ -1,6 +1,6 @@
 ---
 title: 앱에서 AIP의 Azure Rights Management를 지원하는 방식
-description: Office 응용 프로그램, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 응용 프로그램과 Exchange, SharePoint 등의 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 통해 조직의 문서와 전자 메일을 보호하는 방식을 파악합니다.
+description: Office 애플리케이션, Word, Excel, PowerPoint, Outlook 등의 자주 사용하는 최종 사용자 애플리케이션과 Exchange, SharePoint 등의 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 통해 조직의 문서와 전자 메일을 보호하는 방식을 파악합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -17,22 +17,22 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/12/2018
 ms.locfileid: "53305192"
 ---
-# <a name="how-applications-support-the-azure-rights-management-service"></a>응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법
+# <a name="how-applications-support-the-azure-rights-management-service"></a>애플리케이션에서 Azure Rights Management 서비스를 지원하는 방법
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-다음 정보를 사용하여 가장 일반적으로 사용하는 최종 사용자 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 통해 조직의 문서와 메일을 보호하는 방식을 파악할 수 있습니다. 이 응용 프로그램은 Word, Excel, PowerPoint 및 Outlook을 포함합니다. 서비스에는 Exchange 및 SharePoint가 포함됩니다.
+다음 정보를 사용하여 가장 일반적으로 사용하는 최종 사용자 애플리케이션과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 통해 조직의 문서와 메일을 보호하는 방식을 파악할 수 있습니다. 이 애플리케이션은 Word, Excel, PowerPoint 및 Outlook을 포함합니다. 서비스에는 Exchange 및 SharePoint가 포함됩니다.
 
 > [!NOTE]
-> Azure Rights Management 서비스에서 지원하는 응용 프로그램 및 버전을 확인하려면 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](./requirements-applications.md)을 참조하세요.
+> Azure Rights Management 서비스에서 지원하는 애플리케이션 및 버전을 확인하려면 [Azure Rights Management 데이터 보호를 지원하는 애플리케이션](./requirements-applications.md)을 참조하세요.
 
-일부 경우 관리자가 구성하는 정에 따라 Azure Rights Management 서비스가 보호를 자동으로 적용합니다. SharePoint 라이브러리 및 Exchange 전송 규칙 등을 예로 들 수 있습니다. 기타 경우 최종 사용자가 응용 프로그램에서 보호를 직접 적용해야 합니다. 예를 들어 사용자가 보호를 적용하도록 구성된 분류 레이블을 선택하거나 템플릿을 선택하거나 특정 옵션을 선택합니다. 사용자가 적용하는 보호는 사용자가 공유할 파일을 보호하고, 선택된 사용자 또는 조직 외부 사용자에게 액세스 또는 사용을 제한할 때 일반적입니다.
+일부 경우 관리자가 구성하는 정에 따라 Azure Rights Management 서비스가 보호를 자동으로 적용합니다. SharePoint 라이브러리 및 Exchange 전송 규칙 등을 예로 들 수 있습니다. 기타 경우 최종 사용자가 애플리케이션에서 보호를 직접 적용해야 합니다. 예를 들어 사용자가 보호를 적용하도록 구성된 분류 레이블을 선택하거나 템플릿을 선택하거나 특정 옵션을 선택합니다. 사용자가 적용하는 보호는 사용자가 공유할 파일을 보호하고, 선택된 사용자 또는 조직 외부 사용자에게 액세스 또는 사용을 제한할 때 일반적입니다.
 
 정책을 구성하는 관리자와 사용자는 템플릿을 통해 보다 간편하게 올바른 수준의 보호를 적용하고 조직 내 사용자에 대해 액세스를 제한할 수 있습니다. Azure Rights Management 서비스에서는 기본 템플릿 두 개가 제공되지만 사용자와 관리자가 개별 옵션을 지정해야 하는 경우 시간을 단축하기 위해 사용자 지정 템플릿을 만들 수도 있습니다. 템플릿에 대한 자세한 내용은 [Azure Information Protection 템플릿 구성 및 관리](configure-policy-templates.md)를 참조하세요.
 
-사용자가 보호를 직접 적용해야 하는 경우에는 적용 방법과 시기에 대한 지침을 제공해야 합니다. 사용하는 응용 프로그램과 버전 및 사용 방식에 특정한 지침을 만듭니다. 사용자가 비즈니스에 적합한 보호를 적용해야 하는 시기와 방법에 대한 지침도 제공합니다. 자세한 내용은 [사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원](help-users.md)을 참조하세요.
+사용자가 보호를 직접 적용해야 하는 경우에는 적용 방법과 시기에 대한 지침을 제공해야 합니다. 사용하는 애플리케이션과 버전 및 사용 방식에 특정한 지침을 만듭니다. 사용자가 비즈니스에 적합한 보호를 적용해야 하는 시기와 방법에 대한 지침도 제공합니다. 자세한 내용은 [사용자가 Azure Rights Management 서비스를 사용하여 파일을 보호할 수 있도록 지원](help-users.md)을 참조하세요.
 
-이러한 응용 프로그램을 Azure Information Protection의 Azure Rights Management 서비스에 대해 구성하는 방법에 대한 자세한 내용은 [Azure Rights Management에 대해 응용 프로그램 구성](configure-applications.md)을 참조하세요.
+이러한 애플리케이션을 Azure Information Protection의 Azure Rights Management 서비스에 대해 구성하는 방법에 대한 자세한 내용은 [Azure Rights Management에 대해 애플리케이션 구성](configure-applications.md)을 참조하세요.
 
 검색 서비스는 여러 방법으로 Rights Management를 통합할 수 있습니다. 예를 들면 다음과 같습니다. 
 
@@ -44,7 +44,7 @@ ms.locfileid: "53305192"
 
 ## <a name="next-steps"></a>다음 단계
 
-다음 응용 프로그램과 서비스에서 각각 Azure Rights Management 서비스를 지원하는 방식에 대한 자세한 내용을 알아보세요.
+다음 애플리케이션과 서비스에서 각각 Azure Rights Management 서비스를 지원하는 방식에 대한 자세한 내용을 알아보세요.
 
 -   [Windows 및 모바일 플랫폼용 RMS 공유 응용 프로그램](sharing-app-support.md)
 

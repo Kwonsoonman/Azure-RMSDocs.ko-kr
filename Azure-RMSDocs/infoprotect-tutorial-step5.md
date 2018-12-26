@@ -121,7 +121,7 @@ ms.locfileid: "44148633"
 
 ## <a name="next-steps"></a>다음 단계
 
-이제 기본 Azure Information Protection 정책, 이러한 정책의 사용자 지정 방법 및 Word 문서에 대해 레이블 지정이 작동하는 방식을 확인했으므로, 다른 설정을 사용해 보고 Azure Information Protection을 지원하는 다른 Office 프로그램(Excel, PowerPoint, Outlook)에서 이러한 설정이 작동하는 방식을 확인해 보세요. Azure Information Protection 클라이언트를 설치할 때 이러한 응용 프로그램이 열려 있었던 경우에는 이러한 응용 프로그램을 닫았다가 다시 연 후 Azure Information Protection에서 이러한 응용 프로그램을 사용해 보세요.
+이제 기본 Azure Information Protection 정책, 이러한 정책의 사용자 지정 방법 및 Word 문서에 대해 레이블 지정이 작동하는 방식을 확인했으므로, 다른 설정을 사용해 보고 Azure Information Protection을 지원하는 다른 Office 프로그램(Excel, PowerPoint, Outlook)에서 이러한 설정이 작동하는 방식을 확인해 보세요. Azure Information Protection 클라이언트를 설치할 때 이러한 애플리케이션이 열려 있었던 경우에는 이러한 애플리케이션을 닫았다가 다시 연 후 Azure Information Protection에서 이러한 애플리케이션을 사용해 보세요.
 
 더 많은 문서를 공유해 보고 사용되는 방식을 추적하고, 문서 취소 작업 방법을 확인합니다.
 

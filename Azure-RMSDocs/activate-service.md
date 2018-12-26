@@ -1,6 +1,6 @@
 ---
 title: Azure Rights Management 활성화 - AIP
-description: 조직에서 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 문서 및 전자 메일 보호를 시작할 수 있도록 하려면 Azure Rights Management 서비스를 활성화해야 합니다.
+description: 조직에서 이 정보 보호 솔루션을 지원하는 애플리케이션 및 서비스를 사용하여 문서 및 전자 메일 보호를 시작할 수 있도록 하려면 Azure Rights Management 서비스를 활성화해야 합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -22,13 +22,13 @@ ms.locfileid: "53305440"
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 > [!NOTE]
-> 이 구성 정보는 조직의 모든 사용자에게 적용되는 서비스를 담당하는 관리자를 위해 작성되었습니다. 특정 응용 프로그램용 Rights Management 기능을 사용하기 위한 사용자 도움말 및 정보 또는 권한으로 보호된 파일 또는 메일을 여는 방법에 대한 정보를 원하는 경우 응용 프로그램을 함께 제공되는 지침 및 도움말을 사용하세요.
+> 이 구성 정보는 조직의 모든 사용자에게 적용되는 서비스를 담당하는 관리자를 위해 작성되었습니다. 특정 애플리케이션용 Rights Management 기능을 사용하기 위한 사용자 도움말 및 정보 또는 권한으로 보호된 파일 또는 메일을 여는 방법에 대한 정보를 원하는 경우 애플리케이션을 함께 제공되는 지침 및 도움말을 사용하세요.
 >
-> 예를 들어 Office 응용 프로그램의 경우 도움말 아이콘을 클릭하고 **Rights Management** 또는 **IRM**과 같은 검색 용어를 입력합니다. Windows용 Azure Information Protection 클라이언트의 경우 [Azure Information Protection 클라이언트 사용자 가이드](./rms-client/client-user-guide.md)를 참조하세요.
+> 예를 들어 Office 애플리케이션의 경우 도움말 아이콘을 클릭하고 **Rights Management** 또는 **IRM**과 같은 검색 용어를 입력합니다. Windows용 Azure Information Protection 클라이언트의 경우 [Azure Information Protection 클라이언트 사용자 가이드](./rms-client/client-user-guide.md)를 참조하세요.
 >
 > 서비스에 대한 기술 지원 및 기타 질문은 [지원 옵션 및 커뮤니티 리소스](information-support.md#support-options-and-community-resources) 정보를 참조하세요.
 
-Azure Information Protection용 Azure Rights Management 서비스가 조직에 활성화되면, 관리자와 사용자는 이 정보 보호 솔루션을 지원하는 응용 프로그램 및 서비스를 사용하여 중요한 데이터 보호를 시작할 수 있습니다. 또한 관리자는 조직에서 소유한 보호된 문서 및 이메일을 관리하고 모니터링할 수 있습니다. 
+Azure Information Protection용 Azure Rights Management 서비스가 조직에 활성화되면, 관리자와 사용자는 이 정보 보호 솔루션을 지원하는 애플리케이션 및 서비스를 사용하여 중요한 데이터 보호를 시작할 수 있습니다. 또한 관리자는 조직에서 소유한 보호된 문서 및 이메일을 관리하고 모니터링할 수 있습니다. 
 
 
 ## <a name="do-you-need-to-activate-azure-rights-management"></a>Azure Rights Management를 활성화해야 하나요?
@@ -104,7 +104,7 @@ Set-AadrmOnboardingControlPolicy -UseRmsUserLicense $False
 
 이 cmdlet 및 추가 예제에 대한 자세한 내용은 [Set-AadrmOnboardingControlPolicy](/powershell/aadrm/vlatest/set-aadrmonboardingcontrolpolicy) 도움말을 참조하세요.
 
-이러한 등록 컨트롤을 사용할 경우 조직의 모든 사용자는 항상 하위 사용자가 보호하는 보호된 콘텐츠를 사용할 수 있지만 클라이언트 응용 프로그램에서 자체적으로 정보 보호를 적용할 수는 없습니다. 예를 들어 Azure Rights Management 서비스가 활성화되면 자동으로 게시된 기본 템플릿 또는 사용자가 구성할 수 있는 사용자 지정 템플릿이 Office 앱에 표시되지 않습니다. Exchange 등의 서버 쪽 응용 프로그램은 같은 결과를 달성하기 위해 Rights Management 통합을 위한 자체 사용자별 컨트롤을 구현할 수 있습니다. 예를 들어, 사용자가 웹용 Outlook에서 메일을 보호하지 못하도록 하려면 [Set-OwaMailboxPolicy](/powershell/module/exchange/client-access/set-owamailboxpolicy?view=exchange-ps)를 사용하여 *IRMEnabled* 매개 변수를 *$false*로 설정합니다.
+이러한 등록 컨트롤을 사용할 경우 조직의 모든 사용자는 항상 하위 사용자가 보호하는 보호된 콘텐츠를 사용할 수 있지만 클라이언트 애플리케이션에서 자체적으로 정보 보호를 적용할 수는 없습니다. 예를 들어 Azure Rights Management 서비스가 활성화되면 자동으로 게시된 기본 템플릿 또는 사용자가 구성할 수 있는 사용자 지정 템플릿이 Office 앱에 표시되지 않습니다. Exchange 등의 서버 쪽 애플리케이션은 같은 결과를 달성하기 위해 Rights Management 통합을 위한 자체 사용자별 컨트롤을 구현할 수 있습니다. 예를 들어, 사용자가 웹용 Outlook에서 메일을 보호하지 못하도록 하려면 [Set-OwaMailboxPolicy](/powershell/module/exchange/client-access/set-owamailboxpolicy?view=exchange-ps)를 사용하여 *IRMEnabled* 매개 변수를 *$false*로 설정합니다.
 
 
 ## <a name="next-steps"></a>다음 단계
@@ -112,6 +112,6 @@ Azure Rights Management 서비스가 조직에 활성화되면, [Azure Informati
 
 예를 들어, 사용자가 파일에 정보 보호를 적용하기 쉽도록 [템플릿](configure-policy-templates.md)을 사용하고, [Rights Management 커넥터](deploy-rms-connector.md)를 설치하여 Azure Rights Management를 사용할 온-프레미스 서버를 연결하며, 모든 디바이스에서 모든 파일 형식을 보호하도록 지원하는 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)를 배포할 수 있습니다. 
 
-Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정보 권한 관리) 기능을 사용하려면 추가 구성이 필요합니다. 사용자 응용 프로그램이 Rights Management Service에서 작동하는 방식에 대한 자세한 내용은 [응용 프로그램에서 Azure Rights Management Service를 지원하는 방법](applications-support.md)을 참조하세요.
+Exchange Online, SharePoint Online 등의 Office 서비스에서 해당 IRM(정보 권한 관리) 기능을 사용하려면 추가 구성이 필요합니다. 사용자 애플리케이션이 Rights Management Service에서 작동하는 방식에 대한 자세한 내용은 [애플리케이션에서 Azure Rights Management Service를 지원하는 방법](applications-support.md)을 참조하세요.
 
 

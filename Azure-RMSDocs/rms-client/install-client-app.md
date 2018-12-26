@@ -50,12 +50,12 @@ ms.locfileid: "53305229"
 
     - 컴퓨터에서 Office 2010를 실행하는 경우 컴퓨터를 다시 시작하고 마지막 단계에서 다음 섹션으로 이동합니다.    
         
-    - 기타 버전의 Office에서는 모든 Office 응용 프로그램 및 파일 탐색기의 모든 인스턴스를 다시 시작합니다. 이제 설치가 완료되었으며 클라이언트를 사용하여 문서와 메일에 레이블을 지정하고 보호할 수 있습니다.    
+    - 기타 버전의 Office에서는 모든 Office 애플리케이션 및 파일 탐색기의 모든 인스턴스를 다시 시작합니다. 이제 설치가 완료되었으며 클라이언트를 사용하여 문서와 메일에 레이블을 지정하고 보호할 수 있습니다.    
 
 ### <a name="installing-the-azure-information-protection-client-with-office-2010"></a>Office 2010과 함께 Azure Information Protection 클라이언트 설치    
 앞의 지침에 따라 Azure Information Protection 클라이언트를 설치한 후 다음을 수행합니다.    
 
-1. Microsoft Word를 엽니다. Azure Information Protection 클라이언트 설치 후 Office 2010 응용 프로그램을 처음으로 실행하는 경우 **Microsoft Azure Information Protection** 대화 상자가 표시됩니다. 이 대화 상자에는 로그인 프로세스를 완료하려면 관리자 자격 증명이 필요하다고 나옵니다.
+1. Microsoft Word를 엽니다. Azure Information Protection 클라이언트 설치 후 Office 2010 애플리케이션을 처음으로 실행하는 경우 **Microsoft Azure Information Protection** 대화 상자가 표시됩니다. 이 대화 상자에는 로그인 프로세스를 완료하려면 관리자 자격 증명이 필요하다고 나옵니다.
 
 2. **Microsoft Azure Information Protection** 대화 상자에서 **확인**을 클릭합니다.
 

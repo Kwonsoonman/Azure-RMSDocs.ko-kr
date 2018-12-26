@@ -193,7 +193,7 @@ ObjectID에 의한 검색이 없습니다. 그러나 `-UserEmail` 매개 변수�
 
 - RMS 클라이언트: %localappdata%\Microsoft\MSIPC\msip\Logs
 
-또한 Azure Information Protection 클라이언트는 이 개인 데이터를 로컬 Windows 이벤트 로그 **응용 프로그램 및 서비스 로그** > **Azure Information Protection**에 기록합니다.
+또한 Azure Information Protection 클라이언트는 이 개인 데이터를 로컬 Windows 이벤트 로그 **애플리케이션 및 서비스 로그** > **Azure Information Protection**에 기록합니다.
 
 Azure Information Protection 클라이언트가 스캐너를 실행할 경우, 개인 데이터는 스캐너를 실행하는 Windows Server 컴퓨터의 %localappdata%\Microsoft\MSIP\Scanner\Reports에 저장됩니다.
 

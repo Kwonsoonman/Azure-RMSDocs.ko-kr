@@ -1,6 +1,6 @@
 ---
 title: 개념 - 정책 API 프로필 개체
-description: 이 문서는 응용 프로그램 초기화 중에 생성된 Policy 프로필 개체의 개념을 이해하는 데 도움이 됩니다.
+description: 이 문서는 애플리케이션 초기화 중에 생성된 Policy 프로필 개체의 개념을 이해하는 데 도움이 됩니다.
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: b229148c3028f4478f83cbbc928e19666c2f44b5
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47445430"
@@ -29,7 +29,7 @@ ms.locfileid: "47445430"
 - `bool useInMemoryStorage`: 모든 상태가 메모리(디스크가 아닌)에 저장되어야 하는지 여부를 정의합니다.
 - `std::shared_ptr<mip::AuthDelegate> authDelegate`: `mip::AuthDelegate` 클래스의 공유 포인터입니다. 
 - `std::shared_ptr<mip::PolicyProfile::Observer> observer`: `PolicyProfile::Observer` 구현에 대한 공유 포인터입니다.
-- `mip::ApplicationInfo applicationInfo`: 개체입니다. SDK를 사용 중인 응용 프로그램에 관한 정보를 정의하는 데 사용됩니다.
+- `mip::ApplicationInfo applicationInfo`: 개체입니다. SDK를 사용 중인 애플리케이션에 관한 정보를 정의하는 데 사용됩니다.
 
 아래 두 예제에서는 메모리 내뿐만 아니라 상태 저장소에 로컬 저장소를 사용하여 profileSettings 개체를 만드는 방법을 보여 줍니다. 둘 다 `authDelegateImpl` 개체가 이미 생성되었다고 가정합니다.
 

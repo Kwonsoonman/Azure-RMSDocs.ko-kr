@@ -1,6 +1,6 @@
 ---
 title: 빠른 시작 - MIP(Microsoft Information Protection) SDK C++ 클라이언트 초기화
-description: MIP(Microsoft Information Protection) SDK 클라이언트 응용 프로그램의 초기화 논리를 쓰는 방법을 보여 주는 빠른 시작입니다.
+description: MIP(Microsoft Information Protection) SDK 클라이언트 애플리케이션의 초기화 논리를 쓰는 방법을 보여 주는 빠른 시작입니다.
 author: BryanLa
 ms.service: information-protection
 ms.topic: quickstart
@@ -8,23 +8,23 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 578c5aa69faa986663ea6c164d94e5940580167d
 ms.sourcegitcommit: 76e1b7c0255700813590be62d94b19338bf6c201
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/08/2018
 ms.locfileid: "48866139"
 ---
-# <a name="quickstart-client-application-initialization-c"></a>빠른 시작: 클라이언트 응용 프로그램 초기화(C++)
+# <a name="quickstart-client-application-initialization-c"></a>빠른 시작: 클라이언트 애플리케이션 초기화(C++)
 
 이 빠른 시작은 런타임 시 MIP C++ SDK에 사용되는 클라이언트 초기화 패턴을 구현하는 방법을 보여 줍니다. 
 
 > [!NOTE]
-> 이 빠른 시작에 요약된 단계는 MIP 파일, 정책 또는 보호 API를 사용하는 모든 클라이언트 응용 프로그램에 필요합니다. 이 빠른 시작은 파일 API의 사용법을 보여 주지만, 정책 및 보호 API를 사용하여 클라이언트에 동일한 패턴을 적용할 수 있습니다. 이 빠른 시작 작업부터 시작하여 각 빠른 시작 작업이 이전 작업을 토대로 구축되므로 이후 빠른 시작 작업은 순차적으로 수행해야 합니다.
+> 이 빠른 시작에 요약된 단계는 MIP 파일, 정책 또는 보호 API를 사용하는 모든 클라이언트 애플리케이션에 필요합니다. 이 빠른 시작은 파일 API의 사용법을 보여 주지만, 정책 및 보호 API를 사용하여 클라이언트에 동일한 패턴을 적용할 수 있습니다. 이 빠른 시작 작업부터 시작하여 각 빠른 시작 작업이 이전 작업을 토대로 구축되므로 이후 빠른 시작 작업은 순차적으로 수행해야 합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
 다음 작업을 아직 완료하지 않은 경우 먼저 수행합니다.
 
-- [MIP(Microsoft Information Protection) SDK 설정 및 구성](setup-configure-mip.md)의 단계를 완료합니다. 이 “클라이언트 응용 프로그램 초기화” 빠른 시작을 위해서는 먼저 SDK 설정 및 구성을 적절히 진행해야 합니다.
+- [MIP(Microsoft Information Protection) SDK 설정 및 구성](setup-configure-mip.md)의 단계를 완료합니다. 이 “클라이언트 애플리케이션 초기화” 빠른 시작을 위해서는 먼저 SDK 설정 및 구성을 적절히 진행해야 합니다.
 - 필요할 경우 다음을 선택합니다.
   - [프로필 및 엔진 개체](concept-profile-engine-cpp.md)를 검토합니다. 프로필 및 엔진 개체는 MIP 파일/정책/보호 API를 사용하는 클라이언트에 필요한 유니버설 개념입니다. 
   - [인증 개념](concept-authentication-cpp.md)을 검토하여 SDK 및 클라이언트 응용 프로그램에서 인증 및 동의를 구현하는 방법을 알아봅니다.
@@ -36,7 +36,7 @@ ms.locfileid: "48866139"
 
 1. Visual Studio 2017을 열고 **파일** 메뉴, **새로 만들기**, **프로젝트**를 선택합니다. **새 프로젝트** 대화 상자에서 다음을 수행합니다.
    - 왼쪽 창의 **설치됨**, **기타 언어**에서 **Visual C++** 를 선택합니다.
-   - 가운데 창에서 **Windows 콘솔 응용 프로그램**을 선택합니다.
+   - 가운데 창에서 **Windows 콘솔 애플리케이션**을 선택합니다.
    - 아래쪽 창에서 프로젝트 **이름**, **위치** 및 포함된 **솔루션 이름**을 적절하게 업데이트합니다.
    - 완료되면 오른쪽 아래의 **확인** 단추를 클릭합니다.
 
@@ -119,7 +119,7 @@ ms.locfileid: "48866139"
 
 ## <a name="implement-an-authentication-delegate"></a>인증 대리자 구현
 
-MIP SDK는 클라이언트 응용 프로그램과 인증 작업을 공유하는 메커니즘을 제공하는 클래스 확장성을 사용하여 인증을 구현합니다. 클라이언트는 적합한 OAuth2 액세스 토큰을 획득한 후 런타임에 MIP SDK에 제공해야 합니다. 
+MIP SDK는 클라이언트 애플리케이션과 인증 작업을 공유하는 메커니즘을 제공하는 클래스 확장성을 사용하여 인증을 구현합니다. 클라이언트는 적합한 OAuth2 액세스 토큰을 획득한 후 런타임에 MIP SDK에 제공해야 합니다. 
 
 이제 SDK의 `mip::AuthDelegate` 클래스를 확장하고 `mip::AuthDelegate::AcquireOAuth2Token()` 순수 가상 함수를 재정의/구현하여 인증 대리자를 구현합니다. 인증 대리자는 인스턴스화된 후 나중에 파일 프로필 및 파일 엔진 개체에서 사용됩니다.
 
@@ -312,13 +312,13 @@ MIP SDK는 클라이언트 응용 프로그램과 인증 작업을 공유하는 
 
    | 자리 표시자 | 값 | 예제 |
    |:----------- |:----- |:--------|
-   | \<application-id\> | “MIP SDK 설정 및 구성”에 등록된 응용 프로그램에 할당된 Azure AD 응용 프로그램 ID입니다 (2개 인스턴스).  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
-   | \<friendly-name\> | 응용 프로그램의 사용자 정의 이름입니다. | AppInitialization |
+   | \<application-id\> | “MIP SDK 설정 및 구성”에 등록된 애플리케이션에 할당된 Azure AD 애플리케이션 ID입니다 (2개 인스턴스).  | 0edbblll-8773-44de-b87c-b8c6276d41eb |
+   | \<friendly-name\> | 애플리케이션의 사용자 정의 이름입니다. | AppInitialization |
    | \<engine-account\> | 엔진의 ID에 사용되는 계정입니다. 토큰을 확보하는 동안 사용자 계정으로 인증하는 경우 이 값과 일치해야 합니다. | user1@tenant.onmicrosoft.com |
    | \<engine-state\> | 엔진과 연결될 사용자 정의 상태입니다. | MyAppState |
 
 
-4. 이제 응용 프로그램의 최종 빌드를 수행하고 오류를 해결합니다. 코드가 성공적으로 빌드되지만, 다음 빠른 시작을 완료할 때까지 올바르게 실행되지 않습니다. 응용 프로그램을 실행하는 경우 다음과 유사한 출력이 표시됩니다. 다음 빠른 시작을 완료할 때까지 제공할 액세스 토큰은 없습니다.
+4. 이제 애플리케이션의 최종 빌드를 수행하고 오류를 해결합니다. 코드가 성공적으로 빌드되지만, 다음 빠른 시작을 완료할 때까지 올바르게 실행되지 않습니다. 애플리케이션을 실행하는 경우 다음과 유사한 출력이 표시됩니다. 다음 빠른 시작을 완료할 때까지 제공할 액세스 토큰은 없습니다.
 
    ```console
    Run the PowerShell script to generate an access token using the following values, then copy/paste it below:

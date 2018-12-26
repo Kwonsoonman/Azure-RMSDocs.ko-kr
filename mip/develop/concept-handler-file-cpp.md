@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 6b2916a3937892353f4389a59b5e48356deda603
 ms.sourcegitcommit: 823a14784f4b34288f221e3b3cb41bbd1d5ef3a6
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/29/2018
 ms.locfileid: "47453370"
@@ -67,7 +67,7 @@ auto handler = createFileHandlerFuture.get();
 
 ### <a name="metadata-requirements"></a>메타데이터 요구 사항
 
-파일에서 메타데이터를 읽고 응용 프로그램에서 사용할 수 있는 항목으로 변환하기 위한 몇 가지 요구 사항이 있습니다.
+파일에서 메타데이터를 읽고 애플리케이션에서 사용할 수 있는 항목으로 변환하기 위한 몇 가지 요구 사항이 있습니다.
 
 - 읽을 레이블이 O365 서비스에 여전히 존재해야 합니다. 완전히 삭제된 경우 SDK는 해당 레이블에 대한 정보를 얻지 못하고 오류를 반환합니다.
 - 파일 메타데이터가 그대로 유지되어야 합니다. 이 메타데이터에는 다음이 포함됩니다.
@@ -87,7 +87,7 @@ handler->GetLabelAsync(loadPromise);
 auto label = loadFuture.get();
 ```
 
-레이블 데이터는 `label` 개체에서 읽고 응용 프로그램의 다른 구성 요소 또는 기능에 전달할 수 있습니다.
+레이블 데이터는 `label` 개체에서 읽고 애플리케이션의 다른 구성 요소 또는 기능에 전달할 수 있습니다.
 
 ***
 

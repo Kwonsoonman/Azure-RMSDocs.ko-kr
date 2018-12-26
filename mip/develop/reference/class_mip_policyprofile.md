@@ -8,13 +8,13 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 387e28780cb0ef02d56050f534d4783fdebc286e
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446892"
 ---
 # <a name="class-mippolicyprofile"></a>클래스 mip::PolicyProfile 
-[PolicyProfile](class_mip_policyprofile.md) 클래스는 Microsoft Information Protection 작업을 사용하기 위한 루트 클래스입니다. 일반적인 응용 프로그램은 하나의 [PolicyProfile](class_mip_policyprofile.md)만 필요하지만 필요한 경우 여러 프로필을 만들 수 있습니다.
+[PolicyProfile](class_mip_policyprofile.md) 클래스는 Microsoft Information Protection 작업을 사용하기 위한 루트 클래스입니다. 일반적인 애플리케이션은 하나의 [PolicyProfile](class_mip_policyprofile.md)만 필요하지만 필요한 경우 여러 프로필을 만들 수 있습니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                

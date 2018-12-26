@@ -1,6 +1,6 @@
 ---
 title: Office 앱 및 서비스가 AIP에서 Azure RMS를 지원하는 방법
-description: '최종 사용자 Office 응용 프로그램(예: Word 및 Outlook) 및 Office 서비스(예: Exchange 및 SharePoint)에서 AIP의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다.'
+description: '최종 사용자 Office 애플리케이션(예: Word 및 Outlook) 및 Office 서비스(예: Exchange 및 SharePoint)에서 AIP의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다.'
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -17,14 +17,14 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
 ms.locfileid: "53173998"
 ---
-# <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 응용 프로그램 및 서비스에서 Azure Rights Management를 지원하는 방법 
+# <a name="how-office-applications-and-services-support-azure-rights-management"></a>Office 애플리케이션 및 서비스에서 Azure Rights Management를 지원하는 방법 
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-최종 사용자 Office 응용 프로그램 및 Office 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호할 수 있습니다. 이 Office 응용 프로그램은 Word, Excel, PowerPoint 및 Outlook입니다. Office 서비스는 Exchange 및 SharePoint입니다. Azure Rights Management 서비스를 지원하는 Office 구성에서 종종 **IRM(정보 권한 관리)** 이라는 용어를 사용합니다.
+최종 사용자 Office 애플리케이션 및 Office 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호할 수 있습니다. 이 Office 애플리케이션은 Word, Excel, PowerPoint 및 Outlook입니다. Office 서비스는 Exchange 및 SharePoint입니다. Azure Rights Management 서비스를 지원하는 Office 구성에서 종종 **IRM(정보 권한 관리)** 이라는 용어를 사용합니다.
 
 ## <a name="office-applications-word-excel-powerpoint-outlook"></a>Office 응용 프로그램: Word, Excel, PowerPoint, Outlook
-이러한 응용 프로그램은 Azure Rights Management를 기본적으로 지원하며 사용자가 저장된 문서 또는 전송할 메일 메시지에 보호를 적용할 수 있도록 합니다. 사용자는 보호를 적용하는 [템플릿](configure-policy-templates.md)을 적용할 수 있습니다. 또는 Word, Excel 및 PowerPoint의 경우 액세스, 권한 및 사용 제한을 위해 사용자 지정된 설정을 선택할 수 있습니다.
+이러한 애플리케이션은 Azure Rights Management를 기본적으로 지원하며 사용자가 저장된 문서 또는 전송할 메일 메시지에 보호를 적용할 수 있도록 합니다. 사용자는 보호를 적용하는 [템플릿](configure-policy-templates.md)을 적용할 수 있습니다. 또는 Word, Excel 및 PowerPoint의 경우 액세스, 권한 및 사용 제한을 위해 사용자 지정된 설정을 선택할 수 있습니다.
 
 예를 들어 조직의 사용자만 액세스할 수 있도록 Word 문서를 구성할 수 있습니다. 또는 Excel 스프레드시트를 편집할 수 있는지, 읽기 전용으로 제한되는지, 아니면 인쇄되지 못하게 방지되는지 제어합니다. 시간이 중요한 파일의 경우에는 파일에 더 이상 액세스할 수 없는 만료 시간을 구성할 수 있습니다. 이 구성은 사용자가 직접 만들거나 보호 템플릿을 적용하여 만들 수 있습니다. Outlook에서는 사용자가 **전달 금지** 옵션을 선택하여 데이터 유출을 방지할 수도 있습니다.
 
@@ -85,7 +85,7 @@ SharePoint Server를 사용하는 경우에 Azure Rights Management 커넥터를
 > 
 > - 보호된 PDF 파일에 대한 .ppdf 파일 이름 확장명을 가진 파일은 지원되지 않습니다. 보호된 PDF 문서를 보는 방법에 대한 자세한 내용은 [Microsoft Information Protection에 대한 보호된 PDF reader](./rms-client/protected-pdf-readers.md)를 참조하세요.
 > 
-> - 두 명 이상의 사용자가 동시에 문서를 편집하는 경우 공동 작성이 지원되지 않습니다. IRM으로 보호되는 라이브러리의 문서를 편집하려면 먼저 문서를 체크 아웃하여 다운로드한 후 Office 응용 프로그램에서 편집해야 합니다. 따라서 한 번에 한 사용자만 문서를 편집할 수 있습니다.
+> - 두 명 이상의 사용자가 동시에 문서를 편집하는 경우 공동 작성이 지원되지 않습니다. IRM으로 보호되는 라이브러리의 문서를 편집하려면 먼저 문서를 체크 아웃하여 다운로드한 후 Office 애플리케이션에서 편집해야 합니다. 따라서 한 번에 한 사용자만 문서를 편집할 수 있습니다.
 
 IRM으로 보호되지 않는 라이브러리의 경우 SharePoint 또는 OneDrive에 업로드하는 파일을 보호하면 이 파일로 작동하지 않는 것은 다음과 같습니다: 공동 작성, Office Online, 검색, 문서 미리 보기, 썸네일, eDiscovery 및 DLP(데이터 손실 방지).
 
@@ -104,6 +104,6 @@ IRM에 대해 SharePoint를 구성할 준비가 된 경우:
 
 Office 365를 사용하는 경우 Office 365의 파일 보호에 대해 권장되는 기능을 제공하는 [Office 365의 파일 보호 솔루션](/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365fileprotect)을 검토하는 데 관심이 있을 수 있습니다.
 
-다른 응용 프로그램과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [응용 프로그램이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
+다른 애플리케이션과 서비스에서 Azure Information Protection의 Azure Rights Management 서비스를 지원하는 방식을 보려면 [애플리케이션이 Azure Rights Management 서비스를 지원하는 방식](applications-support.md)을 참조하세요.
 
-이러한 응용 프로그램 및 서비스의 구성을 포함한 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)을 참조하세요.
+이러한 애플리케이션 및 서비스의 구성을 포함한 배포를 시작할 준비가 되면 [Azure Information Protection 배포 로드맵](deployment-roadmap.md)을 참조하세요.

@@ -1,5 +1,5 @@
 ---
-title: 응용 프로그램 개발 - AIP
+title: 애플리케이션 개발 - AIP
 description: AIP를 사용하여 문서 보호를 구현하는 기본적인 콘솔 앱에 대한 지침을 제공합니다.
 keywords: ''
 author: lleonard-msft
@@ -19,9 +19,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/07/2018
 ms.locfileid: "44148735"
 ---
-# <a name="developing-your-application"></a>응용 프로그램 배포
+# <a name="developing-your-application"></a>애플리케이션 배포
 
-이 예에서는 AIP(Azure Information Protection) 서비스와 상호 작용하는 간단한 콘솔 응용 프로그램을 빌드합니다.  이 응용 프로그램은 보호할 문서의 경로를 입력으로 사용하며, 애드혹 정책 또는 Azure 템플릿을 통해 문서를 보호합니다. 그리고 입력에 따라 올바른 정책을 적용하여 정보가 보호되는 문서를 생성합니다. 여기서 사용할 샘플 코드는 Github에서 제공되는 [Azure IP 테스트 응용 프로그램](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)입니다.
+이 예에서는 AIP(Azure Information Protection) 서비스와 상호 작용하는 간단한 콘솔 애플리케이션을 빌드합니다.  이 응용 프로그램은 보호할 문서의 경로를 입력으로 사용하며, 애드혹 정책 또는 Azure 템플릿을 통해 문서를 보호합니다. 그리고 입력에 따라 올바른 정책을 적용하여 정보가 보호되는 문서를 생성합니다. 여기서 사용할 샘플 코드는 Github에서 제공되는 [Azure IP 테스트 애플리케이션](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)입니다.
 
 ## <a name="sample-app-prerequisites"></a>샘플 앱 필수 구성 요소
 - **운영 체제**: Windows 10, Windows 8, Windows 7, Windows Server 2008, Windows Server 2008 R2 또는 Windows Server 2012
@@ -30,7 +30,7 @@ ms.locfileid: "44148735"
 
 ## <a name="setting-up-your-azure-configuration"></a>Azure 구성 설정
 
-이 앱용으로 Azure를 설정하려면 테넌트 ID, 대칭 키 및 응용 프로그램 계정 ID를 만들어야 합니다.
+이 앱용으로 Azure를 설정하려면 테넌트 ID, 대칭 키 및 애플리케이션 계정 ID를 만들어야 합니다.
 
 ### <a name="azure-ad-tenant-configuration"></a>Azure AD 테넌트 구성
 
@@ -62,17 +62,17 @@ Azure Information Protection용으로 Azure AD 환경을 구성하려면 [Azure 
 - `Connect-MsolService`를 실행하여 할당된 사용자 자격 증명으로 온라인 서비스에 연결합니다.
 - `New-MsolServicePrincipal`을 실행하여 새 서비스 주체를 만듭니다.
 - 서비스 주체의 이름을 입력하고
-> 나중에 사용할 수 있도록 대칭 키와 응용 프로그램 계정 ID를 기록합니다.
+> 나중에 사용할 수 있도록 대칭 키와 애플리케이션 계정 ID를 기록합니다.
 
 *예제 출력*
 ![cmdlet 출력](../media/develop/output-of-NewMsolServicePrincipal.png)
 
-- 응용 프로그램 계정 ID, 대칭 키 및 테넌트 ID를 응용 프로그램 App.config 파일에 추가합니다.
+- 애플리케이션 계정 ID, 대칭 키 및 테넌트 ID를 애플리케이션 App.config 파일에 추가합니다.
 
 *예제 App.config 파일*
 ![cmdlet 출력](../media/develop/example-App.config-file.png)
 
-- Azure에서 응용 프로그램을 등록하면 *ClientID* 및 *RedirectUri*가 제공됩니다. Azure에서 응용 프로그램을 등록하고 *ClientID* 및 *RedirectUri*를 받는 방법에 대한 자세한 내용은 [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)을 참조하세요.
+- Azure에서 애플리케이션을 등록하면 *ClientID* 및 *RedirectUri*가 제공됩니다. Azure에서 애플리케이션을 등록하고 *ClientID* 및 *RedirectUri*를 받는 방법에 대한 자세한 내용은 [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)을 참조하세요.
 
 
 ## <a name="design-summary"></a>디자인 요약
@@ -82,16 +82,16 @@ Azure Information Protection용으로 Azure AD 환경을 구성하려면 [Azure 
 1. 사용자가 다음을 수행합니다.
   - 보호할 파일의 경로를 입력합니다.
   - 템플릿을 선택하거나 애드혹 정책을 만듭니다.
-2. 응용 프로그램이 AIP에 인증을 요청합니다.
+2. 애플리케이션이 AIP에 인증을 요청합니다.
 3. AIP가 인증을 확인합니다.
-4. 응용 프로그램이 AIP에서 템플릿을 요청합니다.
+4. 애플리케이션이 AIP에서 템플릿을 요청합니다.
 5. AIP가 미리 정의된 템플릿을 반환합니다.
-6. 응용 프로그램이 지정된 위치를 사용하여 지정한 파일을 찾습니다.
-7. 응용 프로그램이 AIP 보호 정책을 파일에 적용합니다.
+6. 애플리케이션이 지정된 위치를 사용하여 지정한 파일을 찾습니다.
+7. 애플리케이션이 AIP 보호 정책을 파일에 적용합니다.
 
 ## <a name="how-the-code-works"></a>코드 작동 방식
 
-Azure IP 테스트 샘플에서는 Iprotect.cs 파일을 사용하여 솔루션이 시작됩니다. 이 파일은 C# 콘솔 응용 프로그램이며, 다른 AIP 지원 응용 프로그램과 마찬가지로 `main()` 메서드에 나와 있는 *MSIPC.dll*을 먼저 로드합니다.
+Azure IP 테스트 샘플에서는 Iprotect.cs 파일을 사용하여 솔루션이 시작됩니다. 이 파일은 C# 콘솔 애플리케이션이며, 다른 AIP 지원 애플리케이션과 마찬가지로 `main()` 메서드에 나와 있는 *MSIPC.dll*을 먼저 로드합니다.
 
     //Loads MSIPC.dll
     SafeNativeMethods.IpcInitialize();
@@ -105,7 +105,7 @@ Azure에 연결하는 데 필요한 매개 변수를 로드합니다.
     symmetricKeyCred.Base64Key = ConfigurationManager.AppSettings["Base64Key"];
     symmetricKeyCred.BposTenantId = ConfigurationManager.AppSettings["BposTenantId"];
 
-콘솔 응용 프로그램에서 파일 경로를 입력하면 응용 프로그램은 문서가 이미 암호화되어 있는지를 확인합니다. 이때 **SafeFileApiNativeMethods** 클래스의 메서드가 사용됩니다.
+콘솔 애플리케이션에서 파일 경로를 입력하면 애플리케이션은 문서가 이미 암호화되어 있는지를 확인합니다. 이때 **SafeFileApiNativeMethods** 클래스의 메서드가 사용됩니다.
 
     var checkEncryptionStatus = SafeFileApiNativeMethods.IpcfIsFileEncrypted(filePath);
 
@@ -170,7 +170,7 @@ Azure에 연결하는 데 필요한 매개 변수를 로드합니다.
         }
       }
 
-애드혹 정책을 선택하는 경우 응용 프로그램 사용자가 권한을 제공할 사용자의 전자 메일을 입력해야 합니다. 이 섹션에서는 **IpcCreateLicenseFromScratch()** 메서드를 사용하고 템플릿에 새 정책을 적용하여 라이선스를 만듭니다.
+애드혹 정책을 선택하는 경우 애플리케이션 사용자가 권한을 제공할 사용자의 전자 메일을 입력해야 합니다. 이 섹션에서는 **IpcCreateLicenseFromScratch()** 메서드를 사용하고 템플릿에 새 정책을 적용하여 라이선스를 만듭니다.
 
     if (issuerDisplayName.Trim() != "")
     {
@@ -210,7 +210,7 @@ Azure에 연결하는 데 필요한 매개 변수를 로드합니다.
 
 ## <a name="user-interaction-example"></a>사용자 상호 작용 예제
 
-모든 항목을 빌드하여 실행하면 다음과 같은 응용 프로그램 출력이 표시됩니다.
+모든 항목을 빌드하여 실행하면 다음과 같은 애플리케이션 출력이 표시됩니다.
 
 1.암호화 방법을 선택하라는 메시지가 표시됩니다.
 ![앱 출력 - 1단계](../media/develop/app-output-1.png)

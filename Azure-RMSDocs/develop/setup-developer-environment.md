@@ -25,9 +25,9 @@ ms.locfileid: "44148599"
 
 |플랫폼 | 설명|
 |------|------------|
-|[OWA(Outlook Web Access)](android-sdk.md)| Android 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.|
-|[Linux](linux-setup.md)|이제 여러 버전의 Linux 운영 체제에서 MS RMS SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.|
-|[iOS 및 OSX](ios-sdk.md)|iOS 및 OS X 응용 프로그램에서 MS RMS SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.|
-|[Windows Phone](windows-phone-apps.md)|Windows Phone 응용 프로그램에서 MS RMS SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.|
-|[Windows 스토어](winrt-sdk.md)|Windows 스토어 응용 프로그램에서 MS RMS SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.|
+|[OWA(Outlook Web Access)](android-sdk.md)| Android 애플리케이션에서 Microsoft Rights Management SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.|
+|[Linux](linux-setup.md)|이제 여러 버전의 Linux 운영 체제에서 MS RMS SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.|
+|[iOS 및 OSX](ios-sdk.md)|iOS 및 OS X 애플리케이션에서 MS RMS SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.|
+|[Windows Phone](windows-phone-apps.md)|Windows Phone 애플리케이션에서 MS RMS SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.|
+|[Windows 스토어](winrt-sdk.md)|Windows 스토어 애플리케이션에서 MS RMS SDK 4.2를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.|
 

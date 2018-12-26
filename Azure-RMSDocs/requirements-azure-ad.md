@@ -84,7 +84,7 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
         이 시나리오에 대한 자세한 내용은 Office 블로그에서 [Office 365로 작동 - 이제 간소화된 ID 프로그램](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)을 참조하세요.
 
-Rights Management 커넥터와 Azure Information Protection 스캐너는 MFA를 지원하지 않습니다. 커넥터 또는 스캐너를 배포하는 경우 다음 계정에 MFA가 필요하지 않아야 합니다.
+Rights Management 커넥터와 Azure Information Protection 스캐너는 MFA를 지원하지 않습니다. 커넥터 또는 스캐너를 배포하는 경우, 다음과 같은 계정에서는 MFA 설정이 요구되지 않습니다.
 
 - 커넥터를 설치하고 구성하는 계정
 

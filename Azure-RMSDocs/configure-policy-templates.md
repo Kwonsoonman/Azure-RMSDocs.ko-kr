@@ -52,9 +52,9 @@ Azure Information Protection의 구독 또는 Azure Rights Management 서비스�
 
 최근에 구독을 얻은 경우 기본 템플릿은 다음과 같은 이름으로 만들어집니다.
 
-- **Confidential \ All Employees** - 보호된 콘텐츠의 읽기 및 수정 권한이 있습니다.
+- 기밀\모든 직원 - 보호된 콘텐츠의 읽기 및 수정 권한이 있습니다..
 
-- **Highly Confidential \ All Employees** - 보호된 콘텐츠의 읽기 전용 권한이 있습니다.
+- 극비\모든 직원 - 보호된 콘텐츠의 읽기 전용 권한이 있습니다.
 
 최근에 구독을 얻은 경우 기본 템플릿은 다음과 같은 이름으로 만들어집니다.
 
@@ -63,7 +63,7 @@ Azure Information Protection의 구독 또는 Azure Rights Management 서비스�
 - **\<조직 이름> - 기밀 보기 전용** - 보호된 콘텐츠의 읽기 전용 권한이 있습니다. 
 
 Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸고 다시 구성할 수 있습니다.
-
+ 
 >[!NOTE]
 >**Azure Information Protection - 레이블** 블레이드에 기본 템플릿이 표시되지 않으면 레이블로 변환되었거나 레이블에 연결된 것입니다. 레이블은 템플릿으로 여전히 존재하지만 Azure Portal에서는 클라우드 키의 보호 설정을 포함하는 레이블 구성의 일부로 표시됩니다. [AADRM PowerShell 모듈](administer-powershell.md)에서 [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate)을 실행하여 항상 테넌트에 있는 템플릿을 확인할 수 있습니다.
 >

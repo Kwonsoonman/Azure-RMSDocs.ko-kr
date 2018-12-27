@@ -1,4 +1,4 @@
----
+﻿---
 title: Azure Information Protection 레이블에 대한 시각적 표시 구성 - AIP
 description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다.
 author: cabailey

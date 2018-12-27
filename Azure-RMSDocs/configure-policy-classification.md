@@ -29,7 +29,7 @@ ms.locfileid: "53023858"
 
 ![Azure Information Protection 보호 및 권장 사항](./media/info-protect-recommend-calloutsv2.png)
 
-이 예제에서는 사용자가 **Change now**(지금 변경)를 클릭하여 권장 레이블을 적용하거나, **Dismiss**(해제)를 선택하여 권장 사항을 재정의할 수 있습니다. 사용자가 권장 사항을 무시하도록 선택하고 다음에 문서가 열릴 때 조건이 계속 적용되는 경우 레이블 권장 사항이 다시 표시됩니다. 
+이 예제에서는 사용자가 **지금 변경**을 클릭하여 권장 레이블을 적용하거나, **해제**를 선택하여 권장 사항을 재정의할 수 있습니다. 사용자가 권장 사항을 무시하도록 선택하고 다음에 문서가 열릴 때 조건이 계속 적용되는 경우 레이블 권장 사항이 다시 표시됩니다. 
 
 > [!IMPORTANT]
 >자동 분류 및 사용자 정의 권한에 대한 레이블을 구성하지 않습니다. 사용자 정의 권한 옵션은 사용자가 권한을 부여받아야 하는 사용자를 지정하도록 하는 [보호 설정](configure-policy-protection.md)입니다.
@@ -59,13 +59,13 @@ Azure Information Protection 클라이언트에서 사용자가 지정한 조건
 
 ## <a name="to-configure-recommended-or-automatic-classification-for-a-label"></a>레이블에 대한 권장 또는 자동 분류를 구성하려면
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다. 
+1. Azure Portal에 로그인이 되어 있지 않다면, 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 구성할 레이블을 선택합니다.
 
-3. **레이블** 블레이드의 **Configure conditions for automatically applying this label**(이 레이블을 자동으로 적용하기 위한 조건 구성) 섹션에서 **Add a new condition**(새 조건 추가)을 클릭합니다.
+3. **레이블** 블레이드의 **자동으로 이 레이블을 적용하기 위한 조건 구성** 섹션에서 **새 조건 추가**를 클릭합니다.
 
 4. **조건** 블레이드에서 미리 정의된 조건을 사용하려면 **정보 유형**을 선택하고, 사용자 고유의 조건을 지정하려면 **사용자 지정**을 선택합니다.
     - **정보 유형**의 경우: 사용 가능한 조건 목록에서 선택한 다음 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 선택합니다.
@@ -79,7 +79,7 @@ Azure Information Protection 클라이언트에서 사용자가 지정한 조건
         
         Azure Information Protection에서 선택한 정보 유형을 평가할 때 Office DLP 신뢰도 설정을 사용하지 않고 가장 낮은 신뢰도에 따라 일치시킵니다.
     
-    - **Custom**(사용자 지정)의 경우: 따옴표와 특수 문자를 포함하여 일치시킬 이름 및 구를 지정합니다. 그런 다음 정규식으로 일치시킬지 여부, 대/소문자를 구분할지 여부, 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 지정합니다.
+    - **사용자 지정**의 경우: 따옴표와 특수 문자를 포함하여 일치시킬 이름 및 구를 지정합니다. 그런 다음 정규식으로 일치시킬지 여부, 대/소문자를 구분할지 여부, 최소 발생 횟수 및 해당 발생에 발생 횟수에 포함할 고유 값이 있어야 하는지 여부를 지정합니다.
         
         정규식은 Office 365 정규식(regex) 패턴을 사용합니다. 사용자 지정 조건에 대한 정규식을 지정하려면 Boost에서 다음 특정 버전의 [Perl Regular Expression Syntax](https://www.boost.org/doc/libs/1_37_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html)(Perl 정규식 구문)를 참조하세요.
         

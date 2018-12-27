@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 06d8bb26a8e3026562006d68d4ae8d1630eba81c
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446331"
@@ -28,11 +28,11 @@ C++에 대한 MIP SDK에는 다음이 포함됩니다.
 | 클래스 이름 | 설명 |
 | :----------|:------------|
 [AccessDeniedError](class_mip_accessdeniederror.md)  |  사용자가 콘텐츠에 액세스할 수 없습니다. 예: 권한 없음, 콘텐츠가 취소됨
-[작업](class_mip_action.md)  |  동작에 대한 인터페이스입니다. 각 작업은 응용 프로그램이 레이블(정책에 정의된 대로)을 적용하는 데 필요한 단계로 변환됩니다.
+[작업](class_mip_action.md)  |  동작에 대한 인터페이스입니다. 각 작업은 애플리케이션이 레이블(정책에 정의된 대로)을 적용하는 데 필요한 단계로 변환됩니다.
 [AddContentFooterAction](class_mip_addcontentfooteraction.md)  |  문서에 콘텐츠 바닥글을 추가하도록 지정하는 동작 클래스입니다.
 [AddContentHeaderAction](class_mip_addcontentheaderaction.md)  |  콘텐츠 헤더를 추가하도록 지정하는 동작 클래스입니다.
 [AddWatermarkAction](class_mip_addwatermarkaction.md)  |  워터마크를 추가하도록 지정하는 동작 클래스입니다.
-[ApplyLabelAction](class_mip_applylabelaction.md)  |  레이블 적용 동작에 따라 호출 응용 프로그램은 특정 레이블을 적용해야 합니다.
+[ApplyLabelAction](class_mip_applylabelaction.md)  |  레이블 적용 동작에 따라 호출 애플리케이션은 특정 레이블을 적용해야 합니다.
 [BadInputError](class_mip_badinputerror.md)  |  잘못된 입력 오류입니다. SDK API에 대한 입력이 잘못된 경우에 이 오류가 throw됩니다.
 [ClassificationResult](class_mip_classificationresult.md)  |  실행 상태에서 분류 호출의 결과를 포함하는 클래스입니다.
 [ConsentDelegate](class_consentdelegate.md)  |  동의 관련 작업에 대한 대리자입니다.
@@ -60,13 +60,13 @@ C++에 대한 MIP SDK에는 다음이 포함됩니다.
 [LoggerDelegate](class_mip_loggerdelegate.md)  |  MIP SDK 로거에 대한 인터페이스를 정의하는 클래스입니다.
 [MetadataAction](class_mip_metadataaction.md)  |  콘텐츠에 메타데이터 정보를 추가하는 [동작](class_mip_action.md)입니다.
 [NetworkError](class_mip_networkerror.md)  |  네트워킹 오류입니다. 서비스 엔드포인트에 대한 네트워크 호출을 수행할 때 예기치 않은 동작에 의해 발생했습니다.
-[NotSupportedError](class_mip_notsupportederror.md)  |  응용 프로그램에서 요청한 작업이 SDK에서 지원되지 않습니다.
+[NotSupportedError](class_mip_notsupportederror.md)  |  애플리케이션에서 요청한 작업이 SDK에서 지원되지 않습니다.
 [PolicyEngine::Settings](class_mip_policyengine_settings.md)  |  [PolicyEngine](class_mip_policyengine.md)과 연결된 설정을 정의합니다.
 [PolicyEngine](class_mip_policyengine.md)  |  이 클래스는 모든 엔진 함수에 대한 인터페이스를 제공합니다.
 [PolicyHandler](class_mip_policyhandler.md)  |  이 클래스는 파일에 대한 모든 정책 처리기 함수의 인터페이스를 제공합니다.
 [PolicyProfile::Observer](class_mip_policyprofile_observer.md)  |  클라이언트가 프로필 관련 이벤트에 대한 알림을 가져올 수 있는 [Observer](class_mip_policyprofile_observer.md) 인터페이스입니다.
 [PolicyProfile::Settings](class_mip_policyprofile_settings.md)  |  만드는 동안 그리고 수명 기간 내내 [PolicyProfile](class_mip_policyprofile.md)에서 사용되는 [설정](class_mip_policyprofile_settings.md)입니다.
-[PolicyProfile](class_mip_policyprofile.md)  |  [PolicyProfile](class_mip_policyprofile.md) 클래스는 Microsoft Information Protection 작업을 사용하기 위한 루트 클래스입니다. 일반적인 응용 프로그램은 하나의 [PolicyProfile](class_mip_policyprofile.md)만 필요하지만 필요한 경우 여러 프로필을 만들 수 있습니다.
+[PolicyProfile](class_mip_policyprofile.md)  |  [PolicyProfile](class_mip_policyprofile.md) 클래스는 Microsoft Information Protection 작업을 사용하기 위한 루트 클래스입니다. 일반적인 애플리케이션은 하나의 [PolicyProfile](class_mip_policyprofile.md)만 필요하지만 필요한 경우 여러 프로필을 만들 수 있습니다.
 [PolicySyncError](class_mip_policysyncerror.md)  |  정책 데이터를 동기화하려는 시도가 실패했습니다.
 [PrivilegedRequiredError](class_mip_privilegedrequirederror.md)  |  현재 레이블이 권한 있는 작업(관리자 작업에 해당)으로 할당되었으므로 재정의될 수 없습니다.
 [ProtectAdhocAction](class_mip_protectadhocaction.md)  |  문서에 임시 보호를 추가하도록 지정하는 동작 클래스입니다.

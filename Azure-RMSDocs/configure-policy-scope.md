@@ -37,13 +37,13 @@ Azure Information Protection 클라이언트를 지원하는 Office 데스크톱
 
 Azure Information Protection용 범위 지정 정책을 구성하려면 다음을 수행합니다.
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
+1. Azure Portal에 로그인이 되어 있지 않다면, 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
 
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **분류** > **정책** 메뉴 옵션에서: **Azure Information Protection - 정책** 블레이드에서 **새 정책 추가**를 선택합니다. 그러면 이제 새 범위 지정 정책을 구성할 수 있는, 기존 전역 정책이 표시된 **정책** 블레이드를 볼 수 있습니다.
 
-3. Azure Portal에서 관리자에게만 표시되는 정책 이름과 설명을 지정합니다. 이름은 테넌트에서 고유해야 합니다. 그런 다음 **Specify which users/groups get this policy**(이 정책을 받을 사용자/그룹 지정)를 선택하고 이후 블레이드에서 이 정책을 적용할 사용자와 그룹을 검색하여 선택할 수 있습니다. 이 범위 지정 정책에서 구성하는 레이블과 설정은 해당 사용자에게만 적용됩니다.
+3. Azure Portal에서 관리자에게만 표시되는 정책 이름과 설명을 지정합니다. 이름은 테넌트에서 고유해야 합니다. 그런 다음 **이 정책이 적용될 사용자/그룹 지정**을 선택하고 이후 블레이드에서 이 정책을 적용할 사용자와 그룹을 검색하여 선택할 수 있습니다. 이 범위 지정 정책에서 구성하는 레이블과 설정은 해당 사용자에게만 적용됩니다.
     
     성능을 높이기 위해, 범위 지정 정책에 대한 그룹 멤버 자격은 [캐시](prepare.md#group-membership-caching-by-azure-information-protection)됩니다.
 

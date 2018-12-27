@@ -1,4 +1,4 @@
----
+﻿---
 title: Azure RMS 템플릿 새로 고침 - AIP
 description: Azure Rights Management 서비스를 사용하는 경우 사용자가 애플리케이션에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다.
 author: cabailey
@@ -90,7 +90,7 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 애플�
     >
     >**5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
-2.  다음 폴더와, 그 안의 모든 파일을 삭제합니다. **%localappdata%\Microsoft\MSIPC\Templates**
+2.  다음 위치의 **%localappdata%\Microsoft\MSIPC\Templates** 폴더와 그 안의 모든 파일을 삭제합니다. 
 
 3.  Office 애플리케이션과 파일 탐색기 인스턴스를 지금 시작합니다.
 

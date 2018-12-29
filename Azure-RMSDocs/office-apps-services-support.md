@@ -1,4 +1,4 @@
-﻿---
+---
 title: Office 앱 및 서비스가 AIP에서 Azure RMS를 지원하는 방법
 description: '최종 사용자 Office 애플리케이션(예: Word 및 Outlook) 및 Office 서비스(예: Exchange 및 SharePoint)에서 AIP의 Azure Rights Management 서비스를 사용하여 조직의 데이터를 보호하는 방법을 소개합니다.'
 author: cabailey

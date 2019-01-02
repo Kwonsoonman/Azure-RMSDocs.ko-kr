@@ -96,10 +96,10 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 |설정|값|
 |-------------------------------|---------------------------|
-|All documents and emails must have a label (applied automatically or by users)(모든 문서와 메일에 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨))|꺼짐|
-|Select the default label(기본 레이블 선택)|없음|
-|Users must provide justification to set a lower classification label, remove a label, or remove protection(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)|꺼짐|
-|For email messages with attachments, apply a label that matches the highest classification of those attachments(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용)|꺼짐|
+|모든 문서와 메일에는 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨)|꺼짐|
+|기본 레이블 선택|없음|
+|더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호 제거할 때 사용자가 근거를 제공해야 함|꺼짐|
+|첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최상위 분류와 일치하는 레이블 적용|꺼짐|
 |Azure Information Protection 클라이언트 "추가 정보" 웹 페이지에 대한 사용자 지정 URL 제공|비어 있음|
 
 
@@ -140,10 +140,10 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 |설정|값|
 |-------------------------------|---------------------------|
-|All documents and emails must have a label (applied automatically or by users)(모든 문서와 메일에 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨))|꺼짐|
-|Select the default label(기본 레이블 선택)|없음|
-|Users must provide justification to set a lower classification label, remove a label, or remove protection(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)|꺼짐|
-|For email messages with attachments, apply a label that matches the highest classification of those attachments(첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최고 분류와 일치하는 레이블 적용)|꺼짐|
+|모든 문서와 메일에는 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨)|꺼짐|
+|기본 레이블 선택|없음|
+|더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호 제거할 때 사용자가 근거를 제공해야 함|꺼짐|
+|첨부 파일이 있는 메일 메시지의 경우 해당 첨부 파일의 최상위 분류와 일치하는 레이블 적용|꺼짐|
 |Azure Information Protection 클라이언트 "추가 정보" 웹 페이지에 대한 사용자 지정 URL 제공|비어 있음|
 
 ## <a name="default-policy-before-march-21-2017"></a>2017년 3월 21일 이전의 기본 정책
@@ -178,9 +178,9 @@ Outlook에서만 이 레이블이 표시됩니다. Word, Excel, PowerPoint 또�
 
 |설정|값|
 |-------------------------------|---------------------------|
-|All documents and emails must have a label (applied automatically or by users)(모든 문서와 메일에 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨))|꺼짐|
-|Select the default label(기본 레이블 선택)|없음|
-|Users must provide justification to set a lower classification label, remove a label, or remove protection(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함)|꺼짐|
+|모든 문서와 메일에는 레이블이 있어야 함(자동으로 적용되거나 사용자에 의해 적용됨)|꺼짐|
+|기본 레이블 선택|없음|
+|더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호 제거할 때 사용자가 근거를 제공해야 함|꺼짐|
 |Azure Information Protection 클라이언트 "추가 정보" 웹 페이지에 대한 사용자 지정 URL 제공|비어 있음|
 
 

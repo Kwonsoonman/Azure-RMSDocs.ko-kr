@@ -1,4 +1,4 @@
-﻿---
+---
 title: '자습서: Azure Information Protection 정책 편집 및 새 레이블 만들기 - AIP'
 description: 조직을 위한 Microsoft Azure Information Protection 정책을 편집하는 소개 자습서로, 약 15분이면 완료할 수 있습니다.
 author: cabailey
@@ -258,7 +258,7 @@ Word에서 새 문서를 엽니다. Azure Information Protection 클라이언트
 
 2. 정책 설정을 기록해 둔 원래 값으로 되돌린 후 **저장**을 선택합니다. 
 
-3. 분류 > 레이블 메뉴 옵션의 Azure Information Protection - 레이블 블레이드에서 만든 재무 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택합니다.
+3. **분류** > **레이블** 메뉴 옵션의 **Azure Information Protection - 레이블** 블레이드에서 만든 **재무** 레이블에 대한 상황에 맞는 메뉴(**...**)를 선택합니다.
 
 4. **이 레이블 삭제**를 선택하고 확인하라는 메시지가 표시되면 **확인**을 선택합니다.
 

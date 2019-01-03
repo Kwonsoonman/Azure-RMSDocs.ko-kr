@@ -34,7 +34,7 @@ Azure 클래식 포털은 **2018년 1월 8일**에 사용 중지됩니다. 이 �
 |Azure 클래식 포털|Azure Portal에서 이 작업을 수행하는 방법
 |-----------|--------------------|
 |처음으로 구성 설정 액세스|1. [Azure Portal에 로그인합니다](configure-policy.md#signing-in-to-the-azure-portal).<br /><br />2. [Azure Information Protection 블레이드에 처음으로 액세스하려면](configure-policy.md#to-access-the-azure-information-protection-blade-for-the-first-time)의 지침을 따릅니다.
-|새 템플릿 만들기|보호를 적용하는 레이블을 만들고, **권한 설정**을 사용하여 권한, 만료 및 오프라인 액세스를 정의합니다. <br /><br />내부적으로 이 구성에서는 Rights Management 템플릿과 통합되는 서비스 및 응용 프로그램을 통해 액세스할 수 있는 새 사용자 지정 템플릿을 만듭니다.<br /><br />자세한 내용은 [새 템플릿 만들기](configure-policy-templates.md#to-create-a-new-template)를 참조하세요.
+|새 템플릿 만들기|보호를 적용하는 레이블을 만들고, **권한 설정**을 사용하여 권한, 만료 및 오프라인 액세스를 정의합니다. <br /><br />내부적으로 이 구성에서는 Rights Management 템플릿과 통합되는 서비스 및 애플리케이션을 통해 액세스할 수 있는 새 사용자 지정 템플릿을 만듭니다.<br /><br />자세한 내용은 [새 템플릿 만들기](configure-policy-templates.md#to-create-a-new-template)를 참조하세요.
 |템플릿 속성 편집: <br /><br />- 템플릿 이름 및 설명<br /><br />- 사용 권한, 콘텐츠 만료 및 오프라인 액세스 설정|아직 수행하지 않은 경우 [템플릿을 레이블로 변환](configure-policy-templates.md#to-convert-templates-to-labels)한 후 다음을 수행합니다<br /><br />1. 레이블 이름 및 설명을 변경합니다.<br /><br />2. 레이블의 보호 설정을 변경하여 권한, 만료 및 오프라인 액세스 설정을 업데이트합니다.<br /><br />자세한 내용은 [보호 설정을 적용하도록 레이블을 구성하려면](configure-policy-protection.md#to-configure-a-label-for-protection-settings)을 참조하세요.
 |템플릿 보관|레이블 상태를 **사용 안 함**으로 설정합니다.
 |범위 지정 템플릿 만들기|범위 지정 정책을 만들고 이 범위에서 보호를 적용하는 레이블을 만듭니다. <br /><br />자세한 내용은 [범위 지정 정책을 사용하여 특정 사용자용 Azure Information Protection 정책을 구성하는 방법](configure-policy-scope.md)을 참조하세요.

@@ -56,7 +56,7 @@ Add: MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_ActionId : 2266fbe8-a0d9-44
 Add: MSIP_Label_d7b93a40-4df3-47e4-b2fd-7862fc6b095c_ContentBits : 3
 ```
 
-`PolicyHandler`가 작업을 계산하고 `mip::Action` 중 `std::vector`를 반환합니다. 이 메타데이터를 파일이나 데이터에 적용하는 것은 응용 프로그램 개발자의 몫입니다.
+`PolicyHandler`가 작업을 계산하고 `mip::Action` 중 `std::vector`를 반환합니다. 이 메타데이터를 파일이나 데이터에 적용하는 것은 애플리케이션 개발자의 몫입니다.
 
 > [!NOTE]
 > 위의 예에서는 `mip::MetadataAction` 출력만 표시됩니다. 추가 작업 유형을 표시하는 예를 보려면 [정책 API 다운로드](https://aka.ms/mipsdkbins)를 사용하여 샘플 번들을 검토하세요.

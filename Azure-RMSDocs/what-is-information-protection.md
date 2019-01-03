@@ -38,19 +38,19 @@ Azure Information Protection 레이블을 사용하여 문서와 전자 메일�
 
 ## <a name="how-data-is-protected"></a>데이터를 보호하는 방법
 
-보호 기술에서는 *Azure Rights Management*(종종 Azure RMS로 축약됨)를 사용합니다. 이 기술은 다른 Microsoft 클라우드 서비스 및 응용 프로그램(Office 365, Azure Active Directory 등)과 통합되었습니다. 또한 기간 업무 응용 프로그램 및 소프트웨어 공급 업체의 정보 보호 솔루션이 온-프레미스에 있는지 아니면 클라우드에 있는지와 상관없이 해당 응용 프로그램 및 솔루션과 함께 사용할 수 있습니다.
+보호 기술에서는 *Azure Rights Management*(종종 Azure RMS로 축약됨)를 사용합니다. 이 기술은 다른 Microsoft 클라우드 서비스 및 애플리케이션(Office 365, Azure Active Directory 등)과 통합되었습니다. 또한 기간 업무 애플리케이션 및 소프트웨어 공급 업체의 정보 보호 솔루션이 온-프레미스에 있는지 아니면 클라우드에 있는지와 상관없이 해당 애플리케이션 및 솔루션과 함께 사용할 수 있습니다.
 
-이 보호 기술은 암호화, ID 및 권한 부여 정책을 사용합니다. 적용되는 레이블과 마찬가지로 Rights Management를 사용하여 적용된 보호 기능은 조직, 네트워크, 파일 서버, 응용 프로그램 내/외의 위치에 관계없이 문서와 전자 메일에 계속 적용됩니다. 이 정보 보호 솔루션은 데이터를 다른 사용자와 공유하는 경우에도 데이터에 대한 제어를 유지할 수 있도록 합니다.
+이 보호 기술은 암호화, ID 및 권한 부여 정책을 사용합니다. 적용되는 레이블과 마찬가지로 Rights Management를 사용하여 적용된 보호 기능은 조직, 네트워크, 파일 서버, 애플리케이션 내/외의 위치에 관계없이 문서와 전자 메일에 계속 적용됩니다. 이 정보 보호 솔루션은 데이터를 다른 사용자와 공유하는 경우에도 데이터에 대한 제어를 유지할 수 있도록 합니다.
 
 예를 들어 조직 내의 사용자만 액세스할 수 있도록 보고서 문서 또는 판매 예측 스프레드시트를 구성할 수도 있고 해당 문서의 편집 가능 여부를 제어하거나, 읽기 전용으로 제한하거나 문서 인쇄를 차단할 수도 있습니다. 마찬가지로 메일을 구성할 수 있으며 전체 회신 옵션 사용 또는 메일 전달을 차단할 수도 있습니다. 
 
-이러한 보호 설정은 레이블 구성의 일부가 될 수 있으므로 사용자는 단순히 레이블을 적용하여 문서와 전자 메일을 분류하고 보호할 수 있습니다. 그러나 보호를 지원하지만 레이블링을 지원하지 않는 응용 프로그램 및 서비스에서 동일한 보호 설정을 사용할 수도 있습니다. 이러한 응용 프로그램과 서비스의 경우 보호 설정은 *Rights Management 템플릿*으로 제공됩니다.
+이러한 보호 설정은 레이블 구성의 일부가 될 수 있으므로 사용자는 단순히 레이블을 적용하여 문서와 전자 메일을 분류하고 보호할 수 있습니다. 그러나 보호를 지원하지만 레이블링을 지원하지 않는 애플리케이션 및 서비스에서 동일한 보호 설정을 사용할 수도 있습니다. 이러한 애플리케이션과 서비스의 경우 보호 설정은 *Rights Management 템플릿*으로 제공됩니다.
 
 ### <a name="rights-management-templates"></a>Rights Management 템플릿
 
 Azure Rights Management 서비스를 활성화하는 즉시 조직 내 사용자에 대한 데이터 액세스를 제한하는 두 가지 기본 템플릿을 사용할 수 있습니다. 이러한 템플릿을 사용하여 즉시 조직에서 데이터가 누출되는 것을 방지할 수 있습니다. 또한 제한이 강화된 컨트롤을 적용하는 자체 보호 설정을 구성하여 이러한 기본 템플릿을 보완할 수도 있습니다.
 
-내부적으로 보호 설정이 포함된 Azure Information Protection에 대해 레이블을 만드는 경우 이 작업은 해당 Rights Management 템플릿을 만듭니다. 그런 다음 Azure Rights Management를 지원하는 응용 프로그램 및 서비스로 해당 템플릿을 사용할 수도 있습니다.
+내부적으로 보호 설정이 포함된 Azure Information Protection에 대해 레이블을 만드는 경우 이 작업은 해당 Rights Management 템플릿을 만듭니다. 그런 다음 Azure Rights Management를 지원하는 애플리케이션 및 서비스로 해당 템플릿을 사용할 수도 있습니다.
 
 예를 들어 Exchange 관리 센터에서 Exchange Online 메일 흐름 규칙을 구성하여 이들 템플릿을 사용할 수 있습니다.
 
@@ -60,7 +60,7 @@ Azure Rights Management 보호에 대한 자세한 내용은 [Azure Rights Manag
 
 ## <a name="integration-with-end-user-workflows-for-documents-and-emails"></a>문서 및 메일에 대한 최종 사용자 워크플로와 통합
 
-Azure Information Protection 클라이언트가 설치되면 Azure Information Protection은 최종 사용자의 기존 워크플로와 통합됩니다. 이 클라이언트는 Word에 Information Protection 표시줄이 표시된 첫 번째 그림에서 살펴본 대로 Office 응용 프로그램에 이 표시줄을 설치합니다. 동일한 Information Protection 표시줄이 Excel, PowerPoint 및 Outlook에 추가됩니다. 예를 들면 다음과 같습니다.
+Azure Information Protection 클라이언트가 설치되면 Azure Information Protection은 최종 사용자의 기존 워크플로와 통합됩니다. 이 클라이언트는 Word에 Information Protection 표시줄이 표시된 첫 번째 그림에서 살펴본 대로 Office 애플리케이션에 이 표시줄을 설치합니다. 동일한 Information Protection 표시줄이 Excel, PowerPoint 및 Outlook에 추가됩니다. 예를 들면 다음과 같습니다.
 
 ![Excel에서 Azure Information Protection 표시줄의 예](./media/excel2016-infoprotect-barv2.png)
 
@@ -80,7 +80,7 @@ Azure Information Protection 클라이언트가 설치되면 Azure Information P
 
 ### <a name="additional-integration-for-email"></a>메일에 대한 추가 통합
 
-Azure Information Protection을 Exchange Online과 함께 사용하는 경우 추가 이점이 있습니다. 즉, 보호된 메일을 모든 사용자에게 보내 사용자가 원하는 장치에서 읽을 수 있도록 할 수 있습니다.
+Azure Information Protection을 Exchange Online과 함께 사용하는 경우 추가 이점이 있습니다. 즉, 보호된 메일을 모든 사용자에게 보내 사용자가 원하는 디바이스에서 읽을 수 있도록 할 수 있습니다.
 
 예를 들어 사용자가 **Gmail**, **Hotmail** 또는 **Microsoft** 계정을 사용하는 개인 이메일 주소나 Office 365 또는 Azure AD의 계정이 없는 사용자에게 중요한 정보를 보내야 한다고 가정합니다. 이러한 메일은 미사용 시와 전송 중에 암호화해야 하고 원래 받는 사람만 읽어야 합니다.
 

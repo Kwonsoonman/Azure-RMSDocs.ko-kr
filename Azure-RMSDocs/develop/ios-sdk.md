@@ -1,6 +1,6 @@
 ---
 title: iOS 및 OS X 설치 | Azure RMS
-description: iOS 및 OS X 응용 프로그램에서 RMS SDK 4.2를 통해 AAD RM을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+description: iOS 및 OS X 애플리케이션에서 RMS SDK 4.2를 통해 AAD RM을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -21,7 +21,7 @@ ms.locfileid: "44150367"
 ---
 # <a name="ios-and-os-x-setup"></a>iOS 및 OS X 설정
 
-iOS 및 OS X 응용 프로그램에서 Microsoft Rights Management SDK 4.2를 통해 Azure RMS(Azure 권한 관리)를 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+iOS 및 OS X 애플리케이션에서 Microsoft Rights Management SDK 4.2를 통해 Azure RMS(Azure 권한 관리)를 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 
 이 항목에서는 새 앱을 만들기 위한 환경을 설정하는 과정을 안내합니다.
 

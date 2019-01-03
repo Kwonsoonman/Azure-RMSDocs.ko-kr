@@ -24,7 +24,7 @@ ms.locfileid: "53304896"
     
 - 관리자와 사용자가 문서 및 이메일을 분류하고 선택적으로 보호하는 데 사용할 수 있는 레이블.
 
-- 사용자의 Office 응용 프로그램에 표시되는 Information Protection 표시줄의 제목 및 도구 설명.
+- 사용자의 Office 애플리케이션에 표시되는 Information Protection 표시줄의 제목 및 도구 설명.
 
 - 문서 및 전자 메일을 분류하기 위한 시작점으로 기본 레이블을 설정할 수 있는 옵션.
 
@@ -34,7 +34,7 @@ ms.locfileid: "53304896"
 
 - 첨부 파일에 따라 메일 메시지에 자동으로 레이블을 지정할 수 있는 옵션.
 
-- Information Protection 막대가 Office 응용 프로그램에 표시되는지 여부를 제어하는 옵션.
+- Information Protection 막대가 Office 애플리케이션에 표시되는지 여부를 제어하는 옵션.
 
 - [전달 안 함] 단추가 Outlook에 표시되는지 여부를 제어하는 옵션.
 

@@ -1,6 +1,6 @@
 ---
-title: RMS 데이터 보호를 위한 응용 프로그램 지원 - AIP
-description: RMS API를 사용하여 Azure Information Protection의 Azure Rights Management 서비스를 기본적으로 지원하는 응용 프로그램을 식별합니다.
+title: RMS 데이터 보호를 위한 애플리케이션 지원 - AIP
+description: RMS API를 사용하여 Azure Information Protection의 Azure Rights Management 서비스를 기본적으로 지원하는 애플리케이션을 식별합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -17,20 +17,20 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/10/2018
 ms.locfileid: "53173913"
 ---
-# <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 응용 프로그램
+# <a name="applications-that-support-azure-rights-management-data-protection"></a>Azure Rights Management 데이터 보호를 지원하는 애플리케이션
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
 
-Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RMS(Azure Rights Management 서비스)를 기본적으로 지원하는 응용 프로그램 및 솔루션을 식별하려면 다음 표를 참조하세요.
+Azure Information Protection에 대한 데이터 보호를 제공하는 Azure RMS(Azure Rights Management 서비스)를 기본적으로 지원하는 애플리케이션 및 솔루션을 식별하려면 다음 표를 참조하세요.
 
-이러한 응용 프로그램 및 솔루션의 경우 Rights Management API를 통해 사용 제한을 지원하여 Rights Management 서비스를 강력히 통합합니다. 이러한 응용 프로그램 및 솔루션을 "RMS 지원"이라고도 합니다.
+이러한 애플리케이션 및 솔루션의 경우 Rights Management API를 통해 사용 제한을 지원하여 Rights Management 서비스를 강력히 통합합니다. 이러한 애플리케이션 및 솔루션을 "RMS 지원"이라고도 합니다.
 
 별도의 설명이 없으면 지원되는 기능은 Azure RMS와 AD RMS 둘 다에 적용됩니다. 또한 iOS, Android, macOS 및 Windows Phone 8.1에서 AD RMS를 지원하려면 [Active Directory Rights Management Services 모바일 디바이스 확장](https://technet.microsoft.com/library/dn673574.aspx)이 필요합니다.
 
-## <a name="rms-enlightened-applications"></a>RMS 지원 응용 프로그램
+## <a name="rms-enlightened-applications"></a>RMS 지원 애플리케이션
 
-다음 표에는 Microsoft 및 소프트웨어 공급업체에서 제공하는 RMS 지원 클라이언트 응용 프로그램이 표시되어 있습니다. 
+다음 표에는 Microsoft 및 소프트웨어 공급업체에서 제공하는 RMS 지원 클라이언트 애플리케이션이 표시되어 있습니다. 
 
 보호된 PDF 문서를 보는 방법에 대한 정보는 [Microsoft Information Protection에 대한 보호된 PDF reader](./rms-client/protected-pdf-readers.md)를 참조하세요.
 
@@ -70,7 +70,7 @@ SharePoint Online 및 비즈니스용 OneDrive에서만 지원되며, 문서는 
 ###### <a name="footnote-4"></a>각주 4
 Exchange 관리자가 사용하도록 설정해야 하는 Exchange ActiveSync IRM을 사용합니다. 사용자는 보호된 전자 메일 메시지를 보고, 회신하고, 전체 회신할 수 있지만 사용자는 새 전자 메일 메시지를 보호할 수 없습니다.
  
-Exchange ActiveSync IRM을 사용하도록 설정되지 않아서 전자 메일 응용 프로그램에서 메시지를 렌더링할 수 없는 경우, 받는 사람은 보낸 사람이 Exchange Online을 사용할 때 웹 브라우저에서 전자 메일을 보거나 하이브리드 구성으로 Exchange 온-프레미스의 전자 메일을 볼 수 있습니다. 
+Exchange ActiveSync IRM을 사용하도록 설정되지 않아서 전자 메일 애플리케이션에서 메시지를 렌더링할 수 없는 경우, 받는 사람은 보낸 사람이 Exchange Online을 사용할 때 웹 브라우저에서 전자 메일을 보거나 하이브리드 구성으로 Exchange 온-프레미스의 전자 메일을 볼 수 있습니다. 
 
 
 
@@ -100,7 +100,7 @@ Office 2007을 제외하고 모든 버전의 Office에서 보호된 콘텐츠를
 
 Office Professional Plus 2010 서비스 팩 2 또는 Office Professional 2010 서비스 팩 2에서 Azure Rights Management 서비스를 사용하는 경우 다음이 적용됩니다.
 
-- Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 응용 프로그램이 필요합니다.
+- Windows용 Azure Information Protection 클라이언트 또는 Windows용 Rights Management 공유 애플리케이션이 필요합니다.
 
 - Windows 10에서는 지원되지 않음.
 
@@ -120,16 +120,16 @@ Office Professional Plus 2010 서비스 팩 2 또는 Office Professional 2010 �
 
 ### <a name="more-information-about-the-azure-information-protection-app-for-ios-and-android"></a>iOS 및 Android용 Azure Information Protection 앱에 대한 자세한 내용
 
-iOS 및 Android용 Azure Information Protection 뷰어 앱은 이러한 장치에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
+iOS 및 Android용 Azure Information Protection 뷰어 앱은 이러한 디바이스에 대한 RMS 공유 앱을 대체합니다. 동일한 기능을 제공하고 SharePoint Online에서 권한으로 보호되는 메일 메시지와 권한으로 보호되는 PDF 파일을 지원합니다.
 
-Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관리 앱을 사용하여 이 앱을 배포 및 관리할 수 있습니다. 자세한 내용은 Intune 설명서에서 [Microsoft Intune 콘솔에서 모바일 응용 프로그램 관리 정책 구성 및 배포](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)를 참조하세요. 이 Intune 설명서에서 2단계에서는 정책 관리 앱 게시 지침을 사용합니다.
+Microsoft Intune에서 iOS 및 Android 디바이스를 등록하는 경우 정책 관리 앱을 사용하여 이 앱을 배포 및 관리할 수 있습니다. 자세한 내용은 Intune 설명서에서 [Microsoft Intune 콘솔에서 모바일 애플리케이션 관리 정책 구성 및 배포](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)를 참조하세요. 이 Intune 설명서에서 2단계에서는 정책 관리 앱 게시 지침을 사용합니다.
 
 자세한 내용은 [iOS 및 Android용 Microsoft Azure Information Protection 앱에 대한 FAQ](./rms-client/mobile-app-faq.md)를 참조하세요.
 
 
 ### <a name="more-information-about-the-azure-information-protection-client-for-windows"></a>Windows용 Azure Information Protection 클라이언트에 대한 자세한 내용
 
-이 클라이언트는 Windows용 Rights Management 공유 응용 프로그램을 대신합니다.
+이 클라이언트는 Windows용 Rights Management 공유 애플리케이션을 대신합니다.
 
 자세한 내용은 다음 참조 자료를 참조하세요.
 
@@ -141,9 +141,9 @@ Microsoft Intune에서 iOS 및 Android 장치를 등록하는 경우 정책 관�
 
 [Microsoft Azure Information Protection 페이지](https://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 관련 앱을 다운로드하세요.
 
-### <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 응용 프로그램에 대한 자세한 내용
+### <a name="more-information-about-the-rights-management-sharing-application"></a>Rights Management 공유 애플리케이션에 대한 자세한 내용
 
-이 응용 프로그램은 Azure Information Protection 클라이언트로 대체되고 있습니다. 하지만 Windows Phone 모바일 장치에서 보호된 파일을 보려면 여전히 필요합니다. 
+이 애플리케이션은 Azure Information Protection 클라이언트로 대체되고 있습니다. 하지만 Windows Phone 모바일 디바이스에서 보호된 파일을 보려면 여전히 필요합니다. 
 
 Mac 컴퓨터의 경우 보호된 PDF 파일(.ppdf), 보호된 텍스트 이미지 및 일반적으로 보호되는 파일에 대한 뷰어를 제공합니다. Mac용 RMS 공유 앱은 이미지 파일을 보호할 수 있지만 다른 파일은 보호할 수 없습니다. Office 파일을 보호하려면 Mac용 Office를 사용합니다. 
 
@@ -158,25 +158,25 @@ Mac 컴퓨터의 경우 보호된 PDF 파일(.ppdf), 보호된 텍스트 이미�
 [Microsoft Azure Information Protection 페이지](https://go.microsoft.com/fwlink/?LinkId=303970)의 링크를 사용하여 Mac 컴퓨터 및 Windows Phone용 뷰어를 다운로드하세요.
 
 
-### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Azure Information Protection을 지원하는 다른 응용 프로그램에 대한 자세한 내용
+### <a name="more-information-about-other-applications-that-support-azure-information-protection"></a>Azure Information Protection을 지원하는 다른 애플리케이션에 대한 자세한 내용
 
-표에 나와 있는 응용 프로그램 외에도 Azure Rights Management 서비스용 API를 지원하는 다음과 같은 모든 응용 프로그램을 Azure Information Protection과 통합할 수 있습니다.
+표에 나와 있는 애플리케이션 외에도 Azure Rights Management 서비스용 API를 지원하는 다음과 같은 모든 애플리케이션을 Azure Information Protection과 통합할 수 있습니다.
 
-- RMS SDK를 사용하여 사내에서 작성한 LOB(기간 업무) 응용 프로그램
+- RMS SDK를 사용하여 사내에서 작성한 LOB(기간 업무) 애플리케이션
 
-- 소프트웨어 공급업체에서 RMS SDK를 사용하여 작성한 응용 프로그램
+- 소프트웨어 공급업체에서 RMS SDK를 사용하여 작성한 애플리케이션
 
 자세한 내용은 [Azure Information Protection 개발자 가이드](./develop/developers-guide.md)를 참조하세요.
 
-### <a name="applications-that-are-not-supported-by-azure-rms"></a>Azure RMS에서 지원되지 않는 응용 프로그램
+### <a name="applications-that-are-not-supported-by-azure-rms"></a>Azure RMS에서 지원되지 않는 애플리케이션
 
-Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같습니다.
+Azure RMS에서 현재 지원되지 않는 애플리케이션은 다음과 같습니다.
 
 -   SharePoint Server 2013에 대한 Microsoft 비즈니스용 OneDrive
 
 -   XPS 뷰어
 
-또한 RMS 공유 응용 프로그램 및 Azure Information Protection 클라이언트에 다음과 같은 제한 사항이 적용됩니다.
+또한 RMS 공유 애플리케이션 및 Azure Information Protection 클라이언트에 다음과 같은 제한 사항이 적용됩니다.
 
 -   Windows 컴퓨터의 경우: 최소 Windows 7 서비스 팩 1 버전이 필요함
 
@@ -184,12 +184,12 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 
 다음 표에는 소프트웨어 공급업체에서 제공하는 RMS 지원 솔루션이 표시되어 있습니다.
 
-이 표에 나열되어 있지 않은 솔루션을 보유하나 소프트웨어 공급업체의 경우는 응용 프로그램을 Azure AD에 등록합니다. 자세한 내용은 [Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법](./develop/authentication-integration.md)을 참조하세요.
+이 표에 나열되어 있지 않은 솔루션을 보유하나 소프트웨어 공급업체의 경우는 애플리케이션을 Azure AD에 등록합니다. 자세한 내용은 [Azure AD에서 RMS를 등록하고 앱을 사용하도록 설정하는 방법](./develop/authentication-integration.md)을 참조하세요.
 
 
 |제품|공급업체|설명|
 |-------------------------------|---------------------------|-----------------|
-|절대|절대|DLP(데이터 손실 방지)를 통한 콘텐츠 보호.|
+|Absolute|Absolute|DLP(데이터 손실 방지)를 통한 콘텐츠 보호.|
 |Content Locker|VMware|보호된 콘텐츠를 저장, 소비, 생성합니다.|
 |Controle|TakeControle|레이블 지정 및 보호를 사용한 eDiscovery.|
 |Forcepoint|Forcepoint DLP|조직의 데이터 보안 정책을 적용하는 엔드포인트 DLP(데이터 손실 방지) 솔루션입니다.|
@@ -205,7 +205,7 @@ Azure RMS에서 현재 지원되지 않는 응용 프로그램은 다음과 같�
 ## <a name="next-steps"></a>다음 단계
 기타 요구 사항을 확인하려면 [Azure Information Protection에 대한 요구 사항](requirements.md)을 참조하세요.
 
-자주 사용하는 응용 프로그램이 Azure RMS를 지원하는 방식에 대한 자세한 내용은 [응용 프로그램이 Azure 권한 관리 서비스를 지원하는 방식](./applications-support.md)을 참조하세요.
+자주 사용하는 애플리케이션이 Azure RMS를 지원하는 방식에 대한 자세한 내용은 [애플리케이션이 Azure 권한 관리 서비스를 지원하는 방식](./applications-support.md)을 참조하세요.
 
-자주 사용하는 응용 프로그램을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 응용 프로그램 구성](configure-applications.md)을 참조하세요.
+자주 사용하는 애플리케이션을 Azure RMS에 대해 구성하는 방법에 대한 자세한 내용은 [Azure 권한 관리에 대해 애플리케이션 구성](configure-applications.md)을 참조하세요.
 

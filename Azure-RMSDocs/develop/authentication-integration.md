@@ -24,13 +24,13 @@ ms.locfileid: "53266633"
 이 항목에서는 Azure 포털을 통해 앱을 등록하고 RMS를 사용하도록 설정하는 기본적인 방법과 Azure ADAL(Active Directory Authentication Library)을 통한 사용자 인증 방법을 안내합니다.
 
 ## <a name="what-is-user-authentication"></a>사용자 인증이란?
-사용자 인증은 장치 앱과 RMS 인프라 간의 통신을 설정하기 위한 필수 단계입니다. 이 인증 프로세스에서는 현재 사용자 및 인증 요청에 관한 주요 정보가 필요한 표준 OAuth 2.0 프로토콜을 사용합니다.
+사용자 인증은 디바이스 앱과 RMS 인프라 간의 통신을 설정하기 위한 필수 단계입니다. 이 인증 프로세스에서는 현재 사용자 및 인증 요청에 관한 주요 정보가 필요한 표준 OAuth 2.0 프로토콜을 사용합니다.
 
 ## <a name="registration-via-azure-portal"></a>Azure 포털을 통해 등록
 Azure 포털을 통해 앱의 등록을 구성하려면 이 가이드에 따라 [ADAL 인증을 위해 Azure RMS 구성](adal-auth.md)부터 수행합니다. 나중에 사용할 수 있도록 이 프로세스에서 **클라이언트 ID** 및 **리디렉션 URI**를 복사하여 저장해야 합니다.
 
 ## <a name="complete-your-information-protection-integration-agreement-ipia"></a>IPIA(정보 보호 통합 계약) 완료
-응용 프로그램을 배포하려면 먼저 Microsoft Information Protection 팀의 IPIA를 완료해야 합니다. 자세한 내용은 [프로덕션 환경에 배포](deploying-your-application.md) 항목의 첫 번째 섹션을 참조하세요.
+애플리케이션을 배포하려면 먼저 Microsoft Information Protection 팀의 IPIA를 완료해야 합니다. 자세한 내용은 [프로덕션 환경에 배포](deploying-your-application.md) 항목의 첫 번째 섹션을 참조하세요.
 
 ## <a name="implement-user-authentication-for-your-app"></a>앱에 대한 사용자 인증 구현
 각 RMS API에는 사용자 인증을 사용하기 위해 구현해야 하는 콜백이 있습니다. 액세스 토큰을 제공하지 않거나, 액세스 토큰을 새로 고쳐야 하거나, 액세스 토큰이 만료된 경우 RMS SDK 4.2에서 콜백 구현을 사용합니다.
@@ -60,7 +60,7 @@ ADAL에서 사용자를 Azure RMS(또는 AD RMS)에 인증하려면 여러 가�
 - **기관** – 인증 끝점(일반적으로 AAD 또는 ADFS)의 URL입니다.
 - **리소스** - 액세스하려는 서비스 응용 프로그램(일반적으로 Azure RMS 또는 AD RMS)의 URL/URI입니다.
 - **사용자 ID** – 앱에 액세스하려는 사용자의 UPN(일반적으로 메일 주소)입니다. 사용자를 아직 알 수 없는 경우 이 매개 변수는 비어 있을 수 있으며, 사용자 토큰을 캐시하거나 캐시에서 토큰을 요청하는 경우에도 사용됩니다. 또한 일반적으로 사용자 프롬프트에 대한 *힌트*로 사용됩니다.
-- **클라이언트 ID** – 클라이언트 앱의 ID입니다. 유효한 Azure AD 응용 프로그램 ID여야 합니다.
+- **클라이언트 ID** – 클라이언트 앱의 ID입니다. 유효한 Azure AD 애플리케이션 ID여야 합니다.
 Azure 포털을 통해 이전 등록 단계에서 가져옵니다.
 - **리디렉션 URI** – 인증 라이브러리에 인증 코드의 URI 대상을 제공합니다. iOS 및 Android에는 특정한 형식이 필요합니다. 이러한 작업은 ADAL의 해당 GitHub 리포지토리에 있는 README 파일에 설명되어 있습니다. Azure 포털을 통해 이전 등록 단계에서 이 값을 가져옵니다.
 

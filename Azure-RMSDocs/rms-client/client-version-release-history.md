@@ -162,9 +162,9 @@ Azure Information Protection 클라이언트의 각 일반 가용성(GA) 버전�
 
 **수정 사항**:
 
-- Outlook 버전 16.0.9324.1000 이상(간편 실행)의 경우 Azure Information Protection 표시줄은 이전에 Outlook 응용 프로그램 외부에 표시줄을 표시할 수 있는 최신 모니터 표시 옵션을 지원합니다.
+- Outlook 버전 16.0.9324.1000 이상(간편 실행)의 경우 Azure Information Protection 표시줄은 이전에 Outlook 애플리케이션 외부에 표시줄을 표시할 수 있는 최신 모니터 표시 옵션을 지원합니다.
 
-- 이제 [Office 응용 프로그램 유형별](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)로 구성한 시각적 표시가 이전에 Azure Information Protection 레이블에 의해 적용된 헤더 또는 바닥글을 대체합니다.
+- 이제 [Office 애플리케이션 유형별](../configure-policy-markings.md#setting-different-visual-markings-for-word-excel-powerpoint-and-outlook)로 구성한 시각적 표시가 이전에 Azure Information Protection 레이블에 의해 적용된 헤더 또는 바닥글을 대체합니다.
 
 - Excel 파일에 이미 레이블이 지정되어 있고 레이블이 시각적 표시를 적용하는 경우 이제 새 시트에도 레이블의 시각적 표시가 적용됩니다.
 

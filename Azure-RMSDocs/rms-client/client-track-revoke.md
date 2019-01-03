@@ -70,11 +70,11 @@ Office 응용 프로그램, Word, Excel 및 PowerPoint의 경우:
 
     ![추적 사용 옵션](../media/track-usage-callout.png)
     
-    Office 응용 프로그램에 이러한 옵션이 표시되지 않는 경우 다음 이유 중 하나 때문일 수 있습니다.
+    Office 애플리케이션에 이러한 옵션이 표시되지 않는 경우 다음 이유 중 하나 때문일 수 있습니다.
     
     - Azure Information Protection 클라이언트가 컴퓨터에 설치되지 않았습니다.
     
-    - Office 응용 프로그램을 다시 시작해야 합니다.
+    - Office 애플리케이션을 다시 시작해야 합니다.
     
     - 설치를 완료하려면 컴퓨터를 다시 시작해야 합니다.
     
@@ -93,7 +93,7 @@ Azure Information Protection 클라이언트를 설치하는 방법에 대한 �
 
 Office 앱 또는 파일 탐색기를 사용하여 보호된 문서를 등록한 후에 지원되는 웹 브라우저를 사용하여 이러한 문서를 추적 및 해지할 수 있습니다.
 
-- Windows PC, Mac 컴퓨터 또는 모바일 장치를 사용하여 [문서 추적 사이트](https://go.microsoft.com/fwlink/?LinkId=529562)를 방문합니다.
+- Windows PC, Mac 컴퓨터 또는 모바일 디바이스를 사용하여 [문서 추적 사이트](https://go.microsoft.com/fwlink/?LinkId=529562)를 방문합니다.
 
     **지원되는 브라우저**: Internet Explorer 버전 10 이상을 사용하는 것이 좋지만 다음 브라우저를 통해서도 문서 추적 사이트를 사용할 수 있습니다.
 

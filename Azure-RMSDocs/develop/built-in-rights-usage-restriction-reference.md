@@ -39,7 +39,7 @@ ms.locfileid: "53266667"
 - Windows 스토어 및 Windows Phone: [CommonRights.Owner](https://msdn.microsoft.com/library/microsoft.rightsmanagement.commonrights.owner.aspx)
 - Linux: [CommonRights::Owner](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1CommonRights.html)
 
-**보기** - 보호된 콘텐츠를 볼 수 있는 권한입니다. 일반적으로 이 권한이 부여되면 응용 프로그램을 통해 사용자가 보호된 콘텐츠를 열어서 볼 수 있지만 콘텐츠를 수정, 추출, 전달 또는 저장하려면 추가 권한이 필요합니다.
+**보기** - 보호된 콘텐츠를 볼 수 있는 권한입니다. 일반적으로 이 권한이 부여되면 애플리케이션을 통해 사용자가 보호된 콘텐츠를 열어서 볼 수 있지만 콘텐츠를 수정, 추출, 전달 또는 저장하려면 추가 권한이 필요합니다.
 
 - Android: [CommonRights.View](https://msdn.microsoft.com/library/dn758258.aspx)
 - iOS 및 OS X: [MSCommonRights 보기](https://msdn.microsoft.com/library/dn758314.aspx)
@@ -67,14 +67,14 @@ ms.locfileid: "53266667"
 - Windows 스토어 및 Windows Phone: [EditableDocumentRights.Edit](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.edit.aspx)
 - Linux: [EditableDocumentRights::Edit](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
-**내보내기** - 보호된 형식에서 콘텐츠를 추출하여 다른 AD RMS 보호된 형식으로 저장할 수 있는 권한입니다. 일반적으로 이 권한이 부여되면 앱을 통해 사용자가 보호된 콘텐츠를 다른 AD RMS 보호된 형식으로 저장할 수 있습니다. 예를 들어 응용 프로그램에서 *다른 이름으로 저장* 기능을 구현하는 경우입니다.
+**내보내기** - 보호된 형식에서 콘텐츠를 추출하여 다른 AD RMS 보호된 형식으로 저장할 수 있는 권한입니다. 일반적으로 이 권한이 부여되면 앱을 통해 사용자가 보호된 콘텐츠를 다른 AD RMS 보호된 형식으로 저장할 수 있습니다. 예를 들어 애플리케이션에서 *다른 이름으로 저장* 기능을 구현하는 경우입니다.
 
 - Android: [EditableDocumentRights.Export](https://msdn.microsoft.com/library/dn758284.aspx)
 - iOS 및 OS X: [MSEditableDocumentRights 내보내기](https://msdn.microsoft.com/library/dn758318.aspx)
 - Windows 스토어 및 Windows Phone: [EditableDocumentRights.Export](https://msdn.microsoft.com/library/microsoft.rightsmanagement.editabledocumentrights.export.aspx)
 - Linux: [EditableDocumentRights::Export](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EditableDocumentRights.html)
 
-**추출** - 보호된 형식에서 콘텐츠를 추출하여 보호되지 않는 형식으로 저장할 수 있는 권한입니다. 일반적으로 이 권한이 부여되면 앱을 통해 사용자가 보호된 콘텐츠에서 정보를 복사하고 붙여넣을 수 있습니다. 앱에서 <em>다른 이름으로 저장</em> 기능을 구현하는 경우 응용 프로그램을 통해 사용자가 보호된 콘텐츠를 보호되지 않는 형식이나 다른 보호된 형식으로 저장할 수도 있습니다. 이 권한은 메일에 대한 추출 권한과 동일한 값을 갖습니다.
+**추출** - 보호된 형식에서 콘텐츠를 추출하여 보호되지 않는 형식으로 저장할 수 있는 권한입니다. 일반적으로 이 권한이 부여되면 앱을 통해 사용자가 보호된 콘텐츠에서 정보를 복사하고 붙여넣을 수 있습니다. 앱에서 <em>다른 이름으로 저장</em> 기능을 구현하는 경우 애플리케이션을 통해 사용자가 보호된 콘텐츠를 보호되지 않는 형식이나 다른 보호된 형식으로 저장할 수도 있습니다. 이 권한은 메일에 대한 추출 권한과 동일한 값을 갖습니다.
 
 - Android: [EditableDocumentRights.Extract](https://msdn.microsoft.com/library/dn758284.aspx)
 - iOS 및 OS X: [MSEditableDocumentRights 추출](https://msdn.microsoft.com/library/dn758318.aspx)
@@ -98,7 +98,7 @@ ms.locfileid: "53266667"
 - Windows 스토어 및 Windows Phone: [EmailRights.All](https://msdn.microsoft.com/library/microsoft.rightsmanagement.emailrights.all.aspx)
 - Linux: [EmailRights::All](https://azuread.github.io/rms-sdk-for-cpp/classrmscore_1_1modernapi_1_1EmailRights.html)
 
-**추출** - 보호된 형식에서 콘텐츠를 추출하여 보호되지 않는 형식으로 저장할 수 있는 권한입니다. 일반적으로 이 권한이 부여되면 앱을 통해 메일 받는 사람이 보호된 메시지에서 정보를 복사하고 붙여넣을 수 있습니다. 앱에서 <em>다른 이름으로 저장</em> 기능을 구현하는 경우 응용 프로그램을 통해 받는 사람이 보호된 콘텐츠를 보호되지 않는 형식이나 다른 보호된 형식으로 저장할 수도 있습니다. 이 권한은 편집할 수 있는 문서에 대한 추출 권한과 동일한 값을 갖습니다.
+**추출** - 보호된 형식에서 콘텐츠를 추출하여 보호되지 않는 형식으로 저장할 수 있는 권한입니다. 일반적으로 이 권한이 부여되면 앱을 통해 메일 받는 사람이 보호된 메시지에서 정보를 복사하고 붙여넣을 수 있습니다. 앱에서 <em>다른 이름으로 저장</em> 기능을 구현하는 경우 애플리케이션을 통해 받는 사람이 보호된 콘텐츠를 보호되지 않는 형식이나 다른 보호된 형식으로 저장할 수도 있습니다. 이 권한은 편집할 수 있는 문서에 대한 추출 권한과 동일한 값을 갖습니다.
 
 - Android: [EmailRights.Extract](https://msdn.microsoft.com/library/dn758285.aspx)
 - iOS 및 OS X: [MSEmailRights 추출](https://msdn.microsoft.com/library/dn758319.aspx)

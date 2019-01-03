@@ -8,14 +8,14 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 9999b450d614b4465f151f0b2df80892a83bc143
 ms.sourcegitcommit: 4cd90fcf94ac6e2543d8be10e6e29e8218d5fd9d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49651348"
 ---
 # <a name="class-mipprotectionengineobserver"></a>class mip::ProtectionEngine::Observer 
 [ProtectionEngine](class_mip_protectionengine.md)과 관련된 알림을 받는 인터페이스입니다.
-이 인터페이스는 보호 SDK를 사용하여 응용 프로그램에 의해 구현되어야 합니다.
+이 인터페이스는 보호 SDK를 사용하여 애플리케이션에 의해 구현되어야 합니다.
   
 ## <a name="summary"></a>요약
  멤버                        | 설명                                
@@ -39,7 +39,7 @@ public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error
 * **context**: [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync)에 전달된 동일한 컨텍스트
 
 
-응용 프로그램은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetTemplatesSuccess](class_mip_protectionengine_observer.md#ongettemplatessuccess) 또는 [ProtectionEngine::Observer::OnGetTemplatesFailure](class_mip_protectionengine_observer.md#ongettemplatesfailure)에 전달됩니다.
+애플리케이션은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetTemplatesSuccess](class_mip_protectionengine_observer.md#ongettemplatessuccess) 또는 [ProtectionEngine::Observer::OnGetTemplatesFailure](class_mip_protectionengine_observer.md#ongettemplatesfailure)에 전달됩니다.
   
 ### <a name="ongettemplatesfailure"></a>OnGetTemplatesFailure
 템플릿 검색 시 오류가 발생될 때 호출됩니다.
@@ -51,7 +51,7 @@ public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error
 * **context**: [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync)에 전달된 동일한 컨텍스트
 
 
-응용 프로그램은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetTemplatesSuccess](class_mip_protectionengine_observer.md#ongettemplatessuccess) 또는 [ProtectionEngine::Observer::OnGetTemplatesFailure](class_mip_protectionengine_observer.md#ongettemplatesfailure)에 전달됩니다.
+애플리케이션은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetTemplatesAsync](class_mip_protectionengine.md#gettemplatesasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetTemplatesSuccess](class_mip_protectionengine_observer.md#ongettemplatessuccess) 또는 [ProtectionEngine::Observer::OnGetTemplatesFailure](class_mip_protectionengine_observer.md#ongettemplatesfailure)에 전달됩니다.
   
 ### <a name="ongetrightsforlabelidsuccess"></a>OnGetRightsForLabelIdSuccess
 권한이 성공적으로 검색될 때 호출됩니다.
@@ -63,7 +63,7 @@ public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error
 * **context**: [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync)에 전달된 것과 동일한 컨텍스트
 
 
-응용 프로그램은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess) 또는 [ProtectionEngine::Observer::OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure)에 전달됩니다.
+애플리케이션은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess) 또는 [ProtectionEngine::Observer::OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure)에 전달됩니다.
   
 ### <a name="ongetrightsforlabelidfailure"></a>OnGetRightsForLabelIdFailure
 레이블 ID에 대한 사용자의 권한을 검색할 때 호출됩니다.
@@ -75,7 +75,7 @@ public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error
 * **context**: [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync)에 전달된 것과 동일한 컨텍스트
 
 
-응용 프로그램은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess) 또는 [ProtectionEngine::Observer::OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure)에 전달됩니다.
+애플리케이션은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetRightsForLabelIdAsync](class_mip_protectionengine.md#getrightsforlabelidasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetRightsForLabelIdSuccess](class_mip_protectionengine_observer.md#ongetrightsforlabelidsuccess) 또는 [ProtectionEngine::Observer::OnGetRightsForLabelIdFailure](class_mip_protectionengine_observer.md#ongetrightsforlabelidfailure)에 전달됩니다.
   
 ### <a name="ongetgrantinglabelidssuccess"></a>OnGetGrantingLabelIdsSuccess
 레이블 ID가 성공적으로 검색될 때 호출됩니다.
@@ -87,7 +87,7 @@ public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error
 * **context**: [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)에 전달된 동일한 컨텍스트
 
 
-응용 프로그램은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetGrantingLabelIdsSuccess](class_mip_protectionengine_observer.md#ongetgrantinglabelidssuccess) 또는 [ProtectionEngine::Observer::OnGetGrantingLabelIdsFailure](class_mip_protectionengine_observer.md#ongetgrantinglabelidsfailure)에 전달됩니다.
+애플리케이션은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetGrantingLabelIdsSuccess](class_mip_protectionengine_observer.md#ongetgrantinglabelidssuccess) 또는 [ProtectionEngine::Observer::OnGetGrantingLabelIdsFailure](class_mip_protectionengine_observer.md#ongetgrantinglabelidsfailure)에 전달됩니다.
   
 ### <a name="ongetgrantinglabelidsfailure"></a>OnGetGrantingLabelIdsFailure
 사용자의 레이블 ID를 검색할 때 호출됩니다.
@@ -99,4 +99,4 @@ public virtual void OnGetGrantingLabelIdsFailure(const std::exception_ptr& error
 * **context**: [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)에 전달된 동일한 컨텍스트
 
 
-응용 프로그램은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetGrantingLabelIdsSuccess](class_mip_protectionengine_observer.md#ongetgrantinglabelidssuccess) 또는 [ProtectionEngine::Observer::OnGetGrantingLabelIdsFailure](class_mip_protectionengine_observer.md#ongetgrantinglabelidsfailure)에 전달됩니다.
+애플리케이션은 모든 유형의 컨텍스트(예: std::promise, std::function)를 [ProtectionEngine::GetGrantingLabelIdsAsync](class_mip_protectionengine.md#getgrantinglabelidsasync)에 전달할 수 있고 동일한 컨텍스트가 있는 그대로 [ProtectionEngine::Observer::OnGetGrantingLabelIdsSuccess](class_mip_protectionengine_observer.md#ongetgrantinglabelidssuccess) 또는 [ProtectionEngine::Observer::OnGetGrantingLabelIdsFailure](class_mip_protectionengine_observer.md#ongetgrantinglabelidsfailure)에 전달됩니다.

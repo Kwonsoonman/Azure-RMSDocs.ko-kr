@@ -30,7 +30,7 @@ ms.locfileid: "44150911"
 ## <a name="using-the-microsoft-rights-management-sdk-42---key-scenarios"></a>Microsoft Rights Management SDK 4.2 사용 - 주요 시나리오
 
 
-다음은 이 SDK를 이해하는 데 중요한 개발 시나리오를 나타내는 큰 샘플 응용 프로그램에서 가져온 **Objective C** 코드 예제입니다. 이 예제에서는 보호된 파일이라고 지칭되는 Microsoft 보호된 파일 형식 사용, 사용자 지정 보호된 파일 형식 사용 및 사용자 지정 UI 컨트롤 사용을 보여 줍니다.
+다음은 이 SDK를 이해하는 데 중요한 개발 시나리오를 나타내는 큰 샘플 애플리케이션에서 가져온 **Objective C** 코드 예제입니다. 이 예제에서는 보호된 파일이라고 지칭되는 Microsoft 보호된 파일 형식 사용, 사용자 지정 보호된 파일 형식 사용 및 사용자 지정 UI 컨트롤 사용을 보여 줍니다.
 
 ### <a name="scenario-consume-an-rms-protected-file"></a>시나리오: RMS 보호된 파일 사용
 

@@ -37,7 +37,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 4. **고급 설정** 블레이드에서 고급 설정 이름 및 값을 입력한 다음 **저장 후 닫기**를 선택합니다.
 
-5. 이 정책에 대한 사용자가 열어 놓은 모든 Office 응용 프로그램을 다시 시작하는지 확인합니다.
+5. 이 정책에 대한 사용자가 열어 놓은 모든 Office 애플리케이션을 다시 시작하는지 확인합니다.
 
 6. 더 이상 해당 설정이 필요하지 않고 기본 동작으로 되돌리려는 경우: **고급 설정** 블레이드에서 더 이상 필요하지 않은 설정 옆에 있는 바로 가기 메뉴(**...**)를 선택하고 **삭제**를 선택합니다. 그런 다음, **저장 후 닫기**를 클릭합니다.
 
@@ -84,7 +84,7 @@ Azure Information Protection 클라이언트를 관리할 때 특정 시나리�
 
 1. **%localappdata%\Microsoft\MSIP**로 이동하고 **TokenCache** 파일을 삭제합니다.
 
-2. 열려 있는 Office 응용 프로그램을 다시 시작하고 다른 사용자 계정으로 로그인합니다. Office 응용 프로그램에서 Azure Information Protection 서비스에 로그인하라는 메시지가 표시되지 않는 경우 **Microsoft Azure Information Protection** 대화 상자로 돌아와 업데이트된 **클라이언트 상태** 섹션에서 **로그인**을 클릭합니다.
+2. 열려 있는 Office 애플리케이션을 다시 시작하고 다른 사용자 계정으로 로그인합니다. Office 애플리케이션에서 Azure Information Protection 서비스에 로그인하라는 메시지가 표시되지 않는 경우 **Microsoft Azure Information Protection** 대화 상자로 돌아와 업데이트된 **클라이언트 상태** 섹션에서 **로그인**을 클릭합니다.
 
 추가 필수 구성 요소:
 
@@ -201,7 +201,7 @@ Azure Portal에서 정책을 내보내면 여러 버전의 정책이 포함된 Z
 
 이 구성에서는 Azure Portal에서 구성해야 하는 [고급 클라이언트 설정](#how-to-configure-advanced-client-configuration-settings-in-the-portal)을 사용합니다. **Display the Information Protection bar in Office apps**(Office 앱에 Information Protection 표시줄 표시) [정책 설정](../configure-policy-settings.md)이 **켜기**로 설정된 경우에만 사용하세요.
 
-사용자를 위해 이 설정을 구성하고 정책을 게시하며, 사용자가 Office 응용 프로그램에 Azure Information Protection 표시줄을 표시하지 않도록 선택하는 경우 이 표시줄은 숨겨진 상태를 유지합니다. 사용자가 **홈** 탭, **보호** 그룹, **보호** 단추에서 **표시줄 표시** 옵션을 선택 취소하면 이러한 상황이 발생합니다. **이 표시줄 닫기** 아이콘을 사용하여 표시줄을 닫으면 이 설정이 아무런 영향도 미치지 않습니다.
+사용자를 위해 이 설정을 구성하고 정책을 게시하며, 사용자가 Office 애플리케이션에 Azure Information Protection 표시줄을 표시하지 않도록 선택하는 경우 이 표시줄은 숨겨진 상태를 유지합니다. 사용자가 **홈** 탭, **보호** 그룹, **보호** 단추에서 **표시줄 표시** 옵션을 선택 취소하면 이러한 상황이 발생합니다. **이 표시줄 닫기** 아이콘을 사용하여 표시줄을 닫으면 이 설정이 아무런 영향도 미치지 않습니다.
 
 Azure Information Protection 표시줄은 숨겨진 상태를 유지하지만 권장되는 분류를 구성했거나 문서 또는 전자 메일에 레이블이 필요한 경우 일시적으로 표시되는 표시줄에서 레이블을 계속 선택할 수 있습니다. 
 
@@ -479,9 +479,9 @@ Secure Islands에서 레이블이 “중요”로 지정된 문서는 Azure Info
 
 클라이언트가 해당 정책에서 이 구성을 가져오면 Office 앱에서 문서를 열고 Azure Information Protection 레이블을 문서에 적용할 때 이전 헤더 및 바닥글을 제거하거나 대체합니다.
 
-이 구성은 Outlook에 지원되지 않습니다. Word, Excel 및 PowerPoint에서 사용하는 경우 이러한 앱의 성능에 부정적인 영향을 줄 수 있습니다. 구성을 통해 응용 프로그램별로 설정을 정의할 수 있습니다. 예를 들어, Word 문서의 헤더 및 바닥글에 있는 텍스트를 검색하지만 Excel 스프레드시트 또는 PowerPoint 프레젠테이션은 검색하지 않습니다.
+이 구성은 Outlook에 지원되지 않습니다. Word, Excel 및 PowerPoint에서 사용하는 경우 이러한 앱의 성능에 부정적인 영향을 줄 수 있습니다. 구성을 통해 애플리케이션별로 설정을 정의할 수 있습니다. 예를 들어, Word 문서의 헤더 및 바닥글에 있는 텍스트를 검색하지만 Excel 스프레드시트 또는 PowerPoint 프레젠테이션은 검색하지 않습니다.
 
-패턴 일치가 성능에 영향을 주기 때문에 Office 응용 프로그램 형식(**W**ord, **E**xcel, **P**owerPoint)을 검색되어야 하는 것으로 제한하는 것이 좋습니다.
+패턴 일치가 성능에 영향을 주기 때문에 Office 애플리케이션 형식(**W**ord, **E**xcel, **P**owerPoint)을 검색되어야 하는 것으로 제한하는 것이 좋습니다.
 
 - 키: **RemoveExternalContentMarkingInApp**
 
@@ -614,7 +614,7 @@ Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커
 - Value: **False**
 
 
-## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 장치 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
+## <a name="integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution"></a>모바일 디바이스 레이블 지정 솔루션을 위해 Exchange 메시지 분류와 통합
 
 웹용 Outlook에서는 아직 기본적으로 Azure Information Protection 분류 및 보호를 지원하지 않지만, Exchange 메시지 분류를 사용하여 웹용 Outlook을 사용하는 모바일 사용자로 Azure Information Protection 레이블을 확장할 수 있습니다. Outlook Mobile은 Exchange 메시지 분류를 지원하지 않습니다.
 
@@ -634,7 +634,7 @@ Windows 무결성 수준에 대한 자세한 내용은 [Windows 무결성 메커
     
     참고: 레이블이 하위 레이블인 경우 헤더 값의 하위 레이블 앞에 부모 레이블도 같은 형식을 사용하여 지정해야 합니다. 예를 들어 하위 레이블의 GUID가 27efdf94-80a0-4d02-b88c-b615c12d69a9이면 값은 다음과 같을 수 있습니다. `MSIP_Label_ab70158b-bdcc-42a3-8493-2a80736e9cbd_Enabled=True;MSIP_Label_27efdf94-80a0-4d02-b88c-b615c12d69a9_Enabled=True;`
 
-이 구성을 테스트하기 전에 메일 흐름 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 이제 규칙이 적용되면 사용자가 Exchange ActiveSync IRM을 지원하는 모바일 장치 클라이언트 또는 웹용 Outlook을 사용할 때 다음과 같은 이벤트가 발생합니다. 
+이 구성을 테스트하기 전에 메일 흐름 규칙을 만들거나 편집할 때 지연이 발생하는 경우가 종종 있습니다(예: 1시간 대기). 이제 규칙이 적용되면 사용자가 Exchange ActiveSync IRM을 지원하는 모바일 디바이스 클라이언트 또는 웹용 Outlook을 사용할 때 다음과 같은 이벤트가 발생합니다. 
 
 - 사용자가 Exchange 메시지 분류를 선택하고 전자 메일을 보냅니다.
 

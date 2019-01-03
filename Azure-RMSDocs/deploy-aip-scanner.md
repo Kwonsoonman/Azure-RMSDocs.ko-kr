@@ -146,9 +146,9 @@ Azure Information Protection 스캐너를 설치하기 전에 다음 요구 사�
 
 Azure AD 토큰을 사용하면 스캐너 서비스 계정으로 Azure Information Protection 서비스에 인증할 수 있습니다.
 
-1. 동일한 Windows Server 컴퓨터 또는 데스크톱에서 Azure Portal에 로그인하여 인증을 위해 액세스 토큰을 지정하는 데 필요한 두 개의 Azure AD 응용 프로그램을 만듭니다. 초기 대화형 로그인 후에 이 토큰을 통해 스캐너를 비대화형으로 실행할 수 있습니다.
+1. 동일한 Windows Server 컴퓨터 또는 데스크톱에서 Azure Portal에 로그인하여 인증을 위해 액세스 토큰을 지정하는 데 필요한 두 개의 Azure AD 애플리케이션을 만듭니다. 초기 대화형 로그인 후에 이 토큰을 통해 스캐너를 비대화형으로 실행할 수 있습니다.
     
-    이러한 응용 프로그램을 만들려면 관리자 가이드에서 [Azure Information Protection에서 비대화형으로 파일의 레이블을 지정하는 방법](./rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)에서 지침에 따릅니다.
+    이러한 애플리케이션을 만들려면 관리자 가이드에서 [Azure Information Protection에서 비대화형으로 파일의 레이블을 지정하는 방법](./rms-client/client-admin-guide-powershell.md#how-to-label-files-non-interactively-for-azure-information-protection)에서 지침에 따릅니다.
 
 2. Windows Server 컴퓨터에서 스캐너 서비스 계정에 설치를 위한 **로컬로 로그온** 권한이 부여된 경우: 이 계정으로 로그인하고 PowerShell 세션을 시작합니다. [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication)을 실행하고 이전 단계에서 복사한 값을 지정합니다.
     
@@ -202,7 +202,7 @@ SharePoint에 대해 지원되는 버전: SharePoint Server 2016 및 SharePoint 
     
     또는 **Scanner**(스캐너) > **Nodes (Preview)**(노드(미리 보기)) > **\<*scanner node*(스캐너 노드)>**> **상태** 열을 선택하여 Azure Portal의 **Azure Information Protection** 블레이드에서 상태를 볼 수 있습니다.
     
-    로컬 Windows **응용 프로그램 및 서비스** 이벤트 로그(**Azure Information Protection**)를 확인합니다. 이 로그도 스캐너가 검사를 완료하면 결과 요약과 함께 보고합니다. 정보 이벤트 ID **911**을 찾아봅니다.
+    로컬 Windows **애플리케이션 및 서비스** 이벤트 로그(**Azure Information Protection**)를 확인합니다. 이 로그도 스캐너가 검사를 완료하면 결과 요약과 함께 보고합니다. 정보 이벤트 ID **911**을 찾아봅니다.
 
 3. %*localappdata*%\Microsoft\MSIP\Scanner\Reports에 저장되고 .csv 파일 형식인 보고서를 검토합니다. 스캐너의 기본 구성에서 자동 분류에 대한 조건을 충족하는 파일만이 이러한 보고서에 포함됩니다.
     
@@ -244,7 +244,7 @@ SharePoint에 대해 지원되는 버전: SharePoint Server 2016 및 SharePoint 
 
 그런 다음, 스캐너는 Windows IFilter를 사용하여 다음 파일 형식을 검색합니다. 이러한 파일 형식에 대해 레이블에 지정한 조건을 사용하여 문서의 레이블을 지정합니다.
 
-|응용 프로그램 유형|파일 형식|
+|애플리케이션 유형|파일 형식|
 |--------------------------------|-------------------------------------|
 |Word|.docx; .docm; .dotm; .dotx|
 |Excel|.xls; .xlt; .xlsx; .xltx; .xltm; .xlsm; .xlsb|
@@ -262,7 +262,7 @@ SharePoint에 대해 지원되는 버전: SharePoint Server 2016 및 SharePoint 
 
 마지막으로, 나머지 파일 형식은 스캐너가 검사하지 않지만 Azure Information Protection 정책의 기본 레이블 또는 스캐너에 대해 구성한 기본 레이블을 적용합니다.
 
-|응용 프로그램 유형|파일 형식|
+|애플리케이션 유형|파일 형식|
 |--------------------------------|-------------------------------------|
 |프로젝트|.mpp; .mpt|
 |게시자|.pub|
@@ -422,7 +422,7 @@ Azure Information Protection 스캐너에서 지원하는 다음 두 가지 대�
 
 ## <a name="event-log-ids-and-descriptions-for-the-scanner"></a>스캐너에 대한 이벤트 로그 ID 및 설명
 
-다음 섹션을 사용하여 스캐너에 가능한 이벤트 ID 및 설명을 식별합니다. Windows **응용 프로그램 및 서비스** 이벤트 로그 및 **Azure Information Protection**에서 스캐너 서비스를 실행하는 서버에서 이러한 이벤트를 기록합니다.
+다음 섹션을 사용하여 스캐너에 가능한 이벤트 ID 및 설명을 식별합니다. Windows **애플리케이션 및 서비스** 이벤트 로그 및 **Azure Information Protection**에서 스캐너 서비스를 실행하는 서버에서 이러한 이벤트를 기록합니다.
 
 -----
 

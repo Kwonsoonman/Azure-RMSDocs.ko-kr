@@ -29,7 +29,7 @@ Azure Information Protection 레이블을 만든 후에 사용자가 사용할 �
 
 ## <a name="to-add-or-remove-a-label-to-or-from-a-policy"></a>정책에 대해 레이블을 추가하거나 제거하려면
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
+1. Azure Portal에 로그인이 되어 있지 않다면, 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
@@ -49,7 +49,7 @@ Azure Information Protection 레이블을 만든 후에 사용자가 사용할 �
     
     - 레이블을 제거하려면 해당 확인란의 선택을 취소합니다.
   
-5. 변경 내용을 저장하려면 **Save**(저장)를 클릭합니다.
+5. 변경 내용을 저장하려면 **저장**을 클릭합니다.
    
     변경 내용은 사용자 및 서비스에 자동으로 제공됩니다. 더 이상 별도의 게시 옵션이 없습니다.
 

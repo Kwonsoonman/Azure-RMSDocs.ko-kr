@@ -39,7 +39,7 @@ Microsoft Azure에 등록한 후
 
 ![Azure 로그인](../media/AzurePortalLogin.png)
 
-- 포털의 왼쪽에 있는 **Active Directory** 응용 프로그램까지 이동합니다.
+- 포털의 왼쪽에 있는 **Active Directory** 애플리케이션까지 이동합니다.
 
 ![Active Directory 선택](../media/AzureADPick.png)
 
@@ -51,17 +51,17 @@ Microsoft Azure에 등록한 후
 
 ![활성화 선택](../media/RMTab.png)
 
-- 이제 디렉터리와 응용 프로그램을 차례로 선택하여 새로운 *네이티브 응용 프로그램*을 만듭니다.
+- 이제 디렉터리와 애플리케이션을 차례로 선택하여 새로운 *네이티브 애플리케이션*을 만듭니다.
 
-![응용 프로그램 선택](../media/CreateNativeApp.png)
+![애플리케이션 선택](../media/CreateNativeApp.png)
 
 - 이제 포털의 아래쪽, 가운데 부분에 있는 **추가** 단추를 선택합니다.
 
 ![추가 선택](../media/AddAppBtn.png)
 
-- 프롬프트에서 **내 조직에서 개발 중인 응용 프로그램 추가**를 선택합니다.
+- 프롬프트에서 **내 조직에서 개발 중인 애플리케이션 추가**를 선택합니다.
 
-![내 조직에서 개발 중인 응용 프로그램 추가 선택](../media/AddAnAppPick.png)
+![내 조직에서 개발 중인 애플리케이션 추가 선택](../media/AddAnAppPick.png)
 
 - **네이티브 클라이언트 응용 프로그램**과 **다음** 단추를 차례로 선택하여 응용 프로그램 이름을 지정합니다.
 
@@ -72,19 +72,19 @@ Microsoft Azure에 등록한 후
 
 ![리디렉션 URI 추가](../media/RedirectURI.png)
 
-- 디렉터리에서 응용 프로그램을 선택하고 **구성**을 선택합니다.
+- 디렉터리에서 애플리케이션을 선택하고 **구성**을 선택합니다.
 
 ![구성 선택](../media/ConfigYourApp.png)
 
 >[!NOTE]
 > **클라이언트 ID** 및 **리디렉션 URI**를 복사하고 RMS 클라이언트를 구성할 때 사용할 수 있도록 저장합니다.
 
-- 응용 프로그램 설정의 아래쪽으로 이동하고 **다른 응용 프로그램에 대한 권한**에서 **응용 프로그램 추가** 단추를 선택합니다.
+- 애플리케이션 설정의 아래쪽으로 이동하고 **다른 애플리케이션에 대한 권한**에서 **애플리케이션 추가** 단추를 선택합니다.
 
 >[!NOTE]
 > Windows Azure Active Directory용으로 표시된 **위임된 권한**은 기본적으로 올바릅니다. **로그인 및 사용자 프로필 읽기** 옵션 하나만 선택해야 합니다.
 
-![응용 프로그램 추가 선택](../media/PermissionsToOtherBtn.png)
+![애플리케이션 추가 선택](../media/PermissionsToOtherBtn.png)
 
 - **Microsoft Rights Management** 옆에 있는 더하기(+) 단추를 선택합니다.
 
@@ -94,11 +94,11 @@ Microsoft Azure에 등록한 후
 
 ![확인 표시 선택](../media/choosecheck01.png)
 
-- 이제 Azure RMS용 응용 프로그램에 대한 종속성을 추가할 준비가 되었습니다. 종속성을 추가하려면 **다른 응용 프로그램에 대한 사용 권한**에서 새로운 **Microsoft Rights Management Services** 항목을 선택하고 **위임된 권한:** 드롭 상자에서 **Create and access protected content for users(사용자의 보호된 콘텐츠 만들기 및 액세스)** 확인란을 선택합니다.
+- 이제 Azure RMS용 애플리케이션에 대한 종속성을 추가할 준비가 되었습니다. 종속성을 추가하려면 **다른 애플리케이션에 대한 사용 권한**에서 새로운 **Microsoft Rights Management Services** 항목을 선택하고 **위임된 권한:** 드롭 상자에서 **Create and access protected content for users(사용자의 보호된 콘텐츠 만들기 및 액세스)** 확인란을 선택합니다.
 
 ![사용 권한 설정](../media/AddDependency.png)
 
-- 포털의 아래쪽 가운데에 있는 **저장** 아이콘을 선택하여 응용 프로그램의 변경 사항을 유지합니다.
+- 포털의 아래쪽 가운데에 있는 **저장** 아이콘을 선택하여 애플리케이션의 변경 사항을 유지합니다.
 
 ![저장 선택](../media/SaveApplication.png)
 

@@ -36,7 +36,7 @@ Azure Rights Management 서비스가 활성화되어 있는데 AD RMS도 사용�
     
     이러한 레지스트리 구성에 대한 자세한 내용은 [Windows 레지스트리를 사용하여 클라이언트 쪽 서비스 검색 사용](./rms-client/client-deployment-notes.md#enabling-client-side-service-discovery-by-using-the-windows-registry) 및 [라이선스 서버 트래픽 리디렉션](./rms-client/client-deployment-notes.md#redirecting-licensing-server-traffic)을 참조하세요.   
 
-조직에 AD RMS가 배포된 경우 Azure Information Protection으로 마이그레이션할 수 있는지 여부를 고려하세요. Azure Information Protection은 AD RMS에 비교해 많은 이점이 있습니다. 예를 들어 모바일 장치에 대한 향상된 지원을 제공하는 것은 물론, Office 365 서비스, Exchange Server 및 SharePoint Server와의 통합이 향상되었습니다. 자세한 내용은 [Azure Information Protection 및 AD RMS 비교](compare-on-premise.md)를 참조하세요.
+조직에 AD RMS가 배포된 경우 Azure Information Protection으로 마이그레이션할 수 있는지 여부를 고려하세요. Azure Information Protection은 AD RMS에 비교해 많은 이점이 있습니다. 예를 들어 모바일 디바이스에 대한 향상된 지원을 제공하는 것은 물론, Office 365 서비스, Exchange Server 및 SharePoint Server와의 통합이 향상되었습니다. 자세한 내용은 [Azure Information Protection 및 AD RMS 비교](compare-on-premise.md)를 참조하세요.
 
 Azure Information Protection으로 마이그레이션하면 이전에 보호된 콘텐츠에 대한 액세스 권한을 잃지 않으므로 콘텐츠의 보호를 해제하거나 다시 보호할 필요가 없습니다. AD RMS로 보호된 문서 및 메일은 AD RMS의 프로비전을 해제한 후에도 여전히 열 수 있습니다.
 

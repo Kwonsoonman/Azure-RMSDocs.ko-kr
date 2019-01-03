@@ -32,12 +32,12 @@ ms.locfileid: "53305253"
 > 
 > 다른 조직의 누군가로부터 보호된 문서를 받았거나 PC에 대해 로컬 관리자 권한이 없으면 뷰어를 설치합니다.
 
-보호된 문서를 열 수 있으려면 응용 프로그램이 "RMS 지원" 프로그램이어야 합니다. Office 앱 및 Azure Information Protection 뷰어가 RMS 지원 응용 프로그램의 예입니다. 유형 및 지원되는 장치별로 응용 프로그램 목록을 보려면 [RMS 지원 응용 프로그램](../requirements-applications.md#rms-enlightened-applications) 표를 참조하세요.  
+보호된 문서를 열 수 있으려면 애플리케이션이 "RMS 지원" 프로그램이어야 합니다. Office 앱 및 Azure Information Protection 뷰어가 RMS 지원 애플리케이션의 예입니다. 유형 및 지원되는 디바이스별로 응용 프로그램 목록을 보려면 [RMS 지원 응용 프로그램](../requirements-applications.md#rms-enlightened-applications) 표를 참조하세요.  
 ## <a name="messagerpmsg-as-an-email-attachment"></a>Message.rpmsg를 메일 첨부 파일로 사용
 
-**message.rpmsg**를 메일 첨부 파일로 보는 경우 보호된 문서가 아니며 첨부 파일로 표시되는 보호된 메일 메시지입니다. Windows PC에서 이 보호된 메일 메시지를 보기 위해 Windows용 Azure Information Protection 뷰어를 사용할 수는 없습니다. 대신 Office Outlook과 같은 Rights Management 보호를 지원하는 Windows용 전자 메일 응용 프로그램이 필요합니다. 또는 웹용 Outlook을 사용할 수 있습니다.
+**message.rpmsg**를 메일 첨부 파일로 보는 경우 보호된 문서가 아니며 첨부 파일로 표시되는 보호된 메일 메시지입니다. Windows PC에서 이 보호된 메일 메시지를 보기 위해 Windows용 Azure Information Protection 뷰어를 사용할 수는 없습니다. 대신 Office Outlook과 같은 Rights Management 보호를 지원하는 Windows용 전자 메일 애플리케이션이 필요합니다. 또는 웹용 Outlook을 사용할 수 있습니다.
 
-그러나 iOS 또는 Android 장치에서는 Azure Information Protection 앱을 사용하여 이러한 보호된 메일 메시지를 열 수 있습니다. 이러한 모바일 장치용 앱은 Microsoft 웹 사이트의 [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) 페이지에서 다운로드할 수 있습니다.
+그러나 iOS 또는 Android 디바이스에서는 Azure Information Protection 앱을 사용하여 이러한 보호된 메일 메시지를 열 수 있습니다. 이러한 모바일 디바이스용 앱은 Microsoft 웹 사이트의 [Microsoft Azure Information Protection](https://go.microsoft.com/fwlink/?LinkId=303970) 페이지에서 다운로드할 수 있습니다.
 
 ## <a name="prompts-for-authentication"></a>인증 프롬프트
 
@@ -63,7 +63,7 @@ ms.locfileid: "53305253"
     
     권한 및 각 권한에 포함되는 사용 권한에 대한 자세한 내용은 [권한 수준에 포함된 권한](../configure-usage-rights.md#rights-included-in-permissions-levels)을 참조하세요.
 
-4. 파일을 편집하려면 **다른 이름으로 저장**을 클릭합니다. 이렇게 하면 보호된 파일을 원본 파일 이름 확장명으로 저장할 수 있습니다. 그런 다음 해당 파일 형식과 연결된 응용 프로그램을 사용하여 파일을 편집할 수 있습니다. 이때 파일의 레이블 및 보호가 제거됩니다.
+4. 파일을 편집하려면 **다른 이름으로 저장**을 클릭합니다. 이렇게 하면 보호된 파일을 원본 파일 이름 확장명으로 저장할 수 있습니다. 그런 다음 해당 파일 형식과 연결된 애플리케이션을 사용하여 파일을 편집할 수 있습니다. 이때 파일의 레이블 및 보호가 제거됩니다.
     
     뷰어는 보호된 파일을 위한 것이므로 **다른 이름으로 저장** 단추는 사용하면 보호된 파일에만 사용할 수 있습니다.
     

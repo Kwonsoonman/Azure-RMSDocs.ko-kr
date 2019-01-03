@@ -21,7 +21,7 @@ ms.locfileid: "53023798"
 
 *적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-이 페이지에서 지침을 사용하기 전에 [iOS 및 Android용 Azure Information Protection 앱에 대한 FAQ](mobile-app-faq.md)를 읽도록 합니다. 해당 페이지에서는 앱의 기능, 지원되는 장치 및 앱을 사용하는 방법에 대한 기본 정보를 설명합니다.
+이 페이지에서 지침을 사용하기 전에 [iOS 및 Android용 Azure Information Protection 앱에 대한 FAQ](mobile-app-faq.md)를 읽도록 합니다. 해당 페이지에서는 앱의 기능, 지원되는 디바이스 및 앱을 사용하는 방법에 대한 기본 정보를 설명합니다.
 
 대부분의 사용자는 일반적으로 보호된 메일 또는 파일을 열어야 할 때 Azure Information Protection 앱을 사용합니다. 하지만 사용자를 위해 앱을 테스트하려는 관리자이거나 단순히 필요하기 전에 사용해 보려는 경우 다음 지침을 따르면 됩니다.
 
@@ -30,11 +30,11 @@ ms.locfileid: "53023798"
 >
 > 마찬가지로 메시지가 표시될 때까지 앱에 로그인하지 않습니다.
 
-다음 지침을 사용하려면 모바일 장치에서 앱이 지원하는 파일 중 하나로 액세스해야 합니다. 예를 들면 다음과 같습니다.
+다음 지침을 사용하려면 모바일 디바이스에서 앱이 지원하는 파일 중 하나로 액세스해야 합니다. 예를 들면 다음과 같습니다.
 
 - **.rpmsg 파일**: 이 권한으로 보호된 메일 메시지는 모바일 장치의 메일 앱에서 권한 관리 데이터 보호를 기본적으로 지원하지 않는 경우 메일 메시지의 첨부 파일로 표시됩니다. 
     
-    모바일 장치에서 액세스할 수 있는 권한으로 보호된 메일 메시지를 다른 장치를 사용하여 자신에게 보냅니다. 예를 들어 Windows 컴퓨터에서 Outlook을 사용합니다. 권한 관리를 기본적으로 지원하는 메일 클라이언트 목록은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](../requirements-applications.md) 페이지에서 메일 열을 참조하세요.
+    모바일 디바이스에서 액세스할 수 있는 권한으로 보호된 메일 메시지를 다른 디바이스를 사용하여 자신에게 보냅니다. 예를 들어 Windows 컴퓨터에서 Outlook을 사용합니다. 권한 관리를 기본적으로 지원하는 메일 클라이언트 목록은 [Azure Rights Management 데이터 보호를 지원하는 애플리케이션](../requirements-applications.md) 페이지에서 메일 열을 참조하세요.
 
 - **권한으로 보호된 PDF 파일**: Windows 컴퓨터에서 Azure Information Protection 클라이언트를 사용하여 [PDF 파일을 보호](client-classify-protect.md)한 다음 권한으로 보호된 이 PDF 파일을 전자 메일에 첨부하여 본인에게 보냅니다. 또는 PDF 파일을 SharePoint 보호된 라이브러리로 업로드한 다음 메일 주소를 사용하여 이 파일을 공유합니다.
 

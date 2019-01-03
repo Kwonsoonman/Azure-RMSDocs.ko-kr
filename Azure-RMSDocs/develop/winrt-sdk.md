@@ -41,11 +41,11 @@ Windows 스토어 애플리케이션에서 Microsoft Rights Management SDK 4.2�
 -   Windows 스토어 애플리케이션용 MS RMS SDK 4.2 패키지 자세한 내용은 [시작](get-started.md)을 참조하세요.
 -   인증 라이브러리: [Azure AD 인증 라이브러리](https://msdn.microsoft.com/library/jj573266.aspx)를 사용하는 것이 좋지만 다른 인증 라이브러리를 사용할 수도 있습니다.
 
-API 업데이트, 장치 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
+API 업데이트, 디바이스 및 환경 정보, 릴리스 정보 및 FAQ(질문과 대답)에 대한 자세한 내용은 [새로운 기능](release-notes.md) 항목을 참조하세요.
 
 ## <a name="optional"></a>선택 사항
 
-UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 개발자에게 사용 및 보호 작업을 위한 다시 사용 가능한 UI를 제공합니다([Windows 스토어 앱용 UI 라이브러리](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore)). 또한 Windows 스토어 앱 샘플 응용 프로그램인 [Windows 스토어용 RMS 샘플 응용 프로그램](https://github.com/AzureADSamples/rms-samples-for-windowsstore)도 제공합니다.
+UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 개발자에게 사용 및 보호 작업을 위한 다시 사용 가능한 UI를 제공합니다([Windows 스토어 앱용 UI 라이브러리](https://github.com/AzureAD/rms-sdk-ui-for-windowsstore)). 또한 Windows 스토어 앱 샘플 애플리케이션인 [Windows 스토어용 RMS 샘플 애플리케이션](https://github.com/AzureADSamples/rms-samples-for-windowsstore)도 제공합니다.
 
 ## <a name="configuring-your-development-environment"></a>개발 환경 구성
 

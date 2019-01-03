@@ -16,7 +16,7 @@ ms.locfileid: "51297836"
 ---
 # <a name="auditing-in-the-mip-sdk-file-api"></a>MIP SDK 파일 API의 감사
 
-Azure Information Protection 관리 포털은 관리자 보고서에 대한 액세스 권한을 제공합니다. 이러한 보고서는 사용자가 MIP SDK를 통합한 모든 응용 프로그램에서 수동 또는 자동으로 적용하는 레이블에 대한 가시성을 제공합니다. SDK를 사용하는 개발 파트너는 응용 프로그램의 정보가 고객 보고서에 표시되도록 이 기능을 쉽게 지원할 수 있습니다.
+Azure Information Protection 관리 포털은 관리자 보고서에 대한 액세스 권한을 제공합니다. 이러한 보고서는 사용자가 MIP SDK를 통합한 모든 애플리케이션에서 수동 또는 자동으로 적용하는 레이블에 대한 가시성을 제공합니다. SDK를 사용하는 개발 파트너는 애플리케이션의 정보가 고객 보고서에 표시되도록 이 기능을 쉽게 지원할 수 있습니다.
 
 ## <a name="event-types"></a>이벤트 유형
 
@@ -24,7 +24,7 @@ SDK를 통해 Azure Information Protection Analytics에 제출할 수 있는 세
 
 ### <a name="heartbeat-events"></a>하트비트 이벤트
 
-하트비트 이벤트는 파일 API를 통합한 모든 응용 프로그램에 대해 자동으로 생성됩니다. 하트비트 이벤트에는 다음이 포함됩니다.
+하트비트 이벤트는 파일 API를 통합한 모든 애플리케이션에 대해 자동으로 생성됩니다. 하트비트 이벤트에는 다음이 포함됩니다.
 
 * TenantId
 * 생성 시간
@@ -32,13 +32,13 @@ SDK를 통해 Azure Information Protection Analytics에 제출할 수 있는 세
 * 감사가 생성된 머신의 이름
 * 프로세스 이름
 * 플랫폼
-* 응용 프로그램 ID - Azure AD 응용 프로그램 ID에 해당합니다.
+* 애플리케이션 ID - Azure AD 애플리케이션 ID에 해당합니다.
 
-이러한 이벤트는 Microsoft Information Protection SDK를 사용하는 엔터프라이즈 전체의 응용 프로그램을 검색하는 데 유용합니다.
+이러한 이벤트는 Microsoft Information Protection SDK를 사용하는 엔터프라이즈 전체의 애플리케이션을 검색하는 데 유용합니다.
 
 ### <a name="discovery-events"></a>검색 이벤트
 
-검색 이벤트는 파일 API에서 읽거나 사용하는 레이블이 지정된 정보에 대한 정보를 제공합니다. 이러한 이벤트는 조직 전체의 정보에 액세스하는 장치, 위치 및 사용자를 나타낼 때 유용합니다.
+검색 이벤트는 파일 API에서 읽거나 사용하는 레이블이 지정된 정보에 대한 정보를 제공합니다. 이러한 이벤트는 조직 전체의 정보에 액세스하는 디바이스, 위치 및 사용자를 나타낼 때 유용합니다.
 
 이러한 이벤트는 새 `mip::FileHandler`를 만들 때 `AuditDiscoveryEnabled` 매개 변수를 true로 설정하여 Azure Information Protection Analytics에 제출됩니다. 또한 사람이 읽을 수 있는 몇 가지 형식의 파일을 식별하는 콘텐츠 식별자가 제공됩니다. 이 식별자에 대한 파일 경로를 사용하는 것이 좋습니다.
 

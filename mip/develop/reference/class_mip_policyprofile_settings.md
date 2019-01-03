@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 07cbcbc022c02a43f751e1cf55b5b0efdfb816d1
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446913"
@@ -24,10 +24,10 @@ public Settings(const std::string& path, bool useInMemoryStorage, const std::sha
  public bool GetUseInMemoryStorage() const  |  메모리 저장소에 사용 플래그를 가져옵니다.
 public const std::shared_ptr<AuthDelegate>& GetAuthDelegate() const  |  인증 대리자를 가져옵니다.
 public const std::shared_ptr<PolicyProfile::Observer>& GetObserver() const  |  이벤트 관찰자를 가져옵니다.
- public const ApplicationInfo GetApplicationInfo() const  |  응용 프로그램 정보를 가져옵니다.
-public std::shared_ptr<LoggerDelegate> GetLoggerDelegate() const  |  응용 프로그램에서 제공하는 로거 대리자를 가져옵니다(있는 경우).
+ public const ApplicationInfo GetApplicationInfo() const  |  애플리케이션 정보를 가져옵니다.
+public std::shared_ptr<LoggerDelegate> GetLoggerDelegate() const  |  애플리케이션에서 제공하는 로거 대리자를 가져옵니다(있는 경우).
 public void SetLoggerDelegate(const std::shared_ptr<LoggerDelegate>& loggerDelegate)  |  기본 로거를 재정의합니다.
-public std::shared_ptr<HttpDelegate> GetHttpDelegate() const  |  응용 프로그램에서 제공하는 HTTP 대리자(있는 경우)를 가져옵니다.
+public std::shared_ptr<HttpDelegate> GetHttpDelegate() const  |  애플리케이션에서 제공하는 HTTP 대리자(있는 경우)를 가져옵니다.
 public void SetHttpDelegate(const std::shared_ptr<HttpDelegate>& httpDelegate)  |  기본 HTTP 스택을 클라이언트 고유 스택으로 재정의합니다.
  public void OptOutTelemetry()  |  모든 원격 분석 수집을 옵트아웃합니다.
  public bool IsTelemetryOptedOut() const  |  원격 분석 수집을 사용하지 않아야 하는지 여부를 가져옵니다.
@@ -81,13 +81,13 @@ public void SetHttpDelegate(const std::shared_ptr<HttpDelegate>& httpDelegate)  
 **반환**: 이벤트 관찰자.
   
 ### <a name="applicationinfo"></a>ApplicationInfo
-응용 프로그램 정보를 가져옵니다.
+애플리케이션 정보를 가져옵니다.
 
   
 **반환**: 응용 프로그램 정보.
   
 ### <a name="loggerdelegate"></a>LoggerDelegate
-응용 프로그램에서 제공하는 로거 대리자를 가져옵니다(있는 경우).
+애플리케이션에서 제공하는 로거 대리자를 가져옵니다(있는 경우).
 
   
 **반환**: 로거
@@ -99,10 +99,10 @@ public void SetHttpDelegate(const std::shared_ptr<HttpDelegate>& httpDelegate)  
 * **loggerDelegate**: 클라이언트 응용 프로그램이 구현하는 로깅 콜백 인터페이스
 
 
-이 메서드는 자체 로거 구현을 사용하는 클라이언트 응용 프로그램에서 이를 호출해야 합니다.
+이 메서드는 자체 로거 구현을 사용하는 클라이언트 애플리케이션에서 이를 호출해야 합니다.
   
 ### <a name="httpdelegate"></a>HttpDelegate
-응용 프로그램에서 제공하는 HTTP 대리자(있는 경우)를 가져옵니다.
+애플리케이션에서 제공하는 HTTP 대리자(있는 경우)를 가져옵니다.
 
   
 **반환**: HTTP 작업에 사용할 Http 대리자

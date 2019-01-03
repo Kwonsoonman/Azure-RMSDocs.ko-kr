@@ -1,6 +1,6 @@
 ---
 title: Azure RMS 템플릿 새로 고침 - AIP
-description: Azure Rights Management 서비스를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다.
+description: Azure Rights Management 서비스를 사용하는 경우 사용자가 애플리케이션에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -21,24 +21,24 @@ ms.locfileid: "53305287"
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), [Office 365](https://download.microsoft.com/download/E/C/F/ECF42E71-4EC0-48FF-AA00-577AC14D5B5C/Azure_Information_Protection_licensing_datasheet_EN-US.pdf)*
 
-Azure Information Protection의 Azure Rights Management 서비스를 사용하는 경우 사용자가 응용 프로그램에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다.
+Azure Information Protection의 Azure Rights Management 서비스를 사용하는 경우 사용자가 애플리케이션에서 선택할 수 있도록 템플릿이 자동으로 클라이언트 컴퓨터로 다운로드됩니다. 그렇지만 템플릿을 변경하려면 다음의 추가 단계를 진행해야 할 수도 있습니다.
 
-|응용 프로그램 또는 서비스|템플릿을 변경한 후 새로 고침하는 방법|
+|애플리케이션 또는 서비스|템플릿을 변경한 후 새로 고침하는 방법|
 |--------------------------|---------------------------------------------|
 |Exchange Online<br /><br />전송 규칙 및 Outlook Web App에 적용 가능 |1 시간 내에 자동으로 새로 고침 - 추가 단계가 필요하지 않습니다.<br /><br />이것은 [새로운 기능을 갖춘 Office 365 메시지 암호화](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)를 사용하는 경우입니다. 이전에 TPD(트러스트된 게시 도메인)를 가져와서 Azure Rights Management 서비스를 사용하도록 Exchange Online을 구성한 경우 동일한 지침 집합을 사용하여 Exchange Online의 새로운 기능을 사용하도록 설정하십시오.|
-|Azure Information Protection 클라이언트|클라이언트에서 Azure Information Protection 정책을 새로 고칠 때마다 자동으로 새로 고침:<br /><br /> - Azure Information Protection 막대를 지원하는 Office 응용 프로그램이 열릴 때. <br /><br /> - 마우스 오른쪽 단추를 클릭하여 파일 또는 폴더를 분류 및 보호하려 할 때. <br /><br /> - 레이블 지정 및 보호를 위해 PowerShell cmdlet을 실행할 때(Get-AIPFileStatus 및 Set-AIPFileLabel).<br /><br /> - Azure Information Protection 스캐너 서비스가 시작될 때 및 로컬 정책이 1시간보다 오래되었을 때. 또한 스캐너 서비스는 매시간 변경 내용을 확인하고 이러한 변경 내용을 다음 검색 주기에 사용합니다.<br /><br /> - 24시간마다.<br /><br /> 또한 이 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 클라이언트에서도 새로 고쳐집니다.|
+|Azure Information Protection 클라이언트|클라이언트에서 Azure Information Protection 정책을 새로 고칠 때마다 자동으로 새로 고침:<br /><br /> - Azure Information Protection 막대를 지원하는 Office 애플리케이션이 열릴 때. <br /><br /> - 마우스 오른쪽 단추를 클릭하여 파일 또는 폴더를 분류 및 보호하려 할 때. <br /><br /> - 레이블 지정 및 보호를 위해 PowerShell cmdlet을 실행할 때(Get-AIPFileStatus 및 Set-AIPFileLabel).<br /><br /> - Azure Information Protection 스캐너 서비스가 시작될 때 및 로컬 정책이 1시간보다 오래되었을 때. 또한 스캐너 서비스는 매시간 변경 내용을 확인하고 이러한 변경 내용을 다음 검색 주기에 사용합니다.<br /><br /> - 24시간마다.<br /><br /> 또한 이 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 클라이언트에서도 새로 고쳐집니다.|
 |Azure Information Protection 통합 레이블 지정 클라이언트(미리 보기)|Office 앱당 4시간마다 자동으로 새로 고침 됩니다.<br /><br /> 또한 이 클라이언트가 Office와 긴밀하게 통합되어 있기 때문에, Office 2016 또는 Office 2013에서 새로 고친 템플릿은 Azure Information Protection 통합 레이블 지정 클라이언트에서도 새로 고쳐집니다.|
-|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 응용 프로그램|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 애플리케이션의 경우: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 애플리케이션: 변경된 사용자 지정 템플릿을 강제로 새로 고침하는 방법](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
+|Office 2016 및 Office 2013<br /><br />Windows용 RMS 공유 애플리케이션|일정에 따라 자동으로 새로 고침:<br /><br />이러한 최신 버전 Office의 경우: 기본 새로 고침 간격은 7일입니다.<br /><br />Windows용 RMS 공유 애플리케이션의 경우: 1.0.1784.0 버전부터 기본 새로 고침 간격은 1일입니다. 이전 버전의 기본 새로 고침 간격은 7일입니다.<br /><br />이 일정보다 자주 새로 고침을 강제로 적용하려면 [Office 2016, Office 2013 및 Windows용 RMS 공유 애플리케이션: 변경된 사용자 지정 템플릿을 강제로 새로 고침하는 방법](#office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template) 섹션을 참조하세요.|
 |Office 2010|사용자가 Windows에서 로그아웃했다가 다시 로그인하고 1시간까지 기다리면 자동으로 새로 고침됩니다.|
 |Exchange 온-프레미스와 Rights Management 커넥터<br /><br />전송 규칙 및 Outlook Web App에 적용 가능|자동으로 새로 고침 - 추가 단계 불필요 Outlook Web App은 하루 동안 UI를 캐시합니다.|
 |Mac용 Office 2016|자동으로 새로 고침 - 추가 단계 불필요|
 |Mac 컴퓨터용 RMS 공유 앱|자동으로 새로 고침 - 추가 단계 불필요|
 |[민감도 기능을 지원하는](https://support.office.com/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9?ad=US&ui=en-US&rs=en-US#bkmk_whereavailable) Office 앱|이러한 클라이언트는 템플릿을 다운로드하지 않지만, 추가 단계를 수행할 필요 없이 온라인으로 템플릿에 액세스합니다.|
 
-클라이언트 응용 프로그램에서 템플릿을 다운로드해야 하는 경우(처음에 또는 변경 내용을 위해 새로 고칠 때) 다운로드가 완료되고 새 또는 업데이트된 템플릿이 완전히 작동하기까지 최대 15분이 걸립니다. 실제 시간은 템플릿 구성의 크기 및 복잡도, 네트워크 연결 등 여러 요소에 따라 다릅니다. 
+클라이언트 애플리케이션에서 템플릿을 다운로드해야 하는 경우(처음에 또는 변경 내용을 위해 새로 고칠 때) 다운로드가 완료되고 새 또는 업데이트된 템플릿이 완전히 작동하기까지 최대 15분이 걸립니다. 실제 시간은 템플릿 구성의 크기 및 복잡도, 네트워크 연결 등 여러 요소에 따라 다릅니다. 
 
 ## <a name="office-2016--office-2013-and-rms-sharing-application-for-windows-how-to-force-a-refresh-for-a-changed-custom-template"></a>Office 2016, Office 2013 및 Windows용 RMS 공유 응용 프로그램: 변경된 사용자 지정 템플릿을 강제로 새로 고침하는 방법
-Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 프로그램을 실행 중인 컴퓨터에서 레지스트리를 편집하여 컴퓨터에서 변경된 템플릿을 기본값보다 더 자주 새로 고치도록 자동 일정을 변경할 수 있습니다. 또한 레지스트리의 기존 데이터를 삭제하여 즉각적인 새로 고침을 강제 실행할 수 있습니다.
+Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 애플리케이션을 실행 중인 컴퓨터에서 레지스트리를 편집하여 컴퓨터에서 변경된 템플릿을 기본값보다 더 자주 새로 고치도록 자동 일정을 변경할 수 있습니다. 또한 레지스트리의 기존 데이터를 삭제하여 즉각적인 새로 고침을 강제 실행할 수 있습니다.
 
 > [!WARNING]
 > 레지스트리 편집기를 잘못 사용하면 운영 체제를 재설치해야 할 만큼 심각한 문제가 유발될 수 있습니다. 레지스트리 편집기를 잘못 사용하여 발생하는 문제는 해결할 수 있다는 보장이 없습니다. 레지스트리 편집기 사용에 따른 위험은 사용자가 책임져야 합니다.
@@ -65,7 +65,7 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
 
     두 레지스트리 값 모두가 아니라 둘 중 하나만 만들어 설정해야 합니다. 모두 있는 경우 **TemplateUpdateFrequency** 를 무시합니다.
 
-2.  템플릿의 즉시 새로 고침을 강제 실행한 경우 다음 절차를 진행합니다. 그렇지 않으면 Office 응용 프로그램과 파일 탐색기 인스턴스를 지금 다시 시작합니다.
+2.  템플릿의 즉시 새로 고침을 강제 실행한 경우 다음 절차를 진행합니다. 그렇지 않으면 Office 애플리케이션과 파일 탐색기 인스턴스를 지금 다시 시작합니다.
 
 ### <a name="to-force-an-immediate-refresh"></a>즉시 새로 고침을 강제 실행하려면
 
@@ -90,9 +90,9 @@ Office 2016, Office 2013 또는 Windows용 RMS(Rights Management) 공유 응용 
     >
     >**5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com**
 
-2.  다음 폴더와, 그 안의 모든 파일을 삭제합니다. **%localappdata%\Microsoft\MSIPC\Templates**
+2.  다음 위치의 **%localappdata%\Microsoft\MSIPC\Templates** 폴더와 그 안의 모든 파일을 삭제합니다. 
 
-3.  Office 응용 프로그램과 파일 탐색기 인스턴스를 지금 시작합니다.
+3.  Office 응용 프로그램과 파일 탐색기를 다시 시작합니다.
 
 
 ## <a name="see-also"></a>참고 항목

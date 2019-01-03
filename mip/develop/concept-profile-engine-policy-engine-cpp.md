@@ -1,6 +1,6 @@
 ---
 title: 개념 - 정책 API 엔진 개체
-description: 이 문서는 응용 프로그램 초기화 중에 생성된 정책 엔진 개체의 개념을 이해하는 데 도움이 됩니다.
+description: 이 문서는 애플리케이션 초기화 중에 생성된 정책 엔진 개체의 개념을 이해하는 데 도움이 됩니다.
 author: BryanLa
 ms.service: information-protection
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 07e0fc59e0ed5ec1fc66fe3179fce07dfcb687d1
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47445277"

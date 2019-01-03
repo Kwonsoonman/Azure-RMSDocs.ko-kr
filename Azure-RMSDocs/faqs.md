@@ -54,11 +54,11 @@ Azure Rights Management 데이터 보호를 포함하는 Office 365 구독이 �
 
 Windows용 Azure Information Protection 클라이언트가 설치되어 있고 Azure Information Protection 정책이 없는 경우는 클라이언트가 자동으로 [보호 전용 모드](./rms-client/client-protection-only-mode.md)에서 작동합니다. 이 모드에서 사용자는 Rights Management 템플릿과 사용자 지정 권한을 쉽게 적용할 수 있습니다. 나중에 분류 및 레이블 지정이 포함된 구독을 구입하면 Azure Information Protection 정책을 다운로드할 때 클라이언트가 자동으로 표준 모드로 전환됩니다.
 
-현재 Windows용 Rights Management 공유 응용 프로그램을 사용하고 있다면 이 응용 프로그램을 Azure Information Protection 클라이언트로 교체하는 것이 좋습니다. 공유 응용 프로그램에 대한 지원은 2019년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 응용 프로그램으로 수행해왔던 작업](./rms-client/upgrade-client-app.md)을 참조하세요.
+현재 Windows용 Rights Management 공유 애플리케이션을 사용하고 있다면 이 애플리케이션을 Azure Information Protection 클라이언트로 교체하는 것이 좋습니다. 공유 애플리케이션에 대한 지원은 2019년 1월 31일에 종료됩니다. 전환에 관한 도움말은 [RMS 공유 애플리케이션으로 수행해왔던 작업](./rms-client/upgrade-client-app.md)을 참조하세요.
 
 ## <a name="do-you-need-to-be-a-global-admin-to-configure-azure-information-protection-or-can-i-delegate-to-other-administrators"></a>Azure Information Protection을 구성하려면 전역 관리자여야 하나요? 또는 다른 관리자에게 위임할 수 있나요?
 
-분명 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
+물론 Office 365 테넌트 또는 Azure AD 테넌트에 대한 전역 관리자는 Azure Information Protection에 대한 모든 관리 작업을 실행할 수 있습니다. 그러나 다른 사용자에게 관리 권한을 할당하려는 경우 다음 옵션을 사용할 수 있습니다.
 
 - **Information Protection 관리자**: 이 Azure Active Directory 관리자 역할을 통해 관리자는 Azure Information Protection의 모든 측면을 구성할 수 있지만 다른 서비스는 구성할 수 없습니다. 이 역할을 가진 관리자는 Azure Rights Management 보호 서비스를 활성화 및 비활성화하고 보호 설정 및 레이블을 구성하며 Azure Information Protection 정책을 구성할 수 있습니다. 또한 이 역할을 가진 관리자는 모든 [Azure Information Protection 클라이언트](./rms-client/client-admin-guide-powershell.md) 및 [AADRM 모듈](administer-powershell.md)의 PowerShell cmdlet을 모두 실행할 수 있습니다. 
     
@@ -98,7 +98,7 @@ Azure Information Protection은 데이터베이스 파일, 일정 항목, PowerB
 
 예, 이제 공개 미리 보기용으로 Azure Information Protection에 대한 Azure AD의 조건부 액세스를 구성할 수 있습니다.
 
-이제 사용자가 Azure Information Protection에서 보호하는 문서를 열 때 관리자는 표준 조건부 액세스 제어에 따라 해당 테넌트의 사용자에게 액세스 권한을 부여할 수 있습니다. MFA(Multi-Factor Authentication)는 가장 공통적으로 요청되는 조건 중 하나입니다. 다른 한 가지 조건은 장치가 [Intune 정책을 준수](/intune/conditional-access-intune-common-ways-use)해야 한다는 점입니다. 예를 들어 모바일 장치가 암호 요구 사항 및 최소 운영 체제 버전을 충족하고 컴퓨터가 도메인에 가입되어 있어야 합니다.
+이제 사용자가 Azure Information Protection에서 보호하는 문서를 열 때 관리자는 표준 조건부 액세스 제어에 따라 해당 테넌트의 사용자에게 액세스 권한을 부여할 수 있습니다. MFA(Multi-Factor Authentication)는 가장 공통적으로 요청되는 조건 중 하나입니다. 다른 한 가지 조건은 디바이스가 [Intune 정책을 준수](/intune/conditional-access-intune-common-ways-use)해야 한다는 점입니다. 예를 들어 모바일 디바이스가 암호 요구 사항 및 최소 운영 체제 버전을 충족하고 컴퓨터가 도메인에 가입되어 있어야 합니다.
 
 자세한 내용과 일부 연습 예제는 블로그 게시물 [Azure Information Protection용 조건부 액세스 정책](https://cloudblogs.microsoft.com/enterprisemobility/2017/10/17/conditional-access-policies-for-azure-information-protection/)을 참조하세요.
 

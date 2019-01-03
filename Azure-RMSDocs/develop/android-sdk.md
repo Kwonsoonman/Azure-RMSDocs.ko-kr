@@ -65,14 +65,14 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
  
 -   Eclipse 개발 환경을 엽니다.
--   새 Android 응용 프로그램 프로젝트를 만들려면 **File** 메뉴에서 **New**를 클릭하고 **Project**를 클릭한 다음 **Android Application Project**를 선택합니다.
+-   새 Android 애플리케이션 프로젝트를 만들려면 **File** 메뉴에서 **New**를 클릭하고 **Project**를 클릭한 다음 **Android Application Project**를 선택합니다.
 
-    ![새 Android 응용 프로그램 만들기](../media/Android-setup-01c.png)
+    ![새 Android 애플리케이션 만들기](../media/Android-setup-01c.png)
 
--   응용 프로그램 이름을 입력합니다. 응용 프로그램 이름에 따라 프로젝트 이름 및 패키지 이름이 채워집니다.
+-   애플리케이션 이름을 입력합니다. 애플리케이션 이름에 따라 프로젝트 이름 및 패키지 이름이 채워집니다.
 -   **Next**를 클릭하고 작업 영역을 만들려는 위치를 선택합니다.
 
-    ![응용 프로그램 이름 입력](../media/Android-setup-02a.jpg)
+    ![애플리케이션 이름 입력](../media/Android-setup-02a.jpg)
 
 -   **Next**를 클릭하고 앱 아이콘을 선택합니다.
 
@@ -107,7 +107,7 @@ UI 라이브러리는 고유한 사용자 지정 UI를 만들지 않으려는 �
 
 -   **Finish**를 클릭하면 SDK 프로젝트가 이전에 만든 응용 프로그램의 형제로 나타납니다.
 
-    ![응용 프로그램의 형제로 표시되는 SDK 프로젝트](../media/Android-setup-09.jpg)
+    ![애플리케이션의 형제로 표시되는 SDK 프로젝트](../media/Android-setup-09.jpg)
 
 -   **Project** 아이콘을 마우스 오른쪽 단추로 클릭하고 프로젝트의 속성을 봅니다.
 -   **Android** 탭으로 이동합니다.

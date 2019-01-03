@@ -37,13 +37,13 @@ Azure Information Protection을 사용하여 가장 중요한 문서와 이메�
 
 보호하는 문서 및 이메일은 클라우드 또는 온-프레미스 환경에 저장할 수 있습니다 이 클라우드 기반 키에 대한 보호 프로세스 작동 방식에 대한 자세한 내용은 [Azure Rights Management란?](what-is-azure-rms.md )를 참조하세요.
 
-테넌트용 Office 365 서비스 및 클라우드 기반 응용 프로그램은 Azure Information Protection과 통합되어 검색, 인덱싱, 보관 및 맬웨어 방지 서비스와 같은 중요한 비즈니스 기능이 Azure Information Protection의 보호를 받는 콘텐츠에 대해 원활하게 작동합니다. 이러한 시나리오에 대한 암호화된 콘텐츠를 읽을 수 있는 이 기능은 종종 "데이터에 대한 추론"이라고 합니다. 예를 들어 Exchange Online에서 맬웨어 검사를 위한 이메일의 암호를 해독하고 암호화된 이메일에 대한 DLP(데이터 손실 방지) 규칙을 실행하는 기능입니다.
+테넌트용 Office 365 서비스 및 클라우드 기반 애플리케이션은 Azure Information Protection과 통합되어 검색, 인덱싱, 보관 및 맬웨어 방지 서비스와 같은 중요한 비즈니스 기능이 Azure Information Protection의 보호를 받는 콘텐츠에 대해 원활하게 작동합니다. 이러한 시나리오에 대한 암호화된 콘텐츠를 읽을 수 있는 이 기능은 종종 "데이터에 대한 추론"이라고 합니다. 예를 들어 Exchange Online에서 맬웨어 검사를 위한 이메일의 암호를 해독하고 암호화된 이메일에 대한 DLP(데이터 손실 방지) 규칙을 실행하는 기능입니다.
 
-그러나 규정 요구 사항에 따라 일부 조직에서는 클라우드로부터 격리된 키를 사용하여 콘텐츠를 암호화해야 할 수 있습니다. 이러한 격리는 온-프레미스 응용 프로그램 및 온-프레미스 서비스에서만 암호화된 콘텐츠를 읽을 수 있음을 의미합니다. 이 키 관리 옵션은 Azure Information Protection에서 지원되며 "hold your own key" 또는 HYOK라고 합니다. Azure Information Protection을 HYOK와 함께 사용하면 테넌트가 클라우드 기반 키와 온 프레미스 키를 모두 갖게 됩니다.
+그러나 규정 요구 사항에 따라 일부 조직에서는 클라우드로부터 격리된 키를 사용하여 콘텐츠를 암호화해야 할 수 있습니다. 이러한 격리는 온-프레미스 애플리케이션 및 온-프레미스 서비스에서만 암호화된 콘텐츠를 읽을 수 있음을 의미합니다. 이 키 관리 옵션은 Azure Information Protection에서 지원되며 "hold your own key" 또는 HYOK라고 합니다. Azure Information Protection을 HYOK와 함께 사용하면 테넌트가 클라우드 기반 키와 온 프레미스 키를 모두 갖게 됩니다.
 
 ## <a name="hyok-guidance-and-best-practices"></a>HYOK 지침 및 모범 사례
 
-클라우드로부터 암호화 키를 격리해야 하는 문서 및 이메일에만 HYOK 보호 기능을 사용합니다. HYOK 보호는 클라우드 기반 키 보호를 사용할 때 얻을 수 있는 이점을 제공하지 않으며 종종 "데이터 불투명도"를 희생합니다. 이는 온-프레미스 응용 프로그램 및 서비스만 HYOK 보호 데이터를 열 수 있음을 의미합니다. 클라우드 기반 서비스 및 애플리케이션은 HYOK 보호 데이터를 추론할 수 없습니다.
+클라우드로부터 암호화 키를 격리해야 하는 문서 및 이메일에만 HYOK 보호 기능을 사용합니다. HYOK 보호는 클라우드 기반 키 보호를 사용할 때 얻을 수 있는 이점을 제공하지 않으며 종종 "데이터 불투명도"를 희생합니다. 이는 온-프레미스 애플리케이션 및 서비스만 HYOK 보호 데이터를 열 수 있음을 의미합니다. 클라우드 기반 서비스 및 애플리케이션은 HYOK 보호 데이터를 추론할 수 없습니다.
 
 HYOK 보호 기능을 사용하는 조직도 일반적으로 보호해야 하는 문서가 적은 경우에 적합합니다. 문서에 대해서만 사용하고 다음 기준에 모두 일치할 경우 사용하세요.
 
@@ -63,7 +63,7 @@ HYOK 보호를 적용하려면 Azure Information Protection 레이블을 사용�
 
 다음 표는 HYOK용으로 구성된 레이블을 사용하고 HYOK로 보호되는 콘텐츠를 열어(사용하여) 콘텐츠 보호에 지원되는 시나리오를 나열합니다.
 
-|플랫폼|응용 프로그램|지원됨|
+|플랫폼|애플리케이션|지원됨|
 |----------------------|----------|-----------|
 |Windows|Office 2016 및 Office 2013을 사용하는 Azure Information Protection 클라이언트 <br /><br />- Word, Excel, PowerPoint|보호: 예<br /><br />소비: 예|
 |Windows|Office 2016 및 Office 2013을 사용하는 Azure Information Protection 클라이언트 <br /><br />- Outlook|보호: 예<br /><br />소비: 예|
@@ -94,7 +94,7 @@ HYOK 보호를 적용하려면 Azure Information Protection 레이블을 사용�
 
 - Office 365 서비스 및 기타 온라인 서비스는 HYOK 보호 문서 및 이메일을 해독하여 콘텐츠를 검사하고 이에 대한 조치를 취할 수 없습니다. 이 제한 사항은 Rights Management 커넥터로 보호된 HYOK 보호 문서 및 이메일까지 확장됩니다. 
     
-    HYOK 보호 이메일에 대한 이러한 기능 손실에는 맬웨어 검사기, DLP(데이터 손실 방지) 솔루션, 메일 라우팅 규칙, 저널링, eDiscovery, 보관 솔루션 및 Exchange ActiveSync가 포함됩니다. 또한 사용자가 일부 장치에서 HYOK 보호 이메일을 열 수 없는 이유를 알지 못해 헬프 데스크로 전화할 수 있습니다. 이러한 많은 제한 사항 때문에 이메일에는 HYOK 보호를 사용하지 않는 것이 좋습니다.
+    HYOK 보호 이메일에 대한 이러한 기능 손실에는 맬웨어 검사기, DLP(데이터 손실 방지) 솔루션, 메일 라우팅 규칙, 저널링, eDiscovery, 보관 솔루션 및 Exchange ActiveSync가 포함됩니다. 또한 사용자가 일부 디바이스에서 HYOK 보호 이메일을 열 수 없는 이유를 알지 못해 헬프 데스크로 전화할 수 있습니다. 이러한 많은 제한 사항 때문에 이메일에는 HYOK 보호를 사용하지 않는 것이 좋습니다.
 
 ## <a name="implementing-hyok"></a>HYOK 구현
 
@@ -153,7 +153,7 @@ AD RMS 배포는 Azure Information Protection 레이블에 대해 HYOK 보호를
     - Office 2016용 Microsoft Installer(.msi) 기반 버전: [2018년 3월 6일에 릴리스된 Microsoft Office 2016용 업데이트 4018295](https://support.microsoft.com/en-us/help/4018295/march-6-2018-update-for-office-2016-kb4018295)를 설치했습니다.
 
 > [!IMPORTANT]
-> HYOK 보호에서 제공하는 높은 보증을 충족하려면 AD RMS 서버가 DMZ에 있지 않고 잘 관리된 장치에서만 사용하는 것이 좋습니다. 
+> HYOK 보호에서 제공하는 높은 보증을 충족하려면 AD RMS 서버가 DMZ에 있지 않고 잘 관리된 디바이스에서만 사용하는 것이 좋습니다. 
 > 
 > 또한 AD RMS 배포가 위반되거나 손상되는 경우 SLC(서버 사용 허가자 인증서)의 개인 키가 노출되거나 도난당하지 않도록 AD RMS 클러스터에서 HSM(하드웨어 보안 모듈)을 사용하는 것이 좋습니다. 
 

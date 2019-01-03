@@ -28,13 +28,13 @@ ms.locfileid: "53173692"
 
 ## <a name="using-the-microsoft-rights-management-sdk42---key-scenarios"></a>Microsoft Rights Management SDK 4.2 사용 - 주요 시나리오
 
-이러한 코드 샘플은 이 SDK를 이해하는 데 중요한 개발 시나리오를 나타내는 더 큰 응용 프로그램 예제에서 가져옵니다. 다음을 사용하는 방법을 보여줍니다.
+이러한 코드 샘플은 이 SDK를 이해하는 데 중요한 개발 시나리오를 나타내는 더 큰 애플리케이션 예제에서 가져옵니다. 다음을 사용하는 방법을 보여줍니다.
 
 - ‘보호된 파일’이라고도 하는 Microsoft Protected File 형식입니다.
 - 사용자 정의 보호된 파일 형식
 - 사용자 정의 UI(사용자 인터페이스) 컨트롤
 
-‘MSIPCSampleApp’ 응용 프로그램 예제는 Android 운영 체제용 SDK와 함께 사용할 수 있습니다. 자세한 내용은 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android)를 참조하세요.
+‘MSIPCSampleApp’ 애플리케이션 예제는 Android 운영 체제용 SDK와 함께 사용할 수 있습니다. 자세한 내용은 [rms-sdk-ui-for-android](https://github.com/AzureAD/rms-sdk-ui-for-android)를 참조하세요.
 
 ### <a name="scenario-consume-an-rms-protected-file"></a>시나리오: RMS 보호된 파일 사용
 

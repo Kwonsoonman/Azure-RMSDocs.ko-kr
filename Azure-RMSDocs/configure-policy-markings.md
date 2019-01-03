@@ -1,4 +1,4 @@
----
+﻿---
 title: Azure Information Protection 레이블에 대한 시각적 표시 구성 - AIP
 description: 문서 또는 메일 메시지에 레이블을 할당하는 경우 선택한 분류를 쉽게 볼 수 있도록 몇 가지 옵션을 선택할 수 있습니다. 이러한 시각적 표시는 머리글, 바닥글 및 워터마크입니다.
 author: cabailey
@@ -61,19 +61,19 @@ ms.locfileid: "53023977"
 
 다음 지침을 사용하여 레이블에 대한 시각적 표시를 구성할 수 있습니다.
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다. 
+1. Azure Portal에 로그인이 되어 있지 않다면, 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. **Azure Information Protection** 블레이드로 이동합니다. 
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
 2. **분류** > **레이블** 메뉴 옵션에서: **Azure Information Protection - 레이블** 블레이드에서 추가하거나 변경할 시각적 표시가 포함된 레이블을 선택합니다.
 
-3. **레이블** 블레이드의 **Set visual marking (such as header or footer)**(시각적 표시(예: 머리글 또는 바닥글) 설정) 섹션에서 원하는 시각적 표시에 대한 설정을 구성한 다음, **저장**을 클릭합니다.
+3. **레이블** 블레이드의 **시각적 표시(예: 머리글 또는 바닥글)설정** 섹션에서 원하는 시각적 표시에 대한 설정을 구성한 다음, **저장**을 클릭합니다.
     
-    - 머리글을 구성하려면: **Documents with this label have a header**(이 레이블이 있는 문서에 머리글 있음)에서 머리글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 머리글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
+    - 머리글을 구성하려면: **이 레이블이 포함된 문서에는 머리글이 있음** 에서 머리글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **끄기**를 선택합니다. **설정**을 선택한 경우 머리글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
     
-    - 바닥글을 구성하려면: **Documents with this label have a footer**(이 레이블이 있는 문서에 바닥글 있음)에서 바닥글을 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 바닥글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
+    - 바닥글을 구성하려면: **이 레이블이 포함된 문서에는 바닥글이 있음** 에서 바닥글을 원하는 경우 **설정**을 선택하고 그렇지 않은 경우 **끄기**를 선택합니다. **설정**을 선택한 경우 바닥글에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
     
-    - 워터마크를 구성하려면: **Documents with this label have a watermark**(이 레이블이 있는 문서에 바닥글 있음)에서 워터마크를 원하는 경우 **On**(켜기)을 선택하고 그렇지 않은 경우 **Off**(끄기)를 선택합니다. **설정**을 선택한 경우 워터마크에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
+    - 워터마크를 구성하려면: **이 레이블이 포함된 문서에는 워터마크가 있음** 에서 워터마크를 원하는 경우 **설정**을 선택하고 그렇지 않은 경우 **끄기**를 선택합니다. **설정**을 선택한 경우 워터마크에 대한 텍스트, 크기, [글꼴](#setting-the-font-name), [색](#setting-the-font-color) 및 맞춤을 지정합니다.
     
 **저장**을 클릭하면 변경 내용이 사용자 및 서비스에 자동으로 제공됩니다. 더 이상 별도의 게시 옵션이 없습니다.
 
@@ -101,7 +101,7 @@ ms.locfileid: "53023977"
 
 ## <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Word, Excel, PowerPoint 및 Outlook에서 다양한 시각적 표시 설정
 
-기본적으로 지정한 시각적 표시는 Word, Excel, PowerPoint 및 Outlook에서 적용됩니다. 그러나 텍스트 문자열에서 "If.App" 변수 문을 사용하는 경우 Office 응용 프로그램 형식마다 시각적 표시를 지정하고 **Word**, **Excel**, **PowerPoint** 또는 **Outlook** 값을 사용하여 응용 프로그램 형식을 식별할 수 있습니다. 또한 이러한 값을 축약할 수 있습니다. 이 작업은 동일한 If.App 문에서 하나 이상을 지정하려는 경우에 필요합니다.
+기본적으로 지정한 시각적 표시는 Word, Excel, PowerPoint 및 Outlook에서 적용됩니다. 그러나 텍스트 문자열에서 "If.App" 변수 문을 사용하는 경우 Office 애플리케이션 형식마다 시각적 표시를 지정하고 **Word**, **Excel**, **PowerPoint** 또는 **Outlook** 값을 사용하여 애플리케이션 형식을 식별할 수 있습니다. 또한 이러한 값을 축약할 수 있습니다. 이 작업은 동일한 If.App 문에서 하나 이상을 지정하려는 경우에 필요합니다.
 
 다음 구문을 사용합니다.
 
@@ -115,7 +115,7 @@ ms.locfileid: "53023977"
     
     `${If.App.Word}This Word document is sensitive ${If.End}`
     
-    레이블은 Word 문서 헤더에서만 "이 Word 문서는 중요합니다."라는 헤더 텍스트를 적용합니다. 헤더 텍스트는 다른 Office 응용 프로그램에 적용되지 않습니다.
+    레이블은 Word 문서 헤더에서만 "이 Word 문서는 중요합니다."라는 헤더 텍스트를 적용합니다. 헤더 텍스트는 다른 Office 애플리케이션에 적용되지 않습니다.
 
 - **Word, Excel, Outlook에 바닥글 텍스트를 설정하고 PowerPoint에 다른 바닥글 텍스트를 설정합니다.**
     
@@ -131,7 +131,7 @@ ms.locfileid: "53023977"
 
 ### <a name="setting-the-font-name"></a>글꼴 이름 설정
 
-굴림은 머리글, 바닥 글 및 워터마크 텍스트에 대한 기본 글꼴입니다. 대체 글꼴 이름을 지정하는 경우 시각적 표시를 적용할 클라이언트 장치에서 사용할 수 있는지 확인합니다. 
+굴림은 머리글, 바닥 글 및 워터마크 텍스트에 대한 기본 글꼴입니다. 대체 글꼴 이름을 지정하는 경우 시각적 표시를 적용할 클라이언트 디바이스에서 사용할 수 있는지 확인합니다. 
 
 지정된 글꼴을 사용할 수 없는 경우 클라이언트는 Calibri 글꼴을 사용하도록 대체합니다.
 
@@ -139,7 +139,7 @@ ms.locfileid: "53023977"
 
 사용 가능한 색 목록에서 선택하거나 색의 RGB(빨강, 녹색 및 파랑) 구성 요소에 대한 16진수 3자리 코드를 입력하여 사용자 지정 색을 지정할 수 있습니다. 예: **#DAA520**. 
 
-이러한 코드에 대한 참조가 필요하면 MSDN 설명서의 [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx)(이름별 색)이 유용한 시작점입니다. 또한 그림을 편집할 수 있는 많은 응용 프로그램에서 이러한 코드를 찾을 수 있습니다. 예를 들어 Microsoft 그림판을 사용하면 색상표에서 사용자 지정 색을 선택할 수 있으며 RGB 값이 자동으로 표시됩니다. 그런 다음 해당 색을 복사하면 됩니다.
+이러한 코드에 대한 참조가 필요하면 MSDN 설명서의 [Colors by Name](https://msdn.microsoft.com/library/aa358802\(v=vs.85\).aspx)(이름별 색)이 유용한 시작점입니다. 또한 그림을 편집할 수 있는 많은 애플리케이션에서 이러한 코드를 찾을 수 있습니다. 예를 들어 Microsoft 그림판을 사용하면 색상표에서 사용자 지정 색을 선택할 수 있으며 RGB 값이 자동으로 표시됩니다. 그런 다음 해당 색을 복사하면 됩니다.
 
 ## <a name="next-steps"></a>다음 단계
 

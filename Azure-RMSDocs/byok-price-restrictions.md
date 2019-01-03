@@ -46,13 +46,13 @@ Azure Information Protection 테넌트 키에 대해 Azure Key Vault를 사용�
 
 - 일부 조직에는 마스터 키가 있어야 하는 제한 사항이 있습니다. Azure Key Vault는 서비스가 여러 Azure 지역에서 제공되기 때문에 마스터 키를 저장하는 높은 수준의 제어를 제공합니다. 현재 28개 Azure 지역 중에서 선택할 수 있으며 이 숫자는 계속 늘어나고 있습니다. 자세한 내용은 Azure 사이트의 [지역별 사용 가능한 제품](https://azure.microsoft.com/regions/services/) 페이지를 참조하세요.
 
-키 관리 외에도 Azure Key Vault는 보안 관리자에게 암호화를 사용하는 다른 서비스 및 응용 프로그램의 인증서 및 암호를 저장하고 액세스하고 관리하는 동일한 관리 환경을 제공합니다. 
+키 관리 외에도 Azure Key Vault는 보안 관리자에게 암호화를 사용하는 다른 서비스 및 애플리케이션의 인증서 및 암호를 저장하고 액세스하고 관리하는 동일한 관리 환경을 제공합니다. 
 
 Azure Key Vault에 대한 자세한 내용은 [Azure Key Vault란?](/azure/key-vault/key-vault-whatis)을 참조하고, 최신 정보는 [Azure Key Vault 팀 블로그](https://blogs.technet.microsoft.com/kv/)를 방문하여 다른 서비스에서 이 기술을 어떻게 사용하는지 알아보세요.
 
 ## <a name="restrictions-when-using-byok"></a>BYOK 사용 시 제한 사항
 
-BYOK 및 사용 현황 로깅 기능은 Azure Information Protection에서 사용하는 Azure Rights Management 서비스와 통합된 모든 응용 프로그램에서 원활하게 작동합니다. 여기에는 SharePoint Online과 같은 클라우드 서비스, RMS 커넥터를 사용하여 Azure Rights Management 서비스를 사용하는 Exchange 및 SharePoint를 실행하는 온-프레미스 서버 및 Office 2016 및 Office 2013과 같은 클라이언트 응용 프로그램이 있습니다. 어느 응용 프로그램이 Azure Rights Management 서비스에 요청을 하든 관계없이 키 사용 로그를 갖게 됩니다.
+BYOK 및 사용 현황 로깅 기능은 Azure Information Protection에서 사용하는 Azure Rights Management 서비스와 통합된 모든 애플리케이션에서 원활하게 작동합니다. 여기에는 SharePoint Online과 같은 클라우드 서비스, RMS 커넥터를 사용하여 Azure Rights Management 서비스를 사용하는 Exchange 및 SharePoint를 실행하는 온-프레미스 서버 및 Office 2016 및 Office 2013과 같은 클라이언트 애플리케이션이 있습니다. 어느 애플리케이션이 Azure Rights Management 서비스에 요청을 하든 관계없이 키 사용 로그를 갖게 됩니다.
 
 이전에 Azure RMS에서 TPD(트러스트된 게시 도메인)를 가져와서 Exchange Online IRM을 사용하도록 설정한 경우, [Azure Information Protection을 기반으로 구축된 새로운 Office 365 메시지 암호화 기능 설정](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)의 지침에 따라 Azure Information Protection용 BYOK 사용을 지원하는 Exchange Online의 새로운 기능을 사용하도록 설정하십시오.
 

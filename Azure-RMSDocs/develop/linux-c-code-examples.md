@@ -23,7 +23,7 @@ ms.locfileid: "44149500"
 
 이 항목에서는 Linux 버전의 RMS SDK에 대한 중요한 시나리오 및 코드 요소를 소개합니다.
 
-아래 코드 조각은 샘플 응용 프로그램 *rms\_sample* 및 *rmsauth\_sample*에서 가져온 것입니다. 자세한 내용은 GitHub 리포지토리에서 [샘플](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples)을 참조하세요.
+아래 코드 조각은 샘플 애플리케이션 *rms\_sample* 및 *rmsauth\_sample*에서 가져온 것입니다. 자세한 내용은 GitHub 리포지토리에서 [샘플](https://github.com/AzureAD/rms-sdk-for-cpp/tree/master/samples)을 참조하세요.
 
 ## <a name="scenario-access-protection-policy-information-from-a-protected-file"></a>시나리오: 보호된 파일에서 보호 정책 정보 액세스
 

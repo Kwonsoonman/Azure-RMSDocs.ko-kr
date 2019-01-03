@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 4b79d8eb75a54a56f1b3e48645bdd5eec0afaa19
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446382"
@@ -25,14 +25,14 @@ public Settings(const std::string& path, bool useInMemoryStorage, std::shared_pt
 public std::shared_ptr<AuthDelegate> GetAuthDelegate() const  |  인증 토큰을 얻는 데 사용되는 인증 대리자를 가져옵니다.
 public std::shared_ptr<ConsentDelegate> GetConsentDelegate() const  |  서비스에 연결하는 사용자 동의를 요청하는 데 사용되는 동의 대리자를 가져옵니다.
 public std::shared_ptr<Observer> GetObserver() const  |  [FileProfile](class_mip_fileprofile.md)과 관련된 이벤트에 대한 알림을 받는 관찰자를 가져옵니다.
- public const ApplicationInfo GetApplicationInfo() const  |  SDK를 사용하는 응용 프로그램에 대한 정보를 가져옵니다.
+ public const ApplicationInfo GetApplicationInfo() const  |  SDK를 사용하는 애플리케이션에 대한 정보를 가져옵니다.
  public bool GetSkipTelemetryInit() const  |  원격 분석 초기화를 건너뛰어야 할지 여부를 가져옵니다.
  public void SetSkipTelemetryInit()  |  원격 분석 초기화를 사용하지 않도록 설정합니다.
  public void SetNewFeaturesDisabled()  |  새로운 기능을 사용하지 않도록 설정합니다.
  public bool AreNewFeaturesDisabled() const  |  새로운 기능이 해제되었는지 여부를 가져옵니다.
-public std::shared_ptr<LoggerDelegate> GetLoggerDelegate() const  |  응용 프로그램에서 제공하는 로거 대리자를 가져옵니다(있는 경우).
+public std::shared_ptr<LoggerDelegate> GetLoggerDelegate() const  |  애플리케이션에서 제공하는 로거 대리자를 가져옵니다(있는 경우).
 public void SetLoggerDelegate(const std::shared_ptr<LoggerDelegate>& loggerDelegate)  |  기본 로거를 재정의합니다.
-public std::shared_ptr<HttpDelegate> GetHttpDelegate() const  |  응용 프로그램에서 제공하는 HTTP 대리자(있는 경우)를 가져옵니다.
+public std::shared_ptr<HttpDelegate> GetHttpDelegate() const  |  애플리케이션에서 제공하는 HTTP 대리자(있는 경우)를 가져옵니다.
 public void SetHttpDelegate(const std::shared_ptr<HttpDelegate>& httpDelegate)  |  기본 HTTP 스택을 클라이언트 고유 스택으로 재정의합니다.
  public void OptOutTelemetry()  |  모든 원격 분석 수집을 옵트아웃합니다.
  public bool IsTelemetryOptedOut() const  |  원격 분석 수집을 사용하지 않아야 하는지 여부를 가져옵니다.
@@ -94,7 +94,7 @@ public void SetHttpDelegate(const std::shared_ptr<HttpDelegate>& httpDelegate)  
 **반환**: [FileProfile](class_mip_fileprofile.md)과 관련된 이벤트 알림을 받는 [Observer](class_mip_fileprofile_observer.md)
   
 ### <a name="applicationinfo"></a>ApplicationInfo
-SDK를 사용하는 응용 프로그램에 대한 정보를 가져옵니다.
+SDK를 사용하는 애플리케이션에 대한 정보를 가져옵니다.
 
   
 **반환**: SDK를 사용 중인 응용 프로그램에 대한 정보
@@ -107,11 +107,11 @@ SDK를 사용하는 응용 프로그램에 대한 정보를 가져옵니다.
   
 ### <a name="setskiptelemetryinit"></a>SetSkipTelemetryInit
 원격 분석 초기화를 사용하지 않도록 설정합니다.
-이 메서드는 일반적으로 클라이언트 응용 프로그램이 호출하지 않고 파일 SDK에서 중복 초기화를 방지하는 데 사용됩니다.
+이 메서드는 일반적으로 클라이언트 애플리케이션이 호출하지 않고 파일 SDK에서 중복 초기화를 방지하는 데 사용됩니다.
   
 ### <a name="setnewfeaturesdisabled"></a>SetNewFeaturesDisabled
 새로운 기능을 사용하지 않도록 설정합니다.
-새로운 기능을 시도하지 않으려는 응용 프로그램에 사용됩니다.
+새로운 기능을 시도하지 않으려는 애플리케이션에 사용됩니다.
   
 ### <a name="arenewfeaturesdisabled"></a>AreNewFeaturesDisabled
 새로운 기능이 해제되었는지 여부를 가져옵니다.
@@ -120,7 +120,7 @@ SDK를 사용하는 응용 프로그램에 대한 정보를 가져옵니다.
 **반환**: 새로운 기능이 해제되었는지 여부
   
 ### <a name="loggerdelegate"></a>LoggerDelegate
-응용 프로그램에서 제공하는 로거 대리자를 가져옵니다(있는 경우).
+애플리케이션에서 제공하는 로거 대리자를 가져옵니다(있는 경우).
 
   
 **반환**: 로거
@@ -132,10 +132,10 @@ SDK를 사용하는 응용 프로그램에 대한 정보를 가져옵니다.
 * **loggerDelegate**: 클라이언트 응용 프로그램이 구현하는 로깅 콜백 인터페이스
 
 
-이 메서드는 자체 로거 구현을 사용하는 클라이언트 응용 프로그램에서 이를 호출해야 합니다.
+이 메서드는 자체 로거 구현을 사용하는 클라이언트 애플리케이션에서 이를 호출해야 합니다.
   
 ### <a name="httpdelegate"></a>HttpDelegate
-응용 프로그램에서 제공하는 HTTP 대리자(있는 경우)를 가져옵니다.
+애플리케이션에서 제공하는 HTTP 대리자(있는 경우)를 가져옵니다.
 
   
 **반환**: HTTP 작업에 사용할 HTTP 대리자

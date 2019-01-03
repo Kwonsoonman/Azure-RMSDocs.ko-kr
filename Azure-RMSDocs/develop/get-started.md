@@ -1,6 +1,6 @@
 ---
 title: 시작 | Azure RMS
-description: 첫 번째 응용 프로그램의 빠른 시작 가이드는 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 통해 제공됩니다.
+description: 첫 번째 애플리케이션의 빠른 시작 가이드는 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 통해 제공됩니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -21,7 +21,7 @@ ms.locfileid: "53023365"
 ---
 # <a name="get-started"></a>시작
 
-이 릴리스의 Microsoft Rights Management SDK 4.2에서 첫 번째 애플리케이션에 빠른 시작 접근 방식은 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 사용합니다. 먼저 다음을 수행하여 권한 사용 응용 프로그램을 만듭니다.
+이 릴리스의 Microsoft Rights Management SDK 4.2에서 첫 번째 애플리케이션에 빠른 시작 접근 방식은 각 운영 체제/플랫폼에 대한 개발 환경 설치 가이드를 사용합니다. 먼저 다음을 수행하여 권한 사용 애플리케이션을 만듭니다.
 
 1. 다음 링크 표를 사용하여 대상 운영 체제용 **SDK 패키지를 다운로드**합니다.
 

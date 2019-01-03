@@ -34,9 +34,9 @@ ms.locfileid: "53173896"
 
 -   **관리자 정보**
     
-    일부 응용 프로그램에서는 관리자가 구성하는 정책과 설정을 사용하여 정보 보호를 자동으로 적용합니다. 이러한 응용 프로그램의 경우에는 해당 응용 프로그램과 서비스를 관리하는 기타 관리자를 위한 지침을 제공해야 할 수 있습니다. 
+    일부 애플리케이션에서는 관리자가 구성하는 정책과 설정을 사용하여 정보 보호를 자동으로 적용합니다. 이러한 애플리케이션의 경우에는 해당 애플리케이션과 서비스를 관리하는 기타 관리자를 위한 지침을 제공해야 할 수 있습니다. 
     
-    자세한 내용은 [응용 프로그램에서 Azure Rights Management 서비스를 지원하는 방법](applications-support.md) 및 [Azure Rights Management 서비스에 대해 응용 프로그램 구성](configure-applications.md)을 참조하세요.
+    자세한 내용은 [애플리케이션에서 Azure Rights Management 서비스를 지원하는 방법](applications-support.md) 및 [Azure Rights Management 서비스에 대해 애플리케이션 구성](configure-applications.md)을 참조하세요.
     
 -   **지원 센터 정보**
     
@@ -48,25 +48,25 @@ ms.locfileid: "53173896"
     
     - **로그인 도움말**
         
-        Azure Rights Management 서비스에서 사용자를 인증해야 하는데 캐시된 자격 증명을 사용할 수 없으면 사용자에게 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 일반적으로 이러한 필수 자격 증명은 Office 365 테넌트 또는 Azure Active Directory 테넌트와 연결된 사용자의 회사 또는 학교 계정과 암호입니다. Azure Rights Management 서비스는 Azure AD 계정을 인증할 수 있지만 인증에 Microsoft 계정이 사용될 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수도 있습니다. [추가 정보](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
+        Azure Rights Management 서비스에서 사용자를 인증해야 하는데 캐시된 자격 증명을 사용할 수 없으면 사용자에게 자격 증명을 입력하라는 메시지가 표시될 수 있습니다. 일반적으로 이러한 필수 자격 증명은 Office 365 테넌트 또는 Azure Active Directory 테넌트와 연결된 사용자의 회사 또는 학교 계정과 암호입니다. Azure Rights Management 서비스는 Azure AD 계정을 인증할 수 있지만 인증에 Microsoft 계정이 사용될 경우, 일부 애플리케이션이 보호된 콘텐츠를 열 수도 있습니다. [추가 정보](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents) 
         
-        사용자가 Azure Rights Management 서비스를 사용하는 응용 프로그램이 있는 경우 자격 증명을 입력하라는 메시지가 표시되면 사용할 계정에 대한 지침을 사용자와 지원 센터에 제공합니다.
+        사용자가 Azure Rights Management 서비스를 사용하는 애플리케이션이 있는 경우 자격 증명을 입력하라는 메시지가 표시되면 사용할 계정에 대한 지침을 사용자와 지원 센터에 제공합니다.
         
     - **콘텐츠 보호 또는 사용 문제**
         
-        사용자가 사용하는 응용 프로그램에 대해 적절한 지침이 있으며 Azure Rights Management 서비스에서 지원하는 응용 프로그램 및 장치를 사용하고 있는지 확인합니다. 지원되는 응용 프로그램 및 장치에 대한 자세한 내용은 [Azure 권한 관리에 대한 요구 사항](requirements.md)을 참조하세요.
+        사용자가 사용하는 응용 프로그램에 대해 적절한 지침이 있으며 Azure Rights Management 서비스에서 지원하는 응용 프로그램 및 디바이스를 사용하고 있는지 확인합니다. 지원되는 응용 프로그램 및 디바이스에 대한 자세한 내용은 [Azure 권한 관리에 대한 요구 사항](requirements.md)을 참조하세요.
         
         Azure Active Directory를 통해 보호된 콘텐츠를 보호하거나 사용하도록 특정 사용자 또는 그룹에게 권한을 부여할 수 있는지 확인하려면 [Azure Information Protection에 대한 사용자 및 그룹 준비](prepare.md)에 포함된 유효성 검사를 사용합니다.
         
         사용자가 보호된 콘텐츠를 열 수는 있지만 필요한 권한이 없는 경우 Rights Management 템플릿에 대해 구성된 올바른 그룹에 포함되어 있지 않은 것일 수 있습니다. 또는 사용자 또는 그룹에 대해 [템플릿을 다시 구성해야](configure-policy-templates.md) 하는 문제일 수 있습니다. 
         
-        사용자가 보유하는 권한이 예상과 다를 경우 [사용 권한 테이블](configure-usage-rights.md#usage-rights-and-descriptions)에서 권한 설명 및 응용 프로그램별 구현을 확인하세요.
+        사용자가 보유하는 권한이 예상과 다를 경우 [사용 권한 테이블](configure-usage-rights.md#usage-rights-and-descriptions)에서 권한 설명 및 애플리케이션별 구현을 확인하세요.
 
-사용자가 문서와 메일을 보호할 수 있도록 다음 섹션에서 응용 프로그램 관련 정보를 참조하세요.
+사용자가 문서와 메일을 보호할 수 있도록 다음 섹션에서 애플리케이션 관련 정보를 참조하세요.
 
 ## <a name="using-information-protection-with-the-azure-information-protection-client"></a>Azure Information Protection 클라이언트에서 정보 보호 사용
 
-Office 2010이 있는 경우 보호된 문서 및 메일을 보호하고 사용하기 위해 Azure Information Protection 클라이언트(또는 이전 애플리케이션, RMS 공유 애플리케이션)가 필요합니다. 그러나 Azure Information Protection 클라이언트는 이 서비스를 지원하는 모든 컴퓨터 및 모바일 장치에도 권장됩니다.
+Office 2010이 있는 경우 보호된 문서 및 메일을 보호하고 사용하기 위해 Azure Information Protection 클라이언트(또는 이전 애플리케이션, RMS 공유 애플리케이션)가 필요합니다. 그러나 Azure Information Protection 클라이언트는 이 서비스를 지원하는 모든 컴퓨터 및 모바일 디바이스에도 권장됩니다.
 
 Azure Information Protection 클라이언트는 사용자가 보다 쉽게 문서 및 메일을 보호하도록 할 뿐 아니라 보호한 문서를 추적할 수 있도록 합니다. 또한 이전에 권한이 부여된 사용자가 더 이상 액세스할 필요가 없는 경우 추적된 문서를 해지할 수도 있습니다.
 
@@ -77,7 +77,7 @@ Azure Information Protection 클라이언트는 사용자가 보다 쉽게 문�
 Azure Rights Management 서비스를 사용하고 있으며 Azure Information Protection 클라이언트를 설치하지 않은 경우 Office 데스크톱 앱의 Azure Information Protection 표시줄이 표시되지 않습니다. 리본의 **보호** 단추나 파일 탐색기의 **분류 및 보호**도 표시되지 않습니다. 이러한 추가 옵션은 파일 및 전자 메일을 보다 쉽게 보호할 수 있도록 합니다. 이러한 사용자는 다음에 나오는 단계와 유사한 지침을 따라야 합니다.
 
 > [!TIP]
-> 이러한 응용 프로그램에서 정보 보호 기능을 사용하기 위한 응용 프로그램별 도움말과 지침을 찾으려면 **IRM** 및 응용 프로그램 이름과 버전을 검색합니다.
+> 이러한 애플리케이션에서 정보 보호 기능을 사용하기 위한 애플리케이션별 도움말과 지침을 찾으려면 **IRM** 및 애플리케이션 이름과 버전을 검색합니다.
 
 #### <a name="to-protect-a-document-in-word2013"></a>Word 2013에서 문서를 보호하려면
 

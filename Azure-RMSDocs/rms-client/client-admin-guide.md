@@ -49,7 +49,7 @@ Azure Information Protection 클라이언트에는 다음이 포함됩니다.
 
 - 파일에 분류 레이블 및 보호를 적용하기 위한 Windows 파일 탐색기의 오른쪽 클릭 옵션
 
-- 네이티브 응용 프로그램으로 열 수 없을 때 보호된 파일을 표시하는 뷰어
+- 네이티브 애플리케이션으로 열 수 없을 때 보호된 파일을 표시하는 뷰어
 
 - 파일에서 분류 레이블 및 보호를 적용 및 제거하기 위한 PowerShell 모듈 
     
@@ -66,7 +66,7 @@ AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 
 
 다음이 적용될 경우 Azure Information Protection 클라이언트를 배포합니다.
 
-- Office 응용 프로그램(Word, Excel, PowerPoint, Outlook) 내에서 레이블을 선택하여 문서 및 전자 메일 메시지를 분류(및 필요에 따라 보호)하려고 합니다.
+- Office 애플리케이션(Word, Excel, PowerPoint, Outlook) 내에서 레이블을 선택하여 문서 및 전자 메일 메시지를 분류(및 필요에 따라 보호)하려고 합니다.
 
 - 추가 파일 형식, 다중 선택 및 폴더를 지원하는 파일 탐색기를 사용하여 문서 및 전자 메일 메시지를 분류(및 필요에 따라 보호)하려고 합니다.
 
@@ -74,7 +74,7 @@ AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 
 
 - 저장된 온-프레미스인 파일을 검색하고 분류(및 필요에 따라 보호)하는 서비스를 실행하려고 합니다.
 
-- 네이티브 응용 프로그램이 설치되어 있지 않거나 이러한 문서를 열 수 없을 때 보호된 문서를 보려고 합니다.
+- 네이티브 애플리케이션이 설치되어 있지 않거나 이러한 문서를 열 수 없을 때 보호된 문서를 보려고 합니다.
 
 - 파일 탐색기를 사용하거나 PowerShell 명령을 사용하여 파일을 보호하려고 합니다.
 
@@ -84,7 +84,7 @@ AD RMS가 있고 Azure Information Protection으로 마이그레이션하려면 
 
 - Office 2010을 실행하며, Azure Rights Management 서비스를 사용하여 문서 및 전자 메일 메시지를 보호하려고 합니다.
 
-다음 예제에서는 Office 응용 프로그램의 Azure Information Protection 클라이언트 추가 기능을 보여주고 조직에 대한 분류 레이블 및 리본의 새 **보호** 단추를 표시합니다.
+다음 예제에서는 Office 애플리케이션의 Azure Information Protection 클라이언트 추가 기능을 보여주고 조직에 대한 분류 레이블 및 리본의 새 **보호** 단추를 표시합니다.
 
 ![기본 정책이 적용된 Azure Information Protection 표시줄](../media/word2016-calloutsv2.png)
 
@@ -148,7 +148,7 @@ Windows Update, 실행 파일, 또는 Windows Installer 파일을 사용하여 A
 
 표시된 계정과 다른 사용자로 로그인해야 하는 경우 [다른 사용자로 로그인](client-admin-guide-customizations.md#sign-in-as-a-different-user) 사용자 지정 내용을 참조하세요.
 
-**마지막 연결**은 클라이언트가 조직의 Azure Information Protection 서비스에 마지막으로 연결된 시기를 표시합니다. **Information Protection 정책 설치** 날짜 및 시간과 함께 이 정보를 사용하여 Azure Information Protection 정책이 마지막으로 설치되거나 업데이트된 시기를 확인할 수 있습니다. 클라이언트는 서비스에 연결할 때 현재 정책에서 변경된 사항이 발견될 경우, 그리고 24시간마다 최신 정책을 자동으로 다운로드합니다. 표시된 시간 이후에 정책을 변경한 경우 Office 응용 프로그램을 닫았다가 다시 엽니다.
+**마지막 연결**은 클라이언트가 조직의 Azure Information Protection 서비스에 마지막으로 연결된 시기를 표시합니다. **Information Protection 정책 설치** 날짜 및 시간과 함께 이 정보를 사용하여 Azure Information Protection 정책이 마지막으로 설치되거나 업데이트된 시기를 확인할 수 있습니다. 클라이언트는 서비스에 연결할 때 현재 정책에서 변경된 사항이 발견될 경우, 그리고 24시간마다 최신 정책을 자동으로 다운로드합니다. 표시된 시간 이후에 정책을 변경한 경우 Office 애플리케이션을 닫았다가 다시 엽니다.
 
 **이 클라이언트는 Office Professional Plus에 대해 사용이 허가되지 않았습니다**라는 메시지가 표시되는 경우 Azure Information Protection 클라이언트에서 설치된 버전의 Office가 Rights Management 보호의 적용을 지원하지 않는 것을 감지했습니다. 이 상태가 감지되면 보호를 적용하는 레이블이 Azure Information Protection 막대에 표시되지 않습니다.
 

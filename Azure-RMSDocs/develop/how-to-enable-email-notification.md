@@ -23,7 +23,7 @@ ms.locfileid: "44151472"
 
 메일 알림을 사용하면 누군가가 보호된 콘텐츠에 액세스할 경우 보호된 콘텐츠 소유자가 알림을 받을 수 있습니다.
 
-지정된 라이선스에 대해 메일 알림을 설정하려면 속성 형식 매개 변수 *dwPropID*를 [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)로 지정하고 응용 프로그램 데이터 필드를 [IPC\_NAME\_VALUE\_LIST](https://msdn.microsoft.com/library/hh535277.aspx) 형식으로 지정하여 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)를 사용합니다.
+지정된 라이선스에 대해 메일 알림을 설정하려면 속성 형식 매개 변수 *dwPropID*를 [IPC\_LI\_APP\_SPECIFIC\_DATA](https://msdn.microsoft.com/library/hh535287.aspx)로 지정하고 애플리케이션 데이터 필드를 [IPC\_NAME\_VALUE\_LIST](https://msdn.microsoft.com/library/hh535277.aspx) 형식으로 지정하여 [IpcSetLicenseProperty](https://msdn.microsoft.com/library/hh535271.aspx)를 사용합니다.
 
     C++
 
@@ -42,7 +42,7 @@ ms.locfileid: "44151472"
     result = IpcSetLicenseProperty( licenseHandle, FALSE, IPC_LI_APP_SPECIFIC_DATA, emailNotificationAppData);
 
 
-다음 표에는 RMS 메일 알림에 대한 응용 프로그램 데이터 필드, 속성 이름 및 값 쌍이 포함되어 있습니다.
+다음 표에는 RMS 메일 알림에 대한 애플리케이션 데이터 필드, 속성 이름 및 값 쌍이 포함되어 있습니다.
 
 
 |속성 이름 | 데이터 형식 | 예제 값 | 참고 |

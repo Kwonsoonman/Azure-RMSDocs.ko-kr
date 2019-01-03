@@ -40,7 +40,7 @@ ms.locfileid: "52303994"
 
 `PolicyHandler` 만들기는 promise/future 패턴을 사용하여 `PolicyEngine`의 `CreatePolicyHandlerAsync` 함수를 호출하는 것만큼 쉽습니다.
 
-`CreatePolicyHandlerAsync`는 단일 매개 변수(**isAuditDiscoveryEnabled**)를 허용합니다. 응용 프로그램이 감사 로깅에서 하트비트 이벤트를 나타내야 할 경우 이 값을 **true**로 설정합니다.
+`CreatePolicyHandlerAsync`는 단일 매개 변수(**isAuditDiscoveryEnabled**)를 허용합니다. 애플리케이션이 감사 로깅에서 하트비트 이벤트를 나타내야 할 경우 이 값을 **true**로 설정합니다.
 
 > [!NOTE]
 > `CreatePolicyHandler`에 `Observer` 개체가 필요하므로 파생 클래스에서 `mip::PolicyHandler::Observer` 클래스를 구현해야 합니다. 

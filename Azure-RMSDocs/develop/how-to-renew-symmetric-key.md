@@ -20,7 +20,7 @@ ms.locfileid: "44147188"
 
 **대칭 키**는 대칭 키 암호화에서 메시지를 암호화하고 암호 해독하는 암호입니다.  
 
-Azure AD(Azure Active Directory)에서 응용 프로그램을 나타내는 서비스 주체 개체를 만들 때 이 프로세스에서는 응용 프로그램을 확인하기 위한 256비트 대칭 키도 생성합니다. 이 대칭 키는 기본적으로 1년 동안 유효합니다. 
+Azure AD(Azure Active Directory)에서 애플리케이션을 나타내는 서비스 주체 개체를 만들 때 이 프로세스에서는 애플리케이션을 확인하기 위한 256비트 대칭 키도 생성합니다. 이 대칭 키는 기본적으로 1년 동안 유효합니다. 
 
 다음 단계는 대칭 키를 갱신하는 방법을 보여줍니다. 
 
@@ -31,7 +31,7 @@ Azure AD(Azure Active Directory)에서 응용 프로그램을 나타내는 서�
 
 ## <a name="renewing-the-symmetric-key-after-expiry"></a>만료 후 대칭 키 갱신
 
-응용 프로그램과 연결된 대칭 키가 만료되었을 때 새 서비스 주체를 만들 필요는 없습니다. 대신 Microsoft Online Services(MSol)에서 제공하는 [PowerShell commandlet](https://docs.microsoft.com/powershell/module/msonline)을 사용하여 기존 서비스 주체에 대한 새 대칭 키를 발급하면 됩니다.
+애플리케이션과 연결된 대칭 키가 만료되었을 때 새 서비스 주체를 만들 필요는 없습니다. 대신 Microsoft Online Services(MSol)에서 제공하는 [PowerShell commandlet](https://docs.microsoft.com/powershell/module/msonline)을 사용하여 기존 서비스 주체에 대한 새 대칭 키를 발급하면 됩니다.
 
 이 프로세스를 보여 주기 위해 이미 [`New-MsolServicePrincipal`](https://docs.microsoft.com/powershell/msonline/v1/new-msolserviceprincipalcredential) 명령을 사용하여 새 서비스 주체를 만들었다고 가정합니다.
 

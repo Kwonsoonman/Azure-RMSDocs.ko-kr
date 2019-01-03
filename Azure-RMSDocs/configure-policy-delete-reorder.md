@@ -19,7 +19,7 @@ ms.locfileid: "53304879"
 
 >*적용 대상: [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 
-레이블에 대해 이러한 작업을 선택하여 Office 응용 프로그램에서 사용자에게 표시되는 Azure Information Protection 레이블을 삭제하거나 순서를 변경할 수 있습니다.
+레이블에 대해 이러한 작업을 선택하여 Office 애플리케이션에서 사용자에게 표시되는 Azure Information Protection 레이블을 삭제하거나 순서를 변경할 수 있습니다.
 
 ![Azure Information Protection 정책에서 레이블 삭제 또는 순서 변경](./media/info-protect-contextmenu.png)
 

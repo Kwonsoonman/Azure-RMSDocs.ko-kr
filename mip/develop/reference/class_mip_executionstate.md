@@ -8,7 +8,7 @@ ms.date: 09/27/2018
 ms.author: bryanla
 ms.openlocfilehash: 976bca60f3f494a0fbf196e6512b00bdcdd63992
 ms.sourcegitcommit: 1cf14852cd14ea91ac964fb03a901238455ffdff
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/28/2018
 ms.locfileid: "47446314"
@@ -23,7 +23,7 @@ ms.locfileid: "47446314"
  public std::string GetNewLabelId() const  |  문서에 적용해야 하는 민감도 레이블 ID를 가져옵니다.
  public ActionSource GetNewLabelActionSource() const  |  새 레이블 작업의 원본을 가져옵니다.
  public std::string GetContentIdentifier() const  |  문서를 설명하는 콘텐츠 식별자를 가져옵니다. 파일의 예: [path] 메일의 예: [Subject:Sender].
- public ContentState GetContentState() const  |  응용 프로그램이 콘텐츠와 상호 작용하는 동안의 콘텐츠 상태를 가져옵니다.
+ public ContentState GetContentState() const  |  애플리케이션이 콘텐츠와 상호 작용하는 동안의 콘텐츠 상태를 가져옵니다.
 public std::pair<bool, std::string> IsDowngradeJustified() const  |  구현은 기존 레이블을 다운그레이드할 근거가 제공되었는지 여부를 전달해야 합니다.
  public AssignmentMethod GetNewLabelAssignmentMethod() const  |  새 레이블의 할당 메서드를 가져옵니다.
 public std::vector<std::pair<std::string, std::string>> GetNewLabelExtendedProperties() const  |  새 레이블의 확장 속성을 반환합니다.
@@ -55,7 +55,7 @@ public virtual std::map<std::string, std::shared_ptr<ClassificationResult>> GetC
 이 값은 감사에서 사람이 읽을 수 있는 콘텐츠 설명으로 사용됩니다.
   
 ### <a name="getcontentstate"></a>GetContentState
-응용 프로그램이 콘텐츠와 상호 작용하는 동안의 콘텐츠 상태를 가져옵니다.
+애플리케이션이 콘텐츠와 상호 작용하는 동안의 콘텐츠 상태를 가져옵니다.
 
   
 **반환**: 콘텐츠 데이터의 상태

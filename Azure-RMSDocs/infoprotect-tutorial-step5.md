@@ -68,7 +68,7 @@ ms.locfileid: "44148633"
 
 ## <a name="ask-your-recipients-to-open-the-emailed-document"></a>수신자에게 메일의 문서를 열라고 요청
 
-보호된 문서가 메일 첨부 파일로 전송되면 수신자는 다양한 장치를 사용하여 읽을 수 있습니다. 이러한 장치에는 iPad, iPhone, Android 태블릿 및 전화, Mac 컴퓨터, Windows 컴퓨터 등이 포함됩니다.
+보호된 문서가 메일 첨부 파일로 전송되면 수신자는 다양한 디바이스를 사용하여 읽을 수 있습니다. 이러한 디바이스에는 iPad, iPhone, Android 태블릿 및 전화, Mac 컴퓨터, Windows 컴퓨터 등이 포함됩니다.
 
 전송된 메일 메시지를 읽도록 요청합니다. Rights Management를 통해 보호되는 첨부 파일을 처음으로 받은 경우라고 가정하면 받는 사람에게 지침 링크를 클릭할 것을 요청합니다. 그러면 Microsoft Azure Information Protection에 대한 **시작** 페이지가 표시되며 회사 전자 메일 주소를 입력하도록 요구됩니다.
 
@@ -76,7 +76,7 @@ ms.locfileid: "44148633"
 
 ### <a name="instructions-for-recipient-to-view-the-protected-document-attachment"></a>받는 사람에 대한 지침: 보호된 문서 첨부 파일을 보호하려면
 
-1. Office가 설치된 PC 또는 모바일 장치에서 첨부 파일을 열고 문서를 읽습니다.  
+1. Office가 설치된 PC 또는 모바일 디바이스에서 첨부 파일을 열고 문서를 읽습니다.  
 
 2.  사용자 이름과 암호를 묻는 메시지가 표시되면 메일과 첨부 파일을 보내는 데 사용된 것과 같은 메일 주소 형식을 사용하여 사용자 이름을 입력합니다. 예를 들면 **janetm@contoso.com** 또는 **p.dover@fabrikam.com**과 같습니다. 암호로는 개인용 RMS에 가입할 때 입력했던 암호를 입력합니다. 또는 조직에 Office 365와 같은 클라우드 서비스가 있거나 Azure를 사용하는 경우에는 실제 작업 암호를 입력합니다.
 
@@ -108,7 +108,7 @@ ms.locfileid: "44148633"
 
     각 옵션을 클릭하며 보호된 문서를 추적하는 여러 가지 방법을 탐색합니다. 또는 **요약** 페이지에 있는 동안 **Excel에서 열기** 를 클릭하여 정보를 스프레드시트로 내보내거나 **액세스 취소** 를 클릭하여 문서 공유를 중지할 수도 있습니다.
 
-필요한 경우 이 사이트로 돌아와 보호된 문서에 대한 추가 활동을 추적하거나 액세스를 취소할 수 있습니다. 모바일 장치나 태블릿에서 브라우저를 사용하여 [문서 추적](http://go.microsoft.com/fwlink/?LinkId=529562)링크로 사이트에 액세스할 수도 있습니다.
+필요한 경우 이 사이트로 돌아와 보호된 문서에 대한 추가 활동을 추적하거나 액세스를 취소할 수 있습니다. 모바일 디바이스나 태블릿에서 브라우저를 사용하여 [문서 추적](http://go.microsoft.com/fwlink/?LinkId=529562)링크로 사이트에 액세스할 수도 있습니다.
 
 
 
@@ -121,7 +121,7 @@ ms.locfileid: "44148633"
 
 ## <a name="next-steps"></a>다음 단계
 
-이제 기본 Azure Information Protection 정책, 이러한 정책의 사용자 지정 방법 및 Word 문서에 대해 레이블 지정이 작동하는 방식을 확인했으므로, 다른 설정을 사용해 보고 Azure Information Protection을 지원하는 다른 Office 프로그램(Excel, PowerPoint, Outlook)에서 이러한 설정이 작동하는 방식을 확인해 보세요. Azure Information Protection 클라이언트를 설치할 때 이러한 응용 프로그램이 열려 있었던 경우에는 이러한 응용 프로그램을 닫았다가 다시 연 후 Azure Information Protection에서 이러한 응용 프로그램을 사용해 보세요.
+이제 기본 Azure Information Protection 정책, 이러한 정책의 사용자 지정 방법 및 Word 문서에 대해 레이블 지정이 작동하는 방식을 확인했으므로, 다른 설정을 사용해 보고 Azure Information Protection을 지원하는 다른 Office 프로그램(Excel, PowerPoint, Outlook)에서 이러한 설정이 작동하는 방식을 확인해 보세요. Azure Information Protection 클라이언트를 설치할 때 이러한 애플리케이션이 열려 있었던 경우에는 이러한 애플리케이션을 닫았다가 다시 연 후 Azure Information Protection에서 이러한 애플리케이션을 사용해 보세요.
 
 더 많은 문서를 공유해 보고 사용되는 방식을 추적하고, 문서 취소 작업 방법을 확인합니다.
 

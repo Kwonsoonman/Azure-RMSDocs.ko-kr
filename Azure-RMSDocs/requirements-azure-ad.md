@@ -33,7 +33,7 @@ Azure AD 디렉터리를 온-프레미스 AD 포리스트와 통합하려면 [Az
 
 Office 2010을 실행하는 컴퓨터: 
 
-- 이러한 컴퓨터는 Azure Information Protection과 해당 데이터 보호 서비스인 Azure Rights Management에서 인증을 받기 위해 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)(권장) 또는 [Windows용 Rights Management 공유 응용 프로그램](./rms-client/sharing-app-windows.md)이 필요합니다.
+- 이러한 컴퓨터는 Azure Information Protection과 해당 데이터 보호 서비스인 Azure Rights Management에서 인증을 받기 위해 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)(권장) 또는 [Windows용 Rights Management 공유 애플리케이션](./rms-client/sharing-app-windows.md)이 필요합니다.
 
 - AD FS를 사용하는 경우와 같이 사용자 계정이 페더레이션된 경우 해당 계정은 Windows 통합 인증을 사용해야 합니다. 이 시나리오에서 양식 기반 인증은 Azure Information Protection에 대한 사용자를 인증하지 못합니다.
 
@@ -43,7 +43,7 @@ CBA(인증서 기반 인증) 지원:
 
 사용자의 UPN 값이 메일 주소와 일치하지 않는 경우:
 
-- 권장 구성이 아닙니다. UPN 값을 변경할 수 없는 경우 사용자의 대체 로그인 ID를 구성하고 이 대체 로그인 정보로 Office에 로그인하는 방법을 알려주세요. 자세한 내용은 [대체 로그인 ID 구성](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 및 [Office applications periodically prompt for credentials to SharePoint Online, OneDrive, and Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)(Office 응용 프로그램에서 주기적으로 SharePoint Online, OneDrive 및 Lync Online의 자격 증명 요구)을 참조하세요.
+- 권장 구성이 아닙니다. UPN 값을 변경할 수 없는 경우 사용자의 대체 로그인 ID를 구성하고 이 대체 로그인 정보로 Office에 로그인하는 방법을 알려주세요. 자세한 내용은 [대체 로그인 ID 구성](/windows-server/identity/ad-fs/operations/configuring-alternate-login-id) 및 [Office applications periodically prompt for credentials to SharePoint Online, OneDrive, and Lync Online](https://support.microsoft.com/help/2913639/office-applications-periodically-prompt-for-credentials-to-sharepoint-online,-onedrive,-and-lync-online)(Office 애플리케이션에서 주기적으로 SharePoint Online, OneDrive 및 Lync Online의 자격 증명 요구)을 참조하세요.
     
     UPN 값에 있는 도메인이 테넌트에 대해 확인된 도메인인 경우는 사용자의 UPN 값을 Azure AD proxyAddresses 특성에 대한 다른 메일 주소로 추가합니다. 이렇게 하면 사용 권한을 부여할 때 사용자의 UPN 값이 지정되어 있을 경우 사용자에게 Azure Rights Management에 대한 사용 권한을 부여할 수 있습니다. 여기에 대한 자세한 내용과 사용자 계정에 권한을 부여하는 방법은 [Azure Information Protection을 위한 사용자 및 그룹 준비](prepare.md)를 참조하세요.
 
@@ -62,11 +62,11 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
     - Windows용 및 iOS/Android용 [Azure Information Protection 클라이언트](./rms-client/aip-client.md)에는 항상 지원되는 MFA가 있으며 최소 버전은 지정할 필요가 없습니다. 
 
--   Windows용 권한 관리 공유 응용 프로그램:
+-   Windows용 권한 관리 공유 애플리케이션:
 
-    - 제어판 > 프로그램 및 기능을 사용하여 확인할 수 있는 최소 버전 1.0.1908.0을 설치해야 합니다. Rights Management 공유 응용 프로그램은 이제 Azure Information Protection 클라이언트로 대체됩니다. 공유 응용 프로그램에 대한 자세한 내용은 [Windows용 Rights Management 공유 응용 프로그램](./rms-client/sharing-app-windows.md)을 참조하세요.
+    - 제어판 > 프로그램 및 기능을 사용하여 확인할 수 있는 최소 버전 1.0.1908.0을 설치해야 합니다. Rights Management 공유 애플리케이션은 이제 Azure Information Protection 클라이언트로 대체됩니다. 공유 애플리케이션에 대한 자세한 내용은 [Windows용 Rights Management 공유 애플리케이션](./rms-client/sharing-app-windows.md)을 참조하세요.
 
--   모바일 장치 및 Mac 컴퓨터에 대한 Rights Management 공유 앱:
+-   모바일 디바이스 및 Mac 컴퓨터에 대한 Rights Management 공유 앱:
 
     -   설치된 최신 버전이 있는지 확인하세요. MFA 지원은 RMS 공유 앱의 2015년 9월 릴리스에 들어있습니다.
 
@@ -84,7 +84,7 @@ Azure Information Protection으로 MFA(Multi-Factor Authentication)를 사용하
 
         이 시나리오에 대한 자세한 내용은 Office 블로그에서 [Office 365로 작동 - 이제 간소화된 ID 프로그램](https://blogs.office.com/2014/01/30/the-works-with-office-365-identity-program-now-streamlined/)을 참조하세요.
 
-Rights Management 커넥터와 Azure Information Protection 스캐너는 MFA를 지원하지 않습니다. 커넥터 또는 스캐너를 배포하는 경우 다음 계정에 MFA가 필요하지 않아야 합니다.
+Rights Management 커넥터와 Azure Information Protection 스캐너는 MFA를 지원하지 않습니다. 커넥터 또는 스캐너를 배포하는 경우, 다음과 같은 계정에서는 MFA 설정이 요구되지 않습니다.
 
 - 커넥터를 설치하고 구성하는 계정
 

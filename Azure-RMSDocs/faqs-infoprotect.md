@@ -63,9 +63,9 @@ Azure Information Protection의 [UserVoice 사이트](https://msip.uservoice.com
 
 아니요. 첨부 파일이 있는 메일 메시지에 레이블을 지정하면 해당 첨부 파일은 동일한 레이블을 상속하지 않습니다. 첨부 파일은 레이블 없이 유지되거나 별도로 적용된 레이블을 보유합니다. 그러나 메일의 레이블이 보호를 적용하는 경우 해당 보호는 Office 첨부 파일에 적용됩니다.
 
-## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 응용 프로그램을 Azure Information Protection과 통합하려면 어떻게 하나요?
+## <a name="how-can-dlp-solutions-and-other-applications-integrate-with-azure-information-protection"></a>DLP 솔루션 및 다른 애플리케이션을 Azure Information Protection과 통합하려면 어떻게 하나요?
 
-Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 응용 프로그램에서 이 정보를 읽을 수 있습니다. 
+Azure Information Protection에서는 일반 텍스트 레이블을 포함하는 영구 메타데이터를 분류에 사용하므로 DLP 솔루션 및 다른 애플리케이션에서 이 정보를 읽을 수 있습니다. 
 
 이 메타데이터를 Exchange Online 메일 흐름 규칙에 사용하는 방법에 대한 자세한 내용 및 예제는 [Azure Information Protection 레이블에 대한 Exchange Online 메일 흐름 규칙 구성](configure-exo-rules.md)을 참조하세요.
 
@@ -91,11 +91,11 @@ Azure Information Protection에서는 일반 텍스트 레이블을 포함하는
 
 Exchange 메시지 분류는 전자 메일을 분류할 수 있는 이전 기능으로, Azure Information Protection 분류와는 독립적으로 구현됩니다. 
 
-그러나 사용자가 웹용 Outlook을 사용하고 일부 모바일 메일 응용 프로그램을 사용하여 메일을 분류할 때 Azure Information Protection 분류와 해당하는 레이블 표시가 자동으로 추가되도록 두 솔루션을 통합할 수 있습니다. 
+그러나 사용자가 웹용 Outlook을 사용하고 일부 모바일 메일 애플리케이션을 사용하여 메일을 분류할 때 Azure Information Protection 분류와 해당하는 레이블 표시가 자동으로 추가되도록 두 솔루션을 통합할 수 있습니다. 
 
-웹용 Outlook 및 이러한 모바일 메일 응용 프로그램에서 레이블을 사용할 때도 이와 동일한 방법을 사용할 수 있습니다.
+웹용 Outlook 및 이러한 모바일 메일 애플리케이션에서 레이블을 사용할 때도 이와 동일한 방법을 사용할 수 있습니다.
 
-구성 단계에 대해서는 [모바일 장치 레이블 지정 솔루션을 위해 Azure Information protection에 Exchange 메시지 분류 통합](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)합니다. 
+구성 단계에 대해서는 [모바일 디바이스 레이블 지정 솔루션을 위해 Azure Information protection에 Exchange 메시지 분류 통합](./rms-client/client-admin-guide-customizations.md#integration-with-exchange-message-classification-for-a-mobile-device-labeling-solution)합니다. 
 
 
 

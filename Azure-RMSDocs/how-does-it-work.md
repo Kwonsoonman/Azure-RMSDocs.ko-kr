@@ -23,7 +23,7 @@ ms.locfileid: "53174117"
 
 Azure RMS가 작동하는 방식을 이해하는 데 중요한 점은 Azure Information Protection의 이 데이터 보호 서비스가 보호 프로세스의 일부로 데이터를 보거나 저장하지 않는다는 것입니다. 보호하는 정보는 Azure에 명시적으로 저장하거나 Azure에 정보를 저장하는 다른 클라우드 서비스를 사용하지 않는 한, Azure로 전송되거나 Azure에 저장되지 않습니다. Azure RMS는 단순히 문서의 데이터를 허가된 사용자 및 서비스 이외의 사람이 읽을 수 없게 합니다.
 
-- 데이터는 응용 프로그램 수준에서 암호화되며 해당 문서의 허가된 사용을 정의하는 정책을 포함합니다.
+- 데이터는 애플리케이션 수준에서 암호화되며 해당 문서의 허가된 사용을 정의하는 정책을 포함합니다.
 
 - 합법적인 사용자가 보호된 문서를 사용되거나 허가된 서비스가 이러한 문서를 처리할 경우 문서의 데이터 암호가 해독되고 정책에 정의된 권한이 적용됩니다.
 
@@ -49,7 +49,7 @@ Azure RMS에서 사용하는 알고리즘 및 키 길이에 대한 자세한 기
 
 ###### <a name="footnote-1"></a>각주 1 
 
-파일 이름 확장명이 .ppdf이거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)인 경우 Azure Information Protection 클라이언트 및 Rights Management 공유 응용 프로그램에서 일반 보호 및 기본 보호에 256비트를 사용합니다.
+파일 이름 확장명이 .ppdf이거나 파일이 보호된 텍스트 또는 이미지 파일(예: .ptxt 또는 .pjpg)인 경우 Azure Information Protection 클라이언트 및 Rights Management 공유 애플리케이션에서 일반 보호 및 기본 보호에 256비트를 사용합니다.
 
 ###### <a name="footnote-2"></a>각주 2
 
@@ -71,7 +71,7 @@ Azure RMS의 보호를 받는 각 문서나 메일에 대해 Azure RMS는 단일
 
 이 테넌트 키는 Microsoft의 온라인 서비스나 매우 통제가 강화된 환경에서, 그리고 면밀한 모니터링이 진행 중인 경우에 보호됩니다. 고객 관리 테넌트 키(BYOK)를 사용하는 경우 키를 추출하거나 내보내거나 모든 환경에서 공유하는 기능이 없어도 이 보안은 각 Azure 지역의 고급 HSM(하드웨어 보안 모듈) 배열을 사용하여 강화됩니다. 테넌트 키 및 BYOK에 대한 자세한 내용은 [Azure Information Protection 테넌트 키 계획 및 구현](plan-implement-tenant-key.md)을 참조하세요.
 
-Windows 장치에 전송되는 라이선스 및 인증서는 클라이언트의 장치 개인 키로 보호되며, 이 키는 사용자가 장치에서 Azure RMS를 처음 사용하는 경우 생성됩니다. 따라서 이 개인 키는 클라이언트에서 DPAPI로 보호됩니다. 이 DPAPI는 사용자의 암호에서 파생된 키를 사용하여 이러한 암호를 보호합니다. 모바일 장치에서 키가 한 번만 사용됩니다. 따라서 키가 클라이언트에 저장되지 않으므로 이러한 키를 장치에서 보호하지 않아도 됩니다. 
+Windows 디바이스에 전송되는 라이선스 및 인증서는 클라이언트의 디바이스 개인 키로 보호되며, 이 키는 사용자가 디바이스에서 Azure RMS를 처음 사용하는 경우 생성됩니다. 따라서 이 개인 키는 클라이언트에서 DPAPI로 보호됩니다. 이 DPAPI는 사용자의 암호에서 파생된 키를 사용하여 이러한 암호를 보호합니다. 모바일 디바이스에서 키가 한 번만 사용됩니다. 따라서 키가 클라이언트에 저장되지 않으므로 이러한 키를 디바이스에서 보호하지 않아도 됩니다. 
 
 
 ## <a name="walkthrough-of-how-azure-rms-works-first-use-content-protection-content-consumption"></a>Azure RMS 작동 방식 연습: 첫 번째 사용, 콘텐츠 보호, 콘텐츠 소비
@@ -83,7 +83,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 > 이 사용자가 다른 Windows 컴퓨터로 이동하거나 다른 사용자가 이 동일한 Windows 컴퓨터를 사용하면 초기화 프로세스가 반복됩니다.
 
 ### <a name="initializing-the-user-environment"></a>사용자 환경 초기화
-사용자가 콘텐츠를 보호하거나 Windows 컴퓨터에서 보호된 콘텐츠를 소비하려면 먼저 장치에서 사용자 환경이 준비되어야 합니다. 이것은 일회성 프로세스이며 사용자가 콘텐츠를 보호하거나 보호된 콘텐츠를 사용하려고 할 때 사용자 개입 없이 자동으로 발생합니다.
+사용자가 콘텐츠를 보호하거나 Windows 컴퓨터에서 보호된 콘텐츠를 소비하려면 먼저 디바이스에서 사용자 환경이 준비되어야 합니다. 이것은 일회성 프로세스이며 사용자가 콘텐츠를 보호하거나 보호된 콘텐츠를 사용하려고 할 때 사용자 개입 없이 자동으로 발생합니다.
 
 ![RMS 클라이언트 활성화 흐름 - 1단계, 클라이언트 인증](./media/AzRMS.png)
 
@@ -97,7 +97,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 이러한 인증서 중 하나는 일반적으로 RAC로 간략하게 표시되는 권한 계정 인증서입니다. 이 인증서는 Azure Active Directory에 대해 사용자를 인증하고 31일 동안 유효합니다. 사용자 계정이 아직 Azure Active Directory에 있고 계정이 사용 가능한 경우 인증서는 RMS 클라이언트에 의해 자동으로 갱신됩니다. 이 인증서는 관리자가 구성할 수 없습니다. 
 
-인증서 복사본은 Azure에 저장되므로 사용자가 다른 장치로 이동하면 동일한 키를 사용하여 인증서가 만들어집니다.
+인증서 복사본은 Azure에 저장되므로 사용자가 다른 디바이스로 이동하면 동일한 키를 사용하여 인증서가 만들어집니다.
 
 ### <a name="content-protection"></a>콘텐츠 보호
 사용자가 문서를 보호하면 RMS 클라이언트는 보호되지 않은 문서에 대해 다음 작업을 수행합니다.
@@ -137,7 +137,7 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 **3단계에서 발생하는 작업**: 마지막으로 RMS 클라이언트는 암호화된 사용 라이선스를 사용하고, 자체 사용자 개인 키를 사용하여 암호를 해독합니다. 따라서 RMS 클라이언트는 필요한 경우 문서 본문의 암호를 해독하고 화면에 렌더링할 수 있습니다.
 
-또한 클라이언트는 권한 목록의 암호를 해독한 후 응용 프로그램에 전달합니다. 그러면 응용 프로그램은 응용 프로그램의 사용자 인터페이스에 해당 권한을 적용합니다.
+또한 클라이언트는 권한 목록의 암호를 해독한 후 애플리케이션에 전달합니다. 그러면 애플리케이션은 애플리케이션의 사용자 인터페이스에 해당 권한을 적용합니다.
 
 > [!NOTE]
 > 조직 외부의 사용자가 보호한 콘텐츠를 소비하는 경우 소비 흐름은 같습니다. 이 시나리오의 경우 사용자가 인증되는 방법이 변경됩니다. 자세한 내용은 [보호되는 문서를 회사 외부의 누군가와 공유할 때 해당 사용자를 어떻게 인증하나요?](./faqs-rms.md#when-i-share-a-protected-document-with-somebody-outside-my-company-how-does-that-user-get-authenticated)를 참조하세요.
@@ -148,15 +148,15 @@ Azure RMS 작동 방식을 좀더 자세히 이해할 수 있도록 [Azure Right
 
 - **이메일 보호**: Exchange Online 및 새로운 기능이 포함된 Office 365 메시지 암호화를 사용하여 이메일을 보호하는 경우 사용에 대한 인증에서는 소셜 ID 공급 기업이나 일회용 암호를 사용한 페더레이션도 사용할 수 있습니다. 이후 프로세스 흐름은 매우 유사하지만, 콘텐츠 사용이 임시로 캐시된 아웃바운드 메일의 복사본을 통해 웹 브라우저 세션의 서비스 측에서 이루어진다는 점만 다릅니다.
 
-- **모바일 디바이스**: 모바일 디바이스가 Azure Rights Management Service를 사용하여 파일을 보호하거나 사용하면 프로세스 흐름이 훨씬 더 간단해집니다. 각 트랜잭션(콘텐츠 보호 또는 콘텐츠 사용)은 독립적이므로 모바일 장치는 사용자 초기화 프로세스를 먼저 거치지 않습니다. Windows 컴퓨터의 경우처럼 모바일 장치는 Azure Rights Management Service에 연결하고 인증됩니다. 콘텐츠를 보호하기 위해 모바일 장치는 정책을 제출하고 Azure Rights Management Service는 장치에 게시 라이선스 및 대칭 키를 전송하여 문서를 보호합니다. 콘텐츠를 사용하기 위해 모바일 장치가 Azure Rights Management Service에 연결하고 인증을 받을 때 Azure Rights Management Service에 문서 정책을 전송하고 문서 사용을 위한 사용 라이선스를 요청합니다. 이에 대한 응답으로 Azure Rights Management Service는 필요한 키와 제한 사항을 모바일 장치로 보냅니다. 두 프로세스 모두 TLS를 사용하여 키 교환 및 기타 통신을 보호합니다.
+- **모바일 디바이스**: 모바일 디바이스가 Azure Rights Management Service를 사용하여 파일을 보호하거나 사용하면 프로세스 흐름이 훨씬 더 간단해집니다. 각 트랜잭션(콘텐츠 보호 또는 콘텐츠 사용)은 독립적이므로 모바일 디바이스는 사용자 초기화 프로세스를 먼저 거치지 않습니다. Windows 컴퓨터의 경우처럼 모바일 디바이스는 Azure Rights Management Service에 연결하고 인증됩니다. 콘텐츠를 보호하기 위해 모바일 디바이스는 정책을 제출하고 Azure Rights Management Service는 디바이스에 게시 라이선스 및 대칭 키를 전송하여 문서를 보호합니다. 콘텐츠를 사용하기 위해 모바일 디바이스가 Azure Rights Management Service에 연결하고 인증을 받을 때 Azure Rights Management Service에 문서 정책을 전송하고 문서 사용을 위한 사용 라이선스를 요청합니다. 이에 대한 응답으로 Azure Rights Management Service는 필요한 키와 제한 사항을 모바일 디바이스로 보냅니다. 두 프로세스 모두 TLS를 사용하여 키 교환 및 기타 통신을 보호합니다.
 
 - **RMS 커넥터**: Azure Rights Management Service는 RMS 커넥터와 함께 사용해도 프로세스 흐름은 동일합니다. 유일한 차이점은 커넥터가 온-프레미스 서비스(예: Exchange Server 및 SharePoint Server)와 Azure Rights Management Service 사이에서 릴레이 역할을 한다는 것입니다. 커넥터 자체는 어떤 작업(예: 사용자 환경의 초기화 또는 암호화나 암호 해독)도 수행하지 않습니다. 커넥터는 일반적으로 AD RMS 서버로 가는 통신을 릴레이하며 양쪽에서 사용되는 프로토콜 간의 변환을 처리합니다. 이 시나리오에서는 온-프레미스 서비스와 함께 Azure Rights Management Service를 사용할 수 있습니다.
 
-- **일반 보호(.pfile)**: Azure Rights Management Service가 일반적인 방식으로 파일을 보호할 때 RMS 클라이언트가 모든 권한을 부여하는 정책을 만든다는 점을 제외하면 흐름은 기본적으로 콘텐츠 보호와 동일합니다. 파일을 사용하면 먼저 암호가 해독된 후 대상 응용 프로그램으로 전달됩니다. 이 시나리오에서는 기본적으로 RMS를 지원하지 않더라도 모든 파일을 보호할 수 있습니다.
+- **일반 보호(.pfile)**: Azure Rights Management Service가 일반적인 방식으로 파일을 보호할 때 RMS 클라이언트가 모든 권한을 부여하는 정책을 만든다는 점을 제외하면 흐름은 기본적으로 콘텐츠 보호와 동일합니다. 파일을 사용하면 먼저 암호가 해독된 후 대상 애플리케이션으로 전달됩니다. 이 시나리오에서는 기본적으로 RMS를 지원하지 않더라도 모든 파일을 보호할 수 있습니다.
 
-- **보호된 PDF(.ppdf)**: Azure Rights Management Service는 기본적으로 Office 파일을 보호할 때 해당 파일의 복사본을 만들어 동일한 방식으로 보호합니다. 유일한 차이점은 파일 복사본이 PPDF 파일 형식이라는 점입니다. Azure Information Protection 클라이언트 뷰어 및 RMS 공유 응용 프로그램에서는 해당 파일 형식을 보는 용도로만 열 수 있습니다. 이 시나리오에서는 모바일 장치에 보호된 Office 파일을 기본적으로 지원하는 앱이 없더라도 모바일 장치의 받는 사람이 항상 첨부 파일을 볼 수 있다는 사실을 알고 있으므로 보호된 첨부 파일을 메일을 통해 전송하도록 합니다.
+- **보호된 PDF(.ppdf)**: Azure Rights Management Service는 기본적으로 Office 파일을 보호할 때 해당 파일의 복사본을 만들어 동일한 방식으로 보호합니다. 유일한 차이점은 파일 복사본이 PPDF 파일 형식이라는 점입니다. Azure Information Protection 클라이언트 뷰어 및 RMS 공유 애플리케이션에서는 해당 파일 형식을 보는 용도로만 열 수 있습니다. 이 시나리오에서는 모바일 디바이스에 보호된 Office 파일을 기본적으로 지원하는 앱이 없더라도 모바일 디바이스의 받는 사람이 항상 첨부 파일을 볼 수 있다는 사실을 알고 있으므로 보호된 첨부 파일을 메일을 통해 전송하도록 합니다.
 
-- **Microsoft 계정**: Azure Information Protection은 Microsoft 계정으로 인증되는 경우 사용하도록 이메일 주소를 인증할 수 있습니다. 그러나 인증에 Microsoft 계정을 사용할 경우, 일부 응용 프로그램이 보호된 콘텐츠를 열 수 없습니다. [자세한 정보](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
+- **Microsoft 계정**: Azure Information Protection은 Microsoft 계정으로 인증되는 경우 사용하도록 이메일 주소를 인증할 수 있습니다. 그러나 인증에 Microsoft 계정을 사용할 경우 일부 애플리케이션이 보호된 콘텐츠를 열 수 없습니다. [자세한 정보](secure-collaboration-documents.md#supported-scenarios-for-opening-protected-documents)
 
 ## <a name="next-steps"></a>다음 단계
 

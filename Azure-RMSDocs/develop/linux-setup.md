@@ -21,7 +21,7 @@ ms.locfileid: "44150384"
 ---
 # <a name="linux-setup"></a>Linux 설정
 
-이제 여러 버전의 Linux 운영 체제에서 Microsoft Rights Management SDK 4.x를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 응용 프로그램에서 통합 정보 보호를 사용할 수 있습니다.
+이제 여러 버전의 Linux 운영 체제에서 Microsoft Rights Management SDK 4.x를 통해 AAD RM(Azure Active Directory Rights Management)을 사용하여 해당 애플리케이션에서 통합 정보 보호를 사용할 수 있습니다.
 
 - [지원되는 운영 체제](#supported-operating-systems)
 - [빌드 및 사용 방법](#how-to-build-and-use)

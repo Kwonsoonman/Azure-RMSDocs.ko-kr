@@ -56,11 +56,11 @@ MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 �
 
 권한을 부여할 사용자 및 그룹의 요구 사항에 대한 자세한 내용은 [Azure Information Protection을 위한 사용자 및 그룹 준비](prepare.md)를 참조하세요.
 
-## <a name="client-devices"></a>클라이언트 장치
+## <a name="client-devices"></a>클라이언트 디바이스
 
-사용자에게 Azure Information Protection을 지원하는 운영 체제를 실행하는 클라이언트 장치(컴퓨터 또는 모바일 장치)가 있어야 합니다.
+사용자에게 Azure Information Protection을 지원하는 운영 체제를 실행하는 클라이언트 디바이스(컴퓨터 또는 모바일 디바이스)가 있어야 합니다.
 
-다음은 사용자가 문서 및 메일을 분류하여 레이블을 지정할 수 있도록 Azure Information Protection 클라이언트를 지원하는 장치입니다.
+다음은 사용자가 문서 및 메일을 분류하여 레이블을 지정할 수 있도록 Azure Information Protection 클라이언트를 지원하는 디바이스입니다.
 
 - Windows 10(x86, x64)
     
@@ -78,17 +78,17 @@ MFA(Multi-Factor Authentication)는 필수 클라이언트 소프트웨어 및 �
 
 - Windows Server 2008 R2 
 
-물리적 컴퓨터에 Azure Information Protection 클라이언트를 설치하는 것은 물론, 가상 머신에도 설치할 수 있습니다. 가상 데스크톱 솔루션의 소프트웨어 공급업체에 Azure Information Protection 클라이언트를 실행하는 데 필요한 추가 구성 사항이 있는지 확인합니다. .예를 들어, Citrix 솔루션의 경우 Office(winword.exe, excel.exe, outlook.exe, powerpoint.exe) 및 Azure Information Protection 클라이언트(msip.app.exe, msip.viewer.exe) 에 대해 [Citrix API(응용 프로그래밍 인터페이스) 후크를 사용하지 않도록 설정](https://support.citrix.com/article/CTX107825)해야 할 수 있습니다.
+물리적 컴퓨터에 Azure Information Protection 클라이언트를 설치하는 것은 물론, 가상 머신에도 설치할 수 있습니다. 가상 데스크톱 솔루션의 소프트웨어 공급업체에 Azure Information Protection 클라이언트를 실행하는 데 필요한 추가 구성 사항이 있는지 확인합니다. .예를 들어, Citrix 솔루션의 경우 Office(winword.exe, excel.exe, outlook.exe, powerpoint.exe) 및 Azure Information Protection 클라이언트(msip.app.exe, msip.viewer.exe) 에 대해 [Citrix API(애플리케이션 프로그래밍 인터페이스) 후크를 사용하지 않도록 설정](https://support.citrix.com/article/CTX107825)해야 할 수 있습니다.
 
 나열된 서버 버전의 경우 Azure Information Protection 클라이언트가 원격 데스크톱 서비스에 대해 지원됩니다. 원격 데스크톱 서비스와 함께 Azure Information Protection 클라이언트를 사용할 때 사용자 프로필을 삭제하는 경우 **%Appdata%\Microsoft\Protect** 폴더는 삭제하지 마세요.
 
-Azure Information Protection 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 [동일한 장치](requirements-client-devices.md)에서 이 데이터를 사용할 수 있습니다.
+Azure Information Protection 클라이언트에서 Azure Rights Management 서비스를 통해 데이터를 보호하는 경우 Azure Rights Management 서비스를 지원하는 [동일한 디바이스](requirements-client-devices.md)에서 이 데이터를 사용할 수 있습니다.
 
 Azure Information Protection 클라이언트에는 관리자 가이드에 나열된 [추가적인 전제 조건](./rms-client/client-admin-guide-install.md#additional-prerequisites-for-the-azure-information-protection-client)이 있습니다.
 
-## <a name="applications"></a>응용 프로그램
+## <a name="applications"></a>애플리케이션
 
-Azure Information Protection 클라이언트는 다음 Office 버전의 Office 응용 프로그램인 **Word**, **Excel**, **PowerPoint** 및 **Outlook**을 사용하여 문서 및 메일의 레이블을 지정하고 보호할 수 있습니다.
+Azure Information Protection 클라이언트는 다음 Office 버전의 Office 애플리케이션인 **Word**, **Excel**, **PowerPoint** 및 **Outlook**을 사용하여 문서 및 메일의 레이블을 지정하고 보호할 수 있습니다.
 
 - 사용자에게 Azure Rights Management(Office 365용 Azure Information Protection이라고도 함) 라이선스가 지정될 경우 Office 365(Office 2016 앱)(최소 버전 1805, 빌드 9330.2078)
 
@@ -104,11 +104,11 @@ Azure Information Protection 클라이언트는 다음 Office 버전의 Office �
 
 Azure Information Protection 클라이언트는 동일한 컴퓨터에 여러 버전의 Office를 지원하지 않습니다. 또한 이 클라이언트는 Office의 사용자 계정 전환을 지원하지 않습니다.
 
-보호 서비스를 지원하는 Office 버전에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 응용 프로그램](requirements-applications.md)을 참조하세요.
+보호 서비스를 지원하는 Office 버전에 대한 자세한 내용은 [Azure Rights Management 데이터 보호를 지원하는 애플리케이션](requirements-applications.md)을 참조하세요.
 
 ## <a name="firewalls-and-network-infrastructure"></a>방화벽 및 네트워크 인프라
 
-특정 연결을 허용하도록 구성된 방화벽 또는 유사한 중개 네트워크 장치가 있는 경우 네트워크 연결 요구 사항은 Office 문서 [Office 365 URL 및 IP 주소 범위](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)에 포함되어 있습니다. **Microsoft 365 Common 및 Office Online** 섹션을 참조하세요.
+특정 연결을 허용하도록 구성된 방화벽 또는 유사한 중개 네트워크 디바이스가 있는 경우 네트워크 연결 요구 사항은 Office 문서 [Office 365 URL 및 IP 주소 범위](https://support.office.com/en-US/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)에 포함되어 있습니다. **Microsoft 365 Common 및 Office Online** 섹션을 참조하세요.
 
 Office 문서의 정보 외에 Azure Information Protection과 관련하여 다음 사항에 유의하세요.
 

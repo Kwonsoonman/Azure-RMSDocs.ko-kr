@@ -1,6 +1,6 @@
 ---
 title: Azure Information Protection 정책 설정 구성 - AIP
-description: 모든 사용자와 모든 장치에 적용되는 Azure Information Protection 정책의 설정을 구성하는 방법을 설명합니다.
+description: 모든 사용자와 모든 디바이스에 적용되는 Azure Information Protection 정책의 설정을 구성하는 방법을 설명합니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -47,7 +47,7 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
         
         *RemoveLabel* 매개 변수와 함께 [Set-AIPFileLabel](/powershell/module/azureinformationprotection/set-aipfilelabel) PowerShell cmdlet을 사용하여 레이블을 제거하면 이 옵션이 적용되지 않습니다.
         
-    - **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함): 이 옵션을 **켜기**로 설정하고 이러한 작업 중 하나를 수행하면(예: **공용** 레이블을 **개인**으로 변경) 이 작업에 대한 설명을 제공하라는 메시지가 표시됩니다. 예를 들어 사용자는 문서에 더 이상 민감한 정보가 포함되어 있지 않다고 설명할 수 있습니다. 작업 및 해당 근거는 사용자의 로컬 Windows 이벤트 로그 **응용 프로그램 및 서비스 로그** > **Azure Information Protection**에 기록됩니다.  
+    - **Users must provide justification to set a lower classification label, remove a label, or remove protection**(더 낮은 분류 레이블을 설정하거나, 레이블 또는 보호를 제거할 때 사용자가 근거를 제공해야 함): 이 옵션을 **켜기**로 설정하고 이러한 작업 중 하나를 수행하면(예: **공용** 레이블을 **개인**으로 변경) 이 작업에 대한 설명을 제공하라는 메시지가 표시됩니다. 예를 들어 사용자는 문서에 더 이상 민감한 정보가 포함되어 있지 않다고 설명할 수 있습니다. 작업 및 해당 근거는 사용자의 로컬 Windows 이벤트 로그 **애플리케이션 및 서비스 로그** > **Azure Information Protection**에 기록됩니다.  
         
         ![새 분류가 하위 수준인 경우의 Azure Information Protection 프롬프트](./media/info-protect-lower-justification.png)
         
@@ -75,7 +75,7 @@ Azure Information Protection에 대한 구독을 구매한 시기에 따라 정�
         
         - 파일 탐색기: 마우스 오른쪽 단추 클릭 > **분류 및 보호** > **사용자 지정 권한**
     
-    - **Azure Information Protection 클라이언트 "추가 정보" 웹 페이지에 대한 사용자 지정 URL 제공**: 사용자가 Office 응용 프로그램의 **홈** 탭에서 **보호** > **도움말 및 피드백**을 선택할 때 **Microsoft Azure Information Protection** 대화 상자의 **도움말 및 피드백** 섹션에 이 링크가 표시됩니다. 기본적으로 이 링크를 누르면 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동됩니다. 이 링크로 다른 웹 페이지로 이동하려면 HTTP 또는 HTTPS(권장) URL을 입력할 수 있습니다. 입력한 사용자 URL이 액세스 가능하거나 모든 장치에 올바로 표시되는지 확인하는 작업은 수행되지 않습니다.
+    - **Azure Information Protection 클라이언트 "추가 정보" 웹 페이지에 대한 사용자 지정 URL 제공**: 사용자가 Office 응용 프로그램의 **홈** 탭에서 **보호** > **도움말 및 피드백**을 선택할 때 **Microsoft Azure Information Protection** 대화 상자의 **도움말 및 피드백** 섹션에 이 링크가 표시됩니다. 기본적으로 이 링크를 누르면 [Azure Information Protection](https://www.microsoft.com/cloud-platform/azure-information-protection) 웹 사이트로 이동됩니다. 이 링크로 다른 웹 페이지로 이동하려면 HTTP 또는 HTTPS(권장) URL을 입력할 수 있습니다. 입력한 사용자 URL이 액세스 가능하거나 모든 디바이스에 올바로 표시되는지 확인하는 작업은 수행되지 않습니다.
         
         예를 들어 지원 센터의 경우, 클라이언트 설치 및 사용(**https://docs.microsoft.com/information-protection/rms-client/info-protect-client**) 또는 릴리스 버전 정보(**https://docs.microsoft.com/information-protection/rms-client/client-version-release-history**)에 대한 정보를 포함하는 Microsoft 설명서 페이지를 입력할 수 있습니다. 또는 사용자가 지원 센터에 문의할 때 필요한 정보를 포함하는 자체 웹 페이지나 구성한 레이블을 사용하는 방법을 단계별로 안내하는 비디오를 게시할 수 있습니다.
 

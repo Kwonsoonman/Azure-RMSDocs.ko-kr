@@ -32,7 +32,7 @@ Rights Management 템플릿이라고도 하는 보호 템플릿은 Azure Informa
 - 테넌트의 템플릿이 **Azure Information Protection - 레이블** 블레이드의 **보호 템플릿** 섹션에 표시됩니다. 이 블레이드로 이동하려면 **분류** > **레이블** 메뉴 옵션을 선택합니다. 레이블이 표시되지 않습니다. 분류 및 레이블링에 특정한 구성 설정도 표시되지만, 이러한 설정이 템플릿에 영향을 미치지 않거나 구성할 수 없습니다. 
 
 >[!NOTE]
->일부 응용 프로그램 및 서비스에서는 [전달 금지](configure-usage-rights.md#do-not-forward-option-for-emails) 및 [암호화 전용](configure-usage-rights.md#encrypt-only-option-for-emails)(또는 **암호화**)이 템플릿으로 표시될 수 있습니다. 이러한 템플릿은 편집하거나 삭제할 수 없지만 기본적으로 Exchange 서비스와 함께 제공되는 옵션입니다.
+>일부 애플리케이션 및 서비스에서는 [전달 금지](configure-usage-rights.md#do-not-forward-option-for-emails) 및 [암호화 전용](configure-usage-rights.md#encrypt-only-option-for-emails)(또는 **암호화**)이 템플릿으로 표시될 수 있습니다. 이러한 템플릿은 편집하거나 삭제할 수 없지만 기본적으로 Exchange 서비스와 함께 제공되는 옵션입니다.
 
 ## <a name="default-templates"></a>기본 템플릿
 
@@ -43,7 +43,7 @@ Azure Information Protection의 구독 또는 Azure Rights Management 서비스�
 >[!NOTE]
 > 이러한 설정과 기본 템플릿의 이름 및 설명을 변경할 수 있습니다. 이 기능은 Azure 클래식 포털에서는 사용할 수 없었으며 PowerShell에는 계속 지원되지 않습니다.
 
-이러한 기본 템플릿을 사용하면 사용자 및 다른 사용자가 조직의 중요한 데이터 보호를 즉시 쉽게 시작할 수 있습니다. 이러한 템플릿은 Azure Information Protection 레이블과 함께 사용하거나 Rights Management 템플릿을 사용할 수 있는 [응용 프로그램과 서비스](applications-support.md)에서 단독으로 사용할 수 있습니다.
+이러한 기본 템플릿을 사용하면 사용자 및 다른 사용자가 조직의 중요한 데이터 보호를 즉시 쉽게 시작할 수 있습니다. 이러한 템플릿은 Azure Information Protection 레이블과 함께 사용하거나 Rights Management 템플릿을 사용할 수 있는 [애플리케이션과 서비스](applications-support.md)에서 단독으로 사용할 수 있습니다.
 
 사용자 지정 템플릿을 직접 만들 수도 있습니다. 대체로 몇 개의 템플릿만 필요하지만 Azure에는 최대 500개의 사용자 지정 템플릿이 저장되어 있을 수 있습니다.
 
@@ -52,9 +52,9 @@ Azure Information Protection의 구독 또는 Azure Rights Management 서비스�
 
 최근에 구독을 얻은 경우 기본 템플릿은 다음과 같은 이름으로 만들어집니다.
 
-- **Confidential \ All Employees** - 보호된 콘텐츠의 읽기 및 수정 권한이 있습니다.
+- **기밀\모든 직원** - 보호된 콘텐츠의 읽기 및 수정 권한이 있습니다.
 
-- **Highly Confidential \ All Employees** - 보호된 콘텐츠의 읽기 전용 권한이 있습니다.
+- **극비\모든 직원** - 보호된 콘텐츠의 읽기 전용 권한이 있습니다.
 
 최근에 구독을 얻은 경우 기본 템플릿은 다음과 같은 이름으로 만들어집니다.
 
@@ -87,7 +87,7 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 - 현재, 부서별 템플릿을 편집하고 저장하면 범위 구성이 제거됩니다. Azure Information Protection 정책에서 범위가 지정된 템플릿은 [범위 정책](configure-policy-scope.md)입니다. 템플릿을 레이블로 변환하는 경우 기존 범위를 선택할 수 있습니다.
     
-    또한 Azure Portal을 사용하여 부서별 템플릿에 대한 응용 프로그램 호환성 설정을 지정할 수 없습니다. 필요한 경우 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 및 *EnableInLegacyApps* 매개 변수를 사용하여 이 응용 프로그램 호환성 설정을 지정할 수 있습니다.
+    또한 Azure Portal을 사용하여 부서별 템플릿에 대한 애플리케이션 호환성 설정을 지정할 수 없습니다. 필요한 경우 [Set-AadrmTemplateProperty](/powershell/module/aadrm/set-aadrmtemplateproperty) cmdlet 및 *EnableInLegacyApps* 매개 변수를 사용하여 이 애플리케이션 호환성 설정을 지정할 수 있습니다.
 
 - 템플릿을 레이블로 변환하거나 연결하면 다른 레이블에서 더 이상 사용할 수 없습니다. 또한 이 템플릿은 더 이상 **보호 템플릿** 섹션에 표시되지 않습니다. 
 
@@ -95,7 +95,7 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
 
 ## <a name="to-configure-the-templates-in-the-azure-information-protection-policy"></a>Azure Information Protection 정책에서 템플릿을 구성하려면
 
-1. 아직 그렇게 하지 않은 경우 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. 그런 다음, **Azure Information Protection - 레이블** 블레이드로 이동합니다.
+1. Azure Portal에 로그인이 되어 있지 않다면, 새 브라우저 창을 열고 [Azure Portal에 로그인](configure-policy.md#signing-in-to-the-azure-portal)합니다. 그런 다음, **Azure Information Protection - 레이블** 블레이드로 이동합니다.
     
     예를 들어 허브 메뉴에서 **모든 서비스**를 클릭하고 필터 상자에 **Information**을 입력합니다. **Azure Information Protection**을 선택합니다.
 
@@ -148,9 +148,9 @@ Azure Portal을 사용할 경우 이러한 기본 템플릿의 이름을 바꾸�
     
     **확인**을 클릭하여 변경 내용을 유지하고 **레이블** 블레이드에서 **저장**을 클릭합니다.
     
-    이제 **Azure Information Protection - 레이블** 블레이드의 **보호** 열에 새 레이블이 표시되어 보호 설정을 포함한다는 것을 나타냅니다. 이러한 보호 설정은 Azure Rights Management 서비스를 지원하는 응용 프로그램 및 서비스에 템플릿으로 표시됩니다.
+    이제 **Azure Information Protection - 레이블** 블레이드의 **보호** 열에 새 레이블이 표시되어 보호 설정을 포함한다는 것을 나타냅니다. 이러한 보호 설정은 Azure Rights Management 서비스를 지원하는 애플리케이션 및 서비스에 템플릿으로 표시됩니다.
     
-    기본적으로 레이블을 사용하도록 설정되어 있지만, 템플릿은 보관됩니다. 그러므로 응용 프로그램 및 서비스에서 템플릿을 사용하여 문서 및 메일을 보호하고, 마지막 단계를 완료하여 템플릿을 게시할 수 있습니다.
+    기본적으로 레이블을 사용하도록 설정되어 있지만, 템플릿은 보관됩니다. 그러므로 애플리케이션 및 서비스에서 템플릿을 사용하여 문서 및 메일을 보호하고, 마지막 단계를 완료하여 템플릿을 게시할 수 있습니다.
 
 5. **분류** > **정책** 메뉴 옵션에서 새 보호 설정을 포함하는 정책을 선택합니다. 그런 다음, **레이블 추가 또는 제거**를 선택합니다. **정책: 레이블 추가 또는 제거** 블레이드에서 보호 설정을 포함하는 새로 만든 레이블을 선택하고 **확인**을 선택한 다음, **저장**을 선택합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: RMS 공유 앱&colon; 버전 릴리스 기록 - AIP
-description: Windows용 Rights Management 공유 응용 프로그램의 각 릴리스에서 새롭게 추가되었거나 변경된 기능을 살펴봅니다.
+description: Windows용 Rights Management 공유 애플리케이션의 각 릴리스에서 새롭게 추가되었거나 변경된 기능을 살펴봅니다.
 author: cabailey
 ms.author: cabailey
 manager: mbaldwin
@@ -18,16 +18,16 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 09/07/2018
 ms.locfileid: "44149806"
 ---
-# <a name="rights-management-sharing-application-version-release-history"></a>Rights Management 공유 응용 프로그램: 버전 릴리스 기록
+# <a name="rights-management-sharing-application-version-release-history"></a>Rights Management 공유 애플리케이션: 버전 릴리스 기록
 
 >*적용 대상: Active Directory Rights Management Services, [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection), Windows 10, Windows 7 SP1, Windows 8, Windows 8.1*
 
-Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights Management 공유 응용 프로그램을 정기적으로 업데이트합니다. 다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다.
+Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights Management 공유 애플리케이션을 정기적으로 업데이트합니다. 다음 정보를 통해 새로운 기능이나 릴리스 변경을 확인합니다. 가장 최근 릴리스가 먼저 나열됩니다.
 
 2015년 1월 1일 이전 버전은 목록에 없습니다.
 
 > [!IMPORTANT]
-> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 응용 프로그램에 대한 지원은 2019년 1월 31일에 중지됩니다. 
+> **지원 종료 알림**: Windows용 Rights Management 공유 응용 프로그램은 [Azure Information Protection 클라이언트](aip-client.md)로 대체될 예정입니다. 이 이전 애플리케이션에 대한 지원은 2019년 1월 31일에 중지됩니다. 
 
 ## <a name="version-1022170"></a>버전 1.0.2217.0
 
@@ -68,16 +68,16 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
 **새로운 기능**:
 
--   비관리자 설치를 지원하므로 표준 사용자가 RMS 공유 응용 프로그램을 설치할 수 있습니다.
+-   비관리자 설치를 지원하므로 표준 사용자가 RMS 공유 애플리케이션을 설치할 수 있습니다.
 
-    Office 2010을 실행하는 표준 사용자에 대한 몇 가지 제한 사항이 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 다운로드 및 설치](install-sharing-app.md) 사용자 지침에서 [로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우](install-sharing-app.md#if-you-are-not-a-local-administrator-and-use-office-2010) 섹션을 참조하세요.
+    Office 2010을 실행하는 표준 사용자에 대한 몇 가지 제한 사항이 있습니다. 자세한 내용은 [Rights Management 공유 애플리케이션 다운로드 및 설치](install-sharing-app.md) 사용자 지침에서 [로컬 관리자가 아닌 사용자가 Office 2010을 사용하는 경우](install-sharing-app.md#if-you-are-not-a-local-administrator-and-use-office-2010) 섹션을 참조하세요.
 
 ## <a name="version-1019080"></a>버전 1.0.1908.0
 **릴리스 날짜**: 2015년 9월 16일
 
 **수정 사항**:
 
--   최신 인증을 사용하는 응용 프로그램에서 Microsoft 로그인 도우미에 대한 종속성도 제거하는 Azure RMS에 대한 MFA(다단계 인증)를 지원합니다.
+-   최신 인증을 사용하는 애플리케이션에서 Microsoft 로그인 도우미에 대한 종속성도 제거하는 Azure RMS에 대한 MFA(다단계 인증)를 지원합니다.
 
     자세한 내용은 [Azure Information Protection에 대한 Azure Active Directory 요구 사항](../requirements-servers.md)에서 [MFA(Multi-Factor Authentication) 및 Azure RMS](../requirements-servers.md) 섹션을 참조하세요.
 
@@ -101,7 +101,7 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
 **새로운 기능**:
 
--   문서 추적 및 해지를 지원합니다. 자세한 내용은 [RMS 공유 응용 프로그램을 사용하는 경우 문서 추적 및 취소](sharing-app-track-revoke.md)를 참조하세요.
+-   문서 추적 및 해지를 지원합니다. 자세한 내용은 [RMS 공유 애플리케이션을 사용하는 경우 문서 추적 및 취소](sharing-app-track-revoke.md)를 참조하세요.
 
 -   **보호 상태로 공유**선택 시의 템플릿 지원:
 
@@ -111,7 +111,7 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
     -   **모든 장치에서 사용 허용** 과 **사용 제한 적용**옵션은 이제 표시되지 않습니다. 대신 파일 형식에 따라 **일반 보호** 가 자동으로 선택됩니다.
 
-    자세한 내용은 [Rights Management 공유 응용 프로그램에 대한 대화 상자 옵션](sharing-app-dialog-box.md)을 참조하세요.
+    자세한 내용은 [Rights Management 공유 애플리케이션에 대한 대화 상자 옵션](sharing-app-dialog-box.md)을 참조하세요.
 
 ## <a name="version-1016670"></a>버전 1.0.1667.0
 **릴리스 날짜**: 2015년 1월 19일
@@ -126,5 +126,5 @@ Azure Information Protection 팀에서는 픽스 및 새 기능을 위해 Rights
 
 **새로운 기능**:
 
--   **조직 내의 여러 메일 도메인 지원**: AD RMS를 사용하며 조직의 사용자에게 여러 메일 도메인이 있는 경우 이 업데이트를 통해 사용자가 다른 도메인의 조직 사용자에 의해 보호된 콘텐츠를 사용할 수 있습니다. 자세한 내용은 [Rights Management 공유 응용 프로그램 관리자 가이드](sharing-app-admin-guide.md)에서 [AD RMS에만 해당: 조직 내의 여러 메일 도메인 지원](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) 섹션을 참조하세요.
+-   **조직 내의 여러 메일 도메인 지원**: AD RMS를 사용하며 조직의 사용자에게 여러 메일 도메인이 있는 경우 이 업데이트를 통해 사용자가 다른 도메인의 조직 사용자에 의해 보호된 콘텐츠를 사용할 수 있습니다. 자세한 내용은 [Rights Management 공유 애플리케이션 관리자 가이드](sharing-app-admin-guide.md)에서 [AD RMS에만 해당: 조직 내의 여러 메일 도메인 지원](sharing-app-admin-guide.md#ad-rms-only-support-for-multiple-email-domains-within-your-organization) 섹션을 참조하세요.
 

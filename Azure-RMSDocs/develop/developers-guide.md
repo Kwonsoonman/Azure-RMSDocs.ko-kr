@@ -23,14 +23,14 @@ ms.locfileid: "53266718"
 
 >현재 Azure Information Protection SDK에는 권한 관리 구성 요소가 있습니다. 분류 및 레이블 지정 구성 요소는 개발 중입니다.
 
-## <a name="service-applications"></a>서비스 응용 프로그램
+## <a name="service-applications"></a>서비스 애플리케이션
 
-서비스 응용 프로그램은 엔터프라이즈 콘텐츠 관리 시스템, 비즈니스 응용 프로그램 또는 클라우드 기반 비즈니스 솔루션에서 내보내는 정보를 보호하는 기능을 제공합니다. 서비스 응용 프로그램의 예로는 DLP(Data Loss Prevention) 및 CAS(Cloud Application Security) 응용 프로그램이 있습니다. 서비스 응용 프로그램 개발용 SDK는 두 가지 프로그래밍 모델을 통해 제공됩니다.
+서비스 애플리케이션은 엔터프라이즈 콘텐츠 관리 시스템, 비즈니스 애플리케이션 또는 클라우드 기반 비즈니스 솔루션에서 내보내는 정보를 보호하는 기능을 제공합니다. 서비스 애플리케이션의 예로는 DLP(Data Loss Prevention) 및 CAS(Cloud Application Security) 애플리케이션이 있습니다. 서비스 애플리케이션 개발용 SDK는 두 가지 프로그래밍 모델을 통해 제공됩니다.
 
 - [C++](https://www.microsoft.com/download/details.aspx?id=38397)
 - [C# 관리되는 API](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/IpcManagedAPI)
 
-### <a name="examples-of-service-applications"></a>서비스 응용 프로그램의 예
+### <a name="examples-of-service-applications"></a>서비스 애플리케이션의 예
 
 - [IpcDlp](https://github.com/Azure-Samples/active-directory-dotnet-rms)는 DLP RMS 지원 응용 프로그램이 제한된 콘텐츠를 보호 및 사용하기 위해 RMS 파일 API를 사용하여 수행해야 하는 기본 단계를 안내하는 샘플 RMS 지원 DLP 응용 프로그램입니다.
 - [IpcAzureApp](https://github.com/Azure-Samples/active-directory-dotnet-rms)은 Azure 응용 프로그램에서 RMS SDK를 사용하여 Azure Blob Storage의 데이터를 보호하는 방법을 보여 주는 샘플입니다.
@@ -39,20 +39,20 @@ ms.locfileid: "53266718"
 
 ## <a name="powershell-guides"></a>PowerShell 가이드
 
-Azure Rights Management 관리자가 사용하는 PowerShell cmdlet은 서비스 응용 프로그램을 개발하고 테스트하는 데 유용합니다. 자세한 내용은 [Azure Information Protection 클라이언트에서 PowerShell 사용](/azure/information-protection/rms-client/client-admin-guide-powershell)을 참조하세요.
+Azure Rights Management 관리자가 사용하는 PowerShell cmdlet은 서비스 애플리케이션을 개발하고 테스트하는 데 유용합니다. 자세한 내용은 [Azure Information Protection 클라이언트에서 PowerShell 사용](/azure/information-protection/rms-client/client-admin-guide-powershell)을 참조하세요.
 
-## <a name="user-applications"></a>사용자 응용 프로그램
+## <a name="user-applications"></a>사용자 애플리케이션
 
-RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드할 수 있습니다.
-4.2 버전은 iOS/OSX, Android, Linux, Windows 등 널리 사용되는 여러 OS용의 운영 체제별 API를 기반으로 하는 REST 클라이언트입니다. 2.1 버전은 네이티브 Windows 기반 응용 프로그램을 빌드하는 데 사용됩니다.
+RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 애플리케이션을 빌드할 수 있습니다.
+4.2 버전은 iOS/OSX, Android, Linux, Windows 등 널리 사용되는 여러 OS용의 운영 체제별 API를 기반으로 하는 REST 클라이언트입니다. 2.1 버전은 네이티브 Windows 기반 애플리케이션을 빌드하는 데 사용됩니다.
 
-### <a name="user-application-development-guides"></a>사용자 응용 프로그램 개발 가이드
+### <a name="user-application-development-guides"></a>사용자 애플리케이션 개발 가이드
 
 - [응용 프로그램 배포](developing-your-application.md)
 - [응용 프로그램 테스트](how-to-set-up-your-test-environment.md)
 - [응용 프로그램 배포](deploying-your-application.md)
 
-### <a name="user-application-samples"></a>사용자 응용 프로그램 샘플
+### <a name="user-application-samples"></a>사용자 애플리케이션 샘플
 
 - [AzureIP Test](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)는 Azure 템플릿 또는 애드혹 정책을 사용하여 문서를 암호화할 수 있는 샘플 콘솔 응용 프로그램입니다.
 - [IPCNotepad](https://github.com/Azure-Samples/Azure-Information-Protection-Samples/tree/master/AzureIP_Test)는 각 RMS 지원 응용 프로그램이 제한된 콘텐츠를 보호 및 사용할 때 수행해야 하는 기본 단계를 안내하는 샘플 RMS 지원 응용 프로그램입니다.
@@ -60,7 +60,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 ## <a name="development-environment-setup"></a>개발 환경 설정
 
-다음 가이드에서는 일반적인 도구를 사용하는 응용 프로그램 개발 환경의 OS별 설정 단계를 안내합니다.
+다음 가이드에서는 일반적인 도구를 사용하는 애플리케이션 개발 환경의 OS별 설정 단계를 안내합니다.
 
 [![iOS/OSX 설정](../media/develop/ios-icon.png)](ios-sdk.md)
 [![Android 설정](../media/develop/android-icon.png)](android-sdk.md)
@@ -71,7 +71,7 @@ RMS SDK 2.1 또는 RMS SDK 4.2를 통해 사용자 응용 프로그램을 빌드
 
 ## <a name="how-tos"></a>방법
 
-다음의 각 항목에서는 응용 프로그램 구현 측면에 대한 구체적인 지침을 제공합니다. 서비스 응용 프로그램은 RMS SDK 2.x를 사용하여 빌드합니다. 사용자 응용 프로그램은 RMS SDK 4.x를 사용하여 빌드합니다. 문서 링크에는 응용 프로그램 유형(서비스, 사용자)이 특성으로 명시되어 있습니다.
+다음의 각 항목에서는 애플리케이션 구현 측면에 대한 구체적인 지침을 제공합니다. 서비스 애플리케이션은 RMS SDK 2.x를 사용하여 빌드합니다. 사용자 애플리케이션은 RMS SDK 4.x를 사용하여 빌드합니다. 문서 링크에는 애플리케이션 유형(서비스, 사용자)이 특성으로 명시되어 있습니다.
 
 ### <a name="general"></a>일반
 

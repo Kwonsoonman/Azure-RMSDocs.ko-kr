@@ -1,6 +1,6 @@
 ---
 title: 방법&#58; 오류 및 성능 로깅 사용 | Azure RMS
-description: Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
+description: Microsoft Rights Management SDK 4.2에서는 단일 디바이스 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
 keywords: ''
 author: lleonard-msft
 ms.author: alleonar
@@ -20,7 +20,7 @@ ms.lasthandoff: 09/07/2018
 ms.locfileid: "44147358"
 ---
 # <a name="how-to-enable-error-and-performance-logging"></a>방법: 오류 및 성능 로깅 사용
-Microsoft Rights Management SDK 4.2에서는 단일 장치 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
+Microsoft Rights Management SDK 4.2에서는 단일 디바이스 속성을 통해 진단 및 성능 로그 업로드를 관리합니다.
 
 ## <a name="overview"></a>개요 ##
 Microsoft로 자동 진단, 성능 및 원격 분석 로깅 데이터 업로드를 사용하여 사용자 환경과 문제 해결을 개선할 수 있습니다. 
@@ -31,11 +31,11 @@ Microsoft로 자동 진단, 성능 및 원격 분석 로깅 데이터 업로드�
 > [!NOTE]
 > 예를 들어 Microsoft에서 로깅 알림에 사용하는 일반적인 메시지는 다음과 같습니다. 
 >
-> *오류 및 성능 로깅을 설정함으로써 Microsoft에 오류 및 성능 데이터를 보내는 것에 동의하게 됩니다.  Microsoft는 인터넷을 통해 오류 및 성능 데이터(“데이터”)를 수집합니다.  Microsoft는 이 데이터를 사용하여 Microsoft 제품 및 서비스의 품질, 보안 및 무결성을 제공하고 향상합니다.  예를 들어, Microsoft는 사용하는 기능, 기능의 응답 속도, 장치 성능, 사용자 인터페이스 조작, 제품에서 발생하는 문제 등 성능 및 안정성을 분석합니다.  데이터에는 현재 실행 중인 소프트웨어, IP 주소처럼 소프트웨어의 구성에 대한 정보도 포함됩니다.*  
+> *오류 및 성능 로깅을 설정함으로써 Microsoft에 오류 및 성능 데이터를 보내는 것에 동의하게 됩니다.  Microsoft는 인터넷을 통해 오류 및 성능 데이터(“데이터”)를 수집합니다.  Microsoft는 이 데이터를 사용하여 Microsoft 제품 및 서비스의 품질, 보안 및 무결성을 제공하고 향상합니다.  예를 들어, Microsoft는 사용하는 기능, 기능의 응답 속도, 디바이스 성능, 사용자 인터페이스 조작, 제품에서 발생하는 문제 등 성능 및 안정성을 분석합니다.  데이터에는 현재 실행 중인 소프트웨어, IP 주소처럼 소프트웨어의 구성에 대한 정보도 포함됩니다.*  
 
 두 가지 속성을 통해 로깅 제어를 관리합니다.
 
--   **IpcCustomerExperienceDataCollectionEnabled** 속성을 통해 로깅을 사용하도록 설정합니다. 이 설정은 장치를 초기화해도 유지됩니다.
+-   **IpcCustomerExperienceDataCollectionEnabled** 속성을 통해 로깅을 사용하도록 설정합니다. 이 설정은 디바이스를 초기화해도 유지됩니다.
 -   다음 설정을 사용하여 **IpcLogLevel** 속성을 통해 로깅 수준을 제어합니다.
 
     * 1 - 자세한 정보 표시
@@ -44,7 +44,7 @@ Microsoft로 자동 진단, 성능 및 원격 분석 로깅 데이터 업로드�
     * 4 - 오류
     * 5 - 중요
 
-뒤에 나오는 각 예제 코드 조각에서는 호출 응용 프로그램이 속성을 설정하거나 쿼리할 수 있습니다.
+뒤에 나오는 각 예제 코드 조각에서는 호출 애플리케이션이 속성을 설정하거나 쿼리할 수 있습니다.
 
 ### <a name="android"></a>Android ###
 자동 로깅 사용
